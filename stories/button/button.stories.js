@@ -8,17 +8,43 @@ import '../../dist/segmented-button.css';
 export default {
     title: 'Components/Button',
     parameters: {
-        description: `Buttons allow users to perform actions.
-        All the buttons require the fd-button base class and an additional modifier
-        for each of the types.`
+        description: `The button component is used to trigger an action. All buttons are characterized by the <code class="docs-code">fd-button</code> class and an additional modifier class to specify each button type.
+
+##Usage
+
+**Use the button types as follows:**
+
+- Use simple buttons for specific actions, such as:
+    - _Create_, _Edit_, _Save_
+    - _Approve_, _Reject_
+    - _Accept_, _Decline_
+    - _OK_, _Cancel_
+- If you want the user to select one option from a small group, use a segmented button. For example: _Small_, _Medium_, _Large_
+- Use the menu button if you need a menu that provides more than one option.
+
+**Do not use buttons if:**
+
+- You want to link to a different page or object. Instead, use the **Link** component.
+`
     }
 };
 
 export const primary = () => `
     <button class="fd-button">Create</button>
-    <button class="fd-button sap-icon--cart"></button>
+    <button class="fd-button" aria-label="Add to cart"><i class="sap-icon--cart"></i></button>
     <button class="fd-button fd-button--emphasized ">Save</button>
 `;
+
+/**
+ *
+ * - **Default Button** or Standard Button for neutral or informative (secondary) actions
+ * - **Emphasized Button** Used for primary action
+ * - **Ghost Button**  Used for secondary actions or primary button in cases where there is already a primary button on the page
+ * - **Positive Button** Used for positive (secondary) actions
+ * - **Negative Button** Used for negative (secondary) actions
+ * - **Attention Button**
+ * - **Transparent Button** Used for secondary or negative path actions
+ */
 
 export const types = () => `
     <div class="fddocs-container"> 
@@ -32,26 +58,27 @@ export const types = () => `
     </div>
 `;
 
-types.storyName = 'Design Types';
+types.storyName = 'Button styles';
 types.parameters = {
     docs: {
-        storyDescription: `
-- **Default Button** or Standard Button for neutral or informative (secondary) actions
-- **Emphasized Button** Used for primary action
-- **Ghost Button**  Used for secondary actions or primary button in cases where there is already a primary button on the page
-- **Positive Button** Used for positive (secondary) actions
-- **Negative Button** Used for negative (secondary) actions
-- **Attention Button**
-- **Transparent Button** Used for secondary or negative path action
+        storyDescription: `    
+- **Default button** is used for neutral or informative (secondary) actions.
+- **Emphasized button** is used to indicate the primary action on the screen.
+- **Ghost button** is used to trigger secondary actions. If a page already has a primary action, but you also need to highlight the most important action in a content toolbar, use the ghost style.
+- **Positive button** is used to trigger positive semantic actions, such as _Accept_ and should always be accompanied by text.
+- **Negative button** is used to trigger negative semantic actions, such as _Reject_ and should always be accompanied by text.
+- **Attention button** is used to trigger a semantic action that needs attention and should always be accompanied by text.
+- **Transparent button** is used to trigger a negative path action within a header or footer bar, and secondary actions in toolbars.
+        
 `
     }
 };
 
 export const segmentedButton = () => `
     <div class="fd-segmented-button" role="group" aria-label="Group label">
-        <button class="fd-button sap-icon--survey"></button>
-        <button class="fd-button sap-icon--pie-chart is-selected" aria-pressed="true"></button>
-        <button class="fd-button sap-icon--pool"></button>
+        <button aria-label="Survey" class="fd-button"><i class="sap-icon--survey"></i></button>
+        <button aria-label="Chart" class="fd-button is-selected" aria-pressed="true"><i class="sap-icon--pie-chart"></i></button>
+        <button aria-label="Pool" class="fd-button"><i class="sap-icon--pool"></i></button>
     </div>
 
     <div class="fd-segmented-button" role="group" aria-label="Group label">
@@ -61,65 +88,120 @@ export const segmentedButton = () => `
     </div>
 `;
 
-segmentedButton.storyName = 'Segmented Button (previously known as Button Group)';
+segmentedButton.storyName = 'Segmented button';
 segmentedButton.parameters = {
     docs: {
-        storyDescription: `
-Group a series of buttons together on a single line with the segmented button.
-Only one of the options can be active at a time, the others remain or become inactive.
-The option can be activated by clicking on it. This type of button is comparable to a radio button group.
-`
+        storyDescription: `The segmented button displays a group of options. Only one option can be active at a time by selecting it, while the others remain or become inactive when the initial option is selected. This button type was previously known as "button group" and is comparable to a radio button group.
+        <br><br>It can be displayed by using the <code class=”docs-code”>fd-segmented-button</code> class with <code class=”docs-code”>role=”group”</code> and the <code class=”docs-code”>aria-label=”Group label”</code> attribute.`
     }
 };
 
 export const menuButton = () => `
-<button class="fd-button fd-button--menu">Action Button</button>
-<button class="fd-button fd-button--ghost fd-button--menu">Ghost Button</button>
-<button class="fd-button fd-button--positive fd-button--menu">Positive Button</button>
-<button class="fd-button fd-button--negative fd-button--menu">Negative Button</button>
-<button class="fd-button fd-button--attention fd-button--menu">Attention Button</button>
-<br><br>
-<button class="fd-button fd-button--menu" aria-disabled="true" disabled>Action Button</button>
-<button class="fd-button fd-button--ghost fd-button--menu" aria-disabled="true" disabled>Ghost Button</button>
-<button class="fd-button fd-button--positive fd-button--menu" aria-disabled="true" disabled>Positive Button</button>
-<button class="fd-button fd-button--negative fd-button--menu" aria-disabled="true" disabled>Negative Button</button>
-<button class="fd-button fd-button--attention fd-button--menu" aria-disabled="true" disabled>Attention Button</button>
-<br><br>
-<button class="fd-button fd-button--emphasized fd-button--menu">Add to Cart</button>
-<button class="fd-button fd-button--menu">Add to Cart</button>
-<button class="fd-button fd-button--transparent fd-button--menu">Add to Cart</button>
-<button class="fd-button fd-button--emphasized fd-button--menu fd-button--positive">Approve</button>
-<button class="fd-button fd-button--negative fd-button--menu">Reject</button>
-<button class="fd-button fd-button--attention fd-button--menu">Attention</button>
-<br><br>
-<button class="fd-button fd-button--menu sap-icon--cart"></button>
-<button class="fd-button fd-button--transparent fd-button--menu sap-icon--cart"></button>
-<button class="fd-button fd-button fd-button--menu sap-icon--filter"></button>
-<button class="fd-button fd-button--menu fd-button--positive sap-icon--accept"></button>
-<button class="fd-button fd-button--menu fd-button--negative sap-icon--decline"></button>
-<button class="fd-button fd-button--menu fd-button--attention sap-icon--warning"></button>
-<br><br>
-<button class="fd-button fd-button--menu">Default</button>
-<button class="fd-button fd-button--compact fd-button--menu">Compact</button>
+<button class="fd-button fd-button--menu">
+    <span class="fd-button__text">Action Button</span>
+    <i class="sap-icon--slim-arrow-down"></i>
+</button>
+<button class="fd-button fd-button--ghost fd-button--menu">
+    <span class="fd-button__text">Ghost Button</span>
+    <i class="sap-icon--slim-arrow-down"></i>
+</button>
+<button class="fd-button fd-button--positive fd-button--menu">
+    <span class="fd-button__text">Positive Button</span>
+    <i class="sap-icon--slim-arrow-down"></i>
+</button>
+<button class="fd-button fd-button--negative fd-button--menu">
+    <span class="fd-button__text">Negative Button</span>
+    <i class="sap-icon--slim-arrow-down"></i>
+</button>
+<button class="fd-button fd-button--attention fd-button--menu">
+    <span class="fd-button__text">Attention Button</span>
+    <i class="sap-icon--slim-arrow-down"></i>
+</button>
+<br /><br />
+<button class="fd-button fd-button--menu" aria-disabled="true" disabled>
+    <span class="fd-button__text">Action Button</span>
+    <i class="sap-icon--slim-arrow-down"></i>
+</button>
+<button class="fd-button fd-button--ghost fd-button--menu" aria-disabled="true" disabled>
+    <span class="fd-button__text">Ghost Button</span>
+    <i class="sap-icon--slim-arrow-down"></i>
+</button>
+<button class="fd-button fd-button--positive fd-button--menu" aria-disabled="true" disabled>
+    <span class="fd-button__text">Positive Button</span>
+    <i class="sap-icon--slim-arrow-down"></i>
+</button>
+<button class="fd-button fd-button--negative fd-button--menu" aria-disabled="true" disabled>
+    <span class="fd-button__text">Negative Button</span>
+    <i class="sap-icon--slim-arrow-down"></i>
+</button>
+<button class="fd-button fd-button--attention fd-button--menu" aria-disabled="true" disabled>
+    <span class="fd-button__text">Attention Button</span>
+    <i class="sap-icon--slim-arrow-down"></i>
+</button>
+<br /><br />
+<button class="fd-button fd-button--emphasized fd-button--menu">
+    <span class="fd-button__text">Add to Cart</span>
+    <i class="sap-icon--slim-arrow-down"></i>
+</button>
+<button class="fd-button fd-button--menu">
+    <span class="fd-button__text">Add to Cart</span>
+    <i class="sap-icon--slim-arrow-down"></i>
+</button>
+<button class="fd-button fd-button--transparent fd-button--menu">
+    <span class="fd-button__text">Add to Cart</span>
+    <i class="sap-icon--slim-arrow-down"></i>
+</button>
+<button class="fd-button fd-button--emphasized fd-button--menu fd-button--positive">
+    <span class="fd-button__text">Approve Cart</span>
+    <i class="sap-icon--slim-arrow-down"></i>
+</button>
+<button class="fd-button fd-button--negative fd-button--menu">
+    <span class="fd-button__text">Reject</span>
+    <i class="sap-icon--slim-arrow-down"></i>
+</button>
+<button class="fd-button fd-button--attention fd-button--menu">
+    <span class="fd-button__text">Attention</span>
+    <i class="sap-icon--slim-arrow-down"></i>
+</button>
+<br /><br />
+<button aria-label="Add to cart" class="fd-button fd-button--menu">
+    <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
+</button>
+<button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--transparent">
+    <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
+</button>
+<button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--positive">
+    <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
+</button>
+<button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--negative">
+    <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
+</button>
+<button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--attention">
+    <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
+</button>
+<br /><br />
+<button class="fd-button fd-button--menu">
+    <span class="fd-button__text">Default</span>
+    <i class="sap-icon--slim-arrow-down"></i>
+</button>
+<button class="fd-button fd-button--compact fd-button--menu">
+    <span class="fd-button__text">Compact</span>
+    <i class="sap-icon--slim-arrow-down"></i>
+</button>
 `;
 
-menuButton.storyName = 'Menu Button';
+menuButton.storyName = 'Menu button';
 menuButton.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `
-Menu Buttons allows for multiple actions.
-There are two different types of menu buttons. Both can contain items with submenus.
-When the user activates the button, the menu opens. This is the default type.
-`
+        storyDescription: 'The menu button displays a dropdown menu upon selection and is considered the default menu button. There are two different type of menu buttons: the default menu button and split menu button, and both of them can contain items with submenus.'
     }
 };
 
 export const splitMenuButton = () => `
 <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
   <button class="fd-button" aria-label="button">Button with text</button>
-  <button class="fd-button sap-icon--slim-arrow-down" aria-controls="t4c0o273" aria-haspopup="true" 
-  aria-expanded="false" aria-label="More"></button>
+  <button class="fd-button" aria-controls="t4c0o273" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
   id="t4c0o273">
     <nav class="fd-menu">
@@ -141,8 +223,9 @@ export const splitMenuButton = () => `
 
 <div class="fd-button-split" role="group" aria-label="button-split">
   <button class="fd-button fd-button--emphasized" aria-label="button">Button with text</button>
-  <button class="fd-button fd-button--emphasized sap-icon--slim-arrow-down" aria-controls="t4c0o2732" 
-  aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+  <button class="fd-button fd-button--emphasized" aria-controls="t4c0o2732" 
+  aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
+
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
     id="t4c0o2732">
     <nav class="fd-menu">
@@ -164,8 +247,7 @@ export const splitMenuButton = () => `
 
 <div class="fd-button-split" role="group" aria-label="button-split">
   <button class="fd-button fd-button--transparent" aria-label="button">Button with text</button>
-  <button class="fd-button fd-button--transparent sap-icon--slim-arrow-down" aria-controls="t4c0o27322"
-  aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+  <button class="fd-button fd-button--transparent" aria-controls="t4c0o27322" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
     id="t4c0o27322">
     <nav class="fd-menu">
@@ -187,52 +269,49 @@ export const splitMenuButton = () => `
 
 `;
 
-splitMenuButton.storyName = 'Split Menu Button';
+splitMenuButton.storyName = 'Split menu button';
 splitMenuButton.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: `
-The menu button can also be split into 2 areas: the text label and the icon. The separator between them signals that the two areas
-result in different actions. The user has two choices: 1- activating the text label on the button triggers the action or 2- activating
-the arrow opens the menu. The split button consolidates a variety of commands, especially when one of the commands is used more often.
+        storyDescription: `The split menu button has two separate areas: the text label and the icon. The separator between them indicates that each area results in a different action, giving the user two choices: select the text label to trigger the action or select the arrow to open the menu. This button has a fixed size and the text truncates if the menu items exceed the maximum width available. 
+<br><br> Note: If the default action is displayed as an icon only, all the menu items must contain icons.
 
-In split mode, the text label depends on the default action. If the default action is displayed as an icon only, all the menu items must contain icons.
+**The split menu button can behave in two different ways:**
 
-**Split Menu Button Behaviors**
-The split menu button can have two different behaviors:
+1. The button triggers the default action set by the developer. If no default action is defined, the first item in the menu list will become the default.
+2. The button triggers the last action chosen by the user. Initially, it triggers the default action. However, when the user selects a different action, the default switches to the last action selected by the user.
 
-The button always triggers the default action set by the app developer. If no default action has been defined, the first item in the menu list becomes the default.
-The button triggers the last action chosen by the user. Initially, it also triggers the default action. However, when the user selects a different action, this user action becomes the default, and the button text label changes accordingly. The button has a fixed size and the text truncates if the menu item exceeds the available width (as with the combo box).
+The split menu button can be displayed by using <code class="docs-code>fd-button-split fd-has-margin-right-small</code> class with <code>role=”group”</code> and the <code>aria-label=”button-split”</code> attribute.
 `
     }
 };
 
 export const sizes = () => `
 <button class="fd-button">Save</button>
-<button class="fd-button fd-button sap-icon--cart"></button>
-<button class="fd-button fd-button--ghost sap-icon--cart"></button>
-<button class="fd-button fd-button--emphasized sap-icon--cart"></button>
-<button class="fd-button fd-button--transparent sap-icon--cart"></button>
+<button aria-label="Add to cart" class="fd-button"><i class="sap-icon--cart"></i></button>
+<button aria-label="Add to cart" class="fd-button fd-button--ghost"><i class="sap-icon--cart"></i></button>
+<button aria-label="Add to cart" class="fd-button fd-button--emphasized"><i class="sap-icon--cart"></i></button>
+<button aria-label="Add to cart" class="fd-button fd-button--transparent"><i class="sap-icon--cart"></i></button>
 <button class="fd-button fd-button--positive">Approve</button>
 <button class="fd-button fd-button--negative">Reject</button>
 <button class="fd-button fd-button--attention">Attention</button>
 <br><br>
 <button class="fd-button fd-button--compact">Edit</button>
-<button class="fd-button fd-button--compact fd-button sap-icon--cart"></button>
+<button aria-label="Add to cart" class="fd-button fd-button--compact"><i class="sap-icon--cart"></i></button>
 <button class="fd-button fd-button--ghost fd-button--compact">Edit</button>
-<button class="fd-button fd-button--emphasized fd-button--compact sap-icon--cart"></button>
-<button class="fd-button fd-button--transparent fd-button--compact sap-icon--cart"></button>
+<button aria-label="Add to cart" class="fd-button fd-button--emphasized fd-button--compact"><i class="sap-icon--cart"></i></button>
+<button aria-label="Add to cart" class="fd-button fd-button--transparent fd-button--compact"><i class="sap-icon--cart"></i></button>
 <button class="fd-button fd-button--positive fd-button--compact ">Approve</button>
 <button class="fd-button fd-button--negative fd-button--compact">Reject</button>
 <button class="fd-button fd-button--attention fd-button--compact">Attention</button>
 `;
 
-sizes.storyName = 'Sizes';
+sizes.storyName = 'Button sizes';
 sizes.parameters = {
     docs: {
         iframeHeight: 150,
         storyDescription: `
-All the buttons support the cozy (default) and compact sizes.
+The buttons in the first row are displayed in cozy size, which is the default sizing and does not require a modifier. The compact buttons shown in the second row, however, can be displayed by adding the <code class="docs-code">–compact</code> modifier class to the element.
 `
     }
 };
@@ -246,26 +325,34 @@ export const iconAndText = () => `
 <button class="fd-button fd-button--negative">Reject</button>
 <button class="fd-button fd-button--attention">Attention</button>
 <br><br>
-<button class="fd-button sap-icon--cart"></button>
-<button class="fd-button fd-button--transparent sap-icon--cart"></button>
-<button class="fd-button sap-icon--filter"></button>
-<button class="fd-button fd-button--ghost sap-icon--filter"></button>
-<button class="fd-button fd-button--positive sap-icon--accept"></button>
-<button class="fd-button fd-button--negative sap-icon--decline"></button>
-<button class="fd-button fd-button--attention sap-icon--decline"></button>
+<button aria-label="Add to cart" class="fd-button"><i class="sap-icon--cart"></i></button>
+<button aria-label="Add to cart" class="fd-button fd-button--emphasized"><i class="sap-icon--cart"></i></button>
+<button aria-label="Add to cart" class="fd-button fd-button--transparent"><i class="sap-icon--cart"></i></button>
+<button aria-label="Filter" class="fd-button fd-button--ghost"><i class="sap-icon--filter"></i></button>
+<button aria-label="Accept" class="fd-button fd-button--positive"><i class="sap-icon--accept"></i></button>
+<button aria-label="Decline" class="fd-button fd-button--negative"><i class="sap-icon--decline"></i></button>
+<button aria-label="Decline" class="fd-button fd-button--attention"><i class="sap-icon--decline"></i></button>
 `;
 
-iconAndText.storyName = 'Icon and Text';
+iconAndText.storyName = 'Icon or text';
 iconAndText.parameters = {
     docs: {
         iframeHeight: 150,
         storyDescription: `
-The buttons can contain **icons OR text**.
-The recommendation is to use either one or the other, not both. Use icon for buttons that contain very basic standard icon metaphors
-(e.g. _Back to previous screen, Create a new item, Remove from list, Edit, ..._)
+These buttons contain either icons **or** text, as it is highly recommended not to combine the two. 
 
-All button styles can be used with an icon. You can use the \`sap-icon--{icon-name}\` class to attach an icon to the button.
-The full list of all the available icons can be found on the <a href="icon.html">icons page</a>.
+**Use icon buttons for basic actions such as:**
+
+- _Edit_
+- _Back to previous screen_
+- _Remove from list_ etc. 
+
+
+Make sure the default accessibility text for the icon is appropriate for your use case. If the text is not ideal, define an app-specific accessibility text.
+        
+
+All button styles can be paired with an icon. You can use the \`sap-icon--{icon-name}\` class to attach an icon to the button.
+The full list of all the available icons can be found on the <a href="icon.html">Icon</a> page.
 `
     }
 };
@@ -320,23 +407,17 @@ export const buttonStates = () => `
 <p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF8">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
 `;
 
-buttonStates.storyName = 'Button States';
+buttonStates.storyName = 'Button states';
 buttonStates.parameters = {
     docs: {
         iframeHeight: 450,
         storyDescription: `
-The button provides feedback for "normal", "hover", "selected", "focus" and "disabled" states:
+These button types indicate different states: normal, selected, disabled and focusable disabled.
 
-- **Normal**: The default state of the button. It can be clicked/tapped to perform the corresponding action.
-- **Selected**: Used to signal that this button is selected among other buttons. This state can be rendered using
-the \`is-selected\` class or the \`aria-selected="true"\` attribute for accessibility.
-- **Disabled**: It cannot be clicked/tapped. This state can be rendered using the \`is-disabled\` class and the
-\`aria-disabled="true"\` attribute for accessibility.
-- **Focusable Disabled**: It cannot be clicked/tapped. The button is tabbable and focusable. A focus ring will appear when clicking or tabbing into the button.
- This state can be rendered using the \`is-disabled\` class and the
-\`aria-disabled="true"\` attribute for accessibility without the use of the \`disabled\` property. With the addition of the hidden \`__instructions\` 
-element, the user will be notified of further instructions to enable the button, and will be notified when the button is enabled
-by use of the \`aria-live\` property.
+- **Normal**: The button’s default state. It can be selected to perform a corresponding action.
+- **Selected**: The button is selected as opposed to other buttons. This state can be displayed by adding the <code>is-selected</code> class or the <code>aria-selected=”true”</code> attribute for accessibility.
+- **Disabled**: It cannot be selected. This state can be displayed by using the <code>is-disabled</code> class and the <code>aria-disabled=”true”</code> attribute for accessibility.
+- **Focusable disabled**: It cannot be selected, but it is tabbable and focusable. When the button is selected, a focus ring appears. This state can be displayed by using the <code>is-disabled</code> class and the <code>aria-disabled=”true”</code> attribute for accessibility without using the <code>disabled</code> property. By adding the hidden <code>_instructions</code> element, the user will be notified for further instructions on how to enable the button. They will also be notified when the button is enabled when using the <code>aria-live</code> property.
 `
     }
 };
@@ -346,23 +427,25 @@ export const focusableDisabled = () => `
 <p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
 `;
 
-focusableDisabled.storyName = 'Focusable Disabled';
+focusableDisabled.storyName = 'Focusable disabled';
 focusableDisabled.parameters = {
     docs: {
         storyDescription: `
-This disabled button is focusable by using only the \`aria-disabled\` prop without the use of the \`disabled\` prop.
-When using \`aria-disabled\` do not use the \`disabled\` prop in order to make the button focusable and readable by
-screen readers. In order for a focus ring to be enabled in a focusable disabled button, ensure that \`is-disabled\` is
-present and \`disabled\` is not.
-In order for helper text to be read out by the screen-reader a helper text has been added with \`aria-describedby\`
-matching the \`id\` of the \`<p>\` element using \`__instructions\` element which uses \`screen-reader-only\` styling so it is not visible.
-\`aria-live="assertive"\` is used to make the screen reader read out helper text when the state of the button has changed.
+The disabled button can be focusable by adding the <code>aria-disabled</code> attribute. To enable the focus ring in a focusable disabled button, ensure that <code>is-disabled</code> is present while <code>disabled</code> is not. 
+
+####Accessibility 
+When adding this attribute, make sure to not use the <code>disabled</code> property so that the button is both focusable and readable by screen readers.
+        
+When the state of the button has changed, add <code>aria-live=”assertive”</code> to prompt the screen reader to read the helper text out loud. 
+        
+Note: For the text to be read out loud by screen readers, a helper text has been added with <code>aria-describedby</code> matching the <code>id</code> of the paragraph element with the <code>_instructions</code> element. The element uses the <code>screen-reader-only</code> styling so that it is not visible.
+        
 `
     }
 };
 
-export const rtl = () => `
-<div dir="rtl">
+export const RTL = () => `
+<div dir="RTL">
   <button class="fd-button fd-button--emphasized">Add to Cart</button>
   <button class="fd-button">Add to Cart</button>
   <button class="fd-button fd-button--transparent">Add to Cart</button>
@@ -375,17 +458,18 @@ export const rtl = () => `
   <button class="fd-button fd-button--menu">Add to Cart</button>
   <button class="fd-button fd-button--transparent fd-button--menu">Add to Cart</button>
   <br><br>
-  <button class="fd-button sap-icon--cart"></button>
-  <button class="fd-button fd-button--emphasized sap-icon--cart"></button>
-  <button class="fd-button fd-button--transparent sap-icon--cart"></button>
-  <button class="fd-button fd-button--ghost sap-icon--filter"></button>
-  <button class="fd-button fd-button--positive sap-icon--accept"></button>
-  <button class="fd-button fd-button--negative sap-icon--decline"></button>
-  <button class="fd-button fd-button--attention sap-icon--warning"></button>
+  <button aria-label="Add to cart" class="fd-button"><i class="sap-icon--cart"></i></button>
+  <button aria-label="Add to cart" class="fd-button fd-button--emphasized"><i class="sap-icon--cart"></i></button>
+  <button aria-label="Add to cart" class="fd-button fd-button--transparent"><i class="sap-icon--cart"></i></button>
+  <button aria-label="Filter" class="fd-button fd-button--ghost"><i class="sap-icon--filter"></i></button>
+  <button aria-label="Approve" class="fd-button fd-button--positive"><i class="sap-icon--accept"></i></button>
+  <button aria-label="Decline" class="fd-button fd-button--negative"><i class="sap-icon--decline"></i></button>
+  <button aria-label="Decline" class="fd-button fd-button--attention"><i class="sap-icon--decline"></i></button>
+  
   <div class="fd-segmented-button" role="group" aria-label="Group label">
-    <button class="fd-button sap-icon--survey"></button>
-    <button class="fd-button sap-icon--pie-chart" aria-pressed="true"></button>
-    <button class="fd-button sap-icon--pool"></button>
+    <button aria-label="Survey" class="fd-button"><i class="sap-icon--survey"></i></button>
+    <button aria-label="Chart" class="fd-button" aria-pressed="true"><i class="sap-icon--pie-chart"></i></button>
+    <button aria-label="Pool" class="fd-button"><i class="sap-icon--pool"></i></button>
   </div>
 
   <div class="fd-segmented-button" role="group" aria-label="Group label">
@@ -396,8 +480,9 @@ export const rtl = () => `
 </div>
 `;
 
-rtl.parameters = {
+RTL.parameters = {
     docs: {
-        iframeHeight: 200
+        iframeHeight: 200,
+        storyDescription: 'These buttons are displayed from right-to-left on the screen.'
     }
 };

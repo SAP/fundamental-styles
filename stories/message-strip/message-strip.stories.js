@@ -15,7 +15,9 @@ export const defaultStrip = () => `
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
-  <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="ZvPBg609" aria-label="Close"></button>
+  <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="ZvPBg609" aria-label="Close">
+    <i class="sap-icon--decline"></i>
+  </button>
 </div>
 `;
 
@@ -37,7 +39,9 @@ export const information = () => `
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
-  <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="JwPcf464" aria-label="Close"></button>
+  <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="JwPcf464" aria-label="Close">
+    <i class="sap-icon--decline"></i>
+  </button>
 </div>
 `;
 
@@ -55,7 +59,9 @@ export const success = () => `
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
-  <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="ulr5z216" aria-label="Close"></button>
+  <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="ulr5z216" aria-label="Close">
+    <i class="sap-icon--decline"></i>
+  </button>
 </div>
 `;
 
@@ -73,7 +79,9 @@ export const warning = () => `
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
-  <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="fwYq4606" aria-label="Close"></button>
+  <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="fwYq4606" aria-label="Close">
+    <i class="sap-icon--decline"></i>
+  </button>
 </div>
 `;
 
@@ -94,7 +102,9 @@ export const error = () => `
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
-  <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW591" aria-label="Close"></button>
+  <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW591" aria-label="Close">
+    <i class="sap-icon--decline"></i>
+  </button>
 </div>
 `;
 
@@ -117,7 +127,9 @@ export const noIcons = () => `
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
-  <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW592" aria-label="Close"></button>
+  <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW592" aria-label="Close">
+    <i class="sap-icon--decline"></i>
+  </button>
 </div>
 
 <br />
@@ -127,7 +139,9 @@ export const noIcons = () => `
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
-  <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW593" aria-label="Close"></button>
+  <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW593" aria-label="Close">
+    <i class="sap-icon--decline"></i>
+  </button>
 </div>
 
 <br />
@@ -137,7 +151,9 @@ export const noIcons = () => `
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
-  <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW594" aria-label="Close"></button>
+  <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW594" aria-label="Close">
+    <i class="sap-icon--decline"></i>
+  </button>
 </div>
 
 <br />
@@ -147,7 +163,9 @@ export const noIcons = () => `
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
-  <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW595" aria-label="Close"></button>
+  <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW595" aria-label="Close">
+    <i class="sap-icon--decline"></i>
+  </button>
 </div>
 `;
 
@@ -166,7 +184,9 @@ export const rtl = () => `
       <p class="fd-message-strip__text">
         Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
       </p>
-      <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="ZvPBg609" aria-label="Close"></button>
+      <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="ZvPBg609" aria-label="Close">
+        <i class="sap-icon--decline"></i>
+      </button>
     </div>
 
      <br />
@@ -176,7 +196,9 @@ export const rtl = () => `
       <p class="fd-message-strip__text">
         Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
       </p>
-      <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW592" aria-label="Close"></button>
+      <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW592" aria-label="Close">
+        <i class="sap-icon--decline"></i>
+      </button>
    </div>
     
    <br />
@@ -186,7 +208,9 @@ export const rtl = () => `
       <p class="fd-message-strip__text">
         Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
       </p>
-      <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW595" aria-label="Close"></button>
+      <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW595" aria-label="Close">
+        <i class="sap-icon--decline"></i>
+      </button>
     </div>
 </div>
 `;

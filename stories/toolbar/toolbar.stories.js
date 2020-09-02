@@ -16,9 +16,15 @@ export const basic = () => `
     <button class="fd-button fd-button--transparent">Edit</button>
     <button class="fd-button fd-button--transparent">Delete</button>
     <span class="fd-toolbar__separator"></span>
-    <button class="fd-button fd-button--transparent sap-icon--survey"></button>
-    <button class="fd-button fd-button--transparent sap-icon--pool"></button>
-    <button class="fd-button fd-button--transparent sap-icon--pie-chart"></button>
+    <button class="fd-button fd-button--transparent" aria-label="Survey">
+        <i class="sap-icon--survey"></i>
+    </button>
+    <button class="fd-button fd-button--transparent" aria-label="Pool">
+        <i class="sap-icon--pool"></i>
+    </button>
+    <button class="fd-button fd-button--transparent" aria-label="Chart">
+        <i class="sap-icon--pie-chart"></i>
+    </button>
 </div>
 `;
 
@@ -32,9 +38,15 @@ export const types = () => `
         <button class="fd-button fd-button--compact fd-button--transparent">Edit</button>
         <button class="fd-button fd-button--compact fd-button--transparent">Delete</button>
         <span class="fd-toolbar__separator"></span>
-        <button class="fd-button fd-button--compact fd-button--transparent sap-icon--survey"></button>
-        <button class="fd-button fd-button--compact fd-button--transparent sap-icon--pool"></button>
-        <button class="fd-button fd-button--compact fd-button--transparent sap-icon--pie-chart"></button>
+        <button class="fd-button fd-button--transparent" aria-label="Survey">
+            <i class="sap-icon--survey"></i>
+        </button>
+        <button class="fd-button fd-button--transparent" aria-label="Pool">
+            <i class="sap-icon--pool"></i>
+        </button>
+        <button class="fd-button fd-button--transparent" aria-label="Chart">
+            <i class="sap-icon--pie-chart"></i>
+        </button>
     </div>
     <h3>Transparent</h3>
     <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
@@ -44,9 +56,15 @@ export const types = () => `
         <button class="fd-button fd-button--compact fd-button--transparent">Edit</button>
         <button class="fd-button fd-button--compact fd-button--transparent">Delete</button>
         <span class="fd-toolbar__separator"></span>
-        <button class="fd-button fd-button--compact fd-button--transparent sap-icon--survey"></button>
-        <button class="fd-button fd-button--compact fd-button--transparent sap-icon--pool"></button>
-        <button class="fd-button fd-button--compact fd-button--transparent sap-icon--pie-chart"></button>
+        <button class="fd-button fd-button--transparent" aria-label="Survey">
+            <i class="sap-icon--survey"></i>
+        </button>
+        <button class="fd-button fd-button--transparent" aria-label="Pool">
+            <i class="sap-icon--pool"></i>
+        </button>
+        <button class="fd-button fd-button--transparent" aria-label="Chart">
+            <i class="sap-icon--pie-chart"></i>
+        </button>
     </div>
     <h3>Auto</h3>
     <div class="fd-toolbar fd-toolbar--clear fd-toolbar--auto">
@@ -55,9 +73,15 @@ export const types = () => `
         <button class="fd-button fd-button--compact fd-button--transparent">Edit</button>
         <button class="fd-button fd-button--compact fd-button--transparent">Delete</button>
         <span class="fd-toolbar__separator"></span>
-        <button class="fd-button fd-button--compact fd-button--transparent sap-icon--survey"></button>
-        <button class="fd-button fd-button--compact fd-button--transparent sap-icon--pool"></button>
-        <button class="fd-button fd-button--compact fd-button--transparent sap-icon--pie-chart"></button>
+        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Survey">
+            <i class="sap-icon--survey"></i>
+        </button>
+        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Pool">
+            <i class="sap-icon--pool"></i>
+        </button>
+        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Chart">
+            <i class="sap-icon--pie-chart"></i>
+        </button>
     </div>
     <h3>Info</h3>
     <div class="fd-toolbar fd-toolbar--info">3 item selected</div>
@@ -161,10 +185,16 @@ export const separator = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--cozy">
     <span class="fd-toolbar__spacer"></span>
     <span class="fd-toolbar__separator"></span>
-    <button class="fd-button fd-button--transparent sap-icon--survey"></button>
+    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Survey">
+        <i class="sap-icon--survey"></i>
+    </button>
     <span class="fd-toolbar__separator"></span>
-    <button class="fd-button fd-button--transparent sap-icon--pool"></button>
-    <button class="fd-button fd-button--transparent sap-icon--pie-chart"></button>
+    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Pool">
+        <i class="sap-icon--pool"></i>
+    </button>
+    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Chart">
+        <i class="sap-icon--pie-chart"></i>
+    </button>
 </div>
 `;
 
@@ -184,9 +214,15 @@ export const sizes = () => `
     <button class="fd-button fd-button--positive">Accept</button>
     <button class="fd-button fd-button--reject">Reject</button>
     <span class="fd-toolbar__separator"></span>
-    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--survey"></button>
-    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--pool"></button>
-    <button class="fd-button fd-button--compact fd-button--transparent sap-icon--pie-chart"></button>
+    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Survey">
+        <i class="sap-icon--survey"></i>
+    </button>
+    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Pool">
+        <i class="sap-icon--pool"></i>
+    </button>
+    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Chart">
+        <i class="sap-icon--pie-chart"></i>
+    </button>
 </div>
 `;
 
@@ -209,11 +245,13 @@ export const overflow = () => `
         <span class="fd-toolbar__separator"></span>
         <div class="fd-popover fd-toolbar__overflow">
         <div class="fd-popover__control">
-            <button class="fd-button fd-button--transparent sap-icon--overflow"
+            <button class="fd-button fd-button--transparent"
             aria-controls="wgxzK85912"
             aria-haspopup="true"
             aria-expanded="true"
-            aria-label="More"></button>
+            aria-label="More">
+                <i class="sap-icon--overflow"></i>    
+            </button>
         </div>
         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
             aria-hidden="false"
@@ -240,11 +278,13 @@ export const overflow = () => `
     <span class="fd-toolbar__separator"></span>
     <div class="fd-popover fd-toolbar__overflow">
     <div class="fd-popover__control">
-        <button class="fd-button fd-button--compact fd-button--transparent sap-icon--overflow"
+        <button class="fd-button fd-button--compact fd-button--transparent"
         aria-controls="wgxzK859122"
         aria-haspopup="true"
         aria-expanded="true"
-        aria-label="More"></button>
+        aria-label="More">
+            <i class="sap-icon--overflow"></i>    
+        </button>
     </div>
     <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
         aria-hidden="false"

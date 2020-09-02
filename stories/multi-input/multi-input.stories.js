@@ -1,4 +1,5 @@
 import '../../dist/radio.css';
+import '../../dist/title.css';
 
 export default {
     title: 'Patterns/Multi Input',
@@ -55,7 +56,9 @@ export const cozyAndCompact = () => `
                         </div>
                     </div>
                     <span class="fd-input-group__addon fd-input-group__addon--button">
-                        <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--value-help" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="true"></button>
+                        <button class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="true">
+                            <i class="sap-icon--value-help"></i>
+                        </button>
                     </span>
                 </div>
             </div>
@@ -139,7 +142,9 @@ export const cozyAndCompact = () => `
                         </div>
                     </div>
                     <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                        <button class="fd-input-group__button fd-button fd-button--transparent fd-button--compact sap-icon--value-help" aria-controls="F4GcX34a" aria-expanded="false" aria-haspopup="true"></button>
+                        <button class="fd-input-group__button fd-button fd-button--transparent fd-button--compact" aria-controls="F4GcX34a" aria-expanded="false" aria-haspopup="true">
+                            <i class="sap-icon--value-help"></i>
+                        </button>
                     </span>
                 </div>
             </div>
@@ -200,6 +205,112 @@ cozyAndCompact.parameters = {
     }
 };
 
+export const asFormItem = () =>`
+<div style="height:310px">
+    <div class="fd-form-item">
+    <label class="fd-form-label">
+        Multi Input as form item
+    </label>
+    <div class="fd-popover">
+        <div class="fd-popover__control" aria-controls="F4GcX348a" aria-expanded="true" aria-haspopup="true">
+            <div class="fd-input-group fd-input-group--control">
+                <div class="fd-tokenizer">
+                    <div class="fd-tokenizer__inner">
+                        <span class="fd-token" role="button">
+                            <span class="fd-token__text">
+                                Apple
+                            </span>
+                            <button class="fd-token__close"></button>
+                        </span>
+                        <span class="fd-token" role="button">
+                            <span class="fd-token__text">
+                                Orange
+                            </span>
+                            <button class="fd-token__close"></button>
+                        </span>
+                        <span class="fd-token" role="button">
+                            <span class="fd-token__text">
+                                Kiwi
+                            </span>
+                            <button class="fd-token__close"></button>
+                        </span>
+                        <span class="fd-token" role="button">
+                            <span class="fd-token__text">
+                                Banana
+                            </span>
+                            <button class="fd-token__close"></button>
+                        </span>
+                        <input class="fd-input fd-input-group__input fd-tokenizer__input" />
+                    </div>
+                </div>
+                <span class="fd-input-group__addon fd-input-group__addon--button">
+                    <button class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="true">
+                        <i class="sap-icon--value-help"></i>
+                    </button>
+                </span>
+            </div>
+        </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcX348a">
+        <div class="fd-popover__wrapper">
+            <ul class="fd-list fd-list--multi-input">
+                <li class="fd-list__item is-selected" role="option">
+                    <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez611">
+                    <label class="fd-checkbox__label fd-list__label" for="Ai4ez611">
+                        <span class="fd-checkbox__text fd-list__title">
+                            Apple
+                        </span>
+                    </label>
+                </li>
+                <li class="fd-list__item is-selected" role="option">
+                    <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez612">
+                    <label class="fd-checkbox__label fd-list__label" for="Ai4ez612">
+                        <span class="fd-checkbox__text fd-list__title">
+                            Orange
+                        </span>
+                    </label>
+                </li>
+                <li class="fd-list__item is-selected" role="option">
+                    <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez614">
+                    <label class="fd-checkbox__label fd-list__label" for="Ai4ez614">
+                        <span class="fd-checkbox__text fd-list__title">
+                            Banana
+                        </span>
+                    </label>
+                </li>
+                <li class="fd-list__item is-selected" role="option">
+                    <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez615">
+                    <label class="fd-checkbox__label fd-list__label" for="Ai4ez615">
+                        <span class="fd-checkbox__text fd-list__title">
+                            Kiwi
+                        </span>
+                    </label>
+                </li>
+                <li class="fd-list__item" role="option">
+                    <input type="checkbox" class="fd-checkbox fd-list__input" id="Ai4ez617">
+                    <label class="fd-checkbox__label fd-list__label" for="Ai4ez617">
+                        <span class="fd-checkbox__text fd-list__title">
+                            Lemon
+                        </span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+`;
+
+asFormItem.parameters = {
+    docs: {
+        iframeHeight: 900,
+        storyDescription: `
+Note that the popover body width is restricted to a max of 37.5rem to avoid readability issues in large-width popovers.
+Applications are free to override this in their custom styles if needed and own any readability issues arising from this override.
+`
+    }
+};
+
 export const grouping = () => `
 <div style="height:450px">
     <div class="fd-popover">
@@ -230,7 +341,9 @@ export const grouping = () => `
                     </div>
                 </div>
                 <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--value-help" aria-controls="F4H8X34a" aria-expanded="false" aria-haspopup="true"></button>
+                    <button class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4H8X34a" aria-expanded="false" aria-haspopup="true">
+                        <i class="sap-icon--value-help"></i>
+                    </button>
                 </span>
             </div>
         </div>
@@ -343,7 +456,9 @@ export const matchPopoverBodySize = () => `
                     </div>
                 </div>
                 <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--value-help" aria-controls="F4HGFHX34a" aria-expanded="false" aria-haspopup="true"></button>
+                    <button class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4HGFHX34a" aria-expanded="false" aria-haspopup="true">
+                        <i class="sap-icon--value-help"></i>
+                    </button>
                 </span>
             </div>
         </div>
@@ -533,7 +648,9 @@ export const readOnlyAndDisabled = () => `
                     </div>
                 </div>
                 <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button tabindex="-1" class="fd-input-group__button fd-button fd-button--transparent sap-icon--value-help"></button>
+                    <button tabindex="-1" class="fd-input-group__button fd-button fd-button--transparent">
+                        <i class="sap-icon--value-help"></i>
+                    </button>
                 </span>
             </div>
         </div>
@@ -584,7 +701,9 @@ export const semantic = () => `
                  </div>
             </div>
             <span class="fd-input-group__addon fd-input-group__addon--button">
-                <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--value-help" aria-controls="F4GcKJH8a" aria-expanded="false" aria-haspopup="true"></button>
+                <button class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcKJH8a" aria-expanded="false" aria-haspopup="true">
+                    <i class="sap-icon--value-help"></i>
+                </button>
             </span>
         </div>
     </div>
@@ -650,14 +769,16 @@ export const mobileMode = () => `
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h3 class="fd-dialog__title">
+                    <h3 class="fd-title fd-title--h5">
                         Select Ingredient
                     </h3>
                 </div>
             </div>
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent sap-icon--decline" aria-label="close"></button>
+                    <button class="fd-button fd-button--transparent" aria-label="close">
+                        <i class="sap-icon--decline"></i>
+                    </button>
                 </div>
             </div>
         </header>
@@ -690,12 +811,16 @@ export const mobileMode = () => `
                              </div>
                          </div>
                         <span class="fd-input-group__addon fd-input-group__addon--button">
-                            <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--value-help"></button>
+                            <button class="fd-input-group__button fd-button fd-button--transparent">
+                                <i class="sap-icon--value-help"></i>
+                            </button>
                         </span>
                     </div>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent sap-icon--multiselect-all"></button>
+                    <button class="fd-button fd-button--transparent">
+                        <i class="sap-icon--multiselect-all"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -784,7 +909,9 @@ export const filtering = () => `
                 </div>
             </div>
             <span class="fd-input-group__addon fd-input-group__addon--button">
-                <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--value-help" aria-controls="F4GcX348aB" aria-expanded="false" aria-haspopup="true"></button>
+                <button class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcX348aB" aria-expanded="false" aria-haspopup="true">
+                    <i class="sap-icon--value-help"></i>
+                </button>
             </span>
         </div>
     </div>
@@ -814,10 +941,10 @@ export const filtering = () => `
                     </span>
                 </label>
             </li>
-            <li class="fd-list__footer">
-              <a class="fd-link" href="#">Show All</a>
-            </li>
         </ul>
+        <span class="fd-list__footer">
+          <a class="fd-link" href="#">Show All</a>
+        </span>
     </div>
 </div>
 `;

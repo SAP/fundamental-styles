@@ -1,4 +1,5 @@
 import '../../dist/radio.css';
+import '../../dist/title.css';
 
 export default {
     title: 'Patterns/Combobox Input',
@@ -25,7 +26,9 @@ export const cozyAndCompact = () => `
                 <div class="fd-input-group fd-input-group--control">
                     <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Fruit">
                     <span class="fd-input-group__addon fd-input-group__addon--button">
-                        <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-controls="F4GcX348" aria-expanded="true" aria-haspopup="true"></button>
+                        <button class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcX348" aria-expanded="true" aria-haspopup="true">
+                            <i class="sap-icon--navigation-down-arrow"></i>
+                        </button>
                     </span>
                 </div>
             </div>
@@ -91,7 +94,9 @@ export const cozyAndCompact = () => `
                 <div class="fd-input-group fd-input-group--control">
                     <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Select Fruit">
                     <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
-                        <button class="fd-input-group__button fd-button fd-button--compact fd-button--transparent sap-icon--navigation-down-arrow fd-select__button" aria-controls="F4GcX34" aria-expanded="true" aria-haspopup="true"></button>
+                        <button class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-select__button" aria-controls="F4GcX34" aria-expanded="true" aria-haspopup="true">
+                            <i class="sap-icon--navigation-down-arrow"></i>
+                        </button>
                     </span>
                 </div>
             </div>
@@ -126,6 +131,92 @@ cozyAndCompact.parameters = {
     }
 };
 
+export const asFormItem = () =>`
+<div style="height:700px">
+    <div class="fd-form-item">
+        <label class="fd-form-label">Combobox as a form item</label>
+        <div class="fd-popover">
+            <div class="fd-popover__control" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="true">
+                <div class="fd-input-group fd-input-group--control">
+                    <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Fruit">
+                    <span class="fd-input-group__addon fd-input-group__addon--button">
+                        <button
+                            aria-controls="F4GcX348"
+                            aria-expanded="true"
+                            aria-haspopup="true"
+                            class="fd-input-group__button fd-button fd-button--transparent sap-icon--navigation-down-arrow"
+                        ></button>
+                    </span>
+                </div>
+            </div>
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcX348">
+                <div class="fd-popover__wrapper docs-max-height">
+                    <ul class="fd-list fd-list--dropdown" role="listbox">
+                        <li role="option" tabindex="0" class="fd-list__item is-selected">
+                            <span class="fd-list__title">
+                                <span class="fd-list__bold">App</span>le
+                            </span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Orange</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Banana</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Kiwi</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Nectarine</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Apricots</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Peache</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Plum</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Mango</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Strawberry</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Blueberry</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Watermelon</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Rockmelon</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Honeydew</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <span class="fd-list__title">Apple</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+`;
+
+asFormItem.parameters = {
+    docs: {
+        iframeHeight: 700,
+        storyDescription: `
+Note that the popover body width is restricted to a max of 37.5rem to avoid readability issues in large-width popovers.
+Applications are free to override this in their custom styles if needed and own any readability issues arising from this override.
+`
+    }
+};
+
 export const twoItemsAndItemsGrouping = () => `
 <div style="height:500px">
     <div style="display:flex;justify-content:space-around">
@@ -134,7 +225,9 @@ export const twoItemsAndItemsGrouping = () => `
                 <div class="fd-input-group fd-input-group--control">
                     <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Product">
                     <span class="fd-input-group__addon fd-input-group__addon--button">
-                        <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--navigation-down-arrow fd-select__button" aria-controls="F4GRTGLK6" aria-expanded="true" aria-haspopup="true"></button>
+                        <button class="fd-input-group__button fd-button fd-button--transparent fd-select__button" aria-controls="F4GRTGLK6" aria-expanded="true" aria-haspopup="true">
+                            <i class="sap-icon--navigation-down-arrow"></i>
+                        </button>
                     </span>
                 </div>
             </div>
@@ -166,7 +259,9 @@ export const twoItemsAndItemsGrouping = () => `
                 <div class="fd-input-group fd-input-group--control">
                     <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Ingredient">
                     <span class="fd-input-group__addon fd-input-group__addon--button">
-                        <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-controls="F4GcXLK6" aria-expanded="true" aria-haspopup="true"></button>
+                        <button class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcXLK6" aria-expanded="true" aria-haspopup="true">
+                            <i class="sap-icon--navigation-down-arrow"></i>
+                        </button>
                     </span>
                 </div>
             </div>
@@ -228,7 +323,9 @@ export const matchPopoverBodySize = () => `
         <div class="fd-input-group fd-input-group--control">
             <input type="text" class="fd-input fd-input-group__input" id="" placeholder="Select Ingredient">
             <span class="fd-input-group__addon fd-input-group__addon--button">
-                <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--navigation-down-arrow" aria-controls="F4HTFDLK6" aria-expanded="true" aria-haspopup="true"></button>
+                <button class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4HTFDLK6" aria-expanded="true" aria-haspopup="true">
+                    <i class="sap-icon--navigation-down-arrow"></i>
+                </button>
             </span>
         </div>
     </div>
@@ -273,7 +370,9 @@ export const disabledAndReadOnly = () => `
             <div class="fd-input-group fd-input-group--control" aria-disabled="true" disabled>
                 <input type="text" class="fd-input fd-input-group__input" id="" value="Orange" placeholder="Select Fruit">
                 <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--navigation-down-arrow fd-select__button"></button>
+                    <button class="fd-input-group__button fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--navigation-down-arrow"></i>
+                    </button>
                 </span>
             </div>
         </div>
@@ -304,8 +403,10 @@ export const semantic = () => `
                 <div class="fd-input-group fd-input-group--control is-success">
                     <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="" placeholder="Select Fruit">
                     <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
-                        <button class="fd-input-group__button fd-button fd-button--compact fd-button--transparent sap-icon--navigation-down-arrow fd-select__button" 
-                        aria-controls="F4GcEX34" aria-expanded="true" aria-haspopup="true"></button>
+                        <button class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-select__button" 
+                        aria-controls="F4GcEX34" aria-expanded="true" aria-haspopup="true">
+                            <i class="sap-icon--navigation-down-arrow"></i>
+                        </button>
                     </span>
                 </div>
             </div>
@@ -353,14 +454,16 @@ export const mobile = () => `
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h3 class="fd-dialog__title">
+                    <h3 class="fd-title fd-title--h5">
                         Ingredients
                     </h3>
                 </div>
             </div>
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent sap-icon--decline" aria-label="close"></button>
+                    <button class="fd-button fd-button--transparent" aria-label="close">
+                        <i class="sap-icon--decline"></i>
+                    </button>
                 </div>
             </div>
         </header>
@@ -369,7 +472,9 @@ export const mobile = () => `
                 <div class="fd-input-group fd-input-group--control">
                      <input type="text" class="fd-input fd-input-group__input" value="Apple" id="" placeholder="Select Ingredient">
                      <span class="fd-input-group__addon fd-input-group__addon--button">
-                         <button class="fd-input-group__button fd-button fd-button--transparent sap-icon--navigation-down-arrow"></button>
+                         <button class="fd-input-group__button fd-button fd-button--transparent">
+                                <i class="sap-icon--navigation-down-arrow"></i>
+                            </button>
                      </span>
                  </div>
             </div>

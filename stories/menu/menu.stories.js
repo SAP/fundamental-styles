@@ -1,6 +1,7 @@
 import '../../dist/button.css';
 import '../../dist/icon.css';
 import '../../dist/menu.css';
+import '../../dist/title.css';
 
 export default {
     title: 'Components/Menu',
@@ -86,7 +87,7 @@ export const mobileCozyMode = () => `
         <header aria-label="bar-header" class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h3 class="fd-dialog__title">
+                    <h3 class="fd-title fd-title--h5">
                         Example Submenu
                     </h3>
                 </div>
@@ -141,10 +142,12 @@ export const mobileCozyMode = () => `
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                <button aria-label="fd-button" role="button" class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
+                <button aria-label="fd-button" role="button" class="fd-button fd-button--transparent">
+                    <i class="sap-icon--navigation-left-arrow"></i>
+                </button>
             </div>
             <div class="fd-bar__element">
-                    <h3 class="fd-dialog__title">
+                    <h3 class="fd-title fd-title--h5">
                         Option 2
                     </h3>
                 </div>

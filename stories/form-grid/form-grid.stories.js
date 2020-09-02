@@ -29,7 +29,11 @@ For each size, you can define how many grid columns are used for **labels**, **f
 
 The optional empty grid columns are placed after the input elements. They avoid excessive stretching of the input fields. This ratio is displayed as **x:y:z**, where **x** is the number of grids used by the labels, **y** stands for the fields, and **z** for empty columns.
 
-We highly recommend to change the default of the label-field-ratio according to your app’s needs. For more information, see the recommended layouts in the Layout section.`,
+We highly recommend to change the default of the label-field-ratio according to your app’s needs. For more information, see the recommended layouts in the Layout section.
+
+### Use of Columns
+When working with form groups, it's always best to use the recommended number of columns to make the most of your screen space. That way, users aren't prompted to scroll down because of unused white space, and the form is visually balanced between the left and right side of the screen.
+`,
         tags: ['f3', 'a11y']
     }
 };
@@ -38,9 +42,7 @@ export const sSize = () => `
 <div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical" style="max-width:600px">
     <div class="fd-row">
         <div class="fd-col">
-            <div class="fd-form-layout-grid-flex">
                 <label class="fd-form-label" for="input-1-name">Name:</label>
-            </div>
         </div>
         <div class="fd-col">
             <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
@@ -48,9 +50,7 @@ export const sSize = () => `
     </div>
     <div class="fd-row">
         <div class="fd-col">
-            <div class="fd-form-layout-grid-flex">
                 <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
-            </div>
         </div>
         <div class="fd-col">
             <input class="fd-input" type="text" id="input-1-street" placeholder="Enter address" value="Myrtle St.">
@@ -61,9 +61,7 @@ export const sSize = () => `
     </div>
     <div class="fd-row">
         <div class="fd-col">
-            <div class="fd-form-layout-grid-flex">
                 <label class="fd-form-label fd-form-label--required" for="input-1-zip">ZIP Code/City: </label>
-            </div>
         </div>
         <div class="fd-col fd-col--4">
             <input class="fd-input" type="text" id="input-1-zip" placeholder="Enter ZIP Code" value="43823">
@@ -74,9 +72,7 @@ export const sSize = () => `
     </div>
     <div class="fd-row">
         <div class="fd-col">
-            <div class="fd-form-layout-grid-flex">
                 <label class="fd-form-label" for="input-1-country">Country:</label>
-            </div>
         </div>
         <div class="fd-col fd-col--4">
             <div class="fd-popover" style="width:100%">
@@ -90,7 +86,9 @@ export const sSize = () => `
                         role="combobox"
                         tabindex="0">
                         <span class="fd-select__text-content">US</span>
-                        <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                        <span class="fd-button fd-button--transparent fd-select__button">
+                            <i class="sap-icon--slim-arrow-down"></i>
+                        </span>
                     </div>
                   </div>
                 </div>
@@ -178,7 +176,9 @@ export const mSizeDefault = () => `
                 role="combobox"
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                </span>
             </div>
           </div>
         </div>
@@ -268,7 +268,9 @@ export const mSizeSplitScreen = () => `
                 role="combobox"
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                </span>
             </div>
           </div>
         </div>
@@ -352,7 +354,9 @@ export const mSizeFullScreenApp = () => `
                 role="combobox"
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                </span>
             </div>
           </div>
         </div>
@@ -436,7 +440,9 @@ export const mSizeFullScreenAppLongLabel = () => `
                 role="combobox"
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                </span>
             </div>
           </div>
         </div>
@@ -518,7 +524,9 @@ export const lSizeDefault = () => `
                 role="combobox"
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                </span>
             </div>
           </div>
         </div>
@@ -603,7 +611,9 @@ export const lSizeSingleFormGroup = () => `
                 role="combobox"
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                </span>
             </div>
           </div>
         </div>
@@ -687,7 +697,9 @@ export const lSizeMultipleFormGroup = () => `
                     role="combobox"
                     tabindex="0">
                     <span class="fd-select__text-content">US</span>
-                    <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                    <span class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </span>
                 </div>
               </div>
             </div>
@@ -753,7 +765,9 @@ export const lSizeMultipleFormGroup = () => `
                     role="combobox"
                     tabindex="0">
                     <span class="fd-select__text-content">US</span>
-                    <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                    <span class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </span>
                 </div>
               </div>
             </div>
@@ -837,7 +851,9 @@ export const xlDefault = () => `
                 role="combobox"
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                </span>
             </div>
           </div>
         </div>
@@ -923,7 +939,9 @@ export const xlSingleFormGroup = () => `
                 role="combobox"
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                </span>
             </div>
           </div>
         </div>
@@ -1012,7 +1030,9 @@ export const xlDoubleFormGroup = () => `
                     role="combobox"
                     tabindex="0">
                     <span class="fd-select__text-content">US</span>
-                    <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                    <span class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </span>
                 </div>
               </div>
             </div>
@@ -1078,7 +1098,9 @@ export const xlDoubleFormGroup = () => `
                     role="combobox"
                     tabindex="0">
                     <span class="fd-select__text-content">US</span>
-                    <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                    <span class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </span>
                 </div>
               </div>
             </div>
@@ -1166,7 +1188,9 @@ export const xlMultipleFormGroup = () => `
                     role="combobox"
                     tabindex="0">
                     <span class="fd-select__text-content">US</span>
-                    <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                    <span class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </span>
                 </div>
               </div>
             </div>
@@ -1232,7 +1256,9 @@ export const xlMultipleFormGroup = () => `
                     role="combobox"
                     tabindex="0">
                     <span class="fd-select__text-content">US</span>
-                    <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                    <span class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </span>
                 </div>
               </div>
             </div>
@@ -1300,7 +1326,9 @@ export const xlMultipleFormGroup = () => `
                   role="combobox"
                   tabindex="0">
                   <span class="fd-select__text-content">US</span>
-                  <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                  <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                  </span>
               </div>
             </div>
           </div>
@@ -1369,5 +1397,304 @@ fourSevenOneCompactLayout.parameters = {
         iframeHeight: 200,
         storyDescription: `
 To display the form using a compact layout, add the \`--compact\` modifier on the \`fd-input\` class.`
+    }
+};
+
+export const columnRecommended = () => `
+<h1>XL2-L2-M2-S1</h1>
+<div class="fd-container fd-form-layout-grid-container">
+  <div class="fd-row"> 
+    <div class="fd-col fd-col-md--6  fd-col-lg--6 fd-col-xl--6 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-1-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+
+    <div class="fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-1a-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-1a-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h1>XL2-L2-M1-S1</h1>
+<div class="fd-container fd-form-layout-grid-container">
+  <div class="fd-row"> 
+    <div class="fd-col fd-col-md--12 fd-col-lg--6 fd-col-xl--6 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-2-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-2-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+
+    <div class="fd-col fd-col-md--12 fd-col-lg--6 fd-col-xl--6 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-2a-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-2a-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h1>XL2-L1-M1-S1</h1>
+<div class="fd-container fd-form-layout-grid-container">
+  <div class="fd-row"> 
+    <div class="fd-col fd-col-md--12 fd-col-xl--6 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-3-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-3-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+
+    <div class="fd-col fd-col-md--12 fd-col-xl--6 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-3a-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-3a-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+
+
+columnRecommended.parameters = {
+    docs: {
+        iframeHeight: 400,
+        storyDescription: `
+The recommended column layouts for a form group are XL2-L2-M2-S1, XL2-L2-M1-S1 and XL2-L1-M1-S1. The numbers being how many columns are in each row. 
+XL represents the screen at size extra large, L represents the screen at size large, M represents the screen at size medium and S represents the screen at size small.
+`
+    }
+};
+
+export const columnPossible = () => `
+<h1>XL3-L1-M1-S1</h1>
+<div class="fd-container fd-form-layout-grid-container">
+  <div class="fd-row"> 
+    <div class="fd-col fd-col-xl--4 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-1-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+
+    <div class="fd-col fd-col-xl--4 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-1a-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-1a-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+
+    <div class="fd-col fd-col-xl--4 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-1b-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-1b-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h1>XL1-L1-M1-S1</h1>
+<div class="fd-container fd-form-layout-grid-container">
+  <div class="fd-row"> 
+    <div class="fd-col fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-2-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-2-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+
+    <div class="fd-col fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-2a-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-2a-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+columnPossible.parameters = {
+    docs: {
+        iframeHeight: 400,
+        storyDescription: `
+The other possible layouts for a form group are XL3-L1-M1-S1 and XL1-L1-M1-S1`
+    }
+};
+
+export const columnNotRecommended = () => `
+<h1>XL3-L2-M2-S1</h1>
+<div class="fd-container fd-form-layout-grid-container">
+  <div class="fd-row"> 
+    <div class="fd-col fd-col-lg--6 fd-col-xl--4 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-1-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+
+    <div class="fd-col fd-col-lg--6 fd-col-xl--4 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-1a-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-1a-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+
+    <div class="fd-col fd-col-lg--6 fd-col-xl--4 fd-col--wrap">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-1b-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-1b-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+columnNotRecommended.parameters = {
+    docs: {
+        iframeHeight: 400,
+        storyDescription: `
+The layout that is not recommended for a form group are XL3-L2-M2-S1
+`
+    }
+};
+
+export const RTL = () => `
+<div dir="rtl">
+  <div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
+    <div class="fd-row">
+      <div class="fd-col fd-col-md--3  fd-col-lg--4">
+        <label class="fd-form-label" for="input-1-name">Name:</label>
+      </div>
+      <div class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4">
+        <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+      </div>
+    </div>
+
+    <div class="fd-row">
+      <div class="fd-col fd-col-md--3  fd-col-lg--4">
+        <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
+      </div>
+      <div class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4">
+        <div class="fd-row">
+        <div class="fd-col fd-col--4">
+            <input class="fd-input" type="text" id="input-1-street" placeholder="Enter address" value="Myrtle St.">
+        </div>
+        <div class="fd-col fd-col--8">
+            <input class="fd-input" type="text" id="input-1-number" placeholder="Enter Street Number" value="495">
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fd-row">
+      <div class="fd-col fd-col-md--3  fd-col-lg--4">
+        <label class="fd-form-label fd-form-label--required" for="input-1-zip">ZIP Code/City: </label>
+      </div>
+      <div class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4">
+        <div class="fd-row">
+          <div class="fd-col fd-col--8">
+            <input class="fd-input" type="text" id="input-1-zip" placeholder="Enter ZIP Code" value="43823">
+        </div>
+        <div class="fd-col fd-col--4">
+            <input class="fd-input" type="text" id="input-1-city" placeholder="Enter City" value="Downtown">
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fd-row">
+      <div class="fd-col fd-col-md--3  fd-col-lg--4">
+        <label class="fd-form-label" for="input-1-country">Country:</label>
+      </div>
+      <div class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4">
+        <div class="fd-popover" style="width:100%">
+          <div class="fd-popover__control">
+            <div class="fd-select">
+              <div
+                  aria-controls="h031XCM509"
+                  aria-expanded="false"
+                  aria-haspopup="listbox"
+                  class="fd-select__control"
+                  role="combobox"
+                  tabindex="0">
+                  <span class="fd-select__text-content">US</span>
+                  <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+RTL.parameters = {
+    docs: {
+        iframeHeight: 500,
+        storyDescription: `
+To use rtl wrap the content in a div with <code>dir="rtl"</code>
+`
     }
 };

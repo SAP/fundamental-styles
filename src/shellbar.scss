@@ -78,7 +78,7 @@ $block: #{$fd-namespace}-shellbar;
     }
 
     .#{$block}__avatar--circle {
-      background-color: var(--sapAccentColor6);
+      border: 0.0625rem solid var(--sapShell_InteractiveBorderColor);
     }
   }
 
@@ -320,14 +320,13 @@ $block: #{$fd-namespace}-shellbar;
     }
   }
 
+  .#{$block}__button--icon {
+    color: $fd-shell-icon-button-color;
+  }
+
   .#{$fd-namespace}-button.#{$block}__button--menu {
     font-size: var(--sapFontSize);
     outline-color: var(--sapContent_ContrastFocusColor);
-
-    &::after {
-      color: $fd-shell-icon-button-color;
-      content: "\e287";
-    }
 
     &:hover {
       background: $fd-shell-hover-background;

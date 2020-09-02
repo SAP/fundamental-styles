@@ -7,7 +7,6 @@ $block: #{$fd-namespace}-avatar;
 
 .#{$block} {
   $fd-avatar-border-radius: 50% !default;
-  $fd-avatar-border-fade: rgba(0, 0, 0, 0.5) !default; // Should be fade(var(--sapContent_ShadowColor), 10);
   $fd-avatar-background-color: var(--sapAccentColor6) !default;
   $fd-zoom-icon-s: 1.125rem !default;
   $fd-zoom-icon-l: 1.25rem !default;
@@ -53,6 +52,7 @@ $block: #{$fd-namespace}-avatar;
   }
   // BLOCK MODIFIERS ************
   // sizes
+
   @each $set-name, $size-set in $fd-avatar-sizes {
     &--#{$set-name} {
       @include fd-reset-spacing();
@@ -122,14 +122,15 @@ $block: #{$fd-namespace}-avatar;
   &__zoom-icon {
     @include fd-flex-center();
 
-    background-color: var(--sapLinkColor);
-    color: var(--sapContent_ContrastIconColor);
+    background-color: var(--sapButton_Emphasized_Background);
+    color: var(--sapButton_Emphasized_TextColor);
     position: absolute;
+    border: 0.0625rem solid var(--sapButton_Emphasized_BorderColor);
     border-radius: $fd-avatar-border-radius;
   }
   // optional border
   &.#{$block}--border {
-    border: inset 0.0625rem $fd-avatar-border-fade;
+    border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
   }
 
   // accent-colors

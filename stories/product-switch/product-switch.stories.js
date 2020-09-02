@@ -13,17 +13,18 @@ export const productSwitchInShellbar = () => `
     <div class="fd-product-switch">
         <div class="fd-popover fd-popover--right">
             <div class="fd-popover__control">
-                <button class="fd-button fd-button--transparent fd-popover__control fd-product-switch__control sap-icon--grid" 
+                <button class="fd-button fd-button--transparent fd-popover__control fd-product-switch__control" 
                     aria-label="Image label" 
                     aria-controls="product-switch-body" 
                     aria-expanded="true" 
                     aria-haspopup="true">
+                    <i class="sap-icon--grid"></i>
                 </button>
             </div>
             <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="product-switch-body">
                 <div class="fd-product-switch__body">
                     <ul class="fd-product-switch__list">
-                        <li class="fd-product-switch__item" tabindex="0">
+                        <li class="fd-product-switch__item selected" tabindex="0">
                             <div class="fd-product-switch__icon sap-icon--home"></div>
                             <div class="fd-product-switch__text">
                                 <div class="fd-product-switch__title">Home</div>

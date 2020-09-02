@@ -52,16 +52,10 @@ $block: #{$fd-namespace}-panel;
   }
 
   &__button {
-    @include fd-icon('slim-arrow-right') {
-      font-size: 1rem;
-    }
+    font-size: 1rem;
 
     @include fd-rtl() {
       @include fd-icon('slim-arrow-left');
-    }
-
-    &.is-expanded {
-      @include fd-icon('slim-arrow-down');
     }
   }
 

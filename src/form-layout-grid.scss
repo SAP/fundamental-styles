@@ -7,9 +7,10 @@ $blockContainer: #{$fd-namespace}-container;
 $blockRow: #{$fd-namespace}-row;
 $cols: 11;
 
-@mixin placement($direction, $justify) {
-  text-align: $direction;
-  justify-content: $justify;
+@mixin placement($direction) {
+  .fd-form-label {
+    float: $direction;
+  }
 }
 
 @media (min-width: 0) {
@@ -37,21 +38,32 @@ $cols: 11;
 
       .#{$blockCol} {
         padding: 0 0.25rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
-        @include placement('left', 'flex-start');
+        @include placement('left');
+
+        @include fd-rtl() {
+          @include placement('right');
+        }
 
         .fd-select__control {
           margin: 0.25rem 0;
         }
 
         .fd-form-label {
+          display: inline-block;
           margin-right: 0;
           padding-bottom: 0.125rem;
         }
 
         @for $n from 0 through $cols {
           &--#{$n} {
-            @include placement('right', 'flex-end');
+            @include placement('right');
+
+            @include fd-rtl() {
+              @include placement('left');
+            }
 
             margin-bottom: 0;
 
@@ -62,7 +74,11 @@ $cols: 11;
         }
 
         &--12 {
-          @include placement('left', 'flex-start');
+          @include placement('left');
+
+          @include fd-rtl() {
+            @include placement('right');
+          }
         }
 
         .#{$blockRow} {
@@ -91,14 +107,24 @@ $cols: 11;
 
         @for $n from 0 through $cols {
           &-md--#{$n} {
-            @include placement('right', 'flex-end');
+            @include placement('right');
+
+            @include fd-rtl() {
+              @include placement('left');
+
+              text-align: left;
+            }
 
             margin-bottom: 0;
           }
         }
 
         &-md--12 {
-          @include placement('left', 'flex-start');
+          @include placement('left');
+
+          @include fd-rtl() {
+            @include placement('right');
+          }
 
           .fd-form-label {
             padding-bottom: 0.125rem;
@@ -110,6 +136,7 @@ $cols: 11;
 }
 
 @media (min-width: 1024px) {
+
   .#{$blockContainer}.#{$block}-container {
     .#{$blockRow} {
       .#{$blockCol} {
@@ -119,17 +146,29 @@ $cols: 11;
 
         @for $n from 0 through $cols {
           &-lg--#{$n} {
-            @include placement('right', 'flex-end');
+            @include placement('right');
+
+            @include fd-rtl() {
+              @include placement('left');
+            }
 
             margin-bottom: 0;
           }
         }
 
         &-lg--12 {
-          @include placement('left', 'flex-start');
+          @include placement('left');
 
           .fd-form-label {
             padding-bottom: 0.125rem;
+          }
+        }
+      }
+
+      @include fd-rtl() {
+        @for $n from 0 through $cols {
+          .#{$blockCol}-lg--#{$n} {
+            @include placement('left');
           }
         }
       }
@@ -147,14 +186,24 @@ $cols: 11;
 
         @for $n from 0 through $cols {
           &-xl--#{$n} {
-            @include placement('right', 'flex-end');
+            @include placement('right');
+
+            @include fd-rtl() {
+              @include placement('left');
+
+              text-align: left;
+            }
 
             margin-bottom: 0;
           }
         }
 
         &-xl--12 {
-          @include placement('left', 'flex-start');
+          @include fd-rtl() {
+            @include placement('right');
+          }
+
+          @include placement('left');
 
           .fd-form-label {
             padding-bottom: 0.125rem;

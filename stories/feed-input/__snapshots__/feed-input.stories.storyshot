@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Feed Input Disabled 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Feed Input Generic user image 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Feed Input Input with text 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Feed Input Max height 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Feed Input Multiline 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Feed Input RTL 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Feed Input Standard 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Feed Input Without user image 1`] = `
+
+    
+`;

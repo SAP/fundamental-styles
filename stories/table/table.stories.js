@@ -334,6 +334,98 @@ export const interactiveRowsAndColumns = () => `
 interactiveRowsAndColumns.storyName = 'Interactive Table With Hoverable and Activable Cells and Rows';
 
 /**
+ * A table can be set to have focusable rows by adding `fd-table__row--focusable` and a valid `tabindex` to the rows.
+ * It is not recommended to use focusable rows simultaneously with focusable cells.
+ */
+
+export const focusableRows = () => `
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin: 0;">Table With Focusable Rows</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
+<table class="fd-table" role="grid">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row fd-table__row--focusable" tabindex="-1">
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row fd-table__row--focusable" tabindex="-1">
+            <td class="fd-table__cell" role="gridcell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell" role="gridcell">First Name</td>
+            <td class="fd-table__cell" role="gridcell">Middle Name</td>
+            <td class="fd-table__cell" role="gridcell">Last Name</td>
+            <td class="fd-table__cell" role="gridcell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row fd-table__row--focusable" tabindex="-1">
+            <td class="fd-table__cell" role="gridcell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell" role="gridcell">First Name</td>
+            <td class="fd-table__cell" role="gridcell">Middle Name</td>
+            <td class="fd-table__cell" role="gridcell">Last Name</td>
+            <td class="fd-table__cell" role="gridcell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row fd-table__row--focusable" tabindex="-1">
+            <td class="fd-table__cell" role="gridcell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell" role="gridcell">First Name</td>
+            <td class="fd-table__cell" role="gridcell">Middle Name</td>
+            <td class="fd-table__cell" role="gridcell">Last Name</td>
+            <td class="fd-table__cell" role="gridcell">01/26/17</td>
+        </tr>
+    </tbody>
+</table>
+`;
+
+/**
+ * A table can be set to have focusable cells by adding `fd-table__cell--focusable` and a valid `tabindex` to the cells.
+ * It is not recommended to use focusable cells simultaneously with focusable rows.
+ */
+
+export const focusableCells = () => `
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin: 0;">Table With Focusable Cells</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
+<table class="fd-table" role="grid">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1" scope="col">Column Header</th>
+            <th class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1" scope="col">Column Header</th>
+            <th class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1" scope="col">Column Header</th>
+            <th class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1" scope="col">Column Header</th>
+            <th class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1" scope="col">Column Header</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">First Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">Middle Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">Last Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">First Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">Middle Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">Last Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">First Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">Middle Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">Last Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">01/26/17</td>
+        </tr>
+    </tbody>
+</table>
+`;
+
+/**
  * The checkbox input can be used at the beginning of each row to allow for bulk actions.
 It is recommended to add the parameter `aria-selected="true"` to the row that is selected.
 Also for cells that include a checkbox should contain the `fd-table__cell--checkbox` class.
@@ -621,14 +713,20 @@ export const withAdvancedToolbar = () => `
         <div class="fd-dialog__subheader fd-bar fd-bar--subheader">
             <div class="fd-bar__middle">
                 <div class="fd-bar__element">
-                    <button aria-label="navigation" class="fd-button fd-button--icon fd-button--transparent fd-button--compact sap-icon--arrow-top"></button>
-                    <button aria-label="navigation" class="fd-button fd-button--icon fd-button--transparent fd-button--compact sap-icon--arrow-bottom"></button>
+                    <button aria-label="navigation" class="fd-button fd-button--icon fd-button--transparent fd-button--compact">
+                        <i class="sap-icon--arrow-top"></i>
+                    </button>
+                    <button aria-label="navigation" class="fd-button fd-button--icon fd-button--transparent fd-button--compact">
+                        <i class="sap-icon--arrow-bottom"></i>
+                    </button>
                 </div>
                 <div class="fd-bar__element fd-bar__element--full-width">
                     <div class="fd-input-group">
                         <input class="fd-input fd-input-group__input fd-input--compact" type="text" placeholder="Search...">
                         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                            <button aria-label="navigation" class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact sap-icon--search"></button>
+                            <button aria-label="navigation" class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact">
+                                <i class="sap-icon--search"></i>
+                            </button>
                         </span>
                     </div>
                 </div>
@@ -683,8 +781,12 @@ export const withAdvancedToolbar = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table With Advanced Shellbar</h4>
     <div class="fd-toolbar__spacer"></div>
-    <button aria-label="navigation" class="fd-button fd-button--compact fd-button--transparent sap-icon--filter" onclick="toggleDialog('filter-dialog-example', true)"></button>
-    <button aria-label="navigation" class="fd-button fd-button--compact fd-button--transparent sap-icon--action-settings" onclick="toggleDialog('settings-dialog-example', true)"></button>
+    <button aria-label="navigation" class="fd-button fd-button--compact fd-button--transparent" onclick="toggleDialog('filter-dialog-example', true)">
+        <i class="sap-icon--filter"></i>
+    </button>
+    <button aria-label="navigation" class="fd-button fd-button--compact fd-button--transparent" onclick="toggleDialog('settings-dialog-example', true)">
+        <i class="sap-icon--action-settings"></i>
+    </button>
 </div>
 <table class="fd-table fd-table--compact">
     <thead class="fd-table__header">
@@ -1156,7 +1258,9 @@ export const tableWithContextualMenu = () => `
             <td class="fd-table__cell fd-table__cell--fit-content">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="pQqQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+                        <button aria-label="navigation" class="fd-button fd-button--transparent" aria-controls="pQqQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More">
+                            <i class="sap-icon--overflow"></i>
+                        </button>
                     </div>
                     <div class="fd-popover__body" aria-hidden="true" id="pQqQRFF3">
                         <nav class="fd-menu">
@@ -1189,7 +1293,9 @@ export const tableWithContextualMenu = () => `
             <td class="fd-table__cell fd-table__cell--fit-content">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="G54qQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+                        <button aria-label="navigation" class="fd-button fd-button--transparent" aria-controls="G54qQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More">
+                            <i class="sap-icon--overflow"></i>
+                        </button>
                     </div>
                     <div class="fd-popover__body" aria-hidden="true" id="G54qQRFF3">
                         <nav class="fd-menu">
@@ -1222,7 +1328,9 @@ export const tableWithContextualMenu = () => `
             <td class="fd-table__cell fd-table__cell--fit-content">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--overflow" aria-controls="G54JRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+                        <button aria-label="navigation" class="fd-button fd-button--transparent" aria-controls="G54JRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More">
+                            <i class="sap-icon--overflow"></i>
+                        </button>
                     </div>
                     <div class="fd-popover__body" aria-hidden="true" id="G54JRFF3">
                         <nav class="fd-menu">
@@ -1460,8 +1568,10 @@ export const navigationIndicationStates = () => `
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
-            <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
-                <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"></button>
+            <td class="fd-table__cell fd-table__cell--fit-content">
+                <button aria-label="navigation" class="fd-button fd-button--transparent">
+                    <i class="sap-icon--navigation-right-arrow"></i>
+                </button>
             </td>
         </tr>
         <tr class="fd-table__row">
@@ -1469,8 +1579,10 @@ export const navigationIndicationStates = () => `
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
-            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated" scope="col">
-                <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"></button>
+            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated">
+                <button aria-label="navigation" class="fd-button fd-button--transparent">
+                    <i class="sap-icon--navigation-right-arrow"></i>
+                </button>
             </td>
         </tr>
         <tr class="fd-table__row">
@@ -1478,8 +1590,10 @@ export const navigationIndicationStates = () => `
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
-            <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
-                <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--navigation-right-arrow"></button>
+            <td class="fd-table__cell fd-table__cell--fit-content">
+                <button aria-label="navigation" class="fd-button fd-button--transparent">
+                    <i class="sap-icon--navigation-right-arrow"></i>
+                </button>
             </td>
         </tr>
     </tbody>
@@ -1506,8 +1620,10 @@ export const navigationIndicationStates = () => `
                 <td class="fd-table__cell">First Name</td>
                 <td class="fd-table__cell">Last Name</td>
                 <td class="fd-table__cell">01/26/17</td>
-                <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
-                    <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
+                <td class="fd-table__cell fd-table__cell--fit-content">
+                    <button aria-label="navigation" class="fd-button fd-button--transparent">
+                        <i class="sap-icon--navigation-left-arrow"></i>
+                    </button>
                 </td>
             </tr>
             <tr class="fd-table__row">
@@ -1515,8 +1631,10 @@ export const navigationIndicationStates = () => `
                 <td class="fd-table__cell">First Name</td>
                 <td class="fd-table__cell">Last Name</td>
                 <td class="fd-table__cell">01/26/17</td>
-                <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated" scope="col">
-                    <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
+                <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated">
+                    <button aria-label="navigation" class="fd-button fd-button--transparent">
+                        <i class="sap-icon--navigation-left-arrow"></i>
+                    </button>
                 </td>
             </tr>
             <tr class="fd-table__row">
@@ -1524,8 +1642,10 @@ export const navigationIndicationStates = () => `
                 <td class="fd-table__cell">First Name</td>
                 <td class="fd-table__cell">Last Name</td>
                 <td class="fd-table__cell">01/26/17</td>
-                <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
-                    <button aria-label="navigation" class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"></button>
+                <td class="fd-table__cell fd-table__cell--fit-content">
+                    <button aria-label="navigation" class="fd-button fd-button--transparent">
+                        <i class="sap-icon--navigation-left-arrow"></i>
+                    </button>
                 </td>
             </tr>
         </tbody>

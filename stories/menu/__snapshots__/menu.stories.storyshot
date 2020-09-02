@@ -688,7 +688,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
             
                     
             <h3
-              class="fd-dialog__title"
+              class="fd-title fd-title--h5"
             >
               
                         Example Submenu
@@ -947,9 +947,17 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
                 
             <button
               aria-label="fd-button"
-              class="fd-button fd-button--transparent sap-icon--navigation-left-arrow"
+              class="fd-button fd-button--transparent"
               role="button"
-            />
+            >
+              
+                    
+              <i
+                class="sap-icon--navigation-left-arrow"
+              />
+              
+                
+            </button>
             
             
           </div>
@@ -961,7 +969,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
             
                     
             <h3
-              class="fd-dialog__title"
+              class="fd-title fd-title--h5"
             >
               
                         Option 2

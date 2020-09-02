@@ -1,0 +1,58 @@
+*,
+:before,
+:after {
+  background-color: black !important;
+  border-color: white !important;
+  color: yellow !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+:before,
+:after {
+  background-color: transparent !important;
+}
+
+button {
+  color: white !important;
+}
+
+a[href],
+a[href] *,
+a[href] :before,
+a[href] :after {
+  color: #8080ff !important;
+}
+
+a[aria-disabled="true"] {
+  color: #0f0 !important;
+}
+
+input,
+select,
+button,
+textarea {
+  border: 1px solid white !important;
+}
+
+::selection {
+  background-color: #008000 !important;
+  color: white !important;
+}
+
+:disabled,
+::placeholder {
+  color: #0f0 !important;
+  opacity: 1 !important;
+}
+
+input:disabled,
+select:disabled,
+button:disabled,
+textarea:disabled {
+  border: 1px solid #0f0 !important;
+}
+
+:focus {
+  outline: 1px solid white !important;
+}

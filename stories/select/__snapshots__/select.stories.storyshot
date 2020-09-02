@@ -49,8 +49,16 @@ exports[`Storyshots Components/Select Blank 1`] = `
           
              
           <span
-            class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"
-          />
+            class="fd-button fd-button--transparent fd-select__button"
+          >
+            
+                
+            <i
+              class="sap-icon--slim-arrow-down"
+            />
+             
+            
+          </span>
           
          
         </div>
@@ -222,10 +230,18 @@ exports[`Storyshots Components/Select Blank 1`] = `
             class="fd-select__text-content"
           />
           
-            
+             
           <span
-            class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"
-          />
+            class="fd-button fd-button--transparent fd-select__button"
+          >
+            
+                
+            <i
+              class="sap-icon--slim-arrow-down"
+            />
+             
+            
+          </span>
           
         
         </div>
@@ -429,8 +445,16 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
           
                 
           <span
-            class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"
-          />
+            class="fd-button fd-button--transparent fd-select__button"
+          >
+            
+                    
+            <i
+              class="sap-icon--slim-arrow-down"
+            />
+            
+                
+          </span>
           
             
         </div>
@@ -637,10 +661,18 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
             Error
           </span>
           
-               
+                
           <span
-            class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"
-          />
+            class="fd-button fd-button--transparent fd-select__button"
+          >
+            
+                    
+            <i
+              class="sap-icon--slim-arrow-down"
+            />
+            
+                
+          </span>
           
            
         </div>
@@ -847,10 +879,18 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
             Warning
           </span>
           
-               
+                
           <span
-            class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"
-          />
+            class="fd-button fd-button--transparent fd-select__button"
+          >
+            
+                    
+            <i
+              class="sap-icon--slim-arrow-down"
+            />
+            
+                
+          </span>
           
            
         </div>
@@ -1058,10 +1098,18 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
             Information
           </span>
           
-               
+                
           <span
-            class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"
-          />
+            class="fd-button fd-button--transparent fd-select__button"
+          >
+            
+                    
+            <i
+              class="sap-icon--slim-arrow-down"
+            />
+            
+                
+          </span>
           
            
         </div>
@@ -1259,8 +1307,16 @@ exports[`Storyshots Components/Select Two Column 1`] = `
           
              
           <span
-            class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"
-          />
+            class="fd-button fd-button--transparent"
+          >
+            
+                
+            <i
+              class="sap-icon--slim-arrow-down"
+            />
+            
+             
+          </span>
           
          
         </div>
@@ -1428,8 +1484,16 @@ exports[`Storyshots Components/Select Two Column 1`] = `
           
             
           <span
-            class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"
-          />
+            class="fd-button fd-button--transparent fd-select__button"
+          >
+            
+                
+            <i
+              class="sap-icon--slim-arrow-down"
+            />
+            
+             
+          </span>
           
         
         </div>

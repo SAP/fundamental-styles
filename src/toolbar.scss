@@ -139,6 +139,7 @@ $title-toolbar-height: 2.75rem;
     height: $toolbar-separator-height-compact;
     // missing color
     // background-color: var(@sapUiToolbarSeparatorColor);
+
     background-color: var(--sapGroup_TitleBorderColor);
   }
 

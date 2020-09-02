@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Message Page Error 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Message Page Filter 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Message Page Formatted Text and Buttons 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Message Page No Items 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Message Page Search 1`] = `
+
+
+`;
