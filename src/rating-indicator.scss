@@ -4,6 +4,11 @@
 
 $block: #{$fd-namespace}-rating-indicator;
 
+:root {
+  --sapRating-indicator-icon-rated: url();
+  --sapRating-indicator-icon-unrated: url();
+}
+
 .#{$block} {
   $fd-rating-indicator-sizes: (
     "cozy": ("fontSize": 1.5rem, "spacingBetweenIcons": 0.1875rem, "controlMargin": 0.8125rem 0),
@@ -48,7 +53,21 @@ $block: #{$fd-namespace}-rating-indicator;
       }
 
       overflow: hidden;
-      width: $iconFontSize / 2;
+      width: $iconFontSize / 2 !important;
+    }
+
+    &.is-icons .#{$block}__label {
+      @include fd-rtl() {
+        background-position: right;
+      }
+
+      &:nth-child(4n+4) {
+        background-position: right;
+
+        @include fd-rtl() {
+          background-position: left;
+        }
+      }
     }
   }
 
@@ -74,7 +93,8 @@ $block: #{$fd-namespace}-rating-indicator;
           outline-color: var(--sapContent_FocusColor);
           outline-style: var(--sapContent_FocusStyle);
         }
-      };
+      }
+    ;
 
       ~ input + .#{$block}__label {
         @include fd-icon-glyph('unfavorite') {
@@ -212,6 +232,28 @@ $block: #{$fd-namespace}-rating-indicator;
     @include fd-rating-indicator-with-half-star($fd-rating-indicator-default-font-size, $fd-rating-indicator-default-spacing-between-icons);
   }
 
+  &.is-icons {
+    .#{$block}__label {
+      &::after,
+      &::before {
+        content: none !important;
+      }
+
+      width: $fd-rating-indicator-default-font-size;
+      height: $fd-rating-indicator-default-font-size;
+      background-image: var(--sapRating-indicator-icon-rated);
+      background-size: cover;
+      background-position: left;
+      background-repeat: no-repeat;
+    }
+
+    .#{$block}__input {
+      &:checked ~ input + .#{$block}__label {
+        background-image: var(--sapRating-indicator-icon-unrated);
+      }
+    }
+  }
+
   // BLOCK MODIFIERS ************
   // sizes
   @each $set-name, $size-set in $fd-rating-indicator-sizes {
@@ -251,6 +293,13 @@ $block: #{$fd-namespace}-rating-indicator;
 
       &--half-star {
         @include fd-rating-indicator-with-half-star($fd-rating-indicator-sizes-font-size, $fd-rating-indicator-sizes-spacing-between-icons);
+      }
+
+      &.is-icons {
+        .#{$block}__label {
+          width: $fd-rating-indicator-default-font-size;
+          height: $fd-rating-indicator-default-font-size;
+        }
       }
     }
   }

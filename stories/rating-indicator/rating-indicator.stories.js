@@ -1,5 +1,7 @@
 import '../../dist/rating-indicator.css';
 import './custom.scss';
+import iconRated from './rated.png';
+import iconUnrated from './unrated.png';
 
 export default {
     title: 'Components/Rating Indicator',
@@ -224,35 +226,35 @@ export const HalfSizes = () => `
 <div class="example-container">
     <div class="fd-rating-indicator fd-rating-indicator--half-star">
         <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-            <input aria-label="half star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-05" name="rating-half-sizes" value="0.5">  
+            <input aria-label="half star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-05" name="rating-half-sizes" value="0.5">  
             <label class="fd-rating-indicator__label" for="rating-readonly-05"></label>
 
-            <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-1" name="rating-half-sizes" value="1">
-            <label class="fd-rating-indicator__label" for="rating-readonly-1"></label>
+            <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-1" name="rating-half-sizes" value="1">
+            <label class="fd-rating-indicator__label" for="rating-half-sizes-1"></label>
             
-            <input aria-label="1 and half star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-15" name="rating-half-sizes" value="1.5">
-            <label class="fd-rating-indicator__label" for="rating-readonly-15"></label>
+            <input aria-label="1 and half star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-15" name="rating-half-sizes" value="1.5">
+            <label class="fd-rating-indicator__label" for="rating-half-sizes-15"></label>
             
-            <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-2" name="rating-half-sizes" value=2">
-            <label class="fd-rating-indicator__label" for="rating-readonly-2"></label>
+            <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-2" name="rating-half-sizes" value=2">
+            <label class="fd-rating-indicator__label" for="rating-half-sizes-2"></label>
             
-            <input aria-label="2 and half star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-25" name="rating-half-sizes" value="2.5" checked>
-            <label class="fd-rating-indicator__label" for="rating-readonly-25"></label>
+            <input aria-label="2 and half star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-25" name="rating-half-sizes" value="2.5" checked>
+            <label class="fd-rating-indicator__label" for="rating-half-sizes-25"></label>
             
-            <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-3" name="rating-half-sizes" value="3">
-            <label class="fd-rating-indicator__label" for="rating-readonly-3"></label>
+            <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-3" name="rating-half-sizes" value="3">
+            <label class="fd-rating-indicator__label" for="rating-half-sizes-3"></label>
             
-            <input aria-label="3 and half star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-35" name="rating-half-sizes" value="3.5">
-            <label class="fd-rating-indicator__label" for="rating-readonly-35"></label>
+            <input aria-label="3 and half star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-35" name="rating-half-sizes" value="3.5">
+            <label class="fd-rating-indicator__label" for="rating-half-sizes-35"></label>
             
-            <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-4" name="rating-half-sizes" value="4">
-            <label class="fd-rating-indicator__label" for="rating-readonly-4"></label>
+            <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-4" name="rating-half-sizes" value="4">
+            <label class="fd-rating-indicator__label" for="rating-half-sizes-4"></label>
             
-            <input aria-label="4 and half star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-45" name="rating-half-sizes" value="4.5">
-            <label class="fd-rating-indicator__label" for="rating-readonly-45"></label>
+            <input aria-label="4 and half star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-45" name="rating-half-sizes" value="4.5">
+            <label class="fd-rating-indicator__label" for="rating-half-sizes-45"></label>
             
-            <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-5" name="rating-half-sizes" value="5">
-            <label class="fd-rating-indicator__label" for="rating-readonly-5"></label>
+            <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-5" name="rating-half-sizes" value="5">
+            <label class="fd-rating-indicator__label" for="rating-half-sizes-5"></label>
         </div>
         <span class="fd-rating-indicator__dynamic-text">(2.5 of 5)</span>
     </div>
@@ -264,6 +266,41 @@ HalfSizes.parameters = {
         storyDescription: `
 To make the rating indicator to use half star needs to be added class \`.fd-rating-indicator--half-star\` 
 to the \`fd-rating-indicator\` element.
+`
+    }
+};
+
+export const CustomIcons = () => `
+<div class="example-container">
+    <div class="fd-rating-indicator is-icons"
+    style="--sapRating-indicator-icon-rated: url(${iconRated}); --sapRating-indicator-icon-unrated: url(${iconUnrated})">
+        <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
+            <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-icon-1" name="rating-icon" value="1">
+            <label class="fd-rating-indicator__label" for="rating-icon-1"></label>
+            
+            <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-icon-2" name="rating-icon" value=2" checked>
+            <label class="fd-rating-indicator__label" for="rating-icon-2"></label>
+            
+            <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-icon-3" name="rating-icon" value="3">
+            <label class="fd-rating-indicator__label" for="rating-icon-3"></label>
+            
+            <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-icon-4" name="rating-icon" value="4">
+            <label class="fd-rating-indicator__label" for="rating-icon-4"></label>
+            
+            <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-icon-5" name="rating-icon" value="5">
+            <label class="fd-rating-indicator__label" for="rating-icon-5"></label>
+        </div>
+        <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
+    </div>
+</div>
+`;
+
+CustomIcons.parameters = {
+    docs: {
+        storyDescription: `
+To make the rating indicator to use custom icons needs to be added class \`.fd-rating-indicator--icon\` 
+to the \`fd-rating-indicator\` element.
+Additionally, needs to set css variables \`--sapRating-indicator-icon-rated: url(...)\` and \`--sapRating-indicator-icon-unrated: url(...)\`
 `
     }
 };
