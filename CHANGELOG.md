@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.40...v0.12.0-rc.41) (2020-09-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* replace panel title tag h5 with h4
+
+### Bug Fixes
+
+* Change size in panel title ([#1576](https://github.com/SAP/fundamental-styles/issues/1576)) ([da83fb7](https://github.com/SAP/fundamental-styles/commit/da83fb70acbccda04b63cd8c7ada17a5ab78a1f4))
+
 ## [0.12.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.39...v0.12.0-rc.40) (2020-09-03)
 
 ## [0.12.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.38...v0.12.0-rc.39) (2020-09-02)
