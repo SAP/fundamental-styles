@@ -223,6 +223,12 @@ $block: #{$fd-namespace}-popover;
       }
     }
 
+    &--static {
+      position: relative;
+      top: initial;
+      bottom: initial;
+    }
+
     &[aria-hidden="true"],
     &.is-hidden {
       z-index: 1;
@@ -260,6 +266,12 @@ $block: #{$fd-namespace}-popover;
       .#{$block}__arrow {
         display: none;
       }
+    }
+
+    &--static {
+      position: relative;
+      top: initial;
+      bottom: initial;
     }
 
     &--input-message-group {

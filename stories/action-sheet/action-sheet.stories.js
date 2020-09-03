@@ -146,7 +146,7 @@ export const actionSheetPhone = () => `
     </button>
     <div class="fd-action-sheet__wrapper" id="actionSheetPhone">
         <h6 class="fd-action-sheet__title">Press cancel to hide action sheet</h6>
-        <div class="fd-popover__body fd-popover__body--dropdown-fill fd-popover__body--no-arrow">
+        <div class="fd-popover__body fd-popover__body--static fd-popover__body--dropdown-fill fd-popover__body--no-arrow">
             <ul class="fd-action-sheet">
                 <li class="fd-action-sheet__item">
                     <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
