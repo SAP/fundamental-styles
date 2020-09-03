@@ -56,7 +56,7 @@ colors.storyName = 'Colors';
 colors.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `Info label can be displayed in various colors, by adding the <code>fd-info-label--accent-color-*</code> modifier class to the element with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: <code>fd-info-label--accent-color-10</code>.
+        storyDescription: `Info label can be displayed in various colors, by adding the <code>fd-info-label--accent-color-*</code> modifier class to the element with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: <code>fd-info-label--accent-color-10</code>. 
 `
     }
 };
