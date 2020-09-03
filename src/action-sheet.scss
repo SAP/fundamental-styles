@@ -8,9 +8,6 @@ $block: #{$fd-namespace}-action-sheet;
   // OVERLAY
   $fd-action-sheet-overlay-color: rgba(0, 0, 0, 0.6); // Should be fade(var(--sapBlockLayer_Background), 60 or 80 (HCB|HCW))
 
-  // BACKGROUND
-  $fd-action-sheet-background: var(--sapGroup_ContentBackground) !default;
-
   // SPACING
   $fd-action-sheet-mobile-padding: 0.1875rem 0.375rem;
   $fd-action-sheet-desktop-padding: 0.25rem 0.5rem;
@@ -18,7 +15,6 @@ $block: #{$fd-namespace}-action-sheet;
   @include fd-reset();
 
   padding: $fd-action-sheet-desktop-padding;
-  background-color: $fd-action-sheet-background;
   width: 100%;
 
   &__item {
