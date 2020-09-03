@@ -1,0 +1,22 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-pdf-viewer;
+
+.#{$block} {
+  width: 100%;
+  min-height: 500px;
+
+  &__content {
+    width: 100%;
+    min-height: 500px;
+
+    &--in-page {
+      min-height: 600px;
+    }
+
+    &--error {
+      padding-top: 200px;
+    }
+  }
+}

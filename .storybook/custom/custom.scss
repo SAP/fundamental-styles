@@ -272,13 +272,17 @@ code.docs-code {
     background-color: transparent;
   }
 
+  &.fd-message-box__content,
+  .fd-message-box__content {
+    width: 30rem;
+  }
+
   &.fd-dialog__content,
   .fd-dialog__content,
   &.fd-message-box__content,
   .fd-message-box__content {
     position: static;
     transform: translate(0%, 0%);
-    width: 30rem;
     margin: auto;
     height: auto;
 
