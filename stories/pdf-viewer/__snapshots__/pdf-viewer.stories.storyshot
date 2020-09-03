@@ -5,12 +5,12 @@ exports[`Storyshots Components/PDF Viewer Dialog 1`] = `
 
 `;
 
-exports[`Storyshots Components/PDF Viewer In-Page 1`] = `
+exports[`Storyshots Components/PDF Viewer Error 1`] = `
 
     
 `;
 
-exports[`Storyshots Components/PDF Viewer error 1`] = `
+exports[`Storyshots Components/PDF Viewer In-Page 1`] = `
 
     
 `;

@@ -1,14 +1,24 @@
 import '../../dist/dialog.css';
 import '../../dist/pdf-viewer.css';
 import '../../dist/message-page.css';
+import '../../dist/title.css';
 
 export default {
     title: 'Components/PDF Viewer',
     parameters: {
         description: `
-The PDF viewer component can be either displayed within a page or inside of a dialog. By default, the PDF viewer should be in a large size dialog, meaning it should contian the classname <code>.fd-dialog__content--l</code>. The download and close buttons are in the dialog footer.
+The PDF viewer component can be either displayed within a page or inside of a dialog.
 
-Within a page, use the Bar component to construct the header. Unlike the dialog version, the in page version has a download button within the top title bar and no option to close the viewer.
+##Usage
+**Use the PDF viewer if:**
+
+- You want your app to display PDF files on all devices and platforms.
+- You want the users of your app to be able to preview their documents as PDF files right beside your app.
+- You need to ensure the consistent behavior of PDF files across your app.
+
+**Do not use the PDF viewer if:**
+
+- You need to provide an interactive PDF file (such as a data input form).
 
 `,
         tags: ['f3', 'a11y']
@@ -18,7 +28,6 @@ Within a page, use the Bar component to construct the header. Unlike the dialog 
 export const dialog = () => `
 <div class="fd-dialog-docs-static fd-pdf-viewer fd-dialog fd-dialog--active">
     <div class="fd-dialog__content fd-dialog__content--l" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1">
-        <span class="fd-dialog__resize-handle"></span>
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -57,13 +66,13 @@ dialog.storyName = 'Dialog';
 dialog.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'The PDF viewer dialog component displays a PDF within an iframe. The document viewer controls are left up to the browser defaults, but a download button is provided in the footer for convenience.'
+        storyDescription: 'When displayed in a dialog, download and close buttons are in the footer. The PDF Viewer dialog does not support resizing. For mobile, ensure the modal takes up the entire screen by using the <code>.fd-dialog__content--mobile</code> class.'
     }
 };
 
 export const page = () => `
     <div class="fd-pdf-viewer">
-        <div class="fd-bar">
+        <div class="fd-pdf-viewer__title fd-bar">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
                     <h2 class="fd-title fd-title--h5" id="dialog-title-1">
@@ -97,7 +106,7 @@ page.parameters = {
 
 export const error = () => `
     <div class="fd-pdf-viewer fd-pdf-viewer--in-page">
-        <div class="fd-bar">
+        <div class="fd-pdf-viewer__title fd-bar">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
                     <h2 class="fd-title fd-title--h5" id="dialog-title-1">
@@ -130,7 +139,7 @@ export const error = () => `
     </div>
 `;
 
-error.storyName = 'error';
+error.storyName = 'Error';
 error.parameters = {
     docs: {
         iframeHeight: 400,

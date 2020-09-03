@@ -4,14 +4,22 @@
 $block: #{$fd-namespace}-pdf-viewer;
 
 .#{$block} {
-  width: 100%;
+  padding: 1rem;
   min-height: 500px;
+
+  &__title {
+    background-color: transparent;
+    margin-bottom: 10px;
+    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+    box-shadow: none;
+  }
 
   &__content {
     width: 100%;
     min-height: 500px;
 
     &--in-page {
+      width: 100%;
       min-height: 600px;
     }
 
