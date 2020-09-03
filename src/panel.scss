@@ -29,7 +29,7 @@ $block: #{$fd-namespace}-panel;
   }
 
   &__title {
-    @include fd-typography(var(--sapFontHeader5Size));
+    @include fd-typography(var(--sapFontHeader4Size));
 
     flex: 1;
   }
