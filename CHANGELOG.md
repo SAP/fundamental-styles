@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.41...v0.12.0-rc.42) (2020-09-03)
+
+
+### Bug Fixes
+
+* add text-shadow for better contrast ([#1571](https://github.com/SAP/fundamental-styles/issues/1571)) ([e923f17](https://github.com/SAP/fundamental-styles/commit/e923f17030ad0c0944302d60b31a5c0e24a29a92))
+
 ## [0.12.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.40...v0.12.0-rc.41) (2020-09-03)
 
 
