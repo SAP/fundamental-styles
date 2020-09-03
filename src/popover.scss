@@ -225,8 +225,8 @@ $block: #{$fd-namespace}-popover;
 
     &--static {
       position: relative;
-      top: initial;
-      bottom: initial;
+      top: auto;
+      bottom: auto;
     }
 
     &[aria-hidden="true"],
@@ -270,8 +270,8 @@ $block: #{$fd-namespace}-popover;
 
     &--static {
       position: relative;
-      top: initial;
-      bottom: initial;
+      top: auto;
+      bottom: auto;
     }
 
     &--input-message-group {
