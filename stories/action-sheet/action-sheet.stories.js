@@ -18,6 +18,7 @@ clustered if there is not enough space on the screen
 - You only have a small number of actions.
 
 **Do not use the action sheet if:**
+
 - The menu provides only one option. In this case, consider using a button instead.
 - You need to show a hierarchical menu. In this case, use the menu button instead.
 - Your users would benefit more from a split button, which offers an easily-accessible default action, with the option to include additional actions.
@@ -189,7 +190,7 @@ export const actionSheetPhone = () => `
 
 actionSheetPhone.parameters = {
     docs: {
-        iframeHeight: 300,
+        iframeHeight: 800,
         storyDescription: 'On smartphones the action sheet is wrapped by `fd-action-sheet__wrapper`, instead of popover.'
     }
 };
