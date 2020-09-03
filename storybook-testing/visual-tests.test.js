@@ -33,7 +33,7 @@ const view = {
 const customizePage = (page) => page.emulate(view);
 const beforeScreenshot = (page) => page.emulate(view);
 
-// create visual regession images from each story
+// create visual regression images from each story
 initStoryshots({
     framework: 'html',
     storyKindRegex: /Visual\/([A-Z])\w+/,
