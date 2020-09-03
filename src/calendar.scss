@@ -6,7 +6,7 @@
     .fd-calendar__header
       .fd-calendar__navigation(--main-navigation)
         .fd-calendar__action(+[--arrow-left, --arrow-right])
-        .fd-calendar__close-button
+        .fd-calendar__close-button--navigation
     .fd-calendar__content(+[--months, --years])
         .fd-calendar__table
           .fd-calendar__group
@@ -405,20 +405,16 @@ $fd-calendar-special-days: (
 
   @include special-days($fd-calendar-special-days);
 
-  &__close-button {
-    @include fd-icon("decline");
-
-    &--navigation {
-      @include fd-rtl() {
-        left: 0;
-        right: auto;
-      }
-
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
+  &__close-button--navigation {
+    @include fd-rtl() {
+      left: 0;
+      right: auto;
     }
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   // CALENDAR COMPACT

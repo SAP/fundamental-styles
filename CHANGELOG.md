@@ -2,6 +2,103 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.39...v0.12.0-rc.40) (2020-09-03)
+
+## [0.12.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.38...v0.12.0-rc.39) (2020-09-02)
+
+## [0.12.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.37...v0.12.0-rc.38) (2020-09-02)
+
+## [0.12.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.36...v0.12.0-rc.37) (2020-09-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* * fix: remove scope attribute from td
+
+* feat: focusable styles for table rows and cells
+
+* fix: grid roles
+
+* fix: typo
+
+### Features
+
+* focusable table cells and rows ([#1563](https://github.com/SAP/fundamental-styles/issues/1563)) ([6967e56](https://github.com/SAP/fundamental-styles/commit/6967e561bb1ced4ec7a838474fc5af10991c3a85))
+
+## [0.12.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.35...v0.12.0-rc.36) (2020-09-02)
+
+## [0.12.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.34...v0.12.0-rc.35) (2020-09-01)
+
+## [0.12.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.33...v0.12.0-rc.34) (2020-09-01)
+
+## [0.12.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.32...v0.12.0-rc.33) (2020-09-01)
+
+## [0.12.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.31...v0.12.0-rc.32) (2020-09-01)
+
+## [0.12.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.30...v0.12.0-rc.31) (2020-09-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* update calendar dismiss button icon(add <i> tag) and remove class fd-calendar__close-button in calendar and datepicker
+
+### Bug Fixes
+
+* update Calendar dismiss button ([#1533](https://github.com/SAP/fundamental-styles/issues/1533)) ([6c982f9](https://github.com/SAP/fundamental-styles/commit/6c982f9dbc765a53808c3d34c6b6d8b49063d660))
+
+## [0.12.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.29...v0.12.0-rc.30) (2020-09-01)
+
+## [0.12.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.28...v0.12.0-rc.29) (2020-09-01)
+
+
+### Bug Fixes
+
+* update navigation buttons of Carousel ([#1541](https://github.com/SAP/fundamental-styles/issues/1541)) ([9258ac4](https://github.com/SAP/fundamental-styles/commit/9258ac4207a8732caa0ace38c9251596deaa85a2))
+
+## [0.12.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.27...v0.12.0-rc.28) (2020-08-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* update mega menu button by moving the icon in <i> tag
+
+### Bug Fixes
+
+* update shellbar megamenu and shellbar examples ([#1536](https://github.com/SAP/fundamental-styles/issues/1536)) ([a720f05](https://github.com/SAP/fundamental-styles/commit/a720f05f9de84c84ae50d955e7134090ed88aa9f))
+
+## [0.12.0-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.26...v0.12.0-rc.27) (2020-08-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update message strip dismiss button markup
+
+### Bug Fixes
+
+* update message strip dismiss button ([#1534](https://github.com/SAP/fundamental-styles/issues/1534)) ([dd2c202](https://github.com/SAP/fundamental-styles/commit/dd2c202824f4146b4aa4c3b7fbe385d8929b50da))
+
+## [0.12.0-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.25...v0.12.0-rc.26) (2020-08-31)
+
+## [0.12.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.24...v0.12.0-rc.25) (2020-08-29)
+
+## [0.12.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.23...v0.12.0-rc.24) (2020-08-28)
+
+
+### Features
+
+* new Fiori 3 component Carousel ([#1429](https://github.com/SAP/fundamental-styles/issues/1429)) ([919b464](https://github.com/SAP/fundamental-styles/commit/919b4642f341c6b0706860af4bb4c4277e5dd43a))
+
+## [0.12.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.22...v0.12.0-rc.23) (2020-08-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* update expand/collapse button(add `i` tag for the icon)
+
+### Bug Fixes
+
+* panel button broken styling fix ([#1526](https://github.com/SAP/fundamental-styles/issues/1526)) ([d12740f](https://github.com/SAP/fundamental-styles/commit/d12740f79890dd8fae1ed8aaac53e0669517e7fa))
+
 ## [0.12.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.21...v0.12.0-rc.22) (2020-08-27)
 
 ## [0.12.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.20...v0.12.0-rc.21) (2020-08-25)
