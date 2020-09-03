@@ -5,10 +5,29 @@ import '../../dist/action-sheet.css';
 export default {
     title: 'Components/Action Sheet',
     parameters: {
-        tags: ['a11y', 'f3', 'theme'],
         description: `
-            The avatar component displays an image, icon or user initials, and is used for user profiles, placeholder images, icons or business-related images i.e. product photos.
-        `
+An action sheet consists of a list of options a user can select from to complete an action. Actions can be
+clustered if there is not enough space on the screen
+            
+## Usage
+
+**Use the action sheet if:**
+
+- You need an option that provides more than one action.
+- It is really important that the user stays in context on a phone.
+- You only have a small number of actions.
+
+**Do not use the action sheet if:**
+- The menu provides only one option. In this case, consider using a button instead.
+- You need to show a hierarchical menu. In this case, use the menu button instead.
+- Your users would benefit more from a split button, which offers an easily-accessible default action, with the option to include additional actions.
+
+## Responsiveness
+
+The action sheet is fully responsive. On smartphones, the actions are displayed as a list inside a dialog.
+On tablets and desktop devices, the actions are displayed in a popover.
+        `,
+        tags: ['a11y', 'f3', 'theme']
     }
 };
 
@@ -25,26 +44,31 @@ export const actionSheetDesktop = () => `
         <ul class="fd-action-sheet fd-action-sheet--compact">
             <li class="fd-action-sheet__item">
                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--settings"></i>
-                    <span class="fd-button__text">Action</span>
+                    <i class="sap-icon--attachment"></i>
+                    <span class="fd-button__text">Upload file</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item">
                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--settings"></i>
-                    <span class="fd-button__text">Action</span>
+                    <i class="sap-icon--add"></i>
+                    <span class="fd-button__text">Assign user</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item">
                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--settings"></i>
-                    <span class="fd-button__text">ActionAction</span>
+                    <i class="sap-icon--print"></i>
+                    <span class="fd-button__text">Print</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item">
                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--settings"></i>
-                    <span class="fd-button__text">ActionActionAction</span>
+                    <i class="sap-icon--home"></i>
+                    <span class="fd-button__text">Go to landing page</span>
+                </button>
+            </li>
+            <li class="fd-action-sheet__item">
+                <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent" onclick="onPopoverClick('actionSheetDesktop');">
+                    Decide Later
                 </button>
             </li>
         </ul>
@@ -54,8 +78,7 @@ export const actionSheetDesktop = () => `
 
 actionSheetDesktop.parameters = {
     docs: {
-        iframeHeight: 300,
-        storyDescription: ''
+        iframeHeight: 300
     }
 };
 
@@ -73,26 +96,31 @@ export const actionSheetTablet = () => `
         <ul class="fd-action-sheet">
             <li class="fd-action-sheet__item">
                 <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--settings"></i>
-                    <span class="fd-button__text">Action</span>
+                    <i class="sap-icon--attachment"></i>
+                    <span class="fd-button__text">Upload file</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item">
                 <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--settings"></i>
-                    <span class="fd-button__text">ActionAction</span>
+                    <i class="sap-icon--add"></i>
+                    <span class="fd-button__text">Assign user</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item">
                 <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--settings"></i>
-                    <span class="fd-button__text">ActionActionAction</span>
+                    <i class="sap-icon--print"></i>
+                    <span class="fd-button__text">Print</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item">
                 <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--settings"></i>
-                    <span class="fd-button__text">Action</span>
+                    <i class="sap-icon--home"></i>
+                    <span class="fd-button__text">Go to landing page</span>
+                </button>
+            </li>
+            <li class="fd-action-sheet__item">
+                <button class="fd-button fd-button--full-width fd-button--transparent" onclick="onPopoverClick('actionSheetTablet');">
+                    Decide Later
                 </button>
             </li>
         </ul>
@@ -102,8 +130,7 @@ export const actionSheetTablet = () => `
 
 actionSheetTablet.parameters = {
     docs: {
-        iframeHeight: 300,
-        storyDescription: ''
+        iframeHeight: 300
     }
 };
 
@@ -117,29 +144,36 @@ export const actionSheetPhone = () => `
         <i class="sap-icon--settings"></i>
     </button>
     <div class="fd-action-sheet__wrapper" id="actionSheetPhone">
+        <h6 class="fd-action-sheet__title">Press cancel to hide action sheet</h6>
         <ul class="fd-action-sheet">
             <li class="fd-action-sheet__item">
                 <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--settings"></i>
-                    <span class="fd-button__text">Action</span>
+                    <i class="sap-icon--attachment"></i>
+                    <span class="fd-button__text">Upload file</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item">
                 <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--settings"></i>
-                    <span class="fd-button__text">ActionAction</span>
+                    <i class="sap-icon--add"></i>
+                    <span class="fd-button__text">Assign user</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item">
                 <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--settings"></i>
-                    <span class="fd-button__text">ActionActionAction</span>
+                    <i class="sap-icon--print"></i>
+                    <span class="fd-button__text">Print</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item">
                 <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--settings"></i>
-                    <span class="fd-button__text">Action</span>
+                    <i class="sap-icon--home"></i>
+                    <span class="fd-button__text">Go to landing page</span>
+                </button>
+            </li>
+            <li class="fd-action-sheet__item">
+                <button class="fd-button fd-button--full-width fd-button--transparent"
+                        onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
+                    Decide Later
                 </button>
             </li>
             <li class="fd-action-sheet__item">
@@ -156,6 +190,6 @@ export const actionSheetPhone = () => `
 actionSheetPhone.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: ''
+        storyDescription: 'On smartphones the action sheet is wrapped by `fd-action-sheet__wrapper`, instead of popover.'
     }
 };
