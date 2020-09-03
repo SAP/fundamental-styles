@@ -6,14 +6,31 @@ export default {
     title: 'Components/Breadcrumb',
     parameters: {
         description: `
-The breadcrumb allows users to see the current page and navigation path to that page.
-Users can navigate to previous levels in the path. When clicking on the current page, a dropdown allows users to access other pages at that same level.
-        `,
+The breadcrumb component is a type of navigation that indicates the position of a page within the application’s page hierarchy. Users can navigate backward by selecting the previous pages in the navigation path.
+
+##Usage
+**Use breadcrumb if:**
+
+- You want to show secondary navigation on the object page
+- You want to show navigation in a table
+- You want to show navigation in charts
+- Use a breadcrumb only when the drilldown scenario leads to related object pages: parent object page / child object page 1 / child object page 2 / child object page 3.
+
+**Do not use breadcrumb if:**
+
+- Your hierarchy contains only one level.
+
+**Do not include these elements in your breadcrumb path:**
+
+- Other floorplans, such as overview pages and list reports
+- Cross-application navigation to other object pages
+- Independent object pages, such as fact sheets
+`,
         tags: ['f3', 'a11y', 'theme']
     }
 };
 
-export const defaultStory = () => `
+export const standard = () => `
 <ul class="fd-breadcrumb">
     <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Products</a></li>
     <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Suppliers</a></li>
@@ -25,7 +42,11 @@ export const defaultStory = () => `
 </ul>
 `;
 
-defaultStory.storyName = 'Default';
+standard.parameters = {
+    docs: {
+        storyDescription: 'The standard breadcrumb component displays several pages in text format separated by dividers, indicating a navigation path. Each page can be specifically selected to navigate to its corresponding page. It can be displayed by using the <code>fd-breadcrumb</code> class.'
+    }
+};
 
 export const overflow = () => `
 <ul class="fd-breadcrumb">
@@ -76,6 +97,6 @@ export const overflow = () => `
 overflow.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'The breadcrumb takes the width of its parent container. Breadcrumbs are responsive. If there is insufficient horizontal space, the links in the breadcrumb trail collapse into a dropdown menu.'
+        storyDescription: 'The overflow breadcrumb component displays a dropdown menu, followed by several pages in the navigation path. Like the standard breadcrumb, each page can be selected to navigate to its corresponding page. This type is responsive and will collapse into a dropdown menu if there is insufficient horizontal space on the screen. To display the overflow breadcrumb, include the <code>fd-popover</code> component in the first breadcrumb item within the element.'
     }
 };
