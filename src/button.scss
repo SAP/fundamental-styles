@@ -276,6 +276,11 @@ $block: #{$fd-namespace}-button;
     @include menu();
   }
 
+  &--full-width {
+    width: 100%;
+    min-width: 100%;
+  }
+
   &--text-alignment {
     @include textAlignment();
   }
