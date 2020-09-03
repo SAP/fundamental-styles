@@ -52,6 +52,7 @@ $block: #{$fd-namespace}-avatar;
   }
   // BLOCK MODIFIERS ************
   // sizes
+
   @each $set-name, $size-set in $fd-avatar-sizes {
     &--#{$set-name} {
       @include fd-reset-spacing();

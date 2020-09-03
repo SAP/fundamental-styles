@@ -334,6 +334,98 @@ export const interactiveRowsAndColumns = () => `
 interactiveRowsAndColumns.storyName = 'Interactive Table With Hoverable and Activable Cells and Rows';
 
 /**
+ * A table can be set to have focusable rows by adding `fd-table__row--focusable` and a valid `tabindex` to the rows.
+ * It is not recommended to use focusable rows simultaneously with focusable cells.
+ */
+
+export const focusableRows = () => `
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin: 0;">Table With Focusable Rows</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
+<table class="fd-table" role="grid">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row fd-table__row--focusable" tabindex="-1">
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row fd-table__row--focusable" tabindex="-1">
+            <td class="fd-table__cell" role="gridcell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell" role="gridcell">First Name</td>
+            <td class="fd-table__cell" role="gridcell">Middle Name</td>
+            <td class="fd-table__cell" role="gridcell">Last Name</td>
+            <td class="fd-table__cell" role="gridcell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row fd-table__row--focusable" tabindex="-1">
+            <td class="fd-table__cell" role="gridcell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell" role="gridcell">First Name</td>
+            <td class="fd-table__cell" role="gridcell">Middle Name</td>
+            <td class="fd-table__cell" role="gridcell">Last Name</td>
+            <td class="fd-table__cell" role="gridcell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row fd-table__row--focusable" tabindex="-1">
+            <td class="fd-table__cell" role="gridcell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell" role="gridcell">First Name</td>
+            <td class="fd-table__cell" role="gridcell">Middle Name</td>
+            <td class="fd-table__cell" role="gridcell">Last Name</td>
+            <td class="fd-table__cell" role="gridcell">01/26/17</td>
+        </tr>
+    </tbody>
+</table>
+`;
+
+/**
+ * A table can be set to have focusable cells by adding `fd-table__cell--focusable` and a valid `tabindex` to the cells.
+ * It is not recommended to use focusable cells simultaneously with focusable rows.
+ */
+
+export const focusableCells = () => `
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin: 0;">Table With Focusable Cells</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
+<table class="fd-table" role="grid">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1" scope="col">Column Header</th>
+            <th class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1" scope="col">Column Header</th>
+            <th class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1" scope="col">Column Header</th>
+            <th class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1" scope="col">Column Header</th>
+            <th class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1" scope="col">Column Header</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">First Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">Middle Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">Last Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">First Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">Middle Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">Last Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">First Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">Middle Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">Last Name</td>
+            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">01/26/17</td>
+        </tr>
+    </tbody>
+</table>
+`;
+
+/**
  * The checkbox input can be used at the beginning of each row to allow for bulk actions.
 It is recommended to add the parameter `aria-selected="true"` to the row that is selected.
 Also for cells that include a checkbox should contain the `fd-table__cell--checkbox` class.
@@ -1476,7 +1568,7 @@ export const navigationIndicationStates = () => `
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
-            <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
+            <td class="fd-table__cell fd-table__cell--fit-content">
                 <button aria-label="navigation" class="fd-button fd-button--transparent">
                     <i class="sap-icon--navigation-right-arrow"></i>
                 </button>
@@ -1487,7 +1579,7 @@ export const navigationIndicationStates = () => `
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
-            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated" scope="col">
+            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated">
                 <button aria-label="navigation" class="fd-button fd-button--transparent">
                     <i class="sap-icon--navigation-right-arrow"></i>
                 </button>
@@ -1498,7 +1590,7 @@ export const navigationIndicationStates = () => `
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
-            <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
+            <td class="fd-table__cell fd-table__cell--fit-content">
                 <button aria-label="navigation" class="fd-button fd-button--transparent">
                     <i class="sap-icon--navigation-right-arrow"></i>
                 </button>
@@ -1528,7 +1620,7 @@ export const navigationIndicationStates = () => `
                 <td class="fd-table__cell">First Name</td>
                 <td class="fd-table__cell">Last Name</td>
                 <td class="fd-table__cell">01/26/17</td>
-                <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
+                <td class="fd-table__cell fd-table__cell--fit-content">
                     <button aria-label="navigation" class="fd-button fd-button--transparent">
                         <i class="sap-icon--navigation-left-arrow"></i>
                     </button>
@@ -1539,7 +1631,7 @@ export const navigationIndicationStates = () => `
                 <td class="fd-table__cell">First Name</td>
                 <td class="fd-table__cell">Last Name</td>
                 <td class="fd-table__cell">01/26/17</td>
-                <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated" scope="col">
+                <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated">
                     <button aria-label="navigation" class="fd-button fd-button--transparent">
                         <i class="sap-icon--navigation-left-arrow"></i>
                     </button>
@@ -1550,7 +1642,7 @@ export const navigationIndicationStates = () => `
                 <td class="fd-table__cell">First Name</td>
                 <td class="fd-table__cell">Last Name</td>
                 <td class="fd-table__cell">01/26/17</td>
-                <td class="fd-table__cell fd-table__cell--fit-content" scope="col">
+                <td class="fd-table__cell fd-table__cell--fit-content">
                     <button aria-label="navigation" class="fd-button fd-button--transparent">
                         <i class="sap-icon--navigation-left-arrow"></i>
                     </button>

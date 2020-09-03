@@ -50,8 +50,8 @@ $block: #{$fd-namespace}-message-strip;
   $fd-message-strip-border-color: var(--sapNeutralBorderColor) !default;
 
   // ---------------------------------------------------------------------------
-
   // Block
+
   @include fd-reset();
 
   font-size: var(--sapFontSize);

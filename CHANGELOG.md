@@ -2,6 +2,70 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.41...v0.12.0-rc.42) (2020-09-03)
+
+
+### Bug Fixes
+
+* add text-shadow for better contrast ([#1571](https://github.com/SAP/fundamental-styles/issues/1571)) ([e923f17](https://github.com/SAP/fundamental-styles/commit/e923f17030ad0c0944302d60b31a5c0e24a29a92))
+
+## [0.12.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.40...v0.12.0-rc.41) (2020-09-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* replace panel title tag h5 with h4
+
+### Bug Fixes
+
+* Change size in panel title ([#1576](https://github.com/SAP/fundamental-styles/issues/1576)) ([da83fb7](https://github.com/SAP/fundamental-styles/commit/da83fb70acbccda04b63cd8c7ada17a5ab78a1f4))
+
+## [0.12.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.39...v0.12.0-rc.40) (2020-09-03)
+
+## [0.12.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.38...v0.12.0-rc.39) (2020-09-02)
+
+## [0.12.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.37...v0.12.0-rc.38) (2020-09-02)
+
+## [0.12.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.36...v0.12.0-rc.37) (2020-09-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* * fix: remove scope attribute from td
+
+* feat: focusable styles for table rows and cells
+
+* fix: grid roles
+
+* fix: typo
+
+### Features
+
+* focusable table cells and rows ([#1563](https://github.com/SAP/fundamental-styles/issues/1563)) ([6967e56](https://github.com/SAP/fundamental-styles/commit/6967e561bb1ced4ec7a838474fc5af10991c3a85))
+
+## [0.12.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.35...v0.12.0-rc.36) (2020-09-02)
+
+## [0.12.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.34...v0.12.0-rc.35) (2020-09-01)
+
+## [0.12.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.33...v0.12.0-rc.34) (2020-09-01)
+
+## [0.12.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.32...v0.12.0-rc.33) (2020-09-01)
+
+## [0.12.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.31...v0.12.0-rc.32) (2020-09-01)
+
+## [0.12.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.30...v0.12.0-rc.31) (2020-09-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* update calendar dismiss button icon(add <i> tag) and remove class fd-calendar__close-button in calendar and datepicker
+
+### Bug Fixes
+
+* update Calendar dismiss button ([#1533](https://github.com/SAP/fundamental-styles/issues/1533)) ([6c982f9](https://github.com/SAP/fundamental-styles/commit/6c982f9dbc765a53808c3d34c6b6d8b49063d660))
+
+## [0.12.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.29...v0.12.0-rc.30) (2020-09-01)
+
 ## [0.12.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.28...v0.12.0-rc.29) (2020-09-01)
 
 

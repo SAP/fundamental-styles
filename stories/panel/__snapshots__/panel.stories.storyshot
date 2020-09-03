@@ -43,12 +43,12 @@ exports[`Storyshots Components/Panel Expandable 1`] = `
       </div>
       
         
-      <h5
+      <h4
         class="fd-panel__title"
         id="asdASD123"
       >
         Panel Header Collapsed
-      </h5>
+      </h4>
       
         
       <div
@@ -164,12 +164,12 @@ exports[`Storyshots Components/Panel Expandable 1`] = `
       </div>
       
         
-      <h5
+      <h4
         class="fd-panel__title"
         id="asdASD1234"
       >
         Panel Header Expanded
-      </h5>
+      </h4>
       
     
     </div>

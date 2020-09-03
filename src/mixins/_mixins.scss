@@ -207,6 +207,7 @@
 @mixin fd-link() {
   color: var(--sapLinkColor);
   text-decoration: none;
+  text-shadow: var(--sapContent_TextShadow);
   display: inline-block;
   transition: all $fd-animation-speed ease-in;
   line-height: inherit;
@@ -238,6 +239,7 @@
 
   &--inverted {
     color: var(--sapLink_InvertedColor);
+    text-shadow: none;
 
     @include fd-hover() {
       color: var(--sapLink_InvertedColor);

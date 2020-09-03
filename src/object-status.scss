@@ -199,6 +199,7 @@ $inverted-color-accents: (
   font-family: $fd-object-status-text-font-family;
   font-size: $fd-object-status-text-font-size;
   color: $fd-object-status-text-neutral;
+  text-shadow: var(--sapContent_TextShadow);
   max-width: 100%;
   word-break: break-word;
   display: inline-flex;
@@ -312,6 +313,7 @@ $inverted-color-accents: (
     font-weight: $fd-object-status-inverted-text-font-weight;
     border-width: var(--sapInverted_Object_Border_Width);
     border-style: solid;
+    text-shadow: none;
 
     &::before {
       font-size: $fd-object-status-inverted-icon-font-size;
