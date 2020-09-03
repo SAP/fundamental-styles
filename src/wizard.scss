@@ -1,0 +1,44 @@
+@import "./mixins";
+
+// VARIABLES
+$block: #{$fd-namespace}-wizard;
+
+$fd-tree-highlight-box-shadow-rtl: inset -0.375rem 0 0 0 !default;
+
+// BLOCK
+.#{$block} {
+  @include fd-reset();
+
+  &__progress-bar {
+    @include fd-reset();
+
+    background: var(--sapObjectHeader_Background);
+    box-shadow: var(--sapContent_HeaderShadow); // to be discussed
+    height: 4rem;
+    padding-top: 1rem;
+  }
+
+  &__step {
+    @include fd-reset();
+  }
+
+  &__step-container {
+    @include fd-reset();
+
+    &--grouped {
+      @include fd-reset();
+    }
+  }
+
+  &__step-label-container {
+    @include fd-reset();
+  }
+
+  &__step-label {
+    @include fd-reset();
+  }
+
+  &__step-connector {
+    @include fd-reset();
+  }
+}
