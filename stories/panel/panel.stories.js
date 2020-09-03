@@ -36,7 +36,7 @@ export const expandable = () => `
                 <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
-        <h5 class="fd-panel__title" id="asdASD123">Panel Header Collapsed</h5>
+        <h4 class="fd-panel__title" id="asdASD123">Panel Header Collapsed</h4>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
@@ -65,7 +65,7 @@ export const expandable = () => `
                 <i class="sap-icon--slim-arrow-down"></i>
             </button>
         </div>
-        <h5 class="fd-panel__title" id="asdASD1234">Panel Header Expanded</h5>
+        <h4 class="fd-panel__title" id="asdASD1234">Panel Header Expanded</h4>
     </div>
     <div role="region" aria-labelledby="jhqDKYdf" class="fd-panel__content" aria-hidden="false" id="fghqwe32122">
         <span>
@@ -95,7 +95,7 @@ To create a fixed panel, add the `--fixed` modifier.
 export const fixed = () => `
 <div class="fd-panel fd-panel--fixed">
     <div class="fd-panel__header">
-        <h5 class="fd-panel__title">Panel Header</h5>
+        <h4 class="fd-panel__title">Panel Header</h4>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
@@ -133,7 +133,7 @@ export const compact = () => `
                 <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
-        <h5 class="fd-panel__title" id="asdASD234">Panel Header</h5>
+        <h4 class="fd-panel__title" id="asdASD234">Panel Header</h4>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
@@ -171,7 +171,7 @@ export const fixedHeightContent = () => `
                 <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
-        <h5 class="fd-panel__title" id="asdASD345">Panel Header</h5>
+        <h4 class="fd-panel__title" id="asdASD345">Panel Header</h4>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
