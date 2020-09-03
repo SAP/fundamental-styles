@@ -5,12 +5,12 @@ exports[`Storyshots Components/Dialog Default 1`] = `
 
 `;
 
-exports[`Storyshots Components/Dialog Draggable Mode 1`] = `
+exports[`Storyshots Components/Dialog Draggable 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Dialog Loading Dialog Example 1`] = `
+exports[`Storyshots Components/Dialog Loading 1`] = `
 <section>
   
 
@@ -149,7 +149,12 @@ exports[`Storyshots Components/Dialog Loading Dialog Example 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Dialog Select Dialog Example 1`] = `
+exports[`Storyshots Components/Dialog Resizable 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Dialog Selectable 1`] = `
 <section>
   
 
@@ -455,7 +460,7 @@ exports[`Storyshots Components/Dialog Select Dialog Example 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Dialog Size Modifiers 1`] = `
+exports[`Storyshots Components/Dialog Sizes 1`] = `
 <section>
   
 
@@ -901,9 +906,4 @@ exports[`Storyshots Components/Dialog Size Modifiers 1`] = `
   
 
 </section>
-`;
-
-exports[`Storyshots Components/Dialog With Resize Handle 1`] = `
-
-
 `;
