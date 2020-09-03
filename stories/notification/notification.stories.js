@@ -9,13 +9,13 @@ export default {
     }
 };
 
-export const single = () => `
+export const primary = () => `
 <div class="fd-notification">
     <div class="fd-notification__body">
         <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
-                <div class="fd-notification__indicator--success"></div>
+                <div class="fd-notification__indicator fd-notification__indicator--success"></div>
                 <h2>Your leave request has been accepted</h2>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -30,7 +30,7 @@ export const single = () => `
     </div>
 </div>
 `;
-single.parameters = {
+primary.parameters = {
     docs: {
         iframeHeight: 200
     }
@@ -39,9 +39,9 @@ single.parameters = {
 export const noAvatar = () => `
 <div class="fd-notification">
     <div class="fd-notification__body">
-        <div class="fd-notification__content">
+        <div class="fd-notification__content fd-notification__content--no-avatar">
             <div class="fd-notification__header">
-                <div class="fd-notification__indicator--success"></div>
+                <div class="fd-notification__indicator fd-notification__indicator--success"></div>
                 <h2>Your leave request has been accepted</h2>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -71,7 +71,7 @@ export const information = () => `
       <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-label="Close">
         </button>
     </div>
-    <div class="fd-notification__body message">
+    <div class="fd-notification__body fd-notification__body--message">
         <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
@@ -106,7 +106,7 @@ export const warning = () => `
       <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-label="Close">
       </button>
     </div>
-    <div class="fd-notification__body message">
+    <div class="fd-notification__body fd-notification__body--message">
        <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
@@ -140,7 +140,7 @@ export const error = () => `
       <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-label="Close">
       </button>
     </div>
-    <div class="fd-notification__body message">
+    <div class="fd-notification__body fd-notification__body--message">
         <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
         <div class="fd-notification__content">
           <div class="fd-notification__header">
@@ -165,7 +165,7 @@ error.parameters = {
 };
 
 export const notificationGroup = () => `
-<div class="fd-notification notification-group">
+<div class="fd-notification fd-notification__group">
     <ul class="fd-tabs fd-tabs--l" role="tablist">
         <li role="listitem" class="fd-tabs__item">
             <a class="fd-tabs__link" aria-selected="true" role="tab">
@@ -195,7 +195,7 @@ export const notificationGroup = () => `
         </button>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
-                <div class="fd-notification__indicator--warning"></div>
+                <div class="fd-notification__indicator fd-notification__indicator--warning"></div>
                 <h2>Today (5)</h2>
             </div>
         </div>
@@ -210,7 +210,7 @@ export const notificationGroup = () => `
         <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" role="presentation" aria-label="John Doe">JD</span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
-                <div class="fd-notification__indicator--warning"></div>
+                <div class="fd-notification__indicator fd-notification__indicator--warning"></div>
                 <h2>You've got new item</h2>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -255,7 +255,7 @@ export const notificationGroup = () => `
         <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
-            <div class="fd-notification__indicator--success"></div>
+            <div class="fd-notification__indicator fd-notification__indicator--success"></div>
             <h2>Your leave request has been accepted</h2>
             </div>
             <p>Lagna aliqua.</p>
@@ -273,7 +273,7 @@ export const notificationGroup = () => `
         <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
-            <div class="fd-notification__indicator--error"></div>
+            <div class="fd-notification__indicator fd-notification__indicator--error"></div>
             <h2>Your leave request has been rejected</h2>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -288,7 +288,7 @@ export const notificationGroup = () => `
     </div>
     <div class="fd-notification__limit">
         <h1>There are 30 more notifications</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="fd-notification__limit--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
 </div>
 `;
