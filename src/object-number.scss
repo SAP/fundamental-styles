@@ -22,6 +22,7 @@ $color-states: (
   color: var(--sapNeutralTextColor);
   max-width: 100%;
   display: inline-block;
+  text-shadow: var(--sapContent_TextShadow);
 
   &__text,
   &__unit {
