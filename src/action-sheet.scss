@@ -55,6 +55,7 @@ $block: #{$fd-namespace}-action-sheet;
     @include fd-typography(var(--sapFontHeader6Size));
     @include fd-ellipsis();
 
+    z-index: 1;
     margin: 0 1rem 0.5rem 1rem;
     color: var(--sapContent_ContrastTextColor);
   }
@@ -65,5 +66,17 @@ $block: #{$fd-namespace}-action-sheet;
     .#{$block}__item {
       padding: 0.1875rem 0;
     }
+  }
+
+  &--mobile {
+    background-color: $fd-popover-background-color;
+    z-index: 1;
+    box-shadow: $fd-popover-box-shadow-no-arrow;
+    width: $fd-popover-full-filled-width;
+    position: relative;
+    overflow: auto;
+
+    @include fd-left-popover-offset-placement();
+    @include fd-popover-border-radius();
   }
 }

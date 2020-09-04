@@ -8,10 +8,7 @@ $block: #{$fd-namespace}-popover;
   $fd-popover-top-position: calc(100% + 0.5rem) !default;
   $fd-popover-top-position-noarrow: 100% !default;
   $fd-popover-z-index: map-get($fd-z-index-levels, "top") !default;
-  $fd-popover-background-color: var(--sapGroup_ContentBackground) !default;
-  $fd-popover-border-radius: var(--sapElement_BorderCornerRadius) !default;
   $fd-popover-box-shadow: var(--sapContent_Shadow2) !default;
-  $fd-popover-box-shadow-no-arrow: var(--sapContent_Shadow1) !default;
 
   $fd-popover-arrow-top-back: -0.5rem !default;
   $fd-popover-arrow-top-front: calc(-0.5rem + 1px) !default;
@@ -23,8 +20,6 @@ $block: #{$fd-namespace}-popover;
   $fd-popover-arrow-color: var(--sapContent_ForegroundBorderColor) !default;
 
   $fd-popover-transition-params: $fd-animation-speed !default;
-
-  $fd-popover-body-shadow-offset: var(--sapGroup_BorderWidth) !default;
 
   @include fd-reset();
 
@@ -219,7 +214,7 @@ $block: #{$fd-namespace}-popover;
       &-fill {
         display: block;
         max-width: 37.5rem;
-        width: calc(100% - #{$fd-popover-body-shadow-offset} * 2);
+        width: $fd-popover-full-filled-width;
       }
     }
 

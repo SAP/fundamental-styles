@@ -240,6 +240,18 @@ $block: #{$fd-namespace}-button;
       margin-right: 0;
     }
 
+    @include fd-rtl() {
+      &:first-child {
+        margin-left: $fd-button-icon-margin;
+        margin-right: 0;
+      }
+
+      &:last-child {
+        margin-right: $fd-button-icon-margin;
+        margin-left: 0;
+      }
+    }
+
     & + [class*='sap-icon'] {
       margin-left: 0;
     }
