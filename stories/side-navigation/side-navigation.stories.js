@@ -1,3 +1,7 @@
+import '../../dist/icon.css';
+import '../../dist/button.css';
+import '../../dist/side-nav.css';
+
 export default {
     title: 'Components/Side Navigation',
     parameters: {
