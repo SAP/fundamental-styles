@@ -34,6 +34,8 @@ $block: #{$fd-namespace}-action-sheet;
     top: 0;
     display: none;
 
+    @include fd-popover-border-radius();
+
     &--active {
       @include fd-flex('column') {
         justify-content: flex-end;
@@ -45,6 +47,7 @@ $block: #{$fd-namespace}-action-sheet;
   &__title {
     @include fd-reset();
     @include fd-typography(var(--sapFontHeader6Size));
+    @include fd-ellipsis();
 
     margin: 0 1rem 0.5rem 1rem;
     color: var(--sapContent_ContrastTextColor);

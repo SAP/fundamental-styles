@@ -32,7 +32,7 @@ On tablets and desktop devices, the actions are displayed in a popover.
     }
 };
 
-export const actionSheetDesktop = () => `    
+export const actionSheetDesktop = () => `
 <div class="fd-popover">
     <div class="fd-popover__control">
         <button class="fd-button fd-button--compact fd-button--transparent" 
@@ -42,39 +42,41 @@ export const actionSheetDesktop = () => `
         </button>
     </div>
     <div class="fd-popover__body" aria-hidden="true" id="actionSheetDesktop">
-        <ul class="fd-action-sheet fd-action-sheet--compact">
-            <li class="fd-action-sheet__item">
+        <ul class="fd-action-sheet fd-action-sheet--compact" role="list" aria-label="List of contextual options">
+            <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
                     <i class="sap-icon--attachment"></i>
                     <span class="fd-button__text">Upload file</span>
                 </button>
             </li>
-            <li class="fd-action-sheet__item">
+            <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
                     <i class="sap-icon--add"></i>
                     <span class="fd-button__text">Assign user</span>
                 </button>
             </li>
-            <li class="fd-action-sheet__item">
+            <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
                     <i class="sap-icon--print"></i>
                     <span class="fd-button__text">Print</span>
                 </button>
             </li>
-            <li class="fd-action-sheet__item">
+            <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--home"></i>
-                    <span class="fd-button__text">Go to landing page</span>
+                    <i class="sap-icon--download"></i>
+                    <span class="fd-button__text">Download</span>
                 </button>
             </li>
-            <li class="fd-action-sheet__item">
-                <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent" onclick="onPopoverClick('actionSheetDesktop');">
-                    Decide Later
+            <li class="fd-action-sheet__item" role="listitem">
+                <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left"
+                        onclick="onPopoverClick('actionSheetDesktop');">
+                    <span class="fd-button__text">Decide Later</span>
                 </button>
             </li>
         </ul>
     </div>
 </div>
+<div style="height: 300px"></div>
 `;
 
 actionSheetDesktop.parameters = {
@@ -94,39 +96,41 @@ export const actionSheetTablet = () => `
         </button>
     </div>
     <div class="fd-popover__body" aria-hidden="true" id="actionSheetTablet">
-        <ul class="fd-action-sheet">
-            <li class="fd-action-sheet__item">
+        <ul class="fd-action-sheet" role="list" aria-label="List of contextual options">
+            <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
                     <i class="sap-icon--attachment"></i>
                     <span class="fd-button__text">Upload file</span>
                 </button>
             </li>
-            <li class="fd-action-sheet__item">
+            <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
                     <i class="sap-icon--add"></i>
                     <span class="fd-button__text">Assign user</span>
                 </button>
             </li>
-            <li class="fd-action-sheet__item">
+            <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
                     <i class="sap-icon--print"></i>
                     <span class="fd-button__text">Print</span>
                 </button>
             </li>
-            <li class="fd-action-sheet__item">
+            <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--home"></i>
-                    <span class="fd-button__text">Go to landing page</span>
+                    <i class="sap-icon--download"></i>
+                    <span class="fd-button__text">Download</span>
                 </button>
             </li>
-            <li class="fd-action-sheet__item">
-                <button class="fd-button fd-button--full-width fd-button--transparent" onclick="onPopoverClick('actionSheetTablet');">
-                    Decide Later
+            <li class="fd-action-sheet__item" role="listitem">
+                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left"
+                        onclick="onPopoverClick('actionSheetTablet');">
+                    <span class="fd-button__text">Decide Later</span>
                 </button>
             </li>
         </ul>
     </div>
 </div>
+<div style="height: 300px"></div>
 `;
 
 actionSheetTablet.parameters = {
@@ -147,38 +151,38 @@ export const actionSheetPhone = () => `
     <div class="fd-action-sheet__wrapper" id="actionSheetPhone">
         <h6 class="fd-action-sheet__title">Press cancel to hide action sheet</h6>
         <div class="fd-popover__body fd-popover__body--static fd-popover__body--dropdown-fill fd-popover__body--no-arrow">
-            <ul class="fd-action-sheet">
-                <li class="fd-action-sheet__item">
+            <ul class="fd-action-sheet" role="list" aria-label="List of contextual options">
+                <li class="fd-action-sheet__item" role="listitem">
                     <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
                         <i class="sap-icon--attachment"></i>
                         <span class="fd-button__text">Upload file</span>
                     </button>
                 </li>
-                <li class="fd-action-sheet__item">
+                <li class="fd-action-sheet__item" role="listitem">
                     <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
                         <i class="sap-icon--add"></i>
                         <span class="fd-button__text">Assign user</span>
                     </button>
                 </li>
-                <li class="fd-action-sheet__item">
+                <li class="fd-action-sheet__item" role="listitem">
                     <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
                         <i class="sap-icon--print"></i>
                         <span class="fd-button__text">Print</span>
                     </button>
                 </li>
-                <li class="fd-action-sheet__item">
+                <li class="fd-action-sheet__item" role="listitem">
                     <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                        <i class="sap-icon--home"></i>
-                        <span class="fd-button__text">Go to landing page</span>
+                        <i class="sap-icon--download"></i>
+                        <span class="fd-button__text">Download</span>
                     </button>
                 </li>
-                <li class="fd-action-sheet__item">
-                    <button class="fd-button fd-button--full-width fd-button--transparent"
+                <li class="fd-action-sheet__item" role="listitem">
+                    <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left"
                             onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
-                        Decide Later
+                        <span class="fd-button__text">Decide Later</span>              
                     </button>
                 </li>
-                <li class="fd-action-sheet__item">
+                <li class="fd-action-sheet__item" role="listitem">
                     <button class="fd-button fd-button--full-width fd-button--negative"
                             onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
                         <span class="fd-button__text">Cancel</span>

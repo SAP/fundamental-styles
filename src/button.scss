@@ -40,6 +40,7 @@ $block: #{$fd-namespace}-button;
 
 @mixin iconSize($size) {
   width: $size;
+  min-width: $size;
   height: $size;
   font-size: $size;
   line-height: $size;
@@ -279,6 +280,8 @@ $block: #{$fd-namespace}-button;
   &--full-width {
     width: 100%;
     min-width: 100%;
+    display: flex;
+    align-items: center;
   }
 
   &--text-alignment {
