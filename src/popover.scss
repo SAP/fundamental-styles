@@ -126,13 +126,9 @@ $block: #{$fd-namespace}-popover;
     }
 
     &--left {
-      right: auto;
-      left: $fd-popover-body-shadow-offset;
+      @include fd-left-popover-offset-placement();
 
       @include fd-rtl() {
-        right: $fd-popover-body-shadow-offset;
-        left: auto;
-
         &::before,
         &::after {
           right: $fd-popover-arrow-offset;
@@ -147,13 +143,9 @@ $block: #{$fd-namespace}-popover;
     }
 
     &--right {
-      left: auto;
-      right: $fd-popover-body-shadow-offset;
+      @include fd-right-popover-offset-placement();
 
       @include fd-rtl() {
-        right: auto;
-        left: $fd-popover-body-shadow-offset;
-
         &::before,
         &::after {
           left: $fd-popover-arrow-offset;
@@ -179,23 +171,11 @@ $block: #{$fd-namespace}-popover;
       }
 
       &.#{$block}__body--left {
-        left: $fd-popover-body-shadow-offset;
-        right: auto;
-
-        @include fd-rtl() {
-          right: $fd-popover-body-shadow-offset;
-          left: auto;
-        }
+        @include fd-left-popover-offset-placement();
       }
 
       &.#{$block}__body--right {
-        right: $fd-popover-body-shadow-offset;
-        left: auto;
-
-        @include fd-rtl() {
-          left: $fd-popover-body-shadow-offset;
-          right: auto;
-        }
+        @include fd-right-popover-offset-placement();
       }
     }
 
