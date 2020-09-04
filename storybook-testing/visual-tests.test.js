@@ -8,6 +8,10 @@ import initStoryshots from '@storybook/addon-storyshots';
 // needed to prevent failures from @storybook/components
 global.window = { ...global };
 
+// DUMP_VISUAL_DIFF_TO_CONSOLE=true is set only in .travis.yml (Ci)
+// So that we don't see the base64 of a diff image in dev workflow
+const {DUMP_VISUAL_DIFF_TO_CONSOLE = false } = process.env;
+
 const getMatchOptions = ({ context }) => {
     return {
         failureThreshold: 0.001,
@@ -15,7 +19,7 @@ const getMatchOptions = ({ context }) => {
         customSnapshotIdentifier: () => context.name.replace(/\s/g, ''),
         // Will output base64 string of a diff image to console in case of failed tests (in addition to creating a diff image).
         // This string can be copy-pasted to a browser address string to preview the diff for a failed test.
-        dumpDiffToConsole: true,
+        dumpDiffToConsole: DUMP_VISUAL_DIFF_TO_CONSOLE,
         allowSizeMismatch: true
     };
 };
