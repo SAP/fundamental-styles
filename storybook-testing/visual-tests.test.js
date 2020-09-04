@@ -14,7 +14,11 @@ const {DUMP_VISUAL_DIFF_TO_CONSOLE = false } = process.env;
 
 const getMatchOptions = ({ context }) => {
     return {
-        failureThreshold: 0.001,
+        blur: 2,
+        customDiffConfig: {
+            threshold: 0.2
+        },
+        failureThreshold: 0.01,
         failureThresholdType: 'percent',
         customSnapshotIdentifier: () => context.name.replace(/\s/g, ''),
         // Will output base64 string of a diff image to console in case of failed tests (in addition to creating a diff image).
