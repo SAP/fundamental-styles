@@ -28,7 +28,7 @@
     "storybook:ci": "npm run storybook -- --ci --quiet",
     "storybook:prep": "npm run build && babel-node scripts/build-visual-stories.js && babel-node scripts/storybook-prep.js",
     "storybook:static": "rm -rf storybook-static && npm run storybook:prep && STORYBOOK_ENV=docs build-storybook -c .storybook -o storybook-static -s .storybook/static/,node_modules/@sap-theming --docs",
-    "storybook:visual:setup": "jest storyshots --no-cache --config=./config/jest.config.js"
+    "storybook:visual:setup": "jest --no-cache --config=./config/jest.config.js"
   },
   "repository": {
     "type": "git",
