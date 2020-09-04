@@ -350,6 +350,547 @@ exports[`Storyshots Components/Table Fix Column Header 1`] = `
 </section>
 `;
 
+exports[`Storyshots Components/Table Focusable Cells 1`] = `
+<section>
+  
+
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+    
+    <h4
+      style="margin: 0;"
+    >
+      Table With Focusable Cells
+    </h4>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+    />
+    
+
+  </div>
+  
+
+  <table
+    class="fd-table"
+    role="grid"
+  >
+    
+    
+    <thead
+      class="fd-table__header"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <th
+          class="fd-table__cell fd-table__cell--focusable"
+          role="gridcell"
+          scope="col"
+          tabindex="-1"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell fd-table__cell--focusable"
+          role="gridcell"
+          scope="col"
+          tabindex="-1"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell fd-table__cell--focusable"
+          role="gridcell"
+          scope="col"
+          tabindex="-1"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell fd-table__cell--focusable"
+          role="gridcell"
+          scope="col"
+          tabindex="-1"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell fd-table__cell--focusable"
+          role="gridcell"
+          scope="col"
+          tabindex="-1"
+        >
+          Column Header
+        </th>
+        
+        
+      </tr>
+      
+    
+    </thead>
+    
+    
+    <tbody
+      class="fd-table__body"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--focusable"
+          role="gridcell"
+          tabindex="-1"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--focusable"
+          role="gridcell"
+          tabindex="-1"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--focusable"
+          role="gridcell"
+          tabindex="-1"
+        >
+          Middle Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--focusable"
+          role="gridcell"
+          tabindex="-1"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--focusable"
+          role="gridcell"
+          tabindex="-1"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--focusable"
+          role="gridcell"
+          tabindex="-1"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--focusable"
+          role="gridcell"
+          tabindex="-1"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--focusable"
+          role="gridcell"
+          tabindex="-1"
+        >
+          Middle Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--focusable"
+          role="gridcell"
+          tabindex="-1"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--focusable"
+          role="gridcell"
+          tabindex="-1"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--focusable"
+          role="gridcell"
+          tabindex="-1"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--focusable"
+          role="gridcell"
+          tabindex="-1"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--focusable"
+          role="gridcell"
+          tabindex="-1"
+        >
+          Middle Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--focusable"
+          role="gridcell"
+          tabindex="-1"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--focusable"
+          role="gridcell"
+          tabindex="-1"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+    
+    </tbody>
+    
+
+  </table>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Table Focusable Rows 1`] = `
+<section>
+  
+
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+    
+    <h4
+      style="margin: 0;"
+    >
+      Table With Focusable Rows
+    </h4>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+    />
+    
+
+  </div>
+  
+
+  <table
+    class="fd-table"
+    role="grid"
+  >
+    
+    
+    <thead
+      class="fd-table__header"
+    >
+      
+        
+      <tr
+        class="fd-table__row fd-table__row--focusable"
+        tabindex="-1"
+      >
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+        
+      </tr>
+      
+    
+    </thead>
+    
+    
+    <tbody
+      class="fd-table__body"
+    >
+      
+        
+      <tr
+        class="fd-table__row fd-table__row--focusable"
+        tabindex="-1"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+          role="gridcell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+          role="gridcell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+          role="gridcell"
+        >
+          Middle Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+          role="gridcell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+          role="gridcell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row fd-table__row--focusable"
+        tabindex="-1"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+          role="gridcell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+          role="gridcell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+          role="gridcell"
+        >
+          Middle Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+          role="gridcell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+          role="gridcell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row fd-table__row--focusable"
+        tabindex="-1"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+          role="gridcell"
+        >
+          <a
+            class="fd-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+          role="gridcell"
+        >
+          First Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+          role="gridcell"
+        >
+          Middle Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+          role="gridcell"
+        >
+          Last Name
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+          role="gridcell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+    
+    </tbody>
+    
+
+  </table>
+  
+
+</section>
+`;
+
 exports[`Storyshots Components/Table Interactive Table With Hoverable and Activable Cells and Rows 1`] = `
 <section>
   
@@ -977,7 +1518,6 @@ exports[`Storyshots Components/Table Navigation Indication States 1`] = `
             
         <td
           class="fd-table__cell fd-table__cell--fit-content"
-          scope="col"
         >
           
                 
@@ -1040,7 +1580,6 @@ exports[`Storyshots Components/Table Navigation Indication States 1`] = `
             
         <td
           class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated"
-          scope="col"
         >
           
                 
@@ -1103,7 +1642,6 @@ exports[`Storyshots Components/Table Navigation Indication States 1`] = `
             
         <td
           class="fd-table__cell fd-table__cell--fit-content"
-          scope="col"
         >
           
                 
@@ -1262,7 +1800,6 @@ exports[`Storyshots Components/Table Navigation Indication States 1`] = `
                 
           <td
             class="fd-table__cell fd-table__cell--fit-content"
-            scope="col"
           >
             
                     
@@ -1325,7 +1862,6 @@ exports[`Storyshots Components/Table Navigation Indication States 1`] = `
                 
           <td
             class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated"
-            scope="col"
           >
             
                     
@@ -1388,7 +1924,6 @@ exports[`Storyshots Components/Table Navigation Indication States 1`] = `
                 
           <td
             class="fd-table__cell fd-table__cell--fit-content"
-            scope="col"
           >
             
                     
