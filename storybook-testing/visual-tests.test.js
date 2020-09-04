@@ -10,7 +10,9 @@ global.window = { ...global };
 
 // DUMP_VISUAL_DIFF_TO_CONSOLE=true is set only in .travis.yml (Ci)
 // So that we don't see the base64 of a diff image in dev workflow
-const {DUMP_VISUAL_DIFF_TO_CONSOLE = false } = process.env;
+const { DUMP_VISUAL_DIFF_TO_CONSOLE = false } = process.env;
+
+console.info(`Visual diff console dumps are ${DUMP_VISUAL_DIFF_TO_CONSOLE ? 'ENABLED' : 'DISABLED'}`);
 
 const getMatchOptions = ({ context }) => {
     return {
