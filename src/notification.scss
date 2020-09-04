@@ -18,6 +18,8 @@ $block: #{$fd-namespace}-notification;
   $fd-notification-group-border-radius-last-child: 0 0 0.25rem 0.25rem !default;
   $fd-notification-border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
 
+  $fd-notification__footer-padding: 0 0 0 0.5rem;
+
   $fd-notification-indicator-color-error: var(--sapErrorColor) !default;
   $fd-notification-indicator-color-warning: var(--sapWarningColor) !default;
   $fd-notification-indicator-color-success: var(--sapSuccessColor) !default;
@@ -28,6 +30,7 @@ $block: #{$fd-namespace}-notification;
   $fd-notification-indicator-border-color-warning: var(--sapWarningBorderColor) !default;
   $fd-notification-indicator-border-color-success: var(--sapSuccessBorderColor) !default;
   $fd-notification-indicator-border-color-information: var(--sapInformationBorderColor) !default;
+
 
   // mixins
 
@@ -49,7 +52,8 @@ $block: #{$fd-namespace}-notification;
   padding: 1rem 0.5rem 1rem 1rem;
 
   @include fd-rtl() {
-    padding: 1rem 1rem 1rem 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 1rem;
   }
 
   &__body {
@@ -83,7 +87,8 @@ $block: #{$fd-namespace}-notification;
       padding: 0.75rem 0.5rem 0 1rem;
 
       @include fd-rtl() {
-        padding: 0.75rem 1rem 0 0.5rem;
+        padding-left: 1rem;
+        padding-right: 0.5rem;
       }
     }
   }
@@ -111,10 +116,16 @@ $block: #{$fd-namespace}-notification;
       font-size: var(--sapFontHeader6Size);
     }
 
-    p {
-      margin: 0.5rem 0 0;
+    .fd-notification__paragraph {
+      margin: 0;
+      padding-top: 0.5rem;
+    }
 
-      button {
+    .fd-notification__footer {
+      padding-top: 0.5rem;
+      margin: 0;
+
+      .fd-notification__footer--button {
         margin-left: 1rem;
       }
     }

@@ -4,10 +4,10 @@ import '../../dist/notification.css';
 import * as stories from './notification.stories.js';
 
 export default {
-    title: 'Visual/Notification'
+    title: 'Visual/Notifications'
 };
 
-export const Notification = () => {
+export const Notifications = () => {
     const storyNames = Object.keys(stories).filter(story => story !== 'default');
     const div = document.createElement('div');
     div.innerHTML = storyNames.map(function(item) {
