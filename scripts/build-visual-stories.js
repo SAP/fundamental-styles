@@ -15,10 +15,6 @@ const componentDirs = readdirSync(srcPath).map(name => path.join(srcPath, name))
     };
 });
 
-const loggg = (fn, str) => {
-    fn.includes('action-bar') && console.log(str);
-};
-
 const getStyleImports = (storyFile) => {
     return new Promise(resolve => {
         const cssImportStatementRegex = /import.*\.css';/g;
