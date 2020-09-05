@@ -16,11 +16,11 @@ console.info(`Visual diff console dumps are ${DUMP_VISUAL_DIFF_TO_CONSOLE ? 'ENA
 
 const getMatchOptions = ({ context }) => {
     return {
-        blur: 2,
+        blur: 1,
         customDiffConfig: {
             threshold: 0.2
         },
-        failureThreshold: 0.01,
+        failureThreshold: 0.03,
         failureThresholdType: 'percent',
         customSnapshotIdentifier: () => context.name.replace(/\s/g, ''),
         // Will output base64 string of a diff image to console in case of failed tests (in addition to creating a diff image).
