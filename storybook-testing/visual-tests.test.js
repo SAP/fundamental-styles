@@ -16,9 +16,9 @@ console.info(`Visual diff console dumps are ${DUMP_VISUAL_DIFF_TO_CONSOLE ? 'ENA
 
 const getMatchOptions = ({ context }) => {
     return {
-        blur: 1,
+        blur: 2,
         customDiffConfig: {
-            threshold: 0.2
+            threshold: 0.25
         },
         failureThreshold: 0.03,
         failureThresholdType: 'percent',
