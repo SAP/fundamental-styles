@@ -11,7 +11,7 @@ $block: #{$fd-namespace}-notification;
   $fd-notification-width-s: 320px !default;
 
   $fd-notification-background-color: var(--sapList_Background) !default;
-  $fd-notification-box-shadow: var(--sapContent_Shadow2);
+  $fd-notification-box-shadow: var(--sapContent_Shadow0) !default;
 
   $fd-notification-border-radius: 0.25rem !default;
   $fd-notification-group-border-radius-first-child: 0.25rem 0.25rem 0 0 !default;
@@ -42,6 +42,15 @@ $block: #{$fd-namespace}-notification;
     @include fd-icon("message-#{$type}");
   }
 
+  @mixin line-clamp($lines: 2) {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+  }
+
   background-color: $fd-notification-background-color;
   box-shadow: $fd-notification-box-shadow;
   border-radius: $fd-notification-border-radius;
@@ -50,11 +59,6 @@ $block: #{$fd-namespace}-notification;
   max-width: $fd-notification-max-width-m;
   box-sizing: border-box;
   padding: 1rem 0.5rem 1rem 1rem;
-
-  @include fd-rtl() {
-    padding-left: 0.5rem;
-    padding-right: 1rem;
-  }
 
   &__body {
     @include fd-reset();
@@ -78,6 +82,15 @@ $block: #{$fd-namespace}-notification;
       &:last-child {
         border-bottom: none;
       }
+
+      @include fd-rtl() {
+        padding-left: 0.5rem;
+        padding-right: 1rem;
+      }
+    }
+
+    &--tabs {
+      box-shadow: $fd-notification-box-shadow;
     }
 
     .#{$block}__group-header {
@@ -87,8 +100,8 @@ $block: #{$fd-namespace}-notification;
       padding: 0.75rem 0.5rem 0 1rem;
 
       @include fd-rtl() {
-        padding-left: 1rem;
-        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 1rem;
       }
     }
   }
@@ -112,11 +125,13 @@ $block: #{$fd-namespace}-notification;
     }
 
     h2 {
+      @include line-clamp(2);
       margin: 0;
       font-size: var(--sapFontHeader6Size);
     }
 
     .fd-notification__paragraph {
+      @include line-clamp(2);
       margin: 0;
       padding-top: 0.5rem;
     }
@@ -149,6 +164,10 @@ $block: #{$fd-namespace}-notification;
 
     .fd-button:first-child {
       margin-right: 0.5rem;
+    }
+
+    &--button {
+      margin-bottom: 3px;
     }
   }
 

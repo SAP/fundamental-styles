@@ -182,8 +182,8 @@ error.parameters = {
 };
 
 export const notificationGroup = () => `
-<div class="fd-notification fd-notification__group">
-    <ul class="fd-tabs fd-tabs--l" role="tablist">
+<div class="fd-notification fd-notification__group" dir="rtl">
+    <ul class="fd-tabs fd-tabs--l fd-notification__group--tabs" role="tablist">
         <li role="listitem" class="fd-tabs__item">
             <a class="fd-tabs__link" aria-selected="true" role="tab">
                 <span class="fd-tabs__tag">
@@ -206,7 +206,7 @@ export const notificationGroup = () => `
             </a>
         </li>
     </ul>
-    <div class="fd-notification__group-header">
+    <div class="fd-notification__group-header" dir="rtl">
         <button role="button" aria-label="arrow-down-button" class="fd-button fd-button--compact fd-button--transparent">
             <i class="sap-icon--slim-arrow-down"></i>
         </button>
@@ -217,13 +217,13 @@ export const notificationGroup = () => `
             </div>
         </div>
         <div class="fd-notification__actions">
-            <button class="fd-button fd-button--compact">Accept All</button>
+            <button class="fd-button fd-button--compact fd-notification__actions--button">Accept All</button>
             <button class="fd-button fd-button--transparent fd-button--compact" aria-label="Close">
                 <i class="sap-icon--decline"></i>
             </button>
         </div>
     </div>
-    <div class="fd-notification__body">
+    <div class="fd-notification__body" dir="rtl">
         <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" role="presentation" aria-label="John Doe">JD</span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
@@ -291,9 +291,9 @@ export const notificationGroup = () => `
         <div class="fd-notification__content">
             <div class="fd-notification__header">
             <div class="fd-notification__indicator fd-notification__indicator--error"></div>
-            <h2>Your leave request has been rejected</h2>
+            <h2>Your leave request has been rejected. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
             </div>
-            <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p class="fd-notification__footer">SAP Analytics Cloud &middot; 7 minutes ago</p>
         </div>
         <div class="fd-notification__actions">
