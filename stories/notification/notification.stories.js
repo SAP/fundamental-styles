@@ -182,7 +182,7 @@ error.parameters = {
 };
 
 export const notificationGroup = () => `
-<div class="fd-notification fd-notification__group" dir="rtl">
+<div class="fd-notification fd-notification__group">
     <ul class="fd-tabs fd-tabs--l fd-notification__group--tabs" role="tablist">
         <li role="listitem" class="fd-tabs__item">
             <a class="fd-tabs__link" aria-selected="true" role="tab">
@@ -206,7 +206,7 @@ export const notificationGroup = () => `
             </a>
         </li>
     </ul>
-    <div class="fd-notification__group-header" dir="rtl">
+    <div class="fd-notification__group-header">
         <button role="button" aria-label="arrow-down-button" class="fd-button fd-button--compact fd-button--transparent">
             <i class="sap-icon--slim-arrow-down"></i>
         </button>
@@ -223,7 +223,7 @@ export const notificationGroup = () => `
             </button>
         </div>
     </div>
-    <div class="fd-notification__body" dir="rtl">
+    <div class="fd-notification__body">
         <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" role="presentation" aria-label="John Doe">JD</span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
