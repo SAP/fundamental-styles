@@ -27,7 +27,7 @@ The PDF viewer component can be either displayed within a page or inside of a di
 
 export const dialog = () => `
 <div class="fd-dialog-docs-static fd-pdf-viewer fd-dialog fd-dialog--active">
-    <div class="fd-dialog__content fd-dialog__content--l" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1">
+    <div class="fd-pdf-viewer__dialog fd-dialog__content fd-dialog__content--l" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1">
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -67,6 +67,51 @@ dialog.parameters = {
     docs: {
         iframeHeight: 400,
         storyDescription: 'When displayed in a dialog, download and close buttons are in the footer. The PDF Viewer dialog does not support resizing. For mobile, ensure the modal takes up the entire screen by using the <code>.fd-dialog__content--mobile</code> class.'
+    }
+};
+
+export const mobileDialog = () => `
+<div class="fd-dialog-docs-static fd-pdf-viewer fd-dialog fd-dialog--active">
+    <div class="fd-pdf-viewer__dialog fd-dialog__content fd-dialog__content--mobile" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1">
+        <header class="fd-dialog__header fd-bar fd-bar--cozy fd-bar--header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-title fd-title--h5" id="dialog-title-1">
+                        PDF Viewer title
+                    </h2>
+                </div>
+            </div>
+        </header>
+        <div class="fd-dialog__body">
+            <iframe
+              class="fd-pdf-viewer__content"
+              title='PDF viewer'
+              src="https://sapui5.hana.ondemand.com/test-resources/sap/m/demokit/sample/PDFViewerEmbedded/sample.pdf#view=FitH"}
+              frameBorder='0'></iframe>
+        </div>
+        <footer class="fd-dialog__footer fd-bar fd-bar--cozy fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--compact">
+                        Download
+                    </button>
+                </div>
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--compact">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+`;
+
+mobileDialog.storyName = 'Mobile Dialog';
+mobileDialog.parameters = {
+    docs: {
+        iframeHeight: 400,
+        storyDescription: 'On mobile, the PDF viewer dialog should take up the entire screen.'
     }
 };
 

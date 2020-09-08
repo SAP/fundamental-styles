@@ -5,26 +5,29 @@ $block: #{$fd-namespace}-pdf-viewer;
 
 .#{$block} {
   padding: 1rem;
-  min-height: 500px;
+
+  &__dialog {
+    max-height: calc(100vh - 4rem);
+  }
 
   &__title {
     background-color: transparent;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
     box-shadow: none;
   }
 
   &__content {
     width: 100%;
-    min-height: 500px;
+    min-height: 28rem;
 
     &--in-page {
       width: 100%;
-      min-height: 600px;
+      min-height: 35rem;
     }
 
     &--error {
-      padding-top: 200px;
+      padding-top: 10rem;
     }
   }
 }
