@@ -55,8 +55,9 @@ $block: #{$fd-namespace}-action-sheet;
     @include fd-typography(var(--sapFontHeader6Size));
     @include fd-ellipsis();
 
+    max-width: 100%;
     z-index: 1;
-    margin: 0 1rem 0.5rem 1rem;
+    padding: 0 1rem 0.5rem 1rem;
     color: var(--sapContent_ContrastTextColor);
   }
 
