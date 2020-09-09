@@ -156,7 +156,7 @@ $block: #{$fd-namespace}-radio;
         min-width: $fd-radio-inner-circle-diameter-compact;
         margin-right: $fd-radio-outer-circle-margin-compact;
         margin-left: 0;
-        padding-left: 0;
+        padding-left: $fd-radio-inner-circle-padding-x;
         padding-top: 0;
       }
 
@@ -165,7 +165,7 @@ $block: #{$fd-namespace}-radio;
           margin-left: $fd-radio-outer-circle-margin-compact;
           margin-right: 0;
           padding-left: 0;
-          padding-right: 0;
+          padding-right: $fd-radio-inner-circle-padding-x;
           padding-top: 0;
         }
       }
