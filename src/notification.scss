@@ -6,9 +6,9 @@ $block: #{$fd-namespace}-notification;
 
   // variables
   $fd-notification-max-width: 60rem !default;
-  $fd-notification-max-width-m: 640px !default;
-  $fd-notification-min-width-m: 320px !default;
-  $fd-notification-width-s: 320px !default;
+  $fd-notification-max-width-m: 40rem !default;
+  $fd-notification-min-width-m: 20rem !default;
+  $fd-notification-width-s: 20rem !default;
 
   $fd-notification-background-color: var(--sapList_Background) !default;
   $fd-notification-box-shadow: var(--sapContent_Shadow0) !default;
@@ -42,19 +42,10 @@ $block: #{$fd-namespace}-notification;
     @include fd-icon("message-#{$type}");
   }
 
-  @mixin line-clamp($lines: 2) {
-    display: -webkit-box;
-    -webkit-line-clamp: $lines;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    white-space: normal;
-    text-overflow: ellipsis;
-  }
-
   background-color: $fd-notification-background-color;
   box-shadow: $fd-notification-box-shadow;
   border-radius: $fd-notification-border-radius;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   width: 100%;
   max-width: $fd-notification-max-width-m;
   box-sizing: border-box;
@@ -72,6 +63,7 @@ $block: #{$fd-namespace}-notification;
   }
 
   &__group {
+    @include fd-reset();
     padding: 0;
     overflow: hidden;
 
@@ -94,6 +86,7 @@ $block: #{$fd-namespace}-notification;
     }
 
     .#{$block}__group-header {
+      @include fd-reset();
       display: flex;
       align-items: baseline;
       border-bottom: $fd-notification-border;
@@ -125,14 +118,14 @@ $block: #{$fd-namespace}-notification;
     }
 
     h2 {
+      @include fd-reset();
       @include line-clamp(2);
-      margin: 0;
       font-size: var(--sapFontHeader6Size);
     }
 
     .fd-notification__paragraph {
+      @include fd-reset();
       @include line-clamp(2);
-      margin: 0;
       padding-top: 0.5rem;
     }
 
@@ -177,11 +170,12 @@ $block: #{$fd-namespace}-notification;
     text-align: center;
 
     h1 {
+      @include fd-reset();
       font-size: var(--sapFontHeader5Size);
-      margin: 0;
     }
 
     &--description {
+      @include fd-reset();
       margin: 0.5rem 0 0;
     }
   }
