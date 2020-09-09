@@ -5,8 +5,6 @@ export default {
     parameters: {
         description: `A link (also known as hyperlink) is an interactive text element that allows users to navigate to another page or trigger a certain event.
 
-Note: Link supports the <code>is-visited</code> flag, which allows for optimal customization.
-
 ##Usage
 
 **Use a link if:**
