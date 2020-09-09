@@ -298,8 +298,7 @@ export const linksWithCollapsibleMenuXlSize = () => `
 `;
 linksWithCollapsibleMenuXlSize.parameters = {
     docs: {
-        storyDescription: `
-            This example includes XL shellbar. All actions except \`--mobile\` should be displayed. 
+        storyDescription: `This example includes XL shellbar. All actions except \`--mobile\` should be displayed. 
             This type of shellbar can be achieved by adding \`fd-shellbar--xl\` modifier, it also increases padding of
             shellbar container to \`3rem\`
         `
@@ -527,8 +526,7 @@ export const linksWithCollapsibleMenuSSize = () => `
 `;
 linksWithCollapsibleMenuSSize.parameters = {
     docs: {
-        storyDescription: `
-            When a product has multiple links, the product links should collapse into an overflow menu on mobile screens. 
+        storyDescription: `When a product has multiple links, the product links should collapse into an overflow menu on mobile screens. 
             All actions, except for the user menu, should be collapsed. 
             See the placement of the \`.fd-shellbar__action--mobile\` container below.
             This type of shellbar can be achieved by adding \`fd-shellbar--s\` modifier
