@@ -298,7 +298,11 @@ export const linksWithCollapsibleMenuXlSize = () => `
 `;
 linksWithCollapsibleMenuXlSize.parameters = {
     docs: {
-        storyDescription: 'When a product has multiple links, the product links should collapse into an overflow menu on mobile screens. All actions, except for the user menu, should be collapsed. See the placement of the `.fd-shellbar__action--mobile` container below.'
+        storyDescription: `
+            This example includes XL shellbar. All actions except \`--mobile\` should be displayed. 
+            This type of shellbar can be achieved by adding \`fd-shellbar--xl\` modifier, it also increases padding of
+            shellbar container to \`3rem\`
+        `
     }
 };
 
@@ -408,10 +412,13 @@ export const linksWithCollapsibleMenuMSize = () => `
 `;
 linksWithCollapsibleMenuMSize.parameters = {
     docs: {
-        storyDescription: 'When a product has multiple links, the product links should collapse into an overflow menu on mobile screens. All actions, except for the user menu, should be collapsed. See the placement of the `.fd-shellbar__action--mobile` container below.'
+        storyDescription: `This example includes M/L shellbar. All actions except \`--mobile\` should be displayed. 
+            This type of shellbar can be achieved by adding \`fd-shellbar--m\` or \`fd-shellbar--l\` modifier, 
+            it also sets padding of shellbar container to \`2rem\`
+        `
     }
 };
-linksWithCollapsibleMenuMSize.storyName = 'Links With Collapsible Menu S/L Size';
+linksWithCollapsibleMenuMSize.storyName = 'Links With Collapsible Menu M/L Size';
 
 
 export const linksWithCollapsibleMenuSSize = () => `
@@ -520,7 +527,12 @@ export const linksWithCollapsibleMenuSSize = () => `
 `;
 linksWithCollapsibleMenuSSize.parameters = {
     docs: {
-        storyDescription: 'When a product has multiple links, the product links should collapse into an overflow menu on mobile screens. All actions, except for the user menu, should be collapsed. See the placement of the `.fd-shellbar__action--mobile` container below.'
+        storyDescription: `
+            When a product has multiple links, the product links should collapse into an overflow menu on mobile screens. 
+            All actions, except for the user menu, should be collapsed. 
+            See the placement of the \`.fd-shellbar__action--mobile\` container below.
+            This type of shellbar can be achieved by adding \`fd-shellbar--s\` modifier
+        `
     }
 };
 
