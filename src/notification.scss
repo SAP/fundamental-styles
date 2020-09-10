@@ -89,7 +89,7 @@ $block: #{$fd-namespace}-notification;
       box-shadow: $fd-notification-box-shadow;
     }
 
-    .#{$block}__group-header {
+    .fd-notification__group-header {
       @include fd-reset();
 
       display: flex;
@@ -146,10 +146,6 @@ $block: #{$fd-namespace}-notification;
     .#{$block}__footer {
       padding-top: 0.5rem;
       margin: 0;
-
-      .#{$block}__footer--button {
-        margin-left: 1rem;
-      }
 
       .#{$block}__footer--separator {
         margin: 0 0.5rem;
