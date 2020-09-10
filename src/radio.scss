@@ -53,11 +53,10 @@ $block: #{$fd-namespace}-radio;
 
     &::before {
       content: "";
-      padding-top: $fd-radio-inner-circle-padding-y;
       height: $fd-radio-inner-circle-diameter;
       width: $fd-radio-inner-circle-diameter;
       min-width: $fd-radio-inner-circle-diameter;
-      font-size: 0.6875rem;
+      font-size: 0.625rem;
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -146,14 +145,14 @@ $block: #{$fd-namespace}-radio;
       padding: $fd-radio-outer-circle-margin-compact;
 
       &::before {
-        font-size: 0.4375rem;
+        font-size: 0.375rem;
         height: $fd-radio-inner-circle-diameter-compact;
         width: $fd-radio-inner-circle-diameter-compact;
         min-width: $fd-radio-inner-circle-diameter-compact;
         margin-right: $fd-radio-outer-circle-margin-compact;
         margin-left: 0;
         padding-left: $fd-radio-inner-circle-padding-x;
-        padding-top: 0;
+        padding-top: 0.05rem;
       }
 
       @include fd-rtl() {
@@ -162,7 +161,7 @@ $block: #{$fd-namespace}-radio;
           margin-right: 0;
           padding-left: 0;
           padding-right: $fd-radio-inner-circle-padding-x;
-          padding-top: 0;
+          padding-top: 0.05rem;
         }
       }
 
