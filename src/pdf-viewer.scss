@@ -27,6 +27,7 @@ $block: #{$fd-namespace}-pdf-viewer;
     }
 
     &--error {
+      background-color: transparent;
       padding-top: 10rem;
     }
   }
