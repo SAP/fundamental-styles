@@ -31,7 +31,6 @@ $block: #{$fd-namespace}-notification;
   $fd-notification-indicator-border-color-success: var(--sapSuccessBorderColor) !default;
   $fd-notification-indicator-border-color-information: var(--sapInformationBorderColor) !default;
 
-
   // mixins
 
   @mixin fd-priority-indicator($type) {
@@ -39,6 +38,7 @@ $block: #{$fd-namespace}-notification;
   }
 
   @include fd-reset();
+
   background-color: $fd-notification-background-color;
   box-shadow: $fd-notification-box-shadow;
   border-radius: $fd-notification-border-radius;
@@ -55,6 +55,7 @@ $block: #{$fd-namespace}-notification;
 
   &__body {
     @include fd-reset();
+
     display: flex;
     justify-content: space-between;
     padding: 0;
@@ -66,6 +67,7 @@ $block: #{$fd-namespace}-notification;
 
   &__group {
     @include fd-reset();
+
     padding: 0;
     overflow: hidden;
 
@@ -76,6 +78,7 @@ $block: #{$fd-namespace}-notification;
       &:last-child {
         border-bottom: none;
       }
+
       @include fd-rtl() {
         padding-left: 0.5rem;
         padding-right: 1rem;
@@ -88,6 +91,7 @@ $block: #{$fd-namespace}-notification;
 
     .#{$block}__group-header {
       @include fd-reset();
+
       display: flex;
       align-items: baseline;
       border-bottom: $fd-notification-border;
@@ -107,6 +111,7 @@ $block: #{$fd-namespace}-notification;
 
   &__content {
     @include fd-reset();
+
     width: 100%;
     margin-left: 0.75rem;
 
@@ -126,6 +131,7 @@ $block: #{$fd-namespace}-notification;
     .fd-notification__title {
       @include fd-reset();
       @include line-clamp(2);
+
       font-weight: bold;
       font-size: var(--sapFontHeader6Size);
     }
@@ -133,6 +139,7 @@ $block: #{$fd-namespace}-notification;
     .fd-notification__paragraph {
       @include fd-reset();
       @include line-clamp(2);
+
       padding-top: 0.5rem;
     }
 
@@ -152,11 +159,13 @@ $block: #{$fd-namespace}-notification;
 
   &__header {
     @include fd-reset();
+
     display: flex;
   }
 
   &__actions {
     @include fd-reset();
+
     display: flex;
     align-items: self-start;
     margin-left: 1rem;
@@ -177,22 +186,26 @@ $block: #{$fd-namespace}-notification;
 
   &__limit {
     @include fd-reset();
+
     padding: 1rem;
     text-align: center;
 
     &--title {
       @include fd-reset();
+
       font-size: var(--sapFontHeader5Size);
     }
 
     &--description {
       @include fd-reset();
+
       margin: 0.5rem 0 0;
     }
   }
 
   &__indicator {
     @include fd-reset();
+
     padding-right: 0.5rem;
 
     @include fd-rtl() {
@@ -202,21 +215,25 @@ $block: #{$fd-namespace}-notification;
 
     &--error {
       @include fd-priority-indicator('error');
+
       color: $fd-notification-indicator-color-error;
     }
 
     &--success {
       @include fd-priority-indicator('success');
+
       color: $fd-notification-indicator-color-success;
     }
 
     &--warning {
       @include fd-priority-indicator('warning');
+
       color: $fd-notification-indicator-color-warning;
     }
 
     &--information {
       @include fd-priority-indicator('information');
+
       color: $fd-notification-indicator-color-information;
     }
   }
