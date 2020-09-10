@@ -211,13 +211,13 @@ Sizes.parameters = {
         storyDescription: `
 | **Size**    | **rem**    | **Modifier class**       |
 | :---------- | :--------- | -----------------------: |
-| XS          | 0.75 rem   | <code>--xs</code>        |
-| S           | 1 rem      | <code>--s</code>         |
-| M/Default   | 1.375 rem  | <code>--m</code>         |
-| L           | 2 rem      | <code>--l</code>         |
-| Cozy        | 1.5 rem    | <code>--cozy</code>      |
-| Compact     | 1 rem      | <code>--compact</code>   |
-| Condensed   | 1 rem      | <code>--condensed</code> |
+| XS          | 0.75rem   | <code>--xs</code>        |
+| S           | 1rem      | <code>--s</code>         |
+| M/Default   | 1.375rem  | <code>--m</code>         |
+| L           | 2rem      | <code>--l</code>         |
+| Cozy        | 1.5rem    | <code>--cozy</code>      |
+| Compact     | 1rem      | <code>--compact</code>   |
+| Condensed   | 1rem      | <code>--condensed</code> |
 `
     }
 };
@@ -532,6 +532,6 @@ export const RTL = () => `
 RTL.storyName = 'RTL';
 RTL.parameters = {
     docs: {
-        storyDescription: 'The rating indicator can be displayed from right to left on the screen.'
+        storyDescription: 'The rating indicator can be displayed from right to left on the screen so that it may be used internationally.'
     }
 };
