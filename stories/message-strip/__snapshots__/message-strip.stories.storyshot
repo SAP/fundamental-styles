@@ -54,7 +54,15 @@ exports[`Storyshots Components/Message Strip Without Icon 1`] = `
       aria-controls="SsoiW592"
       aria-label="Close"
       class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close"
-    />
+    >
+      
+    
+      <i
+        class="sap-icon--decline"
+      />
+      
+  
+    </button>
     
 
   </div>
@@ -85,7 +93,15 @@ exports[`Storyshots Components/Message Strip Without Icon 1`] = `
       aria-controls="SsoiW593"
       aria-label="Close"
       class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close"
-    />
+    >
+      
+    
+      <i
+        class="sap-icon--decline"
+      />
+      
+  
+    </button>
     
 
   </div>
@@ -116,7 +132,15 @@ exports[`Storyshots Components/Message Strip Without Icon 1`] = `
       aria-controls="SsoiW594"
       aria-label="Close"
       class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close"
-    />
+    >
+      
+    
+      <i
+        class="sap-icon--decline"
+      />
+      
+  
+    </button>
     
 
   </div>
@@ -147,7 +171,15 @@ exports[`Storyshots Components/Message Strip Without Icon 1`] = `
       aria-controls="SsoiW595"
       aria-label="Close"
       class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close"
-    />
+    >
+      
+    
+      <i
+        class="sap-icon--decline"
+      />
+      
+  
+    </button>
     
 
   </div>

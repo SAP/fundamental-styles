@@ -1,0 +1,67 @@
+@import "./new-settings";
+@import "./mixins";
+
+/*!
+.fd-object-number+(--success | --warning | --error)
+*/
+$block: #{$fd-namespace}-object-number;
+
+$color-states: (
+  "positive": ("color": var(--sapPositiveTextColor)),
+  "critical": ("color": var(--sapCriticalTextColor)),
+  "negative": ("color": var(--sapNegativeTextColor)),
+  "informative": ("color": var(--sapInformativeTextColor))
+);
+
+.#{$block} {
+  // LARGE DESIGN VARIABLES
+  $fd-object-number-font-size-large: 1.5rem;
+
+  @include fd-reset();
+
+  color: var(--sapNeutralTextColor);
+  max-width: 100%;
+  display: inline-block;
+  text-shadow: var(--sapContent_TextShadow);
+
+  &__text,
+  &__unit {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 0.125rem;
+  }
+
+  &__text {
+    &::after {
+      content: '\00a0 ';
+    }
+
+    &--bold {
+      font-weight: bold;
+    }
+  }
+
+  &__unit {
+    font-family: var(--sapFontLightFamily);
+  }
+
+  @each $set-name, $color-set in $color-states {
+    &--#{$set-name} &__text,
+    &--#{$set-name} &__unit {
+      color: map_get($color-set, "color");
+    }
+  }
+
+  // LARGE DESIGN
+  &--large {
+    .#{$block}__text,
+    .#{$block}__unit {
+      font-family: var(--sapFontLightFamily);
+      font-size: $fd-object-number-font-size-large;
+    }
+  }
+}

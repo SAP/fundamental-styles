@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.45...v0.12.0-rc.46) (2020-09-10)
+
+## [0.12.0-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.44...v0.12.0-rc.45) (2020-09-09)
+
+## [0.12.0-rc.44](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.43...v0.12.0-rc.44) (2020-09-04)
+
+## [0.12.0-rc.43](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.42...v0.12.0-rc.43) (2020-09-04)
+
+
+### Features
+
+* Object Number new component ([#1419](https://github.com/SAP/fundamental-styles/issues/1419)) ([3629417](https://github.com/SAP/fundamental-styles/commit/36294173968c1addc9a3c4a513c02cff41406e47))
+
 ## [0.12.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.41...v0.12.0-rc.42) (2020-09-03)
 
 
