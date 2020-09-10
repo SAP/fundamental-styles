@@ -311,19 +311,19 @@ export const ReadOnly = () => `
 <div class="example-container">
     <div class="fd-rating-indicator" aria-readonly="true">
         <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-            <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-1" name="rating-readonly" value="1" readonly>  
+            <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-1" name="rating-readonly" value="1" disabled>  
             <label class="fd-rating-indicator__label" for="rating-readonly-1"></label>
             
-            <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-2" name="rating-readonly" value="2" readonly checked>
+            <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-2" name="rating-readonly" value="2" disabled checked>
             <label class="fd-rating-indicator__label" for="rating-readonly-2"></label>
             
-            <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-3" name="rating-readonly" value="3" readonly>
+            <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-3" name="rating-readonly" value="3" disabled>
             <label class="fd-rating-indicator__label" for="rating-readonly-3"></label>
             
-            <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-4" name="rating-readonly" value=4" readonly>
+            <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-4" name="rating-readonly" value=4" disabled>
             <label class="fd-rating-indicator__label" for="rating-readonly-4"></label>
             
-            <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-5" name="rating-readonly" value="5" readonly>
+            <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-5" name="rating-readonly" value="5" disabled>
             <label class="fd-rating-indicator__label" for="rating-readonly-5"></label>
         </div>
         <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
@@ -335,7 +335,7 @@ ReadOnly.storyName = 'Read-Only';
 ReadOnly.parameters = {
     docs: {
         storyDescription: `
-To make the rating indicator read-only, the \`[readonly]\` attribute needs to be added to all inputs. 
+To make the rating indicator read-only, the \`[disabled]\` attribute needs to be added to all inputs. 
 Additionally, one of the selectors listed below needs to be added to the \`fd-rating-indicator\` element:
 
 - \`.is-readonly\`
