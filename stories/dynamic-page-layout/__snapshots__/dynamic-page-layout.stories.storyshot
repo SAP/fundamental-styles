@@ -1,0 +1,824 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Dynamic Page Layout Desktop mode 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
+<section>
+  
+    
+  <hr />
+  
+    
+  <h3>
+    1:  Header with both collapse and pin buttons, expanded by default. 
+  </h3>
+  
+    
+  <hr />
+  
+    
+  <br />
+  <br />
+      
+    
+  <div
+    aria-label="Dynamic Page Layout Standard Example"
+    class="fd-dynamic-page-layout"
+    role="region"
+  >
+    
+        
+    <div
+      class="fd-dynamic-page-layout__title-area fd-dynamic-page-layout__title-area--xl"
+    >
+      
+            
+      <ul
+        class="fd-dynamic-page-layout__breadcrumb fd-breadcrumb"
+      >
+        
+                
+        <li
+          class="fd-breadcrumb__item"
+        >
+          <a
+            class="fd-breadcrumb__link"
+            href="#"
+            tabindex="0"
+          >
+            Men
+          </a>
+        </li>
+        
+                
+        <li
+          class="fd-breadcrumb__item"
+        >
+          <a
+            class="fd-breadcrumb__link"
+            href="#"
+            tabindex="0"
+          >
+            Shoes
+          </a>
+        </li>
+        
+                
+        <li
+          class="fd-breadcrumb__item"
+        >
+          <a
+            class="fd-breadcrumb__link"
+            href="#"
+            tabindex="0"
+          >
+            Running Shoes
+          </a>
+        </li>
+        
+            
+      </ul>
+      
+            
+      <div
+        class="fd-dynamic-page-layout__title-container"
+      >
+        
+                
+        <div
+          class="fd-dynamic-page-layout__title"
+        >
+           Balenciaga Tripple S Trainers 
+        </div>
+        
+                
+        <div
+          class="fd-dynamic-page-layout__title-content"
+        >
+           Header with both collapse and pin buttons, expanded by default
+        </div>
+        
+                
+        <div
+          class="fd-dynamic-page-layout__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+        >
+          
+                    
+          <button
+            class="fd-button fd-button--compact fd-button--positive"
+          >
+            Accept
+          </button>
+          
+                    
+          <button
+            class="fd-button fd-button--compact fd-button--reject"
+          >
+            Reject
+          </button>
+          
+                    
+          <div
+            class="fd-dynamic-page-layout__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+          >
+            
+                        
+            <button
+              aria-label="Survey"
+              class="fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--survey"
+              />
+              
+                        
+            </button>
+            
+                        
+            <button
+              aria-label="Pool"
+              class="fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--pool"
+              />
+              
+                        
+            </button>
+            
+                        
+            <button
+              aria-label="Chart"
+              class="fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--pie-chart"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fd-dynamic-page-layout__subtitle"
+      >
+         Oversized multimaterial sneakers with quilted effect 
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      aria-hidden="false"
+      class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--xl"
+      id="fddplhvc1"
+      role="region"
+    >
+      
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
+            delectus necessitatibus incidunt numquam asperiores tenetur iure. 
+            Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
+        
+    </div>
+    
+        
+    <div
+      class="fd-dynamic-page-layout__header-visibility-container"
+    >
+      
+            
+      <div
+        class="fd-dynamic-page-layout__header-visibility-container--left-gradient"
+      />
+      
+            
+      <div
+        class="fd-dynamic-page-layout__header-visibility-container--button-group"
+      >
+        
+                
+        <button
+          aria-controls="fddplhvc1"
+          aria-expanded="true"
+          aria-haspopup="true"
+          aria-label="See More"
+          class="fd-dynamic-page-layout__collapse-button fd-button fd-button--compact"
+        >
+          
+                        
+          <i
+            class="sap-icon--slim-arrow-up"
+          />
+          
+                
+        </button>
+        
+                
+        <button
+          aria-label="Pin this"
+          class="fd-dynamic-page-layout__pin-button fd-button fd-button--compact"
+        >
+          
+                        
+          <i
+            class="sap-icon--pushpin-off"
+          />
+          
+                
+        </button>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fd-dynamic-page-layout__header-visibility-container--right-gradient"
+      />
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-dynamic-page-layout__content fd-dynamic-page-layout__content--xl"
+    >
+      
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+            eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+            dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <br />
+  <br />
+  
+    
+  <br />
+  <br />
+  
+
+    
+  <hr />
+  
+    
+  <h3>
+    2: Collapsed Header with both expand and pin buttons. 
+  </h3>
+  
+    
+  <hr />
+  
+    
+  <br />
+  <br />
+  
+    
+  <div
+    aria-label="Dynamic Page Layout Standard Example"
+    class="fd-dynamic-page-layout"
+    role="region"
+  >
+    
+        
+    <div
+      class="fd-dynamic-page-layout__title-area fd-dynamic-page-layout__title-area--xl fd-dynamic-page-layout__title-area--collapsed"
+    >
+      
+            
+      <ul
+        class="fd-dynamic-page-layout__breadcrumb fd-breadcrumb"
+      >
+        
+                
+        <li
+          class="fd-breadcrumb__item"
+        >
+          <a
+            class="fd-breadcrumb__link"
+            href="#"
+            tabindex="0"
+          >
+            Men
+          </a>
+        </li>
+        
+                
+        <li
+          class="fd-breadcrumb__item"
+        >
+          <a
+            class="fd-breadcrumb__link"
+            href="#"
+            tabindex="0"
+          >
+            Shoes
+          </a>
+        </li>
+        
+                
+        <li
+          class="fd-breadcrumb__item"
+        >
+          <a
+            class="fd-breadcrumb__link"
+            href="#"
+            tabindex="0"
+          >
+            Running Shoes
+          </a>
+        </li>
+        
+            
+      </ul>
+      
+            
+      <div
+        class="fd-dynamic-page-layout__title-container"
+      >
+        
+                
+        <div
+          class="fd-dynamic-page-layout__title fd-dynamic-page-layout__title--collapsed"
+        >
+           Balenciaga Tripple S Trainers Model 123456AB On Sale 
+        </div>
+        
+                
+        <div
+          class="fd-dynamic-page-layout__title-content"
+        >
+          Collapsed Header with both expand and pin buttons 
+        </div>
+        
+                
+        <div
+          class="fd-dynamic-page-layout__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+        >
+          
+                    
+          <button
+            class="fd-button fd-button--compact fd-button--positive"
+          >
+            Accept
+          </button>
+          
+                    
+          <button
+            class="fd-button fd-button--compact fd-button--reject"
+          >
+            Reject
+          </button>
+          
+                    
+          <div
+            class="fd-dynamic-page-layout__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+          >
+            
+                        
+            <button
+              aria-label="Survey"
+              class="fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--survey"
+              />
+              
+                        
+            </button>
+            
+                        
+            <button
+              aria-label="Pool"
+              class="fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--pool"
+              />
+              
+                        
+            </button>
+            
+                        
+            <button
+              aria-label="Chart"
+              class="fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--pie-chart"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fd-dynamic-page-layout__subtitle"
+      >
+         Oversized multimaterial sneakers with quilted effect 
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      aria-hidden="true"
+      class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--xl"
+      id="fddplhvc2"
+      role="region"
+    >
+      
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
+            delectus necessitatibus incidunt numquam asperiores tenetur iure. 
+            Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
+        
+    </div>
+    
+        
+    <div
+      class="fd-dynamic-page-layout__header-visibility-container"
+    >
+      
+            
+      <div
+        class="fd-dynamic-page-layout__header-visibility-container--left-gradient"
+      />
+      
+            
+      <div
+        class="fd-dynamic-page-layout__header-visibility-container--button-group"
+      >
+        
+                
+        <button
+          aria-controls="fddplhvc2"
+          aria-expanded="false"
+          aria-haspopup="true"
+          aria-label="See More"
+          class="fd-dynamic-page-layout__collapse-button fd-button fd-button--compact"
+        >
+          
+                        
+          <i
+            class="sap-icon--slim-arrow-down"
+          />
+          
+                
+        </button>
+        
+                
+        <button
+          aria-label="Pin this"
+          class="fd-dynamic-page-layout__pin-button fd-button fd-button--compact"
+        >
+          
+                        
+          <i
+            class="sap-icon--pushpin-off"
+          />
+          
+                
+        </button>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fd-dynamic-page-layout__header-visibility-container--right-gradient"
+      />
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-dynamic-page-layout__content fd-dynamic-page-layout__content--xl"
+    >
+      
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+            eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+            dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <br />
+  <br />
+  
+    
+  <br />
+  <br />
+  
+    
+  <hr />
+  
+    
+  <h3>
+    3: The header can only be expanded/collapsed, not pinned.
+  </h3>
+  
+    
+  <hr />
+  
+    
+  <br />
+  <br />
+  
+
+    
+  <div
+    aria-label="Dynamic Page Layout Standard Example"
+    class="fd-dynamic-page-layout"
+    role="region"
+  >
+    
+        
+    <div
+      class="fd-dynamic-page-layout__title-area fd-dynamic-page-layout__title-area--xl"
+    >
+      
+            
+      <ul
+        class="fd-dynamic-page-layout__breadcrumb fd-breadcrumb"
+      >
+        
+                
+        <li
+          class="fd-breadcrumb__item"
+        >
+          <a
+            class="fd-breadcrumb__link"
+            href="#"
+            tabindex="0"
+          >
+            Men
+          </a>
+        </li>
+        
+                
+        <li
+          class="fd-breadcrumb__item"
+        >
+          <a
+            class="fd-breadcrumb__link"
+            href="#"
+            tabindex="0"
+          >
+            Shoes
+          </a>
+        </li>
+        
+                
+        <li
+          class="fd-breadcrumb__item"
+        >
+          <a
+            class="fd-breadcrumb__link"
+            href="#"
+            tabindex="0"
+          >
+            Running Shoes
+          </a>
+        </li>
+        
+            
+      </ul>
+      
+            
+      <div
+        class="fd-dynamic-page-layout__title-container"
+      >
+        
+                
+        <div
+          class="fd-dynamic-page-layout__title"
+        >
+           Balenciaga Tripple S Trainers 
+        </div>
+        
+                
+        <div
+          class="fd-dynamic-page-layout__title-content"
+        >
+           The header can only be expanded/collapsed, not pinned. 
+        </div>
+        
+                
+        <div
+          class="fd-dynamic-page-layout__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+        >
+          
+                    
+          <button
+            class="fd-button fd-button--compact fd-button--positive"
+          >
+            Accept
+          </button>
+          
+                    
+          <button
+            class="fd-button fd-button--compact fd-button--reject"
+          >
+            Reject
+          </button>
+          
+                    
+          <div
+            class="fd-dynamic-page-layout__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+          >
+            
+                        
+            <button
+              aria-label="Survey"
+              class="fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--survey"
+              />
+              
+                        
+            </button>
+            
+                        
+            <button
+              aria-label="Pool"
+              class="fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--pool"
+              />
+              
+                        
+            </button>
+            
+                        
+            <button
+              aria-label="Chart"
+              class="fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--pie-chart"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fd-dynamic-page-layout__subtitle"
+      >
+         Oversized multimaterial sneakers with quilted effect 
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      aria-hidden="false"
+      class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--xl"
+      id="fddplhvc3"
+      role="region"
+    >
+      
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
+            delectus necessitatibus incidunt numquam asperiores tenetur iure. 
+            Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
+        
+    </div>
+    
+        
+    <div
+      class="fd-dynamic-page-layout__header-visibility-container"
+    >
+      
+            
+      <div
+        class="fd-dynamic-page-layout__header-visibility-container--left-gradient"
+      />
+      
+            
+      <div
+        class="fd-dynamic-page-layout__header-visibility-container--button-group"
+      >
+        
+                
+        <button
+          aria-controls="fddplhvc3"
+          aria-expanded="true"
+          aria-haspopup="true"
+          aria-label="See More"
+          class="fd-dynamic-page-layout__collapse-button fd-button fd-button--compact"
+        >
+          
+                        
+          <i
+            class="sap-icon--slim-arrow-up"
+          />
+          
+                
+        </button>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fd-dynamic-page-layout__header-visibility-container--right-gradient"
+      />
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-dynamic-page-layout__content fd-dynamic-page-layout__content--xl"
+    >
+      
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+            eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+            dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+        
+    </div>
+    
+    
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Dynamic Page Layout Mobile mode 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Dynamic Page Layout Tablet mode 1`] = `
+
+    
+`;
