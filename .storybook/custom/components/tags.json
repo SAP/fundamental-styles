@@ -33,5 +33,10 @@
       "name": "under review", 
       "title": "Under Review" ,
       "color": 7
+  },
+    "responsive": {
+      "name": "responsive",
+      "title": "Responsive" ,
+      "color": 8
   }
 }

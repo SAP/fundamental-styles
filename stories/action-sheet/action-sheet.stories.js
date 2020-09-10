@@ -7,7 +7,7 @@ export default {
     parameters: {
         description: `
 An action sheet consists of a list of options a user can select from to complete an action. Actions can be
-clustered if there is not enough space on the screen
+clustered if there is not enough space on the screen.
             
 ## Usage
 
@@ -22,13 +22,8 @@ clustered if there is not enough space on the screen
 - The menu provides only one option. In this case, consider using a button instead.
 - You need to show a hierarchical menu. In this case, use the menu button instead.
 - Your users would benefit more from a split button, which offers an easily-accessible default action, with the option to include additional actions.
-
-## Responsiveness
-
-The action sheet is fully responsive. On smartphones, the actions are displayed as a list inside a dialog.
-On tablets and desktop devices, the actions are displayed in a popover.
         `,
-        tags: ['a11y', 'f3', 'theme']
+        tags: ['a11y', 'f3', 'theme', 'responsive']
     }
 };
 
@@ -85,6 +80,8 @@ actionSheetDesktop.parameters = {
     }
 };
 
+actionSheetDesktop.storyName = 'Desktop';
+
 
 export const actionSheetTablet = () => `    
 <div class="fd-popover">
@@ -139,9 +136,9 @@ actionSheetTablet.parameters = {
     }
 };
 
+actionSheetTablet.storyName = 'Tablet';
 
-
-export const actionSheetPhone = () => `
+export const actionSheetMobile = () => `
 <div style="width: 350px; height: 600px; position: relative">
     <button class="fd-button fd-button--transparent"
             aria-label="More Options" aria-controls="actionSheetPhone" aria-expanded="false" 
@@ -192,9 +189,11 @@ export const actionSheetPhone = () => `
 </div>
 `;
 
-actionSheetPhone.parameters = {
+actionSheetMobile.parameters = {
     docs: {
         iframeHeight: 800,
         storyDescription: 'On smartphones the action sheet is wrapped additionally by `fd-action-sheet__wrapper`.'
     }
 };
+
+actionSheetMobile.storyName = 'Mobile';
