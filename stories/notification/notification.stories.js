@@ -9,8 +9,8 @@ export default {
         description: `
 Notifications are used to relay information to the user about a situation or task that requires their input. They can notice and access the notifications by the bell icon in the shell bar on the top-right of the screen. In the notification popover, they take immediate action, navigate to the source of a specific notification or in the case of a notification group, they can sort the list items in various ways.
 
-__Usage__
-Use notifications if:
+##Usage
+**Use notifications if:**
     
 * You want to make users aware of situations that require attention.
 * You intend to reduce the amount of information and actions to a minimum, but provide enough information to highlight the level of importance.
@@ -25,10 +25,10 @@ export const primary = () => `
         <div class="fd-notification__content">
             <div class="fd-notification__header">
                 <div class="fd-notification__indicator fd-notification__indicator--success"></div>
-                <h2>Your leave request has been accepted</h2>
+                <h2 class="fd-notification__title">Your leave request has been accepted</h2>
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p class="fd-notification__footer">SAP Analytics Cloud &middot; 7 minutes ago</p>
+            <p class="fd-notification__footer">SAP Analytics Cloud<span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
@@ -42,7 +42,9 @@ export const primary = () => `
 primary.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'Primary notifications display a container with an avatar, content area with text, as well as an open and close button. To display primary notifications, use the fd-notification class.'
+        storyDescription: `
+Primary notifications display a container with an avatar, content area with text, as well as an open and close button. To display primary notifications, use the <code>fd-notification</code> class.
+`
     }
 };
 
@@ -52,10 +54,10 @@ export const noAvatar = () => `
         <div class="fd-notification__content fd-notification__content--no-avatar">
             <div class="fd-notification__header">
                 <div class="fd-notification__indicator fd-notification__indicator--success"></div>
-                <h2>Your leave request has been accepted</h2>
+                <h2 class="fd-notification__title">Your leave request has been accepted</h2>
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p class="fd-notification__footer">SAP Analytics Cloud &middot; 7 minutes ago</p>
+            <p class="fd-notification__footer">SAP Analytics Cloud<span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
@@ -69,7 +71,9 @@ export const noAvatar = () => `
 noAvatar.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'Notifications can be displayed without an avatar by adding the fd-notification__content--no-avatar modifier class together with the fd-notification__content class.'
+        storyDescription: `
+Notifications can be displayed without an avatar by adding the <code>fd-notification\\__content--no-avatar</code> modifier class together with the <code>fd-notification\\__content</code> class.
+`
     }
 };
 
@@ -87,10 +91,10 @@ export const information = () => `
         <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
-                <h2>You have new items</h2>
+                <h2 class="fd-notification__title">You have new items</h2>
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p class="fd-notification__footer">SAP Analytics Cloud &middot; Just now
+            <p class="fd-notification__footer">SAP Analytics Cloud<span class="fd-notification__footer--separator">&bullet;</span>Just now
                 <button class="fd-button fd-button--transparent fd-button--compact fd-notification__footer--button">Show less</button>
             </p>
         </div>
@@ -106,7 +110,9 @@ export const information = () => `
 information.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'Notifications can also include alerts, and in this case it is informative. You can display information alerts by adding the fd-message strip fd-message-strip--warning fd-message-strip--dismissible class together with role="alert". To add text to the message, add the fd-message-strip__text class before the text in paragraph tags.'
+        storyDescription: `
+Notifications can also include alerts, and in this case it is informative. You can display information alerts by adding the <code>fd-message-strip fd-message-strip--information fd-message-strip--dismissible</code> class together with <code>role="alert"</code>. To add text to the message, add the <code>fd-message-strip\\__text</code> class before the text in paragraph tags.
+`
     }
 };
 
@@ -124,10 +130,10 @@ export const warning = () => `
        <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
-              <h2>You have new items</h2>
+              <h2 class="fd-notification__title">You have new items</h2>
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p class="fd-notification__footer">Tom &middot; 7 minutes ago</p>
+            <p class="fd-notification__footer">Tom<span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
@@ -141,7 +147,7 @@ export const warning = () => `
 warning.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'Notifications can also include alerts, and in this case it is informative. You can display information alerts by adding the fd-message strip fd-message-strip--warning fd-message-strip--dismissible class together with role="alert". To add text to the message, add the fd-message-strip__text class before the text in paragraph tags.'
+        storyDescription: `Notifications can display warning alerts by adding the <code>fd-message-strip fd-message-strip--warning fd-message-strip--dismissible</code> class together with <code>role="alert"</code>. `
     }
 };
 
@@ -160,10 +166,10 @@ export const error = () => `
         <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
         <div class="fd-notification__content">
           <div class="fd-notification__header">
-            <h2>You have new items</h2>
+            <h2 class="fd-notification__title">You have new items</h2>
           </div>
           <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p class="fd-notification__footer">SAP Analytics Cloud &middot; 7 minutes ago</p>
+          <p class="fd-notification__footer">SAP Analytics Cloud<span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
@@ -177,7 +183,7 @@ export const error = () => `
 error.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'You can display a group of notifications in a list format, and the user can sort them from the header. To display a notification group, add the fd-notification fd-notification__group class.'
+        storyDescription: `Notifications can display error alerts by adding the <code>fd-message-strip fd-message-strip--error fd-message-strip--dismissible</code> class together with <code>role="alert"</code>.`
     }
 };
 
@@ -213,7 +219,7 @@ export const notificationGroup = () => `
         <div class="fd-notification__content">
             <div class="fd-notification__header">
                 <div class="fd-notification__indicator fd-notification__indicator--warning"></div>
-                <h2>Today (5)</h2>
+                <h2 class="fd-notification__title">Today (5)</h2>
             </div>
         </div>
         <div class="fd-notification__actions">
@@ -228,10 +234,10 @@ export const notificationGroup = () => `
         <div class="fd-notification__content">
             <div class="fd-notification__header">
                 <div class="fd-notification__indicator fd-notification__indicator--warning"></div>
-                <h2>You've got new item</h2>
+                <h2 class="fd-notification__title">You've got new item</h2>
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p class="fd-notification__footer">SAP Team &middot; 7 minutes ago</p>
+            <p class="fd-notification__footer">SAP Team<span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
         </div>
         <div class="fd-notification__actions">
               <div class="fd-popover fd-popover--right">
@@ -273,10 +279,10 @@ export const notificationGroup = () => `
         <div class="fd-notification__content">
             <div class="fd-notification__header">
             <div class="fd-notification__indicator fd-notification__indicator--success"></div>
-            <h2>Your leave request has been accepted</h2>
+            <h2 class="fd-notification__title">Your leave request has been accepted</h2>
             </div>
             <p class="fd-notification__paragraph">Lagna aliqua.</p>
-            <p class="fd-notification__footer">SAP Analytics Cloud &middot; 7 minutes ago</p>
+            <p class="fd-notification__footer">SAP Analytics Cloud<span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
@@ -291,10 +297,10 @@ export const notificationGroup = () => `
         <div class="fd-notification__content">
             <div class="fd-notification__header">
             <div class="fd-notification__indicator fd-notification__indicator--error"></div>
-            <h2>Your leave request has been rejected. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+            <h2 class="fd-notification__title">Your leave request has been rejected. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p class="fd-notification__footer">SAP Analytics Cloud &middot; 7 minutes ago</p>
+            <p class="fd-notification__footer">SAP Analytics Cloud<span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
@@ -304,13 +310,15 @@ export const notificationGroup = () => `
         </div>
     </div>
     <div class="fd-notification__limit">
-        <h1>There are 30 more notifications</h1>
+        <h1 class="fd-notification__limit--title">There are 30 more notifications</h1>
         <p class="fd-notification__limit--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
 </div>
 `;
 notificationGroup.parameters = {
     docs: {
-        iframeHeight: 200
+        iframeHeight: 200,
+        storyDescription: `You can display a group of notifications in a list format, and the user can sort them from the header. To display a notification group, add the <code>fd-notification fd-notification\\__group</code> class.
+    `
     }
 };

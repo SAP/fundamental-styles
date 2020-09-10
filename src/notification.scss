@@ -35,13 +35,10 @@ $block: #{$fd-namespace}-notification;
   // mixins
 
   @mixin fd-priority-indicator($type) {
-    @include fd-rtl() {
-      padding-right: 0;
-      padding-left: 0.5rem;
-    }
     @include fd-icon("message-#{$type}");
   }
 
+  @include fd-reset();
   background-color: $fd-notification-background-color;
   box-shadow: $fd-notification-box-shadow;
   border-radius: $fd-notification-border-radius;
@@ -50,6 +47,11 @@ $block: #{$fd-namespace}-notification;
   max-width: $fd-notification-max-width-m;
   box-sizing: border-box;
   padding: 1rem 0.5rem 1rem 1rem;
+
+  @include fd-rtl() {
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+  }
 
   &__body {
     @include fd-reset();
@@ -74,7 +76,6 @@ $block: #{$fd-namespace}-notification;
       &:last-child {
         border-bottom: none;
       }
-
       @include fd-rtl() {
         padding-left: 0.5rem;
         padding-right: 1rem;
@@ -97,6 +98,11 @@ $block: #{$fd-namespace}-notification;
         padding-right: 1rem;
       }
     }
+
+    @include fd-rtl() {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   &__content {
@@ -117,9 +123,10 @@ $block: #{$fd-namespace}-notification;
       }
     }
 
-    h2 {
+    .fd-notification__title {
       @include fd-reset();
       @include line-clamp(2);
+      font-weight: bold;
       font-size: var(--sapFontHeader6Size);
     }
 
@@ -129,12 +136,16 @@ $block: #{$fd-namespace}-notification;
       padding-top: 0.5rem;
     }
 
-    .fd-notification__footer {
+    .#{$block}__footer {
       padding-top: 0.5rem;
       margin: 0;
 
-      .fd-notification__footer--button {
+      .#{$block}__footer--button {
         margin-left: 1rem;
+      }
+
+      .#{$block}__footer--separator {
+        margin: 0 0.5rem;
       }
     }
   }
@@ -169,7 +180,7 @@ $block: #{$fd-namespace}-notification;
     padding: 1rem;
     text-align: center;
 
-    h1 {
+    &--title {
       @include fd-reset();
       font-size: var(--sapFontHeader5Size);
     }
@@ -181,7 +192,13 @@ $block: #{$fd-namespace}-notification;
   }
 
   &__indicator {
+    @include fd-reset();
     padding-right: 0.5rem;
+
+    @include fd-rtl() {
+      padding-right: 0;
+      padding-left: 0.5rem;
+    }
 
     &--error {
       @include fd-priority-indicator('error');
