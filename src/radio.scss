@@ -143,11 +143,7 @@ $block: #{$fd-namespace}-radio;
 
   &--compact {
     + .#{$block}__label {
-      padding: $fd-radio-outer-circle-margin-compact 0 $fd-radio-outer-circle-margin-compact $fd-radio-outer-circle-margin-compact;
-
-      @include fd-rtl() {
-        padding: $fd-radio-outer-circle-margin-compact $fd-radio-outer-circle-margin-compact $fd-radio-outer-circle-margin-compact 0;
-      }
+      padding: $fd-radio-outer-circle-margin-compact;
 
       &::before {
         font-size: 0.4375rem;
