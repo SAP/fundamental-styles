@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Object Identifier Bold title 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Object Identifier Object Identifier inside table 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Object Identifier Title and description 1`] = `
+<section>
+  
+
+  <div
+    class="fd-object-identifier"
+  >
+    
+    
+    <p
+      class="fd-object-identifier__title"
+    >
+      NoteBook Basic 15
+    </p>
+    
+    
+    <p
+      class="fd-object-identifier__text"
+    >
+      Notebook Basic 15 with 2,80 GHz quad core, 15" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro
+    </p>
+    
+
+  </div>
+  
+
+
+  <br />
+  
+
+
+  <div
+    class="fd-object-identifier"
+  >
+    
+    
+    <p
+      class="fd-object-identifier__title-bold"
+    >
+      NoteBook Basic 15
+    </p>
+    
+    
+    <p
+      class="fd-object-identifier__text"
+    >
+      Notebook Basic 15 with 2,80 GHz quad core, 15" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro
+    </p>
+    
+
+  </div>
+  
+
+
+  <br />
+  
+
+
+  <div
+    class="fd-object-identifier"
+  >
+    
+    
+    <p
+      class="fd-object-identifier__title fd-object-identifier__link"
+    >
+      NoteBook Basic 15
+    </p>
+    
+    
+    <p
+      class="fd-object-identifier__text"
+    >
+      Notebook Basic 15 with 2,80 GHz quad core, 15" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro
+    </p>
+    
+
+  </div>
+  
+
+
+  <br />
+  
+
+
+  <div
+    class="fd-object-identifier"
+  >
+    
+    
+    <p
+      class="fd-object-identifier__title-bold fd-object-identifier__link"
+    >
+      NoteBook Basic 15
+    </p>
+    
+    
+    <p
+      class="fd-object-identifier__text"
+    >
+      Notebook Basic 15 with 2,80 GHz quad core, 15" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro
+    </p>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Object Identifier Title as link 1`] = `
+<section>
+  
+
+  <div
+    class="fd-object-identifier"
+  >
+    
+    
+    <p
+      class="fd-object-identifier__title fd-object-identifier__link"
+    >
+      NoteBook Basic 15
+    </p>
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-object-identifier"
+  >
+    
+    
+    <p
+      class="fd-object-identifier__title-bold fd-object-identifier__link"
+    >
+      NoteBook Basic 15
+    </p>
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-object-identifier"
+  >
+    
+    
+    <p
+      class="fd-object-identifier__title"
+    >
+      <a
+        class="fd-link"
+        href="#"
+      >
+        NoteBook Basic 15
+      </a>
+    </p>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Object Identifier Title only 1`] = `
+
+
+`;

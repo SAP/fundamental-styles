@@ -1,0 +1,61 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-object-identifier;
+
+.#{$block} {
+  @mixin fd-object-identifier-title-base {
+    @include fd-reset();
+
+    color: var(--sapList_TextColor);
+  }
+
+  $fd-fd-object-identifier-title-font-size: var(--sapFontLargeSize);
+  $fd-fd-object-identifier-title-font-weight: bold;
+
+  &__title,
+  &__title-bold {
+    @include fd-object-identifier-title-base();
+  }
+
+  &__link {
+    @include fd-reset();
+    @include fd-link();
+    @include action-cursor();
+  }
+
+  /* stylelint-disable no-duplicate-selectors */
+  &__title,
+  &__title-bold {
+    font-size: $fd-fd-object-identifier-title-font-size;
+
+    a {
+      font-size: $fd-fd-object-identifier-title-font-size;
+    }
+  }
+  /* stylelint-enable no-duplicate-selectors */
+
+  &__title-bold {
+    font-weight: $fd-fd-object-identifier-title-font-weight;
+
+    a {
+      font-weight: $fd-fd-object-identifier-title-font-weight;
+    }
+  }
+
+  &__text {
+    @include fd-reset();
+
+    margin-top: 0.5rem;
+    color: var(--sapContent_LabelColor);
+  }
+}
+
+table {
+  .#{$block} {
+    &__title,
+    &__title-bold {
+      font-size: var(--sapFontSize);
+    }
+  }
+}
