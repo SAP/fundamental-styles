@@ -18,11 +18,11 @@ attribute of a line item in a table. `
  */
 
 export const primary = () => `
-<span class="fd-object-status fd-object-status--negative sap-icon--status-negative">Negative</span>
-<span class="fd-object-status fd-object-status--critical sap-icon--status-critical">Critical</span>
-<span class="fd-object-status fd-object-status--positive sap-icon--status-positive">Positive</span>
-<span class="fd-object-status fd-object-status--informative sap-icon--hint">Info</span>
-<span class="fd-object-status sap-icon--to-be-reviewed">Neutral</span>
+<span class="fd-object-status fd-object-status--negative"><i aria-hidden="true" class="fd-object-status__icon sap-icon--status-negative"></i>Negative</span>
+<span class="fd-object-status fd-object-status--critical"><i aria-hidden="true" class="fd-object-status__icon sap-icon--status-critical"></i>Critical</span>
+<span class="fd-object-status fd-object-status--positive"><i aria-hidden="true" class="fd-object-status__icon sap-icon--status-positive"></i>Positive</span>
+<span class="fd-object-status fd-object-status--informative"><i aria-hidden="true" class="fd-object-status__icon sap-icon--hint"></i>Informative</span>
+<span class="fd-object-status "><i aria-hidden="true" class="fd-object-status__icon sap-icon--to-be-reviewed"></i>Neutral</span>
 `;
 
 /**
@@ -30,11 +30,11 @@ export const primary = () => `
  */
 
 export const icon = () => `
-<span class="fd-object-status fd-object-status--negative sap-icon--status-negative"></span>
-<span class="fd-object-status fd-object-status--critical sap-icon--status-critical"></span>
-<span class="fd-object-status fd-object-status--positive sap-icon--status-positive"></span>
-<span class="fd-object-status fd-object-status--informative sap-icon--hint"></span>
-<span class="fd-object-status sap-icon--to-be-reviewed"></span>
+<span class="fd-object-status fd-object-status--negative"><i class="fd-object-status__icon sap-icon--status-negative" aria-label="Negative Icon"></i></span>
+<span class="fd-object-status fd-object-status--critical"><i class="fd-object-status__icon sap-icon--status-critical" aria-label="Critical Icon"></i></span>
+<span class="fd-object-status fd-object-status--positive"><i class="fd-object-status__icon sap-icon--status-positive"  aria-label="Positive Icon"></i></span>
+<span class="fd-object-status fd-object-status--informative"><i class="fd-object-status__icon sap-icon--hint" aria-label="Information Icon"></i></span>
+<span class="fd-object-status"><i class="fd-object-status__icon sap-icon--to-be-reviewed" aria-hidden="true"></i></span>
 `;
 
 /**
@@ -54,11 +54,11 @@ export const text = () => `
  */
 
 export const iconAndText = () => `
-<span class="fd-object-status fd-object-status--negative sap-icon--status-negative">Negative</span>
-<span class="fd-object-status fd-object-status--critical sap-icon--status-critical">Critical</span>
-<span class="fd-object-status fd-object-status--positive sap-icon--status-positive">Positive</span>
-<span class="fd-object-status fd-object-status--informative sap-icon--hint">Informative</span>
-<span class="fd-object-status sap-icon--to-be-reviewed">Neutral</span>
+<span class="fd-object-status fd-object-status--negative"><i class="fd-object-status__icon sap-icon--status-negative" aria-hidden="true"></i>Negative</span>
+<span class="fd-object-status fd-object-status--critical"><i class="fd-object-status__icon sap-icon--status-critical" aria-hidden="true"></i>Critical</span>
+<span class="fd-object-status fd-object-status--positive"><i class="fd-object-status__icon sap-icon--status-positive" aria-hidden="true"></i>Positive</span>
+<span class="fd-object-status fd-object-status--informative"><i class="fd-object-status__icon sap-icon--hint" aria-hidden="true"></i>Informative</span>
+<span class="fd-object-status "><i class="fd-object-status__icon sap-icon--to-be-reviewed" aria-hidden="true"></i>Neutral</span>
 `;
 
 /**
@@ -86,8 +86,17 @@ export const clickableObjectStatus = () => `
 <a href="#" class="fd-object-status fd-object-status--link">Neutral</a>
 <a href="#" class="fd-object-status fd-object-status--negative fd-object-status--link">Negative</a>
 <a href="#" class="fd-object-status fd-object-status--positive fd-object-status--link">Positive</a>
-<span role="button" class="fd-object-status fd-object-status--critical fd-object-status--link sap-icon--status-critical">Critical</span>
-<span role="button" class="fd-object-status fd-object-status--informative fd-object-status--link sap-icon--hint">Informative</span>
+<span role="button" class="fd-object-status fd-object-status--critical fd-object-status--link"><i class="fd-object-status__icon sap-icon--status-critical" aria-hidden="true"></i>Critical</span>
+<span role="button" class="fd-object-status fd-object-status--informative fd-object-status--link "><i class="fd-object-status__icon sap-icon--hint" aria-hidden="true"></i>Informative</span>
+
+<div dir="rtl">
+    <h4>RTL Support</h4>
+    <a href="#" class="fd-object-status fd-object-status--link">Neutral</a>
+    <a href="#" class="fd-object-status fd-object-status--negative fd-object-status--link">Negative</a>
+    <a href="#" class="fd-object-status fd-object-status--positive fd-object-status--link">Positive</a>
+    <span role="button" class="fd-object-status fd-object-status--critical fd-object-status--link"><i class="fd-object-status__icon sap-icon--status-critical" aria-hidden="true"></i>Critical</span>
+    <span role="button" class="fd-object-status fd-object-status--informative fd-object-status--link "><i class="fd-object-status__icon sap-icon--hint" aria-hidden="true"></i>Informative</span>
+</div>
 
 <br><br>
 
@@ -118,43 +127,41 @@ export const inverted = () => `
 <br><br>
 
 <span class="fd-object-status fd-object-status--inverted">Inverted Neutral</span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"></span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative">Negative</span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--critical sap-icon--status-critical">Critical</span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--positive sap-icon--status-positive">Positive</span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--informative sap-icon--hint">Informative</span>
-<span class="fd-object-status fd-object-status--inverted sap-icon--to-be-reviewed">Neutral</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--negative"><i class="fd-object-status__icon sap-icon--status-negative" aria-label="Inverted Negative Icon"></i></span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--negative"><i class="fd-object-status__icon  sap-icon--status-negative" aria-hidden="true"></i>Negative</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--critical "><i class="fd-object-status__icon sap-icon--status-critical" aria-hidden="true"></i>Critical</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--positive "><i class="fd-object-status__icon  sap-icon--status-positive" aria-hidden="true"></i>Positive</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--informative"><i class="fd-object-status__icon  sap-icon--hint" aria-hidden="true"></i>Informative</span>
+<span class="fd-object-status fd-object-status--inverted"><i class="fd-object-status__icon sap-icon--to-be-reviewed" aria-hidden="true"></i>Neutral</span>
+
+<div dir="rtl">
+    <h4>RTL Support</h4>
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--negative">Inverted Negative</span>
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--critical">Inverted Warning</span>
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--positive">Inverted Success</span>
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--informative">Inverted informative</span>
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--positive">3</span>
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--informative">2.99</span>
+    <br><br>
+    <span class="fd-object-status fd-object-status--inverted">Inverted Neutral</span>
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--negative"><i class="fd-object-status__icon sap-icon--status-negative" aria-label="Inverted Negative Icon"></i></span>
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--negative"><i class="fd-object-status__icon  sap-icon--status-negative" aria-hidden="true"></i>Negative</span>
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--critical "><i class="fd-object-status__icon sap-icon--status-critical" aria-hidden="true"></i>Critical</span>
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--positive "><i class="fd-object-status__icon  sap-icon--status-positive" aria-hidden="true"></i>Positive</span>
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--informative"><i class="fd-object-status__icon  sap-icon--hint" aria-hidden="true"></i>Informative</span>
+    <span class="fd-object-status fd-object-status--inverted"><i class="fd-object-status__icon sap-icon--to-be-reviewed" aria-hidden="true"></i>Neutral</span>
+</div>
 
 <br>
 <br>
 <h4>Clickable Inverted Object Status</h4>
-<a class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--negative sap-icon--status-negative">Negative</a>
-<a class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--critical sap-icon--status-critical">Critical</a>
-<a class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--positive sap-icon--status-positive">Positive</a>
-<a class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--informative sap-icon--hint">Informative</a>
-<a class="fd-object-status fd-object-status--link fd-object-status--inverted sap-icon--to-be-reviewed">Neutral</a>
+<a class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--negative"><i class="fd-object-status__icon  sap-icon--status-negative" aria-hidden="true"></i>Negative</a>
+<a class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--critical"><i class="fd-object-status__icon sap-icon--status-critical" aria-hidden="true"></i>Critical</a>
+<a class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--positive"><i class="fd-object-status__icon  sap-icon--status-positive" aria-hidden="true"></i>Positive</a>
+<a class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--informative"><i class="fd-object-status__icon  sap-icon--hint" aria-hidden="true"></i>Informative</a>
+<a class="fd-object-status fd-object-status--link fd-object-status--inverted"><i class="fd-object-status__icon sap-icon--to-be-reviewed" aria-hidden="true"></i>Neutral</a>
 
 <br><br>
-
-<div dir="rtl">
-<h4>RTL Support</h4>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--negative">Inverted Negative</span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--critical">Inverted Warning</span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--positive">Inverted Success</span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--informative">Inverted informative</span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--positive">3</span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--informative">2.99</span>
-
-<br><br>
-
-<span class="fd-object-status fd-object-status--inverted">Inverted Neutral</span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"></span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative">Negative</span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--critical sap-icon--status-critical">Critical</span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--positive sap-icon--status-positive">Positive</span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--informative sap-icon--hint">Informative</span>
-<span class="fd-object-status fd-object-status--inverted sap-icon--to-be-reviewed">Neutral</span>
-</div>
 `;
 
 /**

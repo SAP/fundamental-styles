@@ -29,19 +29,89 @@ exports[`Storyshots Components/Object Status Clickable Object Status 1`] = `
   
 
   <span
-    class="fd-object-status fd-object-status--critical fd-object-status--link sap-icon--status-critical"
+    class="fd-object-status fd-object-status--critical fd-object-status--link"
     role="button"
   >
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon sap-icon--status-critical"
+    />
     Critical
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--informative fd-object-status--link sap-icon--hint"
+    class="fd-object-status fd-object-status--informative fd-object-status--link "
     role="button"
   >
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon sap-icon--hint"
+    />
     Informative
   </span>
+  
+
+
+  <div
+    dir="rtl"
+  >
+    
+    
+    <h4>
+      RTL Support
+    </h4>
+    
+    
+    <a
+      class="fd-object-status fd-object-status--link"
+      href="#"
+    >
+      Neutral
+    </a>
+    
+    
+    <a
+      class="fd-object-status fd-object-status--negative fd-object-status--link"
+      href="#"
+    >
+      Negative
+    </a>
+    
+    
+    <a
+      class="fd-object-status fd-object-status--positive fd-object-status--link"
+      href="#"
+    >
+      Positive
+    </a>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--critical fd-object-status--link"
+      role="button"
+    >
+      <i
+        aria-hidden="true"
+        class="fd-object-status__icon sap-icon--status-critical"
+      />
+      Critical
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--informative fd-object-status--link "
+      role="button"
+    >
+      <i
+        aria-hidden="true"
+        class="fd-object-status__icon sap-icon--hint"
+      />
+      Informative
+    </span>
+    
+
+  </div>
   
 
 
@@ -185,28 +255,53 @@ exports[`Storyshots Components/Object Status Icon 1`] = `
   
 
   <span
-    class="fd-object-status fd-object-status--negative sap-icon--status-negative"
-  />
+    class="fd-object-status fd-object-status--negative"
+  >
+    <i
+      aria-label="Negative Icon"
+      class="fd-object-status__icon sap-icon--status-negative"
+    />
+  </span>
   
 
   <span
-    class="fd-object-status fd-object-status--critical sap-icon--status-critical"
-  />
+    class="fd-object-status fd-object-status--critical"
+  >
+    <i
+      aria-label="Critical Icon"
+      class="fd-object-status__icon sap-icon--status-critical"
+    />
+  </span>
   
 
   <span
-    class="fd-object-status fd-object-status--positive sap-icon--status-positive"
-  />
+    class="fd-object-status fd-object-status--positive"
+  >
+    <i
+      aria-label="Positive Icon"
+      class="fd-object-status__icon sap-icon--status-positive"
+    />
+  </span>
   
 
   <span
-    class="fd-object-status fd-object-status--informative sap-icon--hint"
-  />
+    class="fd-object-status fd-object-status--informative"
+  >
+    <i
+      aria-label="Information Icon"
+      class="fd-object-status__icon sap-icon--hint"
+    />
+  </span>
   
 
   <span
-    class="fd-object-status sap-icon--to-be-reviewed"
-  />
+    class="fd-object-status"
+  >
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon sap-icon--to-be-reviewed"
+    />
+  </span>
   
 
 </section>
@@ -217,36 +312,56 @@ exports[`Storyshots Components/Object Status Icon And Text 1`] = `
   
 
   <span
-    class="fd-object-status fd-object-status--negative sap-icon--status-negative"
+    class="fd-object-status fd-object-status--negative"
   >
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon sap-icon--status-negative"
+    />
     Negative
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--critical sap-icon--status-critical"
+    class="fd-object-status fd-object-status--critical"
   >
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon sap-icon--status-critical"
+    />
     Critical
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--positive sap-icon--status-positive"
+    class="fd-object-status fd-object-status--positive"
   >
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon sap-icon--status-positive"
+    />
     Positive
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--informative sap-icon--hint"
+    class="fd-object-status fd-object-status--informative"
   >
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon sap-icon--hint"
+    />
     Informative
   </span>
   
 
   <span
-    class="fd-object-status sap-icon--to-be-reviewed"
+    class="fd-object-status "
   >
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon sap-icon--to-be-reviewed"
+    />
     Neutral
   </span>
   
@@ -314,43 +429,200 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
   
 
   <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"
-  />
+    class="fd-object-status fd-object-status--inverted fd-object-status--negative"
+  >
+    <i
+      aria-label="Inverted Negative Icon"
+      class="fd-object-status__icon sap-icon--status-negative"
+    />
+  </span>
   
 
   <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"
+    class="fd-object-status fd-object-status--inverted fd-object-status--negative"
   >
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon  sap-icon--status-negative"
+    />
     Negative
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--critical sap-icon--status-critical"
+    class="fd-object-status fd-object-status--inverted fd-object-status--critical "
   >
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon sap-icon--status-critical"
+    />
     Critical
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--positive sap-icon--status-positive"
+    class="fd-object-status fd-object-status--inverted fd-object-status--positive "
   >
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon  sap-icon--status-positive"
+    />
     Positive
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--informative sap-icon--hint"
+    class="fd-object-status fd-object-status--inverted fd-object-status--informative"
   >
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon  sap-icon--hint"
+    />
     Informative
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--inverted sap-icon--to-be-reviewed"
+    class="fd-object-status fd-object-status--inverted"
   >
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon sap-icon--to-be-reviewed"
+    />
     Neutral
   </span>
+  
+
+
+  <div
+    dir="rtl"
+  >
+    
+    
+    <h4>
+      RTL Support
+    </h4>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--negative"
+    >
+      Inverted Negative
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--critical"
+    >
+      Inverted Warning
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--positive"
+    >
+      Inverted Success
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--informative"
+    >
+      Inverted informative
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--positive"
+    >
+      3
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--informative"
+    >
+      2.99
+    </span>
+    
+    
+    <br />
+    <br />
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted"
+    >
+      Inverted Neutral
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--negative"
+    >
+      <i
+        aria-label="Inverted Negative Icon"
+        class="fd-object-status__icon sap-icon--status-negative"
+      />
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--negative"
+    >
+      <i
+        aria-hidden="true"
+        class="fd-object-status__icon  sap-icon--status-negative"
+      />
+      Negative
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--critical "
+    >
+      <i
+        aria-hidden="true"
+        class="fd-object-status__icon sap-icon--status-critical"
+      />
+      Critical
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--positive "
+    >
+      <i
+        aria-hidden="true"
+        class="fd-object-status__icon  sap-icon--status-positive"
+      />
+      Positive
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--informative"
+    >
+      <i
+        aria-hidden="true"
+        class="fd-object-status__icon  sap-icon--hint"
+      />
+      Informative
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted"
+    >
+      <i
+        aria-hidden="true"
+        class="fd-object-status__icon sap-icon--to-be-reviewed"
+      />
+      Neutral
+    </span>
+    
+
+  </div>
   
 
 
@@ -366,36 +638,56 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
   
 
   <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"
+    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--negative"
   >
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon  sap-icon--status-negative"
+    />
     Negative
   </a>
   
 
   <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--critical sap-icon--status-critical"
+    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--critical"
   >
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon sap-icon--status-critical"
+    />
     Critical
   </a>
   
 
   <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--positive sap-icon--status-positive"
+    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--positive"
   >
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon  sap-icon--status-positive"
+    />
     Positive
   </a>
   
 
   <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--informative sap-icon--hint"
+    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--informative"
   >
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon  sap-icon--hint"
+    />
     Informative
   </a>
   
 
   <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted sap-icon--to-be-reviewed"
+    class="fd-object-status fd-object-status--link fd-object-status--inverted"
   >
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon sap-icon--to-be-reviewed"
+    />
     Neutral
   </a>
   
@@ -403,115 +695,6 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
 
   <br />
   <br />
-  
-
-
-  <div
-    dir="rtl"
-  >
-    
-
-    <h4>
-      RTL Support
-    </h4>
-    
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--negative"
-    >
-      Inverted Negative
-    </span>
-    
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--critical"
-    >
-      Inverted Warning
-    </span>
-    
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--positive"
-    >
-      Inverted Success
-    </span>
-    
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--informative"
-    >
-      Inverted informative
-    </span>
-    
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--positive"
-    >
-      3
-    </span>
-    
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--informative"
-    >
-      2.99
-    </span>
-    
-
-
-    <br />
-    <br />
-    
-
-
-    <span
-      class="fd-object-status fd-object-status--inverted"
-    >
-      Inverted Neutral
-    </span>
-    
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"
-    />
-    
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"
-    >
-      Negative
-    </span>
-    
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--critical sap-icon--status-critical"
-    >
-      Critical
-    </span>
-    
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--positive sap-icon--status-positive"
-    >
-      Positive
-    </span>
-    
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--informative sap-icon--hint"
-    >
-      Informative
-    </span>
-    
-
-    <span
-      class="fd-object-status fd-object-status--inverted sap-icon--to-be-reviewed"
-    >
-      Neutral
-    </span>
-    
-
-  </div>
   
 
 </section>
@@ -662,36 +845,56 @@ exports[`Storyshots Components/Object Status Primary 1`] = `
   
 
   <span
-    class="fd-object-status fd-object-status--negative sap-icon--status-negative"
+    class="fd-object-status fd-object-status--negative"
   >
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon sap-icon--status-negative"
+    />
     Negative
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--critical sap-icon--status-critical"
+    class="fd-object-status fd-object-status--critical"
   >
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon sap-icon--status-critical"
+    />
     Critical
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--positive sap-icon--status-positive"
+    class="fd-object-status fd-object-status--positive"
   >
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon sap-icon--status-positive"
+    />
     Positive
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--informative sap-icon--hint"
+    class="fd-object-status fd-object-status--informative"
   >
-    Info
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon sap-icon--hint"
+    />
+    Informative
   </span>
   
 
   <span
-    class="fd-object-status sap-icon--to-be-reviewed"
+    class="fd-object-status "
   >
+    <i
+      aria-hidden="true"
+      class="fd-object-status__icon sap-icon--to-be-reviewed"
+    />
     Neutral
   </span>
   

@@ -382,3 +382,9 @@
   min-height: $height;
   max-height: $height;
 }
+
+@mixin fd-icon-selector() {
+  [class*="sap-icon"] {
+    @content;
+  }
+}

@@ -114,8 +114,13 @@ $inverted-color-accents: (
   color: map_deep_get($variablesSet, "regular", "color");
   background-color: map_deep_get($variablesSet, "regular", "background");
 
-  &::before {
+  @include fd-icon-selector() {
     color: map_deep_get($variablesSet, "regular", "color");
+    position: inherit;
+
+    &::before {
+      font-size: 0.75rem;
+    }
   }
 
   &:hover,
@@ -242,7 +247,7 @@ $inverted-color-accents: (
     &--#{$set-name} {
       color: map_get($color-set, "color");
 
-      &::before {
+      @include fd-icon-selector() {
         color: map_get($color-set, "iconColor");
       }
 
@@ -257,7 +262,7 @@ $inverted-color-accents: (
     &--indication-#{$set-name} {
       color: map_get($color-set, "color");
 
-      &::before {
+      @include fd-icon-selector() {
         color: map_get($color-set, "iconColor");
       }
 
@@ -289,6 +294,27 @@ $inverted-color-accents: (
 
     &:visited {
       text-decoration: none;
+    }
+  }
+
+  &__icon {
+    @include fd-reset();
+
+    font-style: normal;
+    line-height: normal;
+    position: relative;
+    top: 0.125rem;
+
+    &::before {
+      padding-right: $fd-object-status-icon-padding;
+      font-size: $fd-object-status-icon-font-size;
+    }
+
+    @include fd-rtl() {
+      &::before {
+        padding-left: $fd-object-status-icon-padding;
+        padding-right: 0;
+      }
     }
   }
 
