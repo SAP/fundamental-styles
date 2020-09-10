@@ -19,7 +19,7 @@ clustered if there is not enough space on the screen.
 
 **Do not use the action sheet if:**
 
-- The menu provides only one option. In this case, consider using a button instead.
+- The menu provides only one option. In this case, consider using a **Button** instead.
 - You need to show a hierarchical menu. In this case, use the **MenuButton** instead.
 - Your users would benefit more from a **SplitButton**, which offers an easily-accessible default action, with the option to include additional actions.
         `,
