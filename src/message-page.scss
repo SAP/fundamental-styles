@@ -39,10 +39,12 @@ $block: #{$fd-namespace}-message-page;
     height: 8rem;
   }
 
-  &__icon[class*='sap-icon--'] {
+  &__icon {
     font-size: 6rem;
     color: var(--sapContent_NonInteractiveIconColor);
     opacity: 50%;
+
+    @include fd-icon-contain();
   }
 
   &__content {

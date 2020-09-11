@@ -198,6 +198,8 @@ $block: #{$fd-namespace}-menu;
   &__addon-before {
     margin: $fd-menu-icon-before-margin;
 
+    @include fd-icon-contain();
+
     @include fd-rtl() {
       margin: $fd-menu-icon-after-margin;
     }
@@ -206,6 +208,8 @@ $block: #{$fd-namespace}-menu;
   &__addon-after {
     flex: 0 0 auto;
     margin: $fd-menu-icon-after-margin;
+
+    @include fd-icon-contain();
 
     @include fd-rtl() {
       margin: $fd-menu-icon-before-margin;
