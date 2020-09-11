@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.49](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.48...v0.12.0-rc.49) (2020-09-11)
+
+
+### Features
+
+* new component Action Sheet ([#1578](https://github.com/SAP/fundamental-styles/issues/1578)) ([c4adce8](https://github.com/SAP/fundamental-styles/commit/c4adce8ea0b56f069926b0447fd082320bf0080c))
+
 ## [0.12.0-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.47...v0.12.0-rc.48) (2020-09-11)
 
 
