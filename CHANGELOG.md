@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.47...v0.12.0-rc.48) (2020-09-11)
+
+
+### Bug Fixes
+
+* Fiori 3 shellbar margin ([#1591](https://github.com/SAP/fundamental-styles/issues/1591)) ([4c49bc3](https://github.com/SAP/fundamental-styles/commit/4c49bc3808f0884c72612a617ffd11d3e4ebf0fa))
+
 ## [0.12.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.46...v0.12.0-rc.47) (2020-09-11)
 
 
