@@ -14,7 +14,7 @@ export default {
 
 
 export const tablet = () => `   
-<label class="fd-form-label">Combobox Tablet Cozy Mode - default mode</label><br/><br/>
+<label class="fd-form-label">Default menu (tablet)</label><br/><br/>
 
 <nav aria-label="fd-menu-nav" class="fd-menu">
     <ul class="fd-menu__list" role="menu">
@@ -46,12 +46,12 @@ tablet.storyName = 'Default (tablet)';
 tablet.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'The basic stucture of a menu. Place the menu item title in a `<span>` tag using class `fd-menu__title` and wrap it in the `fd-menu__link` and `fd-menu__item` classes as shown. Default mode is the cozy tablet mode, no class has to be added for this.'
+        storyDescription: 'The default menu is optimized for tablet. To display a default menu, add the <code>fd-menu\\_\\_list</code> class to the main element. To display options or actions, wrap the <code>fd-menu\\_\\_title</code> in the <code>fd-menu\\_\\_link</code> and <code>fd-menu\\_\\_item</code> classes.'
     }
 };
 
 export const desktop = () => `   
-<label class="fd-form-label">Combobox Desktop Compact Mode</label><br/><br/>
+<label class="fd-form-label">Desktop menu (compact)</label><br/><br/>
 
 <nav class="fd-menu fd-menu--compact">
     <ul class="fd-menu__list" role="menu">
@@ -83,7 +83,7 @@ desktop.storyName = 'Desktop';
 desktop.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'Use class modifier`fd-menu--compact` on menu container level for desktop mode.'
+        storyDescription: 'To display the compact menu for desktop, add the <code>fd-menu--compact</code> modifier class to the main element.'
     }
 };
 
@@ -200,7 +200,7 @@ mobileCozyMode.storyName = 'Mobile';
 mobileCozyMode.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'On a mobile screen, menu is displayed within a **Dialog** and uses its structure. However, you can add the <code>fd menu fd-menu--mobile</code> modifier class in dialog’s body to display a menu.'
+        storyDescription: 'On a mobile screen, menu is displayed within a **Dialog** and uses its structure. However, you can add the <code>fd menu fd-menu--mobile</code> modifier class to dialog\'s body container to display a menu.'
     }
 };
 
@@ -238,11 +238,11 @@ export const seperatedItems = () => `
 </nav>
 `;
 
-seperatedItems.storyName = 'Menu with Separators';
+seperatedItems.storyName = 'Separators';
 seperatedItems.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `Menu can display separators between menu items. To display a separator, add the <code>fd-menu__separator</code> wrapped in <code>span</code> tags after the list item where you want the separation.
+        storyDescription: `Menu can display separators between menu items. To display a separator, add the <code>fd-menu\\_\\_separator</code> wrapped in <code>span</code> tags after the list item where you want the separation.
         `
     }
 };
@@ -323,11 +323,11 @@ export const differentStates = () => `
 </div>
 `;
 
-differentStates.storyName = 'Menu with States';
+differentStates.storyName = 'States';
 differentStates.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `The list items in a menu can display different state behaviours by adding certain classes to the menu items. You can also remove the default box shadow from menu containers by using either <code>fd-menu__list—no-shadow</code> or <code>fd-menu__sublist—no-shadow</code>.
+        storyDescription: `The list items in a menu can display different state behaviours by adding certain classes to the menu items. You can also remove the default box shadow from menu containers by using either <code>fd-menu\\_\\_list—no-shadow</code> or <code>fd-menu\\_\\_sublist—no-shadow</code>.
 
 | **States** | **Class** |
 | ------: | :------ |
@@ -377,16 +377,16 @@ export const menuIcon = () => `
 </nav>
 `;
 
-menuIcon.storyName = 'Menu with Icons';
+menuIcon.storyName = 'Icons';
 menuIcon.parameters = {
     docs: {
         iframeHeight: 220,
-        storyDescription: `Menu can display icons on either side of the menu items. To display icons, place the addon class before or after the <code>fd-menu__title</code> class. In the case that you want the icon to display before the text in the menu item, add the <code>fd-menu__addon-before</code>.
+        storyDescription: `Menu can display icons on either side of the menu items. To display icons, place the addon class before or after the <code>fd-menu\\_\\_title</code> class. In the case that you want the icon to display before the text in the menu item, add the <code>fd-menu\\_\\_addon-before</code>.
 
 | Displays addon… | Class |
 | -------------------: | :---------------------- |
-| Before text | <code>fd-menu__addon-before</code> |
-| After text | <code>fd-menu__addon-after</code> |
+| Before text | <code>fd-menu\\_\\_addon-before</code> |
+| After text | <code>fd-menu\\_\\_addon-after</code> |
         `
     }
 };
@@ -442,20 +442,21 @@ export const withSubmenu = () => `
     </ul>
 </nav>
 `;
-withSubmenu.storyName = 'Menu with Submenu';
+withSubmenu.storyName = 'Submenu';
 withSubmenu.parameters = {
     docs: {
         iframeHeight: 220,
         storyDescription: `
-Menu can display an additional submenu that further group the list items into a secondary level that is not visible until selected. 
+Menu can display an additional submenu that further groups the list items into a secondary level that is not visible until selected. 
 
 **To display a submenu:**
 
--	Add the <code>has-child</code> class to the <code>fd-menu__link</code> container.
--	Then add a <code>fd-menu__addon-after--submenu</code> class (with an icon) after the title of the menu item where you want the submenu.
--	At the very end of the container, add the <code>fd-menu__sublist</code> in its own unordered list.
-        
-Note: The same <code>fd-menu__item</code> and <code>fd-menu__link</code> classes can be used for subitems too.
+-	Add the <code>has-child</code> class to the <code>fd-menu\\_\\_link</code> container.
+-	Then add a <code>fd-menu\\_\\_addon-after--submenu</code> class (with an icon) after the title of the menu item where you want the submenu.
+-	On the next line, add the <code>fd-menu\\_\\_sublist</code> with its own unordered list (where the submenu items will be).
+
+
+Note: The same <code>fd-menu\\_\\_item</code> and <code>fd-menu\\_\\_link</code> classes can be used for submenu items too.
         
 `
     }
