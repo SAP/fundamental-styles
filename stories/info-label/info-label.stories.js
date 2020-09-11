@@ -50,9 +50,9 @@ colors.storyName = 'Color Flavors';
 
 export const icons = () => `
 <div class="fddocs-container">
-    <span class="fd-info-label fd-info-label--accent-color-1 fd-info-label--icon sap-icon--future">Info Label</span>
+    <span class="fd-info-label fd-info-label--accent-color-1 fd-info-label--icon"><i class="sap-icon--future"></i>Info Label</span>
     <br><br>
-    <span class="fd-info-label fd-info-label--accent-color-2 fd-info-label--icon sap-icon--upload-to-cloud"></span>
+    <span class="fd-info-label fd-info-label--accent-color-2 fd-info-label--icon"><i class="sap-icon--upload-to-cloud"></i></span>
 </div>
 `;
 icons.storyName = 'Info Label with Icon';
@@ -76,8 +76,8 @@ export const rtl = () => `
 <div class="fddocs-container" dir="rtl">
     <span class="fd-info-label fd-info-label--accent-color-1">Info Label</span>
     <span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-1">6</span>
-    <span class="fd-info-label fd-info-label--accent-color-1 fd-info-label--icon sap-icon--future">Info Label</span>
-    <span class="fd-info-label fd-info-label--accent-color-2 fd-info-label--icon sap-icon--upload-to-cloud"></span>
+    <span class="fd-info-label fd-info-label--accent-color-1 fd-info-label--icon"><i class="sap-icon--future"></i>Info Label</span>
+    <span class="fd-info-label fd-info-label--accent-color-2 fd-info-label--icon"><i class="sap-icon--upload-to-cloud"></i></span>
 </div>
 `;
 rtl.storyName = 'Info Label RTL';

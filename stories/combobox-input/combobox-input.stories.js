@@ -144,8 +144,8 @@ export const asFormItem = () =>`
                             aria-controls="F4GcX348"
                             aria-expanded="true"
                             aria-haspopup="true"
-                            class="fd-input-group__button fd-button fd-button--transparent sap-icon--navigation-down-arrow"
-                        ></button>
+                            class="fd-input-group__button fd-button fd-button--transparent"
+                        ><i class="sap-icon--navigation-down-arrow"></i></button>
                     </span>
                 </div>
             </div>

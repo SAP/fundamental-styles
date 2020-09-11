@@ -138,10 +138,10 @@ export const placeholderImage = () => `
     <div class="fd-feed-input" 
          role="region" 
          aria-label="Feed input empty example">
-        <div class="fd-avatar fd-avatar--s fd-avatar--placeholder sap-icon--person-placeholder fd-feed-input__thumb"
+        <div class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-input__thumb"
              role="img"
              aria-label="John Doe" 
-             title="John Doe"></div>
+             title="John Doe"><i class="sap-icon--person-placeholder"></i></div>
         <textarea class="fd-textarea fd-feed-input__textarea"  
                   placeholder="Post something here" 
                   aria-label="Feed message" 
@@ -177,7 +177,7 @@ export const inputGrowth = () => `
                   aria-label="Feed" 
                   aria-required 
                   rows="4">With every line\n"textarea" grows upward\nuntil it reaches\nthe max height</textarea>
-        <button class="fd-button sap-icon--feeder-arrow fd-feed-input__submit-button" 
+        <button class="fd-button fd-feed-input__submit-button" 
                 aria-label="Send"  
                 aria-disabled="false"
                 title="Send">
