@@ -274,7 +274,17 @@ exports[`Storyshots Components/Menu Desktop and Tablet Modes 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Menu List different states 1`] = `
+exports[`Storyshots Components/Menu Menu with Icons 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Menu Menu with Separators 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Menu Menu with States 1`] = `
 <section>
   
 
@@ -645,17 +655,12 @@ exports[`Storyshots Components/Menu List different states 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Menu List with Icon 1`] = `
+exports[`Storyshots Components/Menu Menu with Submenu 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Menu List with separated items 1`] = `
-
-
-`;
-
-exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
+exports[`Storyshots Components/Menu Mobile 1`] = `
 <section>
   
 
@@ -1158,11 +1163,6 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
 `;
 
 exports[`Storyshots Components/Menu RTL 1`] = `
-
-
-`;
-
-exports[`Storyshots Components/Menu With Submenu 1`] = `
 
 
 `;

@@ -7,10 +7,7 @@ export default {
     title: 'Components/Menu',
     parameters: {
         tags: ['f3', 'a11y', 'theme', 'development'],
-        description: `
-The menu component is the listing structure with optional headers to create menus.
-
-Commonly used as the contents when composing "dropdowns", "contextual menus", etc, when paired with the popover component.
+        description: `The menu component displays a dropdown menu with multiple actions, which is usually triggered by a menu button. Visually, actions can be either divided by a separator or grouped together in a submenu. Menu is commonly used with the **Popover** component.
 `
     }
 };
@@ -190,11 +187,11 @@ export const mobileCozyMode = () => `
 </div>
 `;
 
-mobileCozyMode.storyName = 'Mobile Cozy Mode';
+mobileCozyMode.storyName = 'Mobile';
 mobileCozyMode.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'The basic stucture of a menu in mobile where it opens as a dialog. Use class <code>fd-menu--mobile</code> on menu container level. Example shows the parent menu\'s item in active state to simulate a pressed/touched event. Submenu appears in its own fullscreen dialog in mobile devices. The device\'s back button takes one back to the parent menu fullscreen dialog.'
+        storyDescription: 'On a mobile screen, menu is displayed within a **Dialog** and uses its structure. However, you can add the <code>fd menu fd-menu--mobile</code> modifier class in dialog’s body to display a menu.'
     }
 };
 
@@ -232,11 +229,12 @@ export const seperatedItems = () => `
 </nav>
 `;
 
-seperatedItems.storyName = 'List with separated items';
+seperatedItems.storyName = 'Menu with Separators';
 seperatedItems.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'To add separators between the items, use the class `fd-menu__separator` in its own `<span>` after the `<li>` item where you want the separation.'
+        storyDescription: `Menu can display separators between menu items. To display a separator, add the <code>fd-menu__separator</code> wrapped in <code>span</code> tags after the list item where you want the separation.
+        `
     }
 };
 
@@ -316,20 +314,21 @@ export const differentStates = () => `
 </div>
 `;
 
-differentStates.storyName = 'List different states';
+differentStates.storyName = 'Menu with States';
 differentStates.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `
-Simulate different states to show state behaviour between the items.
+        storyDescription: `The list items in a menu can display different state behaviours by adding certain classes to the menu items. You can also remove the default box shadow from menu containers by using either <code>fd-menu__list—no-shadow</code> or <code>fd-menu__sublist—no-shadow</code>.
 
-- For simulating hover state, use class <code>is-hover</code> on the menu item.
-- For simulating active state, use class <code>is-active</code> on the menu item.
-- For simulating selected state, use class <code>is-selected</code> on the menu item.
-- For simulating selected-hover state, use classes <code>is-selected is-hover</code> on the menu item.
-- For simulating disabled state, use class <code>is-disabled</code> on the menu item.
-
-To remove default box shadow from menu containers use <code>fd-menu__list--no-shadow</code> or <code>fd-menu__sublist--no-shadow</code>.`
+| **States** | **Class** |
+| ------: | :------ |
+| Regular | _n/a_ |
+| Hover | <code>is-hover</code> |
+| Active | <code>is-active</code> |
+| Selected | <code>is-selected</code> |
+| Selected (Hover) | <code>is-selected is-hover</code> |
+| Disabled | <code>is-disabled</code> |
+        `
     }
 };
 
@@ -369,16 +368,17 @@ export const menuIcon = () => `
 </nav>
 `;
 
-menuIcon.storyName = 'List with Icon';
+menuIcon.storyName = 'Menu with Icons';
 menuIcon.parameters = {
     docs: {
         iframeHeight: 220,
-        storyDescription: `
-To create an addon before or after <code>fd-menu__title</code> element, use elements with folowing classes inside <code>fd-menu__link<code>:
-- <code>fd-menu__addon-before</code>   - styles addon befotre <code>fd-menu__title</code>
-- <code>fd-menu__addon-after</code>    - styles addon after <code>fd-menu__title</code>
-- <code>fd-menu__shortcut</code>       - styles shortcut placed after <code>fd-menu__title</code>
-According to Fiori3 design shortcuts should be on desktop devices.`
+        storyDescription: `Menu can display icons on either side of the menu items. To display icons, place the addon class before or after the <code>fd-menu__title</code> class. In the case that you want the icon to display before the text in the menu item, add the <code>fd-menu__addon-before</code>.
+
+| Displays addon… | Class |
+| -------------------: | :---------------------- |
+| Before text | <code>fd-menu__addon-before</code> |
+| After text | <code>fd-menu__addon-after</code> |
+        `
     }
 };
 
@@ -433,17 +433,21 @@ export const withSubmenu = () => `
     </ul>
 </nav>
 `;
+withSubmenu.storyName = 'Menu with Submenu';
 withSubmenu.parameters = {
     docs: {
         iframeHeight: 220,
         storyDescription: `
-Menu with an additional submenu that can be used for items that can be further grouped under a level but not necessarily visible to user always.
+Menu can display an additional submenu that further group the list items into a secondary level that is not visible until selected. 
 
-For a submenu, do the following:
-- Specify <code>fd-menu__link</code> class normally like other items. Use <code>has-child</code> class to apply styles for parent containing the submenu.
-- Create an addon indicating submenu level using <code>fd-menu__addon-after--submenu</code> class and an icon.
-- After the end of the <code>fd-menu__link</code> container, use <code>fd-menu__sublist</code> class in its own <code><ul><code>
-- Follow the same template for submenu as you would for a normal menu. The same <code>fd-menu__item</code> and <code>fd-menu__link</code> works for the subitems too.
+**To display a submenu:**
+
+-	Add the <code>has-child</code> class to the <code>fd-menu__link</code> container.
+-	Then add a <code>fd-menu__addon-after--submenu</code> class (with an icon) after the title of the menu item where you want the submenu.
+-	At the very end of the container, add the <code>fd-menu__sublist</code> in its own unordered list.
+        
+Note: The same <code>fd-menu__item</code> and <code>fd-menu__link</code> classes can be used for subitems too.
+        
 `
     }
 };
@@ -486,6 +490,6 @@ export const RTL = () => `
 RTL.parameters = {
     docs: {
         iframeHeight: 220,
-        storyDescription: 'The basic stucture of a menu in RTL simulated mode.'
+        storyDescription: 'The menu can be displayed from right to left so it may be used internationally.'
     }
 };
