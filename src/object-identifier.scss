@@ -4,42 +4,31 @@
 $block: #{$fd-namespace}-object-identifier;
 
 .#{$block} {
-  @mixin fd-object-identifier-title-base {
-    @include fd-reset();
-
-    color: var(--sapList_TextColor);
-  }
-
   $fd-object-identifier-title-font-size: var(--sapFontLargeSize);
   $fd-object-identifier-title-font-weight: bold;
 
-  &__title,
-  &__title--bold {
-    @include fd-object-identifier-title-base();
-  }
-
-  &__title--link {
+  &__title {
     @include fd-reset();
-    @include fd-link();
-    @include action-cursor();
-  }
 
-  /* stylelint-disable no-duplicate-selectors */
-  &__title,
-  &__title--bold {
+    color: var(--sapList_TextColor);
     font-size: $fd-object-identifier-title-font-size;
 
-    a {
-      font-size: $fd-object-identifier-title-font-size;
+    &--link {
+      @include fd-link();
+      @include action-cursor();
     }
-  }
-  /* stylelint-enable no-duplicate-selectors */
 
-  &__title--bold {
-    font-weight: $fd-object-identifier-title-font-weight;
-
-    a {
+    &--bold {
       font-weight: $fd-object-identifier-title-font-weight;
+
+      .fd-link {
+        font-size: $fd-object-identifier-title-font-size;
+        font-weight: $fd-object-identifier-title-font-weight;
+      }
+    }
+
+    .fd-link {
+      font-size: $fd-object-identifier-title-font-size;
     }
   }
 
@@ -51,7 +40,7 @@ $block: #{$fd-namespace}-object-identifier;
   }
 }
 
-table {
+.fd-table {
   .#{$block} {
     &__title,
     &__title--bold {

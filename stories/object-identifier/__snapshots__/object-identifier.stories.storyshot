@@ -47,7 +47,7 @@ exports[`Storyshots Components/Object Identifier Title and description 1`] = `
     
     
     <p
-      class="fd-object-identifier__title--bold"
+      class="fd-object-identifier__title fd-object-identifier__title--bold"
     >
       NoteBook Basic 15
     </p>
@@ -101,7 +101,7 @@ exports[`Storyshots Components/Object Identifier Title and description 1`] = `
     
     
     <p
-      class="fd-object-identifier__title--bold fd-object-identifier__title--link"
+      class="fd-object-identifier__title fd-object-identifier__title--bold fd-object-identifier__title--link"
     >
       NoteBook Basic 15
     </p>
@@ -148,7 +148,7 @@ exports[`Storyshots Components/Object Identifier Title as link 1`] = `
     
     
     <p
-      class="fd-object-identifier__title--bold fd-object-identifier__title--link"
+      class="fd-object-identifier__title fd-object-identifier__title--bold fd-object-identifier__title--link"
     >
       NoteBook Basic 15
     </p>

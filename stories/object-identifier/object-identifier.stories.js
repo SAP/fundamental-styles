@@ -25,7 +25,7 @@ titleOnly.parameters = {
 
 export const boldTitle = () => `
 <div class="fd-object-identifier">
-    <p class="fd-object-identifier__title--bold">NoteBook Basic 15</p>
+    <p class="fd-object-identifier__title fd-object-identifier__title--bold">NoteBook Basic 15</p>
 </div>
 `;
 
@@ -33,7 +33,7 @@ boldTitle.storyName = 'Bold title';
 boldTitle.parameters = {
     docs: {
         storyDescription: `To make title bolder needs to add the \`fd-object-identifier__title--bold\` modifier class 
-        instead of \`fd-object-identifier__title\`.`
+        to the \`fd-object-identifier__title\`.`
     }
 };
 
@@ -43,7 +43,7 @@ export const titleAsLink = () => `
 </div>
 <br>
 <div class="fd-object-identifier">
-    <p class="fd-object-identifier__title--bold fd-object-identifier__title--link">NoteBook Basic 15</p>
+    <p class="fd-object-identifier__title fd-object-identifier__title--bold fd-object-identifier__title--link">NoteBook Basic 15</p>
 </div>
 <br>
 <div class="fd-object-identifier">
@@ -68,7 +68,7 @@ export const titleAndText = () => `
 <br>
 
 <div class="fd-object-identifier">
-    <p class="fd-object-identifier__title--bold">NoteBook Basic 15</p>
+    <p class="fd-object-identifier__title fd-object-identifier__title--bold">NoteBook Basic 15</p>
     <p class="fd-object-identifier__text">Notebook Basic 15 with 2,80 GHz quad core, 15" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro</p>
 </div>
 
@@ -82,7 +82,7 @@ export const titleAndText = () => `
 <br>
 
 <div class="fd-object-identifier">
-    <p class="fd-object-identifier__title--bold fd-object-identifier__title--link">NoteBook Basic 15</p>
+    <p class="fd-object-identifier__title fd-object-identifier__title--bold fd-object-identifier__title--link">NoteBook Basic 15</p>
     <p class="fd-object-identifier__text">Notebook Basic 15 with 2,80 GHz quad core, 15" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro</p>
 </div>
 `;
@@ -119,7 +119,7 @@ export const withTable = () => `
         <tr class="fd-table__row">
             <td class="fd-table__cell">
                 <div class="fd-object-identifier">
-                    <p class="fd-object-identifier__title--bold">Astro Phone 6</p>
+                    <p class="fd-object-identifier__title fd-object-identifier__title--bold">Astro Phone 6</p>
                     <p class="fd-object-identifier__text">HT-1252</p>
                 </div>
             </td>
