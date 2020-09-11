@@ -104,6 +104,7 @@
   &__icon {
     @include fd-reset();
     @include ie11-active-state-fix();
+    @include fd-icon-contain();
 
     color: var(--sapList_TextColor);
     flex: 0 0 auto;
@@ -112,6 +113,7 @@
     justify-content: center;
     align-items: center;
     font-size: var(--sapFontHeader4Size);
+
 
     &:first-child {
       margin-left: -1rem;
