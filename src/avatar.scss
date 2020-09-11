@@ -48,6 +48,8 @@ $block: #{$fd-namespace}-avatar;
       background-size: cover;
       background-position: 50%;
       border-radius: var(--sapElement_BorderCornerRadius);
+
+      @include fd-icon-contain();
     }
   }
   // BLOCK MODIFIERS ************
@@ -80,7 +82,7 @@ $block: #{$fd-namespace}-avatar;
           left: map_get($size-set, "offset");
         }
 
-        &::before {
+        @include fd-icon-selector() {
           font-size: map_get($size-set, "beforeFontSize");
         }
       }
@@ -127,6 +129,8 @@ $block: #{$fd-namespace}-avatar;
     position: absolute;
     border: 0.0625rem solid var(--sapButton_Emphasized_BorderColor);
     border-radius: $fd-avatar-border-radius;
+
+    @include fd-icon-contain();
   }
   // optional border
   &.#{$block}--border {

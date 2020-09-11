@@ -6,6 +6,7 @@ $block: sap-icon;
   @include fd-reset();
   @include fd-icon-base();
 
+  font-style: normal;
   display: inline-block;
 }
 

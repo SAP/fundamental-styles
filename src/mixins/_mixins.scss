@@ -382,3 +382,23 @@
   min-height: $height;
   max-height: $height;
 }
+
+@mixin fd-icon-contain() {
+  [class*="sap-icon"] {
+    color: inherit;
+    background: inherit;
+    font-size: inherit;
+    border-radius: inherit;
+    line-height: 1;
+
+    @include fd-flex-center();
+
+    @content;
+  }
+}
+
+@mixin fd-icon-selector() {
+  [class*="sap-icon"] {
+    @content;
+  }
+}

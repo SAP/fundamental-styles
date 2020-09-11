@@ -61,7 +61,7 @@ export const overflow = () => `
                     aria-haspopup="true"
                     >
                 ...
-                <span class="fd-breadcrumb__dropdown-icon"></span>
+                    <span class="fd-breadcrumb__dropdown-icon"></span>
                 </div>
             </div>
             <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="breadcrumb1">

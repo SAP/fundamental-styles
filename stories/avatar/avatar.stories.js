@@ -36,11 +36,21 @@ Do not use avatar if:
 };
 
 export const icon = () => `
-<span class="fd-avatar fd-avatar--xs sap-icon--washing-machine" role="presentation"></span>
-<span class="fd-avatar fd-avatar--s sap-icon--washing-machine" role="presentation"></span>
-<span class="fd-avatar fd-avatar--m sap-icon--washing-machine" role="presentation"></span>
-<span class="fd-avatar fd-avatar--l sap-icon--washing-machine" role="presentation"></span>
-<span class="fd-avatar fd-avatar--xl sap-icon--washing-machine" role="presentation"></span>
+<span class="fd-avatar fd-avatar--xs" role="presentation">
+    <i class="sap-icon--washing-machine"></i>
+</span>
+<span class="fd-avatar fd-avatar--s" role="presentation">
+    <i class="sap-icon--washing-machine"></i>
+</span>
+<span class="fd-avatar fd-avatar--m" role="presentation">
+    <i class="sap-icon--washing-machine"></i>
+</span>
+<span class="fd-avatar fd-avatar--l" role="presentation">
+    <i class="sap-icon--washing-machine"></i>
+</span>
+<span class="fd-avatar fd-avatar--xl" role="presentation">
+    <i class="sap-icon--washing-machine"></i>
+</span>
 `;
 
 icon.parameters = {
@@ -71,11 +81,21 @@ initials.parameters = {
 
 
 export const circle = () => `
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle sap-icon--money-bills" role="presentation"></span>
+<span class="fd-avatar fd-avatar--xs fd-avatar--circle" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--s fd-avatar--circle" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--m fd-avatar--circle" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--l fd-avatar--circle" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--xl fd-avatar--circle" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
 <span class="fd-avatar fd-avatar--s fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
 <span class="fd-avatar fd-avatar--m fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
@@ -106,11 +126,21 @@ backgroundImage.parameters = {
 };
 
 export const transparent = () => `
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--transparent sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--transparent sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent sap-icon--money-bills" role="presentation"></span>
+<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--transparent" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--transparent" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace">WW</span>
 <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace">WW</span>
 <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace">WW</span>
@@ -127,11 +157,21 @@ transparent.parameters = {
 
 
 export const placeholderBackground = () => `
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--placeholder sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--placeholder sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--placeholder sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--placeholder sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder sap-icon--money-bills" role="presentation"></span>
+<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--placeholder" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--placeholder" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--placeholder" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--placeholder" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
 `;
 
 placeholderBackground.parameters = {
@@ -143,11 +183,20 @@ placeholderBackground.parameters = {
 
 
 export const tileIconBackground = () => `
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--tile sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--tile sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--tile sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--tile sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile sap-icon--money-bills" role="presentation"></span>
+<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--tile sap-icon--money-bills" role="presentation">
+</span>
+<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--tile" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--tile" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--tile" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
 `;
 
 tileIconBackground.parameters = {
@@ -159,16 +208,36 @@ tileIconBackground.parameters = {
 
 
 export const accentColors = () => `
-<span class="fd-avatar fd-avatar--accent-color-1 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--accent-color-2 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--accent-color-3 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--accent-color-4 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--accent-color-5 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--accent-color-7 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--accent-color-9 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--m sap-icon--money-bills" role="presentation"></span>
+<span class="fd-avatar fd-avatar--accent-color-1 fd-avatar--m" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--accent-color-2 fd-avatar--m" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--accent-color-3 fd-avatar--m" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--accent-color-4 fd-avatar--m" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--accent-color-5 fd-avatar--m" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--m" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--accent-color-7 fd-avatar--m" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--accent-color-9 fd-avatar--m" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--m" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
 `;
 
 accentColors.parameters = {
@@ -180,35 +249,60 @@ accentColors.parameters = {
 
 
 export const zoomIcon = () => `
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1 sap-icon--money-bills" role="presentation">
-    <span class="fd-avatar__zoom-icon sap-icon--edit" role="presentation"></span>
+<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+    <span class="fd-avatar__zoom-icon" role="presentation">
+        <i class="sap-icon--edit"></i>
+    </span>
 </span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-2 sap-icon--money-bills" role="presentation">
-    <span class="fd-avatar__zoom-icon sap-icon--edit" role="presentation"></span>
+<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-2" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+    <span class="fd-avatar__zoom-icon" role="presentation">
+        <i class="sap-icon--edit"></i>
+    </span>
 </span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--accent-color-3 sap-icon--money-bills" role="presentation">
-    <span class="fd-avatar__zoom-icon sap-icon--edit" role="presentation"></span>
+<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--accent-color-3" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+    <span class="fd-avatar__zoom-icon" role="presentation">
+        <i class="sap-icon--edit"></i>
+    </span>
 </span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--accent-color-4 sap-icon--money-bills" role="presentation">
-    <span class="fd-avatar__zoom-icon sap-icon--edit" role="presentation"></span>
+<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--accent-color-4" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+    <span class="fd-avatar__zoom-icon" role="presentation">
+        <i class="sap-icon--edit"></i>
+    </span>
 </span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5 sap-icon--money-bills" role="presentation">
-    <span class="fd-avatar__zoom-icon sap-icon--edit" role="presentation"></span>
+<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+    <span class="fd-avatar__zoom-icon" role="presentation">
+        <i class="sap-icon--edit"></i>
+    </span>
 </span>
 <span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--xs" aria-label="Wendy Wallace">WW
-    <span class="fd-avatar__zoom-icon sap-icon--edit" role="presentation"></span>
+    <span class="fd-avatar__zoom-icon" role="presentation">
+        <i class="sap-icon--edit"></i>
+    </span>
 </span>
 <span class="fd-avatar fd-avatar--accent-color-7 fd-avatar--s" aria-label="Wendy Wallace">WW
-    <span class="fd-avatar__zoom-icon sap-icon--edit" role="presentation"></span>
+    <span class="fd-avatar__zoom-icon" role="presentation">
+        <i class="sap-icon--edit"></i>
+    </span>
 </span>
 <span class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m" aria-label="Wendy Wallace">WW
-    <span class="fd-avatar__zoom-icon sap-icon--edit" role="presentation"></span>
+    <span class="fd-avatar__zoom-icon" role="presentation">
+        <i class="sap-icon--edit"></i>
+    </span>
 </span>
 <span class="fd-avatar fd-avatar--accent-color-9 fd-avatar--l" aria-label="Wendy Wallace">WW
-    <span class="fd-avatar__zoom-icon sap-icon--edit" role="presentation"></span>
+    <span class="fd-avatar__zoom-icon" role="presentation">
+        <i class="sap-icon--edit"></i>
+    </span>
 </span>
 <span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xl" aria-label="Wendy Wallace">WW
-    <span class="fd-avatar__zoom-icon sap-icon--edit" role="presentation"></span>
+    <span class="fd-avatar__zoom-icon" role="presentation">
+        <i class="sap-icon--edit"></i>
+    </span>
 </span>
 `;
 
@@ -221,16 +315,31 @@ zoomIcon.parameters = {
 
 
 export const borders = () => `
-<span class="fd-avatar fd-avatar--xs fd-avatar--transparent fd-avatar--border sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--s fd-avatar--transparent fd-avatar--border sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--m fd-avatar--transparent fd-avatar--border sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--l fd-avatar--transparent fd-avatar--border sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border sap-icon--money-bills" role="presentation"></span>
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace">WW</span>
+<span class="fd-avatar fd-avatar--xs fd-avatar--transparent fd-avatar--border" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--s fd-avatar--transparent fd-avatar--border" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--m fd-avatar--transparent fd-avatar--border" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--l fd-avatar--transparent fd-avatar--border" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border" role="presentation">
+    <i class="sap-icon--money-bills"></i>
+</span>
+<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace">WW
+</span>
+<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace">WW
+</span>
+<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace">WW
+</span>
+<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace">WW
+</span>
+<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace">WW
+</span>
 `;
 
 borders.parameters = {
