@@ -9,6 +9,9 @@ $block: #{$fd-namespace}-dynamic-page-layout;
   $fd-dynamic-page-layout-content-background-color: var(--sapBackgroundColor);
   $fd-dynamic-page-layout-padding-top-bottom: 0.5rem;
   $fd-dynamic-page-layout-header-padding-top-bottom: 1rem;
+  $fd-dynamic-page-layout-box-shadow: var(--sapContent_HeaderShadow);
+  $fd-dynamic-page-layout-button-width: 1.5rem;
+  $fd-dynamic-page-layout-button-padding: 0 0.25rem;
 
   @include fd-reset();
 
@@ -16,37 +19,26 @@ $block: #{$fd-namespace}-dynamic-page-layout;
     padding: $padding-y $padding-x;
   }
 
-  @mixin box-shadow() {
-    box-shadow: var(--sapContent_HeaderShadow);
-    // box-shadow: 0 0.25rem 0.25rem -0.25rem rgba(0,0,0,0.15), inset 0 -0.0625rem 0 0 var(--sapObjectHeader_BorderColor);
-  }
-
-  @mixin no-shadow {
-    &--no-shadow {
-      box-shadow: none;
-    }
-  }
-  // todo: check for mixin naming conventoin
-  @mixin flex-config($justify-content: space-between) {
-    display: flex;
-    flex-direction: row;
-    justify-content: $justify-content;
-    align-items: center;
+  @mixin no-shadow() {
+    box-shadow: none;
   }
 
   @mixin custom-button() {
-    @include flex-config($justify-content: space-evenly);
+    @include fd-flex-vertical-center() {
+      justify-content: space-evenly;
+    }
 
-    margin: 0 0.25rem;
-    width: 1.5rem;
+    margin: $fd-dynamic-page-layout-button-padding;
+    padding: $fd-dynamic-page-layout-button-padding; // for IE
+    width: $fd-dynamic-page-layout-button-width;
     height: 2rem;
-    min-width: 1.5rem;
+    min-width: $fd-dynamic-page-layout-button-width;
   }
 
   &__title-area {
     @include fd-reset();
 
-    @include fd-flex($direction: column) {
+    @include fd-flex(column) {
       justify-content: space-between;
     }
 
@@ -59,15 +51,16 @@ $block: #{$fd-namespace}-dynamic-page-layout;
     }
 
     &--s {
-      @include responsive-page($padding-y: $fd-dynamic-page-layout-padding-top-bottom, $padding-x: 0.5rem);
+      @include responsive-page($fd-dynamic-page-layout-padding-top-bottom, 0.5rem);
     }
 
-    &--m_l {
-      @include responsive-page($padding-y: $fd-dynamic-page-layout-padding-top-bottom, $padding-x: 2rem);
+    &--m,
+    &--l {
+      @include responsive-page($fd-dynamic-page-layout-padding-top-bottom, 2rem);
     }
 
     &--xl {
-      @include responsive-page($padding-y: $fd-dynamic-page-layout-padding-top-bottom, $padding-x: 3rem);
+      @include responsive-page($fd-dynamic-page-layout-padding-top-bottom, 3rem);
     }
 
     &--transparent-bg {
@@ -85,12 +78,13 @@ $block: #{$fd-namespace}-dynamic-page-layout;
 
   &__title-container {
     @include fd-reset();
-    @include flex-config($justify-content: flex-start);
+
+    @include fd-flex-vertical-center() {
+      justify-content: flex-start;
+    }
   }
 
   .#{$fd-namespace}-breadcrumb.#{$block}__breadcrumb {
-    @include fd-reset();
-
     padding: 0.5rem 0 0.25rem 0;
 
     &--s {
@@ -100,7 +94,10 @@ $block: #{$fd-namespace}-dynamic-page-layout;
 
   &__breadcrumb-container {
     @include fd-reset();
-    @include flex-config();
+
+    @include fd-flex-vertical-center() {
+      justify-content: space-between;
+    }
   }
 
   &__title {
@@ -147,8 +144,6 @@ $block: #{$fd-namespace}-dynamic-page-layout;
   }
 
   &__toolbar {
-    @include fd-reset();
-
     padding: 0 0 0 1rem;
     margin-left: auto;  // align toolbar to right in a flex layout
 
@@ -164,28 +159,32 @@ $block: #{$fd-namespace}-dynamic-page-layout;
 
   &__summarized-title-area {
     @include fd-reset();
-    @include flex-config();
+
+    @include fd-flex-vertical-center() {
+      justify-content: space-between;
+    }
 
     word-wrap: break-word;
     background: var(--sapObjectHeader_Background);
-
-    @include box-shadow();
-
+    box-shadow: $fd-dynamic-page-layout-box-shadow;
     height: 2rem;
 
     &--s {
-      @include responsive-page($padding-x: 0.5rem);
+      @include responsive-page(0.5rem);
     }
 
-    &--m_l {
-      @include responsive-page($padding-x: 2rem);
+    &--m,
+    &--l {
+      @include responsive-page(2rem);
     }
 
     &--xl {
-      @include responsive-page($padding-x: 3rem);
+      @include responsive-page(3rem);
     }
 
-    @include no-shadow();
+    &--no-shadow {
+      @include no-shadow();
+    }
 
     &[aria-hidden="true"] {
       display: none;
@@ -200,8 +199,6 @@ $block: #{$fd-namespace}-dynamic-page-layout;
     text-overflow: ellipsis;
   }
 
-  // todo: refactor common stuff to mixins
-
   &__header {
     // contains B and B1
     @include fd-reset();
@@ -214,15 +211,16 @@ $block: #{$fd-namespace}-dynamic-page-layout;
     }
 
     &--s {
-      @include responsive-page($padding-y: $fd-dynamic-page-layout-header-padding-top-bottom, $padding-x: 0.5rem);
+      @include responsive-page($fd-dynamic-page-layout-header-padding-top-bottom, 0.5rem);
     }
 
-    &--m_l {
-      @include responsive-page($padding-y: $fd-dynamic-page-layout-header-padding-top-bottom, $padding-x: 2rem);
+    &--m,
+    &--l {
+      @include responsive-page($fd-dynamic-page-layout-header-padding-top-bottom, 2rem);
     }
 
     &--xl {
-      @include responsive-page($padding-y: $fd-dynamic-page-layout-header-padding-top-bottom, $padding-x: 3rem);
+      @include responsive-page($fd-dynamic-page-layout-header-padding-top-bottom, 3rem);
     }
 
     &[aria-hidden="true"] {
@@ -231,6 +229,8 @@ $block: #{$fd-namespace}-dynamic-page-layout;
   }
 
   &__tabs {
+    @include fd-reset();
+
     &--overflow {
       overflow: hidden;
     }
@@ -240,7 +240,8 @@ $block: #{$fd-namespace}-dynamic-page-layout;
       @include responsive-page($padding-x: 0.5rem);
     }
 
-    &--m_l {
+    &--m,
+    &--l {
       @include responsive-page($padding-x: 2rem);
     }
 
@@ -249,14 +250,15 @@ $block: #{$fd-namespace}-dynamic-page-layout;
     }
 
     &--add-shadow {
-      @include box-shadow();
+      box-shadow: $fd-dynamic-page-layout-box-shadow;
     }
   }
 
   &__header-visibility-container {
     @include fd-reset();
     @include fd-flex-center();
-    @include box-shadow();
+
+    box-shadow: $fd-dynamic-page-layout-box-shadow;
     // left and right gradient for the pin/collapse buttons
     &--left-gradient {
       background-image: linear-gradient(to left, var(--sapHighlightColor), transparent);
@@ -287,12 +289,8 @@ $block: #{$fd-namespace}-dynamic-page-layout;
       height: 0.0625rem;
 
       // button styles
-      .#{$block}__pin-button.#{$fd-namespace}-button {
-        @include custom-button();
-      }
-      .#{$block}__expand-button.#{$fd-namespace}-button {
-        @include custom-button();
-      }
+      .#{$block}__pin-button.#{$fd-namespace}-button,
+      .#{$block}__expand-button.#{$fd-namespace}-button,
       .#{$block}__collapse-button.#{$fd-namespace}-button {
         @include custom-button();
       }
@@ -302,38 +300,29 @@ $block: #{$fd-namespace}-dynamic-page-layout;
       display: none;
     }
 
-    // &--no-shadow{
-    //     box-shadow: none;
-    // }
-    @include no-shadow();
+    &--no-shadow {
+      @include no-shadow();
+    }
   }
-
-  // &__pin-button{
-
-  // }
-
-  // &__collapse-button{
-
-  // }
 
   &__content {
     // contains D
     @include fd-reset();
-    // @include responsive-page();
+
     padding: 1rem 0 0 0;
-    // padding-top: 1rem;
     background-color: $fd-dynamic-page-layout-content-background-color;
 
     &--s {
-      @include responsive-page($padding-y: $fd-dynamic-page-layout-header-padding-top-bottom, $padding-x: 0.5rem);
+      @include responsive-page($fd-dynamic-page-layout-header-padding-top-bottom, 0.5rem);
     }
 
-    &--m_l {
-      @include responsive-page($padding-y: $fd-dynamic-page-layout-header-padding-top-bottom, $padding-x: 2rem);
+    &--m,
+    &--l {
+      @include responsive-page($fd-dynamic-page-layout-header-padding-top-bottom, 2rem);
     }
 
     &--xl {
-      @include responsive-page($padding-y: $fd-dynamic-page-layout-header-padding-top-bottom, $padding-x: 3rem);
+      @include responsive-page($fd-dynamic-page-layout-header-padding-top-bottom, 3rem);
     }
 
     // for list and transparent, different bg colors
@@ -344,18 +333,5 @@ $block: #{$fd-namespace}-dynamic-page-layout;
     &--transparent-bg {
       background-color: transparent;
     }
-  }
-
-  &__footer {
-    // contains E
-    // &--s{
-    //     @include responsive-page($padding-x: 0.5rem);
-    // }
-    // &--m_l{
-    //     @include responsive-page($padding-x: 2rem);
-    // }
-    // &--xl{
-    //     @include responsive-page($padding-x: 3rem);
-    // }
   }
 }

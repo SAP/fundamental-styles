@@ -50,14 +50,16 @@ export default {
       - <code class="docs-code">fd-dynamic-page-layout\\_\\_pin-button </code> Pin button
     - <code class="docs-code">fd-dynamic-page-layout\\_\\_tabs</code> Tabs/Wizard can be optionally used as a header extension
     - <code class="docs-code">fd-dynamic-page-layout\\_\\_content</code> Dynamic Page Layout content
-    - <code class="docs-code">fd-dynamic-page-layout\\_\\_footer</code> Dynamic Page Layout footer
-        `,
+
+Note: Footer is optional and used for finalizing page actions. It is usually displayed in edit mode and uses a Floating Footer Bar.
+There are no specific styles for footer when used with Dynamic Page.
+`,
         tags: ['f3', 'a11y', 'theme', 'development']
     }
 };
 
 export const desktop = () => `
-    <div class="fd-dynamic-page-layout" role="region" aria-label="Dynamic Page Layout Standard Example">
+    <div class="fd-dynamic-page-layout" role="region" aria-label="Dynamic Page Layout Desktop Example">
         <div class="fd-dynamic-page-layout__title-area fd-dynamic-page-layout__title-area--xl">
             <ul class="fd-dynamic-page-layout__breadcrumb fd-breadcrumb">
                 <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
@@ -85,7 +87,7 @@ export const desktop = () => `
             </div>
             <div class="fd-dynamic-page-layout__subtitle"> Oversized multimaterial sneakers with quilted effect </div>
         </div>
-        <div class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--xl" role="region" >
+        <div class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--xl" role="region" aria-label="Dynamic Page Desktop Header" >
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
             delectus necessitatibus incidunt numquam asperiores tenetur iure. 
             Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
@@ -155,19 +157,18 @@ export const desktop = () => `
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
             </div>
         </div>
-        <div class="fd-dynamic-page-layout__footer">
-            <div class="fd-bar fd-bar--floating-footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
-                    </div>
-                    <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
-                    </div>
+        <div class="fd-bar fd-bar--floating-footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
+                </div>
+                <div class="fd-bar__element">
+                    <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
                 </div>
             </div>
-        </div>   
+        </div>
     </div>
+    <br /><br />
 `;
 
 desktop.storyName = 'Desktop mode';
@@ -175,14 +176,14 @@ desktop.parameters = {
     docs: {
         iframeHeight: 150,
         storyDescription: 'The dynamic page layout with Desktop specification(L). The same specification also applies to XL and XXL as well.' +
-        'Please note the difference in the way tabs are used. Tabs must use `fd-dynamic-page-layout__tabs` along with the size modifiers(--m_l, --xl or --s) and' +
+        'Please note the difference in the way tabs are used. Tabs must use `fd-dynamic-page-layout__tabs` along with the size modifiers(--m, --l, --xl or --s) and' +
         '`--add-shadow` at the `<ul>` level, and to ensure the correct box-shadow styling, should also add `--overflow` modifier at the parent level.'
     }
 };
 
 export const tablet = () => `
-    <div class="fd-dynamic-page-layout" role="region" aria-label="Dynamic Page Layout Standard Example">
-        <div class="fd-dynamic-page-layout__title-area fd-dynamic-page-layout__title-area--m_l">
+    <div class="fd-dynamic-page-layout" role="region" aria-label="Dynamic Page Layout Tablet Example">
+        <div class="fd-dynamic-page-layout__title-area fd-dynamic-page-layout__title-area--m">
             <div class="fd-dynamic-page-layout__breadcrumb-container">
                 <ul class="fd-dynamic-page-layout__breadcrumb fd-breadcrumb">
                     <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
@@ -211,7 +212,7 @@ export const tablet = () => `
             </div>
             <div class="fd-dynamic-page-layout__subtitle"> Oversized multimaterial sneakers with quilted effect </div>
         </div>
-        <div class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--m_l">
+        <div class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--m">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
             delectus necessitatibus incidunt numquam asperiores tenetur iure. 
             Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
@@ -234,16 +235,16 @@ export const tablet = () => `
             <div class="fd-dynamic-page-layout__header-visibility-container--right-gradient"></div>
         </div>
         <div class="fd-dynamic-page-layout__tabs--overflow">
-            <ul class="fd-tabs fd-tabs--l fd-dynamic-page-layout__tabs fd-dynamic-page-layout__tabs--m_l fd-dynamic-page-layout__tabs--add-shadow" role="tablist">
+            <ul class="fd-tabs fd-tabs--l fd-dynamic-page-layout__tabs fd-dynamic-page-layout__tabs--m fd-dynamic-page-layout__tabs--add-shadow" role="tablist">
                 <li role="listitem" class="fd-tabs__item">
-                    <a class="fd-tabs__link" aria-controls="fuCwV550" href="#fuCwV550" role="tab">
+                    <a class="fd-tabs__link" aria-controls="fuCwV551" href="#fuCwV551" role="tab">
                         <span class="fd-tabs__tag">
                             Link
                         </span>
                     </a>
                 </li>
                 <li role="listitem" class="fd-tabs__item">
-                    <a class="fd-tabs__link" aria-controls="AiWfz165" aria-selected="true" href="#AiWfz165" role="tab">
+                    <a class="fd-tabs__link" aria-controls="AiWfz166" aria-selected="true" href="#AiWfz166" role="tab">
                         <span class="fd-tabs__tag">
                             Selected
                         </span>
@@ -251,14 +252,14 @@ export const tablet = () => `
                 </li>
             </ul>
         </div>
-        <div class="fd-dynamic-page-layout__content fd-dynamic-page-layout__content--m_l">
-            <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV550" role="tabpanel">
+        <div class="fd-dynamic-page-layout__content fd-dynamic-page-layout__content--m">
+            <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV551" role="tabpanel">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
                 eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
                 dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
             </div>
-            <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz165" role="tabpanel" >
+            <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz166" role="tabpanel" >
                 Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
                 Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
@@ -281,26 +282,26 @@ export const tablet = () => `
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
             </div>
         </div>
-        <div class="fd-dynamic-page-layout__footer">
-            <div class="fd-bar fd-bar--floating-footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
-                    </div>
-                    <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
-                    </div>
+        <div class="fd-bar fd-bar--floating-footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
+                </div>
+                <div class="fd-bar__element">
+                    <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
                 </div>
             </div>
-        </div>   
+        </div>
     </div>
+    <br /><br />
 `;
 
 tablet.storyName = 'Tablet mode';
 tablet.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'The dynamic page layout with Tablet specification(L). Apply modifier `page-m_l` to the `fd-dynamic-page-layout` class, and modifier `m` to the `fd-dynamic-page-layout__title` element.' +
+        storyDescription: 'The dynamic page layout with Tablet specification(L). Use the `--m` modifier on `title-area`, `breadcrumb` ' +
+        '`header`, and `content` elements to get the Tablet spacings.' +
         ' The spec recommends navigation actions in a separate row above the global actions. The navigation actions are placed at the same level as the breadcrumb.'
     }
 };
@@ -335,7 +336,7 @@ export const mobile = () => `
             </div>
             <div class="fd-dynamic-page-layout__subtitle"> Expanded header in phone </div>
         </div>
-        <div class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--s" role="region">
+        <div class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--s" role="region" aria-label="Dynamic Page Mobile Header">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
             delectus necessitatibus incidunt numquam asperiores tenetur iure. 
             Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
@@ -356,14 +357,14 @@ export const mobile = () => `
         <div class="fd-dynamic-page-layout__tabs--overflow">
             <ul class="fd-tabs fd-tabs--l fd-dynamic-page-layout__tabs fd-dynamic-page-layout__tabs--s fd-dynamic-page-layout__tabs--add-shadow" role="tablist">
                 <li role="listitem" class="fd-tabs__item">
-                    <a class="fd-tabs__link" aria-controls="fuCwV550" href="#fuCwV550" role="tab">
+                    <a class="fd-tabs__link" aria-controls="fuCwV552" href="#fuCwV552" role="tab">
                         <span class="fd-tabs__tag">
                             Link
                         </span>
                     </a>
                 </li>
                 <li role="listitem" class="fd-tabs__item">
-                    <a class="fd-tabs__link" aria-controls="AiWfz165" aria-selected="true" href="#AiWfz165" role="tab">
+                    <a class="fd-tabs__link" aria-controls="AiWfz167" aria-selected="true" href="#AiWfz167" role="tab">
                         <span class="fd-tabs__tag">
                             Selected
                         </span>
@@ -372,34 +373,32 @@ export const mobile = () => `
             </ul>  
         </div>     
         <div class="fd-dynamic-page-layout__content fd-dynamic-page-layout__content--s">
-            <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV550" role="tabpanel">
+            <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV552" role="tabpanel">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
                 eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
                 dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
             </div>
-            <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz165" role="tabpanel">
+            <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz167" role="tabpanel">
                 Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
                 Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
             </div>
         </div>
-        <div class="fd-dynamic-page-layout__footer">
-            <div class="fd-bar fd-bar--floating-footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
-                    </div>
-                    <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
-                    </div>
+        <div class="fd-bar fd-bar--floating-footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
+                </div>
+                <div class="fd-bar__element">
+                    <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
                 </div>
             </div>
-        </div>   
+        </div>
     </div>
 
-    <div class="fd-dynamic-page-layout" style="width:30%" role="region" aria-label="Dynamic Page Layout Mobile Example">
+    <div class="fd-dynamic-page-layout" style="width:30%" role="region" aria-label="Dynamic Page Layout Mobile Collapsed Example">
         <div class="fd-dynamic-page-layout__title-area fd-dynamic-page-layout__title-area--s fd-dynamic-page-layout__title-area--collapsed">
             <div class="fd-dynamic-page-layout__breadcrumb-container">
                 <ul class="fd-dynamic-page-layout__breadcrumb--s fd-breadcrumb">
@@ -427,7 +426,7 @@ export const mobile = () => `
             </div>
             <div class="fd-dynamic-page-layout__subtitle"> Collapsed header </div>
         </div>
-        <div class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--s" role="region" aria-hidden="true" id="fddplhvc1"  >
+        <div class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--s" role="region" aria-hidden="true" id="fddplhvcm1"  aria-label="Dynamic Page Mobile Collapsed Header" >
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
             delectus necessitatibus incidunt numquam asperiores tenetur iure. 
             Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
@@ -448,14 +447,14 @@ export const mobile = () => `
         <div class="fd-dynamic-page-layout__tabs--overflow">
             <ul class="fd-tabs fd-tabs--l fd-dynamic-page-layout__tabs fd-dynamic-page-layout__tabs--s fd-dynamic-page-layout__tabs--add-shadow" role="tablist">
                 <li role="listitem" class="fd-tabs__item">
-                    <a class="fd-tabs__link" aria-controls="fuCwV550" href="#fuCwV550" role="tab">
+                    <a class="fd-tabs__link" aria-controls="fuCwV553" href="#fuCwV553" role="tab">
                         <span class="fd-tabs__tag">
                             Link
                         </span>
                     </a>
                 </li>
                 <li role="listitem" class="fd-tabs__item">
-                    <a class="fd-tabs__link" aria-controls="AiWfz165" aria-selected="true" href="#AiWfz165" role="tab">
+                    <a class="fd-tabs__link" aria-controls="AiWfz168" aria-selected="true" href="#AiWfz168" role="tab">
                         <span class="fd-tabs__tag">
                             Selected
                         </span>
@@ -464,34 +463,32 @@ export const mobile = () => `
             </ul>   
         </div>    
         <div class="fd-dynamic-page-layout__content fd-dynamic-page-layout__content--s">
-            <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV550" role="tabpanel">
+            <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV553" role="tabpanel">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
                 eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
                 dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
             </div>
-            <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz165" role="tabpanel">
+            <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz168" role="tabpanel">
                 Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
                 Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
             </div>
         </div>
-        <div class="fd-dynamic-page-layout__footer">
-            <div class="fd-bar fd-bar--floating-footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
-                    </div>
-                    <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
-                    </div>
+        <div class="fd-bar fd-bar--floating-footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
+                </div>
+                <div class="fd-bar__element">
+                    <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
                 </div>
             </div>
-        </div>   
+        </div>
     </div>
 
-    <div class="fd-dynamic-page-layout" style="width:30%" role="region" aria-label="Dynamic Page Layout Mobile Example">
+    <div class="fd-dynamic-page-layout" style="width:30%" role="region" aria-label="Dynamic Page Layout Mobile Summary Line Example">
         <div class="fd-dynamic-page-layout__summarized-title-area fd-dynamic-page-layout__summarized-title-area--s fd-dynamic-page-layout__summarized-title-area--no-shadow">
             <div class="fd-dynamic-page-layout__summarized-title"> Balenciaga Tripple S Trainers </div>
             <div class="fd-dynamic-page-layout__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
@@ -526,7 +523,7 @@ export const mobile = () => `
             </div>
             <div class="fd-dynamic-page-layout__subtitle"> Collapsed title area and header with Summary Line </div>
         </div>
-        <div class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--s" role="region" aria-hidden="true" id="fddplhvc1"  >
+        <div class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--s" role="region" aria-hidden="true" id="fddplhvcm2"  aria-label="Dynamic Page Mobile Collapsed Header" >
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
             delectus necessitatibus incidunt numquam asperiores tenetur iure. 
             Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
@@ -538,7 +535,7 @@ export const mobile = () => `
                         aria-label="See More" 
                         aria-expanded="false" 
                         aria-haspopup="true" 
-                        aria-controls="fddplhvcm1">
+                        aria-controls="fddplhvcm2">
                         <i class="sap-icon--slim-arrow-down"></i>
                 </button>
             </div>
@@ -547,14 +544,14 @@ export const mobile = () => `
         <div class="fd-dynamic-page-layout__tabs--overflow">
             <ul class="fd-tabs fd-tabs--l fd-dynamic-page-layout__tabs fd-dynamic-page-layout__tabs--s fd-dynamic-page-layout__tabs--add-shadow" role="tablist">
                 <li role="listitem" class="fd-tabs__item">
-                    <a class="fd-tabs__link" aria-controls="fuCwV550" href="#fuCwV550" role="tab">
+                    <a class="fd-tabs__link" aria-controls="fuCwV554" href="#fuCwV554" role="tab">
                         <span class="fd-tabs__tag">
                             Link
                         </span>
                     </a>
                 </li>
                 <li role="listitem" class="fd-tabs__item">
-                    <a class="fd-tabs__link" aria-controls="AiWfz165" aria-selected="true" href="#AiWfz165" role="tab">
+                    <a class="fd-tabs__link" aria-controls="AiWfz169" aria-selected="true" href="#AiWfz169" role="tab">
                         <span class="fd-tabs__tag">
                             Selected
                         </span>
@@ -563,13 +560,13 @@ export const mobile = () => `
             </ul>  
         </div>     
         <div class="fd-dynamic-page-layout__content fd-dynamic-page-layout__content--s">
-            <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV550" role="tabpanel">
+            <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV554" role="tabpanel">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
                 eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
                 dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
             </div>
-            <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz165" role="tabpanel">
+            <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz169" role="tabpanel">
                 <h4>This is an example of a collapsed title area and header and instead of displaying a Summary Line</h4>
                 <br />
                 Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
@@ -578,20 +575,19 @@ export const mobile = () => `
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
             </div>
         </div>
-        <div class="fd-dynamic-page-layout__footer">
-            <div class="fd-bar fd-bar--floating-footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
-                    </div>
-                    <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
-                    </div>
+        <div class="fd-bar fd-bar--floating-footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
+                </div>
+                <div class="fd-bar__element">
+                    <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
                 </div>
             </div>
-        </div>   
+        </div>
     </div>
 </div>
+<br /><br />
 `;
 
 mobile.storyName = 'Mobile mode';
@@ -610,7 +606,7 @@ export const expandable = () => `
     <h3>1:  Header with both collapse and pin buttons, expanded by default. </h3>
     <hr />
     <br /><br />    
-    <div class="fd-dynamic-page-layout" role="region" aria-label="Dynamic Page Layout Standard Example">
+    <div class="fd-dynamic-page-layout" role="region" aria-label="Dynamic Page Layout Expandable Example">
         <div class="fd-dynamic-page-layout__title-area fd-dynamic-page-layout__title-area--xl">
             <ul class="fd-dynamic-page-layout__breadcrumb fd-breadcrumb">
                 <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
@@ -638,7 +634,7 @@ export const expandable = () => `
             </div>
             <div class="fd-dynamic-page-layout__subtitle"> Oversized multimaterial sneakers with quilted effect </div>
         </div>
-        <div class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--xl" role="region"  aria-hidden="false" id="fddplhvc1" >
+        <div class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--xl" role="region"  aria-hidden="false" id="fddplhvc1" aria-label="Default expanded header" >
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
             delectus necessitatibus incidunt numquam asperiores tenetur iure. 
             Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
@@ -674,7 +670,7 @@ export const expandable = () => `
     <h3>2: Collapsed Header with both expand and pin buttons. </h3>
     <hr />
     <br /><br />
-    <div class="fd-dynamic-page-layout" role="region" aria-label="Dynamic Page Layout Standard Example">
+    <div class="fd-dynamic-page-layout" role="region" aria-label="Dynamic Page Layout Collapsed Example">
         <div class="fd-dynamic-page-layout__title-area fd-dynamic-page-layout__title-area--xl fd-dynamic-page-layout__title-area--collapsed">
             <ul class="fd-dynamic-page-layout__breadcrumb fd-breadcrumb">
                 <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
@@ -702,7 +698,7 @@ export const expandable = () => `
             </div>
             <div class="fd-dynamic-page-layout__subtitle"> Oversized multimaterial sneakers with quilted effect </div>
         </div>
-        <div class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--xl" role="region"  aria-hidden="true" id="fddplhvc2" >
+        <div class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--xl" role="region"  aria-hidden="true" id="fddplhvc2"  aria-label="Collapsed header">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
             delectus necessitatibus incidunt numquam asperiores tenetur iure. 
             Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
@@ -738,7 +734,7 @@ export const expandable = () => `
     <hr />
     <br /><br />
 
-    <div class="fd-dynamic-page-layout" role="region" aria-label="Dynamic Page Layout Standard Example">
+    <div class="fd-dynamic-page-layout" role="region" aria-label="Dynamic Page Layout Pinnable Example">
         <div class="fd-dynamic-page-layout__title-area fd-dynamic-page-layout__title-area--xl">
             <ul class="fd-dynamic-page-layout__breadcrumb fd-breadcrumb">
                 <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
@@ -766,7 +762,7 @@ export const expandable = () => `
             </div>
             <div class="fd-dynamic-page-layout__subtitle"> Oversized multimaterial sneakers with quilted effect </div>
         </div>
-        <div class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--xl" role="region" id="fddplhvc3" aria-hidden="false" >
+        <div class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--xl" role="region" id="fddplhvc3" aria-hidden="false"  aria-label="Pinned header">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
             delectus necessitatibus incidunt numquam asperiores tenetur iure. 
             Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
@@ -791,6 +787,7 @@ export const expandable = () => `
             dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
         </div>
     </div>
+    <br /><br />
 `;
 
 expandable.storyName = 'Expandable';
@@ -852,7 +849,7 @@ expandable.parameters = {
 
 export const rtl = () => `
     <div dir="rtl">
-        <div class="fd-dynamic-page-layout" role="region" aria-label="Dynamic Page Layout Standard Example">
+        <div class="fd-dynamic-page-layout" role="region" aria-label="Dynamic Page Layout RTL Example">
             <div class="fd-dynamic-page-layout__title-area fd-dynamic-page-layout__title-area--xl">
                 <ul class="fd-dynamic-page-layout__breadcrumb fd-breadcrumb">
                     <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
@@ -880,7 +877,7 @@ export const rtl = () => `
                 </div>
                 <div class="fd-dynamic-page-layout__subtitle"> Oversized multimaterial sneakers with quilted effect </div>
             </div>
-            <div class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--xl" role="region" >
+            <div class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--xl" role="region" aria-label="RTL Header">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
                 delectus necessitatibus incidunt numquam asperiores tenetur iure. 
                 Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
@@ -905,14 +902,14 @@ export const rtl = () => `
             <div class="fd-dynamic-page-layout__tabs--overflow">
                 <ul class="fd-tabs fd-tabs--l fd-dynamic-page-layout__tabs fd-dynamic-page-layout__tabs--xl fd-dynamic-page-layout__tabs--add-shadow" role="tablist">
                     <li role="listitem" class="fd-tabs__item">
-                        <a class="fd-tabs__link" aria-controls="fuCwV550" href="#fuCwV550" role="tab">
+                        <a class="fd-tabs__link" aria-controls="fuCwV555" href="#fuCwV555" role="tab">
                             <span class="fd-tabs__tag">
                                 Link
                             </span>
                         </a>
                     </li>
                     <li role="listitem" class="fd-tabs__item">
-                        <a class="fd-tabs__link" aria-controls="AiWfz165" aria-selected="true" href="#AiWfz165" role="tab">
+                        <a class="fd-tabs__link" aria-controls="AiWfz164" aria-selected="true" href="#AiWfz164" role="tab">
                             <span class="fd-tabs__tag">
                                 Selected
                             </span>
@@ -921,13 +918,13 @@ export const rtl = () => `
                 </ul>
             </div>
             <div class="fd-dynamic-page-layout__content fd-dynamic-page-layout__content--xl">
-                <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV550" role="tabpanel">
+                <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV555" role="tabpanel">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
                     eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
                     dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
                 </div>
-                <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz165" role="tabpanel" >
+                <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz164" role="tabpanel" >
                     Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
                     in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
                     Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
@@ -950,20 +947,19 @@ export const rtl = () => `
                     in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
                 </div>
             </div>
-            <div class="fd-dynamic-page-layout__footer">
-                <div class="fd-bar fd-bar--floating-footer">
-                    <div class="fd-bar__right">
-                        <div class="fd-bar__element">
-                            <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
-                        </div>
-                        <div class="fd-bar__element">
-                            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
-                        </div>
+            <div class="fd-bar fd-bar--floating-footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
                     </div>
                 </div>
-            </div>   
+            </div>
         </div>
     </div>
+    <br /><br />
 `;
 
 rtl.storyName = 'RTL';
