@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.46...v0.12.0-rc.47) (2020-09-11)
+
+
+### Bug Fixes
+
+* Add spacing for list selection ([#1569](https://github.com/SAP/fundamental-styles/issues/1569)) ([c06910d](https://github.com/SAP/fundamental-styles/commit/c06910d7d9864b168e88943c802ba1302bb10988))
+
 ## [0.12.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.45...v0.12.0-rc.46) (2020-09-10)
 
 ## [0.12.0-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.44...v0.12.0-rc.45) (2020-09-09)
