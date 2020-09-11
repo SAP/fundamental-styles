@@ -13,7 +13,7 @@ export default {
 };
 
 
-export const desktopAndTablet = () => `   
+export const tablet = () => `   
 <label class="fd-form-label">Combobox Tablet Cozy Mode - default mode</label><br/><br/>
 
 <nav aria-label="fd-menu-nav" class="fd-menu">
@@ -40,8 +40,17 @@ export const desktopAndTablet = () => `
         </li>
     </ul>
 </nav>
+`;
 
-<br> 
+tablet.storyName = 'Default (tablet)';
+tablet.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: 'The basic stucture of a menu. Place the menu item title in a `<span>` tag using class `fd-menu__title` and wrap it in the `fd-menu__link` and `fd-menu__item` classes as shown. Default mode is the cozy tablet mode, no class has to be added for this.'
+    }
+};
+
+export const desktop = () => `   
 <label class="fd-form-label">Combobox Desktop Compact Mode</label><br/><br/>
 
 <nav class="fd-menu fd-menu--compact">
@@ -70,11 +79,11 @@ export const desktopAndTablet = () => `
 </nav>
 `;
 
-desktopAndTablet.storyName = 'Desktop and Tablet Modes';
-desktopAndTablet.parameters = {
+desktop.storyName = 'Desktop';
+desktop.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'The basic stucture of a menu. Place the menu item title in a `<span>` tag using class `fd-menu__title` and wrap it in the `fd-menu__link` and `fd-menu__item` classes as shown. Default mode is the cozy tablet mode, no class has to be added for this. Use class modifier`fd-menu--compact` on menu container level for desktop mode.'
+        storyDescription: 'Use class modifier`fd-menu--compact` on menu container level for desktop mode.'
     }
 };
 

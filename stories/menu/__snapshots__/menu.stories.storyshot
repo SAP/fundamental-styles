@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Menu Desktop and Tablet Modes 1`] = `
+exports[`Storyshots Components/Menu Default (tablet) 1`] = `
 <section>
      
 
@@ -136,9 +136,12 @@ exports[`Storyshots Components/Menu Desktop and Tablet Modes 1`] = `
   </nav>
   
 
+</section>
+`;
 
-  <br />
-   
+exports[`Storyshots Components/Menu Desktop 1`] = `
+<section>
+     
 
   <label
     class="fd-form-label"
