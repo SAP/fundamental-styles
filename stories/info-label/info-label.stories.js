@@ -112,7 +112,7 @@ rtl.storyName = 'RTL';
 rtl.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `The info label can be displayed from right to left on the screen.
+        storyDescription: `The info label can be displayed from right to left on the screen so that it may be used internationally.
 `
     }
 };

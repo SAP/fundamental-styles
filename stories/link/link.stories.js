@@ -4,20 +4,14 @@ export default {
     title: 'Components/Link',
     parameters: {
         description: `A link (also known as hyperlink) is an interactive text element that allows users to navigate to another page or trigger a certain event.
-
 ##Usage
-
 **Use a link if:**
-
 - You want to navigate to another page.
 - You want to trigger an event.
 - You want to point to an object or person. If so, you can either navigate to the object or person’s details or display them in a quick view after the link is triggered.
-
 ** Do not use a link if:**
-
 - You could use a **Button** to trigger the action instead.
 - There is no target or reference to be linked to.
-
 ##Accessibility
 Use a meaningful link text that indicates what will happen when the user interacts with the link i.e. *Open Sales Order*. 
 Avoid texts such as *Click Here* or *Link*, as these do not make it clear to the user what the purpose of the link is.
@@ -62,10 +56,8 @@ primary.parameters = {
 | Subtle | <code>fd-link--subtle</code> | Distinguish between important (default) and less important (subtle) links in tables with large data lists. |
 | Disabled | <code>fd-link--disabled</code> | Display a link that a user cannot interactive with. |
 | Inverted | <code>fd-link--inverted</code> | Display a link in a **Shell Bar**. |
-
 ###Icons
 You can display a link with an icon placed on either side of the link text.
-
 | Icon style | Modifier class |
 | ----------: | :-------------| 
 | Left Arrow | <code>sap-icon--slim-arrow-left sap-icon--s</code> |
