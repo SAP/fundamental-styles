@@ -10,15 +10,15 @@ $block: #{$fd-namespace}-object-identifier;
     color: var(--sapList_TextColor);
   }
 
-  $fd-fd-object-identifier-title-font-size: var(--sapFontLargeSize);
-  $fd-fd-object-identifier-title-font-weight: bold;
+  $fd-object-identifier-title-font-size: var(--sapFontLargeSize);
+  $fd-object-identifier-title-font-weight: bold;
 
   &__title,
-  &__title-bold {
+  &__title--bold {
     @include fd-object-identifier-title-base();
   }
 
-  &__link {
+  &__title--link {
     @include fd-reset();
     @include fd-link();
     @include action-cursor();
@@ -26,20 +26,20 @@ $block: #{$fd-namespace}-object-identifier;
 
   /* stylelint-disable no-duplicate-selectors */
   &__title,
-  &__title-bold {
-    font-size: $fd-fd-object-identifier-title-font-size;
+  &__title--bold {
+    font-size: $fd-object-identifier-title-font-size;
 
     a {
-      font-size: $fd-fd-object-identifier-title-font-size;
+      font-size: $fd-object-identifier-title-font-size;
     }
   }
   /* stylelint-enable no-duplicate-selectors */
 
-  &__title-bold {
-    font-weight: $fd-fd-object-identifier-title-font-weight;
+  &__title--bold {
+    font-weight: $fd-object-identifier-title-font-weight;
 
     a {
-      font-weight: $fd-fd-object-identifier-title-font-weight;
+      font-weight: $fd-object-identifier-title-font-weight;
     }
   }
 
@@ -54,7 +54,7 @@ $block: #{$fd-namespace}-object-identifier;
 table {
   .#{$block} {
     &__title,
-    &__title-bold {
+    &__title--bold {
       font-size: var(--sapFontSize);
     }
   }
