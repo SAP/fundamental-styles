@@ -93,7 +93,7 @@ $block: #{$fd-namespace}-notification;
       display: flex;
       align-items: baseline;
       border-bottom: $fd-notification-border;
-      padding: 0.75rem 0.5rem 0 1rem;
+      padding: 0.75rem 0.5rem 0.25rem 1rem;
 
       @include fd-rtl() {
         padding-left: 0.5rem;
@@ -132,6 +132,7 @@ $block: #{$fd-namespace}-notification;
 
       font-weight: bold;
       font-size: var(--sapFontHeader6Size);
+      max-height: 2.5rem;
     }
 
     .#{$block}__paragraph {
@@ -139,6 +140,7 @@ $block: #{$fd-namespace}-notification;
       @include line-clamp(2);
 
       padding-top: 0.5rem;
+      max-height: 2.75rem;
     }
 
     .#{$block}__footer {
@@ -163,10 +165,14 @@ $block: #{$fd-namespace}-notification;
     display: flex;
     align-items: self-start;
 
-    .fd-button {
+    .#{$fd-namespace}-button {
       margin-right: 0.5rem;
 
       &:last-child {
+        margin-right: 0;
+      }
+
+      @include fd-rtl() {
         margin-right: 0;
       }
     }

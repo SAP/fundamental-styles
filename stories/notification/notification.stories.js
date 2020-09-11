@@ -95,7 +95,7 @@ export const information = () => `
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <p class="fd-notification__footer">SAP Analytics Cloud<span class="fd-notification__footer--separator">&bullet;</span>Just now
-                <button class="fd-button fd-button--transparent fd-button--compact fd-notification__footer--button">Show less</button>
+                <button class="fd-button fd-button--transparent fd-button--compact">Show less</button>
             </p>
         </div>
         <div class="fd-notification__actions">
@@ -147,7 +147,9 @@ export const warning = () => `
 warning.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `Notifications can display warning alerts by adding the <code>fd-message-strip fd-message-strip--warning fd-message-strip--dismissible</code> class together with <code>role="alert"</code>. `
+        storyDescription: `
+Notifications can display warning alerts by adding the <code>fd-message-strip fd-message-strip--warning fd-message-strip--dismissible</code> class together with <code>role="alert"</code>.
+`
     }
 };
 
@@ -183,7 +185,9 @@ export const error = () => `
 error.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `Notifications can display error alerts by adding the <code>fd-message-strip fd-message-strip--error fd-message-strip--dismissible</code> class together with <code>role="alert"</code>.`
+        storyDescription: `
+Notifications can display error alerts by adding the <code>fd-message-strip fd-message-strip--error fd-message-strip--dismissible</code> class together with <code>role="alert"</code>.
+`
     }
 };
 
@@ -223,7 +227,7 @@ export const notificationGroup = () => `
             </div>
         </div>
         <div class="fd-notification__actions">
-            <button class="fd-button fd-button--compact fd-notification__actions--button">Accept All</button>
+            <button class="fd-button fd-button--compact">Accept All</button>
             <button class="fd-button fd-button--transparent fd-button--compact" aria-label="Close">
                 <i class="sap-icon--decline"></i>
             </button>
