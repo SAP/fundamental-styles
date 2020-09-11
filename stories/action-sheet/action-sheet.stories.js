@@ -20,8 +20,8 @@ clustered if there is not enough space on the screen.
 **Do not use the action sheet if:**
 
 - The menu provides only one option. In this case, consider using a **Button** instead.
-- You need to show a hierarchical menu. In this case, use the **MenuButton** instead.
-- Your users would benefit more from a **SplitButton**, which offers an easily-accessible default action, with the option to include additional actions.
+- You need to show a hierarchical menu. In this case, use the menu button instead.
+- Your users would benefit more from a split button, which offers an easily-accessible default action, with the option to include additional actions.
         `,
         tags: ['a11y', 'f3', 'theme', 'responsive']
     }
@@ -76,7 +76,8 @@ export const actionSheetDesktop = () => `
 
 actionSheetDesktop.parameters = {
     docs: {
-        iframeHeight: 300
+        iframeHeight: 300,
+        storyDescription: 'The action sheet is displayed in desktop mode by adding the `fd-action-sheet--compact` modifier class to the container, and `fd-button--compact` to each button.'
     }
 };
 
@@ -132,7 +133,8 @@ export const actionSheetTablet = () => `
 
 actionSheetTablet.parameters = {
     docs: {
-        iframeHeight: 300
+        iframeHeight: 300,
+        storyDescription: 'Although the tablet mode is visually similar to desktop, it doesn\'t require any modifier classes. Therefore, the container and buttons appear slightly larger for better visibility.'
     }
 };
 
@@ -192,7 +194,8 @@ export const actionSheetMobile = () => `
 actionSheetMobile.parameters = {
     docs: {
         iframeHeight: 800,
-        storyDescription: 'On smartphones the action sheet is wrapped additionally by `fd-action-sheet__wrapper`.'
+        storyDescription: `To display the action sheet on mobile screens, 
+        the container requires a \`fd-action-sheet--mobile\` modifier class and is additionally wrapped by \`fd-action-sheet__wrapper\`.`
     }
 };
 
