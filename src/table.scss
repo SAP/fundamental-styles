@@ -486,4 +486,15 @@ $block: #{$fd-namespace}-table;
       text-align: right;
     }
   }
+
+  .fd-object-identifier {
+    &__title,
+    &__title--bold,
+    &__title--link,
+    &__link,
+    &__title .fd-object-identifier__link,
+    &__title--bold .fd-object-identifier__link {
+      font-size: var(--sapFontSize);
+    }
+  }
 }

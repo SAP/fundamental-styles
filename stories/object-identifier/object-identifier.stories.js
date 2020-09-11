@@ -47,7 +47,11 @@ export const titleAsLink = () => `
 </div>
 <br>
 <div class="fd-object-identifier">
-    <p class="fd-object-identifier__title"><a href="#" class="fd-link">NoteBook Basic 15</a></p>
+    <p class="fd-object-identifier__title"><a href="#" class="fd-link fd-object-identifier__link">NoteBook Basic 15</a></p>
+</div>
+<br>
+<div class="fd-object-identifier">
+    <p class="fd-object-identifier__title fd-object-identifier__title--bold"><a href="#" class="fd-link fd-object-identifier__link">NoteBook Basic 15</a></p>
 </div>
 `;
 

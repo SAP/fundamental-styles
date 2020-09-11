@@ -169,7 +169,30 @@ exports[`Storyshots Components/Object Identifier Title as link 1`] = `
       class="fd-object-identifier__title"
     >
       <a
-        class="fd-link"
+        class="fd-link fd-object-identifier__link"
+        href="#"
+      >
+        NoteBook Basic 15
+      </a>
+    </p>
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-object-identifier"
+  >
+    
+    
+    <p
+      class="fd-object-identifier__title fd-object-identifier__title--bold"
+    >
+      <a
+        class="fd-link fd-object-identifier__link"
         href="#"
       >
         NoteBook Basic 15

@@ -21,15 +21,15 @@ $block: #{$fd-namespace}-object-identifier;
     &--bold {
       font-weight: $fd-object-identifier-title-font-weight;
 
-      .fd-link {
-        font-size: $fd-object-identifier-title-font-size;
+      .#{$block}__link {
         font-weight: $fd-object-identifier-title-font-weight;
       }
     }
+  }
 
-    .fd-link {
-      font-size: $fd-object-identifier-title-font-size;
-    }
+  &__title--bold .#{$block}__link,
+  &__link {
+    font-size: $fd-object-identifier-title-font-size;
   }
 
   &__text {
@@ -37,14 +37,5 @@ $block: #{$fd-namespace}-object-identifier;
 
     margin-top: 0.5rem;
     color: var(--sapContent_LabelColor);
-  }
-}
-
-.fd-table {
-  .#{$block} {
-    &__title,
-    &__title--bold {
-      font-size: var(--sapFontSize);
-    }
   }
 }
