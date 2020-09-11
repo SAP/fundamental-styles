@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Link Link types examples 1`] = `
+exports[`Storyshots Components/Link Types 1`] = `
 <section>
   
 
@@ -9,7 +9,7 @@ exports[`Storyshots Components/Link Link types examples 1`] = `
     href="#"
     tabindex="0"
   >
-    Standard Link
+    Default link
   </a>
   
 
@@ -22,7 +22,19 @@ exports[`Storyshots Components/Link Link types examples 1`] = `
     href="#"
     tabindex="0"
   >
-    Emphasized Link
+    Emphasized link
+  </a>
+  
+
+  <br />
+  <br />
+  
+
+  <a
+    class="fd-link fd-link--subtle"
+    href="#"
+  >
+    Subtle link
   </a>
   
 
@@ -34,7 +46,7 @@ exports[`Storyshots Components/Link Link types examples 1`] = `
     aria-disabled="true"
     class="fd-link"
   >
-    Disabled Link
+    Disabled link
   </a>
   
 
@@ -51,23 +63,11 @@ exports[`Storyshots Components/Link Link types examples 1`] = `
       class="fd-link fd-link--inverted"
       href="#"
     >
-      Inverted Link
+      Inverted link
     </a>
     
 
   </div>
-  
-
-  <br />
-  <br />
-  
-
-  <a
-    class="fd-link fd-link--subtle"
-    href="#"
-  >
-    Subtle Link
-  </a>
   
 
   <br />
@@ -80,7 +80,7 @@ exports[`Storyshots Components/Link Link types examples 1`] = `
     tabindex="0"
   >
     
-    Icon Left Link 
+    Right icon link 
     
     <span
       class="sap-icon--slim-arrow-right sap-icon--s"
@@ -105,7 +105,7 @@ exports[`Storyshots Components/Link Link types examples 1`] = `
       class="sap-icon--slim-arrow-left sap-icon--s"
     />
      
-    Icon Right Link
+    Left icon link
 
   </a>
   
