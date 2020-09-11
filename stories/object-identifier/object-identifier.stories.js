@@ -5,7 +5,27 @@ import '../../dist/table.css';
 export default {
     title: 'Components/Object Identifier',
     parameters: {
-        description: 'The object identifier is a small building block representing an object by a title and short description.',
+        description: `
+The object identifier is a short text that represents the key identifier of an object, and can be displayed in various types of containers, tables, panels, popovers and more. The text wraps if there is insufficient horizontal space.
+
+The object identifier should be easily read by the users, preferably displaying text instead of an ID. If it necessary to distinguish objects by their IDs, then it should appear as descriptive text below the title text.
+
+The object number comprises:
+
+- A title text
+- An optional descriptive text
+- An active state (if desired) which resembles a link that can trigger an event
+
+##Usage
+Use the object identifier if:
+
+- You want to indicate the key identifier on an object.
+
+Do not use the object identifier if:
+
+- You want to display system messages.
+- They are for decorative purposes only.        
+`,
         tags: ['f3']
     }
 };
@@ -16,10 +36,10 @@ export const titleOnly = () => `
 </div>
 `;
 
-titleOnly.storyName = 'Title only';
+titleOnly.storyName = 'Title';
 titleOnly.parameters = {
     docs: {
-        storyDescription: 'To make title needs to add the `fd-object-identifier__title` modifier class.'
+        storyDescription: 'To display the object identifier as a title, add the `fd-object-identifier__title` modifier class to the main element.'
     }
 };
 
@@ -29,11 +49,11 @@ export const boldTitle = () => `
 </div>
 `;
 
-boldTitle.storyName = 'Bold title';
+boldTitle.storyName = 'Bold';
 boldTitle.parameters = {
     docs: {
-        storyDescription: `To make title bolder needs to add the \`fd-object-identifier__title--bold\` modifier class 
-        to the \`fd-object-identifier__title\`.`
+        storyDescription: `To display the object identifier's title in bold, replace \`fd-object-identifier__title\`
+        with the \`fd-object-identifier__title--bold\` modifier class.`
     }
 };
 
@@ -55,11 +75,10 @@ export const titleAsLink = () => `
 </div>
 `;
 
-titleAsLink.storyName = 'Title as link';
+titleAsLink.storyName = 'Link';
 titleAsLink.parameters = {
     docs: {
-        storyDescription: `To make title as link needs to add the \`fd-object-identifier__title--link\` modifier class 
-        to the \`fd-object-identifier__title\` or \`fd-object-identifier__title--bold\`.`
+        storyDescription: 'To display the object identifier as a link, add the `fd-object-identifier__title--link` modifier class to the title element.'
     }
 };
 
@@ -91,10 +110,10 @@ export const titleAndText = () => `
 </div>
 `;
 
-titleAndText.storyName = 'Title and description';
+titleAndText.storyName = 'Description';
 titleAndText.parameters = {
     docs: {
-        storyDescription: 'To make title and description need to add an extra tag below the title and add to them `fd-object-identifier__text` modifier class.'
+        storyDescription: 'To display the object identifier\'s title with descriptive text, add an additional tag below the title container and a `fd-object-identifier__text` modifier class.'
     }
 };
 
@@ -146,4 +165,9 @@ export const withTable = () => `
 </table>
 `;
 
-withTable.storyName = 'Object Identifier inside table';
+withTable.storyName = 'Table';
+withTable.parameters = {
+    docs: {
+        storyDescription: 'To display the object identifier in a table, add the `fd-object-identifier` within the table cells, along with any additional tags to include modifier classes for the styles mentioned above.'
+    }
+};
