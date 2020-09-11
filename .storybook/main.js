@@ -3,7 +3,7 @@ const glob = require("glob");
 const { exec } = require("child_process");
 const { merge } = require('webpack-merge');
 
-const maxAssetSize = 2 * 1024 * 1024;
+const maxAssetSize = 1024 * 1024;
 const includedStories = process.env.STORYBOOK_ENV === 'docs' ? '(stories)' : '(stories|visual)';
 
 module.exports = {
