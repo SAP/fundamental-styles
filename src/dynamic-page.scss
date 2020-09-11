@@ -1,17 +1,17 @@
 @import "./new-settings";
 @import "./mixins";
 
-$block: #{$fd-namespace}-dynamic-page-layout;
+$block: #{$fd-namespace}-dynamic-page;
 
 .#{$block} {
 
-  $fd-dynamic-page-layout-background-color: var(--sapObjectHeader_Background);
-  $fd-dynamic-page-layout-content-background-color: var(--sapBackgroundColor);
-  $fd-dynamic-page-layout-padding-top-bottom: 0.5rem;
-  $fd-dynamic-page-layout-header-padding-top-bottom: 1rem;
-  $fd-dynamic-page-layout-box-shadow: var(--sapContent_HeaderShadow);
-  $fd-dynamic-page-layout-button-width: 1.5rem;
-  $fd-dynamic-page-layout-button-padding: 0 0.25rem;
+  $fd-dynamic-page-background-color: var(--sapObjectHeader_Background);
+  $fd-dynamic-page-content-background-color: var(--sapBackgroundColor);
+  $fd-dynamic-page-padding-top-bottom: 0.5rem;
+  $fd-dynamic-page-header-padding-top-bottom: 1rem;
+  $fd-dynamic-page-box-shadow: var(--sapContent_HeaderShadow);
+  $fd-dynamic-page-button-width: 1.5rem;
+  $fd-dynamic-page-button-padding: 0 0.25rem;
 
   @include fd-reset();
 
@@ -28,11 +28,11 @@ $block: #{$fd-namespace}-dynamic-page-layout;
       justify-content: space-evenly;
     }
 
-    margin: $fd-dynamic-page-layout-button-padding;
-    padding: $fd-dynamic-page-layout-button-padding; // for IE
-    width: $fd-dynamic-page-layout-button-width;
+    margin: $fd-dynamic-page-button-padding;
+    padding: $fd-dynamic-page-button-padding; // for IE
+    width: $fd-dynamic-page-button-width;
     height: 2rem;
-    min-width: $fd-dynamic-page-layout-button-width;
+    min-width: $fd-dynamic-page-button-width;
   }
 
   &__title-area {
@@ -44,23 +44,23 @@ $block: #{$fd-namespace}-dynamic-page-layout;
 
     min-height: 3rem;
     word-wrap: break-word;
-    background-color: $fd-dynamic-page-layout-background-color; // discrepancy
+    background-color: $fd-dynamic-page-background-color; // discrepancy
 
     @include fd-hover() {
       background: var(--sapObjectHeader_Hover_Background);    // color not yet available in Fundamental, therefore hover not reflecting the color
     }
 
     &--s {
-      @include responsive-page($fd-dynamic-page-layout-padding-top-bottom, 0.5rem);
+      @include responsive-page($fd-dynamic-page-padding-top-bottom, 0.5rem);
     }
 
     &--m,
     &--l {
-      @include responsive-page($fd-dynamic-page-layout-padding-top-bottom, 2rem);
+      @include responsive-page($fd-dynamic-page-padding-top-bottom, 2rem);
     }
 
     &--xl {
-      @include responsive-page($fd-dynamic-page-layout-padding-top-bottom, 3rem);
+      @include responsive-page($fd-dynamic-page-padding-top-bottom, 3rem);
     }
 
     &--transparent-bg {
@@ -166,7 +166,7 @@ $block: #{$fd-namespace}-dynamic-page-layout;
 
     word-wrap: break-word;
     background: var(--sapObjectHeader_Background);
-    box-shadow: $fd-dynamic-page-layout-box-shadow;
+    box-shadow: $fd-dynamic-page-box-shadow;
     height: 2rem;
 
     &--s {
@@ -203,24 +203,24 @@ $block: #{$fd-namespace}-dynamic-page-layout;
     // contains B and B1
     @include fd-reset();
 
-    background-color: $fd-dynamic-page-layout-background-color;
-    padding: $fd-dynamic-page-layout-header-padding-top-bottom 0;
+    background-color: $fd-dynamic-page-background-color;
+    padding: $fd-dynamic-page-header-padding-top-bottom 0;
 
     &--transparent-bg {
       background-color: transparent;  // WARNING: theme conflicting values
     }
 
     &--s {
-      @include responsive-page($fd-dynamic-page-layout-header-padding-top-bottom, 0.5rem);
+      @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 0.5rem);
     }
 
     &--m,
     &--l {
-      @include responsive-page($fd-dynamic-page-layout-header-padding-top-bottom, 2rem);
+      @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 2rem);
     }
 
     &--xl {
-      @include responsive-page($fd-dynamic-page-layout-header-padding-top-bottom, 3rem);
+      @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 3rem);
     }
 
     &[aria-hidden="true"] {
@@ -250,7 +250,7 @@ $block: #{$fd-namespace}-dynamic-page-layout;
     }
 
     &--add-shadow {
-      box-shadow: $fd-dynamic-page-layout-box-shadow;
+      box-shadow: $fd-dynamic-page-box-shadow;
     }
   }
 
@@ -258,7 +258,7 @@ $block: #{$fd-namespace}-dynamic-page-layout;
     @include fd-reset();
     @include fd-flex-center();
 
-    box-shadow: $fd-dynamic-page-layout-box-shadow;
+    box-shadow: $fd-dynamic-page-box-shadow;
     // left and right gradient for the pin/collapse buttons
     &--left-gradient {
       background-image: linear-gradient(to left, var(--sapHighlightColor), transparent);
@@ -306,23 +306,22 @@ $block: #{$fd-namespace}-dynamic-page-layout;
   }
 
   &__content {
-    // contains D
     @include fd-reset();
 
     padding: 1rem 0 0 0;
-    background-color: $fd-dynamic-page-layout-content-background-color;
+    background-color: $fd-dynamic-page-content-background-color;
 
     &--s {
-      @include responsive-page($fd-dynamic-page-layout-header-padding-top-bottom, 0.5rem);
+      @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 0.5rem);
     }
 
     &--m,
     &--l {
-      @include responsive-page($fd-dynamic-page-layout-header-padding-top-bottom, 2rem);
+      @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 2rem);
     }
 
     &--xl {
-      @include responsive-page($fd-dynamic-page-layout-header-padding-top-bottom, 3rem);
+      @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 3rem);
     }
 
     // for list and transparent, different bg colors

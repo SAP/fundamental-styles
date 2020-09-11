@@ -1,43 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Dynamic Page Layout Desktop mode 1`] = `
-
-    
-`;
-
-exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
 <section>
   
     
-  <hr />
-  
-    
-  <h3>
-    1:  Header with both collapse and pin buttons, expanded by default. 
-  </h3>
-  
-    
-  <hr />
-  
-    
-  <br />
-  <br />
-      
-    
   <div
-    aria-label="Dynamic Page Layout Standard Example"
-    class="fd-dynamic-page-layout"
+    aria-label="Dynamic Page Layout Desktop Example"
+    class="fd-dynamic-page"
     role="region"
   >
     
         
     <div
-      class="fd-dynamic-page-layout__title-area fd-dynamic-page-layout__title-area--xl"
+      class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl"
     >
       
             
       <ul
-        class="fd-dynamic-page-layout__breadcrumb fd-breadcrumb"
+        class="fd-dynamic-page__breadcrumb fd-breadcrumb"
       >
         
                 
@@ -84,26 +64,26 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
       
             
       <div
-        class="fd-dynamic-page-layout__title-container"
+        class="fd-dynamic-page__title-container"
       >
         
                 
         <div
-          class="fd-dynamic-page-layout__title"
+          class="fd-dynamic-page__title"
         >
            Balenciaga Tripple S Trainers 
         </div>
         
                 
         <div
-          class="fd-dynamic-page-layout__title-content"
+          class="fd-dynamic-page__title-content"
         >
-           Header with both collapse and pin buttons, expanded by default
+           Some RANDOM things 
         </div>
         
                 
         <div
-          class="fd-dynamic-page-layout__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+          class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
         >
           
                     
@@ -122,7 +102,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
           
                     
           <div
-            class="fd-dynamic-page-layout__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+            class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
           >
             
                         
@@ -178,7 +158,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
       
             
       <div
-        class="fd-dynamic-page-layout__subtitle"
+        class="fd-dynamic-page__subtitle"
       >
          Oversized multimaterial sneakers with quilted effect 
       </div>
@@ -188,9 +168,8 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
     
         
     <div
-      aria-hidden="false"
-      class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--xl"
-      id="fddplhvc1"
+      aria-label="Dynamic Page Desktop Header"
+      class="fd-dynamic-page__header fd-dynamic-page__header--xl"
       role="region"
     >
       
@@ -202,26 +181,26 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
     
         
     <div
-      class="fd-dynamic-page-layout__header-visibility-container"
+      class="fd-dynamic-page__header-visibility-container fd-dynamic-page__header-visibility-container--no-shadow"
     >
       
             
       <div
-        class="fd-dynamic-page-layout__header-visibility-container--left-gradient"
+        class="fd-dynamic-page__header-visibility-container--left-gradient"
       />
       
             
       <div
-        class="fd-dynamic-page-layout__header-visibility-container--button-group"
+        class="fd-dynamic-page__header-visibility-container--button-group"
       >
         
                 
         <button
           aria-controls="fddplhvc1"
-          aria-expanded="true"
+          aria-expanded="false"
           aria-haspopup="true"
           aria-label="See More"
-          class="fd-dynamic-page-layout__collapse-button fd-button fd-button--compact"
+          class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
         >
           
                         
@@ -235,7 +214,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
                 
         <button
           aria-label="Pin this"
-          class="fd-dynamic-page-layout__pin-button fd-button fd-button--compact"
+          class="fd-dynamic-page__pin-button fd-button fd-button--compact"
         >
           
                         
@@ -251,7 +230,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
       
             
       <div
-        class="fd-dynamic-page-layout__header-visibility-container--right-gradient"
+        class="fd-dynamic-page__header-visibility-container--right-gradient"
       />
       
         
@@ -259,7 +238,449 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
     
         
     <div
-      class="fd-dynamic-page-layout__content fd-dynamic-page-layout__content--xl"
+      class="fd-dynamic-page__tabs--overflow"
+    >
+      
+            
+      <ul
+        class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--xl fd-dynamic-page__tabs--add-shadow"
+        role="tablist"
+      >
+        
+                
+        <li
+          class="fd-tabs__item"
+          role="listitem"
+        >
+          
+                    
+          <a
+            aria-controls="fuCwV550"
+            class="fd-tabs__link"
+            href="#fuCwV550"
+            role="tab"
+          >
+            
+                        
+            <span
+              class="fd-tabs__tag"
+            >
+              
+                            Link
+                        
+            </span>
+            
+                    
+          </a>
+          
+                
+        </li>
+        
+                
+        <li
+          class="fd-tabs__item"
+          role="listitem"
+        >
+          
+                    
+          <a
+            aria-controls="AiWfz165"
+            aria-selected="true"
+            class="fd-tabs__link"
+            href="#AiWfz165"
+            role="tab"
+          >
+            
+                        
+            <span
+              class="fd-tabs__tag"
+            >
+              
+                            Selected
+                        
+            </span>
+            
+                    
+          </a>
+          
+                
+        </li>
+        
+            
+      </ul>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-dynamic-page__content fd-dynamic-page__content--xl"
+    >
+      
+            
+      <div
+        aria-expanded="false"
+        class="fd-tabs__panel"
+        id="fuCwV550"
+        role="tabpanel"
+      >
+        
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+                eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+                dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+            
+      </div>
+      
+            
+      <div
+        aria-expanded="true"
+        class="fd-tabs__panel"
+        id="AiWfz165"
+        role="tabpanel"
+      >
+        
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-bar fd-bar--floating-footer"
+    >
+      
+            
+      <div
+        class="fd-bar__right"
+      >
+        
+                
+        <div
+          class="fd-bar__element"
+        >
+          
+                    
+          <button
+            aria-label="button"
+            class="fd-button fd-button--emphasized fd-button--compact"
+          >
+            Save
+          </button>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-bar__element"
+        >
+          
+                    
+          <button
+            aria-label="button"
+            class="fd-button fd-button--transparent fd-button--compact"
+          >
+            Cancel
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <br />
+  <br />
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
+<section>
+  
+    
+  <hr />
+  
+    
+  <h3>
+    1:  Header with both collapse and pin buttons, expanded by default. 
+  </h3>
+  
+    
+  <hr />
+  
+    
+  <br />
+  <br />
+      
+    
+  <div
+    aria-label="Dynamic Page Layout Expandable Example"
+    class="fd-dynamic-page"
+    role="region"
+  >
+    
+        
+    <div
+      class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl"
+    >
+      
+            
+      <ul
+        class="fd-dynamic-page__breadcrumb fd-breadcrumb"
+      >
+        
+                
+        <li
+          class="fd-breadcrumb__item"
+        >
+          <a
+            class="fd-breadcrumb__link"
+            href="#"
+            tabindex="0"
+          >
+            Men
+          </a>
+        </li>
+        
+                
+        <li
+          class="fd-breadcrumb__item"
+        >
+          <a
+            class="fd-breadcrumb__link"
+            href="#"
+            tabindex="0"
+          >
+            Shoes
+          </a>
+        </li>
+        
+                
+        <li
+          class="fd-breadcrumb__item"
+        >
+          <a
+            class="fd-breadcrumb__link"
+            href="#"
+            tabindex="0"
+          >
+            Running Shoes
+          </a>
+        </li>
+        
+            
+      </ul>
+      
+            
+      <div
+        class="fd-dynamic-page__title-container"
+      >
+        
+                
+        <div
+          class="fd-dynamic-page__title"
+        >
+           Balenciaga Tripple S Trainers 
+        </div>
+        
+                
+        <div
+          class="fd-dynamic-page__title-content"
+        >
+           Header with both collapse and pin buttons, expanded by default
+        </div>
+        
+                
+        <div
+          class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+        >
+          
+                    
+          <button
+            class="fd-button fd-button--compact fd-button--positive"
+          >
+            Accept
+          </button>
+          
+                    
+          <button
+            class="fd-button fd-button--compact fd-button--reject"
+          >
+            Reject
+          </button>
+          
+                    
+          <div
+            class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+          >
+            
+                        
+            <button
+              aria-label="Survey"
+              class="fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--survey"
+              />
+              
+                        
+            </button>
+            
+                        
+            <button
+              aria-label="Pool"
+              class="fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--pool"
+              />
+              
+                        
+            </button>
+            
+                        
+            <button
+              aria-label="Chart"
+              class="fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--pie-chart"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fd-dynamic-page__subtitle"
+      >
+         Oversized multimaterial sneakers with quilted effect 
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      aria-hidden="false"
+      aria-label="Default expanded header"
+      class="fd-dynamic-page__header fd-dynamic-page__header--xl"
+      id="fddplhvc1"
+      role="region"
+    >
+      
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
+            delectus necessitatibus incidunt numquam asperiores tenetur iure. 
+            Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
+        
+    </div>
+    
+        
+    <div
+      class="fd-dynamic-page__header-visibility-container"
+    >
+      
+            
+      <div
+        class="fd-dynamic-page__header-visibility-container--left-gradient"
+      />
+      
+            
+      <div
+        class="fd-dynamic-page__header-visibility-container--button-group"
+      >
+        
+                
+        <button
+          aria-controls="fddplhvc1"
+          aria-expanded="true"
+          aria-haspopup="true"
+          aria-label="See More"
+          class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+        >
+          
+                        
+          <i
+            class="sap-icon--slim-arrow-up"
+          />
+          
+                
+        </button>
+        
+                
+        <button
+          aria-label="Pin this"
+          class="fd-dynamic-page__pin-button fd-button fd-button--compact"
+        >
+          
+                        
+          <i
+            class="sap-icon--pushpin-off"
+          />
+          
+                
+        </button>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fd-dynamic-page__header-visibility-container--right-gradient"
+      />
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-dynamic-page__content fd-dynamic-page__content--xl"
     >
       
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
@@ -298,19 +719,19 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
   
     
   <div
-    aria-label="Dynamic Page Layout Standard Example"
-    class="fd-dynamic-page-layout"
+    aria-label="Dynamic Page Layout Collapsed Example"
+    class="fd-dynamic-page"
     role="region"
   >
     
         
     <div
-      class="fd-dynamic-page-layout__title-area fd-dynamic-page-layout__title-area--xl fd-dynamic-page-layout__title-area--collapsed"
+      class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl fd-dynamic-page__title-area--collapsed"
     >
       
             
       <ul
-        class="fd-dynamic-page-layout__breadcrumb fd-breadcrumb"
+        class="fd-dynamic-page__breadcrumb fd-breadcrumb"
       >
         
                 
@@ -357,26 +778,26 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
       
             
       <div
-        class="fd-dynamic-page-layout__title-container"
+        class="fd-dynamic-page__title-container"
       >
         
                 
         <div
-          class="fd-dynamic-page-layout__title fd-dynamic-page-layout__title--collapsed"
+          class="fd-dynamic-page__title fd-dynamic-page__title--collapsed"
         >
            Balenciaga Tripple S Trainers Model 123456AB On Sale 
         </div>
         
                 
         <div
-          class="fd-dynamic-page-layout__title-content"
+          class="fd-dynamic-page__title-content"
         >
           Collapsed Header with both expand and pin buttons 
         </div>
         
                 
         <div
-          class="fd-dynamic-page-layout__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+          class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
         >
           
                     
@@ -395,7 +816,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
           
                     
           <div
-            class="fd-dynamic-page-layout__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+            class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
           >
             
                         
@@ -451,7 +872,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
       
             
       <div
-        class="fd-dynamic-page-layout__subtitle"
+        class="fd-dynamic-page__subtitle"
       >
          Oversized multimaterial sneakers with quilted effect 
       </div>
@@ -462,7 +883,8 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
         
     <div
       aria-hidden="true"
-      class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--xl"
+      aria-label="Collapsed header"
+      class="fd-dynamic-page__header fd-dynamic-page__header--xl"
       id="fddplhvc2"
       role="region"
     >
@@ -475,17 +897,17 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
     
         
     <div
-      class="fd-dynamic-page-layout__header-visibility-container"
+      class="fd-dynamic-page__header-visibility-container"
     >
       
             
       <div
-        class="fd-dynamic-page-layout__header-visibility-container--left-gradient"
+        class="fd-dynamic-page__header-visibility-container--left-gradient"
       />
       
             
       <div
-        class="fd-dynamic-page-layout__header-visibility-container--button-group"
+        class="fd-dynamic-page__header-visibility-container--button-group"
       >
         
                 
@@ -494,7 +916,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
           aria-expanded="false"
           aria-haspopup="true"
           aria-label="See More"
-          class="fd-dynamic-page-layout__collapse-button fd-button fd-button--compact"
+          class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
         >
           
                         
@@ -508,7 +930,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
                 
         <button
           aria-label="Pin this"
-          class="fd-dynamic-page-layout__pin-button fd-button fd-button--compact"
+          class="fd-dynamic-page__pin-button fd-button fd-button--compact"
         >
           
                         
@@ -524,7 +946,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
       
             
       <div
-        class="fd-dynamic-page-layout__header-visibility-container--right-gradient"
+        class="fd-dynamic-page__header-visibility-container--right-gradient"
       />
       
         
@@ -532,7 +954,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
     
         
     <div
-      class="fd-dynamic-page-layout__content fd-dynamic-page-layout__content--xl"
+      class="fd-dynamic-page__content fd-dynamic-page__content--xl"
     >
       
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
@@ -571,19 +993,19 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
 
     
   <div
-    aria-label="Dynamic Page Layout Standard Example"
-    class="fd-dynamic-page-layout"
+    aria-label="Dynamic Page Layout Pinnable Example"
+    class="fd-dynamic-page"
     role="region"
   >
     
         
     <div
-      class="fd-dynamic-page-layout__title-area fd-dynamic-page-layout__title-area--xl"
+      class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl"
     >
       
             
       <ul
-        class="fd-dynamic-page-layout__breadcrumb fd-breadcrumb"
+        class="fd-dynamic-page__breadcrumb fd-breadcrumb"
       >
         
                 
@@ -630,26 +1052,26 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
       
             
       <div
-        class="fd-dynamic-page-layout__title-container"
+        class="fd-dynamic-page__title-container"
       >
         
                 
         <div
-          class="fd-dynamic-page-layout__title"
+          class="fd-dynamic-page__title"
         >
            Balenciaga Tripple S Trainers 
         </div>
         
                 
         <div
-          class="fd-dynamic-page-layout__title-content"
+          class="fd-dynamic-page__title-content"
         >
            The header can only be expanded/collapsed, not pinned. 
         </div>
         
                 
         <div
-          class="fd-dynamic-page-layout__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+          class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
         >
           
                     
@@ -668,7 +1090,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
           
                     
           <div
-            class="fd-dynamic-page-layout__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+            class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
           >
             
                         
@@ -724,7 +1146,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
       
             
       <div
-        class="fd-dynamic-page-layout__subtitle"
+        class="fd-dynamic-page__subtitle"
       >
          Oversized multimaterial sneakers with quilted effect 
       </div>
@@ -735,7 +1157,8 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
         
     <div
       aria-hidden="false"
-      class="fd-dynamic-page-layout__header fd-dynamic-page-layout__header--xl"
+      aria-label="Pinned header"
+      class="fd-dynamic-page__header fd-dynamic-page__header--xl"
       id="fddplhvc3"
       role="region"
     >
@@ -748,17 +1171,17 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
     
         
     <div
-      class="fd-dynamic-page-layout__header-visibility-container"
+      class="fd-dynamic-page__header-visibility-container"
     >
       
             
       <div
-        class="fd-dynamic-page-layout__header-visibility-container--left-gradient"
+        class="fd-dynamic-page__header-visibility-container--left-gradient"
       />
       
             
       <div
-        class="fd-dynamic-page-layout__header-visibility-container--button-group"
+        class="fd-dynamic-page__header-visibility-container--button-group"
       >
         
                 
@@ -767,7 +1190,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
           aria-expanded="true"
           aria-haspopup="true"
           aria-label="See More"
-          class="fd-dynamic-page-layout__collapse-button fd-button fd-button--compact"
+          class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
         >
           
                         
@@ -783,7 +1206,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
       
             
       <div
-        class="fd-dynamic-page-layout__header-visibility-container--right-gradient"
+        class="fd-dynamic-page__header-visibility-container--right-gradient"
       />
       
         
@@ -791,7 +1214,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
     
         
     <div
-      class="fd-dynamic-page-layout__content fd-dynamic-page-layout__content--xl"
+      class="fd-dynamic-page__content fd-dynamic-page__content--xl"
     >
       
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
@@ -804,21 +1227,2064 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
     
   </div>
   
+    
+  <br />
+  <br />
+  
 
 </section>
 `;
 
 exports[`Storyshots Components/Dynamic Page Layout Mobile mode 1`] = `
+<section>
+  
 
+  <div
+    style="display:flex; flex-direction: row; justify-content: space-evenly"
+  >
+    
+    
+    <div
+      aria-label="Dynamic Page Layout Mobile Example"
+      class="fd-dynamic-page"
+      role="region"
+      style="width:30%"
+    >
+      
+        
+      <div
+        class="fd-dynamic-page__title-area fd-dynamic-page__title-area--s"
+      >
+        
+            
+        <div
+          class="fd-dynamic-page__breadcrumb-container"
+        >
+          
+                
+          <ul
+            class="fd-dynamic-page__breadcrumb--s fd-breadcrumb"
+          >
+            
+                    
+            <li
+              class="fd-breadcrumb__item"
+            >
+              <a
+                class="fd-breadcrumb__link"
+                href="#"
+                tabindex="0"
+              >
+                Men
+              </a>
+            </li>
+            
+                    
+            <li
+              class="fd-breadcrumb__item"
+            >
+              <a
+                class="fd-breadcrumb__link"
+                href="#"
+                tabindex="0"
+              >
+                Shoes
+              </a>
+            </li>
+            
+                    
+            <li
+              class="fd-breadcrumb__item"
+            >
+              <a
+                class="fd-breadcrumb__link"
+                href="#"
+                tabindex="0"
+              >
+                Running Shoes
+              </a>
+            </li>
+            
+                
+          </ul>
+          
+                
+          <div
+            class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+          >
+            
+                        
+            <button
+              aria-label="Close"
+              class="fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--decline"
+              />
+              
+                        
+            </button>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-dynamic-page__title-container"
+        >
+          
+                
+          <div
+            class="fd-dynamic-page__title"
+          >
+             Balenciaga Tripple S Trainers 
+          </div>
+          
+                    
+                    
+          <div
+            class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+          >
+            
+                        
+            <button
+              aria-label="More Header Content"
+              class="fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--overflow"
+              />
+              
+                        
+            </button>
+            
+                        
+            <button
+              aria-label="Header actions"
+              class="fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--overflow"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-dynamic-page__subtitle"
+        >
+           Expanded header in phone 
+        </div>
+        
+        
+      </div>
+      
+        
+      <div
+        aria-label="Dynamic Page Mobile Header"
+        class="fd-dynamic-page__header fd-dynamic-page__header--s"
+        role="region"
+      >
+        
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
+            delectus necessitatibus incidunt numquam asperiores tenetur iure. 
+            Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
+        
+      </div>
+      
+        
+      <div
+        class="fd-dynamic-page__header-visibility-container fd-dynamic-page__header-visibility-container--no-shadow"
+      >
+        
+            
+        <div
+          class="fd-dynamic-page__header-visibility-container--left-gradient"
+        />
+        
+            
+        <div
+          class="fd-dynamic-page__header-visibility-container--button-group"
+        >
+          
+                
+          <button
+            aria-controls="fddplhvc1"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-label="See More"
+            class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+          >
+            
+                        
+            <i
+              class="sap-icon--slim-arrow-up"
+            />
+            
+                
+          </button>
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-dynamic-page__header-visibility-container--right-gradient"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-dynamic-page__tabs--overflow"
+      >
+        
+            
+        <ul
+          class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--s fd-dynamic-page__tabs--add-shadow"
+          role="tablist"
+        >
+          
+                
+          <li
+            class="fd-tabs__item"
+            role="listitem"
+          >
+            
+                    
+            <a
+              aria-controls="fuCwV552"
+              class="fd-tabs__link"
+              href="#fuCwV552"
+              role="tab"
+            >
+              
+                        
+              <span
+                class="fd-tabs__tag"
+              >
+                
+                            Link
+                        
+              </span>
+              
+                    
+            </a>
+            
+                
+          </li>
+          
+                
+          <li
+            class="fd-tabs__item"
+            role="listitem"
+          >
+            
+                    
+            <a
+              aria-controls="AiWfz167"
+              aria-selected="true"
+              class="fd-tabs__link"
+              href="#AiWfz167"
+              role="tab"
+            >
+              
+                        
+              <span
+                class="fd-tabs__tag"
+              >
+                
+                            Selected
+                        
+              </span>
+              
+                    
+            </a>
+            
+                
+          </li>
+          
+            
+        </ul>
+          
+        
+      </div>
+           
+        
+      <div
+        class="fd-dynamic-page__content fd-dynamic-page__content--s"
+      >
+        
+            
+        <div
+          aria-expanded="false"
+          class="fd-tabs__panel"
+          id="fuCwV552"
+          role="tabpanel"
+        >
+          
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+                eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+                dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+            
+        </div>
+        
+            
+        <div
+          aria-expanded="true"
+          class="fd-tabs__panel"
+          id="AiWfz167"
+          role="tabpanel"
+        >
+          
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+            
+        </div>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar fd-bar--floating-footer"
+      >
+        
+            
+        <div
+          class="fd-bar__right"
+        >
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              aria-label="button"
+              class="fd-button fd-button--emphasized fd-button--compact"
+            >
+              Save
+            </button>
+            
+                
+          </div>
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              aria-label="button"
+              class="fd-button fd-button--transparent fd-button--compact"
+            >
+              Cancel
+            </button>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
 
+    
+    <div
+      aria-label="Dynamic Page Layout Mobile Collapsed Example"
+      class="fd-dynamic-page"
+      role="region"
+      style="width:30%"
+    >
+      
+        
+      <div
+        class="fd-dynamic-page__title-area fd-dynamic-page__title-area--s fd-dynamic-page__title-area--collapsed"
+      >
+        
+            
+        <div
+          class="fd-dynamic-page__breadcrumb-container"
+        >
+          
+                
+          <ul
+            class="fd-dynamic-page__breadcrumb--s fd-breadcrumb"
+          >
+            
+                    
+            <li
+              class="fd-breadcrumb__item"
+            >
+              <a
+                class="fd-breadcrumb__link"
+                href="#"
+                tabindex="0"
+              >
+                Men
+              </a>
+            </li>
+            
+                    
+            <li
+              class="fd-breadcrumb__item"
+            >
+              <a
+                class="fd-breadcrumb__link"
+                href="#"
+                tabindex="0"
+              >
+                Shoes
+              </a>
+            </li>
+            
+                    
+            <li
+              class="fd-breadcrumb__item"
+            >
+              <a
+                class="fd-breadcrumb__link"
+                href="#"
+                tabindex="0"
+              >
+                Running Shoes
+              </a>
+            </li>
+            
+                
+          </ul>
+          
+                
+          <div
+            class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+          >
+            
+                        
+            <button
+              aria-label="Close"
+              class="fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--decline"
+              />
+              
+                        
+            </button>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-dynamic-page__title-container"
+        >
+          
+                
+          <div
+            class="fd-dynamic-page__title"
+          >
+             Balenciaga Tripple S Trainers 
+          </div>
+          
+                    
+                    
+          <div
+            class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+          >
+            
+                        
+            <button
+              aria-label="More Header Content"
+              class="fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--overflow"
+              />
+              
+                        
+            </button>
+            
+                        
+            <button
+              aria-label="Header actions"
+              class="fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--overflow"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-dynamic-page__subtitle"
+        >
+           Collapsed header 
+        </div>
+        
+        
+      </div>
+      
+        
+      <div
+        aria-hidden="true"
+        aria-label="Dynamic Page Mobile Collapsed Header"
+        class="fd-dynamic-page__header fd-dynamic-page__header--s"
+        id="fddplhvcm1"
+        role="region"
+      >
+        
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
+            delectus necessitatibus incidunt numquam asperiores tenetur iure. 
+            Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
+        
+      </div>
+      
+        
+      <div
+        class="fd-dynamic-page__header-visibility-container fd-dynamic-page__header-visibility-container--no-shadow"
+      >
+        
+            
+        <div
+          class="fd-dynamic-page__header-visibility-container--left-gradient"
+        />
+        
+            
+        <div
+          class="fd-dynamic-page__header-visibility-container--button-group"
+        >
+          
+                
+          <button
+            aria-controls="fddplhvcm1"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-label="See More"
+            class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+          >
+            
+                        
+            <i
+              class="sap-icon--slim-arrow-down"
+            />
+            
+                
+          </button>
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-dynamic-page__header-visibility-container--right-gradient"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-dynamic-page__tabs--overflow"
+      >
+        
+            
+        <ul
+          class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--s fd-dynamic-page__tabs--add-shadow"
+          role="tablist"
+        >
+          
+                
+          <li
+            class="fd-tabs__item"
+            role="listitem"
+          >
+            
+                    
+            <a
+              aria-controls="fuCwV553"
+              class="fd-tabs__link"
+              href="#fuCwV553"
+              role="tab"
+            >
+              
+                        
+              <span
+                class="fd-tabs__tag"
+              >
+                
+                            Link
+                        
+              </span>
+              
+                    
+            </a>
+            
+                
+          </li>
+          
+                
+          <li
+            class="fd-tabs__item"
+            role="listitem"
+          >
+            
+                    
+            <a
+              aria-controls="AiWfz168"
+              aria-selected="true"
+              class="fd-tabs__link"
+              href="#AiWfz168"
+              role="tab"
+            >
+              
+                        
+              <span
+                class="fd-tabs__tag"
+              >
+                
+                            Selected
+                        
+              </span>
+              
+                    
+            </a>
+            
+                
+          </li>
+          
+            
+        </ul>
+           
+        
+      </div>
+          
+        
+      <div
+        class="fd-dynamic-page__content fd-dynamic-page__content--s"
+      >
+        
+            
+        <div
+          aria-expanded="false"
+          class="fd-tabs__panel"
+          id="fuCwV553"
+          role="tabpanel"
+        >
+          
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+                eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+                dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+            
+        </div>
+        
+            
+        <div
+          aria-expanded="true"
+          class="fd-tabs__panel"
+          id="AiWfz168"
+          role="tabpanel"
+        >
+          
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+            
+        </div>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar fd-bar--floating-footer"
+      >
+        
+            
+        <div
+          class="fd-bar__right"
+        >
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              aria-label="button"
+              class="fd-button fd-button--emphasized fd-button--compact"
+            >
+              Save
+            </button>
+            
+                
+          </div>
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              aria-label="button"
+              class="fd-button fd-button--transparent fd-button--compact"
+            >
+              Cancel
+            </button>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+    
+    <div
+      aria-label="Dynamic Page Layout Mobile Summary Line Example"
+      class="fd-dynamic-page"
+      role="region"
+      style="width:30%"
+    >
+      
+        
+      <div
+        class="fd-dynamic-page__summarized-title-area fd-dynamic-page__summarized-title-area--s fd-dynamic-page__summarized-title-area--no-shadow"
+      >
+        
+            
+        <div
+          class="fd-dynamic-page__summarized-title"
+        >
+           Balenciaga Tripple S Trainers 
+        </div>
+        
+            
+        <div
+          class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+        >
+          
+                    
+          <button
+            aria-label="Close"
+            class="fd-button fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--slim-arrow-down"
+            />
+            
+                    
+          </button>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+        
+      <div
+        aria-hidden="true"
+        class="fd-dynamic-page__title-area fd-dynamic-page__title-area--s fd-dynamic-page__title-area--collapsed"
+      >
+        
+            
+        <div
+          class="fd-dynamic-page__breadcrumb-container"
+        >
+          
+            
+          <ul
+            class="fd-dynamic-page__breadcrumb--s fd-breadcrumb"
+          >
+            
+                
+            <li
+              class="fd-breadcrumb__item"
+            >
+              <a
+                class="fd-breadcrumb__link"
+                href="#"
+                tabindex="0"
+              >
+                Men
+              </a>
+            </li>
+            
+                
+            <li
+              class="fd-breadcrumb__item"
+            >
+              <a
+                class="fd-breadcrumb__link"
+                href="#"
+                tabindex="0"
+              >
+                Shoes
+              </a>
+            </li>
+            
+                
+            <li
+              class="fd-breadcrumb__item"
+            >
+              <a
+                class="fd-breadcrumb__link"
+                href="#"
+                tabindex="0"
+              >
+                Running Shoes
+              </a>
+            </li>
+            
+            
+          </ul>
+          
+            
+          <div
+            class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+          >
+            
+                    
+            <button
+              aria-label="Close"
+              class="fd-button fd-button--transparent"
+            >
+              
+                        
+              <i
+                class="sap-icon--decline"
+              />
+              
+                    
+            </button>
+            
+            
+          </div>
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-dynamic-page__title-container"
+        >
+          
+                
+          <div
+            class="fd-dynamic-page__title"
+          >
+             Balenciaga Tripple S Trainers 
+          </div>
+          
+                    
+          <div
+            class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+          >
+            
+                        
+            <button
+              aria-label="More Header Content"
+              class="fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--overflow"
+              />
+              
+                        
+            </button>
+            
+                        
+            <button
+              aria-label="Header actions"
+              class="fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--overflow"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-dynamic-page__subtitle"
+        >
+           Collapsed title area and header with Summary Line 
+        </div>
+        
+        
+      </div>
+      
+        
+      <div
+        aria-hidden="true"
+        aria-label="Dynamic Page Mobile Collapsed Header"
+        class="fd-dynamic-page__header fd-dynamic-page__header--s"
+        id="fddplhvcm2"
+        role="region"
+      >
+        
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
+            delectus necessitatibus incidunt numquam asperiores tenetur iure. 
+            Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
+        
+      </div>
+      
+        
+      <div
+        aria-hidden="true"
+        class="fd-dynamic-page__header-visibility-container fd-dynamic-page__header-visibility-container--no-shadow"
+      >
+        
+            
+        <div
+          class="fd-dynamic-page__header-visibility-container--left-gradient"
+        />
+        
+            
+        <div
+          class="fd-dynamic-page__header-visibility-container--button-group"
+        >
+          
+                
+          <button
+            aria-controls="fddplhvcm2"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-label="See More"
+            class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+          >
+            
+                        
+            <i
+              class="sap-icon--slim-arrow-down"
+            />
+            
+                
+          </button>
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-dynamic-page__header-visibility-container--right-gradient"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-dynamic-page__tabs--overflow"
+      >
+        
+            
+        <ul
+          class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--s fd-dynamic-page__tabs--add-shadow"
+          role="tablist"
+        >
+          
+                
+          <li
+            class="fd-tabs__item"
+            role="listitem"
+          >
+            
+                    
+            <a
+              aria-controls="fuCwV554"
+              class="fd-tabs__link"
+              href="#fuCwV554"
+              role="tab"
+            >
+              
+                        
+              <span
+                class="fd-tabs__tag"
+              >
+                
+                            Link
+                        
+              </span>
+              
+                    
+            </a>
+            
+                
+          </li>
+          
+                
+          <li
+            class="fd-tabs__item"
+            role="listitem"
+          >
+            
+                    
+            <a
+              aria-controls="AiWfz169"
+              aria-selected="true"
+              class="fd-tabs__link"
+              href="#AiWfz169"
+              role="tab"
+            >
+              
+                        
+              <span
+                class="fd-tabs__tag"
+              >
+                
+                            Selected
+                        
+              </span>
+              
+                    
+            </a>
+            
+                
+          </li>
+          
+            
+        </ul>
+          
+        
+      </div>
+           
+        
+      <div
+        class="fd-dynamic-page__content fd-dynamic-page__content--s"
+      >
+        
+            
+        <div
+          aria-expanded="false"
+          class="fd-tabs__panel"
+          id="fuCwV554"
+          role="tabpanel"
+        >
+          
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+                eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+                dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+            
+        </div>
+        
+            
+        <div
+          aria-expanded="true"
+          class="fd-tabs__panel"
+          id="AiWfz169"
+          role="tabpanel"
+        >
+          
+                
+          <h4>
+            This is an example of a collapsed title area and header and instead of displaying a Summary Line
+          </h4>
+          
+                
+          <br />
+          
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+            
+        </div>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar fd-bar--floating-footer"
+      >
+        
+            
+        <div
+          class="fd-bar__right"
+        >
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              aria-label="button"
+              class="fd-button fd-button--emphasized fd-button--compact"
+            >
+              Save
+            </button>
+            
+                
+          </div>
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              aria-label="button"
+              class="fd-button fd-button--transparent fd-button--compact"
+            >
+              Cancel
+            </button>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+  <br />
+  <br />
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
-
+<section>
+  
     
+  <div
+    dir="rtl"
+  >
+    
+        
+    <div
+      aria-label="Dynamic Page Layout RTL Example"
+      class="fd-dynamic-page"
+      role="region"
+    >
+      
+            
+      <div
+        class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl"
+      >
+        
+                
+        <ul
+          class="fd-dynamic-page__breadcrumb fd-breadcrumb"
+        >
+          
+                    
+          <li
+            class="fd-breadcrumb__item"
+          >
+            <a
+              class="fd-breadcrumb__link"
+              href="#"
+              tabindex="0"
+            >
+              Men
+            </a>
+          </li>
+          
+                    
+          <li
+            class="fd-breadcrumb__item"
+          >
+            <a
+              class="fd-breadcrumb__link"
+              href="#"
+              tabindex="0"
+            >
+              Shoes
+            </a>
+          </li>
+          
+                    
+          <li
+            class="fd-breadcrumb__item"
+          >
+            <a
+              class="fd-breadcrumb__link"
+              href="#"
+              tabindex="0"
+            >
+              Running Shoes
+            </a>
+          </li>
+          
+                
+        </ul>
+        
+                
+        <div
+          class="fd-dynamic-page__title-container"
+        >
+          
+                    
+          <div
+            class="fd-dynamic-page__title"
+          >
+             Balenciaga Tripple S Trainers 
+          </div>
+          
+                    
+          <div
+            class="fd-dynamic-page__title-content"
+          >
+             Some RANDOM things 
+          </div>
+          
+                    
+          <div
+            class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+          >
+            
+                        
+            <button
+              class="fd-button fd-button--compact fd-button--positive"
+            >
+              Accept
+            </button>
+            
+                        
+            <button
+              class="fd-button fd-button--compact fd-button--reject"
+            >
+              Reject
+            </button>
+            
+                        
+            <div
+              class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+            >
+              
+                            
+              <button
+                aria-label="Survey"
+                class="fd-button fd-button--transparent"
+              >
+                
+                                
+                <i
+                  class="sap-icon--survey"
+                />
+                
+                            
+              </button>
+              
+                            
+              <button
+                aria-label="Pool"
+                class="fd-button fd-button--transparent"
+              >
+                
+                                
+                <i
+                  class="sap-icon--pool"
+                />
+                
+                            
+              </button>
+              
+                            
+              <button
+                aria-label="Chart"
+                class="fd-button fd-button--transparent"
+              >
+                
+                                
+                <i
+                  class="sap-icon--pie-chart"
+                />
+                
+                            
+              </button>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-dynamic-page__subtitle"
+        >
+           Oversized multimaterial sneakers with quilted effect 
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        aria-label="RTL Header"
+        class="fd-dynamic-page__header fd-dynamic-page__header--xl"
+        role="region"
+      >
+        
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
+                delectus necessitatibus incidunt numquam asperiores tenetur iure. 
+                Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
+            
+      </div>
+      
+            
+      <div
+        class="fd-dynamic-page__header-visibility-container fd-dynamic-page__header-visibility-container--no-shadow"
+      >
+        
+                
+        <div
+          class="fd-dynamic-page__header-visibility-container--left-gradient"
+        />
+        
+                
+        <div
+          class="fd-dynamic-page__header-visibility-container--button-group"
+        >
+          
+                    
+          <button
+            aria-controls="fddplhvc1"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-label="See More"
+            class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+          >
+            
+                            
+            <i
+              class="sap-icon--slim-arrow-up"
+            />
+            
+                    
+          </button>
+          
+                    
+          <button
+            aria-label="Pin this"
+            class="fd-dynamic-page__pin-button fd-button fd-button--compact"
+          >
+            
+                            
+            <i
+              class="sap-icon--pushpin-off"
+            />
+            
+                    
+          </button>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-dynamic-page__header-visibility-container--right-gradient"
+        />
+        
+            
+      </div>
+      
+            
+      <div
+        class="fd-dynamic-page__tabs--overflow"
+      >
+        
+                
+        <ul
+          class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--xl fd-dynamic-page__tabs--add-shadow"
+          role="tablist"
+        >
+          
+                    
+          <li
+            class="fd-tabs__item"
+            role="listitem"
+          >
+            
+                        
+            <a
+              aria-controls="fuCwV555"
+              class="fd-tabs__link"
+              href="#fuCwV555"
+              role="tab"
+            >
+              
+                            
+              <span
+                class="fd-tabs__tag"
+              >
+                
+                                Link
+                            
+              </span>
+              
+                        
+            </a>
+            
+                    
+          </li>
+          
+                    
+          <li
+            class="fd-tabs__item"
+            role="listitem"
+          >
+            
+                        
+            <a
+              aria-controls="AiWfz164"
+              aria-selected="true"
+              class="fd-tabs__link"
+              href="#AiWfz164"
+              role="tab"
+            >
+              
+                            
+              <span
+                class="fd-tabs__tag"
+              >
+                
+                                Selected
+                            
+              </span>
+              
+                        
+            </a>
+            
+                    
+          </li>
+          
+                
+        </ul>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fd-dynamic-page__content fd-dynamic-page__content--xl"
+      >
+        
+                
+        <div
+          aria-expanded="false"
+          class="fd-tabs__panel"
+          id="fuCwV555"
+          role="tabpanel"
+        >
+          
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+                    eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+                    dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+                
+        </div>
+        
+                
+        <div
+          aria-expanded="true"
+          class="fd-tabs__panel"
+          id="AiWfz164"
+          role="tabpanel"
+        >
+          
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fd-bar fd-bar--floating-footer"
+      >
+        
+                
+        <div
+          class="fd-bar__right"
+        >
+          
+                    
+          <div
+            class="fd-bar__element"
+          >
+            
+                        
+            <button
+              aria-label="button"
+              class="fd-button fd-button--emphasized fd-button--compact"
+            >
+              Save
+            </button>
+            
+                    
+          </div>
+          
+                    
+          <div
+            class="fd-bar__element"
+          >
+            
+                        
+            <button
+              aria-label="button"
+              class="fd-button fd-button--transparent fd-button--compact"
+            >
+              Cancel
+            </button>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <br />
+  <br />
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Dynamic Page Layout Tablet mode 1`] = `
-
+<section>
+  
     
+  <div
+    aria-label="Dynamic Page Layout Tablet Example"
+    class="fd-dynamic-page"
+    role="region"
+  >
+    
+        
+    <div
+      class="fd-dynamic-page__title-area fd-dynamic-page__title-area--m"
+    >
+      
+            
+      <div
+        class="fd-dynamic-page__breadcrumb-container"
+      >
+        
+                
+        <ul
+          class="fd-dynamic-page__breadcrumb fd-breadcrumb"
+        >
+          
+                    
+          <li
+            class="fd-breadcrumb__item"
+          >
+            <a
+              class="fd-breadcrumb__link"
+              href="#"
+              tabindex="0"
+            >
+              Men
+            </a>
+          </li>
+          
+                    
+          <li
+            class="fd-breadcrumb__item"
+          >
+            <a
+              class="fd-breadcrumb__link"
+              href="#"
+              tabindex="0"
+            >
+              Shoes
+            </a>
+          </li>
+          
+                    
+          <li
+            class="fd-breadcrumb__item"
+          >
+            <a
+              class="fd-breadcrumb__link"
+              href="#"
+              tabindex="0"
+            >
+              Running Shoes
+            </a>
+          </li>
+          
+                
+        </ul>
+        
+                
+        <div
+          class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+        >
+          
+                    
+          <button
+            aria-label="Survey"
+            class="fd-button fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--survey"
+            />
+            
+                    
+          </button>
+          
+                    
+          <button
+            aria-label="Pool"
+            class="fd-button fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--pool"
+            />
+            
+                    
+          </button>
+          
+                    
+          <button
+            aria-label="Chart"
+            class="fd-button fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--pie-chart"
+            />
+            
+                    
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fd-dynamic-page__title-container"
+      >
+        
+                
+        <div
+          class="fd-dynamic-page__title fd-dynamic-page__title--m"
+        >
+           Balenciaga Tripple S Trainers 
+        </div>
+        
+                
+        <div
+          class="fd-dynamic-page__title-content"
+        >
+           Some RANDOM things 
+        </div>
+        
+                
+        <div
+          class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+        >
+          
+                    
+          <button
+            class="fd-button fd-button--compact fd-button--positive"
+          >
+            Accept
+          </button>
+          
+                    
+          <button
+            class="fd-button fd-button--compact fd-button--reject"
+          >
+            Reject
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fd-dynamic-page__subtitle"
+      >
+         Oversized multimaterial sneakers with quilted effect 
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-dynamic-page__header fd-dynamic-page__header--m"
+    >
+      
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
+            delectus necessitatibus incidunt numquam asperiores tenetur iure. 
+            Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
+        
+    </div>
+    
+        
+    <div
+      class="fd-dynamic-page__header-visibility-container fd-dynamic-page__header-visibility-container--no-shadow"
+    >
+      
+            
+      <div
+        class="fd-dynamic-page__header-visibility-container--left-gradient"
+      />
+      
+            
+      <div
+        class="fd-dynamic-page__header-visibility-container--button-group"
+      >
+        
+                
+        <button
+          aria-controls="fddplhvc1"
+          aria-expanded="false"
+          aria-haspopup="true"
+          aria-label="See More"
+          class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+        >
+          
+                        
+          <i
+            class="sap-icon--slim-arrow-up"
+          />
+          
+                
+        </button>
+        
+                
+        <button
+          aria-label="Pin this"
+          class="fd-dynamic-page__pin-button fd-button fd-button--compact"
+        >
+          
+                        
+          <i
+            class="sap-icon--pushpin-off"
+          />
+          
+                
+        </button>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fd-dynamic-page__header-visibility-container--right-gradient"
+      />
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-dynamic-page__tabs--overflow"
+    >
+      
+            
+      <ul
+        class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--m fd-dynamic-page__tabs--add-shadow"
+        role="tablist"
+      >
+        
+                
+        <li
+          class="fd-tabs__item"
+          role="listitem"
+        >
+          
+                    
+          <a
+            aria-controls="fuCwV551"
+            class="fd-tabs__link"
+            href="#fuCwV551"
+            role="tab"
+          >
+            
+                        
+            <span
+              class="fd-tabs__tag"
+            >
+              
+                            Link
+                        
+            </span>
+            
+                    
+          </a>
+          
+                
+        </li>
+        
+                
+        <li
+          class="fd-tabs__item"
+          role="listitem"
+        >
+          
+                    
+          <a
+            aria-controls="AiWfz166"
+            aria-selected="true"
+            class="fd-tabs__link"
+            href="#AiWfz166"
+            role="tab"
+          >
+            
+                        
+            <span
+              class="fd-tabs__tag"
+            >
+              
+                            Selected
+                        
+            </span>
+            
+                    
+          </a>
+          
+                
+        </li>
+        
+            
+      </ul>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-dynamic-page__content fd-dynamic-page__content--m"
+    >
+      
+            
+      <div
+        aria-expanded="false"
+        class="fd-tabs__panel"
+        id="fuCwV551"
+        role="tabpanel"
+      >
+        
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+                eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+                dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+            
+      </div>
+      
+            
+      <div
+        aria-expanded="true"
+        class="fd-tabs__panel"
+        id="AiWfz166"
+        role="tabpanel"
+      >
+        
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-bar fd-bar--floating-footer"
+    >
+      
+            
+      <div
+        class="fd-bar__right"
+      >
+        
+                
+        <div
+          class="fd-bar__element"
+        >
+          
+                    
+          <button
+            aria-label="button"
+            class="fd-button fd-button--emphasized fd-button--compact"
+          >
+            Save
+          </button>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-bar__element"
+        >
+          
+                    
+          <button
+            aria-label="button"
+            class="fd-button fd-button--transparent fd-button--compact"
+          >
+            Cancel
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <br />
+  <br />
+  
+
+</section>
 `;
