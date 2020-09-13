@@ -10,18 +10,18 @@ The object identifier is a short text that represents the key identifier of an o
 
 The object identifier should be easily read by the users, preferably displaying text instead of an ID. If it necessary to distinguish objects by their IDs, then it should appear as descriptive text below the title text.
 
-The object number comprises:
+**The object number comprises:**
 
 - A title text
 - An optional descriptive text
 - An active state (if desired) which resembles a link that can trigger an event
 
 ##Usage
-Use the object identifier if:
+**Use the object identifier if:**
 
 - You want to indicate the key identifier on an object.
 
-Do not use the object identifier if:
+**Do not use the object identifier if:**
 
 - You want to display system messages.
 - They are for decorative purposes only.        
@@ -110,7 +110,7 @@ export const titleAndText = () => `
 </div>
 `;
 
-titleAndText.storyName = 'Description';
+titleAndText.storyName = 'Descriptive';
 titleAndText.parameters = {
     docs: {
         storyDescription: 'To display the object identifier\'s title with descriptive text, add an additional tag below the title container and a `fd-object-identifier__text` modifier class.'

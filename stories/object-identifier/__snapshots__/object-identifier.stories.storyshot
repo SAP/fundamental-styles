@@ -1,16 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Object Identifier Bold title 1`] = `
+exports[`Storyshots Components/Object Identifier Bold 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Object Identifier Object Identifier inside table 1`] = `
-
-
-`;
-
-exports[`Storyshots Components/Object Identifier Title and description 1`] = `
+exports[`Storyshots Components/Object Identifier Descriptive 1`] = `
 <section>
   
 
@@ -120,7 +115,7 @@ exports[`Storyshots Components/Object Identifier Title and description 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Object Identifier Title as link 1`] = `
+exports[`Storyshots Components/Object Identifier Link 1`] = `
 <section>
   
 
@@ -206,7 +201,12 @@ exports[`Storyshots Components/Object Identifier Title as link 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Object Identifier Title only 1`] = `
+exports[`Storyshots Components/Object Identifier Table 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Object Identifier Title 1`] = `
 
 
 `;
