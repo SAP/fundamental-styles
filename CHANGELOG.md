@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.55](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.54...v0.12.0-rc.55) (2020-09-14)
+
+
+### Features
+
+* introduce Rating Indicator component ([#1465](https://github.com/SAP/fundamental-styles/issues/1465)) ([caba995](https://github.com/SAP/fundamental-styles/commit/caba995ca09f017e526c9fceb173a9465b3adc72))
+
 ## [0.12.0-rc.54](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.53...v0.12.0-rc.54) (2020-09-14)
 
 ## [0.12.0-rc.53](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.52...v0.12.0-rc.53) (2020-09-14)
