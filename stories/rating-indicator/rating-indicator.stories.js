@@ -227,7 +227,7 @@ export const HalfValues = () => `
     <div class="fd-rating-indicator fd-rating-indicator--half-star">
         <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
             <input aria-label="half star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-05" name="rating-half-sizes" value="0.5">  
-            <label class="fd-rating-indicator__label" for="rating-readonly-05"></label>
+            <label class="fd-rating-indicator__label" for="rating-half-sizes-05"></label>
 
             <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-1" name="rating-half-sizes" value="1">
             <label class="fd-rating-indicator__label" for="rating-half-sizes-1"></label>
@@ -303,44 +303,6 @@ CustomIcons.parameters = {
 To make the rating indicator to use custom icons needs to be added class \`.fd-rating-indicator--icon\` 
 to the \`fd-rating-indicator\` element.
 Additionally, needs to set css variables \`--sapRating-indicator-icon-rated: url(...)\` and \`--sapRating-indicator-icon-unrated: url(...)\`
-`
-    }
-};
-
-export const ReadOnly = () => `
-<div class="example-container">
-    <div class="fd-rating-indicator" aria-readonly="true">
-        <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-            <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-1" name="rating-readonly" value="1" readonly>  
-            <label class="fd-rating-indicator__label" for="rating-readonly-1"></label>
-            
-            <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-2" name="rating-readonly" value="2" readonly checked>
-            <label class="fd-rating-indicator__label" for="rating-readonly-2"></label>
-            
-            <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-3" name="rating-readonly" value="3" readonly>
-            <label class="fd-rating-indicator__label" for="rating-readonly-3"></label>
-            
-            <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-4" name="rating-readonly" value="4" readonly>
-            <label class="fd-rating-indicator__label" for="rating-readonly-4"></label>
-            
-            <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-readonly-5" name="rating-readonly" value="5" readonly>
-            <label class="fd-rating-indicator__label" for="rating-readonly-5"></label>
-        </div>
-        <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
-    </div>
-</div>
-`;
-
-ReadOnly.storyName = 'Read-Only';
-ReadOnly.parameters = {
-    docs: {
-        storyDescription: `
-To make the rating indicator read-only, the \`[disabled]\` attribute needs to be added to all inputs. 
-Additionally, one of the selectors listed below needs to be added to the \`fd-rating-indicator\` element:
-
-- \`.is-readonly\`
-- \`aria-readonly="true"\`
-- \`[readonly]\`
 `
     }
 };

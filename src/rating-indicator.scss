@@ -186,20 +186,6 @@ $block: #{$fd-namespace}-rating-indicator;
     }
   }
 
-  @include fd-readonly() {
-    .#{$block}__input {
-      @include fd-icon-glyph('favorite') {
-        color: var(--sapRating_Indicator_Readonly_Selected_Color);
-      }
-
-      &:checked ~ input + .#{$block}__label {
-        @include fd-icon-glyph('favorite') {
-          color: var(--sapRating_Indicator_Readonly_Unselected_Color);
-        }
-      }
-    }
-  }
-
   @include fd-flex-center();
 
   &.is-display-mode {
