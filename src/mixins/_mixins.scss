@@ -383,22 +383,22 @@
   max-height: $height;
 }
 
-@mixin fd-icon-contain() {
+@mixin fd-icon-selector() {
   [class*="sap-icon"] {
+    @content;
+  }
+}
+
+@mixin fd-icon-contain() {
+  @include fd-icon-selector() {
+    @include fd-flex-center();
+
     color: inherit;
     background: inherit;
     font-size: inherit;
     border-radius: inherit;
     line-height: 1;
 
-    @include fd-flex-center();
-
-    @content;
-  }
-}
-
-@mixin fd-icon-selector() {
-  [class*="sap-icon"] {
     @content;
   }
 }
