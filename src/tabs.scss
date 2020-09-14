@@ -195,6 +195,10 @@ $block: #{$fd-namespace}-tabs;
   &__icon {
     @include fd-reset();
 
+    @include fd-icon-contain() {
+      font-size: $fd-tabs-icon-size;
+    }
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,10 +210,6 @@ $block: #{$fd-namespace}-tabs;
     background-color: transparent;
     position: relative;
     margin: 0 $fd-tabs-selection-padding-x;
-
-    &::before {
-      font-size: $fd-tabs-icon-size;
-    }
 
     @include tabs-selection();
   }
@@ -246,10 +246,10 @@ $block: #{$fd-namespace}-tabs;
 
   &__overflow {
     @include fd-reset();
+    @include fd-icon-contain();
+    @include fd-flex-center();
 
     margin-left: auto;
-
-    @include fd-icon('slim-arrow-down');
   }
 
   &__process-icon {
@@ -356,10 +356,6 @@ $block: #{$fd-namespace}-tabs;
       margin: 0 $fd-tabs-active-link-line-offset-x;
     }
 
-    .#{$block}__overflow {
-      @include fd-icon('slim-arrow-right');
-    }
-
     .#{$block}__label {
       white-space: nowrap;
       max-width: 7.5rem;
@@ -377,10 +373,6 @@ $block: #{$fd-namespace}-tabs;
             padding-left: 0;
           }
         }
-      }
-
-      .#{$block}__overflow {
-        transform: rotate(180deg);
       }
     }
   }
@@ -461,7 +453,7 @@ $block: #{$fd-namespace}-tabs;
       width: $fd-tabs-compact-icon-selection-height;
       height: $fd-tabs-compact-icon-selection-height;
 
-      &::before {
+      @include fd-icon-selector() {
         font-size: $fd-tabs-compact-icon-size;
       }
     }
