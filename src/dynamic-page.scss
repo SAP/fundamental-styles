@@ -12,6 +12,9 @@ $block: #{$fd-namespace}-dynamic-page;
   $fd-dynamic-page-box-shadow: var(--sapContent_HeaderShadow);
   $fd-dynamic-page-button-width: 1.5rem;
   $fd-dynamic-page-button-padding: 0 0.25rem;
+  $fd-dynamic-page-button-group-width: 4rem;
+  $fd-dynamic-page-button-group-height: 0.0625rem;
+  $fd-dynamic-page-focus-outline-offset: 0.0625rem;
 
   @include fd-reset();
 
@@ -33,6 +36,15 @@ $block: #{$fd-namespace}-dynamic-page;
     width: $fd-dynamic-page-button-width;
     height: 2rem;
     min-width: $fd-dynamic-page-button-width;
+
+    @include fd-rtl() {
+      > [class*='sap-icon'] {
+        &:last-child {
+          margin-right: 0;
+          margin-left: 0;
+        }
+      }
+    }
   }
 
   &__title-area {
@@ -42,12 +54,15 @@ $block: #{$fd-namespace}-dynamic-page;
       justify-content: space-between;
     }
 
+    @include fd-fiori-focus(0.0625rem);
+
     min-height: 3rem;
     word-wrap: break-word;
     background-color: $fd-dynamic-page-background-color; // discrepancy
 
     @include fd-hover() {
       background: var(--sapObjectHeader_Hover_Background);    // color not yet available in Fundamental, therefore hover not reflecting the color
+      border-bottom: var(--sapDynamicPage_Hover_Border_Bottom);
     }
 
     &--s {
@@ -64,7 +79,7 @@ $block: #{$fd-namespace}-dynamic-page;
     }
 
     &--transparent-bg {
-      background: transparent;  // WARNING: theme conflicting values
+      background: var(--sapDynamicPage_Title_Header_Transparent_Background);
     }
 
     &--collapsed {
@@ -112,7 +127,6 @@ $block: #{$fd-namespace}-dynamic-page;
     }
 
     &--collapsed-s {
-      color: var(--sapGroup_TitleTextColor);
       font-size: var(--sapFontHeader5Size);
       padding: 0;
       line-height: 2rem;
@@ -164,6 +178,8 @@ $block: #{$fd-namespace}-dynamic-page;
       justify-content: space-between;
     }
 
+    @include fd-fiori-focus(0.0625rem);
+
     word-wrap: break-word;
     background: var(--sapObjectHeader_Background);
     box-shadow: $fd-dynamic-page-box-shadow;
@@ -207,7 +223,7 @@ $block: #{$fd-namespace}-dynamic-page;
     padding: $fd-dynamic-page-header-padding-top-bottom 0;
 
     &--transparent-bg {
-      background-color: transparent;  // WARNING: theme conflicting values
+      background-color: var(--sapDynamicPage_Title_Header_Transparent_Background);
     }
 
     &--s {
@@ -261,22 +277,22 @@ $block: #{$fd-namespace}-dynamic-page;
     box-shadow: $fd-dynamic-page-box-shadow;
     // left and right gradient for the pin/collapse buttons
     &--left-gradient {
-      background-image: linear-gradient(to left, var(--sapHighlightColor), transparent);
-      width: 4rem;
-      height: 0.0625rem;
+      background-image: var(--sapDynamicPage_Button_Left_Gradient);
+      width: $fd-dynamic-page-button-group-width;
+      height: $fd-dynamic-page-button-group-height;
 
       @include fd-rtl() {
-        background-image: linear-gradient(to right, var(--sapHighlightColor), transparent);
+        background-image: var(--sapDynamicPage_Button_Right_Gradient);
       }
     }
 
     &--right-gradient {
-      background-image: linear-gradient(to right, var(--sapHighlightColor), transparent);
-      width: 4rem;
-      height: 0.0625rem;
+      background-image: var(--sapDynamicPage_Button_Right_Gradient);
+      width: $fd-dynamic-page-button-group-width;
+      height: $fd-dynamic-page-button-group-height;
 
       @include fd-rtl() {
-        background-image: linear-gradient(to left, var(--sapHighlightColor), transparent);
+        background-image: var(--sapDynamicPage_Button_Left_Gradient);
       }
     }
 
@@ -284,9 +300,9 @@ $block: #{$fd-namespace}-dynamic-page;
       @include fd-reset();
       @include fd-flex-center();
 
-      background: var(--sapHighlightColor);
+      background: var(--sapDynamicPage_Button_Group_Background);
       width: 4.25rem;
-      height: 0.0625rem;
+      height: $fd-dynamic-page-button-group-height;
 
       // button styles
       .#{$block}__pin-button.#{$fd-namespace}-button,
@@ -326,11 +342,11 @@ $block: #{$fd-namespace}-dynamic-page;
 
     // for list and transparent, different bg colors
     &--list-bg {
-      background-color: var(--sapGroup_ContentBackground);
+      background-color: var(--sapDynamicPage_Content_List_Background);
     }
 
     &--transparent-bg {
-      background-color: transparent;
+      background-color: var(--sapDynamicPage_Content_Transparent_Background);
     }
   }
 }

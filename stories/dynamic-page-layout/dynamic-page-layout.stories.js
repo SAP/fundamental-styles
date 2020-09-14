@@ -60,7 +60,7 @@ There are no specific styles for footer when used with Dynamic Page.
 
 export const desktop = () => `
     <div class="fd-dynamic-page" role="region" aria-label="Dynamic Page Layout Desktop Example">
-        <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl">
+        <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl" tabindex="0">
             <ul class="fd-dynamic-page__breadcrumb fd-breadcrumb">
                 <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
                 <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Shoes</a></li>
@@ -183,7 +183,7 @@ desktop.parameters = {
 
 export const tablet = () => `
     <div class="fd-dynamic-page" role="region" aria-label="Dynamic Page Layout Tablet Example">
-        <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--m">
+        <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--m" tabindex="0">
             <div class="fd-dynamic-page__breadcrumb-container">
                 <ul class="fd-dynamic-page__breadcrumb fd-breadcrumb">
                     <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
@@ -300,7 +300,7 @@ tablet.storyName = 'Tablet mode';
 tablet.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'The dynamic page layout with Tablet specification(L). Use the `--m` modifier on `title-area`, `breadcrumb` ' +
+        storyDescription: 'The dynamic page layout with Tablet specification(L). Use the `--m` modifier on `title-area`, `breadcrumb`, ' +
         '`header`, and `content` elements to get the Tablet spacings.' +
         ' The spec recommends navigation actions in a separate row above the global actions. The navigation actions are placed at the same level as the breadcrumb.'
     }
@@ -309,7 +309,7 @@ tablet.parameters = {
 export const mobile = () => `
 <div style="display:flex; flex-direction: row; justify-content: space-evenly">
     <div class="fd-dynamic-page" style="width:30%" role="region" aria-label="Dynamic Page Layout Mobile Example">
-        <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--s">
+        <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--s" tabindex="0">
             <div class="fd-dynamic-page__breadcrumb-container">
                 <ul class="fd-dynamic-page__breadcrumb--s fd-breadcrumb">
                     <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
@@ -399,7 +399,7 @@ export const mobile = () => `
     </div>
 
     <div class="fd-dynamic-page" style="width:30%" role="region" aria-label="Dynamic Page Layout Mobile Collapsed Example">
-        <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--s fd-dynamic-page__title-area--collapsed">
+        <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--s fd-dynamic-page__title-area--collapsed" tabindex="0">
             <div class="fd-dynamic-page__breadcrumb-container">
                 <ul class="fd-dynamic-page__breadcrumb--s fd-breadcrumb">
                     <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
@@ -489,7 +489,7 @@ export const mobile = () => `
     </div>
 
     <div class="fd-dynamic-page" style="width:30%" role="region" aria-label="Dynamic Page Layout Mobile Summary Line Example">
-        <div class="fd-dynamic-page__summarized-title-area fd-dynamic-page__summarized-title-area--s fd-dynamic-page__summarized-title-area--no-shadow">
+        <div class="fd-dynamic-page__summarized-title-area fd-dynamic-page__summarized-title-area--s fd-dynamic-page__summarized-title-area--no-shadow" tabindex="0">
             <div class="fd-dynamic-page__summarized-title"> Balenciaga Tripple S Trainers </div>
             <div class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                     <button class="fd-button fd-button--transparent" aria-label="Close">
@@ -497,7 +497,7 @@ export const mobile = () => `
                     </button>
             </div>
         </div>
-        <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--s fd-dynamic-page__title-area--collapsed" aria-hidden="true">
+        <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--s fd-dynamic-page__title-area--collapsed" aria-hidden="true" tabindex="0">
             <div class="fd-dynamic-page__breadcrumb-container">
             <ul class="fd-dynamic-page__breadcrumb--s fd-breadcrumb">
                 <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
@@ -607,7 +607,7 @@ export const expandable = () => `
     <hr />
     <br /><br />    
     <div class="fd-dynamic-page" role="region" aria-label="Dynamic Page Layout Expandable Example">
-        <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl">
+        <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl" tabindex="0">
             <ul class="fd-dynamic-page__breadcrumb fd-breadcrumb">
                 <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
                 <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Shoes</a></li>
@@ -671,7 +671,7 @@ export const expandable = () => `
     <hr />
     <br /><br />
     <div class="fd-dynamic-page" role="region" aria-label="Dynamic Page Layout Collapsed Example">
-        <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl fd-dynamic-page__title-area--collapsed">
+        <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl fd-dynamic-page__title-area--collapsed" tabindex="0">
             <ul class="fd-dynamic-page__breadcrumb fd-breadcrumb">
                 <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
                 <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Shoes</a></li>
@@ -735,7 +735,7 @@ export const expandable = () => `
     <br /><br />
 
     <div class="fd-dynamic-page" role="region" aria-label="Dynamic Page Layout Pinnable Example">
-        <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl">
+        <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl" tabindex="0">
             <ul class="fd-dynamic-page__breadcrumb fd-breadcrumb">
                 <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
                 <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Shoes</a></li>
@@ -803,7 +803,7 @@ expandable.parameters = {
 export const rtl = () => `
     <div dir="rtl">
         <div class="fd-dynamic-page" role="region" aria-label="Dynamic Page Layout RTL Example">
-            <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl">
+            <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl" tabindex="0">
                 <ul class="fd-dynamic-page__breadcrumb fd-breadcrumb">
                     <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
                     <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Shoes</a></li>

@@ -13,6 +13,7 @@ exports[`Storyshots Components/Dynamic Page Layout Desktop mode 1`] = `
         
     <div
       class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl"
+      tabindex="0"
     >
       
             
@@ -453,6 +454,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
         
     <div
       class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl"
+      tabindex="0"
     >
       
             
@@ -727,6 +729,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
         
     <div
       class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl fd-dynamic-page__title-area--collapsed"
+      tabindex="0"
     >
       
             
@@ -1001,6 +1004,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
         
     <div
       class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl"
+      tabindex="0"
     >
       
             
@@ -1254,6 +1258,7 @@ exports[`Storyshots Components/Dynamic Page Layout Mobile mode 1`] = `
         
       <div
         class="fd-dynamic-page__title-area fd-dynamic-page__title-area--s"
+        tabindex="0"
       >
         
             
@@ -1628,6 +1633,7 @@ exports[`Storyshots Components/Dynamic Page Layout Mobile mode 1`] = `
         
       <div
         class="fd-dynamic-page__title-area fd-dynamic-page__title-area--s fd-dynamic-page__title-area--collapsed"
+        tabindex="0"
       >
         
             
@@ -2004,6 +2010,7 @@ exports[`Storyshots Components/Dynamic Page Layout Mobile mode 1`] = `
         
       <div
         class="fd-dynamic-page__summarized-title-area fd-dynamic-page__summarized-title-area--s fd-dynamic-page__summarized-title-area--no-shadow"
+        tabindex="0"
       >
         
             
@@ -2042,6 +2049,7 @@ exports[`Storyshots Components/Dynamic Page Layout Mobile mode 1`] = `
       <div
         aria-hidden="true"
         class="fd-dynamic-page__title-area fd-dynamic-page__title-area--s fd-dynamic-page__title-area--collapsed"
+        tabindex="0"
       >
         
             
@@ -2443,6 +2451,7 @@ exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
             
       <div
         class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl"
+        tabindex="0"
       >
         
                 
@@ -2871,6 +2880,7 @@ exports[`Storyshots Components/Dynamic Page Layout Tablet mode 1`] = `
         
     <div
       class="fd-dynamic-page__title-area fd-dynamic-page__title-area--m"
+      tabindex="0"
     >
       
             
