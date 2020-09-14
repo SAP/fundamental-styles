@@ -28,11 +28,13 @@ export const primary = () => `
                 <h2 class="fd-notification__title">Your leave request has been accepted</h2>
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p class="fd-notification__footer">SAP Analytics Cloud<span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
+            <p class="fd-notification__footer">
+                <span class="fd-notification__footer--author">Long author name - SAP Analytics Cloud Cloud Cloud</span>
+                <span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
-            <button class="fd-button fd-button--transparent fd-button--compact" aria-label="Close">
+            <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
                 <i class="sap-icon--decline"></i>
             </button>
         </div>
@@ -57,11 +59,13 @@ export const noAvatar = () => `
                 <h2 class="fd-notification__title">Your leave request has been accepted</h2>
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p class="fd-notification__footer">SAP Analytics Cloud<span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
+            <p class="fd-notification__footer">
+            <span class="fd-notification__footer--author">SAP Analytics Cloud</span>
+            <span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
-            <button class="fd-button fd-button--transparent fd-button--compact" aria-label="Close">
+            <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
                 <i class="sap-icon--decline"></i>
             </button>
         </div>
@@ -94,13 +98,14 @@ export const information = () => `
                 <h2 class="fd-notification__title">You have new items</h2>
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p class="fd-notification__footer">SAP Analytics Cloud<span class="fd-notification__footer--separator">&bullet;</span>Just now
-                <button class="fd-button fd-button--transparent fd-button--compact">Show less</button>
+            <p class="fd-notification__footer">
+            <span class="fd-notification__footer--author">SAP Analytics Cloud</span>
+            <span class="fd-notification__footer--separator">&bullet;</span>Just now
             </p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
-            <button class="fd-button fd-button--transparent fd-button--compact" aria-label="Close">
+            <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
                 <i class="sap-icon--decline"></i>
             </button>
         </div>
@@ -133,11 +138,13 @@ export const warning = () => `
               <h2 class="fd-notification__title">You have new items</h2>
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p class="fd-notification__footer">Tom<span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
+            <p class="fd-notification__footer">
+            <span class="fd-notification__footer--author">Tom Norton Beam</span>
+            <span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
-            <button class="fd-button fd-button--transparent fd-button--compact" aria-label="Close">
+            <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
                 <i class="sap-icon--decline"></i>
             </button>
         </div>
@@ -171,11 +178,13 @@ export const error = () => `
             <h2 class="fd-notification__title">You have new items</h2>
           </div>
           <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p class="fd-notification__footer">SAP Analytics Cloud<span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
+          <p class="fd-notification__footer">
+          <span class="fd-notification__footer--author">SAP Analytics Cloud</span>
+          <span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
-            <button class="fd-button fd-button--transparent fd-button--compact" aria-label="Close">
+            <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
                 <i class="sap-icon--decline"></i>
             </button>
         </div>
@@ -228,7 +237,7 @@ export const notificationGroup = () => `
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Accept All</button>
-            <button class="fd-button fd-button--transparent fd-button--compact" aria-label="Close">
+            <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
                 <i class="sap-icon--decline"></i>
             </button>
         </div>
@@ -241,7 +250,9 @@ export const notificationGroup = () => `
                 <h2 class="fd-notification__title">You've got new item</h2>
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p class="fd-notification__footer">SAP Team<span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
+            <p class="fd-notification__footer">
+            <span class="fd-notification__footer--author">SAP Team</span>
+            <span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
         </div>
         <div class="fd-notification__actions">
               <div class="fd-popover fd-popover--right">
@@ -273,7 +284,7 @@ export const notificationGroup = () => `
                 </div>
             </div>
 
-            <button class="fd-button fd-button--transparent fd-button--compact" aria-label="Close">
+            <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
                 <i class="sap-icon--decline"></i>
             </button>
         </div>
@@ -286,12 +297,14 @@ export const notificationGroup = () => `
             <h2 class="fd-notification__title">Your leave request has been accepted</h2>
             </div>
             <p class="fd-notification__paragraph">Lagna aliqua.</p>
-            <p class="fd-notification__footer">SAP Analytics Cloud<span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
+            <p class="fd-notification__footer">
+            <span class="fd-notification__footer--author">SAP Analytics Cloud</span>
+            <span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
 
-            <button class="fd-button fd-button--transparent fd-button--compact" aria-label="Close">
+            <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
                 <i class="sap-icon--decline"></i>
             </button>
         </div>
@@ -304,11 +317,13 @@ export const notificationGroup = () => `
             <h2 class="fd-notification__title">Your leave request has been rejected. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p class="fd-notification__footer">SAP Analytics Cloud<span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
+            <p class="fd-notification__footer">
+            <span class="fd-notification__footer--author">SAP Analytics Cloud</span>
+            <span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
-            <button class="fd-button fd-button--transparent fd-button--compact" aria-label="Close">
+            <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
                 <i class="sap-icon--decline"></i>
             </button>
         </div>

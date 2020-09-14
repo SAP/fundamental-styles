@@ -37,6 +37,23 @@ $block: #{$fd-namespace}-notification;
     @include fd-icon("message-#{$type}");
   }
 
+  @mixin fd-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  @mixin fd-hide-on-mobile {
+    @include fd-screen(s) {
+      display: none !important;
+    }
+
+    @include fd-screen(m) {
+      display: inline-block !important;
+    }
+  }
+
+
   @include fd-reset();
 
   background-color: $fd-notification-background-color;
@@ -112,6 +129,7 @@ $block: #{$fd-namespace}-notification;
 
     width: 100%;
     margin-left: 0.75rem;
+    overflow: auto;
 
     @include fd-rtl() {
       margin-right: 0.75rem;
@@ -144,8 +162,17 @@ $block: #{$fd-namespace}-notification;
     }
 
     .#{$block}__footer {
+      @include fd-reset();
+      
       padding-top: 0.5rem;
-      margin: 0;
+
+      &--author {
+        @include fd-truncate();
+
+        display: inline-block;
+        max-width: 40%;
+        vertical-align: middle;
+      }
 
       &--separator {
         margin: 0 0.5rem;
@@ -175,6 +202,10 @@ $block: #{$fd-namespace}-notification;
       @include fd-rtl() {
         margin-right: 0;
       }
+    }
+
+    &--dismiss {
+      @include fd-hide-on-mobile();
     }
   }
 
