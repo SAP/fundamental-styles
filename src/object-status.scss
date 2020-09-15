@@ -114,6 +114,10 @@ $inverted-color-accents: (
   color: map_deep_get($variablesSet, "regular", "color");
   background-color: map_deep_get($variablesSet, "regular", "background");
 
+  &::before {
+    color: map_deep_get($variablesSet, "regular", "color");
+  }
+
   @include fd-icon-selector() {
     color: map_deep_get($variablesSet, "regular", "color");
     position: inherit;
@@ -246,6 +250,10 @@ $inverted-color-accents: (
   @each $set-name, $color-set in $color-states {
     &--#{$set-name} {
       color: map_get($color-set, "color");
+
+      &::before {
+        color: map_get($color-set, "iconColor");
+      }
 
       @include fd-icon-selector() {
         color: map_get($color-set, "iconColor");

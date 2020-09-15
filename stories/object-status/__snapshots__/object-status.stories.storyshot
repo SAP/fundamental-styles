@@ -255,53 +255,32 @@ exports[`Storyshots Components/Object Status Icon 1`] = `
   
 
   <span
-    class="fd-object-status fd-object-status--negative"
-  >
-    <i
-      aria-label="Negative Icon"
-      class="fd-object-status__icon sap-icon--status-negative"
-    />
-  </span>
+    class="fd-object-status fd-object-status--negative sap-icon--status-negative"
+  />
   
 
   <span
-    class="fd-object-status fd-object-status--critical"
-  >
-    <i
-      aria-label="Critical Icon"
-      class="fd-object-status__icon sap-icon--status-critical"
-    />
-  </span>
+    aria-label="Critical Icon"
+    class="fd-object-status fd-object-status--critical sap-icon--status-critical"
+  />
   
 
   <span
-    class="fd-object-status fd-object-status--positive"
-  >
-    <i
-      aria-label="Positive Icon"
-      class="fd-object-status__icon sap-icon--status-positive"
-    />
-  </span>
+    aria-label="Positive Icon"
+    class="fd-object-status fd-object-status--positive sap-icon--status-positive"
+  />
   
 
   <span
-    class="fd-object-status fd-object-status--informative"
-  >
-    <i
-      aria-label="Information Icon"
-      class="fd-object-status__icon sap-icon--hint"
-    />
-  </span>
+    aria-label="Information Icon"
+    class="fd-object-status fd-object-status--informative sap-icon--hint"
+  />
   
 
   <span
-    class="fd-object-status"
-  >
-    <i
-      aria-hidden="true"
-      class="fd-object-status__icon sap-icon--to-be-reviewed"
-    />
-  </span>
+    aria-hidden="true"
+    class="fd-object-status sap-icon--to-be-reviewed"
+  />
   
 
 </section>
@@ -429,13 +408,9 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
   
 
   <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--negative"
-  >
-    <i
-      aria-label="Inverted Negative Icon"
-      class="fd-object-status__icon sap-icon--status-negative"
-    />
-  </span>
+    aria-label="Inverted Negative Icon"
+    class="fd-object-status fd-object-status--inverted fd-object-status--negative  sap-icon--status-negative"
+  />
   
 
   <span
@@ -558,13 +533,9 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
     
     
     <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--negative"
-    >
-      <i
-        aria-label="Inverted Negative Icon"
-        class="fd-object-status__icon sap-icon--status-negative"
-      />
-    </span>
+      aria-label="Inverted Negative Icon"
+      class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"
+    />
     
     
     <span

@@ -30,11 +30,11 @@ export const primary = () => `
  */
 
 export const icon = () => `
-<span class="fd-object-status fd-object-status--negative"><i class="fd-object-status__icon sap-icon--status-negative" aria-label="Negative Icon"></i></span>
-<span class="fd-object-status fd-object-status--critical"><i class="fd-object-status__icon sap-icon--status-critical" aria-label="Critical Icon"></i></span>
-<span class="fd-object-status fd-object-status--positive"><i class="fd-object-status__icon sap-icon--status-positive"  aria-label="Positive Icon"></i></span>
-<span class="fd-object-status fd-object-status--informative"><i class="fd-object-status__icon sap-icon--hint" aria-label="Information Icon"></i></span>
-<span class="fd-object-status"><i class="fd-object-status__icon sap-icon--to-be-reviewed" aria-hidden="true"></i></span>
+<span class="fd-object-status fd-object-status--negative sap-icon--status-negative"></span>
+<span class="fd-object-status fd-object-status--critical sap-icon--status-critical" aria-label="Critical Icon"></span>
+<span class="fd-object-status fd-object-status--positive sap-icon--status-positive"  aria-label="Positive Icon"></span>
+<span class="fd-object-status fd-object-status--informative sap-icon--hint" aria-label="Information Icon"></span>
+<span class="fd-object-status sap-icon--to-be-reviewed" aria-hidden="true"></span>
 `;
 
 /**
@@ -127,7 +127,7 @@ export const inverted = () => `
 <br><br>
 
 <span class="fd-object-status fd-object-status--inverted">Inverted Neutral</span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--negative"><i class="fd-object-status__icon sap-icon--status-negative" aria-label="Inverted Negative Icon"></i></span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--negative  sap-icon--status-negative" aria-label="Inverted Negative Icon"></span>
 <span class="fd-object-status fd-object-status--inverted fd-object-status--negative"><i class="fd-object-status__icon  sap-icon--status-negative" aria-hidden="true"></i>Negative</span>
 <span class="fd-object-status fd-object-status--inverted fd-object-status--critical "><i class="fd-object-status__icon sap-icon--status-critical" aria-hidden="true"></i>Critical</span>
 <span class="fd-object-status fd-object-status--inverted fd-object-status--positive "><i class="fd-object-status__icon  sap-icon--status-positive" aria-hidden="true"></i>Positive</span>
@@ -144,7 +144,7 @@ export const inverted = () => `
     <span class="fd-object-status fd-object-status--inverted fd-object-status--informative">2.99</span>
     <br><br>
     <span class="fd-object-status fd-object-status--inverted">Inverted Neutral</span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--negative"><i class="fd-object-status__icon sap-icon--status-negative" aria-label="Inverted Negative Icon"></i></span>
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative" aria-label="Inverted Negative Icon"></span>
     <span class="fd-object-status fd-object-status--inverted fd-object-status--negative"><i class="fd-object-status__icon  sap-icon--status-negative" aria-hidden="true"></i>Negative</span>
     <span class="fd-object-status fd-object-status--inverted fd-object-status--critical "><i class="fd-object-status__icon sap-icon--status-critical" aria-hidden="true"></i>Critical</span>
     <span class="fd-object-status fd-object-status--inverted fd-object-status--positive "><i class="fd-object-status__icon  sap-icon--status-positive" aria-hidden="true"></i>Positive</span>
