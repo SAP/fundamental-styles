@@ -500,6 +500,6 @@ export const RTL = () => `
 RTL.parameters = {
     docs: {
         iframeHeight: 220,
-        storyDescription: 'The menu can be displayed from right to left so it may be used internationally.'
+        storyDescription: 'The menu can be displayed from right to left so it may be used internationally. '
     }
 };
