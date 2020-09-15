@@ -4,15 +4,9 @@
 
   /* Rating Indicator */
   // default mode
-  --sapRating_Indicator_Selected_Icon_Color: var(--sapContent_RatedColor);
   --sapRating_Indicator_Selected_Hover_Opacity: 0.8;
-  --sapRating_Indicator_Unselected_Icon_Color: var(--sapContent_UnratedColor);
-  // Readonly mode
-  --sapRating_Indicator_Readonly_Selected_Color: var(--sapContent_RatedColor);
-  --sapRating_Indicator_Readonly_Unselected_Color: var(--sapContent_UnratedColor);
   // Display Only mode
   --sapRating_Indicator_Display_Only_Selected_Color: var(--sapTextColor);
-  --sapRating_Indicator_Display_Only_Unselected_Color: var(--sapContent_UnratedColor);
   // Disabled mode
   --sapRating_Indicator_Disabled_Selected_Color: var(--sapContent_RatedColor);
   --sapRating_Indicator_Disabled_Unselected_Color: var(--sapContent_UnratedColor);

@@ -98,7 +98,7 @@ $block: #{$fd-namespace}-rating-indicator;
 
       ~ input + .#{$block}__label {
         @include fd-icon-glyph('unfavorite') {
-          color: var(--sapRating_Indicator_Unselected_Icon_Color);
+          color: var(--sapContent_UnratedColor);
         }
 
         &:hover::before {
@@ -114,7 +114,7 @@ $block: #{$fd-namespace}-rating-indicator;
 
     @include fd-icon-glyph('favorite') {
       font-family: "SAP-icons";
-      color: var(--sapRating_Indicator_Selected_Icon_Color);
+      color: var(--sapContent_RatedColor);
       font-size: $fd-rating-indicator-default-font-size;
     }
 
@@ -206,7 +206,7 @@ $block: #{$fd-namespace}-rating-indicator;
     .#{$block}__input {
       &:checked ~ input + .#{$block}__label {
         @include fd-icon-glyph('favorite') {
-          color: var(--sapRating_Indicator_Display_Only_Unselected_Color);
+          color: var(--sapContent_UnratedColor);
         }
       }
     }
