@@ -1,0 +1,13 @@
+@import "./mixins";
+
+$block: #{$fd-namespace}-search-field;
+
+.#{$block} {
+  $fd-search-field-something: 0 !default;
+
+  @include fd-reset();
+
+  height: 2rem;
+  width: 6rem;
+  background-color: pink;
+}
