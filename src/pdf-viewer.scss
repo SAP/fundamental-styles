@@ -7,7 +7,7 @@ $block: #{$fd-namespace}-pdf-viewer;
   padding: 1rem;
 
   &__dialog {
-    max-height: calc(100vh - 4rem);
+    max-height: calc(100vh - 8rem);
   }
 
   &__title {
@@ -19,11 +19,9 @@ $block: #{$fd-namespace}-pdf-viewer;
 
   &__content {
     width: 100%;
-    min-height: 28rem;
 
     &--in-page {
       width: 100%;
-      min-height: 35rem;
     }
 
     &--error {

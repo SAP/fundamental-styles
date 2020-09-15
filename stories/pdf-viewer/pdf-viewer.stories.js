@@ -27,7 +27,7 @@ The PDF viewer component can be either displayed within a page or inside of a di
 
 export const dialog = () => `
 <div class="fd-dialog-docs-static fd-pdf-viewer fd-dialog fd-dialog--active">
-    <div class="fd-pdf-viewer__dialog fd-dialog__content fd-dialog__content--l" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1">
+    <div class="fd-pdf-viewer__dialog fd-dialog__content fd-dialog__content--l" style="min-height: 28rem;" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1">
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -41,6 +41,7 @@ export const dialog = () => `
             <iframe
               class="fd-pdf-viewer__content"
               title='PDF viewer'
+              style="min-height: 28rem;"
               src="https://sapui5.hana.ondemand.com/test-resources/sap/m/demokit/sample/PDFViewerEmbedded/sample.pdf#view=FitH"}
               frameBorder='0'></iframe>
         </div>
@@ -72,7 +73,7 @@ dialog.parameters = {
 
 export const mobileDialog = () => `
 <div class="fd-dialog-docs-static fd-pdf-viewer fd-dialog fd-dialog--active">
-    <div class="fd-pdf-viewer__dialog fd-dialog__content fd-dialog__content--mobile" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1">
+    <div class="fd-pdf-viewer__dialog fd-dialog__content fd-dialog__content--mobile" style="min-height: 28rem;" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1">
         <header class="fd-dialog__header fd-bar fd-bar--cozy fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -85,6 +86,7 @@ export const mobileDialog = () => `
         <div class="fd-dialog__body">
             <iframe
               class="fd-pdf-viewer__content"
+              style="min-height: 28rem;"
               title='PDF viewer'
               src="https://sapui5.hana.ondemand.com/test-resources/sap/m/demokit/sample/PDFViewerEmbedded/sample.pdf#view=FitH"}
               frameBorder='0'></iframe>
@@ -135,6 +137,7 @@ export const page = () => `
         </div>
         <iframe
           class="fd-pdf-viewer__content--in-page"
+          style="min-height: 35rem;"
           title='PDF viewer'
           src="https://sapui5.hana.ondemand.com/test-resources/sap/m/demokit/sample/PDFViewerEmbedded/sample.pdf#view=FitH"}
           frameBorder='0'></iframe>
@@ -167,7 +170,7 @@ export const error = () => `
                 </div>
             </div>
         </div>
-        <div class="fd-pdf-viewer__content fd-pdf-viewer__content--error">
+        <div class="fd-pdf-viewer__content fd-pdf-viewer__content--error" style="min-height: 28rem;">
             <div class="fd-message-page">
                 <div class="fd-message-page__container">
                     <div class="fd-message-page__icon-container">
