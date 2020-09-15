@@ -11,4 +11,24 @@
   --fdRating_Indicator_Disabled_Selected_Color: var(--sapContent_DisabledTextColor);
   --fdRating_Indicator_Disabled_Unselected_Color: var(--sapContent_DisabledTextColor);
   --fdRating_Indicator_Disabled_Control_Opacity: 1;
+  
+  /* Wizard */
+  --sapWizard_Completed_Step_Color: var(--sapTextColor);
+  --sapWizard_Completed_Step_Icon_Color: var(--sapTextColor);
+  --sapWizard_Completed_Step_Border: 0.0625rem solid var(--sapObjectHeader_BorderColor);
+  --sapWizard_Current_Step_Color: var(--sapTextColor);
+  --sapWizard_Current_Step_Icon_Color: var(--sapTextColor);
+  --sapWizard_Upcoming_Step_Color: var(--sapTextColor);
+  --sapWizard_Upcoming_Step_Icon_Color: var(--sapTextColor);
+  --sapWizard_Upcoming_Step_Border: 0.0625rem solid var(--sapList_BorderColor);
+  --sapWizard_Active_Step_Color: var(--sapTextColor);
+  --sapWizard_Active_Step_Icon_Color: var(--sapTextColor);
+  --sapWizard_Active_Step_Border_Color: var(--sapObjectHeader_BorderColor);
+  --sapWizard_Connector_Active_Border_Color: var(--sapList_SelectionBorderColor);
+  --sapWizard_Content_Default_Background: var(--sapBackgroundColor);
+  --sapWizard_Content_Solid_Background: var(--sapBackgroundColor);
+  --sapWizard_Content_List_Background: var(--sapBackgroundColor);
+  --sapWizard_Content_Transparent_Background: var(--sapBackgroundColor);
+  --sapWizard_Selection_Bar_Height: 0.313rem;
+  --sapWizard_Selection_Bar_Background: var(--sapList_SelectionBorderColor);
 }

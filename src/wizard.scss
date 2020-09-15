@@ -5,44 +5,53 @@ $block: #{$fd-namespace}-wizard;
 
 $fd-wizard-step-indicator-spacing: 0.1875rem !default;
 $fd-wizard-step-indicator-size: 2rem !default;
-$fd-wizard-selection-bar-height: 0.188rem !default;
 $fd-wizard-step-indicator-stacked-offset: -1 * ($fd-wizard-step-indicator-size - $fd-wizard-step-indicator-spacing + 0.25rem) !default;
+$fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
+
+@mixin fd-wizard-responsive-paddings() {
+  &--s {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  &--m,
+  &--l {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  &--xl {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
 
 // BLOCK
 .#{$block} {
   @include fd-reset();
 
+  position: relative;
+
+  &__navigation {
+    @include fd-reset();
+  }
+
   &__progress-bar {
     @include fd-reset();
+    @include fd-wizard-responsive-paddings();
 
-    display: table;
-    table-layout: fixed;
-    position: relative;
     width: 100%;
+    height: 4rem;
+    display: table;
+    padding-top: 1rem;
+    position: relative;
+    table-layout: fixed;
     list-style-type: none;
     background: var(--sapObjectHeader_Background);
     box-shadow: var(--sapContent_HeaderShadow); // to be discussed
-    height: 4rem;
-    padding-top: 1rem;
-
-    &--s {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-
-    &--m,
-    &--l {
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-
-    &--xl {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
   }
 
-  &__test-wrapper {
+  &__step-wrapper {
     @include fd-reset();
     @include fd-flex-vertical-center();
 
@@ -52,20 +61,21 @@ $fd-wizard-step-indicator-stacked-offset: -1 * ($fd-wizard-step-indicator-size -
   &__step {
     @include fd-reset();
 
-    display: table-cell;
-    position: relative;
-    min-width: 10.5rem;
     width: 100%;
+    min-width: 10.5rem;
+    position: relative;
+    display: table-cell;
     vertical-align: top;
 
+    // --- STEP MODIFIERS ---
     &--completed {
       .#{$block}__step-indicator {
         background: var(--sapObjectHeader_Background);
-        color: var(--sapSelectedColor);
-        border: 0.0625rem solid var(--sapSelectedColor);
+        color: var(--sapWizard_Completed_Step_Color);
+        border: var(--sapWizard_Completed_Step_Border);
 
         &::before {
-          color: var(--sapSelectedColor);
+          color: var(--sapWizard_Completed_Step_Icon_Color);
         }
       }
     }
@@ -74,22 +84,23 @@ $fd-wizard-step-indicator-stacked-offset: -1 * ($fd-wizard-step-indicator-size -
       .#{$block}__step-indicator {
         position: relative;
         background: var(--sapSelectedColor);
-        color: var(--sapContent_ContrastTextColor);
+        color: var(--sapWizard_Current_Step_Color);
 
         &::before {
-          color: var(--sapContent_ContrastTextColor);
+          color: var(--sapWizard_Current_Step_Icon_Color);
         }
 
+        // Selection Bar
         &::after {
           content: "";
-          position: absolute;
-          background: var(--sapSelectedColor);
-          transition: all $fd-animation-speed ease-in;
           bottom: -1rem;
+          position: absolute;
           display: inline-block;
-          height: $fd-wizard-selection-bar-height;
           width: calc(100% + 2 * 0.1875rem);
+          height: var(--sapWizard_Selection_Bar_Height);
+          background: var(--sapWizard_Selection_Bar_Background);
           border-radius: 0.125rem 0.125rem 0 0;
+          transition: all $fd-animation-speed ease-in;
         }
       }
     }
@@ -97,31 +108,43 @@ $fd-wizard-step-indicator-stacked-offset: -1 * ($fd-wizard-step-indicator-size -
     &--upcoming {
       .#{$block}__step-indicator {
         background: var(--sapObjectHeader_Background);
-        border: solid 0.0625rem var(--sapList_BorderColor);
-        color: var(--sapContent_LabelColor);
+        border: var(--sapWizard_Upcoming_Step_Border);
+        color: var(--sapWizard_Upcoming_Step_Color);
 
         &::before {
-          color: var(--sapContent_LabelColor);
+          color: var(--sapWizard_Upcoming_Step_Icon_Color);
         }
+      }
+
+      .#{$block}__step-container {
+        cursor: default;
+        pointer-events: none;
       }
     }
 
     &--no-label {
       min-width: 4rem;
 
+      .#{$block}__label-container {
+        display: none;
+      }
+    }
+
+    &--stacked-top {
       &.#{$block}__step--stacked {
         min-width: 4rem;
-        width: 100%;
+        width: 4rem;
 
         .#{$block}__connector {
           display: block;
+          min-width: auto;
         }
       }
     }
 
     &--stacked {
-      min-width: auto;
       width: 0.25rem;
+      min-width: auto;
 
       .#{$block}__connector,
       .#{$block}__label-container {
@@ -130,17 +153,18 @@ $fd-wizard-step-indicator-stacked-offset: -1 * ($fd-wizard-step-indicator-size -
 
       &.#{$block}__step--upcoming {
         &:last-child {
-          padding-right: 2.375rem;
+          padding-right: $fd-wizard-stacked-upcoming-step-offset;
 
           @include fd-rtl() {
             padding-right: 0;
-            padding-left: 2.375rem;
+            padding-left: $fd-wizard-stacked-upcoming-step-offset;
           }
         }
 
-        @for $i from 1 through 50 {
+        // Fiori 3 recommends a maximum of 8 steps
+        @for $i from 1 through 8 {
           &:nth-child(#{$i}) {
-            z-index: calc(51 - #{$i});
+            z-index: calc(10 - #{$i});
           }
         }
       }
@@ -149,16 +173,12 @@ $fd-wizard-step-indicator-stacked-offset: -1 * ($fd-wizard-step-indicator-size -
     &--active {
       .#{$block}__step-indicator {
         background: var(--sapActiveColor);
-        border: var(--sapActiveColor);
-        color: var(--sapContent_ContrastTextColor);
-      }
-
-      .#{$block}__connector {
-        display: block;
+        border-color: var(--sapWizard_Active_Step_Border_Color);
+        color: var(--sapWizard_Active_Step_Color);
       }
 
       &::before {
-        color: var(--sapContent_ContrastIconColor);
+        color: var(--sapWizard_Active_Step_Icon_Color);
       }
     }
   }
@@ -174,19 +194,15 @@ $fd-wizard-step-indicator-stacked-offset: -1 * ($fd-wizard-step-indicator-size -
     }
 
     cursor: pointer;
-
-    &--stacked {
-      @include fd-reset();
-    }
   }
 
   &__step-indicator {
     @include fd-reset();
     @include fd-flex-center();
 
+    border-radius: 50%;
     min-width: $fd-wizard-step-indicator-size;
     min-height: $fd-wizard-step-indicator-size;
-    border-radius: 50%;
     margin: 0 $fd-wizard-step-indicator-spacing;
 
     &::before {
@@ -203,7 +219,7 @@ $fd-wizard-step-indicator-stacked-offset: -1 * ($fd-wizard-step-indicator-size -
 
     &--optional {
       .#{$block}__label {
-        -webkit-line-clamp: 1;
+        @include line-clamp(1);
       }
     }
   }
@@ -226,18 +242,52 @@ $fd-wizard-step-indicator-stacked-offset: -1 * ($fd-wizard-step-indicator-size -
   &__connector {
     @include fd-reset();
 
-    border-bottom: 0.0625rem solid var(--sapList_BorderColor);
+    flex: 1 1 auto;
     margin: 0.5rem;
     max-width: 100%;
     min-width: 1rem;
-    flex: 1 1 auto;
+    border-bottom: 0.0625rem solid var(--sapList_BorderColor);
 
     &--active {
-      border-bottom-color: var(--sapSelectedColor);
+      border-bottom-color: var(--sapWizard_Connector_Active_Border_Color);
     }
 
     &--branching {
       border-bottom-style: dashed;
+    }
+  }
+
+  &__content {
+    @include fd-reset();
+    @include fd-wizard-responsive-paddings();
+
+    width: 100%;
+    height: 100%;
+    padding-top: 1rem;
+    background: var(--sapWizard_Content_Default_Background);
+
+    &--solid {
+      background: var(--sapWizard_Content_Solid_Background);
+    }
+
+    &--list {
+      background: var(--sapWizard_Content_List_Background);
+    }
+
+    &--transparent {
+      background: var(--sapWizard_Content_Transparent_Background);
+    }
+  }
+
+  &__next-step {
+    @include fd-reset();
+    @include fd-wizard-responsive-paddings();
+
+    margin-top: 1rem;
+
+    &--floating {
+      position: absolute;
+      bottom: 3.5rem;
     }
   }
 }

@@ -23,8 +23,8 @@ $block: #{$fd-namespace}-bar;
     padding: 0 0.5rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    margin-left: $margin-x;
-    margin-right: $margin-x;
+    left: $margin-x;
+    right: $margin-x;
   }
 
   @include fd-reset();
@@ -127,6 +127,9 @@ $block: #{$fd-namespace}-bar;
       border: none;
       opacity: 1;
     }
+
+    position: absolute;
+    bottom: 0;
   }
 
   &--cozy {
