@@ -1,5 +1,164 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Components/File Uploader After Selecting 1`] = `
+<section>
+  
+
+  <div
+    class="fd-form-item"
+  >
+    
+  
+    <div
+      class="fd-file-uploader"
+    >
+      
+    
+      <label
+        class="fd-file-uploader__hidden"
+        for="browse_input1"
+      >
+        File upload
+      </label>
+      
+    
+      <input
+        autocomplete="off"
+        class="fd-input fd-file-uploader__input"
+        id="browse_input1"
+        onclick="browseFile('input1');"
+        readonly=""
+        title="document.pdf"
+        type="text"
+        value="document.pdf"
+      />
+      
+    
+      <button
+        aria-label="Select a file for uploading"
+        class="fd-button"
+        id="file-uploader-button-1"
+        onclick="browseFile('input1');"
+      >
+        Browse...
+    
+      </button>
+      
+  
+    </div>
+    
+  
+    <div
+      aria-atomic="true"
+      aria-live="polite"
+      class="fd-file-uploader__hidden"
+    >
+      document.pdf
+    </div>
+    
+  
+    <input
+      class="fd-file-uploader__hidden"
+      id="input1"
+      onchange="selectFile(this,'browse_input1')"
+      type="file"
+    />
+    
+
+  </div>
+  
+
+
+  <br />
+  
+
+  <br />
+  
+
+  <br />
+  
+
+
+  <div
+    dir="rtl"
+  >
+    
+  
+    <h3>
+      RTL Support
+    </h3>
+    
+  
+    <div
+      class="fd-form-item"
+    >
+      
+    
+      <div
+        class="fd-file-uploader"
+      >
+        
+      
+        <label
+          class="fd-file-uploader__hidden"
+          for="browse_input1-rtl"
+        >
+          File upload
+        </label>
+        
+      
+        <input
+          autocomplete="off"
+          class="fd-input fd-file-uploader__input"
+          id="browse_input1-rtl"
+          onclick="browseFile('input1');"
+          readonly=""
+          title="document.pdf"
+          type="text"
+          value="document.pdf"
+        />
+        
+      
+        <button
+          aria-label="Select a file for uploading"
+          class="fd-button"
+          id="file-uploader-button-2"
+          onclick="browseFile('input1');"
+        >
+          Browse...
+      
+        </button>
+        
+    
+      </div>
+      
+    
+      <div
+        aria-atomic="true"
+        aria-live="polite"
+        class="fd-file-uploader__hidden"
+      >
+        document.pdf
+      </div>
+      
+    
+      <input
+        class="fd-file-uploader__hidden"
+        id="input1-rtl"
+        onchange="selectFile(this,'browse_input1-rtl')"
+        type="file"
+      />
+      
+  
+    </div>
+    
+
+  </div>
+  
+
+</section>
+`;
+
 exports[`Storyshots Components/File Uploader Compact 1`] = `
 <section>
   
@@ -13,20 +172,27 @@ exports[`Storyshots Components/File Uploader Compact 1`] = `
       class="fd-file-uploader"
     >
       
+    
+      <label
+        class="fd-file-uploader__hidden"
+        for="browse_input2"
+      >
+        File upload
+      </label>
       
+    
       <input
-        aria-label="Select a file for uploading"
+        autocomplete="off"
         class="fd-input fd-input--compact fd-file-uploader__input"
         id="browse_input2"
         onclick="browseFile('input2');"
         placeholder="Choose a file for upload"
         readonly=""
-        tabindex="-1"
-        title="Select a file for uploading"
+        title="Choose a file for upload"
         type="text"
       />
       
-      
+    
       <button
         aria-label="Select a file for uploading"
         class="fd-button fd-button--compact fd-file-uploader__button"
@@ -34,11 +200,18 @@ exports[`Storyshots Components/File Uploader Compact 1`] = `
         onclick="browseFile('input2');"
       >
         Browse...
-      
+    
       </button>
       
   
     </div>
+    
+  
+    <div
+      aria-atomic="true"
+      aria-live="polite"
+      class="fd-file-uploader__hidden"
+    />
     
   
     <input
@@ -83,15 +256,22 @@ exports[`Storyshots Components/File Uploader Compact 1`] = `
       >
         
       
+        <label
+          class="fd-file-uploader__hidden"
+          for="browse_input2"
+        >
+          File upload
+        </label>
+        
+      
         <input
-          aria-label="Select a file for uploading"
+          autocomplete="off"
           class="fd-input fd-input--compact fd-file-uploader__input"
           id="browse_input2-rtl"
           onclick="browseFile('input2-rtl');"
           placeholder="Choose a file for upload to localserver"
           readonly=""
-          tabindex="-1"
-          title="Select a file for uploading"
+          title="Choose a file for upload to localserver"
           type="text"
         />
         
@@ -109,7 +289,14 @@ exports[`Storyshots Components/File Uploader Compact 1`] = `
     
       </div>
       
+    
+      <div
+        aria-atomic="true"
+        aria-live="polite"
+        class="fd-file-uploader__hidden"
+      />
       
+    
       <input
         class="fd-file-uploader__hidden"
         id="input2-rtl"
@@ -135,42 +322,53 @@ exports[`Storyshots Components/File Uploader Default 1`] = `
     class="fd-form-item"
   >
     
-    
+  
     <div
       class="fd-file-uploader"
     >
       
-        
+    
+      <label
+        class="fd-file-uploader__hidden"
+        for="browse_input1"
+      >
+        File upload
+      </label>
+      
+    
       <input
-        aria-label="Select a file for uploading"
-        aria-live="polite"
         autocomplete="off"
         class="fd-input fd-file-uploader__input"
         id="browse_input1"
         onclick="browseFile('input1');"
-        placeholder=" Choose a file for upload"
+        placeholder="Choose a file for upload"
         readonly=""
-        tabindex="-1"
-        title="Select a file for uploading"
+        title="Choose a file for upload"
         type="text"
       />
       
-        
+    
       <button
         aria-label="Select a file for uploading"
         class="fd-button"
         id="file-uploader-button-1"
         onclick="browseFile('input1');"
-        tabindex="0"
       >
         Browse...
-        
+    
       </button>
       
-    
+  
     </div>
     
+  
+    <div
+      aria-atomic="true"
+      aria-live="polite"
+      class="fd-file-uploader__hidden"
+    />
     
+  
     <input
       class="fd-file-uploader__hidden"
       id="input1"
@@ -207,42 +405,53 @@ exports[`Storyshots Components/File Uploader Default 1`] = `
       class="fd-form-item"
     >
       
-      
+    
       <div
         class="fd-file-uploader"
       >
         
-          
+      
+        <label
+          class="fd-file-uploader__hidden"
+          for="browse_input1-rtl"
+        >
+          File upload
+        </label>
+        
+      
         <input
-          aria-label="Select a file for uploading"
-          aria-live="polite"
           autocomplete="off"
           class="fd-input fd-file-uploader__input"
           id="browse_input1-rtl"
           onclick="browseFile('input1');"
-          placeholder=" Choose a file for upload"
+          placeholder="Choose a file for upload"
           readonly=""
-          tabindex="-1"
-          title="Select a file for uploading"
+          title="Choose a file for upload"
           type="text"
         />
         
-          
+      
         <button
           aria-label="Select a file for uploading"
           class="fd-button"
           id="file-uploader-button-2"
           onclick="browseFile('input1');"
-          tabindex="0"
         >
           Browse...
-          
+      
         </button>
         
-      
+    
       </div>
       
+    
+      <div
+        aria-atomic="true"
+        aria-live="polite"
+        class="fd-file-uploader__hidden"
+      />
       
+    
       <input
         class="fd-file-uploader__hidden"
         id="input1-rtl"
