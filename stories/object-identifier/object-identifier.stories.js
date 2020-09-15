@@ -118,7 +118,7 @@ titleAndText.parameters = {
 };
 
 export const withTable = () => `
-<table class="fd-table">
+<table class="fd-table fd-object-identifier__table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
             <th class="fd-table__cell" scope="col">Product</th>
@@ -168,6 +168,6 @@ export const withTable = () => `
 withTable.storyName = 'Table';
 withTable.parameters = {
     docs: {
-        storyDescription: 'To display the object identifier in a table, add the `fd-object-identifier` within the table cells, along with any additional tags to include modifier classes for the styles mentioned above.'
+        storyDescription: 'To display the object identifier in a table, add the `fd-object-identifier__table` class to the table then add the `fd-object-identifier` within the table cells, along with any additional tags to include modifier classes for the styles mentioned above.'
     }
 };

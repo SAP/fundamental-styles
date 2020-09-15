@@ -14,8 +14,7 @@ $block: #{$fd-namespace}-object-identifier;
     font-size: $fd-object-identifier-title-font-size;
 
     &--link {
-      @include fd-link();
-      @include action-cursor();
+      color: var(--sapLinkColor);
     }
 
     &--bold {
@@ -37,5 +36,18 @@ $block: #{$fd-namespace}-object-identifier;
 
     margin-top: 0.5rem;
     color: var(--sapContent_LabelColor);
+  }
+}
+
+.#{$block}__table {
+  .#{$block} {
+    &__title,
+    &__title--bold,
+    &__title--link,
+    &__link,
+    &__title .#{$block}__link,
+    &__title--bold .#{$block}__link {
+      font-size: var(--sapFontSize);
+    }
   }
 }
