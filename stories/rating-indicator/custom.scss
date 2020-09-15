@@ -1,0 +1,10 @@
+.example-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+
+  > span {
+    margin-right: 10px;
+    min-width: 75px;
+  }
+}
