@@ -23,32 +23,30 @@ Use the File Uploader if:
 
 export const primary = () => `
 <div class="fd-form-item">
-    <div class="fd-file-uploader">
-        <input 
-          class="fd-input fd-file-uploader__input" 
-          onclick="browseFile('input1');" 
-          title="Select a file for uploading" 
-          aria-label="Select a file for uploading"
-          aria-live="polite"
-          autocomplete="off"
-          type="text" 
-          id="browse_input1" 
-          placeholder=" Choose a file for upload" 
-          tabindex="-1"
-          readonly>
-        <button 
-          class="fd-button"
-          onclick="browseFile('input1');" 
-          tabindex="0"
-          id="file-uploader-button-1" 
-          aria-label="Select a file for uploading">Browse...
-        </button>
-    </div>
-    <input
-      id="input1"
-      class="fd-file-uploader__hidden"
-      type="file"
-      onchange="selectFile(this,'browse_input1')">
+  <div class="fd-file-uploader">
+    <label for="browse_input1" class="fd-file-uploader__hidden">File upload</label>
+    <input 
+      class="fd-input fd-file-uploader__input" 
+      onclick="browseFile('input1');" 
+      title="Choose a file for upload" 
+      type="text" 
+      id="browse_input1" 
+      autocomplete="off"
+      placeholder="Choose a file for upload"
+      readonly>
+    <button 
+      class="fd-button"
+      onclick="browseFile('input1');" 
+      id="file-uploader-button-1" 
+      aria-label="Select a file for uploading">Browse...
+    </button>
+  </div>
+  <div class="fd-file-uploader__hidden" aria-live="polite" aria-atomic="true"></div>
+  <input
+    id="input1"
+    class="fd-file-uploader__hidden"
+    type="file"
+    onchange="selectFile(this,'browse_input1')">
 </div>
 
 <br/>
@@ -58,32 +56,30 @@ export const primary = () => `
 <div dir="rtl">
   <h3>RTL Support</h3>
   <div class="fd-form-item">
-      <div class="fd-file-uploader">
-          <input 
-            class="fd-input fd-file-uploader__input" 
-            onclick="browseFile('input1');" 
-            title="Select a file for uploading" 
-            aria-label="Select a file for uploading"
-            aria-live="polite"
-            autocomplete="off"
-            type="text" 
-            id="browse_input1-rtl" 
-            placeholder=" Choose a file for upload" 
-            tabindex="-1"
-            readonly>
-          <button 
-            class="fd-button"
-            onclick="browseFile('input1');" 
-            tabindex="0"
-            id="file-uploader-button-2" 
-            aria-label="Select a file for uploading">Browse...
-          </button>
-      </div>
-      <input
-        id="input1-rtl"
-        class="fd-file-uploader__hidden"
-        type="file"
-        onchange="selectFile(this,'browse_input1-rtl')">
+    <div class="fd-file-uploader">
+      <label for="browse_input1-rtl" class="fd-file-uploader__hidden">File upload</label>
+      <input 
+        class="fd-input fd-file-uploader__input" 
+        onclick="browseFile('input1');" 
+        title="Choose a file for upload" 
+        autocomplete="off"
+        type="text" 
+        id="browse_input1-rtl" 
+        placeholder="Choose a file for upload" 
+        readonly>
+      <button 
+        class="fd-button"
+        onclick="browseFile('input1');" 
+        id="file-uploader-button-2" 
+        aria-label="Select a file for uploading">Browse...
+      </button>
+    </div>
+    <div class="fd-file-uploader__hidden" aria-live="polite" aria-atomic="true"></div>
+    <input
+      id="input1-rtl"
+      class="fd-file-uploader__hidden"
+      type="file"
+      onchange="selectFile(this,'browse_input1-rtl')">
   </div>
 </div>
 `;
@@ -95,26 +91,99 @@ primary.parameters = {
     }
 };
 
+export const selected = () => `
+<div class="fd-form-item">
+  <div class="fd-file-uploader">
+    <label for="browse_input1" class="fd-file-uploader__hidden">File upload</label>
+    <input 
+      class="fd-input fd-file-uploader__input" 
+      onclick="browseFile('input1');" 
+      title="document.pdf" 
+      type="text" 
+      id="browse_input1" 
+      autocomplete="off"
+      value="document.pdf"
+      readonly>
+    <button 
+      class="fd-button"
+      onclick="browseFile('input1');" 
+      id="file-uploader-button-1" 
+      aria-label="Select a file for uploading">Browse...
+    </button>
+  </div>
+  <div class="fd-file-uploader__hidden" aria-live="polite" aria-atomic="true">document.pdf</div>
+  <input
+    id="input1"
+    class="fd-file-uploader__hidden"
+    type="file"
+    onchange="selectFile(this,'browse_input1')">
+</div>
+
+<br/>
+<br/>
+<br/>
+
+<div dir="rtl">
+  <h3>RTL Support</h3>
+  <div class="fd-form-item">
+    <div class="fd-file-uploader">
+      <label for="browse_input1-rtl" class="fd-file-uploader__hidden">File upload</label>
+      <input 
+        class="fd-input fd-file-uploader__input" 
+        onclick="browseFile('input1');" 
+        title="document.pdf" 
+        autocomplete="off"
+        type="text" 
+        id="browse_input1-rtl" 
+        value="document.pdf" 
+        readonly>
+      <button 
+        class="fd-button"
+        onclick="browseFile('input1');" 
+        id="file-uploader-button-2" 
+        aria-label="Select a file for uploading">Browse...
+      </button>
+    </div>
+    <div class="fd-file-uploader__hidden" aria-live="polite" aria-atomic="true">document.pdf</div>
+    <input
+      id="input1-rtl"
+      class="fd-file-uploader__hidden"
+      type="file"
+      onchange="selectFile(this,'browse_input1-rtl')">
+  </div>
+</div>
+`;
+
+selected.storyName = 'After Selecting';
+selected.parameters = {
+    docs: {
+        iframeHeight: 250,
+        storyDescription: 'Once the user selects files, update the input and the hidden div to include the file names. The hidden div will announce the file names only once when the value changes.'
+    }
+};
+
+
 export const compact = () => `
 <div class="fd-form-item">
   <div class="fd-file-uploader">
-      <input 
-        class="fd-input fd-input--compact fd-file-uploader__input" 
-        onclick="browseFile('input2');" 
-        id="browse_input2" 
-        type="text"
-        aria-label="Select a file for uploading" 
-        title="Select a file for uploading"  
-        placeholder="Choose a file for upload"
-        tabindex="-1"
-        readonly>
-      <button
-        class="fd-button fd-button--compact fd-file-uploader__button"  
-        onclick="browseFile('input2');"
-        id="file-uploader-button-3" 
-        aria-label="Select a file for uploading">Browse...
-      </button>
+    <label for="browse_input2" class="fd-file-uploader__hidden">File upload</label>
+    <input 
+      class="fd-input fd-input--compact fd-file-uploader__input" 
+      onclick="browseFile('input2');" 
+      id="browse_input2" 
+      type="text"
+      title="Choose a file for upload"  
+      placeholder="Choose a file for upload"
+      autocomplete="off"
+      readonly>
+    <button
+      class="fd-button fd-button--compact fd-file-uploader__button"  
+      onclick="browseFile('input2');"
+      id="file-uploader-button-3" 
+      aria-label="Select a file for uploading">Browse...
+    </button>
   </div>
+  <div class="fd-file-uploader__hidden" aria-live="polite" aria-atomic="true"></div>
   <input
     id="input2"
     class="fd-file-uploader__hidden"
@@ -130,14 +199,14 @@ export const compact = () => `
   <h3>RTL Support</h3>
   <div class="fd-form-item">
     <div class="fd-file-uploader">
+      <label for="browse_input2" class="fd-file-uploader__hidden">File upload</label>
       <input 
       class="fd-input fd-input--compact fd-file-uploader__input" 
       onclick="browseFile('input2-rtl');" 
       id="browse_input2-rtl" 
       type="text" 
-      aria-label="Select a file for uploading"
-      tabindex="-1"
-      title="Select a file for uploading"  
+      autocomplete="off"
+      title="Choose a file for upload to localserver"  
       placeholder="Choose a file for upload to localserver" 
       readonly>
       <button 
@@ -147,11 +216,12 @@ export const compact = () => `
         aria-label="Select a file for uploading">Browse...
       </button>
     </div>
-      <input
-        id="input2-rtl"
-        class="fd-file-uploader__hidden"
-        type="file"
-        onchange="selectFile(this,'browse_input2-rtl')">
+    <div class="fd-file-uploader__hidden" aria-live="polite" aria-atomic="true"></div>
+    <input
+      id="input2-rtl"
+      class="fd-file-uploader__hidden"
+      type="file"
+      onchange="selectFile(this,'browse_input2-rtl')">
   </div>
 </div>
 `;
