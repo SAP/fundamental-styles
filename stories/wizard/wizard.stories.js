@@ -449,12 +449,48 @@ export const responsive = () => `
             </li>
             <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--stacked fd-wizard__step--stacked-top">
                 <div class="fd-wizard__step-wrapper">
-                    <a class="fd-wizard__step-container" tabindex="0" aria-label="Payment">
-                        <span class="fd-wizard__step-indicator sap-icon--money-bills"></span>
-                        <div class="fd-wizard__label-container">
-                            <span class="fd-wizard__label">Payment</span>
+                    <div class="fd-popover">
+                        <div class="fd-popover__control">
+                            <a 
+                                class="fd-wizard__step-container" 
+                                tabindex="0" 
+                                aria-label="Payment" 
+                                aria-controls="actionSheetDesktop" 
+                                aria-expanded="false" 
+                                aria-haspopup="true" 
+                                onclick="onPopoverClick('actionSheetDesktop');">
+                                    <span class="fd-wizard__step-indicator sap-icon--money-bills"></span>
+                                    <div class="fd-wizard__label-container">
+                                        <span class="fd-wizard__label">Payment</span>
+                                    </div>
+                            </a>
                         </div>
-                    </a>
+                        <div class="fd-popover__body" aria-hidden="true" id="actionSheetDesktop">
+                            <ul 
+                                class="fd-action-sheet fd-action-sheet--compact" 
+                                role="list" 
+                                aria-label="List of completed stacked steps">
+                                    <li class="fd-action-sheet__item" role="listitem">
+                                        <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                            <i class=" sap-icon--money-bills"></i>
+                                            <span class="fd-button__text">Payment</span>
+                                        </button>
+                                    </li>
+                                    <li class="fd-action-sheet__item" role="listitem">
+                                        <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                            <i class="sap-icon--contacts"></i>
+                                            <span class="fd-button__text">Contact</span>
+                                        </button>
+                                    </li>
+                                    <li class="fd-action-sheet__item" role="listitem">
+                                        <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                            <i class="sap-icon--person-placeholder"></i>
+                                            <span class="fd-button__text">Customer</span>
+                                        </button>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
                     <span class="fd-wizard__connector fd-wizard__connector--active"></span>
                 </div>
             </li>
@@ -569,12 +605,48 @@ export const mobile = () => `
                     </li>
                     <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--stacked fd-wizard__step--stacked-top">
                         <div class="fd-wizard__step-wrapper">
-                            <a class="fd-wizard__step-container" tabindex="0" aria-label="Payment">
-                                <span class="fd-wizard__step-indicator sap-icon--money-bills"></span>
-                                <div class="fd-wizard__label-container">
-                                    <span class="fd-wizard__label">Payment</span>
+                            <div class="fd-popover">
+                                <div class="fd-popover__control">
+                                    <a 
+                                        class="fd-wizard__step-container" 
+                                        tabindex="0" 
+                                        aria-label="Payment" 
+                                        aria-controls="actionSheetMobile1" 
+                                        aria-expanded="false" 
+                                        aria-haspopup="true" 
+                                        onclick="onPopoverClick('actionSheetMobile1');">
+                                            <span class="fd-wizard__step-indicator sap-icon--money-bills"></span>
+                                            <div class="fd-wizard__label-container">
+                                                <span class="fd-wizard__label">Payment</span>
+                                            </div>
+                                    </a>
                                 </div>
-                            </a>
+                                <div class="fd-popover__body" aria-hidden="true" id="actionSheetMobile1">
+                                    <ul 
+                                        class="fd-action-sheet fd-action-sheet--compact" 
+                                        role="list" 
+                                        aria-label="List of completed stacked steps">
+                                            <li class="fd-action-sheet__item" role="listitem">
+                                                <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                                    <i class=" sap-icon--money-bills"></i>
+                                                    <span class="fd-button__text">Payment</span>
+                                                </button>
+                                            </li>
+                                            <li class="fd-action-sheet__item" role="listitem">
+                                                <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                                    <i class="sap-icon--contacts"></i>
+                                                    <span class="fd-button__text">Contact</span>
+                                                </button>
+                                            </li>
+                                            <li class="fd-action-sheet__item" role="listitem">
+                                                <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                                    <i class="sap-icon--person-placeholder"></i>
+                                                    <span class="fd-button__text">Customer</span>
+                                                </button>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </div>
                             <span class="fd-wizard__connector fd-wizard__connector--active"></span>
                         </div>
                     </li>
@@ -675,12 +747,48 @@ export const mobile = () => `
                     </li>
                     <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--stacked fd-wizard__step--stacked-top">
                         <div class="fd-wizard__step-wrapper">
-                            <a class="fd-wizard__step-container" tabindex="0" aria-label="Payment">
-                                <span class="fd-wizard__step-indicator sap-icon--money-bills"></span>
-                                <div class="fd-wizard__label-container">
-                                    <span class="fd-wizard__label">Payment</span>
+                            <div class="fd-popover">
+                                <div class="fd-popover__control">
+                                    <a 
+                                        class="fd-wizard__step-container" 
+                                        tabindex="0" 
+                                        aria-label="Payment" 
+                                        aria-controls="actionSheetMobile2" 
+                                        aria-expanded="false" 
+                                        aria-haspopup="true" 
+                                        onclick="onPopoverClick('actionSheetMobile2');">
+                                            <span class="fd-wizard__step-indicator sap-icon--money-bills"></span>
+                                            <div class="fd-wizard__label-container">
+                                                <span class="fd-wizard__label">Payment</span>
+                                            </div>
+                                    </a>
                                 </div>
-                            </a>
+                                <div class="fd-popover__body" aria-hidden="true" id="actionSheetMobile2">
+                                    <ul 
+                                        class="fd-action-sheet fd-action-sheet--compact" 
+                                        role="list" 
+                                        aria-label="List of completed stacked steps">
+                                            <li class="fd-action-sheet__item" role="listitem">
+                                                <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                                    <i class=" sap-icon--money-bills"></i>
+                                                    <span class="fd-button__text">Payment</span>
+                                                </button>
+                                            </li>
+                                            <li class="fd-action-sheet__item" role="listitem">
+                                                <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                                    <i class="sap-icon--contacts"></i>
+                                                    <span class="fd-button__text">Contact</span>
+                                                </button>
+                                            </li>
+                                            <li class="fd-action-sheet__item" role="listitem">
+                                                <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                                    <i class="sap-icon--person-placeholder"></i>
+                                                    <span class="fd-button__text">Customer</span>
+                                                </button>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </div>
                             <span class="fd-wizard__connector fd-wizard__connector--active"></span>
                         </div>
                     </li>

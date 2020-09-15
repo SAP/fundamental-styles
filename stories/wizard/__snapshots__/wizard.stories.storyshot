@@ -982,34 +982,161 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
           >
             
                     
-            <a
-              aria-label="Payment"
-              class="fd-wizard__step-container"
-              tabindex="0"
+            <div
+              class="fd-popover"
             >
               
                         
-              <span
-                class="fd-wizard__step-indicator sap-icon--money-bills"
-              />
-              
-                        
               <div
-                class="fd-wizard__label-container"
+                class="fd-popover__control"
               >
                 
                             
-                <span
-                  class="fd-wizard__label"
+                <a
+                  aria-controls="actionSheetDesktop"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  aria-label="Payment"
+                  class="fd-wizard__step-container"
+                  onclick="onPopoverClick('actionSheetDesktop');"
+                  tabindex="0"
                 >
-                  Payment
-                </span>
+                  
+                                    
+                  <span
+                    class="fd-wizard__step-indicator sap-icon--money-bills"
+                  />
+                  
+                                    
+                  <div
+                    class="fd-wizard__label-container"
+                  >
+                    
+                                        
+                    <span
+                      class="fd-wizard__label"
+                    >
+                      Payment
+                    </span>
+                    
+                                    
+                  </div>
+                  
+                            
+                </a>
+                
+                        
+              </div>
+              
+                        
+              <div
+                aria-hidden="true"
+                class="fd-popover__body"
+                id="actionSheetDesktop"
+              >
+                
+                            
+                <ul
+                  aria-label="List of completed stacked steps"
+                  class="fd-action-sheet fd-action-sheet--compact"
+                  role="list"
+                >
+                  
+                                    
+                  <li
+                    class="fd-action-sheet__item"
+                    role="listitem"
+                  >
+                    
+                                        
+                    <button
+                      class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left"
+                    >
+                      
+                                            
+                      <i
+                        class=" sap-icon--money-bills"
+                      />
+                      
+                                            
+                      <span
+                        class="fd-button__text"
+                      >
+                        Payment
+                      </span>
+                      
+                                        
+                    </button>
+                    
+                                    
+                  </li>
+                  
+                                    
+                  <li
+                    class="fd-action-sheet__item"
+                    role="listitem"
+                  >
+                    
+                                        
+                    <button
+                      class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left"
+                    >
+                      
+                                            
+                      <i
+                        class="sap-icon--contacts"
+                      />
+                      
+                                            
+                      <span
+                        class="fd-button__text"
+                      >
+                        Contact
+                      </span>
+                      
+                                        
+                    </button>
+                    
+                                    
+                  </li>
+                  
+                                    
+                  <li
+                    class="fd-action-sheet__item"
+                    role="listitem"
+                  >
+                    
+                                        
+                    <button
+                      class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left"
+                    >
+                      
+                                            
+                      <i
+                        class="sap-icon--person-placeholder"
+                      />
+                      
+                                            
+                      <span
+                        class="fd-button__text"
+                      >
+                        Customer
+                      </span>
+                      
+                                        
+                    </button>
+                    
+                                    
+                  </li>
+                  
+                            
+                </ul>
                 
                         
               </div>
               
                     
-            </a>
+            </div>
             
                     
             <span

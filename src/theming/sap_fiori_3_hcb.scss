@@ -8,10 +8,17 @@
   // Display Only mode
   --fdRating_Indicator_Display_Only_Selected_Color: var(--sapContent_IconColor);
   // Disabled mode
+<<<<<<< HEAD
   --fdRating_Indicator_Disabled_Selected_Color: var(--sapContent_DisabledTextColor);
   --fdRating_Indicator_Disabled_Unselected_Color: var(--sapContent_DisabledTextColor);
   --fdRating_Indicator_Disabled_Control_Opacity: 1;
   
+=======
+  --sapRating_Indicator_Disabled_Selected_Color: var(--sapContent_DisabledTextColor);
+  --sapRating_Indicator_Disabled_Unselected_Color: var(--sapContent_DisabledTextColor);
+  --sapRating_Indicator_Disabled_Control_Opacity: 1;
+
+>>>>>>> add action sheet to stacked items
   /* Wizard */
   --sapWizard_Completed_Step_Color: var(--sapTextColor);
   --sapWizard_Completed_Step_Icon_Color: var(--sapTextColor);

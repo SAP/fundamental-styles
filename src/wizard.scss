@@ -5,6 +5,7 @@ $block: #{$fd-namespace}-wizard;
 
 $fd-wizard-step-indicator-spacing: 0.1875rem !default;
 $fd-wizard-step-indicator-size: 2rem !default;
+$fd-wizard-step-no-label-max-size: 4rem !default;
 $fd-wizard-step-indicator-stacked-offset: -1 * ($fd-wizard-step-indicator-size - $fd-wizard-step-indicator-spacing + 0.25rem) !default;
 $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
 
@@ -94,6 +95,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
         &::after {
           content: "";
           bottom: -1rem;
+          left: -$fd-wizard-step-indicator-spacing;
           position: absolute;
           display: inline-block;
           width: calc(100% + 2 * 0.1875rem);
@@ -123,7 +125,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     }
 
     &--no-label {
-      min-width: 4rem;
+      min-width: $fd-wizard-step-no-label-max-size;
 
       .#{$block}__label-container {
         display: none;
@@ -132,8 +134,8 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
 
     &--stacked-top {
       &.#{$block}__step--stacked {
-        min-width: 4rem;
-        width: 4rem;
+        min-width: $fd-wizard-step-no-label-max-size;
+        width: $fd-wizard-step-no-label-max-size;
 
         .#{$block}__connector {
           display: block;
@@ -203,6 +205,8 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     border-radius: 50%;
     min-width: $fd-wizard-step-indicator-size;
     min-height: $fd-wizard-step-indicator-size;
+    width: $fd-wizard-step-indicator-size;
+    height: $fd-wizard-step-indicator-size;
     margin: 0 $fd-wizard-step-indicator-spacing;
 
     &::before {
@@ -215,7 +219,9 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     @include fd-flex(column);
 
     max-width: 100%;
+    max-height: $fd-wizard-step-indicator-size;
     color: var(--sapContent_LabelColor);
+    overflow: hidden;
 
     &--optional {
       .#{$block}__label {
@@ -228,6 +234,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     @include fd-reset();
     @include line-clamp();
 
+    line-height: 1;
     max-width: 100%;
   }
 
