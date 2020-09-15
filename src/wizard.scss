@@ -49,7 +49,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     table-layout: fixed;
     list-style-type: none;
     background: var(--sapObjectHeader_Background);
-    box-shadow: var(--sapContent_HeaderShadow); // to be discussed
+    box-shadow: var(--sapContent_HeaderShadow);
   }
 
   &__step-wrapper {
@@ -226,6 +226,8 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     &--optional {
       .#{$block}__label {
         @include line-clamp(1);
+
+        max-height: 1rem; // needed for IE11
       }
     }
   }
@@ -234,7 +236,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     @include fd-reset();
     @include line-clamp();
 
-    line-height: 1;
+    line-height: 1rem;
     max-width: 100%;
   }
 
