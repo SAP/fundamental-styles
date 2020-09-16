@@ -221,12 +221,6 @@ $block: #{$fd-namespace}-notification;
     &--dismiss {
       @include fd-hide-on-mobile();
     }
-
-    &--popover {
-      @include fd-screen(s) {
-        width: calc(100vw - 2rem);
-      }
-    }
   }
 
   &__limit {
