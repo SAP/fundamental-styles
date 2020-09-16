@@ -402,3 +402,15 @@
     @content;
   }
 }
+
+@mixin fd-icon-element {
+  &[class*="sap-icon"] {
+    color: inherit;
+    background: inherit;
+    font-size: inherit;
+    border-radius: inherit;
+    line-height: 1;
+
+    @content;
+  }
+}

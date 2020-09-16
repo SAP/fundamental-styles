@@ -15,98 +15,71 @@ $block: #{$fd-namespace}-object-marker;
   $fd-object-marker-padding-right: 0.25rem !default;
 
   @include fd-reset();
-  @include fd-ellipsis();
 
   max-width: 100%;
-  color: $fd-object-marker-text-color;
-  word-break: break-word;
-  align-items: center;
   line-height: 1;
-  display: inline-block;
   font-size: 1rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-
-  &::before {
-    font-size: 1rem;
-    color: $fd-object-marker-color;
-    padding: 0 $fd-object-marker-padding-right 0 0;
-    vertical-align: middle;
-  }
+  display: inline-flex;
+  align-items: center;
 
   // CLICKABLE OBJECT STATUS
   &--link {
-    display: inline-block;
+    cursor: pointer;
     text-decoration: none;
     color: $fd-object-marker-color;
-    cursor: pointer;
 
-    &::before {
-      position: relative;
-      display: inline-block;
+    .#{$block}__text {
+      color: $fd-object-marker-color;
     }
 
-    &:focus {
-      text-decoration: underline;
-    }
-
-    &:hover {
-      text-decoration: underline;
-      color: $fd-object-marker-color-hover;
-
-      &::before {
-        text-decoration: none;
+    &:focus,
+    &:hover,
+    &:visited {
+      .#{$block}__text {
+        text-decoration: underline;
       }
     }
 
-    &:visited {
-      text-decoration: none;
+    &:hover {
+      .#{$block}__text {
+        color: $fd-object-marker-color-hover;
+      }
     }
   }
 
   &__icon {
-    color: $fd-object-marker-color;
-    font-style: normal;
-    line-height: normal;
-    font-size: 1rem;
+    @include fd-reset();
 
-    &::before {
+    @include fd-icon-element() {
+      @include fd-flex-center();
+
+      font-size: 1rem;
+      font-style: normal;
+      line-height: normal;
+      color: $fd-object-marker-color;
       padding-right: $fd-object-marker-padding-right;
-    }
 
-    @include fd-rtl() {
-      &::before {
+      &:only-child {
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      @include fd-rtl() {
         padding-left: $fd-object-marker-padding-right;
         padding-right: 0;
       }
     }
   }
 
-  // ICON ONLY MODE
-  @include fd-empty() {
-    justify-content: center;
-    padding-right: 0;
-    padding-left: 0;
+  &__text {
+    @include fd-reset();
+    @include fd-ellipsis();
 
-    &::before {
-      padding-right: 0;
-      padding-left: 0;
-    }
-  }
-
-  @include fd-rtl() {
-    &::before {
-      padding-left: $fd-object-marker-padding-right;
-      padding-right: 0;
-    }
-
-    @include fd-empty() {
-      &::before {
-        padding-right: 0;
-        padding-left: 0;
-      }
-    }
+    font-size: 1rem;
+    font-style: normal;
+    line-height: normal;
+    word-break: break-word;
+    color: $fd-object-marker-text-color;
   }
 
   & + .#{$block} {
