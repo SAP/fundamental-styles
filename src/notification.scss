@@ -31,16 +31,14 @@ $block: #{$fd-namespace}-notification;
   $fd-notification-indicator-border-color-success: var(--sapSuccessBorderColor) !default;
   $fd-notification-indicator-border-color-information: var(--sapInformationBorderColor) !default;
 
+  $fd-notification-padding-left: 0.5rem;
+  $fd-notification-padding-right: 1rem;
+  $fd-notification-reset-offset: 0;
+
   // mixins
 
   @mixin fd-priority-indicator($type) {
     @include fd-icon("message-#{$type}");
-  }
-
-  @mixin fd-truncate {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 
   @mixin fd-hide-on-mobile {
@@ -52,7 +50,6 @@ $block: #{$fd-namespace}-notification;
       display: inline-block !important;
     }
   }
-
 
   @include fd-reset();
 
@@ -66,8 +63,8 @@ $block: #{$fd-namespace}-notification;
   padding: 1rem 0.5rem 1rem 1rem;
 
   @include fd-rtl() {
-    padding-right: 1rem;
-    padding-left: 0.5rem;
+    padding-right: $fd-notification-padding-right;
+    padding-left: $fd-notification-padding-left;
   }
 
   &__body {
@@ -81,7 +78,11 @@ $block: #{$fd-namespace}-notification;
     }
   }
 
-  &__group {
+  &--tabs {
+    box-shadow: $fd-notification-box-shadow;
+  }
+
+  &--group {
     @include fd-reset();
 
     overflow: hidden;
@@ -95,13 +96,9 @@ $block: #{$fd-namespace}-notification;
       }
 
       @include fd-rtl() {
-        padding-left: 0.5rem;
-        padding-right: 1rem;
+        padding-left: $fd-notification-padding-left;
+        padding-right: $fd-notification-padding-right;
       }
-    }
-
-    &--tabs {
-      box-shadow: $fd-notification-box-shadow;
     }
 
     .#{$block}__group-header {
@@ -148,9 +145,14 @@ $block: #{$fd-namespace}-notification;
       @include fd-reset();
       @include line-clamp(2);
 
-      font-weight: bold;
+      font-weight: var(--sapFontHeaderWeight);
       font-size: var(--sapFontHeader6Size);
       max-height: 2.5rem;
+      margin-bottom: 0.25rem;
+
+      &--unread {
+        font-weight: bold;
+      }
     }
 
     .#{$block}__paragraph {
@@ -163,19 +165,25 @@ $block: #{$fd-namespace}-notification;
 
     .#{$block}__footer {
       @include fd-reset();
-      
+
+      display: flex;
       padding-top: 0.5rem;
 
-      &--author {
-        @include fd-truncate();
+      &-content {
+        @include fd-ellipsis();
 
-        display: inline-block;
-        max-width: 40%;
-        vertical-align: middle;
+        flex: 1 1 auto;
       }
+    }
 
-      &--separator {
-        margin: 0 0.5rem;
+    .#{$block}__separator {
+      @include fd-reset();
+
+      margin: 0 0.5rem;
+      font-size: var(--sapFontSize);
+
+      &::before {
+        content: "\00b7";
       }
     }
   }
@@ -191,6 +199,12 @@ $block: #{$fd-namespace}-notification;
 
     display: flex;
     align-items: self-start;
+    padding-left: 1rem;
+
+    @include fd-rtl() {
+      padding-left: $fd-notification-reset-offset;
+      padding-right: $fd-notification-padding-right;
+    }
 
     .#{$fd-namespace}-button {
       margin-right: 0.5rem;
@@ -206,6 +220,12 @@ $block: #{$fd-namespace}-notification;
 
     &--dismiss {
       @include fd-hide-on-mobile();
+    }
+
+    &--popover {
+      @include fd-screen(s) {
+        width: calc(100vw - 2rem);
+      }
     }
   }
 

@@ -25,12 +25,12 @@ export const primary = () => `
         <div class="fd-notification__content">
             <div class="fd-notification__header">
                 <div class="fd-notification__indicator fd-notification__indicator--success"></div>
-                <h2 class="fd-notification__title">Your leave request has been accepted</h2>
+                <h2 class="fd-notification__title fd-notification__title--unread">Your leave request has been accepted</h2>
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p class="fd-notification__footer">
-                <span class="fd-notification__footer--author">Long author name - SAP Analytics Cloud Cloud Cloud</span>
-                <span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
+                <span class="fd-notification__footer-content">Long author name - SAP Analytics Cloud Cloud Cloud</span>
+                <span class="fd-notification__separator"></span>7 minutes ago</p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
@@ -56,12 +56,12 @@ export const noAvatar = () => `
         <div class="fd-notification__content fd-notification__content--no-avatar">
             <div class="fd-notification__header">
                 <div class="fd-notification__indicator fd-notification__indicator--success"></div>
-                <h2 class="fd-notification__title">Your leave request has been accepted</h2>
+                <h2 class="fd-notification__title fd-notification__title--unread">Your leave request has been accepted</h2>
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p class="fd-notification__footer">
-            <span class="fd-notification__footer--author">SAP Analytics Cloud</span>
-            <span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
+            <span class="fd-notification__footer-content">SAP Analytics Cloud</span>
+            <span class="fd-notification__separator"></span>7 minutes ago</p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
@@ -95,12 +95,12 @@ export const information = () => `
         <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
-                <h2 class="fd-notification__title">You have new items</h2>
+                <h2 class="fd-notification__title fd-notification__title--unread">You have new items</h2>
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <p class="fd-notification__footer">
-            <span class="fd-notification__footer--author">SAP Analytics Cloud</span>
-            <span class="fd-notification__footer--separator">&bullet;</span>Just now
+            <span class="fd-notification__footer-content">SAP Analytics Cloud</span>
+            <span class="fd-notification__separator"></span>Just now
             </p>
         </div>
         <div class="fd-notification__actions">
@@ -135,12 +135,12 @@ export const warning = () => `
        <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
-              <h2 class="fd-notification__title">You have new items</h2>
+              <h2 class="fd-notification__title fd-notification__title--unread">You have new items</h2>
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <p class="fd-notification__footer">
-            <span class="fd-notification__footer--author">Tom Norton Beam</span>
-            <span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
+            <span class="fd-notification__footer-content">Tom Norton Beam</span>
+            <span class="fd-notification__separator"></span>7 minutes ago</p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
@@ -175,12 +175,12 @@ export const error = () => `
         <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
         <div class="fd-notification__content">
           <div class="fd-notification__header">
-            <h2 class="fd-notification__title">You have new items</h2>
+            <h2 class="fd-notification__title fd-notification__title--unread">You have new items</h2>
           </div>
           <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <p class="fd-notification__footer">
-          <span class="fd-notification__footer--author">SAP Analytics Cloud</span>
-          <span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
+          <span class="fd-notification__footer-content">SAP Analytics Cloud</span>
+          <span class="fd-notification__separator"></span>7 minutes ago</p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
@@ -201,8 +201,8 @@ Notifications can display error alerts by adding the <code>fd-message-strip fd-m
 };
 
 export const notificationGroup = () => `
-<div class="fd-notification fd-notification__group">
-    <ul class="fd-tabs fd-tabs--l fd-notification__group--tabs" role="tablist">
+<div class="fd-notification fd-notification--group">
+    <ul class="fd-tabs fd-tabs--l fd-notification--tabs" role="tablist">
         <li role="listitem" class="fd-tabs__item">
             <a class="fd-tabs__link" aria-selected="true" role="tab">
                 <span class="fd-tabs__tag">
@@ -232,7 +232,7 @@ export const notificationGroup = () => `
         <div class="fd-notification__content">
             <div class="fd-notification__header">
                 <div class="fd-notification__indicator fd-notification__indicator--warning"></div>
-                <h2 class="fd-notification__title">Today (5)</h2>
+                <h2 class="fd-notification__title fd-notification__title--unread">Today (5)</h2>
             </div>
         </div>
         <div class="fd-notification__actions">
@@ -247,12 +247,14 @@ export const notificationGroup = () => `
         <div class="fd-notification__content">
             <div class="fd-notification__header">
                 <div class="fd-notification__indicator fd-notification__indicator--warning"></div>
-                <h2 class="fd-notification__title">You've got new item</h2>
+                <h2 class="fd-notification__title fd-notification__title--unread">You've got new item</h2>
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p class="fd-notification__footer">
-            <span class="fd-notification__footer--author">SAP Team</span>
-            <span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
+            <span class="fd-notification__footer-content">SAP Teamm dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </span>
+            <span class="fd-notification__separator"></span>
+            <span class="fd-notification__footer-content">7 minutes ago</span>
+            </p>
         </div>
         <div class="fd-notification__actions">
               <div class="fd-popover fd-popover--right">
@@ -261,7 +263,7 @@ export const notificationGroup = () => `
                          <i class="sap-icon--overflow"></i>
                     </button>
                 </div>
-                <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="popoverA4">
+                <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA4">
                     <nav class="fd-menu" id="">
                         <ul class="fd-menu__list fd-menu__list--no-shadow">
                             <li class="fd-menu__item">
@@ -294,12 +296,14 @@ export const notificationGroup = () => `
         <div class="fd-notification__content">
             <div class="fd-notification__header">
             <div class="fd-notification__indicator fd-notification__indicator--success"></div>
-            <h2 class="fd-notification__title">Your leave request has been accepted</h2>
+            <h2 class="fd-notification__title">The title you've already read.</h2>
             </div>
             <p class="fd-notification__paragraph">Lagna aliqua.</p>
             <p class="fd-notification__footer">
-            <span class="fd-notification__footer--author">SAP Analytics Cloud</span>
-            <span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
+                <span class="fd-notification__footer-content">SAP Analytics Cloud very long author name to test truncate</span>
+                <span class="fd-notification__separator"></span>
+                <span class="fd-notification__footer-content">7 minutes ago long long time ago ages ago years ago</span>
+            </p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
@@ -314,12 +318,14 @@ export const notificationGroup = () => `
         <div class="fd-notification__content">
             <div class="fd-notification__header">
             <div class="fd-notification__indicator fd-notification__indicator--error"></div>
-            <h2 class="fd-notification__title">Your leave request has been rejected. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+            <h2 class="fd-notification__title fd-notification__title--unread">Your leave request has been rejected. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p class="fd-notification__footer">
-            <span class="fd-notification__footer--author">SAP Analytics Cloud</span>
-            <span class="fd-notification__footer--separator">&bullet;</span>7 minutes ago</p>
+            <span class="fd-notification__footer-content">SAP Analytics Cloud</span>
+            <span class="fd-notification__separator"></span>
+            <span class="fd-notification__footer-content">7 minutes ago m dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</span> 
+            </p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
