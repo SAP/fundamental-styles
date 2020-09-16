@@ -403,6 +403,12 @@
   }
 }
 
+@mixin fd-icon-element-sub-selector() {
+  &[class*="sap-icon"] {
+    @content;
+  }
+}
+
 @mixin fd-icon-element {
   &[class*="sap-icon"] {
     color: inherit;
