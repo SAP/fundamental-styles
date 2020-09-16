@@ -5,8 +5,8 @@ import '../../dist/wizard.css';
 export default {
     title: 'Components/Wizard',
     parameters: {
-        description: `The Wizard component divides into sections a long or unfamiliar task and guides the user through it. 
-The Wizard consists of the walkthrough screen, where the form sections are revealed subsequently after completing, and the summary page, where the form is displayed in read only mode for assessment and final submission.
+        description: `The wizard guides a user through a long or unfamiliar task by dividing it into sections, revealing information in an easy and digestible way. 
+It consists of a walkthrough screen, where the user is prompted to input required information and upon completing a section, the next sections subsequently follow in a prescribed order; and the summary page, where the form is displayed in read-only mode for assessment and final submission.
 
 
 ## Usage
@@ -22,55 +22,80 @@ The Wizard consists of the walkthrough screen, where the form sections are revea
 - a task has more than 8 steps
 - the format of the task is familiar to the user
 
+## Types
+
+There are two types of wizard that offer different functionality: **standard** and **branching**.
+
+**Use the standard type if:**
+
+- The total number of steps is known in advance.
+- The number of steps does not change during usage.
+- There is linear progression from one step to the next.
+
+**Use the branching type if:**
+
+- The total number of steps is not known.
+- The number of steps may change during usage.
+- There is non-linear progression. In other words, the user’s choice during one step determines which step comes next.
+- In both types of wizard you can let users skip steps. Label these steps as “Optional”.
+
+
 ## Layout
-The wizard can be used both in a full-screen layout as well as in the flexible column layout. There is no navigation from the wizard to a next page. After completion or cancellation, the user is always navigated to the page the wizard was triggered from.
+
+The wizard can be used both in a full-screen layout and in the flexible column layout. There is no navigation from the wizard to a next page. After completion or cancellation, the user is always navigated back to the page the wizard was triggered from.
 
 ## Responsive paddings
 
 These modifier classes will add horizontal paddings to the content and can be applied on the <code>fd-wizard\\_\\_progress-bar</code> level and/or on the <code>fd-wizard\\_\\_content</code> level.
 
 
-|  &nbsp;&nbsp;**rem** &nbsp;&nbsp; |  &nbsp;&nbsp;**min-width** &nbsp;&nbsp; |  &nbsp;&nbsp;**max width** &nbsp;&nbsp; |  &nbsp;&nbsp;**modifier class** &nbsp;&nbsp; |
-| :----: | :----------: | :----------: | :----------------------------------: |
-| 1rem | _n/a_ | 599px | <code>fd-wizard\\_\\_progress-bar--s</code> / <code>fd-wizard\\_\\_content--s</code> |
-| 2rem | 600px | 1023px | <code>fd-wizard\\_\\_progress-bar--m</code> / <code>fd-wizard\\_\\_content--m</code> |
-| 2rem | 1024px | 1439px | <code>fd-wizard\\_\\_progress-bar--l</code> / <code>fd-wizard\\_\\_content--l</code> |
-| 3rem | 1440px | _n/a_ | <code>fd-wizard\\_\\_progress-bar--xl</code> / <code>fd-wizard\\_\\_content--xl</code> |
+|  **rem** |  &nbsp;&nbsp;&nbsp;&nbsp;**min-width** |  &nbsp;&nbsp;&nbsp;&nbsp;**max width** |  &nbsp;&nbsp;&nbsp;&nbsp;**modifier class** |
+| :---- | :---------- | :---------- | :---------------------------------- |
+| 1rem | &nbsp;&nbsp;&nbsp;&nbsp;_n/a_ | &nbsp;&nbsp;&nbsp;&nbsp;599px | &nbsp;&nbsp;&nbsp;&nbsp;<code>fd-wizard\\_\\_progress-bar--s</code> / <code>fd-wizard\\_\\_content--s</code> |
+| 2rem | &nbsp;&nbsp;&nbsp;&nbsp;600px | &nbsp;&nbsp;&nbsp;&nbsp;1023px | &nbsp;&nbsp;&nbsp;&nbsp;<code>fd-wizard\\_\\_progress-bar--m</code> / <code>fd-wizard\\_\\_content--m</code> |
+| 2rem | &nbsp;&nbsp;&nbsp;&nbsp;1024px | &nbsp;&nbsp;&nbsp;&nbsp;1439px | &nbsp;&nbsp;&nbsp;&nbsp;<code>fd-wizard\\_\\_progress-bar--lg</code> / <code>fd-wizard\\_\\_content--lg</code> |
+| 3rem | &nbsp;&nbsp;&nbsp;&nbsp;1440px | &nbsp;&nbsp;&nbsp;&nbsp;_n/a_ | &nbsp;&nbsp;&nbsp;&nbsp;<code>fd-wizard\\_\\_progress-bar--xl</code> / <code>fd-wizard\\_\\_content--xl</code> |
 
 
-## Step types
+## Modifiers
 
-Use the following modifier classes to change the type of the wizard step:
-
-
-| **Type** | **Modifier class** |
-| :---- | :--------------: |
-| completed     |  &nbsp;&nbsp; &nbsp;&nbsp; <code>fd-wizard\\_\\_step--completed</code>     |
-| current       |  &nbsp;&nbsp; &nbsp;&nbsp; <code>fd-wizard\\_\\_step--current</code>       |
-| upcoming      |  &nbsp;&nbsp; &nbsp;&nbsp; <code>fd-wizard\\_\\_step--upcoming</code>      |
-| no-label      |  &nbsp;&nbsp; &nbsp;&nbsp; <code>fd-wizard\\_\\_step--no-label</code>      |
-| stacked       |  &nbsp;&nbsp; &nbsp;&nbsp; <code>fd-wizard\\_\\_step--stacked</code>       |
-| stacked-top   |  &nbsp;&nbsp; &nbsp;&nbsp; <code>fd-wizard\\_\\_step--stacked-top</code>   |
-| active        |  &nbsp;&nbsp; &nbsp;&nbsp; <code>fd-wizard\\_\\_step--active</code>        |
+| **Steps** | &nbsp;&nbsp;&nbsp;&nbsp; **Modifier class** |
+| :---- | :-------------- |
+| Completed     |  &nbsp;&nbsp;&nbsp;&nbsp; <code>fd-wizard\\_\\_step--completed</code>     |
+| Current       |  &nbsp;&nbsp;&nbsp;&nbsp; <code>fd-wizard\\_\\_step--current</code>       |
+| Upcoming      |  &nbsp;&nbsp;&nbsp;&nbsp; <code>fd-wizard\\_\\_step--upcoming</code>      |
+| No-label      |  &nbsp;&nbsp;&nbsp;&nbsp; <code>fd-wizard\\_\\_step--no-label</code>      |
+| Stacked       |  &nbsp;&nbsp;&nbsp;&nbsp; <code>fd-wizard\\_\\_step--stacked</code>       |
+| Stacked on top   |  &nbsp;&nbsp;&nbsp;&nbsp; <code>fd-wizard\\_\\_step--stacked-top</code>   |
+| Active        |  &nbsp;&nbsp;&nbsp;&nbsp; <code>fd-wizard\\_\\_step--active</code>        |
 
 ## Connector types
 
-When connecting Inactive steps, or Active and Inactive steps, use the default <code>fd-wizard\\_\\_connector</code> class. For connecting Active steps the <code>fd-wizard\\_\\_connector--active</code> modifier class should be applied together with <code>fd-wizard\\_\\_connector</code>. For branching step connector use <code>fd-wizard\\_\\_connector--branching</code> modifier class.
+There are multiple connector types that can be displayed depending on the steps involved.
+
+
+| **Connector type** | &nbsp;&nbsp; &nbsp;&nbsp; **Connection** | &nbsp;&nbsp; &nbsp;&nbsp; **Class/Modifier** |
+| :---- | :-------------- | :-------------- |
+| Default | &nbsp;&nbsp; &nbsp;&nbsp; Inactive step (or Active step) to Inactive step |  &nbsp;&nbsp; &nbsp;&nbsp; <code>fd-wizard\\_\\_connector</code> |
+| Active | &nbsp;&nbsp; &nbsp;&nbsp; Active step to Active step | &nbsp;&nbsp; &nbsp;&nbsp; <code>fd-wizard\\_\\_connector--active</code> |
+| Branching | &nbsp;&nbsp; &nbsp;&nbsp; Branching step to Inactive step or no step | &nbsp;&nbsp; &nbsp;&nbsp; <code>fd-wizard\\_\\_connector--branching</code> |
 
 ## Truncation rules
 
-- **Label **- Maximum number of lines: 2. Text truncates when it exceeds the maximum space available. When a step has an optional text, the label takes only 1 line. 
-- **Label with optional text **- Maximum number of lines: 1. Text truncates when it exceeds the maximum space available. The <code>fd-wizard\\_\\_label-container--optional</code> modifier class is applied together with <code>fd-wizard\\_\\_label-container</code>.
-- **Optional text **- Maximum number of lines: 1. Text truncates when it exceeds the maximum space available.
+| **Type** | &nbsp;&nbsp; &nbsp;&nbsp; **Max lines** | &nbsp;&nbsp; &nbsp;&nbsp; **Modifier class** |
+| :---- | :-------------- | :-------------- |
+| Label | &nbsp;&nbsp; &nbsp;&nbsp; 2 |  &nbsp;&nbsp; &nbsp;&nbsp; Text truncates when it exceeds the maximum space available. When a step has optional text, the label can only accommodate 1 line. |
+| Label with optional text | &nbsp;&nbsp; &nbsp;&nbsp; 1 | &nbsp;&nbsp; &nbsp;&nbsp; Text truncates when it exceeds the maximum space available. The <code>fd-wizard\\_\\_label-container--optional</code> modifier class is applied together with <code>fd-wizard\\_\\_label-container</code>. |
+| Optional text | &nbsp;&nbsp; &nbsp;&nbsp; 1 | &nbsp;&nbsp; &nbsp;&nbsp; Text truncates when it exceeds the maximum space available. |
 
 
 ## Content background
 
-| **Type** | **Modifier class** |
-| :---- | :--------------: |
-| solid |  &nbsp;&nbsp; &nbsp;&nbsp; <code>fd-wizard\\_\\_content--solid</code> |
-| list | &nbsp;&nbsp; &nbsp;&nbsp; <code>fd-wizard\\_\\_content--list</code> |
-| transparent | &nbsp;&nbsp; &nbsp;&nbsp; <code>fd-wizard\\_\\_content--transparent</code> |
+| **Type** | &nbsp;&nbsp; &nbsp;&nbsp; **Modifier class** |
+| :---- | :-------------- |
+| Solid |  &nbsp;&nbsp; &nbsp;&nbsp; <code>fd-wizard\\_\\_content--solid</code> |
+| List | &nbsp;&nbsp; &nbsp;&nbsp; <code>fd-wizard\\_\\_content--list</code> |
+| Transparent | &nbsp;&nbsp; &nbsp;&nbsp; <code>fd-wizard\\_\\_content--transparent</code> |
 
 `,
         docs: { iframeHeight: 400 },
@@ -154,7 +179,7 @@ defaultExample.storyName = 'Default';
 defaultExample.parameters = {
     docs: {
         iframeHeight: 950,
-        storyDescription: `When the wizard is triggered, the user is presented a walkthrough screen, which shows only a part of the long form. After all necessary fields are filled out, a button appears in the Wizard content that allows the user to move to the next step. A Cancel button situated in the footer can exit the wizard. If the form fields have been modified, a data loss message can be prompted to the user. 
+        storyDescription: `The default wizard displays a walkthrough screen with forms split into sections. Once the user fills all of the necessary input fields, a button is displayed to go to the next section. A *Cancel* button is displayed in the footer, so the user can exit the wizard at any point during the process. However, if a user exits the wizard after adding their input, they will receive a warning that their information will be lost. 
 `
     }
 };
@@ -226,9 +251,15 @@ export const customized = () => `
 customized.parameters = {
     docs: {
         iframeHeight: 950,
-        storyDescription: `Modifier classes can be applied to customize the Wizard's elements. In the example below responsive paddings are added to the progress bar (<code class="docs-code">fd-wizard\\_\\_progress-bar--m</code>), the wizard content (<code class="docs-code">fd-wizard\\_\\_content--m</code>) and the footer (<code class="docs-code">fd-bar--page-m_l</code>). The background of the wizard content is set to list (<code class="docs-code">fd-wizard\\_\\_content--list</code>).
+        storyDescription: `The wizard component can be customized with modifier classes. For instance, the example below has several modified elements:
 
-In certain use cases, the steps in the wizard depend on the choices the user makes along the way. The user’s entries for one step determine the follow-on steps (“branching”). Use the <code class="docs-code">fd-wizard\\_\\_connector--branching</code> applied on the step connector to indicate a branching step.
+| **Element** | &nbsp;&nbsp;&nbsp;&nbsp; **Modifier class** | &nbsp;&nbsp;&nbsp;&nbsp; **Modification** |
+| :---- | :---- | :-------------- |
+| <code class="docs-code">fd-wizard\\_\\_progress-bar</code> | &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_progress-bar--m</code> | &nbsp;&nbsp;&nbsp;&nbsp; Added responsive padding |
+| <code class="docs-code">fd-wizard\\_\\_content</code> | &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_content--m</code> | &nbsp;&nbsp;&nbsp;&nbsp; Added responsive padding |
+| <code class="docs-code">fd-bar--page</code> | &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-bar--page-m_l</code> | &nbsp;&nbsp;&nbsp;&nbsp; Added responsive padding |
+| <code class="docs-code">fd-wizard\\_\\_content</code> | &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_content--list</code> | &nbsp;&nbsp;&nbsp;&nbsp; The background of the wizard content is set to list |
+| <code class="docs-code">fd-wizard\\_\\_connector</code> | &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_connector--branching</code> | &nbsp;&nbsp;&nbsp;&nbsp; Adds a branching step connector |
 `
     }
 };
@@ -564,11 +595,9 @@ export const responsive = () => `
 responsive.parameters = {
     docs: {
         iframeHeight: 950,
-        storyDescription: `If there is enough horizontal space, all labels are shown. 
-
-As the width is reduced, the steps outside the currently selected one do not show labels. Use the <code class="docs-code">fd-wizard\\_\\_step--no-label</code> modifier class to hide the labels.
-
-Finally, the unselected and outermost steps are stacked on top of each other to further accommodate the reduced space. Use the <code class="docs-code">fd-wizard\\_\\_step--stacked</code> modifier class to stack the steps. The last completed stacked step has an additional modifier class <code class="docs-code">fd-wizard\\_\\_step--stacked-top</code>. No such modifier class is required for the upcoming stacked steps.
+        storyDescription: `If there is sufficient horizontal space, all labels are shown. 
+However, when the width decreases, the step labels disappear. To hide the labels, add the <code class="docs-code">fd-wizard\\_\\_step--no-label</code> modifier class to the step.
+The unselected steps should stack on top of each other when there is limited screen space. To stack them, add the <code class="docs-code">fd-wizard\\_\\_step--stacked</code> modifier class. The last completed step should display on top, and requires a <code class="docs-code">fd-wizard\\_\\_step--stacked-top</code> modifier class. Although they are stacked, upcoming steps do not require the stacked-top modifier class. 
 `
     }
 };
@@ -862,7 +891,7 @@ export const mobile = () => `
 mobile.parameters = {
     docs: {
         iframeHeight: 950,
-        storyDescription: `In mobile mode use the <code class="docs-code">fd-bar--floating-footer</code> modifier class to achieve a floating footer. The Next Step button is placed after the content when possible. It can be placed above the floating footer by applying the <code class="docs-code">fd-wizard\\_\\_next-step--floating</code> modifier class.
+        storyDescription: `For mobile devices, add the <code class="docs-code">fd-bar--floating-footer</code> modifier class to achieve a floating footer. modifier class to display a floating footer. The *Next Step* button is placed after the content whenever possible. However, it can be placed above the floating footer by adding the <code class="docs-code">fd-wizard\\_\\_next-step--floating</code> modifier class.
 `
     }
 };
