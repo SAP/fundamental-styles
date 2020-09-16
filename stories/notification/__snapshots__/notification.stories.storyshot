@@ -1,289 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Notification Error 1`] = `
+exports[`Storyshots Components/Notifications Error 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Notification Information 1`] = `
+exports[`Storyshots Components/Notifications Information 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Notification Medium Size 1`] = `
+exports[`Storyshots Components/Notifications No Avatar 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Notification Notification Group 1`] = `
+exports[`Storyshots Components/Notifications Notification Group 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Notification Primary 1`] = `
+exports[`Storyshots Components/Notifications Primary 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Notification RTL 1`] = `
-
-
-`;
-
-exports[`Storyshots Components/Notification Small Size 1`] = `
-<section>
-  
-
-  <div
-    class="fd-notification fd-notification--information fd-notification--s"
-  >
-    
-    
-    <div
-      class="fd-notification__header"
-    >
-      
-        
-      <div
-        class="fd-notification__indicator--information"
-      />
-      
-        
-      <div
-        class="fd-notification__title"
-      >
-        This is the notifications title
-      </div>
-      
-        
-      <button
-        aria-label="decline-button"
-        class="fd-button fd-button--transparent fd-notification__close"
-        role="button"
-      >
-        
-            
-        <i
-          class="sap-icon--decline"
-        />
-        
-        
-      </button>
-      
-    
-    </div>
-    
-    
-    <div
-      class="fd-notification__body"
-    >
-      
-        
-      <div
-        class="fd-notification__content"
-      >
-        
-            
-        <div
-          class="fd-notification__avatar"
-        >
-          
-                
-          <span
-            aria-label="Wendy Wallace"
-            class="fd-avatar fd-avatar--xs"
-          >
-            WW
-          </span>
-          
-            
-        </div>
-        
-            
-        <div
-          class="fd-notification__text"
-        >
-          
-                
-          <div
-            class="fd-notification__description"
-          >
-            
-                    Lorem ipsum dolor sit amet, consectetur adipiscing.
-                
-          </div>
-          
-                
-          <div
-            class="fd-notification__metadata"
-          >
-            
-                    Author | 15 minutes ago
-                
-          </div>
-          
-            
-        </div>
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-notification__footer"
-      >
-        
-            
-        <div
-          class="fd-notification__actions"
-        >
-          
-                
-          <button
-            class="fd-button fd-button--positive"
-            role="button"
-          >
-            Approve
-          </button>
-          
-                
-          <button
-            class="fd-button fd-button--negative"
-            role="button"
-          >
-            Reject
-          </button>
-          
-            
-        </div>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-
-  </div>
-  
-
-
-  <br />
-  <br />
-  <br />
-  
-
-
-  <div
-    class="fd-notification fd-notification--information fd-notification--s"
-  >
-    
-    
-    <div
-      class="fd-notification__header"
-    >
-      
-        
-      <div
-        class="fd-notification__indicator--information"
-      />
-      
-        
-      <div
-        class="fd-notification__title"
-      >
-        This is the notifications title
-      </div>
-      
-        
-      <button
-        aria-label="decline-button"
-        class="fd-button fd-button--transparent fd-notification__close"
-        role="button"
-      >
-        
-            
-        <i
-          class="sap-icon--decline"
-        />
-        
-        
-      </button>
-      
-    
-    </div>
-    
-    
-    <div
-      class="fd-notification__body"
-    >
-      
-        
-      <div
-        class="fd-notification__content"
-      >
-        
-            
-        <div
-          class="fd-notification__avatar"
-        >
-          
-                
-          <span
-            aria-label="Wendy Wallace"
-            class="fd-avatar fd-avatar--xs"
-          >
-            WW
-          </span>
-          
-            
-        </div>
-        
-            
-        <div
-          class="fd-notification__text"
-        >
-          
-                
-          <div
-            class="fd-notification__description"
-          >
-            
-                    Lorem ipsum dolor sit amet, consectetur adipiscing.
-                
-          </div>
-          
-                
-          <div
-            class="fd-notification__metadata"
-          >
-            
-                    Author | 15 minutes ago
-                
-          </div>
-          
-            
-        </div>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-
-  </div>
-  
-
-</section>
-`;
-
-exports[`Storyshots Components/Notification Success 1`] = `
-
-
-`;
-
-exports[`Storyshots Components/Notification Warning 1`] = `
+exports[`Storyshots Components/Notifications Warning 1`] = `
 
 
 `;
