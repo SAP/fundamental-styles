@@ -16,12 +16,6 @@ Use the File Uploader if:
 
 * The user needs to select the files to upload by browsing the system folders.
 * The user needs to select the files based on specific file formats to upload.
-
-Note that the input includes an autocomplete attribute with a value of "off". 
-Historically, setting autocomplete=“off” has prevented the browser from predicting this value.
-Chrome, however, has frequently changed its stance on support of removing the autocomplete.
-With some versions, autocomplete=“off” will work, while in others, autocomplete=“nope” or a semantic autocomplete=“specific example here” will work.
-Make sure to test your implementation to ensure the correct autocomplete value is used to prevent predictions.
 `,
         tags: ['f3', 'a11y', 'theme']
     }
@@ -30,8 +24,8 @@ Make sure to test your implementation to ensure the correct autocomplete value i
 export const primary = () => `
 <div class="fd-form-item">
   <div class="fd-file-uploader">
-    <label for="browse_input1" class="fd-file-uploader__hidden">File upload</label>
     <input 
+      aria-label="File upload"
       class="fd-input fd-file-uploader__input" 
       onclick="browseFile('input1');" 
       title="Choose a file for upload" 
@@ -63,8 +57,9 @@ export const primary = () => `
   <h3>RTL Support</h3>
   <div class="fd-form-item">
     <div class="fd-file-uploader">
-      <label for="browse_input1-rtl" class="fd-file-uploader__hidden">File upload</label>
       <input 
+        aria-label="File upload"
+        id="browse_input1-rtl"
         class="fd-input fd-file-uploader__input" 
         onclick="browseFile('input1');" 
         title="Choose a file for upload" 
@@ -100,8 +95,8 @@ primary.parameters = {
 export const selected = () => `
 <div class="fd-form-item">
   <div class="fd-file-uploader">
-    <label for="browse_input1" class="fd-file-uploader__hidden">File upload</label>
     <input 
+      aria-label="File upload"
       class="fd-input fd-file-uploader__input" 
       onclick="browseFile('input1');" 
       title="document.pdf" 
@@ -133,8 +128,8 @@ export const selected = () => `
   <h3>RTL Support</h3>
   <div class="fd-form-item">
     <div class="fd-file-uploader">
-      <label for="browse_input1-rtl" class="fd-file-uploader__hidden">File upload</label>
       <input 
+        aria-label="File upload"
         class="fd-input fd-file-uploader__input" 
         onclick="browseFile('input1');" 
         title="document.pdf" 
@@ -172,8 +167,8 @@ selected.parameters = {
 export const compact = () => `
 <div class="fd-form-item">
   <div class="fd-file-uploader">
-    <label for="browse_input2" class="fd-file-uploader__hidden">File upload</label>
     <input 
+      aria-label="File upload"
       class="fd-input fd-input--compact fd-file-uploader__input" 
       onclick="browseFile('input2');" 
       id="browse_input2" 
@@ -205,16 +200,16 @@ export const compact = () => `
   <h3>RTL Support</h3>
   <div class="fd-form-item">
     <div class="fd-file-uploader">
-      <label for="browse_input2" class="fd-file-uploader__hidden">File upload</label>
       <input 
-      class="fd-input fd-input--compact fd-file-uploader__input" 
-      onclick="browseFile('input2-rtl');" 
-      id="browse_input2-rtl" 
-      type="text" 
-      autocomplete="off"
-      title="Choose a file for upload to localserver"  
-      placeholder="Choose a file for upload to localserver" 
-      readonly>
+        aria-label="File upload"
+        class="fd-input fd-input--compact fd-file-uploader__input" 
+        onclick="browseFile('input2-rtl');" 
+        id="browse_input2-rtl" 
+        type="text" 
+        autocomplete="off"
+        title="Choose a file for upload to localserver"  
+        placeholder="Choose a file for upload to localserver" 
+        readonly>
       <button 
         class="fd-button fd-button--compact fd-file-uploader__button"  
         onclick="browseFile('input2-rtl');" 
