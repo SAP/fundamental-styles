@@ -58,10 +58,10 @@ $block: #{$fd-namespace}-dynamic-page;
 
     min-height: 3rem;
     word-wrap: break-word;
-    background-color: $fd-dynamic-page-background-color; // discrepancy
+    background-color: $fd-dynamic-page-background-color;
 
     @include fd-hover() {
-      background: var(--sapObjectHeader_Hover_Background);    // color not yet available in Fundamental, therefore hover not reflecting the color
+      background: var(--sapObjectHeader_Hover_Background);
       border-bottom: var(--sapDynamicPage_Hover_Border_Bottom);
     }
 
@@ -275,6 +275,8 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-flex-center();
 
     box-shadow: $fd-dynamic-page-box-shadow;
+    background-color: $fd-dynamic-page-background-color;
+
     // left and right gradient for the pin/collapse buttons
     &--left-gradient {
       background-image: var(--sapDynamicPage_Button_Left_Gradient);
