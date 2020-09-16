@@ -208,13 +208,15 @@ $block: #{$fd-namespace}-nested-list;
   }
 
   &__icon {
-    @include fd-reset();
-    @include fd-flex-center();
+    @include fd-icon-element() {
+      @include fd-reset();
+      @include fd-flex-center();
 
-    height: 100%;
-    min-width: 2.75rem;
-    color: var(--sapList_TextColor);
-    font-size: var(--sapFontHeader4Size);
+      height: 100%;
+      min-width: 2.75rem;
+      color: var(--sapList_TextColor);
+      font-size: var(--sapFontHeader4Size);
+    }
   }
 
   &__title {
