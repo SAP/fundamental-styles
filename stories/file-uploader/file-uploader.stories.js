@@ -16,6 +16,12 @@ Use the File Uploader if:
 
 * The user needs to select the files to upload by browsing the system folders.
 * The user needs to select the files based on specific file formats to upload.
+
+Note that the input includes an autocomplete attribute with a value of "off". 
+Historically, setting autocomplete=“off” has prevented the browser from predicting this value.
+Chrome, however, has frequently changed its stance on support of removing the autocomplete.
+With some versions, autocomplete=“off” will work, while in others, autocomplete=“nope” or a semantic autocomplete=“specific example here” will work.
+Make sure to test your implementation to ensure the correct autocomplete value is used to prevent predictions.
 `,
         tags: ['f3', 'a11y', 'theme']
     }
