@@ -137,13 +137,6 @@
 
   outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
   outline-offset: $fd-radio-focus-offset - $margin;
-
-  @include fd-rtl() {
-    &::after {
-      left: $fd-radio-label-padding;
-      right: $margin - $fd-radio-focus-offset;
-    }
-  }
 }
 
 @mixin fd-form-radio-empty-focus($margin) {
