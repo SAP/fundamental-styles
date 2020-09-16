@@ -382,3 +382,13 @@
   min-height: $height;
   max-height: $height;
 }
+
+@mixin set-horizontal-paddings($padding-left, $padding-right) {
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+
+  @include fd-rtl() {
+    padding-left: $padding-right;
+    padding-right: $padding-left;
+  }
+}

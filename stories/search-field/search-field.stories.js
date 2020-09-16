@@ -9,7 +9,21 @@ export default {
 };
 
 export const example1 = () => `
-<div class="fd-search-field"></div>
+<div class="fd-search-field">
+    <div class="fd-search-field__container">
+        <input type="text" class="fd-search-field__input" placeholder="Search">
+        <button class="fd-search-field__button">X</button>
+        <button class="fd-search-field__button">C</button>
+    </div>
+</div>
+<br><br>
+<div class="fd-search-field fd-search-field--compact">
+    <div class="fd-search-field__container">
+        <input type="text" class="fd-search-field__input" placeholder="Search">
+        <button class="fd-search-field__button">X</button>
+        <button class="fd-search-field__button">C</button>
+    </div>
+</div>
 `;
 
 example1.storyName = 'Example 1 Title';
