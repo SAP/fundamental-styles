@@ -62,11 +62,9 @@ $block: #{$fd-namespace}-radio;
       height: $fd-radio-inner-circle-diameter;
       width: $fd-radio-inner-circle-diameter;
       min-width: $fd-radio-inner-circle-diameter;
-      font-size: 0.6875rem;
       display: inline-flex;
       justify-content: center;
       align-items: center;
-      font-family: "SAP-icons";
       background-color: var(--sapField_Background);
       margin-right: $fd-radio-outer-circle-margin;
       color: var(--sapSelectedColor);
@@ -165,7 +163,6 @@ $block: #{$fd-namespace}-radio;
       padding: $fd-radio-outer-circle-margin-compact;
 
       &::before {
-        font-size: 0.4375rem;
         height: $fd-radio-inner-circle-diameter-compact;
         width: $fd-radio-inner-circle-diameter-compact;
         min-width: $fd-radio-inner-circle-diameter-compact;
