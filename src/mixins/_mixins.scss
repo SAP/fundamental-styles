@@ -389,6 +389,12 @@
   }
 }
 
+@mixin fd-icon-sub-selector {
+  &[class*="sap-icon"] {
+    @content;
+  }
+}
+
 @mixin fd-icon-contain() {
   @include fd-icon-selector() {
     @include fd-flex-center();
@@ -404,7 +410,7 @@
 }
 
 @mixin fd-icon-element {
-  &[class*="sap-icon"] {
+  @include fd-icon-sub-selector() {
     color: inherit;
     background: inherit;
     font-size: inherit;
