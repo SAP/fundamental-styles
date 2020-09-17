@@ -109,12 +109,13 @@ $block: #{$fd-namespace}-switch;
 
   &__icon {
     @include fd-reset();
+    @include fd-icon-element-base();
+    @include fd-flex-center();
 
     width: $fd-switch-label-width;
     min-width: $fd-switch-label-width;
     font-size: 0.75rem;
     line-height: 1.375rem;
-    text-align: center;
     transition: $fd-switch-semantic-icon-transition;
 
     &--off {
