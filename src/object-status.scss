@@ -111,7 +111,7 @@ $inverted-color-accents: (
 
 @mixin fd-object-status-icon-selector() {
   .#{$block}__icon {
-    &[class*="sap-icon"] {
+    @include fd-icon-element-sub-selector() {
       @content;
     }
   }
@@ -199,7 +199,6 @@ $inverted-color-accents: (
   $fd-object-status-inverted-padding: 0.0625rem 0.25rem !default;
   $fd-object-status-inverted-padding-empty: 0 0.25rem !default;
   $fd-object-status-inverted-min-height: 1rem !default;
-  $fd-object-status-inverted-height-empty: 1rem !default;
   $fd-object-status-inverted-min-width: 1.25rem !default;
   $fd-object-status-inverted-text-font-weight: bold !default;
   $fd-object-status-inverted-icon-font-size: 0.75rem !default;
@@ -337,7 +336,6 @@ $inverted-color-accents: (
 
       // ICON ONLY MODE
       @include fd-only-child() {
-        height: $fd-object-status-inverted-height-empty;
         padding: $fd-object-status-inverted-padding-empty;
       }
     }
@@ -372,15 +370,15 @@ $inverted-color-accents: (
       font-size: $fd-object-status-icon-text-font-size-large-inverted;
       padding: $fd-object-status-padding-large-inverted;
 
-      &::before {
+      @include fd-object-status-icon-selector() {
         font-size: $fd-object-status-icon-text-font-size-large-inverted;
-      }
 
-      // ICON ONLY MODE
-      @include fd-empty() {
-        height: $fd-object-status-min-height-large-inverted-empty;
-        min-width: $fd-object-status-min-width-large-inverted-empty;
-        padding: $fd-object-status-padding-large-inverted-empty;
+        // ICON ONLY MODE
+        @include fd-empty() {
+          height: $fd-object-status-min-height-large-inverted-empty;
+          min-width: $fd-object-status-min-width-large-inverted-empty;
+          padding: $fd-object-status-padding-large-inverted-empty;
+        }
       }
     }
 
