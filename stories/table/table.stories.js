@@ -872,9 +872,7 @@ export const responsiveTable = () => `
             <td class="fd-table__cell">5 EUR</td>
             <td class="fd-table__cell">India</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                <span class="fd-table__icon fd-table__icon--navigation"> 
-                    <i class="sap-icon--navigation-right-arrow"></i>
-                </span>
+                <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
             </td>
         </tr>
         <tr class="fd-table__row">
@@ -891,9 +889,7 @@ export const responsiveTable = () => `
             <td class="fd-table__cell">2 EUR</td>
             <td class="fd-table__cell">Mexico</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                <span class="fd-table__icon fd-table__icon--navigation">
-                    <i class="sap-icon--navigation-right-arrow"></i>
-                </span>
+                <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
             </td>
         </tr>
         <tr class="fd-table__row">
@@ -910,9 +906,7 @@ export const responsiveTable = () => `
             <td class="fd-table__cell">6 EUR</td>
             <td class="fd-table__cell">Spain</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                <span class="fd-table__icon fd-table__icon--navigation">
-                    <i class="sap-icon--navigation-right-arrow"></i>
-                </span>
+                <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
             </td>
         </tr>
     </tbody>
@@ -935,9 +929,7 @@ export const responsiveTablePopInMode = () => `
                     5 EUR
                 </td>
                 <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                    <span class="fd-table__icon fd-table__icon--navigation">
-                        <i class="sap-icon--navigation-right-arrow"></i>
-                    </span>
+                    <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
                 </td>
             </tr>
             <tr class="fd-table__row fd-table__row--secondary">
@@ -963,9 +955,7 @@ export const responsiveTablePopInMode = () => `
                     6 EUR
                 </td>
                 <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                    <span class="fd-table__icon fd-table__icon--navigation">
-                        <i class="sap-icon--navigation-right-arrow"></i>
-                    </span>
+                    <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
                 </td>
             </tr>
             <tr class="fd-table__row fd-table__row--secondary">
@@ -1006,9 +996,7 @@ export const responsiveTablePopInMode = () => `
                     5 EUR
                 </td>
                 <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                    <span class="fd-table__icon fd-table__icon--navigation">
-                        <i class="sap-icon--navigation-right-arrow"></i>
-                    </span>>
+                    <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
                 </td>
             </tr>
             <tr class="fd-table__row fd-table__row--secondary">
@@ -1039,9 +1027,7 @@ export const responsiveTablePopInMode = () => `
                     6 EUR
                 </td>
                 <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                    <span class="fd-table__icon fd-table__icon--navigation">
-                        <i class="sap-icon--navigation-right-arrow"></i>
-                    </span>
+                    <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
                 </td>
             </tr>
             <tr class="fd-table__row fd-table__row--secondary">

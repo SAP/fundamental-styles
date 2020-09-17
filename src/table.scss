@@ -82,18 +82,20 @@ $block: #{$fd-namespace}-table;
 
   // Elements
   &__icon {
-    @include fd-icon-contain();
+    @include fd-flex-center();
 
-    color: var(--sapContent_NonInteractiveIconColor);
-    font-size: var(--sapFontSmallSize);
+    @include fd-icon-element() {
+      color: var(--sapContent_NonInteractiveIconColor);
+      font-size: var(--sapFontSmallSize);
+    }
 
     &--navigation {
-      font-size: var(--sapFontSmallSize);
-      width: $fd-table-navigation-icon-width;
-      min-width: $fd-table-navigation-icon-width;
-      height: 100%;
-
-      @include fd-flex-center();
+      @include fd-icon-element() {
+        font-size: var(--sapFontSmallSize);
+        width: $fd-table-navigation-icon-width;
+        min-width: $fd-table-navigation-icon-width;
+        height: 100%;
+      }
     }
   }
 
