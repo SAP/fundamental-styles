@@ -42,9 +42,12 @@ $block: #{$fd-namespace}-message-page;
   &__icon {
     font-size: 6rem;
     color: var(--sapContent_NonInteractiveIconColor);
-    opacity: 50%;
 
-    @include fd-icon-contain();
+    @include fd-icon-element-sub-selector() {
+      font-size: 6rem;
+      color: var(--sapContent_NonInteractiveIconColor);
+      opacity: 50%;
+    }
   }
 
   &__content {

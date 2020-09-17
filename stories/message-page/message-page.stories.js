@@ -34,7 +34,7 @@ export const filter = () => `
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
-                <span class="fd-message-page__icon"><i class="sap-icon sap-icon--filter"></i></span>
+                <span aria-hidden="true" class="sap-icon sap-icon--filter fd-message-page__icon"></span>
             </div>
             <div role="status" aria-live="polite" class="fd-message-page__content">
                 <div class="fd-message-page__title">
@@ -64,7 +64,7 @@ export const search = () => `
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
-                <span class="fd-message-page__icon"><i class="sap-icon sap-icon--search"></i></span>
+                <span aria-hidden="true" class="sap-icon sap-icon--search fd-message-page__icon"></span>
             </div>
             <div role="status" aria-live="polite" class="fd-message-page__content">
                 <div class="fd-message-page__title">
@@ -91,7 +91,7 @@ export const noItems = () => `
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
-                <span class="fd-message-page__icon"><i class="sap-icon sap-icon--product"></i></span>
+                <span aria-hidden="true" class="sap-icon sap-icon--product fd-message-page__icon"></span>
             </div>
             <div role="status" aria-live="polite" class="fd-message-page__content">
                 <div class="fd-message-page__title">
@@ -118,7 +118,7 @@ export const error = () => `
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
-                <span class="fd-message-page__icon"><i class="sap-icon sap-icon--search"></i></span>
+                <span aria-hidden="true" class="sap-icon sap-icon--document fd-message-page__icon"></span>
             </div>
             <div role="status" aria-live="polite" class="fd-message-page__content">
                 <div class="fd-message-page__title">
@@ -151,7 +151,7 @@ export const buttons = () => `
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
-                <span class="fd-message-page__icon"><i class="sap-icon sap-icon--documents"></i></span>
+                <span aria-hidden="true" class="sap-icon sap-icon--documents fd-message-page__icon"></span>
             </div>
             <div role="status" aria-live="polite" class="fd-message-page__content">
                 <div class="fd-message-page__title">
