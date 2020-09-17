@@ -1,14 +1,14 @@
 :root {
-  --sapInverted_Object_Border_Width: 0.0625rem;
-  --sapOverlay_Background_Opacity: 0.8;
+  --fdInverted_Object_Border_Width: 0.0625rem;
+  --fdOverlay_Background_Opacity: 0.8;
 
   /* Rating Indicator */
   // default mode
-  --sapRating_Indicator_Selected_Hover_Opacity: 1;
+  --fdRating_Indicator_Selected_Hover_Opacity: 1;
   // Display Only mode
-  --sapRating_Indicator_Display_Only_Selected_Color: var(--sapContent_IconColor);
+  --fdRating_Indicator_Display_Only_Selected_Color: var(--sapContent_IconColor);
   // Disabled mode
-  --sapRating_Indicator_Disabled_Selected_Color: var(--sapContent_RatedColor);
-  --sapRating_Indicator_Disabled_Unselected_Color: var(--sapContent_UnratedColor);
-  --sapRating_Indicator_Disabled_Control_Opacity: 0.4;
+  --fdRating_Indicator_Disabled_Selected_Color: var(--sapContent_RatedColor);
+  --fdRating_Indicator_Disabled_Unselected_Color: var(--sapContent_UnratedColor);
+  --fdRating_Indicator_Disabled_Control_Opacity: 0.4;
 }
