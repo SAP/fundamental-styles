@@ -257,8 +257,10 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
   &__expander {
     @include fd-reset();
 
-    @include fd-icon-contain() {
+    @include fd-icon-element-base() {
       font-size: var(--sapFontLargeSize);
+
+      @include fd-flex-center();
     }
 
     @include fd-focus() {
@@ -307,12 +309,15 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
     @include fd-reset();
     @include fd-flex-center();
 
-    @include fd-icon-contain() {
+    min-width: $fd-tree-icon-size;
+    min-height: $fd-tree-icon-size;
+    line-height: $fd-tree-icon-size; // IE11 fix for vertical alignment
+
+    @include fd-icon-selector() {
       font-size: 1.125rem;
       color: var(--sapContent_NonInteractiveIconColor);
-      min-width: $fd-tree-icon-size;
-      min-height: $fd-tree-icon-size;
-      line-height: $fd-tree-icon-size; // IE11 fix for vertical alignment
+
+      @include fd-flex-center();
     }
 
     &--navigation {
