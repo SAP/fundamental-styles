@@ -17,6 +17,7 @@ $block: #{$fd-namespace}-message-page;
   &__title,
   &__subtitle,
   &__actions,
+  &__icon,
   &__more {
     @include fd-reset();
 
@@ -39,10 +40,15 @@ $block: #{$fd-namespace}-message-page;
     height: 8rem;
   }
 
-  &__icon[class*='sap-icon--'] {
+  &__icon {
     font-size: 6rem;
     color: var(--sapContent_NonInteractiveIconColor);
-    opacity: 50%;
+
+    @include fd-icon-selector() {
+      font-size: 6rem;
+      color: var(--sapContent_NonInteractiveIconColor);
+      opacity: 50%;
+    }
   }
 
   &__content {
