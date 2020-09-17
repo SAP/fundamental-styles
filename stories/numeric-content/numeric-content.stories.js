@@ -133,7 +133,7 @@ export const launchIconLarge = () => `
 <div class="tile-content-small-playground">
         <div class="fd-numeric-content fd-numeric-content--small-tile">
                 <div class="fd-numeric-content__launch-icon-container">
-                    <span class="fd-numeric-content__launch-icon">
+                    <span class="fd-numeric-content__launch-icon" role="presentation">
                         <i class="sap-icon--line-charts"></i>
                     </span>
                 </div>
@@ -151,7 +151,7 @@ export const launchIconMedium = () => `
 <div class="tile-content-playground">
         <div class="fd-numeric-content fd-numeric-content--m">
                 <div class="fd-numeric-content__launch-icon-container">
-                    <span class="fd-numeric-content__launch-icon">
+                    <span class="fd-numeric-content__launch-icon" role="presentation">
                         <i class="sap-icon--line-charts"></i>
                     </span>
                 </div>
@@ -172,7 +172,7 @@ export const launchIconMedium = () => `
 <div class="tile-content-small-playground">
         <div class="fd-numeric-content fd-numeric-content--m fd-numeric-content--small-tile">
                 <div class="fd-numeric-content__launch-icon-container">
-                    <span class="fd-numeric-content__launch-icon">
+                    <span class="fd-numeric-content__launch-icon" role="presentation">
                         <i class="sap-icon--line-charts"></i>
                     </span>
                 </div>
@@ -198,7 +198,7 @@ export const launchIconSmall = () => `
 <div class="tile-content-playground">
         <div class="fd-numeric-content fd-numeric-content--s">
                 <div class="fd-numeric-content__launch-icon-container">
-                    <span class="fd-numeric-content__launch-icon">
+                    <span class="fd-numeric-content__launch-icon" role="presentation">
                         <i class="sap-icon--line-charts"></i>
                     </span>
                 </div>
@@ -219,7 +219,7 @@ export const launchIconSmall = () => `
 <div class="tile-content-small-playground">
         <div class="fd-numeric-content fd-numeric-content--s fd-numeric-content--small-tile">
                 <div class="fd-numeric-content__launch-icon-container">
-                    <span class="fd-numeric-content__launch-icon">
+                    <span class="fd-numeric-content__launch-icon" role="presentation">
                         <i class="sap-icon--line-charts"></i>
                     </span>
                 </div>
