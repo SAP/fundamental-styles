@@ -242,16 +242,17 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
 
   &__refresh {
     @include fd-flex-center();
-    @include fd-icon-element-base();
 
-    color: var(--sapButton_IconColor);
-    min-width: 0.875rem;
-    text-align: center;
-    margin-right: $fd-tile-refresh-icon-spacing;
+    @include fd-icon-element-base() {
+      color: var(--sapButton_IconColor);
+      min-width: 0.875rem;
+      text-align: center;
+      margin-right: $fd-tile-refresh-icon-spacing;
 
-    @include fd-rtl() {
-      margin-right: 0;
-      margin-left: $fd-tile-refresh-icon-spacing;
+      @include fd-rtl() {
+        margin-right: 0;
+        margin-left: $fd-tile-refresh-icon-spacing;
+      }
     }
   }
 
