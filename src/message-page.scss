@@ -17,6 +17,7 @@ $block: #{$fd-namespace}-message-page;
   &__title,
   &__subtitle,
   &__actions,
+  &__icon,
   &__more {
     @include fd-reset();
 
