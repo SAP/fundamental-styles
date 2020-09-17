@@ -84,11 +84,11 @@ $block: #{$fd-namespace}-notification;
     @include fd-reset();
 
     width: 100%;
-    margin-left: $fd-notifaction-content-offset;
+    margin-left: $fd-notification-content-offset;
     overflow: auto;
 
     @include fd-rtl() {
-      margin-right: $fd-notifaction-content-offset;
+      margin-right: $fd-notification-content-offset;
       margin-left: $fd-notification-reset-offset;
     }
 
@@ -284,7 +284,7 @@ $block: #{$fd-namespace}-notification;
     .#{$block}__indicator {
       padding-right: 0.25rem;
 
-      @include rtl() {
+      @include fd-rtl() {
         padding-right: $fd-notification-reset-offset;
         padding-left: $fd-notification-padding-mobile;
       }
@@ -297,7 +297,7 @@ $block: #{$fd-namespace}-notification;
     .#{$block}__body {
       padding: 1rem 0.5rem 1rem 0.75rem;
 
-      @include rtl() {
+      @include fd-rtl() {
         padding-left: $fd-notification-reset-offset;
       }
 
