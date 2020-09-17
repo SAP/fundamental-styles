@@ -43,13 +43,13 @@ export default {
       - <code class="docs-code">fd-dynamic-page\\_\\_title-content</code> The KPI content
       - <code class="docs-code">fd-dynamic-page\\_\\_toolbar</code> Toolbar container for actions
       - <code class="docs-code">fd-dynamic-page\\_\\_toolbar--actions</code> Global actions
-    - <code class="docs-code">fd-dynamic-page\\_\\_subtitle</code> Dynamic Page Layout subtitle
-    - <code class="docs-code">fd-dynamic-page\\_\\_header</code> Dynamic Page Layout header
-    - <code class="docs-code">fd-dynamic-page\\_\\_header-visibility-container</code> The container for pin/collapse buttons
-      - <code class="docs-code">fd-dynamic-page\\_\\_collapse-button</code> Collapse button
-      - <code class="docs-code">fd-dynamic-page\\_\\_pin-button </code> Pin button
-    - <code class="docs-code">fd-dynamic-page\\_\\_tabs</code> Tabs/Wizard can be optionally used as a header extension
-    - <code class="docs-code">fd-dynamic-page\\_\\_content</code> Dynamic Page Layout content
+    - <code class="docs-code">fd-dynamic-page\\_\\_subtitle</code> Dynamic Page subtitle
+  - <code class="docs-code">fd-dynamic-page\\_\\_header</code> Dynamic Page header
+  - <code class="docs-code">fd-dynamic-page\\_\\_header-visibility-container</code> The container for pin/collapse buttons
+    - <code class="docs-code">fd-dynamic-page\\_\\_collapse-button</code> Collapse button
+    - <code class="docs-code">fd-dynamic-page\\_\\_pin-button </code> Pin button
+  - <code class="docs-code">fd-dynamic-page\\_\\_tabs</code> Tabs/Wizard can be optionally used as a header extension
+  - <code class="docs-code">fd-dynamic-page\\_\\_content</code> Dynamic Page content
 
 Note: Footer is optional and used for finalizing page actions. It is usually displayed in edit mode and uses a Floating Footer Bar.
 There are no specific styles for footer when used with Dynamic Page.

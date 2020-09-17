@@ -47,6 +47,8 @@ $block: #{$fd-namespace}-dynamic-page;
     }
   }
 
+  @include fd-flex(column);
+
   &__title-area {
     @include fd-reset();
 
@@ -59,6 +61,7 @@ $block: #{$fd-namespace}-dynamic-page;
     min-height: 3rem;
     word-wrap: break-word;
     background-color: $fd-dynamic-page-background-color;
+    z-index: 1;
 
     @include fd-hover() {
       background: var(--sapObjectHeader_Hover_Background);
@@ -276,6 +279,7 @@ $block: #{$fd-namespace}-dynamic-page;
 
     box-shadow: $fd-dynamic-page-box-shadow;
     background-color: $fd-dynamic-page-background-color;
+    z-index: 2;
 
     // left and right gradient for the pin/collapse buttons
     &--left-gradient {
