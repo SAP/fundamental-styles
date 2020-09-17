@@ -72,8 +72,14 @@ exports[`Storyshots Components/Tabs Compact Filter Mode 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
+          class="fd-tabs__icon"
         >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
           
                 
           <p
@@ -114,8 +120,14 @@ exports[`Storyshots Components/Tabs Compact Filter Mode 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
+          class="fd-tabs__icon"
         >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
           
                 
           <p
@@ -156,8 +168,14 @@ exports[`Storyshots Components/Tabs Compact Filter Mode 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
+          class="fd-tabs__icon"
         >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
           
                 
           <p
@@ -186,7 +204,16 @@ exports[`Storyshots Components/Tabs Compact Filter Mode 1`] = `
     <button
       aria-label="See More"
       class="fd-button fd-button--transparent fd-button--compact fd-tabs__overflow"
-    />
+    >
+      
+        
+      <i
+        class="sap-icon--slim-arrow-down"
+        role="presentation"
+      />
+      
+    
+    </button>
     
 
   </ul>
@@ -268,8 +295,14 @@ exports[`Storyshots Components/Tabs Compact Icon Only 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
+          class="fd-tabs__icon"
         >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
           
                 
           <p
@@ -304,8 +337,14 @@ exports[`Storyshots Components/Tabs Compact Icon Only 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
+          class="fd-tabs__icon"
         >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
           
                 
           <p
@@ -339,8 +378,14 @@ exports[`Storyshots Components/Tabs Compact Icon Only 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
+          class="fd-tabs__icon"
         >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
           
                 
           <p
@@ -362,7 +407,16 @@ exports[`Storyshots Components/Tabs Compact Icon Only 1`] = `
     <button
       aria-label="See More"
       class="fd-button fd-button--transparent fd-button--compact fd-tabs__overflow"
-    />
+    >
+      
+        
+      <i
+        class="sap-icon--slim-arrow-down"
+        role="presentation"
+      />
+      
+    
+    </button>
     
 
   </ul>
@@ -432,8 +486,17 @@ exports[`Storyshots Components/Tabs Compact Process Mode 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
-        />
+          class="fd-tabs__icon"
+        >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
+          
+            
+        </span>
         
             
         <div
@@ -484,8 +547,17 @@ exports[`Storyshots Components/Tabs Compact Process Mode 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
-        />
+          class="fd-tabs__icon"
+        >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
+          
+            
+        </span>
         
             
         <div
@@ -536,8 +608,17 @@ exports[`Storyshots Components/Tabs Compact Process Mode 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
-        />
+          class="fd-tabs__icon"
+        >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
+          
+            
+        </span>
         
             
         <div
@@ -571,7 +652,16 @@ exports[`Storyshots Components/Tabs Compact Process Mode 1`] = `
     <button
       aria-label="See More"
       class="fd-button fd-button--transparent fd-button--compact fd-tabs__overflow"
-    />
+    >
+      
+        
+      <i
+        class="sap-icon--slim-arrow-down"
+        role="presentation"
+      />
+      
+    
+    </button>
     
 
   </ul>
@@ -717,7 +807,16 @@ exports[`Storyshots Components/Tabs Default 1`] = `
     <button
       aria-label="See More"
       class="fd-button fd-button--transparent fd-tabs__overflow"
-    />
+    >
+      
+        
+      <i
+        class="sap-icon--slim-arrow-down"
+        role="presentation"
+      />
+      
+    
+    </button>
     
 
   </ul>
@@ -834,8 +933,14 @@ exports[`Storyshots Components/Tabs Filter Mode 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
+          class="fd-tabs__icon"
         >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
           
                 
           <p
@@ -876,8 +981,14 @@ exports[`Storyshots Components/Tabs Filter Mode 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
+          class="fd-tabs__icon"
         >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
           
                 
           <p
@@ -918,8 +1029,14 @@ exports[`Storyshots Components/Tabs Filter Mode 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
+          class="fd-tabs__icon"
         >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
           
                 
           <p
@@ -948,7 +1065,16 @@ exports[`Storyshots Components/Tabs Filter Mode 1`] = `
     <button
       aria-label="See More"
       class="fd-button fd-button--transparent fd-tabs__overflow"
-    />
+    >
+      
+        
+      <i
+        class="sap-icon--slim-arrow-down"
+        role="presentation"
+      />
+      
+    
+    </button>
     
 
   </ul>
@@ -1030,8 +1156,14 @@ exports[`Storyshots Components/Tabs Icon Only 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
+          class="fd-tabs__icon"
         >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
           
                 
           <p
@@ -1066,8 +1198,14 @@ exports[`Storyshots Components/Tabs Icon Only 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
+          class="fd-tabs__icon"
         >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
           
                 
           <p
@@ -1101,8 +1239,14 @@ exports[`Storyshots Components/Tabs Icon Only 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
+          class="fd-tabs__icon"
         >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
           
                 
           <p
@@ -1124,7 +1268,16 @@ exports[`Storyshots Components/Tabs Icon Only 1`] = `
     <button
       aria-label="See More"
       class="fd-button fd-button--transparent fd-tabs__overflow"
-    />
+    >
+      
+        
+      <i
+        class="sap-icon--slim-arrow-down"
+        role="presentation"
+      />
+      
+    
+    </button>
     
 
   </ul>
@@ -1263,7 +1416,16 @@ exports[`Storyshots Components/Tabs Nav Tab 1`] = `
     <button
       aria-label="See More"
       class="fd-button fd-button--transparent fd-tabs__overflow"
-    />
+    >
+      
+        
+      <i
+        class="sap-icon--slim-arrow-down"
+        role="presentation"
+      />
+      
+    
+    </button>
     
 
   </nav>
@@ -1333,8 +1495,17 @@ exports[`Storyshots Components/Tabs Process Mode 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
-        />
+          class="fd-tabs__icon"
+        >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
+          
+            
+        </span>
         
             
         <div
@@ -1385,8 +1556,17 @@ exports[`Storyshots Components/Tabs Process Mode 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
-        />
+          class="fd-tabs__icon"
+        >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
+          
+            
+        </span>
         
             
         <div
@@ -1437,8 +1617,17 @@ exports[`Storyshots Components/Tabs Process Mode 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
-        />
+          class="fd-tabs__icon"
+        >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
+          
+            
+        </span>
         
             
         <div
@@ -1472,7 +1661,16 @@ exports[`Storyshots Components/Tabs Process Mode 1`] = `
     <button
       aria-label="See More"
       class="fd-button fd-button--transparent fd-tabs__overflow"
-    />
+    >
+      
+        
+      <i
+        class="sap-icon--slim-arrow-right"
+        role="presentation"
+      />
+      
+    
+    </button>
     
 
   </ul>
@@ -1589,8 +1787,14 @@ exports[`Storyshots Components/Tabs Semantic Filter Mode 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
+          class="fd-tabs__icon"
         >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
           
                 
           <p
@@ -1631,8 +1835,14 @@ exports[`Storyshots Components/Tabs Semantic Filter Mode 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
+          class="fd-tabs__icon"
         >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
           
                 
           <p
@@ -1673,8 +1883,14 @@ exports[`Storyshots Components/Tabs Semantic Filter Mode 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
+          class="fd-tabs__icon"
         >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
           
                 
           <p
@@ -1715,8 +1931,14 @@ exports[`Storyshots Components/Tabs Semantic Filter Mode 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
+          class="fd-tabs__icon"
         >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
           
                 
           <p
@@ -1745,7 +1967,16 @@ exports[`Storyshots Components/Tabs Semantic Filter Mode 1`] = `
     <button
       aria-label="See More"
       class="fd-button fd-button--transparent fd-tabs__overflow"
-    />
+    >
+      
+        
+      <i
+        class="sap-icon--slim-arrow-down"
+        role="presentation"
+      />
+      
+    
+    </button>
     
 
   </ul>
@@ -2008,7 +2239,16 @@ exports[`Storyshots Components/Tabs Semantic Inline 1`] = `
     <button
       aria-label="See More"
       class="fd-button fd-button--transparent fd-tabs__overflow"
-    />
+    >
+      
+        
+      <i
+        class="sap-icon--slim-arrow-down"
+        role="presentation"
+      />
+      
+    
+    </button>
     
 
   </ul>
@@ -2102,8 +2342,14 @@ exports[`Storyshots Components/Tabs Semantic Mode 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
+          class="fd-tabs__icon"
         >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
           
                 
           <p
@@ -2138,8 +2384,14 @@ exports[`Storyshots Components/Tabs Semantic Mode 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
+          class="fd-tabs__icon"
         >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
           
                 
           <p
@@ -2173,8 +2425,14 @@ exports[`Storyshots Components/Tabs Semantic Mode 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
+          class="fd-tabs__icon"
         >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
           
                 
           <p
@@ -2208,8 +2466,14 @@ exports[`Storyshots Components/Tabs Semantic Mode 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
+          class="fd-tabs__icon"
         >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
           
                 
           <p
@@ -2243,8 +2507,14 @@ exports[`Storyshots Components/Tabs Semantic Mode 1`] = `
         
             
         <span
-          class="fd-tabs__icon sap-icon--cart"
+          class="fd-tabs__icon"
         >
+          
+                
+          <i
+            class="sap-icon--cart"
+            role="presentation"
+          />
           
                 
           <p
@@ -2266,7 +2536,16 @@ exports[`Storyshots Components/Tabs Semantic Mode 1`] = `
     <button
       aria-label="See More"
       class="fd-button fd-button--transparent fd-tabs__overflow"
-    />
+    >
+      
+        
+      <i
+        class="sap-icon--slim-arrow-down"
+        role="presentation"
+      />
+      
+    
+    </button>
     
 
   </ul>
@@ -2457,7 +2736,16 @@ exports[`Storyshots Components/Tabs Tab With Counters 1`] = `
     <button
       aria-label="See More"
       class="fd-button fd-button--transparent fd-button--compact fd-tabs__overflow"
-    />
+    >
+      
+        
+      <i
+        class="sap-icon--slim-arrow-down"
+        role="presentation"
+      />
+      
+    
+    </button>
     
 
   </ul>
