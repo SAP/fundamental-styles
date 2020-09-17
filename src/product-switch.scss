@@ -126,7 +126,9 @@ $block: #{$fd-namespace}-product-switch;
           background-color: var(--sapList_Background);
 
           .#{$block}__icon {
-            color: var(--sapContent_IconColor);
+            @include fd-icon-selector() {
+              color: var(--sapContent_IconColor);
+            }
           }
 
           .#{$block}__title {
@@ -160,10 +162,15 @@ $block: #{$fd-namespace}-product-switch;
   &__item:active {
     background-color: var(--sapList_Active_Background);
 
-    .#{$block}__icon,
     .#{$block}__title,
     .#{$block}__subtitle {
       color: var(--sapList_Active_TextColor);
+    }
+
+    .#{$block}__icon {
+      @include fd-icon-selector() {
+        color: var(--sapList_Active_TextColor);
+      }
     }
 
     @include fd-product-pseudo-element-background(var(--sapList_Active_Background));
@@ -176,16 +183,16 @@ $block: #{$fd-namespace}-product-switch;
   &__icon {
     @include fd-reset();
 
-    @include fd-flex() {
-      align-items: center;
-      justify-content: center;
+    @include fd-icon-selector() {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--sapContent_IconColor);
+
+      @include fd-flex-center();
     }
 
     min-width: 3rem;
     min-height: 3rem;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: var(--sapContent_IconColor);
   }
 
   &__text {
@@ -343,14 +350,18 @@ $block: #{$fd-namespace}-product-switch;
     }
 
     .#{$block}__icon {
-      margin-bottom: 0;
-      margin-right: 0.75rem;
+      @include fd-icon-selector() {
+        margin-bottom: 0;
+        margin-right: 0.75rem;
+      }
     }
 
     @include fd-rtl() {
       .#{$block}__icon {
-        margin-right: 0;
-        margin-left: 0.75rem;
+        @include fd-icon-selector() {
+          margin-right: 0;
+          margin-left: 0.75rem;
+        }
       }
 
       .#{$block}__text {
