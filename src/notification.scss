@@ -113,6 +113,10 @@ $block: #{$fd-namespace}-notification;
         padding-left: 0.5rem;
         padding-right: 1rem;
       }
+
+      &--mobile {
+        padding: 0 0.25rem;
+      }
     }
 
     @include fd-rtl() {
@@ -247,6 +251,10 @@ $block: #{$fd-namespace}-notification;
     @include fd-reset();
 
     padding-right: 0.5rem;
+
+    &--mobile {
+      padding-right: 0.25rem;
+    }
 
     @include fd-rtl() {
       padding-right: 0;
