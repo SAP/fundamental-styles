@@ -221,7 +221,7 @@ export const analyticalCard = () => `
                             </div>
                             <div class="fd-numeric-content__scale-container">
                                 <div class="fd-numeric-content__scale">
-                                    <span class="fd-numeric-content__scale-arrow">
+                                    <span class="fd-numeric-content__scale-arrow" aria-label="decrease">
                                         <i class="sap-icon--down"></i>
                                     </span>
                                     <span class="fd-numeric-content__scale-text">M</span>
@@ -266,7 +266,7 @@ export const analyticalCard = () => `
                             </div>
                             <div class="fd-numeric-content__scale-container">
                                 <div class="fd-numeric-content__scale">                                
-                                    <span class="fd-numeric-content__scale-arrow">
+                                    <span class="fd-numeric-content__scale-arrow" aria-label="decrease">
                                         <i class="sap-icon--down"></i>
                                     </span>
                                     <span class="fd-numeric-content__scale-text">M</span>
@@ -342,27 +342,27 @@ export const listCard = () => `
             <div class="fd-card__content" role="group" aria-label="Card Content">
                 <ul class="fd-list fd-list--no-border" role="list">
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--cart"></span>
+                        <span aria-hidden="true" aria-hidden="true" class="fd-list__icon sap-icon--cart"></span>
                         <span class="fd-list__title">List item 1</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--wrench"></span>
+                        <span aria-hidden="true" class="fd-list__icon sap-icon--wrench"></span>
                         <span class="fd-list__title">List item 2</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--leads"></span>
+                        <span aria-hidden="true" class="fd-list__icon sap-icon--leads"></span>
                         <span class="fd-list__title">List item 3</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--batch-payments"></span>
+                        <span aria-hidden="true" class="fd-list__icon sap-icon--batch-payments"></span>
                         <span class="fd-list__title">List item 4</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--retail-store"></span>
+                        <span aria-hidden="true" class="fd-list__icon sap-icon--retail-store"></span>
                         <span class="fd-list__title">List item 3</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--travel-expense"></span>
+                        <span aria-hidden="true" class="fd-list__icon sap-icon--travel-expense"></span>
                         <span class="fd-list__title">List item 4</span>
                     </li>
                 </ul>
@@ -385,27 +385,27 @@ export const listCard = () => `
             <div class="fd-card__content" role="group" aria-label="Card Content">
                 <ul class="fd-list fd-list--no-border fd-list--compact" role="list">
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--cart"></span>
+                        <span aria-hidden="true" class="fd-list__icon sap-icon--cart"></span>
                         <span class="fd-list__title">List item 1</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--wrench"></span>
+                        <span aria-hidden="true" class="fd-list__icon sap-icon--wrench"></span>
                         <span class="fd-list__title">List item 2</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--leads"></span>
+                        <span aria-hidden="true" class="fd-list__icon sap-icon--leads"></span>
                         <span class="fd-list__title">List item 3</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--batch-payments"></span>
+                        <span aria-hidden="true" class="fd-list__icon sap-icon--batch-payments"></span>
                         <span class="fd-list__title">List item 4</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--retail-store"></span>
+                        <span aria-hidden="true" class="fd-list__icon sap-icon--retail-store"></span>
                         <span class="fd-list__title">List item 5</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--travel-expense"></span>
+                        <span aria-hidden="true" class="fd-list__icon sap-icon--travel-expense"></span>
                         <span class="fd-list__title">List item 4</span>
                     </li>
                 </ul>
@@ -464,7 +464,9 @@ export const tableCard = () => `
                             <td class="fd-table__cell">5 EUR</td>
                             <td class="fd-table__cell">India</td>
                             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                                <span class="fd-table__icon fd-table__icon--navigation"><i class="sap-icon--navigation-right-arrow"></i></span>
+                                <span class="fd-table__icon fd-table__icon--navigation" aria-label="Navigate">
+                                    <i class="sap-icon--navigation-right-arrow"></i>
+                                </span>
                             </td>
                         </tr>
                         <tr class="fd-table__row">
@@ -481,7 +483,9 @@ export const tableCard = () => `
                             <td class="fd-table__cell">2 EUR</td>
                             <td class="fd-table__cell">Mexico</td>
                             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                                <span class="fd-table__icon fd-table__icon--navigation"><i class="sap-icon--navigation-right-arrow"></i></span>
+                                <span class="fd-table__icon fd-table__icon--navigation" aria-label="Navigate">
+                                    <i class="sap-icon--navigation-right-arrow"></i>
+                                </span>
                             </td>
                         </tr>
                         <tr class="fd-table__row">
@@ -498,7 +502,9 @@ export const tableCard = () => `
                             <td class="fd-table__cell">6 EUR</td>
                             <td class="fd-table__cell">Spain</td>
                             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                                <span class="fd-table__icon fd-table__icon--navigation"><i class="sap-icon--navigation-right-arrow"></i></span>
+                                <span class="fd-table__icon fd-table__icon--navigation" aria-label="Navigate">
+                                    <i class="sap-icon--navigation-right-arrow"></i>
+                                </span>
                             </td>
                         </tr>
                     </tbody>
@@ -541,7 +547,9 @@ export const tableCard = () => `
                             <td class="fd-table__cell">5 EUR</td>
                             <td class="fd-table__cell">India</td>
                             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                                <span class="fd-table__icon fd-table__icon--navigation"><i class="sap-icon--navigation-right-arrow"></i></span>
+                                <span class="fd-table__icon fd-table__icon--navigation" aria-label="Navigate">
+                                    <i class="sap-icon--navigation-right-arrow"></i>
+                                </span>
                             </td>
                         </tr>
                         <tr class="fd-table__row">
@@ -554,7 +562,9 @@ export const tableCard = () => `
                             <td class="fd-table__cell">2 EUR</td>
                             <td class="fd-table__cell">Mexico</td>
                             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                                <span class="fd-table__icon fd-table__icon--navigation"><i class="sap-icon--navigation-right-arrow"></i></span>
+                                <span class="fd-table__icon fd-table__icon--navigation" aria-label="Navigate">
+                                    <i class="sap-icon--navigation-right-arrow"></i>
+                                </span>
                             </td>
                         </tr>
                         <tr class="fd-table__row">
@@ -567,7 +577,9 @@ export const tableCard = () => `
                             <td class="fd-table__cell">6 EUR</td>
                             <td class="fd-table__cell">Spain</td>
                             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                                <span class="fd-table__icon fd-table__icon--navigation"><i class="sap-icon--navigation-right-arrow"></i></span>
+                                <span class="fd-table__icon fd-table__icon--navigation" aria-label="Navigate">
+                                    <i class="sap-icon--navigation-right-arrow"></i>
+                                </span>
                             </td>
                         </tr>
                     </tbody>

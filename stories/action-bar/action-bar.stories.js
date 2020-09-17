@@ -20,7 +20,7 @@ export const backBtn = () => `
 <div class="fd-action-bar">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
                 <i class="sap-icon--navigation-left-arrow"></i>
             </button>
         </div>
@@ -28,8 +28,8 @@ export const backBtn = () => `
             <h1 class="fd-title fd-title--h3">Page Title</h1>
         </div>
         <div class="fd-action-bar__actions">
-            <button aria-label="button"class="fd-button fd-button--compact">Button</button>
-            <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact fd-button--emphasized">Button</button>
         </div>
     </div>
     <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description </p>
@@ -40,7 +40,7 @@ export const backBtn = () => `
 <div class="fd-action-bar" dir="rtl">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
                 <i class="sap-icon--navigation-left-arrow"></i>
             </button>
         </div>
@@ -48,8 +48,8 @@ export const backBtn = () => `
             <h1 class="fd-title fd-title--h3">Page Title</h1>
         </div>
         <div class="fd-action-bar__actions">
-            <button aria-label="button"class="fd-button fd-button--compact">Button</button>
-            <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact fd-button--emphasized">Button</button>
         </div>
     </div>
     <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description </p>
@@ -65,8 +65,8 @@ export const noBackBtn = () => `
             <h1 class="fd-title fd-title--h3">Page Title</h1>
         </div>
         <div class="fd-action-bar__actions">
-            <button aria-label="button"class="fd-button fd-button--compact">Button</button>
-            <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact fd-button--emphasized">Button</button>
         </div>
     </div>
     <p class="fd-action-bar__description">Action bar Description </p>
@@ -80,8 +80,8 @@ export const noBackBtn = () => `
             <h1 class="fd-title fd-title--h3">Page Title</h1>
         </div>
         <div class="fd-action-bar__actions">
-            <button aria-label="button"class="fd-button fd-button--compact">Button</button>
-            <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact fd-button--emphasized">Button</button>
         </div>
     </div>
     <p class="fd-action-bar__description">Action bar Description </p>
@@ -94,7 +94,7 @@ export const backBtnNoDescription = () => `
 <div class="fd-action-bar">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
                 <i class="sap-icon--navigation-left-arrow"></i>
             </button>
         </div>
@@ -102,8 +102,8 @@ export const backBtnNoDescription = () => `
             <h1 class="fd-title fd-title--h3">Page Title</h1>
         </div>
         <div class="fd-action-bar__actions">
-            <button aria-label="button"class="fd-button fd-button--compact">Button</button>
-            <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact fd-button--emphasized">Button</button>
         </div>
     </div>
 </div>
@@ -113,7 +113,7 @@ export const backBtnNoDescription = () => `
 <div class="fd-action-bar" dir="rtl">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
                 <i class="sap-icon--navigation-right-arrow"></i>
             </button>
         </div>
@@ -121,8 +121,8 @@ export const backBtnNoDescription = () => `
             <h1 class="fd-title fd-title--h3">Page Title</h1>
         </div>
         <div class="fd-action-bar__actions">
-            <button aria-label="button"class="fd-button fd-button--compact">Button</button>
-            <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact fd-button--emphasized">Button</button>
         </div>
     </div>
 </div>
@@ -134,7 +134,7 @@ export const longTitleDescription = () => `
 <div class="fd-action-bar">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
                 <i class="sap-icon--navigation-left-arrow"></i>
             </button>
         </div>
@@ -142,9 +142,9 @@ export const longTitleDescription = () => `
             <h1 class="fd-title fd-title--h3">Page Title Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long.</h1>
         </div>
         <div class="fd-action-bar__actions">
-            <button aria-label="button"class="fd-button fd-button--compact">Button</button>
-            <button aria-label="button"class="fd-button fd-button--compact">Button</button>
-            <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact fd-button--emphasized">Button</button>
         </div>
     </div>
     <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long
@@ -156,7 +156,7 @@ export const longTitleDescription = () => `
 <div class="fd-action-bar" dir="rtl">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
                 <i class="sap-icon--navigation-right-arrow"></i>
             </button>
         </div>
@@ -164,9 +164,9 @@ export const longTitleDescription = () => `
             <h1 class="fd-title fd-title--h3">Page Title Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long.</h1>
         </div>
         <div class="fd-action-bar__actions">
-            <button aria-label="button"class="fd-button fd-button--compact">Button</button>
-            <button aria-label="button"class="fd-button fd-button--compact">Button</button>
-            <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact fd-button--emphasized">Button</button>
         </div>
     </div>
      <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long
@@ -186,7 +186,7 @@ export const actions = () => `
         <div class="fd-action-bar__actions">
             <div class="fd-popover">
                 <div class="fd-popover__control">
-                    <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact"
+                    <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact"
                     aria-controls="wgxzK859" aria-haspopup="true" aria-expanded="false" aria-label="More">
                         <i class="sap-icon--overflow"></i>
                     </button>
@@ -235,7 +235,7 @@ export const responsiveL = () => `
 <div class="fd-action-bar fd-action-bar--m_l">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
                 <i class="sap-icon--navigation-left-arrow"></i>
             </button>
         </div>
@@ -243,8 +243,8 @@ export const responsiveL = () => `
             <h1 class="fd-title fd-title--h3">Page Title</h1>
         </div>
         <div class="fd-action-bar__actions">
-            <button aria-label="button"class="fd-button fd-button--compact">Button</button>
-            <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact fd-button--emphasized">Button</button>
         </div>
     </div>
     <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description</p>
@@ -255,7 +255,7 @@ export const responsiveL = () => `
 <div class="fd-action-bar fd-action-bar--m_l" dir="rtl">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
                 <i class="sap-icon--navigation-right-arrow"></i>
             </button>
         </div>
@@ -263,8 +263,8 @@ export const responsiveL = () => `
             <h1 class="fd-title fd-title--h3">Page Title</h1>
         </div>
         <div class="fd-action-bar__actions">
-            <button aria-label="button"class="fd-button fd-button--compact">Button</button>
-            <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact fd-button--emphasized">Button</button>
         </div>
     </div>
     <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description</p>
@@ -277,7 +277,7 @@ export const responsiveXL = () => `
 <div class=" fd-action-bar fd-action-bar--xl">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
                 <i class="sap-icon--navigation-left-arrow"></i>
             </button>
         </div>
@@ -285,8 +285,8 @@ export const responsiveXL = () => `
             <h1 class="fd-title fd-title--h3">Page Title</h1>
         </div>
         <div class="fd-action-bar__actions">
-            <button aria-label="button"class="fd-button fd-button--compact">Button</button>
-            <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact fd-button--emphasized">Button</button>
         </div>
     </div>
     <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description </p>
@@ -297,7 +297,7 @@ export const responsiveXL = () => `
 <div class=" fd-action-bar fd-action-bar--xl" dir="rtl">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
                 <i class="sap-icon--navigation-right-arrow"></i>
             </button>
         </div>
@@ -305,8 +305,8 @@ export const responsiveXL = () => `
             <h1 class="fd-title fd-title--h3">Page Title</h1>
         </div>
         <div class="fd-action-bar__actions">
-            <button aria-label="button"class="fd-button fd-button--compact">Button</button>
-            <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact">Button</button>
+            <button aria-label="button" class="fd-button fd-button--compact fd-button--emphasized">Button</button>
         </div>
     </div>
     <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description </p>
@@ -320,7 +320,7 @@ export const mobile = () => `
     <div class="fd-action-bar fd-action-bar--s"> 
         <div class="fd-action-bar__header">
             <div class="fd-action-bar__back">
-                <button aria-label="button"class="fd-button fd-button--transparent" aria-label="Back">
+                <button aria-label="button" class="fd-button fd-button--transparent" aria-label="Back">
                     <i class="sap-icon--navigation-left-arrow"></i>
                 </button>
             </div>
@@ -330,7 +330,7 @@ export const mobile = () => `
             <div class="fd-action-bar__actions">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button aria-label="button"class="fd-button fd-button--transparent"
+                        <button aria-label="button" class="fd-button fd-button--transparent"
                         aria-controls="wgxzK85" aria-haspopup="true" aria-expanded="false" aria-label="More">
                             <i class="sap-icon--overflow"></i>
                         </button>
@@ -373,7 +373,7 @@ export const mobile = () => `
     <div class="fd-action-bar fd-action-bar--s"> 
         <div class="fd-action-bar__header">
             <div class="fd-action-bar__back">
-                <button aria-label="button"class="fd-button fd-button--transparent" aria-label="Back">
+                <button aria-label="button" class="fd-button fd-button--transparent" aria-label="Back">
                     <i class="sap-icon--navigation-right-arrow"></i>
                 </button>
             </div>
@@ -383,7 +383,7 @@ export const mobile = () => `
             <div class="fd-action-bar__actions">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button aria-label="button"class="fd-button fd-button--transparent "
+                        <button aria-label="button" class="fd-button fd-button--transparent "
                         aria-controls="wgxzK86" aria-haspopup="true" aria-expanded="false" aria-label="More">
                             <i class="sap-icon--overflow"></i>
                         </button>
