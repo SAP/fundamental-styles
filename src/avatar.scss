@@ -1,7 +1,9 @@
 @import "./mixins";
 
 /*!
-.fd-avatar+((--circle), (--thumbnail), (--xxs|--xs|--s|--m|--l|--xl|--xxl))
+.fd-avatar+((--circle), (--thumbnail), (--xxs|--xs|--s|--m|--l|--xl|--xxl), (--accent-color-{1-10}))
+  .fd-avatar__icon
+  .fd-avatar__zoom-icon
 */
 $block: #{$fd-namespace}-avatar;
 
@@ -50,9 +52,72 @@ $block: #{$fd-namespace}-avatar;
       border-radius: var(--sapElement_BorderCornerRadius);
     }
   }
-  // BLOCK MODIFIERS ************
-  // sizes
 
+  // BLOCK ELEMENTS ************
+  // zoom icon
+  &__zoom-icon {
+    @include fd-reset();
+    @include fd-flex-center();
+
+    @include fd-icon-element-base() {
+      position: absolute;
+      color: var(--sapButton_Emphasized_TextColor);
+      background-color: var(--sapButton_Emphasized_Background);
+      border-radius: $fd-avatar-border-radius;
+      border: 0.0625rem solid var(--sapButton_Emphasized_BorderColor);
+    }
+  }
+
+  &__icon {
+    @include fd-reset();
+    @include fd-icon-element-base();
+  }
+
+  // BLOCK MODIFIERS ************
+  // circle
+  &--circle {
+    border-radius: $fd-avatar-border-radius;
+
+    .#{$block}__zoom-icon {
+      bottom: 0;
+      right: 0;
+
+      @include fd-rtl() {
+        right: auto;
+        left: 0;
+      }
+    }
+  }
+
+  // background
+  &--transparent {
+    background-color: transparent;
+    color: var(--sapContent_IconColor);
+  }
+
+  // placeholder background
+  &--placeholder {
+    background-color: var(--sapContent_ImagePlaceholderBackground);
+  }
+
+  // tile background
+  &--tile {
+    background-color: var(--sapTile_IconColor);
+  }
+
+  // optional border
+  &--border {
+    border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
+  }
+
+  // accent-colors
+  @each $set-name, $color-set in $fd-avatar-accent-colors {
+    &--accent-color-#{$set-name} {
+      background-color: map_get($color-set, "background-color");
+    }
+  }
+
+  // sizes
   @each $set-name, $size-set in $fd-avatar-sizes {
     &--#{$set-name} {
       @include fd-reset-spacing();
@@ -80,63 +145,10 @@ $block: #{$fd-namespace}-avatar;
           left: map_get($size-set, "offset");
         }
 
-        &::before {
+        @include fd-icon-selector() {
           font-size: map_get($size-set, "beforeFontSize");
         }
       }
-    }
-  }
-
-  // circle
-  &.#{$block}--circle {
-    border-radius: $fd-avatar-border-radius;
-
-    .#{$block}__zoom-icon {
-      bottom: 0;
-      right: 0;
-
-      @include fd-rtl() {
-        right: auto;
-        left: 0;
-      }
-    }
-  }
-
-  // background
-  &.#{$block}--transparent {
-    background-color: transparent;
-    color: var(--sapContent_IconColor);
-  }
-
-  // placeholder background
-  &.#{$block}--placeholder {
-    background-color: var(--sapContent_ImagePlaceholderBackground);
-  }
-
-  // tile background
-  &.#{$block}--tile {
-    background-color: var(--sapTile_IconColor);
-  }
-
-  // zoom icon
-  &__zoom-icon {
-    @include fd-flex-center();
-
-    background-color: var(--sapButton_Emphasized_Background);
-    color: var(--sapButton_Emphasized_TextColor);
-    position: absolute;
-    border: 0.0625rem solid var(--sapButton_Emphasized_BorderColor);
-    border-radius: $fd-avatar-border-radius;
-  }
-  // optional border
-  &.#{$block}--border {
-    border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
-  }
-
-  // accent-colors
-  @each $set-name, $color-set in $fd-avatar-accent-colors {
-    &--accent-color-#{$set-name} {
-      background-color: map_get($color-set, "background-color");
     }
   }
 }
