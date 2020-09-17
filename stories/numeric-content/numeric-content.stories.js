@@ -15,7 +15,7 @@ export const large = () => `
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale">
-                        <span class="fd-numeric-content__scale-arrow">
+                        <span class="fd-numeric-content__scale-arrow" aria-label="decrease">
                             <i class="sap-icon--down"></i>
                         </span>
                         <span class="fd-numeric-content__scale-text">M</span>
@@ -31,7 +31,7 @@ export const large = () => `
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale">
-                        <span class="fd-numeric-content__scale-arrow">
+                        <span class="fd-numeric-content__scale-arrow" aria-label="decrease">
                             <i class="sap-icon--down"></i>
                         </span>
                         <span class="fd-numeric-content__scale-text">milçM</span>
@@ -52,7 +52,7 @@ export const medium = () => `
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale fd-numeric-content__scale--positive">
-                        <span class="fd-numeric-content__scale-arrow">
+                        <span class="fd-numeric-content__scale-arrow" aria-label="decrease">
                             <i class="sap-icon--down"></i>
                         </span>
                     </div>
@@ -67,7 +67,7 @@ export const medium = () => `
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale fd-numeric-content__scale--negative">
-                        <span class="fd-numeric-content__scale-arrow">
+                        <span class="fd-numeric-content__scale-arrow" aria-label="decrease">
                             <i class="sap-icon--down"></i>
                         </span>
                     </div>
@@ -87,7 +87,7 @@ export const small = () => `
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale fd-numeric-content__scale--critical">
-                        <span class="fd-numeric-content__scale-arrow">
+                        <span class="fd-numeric-content__scale-arrow" aria-label="decrease">
                             <i class="sap-icon--down"></i>
                         </span>
                         <span class="fd-numeric-content__scale-text">%</span>
@@ -121,7 +121,7 @@ export const launchIconLarge = () => `
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale">
-                        <span class="fd-numeric-content__scale-arrow">
+                        <span class="fd-numeric-content__scale-arrow" aria-label="decrease">
                             <i class="sap-icon--down"></i>
                         </span>
                         <span class="fd-numeric-content__scale-text">milçM</span>
@@ -160,7 +160,7 @@ export const launchIconMedium = () => `
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale fd-numeric-content__scale--negative">
-                        <span class="fd-numeric-content__scale-arrow">
+                        <span class="fd-numeric-content__scale-arrow" aria-label="decrease">
                             <i class="sap-icon--down"></i>
                         </span>
                         <span class="fd-numeric-content__scale-text">M</span>
@@ -181,7 +181,7 @@ export const launchIconMedium = () => `
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale fd-numeric-content__scale--informative">
-                        <span class="fd-numeric-content__scale-arrow">
+                        <span class="fd-numeric-content__scale-arrow" aria-label="decrease">
                             <i class="sap-icon--down"></i>
                         </span>
                         <span class="fd-numeric-content__scale-text">milÇ</span>
@@ -207,7 +207,7 @@ export const launchIconSmall = () => `
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale fd-numeric-content__scale--critical">
-                        <span class="fd-numeric-content__scale-arrow">
+                        <span class="fd-numeric-content__scale-arrow" aria-label="decrease">
                             <i class="sap-icon--up"></i>
                         </span>
                         <span class="fd-numeric-content__scale-text">ÑÇmlč</span>
@@ -228,7 +228,7 @@ export const launchIconSmall = () => `
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale fd-numeric-content__scale--positive">
-                        <span class="fd-numeric-content__scale-arrow">
+                        <span class="fd-numeric-content__scale-arrow" aria-label="decrease">
                             <i class="sap-icon--down"></i>
                         </span>
                         <span class="fd-numeric-content__scale-text">ÑÇmlč</span>
