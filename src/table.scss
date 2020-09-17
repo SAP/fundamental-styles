@@ -82,16 +82,16 @@ $block: #{$fd-namespace}-table;
 
   // Elements
   &__icon {
-    color: var(--sapContent_NonInteractiveIconColor);
-    font-size: var(--sapFontSmallSize);
-
-    &--navigation {
+    @include fd-icon-selector() {
+      color: var(--sapContent_NonInteractiveIconColor);
       font-size: var(--sapFontSmallSize);
-      width: $fd-table-navigation-icon-width;
-      min-width: $fd-table-navigation-icon-width;
-      height: 100%;
 
       @include fd-flex-center();
+    }
+
+    &--navigation {
+      width: $fd-table-navigation-icon-width;
+      min-width: $fd-table-navigation-icon-width;
     }
   }
 
