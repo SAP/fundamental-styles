@@ -351,7 +351,7 @@ notificationGroup.parameters = {
 
 
 export const mobile = () => `
-<div style="heigt: 200px">
+<div style="heigt: 200px; max-width: 20rem">
 
 <div class="fd-notification fd-notification--mobile"">
     <div class="fd-notification__body">
@@ -397,6 +397,7 @@ export const mobile = () => `
     </div>
 </div>
 </div>
+<div style="heigt: 200px; max-width: 20rem">
 <div class="fd-notification fd-notification--mobile fd-notification--group">
     <ul class="fd-tabs fd-tabs--l fd-notification--tabs" role="tablist">
         <li role="listitem" class="fd-tabs__item">
@@ -519,6 +520,7 @@ export const mobile = () => `
                 <i class="sap-icon--decline"></i>
             </button>
         </div>
+    </div>
     </div>
 
 </div>

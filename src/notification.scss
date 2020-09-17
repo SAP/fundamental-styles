@@ -280,7 +280,6 @@ $block: #{$fd-namespace}-notification;
 
   &--mobile {
     padding: $fd-notification-reset-offset;
-    max-width: $fd-notification-width-s;
 
     .#{$block}__indicator {
       padding-right: 0.25rem;
@@ -292,7 +291,7 @@ $block: #{$fd-namespace}-notification;
     }
 
     .#{$block}__group-header {
-      padding: 0 0.5rem;
+      padding: 0.5rem 0.5rem 0 0.5rem;
     }
 
     .#{$block}__body {
