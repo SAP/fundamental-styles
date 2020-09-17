@@ -54,7 +54,9 @@ $fd-numeric-content-elements-spacing-s: 0.5rem !default;
   height: 3rem;
   width: 100%;
 
-  @include fd-icon-contain();
+  @include fd-icon-element-base() {
+    @include fd-flex-center();
+  }
 
   &__launch-icon-container,
   &__kpi-container {

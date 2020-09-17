@@ -44,7 +44,7 @@ $block: #{$fd-namespace}-message-page;
     font-size: 6rem;
     color: var(--sapContent_NonInteractiveIconColor);
 
-    @include fd-icon-element-sub-selector() {
+    @include fd-icon-selector() {
       font-size: 6rem;
       color: var(--sapContent_NonInteractiveIconColor);
       opacity: 50%;

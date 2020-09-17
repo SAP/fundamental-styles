@@ -126,7 +126,7 @@ $block: #{$fd-namespace}-product-switch;
           background-color: var(--sapList_Background);
 
           .#{$block}__icon {
-            @include fd-icon-element-sub-selector() {
+            @include fd-icon-selector() {
               color: var(--sapContent_IconColor);
             }
           }
@@ -168,7 +168,7 @@ $block: #{$fd-namespace}-product-switch;
     }
 
     .#{$block}__icon {
-      @include fd-icon-element-sub-selector() {
+      @include fd-icon-selector() {
         color: var(--sapList_Active_TextColor);
       }
     }
@@ -183,7 +183,7 @@ $block: #{$fd-namespace}-product-switch;
   &__icon {
     @include fd-reset();
 
-    @include fd-icon-element-sub-selector() {
+    @include fd-icon-selector() {
       font-size: 1.5rem;
       margin-bottom: 0.5rem;
       color: var(--sapContent_IconColor);
@@ -350,7 +350,7 @@ $block: #{$fd-namespace}-product-switch;
     }
 
     .#{$block}__icon {
-      @include fd-icon-element-sub-selector() {
+      @include fd-icon-selector() {
         margin-bottom: 0;
         margin-right: 0.75rem;
       }
@@ -358,7 +358,7 @@ $block: #{$fd-namespace}-product-switch;
 
     @include fd-rtl() {
       .#{$block}__icon {
-        @include fd-icon-element-sub-selector() {
+        @include fd-icon-selector() {
           margin-right: 0;
           margin-left: 0.75rem;
         }

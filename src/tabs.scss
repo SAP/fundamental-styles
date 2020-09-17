@@ -194,14 +194,12 @@ $block: #{$fd-namespace}-tabs;
 
   &__icon {
     @include fd-reset();
+    @include fd-flex-center();
 
-    @include fd-icon-contain() {
+    @include fd-icon-element-base() {
       font-size: $fd-tabs-icon-size;
     }
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: $fd-tabs-icon-selection-height;
     height: $fd-tabs-icon-selection-height;
     border: $fd-tabs-border-width solid $fd-tabs-selected-color;
@@ -246,7 +244,7 @@ $block: #{$fd-namespace}-tabs;
 
   &__overflow {
     @include fd-reset();
-    @include fd-icon-contain();
+    @include fd-icon-element-base();
     @include fd-flex-center();
 
     margin-left: auto;

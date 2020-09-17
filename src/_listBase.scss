@@ -104,18 +104,15 @@
   &__icon {
     @include fd-reset();
     @include ie11-active-state-fix();
-    @include fd-icon-contain();
+    @include fd-flex-center();
 
-    @include fd-icon-element-sub-selector() {
+    @include fd-icon-element-base() {
       color: var(--sapList_TextColor);
       font-size: var(--sapFontHeader4Size);
     }
 
     width: 2.75rem;
     flex: 0 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     &:first-child {
       margin-left: -1rem;
@@ -221,7 +218,7 @@
     }
 
     .#{$block}__icon {
-      @include fd-icon-element-sub-selector() {
+      @include fd-icon-selector() {
         font-size: $fd-list-large-font-size;
       }
     }

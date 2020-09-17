@@ -111,7 +111,7 @@ $inverted-color-accents: (
 
 @mixin fd-object-status-icon-selector() {
   .#{$block}__icon {
-    @include fd-icon-element-sub-selector() {
+    @include fd-icon-selector() {
       @content;
     }
   }
@@ -232,7 +232,7 @@ $inverted-color-accents: (
   &__icon {
     @include fd-reset();
 
-    @include fd-icon-element() {
+    @include fd-icon-element-base() {
       @include fd-flex-center();
 
       font-size: $fd-object-status-icon-font-size;

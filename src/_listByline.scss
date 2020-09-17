@@ -14,7 +14,7 @@
       @include fd-reset();
       @include fd-flex-center();
       @include ie11-active-state-fix();
-      @include fd-icon-contain();
+      @include fd-icon-element-base();
 
       width: $fd-list-byline-thumbnail-dimensions;
       height: $fd-list-byline-thumbnail-dimensions;

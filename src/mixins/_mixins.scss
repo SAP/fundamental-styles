@@ -384,33 +384,14 @@
 }
 
 @mixin fd-icon-selector() {
-  [class*="sap-icon"] {
+  [class*="sap-icon"],
+  &[class*="sap-icon"] {
     @content;
   }
 }
 
-@mixin fd-icon-contain() {
+@mixin fd-icon-element-base {
   @include fd-icon-selector() {
-    @include fd-flex-center();
-
-    color: inherit;
-    background: inherit;
-    font-size: inherit;
-    border-radius: inherit;
-    line-height: 1;
-
-    @content;
-  }
-}
-
-@mixin fd-icon-element-sub-selector() {
-  &[class*="sap-icon"] {
-    @content;
-  }
-}
-
-@mixin fd-icon-element {
-  &[class*="sap-icon"] {
     color: inherit;
     background: inherit;
     font-size: inherit;

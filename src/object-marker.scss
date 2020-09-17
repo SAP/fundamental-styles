@@ -50,7 +50,7 @@ $block: #{$fd-namespace}-object-marker;
   &__icon {
     @include fd-reset();
 
-    @include fd-icon-element() {
+    @include fd-icon-element-base() {
       @include fd-flex-center();
 
       font-size: 1rem;

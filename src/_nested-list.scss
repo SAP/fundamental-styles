@@ -208,7 +208,7 @@ $block: #{$fd-namespace}-nested-list;
   }
 
   &__icon {
-    @include fd-icon-element() {
+    @include fd-icon-element-base() {
       @include fd-reset();
       @include fd-flex-center();
 

@@ -59,7 +59,7 @@ $block: #{$fd-namespace}-avatar;
     @include fd-reset();
     @include fd-flex-center();
 
-    @include fd-icon-element() {
+    @include fd-icon-element-base() {
       position: absolute;
       color: var(--sapButton_Emphasized_TextColor);
       background-color: var(--sapButton_Emphasized_Background);
@@ -70,7 +70,7 @@ $block: #{$fd-namespace}-avatar;
 
   &__icon {
     @include fd-reset();
-    @include fd-icon-element();
+    @include fd-icon-element-base();
   }
 
   // BLOCK MODIFIERS ************
@@ -145,7 +145,7 @@ $block: #{$fd-namespace}-avatar;
           left: map_get($size-set, "offset");
         }
 
-        @include fd-icon-element-sub-selector() {
+        @include fd-icon-selector() {
           font-size: map_get($size-set, "beforeFontSize");
         }
       }
