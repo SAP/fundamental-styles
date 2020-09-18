@@ -14,15 +14,8 @@ exports[`Storyshots Components/File Uploader After Selecting 1`] = `
     >
       
     
-      <label
-        class="fd-file-uploader__hidden"
-        for="browse_input1"
-      >
-        File upload
-      </label>
-      
-    
       <input
+        aria-label="File upload"
         autocomplete="off"
         class="fd-input fd-file-uploader__input"
         id="browse_input1"
@@ -99,15 +92,8 @@ exports[`Storyshots Components/File Uploader After Selecting 1`] = `
       >
         
       
-        <label
-          class="fd-file-uploader__hidden"
-          for="browse_input1-rtl"
-        >
-          File upload
-        </label>
-        
-      
         <input
+          aria-label="File upload"
           autocomplete="off"
           class="fd-input fd-file-uploader__input"
           id="browse_input1-rtl"
@@ -173,15 +159,8 @@ exports[`Storyshots Components/File Uploader Compact 1`] = `
     >
       
     
-      <label
-        class="fd-file-uploader__hidden"
-        for="browse_input2"
-      >
-        File upload
-      </label>
-      
-    
       <input
+        aria-label="File upload"
         autocomplete="off"
         class="fd-input fd-input--compact fd-file-uploader__input"
         id="browse_input2"
@@ -256,15 +235,8 @@ exports[`Storyshots Components/File Uploader Compact 1`] = `
       >
         
       
-        <label
-          class="fd-file-uploader__hidden"
-          for="browse_input2"
-        >
-          File upload
-        </label>
-        
-      
         <input
+          aria-label="File upload"
           autocomplete="off"
           class="fd-input fd-input--compact fd-file-uploader__input"
           id="browse_input2-rtl"
@@ -328,15 +300,8 @@ exports[`Storyshots Components/File Uploader Default 1`] = `
     >
       
     
-      <label
-        class="fd-file-uploader__hidden"
-        for="browse_input1"
-      >
-        File upload
-      </label>
-      
-    
       <input
+        aria-label="File upload"
         autocomplete="off"
         class="fd-input fd-file-uploader__input"
         id="browse_input1"
@@ -411,15 +376,8 @@ exports[`Storyshots Components/File Uploader Default 1`] = `
       >
         
       
-        <label
-          class="fd-file-uploader__hidden"
-          for="browse_input1-rtl"
-        >
-          File upload
-        </label>
-        
-      
         <input
+          aria-label="File upload"
           autocomplete="off"
           class="fd-input fd-file-uploader__input"
           id="browse_input1-rtl"
