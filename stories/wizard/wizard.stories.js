@@ -46,56 +46,53 @@ The wizard can be used both in a full-screen layout and in the flexible column l
 
 ## Responsive paddings
 
-These modifier classes will add horizontal paddings to the content and can be applied on the <code>fd-wizard\\_\\_progress-bar</code> level and/or on the <code>fd-wizard\\_\\_content</code> level.
+These modifier classes will add horizontal paddings to the content and can be applied on the <code class="docs-code">fd-wizard\\_\\_progress-bar</code> level and/or on the <code class="docs-code">fd-wizard\\_\\_content</code> level.
 
 
-|  **rem** |  &nbsp;&nbsp;&nbsp;&nbsp;**min-width** |  &nbsp;&nbsp;&nbsp;&nbsp;**max width** |  &nbsp;&nbsp;&nbsp;&nbsp;**modifier class** |
+|  **rem** |  &nbsp;&nbsp;&nbsp;&nbsp;**Min-width** |  &nbsp;&nbsp;&nbsp;&nbsp;**Max-width** |  &nbsp;&nbsp;&nbsp;&nbsp;**Modifier class** |
 | :---- | :---------- | :---------- | :---------------------------------- |
-| 1rem | &nbsp;&nbsp;&nbsp;&nbsp;_n/a_ | &nbsp;&nbsp;&nbsp;&nbsp;599px | &nbsp;&nbsp;&nbsp;&nbsp;<code>fd-wizard\\_\\_progress-bar--s</code> / <code>fd-wizard\\_\\_content--s</code> |
-| 2rem | &nbsp;&nbsp;&nbsp;&nbsp;600px | &nbsp;&nbsp;&nbsp;&nbsp;1023px | &nbsp;&nbsp;&nbsp;&nbsp;<code>fd-wizard\\_\\_progress-bar--m</code> / <code>fd-wizard\\_\\_content--m</code> |
-| 2rem | &nbsp;&nbsp;&nbsp;&nbsp;1024px | &nbsp;&nbsp;&nbsp;&nbsp;1439px | &nbsp;&nbsp;&nbsp;&nbsp;<code>fd-wizard\\_\\_progress-bar--lg</code> / <code>fd-wizard\\_\\_content--lg</code> |
-| 3rem | &nbsp;&nbsp;&nbsp;&nbsp;1440px | &nbsp;&nbsp;&nbsp;&nbsp;_n/a_ | &nbsp;&nbsp;&nbsp;&nbsp;<code>fd-wizard\\_\\_progress-bar--xl</code> / <code>fd-wizard\\_\\_content--xl</code> |
-
+| 1rem | &nbsp;&nbsp;&nbsp;&nbsp;_n/a_ | &nbsp;&nbsp;&nbsp;&nbsp;599px | &nbsp;&nbsp;&nbsp;&nbsp;<code class="docs-code">fd-wizard\\_\\_progress-bar--s</code> / <code class="docs-code">fd-wizard\\_\\_content--s</code> |
+| 2rem | &nbsp;&nbsp;&nbsp;&nbsp;600px | &nbsp;&nbsp;&nbsp;&nbsp;1023px | &nbsp;&nbsp;&nbsp;&nbsp;<code class="docs-code">fd-wizard\\_\\_progress-bar--m</code> / <code class="docs-code">fd-wizard\\_\\_content--m</code> |
+| 2rem | &nbsp;&nbsp;&nbsp;&nbsp;1024px | &nbsp;&nbsp;&nbsp;&nbsp;1439px | &nbsp;&nbsp;&nbsp;&nbsp;<code class="docs-code">fd-wizard\\_\\_progress-bar--lg</code> / <code class="docs-code">fd-wizard\\_\\_content--lg</code> |
+| 3rem | &nbsp;&nbsp;&nbsp;&nbsp;1440px | &nbsp;&nbsp;&nbsp;&nbsp;_n/a_ | &nbsp;&nbsp;&nbsp;&nbsp;<code class="docs-code">fd-wizard\\_\\_progress-bar--xl</code> / <code class="docs-code">fd-wizard\\_\\_content--xl</code> |
 
 ## Modifiers
 
 | **Steps** | &nbsp;&nbsp;&nbsp;&nbsp; **Modifier class** |
 | :---- | :-------------- |
-| Completed     |  &nbsp;&nbsp;&nbsp;&nbsp; <code>fd-wizard\\_\\_step--completed</code>     |
-| Current       |  &nbsp;&nbsp;&nbsp;&nbsp; <code>fd-wizard\\_\\_step--current</code>       |
-| Upcoming      |  &nbsp;&nbsp;&nbsp;&nbsp; <code>fd-wizard\\_\\_step--upcoming</code>      |
-| No-label      |  &nbsp;&nbsp;&nbsp;&nbsp; <code>fd-wizard\\_\\_step--no-label</code>      |
-| Stacked       |  &nbsp;&nbsp;&nbsp;&nbsp; <code>fd-wizard\\_\\_step--stacked</code>       |
-| Stacked on top   |  &nbsp;&nbsp;&nbsp;&nbsp; <code>fd-wizard\\_\\_step--stacked-top</code>   |
-| Active        |  &nbsp;&nbsp;&nbsp;&nbsp; <code>fd-wizard\\_\\_step--active</code>        |
+| Completed     |  &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_step--completed</code>     |
+| Current       |  &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_step--current</code>       |
+| Upcoming      |  &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_step--upcoming</code>      |
+| No-label      |  &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_step--no-label</code>      |
+| Stacked       |  &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_step--stacked</code>       |
+| Stacked on top   |  &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_step--stacked-top</code>   |
+| Active        |  &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_step--active</code>        |
 
 ## Connector types
 
 There are multiple connector types that can be displayed depending on the steps involved.
 
-
 | **Connector type** | &nbsp;&nbsp; &nbsp;&nbsp; **Connection** | &nbsp;&nbsp; &nbsp;&nbsp; **Class/Modifier** |
 | :---- | :-------------- | :-------------- |
-| Default | &nbsp;&nbsp; &nbsp;&nbsp; Inactive step (or Active step) to Inactive step |  &nbsp;&nbsp; &nbsp;&nbsp; <code>fd-wizard\\_\\_connector</code> |
-| Active | &nbsp;&nbsp; &nbsp;&nbsp; Active step to Active step | &nbsp;&nbsp; &nbsp;&nbsp; <code>fd-wizard\\_\\_connector--active</code> |
-| Branching | &nbsp;&nbsp; &nbsp;&nbsp; Branching step to Inactive step or no step | &nbsp;&nbsp; &nbsp;&nbsp; <code>fd-wizard\\_\\_connector--branching</code> |
+| Default | &nbsp;&nbsp; &nbsp;&nbsp; Inactive step (or Active step) to Inactive step |  &nbsp;&nbsp; &nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_connector</code> |
+| Active | &nbsp;&nbsp; &nbsp;&nbsp; Active step to Active step | &nbsp;&nbsp; &nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_connector--active</code> |
+| Branching | &nbsp;&nbsp; &nbsp;&nbsp; Branching step to Inactive step or no step | &nbsp;&nbsp; &nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_connector--branching</code> |
 
 ## Truncation rules
 
 | **Type** | &nbsp;&nbsp; &nbsp;&nbsp; **Max lines** | &nbsp;&nbsp; &nbsp;&nbsp; **Modifier class** |
 | :---- | :-------------- | :-------------- |
 | Label | &nbsp;&nbsp; &nbsp;&nbsp; 2 |  &nbsp;&nbsp; &nbsp;&nbsp; Text truncates when it exceeds the maximum space available. When a step has optional text, the label can only accommodate 1 line. |
-| Label with optional text | &nbsp;&nbsp; &nbsp;&nbsp; 1 | &nbsp;&nbsp; &nbsp;&nbsp; Text truncates when it exceeds the maximum space available. The <code>fd-wizard\\_\\_label-container--optional</code> modifier class is applied together with <code>fd-wizard\\_\\_label-container</code>. |
+| Label with optional text | &nbsp;&nbsp; &nbsp;&nbsp; 1 | &nbsp;&nbsp; &nbsp;&nbsp; Text truncates when it exceeds the maximum space available. The <code class="docs-code">fd-wizard\\_\\_label-container--optional</code> modifier class is applied together with <code class="docs-code">fd-wizard\\_\\_label-container</code>. |
 | Optional text | &nbsp;&nbsp; &nbsp;&nbsp; 1 | &nbsp;&nbsp; &nbsp;&nbsp; Text truncates when it exceeds the maximum space available. |
-
 
 ## Content background
 
 | **Type** | &nbsp;&nbsp; &nbsp;&nbsp; **Modifier class** |
 | :---- | :-------------- |
-| Solid |  &nbsp;&nbsp; &nbsp;&nbsp; <code>fd-wizard\\_\\_content--solid</code> |
-| List | &nbsp;&nbsp; &nbsp;&nbsp; <code>fd-wizard\\_\\_content--list</code> |
-| Transparent | &nbsp;&nbsp; &nbsp;&nbsp; <code>fd-wizard\\_\\_content--transparent</code> |
+| Solid |  &nbsp;&nbsp; &nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_content--solid</code> |
+| List | &nbsp;&nbsp; &nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_content--list</code> |
+| Transparent | &nbsp;&nbsp; &nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_content--transparent</code> |
 
 `,
         docs: { iframeHeight: 400 },
@@ -104,7 +101,7 @@ There are multiple connector types that can be displayed depending on the steps 
 };
 
 export const defaultExample = () => `
-<div class="fd-wizard">
+<section class="fd-wizard">
     <nav class="fd-wizard__navigation" aria-label="Wizard Navigation 1">
         <ul class="fd-wizard__progress-bar">
             <li class="fd-wizard__step fd-wizard__step--completed">
@@ -172,7 +169,7 @@ export const defaultExample = () => `
             </div>
         </div>
     </footer>
-</div>
+</section>
 `;
 
 defaultExample.storyName = 'Default';
@@ -184,11 +181,8 @@ defaultExample.parameters = {
     }
 };
 
-
-
-
 export const customized = () => `
-<div class="fd-wizard">
+<section class="fd-wizard">
     <nav class="fd-wizard__navigation" aria-label="Wizard Navigation 2">
         <ul class="fd-wizard__progress-bar fd-wizard__progress-bar--m">
             <li class="fd-wizard__step fd-wizard__step--completed">
@@ -245,7 +239,7 @@ export const customized = () => `
             </div>
         </div>
     </footer>
-</div>
+</section>
 `;
 
 customized.parameters = {
@@ -264,10 +258,8 @@ customized.parameters = {
     }
 };
 
-
 export const responsive = () => `
-
-<div class="fd-wizard">
+<section class="fd-wizard">
     <nav class="fd-wizard__navigation" aria-label="Wizard Navigation 3">
         <ul class="fd-wizard__progress-bar fd-wizard__progress-bar--xl">
             <li class="fd-wizard__step fd-wizard__step--completed">
@@ -344,11 +336,11 @@ export const responsive = () => `
             </div>
         </div>
     </footer>
-</div>
+</section>
 
 <br><br>
 
-<div class="fd-wizard">
+<section class="fd-wizard">
     <nav class="fd-wizard__navigation" aria-label="Wizard Navigation 4">
         <ul class="fd-wizard__progress-bar fd-wizard__progress-bar--xl">
             <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--no-label">
@@ -448,11 +440,11 @@ export const responsive = () => `
             </div>
         </div>
     </footer>
-</div>
+</section>
 
 <br><br>
 
-<div class="fd-wizard">
+<section class="fd-wizard">
     <nav class="fd-wizard__navigation" aria-label="Wizard Navigation 5">
         <ul class="fd-wizard__progress-bar fd-wizard__progress-bar--xl">
             <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--stacked">
@@ -589,7 +581,7 @@ export const responsive = () => `
             </div>
         </div>
     </footer>
-</div>
+</section>
 `;
 
 responsive.parameters = {
@@ -606,7 +598,7 @@ export const mobile = () => `
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
     <div style="margin: 1rem;">
         <h4>Next Step button after content</h4>
-        <div class="fd-wizard" style="max-width: 300px;">
+        <section class="fd-wizard" style="max-width: 300px;">
             <nav class="fd-wizard__navigation" aria-label="Wizard Navigation 6">
                 <ul class="fd-wizard__progress-bar fd-wizard__progress-bar--s">
                     <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--stacked">
@@ -743,12 +735,12 @@ export const mobile = () => `
                     </div>
                 </div>
             </footer>
-        </div>
+        </section>
     </div>
 
     <div style="margin: 1rem;">
         <h4>Next Step button above the floating footer</h4>
-        <div class="fd-wizard" style="max-width: 300px;">
+        <section class="fd-wizard" style="max-width: 300px;">
             <nav class="fd-wizard__navigation" aria-label="Wizard Navigation 7">
                 <ul class="fd-wizard__progress-bar fd-wizard__progress-bar--s">
                     <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--stacked">
@@ -883,7 +875,7 @@ export const mobile = () => `
                     </div>
                 </div>
             </footer>
-        </div>
+        </section>
     </div>
 </div>
 `;

@@ -19,8 +19,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
 <section>
   
 
-
-  <div
+  <section
     class="fd-wizard"
   >
     
@@ -369,7 +368,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
     </footer>
     
 
-  </div>
+  </section>
   
 
 
@@ -378,7 +377,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
   
 
 
-  <div
+  <section
     class="fd-wizard"
   >
     
@@ -838,7 +837,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
     </footer>
     
 
-  </div>
+  </section>
   
 
 
@@ -847,7 +846,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
   
 
 
-  <div
+  <section
     class="fd-wizard"
   >
     
@@ -1439,7 +1438,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
     </footer>
     
 
-  </div>
+  </section>
   
 
 </section>
