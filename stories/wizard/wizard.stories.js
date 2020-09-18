@@ -8,7 +8,6 @@ export default {
         description: `The wizard guides a user through a long or unfamiliar task by dividing it into sections, revealing information in an easy and digestible way. 
 It consists of a walkthrough screen, where the user is prompted to input required information and upon completing a section, the next sections subsequently follow in a prescribed order; and the summary page, where the form is displayed in read-only mode for assessment and final submission.
 
-
 ## Usage
 
 **Use the wizard if:**
@@ -46,53 +45,53 @@ The wizard can be used both in a full-screen layout and in the flexible column l
 
 ## Responsive paddings
 
-These modifier classes will add horizontal paddings to the content and can be applied on the <code class="docs-code">fd-wizard\\_\\_progress-bar</code> level and/or on the <code class="docs-code">fd-wizard\\_\\_content</code> level.
+These modifier classes will add horizontal paddings to the content and can be applied on the <code class="docs-code-grey">fd-wizard\\_\\_progress-bar</code> level and/or on the <code class="docs-code-grey">fd-wizard\\_\\_content</code> level.
 
 
-|  **rem** |  &nbsp;&nbsp;&nbsp;&nbsp;**Min-width** |  &nbsp;&nbsp;&nbsp;&nbsp;**Max-width** |  &nbsp;&nbsp;&nbsp;&nbsp;**Modifier class** |
+|  **rem** |  <div style="margin-left: 2rem;"> **Min-width** </div> |  <div style="margin-left: 2rem;">**Max-width** </div> |  <div style="margin-left: 2rem;"> **Modifier class** </div> |
 | :---- | :---------- | :---------- | :---------------------------------- |
-| 1rem | &nbsp;&nbsp;&nbsp;&nbsp;_n/a_ | &nbsp;&nbsp;&nbsp;&nbsp;599px | &nbsp;&nbsp;&nbsp;&nbsp;<code class="docs-code">fd-wizard\\_\\_progress-bar--s</code> / <code class="docs-code">fd-wizard\\_\\_content--s</code> |
-| 2rem | &nbsp;&nbsp;&nbsp;&nbsp;600px | &nbsp;&nbsp;&nbsp;&nbsp;1023px | &nbsp;&nbsp;&nbsp;&nbsp;<code class="docs-code">fd-wizard\\_\\_progress-bar--m</code> / <code class="docs-code">fd-wizard\\_\\_content--m</code> |
-| 2rem | &nbsp;&nbsp;&nbsp;&nbsp;1024px | &nbsp;&nbsp;&nbsp;&nbsp;1439px | &nbsp;&nbsp;&nbsp;&nbsp;<code class="docs-code">fd-wizard\\_\\_progress-bar--lg</code> / <code class="docs-code">fd-wizard\\_\\_content--lg</code> |
-| 3rem | &nbsp;&nbsp;&nbsp;&nbsp;1440px | &nbsp;&nbsp;&nbsp;&nbsp;_n/a_ | &nbsp;&nbsp;&nbsp;&nbsp;<code class="docs-code">fd-wizard\\_\\_progress-bar--xl</code> / <code class="docs-code">fd-wizard\\_\\_content--xl</code> |
+| 1rem | <span style="margin-left: 2rem;">_n/a_</span> | <span style="margin-left: 2rem;">599px</span> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_progress-bar--s</code> / <code class="docs-code">fd-wizard\\_\\_content--s</code> |
+| 2rem | <span style="margin-left: 2rem;">600px</span> | <span style="margin-left: 2rem;">1023px</span> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_progress-bar--m</code> / <code class="docs-code">fd-wizard\\_\\_content--m</code> |
+| 2rem | <span style="margin-left: 2rem;">1024px</span> | <span style="margin-left: 2rem;">1439px</span> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_progress-bar--lg</code> / <code class="docs-code">fd-wizard\\_\\_content--lg</code> |
+| 3rem | <span style="margin-left: 2rem;">1440px</span> | <span style="margin-left: 2rem;">_n/a_</span> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_progress-bar--xl</code> / <code class="docs-code">fd-wizard\\_\\_content--xl</code> |
 
 ## Modifiers
 
-| **Steps** | &nbsp;&nbsp;&nbsp;&nbsp; **Modifier class** |
+| **Steps** | <div style="margin-left: 2rem;"> **Modifier class** </div> |
 | :---- | :-------------- |
-| Completed     |  &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_step--completed</code>     |
-| Current       |  &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_step--current</code>       |
-| Upcoming      |  &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_step--upcoming</code>      |
-| No-label      |  &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_step--no-label</code>      |
-| Stacked       |  &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_step--stacked</code>       |
-| Stacked on top   |  &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_step--stacked-top</code>   |
-| Active        |  &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_step--active</code>        |
+| Completed | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_step--completed</code>     |
+| Current | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_step--current</code>       |
+| Upcoming | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_step--upcoming</code>      |
+| No-label | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_step--no-label</code>      |
+| Stacked | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_step--stacked</code>       |
+| Stacked on top | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_step--stacked-top</code>   |
+| Active | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_step--active</code>        |
 
 ## Connector types
 
 There are multiple connector types that can be displayed depending on the steps involved.
 
-| **Connector type** | &nbsp;&nbsp; &nbsp;&nbsp; **Connection** | &nbsp;&nbsp; &nbsp;&nbsp; **Class/Modifier** |
+| **Connector type** |<div style="margin-left: 2rem;"> **Connection** </div> | <div style="margin-left: 2rem;"> **Class/Modifier** </div> |
 | :---- | :-------------- | :-------------- |
-| Default | &nbsp;&nbsp; &nbsp;&nbsp; Inactive step (or Active step) to Inactive step |  &nbsp;&nbsp; &nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_connector</code> |
-| Active | &nbsp;&nbsp; &nbsp;&nbsp; Active step to Active step | &nbsp;&nbsp; &nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_connector--active</code> |
-| Branching | &nbsp;&nbsp; &nbsp;&nbsp; Branching step to Inactive step or no step | &nbsp;&nbsp; &nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_connector--branching</code> |
+| Default | <span style="margin-left: 2rem;"> Inactive step (or Active step) to Inactive step </span> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_connector</code> |
+| Active | <span style="margin-left: 2rem;"> Active step to Active step </span> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_connector--active</code> |
+| Branching | <span style="margin-left: 2rem;"> Branching step to Inactive step or no step </span> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_connector--branching</code> |
 
 ## Truncation rules
 
-| **Type** | &nbsp;&nbsp; &nbsp;&nbsp; **Max lines** | &nbsp;&nbsp; &nbsp;&nbsp; **Modifier class** |
-| :---- | :-------------- | :-------------- |
-| Label | &nbsp;&nbsp; &nbsp;&nbsp; 2 |  &nbsp;&nbsp; &nbsp;&nbsp; Text truncates when it exceeds the maximum space available. When a step has optional text, the label can only accommodate 1 line. |
-| Label with optional text | &nbsp;&nbsp; &nbsp;&nbsp; 1 | &nbsp;&nbsp; &nbsp;&nbsp; Text truncates when it exceeds the maximum space available. The <code class="docs-code">fd-wizard\\_\\_label-container--optional</code> modifier class is applied together with <code class="docs-code">fd-wizard\\_\\_label-container</code>. |
-| Optional text | &nbsp;&nbsp; &nbsp;&nbsp; 1 | &nbsp;&nbsp; &nbsp;&nbsp; Text truncates when it exceeds the maximum space available. |
+| **Type** |  <div style="min-width: 6rem; margin-left: 2rem;">**Max lines**</div>  | <div style="margin-left: 2rem;"> **Modifier class** </div> |
+| :---- | :---------------- | :-------------------------- |
+| Label | <span style="margin-left: 2rem;">2</span> |  <span style="margin-left: 2rem;"> Text truncates when it exceeds the maximum space available. When a step has optional text, the label can only accommodate 1 line. </span> |
+| Label with optional text | <span style="margin-left: 2rem;">1</span> | <span style="margin-left: 2rem;">Text truncates when it exceeds the maximum space available. The <code class="docs-code">fd-wizard\\_\\_label-container--optional</code> modifier class is applied together with <code class="docs-code">fd-wizard\\_\\_label-container</code>.</span> |
+| Optional text | <span style="margin-left: 2rem;">2</span> | <span style="margin-left: 2rem;">Text truncates when it exceeds the maximum space available.</span> |
 
 ## Content background
 
-| **Type** | &nbsp;&nbsp; &nbsp;&nbsp; **Modifier class** |
+| **Type** | <span style="margin-left: 2rem;">**Modifier class**</span> |
 | :---- | :-------------- |
-| Solid |  &nbsp;&nbsp; &nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_content--solid</code> |
-| List | &nbsp;&nbsp; &nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_content--list</code> |
-| Transparent | &nbsp;&nbsp; &nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_content--transparent</code> |
+| Solid |  <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_content--solid</code> |
+| List | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_content--list</code> |
+| Transparent | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_content--transparent</code> |
 
 `,
         docs: { iframeHeight: 400 },
@@ -247,13 +246,13 @@ customized.parameters = {
         iframeHeight: 950,
         storyDescription: `The wizard component can be customized with modifier classes. For instance, the example below has several modified elements:
 
-| **Element** | &nbsp;&nbsp;&nbsp;&nbsp; **Modifier class** | &nbsp;&nbsp;&nbsp;&nbsp; **Modification** |
+| **Element** | <div style="margin-left: 2rem;"> **Modifier class** </div> | <div style="margin-left: 2rem;"> **Modification** </div> |
 | :---- | :---- | :-------------- |
-| <code class="docs-code">fd-wizard\\_\\_progress-bar</code> | &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_progress-bar--m</code> | &nbsp;&nbsp;&nbsp;&nbsp; Added responsive padding |
-| <code class="docs-code">fd-wizard\\_\\_content</code> | &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_content--m</code> | &nbsp;&nbsp;&nbsp;&nbsp; Added responsive padding |
-| <code class="docs-code">fd-bar--page</code> | &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-bar--page-m_l</code> | &nbsp;&nbsp;&nbsp;&nbsp; Added responsive padding |
-| <code class="docs-code">fd-wizard\\_\\_content</code> | &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_content--list</code> | &nbsp;&nbsp;&nbsp;&nbsp; The background of the wizard content is set to list |
-| <code class="docs-code">fd-wizard\\_\\_connector</code> | &nbsp;&nbsp;&nbsp;&nbsp; <code class="docs-code">fd-wizard\\_\\_connector--branching</code> | &nbsp;&nbsp;&nbsp;&nbsp; Adds a branching step connector |
+| <code class="docs-code">fd-wizard\\_\\_progress-bar</code> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_progress-bar--m</code> | <span style="margin-left: 2rem;"> Added responsive padding </span> |
+| <code class="docs-code">fd-wizard\\_\\_content</code> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_content--m</code> | <span style="margin-left: 2rem;"> Added responsive padding </span> |
+| <code class="docs-code">fd-bar--page</code> | <code class="docs-code" style="margin-left: 2rem;">fd-bar--page-m_l</code> | <span style="margin-left: 2rem;"> Added responsive padding </span> |
+| <code class="docs-code">fd-wizard\\_\\_content</code> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_content--list</code> | <span style="margin-left: 2rem;"> The background of the wizard content is set to list </span> |
+| <code class="docs-code">fd-wizard\\_\\_connector</code> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_connector--branching</code> | <span style="margin-left: 2rem;"> Adds a branching step connector </span> |
 `
     }
 };
