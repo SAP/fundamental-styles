@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Dynamic Page Layout Desktop mode 1`] = `
+exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
 <section>
   
     
@@ -1240,7 +1240,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Dynamic Page Layout Mobile mode 1`] = `
+exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
 <section>
   
 
@@ -2870,7 +2870,7 @@ exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Dynamic Page Layout Tablet mode 1`] = `
+exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
 <section>
   
     

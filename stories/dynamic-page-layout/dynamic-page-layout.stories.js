@@ -20,12 +20,9 @@ export default {
 
 **Do not use the dynamic page layout if:**
 
-- You are planning to use SAP Fiori elements, such as the list report, analytical list page, overview page, or object page. These floorplans already incorporate the dynamic page layout.
-- You want to implement an initial page or object page floorplan.
 - You only need to display a small amount of information. In this case, use a **Dialog** instead. If you can’t avoid using the dynamic page, use letterboxing to mitigate the issue.
 
 
-    
 ## Structure
 **Dynamic page consists of the following elements:**
 
@@ -166,22 +163,29 @@ export const desktop = () => `
     <br /><br />
 `;
 
-desktop.storyName = 'Desktop mode';
+desktop.storyName = 'Desktop';
 desktop.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: `The dynamic page displays on desktop screens with the L, XL, and XXL sizes.
-        **Tabs** can be optionally added as an extension of the header area with the tab content being a part of the page content. 
-        Please note the difference in the way tabs are used. Tabs must use \`fd-dynamic-page__tabs\` along with the size modifiers(--m, --l, --xl or --s) and
-        \`--add-shadow\` at the \`<ul>\` level, and to ensure the correct box-shadow styling, should also add \`--overflow\` modifier at the parent level.
-        To optimize dynamic page for desktop, add these modifier classes to the following elements:
+        storyDescription: `The dynamic page displays on desktop screens with the L, XL, and XXL sizes. To optimize dynamic page for desktop, add these modifier classes to the following elements:
         
-| Element | Modifier class(use \`--l\`/\`--xl\`) |
+| Element | Modifier class |
 | ----------------: | :------------ |
 | Title Area | \`fd-dynamic-page__title-area--xl\` |
 | Header | \`fd-dynamic-page__header--xl\` |
 | Tabs | \`fd-dynamic-page__tabs--xl\` |
 | Content | \`fd-dynamic-page__content--xl\` |
+
+Note: The XL size is presented in this table, however the L and XXL size works as well.
+
+It is also possible to add Tabs to the header area, which helps divide the page content. To display tabs, add the fd-dynamic-page__tabs class along with any of these size modifiers:
+
+- \`--s\`
+- \`--m\`
+- \`--l\`
+- \`--xl\`
+
+Also add the modifier classes --add-shadow to the unordered list, and --overflow at the parent level for the box-shadow styling.
 `
     }
 };
@@ -301,7 +305,7 @@ export const tablet = () => `
     <br /><br />
 `;
 
-tablet.storyName = 'Tablet mode';
+tablet.storyName = 'Tablet';
 tablet.parameters = {
     docs: {
         iframeHeight: 150,
@@ -603,7 +607,7 @@ export const mobile = () => `
 <br /><br />
 `;
 
-mobile.storyName = 'Mobile mode';
+mobile.storyName = 'Mobile';
 mobile.parameters = {
     docs: {
         iframeHeight: 150,

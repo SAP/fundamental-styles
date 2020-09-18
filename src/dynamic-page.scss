@@ -66,6 +66,7 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-hover() {
       background: var(--sapObjectHeader_Hover_Background);
       border-bottom: var(--fdDynamicPage_Hover_Border_Bottom);
+      cursor: pointer;
     }
 
     &--s {
