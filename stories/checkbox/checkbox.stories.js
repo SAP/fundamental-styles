@@ -21,7 +21,8 @@ Do not use the checkbox control if:
 - The user needs to choose multiple options from a large list. Use a multi-combo box instead.
 - The user can choose only one option from a list. Use a radio buttons, a select, or a list instead.
 - The user needs to perform instantaneous actions that do not need reviewing or confirming. Consider using the switch control instead.
-- There is not enough space available on the screen. Use the combo box control instead.`,
+- There is not enough space available on the screen. Use the combo box control instead.
+test`,
         tags: ['f3', 'a11y', 'theme'] }
 };
 
