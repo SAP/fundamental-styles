@@ -5,24 +5,29 @@ import '../../dist/fieldset.css';
 export default {
     title: 'Components/Forms/Checkbox',
     parameters: {
-        description: `
-A checkbox lets the user set a binary value (such as “true/false”). When the user clicks or taps the checkbox, it toggles between checked and unchecked. Checked means that the state described by the checkbox text applies, or that the item has been chosen.
-With checkboxes, all options are visible and the user can make one or more selections. This component can be set disabled and also displayed in a row.
+        description: `A checkbox lets the user set a binary value such as “true/false”. When the user selects the checkbox, it toggles between:
 
-Use the checkbox if:
+- **Checked**: the state described by the checkbox text applies, or that the item has been chosen.
+- **Un-checked**: the state described by the checkbox is not applied.
+- **Tri-state**: a state that indicates it is neither checked nor unchecked. The main purpose of the tri-state is to represent a mixed selection of states of dependent input fields. If some (but not all) of the dependent fields are selected, the checkbox shows a partially selected state. This is only a visual state and can’t be achieved by a direct user interaction.
+
+Note: With checkboxes, all options are visible, and the user can make one or more selections.  This component can be set to disabled as well as displayed in a row.
+
+##Usage
+**Use the checkbox if:**
 
 - Only one option can be selected or deselected, for example to accept terms of use. Use it only if the meaning is obvious.
 - A group or a list of options can be selected independently of each other.
-- All available options need to be displayed right away without any user interaction.
-- An intermediate selection state (Tri-State) is required when multiple sub-options are grouped under a parent option. The Tri-State will represent that multiple (but not all) sub-options are selected in the list.
+- the options are displayed right away without any user interaction.
+- An intermediate selection state (tri-state) is required when multiple sub-options are grouped under a parent option. The tri-state will represent that multiple (but not all) sub-options are selected in the list.
 
-Do not use the checkbox control if:
+**Do not use the checkbox control if:**
 
-- The user needs to choose multiple options from a large list. Use a multi-combo box instead.
-- The user can choose only one option from a list. Use a radio buttons, a select, or a list instead.
-- The user needs to perform instantaneous actions that do not need reviewing or confirming. Consider using the switch control instead.
-- There is not enough space available on the screen. Use the combo box control instead.
-test`,
+- The user needs to choose multiple options from a large list. Use a **Combo Box Input** instead.
+- The user can choose only one option from a list. Use **Radio Buttons**, a **Select**, or a **List** instead.
+- The user needs to perform instantaneous actions that do not need reviewing or confirming. Consider using a **Switch** instead.
+- There is not enough space available on the screen. Use a **Combo Box** instead.
+        `,
         tags: ['f3', 'a11y', 'theme'] }
 };
 
