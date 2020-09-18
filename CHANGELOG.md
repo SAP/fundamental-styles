@@ -2,6 +2,69 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.60](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.59...v0.12.0-rc.60) (2020-09-17)
+
+
+### Bug Fixes
+
+* Reset font-style on icons ([#1645](https://github.com/SAP/fundamental-styles/issues/1645)) ([be3bdd5](https://github.com/SAP/fundamental-styles/commit/be3bdd50e661f29de0ed3fd91b0b67f465c8c193))
+
+## [0.12.0-rc.59](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.58...v0.12.0-rc.59) (2020-09-17)
+
+## [0.12.0-rc.58](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.57...v0.12.0-rc.58) (2020-09-15)
+
+
+### Features
+
+* new Object Identifier component ([#1602](https://github.com/SAP/fundamental-styles/issues/1602)) ([6729fca](https://github.com/SAP/fundamental-styles/commit/6729fca23dfba8cd05dacf80e1fd81fcce3013fa))
+
+## [0.12.0-rc.57](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.56...v0.12.0-rc.57) (2020-09-15)
+
+## [0.12.0-rc.56](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.55...v0.12.0-rc.56) (2020-09-15)
+
+
+### Bug Fixes
+
+* remove unused rating indicator delta theming variables ([#1622](https://github.com/SAP/fundamental-styles/issues/1622)) ([351ce71](https://github.com/SAP/fundamental-styles/commit/351ce710bf6dcae6c5c96891cab1bb819d494e1f))
+
+## [0.12.0-rc.55](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.54...v0.12.0-rc.55) (2020-09-14)
+
+
+### Features
+
+* introduce Rating Indicator component ([#1465](https://github.com/SAP/fundamental-styles/issues/1465)) ([caba995](https://github.com/SAP/fundamental-styles/commit/caba995ca09f017e526c9fceb173a9465b3adc72))
+
+## [0.12.0-rc.54](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.53...v0.12.0-rc.54) (2020-09-14)
+
+## [0.12.0-rc.53](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.52...v0.12.0-rc.53) (2020-09-14)
+
+## [0.12.0-rc.52](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.51...v0.12.0-rc.52) (2020-09-14)
+
+## [0.12.0-rc.51](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.50...v0.12.0-rc.51) (2020-09-11)
+
+## [0.12.0-rc.50](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.49...v0.12.0-rc.50) (2020-09-11)
+
+## [0.12.0-rc.49](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.48...v0.12.0-rc.49) (2020-09-11)
+
+
+### Features
+
+* new component Action Sheet ([#1578](https://github.com/SAP/fundamental-styles/issues/1578)) ([c4adce8](https://github.com/SAP/fundamental-styles/commit/c4adce8ea0b56f069926b0447fd082320bf0080c))
+
+## [0.12.0-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.47...v0.12.0-rc.48) (2020-09-11)
+
+
+### Bug Fixes
+
+* Fiori 3 shellbar margin ([#1591](https://github.com/SAP/fundamental-styles/issues/1591)) ([4c49bc3](https://github.com/SAP/fundamental-styles/commit/4c49bc3808f0884c72612a617ffd11d3e4ebf0fa))
+
+## [0.12.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.46...v0.12.0-rc.47) (2020-09-11)
+
+
+### Bug Fixes
+
+* Add spacing for list selection ([#1569](https://github.com/SAP/fundamental-styles/issues/1569)) ([c06910d](https://github.com/SAP/fundamental-styles/commit/c06910d7d9864b168e88943c802ba1302bb10988))
+
 ## [0.12.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.45...v0.12.0-rc.46) (2020-09-10)
 
 ## [0.12.0-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.44...v0.12.0-rc.45) (2020-09-09)

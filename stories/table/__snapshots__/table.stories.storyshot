@@ -891,6 +891,11 @@ exports[`Storyshots Components/Table Focusable Rows 1`] = `
 </section>
 `;
 
+exports[`Storyshots Components/Table Grid Table 1`] = `
+
+
+`;
+
 exports[`Storyshots Components/Table Interactive Table With Hoverable and Activable Cells and Rows 1`] = `
 <section>
   

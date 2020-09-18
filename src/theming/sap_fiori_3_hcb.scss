@@ -1,3 +1,14 @@
 :root {
   --sapInverted_Object_Border_Width: 0.0625rem;
+  --sapOverlay_Background_Opacity: 0.8;
+
+  /* Rating Indicator */
+  // default mode
+  --sapRating_Indicator_Selected_Hover_Opacity: 1;
+  // Display Only mode
+  --sapRating_Indicator_Display_Only_Selected_Color: var(--sapContent_IconColor);
+  // Disabled mode
+  --sapRating_Indicator_Disabled_Selected_Color: var(--sapContent_DisabledTextColor);
+  --sapRating_Indicator_Disabled_Unselected_Color: var(--sapContent_DisabledTextColor);
+  --sapRating_Indicator_Disabled_Control_Opacity: 1;
 }

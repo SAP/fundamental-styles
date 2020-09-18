@@ -382,3 +382,22 @@
   min-height: $height;
   max-height: $height;
 }
+
+@mixin fd-icon-selector() {
+  [class*="sap-icon"],
+  &[class*="sap-icon"] {
+    @content;
+  }
+}
+
+@mixin fd-icon-element-base {
+  @include fd-icon-selector() {
+    color: inherit;
+    background: inherit;
+    font-size: inherit;
+    border-radius: inherit;
+    line-height: 1;
+
+    @content;
+  }
+}

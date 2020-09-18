@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Menu Desktop and Tablet Modes 1`] = `
+exports[`Storyshots Components/Menu Default (tablet) 1`] = `
 <section>
      
 
   <label
     class="fd-form-label"
   >
-    Combobox Tablet Cozy Mode - default mode
+    Default menu (tablet)
   </label>
   <br />
   <br />
@@ -136,14 +136,17 @@ exports[`Storyshots Components/Menu Desktop and Tablet Modes 1`] = `
   </nav>
   
 
+</section>
+`;
 
-  <br />
-   
+exports[`Storyshots Components/Menu Desktop 1`] = `
+<section>
+     
 
   <label
     class="fd-form-label"
   >
-    Combobox Desktop Compact Mode
+    Desktop menu (compact)
   </label>
   <br />
   <br />
@@ -274,388 +277,12 @@ exports[`Storyshots Components/Menu Desktop and Tablet Modes 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Menu List different states 1`] = `
-<section>
-  
-
-  <div
-    style="width: 50%; display: inline-block"
-  >
-    
-    
-    <nav
-      aria-label="navbar"
-      class="fd-menu"
-    >
-      
-        
-      <ul
-        class="fd-menu__list"
-        role="menu"
-      >
-        
-            
-        <li
-          class="fd-menu__item"
-          role="presentation"
-        >
-          
-                
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
-          >
-            
-                    
-            <span
-              class="fd-menu__title"
-            >
-              Option 1- Regular
-            </span>
-            
-                
-          </a>
-          
-            
-        </li>
-        
-             
-        <li
-          class="fd-menu__item"
-          role="presentation"
-        >
-          
-                
-          <a
-            class="fd-menu__link is-hover"
-            href="#"
-            role="menuitem"
-          >
-            
-                    
-            <span
-              class="fd-menu__title"
-            >
-              Option 2 - Hover
-            </span>
-            
-                
-          </a>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-menu__item"
-          role="presentation"
-        >
-          
-                
-          <a
-            class="fd-menu__link is-active"
-            href="#"
-            role="menuitem"
-          >
-            
-                    
-            <span
-              class="fd-menu__title"
-            >
-              Option 3 - Active
-            </span>
-            
-                
-          </a>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-menu__item"
-          role="presentation"
-        >
-          
-                
-          <a
-            class="fd-menu__link is-selected"
-            href="#"
-            role="menuitem"
-          >
-            
-                    
-            <span
-              class="fd-menu__title"
-            >
-              Option 4 - Selected
-            </span>
-            
-                
-          </a>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-menu__item"
-          role="presentation"
-        >
-          
-                
-          <a
-            class="fd-menu__link is-selected is-hover"
-            href="#"
-            role="menuitem"
-          >
-            
-                    
-            <span
-              class="fd-menu__title"
-            >
-              Option 5 - Selected-Hover
-            </span>
-            
-                
-          </a>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-menu__item"
-          role="presentation"
-        >
-          
-                
-          <a
-            class="fd-menu__link is-disabled"
-            href="#"
-            role="menuitem"
-          >
-            
-                    
-            <span
-              class="fd-menu__title"
-            >
-              Option 6 - Disabled
-            </span>
-            
-                
-          </a>
-          
-            
-        </li>
-        
-        
-      </ul>
-      
-    
-    </nav>
-    
-
-  </div>
-  
-
-
-  <div
-    style="width: 49%; display: inline-block"
-  >
-    
-    
-    <nav
-      class="fd-menu"
-    >
-      
-        
-      <ul
-        class="fd-menu__list fd-menu__list--no-shadow"
-        role="menu"
-      >
-        
-            
-        <li
-          class="fd-menu__item"
-          role="presentation"
-        >
-          
-                
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
-          >
-            
-                    
-            <span
-              class="fd-menu__title"
-            >
-              Option 1
-            </span>
-            
-                
-          </a>
-                              
-            
-        </li>
-        
-            
-        <li
-          class="fd-menu__item"
-          role="presentation"
-        >
-                              
-                
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
-          >
-            
-                    
-            <span
-              class="fd-menu__title"
-            >
-              Option 2
-            </span>
-            
-                
-          </a>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-menu__item"
-          role="presentation"
-        >
-                              
-                
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
-          >
-            
-                    
-            <span
-              class="fd-menu__title"
-            >
-              Option 3
-            </span>
-            
-                
-          </a>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-menu__item"
-          role="presentation"
-        >
-                              
-                
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
-          >
-            
-                    
-            <span
-              class="fd-menu__title"
-            >
-              Option 4
-            </span>
-            
-                
-          </a>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-menu__item"
-          role="presentation"
-        >
-                              
-                
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
-          >
-            
-                    
-            <span
-              class="fd-menu__title"
-            >
-              Option 5
-            </span>
-            
-                
-          </a>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-menu__item"
-          role="presentation"
-        >
-                              
-                
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
-          >
-            
-                    
-            <span
-              class="fd-menu__title"
-            >
-              Option 6
-            </span>
-            
-                
-          </a>
-          
-            
-        </li>
-        
-        
-      </ul>
-      
-    
-    </nav>
-    
-
-  </div>
-  
-
-</section>
-`;
-
-exports[`Storyshots Components/Menu List with Icon 1`] = `
+exports[`Storyshots Components/Menu Icons 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Menu List with separated items 1`] = `
-
-
-`;
-
-exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
+exports[`Storyshots Components/Menu Mobile 1`] = `
 <section>
   
 
@@ -1162,7 +789,383 @@ exports[`Storyshots Components/Menu RTL 1`] = `
 
 `;
 
-exports[`Storyshots Components/Menu With Submenu 1`] = `
+exports[`Storyshots Components/Menu Separators 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Menu States 1`] = `
+<section>
+  
+
+  <div
+    style="width: 50%; display: inline-block"
+  >
+    
+    
+    <nav
+      aria-label="navbar"
+      class="fd-menu"
+    >
+      
+        
+      <ul
+        class="fd-menu__list"
+        role="menu"
+      >
+        
+            
+        <li
+          class="fd-menu__item"
+          role="presentation"
+        >
+          
+                
+          <a
+            class="fd-menu__link"
+            href="#"
+            role="menuitem"
+          >
+            
+                    
+            <span
+              class="fd-menu__title"
+            >
+              Option 1- Regular
+            </span>
+            
+                
+          </a>
+          
+            
+        </li>
+        
+             
+        <li
+          class="fd-menu__item"
+          role="presentation"
+        >
+          
+                
+          <a
+            class="fd-menu__link is-hover"
+            href="#"
+            role="menuitem"
+          >
+            
+                    
+            <span
+              class="fd-menu__title"
+            >
+              Option 2 - Hover
+            </span>
+            
+                
+          </a>
+          
+            
+        </li>
+        
+            
+        <li
+          class="fd-menu__item"
+          role="presentation"
+        >
+          
+                
+          <a
+            class="fd-menu__link is-active"
+            href="#"
+            role="menuitem"
+          >
+            
+                    
+            <span
+              class="fd-menu__title"
+            >
+              Option 3 - Active
+            </span>
+            
+                
+          </a>
+          
+            
+        </li>
+        
+            
+        <li
+          class="fd-menu__item"
+          role="presentation"
+        >
+          
+                
+          <a
+            class="fd-menu__link is-selected"
+            href="#"
+            role="menuitem"
+          >
+            
+                    
+            <span
+              class="fd-menu__title"
+            >
+              Option 4 - Selected
+            </span>
+            
+                
+          </a>
+          
+            
+        </li>
+        
+            
+        <li
+          class="fd-menu__item"
+          role="presentation"
+        >
+          
+                
+          <a
+            class="fd-menu__link is-selected is-hover"
+            href="#"
+            role="menuitem"
+          >
+            
+                    
+            <span
+              class="fd-menu__title"
+            >
+              Option 5 - Selected-Hover
+            </span>
+            
+                
+          </a>
+          
+            
+        </li>
+        
+            
+        <li
+          class="fd-menu__item"
+          role="presentation"
+        >
+          
+                
+          <a
+            class="fd-menu__link is-disabled"
+            href="#"
+            role="menuitem"
+          >
+            
+                    
+            <span
+              class="fd-menu__title"
+            >
+              Option 6 - Disabled
+            </span>
+            
+                
+          </a>
+          
+            
+        </li>
+        
+        
+      </ul>
+      
+    
+    </nav>
+    
+
+  </div>
+  
+
+
+  <div
+    style="width: 49%; display: inline-block"
+  >
+    
+    
+    <nav
+      class="fd-menu"
+    >
+      
+        
+      <ul
+        class="fd-menu__list fd-menu__list--no-shadow"
+        role="menu"
+      >
+        
+            
+        <li
+          class="fd-menu__item"
+          role="presentation"
+        >
+          
+                
+          <a
+            class="fd-menu__link"
+            href="#"
+            role="menuitem"
+          >
+            
+                    
+            <span
+              class="fd-menu__title"
+            >
+              Option 1
+            </span>
+            
+                
+          </a>
+                              
+            
+        </li>
+        
+            
+        <li
+          class="fd-menu__item"
+          role="presentation"
+        >
+                              
+                
+          <a
+            class="fd-menu__link"
+            href="#"
+            role="menuitem"
+          >
+            
+                    
+            <span
+              class="fd-menu__title"
+            >
+              Option 2
+            </span>
+            
+                
+          </a>
+          
+            
+        </li>
+        
+            
+        <li
+          class="fd-menu__item"
+          role="presentation"
+        >
+                              
+                
+          <a
+            class="fd-menu__link"
+            href="#"
+            role="menuitem"
+          >
+            
+                    
+            <span
+              class="fd-menu__title"
+            >
+              Option 3
+            </span>
+            
+                
+          </a>
+          
+            
+        </li>
+        
+            
+        <li
+          class="fd-menu__item"
+          role="presentation"
+        >
+                              
+                
+          <a
+            class="fd-menu__link"
+            href="#"
+            role="menuitem"
+          >
+            
+                    
+            <span
+              class="fd-menu__title"
+            >
+              Option 4
+            </span>
+            
+                
+          </a>
+          
+            
+        </li>
+        
+            
+        <li
+          class="fd-menu__item"
+          role="presentation"
+        >
+                              
+                
+          <a
+            class="fd-menu__link"
+            href="#"
+            role="menuitem"
+          >
+            
+                    
+            <span
+              class="fd-menu__title"
+            >
+              Option 5
+            </span>
+            
+                
+          </a>
+          
+            
+        </li>
+        
+            
+        <li
+          class="fd-menu__item"
+          role="presentation"
+        >
+                              
+                
+          <a
+            class="fd-menu__link"
+            href="#"
+            role="menuitem"
+          >
+            
+                    
+            <span
+              class="fd-menu__title"
+            >
+              Option 6
+            </span>
+            
+                
+          </a>
+          
+            
+        </li>
+        
+        
+      </ul>
+      
+    
+    </nav>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Menu Submenu 1`] = `
 
 
 `;

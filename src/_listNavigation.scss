@@ -24,26 +24,12 @@
       }
     }
 
-    // NAVIGATION + SELECTION + Compact
-    &.#{$block}--selection.#{$block}--compact {
-      .#{$block}__link {
-        @include padding-left-right($fd-list-selection-container-compact-width, $fd-list-item-padding-x);
-      }
-    }
-
     // NAVIGATION + SELECTION + Navigation Indication
     &.#{$block}--selection.#{$block}--navigation-indication {
       @include reset-list-item-paddings();
 
       .#{$block}__link {
         @include padding-left-right($fd-list-selection-container-width, 0);
-      }
-    }
-
-    // NAVIGATION + SELECTION + NAVIGATION INDICATION + Compact
-    &.#{$block}--selection.#{$block}--navigation-indication.#{$block}--compact {
-      .#{$block}__link {
-        @include padding-left-right($fd-list-selection-container-compact-width, 0);
       }
     }
 

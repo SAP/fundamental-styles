@@ -40,6 +40,7 @@ $block: #{$fd-namespace}-button;
 
 @mixin iconSize($size) {
   width: $size;
+  min-width: $size;
   height: $size;
   font-size: $size;
   line-height: $size;
@@ -114,14 +115,17 @@ $block: #{$fd-namespace}-button;
 @mixin textAlignment() {
   &-left {
     text-align: left;
+    justify-content: flex-start;
   }
 
   &-right {
     text-align: right;
+    justify-content: flex-end;
   }
 
   &-center {
     text-align: center;
+    justify-content: center;
   }
 }
 
@@ -239,6 +243,18 @@ $block: #{$fd-namespace}-button;
       margin-right: 0;
     }
 
+    @include fd-rtl() {
+      &:first-child {
+        margin-left: $fd-button-icon-margin;
+        margin-right: 0;
+      }
+
+      &:last-child {
+        margin-right: $fd-button-icon-margin;
+        margin-left: 0;
+      }
+    }
+
     & + [class*='sap-icon'] {
       margin-left: 0;
     }
@@ -274,6 +290,14 @@ $block: #{$fd-namespace}-button;
 
   &--menu {
     @include menu();
+  }
+
+  &--full-width {
+    width: 100%;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &--text-alignment {
