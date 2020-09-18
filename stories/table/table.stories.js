@@ -1662,36 +1662,36 @@ export const gridTable = () => `
     </caption>
     <thead class="fd-table__header">
         <tr class="fd-table__row">
-            <th class="fd-table__cell fd-table__cell--checkbox" tabindex="-1">
+            <th id="fd-4C0WYEyPqUS" class="fd-table__cell fd-table__cell--checkbox" tabindex="-1">
                 <div class="fd-form-item">
                     <input aria-checked="false" aria-label="Select all rows" class="fd-checkbox" id="fd-gEAc87vXrAR" type="checkbox" value="" tabindex="-1" /><label for="fd-gEAc87vXrAR" class="fd-form-label fd-checkbox__label"></label>
                 </div>
             </th>
-            <th class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+            <th id="fd-KWRjZC5EqkW" class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
                 Product Name
             </th>
-            <th class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+            <th id="fd-NPWFoAxBzUa" class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
                 Product ID
             </th>
-            <th class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+            <th id="fd-jtbiFXSC7Uy" class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
                 Quantity
             </th>
-            <th class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+            <th id="fd-mQuRgWM6D0u" class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
                 Status
             </th>
-            <th class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+            <th id="fd-hEzpEm5PMU2" class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
                 Supplier
             </th>
-            <th class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+            <th id="fd-NujEpyB6EkG" class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
                 Image
             </th>
-            <th class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+            <th id="fd-NMFoRAVbFky" class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
                 Heavy Weight
             </th>
-            <th class="fd-table__cell fd-table__cell--focusable" tabindex="0">
+            <th id="fd-OspcU6H7F0q" class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
                 Categories
             </th>
-            <th class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+            <th id="fd-nEac1Ko5K0e" class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
                 Delivery Date
             </th>
         </tr>
@@ -1708,7 +1708,7 @@ export const gridTable = () => `
                 <span>Notebook Basic 15</span>
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <input class="fd-input" name="Notebook Basic 15" type="text" value="HT-1000" tabindex="-1" />
+                <input aria-labelledby="fd-NPWFoAxBzUa" class="fd-input" name="Notebook Basic 15" type="text" value="HT-1000" tabindex="-1" />
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
                 <span>10</span>
@@ -1720,7 +1720,7 @@ export const gridTable = () => `
                 <div class="fd-form-item">
                     <div class="fd-popover">
                         <div class="fd-popover__control">
-                            <div class="fd-select" role="combobox" tabindex="-1" aria-controls="fd-tdEfCXd9Rt5" aria-expanded="false" aria-haspopup="listbox">
+                            <div class="fd-select" role="combobox" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
                                 <div class="fd-select__control">
                                     <span class="fd-select__text-content">Very Best Screens</span>
                                     <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
@@ -1739,13 +1739,13 @@ export const gridTable = () => `
                 </div>
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <input class="fd-input" type="text" value="" tabindex="-1" />
+                <input aria-labelledby="fd-OspcU6H7F0q" class="fd-input" type="text" value="" tabindex="-1" />
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <div aria-expanded="false" aria-haspopup="true" class="fd-input-group--control fd-input-group">
-                            <input class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
+                            <input aria-labelledby="fd-nEac1Ko5K0e" class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
                             <span class="fd-input-group__addon fd-input-group__addon--button">
                                 <button aria-label="Choose date" class="fd-button fd-button--transparent fd-input-group__button" type="button" tabindex="-1">
                                     <i aria-hidden="true" class="sap-icon--appointment-2" role="img"></i>
@@ -1767,7 +1767,7 @@ export const gridTable = () => `
                 <span>Notebook Basic 17</span>
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <input class="fd-input" name="Notebook Basic 17" type="text" value="HT-1001" tabindex="-1" />
+                <input aria-labelledby="fd-NPWFoAxBzUa" class="fd-input" name="Notebook Basic 17" type="text" value="HT-1001" tabindex="-1" />
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
                 <span>0</span>
@@ -1779,7 +1779,7 @@ export const gridTable = () => `
                 <div class="fd-form-item">
                     <div class="fd-popover">
                         <div class="fd-popover__control">
-                            <div class="fd-select" role="combobox" tabindex="-1" aria-controls="fd-WUd6z4F7gPr" aria-expanded="false" aria-haspopup="listbox">
+                            <div class="fd-select" role="combobox" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
                                 <div class="fd-select__control">
                                     <span class="fd-select__text-content">Fasttech</span>
                                     <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
@@ -1798,13 +1798,13 @@ export const gridTable = () => `
                 </div>
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <input class="fd-input" type="text" value="" tabindex="-1" />
+                <input aria-labelledby="fd-OspcU6H7F0q" class="fd-input" type="text" value="" tabindex="-1" />
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <div aria-expanded="false" aria-haspopup="true" class="fd-input-group--control fd-input-group">
-                            <input class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
+                            <input aria-labelledby="fd-nEac1Ko5K0e" class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
                             <span class="fd-input-group__addon fd-input-group__addon--button">
                                 <button aria-label="Choose date" class="fd-button fd-button--transparent fd-input-group__button" type="button" tabindex="-1">
                                     <i aria-hidden="true" class="sap-icon--appointment-2" role="img"></i>
@@ -1826,7 +1826,7 @@ export const gridTable = () => `
                 <span>Notebook Basic 18</span>
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <input class="fd-input" name="Notebook Basic 18" type="text" value="HT-1002" tabindex="-1" />
+                <input aria-labelledby="fd-NPWFoAxBzUa" class="fd-input" name="Notebook Basic 18" type="text" value="HT-1002" tabindex="-1" />
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
                 <span>13</span>
@@ -1838,7 +1838,7 @@ export const gridTable = () => `
                 <div class="fd-form-item">
                     <div class="fd-popover">
                         <div class="fd-popover__control">
-                            <div class="fd-select" role="combobox" tabindex="-1" aria-controls="fd-sYJBE7tEBss" aria-expanded="false" aria-haspopup="listbox">
+                            <div class="fd-select" role="combobox" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
                                 <div class="fd-select__control">
                                     <span class="fd-select__text-content">Printers for All</span>
                                     <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
@@ -1857,13 +1857,13 @@ export const gridTable = () => `
                 </div>
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <input class="fd-input" type="text" value="" tabindex="-1" />
+                <input aria-labelledby="fd-OspcU6H7F0q" class="fd-input" type="text" value="" tabindex="-1" />
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <div aria-expanded="false" aria-haspopup="true" class="fd-input-group--control fd-input-group">
-                                <input class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
+                                <input aria-labelledby="fd-nEac1Ko5K0e" class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
                                 <span class="fd-input-group__addon fd-input-group__addon--button">
                                     <button aria-label="Choose date" class="fd-button fd-button--transparent fd-input-group__button" type="button" tabindex="-1">
                                         <i aria-hidden="true" class="sap-icon--appointment-2" role="img"></i>
@@ -1886,7 +1886,7 @@ export const gridTable = () => `
                 <span>Notebook Basic 19</span>
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <input class="fd-input" name="Notebook Basic 19" type="text" value="HT-1003" tabindex="-1" />
+                <input aria-labelledby="fd-NPWFoAxBzUa" class="fd-input" name="Notebook Basic 19" type="text" value="HT-1003" tabindex="-1" />
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
                 <span>15</span>
@@ -1898,7 +1898,7 @@ export const gridTable = () => `
                 <div class="fd-form-item">
                     <div class="fd-popover">
                         <div class="fd-popover__control">
-                            <div class="fd-select" role="combobox" tabindex="-1" aria-controls="fd-NvmIKgyb4ZV" aria-expanded="false" aria-haspopup="listbox">
+                            <div class="fd-select" role="combobox" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
                                 <div class="fd-select__control">
                                     <span class="fd-select__text-content">Technocom</span>
                                     <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
@@ -1917,13 +1917,13 @@ export const gridTable = () => `
                 </div>
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <input class="fd-input" type="text" value="" tabindex="-1" />
+                <input aria-labelledby="fd-OspcU6H7F0q" class="fd-input" type="text" value="" tabindex="-1" />
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <div aria-expanded="false" aria-haspopup="true" class="fd-input-group--control fd-input-group">
-                            <input class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
+                            <input aria-labelledby="fd-nEac1Ko5K0e" class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
                             <span class="fd-input-group__addon fd-input-group__addon--button">
                                 <button aria-label="Choose date" class="fd-button fd-button--transparent fd-input-group__button" type="button" tabindex="-1">
                                     <i aria-hidden="true" class="sap-icon--appointment-2" role="img"></i>
