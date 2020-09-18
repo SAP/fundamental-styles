@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.62](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.61...v0.12.0-rc.62) (2020-09-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* notifications component refactored. Removed classes: fd-notification--information, fd-notification--success, fd-notification--warning, fd-notification--error
+
+### Bug Fixes
+
+* updating Notifications according to the latest design ([#1567](https://github.com/SAP/fundamental-styles/issues/1567)) ([9af457f](https://github.com/SAP/fundamental-styles/commit/9af457fd3499723179f5d7d73c77ca40a5af011b))
+
 ## [0.12.0-rc.61](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.60...v0.12.0-rc.61) (2020-09-18)
 
 
