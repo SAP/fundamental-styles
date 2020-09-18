@@ -172,8 +172,8 @@ export const error = () => `
                 </div>
             </div>
         </div>
-        <div class="fd-pdf-viewer__content fd-pdf-viewer__content--error" style="min-height: 28rem;">
-            <div class="fd-message-page">
+        <div class="fd-pdf-viewer__content" style="min-height: 28rem;">
+            <div class="fd-pdf-viewer__content fd-pdf-viewer__content--error fd-message-page">
                 <div class="fd-message-page__container">
                     <div class="fd-message-page__icon-container">
                         <span class="sap-icon sap-icon--documents fd-message-page__icon"></span>
