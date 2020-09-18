@@ -154,7 +154,7 @@ $block: #{$fd-namespace}-notification;
 
     display: flex;
     align-items: self-start;
-    padding-left: 1rem;
+    padding-left: $fd-notification-padding-right;
     flex: 1 0 auto; // IE11 fix for button
 
     @include fd-rtl() {
