@@ -1653,7 +1653,7 @@ export const navigationIndicationStates = () => `
 </div>
 `;
 
-/** Various input elements can be used inside of cells. Provide information about the table for screen readers (such as a title and / or keyboard navigation instructions) using the `fd-table__caption` class */
+/** Various input elements can be used inside of cells. Provide information about the table for screen readers (such as a title and / or keyboard navigation instructions) using the `fd-table__caption` class. */
 
 export const withInputs = () => `
 <table class="fd-table">
@@ -1717,12 +1717,14 @@ export const withInputs = () => `
                 <span class="fd-object-status fd-object-status--positive">Available</span>
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <div class="fd-popover">
-                    <div class="fd-popover__control">
-                        <div class="fd-select" role="combobox" tabindex="-1" aria-controls="fd-tdEfCXd9Rt5" aria-expanded="false" aria-haspopup="listbox">
-                            <div class="fd-select__control">
-                                <span class="fd-select__text-content">Very Best Screens</span>
-                                <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
+                <div class="fd-form-item">
+                    <div class="fd-popover">
+                        <div class="fd-popover__control">
+                            <div class="fd-select" role="combobox" tabindex="-1" aria-controls="fd-tdEfCXd9Rt5" aria-expanded="false" aria-haspopup="listbox">
+                                <div class="fd-select__control">
+                                    <span class="fd-select__text-content">Very Best Screens</span>
+                                    <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1774,12 +1776,14 @@ export const withInputs = () => `
                 <span class="fd-object-status fd-object-status--negative">Unavailable</span>
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <div class="fd-popover">
-                    <div class="fd-popover__control">
-                        <div class="fd-select" role="combobox" tabindex="-1" aria-controls="fd-WUd6z4F7gPr" aria-expanded="false" aria-haspopup="listbox">
-                            <div class="fd-select__control">
-                                <span class="fd-select__text-content">Fasttech</span>
-                                <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
+                <div class="fd-form-item">
+                    <div class="fd-popover">
+                        <div class="fd-popover__control">
+                            <div class="fd-select" role="combobox" tabindex="-1" aria-controls="fd-WUd6z4F7gPr" aria-expanded="false" aria-haspopup="listbox">
+                                <div class="fd-select__control">
+                                    <span class="fd-select__text-content">Fasttech</span>
+                                    <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1831,12 +1835,14 @@ export const withInputs = () => `
                 <span class="fd-object-status fd-object-status--positive">Available</span>
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <div class="fd-popover">
-                    <div class="fd-popover__control">
-                        <div class="fd-select" role="combobox" tabindex="-1" aria-controls="fd-sYJBE7tEBss" aria-expanded="false" aria-haspopup="listbox">
-                            <div class="fd-select__control">
-                                <span class="fd-select__text-content">Printers for All</span>
-                                <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
+                <div class="fd-form-item">
+                    <div class="fd-popover">
+                        <div class="fd-popover__control">
+                            <div class="fd-select" role="combobox" tabindex="-1" aria-controls="fd-sYJBE7tEBss" aria-expanded="false" aria-haspopup="listbox">
+                                <div class="fd-select__control">
+                                    <span class="fd-select__text-content">Printers for All</span>
+                                    <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1889,12 +1895,14 @@ export const withInputs = () => `
                 <span class="fd-object-status fd-object-status--positive">Available</span>
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <div class="fd-popover">
-                    <div class="fd-popover__control">
-                        <div class="fd-select" role="combobox" tabindex="-1" aria-controls="fd-NvmIKgyb4ZV" aria-expanded="false" aria-haspopup="listbox">
-                            <div class="fd-select__control">
-                                <span class="fd-select__text-content">Technocom</span>
-                                <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
+                <div class="fd-form-item">
+                    <div class="fd-popover">
+                        <div class="fd-popover__control">
+                            <div class="fd-select" role="combobox" tabindex="-1" aria-controls="fd-NvmIKgyb4ZV" aria-expanded="false" aria-haspopup="listbox">
+                                <div class="fd-select__control">
+                                    <span class="fd-select__text-content">Technocom</span>
+                                    <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
+                                </div>
                             </div>
                         </div>
                     </div>
