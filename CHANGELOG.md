@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.61](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.60...v0.12.0-rc.61) (2020-09-18)
+
+
+### Features
+
+* Basic Grid Table example, caption element ([#1661](https://github.com/SAP/fundamental-styles/issues/1661)) ([3b1f390](https://github.com/SAP/fundamental-styles/commit/3b1f390420f37cd228a2834f1f5bf59e4ce8f293))
+
 ## [0.12.0-rc.60](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.59...v0.12.0-rc.60) (2020-09-17)
 
 
