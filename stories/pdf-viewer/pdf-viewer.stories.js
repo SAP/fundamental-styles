@@ -69,7 +69,7 @@ dialog.storyName = 'Dialog';
 dialog.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'When displayed in a dialog, download and close buttons are in the footer. The PDF Viewer dialog does not support resizing. For mobile, ensure the modal takes up the entire screen by using the <code>.fd-dialog__content--mobile</code> class.'
+        storyDescription: 'When displayed in a dialog, download and close buttons are in the footer. The PDF Viewer dialog does not support resizing. For mobile, ensure the modal takes up the entire screen. Refer to the documentation for Dialog.'
     }
 };
 
