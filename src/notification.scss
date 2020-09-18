@@ -5,11 +5,7 @@ $block: #{$fd-namespace}-notification;
 .#{$block} {
 
   // variables
-  $fd-notification-max-width: 60rem !default;
   $fd-notification-max-width-m: 40rem !default;
-  $fd-notification-min-width-m: 20rem !default;
-  $fd-notification-width-s: 20rem !default;
-
   $fd-notification-background-color: var(--sapList_Background) !default;
   $fd-notification-box-shadow: var(--sapContent_Shadow0) !default;
 
@@ -84,11 +80,11 @@ $block: #{$fd-namespace}-notification;
     @include fd-reset();
 
     width: 100%;
-    margin-left: $fd-notification-content-offset;
+    margin-left: $fd-notification-padding-right;
     overflow: auto;
 
     @include fd-rtl() {
-      margin-right: $fd-notification-content-offset;
+      margin-right: $fd-notification-padding-right;
       margin-left: $fd-notification-reset-offset;
     }
 
@@ -205,7 +201,7 @@ $block: #{$fd-namespace}-notification;
 
     @include fd-rtl() {
       padding-right: 0;
-      padding-left: 0.5rem;
+      padding-left: $fd-notification-padding-left;
     }
 
     &--error {
@@ -298,11 +294,21 @@ $block: #{$fd-namespace}-notification;
       padding: 1rem 0.5rem 1rem 0.75rem;
 
       @include fd-rtl() {
-        padding-left: $fd-notification-reset-offset;
+        padding-right: $fd-notification-padding-mobile;
+        padding-left: $fd-notification-padding-left;
       }
 
       .#{$block}__actions--dismiss {
         display: none;
+      }
+    }
+
+    .#{$block}__content {
+      margin-left: $fd-notification-content-offset;
+
+      @include fd-rtl() {
+        margin-right: $fd-notification-content-offset;
+        margin-left: $fd-notification-reset-offset;
       }
     }
   }

@@ -363,7 +363,7 @@ export const mobile = () => `
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p class="fd-notification__footer">
-                <span class="fd-notification__footer-content">Long author name - SAP Analytics Cloud Cloud Cloud</span>
+                <span class="fd-notification__footer-content">SAP Analytics Cloud</span>
                 <span class="fd-notification__separator"></span>7 minutes ago</p>
         </div>
         <div class="fd-notification__actions">
@@ -390,7 +390,7 @@ export const mobile = () => `
                     </nav>
                 </div>
             </div>
-            <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
+            <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
                 <i class="sap-icon--decline"></i>
             </button>
         </div>
@@ -423,7 +423,7 @@ export const mobile = () => `
         </li>
     </ul>
     <div class="fd-notification__group-header">
-        <button role="button" aria-label="arrow-down-button" class="fd-button fd-button--compact fd-button--transparent">
+        <button role="button" aria-label="arrow-down-button" class="fd-button fd-button--transparent">
             <i class="sap-icon--slim-arrow-down"></i>
         </button>
         <div class="fd-notification__content">
@@ -433,7 +433,7 @@ export const mobile = () => `
             </div>
         </div>
         <div class="fd-notification__actions">
-            <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
+            <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
                 <i class="sap-icon--decline"></i>
             </button>
         </div>
@@ -477,7 +477,7 @@ export const mobile = () => `
                 </div>
             </div>
 
-            <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
+            <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
                 <i class="sap-icon--decline"></i>
             </button>
         </div>
@@ -516,7 +516,7 @@ export const mobile = () => `
                 </div>
             </div>
 
-            <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
+            <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
                 <i class="sap-icon--decline"></i>
             </button>
         </div>
