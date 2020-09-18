@@ -1652,3 +1652,280 @@ export const navigationIndicationStates = () => `
     </table>
 </div>
 `;
+
+/** Various input elements can be used inside of cells. Provide information about the table for screen readers (such as a title and / or keyboard navigation instructions) using the `fd-table__caption` class */
+
+export const withInputs = () => `
+<table class="fd-table">
+    <caption class="fd-table__caption" id="FU4EwF6st">
+        <div aria-live="polite">Use arrow keys to navigate between cells</div>
+    </caption>
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell fd-table__cell--checkbox" tabindex="-1">
+                <div class="fd-form-item">
+                    <input aria-checked="false" aria-label="Select all rows" class="fd-checkbox" id="fd-gEAc87vXrAR" type="checkbox" value="" tabindex="-1" /><label for="fd-gEAc87vXrAR" class="fd-form-label fd-checkbox__label"></label>
+                </div>
+            </th>
+            <th class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                Product Name
+            </th>
+            <th class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                Product ID
+            </th>
+            <th class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                Quantity
+            </th>
+            <th class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                Status
+            </th>
+            <th class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                Supplier
+            </th>
+            <th class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                Image
+            </th>
+            <th class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                Heavy Weight
+            </th>
+            <th class="fd-table__cell fd-table__cell--focusable" tabindex="0">
+                Categories
+            </th>
+            <th class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                Delivery Date
+            </th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row" aria-selected="false">
+            <td class="fd-table__cell fd-table__cell--checkbox" tabindex="-1">
+                <div class="fd-form-item">
+                    <input aria-checked="false" aria-label="Select row" class="fd-checkbox" id="fd-7EMZOUrG2eK" name="Notebook Basic 15" type="checkbox" value="" tabindex="-1" />
+                    <label for="fd-7EMZOUrG2eK" class="fd-form-label fd-checkbox__label"></label>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span>Notebook Basic 15</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <input class="fd-input" name="Notebook Basic 15" type="text" value="HT-1000" tabindex="-1" />
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span>10</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span class="fd-object-status fd-object-status--positive">Available</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-popover">
+                    <div class="fd-popover__control">
+                        <div class="fd-select" role="combobox" tabindex="-1" aria-controls="fd-tdEfCXd9Rt5" aria-expanded="false" aria-haspopup="listbox">
+                            <div class="fd-select__control">
+                                <span class="fd-select__text-content">Very Best Screens</span>
+                                <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <a href="https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-1000.jpg" class="fd-link" tabindex="-1">Show image</a>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-form-item">
+                    <input aria-checked="false" aria-label="Heavy Weight" class="fd-checkbox" id="fd-tF03y4hjeLT" type="checkbox" value="" tabindex="-1" /><label for="fd-tF03y4hjeLT" class="fd-form-label fd-checkbox__label"></label>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <input class="fd-input" type="text" value="" tabindex="-1" />
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-popover">
+                    <div class="fd-popover__control">
+                        <div aria-expanded="false" aria-haspopup="true" class="fd-input-group--control fd-input-group">
+                            <input class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
+                            <span class="fd-input-group__addon fd-input-group__addon--button">
+                                <button aria-label="Choose date" class="fd-button fd-button--transparent fd-input-group__button" type="button" tabindex="-1">
+                                    <i aria-hidden="true" class="sap-icon--appointment-2" role="img"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="fd-table__row" aria-selected="false">
+            <td class="fd-table__cell fd-table__cell--checkbox" tabindex="-1">
+                <div class="fd-form-item">
+                    <input aria-checked="false" aria-label="Select row" class="fd-checkbox" id="fd-LbUmEre6JKj" name="Notebook Basic 17" type="checkbox" value="" tabindex="-1" />
+                    <label for="fd-LbUmEre6JKj" class="fd-form-label fd-checkbox__label"></label>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span>Notebook Basic 17</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <input class="fd-input" name="Notebook Basic 17" type="text" value="HT-1001" tabindex="-1" />
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span>0</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span class="fd-object-status fd-object-status--negative">Unavailable</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-popover">
+                    <div class="fd-popover__control">
+                        <div class="fd-select" role="combobox" tabindex="-1" aria-controls="fd-WUd6z4F7gPr" aria-expanded="false" aria-haspopup="listbox">
+                            <div class="fd-select__control">
+                                <span class="fd-select__text-content">Fasttech</span>
+                                <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <a href="https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-1001.jpg" class="fd-link" tabindex="-1">Show image</a>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-form-item">
+                    <input aria-checked="false" aria-label="Heavy Weight" class="fd-checkbox" id="fd-9WXDOs3SBLH" type="checkbox" value="" tabindex="-1" /><label for="fd-9WXDOs3SBLH" class="fd-form-label fd-checkbox__label"></label>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <input class="fd-input" type="text" value="" tabindex="-1" />
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-popover">
+                    <div class="fd-popover__control">
+                        <div aria-expanded="false" aria-haspopup="true" class="fd-input-group--control fd-input-group">
+                            <input class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
+                            <span class="fd-input-group__addon fd-input-group__addon--button">
+                                <button aria-label="Choose date" class="fd-button fd-button--transparent fd-input-group__button" type="button" tabindex="-1">
+                                    <i aria-hidden="true" class="sap-icon--appointment-2" role="img"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="fd-table__row" aria-selected="false">
+            <td class="fd-table__cell fd-table__cell--checkbox" tabindex="-1">
+                <div class="fd-form-item">
+                    <input aria-checked="false" aria-label="Select row" class="fd-checkbox" id="fd-Cmvc_Hc7N3_" name="Notebook Basic 18" type="checkbox" value="" tabindex="-1" />
+                    <label for="fd-Cmvc_Hc7N3_" class="fd-form-label fd-checkbox__label"></label>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span>Notebook Basic 18</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <input class="fd-input" name="Notebook Basic 18" type="text" value="HT-1002" tabindex="-1" />
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span>13</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span class="fd-object-status fd-object-status--positive">Available</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-popover">
+                    <div class="fd-popover__control">
+                        <div class="fd-select" role="combobox" tabindex="-1" aria-controls="fd-sYJBE7tEBss" aria-expanded="false" aria-haspopup="listbox">
+                            <div class="fd-select__control">
+                                <span class="fd-select__text-content">Printers for All</span>
+                                <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <a href="https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-1002.jpg" class="fd-link" tabindex="-1">Show image</a>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-form-item">
+                    <input aria-checked="false" aria-label="Heavy Weight" class="fd-checkbox" id="fd-Rzaro06MMoH" type="checkbox" value="" tabindex="-1" /><label for="fd-Rzaro06MMoH" class="fd-form-label fd-checkbox__label"></label>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <input class="fd-input" type="text" value="" tabindex="-1" />
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-popover">
+                    <div class="fd-popover__control">
+                        <div aria-expanded="false" aria-haspopup="true" class="fd-input-group--control fd-input-group">
+                                <input class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
+                                <span class="fd-input-group__addon fd-input-group__addon--button">
+                                    <button aria-label="Choose date" class="fd-button fd-button--transparent fd-input-group__button" type="button" tabindex="-1">
+                                        <i aria-hidden="true" class="sap-icon--appointment-2" role="img"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="fd-table__row" aria-selected="false">
+            <td class="fd-table__cell fd-table__cell--checkbox" tabindex="-1">
+                <div class="fd-form-item">
+                    <input aria-checked="false" aria-label="Select row" class="fd-checkbox" id="fd-kgZvkuwUtB-" name="Notebook Basic 19" type="checkbox" value="" tabindex="-1" />
+                    <label for="fd-kgZvkuwUtB-" class="fd-form-label fd-checkbox__label"></label>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span>Notebook Basic 19</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <input class="fd-input" name="Notebook Basic 19" type="text" value="HT-1003" tabindex="-1" />
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span>15</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span class="fd-object-status fd-object-status--positive">Available</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-popover">
+                    <div class="fd-popover__control">
+                        <div class="fd-select" role="combobox" tabindex="-1" aria-controls="fd-NvmIKgyb4ZV" aria-expanded="false" aria-haspopup="listbox">
+                            <div class="fd-select__control">
+                                <span class="fd-select__text-content">Technocom</span>
+                                <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <a href="https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-1003.jpg" class="fd-link" tabindex="-1">Show image</a>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-form-item">
+                    <input aria-checked="false" aria-label="Heavy Weight" class="fd-checkbox" id="fd-LHL3aUwc6pZ" type="checkbox" value="" tabindex="-1" /><label for="fd-LHL3aUwc6pZ" class="fd-form-label fd-checkbox__label"></label>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <input class="fd-input" type="text" value="" tabindex="-1" />
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-popover">
+                    <div class="fd-popover__control">
+                        <div aria-expanded="false" aria-haspopup="true" class="fd-input-group--control fd-input-group">
+                            <input class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
+                            <span class="fd-input-group__addon fd-input-group__addon--button">
+                                <button aria-label="Choose date" class="fd-button fd-button--transparent fd-input-group__button" type="button" tabindex="-1">
+                                    <i aria-hidden="true" class="sap-icon--appointment-2" role="img"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+`;
