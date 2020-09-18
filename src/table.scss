@@ -304,6 +304,10 @@ $block: #{$fd-namespace}-table;
     justify-content: space-between;
   }
 
+  &__caption {
+    @include fd-screen-reader-only();
+  }
+
   &__popover.#{$fd-namespace}-popover {
     height: 100%;
     display: block;
