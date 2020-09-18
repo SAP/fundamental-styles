@@ -8,15 +8,10 @@ import '../../dist/dynamic-page.css';
 export default {
     title: 'Components/Dynamic Page Layout',
     parameters: {
-        description: `The dynamic page is the foundation for all pages in SAP Fiori. It is a generic layout control designed to support various floorplans and use cases.
-        As a result, the content of both the header and the page can vary.
+        description: `The dynamic page is the foundation for all pages in SAP Fiori. It is a generic layout designed to support various use cases; there, the content of both the header and page can vary.
         <br><br>
-        The header of the dynamic page is collapsible, which helps users to focus on the actual page content, but still ensures that important header information and actions are readily available.
+        The header of the dynamic page is collapsible, which helps the users focus on the actual page content but still ensures that important header information and actions are readily available.
         <br>
-        The content of both the header and the page can differ from floorplan to floorplan.
-        <br>
-        The dynamic page also includes an optional footer toolbar for closing or finalizing actions that impact the whole page.
-        <br><br>
 
 ## Usage 
 **Use the dynamic page layout if:**
@@ -27,32 +22,32 @@ export default {
 
 - You are planning to use SAP Fiori elements, such as the list report, analytical list page, overview page, or object page. These floorplans already incorporate the dynamic page layout.
 - You want to implement an initial page or object page floorplan.
-- You only need to display a small amount of information. In this case, use a dialog instead. If you can’t avoid using the dynamic page layout, use letterboxing to mitigate the issue.
+- You only need to display a small amount of information. In this case, use a **Dialog** instead. If you can’t avoid using the dynamic page, use letterboxing to mitigate the issue.
 
 
     
 ## Structure
-**Dynamic Page Layout consists of the following elements:**
+**Dynamic page consists of the following elements:**
 
 - <code class="docs-code">fd-dynamic-page</code> Main element
   - <code class="docs-code">fd-dynamic-page\\_\\_title-area</code> The area holding title, KPI content, subtitle, and actions
     - <code class="docs-code">fd-dynamic-page\\_\\_breadcrumb-container</code> Breadcrumb container, can also hold global actions
       - <code class="docs-code">fd-dynamic-page\\_\\_breadcrumb</code> Breadcrumbs
     - <code class="docs-code">fd-dynamic-page\\_\\_title-container</code> The container for title, KPI content and actions
-      - <code class="docs-code">fd-dynamic-page\\_\\_title</code> Dynamic Page Layout title
+      - <code class="docs-code">fd-dynamic-page\\_\\_title</code> Dynamic page title
       - <code class="docs-code">fd-dynamic-page\\_\\_title-content</code> The KPI content
       - <code class="docs-code">fd-dynamic-page\\_\\_toolbar</code> Toolbar container for actions
       - <code class="docs-code">fd-dynamic-page\\_\\_toolbar--actions</code> Global actions
-    - <code class="docs-code">fd-dynamic-page\\_\\_subtitle</code> Dynamic Page subtitle
-  - <code class="docs-code">fd-dynamic-page\\_\\_header</code> Dynamic Page header
+    - <code class="docs-code">fd-dynamic-page\\_\\_subtitle</code> Dynamic page subtitle
+  - <code class="docs-code">fd-dynamic-page\\_\\_header</code> Dynamic page header
   - <code class="docs-code">fd-dynamic-page\\_\\_header-visibility-container</code> The container for pin/collapse buttons
     - <code class="docs-code">fd-dynamic-page\\_\\_collapse-button</code> Collapse button
     - <code class="docs-code">fd-dynamic-page\\_\\_pin-button </code> Pin button
   - <code class="docs-code">fd-dynamic-page\\_\\_tabs</code> Tabs/Wizard can be optionally used as a header extension
-  - <code class="docs-code">fd-dynamic-page\\_\\_content</code> Dynamic Page content
+  - <code class="docs-code">fd-dynamic-page\\_\\_content</code> Dynamic page content
 
-Note: Footer is optional and used for finalizing page actions. It is usually displayed in edit mode and uses a Floating Footer Bar.
-There are no specific styles for footer when used with Dynamic Page.
+Note: Footer is optional and used for finalizing page actions. It is usually displayed in edit mode and uses a floating footer bar.
+There are no specific styles for footer when used with dynamic page.
 `,
         tags: ['f3', 'a11y', 'theme', 'development']
     }
@@ -87,7 +82,7 @@ export const desktop = () => `
             </div>
             <div class="fd-dynamic-page__subtitle"> Oversized multimaterial sneakers with quilted effect </div>
         </div>
-        <div class="fd-dynamic-page__header fd-dynamic-page__header--xl" role="region" aria-label="Dynamic Page Desktop Header" >
+        <div class="fd-dynamic-page__header fd-dynamic-page__header--xl" role="region" id="fddplhvc6" aria-label="Dynamic Page Desktop Header" >
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
             delectus necessitatibus incidunt numquam asperiores tenetur iure. 
             Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
@@ -99,7 +94,7 @@ export const desktop = () => `
                         aria-label="See More" 
                         aria-expanded="false" 
                         aria-haspopup="true" 
-                        aria-controls="fddplhvc1">
+                        aria-controls="fddplhvc6">
                         <i class="sap-icon--slim-arrow-up"></i>
                 </button>
                 <button class="fd-dynamic-page__pin-button fd-button fd-button--compact" 
@@ -175,9 +170,19 @@ desktop.storyName = 'Desktop mode';
 desktop.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'The dynamic page layout with Desktop specification(L). The same specification also applies to XL and XXL as well.' +
-        'Please note the difference in the way tabs are used. Tabs must use `fd-dynamic-page__tabs` along with the size modifiers(--m, --l, --xl or --s) and' +
-        '`--add-shadow` at the `<ul>` level, and to ensure the correct box-shadow styling, should also add `--overflow` modifier at the parent level.'
+        storyDescription: `The dynamic page displays on desktop screens with the L, XL, and XXL sizes.
+        **Tabs** can be optionally added as an extension of the header area with the tab content being a part of the page content. 
+        Please note the difference in the way tabs are used. Tabs must use \`fd-dynamic-page__tabs\` along with the size modifiers(--m, --l, --xl or --s) and
+        \`--add-shadow\` at the \`<ul>\` level, and to ensure the correct box-shadow styling, should also add \`--overflow\` modifier at the parent level.
+        To optimize dynamic page for desktop, add these modifier classes to the following elements:
+        
+| Element | Modifier class(use \`--l\`/\`--xl\`) |
+| ----------------: | :------------ |
+| Title Area | \`fd-dynamic-page__title-area--xl\` |
+| Header | \`fd-dynamic-page__header--xl\` |
+| Tabs | \`fd-dynamic-page__tabs--xl\` |
+| Content | \`fd-dynamic-page__content--xl\` |
+`
     }
 };
 
@@ -212,7 +217,7 @@ export const tablet = () => `
             </div>
             <div class="fd-dynamic-page__subtitle"> Oversized multimaterial sneakers with quilted effect </div>
         </div>
-        <div class="fd-dynamic-page__header fd-dynamic-page__header--m">
+        <div class="fd-dynamic-page__header fd-dynamic-page__header--m" role="region"  aria-hidden="false" id="fddplhvc5" aria-label="Tablet header">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
             delectus necessitatibus incidunt numquam asperiores tenetur iure. 
             Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
@@ -224,7 +229,7 @@ export const tablet = () => `
                         aria-label="See More" 
                         aria-expanded="false" 
                         aria-haspopup="true" 
-                        aria-controls="fddplhvc1">
+                        aria-controls="fddplhvc5">
                         <i class="sap-icon--slim-arrow-up"></i>
                 </button>
                 <button class="fd-dynamic-page__pin-button fd-button fd-button--compact" 
@@ -300,9 +305,17 @@ tablet.storyName = 'Tablet mode';
 tablet.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'The dynamic page layout with Tablet specification(L). Use the `--m` modifier on `title-area`, `breadcrumb`, ' +
-        '`header`, and `content` elements to get the Tablet spacings.' +
-        ' The spec recommends navigation actions in a separate row above the global actions. The navigation actions are placed at the same level as the breadcrumb.'
+        storyDescription: `The dynamic page displays on tablet screens with the M size. To optimize dynamic page for tablet, add these modifier classes to the following elements:
+
+| Element | Modifier class |
+| ----------------: | :------------ |
+| Title Area | \`fd-dynamic-page__title-area--m\` |
+| Title | \`fd-dynamic-page__title--m\` |
+| Header | \`fd-dynamic-page__header--m\` |
+| Tabs | \`fd-dynamic-page__tabs--m\` |
+| Content | \`fd-dynamic-page__content--m\` |
+ 
+It is recommended that the navigation actions are displayed in a separate row above global actions, and are placed at the same level as the breadcrumb component.`
     }
 };
 
@@ -334,9 +347,9 @@ export const mobile = () => `
                         </button>
                     </div>
             </div>
-            <div class="fd-dynamic-page__subtitle"> Expanded header in phone </div>
+            <div class="fd-dynamic-page__subtitle"> Expanded header in mobile </div>
         </div>
-        <div class="fd-dynamic-page__header fd-dynamic-page__header--s" role="region" aria-label="Dynamic Page Mobile Header">
+        <div class="fd-dynamic-page__header fd-dynamic-page__header--s" role="region" id="fddplhvc4" aria-label="Dynamic Page Mobile Header">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
             delectus necessitatibus incidunt numquam asperiores tenetur iure. 
             Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
@@ -348,7 +361,7 @@ export const mobile = () => `
                         aria-label="See More" 
                         aria-expanded="false" 
                         aria-haspopup="true" 
-                        aria-controls="fddplhvc1">
+                        aria-controls="fddplhvc4">
                         <i class="sap-icon--slim-arrow-up"></i>
                 </button>
             </div>
@@ -521,7 +534,7 @@ export const mobile = () => `
                         </button>
                     </div>
             </div>
-            <div class="fd-dynamic-page__subtitle"> Collapsed title area and header with Summary Line </div>
+            <div class="fd-dynamic-page__subtitle"> Collapsed title area and header with summary line </div>
         </div>
         <div class="fd-dynamic-page__header fd-dynamic-page__header--s" role="region" aria-hidden="true" id="fddplhvcm2"  aria-label="Dynamic Page Mobile Collapsed Header" >
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
@@ -567,7 +580,7 @@ export const mobile = () => `
                 dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
             </div>
             <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz169" role="tabpanel">
-                <h4>This is an example of a collapsed title area and header and instead of displaying a Summary Line</h4>
+                <h4>This is an example of a summary line, without the expand/collapse feature.</h4>
                 <br />
                 Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
@@ -594,10 +607,19 @@ mobile.storyName = 'Mobile mode';
 mobile.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'The dynamic page layout with Mobile specification(S). Use the `--s` modifier on `title-area`, `breadcrumb` ' +
-        '`header`, and `content` elements to get the Mobile spacings. \n' +
-        'This mode can additionally have a Summary Line instead of the expand/collapse header feature.  We recommend switching on this feature to help users focus on the page content.' +
-        'Use the `summarized-title` element in the `summarized-title-area` container element with the `--s` modifier to show the summary line.'
+        storyDescription: `The dynamic page displays on mobile screens with the S size. To optimize dynamic page for mobile, add these modifier classes to the following elements:
+        
+| Element | Modifier class |
+| ----------------: | :------------ |
+| Title Area | \`fd-dynamic-page__title-area--s\` |
+| Breadcrumb | \`fd-dynamic-page__breadcrumb--s\` |
+| Header | \`fd-dynamic-page__header--s\` |
+| Tabs | \`fd-dynamic-page__tabs--s\` |
+| Content | \`fd-dynamic-page__content--s\` |
+| Summary line (optional) | \`fd-dynamic-page__summarized-title-area--s\` |
+ 
+It is recommended to add a summary line insead of the expand/collapse header feature so users can better focus on the page content. To display a summary line, 
+add \`fd-dynamic-page__summarized-title\` in the \`fd-dynamic-page__summarized-title-area\` element.`
     }
 };
 
@@ -794,9 +816,8 @@ expandable.storyName = 'Expandable';
 expandable.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'The dynamic page layout header can be shown or hidden with the expand/collapse buttons.' +
-        ' The header can be made sticky with the pin button. Provide the `collapsed` modifier to `title-area` and ' +
-        '`title` elements for collapse-specific styling changes.'
+        storyDescription: `As demonstrated earlier, the dynamic page header can be either displayed or hidden with the expand/collapse buttons. Users can select the pin button to keep the header displayed (enabling the sticky feature). 
+        To collapse the dynamic page, add the \`--collapsed\` modifier class to the title area and title elements.`
     }
 };
 
@@ -830,7 +851,7 @@ export const rtl = () => `
                 </div>
                 <div class="fd-dynamic-page__subtitle"> Oversized multimaterial sneakers with quilted effect </div>
             </div>
-            <div class="fd-dynamic-page__header fd-dynamic-page__header--xl" role="region" aria-label="RTL Header">
+            <div class="fd-dynamic-page__header fd-dynamic-page__header--xl" role="region" id="fddplhvc7" aria-label="RTL Header">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
                 delectus necessitatibus incidunt numquam asperiores tenetur iure. 
                 Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
@@ -842,7 +863,7 @@ export const rtl = () => `
                             aria-label="See More" 
                             aria-expanded="false" 
                             aria-haspopup="true" 
-                            aria-controls="fddplhvc1">
+                            aria-controls="fddplhvc7">
                             <i class="sap-icon--slim-arrow-up"></i>
                     </button>
                     <button class="fd-dynamic-page__pin-button fd-button fd-button--compact" 
@@ -919,6 +940,6 @@ rtl.storyName = 'RTL';
 rtl.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'The right-to-left Dynamic Page Layout reverses the direction of the content displayed.'
+        storyDescription: 'The dynamic page is displayed from right to left on the screen so that it may be used internationally.'
     }
 };

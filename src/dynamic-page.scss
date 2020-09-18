@@ -187,6 +187,7 @@ $block: #{$fd-namespace}-dynamic-page;
     background: var(--sapObjectHeader_Background);
     box-shadow: $fd-dynamic-page-box-shadow;
     height: 2rem;
+    z-index: 1;
 
     &--s {
       @include responsive-page(0.5rem);
