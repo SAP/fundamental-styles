@@ -6977,6 +6977,11 @@ exports[`Storyshots Components/Table With Footer Condensed 1`] = `
 </section>
 `;
 
+exports[`Storyshots Components/Table With Inputs 1`] = `
+
+
+`;
+
 exports[`Storyshots Components/Table With Menu In Header 1`] = `
 <section>
   

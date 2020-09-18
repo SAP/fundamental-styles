@@ -1653,9 +1653,9 @@ export const navigationIndicationStates = () => `
 </div>
 `;
 
-/** Various input elements can be used inside of cells. Provide information about the table for screen readers (such as a title and / or keyboard navigation instructions) using the `fd-table__caption` class. */
+/** Grid tables can contain various input elements inside of cells. Provide information about the table for screen readers (such as a title and / or keyboard navigation instructions) using the `fd-table__caption` class. */
 
-export const withInputs = () => `
+export const gridTable = () => `
 <table class="fd-table">
     <caption class="fd-table__caption" id="FU4EwF6st">
         <div aria-live="polite">Use arrow keys to navigate between cells</div>
@@ -1773,7 +1773,7 @@ export const withInputs = () => `
                 <span>0</span>
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <span class="fd-object-status fd-object-status--negative">Unavailable</span>
+                <span class="fd-object-status fd-object-status--negative">Out of stock</span>
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
                 <div class="fd-form-item">
