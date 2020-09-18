@@ -171,6 +171,7 @@ exports[`Storyshots Components/Dynamic Page Layout Desktop mode 1`] = `
     <div
       aria-label="Dynamic Page Desktop Header"
       class="fd-dynamic-page__header fd-dynamic-page__header--xl"
+      id="fddplhvc6"
       role="region"
     >
       
@@ -197,7 +198,7 @@ exports[`Storyshots Components/Dynamic Page Layout Desktop mode 1`] = `
         
                 
         <button
-          aria-controls="fddplhvc1"
+          aria-controls="fddplhvc6"
           aria-expanded="false"
           aria-haspopup="true"
           aria-label="See More"
@@ -1394,7 +1395,7 @@ exports[`Storyshots Components/Dynamic Page Layout Mobile mode 1`] = `
         <div
           class="fd-dynamic-page__subtitle"
         >
-           Expanded header in phone 
+           Expanded header in mobile 
         </div>
         
         
@@ -1404,6 +1405,7 @@ exports[`Storyshots Components/Dynamic Page Layout Mobile mode 1`] = `
       <div
         aria-label="Dynamic Page Mobile Header"
         class="fd-dynamic-page__header fd-dynamic-page__header--s"
+        id="fddplhvc4"
         role="region"
       >
         
@@ -1430,7 +1432,7 @@ exports[`Storyshots Components/Dynamic Page Layout Mobile mode 1`] = `
           
                 
           <button
-            aria-controls="fddplhvc1"
+            aria-controls="fddplhvc4"
             aria-expanded="false"
             aria-haspopup="true"
             aria-label="See More"
@@ -2184,7 +2186,7 @@ exports[`Storyshots Components/Dynamic Page Layout Mobile mode 1`] = `
         <div
           class="fd-dynamic-page__subtitle"
         >
-           Collapsed title area and header with Summary Line 
+           Collapsed title area and header with summary line 
         </div>
         
         
@@ -2355,7 +2357,7 @@ exports[`Storyshots Components/Dynamic Page Layout Mobile mode 1`] = `
           
                 
           <h4>
-            This is an example of a collapsed title area and header and instead of displaying a Summary Line
+            This is an example of a summary line, without the expand/collapse feature.
           </h4>
           
                 
@@ -2609,6 +2611,7 @@ exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
       <div
         aria-label="RTL Header"
         class="fd-dynamic-page__header fd-dynamic-page__header--xl"
+        id="fddplhvc7"
         role="region"
       >
         
@@ -2635,7 +2638,7 @@ exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
           
                     
           <button
-            aria-controls="fddplhvc1"
+            aria-controls="fddplhvc7"
             aria-expanded="false"
             aria-haspopup="true"
             aria-label="See More"
@@ -3044,7 +3047,11 @@ exports[`Storyshots Components/Dynamic Page Layout Tablet mode 1`] = `
     
         
     <div
+      aria-hidden="false"
+      aria-label="Tablet header"
       class="fd-dynamic-page__header fd-dynamic-page__header--m"
+      id="fddplhvc5"
+      role="region"
     >
       
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
@@ -3070,7 +3077,7 @@ exports[`Storyshots Components/Dynamic Page Layout Tablet mode 1`] = `
         
                 
         <button
-          aria-controls="fddplhvc1"
+          aria-controls="fddplhvc5"
           aria-expanded="false"
           aria-haspopup="true"
           aria-label="See More"

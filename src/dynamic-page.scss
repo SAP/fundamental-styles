@@ -65,7 +65,7 @@ $block: #{$fd-namespace}-dynamic-page;
 
     @include fd-hover() {
       background: var(--sapObjectHeader_Hover_Background);
-      border-bottom: var(--sapDynamicPage_Hover_Border_Bottom);
+      border-bottom: var(--fdDynamicPage_Hover_Border_Bottom);
     }
 
     &--s {
@@ -82,7 +82,7 @@ $block: #{$fd-namespace}-dynamic-page;
     }
 
     &--transparent-bg {
-      background: var(--sapDynamicPage_Title_Header_Transparent_Background);
+      background: var(--fdDynamicPage_Title_Header_Transparent_Background);
     }
 
     &--collapsed {
@@ -227,7 +227,7 @@ $block: #{$fd-namespace}-dynamic-page;
     padding: $fd-dynamic-page-header-padding-top-bottom 0;
 
     &--transparent-bg {
-      background-color: var(--sapDynamicPage_Title_Header_Transparent_Background);
+      background-color: var(--fdDynamicPage_Title_Header_Transparent_Background);
     }
 
     &--s {
@@ -284,22 +284,22 @@ $block: #{$fd-namespace}-dynamic-page;
 
     // left and right gradient for the pin/collapse buttons
     &--left-gradient {
-      background-image: var(--sapDynamicPage_Button_Left_Gradient);
+      background-image: var(--fdDynamicPage_Button_Left_Gradient);
       width: $fd-dynamic-page-button-group-width;
       height: $fd-dynamic-page-button-group-height;
 
       @include fd-rtl() {
-        background-image: var(--sapDynamicPage_Button_Right_Gradient);
+        background-image: var(--fdDynamicPage_Button_Right_Gradient);
       }
     }
 
     &--right-gradient {
-      background-image: var(--sapDynamicPage_Button_Right_Gradient);
+      background-image: var(--fdDynamicPage_Button_Right_Gradient);
       width: $fd-dynamic-page-button-group-width;
       height: $fd-dynamic-page-button-group-height;
 
       @include fd-rtl() {
-        background-image: var(--sapDynamicPage_Button_Left_Gradient);
+        background-image: var(--fdDynamicPage_Button_Left_Gradient);
       }
     }
 
@@ -307,7 +307,7 @@ $block: #{$fd-namespace}-dynamic-page;
       @include fd-reset();
       @include fd-flex-center();
 
-      background: var(--sapDynamicPage_Button_Group_Background);
+      background: var(--fdDynamicPage_Button_Group_Background);
       width: 4.25rem;
       height: $fd-dynamic-page-button-group-height;
 
@@ -349,11 +349,11 @@ $block: #{$fd-namespace}-dynamic-page;
 
     // for list and transparent, different bg colors
     &--list-bg {
-      background-color: var(--sapDynamicPage_Content_List_Background);
+      background-color: var(--fdDynamicPage_Content_List_Background);
     }
 
     &--transparent-bg {
-      background-color: var(--sapDynamicPage_Content_Transparent_Background);
+      background-color: var(--fdDynamicPage_Content_Transparent_Background);
     }
   }
 }
