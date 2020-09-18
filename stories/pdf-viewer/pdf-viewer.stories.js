@@ -20,6 +20,8 @@ The PDF viewer component can be either displayed within a page or inside of a di
 
 - You need to provide an interactive PDF file (such as a data input form).
 
+Ensure that the height of the dialog can fit the height of the iframe without scrolling the dialog itself; there should not be two scroll bars within the dialog.
+
 `,
         tags: ['f3', 'a11y']
     }
@@ -41,7 +43,7 @@ export const dialog = () => `
             <iframe
               class="fd-pdf-viewer__content"
               title='PDF viewer'
-              style="min-height: 28rem;"
+              style="min-height: 20rem;"
               src="https://sapui5.hana.ondemand.com/test-resources/sap/m/demokit/sample/PDFViewerEmbedded/sample.pdf#view=FitH"}
               frameBorder='0'></iframe>
         </div>
@@ -66,7 +68,7 @@ export const dialog = () => `
 dialog.storyName = 'Dialog';
 dialog.parameters = {
     docs: {
-        iframeHeight: 400,
+        iframeHeight: 500,
         storyDescription: 'When displayed in a dialog, download and close buttons are in the footer. The PDF Viewer dialog does not support resizing. For mobile, ensure the modal takes up the entire screen by using the <code>.fd-dialog__content--mobile</code> class.'
     }
 };
@@ -86,7 +88,7 @@ export const mobileDialog = () => `
         <div class="fd-dialog__body">
             <iframe
               class="fd-pdf-viewer__content"
-              style="min-height: 28rem;"
+              style="min-height: 20rem;"
               title='PDF viewer'
               src="https://sapui5.hana.ondemand.com/test-resources/sap/m/demokit/sample/PDFViewerEmbedded/sample.pdf#view=FitH"}
               frameBorder='0'></iframe>
@@ -112,7 +114,7 @@ export const mobileDialog = () => `
 mobileDialog.storyName = 'Mobile Dialog';
 mobileDialog.parameters = {
     docs: {
-        iframeHeight: 400,
+        iframeHeight: 500,
         storyDescription: 'On mobile, the PDF viewer dialog should take up the entire screen.'
     }
 };
@@ -147,7 +149,7 @@ export const page = () => `
 page.storyName = 'In-Page';
 page.parameters = {
     docs: {
-        iframeHeight: 400,
+        iframeHeight: 500,
         storyDescription: 'Unlike the dialog version, the download button is on the title bar and there is no close button.'
     }
 };
