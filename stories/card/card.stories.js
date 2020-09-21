@@ -342,7 +342,7 @@ export const listCard = () => `
             <div class="fd-card__content" role="group" aria-label="Card Content">
                 <ul class="fd-list fd-list--no-border" role="list">
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span aria-hidden="true" aria-hidden="true" class="fd-list__icon sap-icon--cart"></span>
+                        <span aria-hidden="true" class="fd-list__icon sap-icon--cart"></span>
                         <span class="fd-list__title">List item 1</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
