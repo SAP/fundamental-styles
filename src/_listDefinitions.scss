@@ -40,6 +40,23 @@ $fd-list-navigation-navigator-bar-right: inset -0.1875rem 0 0 0 var(--sapSelecte
 $fd-list-navigation-navigator-bar-left: inset 0.1875rem 0 0 0 var(--sapSelectedColor);
 $fd-list-navigation-indicator-width: 2.75rem !default;
 
+$fd-list-optional-text-font-family: var(--sapUiFontFamily);
+$fd-list-optional-text-font-size: var(--sapMFontMediumSize);
+$fd-list-optional-text-font-weight: normal;
+$fd-list-optional-text-font-color: var(--sapUiContentLabelColor);
+$fd-list-object-border-bottom: 1px solid var(--sapList_BorderColor);
+$fd-list-object-with-margin-value-zero: 0;
+$fd-list-object-with-padding-value-zero: 0;
+$fd-list-object-with-padding-value-one: 1rem;
+$fd-list-object-with-padding-value-three: 3rem;
+$fd-list-object-with-vertical-align-top: top;
+$fd-list-object-with-vertical-align-bottom: bottom;
+$fd-list-object-attribute-font-family: var(--sapFontFamily);
+$fd-list-object-font-size: var(--sapFontSize);
+$fd-list-object-font-weight: normal;
+$fd-list-object-attribute-font-color: var(--sapContent_LabelColor);
+$fd-list-object-number-font-family: var(--sapFontLightFamily);
+
 $semantic-color: (
   "neutral": ("color": var(--sapNeutralTextColor)),
   "positive": ("color": var(--sapPositiveTextColor)),
