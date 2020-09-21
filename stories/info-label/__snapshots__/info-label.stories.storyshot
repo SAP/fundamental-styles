@@ -1,21 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Info Label Colors 1`] = `
+exports[`Storyshots Components/Info Label Color Flavors 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Info Label Icon 1`] = `
+exports[`Storyshots Components/Info Label Info Label RTL 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Info Label Number 1`] = `
+exports[`Storyshots Components/Info Label Info Label with Icon 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Info Label RTL 1`] = `
+exports[`Storyshots Components/Info Label Numeric Info Label 1`] = `
 
 
 `;
