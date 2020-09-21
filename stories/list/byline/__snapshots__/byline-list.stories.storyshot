@@ -70,8 +70,13 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
       
       
       <span
-        class="sap-icon--activate fd-list__thumbnail"
-      />
+        class="fd-list__thumbnail"
+      >
+        <i
+          class="sap-icon--activate"
+          role="presentation"
+        />
+      </span>
       
       
       <div
@@ -283,8 +288,13 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
       
       
       <span
-        class="sap-icon--activate fd-list__thumbnail"
-      />
+        class="fd-list__thumbnail"
+      >
+        <i
+          class="sap-icon--activate"
+          role="presentation"
+        />
+      </span>
       
       
       <div
@@ -502,8 +512,13 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
       
     
       <span
-        class="sap-icon--activate fd-list__thumbnail"
-      />
+        class="fd-list__thumbnail"
+      >
+        <i
+          class="sap-icon--activate"
+          role="presentation"
+        />
+      </span>
       
     
       <div
@@ -744,8 +759,13 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
         
       
         <span
-          class="sap-icon--activate fd-list__thumbnail"
-        />
+          class="fd-list__thumbnail"
+        >
+          <i
+            class="sap-icon--activate"
+            role="presentation"
+          />
+        </span>
         
       
         <div
@@ -951,8 +971,13 @@ exports[`Storyshots Components/List/Byline Standard 1`] = `
       
       
       <span
-        class="sap-icon--activate fd-list__thumbnail"
-      />
+        class="fd-list__thumbnail"
+      >
+        <i
+          class="sap-icon--activate"
+          role="presentation"
+        />
+      </span>
       
       
       <div
@@ -988,8 +1013,13 @@ exports[`Storyshots Components/List/Byline Standard 1`] = `
       
       
       <span
-        class="sap-icon--employee fd-list__thumbnail"
-      />
+        class="fd-list__thumbnail"
+      >
+        <i
+          class="sap-icon--employee"
+          role="presentation"
+        />
+      </span>
       
       
       <div
@@ -1119,8 +1149,13 @@ exports[`Storyshots Components/List/Byline Standard 1`] = `
       
       
       <span
-        class="sap-icon--activate fd-list__thumbnail"
-      />
+        class="fd-list__thumbnail"
+      >
+        <i
+          class="sap-icon--activate"
+          role="presentation"
+        />
+      </span>
       
       
       <div
@@ -1156,8 +1191,13 @@ exports[`Storyshots Components/List/Byline Standard 1`] = `
       
       
       <span
-        class="sap-icon--employee fd-list__thumbnail"
-      />
+        class="fd-list__thumbnail"
+      >
+        <i
+          class="sap-icon--employee"
+          role="presentation"
+        />
+      </span>
       
       
       <div
