@@ -15,9 +15,7 @@ export const large = () => `
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale">
-                        <span class="fd-numeric-content__scale-arrow" aria-label="decrease">
-                            <i class="sap-icon--down"></i>
-                        </span>
+                        <i class="fd-numeric-content__scale-arrow sap-icon--down" aria-label="decrease"></i>
                         <span class="fd-numeric-content__scale-text">M</span>
                     </div>
                 </div>
