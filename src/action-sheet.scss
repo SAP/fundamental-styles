@@ -36,7 +36,7 @@ $block: #{$fd-namespace}-action-sheet;
     @include fd-popover-border-radius();
 
     @include fd-pseudo-expand() {
-      opacity: var(--sapOverlay_Background_Opacity);
+      opacity: var(--fdOverlay_Background_Opacity);
       background-color: $fd-action-sheet-overlay-color;
 
       @include fd-popover-border-radius();

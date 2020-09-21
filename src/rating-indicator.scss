@@ -129,7 +129,7 @@ $block: #{$fd-namespace}-rating-indicator;
     }
 
     &:hover::before {
-      opacity: var(--sapRating_Indicator_Selected_Hover_Opacity);
+      opacity: var(--fdRating_Indicator_Selected_Hover_Opacity);
       transition: opacity $fd-animation-speed ease-in;
     }
   }
@@ -171,16 +171,16 @@ $block: #{$fd-namespace}-rating-indicator;
 
   @include fd-disabled() {
     pointer-events: none;
-    opacity: var(--sapRating_Indicator_Disabled_Control_Opacity);
+    opacity: var(--fdRating_Indicator_Disabled_Control_Opacity);
 
     .#{$block}__input {
       @include fd-icon-glyph('favorite') {
-        color: var(--sapRating_Indicator_Disabled_Selected_Color);
+        color: var(--fdRating_Indicator_Disabled_Selected_Color);
       }
 
       &:checked ~ input + .#{$block}__label {
         @include fd-icon-glyph('favorite') {
-          color: var(--sapRating_Indicator_Disabled_Unselected_Color);
+          color: var(--fdRating_Indicator_Disabled_Unselected_Color);
         }
       }
     }
@@ -193,7 +193,7 @@ $block: #{$fd-namespace}-rating-indicator;
 
     .#{$block}__label {
       @include fd-icon-glyph('favorite') {
-        color: var(--sapRating_Indicator_Display_Only_Selected_Color);
+        color: var(--fdRating_Indicator_Display_Only_Selected_Color);
       }
 
       &::before {
