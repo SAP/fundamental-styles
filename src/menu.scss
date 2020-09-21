@@ -186,6 +186,7 @@ $block: #{$fd-namespace}-menu;
   &__addon-after {
     @include fd-reset();
     @include fd-flex-center();
+    @include fd-icon-element-base();
 
     color: $fd-menu-icon-color;
     width: $fd-menu-icon-width;
@@ -198,22 +199,17 @@ $block: #{$fd-namespace}-menu;
   &__addon-before {
     margin: $fd-menu-icon-before-margin;
 
-    @include fd-icon-element-base();
-
     @include fd-rtl() {
       margin: $fd-menu-icon-after-margin;
     }
   }
 
   &__addon-after {
-    @include fd-flex-center();
-    @include fd-icon-element-base();
+    margin: $fd-menu-icon-after-margin;
 
     @include fd-rtl() {
       margin: $fd-menu-icon-before-margin;
     }
-
-    margin: $fd-menu-icon-after-margin;
 
     &--submenu {
       @include fd-icon("navigation-right-arrow");
