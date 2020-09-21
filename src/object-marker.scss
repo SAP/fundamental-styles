@@ -48,8 +48,6 @@ $block: #{$fd-namespace}-object-marker;
   }
 
   &__icon {
-    @include fd-reset();
-
     @include fd-icon-selector() {
       @include fd-flex-center();
 
