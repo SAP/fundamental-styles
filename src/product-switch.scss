@@ -181,8 +181,6 @@ $block: #{$fd-namespace}-product-switch;
   }
 
   &__icon {
-    @include fd-reset();
-
     @include fd-icon-selector() {
       font-size: 1.5rem;
       margin-bottom: 0.5rem;
