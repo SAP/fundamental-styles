@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.64](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.63...v0.12.0-rc.64) (2020-09-21)
+
+
+### Features
+
+* new Fiori 3 Wizard component ([#1621](https://github.com/SAP/fundamental-styles/issues/1621)) ([fa3533c](https://github.com/SAP/fundamental-styles/commit/fa3533cda258ba9060a024cf671bec664991fc0e))
+
 ## [0.12.0-rc.63](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.62...v0.12.0-rc.63) (2020-09-21)
 
 
