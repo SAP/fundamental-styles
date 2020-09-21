@@ -338,27 +338,27 @@ export const listCard = () => `
             <div class="fd-card__content" role="group" aria-label="Card Content">
                 <ul class="fd-list fd-list--no-border" role="list">
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--cart"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
                         <span class="fd-list__title">List item 1</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--wrench"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--wrench"></i>
                         <span class="fd-list__title">List item 2</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--leads"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--leads"></i>
                         <span class="fd-list__title">List item 3</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--batch-payments"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--batch-payments"></i>
                         <span class="fd-list__title">List item 4</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--retail-store"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--retail-store"></i>
                         <span class="fd-list__title">List item 3</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--travel-expense"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--travel-expense"></i>
                         <span class="fd-list__title">List item 4</span>
                     </li>
                 </ul>
@@ -381,27 +381,27 @@ export const listCard = () => `
             <div class="fd-card__content" role="group" aria-label="Card Content">
                 <ul class="fd-list fd-list--no-border fd-list--compact" role="list">
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--cart"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
                         <span class="fd-list__title">List item 1</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--wrench"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--wrench"></i>
                         <span class="fd-list__title">List item 2</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--leads"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--leads"></i>
                         <span class="fd-list__title">List item 3</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--batch-payments"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--batch-payments"></i>
                         <span class="fd-list__title">List item 4</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--retail-store"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--retail-store"></i>
                         <span class="fd-list__title">List item 3</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--travel-expense"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--travel-expense"></i>
                         <span class="fd-list__title">List item 4</span>
                     </li>
                 </ul>
