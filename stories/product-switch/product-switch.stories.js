@@ -9,9 +9,9 @@ export default {
 };
 
 export const productSwitchInShellbar = () => `
-<i style="background-color: #354A5F;text-align: right;padding: 6px;">
-    <i class="fd-product-switch">
-        <i class="fd-popover fd-popover--right">
+<div style="background-color: #354A5F;text-align: right;padding: 6px;">
+    <div class="fd-product-switch">
+        <div class="fd-popover fd-popover--right">
             <div class="fd-popover__control">
                 <button class="fd-button fd-button--transparent fd-popover__control fd-product-switch__control" 
                     aria-label="Image label" 
@@ -21,8 +21,8 @@ export const productSwitchInShellbar = () => `
                     <i class="sap-icon--grid"></i>
                 </button>
             </div>
-            <i class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="product-switch-body">
-                <i class="fd-product-switch__body">
+            <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="product-switch-body">
+                <div class="fd-product-switch__body">
                     <ul class="fd-product-switch__list">
                         <li class="fd-product-switch__item selected" tabindex="0">
                             <i role="presentation" class="fd-product-switch__icon sap-icon--home"></i>
@@ -99,7 +99,7 @@ export const productSwitchInShellbar = () => `
                             </div>
                         </li>
                         <li class="fd-product-switch__item" tabindex="0">
-                            <i role="presentation" class="fd-product-switch__icon sap-icon--family-care"></div>
+                            <i role="presentation" class="fd-product-switch__icon sap-icon--family-care"></i>
                             <div class="fd-product-switch__text">
                                 <div class="fd-product-switch__title">Service Cloud</div>
                             </div>
@@ -131,7 +131,7 @@ productSwitchInShellbar.parameters = {
 };
 
 export const productSwitchOnDesktop = () => `
-<i class="fd-product-switch__body">
+<div class="fd-product-switch__body">
    <ul class="fd-product-switch__list">
       <li class="fd-product-switch__item" tabindex="0">
          <i role="presentation" class="fd-product-switch__icon sap-icon--home"></i>
@@ -237,7 +237,7 @@ productSwitchOnDesktop.parameters = {
 };
 
 export const productSwitch3ColumnLayout = () => `
-<i class="fd-product-switch__body fd-product-switch__body--col-3">
+<div class="fd-product-switch__body fd-product-switch__body--col-3">
     <ul class="fd-product-switch__list">
         <li class="fd-product-switch__item" tabindex="0">
             <i role="presentation" class="fd-product-switch__icon sap-icon--home"></i>
@@ -287,8 +287,8 @@ Add the modifier class <code>fd-product-switch__body--col-3</code> for 3 column 
 
 
 export const smallestScreen = () => `
-<i style="width:450px;">
-    <i class="fd-product-switch__body fd-product-switch__body--mobile">
+<div style="width:450px;">
+    <div class="fd-product-switch__body fd-product-switch__body--mobile">
         <ul class="fd-product-switch__list">
             <li class="fd-product-switch__item" tabindex="0">
                 <i role="presentation" class="fd-product-switch__icon sap-icon--home"></i>
@@ -396,8 +396,8 @@ Add the modifier class <code>fd-product-switch__body--mobile</code> for a list l
     }
 };
 export const rtl = () => `
-<i style="width:450px;" dir="rtl">
-    <i class="fd-product-switch__body fd-product-switch__body--mobile">
+<div style="width:450px;" dir="rtl">
+    <div class="fd-product-switch__body fd-product-switch__body--mobile">
         <ul class="fd-product-switch__list">
             <li class="fd-product-switch__item" tabindex="0">
                 <i role="presentation" class="fd-product-switch__icon sap-icon--home"></i>
