@@ -460,7 +460,7 @@ export const tableCard = () => `
                             <td class="fd-table__cell">5 EUR</td>
                             <td class="fd-table__cell">India</td>
                             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                                <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                                <i role="presentation" class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></i>
                             </td>
                         </tr>
                         <tr class="fd-table__row">
@@ -477,7 +477,7 @@ export const tableCard = () => `
                             <td class="fd-table__cell">2 EUR</td>
                             <td class="fd-table__cell">Mexico</td>
                             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                                <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                                <i role="presentation" class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></i>
                             </td>
                         </tr>
                         <tr class="fd-table__row">
@@ -494,7 +494,7 @@ export const tableCard = () => `
                             <td class="fd-table__cell">6 EUR</td>
                             <td class="fd-table__cell">Spain</td>
                             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                                <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                                <i role="presentation" class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></i>
                             </td>
                         </tr>
                     </tbody>
@@ -537,7 +537,7 @@ export const tableCard = () => `
                             <td class="fd-table__cell">5 EUR</td>
                             <td class="fd-table__cell">India</td>
                             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                                <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                                <i role="presentation" class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></i>
                             </td>
                         </tr>
                         <tr class="fd-table__row">
@@ -550,7 +550,7 @@ export const tableCard = () => `
                             <td class="fd-table__cell">2 EUR</td>
                             <td class="fd-table__cell">Mexico</td>
                             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                                <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                                <i role="presentation" class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></i>
                             </td>
                         </tr>
                         <tr class="fd-table__row">
@@ -563,7 +563,7 @@ export const tableCard = () => `
                             <td class="fd-table__cell">6 EUR</td>
                             <td class="fd-table__cell">Spain</td>
                             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                                <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                                <i role="presentation" class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></i>
                             </td>
                         </tr>
                     </tbody>
