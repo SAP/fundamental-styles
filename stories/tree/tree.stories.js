@@ -197,7 +197,7 @@ export const treeWithExpandedLevel2AndNoBorders = () => `
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container">
             <button tabindex="0" class="fd-tree__expander is-expanded" aria-controls="TREE2L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true">
-                <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
             </button>
             <div class="fd-tree__content">
                 <i class="fd-tree__icon sap-icon--e-care" role="presentation"></i>
