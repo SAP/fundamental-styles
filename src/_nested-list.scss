@@ -209,7 +209,6 @@ $block: #{$fd-namespace}-nested-list;
 
   &__icon {
     @include fd-icon-element-base() {
-      @include fd-reset();
       @include fd-flex-center();
 
       height: 100%;
@@ -350,7 +349,9 @@ $block: #{$fd-namespace}-nested-list;
     }
 
     .#{$block}__icon {
-      font-size: var(--sapFontLargeSize);
+      @include fd-icon-selector() {
+        font-size: var(--sapFontLargeSize);
+      }
     }
   }
 }

@@ -67,25 +67,25 @@ export const cozyIcons = () => `
         <ul class="fd-nested-list">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--home"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--home"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link is-selected" href="#">
-                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--calendar"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--calendar"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--employee"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--employee"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--activities"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--activities"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
@@ -95,13 +95,13 @@ export const cozyIcons = () => `
         <ul class="fd-nested-list">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--compare"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--compare"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--chain-link"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--chain-link"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
@@ -213,20 +213,20 @@ export const complexCozySideNav = () => `
         <ul class="fd-nested-list " aria-labelledby="EX400H1">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--home"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--home"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--calendar"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--calendar"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <div class="fd-nested-list__content is-selected has-child">
                     <a class="fd-nested-list__link" href="#">
-                        <span aria-hidden="true" class="fd-nested-list__icon sap-icon--employee"></span>
+                        <i role="presentation" class="fd-nested-list__icon sap-icon--employee"></i>
                         <span class="fd-nested-list__title">Level 1 Item</span>
                     </a>
                     <button 
@@ -256,7 +256,7 @@ export const complexCozySideNav = () => `
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--activities"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--activities"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
@@ -267,7 +267,7 @@ export const complexCozySideNav = () => `
         <ul class="fd-nested-list" aria-labelledby="EX400H2">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--bar-chart"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--bar-chart"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
@@ -282,13 +282,13 @@ export const complexCozySideNav = () => `
         <ul class="fd-nested-list" aria-label="Utility Menu">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--compare"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--compare"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--chain-link"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--chain-link"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
@@ -314,20 +314,20 @@ export const complexCompactSideNav = () => `
         <ul class="fd-nested-list fd-nested-list--compact" aria-labelledby="EX500H1">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--home"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--home"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link is-selected" href="#">
-                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--calendar"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--calendar"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <div class="fd-nested-list__content has-child">
                     <a class="fd-nested-list__link" href="#">
-                        <span aria-hidden="true" class="fd-nested-list__icon sap-icon--employee"></span>
+                        <i role="presentation" class="fd-nested-list__icon sap-icon--employee"></i>
                         <span class="fd-nested-list__title">Level 1 Item</span>
                     </a>
                     <button class="fd-button fd-nested-list__button"
@@ -356,7 +356,7 @@ export const complexCompactSideNav = () => `
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--activities"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--activities"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
@@ -367,7 +367,7 @@ export const complexCompactSideNav = () => `
         <ul class="fd-nested-list fd-nested-list--compact" aria-labelledby="EX500H2">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--bar-chart"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--bar-chart"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
@@ -382,13 +382,13 @@ export const complexCompactSideNav = () => `
         <ul class="fd-nested-list fd-nested-list--compact" aria-label="Utility Menu">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--compare"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--compare"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-hidden="true" class="fd-nested-list__icon sap-icon--chain-link"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--chain-link"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
@@ -411,33 +411,33 @@ export const condensedStateCozy = () => `
         <ul class="fd-nested-list">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-label="Level 1 Item" class="fd-nested-list__icon sap-icon--home"></span>
+                    <i aria-label="Level 1 Item" class="fd-nested-list__icon sap-icon--home"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-label="Level 1 Item" class="fd-nested-list__icon sap-icon--calendar"></span>
+                    <i aria-label="Level 1 Item" class="fd-nested-list__icon sap-icon--calendar"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <div class="fd-nested-list__content is-selected has-child">
                     <button class="fd-nested-list__link" aria-controls="EX500L2" aria-haspopup="true" aria-expanded="false" aria-label="Expand submenu">
-                        <span aria-hidden="true" class="fd-nested-list__icon sap-icon--employee"></span>
+                        <i role="presentation" class="fd-nested-list__icon sap-icon--employee"></i>
                         <span class="fd-nested-list__title">Level 1 Item</span>
                     </button>
                 </div>
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-label="Level 1 Item" class="fd-nested-list__icon sap-icon--activities"></span>
+                    <i aria-label="Level 1 Item" class="fd-nested-list__icon sap-icon--activities"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-label="Level 1 Item" class="fd-nested-list__icon sap-icon--bar-chart"></span>
+                    <i aria-label="Level 1 Item" class="fd-nested-list__icon sap-icon--bar-chart"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
@@ -447,13 +447,13 @@ export const condensedStateCozy = () => `
         <ul class="fd-nested-list">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-label="Level 1 Item" class="fd-nested-list__icon sap-icon--compare"></span>
+                    <i aria-label="Level 1 Item" class="fd-nested-list__icon sap-icon--compare"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-label="Level 1 Item" class="fd-nested-list__icon sap-icon--chain-link"></span>
+                    <i aria-label="Level 1 Item" class="fd-nested-list__icon sap-icon--chain-link"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
@@ -476,33 +476,33 @@ export const condensedStateCompact = () => `
         <ul class="fd-nested-list fd-nested-list--compact">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-label="Level 1 Item" class="fd-nested-list__icon sap-icon--home"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--home"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-label="Level 1 Item" class="fd-nested-list__icon sap-icon--calendar"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--calendar"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <div class="fd-nested-list__content is-selected has-child">
                     <button class="fd-nested-list__link" aria-controls="EX600L2" aria-haspopup="true" aria-expanded="false" aria-label="Expand submenu">
-                        <span aria-hidden="true" class="fd-nested-list__icon sap-icon--employee"></span>
+                        <i role="presentation" class="fd-nested-list__icon sap-icon--employee"></i>
                         <span class="fd-nested-list__title">Level 1 Item</span>
                     </button>
                 </div>
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-label="Level 1 Item" class="fd-nested-list__icon sap-icon--activities"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--activities"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-label="Level 1 Item" class="fd-nested-list__icon sap-icon--bar-chart"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--bar-chart"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
@@ -512,13 +512,13 @@ export const condensedStateCompact = () => `
         <ul class="fd-nested-list fd-nested-list--compact" aria-label="Utility Menu">
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-label="Level 1 Item" class="fd-nested-list__icon sap-icon--compare"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--compare"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
             <li class="fd-nested-list__item">
                 <a class="fd-nested-list__link" href="#">
-                    <span aria-label="Level 1 Item" class="fd-nested-list__icon sap-icon--chain-link"></span>
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--chain-link"></i>
                     <span class="fd-nested-list__title">Level 1 Item</span>
                 </a>
             </li>
@@ -697,20 +697,20 @@ export const nestedListWithIconsOnlyInFirstLevel = () => `
 <ul class="fd-nested-list">
     <li class="fd-nested-list__item">
         <a class="fd-nested-list__link"href="#/">
-            <span aria-hidden="true" class="fd-nested-list__icon sap-icon--home"></span>
+            <i role="presentation" class="fd-nested-list__icon sap-icon--home"></i>
             <span class="fd-nested-list__title">Level 1 Item</span>
         </a>
     </li>
     <li class="fd-nested-list__item">
         <a class="fd-nested-list__link is-selected"href="#/">
-            <span aria-hidden="true" class="fd-nested-list__icon sap-icon--calendar"></span>
+            <i role="presentation" class="fd-nested-list__icon sap-icon--calendar"></i>
             <span class="fd-nested-list__title">Level 1 Item</span>
         </a>
     </li>
     <li class="fd-nested-list__item">
 	   <div class="fd-nested-list__content has-child is-expanded" tabindex="0">
 			<a class="fd-nested-list__link" href="#" tabindex="-1">
-				<span aria-hidden="true" class="fd-nested-list__icon sap-icon--employee"></span>
+				<i role="presentation" class="fd-nested-list__icon sap-icon--employee"></i>
 				<span class="fd-nested-list__title">Level 1 Item</span>
 			</a>
             <button class="fd-button fd-nested-list__button"
@@ -787,13 +787,13 @@ export const nestedListWithIconsOnlyInFirstLevel = () => `
     </li>
     <li class="fd-nested-list__item">
         <a class="fd-nested-list__link"href="#/">
-            <span aria-hidden="true" class="fd-nested-list__icon sap-icon--activities"></span>
+            <i role="presentation" class="fd-nested-list__icon sap-icon--activities"></i>
             <span class="fd-nested-list__title">Level 1 Item</span>
         </a>
     </li>
     <li class="fd-nested-list__item">
         <a class="fd-nested-list__link"href="#/">
-            <span aria-hidden="true" class="fd-nested-list__icon sap-icon--bar-chart"></span>
+            <i role="presentation" class="fd-nested-list__icon sap-icon--bar-chart"></i>
             <span class="fd-nested-list__title">Level 1 Item</span>
         </a>
     </li>
@@ -818,20 +818,20 @@ export const nestedListWithGroupHeaders = () => `
     </li>
     <li class="fd-nested-list__item">
         <a class="fd-nested-list__link"href="#/">
-            <span aria-hidden="true" class="fd-nested-list__icon sap-icon--home"></span>
+            <i role="presentation" class="fd-nested-list__icon sap-icon--home"></i>
             <span class="fd-nested-list__title">Level 1 Item</span>
         </a>
     </li>
     <li class="fd-nested-list__item">
         <a class="fd-nested-list__link is-selected"href="#/">
-            <span aria-hidden="true" class="fd-nested-list__icon sap-icon--calendar"></span>
+            <i role="presentation" class="fd-nested-list__icon sap-icon--calendar"></i>
             <span class="fd-nested-list__title">Level 1 Item</span>
         </a>
     </li>
     <li class="fd-nested-list__item">
 	   <div class="fd-nested-list__content has-child" tabindex="0">
 			<a class="fd-nested-list__link" href="#" tabindex="-1">
-				<span aria-hidden="true" class="fd-nested-list__icon sap-icon--employee"></span>
+				<i role="presentation" class="fd-nested-list__icon sap-icon--employee"></i>
 				<span class="fd-nested-list__title">Level 1 Item</span>
 			</a>
             <button class="fd-button fd-nested-list__button"
@@ -908,7 +908,7 @@ export const nestedListWithGroupHeaders = () => `
     </li>
     <li class="fd-nested-list__item">
         <a class="fd-nested-list__link"href="#/">
-            <span aria-hidden="true" class="fd-nested-list__icon sap-icon--activities"></span>
+            <i role="presentation" class="fd-nested-list__icon sap-icon--activities"></i>
             <span class="fd-nested-list__title">Level 1 Item</span>
         </a>
     </li>
@@ -917,7 +917,7 @@ export const nestedListWithGroupHeaders = () => `
     </li>
     <li class="fd-nested-list__item">
         <a class="fd-nested-list__link"href="#/">
-            <span aria-hidden="true" class="fd-nested-list__icon sap-icon--bar-chart"></span>
+            <i role="presentation" class="fd-nested-list__icon sap-icon--bar-chart"></i>
             <span class="fd-nested-list__title">Level 1 Item</span>
         </a>
     </li>
@@ -942,20 +942,20 @@ export const nestedListWithGroupHeadersCompactMode = () => `
     </li>
     <li class="fd-nested-list__item">
         <a class="fd-nested-list__link"href="#/">
-            <span aria-hidden="true" class="fd-nested-list__icon sap-icon--home"></span>
+            <i role="presentation" class="fd-nested-list__icon sap-icon--home"></i>
             <span class="fd-nested-list__title">Level 1 Item</span>
         </a>
     </li>
     <li class="fd-nested-list__item">
         <a class="fd-nested-list__link is-selected"href="#/">
-            <span aria-hidden="true" class="fd-nested-list__icon sap-icon--calendar"></span>
+            <i role="presentation" class="fd-nested-list__icon sap-icon--calendar"></i>
             <span class="fd-nested-list__title">Level 1 Item</span>
         </a>
     </li>
     <li class="fd-nested-list__item">
 	   <div class="fd-nested-list__content has-child" tabindex="0">
 			<a class="fd-nested-list__link" href="#" tabindex="-1">
-            	<span aria-hidden="true" class="fd-nested-list__icon sap-icon--employee"></span>
+            	<i role="presentation" class="fd-nested-list__icon sap-icon--employee"></i>
 				<span class="fd-nested-list__title">Level 1 Item</span>
 			</a>
             <button class="fd-button fd-nested-list__button"
@@ -1032,7 +1032,7 @@ export const nestedListWithGroupHeadersCompactMode = () => `
     </li>
     <li class="fd-nested-list__item">
         <a class="fd-nested-list__link"href="#/">
-            <span aria-hidden="true" class="fd-nested-list__icon sap-icon--activities"></span>
+            <i role="presentation" class="fd-nested-list__icon sap-icon--activities"></i>
             <span class="fd-nested-list__title">Level 1 Item</span>
         </a>
     </li>
@@ -1041,7 +1041,7 @@ export const nestedListWithGroupHeadersCompactMode = () => `
     </li>
     <li class="fd-nested-list__item">
         <a class="fd-nested-list__link"href="#/">
-            <span aria-hidden="true" class="fd-nested-list__icon sap-icon--bar-chart"></span>
+            <i role="presentation" class="fd-nested-list__icon sap-icon--bar-chart"></i>
             <span class="fd-nested-list__title">Level 1 Item</span>
         </a>
     </li>
@@ -1066,19 +1066,19 @@ export const nestedListWithoutLinks = () => `
     </li>
     <li class="fd-nested-list__item">
         <div class="fd-nested-list__content">
-            <span aria-hidden="true" class="fd-nested-list__icon sap-icon--home"></span>
+            <i role="presentation" class="fd-nested-list__icon sap-icon--home"></i>
             <span class="fd-nested-list__title">Level 1 Item</span>
         </div>
     </li>
     <li class="fd-nested-list__item">
         <div class="fd-nested-list__content is-selected">
-            <span aria-hidden="true" class="fd-nested-list__icon sap-icon--calendar"></span>
+            <i role="presentation" class="fd-nested-list__icon sap-icon--calendar"></i>
             <span class="fd-nested-list__title">Level 1 Item</span>
         </div>
     </li>
     <li class="fd-nested-list__item">
 	   <div class="fd-nested-list__content has-child" tabindex="0">
-            <span aria-hidden="true" class="fd-nested-list__icon sap-icon--employee"></span>
+            <i role="presentation" class="fd-nested-list__icon sap-icon--employee"></i>
 			<span class="fd-nested-list__title">Level 1 Item</span>
             <button class="fd-button fd-nested-list__button"
                 aria-controls="EX600L2"
@@ -1150,7 +1150,7 @@ export const nestedListWithoutLinks = () => `
     </li>
     <li class="fd-nested-list__item">
         <div class="fd-nested-list__content">
-            <span aria-hidden="true" class="fd-nested-list__icon sap-icon--activities"></span>
+            <i role="presentation" class="fd-nested-list__icon sap-icon--activities"></i>
             <span class="fd-nested-list__title">Level 1 Item</span>
         </div>
     </li>
@@ -1159,7 +1159,7 @@ export const nestedListWithoutLinks = () => `
     </li>
     <li class="fd-nested-list__item">
         <div class="fd-nested-list__content">
-            <span aria-hidden="true" class="fd-nested-list__icon sap-icon--bar-chart"></span>
+            <i role="presentation" class="fd-nested-list__icon sap-icon--bar-chart"></i>
             <span class="fd-nested-list__title">Level 1 Item</span>
         </div>
     </li>
@@ -1185,20 +1185,20 @@ export const rtlExample = () => `
     </li>
     <li class="fd-nested-list__item">
         <a class="fd-nested-list__link"href="#/">
-            <span aria-hidden="true" class="fd-nested-list__icon sap-icon--home" aria-hidden="true"></span>
+            <i role="presentation" class="fd-nested-list__icon sap-icon--home"></i>
             <span class="fd-nested-list__title">Level 1 Item</span>
         </a>
     </li>
     <li class="fd-nested-list__item">
         <a class="fd-nested-list__link is-selected"href="#/">
-            <span aria-hidden="true" class="fd-nested-list__icon sap-icon--calendar"></span>
+            <i role="presentation" class="fd-nested-list__icon sap-icon--calendar"></i>
             <span class="fd-nested-list__title">Level 1 Item</span>
         </a>
     </li>
     <li class="fd-nested-list__item">
 	   <div class="fd-nested-list__content has-child" tabindex="0">
 			<a class="fd-nested-list__link" href="#" tabindex="-1">
-				<span aria-hidden="true" class="fd-nested-list__icon sap-icon--employee"></span>
+				<i role="presentation" class="fd-nested-list__icon sap-icon--employee"></i>
 				<span class="fd-nested-list__title">Level 1 Item</span>
 			</a>
             <button class="fd-button fd-nested-list__button" 
@@ -1275,7 +1275,7 @@ export const rtlExample = () => `
     </li>
     <li class="fd-nested-list__item">
         <a class="fd-nested-list__link"href="#/">
-            <span aria-hidden="true" class="fd-nested-list__icon sap-icon--activities"></span>
+            <i role="presentation" class="fd-nested-list__icon sap-icon--activities"></i>
             <span class="fd-nested-list__title">Level 1 Item</span>
         </a>
     </li>
@@ -1284,7 +1284,7 @@ export const rtlExample = () => `
     </li>
     <li class="fd-nested-list__item">
         <a class="fd-nested-list__link"href="#/">
-            <span aria-hidden="true" class="fd-nested-list__icon sap-icon--bar-chart"></span>
+            <i role="presentation" class="fd-nested-list__icon sap-icon--bar-chart"></i>
             <span class="fd-nested-list__title">Level 1 Item</span>
         </a>
     </li>
