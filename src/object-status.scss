@@ -230,8 +230,6 @@ $inverted-color-accents: (
   }
 
   &__icon {
-    @include fd-reset();
-
     @include fd-icon-element-base() {
       @include fd-flex-center();
 
