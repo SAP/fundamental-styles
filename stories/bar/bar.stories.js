@@ -561,41 +561,47 @@ Footer.parameters = {
 };
 
 export const FloatingFooter = () => `
-<div><b>Default (desktop)</b></div>
+<div style="margin-bottom: 2rem;"><b>Default (desktop)</b></div>
 <br>
-<div class="fd-bar fd-bar--floating-footer">
-    <div class="fd-bar__right">
-        <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
-        </div>
-        <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
+<div style="position: relative;">
+    <div class="fd-bar fd-bar--floating-footer">
+        <div class="fd-bar__right">
+            <div class="fd-bar__element">
+                <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
+            </div>
+            <div class="fd-bar__element">
+                <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
+            </div>
         </div>
     </div>
 </div>
 <br><br>
-<div><b>Cozy (tablet and mobile)</b></div>
+<div style="margin-bottom: 2rem;"><b>Cozy (tablet and mobile)</b></div>
 <br>
-<div class="fd-bar fd-bar--floating-footer fd-bar--cozy">
-    <div class="fd-bar__right">
-        <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--emphasized">Save</button>
-        </div>
-        <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent">Cancel</button>
+<div style="position: relative;">
+    <div class="fd-bar fd-bar--floating-footer fd-bar--cozy">
+        <div class="fd-bar__right">
+            <div class="fd-bar__element">
+                <button aria-label="button" class="fd-button fd-button--emphasized">Save</button>
+            </div>
+            <div class="fd-bar__element">
+                <button aria-label="button" class="fd-button fd-button--transparent">Cancel</button>
+            </div>
         </div>
     </div>
 </div>
 <br><br>
-<div><b>RTL Support</b></div>
+<div style="margin-bottom: 2rem;"><b>RTL Support</b></div>
 <br>
-<div class="fd-bar fd-bar--floating-footer" dir="rtl">
-    <div class="fd-bar__right">
-        <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
-        </div>
-        <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
+<div style="position: relative;">
+    <div class="fd-bar fd-bar--floating-footer" dir="rtl">
+        <div class="fd-bar__right">
+            <div class="fd-bar__element">
+                <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
+            </div>
+            <div class="fd-bar__element">
+                <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
+            </div>
         </div>
     </div>
 </div>
