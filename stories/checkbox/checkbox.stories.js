@@ -21,7 +21,7 @@ Note: With checkboxes, all options are visible, and the user can make one or mor
 - the options are displayed right away without any user interaction.
 - An intermediate selection state (tri-state) is required when multiple sub-options are grouped under a parent option. The tri-state will represent that multiple (but not all) sub-options are selected in the list.
 
-**Do not use the checkbox control if:**
+**Do not use the checkbox if:**
 
 - The user needs to choose multiple options from a large list. Use a **Combo Box Input** instead.
 - The user can choose only one option from a list. Use **Radio Buttons**, a **Select**, or a **List** instead.
@@ -133,11 +133,16 @@ ${localStyles}
 </div>
 `;
 
-primary.storyName = 'Responsiveness';
+primary.storyName = 'Desktop';
 primary.parameters = {
     docs: {
         iframeHeight: 330,
-        storyDescription: 'A checkbox can appear in two different sizes. In `cozy` mode, it is bigger than it is in `compact` mode. This makes the checkbox easier to select on touch devices.'
+        storyDescription: `A checkbox can be displayed in two different sizes desktop (compact) and mobile (cozy). The default checkbox appears smaller and uses the <code>fd-checkbox\\_\\_label--compact</code> modifier class.
+        
+Mobile
+
+A checkbox can display larger so users can select options easier on a mobile screen by adding the <code>fd-checkbox\\_\\_label--cozy</code> modifier class to the element.
+        `
     }
 };
 
@@ -166,7 +171,14 @@ export const inline = () => `
     </div>
 </fieldset>
 `;
-inline.storyName = 'Checkboxes listed inline';
+
+inline.storyName = 'Inline';
+inline.parameters = {
+    docs: {
+        iframeHeight: 400,
+        storyDescription: 'Checkboxes can display horizontally in a line. To display them this way, add the <code>fd-checkbox__label--inline</code> modifier class to the element.'
+    }
+};
 
 export const states = () => `
 ${localStyles}
@@ -293,10 +305,20 @@ ${localStyles}
 </div>
 `;
 
-states.storyName = 'Interaction States';
+states.storyName = 'States';
 states.parameters = {
     docs: {
-        iframeHeight: 400
+        iframeHeight: 400,
+        storyDescription: `Checkboxes can display several interaction states to communicate semantic meaning to the users. To display different states, Add the classes below to the <code>fd-form-item</code>:
+
+| States | Class |
+| :----------------- | :------------------ |
+| Error | <code>fd-checkbox is-error</code> |
+| Success | <code>fd-checkbox is-success</code> |
+| Warning | <code>fd-checkbox is-warning</code> |
+| Information | <code>fd-checkbox is-information</code> |
+| Disabled | <code>fd-checkbox is-disabled</code> |
+`
     }
 };
 
@@ -326,9 +348,10 @@ export const rtl = () => `
 </fieldset>
 `;
 
-rtl.storyName = 'Checkboxes in RTL Mode';
+rtl.storyName = 'RTL';
 rtl.parameters = {
     docs: {
-        iframeHeight: 200
+        iframeHeight: 200,
+        storyDescription: 'Checkboxes can also be displayed from right to left on the screen so they may be used internationally.'
     }
 };
