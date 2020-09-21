@@ -108,26 +108,30 @@ $block: #{$fd-namespace}-switch;
   }
 
   &__icon {
-    @include fd-reset();
-    @include fd-icon-element-base();
-    @include fd-flex-center();
+    @include fd-icon-selector() {
+      @include fd-flex-center();
 
-    width: $fd-switch-label-width;
-    min-width: $fd-switch-label-width;
-    font-size: 0.75rem;
-    line-height: 1.375rem;
-    transition: $fd-switch-semantic-icon-transition;
+      width: $fd-switch-label-width;
+      min-width: $fd-switch-label-width;
+      font-size: 0.75rem;
+      line-height: 1.375rem;
+      transition: $fd-switch-semantic-icon-transition;
+    }
 
     &--off {
-      color: var(--sapNegativeElementColor);
-      margin: 0 0.125rem 0 0;
+      @include fd-icon-selector() {
+        color: var(--sapNegativeElementColor);
+        margin: 0 0.125rem 0 0;
+      }
     }
 
     &--on {
-      color: var(--sapPositiveElementColor);
-      margin: 0 0 0 0.125rem;
-      visibility: hidden;
-      opacity: $fd-switch-off-opacity;
+      @include fd-icon-selector() {
+        color: var(--sapPositiveElementColor);
+        margin: 0 0 0 0.125rem;
+        visibility: hidden;
+        opacity: $fd-switch-off-opacity;
+      }
     }
   }
 
@@ -198,13 +202,17 @@ $block: #{$fd-namespace}-switch;
 
     .#{$block}__icon {
       &--off {
-        opacity: $fd-switch-off-opacity;
-        visibility: hidden;
+        @include fd-icon-selector() {
+          opacity: $fd-switch-off-opacity;
+          visibility: hidden;
+        }
       }
 
       &--on {
-        opacity: $fd-switch-on-opacity;
-        visibility: visible;
+        @include fd-icon-selector() {
+          opacity: $fd-switch-on-opacity;
+          visibility: visible;
+        }
       }
     }
   }
