@@ -8,34 +8,27 @@
   // Display Only mode
   --fdRating_Indicator_Display_Only_Selected_Color: var(--sapTextColor);
   // Disabled mode
-<<<<<<< HEAD
   --fdRating_Indicator_Disabled_Selected_Color: var(--sapContent_RatedColor);
   --fdRating_Indicator_Disabled_Unselected_Color: var(--sapContent_UnratedColor);
   --fdRating_Indicator_Disabled_Control_Opacity: 0.4;
-  
-=======
-  --sapRating_Indicator_Disabled_Selected_Color: var(--sapContent_RatedColor);
-  --sapRating_Indicator_Disabled_Unselected_Color: var(--sapContent_UnratedColor);
-  --sapRating_Indicator_Disabled_Control_Opacity: 0.4;
 
->>>>>>> add action sheet to stacked items
   /* Wizard */
-  --sapWizard_Completed_Step_Color: var(--sapSelectedColor);
-  --sapWizard_Completed_Step_Border: 0.0625rem solid var(--sapSelectedColor);
-  --sapWizard_Completed_Step_Icon_Color: var(--sapSelectedColor);
-  --sapWizard_Current_Step_Color: var(--sapContent_ContrastTextColor);
-  --sapWizard_Current_Step_Icon_Color: var(--sapContent_ContrastIconColor);
-  --sapWizard_Upcoming_Step_Color: var(--sapContent_LabelColor);
-  --sapWizard_Upcoming_Step_Icon_Color: var(--sapContent_LabelColor);
-  --sapWizard_Upcoming_Step_Border: 0.0625rem solid var(--sapList_BorderColor);
-  --sapWizard_Active_Step_Color: var(--sapContent_ContrastTextColor);
-  --sapWizard_Active_Step_Icon_Color: var(--sapContent_ContrastIconColor);
-  --sapWizard_Active_Step_Border_Color: var(--sapActiveColor);
-  --sapWizard_Connector_Active_Border_Color: var(--sapSelectedColor);
-  --sapWizard_Content_Default_Background: var(--sapBackgroundColor);
-  --sapWizard_Content_Solid_Background: var(--sapShell_Background);
-  --sapWizard_Content_List_Background: var(--sapGroup_ContentBackground);
-  --sapWizard_Content_Transparent_Background: transparent;
-  --sapWizard_Selection_Bar_Height: 0.188rem;
-  --sapWizard_Selection_Bar_Background: var(--sapSelectedColor);
+  --fdWizard_Completed_Step_Color: var(--sapSelectedColor);
+  --fdWizard_Completed_Step_Border: 0.0625rem solid var(--sapSelectedColor);
+  --fdWizard_Completed_Step_Icon_Color: var(--sapSelectedColor);
+  --fdWizard_Current_Step_Color: var(--sapContent_ContrastTextColor);
+  --fdWizard_Current_Step_Icon_Color: var(--sapContent_ContrastIconColor);
+  --fdWizard_Upcoming_Step_Color: var(--sapContent_LabelColor);
+  --fdWizard_Upcoming_Step_Icon_Color: var(--sapContent_LabelColor);
+  --fdWizard_Upcoming_Step_Border: 0.0625rem solid var(--sapList_BorderColor);
+  --fdWizard_Active_Step_Color: var(--sapContent_ContrastTextColor);
+  --fdWizard_Active_Step_Icon_Color: var(--sapContent_ContrastIconColor);
+  --fdWizard_Active_Step_Border_Color: var(--sapActiveColor);
+  --fdWizard_Connector_Active_Border_Color: var(--sapSelectedColor);
+  --fdWizard_Content_Default_Background: var(--sapBackgroundColor);
+  --fdWizard_Content_Solid_Background: var(--sapShell_Background);
+  --fdWizard_Content_List_Background: var(--sapGroup_ContentBackground);
+  --fdWizard_Content_Transparent_Background: transparent;
+  --fdWizard_Selection_Bar_Height: 0.188rem;
+  --fdWizard_Selection_Bar_Background: var(--sapSelectedColor);
 }

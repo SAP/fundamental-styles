@@ -53,8 +53,17 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
               
                         
               <span
-                class="fd-wizard__step-indicator sap-icon--person-placeholder"
-              />
+                class="fd-wizard__step-indicator"
+              >
+                
+                            
+                <i
+                  class="fd-wizard__icon sap-icon--person-placeholder"
+                  role="presentation"
+                />
+                
+                        
+              </span>
               
                         
               <div
@@ -104,8 +113,17 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
               
                         
               <span
-                class="fd-wizard__step-indicator sap-icon--contacts"
-              />
+                class="fd-wizard__step-indicator"
+              >
+                
+                            
+                <i
+                  class="fd-wizard__icon sap-icon--contacts"
+                  role="presentation"
+                />
+                
+                        
+              </span>
               
                         
               <div
@@ -162,8 +180,17 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
               
                         
               <span
-                class="fd-wizard__step-indicator sap-icon--money-bills"
-              />
+                class="fd-wizard__step-indicator"
+              >
+                
+                            
+                <i
+                  class="fd-wizard__icon sap-icon--money-bills"
+                  role="presentation"
+                />
+                
+                        
+              </span>
               
                         
               <div
@@ -213,8 +240,17 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
               
                         
               <span
-                class="fd-wizard__step-indicator sap-icon--batch-payments"
-              />
+                class="fd-wizard__step-indicator"
+              >
+                
+                            
+                <i
+                  class="fd-wizard__icon sap-icon--batch-payments"
+                  role="presentation"
+                />
+                
+                        
+              </span>
               
                         
               <div
@@ -265,8 +301,17 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
               
                         
               <span
-                class="fd-wizard__step-indicator sap-icon--shipping-status"
-              />
+                class="fd-wizard__step-indicator"
+              >
+                
+                            
+                <i
+                  class="fd-wizard__icon sap-icon--shipping-status"
+                  role="presentation"
+                />
+                
+                        
+              </span>
               
                         
               <div
@@ -411,8 +456,17 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
               
                         
               <span
-                class="fd-wizard__step-indicator sap-icon--person-placeholder"
-              />
+                class="fd-wizard__step-indicator"
+              >
+                
+                            
+                <i
+                  class="fd-wizard__icon sap-icon--person-placeholder"
+                  role="presentation"
+                />
+                
+                        
+              </span>
               
                         
               <div
@@ -462,8 +516,17 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
               
                         
               <span
-                class="fd-wizard__step-indicator sap-icon--contacts"
-              />
+                class="fd-wizard__step-indicator"
+              >
+                
+                            
+                <i
+                  class="fd-wizard__icon sap-icon--contacts"
+                  role="presentation"
+                />
+                
+                        
+              </span>
               
                         
               <div
@@ -520,8 +583,17 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
               
                         
               <span
-                class="fd-wizard__step-indicator sap-icon--money-bills"
-              />
+                class="fd-wizard__step-indicator"
+              >
+                
+                            
+                <i
+                  class="fd-wizard__icon sap-icon--money-bills"
+                  role="presentation"
+                />
+                
+                        
+              </span>
               
                         
               <div
@@ -571,8 +643,17 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
               
                         
               <span
-                class="fd-wizard__step-indicator sap-icon--batch-payments"
-              />
+                class="fd-wizard__step-indicator"
+              >
+                
+                            
+                <i
+                  class="fd-wizard__icon sap-icon--batch-payments"
+                  role="presentation"
+                />
+                
+                        
+              </span>
               
                         
               <div
@@ -623,8 +704,17 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
               
                         
               <span
-                class="fd-wizard__step-indicator sap-icon--shipping-status"
-              />
+                class="fd-wizard__step-indicator"
+              >
+                
+                            
+                <i
+                  class="fd-wizard__icon sap-icon--shipping-status"
+                  role="presentation"
+                />
+                
+                        
+              </span>
               
                         
               <div
@@ -675,8 +765,17 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
               
                         
               <span
-                class="fd-wizard__step-indicator sap-icon--product"
-              />
+                class="fd-wizard__step-indicator"
+              >
+                
+                            
+                <i
+                  class="fd-wizard__icon sap-icon--product"
+                  role="presentation"
+                />
+                
+                        
+              </span>
               
                         
               <div
@@ -734,8 +833,17 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
               
                         
               <span
-                class="fd-wizard__step-indicator sap-icon--course-program"
-              />
+                class="fd-wizard__step-indicator"
+              >
+                
+                            
+                <i
+                  class="fd-wizard__icon sap-icon--course-program"
+                  role="presentation"
+                />
+                
+                        
+              </span>
               
                         
               <div
@@ -880,8 +988,17 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
               
                         
               <span
-                class="fd-wizard__step-indicator sap-icon--person-placeholder"
-              />
+                class="fd-wizard__step-indicator"
+              >
+                
+                            
+                <i
+                  class="fd-wizard__icon sap-icon--person-placeholder"
+                  role="presentation"
+                />
+                
+                        
+              </span>
               
                         
               <div
@@ -931,8 +1048,17 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
               
                         
               <span
-                class="fd-wizard__step-indicator sap-icon--contacts"
-              />
+                class="fd-wizard__step-indicator"
+              >
+                
+                            
+                <i
+                  class="fd-wizard__icon sap-icon--contacts"
+                  role="presentation"
+                />
+                
+                        
+              </span>
               
                         
               <div
@@ -1003,8 +1129,17 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                   
                                     
                   <span
-                    class="fd-wizard__step-indicator sap-icon--money-bills"
-                  />
+                    class="fd-wizard__step-indicator"
+                  >
+                    
+                                        
+                    <i
+                      class="fd-wizard__icon sap-icon--money-bills"
+                      role="presentation"
+                    />
+                    
+                                    
+                  </span>
                   
                                     
                   <div
@@ -1055,6 +1190,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                                             
                       <i
                         class=" sap-icon--money-bills"
+                        role="presentation"
                       />
                       
                                             
@@ -1084,6 +1220,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                                             
                       <i
                         class="sap-icon--contacts"
+                        role="presentation"
                       />
                       
                                             
@@ -1113,6 +1250,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                                             
                       <i
                         class="sap-icon--person-placeholder"
+                        role="presentation"
                       />
                       
                                             
@@ -1167,8 +1305,17 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
               
                         
               <span
-                class="fd-wizard__step-indicator sap-icon--batch-payments"
-              />
+                class="fd-wizard__step-indicator"
+              >
+                
+                            
+                <i
+                  class="fd-wizard__icon sap-icon--batch-payments"
+                  role="presentation"
+                />
+                
+                        
+              </span>
               
                         
               <div
@@ -1219,8 +1366,17 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
               
                         
               <span
-                class="fd-wizard__step-indicator sap-icon--shipping-status"
-              />
+                class="fd-wizard__step-indicator"
+              >
+                
+                            
+                <i
+                  class="fd-wizard__icon sap-icon--shipping-status"
+                  role="presentation"
+                />
+                
+                        
+              </span>
               
                         
               <div
@@ -1271,8 +1427,17 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
               
                         
               <span
-                class="fd-wizard__step-indicator sap-icon--product"
-              />
+                class="fd-wizard__step-indicator"
+              >
+                
+                            
+                <i
+                  class="fd-wizard__icon sap-icon--product"
+                  role="presentation"
+                />
+                
+                        
+              </span>
               
                         
               <div
@@ -1330,8 +1495,17 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
               
                         
               <span
-                class="fd-wizard__step-indicator sap-icon--course-program"
-              />
+                class="fd-wizard__step-indicator"
+              >
+                
+                            
+                <i
+                  class="fd-wizard__icon sap-icon--course-program"
+                  role="presentation"
+                />
+                
+                        
+              </span>
               
                         
               <div

@@ -72,11 +72,11 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     &--completed {
       .#{$block}__step-indicator {
         background: var(--sapObjectHeader_Background);
-        color: var(--sapWizard_Completed_Step_Color);
-        border: var(--sapWizard_Completed_Step_Border);
+        color: var(--fdWizard_Completed_Step_Color);
+        border: var(--fdWizard_Completed_Step_Border);
 
-        &::before {
-          color: var(--sapWizard_Completed_Step_Icon_Color);
+        .#{$block}__icon {
+          color: var(--fdWizard_Completed_Step_Icon_Color);
         }
       }
     }
@@ -85,10 +85,10 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
       .#{$block}__step-indicator {
         position: relative;
         background: var(--sapSelectedColor);
-        color: var(--sapWizard_Current_Step_Color);
+        color: var(--fdWizard_Current_Step_Color);
 
-        &::before {
-          color: var(--sapWizard_Current_Step_Icon_Color);
+        .#{$block}__icon {
+          color: var(--fdWizard_Current_Step_Icon_Color);
         }
 
         // Selection Bar
@@ -99,8 +99,8 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
           position: absolute;
           display: inline-block;
           width: calc(100% + 2 * 0.1875rem);
-          height: var(--sapWizard_Selection_Bar_Height);
-          background: var(--sapWizard_Selection_Bar_Background);
+          height: var(--fdWizard_Selection_Bar_Height);
+          background: var(--fdWizard_Selection_Bar_Background);
           border-radius: 0.125rem 0.125rem 0 0;
           transition: all $fd-animation-speed ease-in;
         }
@@ -110,11 +110,11 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     &--upcoming {
       .#{$block}__step-indicator {
         background: var(--sapObjectHeader_Background);
-        border: var(--sapWizard_Upcoming_Step_Border);
-        color: var(--sapWizard_Upcoming_Step_Color);
+        border: var(--fdWizard_Upcoming_Step_Border);
+        color: var(--fdWizard_Upcoming_Step_Color);
 
-        &::before {
-          color: var(--sapWizard_Upcoming_Step_Icon_Color);
+        .#{$block}__icon {
+          color: var(--fdWizard_Upcoming_Step_Icon_Color);
         }
       }
 
@@ -175,12 +175,12 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     &--active {
       .#{$block}__step-indicator {
         background: var(--sapActiveColor);
-        border-color: var(--sapWizard_Active_Step_Border_Color);
-        color: var(--sapWizard_Active_Step_Color);
+        border-color: var(--fdWizard_Active_Step_Border_Color);
+        color: var(--fdWizard_Active_Step_Color);
       }
 
-      &::before {
-        color: var(--sapWizard_Active_Step_Icon_Color);
+      .#{$block}__icon {
+        color: var(--fdWizard_Active_Step_Icon_Color);
       }
     }
   }
@@ -208,10 +208,14 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     width: $fd-wizard-step-indicator-size;
     height: $fd-wizard-step-indicator-size;
     margin: 0 $fd-wizard-step-indicator-spacing;
+  }
 
-    &::before {
-      font-size: var(--sapFontLargeSize);
-    }
+  &__icon {
+    @include fd-reset();
+    @include fd-flex-center();
+
+    height: 100%;
+    font-size: var(--sapFontLargeSize);
   }
 
   &__label-container {
@@ -258,7 +262,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     border-bottom: 0.0625rem solid var(--sapList_BorderColor);
 
     &--active {
-      border-bottom-color: var(--sapWizard_Connector_Active_Border_Color);
+      border-bottom-color: var(--fdWizard_Connector_Active_Border_Color);
     }
 
     &--branching {
@@ -273,18 +277,18 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     width: 100%;
     height: 100%;
     padding-top: 1rem;
-    background: var(--sapWizard_Content_Default_Background);
+    background: var(--fdWizard_Content_Default_Background);
 
     &--solid {
-      background: var(--sapWizard_Content_Solid_Background);
+      background: var(--fdWizard_Content_Solid_Background);
     }
 
     &--list {
-      background: var(--sapWizard_Content_List_Background);
+      background: var(--fdWizard_Content_List_Background);
     }
 
     &--transparent {
-      background: var(--sapWizard_Content_Transparent_Background);
+      background: var(--fdWizard_Content_Transparent_Background);
     }
   }
 

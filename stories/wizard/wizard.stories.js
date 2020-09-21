@@ -106,7 +106,9 @@ export const defaultExample = () => `
             <li class="fd-wizard__step fd-wizard__step--completed">
                 <div class="fd-wizard__step-wrapper">
                     <a class="fd-wizard__step-container" tabindex="0" aria-label="Step 1: One line">
-                        <span class="fd-wizard__step-indicator sap-icon--accept"></span>
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--accept" role="presentation"></i>
+                        </span>
                         <div class="fd-wizard__label-container">
                             <span class="fd-wizard__label">Step 1: One line</span>
                         </div>
@@ -187,7 +189,9 @@ export const customized = () => `
             <li class="fd-wizard__step fd-wizard__step--completed">
                 <div class="fd-wizard__step-wrapper">
                     <a class="fd-wizard__step-container" tabindex="0" aria-label="Step 1: One line">
-                        <span class="fd-wizard__step-indicator sap-icon--accept"></span>
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--accept" role="presentation"></i>
+                        </span>
                         <div class="fd-wizard__label-container">
                             <span class="fd-wizard__label">Step 1: One line</span>
                         </div>
@@ -264,7 +268,9 @@ export const responsive = () => `
             <li class="fd-wizard__step fd-wizard__step--completed">
                 <div class="fd-wizard__step-wrapper">
                     <a class="fd-wizard__step-container" tabindex="0" aria-label="Customer">
-                        <span class="fd-wizard__step-indicator sap-icon--person-placeholder"></span>
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--person-placeholder" role="presentation"></i>
+                        </span>
                         <div class="fd-wizard__label-container">
                             <span class="fd-wizard__label">Customer</span>
                         </div>
@@ -275,7 +281,9 @@ export const responsive = () => `
             <li class="fd-wizard__step fd-wizard__step--completed">
                 <div class="fd-wizard__step-wrapper">
                     <a class="fd-wizard__step-container" tabindex="0" aria-label="Contact">
-                        <span class="fd-wizard__step-indicator sap-icon--contacts"></span>
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--contacts" role="presentation"></i>
+                        </span>
                         <div class="fd-wizard__label-container fd-wizard__label-container--optional">
                             <span class="fd-wizard__label">Contact</span>
                             <span class="fd-wizard__optional-text">(Optional)</span>
@@ -287,7 +295,9 @@ export const responsive = () => `
             <li class="fd-wizard__step fd-wizard__step--completed">
                 <div class="fd-wizard__step-wrapper">
                     <a class="fd-wizard__step-container" tabindex="0" aria-label="Payment">
-                        <span class="fd-wizard__step-indicator sap-icon--money-bills"></span>
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--money-bills" role="presentation"></i>
+                        </span>
                         <div class="fd-wizard__label-container">
                             <span class="fd-wizard__label">Payment</span>
                         </div>
@@ -298,7 +308,9 @@ export const responsive = () => `
             <li class="fd-wizard__step fd-wizard__step--current">
                 <div class="fd-wizard__step-wrapper">
                     <a class="fd-wizard__step-container" tabindex="0" aria-label="Bill To">
-                        <span class="fd-wizard__step-indicator sap-icon--batch-payments"></span>
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--batch-payments" role="presentation"></i>
+                        </span>
                         <div class="fd-wizard__label-container">
                             <span class="fd-wizard__label">Bill To</span>
                         </div>
@@ -309,7 +321,9 @@ export const responsive = () => `
             <li class="fd-wizard__step fd-wizard__step--upcoming">
                 <div class="fd-wizard__step-wrapper">
                     <a class="fd-wizard__step-container" tabindex="0" aria-label="Ship To" aria-disabled="true">
-                        <span class="fd-wizard__step-indicator sap-icon--shipping-status"></span>
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--shipping-status" role="presentation"></i>
+                        </span>
                         <div class="fd-wizard__label-container">
                             <span class="fd-wizard__label">Ship To</span>
                         </div>
@@ -345,7 +359,9 @@ export const responsive = () => `
             <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--no-label">
                 <div class="fd-wizard__step-wrapper">
                     <a class="fd-wizard__step-container" tabindex="0" aria-label="Customer">
-                        <span class="fd-wizard__step-indicator sap-icon--person-placeholder"></span>
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--person-placeholder" role="presentation"></i>
+                        </span>
                         <div class="fd-wizard__label-container">
                             <span class="fd-wizard__label">Customer</span>
                         </div>
@@ -356,7 +372,9 @@ export const responsive = () => `
             <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--no-label">
                 <div class="fd-wizard__step-wrapper">
                     <a class="fd-wizard__step-container" tabindex="0" aria-label="Contact">
-                        <span class="fd-wizard__step-indicator sap-icon--contacts"></span>
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--contacts" role="presentation"></i>
+                        </span>
                         <div class="fd-wizard__label-container fd-wizard__label-container--optional">
                             <span class="fd-wizard__label">Contact</span>
                             <span class="fd-wizard__optional-text">(Optional)</span>
@@ -368,7 +386,9 @@ export const responsive = () => `
             <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--no-label">
                 <div class="fd-wizard__step-wrapper">
                     <a class="fd-wizard__step-container" tabindex="0" aria-label="Payment">
-                        <span class="fd-wizard__step-indicator sap-icon--money-bills"></span>
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--money-bills" role="presentation"></i>
+                        </span>
                         <div class="fd-wizard__label-container">
                             <span class="fd-wizard__label">Payment</span>
                         </div>
@@ -379,7 +399,9 @@ export const responsive = () => `
             <li class="fd-wizard__step fd-wizard__step--current fd-wizard__step--no-label">
                 <div class="fd-wizard__step-wrapper">
                     <a class="fd-wizard__step-container" tabindex="0" aria-label="Bill To">
-                        <span class="fd-wizard__step-indicator sap-icon--batch-payments"></span>
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--batch-payments" role="presentation"></i>
+                        </span>
                         <div class="fd-wizard__label-container">
                             <span class="fd-wizard__label">Bill To</span>
                         </div>
@@ -390,7 +412,9 @@ export const responsive = () => `
             <li class="fd-wizard__step fd-wizard__step--upcoming fd-wizard__step--no-label">
                 <div class="fd-wizard__step-wrapper">
                     <a class="fd-wizard__step-container" tabindex="0" aria-label="Ship To" aria-disabled="true">
-                        <span class="fd-wizard__step-indicator sap-icon--shipping-status"></span>
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--shipping-status" role="presentation"></i>
+                        </span>
                         <div class="fd-wizard__label-container">
                             <span class="fd-wizard__label">Ship To</span>
                         </div>
@@ -401,7 +425,9 @@ export const responsive = () => `
             <li class="fd-wizard__step fd-wizard__step--upcoming fd-wizard__step--no-label">
                 <div class="fd-wizard__step-wrapper">
                     <a class="fd-wizard__step-container" tabindex="0" aria-label="Products" aria-disabled="true">
-                        <span class="fd-wizard__step-indicator sap-icon--product"></span>
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--product" role="presentation"></i>
+                        </span>
                         <div class="fd-wizard__label-container fd-wizard__label-container--optional">
                             <span class="fd-wizard__label">Products</span>
                             <span class="fd-wizard__optional-text">(Optional)</span>
@@ -413,7 +439,9 @@ export const responsive = () => `
             <li class="fd-wizard__step fd-wizard__step--upcoming fd-wizard__step--no-label">
                 <div class="fd-wizard__step-wrapper">
                     <a class="fd-wizard__step-container" tabindex="0" aria-label="Additional Information" aria-disabled="true">
-                        <span class="fd-wizard__step-indicator sap-icon--course-program"></span>
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--course-program" role="presentation"></i>
+                        </span>
                         <div class="fd-wizard__label-container">
                             <span class="fd-wizard__label">Additional Information</span>
                         </div>
@@ -449,7 +477,9 @@ export const responsive = () => `
             <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--stacked">
                 <div class="fd-wizard__step-wrapper">
                     <a class="fd-wizard__step-container" tabindex="0" aria-label="Customer">
-                        <span class="fd-wizard__step-indicator sap-icon--person-placeholder"></span>
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--person-placeholder" role="presentation"></i>
+                        </span>
                         <div class="fd-wizard__label-container">
                             <span class="fd-wizard__label">Customer</span>
                         </div>
@@ -460,7 +490,9 @@ export const responsive = () => `
             <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--stacked">
                 <div class="fd-wizard__step-wrapper">
                     <a class="fd-wizard__step-container" tabindex="0" aria-label="Contact">
-                        <span class="fd-wizard__step-indicator sap-icon--contacts"></span>
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--contacts" role="presentation"></i>
+                        </span>
                         <div class="fd-wizard__label-container fd-wizard__label-container--optional">
                             <span class="fd-wizard__label">Contact</span>
                             <span class="fd-wizard__optional-text">(Optional)</span>
@@ -481,7 +513,9 @@ export const responsive = () => `
                                 aria-expanded="false" 
                                 aria-haspopup="true" 
                                 onclick="onPopoverClick('actionSheetDesktop');">
-                                    <span class="fd-wizard__step-indicator sap-icon--money-bills"></span>
+                                    <span class="fd-wizard__step-indicator">
+                                        <i class="fd-wizard__icon sap-icon--money-bills" role="presentation"></i>
+                                    </span>
                                     <div class="fd-wizard__label-container">
                                         <span class="fd-wizard__label">Payment</span>
                                     </div>
@@ -494,19 +528,19 @@ export const responsive = () => `
                                 aria-label="List of completed stacked steps">
                                     <li class="fd-action-sheet__item" role="listitem">
                                         <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                                            <i class=" sap-icon--money-bills"></i>
+                                            <i class=" sap-icon--money-bills" role="presentation"></i>
                                             <span class="fd-button__text">Payment</span>
                                         </button>
                                     </li>
                                     <li class="fd-action-sheet__item" role="listitem">
                                         <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                                            <i class="sap-icon--contacts"></i>
+                                            <i class="sap-icon--contacts" role="presentation"></i>
                                             <span class="fd-button__text">Contact</span>
                                         </button>
                                     </li>
                                     <li class="fd-action-sheet__item" role="listitem">
                                         <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                                            <i class="sap-icon--person-placeholder"></i>
+                                            <i class="sap-icon--person-placeholder" role="presentation"></i>
                                             <span class="fd-button__text">Customer</span>
                                         </button>
                                     </li>
@@ -519,7 +553,9 @@ export const responsive = () => `
             <li class="fd-wizard__step fd-wizard__step--current">
                 <div class="fd-wizard__step-wrapper">
                     <a class="fd-wizard__step-container" tabindex="0" aria-label="Bill To">
-                        <span class="fd-wizard__step-indicator sap-icon--batch-payments"></span>
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--batch-payments" role="presentation"></i>
+                        </span>
                         <div class="fd-wizard__label-container">
                             <span class="fd-wizard__label">Bill To</span>
                         </div>
@@ -530,7 +566,9 @@ export const responsive = () => `
             <li class="fd-wizard__step fd-wizard__step--upcoming fd-wizard__step--stacked">
                 <div class="fd-wizard__step-wrapper">
                     <a class="fd-wizard__step-container" tabindex="0" aria-label="Ship To" aria-disabled="true">
-                        <span class="fd-wizard__step-indicator sap-icon--shipping-status"></span>
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--shipping-status" role="presentation"></i>
+                        </span>
                         <div class="fd-wizard__label-container">
                             <span class="fd-wizard__label">Ship To</span>
                         </div>
@@ -541,7 +579,9 @@ export const responsive = () => `
             <li class="fd-wizard__step fd-wizard__step--upcoming fd-wizard__step--stacked">
                 <div class="fd-wizard__step-wrapper">
                     <a class="fd-wizard__step-container" tabindex="0" aria-label="Products" aria-disabled="true">
-                        <span class="fd-wizard__step-indicator sap-icon--product"></span>
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--product" role="presentation"></i>
+                        </span>
                         <div class="fd-wizard__label-container fd-wizard__label-container--optional">
                             <span class="fd-wizard__label">Products</span>
                             <span class="fd-wizard__optional-text">(Optional)</span>
@@ -553,7 +593,9 @@ export const responsive = () => `
             <li class="fd-wizard__step fd-wizard__step--upcoming fd-wizard__step--stacked">
                 <div class="fd-wizard__step-wrapper">
                     <a class="fd-wizard__step-container" tabindex="0" aria-label="Additional Information" aria-disabled="true">
-                        <span class="fd-wizard__step-indicator sap-icon--course-program"></span>
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--course-program" role="presentation"></i>
+                        </span>
                         <div class="fd-wizard__label-container">
                             <span class="fd-wizard__label">Additional Information</span>
                         </div>
@@ -603,7 +645,9 @@ export const mobile = () => `
                     <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--stacked">
                         <div class="fd-wizard__step-wrapper">
                             <a class="fd-wizard__step-container" tabindex="0" aria-label="Customer">
-                                <span class="fd-wizard__step-indicator sap-icon--person-placeholder"></span>
+                                <span class="fd-wizard__step-indicator">
+                                    <i class="fd-wizard__icon sap-icon--person-placeholder" role="presentation"></i>
+                                </span>
                                 <div class="fd-wizard__label-container">
                                     <span class="fd-wizard__label">Customer</span>
                                 </div>
@@ -614,7 +658,9 @@ export const mobile = () => `
                     <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--stacked">
                         <div class="fd-wizard__step-wrapper">
                             <a class="fd-wizard__step-container" tabindex="0" aria-label="Contact">
-                                <span class="fd-wizard__step-indicator sap-icon--contacts"></span>
+                                <span class="fd-wizard__step-indicator">
+                                    <i class="fd-wizard__icon sap-icon--contacts" role="presentation"></i>
+                                </span>
                                 <div class="fd-wizard__label-container fd-wizard__label-container--optional">
                                     <span class="fd-wizard__label">Contact</span>
                                     <span class="fd-wizard__optional-text">(Optional)</span>
@@ -635,7 +681,9 @@ export const mobile = () => `
                                         aria-expanded="false" 
                                         aria-haspopup="true" 
                                         onclick="onPopoverClick('actionSheetMobile1');">
-                                            <span class="fd-wizard__step-indicator sap-icon--money-bills"></span>
+                                            <span class="fd-wizard__step-indicator">
+                                                <i class="fd-wizard__icon sap-icon--money-bills" role="presentation"></i>
+                                            </span>
                                             <div class="fd-wizard__label-container">
                                                 <span class="fd-wizard__label">Payment</span>
                                             </div>
@@ -648,19 +696,19 @@ export const mobile = () => `
                                         aria-label="List of completed stacked steps">
                                             <li class="fd-action-sheet__item" role="listitem">
                                                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                                                    <i class=" sap-icon--money-bills"></i>
+                                                    <i class=" sap-icon--money-bills" role="presentation"></i>
                                                     <span class="fd-button__text">Payment</span>
                                                 </button>
                                             </li>
                                             <li class="fd-action-sheet__item" role="listitem">
                                                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                                                    <i class="sap-icon--contacts"></i>
+                                                    <i class="sap-icon--contacts" role="presentation"></i>
                                                     <span class="fd-button__text">Contact</span>
                                                 </button>
                                             </li>
                                             <li class="fd-action-sheet__item" role="listitem">
                                                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                                                    <i class="sap-icon--person-placeholder"></i>
+                                                    <i class="sap-icon--person-placeholder" role="presentation"></i>
                                                     <span class="fd-button__text">Customer</span>
                                                 </button>
                                             </li>
@@ -673,7 +721,9 @@ export const mobile = () => `
                     <li class="fd-wizard__step fd-wizard__step--current">
                         <div class="fd-wizard__step-wrapper">
                             <a class="fd-wizard__step-container" tabindex="0" aria-label="Bill To">
-                                <span class="fd-wizard__step-indicator sap-icon--batch-payments"></span>
+                                <span class="fd-wizard__step-indicator">
+                                    <i class="fd-wizard__icon sap-icon--batch-payments" role="presentation"></i>
+                                </span>
                                 <div class="fd-wizard__label-container">
                                     <span class="fd-wizard__label">Bill To</span>
                                 </div>
@@ -684,7 +734,9 @@ export const mobile = () => `
                     <li class="fd-wizard__step fd-wizard__step--upcoming fd-wizard__step--stacked">
                         <div class="fd-wizard__step-wrapper">
                             <a class="fd-wizard__step-container" tabindex="0" aria-label="Ship To" aria-disabled="true">
-                                <span class="fd-wizard__step-indicator sap-icon--shipping-status"></span>
+                                <span class="fd-wizard__step-indicator">
+                                    <i class="fd-wizard__icon sap-icon--shipping-status" role="presentation"></i>
+                                </span>
                                 <div class="fd-wizard__label-container">
                                     <span class="fd-wizard__label">Ship To</span>
                                 </div>
@@ -695,7 +747,9 @@ export const mobile = () => `
                     <li class="fd-wizard__step fd-wizard__step--upcoming fd-wizard__step--stacked">
                         <div class="fd-wizard__step-wrapper">
                             <a class="fd-wizard__step-container" tabindex="0" aria-label="Products" aria-disabled="true">
-                                <span class="fd-wizard__step-indicator sap-icon--product"></span>
+                                <span class="fd-wizard__step-indicator">
+                                    <i class="fd-wizard__icon sap-icon--product" role="presentation"></i>
+                                </span>
                                 <div class="fd-wizard__label-container fd-wizard__label-container--optional">
                                     <span class="fd-wizard__label">Products</span>
                                     <span class="fd-wizard__optional-text">(Optional)</span>
@@ -707,7 +761,9 @@ export const mobile = () => `
                     <li class="fd-wizard__step fd-wizard__step--upcoming fd-wizard__step--stacked">
                         <div class="fd-wizard__step-wrapper">
                             <a class="fd-wizard__step-container" tabindex="0" aria-label="Additional Information" aria-disabled="true">
-                                <span class="fd-wizard__step-indicator sap-icon--course-program"></span>
+                                <span class="fd-wizard__step-indicator">
+                                    <i class="fd-wizard__icon sap-icon--course-program" role="presentation"></i>
+                                </span>
                                 <div class="fd-wizard__label-container">
                                     <span class="fd-wizard__label">Additional Information</span>
                                 </div>
@@ -745,7 +801,9 @@ export const mobile = () => `
                     <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--stacked">
                         <div class="fd-wizard__step-wrapper">
                             <a class="fd-wizard__step-container" tabindex="0" aria-label="Customer">
-                                <span class="fd-wizard__step-indicator sap-icon--person-placeholder"></span>
+                                <span class="fd-wizard__step-indicator">
+                                    <i class="fd-wizard__icon sap-icon--person-placeholder" role="presentation"></i>
+                                </span>
                                 <div class="fd-wizard__label-container">
                                     <span class="fd-wizard__label">Customer</span>
                                 </div>
@@ -756,7 +814,9 @@ export const mobile = () => `
                     <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--stacked">
                         <div class="fd-wizard__step-wrapper">
                             <a class="fd-wizard__step-container" tabindex="0" aria-label="Contact">
-                                <span class="fd-wizard__step-indicator sap-icon--contacts"></span>
+                                <span class="fd-wizard__step-indicator">
+                                    <i class="fd-wizard__icon sap-icon--contatcs" role="presentation"></i>
+                                </span>
                                 <div class="fd-wizard__label-container fd-wizard__label-container--optional">
                                     <span class="fd-wizard__label">Contact</span>
                                     <span class="fd-wizard__optional-text">(Optional)</span>
@@ -777,7 +837,9 @@ export const mobile = () => `
                                         aria-expanded="false" 
                                         aria-haspopup="true" 
                                         onclick="onPopoverClick('actionSheetMobile2');">
-                                            <span class="fd-wizard__step-indicator sap-icon--money-bills"></span>
+                                            <span class="fd-wizard__step-indicator">
+                                                <i class="fd-wizard__icon sap-icon--money-bills" role="presentation"></i>
+                                            </span>
                                             <div class="fd-wizard__label-container">
                                                 <span class="fd-wizard__label">Payment</span>
                                             </div>
@@ -790,19 +852,19 @@ export const mobile = () => `
                                         aria-label="List of completed stacked steps">
                                             <li class="fd-action-sheet__item" role="listitem">
                                                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                                                    <i class=" sap-icon--money-bills"></i>
+                                                    <i class=" sap-icon--money-bills" role="presentation"></i>
                                                     <span class="fd-button__text">Payment</span>
                                                 </button>
                                             </li>
                                             <li class="fd-action-sheet__item" role="listitem">
                                                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                                                    <i class="sap-icon--contacts"></i>
+                                                    <i class="sap-icon--contacts" role="presentation"></i>
                                                     <span class="fd-button__text">Contact</span>
                                                 </button>
                                             </li>
                                             <li class="fd-action-sheet__item" role="listitem">
                                                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                                                    <i class="sap-icon--person-placeholder"></i>
+                                                    <i class="sap-icon--person-placeholder" role="presentation"></i>
                                                     <span class="fd-button__text">Customer</span>
                                                 </button>
                                             </li>
@@ -815,7 +877,9 @@ export const mobile = () => `
                     <li class="fd-wizard__step fd-wizard__step--current">
                         <div class="fd-wizard__step-wrapper">
                             <a class="fd-wizard__step-container" tabindex="0" aria-label="Bill To">
-                                <span class="fd-wizard__step-indicator sap-icon--batch-payments"></span>
+                                <span class="fd-wizard__step-indicator">
+                                    <i class="fd-wizard__icon sap-icon--batch-payments" role="presentation"></i>
+                                </span>
                                 <div class="fd-wizard__label-container">
                                     <span class="fd-wizard__label">Bill To</span>
                                 </div>
@@ -826,7 +890,9 @@ export const mobile = () => `
                     <li class="fd-wizard__step fd-wizard__step--upcoming fd-wizard__step--stacked">
                         <div class="fd-wizard__step-wrapper">
                             <a class="fd-wizard__step-container" tabindex="0" aria-label="Ship To" aria-disabled="true">
-                                <span class="fd-wizard__step-indicator sap-icon--shipping-status"></span>
+                                <span class="fd-wizard__step-indicator">
+                                    <i class="fd-wizard__icon sap-icon--shipping-status" role="presentation"></i>
+                                </span>
                                 <div class="fd-wizard__label-container">
                                     <span class="fd-wizard__label">Ship To</span>
                                 </div>
@@ -837,7 +903,9 @@ export const mobile = () => `
                     <li class="fd-wizard__step fd-wizard__step--upcoming fd-wizard__step--stacked">
                         <div class="fd-wizard__step-wrapper">
                             <a class="fd-wizard__step-container" tabindex="0" aria-label="Products" aria-disabled="true">
-                                <span class="fd-wizard__step-indicator sap-icon--product"></span>
+                                <span class="fd-wizard__step-indicator">
+                                    <i class="fd-wizard__icon sap-icon--product" role="presentation"></i>
+                                </span>
                                 <div class="fd-wizard__label-container fd-wizard__label-container--optional">
                                     <span class="fd-wizard__label">Products</span>
                                     <span class="fd-wizard__optional-text">(Optional)</span>
@@ -849,7 +917,9 @@ export const mobile = () => `
                     <li class="fd-wizard__step fd-wizard__step--upcoming fd-wizard__step--stacked">
                         <div class="fd-wizard__step-wrapper">
                             <a class="fd-wizard__step-container" tabindex="0" aria-label="Additional Information" aria-disabled="true">
-                                <span class="fd-wizard__step-indicator sap-icon--course-program"></span>
+                                <span class="fd-wizard__step-indicator">
+                                    <i class="fd-wizard__icon sap-icon--course-program" role="presentation"></i>
+                                </span>
                                 <div class="fd-wizard__label-container">
                                     <span class="fd-wizard__label">Additional Information</span>
                                 </div>
