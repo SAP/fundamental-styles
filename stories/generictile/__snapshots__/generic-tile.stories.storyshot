@@ -491,8 +491,9 @@ exports[`Storyshots Components/Generic Tile KPI Tile 1`] = `
             >
               
                         
-              <span
+              <i
                 class="fd-numeric-content__scale-arrow sap-icon--down"
+                role="presentation"
               />
               
                         
@@ -621,8 +622,9 @@ exports[`Storyshots Components/Generic Tile KPI Tile 1`] = `
             >
               
                         
-              <span
+              <i
                 class="fd-numeric-content__scale-arrow sap-icon--down"
+                role="presentation"
               />
               
                         
@@ -763,8 +765,9 @@ exports[`Storyshots Components/Generic Tile KPI Tile 1`] = `
             >
               
                         
-              <span
+              <i
                 class="fd-numeric-content__scale-arrow sap-icon--down"
+                role="presentation"
               />
               
                     
@@ -862,8 +865,9 @@ exports[`Storyshots Components/Generic Tile KPI Tile 1`] = `
             >
               
                         
-              <span
+              <i
                 class="fd-numeric-content__scale-arrow sap-icon--up"
+                role="presentation"
               />
               
                     
@@ -973,8 +977,9 @@ exports[`Storyshots Components/Generic Tile KPI Tile 1`] = `
             >
               
                         
-              <span
+              <i
                 class="fd-numeric-content__scale-arrow sap-icon--down"
+                role="presentation"
               />
               
                         
@@ -1160,8 +1165,9 @@ exports[`Storyshots Components/Generic Tile Launch Tile 1`] = `
           >
             
                     
-            <span
+            <i
               class="fd-numeric-content__launch-icon sap-icon--line-charts"
+              role="presentation"
             />
             
                 
@@ -1193,8 +1199,9 @@ exports[`Storyshots Components/Generic Tile Launch Tile 1`] = `
             >
               
                         
-              <span
+              <i
                 class="fd-numeric-content__scale-arrow sap-icon--down"
+                role="presentation"
               />
               
                         
@@ -1303,8 +1310,9 @@ exports[`Storyshots Components/Generic Tile Launch Tile 1`] = `
           >
             
                     
-            <span
+            <i
               class="fd-numeric-content__launch-icon sap-icon--line-charts"
+              role="presentation"
             />
             
                 
