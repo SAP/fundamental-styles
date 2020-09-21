@@ -41,29 +41,20 @@ $color-accents: (
   border-style: $fd-info-label-border-style;
 
   &__icon {
-    @include fd-reset();
-    @include fd-icon-element-base();
-
-    @include fd-icon-selector() {
+    @include fd-icon-element-base() {
       font-size: 0.75rem;
       color: var(--sapTextColor);
       margin-right: $fd-info-label-icon-text-spacing;
-    }
 
-    @include fd-rtl() {
-      @include fd-icon-selector() {
+      @include fd-rtl() {
         margin-right: 0;
         margin-left: $fd-info-label-icon-text-spacing;
       }
-    }
 
-    @include fd-only-child() {
-      @include fd-icon-selector() {
+      @include fd-only-child() {
         margin: 0;
-      }
 
-      @include fd-rtl() {
-        @include fd-icon-selector() {
+        @include fd-rtl() {
           margin: 0;
         }
       }

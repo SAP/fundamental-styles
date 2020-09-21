@@ -71,12 +71,12 @@ colors.storyName = 'Color Flavors';
 export const icons = () => `
 <div class="fddocs-container">
     <span class="fd-info-label fd-info-label--accent-color-1 fd-info-label--icon">
-        <i class="fd-info-label__icon sap-icon--future" aria-hidden="true"></i>
+        <i role="presentation" class="fd-info-label__icon sap-icon--future"></i>
         <span class="fd-info-label__text">Info Label</span>
     </span>
     <br><br>
     <span class="fd-info-label fd-info-label--accent-color-2 fd-info-label--icon">
-        <i class="fd-info-label__icon sap-icon--upload-to-cloud" role="presentation"></i>
+        <i role="presentation" class="fd-info-label__icon sap-icon--upload-to-cloud"></i>
     </span>
 </div>
 `;
@@ -112,11 +112,11 @@ export const rtl = () => `
         <span class="fd-info-label__text">6</span>
     </span>
     <span class="fd-info-label fd-info-label--accent-color-1 fd-info-label--icon">
-        <i class="fd-info-label__icon sap-icon--future" aria-hidden="true"></i>
+        <i role="presentation" class="fd-info-label__icon sap-icon--future"></i>
         <span class="fd-info-label__text">Info Label</span>
     </span>
     <span class="fd-info-label fd-info-label--accent-color-2 fd-info-label--icon">
-        <i class="fd-info-label__icon sap-icon--upload-to-cloud" role="presentation"></i>
+        <i role="presentation" class="fd-info-label__icon sap-icon--upload-to-cloud"></i>
     </span>
 </div>
 `;
