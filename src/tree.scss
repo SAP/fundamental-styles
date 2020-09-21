@@ -123,7 +123,8 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
       }
     }
 
-    .#{$block}__text {
+    .#{$block}__text,
+    .#{$button} {
       color: var(--sapList_Active_TextColor);
     }
 
