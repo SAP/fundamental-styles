@@ -493,7 +493,7 @@ export const treeWithExpandedLevel6AndNavigationLinks = () => `
                                             <li role="treeitem" aria-level="6" aria-expanded="true" class="fd-tree__item">
                                                 <div class="fd-tree__item-container">
                                                     <button class="fd-tree__expander is-expanded" aria-controls="TREE6CL7" aria-haspopup="true" aria-label="Expand level 7" aria-expanded="true">
-                                                        <i class=fd-tree__icon "sap-icon--navigation-down-arrow" role="presentation"></i>
+                                                        <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
                                                     </button>
                                                     <div class="fd-tree__content">
                                                         <span class="fd-tree__text">Level 6</span>

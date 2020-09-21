@@ -111,12 +111,9 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
     background: var(--sapList_Active_Background);
 
     .#{$button},
-    .#{$block}__icon,
     .#{$block}__expander {
       @include fd-focus() {
-        @include fd-icon-selector() {
-          outline-color: var(--sapContent_ContrastFocusColor);
-        }
+        outline-color: var(--sapContent_ContrastFocusColor);
       }
     }
 
