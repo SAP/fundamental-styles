@@ -56,6 +56,10 @@ $fd-list-object-font-size: var(--sapFontSize);
 $fd-list-object-font-weight: normal;
 $fd-list-object-attribute-font-color: var(--sapContent_LabelColor);
 $fd-list-object-number-font-family: var(--sapFontLightFamily);
+$fd-object-identifier-title-font-family: var(--sapFontHeaderFamily);
+$fd-object-identifier-title-font-size: var(--sapFontHeader4Size);
+$fd-object-identifier-title-font-weight: var(--sapFontHeaderWeight);
+$fd-object-identifier-title-color: var(--sapGroup_TitleTextColor);
 
 $semantic-color: (
   "neutral": ("color": var(--sapNeutralTextColor)),

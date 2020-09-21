@@ -2,223 +2,228 @@
 @import "./listDefinitions.scss";
 
 .#{$block} {
-  .#{$block}__item {
-    @include padding-top-bottom(1rem);
+  &--object {
+    .#{$block}__item {
+      @include padding-top-bottom(1rem);
 
-    &--object {
       height: 100%;
       width: 100%;
       box-sizing: border-box;
       border-bottom: $fd-list-object-border-bottom;
     }
-  }
 
-  .#{$block}-optional {
-    width: 100%;
-    padding-bottom: 0.75rem;
+    .#{$block}-optional {
+      width: 100%;
+      padding-bottom: 0.75rem;
 
-    &__text {
+      &__text {
+        @include fd-ellipsis();
+
+        display: block;
+        width: 50%;
+        font-family: $fd-list-optional-text-font-family;
+        font-size: $fd-list-optional-text-font-size;
+        font-weight: $fd-list-optional-text-font-weight;
+        color: $fd-list-optional-text-font-color;
+
+        @include fd-rtl() {
+          float: right;
+          width: 100%;
+          padding-bottom: 0.75rem;
+        }
+      }
+    }
+
+    .#{$block}__content {
+      flex-grow: 1;
+    }
+
+    .#{$block}__object {
+      width: 100%;
+
+      &--top-row {
+        display: flex;
+        vertical-align: top;
+      }
+
+      &--top-left {
+        flex: 3 3 10%;
+        width: 60%;
+
+        @include fd-rtl() {
+          text-align: right;
+        }
+      }
+
+      &--top-right {
+        width: 40%;
+        flex: 2 2 10%;
+        text-align: right;
+        padding-left: $fd-list-object-with-padding-value-one !important;
+        vertical-align: $fd-list-object-with-vertical-align-top !important;
+        margin-right: $fd-list-object-with-margin-value-zero !important;
+
+        @include fd-rtl() {
+          text-align: left;
+          padding-right: $fd-list-object-with-padding-value-one !important;
+          padding-left: $fd-list-object-with-padding-value-zero !important;
+          margin-left: $fd-list-object-with-margin-value-zero !important;
+        }
+      }
+
+      &--bottom-row {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        > div:only-child {
+          padding: 0;
+        }
+      }
+
+      &--bottom-left {
+        flex: 3 3 10%;
+        text-align: left;
+        padding: 0.5rem 0.5rem 0.5rem 0;
+        display: inline-grid;
+
+        @include fd-rtl() {
+          text-align: right;
+          padding: 0.5rem 0 0.5rem 0.5rem;
+        }
+      }
+
+      &--bottom-right {
+        width: 50%;
+        max-width: 50%;
+        flex: 2 2 10%;
+        text-align: right;
+        margin-right: $fd-list-object-with-margin-value-zero;
+        padding: 0.5rem 0 0.5rem 0.5rem;
+        display: inline-grid;
+
+        @include fd-rtl() {
+          text-align: left;
+          margin-left: $fd-list-object-with-margin-value-zero;
+          padding: 0.5rem 0.5rem 0.5rem 0;
+        }
+      }
+
+      &--bottom {
+        margin-top: 0.25rem;
+      }
+    }
+
+    .fd-object-number {
+      vertical-align: $fd-list-object-with-vertical-align-top !important;
+      margin-right: $fd-list-object-with-margin-value-zero;
+
+      &__text {
+        font-family: $fd-list-object-number-font-family;
+        font-weight: $fd-list-object-font-weight;
+        font-size: 1.375rem;
+      }
+
+      &__unit {
+        font-family: $fd-list-object-number-font-family;
+        font-size: $fd-list-object-font-size;
+      }
+
+      &__text,
+      &__unit {
+        padding-top: $fd-list-object-with-padding-value-zero !important;
+        display: block !important;
+      }
+
+      &__text::after {
+        content: none;
+      }
+
+      @include fd-rtl() {
+        margin-left: $fd-list-object-with-margin-value-zero;
+      }
+    }
+
+    .fd-object-identifier {
+      &__title {
+        @include fd-reset();
+
+        font-family: $fd-object-identifier-title-font-family;
+        font-size: $fd-object-identifier-title-font-size;
+        font-weight: $fd-object-identifier-title-font-weight;
+        color: $fd-object-identifier-title-color;
+        line-height: 1.5;
+        vertical-align: top;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        white-space: normal;
+        text-overflow: ellipsis;
+
+        @include fd-rtl() {
+          float: right;
+        }
+      }
+    }
+
+    .fd-object-status {
       @include fd-ellipsis();
 
+      text-align: right;
+      width: 100%;
       display: block;
-      width: 50%;
-      font-family: $fd-list-optional-text-font-family;
-      font-size: $fd-list-optional-text-font-size;
-      font-weight: $fd-list-optional-text-font-weight;
-      color: $fd-list-optional-text-font-color;
-
-      @include fd-rtl() {
-        float: right;
-        width: 100%;
-        padding-bottom: 0.75rem;
-      }
-    }
-  }
-
-  .#{$block}__content {
-    flex-grow: 1;
-  }
-
-  .#{$block}__object {
-    width: 100%;
-
-    &--top-row {
-      display: flex;
-      vertical-align: top;
-    }
-
-    &--top-left {
-      flex: 3 3 10%;
-      width: 60%;
-
-      @include fd-rtl() {
-        text-align: right;
-      }
-    }
-
-    &--top-right {
-      width: 40%;
-      flex: 2 2 10%;
-      text-align: right;
-      padding-left: $fd-list-object-with-padding-value-one !important;
-      vertical-align: $fd-list-object-with-vertical-align-top !important;
-      margin-right: $fd-list-object-with-margin-value-zero !important;
-
-      @include fd-rtl() {
-        text-align: left;
-        padding-right: $fd-list-object-with-padding-value-one !important;
-        padding-left: $fd-list-object-with-padding-value-zero !important;
-        margin-left: $fd-list-object-with-margin-value-zero !important;
-      }
-    }
-
-    &--bottom-row {
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-end;
-
-      > div:only-child {
-        padding: 0;
-      }
-    }
-
-    &--bottom-left {
-      flex: 3 3 10%;
-      text-align: left;
-      padding: 0.5rem 0.5rem 0.5rem 0;
-      display: inline-grid;
-
-      @include fd-rtl() {
-        text-align: right;
-        padding: 0.5rem 0 0.5rem 0.5rem;
-      }
-    }
-
-    &--bottom-right {
-      width: 50%;
-      max-width: 50%;
-      flex: 2 2 10%;
-      text-align: right;
+      line-height: 1.4;
       margin-right: $fd-list-object-with-margin-value-zero;
-      padding: 0.5rem 0 0.5rem 0.5rem;
-      display: inline-grid;
 
       @include fd-rtl() {
         text-align: left;
         margin-left: $fd-list-object-with-margin-value-zero;
-        padding: 0.5rem 0.5rem 0.5rem 0;
       }
     }
 
-    &--bottom {
-      margin-top: 0.25rem;
-    }
-  }
+    .#{$block}-attribute {
+      @include fd-ellipsis();
 
-  .fd-object-number {
-    vertical-align: $fd-list-object-with-vertical-align-top !important;
-    margin-right: $fd-list-object-with-margin-value-zero;
-
-    &__text {
-      font-family: $fd-list-object-number-font-family;
-      font-weight: $fd-list-object-font-weight;
-      font-size: 1.375rem;
-    }
-
-    &__unit {
-      font-family: $fd-list-object-number-font-family;
+      width: 100%;
+      text-align: left;
+      line-height: 1.4;
+      font-family: $fd-list-object-attribute-font-family;
       font-size: $fd-list-object-font-size;
-    }
-
-    &__text,
-    &__unit {
-      padding-top: $fd-list-object-with-padding-value-zero !important;
-      display: block !important;
-    }
-
-    &__text::after {
-      content: none;
-    }
-
-    @include fd-rtl() {
-      margin-left: $fd-list-object-with-margin-value-zero;
-    }
-  }
-
-  .fd-object-identifier {
-    &__title {
-      @include fd-reset();
-
-      font-family: var(--sapFontHeaderFamily);
-      font-size: var(--sapFontHeader4Size);
-      font-weight: var(--sapFontHeaderWeight);
-      color: var(--sapGroup_TitleTextColor);
-      line-height: 1.5;
-      // display: table-cell;
-      vertical-align: top;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      white-space: normal;
-      text-overflow: ellipsis;
+      font-weight: $fd-list-object-font-weight;
+      color: $fd-list-object-attribute-font-color;
+      vertical-align: $fd-list-object-with-vertical-align-bottom;
 
       @include fd-rtl() {
-        float: right;
+        text-align: right;
+      }
+    }
+
+    .fd-avatar {
+      width: $fd-list-object-with-padding-value-three;
+      height: $fd-list-object-with-padding-value-three;
+      min-width: $fd-list-object-with-padding-value-three;
+      max-width: $fd-list-object-with-padding-value-three;
+      min-height: $fd-list-object-with-padding-value-three;
+      max-height: $fd-list-object-with-padding-value-three;
+      margin-right: 0.75rem;
+
+      @include fd-rtl() {
+        margin-left: 0.75rem;
+        margin-right: $fd-list-object-with-margin-value-zero;
       }
     }
   }
 
-  .fd-object-status {
-    @include fd-ellipsis();
-
-    text-align: right;
-    width: 100%;
-    display: block;
-    margin-right: $fd-list-object-with-margin-value-zero;
-
-    @include fd-rtl() {
-      text-align: left;
-      margin-left: $fd-list-object-with-margin-value-zero;
-    }
-  }
-
-  .#{$block}-attribute {
-    @include fd-ellipsis();
-
-    width: 100%;
-    text-align: left;
-    line-height: 1;
-    font-family: $fd-list-object-attribute-font-family;
-    font-size: $fd-list-object-font-size;
-    font-weight: $fd-list-object-font-weight;
-    color: $fd-list-object-attribute-font-color;
-    vertical-align: $fd-list-object-with-vertical-align-bottom;
-
-    @include fd-rtl() {
-      text-align: right;
-    }
-  }
-
-  .fd-avatar {
-    width: $fd-list-object-with-padding-value-three;
-    height: $fd-list-object-with-padding-value-three;
-    min-width: $fd-list-object-with-padding-value-three;
-    max-width: $fd-list-object-with-padding-value-three;
-    min-height: $fd-list-object-with-padding-value-three;
-    max-height: $fd-list-object-with-padding-value-three;
-    margin-right: 0.75rem;
-
-    @include fd-rtl() {
-      margin-left: 0.75rem;
-      margin-right: $fd-list-object-with-margin-value-zero;
-    }
-  }
-}
-
-.#{$block}--no-border {
-
   .#{$block}__item {
-    border-bottom-color: transparent;
+    &--link {
+      outline: none;
+    }
+  }
+
+  &.#{$block}--no-border {
+    .#{$block}__item {
+      border-bottom-color: transparent;
+    }
   }
 }

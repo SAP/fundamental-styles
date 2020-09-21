@@ -100,5 +100,15 @@
     &.#{$block}--byline.#{$block}--selection.#{$block}--navigation-indication.#{$block}--no-border {
       @include navigation-byline-borderless();
     }
+
+    // NAVIGATION + Object
+    &.#{$block}--object {
+      @include reset-list-item-paddings();
+
+      .#{$block}__link {
+        @include padding-left-right($fd-list-byline-item-padding-x, $fd-list-byline-item-padding-x);
+        @include padding-top-bottom(1rem);
+      }
+    }
   }
 }

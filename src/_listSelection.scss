@@ -100,5 +100,23 @@ $block: #{$fd-namespace}-list;
         }
       }
     }
+
+    // SELECTION + ROW SELECT
+    &.#{$block}__row-selection {
+      .#{$block}__item {
+        padding-left: 1rem;
+
+        @include fd-rtl() {
+          padding-right: 1rem;
+        }
+      }
+    }
+
+    // SELECTION + OBJECT + FORM ELEMENT
+    &.#{$block}--object {
+      .#{$block}__form-item {
+        top: auto;
+      }
+    }
   }
 }
