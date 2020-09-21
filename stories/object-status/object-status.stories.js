@@ -46,19 +46,19 @@ export const primary = () => `
 
 export const icon = () => `
 <span class="fd-object-status fd-object-status--negative">
-    <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
+    <i class="fd-object-status__icon sap-icon--status-negative" aria-label="Negative"></i>
 </span>
 <span class="fd-object-status fd-object-status--critical">
-    <i class="fd-object-status__icon sap-icon--status-critical" role="presentation"></i>
+    <i class="fd-object-status__icon sap-icon--status-critical" aria-label="Warning"></i>
 </span>
 <span class="fd-object-status fd-object-status--positive">
-    <i class="fd-object-status__icon sap-icon--status-positive" role="presentation"></i>
+    <i class="fd-object-status__icon sap-icon--status-positive" aria-label="Correct"></i>
 </span>
 <span class="fd-object-status fd-object-status--informative">
-    <i class="fd-object-status__icon sap-icon--hint" role="presentation"></i>
+    <i class="fd-object-status__icon sap-icon--hint" aria-label="More information"></i>
 </span>
 <span class="fd-object-status">
-    <i class="fd-object-status__icon sap-icon--to-be-reviewed" role="presentation"></i>
+    <i class="fd-object-status__icon sap-icon--to-be-reviewed" aria-label="To be reviewed"></i>
 </span>
 `;
 
@@ -326,7 +326,7 @@ export const inverted = () => `
         <span class="fd-object-status__text">Inverted Neutral</span>
     </span>
     <span class="fd-object-status fd-object-status--inverted fd-object-status--negative">
-        <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
+        <i class="fd-object-status__icon sap-icon--status-negative" aria-label="Error"></i>
     </span>
     <span class="fd-object-status fd-object-status--inverted fd-object-status--negative">
         <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
@@ -356,25 +356,57 @@ export const inverted = () => `
  */
 
 export const invertedIndication = () => `
-<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-1">Indication1</span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-2">Indication2</span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-3">Indication3</span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-4">Indication4</span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-5">Indication5</span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-6">Indication6</span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-7">Indication7</span>
-<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-8">Indication8</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-1">
+    <span class="fd-object-status__text">Indication1</span>
+</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-2">
+    <span class="fd-object-status__text">Indication2</span>
+</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-3">
+    <span class="fd-object-status__text">Indication3</span>
+</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-4">
+    <span class="fd-object-status__text">Indication4</span>
+</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-5">
+    <span class="fd-object-status__text">Indication5</span>
+</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-6">
+    <span class="fd-object-status__text">Indication6</span>
+</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-7">
+    <span class="fd-object-status__text">Indication7</span>
+</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--indication-8">
+    <span class="fd-object-status__text">Indication8</span>
+</span>
 
 <br>
 <br>
 
 <h4>Clickable Inverted Object Status</h4>
-<a href="#" class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-1">Indication1</a>
-<a href="#" class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-2">Indication2</a>
-<a href="#" class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-3">Indication3</a>
-<a href="#" class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-4">Indication4</a>
-<a href="#" class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-5">Indication5</a>
-<a href="#" class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-6">Indication6</a>
-<a href="#" class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-7">Indication7</a>
-<a href="#" class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-8">Indication8</a>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1">
+    <span class="fd-object-status__text">Indication1</span>
+</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-2">
+    <span class="fd-object-status__text">Indication2</span>
+</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-3">
+    <span class="fd-object-status__text">Indication3</span>
+</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-4">
+    <span class="fd-object-status__text">Indication4</span>
+</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-5">
+    <span class="fd-object-status__text">Indication5</span>
+</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-6">
+    <span class="fd-object-status__text">Indication6</span>
+</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-7">
+    <span class="fd-object-status__text">Indication7</span>
+</span>
+<span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8">
+    <span class="fd-object-status__text">Indication8</span>
+</span>
 `;
