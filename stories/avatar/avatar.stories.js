@@ -37,19 +37,19 @@ Do not use avatar if:
 
 export const icon = () => `
 <span class="fd-avatar fd-avatar--xs" role="presentation">
-    <i class="fd-avatar__icon sap-icon--washing-machine"></i>
+    <i role="presentation" class="fd-avatar__icon sap-icon--washing-machine"></i>
 </span>
 <span class="fd-avatar fd-avatar--s" role="presentation">
-    <i class="fd-avatar__icon sap-icon--washing-machine"></i>
+    <i role="presentation" class="fd-avatar__icon sap-icon--washing-machine"></i>
 </span>
 <span class="fd-avatar fd-avatar--m" role="presentation">
-    <i class="fd-avatar__icon sap-icon--washing-machine"></i>
+    <i role="presentation" class="fd-avatar__icon sap-icon--washing-machine"></i>
 </span>
 <span class="fd-avatar fd-avatar--l" role="presentation">
-    <i class="fd-avatar__icon sap-icon--washing-machine"></i>
+    <i role="presentation" class="fd-avatar__icon sap-icon--washing-machine"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl" role="presentation">
-    <i class="fd-avatar__icon sap-icon--washing-machine"></i>
+    <i role="presentation" class="fd-avatar__icon sap-icon--washing-machine"></i>
 </span>
 `;
 
