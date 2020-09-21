@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.63](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.62...v0.12.0-rc.63) (2020-09-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* rename our CSS variables prefix from --sap to --fd (--sapInverted_Object_Border_Width, --sapOverlay_Background_Opacity, --sapRating_Indicator_Selected_Hover_Opacity, --sapRating_Indicator_Display_Only_Selected_Color, --sapRating_Indicator_Disabled_Selected_Color, --sapRating_Indicator_Disabled_Unselected_Color, --sapRating_Indicator_Disabled_Control_Opacity)
+
+* rename the delta theming parameters with fd prefix ([#1660](https://github.com/SAP/fundamental-styles/issues/1660)) ([3fd6b8f](https://github.com/SAP/fundamental-styles/commit/3fd6b8fd186fb485cac52b1f04c675211275b289))
+
 ## [0.12.0-rc.62](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.61...v0.12.0-rc.62) (2020-09-18)
 
 
