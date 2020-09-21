@@ -113,30 +113,16 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
     .#{$button},
     .#{$block}__icon,
     .#{$block}__expander {
-      @include fd-icon-selector() {
-        color: var(--sapList_Active_TextColor);
-      }
-
-      @include fd-hover() {
-        @include fd-icon-selector() {
-          background: var(--sapList_Active_Background);
-        }
-      }
-
-      @include fd-selected() {
-        @include fd-icon-selector() {
-          background: var(--sapList_Active_Background);
-
-          @include fd-hover() {
-            background: var(--sapList_Active_Background);
-          }
-        }
-      }
-
       @include fd-focus() {
         @include fd-icon-selector() {
           outline-color: var(--sapContent_ContrastFocusColor);
         }
+      }
+    }
+
+    .#{$block}__icon {
+      @include fd-icon-selector() {
+        color: var(--sapList_Active_TextColor);
       }
     }
 
@@ -257,10 +243,13 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
   &__expander {
     @include fd-reset();
 
-    @include fd-icon-element-base() {
-      font-size: var(--sapFontLargeSize);
+    .#{$block}__icon {
+      @include fd-icon-selector() {
+        font-size: var(--sapFontLargeSize);
+        color: var(--sapButton_IconColor);
 
-      @include fd-flex-center();
+        @include fd-flex-center();
+      }
     }
 
     @include fd-focus() {
@@ -268,8 +257,8 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
     }
 
     cursor: pointer;
-    background: transparent;
     color: var(--sapButton_IconColor);
+    background: transparent;
     min-width: $fd-tree-expander-size;
     min-height: $fd-tree-expander-size;
     margin-left: $fd-tree-expander-size-negative;
@@ -306,7 +295,6 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
   }
 
   &__icon {
-    @include fd-reset();
     @include fd-flex-center();
 
     min-width: $fd-tree-icon-size;
