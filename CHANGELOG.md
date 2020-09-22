@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.68](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.67...v0.12.0-rc.68) (2020-09-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* - fd-tabs__overflow element and A11Y markup changes
+
+### Bug Fixes
+
+* Apply icons changes to tabs ([#1646](https://github.com/SAP/fundamental-styles/issues/1646)) ([f754654](https://github.com/SAP/fundamental-styles/commit/f7546542b303af56e31838bb597b06a836b19ce6))
+
 ## [0.12.0-rc.67](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.66...v0.12.0-rc.67) (2020-09-22)
 
 
