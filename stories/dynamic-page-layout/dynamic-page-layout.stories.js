@@ -178,14 +178,14 @@ desktop.parameters = {
 
 Note: The XL size is presented in this table, however the L and XXL size works as well.
 
-It is also possible to add Tabs to the header area, which helps divide the page content. To display tabs, add the fd-dynamic-page__tabs class along with any of these size modifiers:
+It is also possible to add **Tabs** to the header area, which helps divide the page content. To display tabs, add the \`fd-dynamic-page__tabs\` class along with any of these size modifiers:
 
 - \`--s\`
 - \`--m\`
 - \`--l\`
 - \`--xl\`
 
-Also add the modifier classes --add-shadow to the unordered list, and --overflow at the parent level for the box-shadow styling.
+Also add the modifier classes \`--add-shadow\` to the unordered list, and \`--overflow\` at the parent level for the box-shadow styling.
 `
     }
 };
