@@ -310,6 +310,42 @@ export const rtl = () => `
         </div>
     </div>
 </fieldset>
+<br />
+<fieldset class="fd-fieldset" id="radiortlcompact" dir="rtl">
+    <legend class="fd-fieldset__legend">Interaction States RTL Compact Mode</legend>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <input type="radio" class="fd-radio fd-radio--compact" id="radioRtl6" name="radiortlcompact" checked>
+            <label class="fd-radio__label" for="radioRtl6">
+                Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="radio" class="fd-radio is-success fd-radio--compact" id="radioRtl7" name="radiortlcompact">
+            <label class="fd-radio__label" for="radioRtl7">
+                Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="radio" class="fd-radio is-error fd-radio--compact" id="radioRtl8" name="radiortlcompact">
+            <label class="fd-radio__label" for="radioRtl8">
+                Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="radio" class="fd-radio is-warning fd-radio--compact" id="radioRtl9" name="radiortlcompact">
+            <label class="fd-radio__label" for="radioRtl9">
+                Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="radio" class="fd-radio is-information fd-radio--compact" id="radioRtl10" name="radiortlcompact">
+            <label class="fd-radio__label" for="radioRtl10">
+                Field label
+            </label>
+        </div>
+    </div>
+</fieldset>
 `;
 
 rtl.storyName = 'Right-to-Left Example';
