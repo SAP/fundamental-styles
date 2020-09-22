@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.77](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.76...v0.12.0-rc.77) (2020-09-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* Tree expander requires a separate navigation icon
+
+### Bug Fixes
+
+* Apply icons changes to tree ([#1643](https://github.com/SAP/fundamental-styles/issues/1643)) ([dcb07fd](https://github.com/SAP/fundamental-styles/commit/dcb07fd0a50f9885af1f112dc7421d03f0ccc7e0))
+
 ## [0.12.0-rc.76](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.75...v0.12.0-rc.76) (2020-09-22)
 
 ## [0.12.0-rc.75](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.74...v0.12.0-rc.75) (2020-09-22)
