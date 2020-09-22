@@ -37,7 +37,16 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
           aria-label="Expand level 2"
           class="fd-tree__expander is-expanded"
           tabindex="0"
-        />
+        >
+          
+                
+          <i
+            class="fd-tree__icon sap-icon--navigation-down-arrow"
+            role="presentation"
+          />
+          
+            
+        </button>
         
             
         <div
@@ -82,7 +91,16 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
               aria-label="Expander"
               class="fd-tree__expander"
               tabindex="0"
-            />
+            >
+              
+                        
+              <i
+                class="fd-tree__icon sap-icon--navigation-right-arrow"
+                role="presentation"
+              />
+              
+                    
+            </button>
             
                     
             <div
@@ -204,8 +222,10 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
             
         </div>
         
-    
+        
       </div>
+      
+    
     </li>
     
     
@@ -318,7 +338,16 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
           aria-label="Expand level 2"
           class="fd-tree__expander is-expanded"
           tabindex="0"
-        />
+        >
+          
+                
+          <i
+            class="fd-tree__icon sap-icon--navigation-down-arrow"
+            role="presentation"
+          />
+          
+            
+        </button>
         
             
         <div
@@ -363,7 +392,16 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
               aria-label="Expander"
               class="fd-tree__expander"
               tabindex="0"
-            />
+            >
+              
+                        
+              <i
+                class="fd-tree__icon sap-icon--navigation-right-arrow"
+                role="presentation"
+              />
+              
+                    
+            </button>
             
                     
             <div
@@ -485,8 +523,10 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
             
         </div>
         
-    
+        
       </div>
+      
+    
     </li>
     
     
@@ -603,11 +643,20 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
           aria-haspopup="true"
           aria-label="Expand level 2"
           class="fd-tree__expander is-expanded"
-        />
+        >
+          
+                
+          <i
+            class="fd-tree__icon sap-icon--navigation-down-arrow"
+            role="presentation"
+          />
+          
+            
+        </button>
         
             
         <a
-          class="fd-tree__content has-navigation-indicator"
+          class="fd-tree__content"
           href="https://sap.github.io/fundamental/"
         >
           
@@ -620,6 +669,12 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
           
             
         </a>
+        
+            
+        <i
+          class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+          role="presentation"
+        />
         
         
       </div>
@@ -652,7 +707,16 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
               aria-haspopup="true"
               aria-label="Expand level 3"
               class="fd-tree__expander is-expanded"
-            />
+            >
+              
+                        
+              <i
+                class="fd-tree__icon sap-icon--navigation-down-arrow"
+                role="presentation"
+              />
+              
+                    
+            </button>
             
                     
             <div
@@ -700,11 +764,20 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                   aria-haspopup="true"
                   aria-label="Expand level 4"
                   class="fd-tree__expander is-expanded"
-                />
+                >
+                  
+                                
+                  <i
+                    class="fd-tree__icon sap-icon--navigation-down-arrow"
+                    role="presentation"
+                  />
+                  
+                            
+                </button>
                 
                             
                 <a
-                  class="fd-tree__content has-navigation-indicator"
+                  class="fd-tree__content"
                   href="https://sap.github.io/fundamental/"
                 >
                   
@@ -717,6 +790,12 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                   
                             
                 </a>
+                
+                            
+                <i
+                  class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+                  role="presentation"
+                />
                 
                         
               </div>
@@ -749,7 +828,16 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                       aria-haspopup="true"
                       aria-label="Expand level 5"
                       class="fd-tree__expander is-expanded"
-                    />
+                    >
+                      
+                                        
+                      <i
+                        class="fd-tree__icon sap-icon--navigation-down-arrow"
+                        role="presentation"
+                      />
+                      
+                                    
+                    </button>
                     
                                     
                     <div
@@ -797,7 +885,16 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                           aria-haspopup="true"
                           aria-label="Expand level 6"
                           class="fd-tree__expander is-expanded"
-                        />
+                        >
+                          
+                                                
+                          <i
+                            class="fd-tree__icon sap-icon--navigation-down-arrow"
+                            role="presentation"
+                          />
+                          
+                                            
+                        </button>
                         
                                             
                         <div
@@ -845,7 +942,16 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                               aria-haspopup="true"
                               aria-label="Expand level 7"
                               class="fd-tree__expander is-expanded"
-                            />
+                            >
+                              
+                                                        
+                              <i
+                                class="fd-tree__icon sap-icon--navigation-down-arrow"
+                                role="presentation"
+                              />
+                              
+                                                    
+                            </button>
                             
                                                     
                             <div
@@ -889,7 +995,16 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                                 <button
                                   aria-label="Expander"
                                   class="fd-tree__expander"
-                                />
+                                >
+                                  
+                                                                
+                                  <i
+                                    class="fd-tree__icon sap-icon--navigation-right-arrow"
+                                    role="presentation"
+                                  />
+                                  
+                                                            
+                                </button>
                                 
                                                             
                                 <div
@@ -1043,7 +1158,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                     
                                     
                     <a
-                      class="fd-tree__content has-navigation-indicator"
+                      class="fd-tree__content"
                       href="https://sap.github.io/fundamental/"
                     >
                       
@@ -1056,6 +1171,12 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                       
                                     
                     </a>
+                    
+                                    
+                    <i
+                      class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+                      role="presentation"
+                    />
                     
                                 
                   </div>
@@ -1083,7 +1204,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                 
                             
                 <a
-                  class="fd-tree__content has-navigation-indicator"
+                  class="fd-tree__content"
                   href="https://sap.github.io/fundamental/"
                 >
                   
@@ -1096,6 +1217,12 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                   
                             
                 </a>
+                
+                            
+                <i
+                  class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+                  role="presentation"
+                />
                 
                         
               </div>
@@ -1162,7 +1289,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
         
             
         <a
-          class="fd-tree__content has-navigation-indicator"
+          class="fd-tree__content"
           href="https://sap.github.io/fundamental/"
         >
           
@@ -1175,6 +1302,12 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
           
             
         </a>
+        
+            
+        <i
+          class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+          role="presentation"
+        />
         
         
       </div>
@@ -1194,21 +1327,27 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
         class="fd-tree__item-container has-highlight-indicator--success"
       >
         
-        
+            
         <a
-          class="fd-tree__content has-navigation-indicator"
+          class="fd-tree__content"
           href="https://sap.github.io/fundamental/"
         >
           
-            
+                
           <span
             class="fd-tree__text"
           >
             Level 1
           </span>
           
-        
+            
         </a>
+        
+            
+        <i
+          class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+          role="presentation"
+        />
         
         
       </div>
@@ -1258,11 +1397,20 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
           aria-haspopup="true"
           aria-label="Expand level 2"
           class="fd-tree__expander is-expanded"
-        />
+        >
+          
+                
+          <i
+            class="fd-tree__icon sap-icon--navigation-down-arrow"
+            role="presentation"
+          />
+          
+            
+        </button>
         
             
         <a
-          class="fd-tree__content has-navigation-indicator"
+          class="fd-tree__content"
           href="https://sap.github.io/fundamental/"
         >
           
@@ -1275,6 +1423,12 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
           
             
         </a>
+        
+            
+        <i
+          class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+          role="presentation"
+        />
         
         
       </div>
@@ -1307,7 +1461,16 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
               aria-haspopup="true"
               aria-label="Expand level 3"
               class="fd-tree__expander is-expanded"
-            />
+            >
+              
+                        
+              <i
+                class="fd-tree__icon sap-icon--navigation-down-arrow"
+                role="presentation"
+              />
+              
+                    
+            </button>
             
                     
             <div
@@ -1355,11 +1518,20 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                   aria-haspopup="true"
                   aria-label="Expand level 4"
                   class="fd-tree__expander is-expanded"
-                />
+                >
+                  
+                                
+                  <i
+                    class="fd-tree__icon sap-icon--navigation-down-arrow"
+                    role="presentation"
+                  />
+                  
+                            
+                </button>
                 
                             
                 <a
-                  class="fd-tree__content has-navigation-indicator"
+                  class="fd-tree__content"
                   href="https://sap.github.io/fundamental/"
                 >
                   
@@ -1372,6 +1544,12 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                   
                             
                 </a>
+                
+                            
+                <i
+                  class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+                  role="presentation"
+                />
                 
                         
               </div>
@@ -1404,7 +1582,16 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                       aria-haspopup="true"
                       aria-label="Expand level 5"
                       class="fd-tree__expander is-expanded"
-                    />
+                    >
+                      
+                                        
+                      <i
+                        class="fd-tree__icon sap-icon--navigation-down-arrow"
+                        role="presentation"
+                      />
+                      
+                                    
+                    </button>
                     
                                     
                     <div
@@ -1452,7 +1639,16 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                           aria-haspopup="true"
                           aria-label="Expand level 6"
                           class="fd-tree__expander is-expanded"
-                        />
+                        >
+                          
+                                                
+                          <i
+                            class="fd-tree__icon sap-icon--navigation-down-arrow"
+                            role="presentation"
+                          />
+                          
+                                            
+                        </button>
                         
                                             
                         <div
@@ -1500,7 +1696,16 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                               aria-haspopup="true"
                               aria-label="Expand level 7"
                               class="fd-tree__expander is-expanded"
-                            />
+                            >
+                              
+                                                        
+                              <i
+                                class="fd-tree__icon sap-icon--navigation-down-arrow"
+                                role="presentation"
+                              />
+                              
+                                                    
+                            </button>
                             
                                                     
                             <div
@@ -1544,7 +1749,16 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                                 <button
                                   aria-label="Expander"
                                   class="fd-tree__expander"
-                                />
+                                >
+                                  
+                                                                
+                                  <i
+                                    class="fd-tree__icon sap-icon--navigation-right-arrow"
+                                    role="presentation"
+                                  />
+                                  
+                                                            
+                                </button>
                                 
                                                             
                                 <div
@@ -1698,7 +1912,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                     
                                     
                     <a
-                      class="fd-tree__content has-navigation-indicator"
+                      class="fd-tree__content"
                       href="https://sap.github.io/fundamental/"
                     >
                       
@@ -1711,6 +1925,12 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                       
                                     
                     </a>
+                    
+                                    
+                    <i
+                      class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+                      role="presentation"
+                    />
                     
                                 
                   </div>
@@ -1738,7 +1958,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                 
                             
                 <a
-                  class="fd-tree__content has-navigation-indicator"
+                  class="fd-tree__content"
                   href="https://sap.github.io/fundamental/"
                 >
                   
@@ -1751,6 +1971,12 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                   
                             
                 </a>
+                
+                            
+                <i
+                  class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+                  role="presentation"
+                />
                 
                         
               </div>
@@ -1817,7 +2043,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
         
             
         <a
-          class="fd-tree__content has-navigation-indicator"
+          class="fd-tree__content"
           href="https://sap.github.io/fundamental/"
         >
           
@@ -1830,6 +2056,12 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
           
             
         </a>
+        
+            
+        <i
+          class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+          role="presentation"
+        />
         
         
       </div>
@@ -1849,21 +2081,27 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
         class="fd-tree__item-container has-highlight-indicator--success"
       >
         
-        
+            
         <a
-          class="fd-tree__content has-navigation-indicator"
+          class="fd-tree__content"
           href="https://sap.github.io/fundamental/"
         >
           
-            
+                
           <span
             class="fd-tree__text"
           >
             Level 1
           </span>
           
-        
+            
         </a>
+        
+            
+        <i
+          class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+          role="presentation"
+        />
         
         
       </div>
@@ -1920,7 +2158,16 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
           aria-label="Expand level 2"
           class="fd-tree__expander is-expanded"
           tabindex="0"
-        />
+        >
+          
+                
+          <i
+            class="fd-tree__icon sap-icon--navigation-down-arrow"
+            role="presentation"
+          />
+          
+            
+        </button>
         
             
         <div
@@ -1989,7 +2236,16 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
               aria-label="Expander"
               class="fd-tree__expander"
               tabindex="0"
-            />
+            >
+              
+                        
+              <i
+                class="fd-tree__icon sap-icon--navigation-right-arrow"
+                role="presentation"
+              />
+              
+                    
+            </button>
             
                     
             <div
@@ -2204,8 +2460,10 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
             
         </div>
         
-    
+        
       </div>
+      
+    
     </li>
     
     
@@ -2308,7 +2566,16 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
           aria-label="Expand level 2"
           class="fd-tree__expander is-expanded"
           tabindex="0"
-        />
+        >
+          
+                
+          <i
+            class="fd-tree__icon sap-icon--navigation-down-arrow"
+            role="presentation"
+          />
+          
+            
+        </button>
         
             
         <div
@@ -2377,7 +2644,16 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
               aria-label="Expander"
               class="fd-tree__expander"
               tabindex="0"
-            />
+            >
+              
+                        
+              <i
+                class="fd-tree__icon sap-icon--navigation-right-arrow"
+                role="presentation"
+              />
+              
+                    
+            </button>
             
                     
             <div
@@ -2568,26 +2844,33 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
             
         </div>
         
-                
-        <input
-          checked=""
-          class="fd-checkbox fd-checkbox--compact"
-          id="Ai4ezEE"
-          type="checkbox"
-        />
-        
-                
-        <label
-          aria-label="checkbox"
-          class="fd-checkbox__label fd-checkbox__label--compact"
-          for="Ai4ezEE"
-          tabindex="-1"
-        />
-        
             
+        <div
+          class="fd-form-item"
+        >
+          
+                
+          <input
+            checked=""
+            class="fd-checkbox fd-checkbox--compact"
+            id="Ai4ezEE"
+            type="checkbox"
+          />
+          
+                
+          <label
+            aria-label="checkbox"
+            class="fd-checkbox__label fd-checkbox__label--compact"
+            for="Ai4ezEE"
+            tabindex="-1"
+          />
+          
+            
+        </div>
+        
+        
       </div>
       
-        
     
     </li>
     
@@ -2691,7 +2974,16 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
           aria-label="Expand level 2"
           class="fd-tree__expander is-expanded"
           tabindex="0"
-        />
+        >
+          
+                
+          <i
+            class="fd-tree__icon sap-icon--navigation-down-arrow"
+            role="presentation"
+          />
+          
+            
+        </button>
         
             
         <div
@@ -2760,7 +3052,16 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
               aria-label="Expander"
               class="fd-tree__expander"
               tabindex="0"
-            />
+            >
+              
+                        
+              <i
+                class="fd-tree__icon sap-icon--navigation-right-arrow"
+                role="presentation"
+              />
+              
+                    
+            </button>
             
                     
             <div
@@ -2975,8 +3276,10 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
             
         </div>
         
-    
+        
       </div>
+      
+    
     </li>
     
     
