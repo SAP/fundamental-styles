@@ -176,7 +176,7 @@ export const error = () => `
             <div class="fd-pdf-viewer__content fd-pdf-viewer__content--error fd-message-page">
                 <div class="fd-message-page__container">
                     <div class="fd-message-page__icon-container">
-                        <span class="sap-icon sap-icon--documents fd-message-page__icon"></span>
+                        <i role="presentation" class="sap-icon--documents fd-message-page__icon"></i>
                     </div>
                     <div role="status" aria-live="polite" class="fd-message-page__content">
                         <div class="fd-message-page__title">
