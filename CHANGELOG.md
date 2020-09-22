@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.69](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.68...v0.12.0-rc.69) (2020-09-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* (switch) - Markup change regarding A11y - Added role="presentation and <span> changed to <i>
+
+### Bug Fixes
+
+* refactor icons in switch ([#1650](https://github.com/SAP/fundamental-styles/issues/1650)) ([55dcda8](https://github.com/SAP/fundamental-styles/commit/55dcda8b0d3e40df1075b6398d8384d01a1952e6))
+
 ## [0.12.0-rc.68](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.67...v0.12.0-rc.68) (2020-09-22)
 
 
