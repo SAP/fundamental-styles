@@ -43,7 +43,7 @@ export const dialog = () => `
             <iframe
               class="fd-pdf-viewer__content"
               title='PDF viewer'
-              style="min-height: 20rem;"
+              style="min-height: 20rem; min-width: 50rem;"
               src="https://sapui5.hana.ondemand.com/test-resources/sap/m/demokit/sample/PDFViewerEmbedded/sample.pdf#view=FitH"}
               frameBorder='0'></iframe>
         </div>
