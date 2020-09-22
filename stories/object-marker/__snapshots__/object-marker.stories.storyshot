@@ -7,20 +7,42 @@ exports[`Storyshots Components/Object Marker Clickable Object Marker 1`] = `
   <a
     class="fd-object-marker fd-object-marker--link"
   >
+    
+    
     <i
-      class="sap-icon--private fd-object-marker__icon"
+      class="fd-object-marker__icon sap-icon--private"
+      role="presentation"
     />
-    Locked
+    
+    
+    <span
+      class="fd-object-marker__text"
+    >
+      Locked
+    </span>
+    
+
   </a>
   
 
   <a
     class="fd-object-marker fd-object-marker--link"
   >
+    
+    
     <i
-      class="sap-icon--user-edit fd-object-marker__icon"
+      class="fd-object-marker__icon sap-icon--user-edit"
+      role="presentation"
     />
-    Unsaved Changes
+    
+    
+    <span
+      class="fd-object-marker__text"
+    >
+      Unsaved Changes
+    </span>
+    
+
   </a>
   
 
@@ -29,29 +51,51 @@ exports[`Storyshots Components/Object Marker Clickable Object Marker 1`] = `
     dir="rtl"
   >
     
-
+    
     <h4>
       RTL Support
     </h4>
     
-
+    
     <a
       class="fd-object-marker fd-object-marker--link"
     >
+      
+        
       <i
-        class="sap-icon--private fd-object-marker__icon"
+        class="fd-object-marker__icon sap-icon--private"
+        role="presentation"
       />
-      Locked
+      
+        
+      <span
+        class="fd-object-marker__text"
+      >
+        Locked
+      </span>
+      
+    
     </a>
     
-
+    
     <a
       class="fd-object-marker fd-object-marker--link"
     >
+      
+        
       <i
-        class="sap-icon--user-edit fd-object-marker__icon"
+        class="fd-object-marker__icon sap-icon--user-edit"
+        role="presentation"
       />
-      Unsaved Changes
+      
+        
+      <span
+        class="fd-object-marker__text"
+      >
+        Unsaved Changes
+      </span>
+      
+    
     </a>
     
 
@@ -65,54 +109,109 @@ exports[`Storyshots Components/Object Marker Icon And Text 1`] = `
 <section>
   
 
-  <span
+  <div
     class="fd-object-marker"
   >
+    
+    
     <i
-      class="sap-icon--request fd-object-marker__icon"
+      class="fd-object-marker__icon sap-icon--request"
+      role="presentation"
     />
-    Request
-  </span>
+    
+    
+    <span
+      class="fd-object-marker__text"
+    >
+      Request
+    </span>
+    
+
+  </div>
   
 
-  <span
+  <div
     class="fd-object-marker"
   >
+    
+    
     <i
-      class="sap-icon--favorite fd-object-marker__icon"
+      class="fd-object-marker__icon sap-icon--favorite"
+      role="presentation"
     />
-    Favourite
-  </span>
+    
+    
+    <span
+      class="fd-object-marker__text"
+    >
+      Favourite
+    </span>
+    
+
+  </div>
   
 
-  <span
+  <div
     class="fd-object-marker"
   >
+    
+    
     <i
-      class="sap-icon--flag fd-object-marker__icon"
+      class="fd-object-marker__icon sap-icon--flag"
+      role="presentation"
     />
-    Flag
-  </span>
+    
+    
+    <span
+      class="fd-object-marker__text"
+    >
+      Flag
+    </span>
+    
+
+  </div>
   
 
-  <span
+  <div
     class="fd-object-marker"
   >
+    
+    
     <i
-      class="sap-icon--user-edit fd-object-marker__icon"
+      class="fd-object-marker__icon sap-icon--user-edit"
+      role="presentation"
     />
-    Draft
-  </span>
+    
+    
+    <span
+      class="fd-object-marker__text"
+    >
+      Draft
+    </span>
+    
+
+  </div>
   
 
-  <span
-    class="fd-object-marker "
+  <div
+    class="fd-object-marker"
   >
+    
+    
     <i
-      class="sap-icon--private fd-object-marker__icon"
+      class="fd-object-marker__icon sap-icon--private"
+      role="presentation"
     />
-    Locked
-  </span>
+    
+    
+    <span
+      class="fd-object-marker__text"
+    >
+      Locked
+    </span>
+    
+
+  </div>
   
 
 
@@ -120,60 +219,115 @@ exports[`Storyshots Components/Object Marker Icon And Text 1`] = `
     dir="rtl"
   >
     
-
+    
     <h4>
       RTL Support
     </h4>
     
-
-    <span
+    
+    <div
       class="fd-object-marker"
     >
+      
+        
       <i
-        class="sap-icon--request fd-object-marker__icon"
+        class="fd-object-marker__icon sap-icon--request"
+        role="presentation"
       />
-      Request
-    </span>
+      
+        
+      <span
+        class="fd-object-marker__text"
+      >
+        Request
+      </span>
+      
     
-
-    <span
+    </div>
+    
+    
+    <div
       class="fd-object-marker"
     >
+      
+        
       <i
-        class="sap-icon--favorite fd-object-marker__icon"
+        class="fd-object-marker__icon sap-icon--favorite"
+        role="presentation"
       />
-      Favourite
-    </span>
+      
+        
+      <span
+        class="fd-object-marker__text"
+      >
+        Favourite
+      </span>
+      
     
-
-    <span
+    </div>
+    
+    
+    <div
       class="fd-object-marker"
     >
+      
+        
       <i
-        class="sap-icon--flag fd-object-marker__icon"
+        class="fd-object-marker__icon sap-icon--flag"
+        role="presentation"
       />
-      Flag
-    </span>
+      
+        
+      <span
+        class="fd-object-marker__text"
+      >
+        Flag
+      </span>
+      
     
-
-    <span
+    </div>
+    
+    
+    <div
       class="fd-object-marker"
     >
+      
+        
       <i
-        class="sap-icon--user-edit fd-object-marker__icon"
+        class="fd-object-marker__icon sap-icon--user-edit"
+        role="presentation"
       />
-      Draft
-    </span>
+      
+        
+      <span
+        class="fd-object-marker__text"
+      >
+        Draft
+      </span>
+      
     
-
-    <span
-      class="fd-object-marker "
+    </div>
+    
+    
+    <div
+      class="fd-object-marker"
     >
+      
+        
       <i
-        class="sap-icon--private fd-object-marker__icon"
+        class="fd-object-marker__icon sap-icon--private"
+        role="presentation"
       />
-      Locked
-    </span>
+      
+        
+      <span
+        class="fd-object-marker__text"
+      >
+        Locked
+      </span>
+      
+    
+    </div>
     
 
   </div>
@@ -186,54 +340,74 @@ exports[`Storyshots Components/Object Marker Icon Only 1`] = `
 <section>
   
 
-  <span
-    aria-label="icon for request"
+  <div
     class="fd-object-marker"
   >
+    
+    
     <i
-      class="sap-icon--request fd-object-marker__icon"
+      aria-label="icon for request"
+      class="fd-object-marker__icon sap-icon--request"
     />
-  </span>
+    
+
+  </div>
   
 
-  <span
-    aria-label="icon for favourite"
+  <div
     class="fd-object-marker"
   >
+    
+    
     <i
-      class="sap-icon--favorite fd-object-marker__icon"
+      aria-label="icon for favourite"
+      class="fd-object-marker__icon sap-icon--favorite"
     />
-  </span>
+    
+
+  </div>
   
 
-  <span
-    aria-label="icon for flag"
+  <div
     class="fd-object-marker"
   >
+    
+    
     <i
-      class="sap-icon--flag fd-object-marker__icon"
+      aria-label="icon for flag"
+      class="fd-object-marker__icon sap-icon--flag"
     />
-  </span>
+    
+
+  </div>
   
 
-  <span
-    aria-label="icon for user edit"
+  <div
     class="fd-object-marker"
   >
+    
+    
     <i
-      class="sap-icon--user-edit fd-object-marker__icon"
+      aria-label="icon for user edit"
+      class="fd-object-marker__icon sap-icon--user-edit"
     />
-  </span>
+    
+
+  </div>
   
 
-  <span
-    aria-label="icon for private"
+  <div
     class="fd-object-marker"
   >
+    
+    
     <i
-      class="sap-icon--private fd-object-marker__icon"
+      aria-label="icon for private"
+      class="fd-object-marker__icon sap-icon--private"
     />
-  </span>
+    
+
+  </div>
   
 
 </section>
@@ -243,18 +417,34 @@ exports[`Storyshots Components/Object Marker Marker Text 1`] = `
 <section>
   
 
-  <span
+  <div
     class="fd-object-marker"
   >
-    Draft
-  </span>
+    
+    
+    <span
+      class="fd-object-marker__text"
+    >
+      Draft
+    </span>
+    
+
+  </div>
   
 
-  <span
+  <div
     class="fd-object-marker"
   >
-    Locked
-  </span>
+    
+    
+    <span
+      class="fd-object-marker__text"
+    >
+      Locked
+    </span>
+    
+
+  </div>
   
 
 </section>
