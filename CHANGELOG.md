@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.78](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.77...v0.12.0-rc.78) (2020-09-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* Object status icon and text are extracted in separate `<i>` and `<span>`  elements and new classes have been introduced: `fd-object-status__icon` and `fd-object-status__text`
+
+### Bug Fixes
+
+* Refactor object status icons and text ([#1655](https://github.com/SAP/fundamental-styles/issues/1655)) ([a1457ee](https://github.com/SAP/fundamental-styles/commit/a1457ee634607b97233f0c8bfeb60d043357db5d))
+
 ## [0.12.0-rc.77](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.76...v0.12.0-rc.77) (2020-09-22)
 
 
