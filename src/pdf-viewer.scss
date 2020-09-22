@@ -4,8 +4,6 @@
 $block: #{$fd-namespace}-pdf-viewer;
 
 .#{$block} {
-  padding: 1rem;
-
   &__dialog {
     max-height: calc(100vh - 8rem);
   }
@@ -19,6 +17,7 @@ $block: #{$fd-namespace}-pdf-viewer;
 
   &__content {
     width: 100%;
+    min-width: 50rem;
 
     &--in-page {
       width: 100%;

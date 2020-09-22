@@ -31,8 +31,6 @@ $button: #{$fd-namespace}-button;
   $fd-dialog-content-box-shadow: var(--sapContent_Shadow3);
   $fd-dialog-content-border-radius: var(--sapElement_BorderCornerRadius);
   $fd-dialog-content-padding-x: (def: 1rem, s: 1rem, m: 2rem, l: 2rem, xl: 3rem);
-  $fd-dialog-content-min-width-x: (def: 0, s: 0, m: 600px, l: 1024px, xl: 1440px);
-  $fd-dialog-content-max-width-x: (def: 599px, s: 599px, m: 1023px, l: 1439px, xl: 0);
 
   // RESIZE HANDLE
   $fd-dialog-resize-handle-color: var(--sapButton_Lite_TextColor);
@@ -70,8 +68,6 @@ $button: #{$fd-namespace}-button;
         .#{$block}__body {
           padding-left: map_get($fd-dialog-content-padding-x, $size-label);
           padding-right: map_get($fd-dialog-content-padding-x, $size-label);
-          min-width: map_get($fd-dialog-content-min-width-x, $size-label);
-          max-width: map_get($fd-dialog-content-max-width-x, $size-label);
         }
       }
     }

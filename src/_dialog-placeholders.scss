@@ -27,7 +27,9 @@ $fd-dialog-overlay-color: rgba(0, 0, 0, 0.6); // Should be fade(var(--sapBlockLa
   outline: none;
   position: absolute;
   min-height: $fd-dialog-content-min-height;
+  min-width: $fd-dialog-content-min-width;
   max-height: calc(100vh - #{$fd-dialog-content-margin-y});
+  max-width: calc(100vw - #{$fd-dialog-content-margin-x});
   box-shadow: $fd-dialog-content-box-shadow;
   border-radius: $fd-dialog-content-border-radius;
 }
