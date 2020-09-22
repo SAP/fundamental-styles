@@ -33,115 +33,117 @@ Note: With checkboxes, all options are visible, and the user can make one or mor
 
 const localStyles = `
 <style>
-    .checkbox-example-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
     .checkbox-example-container > fieldset {
         max-width: 100%;
     }
 </style>
 `;
 
-export const primary = () => `
+export const desktop = () => `
 ${localStyles}
-<div class="checkbox-example-container">
-    <fieldset class="fd-fieldset">
-        <legend class="fd-fieldset__legend">Cozy Checkboxes</legend>
-        <div class="fd-form-group">
-            <div class="fd-form-item">
-                <input type="checkbox" class="fd-checkbox" id="Ai4ez611">
-                <label class="fd-checkbox__label" for="Ai4ez611">
-                    <span class="fd-checkbox__text">Apple</span>
-                </label>
-            </div>
-            <div class="fd-form-item">
-                <input type="checkbox" class="fd-checkbox" id="Ai4ez612" checked>
-                <label class="fd-checkbox__label" for="Ai4ez612">
-                    <span class="fd-checkbox__text">Banana</span>
-                </label>
-            </div>
-            <div class="fd-form-item">
-                <input type="checkbox" class="fd-checkbox" id="Ai4ez622" disabled>
-                <label class="fd-checkbox__label" for="Ai4ez622">
-                    <span class="fd-checkbox__text">Kiwi</span>
-                </label>
-            </div>
-            <div class="fd-form-item">
-                <input type="checkbox" class="fd-checkbox" id="Ai4ez632"  checked disabled>
-                <label class="fd-checkbox__label" for="Ai4ez632">
-                    <span class="fd-checkbox__text">Lemon</span>
-                </label>
-            </div>
-            <div class="fd-form-item">
-                <input type="checkbox" class="fd-checkbox" id="Ai4ez613">
-                <label class="fd-checkbox__label" for="Ai4ez613">
-                    <span class="fd-checkbox__text">All Fruits (TriState)</span>
-                </label>
-            </div>
-            <div class="fd-form-item">
-                <input type="checkbox" class="fd-checkbox" id="Ai4ez643" disabled>
-                <label class="fd-checkbox__label" for="Ai4ez643">
-                    <span class="fd-checkbox__text">All Fruits (TriState)</span>
-                </label>
-            </div>
+<fieldset class="fd-fieldset">
+    <legend class="fd-fieldset__legend">Compact Checkboxes</legend>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez611c">
+            <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez611c">
+                <span class="fd-checkbox__text">Apple</span>
+            </label>
         </div>
-    </fieldset>
-    <fieldset class="fd-fieldset">
-        <legend class="fd-fieldset__legend">Compact Checkboxes</legend>
-        <div class="fd-form-group">
-            <div class="fd-form-item">
-                <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez611c">
-                <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez611c">
-                    <span class="fd-checkbox__text">Apple</span>
-                </label>
-            </div>
-            <div class="fd-form-item">
-                <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez612c" checked>
-                <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez612c">
-                    <span class="fd-checkbox__text">Banana</span>
-                </label>
-            </div>
-            <div class="fd-form-item">
-                <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez622c" disabled>
-                <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez622c">
-                    <span class="fd-checkbox__text">Kiwi</span>
-                </label>
-            </div>
-            <div class="fd-form-item">
-                <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez632c"  checked disabled>
-                <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez632c">
-                    <span class="fd-checkbox__text">Lemon</span>
-                </label>
-            </div>
-            <div class="fd-form-item">
-                <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez613c">
-                <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez613c">
-                    <span class="fd-checkbox__text">All Fruits (TriState)</span>
-                </label>
-            </div>
-            <div class="fd-form-item">
-                <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez643c" disabled>
-                <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez643c">
-                    <span class="fd-checkbox__text">All Fruits (TriState)</span>
-                </label>
-            </div>
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez612c" checked>
+            <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez612c">
+                <span class="fd-checkbox__text">Banana</span>
+            </label>
         </div>
-    </fieldset>
-</div>
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez622c" disabled>
+            <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez622c">
+                <span class="fd-checkbox__text">Kiwi</span>
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez632c"  checked disabled>
+            <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez632c">
+                <span class="fd-checkbox__text">Lemon</span>
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez613c">
+            <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez613c">
+                <span class="fd-checkbox__text">All Fruits (TriState)</span>
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez643c" disabled>
+            <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez643c">
+                <span class="fd-checkbox__text">All Fruits (TriState)</span>
+            </label>
+        </div>
+    </div>
+</fieldset>
 `;
 
-primary.storyName = 'Desktop';
-primary.parameters = {
+desktop.storyName = 'Desktop';
+desktop.parameters = {
     docs: {
         iframeHeight: 330,
-        storyDescription: `A checkbox can be displayed in two different sizes desktop (compact) and mobile (cozy). The default checkbox appears smaller and uses the <code>fd-checkbox\\_\\_label--compact</code> modifier class.
-        
-Mobile
+        storyDescription: `A checkbox can be displayed in two different sizes desktop (compact) and mobile (default). 
+The checkbox appears smaller and uses the <code>fd-checkbox\\_\\_label--compact</code> modifier class.
+        `
+    }
+};
 
-A checkbox can display larger so users can select options easier on a mobile screen by adding the <code>fd-checkbox\\_\\_label--cozy</code> modifier class to the element.
+export const mobile = () => `
+${localStyles}
+<fieldset class="fd-fieldset">
+    <legend class="fd-fieldset__legend">Cozy Checkboxes</legend>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez611">
+            <label class="fd-checkbox__label" for="Ai4ez611">
+                <span class="fd-checkbox__text">Apple</span>
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez612" checked>
+            <label class="fd-checkbox__label" for="Ai4ez612">
+                <span class="fd-checkbox__text">Banana</span>
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez622" disabled>
+            <label class="fd-checkbox__label" for="Ai4ez622">
+                <span class="fd-checkbox__text">Kiwi</span>
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez632"  checked disabled>
+            <label class="fd-checkbox__label" for="Ai4ez632">
+                <span class="fd-checkbox__text">Lemon</span>
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez613">
+            <label class="fd-checkbox__label" for="Ai4ez613">
+                <span class="fd-checkbox__text">All Fruits (TriState)</span>
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez643" disabled>
+            <label class="fd-checkbox__label" for="Ai4ez643">
+                <span class="fd-checkbox__text">All Fruits (TriState)</span>
+            </label>
+        </div>
+    </div>
+</fieldset>
+`;
+
+mobile.storyName = 'Mobile';
+mobile.parameters = {
+    docs: {
+        iframeHeight: 330,
+        storyDescription: `A checkbox can display larger so users can select options easier on a mobile screen. This is the default size of the checkbox.
         `
     }
 };
