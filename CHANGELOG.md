@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.65](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.64...v0.12.0-rc.65) (2020-09-22)
+
+
+### Bug Fixes
+
+* padding fix for compact radio button ([#1592](https://github.com/SAP/fundamental-styles/issues/1592)) ([a274f7c](https://github.com/SAP/fundamental-styles/commit/a274f7c47573766c700bd10a7e2539ba41aaf8fa))
+
 ## [0.12.0-rc.64](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.63...v0.12.0-rc.64) (2020-09-21)
 
 
