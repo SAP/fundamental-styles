@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.72](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.71...v0.12.0-rc.72) (2020-09-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* Use <i> tag for icons, add aria role
+
+### Bug Fixes
+
+* Message Page - Refactor icons usage - [#2](https://github.com/SAP/fundamental-styles/issues/2) ([#1676](https://github.com/SAP/fundamental-styles/issues/1676)) ([75a6ade](https://github.com/SAP/fundamental-styles/commit/75a6ade2f29a0c37eb9c77b66df3e5ce2a77d24a))
+* Side Navigation - Refactor icons usage - [#2](https://github.com/SAP/fundamental-styles/issues/2) ([#1675](https://github.com/SAP/fundamental-styles/issues/1675)) ([2e3d207](https://github.com/SAP/fundamental-styles/commit/2e3d2074a5ded21e57d18b4b5d8bd67b872dd5fd))
+* Table, List - Refactor icons usage - [#2](https://github.com/SAP/fundamental-styles/issues/2) ([#1677](https://github.com/SAP/fundamental-styles/issues/1677)) ([4337686](https://github.com/SAP/fundamental-styles/commit/43376869cf6f87a567f18f97b5ae135615c941f8))
+
 ## [0.12.0-rc.71](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.70...v0.12.0-rc.71) (2020-09-22)
 
 
