@@ -41,7 +41,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-down-arrow"
+            class="fd-tree__icon sap-icon--navigation-down-arrow"
             role="presentation"
           />
           
@@ -95,7 +95,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
               
                         
               <i
-                class="sap-icon--navigation-right-arrow"
+                class="fd-tree__icon sap-icon--navigation-right-arrow"
                 role="presentation"
               />
               
@@ -342,7 +342,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-down-arrow"
+            class="fd-tree__icon sap-icon--navigation-down-arrow"
             role="presentation"
           />
           
@@ -396,7 +396,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
               
                         
               <i
-                class="sap-icon--navigation-right-arrow"
+                class="fd-tree__icon sap-icon--navigation-right-arrow"
                 role="presentation"
               />
               
@@ -647,7 +647,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
           
                 
           <i
-            class="sap-icon--navigation-down-arrow"
+            class="fd-tree__icon sap-icon--navigation-down-arrow"
             role="presentation"
           />
           
@@ -671,18 +671,10 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
         </a>
         
             
-        <span
-          class="fd-tree__icon fd-tree__icon--navigation"
-        >
-          
-                
-          <i
-            class="sap-icon--slim-arrow-right"
-            role="presentation"
-          />
-          
-            
-        </span>
+        <i
+          class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+          role="presentation"
+        />
         
         
       </div>
@@ -719,7 +711,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
               
                         
               <i
-                class="sap-icon--navigation-down-arrow"
+                class="fd-tree__icon sap-icon--navigation-down-arrow"
                 role="presentation"
               />
               
@@ -776,7 +768,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                   
                                 
                   <i
-                    class="sap-icon--navigation-down-arrow"
+                    class="fd-tree__icon sap-icon--navigation-down-arrow"
                     role="presentation"
                   />
                   
@@ -800,18 +792,10 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                 </a>
                 
                             
-                <span
-                  class="fd-tree__icon fd-tree__icon--navigation"
-                >
-                  
-                                
-                  <i
-                    class="sap-icon--slim-arrow-right"
-                    role="presentation"
-                  />
-                  
-                            
-                </span>
+                <i
+                  class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+                  role="presentation"
+                />
                 
                         
               </div>
@@ -848,7 +832,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                       
                                         
                       <i
-                        class="sap-icon--navigation-down-arrow"
+                        class="fd-tree__icon sap-icon--navigation-down-arrow"
                         role="presentation"
                       />
                       
@@ -905,7 +889,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                           
                                                 
                           <i
-                            class="sap-icon--navigation-down-arrow"
+                            class="fd-tree__icon sap-icon--navigation-down-arrow"
                             role="presentation"
                           />
                           
@@ -962,7 +946,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                               
                                                         
                               <i
-                                class="sap-icon--navigation-down-arrow"
+                                class="fd-tree__icon sap-icon--navigation-down-arrow"
                                 role="presentation"
                               />
                               
@@ -1015,7 +999,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                                   
                                                                 
                                   <i
-                                    class="sap-icon--navigation-right-arrow"
+                                    class="fd-tree__icon sap-icon--navigation-right-arrow"
                                     role="presentation"
                                   />
                                   
@@ -1189,18 +1173,10 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                     </a>
                     
                                     
-                    <span
-                      class="fd-tree__icon fd-tree__icon--navigation"
-                    >
-                      
-                                        
-                      <i
-                        class="sap-icon--slim-arrow-right"
-                        role="presentation"
-                      />
-                      
-                                    
-                    </span>
+                    <i
+                      class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+                      role="presentation"
+                    />
                     
                                 
                   </div>
@@ -1243,18 +1219,10 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                 </a>
                 
                             
-                <span
-                  class="fd-tree__icon fd-tree__icon--navigation"
-                >
-                  
-                                
-                  <i
-                    class="sap-icon--slim-arrow-right"
-                    role="presentation"
-                  />
-                  
-                            
-                </span>
+                <i
+                  class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+                  role="presentation"
+                />
                 
                         
               </div>
@@ -1336,18 +1304,10 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
         </a>
         
             
-        <span
-          class="fd-tree__icon fd-tree__icon--navigation"
-        >
-          
-                
-          <i
-            class="sap-icon--slim-arrow-right"
-            role="presentation"
-          />
-          
-            
-        </span>
+        <i
+          class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+          role="presentation"
+        />
         
         
       </div>
@@ -1384,18 +1344,10 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
         </a>
         
             
-        <span
-          class="fd-tree__icon fd-tree__icon--navigation"
-        >
-          
-                
-          <i
-            class="sap-icon--slim-arrow-right"
-            role="presentation"
-          />
-          
-            
-        </span>
+        <i
+          class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+          role="presentation"
+        />
         
         
       </div>
@@ -1449,7 +1401,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
           
                 
           <i
-            class="sap-icon--navigation-down-arrow"
+            class="fd-tree__icon sap-icon--navigation-down-arrow"
             role="presentation"
           />
           
@@ -1473,18 +1425,10 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
         </a>
         
             
-        <span
-          class="fd-tree__icon fd-tree__icon--navigation"
-        >
-          
-                
-          <i
-            class="sap-icon--slim-arrow-right"
-            role="presentation"
-          />
-          
-            
-        </span>
+        <i
+          class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+          role="presentation"
+        />
         
         
       </div>
@@ -1521,7 +1465,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
               
                         
               <i
-                class="sap-icon--navigation-down-arrow"
+                class="fd-tree__icon sap-icon--navigation-down-arrow"
                 role="presentation"
               />
               
@@ -1578,7 +1522,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                   
                                 
                   <i
-                    class="sap-icon--navigation-down-arrow"
+                    class="fd-tree__icon sap-icon--navigation-down-arrow"
                     role="presentation"
                   />
                   
@@ -1602,18 +1546,10 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                 </a>
                 
                             
-                <span
-                  class="fd-tree__icon fd-tree__icon--navigation"
-                >
-                  
-                                
-                  <i
-                    class="sap-icon--slim-arrow-right"
-                    role="presentation"
-                  />
-                  
-                            
-                </span>
+                <i
+                  class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+                  role="presentation"
+                />
                 
                         
               </div>
@@ -1650,7 +1586,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                       
                                         
                       <i
-                        class="sap-icon--navigation-down-arrow"
+                        class="fd-tree__icon sap-icon--navigation-down-arrow"
                         role="presentation"
                       />
                       
@@ -1707,7 +1643,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                           
                                                 
                           <i
-                            class="sap-icon--navigation-down-arrow"
+                            class="fd-tree__icon sap-icon--navigation-down-arrow"
                             role="presentation"
                           />
                           
@@ -1764,7 +1700,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                               
                                                         
                               <i
-                                class="sap-icon--navigation-down-arrow"
+                                class="fd-tree__icon sap-icon--navigation-down-arrow"
                                 role="presentation"
                               />
                               
@@ -1817,7 +1753,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                                   
                                                                 
                                   <i
-                                    class="sap-icon--navigation-right-arrow"
+                                    class="fd-tree__icon sap-icon--navigation-right-arrow"
                                     role="presentation"
                                   />
                                   
@@ -1991,18 +1927,10 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                     </a>
                     
                                     
-                    <span
-                      class="fd-tree__icon fd-tree__icon--navigation"
-                    >
-                      
-                                        
-                      <i
-                        class="sap-icon--slim-arrow-right"
-                        role="presentation"
-                      />
-                      
-                                    
-                    </span>
+                    <i
+                      class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+                      role="presentation"
+                    />
                     
                                 
                   </div>
@@ -2045,18 +1973,10 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
                 </a>
                 
                             
-                <span
-                  class="fd-tree__icon fd-tree__icon--navigation"
-                >
-                  
-                                
-                  <i
-                    class="sap-icon--slim-arrow-right"
-                    role="presentation"
-                  />
-                  
-                            
-                </span>
+                <i
+                  class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+                  role="presentation"
+                />
                 
                         
               </div>
@@ -2138,18 +2058,10 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
         </a>
         
             
-        <span
-          class="fd-tree__icon fd-tree__icon--navigation"
-        >
-          
-                
-          <i
-            class="sap-icon--slim-arrow-right"
-            role="presentation"
-          />
-          
-            
-        </span>
+        <i
+          class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+          role="presentation"
+        />
         
         
       </div>
@@ -2186,18 +2098,10 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
         </a>
         
             
-        <span
-          class="fd-tree__icon fd-tree__icon--navigation"
-        >
-          
-                
-          <i
-            class="sap-icon--slim-arrow-right"
-            role="presentation"
-          />
-          
-            
-        </span>
+        <i
+          class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right"
+          role="presentation"
+        />
         
         
       </div>
@@ -2258,7 +2162,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-down-arrow"
+            class="fd-tree__icon sap-icon--navigation-down-arrow"
             role="presentation"
           />
           
@@ -2336,7 +2240,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
               
                         
               <i
-                class="sap-icon--navigation-right-arrow"
+                class="fd-tree__icon sap-icon--navigation-right-arrow"
                 role="presentation"
               />
               
@@ -2666,7 +2570,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-down-arrow"
+            class="fd-tree__icon sap-icon--navigation-down-arrow"
             role="presentation"
           />
           
@@ -2744,7 +2648,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
               
                         
               <i
-                class="sap-icon--navigation-right-arrow"
+                class="fd-tree__icon sap-icon--navigation-right-arrow"
                 role="presentation"
               />
               
@@ -3074,7 +2978,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-down-arrow"
+            class="fd-tree__icon sap-icon--navigation-down-arrow"
             role="presentation"
           />
           
@@ -3152,7 +3056,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
               
                         
               <i
-                class="sap-icon--navigation-right-arrow"
+                class="fd-tree__icon sap-icon--navigation-right-arrow"
                 role="presentation"
               />
               
