@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.71](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.70...v0.12.0-rc.71) (2020-09-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* (Product Switch) - Markup changes regarding A11y - added role="presentation" and changes <div> to <i> for fd-product-switch__icon
+
+### Bug Fixes
+
+* change icons on product switch ([#1652](https://github.com/SAP/fundamental-styles/issues/1652)) ([97e6bcf](https://github.com/SAP/fundamental-styles/commit/97e6bcf84449eab411c8a0b68908b3c33bc91df4))
+
 ## [0.12.0-rc.70](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.69...v0.12.0-rc.70) (2020-09-22)
 
 
