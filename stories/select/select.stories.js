@@ -281,24 +281,24 @@ export const twoColumnsAndIcons = () => `
     <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h090G325">
         <ul tabIndex="-1" aria-labelledby="g45564A50" class="fd-list fd-list--dropdown" role="listbox" id="s45GH6Y7">
             <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
-            <span class="fd-list__icon sap-icon--marketing-campaign"></span>
-            <span class="fd-list__title">Marketing</span>
-            <span class="fd-list__secondary">1000 EUR</span>
+                <i role="presentation" class="fd-list__icon sap-icon--marketing-campaign"></i>
+                <span class="fd-list__title">Marketing</span>
+                <span class="fd-list__secondary">1000 EUR</span>
             </li>
             <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__icon sap-icon--save"></span>
-            <span class="fd-list__title">Backups</span>
-            <span class="fd-list__secondary">500 EUR</span>
-        </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__icon sap-icon--shipping-status"></span>
-            <span class="fd-list__title">Shipping</span>
-            <span class="fd-list__secondary">125 EUR</span>
+                <i role="presentation" class="fd-list__icon sap-icon--save"></i>
+                <span class="fd-list__title">Backups</span>
+                <span class="fd-list__secondary">500 EUR</span>
             </li>
             <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__icon sap-icon--headset"></span>
-            <span class="fd-list__title">Consulting</span>
-            <span class="fd-list__secondary">200 EUR</span>
+                <i role="presentation" class="fd-list__icon sap-icon--shipping-status"></i>
+                <span class="fd-list__title">Shipping</span>
+                <span class="fd-list__secondary">125 EUR</span>
+            </li>
+            <li class="fd-list__item" role="option" tabindex="-1">
+                <i role="presentation" class="fd-list__icon sap-icon--headset"></i>
+                <span class="fd-list__title">Consulting</span>
+                <span class="fd-list__secondary">200 EUR</span>
             </li>
         </ul>
     </div>

@@ -262,6 +262,11 @@ code.docs-code {
   border-radius: 4px;
 }
 
+code.docs-code-grey {
+  color: rgba(64, 64, 64, 0.9);
+  background-color: #f8f8f8;
+}
+
 .fd-dialog-docs-static,
 .fd-message-box-docs-static {
   &.fd-dialog,

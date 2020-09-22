@@ -1,276 +1,807 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Notification Error 1`] = `
+exports[`Storyshots Components/Notifications Error 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Notification Information 1`] = `
+exports[`Storyshots Components/Notifications Information 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Notification Medium Size 1`] = `
-
-
-`;
-
-exports[`Storyshots Components/Notification Notification Group 1`] = `
-
-
-`;
-
-exports[`Storyshots Components/Notification Primary 1`] = `
-
-
-`;
-
-exports[`Storyshots Components/Notification RTL 1`] = `
-
-
-`;
-
-exports[`Storyshots Components/Notification Small Size 1`] = `
+exports[`Storyshots Components/Notifications Mobile 1`] = `
 <section>
   
 
   <div
-    class="fd-notification fd-notification--information fd-notification--s"
+    style="heigt: 200px; max-width: 20rem"
   >
     
-    
+
+
     <div
-      class="fd-notification__header"
+      "=""
+      class="fd-notification fd-notification--mobile"
     >
       
-        
+    
       <div
-        class="fd-notification__indicator--information"
-      />
-      
-        
-      <div
-        class="fd-notification__title"
-      >
-        This is the notifications title
-      </div>
-      
-        
-      <button
-        aria-label="decline-button"
-        class="fd-button fd-button--transparent fd-notification__close"
-        role="button"
+        class="fd-notification__body"
       >
         
-            
-        <i
-          class="sap-icon--decline"
+        
+        <span
+          aria-label="John Doe"
+          class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+          role="presentation"
+          style="background-image: url('http://lorempixel.com/400/400/nature/4/')"
         />
         
         
-      </button>
-      
-    
-    </div>
-    
-    
-    <div
-      class="fd-notification__body"
-    >
-      
-        
-      <div
-        class="fd-notification__content"
-      >
-        
-            
         <div
-          class="fd-notification__avatar"
+          class="fd-notification__content"
         >
           
-                
-          <span
-            aria-label="Wendy Wallace"
-            class="fd-avatar fd-avatar--xs"
-          >
-            WW
-          </span>
-          
             
-        </div>
-        
-            
-        <div
-          class="fd-notification__text"
-        >
-          
-                
           <div
-            class="fd-notification__description"
+            class="fd-notification__header"
           >
             
-                    Lorem ipsum dolor sit amet, consectetur adipiscing.
                 
-          </div>
-          
-                
-          <div
-            class="fd-notification__metadata"
-          >
+            <div
+              class="fd-notification__indicator fd-notification__indicator--success"
+            />
             
-                    Author | 15 minutes ago
                 
+            <h2
+              class="fd-notification__title fd-notification__title--unread"
+            >
+              Your leave request has been accepted
+            </h2>
+            
+            
           </div>
           
             
+          <p
+            class="fd-notification__paragraph"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          
+            
+          <p
+            class="fd-notification__footer"
+          >
+            
+                
+            <span
+              class="fd-notification__footer-content"
+            >
+              SAP Analytics Cloud
+            </span>
+            
+                
+            <span
+              class="fd-notification__separator"
+            />
+            7 minutes ago
+          </p>
+          
+        
         </div>
         
         
-      </div>
-      
-        
-      <div
-        class="fd-notification__footer"
-      >
-        
-            
         <div
           class="fd-notification__actions"
         >
           
-                
-          <button
-            class="fd-button fd-button--positive"
-            role="button"
+               
+          <div
+            class="fd-popover fd-popover--right"
           >
-            Approve
-          </button>
-          
+            
                 
-          <button
-            class="fd-button fd-button--negative"
-            role="button"
-          >
-            Reject
-          </button>
+            <div
+              class="fd-popover__control"
+            >
+              
+                    
+              <button
+                aria-controls="popoverA4"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="Image label"
+                class="fd-button fd-button--transparent"
+                onclick="onPopoverClick('popoverA4');"
+              >
+                
+                         
+                <i
+                  class="sap-icon--overflow"
+                />
+                
+                    
+              </button>
+              
+                
+            </div>
+            
+                
+            <div
+              aria-hidden="true"
+              class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover"
+              id="popoverA4"
+            >
+              
+                    
+              <nav
+                class="fd-menu"
+                id=""
+              >
+                
+                        
+                <ul
+                  class="fd-menu__list fd-menu__list--no-shadow"
+                >
+                  
+                            
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                
+                    <a
+                      class="fd-menu__link"
+                    >
+                      
+                                    
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Open
+                      </span>
+                      
+                                
+                    </a>
+                    
+                            
+                  </li>
+                  
+                            
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                
+                    <a
+                      class="fd-menu__link"
+                    >
+                      
+                                    
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Decline
+                      </span>
+                      
+                                
+                    </a>
+                    
+                            
+                  </li>
+                  
+                        
+                </ul>
+                
+                    
+              </nav>
+              
+                
+            </div>
+            
+            
+          </div>
           
             
+          <button
+            aria-label="Close"
+            class="fd-button fd-button--transparent fd-notification__actions--dismiss"
+          >
+            
+                
+            <i
+              class="sap-icon--decline"
+            />
+            
+            
+          </button>
+          
+        
         </div>
         
-        
+    
       </div>
       
-    
+
     </div>
     
 
   </div>
   
 
-
-  <br />
-  <br />
-  <br />
-  
-
-
   <div
-    class="fd-notification fd-notification--information fd-notification--s"
+    style="heigt: 200px; max-width: 20rem"
   >
     
-    
+
     <div
-      class="fd-notification__header"
+      class="fd-notification fd-notification--mobile fd-notification--group"
     >
       
-        
-      <div
-        class="fd-notification__indicator--information"
-      />
-      
-        
-      <div
-        class="fd-notification__title"
+    
+      <ul
+        class="fd-tabs fd-tabs--l fd-notification--tabs"
+        role="tablist"
       >
-        This is the notifications title
+        
+        
+        <li
+          class="fd-tabs__item"
+          role="listitem"
+        >
+          
+            
+          <a
+            aria-selected="true"
+            class="fd-tabs__link"
+            role="tab"
+          >
+            
+                
+            <span
+              class="fd-tabs__tag"
+            >
+              
+                    By Date
+                
+            </span>
+            
+            
+          </a>
+          
+        
+        </li>
+        
+        
+        <li
+          class="fd-tabs__item"
+          role="listitem"
+        >
+          
+            
+          <a
+            class="fd-tabs__link"
+            role="tab"
+          >
+            
+                
+            <span
+              class="fd-tabs__tag"
+            >
+              
+                    By Type
+                
+            </span>
+            
+            
+          </a>
+          
+        
+        </li>
+        
+        
+        <li
+          class="fd-tabs__item"
+          role="listitem"
+        >
+          
+            
+          <a
+            class="fd-tabs__link"
+            role="tab"
+          >
+            
+                
+            <span
+              class="fd-tabs__tag"
+            >
+              
+                    By Priority
+                
+            </span>
+            
+            
+          </a>
+          
+        
+        </li>
+        
+    
+      </ul>
+      
+    
+      <div
+        class="fd-notification__group-header"
+      >
+        
+        
+        <button
+          aria-label="arrow-down-button"
+          class="fd-button fd-button--transparent"
+          role="button"
+        >
+          
+            
+          <i
+            class="sap-icon--slim-arrow-down"
+          />
+          
+        
+        </button>
+        
+        
+        <div
+          class="fd-notification__content"
+        >
+          
+            
+          <div
+            class="fd-notification__header"
+          >
+            
+                
+            <div
+              class="fd-notification__indicator fd-notification__indicator--warning"
+            />
+            
+                
+            <h2
+              class="fd-notification__title fd-notification__title--unread"
+            >
+              Today (5)
+            </h2>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+        
+        <div
+          class="fd-notification__actions"
+        >
+          
+            
+          <button
+            aria-label="Close"
+            class="fd-button fd-button--transparent fd-notification__actions--dismiss"
+          >
+            
+                
+            <i
+              class="sap-icon--decline"
+            />
+            
+            
+          </button>
+          
+        
+        </div>
+        
+    
       </div>
       
-        
-      <button
-        aria-label="decline-button"
-        class="fd-button fd-button--transparent fd-notification__close"
-        role="button"
+    
+      <div
+        class="fd-notification__body"
       >
         
+        
+        <span
+          aria-label="John Doe"
+          class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+          role="presentation"
+        >
+          JD
+        </span>
+        
+        
+        <div
+          class="fd-notification__content"
+        >
+          
             
-        <i
-          class="sap-icon--decline"
+          <div
+            class="fd-notification__header"
+          >
+            
+                
+            <div
+              class="fd-notification__indicator fd-notification__indicator--warning"
+            />
+            
+                
+            <h2
+              class="fd-notification__title fd-notification__title--unread"
+            >
+              You've got new item
+            </h2>
+            
+            
+          </div>
+          
+            
+          <p
+            class="fd-notification__paragraph"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          
+            
+          <p
+            class="fd-notification__footer"
+          >
+            
+            
+            <span
+              class="fd-notification__footer-content"
+            >
+              SAP Teamm dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            </span>
+            
+            
+            <span
+              class="fd-notification__separator"
+            />
+            
+            
+            <span
+              class="fd-notification__footer-content"
+            >
+              7 minutes ago
+            </span>
+            
+            
+          </p>
+          
+        
+        </div>
+        
+        
+        <div
+          class="fd-notification__actions"
+        >
+          
+              
+          <div
+            class="fd-popover fd-popover--right"
+          >
+            
+                
+            <div
+              class="fd-popover__control"
+            >
+              
+                    
+              <button
+                aria-controls="popoverA3"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="Image label"
+                class="fd-button fd-button--transparent"
+                onclick="onPopoverClick('popoverA3');"
+              >
+                
+                         
+                <i
+                  class="sap-icon--overflow"
+                />
+                
+                    
+              </button>
+              
+                
+            </div>
+            
+                
+            <div
+              aria-hidden="true"
+              class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover"
+              id="popoverA3"
+            >
+              
+                    
+              <nav
+                class="fd-menu"
+                id=""
+              >
+                
+                        
+                <ul
+                  class="fd-menu__list fd-menu__list--no-shadow"
+                >
+                  
+                            
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                
+                    <a
+                      class="fd-menu__link"
+                    >
+                      
+                                    
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Open
+                      </span>
+                      
+                                
+                    </a>
+                    
+                            
+                  </li>
+                  
+                            
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                
+                    <a
+                      class="fd-menu__link"
+                    >
+                      
+                                    
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Decline
+                      </span>
+                      
+                                
+                    </a>
+                    
+                            
+                  </li>
+                  
+                        
+                </ul>
+                
+                    
+              </nav>
+              
+                
+            </div>
+            
+            
+          </div>
+          
+
+            
+          <button
+            aria-label="Close"
+            class="fd-button fd-button--transparent fd-notification__actions--dismiss"
+          >
+            
+                
+            <i
+              class="sap-icon--decline"
+            />
+            
+            
+          </button>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+    
+      <div
+        class="fd-notification__body"
+      >
+        
+        
+        <span
+          aria-label="John Doe"
+          class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+          role="presentation"
+          style="background-image: url('http://lorempixel.com/400/400/nature/4/')"
         />
         
         
-      </button>
-      
-    
-    </div>
-    
-    
-    <div
-      class="fd-notification__body"
-    >
-      
-        
-      <div
-        class="fd-notification__content"
-      >
-        
-            
         <div
-          class="fd-notification__avatar"
+          class="fd-notification__content"
         >
           
-                
-          <span
-            aria-label="Wendy Wallace"
-            class="fd-avatar fd-avatar--xs"
-          >
-            WW
-          </span>
-          
             
-        </div>
-        
-            
-        <div
-          class="fd-notification__text"
-        >
-          
-                
           <div
-            class="fd-notification__description"
+            class="fd-notification__header"
           >
             
-                    Lorem ipsum dolor sit amet, consectetur adipiscing.
-                
-          </div>
-          
-                
-          <div
-            class="fd-notification__metadata"
-          >
             
-                    Author | 15 minutes ago
-                
+            <div
+              class="fd-notification__indicator fd-notification__indicator--success"
+            />
+            
+            
+            <h2
+              class="fd-notification__title"
+            >
+              The title you've already read.
+            </h2>
+            
+            
           </div>
           
             
+          <p
+            class="fd-notification__paragraph"
+          >
+            Lagna aliqua.
+          </p>
+          
+            
+          <p
+            class="fd-notification__footer"
+          >
+            
+                
+            <span
+              class="fd-notification__footer-content"
+            >
+              SAP Analytics Cloud very long author name to test truncate
+            </span>
+            
+                
+            <span
+              class="fd-notification__separator"
+            />
+            
+                
+            <span
+              class="fd-notification__footer-content"
+            >
+              7 minutes ago long long time ago ages ago years ago
+            </span>
+            
+            
+          </p>
+          
+        
         </div>
         
         
+        <div
+          class="fd-notification__actions"
+        >
+          
+               
+          <div
+            class="fd-popover fd-popover--right"
+          >
+            
+                
+            <div
+              class="fd-popover__control"
+            >
+              
+                    
+              <button
+                aria-controls="popoverA2"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="Image label"
+                class="fd-button fd-button--transparent"
+                onclick="onPopoverClick('popoverA2');"
+              >
+                
+                         
+                <i
+                  class="sap-icon--overflow"
+                />
+                
+                    
+              </button>
+              
+                
+            </div>
+            
+                
+            <div
+              aria-hidden="true"
+              class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover"
+              id="popoverA2"
+            >
+              
+                    
+              <nav
+                class="fd-menu"
+                id=""
+              >
+                
+                        
+                <ul
+                  class="fd-menu__list fd-menu__list--no-shadow"
+                >
+                  
+                            
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                
+                    <a
+                      class="fd-menu__link"
+                    >
+                      
+                                    
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Open
+                      </span>
+                      
+                                
+                    </a>
+                    
+                            
+                  </li>
+                  
+                        
+                </ul>
+                
+                    
+              </nav>
+              
+                
+            </div>
+            
+            
+          </div>
+          
+
+            
+          <button
+            aria-label="Close"
+            class="fd-button fd-button--transparent fd-notification__actions--dismiss"
+          >
+            
+                
+            <i
+              class="sap-icon--decline"
+            />
+            
+            
+          </button>
+          
+        
+        </div>
+        
+    
       </div>
       
     
     </div>
     
+
 
   </div>
   
@@ -278,12 +809,22 @@ exports[`Storyshots Components/Notification Small Size 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Notification Success 1`] = `
+exports[`Storyshots Components/Notifications No Avatar 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Notification Warning 1`] = `
+exports[`Storyshots Components/Notifications Notification Group 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Notifications Primary 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Notifications Warning 1`] = `
 
 
 `;

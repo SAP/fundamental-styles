@@ -15,6 +15,10 @@
       @include fd-flex-center();
       @include ie11-active-state-fix();
 
+      @include fd-icon-element-base() {
+        @include fd-flex-center();
+      }
+
       width: $fd-list-byline-thumbnail-dimensions;
       height: $fd-list-byline-thumbnail-dimensions;
       min-width: $fd-list-byline-thumbnail-dimensions;

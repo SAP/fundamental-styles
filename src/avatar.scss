@@ -1,7 +1,9 @@
 @import "./mixins";
 
 /*!
-.fd-avatar+((--circle), (--thumbnail), (--xxs|--xs|--s|--m|--l|--xl|--xxl))
+.fd-avatar+((--circle), (--thumbnail), (--xxs|--xs|--s|--m|--l|--xl|--xxl), (--accent-color-{1-10}))
+  .fd-avatar__icon
+  .fd-avatar__zoom-icon
 */
 $block: #{$fd-namespace}-avatar;
 
@@ -13,11 +15,11 @@ $block: #{$fd-namespace}-avatar;
   $fd-zoom-icon-xl: 1.75rem !default;
   $fd-const-ratio: 1rem;
   $fd-avatar-sizes: (
-    "xs": ("ratio": ($fd-const-ratio * 2), "font-size": 1rem, "zoomIconDimensions": $fd-zoom-icon-s, "offset":  -0.125rem, "beforeFontSize": 0.75rem, "fontStretch": condensed),
-    "s": ("ratio": ($fd-const-ratio * 3), "font-size": 1.125rem, "zoomIconDimensions": $fd-zoom-icon-s, "offset":  -0.125rem, "beforeFontSize": 0.75rem, "fontStretch": condensed),
-    "m": ("ratio": ($fd-const-ratio * 4), "font-size": 1.5rem, "zoomIconDimensions": $fd-zoom-icon-s, "offset":  -0.125rem, "beforeFontSize": 0.75rem, "fontStretch": normal),
-    "l": ("ratio": ($fd-const-ratio * 5), "font-size": 2.25rem, "zoomIconDimensions": $fd-zoom-icon-l, "offset":  -0.1875rem, "beforeFontSize": 0.875rem, "fontStretch": normal),
-    "xl": ("ratio": ($fd-const-ratio * 7), "font-size": 3rem, "zoomIconDimensions": $fd-zoom-icon-xl, "offset":  -0.25rem, "beforeFontSize": 1rem, "fontStretch": normal)
+    "xs": ("ratio": ($fd-const-ratio * 2), "font-size": 1rem, "zoomIconDimensions": $fd-zoom-icon-s, "offset": -0.125rem, "beforeFontSize": 0.75rem, "fontStretch": condensed),
+    "s": ("ratio": ($fd-const-ratio * 3), "font-size": 1.125rem, "zoomIconDimensions": $fd-zoom-icon-s, "offset": -0.125rem, "beforeFontSize": 0.75rem, "fontStretch": condensed),
+    "m": ("ratio": ($fd-const-ratio * 4), "font-size": 1.5rem, "zoomIconDimensions": $fd-zoom-icon-s, "offset": -0.125rem, "beforeFontSize": 0.75rem, "fontStretch": normal),
+    "l": ("ratio": ($fd-const-ratio * 5), "font-size": 2.25rem, "zoomIconDimensions": $fd-zoom-icon-l, "offset": -0.1875rem, "beforeFontSize": 0.875rem, "fontStretch": normal),
+    "xl": ("ratio": ($fd-const-ratio * 7), "font-size": 3rem, "zoomIconDimensions": $fd-zoom-icon-xl, "offset": -0.25rem, "beforeFontSize": 1rem, "fontStretch": normal)
   );
 
   $fd-avatar-accent-colors: (
@@ -50,9 +52,72 @@ $block: #{$fd-namespace}-avatar;
       border-radius: var(--sapElement_BorderCornerRadius);
     }
   }
-  // BLOCK MODIFIERS ************
-  // sizes
 
+  // BLOCK ELEMENTS ************
+  // zoom icon
+  &__zoom-icon {
+    @include fd-icon-element-base() {
+      @include fd-flex-center();
+
+      position: absolute;
+      color: var(--sapButton_Emphasized_TextColor);
+      background-color: var(--sapButton_Emphasized_Background);
+      border-radius: $fd-avatar-border-radius;
+      border: 0.0625rem solid var(--sapButton_Emphasized_BorderColor);
+    }
+  }
+
+  &__icon {
+    @include fd-icon-element-base();
+  }
+
+  // BLOCK MODIFIERS ************
+  // circle
+  &--circle {
+    border-radius: $fd-avatar-border-radius;
+
+    .#{$block}__zoom-icon {
+      @include fd-icon-selector() {
+        bottom: 0;
+        right: 0;
+
+        @include fd-rtl() {
+          right: auto;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  // background
+  &--transparent {
+    background-color: transparent;
+    color: var(--sapContent_IconColor);
+  }
+
+  // placeholder background
+  &--placeholder {
+    background-color: var(--sapContent_ImagePlaceholderBackground);
+  }
+
+  // tile background
+  &--tile {
+    background-color: var(--sapTile_IconColor);
+  }
+
+  // optional border
+  &--border {
+    border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
+  }
+
+  // accent-colors
+  @each $set-name, $color-set in $fd-avatar-accent-colors {
+    &--accent-color-#{$set-name} {
+      background-color: map_get($color-set, "background-color");
+    }
+  }
+
+  // sizes
   @each $set-name, $size-set in $fd-avatar-sizes {
     &--#{$set-name} {
       @include fd-reset-spacing();
@@ -70,73 +135,19 @@ $block: #{$fd-namespace}-avatar;
       justify-content: center;
 
       .#{$block}__zoom-icon {
-        width: map_get($size-set, "zoomIconDimensions");
-        height: map_get($size-set, "zoomIconDimensions");
-        bottom: map_get($size-set, "offset");
-        right: map_get($size-set, "offset");
-
-        @include fd-rtl() {
-          right: auto;
-          left: map_get($size-set, "offset");
-        }
-
-        &::before {
+        @include fd-icon-selector() {
           font-size: map_get($size-set, "beforeFontSize");
+          width: map_get($size-set, "zoomIconDimensions");
+          height: map_get($size-set, "zoomIconDimensions");
+          bottom: map_get($size-set, "offset");
+          right: map_get($size-set, "offset");
+
+          @include fd-rtl() {
+            right: auto;
+            left: map_get($size-set, "offset");
+          }
         }
       }
-    }
-  }
-
-  // circle
-  &.#{$block}--circle {
-    border-radius: $fd-avatar-border-radius;
-
-    .#{$block}__zoom-icon {
-      bottom: 0;
-      right: 0;
-
-      @include fd-rtl() {
-        right: auto;
-        left: 0;
-      }
-    }
-  }
-
-  // background
-  &.#{$block}--transparent {
-    background-color: transparent;
-    color: var(--sapContent_IconColor);
-  }
-
-  // placeholder background
-  &.#{$block}--placeholder {
-    background-color: var(--sapContent_ImagePlaceholderBackground);
-  }
-
-  // tile background
-  &.#{$block}--tile {
-    background-color: var(--sapTile_IconColor);
-  }
-
-  // zoom icon
-  &__zoom-icon {
-    @include fd-flex-center();
-
-    background-color: var(--sapButton_Emphasized_Background);
-    color: var(--sapButton_Emphasized_TextColor);
-    position: absolute;
-    border: 0.0625rem solid var(--sapButton_Emphasized_BorderColor);
-    border-radius: $fd-avatar-border-radius;
-  }
-  // optional border
-  &.#{$block}--border {
-    border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
-  }
-
-  // accent-colors
-  @each $set-name, $color-set in $fd-avatar-accent-colors {
-    &--accent-color-#{$set-name} {
-      background-color: map_get($color-set, "background-color");
     }
   }
 }

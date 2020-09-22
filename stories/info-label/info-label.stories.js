@@ -4,22 +4,14 @@ export default {
     title: 'Components/Info Label',
     parameters: {
         description: `
-The info label is a non-interactive, non-semantic label with text. The label is used to highlight a characteristic of an object or item such as a state, type, quantity or condition. It can be used in tables, headers and display forms.
-        
-##Usage
+Info Label is a small non-interactive numeric or text-based label.
+Its primary use is to add user-defined characteristic to an object. 
+Use the Info Label base class with following modifiers:
 
-**Use the info label if:**
-
-- You are designing an administrative or monitoring application.
-- You want to highlight a characteristic of an object.
-
-
-**Do not use the info label if:**
-
-- You are designing an SAP Fiori application.
-- You want to indicate the status of an object. 
-
-
+- \`fd-info-label\`
+    - \`fd-info-label--accent-color-*\`
+    - \`fd-info-label--icon\`
+    - \`fd-info-label--numeric\`
       `,
         tags: ['f3', 'a11y', 'theme']
     }
@@ -31,88 +23,101 @@ The info label is a non-interactive, non-semantic label with text. The label is 
 
 export const colors = () => `
 <div class="fddocs-container">
-    <span class="fd-info-label fd-info-label--accent-color-1">Info Label</span>
+    <span class="fd-info-label fd-info-label--accent-color-1">
+        <span class="fd-info-label__text">Info Label</span>
+    </span>
     <br><br>
-    <span class="fd-info-label fd-info-label--accent-color-2">Info Label</span>
+    <span class="fd-info-label fd-info-label--accent-color-2">
+        <span class="fd-info-label__text">Info Label</span>
+    </span>
     <br><br>
-    <span class="fd-info-label fd-info-label--accent-color-3">Info Label</span>
+    <span class="fd-info-label fd-info-label--accent-color-3">
+        <span class="fd-info-label__text">Info Label</span>
+    </span>
     <br><br>
-    <span class="fd-info-label fd-info-label--accent-color-4">Info Label</span>
+    <span class="fd-info-label fd-info-label--accent-color-4">
+        <span class="fd-info-label__text">Info Label</span>
+    </span>
     <br><br>
-    <span class="fd-info-label fd-info-label--accent-color-5">Info Label</span>
+    <span class="fd-info-label fd-info-label--accent-color-5">
+        <span class="fd-info-label__text">Info Label</span>
+    </span>
     <br><br>
-    <span class="fd-info-label fd-info-label--accent-color-6">Info Label</span>
+    <span class="fd-info-label fd-info-label--accent-color-6">
+        <span class="fd-info-label__text">Info Label</span>
+    </span>
     <br><br>
-    <span class="fd-info-label fd-info-label--accent-color-7">Info Label</span>
+    <span class="fd-info-label fd-info-label--accent-color-7">
+        <span class="fd-info-label__text">Info Label</span>
+    </span>
     <br><br>
-    <span class="fd-info-label fd-info-label--accent-color-8">Info Label</span>
+    <span class="fd-info-label fd-info-label--accent-color-8">
+        <span class="fd-info-label__text">Info Label</span>
+    </span>
     <br><br>
-    <span class="fd-info-label fd-info-label--accent-color-9">Info Label</span>
+    <span class="fd-info-label fd-info-label--accent-color-9">
+        <span class="fd-info-label__text">Info Label</span>
+    </span>
     <br><br>
-    <span class="fd-info-label fd-info-label--accent-color-10">Info Label</span>
+    <span class="fd-info-label fd-info-label--accent-color-10">
+        <span class="fd-info-label__text">Info Label</span>
+    </span>
 </div>
 `;
-colors.storyName = 'Colors';
-colors.parameters = {
-    docs: {
-        iframeHeight: 500,
-        storyDescription: `Info label can be displayed in various colors, by adding the <code>fd-info-label--accent-color-*</code> modifier class to the element with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: <code>fd-info-label--accent-color-10</code>. 
-`
-    }
-};
+colors.storyName = 'Color Flavors';
 
 /** Use the `fd-info-label--icon` modifier class and icon type to create Info Label with Icon. */
 
 export const icons = () => `
 <div class="fddocs-container">
-    <span class="fd-info-label fd-info-label--accent-color-1 fd-info-label--icon sap-icon--future">Info Label</span>
+    <span class="fd-info-label fd-info-label--accent-color-1 fd-info-label--icon">
+        <i role="presentation" class="fd-info-label__icon sap-icon--future"></i>
+        <span class="fd-info-label__text">Info Label</span>
+    </span>
     <br><br>
-    <span class="fd-info-label fd-info-label--accent-color-2 fd-info-label--icon sap-icon--upload-to-cloud"></span>
+    <span class="fd-info-label fd-info-label--accent-color-2 fd-info-label--icon">
+        <i role="presentation" class="fd-info-label__icon sap-icon--upload-to-cloud"></i>
+    </span>
 </div>
 `;
-icons.storyName = 'Icon';
-icons.parameters = {
-    docs: {
-        iframeHeight: 500,
-        storyDescription: `The icon info label can be displayed to convey more information to the user. To use an icon in info label, add the <code>fd-info-label--icon</code> modifier class to the element.
-        
-`
-    }
-};
+icons.storyName = 'Info Label with Icon';
+
+/** For Numeric Info Label use the `fd-info-label--numeric` modifier class. */
 
 export const numeric = () => `
 <div class="fddocs-container">
-    <span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-1">6</span>
+    <span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-1">
+        <span class="fd-info-label__text">6</span>
+    </span>
     <br><br>
-    <span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-2">6.2</span>
+    <span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-2">
+        <span class="fd-info-label__text">6.2</span>
+    </span>
     <br><br>
-    <span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-3">42k</span>
+    <span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-3">
+        <span class="fd-info-label__text">42k</span>
+    </span>
 </div>
 `;
-numeric.storyName = 'Number';
-numeric.parameters = {
-    docs: {
-        iframeHeight: 500,
-        storyDescription: `The number info label can be displayed by adding the <code>fd-info-label--numeric</code> modifier class to the element.
-`
-    }
-};
+numeric.storyName = 'Numeric Info Label';
 
 /** Info Label in RTL mode. */
 
 export const rtl = () => `
 <div class="fddocs-container" dir="rtl">
-    <span class="fd-info-label fd-info-label--accent-color-1">Info Label</span>
-    <span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-1">6</span>
-    <span class="fd-info-label fd-info-label--accent-color-1 fd-info-label--icon sap-icon--future">Info Label</span>
-    <span class="fd-info-label fd-info-label--accent-color-2 fd-info-label--icon sap-icon--upload-to-cloud"></span>
+    <span class="fd-info-label fd-info-label--accent-color-1">
+        <span class="fd-info-label__text">Info Label</span>
+    </span>
+    <span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-1">
+        <span class="fd-info-label__text">6</span>
+    </span>
+    <span class="fd-info-label fd-info-label--accent-color-1 fd-info-label--icon">
+        <i role="presentation" class="fd-info-label__icon sap-icon--future"></i>
+        <span class="fd-info-label__text">Info Label</span>
+    </span>
+    <span class="fd-info-label fd-info-label--accent-color-2 fd-info-label--icon">
+        <i role="presentation" class="fd-info-label__icon sap-icon--upload-to-cloud"></i>
+    </span>
 </div>
 `;
-rtl.storyName = 'RTL';
-rtl.parameters = {
-    docs: {
-        iframeHeight: 500,
-        storyDescription: `The info label can be displayed from right to left on the screen so that it may be used internationally.
-`
-    }
-};
+rtl.storyName = 'Info Label RTL';

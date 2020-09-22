@@ -243,6 +243,11 @@ $block: #{$fd-namespace}-button;
       margin-right: 0;
     }
 
+    @include fd-only-child() {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
     @include fd-rtl() {
       &:first-child {
         margin-left: $fd-button-icon-margin;
@@ -251,6 +256,11 @@ $block: #{$fd-namespace}-button;
 
       &:last-child {
         margin-right: $fd-button-icon-margin;
+        margin-left: 0;
+      }
+
+      @include fd-only-child() {
+        margin-right: 0;
         margin-left: 0;
       }
     }

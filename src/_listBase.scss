@@ -102,34 +102,33 @@
   }
 
   &__icon {
-    @include fd-reset();
-    @include ie11-active-state-fix();
+    @include fd-icon-element-base() {
+      @include ie11-active-state-fix();
+      @include fd-flex-center();
 
-    color: var(--sapList_TextColor);
-    flex: 0 0 auto;
-    width: 2.75rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--sapFontHeader4Size);
+      color: var(--sapList_TextColor);
+      font-size: var(--sapFontHeader4Size);
+      width: 2.75rem;
+      flex: 0 0 auto;
 
-    &:first-child {
-      margin-left: -1rem;
-    }
-
-    &:last-child {
-      margin-right: -1rem;
-    }
-
-    @include fd-rtl() {
       &:first-child {
-        margin-right: -1rem;
-        margin-left: 0;
+        margin-left: -1rem;
       }
 
       &:last-child {
-        margin-left: -1rem;
-        margin-right: 0;
+        margin-right: -1rem;
+      }
+
+      @include fd-rtl() {
+        &:first-child {
+          margin-right: -1rem;
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-left: -1rem;
+          margin-right: 0;
+        }
       }
     }
   }
@@ -217,7 +216,9 @@
     }
 
     .#{$block}__icon {
-      font-size: $fd-list-large-font-size;
+      @include fd-icon-selector() {
+        font-size: $fd-list-large-font-size;
+      }
     }
   }
 

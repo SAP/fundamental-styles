@@ -491,8 +491,9 @@ exports[`Storyshots Components/Generic Tile KPI Tile 1`] = `
             >
               
                         
-              <span
+              <i
                 class="fd-numeric-content__scale-arrow sap-icon--down"
+                role="presentation"
               />
               
                         
@@ -525,8 +526,9 @@ exports[`Storyshots Components/Generic Tile KPI Tile 1`] = `
         >
           
                 
-          <span
-            class="sap-icon--refresh fd-tile__refresh"
+          <i
+            aria-label="Refresh"
+            class="fd-tile__refresh sap-icon--refresh"
           />
           
                 
@@ -621,8 +623,9 @@ exports[`Storyshots Components/Generic Tile KPI Tile 1`] = `
             >
               
                         
-              <span
+              <i
                 class="fd-numeric-content__scale-arrow sap-icon--down"
+                role="presentation"
               />
               
                         
@@ -655,8 +658,9 @@ exports[`Storyshots Components/Generic Tile KPI Tile 1`] = `
         >
           
                 
-          <span
-            class="sap-icon--refresh fd-tile__refresh"
+          <i
+            aria-label="Refresh"
+            class="fd-tile__refresh sap-icon--refresh"
           />
           
                 
@@ -763,8 +767,9 @@ exports[`Storyshots Components/Generic Tile KPI Tile 1`] = `
             >
               
                         
-              <span
+              <i
                 class="fd-numeric-content__scale-arrow sap-icon--down"
+                role="presentation"
               />
               
                     
@@ -862,8 +867,9 @@ exports[`Storyshots Components/Generic Tile KPI Tile 1`] = `
             >
               
                         
-              <span
+              <i
                 class="fd-numeric-content__scale-arrow sap-icon--up"
+                role="presentation"
               />
               
                     
@@ -973,8 +979,9 @@ exports[`Storyshots Components/Generic Tile KPI Tile 1`] = `
             >
               
                         
-              <span
+              <i
                 class="fd-numeric-content__scale-arrow sap-icon--down"
+                role="presentation"
               />
               
                         
@@ -1160,8 +1167,9 @@ exports[`Storyshots Components/Generic Tile Launch Tile 1`] = `
           >
             
                     
-            <span
+            <i
               class="fd-numeric-content__launch-icon sap-icon--line-charts"
+              role="presentation"
             />
             
                 
@@ -1193,8 +1201,9 @@ exports[`Storyshots Components/Generic Tile Launch Tile 1`] = `
             >
               
                         
-              <span
+              <i
                 class="fd-numeric-content__scale-arrow sap-icon--down"
+                role="presentation"
               />
               
                         
@@ -1227,8 +1236,9 @@ exports[`Storyshots Components/Generic Tile Launch Tile 1`] = `
         >
           
                 
-          <span
-            class="sap-icon--refresh fd-tile__refresh"
+          <i
+            aria-label="Refresh"
+            class="fd-tile__refresh sap-icon--refresh"
           />
           
                 
@@ -1303,8 +1313,9 @@ exports[`Storyshots Components/Generic Tile Launch Tile 1`] = `
           >
             
                     
-            <span
+            <i
               class="fd-numeric-content__launch-icon sap-icon--line-charts"
+              role="presentation"
             />
             
                 
@@ -1411,8 +1422,9 @@ exports[`Storyshots Components/Generic Tile Launch Tile 1`] = `
         >
           
                 
-          <span
-            class="sap-icon--refresh fd-tile__refresh"
+          <i
+            aria-label="Refresh"
+            class="fd-tile__refresh sap-icon--refresh"
           />
           
                 
@@ -1482,8 +1494,9 @@ exports[`Storyshots Components/Generic Tile Launch Tile 1`] = `
         >
           
                 
-          <span
-            class="sap-icon--refresh fd-tile__refresh"
+          <i
+            aria-label="Refresh"
+            class="fd-tile__refresh sap-icon--refresh"
           />
           
                 
@@ -1833,7 +1846,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
     <div
       class="fd-tile-container"
     >
-       
+      
         
       <div
         class="fd-tile fd-tile--line"
@@ -2051,7 +2064,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
     <div
       class="fd-tile-container fd-tile-container--list"
     >
-       
+      
                 
       <div
         class="fd-tile fd-tile--line"
@@ -2269,7 +2282,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
     <div
       class="fd-tile-container"
     >
-       
+      
         
       <div
         class="fd-tile fd-tile--compact fd-tile--line"
@@ -2487,7 +2500,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
     <div
       class="fd-tile-container fd-tile-container--list"
     >
-       
+      
         
       <div
         class="fd-tile fd-tile--compact fd-tile--line"
@@ -2641,7 +2654,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
     <div
       class="fd-tile-container"
     >
-       
+      
         
       <div
         class="fd-tile fd-tile--line"
@@ -2996,7 +3009,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
     <div
       class="fd-tile-container fd-tile-container--list"
     >
-       
+      
         
       <div
         class="fd-tile fd-tile--line"
@@ -3304,7 +3317,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
     <div
       class="fd-tile-container"
     >
-       
+      
         
       <div
         class="fd-tile fd-tile--line fd-tile--action"
@@ -3648,7 +3661,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
     <div
       class="fd-tile-container fd-tile-container--list"
     >
-       
+      
         
       <div
         class="fd-tile fd-tile--line fd-tile--action"

@@ -2,6 +2,170 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.79](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.78...v0.12.0-rc.79) (2020-09-22)
+
+
+### Bug Fixes
+
+* update file uploader accessibility ([#1638](https://github.com/SAP/fundamental-styles/issues/1638)) ([5a6542d](https://github.com/SAP/fundamental-styles/commit/5a6542d572678ca4d29609e7e437450d23d41fc4))
+
+## [0.12.0-rc.78](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.77...v0.12.0-rc.78) (2020-09-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* Object status icon and text are extracted in separate `<i>` and `<span>`  elements and new classes have been introduced: `fd-object-status__icon` and `fd-object-status__text`
+
+### Bug Fixes
+
+* Refactor object status icons and text ([#1655](https://github.com/SAP/fundamental-styles/issues/1655)) ([a1457ee](https://github.com/SAP/fundamental-styles/commit/a1457ee634607b97233f0c8bfeb60d043357db5d))
+
+## [0.12.0-rc.77](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.76...v0.12.0-rc.77) (2020-09-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* Tree expander requires a separate navigation icon
+
+### Bug Fixes
+
+* Apply icons changes to tree ([#1643](https://github.com/SAP/fundamental-styles/issues/1643)) ([dcb07fd](https://github.com/SAP/fundamental-styles/commit/dcb07fd0a50f9885af1f112dc7421d03f0ccc7e0))
+
+## [0.12.0-rc.76](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.75...v0.12.0-rc.76) (2020-09-22)
+
+## [0.12.0-rc.75](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.74...v0.12.0-rc.75) (2020-09-22)
+
+## [0.12.0-rc.74](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.73...v0.12.0-rc.74) (2020-09-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* Move Avatar Component icon in to separate tag, use <i> tag for icons, add accessibility attributes.
+* Use <i> tag for Tile Component refresh icon, add accessibility attributes.
+* Creates separate HTML elements for Info Label icon and text
+* Use <i> tag for icons, add accessibility attributes.
+
+### Bug Fixes
+
+* Avatar - refactor icons usage ([#1644](https://github.com/SAP/fundamental-styles/issues/1644)) ([af458db](https://github.com/SAP/fundamental-styles/commit/af458db5dedac9510d845112f03fcd3ca4fb33a9))
+* Info label - Refactor icons usage ([#1649](https://github.com/SAP/fundamental-styles/issues/1649)) ([d797a24](https://github.com/SAP/fundamental-styles/commit/d797a24b3fd36433aadcdb4c7ef1f966c0daf2a5))
+* Numeric Content - Refactor icons usage [#2](https://github.com/SAP/fundamental-styles/issues/2) ([#1674](https://github.com/SAP/fundamental-styles/issues/1674)) ([53462b7](https://github.com/SAP/fundamental-styles/commit/53462b7fb6d97ef90876c7cd1827057032c07a3c))
+* Tile - Refactor icons usage ([#1647](https://github.com/SAP/fundamental-styles/issues/1647)) ([f1d91ca](https://github.com/SAP/fundamental-styles/commit/f1d91ca6b2a5dc9a77f963ddfd467f524947c15b))
+
+## [0.12.0-rc.73](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.72...v0.12.0-rc.73) (2020-09-22)
+
+## [0.12.0-rc.72](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.71...v0.12.0-rc.72) (2020-09-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* Use <i> tag for icons, add aria role
+
+### Bug Fixes
+
+* Message Page - Refactor icons usage - [#2](https://github.com/SAP/fundamental-styles/issues/2) ([#1676](https://github.com/SAP/fundamental-styles/issues/1676)) ([75a6ade](https://github.com/SAP/fundamental-styles/commit/75a6ade2f29a0c37eb9c77b66df3e5ce2a77d24a))
+* Side Navigation - Refactor icons usage - [#2](https://github.com/SAP/fundamental-styles/issues/2) ([#1675](https://github.com/SAP/fundamental-styles/issues/1675)) ([2e3d207](https://github.com/SAP/fundamental-styles/commit/2e3d2074a5ded21e57d18b4b5d8bd67b872dd5fd))
+* Table, List - Refactor icons usage - [#2](https://github.com/SAP/fundamental-styles/issues/2) ([#1677](https://github.com/SAP/fundamental-styles/issues/1677)) ([4337686](https://github.com/SAP/fundamental-styles/commit/43376869cf6f87a567f18f97b5ae135615c941f8))
+
+## [0.12.0-rc.71](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.70...v0.12.0-rc.71) (2020-09-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* (Product Switch) - Markup changes regarding A11y - added role="presentation" and changes <div> to <i> for fd-product-switch__icon
+
+### Bug Fixes
+
+* change icons on product switch ([#1652](https://github.com/SAP/fundamental-styles/issues/1652)) ([97e6bcf](https://github.com/SAP/fundamental-styles/commit/97e6bcf84449eab411c8a0b68908b3c33bc91df4))
+
+## [0.12.0-rc.70](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.69...v0.12.0-rc.70) (2020-09-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* (Object Marker) - Markup changes - new wrapper element for text inside object marker and A11y changes
+
+### Bug Fixes
+
+* Refactor icons and text in object marker ([#1657](https://github.com/SAP/fundamental-styles/issues/1657)) ([95af186](https://github.com/SAP/fundamental-styles/commit/95af186877b5bf02a8dc4f65d2fadd516b6085a9))
+
+## [0.12.0-rc.69](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.68...v0.12.0-rc.69) (2020-09-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* (switch) - Markup change regarding A11y - Added role="presentation and <span> changed to <i>
+
+### Bug Fixes
+
+* refactor icons in switch ([#1650](https://github.com/SAP/fundamental-styles/issues/1650)) ([55dcda8](https://github.com/SAP/fundamental-styles/commit/55dcda8b0d3e40df1075b6398d8384d01a1952e6))
+
+## [0.12.0-rc.68](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.67...v0.12.0-rc.68) (2020-09-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* - fd-tabs__overflow element and A11Y markup changes
+
+### Bug Fixes
+
+* Apply icons changes to tabs ([#1646](https://github.com/SAP/fundamental-styles/issues/1646)) ([f754654](https://github.com/SAP/fundamental-styles/commit/f7546542b303af56e31838bb597b06a836b19ce6))
+
+## [0.12.0-rc.67](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.66...v0.12.0-rc.67) (2020-09-22)
+
+
+### Bug Fixes
+
+* Remove redundant focus on empty forms ([#1662](https://github.com/SAP/fundamental-styles/issues/1662)) ([dad6b7e](https://github.com/SAP/fundamental-styles/commit/dad6b7e9e8c30935e9cc3c29fafc4a13561a0b39))
+
+## [0.12.0-rc.66](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.65...v0.12.0-rc.66) (2020-09-22)
+
+
+### Bug Fixes
+
+* Menu - Refactor icons usage ([#1653](https://github.com/SAP/fundamental-styles/issues/1653)) ([72f7602](https://github.com/SAP/fundamental-styles/commit/72f7602a225015180cf52f744105bf5d343b2cf4))
+
+## [0.12.0-rc.65](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.64...v0.12.0-rc.65) (2020-09-22)
+
+
+### Bug Fixes
+
+* padding fix for compact radio button ([#1592](https://github.com/SAP/fundamental-styles/issues/1592)) ([a274f7c](https://github.com/SAP/fundamental-styles/commit/a274f7c47573766c700bd10a7e2539ba41aaf8fa))
+
+## [0.12.0-rc.64](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.63...v0.12.0-rc.64) (2020-09-21)
+
+
+### Features
+
+* new Fiori 3 Wizard component ([#1621](https://github.com/SAP/fundamental-styles/issues/1621)) ([fa3533c](https://github.com/SAP/fundamental-styles/commit/fa3533cda258ba9060a024cf671bec664991fc0e))
+
+## [0.12.0-rc.63](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.62...v0.12.0-rc.63) (2020-09-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* rename our CSS variables prefix from --sap to --fd (--sapInverted_Object_Border_Width, --sapOverlay_Background_Opacity, --sapRating_Indicator_Selected_Hover_Opacity, --sapRating_Indicator_Display_Only_Selected_Color, --sapRating_Indicator_Disabled_Selected_Color, --sapRating_Indicator_Disabled_Unselected_Color, --sapRating_Indicator_Disabled_Control_Opacity)
+
+* rename the delta theming parameters with fd prefix ([#1660](https://github.com/SAP/fundamental-styles/issues/1660)) ([3fd6b8f](https://github.com/SAP/fundamental-styles/commit/3fd6b8fd186fb485cac52b1f04c675211275b289))
+
+## [0.12.0-rc.62](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.61...v0.12.0-rc.62) (2020-09-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* notifications component refactored. Removed classes: fd-notification--information, fd-notification--success, fd-notification--warning, fd-notification--error
+
+### Bug Fixes
+
+* updating Notifications according to the latest design ([#1567](https://github.com/SAP/fundamental-styles/issues/1567)) ([9af457f](https://github.com/SAP/fundamental-styles/commit/9af457fd3499723179f5d7d73c77ca40a5af011b))
+
+## [0.12.0-rc.61](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.60...v0.12.0-rc.61) (2020-09-18)
+
+
+### Features
+
+* Basic Grid Table example, caption element ([#1661](https://github.com/SAP/fundamental-styles/issues/1661)) ([3b1f390](https://github.com/SAP/fundamental-styles/commit/3b1f390420f37cd228a2834f1f5bf59e4ce8f293))
+
 ## [0.12.0-rc.60](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.59...v0.12.0-rc.60) (2020-09-17)
 
 

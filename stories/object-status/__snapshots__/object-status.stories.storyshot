@@ -5,18 +5,46 @@ exports[`Storyshots Components/Object Status Clickable Object Status 1`] = `
   
 
   <a
-    class="fd-object-status fd-object-status--link"
+    class="fd-object-status fd-object-status--negative fd-object-status--link"
     href="#"
   >
-    Neutral
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--status-negative"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Negative
+    </span>
+    
+
   </a>
   
 
   <a
-    class="fd-object-status fd-object-status--negative fd-object-status--link"
+    class="fd-object-status fd-object-status--critical fd-object-status--link"
     href="#"
   >
-    Negative
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--status-critical"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Critical
+    </span>
+    
+
   </a>
   
 
@@ -24,23 +52,65 @@ exports[`Storyshots Components/Object Status Clickable Object Status 1`] = `
     class="fd-object-status fd-object-status--positive fd-object-status--link"
     href="#"
   >
-    Positive
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--status-positive"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Positive
+    </span>
+    
+
   </a>
   
 
   <span
-    class="fd-object-status fd-object-status--critical fd-object-status--link sap-icon--status-critical"
+    class="fd-object-status fd-object-status--informative fd-object-status--link"
     role="button"
   >
-    Critical
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--hint"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Info
+    </span>
+    
+
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--informative fd-object-status--link sap-icon--hint"
+    class="fd-object-status fd-object-status--link"
     role="button"
   >
-    Informative
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--to-be-reviewed"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Neutral
+    </span>
+    
+
   </span>
   
 
@@ -54,7 +124,15 @@ exports[`Storyshots Components/Object Status Clickable Object Status 1`] = `
     class="fd-object-status fd-object-status--link fd-object-status--indication-1"
     href="#"
   >
-    Dark Red
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Dark Red
+    </span>
+    
+
   </a>
   
 
@@ -62,7 +140,15 @@ exports[`Storyshots Components/Object Status Clickable Object Status 1`] = `
     class="fd-object-status fd-object-status--link fd-object-status--indication-2"
     href="#"
   >
-    Red
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Red
+    </span>
+    
+
   </a>
   
 
@@ -70,7 +156,15 @@ exports[`Storyshots Components/Object Status Clickable Object Status 1`] = `
     class="fd-object-status fd-object-status--link fd-object-status--indication-3"
     href="#"
   >
-    Yellow
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Yellow
+    </span>
+    
+
   </a>
   
 
@@ -78,7 +172,15 @@ exports[`Storyshots Components/Object Status Clickable Object Status 1`] = `
     class="fd-object-status fd-object-status--link fd-object-status--indication-4"
     href="#"
   >
-    Green
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Green
+    </span>
+    
+
   </a>
   
 
@@ -86,7 +188,15 @@ exports[`Storyshots Components/Object Status Clickable Object Status 1`] = `
     class="fd-object-status fd-object-status--link fd-object-status--indication-5"
     href="#"
   >
-    Blue
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Blue
+    </span>
+    
+
   </a>
   
 
@@ -94,7 +204,15 @@ exports[`Storyshots Components/Object Status Clickable Object Status 1`] = `
     class="fd-object-status fd-object-status--link fd-object-status--indication-6"
     role="button"
   >
-    Teal
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Teal
+    </span>
+    
+
   </span>
   
 
@@ -102,7 +220,15 @@ exports[`Storyshots Components/Object Status Clickable Object Status 1`] = `
     class="fd-object-status fd-object-status--link fd-object-status--indication-7"
     role="button"
   >
-    Purple
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Purple
+    </span>
+    
+
   </span>
   
 
@@ -110,7 +236,15 @@ exports[`Storyshots Components/Object Status Clickable Object Status 1`] = `
     class="fd-object-status fd-object-status--link fd-object-status--indication-8"
     role="button"
   >
-    Pink
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Pink
+    </span>
+    
+
   </span>
   
 
@@ -124,56 +258,120 @@ exports[`Storyshots Components/Object Status Generic Indication Colors 1`] = `
   <span
     class="fd-object-status fd-object-status--indication-1"
   >
-    Dark Red
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Dark Red
+    </span>
+    
+
   </span>
   
 
   <span
     class="fd-object-status fd-object-status--indication-2"
   >
-    Red
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Red
+    </span>
+    
+
   </span>
   
 
   <span
     class="fd-object-status fd-object-status--indication-3"
   >
-    Yellow
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Yellow
+    </span>
+    
+
   </span>
   
 
   <span
     class="fd-object-status fd-object-status--indication-4"
   >
-    Green
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Green
+    </span>
+    
+
   </span>
   
 
   <span
     class="fd-object-status fd-object-status--indication-5"
   >
-    Blue
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Blue
+    </span>
+    
+
   </span>
   
 
   <span
     class="fd-object-status fd-object-status--indication-6"
   >
-    Teal
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Teal
+    </span>
+    
+
   </span>
   
 
   <span
     class="fd-object-status fd-object-status--indication-7"
   >
-    Purple
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Purple
+    </span>
+    
+
   </span>
   
 
   <span
     class="fd-object-status fd-object-status--indication-8"
   >
-    Pink
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Pink
+    </span>
+    
+
   </span>
   
 
@@ -185,28 +383,73 @@ exports[`Storyshots Components/Object Status Icon 1`] = `
   
 
   <span
-    class="fd-object-status fd-object-status--negative sap-icon--status-negative"
-  />
+    class="fd-object-status fd-object-status--negative"
+  >
+    
+    
+    <i
+      aria-label="Negative"
+      class="fd-object-status__icon sap-icon--status-negative"
+    />
+    
+
+  </span>
   
 
   <span
-    class="fd-object-status fd-object-status--critical sap-icon--status-critical"
-  />
+    class="fd-object-status fd-object-status--critical"
+  >
+    
+    
+    <i
+      aria-label="Warning"
+      class="fd-object-status__icon sap-icon--status-critical"
+    />
+    
+
+  </span>
   
 
   <span
-    class="fd-object-status fd-object-status--positive sap-icon--status-positive"
-  />
+    class="fd-object-status fd-object-status--positive"
+  >
+    
+    
+    <i
+      aria-label="Correct"
+      class="fd-object-status__icon sap-icon--status-positive"
+    />
+    
+
+  </span>
   
 
   <span
-    class="fd-object-status fd-object-status--informative sap-icon--hint"
-  />
+    class="fd-object-status fd-object-status--informative"
+  >
+    
+    
+    <i
+      aria-label="More information"
+      class="fd-object-status__icon sap-icon--hint"
+    />
+    
+
+  </span>
   
 
   <span
-    class="fd-object-status sap-icon--to-be-reviewed"
-  />
+    class="fd-object-status"
+  >
+    
+    
+    <i
+      aria-label="To be reviewed"
+      class="fd-object-status__icon sap-icon--to-be-reviewed"
+    />
+    
+
+  </span>
   
 
 </section>
@@ -217,37 +460,107 @@ exports[`Storyshots Components/Object Status Icon And Text 1`] = `
   
 
   <span
-    class="fd-object-status fd-object-status--negative sap-icon--status-negative"
+    class="fd-object-status fd-object-status--negative"
   >
-    Negative
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--status-negative"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Negative
+    </span>
+    
+
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--critical sap-icon--status-critical"
+    class="fd-object-status fd-object-status--critical"
   >
-    Critical
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--status-critical"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Critical
+    </span>
+    
+
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--positive sap-icon--status-positive"
+    class="fd-object-status fd-object-status--positive"
   >
-    Positive
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--status-positive"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Positive
+    </span>
+    
+
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--informative sap-icon--hint"
+    class="fd-object-status fd-object-status--informative"
   >
-    Informative
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--hint"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Info
+    </span>
+    
+
   </span>
   
 
   <span
-    class="fd-object-status sap-icon--to-be-reviewed"
+    class="fd-object-status"
   >
-    Neutral
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--to-be-reviewed"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Neutral
+    </span>
+    
+
   </span>
   
 
@@ -259,46 +572,80 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
   
 
   <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--negative"
+    class="fd-object-status fd-object-status--negative fd-object-status--inverted"
   >
-    Inverted Negative
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Inverted Negative
+    </span>
+    
+
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--critical"
+    class="fd-object-status fd-object-status--critical fd-object-status--inverted"
   >
-    Inverted Warning
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Inverted Warning
+    </span>
+    
+
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--positive"
+    class="fd-object-status fd-object-status--positive fd-object-status--inverted"
   >
-    Inverted Success
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Inverted Success
+    </span>
+    
+
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--informative"
+    class="fd-object-status fd-object-status--informative fd-object-status--inverted"
   >
-    Inverted informative
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Inverted informative
+    </span>
+    
+
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--positive"
+    class="fd-object-status fd-object-status--inverted"
   >
-    3
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Inverted Neutral
+    </span>
+    
+
   </span>
   
 
-  <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--informative"
-  >
-    2.99
-  </span>
-  
 
 
   <br />
@@ -309,47 +656,134 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
   <span
     class="fd-object-status fd-object-status--inverted"
   >
-    Inverted Neutral
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Inverted Neutral
+    </span>
+    
+
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"
-  />
-  
-
-  <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"
+    class="fd-object-status fd-object-status--inverted fd-object-status--negative"
   >
-    Negative
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--status-negative"
+      role="presentation"
+    />
+    
+
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--critical sap-icon--status-critical"
+    class="fd-object-status fd-object-status--inverted fd-object-status--negative"
   >
-    Critical
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--status-negative"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Negative
+    </span>
+    
+
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--positive sap-icon--status-positive"
+    class="fd-object-status fd-object-status--inverted fd-object-status--critical"
   >
-    Positive
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--status-critical"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Critical
+    </span>
+    
+
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--informative sap-icon--hint"
+    class="fd-object-status fd-object-status--inverted fd-object-status--positive"
   >
-    Informative
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--status-positive"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Positive
+    </span>
+    
+
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--inverted sap-icon--to-be-reviewed"
+    class="fd-object-status fd-object-status--inverted fd-object-status--informative"
   >
-    Neutral
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--hint"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Informative
+    </span>
+    
+
+  </span>
+  
+
+  <span
+    class="fd-object-status fd-object-status--inverted"
+  >
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--to-be-reviewed"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Neutral
+    </span>
+    
+
   </span>
   
 
@@ -366,37 +800,107 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
   
 
   <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"
+    class="fd-object-status fd-object-status--link fd-object-status--negative fd-object-status--inverted"
   >
-    Negative
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--status-negative"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Inverted Negative
+    </span>
+    
+
   </a>
   
 
   <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--critical sap-icon--status-critical"
+    class="fd-object-status fd-object-status--link fd-object-status--critical fd-object-status--inverted"
   >
-    Critical
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--status-critical"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Inverted Warning
+    </span>
+    
+
   </a>
   
 
   <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--positive sap-icon--status-positive"
+    class="fd-object-status fd-object-status--link fd-object-status--positive fd-object-status--inverted"
   >
-    Positive
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--status-positive"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Inverted Success
+    </span>
+    
+
   </a>
   
 
   <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--informative sap-icon--hint"
+    class="fd-object-status fd-object-status--link fd-object-status--informative fd-object-status--inverted"
   >
-    Informative
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--hint"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Inverted informative
+    </span>
+    
+
   </a>
   
 
   <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted sap-icon--to-be-reviewed"
+    class="fd-object-status fd-object-status--link fd-object-status--inverted"
   >
-    Neutral
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--to-be-reviewed"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Inverted Neutral
+    </span>
+    
+
   </a>
   
 
@@ -410,104 +914,224 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
     dir="rtl"
   >
     
-
+    
     <h4>
       RTL Support
     </h4>
     
-
+    
     <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--negative"
+      class="fd-object-status fd-object-status--negative fd-object-status--inverted"
     >
-      Inverted Negative
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Inverted Negative
+      </span>
+      
+    
     </span>
     
-
+    
     <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--critical"
+      class="fd-object-status fd-object-status--critical fd-object-status--inverted"
     >
-      Inverted Warning
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Inverted Warning
+      </span>
+      
+    
     </span>
     
-
+    
     <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--positive"
+      class="fd-object-status fd-object-status--positive fd-object-status--inverted"
     >
-      Inverted Success
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Inverted Success
+      </span>
+      
+    
     </span>
     
-
+    
     <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--informative"
+      class="fd-object-status fd-object-status--informative fd-object-status--inverted"
     >
-      Inverted informative
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Inverted informative
+      </span>
+      
+    
     </span>
     
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--positive"
-    >
-      3
-    </span>
     
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--informative"
-    >
-      2.99
-    </span>
-    
-
-
-    <br />
-    <br />
-    
-
-
     <span
       class="fd-object-status fd-object-status--inverted"
     >
-      Inverted Neutral
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Inverted Neutral
+      </span>
+      
+    
     </span>
     
 
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"
-    />
+    
+    <br />
+    <br />
     
 
+    
     <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"
+      class="fd-object-status fd-object-status--inverted"
     >
-      Negative
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Inverted Neutral
+      </span>
+      
+    
     </span>
     
-
+    
     <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--critical sap-icon--status-critical"
+      class="fd-object-status fd-object-status--inverted fd-object-status--negative"
     >
-      Critical
+      
+        
+      <i
+        aria-label="Error"
+        class="fd-object-status__icon sap-icon--status-negative"
+      />
+      
+    
     </span>
     
-
+    
     <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--positive sap-icon--status-positive"
+      class="fd-object-status fd-object-status--inverted fd-object-status--negative"
     >
-      Positive
+      
+        
+      <i
+        class="fd-object-status__icon sap-icon--status-negative"
+        role="presentation"
+      />
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Negative
+      </span>
+      
+    
     </span>
     
-
+    
     <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--informative sap-icon--hint"
+      class="fd-object-status fd-object-status--inverted fd-object-status--critical"
     >
-      Informative
+      
+        
+      <i
+        class="fd-object-status__icon sap-icon--status-critical"
+        role="presentation"
+      />
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Critical
+      </span>
+      
+    
     </span>
     
-
+    
     <span
-      class="fd-object-status fd-object-status--inverted sap-icon--to-be-reviewed"
+      class="fd-object-status fd-object-status--inverted fd-object-status--positive"
     >
-      Neutral
+      
+        
+      <i
+        class="fd-object-status__icon sap-icon--status-positive"
+        role="presentation"
+      />
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Positive
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--informative"
+    >
+      
+        
+      <i
+        class="fd-object-status__icon sap-icon--hint"
+        role="presentation"
+      />
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Informative
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted"
+    >
+      
+        
+      <i
+        class="fd-object-status__icon sap-icon--to-be-reviewed"
+        role="presentation"
+      />
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Neutral
+      </span>
+      
+    
     </span>
     
 
@@ -524,56 +1148,120 @@ exports[`Storyshots Components/Object Status Inverted Indication 1`] = `
   <span
     class="fd-object-status fd-object-status--inverted fd-object-status--indication-1"
   >
-    Indication1
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Indication1
+    </span>
+    
+
   </span>
   
 
   <span
     class="fd-object-status fd-object-status--inverted fd-object-status--indication-2"
   >
-    Indication2
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Indication2
+    </span>
+    
+
   </span>
   
 
   <span
     class="fd-object-status fd-object-status--inverted fd-object-status--indication-3"
   >
-    Indication3
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Indication3
+    </span>
+    
+
   </span>
   
 
   <span
     class="fd-object-status fd-object-status--inverted fd-object-status--indication-4"
   >
-    Indication4
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Indication4
+    </span>
+    
+
   </span>
   
 
   <span
     class="fd-object-status fd-object-status--inverted fd-object-status--indication-5"
   >
-    Indication5
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Indication5
+    </span>
+    
+
   </span>
   
 
   <span
     class="fd-object-status fd-object-status--inverted fd-object-status--indication-6"
   >
-    Indication6
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Indication6
+    </span>
+    
+
   </span>
   
 
   <span
     class="fd-object-status fd-object-status--inverted fd-object-status--indication-7"
   >
-    Indication7
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Indication7
+    </span>
+    
+
   </span>
   
 
   <span
     class="fd-object-status fd-object-status--inverted fd-object-status--indication-8"
   >
-    Indication8
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Indication8
+    </span>
+    
+
   </span>
   
 
@@ -590,68 +1278,236 @@ exports[`Storyshots Components/Object Status Inverted Indication 1`] = `
   </h4>
   
 
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-1"
-    href="#"
+  <span
+    class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1"
   >
-    Indication1
-  </a>
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Indication1
+    </span>
+    
+
+  </span>
   
 
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-2"
-    href="#"
+  <span
+    class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-2"
   >
-    Indication2
-  </a>
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Indication2
+    </span>
+    
+
+  </span>
   
 
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-3"
-    href="#"
+  <span
+    class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-3"
   >
-    Indication3
-  </a>
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Indication3
+    </span>
+    
+
+  </span>
   
 
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-4"
-    href="#"
+  <span
+    class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-4"
   >
-    Indication4
-  </a>
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Indication4
+    </span>
+    
+
+  </span>
   
 
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-5"
-    href="#"
+  <span
+    class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-5"
   >
-    Indication5
-  </a>
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Indication5
+    </span>
+    
+
+  </span>
   
 
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-6"
-    href="#"
+  <span
+    class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-6"
   >
-    Indication6
-  </a>
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Indication6
+    </span>
+    
+
+  </span>
   
 
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-7"
-    href="#"
+  <span
+    class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-7"
   >
-    Indication7
-  </a>
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Indication7
+    </span>
+    
+
+  </span>
   
 
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-8"
-    href="#"
+  <span
+    class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8"
   >
-    Indication8
-  </a>
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Indication8
+    </span>
+    
+
+  </span>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Object Status Large Object Status 1`] = `
+<section>
+  
+
+  <span
+    class="fd-object-status fd-object-status--large fd-object-status--negative"
+  >
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--status-negative"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Negative
+    </span>
+    
+
+  </span>
+  
+
+  <span
+    class="fd-object-status fd-object-status--large fd-object-status--critical"
+  >
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--status-critical"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Critical
+    </span>
+    
+
+  </span>
+  
+
+  <span
+    class="fd-object-status fd-object-status--large fd-object-status--positive"
+  >
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--status-positive"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Positive
+    </span>
+    
+
+  </span>
+  
+
+  <span
+    class="fd-object-status fd-object-status--large fd-object-status--informative"
+  >
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--hint"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Info
+    </span>
+    
+
+  </span>
+  
+
+  <span
+    class="fd-object-status fd-object-status--large"
+  >
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--to-be-reviewed"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Neutral
+    </span>
+    
+
+  </span>
   
 
 </section>
@@ -662,37 +1518,107 @@ exports[`Storyshots Components/Object Status Primary 1`] = `
   
 
   <span
-    class="fd-object-status fd-object-status--negative sap-icon--status-negative"
+    class="fd-object-status fd-object-status--negative"
   >
-    Negative
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--status-negative"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Negative
+    </span>
+    
+
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--critical sap-icon--status-critical"
+    class="fd-object-status fd-object-status--critical"
   >
-    Critical
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--status-critical"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Critical
+    </span>
+    
+
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--positive sap-icon--status-positive"
+    class="fd-object-status fd-object-status--positive"
   >
-    Positive
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--status-positive"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Positive
+    </span>
+    
+
   </span>
   
 
   <span
-    class="fd-object-status fd-object-status--informative sap-icon--hint"
+    class="fd-object-status fd-object-status--informative"
   >
-    Info
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--hint"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Info
+    </span>
+    
+
   </span>
   
 
   <span
-    class="fd-object-status sap-icon--to-be-reviewed"
+    class="fd-object-status"
   >
-    Neutral
+    
+    
+    <i
+      class="fd-object-status__icon sap-icon--to-be-reviewed"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Neutral
+    </span>
+    
+
   </span>
   
 
@@ -703,38 +1629,79 @@ exports[`Storyshots Components/Object Status Text 1`] = `
 <section>
   
 
+
   <span
     class="fd-object-status fd-object-status--negative"
   >
-    Negative
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Negative
+    </span>
+    
+
   </span>
   
 
   <span
     class="fd-object-status fd-object-status--critical"
   >
-    Critical
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Critical
+    </span>
+    
+
   </span>
   
 
   <span
     class="fd-object-status fd-object-status--positive"
   >
-    Positive
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Positive
+    </span>
+    
+
   </span>
   
 
   <span
     class="fd-object-status fd-object-status--informative"
   >
-    Informative
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Info
+    </span>
+    
+
   </span>
   
 
   <span
     class="fd-object-status"
   >
-    Neutral
+    
+    
+    <span
+      class="fd-object-status__text"
+    >
+      Neutral
+    </span>
+    
+
   </span>
   
 
