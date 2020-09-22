@@ -2383,8 +2383,9 @@ exports[`Storyshots Components/Table Responsive Table 1`] = `
         >
           
                 
-          <span
+          <i
             class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+            role="presentation"
           />
           
             
@@ -2464,8 +2465,9 @@ exports[`Storyshots Components/Table Responsive Table 1`] = `
         >
           
                 
-          <span
+          <i
             class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+            role="presentation"
           />
           
             
@@ -2545,8 +2547,9 @@ exports[`Storyshots Components/Table Responsive Table 1`] = `
         >
           
                 
-          <span
+          <i
             class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+            role="presentation"
           />
           
             
@@ -2643,8 +2646,9 @@ exports[`Storyshots Components/Table Responsive Table Pop In Mode 1`] = `
           >
             
                     
-            <span
+            <i
               class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+              role="presentation"
             />
             
                 
@@ -2752,8 +2756,9 @@ exports[`Storyshots Components/Table Responsive Table Pop In Mode 1`] = `
           >
             
                     
-            <span
+            <i
               class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+              role="presentation"
             />
             
                 
@@ -2930,8 +2935,9 @@ exports[`Storyshots Components/Table Responsive Table Pop In Mode 1`] = `
           >
             
                     
-            <span
+            <i
               class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+              role="presentation"
             />
             
                 
@@ -3066,8 +3072,9 @@ exports[`Storyshots Components/Table Responsive Table Pop In Mode 1`] = `
           >
             
                     
-            <span
+            <i
               class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+              role="presentation"
             />
             
                 

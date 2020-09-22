@@ -338,27 +338,27 @@ export const listCard = () => `
             <div class="fd-card__content" role="group" aria-label="Card Content">
                 <ul class="fd-list fd-list--no-border" role="list">
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--cart"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
                         <span class="fd-list__title">List item 1</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--wrench"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--wrench"></i>
                         <span class="fd-list__title">List item 2</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--leads"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--leads"></i>
                         <span class="fd-list__title">List item 3</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--batch-payments"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--batch-payments"></i>
                         <span class="fd-list__title">List item 4</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--retail-store"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--retail-store"></i>
                         <span class="fd-list__title">List item 3</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--travel-expense"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--travel-expense"></i>
                         <span class="fd-list__title">List item 4</span>
                     </li>
                 </ul>
@@ -381,27 +381,27 @@ export const listCard = () => `
             <div class="fd-card__content" role="group" aria-label="Card Content">
                 <ul class="fd-list fd-list--no-border fd-list--compact" role="list">
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--cart"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
                         <span class="fd-list__title">List item 1</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--wrench"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--wrench"></i>
                         <span class="fd-list__title">List item 2</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--leads"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--leads"></i>
                         <span class="fd-list__title">List item 3</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--batch-payments"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--batch-payments"></i>
                         <span class="fd-list__title">List item 4</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--retail-store"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--retail-store"></i>
                         <span class="fd-list__title">List item 3</span>
                     </li>
                     <li role="listitem" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__icon sap-icon--travel-expense"></span>
+                        <i role="presentation" class="fd-list__icon sap-icon--travel-expense"></i>
                         <span class="fd-list__title">List item 4</span>
                     </li>
                 </ul>
@@ -460,7 +460,7 @@ export const tableCard = () => `
                             <td class="fd-table__cell">5 EUR</td>
                             <td class="fd-table__cell">India</td>
                             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                                <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                                <i role="presentation" class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></i>
                             </td>
                         </tr>
                         <tr class="fd-table__row">
@@ -477,7 +477,7 @@ export const tableCard = () => `
                             <td class="fd-table__cell">2 EUR</td>
                             <td class="fd-table__cell">Mexico</td>
                             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                                <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                                <i role="presentation" class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></i>
                             </td>
                         </tr>
                         <tr class="fd-table__row">
@@ -494,7 +494,7 @@ export const tableCard = () => `
                             <td class="fd-table__cell">6 EUR</td>
                             <td class="fd-table__cell">Spain</td>
                             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                                <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                                <i role="presentation" class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></i>
                             </td>
                         </tr>
                     </tbody>
@@ -537,7 +537,7 @@ export const tableCard = () => `
                             <td class="fd-table__cell">5 EUR</td>
                             <td class="fd-table__cell">India</td>
                             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                                <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                                <i role="presentation" class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></i>
                             </td>
                         </tr>
                         <tr class="fd-table__row">
@@ -550,7 +550,7 @@ export const tableCard = () => `
                             <td class="fd-table__cell">2 EUR</td>
                             <td class="fd-table__cell">Mexico</td>
                             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                                <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                                <i role="presentation" class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></i>
                             </td>
                         </tr>
                         <tr class="fd-table__row">
@@ -563,7 +563,7 @@ export const tableCard = () => `
                             <td class="fd-table__cell">6 EUR</td>
                             <td class="fd-table__cell">Spain</td>
                             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                                <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                                <i role="presentation" class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></i>
                             </td>
                         </tr>
                     </tbody>

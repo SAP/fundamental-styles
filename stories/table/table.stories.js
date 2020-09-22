@@ -60,9 +60,9 @@ export const primary = () => `
 
 /**
  * * `--no-vertical-borders` modifier can be applied to render a table without vertical borders.
-* `--no-horizontal-borders` modifier can be applied to render a table without horizontal borders.
+ * `--no-horizontal-borders` modifier can be applied to render a table without horizontal borders.
 
-Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
+ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
  */
 
 export const withoutBorders = () => `
@@ -140,7 +140,7 @@ export const withoutBordersOnBody = () => `
 `;
 
 /** Footer can be added by using `fd-table__footer` class with `tfoot` element.
-It has to contain same size of columns as tbody and thead. */
+ It has to contain same size of columns as tbody and thead. */
 
 export const withFooter = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
@@ -279,8 +279,8 @@ export const withFooterCondensed = () => `
 /**
  * Interactive states of columns and row can be set by adding
 
-* For active state handler `--activable` modifier
-* For hover state handler `--hoverable` modifier
+ * For active state handler `--activable` modifier
+ * For hover state handler `--hoverable` modifier
  */
 
 export const interactiveRowsAndColumns = () => `
@@ -427,8 +427,8 @@ export const focusableCells = () => `
 
 /**
  * The checkbox input can be used at the beginning of each row to allow for bulk actions.
-It is recommended to add the parameter `aria-selected="true"` to the row that is selected.
-Also for cells that include a checkbox should contain the `fd-table__cell--checkbox` class.
+ It is recommended to add the parameter `aria-selected="true"` to the row that is selected.
+ Also for cells that include a checkbox should contain the `fd-table__cell--checkbox` class.
  */
 
 export const withCheckbox = () => `
@@ -834,8 +834,8 @@ export const withAdvancedToolbar = () => `
 
 /**
  * Responsive table is not that different than basic table, there should be used some modifiers, to remove borders.
-For Pop-in example markup is changed, one row is transformed to 2 rows with `fd-table__row--main` and
-`fd-table__row--secondary`modifiers. Also some cells should be merged into paragraphs.
+ For Pop-in example markup is changed, one row is transformed to 2 rows with `fd-table__row--main` and
+ `fd-table__row--secondary`modifiers. Also some cells should be merged into paragraphs.
  */
 
 export const responsiveTable = () => `
@@ -872,7 +872,7 @@ export const responsiveTable = () => `
             <td class="fd-table__cell">5 EUR</td>
             <td class="fd-table__cell">India</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
             </td>
         </tr>
         <tr class="fd-table__row">
@@ -889,7 +889,7 @@ export const responsiveTable = () => `
             <td class="fd-table__cell">2 EUR</td>
             <td class="fd-table__cell">Mexico</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
             </td>
         </tr>
         <tr class="fd-table__row">
@@ -906,7 +906,7 @@ export const responsiveTable = () => `
             <td class="fd-table__cell">6 EUR</td>
             <td class="fd-table__cell">Spain</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
             </td>
         </tr>
     </tbody>
@@ -929,7 +929,7 @@ export const responsiveTablePopInMode = () => `
                     5 EUR
                 </td>
                 <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                    <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                    <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
                 </td>
             </tr>
             <tr class="fd-table__row fd-table__row--secondary">
@@ -955,7 +955,7 @@ export const responsiveTablePopInMode = () => `
                     6 EUR
                 </td>
                 <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                    <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                    <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
                 </td>
             </tr>
             <tr class="fd-table__row fd-table__row--secondary">
@@ -996,7 +996,7 @@ export const responsiveTablePopInMode = () => `
                     5 EUR
                 </td>
                 <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                    <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                    <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
                 </td>
             </tr>
             <tr class="fd-table__row fd-table__row--secondary">
@@ -1027,7 +1027,7 @@ export const responsiveTablePopInMode = () => `
                     6 EUR
                 </td>
                 <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                    <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                    <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
                 </td>
             </tr>
             <tr class="fd-table__row fd-table__row--secondary">
@@ -1052,9 +1052,9 @@ export const responsiveTablePopInMode = () => `
 
 /**
  * To show that an item needs attention, you can show a highlight indicator next to the item.
-This can be achieved by passing the `fd-table__cell--status-indicator` class to each row.
-Other indicators such as semantic states and modes can be added using the `--valid`,
-`--information`, `--error`, `--warning` modifiers.
+ This can be achieved by passing the `fd-table__cell--status-indicator` class to each row.
+ Other indicators such as semantic states and modes can be added using the `--valid`,
+ `--information`, `--error`, `--warning` modifiers.
  */
 
 export const semanticRows = () => `
@@ -1233,7 +1233,7 @@ export const mergedCells = () => `
 
 /**
  * When more than three actions exist per row and/or there isn't enough space for the required actions,
-a contextual menu can be substituted to display all actions in one menu.
+ a contextual menu can be substituted to display all actions in one menu.
  */
 
 export const tableWithContextualMenu = () => `
@@ -1362,7 +1362,7 @@ export const tableWithContextualMenu = () => `
 
 /**
  * Some customization actions can be added to headers, the options will be displayed in popover. Those popover should be
-added with `fd-table__popover` class.
+ added with `fd-table__popover` class.
  */
 
 export const withMenuInHeader = () => `
@@ -1456,9 +1456,9 @@ export const withMenuInHeader = () => `
 
 /**
  * To create fixed column, these steps need to be reproduced
-* Wrap the table with element with class `fd-table--fixed`
-* Add `fd-table__cell--fixed` class to cell elements, it should be propagated to whole row
-* Hard code the width of columns, otherwise the cells will be squashed.
+ * Wrap the table with element with class `fd-table--fixed`
+ * Add `fd-table__cell--fixed` class to cell elements, it should be propagated to whole row
+ * Hard code the width of columns, otherwise the cells will be squashed.
  */
 
 export const fixColumnHeader = () => `
