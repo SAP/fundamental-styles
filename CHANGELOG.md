@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.79](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.78...v0.12.0-rc.79) (2020-09-22)
+
+
+### Bug Fixes
+
+* update file uploader accessibility ([#1638](https://github.com/SAP/fundamental-styles/issues/1638)) ([5a6542d](https://github.com/SAP/fundamental-styles/commit/5a6542d572678ca4d29609e7e437450d23d41fc4))
+
 ## [0.12.0-rc.78](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.77...v0.12.0-rc.78) (2020-09-22)
 
 
