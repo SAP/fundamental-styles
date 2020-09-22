@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.74](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.73...v0.12.0-rc.74) (2020-09-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* Move Avatar Component icon in to separate tag, use <i> tag for icons, add accessibility attributes.
+* Use <i> tag for Tile Component refresh icon, add accessibility attributes.
+* Creates separate HTML elements for Info Label icon and text
+* Use <i> tag for icons, add accessibility attributes.
+
+### Bug Fixes
+
+* Avatar - refactor icons usage ([#1644](https://github.com/SAP/fundamental-styles/issues/1644)) ([af458db](https://github.com/SAP/fundamental-styles/commit/af458db5dedac9510d845112f03fcd3ca4fb33a9))
+* Info label - Refactor icons usage ([#1649](https://github.com/SAP/fundamental-styles/issues/1649)) ([d797a24](https://github.com/SAP/fundamental-styles/commit/d797a24b3fd36433aadcdb4c7ef1f966c0daf2a5))
+* Numeric Content - Refactor icons usage [#2](https://github.com/SAP/fundamental-styles/issues/2) ([#1674](https://github.com/SAP/fundamental-styles/issues/1674)) ([53462b7](https://github.com/SAP/fundamental-styles/commit/53462b7fb6d97ef90876c7cd1827057032c07a3c))
+* Tile - Refactor icons usage ([#1647](https://github.com/SAP/fundamental-styles/issues/1647)) ([f1d91ca](https://github.com/SAP/fundamental-styles/commit/f1d91ca6b2a5dc9a77f963ddfd467f524947c15b))
+
 ## [0.12.0-rc.73](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.72...v0.12.0-rc.73) (2020-09-22)
 
 ## [0.12.0-rc.72](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.71...v0.12.0-rc.72) (2020-09-22)
