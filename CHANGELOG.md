@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.66](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.65...v0.12.0-rc.66) (2020-09-22)
+
+
+### Bug Fixes
+
+* Menu - Refactor icons usage ([#1653](https://github.com/SAP/fundamental-styles/issues/1653)) ([72f7602](https://github.com/SAP/fundamental-styles/commit/72f7602a225015180cf52f744105bf5d343b2cf4))
+
 ## [0.12.0-rc.65](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.64...v0.12.0-rc.65) (2020-09-22)
 
 
