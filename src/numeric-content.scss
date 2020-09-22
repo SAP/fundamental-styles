@@ -13,6 +13,18 @@ $fd-numeric-content-elements-spacing-s: 0.5rem !default;
   max-width: $width;
 }
 
+@mixin scale-color($color) {
+  .#{$block}__scale-arrow {
+    @include fd-icon-selector() {
+      color: $color;
+    }
+  }
+
+  .#{$block}__scale-text {
+    color: $color;
+  }
+}
+
 @mixin small-tile-values() {
   height: 2.375rem;
 
@@ -37,7 +49,9 @@ $fd-numeric-content-elements-spacing-s: 0.5rem !default;
   }
 
   .#{$block}__launch-icon {
-    font-size: 1.5rem;
+    @include fd-icon-selector() {
+      font-size: 1.5rem;
+    }
   }
 
   .#{$block}__kpi {
@@ -94,11 +108,11 @@ $fd-numeric-content-elements-spacing-s: 0.5rem !default;
   }
 
   &__launch-icon {
-    @include fd-reset();
-
-    line-height: normal;
-    font-size: 1.75rem;
-    color: var(--sapTile_IconColor);
+    @include fd-icon-element-base() {
+      line-height: normal;
+      font-size: 1.75rem;
+      color: var(--sapTile_IconColor);
+    }
   }
 
   &__kpi {
@@ -129,12 +143,19 @@ $fd-numeric-content-elements-spacing-s: 0.5rem !default;
   &__scale {
     @include fd-reset();
 
-    @include fd-flex-vertical-center () {
+    @include fd-flex-vertical-center() {
       flex-direction: column;
       justify-content: space-between;
     }
 
-    &-arrow,
+    &-arrow {
+      @include fd-icon-element-base() {
+        font-size: 0.875rem;
+        line-height: normal;
+        color: var(--sapNeutralTextColor);
+      }
+    }
+
     &-text {
       @include fd-reset();
 
@@ -144,31 +165,19 @@ $fd-numeric-content-elements-spacing-s: 0.5rem !default;
     }
 
     &--positive {
-      .#{$block}__scale-arrow,
-      .#{$block}__scale-text {
-        color: var(--sapPositiveTextColor);
-      }
+      @include scale-color(var(--sapPositiveTextColor));
     }
 
     &--critical {
-      .#{$block}__scale-arrow,
-      .#{$block}__scale-text {
-        color: var(--sapCriticalTextColor);
-      }
+      @include scale-color(var(--sapCriticalTextColor));
     }
 
     &--negative {
-      .#{$block}__scale-arrow,
-      .#{$block}__scale-text {
-        color: var(--sapNegativeTextColor);
-      }
+      @include scale-color(var(--sapNegativeTextColor));
     }
 
     &--informative {
-      .#{$block}__scale-arrow,
-      .#{$block}__scale-text {
-        color: var(--sapInformativeTextColor);
-      }
+      @include scale-color(var(--sapInformativeTextColor));
     }
   }
 
@@ -232,7 +241,7 @@ $fd-numeric-content-elements-spacing-s: 0.5rem !default;
         .#{$block}__launch-icon-container {
           align-items: flex-end;
         }
-      };
+      }
     }
 
     &.#{$block}--s {
@@ -240,7 +249,7 @@ $fd-numeric-content-elements-spacing-s: 0.5rem !default;
         .#{$block}__scale-container {
           padding-top: 0;
         }
-      };
+      }
     }
   }
 }

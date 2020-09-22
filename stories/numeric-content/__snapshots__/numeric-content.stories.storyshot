@@ -39,7 +39,8 @@ exports[`Storyshots Dev/Numeric Content Large 1`] = `
         >
           
                         
-          <span
+          <i
+            aria-label="decrease"
             class="fd-numeric-content__scale-arrow sap-icon--down"
           />
           
@@ -95,13 +96,14 @@ exports[`Storyshots Dev/Numeric Content Large 1`] = `
         class="fd-numeric-content__scale-container"
       >
         
-                        
+                    
         <div
           class="fd-numeric-content__scale"
         >
           
                         
-          <span
+          <i
+            aria-label="decrease"
             class="fd-numeric-content__scale-arrow sap-icon--down"
           />
           
@@ -112,7 +114,7 @@ exports[`Storyshots Dev/Numeric Content Large 1`] = `
             milçM
           </span>
           
-                        
+                    
         </div>
         
                 
@@ -147,8 +149,9 @@ exports[`Storyshots Dev/Numeric Content Launch Icon Large 1`] = `
       >
         
                     
-        <span
+        <i
           class="fd-numeric-content__launch-icon sap-icon--line-charts"
+          role="presentation"
         />
         
                 
@@ -180,7 +183,8 @@ exports[`Storyshots Dev/Numeric Content Launch Icon Large 1`] = `
         >
           
                         
-          <span
+          <i
+            aria-label="decrease"
             class="fd-numeric-content__scale-arrow sap-icon--down"
           />
           
@@ -222,8 +226,9 @@ exports[`Storyshots Dev/Numeric Content Launch Icon Large 1`] = `
       >
         
                     
-        <span
+        <i
           class="fd-numeric-content__launch-icon sap-icon--line-charts"
+          role="presentation"
         />
         
                 
@@ -273,8 +278,9 @@ exports[`Storyshots Dev/Numeric Content Launch Icon Medium 1`] = `
       >
         
                     
-        <span
+        <i
           class="fd-numeric-content__launch-icon sap-icon--line-charts"
+          role="presentation"
         />
         
                 
@@ -306,7 +312,8 @@ exports[`Storyshots Dev/Numeric Content Launch Icon Medium 1`] = `
         >
           
                         
-          <span
+          <i
+            aria-label="decrease"
             class="fd-numeric-content__scale-arrow sap-icon--down"
           />
           
@@ -348,8 +355,9 @@ exports[`Storyshots Dev/Numeric Content Launch Icon Medium 1`] = `
       >
         
                     
-        <span
+        <i
           class="fd-numeric-content__launch-icon sap-icon--line-charts"
+          role="presentation"
         />
         
                 
@@ -381,7 +389,8 @@ exports[`Storyshots Dev/Numeric Content Launch Icon Medium 1`] = `
         >
           
                         
-          <span
+          <i
+            aria-label="decrease"
             class="fd-numeric-content__scale-arrow sap-icon--down"
           />
           
@@ -427,8 +436,9 @@ exports[`Storyshots Dev/Numeric Content Launch Icon Small 1`] = `
       >
         
                     
-        <span
+        <i
           class="fd-numeric-content__launch-icon sap-icon--line-charts"
+          role="presentation"
         />
         
                 
@@ -460,7 +470,8 @@ exports[`Storyshots Dev/Numeric Content Launch Icon Small 1`] = `
         >
           
                         
-          <span
+          <i
+            aria-label="increase"
             class="fd-numeric-content__scale-arrow sap-icon--up"
           />
           
@@ -502,8 +513,9 @@ exports[`Storyshots Dev/Numeric Content Launch Icon Small 1`] = `
       >
         
                     
-        <span
+        <i
           class="fd-numeric-content__launch-icon sap-icon--line-charts"
+          role="presentation"
         />
         
                 
@@ -535,7 +547,8 @@ exports[`Storyshots Dev/Numeric Content Launch Icon Small 1`] = `
         >
           
                         
-          <span
+          <i
+            aria-label="decrease"
             class="fd-numeric-content__scale-arrow sap-icon--down"
           />
           
@@ -601,7 +614,8 @@ exports[`Storyshots Dev/Numeric Content Medium 1`] = `
         >
           
                         
-          <span
+          <i
+            aria-label="decrease"
             class="fd-numeric-content__scale-arrow sap-icon--down"
           />
           
@@ -656,8 +670,9 @@ exports[`Storyshots Dev/Numeric Content Medium 1`] = `
         >
           
                         
-          <span
-            class="fd-numeric-content__scale-arrow sap-icon--up"
+          <i
+            aria-label="decrease"
+            class="fd-numeric-content__scale-arrow sap-icon--down"
           />
           
                     
@@ -715,7 +730,8 @@ exports[`Storyshots Dev/Numeric Content Small 1`] = `
         >
           
                         
-          <span
+          <i
+            aria-label="decrease"
             class="fd-numeric-content__scale-arrow sap-icon--down"
           />
           

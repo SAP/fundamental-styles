@@ -221,7 +221,7 @@ export const analyticalCard = () => `
                             </div>
                             <div class="fd-numeric-content__scale-container">
                                 <div class="fd-numeric-content__scale">
-                                    <span class="fd-numeric-content__scale-arrow sap-icon--down"></span>
+                                    <i class="fd-numeric-content__scale-arrow sap-icon--down" aria-label="decrease"></i>
                                     <span class="fd-numeric-content__scale-text">M</span>
                                 </div>
                             </div>
@@ -263,8 +263,8 @@ export const analyticalCard = () => `
                                 <div class="fd-numeric-content__kpi">1Ñç</div>
                             </div>
                             <div class="fd-numeric-content__scale-container">
-                                <div class="fd-numeric-content__scale">
-                                    <span class="fd-numeric-content__scale-arrow sap-icon--down"></span>
+                                <div class="fd-numeric-content__scale">                                
+                                    <i class="fd-numeric-content__scale-arrow sap-icon--down" aria-label="decrease"></i>
                                     <span class="fd-numeric-content__scale-text">M</span>
                                 </div>
                             </div>
