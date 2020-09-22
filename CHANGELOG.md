@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.67](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.66...v0.12.0-rc.67) (2020-09-22)
+
+
+### Bug Fixes
+
+* Remove redundant focus on empty forms ([#1662](https://github.com/SAP/fundamental-styles/issues/1662)) ([dad6b7e](https://github.com/SAP/fundamental-styles/commit/dad6b7e9e8c30935e9cc3c29fafc4a13561a0b39))
+
 ## [0.12.0-rc.66](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.65...v0.12.0-rc.66) (2020-09-22)
 
 
