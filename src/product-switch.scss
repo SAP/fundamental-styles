@@ -181,16 +181,15 @@ $block: #{$fd-namespace}-product-switch;
   }
 
   &__icon {
-    @include fd-icon-selector() {
+    @include fd-icon-element-base() {
       font-size: 1.5rem;
       margin-bottom: 0.5rem;
       color: var(--sapContent_IconColor);
+      min-width: 3rem;
+      min-height: 3rem;
 
       @include fd-flex-center();
     }
-
-    min-width: 3rem;
-    min-height: 3rem;
   }
 
   &__text {
