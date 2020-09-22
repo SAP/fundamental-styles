@@ -1,5 +1,5 @@
 
-@import "./listDefinitions.scss";
+@import "./listDefinitions";
 
 .#{$block} {
   &--object {
@@ -18,13 +18,11 @@
 
       &__text {
         @include fd-ellipsis();
+        @include fd-reset();
 
         display: block;
         width: 50%;
-        font-family: $fd-list-optional-text-font-family;
-        font-size: $fd-list-optional-text-font-size;
-        font-weight: $fd-list-optional-text-font-weight;
-        color: $fd-list-optional-text-font-color;
+        color: $fd-list-object-font-color;
 
         @include fd-rtl() {
           float: right;
@@ -61,13 +59,13 @@
         text-align: right;
         padding-left: $fd-list-object-with-padding-value-one !important;
         vertical-align: $fd-list-object-with-vertical-align-top !important;
-        margin-right: $fd-list-object-with-margin-value-zero !important;
+        margin-right: $fd-list-object-with-value-zero !important;
 
         @include fd-rtl() {
           text-align: left;
           padding-right: $fd-list-object-with-padding-value-one !important;
-          padding-left: $fd-list-object-with-padding-value-zero !important;
-          margin-left: $fd-list-object-with-margin-value-zero !important;
+          padding-left: $fd-list-object-with-value-zero !important;
+          margin-left: $fd-list-object-with-value-zero !important;
         }
       }
 
@@ -94,17 +92,18 @@
       }
 
       &--bottom-right {
+        @include fd-ellipsis();
+
         width: 50%;
         max-width: 50%;
         flex: 2 2 10%;
         text-align: right;
-        margin-right: $fd-list-object-with-margin-value-zero;
+        margin-right: $fd-list-object-with-value-zero;
         padding: 0.5rem 0 0.5rem 0.5rem;
-        display: inline-grid;
 
         @include fd-rtl() {
           text-align: left;
-          margin-left: $fd-list-object-with-margin-value-zero;
+          margin-left: $fd-list-object-with-value-zero;
           padding: 0.5rem 0.5rem 0.5rem 0;
         }
       }
@@ -116,11 +115,11 @@
 
     .fd-object-number {
       vertical-align: $fd-list-object-with-vertical-align-top !important;
-      margin-right: $fd-list-object-with-margin-value-zero;
+      margin-right: $fd-list-object-with-value-zero;
 
       &__text {
         font-family: $fd-list-object-number-font-family;
-        font-weight: $fd-list-object-font-weight;
+        font-weight: normal;
         font-size: 1.375rem;
       }
 
@@ -131,7 +130,7 @@
 
       &__text,
       &__unit {
-        padding-top: $fd-list-object-with-padding-value-zero !important;
+        padding-top: $fd-list-object-with-value-zero !important;
         display: block !important;
       }
 
@@ -140,18 +139,16 @@
       }
 
       @include fd-rtl() {
-        margin-left: $fd-list-object-with-margin-value-zero;
+        margin-left: $fd-list-object-with-value-zero;
       }
     }
 
     .fd-object-identifier {
       &__title {
         @include fd-reset();
+        @include fd-typography(var(--sapFontHeader4Size));
 
-        font-family: $fd-object-identifier-title-font-family;
-        font-size: $fd-object-identifier-title-font-size;
         font-weight: $fd-object-identifier-title-font-weight;
-        color: $fd-object-identifier-title-color;
         line-height: 1.5;
         vertical-align: top;
         display: -webkit-box;
@@ -172,26 +169,26 @@
 
       text-align: right;
       width: 100%;
-      display: block;
-      line-height: 1.4;
-      margin-right: $fd-list-object-with-margin-value-zero;
+      display: initial;
+      margin-right: $fd-list-object-with-value-zero;
 
       @include fd-rtl() {
         text-align: left;
-        margin-left: $fd-list-object-with-margin-value-zero;
+        margin-left: $fd-list-object-with-value-zero;
+      }
+
+      &__icon[class*=sap-icon] {
+        display: inline-block;
       }
     }
 
     .#{$block}-attribute {
       @include fd-ellipsis();
+      @include fd-reset();
 
       width: 100%;
       text-align: left;
-      line-height: 1.4;
-      font-family: $fd-list-object-attribute-font-family;
-      font-size: $fd-list-object-font-size;
-      font-weight: $fd-list-object-font-weight;
-      color: $fd-list-object-attribute-font-color;
+      color: $fd-list-object-font-color;
       vertical-align: $fd-list-object-with-vertical-align-bottom;
 
       @include fd-rtl() {
@@ -210,7 +207,7 @@
 
       @include fd-rtl() {
         margin-left: 0.75rem;
-        margin-right: $fd-list-object-with-margin-value-zero;
+        margin-right: $fd-list-object-with-value-zero;
       }
     }
   }
