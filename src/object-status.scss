@@ -109,12 +109,20 @@ $inverted-color-accents: (
   ),
 );
 
+@mixin fd-object-status-icon-selector() {
+  .#{$block}__icon {
+    @include fd-icon-selector() {
+      @content;
+    }
+  }
+}
+
 // STATES FOR INVERTED OBJECT STATUS
 @mixin inverted-object-states($variablesSet) {
   color: map_deep_get($variablesSet, "regular", "color");
   background-color: map_deep_get($variablesSet, "regular", "background");
 
-  &::before {
+  @include fd-object-status-icon-selector() {
     color: map_deep_get($variablesSet, "regular", "color");
   }
 
@@ -124,7 +132,7 @@ $inverted-color-accents: (
     color: map_deep_get($variablesSet, "regular", "color");
     background-color: map_deep_get($variablesSet, "regular", "background");
 
-    &::before {
+    @include fd-object-status-icon-selector() {
       color: map_deep_get($variablesSet, "regular", "color");
     }
   }
@@ -140,7 +148,7 @@ $inverted-color-accents: (
     color: map_deep_get($variablesSet, "visited", "color");
     background-color: map_deep_get($variablesSet, "visited", "background");
 
-    &::before {
+    @include fd-object-status-icon-selector() {
       color: map_deep_get($variablesSet, "visited", "color");
     }
   }
@@ -149,7 +157,7 @@ $inverted-color-accents: (
     color: map_deep_get($variablesSet, "hover", "color");
     background-color: map_deep_get($variablesSet, "hover", "background");
 
-    &::before {
+    @include fd-object-status-icon-selector() {
       color: map_deep_get($variablesSet, "hover", "color");
     }
   }
@@ -158,16 +166,27 @@ $inverted-color-accents: (
     color: map_deep_get($variablesSet, "active", "color");
     background-color: map_deep_get($variablesSet, "active", "background");
 
-    &::before {
+    @include fd-object-status-icon-selector() {
       color: map_deep_get($variablesSet, "active", "color");
     }
   }
 }
 
 .#{$block} {
+  @mixin fd-object-status-text-inherit() {
+    font-size: inherit;
+    font-weight: inherit;
+    word-break: inherit;
+    color: inherit;
+    font-family: inherit;
+    line-height: 1;
+
+    @content;
+  }
+
   // ICON VARIABLES
   $fd-object-status-icon-font-size: 1rem;
-  $fd-object-status-icon-padding: 0.5rem !default;
+  $fd-object-status-icon-padding: 0.25rem !default;
   $fd-object-status-icon-neutral: var(--sapNeutralElementColor);
 
   // TEXT VARIABLES
@@ -180,7 +199,6 @@ $inverted-color-accents: (
   $fd-object-status-inverted-padding: 0.0625rem 0.25rem !default;
   $fd-object-status-inverted-padding-empty: 0 0.25rem !default;
   $fd-object-status-inverted-min-height: 1rem !default;
-  $fd-object-status-inverted-height-empty: 1rem !default;
   $fd-object-status-inverted-min-width: 1.25rem !default;
   $fd-object-status-inverted-text-font-weight: bold !default;
   $fd-object-status-inverted-icon-font-size: 0.75rem !default;
@@ -206,35 +224,32 @@ $inverted-color-accents: (
   align-items: center;
   line-height: 1;
 
-  &::before {
-    font-size: $fd-object-status-icon-font-size;
-    padding-right: $fd-object-status-icon-padding;
-    color: $fd-object-status-icon-neutral;
+  &__text {
+    @include fd-reset();
+    @include fd-object-status-text-inherit();
   }
 
-  // ICON ONLY MODE
-  @include fd-empty() {
-    justify-content: center;
-    padding-right: 0;
-    padding-left: 0;
+  &__icon {
+    @include fd-icon-element-base() {
+      @include fd-flex-center();
 
-    &::before {
-      padding-right: 0;
-      padding-left: 0;
+      font-size: $fd-object-status-icon-font-size;
+      padding-right: $fd-object-status-icon-padding;
+      color: $fd-object-status-icon-neutral;
+
+      // ICON ONLY MODE
+      @include fd-only-child() {
+        justify-content: center;
+        padding-right: 0;
+        padding-left: 0;
+      }
     }
   }
 
   @include fd-rtl() {
-    &::before {
+    @include fd-object-status-icon-selector() {
       padding-right: 0;
       padding-left: $fd-object-status-icon-padding;
-    }
-
-    @include fd-empty() {
-      &::before {
-        padding-right: 0;
-        padding-left: 0;
-      }
     }
   }
 
@@ -242,13 +257,16 @@ $inverted-color-accents: (
     &--#{$set-name} {
       color: map_get($color-set, "color");
 
-      &::before {
+      @include fd-object-status-icon-selector() {
         color: map_get($color-set, "iconColor");
       }
 
-      &:visited,
-      &:visited::before {
+      &:visited {
         color: map_get($color-set, "visited");
+
+        @include fd-object-status-icon-selector() {
+          color: map_get($color-set, "visited");
+        }
       }
     }
   }
@@ -257,33 +275,28 @@ $inverted-color-accents: (
     &--indication-#{$set-name} {
       color: map_get($color-set, "color");
 
-      &::before {
+      @include fd-object-status-icon-selector() {
         color: map_get($color-set, "iconColor");
       }
 
-      &:visited,
-      &:visited::before {
+      &:visited {
         color: map_get($color-set, "visited");
+
+        @include fd-object-status-icon-selector() {
+          color: map_get($color-set, "visited");
+        }
       }
     }
   }
 
   // CLICKABLE OBJECT STATUS
   &--link {
-    display: inline-block;
     text-decoration: none;
     cursor: pointer;
 
-    &::before {
-      position: relative;
-      top: 0.125rem;
-    }
-
     &:hover {
-      text-decoration: underline;
-
-      &::before {
-        text-decoration: none;
+      .#{$block}__text {
+        text-decoration: underline;
       }
     }
 
@@ -296,7 +309,7 @@ $inverted-color-accents: (
   &--large {
     font-size: $fd-object-status-icon-text-font-size-large;
 
-    &::before {
+    @include fd-object-status-icon-selector() {
       font-size: $fd-object-status-icon-text-font-size-large;
     }
   }
@@ -315,22 +328,21 @@ $inverted-color-accents: (
     border-style: solid;
     text-shadow: none;
 
-    &::before {
+    @include fd-object-status-icon-selector() {
       font-size: $fd-object-status-inverted-icon-font-size;
       padding-right: $fd-object-status-inverted-icon-spacing;
-    }
 
-    @include fd-rtl() {
-      &::before {
-        padding-right: 0;
-        padding-left: $fd-object-status-inverted-icon-spacing;
+      // ICON ONLY MODE
+      @include fd-only-child() {
+        padding: $fd-object-status-inverted-padding-empty;
       }
     }
 
-    // ICON ONLY MODE
-    @include fd-empty() {
-      height: $fd-object-status-inverted-height-empty;
-      padding: $fd-object-status-inverted-padding-empty;
+    @include fd-rtl() {
+      @include fd-object-status-icon-selector() {
+        padding-right: 0;
+        padding-left: $fd-object-status-inverted-icon-spacing;
+      }
     }
 
     // TEXT AND BACKGROUND COLOR FOR INVERTED OBJECT STATUS STATES
@@ -356,34 +368,28 @@ $inverted-color-accents: (
       font-size: $fd-object-status-icon-text-font-size-large-inverted;
       padding: $fd-object-status-padding-large-inverted;
 
-      &::before {
+      @include fd-object-status-icon-selector() {
         font-size: $fd-object-status-icon-text-font-size-large-inverted;
-      }
 
-      // ICON ONLY MODE
-      @include fd-empty() {
-        height: $fd-object-status-min-height-large-inverted-empty;
-        min-width: $fd-object-status-min-width-large-inverted-empty;
-        padding: $fd-object-status-padding-large-inverted-empty;
+        // ICON ONLY MODE
+        @include fd-empty() {
+          height: $fd-object-status-min-height-large-inverted-empty;
+          min-width: $fd-object-status-min-width-large-inverted-empty;
+          padding: $fd-object-status-padding-large-inverted-empty;
+        }
       }
     }
 
     // CLICKABLE INVERTED OBJECT STATUS
     &.#{$block}--link {
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
       cursor: pointer;
-
-      &::before {
-        position: initial;
-        top: initial;
-      }
 
       &:hover,
       &:active,
       &:visited {
-        text-decoration: none;
+        .#{$block}__text {
+          text-decoration: none;
+        }
       }
 
       // INTERACTION STATES FOR CLICKABLE INVERTED OBJECT STATUS
