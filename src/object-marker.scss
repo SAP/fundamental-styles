@@ -56,7 +56,7 @@ $block: #{$fd-namespace}-object-marker;
       color: $fd-object-marker-color;
       padding-right: $fd-object-marker-padding-right;
 
-      &:only-child {
+      @include fd-only-child() {
         padding-right: 0;
         padding-left: 0;
       }
@@ -64,6 +64,11 @@ $block: #{$fd-namespace}-object-marker;
       @include fd-rtl() {
         padding-left: $fd-object-marker-padding-right;
         padding-right: 0;
+
+        @include fd-only-child() {
+          padding-right: 0;
+          padding-left: 0;
+        }
       }
     }
   }
