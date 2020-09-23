@@ -10,12 +10,12 @@ $fd-wizard-step-indicator-stacked-offset: -1 * ($fd-wizard-step-indicator-size -
 $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
 
 @mixin fd-wizard-responsive-paddings() {
-  &--s {
+  &--sm {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  &--m,
+  &--md,
   &--lg {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -76,7 +76,9 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
         border: var(--fdWizard_Completed_Step_Border);
 
         .#{$block}__icon {
-          color: var(--fdWizard_Completed_Step_Icon_Color);
+          @include fd-icon-selector() {
+            color: var(--fdWizard_Completed_Step_Icon_Color);
+          }
         }
       }
     }
@@ -88,7 +90,9 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
         color: var(--fdWizard_Current_Step_Color);
 
         .#{$block}__icon {
-          color: var(--fdWizard_Current_Step_Icon_Color);
+          @include fd-icon-selector() {
+            color: var(--fdWizard_Current_Step_Icon_Color);
+          }
         }
 
         // Selection Bar
@@ -114,7 +118,9 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
         color: var(--fdWizard_Upcoming_Step_Color);
 
         .#{$block}__icon {
-          color: var(--fdWizard_Upcoming_Step_Icon_Color);
+          @include fd-icon-selector() {
+            color: var(--fdWizard_Upcoming_Step_Icon_Color);
+          }
         }
       }
 
@@ -180,7 +186,9 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
       }
 
       .#{$block}__icon {
-        color: var(--fdWizard_Active_Step_Icon_Color);
+        @include fd-icon-selector() {
+          color: var(--fdWizard_Active_Step_Icon_Color);
+        }
       }
     }
   }
@@ -211,11 +219,12 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
   }
 
   &__icon {
-    @include fd-reset();
-    @include fd-flex-center();
+    @include fd-icon-element-base() {
+      @include fd-flex-center();
 
-    height: 100%;
-    font-size: var(--sapFontLargeSize);
+      height: 100%;
+      font-size: var(--sapFontLargeSize);
+    }
   }
 
   &__label-container {
