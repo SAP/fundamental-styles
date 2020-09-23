@@ -441,24 +441,24 @@ export const rtl = () => `
     <ul class="fd-list fd-list--selection" role="listbox" aria-label="Selection list">
       <li role="option" tabindex="0" class="fd-list__item">
           <div class="fd-form-item fd-list__form-item">
-              <input type="checkbox" class="fd-checkbox" id="AiEez2" aria-labelledby="Ai4eZ3">
+              <input type="checkbox" class="fd-checkbox" id="AiEez2" aria-labelledby="6243111688">
               <label tabindex="-1" class="fd-checkbox__label" for="AiEez2"></label>
           </div>
-          <span class="fd-list__title" id="Ai4eZ3">List item 1</span>
+          <span class="fd-list__title" id="6243111688">List item 1</span>
       </li>
       <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
           <div class="fd-form-item fd-list__form-item">
-              <input type="checkbox" class="fd-checkbox" id="A99ez2" checked aria-labelledby="Ai4eZ4">
+              <input type="checkbox" class="fd-checkbox" id="A99ez2" checked aria-labelledby="1387543035">
               <label tabindex="-1" class="fd-checkbox__label" for="A99ez2"></label>
           </div>
-          <span class="fd-list__title" id="Ai4eZ4">List item 2</span>
+          <span class="fd-list__title" id="1387543035">List item 2</span>
       </li>
       <li role="option" tabindex="0" class="fd-list__item">
           <div class="fd-form-item fd-list__form-item">
-              <input type="checkbox" class="fd-checkbox" id="Ai4ez3" aria-labelledby="Ai4eZ5">
-              <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez3"></label>
+              <input type="checkbox" class="fd-checkbox" id="9737425735" aria-labelledby="8784804916">
+              <label tabindex="-1" class="fd-checkbox__label" for="9737425735"></label>
           </div>
-          <span class="fd-list__title" id="Ai4eZ5">List item 3</span>
+          <span class="fd-list__title" id="8784804916">List item 3</span>
       </li>
     </ul>
 </div>
