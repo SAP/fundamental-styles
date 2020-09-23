@@ -23,7 +23,7 @@ exports[`Storyshots Components/Forms/Checkbox Desktop 1`] = `
     <legend
       class="fd-fieldset__legend"
     >
-      Compact Checkboxes
+      Desktop (compact) checkboxes
     </legend>
     
     
@@ -260,7 +260,7 @@ exports[`Storyshots Components/Forms/Checkbox Mobile 1`] = `
     <legend
       class="fd-fieldset__legend"
     >
-      Cozy Checkboxes
+      Mobile checkboxes
     </legend>
     
     
@@ -502,7 +502,7 @@ exports[`Storyshots Components/Forms/Checkbox States 1`] = `
       <legend
         class="fd-fieldset__legend"
       >
-        Checkboxes Error
+        Error checkboxes
       </legend>
       
         
@@ -620,7 +620,7 @@ exports[`Storyshots Components/Forms/Checkbox States 1`] = `
       <legend
         class="fd-fieldset__legend"
       >
-        Checkboxes Success
+        Success checkboxes
       </legend>
       
         
@@ -738,7 +738,7 @@ exports[`Storyshots Components/Forms/Checkbox States 1`] = `
       <legend
         class="fd-fieldset__legend"
       >
-        Checkboxes Warning
+        Warning checkboxes
       </legend>
       
         
@@ -856,7 +856,7 @@ exports[`Storyshots Components/Forms/Checkbox States 1`] = `
       <legend
         class="fd-fieldset__legend"
       >
-        Checkboxes Information
+        Information checkboxes
       </legend>
       
         
@@ -974,7 +974,7 @@ exports[`Storyshots Components/Forms/Checkbox States 1`] = `
       <legend
         class="fd-fieldset__legend"
       >
-        Checkboxes Disabled
+        Disabled checkboxes
       </legend>
       
         
