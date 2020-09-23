@@ -55,13 +55,13 @@ export const overflow = () => `
             <div class="fd-popover__control">
                 <div
                     class="fd-breadcrumb__link"
-                    onclick="onControlClick('breadcrumb1');"
+                    onclick="onPopoverClick('breadcrumb1');"
                     aria-controls="breadcrumb1"
                     aria-expanded="false"
                     aria-haspopup="true"
                     >
                 ...
-                <span class="fd-breadcrumb__dropdown-icon"></span>
+                    <span class="fd-breadcrumb__dropdown-icon"></span>
                 </div>
             </div>
             <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="breadcrumb1">
@@ -92,6 +92,7 @@ export const overflow = () => `
     <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Super portable deluxe</a></li>
     <li class="fd-breadcrumb__item">Laptop</li>
 </ul>
+<div style="height: 200px"></div>
 `;
 
 overflow.parameters = {
