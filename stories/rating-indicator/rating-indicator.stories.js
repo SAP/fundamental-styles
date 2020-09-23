@@ -20,7 +20,7 @@ Use the rating indicator in forms, tables, or in a dialog box.
 
 export const Sizes = () => `
     <div class="example-container">
-        <span>Default:</span>
+        <span style="min-width: 150px;">Default (Medium):</span>
         <div class="fd-rating-indicator fd-rating-indicator--hide-dynamic-text">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-1" name="rating" value="1">  
@@ -43,7 +43,7 @@ export const Sizes = () => `
     </div>
     
     <div class="example-container">
-        <span>XS:</span>
+        <span style="min-width: 150px;">Extra small:</span>
         <div class="fd-rating-indicator fd-rating-indicator--xs">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-xs-1" name="rating-xs" value="1">  
@@ -67,8 +67,8 @@ export const Sizes = () => `
     </div>
 
     <div class="example-container">
-        <span>S:</span>
-        <div class="fd-rating-indicator fd-rating-indicator--s">
+        <span style="min-width: 150px;">Small:</span>
+        <div class="fd-rating-indicator fd-rating-indicator--sm">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-s-1" name="rating-s" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-s-1"></label>
@@ -89,33 +89,10 @@ export const Sizes = () => `
             <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
         </div>
     </div>
-
-    <div class="example-container">
-        <span>M:</span>
-        <div class="fd-rating-indicator fd-rating-indicator--m">
-            <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-                <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-m-1" name="rating-m" value="1">  
-                <label class="fd-rating-indicator__label" for="rating-m-1"></label>
-                
-                <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-m-2" name="rating-m" value="2" checked>
-                <label class="fd-rating-indicator__label" for="rating-m-2"></label>
-                
-                <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-m-3" name="rating-m" value="3">
-                <label class="fd-rating-indicator__label" for="rating-m-3"></label>
-                
-                <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-m-4" name="rating-m" value="4">
-                <label class="fd-rating-indicator__label" for="rating-m-4"></label>
-                
-                <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-m-5" name="rating-m" value="5">
-                <label class="fd-rating-indicator__label" for="rating-m-5"></label>
-            </div>
-            <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
-        </div>
-    </div>
     
     <div class="example-container">
-        <span>L:</span>
-        <div class="fd-rating-indicator fd-rating-indicator--l">
+        <span style="min-width: 150px;">Large:</span>
+        <div class="fd-rating-indicator fd-rating-indicator--lg">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-l-1" name="rating-l" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-l-1"></label>
@@ -137,7 +114,7 @@ export const Sizes = () => `
     </div>
     
     <div class="example-container">
-        <span>Cozy:</span>
+        <span style="min-width: 150px;">Cozy:</span>
         <div class="fd-rating-indicator fd-rating-indicator--cozy">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-cozy-1" name="rating-cozy" value="1">  
@@ -160,7 +137,7 @@ export const Sizes = () => `
     </div>
     
     <div class="example-container">
-        <span>Compact:</span>
+        <span style="min-width: 150px;">Compact:</span>
         <div class="fd-rating-indicator fd-rating-indicator--compact">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-compact-1" name="rating-compact" value="1">  
@@ -183,7 +160,7 @@ export const Sizes = () => `
     </div>
     
     <div class="example-container">
-        <span>Condensed:</span>
+        <span style="min-width: 150px;">Condensed:</span>
         <div class="fd-rating-indicator fd-rating-indicator--condensed">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-condensed-1" name="rating-condensed" value="1">  
@@ -209,15 +186,15 @@ export const Sizes = () => `
 Sizes.parameters = {
     docs: {
         storyDescription: `
-| **Size**    | **rem**    | **Modifier class**       |
-| :---------- | :--------- | -----------------------: |
-| XS          | 0.75rem   | <code>--xs</code>        |
-| S           | 1rem      | <code>--s</code>         |
-| M/Default   | 1.375rem  | <code>--m</code>         |
-| L           | 2rem      | <code>--l</code>         |
-| Cozy        | 1.5rem    | <code>--cozy</code>      |
-| Compact     | 1rem      | <code>--compact</code>   |
-| Condensed   | 1rem      | <code>--condensed</code> |
+| **Size**       | **rem**    | **Modifier class**        |
+| :----------    | :--------- | -----------------------:  |
+| Extra small    | 0.75rem    | <code>--xs</code>         |
+| Small          | 1rem       | <code>--sm</code>         |
+| Medium/Default | 1.375rem   | _n/a_                     |
+| Large          | 2rem       | <code>--lg</code>         |
+| Cozy           | 1.5rem     | <code>--cozy</code>       |
+| Compact        | 1rem       | <code>--compact</code>    |
+| Condensed      | 1rem       | <code>--condensed</code>  |
 `
     }
 };
