@@ -134,8 +134,8 @@ export const longTitleDescription = () => `
 <div class="fd-action-bar">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact">
-                <i class="sap-icon--navigation-left-arrow"></i>
+            <button aria-label="Go Back" class="fd-button fd-button--transparent fd-button--compact">
+                <i role="presentation" class="sap-icon--navigation-left-arrow"></i>
             </button>
         </div>
         <div class="fd-action-bar__title">
@@ -156,8 +156,8 @@ export const longTitleDescription = () => `
 <div class="fd-action-bar" dir="rtl">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact">
-                <i class="sap-icon--navigation-right-arrow"></i>
+            <button aria-label="Go Back" class="fd-button fd-button--transparent fd-button--compact">
+                <i role="presentation" class="sap-icon--navigation-right-arrow"></i>
             </button>
         </div>
         <div class="fd-action-bar__title">

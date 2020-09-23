@@ -665,13 +665,14 @@ exports[`Storyshots Components/Action Bar Action bar with Long page title and de
         
             
         <button
-          aria-label="button"
+          aria-label="Go Back"
           class="fd-button fd-button--transparent fd-button--compact"
         >
           
                 
           <i
             class="sap-icon--navigation-left-arrow"
+            role="presentation"
           />
           
             
@@ -771,13 +772,14 @@ exports[`Storyshots Components/Action Bar Action bar with Long page title and de
         
             
         <button
-          aria-label="button"
+          aria-label="Go Back"
           class="fd-button fd-button--transparent fd-button--compact"
         >
           
                 
           <i
             class="sap-icon--navigation-right-arrow"
+            role="presentation"
           />
           
             
