@@ -2,84 +2,14 @@
 
 $block: #{$fd-namespace}-search-field;
 
+$fd-search-field-something: 0 !default;
+
 .#{$block} {
-  $fd-search-field-something: 0 !default;
-
-  @include fd-reset();
-
-  width: 100%;
   min-width: 7rem;
-  height: 2.75rem;
   background: transparent;
-  padding: 0.25rem 0;
 
-  &__container {
-    @include fd-reset();
-    @include fd-flex-center();
-
-    height: 2.25rem;
-    line-height: 2.125rem;
+  &__input.fd-input-group__input {
+    // line-height: 2.125rem;
     background: var(--sapField_Background);
-    border: 0.0625rem solid var(--sapField_BorderColor);
-  }
-
-  &__input {
-    @include fd-reset();
-    @include fd-ellipsis();
-    @include set-horizontal-paddings(0.625rem, 0.125rem);
-
-    @include fd-focus() {
-      outline: none;
-    }
-
-    height: 2.125rem;
-    width: 100%;
-    color: var(--sapField_TextColor);
-
-    &::placeholder {
-      @include fd-ellipsis();
-
-      max-width: 100%;
-      color: var(--sapField_PlaceholderTextColor);
-      font-size: var(--sapFontSize);
-      font-style: italic;
-    }
-  }
-
-  &__button {
-    @include fd-reset();
-
-    min-width: 2.125rem;
-    min-height: 2.125rem;
-    font-size: 1rem;
-    color: var(--sapContent_IconColor);
-    line-height: 2.125rem;
-  }
-
-  // Modifier classes
-  &--compact {
-    @include fd-reset();
-
-    height: 2rem;
-    padding: 0.1875rem 0;
-    min-width: 6rem;
-
-    .#{$block}__container {
-      height: 1.625rem;
-      line-height: 1.5rem;
-    }
-
-    .#{$block}__input {
-      @include set-horizontal-paddings(0.5rem, 0.125rem);
-
-      height: 1.5rem;
-    }
-
-    .#{$block}__button {
-      width: 2rem;
-      min-height: 1.5rem;
-      text-align: center;
-      line-height: 1.5rem;
-    }
   }
 }

@@ -1,4 +1,5 @@
 import '../../dist/search-field.css';
+import '../../dist/input-group.css';
 
 export default {
     title: 'Components/Search Field',
@@ -9,20 +10,62 @@ export default {
 };
 
 export const example1 = () => `
-<div class="fd-search-field">
-    <div class="fd-search-field__container">
-        <input type="text" class="fd-search-field__input" placeholder="Search">
-        <button class="fd-search-field__button">X</button>
-        <button class="fd-search-field__button">C</button>
-    </div>
+<div class="fd-input-group fd-search-field">
+    <input 
+        class="fd-input fd-input-group__input fd-search-field__input" 
+        type="text" 
+        id="aqwsde121"
+        placeholder="Field placeholder text">
+    <span class="fd-input-group__addon fd-input-group__addon--button">
+        <button 
+            class="fd-input-group__button fd-button fd-button--icon fd-button--transparent" aria-label="Search"> 
+            <i class="sap-icon--search"></i>
+        </button>
+    </span>
 </div>
+
 <br><br>
-<div class="fd-search-field fd-search-field--compact">
-    <div class="fd-search-field__container">
-        <input type="text" class="fd-search-field__input" placeholder="Search">
-        <button class="fd-search-field__button">X</button>
-        <button class="fd-search-field__button">C</button>
-    </div>
+
+<div class="fd-input-group fd-search-field">
+    <input 
+        class="fd-input fd-input-group__input fd-search-field__input" 
+        type="text" 
+        id="aqwsde121"
+        placeholder="Field placeholder text">
+    <span class="fd-input-group__addon fd-input-group__addon--button">
+        <button 
+            class="fd-input-group__button fd-button fd-button--icon fd-button--transparent" aria-label="Search"> 
+            <i class="sap-icon--decline"></i>
+        </button>
+    </span>
+    <span class="fd-input-group__addon fd-input-group__addon--button">
+        <button 
+            class="fd-input-group__button fd-button fd-button--icon fd-button--transparent" aria-label="Search"> 
+            <i class="sap-icon--search"></i>
+        </button>
+    </span>
+</div>
+
+<br><br>
+
+<div class="fd-input-group fd-search-field">
+    <input 
+        class="fd-input fd-input-group__input fd-search-field__input" 
+        type="text" 
+        id="aqwsde121"
+        placeholder="Field placeholder text">
+    <span class="fd-input-group__addon fd-input-group__addon--button">
+        <button 
+            class="fd-input-group__button fd-button fd-button--icon fd-button--transparent" aria-label="Search"> 
+            <i class="sap-icon--decline"></i>
+        </button>
+    </span>
+    <span class="fd-input-group__addon fd-input-group__addon--button">
+        <button 
+            class="fd-input-group__button fd-button fd-button--icon fd-button--transparent" aria-label="Search"> 
+            <i class="sap-icon--synchronize"></i>
+        </button>
+    </span>
 </div>
 `;
 
