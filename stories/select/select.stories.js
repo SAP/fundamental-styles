@@ -197,7 +197,7 @@ export const twoColumn = () => `
         <div class="fd-select">
             <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="a34FL7NC" onclick="onControlClick('h0C62325');" aria-expanded="false" aria-haspopup="listbox">
                 <span class="fd-select__text-content">Select Product</span>
-                <span class="fd-button fd-button--transparent">
+                <span class="fd-button fd-button--transparent fd-select__button">
                     <i class="sap-icon--slim-arrow-down"></i>
                 </span>
             </div>
