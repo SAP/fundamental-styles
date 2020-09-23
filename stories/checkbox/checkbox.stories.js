@@ -11,7 +11,7 @@ export default {
 - **Un-checked**: the state described by the checkbox is not applied.
 - **Tri-state**: a state that indicates it is neither checked nor unchecked. The main purpose of the tri-state is to represent a mixed selection of states of dependent input fields. If some (but not all) of the dependent fields are selected, the checkbox shows a partially selected state. This is only a visual state and can’t be achieved by a direct user interaction.
 
-Note: With checkboxes, all options are visible, and the user can make one or more selections.  This component can be set to disabled as well as displayed in a row.
+Note: With checkboxes, all options are visible, and the user can make one or more selections.
 
 ##Usage
 **Use the checkbox if:**
@@ -42,7 +42,7 @@ const localStyles = `
 export const desktop = () => `
 ${localStyles}
 <fieldset class="fd-fieldset">
-    <legend class="fd-fieldset__legend">Compact Checkboxes</legend>
+    <legend class="fd-fieldset__legend">Desktop (compact) checkboxes</legend>
     <div class="fd-form-group">
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez611c">
@@ -89,7 +89,7 @@ desktop.parameters = {
     docs: {
         iframeHeight: 330,
         storyDescription: `A checkbox can be displayed in two different sizes desktop (compact) and mobile (default). 
-The checkbox appears smaller and uses the <code>fd-checkbox\\_\\_label--compact</code> modifier class.
+On desktop screens, the checkbox appears smaller and uses the <code>fd-checkbox\\_\\_label--compact</code> modifier class.
         `
     }
 };
@@ -97,7 +97,7 @@ The checkbox appears smaller and uses the <code>fd-checkbox\\_\\_label--compact<
 export const mobile = () => `
 ${localStyles}
 <fieldset class="fd-fieldset">
-    <legend class="fd-fieldset__legend">Cozy Checkboxes</legend>
+    <legend class="fd-fieldset__legend">Mobile checkboxes</legend>
     <div class="fd-form-group">
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez611">
@@ -143,14 +143,14 @@ mobile.storyName = 'Mobile';
 mobile.parameters = {
     docs: {
         iframeHeight: 330,
-        storyDescription: `A checkbox can display larger so users can select options easier on a mobile screen. This is the default size of the checkbox.
+        storyDescription: `A checkbox can display larger so users can easily select options on a mobile screen. This is considered the default size for checkbox.
         `
     }
 };
 
 export const inline = () => `
 <fieldset class="fd-fieldset">
-    <legend class="fd-fieldset__legend">Checkboxes inline</legend>
+    <legend class="fd-fieldset__legend">Inline checkboxes</legend>
     <div class="fd-form-group fd-form-group--inline">
         <div class="fd-form-group__item fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez617">
@@ -186,7 +186,7 @@ export const states = () => `
 ${localStyles}
 <div class="checkbox-example-container">
     <fieldset class="fd-fieldset">
-        <legend class="fd-fieldset__legend">Checkboxes Error</legend>
+        <legend class="fd-fieldset__legend">Error checkboxes</legend>
         <div class="fd-form-group">
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-error" id="Ai4ez6119">
@@ -210,7 +210,7 @@ ${localStyles}
     </fieldset>
 
     <fieldset class="fd-fieldset">
-        <legend class="fd-fieldset__legend">Checkboxes Success</legend>
+        <legend class="fd-fieldset__legend">Success checkboxes</legend>
         <div class="fd-form-group">
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-success" id="Ai4ez61192">
@@ -234,7 +234,7 @@ ${localStyles}
     </fieldset>
 
     <fieldset class="fd-fieldset">
-        <legend class="fd-fieldset__legend">Checkboxes Warning</legend>
+        <legend class="fd-fieldset__legend">Warning checkboxes</legend>
         <div class="fd-form-group">
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez61193">
@@ -258,7 +258,7 @@ ${localStyles}
     </fieldset>
 
     <fieldset class="fd-fieldset">
-        <legend class="fd-fieldset__legend">Checkboxes Information</legend>
+        <legend class="fd-fieldset__legend">Information checkboxes</legend>
         <div class="fd-form-group">
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez61194">
@@ -282,7 +282,7 @@ ${localStyles}
     </fieldset>
 
     <fieldset class="fd-fieldset">
-        <legend class="fd-fieldset__legend">Checkboxes Disabled</legend>
+        <legend class="fd-fieldset__legend">Disabled checkboxes</legend>
         <div class="fd-form-group">
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox" id="Ai4ez61196" disabled>
@@ -311,7 +311,7 @@ states.storyName = 'States';
 states.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: `Checkboxes can display several interaction states to communicate semantic meaning to the users. To display different states, Add the classes below to the <code>fd-form-item</code>:
+        storyDescription: `Checkboxes can display several interaction states to communicate semantic meaning to the users. To display different states, add the classes below to the <code>fd-form-item</code>:
 
 | States | Class |
 | :----------------- | :------------------ |
@@ -326,7 +326,7 @@ states.parameters = {
 
 export const rtl = () => `
 <fieldset class="fd-fieldset" dir="rtl">
-    <legend class="fd-fieldset__legend">Checkboxes RTL Support</legend>
+    <legend class="fd-fieldset__legend">RTL Support</legend>
     <div class="fd-form-group">
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez611tt">
