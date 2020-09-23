@@ -2,6 +2,7 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-nested-list;
+$button: #{$fd-namespace}-button;
 
 .#{$block} {
   @mixin fd-nested-level-padding($paddingLeft, $paddingRight) {
@@ -152,6 +153,8 @@ $block: #{$fd-namespace}-nested-list;
       }
 
       > .#{$block}__link {
+        @include fd-fiori-focus();
+
         background: transparent;
         border: none;
         height: 100%;
@@ -164,46 +167,19 @@ $block: #{$fd-namespace}-nested-list;
           }
         }
       }
-
-      > .#{$block}__link,
-      > .#{$block}__button {
-        @include fd-fiori-focus();
-      }
     }
   }
 
-  &__button.#{$fd-namespace}-button {
-    @include fd-fiori-focus();
+  &__button.#{$button} {
+    @include set-height(100%);
 
-    text-decoration: none;
-    height: 100%;
-    min-width: 2.5rem;
-    color: var(--sapContent_IconColor);
-    display: flex;
-    justify-content: center;
     border: none;
+    min-width: 2.5rem;
+    text-decoration: none;
+    color: var(--sapContent_IconColor);
 
-    @include fd-icon('navigation-right-arrow', 'after') {
-      @include fd-flex-center();
-
-      height: 100%;
-      min-height: 100%;
+    @include fd-icon-selector() {
       font-size: var(--sapFontLargeSize);
-    }
-
-    @include fd-rtl() {
-      &::after {
-        content: "\e067";
-      }
-    }
-
-    &.is-expanded,
-    &[aria-expanded="true"] {
-      border-bottom: none;
-
-      &::after {
-        content: "\e1e2";
-      }
     }
   }
 
