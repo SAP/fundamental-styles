@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.87](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.86...v0.12.0-rc.87) (2020-09-23)
+
+
+### Bug Fixes
+
+* align the naming of the Rating Indicator modifier classes ([#1701](https://github.com/SAP/fundamental-styles/issues/1701)) ([32751c5](https://github.com/SAP/fundamental-styles/commit/32751c5765760eeae6adb69015ae05daec9e1972))
+
 ## [0.12.0-rc.86](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.85...v0.12.0-rc.86) (2020-09-23)
 
 
