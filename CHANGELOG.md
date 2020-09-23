@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.83](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.82...v0.12.0-rc.83) (2020-09-23)
+
+
+### Bug Fixes
+
+* Input States documentation ([#1699](https://github.com/SAP/fundamental-styles/issues/1699)) ([75d7f2e](https://github.com/SAP/fundamental-styles/commit/75d7f2e1fc3bbd56e99a5cb0456c0e7b4f5f8554))
+
 ## [0.12.0-rc.82](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.81...v0.12.0-rc.82) (2020-09-23)
 
 ## [0.12.0-rc.81](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.80...v0.12.0-rc.81) (2020-09-23)
