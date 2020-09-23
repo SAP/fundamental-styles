@@ -641,16 +641,18 @@ exports[`Storyshots Components/Forms/Input States 1`] = `
         aria-controls="popoverB4"
         aria-expanded="false"
         aria-haspopup="true"
-        aria-label="Image label"
         class="fd-popover__control"
-        fd-input=""
-        id="input-1dd"
-        is-warning"=""
-        onclick="onPopoverClick('popoverB4');>
-            <input class="
-        placeholder="Field placeholder text"
-        type="text"
+        onclick="onPopoverClick('popoverB4');"
       >
+        
+            
+        <input
+          aria-label="Image label"
+          class="fd-input is-warning"
+          id="input-1dd"
+          placeholder="Field placeholder text"
+          type="text"
+        />
         
         
       </div>
@@ -707,17 +709,18 @@ exports[`Storyshots Components/Forms/Input States 1`] = `
         aria-controls="popoverB5"
         aria-expanded="false"
         aria-haspopup="true"
-        aria-label="Image label"
         class="fd-popover__control"
-        fd-input=""
-        fd-input--compact=""
-        id="input-1ee"
-        is-information"=""
-        onclick="onPopoverClick('popoverB5');>
-            <input class="
-        placeholder="Field placeholder text"
-        type="text"
+        onclick="onPopoverClick('popoverB5');"
       >
+        
+            
+        <input
+          aria-label="Image label"
+          class="fd-input fd-input--compact is-information"
+          id="input-1ee"
+          placeholder="Field placeholder text"
+          type="text"
+        />
         
         
       </div>
