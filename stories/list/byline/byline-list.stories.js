@@ -444,8 +444,8 @@ export const rtl = () => `
     <ul class="fd-list fd-list--selection fd-list--byline fd-list--navigation fd-list--navigation-indication" role="listbox" aria-label="Byline list">
       <li role="option" tabindex="0" class="fd-list__item">
         <div class="fd-form-item fd-list__form-item">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez6118N" aria-labelledby="K0921">
-            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6118N"></label>
+            <input type="checkbox" class="fd-checkbox" id="2598496017" aria-labelledby="K0921">
+            <label tabindex="-1" class="fd-checkbox__label" for="2598496017"></label>
         </div>
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
         <div class="fd-list__content">
@@ -455,8 +455,8 @@ export const rtl = () => `
       </li>
       <li role="option" tabindex="-1" class="fd-list__item fd-list__item--link is-selected" aria-selected="true">
         <div class="fd-form-item fd-list__form-item">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez6119N" checked aria-labelledby="K0922">
-            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6119N"></label>
+            <input type="checkbox" class="fd-checkbox" id="0410523630" checked aria-labelledby="K0922">
+            <label tabindex="-1" class="fd-checkbox__label" for="0410523630"></label>
         </div>
         <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
         <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
@@ -472,8 +472,8 @@ export const rtl = () => `
       </li>
       <li role="option" tabindex="-1" class="fd-list__item fd-list__item--link">
         <div class="fd-form-item fd-list__form-item">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez61110N" aria-labelledby="K0923">
-            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez61110N"></label>
+            <input type="checkbox" class="fd-checkbox" id="1900654850" aria-labelledby="K0923">
+            <label tabindex="-1" class="fd-checkbox__label" for="1900654850"></label>
         </div>
         <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
           <div class="fd-list__content">
