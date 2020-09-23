@@ -149,7 +149,7 @@ export const desktop = () => `
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
             </div>
         </div>
-        <div class="fd-bar fd-bar--floating-footer">
+        <div class="fd-bar fd-bar--floating-footer" style="position:relative">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
@@ -291,7 +291,7 @@ export const tablet = () => `
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
             </div>
         </div>
-        <div class="fd-bar fd-bar--floating-footer">
+        <div class="fd-bar fd-bar--floating-footer" style="position:relative">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
@@ -403,7 +403,7 @@ export const mobile = () => `
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
             </div>
         </div>
-        <div class="fd-bar fd-bar--floating-footer">
+        <div class="fd-bar fd-bar--floating-footer" style="position:relative">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
@@ -493,7 +493,7 @@ export const mobile = () => `
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
             </div>
         </div>
-        <div class="fd-bar fd-bar--floating-footer">
+        <div class="fd-bar fd-bar--floating-footer" style="position:relative">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
@@ -592,7 +592,7 @@ export const mobile = () => `
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
             </div>
         </div>
-        <div class="fd-bar fd-bar--floating-footer">
+        <div class="fd-bar fd-bar--floating-footer" style="position:relative">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
@@ -925,7 +925,7 @@ export const rtl = () => `
                     in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
                 </div>
             </div>
-            <div class="fd-bar fd-bar--floating-footer">
+            <div class="fd-bar fd-bar--floating-footer" style="position:relative">
                 <div class="fd-bar__right">
                     <div class="fd-bar__element">
                         <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>

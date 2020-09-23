@@ -28,11 +28,11 @@ $block: #{$fd-namespace}-dynamic-page;
 
   @mixin custom-button() {
     @include fd-flex-vertical-center() {
-      justify-content: space-evenly;
+      justify-content: center;
     }
 
     margin: $fd-dynamic-page-button-padding;
-    padding: $fd-dynamic-page-button-padding; // for IE
+    padding: 0;
     width: $fd-dynamic-page-button-width;
     height: 2rem;
     min-width: $fd-dynamic-page-button-width;
@@ -125,6 +125,7 @@ $block: #{$fd-namespace}-dynamic-page;
     color: var(--sapGroup_TitleTextColor);
     font-size: var(--sapFontHeader3Size);
     padding: 0.3125rem 0 0 0;
+    flex: 1 0;
 
     &--collapsed {
       @include fd-ellipsis();
@@ -155,6 +156,7 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-reset();
 
     padding: 0 0 0 1rem;
+    flex: 1 0;
 
     @include fd-rtl() {
       padding: 0 1rem 0 0;
