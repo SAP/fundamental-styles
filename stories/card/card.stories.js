@@ -672,9 +672,9 @@ export const objectCard = () => `
                             <h3 style="margin: 0;">Group Title 1</h3>
                         </div>
                         <div class="fd-card__content-group">
-                            <span 
-                                class="fd-avatar fd-avatar--xs fd-avatar--circle sap-icon--person-placeholder" 
-                                role="presentation"></span>
+                            <span class="fd-avatar fd-avatar--xs fd-avatar--circle" aria-label="Avatar">
+                                <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation"></i>
+                            </span>
                             <div class="fd-card__content-group-text">
                                 <span style="color: green;">Label</span>
                                 <a href="#" class="fd-link" tabindex="0">Link Text</a>
@@ -698,9 +698,9 @@ export const objectCard = () => `
                             <h3 style="margin: 0;">Group Title 2</h3>
                         </div>
                         <div class="fd-card__content-group">
-                            <span 
-                                class="fd-avatar fd-avatar--xs fd-avatar--circle sap-icon--person-placeholder" 
-                                role="presentation"></span>
+                            <span class="fd-avatar fd-avatar--xs fd-avatar--circle" aria-label="Avatar">
+                                <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation"></i>
+                            </span>
                             <div class="fd-card__content-group-text">
                                 <span style="color: blue">Label</span>
                             </div>
