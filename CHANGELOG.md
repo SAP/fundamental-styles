@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.86](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.85...v0.12.0-rc.86) (2020-09-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* update Object Card markup to reflect the Avatar's changes
+
+### Bug Fixes
+
+* card avatar layout ([#1697](https://github.com/SAP/fundamental-styles/issues/1697)) ([08b46c8](https://github.com/SAP/fundamental-styles/commit/08b46c84d5165edb720ecdfad035643d1b9c3b2c))
+
 ## [0.12.0-rc.85](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.84...v0.12.0-rc.85) (2020-09-23)
 
 
