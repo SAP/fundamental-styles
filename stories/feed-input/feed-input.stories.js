@@ -30,7 +30,7 @@ export const standard = () => `
                 aria-disabled="true" 
                 disabled
                 title="Send">
-            <i class="sap-icon--feeder-arrow"></i>
+            <i  role="presentation" class="sap-icon--feeder-arrow"></i>
         </button>
     </div>
 `;
@@ -62,7 +62,7 @@ export const notEmpty = () => `
                 aria-label="Send"
                 aria-disabled="false" 
                 title="Send">
-            <i class="sap-icon--feeder-arrow"></i>
+            <i  role="presentation" class="sap-icon--feeder-arrow"></i>
         </button>
     </div>
 `;
@@ -96,7 +96,7 @@ export const disabled = () => `
                 aria-disabled="true" 
                 disabled
                 title="Send">
-            <i class="sap-icon--feeder-arrow"></i>
+            <i  role="presentation" class="sap-icon--feeder-arrow"></i>
         </button>
     </div>
 `;
@@ -121,7 +121,7 @@ export const withoutUserImage = () => `
         <button class="fd-button fd-feed-input__submit-button" 
                 aria-label="Send"  
                 title="Send">
-            <i class="sap-icon--feeder-arrow"></i>
+            <i  role="presentation" class="sap-icon--feeder-arrow"></i>
         </button>
     </div>
 `;
@@ -150,7 +150,7 @@ export const placeholderImage = () => `
         <button class="fd-button fd-feed-input__submit-button" 
                 aria-label="Send"  
                 title="Send">
-            <i class="sap-icon--feeder-arrow"></i>
+            <i  role="presentation" class="sap-icon--feeder-arrow"></i>
         </button>
     </div>
 `;
@@ -177,11 +177,11 @@ export const inputGrowth = () => `
                   aria-label="Feed" 
                   aria-required 
                   rows="4">With every line\n"textarea" grows upward\nuntil it reaches\nthe max height</textarea>
-        <button class="fd-button sap-icon--feeder-arrow fd-feed-input__submit-button" 
+        <button class="fd-button fd-feed-input__submit-button" 
                 aria-label="Send"  
                 aria-disabled="false"
                 title="Send">
-            <i class="sap-icon--feeder-arrow"></i>
+            <i  role="presentation" class="sap-icon--feeder-arrow"></i>
         </button>
     </div>
 `;
@@ -212,7 +212,7 @@ export const overMaxHeight = () => `
                 aria-label="Send" 
                 aria-disabled="false" 
                 title="Send">
-            <i class="sap-icon--feeder-arrow"></i>
+            <i  role="presentation" class="sap-icon--feeder-arrow"></i>
         </button>
     </div>
 `;
@@ -244,7 +244,7 @@ export const rtl = () => `
                     aria-label="Send" 
                     aria-disabled="false" 
                     title="Send">
-                <i class="sap-icon--feeder-arrow"></i>
+                <i  role="presentation" class="sap-icon--feeder-arrow"></i>
             </button>
         </div>
     </div>
