@@ -50,8 +50,8 @@ These modifier classes will add horizontal paddings to the content and can be ap
 
 |  **rem** |  <div style="margin-left: 2rem;"> **Min-width** </div> |  <div style="margin-left: 2rem;">**Max-width** </div> |  <div style="margin-left: 2rem;"> **Modifier class** </div> |
 | :---- | :---------- | :---------- | :---------------------------------- |
-| 1rem | <span style="margin-left: 2rem;">_n/a_</span> | <span style="margin-left: 2rem;">599px</span> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_progress-bar--s</code> / <code class="docs-code">fd-wizard\\_\\_content--s</code> |
-| 2rem | <span style="margin-left: 2rem;">600px</span> | <span style="margin-left: 2rem;">1023px</span> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_progress-bar--m</code> / <code class="docs-code">fd-wizard\\_\\_content--m</code> |
+| 1rem | <span style="margin-left: 2rem;">_n/a_</span> | <span style="margin-left: 2rem;">599px</span> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_progress-bar--sm</code> / <code class="docs-code">fd-wizard\\_\\_content--sm</code> |
+| 2rem | <span style="margin-left: 2rem;">600px</span> | <span style="margin-left: 2rem;">1023px</span> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_progress-bar--md</code> / <code class="docs-code">fd-wizard\\_\\_content--md</code> |
 | 2rem | <span style="margin-left: 2rem;">1024px</span> | <span style="margin-left: 2rem;">1439px</span> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_progress-bar--lg</code> / <code class="docs-code">fd-wizard\\_\\_content--lg</code> |
 | 3rem | <span style="margin-left: 2rem;">1440px</span> | <span style="margin-left: 2rem;">_n/a_</span> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_progress-bar--xl</code> / <code class="docs-code">fd-wizard\\_\\_content--xl</code> |
 
@@ -89,7 +89,7 @@ There are multiple connector types that can be displayed depending on the steps 
 
 | **Type** | <span style="margin-left: 2rem;">**Modifier class**</span> |
 | :---- | :-------------- |
-| Solid |  <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_content--solid</code> |
+| Solid |  <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_content--smolid</code> |
 | List | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_content--list</code> |
 | Transparent | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_content--transparent</code> |
 
@@ -185,7 +185,7 @@ defaultExample.parameters = {
 export const customized = () => `
 <section class="fd-wizard">
     <nav class="fd-wizard__navigation" aria-label="Wizard Navigation 2">
-        <ul class="fd-wizard__progress-bar fd-wizard__progress-bar--m">
+        <ul class="fd-wizard__progress-bar fd-wizard__progress-bar--md">
             <li class="fd-wizard__step fd-wizard__step--completed">
                 <div class="fd-wizard__step-wrapper">
                     <a class="fd-wizard__step-container" tabindex="0" aria-label="Step 1: One line">
@@ -225,7 +225,7 @@ export const customized = () => `
             </li>
         </ul>
     </nav>
-    <section class="fd-wizard__content fd-wizard__content--list fd-wizard__content--m" id="wizard-section-2" style="min-height: 300px;">
+    <section class="fd-wizard__content fd-wizard__content--list fd-wizard__content--md" id="wizard-section-2" style="min-height: 300px;">
         <div>
             Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
         </div>
@@ -252,8 +252,8 @@ customized.parameters = {
 
 | **Element** | <div style="margin-left: 2rem;"> **Modifier class** </div> | <div style="margin-left: 2rem;"> **Modification** </div> |
 | :---- | :---- | :-------------- |
-| <code class="docs-code">fd-wizard\\_\\_progress-bar</code> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_progress-bar--m</code> | <span style="margin-left: 2rem;"> Added responsive padding </span> |
-| <code class="docs-code">fd-wizard\\_\\_content</code> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_content--m</code> | <span style="margin-left: 2rem;"> Added responsive padding </span> |
+| <code class="docs-code">fd-wizard\\_\\_progress-bar</code> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_progress-bar--md</code> | <span style="margin-left: 2rem;"> Added responsive padding </span> |
+| <code class="docs-code">fd-wizard\\_\\_content</code> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_content--md</code> | <span style="margin-left: 2rem;"> Added responsive padding </span> |
 | <code class="docs-code">fd-bar--page</code> | <code class="docs-code" style="margin-left: 2rem;">fd-bar--page-m_l</code> | <span style="margin-left: 2rem;"> Added responsive padding </span> |
 | <code class="docs-code">fd-wizard\\_\\_content</code> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_content--list</code> | <span style="margin-left: 2rem;"> The background of the wizard content is set to list </span> |
 | <code class="docs-code">fd-wizard\\_\\_connector</code> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_connector--branching</code> | <span style="margin-left: 2rem;"> Adds a branching step connector </span> |
@@ -641,7 +641,7 @@ export const mobile = () => `
         <h4>Next Step button after content</h4>
         <section class="fd-wizard" style="max-width: 300px;">
             <nav class="fd-wizard__navigation" aria-label="Wizard Navigation 6">
-                <ul class="fd-wizard__progress-bar fd-wizard__progress-bar--s">
+                <ul class="fd-wizard__progress-bar fd-wizard__progress-bar--sm">
                     <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--stacked">
                         <div class="fd-wizard__step-wrapper">
                             <a class="fd-wizard__step-container" tabindex="0" aria-label="Customer">
@@ -773,7 +773,7 @@ export const mobile = () => `
                     </li>
                 </ul>
             </nav>
-            <section class="fd-wizard__content fd-wizard__content--s" id="wizard-section-6" style="min-height: 500px;">
+            <section class="fd-wizard__content fd-wizard__content--sm" id="wizard-section-6" style="min-height: 500px;">
                 <div>
                     Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
                 </div>
@@ -797,7 +797,7 @@ export const mobile = () => `
         <h4>Next Step button above the floating footer</h4>
         <section class="fd-wizard" style="max-width: 300px;">
             <nav class="fd-wizard__navigation" aria-label="Wizard Navigation 7">
-                <ul class="fd-wizard__progress-bar fd-wizard__progress-bar--s">
+                <ul class="fd-wizard__progress-bar fd-wizard__progress-bar--sm">
                     <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--stacked">
                         <div class="fd-wizard__step-wrapper">
                             <a class="fd-wizard__step-container" tabindex="0" aria-label="Customer">
@@ -929,7 +929,7 @@ export const mobile = () => `
                     </li>
                 </ul>
             </nav>
-            <section class="fd-wizard__content fd-wizard__content--s" id="wizard-section-7" style="min-height: 300px;">
+            <section class="fd-wizard__content fd-wizard__content--sm" id="wizard-section-7" style="min-height: 300px;">
                 <img class="" src='http://lorempixel.com/220/220/nature/4/' role="presentation" aria-label="John Doe" />
                 <div class="fd-wizard__next-step fd-wizard__next-step--floating">
                     <button class="fd-button fd-button--emphasized">Next Step</button>
