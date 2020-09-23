@@ -3357,14 +3357,23 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             aria-label="indicator button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
             tabindex="-1"
-          />
+          >
+            <i
+              class="sap-icon--overflow"
+            />
+          </button>
           
                 
           <button
             aria-label="close button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-          />
+          >
+            <i
+              class="sap-icon--decline"
+            />
+          </button>
           
+ 
             
         </div>
         
@@ -3410,13 +3419,21 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             aria-label="indicator button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
             tabindex="-1"
-          />
+          >
+            <i
+              class="sap-icon--overflow"
+            />
+          </button>
           
                 
           <button
             aria-label="close button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-          />
+          >
+            <i
+              class="sap-icon--decline"
+            />
+          </button>
           
             
         </div>
@@ -3463,14 +3480,23 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             aria-label="indicator button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
             tabindex="-1"
-          />
+          >
+            <i
+              class="sap-icon--overflow"
+            />
+          </button>
           
                 
           <button
             aria-label="close button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-          />
+          >
+            <i
+              class="sap-icon--decline"
+            />
+          </button>
           
+ 
             
         </div>
         
@@ -3516,14 +3542,23 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             aria-label="indicator button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
             tabindex="-1"
-          />
+          >
+            <i
+              class="sap-icon--overflow"
+            />
+          </button>
           
                 
           <button
             aria-label="close button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-          />
+          >
+            <i
+              class="sap-icon--decline"
+            />
+          </button>
           
+ 
             
         </div>
         
@@ -3569,14 +3604,23 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             aria-label="indicator button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
             tabindex="-1"
-          />
+          >
+            <i
+              class="sap-icon--overflow"
+            />
+          </button>
           
                 
           <button
             aria-label="close button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-          />
+          >
+            <i
+              class="sap-icon--decline"
+            />
+          </button>
           
+ 
             
         </div>
         
@@ -3622,14 +3666,23 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             aria-label="indicator button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
             tabindex="-1"
-          />
+          >
+            <i
+              class="sap-icon--overflow"
+            />
+          </button>
           
                 
           <button
             aria-label="close button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-          />
+          >
+            <i
+              class="sap-icon--decline"
+            />
+          </button>
           
+ 
             
         </div>
         
@@ -3701,14 +3754,23 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             aria-label="indicator button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
             tabindex="-1"
-          />
+          >
+            <i
+              class="sap-icon--overflow"
+            />
+          </button>
           
                 
           <button
             aria-label="close button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-          />
+          >
+            <i
+              class="sap-icon--decline"
+            />
+          </button>
           
+ 
             
         </div>
         
@@ -3754,14 +3816,23 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             aria-label="indicator button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
             tabindex="-1"
-          />
+          >
+            <i
+              class="sap-icon--overflow"
+            />
+          </button>
           
                 
           <button
             aria-label="close button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-          />
+          >
+            <i
+              class="sap-icon--decline"
+            />
+          </button>
           
+ 
             
         </div>
         
@@ -3807,14 +3878,23 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             aria-label="indicator button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
             tabindex="-1"
-          />
+          >
+            <i
+              class="sap-icon--overflow"
+            />
+          </button>
           
                 
           <button
             aria-label="close button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-          />
+          >
+            <i
+              class="sap-icon--decline"
+            />
+          </button>
           
+ 
             
         </div>
         
@@ -3860,14 +3940,23 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             aria-label="indicator button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
             tabindex="-1"
-          />
+          >
+            <i
+              class="sap-icon--overflow"
+            />
+          </button>
           
                 
           <button
             aria-label="close button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-          />
+          >
+            <i
+              class="sap-icon--decline"
+            />
+          </button>
           
+ 
             
         </div>
         
@@ -3913,14 +4002,23 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             aria-label="indicator button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
             tabindex="-1"
-          />
+          >
+            <i
+              class="sap-icon--overflow"
+            />
+          </button>
           
                 
           <button
             aria-label="close button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-          />
+          >
+            <i
+              class="sap-icon--decline"
+            />
+          </button>
           
+ 
             
         </div>
         
@@ -3966,14 +4064,23 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             aria-label="indicator button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
             tabindex="-1"
-          />
+          >
+            <i
+              class="sap-icon--overflow"
+            />
+          </button>
           
                 
           <button
             aria-label="close button"
             class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-          />
+          >
+            <i
+              class="sap-icon--decline"
+            />
+          </button>
           
+ 
             
         </div>
         
@@ -4457,14 +4564,23 @@ exports[`Storyshots Components/Generic Tile Tile In Action Mode 1`] = `
       <button
         aria-label="close button"
         class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-      />
+      >
+        <i
+          class="sap-icon--decline"
+        />
+      </button>
       
+ 
         
       <button
         aria-label="indicator button"
         class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
         tabindex="-1"
-      />
+      >
+        <i
+          class="sap-icon--overflow"
+        />
+      </button>
       
         
       <div
@@ -4538,14 +4654,23 @@ exports[`Storyshots Components/Generic Tile Tile In Action Mode 1`] = `
       <button
         aria-label="close button"
         class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-      />
+      >
+        <i
+          class="sap-icon--decline"
+        />
+      </button>
       
+ 
         
       <button
         aria-label="indicator button"
         class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
         tabindex="-1"
-      />
+      >
+        <i
+          class="sap-icon--overflow"
+        />
+      </button>
       
         
       <div
@@ -4639,14 +4764,23 @@ exports[`Storyshots Components/Generic Tile Tile In Action Mode 1`] = `
       <button
         aria-label="close button"
         class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-      />
+      >
+        <i
+          class="sap-icon--decline"
+        />
+      </button>
       
+ 
         
       <button
         aria-label="indicator button"
         class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
         tabindex="-1"
-      />
+      >
+        <i
+          class="sap-icon--overflow"
+        />
+      </button>
       
         
       <div
@@ -4767,14 +4901,23 @@ exports[`Storyshots Components/Generic Tile Tile In Action Mode 1`] = `
       <button
         aria-label="close button"
         class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-      />
+      >
+        <i
+          class="sap-icon--decline"
+        />
+      </button>
       
+ 
         
       <button
         aria-label="indicator button"
         class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
         tabindex="-1"
-      />
+      >
+        <i
+          class="sap-icon--overflow"
+        />
+      </button>
       
         
       <div
