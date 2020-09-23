@@ -973,7 +973,7 @@ exports[`Storyshots Components/Action Bar Action bar with back button, descripti
           
                 
           <i
-            class="sap-icon--navigation-left-arrow"
+            class="sap-icon--navigation-right-arrow"
           />
           
             
