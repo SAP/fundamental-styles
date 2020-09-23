@@ -143,7 +143,9 @@ export const cozyMultiple = () => `
                         aria-controls="EX100L2" 
                         aria-haspopup="true" 
                         aria-expanded="false" 
-                        aria-label="Expand submenu"></button>
+                        aria-label="Expand submenu">
+                        <i class="sap-icon--navigation-right-arrow" role="presentation"></i>    
+                    </button>
                 </div>
                 <ul class="fd-nested-list level-2" id="EX100L2" aria-hidden="true">
                     <li class="fd-nested-list__item">
@@ -236,7 +238,9 @@ export const complexCozySideNav = () => `
                         aria-controls="EX400L2" 
                         aria-haspopup="true" 
                         aria-expanded="false" 
-                        aria-label="Expand submenu"></button>
+                        aria-label="Expand submenu">
+                        <i class="sap-icon--navigation-right-arrow" role="presentation"></i>    
+                    </button>
                 </div>
                 <ul class="fd-nested-list fd-nested-list--text-only level-2" id="EX400L2" aria-hidden="true">
                     <li class="fd-nested-list__item">
@@ -336,7 +340,9 @@ export const complexCompactSideNav = () => `
                         aria-controls="EX500L2" 
                         aria-haspopup="true" 
                         aria-expanded="false" 
-                        aria-label="Expand submenu"></button>
+                        aria-label="Expand submenu">
+                        <i class="sap-icon--navigation-right-arrow" role="presentation"></i>    
+                    </button>
                 </div>
                 <ul class="fd-nested-list fd-nested-list--text-only level-2" id="EX500L2" aria-hidden="true">
                     <li class="fd-nested-list__item">
@@ -560,7 +566,9 @@ export const nestedListWithoutIcons = () => `
                     aria-controls="EX100L25"
                     aria-haspopup="true" 
                     aria-expanded="true" 
-                    aria-label="Expand submenu"></button>
+                    aria-label="Expand submenu">
+                    <i class="sap-icon--navigation-right-arrow" role="presentation"></i>    
+            </button>
 		</div>
         <ul class="fd-nested-list level-2" id="EX100L25" aria-hidden="false">
             <li class="fd-nested-list__item">
@@ -577,7 +585,9 @@ export const nestedListWithoutIcons = () => `
                         aria-controls="EX100L35"
                         aria-haspopup="true" 
                         aria-expanded="true" 
-                        aria-label="Expand submenu"></button>
+                        aria-label="Expand submenu">
+                        <i class="sap-icon--navigation-right-arrow" role="presentation"></i>    
+                    </button>
 				</div>
                 <ul class="fd-nested-list level-3" id="EX100L35" aria-hidden="false">
                     <li class="fd-nested-list__item">
@@ -594,7 +604,9 @@ export const nestedListWithoutIcons = () => `
                                 aria-controls="EX100L45"
                                 aria-haspopup="true" 
                                 aria-expanded="true" 
-                                aria-label="Expand submenu"></button>
+                                aria-label="Expand submenu">
+                                <i class="sap-icon--navigation-right-arrow" role="presentation"></i>    
+                            </button>
 						</div>
                         <ul class="fd-nested-list level-4" id="EX100L45" aria-hidden="false">
                             <li class="fd-nested-list__item">
@@ -611,7 +623,9 @@ export const nestedListWithoutIcons = () => `
                                         aria-controls="EX100L55"
                                         aria-haspopup="true" 
                                         aria-expanded="true" 
-                                        aria-label="Expand submenu"></button>
+                                        aria-label="Expand submenu">
+                                        <i class="sap-icon--navigation-right-arrow" role="presentation"></i>    
+                                    </button>
 								</div>
                                 <ul class="fd-nested-list level-5" id="EX100L55" aria-hidden="false">
                                     <li class="fd-nested-list__item">
@@ -625,10 +639,12 @@ export const nestedListWithoutIcons = () => `
 												<span class="fd-nested-list__title">Level 5 Item</span>
 											</a>
                                             <button class="fd-button fd-nested-list__button"
-                                            aria-controls="EX100L65"
-                                            aria-haspopup="true" 
-                                            aria-expanded="true" 
-                                            aria-label="Expand submenu"></button>
+                                                aria-controls="EX100L65"
+                                                aria-haspopup="true" 
+                                                aria-expanded="true" 
+                                                aria-label="Expand submenu">
+                                                <i class="sap-icon--navigation-right-arrow" role="presentation"></i>
+                                            </button>
 										</div>
                                         <ul class="fd-nested-list level-6" id="EX100L65" aria-hidden="false">
                                             <li class="fd-nested-list__item">
@@ -719,7 +735,9 @@ export const nestedListWithIconsOnlyInFirstLevel = () => `
                 aria-controls="EX300L2"
                 aria-haspopup="true" 
                 aria-expanded="true" 
-                aria-label="Expand submenu"></button>
+                aria-label="Expand submenu">
+                <i class="sap-icon--navigation-right-arrow" role="presentation"></i>    
+            </button>
 		</div>
         <ul class="fd-nested-list fd-nested-list--text-only level-2" id="EX300L2" aria-hidden="false">
             <li class="fd-nested-list__item">
@@ -736,7 +754,9 @@ export const nestedListWithIconsOnlyInFirstLevel = () => `
                         aria-controls="EX300L3"
                         aria-haspopup="true" 
                         aria-expanded="true" 
-                        aria-label="Expand submenu"></button>
+                        aria-label="Expand submenu">
+                        <i class="sap-icon--navigation-right-arrow" role="presentation"></i>    
+                    </button>
 				</div>
                 <ul class="fd-nested-list fd-nested-list--text-only level-3" id="EX300L3" aria-hidden="false">
                     <li class="fd-nested-list__item">
@@ -753,7 +773,9 @@ export const nestedListWithIconsOnlyInFirstLevel = () => `
                                 aria-controls="EX300L4"
                                 aria-haspopup="true" 
                                 aria-expanded="true" 
-                                aria-label="Expand submenu"></button>
+                                aria-label="Expand submenu">
+                                <i class="sap-icon--navigation-right-arrow" role="presentation"></i>    
+                            </button>
 						</div>
                         <ul class="fd-nested-list fd-nested-list--text-only level-4" id="EX300L4" aria-hidden="false">
                             <li class="fd-nested-list__item">
@@ -840,7 +862,9 @@ export const nestedListWithGroupHeaders = () => `
                 aria-controls="EX400L222"
                 aria-haspopup="true" 
                 aria-expanded="true" 
-                aria-label="Expand submenu"></button>
+                aria-label="Expand submenu">
+                <i class="sap-icon--navigation-right-arrow" role="presentation"></i>    
+            </button>
 		</div>
         <ul class="fd-nested-list fd-nested-list--text-only level-2" id="EX400L222" aria-hidden="false">
             <li class="fd-nested-list__item">
@@ -857,7 +881,9 @@ export const nestedListWithGroupHeaders = () => `
                         aria-controls="EX400L3"
                         aria-haspopup="true" 
                         aria-expanded="true" 
-                        aria-label="Expand submenu"></button>
+                        aria-label="Expand submenu">
+                        <i class="sap-icon--navigation-right-arrow" role="presentation"></i>    
+                    </button>
 				</div>
                 <ul class="fd-nested-list fd-nested-list--text-only level-3" id="EX400L3" aria-hidden="false">
                     <li class="fd-nested-list__item">
@@ -874,7 +900,9 @@ export const nestedListWithGroupHeaders = () => `
                                 aria-controls="EX400L4"
                                 aria-haspopup="true" 
                                 aria-expanded="true" 
-                                aria-label="Expand submenu"></button>
+                                aria-label="Expand submenu">
+                                <i class="sap-icon--navigation-right-arrow" role="presentation"></i>    
+                            </button>
 						</div>
                         <ul class="fd-nested-list fd-nested-list--text-only level-4" id="EX400L4" aria-hidden="false">
                             <li class="fd-nested-list__item">
@@ -964,7 +992,9 @@ export const nestedListWithGroupHeadersCompactMode = () => `
                 aria-controls="EX500L2"
                 aria-haspopup="true" 
                 aria-expanded="true" 
-                aria-label="Expand submenu"></button>
+                aria-label="Expand submenu">
+                <i class="sap-icon--navigation-right-arrow" role="presentation"></i>    
+            </button>
 		</div>
         <ul class="fd-nested-list fd-nested-list--text-only level-2" id="EX500L2" aria-hidden="false">
             <li class="fd-nested-list__item">
@@ -981,7 +1011,9 @@ export const nestedListWithGroupHeadersCompactMode = () => `
                         aria-controls="EX500L3"
                         aria-haspopup="true" 
                         aria-expanded="true" 
-                        aria-label="Expand submenu"></button>
+                        aria-label="Expand submenu">
+                        <i class="sap-icon--navigation-right-arrow" role="presentation"></i>    
+                    </button>
 				</div>
                 <ul class="fd-nested-list fd-nested-list--text-only level-3" id="EX500L3" aria-hidden="false">
                     <li class="fd-nested-list__item">
@@ -998,7 +1030,9 @@ export const nestedListWithGroupHeadersCompactMode = () => `
                                 aria-controls="EX500L4"
                                 aria-haspopup="true" 
                                 aria-expanded="true" 
-                                aria-label="Expand submenu"></button>
+                                aria-label="Expand submenu">
+                                <i class="sap-icon--navigation-right-arrow" role="presentation"></i>    
+                            </button>
 						</div>
                         <ul class="fd-nested-list fd-nested-list--text-only level-4" id="EX500L4" aria-hidden="false">
                             <li class="fd-nested-list__item">
@@ -1086,7 +1120,9 @@ export const nestedListWithoutLinks = () => `
                 aria-controls="EX600L2"
                 aria-haspopup="true" 
                 aria-expanded="true" 
-                aria-label="Expand submenu"></button>
+                aria-label="Expand submenu">
+                <i class="sap-icon--navigation-right-arrow" role="presentation"></i>    
+            </button>
 		</div>
         <ul class="fd-nested-list fd-nested-list--text-only level-2" id="EX600L2" aria-hidden="false">
             <li class="fd-nested-list__item">
@@ -1101,7 +1137,9 @@ export const nestedListWithoutLinks = () => `
                         aria-controls="EX600L3"
                         aria-haspopup="true" 
                         aria-expanded="true" 
-                        aria-label="Expand submenu"></button>
+                        aria-label="Expand submenu">
+                        <i class="sap-icon--navigation-right-arrow" role="presentation"></i>    
+                    </button>
 				</div>
                 <ul class="fd-nested-list fd-nested-list--text-only level-3" id="EX600L3" aria-hidden="false">
                     <li class="fd-nested-list__item">
@@ -1116,7 +1154,9 @@ export const nestedListWithoutLinks = () => `
                                 aria-controls="EX600L4"
                                 aria-haspopup="true" 
                                 aria-expanded="true" 
-                                aria-label="Expand submenu"></button>
+                                aria-label="Expand submenu">
+                                <i class="sap-icon--navigation-right-arrow" role="presentation"></i>    
+                            </button>
 						</div>
                         <ul class="fd-nested-list fd-nested-list--text-only level-4" id="EX600L4" aria-hidden="false">
                             <li class="fd-nested-list__item">
@@ -1207,7 +1247,9 @@ export const rtlExample = () => `
                 aria-controls="EX400L2122" 
                 aria-haspopup="true" 
                 aria-expanded="true" 
-                aria-label="Expand submenu"></button>
+                aria-label="Expand submenu">
+                <i class="sap-icon--navigation-left-arrow" role="presentation"></i>    
+            </button>
 		</div>
         <ul class="fd-nested-list fd-nested-list--text-only level-2" id="EX400L2122" aria-hidden="false">
             <li class="fd-nested-list__item">
@@ -1224,7 +1266,9 @@ export const rtlExample = () => `
                         aria-controls="EX400L3"
                         aria-haspopup="true" 
                         aria-expanded="true" 
-                        aria-label="Expand submenu"></button>
+                        aria-label="Expand submenu">
+                        <i class="sap-icon--navigation-left-arrow" role="presentation"></i>    
+                    </button>
 				</div>
                 <ul class="fd-nested-list fd-nested-list--text-only level-3" id="EX400L3" aria-hidden="false">
                     <li class="fd-nested-list__item">
@@ -1241,7 +1285,9 @@ export const rtlExample = () => `
                                 aria-controls="EX400L4"
                                 aria-haspopup="true" 
                                 aria-expanded="true" 
-                                aria-label="Expand submenu"></button>
+                                aria-label="Expand submenu">
+                                <i class="sap-icon--navigation-left-arrow" role="presentation"></i>    
+                            </button>
 						</div>
                         <ul class="fd-nested-list fd-nested-list--text-only level-4" id="EX400L4" aria-hidden="false">
                             <li class="fd-nested-list__item">
@@ -1329,7 +1375,9 @@ export const rtlCozyMultiple = () => `
                         aria-controls="EX100L233" 
                         aria-haspopup="true" 
                         aria-expanded="false" 
-                        aria-label="Expand submenu"></button>
+                        aria-label="Expand submenu">
+                        <i class="sap-icon--navigation-left-arrow" role="presentation"></i>    
+                    </button>
                 </div>
                 <ul class="fd-nested-list level-2" id="EX100L233" aria-hidden="true">
                     <li class="fd-nested-list__item">
