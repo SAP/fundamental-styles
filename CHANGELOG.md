@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.89](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.88...v0.12.0-rc.89) (2020-09-23)
+
+
+### Bug Fixes
+
+* align the naming of the Wizard modifier classes ([#1702](https://github.com/SAP/fundamental-styles/issues/1702)) ([200a00d](https://github.com/SAP/fundamental-styles/commit/200a00d971d1002ad87890a38f0ea92c8563899e))
+
 ## [0.12.0-rc.88](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.87...v0.12.0-rc.88) (2020-09-23)
 
 ## [0.12.0-rc.87](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.86...v0.12.0-rc.87) (2020-09-23)
