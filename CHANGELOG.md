@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.80](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.79...v0.12.0-rc.80) (2020-09-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* (Tile) - Icons inside fd-tile__action-close and fd-tile__action-indicator are moved to separated <i>
+
+### Bug Fixes
+
+* update icons in tile actions ([#1698](https://github.com/SAP/fundamental-styles/issues/1698)) ([e8ef9ad](https://github.com/SAP/fundamental-styles/commit/e8ef9ad1edcbe96543c63165ebad6f002960dc6d))
+
 ## [0.12.0-rc.79](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.78...v0.12.0-rc.79) (2020-09-22)
 
 
