@@ -36,7 +36,7 @@ $block: #{$fd-namespace}-rating-indicator;
 
       &:nth-child(4n+4) {
         margin-right: $spacingBetweenIcons;
-        justify-content: flex-end;
+        flex-direction: row-reverse;
 
         @include fd-rtl() {
           margin-right: 0;
