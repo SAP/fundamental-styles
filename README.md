@@ -62,8 +62,8 @@ Our Service Level Agreement. Fundamental Library Styles is aiming to deliver:
 * Reference HTML specification that consuming libraries **MUST** adhere to.
 
 ### SLA - How
-* Themable components built on top of [SAP Theming Base Content](https://github.com/SAP/theming-base-content) by consuming the CSS Custom Properties delivered by the theming library
-* Self-contained styles. That is, each component's style file contains all the styling needed to be rendered properly. External styling won't bleed-in internal styling won't blead-out. `Bleading in` means that CSS global reset won't affect the component and `bleading out` means that the component styling should not affect other HTML elements) 
+* Theme-able components built on top of [SAP Theming Base Content](https://github.com/SAP/theming-base-content) by consuming the CSS Custom Properties delivered by the theming library
+* Self-contained styles. That is, each component's style file contains all the styling needed to be rendered properly. External styling won't bleed-in internal styling won't bleed-out. `Bleeding in` means that CSS global reset won't affect the component and `bleeding out` means that the component styling should not affect other HTML elements) 
 * Accessibility support
   * Accessibility - Color contrast support for WCAG 2.0 level AA (4.5:1 for typical text)
   * Accessibility - Semantic HTML reference
@@ -87,10 +87,10 @@ If you want to contribute, please check the [Contribution Guidelines](https://gi
 
 The `fundamental-styles` library follows [Semantic Versioning](https://semver.org/). These components strictly adhere to the `[MAJOR].[MINOR].[PATCH]` numbering system (also known as `[BREAKING].[FEATURE].[FIX]`).
 
-Merges to the `master` branch will be published as a prerelease. Prereleases will include an **rc** version (_e.g._ `[MAJOR].[MINOR].[PATCH]-rc.[RC]`).
+Merges to the `master` branch will be published as a prerelease. Pre-releases will include an **rc** version (_e.g._ `[MAJOR].[MINOR].[PATCH]-rc.[RC]`).
 
 The following circumstances will be considered a MAJOR or BREAKING change:
-* Droppping existing classnames, css variables, color names, color groups, spacing parameters
+* Dropping existing classnames, css variables, color names, color groups, spacing parameters
 * The existing underlying HTML markup of a component is altered
 * Non-visual HTML attribute changes/additions (such as `role`, `aria-*`, `data-*`)
   > Note: Fundamental Styles provides CSS directly, and HTML as reference to consumers. Because of the reference relationship of the HTML seen in Fundamental Styles, we want to be very clear when we alter that reference so that it is properly reflected in JS implementation libraries. Because of this, even non-visual changes will be treated as breaking.
