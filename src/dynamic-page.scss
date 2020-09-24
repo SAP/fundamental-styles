@@ -49,6 +49,11 @@ $block: #{$fd-namespace}-dynamic-page;
 
   @include fd-flex(column);
 
+  &__header-fixed {
+    position: sticky; // no support in IE
+    top: 0;
+  }
+
   &__title-area {
     @include fd-reset();
 
@@ -69,12 +74,12 @@ $block: #{$fd-namespace}-dynamic-page;
       cursor: pointer;
     }
 
-    &--s {
+    &--sm {
       @include responsive-page($fd-dynamic-page-padding-top-bottom, 0.5rem);
     }
 
-    &--m,
-    &--l {
+    &--md,
+    &--lg {
       @include responsive-page($fd-dynamic-page-padding-top-bottom, 2rem);
     }
 
@@ -106,7 +111,7 @@ $block: #{$fd-namespace}-dynamic-page;
   .#{$fd-namespace}-breadcrumb.#{$block}__breadcrumb {
     padding: 0.5rem 0 0.25rem 0;
 
-    &--s {
+    &--sm {
       padding: 0;
     }
   }
@@ -139,7 +144,7 @@ $block: #{$fd-namespace}-dynamic-page;
       @include fd-ellipsis();
     }
     // tablet spec
-    &--m {
+    &--md {
       padding: 0.6875rem 0 0 0;
     }
   }
@@ -192,12 +197,12 @@ $block: #{$fd-namespace}-dynamic-page;
     height: 2rem;
     z-index: 1;
 
-    &--s {
+    &--sm {
       @include responsive-page(0.5rem);
     }
 
-    &--m,
-    &--l {
+    &--md,
+    &--lg {
       @include responsive-page(2rem);
     }
 
@@ -233,12 +238,12 @@ $block: #{$fd-namespace}-dynamic-page;
       background-color: var(--fdDynamicPage_Title_Header_Transparent_Background);
     }
 
-    &--s {
+    &--sm {
       @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 0.5rem);
     }
 
-    &--m,
-    &--l {
+    &--md,
+    &--lg {
       @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 2rem);
     }
 
@@ -259,12 +264,12 @@ $block: #{$fd-namespace}-dynamic-page;
     }
   }
   .#{$fd-namespace}-tabs.#{$block}__tabs {
-    &--s {
+    &--sm {
       @include responsive-page($padding-x: 0.5rem);
     }
 
-    &--m,
-    &--l {
+    &--md,
+    &--lg {
       @include responsive-page($padding-x: 2rem);
     }
 
@@ -336,13 +341,14 @@ $block: #{$fd-namespace}-dynamic-page;
 
     padding: 1rem 0 0 0;
     background-color: $fd-dynamic-page-content-background-color;
+    overflow-y: scroll;
 
-    &--s {
+    &--sm {
       @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 0.5rem);
     }
 
-    &--m,
-    &--l {
+    &--md,
+    &--lg {
       @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 2rem);
     }
 
