@@ -143,7 +143,7 @@ withoutUserImage.storyName = 'No thumbnail';
 withoutUserImage.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'Although the default feed input has a thumbnail, it is possible to remove it. Without a thumbnail, the input area size increases automatically.'
+        storyDescription: 'Although the default feed input includes a thumbnail, it is possible to remove it. Without a thumbnail, the input area size increases automatically.'
     }
 };
 
