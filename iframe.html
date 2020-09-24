@@ -370,6 +370,20 @@ function addClass(elementId, className) {
     }
 }
 
+function browseFile(inputId) {
+    let inputRef = document.getElementById(inputId);
+    inputRef.click();
+}
+
+function toggleClass(elementId, className) {
+    let elementRef = document.getElementById(elementId);
+    if (elementRef && className) {
+        elementRef.classList.toggle(className);
+    } else {
+        console.warn("No element with id='" + elementId + "' found");
+    }
+}
+
 function onPopoverClick(id) {
     let elementRef = document.getElementById(id);
     let toggle = elementRef.getAttribute('aria-hidden');
@@ -383,31 +397,31 @@ function onPopoverClick(id) {
     setAriaHidden(id, toggle);
 }</script><style>@font-face {
   font-family: '72';
-  src: url('./72-Regular.woff') format('woff');
+  src: url('./theming-base-content/content/Base/baseLib/sap_base_fiori/fonts/72-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: '72';
-  src: url('./72-Light.woff') format('woff');
+  src: url('./theming-base-content/content/Base/baseLib/sap_base_fiori/fonts/72-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: '72';
-  src: url('./72-Bold.woff') format('woff');
+  src: url('./theming-base-content/content/Base/baseLib/sap_base_fiori/fonts/72-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SAP-icons';
-  src: url('./SAP-icons.woff') format('woff');
+  src: url('./theming-base-content/content/Base/baseLib/sap_fiori_3/fonts/SAP-icons.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }</style><style>#root[hidden],
       #docs-root[hidden] {
         display: none !important;
-      }</style></head><body><div class="sb-nopreview sb-wrapper"><div class="sb-nopreview_main"><h1 class="sb-nopreview_heading sb-heading">No Preview</h1><p>Sorry, but you either have no stories or none are selected somehow.</p><ul><li>Please check the Storybook config.</li><li>Try reloading the page.</li></ul><p>If the problem persists, check the browser console, or the terminal you've run Storybook from.</p></div></div><div class="sb-errordisplay sb-wrapper"><pre id="error-message" class="sb-heading"></pre><pre class="sb-errordisplay_code"><code id="error-stack"></code></pre></div><div id="root"></div><div id="docs-root"></div><script>window['LOGLEVEL'] = "info";</script><script src="./sb_dll/storybook_docs_dll.js"></script><script src="runtime~main.48f364d05763ffaec159.bundle.js"></script><script src="vendors~main.48f364d05763ffaec159.bundle.js"></script><script src="main.48f364d05763ffaec159.bundle.js"></script></body></html>
+      }</style></head><body><div class="sb-nopreview sb-wrapper"><div class="sb-nopreview_main"><h1 class="sb-nopreview_heading sb-heading">No Preview</h1><p>Sorry, but you either have no stories or none are selected somehow.</p><ul><li>Please check the Storybook config.</li><li>Try reloading the page.</li></ul><p>If the problem persists, check the browser console, or the terminal you've run Storybook from.</p></div></div><div class="sb-errordisplay sb-wrapper"><pre id="error-message" class="sb-heading"></pre><pre class="sb-errordisplay_code"><code id="error-stack"></code></pre></div><div id="root"></div><div id="docs-root"></div><script>window['LOGLEVEL'] = "info";</script><script src="./sb_dll/storybook_docs_dll.js"></script><script src="runtime~main.615b44da0e335ac8884c.bundle.js"></script><script src="vendors~main~253ae210.615b44da0e335ac8884c.bundle.js"></script><script src="vendors~main~2b5fb19d.615b44da0e335ac8884c.bundle.js"></script><script src="vendors~main~d939e436.615b44da0e335ac8884c.bundle.js"></script><script src="vendors~main~ec8c427e.615b44da0e335ac8884c.bundle.js"></script><script src="main~6c8e061a.615b44da0e335ac8884c.bundle.js"></script><script src="main~798ab416.615b44da0e335ac8884c.bundle.js"></script><script src="main~002699c4.615b44da0e335ac8884c.bundle.js"></script><script src="main~c98f95f3.615b44da0e335ac8884c.bundle.js"></script><script src="main~1aa1e1d0.615b44da0e335ac8884c.bundle.js"></script><script src="main~23da16c8.615b44da0e335ac8884c.bundle.js"></script><script src="main~11f8da0a.615b44da0e335ac8884c.bundle.js"></script><script src="main~a257f7f8.615b44da0e335ac8884c.bundle.js"></script><script src="main~150146eb.615b44da0e335ac8884c.bundle.js"></script><script src="main~15878688.615b44da0e335ac8884c.bundle.js"></script><script src="main~271ec6fd.615b44da0e335ac8884c.bundle.js"></script><script src="main~64ac6d3f.615b44da0e335ac8884c.bundle.js"></script><script src="main~aad3cf6c.615b44da0e335ac8884c.bundle.js"></script></body></html>
