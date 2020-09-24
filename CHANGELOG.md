@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0-rc.91](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.90...v0.12.0-rc.91) (2020-09-24)
+
+
+### Bug Fixes
+
+* rating indicator halves IE11 ([#1704](https://github.com/SAP/fundamental-styles/issues/1704)) ([d1d7611](https://github.com/SAP/fundamental-styles/commit/d1d7611b4c4818d3fa12a89568e854eaf8c11d0c))
+
 ## [0.12.0-rc.90](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.89...v0.12.0-rc.90) (2020-09-24)
 
 ## [0.12.0-rc.89](https://github.com/SAP/fundamental-styles/compare/v0.12.0-rc.88...v0.12.0-rc.89) (2020-09-23)
