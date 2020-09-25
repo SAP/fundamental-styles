@@ -1,5 +1,4 @@
 import * as bylineListStories from './byline/byline-list.stories.js';
-import * as objectListStories from './object/object-list.stories';
 import * as standardListStories from './standard/standard-list.stories.js';
 
 
@@ -18,4 +17,3 @@ const buildFunction = (stories) => () => {
 
 export const StandardList = buildFunction(standardListStories);
 export const BylineList = buildFunction(bylineListStories);
-export const ObjectList = buildFunction(objectListStories);

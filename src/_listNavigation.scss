@@ -102,7 +102,7 @@
     }
 
     // NAVIGATION + Object
-    &.#{$block}--object {
+    &.#{$block}--navigation-object {
       @include reset-list-item-paddings();
 
       .#{$block}__link {
