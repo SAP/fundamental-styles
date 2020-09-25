@@ -169,7 +169,10 @@
 
       text-align: $fd-list-object-align-right;
       margin-right: $fd-list-object-with-value-zero;
-      text-shadow: $fd-list-object-with-no-text-shadow;
+
+      &-text {
+        text-shadow: $fd-list-object-with-no-text-shadow;
+      }
 
       @include fd-rtl() {
         text-align: $fd-list-object-align-left;
