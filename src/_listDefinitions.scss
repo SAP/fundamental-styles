@@ -42,10 +42,15 @@ $fd-list-navigation-indicator-width: 2.75rem !default;
 
 $fd-list-object-border-bottom: 1px solid var(--sapList_BorderColor);
 $fd-list-object-with-value-zero: 0;
+$fd-list-object-with-padding-value-half: 0.5rem;
 $fd-list-object-with-padding-value-one: 1rem;
 $fd-list-object-with-padding-value-three: 3rem;
+$fd-list-object-with-value-half: 0.75rem;
+$fd-list-object-align-left: left;
+$fd-list-object-align-right: right;
 $fd-list-object-with-vertical-align-top: top;
 $fd-list-object-with-vertical-align-bottom: bottom;
+$fd-list-object-with-no-text-shadow: 0 0 black;
 $fd-list-object-font-size: var(--sapFontSize);
 $fd-list-object-font-color: var(--sapContent_LabelColor);
 $fd-list-object-number-font-family: var(--sapFontLightFamily);
@@ -124,6 +129,18 @@ $semantic-color: (
     .#{$block}__byline-left,
     .#{$block}__byline-right,
     .#{$block}__thumbnail,
+    .#{$block}__optional,
+    .#{$block}__optional-text,
+    .#{$block}__object-attribute,
+    .#{$block}__object-attribute-text,
+    .#{$block}__object-number,
+    .#{$block}__object-number-text,
+    .#{$block}__object-number-unit,
+    .#{$block}__object-identifier,
+    .#{$block}__object-identifier-title,
+    .#{$block}__object-status,
+    .#{$block}__avatar,
+    .#{$block}__object-marker,
     &.#{$block}__link--navigation-indicator::after,
     & {
       color: var(--sapList_Active_TextColor);

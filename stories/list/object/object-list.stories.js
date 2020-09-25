@@ -9,11 +9,16 @@ export default {
         Object list provides a structure for Object list item content.
 
 To create a object list add the \`fd-list--object\` modifier class to ul.
-(\`fd-list-optional\`) and (\`fd-list-optional__text\`) modifier class will help to add optional text information.
-(\`fd-list__object--top-row\`) and (\`fd-list__object--bottom-row\`) class will help to devide the list item into two parts.
-(\`fd-list__object--top-right\`) and (\`fd-list__object--top-left\`) modifiers will help to divide the top row into 2 column with ratio of 60% and 40%.
-Similary (\`fd-list__object--bottom-right\`) and (\`fd-list__object--bottom-left\`) modifiers will help to divide the bottom rows into 2 column with ratio of 50% and 50%.
-and to represent semantics for respective element append element-- \`neutral\`, \`positive\`, \`critical\`, \`negative\`
+(\`fd-list__optional\`) and (\`fd-list__optional-text\`) modifier class will 
+help to add optional text information.
+(\`fd-list__object--top-row\`) and (\`fd-list__object--bottom-row\`) class will 
+help to devide the list item into two parts.
+(\`fd-list__object--top-right\`) and (\`fd-list__object--top-left\`) modifiers 
+will help to divide the top row into 2 column with ratio of 60% and 40%.
+Similary (\`fd-list__object--bottom-right\`) and (\`fd-list__object--bottom-left\`) modifiers
+ will help to divide the bottom rows into 2 column with ratio of 50% and 50%.
+and to represent semantics for respective element append 
+element-- \`neutral\`, \`positive\`, \`critical\`, \`negative\`
 and \`informative\` status.
 `,
         tags: ['a11y', 'theme']
@@ -25,29 +30,31 @@ export const object = () => `
 <ul class="fd-list fd-list--object" role="listbox" aria-labelledby="objectListItemHeader">
   <li role="option" tabindex="0" class="fd-list__item">
   <div class="fd-list__content">
-     <div class="fd-list-optional">
-     <span class="fd-list-optional__text">Optional inline text</span>
+     <div class="fd-list__optional">
+     <span class="fd-list__optional-text">Optional inline text</span>
      </div>
      <div class="fd-list__object fd-list__object--top-row">
-     <span class="fd-avatar fd-avatar--s" style="background-image: url('http://lorempixel.com/400/400/nature/4/')"></span>
+     <span class="fd-avatar fd-avatar--s fd-list__object-avatar" style="background-image: url('http://lorempixel.com/400/400/nature/4/')"></span>
      <div class="fd-list__object fd-list__object--top-left">
-     <div class="fd-object-identifier">
-       <p class="fd-object-identifier__title">
+     <div class="fd-object-identifier fd-list__object-identifier">
+       <p class="fd-object-identifier__title fd-list__object-identifier-title">
      Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
       </p>
       </div>
       </div>
      <div class="fd-list__object fd-list__object--top-right">
-     <span class="fd-object-number fd-object-number--critical">
-     <span class="fd-object-number__text">457.00</span>
-     <span class="fd-object-number__unit">Euro</span>
+     <span class="fd-object-number fd-object-number--critical fd-list__object-number">
+     <span class="fd-object-number__text fd-list__object-number-text">457.00</span>
+     <span class="fd-object-number__unit fd-list__object-number-unit">Euro</span>
      </span>
      </div>
     </div>
     <div class="fd-list__object fd-list__object--bottom">
     <div class="fd-list__object fd-list__object--bottom-row">
     <div class="fd-list__object fd-list__object--bottom-left">
-      <span class="fd-list-attribute">First Attribute</span>
+    <div class="fd-list__object-attribute">
+      <span class="fd-list__object-attribute-text">First Attribute</span>
+      </div>
     </div>
     <div class="fd-list__object fd-list__object--bottom-right">
     <div class="fd-object-marker">
@@ -60,17 +67,21 @@ export const object = () => `
     </div>
     <div class="fd-list__object fd-list__object--bottom-row">
     <div class="fd-list__object fd-list__object--bottom-left">
-      <span class="fd-list-attribute">Second Attribute</span>
+    <div class="fd-list__object-attribute">
+    <span class="fd-list__object-attribute-text">Second Attribute</span>
+    </div>
     </div>
     <div class="fd-list__object fd-list__object--bottom-right">
-    <span class="fd-object-status fd-object-status--critical">
-    <span class="fd-object-status__text">Critical</span>
+    <span class="fd-object-status fd-object-status--critical fd-list__object-status">
+    <span class="fd-object-status__text fd-list__object-status-text">Critical</span>
     </span>
     </div>
     </div>
     <div class="fd-list__object fd-list__object--bottom-row">
     <div class="fd-list__object fd-list__object--bottom-left">
-      <span class="fd-list-attribute">Third Attribute</span>
+    <div class="fd-list__object-attribute">
+    <span class="fd-list__object-attribute-text">Third Attribute</span>
+    </div>
     </div>
     </div>
     </div>
@@ -79,43 +90,51 @@ export const object = () => `
   <li role="option" tabindex="0" class="fd-list__item">
   <div class="fd-list__content">
      <div class="fd-list__object fd-list__object--top-row">
-     <span class="fd-avatar fd-avatar--s" style="background-image: url('http://lorempixel.com/400/400/nature/4/')"></span>
+     <span class="fd-avatar fd-list__object-avatar fd-avatar--s" style="background-image: url('http://lorempixel.com/400/400/nature/4/')"></span>
      <div class="fd-list__object fd-list__object--top-left">
-     <div class="fd-object-identifier">
-       <p class="fd-object-identifier__title">
+     <div class="fd-object-identifier fd-list__object-identifier">
+       <p class="fd-object-identifier__title fd-list__object-identifier-title">
      Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
       </p>
       </div>
       </div>
-     <div class="fd-list__object fd-list__object--top-right fd-object-number">
-     <span class="fd-object-number__text">956.00</span>
-     <span class="fd-object-number__unit">Euro</span>
+     <div class="fd-list__object fd-list__object--top-right">
+     <span class=" fd-object-number fd-list__object-number">
+     <span class="fd-object-number__text fd-list__object-number-text">956.00</span>
+     <span class="fd-object-number__unit fd-list__object-number-unit">Euro</span>
+     </span>
      </div>
     </div>
     <div class="fd-list__object fd-list__object--bottom">
     <div class="fd-list__object fd-list__object--bottom-row">
     <div class="fd-list__object fd-list__object--bottom-left">
-      <span class="fd-list-attribute">First Attribute</span>
+    <div class="fd-list__object-attribute">
+    <span class="fd-list__object-attribute-text">First Attribute</span>
+    </div>
     </div>
     <div class="fd-list__object fd-list__object--bottom-right">
-    <span class="fd-object-status fd-object-status--negative">
-    <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
-    <span class="fd-object-status__text">Negative</span>
+    <span class="fd-object-status fd-list__object-status fd-object-status--negative">
+    <i class="fd-object-status__icon fd-list__object-status-icon sap-icon--status-negative" role="presentation"></i>
+    <span class="fd-object-status__text fd-list__object-status-text">Negative</span>
    </span>
    </div>
     </div>
     <div class="fd-list__object fd-list__object--bottom-row">
     <div class="fd-list__object fd-list__object--bottom-left">
-      <span class="fd-list-attribute">Second Attribute</span>
+    <div class="fd-list__object-attribute">
+    <span class="fd-list__object-attribute-text">Second Attribute</span>
+    </div>
     </div>
     <div class="fd-list__object fd-list__object--bottom-right">
-    <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">Second status</span></span>
+    <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">Second status</span></span>
     </div>
     </div>
     <div class="fd-list__object fd-list__object--bottom-row">
     <div class="fd-list__object fd-list__object--bottom-left">
-      <span class="fd-list-attribute">Third Attribute</span>
+    <div class="fd-list__object-attribute">
+    <span class="fd-list__object-attribute-text">Third Attribute</span>
+    </div>
     </div>
     </div>
     </div>
@@ -125,75 +144,89 @@ export const object = () => `
   <div class="fd-list__content">
      <div class="fd-list__object fd-list__object--top-row">
      <div class="fd-list__object fd-list__object--top-left">
-     <div class="fd-object-identifier">
-       <p class="fd-object-identifier__title">
+     <div class="fd-object-identifier fd-list__object-identifier">
+       <p class="fd-object-identifier__title fd-list__object-identifier-title">
      Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
       </p>
-      </div></div>
-     <div class="fd-list__object fd-list__object--top-right fd-object-number">
-     <span class="fd-object-number__text">956.00</span>
-     <span class="fd-object-number__unit">Euro</span>
+      </div>
+      </div>
+      <div class="fd-list__object fd-list__object--top-right">
+      <span class="fd-object-number fd-object-number--critical fd-list__object-number">
+      <span class="fd-object-number__text fd-list__object-number-text">457.00</span>
+      <span class="fd-object-number__unit fd-list__object-number-unit">Euro</span>
+      </span>
+      </div>
      </div>
-    </div>
     <div class="fd-list__object fd-list__object--bottom">
     <div class="fd-list__object fd-list__object--bottom-row">
     <div class="fd-list__object fd-list__object--bottom-left">
-      <span class="fd-list-attribute">First Attribute</span>
+    <div class="fd-list__object-attribute">
+    <span class="fd-list__object-attribute-text">First Attribute</span>
+    </div>
     </div>
     </div>
     <div class="fd-list__object fd-list__object--bottom-row">
     <div class="fd-list__object fd-list__object--bottom-left">
-      <span class="fd-list-attribute">Second Attribute</span>
+    <div class="fd-list__object-attribute">
+    <span class="fd-list__object-attribute-text">Second Attribute</span>
+    </div>
     </div>
     <div class="fd-list__object fd-list__object--bottom-right">
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--critical">Inverted Warning</span>
+    <span class="fd-object-status fd-list__object-status fd-object-status--inverted fd-object-status--critical">Inverted Warning</span>
     </div>
     </div>
     <div class="fd-list__object fd-list__object--bottom-row">
     <div class="fd-list__object fd-list__object--bottom-left">
-      <span class="fd-list-attribute">Third Attribute</span>
+    <div class="fd-list__object-attribute">
+    <span class="fd-list__object-attribute-text">Third Attribute</span>
     </div>
     </div>
     </div>
     </div>
-  </li>
-  <li role="option" tabindex="0" class="fd-list__item">
+    </div>
+  </li><li role="option" tabindex="0" class="fd-list__item">
   <div class="fd-list__content">
-     <div class="fd-list-optional">
-     <span class="fd-list-optional__text">Optional inline text</span>
+     <div class="fd-list__optional">
+     <span class="fd-list__optional-text">Optional inline text</span>
      </div>
      <div class="fd-list__object fd-list__object--top-row">
-     <span class="fd-avatar fd-avatar--s" style="background-image: url('http://lorempixel.com/400/400/nature/4/')"></span>
+     <span class="fd-avatar fd-list__object-avatar fd-avatar--s" style="background-image: url('http://lorempixel.com/400/400/nature/4/')"></span>
      <div class="fd-list__object fd-list__object--top-left">
-     <div class="fd-object-identifier">
-       <p class="fd-object-identifier__title">
+     <div class="fd-object-identifier fd-list__object-identifier">
+       <p class="fd-object-identifier__title fd-list__object-identifier-title">
      Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
       </p>
       </div></div>
-     <div class="fd-list__object fd-list__object--top-right fd-object-number fd-object-number--positive">
-     <span class="fd-object-number__text">956.00</span>
-     <span class="fd-object-number__unit">Euro</span>
+      <div class="fd-list__object fd-list__object--top-right">
+      <span class="fd-object-number fd-object-number--critical fd-list__object-number">
+      <span class="fd-object-number__text fd-list__object-number-text">757.00</span>
+      <span class="fd-object-number__unit fd-list__object-number-unit">Euro</span>
+      </span>
+      </div>
      </div>
-    </div>
     <div class="fd-list__object fd-list__object--bottom">
     <div class="fd-list__object fd-list__object--bottom-row">
     <div class="fd-list__object fd-list__object--bottom-right">
-    <span class="fd-object-status fd-object-status--positive">
-    <span class="fd-object-status__text">First status</span></span>
+    <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+    <span class="fd-object-status__text fd-list__object-status-text">First status</span></span>
     </div>
     </div>
     <div class="fd-list__object fd-list__object--bottom-row">
     <div class="fd-list__object fd-list__object--bottom-left">
-      <span class="fd-list-attribute">Second Attribute</span>
+    <div class="fd-list__object-attribute">
+    <span class="fd-list__object-attribute-text">Second Attribute</span>
+    </div>
     </div>
     <div class="fd-list__object fd-list__object--bottom-right">
-    <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">Second status</span></span>
+    <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">Second status</span></span>
     </div>
     </div>
     <div class="fd-list__object fd-list__object--bottom-row">
     <div class="fd-list__object fd-list__object--bottom-left">
-      <span class="fd-list-attribute">Third Attribute</span>
+    <div class="fd-list__object-attribute">
+    <span class="fd-list__object-attribute-text">Third Attribute</span>
+    </div>
     </div>
     </div>
     </div>
@@ -217,45 +250,49 @@ export const navigation = () => `
 <div style="max-width: 450px">
 <ul class="fd-list fd-list--object fd-list--navigation" role="listbox" aria-labelledby="objectListItemNavigation">
   <li role="option" tabindex="0" class="fd-list__item fd-list__item--link">
-    <a tabindex="0" class="fd-list__link">
+    <a tabindex="0" class="fd-list__link" href="#">
     <div class="fd-list__content">
-    <div class="fd-list-optional">
-    <span class="fd-list-optional__text">Optional inline text</span>
+    <div class="fd-list__optional">
+    <span class="fd-list__optional-text">Optional inline text</span>
     </div>
     <div class="fd-list__object fd-list__object--top-row">
-    <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')"></span>
+    <span class="fd-avatar fd-list__object-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')"></span>
     <div class="fd-list__object fd-list__object--top-left">
-    <div class="fd-object-identifier">
-      <p class="fd-object-identifier__title">
+    <div class="fd-object-identifier fd-list__object-identifier">
+      <p class="fd-object-identifier__title fd-list__object-identifier-title fd-list__object-identifier-title">
     Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
      </p>
      </div></div>
-    <div class="fd-list__object fd-list__object--top-right fd-object-number fd-object-number--positive">
-    <span class="fd-object-number__text">956.00</span>
-    <span class="fd-object-number__unit">Euro</span>
+    <div class="fd-list__object fd-list__object--top-right">
+    <span class="fd-object-number fd-list__object-number fd-object-number--positive">
+    <span class="fd-object-number__text fd-list__object-number-text">956.00</span>
+    <span class="fd-object-number__unit fd-list__object-number-unit">Euro</span></span>
     </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom">
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-right">
-   <span class="fd-object-status fd-object-status--critical">
-   <span class="fd-object-status__text">Very Very Very Very Very Very long status</span>
+   <span class="fd-object-status fd-list__object-status fd-object-status--critical">
+   <span class="fd-object-status__text fd-list__object-status-text">status</span>
    </span>
    </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-left">
-     <span class="fd-list-attribute">Second Attribute Very Very Very Very Very Very long</span>
+   <div class="fd-list__object-attribute">
+   <span class="fd-list__object-attribute-text">Second Attribute</span>
    </div>
+     </div>
    <div class="fd-list__object fd-list__object--bottom-right">
-   <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">Second status Very Very Very Very Very Very long</span></span>
+   <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">Second status</span></span>
    </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-left">
-     <span class="fd-list-attribute">Third Attribute Very Very Very Very Very Very long</span>
-   </div>
+   <div class="fd-list__object-attribute">
+   <span class="fd-list__object-attribute-text">Third Attribute</span>
+   </div> </div>
    </div>
    </div>
    </div>
@@ -264,41 +301,46 @@ export const navigation = () => `
   <li role="option" tabindex="0" class="fd-list__item fd-list__item--link">
     <a tabindex="0" class="fd-list__link">
     <div class="fd-list__content">
-    <div class="fd-list-optional">
-    <span class="fd-list-optional__text">Optional inline text</span>
+    <div class="fd-list__optional">
+    <span class="fd-list__optional-text">Optional inline text</span>
     </div>
     <div class="fd-list__object fd-list__object--top-row">
-    <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
+    <span class="fd-avatar fd-list__object-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
     <div class="fd-list__object fd-list__object--top-left">
-    <div class="fd-object-identifier">
-      <p class="fd-object-identifier__title">
+    <div class="fd-object-identifier fd-list__object-identifier">
+      <p class="fd-object-identifier__title fd-list__object-identifier-title">
     Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
      </p>
      </div></div>
-    <div class="fd-list__object fd-list__object--top-right fd-object-number fd-object-number--positive">
-    <span class="fd-object-number__text">956.00</span>
-    <span class="fd-object-number__unit">Euro</span>
+     <div class="fd-list__object fd-list__object--top-right">
+     <span class="fd-object-number fd-list__object-number fd-object-number--positive">
+     <span class="fd-object-number__text fd-list__object-number-text">956.00</span>
+     <span class="fd-object-number__unit fd-list__object-number-unit">Euro</span></span>
+     </div>
     </div>
-   </div>
    <div class="fd-list__object fd-list__object--bottom">
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-right">
-   <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">First status</span></span>
+   <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">First status</span></span>
    </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-left">
-     <span class="fd-list-attribute">Second Attribute</span>
+   <div class="fd-list__object-attribute">
+   <span class="fd-list__object-attribute-text">Second Attribute</span>
+   </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-right">
-   <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">Second status</span></span>
+   <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">Second status</span></span>
    </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-left">
-     <span class="fd-list-attribute">Third Attribute</span>
+   <div class="fd-list__object-attribute">
+   <span class="fd-list__object-attribute-text">Third Attribute</span>
+   </div>
    </div>
    </div>
    </div>
@@ -330,42 +372,45 @@ export const navigationIndicator = () => `
   <li role="option" tabindex="0" class="fd-list__item fd-list__item--link">
     <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator">
     <div class="fd-list__content">
-    <div class="fd-list-optional">
-    <span class="fd-list-optional__text">Optional inline text</span>
+    <div class="fd-list__optional">
+    <span class="fd-list__optional-text">Optional inline text</span>
     </div>
     <div class="fd-list__object fd-list__object--top-row">
-    <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')"></span>
+    <span class="fd-avatar fd-list__object-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')"></span>
     <div class="fd-list__object fd-list__object--top-left">
-    <div class="fd-object-identifier">
-      <p class="fd-object-identifier__title">
+    <div class="fd-object-identifier fd-list__object-identifier">
+      <p class="fd-object-identifier__title fd-list__object-identifier-title">
     Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
      </p>
      </div></div>
-    <div class="fd-list__object fd-list__object--top-right fd-object-number fd-object-number--positive">
-    <span class="fd-object-number__text">956.00</span>
-    <span class="fd-object-number__unit">Euro</span>
+    <div class="fd-list__object fd-list__object--top-right">
+    <span class="fd-object-number fd-list__object-number fd-object-number--positive">
+    <span class="fd-object-number__text fd-list__object-number-text">956.00</span>
+    <span class="fd-object-number__unit fd-list__object-number-unit">Euro</span></span>
     </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom">
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-right">
-   <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">Very Very Very Very Very Very long status</span></span>
+   <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">Status</span></span>
    </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-left">
-     <span class="fd-list-attribute">Second Attribute Very Very Very Very Very Very long</span>
-   </div>
+   <div class="fd-list__object-attribute">
+   <span class="fd-list__object-attribute-text">Second Attribute</span>
+   </div>   </div>
    <div class="fd-list__object fd-list__object--bottom-right">
-   <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">Second status Very Very Very Very Very Very long</span></span>
+   <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">Second status</span></span>
    </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-left">
-     <span class="fd-list-attribute">Third Attribute Very Very Very Very Very Very long</span>
-   </div>
+   <div class="fd-list__object-attribute">
+   <span class="fd-list__object-attribute-text">Third Attribute</span>
+   </div>   </div>
    </div>
    </div>
    </div>
@@ -374,41 +419,46 @@ export const navigationIndicator = () => `
   <li role="option" aria-selected="true" tabindex="0" class="fd-list__item fd-list__item--link is-selected">
     <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated">
     <div class="fd-list__content">
-    <div class="fd-list-optional">
-    <span class="fd-list-optional__text">Optional inline text</span>
+    <div class="fd-list__optional">
+    <span class="fd-list__optional-text">Optional inline text</span>
     </div>
     <div class="fd-list__object fd-list__object--top-row">
-    <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
+    <span class="fd-avatar fd-list__object-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
     <div class="fd-list__object fd-list__object--top-left">
-    <div class="fd-object-identifier">
-      <p class="fd-object-identifier__title">
+    <div class="fd-object-identifier fd-list__object-identifier">
+      <p class="fd-object-identifier__title fd-list__object-identifier-title">
     Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
      </p>
      </div></div>
-    <div class="fd-list__object fd-list__object--top-right fd-object-number fd-object-number--positive">
-    <span class="fd-object-number__text">956.00</span>
-    <span class="fd-object-number__unit">Euro</span>
+    <div class="fd-list__object fd-list__object--top-right">
+    <span class="fd-object-number fd-list__object-number fd-object-number--positive">
+    <span class="fd-object-number__text fd-list__object-number-text">956.00</span>
+    <span class="fd-object-number__unit fd-list__object-number-unit">Euro</span></span>
     </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom">
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-right">
-   <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">First status</span></span>
+   <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">First status</span></span>
    </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-left">
-     <span class="fd-list-attribute">Second Attribute</span>
+   <div class="fd-list__object-attribute">
+   <span class="fd-list__object-attribute-text">Second Attribute</span>
+   </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-right">
-   <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">Second status</span></span>
+   <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">Second status</span></span>
    </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-left">
-     <span class="fd-list-attribute">Third Attribute</span>
+   <div class="fd-list__object-attribute">
+   <span class="fd-list__object-attribute-text">Third Attribute</span>
+   </div>
    </div>
    </div>
    </div>
@@ -437,40 +487,49 @@ export const selection = () => `
 <ul class="fd-list fd-list--object fd-list--selection fd-list__row-selection" role="listbox" aria-labelledby="objectListItemRowSelection">
   <li role="option" tabindex="0" class="fd-list__item">
     <div class="fd-list__content">
-    <div class="fd-list-optional">
-    <span class="fd-list-optional__text">Optional inline text</span>
+    <div class="fd-list__optional">
+    <span class="fd-list__optional-text">Optional inline text</span>
     </div>
     <div class="fd-list__object fd-list__object--top-row">
-    <span class="fd-avatar fd-avatar--s" style="background-image: url('http://lorempixel.com/400/400/nature/4/')"></span>
-    <div class="fd-list__object fd-list__object--top-left fd-object-identifier">
-      <p class="fd-object-identifier__title">
+    <span class="fd-avatar fd-list__object-avatar fd-avatar--s" style="background-image: url('http://lorempixel.com/400/400/nature/4/')"></span>
+    <div class="fd-list__object fd-list__object--top-left">
+    <div class="fd-object-identifier fd-list__object-identifier">
+      <p class="fd-object-identifier__title fd-list__object-identifier-title">
     Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
      </p>
      </div>
-    <div class="fd-list__object fd-list__object--top-right fd-object-number fd-object-number--positive">
-    <span class="fd-object-number__text">956.00</span>
-    <span class="fd-object-number__unit">Euro</span>
+     </div>
+    <div class="fd-list__object fd-list__object--top-right">
+    <span class="fd-object-number fd-list__object-number fd-object-number--positive">
+    <span class="fd-object-number__text fd-list__object-number-text">956.00</span>
+    <span class="fd-object-number__unit fd-list__object-number-unit">Euro</span>
+    </span>
     </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom">
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-right">
-   <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">First status</span></span>
+   <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">First status</span></span>
    </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-left">
-     <span class="fd-list-attribute">Second Attribute</span>
+   <div class="fd-list__object-attribute">
+   <span class="fd-list__object-attribute-text">Second Attribute</span>
+   </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-right">
-   <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">Second status</span></span>
+   <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">Second status</span>
+   </span>
    </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-left">
-     <span class="fd-list-attribute">Third Attribute</span>
+   <div class="fd-list__object-attribute">
+   <span class="fd-list__object-attribute-text">Third Attribute</span>
+   </div>
    </div>
    </div>
    </div>
@@ -478,41 +537,46 @@ export const selection = () => `
   </li>
   <li role="option" aria-selected="true" tabindex="0" class="fd-list__item is-selected">
     <div class="fd-list__content">
-    <div class="fd-list-optional">
-    <span class="fd-list-optional__text">Optional inline text</span>
+    <div class="fd-list__optional">
+    <span class="fd-list__optional-text">Optional inline text</span>
     </div>
     <div class="fd-list__object fd-list__object--top-row">
-    <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
+    <span class="fd-avatar fd-list__object-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
     <div class="fd-list__object fd-list__object--top-left">
-    <div class="fd-object-identifier">
-      <p class="fd-object-identifier__title">
+    <div class="fd-object-identifier fd-list__object-identifier">
+      <p class="fd-object-identifier__title fd-list__object-identifier-title">
     Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
      </p>
      </div></div>
-    <div class="fd-list__object fd-list__object--top-right fd-object-number fd-object-number--positive">
-    <span class="fd-object-number__text">956.00</span>
-    <span class="fd-object-number__unit">Euro</span>
+    <div class="fd-list__object fd-list__object--top-right">
+    <span class="fd-object-number fd-list__object-number fd-object-number--positive">
+    <span class="fd-object-number__text fd-list__object-number-text">956.00</span>
+    <span class="fd-object-number__unit fd-list__object-number-unit">Euro</span></span>
     </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom">
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-right">
-   <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">First status</span></span>
+   <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">First status</span></span>
    </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-left">
-     <span class="fd-list-attribute">Second Attribute</span>
+   <div class="fd-list__object-attribute">
+   <span class="fd-list__object-attribute-text">Second Attribute</span>
+   </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-right">
-   <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">Second status</span></span>
+   <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">Second status</span></span>
    </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-left">
-     <span class="fd-list-attribute">Third Attribute</span>
+   <div class="fd-list__object-attribute">
+   <span class="fd-list__object-attribute-text">Third Attribute</span>
+   </div>
    </div>
    </div>
    </div>
@@ -537,45 +601,50 @@ export const multiSelection = () => `
 <ul class="fd-list fd-list--object fd-list--selection" role="listbox" aria-labelledby="objectListItemMultiSelection" aria-multiselectable="true">
   <li role="option" aria-selected="true" tabindex="0" class="fd-list__item is-selected">
   <div class="fd-form-item fd-list__form-item">
-          <input type="checkbox" class="fd-checkbox" id="Ai4ez6111Z" checked="">
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez6111Z" checked>
           <label tabindex="-1" aria-label="select/de-select option 1" class="fd-checkbox__label" for="Ai4ez6111Z"></label>
   </div>
     <div class="fd-list__content">
-    <div class="fd-list-optional">
-    <span class="fd-list-optional__text">Optional inline text</span>
+    <div class="fd-list__optional">
+    <span class="fd-list__optional-text">Optional inline text</span>
     </div>
     <div class="fd-list__object fd-list__object--top-row">
-    <span class="fd-avatar fd-avatar--s" style="background-image: url('http://lorempixel.com/400/400/nature/4/')"></span>
+    <span class="fd-avatar fd-list__object-avatar fd-avatar--s" style="background-image: url('http://lorempixel.com/400/400/nature/4/')"></span>
     <div class="fd-list__object fd-list__object--top-left">
-    <div class="fd-object-identifier">
-      <p class="fd-object-identifier__title">
+    <div class="fd-object-identifier fd-list__object-identifier">
+      <p class="fd-object-identifier__title fd-list__object-identifier-title">
     Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
      </p>
      </div></div>
-    <div class="fd-list__object fd-list__object--top-right fd-object-number fd-object-number--positive">
-    <span class="fd-object-number__text">956.00</span>
-    <span class="fd-object-number__unit">Euro</span>
+    <div class="fd-list__object fd-list__object--top-right">
+    <span class="fd-object-number fd-list__object-number fd-object-number--positive">
+    <span class="fd-object-number__text fd-list__object-number-text">956.00</span>
+    <span class="fd-object-number__unit fd-list__object-number-unit">Euro</span></span>
     </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom">
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-right">
-   <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">First status</span></span>
+   <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">First status</span></span>
    </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-left">
-     <span class="fd-list-attribute">Second Attribute</span>
+   <div class="fd-list__object-attribute">
+   <span class="fd-list__object-attribute-text">Second Attribute</span>
+   </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-right">
-   <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">Second status</span></span>
+   <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">Second status</span></span>
    </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-left">
-     <span class="fd-list-attribute">Third Attribute</span>
+   <div class="fd-list__object-attribute">
+   <span class="fd-list__object-attribute-text">Third Attribute</span>
+   </div>
    </div>
    </div>
    </div>
@@ -583,45 +652,50 @@ export const multiSelection = () => `
   </li>
   <li role="option" tabindex="0" class="fd-list__item">
   <div class="fd-form-item fd-list__form-item">
-          <input type="checkbox" class="fd-checkbox" id="Ai4ez6111K" checked="">
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez6111K">
           <label aria-label="select/de-select option 2" tabindex="-1" class="fd-checkbox__label" for="Ai4ez6111K"></label>
   </div>
     <div class="fd-list__content">
-    <div class="fd-list-optional">
-    <span class="fd-list-optional__text">Optional inline text</span>
+    <div class="fd-list__optional">
+    <span class="fd-list__optional-text">Optional inline text</span>
     </div>
     <div class="fd-list__object fd-list__object--top-row">
-    <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
+    <span class="fd-avatar fd-list__object-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
     <div class="fd-list__object fd-list__object--top-left">
-    <div class="fd-object-identifier">
-      <p class="fd-object-identifier__title">
+    <div class="fd-object-identifier fd-list__object-identifier">
+      <p class="fd-object-identifier__title fd-list__object-identifier-title">
     Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
      </p>
      </div></div>
-    <div class="fd-list__object fd-list__object--top-right fd-object-number fd-object-number--positive">
-    <span class="fd-object-number__text">956.00</span>
-    <span class="fd-object-number__unit">Euro</span>
+    <div class="fd-list__object fd-list__object--top-right">
+    <span class="fd-object-number fd-list__object-number fd-object-number--positive">
+    <span class="fd-object-number__text fd-list__object-number-text">956.00</span>
+    <span class="fd-object-number__unit fd-list__object-number-unit">Euro</span></span>
     </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom">
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-right">
-   <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">First status</span></span>
+   <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">First status</span></span>
    </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-left">
-     <span class="fd-list-attribute">Second Attribute</span>
+   <div class="fd-list__object-attribute">
+   <span class="fd-list__object-attribute-text">Seecond Attribute</span>
+   </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-right">
-   <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">Second status</span></span>
+   <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">Second status</span></span>
    </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-left">
-     <span class="fd-list-attribute">Third Attribute</span>
+   <div class="fd-list__object-attribute">
+   <span class="fd-list__object-attribute-text">Third Attribute</span>
+   </div>
    </div>
    </div>
    </div>
@@ -647,41 +721,46 @@ export const borderless = () => `
   <li role="option" tabindex="0" class="fd-list__item fd-list__item--link">
     <a tabindex="0" class="fd-list__link">
     <div class="fd-list__content">
-    <div class="fd-list-optional">
-    <span class="fd-list-optional__text">Optional inline text</span>
+    <div class="fd-list__optional">
+    <span class="fd-list__optional-text">Optional inline text</span>
     </div>
     <div class="fd-list__object fd-list__object--top-row">
-    <span class="fd-avatar fd-avatar--s" style="background-image: url('http://lorempixel.com/400/400/nature/4/')"></span>
+    <span class="fd-avatar fd-list__object-avatar fd-avatar--s" style="background-image: url('http://lorempixel.com/400/400/nature/4/')"></span>
     <div class="fd-list__object fd-list__object--top-left">
-    <div class="fd-object-identifier">
-      <p class="fd-object-identifier__title">
+    <div class="fd-object-identifier fd-list__object-identifier">
+      <p class="fd-object-identifier__title fd-list__object-identifier-title">
     Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
      </p>
      </div></div>
-    <div class="fd-list__object fd-list__object--top-right fd-object-number fd-object-number--positive">
-    <span class="fd-object-number__text">956.00</span>
-    <span class="fd-object-number__unit">Euro</span>
+    <div class="fd-list__object fd-list__object--top-right">
+    <span class="fd-object-number fd-list__object-number fd-object-number--positive">
+    <span class="fd-object-number__text fd-list__object-number-text">956.00</span>
+    <span class="fd-object-number__unit fd-list__object-number-unit">Euro</span></span>
     </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom">
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-right">
-   <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">First status</span></span>
+   <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">First status</span></span>
    </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-left">
-     <span class="fd-list-attribute">Second Attribute</span>
+   <div class="fd-list__object-attribute">
+   <span class="fd-list__object-attribute-text">Second Attribute</span>
+   </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-right">
-   <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">Second status</span></span>
+   <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">Second status</span></span>
    </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-left">
-     <span class="fd-list-attribute">Third Attribute</span>
+   <div class="fd-list__object-attribute">
+   <span class="fd-list__object-attribute-text">Third Attribute</span>
+   </div>
    </div>
    </div>
    </div>
@@ -690,40 +769,45 @@ export const borderless = () => `
   </li>
   <li role="option" tabindex="0" class="fd-list__item">
     <div class="fd-list__content">
-    <div class="fd-list-optional">
-    <span class="fd-list-optional__text">Optional inline text</span>
+    <div class="fd-list__optional">
+    <span class="fd-list__optional-text">Optional inline text</span>
     </div>
     <div class="fd-list__object fd-list__object--top-row">
-    <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
+    <span class="fd-avatar fd-list__object-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
     <div class="fd-list__object fd-list__object--top-left">
-    <div class="fd-object-identifier">
-      <p class="fd-object-identifier__title">
+    <div class="fd-object-identifier fd-list__object-identifier">
+      <p class="fd-object-identifier__title fd-list__object-identifier-title">
     Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
      </p>
      </div></div>
-    <div class="fd-list__object fd-list__object--top-right fd-object-number fd-object-number--positive">
-    <span class="fd-object-number__text">956.00</span>
-    <span class="fd-object-number__unit">Euro</span>
+    <div class="fd-list__object fd-list__object--top-right">
+    <span class="fd-object-number fd-list__object-number fd-object-number--positive">
+    <span class="fd-object-number__text fd-list__object-number-text">956.00</span>
+    <span class="fd-object-number__unit fd-list__object-number-unit">Euro</span></span>
     </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom">
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-right">
-   <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">First status</span></span>
+   <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">First status</span></span>
    </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-left">
-     <span class="fd-list-attribute">Second Attribute</span>
+   <div class="fd-list__object-attribute">
+   <span class="fd-list__object-attribute-text">Second Attribute</span>
+   </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-right">
-   <span class="fd-object-status fd-object-status--inverted fd-object-status--indication-1">Indication1</span>
+   <span class="fd-object-status fd-list__object-status fd-object-status--inverted fd-object-status--indication-1">Indication1</span>
    </div>
    </div>
    <div class="fd-list__object fd-list__object--bottom-row">
    <div class="fd-list__object fd-list__object--bottom-left">
-     <span class="fd-list-attribute">Third Attribute</span>
+   <div class="fd-list__object-attribute">
+   <span class="fd-list__object-attribute-text">Third Attribute</span>
+   </div>
    </div>
    </div>
    </div>
@@ -750,26 +834,29 @@ export const rtl = () => `
 <ul class="fd-list fd-list--object" role="listbox" aria-labelledby="objectListItemRTL">
 <li role="option" tabindex="0" class="fd-list__item">
 <div class="fd-list__content">
-   <div class="fd-list-optional">
-   <span class="fd-list-optional__text">Optional inline text</span>
+   <div class="fd-list__optional">
+   <span class="fd-list__optional-text">Optional inline text</span>
    </div>
    <div class="fd-list__object fd-list__object--top-row">
-   <span class="fd-avatar fd-avatar--s" style="background-image: url('http://lorempixel.com/400/400/nature/4/')"></span>
+   <span class="fd-avatar fd-list__object-avatar fd-avatar--s" style="background-image: url('http://lorempixel.com/400/400/nature/4/')"></span>
    <div class="fd-list__object fd-list__object--top-left">
-   <div class="fd-object-identifier">
-     <p class="fd-object-identifier__title">
+   <div class="fd-object-identifier fd-list__object-identifier">
+     <p class="fd-object-identifier__title fd-list__object-identifier-title">
    Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
     </p>
     </div></div>
-   <div class="fd-list__object fd-list__object--top-right fd-object-number">
-   <span class="fd-object-number__text">956.00</span>
-   <span class="fd-object-number__unit">Euro</span>
+   <div class="fd-list__object fd-list__object--top-right">
+   <span class="fd-object-number fd-list__object-number">
+   <span class="fd-object-number__text fd-list__object-number-text">956.00</span>
+   <span class="fd-object-number__unit fd-list__object-number-unit">Euro</span></span>
    </div>
   </div>
   <div class="fd-list__object fd-list__object--bottom">
   <div class="fd-list__object fd-list__object--bottom-row">
   <div class="fd-list__object fd-list__object--bottom-left">
-    <span class="fd-list-attribute">First Attribute</span>
+  <div class="fd-list__object-attribute">
+  <span class="fd-list__object-attribute-text">First Attribute</span>
+  </div>
   </div>
   <div class="fd-list__object fd-list__object--bottom-right">
   <div class="fd-object-marker">
@@ -782,16 +869,20 @@ export const rtl = () => `
   </div>
   <div class="fd-list__object fd-list__object--bottom-row">
   <div class="fd-list__object fd-list__object--bottom-left">
-    <span class="fd-list-attribute">Second Attribute</span>
+  <div class="fd-list__object-attribute">
+  <span class="fd-list__object-attribute-text">Second Attribute</span>
+  </div>
   </div>
   <div class="fd-list__object fd-list__object--bottom-right">
-  <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">Second status</span></span>
+  <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">Second status</span></span>
   </div>
   </div>
   <div class="fd-list__object fd-list__object--bottom-row">
   <div class="fd-list__object fd-list__object--bottom-left">
-    <span class="fd-list-attribute">Third Attribute</span>
+  <div class="fd-list__object-attribute">
+  <span class="fd-list__object-attribute-text">Third Attribute</span>
+  </div>
   </div>
   </div>
   </div>
@@ -799,44 +890,49 @@ export const rtl = () => `
 </li>
 <li role="option" tabindex="0" class="fd-list__item">
 <div class="fd-list__content">
-   <div class="fd-list-optional">
-   <span class="fd-list-optional__text">Optional inline text</span>
+   <div class="fd-list__optional">
+   <span class="fd-list__optional-text">Optional inline text</span>
    </div>
    <div class="fd-list__object fd-list__object--top-row">
-   <span class="fd-avatar fd-avatar--s" style="background-image: url('http://lorempixel.com/400/400/nature/4/')"></span>
+   <span class="fd-avatar fd-list__object-avatar fd-avatar--s" style="background-image: url('http://lorempixel.com/400/400/nature/4/')"></span>
    <div class="fd-list__object fd-list__object--top-left">
-   <div class="fd-object-identifier">
-     <p class="fd-object-identifier__title">
+   <div class="fd-object-identifier fd-list__object-identifier">
+     <p class="fd-object-identifier__title fd-list__object-identifier-title">
    Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
     </p>
     </div></div>
-   <div class="fd-list__object fd-list__object--top-right fd-object-number">
-   <span class="fd-object-number__text">956.00</span>
-   <span class="fd-object-number__unit">Euro</span>
+   <div class="fd-list__object fd-list__object--top-right">
+   <span class="fd-object-number fd-list__object-number">
+   <span class="fd-object-number__text fd-list__object-number-text">956.00</span>
+   <span class="fd-object-number__unit fd-list__object-number-unit">Euro</span></span>
    </div>
   </div>
   <div class="fd-list__object fd-list__object--bottom">
   <div class="fd-list__object fd-list__object--bottom-row">
   <div class="fd-list__object fd-list__object--bottom-left">
-    <span class="fd-list-attribute">First Attribute very very very very very long values</span>
+  <div class="fd-list__object-attribute">
+  <span class="fd-list__object-attribute-text">First Attribute</span>
+  </div>
   </div>
   <div class="fd-list__object fd-list__object--bottom-right">
-  <span class="fd-object-status fd-object-status--negative">Negative very very very very very long values</span>
+  <span class="fd-object-status fd-list__object-status fd-object-status--negative">Negative</span>
   </div>
   </div>
   <div class="fd-list__object fd-list__object--bottom-row">
   <div class="fd-list__object fd-list__object--bottom-left">
-    <span class="fd-list-attribute">Second Attribute with very very very very very long values</span>
-  </div>
+  <div class="fd-list__object-attribute">
+  <span class="fd-list__object-attribute-text">Second Attribute</span>
+  </div>  </div>
   <div class="fd-list__object fd-list__object--bottom-right">
-  <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">Second status with very very very very very long values</span></span>
+  <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">Second status</span></span>
   </div>
   </div>
   <div class="fd-list__object fd-list__object--bottom-row">
   <div class="fd-list__object fd-list__object--bottom-left">
-    <span class="fd-list-attribute">Third Attribute with very very very very very long values</span>
-  </div>
+  <div class="fd-list__object-attribute">
+  <span class="fd-list__object-attribute-text">Third Attribute</span>
+  </div>  </div>
   </div>
   </div>
   </div>
@@ -844,43 +940,50 @@ export const rtl = () => `
 <li role="option" tabindex="0" class="fd-list__item">
   <div class="fd-list__content">
      <div class="fd-list__object fd-list__object--top-row">
-     <span class="fd-avatar fd-avatar--s" style="background-image: url('http://lorempixel.com/400/400/nature/4/')"></span>
+     <span class="fd-avatar fd-list__object-avatar fd-avatar--s" style="background-image: url('http://lorempixel.com/400/400/nature/4/')"></span>
      <div class="fd-list__object fd-list__object--top-left">
-     <div class="fd-object-identifier">
-       <p class="fd-object-identifier__title">
+     <div class="fd-object-identifier fd-list__object-identifier">
+       <p class="fd-object-identifier__title fd-list__object-identifier-title">
      Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
       </p>
       </div>
       </div>
-     <div class="fd-list__object fd-list__object--top-right fd-object-number">
-     <span class="fd-object-number__text">956.00</span>
-     <span class="fd-object-number__unit">Euro</span>
+     <div class="fd-list__object fd-list__object--top-right">
+     <span class="fd-object-number fd-list__object-number">
+     <span class="fd-object-number__text fd-list__object-number-text">956.00</span>
+     <span class="fd-object-number__unit fd-list__object-number-unit">Euro</span></span>
      </div>
     </div>
     <div class="fd-list__object fd-list__object--bottom">
     <div class="fd-list__object fd-list__object--bottom-row">
     <div class="fd-list__object fd-list__object--bottom-left">
-      <span class="fd-list-attribute">First Attribute</span>
+    <div class="fd-list__object-attribute">
+    <span class="fd-list__object-attribute-text">First Attribute</span>
+    </div>
     </div>
     <div class="fd-list__object fd-list__object--bottom-right">
-    <span class="fd-object-status fd-object-status--negative">
-    <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
-    <span class="fd-object-status__text">Negative</span>
+    <span class="fd-object-status fd-list__object-status fd-object-status--negative">
+    <i class="fd-object-status__icon fd-list__object-status-icon sap-icon--status-negative" role="presentation"></i>
+    <span class="fd-object-status__text fd-list__object-status-text">Negative</span>
    </span>
    </div>
     </div>
     <div class="fd-list__object fd-list__object--bottom-row">
     <div class="fd-list__object fd-list__object--bottom-left">
-      <span class="fd-list-attribute">Second Attribute</span>
+    <div class="fd-list__object-attribute">
+    <span class="fd-list__object-attribute-text">Second Attribute</span>
+    </div>
     </div>
     <div class="fd-list__object fd-list__object--bottom-right">
-    <span class="fd-object-status fd-object-status--positive">
-   <span class="fd-object-status__text">Second status</span></span>
+    <span class="fd-object-status fd-list__object-status fd-object-status--positive">
+   <span class="fd-object-status__text fd-list__object-status-text">Second status</span></span>
     </div>
     </div>
     <div class="fd-list__object fd-list__object--bottom-row">
     <div class="fd-list__object fd-list__object--bottom-left">
-      <span class="fd-list-attribute">Third Attribute</span>
+    <div class="fd-list__object-attribute">
+    <span class="fd-list__object-attribute-text">Third Attribute</span>
+    </div>
     </div>
     </div>
     </div>
