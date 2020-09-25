@@ -29,8 +29,10 @@ export const primary = () => `
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p class="fd-notification__footer">
-                <span class="fd-notification__footer-content">Long author name - SAP Analytics Cloud Cloud Cloud</span>
-                <span class="fd-notification__separator"></span>7 minutes ago</p>
+                <span class="fd-notification__footer-content">Long author name - SAP Analytics Cloud incididunt ut labore et dolore magna aliqua </span>
+                <span class="fd-notification__separator"></span>
+                <span class="fd-notification__footer-content">7 minutes ago</span>
+            </p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
@@ -60,8 +62,10 @@ export const noAvatar = () => `
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p class="fd-notification__footer">
-            <span class="fd-notification__footer-content">SAP Analytics Cloud</span>
-            <span class="fd-notification__separator"></span>7 minutes ago</p>
+                <span class="fd-notification__footer-content">SAP Analytics Cloud</span>
+                <span class="fd-notification__separator"></span>
+                <span class="fd-notification__footer-content">7 minutes ago</span>
+            </p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
@@ -139,8 +143,10 @@ export const warning = () => `
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <p class="fd-notification__footer">
-            <span class="fd-notification__footer-content">Tom Norton Beam</span>
-            <span class="fd-notification__separator"></span>7 minutes ago</p>
+                <span class="fd-notification__footer-content">Tom Norton Beam</span>
+                <span class="fd-notification__separator"></span>
+                <span class="fd-notification__footer-content">7 minutes ago</span>
+            </p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
@@ -179,8 +185,10 @@ export const error = () => `
           </div>
           <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <p class="fd-notification__footer">
-          <span class="fd-notification__footer-content">SAP Analytics Cloud</span>
-          <span class="fd-notification__separator"></span>7 minutes ago</p>
+            <span class="fd-notification__footer-content">SAP Analytics Cloud</span>
+            <span class="fd-notification__separator"></span>
+            <span class="fd-notification__footer-content">7 minutes ago</span>
+          </p>
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
@@ -251,9 +259,7 @@ export const notificationGroup = () => `
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p class="fd-notification__footer">
-            <span class="fd-notification__footer-content">SAP Teamm dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </span>
-            <span class="fd-notification__separator"></span>
-            <span class="fd-notification__footer-content">7 minutes ago</span>
+                <span class="fd-notification__footer-content">SAP Team dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetur adipiscing elit </span>
             </p>
         </div>
         <div class="fd-notification__actions">
@@ -322,9 +328,9 @@ export const notificationGroup = () => `
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p class="fd-notification__footer">
-            <span class="fd-notification__footer-content">SAP Analytics Cloud</span>
-            <span class="fd-notification__separator"></span>
-            <span class="fd-notification__footer-content">7 minutes ago m dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</span> 
+                <span class="fd-notification__footer-content">SAP Analytics Cloud</span>
+                <span class="fd-notification__separator"></span>
+                <span class="fd-notification__footer-content">7 minutes ago m dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</span> 
             </p>
         </div>
         <div class="fd-notification__actions">
@@ -364,7 +370,9 @@ export const mobile = () => `
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p class="fd-notification__footer">
                 <span class="fd-notification__footer-content">SAP Analytics Cloud</span>
-                <span class="fd-notification__separator"></span>7 minutes ago</p>
+                <span class="fd-notification__separator"></span>
+                <span class="fd-notification__footer-content">7 minutes ago</span>
+            </p>
         </div>
         <div class="fd-notification__actions">
                <div class="fd-popover fd-popover--right">
@@ -447,9 +455,9 @@ export const mobile = () => `
             </div>
             <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p class="fd-notification__footer">
-            <span class="fd-notification__footer-content">SAP Teamm dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </span>
-            <span class="fd-notification__separator"></span>
-            <span class="fd-notification__footer-content">7 minutes ago</span>
+                <span class="fd-notification__footer-content">SAP Teamm dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </span>
+                <span class="fd-notification__separator"></span>
+                <span class="fd-notification__footer-content">7 minutes ago</span>
             </p>
         </div>
         <div class="fd-notification__actions">

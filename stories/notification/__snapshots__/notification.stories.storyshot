@@ -86,7 +86,15 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
             <span
               class="fd-notification__separator"
             />
-            7 minutes ago
+            
+                
+            <span
+              class="fd-notification__footer-content"
+            >
+              7 minutes ago
+            </span>
+            
+            
           </p>
           
         
@@ -455,19 +463,19 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
             class="fd-notification__footer"
           >
             
-            
+                
             <span
               class="fd-notification__footer-content"
             >
               SAP Teamm dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
             </span>
             
-            
+                
             <span
               class="fd-notification__separator"
             />
             
-            
+                
             <span
               class="fd-notification__footer-content"
             >
