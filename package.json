@@ -84,7 +84,7 @@
     "postcss-custom-properties": "^9.1.1",
     "postcss-import": "^12.0.1",
     "pre-commit": "^1.2.2",
-    "puppeteer": "5.3.0",
+    "puppeteer": "5.3.1",
     "react": "^16.13.1",
     "react-is": "^16.13.1",
     "sass-loader": "^10.0.2",
