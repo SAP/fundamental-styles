@@ -81,7 +81,7 @@
     "postcss-banner": "^3.0.2",
     "postcss-clean": "^1.1.0",
     "postcss-cli": "^7.1.2",
-    "postcss-custom-properties": "^9.1.1",
+    "postcss-custom-properties": "^10.0.0",
     "postcss-import": "^12.0.1",
     "pre-commit": "^1.2.2",
     "puppeteer": "5.3.1",
