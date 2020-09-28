@@ -15,6 +15,9 @@ $block: #{$fd-namespace}-dynamic-page;
   $fd-dynamic-page-button-group-width: 4rem;
   $fd-dynamic-page-button-group-height: 0.0625rem;
   $fd-dynamic-page-focus-outline-offset: 0.0625rem;
+  $fd-button-height: 1.5rem;
+  $fd-button-clickable-height: 2rem;
+  $fd-button-touchable-area: ($fd-button-clickable-height - $fd-button-height) / 2;
 
   @include fd-reset();
 
@@ -34,8 +37,16 @@ $block: #{$fd-namespace}-dynamic-page;
     margin: $fd-dynamic-page-button-padding;
     padding: 0;
     width: $fd-dynamic-page-button-width;
-    height: 2rem;
+    height: $fd-button-height;
     min-width: $fd-dynamic-page-button-width;
+
+    // Extended touchable area
+    &::before {
+      height: $fd-button-clickable-height;
+      width: 100%;
+      top: -$fd-button-touchable-area;
+      bottom: -$fd-button-touchable-area;
+    }
 
     @include fd-rtl() {
       > [class*='sap-icon'] {
