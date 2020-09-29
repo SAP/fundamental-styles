@@ -63,7 +63,7 @@ There are no specific styles for footer when used with dynamic page.
 | **Description** | <span style="margin-left: 2rem;">**Modifier class**</span> |
 | :---- | :-------------- |
 | List background for content area|<code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_content--list-bg</code>        |
-| Transparent background for title area | <code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_title-area --transparent-bg</code> |
+| Transparent background for title area | <code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_title-area--transparent-bg</code> |
 | Transparent background for header area|<code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_header--transparent-bg</code>        |
 | Transparent background for content area|<code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_content--transparent-bg</code>        |
 
