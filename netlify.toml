@@ -9,5 +9,5 @@
   ignore = 'git log -1 --pretty=%B | grep dependabot'
   environment = { NODE_VERSION = "12.18.4" }
   publish = "storybook-static"
-  command = "npm rebuild node-sass && npm run storybook:static"
+  command = "npm run storybook:static"
 
