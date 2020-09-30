@@ -190,7 +190,7 @@ export const inputGrowth = () => `
                   aria-label="Feed" 
                   aria-required 
                   rows="4">With every line\n"textarea" grows upward\nuntil it reaches\nthe max height</textarea>
-        <button class="fd-button sap-icon--feeder-arrow fd-feed-input__submit-button" 
+        <button class="fd-button fd-feed-input__submit-button" 
                 aria-label="Send"  
                 aria-disabled="false"
                 title="Send">
