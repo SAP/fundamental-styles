@@ -187,7 +187,7 @@ $block: #{$fd-namespace}-dynamic-page;
     }
   }
 
-  &__toolbar {
+  .#{$fd-namespace}-toolbar.#{$block}__toolbar {
     padding: 0 0 0 1rem;
     margin-left: auto;  // align toolbar to right in a flex layout
 
