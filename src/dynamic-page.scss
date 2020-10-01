@@ -65,6 +65,14 @@ $block: #{$fd-namespace}-dynamic-page;
     top: 0;
   }
 
+  &__header {
+    @include fd-reset();
+
+    @include fd-flex(column) {
+      justify-content: space-between;
+    }
+  }
+
   &__title-area {
     @include fd-reset();
 
@@ -238,7 +246,7 @@ $block: #{$fd-namespace}-dynamic-page;
     text-overflow: ellipsis;
   }
 
-  &__header {
+  &__collapsible-header {
     // contains B and B1
     @include fd-reset();
 
@@ -293,7 +301,7 @@ $block: #{$fd-namespace}-dynamic-page;
     }
   }
 
-  &__header-visibility-container {
+  &__collapsible-header-visibility-container {
     @include fd-reset();
     @include fd-flex-center();
 
