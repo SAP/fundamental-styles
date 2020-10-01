@@ -104,6 +104,8 @@ $block: #{$fd-namespace}-button;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  display: inline-flex;
+  align-items: center;
 }
 
 @mixin menu-icon() {
@@ -300,6 +302,10 @@ $block: #{$fd-namespace}-button;
 
   &--menu {
     @include menu();
+
+    .#{$block}__text {
+      line-height: 1rem;
+    }
   }
 
   &--full-width {
