@@ -101,7 +101,7 @@
       @include navigation-byline-borderless();
     }
 
-    // NAVIGATION + Object
+    // NAVIGATION + Object list
     &.#{$block}--navigation-object {
       @include reset-list-item-paddings();
 

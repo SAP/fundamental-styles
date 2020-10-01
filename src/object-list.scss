@@ -7,32 +7,31 @@ $block: #{$fd-namespace}-object-list;
 
 .#{$block} {
 
-  $fd-object-list-border-bottom: 1px solid var(--sapList_BorderColor);
   $fd-object-list-with-value-zero: 0;
   $fd-object-list-with-padding-value-half: 0.5rem;
   $fd-object-list-with-padding-value-one: 1rem;
   $fd-object-list-with-value-half: 0.75rem;
   $fd-object-list-align-left: left;
   $fd-object-list-align-right: right;
-  $fd-object-list-with-vertical-align-top: top;
-  $fd-object-list-with-vertical-align-bottom: bottom;
   $fd-object-list-font-color: var(--sapContent_LabelColor);
 
   &__item {
     @include padding-top-bottom(1rem);
 
     height: 100%;
-    width: 100%;
-    display: block;
-    box-sizing: border-box;
-    border-bottom: $fd-object-list-border-bottom;
 
-    >[class*=__link] {
+    .#{$fd-namespace}-list__link {
       @include fd-active() {
-        span,
-        p,
-        img,
-        i[class*=sap-icon] {
+        .#{$block}__intro,
+        .#{$block}__object-attribute,
+        .#{$fd-namespace}-avatar,
+        .#{$fd-namespace}-object-identifier__title,
+        .#{$fd-namespace}-object-marker__text,
+        .#{$fd-namespace}-object-marker__icon,
+        .#{$fd-namespace}-object-number__text,
+        .#{$fd-namespace}-object-number__unit,
+        .#{$fd-namespace}-object-status__text,
+        .#{$fd-namespace}-object-status__icon {
           color: var(--sapList_Active_TextColor);
           text-shadow: none;
         }
@@ -42,17 +41,12 @@ $block: #{$fd-namespace}-object-list;
 
   &__intro {
     @include fd-reset();
+    @include fd-ellipsis();
 
     width: 100%;
-    display: flex;
+    max-width: 100%;
+    color: $fd-object-list-font-color;
     padding-bottom: $fd-object-list-with-value-half;
-
-    &-text {
-      @include fd-ellipsis();
-
-      max-width: calc(100% - 1rem);
-      color: $fd-object-list-font-color;
-    }
   }
 
   &__container {
@@ -64,21 +58,24 @@ $block: #{$fd-namespace}-object-list;
   }
 
   &__header {
+    @include fd-reset();
+
     display: flex;
-    vertical-align: $fd-object-list-with-vertical-align-top;
+    vertical-align: top;
 
     .#{$block}__header-left:not(:first-child) {
-      .#{$block}__object-identifier {
-        margin-left: $fd-object-list-with-value-half;
+      margin-left: $fd-object-list-with-value-half;
 
-        @include fd-rtl() {
-          margin-right: $fd-object-list-with-value-half;
-        }
+      @include fd-rtl() {
+        margin-left: 0;
+        margin-right: $fd-object-list-with-value-half;
       }
     }
   }
 
   &__header-left {
+    @include fd-reset();
+
     width: 60%;
 
     @include fd-rtl() {
@@ -87,14 +84,13 @@ $block: #{$fd-namespace}-object-list;
   }
 
   &__header-right {
+    @include fd-reset();
+
     width: 40%;
     text-align: $fd-object-list-align-right;
     padding-left: $fd-object-list-with-padding-value-one;
 
-    // object number and object status extra margin values,
-    // by whcih all right items are not aligned same
-    //  comments will be removed after review
-    >[class*=number] {
+    .#{$fd-namespace}-object-number {
       margin-right: $fd-object-list-with-value-zero;
     }
 
@@ -103,13 +99,15 @@ $block: #{$fd-namespace}-object-list;
       padding-right: $fd-object-list-with-padding-value-one;
       padding-left: $fd-object-list-with-value-zero;
 
-      >[class*=number] {
+      .#{$fd-namespace}-object-number {
         margin-left: $fd-object-list-with-value-zero;
       }
     }
   }
 
   &__row {
+    @include fd-reset();
+
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -121,6 +119,7 @@ $block: #{$fd-namespace}-object-list;
   }
 
   &__row-left {
+    @include fd-reset();
     @include fd-ellipsis();
 
     width: 50%;
@@ -142,6 +141,7 @@ $block: #{$fd-namespace}-object-list;
   }
 
   &__row-right {
+    @include fd-reset();
     @include fd-ellipsis();
 
     width: 50%;
@@ -151,10 +151,11 @@ $block: #{$fd-namespace}-object-list;
       $fd-object-list-with-value-zero
       $fd-object-list-with-padding-value-half
       $fd-object-list-with-padding-value-half;
-    // added for object status as it parent has display:flex,
-    //  comments will be removed after review
-    >[class*=status] {
-      > * {
+
+    .#{$fd-namespace}-object-status {
+      line-height: 1.4;
+
+      &__text {
         @include fd-ellipsis();
       }
 
@@ -169,33 +170,36 @@ $block: #{$fd-namespace}-object-list;
         $fd-object-list-with-padding-value-half
         $fd-object-list-with-value-zero;
 
-      >[class*=status] {
+      .#{$fd-namespace}-object-status {
         margin-left: $fd-object-list-with-value-zero;
       }
     }
   }
 
   &__content {
+    @include fd-reset();
+
     margin-top: 0.25rem;
   }
 
   &__object-number {
-    &-text {
-      font-size: 1.375rem !important;
-      display: block !important;
+
+    .#{$fd-namespace}-object-number__text {
+      font-size: 1.375rem;
+      display: block;
 
       &::after {
-        content: none !important;
+        content: none;
       }
     }
   }
 
   &__object-identifier {
-    &-title {
-      @include fd-typography(var(--sapFontHeader4Size));
+    .#{$fd-namespace}-object-identifier__title {
       @include line-clamp($lines: 2);
 
       line-height: 1.5;
+      font-size: var(--sapFontHeader4Size);
     }
   }
 
@@ -203,8 +207,6 @@ $block: #{$fd-namespace}-object-list;
     @include fd-reset();
     @include fd-ellipsis();
 
-    &-text {
-      color: $fd-object-list-font-color;
-    }
+    color: $fd-object-list-font-color;
   }
 }

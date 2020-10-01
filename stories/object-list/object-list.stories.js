@@ -1,6 +1,6 @@
 import '../../dist/list.css';
 import '../../dist/icon.css';
-import '../../dist/checkbox.css';
+import '../../dist/object-list.css';
 
 export default {
     title: 'Components/Object List',
@@ -33,23 +33,19 @@ It provides a structure for extending standard list with additional content.
 
   - <code class="docs-code">fd-object-list</code> ul element
    - <code class="docs-code">fd-object-list\\_\\_item</code> li element
-    - <code class="docs-code">fd-object-list\\_\\_container</code> container to hold child elements
+     - <code class="docs-code">fd-object-list\\_\\_container</code> container to hold child elements
        - <code class="docs-code">fd-object-list\\_\\_intro</code> introduction text div
-        - <code class="docs-code">fd-object-list\\_\\_intro-text</code> introduction text
        - <code class="docs-code">fd-object-list\\_\\_header</code> container to hold header elements
-        - <code class="docs-code">fd-object-list\\_\\_header-left</code> container to hold header left elements
-          - <code class="docs-code">fd-object-list\\_\\_object-identifier</code> object identifier element
-            - <code class="docs-code">fd-object-list\\_\\_object-identifier-title</code> object identifier title element
-        - <code class="docs-code">fd-object-list\\_\\_header-right</code> container to hold header right elements
-          - <code class="docs-code">fd-object-list\\_\\_object-number</code> object number element
-            - <code class="docs-code">fd-object-list\\_\\_object-number-text</code> object number text element
+         - <code class="docs-code">fd-object-list\\_\\_header-left</code> container to hold header left elements
+           - <code class="docs-code">fd-object-list\\_\\_object-identifier</code> object identifier element
+         - <code class="docs-code">fd-object-list\\_\\_header-right</code> container to hold header right elements
+           - <code class="docs-code">fd-object-list\\_\\_object-number</code> object number element
        - <code class="docs-code">fd-object-list\\_\\_content</code> container to hold rows of attributes and status elements
         - <code class="docs-code">fd-object-list\\_\\_row</code> container to hold attributes and status elements
          - <code class="docs-code">fd-object-list\\_\\_row-right</code> container to hold right elements of row
-          - <code class="docs-code">fd-object-status</code>, <code class="docs-code">fd-object-marker</code> object status and object status elements
+           - <code class="docs-code">fd-object-status</code>, <code class="docs-code">fd-object-marker</code> object status and object status elements
          - <code class="docs-code">fd-object-list\\_\\_row-left</code> container to hold left elements of row
-          - <code class="docs-code">fd-object-list\\_\\_object-attribute</code> object attribute element
-            - <code class="docs-code">fd-object-list\\_\\_object-attribute-text</code> object attribute text element
+           - <code class="docs-code">fd-object-list\\_\\_object-attribute</code> object attribute element
         
 `,
         tags: ['f3', 'a11y', 'theme', 'development']
@@ -62,7 +58,7 @@ export const object = () => `
   <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
-       <span class="fd-object-list__intro-text">Optional inline text very very very long</span>
+       Optional inline text very very very long
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
@@ -70,15 +66,15 @@ export const object = () => `
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
-          <p class="fd-object-identifier__title fd-object-list__object-identifier-title">
+          <p class="fd-object-identifier__title">
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
         <div class="fd-object-list__header-right">
           <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
-            <span class="fd-object-number__text fd-object-list__object-number-text">457.00</span>
-            <span class="fd-object-number__unit fd-object-list__object-number-unit">Euro</span>
+            <span class="fd-object-number__text">457.00</span>
+            <span class="fd-object-number__unit">Euro</span>
           </span>
         </div>
       </div>
@@ -86,8 +82,8 @@ export const object = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">
-              First Attribute</span>
+              
+              First Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -103,7 +99,7 @@ export const object = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Second Attribute</span>
+              Second Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -115,7 +111,7 @@ export const object = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Third Attribute</span>
+              Third Attribute
             </div>
         </div>
       </div>
@@ -125,7 +121,7 @@ export const object = () => `
   <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
-       <span class="fd-object-list__intro-text">Optional inline text very very very long</span>
+       Optional inline text very very very long
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
@@ -133,14 +129,14 @@ export const object = () => `
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
-          <p class="fd-object-identifier__title fd-object-list__object-identifier-title">
+          <p class="fd-object-identifier__title">
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
         <div class="fd-object-list__header-right">
           <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
-            <span class="fd-object-number__text fd-object-list__object-number-text">956.00</span>
+            <span class="fd-object-number__text">956.00</span>
             <span class="fd-object-number__unit">Euro</span>
           </span>
         </div>
@@ -149,8 +145,8 @@ export const object = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">
-              First Attribute</span>
+              
+              First Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -163,7 +159,7 @@ export const object = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Second Attribute</span>
+              Second Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -175,7 +171,7 @@ export const object = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Third Attribute</span>
+              Third Attribute
             </div>
         </div>
       </div>
@@ -185,7 +181,7 @@ export const object = () => `
   <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
-       <span class="fd-object-list__intro-text">Optional inline text very very very long</span>
+       Optional inline text very very very long
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
@@ -193,14 +189,14 @@ export const object = () => `
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
-          <p class="fd-object-identifier__title fd-object-list__object-identifier-title">
+          <p class="fd-object-identifier__title">
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
         <div class="fd-object-list__header-right">
           <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
-            <span class="fd-object-number__text fd-object-list__object-number-text">956.00</span>
+            <span class="fd-object-number__text">956.00</span>
             <span class="fd-object-number__unit">Euro</span>
           </span>
         </div>
@@ -209,8 +205,8 @@ export const object = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">
-              First Attribute</span>
+              
+              First Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -220,7 +216,7 @@ export const object = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Second Attribute</span>
+              Second Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -232,7 +228,7 @@ export const object = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Third Attribute</span>
+              Third Attribute
             </div>
         </div>
       </div>
@@ -242,7 +238,7 @@ export const object = () => `
   <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
-       <span class="fd-object-list__intro-text">Optional inline text very very very long</span>
+       Optional inline text very very very long
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
@@ -250,15 +246,15 @@ export const object = () => `
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
-          <p class="fd-object-identifier__title fd-object-list__object-identifier-title">
+          <p class="fd-object-identifier__title">
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
         <div class="fd-object-list__header-right">
           <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
-            <span class="fd-object-number__text fd-object-list__object-number-text">457.00</span>
-            <span class="fd-object-number__unit fd-object-list__object-number-unit">Euro</span>
+            <span class="fd-object-number__text">457.00</span>
+            <span class="fd-object-number__unit">Euro</span>
           </span>
         </div>
       </div>
@@ -266,8 +262,8 @@ export const object = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">
-              First Attribute</span>
+              
+              First Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -280,14 +276,14 @@ export const object = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Second Attribute</span>
+              Second Attribute
             </div>
           </div>
         </div>
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Third Attribute</span>
+              Third Attribute
             </div>
         </div>
       </div>
@@ -327,7 +323,7 @@ export const navigation = () => `
   <a tabindex="0" class="fd-list__link" href="#">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
-       <span class="fd-object-list__intro-text">Optional inline text very very very long</span>
+       Optional inline text very very very long
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s fd-avatar--circle"
@@ -335,15 +331,15 @@ export const navigation = () => `
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
-          <p class="fd-object-identifier__title fd-object-list__object-identifier-title">
+          <p class="fd-object-identifier__title">
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
         <div class="fd-object-list__header-right">
           <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
-            <span class="fd-object-number__text fd-object-list__object-number-text">457.00</span>
-            <span class="fd-object-number__unit fd-object-list__object-number-unit">Euro</span>
+            <span class="fd-object-number__text">457.00</span>
+            <span class="fd-object-number__unit">Euro</span>
           </span>
         </div>
       </div>
@@ -351,8 +347,8 @@ export const navigation = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">
-              First Attribute</span>
+              
+              First Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -368,7 +364,7 @@ export const navigation = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Second Attribute</span>
+              Second Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -380,7 +376,7 @@ export const navigation = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Third Attribute</span>
+              Third Attribute
             </div>
         </div>
       </div>
@@ -392,7 +388,7 @@ export const navigation = () => `
   <a tabindex="0" class="fd-list__link" href="#">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
-       <span class="fd-object-list__intro-text">Optional inline text very very very long</span>
+       Optional inline text very very very long
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s fd-avatar--circle"
@@ -400,14 +396,14 @@ export const navigation = () => `
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
-          <p class="fd-object-identifier__title fd-object-list__object-identifier-title">
+          <p class="fd-object-identifier__title">
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
         <div class="fd-object-list__header-right">
           <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
-            <span class="fd-object-number__text fd-object-list__object-number-text">956.00</span>
+            <span class="fd-object-number__text">956.00</span>
             <span class="fd-object-number__unit">Euro</span>
           </span>
         </div>
@@ -416,8 +412,8 @@ export const navigation = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">
-              First Attribute</span>
+              
+              First Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -430,7 +426,7 @@ export const navigation = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Second Attribute</span>
+              Second Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -442,7 +438,7 @@ export const navigation = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Third Attribute</span>
+              Third Attribute
             </div>
         </div>
       </div>
@@ -471,20 +467,20 @@ export const selection = () => `
   <li role="option" tabindex="0" class="fd-list__item fd-object-list__item is-selected">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
-       <span class="fd-object-list__intro-text">Optional inline text</span>
+       Optional inline text</span>
       </div>
       <div class="fd-object-list__header">
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
-          <p class="fd-object-identifier__title fd-object-list__object-identifier-title">
+          <p class="fd-object-identifier__title">
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
         <div class="fd-object-list__header-right">
           <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
-            <span class="fd-object-number__text fd-object-list__object-number-text">457.00</span>
-            <span class="fd-object-number__unit fd-object-list__object-number-unit">Euro</span>
+            <span class="fd-object-number__text">457.00</span>
+            <span class="fd-object-number__unit">Euro</span>
           </span>
         </div>
       </div>
@@ -492,8 +488,8 @@ export const selection = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">
-              First Attribute</span>
+              
+              First Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -509,7 +505,7 @@ export const selection = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Second Attribute</span>
+              Second Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -521,7 +517,7 @@ export const selection = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Third Attribute</span>
+              Third Attribute
             </div>
         </div>
       </div>
@@ -531,7 +527,7 @@ export const selection = () => `
   <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
-       <span class="fd-object-list__intro-text">Optional inline text</span>
+       Optional inline text</span>
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
@@ -539,14 +535,14 @@ export const selection = () => `
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
-          <p class="fd-object-identifier__title fd-object-list__object-identifier-title">
+          <p class="fd-object-identifier__title">
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
         <div class="fd-object-list__header-right">
           <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
-            <span class="fd-object-number__text fd-object-list__object-number-text">666.00</span>
+            <span class="fd-object-number__text">666.00</span>
             <span class="fd-object-number__unit">Euro</span>
           </span>
         </div>
@@ -555,8 +551,8 @@ export const selection = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">
-              First Attribute</span>
+              
+              First Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -569,7 +565,7 @@ export const selection = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Second Attribute</span>
+              Second Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -581,7 +577,7 @@ export const selection = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Third Attribute</span>
+              Third Attribute
             </div>
         </div>
       </div>
@@ -609,7 +605,7 @@ export const selectionWithSelectionAndNavigation = () => `
   <a tabindex="0" class="fd-list__link"> 
   <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
-       <span class="fd-object-list__intro-text">Optional inline text</span>
+       Optional inline text</span>
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
@@ -617,15 +613,15 @@ export const selectionWithSelectionAndNavigation = () => `
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
-          <p class="fd-object-identifier__title fd-object-list__object-identifier-title">
+          <p class="fd-object-identifier__title">
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
         <div class="fd-object-list__header-right">
           <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
-            <span class="fd-object-number__text fd-object-list__object-number-text">457.00</span>
-            <span class="fd-object-number__unit fd-object-list__object-number-unit">Euro</span>
+            <span class="fd-object-number__text">457.00</span>
+            <span class="fd-object-number__unit">Euro</span>
           </span>
         </div>
       </div>
@@ -633,8 +629,8 @@ export const selectionWithSelectionAndNavigation = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">
-              First Attribute</span>
+              
+              First Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -650,7 +646,7 @@ export const selectionWithSelectionAndNavigation = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Second Attribute</span>
+              Second Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -662,7 +658,7 @@ export const selectionWithSelectionAndNavigation = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Third Attribute</span>
+              Third Attribute
             </div>
         </div>
       </div>
@@ -674,7 +670,7 @@ export const selectionWithSelectionAndNavigation = () => `
   <a tabindex="0" class="fd-list__link">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
-       <span class="fd-object-list__intro-text">Optional inline text</span>
+      Optional inline text</span>
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
@@ -682,14 +678,14 @@ export const selectionWithSelectionAndNavigation = () => `
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
-          <p class="fd-object-identifier__title fd-object-list__object-identifier-title">
+          <p class="fd-object-identifier__title">
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
         <div class="fd-object-list__header-right">
           <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
-            <span class="fd-object-number__text fd-object-list__object-number-text">666.00</span>
+            <span class="fd-object-number__text">666.00</span>
             <span class="fd-object-number__unit">Euro</span>
           </span>
         </div>
@@ -698,8 +694,8 @@ export const selectionWithSelectionAndNavigation = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">
-              First Attribute</span>
+              
+              First Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -712,7 +708,7 @@ export const selectionWithSelectionAndNavigation = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Second Attribute</span>
+              Second Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -724,7 +720,7 @@ export const selectionWithSelectionAndNavigation = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Third Attribute</span>
+              Third Attribute
             </div>
         </div>
       </div>
@@ -752,7 +748,7 @@ export const borderless = () => `
   <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
-       <span class="fd-object-list__intro-text">Optional inline text very very very long</span>
+      Optional inline text very very very long
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
@@ -760,15 +756,15 @@ export const borderless = () => `
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
-          <p class="fd-object-identifier__title fd-object-list__object-identifier-title">
+          <p class="fd-object-identifier__title">
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
         <div class="fd-object-list__header-right">
           <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
-            <span class="fd-object-number__text fd-object-list__object-number-text">457.00</span>
-            <span class="fd-object-number__unit fd-object-list__object-number-unit">Euro</span>
+            <span class="fd-object-number__text">457.00</span>
+            <span class="fd-object-number__unit">Euro</span>
           </span>
         </div>
       </div>
@@ -776,8 +772,8 @@ export const borderless = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">
-              First Attribute</span>
+              
+              First Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -793,7 +789,7 @@ export const borderless = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Second Attribute</span>
+              Second Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -805,7 +801,7 @@ export const borderless = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Third Attribute</span>
+              Third Attribute
             </div>
         </div>
       </div>
@@ -815,7 +811,7 @@ export const borderless = () => `
   <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
-       <span class="fd-object-list__intro-text">Optional inline text very very very long</span>
+      Optional inline text very very very long
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
@@ -823,14 +819,14 @@ export const borderless = () => `
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
-          <p class="fd-object-identifier__title fd-object-list__object-identifier-title">
+          <p class="fd-object-identifier__title">
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
         <div class="fd-object-list__header-right">
           <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
-            <span class="fd-object-number__text fd-object-list__object-number-text">956.00</span>
+            <span class="fd-object-number__text">956.00</span>
             <span class="fd-object-number__unit">Euro</span>
           </span>
         </div>
@@ -839,8 +835,8 @@ export const borderless = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">
-              First Attribute</span>
+              
+              First Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -853,7 +849,7 @@ export const borderless = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Second Attribute</span>
+              Second Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -865,7 +861,7 @@ export const borderless = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Third Attribute</span>
+              Third Attribute
             </div>
         </div>
       </div>
@@ -875,7 +871,7 @@ export const borderless = () => `
   <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
-       <span class="fd-object-list__intro-text">Optional inline text very very very long</span>
+      Optional inline text very very very long
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
@@ -883,14 +879,14 @@ export const borderless = () => `
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
-          <p class="fd-object-identifier__title fd-object-list__object-identifier-title">
+          <p class="fd-object-identifier__title">
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
         <div class="fd-object-list__header-right">
           <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
-            <span class="fd-object-number__text fd-object-list__object-number-text">956.00</span>
+            <span class="fd-object-number__text">956.00</span>
             <span class="fd-object-number__unit">Euro</span>
           </span>
         </div>
@@ -899,8 +895,8 @@ export const borderless = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">
-              First Attribute</span>
+              
+              First Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -910,7 +906,7 @@ export const borderless = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Second Attribute</span>
+              Second Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -922,7 +918,7 @@ export const borderless = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Third Attribute</span>
+              Third Attribute
             </div>
         </div>
       </div>
@@ -951,7 +947,7 @@ export const rtl = () => `
   <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
-       <span class="fd-object-list__intro-text">Optional inline text very very very long</span>
+       Optional inline text very very very long
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
@@ -959,15 +955,15 @@ export const rtl = () => `
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
-          <p class="fd-object-identifier__title fd-object-list__object-identifier-title">
+          <p class="fd-object-identifier__title">
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
         <div class="fd-object-list__header-right">
           <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
-            <span class="fd-object-number__text fd-object-list__object-number-text">457.00</span>
-            <span class="fd-object-number__unit fd-object-list__object-number-unit">Euro</span>
+            <span class="fd-object-number__text">457.00</span>
+            <span class="fd-object-number__unit">Euro</span>
           </span>
         </div>
       </div>
@@ -975,8 +971,8 @@ export const rtl = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">
-              First Attribute</span>
+              
+              First Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -992,7 +988,7 @@ export const rtl = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Second Attribute</span>
+              Second Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -1004,7 +1000,7 @@ export const rtl = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Third Attribute</span>
+              Third Attribute
             </div>
         </div>
       </div>
@@ -1014,7 +1010,7 @@ export const rtl = () => `
   <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
-       <span class="fd-object-list__intro-text">Optional inline text very very very long</span>
+       Optional inline text very very very long
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
@@ -1022,14 +1018,14 @@ export const rtl = () => `
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
-          <p class="fd-object-identifier__title fd-object-list__object-identifier-title">
+          <p class="fd-object-identifier__title">
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
         <div class="fd-object-list__header-right">
           <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
-            <span class="fd-object-number__text fd-object-list__object-number-text">956.00</span>
+            <span class="fd-object-number__text">956.00</span>
             <span class="fd-object-number__unit">Euro</span>
           </span>
         </div>
@@ -1038,8 +1034,8 @@ export const rtl = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">
-              First Attribute</span>
+              
+              First Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -1052,7 +1048,7 @@ export const rtl = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Second Attribute</span>
+              Second Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -1064,7 +1060,7 @@ export const rtl = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Third Attribute</span>
+              Third Attribute
             </div>
         </div>
       </div>
@@ -1074,7 +1070,7 @@ export const rtl = () => `
   <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
-       <span class="fd-object-list__intro-text">Optional inline text very very very long</span>
+       Optional inline text very very very long
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
@@ -1082,14 +1078,14 @@ export const rtl = () => `
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
-          <p class="fd-object-identifier__title fd-object-list__object-identifier-title">
+          <p class="fd-object-identifier__title">
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
         <div class="fd-object-list__header-right">
           <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
-            <span class="fd-object-number__text fd-object-list__object-number-text">956.00</span>
+            <span class="fd-object-number__text">956.00</span>
             <span class="fd-object-number__unit">Euro</span>
           </span>
         </div>
@@ -1098,8 +1094,8 @@ export const rtl = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">
-              First Attribute</span>
+              
+              First Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -1109,7 +1105,7 @@ export const rtl = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Second Attribute</span>
+              Second Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -1121,7 +1117,7 @@ export const rtl = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Third Attribute</span>
+              Third Attribute
             </div>
         </div>
       </div>
@@ -1131,7 +1127,7 @@ export const rtl = () => `
   <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
-       <span class="fd-object-list__intro-text">Optional inline text very very very long</span>
+       Optional inline text very very very long
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
@@ -1139,15 +1135,15 @@ export const rtl = () => `
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
-          <p class="fd-object-identifier__title fd-object-list__object-identifier-title">
+          <p class="fd-object-identifier__title">
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
         <div class="fd-object-list__header-right">
           <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
-            <span class="fd-object-number__text fd-object-list__object-number-text">457.00</span>
-            <span class="fd-object-number__unit fd-object-list__object-number-unit">Euro</span>
+            <span class="fd-object-number__text">457.00</span>
+            <span class="fd-object-number__unit">Euro</span>
           </span>
         </div>
       </div>
@@ -1155,8 +1151,8 @@ export const rtl = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">
-              First Attribute</span>
+              
+              First Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -1169,14 +1165,14 @@ export const rtl = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Second Attribute</span>
+              Second Attribute
             </div>
           </div>
         </div>
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              <span class="fd-object-list__object-attribute-text">Third Attribute</span>
+              Third Attribute
             </div>
         </div>
       </div>

@@ -39,13 +39,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
             class="fd-object-list__intro"
           >
             
-       
-            <span
-              class="fd-object-list__intro-text"
-            >
-              Optional inline text very very very long
-            </span>
-            
+      Optional inline text very very very long
       
           </div>
           
@@ -75,7 +69,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
                 
           
                 <p
-                  class="fd-object-identifier__title fd-object-list__object-identifier-title"
+                  class="fd-object-identifier__title"
                 >
                   
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
@@ -100,14 +94,14 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
                 
             
                 <span
-                  class="fd-object-number__text fd-object-list__object-number-text"
+                  class="fd-object-number__text"
                 >
                   457.00
                 </span>
                 
             
                 <span
-                  class="fd-object-number__unit fd-object-list__object-number-unit"
+                  class="fd-object-number__unit"
                 >
                   Euro
                 </span>
@@ -142,13 +136,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
                 >
                   
               
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    
               First Attribute
-                  </span>
-                  
             
                 </div>
                 
@@ -209,13 +197,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
                   class="fd-object-list__object-attribute"
                 >
                   
-              
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    Second Attribute
-                  </span>
-                  
+              Second Attribute
             
                 </div>
                 
@@ -263,13 +245,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
                   class="fd-object-list__object-attribute"
                 >
                   
-              
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    Third Attribute
-                  </span>
-                  
+              Third Attribute
             
                 </div>
                 
@@ -305,13 +281,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
             class="fd-object-list__intro"
           >
             
-       
-            <span
-              class="fd-object-list__intro-text"
-            >
-              Optional inline text very very very long
-            </span>
-            
+      Optional inline text very very very long
       
           </div>
           
@@ -341,7 +311,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
                 
           
                 <p
-                  class="fd-object-identifier__title fd-object-list__object-identifier-title"
+                  class="fd-object-identifier__title"
                 >
                   
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
@@ -366,7 +336,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
                 
             
                 <span
-                  class="fd-object-number__text fd-object-list__object-number-text"
+                  class="fd-object-number__text"
                 >
                   956.00
                 </span>
@@ -408,13 +378,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
                 >
                   
               
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    
               First Attribute
-                  </span>
-                  
             
                 </div>
                 
@@ -468,13 +432,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
                   class="fd-object-list__object-attribute"
                 >
                   
-              
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    Second Attribute
-                  </span>
-                  
+              Second Attribute
             
                 </div>
                 
@@ -522,13 +480,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
                   class="fd-object-list__object-attribute"
                 >
                   
-              
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    Third Attribute
-                  </span>
-                  
+              Third Attribute
             
                 </div>
                 
@@ -564,13 +516,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
             class="fd-object-list__intro"
           >
             
-       
-            <span
-              class="fd-object-list__intro-text"
-            >
-              Optional inline text very very very long
-            </span>
-            
+      Optional inline text very very very long
       
           </div>
           
@@ -600,7 +546,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
                 
           
                 <p
-                  class="fd-object-identifier__title fd-object-list__object-identifier-title"
+                  class="fd-object-identifier__title"
                 >
                   
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
@@ -625,7 +571,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
                 
             
                 <span
-                  class="fd-object-number__text fd-object-list__object-number-text"
+                  class="fd-object-number__text"
                 >
                   956.00
                 </span>
@@ -667,13 +613,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
                 >
                   
               
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    
               First Attribute
-                  </span>
-                  
             
                 </div>
                 
@@ -713,13 +653,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
                   class="fd-object-list__object-attribute"
                 >
                   
-              
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    Second Attribute
-                  </span>
-                  
+              Second Attribute
             
                 </div>
                 
@@ -767,13 +701,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
                   class="fd-object-list__object-attribute"
                 >
                   
-              
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    Third Attribute
-                  </span>
-                  
+              Third Attribute
             
                 </div>
                 
@@ -850,13 +778,7 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
               class="fd-object-list__intro"
             >
               
-       
-              <span
-                class="fd-object-list__intro-text"
-              >
-                Optional inline text very very very long
-              </span>
-              
+       Optional inline text very very very long
       
             </div>
             
@@ -886,7 +808,7 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
                   
           
                   <p
-                    class="fd-object-identifier__title fd-object-list__object-identifier-title"
+                    class="fd-object-identifier__title"
                   >
                     
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
@@ -911,14 +833,14 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
                   
             
                   <span
-                    class="fd-object-number__text fd-object-list__object-number-text"
+                    class="fd-object-number__text"
                   >
                     457.00
                   </span>
                   
             
                   <span
-                    class="fd-object-number__unit fd-object-list__object-number-unit"
+                    class="fd-object-number__unit"
                   >
                     Euro
                   </span>
@@ -953,13 +875,7 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
                   >
                     
               
-                    <span
-                      class="fd-object-list__object-attribute-text"
-                    >
-                      
               First Attribute
-                    </span>
-                    
             
                   </div>
                   
@@ -1020,13 +936,7 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
                     class="fd-object-list__object-attribute"
                   >
                     
-              
-                    <span
-                      class="fd-object-list__object-attribute-text"
-                    >
-                      Second Attribute
-                    </span>
-                    
+              Second Attribute
             
                   </div>
                   
@@ -1074,13 +984,7 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
                     class="fd-object-list__object-attribute"
                   >
                     
-              
-                    <span
-                      class="fd-object-list__object-attribute-text"
-                    >
-                      Third Attribute
-                    </span>
-                    
+              Third Attribute
             
                   </div>
                   
@@ -1126,13 +1030,7 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
               class="fd-object-list__intro"
             >
               
-       
-              <span
-                class="fd-object-list__intro-text"
-              >
-                Optional inline text very very very long
-              </span>
-              
+       Optional inline text very very very long
       
             </div>
             
@@ -1162,7 +1060,7 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
                   
           
                   <p
-                    class="fd-object-identifier__title fd-object-list__object-identifier-title"
+                    class="fd-object-identifier__title"
                   >
                     
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
@@ -1187,7 +1085,7 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
                   
             
                   <span
-                    class="fd-object-number__text fd-object-list__object-number-text"
+                    class="fd-object-number__text"
                   >
                     956.00
                   </span>
@@ -1229,13 +1127,7 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
                   >
                     
               
-                    <span
-                      class="fd-object-list__object-attribute-text"
-                    >
-                      
               First Attribute
-                    </span>
-                    
             
                   </div>
                   
@@ -1289,13 +1181,7 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
                     class="fd-object-list__object-attribute"
                   >
                     
-              
-                    <span
-                      class="fd-object-list__object-attribute-text"
-                    >
-                      Second Attribute
-                    </span>
-                    
+              Second Attribute
             
                   </div>
                   
@@ -1343,13 +1229,7 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
                     class="fd-object-list__object-attribute"
                   >
                     
-              
-                    <span
-                      class="fd-object-list__object-attribute-text"
-                    >
-                      Third Attribute
-                    </span>
-                    
+              Third Attribute
             
                   </div>
                   
@@ -1415,13 +1295,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
           class="fd-object-list__intro"
         >
           
-       
-          <span
-            class="fd-object-list__intro-text"
-          >
-            Optional inline text very very very long
-          </span>
-          
+       Optional inline text very very very long
       
         </div>
         
@@ -1451,7 +1325,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
               
           
               <p
-                class="fd-object-identifier__title fd-object-list__object-identifier-title"
+                class="fd-object-identifier__title"
               >
                 
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
@@ -1476,14 +1350,14 @@ exports[`Storyshots Components/Object List Object 1`] = `
               
             
               <span
-                class="fd-object-number__text fd-object-list__object-number-text"
+                class="fd-object-number__text"
               >
                 457.00
               </span>
               
             
               <span
-                class="fd-object-number__unit fd-object-list__object-number-unit"
+                class="fd-object-number__unit"
               >
                 Euro
               </span>
@@ -1518,13 +1392,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
               >
                 
               
-                <span
-                  class="fd-object-list__object-attribute-text"
-                >
-                  
               First Attribute
-                </span>
-                
             
               </div>
               
@@ -1585,13 +1453,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
                 class="fd-object-list__object-attribute"
               >
                 
-              
-                <span
-                  class="fd-object-list__object-attribute-text"
-                >
-                  Second Attribute
-                </span>
-                
+              Second Attribute
             
               </div>
               
@@ -1639,13 +1501,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
                 class="fd-object-list__object-attribute"
               >
                 
-              
-                <span
-                  class="fd-object-list__object-attribute-text"
-                >
-                  Third Attribute
-                </span>
-                
+              Third Attribute
             
               </div>
               
@@ -1681,13 +1537,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
           class="fd-object-list__intro"
         >
           
-       
-          <span
-            class="fd-object-list__intro-text"
-          >
-            Optional inline text very very very long
-          </span>
-          
+       Optional inline text very very very long
       
         </div>
         
@@ -1717,7 +1567,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
               
           
               <p
-                class="fd-object-identifier__title fd-object-list__object-identifier-title"
+                class="fd-object-identifier__title"
               >
                 
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
@@ -1742,7 +1592,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
               
             
               <span
-                class="fd-object-number__text fd-object-list__object-number-text"
+                class="fd-object-number__text"
               >
                 956.00
               </span>
@@ -1784,13 +1634,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
               >
                 
               
-                <span
-                  class="fd-object-list__object-attribute-text"
-                >
-                  
               First Attribute
-                </span>
-                
             
               </div>
               
@@ -1844,13 +1688,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
                 class="fd-object-list__object-attribute"
               >
                 
-              
-                <span
-                  class="fd-object-list__object-attribute-text"
-                >
-                  Second Attribute
-                </span>
-                
+              Second Attribute
             
               </div>
               
@@ -1898,13 +1736,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
                 class="fd-object-list__object-attribute"
               >
                 
-              
-                <span
-                  class="fd-object-list__object-attribute-text"
-                >
-                  Third Attribute
-                </span>
-                
+              Third Attribute
             
               </div>
               
@@ -1940,13 +1772,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
           class="fd-object-list__intro"
         >
           
-       
-          <span
-            class="fd-object-list__intro-text"
-          >
-            Optional inline text very very very long
-          </span>
-          
+       Optional inline text very very very long
       
         </div>
         
@@ -1976,7 +1802,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
               
           
               <p
-                class="fd-object-identifier__title fd-object-list__object-identifier-title"
+                class="fd-object-identifier__title"
               >
                 
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
@@ -2001,7 +1827,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
               
             
               <span
-                class="fd-object-number__text fd-object-list__object-number-text"
+                class="fd-object-number__text"
               >
                 956.00
               </span>
@@ -2043,13 +1869,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
               >
                 
               
-                <span
-                  class="fd-object-list__object-attribute-text"
-                >
-                  
               First Attribute
-                </span>
-                
             
               </div>
               
@@ -2089,13 +1909,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
                 class="fd-object-list__object-attribute"
               >
                 
-              
-                <span
-                  class="fd-object-list__object-attribute-text"
-                >
-                  Second Attribute
-                </span>
-                
+              Second Attribute
             
               </div>
               
@@ -2143,13 +1957,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
                 class="fd-object-list__object-attribute"
               >
                 
-              
-                <span
-                  class="fd-object-list__object-attribute-text"
-                >
-                  Third Attribute
-                </span>
-                
+              Third Attribute
             
               </div>
               
@@ -2185,13 +1993,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
           class="fd-object-list__intro"
         >
           
-       
-          <span
-            class="fd-object-list__intro-text"
-          >
-            Optional inline text very very very long
-          </span>
-          
+       Optional inline text very very very long
       
         </div>
         
@@ -2221,7 +2023,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
               
           
               <p
-                class="fd-object-identifier__title fd-object-list__object-identifier-title"
+                class="fd-object-identifier__title"
               >
                 
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
@@ -2246,14 +2048,14 @@ exports[`Storyshots Components/Object List Object 1`] = `
               
             
               <span
-                class="fd-object-number__text fd-object-list__object-number-text"
+                class="fd-object-number__text"
               >
                 457.00
               </span>
               
             
               <span
-                class="fd-object-number__unit fd-object-list__object-number-unit"
+                class="fd-object-number__unit"
               >
                 Euro
               </span>
@@ -2288,13 +2090,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
               >
                 
               
-                <span
-                  class="fd-object-list__object-attribute-text"
-                >
-                  
               First Attribute
-                </span>
-                
             
               </div>
               
@@ -2348,13 +2144,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
                 class="fd-object-list__object-attribute"
               >
                 
-              
-                <span
-                  class="fd-object-list__object-attribute-text"
-                >
-                  Second Attribute
-                </span>
-                
+              Second Attribute
             
               </div>
               
@@ -2379,13 +2169,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
                 class="fd-object-list__object-attribute"
               >
                 
-              
-                <span
-                  class="fd-object-list__object-attribute-text"
-                >
-                  Third Attribute
-                </span>
-                
+              Third Attribute
             
               </div>
               
@@ -2453,13 +2237,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
             class="fd-object-list__intro"
           >
             
-       
-            <span
-              class="fd-object-list__intro-text"
-            >
-              Optional inline text very very very long
-            </span>
-            
+       Optional inline text very very very long
       
           </div>
           
@@ -2489,7 +2267,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
                 
           
                 <p
-                  class="fd-object-identifier__title fd-object-list__object-identifier-title"
+                  class="fd-object-identifier__title"
                 >
                   
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
@@ -2514,14 +2292,14 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
                 
             
                 <span
-                  class="fd-object-number__text fd-object-list__object-number-text"
+                  class="fd-object-number__text"
                 >
                   457.00
                 </span>
                 
             
                 <span
-                  class="fd-object-number__unit fd-object-list__object-number-unit"
+                  class="fd-object-number__unit"
                 >
                   Euro
                 </span>
@@ -2556,13 +2334,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
                 >
                   
               
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    
               First Attribute
-                  </span>
-                  
             
                 </div>
                 
@@ -2623,13 +2395,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
                   class="fd-object-list__object-attribute"
                 >
                   
-              
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    Second Attribute
-                  </span>
-                  
+              Second Attribute
             
                 </div>
                 
@@ -2677,13 +2443,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
                   class="fd-object-list__object-attribute"
                 >
                   
-              
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    Third Attribute
-                  </span>
-                  
+              Third Attribute
             
                 </div>
                 
@@ -2719,13 +2479,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
             class="fd-object-list__intro"
           >
             
-       
-            <span
-              class="fd-object-list__intro-text"
-            >
-              Optional inline text very very very long
-            </span>
-            
+       Optional inline text very very very long
       
           </div>
           
@@ -2755,7 +2509,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
                 
           
                 <p
-                  class="fd-object-identifier__title fd-object-list__object-identifier-title"
+                  class="fd-object-identifier__title"
                 >
                   
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
@@ -2780,7 +2534,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
                 
             
                 <span
-                  class="fd-object-number__text fd-object-list__object-number-text"
+                  class="fd-object-number__text"
                 >
                   956.00
                 </span>
@@ -2822,13 +2576,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
                 >
                   
               
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    
               First Attribute
-                  </span>
-                  
             
                 </div>
                 
@@ -2882,13 +2630,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
                   class="fd-object-list__object-attribute"
                 >
                   
-              
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    Second Attribute
-                  </span>
-                  
+              Second Attribute
             
                 </div>
                 
@@ -2936,13 +2678,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
                   class="fd-object-list__object-attribute"
                 >
                   
-              
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    Third Attribute
-                  </span>
-                  
+              Third Attribute
             
                 </div>
                 
@@ -2978,13 +2714,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
             class="fd-object-list__intro"
           >
             
-       
-            <span
-              class="fd-object-list__intro-text"
-            >
-              Optional inline text very very very long
-            </span>
-            
+       Optional inline text very very very long
       
           </div>
           
@@ -3014,7 +2744,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
                 
           
                 <p
-                  class="fd-object-identifier__title fd-object-list__object-identifier-title"
+                  class="fd-object-identifier__title"
                 >
                   
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
@@ -3039,7 +2769,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
                 
             
                 <span
-                  class="fd-object-number__text fd-object-list__object-number-text"
+                  class="fd-object-number__text"
                 >
                   956.00
                 </span>
@@ -3081,13 +2811,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
                 >
                   
               
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    
               First Attribute
-                  </span>
-                  
             
                 </div>
                 
@@ -3127,13 +2851,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
                   class="fd-object-list__object-attribute"
                 >
                   
-              
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    Second Attribute
-                  </span>
-                  
+              Second Attribute
             
                 </div>
                 
@@ -3181,13 +2899,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
                   class="fd-object-list__object-attribute"
                 >
                   
-              
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    Third Attribute
-                  </span>
-                  
+              Third Attribute
             
                 </div>
                 
@@ -3223,13 +2935,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
             class="fd-object-list__intro"
           >
             
-       
-            <span
-              class="fd-object-list__intro-text"
-            >
-              Optional inline text very very very long
-            </span>
-            
+       Optional inline text very very very long
       
           </div>
           
@@ -3259,7 +2965,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
                 
           
                 <p
-                  class="fd-object-identifier__title fd-object-list__object-identifier-title"
+                  class="fd-object-identifier__title"
                 >
                   
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
@@ -3284,14 +2990,14 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
                 
             
                 <span
-                  class="fd-object-number__text fd-object-list__object-number-text"
+                  class="fd-object-number__text"
                 >
                   457.00
                 </span>
                 
             
                 <span
-                  class="fd-object-number__unit fd-object-list__object-number-unit"
+                  class="fd-object-number__unit"
                 >
                   Euro
                 </span>
@@ -3326,13 +3032,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
                 >
                   
               
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    
               First Attribute
-                  </span>
-                  
             
                 </div>
                 
@@ -3386,13 +3086,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
                   class="fd-object-list__object-attribute"
                 >
                   
-              
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    Second Attribute
-                  </span>
-                  
+              Second Attribute
             
                 </div>
                 
@@ -3417,13 +3111,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
                   class="fd-object-list__object-attribute"
                 >
                   
-              
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    Third Attribute
-                  </span>
-                  
+              Third Attribute
             
                 </div>
                 
@@ -3491,13 +3179,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
             class="fd-object-list__intro"
           >
             
-       
-            <span
-              class="fd-object-list__intro-text"
-            >
-              Optional inline text
-            </span>
-            
+       Optional inline text
       
           </div>
           
@@ -3518,7 +3200,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
                 
           
                 <p
-                  class="fd-object-identifier__title fd-object-list__object-identifier-title"
+                  class="fd-object-identifier__title"
                 >
                   
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
@@ -3543,14 +3225,14 @@ exports[`Storyshots Components/Object List Selection 1`] = `
                 
             
                 <span
-                  class="fd-object-number__text fd-object-list__object-number-text"
+                  class="fd-object-number__text"
                 >
                   457.00
                 </span>
                 
             
                 <span
-                  class="fd-object-number__unit fd-object-list__object-number-unit"
+                  class="fd-object-number__unit"
                 >
                   Euro
                 </span>
@@ -3585,13 +3267,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
                 >
                   
               
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    
               First Attribute
-                  </span>
-                  
             
                 </div>
                 
@@ -3652,13 +3328,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
                   class="fd-object-list__object-attribute"
                 >
                   
-              
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    Second Attribute
-                  </span>
-                  
+              Second Attribute
             
                 </div>
                 
@@ -3706,13 +3376,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
                   class="fd-object-list__object-attribute"
                 >
                   
-              
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    Third Attribute
-                  </span>
-                  
+              Third Attribute
             
                 </div>
                 
@@ -3748,13 +3412,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
             class="fd-object-list__intro"
           >
             
-       
-            <span
-              class="fd-object-list__intro-text"
-            >
-              Optional inline text
-            </span>
-            
+       Optional inline text
       
           </div>
           
@@ -3784,7 +3442,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
                 
           
                 <p
-                  class="fd-object-identifier__title fd-object-list__object-identifier-title"
+                  class="fd-object-identifier__title"
                 >
                   
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
@@ -3809,7 +3467,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
                 
             
                 <span
-                  class="fd-object-number__text fd-object-list__object-number-text"
+                  class="fd-object-number__text"
                 >
                   666.00
                 </span>
@@ -3851,13 +3509,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
                 >
                   
               
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    
               First Attribute
-                  </span>
-                  
             
                 </div>
                 
@@ -3911,13 +3563,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
                   class="fd-object-list__object-attribute"
                 >
                   
-              
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    Second Attribute
-                  </span>
-                  
+              Second Attribute
             
                 </div>
                 
@@ -3965,13 +3611,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
                   class="fd-object-list__object-attribute"
                 >
                   
-              
-                  <span
-                    class="fd-object-list__object-attribute-text"
-                  >
-                    Third Attribute
-                  </span>
-                  
+              Third Attribute
             
                 </div>
                 
@@ -4045,13 +3685,7 @@ exports[`Storyshots Components/Object List selectionWithSelectionAndNavigation 1
               class="fd-object-list__intro"
             >
               
-       
-              <span
-                class="fd-object-list__intro-text"
-              >
-                Optional inline text
-              </span>
-              
+       Optional inline text
       
             </div>
             
@@ -4081,7 +3715,7 @@ exports[`Storyshots Components/Object List selectionWithSelectionAndNavigation 1
                   
           
                   <p
-                    class="fd-object-identifier__title fd-object-list__object-identifier-title"
+                    class="fd-object-identifier__title"
                   >
                     
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
@@ -4106,14 +3740,14 @@ exports[`Storyshots Components/Object List selectionWithSelectionAndNavigation 1
                   
             
                   <span
-                    class="fd-object-number__text fd-object-list__object-number-text"
+                    class="fd-object-number__text"
                   >
                     457.00
                   </span>
                   
             
                   <span
-                    class="fd-object-number__unit fd-object-list__object-number-unit"
+                    class="fd-object-number__unit"
                   >
                     Euro
                   </span>
@@ -4148,13 +3782,7 @@ exports[`Storyshots Components/Object List selectionWithSelectionAndNavigation 1
                   >
                     
               
-                    <span
-                      class="fd-object-list__object-attribute-text"
-                    >
-                      
               First Attribute
-                    </span>
-                    
             
                   </div>
                   
@@ -4215,13 +3843,7 @@ exports[`Storyshots Components/Object List selectionWithSelectionAndNavigation 1
                     class="fd-object-list__object-attribute"
                   >
                     
-              
-                    <span
-                      class="fd-object-list__object-attribute-text"
-                    >
-                      Second Attribute
-                    </span>
-                    
+              Second Attribute
             
                   </div>
                   
@@ -4269,13 +3891,7 @@ exports[`Storyshots Components/Object List selectionWithSelectionAndNavigation 1
                     class="fd-object-list__object-attribute"
                   >
                     
-              
-                    <span
-                      class="fd-object-list__object-attribute-text"
-                    >
-                      Third Attribute
-                    </span>
-                    
+              Third Attribute
             
                   </div>
                   
@@ -4320,13 +3936,7 @@ exports[`Storyshots Components/Object List selectionWithSelectionAndNavigation 1
               class="fd-object-list__intro"
             >
               
-       
-              <span
-                class="fd-object-list__intro-text"
-              >
-                Optional inline text
-              </span>
-              
+      Optional inline text
       
             </div>
             
@@ -4356,7 +3966,7 @@ exports[`Storyshots Components/Object List selectionWithSelectionAndNavigation 1
                   
           
                   <p
-                    class="fd-object-identifier__title fd-object-list__object-identifier-title"
+                    class="fd-object-identifier__title"
                   >
                     
            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
@@ -4381,7 +3991,7 @@ exports[`Storyshots Components/Object List selectionWithSelectionAndNavigation 1
                   
             
                   <span
-                    class="fd-object-number__text fd-object-list__object-number-text"
+                    class="fd-object-number__text"
                   >
                     666.00
                   </span>
@@ -4423,13 +4033,7 @@ exports[`Storyshots Components/Object List selectionWithSelectionAndNavigation 1
                   >
                     
               
-                    <span
-                      class="fd-object-list__object-attribute-text"
-                    >
-                      
               First Attribute
-                    </span>
-                    
             
                   </div>
                   
@@ -4483,13 +4087,7 @@ exports[`Storyshots Components/Object List selectionWithSelectionAndNavigation 1
                     class="fd-object-list__object-attribute"
                   >
                     
-              
-                    <span
-                      class="fd-object-list__object-attribute-text"
-                    >
-                      Second Attribute
-                    </span>
-                    
+              Second Attribute
             
                   </div>
                   
@@ -4537,13 +4135,7 @@ exports[`Storyshots Components/Object List selectionWithSelectionAndNavigation 1
                     class="fd-object-list__object-attribute"
                   >
                     
-              
-                    <span
-                      class="fd-object-list__object-attribute-text"
-                    >
-                      Third Attribute
-                    </span>
-                    
+              Third Attribute
             
                   </div>
                   
