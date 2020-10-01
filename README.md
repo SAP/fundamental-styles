@@ -85,6 +85,8 @@ If you want to contribute, please check the [Contribution Guidelines](https://gi
 
 ## Versioning
 
+Documentation for previous versions can be found [here](https://github.com/SAP/fundamental-styles/wiki/Previous-Versions).
+
 The `fundamental-styles` library follows [Semantic Versioning](https://semver.org/). These components strictly adhere to the `[MAJOR].[MINOR].[PATCH]` numbering system (also known as `[BREAKING].[FEATURE].[FIX]`).
 
 Merges to the `master` branch will be published as a prerelease. Pre-releases will include an **rc** version (_e.g._ `[MAJOR].[MINOR].[PATCH]-rc.[RC]`).

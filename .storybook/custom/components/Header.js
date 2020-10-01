@@ -18,7 +18,7 @@ const Header = () => {
                 </a>
                 <a
                 className='fddocs-header__anchor'
-                href={`https://github.com/SAP/fundamental-styles/tree/v${packageJson.version}`}
+                href={`https://github.com/SAP/fundamental-styles/wiki/Previous-Versions`}
                 target='_blank'>
                         {`v${packageJson.version}`}
                 </a>
