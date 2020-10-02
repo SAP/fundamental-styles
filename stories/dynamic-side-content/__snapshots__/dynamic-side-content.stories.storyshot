@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Layouts/Dynamic Side Content Equal split 1`] = `
+
+    
+`;
+
+exports[`Storyshots Layouts/Dynamic Side Content Side at the bottom 1`] = `
+
+    
+`;
+
+exports[`Storyshots Layouts/Dynamic Side Content Side from the left 1`] = `
+
+    
+`;
+
+exports[`Storyshots Layouts/Dynamic Side Content Side from the right 1`] = `
+
+    
+`;
