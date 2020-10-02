@@ -20,7 +20,7 @@ A card is a container that consists of two main components: a selectable header 
 
 Components | Description
 :--------- |:-----------
-Header (main) | The header displays a mandatory title, indicating what the card is about and functions as a navigation control that directs the user the parent app.
+Header (main) | The header displays a mandatory title, indicating what the card is about and functions as a navigation control that directs the user to the parent app.
 Content (main) | The content area is reserved for application content.
 Title | A title is mandatory to explain what content is being displayed to the user.
 Avatar (optional) | An avatar can be displayed in a size S (3rem).
@@ -286,10 +286,10 @@ analyticalCard.storyName = 'Analytical card';
 analyticalCard.parameters = {
     docs: {
         iframeHeight: 450,
-        storyDescription: `The analytical card is used for data visualization. It can display a KPI header and various chart types in the content. The only difference between a KPI header and a default header is that the former requires a subtitle, a KPI area and displays an optional second subtitle. To display an analytical card, add the <code>fd-card--analytical</code> modifier class to the main element.
+        storyDescription: `The analytical card is used for data visualization. It can display a KPI header and various chart types in the content. The only difference between a KPI header and a default header is that the former requires a subtitle, a KPI area and can display an optional second subtitle. To display an analytical card, add the <code>fd-card--analytical</code> modifier class to the main element.
 
 ####Chart types
-**The content area of analytical card can display 8 different chart types:**
+**The content area of an analytical card can display 8 different chart types:**
 
 - Line
 - Bubble
@@ -397,7 +397,7 @@ listCard.storyName = 'List card';
 listCard.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'A card can display various list types. To display a list, add <code>fd-list</code> to the content element. All components placed inside should behave natively.'
+        storyDescription: 'A card can display various types of lists. To display a list, add <code>fd-list</code> to the content element. All components placed inside should behave natively.'
     }
 };
 
@@ -719,8 +719,8 @@ objectCard.parameters = {
 
 Component (class) |	Description
 :---------------- | :-----------
-<code>fd-card\\_\\_content-container</code> | a wrapper for the content sections. By default, the content is displayed in one column. To display the content in two columns, add the fd-card__content-container--horizontal modifier class.
-<code>fd-card\\_\\_content-section</code> | a content section. The min-width of the section is 12rem and it can reach a maximum of 24rem. A section contains a group title and one or multiple groups.
+<code>fd-card\\_\\_content-container</code> | a wrapper for the content sections. By default, the content is displayed in one column. To display the content in two columns, add the <code>fd-card\\_\\_content-container--horizontal</code> modifier class.
+<code>fd-card\\_\\_content-section</code> | a content section. A section contains a group title and one or multiple groups. The min-width of the section is 12rem and it can reach a maximum of 24rem.
 <code>fd-card\\_\\_content-title-container</code> | a container for the title.
 <code>fd-card\\_\\_content-group</code> | a container for the content group. It can also contain an avatar with size XS, a group label and a group value.
 <code>fd-card\\_\\_content-label-container</code> | a container for the label of the group.
