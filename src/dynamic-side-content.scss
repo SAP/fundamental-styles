@@ -1,0 +1,67 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-dynamic-side;
+
+.#{$block} {
+  $main: #{$block}__main;
+  $side: #{$block}__side;
+
+  @include fd-reset();
+
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  .#{$main} {
+    @include fd-reset();
+
+    width: 100%;
+
+    @include fd-screen(m) {
+      width: 66.666%;
+    }
+
+    @include fd-screen(xl) {
+      width: 75%;
+    }
+  }
+
+  .#{$side} {
+    @include fd-reset();
+
+    display: none;
+    flex: 1 1 0;
+
+    @include fd-screen(m) {
+      display: block;
+    }
+  }
+
+  &--equal-split {
+    flex-direction: row;
+
+    .#{$main} {
+      flex: 1 1 50%;
+      width: 50%;
+    }
+
+    .#{$side} {
+      flex: 1 1 50%;
+      width: 50%;
+    }
+  }
+
+  &--below {
+    flex-direction: column;
+
+    .#{$main} {
+      width: 100%;
+    }
+
+    .#{$side} {
+      display: block;
+      width: 100%;
+    }
+  }
+}
