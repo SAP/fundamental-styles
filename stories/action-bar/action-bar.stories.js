@@ -6,7 +6,7 @@ import '../../dist/action-bar.css';
 export default {
     title: 'Components/Action Bar',
     parameters: {
-        description: `The action bar component displays at the top of the page, and includes the page’s title, description, back button and action buttons.
+        description: `The action bar displays at the top of the page, and includes the page’s title, description, back button and action buttons.
         
 ##Usage
 **Use action bar if:**
@@ -311,7 +311,7 @@ responsiveL.storyName = 'Responsive (M-L)';
 responsiveL.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'This action bar is responsive and fits the M and L sizes required for tablet and small desktop screens. To display this size, add the <code>fd-action-bar—m\\_l</code> modifier class to the main element.'
+        storyDescription: 'This action bar is responsive and fits the M and L sizes required for tablet and small desktop screens. To display this size, add the <code>fd-action-bar--m\\_l</code> modifier class to the main element.'
     }
 };
 
