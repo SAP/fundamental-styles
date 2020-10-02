@@ -6,8 +6,19 @@ export default {
     title: 'Components/Object List',
     parameters: {
         description: `
-Object list is one of the variant for list items.
-It provides a structure for extending standard list with additional content.
+        An object list is another type of list that consists of object list items, and each item provides a quick 
+        overview of an object. Object list items should only contain essential information for the user to identify what 
+        objects to prioritize. Avoid long descriptive texts as the text space is limited and will truncate.
+         
+**Object list items can display the following elements:**
+        
+- Title of the object
+- Avatar
+- Object display components such as **Object Identifier**, **Object Number**, **Object Attribute**, **Object Marker** and **Object Status**
+- Introductory text indicating the origin of the object, such as -Forwarded by...- or -On Behalf of...-
+- Icon that identifies the object
+- The first status line can contain indicator icons for locked items, favorites, or items that have been
+  flagged for follow-up
 
 ##Usage
 **Use the object List if:**
@@ -18,18 +29,21 @@ It provides a structure for extending standard list with additional content.
 
 - You want to display a detailed information to user.
 
-**The object List comprises:**
- 
-- Introduction text
-- Avatar
-- Object Identfier
-- Object Number
-- Object Attribute
-- Object Marker
-- Object Status
+##Modifiers
+
+The object list item can display several object display components with semantic statuses. 
+Below are examples of how to add semantic statuses to the components:
+
+| **Status** | <span style="margin-left: 2rem;">**Object Number**</span> | <span style="margin-left: 2rem;">**Object Status**</span> |
+| :---- | :-------------- | :-------------- |
+| Positive|<code class="docs-code" style="margin-left: 2rem;">fd-object-number--positive</code> |<code class="docs-code" style="margin-left: 2rem;">fd-object-status--positive</code> |
+| Negative|<code class="docs-code" style="margin-left: 2rem;">fd-object-number--negative</code> |<code class="docs-code" style="margin-left: 2rem;">fd-object-status--negative</code> |
+| Critical|<code class="docs-code" style="margin-left: 2rem;">fd-object-number--critical</code> |<code class="docs-code" style="margin-left: 2rem;">fd-object-status--critical</code> |
+| Informative|<code class="docs-code" style="margin-left: 2rem;">fd-object-number--informative</code> |<code class="docs-code" style="margin-left: 2rem;">fd-object-status--informative</code> |
+
 
 ## Structure
-**Object List consists of the following elements along with standard list:**
+**Object List consists of the following elements:**
 
   - <code class="docs-code">fd-object-list</code> ul element
    - <code class="docs-code">fd-object-list\\_\\_item</code> li element
@@ -54,8 +68,8 @@ It provides a structure for extending standard list with additional content.
 
 export const object = () => `
 <h4 id="objectListItemHeader">Object List Item</h4>
-<ul class="fd-list fd-object-list" role="listbox" aria-labelledby="objectListItemHeader">
-  <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
+<ul class="fd-list fd-object-list" role="list" aria-labelledby="objectListItemHeader">
+  <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
        Optional inline text very very very long
@@ -118,7 +132,7 @@ export const object = () => `
     </div>
     </div>
   </li>
-  <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
+  <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
        Optional inline text very very very long
@@ -145,8 +159,7 @@ export const object = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              
-              First Attribute
+            First Attribute
             </div>
           </div>
           <div class="fd-object-list__row-right">
@@ -178,7 +191,7 @@ export const object = () => `
     </div>
     </div>
   </li>
-  <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
+  <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
        Optional inline text very very very long
@@ -235,7 +248,7 @@ export const object = () => `
     </div>
     </div>
   </li>
-  <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
+  <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
        Optional inline text very very very long
@@ -297,19 +310,7 @@ object.storyName = 'Object';
 
 object.parameters = {
     docs: {
-        iframeHeight: 785,
-        storyDescription: ` 
-        Object number, Object status, Object identifier elements classes can be used to show there respective behaviours for examples
-        we can add these modifier classes to the Object number and object status elements to get the semantic status:
-      
-| Status | Object Number |   Object Status |
-| ----------------: | :------------: | :------------ |
-| Positive | \`fd-object-number--positive\` | \`fd-object-status--positive\` |
-| Negative | \`fd-object-number--negative\` | \`fd-object-status--negative\` |
-| Critical | \`fd-object-number--critical\` | \`fd-object-status--critical\` |
-| Informative | \`fd-object-number--informative\` | \`fd-object-status--informative\` |
-
-`
+        iframeHeight: 785
     }
 };
 
@@ -317,9 +318,9 @@ export const navigation = () => `
 
 <h4 id="objectListItemNavigation">Object List Item With Navigation</h4>
 
-<div style="max-width: 450px">
-<ul class="fd-list fd-object-list fd-list--navigation-object fd-list--navigation" role="listbox" aria-labelledby="objectListItemNavigation">
-  <li role="option" tabindex="0" class="fd-list__item fd-object-list__item fd-list__item--link">
+<div role="navigation" style="max-width: 450px">
+<ul class="fd-list fd-object-list fd-list--navigation-object fd-list--navigation" role="list" aria-labelledby="objectListItemNavigation">
+  <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item fd-list__item--link">
   <a tabindex="0" class="fd-list__link" href="#">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
@@ -384,7 +385,7 @@ export const navigation = () => `
     </div>
     </a>
   </li>
-  <li role="option" tabindex="0" class="fd-list__item fd-object-list__item fd-list__item--link">
+  <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item fd-list__item--link">
   <a tabindex="0" class="fd-list__link" href="#">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
@@ -455,7 +456,7 @@ navigation.storyName = 'Navigation';
 navigation.parameters = {
     docs: {
         iframeHeight: 355,
-        storyDescription: ' For a object list with navigation links add the `fd-list--navigation`,`fd-list--navigation-object` modifier class to the list and the `fd-list__item--link` modifier class to the list elements that contain links. All items should be navigable.'
+        storyDescription: 'An object list can display links that the users can navigate to. To display a navigation object list, add the `fd-list--navigation-object` modifier class together with `fd-list--navigation` and the `fd-list__item--link` modifier class to the list elements that contain links. All items should be navigable.'
     }
 };
 
@@ -593,13 +594,13 @@ selection.storyName = 'Selection';
 selection.parameters = {
     docs: {
         iframeHeight: 305,
-        storyDescription: 'To create row selection list: Create a object list with `fd-list--selection` `fd-list--selection-row` modifiers.'
+        storyDescription: 'Object list items can be selectable by adding the `fd-list--selection` and `fd-list--selection-row` modifier classes to the main element.'
     }
 };
 
-export const selectionWithSelectionAndNavigation = () => `
+export const selectionWithNavigation = () => `
 <h4 id="objectListItemRowSelectionAndNavigation">Object List Item With Row Selection And Navigation</h4>
-<div style="max-width: 450px">
+<div role="navigation" style="max-width: 450px">
 <ul class="fd-list fd-object-list fd-list--navigation-object fd-list--navigation fd-list--selection" role="listbox" aria-labelledby="objectListItemRowSelectionAndNavigation">
   <li role="option" tabindex="0" class="fd-list__item fd-object-list__item fd-list__item--link is-selected">
   <a tabindex="0" class="fd-list__link"> 
@@ -732,20 +733,20 @@ export const selectionWithSelectionAndNavigation = () => `
 </div>
 `;
 
-selectionWithSelectionAndNavigation.storyName = 'selectionWithSelectionAndNavigation';
+selectionWithNavigation.storyName = 'Selection With Navigation';
 
-selectionWithSelectionAndNavigation.parameters = {
+selectionWithNavigation.parameters = {
     docs: {
         iframeHeight: 305,
-        storyDescription: ' To create row selection list with navigation add `fd-list--selection` `fd-list--navigation` `fd-list--navigation-object` modifier classes to the list and the `fd-list__item--link` modifier class to the list elements that contain links. All items should be navigable.'
+        storyDescription: 'This object list is both selectable and navigable. To display selectable object list items with navigation links, add the `fd-list--selection`, `fd-list--navigation` and `fd-list--navigation-object` modifier classes to the list and the `fd-list__item--link` modifier class to the list elements that contain links. All items should be navigable.'
     }
 };
 
 export const borderless = () => `
 <h4 id="objectListItemBorderless">Borderless Object List Item</h4>
 <div style="max-width: 450px">
-<ul class="fd-list fd-object-list fd-list--no-border" role="listbox" aria-labelledby="objectListItemBorderless">
-  <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
+<ul class="fd-list fd-object-list fd-list--no-border" role="list" aria-labelledby="objectListItemBorderless">
+  <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
       Optional inline text very very very long
@@ -808,7 +809,7 @@ export const borderless = () => `
     </div>
     </div>
   </li>
-  <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
+  <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
       Optional inline text very very very long
@@ -868,7 +869,7 @@ export const borderless = () => `
     </div>
     </div>
   </li>
-  <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
+  <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
       Optional inline text very very very long
@@ -934,7 +935,7 @@ borderless.storyName = 'Borderless';
 borderless.parameters = {
     docs: {
         iframeHeight: 305,
-        storyDescription: 'To create borderless list use `fd-list--no-border` modifier to list.'
+        storyDescription: 'Object list items can be displayed without borders. To display a borderless list, add the `fd-list--no-border` modifier class to the list element'
     }
 };
 
@@ -943,8 +944,8 @@ export const rtl = () => `
 <h4 id="objectListItemRTL">Object list item in RTL mode</h4>
 
 <div dir="rtl" style="width: 100%">
-<ul class="fd-list fd-object-list" role="listbox" aria-labelledby="objectListItemRTL">
-  <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
+<ul class="fd-list fd-object-list" role="list" aria-labelledby="objectListItemRTL">
+  <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
        Optional inline text very very very long
@@ -1007,7 +1008,7 @@ export const rtl = () => `
     </div>
     </div>
   </li>
-  <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
+  <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
        Optional inline text very very very long
@@ -1067,7 +1068,7 @@ export const rtl = () => `
     </div>
     </div>
   </li>
-  <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
+  <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
        Optional inline text very very very long
@@ -1124,7 +1125,7 @@ export const rtl = () => `
     </div>
     </div>
   </li>
-  <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
+  <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
        Optional inline text very very very long
@@ -1183,11 +1184,11 @@ export const rtl = () => `
 </div>
 `;
 
-rtl.storyName = 'Rtl';
+rtl.storyName = 'RTL';
 
 rtl.parameters = {
     docs: {
         iframeHeight: 625,
-        storyDescription: 'Object list item in Rtl mode'
+        storyDescription: 'Object list items can be displayed from right to left on the screen, so that they may be used internationally.'
     }
 };

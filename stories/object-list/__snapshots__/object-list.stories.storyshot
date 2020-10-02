@@ -19,13 +19,13 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
     <ul
       aria-labelledby="objectListItemBorderless"
       class="fd-list fd-object-list fd-list--no-border"
-      role="listbox"
+      role="list"
     >
       
   
       <li
         class="fd-list__item fd-object-list__item"
-        role="option"
+        role="listitem"
         tabindex="0"
       >
         
@@ -267,7 +267,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
   
       <li
         class="fd-list__item fd-object-list__item"
-        role="option"
+        role="listitem"
         tabindex="0"
       >
         
@@ -502,7 +502,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
   
       <li
         class="fd-list__item fd-object-list__item"
-        role="option"
+        role="listitem"
         tabindex="0"
       >
         
@@ -744,6 +744,7 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
 
 
   <div
+    role="navigation"
     style="max-width: 450px"
   >
     
@@ -751,13 +752,13 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
     <ul
       aria-labelledby="objectListItemNavigation"
       class="fd-list fd-object-list fd-list--navigation-object fd-list--navigation"
-      role="listbox"
+      role="list"
     >
       
   
       <li
         class="fd-list__item fd-object-list__item fd-list__item--link"
-        role="option"
+        role="listitem"
         tabindex="0"
       >
         
@@ -1009,7 +1010,7 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
   
       <li
         class="fd-list__item fd-object-list__item fd-list__item--link"
-        role="option"
+        role="listitem"
         tabindex="0"
       >
         
@@ -1275,13 +1276,13 @@ exports[`Storyshots Components/Object List Object 1`] = `
   <ul
     aria-labelledby="objectListItemHeader"
     class="fd-list fd-object-list"
-    role="listbox"
+    role="list"
   >
     
   
     <li
       class="fd-list__item fd-object-list__item"
-      role="option"
+      role="listitem"
       tabindex="0"
     >
       
@@ -1523,7 +1524,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
   
     <li
       class="fd-list__item fd-object-list__item"
-      role="option"
+      role="listitem"
       tabindex="0"
     >
       
@@ -1633,8 +1634,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
                 class="fd-object-list__object-attribute"
               >
                 
-              
-              First Attribute
+            First Attribute
             
               </div>
               
@@ -1758,7 +1758,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
   
     <li
       class="fd-list__item fd-object-list__item"
-      role="option"
+      role="listitem"
       tabindex="0"
     >
       
@@ -1979,7 +1979,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
   
     <li
       class="fd-list__item fd-object-list__item"
-      role="option"
+      role="listitem"
       tabindex="0"
     >
       
@@ -2195,7 +2195,7 @@ exports[`Storyshots Components/Object List Object 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Object List Rtl 1`] = `
+exports[`Storyshots Components/Object List RTL 1`] = `
 <section>
   
 
@@ -2217,13 +2217,13 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
     <ul
       aria-labelledby="objectListItemRTL"
       class="fd-list fd-object-list"
-      role="listbox"
+      role="list"
     >
       
   
       <li
         class="fd-list__item fd-object-list__item"
-        role="option"
+        role="listitem"
         tabindex="0"
       >
         
@@ -2465,7 +2465,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
   
       <li
         class="fd-list__item fd-object-list__item"
-        role="option"
+        role="listitem"
         tabindex="0"
       >
         
@@ -2700,7 +2700,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
   
       <li
         class="fd-list__item fd-object-list__item"
-        role="option"
+        role="listitem"
         tabindex="0"
       >
         
@@ -2921,7 +2921,7 @@ exports[`Storyshots Components/Object List Rtl 1`] = `
   
       <li
         class="fd-list__item fd-object-list__item"
-        role="option"
+        role="listitem"
         tabindex="0"
       >
         
@@ -3640,7 +3640,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Object List selectionWithSelectionAndNavigation 1`] = `
+exports[`Storyshots Components/Object List Selection With Navigation 1`] = `
 <section>
   
 
@@ -3652,6 +3652,7 @@ exports[`Storyshots Components/Object List selectionWithSelectionAndNavigation 1
   
 
   <div
+    role="navigation"
     style="max-width: 450px"
   >
     

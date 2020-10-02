@@ -1,4 +1,3 @@
-
 @import "./new-settings";
 @import "./mixins";
 @import "./list";
@@ -33,7 +32,6 @@ $block: #{$fd-namespace}-object-list;
         .#{$fd-namespace}-object-status__text,
         .#{$fd-namespace}-object-status__icon {
           color: var(--sapList_Active_TextColor);
-          text-shadow: none;
         }
       }
     }
@@ -153,10 +151,11 @@ $block: #{$fd-namespace}-object-list;
       $fd-object-list-with-padding-value-half;
 
     .#{$fd-namespace}-object-status {
-      line-height: 1.4;
-
-      &__text {
+      &__text,
+      &__icon {
         @include fd-ellipsis();
+
+        line-height: 1.4;
       }
 
       margin-right: $fd-object-list-with-value-zero;
