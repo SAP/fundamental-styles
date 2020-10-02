@@ -19,7 +19,7 @@ A card is a container that consists of two main components: a selectable header 
 
 Components | Description
 :--------- |:-----------
-Header (main) | The header displays a mandatory title, indicating what the card is about and functions as a navigation control that opens the parent app.
+Header (main) | The header displays a mandatory title, indicating what the card is about and functions as a navigation control that directs the user the parent app.
 Content (main) | The content area is reserved for application content.
 Title | A title is mandatory to explain what content is being displayed to the user.
 Avatar (optional) | An avatar can be displayed in a size S (3rem).
@@ -285,10 +285,10 @@ analyticalCard.storyName = 'Analytical card';
 analyticalCard.parameters = {
     docs: {
         iframeHeight: 450,
-        storyDescription: `The analytical card is used for data visualization. It can display a KPI header, and various chart types in the content. The only difference between a KPI header and a default header is that the former requires a subtitle, and displays a KPI area and optional second subtitle. To display an analytical card, add the <code>fd-card--analytical</code> modifier class to the main element.
+        storyDescription: `The analytical card is used for data visualization. It can display a KPI header and various chart types in the content. The only difference between a KPI header and a default header is that the former requires a subtitle, a KPI area and displays an optional second subtitle. To display an analytical card, add the <code>fd-card--analytical</code> modifier class to the main element.
 
 ####Chart types
-**Analytical cards content area can display 8 different chart types:**
+**The content area of analytical card can display 8 different chart types:**
 
 - Line
 - Bubble
