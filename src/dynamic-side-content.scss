@@ -7,34 +7,68 @@ $block: #{$fd-namespace}-dynamic-side;
   $main: #{$block}__main;
   $side: #{$block}__side;
 
-  @include fd-reset();
+  $main-width-screen-s: 100%;
+  $main-width-screen-m: 66.666%;
+  $main-width-screen-xl: 75%;
 
-  display: flex;
-  flex-direction: row;
+  @include fd-reset();
+  @include fd-flex();
+
   width: 100%;
 
   .#{$main} {
     @include fd-reset();
 
-    width: 100%;
+    @include fd-screen(s) {
+      width: $main-width-screen-s;
+    }
 
     @include fd-screen(m) {
-      width: 66.666%;
+      width: $main-width-screen-m;
     }
 
     @include fd-screen(xl) {
-      width: 75%;
+      width: $main-width-screen-xl;
     }
   }
 
   .#{$side} {
     @include fd-reset();
 
-    display: none;
     flex: 1 1 0;
+
+    @include fd-screen(s) {
+      display: none;
+    }
 
     @include fd-screen(m) {
       display: block;
+    }
+  }
+
+  &--s {
+    .#{$main} {
+      width: $main-width-screen-s;
+    }
+
+    .#{$side} {
+      display: none;
+    }
+  }
+
+  &--m {
+    .#{$main} {
+      width: $main-width-screen-m;
+    }
+
+    .#{$side} {
+      display: block;
+    }
+  }
+
+  &--xl {
+    .#{$main} {
+      width: $main-width-screen-xl;
     }
   }
 
