@@ -3164,6 +3164,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
       
   
       <li
+        aria-selected="true"
         class="fd-list__item fd-object-list__item is-selected"
         role="option"
         tabindex="0"
@@ -3397,6 +3398,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
       
   
       <li
+        aria-selected="false"
         class="fd-list__item fd-object-list__item"
         role="option"
         tabindex="0"
@@ -3665,6 +3667,7 @@ exports[`Storyshots Components/Object List Selection With Navigation 1`] = `
       
   
       <li
+        aria-selected="true"
         class="fd-list__item fd-object-list__item fd-list__item--link is-selected"
         role="option"
         tabindex="0"
@@ -3916,6 +3919,7 @@ exports[`Storyshots Components/Object List Selection With Navigation 1`] = `
       
   
       <li
+        aria-selected="false"
         class="fd-list__item fd-object-list__item fd-list__item--link"
         role="option"
         tabindex="0"

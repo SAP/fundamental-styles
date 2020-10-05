@@ -6,9 +6,9 @@ export default {
     title: 'Components/Object List',
     parameters: {
         description: `
-        An object list is another type of list that consists of object list items, and each item provides a quick 
-        overview of an object. Object list items should only contain essential information for the user to identify what 
-        objects to prioritize. Avoid long descriptive texts as the text space is limited and will truncate.
+An object list is another type of list that consists of object list items, and each item provides a quick 
+overview of an object. Object list items should only contain essential information for the user to identify what 
+objects to prioritize. Avoid long descriptive texts as the text space is limited and will truncate.
          
 **Object list items can display the following elements:**
         
@@ -465,7 +465,7 @@ export const selection = () => `
 <h4 id="objectListItemRowSelection">Object List Item With Row Selection</h4>
 <div style="max-width: 450px">
 <ul class="fd-list fd-object-list fd-list--selection fd-list--selection-row" role="listbox" aria-labelledby="objectListItemRowSelection">
-  <li role="option" tabindex="0" class="fd-list__item fd-object-list__item is-selected">
+  <li role="option" aria-selected="true" tabindex="0" class="fd-list__item fd-object-list__item is-selected">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
        Optional inline text</span>
@@ -525,7 +525,7 @@ export const selection = () => `
     </div>
     </div>
   </li>
-  <li role="option" tabindex="0" class="fd-list__item fd-object-list__item">
+  <li role="option" aria-selected="false" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
        Optional inline text</span>
@@ -602,7 +602,7 @@ export const selectionWithNavigation = () => `
 <h4 id="objectListItemRowSelectionAndNavigation">Object List Item With Row Selection And Navigation</h4>
 <div role="navigation" style="max-width: 450px">
 <ul class="fd-list fd-object-list fd-list--navigation-object fd-list--navigation fd-list--selection" role="listbox" aria-labelledby="objectListItemRowSelectionAndNavigation">
-  <li role="option" tabindex="0" class="fd-list__item fd-object-list__item fd-list__item--link is-selected">
+  <li role="option" aria-selected="true" tabindex="0" class="fd-list__item fd-object-list__item fd-list__item--link is-selected">
   <a tabindex="0" class="fd-list__link"> 
   <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
@@ -667,7 +667,7 @@ export const selectionWithNavigation = () => `
     </div>
     </a>
   </li>
-  <li role="option" tabindex="0" class="fd-list__item fd-object-list__item fd-list__item--link">
+  <li role="option" aria-selected="false" tabindex="0" class="fd-list__item fd-object-list__item fd-list__item--link">
   <a tabindex="0" class="fd-list__link">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
