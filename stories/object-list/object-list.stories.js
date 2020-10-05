@@ -28,7 +28,7 @@ what objects to prioritize. Avoid long descriptive texts as the text space is li
 **Do not use the object list if:**
 
 - You want to display detailed information to the user.
-- You want to trigger more than one event. Instead, consider using Action List Item.
+- You want to trigger more than one event, as each object list item should contain one link.
 
 ##Modifiers
 
