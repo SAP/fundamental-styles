@@ -15,17 +15,17 @@ objects to prioritize. Avoid long descriptive texts as the text space is limited
 - Title of the object
 - Avatar
 - Object display components such as **Object Identifier**, **Object Number**, **Object Attribute**, **Object Marker** and **Object Status**
-- Introductory text indicating the origin of the object, such as -Forwarded by...- or -On Behalf of...-
+- Introductory text indicating the origin of the object, such as _Forwarded by..._ or _On Behalf of..._
 - Icon that identifies the object
 - The first status line can contain indicator icons for locked items, favorites, or items that have been
   flagged for follow-up
 
 ##Usage
-**Use the object List if:**
+**Use the object list if:**
 
 - You want to display a brief details to user.
 
-**Do not use the object List if:**
+**Do not use the object list if:**
 
 - You want to display a detailed information to user.
 
@@ -43,7 +43,7 @@ Below are examples of how to add semantic statuses to the components:
 
 
 ## Structure
-**Object List consists of the following elements:**
+**Object list consists of the following elements:**
 
   - <code class="docs-code">fd-object-list</code> ul element
    - <code class="docs-code">fd-object-list\\_\\_item</code> li element
@@ -218,7 +218,6 @@ export const object = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              
               First Attribute
             </div>
           </div>
@@ -275,7 +274,6 @@ export const object = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              
               First Attribute
             </div>
           </div>
@@ -306,7 +304,7 @@ export const object = () => `
 </ul>
 `;
 
-object.storyName = 'Object';
+object.storyName = 'Standard Object List Item';
 
 object.parameters = {
     docs: {
