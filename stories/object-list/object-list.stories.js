@@ -304,11 +304,12 @@ export const object = () => `
 </ul>
 `;
 
-object.storyName = 'Standard Object List Item';
+object.storyName = 'Standard';
 
 object.parameters = {
     docs: {
-        iframeHeight: 785
+        iframeHeight: 785,
+        storyDescription: 'The standard object list item displays a title, introductory text, an avatar and object display components. It is recommended to display avatar in size S, by adding the `fd-avatar--s` modifier class to the `fd-avatar` element.'
     }
 };
 
