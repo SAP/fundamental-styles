@@ -12,7 +12,7 @@ export default {
 - informative text
 - a combination of two elements
 
-Card sizes vary depending on the layout, and they are not editable. A card can focus on either a single object or topic, or on a group of objects. Several cards can reference the same application, but the information should be distinct from one another.
+Card sizes vary depending on the layout, and they are not editable. A card can focus on either a single object or topic, or on a group of objects. Several cards can reference the same application, but the information should be distinct from one card to another.
 
 ##Card anatomy
 
@@ -184,11 +184,11 @@ export const cardAnatomy = () => `
 </div>
 `;
 
-cardAnatomy.storyName = 'Default card';
+cardAnatomy.storyName = 'Standard card';
 cardAnatomy.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `The default card displays a header area with a title and a content area, as well as any other components mentioned in the card anatomy section.
+        storyDescription: `The standard card displays a header area with a title and a content area, as well as any other components mentioned in the card anatomy section.
 `
     }
 };
@@ -286,7 +286,7 @@ analyticalCard.storyName = 'Analytical card';
 analyticalCard.parameters = {
     docs: {
         iframeHeight: 450,
-        storyDescription: `The analytical card is used for data visualization. It can display a KPI header and various chart types in the content. The only difference between a KPI header and a default header is that the former requires a subtitle, a KPI area and can display an optional second subtitle. To display an analytical card, add the <code>fd-card--analytical</code> modifier class to the main element.
+        storyDescription: `The analytical card is used for data visualization. It can display a KPI header and various chart types in the content. The only difference between a KPI header and a standard header is that the former requires a subtitle, a KPI area and can display an optional second subtitle. To display an analytical card, add the <code>fd-card--analytical</code> modifier class to the main element.
 
 ####Chart types
 **The content area of an analytical card can display 8 different chart types:**
@@ -397,7 +397,7 @@ listCard.storyName = 'List card';
 listCard.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'A card can display various types of lists. To display a list, add <code>fd-list</code> to the content element. All components placed inside should behave natively.'
+        storyDescription: 'A card can display various types of lists. All components placed inside should behave natively.'
     }
 };
 
@@ -561,7 +561,7 @@ tableCard.storyName = 'Table card';
 tableCard.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'Cards can display tables within the content area. To add a table, add the <code>fd-card--table</code> modifier class to the main element.'
+        storyDescription: 'Cards can display tables within the content area. To display a table card, add the <code>fd-card--table</code> modifier class to the main element.'
     }
 };
 
