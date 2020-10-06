@@ -82,11 +82,11 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
         >
           
                     
-          <div
-            class="fd-dynamic-page__title"
+          <h1
+            class="fd-title fd-dynamic-page__title"
           >
              Balenciaga Tripple S Trainers 
-          </div>
+          </h1>
           
                     
           <div
@@ -549,11 +549,11 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
         >
           
                     
-          <div
-            class="fd-dynamic-page__title"
+          <h1
+            class="fd-title fd-dynamic-page__title"
           >
              Balenciaga Tripple S Trainers 
-          </div>
+          </h1>
           
                     
           <div
@@ -846,11 +846,11 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
         >
           
                     
-          <div
-            class="fd-dynamic-page__title fd-dynamic-page__title--collapsed"
+          <h1
+            class="fd-title fd-dynamic-page__title fd-dynamic-page__title--collapsed"
           >
              Balenciaga Tripple S Trainers Model 123456AB On Sale 
-          </div>
+          </h1>
           
                     
           <div
@@ -1143,11 +1143,11 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
         >
           
                     
-          <div
-            class="fd-dynamic-page__title"
+          <h1
+            class="fd-title fd-dynamic-page__title"
           >
              Balenciaga Tripple S Trainers 
-          </div>
+          </h1>
           
                     
           <div
@@ -1450,11 +1450,11 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
           >
             
                     
-            <div
-              class="fd-dynamic-page__title"
+            <h1
+              class="fd-title fd-dynamic-page__title"
             >
                Balenciaga Tripple S Trainers 
-            </div>
+            </h1>
             
                         
                         
@@ -1855,11 +1855,11 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
           >
             
                     
-            <div
-              class="fd-dynamic-page__title fd-dynamic-page__title--collapsed"
+            <h1
+              class="fd-title fd-dynamic-page__title fd-dynamic-page__title--collapsed"
             >
                Balenciaga Tripple S Trainers 
-            </div>
+            </h1>
             
                         
                         
@@ -2168,11 +2168,11 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
         >
           
                 
-          <div
+          <h1
             class="fd-dynamic-page__summarized-title fd-dynamic-page__summarized-title--collapsed"
           >
              Balenciaga Tripple S Trainers 
-          </div>
+          </h1>
           
                 
           <div
@@ -2302,11 +2302,11 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
           >
             
                     
-            <div
-              class="fd-dynamic-page__title fd-dynamic-page__title--collapsed"
+            <h1
+              class="fd-title fd-dynamic-page__title fd-dynamic-page__title--collapsed"
             >
                Balenciaga Tripple S Trainers 
-            </div>
+            </h1>
             
                         
             <div
@@ -2697,11 +2697,11 @@ exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
           >
             
                         
-            <div
-              class="fd-dynamic-page__title"
+            <h1
+              class="fd-title fd-dynamic-page__title"
             >
                Balenciaga Tripple S Trainers 
-            </div>
+            </h1>
             
                         
             <div
@@ -3212,13 +3212,21 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
         >
           
                     
-          <a
-            class="fd-dynamic-page__title fd-dynamic-page__title--md fd-link"
-            href="#"
-            tabindex="0"
+          <h1
+            class="fd-title fd-dynamic-page__title fd-dynamic-page__title--md"
           >
-            Balenciaga Tripple S Trainers 
-          </a>
+            
+                        
+            <a
+              class="fd-dynamic-page__title fd-link"
+              href="#"
+              tabindex="0"
+            >
+              Balenciaga Tripple S Trainers 
+            </a>
+            
+                    
+          </h1>
           
                     
           <div
