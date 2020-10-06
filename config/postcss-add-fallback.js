@@ -2,14 +2,7 @@
 const postcss = require('postcss');
 const fs = require('fs');
 const arrayUniq = require('array-uniq');
-
-const supportedThemes = [
-    'sap_fiori_3',
-    'sap_fiori_3_dark',
-    'sap_fiori_3_hcb',
-    'sap_fiori_3_hcw',
-    'sap_fiori_3_light_dark'
-];
+const supportedThemes = require('./constants');
 
 const findCSSVars = styleString => {
     const vars = new Map();

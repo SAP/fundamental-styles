@@ -1,13 +1,6 @@
 const fs = require('fs-extra');
 const path = require('path');
-
-const supportedThemes = [
-    'sap_fiori_3',
-    'sap_fiori_3_dark',
-    'sap_fiori_3_hcb',
-    'sap_fiori_3_hcw',
-    'sap_fiori_3_light_dark'
-];
+const supportedThemes = require('../config/constants');
 
 fs.readdirSync('dist').forEach(file => {
     const fileName = file.replace(/\.[^.]+$/, '');
