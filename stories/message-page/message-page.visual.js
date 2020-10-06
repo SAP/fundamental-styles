@@ -3,7 +3,7 @@ import * as stories from './message-page.stories.js';
 export default {
     title: 'Visual/MessagePage',
     parameters: {
-        components: ['message-page', 'icon']
+        components: ['message-page', 'icon', 'button']
     }
 };
 

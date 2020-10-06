@@ -3,7 +3,7 @@ import * as stories from './action-bar.stories.js';
 export default {
     title: 'Visual/Action Bar',
     parameters: {
-        components: ['button', 'icon', 'action-bar']
+        components: ['button', 'icon', 'action-bar', 'title', 'menu', 'popover']
     }
 };
 

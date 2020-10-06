@@ -3,7 +3,7 @@ import * as stories from './bar.stories.js';
 export default {
     title: 'Visual/Bar',
     parameters: {
-        components: ['button', 'icon', 'input', 'segmented-button']
+        components: ['button', 'icon', 'input', 'segmented-button', 'image', 'bar']
     }
 };
 

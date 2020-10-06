@@ -3,7 +3,7 @@ import * as stories from './toolbar.stories.js';
 export default {
     title: 'Visual/Toolbar',
     parameters: {
-        components: ['toolbar', 'button', 'icon']
+        components: ['toolbar', 'button', 'icon', 'popover']
     }
 };
 

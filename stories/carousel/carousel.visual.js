@@ -3,7 +3,7 @@ import * as stories from './carousel.stories.js';
 export default {
     title: 'Visual/Carousel',
     parameters: {
-        components: ['carousel']
+        components: ['carousel', 'button', 'icon']
     }
 };
 

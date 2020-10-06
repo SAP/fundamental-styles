@@ -43,8 +43,9 @@ const DocsPage = () => {
 
     useEffect(() => {
         if (!previousTheme.current || previousTheme.current !== themeState) {
-            context?.parameters?.components.push('info-label');
-            context?.parameters?.components.forEach(component => {
+            let cssArr = context?.parameters?.components || [];
+            cssArr.push('info-label');
+            cssArr.forEach(component => {
                 let stylePath = `${component}-${themeState}.css`;
                 let link = document.createElement('link');
 

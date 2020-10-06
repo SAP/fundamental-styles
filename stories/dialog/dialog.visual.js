@@ -3,7 +3,7 @@ import * as stories from './dialog.stories.js';
 export default {
     title: 'Visual/Dialog',
     parameters: {
-        components: ['dialog', 'input-group', 'icon']
+        components: ['dialog', 'input-group', 'icon', 'bar', 'button', 'title', 'icon']
     }
 };
 

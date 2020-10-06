@@ -92,7 +92,7 @@ There are multiple connector types that can be displayed depending on the steps 
 `,
         docs: { iframeHeight: 400 },
         tags: ['f3', 'theme', 'development'],
-        components: ['button', 'icon', 'wizard']
+        components: ['button', 'icon', 'wizard', 'bar', 'popover', 'action-sheet']
     }
 };
 

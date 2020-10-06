@@ -37,7 +37,7 @@ The dialog component is a container that appears in response to an action made b
 Note: Dialog's header, subheader and footer are elements from the **Bar** component. This means that dialog headers and footers can be customized using bar component features. To style the elements according to dialog’s needs, CSS classes are used to slightly override bar’s original behaviour.
 `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['dialog', 'input-group', 'icon']
+        components: ['dialog', 'input-group', 'icon', 'bar', 'button', 'title', 'icon']
     }
 };
 

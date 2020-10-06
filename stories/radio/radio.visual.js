@@ -3,7 +3,7 @@ import * as stories from './radio.stories.js';
 export default {
     title: 'Visual/Radio',
     parameters: {
-        components: ['radio', 'form-label', 'fildset', 'form-group']
+        components: ['radio', 'form-label', 'fieldset', 'form-group']
     }
 };
 

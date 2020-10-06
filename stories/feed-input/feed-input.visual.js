@@ -3,7 +3,7 @@ import * as stories from './feed-input.stories.js';
 export default {
     title: 'Visual/FeedInput',
     parameters: {
-        components: ['button', 'textarea', 'avatar', 'feed-input']
+        components: ['button', 'textarea', 'avatar', 'feed-input', 'button', 'icon']
     }
 };
 

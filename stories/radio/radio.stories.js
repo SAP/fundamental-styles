@@ -16,7 +16,7 @@ In special cases, there are only two mutually exclusive options. Combine them in
 - The options are numbers with fixed steps. Use a slider control.
 `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['radio', 'form-label', 'fildset', 'form-group']
+        components: ['radio', 'form-label', 'fieldset', 'form-group']
     }
 };
 

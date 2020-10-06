@@ -3,7 +3,7 @@ import * as stories from './card.stories.js';
 export default {
     title: 'Visual/Card',
     parameters: {
-        components: ['button', 'avatar', 'badge', 'card']
+        components: ['button', 'avatar', 'badge', 'card', 'object-status', 'numeric-content', 'table', 'checkbox', 'list', 'link']
     }
 };
 

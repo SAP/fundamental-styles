@@ -32,7 +32,7 @@ We highly recommend to change the default of the label-field-ratio according to 
 When working with form groups, it's always best to use the recommended number of columns to make the most of your screen space. That way, users aren't prompted to scroll down because of unused white space, and the form is visually balanced between the left and right side of the screen.
 `,
         tags: ['f3', 'a11y'],
-        components: ['form-label', 'form-layout-grid']
+        components: ['form-label', 'form-layout-grid', 'layout-grid', 'input', 'popover', 'select']
     }
 };
 

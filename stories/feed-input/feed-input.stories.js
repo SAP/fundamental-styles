@@ -3,7 +3,7 @@ export default {
     parameters: {
         description: 'The feed input component is specifically designed for the users to type their own notes or comments and post them to a corresponding feed.',
         tags: ['f3', 'a11y', 'theme', 'development'],
-        components: ['button', 'textarea', 'avatar', 'feed-input']
+        components: ['button', 'textarea', 'avatar', 'feed-input', 'button', 'icon']
     }
 };
 

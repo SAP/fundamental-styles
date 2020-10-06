@@ -15,7 +15,7 @@ Card fields are not editable. A card can focus on a single object or topic, or o
 Several cards can reference the same application but the information should not be repeated. 
 `,
         tags: ['f3', 'a11y', 'theme', 'development'],
-        components: ['button', 'avatar', 'badge', 'card']
+        components: ['button', 'avatar', 'badge', 'card', 'object-status', 'numeric-content', 'table', 'checkbox', 'list', 'link']
     }
 };
 

@@ -35,7 +35,7 @@ export default {
 - Buttons are sorted by usage i.e. from frequently-used to seldomly-used.
         `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['button', 'icon', 'input', 'segmented-button']
+        components: ['button', 'icon', 'input', 'segmented-button', 'image', 'bar']
     }
 };
 

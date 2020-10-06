@@ -3,7 +3,7 @@ import * as stories from './notification.stories.js';
 export default {
     title: 'Visual/Notifications',
     parameters: {
-        components: ['button', 'icon', 'notification']
+        components: ['button', 'icon', 'notification', 'tabs', 'avatar', 'popover', 'menu', 'message-strip']
     }
 };
 

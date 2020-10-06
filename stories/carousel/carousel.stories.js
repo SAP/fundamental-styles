@@ -26,7 +26,7 @@ To ensure that the carousel is accessible, a div element with class <code class=
 
 `,
         tags: ['f3', 'a11y', 'theme', 'development'],
-        components: ['carousel']
+        components: ['carousel', 'button', 'icon']
     }
 };
 

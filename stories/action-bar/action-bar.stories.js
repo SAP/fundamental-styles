@@ -8,7 +8,7 @@ export default {
 
 For the page title, a Title component is utilized that is an H1 but visually styled as an H3. As the first heading on the page, for accessibility purposes it must be an H1. See the Title component page for further information on semantic versus visual heading levels.`,
         tags: ['non-f3', 'a11y', 'theme'],
-        components: ['button', 'icon', 'title', 'action-bar']
+        components: ['button', 'icon', 'title', 'action-bar', 'menu', 'popover']
     }
 };
 

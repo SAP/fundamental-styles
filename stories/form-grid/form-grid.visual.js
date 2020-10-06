@@ -3,7 +3,7 @@ import * as stories from './form-grid.stories.js';
 export default {
     title: 'Visual/Form Grid',
     parameters: {
-        components: ['form-label', 'form-layout-grid']
+        components: ['form-label', 'form-layout-grid', 'layout-grid', 'input', 'popover', 'select']
     }
 };
 

@@ -22,7 +22,7 @@ The size of the message page adjusts to fit the available space.
 - The message should be as concise as possible.
         `,
         tags: ['f3', 'a11y', 'theme', 'development'],
-        components: ['message-page', 'icon']
+        components: ['message-page', 'icon', 'button']
     }
 };
 

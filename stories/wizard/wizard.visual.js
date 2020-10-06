@@ -3,7 +3,7 @@ import * as stories from './wizard.stories.js';
 export default {
     title: 'Visual/Wizard',
     parameters: {
-        components: ['button', 'icon', 'wizard']
+        components: ['button', 'icon', 'wizard', 'bar', 'popover', 'action-sheet']
     }
 };
 
