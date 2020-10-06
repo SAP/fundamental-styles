@@ -34,6 +34,10 @@ npm install fundamental-styles --save
 
 > NOTE: We only distribute compiled CSS for each component, not the full project or HTML for specific components. 
 
+### Distributed CSS Files
+
+The distrubtion folder contains several css files per component: a default file and one file per theme. Each themed file includes fallback support for css variables in ie11 for the corresponding theme.
+
 ### Fonts & Icons
 
 This project does not contain fonts and icons. See our [Getting Started Guide](https://sap.github.io/fundamental-styles/getting-started.html) for more information.
