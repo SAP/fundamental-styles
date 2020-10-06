@@ -1,8 +1,15 @@
 
-//replace with version from ui5-web-components when we take dependency on them
 const postcss = require('postcss');
 const fs = require('fs');
 const arrayUniq = require('array-uniq');
+
+const supportedThemes = [
+    'sap_fiori_3',
+    'sap_fiori_3_dark',
+    'sap_fiori_3_hcb',
+    'sap_fiori_3_hcw',
+    'sap_fiori_3_light_dark'
+];
 
 const findCSSVars = styleString => {
     const vars = new Map();
@@ -14,39 +21,33 @@ const findCSSVars = styleString => {
     return vars;
 };
 
-module.exports = postcss.plugin('add fallback plugin', function(opts) {
+module.exports = postcss.plugin('add fallback plugin', function() {
     let params = new Map();
-    opts = opts || {};
+    return function(root) {
+        // remove file extension (.css)
+        let fileName = root.source.input.file.replace(/\.[^/.]+$/, '');
+        // turn file name into array
+        fileName = fileName.split('-');
 
-    return function(root, result) {
-        // If importFrom was given, parse all CSS variables from there
-        if (opts.importFrom) {
-            const sourceParams = fs.readFileSync(opts.importFrom).toString();
-            params = findCSSVars(sourceParams);
-        }
+        if (supportedThemes.indexOf(fileName[fileName.length - 1]) > -1) {
+            const sourceParams = fs.readFileSync(`node_modules/@sap-theming/theming-base-content/content/Base/baseLib/${fileName[fileName.length - 1]}/css_variables.css`).toString();
+            const sourceDeltaParams = fs.readFileSync(`dist/theming/${fileName[fileName.length - 1]}.css`).toString();
+            params = new Map([...findCSSVars(sourceParams), ...findCSSVars(sourceDeltaParams)]);
 
-        root.walkDecls(decl => {
+            root.walkDecls(decl => {
             // extract var name
-            let matches = decl.value.match(/var\(([^,()]+)\)/g);
-            matches = arrayUniq(matches);
-            if (matches) {
-                matches.forEach(varMatch => {
-                    const varNameMatch = varMatch.match(/var\((.*)\)/);
-                    const varName = varNameMatch[1];
-                    if (params.has(varName)) {
-                        decl.value = decl.value.replace(new RegExp(varName, 'g'), `${varName}, ${params.get(varName)}`);
-                    }
-                });
-            }
-            params.set(decl.prop, decl.value);
-        });
-
-        // add the importFrom file as dependency so this file is processed again on changes
-        if (opts.importFrom) {
-            result.messages.push({
-                type: 'dependency',
-                file: opts.importFrom,
-                parent: root.source.input.file
+                let matches = decl.value.match(/var\(([^,()]+)\)/g);
+                matches = arrayUniq(matches);
+                if (matches) {
+                    matches.forEach(varMatch => {
+                        const varNameMatch = varMatch.match(/var\((.*)\)/);
+                        const varName = varNameMatch[1];
+                        if (params.has(varName)) {
+                            decl.value = decl.value.replace(new RegExp(varName, 'g'), `${varName}, ${params.get(varName)}`);
+                        }
+                    });
+                }
+                params.set(decl.prop, decl.value);
             });
         }
     };
