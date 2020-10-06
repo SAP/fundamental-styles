@@ -41,21 +41,23 @@ Make sure that the object number is properly described and semantically understa
  */
 
 export const primary = () => `
-<span class="fd-object-number fd-object-number--negative">
-    <span class="fd-object-number__text">-2,000.00</span><span class="fd-object-number__unit">EUR</span>
-</span>
-<span class="fd-object-number fd-object-number--critical">
-    <span class="fd-object-number__text">0.00</span><span class="fd-object-number__unit">EUR</span>
-</span>
-<span class="fd-object-number fd-object-number--positive">
-    <span class="fd-object-number__text">1,000.00</span><span class="fd-object-number__unit">EUR</span>
-</span>
-<span class="fd-object-number fd-object-number--informative">
-    <span class="fd-object-number__text">100.00</span><span class="fd-object-number__unit">EUR</span>
-</span>
-<span class="fd-object-number">
-    <span class="fd-object-number__text">999.00</span><span class="fd-object-number__unit">EUR</span>
-</span>
+<div class="fddocs-container">
+    <span class="fd-object-number fd-object-number--negative">
+        <span class="fd-object-number__text">-2,000.00</span><span class="fd-object-number__unit">EUR</span>
+    </span>
+    <span class="fd-object-number fd-object-number--critical">
+        <span class="fd-object-number__text">0.00</span><span class="fd-object-number__unit">EUR</span>
+    </span>
+    <span class="fd-object-number fd-object-number--positive">
+        <span class="fd-object-number__text">1,000.00</span><span class="fd-object-number__unit">EUR</span>
+    </span>
+    <span class="fd-object-number fd-object-number--informative">
+        <span class="fd-object-number__text">100.00</span><span class="fd-object-number__unit">EUR</span>
+    </span>
+    <span class="fd-object-number">
+        <span class="fd-object-number__text">999.00</span><span class="fd-object-number__unit">EUR</span>
+    </span>
+</div>
 `;
 
 /**
@@ -63,21 +65,23 @@ export const primary = () => `
  */
 
 export const large = () => `
-<span class="fd-object-number fd-object-number--large fd-object-number--negative">
-    <span class="fd-object-number__text">-2,000.00</span><span class="fd-object-number__unit">EUR</span>
-</span>
-<span class="fd-object-number fd-object-number--large fd-object-number--critical">
-    <span class="fd-object-number__text">0.00</span><span class="fd-object-number__unit">EUR</span>
-</span>
-<span class="fd-object-number fd-object-number--large fd-object-number--positive">
-    <span class="fd-object-number__text">1,000.00</span><span class="fd-object-number__unit">EUR</span>
-</span>
-<span class="fd-object-number fd-object-number--large fd-object-number--informative">
-    <span class="fd-object-number__text">100.00</span><span class="fd-object-number__unit">EUR</span>
-</span>
-<span class="fd-object-number fd-object-number--large">
-    <span class="fd-object-number__text">999.00</span><span class="fd-object-number__unit">EUR</span>
-</span>
+<div class="fddocs-container">
+    <span class="fd-object-number fd-object-number--large fd-object-number--negative">
+        <span class="fd-object-number__text">-2,000.00</span><span class="fd-object-number__unit">EUR</span>
+    </span>
+    <span class="fd-object-number fd-object-number--large fd-object-number--critical">
+        <span class="fd-object-number__text">0.00</span><span class="fd-object-number__unit">EUR</span>
+    </span>
+    <span class="fd-object-number fd-object-number--large fd-object-number--positive">
+        <span class="fd-object-number__text">1,000.00</span><span class="fd-object-number__unit">EUR</span>
+    </span>
+    <span class="fd-object-number fd-object-number--large fd-object-number--informative">
+        <span class="fd-object-number__text">100.00</span><span class="fd-object-number__unit">EUR</span>
+    </span>
+    <span class="fd-object-number fd-object-number--large">
+        <span class="fd-object-number__text">999.00</span><span class="fd-object-number__unit">EUR</span>
+    </span>
+</div>
 `;
 
 /**
@@ -85,19 +89,21 @@ export const large = () => `
  */
 
 export const bold = () => `
-<span class="fd-object-number fd-object-number--negative">
-    <span class="fd-object-number__text fd-object-number__text--bold">-2,000.00</span><span class="fd-object-number__unit">EUR</span>
-</span>
-<span class="fd-object-number fd-object-number--critical">
-    <span class="fd-object-number__text fd-object-number__text--bold">0.00</span><span class="fd-object-number__unit">EUR</span>
-</span>
-<span class="fd-object-number fd-object-number--positive">
-    <span class="fd-object-number__text fd-object-number__text--bold">1,000.00</span><span class="fd-object-number__unit">EUR</span>
-</span>
-<span class="fd-object-number fd-object-number--informative">
-    <span class="fd-object-number__text fd-object-number__text--bold">100.00</span><span class="fd-object-number__unit">EUR</span>
-</span>
-<span class="fd-object-number">
-    <span class="fd-object-number__text fd-object-number__text--bold">999.00</span><span class="fd-object-number__unit">EUR</span>
-</span>
+<div class="fddocs-container">
+    <span class="fd-object-number fd-object-number--negative">
+        <span class="fd-object-number__text fd-object-number__text--bold">-2,000.00</span><span class="fd-object-number__unit">EUR</span>
+    </span>
+    <span class="fd-object-number fd-object-number--critical">
+        <span class="fd-object-number__text fd-object-number__text--bold">0.00</span><span class="fd-object-number__unit">EUR</span>
+    </span>
+    <span class="fd-object-number fd-object-number--positive">
+        <span class="fd-object-number__text fd-object-number__text--bold">1,000.00</span><span class="fd-object-number__unit">EUR</span>
+    </span>
+    <span class="fd-object-number fd-object-number--informative">
+        <span class="fd-object-number__text fd-object-number__text--bold">100.00</span><span class="fd-object-number__unit">EUR</span>
+    </span>
+    <span class="fd-object-number">
+        <span class="fd-object-number__text fd-object-number__text--bold">999.00</span><span class="fd-object-number__unit">EUR</span>
+    </span>
+</div>
 `;

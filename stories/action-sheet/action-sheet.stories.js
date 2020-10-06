@@ -20,7 +20,7 @@ clustered if there is not enough space on the screen.
 - Your users would benefit more from a split button, which offers an easily-accessible default action, with the option to include additional actions.
         `,
         tags: ['a11y', 'f3', 'theme', 'responsive'],
-        components: ['avatar', 'icon', 'action-sheet']
+        components: ['avatar', 'icon', 'action-sheet', 'popover', 'button']
     }
 };
 

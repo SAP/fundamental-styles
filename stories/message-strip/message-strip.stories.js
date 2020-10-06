@@ -3,7 +3,7 @@ export default {
     parameters: {
         description: 'Message Strip provide inline messages within the application that are color-coded to emphasize the level of urgency.',
         tags: ['f3', 'a11y', 'theme'],
-        components: ['message-strip', 'icon', 'button']
+        components: ['button', 'message-strip', 'icon']
     }
 };
 

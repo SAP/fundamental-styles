@@ -22,26 +22,31 @@ module.exports = postcss.plugin('add fallback plugin', function() {
         // turn file name into array
         fileName = fileName.split('-');
 
-        if (supportedThemes.indexOf(fileName[fileName.length - 1]) > -1) {
-            const sourceParams = fs.readFileSync(`node_modules/@sap-theming/theming-base-content/content/Base/baseLib/${fileName[fileName.length - 1]}/css_variables.css`).toString();
-            const sourceDeltaParams = fs.readFileSync(`dist/theming/${fileName[fileName.length - 1]}.css`).toString();
-            params = new Map([...findCSSVars(sourceParams), ...findCSSVars(sourceDeltaParams)]);
+        // set default to sap_fiori_3
+        let sourceParams = fs.readFileSync('node_modules/@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/css_variables.css').toString();
+        let sourceDeltaParams = fs.readFileSync('dist/theming/sap_fiori_3.css').toString();
 
-            root.walkDecls(decl => {
-            // extract var name
-                let matches = decl.value.match(/var\(([^,()]+)\)/g);
-                matches = arrayUniq(matches);
-                if (matches) {
-                    matches.forEach(varMatch => {
-                        const varNameMatch = varMatch.match(/var\((.*)\)/);
-                        const varName = varNameMatch[1];
-                        if (params.has(varName)) {
-                            decl.value = decl.value.replace(new RegExp(varName, 'g'), `${varName}, ${params.get(varName)}`);
-                        }
-                    });
-                }
-                params.set(decl.prop, decl.value);
-            });
+        if (supportedThemes.indexOf(fileName[fileName.length - 1]) > -1) {
+            sourceParams = fs.readFileSync(`node_modules/@sap-theming/theming-base-content/content/Base/baseLib/${fileName[fileName.length - 1]}/css_variables.css`).toString();
+            sourceDeltaParams = fs.readFileSync(`dist/theming/${fileName[fileName.length - 1]}.css`).toString();
         }
+
+        params = new Map([...findCSSVars(sourceParams), ...findCSSVars(sourceDeltaParams)]);
+
+        root.walkDecls(decl => {
+            // extract var name
+            let matches = decl.value.match(/var\(([^,()]+)\)/g);
+            matches = arrayUniq(matches);
+            if (matches) {
+                matches.forEach(varMatch => {
+                    const varNameMatch = varMatch.match(/var\((.*)\)/);
+                    const varName = varNameMatch[1];
+                    if (params.has(varName)) {
+                        decl.value = decl.value.replace(new RegExp(varName, 'g'), `${varName}, ${params.get(varName)}`);
+                    }
+                });
+            }
+            params.set(decl.prop, decl.value);
+        });
     };
 });

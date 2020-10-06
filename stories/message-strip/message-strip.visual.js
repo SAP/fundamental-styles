@@ -3,7 +3,7 @@ import * as stories from './message-strip.stories.js';
 export default {
     title: 'Visual/MessageStrip',
     parameters: {
-        components: ['message-strip', 'icon', 'button']
+        components: ['button', 'message-strip', 'icon']
     }
 };
 

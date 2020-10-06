@@ -3,7 +3,7 @@ import * as stories from './action-sheet.stories.js';
 export default {
     title: 'Visual/Avatar',
     parameters: {
-        components: ['avatar', 'icon', 'action-sheet']
+        components: ['avatar', 'icon', 'action-sheet', 'popover', 'button']
     }
 };
 

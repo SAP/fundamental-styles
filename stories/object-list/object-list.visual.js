@@ -3,7 +3,7 @@ import * as stories from './object-list.stories.js';
 export default {
     title: 'Visual/Object List',
     parameters: {
-        components: ['object-list', 'list', 'icon', 'object-identifier', 'avatar', 'object-marker', 'object-number', 'object-status']
+        components: ['list', 'icon', 'object-identifier', 'avatar', 'object-marker', 'object-number', 'object-status', 'object-list']
     }
 };
 

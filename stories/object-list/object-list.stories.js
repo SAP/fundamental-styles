@@ -60,7 +60,7 @@ Below are examples of how to add semantic statuses to the components:
         
 `,
         tags: ['f3', 'a11y', 'theme', 'development'],
-        components: ['object-list', 'list', 'icon', 'object-identifier', 'avatar', 'object-marker', 'object-number', 'object-status']
+        components: ['list', 'icon', 'object-identifier', 'avatar', 'object-marker', 'object-number', 'object-status', 'object-list']
     }
 };
 
