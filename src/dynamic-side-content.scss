@@ -7,8 +7,8 @@ $block: #{$fd-namespace}-dynamic-side;
   $main: #{$block}__main;
   $side: #{$block}__side;
 
-  $main-width-screen-s: 100%;
-  $main-width-screen-m: 66.666%;
+  $main-width-screen-sm: 100%;
+  $main-width-screen-md: 66.666%;
   $main-width-screen-xl: 75%;
 
   @include fd-reset();
@@ -19,36 +19,18 @@ $block: #{$fd-namespace}-dynamic-side;
   .#{$main} {
     @include fd-reset();
 
-    @include fd-screen(s) {
-      width: $main-width-screen-s;
-    }
-
-    @include fd-screen(m) {
-      width: $main-width-screen-m;
-    }
-
-    @include fd-screen(xl) {
-      width: $main-width-screen-xl;
-    }
+    width: $main-width-screen-xl;
   }
 
   .#{$side} {
     @include fd-reset();
 
     flex: 1 1 0;
-
-    @include fd-screen(s) {
-      display: none;
-    }
-
-    @include fd-screen(m) {
-      display: block;
-    }
   }
 
-  &--s {
+  &--sm {
     .#{$main} {
-      width: $main-width-screen-s;
+      width: $main-width-screen-sm;
     }
 
     .#{$side} {
@@ -56,9 +38,9 @@ $block: #{$fd-namespace}-dynamic-side;
     }
   }
 
-  &--m {
+  &--md {
     .#{$main} {
-      width: $main-width-screen-m;
+      width: $main-width-screen-md;
     }
 
     .#{$side} {

@@ -93,3 +93,44 @@ equalSplit.parameters = {
             'To enable the "Equal split" mode add the <code class="docs-code">fd-dynamic-side--equal-split</code> modifier to the container.'
     }
 };
+
+export const responsiveness = () => `
+    <h3>On extra large screen the main part occupies 75% wide</h3>
+    <div class="fd-dynamic-side fd-dynamic-side--xl">
+        <div class="fd-dynamic-side__side">
+            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-6">Side</div>
+        </div>
+        <div class="fd-dynamic-side__main">
+            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-9">Main</div>
+        </div>
+    </div>
+    <br/>
+    <h3>On middle screen the main part occupies 66.66% wide</h3>
+    <div class="fd-dynamic-side fd-dynamic-side--md" style="max-width: 920px">
+        <div class="fd-dynamic-side__side">
+            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-6">Side</div>
+        </div>
+        <div class="fd-dynamic-side__main">
+            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-9">Main</div>
+        </div>
+    </div>
+    <br/>
+    <h3>On small screen the main part occupies 100% wide and side content gets hidden</h3>
+    <div class="fd-dynamic-side fd-dynamic-side--sm" style="max-width: 420px">
+        <div class="fd-dynamic-side__side">
+            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-6">Side</div>
+        </div>
+        <div class="fd-dynamic-side__main">
+            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-9">Main</div>
+        </div>
+    </div>
+`;
+
+responsiveness.storyName = 'Responsiveness';
+responsiveness.parameters = {
+    docs: {
+        iframeHeight: 160,
+        storyDescription:
+            'To get the component rendered for the specific screen size use <code class="docs-code">fd-dynamic-side--xl / fd-dynamic-side--md / fd-dynamic-side--sm</code> modifier respectively.'
+    }
+};
