@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.12.1-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.12.1-rc.15...v0.12.1-rc.16) (2020-10-06)
+
+
+### Features
+
+* add full class modifier ([#1736](https://github.com/SAP/fundamental-styles/issues/1736)) ([0ca50b4](https://github.com/SAP/fundamental-styles/commit/0ca50b4ef802543c7042bdeafd2cdedbe7910db1))
+
 ### [0.12.1-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.12.1-rc.14...v0.12.1-rc.15) (2020-10-06)
 
 ### [0.12.1-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.12.1-rc.13...v0.12.1-rc.14) (2020-10-05)
