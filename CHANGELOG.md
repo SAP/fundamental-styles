@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.12.1-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.12.1-rc.14...v0.12.1-rc.15) (2020-10-06)
+
+### [0.12.1-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.12.1-rc.13...v0.12.1-rc.14) (2020-10-05)
+
+
+### Features
+
+* Object list item Component styles ([#1678](https://github.com/SAP/fundamental-styles/issues/1678)) ([87424ff](https://github.com/SAP/fundamental-styles/commit/87424ff5ae89579f553af85d1130ddf1571ff206))
+
+### [0.12.1-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.12.1-rc.12...v0.12.1-rc.13) (2020-10-03)
+
+### [0.12.1-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.12.1-rc.11...v0.12.1-rc.12) (2020-10-03)
+
+### [0.12.1-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.12.1-rc.10...v0.12.1-rc.11) (2020-10-03)
+
+### [0.12.1-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.12.1-rc.9...v0.12.1-rc.10) (2020-10-02)
+
+### [0.12.1-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.12.1-rc.8...v0.12.1-rc.9) (2020-10-02)
+
+### [0.12.1-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.12.1-rc.7...v0.12.1-rc.8) (2020-10-01)
+
+
+### Bug Fixes
+
+* Truncation on menu button ([#1730](https://github.com/SAP/fundamental-styles/issues/1730)) ([caa2bf0](https://github.com/SAP/fundamental-styles/commit/caa2bf0e7abf28ccd6f44f509e144b592ae412ac))
+
+### [0.12.1-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.12.1-rc.6...v0.12.1-rc.7) (2020-09-30)
+
+### [0.12.1-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.12.1-rc.5...v0.12.1-rc.6) (2020-09-29)
+
+### [0.12.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.12.1-rc.4...v0.12.1-rc.5) (2020-09-28)
+
 ### [0.12.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.12.1-rc.3...v0.12.1-rc.4) (2020-09-28)
 
 ### [0.12.1-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.12.1-rc.2...v0.12.1-rc.3) (2020-09-28)
