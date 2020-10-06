@@ -308,6 +308,7 @@ $block: #{$fd-namespace}-dynamic-page;
     box-shadow: $fd-dynamic-page-box-shadow;
     background-color: $fd-dynamic-page-background-color;
     z-index: 2;
+    min-height: $fd-dynamic-page-button-group-height;
 
     // left and right gradient for the pin/collapse buttons
     &--left-gradient {

@@ -4,14 +4,13 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
 <section>
   
     
-  <div
-    aria-label="Dynamic Page Layout Desktop Example"
+  <section
+    aria-label="Dynamic Page Desktop Example"
     class="fd-dynamic-page"
-    role="region"
   >
     
         
-    <div
+    <header
       class="fd-dynamic-page__header"
     >
       
@@ -22,51 +21,60 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
       >
         
                 
-        <ul
-          class="fd-dynamic-page__breadcrumb fd-breadcrumb"
+        <nav
+          aria-label="Breadcrumbs"
         >
           
                     
-          <li
-            class="fd-breadcrumb__item"
+          <ul
+            class="fd-dynamic-page__breadcrumb fd-breadcrumb"
           >
-            <a
-              class="fd-breadcrumb__link"
-              href="#"
-              tabindex="0"
+            
+                        
+            <li
+              class="fd-breadcrumb__item"
             >
-              Men
-            </a>
-          </li>
-          
+              <a
+                class="fd-breadcrumb__link"
+                href="#"
+                tabindex="0"
+              >
+                Men
+              </a>
+            </li>
+            
+                        
+            <li
+              class="fd-breadcrumb__item"
+            >
+              <a
+                class="fd-breadcrumb__link"
+                href="#"
+                tabindex="0"
+              >
+                Shoes
+              </a>
+            </li>
+            
+                        
+            <li
+              class="fd-breadcrumb__item"
+            >
+              <a
+                aria-current="page"
+                class="fd-breadcrumb__link"
+                href="#"
+                tabindex="0"
+              >
+                Running Shoes
+              </a>
+            </li>
+            
                     
-          <li
-            class="fd-breadcrumb__item"
-          >
-            <a
-              class="fd-breadcrumb__link"
-              href="#"
-              tabindex="0"
-            >
-              Shoes
-            </a>
-          </li>
-          
-                    
-          <li
-            class="fd-breadcrumb__item"
-          >
-            <a
-              class="fd-breadcrumb__link"
-              href="#"
-              tabindex="0"
-            >
-              Running Shoes
-            </a>
-          </li>
+          </ul>
           
                 
-        </ul>
+        </nav>
         
                 
         <div
@@ -89,7 +97,9 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
           
                     
           <div
+            aria-label="Product actions"
             class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+            role="toolbar"
           >
             
                         
@@ -108,7 +118,9 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
             
                         
             <div
+              aria-label="Global actions"
               class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+              role="toolbar"
             >
               
                             
@@ -198,13 +210,15 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
         
                 
         <div
+          aria-label="Header actions"
           class="fd-dynamic-page__collapsible-header-visibility-container--button-group"
+          role="toolbar"
         >
           
                     
           <button
             aria-controls="fddplhvc6"
-            aria-expanded="false"
+            aria-expanded="true"
             aria-haspopup="true"
             aria-label="See More"
             class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
@@ -320,7 +334,7 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
       </div>
       
         
-    </div>
+    </header>
     
         
     <div
@@ -377,14 +391,16 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
     </div>
     
         
-    <div
+    <footer
       class="fd-bar fd-bar--floating-footer"
       style="position:relative"
     >
       
             
       <div
+        aria-label="Finalizing actions"
         class="fd-bar__right"
+        role="toolbar"
       >
         
                 
@@ -423,10 +439,10 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
       </div>
       
         
-    </div>
+    </footer>
     
     
-  </div>
+  </section>
   
     
   <br />
@@ -455,14 +471,13 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
   <br />
       
     
-  <div
-    aria-label="Dynamic Page Layout Expandable Example"
+  <section
+    aria-label="Dynamic Page Expandable Example"
     class="fd-dynamic-page"
-    role="region"
   >
     
         
-    <div
+    <header
       class="fd-dynamic-page__header"
     >
       
@@ -473,51 +488,60 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
       >
         
                 
-        <ul
-          class="fd-dynamic-page__breadcrumb fd-breadcrumb"
+        <nav
+          aria-label="Breadcrumbs"
         >
           
                     
-          <li
-            class="fd-breadcrumb__item"
+          <ul
+            class="fd-dynamic-page__breadcrumb fd-breadcrumb"
           >
-            <a
-              class="fd-breadcrumb__link"
-              href="#"
-              tabindex="0"
+            
+                        
+            <li
+              class="fd-breadcrumb__item"
             >
-              Men
-            </a>
-          </li>
-          
+              <a
+                class="fd-breadcrumb__link"
+                href="#"
+                tabindex="0"
+              >
+                Men
+              </a>
+            </li>
+            
+                        
+            <li
+              class="fd-breadcrumb__item"
+            >
+              <a
+                class="fd-breadcrumb__link"
+                href="#"
+                tabindex="0"
+              >
+                Shoes
+              </a>
+            </li>
+            
+                        
+            <li
+              class="fd-breadcrumb__item"
+            >
+              <a
+                aria-current="page"
+                class="fd-breadcrumb__link"
+                href="#"
+                tabindex="0"
+              >
+                Running Shoes
+              </a>
+            </li>
+            
                     
-          <li
-            class="fd-breadcrumb__item"
-          >
-            <a
-              class="fd-breadcrumb__link"
-              href="#"
-              tabindex="0"
-            >
-              Shoes
-            </a>
-          </li>
-          
-                    
-          <li
-            class="fd-breadcrumb__item"
-          >
-            <a
-              class="fd-breadcrumb__link"
-              href="#"
-              tabindex="0"
-            >
-              Running Shoes
-            </a>
-          </li>
+          </ul>
           
                 
-        </ul>
+        </nav>
         
                 
         <div
@@ -540,7 +564,9 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
           
                     
           <div
+            aria-label="Product actions"
             class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+            role="toolbar"
           >
             
                         
@@ -559,7 +585,9 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
             
                         
             <div
+              aria-label="Global actions"
               class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+              role="toolbar"
             >
               
                             
@@ -650,7 +678,9 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
         
                 
         <div
+          aria-label="Header actions"
           class="fd-dynamic-page__collapsible-header-visibility-container--button-group"
+          role="toolbar"
         >
           
                     
@@ -696,7 +726,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
       </div>
       
         
-    </div>
+    </header>
     
         
     <div
@@ -711,7 +741,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
     </div>
     
     
-  </div>
+  </section>
   
     
   <br />
@@ -738,14 +768,13 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
   <br />
   
     
-  <div
-    aria-label="Dynamic Page Layout Collapsed Example"
+  <section
+    aria-label="Dynamic Page Collapsed Example"
     class="fd-dynamic-page"
-    role="region"
   >
     
         
-    <div
+    <header
       class="fd-dynamic-page__header"
     >
       
@@ -756,51 +785,60 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
       >
         
                 
-        <ul
-          class="fd-dynamic-page__breadcrumb fd-breadcrumb"
+        <nav
+          aria-label="Breadcrumbs"
         >
-          
+             
                     
-          <li
-            class="fd-breadcrumb__item"
+          <ul
+            class="fd-dynamic-page__breadcrumb fd-breadcrumb"
           >
-            <a
-              class="fd-breadcrumb__link"
-              href="#"
-              tabindex="0"
+            
+                        
+            <li
+              class="fd-breadcrumb__item"
             >
-              Men
-            </a>
-          </li>
-          
+              <a
+                class="fd-breadcrumb__link"
+                href="#"
+                tabindex="0"
+              >
+                Men
+              </a>
+            </li>
+            
+                        
+            <li
+              class="fd-breadcrumb__item"
+            >
+              <a
+                class="fd-breadcrumb__link"
+                href="#"
+                tabindex="0"
+              >
+                Shoes
+              </a>
+            </li>
+            
+                        
+            <li
+              class="fd-breadcrumb__item"
+            >
+              <a
+                aria-current="page"
+                class="fd-breadcrumb__link"
+                href="#"
+                tabindex="0"
+              >
+                Running Shoes
+              </a>
+            </li>
+            
                     
-          <li
-            class="fd-breadcrumb__item"
-          >
-            <a
-              class="fd-breadcrumb__link"
-              href="#"
-              tabindex="0"
-            >
-              Shoes
-            </a>
-          </li>
-          
-                    
-          <li
-            class="fd-breadcrumb__item"
-          >
-            <a
-              class="fd-breadcrumb__link"
-              href="#"
-              tabindex="0"
-            >
-              Running Shoes
-            </a>
-          </li>
+          </ul>
           
                 
-        </ul>
+        </nav>
         
                 
         <div
@@ -823,7 +861,9 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
           
                     
           <div
+            aria-label="Product actions"
             class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+            role="toolbar"
           >
             
                         
@@ -842,7 +882,9 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
             
                         
             <div
+              aria-label="Global actions"
               class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+              role="toolbar"
             >
               
                             
@@ -933,7 +975,9 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
         
                 
         <div
+          aria-label="Header actions"
           class="fd-dynamic-page__collapsible-header-visibility-container--button-group"
+          role="toolbar"
         >
           
                     
@@ -979,7 +1023,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
       </div>
       
         
-    </div>
+    </header>
     
         
     <div
@@ -994,7 +1038,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
     </div>
     
     
-  </div>
+  </section>
   
     
   <br />
@@ -1021,14 +1065,13 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
   
 
     
-  <div
-    aria-label="Dynamic Page Layout Pinnable Example"
+  <section
+    aria-label="Dynamic Page Pinnable Example"
     class="fd-dynamic-page"
-    role="region"
   >
     
         
-    <div
+    <header
       class="fd-dynamic-page__header"
     >
       
@@ -1039,51 +1082,60 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
       >
         
                 
-        <ul
-          class="fd-dynamic-page__breadcrumb fd-breadcrumb"
+        <nav
+          aria-label="Breadcrumbs"
         >
-          
+            
                     
-          <li
-            class="fd-breadcrumb__item"
+          <ul
+            class="fd-dynamic-page__breadcrumb fd-breadcrumb"
           >
-            <a
-              class="fd-breadcrumb__link"
-              href="#"
-              tabindex="0"
+            
+                        
+            <li
+              class="fd-breadcrumb__item"
             >
-              Men
-            </a>
-          </li>
-          
+              <a
+                class="fd-breadcrumb__link"
+                href="#"
+                tabindex="0"
+              >
+                Men
+              </a>
+            </li>
+            
+                        
+            <li
+              class="fd-breadcrumb__item"
+            >
+              <a
+                class="fd-breadcrumb__link"
+                href="#"
+                tabindex="0"
+              >
+                Shoes
+              </a>
+            </li>
+            
+                        
+            <li
+              class="fd-breadcrumb__item"
+            >
+              <a
+                aria-current="page"
+                class="fd-breadcrumb__link"
+                href="#"
+                tabindex="0"
+              >
+                Running Shoes
+              </a>
+            </li>
+            
                     
-          <li
-            class="fd-breadcrumb__item"
-          >
-            <a
-              class="fd-breadcrumb__link"
-              href="#"
-              tabindex="0"
-            >
-              Shoes
-            </a>
-          </li>
-          
-                    
-          <li
-            class="fd-breadcrumb__item"
-          >
-            <a
-              class="fd-breadcrumb__link"
-              href="#"
-              tabindex="0"
-            >
-              Running Shoes
-            </a>
-          </li>
+          </ul>
           
                 
-        </ul>
+        </nav>
         
                 
         <div
@@ -1106,7 +1158,9 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
           
                     
           <div
+            aria-label="Product actions"
             class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+            role="toolbar"
           >
             
                         
@@ -1125,7 +1179,9 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
             
                         
             <div
+              aria-label="Global actions"
               class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+              role="toolbar"
             >
               
                             
@@ -1216,7 +1272,9 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
         
                 
         <div
+          aria-label="Header actions"
           class="fd-dynamic-page__collapsible-header-visibility-container--button-group"
+          role="toolbar"
         >
           
                     
@@ -1248,7 +1306,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
       </div>
       
         
-    </div>
+    </header>
     
         
     <div
@@ -1263,7 +1321,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
     </div>
     
     
-  </div>
+  </section>
   
     
   <br />
@@ -1282,15 +1340,13 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
   >
     
     
-    <div
-      aria-label="Dynamic Page Layout Mobile Example"
+    <section
+      aria-label="Dynamic Page Mobile Example"
       class="fd-dynamic-page"
-      role="region"
-      style="width:30%"
     >
       
         
-      <div
+      <header
         class="fd-dynamic-page__header"
       >
         
@@ -1306,55 +1362,66 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
           >
             
                     
-            <ul
-              class="fd-dynamic-page__breadcrumb--sm fd-breadcrumb"
+            <nav
+              aria-label="Breadcrumbs"
             >
               
                         
-              <li
-                class="fd-breadcrumb__item"
+              <ul
+                class="fd-dynamic-page__breadcrumb--sm fd-breadcrumb"
               >
-                <a
-                  class="fd-breadcrumb__link"
-                  href="#"
-                  tabindex="0"
+                
+                            
+                <li
+                  class="fd-breadcrumb__item"
                 >
-                  Men
-                </a>
-              </li>
-              
+                  <a
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Men
+                  </a>
+                </li>
+                
+                            
+                <li
+                  class="fd-breadcrumb__item"
+                >
+                  <a
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Shoes
+                  </a>
+                </li>
+                
+                            
+                <li
+                  class="fd-breadcrumb__item"
+                >
+                  <a
+                    aria-current="page"
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Running Shoes
+                  </a>
+                </li>
+                
                         
-              <li
-                class="fd-breadcrumb__item"
-              >
-                <a
-                  class="fd-breadcrumb__link"
-                  href="#"
-                  tabindex="0"
-                >
-                  Shoes
-                </a>
-              </li>
-              
-                        
-              <li
-                class="fd-breadcrumb__item"
-              >
-                <a
-                  class="fd-breadcrumb__link"
-                  href="#"
-                  tabindex="0"
-                >
-                  Running Shoes
-                </a>
-              </li>
+              </ul>
               
                     
-            </ul>
+            </nav>
             
                     
             <div
+              aria-label="Close action"
               class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+              role="toolbar"
             >
               
                             
@@ -1392,7 +1459,9 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                         
                         
             <div
+              aria-label="Product actions"
               class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+              role="toolbar"
             >
               
                             
@@ -1465,13 +1534,15 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
           
                 
           <div
+            aria-label="Header actions"
             class="fd-dynamic-page__collapsible-header-visibility-container--button-group"
+            role="toolbar"
           >
             
                     
             <button
               aria-controls="fddplhvc4"
-              aria-expanded="false"
+              aria-expanded="true"
               aria-haspopup="true"
               aria-label="See More"
               class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
@@ -1573,7 +1644,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
         </div>
         
         
-      </div>
+      </header>
       
         
       <div
@@ -1614,14 +1685,16 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
       </div>
       
         
-      <div
+      <footer
         class="fd-bar fd-bar--floating-footer"
         style="position:relative"
       >
         
             
         <div
+          aria-label="Finalizing actions"
           class="fd-bar__right"
+          role="toolbar"
         >
           
                 
@@ -1660,22 +1733,25 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
         </div>
         
         
-      </div>
+      </footer>
       
     
-    </div>
+    </section>
     
 
     
-    <div
-      aria-label="Dynamic Page Layout Mobile Collapsed Example"
+    <br />
+    <br />
+    
+
+    
+    <section
+      aria-label="Dynamic Page Mobile Collapsed Example"
       class="fd-dynamic-page"
-      role="region"
-      style="width:30%"
     >
       
         
-      <div
+      <header
         class="fd-dynamic-page__header"
       >
         
@@ -1691,55 +1767,66 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
           >
             
                     
-            <ul
-              class="fd-dynamic-page__breadcrumb--sm fd-breadcrumb"
+            <nav
+              aria-label="Breadcrumbs"
             >
               
                         
-              <li
-                class="fd-breadcrumb__item"
+              <ul
+                class="fd-dynamic-page__breadcrumb--sm fd-breadcrumb"
               >
-                <a
-                  class="fd-breadcrumb__link"
-                  href="#"
-                  tabindex="0"
+                
+                            
+                <li
+                  class="fd-breadcrumb__item"
                 >
-                  Men
-                </a>
-              </li>
-              
+                  <a
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Men
+                  </a>
+                </li>
+                
+                            
+                <li
+                  class="fd-breadcrumb__item"
+                >
+                  <a
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Shoes
+                  </a>
+                </li>
+                
+                            
+                <li
+                  class="fd-breadcrumb__item"
+                >
+                  <a
+                    aria-current="page"
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Running Shoes
+                  </a>
+                </li>
+                
                         
-              <li
-                class="fd-breadcrumb__item"
-              >
-                <a
-                  class="fd-breadcrumb__link"
-                  href="#"
-                  tabindex="0"
-                >
-                  Shoes
-                </a>
-              </li>
-              
-                        
-              <li
-                class="fd-breadcrumb__item"
-              >
-                <a
-                  class="fd-breadcrumb__link"
-                  href="#"
-                  tabindex="0"
-                >
-                  Running Shoes
-                </a>
-              </li>
+              </ul>
               
                     
-            </ul>
+            </nav>
             
                     
             <div
+              aria-label="Close action"
               class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+              role="toolbar"
             >
               
                             
@@ -1777,7 +1864,9 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                         
                         
             <div
+              aria-label="Product actions"
               class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+              role="toolbar"
             >
               
                             
@@ -1851,7 +1940,9 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
           
                 
           <div
+            aria-label="Header actions"
             class="fd-dynamic-page__collapsible-header-visibility-container--button-group"
+            role="toolbar"
           >
             
                     
@@ -1959,7 +2050,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
         </div>
         
         
-      </div>
+      </header>
       
         
       <div
@@ -2000,14 +2091,16 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
       </div>
       
         
-      <div
+      <footer
         class="fd-bar fd-bar--floating-footer"
         style="position:relative"
       >
         
             
         <div
+          aria-label="Finalizing actions"
           class="fd-bar__right"
+          role="toolbar"
         >
           
                 
@@ -2046,22 +2139,25 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
         </div>
         
         
-      </div>
+      </footer>
       
     
-    </div>
+    </section>
     
 
     
-    <div
-      aria-label="Dynamic Page Layout Mobile Summary Line Example"
+    <br />
+    <br />
+    
+
+    
+    <section
+      aria-label="Dynamic Page Mobile Summary Line Example"
       class="fd-dynamic-page"
-      role="region"
-      style="width:30%"
     >
       
         
-      <div
+      <header
         class="fd-dynamic-page__header"
       >
         
@@ -2080,12 +2176,14 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
           
                 
           <div
+            aria-label="Expand summary line action"
             class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+            role="toolbar"
           >
             
                         
             <button
-              aria-label="Close"
+              aria-label="Expand"
               class="fd-button fd-button--transparent"
             >
               
@@ -2115,56 +2213,67 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
             class="fd-dynamic-page__breadcrumb-container"
           >
             
-                
-            <ul
-              class="fd-dynamic-page__breadcrumb--sm fd-breadcrumb"
+                    
+            <nav
+              aria-label="Breadcrumbs"
             >
               
-                    
-              <li
-                class="fd-breadcrumb__item"
+                        
+              <ul
+                class="fd-dynamic-page__breadcrumb--sm fd-breadcrumb"
               >
-                <a
-                  class="fd-breadcrumb__link"
-                  href="#"
-                  tabindex="0"
-                >
-                  Men
-                </a>
-              </li>
-              
-                    
-              <li
-                class="fd-breadcrumb__item"
-              >
-                <a
-                  class="fd-breadcrumb__link"
-                  href="#"
-                  tabindex="0"
-                >
-                  Shoes
-                </a>
-              </li>
-              
-                    
-              <li
-                class="fd-breadcrumb__item"
-              >
-                <a
-                  class="fd-breadcrumb__link"
-                  href="#"
-                  tabindex="0"
-                >
-                  Running Shoes
-                </a>
-              </li>
-              
                 
-            </ul>
+                            
+                <li
+                  class="fd-breadcrumb__item"
+                >
+                  <a
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Men
+                  </a>
+                </li>
+                
+                            
+                <li
+                  class="fd-breadcrumb__item"
+                >
+                  <a
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Shoes
+                  </a>
+                </li>
+                
+                            
+                <li
+                  class="fd-breadcrumb__item"
+                >
+                  <a
+                    aria-current="page"
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Running Shoes
+                  </a>
+                </li>
+                
+                        
+              </ul>
+              
+                    
+            </nav>
             
-                
+                    
             <div
+              aria-label="Close action"
               class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+              role="toolbar"
             >
               
                         
@@ -2181,7 +2290,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                         
               </button>
               
-                
+                    
             </div>
             
                 
@@ -2201,7 +2310,9 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
             
                         
             <div
+              aria-label="Product actions"
               class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+              role="toolbar"
             >
               
                             
@@ -2276,7 +2387,9 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
           
                 
           <div
+            aria-label="Header actions"
             class="fd-dynamic-page__collapsible-header-visibility-container--button-group"
+            role="toolbar"
           >
             
                     
@@ -2384,7 +2497,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
         </div>
         
         
-      </div>
+      </header>
            
         
       <div
@@ -2433,14 +2546,16 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
       </div>
       
         
-      <div
+      <footer
         class="fd-bar fd-bar--floating-footer"
         style="position:relative"
       >
         
             
         <div
+          aria-label="Finalizing actions"
           class="fd-bar__right"
+          role="toolbar"
         >
           
                 
@@ -2479,10 +2594,10 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
         </div>
         
         
-      </div>
+      </footer>
       
     
-    </div>
+    </section>
     
 
   </div>
@@ -2504,14 +2619,13 @@ exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
   >
     
         
-    <div
-      aria-label="Dynamic Page Layout RTL Example"
+    <section
+      aria-label="Dynamic Page RTL Example"
       class="fd-dynamic-page"
-      role="region"
     >
       
             
-      <div
+      <header
         class="fd-dynamic-page__header"
       >
         
@@ -2522,51 +2636,60 @@ exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
         >
           
                     
-          <ul
-            class="fd-dynamic-page__breadcrumb fd-breadcrumb"
+          <nav
+            aria-label="Breadcrumbs"
           >
             
                         
-            <li
-              class="fd-breadcrumb__item"
+            <ul
+              class="fd-dynamic-page__breadcrumb fd-breadcrumb"
             >
-              <a
-                class="fd-breadcrumb__link"
-                href="#"
-                tabindex="0"
+              
+                            
+              <li
+                class="fd-breadcrumb__item"
               >
-                Men
-              </a>
-            </li>
-            
+                <a
+                  class="fd-breadcrumb__link"
+                  href="#"
+                  tabindex="0"
+                >
+                  Men
+                </a>
+              </li>
+              
+                            
+              <li
+                class="fd-breadcrumb__item"
+              >
+                <a
+                  class="fd-breadcrumb__link"
+                  href="#"
+                  tabindex="0"
+                >
+                  Shoes
+                </a>
+              </li>
+              
+                            
+              <li
+                class="fd-breadcrumb__item"
+              >
+                <a
+                  aria-current="page"
+                  class="fd-breadcrumb__link"
+                  href="#"
+                  tabindex="0"
+                >
+                  Running Shoes
+                </a>
+              </li>
+              
                         
-            <li
-              class="fd-breadcrumb__item"
-            >
-              <a
-                class="fd-breadcrumb__link"
-                href="#"
-                tabindex="0"
-              >
-                Shoes
-              </a>
-            </li>
-            
-                        
-            <li
-              class="fd-breadcrumb__item"
-            >
-              <a
-                class="fd-breadcrumb__link"
-                href="#"
-                tabindex="0"
-              >
-                Running Shoes
-              </a>
-            </li>
+            </ul>
             
                     
-          </ul>
+          </nav>
           
                     
           <div
@@ -2589,7 +2712,9 @@ exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
             
                         
             <div
+              aria-label="Product actions"
               class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+              role="toolbar"
             >
               
                             
@@ -2608,7 +2733,9 @@ exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
               
                             
               <div
+                aria-label="Global actions"
                 class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                role="toolbar"
               >
                 
                                 
@@ -2698,13 +2825,15 @@ exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
           
                     
           <div
+            aria-label="Header actions"
             class="fd-dynamic-page__collapsible-header-visibility-container--button-group"
+            role="toolbar"
           >
             
                         
             <button
               aria-controls="fddplhvc7"
-              aria-expanded="false"
+              aria-expanded="true"
               aria-haspopup="true"
               aria-label="See More"
               class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
@@ -2820,7 +2949,7 @@ exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
         </div>
         
             
-      </div>
+      </header>
       
             
       <div
@@ -2877,14 +3006,16 @@ exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
       </div>
       
             
-      <div
+      <footer
         class="fd-bar fd-bar--floating-footer"
         style="position:relative"
       >
         
                 
         <div
+          aria-label="Finalizing actions"
           class="fd-bar__right"
+          role="toolbar"
         >
           
                     
@@ -2923,10 +3054,10 @@ exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
         </div>
         
             
-      </div>
+      </footer>
       
         
-    </div>
+    </section>
     
     
   </div>
@@ -2943,14 +3074,13 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
 <section>
   
     
-  <div
-    aria-label="Dynamic Page Layout Tablet Example"
+  <section
+    aria-label="Dynamic Page Tablet Example"
     class="fd-dynamic-page"
-    role="region"
   >
     
-    
-    <div
+        
+    <header
       class="fd-dynamic-page__header"
     >
       
@@ -2966,55 +3096,66 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
         >
           
                     
-          <ul
-            class="fd-dynamic-page__breadcrumb fd-breadcrumb"
+          <nav
+            aria-label="Breadcrumbs"
           >
             
                         
-            <li
-              class="fd-breadcrumb__item"
+            <ul
+              class="fd-dynamic-page__breadcrumb fd-breadcrumb"
             >
-              <a
-                class="fd-breadcrumb__link"
-                href="#"
-                tabindex="0"
+              
+                            
+              <li
+                class="fd-breadcrumb__item"
               >
-                Men
-              </a>
-            </li>
-            
+                <a
+                  class="fd-breadcrumb__link"
+                  href="#"
+                  tabindex="0"
+                >
+                  Men
+                </a>
+              </li>
+              
+                            
+              <li
+                class="fd-breadcrumb__item"
+              >
+                <a
+                  class="fd-breadcrumb__link"
+                  href="#"
+                  tabindex="0"
+                >
+                  Shoes
+                </a>
+              </li>
+              
+                            
+              <li
+                class="fd-breadcrumb__item"
+              >
+                <a
+                  aria-current="page"
+                  class="fd-breadcrumb__link"
+                  href="#"
+                  tabindex="0"
+                >
+                  Running Shoes
+                </a>
+              </li>
+              
                         
-            <li
-              class="fd-breadcrumb__item"
-            >
-              <a
-                class="fd-breadcrumb__link"
-                href="#"
-                tabindex="0"
-              >
-                Shoes
-              </a>
-            </li>
-            
-                        
-            <li
-              class="fd-breadcrumb__item"
-            >
-              <a
-                class="fd-breadcrumb__link"
-                href="#"
-                tabindex="0"
-              >
-                Running Shoes
-              </a>
-            </li>
+            </ul>
             
                     
-          </ul>
+          </nav>
           
                     
           <div
+            aria-label="Global actions"
             class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+            role="toolbar"
           >
             
                         
@@ -3088,7 +3229,9 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
           
                     
           <div
+            aria-label="Product actions"
             class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+            role="toolbar"
           >
             
                         
@@ -3148,13 +3291,15 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
         
                 
         <div
+          aria-label="Header actions"
           class="fd-dynamic-page__collapsible-header-visibility-container--button-group"
+          role="toolbar"
         >
           
                     
           <button
             aria-controls="fddplhvc5"
-            aria-expanded="false"
+            aria-expanded="true"
             aria-haspopup="true"
             aria-label="See More"
             class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
@@ -3270,7 +3415,7 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
       </div>
       
         
-    </div>
+    </header>
     
         
     <div
@@ -3327,14 +3472,16 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
     </div>
     
         
-    <div
+    <footer
       class="fd-bar fd-bar--floating-footer"
       style="position:relative"
     >
       
             
       <div
+        aria-label="Finalizing actions"
         class="fd-bar__right"
+        role="toolbar"
       >
         
                 
@@ -3373,10 +3520,10 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
       </div>
       
         
-    </div>
+    </footer>
     
     
-  </div>
+  </section>
   
     
   <br />
