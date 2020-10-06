@@ -8,9 +8,8 @@ $block: #{$fd-namespace}-feed-list;
   $fd-feed-list-icon-color: var(--sapContent_IconColor);
 
   @include fd-reset();
+  @include fd-flex();
 
-  display: flex;
-  flex-direction: row;
   background-color: var(--sapField_Background);
   width: fit-content;
 

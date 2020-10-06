@@ -302,7 +302,7 @@ export const feedListGroup = () => `
                     <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
                 </p>
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer-date">Aug 22, 2020</small>
+                    <small class="fd-feed-list__date">Aug 22, 2020</small>
                 </div>
             </div>     
         </div>
@@ -337,7 +337,6 @@ feedListGroup.parameters = {
     }
 };
 
-
 export const small = () => `
     <div class="fd-feed-list fd-feed-list--s" aria-label="Feed List Item small size example">
         <div class="fd-feed-list__body">
@@ -357,7 +356,6 @@ export const small = () => `
                 </div>
             </div>    
         
-            
             <div class="fd-feed-list__content">
                 <p class="fd-feed-list__text">
                     Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
