@@ -36,7 +36,9 @@ npm install fundamental-styles --save
 
 ### Distributed CSS Files
 
-The distrubtion folder contains several css files per component: a default file and one file per theme. Each themed file includes fallback support for css variables in ie11 for the corresponding theme.
+The distrubtion folder contains several css files per component: a default file and one file per supported theme (`sap_fiori_3`, `sap_fiori_3_dark`, `sap_fori_3_light_dark`, `sap_fiori_3_hcb`, `sap_fori_3_hcw`). Each themed file includes fallback support for css variables in IE11 for the corresponding theme. 
+
+If you project does not need to support theming in IE11, use the default files.
 
 ### Fonts & Icons
 

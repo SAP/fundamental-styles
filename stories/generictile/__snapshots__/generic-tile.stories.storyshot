@@ -5,7 +5,7 @@ exports[`Storyshots Components/Generic Tile Badge Tile 1`] = `
   
 
   <div
-    class="docs-section-container"
+    class="fddocs-container"
   >
     
     
@@ -153,7 +153,7 @@ exports[`Storyshots Components/Generic Tile Badge Tile 1`] = `
   
 
   <div
-    class="docs-section-container"
+    class="fddocs-container"
   >
     
     
@@ -410,10 +410,10 @@ exports[`Storyshots Components/Generic Tile Generic Tile Layout 1`] = `
 
 exports[`Storyshots Components/Generic Tile Generic Tile Sizes 1`] = `
 
-            
+
 `;
 
-exports[`Storyshots Components/Generic Tile KPI Tile 1`] = `
+exports[`Storyshots Components/Generic Tile Kpi Tile 1`] = `
 <section>
   
 
@@ -423,7 +423,7 @@ exports[`Storyshots Components/Generic Tile KPI Tile 1`] = `
   
 
   <div
-    class="docs-section-container"
+    class="fddocs-container"
   >
     
     
@@ -706,7 +706,7 @@ exports[`Storyshots Components/Generic Tile KPI Tile 1`] = `
   
 
   <div
-    class="docs-section-container"
+    class="fddocs-container"
   >
     
     
@@ -918,7 +918,7 @@ exports[`Storyshots Components/Generic Tile KPI Tile 1`] = `
   
 
   <div
-    class="docs-section-container"
+    class="fddocs-container"
   >
     
     
@@ -1119,7 +1119,7 @@ exports[`Storyshots Components/Generic Tile Launch Tile 1`] = `
   
 
   <div
-    class="docs-section-container"
+    class="fddocs-container"
   >
     
     
@@ -1379,7 +1379,7 @@ exports[`Storyshots Components/Generic Tile Launch Tile 1`] = `
   
 
   <div
-    class="docs-section-container"
+    class="fddocs-container"
   >
     
     
@@ -1545,7 +1545,7 @@ exports[`Storyshots Components/Generic Tile Launch Tile 1`] = `
   
 
   <div
-    class="docs-section-container"
+    class="fddocs-container"
   >
     
     
@@ -1693,7 +1693,7 @@ exports[`Storyshots Components/Generic Tile Launch Tile 1`] = `
   
 
   <div
-    class="docs-section-container"
+    class="fddocs-container"
   >
     
     
@@ -1839,7 +1839,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
   
 
   <div
-    class="docs-section-container"
+    class="fddocs-container"
   >
     
     
@@ -2057,7 +2057,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
   
 
   <div
-    class="docs-section-container"
+    class="fddocs-container"
   >
     
     
@@ -2275,7 +2275,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
   
 
   <div
-    class="docs-section-container"
+    class="fddocs-container"
   >
     
     
@@ -2493,7 +2493,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
   
 
   <div
-    class="docs-section-container"
+    class="fddocs-container"
   >
     
     
@@ -2647,7 +2647,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
   
 
   <div
-    class="docs-section-container"
+    class="fddocs-container"
   >
     
     
@@ -3002,7 +3002,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
   
 
   <div
-    class="docs-section-container"
+    class="fddocs-container"
   >
     
     
@@ -3310,7 +3310,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
   
 
   <div
-    class="docs-section-container"
+    class="fddocs-container"
   >
     
     
@@ -3751,7 +3751,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
   
 
   <div
-    class="docs-section-container"
+    class="fddocs-container"
   >
     
     
@@ -4194,7 +4194,7 @@ exports[`Storyshots Components/Generic Tile Slide Tile 1`] = `
   
 
   <div
-    class="docs-section-container"
+    class="fddocs-container"
   >
     
     
@@ -4402,7 +4402,7 @@ exports[`Storyshots Components/Generic Tile Slide Tile 1`] = `
   
 
   <div
-    class="docs-section-container"
+    class="fddocs-container"
   >
     
     
@@ -4637,7 +4637,7 @@ exports[`Storyshots Components/Generic Tile Tile In Action Mode 1`] = `
   
 
   <div
-    class="docs-section-container"
+    class="fddocs-container"
   >
     
     
@@ -4839,7 +4839,7 @@ exports[`Storyshots Components/Generic Tile Tile In Action Mode 1`] = `
   
 
   <div
-    class="docs-section-container"
+    class="fddocs-container"
   >
     
     
@@ -5133,6 +5133,6 @@ exports[`Storyshots Components/Generic Tile Tile In Action Mode 1`] = `
 
   </div>
   
-            
+
 </section>
 `;
