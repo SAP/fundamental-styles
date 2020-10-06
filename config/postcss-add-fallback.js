@@ -14,8 +14,27 @@ const findCSSVars = styleString => {
     return vars;
 };
 
+const applyFallback = (root, parameterMap) => {
+    root.walkDecls(decl => {
+        // extract var name
+        let matches = decl.value.match(/var\(([^,()]+)\)/g);
+        matches = arrayUniq(matches);
+        if (matches) {
+            matches.forEach(varMatch => {
+                const varNameMatch = varMatch.match(/var\((.*)\)/);
+                const varName = varNameMatch[1];
+                if (parameterMap.has(varName)) {
+                    decl.value = decl.value.replace(new RegExp(varName, 'g'), `${varName}, ${parameterMap.get(varName)}`);
+                }
+            });
+        }
+        parameterMap.set(decl.prop, decl.value);
+    });
+};
+
 module.exports = postcss.plugin('add fallback plugin', function() {
     let params = new Map();
+    let deltaParams = new Map();
     return function(root) {
         // remove file extension (.css)
         let fileName = root.source.input.file.replace(/\.[^/.]+$/, '');
@@ -31,22 +50,11 @@ module.exports = postcss.plugin('add fallback plugin', function() {
             sourceDeltaParams = fs.readFileSync(`dist/theming/${fileName[fileName.length - 1]}.css`).toString();
         }
 
-        params = new Map([...findCSSVars(sourceParams), ...findCSSVars(sourceDeltaParams)]);
+        params = findCSSVars(sourceParams);
+        deltaParams = findCSSVars(sourceDeltaParams);
 
-        root.walkDecls(decl => {
-            // extract var name
-            let matches = decl.value.match(/var\(([^,()]+)\)/g);
-            matches = arrayUniq(matches);
-            if (matches) {
-                matches.forEach(varMatch => {
-                    const varNameMatch = varMatch.match(/var\((.*)\)/);
-                    const varName = varNameMatch[1];
-                    if (params.has(varName)) {
-                        decl.value = decl.value.replace(new RegExp(varName, 'g'), `${varName}, ${params.get(varName)}`);
-                    }
-                });
-            }
-            params.set(decl.prop, decl.value);
-        });
+        // these cannot be combined as part of the same map due to delta variables referencing sap-variables
+        applyFallback(root, deltaParams);
+        applyFallback(root, params);
     };
 });

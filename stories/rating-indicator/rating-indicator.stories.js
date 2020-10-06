@@ -11,10 +11,10 @@ Although the maximum amount is 7 for the icons or images, it is highly recommend
 
 ##Usage
 Use the rating indicator in forms, tables, or in a dialog box.
-        `
-    },
-    tags: ['f3', 'a11y', 'theme'],
-    components: ['rating-indicator']
+        `,
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['rating-indicator']
+    }
 };
 
 export const Sizes = () => `

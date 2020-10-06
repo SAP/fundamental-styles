@@ -179,8 +179,6 @@ export const clickableObjectStatus = () => `
         <span class="fd-object-status__text">Neutral</span>
     </span>
 
-    <br><br>
-
     <a href="#"  class="fd-object-status fd-object-status--link fd-object-status--indication-1">
         <span class="fd-object-status__text">Dark Red</span>
     </a>
@@ -257,10 +255,6 @@ export const inverted = () => `
     <span class="fd-object-status fd-object-status--inverted">
         <span class="fd-object-status__text">Inverted Neutral</span>
     </span>
-
-    <span class="fd-object-status fd-object-status--inverted">
-        <span class="fd-object-status__text">Inverted Neutral</span>
-    </span>
     <span class="fd-object-status fd-object-status--inverted fd-object-status--negative">
         <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
     </span>
@@ -285,8 +279,7 @@ export const inverted = () => `
         <span class="fd-object-status__text">Neutral</span>
     </span>
 </div>
-    <br>
-    <br>
+
     <h4>Clickable Inverted Object Status</h4>
 <div class="fddocs-container">
     <a class="fd-object-status fd-object-status--link fd-object-status--negative fd-object-status--inverted">
@@ -309,58 +302,6 @@ export const inverted = () => `
         <i class="fd-object-status__icon sap-icon--to-be-reviewed" role="presentation"></i>
         <span class="fd-object-status__text">Inverted Neutral</span>
     </a>
-</div>
-    <br><br>
-
-    <div dir="rtl">
-        <h4>RTL Support</h4>
-        <div class="fddocs-container">
-            <span class="fd-object-status fd-object-status--negative fd-object-status--inverted">
-                <span class="fd-object-status__text">Inverted Negative</span>
-            </span>
-            <span class="fd-object-status fd-object-status--critical fd-object-status--inverted">
-                <span class="fd-object-status__text">Inverted Warning</span>
-            </span>
-            <span class="fd-object-status fd-object-status--positive fd-object-status--inverted">
-                <span class="fd-object-status__text">Inverted Success</span>
-            </span>
-            <span class="fd-object-status fd-object-status--informative fd-object-status--inverted">
-                <span class="fd-object-status__text">Inverted informative</span>
-            </span>
-            <span class="fd-object-status fd-object-status--inverted">
-                <span class="fd-object-status__text">Inverted Neutral</span>
-            </span>
-
-            <br><br>
-
-            <span class="fd-object-status fd-object-status--inverted">
-                <span class="fd-object-status__text">Inverted Neutral</span>
-            </span>
-            <span class="fd-object-status fd-object-status--inverted fd-object-status--negative">
-                <i class="fd-object-status__icon sap-icon--status-negative" aria-label="Error"></i>
-            </span>
-            <span class="fd-object-status fd-object-status--inverted fd-object-status--negative">
-                <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
-                <span class="fd-object-status__text">Negative</span>
-            </span>
-            <span class="fd-object-status fd-object-status--inverted fd-object-status--critical">
-                <i class="fd-object-status__icon sap-icon--status-critical" role="presentation"></i>
-                <span class="fd-object-status__text">Critical</span>
-            </span>
-            <span class="fd-object-status fd-object-status--inverted fd-object-status--positive">
-                <i class="fd-object-status__icon sap-icon--status-positive" role="presentation"></i>
-                <span class="fd-object-status__text">Positive</span>
-            </span>
-            <span class="fd-object-status fd-object-status--inverted fd-object-status--informative">
-                <i class="fd-object-status__icon sap-icon--hint" role="presentation"></i>
-                <span class="fd-object-status__text">Informative</span>
-            </span>
-            <span class="fd-object-status fd-object-status--inverted">
-                <i class="fd-object-status__icon sap-icon--to-be-reviewed" role="presentation"></i>
-                <span class="fd-object-status__text">Neutral</span>
-            </span>
-        </div>
-    </div>
 </div>
 `;
 
@@ -395,9 +336,6 @@ export const invertedIndication = () => `
         <span class="fd-object-status__text">Indication8</span>
     </span>
 </div>
-
-<br>
-<br>
 
 <h4>Clickable Inverted Object Status</h4>
 <div class="fddocs-container">

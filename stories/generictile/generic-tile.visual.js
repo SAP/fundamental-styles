@@ -1,4 +1,4 @@
-import * as stories from './generic-tile.stories.mdx';
+import * as stories from './generic-tile.stories.js';
 
 export default {
     title: 'Visual/Generic Tile',
