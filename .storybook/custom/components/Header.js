@@ -8,7 +8,7 @@ const Header = ({onThemeChange}) => {
                 <span>Fundamental Styles</span>
             </section>
             <section className='fddocs-header--right'>
-                <select onChange={(e) => onThemeChange(e)}>
+                <select className='fddocs-select' onChange={(e) => onThemeChange(e)}>
                     <option value='sap_fiori_3'>Light</option>
                     <option value='sap_fiori_3_dark'>Dark</option>
                     <option value='sap_fiori_3_light_dark'>Light Dark</option>
