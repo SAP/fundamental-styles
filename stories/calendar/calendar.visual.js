@@ -3,7 +3,7 @@ import * as stories from './calendar.stories.js';
 export default {
     title: 'Visual/Calendar',
     parameters: {
-        components: ['tile', 'calendar']
+        components: ['tile', 'calendar', 'button', 'icon']
     }
 };
 

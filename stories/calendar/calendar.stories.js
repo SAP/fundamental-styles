@@ -113,7 +113,7 @@ These classes are used to style calendar grid elements with colors, which are id
 | <code class="docs-code">fd-calendar\\_\\_special-day--20</code> | <div  class="fd-calendar__item fd-calendar__special-day--20"><span class="fd-calendar__text" role="button">30</span></div> | 
 `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['tile', 'calendar']
+        components: ['tile', 'calendar', 'button', 'icon']
     }
 };
 
