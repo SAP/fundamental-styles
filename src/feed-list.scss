@@ -1,0 +1,95 @@
+@import "./mixins";
+
+$block: #{$fd-namespace}-feed-list;
+
+.#{$block} {
+  $fd-feed-list-padding-start: 1rem;
+  $fd-feed-list-padding-end: 0.5rem;
+  $fd-feed-list-icon-color: var(--sapContent_IconColor);
+
+  @include fd-reset();
+
+  display: flex;
+  flex-direction: row;
+  background-color: var(--sapField_Background);
+  width: fit-content;
+
+  .#{$block}__thumb {
+    display: inline-flex;
+    margin-left: 0;
+    margin-right: 0.5rem;
+
+    @include fd-rtl() {
+      margin-left: 0.5rem;
+      margin-right: 0;
+    }
+  }
+
+  &__body + &__body {
+    border-top: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+  }
+
+  &__body {
+    display: flex;
+    padding: 1rem $fd-feed-list-padding-end 1rem $fd-feed-list-padding-start;
+  }
+
+  &__actions {
+    height: 2rem;
+  }
+
+  .#{$block}__icon,
+  &__icon-title {
+    color: $fd-feed-list-icon-color;
+  }
+
+  &--group {
+    flex-direction: column;
+  }
+
+  &--link {
+    cursor: pointer;
+  }
+
+  .#{$block}__name {
+    @include fd-reset();
+
+    font-weight: bold;
+  }
+
+  .#{$block}__text {
+    @include fd_reset();
+
+    &:hover {
+      .#{$block}__more {
+        color: var(--sapLinkColor);
+      }
+    }
+  }
+
+  .#{$block}__more {
+    text-transform: uppercase;
+    color: grey;
+  }
+
+  .#{$block}__footer {
+    @include fd-reset();
+
+    display: flex;
+    padding-top: 0.5rem;
+
+    &-date {
+      color: var(--sapNeutralTextColor);
+    }
+  }
+
+  &--s {
+    .#{$block}__body {
+      display: block;
+    }
+
+    .#{$block}__text {
+      margin-top: 1rem;
+    }
+  }
+}
