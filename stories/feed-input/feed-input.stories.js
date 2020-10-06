@@ -6,8 +6,21 @@ import '../../dist/feed-input.css';
 export default {
     title: 'Components/Feed Input',
     parameters: {
-        description: 'The feed input component is specifically designed for the users to type their own notes or comments and post them to a corresponding feed.',
-        tags: ['f3', 'a11y', 'theme', 'development']
+        description: `The feed input is specifically designed for users to type their own notes or comments and post them to a corresponding feed.
+        
+##Usage
+**Use the feed input if:**
+
+- A user needs to input small amounts of text without formatting.
+- You expect multiple instances, such as notes or feed entries.
+
+**Do not use the feed input if:**
+
+- The user needs to format the text (rich text editor).
+- You need only a single text box instance. In this case, use the **Textarea** component (for multiple lines) or the text control (for a single line).
+
+`,
+        tags: ['f3', 'a11y', 'theme']
     }
 };
 
@@ -30,16 +43,16 @@ export const standard = () => `
                 aria-disabled="true" 
                 disabled
                 title="Send">
-            <i  role="presentation" class="sap-icon--feeder-arrow"></i>
+            <i role="presentation" class="sap-icon--feeder-arrow"></i>
         </button>
     </div>
 `;
 
-standard.storyName = 'Standard';
+standard.storyName = 'Default';
 standard.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'The standard feed input component displays an empty text field with an inactive submit button.'
+        storyDescription: 'The default feed input displays an empty text field with an inactive submit button.'
     }
 };
 
@@ -56,22 +69,22 @@ export const notEmpty = () => `
                   placeholder="Post something here"
                   aria-label="Feed message" 
                   aria-required 
-                  rows="1">"Textarea" with a text makes submit button active</textarea>
+                  rows="1">"When there is text, the submit button becomes active.</textarea>
         <button class="fd-button 
                 fd-feed-input__submit-button" 
                 aria-label="Send"
                 aria-disabled="false" 
                 title="Send">
-            <i  role="presentation" class="sap-icon--feeder-arrow"></i>
+            <i role="presentation" class="sap-icon--feeder-arrow"></i>
         </button>
     </div>
 `;
 
-notEmpty.storyName = 'Input with text';
+notEmpty.storyName = 'With text';
 notEmpty.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'The input with text displays some text within the field, which activates the submit button.'
+        storyDescription: 'The input with text displays some text, activating the submit button.'
     }
 };
 
@@ -96,7 +109,7 @@ export const disabled = () => `
                 aria-disabled="true" 
                 disabled
                 title="Send">
-            <i  role="presentation" class="sap-icon--feeder-arrow"></i>
+            <i role="presentation" class="sap-icon--feeder-arrow"></i>
         </button>
     </div>
 `;
@@ -105,7 +118,7 @@ disabled.storyName = 'Disabled';
 disabled.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'The disabled feed input component displays disabled text field with disabled submit button.'
+        storyDescription: 'The disabled feed input displays a text field and submit button that users cannot interact with.'
     }
 };
 
@@ -121,16 +134,16 @@ export const withoutUserImage = () => `
         <button class="fd-button fd-feed-input__submit-button" 
                 aria-label="Send"  
                 title="Send">
-            <i  role="presentation" class="sap-icon--feeder-arrow"></i>
+            <i role="presentation" class="sap-icon--feeder-arrow"></i>
         </button>
     </div>
 `;
 
-withoutUserImage.storyName = 'Without user image';
+withoutUserImage.storyName = 'No thumbnail';
 withoutUserImage.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'You can also choose not to show user images at all. In this case, the size of the input area increases automatically.'
+        storyDescription: 'Although the default feed input has a thumbnail, it is possible to remove it. Without a thumbnail, the input area size increases automatically.'
     }
 };
 
@@ -150,16 +163,16 @@ export const placeholderImage = () => `
         <button class="fd-button fd-feed-input__submit-button" 
                 aria-label="Send"  
                 title="Send">
-            <i  role="presentation" class="sap-icon--feeder-arrow"></i>
+            <i role="presentation" class="sap-icon--feeder-arrow"></i>
         </button>
     </div>
 `;
 
-placeholderImage.storyName = 'Generic user image';
+placeholderImage.storyName = 'Generic thumbnail';
 placeholderImage.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'It\'s possible to use generic user image.'
+        storyDescription: 'A generic thumbnail will be displayed if no image has been chosen by the user.'
     }
 };
 
@@ -181,7 +194,7 @@ export const inputGrowth = () => `
                 aria-label="Send"  
                 aria-disabled="false"
                 title="Send">
-            <i  role="presentation" class="sap-icon--feeder-arrow"></i>
+            <i role="presentation" class="sap-icon--feeder-arrow"></i>
         </button>
     </div>
 `;
@@ -190,7 +203,7 @@ inputGrowth.storyName = 'Multiline';
 inputGrowth.parameters = {
     docs: {
         iframeHeight: 190,
-        storyDescription: 'Every new line extends `textarea` height until maximum height is reached. The multiline feed input displays a text field with multiple lines of text. When a new line is added to the field, the `textarea\'s` height extends until the maximum height is reached.'
+        storyDescription: 'The multiline feed input displays a text field with multiple lines of text, which expands until a maximum height is reached.'
     }
 };
 
@@ -212,7 +225,7 @@ export const overMaxHeight = () => `
                 aria-label="Send" 
                 aria-disabled="false" 
                 title="Send">
-            <i  role="presentation" class="sap-icon--feeder-arrow"></i>
+            <i role="presentation" class="sap-icon--feeder-arrow"></i>
         </button>
     </div>
 `;
@@ -244,7 +257,7 @@ export const rtl = () => `
                     aria-label="Send" 
                     aria-disabled="false" 
                     title="Send">
-                <i  role="presentation" class="sap-icon--feeder-arrow"></i>
+                <i role="presentation" class="sap-icon--feeder-arrow"></i>
             </button>
         </div>
     </div>
@@ -254,6 +267,6 @@ rtl.storyName = 'RTL';
 rtl.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'The right-to-left feed input displays input with text and an active submit button, however it is positioned on the right side of the screen.'
+        storyDescription: 'The feed input displays from right to left on the screen so that it may be used internationally.'
     }
 };
