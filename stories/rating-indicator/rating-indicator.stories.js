@@ -1,5 +1,3 @@
-import '../../dist/rating-indicator.css';
-import './custom.scss';
 import iconRated from './rated.png';
 import iconUnrated from './unrated.png';
 
@@ -15,7 +13,8 @@ Although the maximum amount is 7 for the icons or images, it is highly recommend
 Use the rating indicator in forms, tables, or in a dialog box.
         `
     },
-    tags: ['f3', 'a11y', 'theme']
+    tags: ['f3', 'a11y', 'theme'],
+    components: ['rating-indicator']
 };
 
 export const Sizes = () => `

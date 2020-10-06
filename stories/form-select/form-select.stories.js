@@ -1,7 +1,3 @@
-import '../../dist/form-item.css';
-import '../../dist/form-label.css';
-import '../../dist/form-select.css';
-
 export default {
     title: 'Components/Forms/Form Select',
     parameters: {
@@ -10,7 +6,8 @@ export default {
 > It has been replaced by the Custom Select Component.
 
 A Form Select is similar to a Dropdown but is more commonly used within a form. It can also be set to a disabled state.`,
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['form-item', 'form-label', 'form-select']
     }
 };
 

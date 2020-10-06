@@ -1,10 +1,10 @@
-import '../../dist/icon.css';
-import '../../dist/tile.css';
-import './generic-tile.css';
 import * as stories from './generic-tile.stories.mdx';
 
 export default {
-    title: 'Visual/Generic Tile'
+    title: 'Visual/Generic Tile',
+    parameters: {
+        components: ['tile', 'badge', 'generic-tile']
+    }
 };
 
 export const GenericTile = () => {

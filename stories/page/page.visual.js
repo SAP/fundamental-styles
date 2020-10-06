@@ -1,8 +1,10 @@
-import '../../dist/page.css';
 import * as stories from './page.stories.js';
 
 export default {
-    title: 'Visual/Page'
+    title: 'Visual/Page',
+    parameters: {
+        components: ['page', 'bar', 'button', 'icon']
+    }
 };
 
 export const Page = () => {

@@ -1,8 +1,10 @@
-import '../../dist/radio.css';
 import * as stories from './context-menu.stories.js';
 
 export default {
-    title: 'Visual/Contextual Menu'
+    title: 'Visual/Contextual Menu',
+    parameters: {
+        components: ['radio', 'popover', 'menu', 'button', 'icon']
+    }
 };
 
 export const ContextMenu = () => {

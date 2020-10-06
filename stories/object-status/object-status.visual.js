@@ -1,8 +1,10 @@
-import '../../dist/object-status.css';
 import * as stories from './object-status.stories.js';
 
 export default {
-    title: 'Visual/Object Status'
+    title: 'Visual/Object Status',
+    parameters: {
+        components: ['object-status']
+    }
 };
 
 export const ObjectStatus = () => {

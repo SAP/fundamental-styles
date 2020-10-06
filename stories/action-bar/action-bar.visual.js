@@ -1,10 +1,10 @@
-import '../../dist/button.css';
-import '../../dist/icon.css';
-import '../../dist/action-bar.css';
 import * as stories from './action-bar.stories.js';
 
 export default {
-    title: 'Visual/Action Bar'
+    title: 'Visual/Action Bar',
+    parameters: {
+        components: ['button', 'icon', 'action-bar']
+    }
 };
 
 

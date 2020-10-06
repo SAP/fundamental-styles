@@ -1,8 +1,3 @@
-import '../../dist/button.css';
-import '../../dist/icon.css';
-import '../../dist/title.css';
-import '../../dist/action-bar.css';
-
 export default {
     title: 'Components/Action Bar',
     parameters: {
@@ -12,7 +7,8 @@ export default {
 - Main Actions for the page
 
 For the page title, a Title component is utilized that is an H1 but visually styled as an H3. As the first heading on the page, for accessibility purposes it must be an H1. See the Title component page for further information on semantic versus visual heading levels.`,
-        tags: ['non-f3', 'a11y', 'theme']
+        tags: ['non-f3', 'a11y', 'theme'],
+        components: ['button', 'icon', 'title', 'action-bar']
     }
 };
 

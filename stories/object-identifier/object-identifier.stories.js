@@ -1,7 +1,3 @@
-import '../../dist/object-identifier.css';
-import '../../dist/link.css';
-import '../../dist/table.css';
-
 export default {
     title: 'Components/Object Identifier',
     parameters: {
@@ -26,7 +22,8 @@ The object identifier should be easily read by the users, preferably displaying 
 - You want to display system messages.
 - They are for decorative purposes only.        
 `,
-        tags: ['f3']
+        tags: ['f3'],
+        components: ['object-identifier', 'link', 'table']
     }
 };
 

@@ -1,10 +1,9 @@
-import '../../dist/pagination.css';
-
 export default {
     title: 'Components/Pagination',
     parameters: {
         description: 'Pagination is commonly used for tables and tiles. It allows users to see how many pages of content exist, to navigate and highlights which page they are currently viewing.',
-        tags: ['a11y', 'theme']
+        tags: ['a11y', 'theme'],
+        components: ['pagination']
     }
 };
 

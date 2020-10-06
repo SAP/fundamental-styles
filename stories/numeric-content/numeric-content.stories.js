@@ -1,10 +1,6 @@
-
-import './numeric-content-playground.scss';
-import '../../dist/numeric-content.css';
-import '../../dist/icon.css';
-
 export default {
-    title: 'Dev/Numeric Content'
+    title: 'Dev/Numeric Content',
+    components: ['numeric-content', 'icon']
 };
 
 export const large = () => `

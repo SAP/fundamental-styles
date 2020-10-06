@@ -1,9 +1,10 @@
-import '../../dist/button.css';
-import '../../dist/icon.css';
 import * as stories from './tree.stories.js';
 
 export default {
-    title: 'Visual/Tree'
+    title: 'Visual/Tree',
+    parameters: {
+        components: ['button', 'checkbox', 'icon', 'radio', 'tree']
+    }
 };
 
 export const Tree = () => {

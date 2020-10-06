@@ -1,5 +1,3 @@
-import '../../dist/side-nav.css';
-
 export default {
     title: 'Components/Side Navigation',
     parameters: {
@@ -9,7 +7,8 @@ export default {
         docs: {
             iframeHeight: 400
         },
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['side-nav', 'button', 'icon', 'nested-list']
     }
 };
 

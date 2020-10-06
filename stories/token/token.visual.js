@@ -1,10 +1,10 @@
-import '../../dist/token.css';
-import '../../dist/tokenizer.css';
-
 import * as stories from './token.stories.js';
 
 export default {
-    title: 'Visual/Token'
+    title: 'Visual/Token',
+    parameters: {
+        components: ['token', 'tokenizer']
+    }
 };
 
 export const Token = () => {

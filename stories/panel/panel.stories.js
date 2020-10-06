@@ -1,10 +1,3 @@
-
-import '../../dist/button.css';
-import '../../dist/icon.css';
-import '../../dist/panel.css';
-import '../../dist/segmented-button.css';
-import '../../dist/toolbar.css';
-
 export default {
     title: 'Components/Panel',
     parameters: {
@@ -21,7 +14,8 @@ Use the panel if:
 Do not use the panel if:
 
 - You are designing an object page. Never use panels in the object page content area.
-  `
+  `,
+        components: ['button', 'icon', 'panel', 'segmented-button', 'toolbar']
     }
 };
 

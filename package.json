@@ -25,7 +25,7 @@
     "style:remove": "if [ -d dist/ ]; then rm -rf dist/; fi",
     "test": "server-test storybook:ci http-get://localhost:6006 'npm run storybook:visual:setup'",
     "test:update": "server-test storybook:ci http-get://localhost:6006 'npm run storybook:visual:setup -- --updateSnapshot'",
-    "storybook": "npm run storybook:prep && start-storybook -s .storybook/static/,node_modules/@sap-theming,dist/theming -p 6006",
+    "storybook": "npm run storybook:prep && start-storybook -s .storybook/static/,node_modules/@sap-theming,dist/ -p 6006",
     "storybook:ci": "npm run storybook -- --ci --quiet",
     "storybook:prep": "npm run build && babel-node scripts/storybook-prep.js",
     "storybook:static": "rm -rf storybook-static && npm run storybook:prep && STORYBOOK_ENV=docs build-storybook -c .storybook -o storybook-static -s .storybook/static/,node_modules/@sap-theming --docs",

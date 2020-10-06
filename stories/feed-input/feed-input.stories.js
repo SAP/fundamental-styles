@@ -1,13 +1,9 @@
-import '../../dist/button.css';
-import '../../dist/textarea.css';
-import '../../dist/avatar.css';
-import '../../dist/feed-input.css';
-
 export default {
     title: 'Components/Feed Input',
     parameters: {
         description: 'The feed input component is specifically designed for the users to type their own notes or comments and post them to a corresponding feed.',
-        tags: ['f3', 'a11y', 'theme', 'development']
+        tags: ['f3', 'a11y', 'theme', 'development'],
+        components: ['button', 'textarea', 'avatar', 'feed-input']
     }
 };
 

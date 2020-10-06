@@ -1,13 +1,6 @@
 import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
-
-import '../../dist/tile.css';
-import '../../dist/badge.css';
-
-import './generic-tile.css';
-
 import Header from '../../.storybook/custom/components/Header';
 import InfoLabel from '../../.storybook/custom/components/InfoLabel';
-
 import Community from '../../.storybook/custom/components/Community';
 import Toc from '../../.storybook/custom/components/Toc.js';
 import Footer from '../../.storybook/custom/components/Footer';
@@ -16,7 +9,8 @@ import Footer from '../../.storybook/custom/components/Footer';
     title="Components/Generic Tile"
     parameters={{
         tags: ['f3', 'a11y', 'theme'],
-        docs: { iframeHeight: 500 }
+        docs: { iframeHeight: 500 },
+        components: ['tile', 'badge', 'generic-tile']
     }}
 />
 

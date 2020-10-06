@@ -1,9 +1,10 @@
-import '../../dist/button.css';
-import '../../dist/icon.css';
 import * as stories from './wizard.stories.js';
 
 export default {
-    title: 'Visual/Wizard'
+    title: 'Visual/Wizard',
+    parameters: {
+        components: ['button', 'icon', 'wizard']
+    }
 };
 
 export const Wizard = () => {

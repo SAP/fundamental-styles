@@ -406,3 +406,33 @@ body.sb-show-main {
     padding: 10px 5px;
   }
 }
+
+.tile-content-playground,
+.tile-content-small-playground {
+  background-color: linen;
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.tile-content-playground {
+  width: 9rem;
+  height: 3.875rem;
+}
+
+.tile-content-small-playground {
+  width: 8.25rem;
+  height: 3.438rem;
+}
+
+.example-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+
+  > span {
+    margin-right: 10px;
+    min-width: 75px;
+  }
+}

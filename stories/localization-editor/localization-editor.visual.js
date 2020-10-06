@@ -1,14 +1,10 @@
-import '../../dist/input-group.css';
-import '../../dist/form-item.css';
-import '../../dist/form-label.css';
-import '../../dist/input-group.css';
-import '../../dist/popover.css';
-import '../../dist/textarea.css';
-import '../../dist/localization-editor.css';
 import * as stories from './localization-editor.stories';
 
 export default {
-    title: 'Visual/Localization Editor'
+    title: 'Visual/Localization Editor',
+    parameters: {
+        components: ['input-group', 'form-item', 'form-label', 'popover', 'textarea', 'localization-editor']
+    }
 };
 
 export const LocalizationEditor = () => {

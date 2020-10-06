@@ -1,6 +1,3 @@
-import '../../dist/object-number.css';
-import './custom.scss';
-
 export default {
     title: 'Components/Object Number',
     parameters: {
@@ -27,7 +24,8 @@ Make sure that the object number is properly described and semantically understa
 - They are for decorative purposes only.
         `
     },
-    tags: ['f3', 'theme']
+    tags: ['f3', 'theme'],
+    components: ['object-number']
 };
 
 /**

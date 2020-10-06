@@ -1,8 +1,10 @@
-import '../../dist/link.css';
 import * as stories from './link.stories.js';
 
 export default {
-    title: 'Visual/Link'
+    title: 'Visual/Link',
+    parameters: {
+        components: ['link']
+    }
 };
 
 export const Link = () => {

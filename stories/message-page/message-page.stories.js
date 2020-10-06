@@ -1,5 +1,3 @@
-import '../../dist/message-page.css';
-
 export default {
     title: 'Components/Message Page',
     parameters: {
@@ -23,7 +21,8 @@ The size of the message page adjusts to fit the available space.
 - The title is also mandatory. Add a description with further details if needed. 
 - The message should be as concise as possible.
         `,
-        tags: ['f3', 'a11y', 'theme', 'development']
+        tags: ['f3', 'a11y', 'theme', 'development'],
+        components: ['message-page', 'icon']
     }
 };
 

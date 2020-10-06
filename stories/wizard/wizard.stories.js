@@ -1,7 +1,3 @@
-import '../../dist/button.css';
-import '../../dist/icon.css';
-import '../../dist/wizard.css';
-
 export default {
     title: 'Components/Wizard',
     parameters: {
@@ -95,7 +91,8 @@ There are multiple connector types that can be displayed depending on the steps 
 
 `,
         docs: { iframeHeight: 400 },
-        tags: ['f3', 'theme', 'development']
+        tags: ['f3', 'theme', 'development'],
+        components: ['button', 'icon', 'wizard']
     }
 };
 

@@ -1,5 +1,3 @@
-import '../../dist/carousel.css';
-
 export default {
     title: 'Components/Carousel',
     parameters: {
@@ -27,7 +25,8 @@ When no pages are loaded, carousel displays a **Message Page** with a <code clas
 To ensure that the carousel is accessible, a div element with class <code class="docs-code">fd-carousel</code> has a visually hidden sibling div element with <code class="docs-code">role="region"</code> and an <code class="docs-code">aria-live="polite"</code> attribute. This way, the text will be dynamically updated using Javascript so that carousel's content changes are announced to the user by screen readers.
 
 `,
-        tags: ['f3', 'a11y', 'theme', 'development']
+        tags: ['f3', 'a11y', 'theme', 'development'],
+        components: ['carousel']
     }
 };
 

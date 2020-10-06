@@ -1,10 +1,10 @@
-import '../../dist/icon.css';
-import '../../dist/button.css';
-import '../../dist/side-nav.css';
 import * as stories from './side-navigation.stories.js';
 
 export default {
-    title: 'Visual/Side Navigation'
+    title: 'Visual/Side Navigation',
+    parameters: {
+        components: ['side-nav', 'button', 'icon', 'nested-list']
+    }
 };
 
 export const SideNavigation = () => {

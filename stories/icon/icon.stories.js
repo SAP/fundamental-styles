@@ -1,9 +1,3 @@
-import '../../dist/button.css';
-import '../../dist/button-split.css';
-import '../../dist/icon.css';
-import '../../dist/menu.css';
-import '../../dist/popover.css';
-import '../../dist/segmented-button.css';
 import data from './data.json';
 
 export default {
@@ -20,7 +14,8 @@ export default {
 
 Note: If an icon needs to be selected or have any interaction states, it is recommended to use the transparent button style. See **Button** for more details on how to implement it.
           `,
-        tags: ['development']
+        tags: ['development'],
+        components: ['button', 'button-split', 'icon', 'menu', 'popover', 'segmented-button']
     }
 };
 

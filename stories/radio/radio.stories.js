@@ -1,7 +1,3 @@
-import '../../dist/radio.css';
-import '../../dist/form-label.css';
-import '../../dist/fieldset.css';
-
 export default {
     title: 'Components/Forms/Radio',
     parameters: {
@@ -19,7 +15,8 @@ Do not use the radio button if:
 In special cases, there are only two mutually exclusive options. Combine them into a single checkbox or switch. For example, use a checkbox for “I agree” (for example, to terms and conditions) instead of two radio buttons for “I agree” and “I don’t agree”.
 - The options are numbers with fixed steps. Use a slider control.
 `,
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['radio', 'form-label', 'fildset', 'form-group']
     }
 };
 

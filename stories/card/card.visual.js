@@ -1,8 +1,10 @@
-import '../../dist/card.css';
 import * as stories from './card.stories.js';
 
 export default {
-    title: 'Visual/Card'
+    title: 'Visual/Card',
+    parameters: {
+        components: ['button', 'avatar', 'badge', 'card']
+    }
 };
 
 export const Card = () => {

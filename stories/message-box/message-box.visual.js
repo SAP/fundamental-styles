@@ -1,7 +1,10 @@
 import * as stories from './message-box.stories.js';
 
 export default {
-    title: 'Visual/MessageBox'
+    title: 'Visual/MessageBox',
+    parameters: {
+        components: ['nessage-box', 'title']
+    }
 };
 
 export const MessageBox = () => {

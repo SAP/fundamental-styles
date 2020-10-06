@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../dist/info-label.css';
+// import '../../../dist/info-label.css';
 import tagData from './tags.json';
 
 const InfoLabel = ({ tag }) => {

@@ -1,8 +1,10 @@
-import '../../dist/object-number.css';
 import * as stories from './object-number.stories.js';
 
 export default {
-    title: 'Visual/Object Number'
+    title: 'Visual/Object Number',
+    parameters: {
+        components: ['object-number']
+    }
 };
 
 export const ObjectNumber = () => {

@@ -1,17 +1,10 @@
-import '../../dist/input-group.css';
-import '../../dist/form-item.css';
-import '../../dist/form-label.css';
-import '../../dist/input-group.css';
-import '../../dist/popover.css';
-import '../../dist/textarea.css';
-import '../../dist/localization-editor.css';
-
 export default {
     title: 'Components/Localization Editor',
     tags: ['non-f3'],
     parameters: {
         description: `
-> **DEPRECATED**. Localization Editor does not exist as a Fiori 3 component so it has been deprecated. `
+> **DEPRECATED**. Localization Editor does not exist as a Fiori 3 component so it has been deprecated. `,
+        components: ['input-group', 'form-item', 'form-label', 'popover', 'textarea', 'localization-editor']
     }
 };
 

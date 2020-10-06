@@ -1,10 +1,3 @@
-import '../../dist/button.css';
-import '../../dist/icon.css';
-import '../../dist/form-item.css';
-import '../../dist/step-input.css';
-import '../../dist/form-label.css';
-import '../../dist/input.css';
-
 export default {
     title: 'Components/StepInput',
     parameters: {
@@ -21,7 +14,8 @@ Do not use the step input if:
 * The user needs to enter a static number (for example, postal code, phone number, or ID). In this case, use the regular input field control instead.
 * You want to display a value that rarely needs to be adjusted and does not pertain to a particular step. In this case, use the regular input field control instead.
 * You want the user to enter dates and times. In this case, use the date picker, date range selection, time picker, or date/time picker instead.  
-  `
+  `,
+        components: ['button', 'icon', 'form-item', 'step-input', 'form-label', 'input']
     }
 };
 

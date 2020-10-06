@@ -1,6 +1,3 @@
-import '../../dist/avatar.css';
-import '../../dist/icon.css';
-
 export default {
     title: 'Components/Avatar',
     parameters: {
@@ -31,7 +28,8 @@ Do not use avatar if:
 - You want to display images in a carousel. Instead, use the **Carousel** component.
 - You want to display an interactive icon. Instead, use the **Button** component with an icon inside.
 `,
-        tags: ['a11y', 'f3', 'theme']
+        tags: ['a11y', 'f3', 'theme'],
+        components: ['avatar', 'icon']
     }
 };
 

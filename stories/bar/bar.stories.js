@@ -1,8 +1,3 @@
-import '../../dist/button.css';
-import '../../dist/icon.css';
-import '../../dist/input.css';
-import '../../dist/segmented-button.css';
-
 export default {
     title: 'Components/Bar',
     parameters: {
@@ -39,7 +34,8 @@ export default {
 - Use only icon buttons **or** text buttons. Icon and text should not be combined into one button.
 - Buttons are sorted by usage i.e. from frequently-used to seldomly-used.
         `,
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['button', 'icon', 'input', 'segmented-button']
     }
 };
 

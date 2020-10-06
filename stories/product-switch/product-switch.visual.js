@@ -1,8 +1,10 @@
-import '../../dist/section.css';
 import * as stories from './product-switch.stories.js';
 
 export default {
-    title: 'Visual/ProductSwitch'
+    title: 'Visual/ProductSwitch',
+    parameters: {
+        components: ['product-switch', 'popover', 'button']
+    }
 };
 
 export const ProductSwitch = () => {

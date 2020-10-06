@@ -1,7 +1,10 @@
 import * as stories from './message-page.stories.js';
 
 export default {
-    title: 'Visual/MessagePage'
+    title: 'Visual/MessagePage',
+    parameters: {
+        components: ['message-page', 'icon']
+    }
 };
 
 export const MessagePage = () => {

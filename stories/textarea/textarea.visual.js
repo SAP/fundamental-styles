@@ -1,8 +1,10 @@
-import '../../dist/textarea.css';
 import * as stories from './textarea.stories.js';
 
 export default {
-    title: 'Visual/Textarea'
+    title: 'Visual/Textarea',
+    parameters: {
+        components: ['textarea', 'fieldset', 'form-label', 'form-message', 'form-item', 'form-group', 'popover']
+    }
 };
 
 export const Textarea = () => {

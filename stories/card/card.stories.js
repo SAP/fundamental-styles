@@ -1,8 +1,3 @@
-import '../../dist/avatar.css';
-import '../../dist/badge.css';
-import '../../dist/button.css';
-import '../../dist/card.css';
-
 export default {
     title: 'Components/Card',
     parameters: {
@@ -19,7 +14,8 @@ Cards can display different content:
 Card fields are not editable. A card can focus on a single object or topic, or on a group of objects. Cards sizes vary depending on the layout.
 Several cards can reference the same application but the information should not be repeated. 
 `,
-        tags: ['f3', 'a11y', 'theme', 'development']
+        tags: ['f3', 'a11y', 'theme', 'development'],
+        components: ['button', 'avatar', 'badge', 'card']
     }
 };
 

@@ -1,7 +1,3 @@
-import '../../dist/form-label.css';
-import '../../dist/switch.css';
-import '../../dist/icon.css';
-
 export default {
     title: 'Components/Switch',
     parameters: {
@@ -12,7 +8,8 @@ export default {
 
  - If it is not clear if the control is showing a state or action. 
  - If there are more than two options.
-  `
+  `,
+        components: ['form-label', 'switch', 'icon']
     }
 };
 

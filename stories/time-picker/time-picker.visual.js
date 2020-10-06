@@ -1,8 +1,10 @@
-import '../../dist/radio.css';
 import * as stories from './time-picker.stories.js';
 
 export default {
-    title: 'Visual/Time Picker'
+    title: 'Visual/Time Picker',
+    parameters: {
+        components: ['popover', 'input', 'input-group', 'time', 'button', 'icon', 'bar']
+    }
 };
 
 export const TimePicker = () => {

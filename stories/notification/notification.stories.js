@@ -1,7 +1,3 @@
-import '../../dist/button.css';
-import '../../dist/icon.css';
-import '../../dist/notification.css';
-
 export default {
     title: 'Components/Notifications',
     parameters: {
@@ -14,7 +10,8 @@ Notifications are used to relay information to the user about a situation or tas
     
 * You want to make users aware of situations that require attention.
 * You intend to reduce the amount of information and actions to a minimum, but provide enough information to highlight the level of importance.
-            `
+            `,
+        components: ['button', 'icon', 'notification']
     }
 };
 

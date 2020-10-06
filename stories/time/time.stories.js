@@ -1,6 +1,3 @@
-import '../../dist/icon.css';
-import '../../dist/time.css';
-
 export default {
     title: 'Components/Time',
     parameters: {
@@ -17,7 +14,8 @@ Multiple instances can be used in the <code class="docs-code">date-picker</code>
 
 `,
 
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['icon', 'time']
     }
 };
 
