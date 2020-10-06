@@ -459,9 +459,13 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
   <hr />
   
     
-  <h3>
-    1:  Header with both collapse and pin buttons, expanded by default. 
-  </h3>
+  <h2
+    class="fd-title fd-title--h5"
+  >
+    <b>
+      1:  Header with both collapse and pin buttons, expanded by default. 
+    </b>
+  </h2>
   
     
   <hr />
@@ -756,9 +760,13 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
   <hr />
   
     
-  <h3>
-    2: Collapsed Header with both expand and pin buttons. 
-  </h3>
+  <h2
+    class="fd-title fd-title--h5"
+  >
+    <b>
+      2: Collapsed Header with both expand and pin buttons. 
+    </b>
+  </h2>
   
     
   <hr />
@@ -1052,9 +1060,13 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
   <hr />
   
     
-  <h3>
-    3: The header can only be expanded/collapsed, not pinned.
-  </h3>
+  <h2
+    class="fd-title fd-title--h5"
+  >
+    <b>
+      3: The header can only be expanded/collapsed, not pinned.
+    </b>
+  </h2>
   
     
   <hr />
@@ -2528,9 +2540,13 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
         >
           
                 
-          <h4>
-            This is an example of a summary line, without the expand/collapse feature.
-          </h4>
+          <h2
+            class="fd-title fd-title--h6 fd-title--wrap"
+          >
+            <b>
+              This is an example of a summary line, without the expand/collapse feature.
+            </b>
+          </h2>
           
                 
           <br />
