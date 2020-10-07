@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.12.1-rc.18...v0.13.0-rc.0) (2020-10-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove deprecated localization editor
+
+### Bug Fixes
+
+* remove deprecated localization editor ([#1756](https://github.com/SAP/fundamental-styles/issues/1756)) ([32f5897](https://github.com/SAP/fundamental-styles/commit/32f5897922e2874bf4b3d72a43cbe840ae146163))
+
 ### [0.12.1-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.12.1-rc.17...v0.12.1-rc.18) (2020-10-07)
 
 
