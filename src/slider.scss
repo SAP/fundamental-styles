@@ -1,0 +1,132 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-slider;
+
+.#{$block} {
+  @include fd-reset();
+
+  @include fd-disabled() {
+    cursor: not-allowed;
+  }
+
+  min-width: 4rem;
+  max-width: 100%;
+  padding: 1rem 0;
+  position: relative;
+
+  &__wrapper {
+    @include fd-reset();
+
+    position: relative;
+  }
+
+  &__track {
+    @include fd-reset();
+
+    height: var(--fdSlider_Track_Height);
+    width: 100%;
+    background-color: var(--fdSlider_Track_Background);
+    border-radius: var(--fdSlider_Track_BorderRadius);
+    position: relative;
+    z-index: 1;
+
+    &-range {
+      @include fd-reset();
+
+      position: relative;
+      height: 100%;
+      border-radius: 0.25rem;
+      background-color: var(--fdSlider_Track_Active_Background);
+      border: 0.0625rem solid var(--fdSlider_Track_Active_Border);
+    }
+  }
+
+  &__tick-wrapper {
+    @include fd-reset();
+
+    position: absolute;
+    width: 100%;
+    top: -0.4rem;
+  }
+
+  &__ticks {
+    @include fd-reset();
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__labels {
+    @include fd-reset();
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 1rem;
+    top: 0.5rem;
+  }
+
+  &__tick {
+    @include fd-reset();
+
+    position: relative;
+    width: 0.0625rem;
+    height: var(--fdSlider_Tick_Height);
+    background-color: var(--sapField_BorderColor);
+
+    &--in-range {
+      background-color: var(--fdSlider_Track_Active_Border);
+    }
+  }
+
+  &__label {
+    position: relative;
+    font-size: var(--sapFontSmallSize);
+    color: var(--sapContent_LabelColor);
+  }
+
+  &__handle {
+    @include fd-reset();
+
+    width: 1.625rem;
+    height: 1.625rem;
+    position: absolute;
+    top: -0.7rem;
+    margin-left: -0.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: var(--fdSlider_Handle_Background);
+    border: 0.125rem solid var(--fdSlider_Handle_Border_Color);
+
+    &::before {
+      content: '';
+      width: 2.75rem;
+      height: 2.75rem;
+      position: absolute;
+      transform: translate(-25%, -25%);
+    }
+
+    @include fd-hover() {
+      background: var(--fdSlider_Handle_Background_Hover);
+      border-color: var(--fdSlider_Handle_Border_Color_Hover);
+    }
+
+    @include fd-active() {
+      background: var(--fdSlider_Handle_Background_Active);
+      border-color: var(--fdSlider_Handle_Border_Color_Active);
+    }
+
+    @include fd-screen(l) {
+      top: -0.5rem;
+      width: 1.25rem;
+      height: 1.25rem;
+
+      &::before {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+}
