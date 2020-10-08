@@ -5,17 +5,17 @@ exports[`Storyshots Components/Card Analytical card 1`] = `
 
 `;
 
-exports[`Storyshots Components/Card Default card 1`] = `
-
-
-`;
-
 exports[`Storyshots Components/Card List card 1`] = `
 
 
 `;
 
 exports[`Storyshots Components/Card Object card 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Card Standard card 1`] = `
 
 
 `;
