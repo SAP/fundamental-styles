@@ -26,7 +26,7 @@ export const standard = () => `
                     Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
                 </p>
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer-date">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--date">Aug 20, 2020</small>
                 </div>
             </div>
         </div>
@@ -36,7 +36,6 @@ export const standard = () => `
 standard.storyName = 'Standard';
 standard.parameters = {
     docs: {
-        iframeHeight: 150,
         storyDescription: 'The standard feed list item'
     }
 };
@@ -57,7 +56,7 @@ export const placeHolderImage = () => `
                 </p>
                 
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer-date">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--date">Aug 20, 2020</small>
                 </div>
             </div>
         </div>
@@ -67,7 +66,6 @@ export const placeHolderImage = () => `
 placeHolderImage.storyName = 'Placeholder User Image';
 placeHolderImage.parameters = {
     docs: {
-        iframeHeight: 150,
         storyDescription: 'The Feed list item with placeholder user image'
     }
 };
@@ -82,7 +80,7 @@ export const withoutUserImage = () => `
                 </p>
                 
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer-date">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--date">Aug 20, 2020</small>
                 </div>
             </div>
         </div>
@@ -92,7 +90,6 @@ export const withoutUserImage = () => `
 withoutUserImage.storyName = 'Without User Image';
 withoutUserImage.parameters = {
     docs: {
-        iframeHeight: 150,
         storyDescription: 'The Feed list item without user image'
     }
 };
@@ -117,7 +114,7 @@ export const withUserLink = () => `
                 </p>
                 
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer-date">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--date">Aug 20, 2020</small>
                 </div>
             </div>
         </div>
@@ -127,7 +124,6 @@ export const withUserLink = () => `
 withUserLink.storyName = 'With User link';
 withUserLink.parameters = {
     docs: {
-        iframeHeight: 150,
         storyDescription: 'The Feed list item with link'
     }
 };
@@ -151,7 +147,7 @@ export const showMoreButton = () => `
                 </p>
                 
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer-date">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--date">Aug 20, 2020</small>
                 </div>
             </div>
         </div>
@@ -161,7 +157,6 @@ export const showMoreButton = () => `
 showMoreButton.storyName = 'Show More Button';
 showMoreButton.parameters = {
     docs: {
-        iframeHeight: 150,
         storyDescription: 'More Button'
     }
 };
@@ -185,7 +180,7 @@ export const showLessButton = () => `
                 </p>
                 
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer-date">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--date">Aug 20, 2020</small>
                 </div>
             </div>
         </div>
@@ -195,7 +190,6 @@ export const showLessButton = () => `
 showLessButton.storyName = 'Show Less Button';
 showLessButton.parameters = {
     docs: {
-        iframeHeight: 150,
         storyDescription: 'Less Button'
     }
 };
@@ -218,7 +212,7 @@ export const withActions = () => `
                 </p>
                 
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer-date">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--date">Aug 20, 2020</small>
                 </div>
             </div>          
         </div>
@@ -262,7 +256,6 @@ export const withActions = () => `
 withActions.storyName = 'Actions';
 withActions.parameters = {
     docs: {
-        iframeHeight: 150,
         storyDescription: 'feed list item with actions'
     }
 };
@@ -282,7 +275,7 @@ export const feedListGroup = () => `
                     <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
                 </p>
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer-date">Aug 21, 2020</small>
+                    <small class="fd-feed-list__footer--date">Aug 21, 2020</small>
                 </div>
             </div>
        </div>
@@ -302,7 +295,7 @@ export const feedListGroup = () => `
                     <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
                 </p>
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__date">Aug 22, 2020</small>
+                    <small class="fd-feed-list__footer--date">Aug 22, 2020</small>
                 </div>
             </div>     
         </div>
@@ -321,7 +314,7 @@ export const feedListGroup = () => `
                     <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
                 </p>
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer-date">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--date">Aug 20, 2020</small>
                 </div>
             </div>
        </div>
@@ -332,7 +325,6 @@ export const feedListGroup = () => `
 feedListGroup.storyName = 'Group';
 feedListGroup.parameters = {
     docs: {
-        iframeHeight: 150,
         storyDescription: 'Group'
     }
 };
@@ -351,7 +343,7 @@ export const small = () => `
                 <div>
                     <span class="fd-feed-list__name">Joe Doe: </span>
                     <div class="fd-feed-list__footer">
-                        <small class="fd-feed-list__footer-date">Aug 20, 2020</small>
+                        <small class="fd-feed-list__footer--date">Aug 20, 2020</small>
                     </div>
                 </div>
             </div>    
@@ -368,7 +360,6 @@ export const small = () => `
 small.storyName = 'Small';
 small.parameters = {
     docs: {
-        iframeHeight: 150,
         storyDescription: 'Mobile Responsive'
     }
 };
@@ -392,7 +383,7 @@ export const rtl = () => `
                 </p>
                 
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer-date">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--date">Aug 20, 2020</small>
                 </div>
             </div>          
         </div>
@@ -437,7 +428,6 @@ export const rtl = () => `
 rtl.storyName = 'RTL';
 rtl.parameters = {
     docs: {
-        iframeHeight: 150,
         storyDescription: 'RTL'
     }
 };
