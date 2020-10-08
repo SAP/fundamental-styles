@@ -1,10 +1,10 @@
-import './numeric-content-playground.scss';
-import '../../dist/numeric-content.css';
-import '../../dist/icon.css';
 import * as stories from './numeric-content.stories.js';
 
 export default {
-    title: 'Visual/NumericContent'
+    title: 'Visual/NumericContent',
+    parameters: {
+        components: ['numeric-content', 'icon']
+    }
 };
 
 export const NumericContent = () => {

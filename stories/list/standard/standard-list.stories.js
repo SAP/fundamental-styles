@@ -1,7 +1,3 @@
-import '../../../dist/list.css';
-import '../../../dist/icon.css';
-import '../../../dist/checkbox.css';
-
 export default {
     title: 'Components/List/Standard',
     parameters: {
@@ -10,7 +6,8 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 rather basic data, whereas the data in tables tends to be more complex. Lists are mostly used in the master list for a
 master-detail scenario using the flexible column layout, as well as in popovers or dialogs.
 `,
-        tags: ['f3', 'a11y', 'theme', 'development']
+        tags: ['f3', 'a11y', 'theme', 'development'],
+        components: ['list', 'icon', 'checkbox']
     }
 };
 

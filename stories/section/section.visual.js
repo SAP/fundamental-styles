@@ -1,11 +1,10 @@
-import '../../dist/section.css';
-import '../../dist/layout-grid.css';
-import '../../dist/layout-panel.css';
-import '../../dist/layout.css';
 import * as stories from './section.stories.js';
 
 export default {
-    title: 'Visual/Section'
+    title: 'Visual/Section',
+    parameters: {
+        components: ['section', 'layout-grid', 'layout-panel', 'layout']
+    }
 };
 
 export const Section = () => {

@@ -1,12 +1,10 @@
-import '../../dist/fieldset.css';
-import '../../dist/form-item.css';
-import '../../dist/form-group.css';
-import '../../dist/checkbox.css';
-import '../../dist/radio.css';
 import * as stories from './form-message.stories.js';
 
 export default {
-    title: 'Visual/Form Message'
+    title: 'Visual/Form Message',
+    parameters: {
+        components: ['form-message', 'form-item', 'form-label', 'input', 'popover']
+    }
 };
 
 export const FormMessage = () => {

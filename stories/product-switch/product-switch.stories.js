@@ -1,10 +1,9 @@
-import '../../dist/product-switch.css';
-
 export default {
     title: 'Components/Product Switch',
     parameters: {
         description: 'Product Switch provides a role based access to all products or LoBs. It shows only one level of navigation.',
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['product-switch', 'popover', 'button']
     }
 };
 

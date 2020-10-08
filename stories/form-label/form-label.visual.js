@@ -1,12 +1,10 @@
-import '../../dist/fieldset.css';
-import '../../dist/form-item.css';
-import '../../dist/form-group.css';
-import '../../dist/checkbox.css';
-import '../../dist/radio.css';
 import * as stories from './form-label.stories.js';
 
 export default {
-    title: 'Visual/Form Label'
+    title: 'Visual/Form Label',
+    parameters: {
+        components: ['form-item', 'form-label', 'input']
+    }
 };
 
 export const FormLabel = () => {

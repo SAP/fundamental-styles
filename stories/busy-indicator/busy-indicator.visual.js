@@ -1,8 +1,10 @@
-import '../../dist/busy-indicator.css';
 import * as stories from './busy-indicator.stories.js';
 
 export default {
-    title: 'Visual/Busy Indicator'
+    title: 'Visual/Busy Indicator',
+    parameters: {
+        components: ['busy-indicator']
+    }
 };
 
 export const BusyIndicator = () => {

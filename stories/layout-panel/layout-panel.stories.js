@@ -1,6 +1,3 @@
-import '../../dist/layout-panel.css';
-import '../../dist/title.css';
-
 export default {
     title: 'Layouts/Layout Panel',
     parameters: {
@@ -18,7 +15,8 @@ export default {
   - <code>.fd-layout-panel__filters</code>: Layout Panel level filters that is specific to the data being displayed within the panel.
   - <code>.fd-layout-panel__body</code>: Main content of the Layout Panel can that hold lists, table, tree, text, form or any other infomation.
   - <code>.fd-layout-panel__footer</code>: Layout Panel footer can be utilized for pagination, secondary actions, add more data, etc.
-      `
+      `,
+        components: ['layout-panel', 'title']
     }
 };
 

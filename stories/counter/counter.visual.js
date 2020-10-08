@@ -1,8 +1,10 @@
-import '../../dist/counter.css';
 import * as stories from './counter.stories.js';
 
 export default {
-    title: 'Visual/Counter'
+    title: 'Visual/Counter',
+    parameters: {
+        components: ['counter', 'tabs', 'button']
+    }
 };
 
 export const Counter = () => {

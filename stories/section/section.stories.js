@@ -1,8 +1,3 @@
-import '../../dist/section.css';
-import '../../dist/layout-grid.css';
-import '../../dist/layout-panel.css';
-import '../../dist/layout.css';
-
 export default {
     title: 'Layouts/Section',
     parameters: {
@@ -14,7 +9,8 @@ You will generally use a section inside a page container which will give you the
 Can hold two child types:
 - \`.fd-layout-panel\`
 - \`.fd-container\`, \`.fd-row\` and \`fd-col--[num]\` can be used to organize panels or content when a grid layout is not desired.`,
-        tags: ['non-f3']
+        tags: ['non-f3'],
+        components: ['section', 'layout-grid', 'layout-panel', 'layout']
     }
 };
 

@@ -1,11 +1,10 @@
-import '../../dist/button.css';
-import '../../dist/icon.css';
-import '../../dist/input.css';
-import '../../dist/segmented-button.css';
 import * as stories from './bar.stories.js';
 
 export default {
-    title: 'Visual/Bar'
+    title: 'Visual/Bar',
+    parameters: {
+        components: ['button', 'icon', 'input', 'segmented-button', 'image', 'bar']
+    }
 };
 
 export const Bar = () => {

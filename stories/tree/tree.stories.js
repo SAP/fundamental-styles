@@ -1,9 +1,3 @@
-import '../../dist/button.css';
-import '../../dist/checkbox.css';
-import '../../dist/icon.css';
-import '../../dist/radio.css';
-import '../../dist/tree.css';
-
 export default {
     title: 'Components/Tree',
     parameters: {
@@ -52,7 +46,8 @@ The Tree currently supports up to 12 levels. More levels can be added per reques
 <span style="color: darkred; font-weight: bold;">NOTE: In some examples the expander is not interactive (will not show/hide the next level). Its purpose in these cases is simply to demonstrate the indentation rules.</span>
 `,
         docs: { iframeHeight: 400 },
-        tags: ['f3', 'a11y', 'theme', 'development']
+        tags: ['f3', 'a11y', 'theme', 'development'],
+        components: ['button', 'checkbox', 'icon', 'radio', 'tree']
     }
 };
 

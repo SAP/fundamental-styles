@@ -1,8 +1,3 @@
-import '../../dist/page.css';
-import '../../dist/bar.css';
-import '../../dist/button.css';
-import '../../dist/icon.css';
-
 export default {
     title: 'Layouts/Page',
     parameters: {
@@ -34,7 +29,8 @@ export default {
  - Size M & L: Bar component with additional <code>fd-bar--page-m_l</code> modifier class and <code>fd-page__content--m_l</code> modifier class for the content
  - Size XL: Bar component with additional <code>fd-bar--page-xl</code> modifier class and <code>fd-page__content--xl</code> modifier class for the content
 `,
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['page', 'bar', 'button', 'icon']
     }
 };
 

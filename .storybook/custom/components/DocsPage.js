@@ -6,7 +6,7 @@ import Footer from './Footer';
 import Header from './Header';
 import Toc from './Toc';
 import tocbot from 'tocbot';
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState, useRef } from 'react';
 import {
     Heading,
     Title,
@@ -38,13 +38,47 @@ const DocsPage = () => {
         return null;
     }
 
+    let [themeState, setThemeState] = useState('sap_fiori_3');
+    const previousTheme = useRef();
+
+    useEffect(() => {
+        if (!previousTheme.current || previousTheme.current !== themeState) {
+            // remove previous theme links
+            let links = [].slice.call(document.getElementsByTagName('link'));
+            links.forEach(item => {
+                if(item.attributes['data-theme-id']) {
+                    console.log(item)
+                    item.parentNode.removeChild(item);
+                }
+            });
+            let cssArr = context?.parameters?.components || [];
+            cssArr.push('info-label');
+            cssArr.forEach(component => {
+                let stylePath = `${component}-${themeState}.css`;
+                let link = document.createElement('link');
+
+                link.type = 'text/css';
+                link.rel = 'stylesheet';
+                link.href = stylePath;
+                link.setAttribute('data-theme-id', themeState);
+
+
+                document.head.appendChild(link);
+
+                return () => { document.head.removeChild(link); }
+            })
+            previousTheme.current = themeState;
+        }
+    }, [themeState]);
+
     // do not display disabled stories (dev only)
     const stories = context.storyStore?.getStoriesForKind(context.kind)?.filter((s) => !s.parameters?.docs?.disable);
 
     const renderInfoLabels = (tags) => {
         let infoLabels = []
-        tags?.forEach((tag) => {
+        tags?.forEach((tag, i) => {
             infoLabels.push(<InfoLabel
+                key={i}
                 tag={tag}
             />)
         })
@@ -57,7 +91,7 @@ const DocsPage = () => {
 
     return (
         <>
-            <Header />
+            <Header onThemeChange={(e) => setThemeState(e.target.value)} />
             <Title />
             <Toc />
             <Subtitle />

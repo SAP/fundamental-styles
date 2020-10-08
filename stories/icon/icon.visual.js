@@ -1,13 +1,10 @@
-import '../../dist/button.css';
-import '../../dist/button-split.css';
-import '../../dist/icon.css';
-import '../../dist/menu.css';
-import '../../dist/popover.css';
-import '../../dist/segmented-button.css';
 import * as stories from './icon.stories.js';
 
 export default {
-    title: 'Visual/Icon'
+    title: 'Visual/Icon',
+    parameters: {
+        components: ['button', 'button-split', 'icon', 'menu', 'popover', 'segmented-button']
+    }
 };
 
 export const Icon = () => {

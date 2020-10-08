@@ -1,8 +1,10 @@
-import '../../dist/rating-indicator.css';
 import * as stories from './rating-indicator.stories.js';
 
 export default {
-    title: 'Visual/Rating Indicator'
+    title: 'Visual/Rating Indicator',
+    parameters: {
+        components: ['rating-indicator']
+    }
 };
 
 export const RatingIndicator = () => {
