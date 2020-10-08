@@ -341,3 +341,34 @@ noGap.parameters = {
         storyDescription: 'To remove gutters between columns apply the <code class="docs-code">fd-container--no-gap</code> modifier for the container and the <code class="docs-code">fd-col--no-gap</code> modifier with the column.'
     }
 };
+
+export const autoAdjusting = () =>
+    `
+<div class="fd-container">
+  <div class="fd-row">
+    <div class="fd-col fd-col--full">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">
+            Auto adjusting col before 7 col
+        </div>
+    </div>
+    <div class="fd-col fd-col--7">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-2">
+            7 col
+        </div>
+    </div>
+    <div class="fd-col fd-col--full">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">
+            Auto adjusting col after 7 col
+        </div>
+    </div>
+  </div>
+</div>
+`;
+
+autoAdjusting.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: 'To make the column auto adjust and occupy the remaining space of the row use the <code class="docs-code">--full</code> modifier. There is a minimum width of 1/12 columns'
+    }
+};
+
