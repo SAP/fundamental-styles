@@ -117,8 +117,13 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
             </button>
             
                         
+            <span
+              class="fd-toolbar__separator"
+            />
+            
+                        
             <div
-              aria-label="Global actions"
+              aria-label="Navigation actions"
               class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
               role="toolbar"
             >
@@ -131,7 +136,7 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
                 
                                 
                 <i
-                  class="sap-icon--survey"
+                  class="sap-icon--resize"
                 />
                 
                             
@@ -145,7 +150,7 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
                 
                                 
                 <i
-                  class="sap-icon--pool"
+                  class="sap-icon--exitfullscreen"
                 />
                 
                             
@@ -159,7 +164,7 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
                 
                                 
                 <i
-                  class="sap-icon--pie-chart"
+                  class="sap-icon--decline"
                 />
                 
                             
@@ -588,8 +593,13 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
             </button>
             
                         
+            <span
+              class="fd-toolbar__separator"
+            />
+            
+                        
             <div
-              aria-label="Global actions"
+              aria-label="Navigation actions"
               class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
               role="toolbar"
             >
@@ -602,7 +612,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
                 
                                 
                 <i
-                  class="sap-icon--survey"
+                  class="sap-icon--resize"
                 />
                 
                             
@@ -616,7 +626,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
                 
                                 
                 <i
-                  class="sap-icon--pool"
+                  class="sap-icon--exitfullscreen"
                 />
                 
                             
@@ -630,7 +640,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
                 
                                 
                 <i
-                  class="sap-icon--pie-chart"
+                  class="sap-icon--decline"
                 />
                 
                             
@@ -889,8 +899,13 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
             </button>
             
                         
+            <span
+              class="fd-toolbar__separator"
+            />
+            
+                        
             <div
-              aria-label="Global actions"
+              aria-label="Navigation actions"
               class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
               role="toolbar"
             >
@@ -903,7 +918,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
                 
                                 
                 <i
-                  class="sap-icon--survey"
+                  class="sap-icon--resize"
                 />
                 
                             
@@ -917,7 +932,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
                 
                                 
                 <i
-                  class="sap-icon--pool"
+                  class="sap-icon--exitfullscreen"
                 />
                 
                             
@@ -931,7 +946,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
                 
                                 
                 <i
-                  class="sap-icon--pie-chart"
+                  class="sap-icon--decline"
                 />
                 
                             
@@ -1190,8 +1205,13 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
             </button>
             
                         
+            <span
+              class="fd-toolbar__separator"
+            />
+            
+                        
             <div
-              aria-label="Global actions"
+              aria-label="Navigation actions"
               class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
               role="toolbar"
             >
@@ -1204,7 +1224,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
                 
                                 
                 <i
-                  class="sap-icon--survey"
+                  class="sap-icon--resize"
                 />
                 
                             
@@ -1218,7 +1238,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
                 
                                 
                 <i
-                  class="sap-icon--pool"
+                  class="sap-icon--exitfullscreen"
                 />
                 
                             
@@ -1232,7 +1252,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
                 
                                 
                 <i
-                  class="sap-icon--pie-chart"
+                  class="sap-icon--decline"
                 />
                 
                             
@@ -1432,7 +1452,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                     
             <div
               aria-label="Close action"
-              class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+              class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
               role="toolbar"
             >
               
@@ -1472,37 +1492,126 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                         
             <div
               aria-label="Product actions"
-              class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+              class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
               role="toolbar"
             >
               
                             
-              <button
-                aria-label="More Header Content"
-                class="fd-button fd-button--transparent"
+              <div
+                class="fd-popover fd-toolbar__overflow"
               >
                 
                                 
-                <i
-                  class="sap-icon--overflow"
-                />
+                <div
+                  class="fd-popover__control"
+                >
+                  
+                                    
+                  <button
+                    aria-controls="wgxzK85915"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    aria-label="More Header Content"
+                    class="fd-button fd-button--transparent"
+                  >
+                    
+                                        
+                    <i
+                      class="sap-icon--overflow"
+                    />
+                        
+                                    
+                  </button>
+                  
+                                
+                </div>
+                
+                                
+                <div
+                  aria-hidden="true"
+                  class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+                  id="wgxzK85915"
+                >
+                  
+                                    
+                  <div
+                    class="fd-toolbar__overflow__body"
+                  >
+                    
+                                        Overflowing title content
+                                    
+                  </div>
+                  
+                                
+                </div>
                 
                             
-              </button>
+              </div>
               
                             
-              <button
-                aria-label="Header actions"
-                class="fd-button fd-button--transparent"
+              <div
+                class="fd-popover fd-toolbar__overflow"
               >
                 
                                 
-                <i
-                  class="sap-icon--overflow"
-                />
+                <div
+                  class="fd-popover__control"
+                >
+                  
+                                    
+                  <button
+                    aria-controls="wgxzK85914"
+                    aria-expanded="true"
+                    aria-haspopup="true"
+                    aria-label="Header actions"
+                    class="fd-button fd-button--transparent"
+                  >
+                    
+                                        
+                    <i
+                      class="sap-icon--overflow"
+                    />
+                        
+                                    
+                  </button>
+                  
+                                
+                </div>
+                
+                                
+                <div
+                  aria-hidden="false"
+                  class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+                  id="wgxzK85914"
+                >
+                  
+                                    
+                  <div
+                    class="fd-toolbar__overflow__body"
+                  >
+                    
+                                        
+                    <button
+                      class="fd-button fd-button--transparent"
+                    >
+                      Accept
+                    </button>
+                    
+                                        
+                    <button
+                      class="fd-button fd-button--transparent"
+                    >
+                      Reject
+                    </button>
+                    
+                                    
+                  </div>
+                  
+                                
+                </div>
                 
                             
-              </button>
+              </div>
               
                         
             </div>
@@ -1837,7 +1946,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                     
             <div
               aria-label="Close action"
-              class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+              class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
               role="toolbar"
             >
               
@@ -1877,37 +1986,126 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                         
             <div
               aria-label="Product actions"
-              class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+              class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear  fd-toolbar--cozy fd-toolbar--transparent"
               role="toolbar"
             >
               
                             
-              <button
-                aria-label="More Header Content"
-                class="fd-button fd-button--transparent"
+              <div
+                class="fd-popover fd-toolbar__overflow"
               >
                 
                                 
-                <i
-                  class="sap-icon--overflow"
-                />
+                <div
+                  class="fd-popover__control"
+                >
+                  
+                                    
+                  <button
+                    aria-controls="wgxzK85913"
+                    aria-expanded="true"
+                    aria-haspopup="true"
+                    aria-label="More Header Content"
+                    class="fd-button fd-button--transparent"
+                  >
+                    
+                                        
+                    <i
+                      class="sap-icon--overflow"
+                    />
+                        
+                                    
+                  </button>
+                  
+                                
+                </div>
+                
+                                
+                <div
+                  aria-hidden="false"
+                  class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+                  id="wgxzK85913"
+                >
+                  
+                                    
+                  <div
+                    class="fd-toolbar__overflow__body"
+                  >
+                    
+                                        Overflowing title content
+                                    
+                  </div>
+                  
+                                
+                </div>
                 
                             
-              </button>
+              </div>
               
                             
-              <button
-                aria-label="Header actions"
-                class="fd-button fd-button--transparent"
+              <div
+                class="fd-popover fd-toolbar__overflow"
               >
                 
                                 
-                <i
-                  class="sap-icon--overflow"
-                />
+                <div
+                  class="fd-popover__control"
+                >
+                  
+                                    
+                  <button
+                    aria-controls="wgxzK85912"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    aria-label="Header actions"
+                    class="fd-button fd-button--transparent"
+                  >
+                    
+                                        
+                    <i
+                      class="sap-icon--overflow"
+                    />
+                        
+                                    
+                  </button>
+                  
+                                
+                </div>
+                
+                                
+                <div
+                  aria-hidden="true"
+                  class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+                  id="wgxzK85912"
+                >
+                  
+                                    
+                  <div
+                    class="fd-toolbar__overflow__body"
+                  >
+                    
+                                        
+                    <button
+                      class="fd-button fd-button--transparent"
+                    >
+                      Accept
+                    </button>
+                    
+                                        
+                    <button
+                      class="fd-button fd-button--transparent"
+                    >
+                      Reject
+                    </button>
+                    
+                                    
+                  </div>
+                  
+                                
+                </div>
                 
                             
-              </button>
+              </div>
               
                         
             </div>
@@ -2748,8 +2946,13 @@ exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
               </button>
               
                             
+              <span
+                class="fd-toolbar__separator"
+              />
+              
+                            
               <div
-                aria-label="Global actions"
+                aria-label="Navigation actions"
                 class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
                 role="toolbar"
               >
@@ -2762,7 +2965,7 @@ exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
                   
                                     
                   <i
-                    class="sap-icon--survey"
+                    class="sap-icon--resize"
                   />
                   
                                 
@@ -2776,7 +2979,7 @@ exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
                   
                                     
                   <i
-                    class="sap-icon--pool"
+                    class="sap-icon--exitfullscreen"
                   />
                   
                                 
@@ -2790,13 +2993,13 @@ exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
                   
                                     
                   <i
-                    class="sap-icon--pie-chart"
+                    class="sap-icon--decline"
                   />
                   
                                 
                 </button>
                 
-                            
+                        
               </div>
               
                         
@@ -3169,7 +3372,7 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
           
                     
           <div
-            aria-label="Global actions"
+            aria-label="Navigation actions"
             class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
             role="toolbar"
           >

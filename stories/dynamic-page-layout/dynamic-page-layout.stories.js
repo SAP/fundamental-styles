@@ -30,13 +30,13 @@ export default {
 - <code class="docs-code">fd-dynamic-page</code> Main element
   - <code class="docs-code">fd-dynamic-page\\_\\_header</code>The header area containing title area, collapsible header with buttons, and tabs
     - <code class="docs-code">fd-dynamic-page\\_\\_title-area</code> The area holding title, KPI content, subtitle, and actions
-        - <code class="docs-code">fd-dynamic-page\\_\\_breadcrumb-container</code> Breadcrumb container, can also hold global actions
+        - <code class="docs-code">fd-dynamic-page\\_\\_breadcrumb-container</code> Breadcrumb container, can also hold navigation actions
             - <code class="docs-code">fd-dynamic-page\\_\\_breadcrumb</code> Breadcrumbs
         - <code class="docs-code">fd-dynamic-page\\_\\_title-container</code> The container for title, KPI content and actions
             - <code class="docs-code">fd-dynamic-page\\_\\_title</code> Dynamic page title
             - <code class="docs-code">fd-dynamic-page\\_\\_title-content</code> The KPI content
             - <code class="docs-code">fd-dynamic-page\\_\\_toolbar</code> Toolbar container for actions
-            - <code class="docs-code">fd-dynamic-page\\_\\_toolbar--actions</code> Global actions
+            - <code class="docs-code">fd-dynamic-page\\_\\_toolbar--actions</code> Navigation actions
         - <code class="docs-code">fd-dynamic-page\\_\\_subtitle</code> Dynamic page subtitle
     - <code class="docs-code">fd-dynamic-page\\_\\_collapsible-header</code> Dynamic page header
     - <code class="docs-code">fd-dynamic-page\\_\\_collapsible-header-visibility-container</code> The container for pin/collapse buttons
@@ -91,15 +91,16 @@ export const desktop = () => `
                     <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                         <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
                         <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
-                        <div role="toolbar" aria-label="Global actions" class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                        <span class="fd-toolbar__separator"></span>
+                        <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                             <button class="fd-button fd-button--transparent" aria-label="Survey">
-                                <i class="sap-icon--survey"></i>
+                                <i class="sap-icon--resize"></i>
                             </button>
                             <button class="fd-button fd-button--transparent" aria-label="Pool">
-                                <i class="sap-icon--pool"></i>
+                                <i class="sap-icon--exitfullscreen"></i>
                             </button>
                             <button class="fd-button fd-button--transparent" aria-label="Chart">
-                                <i class="sap-icon--pie-chart"></i>
+                                <i class="sap-icon--decline"></i>
                             </button>
                         </div>
                     </div>
@@ -229,7 +230,7 @@ export const tablet = () => `
                             <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
                         </ul>
                     </nav>
-                    <div role="toolbar" aria-label="Global actions" class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                    <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                         <button class="fd-button fd-button--transparent" aria-label="Survey">
                             <i class="sap-icon--survey"></i>
                         </button>
@@ -351,7 +352,7 @@ tablet.parameters = {
 | Tabs | \`fd-dynamic-page__tabs--md\` |
 | Content | \`fd-dynamic-page__content--md\` |
  
-It is recommended that the navigation actions are displayed in a separate row above global actions, and are placed at the same level as the breadcrumb component.`
+It is recommended that the navigation actions are displayed in a separate row above product actions, and are placed at the same level as the breadcrumb component.`
     }
 };
 
@@ -368,7 +369,7 @@ export const mobile = () => `
                             <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
                         </ul>
                     </nav>
-                    <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                    <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                             <button class="fd-button fd-button--transparent" aria-label="Close">
                                 <i class="sap-icon--decline"></i>
                             </button>
@@ -377,13 +378,44 @@ export const mobile = () => `
                 <div class="fd-dynamic-page__title-container">
                     <h1 class="fd-title fd-dynamic-page__title"> Balenciaga Tripple S Trainers </h1>
                         
-                        <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                            <button class="fd-button fd-button--transparent" aria-label="More Header Content">
-                                <i class="sap-icon--overflow"></i>
-                            </button>
-                            <button class="fd-button fd-button--transparent" aria-label="Header actions">
-                                <i class="sap-icon--overflow"></i>
-                            </button>
+                        <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                            <div class="fd-popover fd-toolbar__overflow">
+                                <div class="fd-popover__control">
+                                    <button class="fd-button fd-button--transparent"
+                                    aria-controls="wgxzK85915"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    aria-label="More Header Content">
+                                        <i class="sap-icon--overflow"></i>    
+                                    </button>
+                                </div>
+                                <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+                                    aria-hidden="true"
+                                    id="wgxzK85915">
+                                    <div class="fd-toolbar__overflow__body">
+                                        Overflowing title content
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fd-popover fd-toolbar__overflow">
+                                <div class="fd-popover__control">
+                                    <button class="fd-button fd-button--transparent"
+                                    aria-controls="wgxzK85914"
+                                    aria-haspopup="true"
+                                    aria-expanded="true"
+                                    aria-label="Header actions">
+                                        <i class="sap-icon--overflow"></i>    
+                                    </button>
+                                </div>
+                                <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+                                    aria-hidden="false"
+                                    id="wgxzK85914">
+                                    <div class="fd-toolbar__overflow__body">
+                                        <button class="fd-button fd-button--transparent">Accept</button>
+                                        <button class="fd-button fd-button--transparent">Reject</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                 </div>
                 <div class="fd-dynamic-page__subtitle"> Expanded header in mobile </div>
@@ -464,7 +496,7 @@ export const mobile = () => `
                             <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
                         </ul>
                     </nav>
-                    <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                    <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                             <button class="fd-button fd-button--transparent" aria-label="Close">
                                 <i class="sap-icon--decline"></i>
                             </button>
@@ -473,13 +505,44 @@ export const mobile = () => `
                 <div class="fd-dynamic-page__title-container">
                     <h1 class="fd-title fd-dynamic-page__title fd-dynamic-page__title--collapsed"> Balenciaga Tripple S Trainers </h1>
                         
-                        <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                            <button class="fd-button fd-button--transparent" aria-label="More Header Content">
-                                <i class="sap-icon--overflow"></i>
-                            </button>
-                            <button class="fd-button fd-button--transparent" aria-label="Header actions">
-                                <i class="sap-icon--overflow"></i>
-                            </button>
+                        <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear  fd-toolbar--cozy fd-toolbar--transparent">
+                            <div class="fd-popover fd-toolbar__overflow">
+                                <div class="fd-popover__control">
+                                    <button class="fd-button fd-button--transparent"
+                                    aria-controls="wgxzK85913"
+                                    aria-haspopup="true"
+                                    aria-expanded="true"
+                                    aria-label="More Header Content">
+                                        <i class="sap-icon--overflow"></i>    
+                                    </button>
+                                </div>
+                                <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+                                    aria-hidden="false"
+                                    id="wgxzK85913">
+                                    <div class="fd-toolbar__overflow__body">
+                                        Overflowing title content
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fd-popover fd-toolbar__overflow">
+                                <div class="fd-popover__control">
+                                    <button class="fd-button fd-button--transparent"
+                                    aria-controls="wgxzK85912"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    aria-label="Header actions">
+                                        <i class="sap-icon--overflow"></i>    
+                                    </button>
+                                </div>
+                                <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+                                    aria-hidden="true"
+                                    id="wgxzK85912">
+                                    <div class="fd-toolbar__overflow__body">
+                                        <button class="fd-button fd-button--transparent">Accept</button>
+                                        <button class="fd-button fd-button--transparent">Reject</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                 </div>
                 <div class="fd-dynamic-page__subtitle"> Collapsed header </div>
@@ -665,6 +728,7 @@ mobile.parameters = {
 | Title Area | \`fd-dynamic-page__title-area--sm\` |
 | Breadcrumb | \`fd-dynamic-page__breadcrumb--sm\` |
 | Header | \`fd-dynamic-page__collapsible-header--sm\` |
+| Toolbar | \`fd-dynamic-page__toolbar--sm\` |
 | Tabs | \`fd-dynamic-page__tabs--sm\` |
 | Content | \`fd-dynamic-page__content--sm\` |
 | Summary line (optional) | \`fd-dynamic-page__summarized-title-area--sm\` |
@@ -695,15 +759,16 @@ export const expandable = () => `
                     <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                         <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
                         <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
-                        <div role="toolbar" aria-label="Global actions" class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                        <span class="fd-toolbar__separator"></span>
+                        <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                             <button class="fd-button fd-button--transparent" aria-label="Survey">
-                                <i class="sap-icon--survey"></i>
+                                <i class="sap-icon--resize"></i>
                             </button>
                             <button class="fd-button fd-button--transparent" aria-label="Pool">
-                                <i class="sap-icon--pool"></i>
+                                <i class="sap-icon--exitfullscreen"></i>
                             </button>
                             <button class="fd-button fd-button--transparent" aria-label="Chart">
-                                <i class="sap-icon--pie-chart"></i>
+                                <i class="sap-icon--decline"></i>
                             </button>
                         </div>
                     </div>
@@ -763,15 +828,16 @@ export const expandable = () => `
                     <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                         <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
                         <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
-                        <div role="toolbar" aria-label="Global actions" class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                        <span class="fd-toolbar__separator"></span>
+                        <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                             <button class="fd-button fd-button--transparent" aria-label="Survey">
-                                <i class="sap-icon--survey"></i>
+                                <i class="sap-icon--resize"></i>
                             </button>
                             <button class="fd-button fd-button--transparent" aria-label="Pool">
-                                <i class="sap-icon--pool"></i>
+                                <i class="sap-icon--exitfullscreen"></i>
                             </button>
                             <button class="fd-button fd-button--transparent" aria-label="Chart">
-                                <i class="sap-icon--pie-chart"></i>
+                                <i class="sap-icon--decline"></i>
                             </button>
                         </div>
                     </div>
@@ -831,15 +897,16 @@ export const expandable = () => `
                     <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                         <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
                         <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
-                        <div role="toolbar" aria-label="Global actions" class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                        <span class="fd-toolbar__separator"></span>
+                        <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                             <button class="fd-button fd-button--transparent" aria-label="Survey">
-                                <i class="sap-icon--survey"></i>
+                                <i class="sap-icon--resize"></i>
                             </button>
                             <button class="fd-button fd-button--transparent" aria-label="Pool">
-                                <i class="sap-icon--pool"></i>
+                                <i class="sap-icon--exitfullscreen"></i>
                             </button>
                             <button class="fd-button fd-button--transparent" aria-label="Chart">
-                                <i class="sap-icon--pie-chart"></i>
+                                <i class="sap-icon--decline"></i>
                             </button>
                         </div>
                     </div>
@@ -901,17 +968,18 @@ export const rtl = () => `
                         <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                             <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
                             <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
-                            <div role="toolbar" aria-label="Global actions" class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                            <span class="fd-toolbar__separator"></span>
+                            <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                 <button class="fd-button fd-button--transparent" aria-label="Survey">
-                                    <i class="sap-icon--survey"></i>
+                                    <i class="sap-icon--resize"></i>
                                 </button>
                                 <button class="fd-button fd-button--transparent" aria-label="Pool">
-                                    <i class="sap-icon--pool"></i>
+                                    <i class="sap-icon--exitfullscreen"></i>
                                 </button>
                                 <button class="fd-button fd-button--transparent" aria-label="Chart">
-                                    <i class="sap-icon--pie-chart"></i>
+                                    <i class="sap-icon--decline"></i>
                                 </button>
-                            </div>
+                        </div>
                         </div>
                     </div>
                     <div class="fd-dynamic-page__subtitle"> Oversized multimaterial sneakers with quilted effect </div>
