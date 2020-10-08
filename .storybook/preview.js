@@ -93,5 +93,5 @@ export const parameters = {
 
 
 export const decorators = [
-  withCssResources,
+  withCssResources
 ];

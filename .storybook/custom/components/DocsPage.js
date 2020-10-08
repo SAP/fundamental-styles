@@ -43,6 +43,14 @@ const DocsPage = () => {
 
     useEffect(() => {
         if (!previousTheme.current || previousTheme.current !== themeState) {
+            // remove previous theme links
+            let links = [].slice.call(document.getElementsByTagName('link'));
+            links.forEach(item => {
+                if(item.attributes['data-theme-id']) {
+                    console.log(item)
+                    item.parentNode.removeChild(item);
+                }
+            });
             let cssArr = context?.parameters?.components || [];
             cssArr.push('info-label');
             cssArr.forEach(component => {
@@ -52,6 +60,8 @@ const DocsPage = () => {
                 link.type = 'text/css';
                 link.rel = 'stylesheet';
                 link.href = stylePath;
+                link.setAttribute('data-theme-id', themeState);
+
 
                 document.head.appendChild(link);
 
