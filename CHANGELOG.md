@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.0...v0.13.0-rc.1) (2020-10-08)
+
+
+### Features
+
+* support fallbacks in ie11 for all themes ([#1752](https://github.com/SAP/fundamental-styles/issues/1752)) ([9c6d916](https://github.com/SAP/fundamental-styles/commit/9c6d916f835e15d5b3b1f467979a190fb5942ade))
+
 ## [0.13.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.12.1-rc.18...v0.13.0-rc.0) (2020-10-07)
 
 
