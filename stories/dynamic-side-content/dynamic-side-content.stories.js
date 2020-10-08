@@ -127,7 +127,6 @@ export const responsiveness = () => `
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-9">Main</div>
         </div>
     </div>
-    <br/>
     <h3>On middle screen the main part occupies 66.66% wide</h3>
     <div class="fd-dynamic-side fd-dynamic-side--md" style="max-width: 920px">
         <div class="fd-dynamic-side__side">
@@ -137,7 +136,6 @@ export const responsiveness = () => `
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-9">Main</div>
         </div>
     </div>
-    <br/>
     <h3>On small screen the main part occupies 100% wide and the side content gets hidden</h3>
     <div class="fd-dynamic-side fd-dynamic-side--sm" style="max-width: 420px">
         <div class="fd-dynamic-side__side">

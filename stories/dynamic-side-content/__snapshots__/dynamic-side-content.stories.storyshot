@@ -62,9 +62,6 @@ exports[`Storyshots Layouts/Dynamic Side Content Responsiveness 1`] = `
   </div>
   
     
-  <br />
-  
-    
   <h3>
     On middle screen the main part occupies 66.66% wide
   </h3>
@@ -107,9 +104,6 @@ exports[`Storyshots Layouts/Dynamic Side Content Responsiveness 1`] = `
     
     
   </div>
-  
-    
-  <br />
   
     
   <h3>
