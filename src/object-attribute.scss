@@ -1,9 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
 
-$fd-object-attribute-text-decoration-none: none;
-$fd-object-attribute-text-decoration-underline: underline;
-
 $block: #{$fd-namespace}-object-attribute;
 
 .#{$block} {
@@ -16,30 +13,31 @@ $block: #{$fd-namespace}-object-attribute;
   &--link {
     @include action-cursor();
 
-    text-decoration: $fd-object-attribute-text-decoration-none;
+    text-decoration: none;
     color: var(--sapLinkColor);
 
     &:visited {
-      text-decoration: $fd-object-attribute-text-decoration-none;
       color: var(--sapLink_Visited_Color);
     }
 
     &:hover {
       @include fd-hover() {
-        text-decoration: $fd-object-attribute-text-decoration-underline;
+        text-decoration: underline;
         color: var(--sapLink_Hover_Color);
       }
-    }
-
-    &[disabled] {
-      @include isDisabled();
     }
 
     &:focus {
       @include fd-focus();
       @include fd-fiori-focus($offset: -0.0625rem);
+    }
 
-      text-decoration: $fd-object-attribute-text-decoration-underline;
+    &[disabled],
+    &[aria-disabled="true"] {
+      @include fd-disabled() {
+        opacity: var(--sapContent_DisabledOpacity);
+        pointer-events: none;
+      }
     }
   }
 }
