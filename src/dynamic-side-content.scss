@@ -66,14 +66,19 @@ $block: #{$fd-namespace}-dynamic-side;
   &--equal-split {
     flex-direction: row;
 
-    @include fd-dynamic-side-main () {
+    @mixin fd-dynamic-side-equal() {
       flex: 1 1 50%;
       width: 50%;
+
+      @content;
+    }
+
+    @include fd-dynamic-side-main () {
+      @include fd-dynamic-side-equal();
     }
 
     @include fd-dynamic-side-side () {
-      flex: 1 1 50%;
-      width: 50%;
+      @include fd-dynamic-side-equal();
     }
   }
 
