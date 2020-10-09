@@ -1,12 +1,4 @@
-import '../../dist/breadcrumb.css';
-import '../../dist/bar.css';
-import '../../dist/button.css';
-import '../../dist/breadcrumb.css';
-import '../../dist/tabs.css';
-import '../../dist/toolbar.css';
-import '../../dist/dynamic-page.css';
-
-import * as stories from './dynamic-page-layout.stories.js';
+import * as stories from './dynamic-page.stories.js';
 
 export default {
     title: 'Visual/DynamicPageLayout'

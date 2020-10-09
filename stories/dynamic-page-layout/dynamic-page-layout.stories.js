@@ -1,10 +1,4 @@
-import '../../dist/bar.css';
-import '../../dist/button.css';
-import '../../dist/breadcrumb.css';
-import '../../dist/tabs.css';
-import '../../dist/toolbar.css';
-import '../../dist/title.css';
-import '../../dist/dynamic-page.css';
+import './custom.scss';
 
 export default {
     title: 'Components/Dynamic Page Layout',
@@ -75,7 +69,8 @@ position of the content with respect to the header needs some implementation log
 | Transparent background for content area|<code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_content--transparent-bg</code>        |
 
 `,
-        tags: ['f3', 'a11y', 'theme', 'development']
+        tags: ['f3', 'theme', 'development'],
+        components: ['bar', 'breadcrumb', 'tabs', 'link', 'toolbar', 'title', 'icon', 'button', 'popover', 'dynamic-page']
     }
 };
 
