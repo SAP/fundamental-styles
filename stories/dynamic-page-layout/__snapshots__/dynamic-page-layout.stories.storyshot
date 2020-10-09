@@ -21,154 +21,186 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
       >
         
                 
-        <nav
-          aria-label="Breadcrumbs"
-        >
-          
-                    
-          <ul
-            class="fd-dynamic-page__breadcrumb fd-breadcrumb"
-          >
-            
-                        
-            <li
-              class="fd-breadcrumb__item"
-            >
-              <a
-                class="fd-breadcrumb__link"
-                href="#"
-                tabindex="0"
-              >
-                Men
-              </a>
-            </li>
-            
-                        
-            <li
-              class="fd-breadcrumb__item"
-            >
-              <a
-                class="fd-breadcrumb__link"
-                href="#"
-                tabindex="0"
-              >
-                Shoes
-              </a>
-            </li>
-            
-                        
-            <li
-              class="fd-breadcrumb__item"
-            >
-              <a
-                aria-current="page"
-                class="fd-breadcrumb__link"
-                href="#"
-                tabindex="0"
-              >
-                Running Shoes
-              </a>
-            </li>
-            
-                    
-          </ul>
-          
-                
-        </nav>
-        
-                
         <div
-          class="fd-dynamic-page__title-container"
+          class="fd-dynamic-page__main-container"
         >
-          
-                    
-          <h1
-            class="fd-title fd-dynamic-page__title"
-          >
-             Balenciaga Tripple S Trainers 
-          </h1>
           
                     
           <div
-            class="fd-dynamic-page__title-content"
+            class="fd-dynamic-page__breadcrumb-title-container"
           >
-             Some RANDOM things 
+            
+                        
+            <nav
+              aria-label="Breadcrumbs"
+            >
+              
+                            
+              <ul
+                class="fd-dynamic-page__breadcrumb fd-breadcrumb"
+              >
+                
+                                
+                <li
+                  class="fd-breadcrumb__item"
+                >
+                  <a
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Men
+                  </a>
+                </li>
+                
+                                
+                <li
+                  class="fd-breadcrumb__item"
+                >
+                  <a
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Shoes
+                  </a>
+                </li>
+                
+                                
+                <li
+                  class="fd-breadcrumb__item"
+                >
+                  <a
+                    aria-current="page"
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Running Shoes
+                  </a>
+                </li>
+                
+                            
+              </ul>
+              
+                        
+            </nav>
+            
+                        
+            <div
+              class="fd-dynamic-page__title-container"
+            >
+              
+                            
+              <h1
+                class="fd-title fd-dynamic-page__title"
+              >
+                 Balenciaga Tripple S Trainers 
+              </h1>
+              
+                            
+              <div
+                class="fd-dynamic-page__title-content"
+              >
+                 Some RANDOM things 
+              </div>
+              
+                        
+            </div>
+            
+                    
           </div>
           
                     
           <div
-            aria-label="Product actions"
-            class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-            role="toolbar"
+            class="fd-dynamic-page__actions-container"
           >
             
                         
-            <button
-              class="fd-button fd-button--compact fd-button--positive"
-            >
-              Accept
-            </button>
-            
-                        
-            <button
-              class="fd-button fd-button--compact fd-button--reject"
-            >
-              Reject
-            </button>
-            
-                        
-            <span
-              class="fd-toolbar__separator"
-            />
-            
-                        
             <div
-              aria-label="Navigation actions"
-              class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-              role="toolbar"
+              class="fd-dynamic-page__toolbar-container"
             >
               
                             
-              <button
-                aria-label="Survey"
-                class="fd-button fd-button--transparent"
+              <div
+                aria-label="Product actions"
+                class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                role="toolbar"
               >
                 
                                 
-                <i
-                  class="sap-icon--resize"
+                <button
+                  class="fd-button fd-button--compact fd-button--positive"
+                >
+                  Accept
+                </button>
+                
+                                
+                <button
+                  class="fd-button fd-button--compact fd-button--reject"
+                >
+                  Reject
+                </button>
+                
+                                
+                <span
+                  class="fd-toolbar__separator"
                 />
                 
-                            
-              </button>
+                                
+              </div>
               
                             
-              <button
-                aria-label="Pool"
-                class="fd-button fd-button--transparent"
+              <div
+                aria-label="Navigation actions"
+                class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                role="toolbar"
               >
                 
                                 
-                <i
-                  class="sap-icon--exitfullscreen"
-                />
-                
-                            
-              </button>
-              
-                            
-              <button
-                aria-label="Chart"
-                class="fd-button fd-button--transparent"
-              >
+                <button
+                  aria-label="Survey"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                    
+                  <i
+                    class="sap-icon--resize"
+                  />
+                  
+                                
+                </button>
                 
                                 
-                <i
-                  class="sap-icon--decline"
-                />
+                <button
+                  aria-label="Pool"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                    
+                  <i
+                    class="sap-icon--exitfullscreen"
+                  />
+                  
+                                
+                </button>
+                
+                                
+                <button
+                  aria-label="Chart"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                    
+                  <i
+                    class="sap-icon--decline"
+                  />
+                  
+                                
+                </button>
                 
                             
-              </button>
+              </div>
               
                         
             </div>
@@ -497,154 +529,186 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
       >
         
                 
-        <nav
-          aria-label="Breadcrumbs"
-        >
-          
-                    
-          <ul
-            class="fd-dynamic-page__breadcrumb fd-breadcrumb"
-          >
-            
-                        
-            <li
-              class="fd-breadcrumb__item"
-            >
-              <a
-                class="fd-breadcrumb__link"
-                href="#"
-                tabindex="0"
-              >
-                Men
-              </a>
-            </li>
-            
-                        
-            <li
-              class="fd-breadcrumb__item"
-            >
-              <a
-                class="fd-breadcrumb__link"
-                href="#"
-                tabindex="0"
-              >
-                Shoes
-              </a>
-            </li>
-            
-                        
-            <li
-              class="fd-breadcrumb__item"
-            >
-              <a
-                aria-current="page"
-                class="fd-breadcrumb__link"
-                href="#"
-                tabindex="0"
-              >
-                Running Shoes
-              </a>
-            </li>
-            
-                    
-          </ul>
-          
-                
-        </nav>
-        
-                
         <div
-          class="fd-dynamic-page__title-container"
+          class="fd-dynamic-page__main-container"
         >
-          
-                    
-          <h1
-            class="fd-title fd-dynamic-page__title"
-          >
-             Balenciaga Tripple S Trainers 
-          </h1>
           
                     
           <div
-            class="fd-dynamic-page__title-content"
+            class="fd-dynamic-page__breadcrumb-title-container"
           >
-             Header with both collapse and pin buttons, expanded by default
+            
+                        
+            <nav
+              aria-label="Breadcrumbs"
+            >
+              
+                            
+              <ul
+                class="fd-dynamic-page__breadcrumb fd-breadcrumb"
+              >
+                
+                                
+                <li
+                  class="fd-breadcrumb__item"
+                >
+                  <a
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Men
+                  </a>
+                </li>
+                
+                                
+                <li
+                  class="fd-breadcrumb__item"
+                >
+                  <a
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Shoes
+                  </a>
+                </li>
+                
+                                
+                <li
+                  class="fd-breadcrumb__item"
+                >
+                  <a
+                    aria-current="page"
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Running Shoes
+                  </a>
+                </li>
+                
+                            
+              </ul>
+              
+                        
+            </nav>
+            
+                        
+            <div
+              class="fd-dynamic-page__title-container"
+            >
+              
+                            
+              <h1
+                class="fd-title fd-dynamic-page__title"
+              >
+                 Balenciaga Tripple S Trainers 
+              </h1>
+              
+                            
+              <div
+                class="fd-dynamic-page__title-content"
+              >
+                 Header with both collapse and pin buttons, expanded by default
+              </div>
+              
+                        
+            </div>
+            
+                    
           </div>
           
                     
           <div
-            aria-label="Product actions"
-            class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-            role="toolbar"
+            class="fd-dynamic-page__actions-container"
           >
             
                         
-            <button
-              class="fd-button fd-button--compact fd-button--positive"
-            >
-              Accept
-            </button>
-            
-                        
-            <button
-              class="fd-button fd-button--compact fd-button--reject"
-            >
-              Reject
-            </button>
-            
-                        
-            <span
-              class="fd-toolbar__separator"
-            />
-            
-                        
             <div
-              aria-label="Navigation actions"
-              class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-              role="toolbar"
+              class="fd-dynamic-page__toolbar-container"
             >
               
                             
-              <button
-                aria-label="Survey"
-                class="fd-button fd-button--transparent"
+              <div
+                aria-label="Product actions"
+                class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                role="toolbar"
               >
                 
                                 
-                <i
-                  class="sap-icon--resize"
+                <button
+                  class="fd-button fd-button--compact fd-button--positive"
+                >
+                  Accept
+                </button>
+                
+                                
+                <button
+                  class="fd-button fd-button--compact fd-button--reject"
+                >
+                  Reject
+                </button>
+                
+                                
+                <span
+                  class="fd-toolbar__separator"
                 />
                 
                             
-              </button>
+              </div>
               
                             
-              <button
-                aria-label="Pool"
-                class="fd-button fd-button--transparent"
+              <div
+                aria-label="Navigation actions"
+                class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                role="toolbar"
               >
                 
-                                
-                <i
-                  class="sap-icon--exitfullscreen"
-                />
+                                    
+                <button
+                  aria-label="Survey"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                        
+                  <i
+                    class="sap-icon--resize"
+                  />
+                  
+                                    
+                </button>
+                
+                                    
+                <button
+                  aria-label="Pool"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                        
+                  <i
+                    class="sap-icon--exitfullscreen"
+                  />
+                  
+                                    
+                </button>
+                
+                                    
+                <button
+                  aria-label="Chart"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                        
+                  <i
+                    class="sap-icon--decline"
+                  />
+                  
+                                    
+                </button>
                 
                             
-              </button>
-              
-                            
-              <button
-                aria-label="Chart"
-                class="fd-button fd-button--transparent"
-              >
-                
-                                
-                <i
-                  class="sap-icon--decline"
-                />
-                
-                            
-              </button>
+              </div>
               
                         
             </div>
@@ -803,154 +867,186 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
       >
         
                 
-        <nav
-          aria-label="Breadcrumbs"
-        >
-             
-                    
-          <ul
-            class="fd-dynamic-page__breadcrumb fd-breadcrumb"
-          >
-            
-                        
-            <li
-              class="fd-breadcrumb__item"
-            >
-              <a
-                class="fd-breadcrumb__link"
-                href="#"
-                tabindex="0"
-              >
-                Men
-              </a>
-            </li>
-            
-                        
-            <li
-              class="fd-breadcrumb__item"
-            >
-              <a
-                class="fd-breadcrumb__link"
-                href="#"
-                tabindex="0"
-              >
-                Shoes
-              </a>
-            </li>
-            
-                        
-            <li
-              class="fd-breadcrumb__item"
-            >
-              <a
-                aria-current="page"
-                class="fd-breadcrumb__link"
-                href="#"
-                tabindex="0"
-              >
-                Running Shoes
-              </a>
-            </li>
-            
-                    
-          </ul>
-          
-                
-        </nav>
-        
-                
         <div
-          class="fd-dynamic-page__title-container"
+          class="fd-dynamic-page__main-container"
         >
-          
-                    
-          <h1
-            class="fd-title fd-dynamic-page__title fd-dynamic-page__title--collapsed"
-          >
-             Balenciaga Tripple S Trainers Model 123456AB On Sale 
-          </h1>
           
                     
           <div
-            class="fd-dynamic-page__title-content"
+            class="fd-dynamic-page__breadcrumb-title-container"
           >
-            Collapsed Header with both expand and pin buttons 
+            
+                        
+            <nav
+              aria-label="Breadcrumbs"
+            >
+                 
+                            
+              <ul
+                class="fd-dynamic-page__breadcrumb fd-breadcrumb"
+              >
+                
+                                
+                <li
+                  class="fd-breadcrumb__item"
+                >
+                  <a
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Men
+                  </a>
+                </li>
+                
+                                
+                <li
+                  class="fd-breadcrumb__item"
+                >
+                  <a
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Shoes
+                  </a>
+                </li>
+                
+                                
+                <li
+                  class="fd-breadcrumb__item"
+                >
+                  <a
+                    aria-current="page"
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Running Shoes
+                  </a>
+                </li>
+                
+                            
+              </ul>
+              
+                        
+            </nav>
+            
+                        
+            <div
+              class="fd-dynamic-page__title-container"
+            >
+              
+                            
+              <h1
+                class="fd-title fd-dynamic-page__title fd-dynamic-page__title--collapsed"
+              >
+                 Balenciaga Tripple S Trainers Model 123456AB On Sale 
+              </h1>
+              
+                            
+              <div
+                class="fd-dynamic-page__title-content"
+              >
+                Collapsed Header with both expand and pin buttons 
+              </div>
+              
+                        
+            </div>
+            
+                    
           </div>
           
                     
           <div
-            aria-label="Product actions"
-            class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-            role="toolbar"
+            class="fd-dynamic-page__actions-container"
           >
             
                         
-            <button
-              class="fd-button fd-button--compact fd-button--positive"
-            >
-              Accept
-            </button>
-            
-                        
-            <button
-              class="fd-button fd-button--compact fd-button--reject"
-            >
-              Reject
-            </button>
-            
-                        
-            <span
-              class="fd-toolbar__separator"
-            />
-            
-                        
             <div
-              aria-label="Navigation actions"
-              class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-              role="toolbar"
+              class="fd-dynamic-page__toolbar-container"
             >
               
                             
-              <button
-                aria-label="Survey"
-                class="fd-button fd-button--transparent"
+              <div
+                aria-label="Product actions"
+                class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                role="toolbar"
               >
                 
                                 
-                <i
-                  class="sap-icon--resize"
+                <button
+                  class="fd-button fd-button--compact fd-button--positive"
+                >
+                  Accept
+                </button>
+                
+                                
+                <button
+                  class="fd-button fd-button--compact fd-button--reject"
+                >
+                  Reject
+                </button>
+                
+                                
+                <span
+                  class="fd-toolbar__separator"
                 />
                 
                             
-              </button>
+              </div>
               
                             
-              <button
-                aria-label="Pool"
-                class="fd-button fd-button--transparent"
+              <div
+                aria-label="Navigation actions"
+                class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                role="toolbar"
               >
                 
                                 
-                <i
-                  class="sap-icon--exitfullscreen"
-                />
-                
-                            
-              </button>
-              
-                            
-              <button
-                aria-label="Chart"
-                class="fd-button fd-button--transparent"
-              >
+                <button
+                  aria-label="Survey"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                    
+                  <i
+                    class="sap-icon--resize"
+                  />
+                  
+                                
+                </button>
                 
                                 
-                <i
-                  class="sap-icon--decline"
-                />
+                <button
+                  aria-label="Pool"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                    
+                  <i
+                    class="sap-icon--exitfullscreen"
+                  />
+                  
+                                
+                </button>
+                
+                                
+                <button
+                  aria-label="Chart"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                    
+                  <i
+                    class="sap-icon--decline"
+                  />
+                  
+                                
+                </button>
                 
                             
-              </button>
+              </div>
               
                         
             </div>
@@ -1109,154 +1205,186 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
       >
         
                 
-        <nav
-          aria-label="Breadcrumbs"
-        >
-            
-                    
-          <ul
-            class="fd-dynamic-page__breadcrumb fd-breadcrumb"
-          >
-            
-                        
-            <li
-              class="fd-breadcrumb__item"
-            >
-              <a
-                class="fd-breadcrumb__link"
-                href="#"
-                tabindex="0"
-              >
-                Men
-              </a>
-            </li>
-            
-                        
-            <li
-              class="fd-breadcrumb__item"
-            >
-              <a
-                class="fd-breadcrumb__link"
-                href="#"
-                tabindex="0"
-              >
-                Shoes
-              </a>
-            </li>
-            
-                        
-            <li
-              class="fd-breadcrumb__item"
-            >
-              <a
-                aria-current="page"
-                class="fd-breadcrumb__link"
-                href="#"
-                tabindex="0"
-              >
-                Running Shoes
-              </a>
-            </li>
-            
-                    
-          </ul>
-          
-                
-        </nav>
-        
-                
         <div
-          class="fd-dynamic-page__title-container"
+          class="fd-dynamic-page__main-container"
         >
-          
-                    
-          <h1
-            class="fd-title fd-dynamic-page__title"
-          >
-             Balenciaga Tripple S Trainers 
-          </h1>
           
                     
           <div
-            class="fd-dynamic-page__title-content"
+            class="fd-dynamic-page__breadcrumb-title-container"
           >
-             The header can only be expanded/collapsed, not pinned. 
+            
+                        
+            <nav
+              aria-label="Breadcrumbs"
+            >
+                
+                            
+              <ul
+                class="fd-dynamic-page__breadcrumb fd-breadcrumb"
+              >
+                
+                                
+                <li
+                  class="fd-breadcrumb__item"
+                >
+                  <a
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Men
+                  </a>
+                </li>
+                
+                                
+                <li
+                  class="fd-breadcrumb__item"
+                >
+                  <a
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Shoes
+                  </a>
+                </li>
+                
+                                
+                <li
+                  class="fd-breadcrumb__item"
+                >
+                  <a
+                    aria-current="page"
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Running Shoes
+                  </a>
+                </li>
+                
+                            
+              </ul>
+              
+                        
+            </nav>
+            
+                        
+            <div
+              class="fd-dynamic-page__title-container"
+            >
+              
+                            
+              <h1
+                class="fd-title fd-dynamic-page__title"
+              >
+                 Balenciaga Tripple S Trainers 
+              </h1>
+              
+                            
+              <div
+                class="fd-dynamic-page__title-content"
+              >
+                 The header can only be expanded/collapsed, not pinned. 
+              </div>
+              
+                        
+            </div>
+            
+                    
           </div>
           
                     
           <div
-            aria-label="Product actions"
-            class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-            role="toolbar"
+            class="fd-dynamic-page__actions-container"
           >
             
                         
-            <button
-              class="fd-button fd-button--compact fd-button--positive"
-            >
-              Accept
-            </button>
-            
-                        
-            <button
-              class="fd-button fd-button--compact fd-button--reject"
-            >
-              Reject
-            </button>
-            
-                        
-            <span
-              class="fd-toolbar__separator"
-            />
-            
-                        
             <div
-              aria-label="Navigation actions"
-              class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-              role="toolbar"
+              class="fd-dynamic-page__toolbar-container"
             >
               
                             
-              <button
-                aria-label="Survey"
-                class="fd-button fd-button--transparent"
+              <div
+                aria-label="Product actions"
+                class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                role="toolbar"
               >
                 
                                 
-                <i
-                  class="sap-icon--resize"
+                <button
+                  class="fd-button fd-button--compact fd-button--positive"
+                >
+                  Accept
+                </button>
+                
+                                
+                <button
+                  class="fd-button fd-button--compact fd-button--reject"
+                >
+                  Reject
+                </button>
+                
+                                
+                <span
+                  class="fd-toolbar__separator"
                 />
                 
                             
-              </button>
+              </div>
               
                             
-              <button
-                aria-label="Pool"
-                class="fd-button fd-button--transparent"
+              <div
+                aria-label="Navigation actions"
+                class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                role="toolbar"
               >
                 
                                 
-                <i
-                  class="sap-icon--exitfullscreen"
-                />
-                
-                            
-              </button>
-              
-                            
-              <button
-                aria-label="Chart"
-                class="fd-button fd-button--transparent"
-              >
+                <button
+                  aria-label="Survey"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                    
+                  <i
+                    class="sap-icon--resize"
+                  />
+                  
+                                
+                </button>
                 
                                 
-                <i
-                  class="sap-icon--decline"
-                />
+                <button
+                  aria-label="Pool"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                    
+                  <i
+                    class="sap-icon--exitfullscreen"
+                  />
+                  
+                                
+                </button>
+                
+                                
+                <button
+                  aria-label="Chart"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                    
+                  <i
+                    class="sap-icon--decline"
+                  />
+                  
+                                
+                </button>
                 
                             
-              </button>
+              </div>
               
                         
             </div>
@@ -1390,230 +1518,255 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
           
                 
           <div
-            class="fd-dynamic-page__breadcrumb-container"
+            class="fd-dynamic-page__main-container"
           >
             
                     
-            <nav
-              aria-label="Breadcrumbs"
-            >
-              
-                        
-              <ul
-                class="fd-dynamic-page__breadcrumb--sm fd-breadcrumb"
-              >
-                
-                            
-                <li
-                  class="fd-breadcrumb__item"
-                >
-                  <a
-                    class="fd-breadcrumb__link"
-                    href="#"
-                    tabindex="0"
-                  >
-                    Men
-                  </a>
-                </li>
-                
-                            
-                <li
-                  class="fd-breadcrumb__item"
-                >
-                  <a
-                    class="fd-breadcrumb__link"
-                    href="#"
-                    tabindex="0"
-                  >
-                    Shoes
-                  </a>
-                </li>
-                
-                            
-                <li
-                  class="fd-breadcrumb__item"
-                >
-                  <a
-                    aria-current="page"
-                    class="fd-breadcrumb__link"
-                    href="#"
-                    tabindex="0"
-                  >
-                    Running Shoes
-                  </a>
-                </li>
-                
-                        
-              </ul>
-              
-                    
-            </nav>
-            
-                    
             <div
-              aria-label="Close action"
-              class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-              role="toolbar"
+              class="fd-dynamic-page__breadcrumb-title-container"
             >
               
-                            
-              <button
-                aria-label="Close"
-                class="fd-button fd-button--transparent"
-              >
-                
-                                
-                <i
-                  class="sap-icon--decline"
-                />
-                
-                            
-              </button>
-              
-                    
-            </div>
-            
-                
-          </div>
-          
-                
-          <div
-            class="fd-dynamic-page__title-container"
-          >
-            
-                    
-            <h1
-              class="fd-title fd-dynamic-page__title"
-            >
-               Balenciaga Tripple S Trainers 
-            </h1>
-            
                         
-                        
-            <div
-              aria-label="Product actions"
-              class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-              role="toolbar"
-            >
-              
-                            
               <div
-                class="fd-popover fd-toolbar__overflow"
+                class="fd-dynamic-page__breadcrumb-container"
               >
                 
-                                
-                <div
-                  class="fd-popover__control"
+                            
+                <nav
+                  aria-label="Breadcrumbs"
                 >
                   
+                                
+                  <ul
+                    class="fd-dynamic-page__breadcrumb--sm fd-breadcrumb"
+                  >
+                    
                                     
+                    <li
+                      class="fd-breadcrumb__item"
+                    >
+                      <a
+                        class="fd-breadcrumb__link"
+                        href="#"
+                        tabindex="0"
+                      >
+                        Men
+                      </a>
+                    </li>
+                    
+                                    
+                    <li
+                      class="fd-breadcrumb__item"
+                    >
+                      <a
+                        class="fd-breadcrumb__link"
+                        href="#"
+                        tabindex="0"
+                      >
+                        Shoes
+                      </a>
+                    </li>
+                    
+                                    
+                    <li
+                      class="fd-breadcrumb__item"
+                    >
+                      <a
+                        aria-current="page"
+                        class="fd-breadcrumb__link"
+                        href="#"
+                        tabindex="0"
+                      >
+                        Running Shoes
+                      </a>
+                    </li>
+                    
+                                
+                  </ul>
+                  
+                            
+                </nav>
+                
+                            
+                <div
+                  aria-label="Close action"
+                  class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                  role="toolbar"
+                >
+                  
+                                
                   <button
-                    aria-controls="wgxzK85915"
-                    aria-expanded="false"
-                    aria-haspopup="true"
-                    aria-label="More Header Content"
+                    aria-label="Close"
                     class="fd-button fd-button--transparent"
                   >
                     
-                                        
-                    <i
-                      class="sap-icon--overflow"
-                    />
-                        
                                     
+                    <i
+                      class="sap-icon--decline"
+                    />
+                    
+                                
                   </button>
                   
-                                
-                </div>
-                
-                                
-                <div
-                  aria-hidden="true"
-                  class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
-                  id="wgxzK85915"
-                >
-                  
-                                    
-                  <div
-                    class="fd-toolbar__overflow__body"
-                  >
-                    
-                                        Overflowing title content
-                                    
-                  </div>
-                  
-                                
-                </div>
-                
                             
+                </div>
+                
+                        
               </div>
               
-                            
+                        
               <div
-                class="fd-popover fd-toolbar__overflow"
+                class="fd-dynamic-page__title-container"
               >
                 
-                                
-                <div
-                  class="fd-popover__control"
+                            
+                <h1
+                  class="fd-title fd-dynamic-page__title"
                 >
-                  
-                                    
-                  <button
-                    aria-controls="wgxzK85914"
-                    aria-expanded="true"
-                    aria-haspopup="true"
-                    aria-label="Header actions"
-                    class="fd-button fd-button--transparent"
-                  >
-                    
-                                        
-                    <i
-                      class="sap-icon--overflow"
-                    />
-                        
-                                    
-                  </button>
-                  
-                                
-                </div>
+                   Balenciaga Tripple S Trainers 
+                </h1>
                 
-                                
+                            
                 <div
-                  aria-hidden="false"
-                  class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
-                  id="wgxzK85914"
+                  aria-label="Header Content"
+                  class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                  role="toolbar"
                 >
                   
-                                    
+                                
                   <div
-                    class="fd-toolbar__overflow__body"
+                    class="fd-popover fd-toolbar__overflow"
                   >
                     
-                                        
-                    <button
-                      class="fd-button fd-button--transparent"
+                                    
+                    <div
+                      class="fd-popover__control"
                     >
-                      Accept
-                    </button>
-                    
+                      
                                         
-                    <button
-                      class="fd-button fd-button--transparent"
-                    >
-                      Reject
-                    </button>
+                      <button
+                        aria-controls="wgxzK85915"
+                        aria-expanded="false"
+                        aria-haspopup="true"
+                        aria-label="More Header Content"
+                        class="fd-button fd-button--transparent"
+                      >
+                        
+                                            
+                        <i
+                          class="sap-icon--overflow"
+                        />
+                            
+                                        
+                      </button>
+                      
+                                    
+                    </div>
                     
                                     
+                    <div
+                      aria-hidden="true"
+                      class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+                      id="wgxzK85915"
+                    >
+                      
+                                        
+                      <div
+                        class="fd-toolbar__overflow__body"
+                      >
+                        
+                                            Overflowing title content
+                                        
+                      </div>
+                      
+                                    
+                    </div>
+                    
+                                
                   </div>
                   
-                                
+                            
                 </div>
                 
                             
+                <div
+                  aria-label="Product actions"
+                  class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                  role="toolbar"
+                >
+                  
+                                
+                  <div
+                    class="fd-popover fd-toolbar__overflow"
+                  >
+                    
+                                    
+                    <div
+                      class="fd-popover__control"
+                    >
+                      
+                                        
+                      <button
+                        aria-controls="wgxzK85914"
+                        aria-expanded="true"
+                        aria-haspopup="true"
+                        aria-label="Header actions"
+                        class="fd-button fd-button--transparent"
+                      >
+                        
+                                            
+                        <i
+                          class="sap-icon--overflow"
+                        />
+                            
+                                        
+                      </button>
+                      
+                                    
+                    </div>
+                    
+                                    
+                    <div
+                      aria-hidden="false"
+                      class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+                      id="wgxzK85914"
+                    >
+                      
+                                        
+                      <div
+                        class="fd-toolbar__overflow__body"
+                      >
+                        
+                                            
+                        <button
+                          class="fd-button fd-button--transparent"
+                        >
+                          Accept
+                        </button>
+                        
+                                            
+                        <button
+                          class="fd-button fd-button--transparent"
+                        >
+                          Reject
+                        </button>
+                        
+                                        
+                      </div>
+                      
+                                    
+                    </div>
+                    
+                                
+                  </div>
+                  
+                            
+                </div>
+                
+                        
               </div>
               
-                        
+                    
             </div>
             
                 
@@ -1884,230 +2037,246 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
           
                 
           <div
-            class="fd-dynamic-page__breadcrumb-container"
+            class="fd-dynamic-page__main-container"
           >
             
                     
-            <nav
-              aria-label="Breadcrumbs"
-            >
-              
-                        
-              <ul
-                class="fd-dynamic-page__breadcrumb--sm fd-breadcrumb"
-              >
-                
-                            
-                <li
-                  class="fd-breadcrumb__item"
-                >
-                  <a
-                    class="fd-breadcrumb__link"
-                    href="#"
-                    tabindex="0"
-                  >
-                    Men
-                  </a>
-                </li>
-                
-                            
-                <li
-                  class="fd-breadcrumb__item"
-                >
-                  <a
-                    class="fd-breadcrumb__link"
-                    href="#"
-                    tabindex="0"
-                  >
-                    Shoes
-                  </a>
-                </li>
-                
-                            
-                <li
-                  class="fd-breadcrumb__item"
-                >
-                  <a
-                    aria-current="page"
-                    class="fd-breadcrumb__link"
-                    href="#"
-                    tabindex="0"
-                  >
-                    Running Shoes
-                  </a>
-                </li>
-                
-                        
-              </ul>
-              
-                    
-            </nav>
-            
-                    
             <div
-              aria-label="Close action"
-              class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-              role="toolbar"
+              class="fd-dynamic-page__breadcrumb-title-container"
             >
               
-                            
-              <button
-                aria-label="Close"
-                class="fd-button fd-button--transparent"
-              >
-                
-                                
-                <i
-                  class="sap-icon--decline"
-                />
-                
-                            
-              </button>
-              
-                    
-            </div>
-            
-                
-          </div>
-          
-                
-          <div
-            class="fd-dynamic-page__title-container"
-          >
-            
-                    
-            <h1
-              class="fd-title fd-dynamic-page__title fd-dynamic-page__title--collapsed"
-            >
-               Balenciaga Tripple S Trainers 
-            </h1>
-            
                         
-                        
-            <div
-              aria-label="Product actions"
-              class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear  fd-toolbar--cozy fd-toolbar--transparent"
-              role="toolbar"
-            >
-              
-                            
               <div
-                class="fd-popover fd-toolbar__overflow"
+                class="fd-dynamic-page__breadcrumb-container"
               >
                 
+                            
+                <nav
+                  aria-label="Breadcrumbs"
+                >
+                  
                                 
+                  <ul
+                    class="fd-dynamic-page__breadcrumb--sm fd-breadcrumb"
+                  >
+                    
+                                    
+                    <li
+                      class="fd-breadcrumb__item"
+                    >
+                      <a
+                        class="fd-breadcrumb__link"
+                        href="#"
+                        tabindex="0"
+                      >
+                        Men
+                      </a>
+                    </li>
+                    
+                                    
+                    <li
+                      class="fd-breadcrumb__item"
+                    >
+                      <a
+                        class="fd-breadcrumb__link"
+                        href="#"
+                        tabindex="0"
+                      >
+                        Shoes
+                      </a>
+                    </li>
+                    
+                                    
+                    <li
+                      class="fd-breadcrumb__item"
+                    >
+                      <a
+                        aria-current="page"
+                        class="fd-breadcrumb__link"
+                        href="#"
+                        tabindex="0"
+                      >
+                        Running Shoes
+                      </a>
+                    </li>
+                    
+                                
+                  </ul>
+                  
+                            
+                </nav>
+                
+                            
                 <div
-                  class="fd-popover__control"
+                  aria-label="Close action"
+                  class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                  role="toolbar"
                 >
                   
                                     
                   <button
-                    aria-controls="wgxzK85913"
-                    aria-expanded="true"
-                    aria-haspopup="true"
-                    aria-label="More Header Content"
+                    aria-label="Close"
                     class="fd-button fd-button--transparent"
                   >
                     
                                         
                     <i
-                      class="sap-icon--overflow"
+                      class="sap-icon--decline"
                     />
-                        
+                    
                                     
                   </button>
                   
-                                
-                </div>
-                
-                                
-                <div
-                  aria-hidden="false"
-                  class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
-                  id="wgxzK85913"
-                >
-                  
-                                    
-                  <div
-                    class="fd-toolbar__overflow__body"
-                  >
-                    
-                                        Overflowing title content
-                                    
-                  </div>
-                  
-                                
-                </div>
-                
                             
+                </div>
+                
+                        
               </div>
               
-                            
+                        
               <div
-                class="fd-popover fd-toolbar__overflow"
+                class="fd-dynamic-page__title-container"
               >
                 
-                                
-                <div
-                  class="fd-popover__control"
+                            
+                <h1
+                  class="fd-title fd-dynamic-page__title fd-dynamic-page__title--collapsed"
                 >
-                  
-                                    
-                  <button
-                    aria-controls="wgxzK85912"
-                    aria-expanded="false"
-                    aria-haspopup="true"
-                    aria-label="Header actions"
-                    class="fd-button fd-button--transparent"
-                  >
-                    
-                                        
-                    <i
-                      class="sap-icon--overflow"
-                    />
-                        
-                                    
-                  </button>
-                  
-                                
-                </div>
+                   Balenciaga Tripple S Trainers 
+                </h1>
                 
                                 
+                            
                 <div
-                  aria-hidden="true"
-                  class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
-                  id="wgxzK85912"
+                  aria-label="Product actions"
+                  class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear  fd-toolbar--cozy fd-toolbar--transparent"
+                  role="toolbar"
                 >
                   
-                                    
+                                
                   <div
-                    class="fd-toolbar__overflow__body"
+                    class="fd-popover fd-toolbar__overflow"
                   >
                     
-                                        
-                    <button
-                      class="fd-button fd-button--transparent"
+                                    
+                    <div
+                      class="fd-popover__control"
                     >
-                      Accept
-                    </button>
-                    
+                      
                                         
-                    <button
-                      class="fd-button fd-button--transparent"
-                    >
-                      Reject
-                    </button>
+                      <button
+                        aria-controls="wgxzK85913"
+                        aria-expanded="true"
+                        aria-haspopup="true"
+                        aria-label="More Header Content"
+                        class="fd-button fd-button--transparent"
+                      >
+                        
+                                            
+                        <i
+                          class="sap-icon--overflow"
+                        />
+                            
+                                        
+                      </button>
+                      
+                                    
+                    </div>
                     
                                     
+                    <div
+                      aria-hidden="false"
+                      class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+                      id="wgxzK85913"
+                    >
+                      
+                                        
+                      <div
+                        class="fd-toolbar__overflow__body"
+                      >
+                        
+                                            Overflowing title content
+                                        
+                      </div>
+                      
+                                    
+                    </div>
+                    
+                                
                   </div>
                   
                                 
+                  <div
+                    class="fd-popover fd-toolbar__overflow"
+                  >
+                    
+                                    
+                    <div
+                      class="fd-popover__control"
+                    >
+                      
+                                        
+                      <button
+                        aria-controls="wgxzK85912"
+                        aria-expanded="false"
+                        aria-haspopup="true"
+                        aria-label="Header actions"
+                        class="fd-button fd-button--transparent"
+                      >
+                        
+                                            
+                        <i
+                          class="sap-icon--overflow"
+                        />
+                            
+                                        
+                      </button>
+                      
+                                    
+                    </div>
+                    
+                                    
+                    <div
+                      aria-hidden="true"
+                      class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+                      id="wgxzK85912"
+                    >
+                      
+                                        
+                      <div
+                        class="fd-toolbar__overflow__body"
+                      >
+                        
+                                            
+                        <button
+                          class="fd-button fd-button--transparent"
+                        >
+                          Accept
+                        </button>
+                        
+                                            
+                        <button
+                          class="fd-button fd-button--transparent"
+                        >
+                          Reject
+                        </button>
+                        
+                                        
+                      </div>
+                      
+                                    
+                    </div>
+                    
+                                
+                  </div>
+                  
+                            
                 </div>
                 
-                            
+                        
               </div>
               
-                        
+                    
             </div>
             
                 
@@ -2387,7 +2556,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                 
           <div
             aria-label="Expand summary line action"
-            class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+            class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
             role="toolbar"
           >
             
@@ -2420,7 +2589,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
           
                 
           <div
-            class="fd-dynamic-page__breadcrumb-container"
+            class="fd-dynamic-page__breadcrumb-title-container"
           >
             
                     
@@ -2482,7 +2651,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                     
             <div
               aria-label="Close action"
-              class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+              class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
               role="toolbar"
             >
               
@@ -2521,7 +2690,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                         
             <div
               aria-label="Product actions"
-              class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+              class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
               role="toolbar"
             >
               
@@ -2850,156 +3019,188 @@ exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
         >
           
                     
-          <nav
-            aria-label="Breadcrumbs"
-          >
-            
-                        
-            <ul
-              class="fd-dynamic-page__breadcrumb fd-breadcrumb"
-            >
-              
-                            
-              <li
-                class="fd-breadcrumb__item"
-              >
-                <a
-                  class="fd-breadcrumb__link"
-                  href="#"
-                  tabindex="0"
-                >
-                  Men
-                </a>
-              </li>
-              
-                            
-              <li
-                class="fd-breadcrumb__item"
-              >
-                <a
-                  class="fd-breadcrumb__link"
-                  href="#"
-                  tabindex="0"
-                >
-                  Shoes
-                </a>
-              </li>
-              
-                            
-              <li
-                class="fd-breadcrumb__item"
-              >
-                <a
-                  aria-current="page"
-                  class="fd-breadcrumb__link"
-                  href="#"
-                  tabindex="0"
-                >
-                  Running Shoes
-                </a>
-              </li>
-              
-                        
-            </ul>
-            
-                    
-          </nav>
-          
-                    
           <div
-            class="fd-dynamic-page__title-container"
+            class="fd-dynamic-page__main-container"
           >
-            
-                        
-            <h1
-              class="fd-title fd-dynamic-page__title"
-            >
-               Balenciaga Tripple S Trainers 
-            </h1>
             
                         
             <div
-              class="fd-dynamic-page__title-content"
+              class="fd-dynamic-page__breadcrumb-title-container"
             >
-               Some RANDOM things 
+              
+                            
+              <nav
+                aria-label="Breadcrumbs"
+              >
+                
+                                
+                <ul
+                  class="fd-dynamic-page__breadcrumb fd-breadcrumb"
+                >
+                  
+                                    
+                  <li
+                    class="fd-breadcrumb__item"
+                  >
+                    <a
+                      class="fd-breadcrumb__link"
+                      href="#"
+                      tabindex="0"
+                    >
+                      Men
+                    </a>
+                  </li>
+                  
+                                    
+                  <li
+                    class="fd-breadcrumb__item"
+                  >
+                    <a
+                      class="fd-breadcrumb__link"
+                      href="#"
+                      tabindex="0"
+                    >
+                      Shoes
+                    </a>
+                  </li>
+                  
+                                    
+                  <li
+                    class="fd-breadcrumb__item"
+                  >
+                    <a
+                      aria-current="page"
+                      class="fd-breadcrumb__link"
+                      href="#"
+                      tabindex="0"
+                    >
+                      Running Shoes
+                    </a>
+                  </li>
+                  
+                                
+                </ul>
+                
+                            
+              </nav>
+              
+                            
+              <div
+                class="fd-dynamic-page__title-container"
+              >
+                
+                                
+                <h1
+                  class="fd-title fd-dynamic-page__title"
+                >
+                   Balenciaga Tripple S Trainers 
+                </h1>
+                
+                                
+                <div
+                  class="fd-dynamic-page__title-content"
+                >
+                   Some RANDOM things 
+                </div>
+                
+                            
+              </div>
+              
+                        
             </div>
             
                         
             <div
-              aria-label="Product actions"
-              class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-              role="toolbar"
+              class="fd-dynamic-page__actions-container"
             >
               
                             
-              <button
-                class="fd-button fd-button--compact fd-button--positive"
-              >
-                Accept
-              </button>
-              
-                            
-              <button
-                class="fd-button fd-button--compact fd-button--reject"
-              >
-                Reject
-              </button>
-              
-                            
-              <span
-                class="fd-toolbar__separator"
-              />
-              
-                            
               <div
-                aria-label="Navigation actions"
-                class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-                role="toolbar"
+                class="fd-dynamic-page__toolbar-container"
               >
                 
                                 
-                <button
-                  aria-label="Survey"
-                  class="fd-button fd-button--transparent"
+                <div
+                  aria-label="Product actions"
+                  class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                  role="toolbar"
                 >
                   
                                     
-                  <i
-                    class="sap-icon--resize"
+                  <button
+                    class="fd-button fd-button--compact fd-button--positive"
+                  >
+                    Accept
+                  </button>
+                  
+                                    
+                  <button
+                    class="fd-button fd-button--compact fd-button--reject"
+                  >
+                    Reject
+                  </button>
+                  
+                                    
+                  <span
+                    class="fd-toolbar__separator"
                   />
                   
                                 
-                </button>
+                </div>
                 
                                 
-                <button
-                  aria-label="Pool"
-                  class="fd-button fd-button--transparent"
+                <div
+                  aria-label="Navigation actions"
+                  class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                  role="toolbar"
                 >
                   
                                     
-                  <i
-                    class="sap-icon--exitfullscreen"
-                  />
-                  
-                                
-                </button>
-                
-                                
-                <button
-                  aria-label="Chart"
-                  class="fd-button fd-button--transparent"
-                >
+                  <button
+                    aria-label="Survey"
+                    class="fd-button fd-button--transparent"
+                  >
+                    
+                                        
+                    <i
+                      class="sap-icon--resize"
+                    />
+                    
+                                    
+                  </button>
                   
                                     
-                  <i
-                    class="sap-icon--decline"
-                  />
+                  <button
+                    aria-label="Pool"
+                    class="fd-button fd-button--transparent"
+                  >
+                    
+                                        
+                    <i
+                      class="sap-icon--exitfullscreen"
+                    />
+                    
+                                    
+                  </button>
+                  
+                                    
+                  <button
+                    aria-label="Chart"
+                    class="fd-button fd-button--transparent"
+                  >
+                    
+                                        
+                    <i
+                      class="sap-icon--decline"
+                    />
+                    
+                                    
+                  </button>
                   
                                 
-                </button>
+                </div>
                 
-                        
+                            
               </div>
               
                         
@@ -3309,171 +3510,195 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
         tabindex="0"
       >
         
-                
+            
         <div
-          class="fd-dynamic-page__breadcrumb-container"
+          class="fd-dynamic-page__main-container"
         >
           
                     
-          <nav
-            aria-label="Breadcrumbs"
-          >
-            
-                        
-            <ul
-              class="fd-dynamic-page__breadcrumb fd-breadcrumb"
-            >
-              
-                            
-              <li
-                class="fd-breadcrumb__item"
-              >
-                <a
-                  class="fd-breadcrumb__link"
-                  href="#"
-                  tabindex="0"
-                >
-                  Men
-                </a>
-              </li>
-              
-                            
-              <li
-                class="fd-breadcrumb__item"
-              >
-                <a
-                  class="fd-breadcrumb__link"
-                  href="#"
-                  tabindex="0"
-                >
-                  Shoes
-                </a>
-              </li>
-              
-                            
-              <li
-                class="fd-breadcrumb__item"
-              >
-                <a
-                  aria-current="page"
-                  class="fd-breadcrumb__link"
-                  href="#"
-                  tabindex="0"
-                >
-                  Running Shoes
-                </a>
-              </li>
-              
-                        
-            </ul>
-            
-                    
-          </nav>
-          
-                    
           <div
-            aria-label="Navigation actions"
-            class="fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-            role="toolbar"
+            class="fd-dynamic-page__breadcrumb-title-container"
           >
             
                         
-            <button
-              aria-label="Survey"
-              class="fd-button fd-button--transparent"
+            <nav
+              aria-label="Breadcrumbs"
             >
               
                             
-              <i
-                class="sap-icon--survey"
-              />
+              <ul
+                class="fd-dynamic-page__breadcrumb fd-breadcrumb"
+              >
+                
+                                
+                <li
+                  class="fd-breadcrumb__item"
+                >
+                  <a
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Men
+                  </a>
+                </li>
+                
+                                
+                <li
+                  class="fd-breadcrumb__item"
+                >
+                  <a
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Shoes
+                  </a>
+                </li>
+                
+                                
+                <li
+                  class="fd-breadcrumb__item"
+                >
+                  <a
+                    aria-current="page"
+                    class="fd-breadcrumb__link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    Running Shoes
+                  </a>
+                </li>
+                
+                            
+              </ul>
               
                         
-            </button>
+            </nav>
             
                         
-            <button
-              aria-label="Pool"
-              class="fd-button fd-button--transparent"
+            <div
+              class="fd-dynamic-page__title-container"
             >
               
                             
-              <i
-                class="sap-icon--pool"
-              />
-              
-                        
-            </button>
-            
-                        
-            <button
-              aria-label="Chart"
-              class="fd-button fd-button--transparent"
-            >
+              <h1
+                class="fd-title fd-dynamic-page__title fd-dynamic-page__title--md"
+              >
+                
+                                
+                <a
+                  class="fd-dynamic-page__title fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  Balenciaga Tripple S Trainers 
+                </a>
+                
+                            
+              </h1>
               
                             
-              <i
-                class="sap-icon--pie-chart"
-              />
+              <div
+                class="fd-dynamic-page__title-content"
+              >
+                 Some RANDOM things 
+              </div>
               
                         
-            </button>
+            </div>
             
                     
           </div>
           
-                
-        </div>
-        
-                
-        <div
-          class="fd-dynamic-page__title-container"
-        >
-          
-                    
-          <h1
-            class="fd-title fd-dynamic-page__title fd-dynamic-page__title--md"
-          >
-            
-                        
-            <a
-              class="fd-dynamic-page__title fd-link"
-              href="#"
-              tabindex="0"
-            >
-              Balenciaga Tripple S Trainers 
-            </a>
-            
-                    
-          </h1>
-          
                     
           <div
-            class="fd-dynamic-page__title-content"
-          >
-             Some RANDOM things 
-          </div>
-          
-                    
-          <div
-            aria-label="Product actions"
-            class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-            role="toolbar"
+            class="fd-dynamic-page__actions-container fd-dynamic-page__actions-container--md"
           >
             
                         
-            <button
-              class="fd-button fd-button--compact fd-button--positive"
+            <div
+              class="fd-dynamic-page__toolbar-container"
             >
-              Accept
-            </button>
-            
+              
+                            
+              <div
+                aria-label="Product actions"
+                class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--md fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                role="toolbar"
+              >
+                
+                                
+                <button
+                  class="fd-button fd-button--compact fd-button--positive"
+                >
+                  Accept
+                </button>
+                
+                                
+                <button
+                  class="fd-button fd-button--compact fd-button--reject"
+                >
+                  Reject
+                </button>
+                
+                            
+              </div>
+              
+                            
+              <div
+                aria-label="Navigation actions"
+                class="fd-dynamic-page__toolbar-actions fd-dynamic-page__toolbar-actions--md fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                role="toolbar"
+              >
+                
+                                
+                <button
+                  aria-label="Survey"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                    
+                  <i
+                    class="sap-icon--survey"
+                  />
+                  
+                                
+                </button>
+                
+                                
+                <button
+                  aria-label="Pool"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                    
+                  <i
+                    class="sap-icon--pool"
+                  />
+                  
+                                
+                </button>
+                
+                                
+                <button
+                  aria-label="Chart"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                    
+                  <i
+                    class="sap-icon--pie-chart"
+                  />
+                  
+                                
+                </button>
+                
+                            
+              </div>
+              
                         
-            <button
-              class="fd-button fd-button--compact fd-button--reject"
-            >
-              Reject
-            </button>
+            </div>
             
                     
           </div>
@@ -3488,9 +3713,10 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
            Oversized multimaterial sneakers with quilted effect 
         </div>
         
-            
+                
       </div>
       
+            
             
       <div
         aria-hidden="false"

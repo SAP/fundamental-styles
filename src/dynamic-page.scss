@@ -61,8 +61,11 @@ $block: #{$fd-namespace}-dynamic-page;
   @include fd-flex(column);
 
   &__header-fixed {
-    position: sticky; // no support in IE
+    position: fixed;
+    left: 0;
+    right: 0;
     top: 0;
+    z-index: 3;
   }
 
   &__header {
@@ -119,6 +122,14 @@ $block: #{$fd-namespace}-dynamic-page;
     }
   }
 
+  &__main-container {
+    @include fd-reset();
+
+    @include fd-flex() {
+      justify-content: space-between;
+    }
+  }
+
   &__title-container {
     @include fd-reset();
 
@@ -135,12 +146,16 @@ $block: #{$fd-namespace}-dynamic-page;
     }
   }
 
+  &__breadcrumb-title-container {
+    @include fd-reset();
+    @include fd-flex(column);
+
+    flex: 1;
+  }
+
   &__breadcrumb-container {
     @include fd-reset();
-
-    @include fd-flex-vertical-center() {
-      justify-content: space-between;
-    }
+    @include fd-flex-vertical-center();
   }
 
   &__title {
@@ -187,9 +202,40 @@ $block: #{$fd-namespace}-dynamic-page;
     }
   }
 
+  &__actions-container {
+    @include fd-reset();
+    @include fd-flex(column);
+
+    justify-content: flex-end;
+    flex: 1;
+
+    // tablet spec
+    &--md {
+      flex-flow: row;
+
+      .#{$block}__toolbar-container {
+        flex-flow: column wrap;
+      }
+    }
+
+    // mobile spec
+    &--sm {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+
+  &__toolbar-container {
+    @include fd-reset();
+    @include fd-flex-vertical-center();
+
+    flex-flow: row wrap;
+  }
+
   .#{$fd-namespace}-toolbar.#{$block}__toolbar {
     padding: 0 0 0 1rem;
     flex: 2;
+    order: 1;
     justify-content: flex-end;
 
     @include fd-rtl() {
@@ -197,12 +243,22 @@ $block: #{$fd-namespace}-dynamic-page;
       margin-right: auto;
     }
 
-    &--actions {
-      padding: 0;
-    }
-
     &--sm {
       flex: none;
+    }
+
+    &--md {
+      order: 2;
+      padding: 0;
+    }
+  }
+
+  .#{$fd-namespace}-toolbar.#{$block}__toolbar-actions {
+    padding: 0;
+    order: 2;
+
+    &--md {
+      order: 1;
     }
   }
 
@@ -389,5 +445,13 @@ $block: #{$fd-namespace}-dynamic-page;
     &--transparent-bg {
       background-color: var(--fdDynamicPage_Content_Transparent_Background);
     }
+  }
+
+  &__footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 $fd-dynamic-page-padding-top-bottom $fd-dynamic-page-padding-top-bottom;
   }
 }
