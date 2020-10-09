@@ -56,3 +56,7 @@ textarea:disabled {
 :focus {
   outline: 1px solid white !important;
 }
+
+input[type=radio]:checked + label::after{
+  background:  yellow !important;
+}
