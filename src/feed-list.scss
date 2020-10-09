@@ -5,6 +5,8 @@ $block: #{$fd-namespace}-feed-list;
 .#{$block} {
   $fd-feed-list-padding-start: 1rem;
   $fd-feed-list-padding-end: 0.5rem;
+  $fd-feed-list-margin-start: 0.5rem;
+  $fd-feed-list-margin-end: 0;
   $fd-feed-list-icon-color: var(--sapContent_IconColor);
 
   @include fd-reset();
@@ -13,21 +15,17 @@ $block: #{$fd-namespace}-feed-list;
   background-color: var(--sapField_Background);
   max-width: 40rem;
 
-  .#{$block}__thumb {
+  &__thumb {
     @include fd-reset();
 
     display: inline-flex;
-    margin-left: 0;
-    margin-right: 0.5rem;
+    margin-left: $fd-feed-list-margin-end;
+    margin-right: $fd-feed-list-margin-start;
 
     @include fd-rtl() {
-      margin-left: 0.5rem;
-      margin-right: 0;
+      margin-left: $fd-feed-list-margin-start;
+      margin-right: $fd-feed-list-margin-end;
     }
-  }
-
-  &__body + &__body {
-    border-top: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
   }
 
   &__body {
@@ -35,6 +33,10 @@ $block: #{$fd-namespace}-feed-list;
 
     display: flex;
     padding: 1rem $fd-feed-list-padding-end 1rem $fd-feed-list-padding-start;
+
+    & + .#{$block}__body {
+      border-top: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+    }
   }
 
   &__actions {
@@ -43,9 +45,28 @@ $block: #{$fd-namespace}-feed-list;
     height: 2rem;
   }
 
-  .#{$block}__icon,
-  &__icon-title {
-    color: $fd-feed-list-icon-color;
+  &__icon {
+    @include fd-reset();
+
+    @include fd-icon-overwrite() {
+      color: $fd-feed-list-icon-color;
+    }
+  }
+
+  &__title {
+    @include fd-reset();
+
+    margin-left: $fd-feed-list-margin-start;
+    margin-right: $fd-feed-list-margin-end;
+
+    @include fd-rtl() {
+      margin-left: $fd-feed-list-margin-end;
+      margin-right: $fd-feed-list-margin-start;
+    }
+
+    &--icon {
+      color: $fd-feed-list-icon-color;
+    }
   }
 
   &--group {
@@ -56,13 +77,24 @@ $block: #{$fd-namespace}-feed-list;
     cursor: pointer;
   }
 
-  .#{$block}__name {
+  &__name {
     @include fd-reset();
 
     font-weight: bold;
   }
 
-  .#{$block}__text {
+  &__more {
+    @include fd-reset();
+
+    text-transform: uppercase;
+    color: var(--sapNeutralTextColor);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__text {
     @include fd_reset();
 
     &:hover {
@@ -72,14 +104,7 @@ $block: #{$fd-namespace}-feed-list;
     }
   }
 
-  .#{$block}__more {
-    @include fd-reset();
-
-    text-transform: uppercase;
-    color: grey;
-  }
-
-  .#{$block}__footer {
+  &__footer {
     @include fd-reset();
 
     display: flex;

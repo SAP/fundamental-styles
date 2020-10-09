@@ -4,7 +4,22 @@ import '../../dist/avatar.css';
 export default {
     title: 'Components/Feed List',
     parameters: {
-        description: 'The feed list item control displays unformatted text accompanied by an optional user image.',
+        description: `The feed list displays feed list items that individually consist of a username, a written entry and an optional image. There is also a separate byline below that can contain a time stamp or an attribute in the form of free text.
+       
+        
+##Usage        
+**Use the feed list if:**
+
+-        You expect multiple instances, such as notes or feed entries.
+-        The items in the feed list are homogenous.
+-        A user needs to input small amounts of text without formatting.
+
+**Do not use feed list if:**
+
+-       The user needs to format the text (rich text editor).
+-       You need only a single text box instance. Instead, use **Text Area**.
+-       You want to display empty fields for the user to input feed entries. Instead, use **Feed Input**.
+        `,
         tags: ['f3', 'a11y', 'theme']
     }
 };
@@ -36,7 +51,7 @@ export const standard = () => `
 standard.storyName = 'Standard';
 standard.parameters = {
     docs: {
-        storyDescription: 'The standard feed list item'
+        storyDescription: 'The standard feed list item displays a user\'s name and written text, an image and an additional attribute (in this example, it is a time stamp).'
     }
 };
 
@@ -44,11 +59,13 @@ export const placeHolderImage = () => `
     <div class="fd-feed-list" aria-label="Feed List Item placeholder user image example">
         <div class="fd-feed-list__body">
             <div 
-                class="fd-avatar fd-avatar--s fd-avatar--placeholder sap-icon--person-placeholder fd-feed-list__thumb" 
+                class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb" 
                 role="img" 
                 aria-label="John Doe"
                 title="John Doe">
-            </div>     
+                <i class="sap-icon--person-placeholder"></i>
+            </div>
+
             <div class="fd-feed-list__content">
                 <p class="fd-feed-list__text">
                     <span class="fd-feed-list__name">Joe Doe: </span>
@@ -63,14 +80,14 @@ export const placeHolderImage = () => `
     </div>
 `;
 
-placeHolderImage.storyName = 'Placeholder User Image';
+placeHolderImage.storyName = 'Placeholder image';
 placeHolderImage.parameters = {
     docs: {
-        storyDescription: 'The Feed list item with placeholder user image'
+        storyDescription: 'The feed list item will display a placeholder image if the user does not have an image assigned.'
     }
 };
 
-export const withoutUserImage = () => `
+export const noImage = () => `
     <div class="fd-feed-list" aria-label="Feed List Item without user image example">
         <div class="fd-feed-list__body">     
             <div class="fd-feed-list__content">
@@ -87,14 +104,14 @@ export const withoutUserImage = () => `
     </div>
 `;
 
-withoutUserImage.storyName = 'Without User Image';
-withoutUserImage.parameters = {
+noImage.storyName = 'No image';
+noImage.parameters = {
     docs: {
-        storyDescription: 'The Feed list item without user image'
+        storyDescription: 'The feed list item can be displayed without an image by removing the <code class="docs-code">fd-avatar</code> element from the container.'
     }
 };
 
-export const withUserLink = () => `
+export const linked = () => `
     <div class="fd-feed-list" aria-label="Feed List Item with user link example">
         <div class="fd-feed-list__body">
             <div 
@@ -121,14 +138,14 @@ export const withUserLink = () => `
     </div>
 `;
 
-withUserLink.storyName = 'With User link';
-withUserLink.parameters = {
+linked.storyName = 'Linked';
+linked.parameters = {
     docs: {
-        storyDescription: 'The Feed list item with link'
+        storyDescription: 'The feed list item can display linked usernames (and images). To display a linked username, add the <code class="docs-code">fd-link</code> class with the <code class="docs-code">fd-link--emphasized</code> modifier to the <code class="docs-code">fd-feed-list__name element.</code>'
     }
 };
 
-export const showMoreButton = () => `
+export const showMore = () => `
     <div class="fd-feed-list" aria-label="Feed List Item with show more text example">
         <div class="fd-feed-list__body">
             <div 
@@ -143,7 +160,7 @@ export const showMoreButton = () => `
                 <p class="fd-feed-list__text">
                     <span class="fd-feed-list__name">Joe Doe: </span>
                     <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. Morbi tempor eu elit eu consequat. Sed at lorem a ex consequat pharetra. Etiam convallis odio at vulputate venenatis. In sit amet pharetra urna. Ut nulla nisi, porta at ligula a, elementum ullamcorper lectus. Suspendisse blandit, risus nec vestibulum volutpat, nulla neque rhoncus dolor, vitae rutrum lectus neque nec ligula. Maecenas pulvinar, ligula nec fringilla volutpat, urna quam rutrum tellus, vi...
-                    <a class="fd-link fd-feed-list__more" tabindex="0">More</a>        
+                    <a class="fd-feed-list__more" tabindex="0">More</a>        
                 </p>
                 
                 <div class="fd-feed-list__footer">
@@ -154,14 +171,14 @@ export const showMoreButton = () => `
     </div>
 `;
 
-showMoreButton.storyName = 'Show More Button';
-showMoreButton.parameters = {
+showMore.storyName = 'Show more';
+showMore.parameters = {
     docs: {
-        storyDescription: 'More Button'
+        storyDescription: 'Feed list items can display a <i>MORE</i> link that can show more text (when/if it is truncated). The link is subtly displayed in grey, and highlights when the user hovers over the feed. When hovering over the link, the text is highlighted and underlined.'
     }
 };
 
-export const showLessButton = () => `
+export const showLess = () => `
     <div class="fd-feed-list" aria-label="Feed List Item with show less text example">
         <div class="fd-feed-list__body">
             <div 
@@ -176,7 +193,7 @@ export const showLessButton = () => `
                 <p class="fd-feed-list__text">
                     <span class="fd-feed-list__name">Joe Doe: </span>
                     <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. Morbi tempor eu elit eu consequat. Sed at lorem a ex consequat pharetra. Etiam convallis odio at vulputate venenatis. In sit amet pharetra urna. Ut nulla nisi, porta at ligula a, elementum ullamcorper lectus. Suspendisse blandit, risus nec vestibulum volutpat, nulla neque rhoncus dolor, vitae rutrum lectus neque nec ligula. Maecenas pulvinar, ligula nec fringilla volutpat, urna quam rutrum tellus, vitae elementum elit est malesuada nunc. Maecenas eu risus posuere, volutpat justo in, ultricies sem
-                    <a class="fd-link fd-feed-list__more" tabindex="0">LESS</a>        
+                    <a class="fd-feed-list__more" tabindex="0">LESS</a>        
                 </p>
                 
                 <div class="fd-feed-list__footer">
@@ -187,10 +204,10 @@ export const showLessButton = () => `
     </div>
 `;
 
-showLessButton.storyName = 'Show Less Button';
-showLessButton.parameters = {
+showLess.storyName = 'Show less';
+showLess.parameters = {
     docs: {
-        storyDescription: 'Less Button'
+        storyDescription: 'Similarly, feed list items can display a <i>LESS</i> link that will revert the text back to when it was truncated.'
     }
 };
 
@@ -229,20 +246,20 @@ export const withActions = () => `
                         <ul class="fd-menu__list fd-menu__list--no-shadow">
                             <li class="fd-menu__item">
                                 <a href="#" class="fd-menu__link">
-                                    <i class="sap-icon sap-icon--edit fd-feed-list__thumb fd-feed-list__icon"></i>
-                                    <span class="fd-menu__title fd-feed-list__icon-title">Edit</span>
+                                    <i class="sap-icon sap-icon--edit fd-feed-list__icon"></i>
+                                    <span class="fd-menu__title fd-feed-list__title fd-feed-list__title--icon">Edit</span>
                                 </a>
                             </li>
                             <li class="fd-menu__item">
                                 <a href="#" class="fd-menu__link">
-                                    <i class="sap-icon sap-icon--delete fd-feed-list__thumb fd-feed-list__icon"></i>
-                                    <span class="fd-menu__title fd-feed-list__icon-title">Delete</span>
+                                    <i class="sap-icon sap-icon--delete fd-feed-list__icon"></i>
+                                    <span class="fd-menu__title fd-feed-list__title fd-feed-list__title--icon">Delete</span>
                                 </a>
                             </li>
                             <li class="fd-menu__item">
                                 <a href="#" class="fd-menu__link">
-                                    <i class="sap-icon sap-icon--share-2 fd-feed-list__thumb fd-feed-list__icon"></i>
-                                    <span class="fd-menu__title fd-feed-list__icon-title">Share</span>
+                                    <i class="sap-icon sap-icon--share-2 fd-feed-list__icon"></i>
+                                    <span class="fd-menu__title fd-feed-list__title fd-feed-list__title--icon">Share</span>
                                 </a>
                             </li>
                         </ul>
@@ -256,19 +273,20 @@ export const withActions = () => `
 withActions.storyName = 'Actions';
 withActions.parameters = {
     docs: {
-        storyDescription: 'feed list item with actions'
+        storyDescription: 'Feed list items can display actions that users can perform on their individual feed posts. These typically include actions like Edit and Delete, however, other actions can be displayed depending on the use case. It is recommended to display a maximum of 5 actions per post.'
     }
 };
 
-export const feedListGroup = () => `
+export const group = () => `
     <div class="fd-feed-list fd-feed-list--group" aria-label="Feed List Item group example">
         <div class="fd-feed-list__body">
             <div
-                class="fd-avatar fd-avatar--s fd-avatar--placeholder sap-icon--person-placeholder fd-feed-list__thumb" 
+                class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb" 
                 role="img" 
                 aria-label="John Doe"
-                title="John Doe"
-            ></div> 
+                title="John Doe">
+                    <i class="sap-icon--person-placeholder"></i>
+            </div> 
             <div class="fd-feed-list__content">
                 <p class="fd-feed-list__text">
                     <span class="fd-feed-list__name">Cruz: </span>
@@ -322,14 +340,14 @@ export const feedListGroup = () => `
 </div>
 `;
 
-feedListGroup.storyName = 'Group';
-feedListGroup.parameters = {
+group.storyName = 'Group';
+group.parameters = {
     docs: {
-        storyDescription: 'Group'
+        storyDescription: 'Evidently, feed list items can be displayed in a group. The example below displays a feed list item with a placeholder image and two standard feed list items.'
     }
 };
 
-export const small = () => `
+export const mobile = () => `
     <div class="fd-feed-list fd-feed-list--s" aria-label="Feed List Item small size example">
         <div class="fd-feed-list__body">
             <div style="display: flex">
@@ -357,10 +375,10 @@ export const small = () => `
     </div>
 `;
 
-small.storyName = 'Small';
-small.parameters = {
+mobile.storyName = 'Mobile';
+mobile.parameters = {
     docs: {
-        storyDescription: 'Mobile Responsive'
+        storyDescription: 'The feed list item can be mobile responsive by adding the <code class="docs-code">fd-feed-list--s</code> modifier class to the main element.'
     }
 };
 
@@ -400,20 +418,20 @@ export const rtl = () => `
                         <ul class="fd-menu__list fd-menu__list--no-shadow">
                             <li class="fd-menu__item">
                                 <a href="#" class="fd-menu__link">
-                                    <i class="sap-icon sap-icon--edit fd-feed-list__thumb fd-feed-list__icon"></i>
-                                    <span class="fd-menu__title fd-feed-list__icon-title">Edit</span>
+                                    <i class="sap-icon sap-icon--edit fd-feed-list__icon"></i>
+                                    <span class="fd-menu__title fd-feed-list__title fd-feed-list__title--icon">Edit</span>
                                 </a>
                             </li>
                             <li class="fd-menu__item">
                                 <a href="#" class="fd-menu__link">
-                                    <i class="sap-icon sap-icon--delete fd-feed-list__thumb fd-feed-list__icon"></i>
-                                    <span class="fd-menu__title fd-feed-list__icon-title">Delete</span>
+                                    <i class="sap-icon sap-icon--delete fd-feed-list__icon"></i>
+                                    <span class="fd-menu__title fd-feed-list__title fd-feed-list__title--icon">Delete</span>
                                 </a>
                             </li>
                             <li class="fd-menu__item">
                                 <a href="#" class="fd-menu__link">
-                                    <i class="sap-icon sap-icon--share-2 fd-feed-list__thumb fd-feed-list__icon"></i>
-                                    <span class="fd-menu__title fd-feed-list__icon-title">Share</span>
+                                    <i class="sap-icon sap-icon--share-2 fd-feed-list__icon"></i>
+                                    <span class="fd-menu__title fd-feed-list__title fd-feed-list__title--icon">Share</span>
                                 </a>
                             </li>
                         </ul>
@@ -428,6 +446,6 @@ export const rtl = () => `
 rtl.storyName = 'RTL';
 rtl.parameters = {
     docs: {
-        storyDescription: 'RTL'
+        storyDescription: 'The feed list item can display from right to left on the screen, so that it may be used internationally.'
     }
 };
