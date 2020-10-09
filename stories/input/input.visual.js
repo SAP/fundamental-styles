@@ -2,7 +2,10 @@
 import * as stories from './input.stories.js';
 
 export default {
-    title: 'Visual/Input'
+    title: 'Visual/Input',
+    parameters: {
+        components: ['form-item', 'form-label', 'input', 'popover']
+    }
 };
 
 export const Input = () => {

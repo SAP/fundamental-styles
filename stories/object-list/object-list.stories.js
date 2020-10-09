@@ -1,7 +1,3 @@
-import '../../dist/list.css';
-import '../../dist/icon.css';
-import '../../dist/object-list.css';
-
 export default {
     title: 'Components/Object List',
     parameters: {
@@ -63,7 +59,8 @@ Below are examples of how to add semantic statuses to the components:
            - <code class="docs-code">fd-object-list\\_\\_object-attribute</code> object attribute element
         
 `,
-        tags: ['f3', 'a11y', 'theme', 'development']
+        tags: ['f3', 'a11y', 'theme', 'development'],
+        components: ['list', 'icon', 'object-identifier', 'avatar', 'object-marker', 'object-number', 'object-status', 'object-list']
     }
 };
 

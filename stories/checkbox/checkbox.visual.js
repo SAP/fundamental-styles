@@ -2,7 +2,10 @@
 import * as stories from './checkbox.stories.js';
 
 export default {
-    title: 'Visual/Checkbox'
+    title: 'Visual/Checkbox',
+    parameters: {
+        components: ['form-label', 'checkbox', 'fieldset']
+    }
 };
 
 export const Checkbox = () => {

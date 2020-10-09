@@ -1,9 +1,10 @@
-import '../../dist/form-label.css';
-import '../../dist/switch.css';
 import * as stories from './switch.stories.js';
 
 export default {
-    title: 'Visual/Switch'
+    title: 'Visual/Switch',
+    parameters: {
+        components: ['form-label', 'switch', 'icon']
+    }
 };
 
 export const Switch = () => {

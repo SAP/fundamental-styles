@@ -1,8 +1,10 @@
-import '../../dist/object-identifier.css';
 import * as stories from './object-identifier.stories.js';
 
 export default {
-    title: 'Visual/Object Identifier'
+    title: 'Visual/Object Identifier',
+    parameters: {
+        components: ['object-identifier', 'link', 'table']
+    }
 };
 
 export const ObjectIdentifier = () => {

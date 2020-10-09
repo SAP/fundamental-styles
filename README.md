@@ -34,6 +34,10 @@ npm install fundamental-styles --save
 
 > NOTE: We only distribute compiled CSS for each component, not the full project or HTML for specific components. 
 
+### Distributed CSS Files
+
+The distrubtion folder contains several css files per component: a default file and one file per supported theme (`sap_fiori_3`, `sap_fiori_3_dark`, `sap_fori_3_light_dark`, `sap_fiori_3_hcb`, `sap_fori_3_hcw`). Each themed file includes fallback support for css variables in IE11 for the corresponding theme. The default file includes fallbacks for `sap_fiori_3`. 
+
 ### Fonts & Icons
 
 This project does not contain fonts and icons. See our [Getting Started Guide](https://sap.github.io/fundamental-styles/getting-started.html) for more information.

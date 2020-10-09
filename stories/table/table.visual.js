@@ -1,14 +1,10 @@
-import '../../dist/button.css';
-import '../../dist/checkbox.css';
-import '../../dist/icon.css';
-import '../../dist/link.css';
-import '../../dist/object-status.css';
-import '../../dist/table.css';
-import '../../dist/toolbar.css';
 import * as stories from './table.stories.js';
 
 export default {
-    title: 'Visual/Table'
+    title: 'Visual/Table',
+    parameters: {
+        components: ['button', 'checkbox', 'icon', 'link', 'object-status', 'table', 'toolbar']
+    }
 };
 
 export const Table = () => {

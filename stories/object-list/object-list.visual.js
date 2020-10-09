@@ -1,8 +1,10 @@
-import '../../dist/object-list.css';
 import * as stories from './object-list.stories.js';
 
 export default {
-    title: 'Visual/Object List'
+    title: 'Visual/Object List',
+    parameters: {
+        components: ['list', 'icon', 'object-identifier', 'avatar', 'object-marker', 'object-number', 'object-status', 'object-list']
+    }
 };
 
 export const ObjectList = () => {

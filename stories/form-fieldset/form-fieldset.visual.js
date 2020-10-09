@@ -1,12 +1,10 @@
-import '../../dist/fieldset.css';
-import '../../dist/form-item.css';
-import '../../dist/form-group.css';
-import '../../dist/checkbox.css';
-import '../../dist/radio.css';
 import * as stories from './form-fieldset.stories.js';
 
 export default {
-    title: 'Visual/Field Set'
+    title: 'Visual/Field Set',
+    parameters: {
+        components: ['form-fieldset', 'form-item', 'form-group', 'checkbox', 'radio']
+    }
 };
 
 export const FieldSet = () => {

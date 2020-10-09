@@ -1,8 +1,10 @@
-import '../../dist/form-group.css';
 import * as stories from './form-group.stories.js';
 
 export default {
-    title: 'Visual/Form Group'
+    title: 'Visual/Form Group',
+    parameters: {
+        components: ['form-group', 'form-item', 'form-label', 'input']
+    }
 };
 
 export const FormGroup = () => {

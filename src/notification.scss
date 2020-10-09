@@ -1,9 +1,8 @@
-@import "./mixins";
+@import './mixins';
 
 $block: #{$fd-namespace}-notification;
 
 .#{$block} {
-
   // variables
   $fd-notification-max-width-m: 40rem !default;
   $fd-notification-background-color: var(--sapList_Background) !default;
@@ -36,7 +35,7 @@ $block: #{$fd-namespace}-notification;
   // mixins
 
   @mixin fd-priority-indicator($type) {
-    @include fd-icon("message-#{$type}");
+    @include fd-icon('message-#{$type}');
   }
 
   @mixin fd-hide-on-mobile {
@@ -128,7 +127,11 @@ $block: #{$fd-namespace}-notification;
     &-content {
       @include fd-ellipsis();
 
-      flex: 1 1 auto;
+      max-width: 50%;
+
+      &:only-child {
+        max-width: 100%;
+      }
     }
   }
 
@@ -139,7 +142,7 @@ $block: #{$fd-namespace}-notification;
     font-size: var(--sapFontSize);
 
     &::before {
-      content: "\00b7";
+      content: '\00b7';
     }
   }
 
@@ -153,7 +156,7 @@ $block: #{$fd-namespace}-notification;
     @include fd-reset();
 
     display: flex;
-    align-items: self-start;
+    align-items: flex-start;
     padding-left: $fd-notification-padding-right;
     flex: 1 0 auto; // IE11 fix for button
 

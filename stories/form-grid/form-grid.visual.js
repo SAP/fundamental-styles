@@ -1,8 +1,10 @@
-import '../../dist/form-layout-grid.css';
 import * as stories from './form-grid.stories.js';
 
 export default {
-    title: 'Visual/Form Grid'
+    title: 'Visual/Form Grid',
+    parameters: {
+        components: ['form-label', 'form-layout-grid', 'layout-grid', 'input', 'popover', 'select']
+    }
 };
 
 export const FormGrid = () => {

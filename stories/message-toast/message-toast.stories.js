@@ -1,5 +1,3 @@
-import '../../dist/message-toast.css';
-
 export default {
     title: 'Components/Message Toast',
     parameters: {
@@ -25,7 +23,8 @@ __Behavior and Interaction__
 
 * The message toast fades in and out automatically. The timing and duration of the message toast is defined by the app.
         `,
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['message-toast']
     }
 };
 

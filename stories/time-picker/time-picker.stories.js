@@ -1,5 +1,3 @@
-import '../../dist/radio.css';
-
 export default {
     title: 'Patterns/Time Picker',
     parameters: {
@@ -8,7 +6,8 @@ The Time Picker is an opinionated component composed of an \`input-group\`, \`po
 
 This component mostly relies on the CSS of other components and has no CSS of its own.
 `,
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['popover', 'input', 'input-group', 'time', 'button', 'icon', 'bar']
     }
 };
 

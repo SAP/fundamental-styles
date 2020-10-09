@@ -1,5 +1,3 @@
-import '../../dist/info-label.css';
-
 export default {
     title: 'Components/Info Label',
     parameters: {
@@ -13,7 +11,8 @@ Use the Info Label base class with following modifiers:
     - \`fd-info-label--icon\`
     - \`fd-info-label--numeric\`
       `,
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['info-label']
     }
 };
 

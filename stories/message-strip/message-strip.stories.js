@@ -1,10 +1,9 @@
-import '../../dist/message-strip.css';
-
 export default {
     title: 'Components/Message Strip',
     parameters: {
         description: 'Message Strip provide inline messages within the application that are color-coded to emphasize the level of urgency.',
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['button', 'message-strip', 'icon']
     }
 };
 

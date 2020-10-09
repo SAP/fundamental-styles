@@ -1,8 +1,10 @@
-import '../../dist/dialog.css';
 import * as stories from './dialog.stories.js';
 
 export default {
-    title: 'Visual/Dialog'
+    title: 'Visual/Dialog',
+    parameters: {
+        components: ['dialog', 'input-group', 'icon', 'bar', 'button', 'title', 'icon']
+    }
 };
 
 export const Dialog = () => {

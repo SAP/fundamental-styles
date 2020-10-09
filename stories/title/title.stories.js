@@ -1,11 +1,10 @@
-import '../../dist/title.css';
-
 export default {
     title: 'Components/Title',
     parameters: {
         description: `
 A title component whose semantic level and visual appearance can be set separately, providing flexibility in design while adhering to accessibility best practices.`,
-        tags: ['f3']
+        tags: ['f3'],
+        components: ['title']
     }
 };
 

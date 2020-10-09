@@ -1,8 +1,10 @@
-import '../../dist/breadcrumb.css';
 import * as stories from './breadcrumb.stories.js';
 
 export default {
-    title: 'Visual/Breadcrumb'
+    title: 'Visual/Breadcrumb',
+    parameters: {
+        components: ['popover', 'list', 'breadcrumb']
+    }
 };
 
 export const Breadcrumb = () => {

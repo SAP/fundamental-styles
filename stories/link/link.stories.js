@@ -1,5 +1,3 @@
-import '../../dist/link.css';
-
 export default {
     title: 'Components/Link',
     parameters: {
@@ -22,7 +20,8 @@ export default {
 Use a meaningful link text that indicates what will happen when the user interacts with the link i.e. *Open Sales Order*. 
 Avoid texts such as *Click Here* or *Link*, as these do not make it clear to the user what the purpose of the link is.
 `,
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['link']
     }
 };
 

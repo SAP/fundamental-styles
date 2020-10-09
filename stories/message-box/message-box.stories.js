@@ -1,11 +1,9 @@
-import '../../dist/message-box.css';
-import '../../dist/title.css';
-
 export default {
     title: 'Components/Message Box',
     parameters: {
         description: 'Message Box is used to display simple messages (text) to the user. These messages could be Standard (Default), Confirmation, Error, Success, Warning and Information (Neutral). The Message Box component inherits the look and the basic behaviour (excludes dragging and resizing) of the Dialog component.',
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['message-box', 'title', 'bar', 'button', 'link']
     }
 };
 

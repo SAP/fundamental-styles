@@ -1,8 +1,3 @@
-import '../../dist/calendar.css';
-import '../../dist/input-group.css';
-import '../../dist/popover.css';
-import '../../dist/title.css';
-
 export default {
     title: 'Patterns/Date Picker',
     excludeStories: /.*VisualStoryShotOnly/,
@@ -15,7 +10,8 @@ Use this control if the user needs to enter a single date or a date range. The c
 The date-picker component is an opinionated composition of the <code>input-group</code>, <code>popover</code> and <code>calendar</code> components to accomplish the UI pattern for picking a date.
 
 This component mostly relies on the CSS of other components and has very little CSS of its own.
-`
+`,
+        components: ['calendar', 'input-group', 'popover', 'title', 'button', 'input', 'form-label']
     }
 };
 

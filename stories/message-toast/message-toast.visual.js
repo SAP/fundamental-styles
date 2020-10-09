@@ -1,7 +1,10 @@
 import * as stories from './message-toast.stories.js';
 
 export default {
-    title: 'Visual/MessageToast'
+    title: 'Visual/MessageToast',
+    parameters: {
+        components: ['message-toast']
+    }
 };
 
 export const MessageToast = () => {

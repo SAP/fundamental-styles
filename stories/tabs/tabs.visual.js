@@ -1,13 +1,10 @@
-import '../../dist/button.css';
-import '../../dist/icon.css';
-import '../../dist/form-item.css';
-import '../../dist/step-input.css';
-import '../../dist/form-label.css';
-import '../../dist/input.css';
 import * as stories from './tabs.stories.js';
 
 export default {
-    title: 'Visual/Tabs'
+    title: 'Visual/Tabs',
+    parameters: {
+        components: ['tabs', 'icon']
+    }
 };
 
 export const Tabs = () => {

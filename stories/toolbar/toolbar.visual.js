@@ -1,8 +1,10 @@
-import '../../dist/toolbar.css';
 import * as stories from './toolbar.stories.js';
 
 export default {
-    title: 'Visual/Toolbar'
+    title: 'Visual/Toolbar',
+    parameters: {
+        components: ['toolbar', 'button', 'icon', 'popover']
+    }
 };
 
 export const Toolbar = () => {

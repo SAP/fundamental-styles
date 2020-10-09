@@ -2,7 +2,10 @@ import * as bylineListStories from './byline/byline-list.stories.js';
 import * as standardListStories from './standard/standard-list.stories.js';
 
 export default {
-    title: 'Visual/List'
+    title: 'Visual/List',
+    parameters: {
+        components: ['list', 'icon', 'checkbox']
+    }
 };
 
 const buildFunction = (stories) => () => {

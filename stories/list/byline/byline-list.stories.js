@@ -1,7 +1,3 @@
-import '../../../dist/list.css';
-import '../../../dist/icon.css';
-import '../../../dist/checkbox.css';
-
 export default {
     title: 'Components/List/Byline',
     parameters: {
@@ -15,7 +11,8 @@ be a standard text or semantic (status) and takes the remaining 40% of the avail
 modifier class (\`fd-list__byline-right--*\`) to represent \`neutral\`, \`positive\`, \`critical\`, \`negative\`
 and \`informative\` status.
 `,
-        tags: ['f3', 'a11y', 'theme', 'development']
+        tags: ['f3', 'a11y', 'theme', 'development'],
+        components: ['list', 'icon', 'checkbox']
     }
 };
 

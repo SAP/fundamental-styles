@@ -1,8 +1,10 @@
-import '../../dist/radio.css';
 import * as stories from './multi-input.stories.js';
 
 export default {
-    title: 'Visual/Multi Input'
+    title: 'Visual/Multi Input',
+    parameters: {
+        components: ['form-label', 'popover', 'radio', 'title', 'token', 'input-group']
+    }
 };
 
 export const MultiInput = () => {

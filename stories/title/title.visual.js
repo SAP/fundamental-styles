@@ -1,8 +1,10 @@
-import '../../dist/title.css';
 import * as stories from './title.stories.js';
 
 export default {
-    title: 'Visual/Title'
+    title: 'Visual/Title',
+    parameters: {
+        components: ['title']
+    }
 };
 
 export const Title = () => {

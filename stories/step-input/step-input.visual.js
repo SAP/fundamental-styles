@@ -1,13 +1,10 @@
-import '../../dist/button.css';
-import '../../dist/icon.css';
-import '../../dist/form-item.css';
-import '../../dist/step-input.css';
-import '../../dist/form-label.css';
-import '../../dist/input.css';
 import * as stories from './step-input.stories.js';
 
 export default {
-    title: 'Visual/StepInput'
+    title: 'Visual/StepInput',
+    parameters: {
+        components: ['button', 'icon', 'form-item', 'step-input', 'form-label', 'input']
+    }
 };
 
 export const StepInput = () => {

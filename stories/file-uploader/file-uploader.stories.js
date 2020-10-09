@@ -1,9 +1,3 @@
-import '../../dist/button.css';
-import '../../dist/form-item.css';
-import '../../dist/file-uploader.css';
-import '../../dist/form-label.css';
-import '../../dist/input.css';
-
 export default {
     title: 'Components/File Uploader',
     parameters: {
@@ -17,7 +11,8 @@ Use the File Uploader if:
 * The user needs to select the files to upload by browsing the system folders.
 * The user needs to select the files based on specific file formats to upload.
 `,
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['button', 'form-item', 'file-uploader', 'form-label', 'input']
     }
 };
 

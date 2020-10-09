@@ -1,12 +1,10 @@
-import '../../dist/form-label.css';
-import '../../dist/form-item.css';
-import '../../dist/input.css';
-import '../../dist/popover.css';
-import '../../dist/input-group.css';
 import * as stories from './input-group.stories.js';
 
 export default {
-    title: 'Visual/Input Group'
+    title: 'Visual/Input Group',
+    parameters: {
+        components: ['form-item', 'form-label', 'input', 'popover', 'input-group']
+    }
 };
 
 export const InputGroup = () => {

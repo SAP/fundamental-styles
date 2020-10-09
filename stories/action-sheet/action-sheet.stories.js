@@ -1,7 +1,3 @@
-import '../../dist/avatar.css';
-import '../../dist/icon.css';
-import '../../dist/action-sheet.css';
-
 export default {
     title: 'Components/Action Sheet',
     parameters: {
@@ -23,7 +19,8 @@ clustered if there is not enough space on the screen.
 - You need to show a hierarchical menu. In this case, use the menu button instead.
 - Your users would benefit more from a split button, which offers an easily-accessible default action, with the option to include additional actions.
         `,
-        tags: ['a11y', 'f3', 'theme', 'responsive']
+        tags: ['a11y', 'f3', 'theme', 'responsive'],
+        components: ['avatar', 'icon', 'action-sheet', 'popover', 'button']
     }
 };
 

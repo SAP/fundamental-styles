@@ -1,9 +1,10 @@
-import '../../dist/avatar.css';
-import '../../dist/icon.css';
 import * as stories from './avatar.stories.js';
 
 export default {
-    title: 'Visual/Avatar'
+    title: 'Visual/Avatar',
+    parameters: {
+        components: ['avatar', 'icon']
+    }
 };
 
 export const Avatar = () => {

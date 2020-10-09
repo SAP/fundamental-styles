@@ -1,11 +1,10 @@
-import '../../dist/button.css';
-import '../../dist/form-item.css';
-import '../../dist/file-uploader.css';
-import '../../dist/input.css';
 import * as stories from './file-uploader.stories.js';
 
 export default {
-    title: 'Visual/File Uploader'
+    title: 'Visual/File Uploader',
+    parameters: {
+        components: ['button', 'form-item', 'file-uploader', 'form-label', 'input']
+    }
 };
 
 export const FileUploader = () => {

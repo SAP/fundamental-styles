@@ -1,10 +1,9 @@
 import fundamentals from './custom/fundamentals';
-import { addDecorator, addParameters } from "@storybook/html";
 import { withCssResources } from "@storybook/addon-cssresources";
 import { DocsContainer } from '@storybook/addon-docs/blocks';
 import DocsPage from './custom/components/DocsPage';
 
-addParameters({
+export const parameters = {
   options: {
     showRoots: true,
     theme: fundamentals
@@ -48,7 +47,7 @@ addParameters({
     {
       id: 'css_variables',
       code: `
-            <link rel="stylesheet" type="text/css" href="./sap_fiori_3.css"></link>
+            <link rel="stylesheet" type="text/css" href="./theming/sap_fiori_3.css"></link>
             <link rel="stylesheet" type="text/css" href="./theming-base-content/content/Base/baseLib/sap_fiori_3/css_variables.css"></link>
     `,
       picked: true
@@ -56,7 +55,7 @@ addParameters({
     {
         id: 'dark_css_variables',
         code: `
-            <link rel="stylesheet" type="text/css" href="./sap_fiori_3_dark.css"></link>
+            <link rel="stylesheet" type="text/css" href="./theming/sap_fiori_3_dark.css"></link>
             <link rel="stylesheet" type="text/css" href="./theming-base-content/content/Base/baseLib/sap_fiori_3_dark/css_variables.css"></link>
         `,
         picked: false
@@ -64,7 +63,7 @@ addParameters({
     {
         id: 'light_dark_css_variables',
         code: `
-            <link rel="stylesheet" type="text/css" href="./sap_fiori_3_light-dark.css"></link>
+            <link rel="stylesheet" type="text/css" href="./theming/sap_fiori_3_light-dark.css"></link>
             <link rel="stylesheet" type="text/css" href="./theming-base-content/content/Base/baseLib/sap_fiori_3_light_dark/css_variables.css"></link>
         `,
         picked: false
@@ -72,7 +71,7 @@ addParameters({
     {
         id: 'HCB_css_variables',
         code: `
-            <link rel="stylesheet" type="text/css" href="./sap_fiori_3_hcb.css"></link>
+            <link rel="stylesheet" type="text/css" href="./theming/sap_fiori_3_hcb.css"></link>
             <link rel="stylesheet" type="text/css" href="./theming-base-content/content/Base/baseLib/sap_fiori_3_hcb/css_variables.css"></link>
         `,
         picked: false
@@ -80,7 +79,7 @@ addParameters({
     {
         id: 'HCW_css_variables',
         code: `
-            <link rel="stylesheet" type="text/css" href="./sap_fiori_3_hcw.css"></link>
+            <link rel="stylesheet" type="text/css" href="./theming/sap_fiori_3_hcw.css"></link>
             <link rel="stylesheet" type="text/css" href="./theming-base-content/content/Base/baseLib/sap_fiori_3_hcw/css_variables.css"></link>`,
         picked: false
     }
@@ -90,6 +89,9 @@ addParameters({
       page: DocsPage,
       theme: fundamentals
   },
-});
+};
 
-addDecorator(withCssResources);
+
+export const decorators = [
+  withCssResources
+];
