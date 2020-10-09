@@ -11,7 +11,7 @@ The date-picker component is an opinionated composition of the <code>input-group
 
 This component mostly relies on the CSS of other components and has very little CSS of its own.
 `,
-        components: ['calendar', 'input-group', 'popover', 'title']
+        components: ['calendar', 'input-group', 'popover', 'title', 'button', 'input', 'form-label']
     }
 };
 

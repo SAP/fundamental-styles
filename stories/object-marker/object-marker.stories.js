@@ -3,10 +3,10 @@ export default {
     parameters: {
         description: `Object marker indicates the technical status of an object. It display the technical state like (draft, 
 unsaved changes, locked, favorite, flagged). Use the object marker for this unless you want to display the status of the object in the business life cycle. 
-The technical status can be represented as an icon, with an icon and text, or as text only, depending on the screen size. `
-    },
-    tags: ['f3', 'a11y', 'theme'],
-    components: ['object-marker']
+The technical status can be represented as an icon, with an icon and text, or as text only, depending on the screen size. `,
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['object-marker', 'icon']
+    }
 };
 
 /**
