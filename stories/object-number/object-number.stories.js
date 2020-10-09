@@ -22,10 +22,10 @@ Make sure that the object number is properly described and semantically understa
 
 - You want to display system messages.
 - They are for decorative purposes only.
-        `
-    },
-    tags: ['f3', 'theme'],
-    components: ['object-number']
+        `,
+        tags: ['f3', 'theme'],
+        components: ['object-number']
+    }
 };
 
 /**
