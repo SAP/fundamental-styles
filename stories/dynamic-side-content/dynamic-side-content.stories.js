@@ -6,7 +6,8 @@ export default {
         description: `
 Dynamic side content is a layout control that displays supplemental content in a separate area to support the users' understanding of the main content displayed.
 
-## The dynamic side content consists of two elements:
+**The dynamic side content consists of two elements:**
+
 *  \`.fd-dynamic-side__side\`: Side content section.
 *  \`.fd-dynamic-side__main\`: Main content section.
 
@@ -17,8 +18,7 @@ Dynamic side content is a layout control that displays supplemental content in a
   *  Will enrich the main content and will help the user better perform his/her tasks;
   *  Only makes sense when displayed next to the main container (side-by-side);
   *  Influences the main content (for example, a filter for list; settings for chart, details for map).
-*  Users should have access to all of the key functions and critical information in the app even if they do not see the side content.  
-This is important because on smaller screen sizes it may be difficult to display the side content in a way that is easily accessible for the user.  
+*  Users should have access to all of the key functions and critical information in the app even if they do not see the side content. This is important because on smaller screen sizes it may be difficult to display the side content in a way that is easily accessible for the user.  
 
 
 ## Sizes
@@ -29,7 +29,7 @@ The screen width ratio between the side and main content area will vary dependin
 | >= 1400px &nbsp;&nbsp; | 75% | 25% | \`fd-dynamic-side--xl\` |
 | < 1400px & > 720px &nbsp;&nbsp; | 66.66% | 33.33% | \`fd-dynamic-side--md\` |
 | < 720px &nbsp;&nbsp; | 100% | Disappears | \`fd-dynamic-side--sm\` |
-| > 720px Equal split mode &nbsp;&nbsp; | 50% | 50% |
+| Equal split mode (> 720px) &nbsp;&nbsp; | 50% | 50% |
 
 Note: For all screens < 720px, the side content disappears entirely.
 `,
@@ -118,7 +118,7 @@ equalSplit.parameters = {
 };
 
 export const responsiveness = () => `
-    <h3>On extra large screen the main part occupies 75% wide</h3>
+    <h4>On extra large screens, the main content area occupies 75% of the width.</h4>
     <div class="fd-dynamic-side fd-dynamic-side--xl">
         <div class="fd-dynamic-side__side">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-6">Side</div>
@@ -127,7 +127,7 @@ export const responsiveness = () => `
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-9">Main</div>
         </div>
     </div>
-    <h3>On middle screen the main part occupies 66.66% wide</h3>
+    <h4>On medium-sized screens, the main content area occupies 66.66% of the width.</h4>
     <div class="fd-dynamic-side fd-dynamic-side--md" style="max-width: 920px">
         <div class="fd-dynamic-side__side">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-6">Side</div>
@@ -136,7 +136,7 @@ export const responsiveness = () => `
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-9">Main</div>
         </div>
     </div>
-    <h3>On small screen the main part occupies 100% wide and the side content gets hidden</h3>
+    <h4>On small screens, the main content area occupies 100% of the width and the side content is hidden.</h4>
     <div class="fd-dynamic-side fd-dynamic-side--sm" style="max-width: 420px">
         <div class="fd-dynamic-side__side">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-6">Side</div>
@@ -151,7 +151,14 @@ responsiveness.storyName = 'Responsiveness';
 responsiveness.parameters = {
     docs: {
         iframeHeight: 160,
-        storyDescription:
-            'To get the component rendered for the specific screen size use `fd-dynamic-side--xl` / `fd-dynamic-side--md` / `fd-dynamic-side--sm` modifier classes respectively.'
+        storyDescription: `
+To display the dynamic side content for specific screen sizes, use the respective modifier classes:
+
+| Size &nbsp;&nbsp; | Modifier class &nbsp;&nbsp; |
+| :--- |:--- |
+| Small &nbsp;&nbsp; | \`fd-dynamic-side--sm\` |
+| Medium & Large &nbsp;&nbsp; | \`fd-dynamic-side--md\` |
+| Extra Large &nbsp;&nbsp; | \`fd-dynamic-side--xl\` |
+`
     }
 };

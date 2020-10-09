@@ -19,9 +19,9 @@ exports[`Storyshots Layouts/Dynamic Side Content Responsiveness 1`] = `
 <section>
   
     
-  <h3>
-    On extra large screen the main part occupies 75% wide
-  </h3>
+  <h4>
+    On extra large screens, the main content area occupies 75% of the width.
+  </h4>
   
     
   <div
@@ -62,9 +62,9 @@ exports[`Storyshots Layouts/Dynamic Side Content Responsiveness 1`] = `
   </div>
   
     
-  <h3>
-    On middle screen the main part occupies 66.66% wide
-  </h3>
+  <h4>
+    On medium-sized screens, the main content area occupies 66.66% of the width.
+  </h4>
   
     
   <div
@@ -106,9 +106,9 @@ exports[`Storyshots Layouts/Dynamic Side Content Responsiveness 1`] = `
   </div>
   
     
-  <h3>
-    On small screen the main part occupies 100% wide and the side content gets hidden
-  </h3>
+  <h4>
+    On small screens, the main content area occupies 100% of the width and the side content is hidden.
+  </h4>
   
     
   <div

@@ -4,52 +4,61 @@
 $block: #{$fd-namespace}-dynamic-side;
 
 .#{$block} {
-  $main: #{$block}__main;
-  $side: #{$block}__side;
-
   $main-width-screen-sm: 100%;
   $main-width-screen-md: 66.666%;
   $main-width-screen-xl: 75%;
+
+  @mixin fd-dynamic-side-side() {
+    .#{$block}__side {
+      @content;
+    }
+  }
+
+  @mixin fd-dynamic-side-main() {
+    .#{$block}__main {
+      @content;
+    }
+  }
 
   @include fd-reset();
   @include fd-flex();
 
   width: 100%;
 
-  .#{$main} {
+  @include fd-dynamic-side-main () {
     @include fd-reset();
 
     width: $main-width-screen-xl;
   }
 
-  .#{$side} {
+  @include fd-dynamic-side-side () {
     @include fd-reset();
 
     flex: 1 1 0;
   }
 
   &--sm {
-    .#{$main} {
+    @include fd-dynamic-side-main () {
       width: $main-width-screen-sm;
     }
 
-    .#{$side} {
+    @include fd-dynamic-side-side () {
       display: none;
     }
   }
 
   &--md {
-    .#{$main} {
+    @include fd-dynamic-side-main () {
       width: $main-width-screen-md;
     }
 
-    .#{$side} {
+    @include fd-dynamic-side-side () {
       display: block;
     }
   }
 
   &--xl {
-    .#{$main} {
+    @include fd-dynamic-side-main () {
       width: $main-width-screen-xl;
     }
   }
@@ -57,12 +66,12 @@ $block: #{$fd-namespace}-dynamic-side;
   &--equal-split {
     flex-direction: row;
 
-    .#{$main} {
+    @include fd-dynamic-side-main () {
       flex: 1 1 50%;
       width: 50%;
     }
 
-    .#{$side} {
+    @include fd-dynamic-side-side () {
       flex: 1 1 50%;
       width: 50%;
     }
@@ -71,11 +80,11 @@ $block: #{$fd-namespace}-dynamic-side;
   &--below {
     flex-direction: column;
 
-    .#{$main} {
+    @include fd-dynamic-side-main () {
       width: 100%;
     }
 
-    .#{$side} {
+    @include fd-dynamic-side-side () {
       display: block;
       width: 100%;
     }
