@@ -59,13 +59,3 @@ exports[`Storyshots Components/Side Navigation Nested List Without Links 1`] = `
 
 
 `;
-
-exports[`Storyshots Components/Side Navigation Rtl Cozy Multiple 1`] = `
-
-
-`;
-
-exports[`Storyshots Components/Side Navigation Rtl Example 1`] = `
-
-
-`;

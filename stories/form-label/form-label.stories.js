@@ -29,12 +29,6 @@ export const colon = () => `
         <label class="fd-form-label fd-form-label--colon" for="input-1d">Input With Colon</label>
         <input class="fd-input" type="text" id="input-1d" placeholder="Field placeholder text">
     </div>
-    <div dir="rtl">
-        <div class="fd-form-item">
-            <label class="fd-form-label fd-form-label--colon" for="input-2d">Input With Colon</label>
-            <input class="fd-input" type="text" id="input-2d" placeholder="Field placeholder text">
-        </div>
-    </div>
 `;
 
 colon.storyName = 'Colon';

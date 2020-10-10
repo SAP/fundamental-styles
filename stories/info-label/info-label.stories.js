@@ -99,24 +99,3 @@ export const numeric = () => `
 </div>
 `;
 numeric.storyName = 'Numeric Info Label';
-
-/** Info Label in RTL mode. */
-
-export const rtl = () => `
-<div class="fddocs-container" dir="rtl">
-    <span class="fd-info-label fd-info-label--accent-color-1">
-        <span class="fd-info-label__text">Info Label</span>
-    </span>
-    <span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-1">
-        <span class="fd-info-label__text">6</span>
-    </span>
-    <span class="fd-info-label fd-info-label--accent-color-1 fd-info-label--icon">
-        <i role="presentation" class="fd-info-label__icon sap-icon--future"></i>
-        <span class="fd-info-label__text">Info Label</span>
-    </span>
-    <span class="fd-info-label fd-info-label--accent-color-2 fd-info-label--icon">
-        <i role="presentation" class="fd-info-label__icon sap-icon--upload-to-cloud"></i>
-    </span>
-</div>
-`;
-rtl.storyName = 'Info Label RTL';

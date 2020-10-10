@@ -125,18 +125,3 @@ states.parameters = {
         storyDescription: 'As with any other input component, you can validate the fields and show the result as a value state of the component. Possible value states are error, warning, success, information, or neutral (none).'
     }
 };
-
-export const rtl = () => `
-<div class="fd-form-item" dir="rtl">
-    <label class="fd-form-label" for="textarea-222">Compact text area:</label>
-    <textarea class="fd-textarea fd-textarea--compact" id="textarea-222">Pellentesque metus lacus commodo eget justo ut rutrum varius nunc.</textarea>
-    <div class="fd-textarea-counter">150 characters left</div>
-</div>
-`;
-
-rtl.storyName = 'Right-to-Left';
-rtl.parameters = {
-    docs: {
-        iframeHeight: 150
-    }
-};
