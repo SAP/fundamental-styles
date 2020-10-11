@@ -1,6 +1,3 @@
-import '../../dist/feed-list.css';
-import '../../dist/avatar.css';
-
 export default {
     title: 'Components/Feed List',
     parameters: {
@@ -20,7 +17,8 @@ export default {
 -       You need only a single text box instance. Instead, use **Text Area**.
 -       You want to display empty fields for the user to input feed entries. Instead, use **Feed Input**.
         `,
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['feed-list', 'avatar', 'icon', 'button', 'menu', 'popover', 'link']
     }
 };
 
@@ -28,7 +26,7 @@ export const standard = () => `
     <div class="fd-feed-list" aria-label="Feed List Item default example">
         <div class="fd-feed-list__body">
             <div 
-                class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
+                class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb fd-feed-list__thumb--mode" 
                 style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
                 role="img" 
                 aria-label="John Doe"
@@ -431,7 +429,7 @@ export const rtl = () => `
                             <li class="fd-menu__item">
                                 <a href="#" class="fd-menu__link">
                                     <i class="sap-icon sap-icon--share-2 fd-feed-list__icon"></i>
-                                    <span class="fd-menu__title fd-feed-list__title fd-feed-list__title--icon">Share</span>
+                                    <span class="fd-menu__title fd-feed-list__title--icon">Share</span>
                                 </a>
                             </li>
                         </ul>

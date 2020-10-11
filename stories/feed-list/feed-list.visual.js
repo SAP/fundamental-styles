@@ -1,4 +1,3 @@
-import '../../dist/feed-input.css';
 import * as stories from './feed-list.stories.js';
 
 export default {
