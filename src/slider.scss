@@ -2,6 +2,10 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-slider;
+$handle-desktop-dimensions: 1.25rem;
+$handle-hit-area-desktop-dimensions: 2rem;
+$handle-mobile-dimensions: 1.625rem;
+$handle-hit-area-mobile-dimensions: 2.75rem;
 
 .#{$block} {
   @include fd-reset();
@@ -26,20 +30,20 @@ $block: #{$fd-namespace}-slider;
 
     height: var(--fdSlider_Track_Height);
     width: 100%;
-    background-color: var(--fdSlider_Track_Background);
+    background-color: var(--sapField_BorderColor);
     border-radius: var(--fdSlider_Track_BorderRadius);
     position: relative;
     z-index: 1;
+  }
 
-    &-range {
-      @include fd-reset();
+  &__track-range {
+    @include fd-reset();
 
-      position: relative;
-      height: 100%;
-      border-radius: 0.25rem;
-      background-color: var(--fdSlider_Track_Active_Background);
-      border: 0.0625rem solid var(--fdSlider_Track_Active_Border);
-    }
+    position: relative;
+    height: 100%;
+    border-radius: 0.25rem;
+    background-color: var(--fdSlider_Track_Active_Background);
+    border: 0.0625rem solid var(--fdSlider_Track_Active_Border);
   }
 
   &__tick-wrapper {
@@ -53,15 +57,18 @@ $block: #{$fd-namespace}-slider;
   &__ticks {
     @include fd-reset();
 
-    display: flex;
-    justify-content: space-between;
+    @include fd-flex() {
+      justify-content: space-between;
+    }
   }
 
   &__labels {
     @include fd-reset();
 
-    display: flex;
-    justify-content: space-between;
+    @include fd-flex() {
+      justify-content: space-between;
+    }
+
     position: relative;
     height: 1rem;
     top: 0.5rem;
@@ -89,43 +96,43 @@ $block: #{$fd-namespace}-slider;
   &__handle {
     @include fd-reset();
 
-    width: 1.625rem;
-    height: 1.625rem;
+    width: $handle-mobile-dimensions;
+    height: $handle-mobile-dimensions;
     position: absolute;
     top: -0.7rem;
     margin-left: -0.5rem;
     cursor: pointer;
     border-radius: 50%;
     z-index: 1;
-    background-color: var(--fdSlider_Handle_Background);
-    border: 0.125rem solid var(--fdSlider_Handle_Border_Color);
+    background-color: var(--sapButton_Background);
+    border: 0.125rem solid var(--sapField_BorderColor);
 
     &::before {
       content: '';
-      width: 2.75rem;
-      height: 2.75rem;
+      width: $handle-hit-area-mobile-dimensions;
+      height: $handle-hit-area-mobile-dimensions;
       position: absolute;
       transform: translate(-25%, -25%);
     }
 
     @include fd-hover() {
-      background: var(--fdSlider_Handle_Background_Hover);
-      border-color: var(--fdSlider_Handle_Border_Color_Hover);
+      background: var(--sapButton_Hover_Background);
+      border-color: var(--sapButton_Hover_BorderColor);
     }
 
     @include fd-active() {
-      background: var(--fdSlider_Handle_Background_Active);
-      border-color: var(--fdSlider_Handle_Border_Color_Active);
+      background: var(--sapButton_Active_Background);
+      border-color: var(--sapButton_Active_BorderColor);
     }
 
     @include fd-screen(l) {
       top: -0.5rem;
-      width: 1.25rem;
-      height: 1.25rem;
+      width: $handle-desktop-dimensions;
+      height: $handle-desktop-dimensions;
 
       &::before {
-        width: 2rem;
-        height: 2rem;
+        width: $handle-hit-area-desktop-dimensions;
+        height: $handle-hit-area-desktop-dimensions;
       }
     }
   }
