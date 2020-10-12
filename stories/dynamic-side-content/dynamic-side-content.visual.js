@@ -1,8 +1,10 @@
-// import '../../dist/dynamic-side-content.css';
 import * as stories from './dynamic-side-content.stories.js';
 
 export default {
-    title: 'Visual/Dynamic Side Content'
+    title: 'Visual/Dynamic Side Content',
+    parameters: {
+        components: ['dynamic-side-content']
+    }
 };
 
 export const DynamicSideContent = () => {

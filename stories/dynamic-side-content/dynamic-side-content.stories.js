@@ -1,5 +1,3 @@
-import '../../dist/dynamic-side-content.css';
-
 export default {
     title: 'Layouts/Dynamic Side Content',
     parameters: {
@@ -33,7 +31,8 @@ The screen width ratio between the side and main content area will vary dependin
 
 Note: For all screens < 720px, the side content disappears entirely.
 `,
-        tags: ['f3', 'development']
+        tags: ['f3', 'development'],
+        components: ['dynamic-side-content']
     }
 };
 
