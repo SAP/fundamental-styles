@@ -1,5 +1,3 @@
-import './custom.scss';
-
 export default {
     title: 'Components/Dynamic Page Layout',
     parameters: {
@@ -54,7 +52,6 @@ position of the content with respect to the header needs some implementation log
 ||<code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_summarized-title-area--no-shadow</code>        |
 | Add shadow to tabs when tabs are used | <code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_tabs--add-shadow</code>       |
 | Collapsed styles when header is collapsed | <code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_title-area--collapsed</code>      |
-||<code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_title--collapsed</code>        |
 ||<code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_summarized-title--collapsed</code>        |
 | The pin/collapse button group | <code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_header-visibility-container--button-group</code>      |
 | The left gradient of the button group | <code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_header-visibility-container--left-gradient</code>      |
@@ -241,7 +238,7 @@ export const tablet = () => `
                         </nav>
                         <div class="fd-dynamic-page__title-container">
                             <h1 class="fd-title fd-dynamic-page__title fd-dynamic-page__title--md">
-                                <a href="#" class="fd-dynamic-page__title fd-link" tabindex="0">Balenciaga Tripple S Trainers </a>
+                                <a href="#" class="fd-link" tabindex="0">Balenciaga Tripple S Trainers </a>
                             </h1>
                             <div class="fd-dynamic-page__title-content"> Some RANDOM things </div>
                         </div>
@@ -390,7 +387,7 @@ export const mobile = () => `
                                     <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
                                 </ul>
                             </nav>
-                            <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                            <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar-actions fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                 <button class="fd-button fd-button--transparent" aria-label="Close">
                                     <i class="sap-icon--decline"></i>
                                 </button>
@@ -529,9 +526,8 @@ export const mobile = () => `
                             </div>
                         </div>
                         <div class="fd-dynamic-page__title-container">
-                            <h1 class="fd-title fd-dynamic-page__title fd-dynamic-page__title--collapsed"> Balenciaga Tripple S Trainers </h1>
-                                
-                            <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear  fd-toolbar--cozy fd-toolbar--transparent">
+                            <h1 class="fd-title fd-dynamic-page__title"> Balenciaga Tripple S Trainers </h1>
+                            <div role="toolbar" aria-label="Header Content" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                 <div class="fd-popover fd-toolbar__overflow">
                                     <div class="fd-popover__control">
                                         <button class="fd-button fd-button--transparent"
@@ -550,6 +546,8 @@ export const mobile = () => `
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear  fd-toolbar--cozy fd-toolbar--transparent">
                                 <div class="fd-popover fd-toolbar__overflow">
                                     <div class="fd-popover__control">
                                         <button class="fd-button fd-button--transparent"
@@ -666,7 +664,7 @@ export const mobile = () => `
                     </div>
                 </div>
                 <div class="fd-dynamic-page__title-container">
-                    <h1 class="fd-title fd-dynamic-page__title fd-dynamic-page__title--collapsed"> Balenciaga Tripple S Trainers </h1>
+                    <h1 class="fd-title fd-dynamic-page__title"> Balenciaga Tripple S Trainers </h1>
                         <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                             <button class="fd-button fd-button--transparent" aria-label="More Header Content">
                                 <i class="sap-icon--overflow"></i>
@@ -863,7 +861,7 @@ export const expandable = () => `
                             </ul>
                         </nav>
                         <div class="fd-dynamic-page__title-container">
-                            <h1 class="fd-title fd-dynamic-page__title fd-dynamic-page__title--collapsed"> Balenciaga Tripple S Trainers Model 123456AB On Sale </h1>
+                            <h1 class="fd-title fd-dynamic-page__title"> Balenciaga Tripple S Trainers Model 123456AB On Sale </h1>
                             <div class="fd-dynamic-page__title-content">Collapsed Header with both expand and pin buttons </div>
                         </div>
                     </div>

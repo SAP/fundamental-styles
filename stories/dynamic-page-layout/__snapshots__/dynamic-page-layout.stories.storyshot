@@ -939,7 +939,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
               
                             
               <h1
-                class="fd-title fd-dynamic-page__title fd-dynamic-page__title--collapsed"
+                class="fd-title fd-dynamic-page__title"
               >
                  Balenciaga Tripple S Trainers Model 123456AB On Sale 
               </h1>
@@ -1590,7 +1590,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                             
                 <div
                   aria-label="Close action"
-                  class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                  class="fd-dynamic-page__toolbar-actions fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
                   role="toolbar"
                 >
                   
@@ -2140,16 +2140,15 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                 
                             
                 <h1
-                  class="fd-title fd-dynamic-page__title fd-dynamic-page__title--collapsed"
+                  class="fd-title fd-dynamic-page__title"
                 >
                    Balenciaga Tripple S Trainers 
                 </h1>
                 
-                                
                             
                 <div
-                  aria-label="Product actions"
-                  class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear  fd-toolbar--cozy fd-toolbar--transparent"
+                  aria-label="Header Content"
+                  class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
                   role="toolbar"
                 >
                   
@@ -2204,6 +2203,16 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                     
                                 
                   </div>
+                  
+                            
+                </div>
+                
+                            
+                <div
+                  aria-label="Product actions"
+                  class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear  fd-toolbar--cozy fd-toolbar--transparent"
+                  role="toolbar"
+                >
                   
                                 
                   <div
@@ -2682,7 +2691,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
             
                     
             <h1
-              class="fd-title fd-dynamic-page__title fd-dynamic-page__title--collapsed"
+              class="fd-title fd-dynamic-page__title"
             >
                Balenciaga Tripple S Trainers 
             </h1>
@@ -3588,7 +3597,7 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
                 
                                 
                 <a
-                  class="fd-dynamic-page__title fd-link"
+                  class="fd-link"
                   href="#"
                   tabindex="0"
                 >
