@@ -26,7 +26,7 @@ export const standard = () => `
     <div class="fd-feed-list" aria-label="Feed List Item default example">
         <div class="fd-feed-list__body">
             <div 
-                class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb fd-feed-list__thumb--mode" 
+                class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb 
                 style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
                 role="img" 
                 aria-label="John Doe"
@@ -429,7 +429,7 @@ export const rtl = () => `
                             <li class="fd-menu__item">
                                 <a href="#" class="fd-menu__link">
                                     <i class="sap-icon sap-icon--share-2 fd-feed-list__icon"></i>
-                                    <span class="fd-menu__title fd-feed-list__title--icon">Share</span>
+                                    <span class="fd-menu__title fd-feed-list__title fd-feed-list__title--icon">Share</span>
                                 </a>
                             </li>
                         </ul>

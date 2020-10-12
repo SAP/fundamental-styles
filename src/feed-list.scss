@@ -18,15 +18,13 @@ $block: #{$fd-namespace}-feed-list;
   .#{$block}__thumb {
     @include fd-reset();
 
-    &--mode {
-      display: inline-flex;
+    display: inline-flex;
+    margin-left: $fd-feed-list-margin-end;
+    margin-right: $fd-feed-list-margin-start;
+
+    @include fd-rtl() {
       margin-left: $fd-feed-list-margin-start;
       margin-right: $fd-feed-list-margin-end;
-
-      @include fd-rtl() {
-        margin-left: $fd-feed-list-margin-start;
-        margin-right: $fd-feed-list-margin-end;
-      }
     }
   }
 
@@ -55,7 +53,7 @@ $block: #{$fd-namespace}-feed-list;
     }
   }
 
-  &__title {
+  .#{$block}__title {
     @include fd-reset();
 
     margin-left: $fd-feed-list-margin-start;
