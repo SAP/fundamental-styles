@@ -1,8 +1,10 @@
-import '../../dist/slider.css';
 import * as stories from './slider.stories.js';
 
 export default {
-    title: 'Visual/Slider'
+    title: 'Visual/Slider',
+    parameters: {
+        components: ['slider']
+    }
 };
 
 export const Slider = () => {

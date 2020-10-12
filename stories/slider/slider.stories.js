@@ -1,10 +1,9 @@
-import '../../dist/slider.css';
-
 export default {
     title: 'Components/Slider',
     parameters: {
         description: `A slider is a control that enables the user to adjust single values within a specified numerical range. A range slider is a user interface control that enables the user to select a value range within a predefined numerical
-interval.`
+interval.`,
+        components: ['slider']
     },
     tags: ['f3', 'theme']
 };
