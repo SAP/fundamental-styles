@@ -1,9 +1,10 @@
-import '../../dist/textarea.css';
-import '../../dist/feed-input.css';
 import * as stories from './feed-input.stories.js';
 
 export default {
-    title: 'Visual/FeedInput'
+    title: 'Visual/FeedInput',
+    parameters: {
+        components: ['button', 'textarea', 'avatar', 'feed-input', 'button', 'icon']
+    }
 };
 
 export const FeedInput = () => {

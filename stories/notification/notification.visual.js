@@ -1,10 +1,10 @@
-import '../../dist/button.css';
-import '../../dist/icon.css';
-import '../../dist/notification.css';
 import * as stories from './notification.stories.js';
 
 export default {
-    title: 'Visual/Notifications'
+    title: 'Visual/Notifications',
+    parameters: {
+        components: ['button', 'icon', 'notification', 'tabs', 'avatar', 'popover', 'menu', 'message-strip']
+    }
 };
 
 export const Notifications = () => {

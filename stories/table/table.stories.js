@@ -1,11 +1,3 @@
-import '../../dist/button.css';
-import '../../dist/checkbox.css';
-import '../../dist/icon.css';
-import '../../dist/link.css';
-import '../../dist/object-status.css';
-import '../../dist/table.css';
-import '../../dist/toolbar.css';
-
 // INCOMPLETE
 export default {
     title: 'Components/Table',
@@ -13,7 +5,8 @@ export default {
         description: 'A table is a set of tabular data. Line items can support data, images and actions.',
         docs: {
             iframeHeight: 500
-        }
+        },
+        components: ['button', 'checkbox', 'icon', 'link', 'object-status', 'table', 'toolbar']
     }
 };
 

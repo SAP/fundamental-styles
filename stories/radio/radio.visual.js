@@ -1,8 +1,10 @@
-import '../../dist/radio.css';
 import * as stories from './radio.stories.js';
 
 export default {
-    title: 'Visual/Radio'
+    title: 'Visual/Radio',
+    parameters: {
+        components: ['radio', 'form-label', 'fieldset', 'form-group']
+    }
 };
 
 export const Radio = () => {

@@ -1,25 +1,34 @@
-import '../../dist/avatar.css';
-import '../../dist/badge.css';
-import '../../dist/button.css';
-import '../../dist/card.css';
-
 export default {
     title: 'Components/Card',
     parameters: {
-        description: `A Card is an app content container that represents a task or a topic on an overview page. 
-It is a smart component that uses UI annotations to render its content. Cards can show application content from different sources side by side – without requiring the user to switch screens.
-Cards can display different content:
+        description: `A card is content container that represents a task or a topic on the overview page of an application. It is essentially a smart component that uses UI annotations to render its content. Cards can display read-only content from different sources side by side – without requiring the user to switch screens. 
+
+**Cards can display different types of content, such as:**
 
 - a chart
 - a list
 - a table
+- an object or group of objects
 - informative text
 - a combination of two elements
 
-Card fields are not editable. A card can focus on a single object or topic, or on a group of objects. Cards sizes vary depending on the layout.
-Several cards can reference the same application but the information should not be repeated. 
+Card sizes vary depending on the layout, and they are not editable. A card can focus on either a single object or topic, or on a group of objects. Several cards can reference the same application, but the information should be distinct from one card to another.
+
+##Card anatomy
+
+A card is a container that consists of two main components: a selectable header area (with a title) and a content area. The width and the height of a card depends on its parent, and its header can be placed either above or below the content.
+
+Components | Description
+:--------- |:-----------
+Header (main) | The header displays a mandatory title, indicating what the card is about and functions as a navigation control that directs the user to the parent app.
+Content (main) | The content area is reserved for application content.
+Title | A title is mandatory to explain what content is being displayed to the user.
+Avatar (optional) | An avatar can be displayed in a size S (3rem).
+Subtitle (optional) | The subtitle provides additional context to the title or displays a status. Its usage depends on the card type. Subtitles that exceed one line are truncated with an ellipsis.
+Counter (optional) | The counter indicates how many items are showing on the card in relation to the total number of relevant items. If all the relevant items are visible on the card, no counter is shown. There is also no counter if there is an issue loading a card, or if no items are found in the filter criteria. The counter is right-aligned and is never truncated.
 `,
-        tags: ['f3', 'a11y', 'theme', 'development']
+        tags: ['f3', 'a11y', 'theme', 'development'],
+        components: ['button', 'avatar', 'badge', 'card', 'object-status', 'numeric-content', 'table', 'checkbox', 'list', 'link']
     }
 };
 
@@ -175,27 +184,11 @@ export const cardAnatomy = () => `
 </div>
 `;
 
-cardAnatomy.storyName = 'Card Anatomy (Standard Card and Component Card)';
+cardAnatomy.storyName = 'Standard card';
 cardAnatomy.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `Card is a container that consists of two mandatory components: a clickable header area and a content area. The card takes the width and the height of its parent. The Header could be placed either above or below the Content.
-The Content area of the Unstructured Card is empty.
-
-**Header:**
-
-- indicates what the card is about
-- functions as a navigation area for opening the parent app
-
-Elements:
-
- - Avatar (optional) - use Avatar component with size S (3rem)
- - Title area with a mandatory title and an optional counter - the title explains why this card exists and why a user might want to use it. Titles that exceed three lines are truncated with the ellipsis. The counter indicates how many items are showing on the card in relation to the total number of relevant items. If all the relevant items are visible on the card, no counter is shown. There is also no counter if there is an issue loading a card, or no items are found for the filter criteria. The counter is right-aligned and is never truncated.
- - Subtitle area with an optional subtitle - qualifies the title, offers an explanation, or shows a status. Its usage depends on the card type. Subtitles that exceed one line are truncated with the ellipsis.
-
-**Content:**
-
-- reserved for application content.
+        storyDescription: `The standard card displays a header area with a title and a content area, as well as any other components mentioned in the card anatomy section.
 `
     }
 };
@@ -289,35 +282,24 @@ export const analyticalCard = () => `
 </div>
 `;
 
+analyticalCard.storyName = 'Analytical card';
 analyticalCard.parameters = {
     docs: {
         iframeHeight: 450,
-        storyDescription: `The analytical card is used for data visualization. It consists of two areas – a header area (either a standard header or a KPI header) and a chart area with a visual representation of the data. The analytical card is a single object card and does not contain a footer area. The <code>.fd-card--analytical</code> modifier class needs to be applied with <code>.fd-card</code>.
-        
-**Header Area:**
+        storyDescription: `The analytical card is used for data visualization. It can display a KPI header and various chart types in the content. The only difference between a KPI header and a standard header is that the former requires a subtitle, a KPI area and can display an optional second subtitle. To display an analytical card, add the <code>fd-card--analytical</code> modifier class to the main element.
 
-- Standard Header
-  - Title (mandatory) - The title provides the most important information. It is recommend to use a single-line text, but it can also wrap to two lines.
-  - Subtitle (optional) - The subtitle can wrap to two lines, and gets truncated at the end of the second line.
-- KPI Header
-  - Title (mandatory) - same as for Standard Header
-  - Subtitle (mandatory) - The subtitle can wrap to two lines, and gets truncated at the end of the second line. The unit of measure is shown at the end of the subtitle.
-  - KPI area (mandatory)
-  - Second subtitle (optional)
-
-**Content Area:**
-
-8 chart types can be used with analytical card:
+####Chart types
+**The content area of an analytical card can display 8 different chart types:**
 
 - Line
 - Bubble
 - Column
 - Stacked column
-- Veertical bullet
+- Vertical bullet
 - Donut
 - Combined
 - Scatter plot
-- Waterfall
+        
 `
     }
 };
@@ -411,10 +393,11 @@ export const listCard = () => `
 </div>
 `;
 
+listCard.storyName = 'List card';
 listCard.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'The Header and the Content sections follow the specification described in the Card Anatomy. The Content can accommodate different list types. All controls placed inside should behave natively.'
+        storyDescription: 'A card can display various types of lists. All components placed inside should behave natively.'
     }
 };
 
@@ -574,10 +557,11 @@ export const tableCard = () => `
 </div>
 `;
 
+tableCard.storyName = 'Table card';
 tableCard.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'The Header and the Content sections follow the specification described in the Card Anatomy. The Table component belongs to the Content area. The <code>.fd-card--table</code> modifier class needs to be applied with <code>.fd-card</code>.'
+        storyDescription: 'Cards can display tables within the content area. To display a table card, add the <code>fd-card--table</code> modifier class to the main element.'
     }
 };
 
@@ -724,19 +708,23 @@ export const objectCard = () => `
     </div>
 </div>
 `;
+
+objectCard.storyName = 'Object card';
 objectCard.parameters = {
     docs: {
         iframeHeight: 600,
-        storyDescription: `The Object Card Header is the same specified in the Card Anatomy. The Content has a 1rem padding applied on all sides. The <code>.fd-card--object</code> modifier class needs to be applied with <code>.fd-card</code>.
+        storyDescription: `The object card can display a single object or a group of objects. Contrary to other cards, object card has 1rem padding on all sides of the content area. To display an object card, add the <code>fd-card--object</code> modifier class to the main element.
           
-Building blocks of the Content:
+**Within the content area, there are several components:**
 
-- <code>.fd-card\\_\\_content-container</code>- a wrapper for the content sections. By default the content is displayed in one column. Do display the content in two columns apply the  <code>fd-card\\_\\_content-container--horizontal</code> modifier class.
-- <code>.fd-card\\_\\_content-section</code>- content section. The min-width of the section is 12rem and it can reach maximum 24rem. A section contains a group title and one or multiple groups.
-- <code>.fd-card\\_\\_content-title-container</code>- a container for the title.
-- <code>.fd-card\\_\\_content-group</code>- a container for the content group. Can contain an Avatar with size XS, a group label and a group value.
-- <code>.fd-card\\_\\_content-label-container</code>- a container for the label of the group.
-- <code>.fd-card\\_\\_content-group-container</code>- a container for the value of the group.
+Component (class) |	Description
+:---------------- | :-----------
+<code>fd-card\\_\\_content-container</code> | a wrapper for the content sections. By default, the content is displayed in one column. To display the content in two columns, add the <code>fd-card\\_\\_content-container--horizontal</code> modifier class.
+<code>fd-card\\_\\_content-section</code> | a content section. A section contains a group title and one or multiple groups. The min-width of the section is 12rem and it can reach a maximum of 24rem.
+<code>fd-card\\_\\_content-title-container</code> | a container for the title.
+<code>fd-card\\_\\_content-group</code> | a container for the content group. It can also contain an avatar with size XS, a group label and a group value.
+<code>fd-card\\_\\_content-label-container</code> | a container for the label of the group.
+<code>fd-card\\_\\_content-group-container</code> | a container for the value of the group.
 `
     }
 };

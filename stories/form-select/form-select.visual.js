@@ -1,8 +1,10 @@
-import '../../dist/select.css';
 import * as stories from './form-select.stories.js';
 
 export default {
-    title: 'Visual/Form Select'
+    title: 'Visual/Form Select',
+    parameters: {
+        components: ['form-item', 'form-label', 'form-select']
+    }
 };
 
 export const FormSelect = () => {

@@ -1,16 +1,10 @@
-import '../../dist/button.css';
-import '../../dist/input-group.css';
-import '../../dist/icon.css';
-import '../../dist/menu.css';
-import '../../dist/avatar.css';
-import '../../dist/input-group.css';
-import '../../dist/popover.css';
-import '../../dist/product-switch.css';
-import '../../dist/shellbar.css';
 import * as stories from './shellbar.stories.js';
 
 export default {
-    title: 'Visual/Shellbar'
+    title: 'Visual/Shellbar',
+    parameters: {
+        components: ['button', 'input-group', 'icon', 'menu', 'avatar', 'input-group', 'popover', 'product-switch', 'shellbar']
+    }
 };
 
 export const Shellbar = () => {

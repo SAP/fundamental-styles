@@ -1,6 +1,3 @@
-import '../../dist/radio.css';
-import '../../dist/title.css';
-
 export default {
     title: 'Patterns/Multi Input',
     parameters: {
@@ -13,7 +10,8 @@ That are also  supported by the \`combobox\` component.
 It provides an editable input field for filtering the list, and a dropdown menu with a list of the available options. 
 If the entries are not validated by the application, users can also enter custom values. 
 `,
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['form-label', 'popover', 'radio', 'title', 'token', 'input-group', 'checkbox', 'list']
     }
 };
 

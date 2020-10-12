@@ -1,11 +1,3 @@
-import '../../dist/textarea.css';
-import '../../dist/fieldset.css';
-import '../../dist/form-label.css';
-import '../../dist/form-message.css';
-import '../../dist/form-item.css';
-import '../../dist/form-group.css';
-import '../../dist/popover.css';
-
 export default {
     title: 'Components/Forms/Textarea',
     parameters: {
@@ -18,7 +10,8 @@ Do not use the text area if
 - You only want them to enter a single line of text, use the input component instead.
 - Users need to enter formatted text. Use the rich text editor instead.
 `,
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['textarea', 'fieldset', 'form-label', 'form-message', 'form-item', 'form-group', 'popover']
     }
 };
 

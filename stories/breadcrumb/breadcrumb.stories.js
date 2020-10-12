@@ -1,7 +1,3 @@
-import '../../dist/popover.css';
-import '../../dist/list.css';
-import '../../dist/breadcrumb.css';
-
 export default {
     title: 'Components/Breadcrumb',
     parameters: {
@@ -26,7 +22,8 @@ The breadcrumb component is a type of navigation that indicates the position of 
 - Cross-application navigation to other object pages
 - Independent object pages, such as fact sheets
 `,
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['popover', 'list', 'breadcrumb']
     }
 };
 

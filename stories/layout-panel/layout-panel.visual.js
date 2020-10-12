@@ -1,8 +1,10 @@
-import '../../dist/layout-panel.css';
 import * as stories from './layout-panel.stories.js';
 
 export default {
-    title: 'Visual/Layout Panel'
+    title: 'Visual/Layout Panel',
+    parameters: {
+        components: ['layout-panel', 'title']
+    }
 };
 
 export const LayoutPanel = () => {

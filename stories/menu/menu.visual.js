@@ -1,10 +1,10 @@
-import '../../dist/button.css';
-import '../../dist/icon.css';
-import '../../dist/menu.css';
 import * as stories from './menu.stories.js';
 
 export default {
-    title: 'Visual/Menu'
+    title: 'Visual/Menu',
+    parameters: {
+        components: ['button', 'icon', 'menu', 'title']
+    }
 };
 
 export const Menu = () => {

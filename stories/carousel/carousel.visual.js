@@ -1,8 +1,10 @@
-import '../../dist/carousel.css';
 import * as stories from './carousel.stories.js';
 
 export default {
-    title: 'Visual/Carousel'
+    title: 'Visual/Carousel',
+    parameters: {
+        components: ['carousel', 'button', 'icon']
+    }
 };
 
 export const Carousel = () => {

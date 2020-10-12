@@ -1,5 +1,3 @@
-import '../../dist/radio.css';
-
 export default {
     title: 'Patterns/Contextul Menu',
     parameters: {
@@ -18,7 +16,8 @@ Implementation Guidelines:
 
 - Clicking away from the menu should also close the menu
 `,
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['radio', 'popover', 'menu', 'button', 'icon']
     }
 };
 

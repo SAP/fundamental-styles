@@ -23,6 +23,17 @@ module.exports = {
       test: /\.stories\.js?$/,
       use: [{ loader: 'story-description-loader' }],
     });
+    config.module.rules.push({
+      test: /\.css?$/,
+      use: [
+        {
+            loader: 'style-loader',
+            options: {
+                injectType: 'lazyStyleTag'
+            }
+        }
+    ]
+    });
     config.plugins.push({
       // Custom plugin to add scss files to webpack watcher
       apply: (compiler) => {

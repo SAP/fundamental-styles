@@ -1,13 +1,3 @@
-import '../../dist/button.css';
-import '../../dist/input-group.css';
-import '../../dist/icon.css';
-import '../../dist/menu.css';
-import '../../dist/avatar.css';
-import '../../dist/input-group.css';
-import '../../dist/popover.css';
-import '../../dist/product-switch.css';
-import '../../dist/shellbar.css';
-
 export default {
     title: 'Components/Shellbar',
     parameters: {
@@ -48,7 +38,8 @@ The shellbar handles layout and has some built-in elements but relies on standal
 
 Here are examples of various configurations.
 
-`
+`,
+        components: ['button', 'input-group', 'icon', 'menu', 'avatar', 'input-group', 'popover', 'product-switch', 'shellbar']
     }
 };
 

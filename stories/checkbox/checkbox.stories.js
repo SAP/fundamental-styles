@@ -1,7 +1,3 @@
-import '../../dist/form-label.css';
-import '../../dist/checkbox.css';
-import '../../dist/fieldset.css';
-
 export default {
     title: 'Components/Forms/Checkbox',
     parameters: {
@@ -28,7 +24,9 @@ Note: With checkboxes, all options are visible, and the user can make one or mor
 - The user needs to perform instantaneous actions that do not need reviewing or confirming. Consider using a **Switch** instead.
 - There is not enough space available on the screen. Use a **Combo Box** instead.
         `,
-        tags: ['f3', 'a11y', 'theme'] }
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['form-label', 'checkbox', 'fieldset']
+    }
 };
 
 const localStyles = `

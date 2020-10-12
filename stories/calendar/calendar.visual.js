@@ -1,8 +1,10 @@
-import '../../dist/calendar.css';
 import * as stories from './calendar.stories.js';
 
 export default {
-    title: 'Visual/Calendar'
+    title: 'Visual/Calendar',
+    parameters: {
+        components: ['tile', 'calendar', 'button', 'icon']
+    }
 };
 
 export const Calendar = () => {

@@ -1,8 +1,10 @@
-import '../../dist/section.css';
 import * as stories from './layout-grid.stories.js';
 
 export default {
-    title: 'Visual/LayoutGrid'
+    title: 'Visual/LayoutGrid',
+    parameters: {
+        components: ['layout-grid']
+    }
 };
 
 export const LayoutGrid = () => {

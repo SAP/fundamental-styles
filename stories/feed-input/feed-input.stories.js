@@ -1,8 +1,3 @@
-import '../../dist/button.css';
-import '../../dist/textarea.css';
-import '../../dist/avatar.css';
-import '../../dist/feed-input.css';
-
 export default {
     title: 'Components/Feed Input',
     parameters: {
@@ -20,7 +15,8 @@ export default {
 - You need only a single text box instance. In this case, use the **Textarea** component (for multiple lines) or the text control (for a single line).
 
 `,
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['button', 'textarea', 'avatar', 'feed-input', 'button', 'icon']
     }
 };
 

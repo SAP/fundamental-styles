@@ -1,10 +1,10 @@
-import '../../dist/calendar.css';
-import '../../dist/input-group.css';
-import '../../dist/popover.css';
 import * as stories from './datepicker.stories.js';
 
 export default {
-    title: 'Visual/Date Picker'
+    title: 'Visual/Date Picker',
+    parameters: {
+        components: ['calendar', 'input-group', 'popover', 'title']
+    }
 };
 
 export const DatePicker = () => {

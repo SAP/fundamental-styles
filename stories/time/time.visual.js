@@ -1,9 +1,10 @@
-import '../../dist/icon.css';
-import '../../dist/time.css';
 import * as stories from './time.stories';
 
 export default {
-    title: 'Visual/Time'
+    title: 'Visual/Time',
+    parameters: {
+        components: ['icon', 'time']
+    }
 };
 
 export const Time = () => {

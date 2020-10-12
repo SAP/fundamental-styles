@@ -1,13 +1,11 @@
-import '../../dist/token.css';
-import '../../dist/tokenizer.css';
-
 export default {
     title: 'Components/Token',
     parameters: {
         description: `Token are used to represent contextualizing information. They can be useful to show applied filters, 
-selected values for form field or object metadata.`
-    },
-    tags: ['f3', 'a11y', 'theme']
+selected values for form field or object metadata.`,
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['token', 'tokenizer']
+    }
 };
 
 export const primary = () => `

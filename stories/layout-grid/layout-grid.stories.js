@@ -1,5 +1,3 @@
-import '../../dist/layout-grid.css';
-
 export default {
     title: 'Layouts/Layout Grid',
     parameters: {
@@ -21,7 +19,8 @@ To use the grid, the user must use all of the \`fd-container\`, \`fd-row\`, and 
 - Large 1024px<br>
 \`fd-col-lg--x\` will be used from 1024px to the next specified minimum breakpoint, column takes x/12 space of the row.
 - Extra-large 1440px<br>
-\`fd-col-xl--x\` will be used from 1440px and larger, column takes x/12 space of the row.`
+\`fd-col-xl--x\` will be used from 1440px and larger, column takes x/12 space of the row.`,
+        components: ['layout-grid']
     }
 };
 

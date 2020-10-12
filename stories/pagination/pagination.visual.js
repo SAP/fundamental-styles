@@ -1,8 +1,10 @@
-import '../../dist/pagination.css';
 import * as stories from './pagination.stories.js';
 
 export default {
-    title: 'Visual/Pagination'
+    title: 'Visual/Pagination',
+    parameters: {
+        components: ['pagination']
+    }
 };
 
 export const Pagination = () => {

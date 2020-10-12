@@ -1,9 +1,3 @@
-import '../../dist/form-message.css';
-import '../../dist/form-item.css';
-import '../../dist/form-label.css';
-import '../../dist/input.css';
-import '../../dist/popover.css';
-
 export default {
     title: 'Components/Forms/Form Message',
     parameters: {
@@ -20,7 +14,8 @@ The state of the input field can reflect the validity of the data entered, wheth
 * **Read Only**: Used to display static information in the context of a form.
 
 Along with Error and Warning, error messages should be displayed below the field so the user can correct the error and move forward.`,
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['form-message', 'form-item', 'form-label', 'input', 'popover']
     }
 };
 

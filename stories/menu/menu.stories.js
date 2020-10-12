@@ -1,8 +1,3 @@
-import '../../dist/button.css';
-import '../../dist/icon.css';
-import '../../dist/menu.css';
-import '../../dist/title.css';
-
 export default {
     title: 'Components/Menu',
     parameters: {
@@ -11,7 +6,8 @@ export default {
 The menu component is the listing structure with optional headers to create menus.
 
 Commonly used as the contents when composing "dropdowns", "contextual menus", etc, when paired with the popover component.
-`
+`,
+        components: ['button', 'icon', 'menu', 'title']
     }
 };
 

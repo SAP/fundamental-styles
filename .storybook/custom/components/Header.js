@@ -1,13 +1,20 @@
 import packageJson from '../../../package.json';
 import React from 'react';
 
-const Header = () => {
+const Header = ({onThemeChange}) => {
     return (
         <header className='fddocs-header'>
             <section className='fddocs-header--left'>
                 <span>Fundamental Styles</span>
             </section>
             <section className='fddocs-header--right'>
+                <select className='fddocs-select' onChange={(e) => onThemeChange(e)}>
+                    <option value='sap_fiori_3'>Light</option>
+                    <option value='sap_fiori_3_dark'>Dark</option>
+                    <option value='sap_fiori_3_light_dark'>Light Dark</option>
+                    <option value='sap_fiori_3_hcw'>High Contrast White</option>
+                    <option value='sap_fiori_3_hcb'>High Contrast Dark</option>
+                </select>
                 <a className='fddocs-header__anchor' href='https://github.com/SAP/fundamental-styles'
                     target='_blank'>
                     <svg viewBox='0 0 512 499.36' xmlns='http://www.w3.org/2000/svg'>

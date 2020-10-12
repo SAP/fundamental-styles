@@ -1,9 +1,8 @@
-import '../../dist/form-item.css';
-
 export default {
     title: 'Components/Forms/Form Item',
     parameters: {
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['form-item', 'form-label', 'input']
     }
 };
 

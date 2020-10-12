@@ -1,8 +1,10 @@
-import '../../dist/radio.css';
 import * as stories from './combobox-input.stories.js';
 
 export default {
-    title: 'Visual/Combobox Input'
+    title: 'Visual/Combobox Input',
+    parameters: {
+        components: ['radio', 'title', 'form-label', 'popover', 'icon', 'input-group', 'input', 'list']
+    }
 };
 
 export const ComboboxInput = () => {

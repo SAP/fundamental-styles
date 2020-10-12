@@ -1,6 +1,3 @@
-import '../../dist/tabs.css';
-import '../../dist/icon.css';
-
 export default {
     title: 'Components/Tabs',
     parameters: {
@@ -11,7 +8,8 @@ Tabs should be ordered to create a visual hierarchy based on priority.
         `,
         docs: {
             iframeHeight: 150
-        }
+        },
+        components: ['tabs', 'icon']
     }
 };
 

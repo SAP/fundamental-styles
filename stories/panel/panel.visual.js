@@ -1,12 +1,10 @@
-import '../../dist/button.css';
-import '../../dist/icon.css';
-import '../../dist/panel.css';
-import '../../dist/segmented-button.css';
-import '../../dist/toolbar.css';
 import * as stories from './panel.stories.js';
 
 export default {
-    title: 'Visual/Panel'
+    title: 'Visual/Panel',
+    parameters: {
+        components: ['button', 'icon', 'panel', 'segmented-button', 'toolbar']
+    }
 };
 
 export const Panel = () => {

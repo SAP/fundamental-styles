@@ -1,8 +1,10 @@
-import '../../dist/form-item.css';
 import * as stories from './form-item.stories.js';
 
 export default {
-    title: 'Visual/Form Item'
+    title: 'Visual/Form Item',
+    parameters: {
+        components: ['form-item', 'form-label', 'input']
+    }
 };
 
 export const FormItem = () => {
