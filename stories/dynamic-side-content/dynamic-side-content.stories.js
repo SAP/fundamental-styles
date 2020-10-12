@@ -91,7 +91,7 @@ export const positionBottom = () => `
 positionBottom.storyName = 'Below';
 positionBottom.parameters = {
     docs: {
-        iframeHeight: 160,
+        iframeHeight: 260,
         storyDescription:
             'To display side content below the main content area, keep `fd-dynamic-side__side` as the last child element and add the `fd-dynamic-side--below` modifier class.'
     }

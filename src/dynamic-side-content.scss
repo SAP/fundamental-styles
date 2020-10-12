@@ -92,6 +92,7 @@ $block: #{$fd-namespace}-dynamic-side;
     @include fd-dynamic-side-side () {
       display: block;
       width: 100%;
+      flex: none;
     }
   }
 }
