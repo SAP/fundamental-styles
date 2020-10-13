@@ -69,7 +69,6 @@ export const globalTypes = {
     defaultValue: 'sap_fiori_3',
     toolbar: {
       icon: 'paintbrush',
-      // array of plain string values or MenuItem shape (see below)
       items: [
         { value: 'sap_fiori_3', title: 'Light' },
         { value: 'sap_fiori_3_dark', title: 'Dark' },
@@ -87,7 +86,6 @@ const withThemeProvider = makeDecorator({
     let links = [].slice.call(document.getElementsByTagName('link'));
     links.forEach(item => {
         if(item.attributes['data-theme-id']) {
-            console.log(item)
             item.parentNode.removeChild(item);
         }
     });
