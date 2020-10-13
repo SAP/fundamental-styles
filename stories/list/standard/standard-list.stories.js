@@ -2,9 +2,21 @@ export default {
     title: 'Components/List/Standard',
     parameters: {
         description: `
-In SAP Fiori, we distinguish between tables and lists. Both usually contain homogeneous data, but lists generally have
-rather basic data, whereas the data in tables tends to be more complex. Lists are mostly used in the master list for a
-master-detail scenario using the flexible column layout, as well as in popovers or dialogs.
+In SAP Fiori, we distinguish between tables and lists. Both usually contain homogeneous data, but lists generally have rather basic data, while the data in tables tend to be more complex. Lists are mostly used in the master list for a master-detail scenario using the flexible column layout, as well as in **Popovers** or **Dialogs**.
+
+##Usage
+**Use the standard list if:**
+
+- You want to display a homogeneous set of basic data.
+- You need to sort, group, or filter simple datasets.
+- You need to display a single-level hierarchy rather than using a complex tree table to support this simple use case.
+  
+
+**Do not use the standard list if:**
+
+- You want to manage complex datasets that need to be extensively sorted, grouped, filtered, or edited. In this case, use a **Table**.
+- You work with complex hierarchies. In this case, use a **Tree**.
+        
 `,
         tags: ['f3', 'a11y', 'theme', 'development'],
         components: ['list', 'icon', 'checkbox']
@@ -12,7 +24,7 @@ master-detail scenario using the flexible column layout, as well as in popovers 
 };
 
 export const standard = () => `
-<h4>Standard Size</h4>
+<h4>Standard size</h4>
 <ul class="fd-list" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
@@ -28,7 +40,7 @@ export const standard = () => `
   </li>
 </ul>
 
-<h4>Compact Size</h4>
+<h4>Compact size</h4>
 <ul class="fd-list fd-list--compact" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
@@ -45,11 +57,13 @@ export const standard = () => `
 </ul>
 `;
 
-standard.storyName = 'Standard';
+standard.storyName = 'Default';
 
 standard.parameters = {
     docs: {
-        iframeHeight: 445
+        iframeHeight: 445,
+        storyDescription: `The default standard list dislays list items in the standard size, which is ideal for mobile. To display the standard list in compact mode (for desktop), add the \`fd-list--compact\` modifier class to the main element.
+        `
     }
 };
 
@@ -81,8 +95,7 @@ navigation.parameters = {
     docs: {
         iframeHeight: 165,
         storyDescription: `
-For a standard list with navigation links add the fd-list--navigation modifier class to the list and the
-\`fd-list__item--link\` modifier class to the list elements that contain links. All items should be navigable.
+Standard list items can contain navigation links. To add navigation, add the \`fd-list—navigation\` modifier class to the list and the \`fd-list__item--link\` modifier class to the list elements that contain links. All items should be navigable.
 `
     }
 };
@@ -117,21 +130,19 @@ export const navigationIndicator = () => `
 </ul>
 `;
 
-navigationIndicator.storyName = 'Navigation indicator';
+navigationIndicator.storyName = 'Navigation indicators';
 
 navigationIndicator.parameters = {
     docs: {
         iframeHeight: 252,
         storyDescription: `
-If only a subset of the list items are navigable you should indicate those by displaying a navigation arrow. This is
-achieved by applying the \`fd-list--navigation-indication\` modifier class to the ul element. Do not show arrows if all
-items are navigable. In this case use a Standard List with Navigation.
+If only a subset of the list items is navigable you should indicate them with an arrow icon. To display navigation indicators, add the \`fd-list--navigation-indication\` modifier class to the unordered list element. Do not show indicators if all items are navigable. In this case, use a standard list with navigation (in the example above).
 `
     }
 };
 
 export const actionList = () => `
-<h4>Standard Size</h4>
+<h4>Standard size</h4>
 <ul class="fd-list" role="list">
   <li role="listitem" class="fd-list__item fd-list__item--action">
       <button class="fd-list__title">Forward</button>
@@ -144,7 +155,7 @@ export const actionList = () => `
   </li>
 </ul>
 
-<h4>Compact Size</h4>
+<h4>Compact size</h4>
 <ul class="fd-list fd-list--compact" role="list">
   <li role="listitem" class="fd-list__item fd-list__item--action">
       <button class="fd-list__title">Forward</button>
@@ -157,7 +168,7 @@ export const actionList = () => `
   </li>
 </ul>
 
-<h4>Action List Item With Other List Items </h4>
+<h4>Action List item with other list items </h4>
 <ul class="fd-list" role="list">
   <li role="listitem" class="fd-list__item">
       <span class="fd-list__title">List Item 1</span>
@@ -174,12 +185,14 @@ export const actionList = () => `
 </ul>
 `;
 
-actionList.storyName = 'Action list item';
+actionList.storyName = 'Action';
 
 actionList.parameters = {
     docs: {
         iframeHeight: 600,
-        storyDescription: 'Use `fd-list--action` on `li` element to create action list item.'
+        storyDescription: `
+Standard list items can display actions that users can choose from. To display actions, add the \`fd-list--action\` modifier class to the list elements.
+`
     }
 };
 
@@ -204,12 +217,13 @@ export const secondaryData = () => `
 </ul>
 `;
 
-secondaryData.storyName = 'Secondary Data';
+secondaryData.storyName = 'Secondary data';
 
 secondaryData.parameters = {
     docs: {
         iframeHeight: 210,
-        storyDescription: 'To display additional data inside list element create an element with `fd-list__secondary` class.'
+        storyDescription: `To display secondary data in standard list items, add the \`fd-list__secondary\` class within the list elements.
+        `
     }
 };
 
@@ -234,19 +248,20 @@ export const icons = () => `
 </ul>
 `;
 
-icons.storyName = 'Icons';
+icons.storyName = 'Icon';
 
 icons.parameters = {
     docs: {
         iframeHeight: 210,
-        storyDescription: 'To display an icon inside list element create an icon element with `fd-list__icon` class.'
+        storyDescription: `To display an icon inside standard list items, add the \`fd-list__icon\` class along with the icon within the list elements. For example, \`fd-list__icon sap-icon—lightbulb\`.
+        `
     }
 };
 
 export const groups = () => `
 <ul class="fd-list" role="list">
   <li role="listitem" class="fd-list__group-header">
-    Group Header 1
+    Group header 1
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
@@ -258,7 +273,7 @@ export const groups = () => `
       <span class="fd-list__title">List item 3</span>
   </li>
   <li role="listitem" class="fd-list__group-header">
-    Group Header 2
+    Group header 2
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 4</span>
@@ -272,12 +287,13 @@ export const groups = () => `
 </ul>
 `;
 
-groups.storyName = 'Groups';
+groups.storyName = 'Group';
 
 groups.parameters = {
     docs: {
         iframeHeight: 385,
-        storyDescription: 'To create list group headers use `fd-list__group-header` class.'
+        storyDescription: `Standard list items can be displayed with headers, separating the items into groups. To add group headers, add the \`fd-list__group-header\` class to the list elements.
+        `
     }
 };
 
@@ -306,7 +322,8 @@ footer.storyName = 'Footer';
 footer.parameters = {
     docs: {
         iframeHeight: 240,
-        storyDescription: 'To create list footer, add a span element with `fd-list__footer` class, after the unordered list element'
+        storyDescription: `The standard list can display a footer by adding a span element with an \`fd-list__footer\` class after the unordered list element.
+        `
     }
 };
 
@@ -332,12 +349,13 @@ borderless.storyName = 'Borderless';
 borderless.parameters = {
     docs: {
         iframeHeight: 210,
-        storyDescription: 'To create borderless list use `fd-list--no-border` modifier.'
+        storyDescription: `To display a borderless standard list, add the \`fd-list--no-border\` modifier class to the main element.
+        `
     }
 };
 
 export const selection = () => `
-<h4 id="XezW11">Standard Size</h4>
+<h4 id="XezW11">Standard size</h4>
 <ul class="fd-list fd-list--selection" role="listbox" aria-labelledby="XezW11">
   <li role="option" tabindex="0" class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
@@ -362,7 +380,7 @@ export const selection = () => `
   </li>
 </ul>
 
-<h4 id="XezW12">Compact Size</h4>
+<h4 id="XezW12">Compact size</h4>
 <ul class="fd-list fd-list--selection fd-list--compact fd-list--no-border" role="listbox" aria-labelledby="XezW12">
   <li role="option" tabindex="0" class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
@@ -393,11 +411,7 @@ selection.storyName = 'Selection';
 selection.parameters = {
     docs: {
         iframeHeight: 370,
-        storyDescription: `
-To create selection list:
-
-* Create a standard list with \`fd-list--selection\` modifier.
-* Inside list element create checkbox form item with \`fd-list__form-item\` class.
+        storyDescription: `Standard list items can display checkboxes that users can select from. To display standard list items with selection, add the \`fd-list--selection\` modifier class to the main element. To create checkbox form items, add the \`fd-list__form-item\` class within each list element.
 `
     }
 };
@@ -461,11 +475,11 @@ export const rtl = () => `
 </div>
 `;
 
-rtl.storyName = 'Rtl';
+rtl.storyName = 'RTL';
 
 rtl.parameters = {
     docs: {
         iframeHeight: 420,
-        storyDescription: 'List in Rtl mode'
+        storyDescription: 'Standard list can be displayed from right to left on the screen so that it may be used internationally.'
     }
 };
