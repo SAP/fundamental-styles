@@ -92,6 +92,8 @@ $handle-hit-area-mobile-dimensions: 2.75rem;
   }
 
   &__label {
+    @include fd-reset();
+
     position: relative;
     font-size: var(--sapFontSmallSize);
     color: var(--sapContent_LabelColor);
@@ -100,11 +102,11 @@ $handle-hit-area-mobile-dimensions: 2.75rem;
   &__handle {
     @include fd-reset();
 
-    width: $handle-mobile-dimensions;
-    height: $handle-mobile-dimensions;
+    width: $handle-desktop-dimensions;
+    height: $handle-desktop-dimensions;
     position: absolute;
-    top: -0.7rem;
-    margin-left: -0.5rem;
+    top: 50%;
+    transform: translate(-50%, -50%);
     cursor: pointer;
     border-radius: 50%;
     z-index: 1;
@@ -113,8 +115,8 @@ $handle-hit-area-mobile-dimensions: 2.75rem;
 
     &::before {
       content: '';
-      width: $handle-hit-area-mobile-dimensions;
-      height: $handle-hit-area-mobile-dimensions;
+      width: $handle-hit-area-desktop-dimensions;
+      height: $handle-hit-area-desktop-dimensions;
       position: absolute;
       transform: translate(-25%, -25%);
     }
@@ -129,14 +131,13 @@ $handle-hit-area-mobile-dimensions: 2.75rem;
       border-color: var(--sapButton_Active_BorderColor);
     }
 
-    @include fd-screen(l) {
-      top: -0.5rem;
-      width: $handle-desktop-dimensions;
-      height: $handle-desktop-dimensions;
+    &--lg {
+      width: $handle-mobile-dimensions;
+      height: $handle-mobile-dimensions;
 
       &::before {
-        width: $handle-hit-area-desktop-dimensions;
-        height: $handle-hit-area-desktop-dimensions;
+        width: $handle-hit-area-mobile-dimensions;
+        height: $handle-hit-area-mobile-dimensions;
       }
     }
   }

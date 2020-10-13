@@ -5,6 +5,11 @@ exports[`Storyshots Components/Slider Basic 1`] = `
 
 `;
 
+exports[`Storyshots Components/Slider Mobile mode 1`] = `
+
+
+`;
+
 exports[`Storyshots Components/Slider Range 1`] = `
 
 

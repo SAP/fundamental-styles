@@ -124,3 +124,23 @@ ticksAndLabels.parameters = {
         storyDescription: 'Slider with ticks and labels. A label is an element with class <code>fd-slider\\_\\_label</code>  Please be aware that labels positioning mechanism should be implemented by application developer.'
     }
 };
+
+
+export const mobileMode = () => `
+<div class="slider-container">
+    <div class="fd-slider" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50">
+        <div class="fd-slider__wrapper">
+            <div class="fd-slider__track">
+                <div class="fd-slider__track-range" style="width: 50%;"></div>
+                <div class="fd-slider__handle fd-slider__handle--lg" style="left: 50%;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+`;
+mobileMode.storyName = 'Mobile mode';
+mobileMode.parameters = {
+    docs: {
+        storyDescription: 'The slider itself is not responsive. You can enlarge slider thumb and its hit area by adding <code>fd-slider\\_\\_handle--lg</code> class to <code>fd-slider\\_\\_handle</code> element.'
+    }
+};
