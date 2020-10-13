@@ -23,7 +23,7 @@ $handle-hit-area-mobile-dimensions: 2.75rem;
     outline: none;
   }
 
-  &__wrapper {
+  &__inner {
     @include fd-reset();
 
     position: relative;
@@ -94,6 +94,11 @@ $handle-hit-area-mobile-dimensions: 2.75rem;
   &__label {
     @include fd-reset();
 
+    @include fd-flex() {
+      justify-content: center;
+    }
+
+    width: 0;
     position: relative;
     font-size: var(--sapFontSmallSize);
     color: var(--sapContent_LabelColor);
