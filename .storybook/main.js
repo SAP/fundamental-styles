@@ -17,6 +17,7 @@ module.exports = {
     "@storybook/addon-cssresources/register",
     "@storybook/addon-viewport/register",
     '@storybook/addon-docs',
+    '@storybook/addon-toolbars',
   ],
   webpackFinal: async (config) => {
     config.module.rules.push({
