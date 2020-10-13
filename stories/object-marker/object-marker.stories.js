@@ -1,13 +1,12 @@
-import '../../dist/object-marker.css';
-
 export default {
     title: 'Components/Object Marker',
     parameters: {
         description: `Object marker indicates the technical status of an object. It display the technical state like (draft, 
 unsaved changes, locked, favorite, flagged). Use the object marker for this unless you want to display the status of the object in the business life cycle. 
-The technical status can be represented as an icon, with an icon and text, or as text only, depending on the screen size. `
-    },
-    tags: ['f3', 'a11y', 'theme']
+The technical status can be represented as an icon, with an icon and text, or as text only, depending on the screen size. `,
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['object-marker', 'icon']
+    }
 };
 
 /**
@@ -15,11 +14,21 @@ The technical status can be represented as an icon, with an icon and text, or as
  */
 
 export const iconOnly = () => `
-<span class="fd-object-marker" aria-label="icon for request"><i class="sap-icon--request fd-object-marker__icon"></i></span>
-<span class="fd-object-marker" aria-label="icon for favourite"><i class="sap-icon--favorite fd-object-marker__icon"></i></span>
-<span class="fd-object-marker" aria-label="icon for flag"><i class="sap-icon--flag fd-object-marker__icon"></i></span>
-<span class="fd-object-marker" aria-label="icon for user edit"><i class="sap-icon--user-edit fd-object-marker__icon"></i></span>
-<span class="fd-object-marker" aria-label="icon for private"><i class="sap-icon--private fd-object-marker__icon"></i></span>
+<div class="fd-object-marker">
+    <i class="fd-object-marker__icon sap-icon--request" aria-label="icon for request"></i>
+</div>
+<div class="fd-object-marker">
+    <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite"></i>
+</div>
+<div class="fd-object-marker">
+    <i class="fd-object-marker__icon sap-icon--flag" aria-label="icon for flag"></i>
+</div>
+<div class="fd-object-marker">
+    <i class="fd-object-marker__icon sap-icon--user-edit" aria-label="icon for user edit"></i>
+</div>
+<div class="fd-object-marker">
+    <i class="fd-object-marker__icon sap-icon--private" aria-label="icon for private"></i>
+</div>
 `;
 
 /**
@@ -27,8 +36,12 @@ export const iconOnly = () => `
  */
 
 export const markerText = () => `
-<span class="fd-object-marker">Draft</span>
-<span class="fd-object-marker">Locked</span>
+<div class="fd-object-marker">
+    <span class="fd-object-marker__text">Draft</span>
+</div>
+<div class="fd-object-marker">
+    <span class="fd-object-marker__text">Locked</span>
+</div>
 `;
 
 /**
@@ -36,19 +49,49 @@ export const markerText = () => `
  */
 
 export const iconAndText = () => `
-<span class="fd-object-marker"><i class="sap-icon--request fd-object-marker__icon"></i>Request</span>
-<span class="fd-object-marker"><i class="sap-icon--favorite fd-object-marker__icon"></i>Favourite</span>
-<span class="fd-object-marker"><i class="sap-icon--flag fd-object-marker__icon"></i>Flag</span>
-<span class="fd-object-marker"><i class="sap-icon--user-edit fd-object-marker__icon"></i>Draft</span>
-<span class="fd-object-marker "><i class="sap-icon--private fd-object-marker__icon"></i>Locked</span>
+<div class="fd-object-marker">
+    <i class="fd-object-marker__icon sap-icon--request" role="presentation"></i>
+    <span class="fd-object-marker__text">Request</span>
+</div>
+<div class="fd-object-marker">
+    <i class="fd-object-marker__icon sap-icon--favorite" role="presentation"></i>
+    <span class="fd-object-marker__text">Favourite</span>
+</div>
+<div class="fd-object-marker">
+    <i class="fd-object-marker__icon sap-icon--flag" role="presentation"></i>
+    <span class="fd-object-marker__text">Flag</span>
+</div>
+<div class="fd-object-marker">
+    <i class="fd-object-marker__icon sap-icon--user-edit" role="presentation"></i>
+    <span class="fd-object-marker__text">Draft</span>
+</div>
+<div class="fd-object-marker">
+    <i class="fd-object-marker__icon sap-icon--private" role="presentation"></i>
+    <span class="fd-object-marker__text">Locked</span>
+</div>
 
 <div dir="rtl">
-<h4>RTL Support</h4>
-<span class="fd-object-marker"><i class="sap-icon--request fd-object-marker__icon"></i>Request</span>
-<span class="fd-object-marker"><i class="sap-icon--favorite fd-object-marker__icon"></i>Favourite</span>
-<span class="fd-object-marker"><i class="sap-icon--flag fd-object-marker__icon"></i>Flag</span>
-<span class="fd-object-marker"><i class="sap-icon--user-edit fd-object-marker__icon"></i>Draft</span>
-<span class="fd-object-marker "><i class="sap-icon--private fd-object-marker__icon"></i>Locked</span>
+    <h4>RTL Support</h4>
+    <div class="fd-object-marker">
+        <i class="fd-object-marker__icon sap-icon--request" role="presentation"></i>
+        <span class="fd-object-marker__text">Request</span>
+    </div>
+    <div class="fd-object-marker">
+        <i class="fd-object-marker__icon sap-icon--favorite" role="presentation"></i>
+        <span class="fd-object-marker__text">Favourite</span>
+    </div>
+    <div class="fd-object-marker">
+        <i class="fd-object-marker__icon sap-icon--flag" role="presentation"></i>
+        <span class="fd-object-marker__text">Flag</span>
+    </div>
+    <div class="fd-object-marker">
+        <i class="fd-object-marker__icon sap-icon--user-edit" role="presentation"></i>
+        <span class="fd-object-marker__text">Draft</span>
+    </div>
+    <div class="fd-object-marker">
+        <i class="fd-object-marker__icon sap-icon--private" role="presentation"></i>
+        <span class="fd-object-marker__text">Locked</span>
+    </div>
 </div>
 `;
 iconAndText.parameters = {
@@ -65,13 +108,25 @@ iconAndText.parameters = {
  */
 
 export const clickableObjectMarker = () => `
-<a class="fd-object-marker fd-object-marker--link"><i class="sap-icon--private fd-object-marker__icon"></i>Locked</a>
-<a class="fd-object-marker fd-object-marker--link"><i class="sap-icon--user-edit fd-object-marker__icon"></i>Unsaved Changes</a>
+<a class="fd-object-marker fd-object-marker--link">
+    <i class="fd-object-marker__icon sap-icon--private" role="presentation"></i>
+    <span class="fd-object-marker__text">Locked</span>
+</a>
+<a class="fd-object-marker fd-object-marker--link">
+    <i class="fd-object-marker__icon sap-icon--user-edit" role="presentation"></i>
+    <span class="fd-object-marker__text">Unsaved Changes</span>
+</a>
 
 <div dir="rtl">
-<h4>RTL Support</h4>
-<a class="fd-object-marker fd-object-marker--link"><i class="sap-icon--private fd-object-marker__icon"></i>Locked</a>
-<a class="fd-object-marker fd-object-marker--link"><i class="sap-icon--user-edit fd-object-marker__icon"></i>Unsaved Changes</a>
+    <h4>RTL Support</h4>
+    <a class="fd-object-marker fd-object-marker--link">
+        <i class="fd-object-marker__icon sap-icon--private" role="presentation"></i>
+        <span class="fd-object-marker__text">Locked</span>
+    </a>
+    <a class="fd-object-marker fd-object-marker--link">
+        <i class="fd-object-marker__icon sap-icon--user-edit" role="presentation"></i>
+        <span class="fd-object-marker__text">Unsaved Changes</span>
+    </a>
 </div>
 `;
 clickableObjectMarker.parameters = {

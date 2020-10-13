@@ -137,10 +137,7 @@ $title-toolbar-height: 2.75rem;
 
     width: 0.0625rem;
     height: $toolbar-separator-height-compact;
-    // missing color
-    // background-color: var(@sapUiToolbarSeparatorColor);
-
-    background-color: var(--sapGroup_TitleBorderColor);
+    background-color: var(--sapToolbar_SeparatorColor);
   }
 
   &__overflow {
@@ -166,8 +163,7 @@ $title-toolbar-height: 2.75rem;
           height: 0.0625rem;
           margin: 0.375rem 0.1875rem;
           width: auto;
-          // background-color: var(@sapUiToolbarSeparatorColor);
-          background-color: var(--sapGroup_TitleBorderColor);
+          background-color: var(--sapToolbar_SeparatorColor);
         }
 
         .#{$block}__overflow__label {

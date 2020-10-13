@@ -1,514 +1,345 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Object Status Clickable Object Status 1`] = `
-<section>
-  
-
-  <a
-    class="fd-object-status fd-object-status--link"
-    href="#"
-  >
-    Neutral
-  </a>
-  
-
-  <a
-    class="fd-object-status fd-object-status--negative fd-object-status--link"
-    href="#"
-  >
-    Negative
-  </a>
-  
-
-  <a
-    class="fd-object-status fd-object-status--positive fd-object-status--link"
-    href="#"
-  >
-    Positive
-  </a>
-  
-
-  <span
-    class="fd-object-status fd-object-status--critical fd-object-status--link sap-icon--status-critical"
-    role="button"
-  >
-    Critical
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--informative fd-object-status--link sap-icon--hint"
-    role="button"
-  >
-    Informative
-  </span>
-  
 
 
-  <br />
-  <br />
-  
-
-
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--indication-1"
-    href="#"
-  >
-    Dark Red
-  </a>
-  
-
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--indication-2"
-    href="#"
-  >
-    Red
-  </a>
-  
-
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--indication-3"
-    href="#"
-  >
-    Yellow
-  </a>
-  
-
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--indication-4"
-    href="#"
-  >
-    Green
-  </a>
-  
-
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--indication-5"
-    href="#"
-  >
-    Blue
-  </a>
-  
-
-  <span
-    class="fd-object-status fd-object-status--link fd-object-status--indication-6"
-    role="button"
-  >
-    Teal
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--link fd-object-status--indication-7"
-    role="button"
-  >
-    Purple
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--link fd-object-status--indication-8"
-    role="button"
-  >
-    Pink
-  </span>
-  
-
-</section>
 `;
 
 exports[`Storyshots Components/Object Status Generic Indication Colors 1`] = `
-<section>
-  
 
-  <span
-    class="fd-object-status fd-object-status--indication-1"
-  >
-    Dark Red
-  </span>
-  
 
-  <span
-    class="fd-object-status fd-object-status--indication-2"
-  >
-    Red
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--indication-3"
-  >
-    Yellow
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--indication-4"
-  >
-    Green
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--indication-5"
-  >
-    Blue
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--indication-6"
-  >
-    Teal
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--indication-7"
-  >
-    Purple
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--indication-8"
-  >
-    Pink
-  </span>
-  
-
-</section>
 `;
 
 exports[`Storyshots Components/Object Status Icon 1`] = `
-<section>
-  
 
-  <span
-    class="fd-object-status fd-object-status--negative sap-icon--status-negative"
-  />
-  
 
-  <span
-    class="fd-object-status fd-object-status--critical sap-icon--status-critical"
-  />
-  
-
-  <span
-    class="fd-object-status fd-object-status--positive sap-icon--status-positive"
-  />
-  
-
-  <span
-    class="fd-object-status fd-object-status--informative sap-icon--hint"
-  />
-  
-
-  <span
-    class="fd-object-status sap-icon--to-be-reviewed"
-  />
-  
-
-</section>
 `;
 
 exports[`Storyshots Components/Object Status Icon And Text 1`] = `
-<section>
-  
 
-  <span
-    class="fd-object-status fd-object-status--negative sap-icon--status-negative"
-  >
-    Negative
-  </span>
-  
 
-  <span
-    class="fd-object-status fd-object-status--critical sap-icon--status-critical"
-  >
-    Critical
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--positive sap-icon--status-positive"
-  >
-    Positive
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--informative sap-icon--hint"
-  >
-    Informative
-  </span>
-  
-
-  <span
-    class="fd-object-status sap-icon--to-be-reviewed"
-  >
-    Neutral
-  </span>
-  
-
-</section>
 `;
 
 exports[`Storyshots Components/Object Status Inverted 1`] = `
 <section>
   
 
-  <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--negative"
+  <div
+    class="fddocs-container"
   >
-    Inverted Negative
-  </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--negative fd-object-status--inverted"
+    >
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Inverted Negative
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--critical fd-object-status--inverted"
+    >
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Inverted Warning
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--positive fd-object-status--inverted"
+    >
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Inverted Success
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--informative fd-object-status--inverted"
+    >
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Inverted informative
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted"
+    >
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Inverted Neutral
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--negative"
+    >
+      
+        
+      <i
+        class="fd-object-status__icon sap-icon--status-negative"
+        role="presentation"
+      />
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--negative"
+    >
+      
+        
+      <i
+        class="fd-object-status__icon sap-icon--status-negative"
+        role="presentation"
+      />
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Negative
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--critical"
+    >
+      
+        
+      <i
+        class="fd-object-status__icon sap-icon--status-critical"
+        role="presentation"
+      />
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Critical
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--positive"
+    >
+      
+        
+      <i
+        class="fd-object-status__icon sap-icon--status-positive"
+        role="presentation"
+      />
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Positive
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--informative"
+    >
+      
+        
+      <i
+        class="fd-object-status__icon sap-icon--hint"
+        role="presentation"
+      />
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Informative
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted"
+    >
+      
+        
+      <i
+        class="fd-object-status__icon sap-icon--to-be-reviewed"
+        role="presentation"
+      />
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Neutral
+      </span>
+      
+    
+    </span>
+    
+
+  </div>
   
 
-  <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--critical"
-  >
-    Inverted Warning
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--positive"
-  >
-    Inverted Success
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--informative"
-  >
-    Inverted informative
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--positive"
-  >
-    3
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--informative"
-  >
-    2.99
-  </span>
-  
-
-
-  <br />
-  <br />
-  
-
-
-  <span
-    class="fd-object-status fd-object-status--inverted"
-  >
-    Inverted Neutral
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"
-  />
-  
-
-  <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"
-  >
-    Negative
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--critical sap-icon--status-critical"
-  >
-    Critical
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--positive sap-icon--status-positive"
-  >
-    Positive
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--informative sap-icon--hint"
-  >
-    Informative
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--inverted sap-icon--to-be-reviewed"
-  >
-    Neutral
-  </span>
-  
-
-
-  <br />
-  
-
-  <br />
-  
-
+    
   <h4>
     Clickable Inverted Object Status
   </h4>
   
 
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"
-  >
-    Negative
-  </a>
-  
-
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--critical sap-icon--status-critical"
-  >
-    Critical
-  </a>
-  
-
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--positive sap-icon--status-positive"
-  >
-    Positive
-  </a>
-  
-
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--informative sap-icon--hint"
-  >
-    Informative
-  </a>
-  
-
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted sap-icon--to-be-reviewed"
-  >
-    Neutral
-  </a>
-  
-
-
-  <br />
-  <br />
-  
-
-
   <div
-    dir="rtl"
+    class="fddocs-container"
   >
     
-
-    <h4>
-      RTL Support
-    </h4>
     
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--negative"
+    <a
+      class="fd-object-status fd-object-status--link fd-object-status--negative fd-object-status--inverted"
     >
-      Inverted Negative
-    </span>
+      
+        
+      <i
+        class="fd-object-status__icon sap-icon--status-negative"
+        role="presentation"
+      />
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Inverted Negative
+      </span>
+      
     
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--critical"
+    </a>
+    
+    
+    <a
+      class="fd-object-status fd-object-status--link fd-object-status--critical fd-object-status--inverted"
     >
-      Inverted Warning
-    </span>
+      
+        
+      <i
+        class="fd-object-status__icon sap-icon--status-critical"
+        role="presentation"
+      />
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Inverted Warning
+      </span>
+      
     
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--positive"
+    </a>
+    
+    
+    <a
+      class="fd-object-status fd-object-status--link fd-object-status--positive fd-object-status--inverted"
     >
-      Inverted Success
-    </span>
+      
+        
+      <i
+        class="fd-object-status__icon sap-icon--status-positive"
+        role="presentation"
+      />
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Inverted Success
+      </span>
+      
     
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--informative"
+    </a>
+    
+    
+    <a
+      class="fd-object-status fd-object-status--link fd-object-status--informative fd-object-status--inverted"
     >
-      Inverted informative
-    </span>
+      
+        
+      <i
+        class="fd-object-status__icon sap-icon--hint"
+        role="presentation"
+      />
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Inverted informative
+      </span>
+      
     
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--positive"
+    </a>
+    
+    
+    <a
+      class="fd-object-status fd-object-status--link fd-object-status--inverted"
     >
-      3
-    </span>
+      
+        
+      <i
+        class="fd-object-status__icon sap-icon--to-be-reviewed"
+        role="presentation"
+      />
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Inverted Neutral
+      </span>
+      
     
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--informative"
-    >
-      2.99
-    </span>
-    
-
-
-    <br />
-    <br />
-    
-
-
-    <span
-      class="fd-object-status fd-object-status--inverted"
-    >
-      Inverted Neutral
-    </span>
-    
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"
-    />
-    
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--negative sap-icon--status-negative"
-    >
-      Negative
-    </span>
-    
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--critical sap-icon--status-critical"
-    >
-      Critical
-    </span>
-    
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--positive sap-icon--status-positive"
-    >
-      Positive
-    </span>
-    
-
-    <span
-      class="fd-object-status fd-object-status--inverted fd-object-status--informative sap-icon--hint"
-    >
-      Informative
-    </span>
-    
-
-    <span
-      class="fd-object-status fd-object-status--inverted sap-icon--to-be-reviewed"
-    >
-      Neutral
-    </span>
+    </a>
     
 
   </div>
@@ -521,67 +352,132 @@ exports[`Storyshots Components/Object Status Inverted Indication 1`] = `
 <section>
   
 
-  <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--indication-1"
+  <div
+    class="fddocs-container"
   >
-    Indication1
-  </span>
-  
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--indication-1"
+    >
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Indication1
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--indication-2"
+    >
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Indication2
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--indication-3"
+    >
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Indication3
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--indication-4"
+    >
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Indication4
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--indication-5"
+    >
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Indication5
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--indication-6"
+    >
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Indication6
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--indication-7"
+    >
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Indication7
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--indication-8"
+    >
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Indication8
+      </span>
+      
+    
+    </span>
+    
 
-  <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--indication-2"
-  >
-    Indication2
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--indication-3"
-  >
-    Indication3
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--indication-4"
-  >
-    Indication4
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--indication-5"
-  >
-    Indication5
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--indication-6"
-  >
-    Indication6
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--indication-7"
-  >
-    Indication7
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--inverted fd-object-status--indication-8"
-  >
-    Indication8
-  </span>
-  
-
-
-  <br />
-  
-
-  <br />
+  </div>
   
 
 
@@ -590,153 +486,148 @@ exports[`Storyshots Components/Object Status Inverted Indication 1`] = `
   </h4>
   
 
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-1"
-    href="#"
+  <div
+    class="fddocs-container"
   >
-    Indication1
-  </a>
-  
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1"
+    >
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Indication1
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-2"
+    >
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Indication2
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-3"
+    >
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Indication3
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-4"
+    >
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Indication4
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-5"
+    >
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Indication5
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-6"
+    >
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Indication6
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-7"
+    >
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Indication7
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8"
+    >
+      
+        
+      <span
+        class="fd-object-status__text"
+      >
+        Indication8
+      </span>
+      
+    
+    </span>
+    
 
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-2"
-    href="#"
-  >
-    Indication2
-  </a>
-  
-
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-3"
-    href="#"
-  >
-    Indication3
-  </a>
-  
-
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-4"
-    href="#"
-  >
-    Indication4
-  </a>
-  
-
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-5"
-    href="#"
-  >
-    Indication5
-  </a>
-  
-
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-6"
-    href="#"
-  >
-    Indication6
-  </a>
-  
-
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-7"
-    href="#"
-  >
-    Indication7
-  </a>
-  
-
-  <a
-    class="fd-object-status fd-object-status--link fd-object-status--inverted fd-object-status--indication-8"
-    href="#"
-  >
-    Indication8
-  </a>
+  </div>
   
 
 </section>
+`;
+
+exports[`Storyshots Components/Object Status Large Object Status 1`] = `
+
+
 `;
 
 exports[`Storyshots Components/Object Status Primary 1`] = `
-<section>
-  
 
-  <span
-    class="fd-object-status fd-object-status--negative sap-icon--status-negative"
-  >
-    Negative
-  </span>
-  
 
-  <span
-    class="fd-object-status fd-object-status--critical sap-icon--status-critical"
-  >
-    Critical
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--positive sap-icon--status-positive"
-  >
-    Positive
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--informative sap-icon--hint"
-  >
-    Info
-  </span>
-  
-
-  <span
-    class="fd-object-status sap-icon--to-be-reviewed"
-  >
-    Neutral
-  </span>
-  
-
-</section>
 `;
 
 exports[`Storyshots Components/Object Status Text 1`] = `
-<section>
-  
 
-  <span
-    class="fd-object-status fd-object-status--negative"
-  >
-    Negative
-  </span>
-  
 
-  <span
-    class="fd-object-status fd-object-status--critical"
-  >
-    Critical
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--positive"
-  >
-    Positive
-  </span>
-  
-
-  <span
-    class="fd-object-status fd-object-status--informative"
-  >
-    Informative
-  </span>
-  
-
-  <span
-    class="fd-object-status"
-  >
-    Neutral
-  </span>
-  
-
-</section>
 `;

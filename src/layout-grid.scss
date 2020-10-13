@@ -13,6 +13,12 @@ $l: 1024;
 $xl: 1440;
 $cols: 12;
 
+@mixin full {
+  min-width: ( ( 1 / 12 ) *100%);
+  max-width: none;
+  flex: 1;
+}
+
 .#{$blockContainer} {
   @include fd-reset();
 
@@ -72,6 +78,10 @@ $cols: 12;
   padding: 0.5rem 0.25rem 0 0.25rem;
   min-width: 100%;
   max-width: 100%;
+
+  &--full {
+    @include full();
+  }
 
   @for $n from 0 through $cols {
     &--#{$n} {
@@ -144,6 +154,10 @@ $cols: 12;
   .#{$block} {
     padding: 1rem 0.5rem 0 0.5rem;
 
+    &--full {
+      @include full();
+    }
+
     @for $n from 0 through $cols {
       &-#{map-get($size,$m)}--#{$n} {
         min-width: ( ( $n / $cols ) *100%);
@@ -178,6 +192,10 @@ $cols: 12;
 
 @media (min-width: 1024px) {
   .#{$block} {
+    &--full {
+      @include full();
+    }
+
     @for $n from 0 through $cols {
       &-#{map-get($size,$l)}--#{$n} {
         min-width: ( ( $n / $cols ) *100%);
@@ -207,6 +225,10 @@ $cols: 12;
 
 @media (min-width: 1440px) {
   .#{$block} {
+    &--full {
+      @include full();
+    }
+
     @for $n from 0 through 12 {
       &-#{map-get($size,$xl)}--#{$n} {
         min-width: ( ( $n / $cols ) *100%);

@@ -1,10 +1,3 @@
-import '../../dist/button.css';
-import '../../dist/button-split.css';
-import '../../dist/icon.css';
-import '../../dist/menu.css';
-import '../../dist/popover.css';
-import '../../dist/segmented-button.css';
-
 export default {
     title: 'Components/Button',
     parameters: {
@@ -25,7 +18,8 @@ export default {
 **Do not use buttons if:**
 
 - You want to link to a different page or object. Instead, use the **Link** component.
-`
+`,
+        components: ['popover', 'segmented-button', 'menu', 'icon', 'button-split', 'button']
     }
 };
 

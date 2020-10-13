@@ -1,10 +1,3 @@
-import '../../dist/avatar.css';
-import '../../dist/button.css';
-import '../../dist/icon.css';
-import '../../dist/menu.css';
-import '../../dist/popover.css';
-import '../../dist/segmented-button.css';
-
 export default {
     title: 'Components/Popover',
     parameters: {
@@ -16,7 +9,8 @@ Commonly used as the interaction/wrapping component when composing "dropdowns", 
 As a general rule, it is suggested that one popover be revealed on the page at any given time.
 Opening one popover should close all others to prevent multiple layers and collisions of several popovers.`,
         docs: { iframeHeight: 350 },
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['avatar', 'button', 'icon', 'menu', 'popover', 'segmented-button']
     }
 };
 

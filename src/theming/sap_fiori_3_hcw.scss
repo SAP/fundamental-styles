@@ -1,3 +1,34 @@
 :root {
-  --sapInverted_Object_Border_Width: 0.0625rem;
+  --fdInverted_Object_Border_Width: 0.0625rem;
+  --fdOverlay_Background_Opacity: 0.8;
+
+  /* Rating Indicator */
+  // default mode
+  --fdRating_Indicator_Selected_Hover_Opacity: 1;
+  // Display Only mode
+  --fdRating_Indicator_Display_Only_Selected_Color: var(--sapContent_IconColor);
+  // Disabled mode
+  --fdRating_Indicator_Disabled_Selected_Color: var(--sapContent_RatedColor);
+  --fdRating_Indicator_Disabled_Unselected_Color: var(--sapContent_UnratedColor);
+  --fdRating_Indicator_Disabled_Control_Opacity: 0.4;
+
+  /* Wizard */
+  --fdWizard_Completed_Step_Color: var(--sapTextColor);
+  --fdWizard_Completed_Step_Icon_Color: var(--sapTextColor);
+  --fdWizard_Completed_Step_Border: 0.0625rem solid var(--sapObjectHeader_BorderColor);
+  --fdWizard_Current_Step_Color: var(--sapTextColor);
+  --fdWizard_Current_Step_Icon_Color: var(--sapTextColor);
+  --fdWizard_Upcoming_Step_Color: var(--sapTextColor);
+  --fdWizard_Upcoming_Step_Icon_Color: var(--sapTextColor);
+  --fdWizard_Upcoming_Step_Border: 0.0625rem solid var(--sapList_BorderColor);
+  --fdWizard_Active_Step_Color: var(--sapTextColor);
+  --fdWizard_Active_Step_Icon_Color: var(--sapTextColor);
+  --fdWizard_Active_Step_Border_Color: var(--sapObjectHeader_BorderColor);
+  --fdWizard_Connector_Active_Border_Color: var(--sapList_SelectionBorderColor);
+  --fdWizard_Content_Default_Background: var(--sapBackgroundColor);
+  --fdWizard_Content_Solid_Background: var(--sapBackgroundColor);
+  --fdWizard_Content_List_Background: var(--sapBackgroundColor);
+  --fdWizard_Content_Transparent_Background: var(--sapBackgroundColor);
+  --fdWizard_Selection_Bar_Height: 0.313rem;
+  --fdWizard_Selection_Bar_Background: var(--sapList_SelectionBorderColor);
 }

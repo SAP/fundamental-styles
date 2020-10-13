@@ -1,18 +1,10 @@
-import '../../dist/icon.css';
-import '../../dist/popover.css';
-import '../../dist/list.css';
-import '../../dist/form-label.css';
-import '../../dist/form-message.css';
-import '../../dist/select.css';
-import '../../dist/dialog.css';
-import '../../dist/bar.css';
-
 export default {
     title: 'Components/Select',
     parameters: {
         description: `The **Select** component is commonly used to enable users to select an item from a predefined list.
       It should be used when there are less than 12 items to choose from. 
-      For lists that require more than 12 options, the Combobox Input should be used.`
+      For lists that require more than 12 options, the Combobox Input should be used.`,
+        components: ['icon', 'popover', 'list', 'form-label', 'form-message', 'select', 'dialog', 'bar']
     }
 };
 
@@ -197,7 +189,7 @@ export const twoColumn = () => `
         <div class="fd-select">
             <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="a34FL7NC" onclick="onControlClick('h0C62325');" aria-expanded="false" aria-haspopup="listbox">
                 <span class="fd-select__text-content">Select Product</span>
-                <span class="fd-button fd-button--transparent">
+                <span class="fd-button fd-button--transparent fd-select__button">
                     <i class="sap-icon--slim-arrow-down"></i>
                 </span>
             </div>
@@ -281,24 +273,24 @@ export const twoColumnsAndIcons = () => `
     <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h090G325">
         <ul tabIndex="-1" aria-labelledby="g45564A50" class="fd-list fd-list--dropdown" role="listbox" id="s45GH6Y7">
             <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
-            <span class="fd-list__icon sap-icon--marketing-campaign"></span>
-            <span class="fd-list__title">Marketing</span>
-            <span class="fd-list__secondary">1000 EUR</span>
+                <i role="presentation" class="fd-list__icon sap-icon--marketing-campaign"></i>
+                <span class="fd-list__title">Marketing</span>
+                <span class="fd-list__secondary">1000 EUR</span>
             </li>
             <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__icon sap-icon--save"></span>
-            <span class="fd-list__title">Backups</span>
-            <span class="fd-list__secondary">500 EUR</span>
-        </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__icon sap-icon--shipping-status"></span>
-            <span class="fd-list__title">Shipping</span>
-            <span class="fd-list__secondary">125 EUR</span>
+                <i role="presentation" class="fd-list__icon sap-icon--save"></i>
+                <span class="fd-list__title">Backups</span>
+                <span class="fd-list__secondary">500 EUR</span>
             </li>
             <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__icon sap-icon--headset"></span>
-            <span class="fd-list__title">Consulting</span>
-            <span class="fd-list__secondary">200 EUR</span>
+                <i role="presentation" class="fd-list__icon sap-icon--shipping-status"></i>
+                <span class="fd-list__title">Shipping</span>
+                <span class="fd-list__secondary">125 EUR</span>
+            </li>
+            <li class="fd-list__item" role="option" tabindex="-1">
+                <i role="presentation" class="fd-list__icon sap-icon--headset"></i>
+                <span class="fd-list__title">Consulting</span>
+                <span class="fd-list__secondary">200 EUR</span>
             </li>
         </ul>
     </div>

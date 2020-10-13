@@ -1,9 +1,3 @@
-import '../../dist/form-message.css';
-import '../../dist/form-item.css';
-import '../../dist/form-label.css';
-import '../../dist/input.css';
-import '../../dist/popover.css';
-
 export default {
     title: 'Components/Forms/Form Message',
     parameters: {
@@ -20,7 +14,8 @@ The state of the input field can reflect the validity of the data entered, wheth
 * **Read Only**: Used to display static information in the context of a form.
 
 Along with Error and Warning, error messages should be displayed below the field so the user can correct the error and move forward.`,
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['form-message', 'form-item', 'form-label', 'input', 'popover']
     }
 };
 
@@ -28,7 +23,8 @@ export const success = () => `
     <div class="fd-form-item">
         <label class="fd-form-label" for="input-1bb">Success input:</label>
         <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
-            <div class="fd-popover__control" aria-controls="popoverB2" aria-expanded="false" aria-haspopup="true">
+            <div class="fd-popover__control" aria-controls="popoverB2" aria-expanded="false" aria-haspopup="true"
+                 onfocusin="onPopoverClick('popoverB2')" onfocusout="onPopoverClick('popoverB2')">
                 <input class="fd-input is-success" type="text" id="input-1bb" placeholder="Field placeholder text" aria-label="Image label">
             </div>
             <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB2">
@@ -42,7 +38,8 @@ export const error = () => `
     <div class="fd-form-item">
         <label class="fd-form-label" for="input-1cc">Error input:</label>
         <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
-            <div class="fd-popover__control" aria-controls="popoverB3" aria-expanded="false" aria-haspopup="true">
+            <div class="fd-popover__control" aria-controls="popoverB3" aria-expanded="false" aria-haspopup="true"
+                 onfocusin="onPopoverClick('popoverB3')" onfocusout="onPopoverClick('popoverB3')">
                 <input class="fd-input is-error" type="text" id="input-1cc" placeholder="Field placeholder text" aria-label="Image label">
             </div>
             <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB3">
@@ -56,10 +53,11 @@ export const warning = () => `
     <div class="fd-form-item">
         <label class="fd-form-label" for="input-1cc">Warning input:</label>
         <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
-            <div class="fd-popover__control" aria-controls="popoverB3" aria-expanded="false" aria-haspopup="true">
+            <div class="fd-popover__control" aria-controls="popoverB4" aria-expanded="false" aria-haspopup="true"
+                 onfocusin="onPopoverClick('popoverB4')" onfocusout="onPopoverClick('popoverB4')">
                 <input class="fd-input is-warning" type="text" id="input-1cc" placeholder="Field placeholder text" aria-label="Image label">
             </div>
-            <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB3">
+            <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB4">
             <div class="fd-form-message fd-form-message--warning" >Warning message</div>
             </div>
         </div>
@@ -70,7 +68,8 @@ export const information = () => `
     <div class="fd-form-item">
         <label class="fd-form-label" for="input-1ee">Information input:</label>
         <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
-            <div class="fd-popover__control" aria-controls="popoverB5" aria-expanded="false" aria-haspopup="true">
+            <div class="fd-popover__control" aria-controls="popoverB5" aria-expanded="false" aria-haspopup="true"
+                 onfocusin="onPopoverClick('popoverB5')" onfocusout="onPopoverClick('popoverB5')">
                 <input class="fd-input fd-input--compact is-information" type="text" id="input-1ee" placeholder="Field placeholder text" aria-label="Image label">
             </div>
             <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB5">

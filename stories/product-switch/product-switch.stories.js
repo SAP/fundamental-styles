@@ -1,10 +1,9 @@
-import '../../dist/product-switch.css';
-
 export default {
     title: 'Components/Product Switch',
     parameters: {
         description: 'Product Switch provides a role based access to all products or LoBs. It shows only one level of navigation.',
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['product-switch', 'popover', 'button']
     }
 };
 
@@ -25,93 +24,93 @@ export const productSwitchInShellbar = () => `
                 <div class="fd-product-switch__body">
                     <ul class="fd-product-switch__list">
                         <li class="fd-product-switch__item selected" tabindex="0">
-                            <div class="fd-product-switch__icon sap-icon--home"></div>
+                            <i role="presentation" class="fd-product-switch__icon sap-icon--home"></i>
                             <div class="fd-product-switch__text">
                                 <div class="fd-product-switch__title">Home</div>
                                 <div class="fd-product-switch__subtitle">Central Home</div>
                             </div>
                         </li>
                         <li class="fd-product-switch__item" tabindex="0" selected>
-                            <div class="fd-product-switch__icon sap-icon--business-objects-experience"></div>
+                            <i role="presentation" class="fd-product-switch__icon sap-icon--business-objects-experience"></i>
                             <div class="fd-product-switch__text">
                                 <div class="fd-product-switch__title">Analytics Cloud</div>
                                 <div class="fd-product-switch__subtitle">Analytics Cloud</div>
                             </div>
                         </li>
                         <li class="fd-product-switch__item" tabindex="0">
-                            <div class="fd-product-switch__icon sap-icon--contacts"></div>
+                            <i role="presentation" class="fd-product-switch__icon sap-icon--contacts"></i>
                             <div class="fd-product-switch__text">
                                 <div class="fd-product-switch__title">Catalog</div>
                                 <div class="fd-product-switch__subtitle">Ariba</div>
                             </div>
                         </li>
                         <li class="fd-product-switch__item" tabindex="0">
-                            <div class="fd-product-switch__icon sap-icon--credit-card"></div>
+                            <i role="presentation" class="fd-product-switch__icon sap-icon--credit-card"></i>
                             <div class="fd-product-switch__text">
                                 <div class="fd-product-switch__title">Guided Buying</div>
                             </div>
                         </li>
                         <li class="fd-product-switch__item" tabindex="0">
-                            <div class="fd-product-switch__icon sap-icon--cart-3"></div>
+                            <i role="presentation" class="fd-product-switch__icon sap-icon--cart-3"></i>
                             <div class="fd-product-switch__text">
                                 <div class="fd-product-switch__title">Strategic Procurement</div>
                             </div>
                         </li>
                         <li class="fd-product-switch__item" tabindex="0">
-                            <div class="fd-product-switch__icon sap-icon--flight"></div>
+                            <i role="presentation" class="fd-product-switch__icon sap-icon--flight"></i>
                             <div class="fd-product-switch__text">
                                 <div class="fd-product-switch__title">Travel & Expense</div>
                                 <div class="fd-product-switch__subtitle">Concur</div>
                             </div>
                         </li>
                         <li class="fd-product-switch__item" tabindex="0">
-                            <div class="fd-product-switch__icon sap-icon--shipping-status"></div>
+                            <i role="presentation" class="fd-product-switch__icon sap-icon--shipping-status"></i>
                             <div class="fd-product-switch__text">
                                 <div class="fd-product-switch__title">Vendor Management</div>
                                 <div class="fd-product-switch__subtitle">Fieldglass</div>
                             </div>
                         </li>
                         <li class="fd-product-switch__item" tabindex="0">
-                            <div class="fd-product-switch__icon sap-icon--customer"></div>
+                            <i role="presentation" class="fd-product-switch__icon sap-icon--customer"></i>
                             <div class="fd-product-switch__text">
                                 <div class="fd-product-switch__title">Human Capital Management</div>
                             </div>
                         </li>
                         <li class="fd-product-switch__item" tabindex="0">
-                            <div class="fd-product-switch__icon sap-icon--sales-notification"></div>
+                            <i role="presentation" class="fd-product-switch__icon sap-icon--sales-notification"></i>
                             <div class="fd-product-switch__text">
                                 <div class="fd-product-switch__title">Sales Cloud</div>
                                 <div class="fd-product-switch__subtitle">Sales Cloud</div>
                             </div>
                         </li>
                         <li class="fd-product-switch__item" tabindex="0">
-                            <div class="fd-product-switch__icon sap-icon--retail-store"></div>
+                            <i role="presentation" class="fd-product-switch__icon sap-icon--retail-store"></i>
                             <div class="fd-product-switch__text">
                                 <div class="fd-product-switch__title">Commerce Cloud</div>
                                 <div class="fd-product-switch__subtitle">Commerce Cloud</div>
                             </div>
                         </li>
                         <li class="fd-product-switch__item" tabindex="0">
-                            <div class="fd-product-switch__icon sap-icon--marketing-campaign"></div>
+                            <i role="presentation" class="fd-product-switch__icon sap-icon--marketing-campaign"></i>
                             <div class="fd-product-switch__text">
                                 <div class="fd-product-switch__title">Marketing Cloud</div>
                                 <div class="fd-product-switch__subtitle">Marketing Cloud</div>
                             </div>
                         </li>
                         <li class="fd-product-switch__item" tabindex="0">
-                            <div class="fd-product-switch__icon sap-icon--family-care"></div>
+                            <i role="presentation" class="fd-product-switch__icon sap-icon--family-care"></i>
                             <div class="fd-product-switch__text">
                                 <div class="fd-product-switch__title">Service Cloud</div>
                             </div>
                         </li>
                         <li class="fd-product-switch__item" tabindex="0">
-                            <div class="fd-product-switch__icon sap-icon--customer-briefing"></div>
+                            <i role="presentation" class="fd-product-switch__icon sap-icon--customer-briefing"></i>
                             <div class="fd-product-switch__text">
                                 <div class="fd-product-switch__title">Customer Data Cloud</div>
                             </div>
                         </li>
                         <li class="fd-product-switch__item" tabindex="0">
-                            <div class="fd-product-switch__icon sap-icon--batch-payments"></div>
+                            <i role="presentation" class="fd-product-switch__icon sap-icon--batch-payments"></i>
                             <div class="fd-product-switch__text">
                                 <div class="fd-product-switch__title">S/4HANA</div>
                             </div>
@@ -134,93 +133,93 @@ export const productSwitchOnDesktop = () => `
 <div class="fd-product-switch__body">
    <ul class="fd-product-switch__list">
       <li class="fd-product-switch__item" tabindex="0">
-         <div class="fd-product-switch__icon sap-icon--home"></div>
+         <i role="presentation" class="fd-product-switch__icon sap-icon--home"></i>
          <div class="fd-product-switch__text">
             <div class="fd-product-switch__title">Home</div>
             <div class="fd-product-switch__subtitle">Central Home</div>
          </div>
       </li>
       <li class="fd-product-switch__item selected" tabindex="0">
-         <div class="fd-product-switch__icon sap-icon--business-objects-experience"></div>
+         <i role="presentation" class="fd-product-switch__icon sap-icon--business-objects-experience"></i>
          <div class="fd-product-switch__text">
             <div class="fd-product-switch__title">Analytics Cloud Analytics CloudAnalytics CloudAnalytics Cloud</div>
             <div class="fd-product-switch__subtitle">Analytics Cloud</div>
          </div>
       </li>
       <li class="fd-product-switch__item" tabindex="0">
-         <div class="fd-product-switch__icon sap-icon--contacts"></div>
+         <i role="presentation" class="fd-product-switch__icon sap-icon--contacts"></i>
          <div class="fd-product-switch__text">
             <div class="fd-product-switch__title">Catalog</div>
             <div class="fd-product-switch__subtitle">Ariba</div>
          </div>
       </li>
       <li class="fd-product-switch__item" tabindex="0">
-         <div class="fd-product-switch__icon sap-icon--credit-card"></div>
+         <i role="presentation" class="fd-product-switch__icon sap-icon--credit-card"></i>
          <div class="fd-product-switch__text">
             <div class="fd-product-switch__title">Guided Buying</div>
          </div>
       </li>
       <li class="fd-product-switch__item" tabindex="0">
-         <div class="fd-product-switch__icon sap-icon--cart-3"></div>
+         <i role="presentation" class="fd-product-switch__icon sap-icon--cart-3"></i>
          <div class="fd-product-switch__text">
             <div class="fd-product-switch__title">Strategic Procurement</div>
          </div>
       </li>
       <li class="fd-product-switch__item" tabindex="0">
-         <div class="fd-product-switch__icon sap-icon--flight"></div>
+         <i role="presentation" class="fd-product-switch__icon sap-icon--flight"></i>
          <div class="fd-product-switch__text">
             <div class="fd-product-switch__title">Travel & Expense</div>
             <div class="fd-product-switch__subtitle">Concur</div>
          </div>
       </li>
       <li class="fd-product-switch__item" tabindex="0">
-         <div class="fd-product-switch__icon sap-icon--shipping-status"></div>
+         <i role="presentation" class="fd-product-switch__icon sap-icon--shipping-status"></i>
          <div class="fd-product-switch__text">
             <div class="fd-product-switch__title">Vendor Management</div>
             <div class="fd-product-switch__subtitle">Fieldglass</div>
          </div>
       </li>
       <li class="fd-product-switch__item" tabindex="0">
-         <div class="fd-product-switch__icon sap-icon--customer"></div>
+         <i role="presentation" class="fd-product-switch__icon sap-icon--customer"></i>
          <div class="fd-product-switch__text">
             <div class="fd-product-switch__title">Human Capital Management Human Capital Management</div>
          </div>
       </li>
       <li class="fd-product-switch__item" tabindex="0">
-         <div class="fd-product-switch__icon sap-icon--sales-notification"></div>
+         <i role="presentation" class="fd-product-switch__icon sap-icon--sales-notification"></i>
          <div class="fd-product-switch__text">
             <div class="fd-product-switch__title">Sales Cloud</div>
             <div class="fd-product-switch__subtitle">Sales Cloud</div>
          </div>
       </li>
       <li class="fd-product-switch__item" tabindex="0">
-         <div class="fd-product-switch__icon sap-icon--retail-store"></div>
+         <i role="presentation" class="fd-product-switch__icon sap-icon--retail-store"></i>
          <div class="fd-product-switch__text">
             <div class="fd-product-switch__title">Commerce Cloud</div>
             <div class="fd-product-switch__subtitle">Commerce Cloud</div>
          </div>
       </li>
       <li class="fd-product-switch__item" tabindex="0">
-         <div class="fd-product-switch__icon sap-icon--marketing-campaign"></div>
+         <i role="presentation" class="fd-product-switch__icon sap-icon--marketing-campaign"></i>
          <div class="fd-product-switch__text">
             <div class="fd-product-switch__title">Marketing Cloud</div>
             <div class="fd-product-switch__subtitle">Marketing Cloud</div>
          </div>
       </li>
       <li class="fd-product-switch__item" tabindex="0">
-         <div class="fd-product-switch__icon sap-icon--family-care"></div>
+         <i role="presentation" class="fd-product-switch__icon sap-icon--family-care"></i>
          <div class="fd-product-switch__text">
             <div class="fd-product-switch__title">Service Cloud</div>
          </div>
       </li>
       <li class="fd-product-switch__item" tabindex="0">
-         <div class="fd-product-switch__icon sap-icon--customer-briefing"></div>
+         <i role="presentation" class="fd-product-switch__icon sap-icon--customer-briefing"></i>
          <div class="fd-product-switch__text">
             <div class="fd-product-switch__title">Customer Data Cloud</div>
          </div>
       </li>
       <li class="fd-product-switch__item" tabindex="0">
-         <div class="fd-product-switch__icon sap-icon--batch-payments"></div>
+         <i role="presentation" class="fd-product-switch__icon sap-icon--batch-payments"></i>
          <div class="fd-product-switch__text">
             <div class="fd-product-switch__title">S/4HANA</div>
          </div>
@@ -240,34 +239,34 @@ export const productSwitch3ColumnLayout = () => `
 <div class="fd-product-switch__body fd-product-switch__body--col-3">
     <ul class="fd-product-switch__list">
         <li class="fd-product-switch__item" tabindex="0">
-            <div class="fd-product-switch__icon sap-icon--home"></div>
+            <i role="presentation" class="fd-product-switch__icon sap-icon--home"></i>
             <div class="fd-product-switch__text">
                 <div class="fd-product-switch__title">Home</div>
                 <div class="fd-product-switch__subtitle">Central Home</div>
             </div>
         </li>
         <li class="fd-product-switch__item selected" tabindex="0">
-            <div class="fd-product-switch__icon sap-icon--business-objects-experience"></div>
+            <i role="presentation" class="fd-product-switch__icon sap-icon--business-objects-experience"></i>
             <div class="fd-product-switch__text">
                 <div class="fd-product-switch__title">Analytics Cloud</div>
                 <div class="fd-product-switch__subtitle">Analytics Cloud</div>
             </div>
         </li>
         <li class="fd-product-switch__item" tabindex="0">
-            <div class="fd-product-switch__icon sap-icon--contacts"></div>
+            <i role="presentation" class="fd-product-switch__icon sap-icon--contacts"></i>
             <div class="fd-product-switch__text">
                 <div class="fd-product-switch__title">Catalog</div>
                 <div class="fd-product-switch__subtitle">Ariba</div>
             </div>
         </li>
         <li class="fd-product-switch__item" tabindex="0">
-            <div class="fd-product-switch__icon sap-icon--credit-card"></div>
+            <i role="presentation" class="fd-product-switch__icon sap-icon--credit-card"></i>
             <div class="fd-product-switch__text">
                 <div class="fd-product-switch__title">Guided Buying</div>
             </div>
         </li>
         <li class="fd-product-switch__item" tabindex="0">
-            <div class="fd-product-switch__icon sap-icon--cart-3"></div>
+            <i role="presentation" class="fd-product-switch__icon sap-icon--cart-3"></i>
             <div class="fd-product-switch__text">
                 <div class="fd-product-switch__title">Strategic Procurement</div>
             </div>
@@ -291,93 +290,93 @@ export const smallestScreen = () => `
     <div class="fd-product-switch__body fd-product-switch__body--mobile">
         <ul class="fd-product-switch__list">
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--home"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--home"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">Home</div>
                     <div class="fd-product-switch__subtitle">Central Home</div>
                 </div>
             </li>
             <li class="fd-product-switch__item selected" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--business-objects-experience"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--business-objects-experience"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">Analytics Cloud Analytics CloudAnalytics CloudAnalytics Cloud</div>
                     <div class="fd-product-switch__subtitle">Analytics Cloud</div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--contacts"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--contacts"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">Catalog</div>
                     <div class="fd-product-switch__subtitle">Ariba</div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--credit-card"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--credit-card"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">Guided Buying</div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--cart-3"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--cart-3"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">Strategic Procurement</div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--flight"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--flight"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">Travel & Expense</div>
                     <div class="fd-product-switch__subtitle">Concur</div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--shipping-status"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--shipping-status"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">Vendor Management</div>
                     <div class="fd-product-switch__subtitle">Fieldglass</div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--customer"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--customer"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">Human Capital Management Human Capital Management Human Capital Management Human Capital Management Management</div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--sales-notification"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--sales-notification"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">Sales Cloud</div>
                     <div class="fd-product-switch__subtitle">Sales Cloud</div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--retail-store"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--retail-store"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">Commerce Cloud</div>
                     <div class="fd-product-switch__subtitle">Commerce Cloud</div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--marketing-campaign"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--marketing-campaign"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">Marketing Cloud</div>
                     <div class="fd-product-switch__subtitle">Marketing Cloud</div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--family-care"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--family-care"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">Service Cloud</div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--customer-briefing"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--customer-briefing"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">Customer Data Cloud</div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--batch-payments"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--batch-payments"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">S/4HANA</div>
                 </div>
@@ -400,93 +399,93 @@ export const rtl = () => `
     <div class="fd-product-switch__body fd-product-switch__body--mobile">
         <ul class="fd-product-switch__list">
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--home"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--home"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين</div>
                     <div class="fd-product-switch__subtitle">Central Home</div>
                 </div>
             </li>
             <li class="fd-product-switch__item selected" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--business-objects-experience"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--business-objects-experience"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذينحقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين</div>
                     <div class="fd-product-switch__subtitle">ة، ولكن بفضل هؤلاء الأشخاص الذينحقيقة وأساس ت</div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--contacts"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--contacts"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">ة، ولكن بفضل هؤلاء الأشخاص الذينحقيقة وأساس ت</div>
                     <div class="fd-product-switch__subtitle">ة، ولكن بفضل هؤلاء الأشخاص الذينحقيقة وأساس ت</div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--credit-card"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--credit-card"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">ة، ولكن بفضل هؤلاء الأشخاص الذينحقيقة وأساس ت</div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--cart-3"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--cart-3"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">ة، ولكن بفضل هؤلاء الأشخاص الذينحقيقة وأساس ت</div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--flight"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--flight"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">ة، ولكن بفضل هؤلاء الأشخاص الذينحقيقة وأساس ت</div>
                     <div class="fd-product-switch__subtitle">ة، ولكن بفضل ساس ت</div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--shipping-status"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--shipping-status"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">لكن بفضل لكن بفضل </div>
                     <div class="fd-product-switch__subtitle">لكن بفضل </div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--customer"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--customer"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">لكن بفضل لكن بفضل لكن بفضل </div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--sales-notification"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--sales-notification"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">لكن ب</div>
                     <div class="fd-product-switch__subtitle">لكن </div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--retail-store"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--retail-store"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">لكن بفضل لكن بفضل </div>
                     <div class="fd-product-switch__subtitle">لكنضل </div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--marketing-campaign"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--marketing-campaign"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">لكن بفضل </div>
                     <div class="fd-product-switch__subtitle">لكن بفضل </div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--family-care"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--family-care"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">لكن بفضل لكن بفضل لكن بفضل </div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--customer-briefing"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--customer-briefing"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">لكن بفضل لكن بفضل لكن بفضل لكن بفضل لكن بفضل </div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
-                <div class="fd-product-switch__icon sap-icon--batch-payments"></div>
+                <i role="presentation" class="fd-product-switch__icon sap-icon--batch-payments"></i>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">لكن بفضل لكن بفضل لكن بفضل </div>
                 </div>

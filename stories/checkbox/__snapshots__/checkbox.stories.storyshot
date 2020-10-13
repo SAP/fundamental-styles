@@ -1,27 +1,485 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Forms/Checkbox Checkboxes in RTL Mode 1`] = `
-
-
-`;
-
-exports[`Storyshots Components/Forms/Checkbox Checkboxes listed inline 1`] = `
-
-
-`;
-
-exports[`Storyshots Components/Forms/Checkbox Interaction States 1`] = `
+exports[`Storyshots Components/Forms/Checkbox Desktop 1`] = `
 <section>
   
 
 
   <style>
     
-    .checkbox-example-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    .checkbox-example-container &gt; fieldset {
+        max-width: 100%;
     }
+
+  </style>
+  
+
+
+  <fieldset
+    class="fd-fieldset"
+  >
+    
+    
+    <legend
+      class="fd-fieldset__legend"
+    >
+      Desktop (compact) checkboxes
+    </legend>
+    
+    
+    <div
+      class="fd-form-group"
+    >
+      
+        
+      <div
+        class="fd-form-item"
+      >
+        
+            
+        <input
+          class="fd-checkbox fd-checkbox--compact"
+          id="Ai4ez611c"
+          type="checkbox"
+        />
+        
+            
+        <label
+          class="fd-checkbox__label fd-checkbox__label--compact"
+          for="Ai4ez611c"
+        >
+          
+                
+          <span
+            class="fd-checkbox__text"
+          >
+            Apple
+          </span>
+          
+            
+        </label>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-form-item"
+      >
+        
+            
+        <input
+          checked=""
+          class="fd-checkbox fd-checkbox--compact"
+          id="Ai4ez612c"
+          type="checkbox"
+        />
+        
+            
+        <label
+          class="fd-checkbox__label fd-checkbox__label--compact"
+          for="Ai4ez612c"
+        >
+          
+                
+          <span
+            class="fd-checkbox__text"
+          >
+            Banana
+          </span>
+          
+            
+        </label>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-form-item"
+      >
+        
+            
+        <input
+          class="fd-checkbox fd-checkbox--compact"
+          disabled=""
+          id="Ai4ez622c"
+          type="checkbox"
+        />
+        
+            
+        <label
+          class="fd-checkbox__label fd-checkbox__label--compact"
+          for="Ai4ez622c"
+        >
+          
+                
+          <span
+            class="fd-checkbox__text"
+          >
+            Kiwi
+          </span>
+          
+            
+        </label>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-form-item"
+      >
+        
+            
+        <input
+          checked=""
+          class="fd-checkbox fd-checkbox--compact"
+          disabled=""
+          id="Ai4ez632c"
+          type="checkbox"
+        />
+        
+            
+        <label
+          class="fd-checkbox__label fd-checkbox__label--compact"
+          for="Ai4ez632c"
+        >
+          
+                
+          <span
+            class="fd-checkbox__text"
+          >
+            Lemon
+          </span>
+          
+            
+        </label>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-form-item"
+      >
+        
+            
+        <input
+          class="fd-checkbox fd-checkbox--compact"
+          id="Ai4ez613c"
+          type="checkbox"
+        />
+        
+            
+        <label
+          class="fd-checkbox__label fd-checkbox__label--compact"
+          for="Ai4ez613c"
+        >
+          
+                
+          <span
+            class="fd-checkbox__text"
+          >
+            All Fruits (TriState)
+          </span>
+          
+            
+        </label>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-form-item"
+      >
+        
+            
+        <input
+          class="fd-checkbox fd-checkbox--compact"
+          disabled=""
+          id="Ai4ez643c"
+          type="checkbox"
+        />
+        
+            
+        <label
+          class="fd-checkbox__label fd-checkbox__label--compact"
+          for="Ai4ez643c"
+        >
+          
+                
+          <span
+            class="fd-checkbox__text"
+          >
+            All Fruits (TriState)
+          </span>
+          
+            
+        </label>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </fieldset>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Forms/Checkbox Inline 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Forms/Checkbox Mobile 1`] = `
+<section>
+  
+
+
+  <style>
+    
+    .checkbox-example-container &gt; fieldset {
+        max-width: 100%;
+    }
+
+  </style>
+  
+
+
+  <fieldset
+    class="fd-fieldset"
+  >
+    
+    
+    <legend
+      class="fd-fieldset__legend"
+    >
+      Mobile checkboxes
+    </legend>
+    
+    
+    <div
+      class="fd-form-group"
+    >
+      
+        
+      <div
+        class="fd-form-item"
+      >
+        
+            
+        <input
+          class="fd-checkbox"
+          id="Ai4ez611"
+          type="checkbox"
+        />
+        
+            
+        <label
+          class="fd-checkbox__label"
+          for="Ai4ez611"
+        >
+          
+                
+          <span
+            class="fd-checkbox__text"
+          >
+            Apple
+          </span>
+          
+            
+        </label>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-form-item"
+      >
+        
+            
+        <input
+          checked=""
+          class="fd-checkbox"
+          id="Ai4ez612"
+          type="checkbox"
+        />
+        
+            
+        <label
+          class="fd-checkbox__label"
+          for="Ai4ez612"
+        >
+          
+                
+          <span
+            class="fd-checkbox__text"
+          >
+            Banana
+          </span>
+          
+            
+        </label>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-form-item"
+      >
+        
+            
+        <input
+          class="fd-checkbox"
+          disabled=""
+          id="Ai4ez622"
+          type="checkbox"
+        />
+        
+            
+        <label
+          class="fd-checkbox__label"
+          for="Ai4ez622"
+        >
+          
+                
+          <span
+            class="fd-checkbox__text"
+          >
+            Kiwi
+          </span>
+          
+            
+        </label>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-form-item"
+      >
+        
+            
+        <input
+          checked=""
+          class="fd-checkbox"
+          disabled=""
+          id="Ai4ez632"
+          type="checkbox"
+        />
+        
+            
+        <label
+          class="fd-checkbox__label"
+          for="Ai4ez632"
+        >
+          
+                
+          <span
+            class="fd-checkbox__text"
+          >
+            Lemon
+          </span>
+          
+            
+        </label>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-form-item"
+      >
+        
+            
+        <input
+          class="fd-checkbox"
+          id="Ai4ez613"
+          type="checkbox"
+        />
+        
+            
+        <label
+          class="fd-checkbox__label"
+          for="Ai4ez613"
+        >
+          
+                
+          <span
+            class="fd-checkbox__text"
+          >
+            All Fruits (TriState)
+          </span>
+          
+            
+        </label>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-form-item"
+      >
+        
+            
+        <input
+          class="fd-checkbox"
+          disabled=""
+          id="Ai4ez643"
+          type="checkbox"
+        />
+        
+            
+        <label
+          class="fd-checkbox__label"
+          for="Ai4ez643"
+        >
+          
+                
+          <span
+            class="fd-checkbox__text"
+          >
+            All Fruits (TriState)
+          </span>
+          
+            
+        </label>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </fieldset>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Forms/Checkbox RTL 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Forms/Checkbox States 1`] = `
+<section>
+  
+
+
+  <style>
     
     .checkbox-example-container &gt; fieldset {
         max-width: 100%;
@@ -44,7 +502,7 @@ exports[`Storyshots Components/Forms/Checkbox Interaction States 1`] = `
       <legend
         class="fd-fieldset__legend"
       >
-        Checkboxes Error
+        Error checkboxes
       </legend>
       
         
@@ -162,7 +620,7 @@ exports[`Storyshots Components/Forms/Checkbox Interaction States 1`] = `
       <legend
         class="fd-fieldset__legend"
       >
-        Checkboxes Success
+        Success checkboxes
       </legend>
       
         
@@ -280,7 +738,7 @@ exports[`Storyshots Components/Forms/Checkbox Interaction States 1`] = `
       <legend
         class="fd-fieldset__legend"
       >
-        Checkboxes Warning
+        Warning checkboxes
       </legend>
       
         
@@ -398,7 +856,7 @@ exports[`Storyshots Components/Forms/Checkbox Interaction States 1`] = `
       <legend
         class="fd-fieldset__legend"
       >
-        Checkboxes Information
+        Information checkboxes
       </legend>
       
         
@@ -516,7 +974,7 @@ exports[`Storyshots Components/Forms/Checkbox Interaction States 1`] = `
       <legend
         class="fd-fieldset__legend"
       >
-        Checkboxes Disabled
+        Disabled checkboxes
       </legend>
       
         
@@ -613,466 +1071,6 @@ exports[`Storyshots Components/Forms/Checkbox Interaction States 1`] = `
               class="fd-checkbox__text"
             >
               TriState Text
-            </span>
-            
-                
-          </label>
-          
-            
-        </div>
-        
-        
-      </div>
-      
-    
-    </fieldset>
-    
-
-  </div>
-  
-
-</section>
-`;
-
-exports[`Storyshots Components/Forms/Checkbox Responsiveness 1`] = `
-<section>
-  
-
-
-  <style>
-    
-    .checkbox-example-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    .checkbox-example-container &gt; fieldset {
-        max-width: 100%;
-    }
-
-  </style>
-  
-
-
-  <div
-    class="checkbox-example-container"
-  >
-    
-    
-    <fieldset
-      class="fd-fieldset"
-    >
-      
-        
-      <legend
-        class="fd-fieldset__legend"
-      >
-        Cozy Checkboxes
-      </legend>
-      
-        
-      <div
-        class="fd-form-group"
-      >
-        
-            
-        <div
-          class="fd-form-item"
-        >
-          
-                
-          <input
-            class="fd-checkbox"
-            id="Ai4ez611"
-            type="checkbox"
-          />
-          
-                
-          <label
-            class="fd-checkbox__label"
-            for="Ai4ez611"
-          >
-            
-                    
-            <span
-              class="fd-checkbox__text"
-            >
-              Apple
-            </span>
-            
-                
-          </label>
-          
-            
-        </div>
-        
-            
-        <div
-          class="fd-form-item"
-        >
-          
-                
-          <input
-            checked=""
-            class="fd-checkbox"
-            id="Ai4ez612"
-            type="checkbox"
-          />
-          
-                
-          <label
-            class="fd-checkbox__label"
-            for="Ai4ez612"
-          >
-            
-                    
-            <span
-              class="fd-checkbox__text"
-            >
-              Banana
-            </span>
-            
-                
-          </label>
-          
-            
-        </div>
-        
-            
-        <div
-          class="fd-form-item"
-        >
-          
-                
-          <input
-            class="fd-checkbox"
-            disabled=""
-            id="Ai4ez622"
-            type="checkbox"
-          />
-          
-                
-          <label
-            class="fd-checkbox__label"
-            for="Ai4ez622"
-          >
-            
-                    
-            <span
-              class="fd-checkbox__text"
-            >
-              Kiwi
-            </span>
-            
-                
-          </label>
-          
-            
-        </div>
-        
-            
-        <div
-          class="fd-form-item"
-        >
-          
-                
-          <input
-            checked=""
-            class="fd-checkbox"
-            disabled=""
-            id="Ai4ez632"
-            type="checkbox"
-          />
-          
-                
-          <label
-            class="fd-checkbox__label"
-            for="Ai4ez632"
-          >
-            
-                    
-            <span
-              class="fd-checkbox__text"
-            >
-              Lemon
-            </span>
-            
-                
-          </label>
-          
-            
-        </div>
-        
-            
-        <div
-          class="fd-form-item"
-        >
-          
-                
-          <input
-            class="fd-checkbox"
-            id="Ai4ez613"
-            type="checkbox"
-          />
-          
-                
-          <label
-            class="fd-checkbox__label"
-            for="Ai4ez613"
-          >
-            
-                    
-            <span
-              class="fd-checkbox__text"
-            >
-              All Fruits (TriState)
-            </span>
-            
-                
-          </label>
-          
-            
-        </div>
-        
-            
-        <div
-          class="fd-form-item"
-        >
-          
-                
-          <input
-            class="fd-checkbox"
-            disabled=""
-            id="Ai4ez643"
-            type="checkbox"
-          />
-          
-                
-          <label
-            class="fd-checkbox__label"
-            for="Ai4ez643"
-          >
-            
-                    
-            <span
-              class="fd-checkbox__text"
-            >
-              All Fruits (TriState)
-            </span>
-            
-                
-          </label>
-          
-            
-        </div>
-        
-        
-      </div>
-      
-    
-    </fieldset>
-    
-    
-    <fieldset
-      class="fd-fieldset"
-    >
-      
-        
-      <legend
-        class="fd-fieldset__legend"
-      >
-        Compact Checkboxes
-      </legend>
-      
-        
-      <div
-        class="fd-form-group"
-      >
-        
-            
-        <div
-          class="fd-form-item"
-        >
-          
-                
-          <input
-            class="fd-checkbox fd-checkbox--compact"
-            id="Ai4ez611c"
-            type="checkbox"
-          />
-          
-                
-          <label
-            class="fd-checkbox__label fd-checkbox__label--compact"
-            for="Ai4ez611c"
-          >
-            
-                    
-            <span
-              class="fd-checkbox__text"
-            >
-              Apple
-            </span>
-            
-                
-          </label>
-          
-            
-        </div>
-        
-            
-        <div
-          class="fd-form-item"
-        >
-          
-                
-          <input
-            checked=""
-            class="fd-checkbox fd-checkbox--compact"
-            id="Ai4ez612c"
-            type="checkbox"
-          />
-          
-                
-          <label
-            class="fd-checkbox__label fd-checkbox__label--compact"
-            for="Ai4ez612c"
-          >
-            
-                    
-            <span
-              class="fd-checkbox__text"
-            >
-              Banana
-            </span>
-            
-                
-          </label>
-          
-            
-        </div>
-        
-            
-        <div
-          class="fd-form-item"
-        >
-          
-                
-          <input
-            class="fd-checkbox fd-checkbox--compact"
-            disabled=""
-            id="Ai4ez622c"
-            type="checkbox"
-          />
-          
-                
-          <label
-            class="fd-checkbox__label fd-checkbox__label--compact"
-            for="Ai4ez622c"
-          >
-            
-                    
-            <span
-              class="fd-checkbox__text"
-            >
-              Kiwi
-            </span>
-            
-                
-          </label>
-          
-            
-        </div>
-        
-            
-        <div
-          class="fd-form-item"
-        >
-          
-                
-          <input
-            checked=""
-            class="fd-checkbox fd-checkbox--compact"
-            disabled=""
-            id="Ai4ez632c"
-            type="checkbox"
-          />
-          
-                
-          <label
-            class="fd-checkbox__label fd-checkbox__label--compact"
-            for="Ai4ez632c"
-          >
-            
-                    
-            <span
-              class="fd-checkbox__text"
-            >
-              Lemon
-            </span>
-            
-                
-          </label>
-          
-            
-        </div>
-        
-            
-        <div
-          class="fd-form-item"
-        >
-          
-                
-          <input
-            class="fd-checkbox fd-checkbox--compact"
-            id="Ai4ez613c"
-            type="checkbox"
-          />
-          
-                
-          <label
-            class="fd-checkbox__label fd-checkbox__label--compact"
-            for="Ai4ez613c"
-          >
-            
-                    
-            <span
-              class="fd-checkbox__text"
-            >
-              All Fruits (TriState)
-            </span>
-            
-                
-          </label>
-          
-            
-        </div>
-        
-            
-        <div
-          class="fd-form-item"
-        >
-          
-                
-          <input
-            class="fd-checkbox fd-checkbox--compact"
-            disabled=""
-            id="Ai4ez643c"
-            type="checkbox"
-          />
-          
-                
-          <label
-            class="fd-checkbox__label fd-checkbox__label--compact"
-            for="Ai4ez643c"
-          >
-            
-                    
-            <span
-              class="fd-checkbox__text"
-            >
-              All Fruits (TriState)
             </span>
             
                 

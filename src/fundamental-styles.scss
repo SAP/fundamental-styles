@@ -31,7 +31,6 @@
 @import "./layout-panel";
 @import "./link";
 @import "./list";
-@import "./localization-editor";
 @import "./menu";
 @import "./message-box";
 @import "./message-page";
@@ -48,7 +47,7 @@
 @import "./product-switch";
 @import "./radio";
 @import "./section";
-@import "./segmented-button.scss";
+@import "./segmented-button";
 @import "./select";
 @import "./shellbar";
 @import "./side-nav";
@@ -66,4 +65,6 @@
 @import "./info-label";
 @import "./step-input";
 @import "./file-uploader";
-@import "./feed-input.scss"
+@import "./feed-input";
+@import "./rating-indicator";
+@import "./wizard.scss";

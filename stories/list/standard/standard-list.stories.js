@@ -1,7 +1,3 @@
-import '../../../dist/list.css';
-import '../../../dist/icon.css';
-import '../../../dist/checkbox.css';
-
 export default {
     title: 'Components/List/Standard',
     parameters: {
@@ -10,7 +6,8 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 rather basic data, whereas the data in tables tends to be more complex. Lists are mostly used in the master list for a
 master-detail scenario using the flexible column layout, as well as in popovers or dialogs.
 `,
-        tags: ['f3', 'a11y', 'theme', 'development']
+        tags: ['f3', 'a11y', 'theme', 'development'],
+        components: ['list', 'icon', 'checkbox']
     }
 };
 
@@ -65,14 +62,14 @@ export const navigation = () => `
   </li>
   <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
       <a tabindex="0" class="fd-list__link">
-        <span class="fd-list__icon sap-icon--history"></span>
+        <i role="presentation" class="fd-list__icon sap-icon--history"></i>
         <span class="fd-list__title">List item 2</span>
       </a>
   </li>
   <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
       <a tabindex="0" class="fd-list__link">
         <span class="fd-list__title">List item 3</span>
-        <span class="fd-list__icon sap-icon--map"></span>
+        <i role="presentation" class="fd-list__icon sap-icon--map"></i>
       </a>
   </li>
 </ul>
@@ -99,22 +96,22 @@ export const navigationIndicator = () => `
   </li>
   <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
       <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-selected" href="#">
-        <span class="fd-list__icon sap-icon--history"></span>
+        <i role="presentation" class="fd-list__icon sap-icon--history"></i>
         <span class="fd-list__title">List item 2</span>
       </a>
   </li>
   <li tabindex="0" role="listitem" class="fd-list__item">
-        <span class="fd-list__icon sap-icon--history"></span>
+        <i role="presentation" class="fd-list__icon sap-icon--history"></i>
         <span class="fd-list__title">List item 3</span>
   </li>
   <li tabindex="0" role="listitem" class="fd-list__item">
         <span class="fd-list__title">List item 4</span>
-        <span class="fd-list__icon sap-icon--map"></span>
+        <i role="presentation" class="fd-list__icon sap-icon--map"></i>
   </li>
   <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
       <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
         <span class="fd-list__title">List item 5</span>
-        <span class="fd-list__icon sap-icon--map"></span>
+        <i role="presentation" class="fd-list__icon sap-icon--map"></i>
       </a>
   </li>
 </ul>
@@ -219,20 +216,20 @@ secondaryData.parameters = {
 export const icons = () => `
 <ul class="fd-list" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
-      <span class="fd-list__icon sap-icon--cart"></span>
+      <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
       <span class="fd-list__title">List item 1</span>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
-      <span class="fd-list__icon sap-icon--wrench"></span>
+      <i role="presentation" class="fd-list__icon sap-icon--wrench"></i>
       <span class="fd-list__title">List item 2</span>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 3</span>
-      <span class="fd-list__icon sap-icon--lightbulb"></span>
+      <i role="presentation" class="fd-list__icon sap-icon--lightbulb"></i>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 4</span>
-      <span class="fd-list__icon sap-icon--history"></span>
+      <i role="presentation" class="fd-list__icon sap-icon--history"></i>
   </li>
 </ul>
 `;
@@ -416,22 +413,22 @@ export const rtl = () => `
       </li>
       <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
           <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-selected" href="#">
-            <span class="fd-list__icon sap-icon--history"></span>
+            <i role="presentation" class="fd-list__icon sap-icon--history"></i>
             <span class="fd-list__title">List item 2</span>
           </a>
       </li>
       <li tabindex="0" role="listitem" class="fd-list__item">
-            <span class="fd-list__icon sap-icon--history"></span>
+            <i role="presentation" class="fd-list__icon sap-icon--history"></i>
             <span class="fd-list__title">List item 3</span>
       </li>
       <li tabindex="0" role="listitem" class="fd-list__item">
             <span class="fd-list__title">List item 4</span>
-            <span class="fd-list__icon sap-icon--map"></span>
+            <i role="presentation" class="fd-list__icon sap-icon--map"></i>
       </li>
       <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
           <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
             <span class="fd-list__title">List item 5</span>
-            <span class="fd-list__icon sap-icon--map"></span>
+            <i role="presentation" class="fd-list__icon sap-icon--map"></i>
           </a>
       </li>
     </ul>
@@ -441,24 +438,24 @@ export const rtl = () => `
     <ul class="fd-list fd-list--selection" role="listbox" aria-label="Selection list">
       <li role="option" tabindex="0" class="fd-list__item">
           <div class="fd-form-item fd-list__form-item">
-              <input type="checkbox" class="fd-checkbox" id="AiEez2" aria-labelledby="Ai4eZ3">
+              <input type="checkbox" class="fd-checkbox" id="AiEez2" aria-labelledby="6243111688">
               <label tabindex="-1" class="fd-checkbox__label" for="AiEez2"></label>
           </div>
-          <span class="fd-list__title" id="Ai4eZ3">List item 1</span>
+          <span class="fd-list__title" id="6243111688">List item 1</span>
       </li>
       <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
           <div class="fd-form-item fd-list__form-item">
-              <input type="checkbox" class="fd-checkbox" id="A99ez2" checked aria-labelledby="Ai4eZ4">
+              <input type="checkbox" class="fd-checkbox" id="A99ez2" checked aria-labelledby="1387543035">
               <label tabindex="-1" class="fd-checkbox__label" for="A99ez2"></label>
           </div>
-          <span class="fd-list__title" id="Ai4eZ4">List item 2</span>
+          <span class="fd-list__title" id="1387543035">List item 2</span>
       </li>
       <li role="option" tabindex="0" class="fd-list__item">
           <div class="fd-form-item fd-list__form-item">
-              <input type="checkbox" class="fd-checkbox" id="Ai4ez3" aria-labelledby="Ai4eZ5">
-              <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez3"></label>
+              <input type="checkbox" class="fd-checkbox" id="9737425735" aria-labelledby="8784804916">
+              <label tabindex="-1" class="fd-checkbox__label" for="9737425735"></label>
           </div>
-          <span class="fd-list__title" id="Ai4eZ5">List item 3</span>
+          <span class="fd-list__title" id="8784804916">List item 3</span>
       </li>
     </ul>
 </div>

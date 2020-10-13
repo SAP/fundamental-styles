@@ -371,7 +371,9 @@ exports[`Storyshots Components/Bar Floating Footer 1`] = `
 <section>
   
 
-  <div>
+  <div
+    style="margin-bottom: 2rem;"
+  >
     <b>
       Default (desktop)
     </b>
@@ -382,42 +384,50 @@ exports[`Storyshots Components/Bar Floating Footer 1`] = `
   
 
   <div
-    class="fd-bar fd-bar--floating-footer"
+    style="position: relative;"
   >
     
     
     <div
-      class="fd-bar__right"
+      class="fd-bar fd-bar--floating-footer"
     >
       
         
       <div
-        class="fd-bar__element"
+        class="fd-bar__right"
       >
         
             
-        <button
-          aria-label="button"
-          class="fd-button fd-button--emphasized fd-button--compact"
+        <div
+          class="fd-bar__element"
         >
-          Save
-        </button>
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--emphasized fd-button--compact"
+          >
+            Save
+          </button>
+          
+            
+        </div>
         
             
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent fd-button--compact"
+        <div
+          class="fd-bar__element"
         >
-          Cancel
-        </button>
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--transparent fd-button--compact"
+          >
+            Cancel
+          </button>
+          
+            
+        </div>
         
         
       </div>
@@ -433,7 +443,9 @@ exports[`Storyshots Components/Bar Floating Footer 1`] = `
   <br />
   
 
-  <div>
+  <div
+    style="margin-bottom: 2rem;"
+  >
     <b>
       Cozy (tablet and mobile)
     </b>
@@ -444,42 +456,50 @@ exports[`Storyshots Components/Bar Floating Footer 1`] = `
   
 
   <div
-    class="fd-bar fd-bar--floating-footer fd-bar--cozy"
+    style="position: relative;"
   >
     
     
     <div
-      class="fd-bar__right"
+      class="fd-bar fd-bar--floating-footer fd-bar--cozy"
     >
       
         
       <div
-        class="fd-bar__element"
+        class="fd-bar__right"
       >
         
             
-        <button
-          aria-label="button"
-          class="fd-button fd-button--emphasized"
+        <div
+          class="fd-bar__element"
         >
-          Save
-        </button>
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--emphasized"
+          >
+            Save
+          </button>
+          
+            
+        </div>
         
             
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent"
+        <div
+          class="fd-bar__element"
         >
-          Cancel
-        </button>
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--transparent"
+          >
+            Cancel
+          </button>
+          
+            
+        </div>
         
         
       </div>
@@ -495,7 +515,9 @@ exports[`Storyshots Components/Bar Floating Footer 1`] = `
   <br />
   
 
-  <div>
+  <div
+    style="margin-bottom: 2rem;"
+  >
     <b>
       RTL Support
     </b>
@@ -506,43 +528,51 @@ exports[`Storyshots Components/Bar Floating Footer 1`] = `
   
 
   <div
-    class="fd-bar fd-bar--floating-footer"
-    dir="rtl"
+    style="position: relative;"
   >
     
     
     <div
-      class="fd-bar__right"
+      class="fd-bar fd-bar--floating-footer"
+      dir="rtl"
     >
       
         
       <div
-        class="fd-bar__element"
+        class="fd-bar__right"
       >
         
             
-        <button
-          aria-label="button"
-          class="fd-button fd-button--emphasized fd-button--compact"
+        <div
+          class="fd-bar__element"
         >
-          Save
-        </button>
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--emphasized fd-button--compact"
+          >
+            Save
+          </button>
+          
+            
+        </div>
         
             
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent fd-button--compact"
+        <div
+          class="fd-bar__element"
         >
-          Cancel
-        </button>
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--transparent fd-button--compact"
+          >
+            Cancel
+          </button>
+          
+            
+        </div>
         
         
       </div>

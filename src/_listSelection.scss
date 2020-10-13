@@ -32,8 +32,13 @@ $block: #{$fd-namespace}-list;
 
     // SELECTION + Compact
     &.#{$block}--compact {
-      .#{$block}__item {
-        @include padding-left-right($fd-list-selection-container-compact-width, $fd-list-item-padding-x);
+      .#{$block}__form-item {
+        left: $fd-list-selection-form-item-compact-left-offset;
+
+        @include fd-rtl() {
+          left: initial;
+          right: $fd-list-selection-form-item-compact-left-offset;
+        }
       }
     }
 
@@ -92,6 +97,17 @@ $block: #{$fd-namespace}-list;
               top: $fd-list-byline-form-item-label-top-offset;
             }
           }
+        }
+      }
+    }
+
+    // SELECTION + SELECT OBJECT ROW
+    &.#{$block}--selection-row {
+      .#{$block}__item {
+        padding-left: 1rem;
+
+        @include fd-rtl() {
+          padding-right: 1rem;
         }
       }
     }

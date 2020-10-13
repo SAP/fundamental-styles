@@ -2,6 +2,7 @@
 
 // VARIABLES
 $block: #{$fd-namespace}-tree;
+$button: #{$fd-namespace}-button;
 $first-level-item-container: '.#{$block}__item[aria-level="1"] > .#{$block}__item-container';
 $active-item-container: '.#{$block}__item-container.#{$block}__item-container--active';
 
@@ -109,11 +110,21 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
   @include fd-active() {
     background: var(--sapList_Active_Background);
 
-    .#{$block}__expander,
+    .#{$button},
+    .#{$block}__expander {
+      @include fd-focus() {
+        outline-color: var(--sapContent_ContrastFocusColor);
+      }
+    }
+
+    .#{$block}__icon {
+      @include fd-icon-selector() {
+        color: var(--sapList_Active_TextColor);
+      }
+    }
+
     .#{$block}__text,
-    .#{$block}__icon,
-    .has-navigation-indicator::after,
-    button::before {
+    .#{$button} {
       color: var(--sapList_Active_TextColor);
     }
 
@@ -230,37 +241,34 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
   &__expander {
     @include fd-reset();
 
+    .#{$block}__icon {
+      @include fd-icon-selector() {
+        font-size: var(--sapFontLargeSize);
+        color: var(--sapButton_IconColor);
+
+        @include fd-flex-center();
+      }
+    }
+
     @include fd-focus() {
       @include tree-focus();
     }
 
-    @include fd-icon('navigation-right-arrow', 'after') {
-      font-size: var(--sapFontLargeSize);
-    }
-
-    @include fd-rtl() {
-      &::after {
-        content: "\e067";
-      }
-
-      margin-left: 0;
-      margin-right: $fd-tree-expander-size-negative;
-      cursor: pointer;
-    }
-
-    margin-left: $fd-tree-expander-size-negative;
+    cursor: pointer;
+    color: var(--sapButton_IconColor);
+    background: transparent;
     min-width: $fd-tree-expander-size;
     min-height: $fd-tree-expander-size;
-    background: transparent;
-    color: var(--sapButton_IconColor);
+    margin-left: $fd-tree-expander-size-negative;
+
+    @include fd-rtl() {
+      margin-left: 0;
+      margin-right: $fd-tree-expander-size-negative;
+    }
 
     &.is-expanded,
     &[aria-expanded="true"] {
       border-bottom: none;
-
-      &::after {
-        content: "\e1e2";
-      }
     }
   }
 
@@ -290,9 +298,31 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
     min-width: $fd-tree-icon-size;
     min-height: $fd-tree-icon-size;
     line-height: $fd-tree-icon-size; // IE11 fix for vertical alignment
-    font-size: 1.125rem;
-    text-align: center;
-    color: var(--sapContent_NonInteractiveIconColor);
+
+    @include fd-icon-selector() {
+      font-size: 1.125rem;
+      color: var(--sapContent_NonInteractiveIconColor);
+
+      @include fd-flex-center();
+    }
+
+    &--navigation {
+      @include fd-icon-selector() {
+        min-width: 2.5rem;
+        font-size: 0.75rem;
+      }
+
+      &:last-child {
+        margin-right: $fd-tree-item-padding-right-negative;
+      }
+
+      @include fd-rtl() {
+        &:last-child {
+          margin-right: 0;
+          margin-left: $fd-tree-item-padding-right-negative;
+        }
+      }
+    }
   }
 
   &__text {
@@ -340,13 +370,13 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
       min-width: $fd-tree-expander-size-compact;
       margin-left: $fd-tree-expander-size-negative-compact;
 
+      @include fd-icon-selector() {
+        font-size: var(--sapFontSmallSize);
+      }
+
       @include fd-rtl() {
         margin-left: 0;
         margin-right: $fd-tree-expander-size-negative-compact;
-      }
-
-      &::after {
-        font-size: var(--sapFontSmallSize);
       }
     }
 
@@ -393,39 +423,6 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
 
     &--success {
       @include set-highlight(var(--sapSuccessBorderColor));
-    }
-  }
-
-  .has-navigation-indicator {
-    &::after {
-      min-width: 2.5rem;
-      font-size: 0.75rem;
-      height: 100%;
-      font-family: "SAP-icons";
-      content: '\e1ed';
-      color: var(--sapContent_NonInteractiveIconColor);
-      text-align: center;
-      text-decoration: none;
-      text-transform: none;
-    }
-
-    &:last-child {
-      &::after {
-        margin-right: $fd-tree-item-padding-right-negative;
-      }
-    }
-
-    @include fd-rtl() {
-      &::after {
-        content: '\e1ee';
-      }
-
-      &:last-child {
-        &::after {
-          margin-right: 0;
-          margin-left: $fd-tree-item-padding-right-negative;
-        }
-      }
     }
   }
 }

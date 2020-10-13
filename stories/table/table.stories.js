@@ -1,11 +1,3 @@
-import '../../dist/button.css';
-import '../../dist/checkbox.css';
-import '../../dist/icon.css';
-import '../../dist/link.css';
-import '../../dist/object-status.css';
-import '../../dist/table.css';
-import '../../dist/toolbar.css';
-
 // INCOMPLETE
 export default {
     title: 'Components/Table',
@@ -13,7 +5,8 @@ export default {
         description: 'A table is a set of tabular data. Line items can support data, images and actions.',
         docs: {
             iframeHeight: 500
-        }
+        },
+        components: ['button', 'checkbox', 'icon', 'link', 'object-status', 'table', 'toolbar']
     }
 };
 
@@ -60,9 +53,9 @@ export const primary = () => `
 
 /**
  * * `--no-vertical-borders` modifier can be applied to render a table without vertical borders.
-* `--no-horizontal-borders` modifier can be applied to render a table without horizontal borders.
+ * `--no-horizontal-borders` modifier can be applied to render a table without horizontal borders.
 
-Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
+ Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
  */
 
 export const withoutBorders = () => `
@@ -140,7 +133,7 @@ export const withoutBordersOnBody = () => `
 `;
 
 /** Footer can be added by using `fd-table__footer` class with `tfoot` element.
-It has to contain same size of columns as tbody and thead. */
+ It has to contain same size of columns as tbody and thead. */
 
 export const withFooter = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
@@ -279,8 +272,8 @@ export const withFooterCondensed = () => `
 /**
  * Interactive states of columns and row can be set by adding
 
-* For active state handler `--activable` modifier
-* For hover state handler `--hoverable` modifier
+ * For active state handler `--activable` modifier
+ * For hover state handler `--hoverable` modifier
  */
 
 export const interactiveRowsAndColumns = () => `
@@ -427,8 +420,8 @@ export const focusableCells = () => `
 
 /**
  * The checkbox input can be used at the beginning of each row to allow for bulk actions.
-It is recommended to add the parameter `aria-selected="true"` to the row that is selected.
-Also for cells that include a checkbox should contain the `fd-table__cell--checkbox` class.
+ It is recommended to add the parameter `aria-selected="true"` to the row that is selected.
+ Also for cells that include a checkbox should contain the `fd-table__cell--checkbox` class.
  */
 
 export const withCheckbox = () => `
@@ -834,8 +827,8 @@ export const withAdvancedToolbar = () => `
 
 /**
  * Responsive table is not that different than basic table, there should be used some modifiers, to remove borders.
-For Pop-in example markup is changed, one row is transformed to 2 rows with `fd-table__row--main` and
-`fd-table__row--secondary`modifiers. Also some cells should be merged into paragraphs.
+ For Pop-in example markup is changed, one row is transformed to 2 rows with `fd-table__row--main` and
+ `fd-table__row--secondary`modifiers. Also some cells should be merged into paragraphs.
  */
 
 export const responsiveTable = () => `
@@ -872,7 +865,7 @@ export const responsiveTable = () => `
             <td class="fd-table__cell">5 EUR</td>
             <td class="fd-table__cell">India</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
             </td>
         </tr>
         <tr class="fd-table__row">
@@ -889,7 +882,7 @@ export const responsiveTable = () => `
             <td class="fd-table__cell">2 EUR</td>
             <td class="fd-table__cell">Mexico</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
             </td>
         </tr>
         <tr class="fd-table__row">
@@ -906,7 +899,7 @@ export const responsiveTable = () => `
             <td class="fd-table__cell">6 EUR</td>
             <td class="fd-table__cell">Spain</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
             </td>
         </tr>
     </tbody>
@@ -929,7 +922,7 @@ export const responsiveTablePopInMode = () => `
                     5 EUR
                 </td>
                 <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                    <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                    <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
                 </td>
             </tr>
             <tr class="fd-table__row fd-table__row--secondary">
@@ -955,7 +948,7 @@ export const responsiveTablePopInMode = () => `
                     6 EUR
                 </td>
                 <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                    <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                    <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
                 </td>
             </tr>
             <tr class="fd-table__row fd-table__row--secondary">
@@ -996,7 +989,7 @@ export const responsiveTablePopInMode = () => `
                     5 EUR
                 </td>
                 <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                    <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                    <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
                 </td>
             </tr>
             <tr class="fd-table__row fd-table__row--secondary">
@@ -1027,7 +1020,7 @@ export const responsiveTablePopInMode = () => `
                     6 EUR
                 </td>
                 <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                    <span class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></span>
+                    <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
                 </td>
             </tr>
             <tr class="fd-table__row fd-table__row--secondary">
@@ -1052,9 +1045,9 @@ export const responsiveTablePopInMode = () => `
 
 /**
  * To show that an item needs attention, you can show a highlight indicator next to the item.
-This can be achieved by passing the `fd-table__cell--status-indicator` class to each row.
-Other indicators such as semantic states and modes can be added using the `--valid`,
-`--information`, `--error`, `--warning` modifiers.
+ This can be achieved by passing the `fd-table__cell--status-indicator` class to each row.
+ Other indicators such as semantic states and modes can be added using the `--valid`,
+ `--information`, `--error`, `--warning` modifiers.
  */
 
 export const semanticRows = () => `
@@ -1233,7 +1226,7 @@ export const mergedCells = () => `
 
 /**
  * When more than three actions exist per row and/or there isn't enough space for the required actions,
-a contextual menu can be substituted to display all actions in one menu.
+ a contextual menu can be substituted to display all actions in one menu.
  */
 
 export const tableWithContextualMenu = () => `
@@ -1362,7 +1355,7 @@ export const tableWithContextualMenu = () => `
 
 /**
  * Some customization actions can be added to headers, the options will be displayed in popover. Those popover should be
-added with `fd-table__popover` class.
+ added with `fd-table__popover` class.
  */
 
 export const withMenuInHeader = () => `
@@ -1456,9 +1449,9 @@ export const withMenuInHeader = () => `
 
 /**
  * To create fixed column, these steps need to be reproduced
-* Wrap the table with element with class `fd-table--fixed`
-* Add `fd-table__cell--fixed` class to cell elements, it should be propagated to whole row
-* Hard code the width of columns, otherwise the cells will be squashed.
+ * Wrap the table with element with class `fd-table--fixed`
+ * Add `fd-table__cell--fixed` class to cell elements, it should be propagated to whole row
+ * Hard code the width of columns, otherwise the cells will be squashed.
  */
 
 export const fixColumnHeader = () => `
@@ -1651,4 +1644,289 @@ export const navigationIndicationStates = () => `
         </tbody>
     </table>
 </div>
+`;
+
+/** Grid tables can contain various input elements inside of cells. Provide information about the table for screen readers (such as a title, summary, and / or keyboard navigation instructions) using the `fd-table__caption` class. */
+
+export const gridTable = () => `
+<table class="fd-table" aria-describedby="FU4EwF6st">
+    <caption class="fd-table__caption" id="FU4EwF6st" aria-live="polite">
+        Inventory Status. Use arrow keys to navigate between cells.
+    </caption>
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th id="fd-4C0WYEyPqUS" class="fd-table__cell fd-table__cell--checkbox" tabindex="-1">
+                <div class="fd-form-item">
+                    <input aria-checked="false" aria-label="Select all rows" class="fd-checkbox" id="fd-gEAc87vXrAR" type="checkbox" value="" tabindex="-1" /><label for="fd-gEAc87vXrAR" class="fd-form-label fd-checkbox__label"></label>
+                </div>
+            </th>
+            <th id="fd-KWRjZC5EqkW" class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                Product Name
+            </th>
+            <th id="fd-NPWFoAxBzUa" class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                Product ID
+            </th>
+            <th id="fd-jtbiFXSC7Uy" class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                Quantity
+            </th>
+            <th id="fd-mQuRgWM6D0u" class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                Status
+            </th>
+            <th id="fd-hEzpEm5PMU2" class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                Supplier
+            </th>
+            <th id="fd-NujEpyB6EkG" class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                Image
+            </th>
+            <th id="fd-NMFoRAVbFky" class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                Heavy Weight
+            </th>
+            <th id="fd-OspcU6H7F0q" class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                Categories
+            </th>
+            <th id="fd-nEac1Ko5K0e" class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                Delivery Date
+            </th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row" aria-selected="false">
+            <td class="fd-table__cell fd-table__cell--checkbox" tabindex="-1">
+                <div class="fd-form-item">
+                    <input aria-checked="false" aria-label="Select row" class="fd-checkbox" id="fd-7EMZOUrG2eK" name="Notebook Basic 15" type="checkbox" value="" tabindex="-1" />
+                    <label for="fd-7EMZOUrG2eK" class="fd-form-label fd-checkbox__label"></label>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span>Notebook Basic 15</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <input aria-labelledby="fd-NPWFoAxBzUa" class="fd-input" name="Notebook Basic 15" type="text" value="HT-1000" tabindex="-1" />
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span>10</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span class="fd-object-status fd-object-status--positive">Available</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-form-item">
+                    <div class="fd-popover">
+                        <div class="fd-popover__control">
+                            <div class="fd-select" role="combobox" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
+                                <div class="fd-select__control">
+                                    <span class="fd-select__text-content">Very Best Screens</span>
+                                    <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <a href="https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-1000.jpg" class="fd-link" tabindex="-1">Show image</a>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-form-item">
+                    <input aria-checked="false" aria-label="Heavy Weight" class="fd-checkbox" id="fd-tF03y4hjeLT" type="checkbox" value="" tabindex="-1" /><label for="fd-tF03y4hjeLT" class="fd-form-label fd-checkbox__label"></label>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <input aria-labelledby="fd-OspcU6H7F0q" class="fd-input" type="text" value="" tabindex="-1" />
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-popover">
+                    <div class="fd-popover__control">
+                        <div aria-expanded="false" aria-haspopup="true" class="fd-input-group--control fd-input-group">
+                            <input aria-labelledby="fd-nEac1Ko5K0e" class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
+                            <span class="fd-input-group__addon fd-input-group__addon--button">
+                                <button aria-label="Choose date" class="fd-button fd-button--transparent fd-input-group__button" type="button" tabindex="-1">
+                                    <i aria-hidden="true" class="sap-icon--appointment-2" role="img"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="fd-table__row" aria-selected="false">
+            <td class="fd-table__cell fd-table__cell--checkbox" tabindex="-1">
+                <div class="fd-form-item">
+                    <input aria-checked="false" aria-label="Select row" class="fd-checkbox" id="fd-LbUmEre6JKj" name="Notebook Basic 17" type="checkbox" value="" tabindex="-1" />
+                    <label for="fd-LbUmEre6JKj" class="fd-form-label fd-checkbox__label"></label>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span>Notebook Basic 17</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <input aria-labelledby="fd-NPWFoAxBzUa" class="fd-input" name="Notebook Basic 17" type="text" value="HT-1001" tabindex="-1" />
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span>0</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span class="fd-object-status fd-object-status--negative">Out of stock</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-form-item">
+                    <div class="fd-popover">
+                        <div class="fd-popover__control">
+                            <div class="fd-select" role="combobox" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
+                                <div class="fd-select__control">
+                                    <span class="fd-select__text-content">Fasttech</span>
+                                    <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <a href="https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-1001.jpg" class="fd-link" tabindex="-1">Show image</a>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-form-item">
+                    <input aria-checked="false" aria-label="Heavy Weight" class="fd-checkbox" id="fd-9WXDOs3SBLH" type="checkbox" value="" tabindex="-1" /><label for="fd-9WXDOs3SBLH" class="fd-form-label fd-checkbox__label"></label>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <input aria-labelledby="fd-OspcU6H7F0q" class="fd-input" type="text" value="" tabindex="-1" />
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-popover">
+                    <div class="fd-popover__control">
+                        <div aria-expanded="false" aria-haspopup="true" class="fd-input-group--control fd-input-group">
+                            <input aria-labelledby="fd-nEac1Ko5K0e" class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
+                            <span class="fd-input-group__addon fd-input-group__addon--button">
+                                <button aria-label="Choose date" class="fd-button fd-button--transparent fd-input-group__button" type="button" tabindex="-1">
+                                    <i aria-hidden="true" class="sap-icon--appointment-2" role="img"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="fd-table__row" aria-selected="false">
+            <td class="fd-table__cell fd-table__cell--checkbox" tabindex="-1">
+                <div class="fd-form-item">
+                    <input aria-checked="false" aria-label="Select row" class="fd-checkbox" id="fd-Cmvc_Hc7N3_" name="Notebook Basic 18" type="checkbox" value="" tabindex="-1" />
+                    <label for="fd-Cmvc_Hc7N3_" class="fd-form-label fd-checkbox__label"></label>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span>Notebook Basic 18</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <input aria-labelledby="fd-NPWFoAxBzUa" class="fd-input" name="Notebook Basic 18" type="text" value="HT-1002" tabindex="-1" />
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span>13</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span class="fd-object-status fd-object-status--positive">Available</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-form-item">
+                    <div class="fd-popover">
+                        <div class="fd-popover__control">
+                            <div class="fd-select" role="combobox" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
+                                <div class="fd-select__control">
+                                    <span class="fd-select__text-content">Printers for All</span>
+                                    <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <a href="https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-1002.jpg" class="fd-link" tabindex="-1">Show image</a>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-form-item">
+                    <input aria-checked="false" aria-label="Heavy Weight" class="fd-checkbox" id="fd-Rzaro06MMoH" type="checkbox" value="" tabindex="-1" /><label for="fd-Rzaro06MMoH" class="fd-form-label fd-checkbox__label"></label>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <input aria-labelledby="fd-OspcU6H7F0q" class="fd-input" type="text" value="" tabindex="-1" />
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-popover">
+                    <div class="fd-popover__control">
+                        <div aria-expanded="false" aria-haspopup="true" class="fd-input-group--control fd-input-group">
+                                <input aria-labelledby="fd-nEac1Ko5K0e" class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
+                                <span class="fd-input-group__addon fd-input-group__addon--button">
+                                    <button aria-label="Choose date" class="fd-button fd-button--transparent fd-input-group__button" type="button" tabindex="-1">
+                                        <i aria-hidden="true" class="sap-icon--appointment-2" role="img"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="fd-table__row" aria-selected="false">
+            <td class="fd-table__cell fd-table__cell--checkbox" tabindex="-1">
+                <div class="fd-form-item">
+                    <input aria-checked="false" aria-label="Select row" class="fd-checkbox" id="fd-kgZvkuwUtB-" name="Notebook Basic 19" type="checkbox" value="" tabindex="-1" />
+                    <label for="fd-kgZvkuwUtB-" class="fd-form-label fd-checkbox__label"></label>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span>Notebook Basic 19</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <input aria-labelledby="fd-NPWFoAxBzUa" class="fd-input" name="Notebook Basic 19" type="text" value="HT-1003" tabindex="-1" />
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span>15</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <span class="fd-object-status fd-object-status--positive">Available</span>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-form-item">
+                    <div class="fd-popover">
+                        <div class="fd-popover__control">
+                            <div class="fd-select" role="combobox" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
+                                <div class="fd-select__control">
+                                    <span class="fd-select__text-content">Technocom</span>
+                                    <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <a href="https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-1003.jpg" class="fd-link" tabindex="-1">Show image</a>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-form-item">
+                    <input aria-checked="false" aria-label="Heavy Weight" class="fd-checkbox" id="fd-LHL3aUwc6pZ" type="checkbox" value="" tabindex="-1" /><label for="fd-LHL3aUwc6pZ" class="fd-form-label fd-checkbox__label"></label>
+                </div>
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <input aria-labelledby="fd-OspcU6H7F0q" class="fd-input" type="text" value="" tabindex="-1" />
+            </td>
+            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
+                <div class="fd-popover">
+                    <div class="fd-popover__control">
+                        <div aria-expanded="false" aria-haspopup="true" class="fd-input-group--control fd-input-group">
+                            <input aria-labelledby="fd-nEac1Ko5K0e" class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
+                            <span class="fd-input-group__addon fd-input-group__addon--button">
+                                <button aria-label="Choose date" class="fd-button fd-button--transparent fd-input-group__button" type="button" tabindex="-1">
+                                    <i aria-hidden="true" class="sap-icon--appointment-2" role="img"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
 `;

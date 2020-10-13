@@ -1,0 +1,291 @@
+@import "./new-settings";
+@import "./mixins";
+@import "./icon";
+
+$block: #{$fd-namespace}-rating-indicator;
+
+:root {
+  --sapRating-indicator-icon-rated: url();
+  --sapRating-indicator-icon-unrated: url();
+}
+
+.#{$block} {
+  $fd-rating-indicator-sizes: (
+    "cozy": ("fontSize": 1.5rem, "spacingBetweenIcons": 0.1875rem, "controlMargin": 0.8125rem 0),
+    "compact": ("fontSize": 1rem, "spacingBetweenIcons": 0.125rem, "controlMargin": 0.5rem 0),
+    "condensed": ("fontSize": 1rem, "spacingBetweenIcons": 0.125rem),
+    "xs": ("fontSize": 0.75rem, "spacingBetweenIcons": 1px),
+    "sm": ("fontSize": 1rem, "spacingBetweenIcons": 0.125rem),
+    "md": ("fontSize": 1.375rem, "spacingBetweenIcons": 0.1875rem),
+    "lg": ("fontSize": 2rem, "spacingBetweenIcons": 0.25rem)
+  );
+  $fd-rating-indicator-default-size: map-get($fd-rating-indicator-sizes, 'md');
+  $fd-rating-indicator-default-font-size: map_get($fd-rating-indicator-default-size, "fontSize");
+  $fd-rating-indicator-default-spacing-between-icons: map_get($fd-rating-indicator-default-size, "spacingBetweenIcons");
+  $fd-rating-indicator-default-spacing-between-icons: map_get($fd-rating-indicator-default-size, "spacingBetweenIcons");
+  $fd-rating-indicator-dynamic-text-space: 0.5rem;
+
+  @mixin fd-rating-indicator-with-half-star($iconFontSize, $spacingBetweenIcons) {
+    .#{$block}__input {
+      width: $iconFontSize / 2;
+      height: $iconFontSize;
+    }
+
+    .#{$block}__label {
+      margin-right: 0;
+
+      &:nth-child(4n+4) {
+        margin-right: $spacingBetweenIcons;
+        flex-direction: row-reverse;
+
+        @include fd-rtl() {
+          margin-right: 0;
+          margin-left: $spacingBetweenIcons;
+
+          &:last-child {
+            margin-left: 0;
+          }
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      overflow: hidden;
+      width: $iconFontSize / 2 !important;
+    }
+
+    &.#{$block}--icon .#{$block}__label {
+      @include fd-rtl() {
+        background-position: right;
+      }
+
+      &:nth-child(4n+4) {
+        background-position: right;
+
+        @include fd-rtl() {
+          background-position: left;
+        }
+      }
+    }
+  }
+
+  @include fd-reset();
+
+  position: relative;
+
+  &__input {
+    @include fd-reset();
+
+    position: absolute;
+    opacity: 0.0001;
+    z-index: -1;
+    top: 0;
+    width: $fd-rating-indicator-default-font-size;
+    height: $fd-rating-indicator-default-font-size;
+
+    &:checked {
+      @include fd-fiori-focus(0) {
+        + .#{$block}__label {
+          outline-offset: 0;
+          outline-width: var(--sapContent_FocusWidth);
+          outline-color: var(--sapContent_FocusColor);
+          outline-style: var(--sapContent_FocusStyle);
+        }
+      }
+    ;
+
+      ~ input + .#{$block}__label {
+        @include fd-icon-glyph('unfavorite') {
+          color: var(--sapContent_UnratedColor);
+        }
+
+        &:hover::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__label {
+    @include fd-reset();
+    @include action-cursor();
+
+    @include fd-icon-glyph('favorite') {
+      font-family: "SAP-icons";
+      color: var(--sapContent_RatedColor);
+      font-size: $fd-rating-indicator-default-font-size;
+    }
+
+    display: flex;
+    align-items: center;
+    float: left;
+    height: $fd-rating-indicator-default-font-size;
+    margin-right: $fd-rating-indicator-default-spacing-between-icons;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover::before {
+      opacity: var(--fdRating_Indicator_Selected_Hover_Opacity);
+      transition: opacity $fd-animation-speed ease-in;
+    }
+  }
+
+  &__dynamic-text {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    font-size: var(--sapFontSmallSize);
+    color: var(--sapContent_LabelColor);
+    margin-left: $fd-rating-indicator-dynamic-text-space;
+  }
+
+  &__hide-dynamic-text {
+    > .#{$block}__dynamic-text {
+      display: none;
+    }
+  }
+
+  @include fd-rtl() {
+    .#{$block}__input:first-child + label {
+      margin-right: 0;
+    }
+
+    .#{$block}__label {
+      float: right;
+
+      &:last-child {
+        margin-right: $fd-rating-indicator-default-spacing-between-icons;
+      }
+    }
+
+    .fd-rating-indicator__dynamic-text,
+    .#{$block}___dynamic-text {
+      margin-left: 0;
+      margin-right: $fd-rating-indicator-dynamic-text-space;
+    }
+  }
+
+  @include fd-disabled() {
+    pointer-events: none;
+    opacity: var(--fdRating_Indicator_Disabled_Control_Opacity);
+
+    .#{$block}__input {
+      @include fd-icon-glyph('favorite') {
+        color: var(--fdRating_Indicator_Disabled_Selected_Color);
+      }
+
+      &:checked ~ input + .#{$block}__label {
+        @include fd-icon-glyph('favorite') {
+          color: var(--fdRating_Indicator_Disabled_Unselected_Color);
+        }
+      }
+    }
+  }
+
+  @include fd-flex-center();
+
+  &.is-display-mode {
+    pointer-events: none;
+
+    .#{$block}__label {
+      @include fd-icon-glyph('favorite') {
+        color: var(--fdRating_Indicator_Display_Only_Selected_Color);
+      }
+
+      &::before {
+        font-size: 1rem;
+      }
+
+      margin-right: 0.125rem;
+    }
+
+    .#{$block}__input {
+      &:checked ~ input + .#{$block}__label {
+        @include fd-icon-glyph('favorite') {
+          color: var(--sapContent_UnratedColor);
+        }
+      }
+    }
+  }
+
+  &--half-star {
+    @include fd-rating-indicator-with-half-star($fd-rating-indicator-default-font-size, $fd-rating-indicator-default-spacing-between-icons);
+  }
+
+  &.#{$block}--icon {
+    .#{$block}__label {
+      &::after,
+      &::before {
+        content: none !important;
+      }
+
+      width: $fd-rating-indicator-default-font-size;
+      height: $fd-rating-indicator-default-font-size;
+      background-image: var(--sapRating-indicator-icon-rated);
+      background-size: cover;
+      background-position: left;
+      background-repeat: no-repeat;
+    }
+
+    .#{$block}__input {
+      &:checked ~ input + .#{$block}__label {
+        background-image: var(--sapRating-indicator-icon-unrated);
+      }
+    }
+  }
+
+  // BLOCK MODIFIERS ************
+  // sizes
+
+  @each $set-name, $size-set in $fd-rating-indicator-sizes {
+    $fd-rating-indicator-sizes-font-size: map_get($size-set, "fontSize");
+    $fd-rating-indicator-sizes-spacing-between-icons: map_get($size-set, "spacingBetweenIcons");
+    &--#{$set-name} {
+      @include fd-reset-spacing();
+      $controlMargin: map_get($size-set, "controlMargin");
+
+      @if $controlMargin {
+        margin: $controlMargin;
+      }
+
+      .#{$block}__input {
+        width: $fd-rating-indicator-sizes-font-size;
+        height: $fd-rating-indicator-sizes-font-size;
+      }
+
+      .#{$block}__label {
+        margin-right: $fd-rating-indicator-sizes-spacing-between-icons;
+        height: $fd-rating-indicator-sizes-font-size;
+
+        &::before {
+          font-size: $fd-rating-indicator-sizes-font-size;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        @include fd-rtl() {
+          &:last-child {
+            margin-right: $fd-rating-indicator-sizes-spacing-between-icons;
+          }
+        }
+      }
+
+      &--half-star {
+        @include fd-rating-indicator-with-half-star($fd-rating-indicator-sizes-font-size, $fd-rating-indicator-sizes-spacing-between-icons);
+      }
+
+      &.#{$block}--icon {
+        .#{$block}__label {
+          width: $fd-rating-indicator-default-font-size;
+          height: $fd-rating-indicator-default-font-size;
+        }
+      }
+    }
+  }
+}

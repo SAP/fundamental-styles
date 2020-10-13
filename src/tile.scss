@@ -81,8 +81,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
 }
 
 @mixin fake-tile-outline() {
-  &:focus,
-  &.is-focus {
+  @include fd-focus() {
     outline: none;
 
     &::before {
@@ -100,7 +99,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
   }
 }
 
-@mixin fake-tile-button-outline() {
+@mixin focus-close-button-outline() {
   &:focus,
   &.is-focus {
     outline: none;
@@ -109,15 +108,13 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       content: '';
       width: 1.5rem;
       height: 1.5rem;
-      box-sizing: border-box;
-      position: absolute;
-      display: block;
-      border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
       top: -0.0625rem;
       left: 0.4375rem;
       right: 0;
       bottom: 0;
       z-index: 3;
+
+      @content;
     }
 
     @include fd-rtl() {
@@ -219,8 +216,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
 
   &__title,
   &__subtitle,
-  &__footer-text,
-  &__refresh {
+  &__footer-text {
     @include fd-reset();
 
     font-size: var(--sapFontSize);
@@ -241,14 +237,20 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
   }
 
   &__refresh {
-    color: var(--sapButton_IconColor);
-    min-width: 0.875rem;
-    text-align: center;
-    margin-right: $fd-tile-refresh-icon-spacing;
+    @include fd-icon-element-base() {
+      @include fd-flex-center();
 
-    @include fd-rtl() {
-      margin-right: 0;
-      margin-left: $fd-tile-refresh-icon-spacing;
+      line-height: normal;
+      font-size: var(--sapFontSize);
+      color: var(--sapButton_IconColor);
+      min-width: 0.875rem;
+      text-align: center;
+      margin-right: $fd-tile-refresh-icon-spacing;
+
+      @include fd-rtl() {
+        margin-right: 0;
+        margin-left: $fd-tile-refresh-icon-spacing;
+      }
     }
   }
 
@@ -619,8 +621,11 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
     .#{$block}__action-close {
       @include set-height(2rem);
       @include set-width(2rem);
-      @include fake-tile-button-outline();
+      @include focus-close-button-outline();
 
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
       position: absolute;
       padding: 0;
       top: $fd-tile-close-button-position;
@@ -630,28 +635,24 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       @include fd-rtl() {
         right: initial;
         left: $fd-tile-close-button-position;
-
-        &::before {
-          margin-left: initial;
-          margin-right: $fd-tile-close-button-offset;
-        }
       }
 
-      &::before {
+      @include fd-icon-element-base() {
         @include set-height(1.375rem);
         @include set-width(1.375rem);
         @include fd-flex-center();
 
         box-sizing: border-box;
         border-radius: 50%;
-        margin-bottom: $fd-tile-close-button-offset;
-        margin-left: $fd-tile-close-button-offset;
-        font-family: SAP-icons;
-        font-size: 0.75rem;
         background: var(--sapButton_Background);
         border: 0.0625rem solid var(--sapButton_BorderColor);
         color: var(--sapButton_IconColor);
-        content: "\e03e";
+        font-size: 0.75rem;
+
+        &::before {
+          width: auto;
+          height: auto;
+        }
       }
 
       @include fd-focus() {
@@ -678,13 +679,11 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
         margin-left: $fd-tile-action-indicator-offset;
       }
 
-      &::before {
+      @include fd-icon-element-base() {
         @include fd-flex-center();
 
-        font-family: SAP-icons;
         font-size: 1rem;
         color: var(--sapButton_IconColor);
-        content: "\e1f2";
       }
     }
 
@@ -700,14 +699,16 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
         border-color: transparent;
 
         @include fd-focus() {
-          outline-color: var(--sapContent_FocusColor);
+          &::after {
+            border-color: var(--sapContent_FocusColor);
+          }
         }
       }
     }
 
     &.#{$block}--slide {
       .#{$block}__action-indicator {
-        &::before {
+        @include fd-icon-selector() {
           color: var(--sapShell_Active_TextColor);
         }
       }
@@ -878,28 +879,24 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
         }
       }
 
-      .#{$block}__action-indicator {
-        @include reset-position-absolute();
-
-        margin: 0;
-      }
-
       .#{$block}__action-close {
         @include set-height(1.625rem);
         @include reset-position-absolute();
+        @include fd-flex-center();
 
         padding: 0 0.25rem;
+      }
 
-        &::before {
-          margin: 0;
-        }
+      .#{$block}__action-indicator {
+        margin: 0;
+      }
 
-        &::after {
-          content: none;
-        }
+      .#{$block}__action-indicator,
+      .#{$block}__action-close {
+        @include reset-position-absolute();
 
         @include fd-focus() {
-          @include buttonFocus();
+          @include buttonFocus(0);
         }
       }
     }

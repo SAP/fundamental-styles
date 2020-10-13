@@ -1,8 +1,3 @@
-import '../../dist/form-label.css';
-import '../../dist/form-item.css';
-import '../../dist/input.css';
-import '../../dist/popover.css';
-
 export default {
     title: 'Components/Forms/Input',
     parameters: {
@@ -21,7 +16,8 @@ Do not use the input field if:
 
 - The user needs to enter long texts. In this case, use the textarea.
 - The user needs to carry out a search. In this case, use the search field.
-        `
+        `,
+        components: ['form-item', 'form-label', 'input', 'popover']
     }
 };
 
@@ -173,7 +169,7 @@ export const states = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="input-1dd">Warning input:</label>
     <div class="fd-popover fd-popover--input-message-group">
-        <div class="fd-popover__control" aria-controls="popoverB4" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverB4');>
+        <div class="fd-popover__control" aria-controls="popoverB4" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverB4');">
             <input class="fd-input is-warning" type="text" id="input-1dd" placeholder="Field placeholder text" aria-label="Image label">
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB4">
@@ -187,7 +183,7 @@ export const states = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="input-1ee">Information input:</label>
     <div class="fd-popover fd-popover--input-message-group">
-        <div class="fd-popover__control" aria-controls="popoverB5" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverB5');>
+        <div class="fd-popover__control" aria-controls="popoverB5" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverB5');">
             <input class="fd-input fd-input--compact is-information" type="text" id="input-1ee" placeholder="Field placeholder text" aria-label="Image label">
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB5">

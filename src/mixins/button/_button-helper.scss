@@ -6,9 +6,7 @@ $block: #{$fd-namespace}-button;
   background-color: $backgroundColor;
 }
 
-@mixin buttonFocus() {
-  $fd-button-outline-offset: 0.0625rem;
-
+@mixin buttonFocus($fd-button-outline-offset: 0.0625rem) {
   &::after {
     content: "";
     position: absolute;

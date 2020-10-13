@@ -1,7 +1,3 @@
-import '../../dist/radio.css';
-import '../../dist/form-label.css';
-import '../../dist/fieldset.css';
-
 export default {
     title: 'Components/Forms/Radio',
     parameters: {
@@ -19,7 +15,8 @@ Do not use the radio button if:
 In special cases, there are only two mutually exclusive options. Combine them into a single checkbox or switch. For example, use a checkbox for “I agree” (for example, to terms and conditions) instead of two radio buttons for “I agree” and “I don’t agree”.
 - The options are numbers with fixed steps. Use a slider control.
 `,
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['radio', 'form-label', 'fieldset', 'form-group']
     }
 };
 
@@ -305,6 +302,42 @@ export const rtl = () => `
         <div class="fd-form-item">
             <input type="radio" class="fd-radio is-information" id="radioRtl5" name="radiortl">
             <label class="fd-radio__label" for="radioRtl5">
+                Field label
+            </label>
+        </div>
+    </div>
+</fieldset>
+<br />
+<fieldset class="fd-fieldset" id="radiortlcompact" dir="rtl">
+    <legend class="fd-fieldset__legend">Interaction States RTL Compact Mode</legend>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <input type="radio" class="fd-radio fd-radio--compact" id="radioRtl6" name="radiortlcompact" checked>
+            <label class="fd-radio__label" for="radioRtl6">
+                Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="radio" class="fd-radio is-success fd-radio--compact" id="radioRtl7" name="radiortlcompact">
+            <label class="fd-radio__label" for="radioRtl7">
+                Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="radio" class="fd-radio is-error fd-radio--compact" id="radioRtl8" name="radiortlcompact">
+            <label class="fd-radio__label" for="radioRtl8">
+                Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="radio" class="fd-radio is-warning fd-radio--compact" id="radioRtl9" name="radiortlcompact">
+            <label class="fd-radio__label" for="radioRtl9">
+                Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="radio" class="fd-radio is-information fd-radio--compact" id="radioRtl10" name="radiortlcompact">
+            <label class="fd-radio__label" for="radioRtl10">
                 Field label
             </label>
         </div>

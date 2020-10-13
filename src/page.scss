@@ -6,6 +6,7 @@ $block: #{$fd-namespace}-page;
 .#{$block} {
   @include fd-reset();
 
+  position: relative;
   display: flex;
   flex-direction: column;
   background: var(--sapBackgroundColor);

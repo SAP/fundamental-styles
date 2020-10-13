@@ -1,5 +1,3 @@
-import '../../dist/message-page.css';
-
 export default {
     title: 'Components/Message Page',
     parameters: {
@@ -23,7 +21,8 @@ The size of the message page adjusts to fit the available space.
 - The title is also mandatory. Add a description with further details if needed. 
 - The message should be as concise as possible.
         `,
-        tags: ['f3', 'a11y', 'theme', 'development']
+        tags: ['f3', 'a11y', 'theme', 'development'],
+        components: ['message-page', 'icon', 'button']
     }
 };
 
@@ -34,7 +33,7 @@ export const filter = () => `
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
-                <span class="sap-icon sap-icon--filter fd-message-page__icon"></span>
+                <i role="presentation" class="sap-icon--filter fd-message-page__icon"></i>
             </div>
             <div role="status" aria-live="polite" class="fd-message-page__content">
                 <div class="fd-message-page__title">
@@ -64,7 +63,7 @@ export const search = () => `
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
-                <span class="sap-icon sap-icon--search fd-message-page__icon"></span>
+                <i role="presentation" class="sap-icon--search fd-message-page__icon"></i>
             </div>
             <div role="status" aria-live="polite" class="fd-message-page__content">
                 <div class="fd-message-page__title">
@@ -91,7 +90,7 @@ export const noItems = () => `
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
-                <span class="sap-icon sap-icon--product fd-message-page__icon"></span>
+                <i role="presentation" class="sap-icon--product fd-message-page__icon"></i>
             </div>
             <div role="status" aria-live="polite" class="fd-message-page__content">
                 <div class="fd-message-page__title">
@@ -118,7 +117,7 @@ export const error = () => `
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
-                <span class="sap-icon sap-icon--document fd-message-page__icon"></span>
+                <i role="presentation" class="sap-icon--document fd-message-page__icon"></i>
             </div>
             <div role="status" aria-live="polite" class="fd-message-page__content">
                 <div class="fd-message-page__title">
@@ -151,7 +150,7 @@ export const buttons = () => `
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
-                <span class="sap-icon sap-icon--documents fd-message-page__icon"></span>
+                <i role="presentation" class="sap-icon--documents fd-message-page__icon"></i>
             </div>
             <div role="status" aria-live="polite" class="fd-message-page__content">
                 <div class="fd-message-page__title">
@@ -195,4 +194,3 @@ buttons.parameters = {
     `
     }
 };
-

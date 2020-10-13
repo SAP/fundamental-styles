@@ -1,14 +1,9 @@
-import '../../dist/form-label.css';
-import '../../dist/form-item.css';
-import '../../dist/input.css';
-import '../../dist/popover.css';
-import '../../dist/input-group.css';
-
 export default {
     title: 'Components/Forms/Input Group',
     parameters: {
         description: 'The input group includes form inputs with add-ons that allow the user to better understand the information being entered.',
-        tags: ['f3', 'a11y', 'theme']
+        tags: ['f3', 'a11y', 'theme'],
+        components: ['form-item', 'form-label', 'input', 'popover', 'input-group']
     }
 };
 

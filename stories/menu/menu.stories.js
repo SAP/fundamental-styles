@@ -1,8 +1,3 @@
-import '../../dist/button.css';
-import '../../dist/icon.css';
-import '../../dist/menu.css';
-import '../../dist/title.css';
-
 export default {
     title: 'Components/Menu',
     parameters: {
@@ -11,7 +6,8 @@ export default {
 The menu component is the listing structure with optional headers to create menus.
 
 Commonly used as the contents when composing "dropdowns", "contextual menus", etc, when paired with the popover component.
-`
+`,
+        components: ['button', 'icon', 'menu', 'title']
     }
 };
 
@@ -98,30 +94,30 @@ export const mobileCozyMode = () => `
                 <ul class="fd-menu__list" role="menu">
                     <li class="fd-menu__item" role="presentation">
                         <a class="fd-menu__link" href="#" role="menuitem">
-                            <span class="fd-menu__addon-before sap-icon--grid"></span>
+                            <span class="fd-menu__addon-before"><i class="sap-icon--grid" role="presentation"></i></span>
                             <span class="fd-menu__title">Option 1</span>
-                            <span class="fd-menu__addon-after sap-icon--wrench"></span> 
+                            <span class="fd-menu__addon-after"><i class="sap-icon--wrench" role="presentation"></i></span> 
                         </a>
                     </li>
                     <li class="fd-menu__item" role="presentation">
                         <a class="fd-menu__link is-active" href="#" role="menuitem">
-                            <span class="fd-menu__addon-before sap-icon--accept"></span>
+                            <span class="fd-menu__addon-before"><i class="sap-icon--accept" role="presentation"></i></span>
                             <span class="fd-menu__title">Option 2</span>
                             <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>
                         </a>
                     </li>
                     <li class="fd-menu__item" role="presentation">
                         <a class="fd-menu__link" href="#" role="menuitem">
-                            <span class="fd-menu__addon-before sap-icon--history"></span>
+                            <span class="fd-menu__addon-before"><i class="sap-icon--history" role="presentation"></i></span>
                             <span class="fd-menu__title">Option 3</span>
-                            <span class="fd-menu__addon-after sap-icon--lightbulb"></span>
+                            <span class="fd-menu__addon-after"><i class="sap-icon--lightbulb" role="presentation"></i></span>
                         </a>
                     </li>
                     <li class="fd-menu__item" role="presentation">
                         <a class="fd-menu__link" href="#" role="menuitem">
-                            <span class="fd-menu__addon-before sap-icon--grid"></span>
+                            <span class="fd-menu__addon-before"><i class="sap-icon--grid" role="presentation"></i></span>
                             <span class="fd-menu__title">Option 4</span>
-                            <span class="fd-menu__addon-after sap-icon--history"></span>
+                            <span class="fd-menu__addon-after"><i class="sap-icon--history" role="presentation"></i></span>
                         </a>
                     </li>
                 </ul>
@@ -143,7 +139,7 @@ export const mobileCozyMode = () => `
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
                 <button aria-label="fd-button" role="button" class="fd-button fd-button--transparent">
-                    <i class="sap-icon--navigation-left-arrow"></i>
+                    <i class="sap-icon--navigation-left-arrow" role="presentation"></i>
                 </button>
             </div>
             <div class="fd-bar__element">
@@ -338,31 +334,31 @@ export const menuIcon = () => `
     <ul class="fd-menu__list" role="menu">
         <li class="fd-menu__item" role="presentation">
                 <a class="fd-menu__link" href="#" role="menuitem">
-                    <span class="fd-menu__addon-before sap-icon--grid"></span>
+                    <span class="fd-menu__addon-before"><i class="sap-icon--grid" role="presentation"></i></span>
                     <span class="fd-menu__title">Option 1</span>
-                    <span class="fd-menu__addon-after sap-icon--wrench"></span>
+                    <span class="fd-menu__addon-after"><i class="sap-icon--wrench" role="presentation"></i></span>
                 </a>
         </li>
         <li class="fd-menu__item" role="presentation">
                 <a class="fd-menu__link" href="#" role="menuitem">
-                    <span class="fd-menu__addon-before sap-icon--accept"></span>
+                    <span class="fd-menu__addon-before"><i class="sap-icon--accept" role="presentation"></i></span>
                     <span class="fd-menu__title">Option 2</span>
-                    <span class="fd-menu__addon-after sap-icon--history"></span>
+                    <span class="fd-menu__addon-after"><i class="sap-icon--history" role="presentation"></i></span>
                 </a>            
         </li>
         <li class="fd-menu__item" role="presentation">
                 <a class="fd-menu__link" href="#" role="menuitem">
-                    <span class="fd-menu__addon-before sap-icon--wrench"></span>
+                    <span class="fd-menu__addon-before"><i class="sap-icon--wrench" role="presentation"></i></span>
                     <span class="fd-menu__title">Option 3</span>
-                    <span class="fd-menu__addon-after sap-icon--lightbulb"></span>
+                    <span class="fd-menu__addon-after"><i class="sap-icon--lightbulb" role="presentation"></i></span>
                 </a>
         </li>
         <li class="fd-menu__item" role="presentation">            
                 <a class="fd-menu__link" href="#" role="menuitem">
-                    <span class="fd-menu__addon-before sap-icon--cart"></span>
+                    <span class="fd-menu__addon-before"><i class="sap-icon--cart" role="presentation"></i></span>
                     <span class="fd-menu__title">Option 4</span>
                     <span class="fd-menu__shortcut">Ctrl + A</span>
-                    <span class="fd-menu__addon-after sap-icon--history"></span>
+                    <span class="fd-menu__addon-after"><i class="sap-icon--history" role="presentation"></i></span>
                 </a>
         </li>
     </ul>
@@ -453,30 +449,30 @@ export const RTL = () => `
     <ul class="fd-menu__list" role="menu">
         <li class="fd-menu__item" role="presentation">
             <a class="fd-menu__link" href="#" role="menuitem">
-                <span class="fd-menu__addon-before sap-icon--grid"></span>
+                <span class="fd-menu__addon-before"><i class="sap-icon--grid" role="presentation"></i></span>
                 <span class="fd-menu__title">Option 1</span>
-                <span class="fd-menu__addon-after sap-icon--history"></span>
+                <span class="fd-menu__addon-after"><i class="sap-icon--history" role="presentation"></i></span>
             </a>
         </li>
         <li class="fd-menu__item" role="presentation">
             <a class="fd-menu__link" href="#" role="menuitem">
-                <span class="fd-menu__addon-before sap-icon--accept"></span>
+                <span class="fd-menu__addon-before"><i class="sap-icon--accept" role="presentation"></i></span>
                 <span class="fd-menu__title">Option 2</span>
-                <span class="fd-menu__addon-after sap-icon--grid"></span>
+                <span class="fd-menu__addon-after"><i class="sap-icon--grid" role="presentation"></i></span>
             </a>
         </li>
         <li class="fd-menu__item" role="presentation">
             <a class="fd-menu__link" href="#" role="menuitem">
-                <span class="fd-menu__addon-before sap-icon--history"></span>
+                <span class="fd-menu__addon-before"><i class="sap-icon--history" role="presentation"></i></span>
                 <span class="fd-menu__title">Option 3</span>
-                <span class="fd-menu__addon-after sap-icon--cart"></span>
+                <span class="fd-menu__addon-after"><i class="sap-icon--cart" role="presentation"></i></span>
             </a>
         </li>
         <li class="fd-menu__item" role="presentation">
             <a class="fd-menu__link" href="#" role="menuitem">
-                <span class="fd-menu__addon-before sap-icon--grid"></span>
+                <span class="fd-menu__addon-before"><i class="sap-icon--grid" role="presentation"></i></span>
                 <span class="fd-menu__title">Option 4</span>
-                <span class="fd-menu__addon-after sap-icon--lightbulb"></span>
+                <span class="fd-menu__addon-after"><i class="sap-icon--lightbulb" role="presentation"></i></span>
             </a>
         </li>
     </ul>

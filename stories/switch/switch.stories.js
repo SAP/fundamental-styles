@@ -1,7 +1,3 @@
-import '../../dist/form-label.css';
-import '../../dist/switch.css';
-import '../../dist/icon.css';
-
 export default {
     title: 'Components/Switch',
     parameters: {
@@ -12,7 +8,8 @@ export default {
 
  - If it is not clear if the control is showing a state or action. 
  - If there are more than two options.
-  `
+  `,
+        components: ['form-label', 'switch', 'icon']
     }
 };
 
@@ -103,9 +100,9 @@ export const semanticSwitch = () => `
                 <input class="fd-switch__input" type="checkbox" aria-labelledby="label5" name="" value="" id="y21YO3251">
                 <div class="fd-switch__wrapper">
                     <div class="fd-switch__track">
-                        <span class="fd-switch__icon--on fd-switch__icon sap-icon--accept"></span>
+                        <i role="presentation" class="fd-switch__icon--on fd-switch__icon sap-icon--accept"></i>
                         <span class="fd-switch__handle" role="presentation"></span>
-                        <span class="fd-switch__icon--off fd-switch__icon sap-icon--decline"></span>
+                        <i role="presentation" class="fd-switch__icon--off fd-switch__icon sap-icon--decline"></i>
                     </div>
                 </div>
             </span>
@@ -118,9 +115,9 @@ export const semanticSwitch = () => `
                 <input class="fd-switch__input" type="checkbox" name="" aria-labelledby="label6" value="" id="y21YO3431">
                 <div class="fd-switch__wrapper">
                     <div class="fd-switch__track">
-                        <span class="fd-switch__icon--on fd-switch__icon sap-icon--accept"></span>
+                        <i role="presentation" class="fd-switch__icon--on fd-switch__icon sap-icon--accept"></i>
                         <span class="fd-switch__handle" role="presentation"></span>
-                        <span class="fd-switch__icon--off fd-switch__icon sap-icon--decline"></span>
+                        <i role="presentation" class="fd-switch__icon--off fd-switch__icon sap-icon--decline"></i>
                     </div>
                 </div>
             </span>
@@ -142,9 +139,9 @@ export const rtl = () => `
             <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3911" aria-label="Rtl Semantic Cozy">
             <div class="fd-switch__wrapper">
                 <div class="fd-switch__track">
-                    <span class="fd-switch__icon--on fd-switch__icon sap-icon--accept"></span>
+                    <i role="presentation" class="fd-switch__icon--on fd-switch__icon sap-icon--accept"></i>
                     <span class="fd-switch__handle" role="presentation"></span>
-                    <span class="fd-switch__icon--off fd-switch__icon sap-icon--decline"></span>
+                    <i role="presentation" class="fd-switch__icon--off fd-switch__icon sap-icon--decline"></i>
                 </div>
             </div>
         </span>
@@ -154,9 +151,9 @@ export const rtl = () => `
             <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3912" aria-label="Rtl Semantic Compact">
             <div class="fd-switch__wrapper">
                 <div class="fd-switch__track">
-                   <span class="fd-switch__icon--on fd-switch__icon sap-icon--accept"></span>
+                   <i role="presentation" class="fd-switch__icon--on fd-switch__icon sap-icon--accept"></i>
                    <span class="fd-switch__handle" role="presentation"></span>
-                   <span class="fd-switch__icon--off fd-switch__icon sap-icon--decline"></span>
+                   <i role="presentation" class="fd-switch__icon--off fd-switch__icon sap-icon--decline"></i>
                </div>
             </div>
         </span>

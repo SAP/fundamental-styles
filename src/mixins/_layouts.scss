@@ -129,3 +129,20 @@ $flow_width_of_gutter: 0.5rem;
     margin-right: calc((((100% - #{$gutter_width_total}) / #{$cols}) * #{$span}) + #{$gutter_width_spanned});
   }
 }
+
+/*
+   Fully expanded pseudo element
+   Requires parent to have specified position
+*/
+@mixin fd-pseudo-expand($position: "before") {
+  &::#{$position} {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @content;
+  }
+}
