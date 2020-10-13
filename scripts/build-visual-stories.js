@@ -59,16 +59,16 @@ const getStyleImports = (storyFile) => {
                         const identifier = astPath.node.key || {};
                         const value = astPath.node.value || {};
                         if (identifier.name === 'components') {
-                            let depsAsString = 'empty';
+                            let depNamesArr = 'empty';
                             if (value.type === 'ArrayExpression') {
                                 const dependencies = value.elements || [];
-                                depsAsString = dependencies.map(eachDependency => {
+                                depNamesArr = dependencies.map(eachDependency => {
                                     if (eachDependency.value && eachDependency.value.trim().length) {
-                                        return `'${eachDependency.value}'`;
+                                        return eachDependency.value;
                                     }
                                     return '';
-                                }).join(', ');
-                                resolve(`components: [${depsAsString}]`);
+                                });
+                                resolve(depNamesArr);
                             }
                             // print(storyFile, () => {
                             //     console.log('🕸', depsAsString);
@@ -91,17 +91,19 @@ componentDirs.map((directory) => {
             const componentName = fileName.substr(0, fileName.indexOf('.'));
             const prettyCompName = componentName.split('-').map(str => str[0].toUpperCase() + str.substr(1)).join(' ');
             const visualStoryName = componentName.split('-').map(str => str[0].toUpperCase() + str.substr(1)).join('');
-            const dependentStyleImports = await getStyleImports(`${directory.path}/${fileName}`);
+            const dependentCompsArr = await getStyleImports(`${directory.path}/${fileName}`);
+            const dependentComps = dependentCompsArr.map(name => `'${name}'`).join(', ');
+            const dependentStyleImports = dependentCompsArr.map(eachComp => `import '../../dist/${eachComp}.css';`).join('\n');
             const fileContents =
 `import * as Case from 'case';
 import * as stories from './${componentName}.stories.js';
 
 export default {
-    title: 'Visual/${prettyCompName}'${dependentStyleImports ? ',' : ''}
+    title: 'Visual/${prettyCompName}'${dependentComps ? ',' : ''}
     ${
-    dependentStyleImports ?
+    dependentComps ?
         `parameters: {
-        ${dependentStyleImports}
+        components: [${dependentComps}]
     }
 ` : ''
 }
