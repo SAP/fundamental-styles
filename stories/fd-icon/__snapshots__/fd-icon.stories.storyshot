@@ -1,0 +1,7899 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Fd-icon Available Icons 1`] = `
+<div
+  class="fddocs-container"
+>
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--accidental-leave"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--accidental-leave
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--account"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--account
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--wrench"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--wrench
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--windows-doors"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--windows-doors
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--washing-machine"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--washing-machine
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--visits"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--visits
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--video"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--video
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--travel-expense"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--travel-expense
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--temperature"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--temperature
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--task"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--task
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--synchronize"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--synchronize
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--survey"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--survey
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--settings"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--settings
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--search"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--search
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sales-document"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sales-document
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--retail-store"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--retail-store
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--refresh"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--refresh
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--product"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--product
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--present"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--present
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--ppt-attachment"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--ppt-attachment
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--pool"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--pool
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--pie-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--pie-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--picture"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--picture
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--photo-voltaic"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--photo-voltaic
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--phone"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--phone
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--pending"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--pending
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--pdf-attachment"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--pdf-attachment
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--past"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--past
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--outgoing-call"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--outgoing-call
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--opportunity"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--opportunity
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--opportunities"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--opportunities
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--notes"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--notes
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--money-bills"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--money-bills
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--map"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--map
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--log"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--log
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--line-charts"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--line-charts
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--lightbulb"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--lightbulb
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--leads"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--leads
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--lead"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--lead
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--laptop"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--laptop
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--kpi-managing-my-area"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--kpi-managing-my-area
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--kpi-corporate-performance"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--kpi-corporate-performance
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--incoming-call"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--incoming-call
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--inbox"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--inbox
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--horizontal-bar-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--horizontal-bar-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--history"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--history
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--heating-cooling"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--heating-cooling
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--gantt-bars"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--gantt-bars
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--future"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--future
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--fridge"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--fridge
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--fallback"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--fallback
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--expense-report"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--expense-report
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--excel-attachment"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--excel-attachment
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--energy-saving-lightbulb"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--energy-saving-lightbulb
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--employee"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--employee
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--email"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--email
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--edit"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--edit
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--duplicate"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--duplicate
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--download"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--download
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--doc-attachment"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--doc-attachment
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--dishwasher"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--dishwasher
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--delete"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--delete
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--decline"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--decline
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--complete"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--complete
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--competitor"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--competitor
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--collections-management"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--collections-management
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--chalkboard"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--chalkboard
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--cart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--cart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--card"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--card
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--camera"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--camera
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--calendar"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--calendar
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--begin"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--begin
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--basket"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--basket
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--bar-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--bar-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--attachment"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--attachment
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--arrow-top"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--arrow-top
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--arrow-right"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--arrow-right
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--arrow-left"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--arrow-left
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--arrow-bottom"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--arrow-bottom
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--approvals"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--approvals
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--appointment"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--appointment
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--alphabetical-order"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--alphabetical-order
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--along-stacked-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--along-stacked-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--alert"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--alert
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--addresses"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--addresses
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--address-book"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--address-book
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--add-filter"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--add-filter
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--add-favorite"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--add-favorite
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--add"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--add
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--activities"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--activities
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--action"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--action
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--accept"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--accept
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--hint"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--hint
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--group"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--group
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--check-availability"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--check-availability
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--weather-proofing"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--weather-proofing
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--payment-approval"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--payment-approval
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--batch-payments"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--batch-payments
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--bed"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--bed
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--arobase"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--arobase
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--family-care"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--family-care
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--favorite"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--favorite
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--navigation-right-arrow"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--navigation-right-arrow
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--navigation-left-arrow"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--navigation-left-arrow
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--e-care"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--e-care
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--less"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--less
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--lateness"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--lateness
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--lab"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--lab
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--internet-browser"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--internet-browser
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--instance"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--instance
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--inspection"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--inspection
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--image-viewer"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--image-viewer
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--home"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--home
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--grid"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--grid
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--goalseek"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--goalseek
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--general-leave-request"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--general-leave-request
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--create-leave-request"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--create-leave-request
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--flight"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--flight
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--filter"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--filter
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--favorite-list"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--favorite-list
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--factory"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--factory
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--endoscopy"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--endoscopy
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--employee-pane"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--employee-pane
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--employee-approvals"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--employee-approvals
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--email-read"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--email-read
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--electrocardiogram"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--electrocardiogram
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--documents"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--documents
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--decision"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--decision
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--database"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--database
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--customer-history"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--customer-history
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--customer"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--customer
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--credit-card"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--credit-card
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--create-entry-time"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--create-entry-time
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--contacts"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--contacts
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--compare"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--compare
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--clinical-order"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--clinical-order
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--chain-link"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--chain-link
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--pull-down"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--pull-down
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--cargo-train"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--cargo-train
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--car-rental"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--car-rental
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--business-card"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--business-card
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--bar-code"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--bar-code
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--folder-blank"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--folder-blank
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--passenger-train"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--passenger-train
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--question-mark"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--question-mark
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--world"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--world
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--iphone"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--iphone
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--ipad"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--ipad
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--warning"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--warning
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sort"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sort
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--course-book"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--course-book
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--course-program"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--course-program
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--add-coursebook"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--add-coursebook
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--print"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--print
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--save"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--save
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--play"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--play
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--pause"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--pause
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--record"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--record
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--response"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--response
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--pushpin-on"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--pushpin-on
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--pushpin-off"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--pushpin-off
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--unfavorite"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--unfavorite
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--learning-assistant"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--learning-assistant
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--timesheet"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--timesheet
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--time-entry-request"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--time-entry-request
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--list"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--list
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--action-settings"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--action-settings
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--share"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--share
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--feed"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--feed
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--role"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--role
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--flag"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--flag
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--post"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--post
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--inspect"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--inspect
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--inspect-down"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--inspect-down
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--appointment-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--appointment-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--target-group"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--target-group
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--marketing-campaign"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--marketing-campaign
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--message-error"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--message-error
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--notification"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--notification
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--comment"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--comment
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--shipping-status"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--shipping-status
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--collaborate"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--collaborate
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--shortcut"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--shortcut
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--lead-outdated"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--lead-outdated
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--tools-opportunity"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--tools-opportunity
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--permission"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--permission
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--supplier"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--supplier
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--table-view"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--table-view
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--table-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--table-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--switch-views"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--switch-views
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--e-learning"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--e-learning
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--manager"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--manager
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--switch-classes"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--switch-classes
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--simple-payment"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--simple-payment
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--signature"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--signature
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sales-order-item"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sales-order-item
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sales-order"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sales-order
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--request"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--request
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--receipt"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--receipt
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--puzzle"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--puzzle
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--process"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--process
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--private"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--private
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--popup-window"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--popup-window
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--person-placeholder"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--person-placeholder
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--per-diem"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--per-diem
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--paper-plane"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--paper-plane
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--paid-leave"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--paid-leave
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--pdf-reader"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--pdf-reader
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--overview-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--overview-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--overlay"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--overlay
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--org-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--org-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--number-sign"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--number-sign
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--notification-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--notification-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--my-sales-order"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--my-sales-order
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--meal"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--meal
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--loan"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--loan
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--order-status"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--order-status
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--customer-order-entry"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--customer-order-entry
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--performance"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--performance
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--menu"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--menu
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--employee-lookup"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--employee-lookup
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--education"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--education
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--customer-briefing"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--customer-briefing
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--customer-and-contacts"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--customer-and-contacts
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--my-view"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--my-view
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--accelerated"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--accelerated
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--to-be-reviewed"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--to-be-reviewed
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--warning2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--warning2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--feeder-arrow"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--feeder-arrow
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--quality-issue"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--quality-issue
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--workflow-tasks"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--workflow-tasks
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--create"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--create
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--home-share"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--home-share
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--globe"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--globe
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--tags"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--tags
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--work-history"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--work-history
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--x-ray"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--x-ray
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--wounds-doc"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--wounds-doc
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--web-cam"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--web-cam
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--waiver"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--waiver
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--vertical-bar-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--vertical-bar-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--upstacked-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--upstacked-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--trip-report"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--trip-report
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--microphone"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--microphone
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--unpaid-leave"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--unpaid-leave
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--tree"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--tree
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--toaster-up"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--toaster-up
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--toaster-top"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--toaster-top
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--toaster-down"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--toaster-down
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--time-account"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--time-account
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--theater"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--theater
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--taxi"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--taxi
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--subway-train"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--subway-train
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--study-leave"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--study-leave
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--stethoscope"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--stethoscope
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--step"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--step
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sonography"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sonography
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--soccor"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--soccor
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--physical-activity"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--physical-activity
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--pharmacy"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--pharmacy
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--official-service"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--official-service
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--offsite-work"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--offsite-work
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--nutrition-activity"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--nutrition-activity
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--newspaper"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--newspaper
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--monitor-payments"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--monitor-payments
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--map-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--map-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--machine"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--machine
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--mri-scan"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--mri-scan
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--end-user-experience-monitoring"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--end-user-experience-monitoring
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--unwired"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--unwired
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--customer-financial-fact-sheet"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--customer-financial-fact-sheet
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--retail-store-manager"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--retail-store-manager
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--Netweaver-business-client"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--Netweaver-business-client
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--electronic-medical-record"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--electronic-medical-record
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--eam-work-order"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--eam-work-order
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--customer-view"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--customer-view
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--crm-service-manager"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--crm-service-manager
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--crm-sales"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--crm-sales
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--widgets"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--widgets
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--commission-check"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--commission-check
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--collections-insight"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--collections-insight
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--clinical-tast-tracker"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--clinical-tast-tracker
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--citizen-connect"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--citizen-connect
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--cart-approval"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--cart-approval
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--capital-projects"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--capital-projects
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--bo-strategy-management"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--bo-strategy-management
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--business-objects-mobile"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--business-objects-mobile
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--business-objects-explorer"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--business-objects-explorer
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--business-objects-experience"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--business-objects-experience
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--bbyd-dashboard"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--bbyd-dashboard
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--bbyd-active-sales"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--bbyd-active-sales
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--business-by-design"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--business-by-design
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--business-one"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--business-one
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sap-box"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sap-box
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--manager-insight"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--manager-insight
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--accounting-document-verification"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--accounting-document-verification
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--hr-approval"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--hr-approval
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--idea-wall"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--idea-wall
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--Chart-Tree-Map"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--Chart-Tree-Map
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--cart-5"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--cart-5
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--cart-4"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--cart-4
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--wallet"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--wallet
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--vehicle-repair"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--vehicle-repair
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--upload"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--upload
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--unlocked"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--unlocked
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--umbrella"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--umbrella
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--travel-request"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--travel-request
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--travel-expense-report"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--travel-expense-report
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--travel-itinerary"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--travel-itinerary
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--time-overtime"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--time-overtime
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--thing-type"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--thing-type
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--technical-object"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--technical-object
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--tag"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--tag
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--syringe"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--syringe
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--syntax"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--syntax
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--suitcase"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--suitcase
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--simulate"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--simulate
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--shield"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--shield
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--share-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--share-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sales-quote"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sales-quote
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--repost"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--repost
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--provision"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--provision
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--projector"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--projector
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--add-product"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--add-product
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--pipeline-analysis"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--pipeline-analysis
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--add-photo"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--add-photo
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--palette"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--palette
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--nurse"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--nurse
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sales-notification"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sales-notification
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--mileage"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--mileage
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--meeting-room"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--meeting-room
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--media-forward"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--media-forward
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--media-play"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--media-play
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--media-pause"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--media-pause
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--media-reverse"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--media-reverse
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--media-rewind"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--media-rewind
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--measurement-document"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--measurement-document
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--measuring-point"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--measuring-point
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--measure"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--measure
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--map-3"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--map-3
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--locked"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--locked
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--letter"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--letter
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--journey-arrive"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--journey-arrive
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--journey-change"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--journey-change
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--journey-depart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--journey-depart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--it-system"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--it-system
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--it-instance"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--it-instance
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--it-host"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--it-host
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--iphone-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--iphone-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--ipad-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--ipad-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--inventory"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--inventory
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--insurance-house"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--insurance-house
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--insurance-life"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--insurance-life
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--insurance-car"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--insurance-car
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--initiative"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--initiative
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--incident"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--incident
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--group-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--group-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--goal"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--goal
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--functional-location"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--functional-location
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--full-screen"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--full-screen
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--form"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--form
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--fob-watch"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--fob-watch
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--blank-tag"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--blank-tag
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--family-protection"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--family-protection
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--folder"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--folder
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--fax-machine"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--fax-machine
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--example"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--example
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--eraser"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--eraser
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--employee-rejections"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--employee-rejections
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--drop-down-list"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--drop-down-list
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--draw-rectangle"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--draw-rectangle
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--document"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--document
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--doctor"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--doctor
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--discussion-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--discussion-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--discussion"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--discussion
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--dimension"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--dimension
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--customer-and-supplier"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--customer-and-supplier
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--crop"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--crop
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--add-contact"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--add-contact
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--compare-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--compare-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--color-fill"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--color-fill
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--collision"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--collision
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--curriculum"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--curriculum
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--chart-axis"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--chart-axis
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--full-stacked-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--full-stacked-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--full-stacked-column-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--full-stacked-column-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--vertical-bar-chart-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--vertical-bar-chart-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--horizontal-bar-chart-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--horizontal-bar-chart-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--horizontal-stacked-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--horizontal-stacked-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--vertical-stacked-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--vertical-stacked-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--choropleth-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--choropleth-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--geographic-bubble-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--geographic-bubble-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--multiple-radar-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--multiple-radar-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--radar-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--radar-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--crossed-line-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--crossed-line-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--multiple-line-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--multiple-line-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--multiple-bar-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--multiple-bar-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--line-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--line-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--line-chart-dual-axis"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--line-chart-dual-axis
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--bubble-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--bubble-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--scatter-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--scatter-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--multiple-pie-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--multiple-pie-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--column-chart-dual-axis"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--column-chart-dual-axis
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--tag-cloud-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--tag-cloud-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--area-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--area-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--cause"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--cause
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--cart-3"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--cart-3
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--cart-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--cart-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--bus-public-transport"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--bus-public-transport
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--burglary"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--burglary
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--building"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--building
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--border"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--border
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--bookmark"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--bookmark
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--badge"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--badge
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--attachment-audio"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--attachment-audio
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--attachment-video"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--attachment-video
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--attachment-html"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--attachment-html
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--attachment-photo"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--attachment-photo
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--attachment-e-pub"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--attachment-e-pub
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--attachment-zip-file"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--attachment-zip-file
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--attachment-text-file"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--attachment-text-file
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--add-equipment"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--add-equipment
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--add-activity"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--add-activity
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--activity-individual"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--activity-individual
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--activity-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--activity-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--add-activity-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--add-activity-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--activity-items"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--activity-items
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--activity-assigned-to-goal"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--activity-assigned-to-goal
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--status-positive"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--status-positive
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--status-completed"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--status-completed
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--status-negative"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--status-negative
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--status-error"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--status-error
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--status-inactive"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--status-inactive
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--status-critical"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--status-critical
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--status-in-progress"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--status-in-progress
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--blank-tag-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--blank-tag-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--cart-full"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--cart-full
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--locate-me"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--locate-me
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--paging"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--paging
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--company-view"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--company-view
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--document-text"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--document-text
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--explorer"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--explorer
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--personnel-view"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--personnel-view
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sorting-ranking"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sorting-ranking
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--drill-down"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--drill-down
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--drill-up"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--drill-up
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--vds-file"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--vds-file
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sap-logo-shape"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sap-logo-shape
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--folder-full"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--folder-full
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--system-exit"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--system-exit
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--system-exit-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--system-exit-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--close-command-field"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--close-command-field
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--open-command-field"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--open-command-field
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sys-enter-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sys-enter-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sys-enter"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sys-enter
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sys-help-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sys-help-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sys-help"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sys-help
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sys-back"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sys-back
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sys-back-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sys-back-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sys-cancel"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sys-cancel
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sys-cancel-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sys-cancel-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--open-folder"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--open-folder
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sys-find-next"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sys-find-next
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sys-find"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sys-find
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sys-monitor"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sys-monitor
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sys-prev-page"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sys-prev-page
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sys-first-page"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sys-first-page
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sys-next-page"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sys-next-page
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sys-last-page"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sys-last-page
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--generate-shortcut"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--generate-shortcut
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--create-session"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--create-session
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--display-more"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--display-more
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--enter-more"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--enter-more
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--zoom-in"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--zoom-in
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--zoom-out"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--zoom-out
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--header"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--header
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--detail-view"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--detail-view
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--show-edit"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--show-edit
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--collapse"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--collapse
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--expand"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--expand
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--positive"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--positive
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--negative"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--negative
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--display"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--display
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--menu2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--menu2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--redo"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--redo
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--undo"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--undo
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--navigation-up-arrow"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--navigation-up-arrow
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--navigation-down-arrow"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--navigation-down-arrow
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--down"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--down
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--up"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--up
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--shelf"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--shelf
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--background"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--background
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--resize"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--resize
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--move"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--move
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--show"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--show
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--hide"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--hide
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--nav-back"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--nav-back
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--error"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--error
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--slim-arrow-right"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--slim-arrow-right
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--slim-arrow-left"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--slim-arrow-left
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--slim-arrow-down"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--slim-arrow-down
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--slim-arrow-up"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--slim-arrow-up
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--forward"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--forward
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--overflow"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--overflow
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--value-help"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--value-help
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--multiselect"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--multiselect
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--exitfullscreen"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--exitfullscreen
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sys-add"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sys-add
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sys-minus"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sys-minus
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--dropdown"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--dropdown
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--expand-group"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--expand-group
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--vertical-grip"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--vertical-grip
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--horizontal-grip"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--horizontal-grip
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sort-descending"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sort-descending
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sort-ascending"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sort-ascending
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--arrow-down"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--arrow-down
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--legend"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--legend
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--collapse-group"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--collapse-group
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--message-warning"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--message-warning
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--message-information"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--message-information
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--message-success"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--message-success
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--restart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--restart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--stop"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--stop
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--add-process"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--add-process
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--cancel-maintenance"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--cancel-maintenance
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--activate"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--activate
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--resize-horizontal"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--resize-horizontal
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--resize-vertical"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--resize-vertical
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--connected"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--connected
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--disconnected"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--disconnected
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--edit-outside"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--edit-outside
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--key"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--key
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--minimize"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--minimize
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--back-to-top"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--back-to-top
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--hello-world"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--hello-world
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--outbox"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--outbox
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--donut-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--donut-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--heatmap-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--heatmap-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--horizontal-bullet-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--horizontal-bullet-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--vertical-bullet-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--vertical-bullet-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--call"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--call
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--download-from-cloud"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--download-from-cloud
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--upload-to-cloud"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--upload-to-cloud
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--jam"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--jam
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sap-ui5"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sap-ui5
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--message-popup"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--message-popup
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--cloud"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--cloud
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--horizontal-waterfall-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--horizontal-waterfall-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--vertical-waterfall-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--vertical-waterfall-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--broken-link"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--broken-link
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--headset"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--headset
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--thumb-up"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--thumb-up
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--thumb-down"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--thumb-down
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--multiselect-all"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--multiselect-all
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--multiselect-none"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--multiselect-none
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--scissors"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--scissors
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sound"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sound
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sound-loud"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sound-loud
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--sound-off"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--sound-off
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--date-time"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--date-time
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--user-settings"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--user-settings
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--key-user-settings"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--key-user-settings
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--developer-settings"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--developer-settings
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--text-formatting"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--text-formatting
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--bold-text"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--bold-text
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--italic-text"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--italic-text
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--underline-text"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--underline-text
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--text-align-justified"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--text-align-justified
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--text-align-left"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--text-align-left
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--text-align-center"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--text-align-center
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--text-align-right"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--text-align-right
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--bullet-text"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--bullet-text
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--numbered-text"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--numbered-text
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--co"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--co
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--ui-notifications"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--ui-notifications
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--bell"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--bell
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--cancel-share"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--cancel-share
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--write-new-document"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--write-new-document
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--write-new"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--write-new
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--cancel"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--cancel
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--screen-split-one"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--screen-split-one
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--screen-split-two"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--screen-split-two
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--screen-split-three"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--screen-split-three
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--customize"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--customize
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--user-edit"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--user-edit
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--source-code"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--source-code
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--copy"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--copy
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--paste"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--paste
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--line-chart-time-axis"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--line-chart-time-axis
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--clear-filter"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--clear-filter
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--reset"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--reset
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--trend-up"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--trend-up
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--trend-down"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--trend-down
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--cursor"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--cursor
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--add-document"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--add-document
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--create-form"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--create-form
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--resize-corner"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--resize-corner
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--chevron-phase"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--chevron-phase
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--chevron-phase-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--chevron-phase-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--rhombus-milestone"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--rhombus-milestone
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--rhombus-milestone-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--rhombus-milestone-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--circle-task"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--circle-task
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--circle-task-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--circle-task-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--project-definition-triangle"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--project-definition-triangle
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--project-definition-triangle-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--project-definition-triangle-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--master-task-triangle"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--master-task-triangle
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--master-task-triangle-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--master-task-triangle-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--program-triangles"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--program-triangles
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--program-triangles-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--program-triangles-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--mirrored-task-circle"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--mirrored-task-circle
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--mirrored-task-circle-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--mirrored-task-circle-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--checklist-item"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--checklist-item
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--checklist-item-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--checklist-item-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--checklist"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--checklist
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--checklist-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--checklist-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--chart-table-view"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--chart-table-view
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--filter-analytics"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--filter-analytics
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--filter-facets"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--filter-facets
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--filter-fields"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--filter-fields
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--indent"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--indent
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--outdent"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--outdent
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--heading-1"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--heading-1
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--heading-2"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--heading-2
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--heading-3"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--heading-3
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--decrease-line-height"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--decrease-line-height
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--increase-line-height"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--increase-line-height
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--fx"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--fx
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--add-folder"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--add-folder
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--away"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--away
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--busy"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--busy
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--appear-offline"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--appear-offline
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--blur"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--blur
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--pixelate"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--pixelate
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--horizontal-combination-chart"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--horizontal-combination-chart
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--add-employee"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--add-employee
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--text-color"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--text-color
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--browse-folder"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--browse-folder
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--primary-key"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--primary-key
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--two-keys"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--two-keys
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--strikethrough"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--strikethrough
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--text"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--text
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--responsive"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--responsive
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--desktop-mobile"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--desktop-mobile
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--table-row"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--table-row
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--table-column"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--table-column
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--validate"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--validate
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--keyboard-and-mouse"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--keyboard-and-mouse
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--touch"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--touch
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--expand-all"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--expand-all
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--collapse-all"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--collapse-all
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--combine"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--combine
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--split"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--split
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--megamenu"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--megamenu
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--feedback"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--feedback
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="fd-icon fd-icon--information"
+      style="font-size:3rem"
+    />
+    <div>
+      .fd-icon--information
+    </div>
+  </div>
+  <br />
+</div>
+`;
+
+exports[`Storyshots Components/Fd-icon Sizes 1`] = `
+<section>
+  
+
+    
+  <span
+    class="fd-icon fd-icon--cart"
+  />
+  
+    
+  <br />
+  
+    
+  <span
+    class="fd-icon fd-icon--cart"
+    style="font-size:5rem"
+  />
+  
+    
+  <br />
+  
+    
+  <span
+    class="fd-icon fd-icon--cart"
+    style="font-size:10rem"
+  />
+  
+
+</section>
+`;
