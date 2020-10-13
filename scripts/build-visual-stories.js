@@ -2,6 +2,9 @@ const { lstatSync, readdirSync, writeFileSync } = require('fs');
 const path = require('path');
 const lineReader = require('line-reader');
 const srcPath = path.join(__dirname, '../stories');
+const babelParser = require('@babel/parser');
+const traverse = require('@babel/traverse').default;
+const fs = require('fs');
 
 const isComponentDirectory = (source) => {
     const ignoredDirectories = ['utils', 'Docs'];
@@ -15,18 +18,64 @@ const componentDirs = readdirSync(srcPath).map(name => path.join(srcPath, name))
     };
 });
 
+// const getStyleImports = (storyFile) => {
+//     return new Promise(resolve => {
+//         const cssImportStatementRegex = /import.*\.css';/g;
+//         let styleImports = [];
+//         lineReader.eachLine(storyFile, (line, last) => {
+//             if (line.match(cssImportStatementRegex)) {
+//                 styleImports.push(line);
+//             }
+
+//             if (last) {
+//                 resolve(styleImports.length ? styleImports.join('\n') : '');
+//                 return false; // stop reading
+//             }
+//         });
+//     });
+// };
+
+const print = (fileName, printer) => {
+    if (fileName.indexOf('button') !== -1) {
+        printer();
+    }
+};
+
 const getStyleImports = (storyFile) => {
     return new Promise(resolve => {
-        const cssImportStatementRegex = /import.*\.css';/g;
-        let styleImports = [];
-        lineReader.eachLine(storyFile, (line, last) => {
-            if (line.match(cssImportStatementRegex)) {
-                styleImports.push(line);
+        fs.readFile(storyFile, (err, data) => {
+            if (err) {
+                console.error('☢️', err);
             }
-
-            if (last) {
-                resolve(styleImports.length ? styleImports.join('\n') : '');
-                return false; // stop reading
+            if (data) {
+                const ast = babelParser.parse(data.toString(), {
+                    sourceType: 'module'
+                });
+                traverse(ast, {
+                    ObjectProperty: function(astPath) {
+                        // print(storyFile, () => {
+                        //     console.log('🕸', astPath.node.key.name, '>>>>>>>.');
+                        // });
+                        const identifier = astPath.node.key || {};
+                        const value = astPath.node.value || {};
+                        if (identifier.name === 'components') {
+                            let depsAsString = 'empty';
+                            if (value.type === 'ArrayExpression') {
+                                const dependencies = value.elements || [];
+                                depsAsString = dependencies.map(eachDependency => {
+                                    if (eachDependency.value && eachDependency.value.trim().length) {
+                                        return `'${eachDependency.value}'`;
+                                    }
+                                    return '';
+                                }).join(', ');
+                                resolve(`components: [${depsAsString}]`);
+                            }
+                            // print(storyFile, () => {
+                            //     console.log('🕸', depsAsString);
+                            // });
+                        }
+                    }
+                });
             }
         });
     });
@@ -44,12 +93,18 @@ componentDirs.map((directory) => {
             const visualStoryName = componentName.split('-').map(str => str[0].toUpperCase() + str.substr(1)).join('');
             const dependentStyleImports = await getStyleImports(`${directory.path}/${fileName}`);
             const fileContents =
-`${dependentStyleImports}
-import * as Case from 'case';
+`import * as Case from 'case';
 import * as stories from './${componentName}.stories.js';
 
 export default {
-    title: 'Visual/${prettyCompName}'
+    title: 'Visual/${prettyCompName}'${dependentStyleImports ? ',' : ''}
+    ${
+    dependentStyleImports ?
+        `parameters: {
+        ${dependentStyleImports}
+    }
+` : ''
+}
 };
 
 export const ${visualStoryName} = () => {
