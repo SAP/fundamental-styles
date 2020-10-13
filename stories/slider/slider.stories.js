@@ -13,8 +13,8 @@ interval.`,
  */
 
 export const basic = () => `
-<div style="width: 50%">
-    <div class="fd-slider" role="slider">
+<div class="slider-container">
+    <div class="fd-slider" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50">
         <div class="fd-slider__wrapper">
             <div class="fd-slider__track">
                 <div class="fd-slider__track-range" style="width: 50%;"></div>
@@ -30,8 +30,8 @@ export const basic = () => `
  */
 
 export const range = () => `
-<div style="width: 50%">
-    <div class="fd-slider" role="slider">
+<div class="slider-container">
+    <div class="fd-slider" tabindex="0" role="slider" aria-label="range slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="40">
         <div class="fd-slider__wrapper">
             <div class="fd-slider__track">
                 <div class="fd-slider__track-range" style="width: 40%;left: 40%"></div>
@@ -44,8 +44,8 @@ export const range = () => `
 `;
 
 export const ticks = () => `
-<div style="width: 50%">
-    <div class="fd-slider" role="slider">
+<div class="slider-container">
+    <div class="fd-slider" tabindex="0" role="slider" aria-label="slider with ticks" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50">
         <div class="fd-slider__wrapper">
             <div class="fd-slider__track">
                 <div class="fd-slider__track-range" style="width: 50%;"></div>
@@ -79,8 +79,8 @@ ticks.parameters = {
 };
 
 export const ticksAndLabels = () => `
-<div style="width: 50%">
-    <div class="fd-slider" role="slider">
+<div class="slider-container">
+    <div class="fd-slider" tabindex="0" role="slider" aria-label="slider with ticks and labels" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50">
         <div class="fd-slider__wrapper">
             <div class="fd-slider__track">
                 <div class="fd-slider__track-range" style="width: 50%;"></div>

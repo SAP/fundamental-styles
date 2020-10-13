@@ -19,6 +19,10 @@ $handle-hit-area-mobile-dimensions: 2.75rem;
   padding: 1rem 0;
   position: relative;
 
+  &:focus {
+    outline: none;
+  }
+
   &__wrapper {
     @include fd-reset();
 
