@@ -31,4 +31,8 @@
   --fdWizard_Content_Transparent_Background: var(--sapBackgroundColor);
   --fdWizard_Selection_Bar_Height: 0.313rem;
   --fdWizard_Selection_Bar_Background: var(--sapList_SelectionBorderColor);
+
+  /* Avatar */
+  --fdAvatar_BackgroundColor: var(--sapBackgroundColor);
+  --fdAvatar_Tile_Border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
 }

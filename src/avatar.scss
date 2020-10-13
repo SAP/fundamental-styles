@@ -102,7 +102,7 @@ $block: #{$fd-namespace}-avatar;
 
   // tile background
   &--tile {
-    background-color: var(--sapTile_IconColor);
+    background-color: var(--fdAvatar_Tile_BackgroundColor); // var(--sapTile_IconColor);
   }
 
   // optional border
