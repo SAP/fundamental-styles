@@ -40,7 +40,7 @@ $block: #{$fd-namespace}-avatar;
     [class*="#{$block}"] {
       @include fd-reset();
 
-      color: var(--sapContent_ContrastTextColor);
+      color: var(--fdAvatar_DefaultColor); // var(--sapContent_ContrastTextColor);
       background-color: $fd-avatar-background-color;
       display: inline-block;
       position: relative;
@@ -97,7 +97,7 @@ $block: #{$fd-namespace}-avatar;
 
   // placeholder background
   &--placeholder {
-    background-color: var(--sapContent_ImagePlaceholderBackground);
+    background-color: var(--fdAvatar_Placeholder_BackgroundColor); // var(--sapContent_ImagePlaceholderBackground);
   }
 
   // tile background

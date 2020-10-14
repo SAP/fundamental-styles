@@ -34,5 +34,6 @@
 
   /* Avatar */
   --fdAvatar_BackgroundColor: var(--sapBackgroundColor);
-  --fdAvatar_Tile_Border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
+  --fdAvatar_DefaultColor: var(--sapBackgroundColor);
+  --fdAvatar_Placeholder_BackgroundColor: var(--sapBackgroundColor);
 }
