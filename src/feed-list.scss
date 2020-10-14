@@ -5,7 +5,7 @@ $block: #{$fd-namespace}-feed-list;
 .#{$block} {
   $fd-feed-list-padding-start: 1rem;
   $fd-feed-list-padding-end: 0.5rem;
-  $fd-feed-list-margin-start: 0.5rem;
+  $fd-feed-list-margin-start: 0.75rem;
   $fd-feed-list-margin-end: 0;
   $fd-feed-list-icon-color: var(--sapContent_IconColor);
 
@@ -32,7 +32,7 @@ $block: #{$fd-namespace}-feed-list;
     @include fd-reset();
 
     display: flex;
-    padding: 1rem $fd-feed-list-padding-end 1rem $fd-feed-list-padding-start;
+    padding: 1rem;
 
     & + .#{$block}__body {
       border-top: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
@@ -42,31 +42,22 @@ $block: #{$fd-namespace}-feed-list;
   &__actions {
     @include fd-reset();
 
-    height: 2rem;
-  }
-
-  &__icon {
-    @include fd-reset();
-
-    @include fd-icon-overwrite() {
-      color: $fd-feed-list-icon-color;
-    }
-  }
-
-  .#{$block}__title {
-    @include fd-reset();
-
-    margin-left: $fd-feed-list-margin-start;
-    margin-right: $fd-feed-list-margin-end;
+    float: right;
+    margin: 0.5rem;
+    position: relative;
+    top: -1rem;
+    right: -1rem;
 
     @include fd-rtl() {
-      margin-left: $fd-feed-list-margin-end;
-      margin-right: $fd-feed-list-margin-start;
+      float: left;
+      right: 1rem;
+      left: -1rem;
     }
+  }
 
-    &--icon {
-      color: $fd-feed-list-icon-color;
-    }
+  &__actions--s {
+    padding-left: 0.75rem;
+    padding-bottom: 0.25rem;
   }
 
   &--group {
@@ -108,7 +99,7 @@ $block: #{$fd-namespace}-feed-list;
     @include fd-reset();
 
     display: flex;
-    padding-top: 0.5rem;
+    padding-top: 0.375rem;
 
     &--date {
       color: var(--sapNeutralTextColor);
@@ -121,7 +112,7 @@ $block: #{$fd-namespace}-feed-list;
     }
 
     .#{$block}__text {
-      margin-top: 1rem;
+      padding-top: 0.625rem;
     }
   }
 }

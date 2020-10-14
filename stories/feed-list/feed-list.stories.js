@@ -26,7 +26,7 @@ export const standard = () => `
     <div class="fd-feed-list" aria-label="Feed List Item default example">
         <div class="fd-feed-list__body">
             <div 
-                class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb 
+                class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
                 style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
                 role="img" 
                 aria-label="John Doe"
@@ -218,53 +218,51 @@ export const withActions = () => `
                 role="img" 
                 aria-label="John Doe"
                 title="John Doe">    
-            </div>
-        
+            </div>   
+            
             <div class="fd-feed-list__content">
+                <div class="fd-feed-list__actions">
+                    <div class="fd-popover">
+                        <div class="fd-popover__control">
+                            <button class="fd-button fd-button--compact fd-button--transparent" 
+                                    aria-label="More Options" aria-controls="actionSheetDesktop" aria-expanded="false" 
+                                    aria-haspopup="true" onclick="onPopoverClick('actionSheetDesktop');">
+                                <i class="sap-icon--overflow"></i>
+                            </button>
+                        </div>
+                        <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="actionSheetDesktop">
+                            <ul class="fd-action-sheet fd-action-sheet--compact" role="list" aria-label="List of contextual options">
+                                <li class="fd-action-sheet__item" role="listitem">
+                                    <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                        <i class="sap-icon--attachment"></i>
+                                        <span class="fd-button__text">Button 1</span>
+                                    </button>
+                                </li>
+                                <li class="fd-action-sheet__item" role="listitem">
+                                    <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                        <i class="sap-icon--add"></i>
+                                        <span class="fd-button__text">Button 2</span>
+                                    </button>
+                                </li>
+                                <li class="fd-action-sheet__item" role="listitem">
+                                    <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                        <i class="sap-icon--print"></i>
+                                        <span class="fd-button__text">Button 3</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <p class="fd-feed-list__text">
                     <span class="fd-feed-list__name">Joe Doe: </span>
-                    Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
-                </p>
-                
+                    <span>In hac habitasse platea dictumst. Fusce eu dui viverra, dictum justo in, pul aug. Praesent aliquam massa non lectus commodo, id vestibulum lectus auctor. Proin lorem quam, accumsan ac dui et, cursus ornare dui. Nunc ultricies dolor felis, in viverra mi venenatis in. Sed vel nisl a dui posuere ullamcorper. Donec posuere id massa at dictum. Suspendisse potenti.</span>
+                </p>                 
                 <div class="fd-feed-list__footer">
                     <small class="fd-feed-list__footer--date">Aug 20, 2020</small>
                 </div>
-            </div>          
+            </div>        
         </div>
-        
-        <div class="feed-list__actions">
-            <div class="fd-popover">
-                <div class="fd-popover__control">
-                    <button class="fd-button fd-button--transparent" aria-controls="pQqQR213" aria-haspopup="true" aria-expanded="true" aria-label="More">
-                        <i class="sap-icon--overflow"></i>
-                    </button>
-                </div>
-                <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="pQqQR213">
-                    <nav class="fd-menu">
-                        <ul class="fd-menu__list fd-menu__list--no-shadow">
-                            <li class="fd-menu__item">
-                                <a href="#" class="fd-menu__link">
-                                    <i class="sap-icon sap-icon--edit fd-feed-list__icon"></i>
-                                    <span class="fd-menu__title fd-feed-list__title fd-feed-list__title--icon">Edit</span>
-                                </a>
-                            </li>
-                            <li class="fd-menu__item">
-                                <a href="#" class="fd-menu__link">
-                                    <i class="sap-icon sap-icon--delete fd-feed-list__icon"></i>
-                                    <span class="fd-menu__title fd-feed-list__title fd-feed-list__title--icon">Delete</span>
-                                </a>
-                            </li>
-                            <li class="fd-menu__item">
-                                <a href="#" class="fd-menu__link">
-                                    <i class="sap-icon sap-icon--share-2 fd-feed-list__icon"></i>
-                                    <span class="fd-menu__title fd-feed-list__title fd-feed-list__title--icon">Share</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-         </div>
     </div>
 `;
 
@@ -346,9 +344,11 @@ group.parameters = {
 };
 
 export const mobile = () => `
+<div style="width: 350px; position: relative">
     <div class="fd-feed-list fd-feed-list--s" aria-label="Feed List Item small size example">
         <div class="fd-feed-list__body">
-            <div style="display: flex">
+            <div style="display: flex; justify-content: space-between">
+                <div style="display: flex">
                 <div
                     class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
                     style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
@@ -362,6 +362,16 @@ export const mobile = () => `
                         <small class="fd-feed-list__footer--date">Aug 20, 2020</small>
                     </div>
                 </div>
+                
+                </div>
+                <div class="fd-feed-list__action">
+                    <button class="fd-button fd-button--transparent"
+                            aria-label="More Options" aria-controls="actionSheetPhone" aria-expanded="false" 
+                            aria-haspopup="true" onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
+                            <i class="sap-icon--overflow"></i>
+                    </button>
+                </div>
+                
             </div>    
         
             <div class="fd-feed-list__content">
@@ -369,8 +379,38 @@ export const mobile = () => `
                     Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
                 </p>
             </div>
+            <div class="fd-action-sheet__wrapper" id="actionSheetPhone">
+        <h6 class="fd-action-sheet__title">Press cancel to hide action sheet</h6>
+        <ul class="fd-action-sheet fd-action-sheet--mobile" role="list" aria-label="List of contextual options">
+            <li class="fd-action-sheet__item" role="listitem">
+                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
+                    <i class="sap-icon--attachment"></i>
+                    <span class="fd-button__text">Button 1</span>
+                </button>
+            </li>
+            <li class="fd-action-sheet__item" role="listitem">
+                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
+                    <i class="sap-icon--add"></i>
+                    <span class="fd-button__text">Button 2</span>
+                </button>
+            </li>
+            <li class="fd-action-sheet__item" role="listitem">
+                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
+                    <i class="sap-icon--print"></i>
+                    <span class="fd-button__text">Button 3</span>
+                </button>
+            </li>
+            <li class="fd-action-sheet__item" role="listitem">
+                <button class="fd-button fd-button--full-width fd-button--negative"
+                        onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
+                    <span class="fd-button__text">Cancel</span>
+                </button>
+            </li>
+        </ul>
+    </div>
         </div> 
     </div>
+</div>
 `;
 
 mobile.storyName = 'Mobile';
@@ -393,6 +433,40 @@ export const rtl = () => `
             </div>
         
             <div dir="rtl" class="fd-feed-list__content">
+                <div class="fd-feed-list__actions">
+                    <div class="fd-popover">
+                        <div class="fd-popover__control">
+                            <button class="fd-button fd-button--compact fd-button--transparent" 
+                                    aria-label="More Options" aria-controls="actionSheetDesktop" aria-expanded="false" 
+                                    aria-haspopup="true" onclick="onPopoverClick('actionSheetDesktop');">
+                                <i class="sap-icon--overflow"></i>
+                            </button>
+                        </div>
+                        <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="actionSheetDesktop">
+                            <ul class="fd-action-sheet fd-action-sheet--compact" role="list" aria-label="List of contextual options">
+                                <li class="fd-action-sheet__item" role="listitem">
+                                    <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                        <i class="sap-icon--attachment"></i>
+                                        <span class="fd-button__text">Button 1</span>
+                                    </button>
+                                </li>
+                                <li class="fd-action-sheet__item" role="listitem">
+                                    <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                        <i class="sap-icon--add"></i>
+                                        <span class="fd-button__text">Button 2</span>
+                                    </button>
+                                </li>
+                                <li class="fd-action-sheet__item" role="listitem">
+                                    <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                        <i class="sap-icon--print"></i>
+                                        <span class="fd-button__text">Button 3</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+            
                 <p dir="rtl" class="fd-feed-list__text">
                     <span class="fd-feed-list__name">Joe Doe: </span>
                     <span>Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.</span>
@@ -404,39 +478,7 @@ export const rtl = () => `
             </div>          
         </div>
         
-        <div class="feed-list__actions">
-            <div class="fd-popover">
-                <div class="fd-popover__control">
-                    <button class="fd-button fd-button--transparent" aria-controls="pQqQR213" aria-haspopup="true" aria-expanded="true" aria-label="More">
-                        <i class="sap-icon--overflow"></i>
-                    </button>
-                </div>
-                <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="pQqQR213">
-                    <nav class="fd-menu">
-                        <ul class="fd-menu__list fd-menu__list--no-shadow">
-                            <li class="fd-menu__item">
-                                <a href="#" class="fd-menu__link">
-                                    <i class="sap-icon sap-icon--edit fd-feed-list__icon"></i>
-                                    <span class="fd-menu__title fd-feed-list__title fd-feed-list__title--icon">Edit</span>
-                                </a>
-                            </li>
-                            <li class="fd-menu__item">
-                                <a href="#" class="fd-menu__link">
-                                    <i class="sap-icon sap-icon--delete fd-feed-list__icon"></i>
-                                    <span class="fd-menu__title fd-feed-list__title fd-feed-list__title--icon">Delete</span>
-                                </a>
-                            </li>
-                            <li class="fd-menu__item">
-                                <a href="#" class="fd-menu__link">
-                                    <i class="sap-icon sap-icon--share-2 fd-feed-list__icon"></i>
-                                    <span class="fd-menu__title fd-feed-list__title fd-feed-list__title--icon">Share</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
+        
     </div>
 </div>
 `;
