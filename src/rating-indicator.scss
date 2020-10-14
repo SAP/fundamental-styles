@@ -5,8 +5,8 @@
 $block: #{$fd-namespace}-rating-indicator;
 
 :root {
-  --sapRating-indicator-icon-rated: url();
-  --sapRating-indicator-icon-unrated: url();
+  --sapRating-indicator-icon-rated: none;
+  --sapRating-indicator-icon-unrated: none;
 }
 
 .#{$block} {
