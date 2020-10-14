@@ -18,7 +18,7 @@ export default {
 -       You want to display empty fields for the user to input feed entries. Instead, use **Feed Input**.
         `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['feed-list', 'avatar', 'icon', 'button', 'menu', 'popover', 'link']
+        components: ['action-sheet', 'feed-list', 'avatar', 'icon', 'button', 'menu', 'popover', 'link']
     }
 };
 
@@ -344,7 +344,7 @@ group.parameters = {
 };
 
 export const mobile = () => `
-<div style="width: 350px; position: relative">
+<div style="width: 350px; height: 600px; position: relative">
     <div class="fd-feed-list fd-feed-list--s" aria-label="Feed List Item small size example">
         <div class="fd-feed-list__body">
             <div style="display: flex; justify-content: space-between">
