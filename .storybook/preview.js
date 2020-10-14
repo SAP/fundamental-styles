@@ -84,27 +84,33 @@ const withThemeProvider = makeDecorator({
   parameterName: 'themes',
   wrapper: (storyFn, context, { parameters }) => {
     let links = [].slice.call(document.getElementsByTagName('link'));
+    let toRemove = [];
     links.forEach(item => {
         if(item.attributes['data-theme-id']) {
-            item.parentNode.removeChild(item);
+            toRemove.push(item);
         }
     });
     let cssArr = context?.parameters?.components || [];
     cssArr.indexOf('info-label') === -1 && cssArr.push('info-label');
+
+    const styleLinkTag = (stylePath) => {
+      let link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = stylePath;
+      link.setAttribute('data-theme-id', context?.globals?.theme);
+      return link;
+    };
+
     cssArr.forEach(component => {
         let stylePath = `${component}-${context?.globals?.theme}.css`;
-        let link = document.createElement('link');
-
-        link.type = 'text/css';
-        link.rel = 'stylesheet';
-        link.href = stylePath;
-        link.setAttribute('data-theme-id', context?.globals?.theme);
-
-
-        document.head.appendChild(link);
-
-        return () => { document.head.removeChild(link); }
+        document.head.appendChild(styleLinkTag(stylePath));
     })
+
+    toRemove.forEach(item => {
+      item.parentNode.removeChild(item);
+    })
+    document.head.append(styleLinkTag(`theming-base-content/content/Base/baseLib/${context?.globals?.theme}/css_variables.css`));
+
     return storyFn(context);
   }
 })
