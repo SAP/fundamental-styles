@@ -31,7 +31,7 @@
     "storybook:static": "rm -rf storybook-static && npm run storybook:prep && STORYBOOK_ENV=docs build-storybook -c .storybook -o storybook-static -s .storybook/static/,node_modules/@sap-theming,dist/ --docs",
     "storybook:chromatic": "rm -rf storybook-chromatic && npm run storybook:prep && STORYBOOK_ENV=chromatic build-storybook -c .storybook -o storybook-chromatic -s .storybook/static/,node_modules/@sap-theming",
     "storybook:visual:setup": "jest --no-cache --config=./config/jest.config.js",
-    "chromatic": "npx chromatic"
+    "chromatic": "npx storybook:chromatic"
   },
   "repository": {
     "type": "git",
