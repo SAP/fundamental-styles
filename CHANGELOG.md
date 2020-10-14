@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.4...v0.13.0-rc.5) (2020-10-14)
+
+## [0.13.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.3...v0.13.0-rc.4) (2020-10-09)
+
+## [0.13.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.2...v0.13.0-rc.3) (2020-10-09)
+
+
+### Bug Fixes
+
+* add additional selector for radio color ([#1763](https://github.com/SAP/fundamental-styles/issues/1763)) ([6d5a8a0](https://github.com/SAP/fundamental-styles/commit/6d5a8a01645b5efa50ddd8aff50c9bd1e188d89b))
+
 ## [0.13.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.1...v0.13.0-rc.2) (2020-10-09)
 
 ## [0.13.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.0...v0.13.0-rc.1) (2020-10-08)
