@@ -3,6 +3,9 @@ import { withCssResources } from "@storybook/addon-cssresources";
 import { DocsContainer } from '@storybook/addon-docs/blocks';
 import DocsPage from './custom/components/DocsPage';
 import { makeDecorator } from '@storybook/addons';
+import prettify from 'html-prettify';
+
+const SOURCE_REGEX = /^\(\) => `((.|\n)*)`$/;
 
 export const parameters = {
   options: {
@@ -57,7 +60,11 @@ export const parameters = {
   docs: {
       container: DocsContainer,
       page: DocsPage,
-      theme: fundamentals
+      theme: fundamentals,
+      transformSource: (src, storyId) => {
+        const match = SOURCE_REGEX.exec(src);
+        return prettify(match ? match[1] : src);
+      },
   },
 };
 
