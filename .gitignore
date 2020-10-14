@@ -9,6 +9,7 @@ Thumbs.db
 *.log
 *.tgz
 __diff_output__
+storybook-chromatic
 storybook-static
 stories/docs/
 dist
