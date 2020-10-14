@@ -47,12 +47,11 @@ const DocsPage = () => {
             let links = [].slice.call(document.getElementsByTagName('link'));
             links.forEach(item => {
                 if(item.attributes['data-theme-id']) {
-                    console.log(item)
                     item.parentNode.removeChild(item);
                 }
             });
             let cssArr = context?.parameters?.components || [];
-            cssArr.push('info-label');
+            cssArr.indexOf('info-label') === -1 && cssArr.push('info-label');
             cssArr.forEach(component => {
                 let stylePath = `${component}-${themeState}.css`;
                 let link = document.createElement('link');
