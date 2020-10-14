@@ -7897,3 +7897,54 @@ exports[`Storyshots Components/Icon Sizes 1`] = `
 
 </section>
 `;
+
+exports[`Storyshots Components/Icon Styles 1`] = `
+<section>
+  
+    
+  <div
+    class="fddocs-container--icon"
+  >
+    
+        
+    <span
+      class="fd-icon fd-icon--arobase"
+      style="font-size: 3rem;"
+    />
+    
+    
+  </div>
+  
+    
+    
+  <div
+    class="fddocs-container--icon"
+  >
+    
+        
+    <span
+      class="fd-icon fd-icon--arobase"
+      style="font-size: 3rem; background: black; color: white;"
+    />
+    
+    
+  </div>
+  
+    
+    
+  <div
+    class="fddocs-container--icon"
+  >
+    
+        
+    <span
+      class="fd-icon fd-icon--arobase"
+      style="font-size: 3rem; background: transparent; color: blue;"
+    />
+    
+    
+  </div>
+  
+
+</section>
+`;

@@ -35,6 +35,27 @@ sizes.parameters = {
     }
 };
 
+export const styles = () => `
+    <div class="fddocs-container--icon">
+        <span class="fd-icon fd-icon--arobase" style="font-size: 3rem;"></span>
+    </div>
+    
+    <div class="fddocs-container--icon">
+        <span class="fd-icon fd-icon--arobase" style="font-size: 3rem; background: black; color: white;"></span>
+    </div>
+    
+    <div class="fddocs-container--icon">
+        <span class="fd-icon fd-icon--arobase" style="font-size: 3rem; background: transparent; color: blue;"></span>
+    </div>
+`;
+
+styles.parameters = {
+    docs: {
+        iframeHeight: 250,
+        storyDescription: 'Icons have default color and background according to the active theme. Those parameters could be changed by re-assigning color and background-color rules in styles.'
+    }
+};
+
 export const availableIcons = () => {
     const div = document.createElement('div');
     div.className = 'fddocs-container';
