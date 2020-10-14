@@ -51,7 +51,7 @@ export const parameters = {
             <link rel="stylesheet" type="text/css" href="./theming/sap_fiori_3.css"></link>
             <link rel="stylesheet" type="text/css" href="./theming-base-content/content/Base/baseLib/sap_fiori_3/css_variables.css"></link>
     `,
-      picked: true
+      picked: false
     }
   ],
   docs: {
