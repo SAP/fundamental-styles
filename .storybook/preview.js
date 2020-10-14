@@ -5,8 +5,6 @@ import DocsPage from './custom/components/DocsPage';
 import { makeDecorator } from '@storybook/addons';
 import prettify from 'html-prettify';
 
-const SOURCE_REGEX = /^\(\) => `((.|\n)*)`$/;
-
 export const parameters = {
   options: {
     showRoots: true,
@@ -39,13 +37,13 @@ export const parameters = {
         picked: false
     },
     {
-        id: 'windows-hcm-black',
-        code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-black.css"></link>',
+        id: 'windows-hcm-dark',
+        code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-dark.css"></link>',
         picked: false
     },
     {
-        id: 'windows-hcm-white',
-        code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-white.css"></link>',
+        id: 'windows-hcm-light',
+        code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-light.css"></link>',
         picked: false
     },
     {
@@ -61,14 +59,18 @@ export const parameters = {
       container: DocsContainer,
       page: DocsPage,
       theme: fundamentals,
-      transformSource: (src, storyId) => {
+      transformSource: (src) => {
+        // we strip out the () =>` ` from the story
+        // so that the source can be formatted and
+        // rendered as HTML.
+        const SOURCE_REGEX = /^\(\) => `((.|\n)*)`$/;
         const match = SOURCE_REGEX.exec(src);
         return prettify(match ? match[1] : src);
       },
   },
 };
 
-
+// this adds a toolbar addon for switching themes
 export const globalTypes = {
   theme: {
     name: 'Theme',
@@ -80,12 +82,16 @@ export const globalTypes = {
         { value: 'sap_fiori_3', title: 'Light' },
         { value: 'sap_fiori_3_dark', title: 'Dark' },
         { value: 'sap_fiori_3_light_dark', title: 'Light Dark' },
-        { value: 'sap_fiori_3_hcw', title: 'High Contrast White' },
+        { value: 'sap_fiori_3_hcw', title: 'High Contrast Light' },
         { value: 'sap_fiori_3_hcb', title: 'High Contrast Dark' },
       ],
     },
   },
 };
+
+// this decorator is used to inject link style tags
+// based on the current selected theme from the addon toolbar
+// and current component.
 const withThemeProvider = makeDecorator({
   name: 'withThemeProvider',
   parameterName: 'themes',
