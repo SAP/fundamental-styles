@@ -1,6 +1,5 @@
 const { lstatSync, readdirSync, writeFileSync } = require('fs');
 const path = require('path');
-const lineReader = require('line-reader');
 const srcPath = path.join(__dirname, '../stories');
 const babelParser = require('@babel/parser');
 const traverse = require('@babel/traverse').default;
@@ -18,34 +17,14 @@ const componentDirs = readdirSync(srcPath).map(name => path.join(srcPath, name))
     };
 });
 
-// const getStyleImports = (storyFile) => {
-//     return new Promise(resolve => {
-//         const cssImportStatementRegex = /import.*\.css';/g;
-//         let styleImports = [];
-//         lineReader.eachLine(storyFile, (line, last) => {
-//             if (line.match(cssImportStatementRegex)) {
-//                 styleImports.push(line);
-//             }
-
-//             if (last) {
-//                 resolve(styleImports.length ? styleImports.join('\n') : '');
-//                 return false; // stop reading
-//             }
-//         });
-//     });
-// };
-
-const print = (fileName, printer) => {
-    if (fileName.indexOf('button') !== -1) {
-        printer();
-    }
-};
-
-const getStyleImports = (storyFile) => {
-    return new Promise(resolve => {
+const getDependentComponents = (storyFile) => {
+    return new Promise((resolve, reject) => {
         fs.readFile(storyFile, (err, data) => {
             if (err) {
-                console.error('☢️', err);
+                const errorMSg = `ERROR while reading ${storyFile} in build-visual-stories.js`;
+                // eslint-disable-next-line no-console
+                console.error(errorMSg, err);
+                reject(errorMSg);
             }
             if (data) {
                 const ast = babelParser.parse(data.toString(), {
@@ -53,9 +32,6 @@ const getStyleImports = (storyFile) => {
                 });
                 traverse(ast, {
                     ObjectProperty: function(astPath) {
-                        // print(storyFile, () => {
-                        //     console.log('🕸', astPath.node.key.name, '>>>>>>>.');
-                        // });
                         const identifier = astPath.node.key || {};
                         const value = astPath.node.value || {};
                         if (identifier.name === 'components') {
@@ -70,9 +46,6 @@ const getStyleImports = (storyFile) => {
                                 });
                                 resolve(depNamesArr);
                             }
-                            // print(storyFile, () => {
-                            //     console.log('🕸', depsAsString);
-                            // });
                         }
                     }
                 });
@@ -91,9 +64,8 @@ componentDirs.map((directory) => {
             const componentName = fileName.substr(0, fileName.indexOf('.'));
             const prettyCompName = componentName.split('-').map(str => str[0].toUpperCase() + str.substr(1)).join(' ');
             const visualStoryName = componentName.split('-').map(str => str[0].toUpperCase() + str.substr(1)).join('');
-            const dependentCompsArr = await getStyleImports(`${directory.path}/${fileName}`);
-            const dependentComps = dependentCompsArr.map(name => `'${name}'`).join(', ');
-            const dependentStyleImports = dependentCompsArr.map(eachComp => `import '../../dist/${eachComp}.css';`).join('\n');
+            const dependentCompsArr = await getDependentComponents(`${directory.path}/${fileName}`);
+            const dependentComps = dependentCompsArr && dependentCompsArr.length ? dependentCompsArr.map(name => `'${name}'`).join(', ') : false;
             const fileContents =
 `import * as Case from 'case';
 import * as stories from './${componentName}.stories.js';
