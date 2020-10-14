@@ -10,7 +10,22 @@ exports[`Storyshots Components/Feed List Group 1`] = `
     
 `;
 
-exports[`Storyshots Components/Feed List Placeholder User Image 1`] = `
+exports[`Storyshots Components/Feed List Linked 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Feed List Mobile 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Feed List No image 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Feed List Placeholder image 1`] = `
 
     
 `;
@@ -20,32 +35,17 @@ exports[`Storyshots Components/Feed List RTL 1`] = `
 
 `;
 
-exports[`Storyshots Components/Feed List Show Less Button 1`] = `
+exports[`Storyshots Components/Feed List Show less 1`] = `
 
     
 `;
 
-exports[`Storyshots Components/Feed List Show More Button 1`] = `
-
-    
-`;
-
-exports[`Storyshots Components/Feed List Small 1`] = `
+exports[`Storyshots Components/Feed List Show more 1`] = `
 
     
 `;
 
 exports[`Storyshots Components/Feed List Standard 1`] = `
-
-    
-`;
-
-exports[`Storyshots Components/Feed List With User link 1`] = `
-
-    
-`;
-
-exports[`Storyshots Components/Feed List Without User Image 1`] = `
 
     
 `;
