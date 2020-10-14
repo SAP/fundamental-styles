@@ -97,12 +97,12 @@ $block: #{$fd-namespace}-avatar;
 
   // placeholder background
   &--placeholder {
-    background-color: var(--fdAvatar_Placeholder_BackgroundColor); // var(--sapContent_ImagePlaceholderBackground);
+    background-color: var(--fdAvatar_Placeholder_BackgroundColor);
   }
 
   // tile background
   &--tile {
-    background-color: var(--fdAvatar_Tile_BackgroundColor); // var(--sapTile_IconColor);
+    background-color: var(--fdAvatar_Tile_BackgroundColor);
   }
 
   // optional border
