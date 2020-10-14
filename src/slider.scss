@@ -19,10 +19,6 @@ $handle-hit-area-mobile-dimensions: 2.75rem;
   padding: 1rem 0;
   position: relative;
 
-  &:focus {
-    outline: none;
-  }
-
   &__inner {
     @include fd-reset();
 
@@ -124,6 +120,10 @@ $handle-hit-area-mobile-dimensions: 2.75rem;
       height: $handle-hit-area-desktop-dimensions;
       position: absolute;
       transform: translate(-25%, -25%);
+    }
+
+    &:focus {
+      outline: none;
     }
 
     @include fd-hover() {

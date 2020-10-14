@@ -14,11 +14,11 @@ interval.`,
 
 export const basic = () => `
 <div class="slider-container">
-    <div class="fd-slider" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50">
+    <div class="fd-slider">
         <div class="fd-slider__inner">
             <div class="fd-slider__track">
                 <div class="fd-slider__track-range" style="width: 50%;"></div>
-                <div class="fd-slider__handle" style="left: 50%;"></div>
+                <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="left: 50%;"></div>
             </div>
         </div>
     </div>
@@ -31,12 +31,12 @@ export const basic = () => `
 
 export const range = () => `
 <div class="slider-container">
-    <div class="fd-slider" tabindex="0" role="slider" aria-label="range slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="40">
+    <div class="fd-slider">
         <div class="fd-slider__inner">
             <div class="fd-slider__track">
                 <div class="fd-slider__track-range" style="width: 40%;left: 40%"></div>
-                <div class="fd-slider__handle" style="left: 40%;"></div>
-                <div class="fd-slider__handle" style="left: 80%;"></div>
+                <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="range slider left" aria-valuemin="1" aria-valuemax="80" aria-valuenow="40" style="left: 40%;"></div>
+                <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="range slider right" aria-valuemin="40" aria-valuemax="100" aria-valuenow="80" style="left: 80%;"></div>
             </div>
         </div>
     </div>
@@ -45,11 +45,11 @@ export const range = () => `
 
 export const ticks = () => `
 <div class="slider-container">
-    <div class="fd-slider" tabindex="0" role="slider" aria-label="slider with ticks" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50">
+    <div class="fd-slider">
         <div class="fd-slider__inner">
             <div class="fd-slider__track">
                 <div class="fd-slider__track-range" style="width: 50%;"></div>
-                <div class="fd-slider__handle" style="left: 50%;"></div>
+                <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="slider with ticks" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="left: 50%;"></div>
             </div>
             <div class="fd-slider__tick-wrapper">
                 <div class="fd-slider__ticks">
@@ -80,11 +80,11 @@ ticks.parameters = {
 
 export const ticksAndLabels = () => `
 <div class="slider-container">
-    <div class="fd-slider" tabindex="0" role="slider" aria-label="slider with ticks and labels" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50">
+    <div class="fd-slider">
         <div class="fd-slider__inner">
             <div class="fd-slider__track">
                 <div class="fd-slider__track-range" style="width: 50%;"></div>
-                <div class="fd-slider__handle" style="left: 50%;"></div>
+                <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="slider with ticks and labels" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="left: 50%;"></div>
             </div>
             <div class="fd-slider__tick-wrapper">
                 <div class="fd-slider__ticks">
@@ -128,11 +128,11 @@ ticksAndLabels.parameters = {
 
 export const mobileMode = () => `
 <div class="slider-container">
-    <div class="fd-slider" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50">
+    <div class="fd-slider">
         <div class="fd-slider__inner">
             <div class="fd-slider__track">
                 <div class="fd-slider__track-range" style="width: 50%;"></div>
-                <div class="fd-slider__handle fd-slider__handle--lg" style="left: 50%;"></div>
+                <div class="fd-slider__handle fd-slider__handle--lg" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="left: 50%;"></div>
             </div>
         </div>
     </div>
