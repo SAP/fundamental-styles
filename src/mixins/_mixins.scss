@@ -352,20 +352,20 @@
 }
 
 @mixin fd-icon-overwrite {
-  &[class*=sap-icon] {
+  &[class*=fd-icon] {
     @content;
   }
 }
 
 @mixin fd-icon-before-overwrite {
-  &[class*=sap-icon]::before,
+  &[class*=fd-icon]::before,
   &::before {
     @content;
   }
 }
 
 @mixin fd-icon-after-overwrite {
-  &[class*=sap-icon]::after,
+  &[class*=fd-icon]::after,
   &::after {
     @content;
   }
@@ -384,8 +384,8 @@
 }
 
 @mixin fd-icon-selector() {
-  [class*="sap-icon"],
-  &[class*="sap-icon"] {
+  [class*="fd-icon"],
+  &[class*="fd-icon"] {
     @content;
   }
 }

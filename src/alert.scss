@@ -68,10 +68,10 @@ $block: #{$fd-namespace}-alert;
   min-height: 2rem;
 
   // DEPRECATE v1.6 (brute force embedded solution to adopt new styles)
-  .sap-icon--message-error,
-  .sap-icon--message-warning,
-  .sap-icon--message-success,
-  .sap-icon--message-information {
+  .fd-icon--message-error,
+  .fd-icon--message-warning,
+  .fd-icon--message-success,
+  .fd-icon--message-information {
     display: none;
   }
 

@@ -31,7 +31,7 @@ exports[`Storyshots Components/Action Bar Default 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-left-arrow"
+            class="fd-icon--navigation-left-arrow"
             role="presentation"
           />
           
@@ -129,7 +129,7 @@ exports[`Storyshots Components/Action Bar Default 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-right-arrow"
+            class="fd-icon--navigation-right-arrow"
             role="presentation"
           />
           
@@ -221,7 +221,7 @@ exports[`Storyshots Components/Action Bar Descriptive 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-left-arrow"
+            class="fd-icon--navigation-left-arrow"
             role="presentation"
           />
           
@@ -328,7 +328,7 @@ exports[`Storyshots Components/Action Bar Descriptive 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-right-arrow"
+            class="fd-icon--navigation-right-arrow"
             role="presentation"
           />
           
@@ -434,7 +434,7 @@ exports[`Storyshots Components/Action Bar Mobile 1`] = `
             
                     
             <i
-              class="sap-icon--navigation-left-arrow"
+              class="fd-icon--navigation-left-arrow"
               role="presentation"
             />
             
@@ -485,7 +485,7 @@ exports[`Storyshots Components/Action Bar Mobile 1`] = `
                 
                             
                 <i
-                  class="sap-icon--overflow"
+                  class="fd-icon--overflow"
                 />
                 
                         
@@ -673,7 +673,7 @@ exports[`Storyshots Components/Action Bar Mobile 1`] = `
             
                     
             <i
-              class="sap-icon--navigation-right-arrow"
+              class="fd-icon--navigation-right-arrow"
               role="presentation"
             />
             
@@ -724,7 +724,7 @@ exports[`Storyshots Components/Action Bar Mobile 1`] = `
                 
                             
                 <i
-                  class="sap-icon--overflow"
+                  class="fd-icon--overflow"
                 />
                 
                         
@@ -1045,7 +1045,7 @@ exports[`Storyshots Components/Action Bar No description 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-left-arrow"
+            class="fd-icon--navigation-left-arrow"
             role="presentation"
           />
           
@@ -1136,7 +1136,7 @@ exports[`Storyshots Components/Action Bar No description 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-right-arrow"
+            class="fd-icon--navigation-right-arrow"
             role="presentation"
           />
           
@@ -1222,7 +1222,7 @@ exports[`Storyshots Components/Action Bar Responsive (M-L) 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-left-arrow"
+            class="fd-icon--navigation-left-arrow"
             role="presentation"
           />
           
@@ -1320,7 +1320,7 @@ exports[`Storyshots Components/Action Bar Responsive (M-L) 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-right-arrow"
+            class="fd-icon--navigation-right-arrow"
             role="presentation"
           />
           
@@ -1412,7 +1412,7 @@ exports[`Storyshots Components/Action Bar Responsive (XL) 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-left-arrow"
+            class="fd-icon--navigation-left-arrow"
             role="presentation"
           />
           
@@ -1510,7 +1510,7 @@ exports[`Storyshots Components/Action Bar Responsive (XL) 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-right-arrow"
+            class="fd-icon--navigation-right-arrow"
             role="presentation"
           />
           

@@ -17,7 +17,7 @@ The size of the message page adjusts to fit the available space.
 
 ## Guidelines
 
-- The icon in the message page is mandatory, and can vary depending on the message. The default icon is <code class="docs-code">.sap-icon--documents</code>.
+- The icon in the message page is mandatory, and can vary depending on the message. The default icon is <code class="docs-code">.fd-icon--documents</code>.
 - The title is also mandatory. Add a description with further details if needed. 
 - The message should be as concise as possible.
         `,
@@ -33,7 +33,7 @@ export const filter = () => `
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
-                <i role="presentation" class="sap-icon--filter fd-message-page__icon"></i>
+                <i role="presentation" class="fd-icon--filter fd-message-page__icon"></i>
             </div>
             <div role="status" aria-live="polite" class="fd-message-page__content">
                 <div class="fd-message-page__title">
@@ -53,7 +53,7 @@ filter.parameters = {
         iframeHeight: messageBoxHeight,
         storyDescription: `Use the filter message page for when a user has set a filter and there are no results. This message then prompts the user to remove or re-evaluate the filter they set for the page.
 
-Mandatory: Use the <code class="docs-code">.sap-icon--filter</code> icon.
+Mandatory: Use the <code class="docs-code">.fd-icon--filter</code> icon.
     `
     }
 };
@@ -63,7 +63,7 @@ export const search = () => `
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
-                <i role="presentation" class="sap-icon--search fd-message-page__icon"></i>
+                <i role="presentation" class="fd-icon--search fd-message-page__icon"></i>
             </div>
             <div role="status" aria-live="polite" class="fd-message-page__content">
                 <div class="fd-message-page__title">
@@ -80,7 +80,7 @@ search.parameters = {
         iframeHeight: messageBoxHeight,
         storyDescription: `Use the search message page for when a user has searched for something, but there are no results for that inquiry.
 
-Mandatory: Use the <code class="docs-code">.sap-icon--search</code> icon.
+Mandatory: Use the <code class="docs-code">.fd-icon--search</code> icon.
     `
     }
 };
@@ -90,7 +90,7 @@ export const noItems = () => `
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
-                <i role="presentation" class="sap-icon--product fd-message-page__icon"></i>
+                <i role="presentation" class="fd-icon--product fd-message-page__icon"></i>
             </div>
             <div role="status" aria-live="polite" class="fd-message-page__content">
                 <div class="fd-message-page__title">
@@ -107,7 +107,7 @@ noItems.parameters = {
         iframeHeight: messageBoxHeight,
         storyDescription: `Use the no items message page for when the user has viewed a page that is supposed to contain items, but there are none.
 
-Mandatory: Use the <code class="docs-code">.sap-icon--product</code> icon, or any other icon that matches your use case.
+Mandatory: Use the <code class="docs-code">.fd-icon--product</code> icon, or any other icon that matches your use case.
     `
     }
 };
@@ -117,7 +117,7 @@ export const error = () => `
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
-                <i role="presentation" class="sap-icon--document fd-message-page__icon"></i>
+                <i role="presentation" class="fd-icon--document fd-message-page__icon"></i>
             </div>
             <div role="status" aria-live="polite" class="fd-message-page__content">
                 <div class="fd-message-page__title">
@@ -137,7 +137,7 @@ error.parameters = {
         iframeHeight: messageBoxHeight,
         storyDescription: `Use the error message page for when the user attempts to view a page but an error has occurred, resulting in no available content. If you can, provide a link to the app start screen in the error message.
 
-Mandatory: Use the <code class="docs-code">.sap-icon--document</code> icon.
+Mandatory: Use the <code class="docs-code">.fd-icon--document</code> icon.
 
 Provide a link to the app start screen if you can.
     `
@@ -150,7 +150,7 @@ export const buttons = () => `
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
-                <i role="presentation" class="sap-icon--documents fd-message-page__icon"></i>
+                <i role="presentation" class="fd-icon--documents fd-message-page__icon"></i>
             </div>
             <div role="status" aria-live="polite" class="fd-message-page__content">
                 <div class="fd-message-page__title">

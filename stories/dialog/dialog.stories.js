@@ -355,7 +355,7 @@ export const Selectable = () => `
                     <input class="fd-input fd-input-group__input fd-input--compact" type="text" placeholder="Search...">
                     <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
                         <button class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact">
-                            <i class="sap-icon--search"></i>
+                            <i class="fd-icon--search"></i>
                         </button>
                     </span>
                 </div>

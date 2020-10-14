@@ -30,32 +30,32 @@ export const actionSheetDesktop = () => `
         <button class="fd-button fd-button--compact fd-button--transparent" 
                 aria-label="More Options" aria-controls="actionSheetDesktop" aria-expanded="false" 
                 aria-haspopup="true" onclick="onPopoverClick('actionSheetDesktop');">
-            <i class="sap-icon--settings"></i>
+            <i class="fd-icon--settings"></i>
         </button>
     </div>
     <div class="fd-popover__body" aria-hidden="true" id="actionSheetDesktop">
         <ul class="fd-action-sheet fd-action-sheet--compact" role="list" aria-label="List of contextual options">
             <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--attachment"></i>
+                    <i class="fd-icon--attachment"></i>
                     <span class="fd-button__text">Upload file</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--add"></i>
+                    <i class="fd-icon--add"></i>
                     <span class="fd-button__text">Assign user</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--print"></i>
+                    <i class="fd-icon--print"></i>
                     <span class="fd-button__text">Print</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--download"></i>
+                    <i class="fd-icon--download"></i>
                     <span class="fd-button__text">Download</span>
                 </button>
             </li>
@@ -87,32 +87,32 @@ export const actionSheetTablet = () => `
         <button class="fd-button fd-button--transparent" 
                 aria-label="More Options" aria-controls="actionSheetTablet" aria-expanded="false" 
                 aria-haspopup="true" onclick="onPopoverClick('actionSheetTablet');">
-            <i class="sap-icon--settings"></i>
+            <i class="fd-icon--settings"></i>
         </button>
     </div>
     <div class="fd-popover__body" aria-hidden="true" id="actionSheetTablet">
         <ul class="fd-action-sheet" role="list" aria-label="List of contextual options">
             <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--attachment"></i>
+                    <i class="fd-icon--attachment"></i>
                     <span class="fd-button__text">Upload file</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--add"></i>
+                    <i class="fd-icon--add"></i>
                     <span class="fd-button__text">Assign user</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--print"></i>
+                    <i class="fd-icon--print"></i>
                     <span class="fd-button__text">Print</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--download"></i>
+                    <i class="fd-icon--download"></i>
                     <span class="fd-button__text">Download</span>
                 </button>
             </li>
@@ -142,32 +142,32 @@ export const actionSheetMobile = () => `
     <button class="fd-button fd-button--transparent"
             aria-label="More Options" aria-controls="actionSheetPhone" aria-expanded="false" 
             aria-haspopup="true" onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
-        <i class="sap-icon--settings"></i>
+        <i class="fd-icon--settings"></i>
     </button>
     <div class="fd-action-sheet__wrapper" id="actionSheetPhone">
         <h6 class="fd-action-sheet__title">Press cancel to hide action sheet</h6>
         <ul class="fd-action-sheet fd-action-sheet--mobile" role="list" aria-label="List of contextual options">
             <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--attachment"></i>
+                    <i class="fd-icon--attachment"></i>
                     <span class="fd-button__text">Upload file</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--add"></i>
+                    <i class="fd-icon--add"></i>
                     <span class="fd-button__text">Assign user</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--print"></i>
+                    <i class="fd-icon--print"></i>
                     <span class="fd-button__text">Print</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--download"></i>
+                    <i class="fd-icon--download"></i>
                     <span class="fd-button__text">Download</span>
                 </button>
             </li>

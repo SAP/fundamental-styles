@@ -85,7 +85,7 @@ export const sSize = () => `
                         tabindex="0">
                         <span class="fd-select__text-content">US</span>
                         <span class="fd-button fd-button--transparent fd-select__button">
-                            <i class="sap-icon--slim-arrow-down"></i>
+                            <i class="fd-icon--slim-arrow-down"></i>
                         </span>
                     </div>
                   </div>
@@ -175,7 +175,7 @@ export const mSizeDefault = () => `
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
                 <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
+                    <i class="fd-icon--slim-arrow-down"></i>
                 </span>
             </div>
           </div>
@@ -267,7 +267,7 @@ export const mSizeSplitScreen = () => `
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
                 <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
+                    <i class="fd-icon--slim-arrow-down"></i>
                 </span>
             </div>
           </div>
@@ -353,7 +353,7 @@ export const mSizeFullScreenApp = () => `
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
                 <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
+                    <i class="fd-icon--slim-arrow-down"></i>
                 </span>
             </div>
           </div>
@@ -439,7 +439,7 @@ export const mSizeFullScreenAppLongLabel = () => `
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
                 <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
+                    <i class="fd-icon--slim-arrow-down"></i>
                 </span>
             </div>
           </div>
@@ -523,7 +523,7 @@ export const lSizeDefault = () => `
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
                 <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
+                    <i class="fd-icon--slim-arrow-down"></i>
                 </span>
             </div>
           </div>
@@ -610,7 +610,7 @@ export const lSizeSingleFormGroup = () => `
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
                 <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
+                    <i class="fd-icon--slim-arrow-down"></i>
                 </span>
             </div>
           </div>
@@ -696,7 +696,7 @@ export const lSizeMultipleFormGroup = () => `
                     tabindex="0">
                     <span class="fd-select__text-content">US</span>
                     <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
+                        <i class="fd-icon--slim-arrow-down"></i>
                     </span>
                 </div>
               </div>
@@ -764,7 +764,7 @@ export const lSizeMultipleFormGroup = () => `
                     tabindex="0">
                     <span class="fd-select__text-content">US</span>
                     <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
+                        <i class="fd-icon--slim-arrow-down"></i>
                     </span>
                 </div>
               </div>
@@ -850,7 +850,7 @@ export const xlDefault = () => `
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
                 <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
+                    <i class="fd-icon--slim-arrow-down"></i>
                 </span>
             </div>
           </div>
@@ -938,7 +938,7 @@ export const xlSingleFormGroup = () => `
                 tabindex="0">
                 <span class="fd-select__text-content">US</span>
                 <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
+                    <i class="fd-icon--slim-arrow-down"></i>
                 </span>
             </div>
           </div>
@@ -1029,7 +1029,7 @@ export const xlDoubleFormGroup = () => `
                     tabindex="0">
                     <span class="fd-select__text-content">US</span>
                     <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
+                        <i class="fd-icon--slim-arrow-down"></i>
                     </span>
                 </div>
               </div>
@@ -1097,7 +1097,7 @@ export const xlDoubleFormGroup = () => `
                     tabindex="0">
                     <span class="fd-select__text-content">US</span>
                     <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
+                        <i class="fd-icon--slim-arrow-down"></i>
                     </span>
                 </div>
               </div>
@@ -1187,7 +1187,7 @@ export const xlMultipleFormGroup = () => `
                     tabindex="0">
                     <span class="fd-select__text-content">US</span>
                     <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
+                        <i class="fd-icon--slim-arrow-down"></i>
                     </span>
                 </div>
               </div>
@@ -1255,7 +1255,7 @@ export const xlMultipleFormGroup = () => `
                     tabindex="0">
                     <span class="fd-select__text-content">US</span>
                     <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
+                        <i class="fd-icon--slim-arrow-down"></i>
                     </span>
                 </div>
               </div>
@@ -1325,7 +1325,7 @@ export const xlMultipleFormGroup = () => `
                   tabindex="0">
                   <span class="fd-select__text-content">US</span>
                   <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
+                    <i class="fd-icon--slim-arrow-down"></i>
                   </span>
               </div>
             </div>
@@ -1677,7 +1677,7 @@ export const RTL = () => `
                 aria-label="Country"
                   tabindex="0">
                   <span class="fd-select__text-content">US</span>
-                  <span class="fd-button fd-button--transparent sap-icon--slim-arrow-down fd-select__button"></span>
+                  <span class="fd-button fd-button--transparent fd-icon--slim-arrow-down fd-select__button"></span>
               </div>
             </div>
           </div>

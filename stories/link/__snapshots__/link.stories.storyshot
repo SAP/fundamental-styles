@@ -83,7 +83,7 @@ exports[`Storyshots Components/Link Types 1`] = `
     Right icon link 
     
     <span
-      class="sap-icon--slim-arrow-right sap-icon--s"
+      class="fd-icon--slim-arrow-right fd-icon--s"
     />
     
 
@@ -102,7 +102,7 @@ exports[`Storyshots Components/Link Types 1`] = `
     
     
     <span
-      class="sap-icon--slim-arrow-left sap-icon--s"
+      class="fd-icon--slim-arrow-left fd-icon--s"
     />
      
     Left icon link

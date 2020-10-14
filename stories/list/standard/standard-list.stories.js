@@ -62,14 +62,14 @@ export const navigation = () => `
   </li>
   <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
       <a tabindex="0" class="fd-list__link">
-        <i role="presentation" class="fd-list__icon sap-icon--history"></i>
+        <i role="presentation" class="fd-list__icon fd-icon--history"></i>
         <span class="fd-list__title">List item 2</span>
       </a>
   </li>
   <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
       <a tabindex="0" class="fd-list__link">
         <span class="fd-list__title">List item 3</span>
-        <i role="presentation" class="fd-list__icon sap-icon--map"></i>
+        <i role="presentation" class="fd-list__icon fd-icon--map"></i>
       </a>
   </li>
 </ul>
@@ -96,22 +96,22 @@ export const navigationIndicator = () => `
   </li>
   <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
       <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-selected" href="#">
-        <i role="presentation" class="fd-list__icon sap-icon--history"></i>
+        <i role="presentation" class="fd-list__icon fd-icon--history"></i>
         <span class="fd-list__title">List item 2</span>
       </a>
   </li>
   <li tabindex="0" role="listitem" class="fd-list__item">
-        <i role="presentation" class="fd-list__icon sap-icon--history"></i>
+        <i role="presentation" class="fd-list__icon fd-icon--history"></i>
         <span class="fd-list__title">List item 3</span>
   </li>
   <li tabindex="0" role="listitem" class="fd-list__item">
         <span class="fd-list__title">List item 4</span>
-        <i role="presentation" class="fd-list__icon sap-icon--map"></i>
+        <i role="presentation" class="fd-list__icon fd-icon--map"></i>
   </li>
   <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
       <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
         <span class="fd-list__title">List item 5</span>
-        <i role="presentation" class="fd-list__icon sap-icon--map"></i>
+        <i role="presentation" class="fd-list__icon fd-icon--map"></i>
       </a>
   </li>
 </ul>
@@ -216,20 +216,20 @@ secondaryData.parameters = {
 export const icons = () => `
 <ul class="fd-list" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
-      <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
+      <i role="presentation" class="fd-list__icon fd-icon--cart"></i>
       <span class="fd-list__title">List item 1</span>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
-      <i role="presentation" class="fd-list__icon sap-icon--wrench"></i>
+      <i role="presentation" class="fd-list__icon fd-icon--wrench"></i>
       <span class="fd-list__title">List item 2</span>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 3</span>
-      <i role="presentation" class="fd-list__icon sap-icon--lightbulb"></i>
+      <i role="presentation" class="fd-list__icon fd-icon--lightbulb"></i>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 4</span>
-      <i role="presentation" class="fd-list__icon sap-icon--history"></i>
+      <i role="presentation" class="fd-list__icon fd-icon--history"></i>
   </li>
 </ul>
 `;
@@ -413,22 +413,22 @@ export const rtl = () => `
       </li>
       <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
           <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-selected" href="#">
-            <i role="presentation" class="fd-list__icon sap-icon--history"></i>
+            <i role="presentation" class="fd-list__icon fd-icon--history"></i>
             <span class="fd-list__title">List item 2</span>
           </a>
       </li>
       <li tabindex="0" role="listitem" class="fd-list__item">
-            <i role="presentation" class="fd-list__icon sap-icon--history"></i>
+            <i role="presentation" class="fd-list__icon fd-icon--history"></i>
             <span class="fd-list__title">List item 3</span>
       </li>
       <li tabindex="0" role="listitem" class="fd-list__item">
             <span class="fd-list__title">List item 4</span>
-            <i role="presentation" class="fd-list__icon sap-icon--map"></i>
+            <i role="presentation" class="fd-list__icon fd-icon--map"></i>
       </li>
       <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
           <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
             <span class="fd-list__title">List item 5</span>
-            <i role="presentation" class="fd-list__icon sap-icon--map"></i>
+            <i role="presentation" class="fd-list__icon fd-icon--map"></i>
           </a>
       </li>
     </ul>

@@ -124,7 +124,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     padding-left: 0.625rem;
     padding-right: 0.625rem;
 
-    span[class*='sap-icon--'] {
+    span[class*='fd-icon--'] {
       &::before {
         font-size: var(--sapFontLargeSize);
       }

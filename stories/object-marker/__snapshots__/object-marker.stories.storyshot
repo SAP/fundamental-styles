@@ -10,7 +10,7 @@ exports[`Storyshots Components/Object Marker Clickable Object Marker 1`] = `
     
     
     <i
-      class="fd-object-marker__icon sap-icon--private"
+      class="fd-object-marker__icon fd-icon--private"
       role="presentation"
     />
     
@@ -31,7 +31,7 @@ exports[`Storyshots Components/Object Marker Clickable Object Marker 1`] = `
     
     
     <i
-      class="fd-object-marker__icon sap-icon--user-edit"
+      class="fd-object-marker__icon fd-icon--user-edit"
       role="presentation"
     />
     
@@ -63,7 +63,7 @@ exports[`Storyshots Components/Object Marker Clickable Object Marker 1`] = `
       
         
       <i
-        class="fd-object-marker__icon sap-icon--private"
+        class="fd-object-marker__icon fd-icon--private"
         role="presentation"
       />
       
@@ -84,7 +84,7 @@ exports[`Storyshots Components/Object Marker Clickable Object Marker 1`] = `
       
         
       <i
-        class="fd-object-marker__icon sap-icon--user-edit"
+        class="fd-object-marker__icon fd-icon--user-edit"
         role="presentation"
       />
       
@@ -115,7 +115,7 @@ exports[`Storyshots Components/Object Marker Icon And Text 1`] = `
     
     
     <i
-      class="fd-object-marker__icon sap-icon--request"
+      class="fd-object-marker__icon fd-icon--request"
       role="presentation"
     />
     
@@ -136,7 +136,7 @@ exports[`Storyshots Components/Object Marker Icon And Text 1`] = `
     
     
     <i
-      class="fd-object-marker__icon sap-icon--favorite"
+      class="fd-object-marker__icon fd-icon--favorite"
       role="presentation"
     />
     
@@ -157,7 +157,7 @@ exports[`Storyshots Components/Object Marker Icon And Text 1`] = `
     
     
     <i
-      class="fd-object-marker__icon sap-icon--flag"
+      class="fd-object-marker__icon fd-icon--flag"
       role="presentation"
     />
     
@@ -178,7 +178,7 @@ exports[`Storyshots Components/Object Marker Icon And Text 1`] = `
     
     
     <i
-      class="fd-object-marker__icon sap-icon--user-edit"
+      class="fd-object-marker__icon fd-icon--user-edit"
       role="presentation"
     />
     
@@ -199,7 +199,7 @@ exports[`Storyshots Components/Object Marker Icon And Text 1`] = `
     
     
     <i
-      class="fd-object-marker__icon sap-icon--private"
+      class="fd-object-marker__icon fd-icon--private"
       role="presentation"
     />
     
@@ -231,7 +231,7 @@ exports[`Storyshots Components/Object Marker Icon And Text 1`] = `
       
         
       <i
-        class="fd-object-marker__icon sap-icon--request"
+        class="fd-object-marker__icon fd-icon--request"
         role="presentation"
       />
       
@@ -252,7 +252,7 @@ exports[`Storyshots Components/Object Marker Icon And Text 1`] = `
       
         
       <i
-        class="fd-object-marker__icon sap-icon--favorite"
+        class="fd-object-marker__icon fd-icon--favorite"
         role="presentation"
       />
       
@@ -273,7 +273,7 @@ exports[`Storyshots Components/Object Marker Icon And Text 1`] = `
       
         
       <i
-        class="fd-object-marker__icon sap-icon--flag"
+        class="fd-object-marker__icon fd-icon--flag"
         role="presentation"
       />
       
@@ -294,7 +294,7 @@ exports[`Storyshots Components/Object Marker Icon And Text 1`] = `
       
         
       <i
-        class="fd-object-marker__icon sap-icon--user-edit"
+        class="fd-object-marker__icon fd-icon--user-edit"
         role="presentation"
       />
       
@@ -315,7 +315,7 @@ exports[`Storyshots Components/Object Marker Icon And Text 1`] = `
       
         
       <i
-        class="fd-object-marker__icon sap-icon--private"
+        class="fd-object-marker__icon fd-icon--private"
         role="presentation"
       />
       
@@ -347,7 +347,7 @@ exports[`Storyshots Components/Object Marker Icon Only 1`] = `
     
     <i
       aria-label="icon for request"
-      class="fd-object-marker__icon sap-icon--request"
+      class="fd-object-marker__icon fd-icon--request"
     />
     
 
@@ -361,7 +361,7 @@ exports[`Storyshots Components/Object Marker Icon Only 1`] = `
     
     <i
       aria-label="icon for favourite"
-      class="fd-object-marker__icon sap-icon--favorite"
+      class="fd-object-marker__icon fd-icon--favorite"
     />
     
 
@@ -375,7 +375,7 @@ exports[`Storyshots Components/Object Marker Icon Only 1`] = `
     
     <i
       aria-label="icon for flag"
-      class="fd-object-marker__icon sap-icon--flag"
+      class="fd-object-marker__icon fd-icon--flag"
     />
     
 
@@ -389,7 +389,7 @@ exports[`Storyshots Components/Object Marker Icon Only 1`] = `
     
     <i
       aria-label="icon for user edit"
-      class="fd-object-marker__icon sap-icon--user-edit"
+      class="fd-object-marker__icon fd-icon--user-edit"
     />
     
 
@@ -403,7 +403,7 @@ exports[`Storyshots Components/Object Marker Icon Only 1`] = `
     
     <i
       aria-label="icon for private"
-      class="fd-object-marker__icon sap-icon--private"
+      class="fd-object-marker__icon fd-icon--private"
     />
     
 

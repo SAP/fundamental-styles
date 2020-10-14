@@ -56,7 +56,7 @@ export const treeWithExpandedLevel1 = () => `
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container">
             <button tabindex="0" class="fd-tree__expander is-expanded" aria-controls="TREE1L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true">
-                <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
             </button>
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
@@ -66,7 +66,7 @@ export const treeWithExpandedLevel1 = () => `
             <li role="treeitem" aria-level="2" class="fd-tree__item">
                 <div class="fd-tree__item-container">
                     <button tabindex="0" class="fd-tree__expander" aria-label="Expander">
-                        <i class="fd-tree__icon sap-icon--navigation-right-arrow" role="presentation"></i>
+                        <i class="fd-tree__icon fd-icon--navigation-right-arrow" role="presentation"></i>
                     </button>
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
@@ -120,7 +120,7 @@ export const treeWithExpandedLevel1 = () => `
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container">
             <button tabindex="0" class="fd-tree__expander is-expanded" aria-controls="TREE1CL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true">
-                <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
             </button>
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
@@ -130,7 +130,7 @@ export const treeWithExpandedLevel1 = () => `
             <li role="treeitem" aria-level="2" class="fd-tree__item">
                 <div class="fd-tree__item-container">
                     <button tabindex="0" class="fd-tree__expander" aria-label="Expander">
-                        <i class="fd-tree__icon sap-icon--navigation-right-arrow" role="presentation"></i>
+                        <i class="fd-tree__icon fd-icon--navigation-right-arrow" role="presentation"></i>
                     </button>
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
@@ -192,65 +192,65 @@ export const treeWithExpandedLevel2AndNoBorders = () => `
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container">
             <button tabindex="0" class="fd-tree__expander is-expanded" aria-controls="TREE2L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true">
-                <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
             </button>
             <div class="fd-tree__content">
-                <i class="fd-tree__icon sap-icon--e-care" role="presentation"></i>
+                <i class="fd-tree__icon fd-icon--e-care" role="presentation"></i>
                 <span class="fd-tree__text">Level 1</span>
             </div>
             <button aria-label="Edit button" class="fd-button fd-button--transparent">
-                <i class="sap-icon--edit" role="presentation"></i>
+                <i class="fd-icon--edit" role="presentation"></i>
             </button>
             <button aria-label="Delete button" class="fd-button fd-button--transparent">
-                <i class="sap-icon--decline" role="presentation"></i>
+                <i class="fd-icon--decline" role="presentation"></i>
             </button>
         </div>
         <ul role="group" class="fd-tree" id="TREE2L2" aria-hidden="false">
             <li role="treeitem" aria-level="2" aria-expanded="true" class="fd-tree__item">
                 <div class="fd-tree__item-container">
                     <button tabindex="0" class="fd-tree__expander is-expanded" aria-controls="TREE2L3" aria-haspopup="true" aria-label="Expand level 3" aria-expanded="true">
-                        <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                        <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
                     </button>
                     <div class="fd-tree__content">
-                        <i class="fd-tree__icon sap-icon--account" role="presentation"></i>
+                        <i class="fd-tree__icon fd-icon--account" role="presentation"></i>
                         <span class="fd-tree__text">Level 2</span>
                     </div>
                     <button aria-label="Edit button" class="fd-button fd-button--transparent">
-                        <i class="sap-icon--edit" role="presentation"></i>
+                        <i class="fd-icon--edit" role="presentation"></i>
                     </button>
                     <button aria-label="Delete button" class="fd-button fd-button--transparent">
-                        <i class="sap-icon--decline" role="presentation"></i>
+                        <i class="fd-icon--decline" role="presentation"></i>
                     </button>
                 </div>
                 <ul role="group" class="fd-tree" id="TREE2L3" aria-hidden="false">
                     <li role="treeitem" aria-level="3" class="fd-tree__item">
                         <div class="fd-tree__item-container">
                             <button tabindex="0" class="fd-tree__expander" aria-label="Expander">
-                                <i class="fd-tree__icon sap-icon--navigation-right-arrow" role="presentation"></i>
+                                <i class="fd-tree__icon fd-icon--navigation-right-arrow" role="presentation"></i>
                             </button>
                             <div class="fd-tree__content">
-                                <i class="fd-tree__icon sap-icon--product" role="presentation"></i>
+                                <i class="fd-tree__icon fd-icon--product" role="presentation"></i>
                                 <span class="fd-tree__text">Level 3</span>
                             </div>
                             <button aria-label="Edit button" class="fd-button fd-button--transparent">
-                                <i class="sap-icon--edit" role="presentation"></i>
+                                <i class="fd-icon--edit" role="presentation"></i>
                             </button>
                             <button aria-label="Delete button" class="fd-button fd-button--transparent">
-                                <i class="sap-icon--decline" role="presentation"></i>
+                                <i class="fd-icon--decline" role="presentation"></i>
                             </button>
                         </div>
                     </li>
                     <li role="treeitem" aria-level="3" class="fd-tree__item">
                         <div class="fd-tree__item-container">
                             <div class="fd-tree__content">
-                                <i class="fd-tree__icon sap-icon--history" role="presentation"></i>
+                                <i class="fd-tree__icon fd-icon--history" role="presentation"></i>
                                 <span class="fd-tree__text">Level 3</span>
                             </div>
                             <button aria-label="Edit button" class="fd-button fd-button--transparent">
-                                <i class="sap-icon--edit" role="presentation"></i>
+                                <i class="fd-icon--edit" role="presentation"></i>
                             </button>
                             <button aria-label="Delete button" class="fd-button fd-button--transparent">
-                                <i class="sap-icon--decline" role="presentation"></i>
+                                <i class="fd-icon--decline" role="presentation"></i>
                             </button>
                         </div>
                     </li>
@@ -259,14 +259,14 @@ export const treeWithExpandedLevel2AndNoBorders = () => `
             <li role="treeitem" aria-level="2" class="fd-tree__item">
                 <div class="fd-tree__item-container">
                     <div class="fd-tree__content">
-                        <i class="fd-tree__icon sap-icon--competitor" role="presentation"></i>
+                        <i class="fd-tree__icon fd-icon--competitor" role="presentation"></i>
                         <span class="fd-tree__text">Level 2</span>
                     </div>
                     <button aria-label="Edit button" class="fd-button fd-button--transparent">
-                        <i class="sap-icon--edit" role="presentation"></i>
+                        <i class="fd-icon--edit" role="presentation"></i>
                     </button>
                     <button aria-label="Delete button" class="fd-button fd-button--transparent">
-                        <i class="sap-icon--decline" role="presentation"></i>
+                        <i class="fd-icon--decline" role="presentation"></i>
                     </button>
                 </div>
             </li>
@@ -275,28 +275,28 @@ export const treeWithExpandedLevel2AndNoBorders = () => `
     <li role="treeitem" aria-level="1" class="fd-tree__item">
         <div class="fd-tree__item-container">
             <div class="fd-tree__content">
-                <i class="fd-tree__icon sap-icon--batch-payments" role="presentation"></i>
+                <i class="fd-tree__icon fd-icon--batch-payments" role="presentation"></i>
                 <span class="fd-tree__text">Level 1</span>
             </div>
             <button aria-label="Edit button" class="fd-button fd-button--transparent">
-                <i class="sap-icon--edit" role="presentation"></i>
+                <i class="fd-icon--edit" role="presentation"></i>
             </button>
             <button aria-label="Delete button" class="fd-button fd-button--transparent">
-                <i class="sap-icon--decline" role="presentation"></i>
+                <i class="fd-icon--decline" role="presentation"></i>
             </button>
         </div>
     </li>
     <li role="treeitem" aria-level="1" class="fd-tree__item">
         <div class="fd-tree__item-container">
             <div class="fd-tree__content">
-                <i class="fd-tree__icon sap-icon--favorite" role="presentation"></i>
+                <i class="fd-tree__icon fd-icon--favorite" role="presentation"></i>
                 <span class="fd-tree__text">Level 1</span>
             </div>
             <button aria-label="Edit button" class="fd-button fd-button--transparent">
-                <i class="sap-icon--edit" role="presentation"></i>
+                <i class="fd-icon--edit" role="presentation"></i>
             </button>
             <button aria-label="Delete button" class="fd-button fd-button--transparent">
-                <i class="sap-icon--decline" role="presentation"></i>
+                <i class="fd-icon--decline" role="presentation"></i>
             </button>
         </div>
     </li>
@@ -321,7 +321,7 @@ export const treeWithExpandedLevel3AndHighlightIndicators = () => `
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container has-highlight-indicator">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE3L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true">
-                <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
             </button>
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
@@ -331,7 +331,7 @@ export const treeWithExpandedLevel3AndHighlightIndicators = () => `
             <li role="treeitem" aria-level="2" aria-expanded="true" class="fd-tree__item">
                 <div class="fd-tree__item-container has-highlight-indicator--warning">
                     <button class="fd-tree__expander is-expanded" aria-controls="TREE3L3" aria-haspopup="true" aria-label="Expand level 3" aria-expanded="true">
-                        <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                        <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
                     </button>
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
@@ -341,7 +341,7 @@ export const treeWithExpandedLevel3AndHighlightIndicators = () => `
                     <li role="treeitem" aria-level="3" aria-expanded="true" class="fd-tree__item">
                         <div class="fd-tree__item-container has-highlight-indicator--error">
                             <button class="fd-tree__expander is-expanded" aria-controls="TREE3L4" aria-haspopup="true" aria-label="Expand level 4" aria-expanded="true">
-                                <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                                <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
                             </button>
                             <div class="fd-tree__content">
                                 <span class="fd-tree__text">Level 3</span>
@@ -351,7 +351,7 @@ export const treeWithExpandedLevel3AndHighlightIndicators = () => `
                             <li role="treeitem" aria-level="4" class="fd-tree__item">
                                 <div class="fd-tree__item-container has-highlight-indicator--success">
                                     <button class="fd-tree__expander" aria-label="Expander">
-                                        <i class="fd-tree__icon sap-icon--navigation-right-arrow" role="presentation"></i>
+                                        <i class="fd-tree__icon fd-icon--navigation-right-arrow" role="presentation"></i>
                                     </button>
                                     <div class="fd-tree__content">
                                         <span class="fd-tree__text">Level 4</span>
@@ -436,18 +436,18 @@ export const treeWithExpandedLevel6AndNavigationLinks = () => `
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container fd-tree__item-container--active has-highlight-indicator--success">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE6CL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true">
-                <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
             </button>
             <a href="https://sap.github.io/fundamental/" class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
             </a>
-            <i class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
+            <i class="fd-tree__icon fd-tree__icon--navigation fd-icon--slim-arrow-right" role="presentation"></i>
         </div>
         <ul role="group" class="fd-tree" id="TREE6CL2" aria-hidden="false">
             <li role="treeitem" aria-level="2" aria-expanded="true" class="fd-tree__item">
                 <div class="fd-tree__item-container has-highlight-indicator--warning">
                     <button class="fd-tree__expander is-expanded" aria-controls="TREE6CL3" aria-haspopup="true" aria-label="Expand level 3" aria-expanded="true">
-                        <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                        <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
                     </button>
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
@@ -457,18 +457,18 @@ export const treeWithExpandedLevel6AndNavigationLinks = () => `
                     <li role="treeitem" aria-level="3" aria-expanded="true" class="fd-tree__item">
                         <div class="fd-tree__item-container fd-tree__item-container--active has-highlight-indicator--error">
                             <button class="fd-tree__expander is-expanded" aria-controls="TREE6CL4" aria-haspopup="true" aria-label="Expand level 4" aria-expanded="true">
-                                <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                                <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
                             </button>
                             <a href="https://sap.github.io/fundamental/" class="fd-tree__content">
                                 <span class="fd-tree__text">Level 3</span>
                             </a>
-                            <i class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
+                            <i class="fd-tree__icon fd-tree__icon--navigation fd-icon--slim-arrow-right" role="presentation"></i>
                         </div>
                         <ul role="group" class="fd-tree" id="TREE6CL4" aria-hidden="false">
                             <li role="treeitem" aria-level="4" aria-expanded="true" class="fd-tree__item">
                                 <div class="fd-tree__item-container has-highlight-indicator">
                                     <button class="fd-tree__expander is-expanded" aria-controls="TREE6CL5" aria-haspopup="true" aria-label="Expand level 5" aria-expanded="true">
-                                        <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                                        <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
                                     </button>
                                     <div class="fd-tree__content">
                                         <span class="fd-tree__text">Level 4</span>
@@ -478,7 +478,7 @@ export const treeWithExpandedLevel6AndNavigationLinks = () => `
                                     <li role="treeitem" aria-level="5" aria-expanded="true"  class="fd-tree__item">
                                         <div class="fd-tree__item-container">
                                             <button class="fd-tree__expander is-expanded" aria-controls="TREE6CL6" aria-haspopup="true" aria-label="Expand level 6" aria-expanded="true">
-                                                <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                                                <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
                                             </button>
                                             <div class="fd-tree__content">
                                                 <span class="fd-tree__text">Level 5</span>
@@ -488,7 +488,7 @@ export const treeWithExpandedLevel6AndNavigationLinks = () => `
                                             <li role="treeitem" aria-level="6" aria-expanded="true" class="fd-tree__item">
                                                 <div class="fd-tree__item-container">
                                                     <button class="fd-tree__expander is-expanded" aria-controls="TREE6CL7" aria-haspopup="true" aria-label="Expand level 7" aria-expanded="true">
-                                                        <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                                                        <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
                                                     </button>
                                                     <div class="fd-tree__content">
                                                         <span class="fd-tree__text">Level 6</span>
@@ -498,7 +498,7 @@ export const treeWithExpandedLevel6AndNavigationLinks = () => `
                                                     <li role="treeitem" aria-level="7" class="fd-tree__item">
                                                         <div class="fd-tree__item-container">
                                                             <button class="fd-tree__expander" aria-label="Expander">
-                                                                <i class="fd-tree__icon sap-icon--navigation-right-arrow" role="presentation"></i>
+                                                                <i class="fd-tree__icon fd-icon--navigation-right-arrow" role="presentation"></i>
                                                             </button>
                                                             <div class="fd-tree__content">
                                                                 <span class="fd-tree__text">Level 7</span>
@@ -537,7 +537,7 @@ export const treeWithExpandedLevel6AndNavigationLinks = () => `
                                     <a href="https://sap.github.io/fundamental/" class="fd-tree__content">
                                         <span class="fd-tree__text">Level 4</span>
                                     </a>
-                                    <i class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
+                                    <i class="fd-tree__icon fd-tree__icon--navigation fd-icon--slim-arrow-right" role="presentation"></i>
                                 </div>
                             </li>
                         </ul>
@@ -547,7 +547,7 @@ export const treeWithExpandedLevel6AndNavigationLinks = () => `
                             <a href="https://sap.github.io/fundamental/" class="fd-tree__content">
                                 <span class="fd-tree__text">Level 3</span>
                             </a>
-                            <i class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
+                            <i class="fd-tree__icon fd-tree__icon--navigation fd-icon--slim-arrow-right" role="presentation"></i>
                         </div>
                     </li>
                 </ul>
@@ -566,7 +566,7 @@ export const treeWithExpandedLevel6AndNavigationLinks = () => `
             <a href="https://sap.github.io/fundamental/" class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
             </a>
-            <i class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
+            <i class="fd-tree__icon fd-tree__icon--navigation fd-icon--slim-arrow-right" role="presentation"></i>
         </div>
     </li>
     <li role="treeitem" aria-level="1" class="fd-tree__item">
@@ -574,7 +574,7 @@ export const treeWithExpandedLevel6AndNavigationLinks = () => `
             <a href="https://sap.github.io/fundamental/" class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
             </a>
-            <i class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
+            <i class="fd-tree__icon fd-tree__icon--navigation fd-icon--slim-arrow-right" role="presentation"></i>
         </div>
     </li>
 </ul>
@@ -586,18 +586,18 @@ export const treeWithExpandedLevel6AndNavigationLinks = () => `
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container has-highlight-indicator--success">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE6L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true">
-                <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
             </button>
             <a href="https://sap.github.io/fundamental/" class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
             </a>
-            <i class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
+            <i class="fd-tree__icon fd-tree__icon--navigation fd-icon--slim-arrow-right" role="presentation"></i>
         </div>
         <ul role="group" class="fd-tree" id="TREE6L2" aria-hidden="false">
             <li role="treeitem" aria-level="2" aria-expanded="true" class="fd-tree__item">
                 <div class="fd-tree__item-container has-highlight-indicator--warning">
                     <button class="fd-tree__expander is-expanded" aria-controls="TREE6L3" aria-haspopup="true" aria-label="Expand level 3" aria-expanded="true">
-                        <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                        <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
                     </button>
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
@@ -607,18 +607,18 @@ export const treeWithExpandedLevel6AndNavigationLinks = () => `
                     <li role="treeitem" aria-level="3" aria-expanded="true" class="fd-tree__item">
                         <div class="fd-tree__item-container has-highlight-indicator--error">
                             <button class="fd-tree__expander is-expanded" aria-controls="TREE6L4" aria-haspopup="true" aria-label="Expand level 4" aria-expanded="true">
-                                <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                                <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
                             </button>
                             <a href="https://sap.github.io/fundamental/" class="fd-tree__content">
                                 <span class="fd-tree__text">Level 3</span>
                             </a>
-                            <i class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
+                            <i class="fd-tree__icon fd-tree__icon--navigation fd-icon--slim-arrow-right" role="presentation"></i>
                         </div>
                         <ul role="group" class="fd-tree" id="TREE6L4" aria-hidden="false">
                             <li role="treeitem" aria-level="4" aria-expanded="true" class="fd-tree__item">
                                 <div class="fd-tree__item-container has-highlight-indicator">
                                     <button class="fd-tree__expander is-expanded" aria-controls="TREE6L5" aria-haspopup="true" aria-label="Expand level 5" aria-expanded="true">
-                                        <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                                        <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
                                     </button>
                                     <div class="fd-tree__content">
                                         <span class="fd-tree__text">Level 4</span>
@@ -628,7 +628,7 @@ export const treeWithExpandedLevel6AndNavigationLinks = () => `
                                     <li role="treeitem" aria-level="5" aria-expanded="true"  class="fd-tree__item">
                                         <div class="fd-tree__item-container">
                                             <button class="fd-tree__expander is-expanded" aria-controls="TREE6L6" aria-haspopup="true" aria-label="Expand level 6" aria-expanded="true">
-                                                <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                                                <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
                                             </button>
                                             <div class="fd-tree__content">
                                                 <span class="fd-tree__text">Level 5</span>
@@ -638,7 +638,7 @@ export const treeWithExpandedLevel6AndNavigationLinks = () => `
                                             <li role="treeitem" aria-level="6" aria-expanded="true" class="fd-tree__item">
                                                 <div class="fd-tree__item-container">
                                                     <button class="fd-tree__expander is-expanded" aria-controls="TREE6L7" aria-haspopup="true" aria-label="Expand level 7" aria-expanded="true">
-                                                        <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                                                        <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
                                                     </button>
                                                     <div class="fd-tree__content">
                                                         <span class="fd-tree__text">Level 6</span>
@@ -648,7 +648,7 @@ export const treeWithExpandedLevel6AndNavigationLinks = () => `
                                                     <li role="treeitem" aria-level="7" class="fd-tree__item">
                                                         <div class="fd-tree__item-container">
                                                             <button class="fd-tree__expander" aria-label="Expander">
-                                                                <i class="fd-tree__icon sap-icon--navigation-right-arrow" role="presentation"></i>
+                                                                <i class="fd-tree__icon fd-icon--navigation-right-arrow" role="presentation"></i>
                                                             </button>
                                                             <div class="fd-tree__content">
                                                                 <span class="fd-tree__text">Level 7</span>
@@ -687,7 +687,7 @@ export const treeWithExpandedLevel6AndNavigationLinks = () => `
                                     <a href="https://sap.github.io/fundamental/" class="fd-tree__content">
                                         <span class="fd-tree__text">Level 4</span>
                                     </a>
-                                    <i class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
+                                    <i class="fd-tree__icon fd-tree__icon--navigation fd-icon--slim-arrow-right" role="presentation"></i>
                                 </div>
                             </li>
                         </ul>
@@ -697,7 +697,7 @@ export const treeWithExpandedLevel6AndNavigationLinks = () => `
                             <a href="https://sap.github.io/fundamental/" class="fd-tree__content">
                                 <span class="fd-tree__text">Level 3</span>
                             </a>
-                            <i class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
+                            <i class="fd-tree__icon fd-tree__icon--navigation fd-icon--slim-arrow-right" role="presentation"></i>
                         </div>
                     </li>
                 </ul>
@@ -716,7 +716,7 @@ export const treeWithExpandedLevel6AndNavigationLinks = () => `
             <a href="https://sap.github.io/fundamental/" class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
             </a>
-            <i class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
+            <i class="fd-tree__icon fd-tree__icon--navigation fd-icon--slim-arrow-right" role="presentation"></i>
         </div>
     </li>
     <li role="treeitem" aria-level="1" class="fd-tree__item">
@@ -724,7 +724,7 @@ export const treeWithExpandedLevel6AndNavigationLinks = () => `
             <a href="https://sap.github.io/fundamental/" class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
             </a>
-            <i class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
+            <i class="fd-tree__icon fd-tree__icon--navigation fd-icon--slim-arrow-right" role="presentation"></i>
         </div>
     </li>
 </ul>
@@ -764,7 +764,7 @@ export const treeWithSelection = () => `
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container is-selected">
             <button tabindex="0" class="fd-tree__expander is-expanded" aria-controls="TREESELL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true">
-                <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
             </button>
             <div class="fd-form-item">
                 <input type="checkbox" checked class="fd-checkbox" id="Ai4ez1">
@@ -778,7 +778,7 @@ export const treeWithSelection = () => `
             <li role="treeitem" aria-level="2" class="fd-tree__item">
                 <div class="fd-tree__item-container">
                     <button tabindex="0" class="fd-tree__expander" aria-label="Expander">
-                        <i class="fd-tree__icon sap-icon--navigation-right-arrow" role="presentation"></i>
+                        <i class="fd-tree__icon fd-icon--navigation-right-arrow" role="presentation"></i>
                     </button>
                     <div class="fd-form-item">
                         <input type="checkbox" class="fd-checkbox" id="Ai4ez2">
@@ -845,7 +845,7 @@ export const treeWithSelection = () => `
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container is-selected">
             <button tabindex="0" class="fd-tree__expander is-expanded" aria-controls="TREESELCL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true">
-                <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
             </button>
             <div class="fd-tree__content">
                 <span class="fd-tree__text">Level 1</span>
@@ -859,7 +859,7 @@ export const treeWithSelection = () => `
             <li role="treeitem" aria-level="2" class="fd-tree__item">
                 <div class="fd-tree__item-container">
                     <button tabindex="0" class="fd-tree__expander" aria-label="Expander">
-                        <i class="fd-tree__icon sap-icon--navigation-right-arrow" role="presentation"></i>
+                        <i class="fd-tree__icon fd-icon--navigation-right-arrow" role="presentation"></i>
                     </button>
                     <div class="fd-tree__content">
                         <span class="fd-tree__text">Level 2</span>
@@ -926,7 +926,7 @@ export const treeWithSelection = () => `
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container is-selected">
             <button tabindex="0" class="fd-tree__expander is-expanded" aria-controls="TREESESSLL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true">
-                <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
             </button>
             <div class="fd-form-item">
                 <input type="radio" class="fd-radio" id="pDidh761" name="radio1" checked>
@@ -940,7 +940,7 @@ export const treeWithSelection = () => `
             <li role="treeitem" aria-level="2" class="fd-tree__item">
                 <div class="fd-tree__item-container">
                     <button tabindex="0" class="fd-tree__expander" aria-label="Expander">
-                        <i class="fd-tree__icon sap-icon--navigation-right-arrow" role="presentation"></i>
+                        <i class="fd-tree__icon fd-icon--navigation-right-arrow" role="presentation"></i>
                     </button>
                     <div class="fd-form-item">
                         <input type="radio" class="fd-radio" id="pDidh7612" name="radio1">
@@ -1036,64 +1036,64 @@ export const RTL = () => `
         <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
             <div class="fd-tree__item-container  has-highlight-indicator--success is-navigated">
                 <button class="fd-tree__expander is-expanded" aria-controls="TREE1RTLL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true">
-                    <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+                    <i class="fd-tree__icon fd-icon--navigation-down-arrow" role="presentation"></i>
                 </button>
                 <a href="https://sap.github.io/fundamental/" class="fd-tree__content">
-                    <i class="fd-tree__icon sap-icon--pie-chart" role="presentation"></i>
+                    <i class="fd-tree__icon fd-icon--pie-chart" role="presentation"></i>
                     <span class="fd-tree__text">Level 1</span>
                 </a>
-                <i class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-left" role="presentation"></i>
+                <i class="fd-tree__icon fd-tree__icon--navigation fd-icon--slim-arrow-left" role="presentation"></i>
                 <button aria-label="Edit button" class="fd-button fd-button--transparent">
-                    <i class="sap-icon--edit" role="presentation"></i>
+                    <i class="fd-icon--edit" role="presentation"></i>
                 </button>
                 <button aria-label="Delete button" class="fd-button fd-button--transparent">
-                    <i class="sap-icon--decline" role="presentation"></i>
+                    <i class="fd-icon--decline" role="presentation"></i>
                 </button>
             </div>
             <ul role="group" class="fd-tree" id="TREE1RTLL2" aria-hidden="false">
                 <li role="treeitem" aria-level="2" class="fd-tree__item">
                     <div class="fd-tree__item-container has-highlight-indicator--warning">
                         <button class="fd-tree__expander" aria-label="Expander">
-                            <i class="fd-tree__icon sap-icon--navigation-left-arrow" role="presentation"></i>
+                            <i class="fd-tree__icon fd-icon--navigation-left-arrow" role="presentation"></i>
                         </button>
                         <div class="fd-tree__content">
-                            <i class="fd-tree__icon sap-icon--money-bills" role="presentation"></i>
+                            <i class="fd-tree__icon fd-icon--money-bills" role="presentation"></i>
                             <span class="fd-tree__text">Level 2</span>
                         </div>
                         <button aria-label="Edit button" class="fd-button fd-button--transparent">
-                            <i class="sap-icon--edit" role="presentation"></i>
+                            <i class="fd-icon--edit" role="presentation"></i>
                         </button>
                         <button aria-label="Delete button" class="fd-button fd-button--transparent">
-                            <i class="sap-icon--decline" role="presentation"></i>
+                            <i class="fd-icon--decline" role="presentation"></i>
                         </button>
                     </div>
                 </li>
                 <li role="treeitem" aria-level="2" class="fd-tree__item">
                     <div class="fd-tree__item-container">
                         <div class="fd-tree__content">
-                            <i class="fd-tree__icon sap-icon--marketing-campaign" role="presentation"></i>
+                            <i class="fd-tree__icon fd-icon--marketing-campaign" role="presentation"></i>
                             <span class="fd-tree__text">Level 2</span>
                         </div>
                         <button aria-label="Edit button" class="fd-button fd-button--transparent">
-                            <i class="sap-icon--edit" role="presentation"></i>
+                            <i class="fd-icon--edit" role="presentation"></i>
                         </button>
                         <button aria-label="Delete button" class="fd-button fd-button--transparent">
-                            <i class="sap-icon--decline" role="presentation"></i>
+                            <i class="fd-icon--decline" role="presentation"></i>
                         </button>
                     </div>
                 </li>
                 <li role="treeitem" aria-level="2" class="fd-tree__item">
                     <div class="fd-tree__item-container">
                         <div class="fd-tree__content">
-                            <i class="fd-tree__icon sap-icon--waiver" role="presentation"></i>
+                            <i class="fd-tree__icon fd-icon--waiver" role="presentation"></i>
                             <span class="fd-tree__text">Level 2</span>
-                            <i class="fd-tree__icon sap-icon--e-learning" role="presentation"></i>
+                            <i class="fd-tree__icon fd-icon--e-learning" role="presentation"></i>
                         </div>
                         <button aria-label="Edit button" class="fd-button fd-button--transparent">
-                            <i class="sap-icon--edit" role="presentation"></i>
+                            <i class="fd-icon--edit" role="presentation"></i>
                         </button>
                         <button aria-label="Delete button" class="fd-button fd-button--transparent">
-                            <i class="sap-icon--decline" role="presentation"></i>
+                            <i class="fd-icon--decline" role="presentation"></i>
                         </button>
                     </div>
                 </li>
@@ -1102,38 +1102,38 @@ export const RTL = () => `
         <li role="treeitem" aria-level="1" class="fd-tree__item">
             <div class="fd-tree__item-container">
                 <div class="fd-tree__content">
-                    <i class="fd-tree__icon sap-icon--home-share" role="presentation"></i>
+                    <i class="fd-tree__icon fd-icon--home-share" role="presentation"></i>
                     <span class="fd-tree__text">Level 1</span>
-                    <i class="fd-tree__icon sap-icon--puzzle" role="presentation"></i>
+                    <i class="fd-tree__icon fd-icon--puzzle" role="presentation"></i>
                 </div>
                 <button aria-label="Edit button" class="fd-button fd-button--transparent">
-                    <i class="sap-icon--edit" role="presentation"></i>
+                    <i class="fd-icon--edit" role="presentation"></i>
                 </button>
                 <button aria-label="Delete button" class="fd-button fd-button--transparent">
-                    <i class="sap-icon--decline" role="presentation"></i>
+                    <i class="fd-icon--decline" role="presentation"></i>
                 </button>
             </div>
         </li>
         <li role="treeitem" aria-level="1" class="fd-tree__item">
             <div class="fd-tree__item-container is-navigated has-highlight-indicator--error">
                 <a href="https://sap.github.io/fundamental/" class="fd-tree__content">
-                    <i class="fd-tree__icon sap-icon--overview-chart" role="presentation"></i>
+                    <i class="fd-tree__icon fd-icon--overview-chart" role="presentation"></i>
                     <span class="fd-tree__text">Very long text that does not wrap ... perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</span>
                 </a>
-                <i class="fd-tree__icon fd-tree__icon--navigation sap-icon--slim-arrow-left" role="presentation"></i>
+                <i class="fd-tree__icon fd-tree__icon--navigation fd-icon--slim-arrow-left" role="presentation"></i>
             </div>
         </li>
         <li role="treeitem" aria-level="1" class="fd-tree__item">
             <div class="fd-tree__item-container has-highlight-indicator">
                 <div class="fd-tree__content fd-tree__content--wrap">
-                    <i class="fd-tree__icon sap-icon--e-care" role="presentation"></i>
+                    <i class="fd-tree__icon fd-icon--e-care" role="presentation"></i>
                     <span class="fd-tree__text">Very long text with wrapping behaviour ... perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</span>
                 </div>
                 <button aria-label="Edit button" class="fd-button fd-button--transparent">
-                    <i class="sap-icon--edit" role="presentation"></i>
+                    <i class="fd-icon--edit" role="presentation"></i>
                 </button>
                 <button aria-label="Delete button" class="fd-button fd-button--transparent">
-                    <i class="sap-icon--decline" role="presentation"></i>
+                    <i class="fd-icon--decline" role="presentation"></i>
                 </button>
             </div>
         </li>

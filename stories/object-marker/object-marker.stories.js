@@ -15,19 +15,19 @@ The technical status can be represented as an icon, with an icon and text, or as
 
 export const iconOnly = () => `
 <div class="fd-object-marker">
-    <i class="fd-object-marker__icon sap-icon--request" aria-label="icon for request"></i>
+    <i class="fd-object-marker__icon fd-icon--request" aria-label="icon for request"></i>
 </div>
 <div class="fd-object-marker">
-    <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite"></i>
+    <i class="fd-object-marker__icon fd-icon--favorite" aria-label="icon for favourite"></i>
 </div>
 <div class="fd-object-marker">
-    <i class="fd-object-marker__icon sap-icon--flag" aria-label="icon for flag"></i>
+    <i class="fd-object-marker__icon fd-icon--flag" aria-label="icon for flag"></i>
 </div>
 <div class="fd-object-marker">
-    <i class="fd-object-marker__icon sap-icon--user-edit" aria-label="icon for user edit"></i>
+    <i class="fd-object-marker__icon fd-icon--user-edit" aria-label="icon for user edit"></i>
 </div>
 <div class="fd-object-marker">
-    <i class="fd-object-marker__icon sap-icon--private" aria-label="icon for private"></i>
+    <i class="fd-object-marker__icon fd-icon--private" aria-label="icon for private"></i>
 </div>
 `;
 
@@ -50,46 +50,46 @@ export const markerText = () => `
 
 export const iconAndText = () => `
 <div class="fd-object-marker">
-    <i class="fd-object-marker__icon sap-icon--request" role="presentation"></i>
+    <i class="fd-object-marker__icon fd-icon--request" role="presentation"></i>
     <span class="fd-object-marker__text">Request</span>
 </div>
 <div class="fd-object-marker">
-    <i class="fd-object-marker__icon sap-icon--favorite" role="presentation"></i>
+    <i class="fd-object-marker__icon fd-icon--favorite" role="presentation"></i>
     <span class="fd-object-marker__text">Favourite</span>
 </div>
 <div class="fd-object-marker">
-    <i class="fd-object-marker__icon sap-icon--flag" role="presentation"></i>
+    <i class="fd-object-marker__icon fd-icon--flag" role="presentation"></i>
     <span class="fd-object-marker__text">Flag</span>
 </div>
 <div class="fd-object-marker">
-    <i class="fd-object-marker__icon sap-icon--user-edit" role="presentation"></i>
+    <i class="fd-object-marker__icon fd-icon--user-edit" role="presentation"></i>
     <span class="fd-object-marker__text">Draft</span>
 </div>
 <div class="fd-object-marker">
-    <i class="fd-object-marker__icon sap-icon--private" role="presentation"></i>
+    <i class="fd-object-marker__icon fd-icon--private" role="presentation"></i>
     <span class="fd-object-marker__text">Locked</span>
 </div>
 
 <div dir="rtl">
     <h4>RTL Support</h4>
     <div class="fd-object-marker">
-        <i class="fd-object-marker__icon sap-icon--request" role="presentation"></i>
+        <i class="fd-object-marker__icon fd-icon--request" role="presentation"></i>
         <span class="fd-object-marker__text">Request</span>
     </div>
     <div class="fd-object-marker">
-        <i class="fd-object-marker__icon sap-icon--favorite" role="presentation"></i>
+        <i class="fd-object-marker__icon fd-icon--favorite" role="presentation"></i>
         <span class="fd-object-marker__text">Favourite</span>
     </div>
     <div class="fd-object-marker">
-        <i class="fd-object-marker__icon sap-icon--flag" role="presentation"></i>
+        <i class="fd-object-marker__icon fd-icon--flag" role="presentation"></i>
         <span class="fd-object-marker__text">Flag</span>
     </div>
     <div class="fd-object-marker">
-        <i class="fd-object-marker__icon sap-icon--user-edit" role="presentation"></i>
+        <i class="fd-object-marker__icon fd-icon--user-edit" role="presentation"></i>
         <span class="fd-object-marker__text">Draft</span>
     </div>
     <div class="fd-object-marker">
-        <i class="fd-object-marker__icon sap-icon--private" role="presentation"></i>
+        <i class="fd-object-marker__icon fd-icon--private" role="presentation"></i>
         <span class="fd-object-marker__text">Locked</span>
     </div>
 </div>
@@ -109,22 +109,22 @@ iconAndText.parameters = {
 
 export const clickableObjectMarker = () => `
 <a class="fd-object-marker fd-object-marker--link">
-    <i class="fd-object-marker__icon sap-icon--private" role="presentation"></i>
+    <i class="fd-object-marker__icon fd-icon--private" role="presentation"></i>
     <span class="fd-object-marker__text">Locked</span>
 </a>
 <a class="fd-object-marker fd-object-marker--link">
-    <i class="fd-object-marker__icon sap-icon--user-edit" role="presentation"></i>
+    <i class="fd-object-marker__icon fd-icon--user-edit" role="presentation"></i>
     <span class="fd-object-marker__text">Unsaved Changes</span>
 </a>
 
 <div dir="rtl">
     <h4>RTL Support</h4>
     <a class="fd-object-marker fd-object-marker--link">
-        <i class="fd-object-marker__icon sap-icon--private" role="presentation"></i>
+        <i class="fd-object-marker__icon fd-icon--private" role="presentation"></i>
         <span class="fd-object-marker__text">Locked</span>
     </a>
     <a class="fd-object-marker fd-object-marker--link">
-        <i class="fd-object-marker__icon sap-icon--user-edit" role="presentation"></i>
+        <i class="fd-object-marker__icon fd-icon--user-edit" role="presentation"></i>
         <span class="fd-object-marker__text">Unsaved Changes</span>
     </a>
 </div>

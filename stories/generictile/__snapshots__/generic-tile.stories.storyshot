@@ -492,7 +492,7 @@ exports[`Storyshots Components/Generic Tile Kpi Tile 1`] = `
               
                         
               <i
-                class="fd-numeric-content__scale-arrow sap-icon--down"
+                class="fd-numeric-content__scale-arrow fd-icon--down"
                 role="presentation"
               />
               
@@ -528,7 +528,7 @@ exports[`Storyshots Components/Generic Tile Kpi Tile 1`] = `
                 
           <i
             aria-label="Refresh"
-            class="fd-tile__refresh sap-icon--refresh"
+            class="fd-tile__refresh fd-icon--refresh"
           />
           
                 
@@ -624,7 +624,7 @@ exports[`Storyshots Components/Generic Tile Kpi Tile 1`] = `
               
                         
               <i
-                class="fd-numeric-content__scale-arrow sap-icon--down"
+                class="fd-numeric-content__scale-arrow fd-icon--down"
                 role="presentation"
               />
               
@@ -660,7 +660,7 @@ exports[`Storyshots Components/Generic Tile Kpi Tile 1`] = `
                 
           <i
             aria-label="Refresh"
-            class="fd-tile__refresh sap-icon--refresh"
+            class="fd-tile__refresh fd-icon--refresh"
           />
           
                 
@@ -768,7 +768,7 @@ exports[`Storyshots Components/Generic Tile Kpi Tile 1`] = `
               
                         
               <i
-                class="fd-numeric-content__scale-arrow sap-icon--down"
+                class="fd-numeric-content__scale-arrow fd-icon--down"
                 role="presentation"
               />
               
@@ -868,7 +868,7 @@ exports[`Storyshots Components/Generic Tile Kpi Tile 1`] = `
               
                         
               <i
-                class="fd-numeric-content__scale-arrow sap-icon--up"
+                class="fd-numeric-content__scale-arrow fd-icon--up"
                 role="presentation"
               />
               
@@ -980,7 +980,7 @@ exports[`Storyshots Components/Generic Tile Kpi Tile 1`] = `
               
                         
               <i
-                class="fd-numeric-content__scale-arrow sap-icon--down"
+                class="fd-numeric-content__scale-arrow fd-icon--down"
                 role="presentation"
               />
               
@@ -1168,7 +1168,7 @@ exports[`Storyshots Components/Generic Tile Launch Tile 1`] = `
             
                     
             <i
-              class="fd-numeric-content__launch-icon sap-icon--line-charts"
+              class="fd-numeric-content__launch-icon fd-icon--line-charts"
               role="presentation"
             />
             
@@ -1202,7 +1202,7 @@ exports[`Storyshots Components/Generic Tile Launch Tile 1`] = `
               
                         
               <i
-                class="fd-numeric-content__scale-arrow sap-icon--down"
+                class="fd-numeric-content__scale-arrow fd-icon--down"
                 role="presentation"
               />
               
@@ -1238,7 +1238,7 @@ exports[`Storyshots Components/Generic Tile Launch Tile 1`] = `
                 
           <i
             aria-label="Refresh"
-            class="fd-tile__refresh sap-icon--refresh"
+            class="fd-tile__refresh fd-icon--refresh"
           />
           
                 
@@ -1314,7 +1314,7 @@ exports[`Storyshots Components/Generic Tile Launch Tile 1`] = `
             
                     
             <i
-              class="fd-numeric-content__launch-icon sap-icon--line-charts"
+              class="fd-numeric-content__launch-icon fd-icon--line-charts"
               role="presentation"
             />
             
@@ -1424,7 +1424,7 @@ exports[`Storyshots Components/Generic Tile Launch Tile 1`] = `
                 
           <i
             aria-label="Refresh"
-            class="fd-tile__refresh sap-icon--refresh"
+            class="fd-tile__refresh fd-icon--refresh"
           />
           
                 
@@ -1496,7 +1496,7 @@ exports[`Storyshots Components/Generic Tile Launch Tile 1`] = `
                 
           <i
             aria-label="Refresh"
-            class="fd-tile__refresh sap-icon--refresh"
+            class="fd-tile__refresh fd-icon--refresh"
           />
           
                 
@@ -3361,7 +3361,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--overflow"
+              class="fd-icon--overflow"
             />
             
                 
@@ -3375,7 +3375,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--decline"
+              class="fd-icon--decline"
               role="presentation"
             />
             
@@ -3429,7 +3429,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--overflow"
+              class="fd-icon--overflow"
               role="presentation"
             />
             
@@ -3444,7 +3444,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--decline"
+              class="fd-icon--decline"
               role="presentation"
             />
             
@@ -3500,7 +3500,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--overflow"
+              class="fd-icon--overflow"
               role="presentation"
             />
             
@@ -3515,7 +3515,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--decline"
+              class="fd-icon--decline"
               role="presentation"
             />
             
@@ -3569,7 +3569,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--overflow"
+              class="fd-icon--overflow"
               role="presentation"
             />
             
@@ -3584,7 +3584,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--decline"
+              class="fd-icon--decline"
               role="presentation"
             />
             
@@ -3638,7 +3638,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--overflow"
+              class="fd-icon--overflow"
               role="presentation"
             />
             
@@ -3653,7 +3653,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--decline"
+              class="fd-icon--decline"
               role="presentation"
             />
             
@@ -3707,7 +3707,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--overflow"
+              class="fd-icon--overflow"
               role="presentation"
             />
             
@@ -3722,7 +3722,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--decline"
+              class="fd-icon--decline"
               role="presentation"
             />
             
@@ -3802,7 +3802,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--overflow"
+              class="fd-icon--overflow"
               role="presentation"
             />
             
@@ -3817,7 +3817,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--decline"
+              class="fd-icon--decline"
               role="presentation"
             />
             
@@ -3871,7 +3871,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--overflow"
+              class="fd-icon--overflow"
               role="presentation"
             />
             
@@ -3886,7 +3886,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--decline"
+              class="fd-icon--decline"
               role="presentation"
             />
             
@@ -3940,7 +3940,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--overflow"
+              class="fd-icon--overflow"
               role="presentation"
             />
             
@@ -3955,7 +3955,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--decline"
+              class="fd-icon--decline"
               role="presentation"
             />
             
@@ -4009,7 +4009,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--overflow"
+              class="fd-icon--overflow"
               role="presentation"
             />
             
@@ -4024,7 +4024,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--decline"
+              class="fd-icon--decline"
               role="presentation"
             />
             
@@ -4080,7 +4080,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--overflow"
+              class="fd-icon--overflow"
               role="presentation"
             />
             
@@ -4095,7 +4095,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--decline"
+              class="fd-icon--decline"
               role="presentation"
             />
             
@@ -4151,7 +4151,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--overflow"
+              class="fd-icon--overflow"
               role="presentation"
             />
             
@@ -4166,7 +4166,7 @@ exports[`Storyshots Components/Generic Tile Line Tile 1`] = `
             
                     
             <i
-              class="sap-icon--decline"
+              class="fd-icon--decline"
               role="presentation"
             />
             
@@ -4660,7 +4660,7 @@ exports[`Storyshots Components/Generic Tile Tile In Action Mode 1`] = `
         
                     
         <i
-          class="sap-icon--decline"
+          class="fd-icon--decline"
           role="presentation"
         />
         
@@ -4674,7 +4674,7 @@ exports[`Storyshots Components/Generic Tile Tile In Action Mode 1`] = `
         
                     
         <i
-          class="sap-icon--overflow"
+          class="fd-icon--overflow"
           role="presentation"
         />
         
@@ -4757,7 +4757,7 @@ exports[`Storyshots Components/Generic Tile Tile In Action Mode 1`] = `
         
                     
         <i
-          class="sap-icon--decline"
+          class="fd-icon--decline"
           role="presentation"
         />
         
@@ -4771,7 +4771,7 @@ exports[`Storyshots Components/Generic Tile Tile In Action Mode 1`] = `
         
                     
         <i
-          class="sap-icon--overflow"
+          class="fd-icon--overflow"
           role="presentation"
         />
         
@@ -4874,7 +4874,7 @@ exports[`Storyshots Components/Generic Tile Tile In Action Mode 1`] = `
         
                     
         <i
-          class="sap-icon--decline"
+          class="fd-icon--decline"
           role="presentation"
         />
         
@@ -4888,7 +4888,7 @@ exports[`Storyshots Components/Generic Tile Tile In Action Mode 1`] = `
         
                     
         <i
-          class="sap-icon--overflow"
+          class="fd-icon--overflow"
           role="presentation"
         />
         
@@ -5018,7 +5018,7 @@ exports[`Storyshots Components/Generic Tile Tile In Action Mode 1`] = `
         
                     
         <i
-          class="sap-icon--decline"
+          class="fd-icon--decline"
           role="presentation"
         />
         
@@ -5032,7 +5032,7 @@ exports[`Storyshots Components/Generic Tile Tile In Action Mode 1`] = `
         
                     
         <i
-          class="sap-icon--overflow"
+          class="fd-icon--overflow"
           role="presentation"
         />
         

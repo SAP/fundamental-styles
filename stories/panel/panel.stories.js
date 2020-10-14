@@ -27,7 +27,7 @@ export const expandable = () => `
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
             <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="fghqwe321">
-                <i class="sap-icon--slim-arrow-right"></i>
+                <i class="fd-icon--slim-arrow-right"></i>
             </button>
         </div>
         <h4 class="fd-panel__title" id="asdASD123">Panel Header Collapsed</h4>
@@ -56,7 +56,7 @@ export const expandable = () => `
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
             <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="true" aria-haspopup="true" aria-controls="fghqwe32122">
-                <i class="sap-icon--slim-arrow-down"></i>
+                <i class="fd-icon--slim-arrow-down"></i>
             </button>
         </div>
         <h4 class="fd-panel__title" id="asdASD1234">Panel Header Expanded</h4>
@@ -124,7 +124,7 @@ export const compact = () => `
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
             <button class="fd-button fd-button--compact fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="Gekf63a" aria-labelledby="asdASD234">
-                <i class="sap-icon--slim-arrow-right"></i>
+                <i class="fd-icon--slim-arrow-right"></i>
             </button>
         </div>
         <h4 class="fd-panel__title" id="asdASD234">Panel Header</h4>
@@ -162,7 +162,7 @@ export const fixedHeightContent = () => `
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
             <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="GJL745SV" aria-labelledby="asdASD345">
-                <i class="sap-icon--slim-arrow-right"></i>
+                <i class="fd-icon--slim-arrow-right"></i>
             </button>
         </div>
         <h4 class="fd-panel__title" id="asdASD345">Panel Header</h4>

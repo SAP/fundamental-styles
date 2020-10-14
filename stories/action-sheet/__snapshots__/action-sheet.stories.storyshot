@@ -25,7 +25,7 @@ exports[`Storyshots Components/Action Sheet Desktop 1`] = `
         
             
         <i
-          class="sap-icon--settings"
+          class="fd-icon--settings"
         />
         
         
@@ -61,7 +61,7 @@ exports[`Storyshots Components/Action Sheet Desktop 1`] = `
             
                     
             <i
-              class="sap-icon--attachment"
+              class="fd-icon--attachment"
             />
             
                     
@@ -90,7 +90,7 @@ exports[`Storyshots Components/Action Sheet Desktop 1`] = `
             
                     
             <i
-              class="sap-icon--add"
+              class="fd-icon--add"
             />
             
                     
@@ -119,7 +119,7 @@ exports[`Storyshots Components/Action Sheet Desktop 1`] = `
             
                     
             <i
-              class="sap-icon--print"
+              class="fd-icon--print"
             />
             
                     
@@ -148,7 +148,7 @@ exports[`Storyshots Components/Action Sheet Desktop 1`] = `
             
                     
             <i
-              class="sap-icon--download"
+              class="fd-icon--download"
             />
             
                     
@@ -237,7 +237,7 @@ exports[`Storyshots Components/Action Sheet Tablet 1`] = `
         
             
         <i
-          class="sap-icon--settings"
+          class="fd-icon--settings"
         />
         
         
@@ -273,7 +273,7 @@ exports[`Storyshots Components/Action Sheet Tablet 1`] = `
             
                     
             <i
-              class="sap-icon--attachment"
+              class="fd-icon--attachment"
             />
             
                     
@@ -302,7 +302,7 @@ exports[`Storyshots Components/Action Sheet Tablet 1`] = `
             
                     
             <i
-              class="sap-icon--add"
+              class="fd-icon--add"
             />
             
                     
@@ -331,7 +331,7 @@ exports[`Storyshots Components/Action Sheet Tablet 1`] = `
             
                     
             <i
-              class="sap-icon--print"
+              class="fd-icon--print"
             />
             
                     
@@ -360,7 +360,7 @@ exports[`Storyshots Components/Action Sheet Tablet 1`] = `
             
                     
             <i
-              class="sap-icon--download"
+              class="fd-icon--download"
             />
             
                     

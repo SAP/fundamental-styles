@@ -660,7 +660,7 @@ export const withAdvancedToolbar = () => `
             </div>
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <span class="sap-icon--filter"></span>
+                    <span class="fd-icon--filter"></span>
                 </div>
             </div>
         </header>
@@ -707,10 +707,10 @@ export const withAdvancedToolbar = () => `
             <div class="fd-bar__middle">
                 <div class="fd-bar__element">
                     <button aria-label="navigation" class="fd-button fd-button--icon fd-button--transparent fd-button--compact">
-                        <i class="sap-icon--arrow-top"></i>
+                        <i class="fd-icon--arrow-top"></i>
                     </button>
                     <button aria-label="navigation" class="fd-button fd-button--icon fd-button--transparent fd-button--compact">
-                        <i class="sap-icon--arrow-bottom"></i>
+                        <i class="fd-icon--arrow-bottom"></i>
                     </button>
                 </div>
                 <div class="fd-bar__element fd-bar__element--full-width">
@@ -718,7 +718,7 @@ export const withAdvancedToolbar = () => `
                         <input class="fd-input fd-input-group__input fd-input--compact" type="text" placeholder="Search...">
                         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
                             <button aria-label="navigation" class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact">
-                                <i class="sap-icon--search"></i>
+                                <i class="fd-icon--search"></i>
                             </button>
                         </span>
                     </div>
@@ -775,10 +775,10 @@ export const withAdvancedToolbar = () => `
     <h4 style="margin: 0;">Table With Advanced Shellbar</h4>
     <div class="fd-toolbar__spacer"></div>
     <button aria-label="navigation" class="fd-button fd-button--compact fd-button--transparent" onclick="toggleDialog('filter-dialog-example', true)">
-        <i class="sap-icon--filter"></i>
+        <i class="fd-icon--filter"></i>
     </button>
     <button aria-label="navigation" class="fd-button fd-button--compact fd-button--transparent" onclick="toggleDialog('settings-dialog-example', true)">
-        <i class="sap-icon--action-settings"></i>
+        <i class="fd-icon--action-settings"></i>
     </button>
 </div>
 <table class="fd-table fd-table--compact">
@@ -865,7 +865,7 @@ export const responsiveTable = () => `
             <td class="fd-table__cell">5 EUR</td>
             <td class="fd-table__cell">India</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
+                <i class="fd-table__icon fd-table__icon--navigation fd-icon--navigation-right-arrow" role="presentation"></i>
             </td>
         </tr>
         <tr class="fd-table__row">
@@ -882,7 +882,7 @@ export const responsiveTable = () => `
             <td class="fd-table__cell">2 EUR</td>
             <td class="fd-table__cell">Mexico</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
+                <i class="fd-table__icon fd-table__icon--navigation fd-icon--navigation-right-arrow" role="presentation"></i>
             </td>
         </tr>
         <tr class="fd-table__row">
@@ -899,7 +899,7 @@ export const responsiveTable = () => `
             <td class="fd-table__cell">6 EUR</td>
             <td class="fd-table__cell">Spain</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
+                <i class="fd-table__icon fd-table__icon--navigation fd-icon--navigation-right-arrow" role="presentation"></i>
             </td>
         </tr>
     </tbody>
@@ -922,7 +922,7 @@ export const responsiveTablePopInMode = () => `
                     5 EUR
                 </td>
                 <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                    <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
+                    <i class="fd-table__icon fd-table__icon--navigation fd-icon--navigation-right-arrow" role="presentation"></i>
                 </td>
             </tr>
             <tr class="fd-table__row fd-table__row--secondary">
@@ -948,7 +948,7 @@ export const responsiveTablePopInMode = () => `
                     6 EUR
                 </td>
                 <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                    <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
+                    <i class="fd-table__icon fd-table__icon--navigation fd-icon--navigation-right-arrow" role="presentation"></i>
                 </td>
             </tr>
             <tr class="fd-table__row fd-table__row--secondary">
@@ -989,7 +989,7 @@ export const responsiveTablePopInMode = () => `
                     5 EUR
                 </td>
                 <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                    <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
+                    <i class="fd-table__icon fd-table__icon--navigation fd-icon--navigation-right-arrow" role="presentation"></i>
                 </td>
             </tr>
             <tr class="fd-table__row fd-table__row--secondary">
@@ -1020,7 +1020,7 @@ export const responsiveTablePopInMode = () => `
                     6 EUR
                 </td>
                 <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                    <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
+                    <i class="fd-table__icon fd-table__icon--navigation fd-icon--navigation-right-arrow" role="presentation"></i>
                 </td>
             </tr>
             <tr class="fd-table__row fd-table__row--secondary">
@@ -1252,7 +1252,7 @@ export const tableWithContextualMenu = () => `
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <button aria-label="navigation" class="fd-button fd-button--transparent" aria-controls="pQqQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More">
-                            <i class="sap-icon--overflow"></i>
+                            <i class="fd-icon--overflow"></i>
                         </button>
                     </div>
                     <div class="fd-popover__body" aria-hidden="true" id="pQqQRFF3">
@@ -1287,7 +1287,7 @@ export const tableWithContextualMenu = () => `
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <button aria-label="navigation" class="fd-button fd-button--transparent" aria-controls="G54qQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More">
-                            <i class="sap-icon--overflow"></i>
+                            <i class="fd-icon--overflow"></i>
                         </button>
                     </div>
                     <div class="fd-popover__body" aria-hidden="true" id="G54qQRFF3">
@@ -1322,7 +1322,7 @@ export const tableWithContextualMenu = () => `
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <button aria-label="navigation" class="fd-button fd-button--transparent" aria-controls="G54JRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More">
-                            <i class="sap-icon--overflow"></i>
+                            <i class="fd-icon--overflow"></i>
                         </button>
                     </div>
                     <div class="fd-popover__body" aria-hidden="true" id="G54JRFF3">
@@ -1371,21 +1371,21 @@ export const withMenuInHeader = () => `
                     <div class="fd-popover__control" aria-controls="popoverA1" aria-expanded="false" aria-haspopup="true">
                         <div class="fd-table__inner">
                             Column Header Ascending
-                            <span class="fd-table__icon sap-icon--sort-ascending"></span>
+                            <span class="fd-table__icon fd-icon--sort-ascending"></span>
                         </div>
                     </div>
                     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverA1">
                         <ul class="fd-list fd-list--compact" role="list">
                             <li tabindex="0" role="listitem" class="fd-list__item">
-                                <span class="fd-list__icon sap-icon--sort-descending"></span>
+                                <span class="fd-list__icon fd-icon--sort-descending"></span>
                                 <span class="fd-list__title">Sort Descending</span>
                             </li>
                             <li tabindex="0" role="listitem" class="fd-list__item">
-                                <span class="fd-list__icon sap-icon--sort-ascending"></span>
+                                <span class="fd-list__icon fd-icon--sort-ascending"></span>
                                 <span class="fd-list__title">Sort Ascendnig</span>
                             </li>
                             <li role="listitem" class="fd-list__item">
-                                <span class="fd-list__icon sap-icon--filter"></span>
+                                <span class="fd-list__icon fd-icon--filter"></span>
                                 <div class="fd-form-item  fd-form-item--horizontal">
                                     <label class="fd-form-label" for="input-1d">Filter</label>
                                     <input class="fd-input fd-input--compact" id="input-1d">
@@ -1400,21 +1400,21 @@ export const withMenuInHeader = () => `
                     <div class="fd-popover__control" aria-controls="popoverA2" aria-expanded="false" aria-haspopup="true">
                         <div class="fd-table__inner">
                             Column Header Descending
-                            <span class="fd-table__icon sap-icon--sort-descending"></span>
+                            <span class="fd-table__icon fd-icon--sort-descending"></span>
                         </div>
                     </div>
                     <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverA2">
                         <ul class="fd-list fd-list--compact" role="list">
                             <li tabindex="0" role="listitem" class="fd-list__item">
-                                <span class="fd-list__icon sap-icon--sort-descending"></span>
+                                <span class="fd-list__icon fd-icon--sort-descending"></span>
                                 <span class="fd-list__title">Sort Descending</span>
                             </li>
                             <li tabindex="0" role="listitem" class="fd-list__item">
-                                <span class="fd-list__icon sap-icon--sort-ascending"></span>
+                                <span class="fd-list__icon fd-icon--sort-ascending"></span>
                                 <span class="fd-list__title">Sort Ascendnig</span>
                             </li>
                             <li role="listitem" class="fd-list__item">
-                                <span class="fd-list__icon sap-icon--filter"></span>
+                                <span class="fd-list__icon fd-icon--filter"></span>
                                 <div class="fd-form-item  fd-form-item--horizontal">
                                     <label class="fd-form-label" for="input-1d">Filter</label>
                                     <input class="fd-input fd-input--compact" id="input-1d2">
@@ -1563,7 +1563,7 @@ export const navigationIndicationStates = () => `
             <td class="fd-table__cell">01/26/17</td>
             <td class="fd-table__cell fd-table__cell--fit-content">
                 <button aria-label="navigation" class="fd-button fd-button--transparent">
-                    <i class="sap-icon--navigation-right-arrow"></i>
+                    <i class="fd-icon--navigation-right-arrow"></i>
                 </button>
             </td>
         </tr>
@@ -1574,7 +1574,7 @@ export const navigationIndicationStates = () => `
             <td class="fd-table__cell">01/26/17</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated">
                 <button aria-label="navigation" class="fd-button fd-button--transparent">
-                    <i class="sap-icon--navigation-right-arrow"></i>
+                    <i class="fd-icon--navigation-right-arrow"></i>
                 </button>
             </td>
         </tr>
@@ -1585,7 +1585,7 @@ export const navigationIndicationStates = () => `
             <td class="fd-table__cell">01/26/17</td>
             <td class="fd-table__cell fd-table__cell--fit-content">
                 <button aria-label="navigation" class="fd-button fd-button--transparent">
-                    <i class="sap-icon--navigation-right-arrow"></i>
+                    <i class="fd-icon--navigation-right-arrow"></i>
                 </button>
             </td>
         </tr>
@@ -1615,7 +1615,7 @@ export const navigationIndicationStates = () => `
                 <td class="fd-table__cell">01/26/17</td>
                 <td class="fd-table__cell fd-table__cell--fit-content">
                     <button aria-label="navigation" class="fd-button fd-button--transparent">
-                        <i class="sap-icon--navigation-left-arrow"></i>
+                        <i class="fd-icon--navigation-left-arrow"></i>
                     </button>
                 </td>
             </tr>
@@ -1626,7 +1626,7 @@ export const navigationIndicationStates = () => `
                 <td class="fd-table__cell">01/26/17</td>
                 <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated">
                     <button aria-label="navigation" class="fd-button fd-button--transparent">
-                        <i class="sap-icon--navigation-left-arrow"></i>
+                        <i class="fd-icon--navigation-left-arrow"></i>
                     </button>
                 </td>
             </tr>
@@ -1637,7 +1637,7 @@ export const navigationIndicationStates = () => `
                 <td class="fd-table__cell">01/26/17</td>
                 <td class="fd-table__cell fd-table__cell--fit-content">
                     <button aria-label="navigation" class="fd-button fd-button--transparent">
-                        <i class="sap-icon--navigation-left-arrow"></i>
+                        <i class="fd-icon--navigation-left-arrow"></i>
                     </button>
                 </td>
             </tr>
@@ -1716,7 +1716,7 @@ export const gridTable = () => `
                             <div class="fd-select" role="combobox" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
                                 <div class="fd-select__control">
                                     <span class="fd-select__text-content">Very Best Screens</span>
-                                    <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
+                                    <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="fd-icon--slim-arrow-down" role="img"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -1741,7 +1741,7 @@ export const gridTable = () => `
                             <input aria-labelledby="fd-nEac1Ko5K0e" class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
                             <span class="fd-input-group__addon fd-input-group__addon--button">
                                 <button aria-label="Choose date" class="fd-button fd-button--transparent fd-input-group__button" type="button" tabindex="-1">
-                                    <i aria-hidden="true" class="sap-icon--appointment-2" role="img"></i>
+                                    <i aria-hidden="true" class="fd-icon--appointment-2" role="img"></i>
                                 </button>
                             </span>
                         </div>
@@ -1775,7 +1775,7 @@ export const gridTable = () => `
                             <div class="fd-select" role="combobox" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
                                 <div class="fd-select__control">
                                     <span class="fd-select__text-content">Fasttech</span>
-                                    <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
+                                    <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="fd-icon--slim-arrow-down" role="img"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -1800,7 +1800,7 @@ export const gridTable = () => `
                             <input aria-labelledby="fd-nEac1Ko5K0e" class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
                             <span class="fd-input-group__addon fd-input-group__addon--button">
                                 <button aria-label="Choose date" class="fd-button fd-button--transparent fd-input-group__button" type="button" tabindex="-1">
-                                    <i aria-hidden="true" class="sap-icon--appointment-2" role="img"></i>
+                                    <i aria-hidden="true" class="fd-icon--appointment-2" role="img"></i>
                                 </button>
                             </span>
                         </div>
@@ -1834,7 +1834,7 @@ export const gridTable = () => `
                             <div class="fd-select" role="combobox" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
                                 <div class="fd-select__control">
                                     <span class="fd-select__text-content">Printers for All</span>
-                                    <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
+                                    <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="fd-icon--slim-arrow-down" role="img"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -1859,7 +1859,7 @@ export const gridTable = () => `
                                 <input aria-labelledby="fd-nEac1Ko5K0e" class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
                                 <span class="fd-input-group__addon fd-input-group__addon--button">
                                     <button aria-label="Choose date" class="fd-button fd-button--transparent fd-input-group__button" type="button" tabindex="-1">
-                                        <i aria-hidden="true" class="sap-icon--appointment-2" role="img"></i>
+                                        <i aria-hidden="true" class="fd-icon--appointment-2" role="img"></i>
                                     </button>
                                 </span>
                             </div>
@@ -1894,7 +1894,7 @@ export const gridTable = () => `
                             <div class="fd-select" role="combobox" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
                                 <div class="fd-select__control">
                                     <span class="fd-select__text-content">Technocom</span>
-                                    <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
+                                    <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="fd-icon--slim-arrow-down" role="img"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -1919,7 +1919,7 @@ export const gridTable = () => `
                             <input aria-labelledby="fd-nEac1Ko5K0e" class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
                             <span class="fd-input-group__addon fd-input-group__addon--button">
                                 <button aria-label="Choose date" class="fd-button fd-button--transparent fd-input-group__button" type="button" tabindex="-1">
-                                    <i aria-hidden="true" class="sap-icon--appointment-2" role="img"></i>
+                                    <i aria-hidden="true" class="fd-icon--appointment-2" role="img"></i>
                                 </button>
                             </span>
                         </div>

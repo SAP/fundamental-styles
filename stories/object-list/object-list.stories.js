@@ -100,11 +100,11 @@ export const object = () => `
           </div>
           <div class="fd-object-list__row-right">
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--flag"
+              <i class="fd-object-marker__icon fd-icon--flag"
                aria-label="icon for flag"></i>
             </div>
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite"></i>
+              <i class="fd-object-marker__icon fd-icon--favorite" aria-label="icon for favourite"></i>
             </div>
           </div>
         </div>
@@ -162,7 +162,7 @@ export const object = () => `
           </div>
           <div class="fd-object-list__row-right">
           <span class="fd-object-status fd-object-status--negative">
-          <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
+          <i class="fd-object-status__icon fd-icon--status-negative" role="presentation"></i>
           <span class="fd-object-status__text">Negative</span>
          </span>
           </div>
@@ -277,7 +277,7 @@ export const object = () => `
           </div>
           <div class="fd-object-list__row-right">
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--user-edit" role="presentation"></i>
+              <i class="fd-object-marker__icon fd-icon--user-edit" role="presentation"></i>
                 <span class="fd-object-marker__text">Draft</span>
             </div>
           </div>
@@ -351,11 +351,11 @@ export const navigation = () => `
           </div>
           <div class="fd-object-list__row-right">
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--flag"
+              <i class="fd-object-marker__icon fd-icon--flag"
                aria-label="icon for flag"></i>
             </div>
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite"></i>
+              <i class="fd-object-marker__icon fd-icon--favorite" aria-label="icon for favourite"></i>
             </div>
           </div>
         </div>
@@ -416,7 +416,7 @@ export const navigation = () => `
           </div>
           <div class="fd-object-list__row-right">
           <span class="fd-object-status fd-object-status--negative">
-          <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
+          <i class="fd-object-status__icon fd-icon--status-negative" role="presentation"></i>
           <span class="fd-object-status__text">Negative</span>
          </span>
           </div>
@@ -492,11 +492,11 @@ export const selection = () => `
           </div>
           <div class="fd-object-list__row-right">
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--flag"
+              <i class="fd-object-marker__icon fd-icon--flag"
                aria-label="icon for flag"></i>
             </div>
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite"></i>
+              <i class="fd-object-marker__icon fd-icon--favorite" aria-label="icon for favourite"></i>
             </div>
           </div>
         </div>
@@ -555,7 +555,7 @@ export const selection = () => `
           </div>
           <div class="fd-object-list__row-right">
           <span class="fd-object-status fd-object-status--negative">
-          <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
+          <i class="fd-object-status__icon fd-icon--status-negative" role="presentation"></i>
           <span class="fd-object-status__text">Negative</span>
          </span>
           </div>
@@ -633,11 +633,11 @@ export const selectionWithNavigation = () => `
           </div>
           <div class="fd-object-list__row-right">
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--flag"
+              <i class="fd-object-marker__icon fd-icon--flag"
                aria-label="icon for flag"></i>
             </div>
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite"></i>
+              <i class="fd-object-marker__icon fd-icon--favorite" aria-label="icon for favourite"></i>
             </div>
           </div>
         </div>
@@ -698,7 +698,7 @@ export const selectionWithNavigation = () => `
           </div>
           <div class="fd-object-list__row-right">
           <span class="fd-object-status fd-object-status--negative">
-          <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
+          <i class="fd-object-status__icon fd-icon--status-negative" role="presentation"></i>
           <span class="fd-object-status__text">Negative</span>
          </span>
           </div>
@@ -776,11 +776,11 @@ export const borderless = () => `
           </div>
           <div class="fd-object-list__row-right">
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--flag"
+              <i class="fd-object-marker__icon fd-icon--flag"
                aria-label="icon for flag"></i>
             </div>
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite"></i>
+              <i class="fd-object-marker__icon fd-icon--favorite" aria-label="icon for favourite"></i>
             </div>
           </div>
         </div>
@@ -839,7 +839,7 @@ export const borderless = () => `
           </div>
           <div class="fd-object-list__row-right">
           <span class="fd-object-status fd-object-status--negative">
-          <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
+          <i class="fd-object-status__icon fd-icon--status-negative" role="presentation"></i>
           <span class="fd-object-status__text">Negative</span>
          </span>
           </div>
@@ -975,11 +975,11 @@ export const rtl = () => `
           </div>
           <div class="fd-object-list__row-right">
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--flag"
+              <i class="fd-object-marker__icon fd-icon--flag"
                aria-label="icon for flag"></i>
             </div>
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite"></i>
+              <i class="fd-object-marker__icon fd-icon--favorite" aria-label="icon for favourite"></i>
             </div>
           </div>
         </div>
@@ -1038,7 +1038,7 @@ export const rtl = () => `
           </div>
           <div class="fd-object-list__row-right">
           <span class="fd-object-status fd-object-status--negative">
-          <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
+          <i class="fd-object-status__icon fd-icon--status-negative" role="presentation"></i>
           <span class="fd-object-status__text">Negative</span>
          </span>
           </div>
@@ -1155,7 +1155,7 @@ export const rtl = () => `
           </div>
           <div class="fd-object-list__row-right">
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--user-edit" role="presentation"></i>
+              <i class="fd-object-marker__icon fd-icon--user-edit" role="presentation"></i>
                 <span class="fd-object-marker__text">Draft</span>
             </div>
           </div>

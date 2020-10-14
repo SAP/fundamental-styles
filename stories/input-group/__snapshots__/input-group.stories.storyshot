@@ -80,7 +80,7 @@ exports[`Storyshots Components/Forms/Input Group Focus 1`] = `
         
             
         <span
-          class="sap-icon--hide"
+          class="fd-icon--hide"
           role="presentation"
         />
         
@@ -193,7 +193,7 @@ exports[`Storyshots Components/Forms/Input Group Input With Actions 1`] = `
            
                 
           <i
-            class="sap-icon--navigation-down-arrow"
+            class="fd-icon--navigation-down-arrow"
           />
           
             
@@ -251,7 +251,7 @@ exports[`Storyshots Components/Forms/Input Group Input With Actions 1`] = `
            
                 
           <i
-            class="sap-icon--navigation-down-arrow"
+            class="fd-icon--navigation-down-arrow"
           />
           
             
@@ -351,7 +351,7 @@ exports[`Storyshots Components/Forms/Input Group Input With Icons 1`] = `
         
             
         <span
-          class="sap-icon--employee"
+          class="fd-icon--employee"
           role="presentation"
         />
         
@@ -410,7 +410,7 @@ exports[`Storyshots Components/Forms/Input Group Input With Icons 1`] = `
         
             
         <span
-          class="sap-icon--hide"
+          class="fd-icon--hide"
           role="presentation"
         />
         
@@ -460,7 +460,7 @@ exports[`Storyshots Components/Forms/Input Group Input With Icons 1`] = `
         
             
         <span
-          class="sap-icon--hide"
+          class="fd-icon--hide"
           role="presentation"
         />
         
@@ -647,7 +647,7 @@ exports[`Storyshots Components/Forms/Input Group States 1`] = `
         
             
         <span
-          class="sap-icon--hide"
+          class="fd-icon--hide"
           role="presentation"
         />
         
@@ -882,7 +882,7 @@ exports[`Storyshots Components/Forms/Input Group States 1`] = `
         
             
         <span
-          class="sap-icon--hide"
+          class="fd-icon--hide"
           role="presentation"
         />
         

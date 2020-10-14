@@ -17,7 +17,7 @@ The size of the content area automatically adjusts depending on the available sc
 
 ## Empty State
 
-When no pages are loaded, carousel displays a **Message Page** with a <code class="docs-code">sap-icon--document</code> icon.
+When no pages are loaded, carousel displays a **Message Page** with a <code class="docs-code">fd-icon--document</code> icon.
 
 
 ## Accessibility
@@ -43,7 +43,7 @@ export const carouselBottom = () => `
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
-                <i class="sap-icon--slim-arrow-left"></i>
+                <i class="fd-icon--slim-arrow-left"></i>
             </button>
             <ol class="fd-carousel__page-indicators">
                 <li 
@@ -73,7 +73,7 @@ export const carouselBottom = () => `
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
-                <i class="sap-icon--slim-arrow-right"></i>
+                <i class="fd-icon--slim-arrow-right"></i>
             </button>
         </div>
     </div>
@@ -91,13 +91,13 @@ export const carouselBottom = () => `
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
-                <i class="sap-icon--slim-arrow-left"></i>
+                <i class="fd-icon--slim-arrow-left"></i>
             </button>
             <button 
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
-                <i class="sap-icon--slim-arrow-right"></i>
+                <i class="fd-icon--slim-arrow-right"></i>
             </button>
         </div>
         <div class="fd-carousel__page-indicator-container">
@@ -141,7 +141,7 @@ export const carouselBottom = () => `
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
-                <i class="sap-icon--slim-arrow-left"></i>
+                <i class="fd-icon--slim-arrow-left"></i>
             </button>
             <div class="fd-carousel__page-indicators">
                 <div class="fd-carousel__text">1 of 4</div>
@@ -150,7 +150,7 @@ export const carouselBottom = () => `
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
-                <i class="sap-icon--slim-arrow-right"></i>
+                <i class="fd-icon--slim-arrow-right"></i>
             </button>
         </div>
     </div>
@@ -168,13 +168,13 @@ export const carouselBottom = () => `
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
-                <i class="sap-icon--slim-arrow-left"></i>
+                <i class="fd-icon--slim-arrow-left"></i>
             </button>
             <button 
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
-                <i class="sap-icon--slim-arrow-right"></i>
+                <i class="fd-icon--slim-arrow-right"></i>
             </button>
         </div>
     </div>
@@ -205,7 +205,7 @@ export const carouselTop = () => `
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
-                <i class="sap-icon--slim-arrow-left"></i>
+                <i class="fd-icon--slim-arrow-left"></i>
             </button>
             <ol class="fd-carousel__page-indicators">
                 <li 
@@ -234,7 +234,7 @@ export const carouselTop = () => `
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
-                <i class="sap-icon--slim-arrow-right"></i>
+                <i class="fd-icon--slim-arrow-right"></i>
             </button>
         </div>
         <div class="fd-carousel__content" style="min-height: 15.5rem;"></div>
@@ -278,13 +278,13 @@ export const carouselTop = () => `
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
-                <i class="sap-icon--slim-arrow-left"></i>
+                <i class="fd-icon--slim-arrow-left"></i>
             </button>
            <button 
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
-                <i class="sap-icon--slim-arrow-right"></i>
+                <i class="fd-icon--slim-arrow-right"></i>
             </button>
         </div>
     </div>
@@ -307,13 +307,13 @@ export const carouselTop = () => `
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
-                <i class="sap-icon--slim-arrow-left"></i>
+                <i class="fd-icon--slim-arrow-left"></i>
             </button>
             <button 
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
-                <i class="sap-icon--slim-arrow-right"></i>
+                <i class="fd-icon--slim-arrow-right"></i>
             </button>
         </div>
     </div>
@@ -331,14 +331,14 @@ export const carouselTop = () => `
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
-                <i class="sap-icon--slim-arrow-left"></i>
+                <i class="fd-icon--slim-arrow-left"></i>
             </button>
             <ol class="fd-carousel__page-indicators"></ol>
             <button 
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
-                <i class="sap-icon--slim-arrow-right"></i>
+                <i class="fd-icon--slim-arrow-right"></i>
             </button>
         </div>
         <div class="fd-carousel__content" style="text-align: center; padding: 1rem; min-height: 15.5rem;">
@@ -385,7 +385,7 @@ export const carouselNoNavigation = () => `
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
-                <i class="sap-icon--slim-arrow-left"></i>
+                <i class="fd-icon--slim-arrow-left"></i>
             </button>
             <ol class="fd-carousel__page-indicators">
                 <li 
@@ -415,7 +415,7 @@ export const carouselNoNavigation = () => `
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
-                <i class="sap-icon--slim-arrow-right"></i>
+                <i class="fd-icon--slim-arrow-right"></i>
             </button>
         </div>
     </div>
@@ -458,13 +458,13 @@ export const carouselNoNavigation = () => `
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
-                <i class="sap-icon--slim-arrow-left"></i>
+                <i class="fd-icon--slim-arrow-left"></i>
             </button>
            <button 
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
-                <i class="sap-icon--slim-arrow-right"></i>
+                <i class="fd-icon--slim-arrow-right"></i>
             </button>
         </div>
     </div>

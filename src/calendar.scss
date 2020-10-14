@@ -285,7 +285,7 @@ $fd-calendar-special-days: (
       flex-grow: 0;
     }
 
-    [class*="sap-icon"] {
+    [class*="fd-icon"] {
       @include fd-rtl() {
         transform: scaleX(-1);
       }

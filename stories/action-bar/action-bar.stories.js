@@ -26,7 +26,7 @@ export const backBtn = () => `
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
             <button aria-label="Go Back" class="fd-button fd-button--transparent fd-button--compact">
-                <i  role="presentation" class="sap-icon--navigation-left-arrow"></i>
+                <i  role="presentation" class="fd-icon--navigation-left-arrow"></i>
             </button>
         </div>
         <div class="fd-action-bar__title">
@@ -46,7 +46,7 @@ export const backBtn = () => `
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
             <button aria-label="Go Back" class="fd-button fd-button--transparent fd-button--compact">
-                <i  role="presentation" class="sap-icon--navigation-right-arrow"></i>
+                <i  role="presentation" class="fd-icon--navigation-right-arrow"></i>
             </button>
         </div>
         <div class="fd-action-bar__title">
@@ -111,7 +111,7 @@ export const backBtnNoDescription = () => `
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
             <button aria-label="Go Back" class="fd-button fd-button--transparent fd-button--compact">
-                <i  role="presentation" class="sap-icon--navigation-left-arrow"></i>
+                <i  role="presentation" class="fd-icon--navigation-left-arrow"></i>
             </button>
         </div>
         <div class="fd-action-bar__title">
@@ -130,7 +130,7 @@ export const backBtnNoDescription = () => `
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
             <button aria-label="Go Back" class="fd-button fd-button--transparent fd-button--compact">
-                <i role="presentation" class="sap-icon--navigation-right-arrow"></i>
+                <i role="presentation" class="fd-icon--navigation-right-arrow"></i>
             </button>
         </div>
         <div class="fd-action-bar__title">
@@ -156,7 +156,7 @@ export const longTitleDescription = () => `
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
             <button aria-label="Go Back" class="fd-button fd-button--transparent fd-button--compact">
-                <i role="presentation" class="sap-icon--navigation-left-arrow"></i>
+                <i role="presentation" class="fd-icon--navigation-left-arrow"></i>
             </button>
         </div>
         <div class="fd-action-bar__title">
@@ -178,7 +178,7 @@ export const longTitleDescription = () => `
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
             <button aria-label="Go Back" class="fd-button fd-button--transparent fd-button--compact">
-                <i role="presentation" class="sap-icon--navigation-right-arrow"></i>
+                <i role="presentation" class="fd-icon--navigation-right-arrow"></i>
             </button>
         </div>
         <div class="fd-action-bar__title">
@@ -214,7 +214,7 @@ export const actions = () => `
                 <div class="fd-popover__control">
                     <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact"
                     aria-controls="wgxzK859" aria-haspopup="true" aria-expanded="false" aria-label="More">
-                        <i class="sap-icon--overflow"></i>
+                        <i class="fd-icon--overflow"></i>
                     </button>
                 </div>
                 <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="wgxzK859">
@@ -268,7 +268,7 @@ export const responsiveL = () => `
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
             <button aria-label="Go Back" class="fd-button fd-button--transparent fd-button--compact">
-                <i role="presentation" class="sap-icon--navigation-left-arrow"></i>
+                <i role="presentation" class="fd-icon--navigation-left-arrow"></i>
             </button>
         </div>
         <div class="fd-action-bar__title">
@@ -288,7 +288,7 @@ export const responsiveL = () => `
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
             <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact">
-                <i  role="presentation" class="sap-icon--navigation-right-arrow"></i>
+                <i  role="presentation" class="fd-icon--navigation-right-arrow"></i>
             </button>
         </div>
         <div class="fd-action-bar__title">
@@ -316,7 +316,7 @@ export const responsiveXL = () => `
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
             <button aria-label="Go Back" class="fd-button fd-button--transparent fd-button--compact">
-                <i role="presentation" class="sap-icon--navigation-left-arrow"></i>
+                <i role="presentation" class="fd-icon--navigation-left-arrow"></i>
             </button>
         </div>
         <div class="fd-action-bar__title">
@@ -336,7 +336,7 @@ export const responsiveXL = () => `
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
             <button aria-label="Go Back" class="fd-button fd-button--transparent fd-button--compact">
-                <i role="presentation" class="sap-icon--navigation-right-arrow"></i>
+                <i role="presentation" class="fd-icon--navigation-right-arrow"></i>
             </button>
         </div>
         <div class="fd-action-bar__title">
@@ -365,7 +365,7 @@ export const mobile = () => `
         <div class="fd-action-bar__header">
             <div class="fd-action-bar__back">
                 <button aria-label="Go Back" class="fd-button fd-button--transparent">
-                    <i role="presentation" class="sap-icon--navigation-left-arrow"></i>
+                    <i role="presentation" class="fd-icon--navigation-left-arrow"></i>
                 </button>
             </div>
             <div class="fd-action-bar__title">
@@ -376,7 +376,7 @@ export const mobile = () => `
                     <div class="fd-popover__control">
                         <button aria-label="button"class="fd-button fd-button--transparent"
                         aria-controls="wgxzK85" aria-haspopup="true" aria-expanded="false" aria-label="More">
-                            <i class="sap-icon--overflow"></i>
+                            <i class="fd-icon--overflow"></i>
                         </button>
                     </div>
                     <div class="fd-popover__body" aria-hidden="true" id="wgxzK85">
@@ -418,7 +418,7 @@ export const mobile = () => `
         <div class="fd-action-bar__header">
             <div class="fd-action-bar__back">
                 <button aria-label="Go Back" class="fd-button fd-button--transparent">
-                    <i role="presentation" class="sap-icon--navigation-right-arrow"></i>
+                    <i role="presentation" class="fd-icon--navigation-right-arrow"></i>
                 </button>
             </div>
             <div class="fd-action-bar__title">
@@ -429,7 +429,7 @@ export const mobile = () => `
                     <div class="fd-popover__control">
                         <button aria-label="button"class="fd-button fd-button--transparent "
                         aria-controls="wgxzK86" aria-haspopup="true" aria-expanded="false" aria-label="More">
-                            <i class="sap-icon--overflow"></i>
+                            <i class="fd-icon--overflow"></i>
                         </button>
                     </div>
                     <div class="fd-popover__body" aria-hidden="true" id="wgxzK86">

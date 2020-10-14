@@ -64,7 +64,7 @@ $block: #{$fd-namespace}-feed-input;
     margin-left: $fd-feed-input-btn-margin-start;
     margin-right: $fd-feed-input-btn-margin-end;
 
-    &[class*=sap-icon]::before {
+    &[class*=fd-icon]::before {
       display: inline-block;
     }
 
@@ -72,7 +72,7 @@ $block: #{$fd-namespace}-feed-input;
       margin-left: $fd-feed-input-btn-margin-end;
       margin-right: $fd-feed-input-btn-margin-start;
 
-      &[class*=sap-icon]::before {
+      &[class*=fd-icon]::before {
         transform: rotate(180deg);
       }
     }

@@ -156,7 +156,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
               
                   <i
                     aria-label="icon for flag"
-                    class="fd-object-marker__icon sap-icon--flag"
+                    class="fd-object-marker__icon fd-icon--flag"
                   />
                   
             
@@ -170,7 +170,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
               
                   <i
                     aria-label="icon for favourite"
-                    class="fd-object-marker__icon sap-icon--favorite"
+                    class="fd-object-marker__icon fd-icon--favorite"
                   />
                   
             
@@ -397,7 +397,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
                   
           
                   <i
-                    class="fd-object-status__icon sap-icon--status-negative"
+                    class="fd-object-status__icon fd-icon--status-negative"
                     role="presentation"
                   />
                   
@@ -896,7 +896,7 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
               
                     <i
                       aria-label="icon for flag"
-                      class="fd-object-marker__icon sap-icon--flag"
+                      class="fd-object-marker__icon fd-icon--flag"
                     />
                     
             
@@ -910,7 +910,7 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
               
                     <i
                       aria-label="icon for favourite"
-                      class="fd-object-marker__icon sap-icon--favorite"
+                      class="fd-object-marker__icon fd-icon--favorite"
                     />
                     
             
@@ -1147,7 +1147,7 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
                     
           
                     <i
-                      class="fd-object-status__icon sap-icon--status-negative"
+                      class="fd-object-status__icon fd-icon--status-negative"
                       role="presentation"
                     />
                     
@@ -1421,7 +1421,7 @@ exports[`Storyshots Components/Object List RTL 1`] = `
               
                   <i
                     aria-label="icon for flag"
-                    class="fd-object-marker__icon sap-icon--flag"
+                    class="fd-object-marker__icon fd-icon--flag"
                   />
                   
             
@@ -1435,7 +1435,7 @@ exports[`Storyshots Components/Object List RTL 1`] = `
               
                   <i
                     aria-label="icon for favourite"
-                    class="fd-object-marker__icon sap-icon--favorite"
+                    class="fd-object-marker__icon fd-icon--favorite"
                   />
                   
             
@@ -1662,7 +1662,7 @@ exports[`Storyshots Components/Object List RTL 1`] = `
                   
           
                   <i
-                    class="fd-object-status__icon sap-icon--status-negative"
+                    class="fd-object-status__icon fd-icon--status-negative"
                     role="presentation"
                   />
                   
@@ -2118,7 +2118,7 @@ exports[`Storyshots Components/Object List RTL 1`] = `
                   
               
                   <i
-                    class="fd-object-marker__icon sap-icon--user-edit"
+                    class="fd-object-marker__icon fd-icon--user-edit"
                     role="presentation"
                   />
                   
@@ -2355,7 +2355,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
               
                   <i
                     aria-label="icon for flag"
-                    class="fd-object-marker__icon sap-icon--flag"
+                    class="fd-object-marker__icon fd-icon--flag"
                   />
                   
             
@@ -2369,7 +2369,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
               
                   <i
                     aria-label="icon for favourite"
-                    class="fd-object-marker__icon sap-icon--favorite"
+                    class="fd-object-marker__icon fd-icon--favorite"
                   />
                   
             
@@ -2597,7 +2597,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
                   
           
                   <i
-                    class="fd-object-status__icon sap-icon--status-negative"
+                    class="fd-object-status__icon fd-icon--status-negative"
                     role="presentation"
                   />
                   
@@ -2873,7 +2873,7 @@ exports[`Storyshots Components/Object List Selection With Navigation 1`] = `
               
                     <i
                       aria-label="icon for flag"
-                      class="fd-object-marker__icon sap-icon--flag"
+                      class="fd-object-marker__icon fd-icon--flag"
                     />
                     
             
@@ -2887,7 +2887,7 @@ exports[`Storyshots Components/Object List Selection With Navigation 1`] = `
               
                     <i
                       aria-label="icon for favourite"
-                      class="fd-object-marker__icon sap-icon--favorite"
+                      class="fd-object-marker__icon fd-icon--favorite"
                     />
                     
             
@@ -3124,7 +3124,7 @@ exports[`Storyshots Components/Object List Selection With Navigation 1`] = `
                     
           
                     <i
-                      class="fd-object-status__icon sap-icon--status-negative"
+                      class="fd-object-status__icon fd-icon--status-negative"
                       role="presentation"
                     />
                     
@@ -3390,7 +3390,7 @@ exports[`Storyshots Components/Object List Standard 1`] = `
               
                 <i
                   aria-label="icon for flag"
-                  class="fd-object-marker__icon sap-icon--flag"
+                  class="fd-object-marker__icon fd-icon--flag"
                 />
                 
             
@@ -3404,7 +3404,7 @@ exports[`Storyshots Components/Object List Standard 1`] = `
               
                 <i
                   aria-label="icon for favourite"
-                  class="fd-object-marker__icon sap-icon--favorite"
+                  class="fd-object-marker__icon fd-icon--favorite"
                 />
                 
             
@@ -3630,7 +3630,7 @@ exports[`Storyshots Components/Object List Standard 1`] = `
                 
           
                 <i
-                  class="fd-object-status__icon sap-icon--status-negative"
+                  class="fd-object-status__icon fd-icon--status-negative"
                   role="presentation"
                 />
                 
@@ -4084,7 +4084,7 @@ exports[`Storyshots Components/Object List Standard 1`] = `
                 
               
                 <i
-                  class="fd-object-marker__icon sap-icon--user-edit"
+                  class="fd-object-marker__icon fd-icon--user-edit"
                   role="presentation"
                 />
                 

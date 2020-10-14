@@ -142,7 +142,7 @@ $button: #{$fd-namespace}-button;
     }
 
     @include fd-rtl() {
-      & > [class*=sap-icon] {
+      & > [class*=fd-icon] {
         transform: rotate(180deg);
       }
     }

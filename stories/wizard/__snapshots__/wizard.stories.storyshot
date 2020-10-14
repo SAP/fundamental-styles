@@ -58,7 +58,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                 
                             
                 <i
-                  class="fd-wizard__icon sap-icon--person-placeholder"
+                  class="fd-wizard__icon fd-icon--person-placeholder"
                   role="presentation"
                 />
                 
@@ -118,7 +118,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                 
                             
                 <i
-                  class="fd-wizard__icon sap-icon--contacts"
+                  class="fd-wizard__icon fd-icon--contacts"
                   role="presentation"
                 />
                 
@@ -185,7 +185,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                 
                             
                 <i
-                  class="fd-wizard__icon sap-icon--money-bills"
+                  class="fd-wizard__icon fd-icon--money-bills"
                   role="presentation"
                 />
                 
@@ -245,7 +245,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                 
                             
                 <i
-                  class="fd-wizard__icon sap-icon--batch-payments"
+                  class="fd-wizard__icon fd-icon--batch-payments"
                   role="presentation"
                 />
                 
@@ -306,7 +306,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                 
                             
                 <i
-                  class="fd-wizard__icon sap-icon--shipping-status"
+                  class="fd-wizard__icon fd-icon--shipping-status"
                   role="presentation"
                 />
                 
@@ -461,7 +461,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                 
                             
                 <i
-                  class="fd-wizard__icon sap-icon--person-placeholder"
+                  class="fd-wizard__icon fd-icon--person-placeholder"
                   role="presentation"
                 />
                 
@@ -521,7 +521,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                 
                             
                 <i
-                  class="fd-wizard__icon sap-icon--contacts"
+                  class="fd-wizard__icon fd-icon--contacts"
                   role="presentation"
                 />
                 
@@ -588,7 +588,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                 
                             
                 <i
-                  class="fd-wizard__icon sap-icon--money-bills"
+                  class="fd-wizard__icon fd-icon--money-bills"
                   role="presentation"
                 />
                 
@@ -648,7 +648,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                 
                             
                 <i
-                  class="fd-wizard__icon sap-icon--batch-payments"
+                  class="fd-wizard__icon fd-icon--batch-payments"
                   role="presentation"
                 />
                 
@@ -709,7 +709,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                 
                             
                 <i
-                  class="fd-wizard__icon sap-icon--shipping-status"
+                  class="fd-wizard__icon fd-icon--shipping-status"
                   role="presentation"
                 />
                 
@@ -770,7 +770,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                 
                             
                 <i
-                  class="fd-wizard__icon sap-icon--product"
+                  class="fd-wizard__icon fd-icon--product"
                   role="presentation"
                 />
                 
@@ -838,7 +838,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                 
                             
                 <i
-                  class="fd-wizard__icon sap-icon--course-program"
+                  class="fd-wizard__icon fd-icon--course-program"
                   role="presentation"
                 />
                 
@@ -993,7 +993,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                 
                             
                 <i
-                  class="fd-wizard__icon sap-icon--person-placeholder"
+                  class="fd-wizard__icon fd-icon--person-placeholder"
                   role="presentation"
                 />
                 
@@ -1053,7 +1053,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                 
                             
                 <i
-                  class="fd-wizard__icon sap-icon--contacts"
+                  class="fd-wizard__icon fd-icon--contacts"
                   role="presentation"
                 />
                 
@@ -1134,7 +1134,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                     
                                         
                     <i
-                      class="fd-wizard__icon sap-icon--money-bills"
+                      class="fd-wizard__icon fd-icon--money-bills"
                       role="presentation"
                     />
                     
@@ -1189,7 +1189,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                       
                                             
                       <i
-                        class=" sap-icon--money-bills"
+                        class=" fd-icon--money-bills"
                         role="presentation"
                       />
                       
@@ -1219,7 +1219,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                       
                                             
                       <i
-                        class="sap-icon--contacts"
+                        class="fd-icon--contacts"
                         role="presentation"
                       />
                       
@@ -1249,7 +1249,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                       
                                             
                       <i
-                        class="sap-icon--person-placeholder"
+                        class="fd-icon--person-placeholder"
                         role="presentation"
                       />
                       
@@ -1310,7 +1310,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                 
                             
                 <i
-                  class="fd-wizard__icon sap-icon--batch-payments"
+                  class="fd-wizard__icon fd-icon--batch-payments"
                   role="presentation"
                 />
                 
@@ -1371,7 +1371,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                 
                             
                 <i
-                  class="fd-wizard__icon sap-icon--shipping-status"
+                  class="fd-wizard__icon fd-icon--shipping-status"
                   role="presentation"
                 />
                 
@@ -1432,7 +1432,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                 
                             
                 <i
-                  class="fd-wizard__icon sap-icon--product"
+                  class="fd-wizard__icon fd-icon--product"
                   role="presentation"
                 />
                 
@@ -1500,7 +1500,7 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
                 
                             
                 <i
-                  class="fd-wizard__icon sap-icon--course-program"
+                  class="fd-wizard__icon fd-icon--course-program"
                   role="presentation"
                 />
                 

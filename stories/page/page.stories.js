@@ -41,7 +41,7 @@ export const basicPage = () => `
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
                     <button class="fd-button fd-button--transparent" aria-label="Go back"> 
-                        <i class="sap-icon--navigation-left-arrow"></i>
+                        <i class="fd-icon--navigation-left-arrow"></i>
                     </button>
                 </div>
                 <div class="fd-bar__element">
@@ -51,7 +51,7 @@ export const basicPage = () => `
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button class="fd-button fd-button--transparent" aria-label="See more"> 
-                        <i class="sap-icon--grid"></i>
+                        <i class="fd-icon--grid"></i>
                     </button>
                 </div>
             </div>
@@ -89,7 +89,7 @@ export const transparentPage = () => `
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
                     <button class="fd-button fd-button--transparent" aria-label="Go back"> 
-                        <i class="sap-icon--navigation-left-arrow"></i>
+                        <i class="fd-icon--navigation-left-arrow"></i>
                     </button>
                 </div>
                 <div class="fd-bar__element">
@@ -99,7 +99,7 @@ export const transparentPage = () => `
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button class="fd-button fd-button--transparent" aria-label="See more"> 
-                        <i class="sap-icon--overflow"></i>
+                        <i class="fd-icon--overflow"></i>
                     </button>
                 </div>
             </div>
@@ -151,7 +151,7 @@ export const responsivePage = () => `
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
                     <button class="fd-button fd-button--transparent" aria-label="Go back"> 
-                        <i class="sap-icon--navigation-left-arrow"></i>
+                        <i class="fd-icon--navigation-left-arrow"></i>
                     </button>
                 </div>
                 <div class="fd-bar__element">
@@ -161,7 +161,7 @@ export const responsivePage = () => `
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button class="fd-button fd-button--transparent" aria-label="See more"> 
-                        <i class="sap-icon--overflow"></i>
+                        <i class="fd-icon--overflow"></i>
                     </button>
                 </div>
             </div>

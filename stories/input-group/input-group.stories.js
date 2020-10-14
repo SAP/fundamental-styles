@@ -79,7 +79,7 @@ export const inputWithIcons = () => `
     <label class="fd-form-label" for="aqwsde117">Input with icon on the left</label>
     <div class="fd-input-group">
         <span class="fd-input-group__addon">
-            <span class="sap-icon--employee" role="presentation"></span>
+            <span class="fd-icon--employee" role="presentation"></span>
         </span>
         <input class="fd-input fd-input-group__input" type="text" id="aqwsde117" name="" value="1000000">
     </div>
@@ -90,7 +90,7 @@ export const inputWithIcons = () => `
     <div class="fd-input-group">
         <input class="fd-input fd-input-group__input" type="text" id="aqwsde118" name="" value="1000000">
         <span class="fd-input-group__addon">
-            <span class="sap-icon--hide" role="presentation"></span>
+            <span class="fd-icon--hide" role="presentation"></span>
         </span>
     </div>
 </div>
@@ -100,7 +100,7 @@ export const inputWithIcons = () => `
     <div class="fd-input-group">
         <input class="fd-input fd-input-group__input right-align" type="text" id="aqwsde119" name="" value="1000000">
         <span class="fd-input-group__addon">
-            <span class="sap-icon--hide" role="presentation"></span>
+            <span class="fd-icon--hide" role="presentation"></span>
         </span>
     </div>
 </div>
@@ -132,7 +132,7 @@ export const inputWithActions = () => `
         <input class="fd-input fd-input-group__input" type="text" id="aqwsde121" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button">
             <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent" aria-label="Navigation"> 
-                <i class="sap-icon--navigation-down-arrow"></i>
+                <i class="fd-icon--navigation-down-arrow"></i>
             </button>
         </span>
     </div>
@@ -144,7 +144,7 @@ export const inputWithActions = () => `
         <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="aqwsde122" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
             <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact" aria-label="Navigation"> 
-                <i class="sap-icon--navigation-down-arrow"></i>
+                <i class="fd-icon--navigation-down-arrow"></i>
             </button>
         </span>
     </div>
@@ -184,7 +184,7 @@ export const states = () => `
     <div class="fd-input-group is-error">
         <input class="fd-input fd-input-group__input" type="text" id="aqwsde125" name="" value="1000000">
         <span class="fd-input-group__addon">
-            <span class="sap-icon--hide" role="presentation"></span>
+            <span class="fd-icon--hide" role="presentation"></span>
         </span>
     </div>
 </div>
@@ -230,7 +230,7 @@ export const states = () => `
     <div class="fd-input-group is-error is-disabled">
         <input class="fd-input fd-input-group__input" disabled type="text" id="aqwsde130" name="" value="1000000">
         <span class="fd-input-group__addon">
-            <span class="sap-icon--hide" role="presentation"></span>
+            <span class="fd-icon--hide" role="presentation"></span>
         </span>
     </div>
 </div>
@@ -276,7 +276,7 @@ export const focus = () => `
     <div class="fd-input-group is-error is-focus">
         <input class="fd-input fd-input-group__input" type="text" id="aqwsde134" name="" value="1000000">
         <span class="fd-input-group__addon">
-            <span class="sap-icon--hide" role="presentation"></span>
+            <span class="fd-icon--hide" role="presentation"></span>
         </span>
     </div>
 </div>

@@ -77,7 +77,7 @@ exports[`Storyshots Components/Tabs Compact Filter Mode 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -125,7 +125,7 @@ exports[`Storyshots Components/Tabs Compact Filter Mode 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -173,7 +173,7 @@ exports[`Storyshots Components/Tabs Compact Filter Mode 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -208,7 +208,7 @@ exports[`Storyshots Components/Tabs Compact Filter Mode 1`] = `
       
         
       <i
-        class="sap-icon--slim-arrow-down"
+        class="fd-icon--slim-arrow-down"
         role="presentation"
       />
       
@@ -300,7 +300,7 @@ exports[`Storyshots Components/Tabs Compact Icon Only 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -342,7 +342,7 @@ exports[`Storyshots Components/Tabs Compact Icon Only 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -383,7 +383,7 @@ exports[`Storyshots Components/Tabs Compact Icon Only 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -411,7 +411,7 @@ exports[`Storyshots Components/Tabs Compact Icon Only 1`] = `
       
         
       <i
-        class="sap-icon--slim-arrow-down"
+        class="fd-icon--slim-arrow-down"
         role="presentation"
       />
       
@@ -491,7 +491,7 @@ exports[`Storyshots Components/Tabs Compact Process Mode 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -552,7 +552,7 @@ exports[`Storyshots Components/Tabs Compact Process Mode 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -613,7 +613,7 @@ exports[`Storyshots Components/Tabs Compact Process Mode 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -656,7 +656,7 @@ exports[`Storyshots Components/Tabs Compact Process Mode 1`] = `
       
         
       <i
-        class="sap-icon--slim-arrow-down"
+        class="fd-icon--slim-arrow-down"
         role="presentation"
       />
       
@@ -811,7 +811,7 @@ exports[`Storyshots Components/Tabs Default 1`] = `
       
         
       <i
-        class="sap-icon--slim-arrow-down"
+        class="fd-icon--slim-arrow-down"
         role="presentation"
       />
       
@@ -938,7 +938,7 @@ exports[`Storyshots Components/Tabs Filter Mode 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -986,7 +986,7 @@ exports[`Storyshots Components/Tabs Filter Mode 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -1034,7 +1034,7 @@ exports[`Storyshots Components/Tabs Filter Mode 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -1069,7 +1069,7 @@ exports[`Storyshots Components/Tabs Filter Mode 1`] = `
       
         
       <i
-        class="sap-icon--slim-arrow-down"
+        class="fd-icon--slim-arrow-down"
         role="presentation"
       />
       
@@ -1161,7 +1161,7 @@ exports[`Storyshots Components/Tabs Icon Only 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -1203,7 +1203,7 @@ exports[`Storyshots Components/Tabs Icon Only 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -1244,7 +1244,7 @@ exports[`Storyshots Components/Tabs Icon Only 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -1272,7 +1272,7 @@ exports[`Storyshots Components/Tabs Icon Only 1`] = `
       
         
       <i
-        class="sap-icon--slim-arrow-down"
+        class="fd-icon--slim-arrow-down"
         role="presentation"
       />
       
@@ -1420,7 +1420,7 @@ exports[`Storyshots Components/Tabs Nav Tab 1`] = `
       
         
       <i
-        class="sap-icon--slim-arrow-down"
+        class="fd-icon--slim-arrow-down"
         role="presentation"
       />
       
@@ -1500,7 +1500,7 @@ exports[`Storyshots Components/Tabs Process Mode 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -1561,7 +1561,7 @@ exports[`Storyshots Components/Tabs Process Mode 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -1622,7 +1622,7 @@ exports[`Storyshots Components/Tabs Process Mode 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -1665,7 +1665,7 @@ exports[`Storyshots Components/Tabs Process Mode 1`] = `
       
         
       <i
-        class="sap-icon--slim-arrow-right"
+        class="fd-icon--slim-arrow-right"
         role="presentation"
       />
       
@@ -1792,7 +1792,7 @@ exports[`Storyshots Components/Tabs Semantic Filter Mode 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -1840,7 +1840,7 @@ exports[`Storyshots Components/Tabs Semantic Filter Mode 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -1888,7 +1888,7 @@ exports[`Storyshots Components/Tabs Semantic Filter Mode 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -1936,7 +1936,7 @@ exports[`Storyshots Components/Tabs Semantic Filter Mode 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -1971,7 +1971,7 @@ exports[`Storyshots Components/Tabs Semantic Filter Mode 1`] = `
       
         
       <i
-        class="sap-icon--slim-arrow-down"
+        class="fd-icon--slim-arrow-down"
         role="presentation"
       />
       
@@ -2243,7 +2243,7 @@ exports[`Storyshots Components/Tabs Semantic Inline 1`] = `
       
         
       <i
-        class="sap-icon--slim-arrow-down"
+        class="fd-icon--slim-arrow-down"
         role="presentation"
       />
       
@@ -2347,7 +2347,7 @@ exports[`Storyshots Components/Tabs Semantic Mode 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -2389,7 +2389,7 @@ exports[`Storyshots Components/Tabs Semantic Mode 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -2430,7 +2430,7 @@ exports[`Storyshots Components/Tabs Semantic Mode 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -2471,7 +2471,7 @@ exports[`Storyshots Components/Tabs Semantic Mode 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -2512,7 +2512,7 @@ exports[`Storyshots Components/Tabs Semantic Mode 1`] = `
           
                 
           <i
-            class="sap-icon--cart"
+            class="fd-icon--cart"
             role="presentation"
           />
           
@@ -2540,7 +2540,7 @@ exports[`Storyshots Components/Tabs Semantic Mode 1`] = `
       
         
       <i
-        class="sap-icon--slim-arrow-down"
+        class="fd-icon--slim-arrow-down"
         role="presentation"
       />
       
@@ -2740,7 +2740,7 @@ exports[`Storyshots Components/Tabs Tab With Counters 1`] = `
       
         
       <i
-        class="sap-icon--slim-arrow-down"
+        class="fd-icon--slim-arrow-down"
         role="presentation"
       />
       

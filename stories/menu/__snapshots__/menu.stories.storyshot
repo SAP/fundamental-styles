@@ -741,7 +741,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
                   class="fd-menu__addon-before"
                 >
                   <i
-                    class="sap-icon--grid"
+                    class="fd-icon--grid"
                     role="presentation"
                   />
                 </span>
@@ -758,7 +758,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
                   class="fd-menu__addon-after"
                 >
                   <i
-                    class="sap-icon--wrench"
+                    class="fd-icon--wrench"
                     role="presentation"
                   />
                 </span>
@@ -787,7 +787,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
                   class="fd-menu__addon-before"
                 >
                   <i
-                    class="sap-icon--accept"
+                    class="fd-icon--accept"
                     role="presentation"
                   />
                 </span>
@@ -828,7 +828,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
                   class="fd-menu__addon-before"
                 >
                   <i
-                    class="sap-icon--history"
+                    class="fd-icon--history"
                     role="presentation"
                   />
                 </span>
@@ -845,7 +845,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
                   class="fd-menu__addon-after"
                 >
                   <i
-                    class="sap-icon--lightbulb"
+                    class="fd-icon--lightbulb"
                     role="presentation"
                   />
                 </span>
@@ -874,7 +874,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
                   class="fd-menu__addon-before"
                 >
                   <i
-                    class="sap-icon--grid"
+                    class="fd-icon--grid"
                     role="presentation"
                   />
                 </span>
@@ -891,7 +891,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
                   class="fd-menu__addon-after"
                 >
                   <i
-                    class="sap-icon--history"
+                    class="fd-icon--history"
                     role="presentation"
                   />
                 </span>
@@ -988,7 +988,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
               
                     
               <i
-                class="sap-icon--navigation-left-arrow"
+                class="fd-icon--navigation-left-arrow"
                 role="presentation"
               />
               

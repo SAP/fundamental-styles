@@ -2,7 +2,7 @@
 
 $block: #{$fd-namespace}-icon;
 
-.#{$block} {
+[class*="#{$block}"] {
   @include fd-reset();
   @include fd-icon-base();
 
@@ -11,7 +11,9 @@ $block: #{$fd-namespace}-icon;
   color: var(--sapContent_NonInteractiveIconColor);
   background-color: var(--sapBackgroundColor);
   display: inline-block;
+}
 
+.#{$block} {
   @each $key, $value in $fd-icons {
     &--#{$key} {
       @include fd-icon-glyph($key);

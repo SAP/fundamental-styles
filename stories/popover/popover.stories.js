@@ -151,7 +151,7 @@ export const layoutOptions = () => `
                     <div class="fd-bar__left">
                         <div class="fd-bar__element">
                             <button class="fd-button fd-button--transparent">
-                                <i class="sap-icon--navigation-left-arrow"></i>
+                                <i class="fd-icon--navigation-left-arrow"></i>
                             </button>
                         </div>
                         <div class="fd-bar__element">
@@ -220,7 +220,7 @@ export const layoutOptions = () => `
                     <div class="fd-bar__left">
                         <div class="fd-bar__element">
                             <button class="fd-button fd-button--transparent">
-                                <i class="sap-icon--navigation-left-arrow"></i>
+                                <i class="fd-icon--navigation-left-arrow"></i>
                             </button>
                         </div>
                         <div class="fd-bar__element">
@@ -234,13 +234,13 @@ export const layoutOptions = () => `
                             <div class="fd-form-item">
                                 <div class="fd-segmented-button" role="group" aria-label="Group label">
                                     <button class="fd-button fd-button--compact" aria-pressed="true">
-                                        <i class="sap-icon--email"></i>
+                                        <i class="fd-icon--email"></i>
                                     </button>
                                     <button class="fd-button fd-button--compact">
-                                        <i class="sap-icon--iphone"></i>
+                                        <i class="fd-icon--iphone"></i>
                                     </button>
                                     <button class="fd-button fd-button--compact">
-                                        <i class="sap-icon--notification-2"></i>
+                                        <i class="fd-icon--notification-2"></i>
                                     </button>
                                 </div>
                             </div>
@@ -276,7 +276,7 @@ export const layoutOptions = () => `
                     <div class="fd-bar__left">
                         <div class="fd-bar__element">
                             <button class="fd-button fd-button--transparent">
-                                <i class="sap-icon--navigation-left-arrow"></i>
+                                <i class="fd-icon--navigation-left-arrow"></i>
                             </button>
                         </div>
                         <div class="fd-bar__element">
@@ -291,13 +291,13 @@ export const layoutOptions = () => `
                             <div class="fd-form-item">
                                 <div class="fd-segmented-button" role="group" aria-label="Group label">
                                     <button class="fd-button fd-button--compact" aria-pressed="true">
-                                        <i class="sap-icon--email"></i>
+                                        <i class="fd-icon--email"></i>
                                     </button>
                                     <button class="fd-button fd-button--compact">
-                                        <i class="sap-icon--iphone"></i>
+                                        <i class="fd-icon--iphone"></i>
                                     </button>
                                     <button class="fd-button fd-button--compact">
-                                        <i class="sap-icon--notification-2"></i>
+                                        <i class="fd-icon--notification-2"></i>
                                     </button>
                                 </div>
                             </div>
@@ -367,7 +367,7 @@ export const controlExamples = () => `
 
     <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
-            <span class="sap-icon--cart sap-icon--xl" aria-label="Image label" aria-controls="popoverB4" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverB4');"></span>
+            <span class="fd-icon--cart fd-icon--xl" aria-label="Image label" aria-controls="popoverB4" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverB4');"></span>
         </div>
         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="popoverB4">
             <nav class="fd-menu" id="">

@@ -78,7 +78,7 @@ The layout of the generic tile is fixed, with designated areas for the header, c
 -   Title \`fd-tile__title\`: **required**. Can have up to two lines of text before it is truncated (or three lines if there is no subtitle).
 -   Subtitle \`fd-tile__subtitle\`: **optional**. Can have one line of text before it is truncated.
 -   Content \`fd-tile__content\`: **optional**.
--   Footer \`fd-tile__footer\`: **optional**. Can contain a refresh icon \`sap-icon--refresh\` and status.
+-   Footer \`fd-tile__footer\`: **optional**. Can contain a refresh icon \`fd-icon--refresh\` and status.
         ` }
 };
 
@@ -175,14 +175,14 @@ export const launchTile = () => `
         <div class="fd-tile__content">
             <div class="fd-numeric-content">
                 <div class="fd-numeric-content__launch-icon-container">
-                    <i role="presentation" class="fd-numeric-content__launch-icon sap-icon--line-charts"></i>
+                    <i role="presentation" class="fd-numeric-content__launch-icon fd-icon--line-charts"></i>
                 </div>
                 <div class="fd-numeric-content__kpi-container">
                     <div class="fd-numeric-content__kpi fd-numeric-content__kpi--negative">1Ñç</div>
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale fd-numeric-content__scale--negative">
-                        <i role="presentation" class="fd-numeric-content__scale-arrow sap-icon--down"></i>
+                        <i role="presentation" class="fd-numeric-content__scale-arrow fd-icon--down"></i>
                         <span class="fd-numeric-content__scale-text">M</span>
                     </div>
                 </div>
@@ -190,7 +190,7 @@ export const launchTile = () => `
         </div>
         <div class="fd-tile__footer fd-tile__footer--2-col">
             <div class="fd-tile__section">
-                <i class="fd-tile__refresh sap-icon--refresh" aria-label="Refresh"></i>
+                <i class="fd-tile__refresh fd-icon--refresh" aria-label="Refresh"></i>
                 <span class="fd-tile__footer-text">Now</span>
             </div>
             <div class="fd-tile__section"><span class="fd-tile__footer-text">Footer</span></div>
@@ -204,7 +204,7 @@ export const launchTile = () => `
         <div class="fd-tile__content">
             <div class="fd-numeric-content fd-numeric-content--small-tile">
                 <div class="fd-numeric-content__launch-icon-container">
-                    <i role="presentation" class="fd-numeric-content__launch-icon sap-icon--line-charts"></i>
+                    <i role="presentation" class="fd-numeric-content__launch-icon fd-icon--line-charts"></i>
                 </div>
                 <div class="fd-numeric-content__kpi-container">
                     <div class="fd-numeric-content__kpi fd-numeric-content__kpi--positive">1234</div>
@@ -228,7 +228,7 @@ export const launchTile = () => `
         </div>
         <div class="fd-tile__footer fd-tile__footer--2-col">
             <div class="fd-tile__section">
-                <i class="fd-tile__refresh sap-icon--refresh" aria-label="Refresh"></i>
+                <i class="fd-tile__refresh fd-icon--refresh" aria-label="Refresh"></i>
                 <span class="fd-tile__footer-text">Now</span>
             </div>
             <div class="fd-tile__section"><span class="fd-tile__footer-text">Footer</span></div>
@@ -241,7 +241,7 @@ export const launchTile = () => `
         </div>
         <div class="fd-tile__footer fd-tile__footer--2-col">
             <div class="fd-tile__section">
-                <i class="fd-tile__refresh sap-icon--refresh" aria-label="Refresh"></i>
+                <i class="fd-tile__refresh fd-icon--refresh" aria-label="Refresh"></i>
                 <span class="fd-tile__footer-text">Now</span>
             </div>
             <div class="fd-tile__section"><span class="fd-tile__footer-text">Footer</span></div>
@@ -317,7 +317,7 @@ launchTile.parameters = {
 Structure of the Numeric Content
 
 -   Launch Icon Container: \`fd-numeric-content__launch-icon-container\`
-    -   Launch Icon: \`fd-numeric-content__launch-icon sap-icon--line-charts\`
+    -   Launch Icon: \`fd-numeric-content__launch-icon fd-icon--line-charts\`
 -   KPI Container **(optional)**: \`fd-numeric-content__kpi-container\`
     -   KPI **(optional)**: \`fd-numeric-content__kpi\`
         -   States:
@@ -334,7 +334,7 @@ Structure of the Numeric Content
             -   negative: \`fd-numeric-content__scale--negative\`
             -   critical: \`fd-numeric-content__scale--critical\`
             -   informative: \`fd-numeric-content__scale--informative\`
-        -   Deviation Arrows **(optional)**: \`sap-icon--down\` or \`sap-icon--up\`
+        -   Deviation Arrows **(optional)**: \`fd-icon--down\` or \`fd-icon--up\`
         -   Text **(optional)**: \`fd-numeric-content__scale-text\`
 
 Numeric Content Sizes:
@@ -363,7 +363,7 @@ export const kpiTile = () => `
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale">
-                        <i role="presentation" class="fd-numeric-content__scale-arrow sap-icon--down"></i>
+                        <i role="presentation" class="fd-numeric-content__scale-arrow fd-icon--down"></i>
                         <span class="fd-numeric-content__scale-text">M</span>
                     </div>
                 </div>
@@ -371,7 +371,7 @@ export const kpiTile = () => `
         </div>
         <div class="fd-tile__footer fd-tile__footer--2-col">
             <div class="fd-tile__section">
-                <i class="fd-tile__refresh sap-icon--refresh" aria-label="Refresh"></i>
+                <i class="fd-tile__refresh fd-icon--refresh" aria-label="Refresh"></i>
                 <span class="fd-tile__footer-text">Now</span>
             </div>
             <div class="fd-tile__section"><span class="fd-tile__footer-text">Footer</span></div>
@@ -389,7 +389,7 @@ export const kpiTile = () => `
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale">
-                        <i role="presentation" class="fd-numeric-content__scale-arrow sap-icon--down"></i>
+                        <i role="presentation" class="fd-numeric-content__scale-arrow fd-icon--down"></i>
                         <span class="fd-numeric-content__scale-text">milçM</span>
                     </div>
                 </div>
@@ -397,7 +397,7 @@ export const kpiTile = () => `
         </div>
         <div class="fd-tile__footer fd-tile__footer--2-col">
             <div class="fd-tile__section">
-                <i class="fd-tile__refresh sap-icon--refresh" aria-label="Refresh"></i>
+                <i class="fd-tile__refresh fd-icon--refresh" aria-label="Refresh"></i>
                 <span class="fd-tile__footer-text">Now</span>
             </div>
             <div class="fd-tile__section"><span class="fd-tile__footer-text">Footer</span></div>
@@ -419,7 +419,7 @@ export const kpiTile = () => `
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale fd-numeric-content__scale--positive">
-                        <i role="presentation" class="fd-numeric-content__scale-arrow sap-icon--down"></i>
+                        <i role="presentation" class="fd-numeric-content__scale-arrow fd-icon--down"></i>
                     </div>
                 </div>
             </div>
@@ -440,7 +440,7 @@ export const kpiTile = () => `
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale fd-numeric-content__scale--negative">
-                        <i role="presentation" class="fd-numeric-content__scale-arrow sap-icon--up"></i>
+                        <i role="presentation" class="fd-numeric-content__scale-arrow fd-icon--up"></i>
                     </div>
                 </div>
             </div>
@@ -465,7 +465,7 @@ export const kpiTile = () => `
                 </div>
                 <div class="fd-numeric-content__scale-container">
                     <div class="fd-numeric-content__scale fd-numeric-content__scale--critical">
-                        <i role="presentation" class="fd-numeric-content__scale-arrow sap-icon--down"></i>
+                        <i role="presentation" class="fd-numeric-content__scale-arrow fd-icon--down"></i>
                         <span class="fd-numeric-content__scale-text">%</span>
                     </div>
                 </div>
@@ -522,7 +522,7 @@ Structure of the Numeric Content
             -   negative: \`fd-numeric-content__scale--negative\`
             -   critical: \`fd-numeric-content__scale--critical\`
             -   informative: \`fd-numeric-content__scale--informative\`
-        -   Deviation Arrows **(optional)**: \`sap-icon--down\` or \`sap-icon--up\`
+        -   Deviation Arrows **(optional)**: \`fd-icon--down\` or \`fd-icon--up\`
         -   Text **(optional)**: \`fd-numeric-content__scale-text\`
         ` }
 };
@@ -779,9 +779,9 @@ export const tileInActionMode = () => `
     <div role="button" tabindex="0" class="fd-tile fd-tile--launch fd-tile--action">
         <div class="fd-tile__overlay"></div>
         <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
-                    <i class="sap-icon--decline" role="presentation"></i>
+                    <i class="fd-icon--decline" role="presentation"></i>
                 </button><button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
-                    <i class="sap-icon--overflow" role="presentation"></i>
+                    <i class="fd-icon--overflow" role="presentation"></i>
                 </button>
         <div class="fd-tile__header">
             <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
@@ -797,9 +797,9 @@ export const tileInActionMode = () => `
     <div role="button" tabindex="0" class="fd-tile fd-tile--launch fd-tile--s fd-tile--action">
         <div class="fd-tile__overlay"></div>
         <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
-                    <i class="sap-icon--decline" role="presentation"></i>
+                    <i class="fd-icon--decline" role="presentation"></i>
                 </button><button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
-                    <i class="sap-icon--overflow" role="presentation"></i>
+                    <i class="fd-icon--overflow" role="presentation"></i>
                 </button>
         <div class="fd-tile__header">
             <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
@@ -819,9 +819,9 @@ export const tileInActionMode = () => `
         <div class="fd-tile__overlay"></div>
         <button aria-label="toggle button" class="fd-tile__toggle fd-tile__toggle--pause"></button>
         <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
-                    <i class="sap-icon--decline" role="presentation"></i>
+                    <i class="fd-icon--decline" role="presentation"></i>
                 </button><button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
-                    <i class="sap-icon--overflow" role="presentation"></i>
+                    <i class="fd-icon--overflow" role="presentation"></i>
                 </button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
@@ -847,9 +847,9 @@ export const tileInActionMode = () => `
         <div class="fd-tile__overlay"></div>
         <button aria-label="toggle button" class="fd-tile__toggle fd-tile__toggle--pause"></button>
         <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
-                    <i class="sap-icon--decline" role="presentation"></i>
+                    <i class="fd-icon--decline" role="presentation"></i>
                 </button><button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
-                    <i class="sap-icon--overflow" role="presentation"></i>
+                    <i class="fd-icon--overflow" role="presentation"></i>
                 </button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
@@ -1177,10 +1177,10 @@ export const lineTile = () => `
             </div>
             <div class="fd-tile__action-container">
                 <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
-                    <i class="sap-icon--overflow"></i>
+                    <i class="fd-icon--overflow"></i>
                 </button>
                 <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
-                    <i class="sap-icon--decline" role="presentation"></i>
+                    <i class="fd-icon--decline" role="presentation"></i>
                 </button></div>
         </div>
         <div role="button" tabindex="0" class="fd-tile fd-tile--line fd-tile--action">
@@ -1190,10 +1190,10 @@ export const lineTile = () => `
             </div>
             <div class="fd-tile__action-container">
                 <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
-                    <i class="sap-icon--overflow" role="presentation"></i>
+                    <i class="fd-icon--overflow" role="presentation"></i>
                 </button>
                 <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
-                    <i class="sap-icon--decline" role="presentation"></i>
+                    <i class="fd-icon--decline" role="presentation"></i>
                 </button>
             </div>
         </div>
@@ -1204,10 +1204,10 @@ export const lineTile = () => `
             </div>
             <div class="fd-tile__action-container">
                 <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
-                    <i class="sap-icon--overflow" role="presentation"></i>
+                    <i class="fd-icon--overflow" role="presentation"></i>
                 </button>
                 <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
-                    <i class="sap-icon--decline" role="presentation"></i>
+                    <i class="fd-icon--decline" role="presentation"></i>
                 </button></div>
         </div>
         <div role="button" tabindex="0" class="fd-tile fd-tile--line fd-tile--action">
@@ -1217,10 +1217,10 @@ export const lineTile = () => `
             </div>
             <div class="fd-tile__action-container">
                 <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
-                    <i class="sap-icon--overflow" role="presentation"></i>
+                    <i class="fd-icon--overflow" role="presentation"></i>
                 </button>
                 <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
-                    <i class="sap-icon--decline" role="presentation"></i>
+                    <i class="fd-icon--decline" role="presentation"></i>
                 </button></div>
         </div>
         <div role="button" tabindex="0" class="fd-tile fd-tile--line fd-tile--action is-disabled">
@@ -1230,10 +1230,10 @@ export const lineTile = () => `
             </div>
             <div class="fd-tile__action-container">
                 <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
-                    <i class="sap-icon--overflow" role="presentation"></i>
+                    <i class="fd-icon--overflow" role="presentation"></i>
                 </button>
                 <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
-                    <i class="sap-icon--decline" role="presentation"></i>
+                    <i class="fd-icon--decline" role="presentation"></i>
                 </button></div>
         </div>
         <div role="button" tabindex="0" class="fd-tile fd-tile--line fd-tile--action">
@@ -1243,10 +1243,10 @@ export const lineTile = () => `
             </div>
             <div class="fd-tile__action-container">
                 <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
-                    <i class="sap-icon--overflow" role="presentation"></i>
+                    <i class="fd-icon--overflow" role="presentation"></i>
                 </button>
                 <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
-                    <i class="sap-icon--decline" role="presentation"></i>
+                    <i class="fd-icon--decline" role="presentation"></i>
                 </button></div>
         </div>
     </div>
@@ -1262,10 +1262,10 @@ export const lineTile = () => `
             </div>
             <div class="fd-tile__action-container">
                 <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
-                    <i class="sap-icon--overflow" role="presentation"></i>
+                    <i class="fd-icon--overflow" role="presentation"></i>
                 </button>
                 <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
-                    <i class="sap-icon--decline" role="presentation"></i>
+                    <i class="fd-icon--decline" role="presentation"></i>
                 </button></div>
         </div>
         <div role="button" tabindex="0" class="fd-tile fd-tile--line fd-tile--action">
@@ -1275,10 +1275,10 @@ export const lineTile = () => `
             </div>
             <div class="fd-tile__action-container">
                 <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
-                    <i class="sap-icon--overflow" role="presentation"></i>
+                    <i class="fd-icon--overflow" role="presentation"></i>
                 </button>
                 <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
-                    <i class="sap-icon--decline" role="presentation"></i>
+                    <i class="fd-icon--decline" role="presentation"></i>
                 </button></div>
         </div>
         <div role="button" tabindex="0" class="fd-tile fd-tile--line fd-tile--action">
@@ -1288,10 +1288,10 @@ export const lineTile = () => `
             </div>
             <div class="fd-tile__action-container">
                 <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
-                    <i class="sap-icon--overflow" role="presentation"></i>
+                    <i class="fd-icon--overflow" role="presentation"></i>
                 </button>
                 <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
-                    <i class="sap-icon--decline" role="presentation"></i>
+                    <i class="fd-icon--decline" role="presentation"></i>
                 </button></div>
         </div>
         <div role="button" tabindex="0" class="fd-tile fd-tile--line fd-tile--action is-disabled">
@@ -1301,10 +1301,10 @@ export const lineTile = () => `
             </div>
             <div class="fd-tile__action-container">
                 <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
-                    <i class="sap-icon--overflow" role="presentation"></i>
+                    <i class="fd-icon--overflow" role="presentation"></i>
                 </button>
                 <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
-                    <i class="sap-icon--decline" role="presentation"></i>
+                    <i class="fd-icon--decline" role="presentation"></i>
                 </button>
             </div>
         </div>
@@ -1315,10 +1315,10 @@ export const lineTile = () => `
             </div>
             <div class="fd-tile__action-container">
                 <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
-                    <i class="sap-icon--overflow" role="presentation"></i>
+                    <i class="fd-icon--overflow" role="presentation"></i>
                 </button>
                 <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
-                    <i class="sap-icon--decline" role="presentation"></i>
+                    <i class="fd-icon--decline" role="presentation"></i>
                 </button>
             </div>
         </div>
@@ -1329,10 +1329,10 @@ export const lineTile = () => `
             </div>
             <div class="fd-tile__action-container">
                 <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
-                    <i class="sap-icon--overflow" role="presentation"></i>
+                    <i class="fd-icon--overflow" role="presentation"></i>
                 </button>
                 <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
-                    <i class="sap-icon--decline" role="presentation"></i>
+                    <i class="fd-icon--decline" role="presentation"></i>
                 </button>
             </div>
         </div>

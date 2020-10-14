@@ -1533,7 +1533,7 @@ exports[`Storyshots Components/Table Navigation Indication States 1`] = `
             
                     
             <i
-              class="sap-icon--navigation-right-arrow"
+              class="fd-icon--navigation-right-arrow"
             />
             
                 
@@ -1595,7 +1595,7 @@ exports[`Storyshots Components/Table Navigation Indication States 1`] = `
             
                     
             <i
-              class="sap-icon--navigation-right-arrow"
+              class="fd-icon--navigation-right-arrow"
             />
             
                 
@@ -1657,7 +1657,7 @@ exports[`Storyshots Components/Table Navigation Indication States 1`] = `
             
                     
             <i
-              class="sap-icon--navigation-right-arrow"
+              class="fd-icon--navigation-right-arrow"
             />
             
                 
@@ -1815,7 +1815,7 @@ exports[`Storyshots Components/Table Navigation Indication States 1`] = `
               
                         
               <i
-                class="sap-icon--navigation-left-arrow"
+                class="fd-icon--navigation-left-arrow"
               />
               
                     
@@ -1877,7 +1877,7 @@ exports[`Storyshots Components/Table Navigation Indication States 1`] = `
               
                         
               <i
-                class="sap-icon--navigation-left-arrow"
+                class="fd-icon--navigation-left-arrow"
               />
               
                     
@@ -1939,7 +1939,7 @@ exports[`Storyshots Components/Table Navigation Indication States 1`] = `
               
                         
               <i
-                class="sap-icon--navigation-left-arrow"
+                class="fd-icon--navigation-left-arrow"
               />
               
                     
@@ -2384,7 +2384,7 @@ exports[`Storyshots Components/Table Responsive Table 1`] = `
           
                 
           <i
-            class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+            class="fd-table__icon fd-table__icon--navigation fd-icon--navigation-right-arrow"
             role="presentation"
           />
           
@@ -2466,7 +2466,7 @@ exports[`Storyshots Components/Table Responsive Table 1`] = `
           
                 
           <i
-            class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+            class="fd-table__icon fd-table__icon--navigation fd-icon--navigation-right-arrow"
             role="presentation"
           />
           
@@ -2548,7 +2548,7 @@ exports[`Storyshots Components/Table Responsive Table 1`] = `
           
                 
           <i
-            class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+            class="fd-table__icon fd-table__icon--navigation fd-icon--navigation-right-arrow"
             role="presentation"
           />
           
@@ -2647,7 +2647,7 @@ exports[`Storyshots Components/Table Responsive Table Pop In Mode 1`] = `
             
                     
             <i
-              class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+              class="fd-table__icon fd-table__icon--navigation fd-icon--navigation-right-arrow"
               role="presentation"
             />
             
@@ -2757,7 +2757,7 @@ exports[`Storyshots Components/Table Responsive Table Pop In Mode 1`] = `
             
                     
             <i
-              class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+              class="fd-table__icon fd-table__icon--navigation fd-icon--navigation-right-arrow"
               role="presentation"
             />
             
@@ -2936,7 +2936,7 @@ exports[`Storyshots Components/Table Responsive Table Pop In Mode 1`] = `
             
                     
             <i
-              class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+              class="fd-table__icon fd-table__icon--navigation fd-icon--navigation-right-arrow"
               role="presentation"
             />
             
@@ -3073,7 +3073,7 @@ exports[`Storyshots Components/Table Responsive Table Pop In Mode 1`] = `
             
                     
             <i
-              class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+              class="fd-table__icon fd-table__icon--navigation fd-icon--navigation-right-arrow"
               role="presentation"
             />
             
@@ -4015,7 +4015,7 @@ exports[`Storyshots Components/Table Table With Contextual Menu 1`] = `
                 
                             
                 <i
-                  class="sap-icon--overflow"
+                  class="fd-icon--overflow"
                 />
                 
                         
@@ -4187,7 +4187,7 @@ exports[`Storyshots Components/Table Table With Contextual Menu 1`] = `
                 
                             
                 <i
-                  class="sap-icon--overflow"
+                  class="fd-icon--overflow"
                 />
                 
                         
@@ -4359,7 +4359,7 @@ exports[`Storyshots Components/Table Table With Contextual Menu 1`] = `
                 
                             
                 <i
-                  class="sap-icon--overflow"
+                  class="fd-icon--overflow"
                 />
                 
                         
@@ -4545,7 +4545,7 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
             
                     
             <span
-              class="sap-icon--filter"
+              class="fd-icon--filter"
             />
             
                 
@@ -4760,7 +4760,7 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
               
                         
               <i
-                class="sap-icon--arrow-top"
+                class="fd-icon--arrow-top"
               />
               
                     
@@ -4774,7 +4774,7 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
               
                         
               <i
-                class="sap-icon--arrow-bottom"
+                class="fd-icon--arrow-bottom"
               />
               
                     
@@ -4813,7 +4813,7 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
                   
                                 
                   <i
-                    class="sap-icon--search"
+                    class="fd-icon--search"
                   />
                   
                             
@@ -5102,7 +5102,7 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
       
         
       <i
-        class="sap-icon--filter"
+        class="fd-icon--filter"
       />
       
     
@@ -5117,7 +5117,7 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
       
         
       <i
-        class="sap-icon--action-settings"
+        class="fd-icon--action-settings"
       />
       
     
@@ -7054,7 +7054,7 @@ exports[`Storyshots Components/Table With Menu In Header 1`] = `
                             Column Header Ascending
                             
                 <span
-                  class="fd-table__icon sap-icon--sort-ascending"
+                  class="fd-table__icon fd-icon--sort-ascending"
                 />
                 
                         
@@ -7085,7 +7085,7 @@ exports[`Storyshots Components/Table With Menu In Header 1`] = `
                   
                                 
                   <span
-                    class="fd-list__icon sap-icon--sort-descending"
+                    class="fd-list__icon fd-icon--sort-descending"
                   />
                   
                                 
@@ -7107,7 +7107,7 @@ exports[`Storyshots Components/Table With Menu In Header 1`] = `
                   
                                 
                   <span
-                    class="fd-list__icon sap-icon--sort-ascending"
+                    class="fd-list__icon fd-icon--sort-ascending"
                   />
                   
                                 
@@ -7128,7 +7128,7 @@ exports[`Storyshots Components/Table With Menu In Header 1`] = `
                   
                                 
                   <span
-                    class="fd-list__icon sap-icon--filter"
+                    class="fd-list__icon fd-icon--filter"
                   />
                   
                                 
@@ -7195,7 +7195,7 @@ exports[`Storyshots Components/Table With Menu In Header 1`] = `
                             Column Header Descending
                             
                 <span
-                  class="fd-table__icon sap-icon--sort-descending"
+                  class="fd-table__icon fd-icon--sort-descending"
                 />
                 
                         
@@ -7226,7 +7226,7 @@ exports[`Storyshots Components/Table With Menu In Header 1`] = `
                   
                                 
                   <span
-                    class="fd-list__icon sap-icon--sort-descending"
+                    class="fd-list__icon fd-icon--sort-descending"
                   />
                   
                                 
@@ -7248,7 +7248,7 @@ exports[`Storyshots Components/Table With Menu In Header 1`] = `
                   
                                 
                   <span
-                    class="fd-list__icon sap-icon--sort-ascending"
+                    class="fd-list__icon fd-icon--sort-ascending"
                   />
                   
                                 
@@ -7269,7 +7269,7 @@ exports[`Storyshots Components/Table With Menu In Header 1`] = `
                   
                                 
                   <span
-                    class="fd-list__icon sap-icon--filter"
+                    class="fd-list__icon fd-icon--filter"
                   />
                   
                                 

@@ -61,22 +61,22 @@ tabs.parameters = {
 
 export const notifier = () => `
 <button class="fd-button fd-button--transparent" aria-label="Notifications">
-    <i class="sap-icon--bell"></i>
+    <i class="fd-icon--bell"></i>
     <span class="fd-counter fd-counter--notification" aria-label="Unread count">1</span>
 </button>
 
 <button class="fd-button fd-button--transparent" aria-label="Notifications">
-    <i class="sap-icon--bell"></i>
+    <i class="fd-icon--bell"></i>
     <span class="fd-counter fd-counter--notification" aria-label="Unread count">20</span>
 </button>
 
 <button class="fd-button fd-button--transparent" aria-label="Notifications">
-    <i class="sap-icon--bell"></i>
+    <i class="fd-icon--bell"></i>
     <span class="fd-counter fd-counter--notification" aria-label="Unread count">300</span>
 </button>
 
 <button class="fd-button fd-button--transparent" aria-label="Notifications">
-    <i class="sap-icon--bell"></i>
+    <i class="fd-icon--bell"></i>
     <span class="fd-counter fd-counter--notification" aria-label="Unread count">999+</span>
 </button>
 `;

@@ -270,7 +270,7 @@ exports[`Storyshots Components/Dialog Selectable 1`] = `
                 
                             
                 <i
-                  class="sap-icon--search"
+                  class="fd-icon--search"
                 />
                 
                         

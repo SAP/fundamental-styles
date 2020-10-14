@@ -16,7 +16,7 @@ exports[`Storyshots Components/Button Button sizes 1`] = `
     class="fd-button"
   >
     <i
-      class="sap-icon--cart"
+      class="fd-icon--cart"
     />
   </button>
   
@@ -26,7 +26,7 @@ exports[`Storyshots Components/Button Button sizes 1`] = `
     class="fd-button fd-button--ghost"
   >
     <i
-      class="sap-icon--cart"
+      class="fd-icon--cart"
     />
   </button>
   
@@ -36,7 +36,7 @@ exports[`Storyshots Components/Button Button sizes 1`] = `
     class="fd-button fd-button--emphasized"
   >
     <i
-      class="sap-icon--cart"
+      class="fd-icon--cart"
     />
   </button>
   
@@ -46,7 +46,7 @@ exports[`Storyshots Components/Button Button sizes 1`] = `
     class="fd-button fd-button--transparent"
   >
     <i
-      class="sap-icon--cart"
+      class="fd-icon--cart"
     />
   </button>
   
@@ -88,7 +88,7 @@ exports[`Storyshots Components/Button Button sizes 1`] = `
     class="fd-button fd-button--compact"
   >
     <i
-      class="sap-icon--cart"
+      class="fd-icon--cart"
     />
   </button>
   
@@ -105,7 +105,7 @@ exports[`Storyshots Components/Button Button sizes 1`] = `
     class="fd-button fd-button--emphasized fd-button--compact"
   >
     <i
-      class="sap-icon--cart"
+      class="fd-icon--cart"
     />
   </button>
   
@@ -115,7 +115,7 @@ exports[`Storyshots Components/Button Button sizes 1`] = `
     class="fd-button fd-button--transparent fd-button--compact"
   >
     <i
-      class="sap-icon--cart"
+      class="fd-icon--cart"
     />
   </button>
   
@@ -616,7 +616,7 @@ exports[`Storyshots Components/Button Icon or text 1`] = `
     class="fd-button"
   >
     <i
-      class="sap-icon--cart"
+      class="fd-icon--cart"
     />
   </button>
   
@@ -626,7 +626,7 @@ exports[`Storyshots Components/Button Icon or text 1`] = `
     class="fd-button fd-button--emphasized"
   >
     <i
-      class="sap-icon--cart"
+      class="fd-icon--cart"
     />
   </button>
   
@@ -636,7 +636,7 @@ exports[`Storyshots Components/Button Icon or text 1`] = `
     class="fd-button fd-button--transparent"
   >
     <i
-      class="sap-icon--cart"
+      class="fd-icon--cart"
     />
   </button>
   
@@ -646,7 +646,7 @@ exports[`Storyshots Components/Button Icon or text 1`] = `
     class="fd-button fd-button--ghost"
   >
     <i
-      class="sap-icon--filter"
+      class="fd-icon--filter"
     />
   </button>
   
@@ -656,7 +656,7 @@ exports[`Storyshots Components/Button Icon or text 1`] = `
     class="fd-button fd-button--positive"
   >
     <i
-      class="sap-icon--accept"
+      class="fd-icon--accept"
     />
   </button>
   
@@ -666,7 +666,7 @@ exports[`Storyshots Components/Button Icon or text 1`] = `
     class="fd-button fd-button--negative"
   >
     <i
-      class="sap-icon--decline"
+      class="fd-icon--decline"
     />
   </button>
   
@@ -676,7 +676,7 @@ exports[`Storyshots Components/Button Icon or text 1`] = `
     class="fd-button fd-button--attention"
   >
     <i
-      class="sap-icon--decline"
+      class="fd-icon--decline"
     />
   </button>
   
@@ -701,7 +701,7 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -721,7 +721,7 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -741,7 +741,7 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -761,7 +761,7 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -781,7 +781,7 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -807,7 +807,7 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -829,7 +829,7 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -851,7 +851,7 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -873,7 +873,7 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -895,7 +895,7 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -919,7 +919,7 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -939,7 +939,7 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -959,7 +959,7 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -979,7 +979,7 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -999,7 +999,7 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -1019,7 +1019,7 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -1037,10 +1037,10 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--cart"
+      class="fd-icon--cart"
     />
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -1054,10 +1054,10 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--cart"
+      class="fd-icon--cart"
     />
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -1071,10 +1071,10 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--cart"
+      class="fd-icon--cart"
     />
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -1088,10 +1088,10 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--cart"
+      class="fd-icon--cart"
     />
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -1105,10 +1105,10 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--cart"
+      class="fd-icon--cart"
     />
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -1132,7 +1132,7 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -1152,7 +1152,7 @@ exports[`Storyshots Components/Button Menu button 1`] = `
     
     
     <i
-      class="sap-icon--slim-arrow-down"
+      class="fd-icon--slim-arrow-down"
     />
     
 
@@ -1178,7 +1178,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
     class="fd-button"
   >
     <i
-      class="sap-icon--cart"
+      class="fd-icon--cart"
     />
   </button>
   
@@ -1214,7 +1214,7 @@ exports[`Storyshots Components/Button Segmented button 1`] = `
       class="fd-button"
     >
       <i
-        class="sap-icon--survey"
+        class="fd-icon--survey"
       />
     </button>
     
@@ -1225,7 +1225,7 @@ exports[`Storyshots Components/Button Segmented button 1`] = `
       class="fd-button is-selected"
     >
       <i
-        class="sap-icon--pie-chart"
+        class="fd-icon--pie-chart"
       />
     </button>
     
@@ -1235,7 +1235,7 @@ exports[`Storyshots Components/Button Segmented button 1`] = `
       class="fd-button"
     >
       <i
-        class="sap-icon--pool"
+        class="fd-icon--pool"
       />
     </button>
     
@@ -1306,7 +1306,7 @@ exports[`Storyshots Components/Button Split menu button 1`] = `
       class="fd-button"
     >
       <i
-        class="sap-icon--slim-arrow-down"
+        class="fd-icon--slim-arrow-down"
       />
     </button>
     
@@ -1414,7 +1414,7 @@ exports[`Storyshots Components/Button Split menu button 1`] = `
       class="fd-button fd-button--emphasized"
     >
       <i
-        class="sap-icon--slim-arrow-down"
+        class="fd-icon--slim-arrow-down"
       />
     </button>
     
@@ -1523,7 +1523,7 @@ exports[`Storyshots Components/Button Split menu button 1`] = `
       class="fd-button fd-button--transparent"
     >
       <i
-        class="sap-icon--slim-arrow-down"
+        class="fd-icon--slim-arrow-down"
       />
     </button>
     

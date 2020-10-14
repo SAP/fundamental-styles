@@ -33,7 +33,7 @@ exports[`Storyshots Components/Panel Expandable 1`] = `
           
                 
           <i
-            class="sap-icon--slim-arrow-right"
+            class="fd-icon--slim-arrow-right"
           />
           
             
@@ -154,7 +154,7 @@ exports[`Storyshots Components/Panel Expandable 1`] = `
           
                 
           <i
-            class="sap-icon--slim-arrow-down"
+            class="fd-icon--slim-arrow-down"
           />
           
             

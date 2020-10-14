@@ -34,7 +34,7 @@ export const primary = () => `
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
             <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
-                <i class="sap-icon--decline"></i>
+                <i class="fd-icon--decline"></i>
             </button>
         </div>
     </div>
@@ -67,7 +67,7 @@ export const noAvatar = () => `
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
             <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
-                <i class="sap-icon--decline"></i>
+                <i class="fd-icon--decline"></i>
             </button>
         </div>
     </div>
@@ -89,7 +89,7 @@ export const information = () => `
         Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet.
       </p>
        <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-label="Close">
-        <i class="sap-icon--decline"></i>
+        <i class="fd-icon--decline"></i>
       </button>
     </div>
     <div class="fd-notification__body fd-notification__body--message">
@@ -107,7 +107,7 @@ export const information = () => `
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
             <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
-                <i class="sap-icon--decline"></i>
+                <i class="fd-icon--decline"></i>
             </button>
         </div>
     </div>
@@ -129,7 +129,7 @@ export const warning = () => `
         Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet.
       </p>
       <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-label="Close">
-        <i class="sap-icon--decline"></i>
+        <i class="fd-icon--decline"></i>
       </button>
     </div>
     <div class="fd-notification__body fd-notification__body--message">
@@ -148,7 +148,7 @@ export const warning = () => `
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
             <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
-                <i class="sap-icon--decline"></i>
+                <i class="fd-icon--decline"></i>
             </button>
         </div>
     </div>
@@ -170,7 +170,7 @@ export const error = () => `
           Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet.
         </p>
           <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-label="Close">
-            <i class="sap-icon--decline"></i>
+            <i class="fd-icon--decline"></i>
           </button>
     </div>
     <div class="fd-notification__body fd-notification__body--message">
@@ -189,7 +189,7 @@ export const error = () => `
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
             <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
-                <i class="sap-icon--decline"></i>
+                <i class="fd-icon--decline"></i>
             </button>
         </div>
     </div>
@@ -245,7 +245,7 @@ export const notificationGroup = () => `
     <div class="fd-tabs__panel" aria-expanded="true" id="notifV550" role="tabpanel">
         <div class="fd-notification__group-header">
             <button role="button" aria-label="arrow-down-button" class="fd-button fd-button--compact fd-button--transparent">
-                <i class="sap-icon--slim-arrow-down"></i>
+                <i class="fd-icon--slim-arrow-down"></i>
             </button>
             <div class="fd-notification__content">
                 <div class="fd-notification__header">
@@ -256,7 +256,7 @@ export const notificationGroup = () => `
             <div class="fd-notification__actions">
                 <button class="fd-button fd-button--compact">Accept All</button>
                 <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
-                    <i class="sap-icon--decline"></i>
+                    <i class="fd-icon--decline"></i>
                 </button>
             </div>
         </div>
@@ -276,7 +276,7 @@ export const notificationGroup = () => `
                 <div class="fd-popover fd-popover--right">
                     <div class="fd-popover__control">
                         <button class="fd-button fd-button--transparent" aria-label="Image label" aria-controls="popoverA5" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA5');">
-                            <i class="sap-icon--overflow"></i>
+                            <i class="fd-icon--overflow"></i>
                         </button>
                     </div>
                     <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA5">
@@ -303,7 +303,7 @@ export const notificationGroup = () => `
                 </div>
 
                 <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
-                    <i class="sap-icon--decline"></i>
+                    <i class="fd-icon--decline"></i>
                 </button>
             </div>
         </div>
@@ -325,7 +325,7 @@ export const notificationGroup = () => `
                 <button class="fd-button fd-button--compact">Open</button>
 
                 <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
-                    <i class="sap-icon--decline"></i>
+                    <i class="fd-icon--decline"></i>
                 </button>
             </div>
         </div>
@@ -346,7 +346,7 @@ export const notificationGroup = () => `
             <div class="fd-notification__actions">
                 <button class="fd-button fd-button--compact">Open</button>
                 <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
-                    <i class="sap-icon--decline"></i>
+                    <i class="fd-icon--decline"></i>
                 </button>
             </div>
         </div>
@@ -358,7 +358,7 @@ export const notificationGroup = () => `
     <div class="fd-tabs__panel" aria-expanded="false" id="notifV551" role="tabpanel">
         <div class="fd-notification__group-header">
             <button role="button" aria-label="arrow-down-button" class="fd-button fd-button--compact fd-button--transparent">
-                <i class="sap-icon--slim-arrow-down"></i>
+                <i class="fd-icon--slim-arrow-down"></i>
             </button>
             <div class="fd-notification__content">
                 <div class="fd-notification__header">
@@ -369,7 +369,7 @@ export const notificationGroup = () => `
             <div class="fd-notification__actions">
                 <button class="fd-button fd-button--compact">Accept All</button>
                 <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
-                    <i class="sap-icon--decline"></i>
+                    <i class="fd-icon--decline"></i>
                 </button>
             </div>
         </div>
@@ -391,7 +391,7 @@ export const notificationGroup = () => `
                 <button class="fd-button fd-button--compact">Open</button>
 
                 <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
-                    <i class="sap-icon--decline"></i>
+                    <i class="fd-icon--decline"></i>
                 </button>
             </div>
         </div>
@@ -399,7 +399,7 @@ export const notificationGroup = () => `
     <div class="fd-tabs__panel" aria-expanded="false" id="notifV552" role="tabpanel">
         <div class="fd-notification__group-header">
             <button role="button" aria-label="arrow-down-button" class="fd-button fd-button--compact fd-button--transparent">
-                <i class="sap-icon--slim-arrow-down"></i>
+                <i class="fd-icon--slim-arrow-down"></i>
             </button>
             <div class="fd-notification__content">
                 <div class="fd-notification__header">
@@ -410,7 +410,7 @@ export const notificationGroup = () => `
             <div class="fd-notification__actions">
                 <button class="fd-button fd-button--compact">Accept All</button>
                 <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
-                    <i class="sap-icon--decline"></i>
+                    <i class="fd-icon--decline"></i>
                 </button>
             </div>
         </div>
@@ -432,7 +432,7 @@ export const notificationGroup = () => `
                 <button class="fd-button fd-button--compact">Open</button>
 
                 <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
-                    <i class="sap-icon--decline"></i>
+                    <i class="fd-icon--decline"></i>
                 </button>
             </div>
         </div>
@@ -469,7 +469,7 @@ export const mobile = () => `
                <div class="fd-popover fd-popover--right">
                 <div class="fd-popover__control">
                     <button class="fd-button fd-button--transparent" aria-label="Image label" aria-controls="popoverA4" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA4');">
-                         <i class="sap-icon--overflow"></i>
+                         <i class="fd-icon--overflow"></i>
                     </button>
                 </div>
                 <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA4">
@@ -490,7 +490,7 @@ export const mobile = () => `
                 </div>
             </div>
             <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
-                <i class="sap-icon--decline"></i>
+                <i class="fd-icon--decline"></i>
             </button>
         </div>
     </div>
@@ -537,7 +537,7 @@ export const mobile = () => `
         <div class="fd-tabs__panel" aria-expanded="true" id="notifP300" role="tabpanel">
             <div class="fd-notification__group-header">
                 <button role="button" aria-label="arrow-down-button" class="fd-button fd-button--transparent">
-                    <i class="sap-icon--slim-arrow-down"></i>
+                    <i class="fd-icon--slim-arrow-down"></i>
                 </button>
                 <div class="fd-notification__content">
                     <div class="fd-notification__header">
@@ -547,7 +547,7 @@ export const mobile = () => `
                 </div>
                 <div class="fd-notification__actions">
                     <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
-                        <i class="sap-icon--decline"></i>
+                        <i class="fd-icon--decline"></i>
                     </button>
                 </div>
             </div>
@@ -569,7 +569,7 @@ export const mobile = () => `
                     <div class="fd-popover fd-popover--right">
                         <div class="fd-popover__control">
                             <button class="fd-button fd-button--transparent" aria-label="Image label" aria-controls="popoverA3" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA3');">
-                                <i class="sap-icon--overflow"></i>
+                                <i class="fd-icon--overflow"></i>
                             </button>
                         </div>
                         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA3">
@@ -590,7 +590,7 @@ export const mobile = () => `
                         </div>
                     </div>
                     <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
-                        <i class="sap-icon--decline"></i>
+                        <i class="fd-icon--decline"></i>
                     </button>
                 </div>
             </div>
@@ -612,7 +612,7 @@ export const mobile = () => `
                     <div class="fd-popover fd-popover--right">
                         <div class="fd-popover__control">
                             <button class="fd-button fd-button--transparent" aria-label="Image label" aria-controls="popoverA2" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA2');">
-                                <i class="sap-icon--overflow"></i>
+                                <i class="fd-icon--overflow"></i>
                             </button>
                         </div>
                         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA2">
@@ -628,7 +628,7 @@ export const mobile = () => `
                         </div>
                     </div>
                     <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
-                        <i class="sap-icon--decline"></i>
+                        <i class="fd-icon--decline"></i>
                     </button>
                 </div>
             </div>
@@ -636,7 +636,7 @@ export const mobile = () => `
         <div class="fd-tabs__panel" aria-expanded="false" id="notifP301" role="tabpanel">
             <div class="fd-notification__group-header">
                 <button role="button" aria-label="arrow-down-button" class="fd-button fd-button--transparent">
-                    <i class="sap-icon--slim-arrow-down"></i>
+                    <i class="fd-icon--slim-arrow-down"></i>
                 </button>
                 <div class="fd-notification__content">
                     <div class="fd-notification__header">
@@ -646,7 +646,7 @@ export const mobile = () => `
                 </div>
                 <div class="fd-notification__actions">
                     <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
-                        <i class="sap-icon--decline"></i>
+                        <i class="fd-icon--decline"></i>
                     </button>
                 </div>
             </div>
@@ -668,7 +668,7 @@ export const mobile = () => `
                     <div class="fd-popover fd-popover--right">
                         <div class="fd-popover__control">
                             <button class="fd-button fd-button--transparent" aria-label="Image label" aria-controls="popoverA3" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA3');">
-                                <i class="sap-icon--overflow"></i>
+                                <i class="fd-icon--overflow"></i>
                             </button>
                         </div>
                         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA3">
@@ -689,7 +689,7 @@ export const mobile = () => `
                         </div>
                     </div>
                     <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
-                        <i class="sap-icon--decline"></i>
+                        <i class="fd-icon--decline"></i>
                     </button>
                 </div>
             </div>
@@ -711,7 +711,7 @@ export const mobile = () => `
                     <div class="fd-popover fd-popover--right">
                         <div class="fd-popover__control">
                             <button class="fd-button fd-button--transparent" aria-label="Image label" aria-controls="popoverA2" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA2');">
-                                <i class="sap-icon--overflow"></i>
+                                <i class="fd-icon--overflow"></i>
                             </button>
                         </div>
                         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA2">
@@ -727,7 +727,7 @@ export const mobile = () => `
                         </div>
                     </div>
                     <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
-                        <i class="sap-icon--decline"></i>
+                        <i class="fd-icon--decline"></i>
                     </button>
                 </div>
             </div>
@@ -735,7 +735,7 @@ export const mobile = () => `
         <div class="fd-tabs__panel" aria-expanded="false" id="notifP302" role="tabpanel">
             <div class="fd-notification__group-header">
                 <button role="button" aria-label="arrow-down-button" class="fd-button fd-button--transparent">
-                    <i class="sap-icon--slim-arrow-down"></i>
+                    <i class="fd-icon--slim-arrow-down"></i>
                 </button>
                 <div class="fd-notification__content">
                     <div class="fd-notification__header">
@@ -745,7 +745,7 @@ export const mobile = () => `
                 </div>
                 <div class="fd-notification__actions">
                     <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
-                        <i class="sap-icon--decline"></i>
+                        <i class="fd-icon--decline"></i>
                     </button>
                 </div>
             </div>
@@ -767,7 +767,7 @@ export const mobile = () => `
                     <div class="fd-popover fd-popover--right">
                         <div class="fd-popover__control">
                             <button class="fd-button fd-button--transparent" aria-label="Image label" aria-controls="popoverA3" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA3');">
-                                <i class="sap-icon--overflow"></i>
+                                <i class="fd-icon--overflow"></i>
                             </button>
                         </div>
                         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA3">
@@ -788,7 +788,7 @@ export const mobile = () => `
                         </div>
                     </div>
                     <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
-                        <i class="sap-icon--decline"></i>
+                        <i class="fd-icon--decline"></i>
                     </button>
                 </div>
             </div>
@@ -810,7 +810,7 @@ export const mobile = () => `
                     <div class="fd-popover fd-popover--right">
                         <div class="fd-popover__control">
                             <button class="fd-button fd-button--transparent" aria-label="Image label" aria-controls="popoverA2" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA2');">
-                                <i class="sap-icon--overflow"></i>
+                                <i class="fd-icon--overflow"></i>
                             </button>
                         </div>
                         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA2">
@@ -826,7 +826,7 @@ export const mobile = () => `
                         </div>
                     </div>
                     <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
-                        <i class="sap-icon--decline"></i>
+                        <i class="fd-icon--decline"></i>
                     </button>
                 </div>
             </div>

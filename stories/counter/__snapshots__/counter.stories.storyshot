@@ -11,7 +11,7 @@ exports[`Storyshots Components/Counter Notification 1`] = `
     
     
     <i
-      class="sap-icon--bell"
+      class="fd-icon--bell"
     />
     
     
@@ -34,7 +34,7 @@ exports[`Storyshots Components/Counter Notification 1`] = `
     
     
     <i
-      class="sap-icon--bell"
+      class="fd-icon--bell"
     />
     
     
@@ -57,7 +57,7 @@ exports[`Storyshots Components/Counter Notification 1`] = `
     
     
     <i
-      class="sap-icon--bell"
+      class="fd-icon--bell"
     />
     
     
@@ -80,7 +80,7 @@ exports[`Storyshots Components/Counter Notification 1`] = `
     
     
     <i
-      class="sap-icon--bell"
+      class="fd-icon--bell"
     />
     
     

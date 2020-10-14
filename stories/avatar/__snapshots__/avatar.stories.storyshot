@@ -11,7 +11,7 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -26,7 +26,7 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -41,7 +41,7 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -56,7 +56,7 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -71,7 +71,7 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -86,7 +86,7 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -101,7 +101,7 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -116,7 +116,7 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -131,7 +131,7 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -146,7 +146,7 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -215,7 +215,7 @@ exports[`Storyshots Components/Avatar Borders 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -230,7 +230,7 @@ exports[`Storyshots Components/Avatar Borders 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -245,7 +245,7 @@ exports[`Storyshots Components/Avatar Borders 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -260,7 +260,7 @@ exports[`Storyshots Components/Avatar Borders 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -275,7 +275,7 @@ exports[`Storyshots Components/Avatar Borders 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -342,7 +342,7 @@ exports[`Storyshots Components/Avatar Circle 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -357,7 +357,7 @@ exports[`Storyshots Components/Avatar Circle 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -372,7 +372,7 @@ exports[`Storyshots Components/Avatar Circle 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -387,7 +387,7 @@ exports[`Storyshots Components/Avatar Circle 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -402,7 +402,7 @@ exports[`Storyshots Components/Avatar Circle 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -464,7 +464,7 @@ exports[`Storyshots Components/Avatar Icon 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--washing-machine"
+      class="fd-avatar__icon fd-icon--washing-machine"
       role="presentation"
     />
     
@@ -479,7 +479,7 @@ exports[`Storyshots Components/Avatar Icon 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--washing-machine"
+      class="fd-avatar__icon fd-icon--washing-machine"
       role="presentation"
     />
     
@@ -494,7 +494,7 @@ exports[`Storyshots Components/Avatar Icon 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--washing-machine"
+      class="fd-avatar__icon fd-icon--washing-machine"
       role="presentation"
     />
     
@@ -509,7 +509,7 @@ exports[`Storyshots Components/Avatar Icon 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--washing-machine"
+      class="fd-avatar__icon fd-icon--washing-machine"
       role="presentation"
     />
     
@@ -524,7 +524,7 @@ exports[`Storyshots Components/Avatar Icon 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--washing-machine"
+      class="fd-avatar__icon fd-icon--washing-machine"
       role="presentation"
     />
     
@@ -593,7 +593,7 @@ exports[`Storyshots Components/Avatar Placeholder Background 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -608,7 +608,7 @@ exports[`Storyshots Components/Avatar Placeholder Background 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -623,7 +623,7 @@ exports[`Storyshots Components/Avatar Placeholder Background 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -638,7 +638,7 @@ exports[`Storyshots Components/Avatar Placeholder Background 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -653,7 +653,7 @@ exports[`Storyshots Components/Avatar Placeholder Background 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -675,7 +675,7 @@ exports[`Storyshots Components/Avatar Tile Icon Background 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -690,7 +690,7 @@ exports[`Storyshots Components/Avatar Tile Icon Background 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -705,7 +705,7 @@ exports[`Storyshots Components/Avatar Tile Icon Background 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -720,7 +720,7 @@ exports[`Storyshots Components/Avatar Tile Icon Background 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -735,7 +735,7 @@ exports[`Storyshots Components/Avatar Tile Icon Background 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -757,7 +757,7 @@ exports[`Storyshots Components/Avatar Transparent 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -772,7 +772,7 @@ exports[`Storyshots Components/Avatar Transparent 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -787,7 +787,7 @@ exports[`Storyshots Components/Avatar Transparent 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -802,7 +802,7 @@ exports[`Storyshots Components/Avatar Transparent 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -817,7 +817,7 @@ exports[`Storyshots Components/Avatar Transparent 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
@@ -879,14 +879,14 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
     
     <i
       aria-label="Edit"
-      class="fd-avatar__zoom-icon sap-icon--edit"
+      class="fd-avatar__zoom-icon fd-icon--edit"
     />
     
 
@@ -900,14 +900,14 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
     
     <i
       aria-label="Edit"
-      class="fd-avatar__zoom-icon sap-icon--edit"
+      class="fd-avatar__zoom-icon fd-icon--edit"
     />
     
 
@@ -921,14 +921,14 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
     
     <i
       aria-label="Edit"
-      class="fd-avatar__zoom-icon sap-icon--edit"
+      class="fd-avatar__zoom-icon fd-icon--edit"
     />
     
 
@@ -942,14 +942,14 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
     
     <i
       aria-label="Edit"
-      class="fd-avatar__zoom-icon sap-icon--edit"
+      class="fd-avatar__zoom-icon fd-icon--edit"
     />
     
 
@@ -963,14 +963,14 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
     
     
     <i
-      class="fd-avatar__icon sap-icon--money-bills"
+      class="fd-avatar__icon fd-icon--money-bills"
       role="presentation"
     />
     
     
     <i
       aria-label="Edit"
-      class="fd-avatar__zoom-icon sap-icon--edit"
+      class="fd-avatar__zoom-icon fd-icon--edit"
     />
     
 
@@ -985,7 +985,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
     
     <i
       aria-label="Edit"
-      class="fd-avatar__zoom-icon sap-icon--edit"
+      class="fd-avatar__zoom-icon fd-icon--edit"
     />
     
 
@@ -1000,7 +1000,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
     
     <i
       aria-label="Edit"
-      class="fd-avatar__zoom-icon sap-icon--edit"
+      class="fd-avatar__zoom-icon fd-icon--edit"
     />
     
 
@@ -1015,7 +1015,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
     
     <i
       aria-label="Edit"
-      class="fd-avatar__zoom-icon sap-icon--edit"
+      class="fd-avatar__zoom-icon fd-icon--edit"
     />
     
 
@@ -1030,7 +1030,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
     
     <i
       aria-label="Edit"
-      class="fd-avatar__zoom-icon sap-icon--edit"
+      class="fd-avatar__zoom-icon fd-icon--edit"
     />
     
 
@@ -1045,7 +1045,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
     
     <i
       aria-label="Edit"
-      class="fd-avatar__zoom-icon sap-icon--edit"
+      class="fd-avatar__zoom-icon fd-icon--edit"
     />
     
 

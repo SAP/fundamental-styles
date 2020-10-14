@@ -58,7 +58,7 @@ exports[`Storyshots Components/Message Strip Without Icon 1`] = `
       
     
       <i
-        class="sap-icon--decline"
+        class="fd-icon--decline"
       />
       
   
@@ -97,7 +97,7 @@ exports[`Storyshots Components/Message Strip Without Icon 1`] = `
       
     
       <i
-        class="sap-icon--decline"
+        class="fd-icon--decline"
       />
       
   
@@ -136,7 +136,7 @@ exports[`Storyshots Components/Message Strip Without Icon 1`] = `
       
     
       <i
-        class="sap-icon--decline"
+        class="fd-icon--decline"
       />
       
   
@@ -175,7 +175,7 @@ exports[`Storyshots Components/Message Strip Without Icon 1`] = `
       
     
       <i
-        class="sap-icon--decline"
+        class="fd-icon--decline"
       />
       
   

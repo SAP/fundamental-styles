@@ -124,7 +124,7 @@ export const days = () => `
             <div class="fd-calendar__navigation">
                 <div class="fd-calendar__action fd-calendar__action--arrow-left">
                     <button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
-                        <i class="sap-icon--slim-arrow-left"></i>
+                        <i class="fd-icon--slim-arrow-left"></i>
                     </button>
                 </div>
                 <div class="fd-calendar__action">
@@ -135,7 +135,7 @@ export const days = () => `
                 </div>
                 <div class="fd-calendar__action fd-calendar__action--arrow-right">
                     <button type="button" class="fd-button fd-button--transparent" aria-label="Next">
-                        <i class="sap-icon--slim-arrow-right"></i>
+                        <i class="fd-icon--slim-arrow-right"></i>
                     </button>
                 </div>
             </div>
@@ -324,7 +324,7 @@ export const months = () => `
                 <div class="fd-calendar__navigation">
                     <div class="fd-calendar__action fd-calendar__action--arrow-left">
                         <button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
-                            <i class="sap-icon--slim-arrow-left"></i>
+                            <i class="fd-icon--slim-arrow-left"></i>
                         </button>
                     </div>
                     <div class="fd-calendar__action">
@@ -335,7 +335,7 @@ export const months = () => `
                     </div>
                     <div class="fd-calendar__action fd-calendar__action--arrow-right">
                         <button type="button" class="fd-button fd-button--transparent" aria-label="Next">
-                            <i class="sap-icon--slim-arrow-right"></i>
+                            <i class="fd-icon--slim-arrow-right"></i>
                         </button>
                     </div>
                 </div>
@@ -411,7 +411,7 @@ export const years = () => `
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
     			<button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
-                    <i class="sap-icon--slim-arrow-left"></i>
+                    <i class="fd-icon--slim-arrow-left"></i>
                 </button>
     		</div>
     		<div class="fd-calendar__action">
@@ -422,7 +422,7 @@ export const years = () => `
     		</div>
     		<div class="fd-calendar__action fd-calendar__action--arrow-right">
     			<button type="button" class="fd-button fd-button--transparent" aria-label="Next">
-                    <i class="sap-icon--slim-arrow-right"></i>
+                    <i class="fd-icon--slim-arrow-right"></i>
                 </button>
     		</div>
         </div>
@@ -488,7 +488,7 @@ export const years = () => `
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
     			<button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
-                    <i class="sap-icon--slim-arrow-left"></i>
+                    <i class="fd-icon--slim-arrow-left"></i>
                 </button>
     		</div>
     		<div class="fd-calendar__action">
@@ -499,7 +499,7 @@ export const years = () => `
     		</div>
     		<div class="fd-calendar__action fd-calendar__action--arrow-right">
     			<button type="button" class="fd-button fd-button--transparent" aria-label="Next">
-                    <i class="sap-icon--slim-arrow-right"></i>
+                    <i class="fd-icon--slim-arrow-right"></i>
                 </button>
     		</div>
         </div>
@@ -552,7 +552,7 @@ export const years = () => `
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
     			<button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
-                    <i class="sap-icon--slim-arrow-left"></i>
+                    <i class="fd-icon--slim-arrow-left"></i>
                 </button>
     		</div>
     		<div class="fd-calendar__action">
@@ -563,7 +563,7 @@ export const years = () => `
     		</div>
     		<div class="fd-calendar__action fd-calendar__action--arrow-right">
     			<button type="button" class="fd-button fd-button--transparent" aria-label="Next">
-                    <i class="sap-icon--slim-arrow-right"></i>
+                    <i class="fd-icon--slim-arrow-right"></i>
                 </button>
     		</div>
         </div>
@@ -605,7 +605,7 @@ export const years = () => `
         <div class="fd-calendar__navigation">
 			<div class="fd-calendar__action fd-calendar__action--arrow-left">
     			<button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
-                    <i class="sap-icon--slim-arrow-left"></i>
+                    <i class="fd-icon--slim-arrow-left"></i>
                 </button>
     		</div>
     		<div class="fd-calendar__action">
@@ -616,7 +616,7 @@ export const years = () => `
     		</div>
     		<div class="fd-calendar__action fd-calendar__action--arrow-right">
     			<button type="button" class="fd-button fd-button--transparent" aria-label="Next">
-                    <i class="sap-icon--slim-arrow-right"></i>
+                    <i class="fd-icon--slim-arrow-right"></i>
                 </button>
     		</div>
         </div>
@@ -662,7 +662,7 @@ export const compact = () => `
             <div class="fd-calendar__navigation">
                 <div class="fd-calendar__action fd-calendar__action--arrow-left">
                     <button type="button" class="fd-button fd-button--compact fd-button--transparent" aria-label="Previous">
-                        <i class="sap-icon--slim-arrow-left"></i>
+                        <i class="fd-icon--slim-arrow-left"></i>
                     </button>
                 </div>
                 <div class="fd-calendar__action">
@@ -673,7 +673,7 @@ export const compact = () => `
                 </div>
                 <div class="fd-calendar__action fd-calendar__action--arrow-right">
                     <button type="button" class="fd-button fd-button--compact fd-button--transparent" aria-label="Next">
-                        <i class="sap-icon--slim-arrow-right"></i>
+                        <i class="fd-icon--slim-arrow-right"></i>
                     </button>
                 </div>
             </div>
@@ -826,7 +826,7 @@ export const LandscapeMobile = () => `
                     <div class="fd-calendar__navigation fd-calendar__navigation--main">
                         <div class="fd-calendar__action fd-calendar__action--arrow-left">
                             <button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
-                                <i class="sap-icon--slim-arrow-left"></i>
+                                <i class="fd-icon--slim-arrow-left"></i>
                             </button>
                         </div>
                         <div class="fd-calendar__action">
@@ -837,11 +837,11 @@ export const LandscapeMobile = () => `
                         </div>
                         <div class="fd-calendar__action fd-calendar__action--arrow-right">
                             <button type="button" class="fd-button fd-button--transparent" aria-label="Next">
-                                <i class="sap-icon--slim-arrow-right"></i>
+                                <i class="fd-icon--slim-arrow-right"></i>
                             </button>
                         </div>
                         <button type="button" class="fd-button fd-button--transparent fd-calendar__close-button--navigation" aria-label="Close">
-                            <i class="sap-icon--decline"></i>
+                            <i class="fd-icon--decline"></i>
                         </button>
                     </div>
                 </header>
@@ -1017,7 +1017,7 @@ export const PortraitMobile = () => `
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button type="button" class="fd-button fd-button--transparent" aria-label="Close">
-                        <i class="sap-icon--decline"></i>
+                        <i class="fd-icon--decline"></i>
                     </button>
                 </div>
             </div>
@@ -1034,7 +1034,7 @@ export const PortraitMobile = () => `
                     <div class="fd-calendar__navigation">
                         <div class="fd-calendar__action fd-calendar__action--arrow-left">
                             <button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
-                                <i class="sap-icon--slim-arrow-left"></i>
+                                <i class="fd-icon--slim-arrow-left"></i>
                             </button>
                         </div>
                         <div class="fd-calendar__action">
@@ -1045,7 +1045,7 @@ export const PortraitMobile = () => `
                         </div>
                         <div class="fd-calendar__action fd-calendar__action--arrow-right">
                             <button type="button" class="fd-button fd-button--transparent" aria-label="Next">
-                                <i class="sap-icon--slim-arrow-right"></i>
+                                <i class="fd-icon--slim-arrow-right"></i>
                             </button>
                         </div>
                     </div>

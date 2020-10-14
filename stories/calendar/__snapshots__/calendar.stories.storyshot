@@ -63,7 +63,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                     
               <i
-                class="sap-icon--slim-arrow-left"
+                class="fd-icon--slim-arrow-left"
               />
               
                 
@@ -118,7 +118,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                     
               <i
-                class="sap-icon--slim-arrow-right"
+                class="fd-icon--slim-arrow-right"
               />
               
                 
@@ -533,7 +533,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                     
               <i
-                class="sap-icon--slim-arrow-left"
+                class="fd-icon--slim-arrow-left"
               />
               
                 
@@ -588,7 +588,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                     
               <i
-                class="sap-icon--slim-arrow-right"
+                class="fd-icon--slim-arrow-right"
               />
               
                 
@@ -892,7 +892,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                     
               <i
-                class="sap-icon--slim-arrow-left"
+                class="fd-icon--slim-arrow-left"
               />
               
                 
@@ -947,7 +947,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                     
               <i
-                class="sap-icon--slim-arrow-right"
+                class="fd-icon--slim-arrow-right"
               />
               
                 
@@ -1182,7 +1182,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                     
               <i
-                class="sap-icon--slim-arrow-left"
+                class="fd-icon--slim-arrow-left"
               />
               
                 
@@ -1237,7 +1237,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                     
               <i
-                class="sap-icon--slim-arrow-right"
+                class="fd-icon--slim-arrow-right"
               />
               
                 

@@ -18,23 +18,23 @@ attribute of a line item in a table. `,
 export const primary = () => `
 <div class="fddocs-container">
     <span class="fd-object-status fd-object-status--negative">
-        <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--status-negative" role="presentation"></i>
         <span class="fd-object-status__text">Negative</span>
     </span>
     <span class="fd-object-status fd-object-status--critical">
-        <i class="fd-object-status__icon sap-icon--status-critical" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--status-critical" role="presentation"></i>
         <span class="fd-object-status__text">Critical</span>
     </span>
     <span class="fd-object-status fd-object-status--positive">
-        <i class="fd-object-status__icon sap-icon--status-positive" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--status-positive" role="presentation"></i>
         <span class="fd-object-status__text">Positive</span>
     </span>
     <span class="fd-object-status fd-object-status--informative">
-        <i class="fd-object-status__icon sap-icon--hint" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--hint" role="presentation"></i>
         <span class="fd-object-status__text">Info</span>
     </span>
     <span class="fd-object-status">
-        <i class="fd-object-status__icon sap-icon--to-be-reviewed" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--to-be-reviewed" role="presentation"></i>
         <span class="fd-object-status__text">Neutral</span>
     </span>
 </div>
@@ -47,19 +47,19 @@ export const primary = () => `
 export const icon = () => `
 <div class="fddocs-container">
     <span class="fd-object-status fd-object-status--negative">
-        <i class="fd-object-status__icon sap-icon--status-negative" aria-label="Negative"></i>
+        <i class="fd-object-status__icon fd-icon--status-negative" aria-label="Negative"></i>
     </span>
     <span class="fd-object-status fd-object-status--critical">
-        <i class="fd-object-status__icon sap-icon--status-critical" aria-label="Warning"></i>
+        <i class="fd-object-status__icon fd-icon--status-critical" aria-label="Warning"></i>
     </span>
     <span class="fd-object-status fd-object-status--positive">
-        <i class="fd-object-status__icon sap-icon--status-positive" aria-label="Correct"></i>
+        <i class="fd-object-status__icon fd-icon--status-positive" aria-label="Correct"></i>
     </span>
     <span class="fd-object-status fd-object-status--informative">
-        <i class="fd-object-status__icon sap-icon--hint" aria-label="More information"></i>
+        <i class="fd-object-status__icon fd-icon--hint" aria-label="More information"></i>
     </span>
     <span class="fd-object-status">
-        <i class="fd-object-status__icon sap-icon--to-be-reviewed" aria-label="To be reviewed"></i>
+        <i class="fd-object-status__icon fd-icon--to-be-reviewed" aria-label="To be reviewed"></i>
     </span>
 </div>
 `;
@@ -95,23 +95,23 @@ export const text = () => `
 export const iconAndText = () => `
 <div class="fddocs-container">
     <span class="fd-object-status fd-object-status--negative">
-        <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--status-negative" role="presentation"></i>
         <span class="fd-object-status__text">Negative</span>
     </span>
     <span class="fd-object-status fd-object-status--critical">
-        <i class="fd-object-status__icon sap-icon--status-critical" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--status-critical" role="presentation"></i>
         <span class="fd-object-status__text">Critical</span>
     </span>
     <span class="fd-object-status fd-object-status--positive">
-        <i class="fd-object-status__icon sap-icon--status-positive" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--status-positive" role="presentation"></i>
         <span class="fd-object-status__text">Positive</span>
     </span>
     <span class="fd-object-status fd-object-status--informative">
-        <i class="fd-object-status__icon sap-icon--hint" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--hint" role="presentation"></i>
         <span class="fd-object-status__text">Info</span>
     </span>
     <span class="fd-object-status">
-        <i class="fd-object-status__icon sap-icon--to-be-reviewed" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--to-be-reviewed" role="presentation"></i>
         <span class="fd-object-status__text">Neutral</span>
     </span>
 </div>
@@ -159,23 +159,23 @@ export const genericIndicationColors = () => `
 export const clickableObjectStatus = () => `
 <div class="fddocs-container">
     <a href="#"  class="fd-object-status fd-object-status--negative fd-object-status--link">
-        <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--status-negative" role="presentation"></i>
         <span class="fd-object-status__text">Negative</span>
     </a>
     <a href="#"  class="fd-object-status fd-object-status--critical fd-object-status--link">
-        <i class="fd-object-status__icon sap-icon--status-critical" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--status-critical" role="presentation"></i>
         <span class="fd-object-status__text">Critical</span>
     </a>
     <a href="#"class="fd-object-status fd-object-status--positive fd-object-status--link">
-        <i class="fd-object-status__icon sap-icon--status-positive" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--status-positive" role="presentation"></i>
         <span class="fd-object-status__text">Positive</span>
     </a>
     <span role="button" class="fd-object-status fd-object-status--informative fd-object-status--link">
-        <i class="fd-object-status__icon sap-icon--hint" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--hint" role="presentation"></i>
         <span class="fd-object-status__text">Info</span>
     </span>
     <span role="button" class="fd-object-status fd-object-status--link">
-        <i class="fd-object-status__icon sap-icon--to-be-reviewed" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--to-be-reviewed" role="presentation"></i>
         <span class="fd-object-status__text">Neutral</span>
     </span>
 
@@ -210,23 +210,23 @@ export const clickableObjectStatus = () => `
 export const largeObjectStatus = () => `
 <div class="fddocs-container">
     <span class="fd-object-status fd-object-status--large fd-object-status--negative">
-        <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--status-negative" role="presentation"></i>
         <span class="fd-object-status__text">Negative</span>
     </span>
     <span class="fd-object-status fd-object-status--large fd-object-status--critical">
-        <i class="fd-object-status__icon sap-icon--status-critical" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--status-critical" role="presentation"></i>
         <span class="fd-object-status__text">Critical</span>
     </span>
     <span class="fd-object-status fd-object-status--large fd-object-status--positive">
-        <i class="fd-object-status__icon sap-icon--status-positive" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--status-positive" role="presentation"></i>
         <span class="fd-object-status__text">Positive</span>
     </span>
     <span class="fd-object-status fd-object-status--large fd-object-status--informative">
-        <i class="fd-object-status__icon sap-icon--hint" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--hint" role="presentation"></i>
         <span class="fd-object-status__text">Info</span>
     </span>
     <span class="fd-object-status fd-object-status--large">
-        <i class="fd-object-status__icon sap-icon--to-be-reviewed" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--to-be-reviewed" role="presentation"></i>
         <span class="fd-object-status__text">Neutral</span>
     </span>
 </div>
@@ -256,26 +256,26 @@ export const inverted = () => `
         <span class="fd-object-status__text">Inverted Neutral</span>
     </span>
     <span class="fd-object-status fd-object-status--inverted fd-object-status--negative">
-        <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--status-negative" role="presentation"></i>
     </span>
     <span class="fd-object-status fd-object-status--inverted fd-object-status--negative">
-        <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--status-negative" role="presentation"></i>
         <span class="fd-object-status__text">Negative</span>
     </span>
     <span class="fd-object-status fd-object-status--inverted fd-object-status--critical">
-        <i class="fd-object-status__icon sap-icon--status-critical" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--status-critical" role="presentation"></i>
         <span class="fd-object-status__text">Critical</span>
     </span>
     <span class="fd-object-status fd-object-status--inverted fd-object-status--positive">
-        <i class="fd-object-status__icon sap-icon--status-positive" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--status-positive" role="presentation"></i>
         <span class="fd-object-status__text">Positive</span>
     </span>
     <span class="fd-object-status fd-object-status--inverted fd-object-status--informative">
-        <i class="fd-object-status__icon sap-icon--hint" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--hint" role="presentation"></i>
         <span class="fd-object-status__text">Informative</span>
     </span>
     <span class="fd-object-status fd-object-status--inverted">
-        <i class="fd-object-status__icon sap-icon--to-be-reviewed" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--to-be-reviewed" role="presentation"></i>
         <span class="fd-object-status__text">Neutral</span>
     </span>
 </div>
@@ -283,23 +283,23 @@ export const inverted = () => `
     <h4>Clickable Inverted Object Status</h4>
 <div class="fddocs-container">
     <a class="fd-object-status fd-object-status--link fd-object-status--negative fd-object-status--inverted">
-        <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--status-negative" role="presentation"></i>
         <span class="fd-object-status__text">Inverted Negative</span>
     </a>
     <a class="fd-object-status fd-object-status--link fd-object-status--critical fd-object-status--inverted">
-        <i class="fd-object-status__icon sap-icon--status-critical" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--status-critical" role="presentation"></i>
         <span class="fd-object-status__text">Inverted Warning</span>
     </a>
     <a class="fd-object-status fd-object-status--link fd-object-status--positive fd-object-status--inverted">
-        <i class="fd-object-status__icon sap-icon--status-positive" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--status-positive" role="presentation"></i>
         <span class="fd-object-status__text">Inverted Success</span>
     </a>
     <a class="fd-object-status fd-object-status--link fd-object-status--informative fd-object-status--inverted">
-        <i class="fd-object-status__icon sap-icon--hint" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--hint" role="presentation"></i>
         <span class="fd-object-status__text">Inverted informative</span>
     </a>
     <a class="fd-object-status fd-object-status--link fd-object-status--inverted">
-        <i class="fd-object-status__icon sap-icon--to-be-reviewed" role="presentation"></i>
+        <i class="fd-object-status__icon fd-icon--to-be-reviewed" role="presentation"></i>
         <span class="fd-object-status__text">Inverted Neutral</span>
     </a>
 </div>

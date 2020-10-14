@@ -127,7 +127,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                 
                          
                 <i
-                  class="sap-icon--overflow"
+                  class="fd-icon--overflow"
                 />
                 
                     
@@ -220,7 +220,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
             
                 
             <i
-              class="sap-icon--decline"
+              class="fd-icon--decline"
             />
             
             
@@ -367,7 +367,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
             
                     
             <i
-              class="sap-icon--slim-arrow-down"
+              class="fd-icon--slim-arrow-down"
             />
             
                 
@@ -414,7 +414,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
               
                         
               <i
-                class="sap-icon--decline"
+                class="fd-icon--decline"
               />
               
                     
@@ -529,7 +529,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                   
                                 
                   <i
-                    class="sap-icon--overflow"
+                    class="fd-icon--overflow"
                   />
                   
                             
@@ -622,7 +622,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
               
                         
               <i
-                class="sap-icon--decline"
+                class="fd-icon--decline"
               />
               
                     
@@ -736,7 +736,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                   
                                 
                   <i
-                    class="sap-icon--overflow"
+                    class="fd-icon--overflow"
                   />
                   
                             
@@ -806,7 +806,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
               
                         
               <i
-                class="sap-icon--decline"
+                class="fd-icon--decline"
               />
               
                     
@@ -843,7 +843,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
             
                     
             <i
-              class="sap-icon--slim-arrow-down"
+              class="fd-icon--slim-arrow-down"
             />
             
                 
@@ -890,7 +890,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
               
                         
               <i
-                class="sap-icon--decline"
+                class="fd-icon--decline"
               />
               
                     
@@ -1005,7 +1005,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                   
                                 
                   <i
-                    class="sap-icon--overflow"
+                    class="fd-icon--overflow"
                   />
                   
                             
@@ -1098,7 +1098,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
               
                         
               <i
-                class="sap-icon--decline"
+                class="fd-icon--decline"
               />
               
                     
@@ -1212,7 +1212,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                   
                                 
                   <i
-                    class="sap-icon--overflow"
+                    class="fd-icon--overflow"
                   />
                   
                             
@@ -1282,7 +1282,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
               
                         
               <i
-                class="sap-icon--decline"
+                class="fd-icon--decline"
               />
               
                     
@@ -1319,7 +1319,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
             
                     
             <i
-              class="sap-icon--slim-arrow-down"
+              class="fd-icon--slim-arrow-down"
             />
             
                 
@@ -1366,7 +1366,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
               
                         
               <i
-                class="sap-icon--decline"
+                class="fd-icon--decline"
               />
               
                     
@@ -1481,7 +1481,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                   
                                 
                   <i
-                    class="sap-icon--overflow"
+                    class="fd-icon--overflow"
                   />
                   
                             
@@ -1574,7 +1574,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
               
                         
               <i
-                class="sap-icon--decline"
+                class="fd-icon--decline"
               />
               
                     
@@ -1688,7 +1688,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                   
                                 
                   <i
-                    class="sap-icon--overflow"
+                    class="fd-icon--overflow"
                   />
                   
                             
@@ -1758,7 +1758,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
               
                         
               <i
-                class="sap-icon--decline"
+                class="fd-icon--decline"
               />
               
                     

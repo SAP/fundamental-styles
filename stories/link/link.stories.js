@@ -40,11 +40,11 @@ export const primary = () => `
 <br><br>
 <a href="#" class="fd-link" tabindex="0">
     Right icon link 
-    <span class="sap-icon--slim-arrow-right sap-icon--s"></span>
+    <span class="fd-icon--slim-arrow-right fd-icon--s"></span>
 </a>
 <br><br>
 <a href="#" class="fd-link" tabindex="0">
-    <span class="sap-icon--slim-arrow-left sap-icon--s"></span> 
+    <span class="fd-icon--slim-arrow-left fd-icon--s"></span> 
     Left icon link
 </a>
 `;
@@ -67,8 +67,8 @@ You can display a link with an icon placed on either side of the link text.
 
 | Icon style | Modifier class |
 | ----------: | :-------------| 
-| Left Arrow | <code>sap-icon--slim-arrow-left sap-icon--s</code> |
-| Right Arrow | <code>sap-icon--slim-arrow-right sap-icon--s</code> |
+| Left Arrow | <code>fd-icon--slim-arrow-left fd-icon--s</code> |
+| Right Arrow | <code>fd-icon--slim-arrow-right fd-icon--s</code> |
 `
 
     }

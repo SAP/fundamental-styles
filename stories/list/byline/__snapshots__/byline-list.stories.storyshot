@@ -73,7 +73,7 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
         class="fd-list__thumbnail"
       >
         <i
-          class="sap-icon--activate"
+          class="fd-icon--activate"
           role="presentation"
         />
       </span>
@@ -291,7 +291,7 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
         class="fd-list__thumbnail"
       >
         <i
-          class="sap-icon--activate"
+          class="fd-icon--activate"
           role="presentation"
         />
       </span>
@@ -515,7 +515,7 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
         class="fd-list__thumbnail"
       >
         <i
-          class="sap-icon--activate"
+          class="fd-icon--activate"
           role="presentation"
         />
       </span>
@@ -762,7 +762,7 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
           class="fd-list__thumbnail"
         >
           <i
-            class="sap-icon--activate"
+            class="fd-icon--activate"
             role="presentation"
           />
         </span>
@@ -974,7 +974,7 @@ exports[`Storyshots Components/List/Byline Standard 1`] = `
         class="fd-list__thumbnail"
       >
         <i
-          class="sap-icon--activate"
+          class="fd-icon--activate"
           role="presentation"
         />
       </span>
@@ -1016,7 +1016,7 @@ exports[`Storyshots Components/List/Byline Standard 1`] = `
         class="fd-list__thumbnail"
       >
         <i
-          class="sap-icon--employee"
+          class="fd-icon--employee"
           role="presentation"
         />
       </span>
@@ -1152,7 +1152,7 @@ exports[`Storyshots Components/List/Byline Standard 1`] = `
         class="fd-list__thumbnail"
       >
         <i
-          class="sap-icon--activate"
+          class="fd-icon--activate"
           role="presentation"
         />
       </span>
@@ -1194,7 +1194,7 @@ exports[`Storyshots Components/List/Byline Standard 1`] = `
         class="fd-list__thumbnail"
       >
         <i
-          class="sap-icon--employee"
+          class="fd-icon--employee"
           role="presentation"
         />
       </span>

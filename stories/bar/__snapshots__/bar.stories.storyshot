@@ -31,7 +31,7 @@ exports[`Storyshots Components/Bar Default 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-left-arrow"
+            class="fd-icon--navigation-left-arrow"
           />
           
             
@@ -84,7 +84,7 @@ exports[`Storyshots Components/Bar Default 1`] = `
             
                     
             <i
-              class="sap-icon--email"
+              class="fd-icon--email"
             />
             
                 
@@ -98,7 +98,7 @@ exports[`Storyshots Components/Bar Default 1`] = `
             
                     
             <i
-              class="sap-icon--iphone"
+              class="fd-icon--iphone"
             />
             
                 
@@ -112,7 +112,7 @@ exports[`Storyshots Components/Bar Default 1`] = `
             
                     
             <i
-              class="sap-icon--notification-2"
+              class="fd-icon--notification-2"
             />
             
                 
@@ -163,7 +163,7 @@ exports[`Storyshots Components/Bar Default 1`] = `
           
                 
           <i
-            class="sap-icon--grid"
+            class="fd-icon--grid"
           />
           
             
@@ -216,7 +216,7 @@ exports[`Storyshots Components/Bar Default 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-right-arrow"
+            class="fd-icon--navigation-right-arrow"
           />
           
             
@@ -269,7 +269,7 @@ exports[`Storyshots Components/Bar Default 1`] = `
             
                     
             <i
-              class="sap-icon--email"
+              class="fd-icon--email"
             />
             
                 
@@ -283,7 +283,7 @@ exports[`Storyshots Components/Bar Default 1`] = `
             
                     
             <i
-              class="sap-icon--iphone"
+              class="fd-icon--iphone"
             />
             
                 
@@ -297,7 +297,7 @@ exports[`Storyshots Components/Bar Default 1`] = `
             
                     
             <i
-              class="sap-icon--notification-2"
+              class="fd-icon--notification-2"
             />
             
                 
@@ -348,7 +348,7 @@ exports[`Storyshots Components/Bar Default 1`] = `
           
                 
           <i
-            class="sap-icon--grid"
+            class="fd-icon--grid"
           />
           
             
@@ -813,7 +813,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-left-arrow"
+            class="fd-icon--navigation-left-arrow"
           />
           
             
@@ -835,7 +835,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
           
                 
           <i
-            class="sap-icon--home"
+            class="fd-icon--home"
           />
           
             
@@ -857,7 +857,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
           
                 
           <i
-            class="sap-icon--account"
+            class="fd-icon--account"
           />
           
             
@@ -895,7 +895,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
             
                     
             <i
-              class="sap-icon--email"
+              class="fd-icon--email"
             />
             
                 
@@ -909,7 +909,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
             
                     
             <i
-              class="sap-icon--iphone"
+              class="fd-icon--iphone"
             />
             
                 
@@ -923,7 +923,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
             
                     
             <i
-              class="sap-icon--notification-2"
+              class="fd-icon--notification-2"
             />
             
                 
@@ -974,7 +974,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
           
                 
           <i
-            class="sap-icon--grid"
+            class="fd-icon--grid"
           />
           
             
@@ -1026,7 +1026,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-left-arrow"
+            class="fd-icon--navigation-left-arrow"
           />
           
             
@@ -1048,7 +1048,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
           
                 
           <i
-            class="sap-icon--home"
+            class="fd-icon--home"
           />
           
             
@@ -1070,7 +1070,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
           
                 
           <i
-            class="sap-icon--account"
+            class="fd-icon--account"
           />
           
             
@@ -1108,7 +1108,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
             
                     
             <i
-              class="sap-icon--email"
+              class="fd-icon--email"
             />
             
                 
@@ -1122,7 +1122,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
             
                     
             <i
-              class="sap-icon--iphone"
+              class="fd-icon--iphone"
             />
             
                 
@@ -1136,7 +1136,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
             
                     
             <i
-              class="sap-icon--notification-2"
+              class="fd-icon--notification-2"
             />
             
                 
@@ -1187,7 +1187,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
           
                 
           <i
-            class="sap-icon--grid"
+            class="fd-icon--grid"
           />
           
             
@@ -1240,7 +1240,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-right-arrow"
+            class="fd-icon--navigation-right-arrow"
           />
           
             
@@ -1262,7 +1262,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
           
                 
           <i
-            class="sap-icon--home"
+            class="fd-icon--home"
           />
           
             
@@ -1284,7 +1284,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
           
                 
           <i
-            class="sap-icon--account"
+            class="fd-icon--account"
           />
           
             
@@ -1322,7 +1322,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
             
                     
             <i
-              class="sap-icon--email"
+              class="fd-icon--email"
             />
             
                 
@@ -1336,7 +1336,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
             
                     
             <i
-              class="sap-icon--iphone"
+              class="fd-icon--iphone"
             />
             
                 
@@ -1350,7 +1350,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
             
                     
             <i
-              class="sap-icon--notification-2"
+              class="fd-icon--notification-2"
             />
             
                 
@@ -1401,7 +1401,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
           
                 
           <i
-            class="sap-icon--grid"
+            class="fd-icon--grid"
           />
           
             
@@ -1456,7 +1456,7 @@ exports[`Storyshots Components/Bar Header With Subheader 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-left-arrow"
+            class="fd-icon--navigation-left-arrow"
           />
           
             
@@ -1478,7 +1478,7 @@ exports[`Storyshots Components/Bar Header With Subheader 1`] = `
           
                 
           <i
-            class="sap-icon--home"
+            class="fd-icon--home"
           />
           
             
@@ -1500,7 +1500,7 @@ exports[`Storyshots Components/Bar Header With Subheader 1`] = `
           
                 
           <i
-            class="sap-icon--account"
+            class="fd-icon--account"
           />
           
             
@@ -1538,7 +1538,7 @@ exports[`Storyshots Components/Bar Header With Subheader 1`] = `
             
                     
             <i
-              class="sap-icon--email"
+              class="fd-icon--email"
             />
             
                 
@@ -1552,7 +1552,7 @@ exports[`Storyshots Components/Bar Header With Subheader 1`] = `
             
                     
             <i
-              class="sap-icon--iphone"
+              class="fd-icon--iphone"
             />
             
                 
@@ -1566,7 +1566,7 @@ exports[`Storyshots Components/Bar Header With Subheader 1`] = `
             
                     
             <i
-              class="sap-icon--notification-2"
+              class="fd-icon--notification-2"
             />
             
                 
@@ -1617,7 +1617,7 @@ exports[`Storyshots Components/Bar Header With Subheader 1`] = `
           
                 
           <i
-            class="sap-icon--grid"
+            class="fd-icon--grid"
           />
           
             
@@ -1706,7 +1706,7 @@ exports[`Storyshots Components/Bar Subheader 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-left-arrow"
+            class="fd-icon--navigation-left-arrow"
           />
           
             
@@ -1728,7 +1728,7 @@ exports[`Storyshots Components/Bar Subheader 1`] = `
           
                 
           <i
-            class="sap-icon--home"
+            class="fd-icon--home"
           />
           
             
@@ -1776,7 +1776,7 @@ exports[`Storyshots Components/Bar Subheader 1`] = `
           
                 
           <i
-            class="sap-icon--grid"
+            class="fd-icon--grid"
           />
           
             
@@ -1841,7 +1841,7 @@ exports[`Storyshots Components/Bar Subheader 1`] = `
               
                         
               <i
-                class="sap-icon--email"
+                class="fd-icon--email"
               />
               
                     
@@ -1855,7 +1855,7 @@ exports[`Storyshots Components/Bar Subheader 1`] = `
               
                         
               <i
-                class="sap-icon--iphone"
+                class="fd-icon--iphone"
               />
               
                     
@@ -1869,7 +1869,7 @@ exports[`Storyshots Components/Bar Subheader 1`] = `
               
                         
               <i
-                class="sap-icon--notification-2"
+                class="fd-icon--notification-2"
               />
               
                     
@@ -1976,7 +1976,7 @@ exports[`Storyshots Components/Bar Subheader 1`] = `
           
                 
           <i
-            class="sap-icon--navigation-right-arrow"
+            class="fd-icon--navigation-right-arrow"
           />
           
             
@@ -1998,7 +1998,7 @@ exports[`Storyshots Components/Bar Subheader 1`] = `
           
                 
           <i
-            class="sap-icon--home"
+            class="fd-icon--home"
           />
           
             
@@ -2046,7 +2046,7 @@ exports[`Storyshots Components/Bar Subheader 1`] = `
           
                 
           <i
-            class="sap-icon--grid"
+            class="fd-icon--grid"
           />
           
             

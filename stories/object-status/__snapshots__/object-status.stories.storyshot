@@ -110,7 +110,7 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
       
         
       <i
-        class="fd-object-status__icon sap-icon--status-negative"
+        class="fd-object-status__icon fd-icon--status-negative"
         role="presentation"
       />
       
@@ -124,7 +124,7 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
       
         
       <i
-        class="fd-object-status__icon sap-icon--status-negative"
+        class="fd-object-status__icon fd-icon--status-negative"
         role="presentation"
       />
       
@@ -145,7 +145,7 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
       
         
       <i
-        class="fd-object-status__icon sap-icon--status-critical"
+        class="fd-object-status__icon fd-icon--status-critical"
         role="presentation"
       />
       
@@ -166,7 +166,7 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
       
         
       <i
-        class="fd-object-status__icon sap-icon--status-positive"
+        class="fd-object-status__icon fd-icon--status-positive"
         role="presentation"
       />
       
@@ -187,7 +187,7 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
       
         
       <i
-        class="fd-object-status__icon sap-icon--hint"
+        class="fd-object-status__icon fd-icon--hint"
         role="presentation"
       />
       
@@ -208,7 +208,7 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
       
         
       <i
-        class="fd-object-status__icon sap-icon--to-be-reviewed"
+        class="fd-object-status__icon fd-icon--to-be-reviewed"
         role="presentation"
       />
       
@@ -243,7 +243,7 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
       
         
       <i
-        class="fd-object-status__icon sap-icon--status-negative"
+        class="fd-object-status__icon fd-icon--status-negative"
         role="presentation"
       />
       
@@ -264,7 +264,7 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
       
         
       <i
-        class="fd-object-status__icon sap-icon--status-critical"
+        class="fd-object-status__icon fd-icon--status-critical"
         role="presentation"
       />
       
@@ -285,7 +285,7 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
       
         
       <i
-        class="fd-object-status__icon sap-icon--status-positive"
+        class="fd-object-status__icon fd-icon--status-positive"
         role="presentation"
       />
       
@@ -306,7 +306,7 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
       
         
       <i
-        class="fd-object-status__icon sap-icon--hint"
+        class="fd-object-status__icon fd-icon--hint"
         role="presentation"
       />
       
@@ -327,7 +327,7 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
       
         
       <i
-        class="fd-object-status__icon sap-icon--to-be-reviewed"
+        class="fd-object-status__icon fd-icon--to-be-reviewed"
         role="presentation"
       />
       

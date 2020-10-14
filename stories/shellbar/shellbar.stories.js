@@ -97,7 +97,7 @@ export const productMenuAndSearch = () => `
                 <div class="fd-popover__control">
                     <button class="fd-button fd-button--transparent fd-button--menu fd-shellbar__button--menu" onclick="onPopoverClick('9GLB26941');" aria-controls="9GLB26941" aria-haspopup="true" aria-expanded="false">
                         <span class="fd-shellbar__title">Corporate Portal</span>
-                        <i class="sap-icon--megamenu fd-shellbar__button--icon"></i>
+                        <i class="fd-icon--megamenu fd-shellbar__button--icon"></i>
                     </button>
                 </div>
                 <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="9GLB26941">
@@ -137,7 +137,7 @@ export const productMenuAndSearch = () => `
                             <input aria-label="search-input" type="text" class="fd-input fd-input-group__input fd-shellbar__input-group__input" id="F4GcX348b1" value="Search" placeholder="Search...">
                             <span class="fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button">
                                 <button aria-label="button-decline" class="fd-shellbar__button fd-button">
-                                        <i class="sap-icon--decline"></i>
+                                        <i class="fd-icon--decline"></i>
                                 </button>
                             </span>
                         </div>
@@ -146,7 +146,7 @@ export const productMenuAndSearch = () => `
             </div>
             <div class="fd-shellbar__action fd-shellbar__action--desktop">
                 <button class="fd-button fd-shellbar__button" aria-label="Search">
-                        <i class="sap-icon--search"></i>
+                        <i class="fd-icon--search"></i>
                 </button>
             </div>
             <div class="fd-shellbar__action">
@@ -199,7 +199,7 @@ export const linksWithCollapsibleMenuXlSize = () => `
                             <input aria-label="search" type="text" class="fd-input fd-input-group__input fd-shellbar__input-group__input" id="UIO6J6881" value="Search" placeholder="Search...">
                             <span class="fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button">
                                 <button aria-label="navigation-down-arrow-button" class="fd-shellbar__button fd-button">
-                                    <i class="sap-icon--navigation-down-arrow"></i>
+                                    <i class="fd-icon--navigation-down-arrow"></i>
                                 </button>
                             </span>
                         </div>
@@ -208,18 +208,18 @@ export const linksWithCollapsibleMenuXlSize = () => `
             </div>
             <div class="fd-shellbar__action fd-shellbar__action--desktop">
                 <button class="fd-button fd-shellbar__button" aria-label="Search">
-                    <i class="sap-icon--search"></i>
+                    <i class="fd-icon--search"></i>
                 </button>
             </div>
                 <div class="fd-shellbar__action fd-shellbar__action--desktop">
                     <button class="fd-button fd-shellbar__button" aria-label="Notifications">
-                            <i class="sap-icon--bell"></i>
+                            <i class="fd-icon--bell"></i>
                             <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification" aria-label="Unread count">251234</span>
                     </button>
                 </div>
                 <div class="fd-shellbar__action fd-shellbar__action--desktop">
                     <button class="fd-button fd-shellbar__button" aria-label="Pool">
-                            <i class="sap-icon--pool"></i>
+                            <i class="fd-icon--pool"></i>
                     </button>
                 </div>
                 <div class="fd-shellbar__action fd-shellbar__action--mobile">
@@ -228,7 +228,7 @@ export const linksWithCollapsibleMenuXlSize = () => `
                             <div class="fd-popover__control">
                                 <div class="fd-shellbar-collapse--control" onclick="onPopoverClick('CWaGGD78')" aria-controls="CWaGGD78" aria-expanded="false" aria-haspopup="true" role="button">
                                     <button class="fd-button fd-shellbar__button" aria-controls="undefined" aria-haspopup="true" aria-expanded="false">
-                                            <i class="sap-icon--overflow"></i>
+                                            <i class="fd-icon--overflow"></i>
                                             <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification" aria-label="Unread count">25</span>
                                     </button>
                                 </div>
@@ -312,7 +312,7 @@ export const linksWithCollapsibleMenuMSize = () => `
                             <input aria-label="search" type="text" class="fd-input fd-input-group__input fd-shellbar__input-group__input" id="UIO6J6881" value="Search" placeholder="Search...">
                             <span class="fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button">
                                 <button aria-label="navigation-down-arrow-button" class="fd-shellbar__button fd-button">
-                                    <i class="sap-icon--navigation-down-arrow"></i>
+                                    <i class="fd-icon--navigation-down-arrow"></i>
                                 </button>
                             </span>
                         </div>
@@ -321,18 +321,18 @@ export const linksWithCollapsibleMenuMSize = () => `
             </div>
             <div class="fd-shellbar__action fd-shellbar__action--desktop">
                 <button class="fd-button fd-shellbar__button" aria-label="Search">
-                    <i class="sap-icon--search"></i>
+                    <i class="fd-icon--search"></i>
                 </button>
             </div>
                 <div class="fd-shellbar__action fd-shellbar__action--desktop">
                     <button class="fd-button fd-shellbar__button" aria-label="Notifications">
-                        <i class="sap-icon--bell"></i>
+                        <i class="fd-icon--bell"></i>
                         <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification" aria-label="Unread count">251234</span>
                     </button>
                 </div>
                 <div class="fd-shellbar__action fd-shellbar__action--desktop">
                     <button class="fd-button fd-shellbar__button" aria-label="Pool">
-                         <i class="sap-icon--pool"></i>
+                         <i class="fd-icon--pool"></i>
                     </button>
                 </div>
                 <div class="fd-shellbar__action fd-shellbar__action--mobile">
@@ -341,7 +341,7 @@ export const linksWithCollapsibleMenuMSize = () => `
                             <div class="fd-popover__control">
                                 <div class="fd-shellbar-collapse--control" onclick="onPopoverClick('CWaGNGD78')" aria-controls="CWaGNGD78" aria-expanded="false" aria-haspopup="true" role="button">
                                     <button class="fd-button fd-shellbar__button" aria-controls="undefined" aria-haspopup="true" aria-expanded="false">
-                                        <i class="sap-icon--overflow"></i>
+                                        <i class="fd-icon--overflow"></i>
                                         <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification" aria-label="Unread count">25</span>
                                     </button>
                                 </div>
@@ -427,7 +427,7 @@ export const linksWithCollapsibleMenuSSize = () => `
                             <input aria-label="search" type="text" class="fd-input fd-input-group__input fd-shellbar__input-group__input" id="UIO6J6881" value="Search" placeholder="Search...">
                             <span class="fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button">
                                 <button aria-label="navigation-down-arrow-button" class="fd-shellbar__button fd-button">
-                                    <i class="sap-icon--navigation-down-arrow"></i>
+                                    <i class="fd-icon--navigation-down-arrow"></i>
                                 </button>
                             </span>
                         </div>
@@ -436,18 +436,18 @@ export const linksWithCollapsibleMenuSSize = () => `
             </div>
             <div class="fd-shellbar__action fd-shellbar__action--desktop">
                 <button class="fd-button fd-shellbar__button" aria-label="Search">
-                    <i class="sap-icon--search"></i>
+                    <i class="fd-icon--search"></i>
                 </button>
             </div>
                 <div class="fd-shellbar__action fd-shellbar__action--desktop">
                     <button class="fd-button fd-shellbar__button" aria-label="Notifications">
-                        <i class="sap-icon--bell"></i>
+                        <i class="fd-icon--bell"></i>
                         <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification" aria-label="Unread count">251234</span>
                     </button>
                 </div>
                 <div class="fd-shellbar__action fd-shellbar__action--desktop">
                     <button class="fd-button fd-shellbar__button" aria-label="Pool">
-                        <i class="sap-icon--pool"></i>
+                        <i class="fd-icon--pool"></i>
                     </button>
                 </div>
                 <div class="fd-shellbar__action fd-shellbar__action--mobile">
@@ -456,7 +456,7 @@ export const linksWithCollapsibleMenuSSize = () => `
                             <div class="fd-popover__control">
                                 <div class="fd-shellbar-collapse--control" onclick="onPopoverClick('CWaGNGD78')" aria-controls="CWaGNGD78" aria-expanded="false" aria-haspopup="true" role="button">
                                     <button class="fd-button fd-shellbar__button" aria-controls="undefined" aria-haspopup="true" aria-expanded="false">
-                                        <i class="sap-icon--overflow"></i>
+                                        <i class="fd-icon--overflow"></i>
                                         <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification" aria-label="Unread count">25</span>
                                     </button>
                                 </div>
@@ -590,7 +590,7 @@ export const productSwitch = () => `
                                 aria-expanded="true"
                                 aria-haspopup="true"
                                 onclick="onPopoverClick('product-switch-body')">
-                                <i class="sap-icon--grid"></i>
+                                <i class="fd-icon--grid"></i>
                             </button>
                         </div>
                         <div class="fd-popover__body fd-popover__body--right" aria-hidden="false"
@@ -598,7 +598,7 @@ export const productSwitch = () => `
                             <div class="fd-product-switch__body">
                                 <ul class="fd-product-switch__list">
                                     <li class="fd-product-switch__item">
-                                        <div class="fd-product-switch__icon sap-icon--home"></div>
+                                        <div class="fd-product-switch__icon fd-icon--home"></div>
                                         <div class="fd-product-switch__text">
                                             <div class="fd-product-switch__title">Home</div>
                                             <div class="fd-product-switch__subtitle">Central Home</div>
@@ -606,86 +606,86 @@ export const productSwitch = () => `
                                     </li>
                                     <li class="fd-product-switch__item selected">
                                         <div
-                                            class="fd-product-switch__icon sap-icon--business-objects-experience"></div>
+                                            class="fd-product-switch__icon fd-icon--business-objects-experience"></div>
                                         <div class="fd-product-switch__text">
                                             <div class="fd-product-switch__title">Analytics Cloud</div>
                                             <div class="fd-product-switch__subtitle">Analytics Cloud</div>
                                         </div>
                                     </li>
                                     <li class="fd-product-switch__item">
-                                        <div class="fd-product-switch__icon sap-icon--contacts"></div>
+                                        <div class="fd-product-switch__icon fd-icon--contacts"></div>
                                         <div class="fd-product-switch__text">
                                             <div class="fd-product-switch__title">Catalog</div>
                                             <div class="fd-product-switch__subtitle">Ariba</div>
                                         </div>
                                     </li>
                                     <li class="fd-product-switch__item">
-                                        <div class="fd-product-switch__icon sap-icon--credit-card"></div>
+                                        <div class="fd-product-switch__icon fd-icon--credit-card"></div>
                                         <div class="fd-product-switch__text">
                                             <div class="fd-product-switch__title">Guided Buying</div>
                                         </div>
                                     </li>
                                     <li class="fd-product-switch__item">
-                                        <div class="fd-product-switch__icon sap-icon--cart-3"></div>
+                                        <div class="fd-product-switch__icon fd-icon--cart-3"></div>
                                         <div class="fd-product-switch__text">
                                             <div class="fd-product-switch__title">Strategic Procurement</div>
                                         </div>
                                     </li>
                                     <li class="fd-product-switch__item">
-                                        <div class="fd-product-switch__icon sap-icon--flight"></div>
+                                        <div class="fd-product-switch__icon fd-icon--flight"></div>
                                         <div class="fd-product-switch__text">
                                             <div class="fd-product-switch__title">Travel & Expense</div>
                                             <div class="fd-product-switch__subtitle">Concur</div>
                                         </div>
                                     </li>
                                     <li class="fd-product-switch__item">
-                                        <div class="fd-product-switch__icon sap-icon--shipping-status"></div>
+                                        <div class="fd-product-switch__icon fd-icon--shipping-status"></div>
                                         <div class="fd-product-switch__text">
                                             <div class="fd-product-switch__title">Vendor Management</div>
                                             <div class="fd-product-switch__subtitle">Fieldglass</div>
                                         </div>
                                     </li>
                                     <li class="fd-product-switch__item">
-                                        <div class="fd-product-switch__icon sap-icon--customer"></div>
+                                        <div class="fd-product-switch__icon fd-icon--customer"></div>
                                         <div class="fd-product-switch__text">
                                             <div class="fd-product-switch__title">Human Capital Management</div>
                                         </div>
                                     </li>
                                     <li class="fd-product-switch__item">
-                                        <div class="fd-product-switch__icon sap-icon--sales-notification"></div>
+                                        <div class="fd-product-switch__icon fd-icon--sales-notification"></div>
                                         <div class="fd-product-switch__text">
                                             <div class="fd-product-switch__title">Sales Cloud</div>
                                             <div class="fd-product-switch__subtitle">Sales Cloud</div>
                                         </div>
                                     </li>
                                     <li class="fd-product-switch__item">
-                                        <div class="fd-product-switch__icon sap-icon--retail-store"></div>
+                                        <div class="fd-product-switch__icon fd-icon--retail-store"></div>
                                         <div class="fd-product-switch__text">
                                             <div class="fd-product-switch__title">Commerce Cloud</div>
                                             <div class="fd-product-switch__subtitle">Commerce Cloud</div>
                                         </div>
                                     </li>
                                     <li class="fd-product-switch__item">
-                                        <div class="fd-product-switch__icon sap-icon--marketing-campaign"></div>
+                                        <div class="fd-product-switch__icon fd-icon--marketing-campaign"></div>
                                         <div class="fd-product-switch__text">
                                             <div class="fd-product-switch__title">Marketing Cloud</div>
                                             <div class="fd-product-switch__subtitle">Marketing Cloud</div>
                                         </div>
                                     </li>
                                     <li class="fd-product-switch__item">
-                                        <div class="fd-product-switch__icon sap-icon--family-care"></div>
+                                        <div class="fd-product-switch__icon fd-icon--family-care"></div>
                                         <div class="fd-product-switch__text">
                                             <div class="fd-product-switch__title">Service Cloud</div>
                                         </div>
                                     </li>
                                     <li class="fd-product-switch__item">
-                                        <div class="fd-product-switch__icon sap-icon--customer-briefing"></div>
+                                        <div class="fd-product-switch__icon fd-icon--customer-briefing"></div>
                                         <div class="fd-product-switch__text">
                                             <div class="fd-product-switch__title">Customer Data Cloud</div>
                                         </div>
                                     </li>
                                     <li class="fd-product-switch__item">
-                                        <div class="fd-product-switch__icon sap-icon--batch-payments"></div>
+                                        <div class="fd-product-switch__icon fd-icon--batch-payments"></div>
                                         <div class="fd-product-switch__text">
                                             <div class="fd-product-switch__title">S/4HANA</div>
                                         </div>

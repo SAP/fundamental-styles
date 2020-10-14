@@ -72,7 +72,7 @@ exports[`Storyshots Patterns/Date Picker Today Navigation Button 1`] = `
                
             
               <i
-                class="sap-icon--appointment-2"
+                class="fd-icon--appointment-2"
               />
               
           
@@ -123,7 +123,7 @@ exports[`Storyshots Patterns/Date Picker Today Navigation Button 1`] = `
                    
                 
                   <i
-                    class="sap-icon--slim-arrow-left"
+                    class="fd-icon--slim-arrow-left"
                   />
                   
               
@@ -179,7 +179,7 @@ exports[`Storyshots Patterns/Date Picker Today Navigation Button 1`] = `
                    
                 
                   <i
-                    class="sap-icon--slim-arrow-right"
+                    class="fd-icon--slim-arrow-right"
                   />
                   
               

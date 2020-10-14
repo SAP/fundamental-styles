@@ -25,7 +25,7 @@ export const defaultCozyMode = () => `
         <div class='fd-time__col'>
             <label class='fd-time__slider-label'>Hrs</label>
             <button class='fd-button fd-button fd-button--transparent' aria-label='Increase hours'>
-                <i class="sap-icon--navigation-up-arrow"></i>
+                <i class="fd-icon--navigation-up-arrow"></i>
             </button>
             <div class='fd-time__wrapper fd-time__wrapper--active'>
                 <ul class='fd-time__list'>
@@ -65,7 +65,7 @@ export const defaultCozyMode = () => `
                 </ul>
             </div>
             <button class='fd-button fd-button fd-button--transparent' aria-label='Increase hours'>
-                <i class="sap-icon--navigation-down-arrow"></i>
+                <i class="fd-icon--navigation-down-arrow"></i>
             </button>
         </div>
         <div class='fd-time__col'>
@@ -80,7 +80,7 @@ export const defaultCozyMode = () => `
         <div class='fd-time__col'>
             <label class='fd-time__slider-label'>Hrs</label>
             <button class='fd-button fd-button fd-button--transparent' aria-label='Increase hours'>
-                <i class="sap-icon--navigation-up-arrow"></i>
+                <i class="fd-icon--navigation-up-arrow"></i>
             </button>
             <div class='fd-time__wrapper fd-time__wrapper--active'>
                <ul class='fd-time__list'>
@@ -120,7 +120,7 @@ export const defaultCozyMode = () => `
                </ul>
             </div>
             <button class='fd-button fd-button fd-button--transparent' aria-label='Decrease hours'>
-                <i class="sap-icon--navigation-down-arrow"></i>
+                <i class="fd-icon--navigation-down-arrow"></i>
             </button>
         </div>
         <div class='fd-time__col'>
@@ -159,7 +159,7 @@ export const defaultCozyMode = () => `
         <div class='fd-time__col fd-time__col--period'>
             <label class='fd-time__slider-label'>AM/PM</label>
             <button class='fd-button fd-button fd-button--transparent' aria-label='Change Meridian'>
-                <i class="sap-icon--navigation-up-arrow"></i>
+                <i class="fd-icon--navigation-up-arrow"></i>
             </button>
             <div class='fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian'>
                 <ul class='fd-time__list'>
@@ -177,7 +177,7 @@ export const defaultCozyMode = () => `
                 </ul>
             </div>
             <button class='fd-button fd-button fd-button--transparent' aria-label='Change Meridian'>
-                <i class="sap-icon--navigation-down-arrow"></i>
+                <i class="fd-icon--navigation-down-arrow"></i>
             </button>
         </div>
     </div>
@@ -199,7 +199,7 @@ export const tabletMode = () =>
         <div class='fd-time__col'>
             <label class='fd-time__slider-label'>Hrs</label>
             <button class='fd-button fd-button fd-button--transparent' aria-label='Increase hours'>
-                <i class="sap-icon--navigation-up-arrow"></i>
+                <i class="fd-icon--navigation-up-arrow"></i>
             </button>
             <div class='fd-time__wrapper fd-time__wrapper--active'>
                 <ul class='fd-time__list'>
@@ -239,7 +239,7 @@ export const tabletMode = () =>
                 </ul>
             </div>
             <button class='fd-button fd-button fd-button--transparent' aria-label='Decrease hours'>
-                <i class="sap-icon--navigation-down-arrow"></i>
+                <i class="fd-icon--navigation-down-arrow"></i>
             </button>
         </div>
         <div class='fd-time__col'>
@@ -254,7 +254,7 @@ export const tabletMode = () =>
         <div class='fd-time__col'>
             <label class='fd-time__slider-label'>Hrs</label>
             <button class='fd-button fd-button fd-button--transparent' aria-label='Increase hours'>
-                <i class="sap-icon--navigation-up-arrow"></i>
+                <i class="fd-icon--navigation-up-arrow"></i>
             </button>
             <div class='fd-time__wrapper fd-time__wrapper--active'>
                <ul class='fd-time__list'>
@@ -294,7 +294,7 @@ export const tabletMode = () =>
                </ul>
             </div>
             <button class='fd-button fd-button fd-button--transparent' aria-label='Decrease hours'>
-                <i class="sap-icon--navigation-down-arrow"></i>
+                <i class="fd-icon--navigation-down-arrow"></i>
             </button>
         </div>
         <div class='fd-time__col'>
@@ -333,7 +333,7 @@ export const tabletMode = () =>
         <div class='fd-time__col fd-time__col--period'>
             <label class='fd-time__slider-label'>AM/PM</label>
             <button class='fd-button fd-button fd-button--transparent' aria-label='Change Meridian'>
-                <i class="sap-icon--navigation-up-arrow"></i>
+                <i class="fd-icon--navigation-up-arrow"></i>
             </button>
             <div class='fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian'>
                 <ul class='fd-time__list'>
@@ -351,7 +351,7 @@ export const tabletMode = () =>
                 </ul>
             </div>
             <button class='fd-button fd-button fd-button--transparent' aria-label='Change Meridian'>
-                <i class="sap-icon--navigation-down-arrow"></i>
+                <i class="fd-icon--navigation-down-arrow"></i>
             </button>
         </div>
     </div>
@@ -372,7 +372,7 @@ export const compactMode = () =>
         <div class='fd-time__col'>
             <label class='fd-time__slider-label'>Hrs</label>
             <button class='fd-button fd-button--compact fd-button--transparent' aria-label='Increase hours'>
-                <i class="sap-icon--navigation-up-arrow"></i>
+                <i class="fd-icon--navigation-up-arrow"></i>
             </button>
             <div class='fd-time__wrapper fd-time__wrapper--active'>
                 <ul class='fd-time__list'>
@@ -412,7 +412,7 @@ export const compactMode = () =>
                 </ul>
             </div>
             <button class='fd-button fd-button--compact fd-button--transparent' aria-label='Decrease hours'>
-                <i class="sap-icon--navigation-down-arrow"></i>
+                <i class="fd-icon--navigation-down-arrow"></i>
             </button>
         </div>
         <div class='fd-time__col'>
@@ -427,7 +427,7 @@ export const compactMode = () =>
         <div class='fd-time__col'>
             <label class='fd-time__slider-label'>Hrs</label>
             <button class='fd-button fd-button--compact fd-button--transparent' aria-label='Increase hours'>
-                <i class="sap-icon--navigation-up-arrow"></i>
+                <i class="fd-icon--navigation-up-arrow"></i>
             </button>
             <div class='fd-time__wrapper fd-time__wrapper--active'>
                <ul class='fd-time__list'>
@@ -467,7 +467,7 @@ export const compactMode = () =>
                </ul>
             </div>
             <button class='fd-button fd-button--compact fd-button--transparent' aria-label='Decrease hours'>
-                <i class="sap-icon--navigation-down-arrow"></i>
+                <i class="fd-icon--navigation-down-arrow"></i>
             </button>
         </div>
         <div class='fd-time__col'>
@@ -506,7 +506,7 @@ export const compactMode = () =>
         <div class='fd-time__col fd-time__col--period'>
             <label class='fd-time__slider-label'>AM/PM</label>
             <button class='fd-button fd-button--compact fd-button--transparent' aria-label='Change Meridian'>
-                <i class="sap-icon--navigation-up-arrow"></i>
+                <i class="fd-icon--navigation-up-arrow"></i>
             </button>
             <div class='fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian'>
                 <ul class='fd-time__list'>
@@ -524,7 +524,7 @@ export const compactMode = () =>
                 </ul>
             </div>
             <button class='fd-button fd-button--compact fd-button--transparent' aria-label='Change Meridian'>
-                <i class="sap-icon--navigation-down-arrow"></i>
+                <i class="fd-icon--navigation-down-arrow"></i>
             </button>
         </div>
     </div>
@@ -545,7 +545,7 @@ export const scrollableMode = () => `
         <div class='fd-time__col'>
             <label class='fd-time__slider-label'>Hrs</label>
             <button class='fd-button fd-button--transparent' aria-label='Increase hours'>
-                <i class="sap-icon--navigation-up-arrow"></i>
+                <i class="fd-icon--navigation-up-arrow"></i>
             </button>
             <div class='fd-time__wrapper fd-time__wrapper--active'>
                 <ul class='fd-time__list'>
@@ -585,7 +585,7 @@ export const scrollableMode = () => `
                 </ul>
             </div>
             <button class='fd-button fd-button--transparent' aria-label='Change Meridian'>
-                <i class="sap-icon--navigation-down-arrow"></i>
+                <i class="fd-icon--navigation-down-arrow"></i>
             </button>
         </div>
         <div class='fd-time__col'>
@@ -600,7 +600,7 @@ export const scrollableMode = () => `
         <div class='fd-time__col'>
             <label class='fd-time__slider-label'>Hrs</label>
             <button class='fd-button fd-button--transparent' aria-label='Increase hours'>
-                <i class="sap-icon--navigation-up-arrow"></i>
+                <i class="fd-icon--navigation-up-arrow"></i>
             </button>
             <div class='fd-time__wrapper fd-time__wrapper--active'>
             <ul class='fd-time__list'>
@@ -640,7 +640,7 @@ export const scrollableMode = () => `
             </ul>
             </div>
             <button class='fd-button fd-button--transparent' aria-label='Decrease hours'>
-                <i class="sap-icon--navigation-down-arrow"></i>
+                <i class="fd-icon--navigation-down-arrow"></i>
             </button>
         </div>
         <div class='fd-time__col'>
@@ -679,7 +679,7 @@ export const scrollableMode = () => `
         <div class='fd-time__col fd-time__col--period'>
             <label class='fd-time__slider-label'>AM/PM</label>
             <button class='fd-button fd-button--transparent' aria-label='Change Meridian'>
-                <i class="sap-icon--navigation-up-arrow"></i>
+                <i class="fd-icon--navigation-up-arrow"></i>
             </button>
             <div class='fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian'>
                     <ul class='fd-time__list'>
@@ -697,7 +697,7 @@ export const scrollableMode = () => `
                     </ul>
                 </div>
                 <button class='fd-button fd-button--transparent' aria-label='Change Meridian'>
-                    <i class="sap-icon--navigation-down-arrow"></i>
+                    <i class="fd-icon--navigation-down-arrow"></i>
                 </button>
             </div>
         </div>

@@ -20,14 +20,14 @@ export const standard = () => `
 <h4>Standard Size</h4>
 <ul class="fd-list fd-list--byline" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
-      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+      <span class="fd-list__thumbnail"><i role="presentation" class="fd-icon--activate"></i></span>
       <div class="fd-list__content">
         <div class="fd-list__title">Title</div>
         <div class="fd-list__byline">Byline (description)</div>
       </div>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
-      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
+      <span class="fd-list__thumbnail"><i role="presentation" class="fd-icon--employee"></i></span>
       <div class="fd-list__content">
         <div class="fd-list__title">List Item With No Byline</div>
       </div>
@@ -54,14 +54,14 @@ style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span
 <h4>Compact Size</h4>
 <ul class="fd-list fd-list--compact fd-list--byline" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
-      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+      <span class="fd-list__thumbnail"><i role="presentation" class="fd-icon--activate"></i></span>
       <div class="fd-list__content">
         <div class="fd-list__title">Title</div>
         <div class="fd-list__byline">Byline (description)</div>
       </div>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
-      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
+      <span class="fd-list__thumbnail"><i role="presentation" class="fd-icon--employee"></i></span>
       <div class="fd-list__content">
         <div class="fd-list__title">List Item With No Byline</div>
       </div>
@@ -98,7 +98,7 @@ export const navigation = () => `
 <ul class="fd-list fd-list--byline fd-list--navigation" role="list">
   <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
     <a tabindex="0" class="fd-list__link" href="#"> 
-      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+      <span class="fd-list__thumbnail"><i role="presentation" class="fd-icon--activate"></i></span>
       <div class="fd-list__content">
         <div class="fd-list__title">Title</div>
         <div class="fd-list__byline">Byline (description)</div>
@@ -107,7 +107,7 @@ export const navigation = () => `
   </li>
   <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link is-selected">
     <a tabindex="0" class="fd-list__link" href="#"> 
-      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
+      <span class="fd-list__thumbnail"><i role="presentation" class="fd-icon--employee"></i></span>
       <div class="fd-list__content">
         <div class="fd-list__title">List Item With No Byline</div>
       </div>
@@ -153,7 +153,7 @@ export const navigationIndicator = () => `
 <ul class="fd-list fd-list--byline fd-list--navigation fd-list--navigation-indication" role="list">
   <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
     <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#"> 
-      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+      <span class="fd-list__thumbnail"><i role="presentation" class="fd-icon--activate"></i></span>
       <div class="fd-list__content">
         <div class="fd-list__title">Title</div>
         <div class="fd-list__byline">Byline (description)</div>
@@ -162,7 +162,7 @@ export const navigationIndicator = () => `
   </li>
   <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link is-selected">
     <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#"> 
-      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
+      <span class="fd-list__thumbnail"><i role="presentation" class="fd-icon--employee"></i></span>
       <div class="fd-list__content">
         <div class="fd-list__title">List Item With No Byline</div>
       </div>
@@ -198,14 +198,14 @@ all items are navigable. In this case use a byline list with navigation.
 export const borderless = () => `
 <ul class="fd-list fd-list--no-border fd-list--byline" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
-      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+      <span class="fd-list__thumbnail"><i role="presentation" class="fd-icon--activate"></i></span>
       <div class="fd-list__content">
         <div class="fd-list__title">Title</div>
         <div class="fd-list__byline">Byline (description)</div>
       </div>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
-      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
+      <span class="fd-list__thumbnail"><i role="presentation" class="fd-icon--employee"></i></span>
       <div class="fd-list__content">
         <div class="fd-list__title">List Item With No Byline</div>
       </div>
@@ -222,7 +222,7 @@ style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span
     </div>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
-      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--world"></i></span>
+      <span class="fd-list__thumbnail"><i role="presentation" class="fd-icon--world"></i></span>
     <div class="fd-list__content">
         <div class="fd-list__title">List Item With Two-Column Byline and Semantic Byline Second Item</div>
         <div class="fd-list__byline fd-list__byline--2-col">
@@ -251,7 +251,7 @@ export const selection = () => `
           <input type="checkbox" class="fd-checkbox" id="Ai4ez6111Z" checked aria-labelledby="O09lk1">
           <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6111Z"></label>
       </div>
-      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+      <span class="fd-list__thumbnail"><i role="presentation" class="fd-icon--activate"></i></span>
       <div class="fd-list__content">
         <span class="fd-list__title" id="O09lk1">Title</span>
         <span class="fd-list__byline">Byline (description)</span>
@@ -291,7 +291,7 @@ style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span
           <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6115V" aria-labelledby="O09lk4">
           <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6115V"></label>
       </div>
-      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+      <span class="fd-list__thumbnail"><i role="presentation" class="fd-icon--activate"></i></span>
       <div class="fd-list__content">
         <span class="fd-list__title" id="O09lk4">Title</span>
         <span class="fd-list__byline">Byline (description)</span>
@@ -346,7 +346,7 @@ export const selectionAndNavigation = () => `
         <input type="checkbox" class="fd-checkbox" id="Ai4ez6118N" aria-labelledby="Ki81L2">
         <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6118N"></label>
     </div>
-    <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+    <span class="fd-list__thumbnail"><i role="presentation" class="fd-icon--activate"></i></span>
     <div class="fd-list__content">
     <span class="fd-list__title" id="Ki81L2">Title</span>
     <span class="fd-list__byline">Byline (description)</span>
@@ -391,7 +391,7 @@ style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span
         <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6118CON"></label>
     </div>
     <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
-      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+      <span class="fd-list__thumbnail"><i role="presentation" class="fd-icon--activate"></i></span>
       <div class="fd-list__content">
         <span class="fd-list__title" id="Ki81L6">Title</span>
         <span class="fd-list__byline">Byline (description)</span>
@@ -444,7 +444,7 @@ export const rtl = () => `
             <input type="checkbox" class="fd-checkbox" id="2598496017" aria-labelledby="K0921">
             <label tabindex="-1" class="fd-checkbox__label" for="2598496017"></label>
         </div>
-        <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+        <span class="fd-list__thumbnail"><i role="presentation" class="fd-icon--activate"></i></span>
         <div class="fd-list__content">
         <span class="fd-list__title" id="K0921">Title</span>
         <span class="fd-list__byline">Byline (description)</span>
@@ -485,14 +485,14 @@ export const rtl = () => `
     
     <ul class="fd-list fd-list--byline" role="list" aria-label="Byline list">
       <li role="listitem" tabindex="0" class="fd-list__item">
-          <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+          <span class="fd-list__thumbnail"><i role="presentation" class="fd-icon--activate"></i></span>
           <div class="fd-list__content">
             <div class="fd-list__title">Title</div>
             <div class="fd-list__byline">Byline (description)</div>
           </div>
       </li>
       <li role="listitem" tabindex="0" class="fd-list__item">
-          <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
+          <span class="fd-list__thumbnail"><i role="presentation" class="fd-icon--employee"></i></span>
           <div class="fd-list__content">
             <div class="fd-list__title">List Item With No Byline</div>
           </div>

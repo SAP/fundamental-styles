@@ -26,7 +26,7 @@ export const withIconAndButton = () => `
     <div class="fd-popover">
         <div class="fd-popover__control">
             <button class="fd-button fd-button--transparent" aria-controls="pQqQR213" aria-haspopup="true" aria-expanded="true" aria-label="More">
-                <i class="sap-icon--overflow"></i>
+                <i class="fd-icon--overflow"></i>
             </button>
         </div>
         <div class="fd-popover__body" aria-hidden="false" id="pQqQR213">

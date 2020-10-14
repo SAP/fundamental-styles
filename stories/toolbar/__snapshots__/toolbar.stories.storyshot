@@ -356,7 +356,7 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
             
                 
             <i
-              class="sap-icon--overflow"
+              class="fd-icon--overflow"
             />
                 
             
@@ -499,7 +499,7 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
           
             
           <i
-            class="sap-icon--overflow"
+            class="fd-icon--overflow"
           />
               
         
@@ -652,7 +652,7 @@ exports[`Storyshots Components/Toolbar Separator 1`] = `
       
         
       <i
-        class="sap-icon--survey"
+        class="fd-icon--survey"
       />
       
     
@@ -671,7 +671,7 @@ exports[`Storyshots Components/Toolbar Separator 1`] = `
       
         
       <i
-        class="sap-icon--pool"
+        class="fd-icon--pool"
       />
       
     
@@ -685,7 +685,7 @@ exports[`Storyshots Components/Toolbar Separator 1`] = `
       
         
       <i
-        class="sap-icon--pie-chart"
+        class="fd-icon--pie-chart"
       />
       
     
