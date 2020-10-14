@@ -71,14 +71,11 @@ componentDirs.map((directory) => {
 import * as stories from './${componentName}.stories.js';
 
 export default {
-    title: 'Visual/${prettyCompName}'${dependentComps ? ',' : ''}
-    ${
-    dependentComps ?
-        `parameters: {
-        components: [${dependentComps}]
+    title: 'Snapshot/${prettyCompName}',
+    parameters: {
+        chromatic: { delay: 100 }, //needed to let theme styles load
+        ${dependentComps ? `components: [${dependentComps}]` : ''}
     }
-` : ''
-}
 };
 
 export const ${visualStoryName} = () => {
