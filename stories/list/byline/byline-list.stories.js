@@ -44,23 +44,23 @@ export const standard = () => `
 <li role="listitem" tabindex="0" class="fd-list__item">
     <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
     <div class="fd-list__content">
-      <div class="fd-list__title">List Item With No Byline</div>
+      <div class="fd-list__title">List item without byline</div>
     </div>
 </li>
 <li role="listitem" tabindex="0" class="fd-list__item">
   <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
 style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
   <div class="fd-list__content">
-      <div class="fd-list__title">List Item With Two-Column Byline</div>
+      <div class="fd-list__title">List item with 2-column byline</div>
       <div class="fd-list__byline fd-list__byline--2-col">
-          <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
-          <div class="fd-list__byline-right">Second text item in Byline (Can be semantic (Status) or not)</div>
+          <div class="fd-list__byline-left">First text item in byline</div>
+          <div class="fd-list__byline-right">Second text item in Byline</div>
       </div>
   </div>
 </li>
 <li role="listitem" tabindex="0" class="fd-list__item">
     <div class="fd-list__content">
-      <div class="fd-list__title">Text-Only List Item</div>
+      <div class="fd-list__title">Text-only list item</div>
       <div class="fd-list__byline">Byline (description)</div>
     </div>
 </li>
@@ -78,23 +78,23 @@ style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span
 <li role="listitem" tabindex="0" class="fd-list__item">
     <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
     <div class="fd-list__content">
-      <div class="fd-list__title">List Item With No Byline</div>
+      <div class="fd-list__title">List item without byline</div>
     </div>
 </li>
 <li role="listitem" tabindex="0" class="fd-list__item">
   <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
 style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
   <div class="fd-list__content">
-      <div class="fd-list__title">List Item With Two-Column Byline</div>
+      <div class="fd-list__title">list item with 2-column byline</div>
       <div class="fd-list__byline fd-list__byline--2-col">
-          <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
-          <div class="fd-list__byline-right">Second text item in Byline (Can be semantic (Status) or not)</div>
+          <div class="fd-list__byline-left">First text item in byline</div>
+          <div class="fd-list__byline-right">Second text item in byline</div>
       </div>
   </div>
 </li>
 <li role="listitem" tabindex="0" class="fd-list__item">
     <div class="fd-list__content">
-      <div class="fd-list__title">Text-Only List Item</div>
+      <div class="fd-list__title">Text-only list item</div>
       <div class="fd-list__byline">Byline (description)</div>
     </div>
 </li>
@@ -280,7 +280,7 @@ export const selection = () => `
   <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
 style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
   <div class="fd-list__content">
-      <div class="fd-list__title" id="O09lk2">List item with 2-Column byline</div>
+      <div class="fd-list__title" id="O09lk2">List item with 2-column byline</div>
       <div class="fd-list__byline fd-list__byline--2-col">
           <div class="fd-list__byline-left">First text item in byline</div>
           <div class="fd-list__byline-right">Second text item in byline</div>
@@ -477,10 +477,10 @@ export const rtl = () => `
       <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
   style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
       <div class="fd-list__content">
-          <div class="fd-list__title"  id="K0922">List Item With Two-Column Byline</div>
+          <div class="fd-list__title"  id="K0922">list item with 2-column byline</div>
           <div class="fd-list__byline fd-list__byline--2-col">
-              <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
-              <div class="fd-list__byline-right">Second text item in Byline (Can be semantic (Status) or not)</div>
+              <div class="fd-list__byline-left">First text item in byline</div>
+              <div class="fd-list__byline-right">Second text item in byline</div>
           </div>
       </div>
       </a>
@@ -492,7 +492,7 @@ export const rtl = () => `
       </div>
       <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
         <div class="fd-list__content">
-          <div class="fd-list__title" id="K0923">Text-Only List Item</div>
+          <div class="fd-list__title" id="K0923">Text-only list item</div>
           <div class="fd-list__byline">Byline (description)</div>
         </div>
       </a>
@@ -512,23 +512,23 @@ export const rtl = () => `
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
         <div class="fd-list__content">
-          <div class="fd-list__title">List Item With No Byline</div>
+          <div class="fd-list__title">List item without byline</div>
         </div>
     </li>
     <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
   style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
       <div class="fd-list__content">
-          <div class="fd-list__title">List Item With Two-Column Byline</div>
+          <div class="fd-list__title">List item with 2-column byline</div>
           <div class="fd-list__byline fd-list__byline--2-col">
-              <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
-              <div class="fd-list__byline-right">Second text item in Byline (Can be semantic (Status) or not)</div>
+              <div class="fd-list__byline-left">First text item in byline</div>
+              <div class="fd-list__byline-right">Second text item in byline</div>
           </div>
       </div>
     </li>
     <li role="listitem" tabindex="0" class="fd-list__item">
         <div class="fd-list__content">
-          <div class="fd-list__title">Text-Only List Item</div>
+          <div class="fd-list__title">Text-only list item</div>
           <div class="fd-list__byline">Byline (description)</div>
         </div>
     </li>
