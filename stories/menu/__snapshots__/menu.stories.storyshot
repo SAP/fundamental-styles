@@ -1193,11 +1193,6 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Menu RTL 1`] = `
-
-
-`;
-
 exports[`Storyshots Components/Menu With Submenu 1`] = `
 
 

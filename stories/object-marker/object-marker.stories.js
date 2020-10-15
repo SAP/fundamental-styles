@@ -69,30 +69,6 @@ export const iconAndText = () => `
     <i class="fd-object-marker__icon sap-icon--private" role="presentation"></i>
     <span class="fd-object-marker__text">Locked</span>
 </div>
-
-<div dir="rtl">
-    <h4>RTL Support</h4>
-    <div class="fd-object-marker">
-        <i class="fd-object-marker__icon sap-icon--request" role="presentation"></i>
-        <span class="fd-object-marker__text">Request</span>
-    </div>
-    <div class="fd-object-marker">
-        <i class="fd-object-marker__icon sap-icon--favorite" role="presentation"></i>
-        <span class="fd-object-marker__text">Favourite</span>
-    </div>
-    <div class="fd-object-marker">
-        <i class="fd-object-marker__icon sap-icon--flag" role="presentation"></i>
-        <span class="fd-object-marker__text">Flag</span>
-    </div>
-    <div class="fd-object-marker">
-        <i class="fd-object-marker__icon sap-icon--user-edit" role="presentation"></i>
-        <span class="fd-object-marker__text">Draft</span>
-    </div>
-    <div class="fd-object-marker">
-        <i class="fd-object-marker__icon sap-icon--private" role="presentation"></i>
-        <span class="fd-object-marker__text">Locked</span>
-    </div>
-</div>
 `;
 iconAndText.parameters = {
     docs: {
@@ -116,18 +92,6 @@ export const clickableObjectMarker = () => `
     <i class="fd-object-marker__icon sap-icon--user-edit" role="presentation"></i>
     <span class="fd-object-marker__text">Unsaved Changes</span>
 </a>
-
-<div dir="rtl">
-    <h4>RTL Support</h4>
-    <a class="fd-object-marker fd-object-marker--link">
-        <i class="fd-object-marker__icon sap-icon--private" role="presentation"></i>
-        <span class="fd-object-marker__text">Locked</span>
-    </a>
-    <a class="fd-object-marker fd-object-marker--link">
-        <i class="fd-object-marker__icon sap-icon--user-edit" role="presentation"></i>
-        <span class="fd-object-marker__text">Unsaved Changes</span>
-    </a>
-</div>
 `;
 clickableObjectMarker.parameters = {
     docs: {

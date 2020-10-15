@@ -1193,11 +1193,6 @@ exports[`Storyshots Components/Button Primary 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Button RTL 1`] = `
-
-
-`;
-
 exports[`Storyshots Components/Button Segmented button 1`] = `
 <section>
   

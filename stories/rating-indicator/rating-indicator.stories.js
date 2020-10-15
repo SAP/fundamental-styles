@@ -442,34 +442,3 @@ if it is ideal for your use case.
 `
     }
 };
-
-export const RTL = () => `
-    <div class="example-container" dir="rtl">
-        <div class="fd-rating-indicator">
-            <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-                <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-rtl-1" name="rating-rtl" value="1">  
-                <label class="fd-rating-indicator__label" for="rating-rtl-1"></label>
-                
-                <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-rtl-2" name="rating-rtl" value="2" checked>
-                <label class="fd-rating-indicator__label" for="rating-rtl-2"></label>
-                
-                <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-rtl-3" name="rating-rtl" value="3">
-                <label class="fd-rating-indicator__label" for="rating-rtl-3"></label>
-                
-                <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-rtl-4" name="rating-rtl" value="4">
-                <label class="fd-rating-indicator__label" for="rating-rtl-4"></label>
-                
-                <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-rtl-5" name="rating-rtl" value="5">
-                <label class="fd-rating-indicator__label" for="rating-rtl-5"></label>
-            </div>
-            <span class="fd-rating-indicator__dynamic-text">(2 من 5)</span>
-        </div>
-    </div>
-`;
-
-RTL.storyName = 'RTL';
-RTL.parameters = {
-    docs: {
-        storyDescription: 'The rating indicator can be displayed from right to left on the screen so that it may be used internationally.'
-    }
-};

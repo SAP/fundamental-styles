@@ -98,11 +98,6 @@ exports[`Storyshots Components/Counter Notification 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Counter Right-to-Left example 1`] = `
-
-
-`;
-
 exports[`Storyshots Components/Counter Standalone 1`] = `
 <section>
   

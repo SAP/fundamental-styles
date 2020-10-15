@@ -233,36 +233,3 @@ overMaxHeight.parameters = {
         storyDescription: 'The max height feed input displays a text field with the maximum amount of text lines it can contain. Once the text field has reached the maximum height, a scrollbar appears to access the overflowing text.'
     }
 };
-
-export const rtl = () => `
-    <div dir="rtl">
-        <div class="fd-feed-input" 
-             role="region" 
-             aria-label="Feed input with RTL support">
-            <div class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb" 
-                 style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
-                 role="img" 
-                 aria-label="John Doe"
-                 title="John Doe"></div>
-            <textarea class="fd-textarea fd-feed-input__textarea" 
-                      placeholder="Post something here" 
-                      aria-label="Feed" 
-                      aria-required 
-                      rows="1">Post message here</textarea>
-            <button class="fd-button fd-feed-input__submit-button" 
-                    aria-label="Send" 
-                    aria-disabled="false" 
-                    title="Send">
-                <i role="presentation" class="sap-icon--feeder-arrow"></i>
-            </button>
-        </div>
-    </div>
-`;
-
-rtl.storyName = 'RTL';
-rtl.parameters = {
-    docs: {
-        iframeHeight: 150,
-        storyDescription: 'The feed input displays from right to left on the screen so that it may be used internationally.'
-    }
-};

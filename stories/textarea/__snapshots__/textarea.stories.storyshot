@@ -376,8 +376,3 @@ exports[`Storyshots Components/Forms/Textarea Responsiveness 1`] = `
 
 </section>
 `;
-
-exports[`Storyshots Components/Forms/Textarea Right-to-Left 1`] = `
-
-
-`;

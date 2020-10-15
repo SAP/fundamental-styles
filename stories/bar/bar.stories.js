@@ -79,48 +79,6 @@ export const Default = () => `
         </div>
     </div>
 </div>
-<br><br>
-<div><b>RTL Support</b></div>
-<br>  
-<div class="fd-bar" dir="rtl">
-    <div class="fd-bar__left">
-        <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent">
-                <i class="sap-icon--navigation-right-arrow"></i>
-            </button>
-        </div>
-        <div class="fd-bar__element">
-          <span aria-label="text">TEXT</span>
-        </div>
-    </div>
-    <div class="fd-bar__middle">
-        <div class="fd-bar__element">
-            <div class="fd-segmented-button" role="group" aria-label="Group label">
-                <button aria-label="button" class="fd-button fd-button--compact" aria-pressed="true">
-                    <i class="sap-icon--email"></i>
-                </button>
-                <button aria-label="button" class="fd-button fd-button--compact">
-                    <i class="sap-icon--iphone"></i>
-                </button>
-                <button aria-label="button" class="fd-button fd-button--compact">
-                    <i class="sap-icon--notification-2"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="fd-bar__right">
-        <div class="fd-bar__element">
-            <span class="fd-image--s" aria-label="Image label"
-                style="background-image: url('https://placeimg.com/400/400/nature');">
-            </span>
-        </div>
-        <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent">
-                <i class="sap-icon--grid"></i>
-            </button>
-        </div>
-    </div>
-</div>
 `;
 
 Default.parameters = {
@@ -284,55 +242,6 @@ export const Header = () => `
         </div>
     </div>
 </div>
-<br><br>
-<div><b>RTL Support</b></div>
-<br> 
-<div class="fd-bar fd-bar--header" dir="rtl">
-    <div class="fd-bar__left">
-        <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent">
-                <i class="sap-icon--navigation-right-arrow"></i>
-            </button>
-        </div>
-        <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent">
-                <i class="sap-icon--home"></i>
-            </button>
-        </div>
-        <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent">
-                <i class="sap-icon--account"></i>
-            </button>
-        </div>
-    </div>
-    <div class="fd-bar__middle">
-        <div class="fd-bar__element">
-            <div class="fd-segmented-button" role="group" aria-label="Group label">
-                <button aria-label="button" class="fd-button fd-button--compact" aria-pressed="true">
-                    <i class="sap-icon--email"></i>
-                </button>
-                <button aria-label="button" class="fd-button fd-button--compact">
-                    <i class="sap-icon--iphone"></i>
-                </button>
-                <button aria-label="button" class="fd-button fd-button--compact">
-                    <i class="sap-icon--notification-2"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="fd-bar__right">
-        <div class="fd-bar__element">
-            <span class="fd-image--s" aria-label="Image label"
-                style="background-image: url('https://placeimg.com/400/400/nature');">
-            </span>
-        </div>
-        <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent">
-                <i class="sap-icon--grid"></i>
-            </button>
-        </div>
-    </div>
-</div>
 `;
 
 Header.parameters = {
@@ -401,35 +310,6 @@ export const Subheader = () => `
     <div class="fd-bar__middle">
         <div class="fd-bar__element fd-bar__element--full-width">
             <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="" name="" value="1234568910" aria-label="input">
-        </div>
-    </div>
-</div>
-<br><br>
-<div><b>RTL Support</b></div>
-<br>
-<div class="fd-bar fd-bar--subheader" dir="rtl">
-    <div class="fd-bar__left">
-        <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
-                <i class="sap-icon--navigation-right-arrow"></i>
-            </button>
-        </div>
-        <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
-                <i class="sap-icon--home"></i>
-            </button>
-        </div>
-    </div>
-    <div class="fd-bar__right">
-        <div class="fd-bar__element">
-            <span class="fd-image--s" aria-label="Image label"
-                style="background-image: url('https://placeimg.com/400/400/nature');">
-            </span>
-        </div>
-        <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--compact fd-button--transparent">
-                <i class="sap-icon--grid"></i>
-            </button>
         </div>
     </div>
 </div>
@@ -534,19 +414,6 @@ export const Footer = () => `
         </div>
     </div>
 </div>
-<br><br>
-<div><b>RTL Support</b></div>
-<br>
-<div class="fd-bar fd-bar--footer" dir="rtl">
-    <div class="fd-bar__right">
-        <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
-        </div>
-        <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
-        </div>
-    </div>
-</div>
 `;
 
 Footer.parameters = {
@@ -582,21 +449,6 @@ export const FloatingFooter = () => `
             </div>
             <div class="fd-bar__element">
                 <button aria-label="button" class="fd-button fd-button--transparent">Cancel</button>
-            </div>
-        </div>
-    </div>
-</div>
-<br><br>
-<div style="margin-bottom: 2rem;"><b>RTL Support</b></div>
-<br>
-<div style="position: relative;">
-    <div class="fd-bar fd-bar--floating-footer" dir="rtl">
-        <div class="fd-bar__right">
-            <div class="fd-bar__element">
-                <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
-            </div>
-            <div class="fd-bar__element">
-                <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
             </div>
         </div>
     </div>
