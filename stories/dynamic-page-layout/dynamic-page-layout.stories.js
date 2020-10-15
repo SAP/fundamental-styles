@@ -503,9 +503,30 @@ export const mobile = () => `
             </div>
         </footer>
     </section>
+</div>
+`;
 
-    <br /><br />
+mobile.storyName = 'Mobile';
+mobile.parameters = {
+    docs: {
+        storyDescription: `The dynamic page displays on mobile screens with the S size. To optimize dynamic page for mobile, add these modifier classes to the following elements:
+        
+| Element | Modifier class |
+| ----------------: | :------------ |
+| Title Area | \`fd-dynamic-page__title-area--sm\` |
+| Breadcrumb | \`fd-dynamic-page__breadcrumb--sm\` |
+| Header | \`fd-dynamic-page__collapsible-header--sm\` |
+| Tabs | \`fd-dynamic-page__tabs--sm\` |
+| Content | \`fd-dynamic-page__content--sm\` |
+| Summary line (optional) | \`fd-dynamic-page__summarized-title-area--sm\` |
+ 
+Wrap the breadcrumbs and close action in \`fd-dynamic-page__breadcrumb-container\`. The toolbar overflow actions can be directly used; there is no need to wrap it with \`fd-dynamic-page__toolbar-container\` or \`fd-dynamic-page__actions-container\`.
+Use \`fd-dynamic-page__title-content-toolbar\` for the title content when it is used in an overflow toolbar.`
+    }
+};
 
+export const mobileCollapsed = () => `
+<div class="mobile-container">
     <section class="fd-dynamic-page" aria-label="Dynamic Page Mobile Collapsed Example">
         <header class="fd-dynamic-page__header">
             <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--sm fd-dynamic-page__title-area--collapsed" tabindex="0">
@@ -635,9 +656,13 @@ export const mobile = () => `
             </div>
         </footer>
     </section>
+</div>
+`;
 
-    <br /><br />
+mobileCollapsed.storyName = 'Collapsed Header in Mobile';
 
+export const summaryLine = () => `
+<div class="mobile-container">
     <section class="fd-dynamic-page" aria-label="Dynamic Page Mobile Summary Line Example">
         <header class="fd-dynamic-page__header">
             <div class="fd-dynamic-page__summarized-title-area fd-dynamic-page__summarized-title-area--sm fd-dynamic-page__summarized-title-area--no-shadow" tabindex="0">
@@ -741,36 +766,17 @@ export const mobile = () => `
         </footer>
     </section>
 </div>
-<br /><br />
 `;
 
-mobile.storyName = 'Mobile';
-mobile.parameters = {
+summaryLine.storyName = 'Summary Line in Mobile';
+summaryLine.parameters = {
     docs: {
-        storyDescription: `The dynamic page displays on mobile screens with the S size. To optimize dynamic page for mobile, add these modifier classes to the following elements:
-        
-| Element | Modifier class |
-| ----------------: | :------------ |
-| Title Area | \`fd-dynamic-page__title-area--sm\` |
-| Breadcrumb | \`fd-dynamic-page__breadcrumb--sm\` |
-| Header | \`fd-dynamic-page__collapsible-header--sm\` |
-| Tabs | \`fd-dynamic-page__tabs--sm\` |
-| Content | \`fd-dynamic-page__content--sm\` |
-| Summary line (optional) | \`fd-dynamic-page__summarized-title-area--sm\` |
- 
-Wrap the breadcrumbs and close action in \`fd-dynamic-page__breadcrumb-container\`. The toolbar overflow actions can be directly used; there is no need to wrap it with \`fd-dynamic-page__toolbar-container\` or \`fd-dynamic-page__actions-container\`.
-Use \`fd-dynamic-page__title-content-toolbar\` for the title content when it is used in an overflow toolbar.
-
-It is recommended to add a summary line insead of the expand/collapse header feature so users can better focus on the page content. To display a summary line, 
-add \`fd-dynamic-page__summarized-title\` in the \`fd-dynamic-page__summarized-title-area\` element.`
+        storyDescription: `It is recommended to add a summary line insead of the expand/collapse header feature so users can better focus on the page content. To display a summary line, 
+        add \`fd-dynamic-page__summarized-title\` in the \`fd-dynamic-page__summarized-title-area\` element.`
     }
 };
 
 export const expandable = () => `
-    <hr />
-    <h2 class="fd-title fd-title--h5"><b>1:  Header with both collapse and pin buttons, expanded by default. </b></h2>
-    <hr />
-    <br /><br />    
     <section class="fd-dynamic-page" aria-label="Dynamic Page Expandable Example">
         <header class="fd-dynamic-page__header">
             <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl" tabindex="0">
@@ -841,13 +847,17 @@ export const expandable = () => `
             dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
         </div>
     </section>
-    <br /><br />
-    <br /><br />
+`;
 
-    <hr />
-    <h2 class="fd-title fd-title--h5"><b>2: Collapsed Header with both expand and pin buttons. </b></h2>
-    <hr />
-    <br /><br />
+expandable.storyName = 'Expanded Header';
+expandable.parameters = {
+    docs: {
+        storyDescription: `As demonstrated earlier, the dynamic page header can be either displayed or hidden with the expand/collapse buttons. Users can select the pin button to keep the header displayed (enabling the sticky feature).
+        To collapse the dynamic page, add the \`--collapsed\` modifier class to the title area and title elements.`
+    }
+};
+
+export const collapsedHeader = () => `
     <section class="fd-dynamic-page" aria-label="Dynamic Page Collapsed Example">
         <header class="fd-dynamic-page__header">
             <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl fd-dynamic-page__title-area--collapsed" tabindex="0">
@@ -918,13 +928,11 @@ export const expandable = () => `
             dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
         </div>
     </section>
-    <br /><br />
-    <br /><br />
-    <hr />
-    <h2 class="fd-title fd-title--h5"><b>3: The header can only be expanded/collapsed, not pinned.</b></h2>
-    <hr />
-    <br /><br />
+`;
 
+collapsedHeader.storyName = 'Collapsed Header';
+
+export const onlyCollapse = () => `
     <section class="fd-dynamic-page" aria-label="Dynamic Page Pinnable Example">
         <header class="fd-dynamic-page__header">
             <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl" tabindex="0">
@@ -991,148 +999,6 @@ export const expandable = () => `
             dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
         </div>
     </section>
-    <br /><br />
 `;
 
-expandable.storyName = 'Expandable';
-expandable.parameters = {
-    docs: {
-        storyDescription: `As demonstrated earlier, the dynamic page header can be either displayed or hidden with the expand/collapse buttons. Users can select the pin button to keep the header displayed (enabling the sticky feature). 
-        To collapse the dynamic page, add the \`--collapsed\` modifier class to the title area and title elements.`
-    }
-};
-
-export const rtl = () => `
-    <div dir="rtl">
-        <section class="fd-dynamic-page" aria-label="Dynamic Page RTL Example">
-            <header class="fd-dynamic-page__header">
-                <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl" tabindex="0">
-                    <div class="fd-dynamic-page__main-container">
-                        <div class="fd-dynamic-page__breadcrumb-title-container">
-                            <nav aria-label="Breadcrumbs">
-                                <ul class="fd-dynamic-page__breadcrumb fd-breadcrumb">
-                                    <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
-                                    <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Shoes</a></li>
-                                    <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
-                                </ul>
-                            </nav>
-                            <div class="fd-dynamic-page__title-container">
-                                <h1 class="fd-title fd-dynamic-page__title"> Balenciaga Tripple S Trainers </h1>
-                                <div class="fd-dynamic-page__title-content"> Some RANDOM things </div>
-                            </div>
-                        </div>
-                        <div class="fd-dynamic-page__actions-container">
-                            <div class="fd-dynamic-page__toolbar-container">
-                                <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                    <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
-                                    <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
-                                    <span class="fd-toolbar__separator"></span>
-                                </div>
-                                <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                    <button class="fd-button fd-button--transparent" aria-label="Resize">
-                                        <i class="sap-icon--resize"></i>
-                                    </button>
-                                    <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
-                                        <i class="sap-icon--exitfullscreen"></i>
-                                    </button>
-                                    <button class="fd-button fd-button--transparent" aria-label="Close">
-                                        <i class="sap-icon--decline"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="fd-dynamic-page__subtitle"> Oversized multimaterial sneakers with quilted effect </div>
-                </div>
-                <div class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--xl" role="region" id="fddplhvc7" aria-label="RTL Header">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
-                    delectus necessitatibus incidunt numquam asperiores tenetur iure. 
-                    Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
-                </div>
-                <div class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow">
-                    <div class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"></div>
-                    <div role="toolbar" aria-label="Header actions" class="fd-dynamic-page__collapsible-header-visibility-container--button-group">
-                        <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
-                                aria-label="See More" 
-                                aria-expanded="true" 
-                                aria-haspopup="true" 
-                                aria-controls="fddplhvc7">
-                                <i class="sap-icon--slim-arrow-up"></i>
-                        </button>
-                        <button class="fd-dynamic-page__pin-button fd-button fd-button--compact" 
-                                aria-label="Pin this">
-                                <i class="sap-icon--pushpin-off"></i>
-                        </button>
-                    </div>
-                    <div class="fd-dynamic-page__collapsible-header-visibility-container--right-gradient"></div>
-                </div>
-                <div class="fd-dynamic-page__tabs--overflow">
-                    <ul class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--xl fd-dynamic-page__tabs--add-shadow" role="tablist">
-                        <li role="listitem" class="fd-tabs__item">
-                            <a class="fd-tabs__link" aria-controls="fuCwV555" href="#fuCwV555" role="tab">
-                                <span class="fd-tabs__tag">
-                                    Link
-                                </span>
-                            </a>
-                        </li>
-                        <li role="listitem" class="fd-tabs__item">
-                            <a class="fd-tabs__link" aria-controls="AiWfz164" aria-selected="true" href="#AiWfz164" role="tab">
-                                <span class="fd-tabs__tag">
-                                    Selected
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </header>
-            <div class="fd-dynamic-page__content fd-dynamic-page__content--xl">
-                <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV555" role="tabpanel">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
-                    eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
-                    dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
-                </div>
-                <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz164" role="tabpanel" >
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
-                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
-                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
-                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
-                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
-                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
-                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
-                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
-                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
-                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
-                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                </div>
-            </div>
-            <footer class="fd-bar fd-bar--floating-footer" style="position:relative">
-                <div role="toolbar" aria-label="Finalizing actions" class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
-                    </div>
-                    <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
-                    </div>
-                </div>
-            </footer>
-        </section>
-    </div>
-    <br /><br />
-`;
-
-rtl.storyName = 'RTL';
-rtl.parameters = {
-    docs: {
-        storyDescription: 'The dynamic page is displayed from right to left on the screen so that it may be used internationally.'
-    }
-};
+onlyCollapse.storyName = 'Only Expand/Collapse';
