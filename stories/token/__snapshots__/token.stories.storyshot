@@ -899,11 +899,6 @@ exports[`Storyshots Components/Token Read Only Token 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Token Rtl 1`] = `
-
-
-`;
-
 exports[`Storyshots Components/Token Scrollable Tokenizer 1`] = `
 
 

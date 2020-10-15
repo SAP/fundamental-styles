@@ -469,11 +469,6 @@ exports[`Storyshots Components/Forms/Checkbox Mobile 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Forms/Checkbox RTL 1`] = `
-
-
-`;
-
 exports[`Storyshots Components/Forms/Checkbox States 1`] = `
 <section>
   

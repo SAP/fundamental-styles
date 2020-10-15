@@ -1,0 +1,98 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-dynamic-side;
+
+.#{$block} {
+  $main-width-screen-sm: 100%;
+  $main-width-screen-md: 66.666%;
+  $main-width-screen-xl: 75%;
+
+  @mixin fd-dynamic-side-side() {
+    .#{$block}__side {
+      @content;
+    }
+  }
+
+  @mixin fd-dynamic-side-main() {
+    .#{$block}__main {
+      @content;
+    }
+  }
+
+  @include fd-reset();
+  @include fd-flex();
+
+  width: 100%;
+
+  @include fd-dynamic-side-main () {
+    @include fd-reset();
+
+    width: $main-width-screen-xl;
+  }
+
+  @include fd-dynamic-side-side () {
+    @include fd-reset();
+
+    flex: 1 1 0;
+  }
+
+  &--sm {
+    @include fd-dynamic-side-main () {
+      width: $main-width-screen-sm;
+    }
+
+    @include fd-dynamic-side-side () {
+      display: none;
+    }
+  }
+
+  &--md {
+    @include fd-dynamic-side-main () {
+      width: $main-width-screen-md;
+    }
+
+    @include fd-dynamic-side-side () {
+      display: block;
+    }
+  }
+
+  &--xl {
+    @include fd-dynamic-side-main () {
+      width: $main-width-screen-xl;
+    }
+  }
+
+  &--equal-split {
+    flex-direction: row;
+
+    @mixin fd-dynamic-side-equal() {
+      flex: 1 1 50%;
+      width: 50%;
+
+      @content;
+    }
+
+    @include fd-dynamic-side-main () {
+      @include fd-dynamic-side-equal();
+    }
+
+    @include fd-dynamic-side-side () {
+      @include fd-dynamic-side-equal();
+    }
+  }
+
+  &--below {
+    flex-direction: column;
+
+    @include fd-dynamic-side-main () {
+      width: 100%;
+    }
+
+    @include fd-dynamic-side-side () {
+      display: block;
+      width: 100%;
+      flex: none;
+    }
+  }
+}

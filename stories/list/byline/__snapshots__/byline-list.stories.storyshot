@@ -15,11 +15,6 @@ exports[`Storyshots Components/List/Byline Navigation indicator 1`] = `
 
 `;
 
-exports[`Storyshots Components/List/Byline Rtl 1`] = `
-
-
-`;
-
 exports[`Storyshots Components/List/Byline Selection 1`] = `
 <section>
   

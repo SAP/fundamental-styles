@@ -611,11 +611,6 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Message Box Rtl 1`] = `
-
-
-`;
-
 exports[`Storyshots Components/Message Box Structure 1`] = `
 
 

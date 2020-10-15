@@ -30,11 +30,6 @@ exports[`Storyshots Components/Feed Input No thumbnail 1`] = `
     
 `;
 
-exports[`Storyshots Components/Feed Input RTL 1`] = `
-
-    
-`;
-
 exports[`Storyshots Components/Feed Input With text 1`] = `
 
     

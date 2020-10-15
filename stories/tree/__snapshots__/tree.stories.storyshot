@@ -1,10 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Tree RTL 1`] = `
-
-
-`;
-
 exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
 <section>
   

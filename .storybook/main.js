@@ -4,7 +4,20 @@ const { exec } = require("child_process");
 const { merge } = require('webpack-merge');
 
 const maxAssetSize = 1024 * 1024;
-const includedStories = process.env.STORYBOOK_ENV === 'docs' ? '(stories)' : '(stories|visual)';
+
+const storiesToInclude = () => {
+  const mode = process.env.STORYBOOK_ENV;
+  switch(mode){
+    case 'docs':
+      return '(stories)';
+    case 'chromatic':
+      return '(visual)';
+    default:
+      return '(stories|visual)';
+  }
+}
+
+const includedStories = storiesToInclude();
 
 module.exports = {
   stories: ['../stories/docs/introduction.stories.mdx', `../stories/**/*.@${includedStories}.@(js|mdx)`],
@@ -17,6 +30,7 @@ module.exports = {
     "@storybook/addon-cssresources/register",
     "@storybook/addon-viewport/register",
     '@storybook/addon-docs',
+    '@storybook/addon-toolbars',
   ],
   webpackFinal: async (config) => {
     config.module.rules.push({
