@@ -3,7 +3,7 @@ import { withCssResources } from "@storybook/addon-cssresources";
 import { DocsContainer } from '@storybook/addon-docs/blocks';
 import DocsPage from './custom/components/DocsPage';
 import { makeDecorator } from '@storybook/addons';
-import prettify from 'html-prettify';
+import prettify from 'pretty';
 
 export const parameters = {
   options: {
@@ -122,7 +122,7 @@ const withThemeProvider = makeDecorator({
     toRemove.forEach(item => {
       item.parentNode.removeChild(item);
     })
-    document.head.append(styleLinkTag(`theming-base-content/content/Base/baseLib/${context?.globals?.theme}/css_variables.css`));
+    document.head.appendChild(styleLinkTag(`theming-base-content/content/Base/baseLib/${context?.globals?.theme}/css_variables.css`));
 
     return storyFn(context);
   }
