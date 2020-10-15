@@ -123,7 +123,8 @@ $handle-hit-area-mobile-dimensions: 2.75rem;
     }
 
     &:focus {
-      outline: none;
+      outline: 1px dotted var(--sapButton_Hover_BorderColor);
+      outline-offset: 0.0625rem;
     }
 
     @include fd-hover() {
