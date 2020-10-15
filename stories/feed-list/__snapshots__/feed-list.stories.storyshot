@@ -1,51 +1,56 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Feed List Actions 1`] = `
+exports[`Storyshots Components/Feed List and Item Actions 1`] = `
 
     
 `;
 
-exports[`Storyshots Components/Feed List Group 1`] = `
+exports[`Storyshots Components/Feed List and Item Borderless group 1`] = `
 
     
 `;
 
-exports[`Storyshots Components/Feed List Linked 1`] = `
+exports[`Storyshots Components/Feed List and Item Group 1`] = `
 
     
 `;
 
-exports[`Storyshots Components/Feed List Mobile 1`] = `
-
-
-`;
-
-exports[`Storyshots Components/Feed List No image 1`] = `
+exports[`Storyshots Components/Feed List and Item Linked 1`] = `
 
     
 `;
 
-exports[`Storyshots Components/Feed List Placeholder image 1`] = `
+exports[`Storyshots Components/Feed List and Item Mobile 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Feed List and Item No image 1`] = `
 
     
 `;
 
-exports[`Storyshots Components/Feed List RTL 1`] = `
-
-
-`;
-
-exports[`Storyshots Components/Feed List Show less 1`] = `
+exports[`Storyshots Components/Feed List and Item Placeholder image 1`] = `
 
     
 `;
 
-exports[`Storyshots Components/Feed List Show more 1`] = `
+exports[`Storyshots Components/Feed List and Item RTL 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Feed List and Item Show less 1`] = `
 
     
 `;
 
-exports[`Storyshots Components/Feed List Standard 1`] = `
+exports[`Storyshots Components/Feed List and Item Show more 1`] = `
+
+    
+`;
+
+exports[`Storyshots Components/Feed List and Item Standard 1`] = `
 
     
 `;
