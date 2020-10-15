@@ -240,10 +240,6 @@ $block: #{$fd-namespace}-dynamic-page;
       margin-right: auto;
     }
 
-    &--sm {
-      justify-content: flex-start;
-    }
-
     &--md {
       order: 2;
       padding: 0;
@@ -253,10 +249,23 @@ $block: #{$fd-namespace}-dynamic-page;
   .#{$fd-namespace}-toolbar.#{$block}__toolbar-actions {
     padding: 0;
     order: 2;
+    flex: 1;
     justify-content: flex-end;
 
     &--md {
       order: 1;
+    }
+  }
+
+  .#{$fd-namespace}-toolbar.#{$block}__title-content-toolbar {
+    padding: 0 0 0 1rem;
+    flex: 1;
+    justify-content: flex-start;
+
+    @include fd-rtl() {
+      padding: 0 1rem 0 0;
+      margin-left: 0;
+      margin-right: auto;
     }
   }
 

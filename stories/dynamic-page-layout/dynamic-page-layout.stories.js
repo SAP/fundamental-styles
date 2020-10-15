@@ -97,13 +97,13 @@ export const desktop = () => `
                                 <span class="fd-toolbar__separator"></span>
                                 </div>
                             <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                <button class="fd-button fd-button--transparent" aria-label="Survey">
+                                <button class="fd-button fd-button--transparent" aria-label="Resize">
                                     <i class="sap-icon--resize"></i>
                                 </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Pool">
+                                <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
                                     <i class="sap-icon--exitfullscreen"></i>
                                 </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Chart">
+                                <button class="fd-button fd-button--transparent" aria-label="Close">
                                     <i class="sap-icon--decline"></i>
                                 </button>
                             </div>
@@ -250,14 +250,14 @@ export const tablet = () => `
                                 <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
                             </div>
                             <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar-actions fd-dynamic-page__toolbar-actions--md fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                <button class="fd-button fd-button--transparent" aria-label="Survey">
-                                    <i class="sap-icon--survey"></i>
+                                <button class="fd-button fd-button--transparent" aria-label="Resize">
+                                    <i class="sap-icon--resize"></i>
                                 </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Pool">
-                                    <i class="sap-icon--pool"></i>
+                                <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
+                                    <i class="sap-icon--exitfullscreen"></i>
                                 </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Chart">
-                                    <i class="sap-icon--pie-chart"></i>
+                                <button class="fd-button fd-button--transparent" aria-label="Close">
+                                    <i class="sap-icon--decline"></i>
                                 </button>
                             </div>
                         </div>
@@ -387,7 +387,7 @@ export const mobile = () => `
                                     <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
                                 </ul>
                             </nav>
-                            <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar-actions fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                            <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                 <button class="fd-button fd-button--transparent" aria-label="Close">
                                     <i class="sap-icon--decline"></i>
                                 </button>
@@ -395,7 +395,7 @@ export const mobile = () => `
                         </div>
                         <div class="fd-dynamic-page__title-container">
                             <h1 class="fd-title fd-dynamic-page__title"> Balenciaga Tripple S Trainers </h1>
-                            <div role="toolbar" aria-label="Header Content" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                            <div role="toolbar" aria-label="Header Content" class="fd-dynamic-page__title-content-toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                 <div class="fd-popover fd-toolbar__overflow">
                                     <div class="fd-popover__control">
                                         <button class="fd-button fd-button--transparent"
@@ -415,7 +415,7 @@ export const mobile = () => `
                                     </div>
                                 </div>
                             </div>
-                            <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                            <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                 <div class="fd-popover fd-toolbar__overflow">
                                     <div class="fd-popover__control">
                                         <button class="fd-button fd-button--transparent"
@@ -519,7 +519,7 @@ export const mobile = () => `
                                     <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
                                 </ul>
                             </nav>
-                            <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                            <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                     <button class="fd-button fd-button--transparent" aria-label="Close">
                                         <i class="sap-icon--decline"></i>
                                     </button>
@@ -527,7 +527,7 @@ export const mobile = () => `
                         </div>
                         <div class="fd-dynamic-page__title-container">
                             <h1 class="fd-title fd-dynamic-page__title"> Balenciaga Tripple S Trainers </h1>
-                            <div role="toolbar" aria-label="Header Content" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                            <div role="toolbar" aria-label="Header Content" class="fd-dynamic-page__title-content-toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                 <div class="fd-popover fd-toolbar__overflow">
                                     <div class="fd-popover__control">
                                         <button class="fd-button fd-button--transparent"
@@ -547,7 +547,7 @@ export const mobile = () => `
                                     </div>
                                 </div>
                             </div>
-                            <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear  fd-toolbar--cozy fd-toolbar--transparent">
+                            <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear  fd-toolbar--cozy fd-toolbar--transparent">
                                 <div class="fd-popover fd-toolbar__overflow">
                                     <div class="fd-popover__control">
                                         <button class="fd-button fd-button--transparent"
@@ -754,12 +754,12 @@ mobile.parameters = {
 | Title Area | \`fd-dynamic-page__title-area--sm\` |
 | Breadcrumb | \`fd-dynamic-page__breadcrumb--sm\` |
 | Header | \`fd-dynamic-page__collapsible-header--sm\` |
-| Toolbar | \`fd-dynamic-page__toolbar--sm\` |
 | Tabs | \`fd-dynamic-page__tabs--sm\` |
 | Content | \`fd-dynamic-page__content--sm\` |
 | Summary line (optional) | \`fd-dynamic-page__summarized-title-area--sm\` |
  
 Wrap the breadcrumbs and close action in \`fd-dynamic-page__breadcrumb-container\`. The toolbar overflow actions can be directly used; there is no need to wrap it with \`fd-dynamic-page__toolbar-container\` or \`fd-dynamic-page__actions-container\`.
+Use \`fd-dynamic-page__title-content-toolbar\` for the title content when it is used in an overflow toolbar.
 
 It is recommended to add a summary line insead of the expand/collapse header feature so users can better focus on the page content. To display a summary line, 
 add \`fd-dynamic-page__summarized-title\` in the \`fd-dynamic-page__summarized-title-area\` element.`
@@ -796,13 +796,13 @@ export const expandable = () => `
                                 <span class="fd-toolbar__separator"></span>
                             </div>
                             <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                    <button class="fd-button fd-button--transparent" aria-label="Survey">
+                                    <button class="fd-button fd-button--transparent" aria-label="Resize">
                                         <i class="sap-icon--resize"></i>
                                     </button>
-                                    <button class="fd-button fd-button--transparent" aria-label="Pool">
+                                    <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
                                         <i class="sap-icon--exitfullscreen"></i>
                                     </button>
-                                    <button class="fd-button fd-button--transparent" aria-label="Chart">
+                                    <button class="fd-button fd-button--transparent" aria-label="Close">
                                         <i class="sap-icon--decline"></i>
                                     </button>
                             </div>
@@ -873,13 +873,13 @@ export const expandable = () => `
                                 <span class="fd-toolbar__separator"></span>
                             </div>
                             <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                <button class="fd-button fd-button--transparent" aria-label="Survey">
+                                <button class="fd-button fd-button--transparent" aria-label="Resize">
                                     <i class="sap-icon--resize"></i>
                                 </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Pool">
+                                <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
                                     <i class="sap-icon--exitfullscreen"></i>
                                 </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Chart">
+                                <button class="fd-button fd-button--transparent" aria-label="Close">
                                     <i class="sap-icon--decline"></i>
                                 </button>
                             </div>
@@ -950,13 +950,13 @@ export const expandable = () => `
                                 <span class="fd-toolbar__separator"></span>
                             </div>
                             <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                <button class="fd-button fd-button--transparent" aria-label="Survey">
+                                <button class="fd-button fd-button--transparent" aria-label="Resize">
                                     <i class="sap-icon--resize"></i>
                                 </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Pool">
+                                <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
                                     <i class="sap-icon--exitfullscreen"></i>
                                 </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Chart">
+                                <button class="fd-button fd-button--transparent" aria-label="Close">
                                     <i class="sap-icon--decline"></i>
                                 </button>
                             </div>
@@ -1029,13 +1029,13 @@ export const rtl = () => `
                                     <span class="fd-toolbar__separator"></span>
                                 </div>
                                 <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                    <button class="fd-button fd-button--transparent" aria-label="Survey">
+                                    <button class="fd-button fd-button--transparent" aria-label="Resize">
                                         <i class="sap-icon--resize"></i>
                                     </button>
-                                    <button class="fd-button fd-button--transparent" aria-label="Pool">
+                                    <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
                                         <i class="sap-icon--exitfullscreen"></i>
                                     </button>
-                                    <button class="fd-button fd-button--transparent" aria-label="Chart">
+                                    <button class="fd-button fd-button--transparent" aria-label="Close">
                                         <i class="sap-icon--decline"></i>
                                     </button>
                                 </div>

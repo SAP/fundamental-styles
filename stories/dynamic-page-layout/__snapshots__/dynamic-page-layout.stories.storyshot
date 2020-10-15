@@ -159,7 +159,7 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
                 
                                 
                 <button
-                  aria-label="Survey"
+                  aria-label="Resize"
                   class="fd-button fd-button--transparent"
                 >
                   
@@ -173,7 +173,7 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
                 
                                 
                 <button
-                  aria-label="Pool"
+                  aria-label="Exit fullscreen"
                   class="fd-button fd-button--transparent"
                 >
                   
@@ -187,7 +187,7 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
                 
                                 
                 <button
-                  aria-label="Chart"
+                  aria-label="Close"
                   class="fd-button fd-button--transparent"
                 >
                   
@@ -667,7 +667,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
                 
                                     
                 <button
-                  aria-label="Survey"
+                  aria-label="Resize"
                   class="fd-button fd-button--transparent"
                 >
                   
@@ -681,7 +681,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
                 
                                     
                 <button
-                  aria-label="Pool"
+                  aria-label="Exit fullscreen"
                   class="fd-button fd-button--transparent"
                 >
                   
@@ -695,7 +695,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
                 
                                     
                 <button
-                  aria-label="Chart"
+                  aria-label="Close"
                   class="fd-button fd-button--transparent"
                 >
                   
@@ -1005,7 +1005,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
                 
                                 
                 <button
-                  aria-label="Survey"
+                  aria-label="Resize"
                   class="fd-button fd-button--transparent"
                 >
                   
@@ -1019,7 +1019,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
                 
                                 
                 <button
-                  aria-label="Pool"
+                  aria-label="Exit fullscreen"
                   class="fd-button fd-button--transparent"
                 >
                   
@@ -1033,7 +1033,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
                 
                                 
                 <button
-                  aria-label="Chart"
+                  aria-label="Close"
                   class="fd-button fd-button--transparent"
                 >
                   
@@ -1343,7 +1343,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
                 
                                 
                 <button
-                  aria-label="Survey"
+                  aria-label="Resize"
                   class="fd-button fd-button--transparent"
                 >
                   
@@ -1357,7 +1357,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
                 
                                 
                 <button
-                  aria-label="Pool"
+                  aria-label="Exit fullscreen"
                   class="fd-button fd-button--transparent"
                 >
                   
@@ -1371,7 +1371,7 @@ exports[`Storyshots Components/Dynamic Page Layout Expandable 1`] = `
                 
                                 
                 <button
-                  aria-label="Chart"
+                  aria-label="Close"
                   class="fd-button fd-button--transparent"
                 >
                   
@@ -1590,7 +1590,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                             
                 <div
                   aria-label="Close action"
-                  class="fd-dynamic-page__toolbar-actions fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                  class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
                   role="toolbar"
                 >
                   
@@ -1629,7 +1629,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                             
                 <div
                   aria-label="Header Content"
-                  class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                  class="fd-dynamic-page__title-content-toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
                   role="toolbar"
                 >
                   
@@ -1691,7 +1691,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                             
                 <div
                   aria-label="Product actions"
-                  class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                  class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
                   role="toolbar"
                 >
                   
@@ -2109,7 +2109,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                             
                 <div
                   aria-label="Close action"
-                  class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                  class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
                   role="toolbar"
                 >
                   
@@ -2148,7 +2148,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                             
                 <div
                   aria-label="Header Content"
-                  class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                  class="fd-dynamic-page__title-content-toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
                   role="toolbar"
                 >
                   
@@ -2210,7 +2210,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                             
                 <div
                   aria-label="Product actions"
-                  class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear  fd-toolbar--cozy fd-toolbar--transparent"
+                  class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear  fd-toolbar--cozy fd-toolbar--transparent"
                   role="toolbar"
                 >
                   
@@ -3166,7 +3166,7 @@ exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
                   
                                     
                   <button
-                    aria-label="Survey"
+                    aria-label="Resize"
                     class="fd-button fd-button--transparent"
                   >
                     
@@ -3180,7 +3180,7 @@ exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
                   
                                     
                   <button
-                    aria-label="Pool"
+                    aria-label="Exit fullscreen"
                     class="fd-button fd-button--transparent"
                   >
                     
@@ -3194,7 +3194,7 @@ exports[`Storyshots Components/Dynamic Page Layout RTL 1`] = `
                   
                                     
                   <button
-                    aria-label="Chart"
+                    aria-label="Close"
                     class="fd-button fd-button--transparent"
                   >
                     
@@ -3663,13 +3663,13 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
                 
                                 
                 <button
-                  aria-label="Survey"
+                  aria-label="Resize"
                   class="fd-button fd-button--transparent"
                 >
                   
                                     
                   <i
-                    class="sap-icon--survey"
+                    class="sap-icon--resize"
                   />
                   
                                 
@@ -3677,13 +3677,13 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
                 
                                 
                 <button
-                  aria-label="Pool"
+                  aria-label="Exit fullscreen"
                   class="fd-button fd-button--transparent"
                 >
                   
                                     
                   <i
-                    class="sap-icon--pool"
+                    class="sap-icon--exitfullscreen"
                   />
                   
                                 
@@ -3691,13 +3691,13 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
                 
                                 
                 <button
-                  aria-label="Chart"
+                  aria-label="Close"
                   class="fd-button fd-button--transparent"
                 >
                   
                                     
                   <i
-                    class="sap-icon--pie-chart"
+                    class="sap-icon--decline"
                   />
                   
                                 
