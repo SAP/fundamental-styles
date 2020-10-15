@@ -1,6 +1,7 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-feed-list;
+$link: #{$fd-namespace}-link;
 
 .#{$block} {
   $fd-feed-list-padding-start: 1rem;
@@ -39,6 +40,12 @@ $block: #{$fd-namespace}-feed-list;
     }
   }
 
+  &--no-border {
+    .#{$block}__body {
+      border-top: none;
+    }
+  }
+
   &__actions {
     @include fd-reset();
 
@@ -74,24 +81,11 @@ $block: #{$fd-namespace}-feed-list;
     font-weight: bold;
   }
 
-  &__more {
-    @include fd-reset();
-
-    text-transform: uppercase;
-    color: var(--sapNeutralTextColor);
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
   &__text {
     @include fd_reset();
 
-    &:hover {
-      .#{$block}__more {
-        color: var(--sapLinkColor);
-      }
+    .#{$link}--more {
+      text-transform: uppercase;
     }
   }
 
@@ -101,8 +95,13 @@ $block: #{$fd-namespace}-feed-list;
     display: flex;
     padding-top: 0.375rem;
 
-    &--date {
+    &--byline {
       color: var(--sapNeutralTextColor);
+
+      &:not(:last-child)::after {
+        content: '\2022';
+        padding: 0 0.25rem;
+      }
     }
   }
 

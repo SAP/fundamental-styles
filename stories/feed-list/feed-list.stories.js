@@ -1,5 +1,5 @@
 export default {
-    title: 'Components/Feed List',
+    title: 'Components/Feed List and Item',
     parameters: {
         description: `The feed list displays feed list items that individually consist of a username, a written entry and an optional image. There is also a separate byline below that can contain a time stamp or an attribute in the form of free text.
        
@@ -23,8 +23,8 @@ export default {
 };
 
 export const standard = () => `
-    <div class="fd-feed-list" aria-label="Feed List Item default example">
-        <div class="fd-feed-list__body">
+    <ul class="fd-feed-list" aria-label="Feed List Item default example">
+        <li class="fd-feed-list__body">
             <div 
                 class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
                 style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
@@ -39,11 +39,12 @@ export const standard = () => `
                     Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
                 </p>
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--date">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Reply</small>
                 </div>
             </div>
-        </div>
-    </div>
+        </li>
+    </ul>
 `;
 
 standard.storyName = 'Standard';
@@ -54,8 +55,8 @@ standard.parameters = {
 };
 
 export const placeHolderImage = () => `
-    <div class="fd-feed-list" aria-label="Feed List Item placeholder user image example">
-        <div class="fd-feed-list__body">
+    <ul class="fd-feed-list" aria-label="Feed List Item placeholder user image example">
+        <li class="fd-feed-list__body">
             <div 
                 class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb" 
                 role="img" 
@@ -71,11 +72,12 @@ export const placeHolderImage = () => `
                 </p>
                 
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--date">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Reply</small>
                 </div>
             </div>
-        </div>
-    </div>
+        </li>
+    </ul>
 `;
 
 placeHolderImage.storyName = 'Placeholder image';
@@ -86,8 +88,8 @@ placeHolderImage.parameters = {
 };
 
 export const noImage = () => `
-    <div class="fd-feed-list" aria-label="Feed List Item without user image example">
-        <div class="fd-feed-list__body">     
+    <ul class="fd-feed-list" aria-label="Feed List Item without user image example">
+        <li class="fd-feed-list__body">     
             <div class="fd-feed-list__content">
                 <p class="fd-feed-list__text">
                     <span class="fd-feed-list__name">Joe Doe: </span>
@@ -95,11 +97,12 @@ export const noImage = () => `
                 </p>
                 
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--date">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Reply</small>
                 </div>
             </div>
-        </div>
-    </div>
+        </li>
+    </ul>
 `;
 
 noImage.storyName = 'No image';
@@ -110,8 +113,8 @@ noImage.parameters = {
 };
 
 export const linked = () => `
-    <div class="fd-feed-list" aria-label="Feed List Item with user link example">
-        <div class="fd-feed-list__body">
+    <ul class="fd-feed-list" aria-label="Feed List Item with user link example">
+        <li class="fd-feed-list__body">
             <div 
                 class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list--link fd-feed-list__thumb"  
                 style="background-image: url(http://lorempixel.com/460/620/people/7/)"
@@ -123,17 +126,18 @@ export const linked = () => `
             <div class="fd-feed-list__content">
                 <p class="fd-feed-list__text">
                     <span class="fd-feed-list__name">
-                        <a href="#" class="fd-link fd-link--emphasized" tabindex="0">Joe Doe: </a> 
+                        <a href="#" class="fd-link fd-link--emphasized">Joe Doe: </a> 
                     </span>
                     Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
                 </p>
                 
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--date">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Reply</small>
                 </div>
             </div>
-        </div>
-    </div>
+        </li>
+    </ul>
 `;
 
 linked.storyName = 'Linked';
@@ -144,8 +148,8 @@ linked.parameters = {
 };
 
 export const showMore = () => `
-    <div class="fd-feed-list" aria-label="Feed List Item with show more text example">
-        <div class="fd-feed-list__body">
+    <ul class="fd-feed-list" aria-label="Feed List Item with show more text example">
+        <li class="fd-feed-list__body">
             <div 
                 class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
                 style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
@@ -158,27 +162,28 @@ export const showMore = () => `
                 <p class="fd-feed-list__text">
                     <span class="fd-feed-list__name">Joe Doe: </span>
                     <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. Morbi tempor eu elit eu consequat. Sed at lorem a ex consequat pharetra. Etiam convallis odio at vulputate venenatis. In sit amet pharetra urna. Ut nulla nisi, porta at ligula a, elementum ullamcorper lectus. Suspendisse blandit, risus nec vestibulum volutpat, nulla neque rhoncus dolor, vitae rutrum lectus neque nec ligula. Maecenas pulvinar, ligula nec fringilla volutpat, urna quam rutrum tellus, vi...
-                    <a class="fd-feed-list__more" tabindex="0">More</a>        
+                    <a class="fd-link" tabindex="0">More</a>        
                 </p>
                 
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--date">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Reply</small>
                 </div>
             </div>
-        </div>
-    </div>
+        </li>
+    </ul>
 `;
 
 showMore.storyName = 'Show more';
 showMore.parameters = {
     docs: {
-        storyDescription: 'Feed list items can display a <i>MORE</i> link that can show more text (when/if it is truncated). The link is subtly displayed in grey, and highlights when the user hovers over the feed. When hovering over the link, the text is highlighted and underlined.'
+        storyDescription: 'Feed list items can display a <i>MORE</i> link that can show more text (when/if it is truncated). When hovering over the link, the text is highlighted and underlined.'
     }
 };
 
 export const showLess = () => `
-    <div class="fd-feed-list" aria-label="Feed List Item with show less text example">
-        <div class="fd-feed-list__body">
+    <ul class="fd-feed-list" aria-label="Feed List Item with show less text example">
+        <li class="fd-feed-list__body">
             <div 
                 class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
                 style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
@@ -191,15 +196,16 @@ export const showLess = () => `
                 <p class="fd-feed-list__text">
                     <span class="fd-feed-list__name">Joe Doe: </span>
                     <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. Morbi tempor eu elit eu consequat. Sed at lorem a ex consequat pharetra. Etiam convallis odio at vulputate venenatis. In sit amet pharetra urna. Ut nulla nisi, porta at ligula a, elementum ullamcorper lectus. Suspendisse blandit, risus nec vestibulum volutpat, nulla neque rhoncus dolor, vitae rutrum lectus neque nec ligula. Maecenas pulvinar, ligula nec fringilla volutpat, urna quam rutrum tellus, vitae elementum elit est malesuada nunc. Maecenas eu risus posuere, volutpat justo in, ultricies sem
-                    <a class="fd-feed-list__more" tabindex="0">LESS</a>        
+                    <a class="fd-link fd-link--more" tabindex="0">Less</a>        
                 </p>
                 
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--date">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Reply</small>
                 </div>
             </div>
-        </div>
-    </div>
+        </li>
+    </ul>
 `;
 
 showLess.storyName = 'Show less';
@@ -210,8 +216,8 @@ showLess.parameters = {
 };
 
 export const withActions = () => `
-    <div class="fd-feed-list" aria-label="Feed List Item with popover actions example">
-        <div class="fd-feed-list__body">
+    <ul class="fd-feed-list" aria-label="Feed List Item with popover actions example">
+        <li class="fd-feed-list__body">
             <div 
                 class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
                 style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
@@ -259,11 +265,12 @@ export const withActions = () => `
                     <span>In hac habitasse platea dictumst. Fusce eu dui viverra, dictum justo in, pul aug. Praesent aliquam massa non lectus commodo, id vestibulum lectus auctor. Proin lorem quam, accumsan ac dui et, cursus ornare dui. Nunc ultricies dolor felis, in viverra mi venenatis in. Sed vel nisl a dui posuere ullamcorper. Donec posuere id massa at dictum. Suspendisse potenti.</span>
                 </p>                 
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--date">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Reply</small>
                 </div>
             </div>        
-        </div>
-    </div>
+        </li>
+    </ul>
 `;
 
 withActions.storyName = 'Actions';
@@ -274,8 +281,8 @@ withActions.parameters = {
 };
 
 export const group = () => `
-    <div class="fd-feed-list fd-feed-list--group" aria-label="Feed List Item group example">
-        <div class="fd-feed-list__body">
+    <ul class="fd-feed-list fd-feed-list--group" aria-label="Feed List Item group example">
+        <li class="fd-feed-list__body">
             <div
                 class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb" 
                 role="img" 
@@ -289,12 +296,13 @@ export const group = () => `
                     <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
                 </p>
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--date">Aug 21, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Aug 21, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Reply</small>
                 </div>
             </div>
-       </div>
+       </li>
        
-        <div class="fd-feed-list__body">
+        <li class="fd-feed-list__body">
             <div 
                 class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
                 style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
@@ -309,12 +317,13 @@ export const group = () => `
                     <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
                 </p>
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--date">Aug 22, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Aug 22, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Reply</small>
                 </div>
             </div>     
-        </div>
+        </li>
         
-        <div class="fd-feed-list__body">
+        <li class="fd-feed-list__body">
             <div
                 class="fd-avatar fd-avatar--s fd-feed-list__thumb"
                 style="background-image: url(http://lorempixel.com/460/620/people/9/)" 
@@ -328,11 +337,12 @@ export const group = () => `
                     <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
                 </p>
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--date">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Reply</small>
                 </div>
             </div>
-       </div>
-    </div>
+       </li>
+    </ul>
 </div>
 `;
 
@@ -343,10 +353,83 @@ group.parameters = {
     }
 };
 
+export const borderless = () => `
+    <ul class="fd-feed-list fd-feed-list--group fd-feed-list--no-border" aria-label="Feed List Item group example">
+        <li class="fd-feed-list__body">
+            <div
+                class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb" 
+                role="img" 
+                aria-label="John Doe"
+                title="John Doe">
+                    <i class="sap-icon--person-placeholder"></i>
+            </div> 
+            <div class="fd-feed-list__content">
+                <p class="fd-feed-list__text">
+                    <span class="fd-feed-list__name">Cruz: </span>
+                    <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
+                </p>
+                <div class="fd-feed-list__footer">
+                    <small class="fd-feed-list__footer--byline">Aug 21, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Reply</small>
+                </div>
+            </div>
+       </li>
+       
+        <li class="fd-feed-list__body">
+            <div 
+                class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
+                style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
+                role="img" 
+                aria-label="John Doe"
+                title="John Doe">    
+            </div>
+         
+            <div class="fd-feed-list__content">
+                <p class="fd-feed-list__text">
+                    <span class="fd-feed-list__name">Joe Doe: </span>
+                    <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
+                </p>
+                <div class="fd-feed-list__footer">
+                    <small class="fd-feed-list__footer--byline">Aug 22, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Reply</small>
+                </div>
+            </div>     
+        </li>
+        
+        <li class="fd-feed-list__body">
+            <div
+                class="fd-avatar fd-avatar--s fd-feed-list__thumb"
+                style="background-image: url(http://lorempixel.com/460/620/people/9/)" 
+                role="img" 
+                aria-label="John Doe"
+                title="John Doe"
+            ></div> 
+            <div class="fd-feed-list__content">
+                <p class="fd-feed-list__text">
+                    <span class="fd-feed-list__name">Sanchez: </span>
+                    <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
+                </p>
+                <div class="fd-feed-list__footer">
+                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Reply</small>
+                </div>
+            </div>
+       </li>
+    </ul>
+</div>
+`;
+
+borderless.storyName = 'Borderless group';
+borderless.parameters = {
+    docs: {
+        storyDescription: 'The example below displays a feed list item without a separated border'
+    }
+};
+
 export const mobile = () => `
 <div style="width: 350px; height: 600px; position: relative">
-    <div class="fd-feed-list fd-feed-list--s" aria-label="Feed List Item small size example">
-        <div class="fd-feed-list__body">
+    <ul class="fd-feed-list fd-feed-list--s" aria-label="Feed List Item small size example">
+        <li class="fd-feed-list__body">
             <div style="display: flex; justify-content: space-between">
                 <div style="display: flex">
                 <div
@@ -359,7 +442,8 @@ export const mobile = () => `
                 <div>
                     <span class="fd-feed-list__name">Joe Doe: </span>
                     <div class="fd-feed-list__footer">
-                        <small class="fd-feed-list__footer--date">Aug 20, 2020</small>
+                        <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                        <small class="fd-feed-list__footer--byline">Reply</small>
                     </div>
                 </div>
                 
@@ -408,8 +492,8 @@ export const mobile = () => `
             </li>
         </ul>
     </div>
-        </div> 
-    </div>
+        </li> 
+    </ul>
 </div>
 `;
 
@@ -422,8 +506,8 @@ mobile.parameters = {
 
 export const rtl = () => `
 <div dir="rtl">
-    <div class="fd-feed-list" aria-label="Feed List Item with RTL direction example">
-        <div class="fd-feed-list__body">
+    <ul class="fd-feed-list" aria-label="Feed List Item with RTL direction example">
+        <li class="fd-feed-list__body">
             <div 
                 class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
                 style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
@@ -473,13 +557,14 @@ export const rtl = () => `
                 </p>
                 
                 <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--date">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                    <small class="fd-feed-list__footer--byline">Reply</small>
                 </div>
             </div>          
-        </div>
+        </li>
         
         
-    </div>
+    </ul>
 </div>
 `;
 
