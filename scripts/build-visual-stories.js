@@ -99,23 +99,31 @@ export default {
 }
 };
 
+const wrappedStory = (storyName, storyFn, direction) =>\`
+<h2> \${Case.capital(storyName)} </h2>
+<div dir="\${direction}">
+    \${storyFn()}
+</div>
+<br />
+<hr />
+<br />
+<br />\`;
+
 export const ${visualStoryName} = () => {
     let storyNames = Object.keys(stories).filter(story => story !== 'default' && story !== 'dev');
-    const divLTR = document.createElement('div');
-    divLTR.innerHTML = storyNames.map(function(item) {
-        return '<h2>' + Case.capital(item) + '</h2>' +
-        '<div>' + stories[item]() + '</div> <br /> <hr /> <br /> <br />';
+    const allVisualStories = document.createElement('div');
+    allVisualStories.innerHTML = storyNames.map(function(eachStoryName) {
+        const eachStory = stories[eachStoryName];
+
+        const eachStoryLTR = wrappedStory(eachStoryName, eachStory, 'ltr');
+
+        if (eachStory && eachStory.parameters && eachStory.parameters.skipRTLSnapshot) return eachStoryLTR;
+
+        const eachStoryRTL = wrappedStory(eachStoryName + ' (Right to Left)', eachStory, 'rtl');
+
+        return eachStoryLTR + eachStoryRTL;
     }).join('');
-    const divRTL = document.createElement('div');
-    divRTL.innerHTML = divLTR.innerHTML;
-    divRTL.setAttribute('dir', 'rtl');
-    const div = document.createElement('div');
-    div.appendChild(divLTR);
-    const headerRTL = document.createElement('h2');
-    headerRTL.innerHTML = 'Right to Left';
-    div.appendChild(headerRTL);
-    div.appendChild(divRTL);
-    return div;
+    return allVisualStories;
 };
 
 `;
