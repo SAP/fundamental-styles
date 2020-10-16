@@ -119,7 +119,7 @@ export const ${visualStoryName} = () => {
 
         if (eachStory && eachStory.parameters && eachStory.parameters.skipRTLSnapshot) return eachStoryLTR;
 
-        const eachStoryRTL = wrappedStory(eachStoryName + ' (Right to Left)', eachStory, 'rtl');
+        const eachStoryRTL = wrappedStory(Case.capital(eachStoryName) + ' (Right to Left)', eachStory, 'rtl');
 
         return eachStoryLTR + eachStoryRTL;
     }).join('');
