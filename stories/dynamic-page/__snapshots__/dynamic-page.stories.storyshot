@@ -233,73 +233,81 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
       
             
       <div
-        aria-label="Dynamic Page Desktop Header"
-        class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--xl"
-        id="fddplhvc6"
-        role="region"
-      >
-        
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
-                delectus necessitatibus incidunt numquam asperiores tenetur iure. 
-                Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
-            
-      </div>
-      
-            
-      <div
-        class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow"
+        class="fd-dynamic-page__collapsible-header-container"
       >
         
                 
         <div
-          class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"
-        />
-        
-                
-        <div
-          aria-label="Header actions"
-          class="fd-dynamic-page__collapsible-header-visibility-container--button-group"
-          role="toolbar"
+          aria-label="Dynamic Page Desktop Header"
+          class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--xl"
+          id="fddplhvc6"
+          role="region"
         >
           
-                    
-          <button
-            aria-controls="fddplhvc6"
-            aria-expanded="true"
-            aria-haspopup="true"
-            aria-label="See More"
-            class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
-          >
-            
-                            
-            <i
-              class="sap-icon--slim-arrow-up"
-            />
-            
-                    
-          </button>
-          
-                    
-          <button
-            aria-label="Pin this"
-            class="fd-dynamic-page__pin-button fd-button fd-button--compact"
-          >
-            
-                            
-            <i
-              class="sap-icon--pushpin-off"
-            />
-            
-                    
-          </button>
-          
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
+                    delectus necessitatibus incidunt numquam asperiores tenetur iure. 
+                    Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
                 
         </div>
         
                 
         <div
-          class="fd-dynamic-page__collapsible-header-visibility-container--right-gradient"
-        />
+          class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow"
+        >
+          
+                    
+          <div
+            class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"
+          />
+          
+                    
+          <div
+            aria-label="Header actions"
+            class="fd-dynamic-page__collapsible-header-visibility-container--button-group"
+            role="toolbar"
+          >
+            
+                        
+            <button
+              aria-controls="fddplhvc6"
+              aria-expanded="true"
+              aria-haspopup="true"
+              aria-label="See More"
+              class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+            >
+              
+                                
+              <i
+                class="sap-icon--slim-arrow-up"
+              />
+              
+                        
+            </button>
+            
+                        
+            <button
+              aria-label="Pin this"
+              class="fd-dynamic-page__pin-button fd-button fd-button--compact"
+            >
+              
+                                
+              <i
+                class="sap-icon--pushpin-off"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+                    
+          <div
+            class="fd-dynamic-page__collapsible-header-visibility-container--right-gradient"
+          />
+          
+                
+        </div>
         
             
       </div>
@@ -748,74 +756,82 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
             
             
       <div
-        aria-hidden="false"
-        aria-label="Tablet header"
-        class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--md"
-        id="fddplhvc5"
-        role="region"
-      >
-        
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
-                delectus necessitatibus incidunt numquam asperiores tenetur iure. 
-                Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
-            
-      </div>
-      
-            
-      <div
-        class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow"
+        class="fd-dynamic-page__collapsible-header-container"
       >
         
                 
         <div
-          class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"
-        />
-        
-                
-        <div
-          aria-label="Header actions"
-          class="fd-dynamic-page__collapsible-header-visibility-container--button-group"
-          role="toolbar"
+          aria-hidden="false"
+          aria-label="Tablet header"
+          class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--md"
+          id="fddplhvc5"
+          role="region"
         >
           
-                    
-          <button
-            aria-controls="fddplhvc5"
-            aria-expanded="true"
-            aria-haspopup="true"
-            aria-label="See More"
-            class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
-          >
-            
-                            
-            <i
-              class="sap-icon--slim-arrow-up"
-            />
-            
-                    
-          </button>
-          
-                    
-          <button
-            aria-label="Pin this"
-            class="fd-dynamic-page__pin-button fd-button fd-button--compact"
-          >
-            
-                            
-            <i
-              class="sap-icon--pushpin-off"
-            />
-            
-                    
-          </button>
-          
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
+                    delectus necessitatibus incidunt numquam asperiores tenetur iure. 
+                    Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
                 
         </div>
         
                 
         <div
-          class="fd-dynamic-page__collapsible-header-visibility-container--right-gradient"
-        />
+          class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow"
+        >
+          
+                    
+          <div
+            class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"
+          />
+          
+                    
+          <div
+            aria-label="Header actions"
+            class="fd-dynamic-page__collapsible-header-visibility-container--button-group"
+            role="toolbar"
+          >
+            
+                        
+            <button
+              aria-controls="fddplhvc5"
+              aria-expanded="true"
+              aria-haspopup="true"
+              aria-label="See More"
+              class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+            >
+              
+                                
+              <i
+                class="sap-icon--slim-arrow-up"
+              />
+              
+                        
+            </button>
+            
+                        
+            <button
+              aria-label="Pin this"
+              class="fd-dynamic-page__pin-button fd-button fd-button--compact"
+            >
+              
+                                
+              <i
+                class="sap-icon--pushpin-off"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+                    
+          <div
+            class="fd-dynamic-page__collapsible-header-visibility-container--right-gradient"
+          />
+          
+                
+        </div>
         
             
       </div>

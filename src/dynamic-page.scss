@@ -197,7 +197,7 @@ $block: #{$fd-namespace}-dynamic-page;
   &__title-content {
     @include fd-reset();
 
-    padding: 0 0 0 1rem;
+    padding: 0.3125rem 0 0 1rem;  // to fix misaligned look between title and title-content
 
     @include fd-rtl() {
       padding: 0 1rem 0 0;
@@ -322,8 +322,16 @@ $block: #{$fd-namespace}-dynamic-page;
     line-height: 2rem;
   }
 
-  &__collapsible-header {
+  &__collapsible-header-container {
     // contains B and B1
+    @include fd-reset();
+
+    &--collapsed {
+      z-index: 1;
+    }
+  }
+
+  &__collapsible-header {
     @include fd-reset();
 
     background-color: $fd-dynamic-page-background-color;
