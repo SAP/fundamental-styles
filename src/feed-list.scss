@@ -1,7 +1,6 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-feed-list;
-$link: #{$fd-namespace}-link;
 
 .#{$block} {
   $fd-feed-list-padding-start: 1rem;
@@ -46,6 +45,12 @@ $link: #{$fd-namespace}-link;
     }
   }
 
+  &__link {
+    &--more {
+      text-transform: uppercase;
+    }
+  }
+
   &__actions {
     @include fd-reset();
 
@@ -72,6 +77,8 @@ $link: #{$fd-namespace}-link;
   }
 
   &--link {
+    @include fd-fiori-focus();
+
     cursor: pointer;
   }
 
@@ -83,10 +90,6 @@ $link: #{$fd-namespace}-link;
 
   &__text {
     @include fd_reset();
-
-    .#{$link}--more {
-      text-transform: uppercase;
-    }
   }
 
   &__footer {

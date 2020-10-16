@@ -121,6 +121,7 @@ export const linked = () => `
                 role="img" 
                 aria-label="John Doe"
                 title="John Doe"
+                tabindex="0"
             ></div>
                  
             <div class="fd-feed-list__content">
@@ -162,7 +163,7 @@ export const showMore = () => `
                 <p class="fd-feed-list__text">
                     <span class="fd-feed-list__name">Joe Doe: </span>
                     <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. Morbi tempor eu elit eu consequat. Sed at lorem a ex consequat pharetra. Etiam convallis odio at vulputate venenatis. In sit amet pharetra urna. Ut nulla nisi, porta at ligula a, elementum ullamcorper lectus. Suspendisse blandit, risus nec vestibulum volutpat, nulla neque rhoncus dolor, vitae rutrum lectus neque nec ligula. Maecenas pulvinar, ligula nec fringilla volutpat, urna quam rutrum tellus, vi...
-                    <a class="fd-link" tabindex="0">More</a>        
+                    <a class="fd-link fd-feed-list__link--more" tabindex="0">More</a>        
                 </p>
                 
                 <div class="fd-feed-list__footer">
@@ -196,7 +197,7 @@ export const showLess = () => `
                 <p class="fd-feed-list__text">
                     <span class="fd-feed-list__name">Joe Doe: </span>
                     <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. Morbi tempor eu elit eu consequat. Sed at lorem a ex consequat pharetra. Etiam convallis odio at vulputate venenatis. In sit amet pharetra urna. Ut nulla nisi, porta at ligula a, elementum ullamcorper lectus. Suspendisse blandit, risus nec vestibulum volutpat, nulla neque rhoncus dolor, vitae rutrum lectus neque nec ligula. Maecenas pulvinar, ligula nec fringilla volutpat, urna quam rutrum tellus, vitae elementum elit est malesuada nunc. Maecenas eu risus posuere, volutpat justo in, ultricies sem
-                    <a class="fd-link fd-link--more" tabindex="0">Less</a>        
+                    <a class="fd-link fd-feed-list__link--more" tabindex="0">Less</a>        
                 </p>
                 
                 <div class="fd-feed-list__footer">
