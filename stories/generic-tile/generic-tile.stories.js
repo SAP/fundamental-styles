@@ -12,8 +12,7 @@ text, KPIs, counters and charts.
     }
 };
 
-export const genericTileSizes = () => `
-<div class="fddocs-container">
+export const genericTileSizes = () => `<div class="fddocs-container">
     <div role="button" aria-label="button" tabindex="0" class="fd-tile">
         <div class="fd-tile__header"></div>
         <div class="fd-tile__content">11 x 11rem</div>
@@ -24,8 +23,7 @@ export const genericTileSizes = () => `
         <div class="fd-tile__content">9.25 x 9.25rem</div>
         <div class="fd-tile__footer"></div>
     </div>
-</div>
-`;
+</div>`;
 
 genericTileSizes.parameters = {
     docs: {
@@ -37,8 +35,7 @@ The large (default) tiles are designed for screens larger than 374px. For smalle
         ` }
 };
 
-export const genericTileLayout = () => `
-<div class="fddocs-container">
+export const genericTileLayout = () => `<div class="fddocs-container">
     <div role="button" aria-label="button" tabindex="0" class="fd-tile">
         <div class="fd-tile__header" style="background-color: #C0E0FA">
             <div class="fd-tile__title">.fd-tile__title</div>
@@ -94,8 +91,7 @@ The layout of the generic tile is fixed, with designated areas for the header, c
         ` }
 };
 
-export const genericTileContentColumns = () => `
-<div class="fddocs-container">
+export const genericTileContentColumns = () => `<div class="fddocs-container">
     <div role="button" aria-label="button" tabindex="0" class="fd-tile">
         <div class="fd-tile__header fd-tile__header--2-col">
             <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
