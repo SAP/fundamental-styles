@@ -98,16 +98,20 @@ $block: #{$fd-namespace}-avatar;
   // placeholder background
   &--placeholder {
     background-color: var(--fdAvatar_Placeholder_BackgroundColor);
+    border: var(--fdAvatar_Border);
+    color: var(--fdAvatar_Placeholder_DefaultColor);
   }
 
   // tile background
   &--tile {
     background-color: var(--fdAvatar_Tile_BackgroundColor);
+    border: var(--fdAvatar_Border);
+    color: var(--fdAvatar_Tile_DefaultColor);
   }
 
   // optional border
   &--border {
-    border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
+    border: var(--fdAvatar_Border);
   }
 
   // accent-colors

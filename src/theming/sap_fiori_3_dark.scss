@@ -36,6 +36,9 @@
   --fdAvatar_Tile_BackgroundColor: var(--sapTile_IconColor);
   --fdAvatar_DefaultColor: var(--sapContent_ContrastTextColor);
   --fdAvatar_Placeholder_BackgroundColor: var(--sapContent_ImagePlaceholderBackground);
+  --fdAvatar_Placeholder_DefaultColor: var(--sapContent_ContrastTextColor);
+  --fdAvatar_Tile_DefaultColor: var(--sapContent_ContrastTextColor);
+  --fdAvatar_Border: none;
 
   /* Tabs */
   --fdTabs_Selected_Color: var(--sapSelectedColor);
