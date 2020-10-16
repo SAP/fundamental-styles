@@ -96,18 +96,26 @@ export default {
     },
     decorators: [
         withThemeProvider
-    ]
-    ` : ''
+    ]` : ''
 }
 };
 
 export const ${visualStoryName} = () => {
     let storyNames = Object.keys(stories).filter(story => story !== 'default' && story !== 'dev');
-    const div = document.createElement('div');
-    div.innerHTML = storyNames.map(function(item) {
+    const divLTR = document.createElement('div');
+    divLTR.innerHTML = storyNames.map(function(item) {
         return '<h2>' + Case.capital(item) + '</h2>' +
         '<div>' + stories[item]() + '</div> <br /> <hr /> <br /> <br />';
     }).join('');
+    const divRTL = document.createElement('div');
+    divRTL.innerHTML = divLTR.innerHTML;
+    divRTL.setAttribute('dir', 'rtl');
+    const div = document.createElement('div');
+    div.appendChild(divLTR);
+    const headerRTL = document.createElement('h2');
+    headerRTL.innerHTML = 'Right to Left';
+    div.appendChild(headerRTL);
+    div.appendChild(divRTL);
     return div;
 };
 
@@ -116,32 +124,6 @@ export const ${visualStoryName} = () => {
                 let visualPath = path.join(directory.path, `${componentName}-${themeVal}.visual.js`);
                 writeFileSync(visualPath, fileContents);
             });
-
-            //             const fileContents =
-            // `import * as Case from 'case';
-            // import * as stories from './${componentName}.stories.js';
-
-            // export default {
-            //     title: 'Visual/${prettyCompName}'${dependentComps ? ',' : ''}
-            //     ${
-            //     dependentComps ?
-            //         `parameters: {
-            //         components: [${dependentComps}]
-            //     }` : ''
-            // }
-            // };
-
-            // export const ${visualStoryName} = () => {
-            //     let storyNames = Object.keys(stories).filter(story => story !== 'default' && story !== 'dev');
-            //     const div = document.createElement('div');
-            //     div.innerHTML = storyNames.map(function(item) {
-            //         return '<h2>' + Case.capital(item) + '</h2>' +
-            //         '<div>' + stories[item]() + '</div> <br /> <hr /> <br /> <br />';
-            //     }).join('');
-            //     return div;
-            // };
-
-            // `;
         }
     });
 });
