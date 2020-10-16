@@ -387,7 +387,7 @@ export const mobile = () => `
                                     <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
                                 </ul>
                             </nav>
-                            <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                            <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar-actions fd-dynamic-page__toolbar-actions--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                 <button class="fd-button fd-button--transparent" aria-label="Close">
                                     <i class="sap-icon--decline"></i>
                                 </button>
@@ -415,7 +415,7 @@ export const mobile = () => `
                                     </div>
                                 </div>
                             </div>
-                            <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                            <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                 <div class="fd-popover fd-toolbar__overflow">
                                     <div class="fd-popover__control">
                                         <button class="fd-button fd-button--transparent"
@@ -516,6 +516,8 @@ mobile.parameters = {
 | Title Area | \`fd-dynamic-page__title-area--sm\` |
 | Breadcrumb | \`fd-dynamic-page__breadcrumb--sm\` |
 | Header | \`fd-dynamic-page__collapsible-header--sm\` |
+| Global Actions | \`fd-dynamic-page__toolbar--sm\` |
+| Layout Actions | \`fd-dynamic-page__toolbar-actions--sm\` |
 | Tabs | \`fd-dynamic-page__tabs--sm\` |
 | Content | \`fd-dynamic-page__content--sm\` |
 | Summary line (optional) | \`fd-dynamic-page__summarized-title-area--sm\` |
@@ -540,7 +542,7 @@ export const mobileCollapsed = () => `
                                     <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
                                 </ul>
                             </nav>
-                            <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                            <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar-actions fd-dynamic-page__toolbar-actions--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                     <button class="fd-button fd-button--transparent" aria-label="Close">
                                         <i class="sap-icon--decline"></i>
                                     </button>
@@ -568,7 +570,7 @@ export const mobileCollapsed = () => `
                                     </div>
                                 </div>
                             </div>
-                            <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear  fd-toolbar--cozy fd-toolbar--transparent">
+                            <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-toolbar fd-toolbar--clear  fd-toolbar--cozy fd-toolbar--transparent">
                                 <div class="fd-popover fd-toolbar__overflow">
                                     <div class="fd-popover__control">
                                         <button class="fd-button fd-button--transparent"
