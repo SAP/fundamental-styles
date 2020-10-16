@@ -375,8 +375,7 @@ Structure of the Numeric Content
         ` }
 };
 
-export const feedTile = () => `
-<div class="fddocs-container">
+export const feedTile = () => `<div class="fddocs-container">
     <div role="button" tabindex="0" class="fd-tile fd-tile--double fd-tile--feed">
         <div class="fd-tile__header">
             <div class="fd-tile__title">Feed Tile Title Text sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
@@ -432,8 +431,7 @@ To create a Feed tile, use the \`fd-tile--feed\` modifier class.
         ` }
 };
 
-export const badgeTile = () => `
-<div class="fddocs-container">
+export const badgeTile = () => `<div class="fddocs-container">
     <div role="button" tabindex="0" class="fd-tile fd-tile--launch">
         <div class="fd-badge">Badge</div>
         <div class="fd-tile__header">
@@ -518,8 +516,7 @@ Tiles do not display badges in action/edit mode.
         ` }
 };
 
-export const slideTile = () => `
-<div class="fddocs-container">
+export const slideTile = () => `<div class="fddocs-container">
     <div role="button" tabindex="0" class="fd-tile fd-tile--slide">
         <div class="fd-tile__background-img" style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png')"></div>
         <button aria-label="toggle play button" class="fd-tile__toggle"></button>
@@ -615,8 +612,7 @@ To create a Slide Tile, use the \`fd-tile--slide\` modifier class.
         ` }
 };
 
-export const tileInActionMode = () => `
-<div class="fddocs-container">
+export const tileInActionMode = () => `<div class="fddocs-container">
     <div role="button" tabindex="0" class="fd-tile fd-tile--launch fd-tile--action">
         <div class="fd-tile__overlay"></div>
         <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
