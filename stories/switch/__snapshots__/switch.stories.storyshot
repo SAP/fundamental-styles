@@ -138,8 +138,164 @@ exports[`Storyshots Components/Switch Default 1`] = `
 `;
 
 exports[`Storyshots Components/Switch Semantic Switch 1`] = `
+<div
+  class="fd-form-group"
+>
+  
+    
+  <div
+    class="fd-form-item"
+  >
+    
+        
+    <label
+      class="fd-form-label"
+      id="label5"
+    >
+      Semantic Switch
+    </label>
+    
+        
+    <label
+      class="fd-switch__label"
+    >
+      
+            
+      <span
+        class="fd-switch fd-switch--semantic"
+      >
+        
+                
+        <input
+          aria-labelledby="label5"
+          class="fd-switch__input"
+          id="y21YO3251"
+          name=""
+          type="checkbox"
+          value=""
+        />
+        
+                
+        <div
+          class="fd-switch__wrapper"
+        >
+          
+                    
+          <div
+            class="fd-switch__track"
+          >
+            
+                        
+            <i
+              class="fd-switch__icon--on fd-switch__icon sap-icon--accept"
+              role="presentation"
+            />
+            
+                        
+            <span
+              class="fd-switch__handle"
+              role="presentation"
+            />
+            
+                        
+            <i
+              class="fd-switch__icon--off fd-switch__icon sap-icon--decline"
+              role="presentation"
+            />
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </span>
+      
+        
+    </label>
+    
+    
+  </div>
+  
+    
+  <div
+    class="fd-form-item"
+  >
+    
+        
+    <label
+      class="fd-form-label"
+      id="label6"
+    >
+      Semantic Compact Switch
+    </label>
+    
+        
+    <label
+      class="fd-switch__label"
+    >
+      
+            
+      <span
+        class="fd-switch fd-switch--semantic fd-switch--compact"
+      >
+        
+                
+        <input
+          aria-labelledby="label6"
+          class="fd-switch__input"
+          id="y21YO3431"
+          name=""
+          type="checkbox"
+          value=""
+        />
+        
+                
+        <div
+          class="fd-switch__wrapper"
+        >
+          
+                    
+          <div
+            class="fd-switch__track"
+          >
+            
+                        
+            <i
+              class="fd-switch__icon--on fd-switch__icon sap-icon--accept"
+              role="presentation"
+            />
+            
+                        
+            <span
+              class="fd-switch__handle"
+              role="presentation"
+            />
+            
+                        
+            <i
+              class="fd-switch__icon--off fd-switch__icon sap-icon--decline"
+              role="presentation"
+            />
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </span>
+      
+        
+    </label>
+    
+    
+  </div>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Components/Switch With Text 1`] = `

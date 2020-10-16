@@ -88,8 +88,7 @@ withText.parameters = {
     }
 };
 
-export const semanticSwitch = () => `
-<div class="fd-form-group">
+export const semanticSwitch = () => `<div class="fd-form-group">
     <div class="fd-form-item">
         <label class="fd-form-label" id="label5">Semantic Switch</label>
         <label class="fd-switch__label">

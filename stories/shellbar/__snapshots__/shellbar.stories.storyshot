@@ -480,8 +480,482 @@ exports[`Storyshots Components/Shellbar Links With Collapsible Menu M/L Size 1`]
 `;
 
 exports[`Storyshots Components/Shellbar Links With Collapsible Menu S Size 1`] = `
-
-
+<div
+  style="height:300px; max-width: 600px;"
+>
+  
+    
+  <div
+    class="fd-shellbar fd-shellbar--s"
+  >
+    
+        
+    <div
+      class="fd-shellbar__group fd-shellbar__group--product"
+    >
+      
+            
+      <span
+        class="fd-shellbar__logo"
+      >
+        <img
+          alt="SAP"
+          height="24"
+          src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png"
+          srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x"
+          width="48"
+        />
+      </span>
+      
+            
+      <span
+        class="fd-shellbar__title"
+      >
+        Corporate Portal
+      </span>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-shellbar__group fd-shellbar__group--actions"
+    >
+      
+            
+      <div
+        class="fd-shellbar__action fd-shellbar__action--desktop"
+      >
+                
+                
+        <div
+          class="fd-popover__control"
+        >
+          
+                    
+          <div
+            aria-controls="UIBFJ688"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-label="Image label"
+          >
+            
+                        
+            <div
+              class="fd-input-group fd-shellbar__input-group"
+            >
+              
+                            
+              <input
+                aria-label="search"
+                class="fd-input fd-input-group__input fd-shellbar__input-group__input"
+                id="UIO6J6881"
+                placeholder="Search..."
+                type="text"
+                value="Search"
+              />
+              
+                            
+              <span
+                class="fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button"
+              >
+                
+                                
+                <button
+                  aria-label="navigation-down-arrow-button"
+                  class="fd-shellbar__button fd-button"
+                >
+                  
+                                    
+                  <i
+                    class="sap-icon--navigation-down-arrow"
+                  />
+                  
+                                
+                </button>
+                
+                            
+              </span>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fd-shellbar__action fd-shellbar__action--desktop"
+      >
+        
+                
+        <button
+          aria-label="Search"
+          class="fd-button fd-shellbar__button"
+        >
+          
+                    
+          <i
+            class="sap-icon--search"
+          />
+          
+                
+        </button>
+        
+            
+      </div>
+      
+                
+      <div
+        class="fd-shellbar__action fd-shellbar__action--desktop"
+      >
+        
+                    
+        <button
+          aria-label="Notifications"
+          class="fd-button fd-shellbar__button"
+        >
+          
+                        
+          <i
+            class="sap-icon--bell"
+          />
+          
+                        
+          <span
+            aria-label="Unread count"
+            class="fd-counter fd-counter--notification fd-shellbar__counter--notification"
+          >
+            251234
+          </span>
+          
+                    
+        </button>
+        
+                
+      </div>
+      
+                
+      <div
+        class="fd-shellbar__action fd-shellbar__action--desktop"
+      >
+        
+                    
+        <button
+          aria-label="Pool"
+          class="fd-button fd-shellbar__button"
+        >
+          
+                        
+          <i
+            class="sap-icon--pool"
+          />
+          
+                    
+        </button>
+        
+                
+      </div>
+      
+                
+      <div
+        class="fd-shellbar__action fd-shellbar__action--mobile"
+      >
+        
+                    
+        <div
+          class="fd-shellbar-collapse"
+        >
+          
+                        
+          <div
+            class="fd-popover fd-popover--right"
+          >
+            
+                            
+            <div
+              class="fd-popover__control"
+            >
+              
+                                
+              <div
+                aria-controls="CWaGNGD78"
+                aria-expanded="false"
+                aria-haspopup="true"
+                class="fd-shellbar-collapse--control"
+                onclick="onPopoverClick('CWaGNGD78')"
+                role="button"
+              >
+                
+                                    
+                <button
+                  aria-controls="undefined"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  class="fd-button fd-shellbar__button"
+                >
+                  
+                                        
+                  <i
+                    class="sap-icon--overflow"
+                  />
+                  
+                                        
+                  <span
+                    aria-label="Unread count"
+                    class="fd-counter fd-counter--notification fd-shellbar__counter--notification"
+                  >
+                    25
+                  </span>
+                  
+                                    
+                </button>
+                
+                                
+              </div>
+              
+                            
+            </div>
+            
+                            
+            <div
+              aria-hidden="true"
+              class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"
+              id="CWaGNGD78"
+            >
+              
+                                
+              <nav
+                class="fd-menu"
+              >
+                
+                                    
+                <ul
+                  class="fd-menu__list fd-menu__list--no-shadow"
+                >
+                  
+                                        
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                            
+                    <a
+                      class="fd-menu__link"
+                      role="button"
+                    >
+                      
+                                                
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Search
+                      </span>
+                      
+                                            
+                    </a>
+                    
+                                        
+                  </li>
+                  
+                                        
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                            
+                    <a
+                      class="fd-menu__link"
+                      role="button"
+                    >
+                      
+                                                
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Notifications Out
+                      </span>
+                      
+                                            
+                    </a>
+                    
+                                        
+                  </li>
+                  
+                                        
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                            
+                    <a
+                      class="fd-menu__link"
+                      role="button"
+                    >
+                      
+                                                
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Pool
+                      </span>
+                      
+                                            
+                    </a>
+                    
+                                        
+                  </li>
+                  
+                                    
+                </ul>
+                
+                                
+              </nav>
+              
+                            
+            </div>
+            
+                        
+          </div>
+          
+                    
+        </div>
+        
+                
+      </div>
+      
+                
+      <div
+        class="fd-shellbar__action"
+      >
+        
+                    
+        <div
+          class="fd-popover fd-popover--right"
+        >
+          
+                        
+          <div
+            class="fd-popover__control"
+          >
+            
+                            
+            <div
+              aria-controls="DD35GBK6"
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="fd-button fd-shellbar__button fd-user-menu__control"
+              onclick="onPopoverClick('DD35GBK6')"
+              role="button"
+            >
+              
+                                
+              <span
+                class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatarier--circle fd-shellbar__avatar--circle"
+              >
+                WW
+              </span>
+              
+                            
+            </div>
+            
+                        
+          </div>
+          
+                        
+          <div
+            aria-hidden="true"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"
+            id="DD35GBK6"
+          >
+            
+                            
+            <nav
+              class="fd-menu"
+            >
+              
+                                
+              <ul
+                class="fd-menu__list fd-menu__list--no-shadow"
+              >
+                
+                                    
+                <li
+                  class="fd-menu__item"
+                >
+                  
+                                        
+                  <a
+                    class="fd-menu__link"
+                    role="button"
+                  >
+                    
+                                            
+                    <span
+                      class="fd-menu__title"
+                    >
+                      Settings
+                    </span>
+                    
+                                        
+                  </a>
+                  
+                                    
+                </li>
+                
+                                    
+                <li
+                  class="fd-menu__item"
+                >
+                  
+                                        
+                  <a
+                    class="fd-menu__link"
+                    role="button"
+                  >
+                    
+                                            
+                    <span
+                      class="fd-menu__title"
+                    >
+                      Sign Out
+                    </span>
+                    
+                                        
+                  </a>
+                  
+                                    
+                </li>
+                
+                                
+              </ul>
+              
+                            
+            </nav>
+            
+                        
+          </div>
+          
+                    
+        </div>
+        
+                
+      </div>
+      
+            
+    </div>
+    
+        
+  </div>
+  
+    
+</div>
 `;
 
 exports[`Storyshots Components/Shellbar Links With Collapsible Menu Xl Size 1`] = `

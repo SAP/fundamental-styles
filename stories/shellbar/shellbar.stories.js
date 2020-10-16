@@ -407,8 +407,7 @@ linksWithCollapsibleMenuMSize.parameters = {
 linksWithCollapsibleMenuMSize.storyName = 'Links With Collapsible Menu M/L Size';
 
 
-export const linksWithCollapsibleMenuSSize = () => `
-<div style="height:300px; max-width: 600px;">
+export const linksWithCollapsibleMenuSSize = () => `<div style="height:300px; max-width: 600px;">
     <div class="fd-shellbar fd-shellbar--s">
         <div class="fd-shellbar__group fd-shellbar__group--product">
             <span class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP"></span>

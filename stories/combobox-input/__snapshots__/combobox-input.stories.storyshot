@@ -1,8 +1,368 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Patterns/Combobox Input As Form Item 1`] = `
+<div
+  style="height:700px"
+>
+  
+    
+  <div
+    class="fd-form-item"
+  >
+    
+        
+    <label
+      class="fd-form-label"
+    >
+      Combobox as a form item
+    </label>
+    
+        
+    <div
+      class="fd-popover"
+    >
+      
+            
+      <div
+        aria-controls="F4GcX348"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="fd-popover__control"
+      >
+        
+                
+        <div
+          class="fd-input-group fd-input-group--control"
+        >
+          
+                    
+          <input
+            class="fd-input fd-input-group__input"
+            id=""
+            placeholder="Select Fruit"
+            type="text"
+          />
+          
+                    
+          <span
+            class="fd-input-group__addon fd-input-group__addon--button"
+          >
+            
+                        
+            <button
+              aria-controls="F4GcX348"
+              aria-expanded="true"
+              aria-haspopup="true"
+              class="fd-input-group__button fd-button fd-button--transparent sap-icon--navigation-down-arrow"
+            />
+            
+                    
+          </span>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        aria-hidden="false"
+        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill"
+        id="F4GcX348"
+      >
+        
+                
+        <div
+          class="fd-popover__wrapper docs-max-height"
+        >
+          
+                    
+          <ul
+            class="fd-list fd-list--dropdown"
+            role="listbox"
+          >
+            
+                        
+            <li
+              class="fd-list__item is-selected"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                
+                                
+                <span
+                  class="fd-list__bold"
+                >
+                  App
+                </span>
+                le
+                            
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Orange
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Banana
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Kiwi
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Nectarine
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Apricots
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Peache
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Plum
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Mango
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Strawberry
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Blueberry
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Watermelon
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Rockmelon
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Honeydew
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Apple
+              </span>
+              
+                        
+            </li>
+            
+                    
+          </ul>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Patterns/Combobox Input Cozy And Compact 1`] = `

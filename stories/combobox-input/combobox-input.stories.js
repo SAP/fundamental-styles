@@ -128,8 +128,7 @@ cozyAndCompact.parameters = {
     }
 };
 
-export const asFormItem = () =>`
-<div style="height:700px">
+export const asFormItem = () => `<div style="height:700px">
     <div class="fd-form-item">
         <label class="fd-form-label">Combobox as a form item</label>
         <div class="fd-popover">
