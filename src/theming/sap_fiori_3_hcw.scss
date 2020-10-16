@@ -41,12 +41,12 @@
   --fdAvatar_Border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
 
   /* Tabs */
-  --fdTabs_Selected_Color: var(--sapSelectedColor);
-  --fdTabs_Selected_Icon_Color: var(--sapContent_ContrastIconColor);
+  --fdTabs_Selected_Color: var(--sapAccentColor6); // var(--sapSelectedColor);
+  --fdTabs_Selected_Icon_Color: var(--sapBaseColor); // var(--sapContent_ContrastIconColor);
 
   /* Radio */
-  --fdRadio_Selected_Color: var(--sapSelectedColor);
+  --fdRadio_Selected_Color: var(--sapAccentColor6); // var(--sapSelectedColor);
 
   /* Checkbox */
-  --fdCheckbox_Selected_Color: var(--sapSelectedColor);
+  --fdCheckbox_Selected_Color: var(--sapAccentColor6);// var(--sapSelectedColor);
 }
