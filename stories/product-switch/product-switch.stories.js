@@ -7,8 +7,7 @@ export default {
     }
 };
 
-export const productSwitchInShellbar = () => `
-<div style="background-color: #354A5F;text-align: right;padding: 6px;">
+export const productSwitchInShellbar = () => `<div style="background-color: #354A5F;text-align: right;padding: 6px;">
     <div class="fd-product-switch">
         <div class="fd-popover fd-popover--right">
             <div class="fd-popover__control">
@@ -129,8 +128,7 @@ productSwitchInShellbar.parameters = {
     }
 };
 
-export const productSwitchOnDesktop = () => `
-<div class="fd-product-switch__body">
+export const productSwitchOnDesktop = () => `<div class="fd-product-switch__body">
    <ul class="fd-product-switch__list">
       <li class="fd-product-switch__item" tabindex="0">
          <i role="presentation" class="fd-product-switch__icon sap-icon--home"></i>
@@ -235,8 +233,7 @@ productSwitchOnDesktop.parameters = {
     }
 };
 
-export const productSwitch3ColumnLayout = () => `
-<div class="fd-product-switch__body fd-product-switch__body--col-3">
+export const productSwitch3ColumnLayout = () => `<div class="fd-product-switch__body fd-product-switch__body--col-3">
     <ul class="fd-product-switch__list">
         <li class="fd-product-switch__item" tabindex="0">
             <i role="presentation" class="fd-product-switch__icon sap-icon--home"></i>
@@ -285,8 +282,7 @@ Add the modifier class <code>fd-product-switch__body--col-3</code> for 3 column 
 };
 
 
-export const smallestScreen = () => `
-<div style="width:450px;">
+export const smallestScreen = () => `<div style="width:450px;">
     <div class="fd-product-switch__body fd-product-switch__body--mobile">
         <ul class="fd-product-switch__list">
             <li class="fd-product-switch__item" tabindex="0">

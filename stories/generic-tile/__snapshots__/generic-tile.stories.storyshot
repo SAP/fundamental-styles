@@ -1,8 +1,296 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Tile/Generic Generic Tile Content Columns 1`] = `
+<div
+  class="fddocs-container"
+>
+  
+    
+  <div
+    aria-label="button"
+    class="fd-tile"
+    role="button"
+    tabindex="0"
+  >
+    
+        
+    <div
+      class="fd-tile__header fd-tile__header--2-col"
+    >
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-tile__content fd-tile__content--2-col"
+    >
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-tile__footer fd-tile__footer--2-col"
+    >
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <div
+    aria-label="button"
+    class="fd-tile fd-tile--double"
+    role="button"
+    tabindex="0"
+  >
+    
+        
+    <div
+      class="fd-tile__header fd-tile__header--2-col"
+    >
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-tile__content fd-tile__content--2-col"
+    >
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-tile__footer fd-tile__footer--2-col"
+    >
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <div
+    aria-label="button"
+    class="fd-tile fd-tile--s"
+    role="button"
+    tabindex="0"
+  >
+    
+        
+    <div
+      class="fd-tile__header fd-tile__header--2-col"
+    >
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-tile__content fd-tile__content--2-col"
+    >
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-tile__footer fd-tile__footer--2-col"
+    >
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <div
+    aria-label="button"
+    class="fd-tile fd-tile--s fd-tile--double"
+    role="button"
+    tabindex="0"
+  >
+    
+        
+    <div
+      class="fd-tile__header fd-tile__header--2-col"
+    >
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-tile__content fd-tile__content--2-col"
+    >
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-tile__footer fd-tile__footer--2-col"
+    >
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+            
+      <div
+        class="fd-tile__section"
+        style="background-color: #C0E0FA"
+      />
+      
+        
+    </div>
+    
+    
+  </div>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Components/Tile/Generic Generic Tile Layout 1`] = `

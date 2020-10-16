@@ -16,8 +16,7 @@ Use the File Uploader if:
     }
 };
 
-export const primary = () => `
-<div class="fd-form-item">
+export const primary = () => `<div class="fd-form-item">
   <div class="fd-file-uploader">
     <input 
       aria-label="File upload"
@@ -52,8 +51,7 @@ primary.parameters = {
     }
 };
 
-export const selected = () => `
-<div class="fd-form-item">
+export const selected = () => `<div class="fd-form-item">
   <div class="fd-file-uploader">
     <input 
       aria-label="File upload"
@@ -90,8 +88,7 @@ selected.parameters = {
 };
 
 
-export const compact = () => `
-<div class="fd-form-item">
+export const compact = () => `<div class="fd-form-item">
   <div class="fd-file-uploader">
     <input 
       aria-label="File upload"

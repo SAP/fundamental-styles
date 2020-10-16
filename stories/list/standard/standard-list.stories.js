@@ -11,8 +11,7 @@ master-detail scenario using the flexible column layout, as well as in popovers 
     }
 };
 
-export const standard = () => `
-<h4>Standard Size</h4>
+export const standard = () => `<h4>Standard Size</h4>
 <ul class="fd-list" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
@@ -53,8 +52,7 @@ standard.parameters = {
     }
 };
 
-export const navigation = () => `
-<ul class="fd-list fd-list--navigation" role="list">
+export const navigation = () => `<ul class="fd-list fd-list--navigation" role="list">
   <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
       <a tabindex="0" class="fd-list__link">
         <span class="fd-list__title">List item 1</span>
@@ -87,8 +85,7 @@ For a standard list with navigation links add the fd-list--navigation modifier c
     }
 };
 
-export const navigationIndicator = () => `
-<ul class="fd-list fd-list--navigation fd-list--navigation-indication" role="list">
+export const navigationIndicator = () => `<ul class="fd-list fd-list--navigation fd-list--navigation-indication" role="list">
   <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
       <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
         <span class="fd-list__title">List item 1</span>
@@ -130,8 +127,7 @@ items are navigable. In this case use a Standard List with Navigation.
     }
 };
 
-export const actionList = () => `
-<h4>Standard Size</h4>
+export const actionList = () => `<h4>Standard Size</h4>
 <ul class="fd-list" role="list">
   <li role="listitem" class="fd-list__item fd-list__item--action">
       <button class="fd-list__title">Forward</button>
@@ -183,8 +179,7 @@ actionList.parameters = {
     }
 };
 
-export const secondaryData = () => `
-<ul class="fd-list" role="list">
+export const secondaryData = () => `<ul class="fd-list" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
       <span class="fd-list__secondary">A1</span>
@@ -213,8 +208,7 @@ secondaryData.parameters = {
     }
 };
 
-export const icons = () => `
-<ul class="fd-list" role="list">
+export const icons = () => `<ul class="fd-list" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
       <span class="fd-list__title">List item 1</span>
@@ -243,8 +237,7 @@ icons.parameters = {
     }
 };
 
-export const groups = () => `
-<ul class="fd-list" role="list">
+export const groups = () => `<ul class="fd-list" role="list">
   <li role="listitem" class="fd-list__group-header">
     Group Header 1
   </li>
@@ -281,8 +274,7 @@ groups.parameters = {
     }
 };
 
-export const footer = () => `
-<ul class="fd-list" role="list">
+export const footer = () => `<ul class="fd-list" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
   </li>
@@ -310,8 +302,7 @@ footer.parameters = {
     }
 };
 
-export const borderless = () => `
-<ul class="fd-list fd-list--no-border" role="list">
+export const borderless = () => `<ul class="fd-list fd-list--no-border" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
   </li>
@@ -336,8 +327,7 @@ borderless.parameters = {
     }
 };
 
-export const selection = () => `
-<h4 id="XezW11">Standard Size</h4>
+export const selection = () => `<h4 id="XezW11">Standard Size</h4>
 <ul class="fd-list fd-list--selection" role="listbox" aria-labelledby="XezW11">
   <li role="option" tabindex="0" class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">

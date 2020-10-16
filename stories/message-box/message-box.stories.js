@@ -9,8 +9,7 @@ export default {
 
 const messageBoxHeight = 200;
 
-export const structure = () => `
-<div class="fd-message-box-docs-static fd-message-box fd-message-box--active">
+export const structure = () => `<div class="fd-message-box-docs-static fd-message-box fd-message-box--active">
     <div class="fd-message-box__content">
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
@@ -59,8 +58,7 @@ The Message Box follows the Dialog structure and consists of following elements:
     }
 };
 
-export const types = () => `
-<div class="fd-message-box-docs-static fd-message-box fd-message-box--active">
+export const types = () => `<div class="fd-message-box-docs-static fd-message-box fd-message-box--active">
     <div class="fd-message-box__content">
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">

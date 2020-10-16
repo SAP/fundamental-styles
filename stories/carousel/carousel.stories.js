@@ -30,8 +30,7 @@ To ensure that the carousel is accessible, a div element with class <code class=
     }
 };
 
-export const carouselBottom = () => `
-<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
+export const carouselBottom = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
     <h4>Navigation buttons in page indicator</h4>
     <div 
         class="fd-carousel" 
@@ -193,8 +192,7 @@ carouselBottom.parameters = {
     }
 };
 
-export const carouselTop = () => `
-<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
+export const carouselTop = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
     <h4>Navigation buttons in page indicator</h4>
     <div 
         class="fd-carousel" 
@@ -372,8 +370,7 @@ carouselTop.parameters = {
 };
 
 
-export const carouselNoNavigation = () => `
-<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
+export const carouselNoNavigation = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
     <h4>Hiding navigation buttons in page indicator</h4>
     <div 
         class="fd-carousel fd-carousel--no-navigation" 

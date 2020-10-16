@@ -20,8 +20,7 @@ export default {
     }
 };
 
-export const standard = () => `
-    <div class="fd-feed-input" 
+export const standard = () => `    <div class="fd-feed-input" 
          role="region" 
          aria-label="Feed input empty example">
         <div class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb" 
@@ -52,8 +51,7 @@ standard.parameters = {
     }
 };
 
-export const notEmpty = () => `
-    <div class="fd-feed-input" 
+export const notEmpty = () => `    <div class="fd-feed-input" 
          role="region" 
          aria-label="Feed input with one row text">
         <div class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb" 
@@ -84,8 +82,7 @@ notEmpty.parameters = {
     }
 };
 
-export const disabled = () => `
-    <div class="fd-feed-input is-disabled" 
+export const disabled = () => `    <div class="fd-feed-input is-disabled" 
          role="region" 
          aria-label="Feed input disabled example">
         <div class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb" 
@@ -118,8 +115,7 @@ disabled.parameters = {
     }
 };
 
-export const withoutUserImage = () => `
-    <div class="fd-feed-input" 
+export const withoutUserImage = () => `    <div class="fd-feed-input" 
          role="region" 
          aria-label="Feed input empty example">
         <textarea class="fd-textarea fd-feed-input__textarea"  
@@ -143,8 +139,7 @@ withoutUserImage.parameters = {
     }
 };
 
-export const placeholderImage = () => `
-    <div class="fd-feed-input" 
+export const placeholderImage = () => `    <div class="fd-feed-input" 
          role="region" 
          aria-label="Feed input empty example">
         <div class="fd-avatar fd-avatar--s fd-avatar--placeholder sap-icon--person-placeholder fd-feed-input__thumb"
@@ -172,8 +167,7 @@ placeholderImage.parameters = {
     }
 };
 
-export const inputGrowth = () => `
-    <div class="fd-feed-input" 
+export const inputGrowth = () => `    <div class="fd-feed-input" 
          role="region" 
          aria-label="Feed input height growth">
         <div class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb" 
@@ -203,8 +197,7 @@ inputGrowth.parameters = {
     }
 };
 
-export const overMaxHeight = () => `
-    <div class="fd-feed-input" 
+export const overMaxHeight = () => `    <div class="fd-feed-input" 
          role="region" 
          aria-label="Feed input over max height">
         <div class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb" 

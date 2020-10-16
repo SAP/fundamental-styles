@@ -51,8 +51,7 @@ The Tree currently supports up to 12 levels. More levels can be added per reques
     }
 };
 
-export const treeWithExpandedLevel1 = () => `
-<ul role="tree" aria-label="Root Tree" id="TREE1L1" class="fd-tree expanded-level-1">
+export const treeWithExpandedLevel1 = () => `<ul role="tree" aria-label="Root Tree" id="TREE1L1" class="fd-tree expanded-level-1">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container">
             <button tabindex="0" class="fd-tree__expander is-expanded" aria-controls="TREE1L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true">
@@ -187,8 +186,7 @@ Only the root tree (ul element) needs to have the <code class="docs-code">.expan
     }
 };
 
-export const treeWithExpandedLevel2AndNoBorders = () => `
-<ul role="tree" aria-label="Root Tree" id="TREE2L1" class="fd-tree fd-tree--no-border expanded-level-2">
+export const treeWithExpandedLevel2AndNoBorders = () => `<ul role="tree" aria-label="Root Tree" id="TREE2L1" class="fd-tree fd-tree--no-border expanded-level-2">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container">
             <button tabindex="0" class="fd-tree__expander is-expanded" aria-controls="TREE2L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true">
@@ -316,8 +314,7 @@ When Level 2 expands to show Level 3, Level 2 indents by 1rem while Level 3 inde
 };
 
 
-export const treeWithExpandedLevel3AndHighlightIndicators = () => `
-<ul role="tree" aria-label="Root Tree" id="TREE3L1" class="fd-tree expanded-level-3">
+export const treeWithExpandedLevel3AndHighlightIndicators = () => `<ul role="tree" aria-label="Root Tree" id="TREE3L1" class="fd-tree expanded-level-3">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container has-highlight-indicator">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE3L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true">
@@ -431,8 +428,7 @@ Options include:
 };
 
 
-export const treeWithExpandedLevel6AndNavigationLinks = () => `
-<ul role="tree" aria-label="Root Tree" id="TREE6CL1" class="fd-tree expanded-level-6">
+export const treeWithExpandedLevel6AndNavigationLinks = () => `<ul role="tree" aria-label="Root Tree" id="TREE6CL1" class="fd-tree expanded-level-6">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container fd-tree__item-container--active has-highlight-indicator--success">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE6CL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true">
@@ -758,8 +754,7 @@ The <code class="docs-code">.fd-tree\\_\\_item-container--active</code> modifier
 };
 
 
-export const treeWithSelection = () => `
-<h3>Multi Selection Left</h3>
+export const treeWithSelection = () => `<h3>Multi Selection Left</h3>
 <ul role="tree" aria-label="Root Tree" id="TREESELL1" class="fd-tree expanded-level-1">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container is-selected">
@@ -1009,8 +1004,7 @@ Form items can be added before or after the tree content <code class="docs-code"
     }
 };
 
-export const treeWithNoData = () => `
-<ul role="tree" aria-label="Root Tree" id="TREE1RTLND1" class="fd-tree fd-tree--no-data">
+export const treeWithNoData = () => `<ul role="tree" aria-label="Root Tree" id="TREE1RTLND1" class="fd-tree fd-tree--no-data">
     <li role="treeitem" aria-level="1" class="fd-tree__item">
         <div class="fd-tree__item-container">
             <div class="fd-tree__content">

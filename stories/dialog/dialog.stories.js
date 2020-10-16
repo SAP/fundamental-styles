@@ -41,8 +41,7 @@ Note: Dialog's header, subheader and footer are elements from the **Bar** compon
     }
 };
 
-export const defaultDialog = () => `
-<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+export const defaultDialog = () => `<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
     <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1">
         <span class="fd-dialog__resize-handle"></span>
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
@@ -248,8 +247,7 @@ Note: On mobile devices, the bar component should be used with the <code>fd-bar-
     }
 };
 
-export const Resizable = () => `
-<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+export const Resizable = () => `<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
         <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-6">
             <span class="fd-dialog__resize-handle"></span>
             <header class="fd-dialog__header fd-bar fd-bar--header">
@@ -288,8 +286,7 @@ Note: This feature should be enabled for desktop screens only.`
     }
 };
 
-export const Draggable = () => `
-<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+export const Draggable = () => `<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
     <div class="fd-dialog__content fd-dialog__content--draggable-grab fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-7">
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">

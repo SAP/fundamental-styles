@@ -1,26 +1,369 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Pagination First Page 1`] = `
+<div
+  class="fd-pagination"
+>
+  
+    
+  <span
+    class="fd-pagination__total"
+  >
+    30 items
+  </span>
+  
+    
+  <nav
+    class="fd-pagination__nav"
+  >
+    
+        
+    <a
+      aria-disabled="true"
+      aria-label="Previous"
+      class="fd-pagination__link fd-pagination__link--previous"
+      href="#"
+    />
+    
+        
+    <a
+      class="fd-pagination__link is-selected"
+      href="#"
+    >
+      1
+    </a>
+    
+        
+    <a
+      class="fd-pagination__link"
+      href="#"
+    >
+      2
+    </a>
+    
+        
+    <a
+      class="fd-pagination__link"
+      href="#"
+    >
+      3
+    </a>
+    
+        
+    <a
+      aria-disabled="false"
+      aria-label="Next"
+      class="fd-pagination__link fd-pagination__link--next"
+      href="#"
+    />
+    
+    
+  </nav>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Components/Pagination Last Page 1`] = `
+<div
+  class="fd-pagination"
+>
+  
+  
+  <span
+    class="fd-pagination__total"
+  >
+    500 items
+  </span>
+  
+  
+  <nav
+    class="fd-pagination__nav"
+  >
+    
+    
+    <a
+      aria-disabled="false"
+      aria-label="Previous"
+      class="fd-pagination__link fd-pagination__link--previous"
+      href="#"
+    />
+    
+    
+    <a
+      class="fd-pagination__link"
+      href="#"
+    >
+      1
+    </a>
+    
+    
+    <span
+      class="fd-pagination__more"
+      role="presentation"
+    />
+    
+    
+    <a
+      class="fd-pagination__link"
+      href="#"
+    >
+      49
+    </a>
+    
+    
+    <a
+      class="fd-pagination__link is-selected"
+      href="#"
+    >
+      50
+    </a>
+    
+    
+    <a
+      aria-disabled="true"
+      aria-label="Next"
+      class="fd-pagination__link fd-pagination__link--next"
+      href="#"
+    />
+    
+  
+  </nav>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Components/Pagination Middle Page 1`] = `
+<div
+  class="fd-pagination"
+>
+  
+  
+  <span
+    class="fd-pagination__total"
+  >
+    500 items
+  </span>
+  
+  
+  <nav
+    class="fd-pagination__nav"
+  >
+    
+    
+    <a
+      aria-disabled="false"
+      aria-label="Previous"
+      class="fd-pagination__link fd-pagination__link--previous"
+      href="#"
+    />
+    
+    
+    <a
+      class="fd-pagination__link"
+      href="#"
+    >
+      1
+    </a>
+    
+    
+    <span
+      class="fd-pagination__more"
+      role="presentation"
+    />
+    
+    
+    <a
+      class="fd-pagination__link"
+      href="#"
+    >
+      21
+    </a>
+    
+    
+    <a
+      class="fd-pagination__link is-selected"
+      href="#"
+    >
+      22
+    </a>
+    
+    
+    <a
+      class="fd-pagination__link"
+      href="#"
+    >
+      23
+    </a>
+    
+    
+    <span
+      class="fd-pagination__more"
+      role="presentation"
+    />
+    
+    
+    <a
+      class="fd-pagination__link"
+      href="#"
+    >
+      50
+    </a>
+    
+    
+    <a
+      aria-disabled="false"
+      aria-label="Next"
+      class="fd-pagination__link fd-pagination__link--next"
+      href="#"
+    />
+    
+  
+  </nav>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Components/Pagination Multiple Pages 1`] = `
+<div
+  class="fd-pagination"
+>
+  
+  
+  <span
+    class="fd-pagination__total"
+  >
+    500 items
+  </span>
+  
+  
+  <nav
+    class="fd-pagination__nav"
+  >
+    
+    
+    <a
+      aria-disabled="false"
+      aria-label="Previous"
+      class="fd-pagination__link fd-pagination__link--previous"
+      href="#"
+    />
+    
+    
+    <a
+      class="fd-pagination__link"
+      href="#"
+    >
+      1
+    </a>
+    
+    
+    <a
+      class="fd-pagination__link is-selected"
+      href="#"
+    >
+      2
+    </a>
+    
+    
+    <a
+      class="fd-pagination__link"
+      href="#"
+    >
+      3
+    </a>
+    
+    
+    <span
+      class="fd-pagination__more"
+      role="presentation"
+    />
+    
+    
+    <a
+      class="fd-pagination__link"
+      href="#"
+    >
+      50
+    </a>
+    
+    
+    <a
+      aria-disabled="false"
+      aria-label="Next"
+      class="fd-pagination__link fd-pagination__link--next"
+      href="#"
+    />
+    
+  
+  </nav>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Components/Pagination Second Page 1`] = `
+<div
+  class="fd-pagination"
+>
+  
+  
+  <span
+    class="fd-pagination__total"
+  >
+    30 items
+  </span>
+  
+  
+  <nav
+    class="fd-pagination__nav"
+  >
+    
+    
+    <a
+      aria-disabled="false"
+      aria-label="Previous"
+      class="fd-pagination__link fd-pagination__link--previous"
+      href="#"
+    />
+    
+    
+    <a
+      class="fd-pagination__link"
+      href="#"
+    >
+      1
+    </a>
+    
+    
+    <a
+      class="fd-pagination__link is-selected"
+      href="#"
+    >
+      2
+    </a>
+    
+    
+    <a
+      class="fd-pagination__link"
+      href="#"
+    >
+      3
+    </a>
+    
+    
+    <a
+      aria-disabled="false"
+      aria-label="Next"
+      class="fd-pagination__link fd-pagination__link--next"
+      href="#"
+    />
+    
+  
+  </nav>
+  
 
-
+</div>
 `;

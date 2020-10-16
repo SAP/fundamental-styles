@@ -43,8 +43,7 @@ Here are examples of various configurations.
     }
 };
 
-export const primary = () => `
-<div style="height:150px">
+export const primary = () => `<div style="height:150px">
     <div class="fd-shellbar">
         <div class="fd-shellbar__group fd-shellbar__group--product">
             <span class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP"></span>
@@ -86,8 +85,7 @@ primary.parameters = {
     }
 };
 
-export const productMenuAndSearch = () => `
-<div style="height:200px">
+export const productMenuAndSearch = () => `<div style="height:200px">
     <div class="fd-shellbar">
         <div class="fd-shellbar__group fd-shellbar__group--product">
             <span class="fd-shellbar__logo">
@@ -184,8 +182,7 @@ productMenuAndSearch.parameters = {
     }
 };
 
-export const linksWithCollapsibleMenuXlSize = () => `
-<div style="height:300px">
+export const linksWithCollapsibleMenuXlSize = () => `<div style="height:300px">
     <div class="fd-shellbar fd-shellbar--xl">
         <div class="fd-shellbar__group fd-shellbar__group--product">
             <span class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP"></span>
@@ -297,8 +294,7 @@ linksWithCollapsibleMenuXlSize.parameters = {
 };
 
 
-export const linksWithCollapsibleMenuMSize = () => `
-<div style="height:300px; max-width: 1024px;">
+export const linksWithCollapsibleMenuMSize = () => `<div style="height:300px; max-width: 1024px;">
     <div class="fd-shellbar fd-shellbar--m">
         <div class="fd-shellbar__group fd-shellbar__group--product">
             <span class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP"></span>
@@ -412,7 +408,6 @@ linksWithCollapsibleMenuMSize.storyName = 'Links With Collapsible Menu M/L Size'
 
 
 export const linksWithCollapsibleMenuSSize = () => `
-
 <div style="height:300px; max-width: 600px;">
     <div class="fd-shellbar fd-shellbar--s">
         <div class="fd-shellbar__group fd-shellbar__group--product">
@@ -525,8 +520,7 @@ linksWithCollapsibleMenuSSize.parameters = {
     }
 };
 
-export const productSwitch = () => `
-<div style="height:600px">
+export const productSwitch = () => `<div style="height:600px">
     <div class="fd-shellbar">
         <div class="fd-shellbar__group fd-shellbar__group--product">
         <span class="fd-shellbar__logo">

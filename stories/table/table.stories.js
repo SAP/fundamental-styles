@@ -1595,8 +1595,7 @@ export const navigationIndicationStates = () => `
 
 /** Grid tables can contain various input elements inside of cells. Provide information about the table for screen readers (such as a title, summary, and / or keyboard navigation instructions) using the `fd-table__caption` class. */
 
-export const gridTable = () => `
-<table class="fd-table" aria-describedby="FU4EwF6st">
+export const gridTable = () => `<table class="fd-table" aria-describedby="FU4EwF6st">
     <caption class="fd-table__caption" id="FU4EwF6st" aria-live="polite">
         Inventory Status. Use arrow keys to navigate between cells.
     </caption>

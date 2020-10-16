@@ -306,6 +306,105 @@ exports[`Storyshots Components/Forms/Field Set Checkbox Groups 1`] = `
 `;
 
 exports[`Storyshots Components/Forms/Field Set Radio Button Groups 1`] = `
-
+<fieldset
+  class="fd-fieldset"
+  id="radio1"
+>
+  
+        
+  <legend
+    class="fd-fieldset__legend"
+  >
+    Radio Buttons Cozy Mode
+  </legend>
+  
+        
+  <div
+    class="fd-form__group"
+  >
     
+            
+    <div
+      class="fd-form-item"
+    >
+      
+                
+      <input
+        checked=""
+        class="fd-radio"
+        id="pDidh761"
+        name="radio1"
+        type="radio"
+      />
+      
+                
+      <label
+        class="fd-radio__label"
+        for="pDidh761"
+      >
+        
+                    Field label
+                
+      </label>
+      
+            
+    </div>
+    
+            
+    <div
+      class="fd-form-item"
+    >
+      
+                
+      <input
+        class="fd-radio"
+        id="pDidh7612"
+        name="radio1"
+        type="radio"
+      />
+      
+                
+      <label
+        class="fd-radio__label"
+        for="pDidh7612"
+      >
+        
+                    Field label
+                
+      </label>
+      
+            
+    </div>
+    
+            
+    <div
+      class="fd-form-item"
+    >
+      
+                
+      <input
+        class="fd-radio"
+        id="pDidh7613"
+        name="radio1"
+        type="radio"
+      />
+      
+                
+      <label
+        class="fd-radio__label"
+        for="pDidh7613"
+      >
+        
+                    Field label
+                
+      </label>
+      
+            
+    </div>
+    
+        
+  </div>
+  
+    
+</fieldset>
 `;

@@ -16,8 +16,7 @@ and \`informative\` status.
     }
 };
 
-export const standard = () => `
-<h4>Standard Size</h4>
+export const standard = () => `<h4>Standard Size</h4>
 <ul class="fd-list fd-list--byline" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
@@ -94,8 +93,7 @@ standard.parameters = {
     }
 };
 
-export const navigation = () => `
-<ul class="fd-list fd-list--byline fd-list--navigation" role="list">
+export const navigation = () => `<ul class="fd-list fd-list--byline fd-list--navigation" role="list">
   <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
     <a tabindex="0" class="fd-list__link" href="#"> 
       <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
@@ -149,8 +147,7 @@ For a byline list with navigation links add the \`fd-list--navigation\` modifier
     }
 };
 
-export const navigationIndicator = () => `
-<ul class="fd-list fd-list--byline fd-list--navigation fd-list--navigation-indication" role="list">
+export const navigationIndicator = () => `<ul class="fd-list fd-list--byline fd-list--navigation fd-list--navigation-indication" role="list">
   <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
     <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#"> 
       <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
@@ -195,8 +192,7 @@ all items are navigable. In this case use a byline list with navigation.
     }
 };
 
-export const borderless = () => `
-<ul class="fd-list fd-list--no-border fd-list--byline" role="list">
+export const borderless = () => `<ul class="fd-list fd-list--no-border fd-list--byline" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
       <div class="fd-list__content">
@@ -243,8 +239,7 @@ borderless.parameters = {
     }
 };
 
-export const selection = () => `
-<h4 id="O09lk9">Standard Size</h4>
+export const selection = () => `<h4 id="O09lk9">Standard Size</h4>
 <ul class="fd-list fd-list--selection fd-list--byline" role="listbox" aria-labelledby="O09lk9">
   <li role="option" tabindex="0" class="fd-list__item is-selected">
       <div class="fd-form-item fd-list__form-item">
@@ -338,8 +333,7 @@ To create selection list:
         `
     }
 };
-export const selectionAndNavigation = () => `
-<h4 id="Ki81L1">Standard Size</h4>
+export const selectionAndNavigation = () => `<h4 id="Ki81L1">Standard Size</h4>
 <ul class="fd-list fd-list--selection fd-list--byline fd-list--navigation fd-list--navigation-indication" role="listbox" aria-labelledby="Ki81L1">
   <li role="option" tabindex="0" class="fd-list__item">
     <div class="fd-form-item fd-list__form-item">

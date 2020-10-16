@@ -11,8 +11,7 @@ A Form Select is similar to a Dropdown but is more commonly used within a form. 
     }
 };
 
-export const primary = () => `
-    <div class="fd-form-item">
+export const primary = () => `<div class="fd-form-item">
         <label class="fd-form-label" for="select-1">Default Select:</label>
         <select class="fd-form-select" id="select-1" name="">
             <option value="1">Duis malesuada odio volutpat elementum</option>
@@ -24,8 +23,7 @@ export const primary = () => `
 
 primary.storyName = 'Default';
 
-export const disabled = () => `
-    <div class="fd-form-item">
+export const disabled = () => `<div class="fd-form-item">
         <label class="fd-form-label" for="select-2">Disabled Select:</label>
         <select class="fd-form-select" id="select-2" name="" disabled>
             <option value="1">Duis malesuada odio volutpat elementum</option>

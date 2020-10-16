@@ -138,11 +138,112 @@ exports[`Storyshots Components/Counter Standalone 1`] = `
 `;
 
 exports[`Storyshots Components/Counter Tabs 1`] = `
+<ul
+  class="fd-tabs"
+  role="tablist"
+>
+  
+    
+  <li
+    class="fd-tabs__item"
+  >
+    
+        
+    <a
+      aria-controls="AvcVC566"
+      class="fd-tabs__link"
+      href="#AvcVC566"
+      role="tab"
+    >
+      Link
+        
+      <span
+        aria-label="Unread count"
+        class="fd-counter"
+      >
+        25
+      </span>
+    </a>
+    
+    
+  </li>
+  
+    
+  <li
+    class="fd-tabs__item"
+  >
+    
+        
+    <a
+      aria-controls="5mxO9110"
+      aria-selected="true"
+      class="fd-tabs__link"
+      href="#5mxO9110"
+      role="tab"
+    >
+      
+            
+      <span
+        class="fd-tabs__tag"
+      >
+        Selected
+      </span>
+      
+        
+    </a>
+    
+    
+  </li>
+  
+    
+  <li
+    class="fd-tabs__item"
+  >
+    
+        
+    <a
+      aria-controls="r0pk3445"
+      class="fd-tabs__link"
+      href="#r0pk3445"
+      role="tab"
+    >
+      Link
+    </a>
+    
+    
+  </li>
+  
+    
+  <li
+    class="fd-tabs__item"
+  >
+    
+        
+    <a
+      aria-controls="Dj1Ri832"
+      aria-disabled="true"
+      class="fd-tabs__link"
+      role="tab"
+    >
+      Disabled
+    </a>
+    
+    
+  </li>
+  
 
-
+</ul>
 `;
 
 exports[`Storyshots Components/Counter Text 1`] = `
-
-
+<p>
+  Lorem ipsum 
+  <span
+    aria-label="Unread count"
+    class="fd-counter"
+  >
+    5
+  </span>
+   
+</p>
 `;

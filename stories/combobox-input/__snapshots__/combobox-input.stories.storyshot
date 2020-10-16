@@ -6,31 +6,1770 @@ exports[`Storyshots Patterns/Combobox Input As Form Item 1`] = `
 `;
 
 exports[`Storyshots Patterns/Combobox Input Cozy And Compact 1`] = `
+<div
+  style="display:flex;justify-content:space-around;height:700px"
+>
+  
+    
+  <div
+    style="display:flex;flex-direction:column"
+  >
+    
+        
+    <label
+      class="fd-form-label"
+    >
+      Combobox Cozy Mode
+    </label>
+    
+        
+    <div
+      class="fd-popover"
+    >
+      
+            
+      <div
+        aria-controls="F4GcX348"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="fd-popover__control"
+      >
+        
+                
+        <div
+          class="fd-input-group fd-input-group--control"
+        >
+          
+                    
+          <input
+            class="fd-input fd-input-group__input"
+            id=""
+            placeholder="Select Fruit"
+            type="text"
+          />
+          
+                    
+          <span
+            class="fd-input-group__addon fd-input-group__addon--button"
+          >
+            
+                        
+            <button
+              aria-controls="F4GcX348"
+              aria-expanded="true"
+              aria-haspopup="true"
+              class="fd-input-group__button fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--navigation-down-arrow"
+              />
+              
+                        
+            </button>
+            
+                    
+          </span>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        aria-hidden="false"
+        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill"
+        id="F4GcX348"
+      >
+        
+                
+        <div
+          class="fd-popover__wrapper docs-max-height"
+        >
+          
+                    
+          <ul
+            class="fd-list fd-list--dropdown"
+            role="listbox"
+          >
+            
+                        
+            <li
+              class="fd-list__item is-selected"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                
+                                
+                <span
+                  class="fd-list__bold"
+                >
+                  App
+                </span>
+                le
+                            
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Orange
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Banana
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Kiwi
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Nectarine
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Apricots
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Peache
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Plum
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Mango
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Strawberry
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Blueberry
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Watermelon
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Rockmelon
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Honeydew
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Apple
+              </span>
+              
+                        
+            </li>
+            
+                    
+          </ul>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <div
+    style="display:flex;flex-direction:column"
+  >
+    
+        
+    <label
+      class="fd-form-label"
+    >
+      Combobox Compact Mode
+    </label>
+    
+        
+    <div
+      class="fd-popover"
+    >
+      
+            
+      <div
+        aria-controls="F4GcX34"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="fd-popover__control"
+      >
+        
+                
+        <div
+          class="fd-input-group fd-input-group--control"
+        >
+          
+                    
+          <input
+            class="fd-input fd-input--compact fd-input-group__input"
+            id=""
+            placeholder="Select Fruit"
+            type="text"
+          />
+          
+                    
+          <span
+            class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button"
+          >
+            
+                        
+            <button
+              aria-controls="F4GcX34"
+              aria-expanded="true"
+              aria-haspopup="true"
+              class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-select__button"
+            >
+              
+                            
+              <i
+                class="sap-icon--navigation-down-arrow"
+              />
+              
+                        
+            </button>
+            
+                    
+          </span>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        aria-hidden="false"
+        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill"
+        id="F4GcX34"
+      >
+        
+                
+        <div
+          class="fd-popover__wrapper"
+        >
+          
+                    
+          <ul
+            class="fd-list fd-list--dropdown fd-list--compact"
+            role="listbox"
+          >
+            
+                        
+            <li
+              class="fd-list__item is-selected"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                
+                                
+                <span
+                  class="fd-list__bold"
+                >
+                  App
+                </span>
+                le
+                            
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Orange
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Banana
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Kiwi
+              </span>
+              
+                        
+            </li>
+            
+                    
+          </ul>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Patterns/Combobox Input Disabled And Read Only 1`] = `
+<div
+  style="display:flex;justify-content:space-around"
+>
+  
+    
+  <div
+    class="fd-popover"
+  >
+    
+        
+    <div
+      aria-controls="F4GcX348"
+      aria-disabled="true"
+      aria-expanded="false"
+      aria-haspopup="true"
+      class="fd-popover__control"
+      disabled=""
+    >
+      
+            
+      <div
+        aria-disabled="true"
+        class="fd-input-group fd-input-group--control"
+        disabled=""
+      >
+        
+                
+        <input
+          class="fd-input fd-input-group__input"
+          id=""
+          placeholder="Select Fruit"
+          type="text"
+          value="Orange"
+        />
+        
+                
+        <span
+          class="fd-input-group__addon fd-input-group__addon--button"
+        >
+          
+                    
+          <button
+            class="fd-input-group__button fd-button fd-button--transparent fd-select__button"
+          >
+            
+                        
+            <i
+              class="sap-icon--navigation-down-arrow"
+            />
+            
+                    
+          </button>
+          
+                
+        </span>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <div
+    class="fd-popover"
+  >
+    
+        
+    <div
+      aria-controls="F4GcX348"
+      aria-expanded="false"
+      aria-haspopup="false"
+      aria-readonly="true"
+      class="fd-popover__control"
+      readonly=""
+    >
+      
+            
+      <input
+        aria-readonly="true"
+        class="fd-input fd-input-group__input"
+        id=""
+        readonly=""
+        type="text"
+        value="Orange"
+      />
+      
+        
+    </div>
+    
+    
+  </div>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Patterns/Combobox Input Match Popover Body Size 1`] = `
+<div
+  style="height:250px"
+>
+  
+    
+  <div
+    class="fd-popover"
+  >
+    
+    
+    <div
+      aria-controls="F4HTFDLK6"
+      aria-expanded="false"
+      aria-haspopup="true"
+      class="fd-popover__control"
+    >
+      
+        
+      <div
+        class="fd-input-group fd-input-group--control"
+      >
+        
+            
+        <input
+          class="fd-input fd-input-group__input"
+          id=""
+          placeholder="Select Ingredient"
+          type="text"
+        />
+        
+            
+        <span
+          class="fd-input-group__addon fd-input-group__addon--button"
+        >
+          
+                
+          <button
+            aria-controls="F4HTFDLK6"
+            aria-expanded="true"
+            aria-haspopup="true"
+            class="fd-input-group__button fd-button fd-button--transparent"
+          >
+            
+                    
+            <i
+              class="sap-icon--navigation-down-arrow"
+            />
+            
+                
+          </button>
+          
+            
+        </span>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      aria-hidden="false"
+      class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+      id="F4HTFDLK6"
+    >
+      
+        
+      <div
+        class="fd-popover__wrapper"
+      >
+        
+            
+        <ul
+          class="fd-list fd-list--dropdown"
+          role="listbox"
+        >
+          
+                
+          <li
+            class="fd-list__item is-selected"
+            role="option"
+            tabindex="0"
+          >
+            
+                    
+            <span
+              class="fd-list__title"
+            >
+              Apple
+            </span>
+            
+                
+          </li>
+          
+                
+          <li
+            class="fd-list__item"
+            role="option"
+            tabindex="0"
+          >
+            
+                    
+            <span
+              class="fd-list__title"
+            >
+              Orange
+            </span>
+            
+                
+          </li>
+          
+                
+          <li
+            class="fd-list__item"
+            role="option"
+            tabindex="0"
+          >
+            
+                    
+            <span
+              class="fd-list__title"
+            >
+              Banana
+            </span>
+            
+                
+          </li>
+          
+                
+          <li
+            class="fd-list__item"
+            role="option"
+            tabindex="0"
+          >
+            
+                    
+            <span
+              class="fd-list__title"
+            >
+              Kiwi
+            </span>
+            
+                
+          </li>
+          
+            
+        </ul>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+  </div>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Patterns/Combobox Input Mobile 1`] = `
+<div
+  class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active"
+  id="select-dialog-example"
+  style="height:600px"
+>
+  
+    
+  <div
+    class="fd-dialog__content"
+  >
+    
+        
+    <header
+      class="fd-dialog__header fd-bar fd-bar--header-with-subheader"
+    >
+      
+            
+      <div
+        class="fd-bar__left"
+      >
+        
+                
+        <div
+          class="fd-bar__element"
+        >
+          
+                    
+          <h3
+            class="fd-title fd-title--h5"
+          >
+            
+                        Ingredients
+                    
+          </h3>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fd-bar__right"
+      >
+        
+                
+        <div
+          class="fd-bar__element"
+        >
+          
+                    
+          <button
+            aria-label="close"
+            class="fd-button fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--decline"
+            />
+            
+                    
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </header>
+    
+        
+    <div
+      class="fd-dialog__subheader fd-bar fd-bar--cozy fd-bar--subheader"
+    >
+      
+            
+      <div
+        class="fd-bar__middle"
+      >
+        
+                
+        <div
+          class="fd-input-group fd-input-group--control"
+        >
+          
+                     
+          <input
+            class="fd-input fd-input-group__input"
+            id=""
+            placeholder="Select Ingredient"
+            type="text"
+            value="Apple"
+          />
+          
+                     
+          <span
+            class="fd-input-group__addon fd-input-group__addon--button"
+          >
+            
+                         
+            <button
+              class="fd-input-group__button fd-button fd-button--transparent"
+            >
+              
+                                
+              <i
+                class="sap-icon--navigation-down-arrow"
+              />
+              
+                            
+            </button>
+            
+                     
+          </span>
+          
+                 
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-dialog__body fd-dialog__body--no-vertical-padding"
+    >
+      
+              
+      <ul
+        class="fd-list fd-list--dropdown"
+        role="listbox"
+      >
+        
+                 
+        <li
+          class="fd-list__group-header"
+        >
+          
+                     Fruits
+                 
+        </li>
+        
+                 
+        <li
+          class="fd-list__item is-selected"
+          role="option"
+          tabindex="0"
+        >
+          
+                     
+          <span
+            class="fd-list__title"
+          >
+            Apple
+          </span>
+          
+                 
+        </li>
+        
+                 
+        <li
+          class="fd-list__item"
+          role="option"
+          tabindex="0"
+        >
+          
+                     
+          <span
+            class="fd-list__title"
+          >
+            Orange
+          </span>
+          
+                 
+        </li>
+        
+                 
+        <li
+          class="fd-list__item"
+          role="option"
+          tabindex="0"
+        >
+          
+                     
+          <span
+            class="fd-list__title"
+          >
+            Banana
+          </span>
+          
+                 
+        </li>
+        
+                 
+        <li
+          class="fd-list__item"
+          role="option"
+          tabindex="0"
+        >
+          
+                     
+          <span
+            class="fd-list__title"
+          >
+            Kiwi
+          </span>
+          
+                 
+        </li>
+        
+                 
+        <li
+          class="fd-list__group-header"
+        >
+          
+                     Vegetables
+                 
+        </li>
+        
+                 
+        <li
+          class="fd-list__item"
+          role="option"
+          tabindex="0"
+        >
+          
+                     
+          <span
+            class="fd-list__title"
+          >
+            Tomato
+          </span>
+          
+                 
+        </li>
+        
+                 
+        <li
+          class="fd-list__item"
+          role="option"
+          tabindex="0"
+        >
+          
+                     
+          <span
+            class="fd-list__title"
+          >
+            Onion
+          </span>
+          
+                 
+        </li>
+        
+                 
+        <li
+          class="fd-list__item"
+          role="option"
+          tabindex="0"
+        >
+          
+                     
+          <span
+            class="fd-list__title"
+          >
+            Spinach
+          </span>
+          
+                 
+        </li>
+        
+                 
+        <li
+          class="fd-list__item"
+          role="option"
+          tabindex="0"
+        >
+          
+                     
+          <span
+            class="fd-list__title"
+          >
+            Potato
+          </span>
+          
+                 
+        </li>
+        
+             
+      </ul>
+      
+        
+    </div>
+    
+       
+    <footer
+      class="fd-dialog__footer fd-bar fd-bar--cozy fd-bar--footer"
+    >
+      
+            
+      <div
+        class="fd-bar__right"
+      >
+        
+                
+        <div
+          class="fd-bar__element"
+        >
+          
+                    
+          <button
+            class="fd-button fd-button--emphasized fd-dialog__decisive-button"
+          >
+            OK
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </footer>
+    
+    
+  </div>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Patterns/Combobox Input Semantic 1`] = `
+<div
+  style="height:200px"
+>
+  
+    
+  <div
+    class="fd-popover"
+  >
+    
+    
+    <div
+      aria-controls="F4GcEX34"
+      aria-expanded="false"
+      aria-haspopup="true"
+      class="fd-popover__control"
+    >
+      
+                
+      <div
+        class="fd-input-group fd-input-group--control is-success"
+      >
+        
+                    
+        <input
+          class="fd-input fd-input--compact fd-input-group__input"
+          id=""
+          placeholder="Select Fruit"
+          type="text"
+        />
+        
+                    
+        <span
+          class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button"
+        >
+          
+                        
+          <button
+            aria-controls="F4GcEX34"
+            aria-expanded="true"
+            aria-haspopup="true"
+            class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-select__button"
+          >
+            
+                            
+            <i
+              class="sap-icon--navigation-down-arrow"
+            />
+            
+                        
+          </button>
+          
+                    
+        </span>
+        
+                
+      </div>
+      
+            
+    </div>
+    
+    
+    <div
+      aria-hidden="false"
+      class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill"
+      id="F4GcEX34"
+    >
+      
+        
+      <div
+        class="fd-popover__wrapper"
+      >
+        
+            
+        <ul
+          class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact"
+          role="listbox"
+        >
+          
+                
+          <li
+            class="fd-list__message fd-list__message--success"
+          >
+            Success message
+          </li>
+          
+                
+          <li
+            class="fd-list__item is-selected"
+            role="option"
+            tabindex="0"
+          >
+            
+                    
+            <span
+              class="fd-list__title"
+            >
+              
+                        
+              <span
+                class="fd-list__bold"
+              >
+                App
+              </span>
+              le
+                    
+            </span>
+            
+                
+          </li>
+          
+                
+          <li
+            class="fd-list__item"
+            role="option"
+            tabindex="0"
+          >
+            
+                    
+            <span
+              class="fd-list__title"
+            >
+              Orange
+            </span>
+            
+                
+          </li>
+          
+                
+          <li
+            class="fd-list__item"
+            role="option"
+            tabindex="0"
+          >
+            
+                    
+            <span
+              class="fd-list__title"
+            >
+              Banana
+            </span>
+            
+                
+          </li>
+          
+                
+          <li
+            class="fd-list__item"
+            role="option"
+            tabindex="0"
+          >
+            
+                    
+            <span
+              class="fd-list__title"
+            >
+              Kiwi
+            </span>
+            
+                
+          </li>
+          
+            
+        </ul>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+  </div>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Patterns/Combobox Input Two Items And Items Grouping 1`] = `
+<div
+  style="height:500px"
+>
+  
+    
+  <div
+    style="display:flex;justify-content:space-around"
+  >
+    
+        
+    <div
+      class="fd-popover"
+    >
+      
+            
+      <div
+        aria-controls="F4GRTGLK6"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="fd-popover__control"
+      >
+        
+                
+        <div
+          class="fd-input-group fd-input-group--control"
+        >
+          
+                    
+          <input
+            class="fd-input fd-input-group__input"
+            id=""
+            placeholder="Select Product"
+            type="text"
+          />
+          
+                    
+          <span
+            class="fd-input-group__addon fd-input-group__addon--button"
+          >
+            
+                        
+            <button
+              aria-controls="F4GRTGLK6"
+              aria-expanded="true"
+              aria-haspopup="true"
+              class="fd-input-group__button fd-button fd-button--transparent fd-select__button"
+            >
+              
+                            
+              <i
+                class="sap-icon--navigation-down-arrow"
+              />
+              
+                        
+            </button>
+            
+                    
+          </span>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        aria-hidden="false"
+        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill"
+        id="F4GRTGLK6"
+      >
+        
+                
+        <div
+          class="fd-popover__wrapper"
+        >
+          
+                    
+          <ul
+            class="fd-list fd-list--dropdown"
+            role="listbox"
+          >
+            
+                    
+            <li
+              class="fd-list__item is-selected"
+              role="option"
+              tabindex="0"
+            >
+              
+                        
+              <span
+                class="fd-list__title"
+              >
+                Product 1
+              </span>
+              
+                        
+              <span
+                class="fd-list__secondary"
+              >
+                1000 EUR
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                        
+              <span
+                class="fd-list__title"
+              >
+                Product 2
+              </span>
+              
+                        
+              <span
+                class="fd-list__secondary"
+              >
+                750 EUR
+              </span>
+              
+                    
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                        
+              <span
+                class="fd-list__title"
+              >
+                Product 3
+              </span>
+              
+                        
+              <span
+                class="fd-list__secondary"
+              >
+                780 EUR
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                        
+              <span
+                class="fd-list__title"
+              >
+                Product 4
+              </span>
+              
+                        
+              <span
+                class="fd-list__secondary"
+              >
+                40 EUR
+              </span>
+              
+                        
+            </li>
+            
+                    
+          </ul>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-popover"
+    >
+      
+            
+      <div
+        aria-controls="F4GcXLK6"
+        aria-expanded="true"
+        aria-haspopup="true"
+        class="fd-popover__control"
+      >
+        
+                
+        <div
+          class="fd-input-group fd-input-group--control"
+        >
+          
+                    
+          <input
+            class="fd-input fd-input-group__input"
+            id=""
+            placeholder="Select Ingredient"
+            type="text"
+          />
+          
+                    
+          <span
+            class="fd-input-group__addon fd-input-group__addon--button"
+          >
+            
+                        
+            <button
+              aria-controls="F4GcXLK6"
+              aria-expanded="true"
+              aria-haspopup="true"
+              class="fd-input-group__button fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--navigation-down-arrow"
+              />
+              
+                        
+            </button>
+            
+                    
+          </span>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        aria-hidden="false"
+        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill"
+        id="F4GcXLK6"
+      >
+        
+                
+        <div
+          class="fd-popover__wrapper"
+        >
+          
+                    
+          <ul
+            class="fd-list fd-list--dropdown"
+            role="listbox"
+          >
+            
+                        
+            <li
+              class="fd-list__group-header"
+            >
+              
+                            Fruits
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item is-selected"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Apple
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Orange
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Banana
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Kiwi
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__group-header"
+            >
+              
+                            Vegetables
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Tomato
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Onion
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Spinach
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Potato
+              </span>
+              
+                        
+            </li>
+            
+                    
+          </ul>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
 
-
+</div>
 `;

@@ -14,8 +14,7 @@ export default {
 };
 
 
-export const basic = () => `
-<div class="fd-form-group">
+export const basic = () => `<div class="fd-form-group">
     <div class="fd-form-item">
         <div class="fd-form-label" id="label1">Default (Cozy) Switch</div>
         <label class="fd-switch__label">
@@ -52,8 +51,7 @@ basic.parameters = {
     }
 };
 
-export const withText = () => `
-<div class="fd-form-group">
+export const withText = () => `<div class="fd-form-group">
     <div class="fd-form-item">
         <div class="fd-form-label" id="label3">With Off Text</div>
         <label class="fd-switch__label">
@@ -91,7 +89,6 @@ withText.parameters = {
 };
 
 export const semanticSwitch = () => `
-
 <div class="fd-form-group">
     <div class="fd-form-item">
         <label class="fd-form-label" id="label5">Semantic Switch</label>
