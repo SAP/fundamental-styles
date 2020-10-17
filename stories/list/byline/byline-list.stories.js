@@ -2,14 +2,29 @@ export default {
     title: 'Components/List/Byline',
     parameters: {
         description: `
-Byline list provides a structure for extending standard list items with additional content.
+Byline lists allow users to extend standard list items with additional content. To display a byline list, add the \`fd-list--byline\` modifier class to the \`fd-list\` element introduced in **Standard List**.
 
-To create a byline list add the \`fd-list--byline\` modifier class to standard list. For a two-column byline you need
-to add the \`fd-list__byline--2-col\` modifier class to the element. The first text item (\`fd-list__byline-left\`) is a
-standard text (description) and takes 60% of the available space. The second text item (\`fd-list__byline-right\`) could
-be a standard text or semantic (status) and takes the remaining 40% of the available space. For semantic (status) use a
-modifier class (\`fd-list__byline-right--*\`) to represent \`neutral\`, \`positive\`, \`critical\`, \`negative\`
-and \`informative\` status.
+##Usage
+**Use the byline list if:**
+
+-	You want to include additional text in standard list items.
+-	You want to present a semantic status in standard list items.
+
+**Do not use the byline list if:**
+
+-	You want to include objects in your list items. Instead, use the **Object List**.
+-	You want to manage complex datasets that need to be extensively sorted, grouped, filtered, or edited. In this case, use a **Table**.
+-	You work with complex hierarchies. In this case, use a **Tree**.
+
+##Elements
+The byline list consists of a few extra elements to add additional text and semantic colors to the list items.
+
+Modifier/Class | Description
+:---------------| :---------------
+\`fd-list__byline--2-col\` | Displays a 2-column byline that consists of two sides: left and right.
+\`fd-list__byline-left\` | The left side is best suited for standard text, and occupies 60% of the available space.
+\`fd-list__byline-right\` | The right side is best suited for supplemental information (can be a semantic status), and occupies 40% of the available space.
+\` fd-list__byline-right--*\` | To represent a semantic status, replace the * with either: _neutral_, _positive_, _negative_, _critical_ or _informative_.
 `,
         tags: ['f3', 'a11y', 'theme', 'development'],
         components: ['list', 'icon', 'checkbox']
@@ -86,11 +101,11 @@ style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span
 </ul>
 `;
 
-standard.storyName = 'Standard';
-
 standard.parameters = {
     docs: {
-        iframeHeight: 785
+        iframeHeight: 785,
+        storyDescription: `The default byline list dislays list items in the standard size, which is ideal for mobile. To display the byline list in compact mode (for desktop), add the \`fd-list--compact\` modifier class to the main element.
+      `
     }
 };
 
@@ -137,14 +152,11 @@ export const navigation = () => `
 </ul>
 `;
 
-navigation.storyName = 'Navigation';
-
 navigation.parameters = {
     docs: {
         iframeHeight: 355,
         storyDescription: `
-For a byline list with navigation links add the \`fd-list--navigation\` modifier class to the list and the
-\`fd-list__item--link\` modifier class to the list elements that contain links. All items should be navigable.
+      Byline list items can contain navigation links. To add navigation, add the \`fd-list--navigation\` modifier class to the list and the \`fd-list__item--link\` modifier class to the list elements that contain links. All items should be navigable.
 `
     }
 };
@@ -182,15 +194,13 @@ export const navigationIndicator = () => `
 </ul>
 `;
 
-navigationIndicator.storyName = 'Navigation indicator';
+navigationIndicator.storyName = 'Navigation indicators';
 
 navigationIndicator.parameters = {
     docs: {
         iframeHeight: 275,
         storyDescription: `
-If only a subset of the list items are navigable you should indicate those by displaying a navigation arrow. This is
-achieved by applying the \`fd-list--navigation-indication\` modifier class to the \`ul\` element. Do not show arrows if
-all items are navigable. In this case use a byline list with navigation.
+      If only a subset of the list items is navigable you should indicate them with an arrow icon. To display navigation indicators, add the \`fd-list--navigation-indication\` modifier class to the unordered list element. Do not show indicators if all items are navigable. In this case, use a byline list with navigation (in the example above).
 `
     }
 };
@@ -234,12 +244,11 @@ style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span
 </ul>
 `;
 
-borderless.storyName = 'Borderless';
-
 borderless.parameters = {
     docs: {
         iframeHeight: 305,
-        storyDescription: 'To create borderless list use `fd-list--no-border` modifier.'
+        storyDescription: `To display a borderless byline list, add the \`fd-list--no-border\` modifier class to the main element.
+      `
     }
 };
 
@@ -325,17 +334,12 @@ style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span
 </ul>
 `;
 
-selection.storyName = 'Selection';
-
 selection.parameters = {
     docs: {
         iframeHeight: 625,
         storyDescription: `
-To create selection list:
-
-* Create a standard list with \`fd-list--selection modifier\`.
-* Inside list element create checkbox form item with \`fd-list__form-item\` class.
-        `
+Byline list items can display checkboxes that users can select from. To display byline list items with selection, add the \`fd-list--selection\` modifier class to the main element. To create checkbox form items, add the \`fd-list__form-item\` class within each list element.
+      `
     }
 };
 export const selectionAndNavigation = () => `
@@ -432,6 +436,12 @@ selectionAndNavigation.storyName = 'Selection with navigation';
 
 selectionAndNavigation.parameters = {
     docs: {
-        iframeHeight: 625
+        iframeHeight: 625,
+        storyDescription: `To display byline list items with selection and navigation, add these following modifier classes to the main element:
+- \`fd-list--byline\`
+- \`fd-list--selection\`
+- \`fd-list--navigation\`
+- \`fd-list--navigation-indicator\`
+      `
     }
 };
