@@ -1,0 +1,480 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-dynamic-page;
+
+.#{$block} {
+
+  $fd-dynamic-page-background-color: var(--sapObjectHeader_Background);
+  $fd-dynamic-page-content-background-color: var(--sapBackgroundColor);
+  $fd-dynamic-page-padding-top-bottom: 0.5rem;
+  $fd-dynamic-page-header-padding-top-bottom: 1rem;
+  $fd-dynamic-page-box-shadow: var(--sapContent_HeaderShadow);
+  $fd-dynamic-page-button-width: 1.5rem;
+  $fd-dynamic-page-button-padding: 0 0.25rem;
+  $fd-dynamic-page-button-group-width: 4rem;
+  $fd-dynamic-page-button-group-height: 0.0625rem;
+  $fd-dynamic-page-focus-outline-offset: 0.0625rem;
+  $fd-button-height: 1.5rem;
+  $fd-button-clickable-height: 2rem;
+  $fd-button-touchable-area: ($fd-button-clickable-height - $fd-button-height) / 2;
+
+  @include fd-reset();
+
+  @mixin responsive-page($padding-y: 0,$padding-x: 1rem) {
+    padding: $padding-y $padding-x;
+  }
+
+  @mixin no-shadow() {
+    box-shadow: none;
+  }
+
+  @mixin custom-button() {
+    @include fd-flex-vertical-center() {
+      justify-content: center;
+    }
+
+    margin: $fd-dynamic-page-button-padding;
+    padding: 0;
+    width: $fd-dynamic-page-button-width;
+    height: $fd-button-height;
+    min-width: $fd-dynamic-page-button-width;
+
+    // Extended touchable area
+    &::before {
+      height: $fd-button-clickable-height;
+      width: 100%;
+      top: -$fd-button-touchable-area;
+      bottom: -$fd-button-touchable-area;
+    }
+
+    @include fd-rtl() {
+      > [class*='sap-icon'] {
+        &:last-child {
+          margin-right: 0;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  @include fd-flex(column);
+
+  &__header-fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 3;
+  }
+
+  &__header {
+    @include fd-reset();
+
+    @include fd-flex(column) {
+      justify-content: space-between;
+    }
+  }
+
+  &__title-area {
+    @include fd-reset();
+
+    @include fd-flex(column) {
+      justify-content: space-between;
+    }
+
+    @include fd-fiori-focus(0.0625rem);
+
+    min-height: 3rem;
+    word-wrap: break-word;
+    background-color: $fd-dynamic-page-background-color;
+    z-index: 1;
+
+    @include fd-hover() {
+      background: var(--sapObjectHeader_Hover_Background);
+      border-bottom: var(--fdDynamicPage_Hover_Border_Bottom);
+      cursor: pointer;
+    }
+
+    &--sm {
+      @include responsive-page($fd-dynamic-page-padding-top-bottom, 0.5rem);
+    }
+
+    &--md,
+    &--lg {
+      @include responsive-page($fd-dynamic-page-padding-top-bottom, 2rem);
+    }
+
+    &--xl {
+      @include responsive-page($fd-dynamic-page-padding-top-bottom, 3rem);
+    }
+
+    &--transparent-bg {
+      background: var(--fdDynamicPage_Title_Header_Transparent_Background);
+    }
+
+    &--collapsed {
+      padding-bottom: 1rem;
+    }
+
+    &[aria-hidden="true"] {
+      display: none;
+    }
+  }
+
+  &__main-container {
+    @include fd-reset();
+
+    @include fd-flex() {
+      justify-content: space-between;
+    }
+  }
+
+  &__title-container {
+    @include fd-reset();
+
+    @include fd-flex-vertical-center() {
+      justify-content: flex-start;
+    }
+  }
+
+  .#{$fd-namespace}-breadcrumb.#{$block}__breadcrumb {
+    padding: 0.5rem 0 0.25rem 0;
+
+    &--sm {
+      padding: 0;
+    }
+  }
+
+  &__breadcrumb-title-container {
+    @include fd-reset();
+    @include fd-flex(column);
+
+    flex: 1;
+  }
+
+  &__breadcrumb-container {
+    @include fd-reset();
+
+    @include fd-flex-vertical-center() {
+      justify-content: space-between; // to space breadcrumb and close button at each end
+    }
+  }
+
+  &__title {
+    @include fd-reset();
+
+    color: var(--sapGroup_TitleTextColor);
+    font-size: var(--sapFontHeader3Size);
+    padding: 0.3125rem 0 0 0;
+
+    @include fd-ellipsis();
+
+    // tablet spec
+    &--md {
+      padding: 0.6875rem 0 0 0;
+    }
+
+    // if fd-link is used as a child class
+    .#{$fd-namespace}-link {
+      @include fd-ellipsis();
+
+      padding: 0;
+      color: var(--sapGroup_TitleTextColor);
+      font-size: var(--sapFontHeader3Size);
+      max-width: 100%;
+    }
+  }
+
+  &__subtitle {
+    @include fd-reset();
+
+    color: var(--sapContent_LabelColor);
+    font-size: var(--sapFontSize);
+    margin-top: 0.25rem;
+  }
+
+  &__title-content {
+    @include fd-reset();
+
+    padding: 0 0 0 1rem;
+
+    @include fd-rtl() {
+      padding: 0 1rem 0 0;
+    }
+  }
+
+  &__actions-container {
+    @include fd-reset();
+    @include fd-flex(column);
+
+    justify-content: flex-end;
+
+    // tablet spec
+    &--md {
+      flex-flow: row;
+
+      .#{$block}__toolbar-container {
+        flex-flow: column wrap;
+      }
+    }
+  }
+
+  &__toolbar-container {
+    @include fd-reset();
+    @include fd-flex-vertical-center();
+  }
+
+  .#{$fd-namespace}-toolbar.#{$block}__toolbar {
+    padding: 0 0 0 1rem;
+    order: 1;
+    justify-content: flex-end;
+
+    @include fd-rtl() {
+      padding: 0 1rem 0 0;
+      margin-left: 0;
+      margin-right: auto;
+    }
+
+    &--sm {
+      flex: 2;
+      padding: 0;
+
+      @include fd-rtl() {
+        padding: 0;
+      }
+    }
+
+    &--md {
+      order: 2;
+      padding: 0;
+      flex: 2;
+
+      @include fd-rtl() {
+        padding: 0;
+      }
+    }
+  }
+
+  .#{$fd-namespace}-toolbar.#{$block}__toolbar-actions {
+    padding: 0;
+    order: 2;
+    justify-content: flex-end;
+
+    &--sm {
+      flex: 1;
+    }
+
+    &--md {
+      order: 1;
+    }
+  }
+
+  .#{$fd-namespace}-toolbar.#{$block}__title-content-toolbar {
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  &__summarized-title-area {
+    @include fd-reset();
+
+    @include fd-flex-vertical-center() {
+      justify-content: space-between;
+    }
+
+    @include fd-fiori-focus(0.0625rem);
+
+    word-wrap: break-word;
+    background: var(--sapObjectHeader_Background);
+    box-shadow: $fd-dynamic-page-box-shadow;
+    height: 2rem;
+    z-index: 1;
+
+    &--sm {
+      @include responsive-page(0.5rem);
+    }
+
+    &--md,
+    &--lg {
+      @include responsive-page(2rem);
+    }
+
+    &--xl {
+      @include responsive-page(3rem);
+    }
+
+    &--no-shadow {
+      @include no-shadow();
+    }
+
+    &[aria-hidden="true"] {
+      display: none;
+    }
+  }
+
+  &__summarized-title {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    color: var(--sapGroup_TitleTextColor);
+    font-size: var(--sapFontHeader5Size);
+    padding: 0;
+    line-height: 2rem;
+  }
+
+  &__collapsible-header-container {
+    // contains B and B1
+    @include fd-reset();
+
+    &--collapsed {
+      z-index: 1;
+    }
+  }
+
+  &__collapsible-header {
+    @include fd-reset();
+
+    background-color: $fd-dynamic-page-background-color;
+    padding: $fd-dynamic-page-header-padding-top-bottom 0;
+
+    &--transparent-bg {
+      background-color: var(--fdDynamicPage_Title_Header_Transparent_Background);
+    }
+
+    &--sm {
+      @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 0.5rem);
+    }
+
+    &--md,
+    &--lg {
+      @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 2rem);
+    }
+
+    &--xl {
+      @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 3rem);
+    }
+
+    &[aria-hidden="true"] {
+      display: none;
+    }
+  }
+
+  &__tabs {
+    @include fd-reset();
+
+    &--overflow {
+      overflow: hidden;
+    }
+  }
+  .#{$fd-namespace}-tabs.#{$block}__tabs {
+    &--sm {
+      @include responsive-page($padding-x: 0.5rem);
+    }
+
+    &--md,
+    &--lg {
+      @include responsive-page($padding-x: 2rem);
+    }
+
+    &--xl {
+      @include responsive-page($padding-x: 3rem);
+    }
+
+    &--add-shadow {
+      box-shadow: $fd-dynamic-page-box-shadow;
+    }
+  }
+
+  &__collapsible-header-visibility-container {
+    @include fd-reset();
+    @include fd-flex-center();
+
+    box-shadow: $fd-dynamic-page-box-shadow;
+    background-color: $fd-dynamic-page-background-color;
+    z-index: 2;
+    min-height: $fd-dynamic-page-button-group-height;
+
+    // left and right gradient for the pin/collapse buttons
+    &--left-gradient {
+      background-image: var(--fdDynamicPage_Button_Left_Gradient);
+      width: $fd-dynamic-page-button-group-width;
+      height: $fd-dynamic-page-button-group-height;
+
+      @include fd-rtl() {
+        background-image: var(--fdDynamicPage_Button_Right_Gradient);
+      }
+    }
+
+    &--right-gradient {
+      background-image: var(--fdDynamicPage_Button_Right_Gradient);
+      width: $fd-dynamic-page-button-group-width;
+      height: $fd-dynamic-page-button-group-height;
+
+      @include fd-rtl() {
+        background-image: var(--fdDynamicPage_Button_Left_Gradient);
+      }
+    }
+
+    &--button-group {
+      @include fd-reset();
+      @include fd-flex-center();
+
+      background: var(--fdDynamicPage_Button_Group_Background);
+      width: 4.25rem;
+      height: $fd-dynamic-page-button-group-height;
+
+      // button styles
+      .#{$block}__pin-button.#{$fd-namespace}-button,
+      .#{$block}__expand-button.#{$fd-namespace}-button,
+      .#{$block}__collapse-button.#{$fd-namespace}-button {
+        @include custom-button();
+      }
+    }
+
+    &[aria-hidden="true"] {
+      display: none;
+    }
+
+    &--no-shadow {
+      @include no-shadow();
+    }
+  }
+
+  &__content {
+    @include fd-reset();
+
+    padding: 1rem 0 0 0;
+    background-color: $fd-dynamic-page-content-background-color;
+    overflow-y: scroll;
+
+    &--sm {
+      @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 0.5rem);
+    }
+
+    &--md,
+    &--lg {
+      @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 2rem);
+    }
+
+    &--xl {
+      @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 3rem);
+    }
+
+    // for list and transparent, different bg colors
+    &--list-bg {
+      background-color: var(--fdDynamicPage_Content_List_Background);
+    }
+
+    &--transparent-bg {
+      background-color: var(--fdDynamicPage_Content_Transparent_Background);
+    }
+  }
+
+  &__footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 $fd-dynamic-page-padding-top-bottom $fd-dynamic-page-padding-top-bottom;
+  }
+}
