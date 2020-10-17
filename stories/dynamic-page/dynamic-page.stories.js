@@ -1,10 +1,8 @@
 export default {
     title: 'Layouts/Dynamic Page',
     parameters: {
-        description: `The dynamic page is the foundation for all pages in SAP Fiori. It is a generic layout designed to support various use cases; there, the content of both the header and page can vary.
-        <br><br>
+        description: `The dynamic page is the foundation for all pages in SAP Fiori. It is a generic layout designed to support various use cases; therefore, the content of both the header and page can vary.
         The header of the dynamic page is collapsible, which helps the users focus on the actual page content but still ensures that important header information and actions are readily available.
-        <br>
 
 ## Usage 
 **Use the dynamic page if:**
@@ -43,8 +41,7 @@ export default {
 
 Note: Footer is optional and used for finalizing page actions. It is usually displayed in edit mode and uses a floating footer bar. You can use <code class="docs-code">fd-dynamic-page\\_\\_footer</code> to affix the footer to the bottom of the page.
 
-Use <code class="docs-code">fd-dynamic-page\\_\\_header-fixed</code> to have a sticky header. Remember this class only positions the header; fixing the 
-position of the content with respect to the header needs some implementation logic. Use this class when your page content is long enough to scroll.
+To display a sticky header, use the <code class="docs-code">fd-dynamic-page\\_\\_header-fixed</code> class instead of the default header element. Note that this class only positions the header, and fixing the position of the content needs further implementation. Only use this class when your page content is long enough to scroll.
 
 ## Modifiers
 | **Description** | <div style="margin-left: 2rem;"> **Modifier class** </div> |
@@ -87,7 +84,7 @@ export const desktop = () => `
                             </ul>
                         </nav>
                         <div class="fd-dynamic-page__title-container">
-                            <h1 class="fd-title fd-dynamic-page__title"> Balenciaga Tripple S Trainers </h1>
+                            <h1 class="fd-title fd-dynamic-page__title"> Balenciaga Triple S Trainers </h1>
                             <div class="fd-dynamic-page__title-content"> Some RANDOM things </div>
                         </div>
                     </div>
@@ -222,7 +219,7 @@ It is also possible to add **Tabs** to the header area, which helps divide the p
 - \`--lg\`
 - \`--xl\`
 
-Also add the modifier classes \`--add-shadow\` to the unordered list, and \`--overflow\` at the parent level for the box-shadow styling.
+In addition, add the modifier classes \`--add-shadow\` to the unordered list, and \`--overflow\` at the parent level for the box-shadow styling.
 `
     }
 };
@@ -242,7 +239,7 @@ export const tablet = () => `
                         </nav>
                         <div class="fd-dynamic-page__title-container">
                             <h1 class="fd-title fd-dynamic-page__title fd-dynamic-page__title--md">
-                                <a href="#" class="fd-link" tabindex="0">Balenciaga Tripple S Trainers </a>
+                                <a href="#" class="fd-link" tabindex="0">Balenciaga Triple S Trainers </a>
                             </h1>
                             <div class="fd-dynamic-page__title-content"> Some RANDOM things </div>
                         </div>
@@ -364,14 +361,14 @@ tablet.parameters = {
 
 | Element | Modifier class |
 | ----------------: | :------------ |
-| Title Area | \`fd-dynamic-page__title-area--md\` |
+| Title area | \`fd-dynamic-page__title-area--md\` |
 | Title | \`fd-dynamic-page__title--md\` |
 | Header | \`fd-dynamic-page__collapsible-header--md\` |
 | Tabs | \`fd-dynamic-page__tabs--md\` |
 | Content | \`fd-dynamic-page__content--md\` |
-| Actions Container| \`fd-dynamic-page__actions-container--md\`|
-| Toolbar Product Actions| \`fd-dynamic-page__toolbar--md\`|
-| Toolbar Layout Actions | \`fd-dynamic-page__toolbar-actions--md\`|
+| Actions container| \`fd-dynamic-page__actions-container--md\`|
+| Toolbar product actions| \`fd-dynamic-page__toolbar--md\`|
+| Toolbar layout actions | \`fd-dynamic-page__toolbar-actions--md\`|
 
  
 It is recommended that the navigation actions are displayed in a separate row above product actions, and are placed at the same level as the breadcrumb component.`
@@ -400,7 +397,7 @@ export const mobile = () => `
                             </div>
                         </div>
                         <div class="fd-dynamic-page__title-container">
-                            <h1 class="fd-title fd-dynamic-page__title"> Balenciaga Tripple S Trainers </h1>
+                            <h1 class="fd-title fd-dynamic-page__title"> Balenciaga Triple S Trainers </h1>
                             <div role="toolbar" aria-label="Header Content" class="fd-dynamic-page__title-content-toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                 <div class="fd-popover fd-toolbar__overflow">
                                     <div class="fd-popover__control">
@@ -530,7 +527,7 @@ mobile.parameters = {
 | Content | \`fd-dynamic-page__content--sm\` |
 | Summary line (optional) | \`fd-dynamic-page__summarized-title-area--sm\` |
  
-Wrap the breadcrumbs and close action in \`fd-dynamic-page__breadcrumb-container\`. The toolbar overflow actions can be directly used; there is no need to wrap it with \`fd-dynamic-page__toolbar-container\` or \`fd-dynamic-page__actions-container\`.
+To display the breadcrumb and close button, they must be wrapped in \`fd-dynamic-page__breadcrumb-container\`. The toolbar overflow actions are functional without being wrapped in an additional container. The title, however, requires \`fd-dynamic-page__toolbar-container\` to be displayed in an overflow toolbar.
 Use \`fd-dynamic-page__title-content-toolbar\` for the title content when it is used in an overflow toolbar.`
     }
 };
@@ -557,7 +554,7 @@ export const mobileCollapsed = () => `
                             </div>
                         </div>
                         <div class="fd-dynamic-page__title-container">
-                            <h1 class="fd-title fd-dynamic-page__title"> Balenciaga Tripple S Trainers </h1>
+                            <h1 class="fd-title fd-dynamic-page__title"> Balenciaga Triple S Trainers </h1>
                             <div role="toolbar" aria-label="Header Content" class="fd-dynamic-page__title-content-toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                 <div class="fd-popover fd-toolbar__overflow">
                                     <div class="fd-popover__control">
@@ -671,14 +668,19 @@ export const mobileCollapsed = () => `
 </div>
 `;
 
-mobileCollapsed.storyName = 'Collapsed Header in Mobile';
+mobileCollapsed.storyName = 'Collapsed Header (mobile)';
+mobileCollapsed.parameters = {
+    docs: {
+        storyDescription: 'In the example below, the dynamic page is displayed with a collapsed header for mobile screens.'
+    }
+};
 
 export const summaryLine = () => `
 <div class="mobile-container">
     <section class="fd-dynamic-page" aria-label="Dynamic Page Mobile Summary Line Example">
         <header class="fd-dynamic-page__header">
             <div class="fd-dynamic-page__summarized-title-area fd-dynamic-page__summarized-title-area--sm fd-dynamic-page__summarized-title-area--no-shadow" tabindex="0">
-                <h1 class="fd-dynamic-page__summarized-title fd-dynamic-page__summarized-title--collapsed"> Balenciaga Tripple S Trainers </h1>
+                <h1 class="fd-dynamic-page__summarized-title fd-dynamic-page__summarized-title--collapsed"> Balenciaga Triple S Trainers </h1>
                 <div role="toolbar" aria-label="Expand summary line action" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                         <button class="fd-button fd-button--transparent" aria-label="Expand">
                             <i class="sap-icon--slim-arrow-down"></i>
@@ -701,7 +703,7 @@ export const summaryLine = () => `
                     </div>
                 </div>
                 <div class="fd-dynamic-page__title-container">
-                    <h1 class="fd-title fd-dynamic-page__title"> Balenciaga Tripple S Trainers </h1>
+                    <h1 class="fd-title fd-dynamic-page__title"> Balenciaga Triple S Trainers </h1>
                         <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                             <button class="fd-button fd-button--transparent" aria-label="More Header Content">
                                 <i class="sap-icon--overflow"></i>
@@ -782,7 +784,7 @@ export const summaryLine = () => `
 </div>
 `;
 
-summaryLine.storyName = 'Summary Line in Mobile';
+summaryLine.storyName = 'Summary Line (mobile)';
 summaryLine.parameters = {
     docs: {
         storyDescription: `It is recommended to add a summary line insead of the expand/collapse header feature so users can better focus on the page content. To display a summary line, 
@@ -804,7 +806,7 @@ export const expandable = () => `
                             </ul>
                         </nav>
                         <div class="fd-dynamic-page__title-container">
-                            <h1 class="fd-title fd-dynamic-page__title"> Balenciaga Tripple S Trainers </h1>
+                            <h1 class="fd-title fd-dynamic-page__title"> Balenciaga Triple S Trainers </h1>
                             <div class="fd-dynamic-page__title-content"> Header with both collapse and pin buttons, expanded by default</div>
                         </div>
                     </div>
@@ -887,7 +889,7 @@ export const collapsedHeader = () => `
                             </ul>
                         </nav>
                         <div class="fd-dynamic-page__title-container">
-                            <h1 class="fd-title fd-dynamic-page__title"> Balenciaga Tripple S Trainers Model 123456AB On Sale </h1>
+                            <h1 class="fd-title fd-dynamic-page__title"> Balenciaga Triple S Trainers Model 123456AB On Sale </h1>
                             <div class="fd-dynamic-page__title-content">Collapsed Header with both expand and pin buttons </div>
                         </div>
                     </div>
@@ -949,6 +951,11 @@ export const collapsedHeader = () => `
 `;
 
 collapsedHeader.storyName = 'Collapsed Header';
+collapsedHeader.parameters = {
+    docs: {
+        storyDescription: 'In the example below, the dynamic page is displayed with a collapsed header for desktop screens.'
+    }
+};
 
 export const onlyCollapse = () => `
     <section class="fd-dynamic-page" aria-label="Dynamic Page Pinnable Example">
@@ -964,7 +971,7 @@ export const onlyCollapse = () => `
                             </ul>
                         </nav>
                         <div class="fd-dynamic-page__title-container">
-                            <h1 class="fd-title fd-dynamic-page__title"> Balenciaga Tripple S Trainers </h1>
+                            <h1 class="fd-title fd-dynamic-page__title"> Balenciaga Triple S Trainers </h1>
                             <div class="fd-dynamic-page__title-content"> The header can only be expanded/collapsed, not pinned. </div>
                         </div>
                     </div>
@@ -1021,4 +1028,9 @@ export const onlyCollapse = () => `
     </section>
 `;
 
-onlyCollapse.storyName = 'Only Expand/Collapse';
+onlyCollapse.storyName = 'Without pin';
+onlyCollapse.parameters = {
+    docs: {
+        storyDescription: 'The dynamic page can be displayed without a pin button, giving users the option to only expand or collapse the header area.'
+    }
+};

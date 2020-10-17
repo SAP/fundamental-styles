@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
+
+
+`;
+
 exports[`Storyshots Layouts/Dynamic Page Collapsed Header 1`] = `
 
     
-`;
-
-exports[`Storyshots Layouts/Dynamic Page Collapsed Header in Mobile 1`] = `
-
-
 `;
 
 exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
@@ -105,7 +105,7 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
               <h1
                 class="fd-title fd-dynamic-page__title"
               >
-                 Balenciaga Tripple S Trainers 
+                 Balenciaga Triple S Trainers 
               </h1>
               
                             
@@ -517,12 +517,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
 
 `;
 
-exports[`Storyshots Layouts/Dynamic Page Only Expand/Collapse 1`] = `
-
-    
-`;
-
-exports[`Storyshots Layouts/Dynamic Page Summary Line in Mobile 1`] = `
+exports[`Storyshots Layouts/Dynamic Page Summary Line (mobile) 1`] = `
 
 
 `;
@@ -629,7 +624,7 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
                   href="#"
                   tabindex="0"
                 >
-                  Balenciaga Tripple S Trainers 
+                  Balenciaga Triple S Trainers 
                 </a>
                 
                             
@@ -1029,4 +1024,9 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
   
 
 </section>
+`;
+
+exports[`Storyshots Layouts/Dynamic Page Without pin 1`] = `
+
+    
 `;
