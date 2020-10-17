@@ -27,7 +27,7 @@ export const standard = () => `
         <li class="fd-feed-list__body">
             <div 
                 class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
-                style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
+                style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
                 role="img" 
                 aria-label="John Doe"
                 title="John Doe">    
@@ -117,7 +117,7 @@ export const linked = () => `
         <li class="fd-feed-list__body">
             <div 
                 class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list--link fd-feed-list__thumb"  
-                style="background-image: url(http://lorempixel.com/460/620/people/7/)"
+                style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
                 role="img" 
                 aria-label="John Doe"
                 title="John Doe"
@@ -153,7 +153,7 @@ export const showMore = () => `
         <li class="fd-feed-list__body">
             <div 
                 class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
-                style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
+                style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
                 role="img" 
                 aria-label="John Doe"
                 title="John Doe"
@@ -187,7 +187,7 @@ export const showLess = () => `
         <li class="fd-feed-list__body">
             <div 
                 class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
-                style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
+                style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
                 role="img" 
                 aria-label="John Doe"
                 title="John Doe"
@@ -221,7 +221,7 @@ export const withActions = () => `
         <li class="fd-feed-list__body">
             <div 
                 class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
-                style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
+                style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
                 role="img" 
                 aria-label="John Doe"
                 title="John Doe">    
@@ -306,7 +306,7 @@ export const group = () => `
         <li class="fd-feed-list__body">
             <div 
                 class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
-                style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
+                style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
                 role="img" 
                 aria-label="John Doe"
                 title="John Doe">    
@@ -327,7 +327,7 @@ export const group = () => `
         <li class="fd-feed-list__body">
             <div
                 class="fd-avatar fd-avatar--s fd-feed-list__thumb"
-                style="background-image: url(http://lorempixel.com/460/620/people/9/)" 
+                style="background-image: url(https://avatars.dicebear.com/api/male/john.svg?mood[]=happy)" 
                 role="img" 
                 aria-label="John Doe"
                 title="John Doe"
@@ -379,7 +379,7 @@ export const borderless = () => `
         <li class="fd-feed-list__body">
             <div 
                 class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
-                style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
+                style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
                 role="img" 
                 aria-label="John Doe"
                 title="John Doe">    
@@ -400,7 +400,7 @@ export const borderless = () => `
         <li class="fd-feed-list__body">
             <div
                 class="fd-avatar fd-avatar--s fd-feed-list__thumb"
-                style="background-image: url(http://lorempixel.com/460/620/people/9/)" 
+                style="background-image: url(https://avatars.dicebear.com/api/male/john.svg?mood[]=happy)" 
                 role="img" 
                 aria-label="John Doe"
                 title="John Doe"
@@ -435,7 +435,7 @@ export const mobile = () => `
                 <div style="display: flex">
                 <div
                     class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
-                    style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
+                    style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
                     role="img" 
                     aria-label="John Doe"
                     title="John Doe">    
@@ -511,7 +511,7 @@ export const rtl = () => `
         <li class="fd-feed-list__body">
             <div 
                 class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
-                style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
+                style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
                 role="img" 
                 aria-label="John Doe"
                 title="John Doe">    
