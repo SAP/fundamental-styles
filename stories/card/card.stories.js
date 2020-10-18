@@ -28,7 +28,7 @@ Subtitle (optional) | The subtitle provides additional context to the title or d
 Counter (optional) | The counter indicates how many items are showing on the card in relation to the total number of relevant items. If all the relevant items are visible on the card, no counter is shown. There is also no counter if there is an issue loading a card, or if no items are found in the filter criteria. The counter is right-aligned and is never truncated.
 `,
         tags: ['f3', 'a11y', 'theme', 'development'],
-        components: ['button', 'avatar', 'badge', 'card', 'object-status', 'numeric-content', 'table', 'checkbox', 'list', 'link']
+        components: ['button', 'avatar', 'badge', 'card', 'object-status', 'numeric-content', 'table', 'checkbox', 'list', 'link', 'icon']
     }
 };
 
@@ -39,7 +39,7 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
             <a class="fd-card__header" tabindex="0">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('http://lorempixel.com/400/400/nature/4/')" 
+                    style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')" 
                     role="presentation" 
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
@@ -61,7 +61,7 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
             <a class="fd-card__header" tabindex="0">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('http://lorempixel.com/400/400/nature/4/')" 
+                    style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')" 
                     role="presentation" 
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
@@ -81,7 +81,7 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
             <a class="fd-card__header" tabindex="0">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('http://lorempixel.com/400/400/nature/4/')" 
+                    style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')" 
                     role="presentation" 
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
@@ -102,7 +102,7 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
             <a class="fd-card__header" tabindex="0">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('http://lorempixel.com/400/400/nature/4/')" 
+                    style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')" 
                     role="presentation" 
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
@@ -568,7 +568,7 @@ export const objectCard = () => `<div style="display:flex; justify-content:space
             <a class="fd-card__header" tabindex="0">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('http://lorempixel.com/400/400/nature/4/')" 
+                    style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')" 
                     role="presentation" 
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
@@ -632,7 +632,7 @@ export const objectCard = () => `<div style="display:flex; justify-content:space
             <a class="fd-card__header" tabindex="0">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('http://lorempixel.com/400/400/nature/4/')" 
+                    style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')" 
                     role="presentation" 
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">

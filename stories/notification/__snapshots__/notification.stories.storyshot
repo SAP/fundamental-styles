@@ -302,7 +302,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
           aria-label="John Doe"
           class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
           role="presentation"
-          style="background-image: url('http://lorempixel.com/400/400/nature/4/')"
+          style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
         />
         
         
@@ -911,7 +911,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
             aria-label="John Doe"
             class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
             role="presentation"
-            style="background-image: url('http://lorempixel.com/400/400/nature/4/')"
+            style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
           />
           
                 
@@ -1387,7 +1387,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
             aria-label="John Doe"
             class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
             role="presentation"
-            style="background-image: url('http://lorempixel.com/400/400/nature/4/')"
+            style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
           />
           
                 
@@ -1863,7 +1863,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
             aria-label="John Doe"
             class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
             role="presentation"
-            style="background-image: url('http://lorempixel.com/400/400/nature/4/')"
+            style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
           />
           
                 

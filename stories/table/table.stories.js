@@ -6,7 +6,7 @@ export default {
         docs: {
             iframeHeight: 500
         },
-        components: ['button', 'checkbox', 'icon', 'link', 'object-status', 'table', 'toolbar']
+        components: ['button', 'form-label', 'fieldset', 'icon', 'link', 'object-status', 'table', 'toolbar', 'pagination', 'popover', 'list', 'toolbar', 'bar', 'dialog', 'input', 'input-group', 'multi-input', 'checkbox']
     }
 };
 
