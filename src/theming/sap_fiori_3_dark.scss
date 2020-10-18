@@ -39,6 +39,7 @@
   --fdAvatar_Placeholder_DefaultColor: var(--sapContent_ContrastTextColor);
   --fdAvatar_Tile_DefaultColor: var(--sapContent_ContrastTextColor);
   --fdAvatar_Border: none;
+  --fdAvatar_Optional_Border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
 
   /* Tabs */
   --fdTabs_Selected_Color: var(--sapSelectedColor);
