@@ -3,7 +3,7 @@
 exports[`Storyshots Components/List/Standard Action 1`] = `
 <section>
   <h4>
-    Standard size
+    Standard Size
   </h4>
   
 
@@ -289,10 +289,8 @@ exports[`Storyshots Components/List/Standard Borderless 1`] = `
 
 exports[`Storyshots Components/List/Standard Default 1`] = `
 <section>
-  
-
   <h4>
-    Standard size
+    Standard Size
   </h4>
   
 
@@ -550,7 +548,7 @@ exports[`Storyshots Components/List/Standard Footer 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/List/Standard Groups 1`] = `
+exports[`Storyshots Components/List/Standard Group 1`] = `
 <ul
   class="fd-list"
   role="list"
@@ -562,7 +560,7 @@ exports[`Storyshots Components/List/Standard Groups 1`] = `
     role="listitem"
   >
     
-    Group Header 1
+    Group header 1
   
   </li>
   
@@ -623,7 +621,7 @@ exports[`Storyshots Components/List/Standard Groups 1`] = `
     role="listitem"
   >
     
-    Group Header 2
+    Group header 2
   
   </li>
   
@@ -682,7 +680,7 @@ exports[`Storyshots Components/List/Standard Groups 1`] = `
 </ul>
 `;
 
-exports[`Storyshots Components/List/Standard Icons 1`] = `
+exports[`Storyshots Components/List/Standard Icon 1`] = `
 <ul
   class="fd-list"
   role="list"
@@ -884,7 +882,7 @@ exports[`Storyshots Components/List/Standard Navigation 1`] = `
 </ul>
 `;
 
-exports[`Storyshots Components/List/Standard Navigation indicator 1`] = `
+exports[`Storyshots Components/List/Standard Navigation indicators 1`] = `
 <ul
   class="fd-list fd-list--navigation fd-list--navigation-indication"
   role="list"
@@ -1033,7 +1031,7 @@ exports[`Storyshots Components/List/Standard Navigation indicator 1`] = `
 </ul>
 `;
 
-exports[`Storyshots Components/List/Standard Secondary Data 1`] = `
+exports[`Storyshots Components/List/Standard Secondary data 1`] = `
 <ul
   class="fd-list"
   role="list"
@@ -1144,7 +1142,7 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
   <h4
     id="XezW11"
   >
-    Standard size
+    Standard Size
   </h4>
   
 
@@ -1417,176 +1415,6 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
         id="Az0bg6"
       >
         List item 3
-      </span>
-      
-  
-    </li>
-    
-
-  </ul>
-  
-
-</section>
-`;
-
-exports[`Storyshots Components/List/Standard Standard 1`] = `
-<section>
-  <h4>
-    Standard Size
-  </h4>
-  
-
-  <ul
-    class="fd-list"
-    role="list"
-  >
-    
-  
-    <li
-      class="fd-list__item"
-      role="listitem"
-      tabindex="0"
-    >
-      
-      
-      <span
-        class="fd-list__title"
-      >
-        List item 1
-      </span>
-      
-  
-    </li>
-    
-  
-    <li
-      class="fd-list__item"
-      role="listitem"
-      tabindex="0"
-    >
-      
-      
-      <span
-        class="fd-list__title"
-      >
-        List item 2
-      </span>
-      
-  
-    </li>
-    
-  
-    <li
-      class="fd-list__item"
-      role="listitem"
-      tabindex="0"
-    >
-      
-      
-      <span
-        class="fd-list__title"
-      >
-        List item 3
-      </span>
-      
-  
-    </li>
-    
-  
-    <li
-      class="fd-list__item"
-      role="listitem"
-      tabindex="0"
-    >
-      
-      
-      <span
-        class="fd-list__title"
-      >
-        List item 4
-      </span>
-      
-  
-    </li>
-    
-
-  </ul>
-  
-
-
-  <h4>
-    Compact Size
-  </h4>
-  
-
-  <ul
-    class="fd-list fd-list--compact"
-    role="list"
-  >
-    
-  
-    <li
-      class="fd-list__item"
-      role="listitem"
-      tabindex="0"
-    >
-      
-      
-      <span
-        class="fd-list__title"
-      >
-        List item 1
-      </span>
-      
-  
-    </li>
-    
-  
-    <li
-      class="fd-list__item"
-      role="listitem"
-      tabindex="0"
-    >
-      
-      
-      <span
-        class="fd-list__title"
-      >
-        List item 2
-      </span>
-      
-  
-    </li>
-    
-  
-    <li
-      class="fd-list__item"
-      role="listitem"
-      tabindex="0"
-    >
-      
-      
-      <span
-        class="fd-list__title"
-      >
-        List item 3
-      </span>
-      
-  
-    </li>
-    
-  
-    <li
-      class="fd-list__item"
-      role="listitem"
-      tabindex="0"
-    >
-      
-      
-      <span
-        class="fd-list__title"
-      >
-        List item 4
       </span>
       
   

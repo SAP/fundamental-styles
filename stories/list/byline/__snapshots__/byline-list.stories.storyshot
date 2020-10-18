@@ -411,7 +411,7 @@ exports[`Storyshots Components/List/Byline Navigation 1`] = `
 </ul>
 `;
 
-exports[`Storyshots Components/List/Byline Navigation indicator 1`] = `
+exports[`Storyshots Components/List/Byline Navigation indicators 1`] = `
 <ul
   class="fd-list fd-list--byline fd-list--navigation fd-list--navigation-indication"
   role="list"

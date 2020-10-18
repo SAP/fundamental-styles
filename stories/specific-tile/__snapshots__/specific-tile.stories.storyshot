@@ -606,8 +606,6 @@ exports[`Storyshots Components/Tile/Specific Feed Tile 1`] = `
 
 exports[`Storyshots Components/Tile/Specific Kpi Tile 1`] = `
 <section>
-  
-
   <h4>
     KPI Tile with L-Size Numeric Content
   </h4>
@@ -1299,8 +1297,6 @@ exports[`Storyshots Components/Tile/Specific Kpi Tile 1`] = `
 
 exports[`Storyshots Components/Tile/Specific Launch Tile 1`] = `
 <section>
-  
-
   <h4>
     Launch Tile With Numeric Content and Launch Icon
   </h4>
@@ -2020,8 +2016,6 @@ exports[`Storyshots Components/Tile/Specific Launch Tile 1`] = `
 
 exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
 <section>
-  
-
   <h4>
     Line Tile - Floating Behaviour, Cozy Mode
   </h4>

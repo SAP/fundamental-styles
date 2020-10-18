@@ -12,8 +12,7 @@ text, KPIs, counters and charts.
     }
 };
 
-export const launchTile = () => `
-<h4>Launch Tile With Numeric Content and Launch Icon</h4>
+export const launchTile = () => `<h4>Launch Tile With Numeric Content and Launch Icon</h4>
 <br>
 <div class="fddocs-container">
     <div role="button" tabindex="0" class="fd-tile fd-tile--launch">
@@ -196,8 +195,7 @@ The header can contain a maximum of 3 lines; all 3 lines can be used for the tit
         ` }
 };
 
-export const kpiTile = () => `
-<h4>KPI Tile with L-Size Numeric Content</h4>
+export const kpiTile = () => `<h4>KPI Tile with L-Size Numeric Content</h4>
 <div class="fddocs-container">
     <div role="button" tabindex="0" class="fd-tile fd-tile--kpi">
         <div class="fd-tile__header">
@@ -715,8 +713,7 @@ In action mode view, the close button is displayed on the top right-hand corner 
         ` }
 };
 
-export const lineTile = () => `
-<h4>Line Tile - Floating Behaviour, Cozy Mode</h4>
+export const lineTile = () => `<h4>Line Tile - Floating Behaviour, Cozy Mode</h4>
 <div class="fd-tile-container">
     <div role="button" tabindex="0" class="fd-tile fd-tile--line">
         <div class="fd-tile__header">
