@@ -22,29 +22,28 @@ export default {
     }
 };
 
-export const standard = () => `
-    <ul class="fd-feed-list" aria-label="Feed List Item default example">
-        <li class="fd-feed-list__body">
-            <div 
-                class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
-                style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
-                role="img" 
-                aria-label="John Doe"
-                title="John Doe">    
+export const standard = () => `<ul class="fd-feed-list" aria-label="Feed List Item default example">
+    <li class="fd-feed-list__body">
+        <div 
+            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
+            role="img" 
+            aria-label="John Doe"
+            title="John Doe">    
+        </div>
+         
+        <div class="fd-feed-list__content">
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Joe Doe: </span>
+                Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
+            </p>
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
             </div>
-             
-            <div class="fd-feed-list__content">
-                <p class="fd-feed-list__text">
-                    <span class="fd-feed-list__name">Joe Doe: </span>
-                    Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
-                </p>
-                <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
-                    <small class="fd-feed-list__footer--byline">Reply</small>
-                </div>
-            </div>
-        </li>
-    </ul>
+        </div>
+    </li>
+</ul>
 `;
 
 standard.storyName = 'Standard';
@@ -54,30 +53,29 @@ standard.parameters = {
     }
 };
 
-export const placeHolderImage = () => `
-    <ul class="fd-feed-list" aria-label="Feed List Item placeholder user image example">
-        <li class="fd-feed-list__body">
-            <div 
-                class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb" 
-                role="img" 
-                aria-label="John Doe"
-                title="John Doe">
-                <i class="sap-icon--person-placeholder"></i>
-            </div>
+export const placeHolderImage = () => `<ul class="fd-feed-list" aria-label="Feed List Item placeholder user image example">
+    <li class="fd-feed-list__body">
+        <div 
+            class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb" 
+            role="img" 
+            aria-label="John Doe"
+            title="John Doe">
+            <i class="sap-icon--person-placeholder"></i>
+        </div>
 
-            <div class="fd-feed-list__content">
-                <p class="fd-feed-list__text">
-                    <span class="fd-feed-list__name">Joe Doe: </span>
-                    Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
-                </p>
-                
-                <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
-                    <small class="fd-feed-list__footer--byline">Reply</small>
-                </div>
+        <div class="fd-feed-list__content">
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Joe Doe: </span>
+                Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
+            </p>
+            
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
             </div>
-        </li>
-    </ul>
+        </div>
+    </li>
+</ul>
 `;
 
 placeHolderImage.storyName = 'Placeholder image';
@@ -87,22 +85,21 @@ placeHolderImage.parameters = {
     }
 };
 
-export const noImage = () => `
-    <ul class="fd-feed-list" aria-label="Feed List Item without user image example">
-        <li class="fd-feed-list__body">     
-            <div class="fd-feed-list__content">
-                <p class="fd-feed-list__text">
-                    <span class="fd-feed-list__name">Joe Doe: </span>
-                    Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
-                </p>
-                
-                <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
-                    <small class="fd-feed-list__footer--byline">Reply</small>
-                </div>
+export const noImage = () => `<ul class="fd-feed-list" aria-label="Feed List Item without user image example">
+    <li class="fd-feed-list__body">     
+        <div class="fd-feed-list__content">
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Joe Doe: </span>
+                Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
+            </p>
+            
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
             </div>
-        </li>
-    </ul>
+        </div>
+    </li>
+</ul>
 `;
 
 noImage.storyName = 'No image';
@@ -112,33 +109,32 @@ noImage.parameters = {
     }
 };
 
-export const linked = () => `
-    <ul class="fd-feed-list" aria-label="Feed List Item with user link example">
-        <li class="fd-feed-list__body">
-            <div 
-                class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list--link fd-feed-list__thumb"  
-                style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
-                role="img" 
-                aria-label="John Doe"
-                title="John Doe"
-                tabindex="0"
-            ></div>
-                 
-            <div class="fd-feed-list__content">
-                <p class="fd-feed-list__text">
-                    <span class="fd-feed-list__name">
-                        <a href="#" class="fd-link fd-link--emphasized">Joe Doe: </a> 
-                    </span>
-                    Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
-                </p>
-                
-                <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
-                    <small class="fd-feed-list__footer--byline">Reply</small>
-                </div>
+export const linked = () => `<ul class="fd-feed-list" aria-label="Feed List Item with user link example">
+    <li class="fd-feed-list__body">
+        <div 
+            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list--link fd-feed-list__thumb"  
+            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+            role="img" 
+            aria-label="John Doe"
+            title="John Doe"
+            tabindex="0"
+        ></div>
+             
+        <div class="fd-feed-list__content">
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">
+                    <a href="#" class="fd-link fd-link--emphasized">Joe Doe: </a> 
+                </span>
+                Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
+            </p>
+            
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
             </div>
-        </li>
-    </ul>
+        </div>
+    </li>
+</ul>
 `;
 
 linked.storyName = 'Linked';
@@ -148,31 +144,30 @@ linked.parameters = {
     }
 };
 
-export const showMore = () => `
-    <ul class="fd-feed-list" aria-label="Feed List Item with show more text example">
-        <li class="fd-feed-list__body">
-            <div 
-                class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
-                style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
-                role="img" 
-                aria-label="John Doe"
-                title="John Doe"
-            ></div>
-                 
-            <div class="fd-feed-list__content">
-                <p class="fd-feed-list__text">
-                    <span class="fd-feed-list__name">Joe Doe: </span>
-                    <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. Morbi tempor eu elit eu consequat. Sed at lorem a ex consequat pharetra. Etiam convallis odio at vulputate venenatis. In sit amet pharetra urna. Ut nulla nisi, porta at ligula a, elementum ullamcorper lectus. Suspendisse blandit, risus nec vestibulum volutpat, nulla neque rhoncus dolor, vitae rutrum lectus neque nec ligula. Maecenas pulvinar, ligula nec fringilla volutpat, urna quam rutrum tellus, vi...
-                    <a class="fd-link fd-feed-list__link--more" tabindex="0">More</a>        
-                </p>
-                
-                <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
-                    <small class="fd-feed-list__footer--byline">Reply</small>
-                </div>
+export const showMore = () => `<ul class="fd-feed-list" aria-label="Feed List Item with show more text example">
+    <li class="fd-feed-list__body">
+        <div 
+            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
+            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
+            role="img" 
+            aria-label="John Doe"
+            title="John Doe"
+        ></div>
+             
+        <div class="fd-feed-list__content">
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Joe Doe: </span>
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. Morbi tempor eu elit eu consequat. Sed at lorem a ex consequat pharetra. Etiam convallis odio at vulputate venenatis. In sit amet pharetra urna. Ut nulla nisi, porta at ligula a, elementum ullamcorper lectus. Suspendisse blandit, risus nec vestibulum volutpat, nulla neque rhoncus dolor, vitae rutrum lectus neque nec ligula. Maecenas pulvinar, ligula nec fringilla volutpat, urna quam rutrum tellus, vi...
+                <a class="fd-link fd-feed-list__link--more" tabindex="0">More</a>        
+            </p>
+            
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
             </div>
-        </li>
-    </ul>
+        </div>
+    </li>
+</ul>
 `;
 
 showMore.storyName = 'Show more';
@@ -182,31 +177,30 @@ showMore.parameters = {
     }
 };
 
-export const showLess = () => `
-    <ul class="fd-feed-list" aria-label="Feed List Item with show less text example">
-        <li class="fd-feed-list__body">
-            <div 
-                class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
-                style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
-                role="img" 
-                aria-label="John Doe"
-                title="John Doe"
-            ></div>
-                 
-            <div class="fd-feed-list__content">
-                <p class="fd-feed-list__text">
-                    <span class="fd-feed-list__name">Joe Doe: </span>
-                    <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. Morbi tempor eu elit eu consequat. Sed at lorem a ex consequat pharetra. Etiam convallis odio at vulputate venenatis. In sit amet pharetra urna. Ut nulla nisi, porta at ligula a, elementum ullamcorper lectus. Suspendisse blandit, risus nec vestibulum volutpat, nulla neque rhoncus dolor, vitae rutrum lectus neque nec ligula. Maecenas pulvinar, ligula nec fringilla volutpat, urna quam rutrum tellus, vitae elementum elit est malesuada nunc. Maecenas eu risus posuere, volutpat justo in, ultricies sem
-                    <a class="fd-link fd-feed-list__link--more" tabindex="0">Less</a>        
-                </p>
-                
-                <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
-                    <small class="fd-feed-list__footer--byline">Reply</small>
-                </div>
+export const showLess = () => `<ul class="fd-feed-list" aria-label="Feed List Item with show less text example">
+    <li class="fd-feed-list__body">
+        <div 
+            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
+            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
+            role="img" 
+            aria-label="John Doe"
+            title="John Doe"
+        ></div>
+             
+        <div class="fd-feed-list__content">
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Joe Doe: </span>
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. Morbi tempor eu elit eu consequat. Sed at lorem a ex consequat pharetra. Etiam convallis odio at vulputate venenatis. In sit amet pharetra urna. Ut nulla nisi, porta at ligula a, elementum ullamcorper lectus. Suspendisse blandit, risus nec vestibulum volutpat, nulla neque rhoncus dolor, vitae rutrum lectus neque nec ligula. Maecenas pulvinar, ligula nec fringilla volutpat, urna quam rutrum tellus, vitae elementum elit est malesuada nunc. Maecenas eu risus posuere, volutpat justo in, ultricies sem
+                <a class="fd-link fd-feed-list__link--more" tabindex="0">Less</a>        
+            </p>
+            
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
             </div>
-        </li>
-    </ul>
+        </div>
+    </li>
+</ul>
 `;
 
 showLess.storyName = 'Show less';
@@ -216,62 +210,61 @@ showLess.parameters = {
     }
 };
 
-export const withActions = () => `
-    <ul class="fd-feed-list" aria-label="Feed List Item with popover actions example">
-        <li class="fd-feed-list__body">
-            <div 
-                class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
-                style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
-                role="img" 
-                aria-label="John Doe"
-                title="John Doe">    
-            </div>   
-            
-            <div class="fd-feed-list__content">
-                <div class="fd-feed-list__actions">
-                    <div class="fd-popover">
-                        <div class="fd-popover__control">
-                            <button class="fd-button fd-button--compact fd-button--transparent" 
-                                    aria-label="More Options" aria-controls="actionSheetDesktop" aria-expanded="false" 
-                                    aria-haspopup="true" onclick="onPopoverClick('actionSheetDesktop');">
-                                <i class="sap-icon--overflow"></i>
-                            </button>
-                        </div>
-                        <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="actionSheetDesktop">
-                            <ul class="fd-action-sheet fd-action-sheet--compact" role="list" aria-label="List of contextual options">
-                                <li class="fd-action-sheet__item" role="listitem">
-                                    <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                                        <i class="sap-icon--attachment"></i>
-                                        <span class="fd-button__text">Button 1</span>
-                                    </button>
-                                </li>
-                                <li class="fd-action-sheet__item" role="listitem">
-                                    <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                                        <i class="sap-icon--add"></i>
-                                        <span class="fd-button__text">Button 2</span>
-                                    </button>
-                                </li>
-                                <li class="fd-action-sheet__item" role="listitem">
-                                    <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                                        <i class="sap-icon--print"></i>
-                                        <span class="fd-button__text">Button 3</span>
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
+export const withActions = () => `<ul class="fd-feed-list" aria-label="Feed List Item with popover actions example">
+    <li class="fd-feed-list__body">
+        <div 
+            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
+            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
+            role="img" 
+            aria-label="John Doe"
+            title="John Doe">    
+        </div>   
+        
+        <div class="fd-feed-list__content">
+            <div class="fd-feed-list__actions">
+                <div class="fd-popover">
+                    <div class="fd-popover__control">
+                        <button class="fd-button fd-button--compact fd-button--transparent" 
+                                aria-label="More Options" aria-controls="actionSheetDesktop" aria-expanded="false" 
+                                aria-haspopup="true" onclick="onPopoverClick('actionSheetDesktop');">
+                            <i class="sap-icon--overflow"></i>
+                        </button>
+                    </div>
+                    <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="actionSheetDesktop">
+                        <ul class="fd-action-sheet fd-action-sheet--compact" role="list" aria-label="List of contextual options">
+                            <li class="fd-action-sheet__item" role="listitem">
+                                <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                    <i class="sap-icon--attachment"></i>
+                                    <span class="fd-button__text">Button 1</span>
+                                </button>
+                            </li>
+                            <li class="fd-action-sheet__item" role="listitem">
+                                <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                    <i class="sap-icon--add"></i>
+                                    <span class="fd-button__text">Button 2</span>
+                                </button>
+                            </li>
+                            <li class="fd-action-sheet__item" role="listitem">
+                                <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                    <i class="sap-icon--print"></i>
+                                    <span class="fd-button__text">Button 3</span>
+                                </button>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <p class="fd-feed-list__text">
-                    <span class="fd-feed-list__name">Joe Doe: </span>
-                    <span>In hac habitasse platea dictumst. Fusce eu dui viverra, dictum justo in, pul aug. Praesent aliquam massa non lectus commodo, id vestibulum lectus auctor. Proin lorem quam, accumsan ac dui et, cursus ornare dui. Nunc ultricies dolor felis, in viverra mi venenatis in. Sed vel nisl a dui posuere ullamcorper. Donec posuere id massa at dictum. Suspendisse potenti.</span>
-                </p>                 
-                <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
-                    <small class="fd-feed-list__footer--byline">Reply</small>
-                </div>
-            </div>        
-        </li>
-    </ul>
+            </div>
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Joe Doe: </span>
+                <span>In hac habitasse platea dictumst. Fusce eu dui viverra, dictum justo in, pul aug. Praesent aliquam massa non lectus commodo, id vestibulum lectus auctor. Proin lorem quam, accumsan ac dui et, cursus ornare dui. Nunc ultricies dolor felis, in viverra mi venenatis in. Sed vel nisl a dui posuere ullamcorper. Donec posuere id massa at dictum. Suspendisse potenti.</span>
+            </p>                 
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
+            </div>
+        </div>        
+    </li>
+</ul>
 `;
 
 withActions.storyName = 'Actions';
@@ -281,70 +274,68 @@ withActions.parameters = {
     }
 };
 
-export const group = () => `
-    <ul class="fd-feed-list fd-feed-list--group" aria-label="Feed List Item group example">
-        <li class="fd-feed-list__body">
-            <div
-                class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb" 
-                role="img" 
-                aria-label="John Doe"
-                title="John Doe">
-                    <i class="sap-icon--person-placeholder"></i>
-            </div> 
-            <div class="fd-feed-list__content">
-                <p class="fd-feed-list__text">
-                    <span class="fd-feed-list__name">Cruz: </span>
-                    <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
-                </p>
-                <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--byline">Aug 21, 2020</small>
-                    <small class="fd-feed-list__footer--byline">Reply</small>
-                </div>
+export const group = () => ` <ul class="fd-feed-list fd-feed-list--group" aria-label="Feed List Item group example">
+    <li class="fd-feed-list__body">
+        <div
+            class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb" 
+            role="img" 
+            aria-label="John Doe"
+            title="John Doe">
+                <i class="sap-icon--person-placeholder"></i>
+        </div> 
+        <div class="fd-feed-list__content">
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Cruz: </span>
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
+            </p>
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 21, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
             </div>
-       </li>
-       
-        <li class="fd-feed-list__body">
-            <div 
-                class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
-                style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
-                role="img" 
-                aria-label="John Doe"
-                title="John Doe">    
+        </div>
+   </li>
+   
+    <li class="fd-feed-list__body">
+        <div 
+            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
+            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
+            role="img" 
+            aria-label="John Doe"
+            title="John Doe">    
+        </div>
+     
+        <div class="fd-feed-list__content">
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Joe Doe: </span>
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
+            </p>
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 22, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
             </div>
-         
-            <div class="fd-feed-list__content">
-                <p class="fd-feed-list__text">
-                    <span class="fd-feed-list__name">Joe Doe: </span>
-                    <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
-                </p>
-                <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--byline">Aug 22, 2020</small>
-                    <small class="fd-feed-list__footer--byline">Reply</small>
-                </div>
-            </div>     
-        </li>
-        
-        <li class="fd-feed-list__body">
-            <div
-                class="fd-avatar fd-avatar--s fd-feed-list__thumb"
-                style="background-image: url(https://avatars.dicebear.com/api/male/john.svg?mood[]=happy)" 
-                role="img" 
-                aria-label="John Doe"
-                title="John Doe"
-            ></div> 
-            <div class="fd-feed-list__content">
-                <p class="fd-feed-list__text">
-                    <span class="fd-feed-list__name">Sanchez: </span>
-                    <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
-                </p>
-                <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
-                    <small class="fd-feed-list__footer--byline">Reply</small>
-                </div>
+        </div>     
+    </li>
+    
+    <li class="fd-feed-list__body">
+        <div
+            class="fd-avatar fd-avatar--s fd-feed-list__thumb"
+            style="background-image: url(https://avatars.dicebear.com/api/male/john.svg?mood[]=happy)" 
+            role="img" 
+            aria-label="John Doe"
+            title="John Doe"
+        ></div> 
+        <div class="fd-feed-list__content">
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Sanchez: </span>
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
+            </p>
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
             </div>
-       </li>
-    </ul>
-</div>
+        </div>
+   </li>
+</ul>
 `;
 
 group.storyName = 'Group';
@@ -354,70 +345,68 @@ group.parameters = {
     }
 };
 
-export const borderless = () => `
-    <ul class="fd-feed-list fd-feed-list--group fd-feed-list--no-border" aria-label="Feed List Item group example">
-        <li class="fd-feed-list__body">
-            <div
-                class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb" 
-                role="img" 
-                aria-label="John Doe"
-                title="John Doe">
-                    <i class="sap-icon--person-placeholder"></i>
-            </div> 
-            <div class="fd-feed-list__content">
-                <p class="fd-feed-list__text">
-                    <span class="fd-feed-list__name">Cruz: </span>
-                    <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
-                </p>
-                <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--byline">Aug 21, 2020</small>
-                    <small class="fd-feed-list__footer--byline">Reply</small>
-                </div>
+export const borderless = () => `<ul class="fd-feed-list fd-feed-list--group fd-feed-list--no-border" aria-label="Feed List Item group example">
+    <li class="fd-feed-list__body">
+        <div
+            class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb" 
+            role="img" 
+            aria-label="John Doe"
+            title="John Doe">
+                <i class="sap-icon--person-placeholder"></i>
+        </div> 
+        <div class="fd-feed-list__content">
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Cruz: </span>
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
+            </p>
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 21, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
             </div>
-       </li>
-       
-        <li class="fd-feed-list__body">
-            <div 
-                class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
-                style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
-                role="img" 
-                aria-label="John Doe"
-                title="John Doe">    
+        </div>
+   </li>
+   
+    <li class="fd-feed-list__body">
+        <div 
+            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
+            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
+            role="img" 
+            aria-label="John Doe"
+            title="John Doe">    
+        </div>
+     
+        <div class="fd-feed-list__content">
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Joe Doe: </span>
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
+            </p>
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 22, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
             </div>
-         
-            <div class="fd-feed-list__content">
-                <p class="fd-feed-list__text">
-                    <span class="fd-feed-list__name">Joe Doe: </span>
-                    <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
-                </p>
-                <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--byline">Aug 22, 2020</small>
-                    <small class="fd-feed-list__footer--byline">Reply</small>
-                </div>
-            </div>     
-        </li>
-        
-        <li class="fd-feed-list__body">
-            <div
-                class="fd-avatar fd-avatar--s fd-feed-list__thumb"
-                style="background-image: url(https://avatars.dicebear.com/api/male/john.svg?mood[]=happy)" 
-                role="img" 
-                aria-label="John Doe"
-                title="John Doe"
-            ></div> 
-            <div class="fd-feed-list__content">
-                <p class="fd-feed-list__text">
-                    <span class="fd-feed-list__name">Sanchez: </span>
-                    <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
-                </p>
-                <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
-                    <small class="fd-feed-list__footer--byline">Reply</small>
-                </div>
+        </div>     
+    </li>
+    
+    <li class="fd-feed-list__body">
+        <div
+            class="fd-avatar fd-avatar--s fd-feed-list__thumb"
+            style="background-image: url(https://avatars.dicebear.com/api/male/john.svg?mood[]=happy)" 
+            role="img" 
+            aria-label="John Doe"
+            title="John Doe"
+        ></div> 
+        <div class="fd-feed-list__content">
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Sanchez: </span>
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
+            </p>
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
             </div>
-       </li>
-    </ul>
-</div>
+        </div>
+   </li>
+</ul>
 `;
 
 borderless.storyName = 'Borderless group';
@@ -427,8 +416,7 @@ borderless.parameters = {
     }
 };
 
-export const mobile = () => `
-<div style="width: 350px; height: 600px; position: relative">
+export const mobile = () => `<div style="width: 350px; height: 600px; position: relative">
     <ul class="fd-feed-list fd-feed-list--s" aria-label="Feed List Item small size example">
         <li class="fd-feed-list__body">
             <div style="display: flex; justify-content: space-between">
@@ -465,34 +453,34 @@ export const mobile = () => `
                 </p>
             </div>
             <div class="fd-action-sheet__wrapper" id="actionSheetPhone">
-        <h6 class="fd-action-sheet__title">Press cancel to hide action sheet</h6>
-        <ul class="fd-action-sheet fd-action-sheet--mobile" role="list" aria-label="List of contextual options">
-            <li class="fd-action-sheet__item" role="listitem">
-                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--attachment"></i>
-                    <span class="fd-button__text">Button 1</span>
-                </button>
-            </li>
-            <li class="fd-action-sheet__item" role="listitem">
-                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--add"></i>
-                    <span class="fd-button__text">Button 2</span>
-                </button>
-            </li>
-            <li class="fd-action-sheet__item" role="listitem">
-                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--print"></i>
-                    <span class="fd-button__text">Button 3</span>
-                </button>
-            </li>
-            <li class="fd-action-sheet__item" role="listitem">
-                <button class="fd-button fd-button--full-width fd-button--negative"
-                        onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
-                    <span class="fd-button__text">Cancel</span>
-                </button>
-            </li>
-        </ul>
-    </div>
+                <h6 class="fd-action-sheet__title">Press cancel to hide action sheet</h6>
+                <ul class="fd-action-sheet fd-action-sheet--mobile" role="list" aria-label="List of contextual options">
+                    <li class="fd-action-sheet__item" role="listitem">
+                        <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
+                            <i class="sap-icon--attachment"></i>
+                            <span class="fd-button__text">Button 1</span>
+                        </button>
+                    </li>
+                    <li class="fd-action-sheet__item" role="listitem">
+                        <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
+                            <i class="sap-icon--add"></i>
+                            <span class="fd-button__text">Button 2</span>
+                        </button>
+                    </li>
+                    <li class="fd-action-sheet__item" role="listitem">
+                        <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
+                            <i class="sap-icon--print"></i>
+                            <span class="fd-button__text">Button 3</span>
+                        </button>
+                    </li>
+                    <li class="fd-action-sheet__item" role="listitem">
+                        <button class="fd-button fd-button--full-width fd-button--negative"
+                                onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
+                            <span class="fd-button__text">Cancel</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </li> 
     </ul>
 </div>
@@ -505,8 +493,7 @@ mobile.parameters = {
     }
 };
 
-export const rtl = () => `
-<div dir="rtl">
+export const rtl = () => `<div dir="rtl">
     <ul class="fd-feed-list" aria-label="Feed List Item with RTL direction example">
         <li class="fd-feed-list__body">
             <div 
@@ -522,12 +509,12 @@ export const rtl = () => `
                     <div class="fd-popover">
                         <div class="fd-popover__control">
                             <button class="fd-button fd-button--compact fd-button--transparent" 
-                                    aria-label="More Options" aria-controls="actionSheetDesktop" aria-expanded="false" 
-                                    aria-haspopup="true" onclick="onPopoverClick('actionSheetDesktop');">
+                                    aria-label="More Options" aria-controls="actionSheetDesktopRTL" aria-expanded="false" 
+                                    aria-haspopup="true" onclick="onPopoverClick('actionSheetDesktopRTL');">
                                 <i class="sap-icon--overflow"></i>
                             </button>
                         </div>
-                        <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="actionSheetDesktop">
+                        <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="actionSheetDesktopRTL">
                             <ul class="fd-action-sheet fd-action-sheet--compact" role="list" aria-label="List of contextual options">
                                 <li class="fd-action-sheet__item" role="listitem">
                                     <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
@@ -562,9 +549,7 @@ export const rtl = () => `
                     <small class="fd-feed-list__footer--byline">Reply</small>
                 </div>
             </div>          
-        </li>
-        
-        
+        </li>    
     </ul>
 </div>
 `;
