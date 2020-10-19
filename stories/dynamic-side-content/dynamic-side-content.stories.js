@@ -36,8 +36,7 @@ Note: For all screens < 720px, the side content disappears entirely.
     }
 };
 
-export const positionLeft = () => `
-    <div class="fd-dynamic-side">
+export const positionLeft = () => `    <div class="fd-dynamic-side">
         <div class="fd-dynamic-side__side">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-6">Side</div>
         </div>
@@ -56,8 +55,7 @@ positionLeft.parameters = {
     }
 };
 
-export const positionRight = () => `
-    <div class="fd-dynamic-side">
+export const positionRight = () => `    <div class="fd-dynamic-side">
         <div class="fd-dynamic-side__main">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-9">Main</div>
         </div>
@@ -76,8 +74,7 @@ positionRight.parameters = {
     }
 };
 
-export const positionBottom = () => `
-    <div class="fd-dynamic-side fd-dynamic-side--below">
+export const positionBottom = () => `    <div class="fd-dynamic-side fd-dynamic-side--below">
         <div class="fd-dynamic-side__main">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-9">Main</div>
         </div>
@@ -96,8 +93,7 @@ positionBottom.parameters = {
     }
 };
 
-export const equalSplit = () => `
-    <div class="fd-dynamic-side fd-dynamic-side--equal-split">
+export const equalSplit = () => `    <div class="fd-dynamic-side fd-dynamic-side--equal-split">
         <div class="fd-dynamic-side__main">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-9">Main</div>
         </div>

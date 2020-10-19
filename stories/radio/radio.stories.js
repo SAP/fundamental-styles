@@ -20,8 +20,7 @@ In special cases, there are only two mutually exclusive options. Combine them in
     }
 };
 
-export const primary = () => `
-<div style="display:flex;justify-content:space-between">
+export const primary = () => `<div style="display:flex;justify-content:space-between">
     <fieldset class="fd-fieldset" id="radio1">
         <legend class="fd-fieldset__legend">Radio Buttons Cozy Mode</legend>
         <div class="fd-form__group">
@@ -91,8 +90,7 @@ primary.parameters = {
     }
 };
 
-export const inline = () => `
-<fieldset class="fd-fieldset" id="radio4">
+export const inline = () => `<fieldset class="fd-fieldset" id="radio4">
     <legend class="fd-fieldset__legend">Inline Radio buttons</legend>
         <div class="fd-form-group fd-form-group--inline">
             <div class="fd-form-group__item fd-form-item">
@@ -129,8 +127,7 @@ Do not put two radio button groups right next to each other as it is difficult t
     }
 };
 
-export const interactionStates = () => `
-<div style="display:flex;justify-content:space-between">
+export const interactionStates = () => `<div style="display:flex;justify-content:space-between">
     <fieldset class="fd-fieldset" id="radio5">
         <legend class="fd-fieldset__legend">Interaction States</legend>
         <div class="fd-form-group">

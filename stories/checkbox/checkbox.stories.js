@@ -146,8 +146,7 @@ mobile.parameters = {
     }
 };
 
-export const inline = () => `
-<fieldset class="fd-fieldset">
+export const inline = () => `<fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Inline checkboxes</legend>
     <div class="fd-form-group fd-form-group--inline">
         <div class="fd-form-group__item fd-form-item">

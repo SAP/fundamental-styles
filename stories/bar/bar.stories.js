@@ -39,8 +39,7 @@ export default {
     }
 };
 
-export const Default = () => `
-<div class="fd-bar">
+export const Default = () => `<div class="fd-bar">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
             <button aria-label="button" class="fd-button fd-button--transparent">
@@ -88,8 +87,7 @@ Default.parameters = {
     }
 };
 
-export const Cozy = () => `
-<div class="fd-bar fd-bar--cozy">
+export const Cozy = () => `<div class="fd-bar fd-bar--cozy">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
             <button aria-label="button" class="fd-button fd-button--transparent">

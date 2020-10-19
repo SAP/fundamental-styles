@@ -2,8 +2,6 @@
 
 exports[`Storyshots Components/Token Compact Token 1`] = `
 <section>
-  
-
   <span
     class="fd-token fd-token--compact"
     role="button"
@@ -113,8 +111,6 @@ exports[`Storyshots Components/Token Compact Token 1`] = `
 
 exports[`Storyshots Components/Token Compact Tokenizer 1`] = `
 <section>
-  
-
   <div
     class="fd-tokenizer fd-tokenizer--compact"
   >
@@ -410,8 +406,6 @@ exports[`Storyshots Components/Token Compact Tokenizer 1`] = `
 
 exports[`Storyshots Components/Token Cozy Tokenizer 1`] = `
 <section>
-  
-
   <div
     class="fd-tokenizer "
   >
@@ -707,8 +701,6 @@ exports[`Storyshots Components/Token Cozy Tokenizer 1`] = `
 
 exports[`Storyshots Components/Token Primary 1`] = `
 <section>
-  
-
   <span
     class="fd-token"
     role="button"
@@ -818,8 +810,6 @@ exports[`Storyshots Components/Token Primary 1`] = `
 
 exports[`Storyshots Components/Token Read Only Token 1`] = `
 <section>
-  
-
   <span
     class="fd-token fd-token--readonly"
     role="button"
@@ -900,14 +890,282 @@ exports[`Storyshots Components/Token Read Only Token 1`] = `
 `;
 
 exports[`Storyshots Components/Token Scrollable Tokenizer 1`] = `
+<div
+  class="fd-tokenizer fd-tokenizer--scrollable"
+>
+  
+    
+  <div
+    class="fd-tokenizer__inner"
+    id="tokenizer-scrollable"
+  >
+    
+        
+    <span
+      class="fd-token"
+      role="button"
+      tabindex="0"
+    >
+      
+            
+      <span
+        class="fd-token__text"
+      >
+        
+                Long Token Option 1
+            
+      </span>
+      
+            
+      <button
+        aria-label="Token close"
+        class="fd-token__close"
+        tabindex="-1"
+      />
+      
+        
+    </span>
+    
+        
+    <span
+      class="fd-token"
+      role="button"
+      tabindex="0"
+    >
+      
+            
+      <span
+        class="fd-token__text"
+      >
+        
+                Long Token Option 2
+            
+      </span>
+      
+            
+      <button
+        aria-label="Token close"
+        class="fd-token__close"
+        tabindex="-1"
+      />
+      
+        
+    </span>
+    
+        
+    <span
+      class="fd-token"
+      role="button"
+      tabindex="0"
+    >
+      
+            
+      <span
+        class="fd-token__text"
+      >
+        
+                Long Token Option 3
+            
+      </span>
+      
+            
+      <button
+        aria-label="Token close"
+        class="fd-token__close"
+        tabindex="-1"
+      />
+      
+        
+    </span>
+    
+        
+    <span
+      class="fd-token"
+      role="button"
+      tabindex="0"
+    >
+      
+            
+      <span
+        class="fd-token__text"
+      >
+        
+                Long Token Option 4
+            
+      </span>
+      
+            
+      <button
+        aria-label="Token close"
+        class="fd-token__close"
+        tabindex="-1"
+      />
+      
+        
+    </span>
+    
+        
+    <span
+      class="fd-token"
+      role="button"
+      tabindex="0"
+    >
+      
+            
+      <span
+        class="fd-token__text"
+      >
+        
+                Long Token Option 5
+            
+      </span>
+      
+            
+      <button
+        aria-label="Token close"
+        class="fd-token__close"
+        tabindex="-1"
+      />
+      
+        
+    </span>
+    
+        
+    <span
+      class="fd-token"
+      role="button"
+      tabindex="0"
+    >
+      
+            
+      <span
+        class="fd-token__text"
+      >
+        
+                Long Token Option 6
+            
+      </span>
+      
+            
+      <button
+        aria-label="Token close"
+        class="fd-token__close"
+        tabindex="-1"
+      />
+      
+        
+    </span>
+    
+        
+    <span
+      class="fd-token"
+      role="button"
+      tabindex="0"
+    >
+      
+            
+      <span
+        class="fd-token__text"
+      >
+        
+                Long Token Option 7
+            
+      </span>
+      
+            
+      <button
+        aria-label="Token close"
+        class="fd-token__close"
+        tabindex="-1"
+      />
+      
+        
+    </span>
+    
+        
+    <span
+      class="fd-token"
+      role="button"
+      tabindex="0"
+    >
+      
+            
+      <span
+        class="fd-token__text"
+      >
+        
+                Long Token Option 8
+            
+      </span>
+      
+            
+      <button
+        aria-label="Token close"
+        class="fd-token__close"
+        tabindex="-1"
+      />
+      
+        
+    </span>
+    
+        
+    <span
+      class="fd-token"
+      role="button"
+      tabindex="0"
+    >
+      
+            
+      <span
+        class="fd-token__text"
+      >
+        
+                Long Token Option 9
+            
+      </span>
+      
+            
+      <button
+        aria-label="Token close"
+        class="fd-token__close"
+        tabindex="-1"
+      />
+      
+        
+    </span>
+    
+        
+    <span
+      class="fd-token fd-token--readonly"
+    >
+      
+            
+      <span
+        class="fd-token__text"
+      >
+        
+                Long Token Option 10
+            
+      </span>
+      
+        
+    </span>
+    
+        
+    <input
+      aria-label="Tokenizer input"
+      class="fd-input fd-tokenizer__input"
+    />
+    
+    
+  </div>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Components/Token Selected 1`] = `
 <section>
-  
-
   <span
     class="fd-token fd-token--selected"
     role="button"

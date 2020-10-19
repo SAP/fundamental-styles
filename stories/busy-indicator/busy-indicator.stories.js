@@ -30,8 +30,7 @@ The ongoing operation only covers part of a screen that has multiple controls, a
     }
 };
 
-export const Standard = () => `
-    <div style="text-align: center">
+export const Standard = () => `<div style="text-align: center">
     <div class="fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
         <div class="fd-busy-indicator--circle-0"></div>
         <div class="fd-busy-indicator--circle-1"></div>
@@ -57,8 +56,7 @@ Standard.parameters = {
     }
 };
 
-export const contrastMode = () => `
-<div style="display:flex;justify-content:center;flex-direction:column;align-items:center;background-color:cadetblue;height:250px">
+export const contrastMode = () => `<div style="display:flex;justify-content:center;flex-direction:column;align-items:center;background-color:cadetblue;height:250px">
 <div class="fd-busy-indicator--l contrast" aria-hidden="false" aria-label="Loading">
     <div class="fd-busy-indicator--circle-0"></div>
     <div class="fd-busy-indicator--circle-1"></div>

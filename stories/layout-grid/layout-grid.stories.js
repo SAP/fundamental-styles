@@ -24,8 +24,7 @@ To use the grid, the user must use all of the \`fd-container\`, \`fd-row\`, and 
     }
 };
 
-export const differentSizeColumns = () =>`
-<div class="fd-container">
+export const differentSizeColumns = () => `<div class="fd-container">
   <div class="fd-row">
       <div class="fd-col">
           <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">12 columns element</div>
@@ -170,9 +169,7 @@ differentSizeColumns.parameters = {
     }
 };
 
-export const responsiveness = () =>
-    `
-<div class="fd-container">
+export const responsiveness = () => `<div class="fd-container">
   <div class="fd-row">
     <div class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--4 ">
         <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">(1 cell)</div>
@@ -197,9 +194,7 @@ responsiveness.parameters = {
     }
 };
 
-export const nesting = () =>
-    `
-<div class="fd-container">
+export const nesting = () => `<div class="fd-container">
   <div class="fd-row">
     <div class="fd-col fd-col--2">
         <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">
@@ -249,9 +244,7 @@ nesting.parameters = {
     }
 };
 
-export const offset = () =>
-    `
-<div class="fd-container">
+export const offset = () => `<div class="fd-container">
   <div class="fd-row">
     <div class="fd-col">
         <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">
@@ -297,9 +290,7 @@ offset.parameters = {
     }
 };
 
-export const noGap = () =>
-    `
-<div class="fd-container fd-container--no-gap">
+export const noGap = () => `<div class="fd-container fd-container--no-gap">
   <div class="fd-row">
     <div class="fd-col fd-col--8">
         <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">
@@ -342,9 +333,7 @@ noGap.parameters = {
     }
 };
 
-export const autoAdjusting = () =>
-    `
-<div class="fd-container">
+export const autoAdjusting = () => `<div class="fd-container">
   <div class="fd-row">
     <div class="fd-col fd-col--full">
         <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">

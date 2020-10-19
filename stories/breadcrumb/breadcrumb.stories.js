@@ -27,8 +27,7 @@ The breadcrumb component is a type of navigation that indicates the position of 
     }
 };
 
-export const standard = () => `
-<ul class="fd-breadcrumb">
+export const standard = () => `<ul class="fd-breadcrumb">
     <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Products</a></li>
     <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Suppliers</a></li>
     <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Titanium</a></li>

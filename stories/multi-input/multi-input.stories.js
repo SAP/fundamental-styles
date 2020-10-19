@@ -15,8 +15,7 @@ If the entries are not validated by the application, users can also enter custom
     }
 };
 
-export const cozyAndCompact = () => `
-<div style="display:flex;height:310px">
+export const cozyAndCompact = () => `<div style="display:flex;height:310px">
     <div style="display:flex;flex-direction:column;padding-right:1rem">
         <label class="fd-form-label">
             Multi Input Cozy Mode
@@ -203,8 +202,7 @@ cozyAndCompact.parameters = {
     }
 };
 
-export const asFormItem = () =>`
-<div style="height:310px">
+export const asFormItem = () => `<div style="height:310px">
     <div class="fd-form-item">
     <label class="fd-form-label">
         Multi Input as form item
@@ -309,8 +307,7 @@ Applications are free to override this in their custom styles if needed and own 
     }
 };
 
-export const grouping = () => `
-<div style="height:450px">
+export const grouping = () => `<div style="height:450px">
     <div class="fd-popover">
         <div class="fd-popover__control" aria-controls="F4H8X34a" aria-expanded="true" aria-haspopup="true">
             <div class="fd-input-group fd-input-group--control">
@@ -424,8 +421,7 @@ grouping.parameters = {
     }
 };
 
-export const matchPopoverBodySize = () => `
-<div style="height:270px">
+export const matchPopoverBodySize = () => `<div style="height:270px">
     <div class="fd-popover">
         <div class="fd-popover__control" aria-controls="F4HGFHX34a" aria-expanded="true" aria-haspopup="true">
             <div class="fd-input-group fd-input-group--control">
@@ -523,8 +519,7 @@ In the example you can see how the \`Multi Input\` component looks without the \
     }
 };
 
-export const readOnlyAndDisabled = () => `
-<div style="display:flex;height:80px;">
+export const readOnlyAndDisabled = () => `<div style="display:flex;height:80px;">
     <div class="fd-popover" style="display:flex;flex-direction:column;padding-right:1rem">
         <div class="fd-popover__control" aria-controls="F4GcX3X8a" aria-expanded="false" aria-haspopup="false">
             <div class="fd-input-group fd-input-group--control" readonly aria-readonly="true">
@@ -669,8 +664,7 @@ The disabled state can also be achieved by adding the \`.is-disabled\` class or 
     }
 };
 
-export const semantic = () => `
-<div style="height:300px">
+export const semantic = () => `<div style="height:300px">
 <div class="fd-popover">
     <div class="fd-popover__control fd-input-group__control" aria-controls="F4GcKJH8a" aria-expanded="true" aria-haspopup="true">
         <div class="fd-input-group fd-input-group--control is-success">
@@ -761,8 +755,7 @@ To add text in the \`body\` of the component, simply include your text in the \`
     }
 };
 
-export const mobileMode = () => `
-<div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
+export const mobileMode = () => `<div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
     <div class="fd-dialog__content">
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
             <div class="fd-bar__left">
@@ -879,8 +872,7 @@ So instead of using popover and dropdown, it should be wrapped in \`dialog\` and
     }
 };
 
-export const filtering = () => `
-<div class="fd-popover">
+export const filtering = () => `<div class="fd-popover">
     <div class="fd-popover__control" aria-controls="F4GcX348aB" aria-expanded="true" aria-haspopup="true">
         <div class="fd-input-group fd-input-group--control">
             <div class="fd-tokenizer">

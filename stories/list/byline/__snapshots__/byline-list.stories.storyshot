@@ -1,24 +1,579 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/List/Byline Borderless 1`] = `
+<ul
+  class="fd-list fd-list--no-border fd-list--byline"
+  role="list"
+>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+      
+    <span
+      class="fd-list__thumbnail"
+    >
+      <i
+        class="sap-icon--activate"
+        role="presentation"
+      />
+    </span>
+    
+      
+    <div
+      class="fd-list__content"
+    >
+      
+        
+      <div
+        class="fd-list__title"
+      >
+        Title
+      </div>
+      
+        
+      <div
+        class="fd-list__byline"
+      >
+        Byline (description)
+      </div>
+      
+      
+    </div>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+      
+    <span
+      class="fd-list__thumbnail"
+    >
+      <i
+        class="sap-icon--employee"
+        role="presentation"
+      />
+    </span>
+    
+      
+    <div
+      class="fd-list__content"
+    >
+      
+        
+      <div
+        class="fd-list__title"
+      >
+        List Item With No Byline
+      </div>
+      
+      
+    </div>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      aria-label="Image label"
+      class="fd-image--s fd-list__thumbnail"
+      style="background-image: url('http://lorempixel.com/400/400/nature/5/');"
+    />
+    
+    
+    <div
+      class="fd-list__content"
+    >
+      
+        
+      <div
+        class="fd-list__title"
+      >
+        List Item With Two-Column Byline
+      </div>
+      
+        
+      <div
+        class="fd-list__byline fd-list__byline--2-col"
+      >
+        
+            
+        <div
+          class="fd-list__byline-left"
+        >
+          First text item in Byline (Standard text item)
+        </div>
+        
+            
+        <div
+          class="fd-list__byline-right fd-list__byline-right--positive"
+        >
+          Second text item in Byline - Semantic Positive
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+      
+    <span
+      class="fd-list__thumbnail"
+    >
+      <i
+        class="sap-icon--world"
+        role="presentation"
+      />
+    </span>
+    
+    
+    <div
+      class="fd-list__content"
+    >
+      
+        
+      <div
+        class="fd-list__title"
+      >
+        List Item With Two-Column Byline and Semantic Byline Second Item
+      </div>
+      
+        
+      <div
+        class="fd-list__byline fd-list__byline--2-col"
+      >
+        
+            
+        <div
+          class="fd-list__byline-left"
+        >
+          First text item in Byline (Standard text item)
+        </div>
+        
+            
+        <div
+          class="fd-list__byline-right fd-list__byline-right--informative"
+        >
+          Second text item in Byline - Semantic Informative
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+  
+  </li>
+  
 
-
+</ul>
 `;
 
 exports[`Storyshots Components/List/Byline Navigation 1`] = `
+<ul
+  class="fd-list fd-list--byline fd-list--navigation"
+  role="list"
+>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--link"
+    role="listitem"
+    tabindex="-1"
+  >
+    
+    
+    <a
+      class="fd-list__link"
+      href="#"
+      tabindex="0"
+    >
+       
+      
+      <span
+        class="fd-list__thumbnail"
+      >
+        <i
+          class="sap-icon--activate"
+          role="presentation"
+        />
+      </span>
+      
+      
+      <div
+        class="fd-list__content"
+      >
+        
+        
+        <div
+          class="fd-list__title"
+        >
+          Title
+        </div>
+        
+        
+        <div
+          class="fd-list__byline"
+        >
+          Byline (description)
+        </div>
+        
+      
+      </div>
+      
+    
+    </a>
+     
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--link is-selected"
+    role="listitem"
+    tabindex="-1"
+  >
+    
+    
+    <a
+      class="fd-list__link"
+      href="#"
+      tabindex="0"
+    >
+       
+      
+      <span
+        class="fd-list__thumbnail"
+      >
+        <i
+          class="sap-icon--employee"
+          role="presentation"
+        />
+      </span>
+      
+      
+      <div
+        class="fd-list__content"
+      >
+        
+        
+        <div
+          class="fd-list__title"
+        >
+          List Item With No Byline
+        </div>
+        
+      
+      </div>
+      
+    
+    </a>
+     
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--link"
+    role="listitem"
+    tabindex="-1"
+  >
+    
+    
+    <a
+      class="fd-list__link"
+      href="#"
+      tabindex="0"
+    >
+       
+        
+      <span
+        aria-label="Image label"
+        class="fd-image--s fd-list__thumbnail"
+        style="background-image: url('http://lorempixel.com/400/400/nature/5/');"
+      />
+      
+        
+      <div
+        class="fd-list__content"
+      >
+        
+            
+        <div
+          class="fd-list__title"
+        >
+          List Item With Two-Column Byline
+        </div>
+        
+            
+        <div
+          class="fd-list__byline fd-list__byline--2-col"
+        >
+          
+                
+          <div
+            class="fd-list__byline-left"
+          >
+            First text item in Byline (Standard text item)
+          </div>
+          
+                
+          <div
+            class="fd-list__byline-right"
+          >
+            Second text item in Byline (Can be semantic (Status) or not)
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </a>
+     
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--link"
+    role="listitem"
+    tabindex="-1"
+  >
+    
+    
+    <a
+      class="fd-list__link"
+      href="#"
+      tabindex="0"
+    >
+       
+      
+      <div
+        class="fd-list__content"
+      >
+        
+        
+        <div
+          class="fd-list__title"
+        >
+          Text-Only List Item
+        </div>
+        
+        
+        <div
+          class="fd-list__byline"
+        >
+          Byline (description)
+        </div>
+        
+      
+      </div>
+      
+    
+    </a>
+     
+  
+  </li>
+  
 
-
+</ul>
 `;
 
 exports[`Storyshots Components/List/Byline Navigation indicators 1`] = `
+<ul
+  class="fd-list fd-list--byline fd-list--navigation fd-list--navigation-indication"
+  role="list"
+>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--link"
+    role="listitem"
+    tabindex="-1"
+  >
+    
+    
+    <a
+      class="fd-list__link fd-list__link--navigation-indicator"
+      href="#"
+      tabindex="0"
+    >
+       
+      
+      <span
+        class="fd-list__thumbnail"
+      >
+        <i
+          class="sap-icon--activate"
+          role="presentation"
+        />
+      </span>
+      
+      
+      <div
+        class="fd-list__content"
+      >
+        
+        
+        <div
+          class="fd-list__title"
+        >
+          Title
+        </div>
+        
+        
+        <div
+          class="fd-list__byline"
+        >
+          Byline (description)
+        </div>
+        
+      
+      </div>
+      
+    
+    </a>
+     
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--link is-selected"
+    role="listitem"
+    tabindex="-1"
+  >
+    
+    
+    <a
+      class="fd-list__link fd-list__link--navigation-indicator is-navigated"
+      href="#"
+      tabindex="0"
+    >
+       
+      
+      <span
+        class="fd-list__thumbnail"
+      >
+        <i
+          class="sap-icon--employee"
+          role="presentation"
+        />
+      </span>
+      
+      
+      <div
+        class="fd-list__content"
+      >
+        
+        
+        <div
+          class="fd-list__title"
+        >
+          List Item With No Byline
+        </div>
+        
+      
+      </div>
+      
+    
+    </a>
+     
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="-1"
+  >
+    
+        
+    <span
+      aria-label="Image label"
+      class="fd-image--s fd-list__thumbnail"
+      style="background-image: url('http://lorempixel.com/400/400/nature/5/');"
+    />
+    
+        
+    <div
+      class="fd-list__content"
+    >
+      
+            
+      <div
+        class="fd-list__title"
+      >
+        List Item With Two-Column Byline
+      </div>
+      
+            
+      <div
+        class="fd-list__byline fd-list__byline--2-col"
+      >
+        
+                
+        <div
+          class="fd-list__byline-left"
+        >
+          First text item in Byline (Standard text item)
+        </div>
+        
+                
+        <div
+          class="fd-list__byline-right"
+        >
+          Second text item in Byline (Can be semantic (Status) or not)
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+  
+  </li>
+  
 
-
+</ul>
 `;
 
 exports[`Storyshots Components/List/Byline Selection 1`] = `
 <section>
-  
-
   <h4
     id="O09lk9"
   >
@@ -460,8 +1015,6 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
 
 exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
 <section>
-  
-
   <h4
     id="Ki81L1"
   >
@@ -945,8 +1498,6 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
 
 exports[`Storyshots Components/List/Byline Standard 1`] = `
 <section>
-  
-
   <h4>
     Standard Size
   </h4>

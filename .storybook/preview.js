@@ -108,6 +108,7 @@ const withThemeProvider = makeDecorator({
 
     const styleLinkTag = (stylePath) => {
       let link = document.createElement('link');
+      link.type = 'text/css';
       link.rel = 'stylesheet';
       link.href = stylePath;
       link.setAttribute('data-theme-id', context?.globals?.theme);

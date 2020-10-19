@@ -21,8 +21,7 @@ Note: You may want to display components from right to left on the screen for in
     }
 };
 
-export const backBtn = () => `
-<div class="fd-action-bar">
+export const backBtn = () => `<div class="fd-action-bar">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
             <button aria-label="Go Back" class="fd-button fd-button--transparent fd-button--compact">
@@ -49,8 +48,7 @@ backBtn.parameters = {
     }
 };
 
-export const noBackBtn = () => `
-<div class="fd-action-bar">
+export const noBackBtn = () => `<div class="fd-action-bar">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__title">
             <h1 class="fd-title fd-title--h3">Page Title</h1>
@@ -71,8 +69,7 @@ noBackBtn.parameters = {
         storyDescription: 'This action bar doesn’t display a back button.'
     }
 };
-export const backBtnNoDescription = () => `
-<div class="fd-action-bar">
+export const backBtnNoDescription = () => `<div class="fd-action-bar">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
             <button aria-label="Go Back" class="fd-button fd-button--transparent fd-button--compact">
@@ -97,8 +94,7 @@ backBtnNoDescription.parameters = {
         storyDescription: 'This action bar doesn’t display a description.'
     }
 };
-export const longTitleDescription = () => `
-<div class="fd-action-bar">
+export const longTitleDescription = () => `<div class="fd-action-bar">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
             <button aria-label="Go Back" class="fd-button fd-button--transparent fd-button--compact">
@@ -127,8 +123,7 @@ longTitleDescription.parameters = {
     }
 };
 
-export const actions = () => `
-<div class="fd-action-bar">
+export const actions = () => `<div class="fd-action-bar">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__title">
             <h1 class="fd-title fd-title--h3">Page Title</h1>
@@ -186,9 +181,7 @@ actions.parameters = {
     }
 };
 
-export const responsiveL = () => `
-
-<div class="fd-action-bar fd-action-bar--m_l">
+export const responsiveL = () => `<div class="fd-action-bar fd-action-bar--m_l">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
             <button aria-label="Go Back" class="fd-button fd-button--transparent fd-button--compact">
@@ -215,8 +208,7 @@ responsiveL.parameters = {
     }
 };
 
-export const responsiveXL = () => `
-<div class=" fd-action-bar fd-action-bar--xl">
+export const responsiveXL = () => `<div class=" fd-action-bar fd-action-bar--xl">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
             <button aria-label="Go Back" class="fd-button fd-button--transparent fd-button--compact">
@@ -243,8 +235,7 @@ responsiveXL.parameters = {
     }
 };
 
-export const mobile = () => `
-<div style="width:319px;">
+export const mobile = () => `<div style="width:319px;">
     <div class="fd-action-bar fd-action-bar--s"> 
         <div class="fd-action-bar__header">
             <div class="fd-action-bar__back">

@@ -36,8 +36,7 @@ When working with form groups, it's always best to use the recommended number of
     }
 };
 
-export const sSize = () => `
-<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical" style="max-width:600px">
+export const sSize = () => `<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical" style="max-width:600px">
     <div class="fd-row">
         <div class="fd-col">
                 <label class="fd-form-label" for="input-1-name">Name:</label>
@@ -115,8 +114,7 @@ The label-field ratio is 12:12:0 by default:
     }
 };
 
-export const mSizeDefault = () => `
-<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
+export const mSizeDefault = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--4">
       <label class="fd-form-label" for="input-2-name">Name:</label>
@@ -207,8 +205,7 @@ Size M goes down to 601 px. In this size, the 3:5:4 approach may not be wide eno
     }
 };
 
-export const mSizeSplitScreen = () => `
-<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
+export const mSizeSplitScreen = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
   <div class="fd-row">
     <div class="fd-col fd-col-md--4  fd-col-lg--4">
       <label class="fd-form-label" for="input-3-name">Name:</label>
@@ -293,8 +290,7 @@ When placing the form in the details part of a split screen, use a single-column
 };
 
 
-export const mSizeFullScreenApp = () => `
-<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
+export const mSizeFullScreenApp = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
   <div class="fd-row">
     <div class="fd-col fd-col-md--3  fd-col-lg--4">
       <label class="fd-form-label" for="input-4-name">Name:</label>
@@ -379,8 +375,7 @@ Size M goes down to 601 px. In this size, the 3:5:4 approach may not be wide eno
     }
 };
 
-export const mSizeFullScreenAppLongLabel = () => `
-<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
+export const mSizeFullScreenAppLongLabel = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
   <div class="fd-row">
     <div class="fd-col fd-col-md--4 fd-col-lg--3">
       <label class="fd-form-label" for="input-5-name">Name:</label>
@@ -463,8 +458,7 @@ Size M goes down to 601 px. In this size, the 3:5:4 approach may not be wide eno
     }
 };
 
-export const lSizeDefault = () => `
-<div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
+export const lSizeDefault = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--4">
       <label class="fd-form-label" for="input-6-name">Name:</label>
@@ -550,8 +544,7 @@ The label-field ratio is **4:8:0** by default:
     }
 };
 
-export const lSizeSingleFormGroup = () => `
-<div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
+export const lSizeSingleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--3">
       <label class="fd-form-label" for="input-7-name">Name:</label>
@@ -635,8 +628,7 @@ If the form contains multiple form groups, you can also use a two-column layout 
     }
 };
 
-export const lSizeMultipleFormGroup = () => `
-<div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
+export const lSizeMultipleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
   <div class="fd-row">
     <div class="fd-col fd-col-lg--6 fd-col--wrap">
       <div class="fd-row">
@@ -790,8 +782,7 @@ In this size, long labels that are put next to the fields might not fit on small
     }
 };
 
-export const xlDefault = () => `
-<div class="fd-container fd-form-layout-grid-container">
+export const xlDefault = () => `<div class="fd-container fd-form-layout-grid-container">
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
       <label class="fd-form-label" for="input-9-name">Name:</label>
@@ -878,8 +869,7 @@ The label-field ratio for size XL is **4:8:0** (technically the value is set to 
 };
 
 
-export const xlSingleFormGroup = () => `
-<div class="fd-container fd-form-layout-grid-container">
+export const xlSingleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container">
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--3">
       <label class="fd-form-label" for="input-10-name">Name:</label>
@@ -967,8 +957,7 @@ If the form is put into a full-screen app and it contains multiple form groups, 
     }
 };
 
-export const xlDoubleFormGroup = () => `
-<div class="fd-container fd-form-layout-grid-container">
+export const xlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container">
   <div class="fd-row">
     <div class="fd-col fd-col-xl--6 fd-col--wrap">
       <div class="fd-row">
@@ -1125,8 +1114,7 @@ If the form is put into a full-screen app and it contains multiple form groups, 
     }
 };
 
-export const xlMultipleFormGroup = () => `
-<div class="fd-container fd-form-layout-grid-container">
+export const xlMultipleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container">
   <div class="fd-row">
     <div class="fd-col fd-col-xl--4 fd-col--wrap">
       <div class="fd-row">
@@ -1354,8 +1342,7 @@ If the form is put into a full-screen app and it contains multiple form groups, 
     }
 };
 
-export const fourSevenOneCompactLayout = () => `
-<div class="fd-container fd-form-layout-grid-container">
+export const fourSevenOneCompactLayout = () => `<div class="fd-container fd-form-layout-grid-container">
     <div class="fd-row">
         <div class="fd-col fd-col--4">
           <label class="fd-form-label" for="input-13-compact">Default Input:</label>
@@ -1398,8 +1385,7 @@ To display the form using a compact layout, add the \`--compact\` modifier on th
     }
 };
 
-export const columnRecommended = () => `
-<h1>XL2-L2-M2-S1</h1>
+export const columnRecommended = () => `<h1>XL2-L2-M2-S1</h1>
 <div class="fd-container fd-form-layout-grid-container">
   <div class="fd-row"> 
     <div class="fd-col fd-col-md--6  fd-col-lg--6 fd-col-xl--6 fd-col--wrap">
@@ -1493,8 +1479,7 @@ XL represents the screen at size extra large, L represents the screen at size la
     }
 };
 
-export const columnPossible = () => `
-<h1>XL3-L1-M1-S1</h1>
+export const columnPossible = () => `<h1>XL3-L1-M1-S1</h1>
 <div class="fd-container fd-form-layout-grid-container">
   <div class="fd-row"> 
     <div class="fd-col fd-col-xl--4 fd-col--wrap">
@@ -1568,8 +1553,7 @@ The other possible layouts for a form group are XL3-L1-M1-S1 and XL1-L1-M1-S1`
     }
 };
 
-export const columnNotRecommended = () => `
-<h1>XL3-L2-M2-S1</h1>
+export const columnNotRecommended = () => `<h1>XL3-L2-M2-S1</h1>
 <div class="fd-container fd-form-layout-grid-container">
   <div class="fd-row"> 
     <div class="fd-col fd-col-lg--6 fd-col-xl--4 fd-col--wrap">
