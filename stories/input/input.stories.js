@@ -17,7 +17,7 @@ Do not use the input field if:
 - The user needs to enter long texts. In this case, use the textarea.
 - The user needs to carry out a search. In this case, use the search field.
         `,
-        components: ['form-item', 'form-label', 'input', 'popover']
+        components: ['form-item', 'form-label', 'input', 'popover', 'form-message']
     }
 };
 

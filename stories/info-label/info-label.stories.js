@@ -12,7 +12,7 @@ Use the Info Label base class with following modifiers:
     - \`fd-info-label--numeric\`
       `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['info-label']
+        components: ['info-label', 'icon']
     }
 };
 

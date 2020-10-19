@@ -9,7 +9,7 @@ Tabs should be ordered to create a visual hierarchy based on priority.
         docs: {
             iframeHeight: 150
         },
-        components: ['tabs', 'icon']
+        components: ['button', 'tabs', 'icon']
     }
 };
 

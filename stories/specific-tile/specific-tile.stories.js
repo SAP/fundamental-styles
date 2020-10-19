@@ -8,7 +8,7 @@ text, KPIs, counters and charts.
       `,
         tags: ['f3', 'a11y', 'theme'],
         docs: { iframeHeight: 500 },
-        components: ['tile', 'badge', 'numeric-content', 'button', 'icon']
+        components: ['tile', 'badge', 'numeric-content', 'button', 'icon', 'generic-tile']
     }
 };
 
@@ -437,7 +437,7 @@ export const badgeTile = () => `<div class="fddocs-container">
             <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
         </div>
         <div class="fd-tile__content">
-            <span class="fd-tile__profile-img" style="background-image: url('http://lorempixel.com/60/60/nature/10/')" role="presentation" aria-label="Profile Image"></span>
+            <span class="fd-tile__profile-img" style="background-image: url('https://loremflickr.com/cache/resized/65535_50178620828_b62a994cb0_q_80_80_nofilter.jpg')" role="presentation" aria-label="Profile Image"></span>
         </div>
         <div class="fd-tile__footer">
             <span class="fd-tile__footer-text">Footer Text</span>
@@ -450,7 +450,7 @@ export const badgeTile = () => `<div class="fddocs-container">
             <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
         </div>
         <div class="fd-tile__content">
-            <span class="fd-tile__profile-img" style="background-image: url('http://lorempixel.com/60/60/nature/10/')" role="presentation" aria-label="Profile Image"></span>
+            <span class="fd-tile__profile-img" style="background-image: url('https://loremflickr.com/cache/resized/65535_50178620828_b62a994cb0_q_80_80_nofilter.jpg')" role="presentation" aria-label="Profile Image"></span>
         </div>
         <div class="fd-tile__footer">
             <span class="fd-tile__footer-text">Unit, Notification</span>

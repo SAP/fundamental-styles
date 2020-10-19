@@ -11,7 +11,7 @@ It provides an editable input field for filtering the list, and a dropdown menu 
 If the entries are not validated by the application, users can also enter custom values.
 `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['radio', 'title', 'form-label', 'popover', 'icon', 'input-group', 'input', 'list']
+        components: ['radio', 'title', 'form-label', 'popover', 'icon', 'input-group', 'input', 'list', 'button', 'dialog', 'bar']
     }
 };
 
