@@ -31,4 +31,13 @@
   --fdWizard_Content_Transparent_Background: var(--sapBackgroundColor);
   --fdWizard_Selection_Bar_Height: 0.313rem;
   --fdWizard_Selection_Bar_Background: var(--sapList_SelectionBorderColor);
+
+  /* Dynamic Page Layout */
+  --fdDynamicPage_Hover_Border_Bottom: solid 0.0625rem var(--sapObjectHeader_BorderColor);
+  --fdDynamicPage_Title_Header_Transparent_Background: var(--sapObjectHeader_Background);
+  --fdDynamicPage_Button_Left_Gradient: linear-gradient(to left, var(--sapObjectHeader_BorderColor), transparent);
+  --fdDynamicPage_Button_Right_Gradient: linear-gradient(to right, var(--sapObjectHeader_BorderColor), transparent);
+  --fdDynamicPage_Button_Group_Background: var(--sapObjectHeader_BorderColor);
+  --fdDynamicPage_Content_List_Background: var(--sapBackgroundColor);
+  --fdDynamicPage_Content_Transparent_Background: var(--sapBackgroundColor);
 }

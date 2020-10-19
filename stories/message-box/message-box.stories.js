@@ -9,8 +9,7 @@ export default {
 
 const messageBoxHeight = 200;
 
-export const structure = () => `
-<div class="fd-message-box-docs-static fd-message-box fd-message-box--active">
+export const structure = () => `<div class="fd-message-box-docs-static fd-message-box fd-message-box--active">
     <div class="fd-message-box__content">
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
@@ -59,8 +58,7 @@ The Message Box follows the Dialog structure and consists of following elements:
     }
 };
 
-export const types = () => `
-<div class="fd-message-box-docs-static fd-message-box fd-message-box--active">
+export const types = () => `<div class="fd-message-box-docs-static fd-message-box fd-message-box--active">
     <div class="fd-message-box__content">
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
@@ -429,45 +427,5 @@ On mobile devices the component should be in \`cozy\` mode. Add the \`fd-bar--co
 
 On phone devices the content container takes 100vh and 100vw. It's achieved by applying the \`fd-message-box__content--mobile\` modifier class on the Message Box content container.
         `
-    }
-};
-
-export const rtl = () => `
-<div class="fd-message-box-docs-static fd-message-box fd-message-box--active" dir="rtl">
-    <div class="fd-message-box__content">
-        <header class="fd-bar fd-bar--header fd-message-box__header">
-            <div class="fd-bar__left">
-                <div class="fd-bar__element">
-                    <h2 class="fd-title fd-title--h5">Title</h2>
-                </div>
-            </div>
-        </header>
-        <div class="fd-message-box__body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        </div>
-        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
-            <div class="fd-bar__right">
-                <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
-                        Begin button
-                    </button>
-                </div>
-                <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent fd-button--compact fd-message-box__decisive-button">
-                        End button
-                    </button>
-                </div>
-            </div>
-        </footer>
-    </div>
-</div>
-`;
-
-rtl.storyName = 'Rtl';
-
-rtl.parameters = {
-    docs: {
-        iframeHeight: messageBoxHeight,
-        storyDescription: 'Message Box in RTL mode'
     }
 };

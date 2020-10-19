@@ -8,8 +8,7 @@ A title component whose semantic level and visual appearance can be set separate
     }
 };
 
-export const levels = () => `
-<h1 class="fd-title fd-title--h1">Title Level 1</h1>
+export const levels = () => `<h1 class="fd-title fd-title--h1">Title Level 1</h1>
 <h2 class="fd-title fd-title--h2">Title Level 2</h2>
 <h3 class="fd-title fd-title--h3">Title Level 3</h3>
 <h4 class="fd-title fd-title--h4">Title Level 4</h4>
@@ -25,8 +24,7 @@ levels.parameters = {
     }
 };
 
-export const visualLevel = () => `
-<h1 class="fd-title fd-title--h6">Title Level 1</h1>
+export const visualLevel = () => `<h1 class="fd-title fd-title--h6">Title Level 1</h1>
 <h2 class="fd-title fd-title--h5">Title Level 2</h2>
 <h3 class="fd-title fd-title--h4">Title Level 3</h3>
 <h4 class="fd-title fd-title--h3">Title Level 4</h4>
@@ -42,8 +40,7 @@ visualLevel.parameters = {
     }
 };
 
-export const elision = () => `
-<div style="width: 300px">
+export const elision = () => `<div style="width: 300px">
     <h1 class="fd-title fd-title--h1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
     <h2 class="fd-title fd-title--h2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
     <h3 class="fd-title fd-title--h3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
@@ -61,8 +58,7 @@ elision.parameters = {
     }
 };
 
-export const wrapping = () => `
-<div style="width: 300px">
+export const wrapping = () => `<div style="width: 300px">
     <h1 class="fd-title fd-title--h1 fd-title--wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
     <h2 class="fd-title fd-title--h2 fd-title--wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
     <h3 class="fd-title fd-title--h3 fd-title--wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>

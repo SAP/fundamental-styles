@@ -1,370 +1,374 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Bar Cozy 1`] = `
+<div
+  class="fd-bar fd-bar--cozy"
+>
+  
+    
+  <div
+    class="fd-bar__left"
+  >
+    
+        
+    <div
+      class="fd-bar__element"
+    >
+      
+            
+      <button
+        aria-label="button"
+        class="fd-button fd-button--transparent"
+      >
+        
+                
+        <i
+          class="sap-icon--navigation-left-arrow"
+        />
+        
+            
+      </button>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-bar__element"
+    >
+      
+            
+      <button
+        aria-label="button"
+        class="fd-button fd-button--transparent"
+      >
+        
+                
+        <i
+          class="sap-icon--home"
+        />
+        
+            
+      </button>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-bar__element"
+    >
+      
+            
+      <button
+        aria-label="button"
+        class="fd-button fd-button--transparent"
+      >
+        
+                
+        <i
+          class="sap-icon--account"
+        />
+        
+            
+      </button>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <div
+    class="fd-bar__middle"
+  >
+    
+        
+    <div
+      class="fd-bar__element"
+    >
+      
+            
+      <div
+        aria-label="Group label"
+        class="fd-segmented-button"
+        role="group"
+      >
+        
+                
+        <button
+          aria-label="button"
+          aria-pressed="true"
+          class="fd-button"
+        >
+          
+                    
+          <i
+            class="sap-icon--email"
+          />
+          
+                
+        </button>
+        
+                
+        <button
+          aria-label="button"
+          class="fd-button"
+        >
+          
+                    
+          <i
+            class="sap-icon--iphone"
+          />
+          
+                
+        </button>
+        
+                
+        <button
+          aria-label="button"
+          class="fd-button"
+        >
+          
+                    
+          <i
+            class="sap-icon--notification-2"
+          />
+          
+                
+        </button>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <div
+    class="fd-bar__right"
+  >
+    
+        
+    <div
+      class="fd-bar__element"
+    >
+      
+            
+      <span
+        aria-label="Image label"
+        class="fd-image--s"
+        style="background-image: url('https://placeimg.com/400/400/nature');"
+      >
+        
+            
+      </span>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-bar__element"
+    >
+      
+            
+      <button
+        aria-label="button"
+        class="fd-button fd-button--transparent"
+      >
+        
+                
+        <i
+          class="sap-icon--grid"
+        />
+        
+            
+      </button>
+      
+        
+    </div>
+    
+    
+  </div>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Components/Bar Default 1`] = `
-<section>
+<div
+  class="fd-bar"
+>
   
-
+    
   <div
-    class="fd-bar"
+    class="fd-bar__left"
   >
     
-    
+        
     <div
-      class="fd-bar__left"
+      class="fd-bar__element"
     >
       
-        
-      <div
-        class="fd-bar__element"
+            
+      <button
+        aria-label="button"
+        class="fd-button fd-button--transparent"
       >
         
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent"
-        >
-          
                 
-          <i
-            class="sap-icon--navigation-left-arrow"
-          />
-          
-            
-        </button>
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
+        <i
+          class="sap-icon--navigation-left-arrow"
+        />
         
             
-        <span
-          aria-label="text"
-        >
-          TEXT
-        </span>
-        
-        
-      </div>
+      </button>
       
+        
+    </div>
     
+        
+    <div
+      class="fd-bar__element"
+    >
+      
+            
+      <span
+        aria-label="text"
+      >
+        TEXT
+      </span>
+      
+        
     </div>
     
     
-    <div
-      class="fd-bar__middle"
-    >
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <div
-          aria-label="Group label"
-          class="fd-segmented-button"
-          role="group"
-        >
-          
-                
-          <button
-            aria-label="button"
-            aria-pressed="true"
-            class="fd-button fd-button--compact"
-          >
-            
-                    
-            <i
-              class="sap-icon--email"
-            />
-            
-                
-          </button>
-          
-                
-          <button
-            aria-label="button"
-            class="fd-button fd-button--compact"
-          >
-            
-                    
-            <i
-              class="sap-icon--iphone"
-            />
-            
-                
-          </button>
-          
-                
-          <button
-            aria-label="button"
-            class="fd-button fd-button--compact"
-          >
-            
-                    
-            <i
-              class="sap-icon--notification-2"
-            />
-            
-                
-          </button>
-          
-            
-        </div>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-    
-    <div
-      class="fd-bar__right"
-    >
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <span
-          aria-label="Image label"
-          class="fd-image--s"
-          style="background-image: url('https://placeimg.com/400/400/nature');"
-        >
-          
-            
-        </span>
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent"
-        >
-          
-                
-          <i
-            class="sap-icon--grid"
-          />
-          
-            
-        </button>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-
   </div>
   
-
-  <br />
-  <br />
-  
-
-  <div>
-    <b>
-      RTL Support
-    </b>
-  </div>
-  
-
-  <br />
     
-
   <div
-    class="fd-bar"
-    dir="rtl"
+    class="fd-bar__middle"
   >
     
-    
+        
     <div
-      class="fd-bar__left"
+      class="fd-bar__element"
     >
       
-        
+            
       <div
-        class="fd-bar__element"
+        aria-label="Group label"
+        class="fd-segmented-button"
+        role="group"
       >
         
-            
+                
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent"
+          aria-pressed="true"
+          class="fd-button fd-button--compact"
         >
           
-                
+                    
           <i
-            class="sap-icon--navigation-right-arrow"
+            class="sap-icon--email"
           />
           
-            
+                
         </button>
         
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-          
-        <span
-          aria-label="text"
-        >
-          TEXT
-        </span>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-    
-    <div
-      class="fd-bar__middle"
-    >
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <div
-          aria-label="Group label"
-          class="fd-segmented-button"
-          role="group"
-        >
-          
                 
-          <button
-            aria-label="button"
-            aria-pressed="true"
-            class="fd-button fd-button--compact"
-          >
-            
-                    
-            <i
-              class="sap-icon--email"
-            />
-            
-                
-          </button>
-          
-                
-          <button
-            aria-label="button"
-            class="fd-button fd-button--compact"
-          >
-            
-                    
-            <i
-              class="sap-icon--iphone"
-            />
-            
-                
-          </button>
-          
-                
-          <button
-            aria-label="button"
-            class="fd-button fd-button--compact"
-          >
-            
-                    
-            <i
-              class="sap-icon--notification-2"
-            />
-            
-                
-          </button>
-          
-            
-        </div>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-    
-    <div
-      class="fd-bar__right"
-    >
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <span
-          aria-label="Image label"
-          class="fd-image--s"
-          style="background-image: url('https://placeimg.com/400/400/nature');"
-        >
-          
-            
-        </span>
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent"
+          class="fd-button fd-button--compact"
         >
           
-                
+                    
           <i
-            class="sap-icon--grid"
+            class="sap-icon--iphone"
           />
           
-            
+                
         </button>
         
+                
+        <button
+          aria-label="button"
+          class="fd-button fd-button--compact"
+        >
+          
+                    
+          <i
+            class="sap-icon--notification-2"
+          />
+          
+                
+        </button>
         
+            
       </div>
       
-    
+        
     </div>
     
-
+    
+  </div>
+  
+    
+  <div
+    class="fd-bar__right"
+  >
+    
+        
+    <div
+      class="fd-bar__element"
+    >
+      
+            
+      <span
+        aria-label="Image label"
+        class="fd-image--s"
+        style="background-image: url('https://placeimg.com/400/400/nature');"
+      >
+        
+            
+      </span>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-bar__element"
+    >
+      
+            
+      <button
+        aria-label="button"
+        class="fd-button fd-button--transparent"
+      >
+        
+                
+        <i
+          class="sap-icon--grid"
+        />
+        
+            
+      </button>
+      
+        
+    </div>
+    
+    
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Bar Floating Footer 1`] = `
@@ -511,79 +515,6 @@ exports[`Storyshots Components/Bar Floating Footer 1`] = `
   </div>
   
 
-  <br />
-  <br />
-  
-
-  <div
-    style="margin-bottom: 2rem;"
-  >
-    <b>
-      RTL Support
-    </b>
-  </div>
-  
-
-  <br />
-  
-
-  <div
-    style="position: relative;"
-  >
-    
-    
-    <div
-      class="fd-bar fd-bar--floating-footer"
-      dir="rtl"
-    >
-      
-        
-      <div
-        class="fd-bar__right"
-      >
-        
-            
-        <div
-          class="fd-bar__element"
-        >
-          
-                
-          <button
-            aria-label="button"
-            class="fd-button fd-button--emphasized fd-button--compact"
-          >
-            Save
-          </button>
-          
-            
-        </div>
-        
-            
-        <div
-          class="fd-bar__element"
-        >
-          
-                
-          <button
-            aria-label="button"
-            class="fd-button fd-button--transparent fd-button--compact"
-          >
-            Cancel
-          </button>
-          
-            
-        </div>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-
-  </div>
-  
-
 </section>
 `;
 
@@ -697,69 +628,6 @@ exports[`Storyshots Components/Bar Footer 1`] = `
         <button
           aria-label="button"
           class="fd-button fd-button--transparent"
-        >
-          Cancel
-        </button>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-
-  </div>
-  
-
-  <br />
-  <br />
-  
-
-  <div>
-    <b>
-      RTL Support
-    </b>
-  </div>
-  
-
-  <br />
-  
-
-  <div
-    class="fd-bar fd-bar--footer"
-    dir="rtl"
-  >
-    
-    
-    <div
-      class="fd-bar__right"
-    >
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--emphasized fd-button--compact"
-        >
-          Save
-        </button>
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent fd-button--compact"
         >
           Cancel
         </button>
@@ -1132,220 +1000,6 @@ exports[`Storyshots Components/Bar Header 1`] = `
           <button
             aria-label="button"
             class="fd-button"
-          >
-            
-                    
-            <i
-              class="sap-icon--notification-2"
-            />
-            
-                
-          </button>
-          
-            
-        </div>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-    
-    <div
-      class="fd-bar__right"
-    >
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <span
-          aria-label="Image label"
-          class="fd-image--s"
-          style="background-image: url('https://placeimg.com/400/400/nature');"
-        >
-          
-            
-        </span>
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent"
-        >
-          
-                
-          <i
-            class="sap-icon--grid"
-          />
-          
-            
-        </button>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-
-  </div>
-  
-
-  <br />
-  <br />
-  
-
-  <div>
-    <b>
-      RTL Support
-    </b>
-  </div>
-  
-
-  <br />
-   
-
-  <div
-    class="fd-bar fd-bar--header"
-    dir="rtl"
-  >
-    
-    
-    <div
-      class="fd-bar__left"
-    >
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent"
-        >
-          
-                
-          <i
-            class="sap-icon--navigation-right-arrow"
-          />
-          
-            
-        </button>
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent"
-        >
-          
-                
-          <i
-            class="sap-icon--home"
-          />
-          
-            
-        </button>
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent"
-        >
-          
-                
-          <i
-            class="sap-icon--account"
-          />
-          
-            
-        </button>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-    
-    <div
-      class="fd-bar__middle"
-    >
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <div
-          aria-label="Group label"
-          class="fd-segmented-button"
-          role="group"
-        >
-          
-                
-          <button
-            aria-label="button"
-            aria-pressed="true"
-            class="fd-button fd-button--compact"
-          >
-            
-                    
-            <i
-              class="sap-icon--email"
-            />
-            
-                
-          </button>
-          
-                
-          <button
-            aria-label="button"
-            class="fd-button fd-button--compact"
-          >
-            
-                    
-            <i
-              class="sap-icon--iphone"
-            />
-            
-                
-          </button>
-          
-                
-          <button
-            aria-label="button"
-            class="fd-button fd-button--compact"
           >
             
                     
@@ -1928,129 +1582,6 @@ exports[`Storyshots Components/Bar Subheader 1`] = `
           type="text"
           value="1234568910"
         />
-        
-        
-      </div>
-      
-    
-    </div>
-    
-
-  </div>
-  
-
-  <br />
-  <br />
-  
-
-  <div>
-    <b>
-      RTL Support
-    </b>
-  </div>
-  
-
-  <br />
-  
-
-  <div
-    class="fd-bar fd-bar--subheader"
-    dir="rtl"
-  >
-    
-    
-    <div
-      class="fd-bar__left"
-    >
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent fd-button--compact"
-        >
-          
-                
-          <i
-            class="sap-icon--navigation-right-arrow"
-          />
-          
-            
-        </button>
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent fd-button--compact"
-        >
-          
-                
-          <i
-            class="sap-icon--home"
-          />
-          
-            
-        </button>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-    
-    <div
-      class="fd-bar__right"
-    >
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <span
-          aria-label="Image label"
-          class="fd-image--s"
-          style="background-image: url('https://placeimg.com/400/400/nature');"
-        >
-          
-            
-        </span>
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--compact fd-button--transparent"
-        >
-          
-                
-          <i
-            class="sap-icon--grid"
-          />
-          
-            
-        </button>
         
         
       </div>

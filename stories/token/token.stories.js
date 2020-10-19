@@ -8,8 +8,7 @@ selected values for form field or object metadata.`,
     }
 };
 
-export const primary = () => `
-<span class="fd-token" role="button" tabindex="0">
+export const primary = () => `<span class="fd-token" role="button" tabindex="0">
     <span class="fd-token__text">
         Bibendum
     </span>
@@ -40,8 +39,7 @@ export const primary = () => `
 * - **Selected Token** modifier different color of token
  */
 
-export const selected = () => `
-<span class="fd-token fd-token--selected" role="button" tabindex="0">
+export const selected = () => `<span class="fd-token fd-token--selected" role="button" tabindex="0">
     <span class="fd-token__text">
         Bibendum
     </span>
@@ -71,8 +69,7 @@ export const selected = () => `
  * Readonly token modifier different color of token. Readonly token shouldn't contain close button
  */
 
-export const readOnlyToken = () => `
-<span class="fd-token fd-token--readonly" role="button" tabindex="0">
+export const readOnlyToken = () => `<span class="fd-token fd-token--readonly" role="button" tabindex="0">
     <span class="fd-token__text">
         Bibendum
     </span>
@@ -98,8 +95,7 @@ export const readOnlyToken = () => `
  * Compact token modifier adds compact mode
  */
 
-export const compactToken = () => `
-<span class="fd-token fd-token--compact" role="button" tabindex="0">
+export const compactToken = () => `<span class="fd-token fd-token--compact" role="button" tabindex="0">
     <span class="fd-token__text">
         Bibendum
     </span>
@@ -132,8 +128,7 @@ export const compactToken = () => `
  The user can review the tokens by swiping them to the left or right.
  */
 
-export const cozyTokenizer = () => `
-<div class="fd-tokenizer ">
+export const cozyTokenizer = () => `<div class="fd-tokenizer ">
     <div class="fd-tokenizer__inner">
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
@@ -209,8 +204,7 @@ export const cozyTokenizer = () => `
  The user can review tokens by pressing the right or left arrows on the keyboard.
  */
 
-export const compactTokenizer = () => `
-<div class="fd-tokenizer fd-tokenizer--compact">
+export const compactTokenizer = () => `<div class="fd-tokenizer fd-tokenizer--compact">
     <div class="fd-tokenizer__inner">
         <span class="fd-token fd-token--compact" role="button" tabindex="0">
             <span class="fd-token__text">
@@ -286,8 +280,7 @@ export const compactTokenizer = () => `
  The user can review tokens by pressing the `tab` and `shift + tab` on the keyboard.
  */
 
-export const scrollableTokenizer = () => `
-<div class="fd-tokenizer fd-tokenizer--scrollable">
+export const scrollableTokenizer = () => `<div class="fd-tokenizer fd-tokenizer--scrollable">
     <div class="fd-tokenizer__inner" id="tokenizer-scrollable">
         <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
@@ -349,47 +342,6 @@ export const scrollableTokenizer = () => `
             </span>
         </span>
         <input class="fd-input fd-tokenizer__input" aria-label="Tokenizer input"/>
-    </div>
-</div>
-`;
-
-
-
-export const rtl = () => `
-<div dir="rtl">
-    <div class="fd-tokenizer fd-tokenizer--compact">
-        <div class="fd-tokenizer__inner">
-            <span class="fd-token fd-token--compact" role="button" tabindex="0">
-                <span class="fd-token__text">
-                    Bibendum
-                </span>
-                <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
-            </span>
-            <span class="fd-token fd-token--compact" role="button" tabindex="0">
-                <span class="fd-token__text">
-                    Lorem
-                </span>
-                <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
-            </span>
-            <span class="fd-token fd-token--compact" role="button" tabindex="0">
-                <span class="fd-token__text">
-                    Dolor
-                </span>
-                <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
-            </span>
-            <span class="fd-token fd-token--compact" role="button" tabindex="0">
-                <span class="fd-token__text">
-                    Filter
-                </span>
-                <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
-            </span>
-            <span class="fd-token fd-token--readonly fd-token--compact">
-                <span class="fd-token__text">
-                    Lorem
-                </span>
-            </span>
-            <input class="fd-input fd-input--compact fd-tokenizer__input" aria-label="Tokenizer input"/>
-        </div>
     </div>
 </div>
 `;

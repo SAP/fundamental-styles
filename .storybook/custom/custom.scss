@@ -440,3 +440,13 @@ body.sb-show-main {
 .fddocs-select {
   margin-right: 15px;
 }
+
+.mobile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 500px;
+  padding: 0;
+  margin-left: 30%;
+  margin-right: 30%;
+}

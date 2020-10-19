@@ -15,8 +15,7 @@ attribute of a line item in a table. `,
  * informative (class: `fd-object-status--informative`), or none.
  */
 
-export const primary = () => `
-<div class="fddocs-container">
+export const primary = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--negative">
         <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
         <span class="fd-object-status__text">Negative</span>
@@ -44,8 +43,7 @@ export const primary = () => `
  * Object status icon only
  */
 
-export const icon = () => `
-<div class="fddocs-container">
+export const icon = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--negative">
         <i class="fd-object-status__icon sap-icon--status-negative" aria-label="Negative"></i>
     </span>
@@ -68,8 +66,7 @@ export const icon = () => `
  * Object status text only
  */
 
-export const text = () => `
-<div class="fddocs-container">
+export const text = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--negative">
         <span class="fd-object-status__text">Negative</span>
     </span>
@@ -92,8 +89,7 @@ export const text = () => `
  * Object status icon and text
  */
 
-export const iconAndText = () => `
-<div class="fddocs-container">
+export const iconAndText = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--negative">
         <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
         <span class="fd-object-status__text">Negative</span>
@@ -121,8 +117,7 @@ export const iconAndText = () => `
  * Object Status with Generic Indication Colors
  */
 
-export const genericIndicationColors = () => `
-<div class="fddocs-container">
+export const genericIndicationColors = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--indication-1">
         <span class="fd-object-status__text">Dark Red</span>
     </span>
@@ -156,8 +151,7 @@ export const genericIndicationColors = () => `
  If Object Status has to be clicked/tabbed by the user add the `fd-object-status--link` modifier class.
  */
 
-export const clickableObjectStatus = () => `
-<div class="fddocs-container">
+export const clickableObjectStatus = () => `<div class="fddocs-container">
     <a href="#"  class="fd-object-status fd-object-status--negative fd-object-status--link">
         <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
         <span class="fd-object-status__text">Negative</span>
@@ -207,8 +201,7 @@ export const clickableObjectStatus = () => `
 `;
 
 
-export const largeObjectStatus = () => `
-<div class="fddocs-container">
+export const largeObjectStatus = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--large fd-object-status--negative">
         <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
         <span class="fd-object-status__text">Negative</span>
@@ -238,8 +231,7 @@ export const largeObjectStatus = () => `
  Inverted Object Status is achieved by adding the `fd-object-status--inverted` modifier class.
  */
 
-export const inverted = () => `
-<div class="fddocs-container">
+export const inverted = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--negative fd-object-status--inverted">
         <span class="fd-object-status__text">Inverted Negative</span>
     </span>
@@ -309,8 +301,7 @@ export const inverted = () => `
  Inverted indication colors
  */
 
-export const invertedIndication = () => `
-<div class="fddocs-container">
+export const invertedIndication = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--inverted fd-object-status--indication-1">
         <span class="fd-object-status__text">Indication1</span>
     </span>

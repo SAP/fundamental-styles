@@ -19,8 +19,7 @@ Multiple instances can be used in the <code class="docs-code">date-picker</code>
     }
 };
 
-export const defaultCozyMode = () => `
-<div style="display: flex; justify-content: space-around; margin-bottom: 1rem; flex-wrap: wrap;">
+export const defaultCozyMode = () => `<div style="display: flex; justify-content: space-around; margin-bottom: 1rem; flex-wrap: wrap;">
     <div class='fd-time'>
         <div class='fd-time__col'>
             <label class='fd-time__slider-label'>Hrs</label>
@@ -192,9 +191,7 @@ defaultCozyMode.parameters = {
     }
 };
 
-export const tabletMode = () =>
-    `
-<div style="display: flex; justify-content: space-around; margin-bottom: 1rem; flex-wrap: wrap;">
+export const tabletMode = () => `<div style="display: flex; justify-content: space-around; margin-bottom: 1rem; flex-wrap: wrap;">
      <div class='fd-time fd-time--tablet'>
         <div class='fd-time__col'>
             <label class='fd-time__slider-label'>Hrs</label>
@@ -365,9 +362,7 @@ tabletMode.parameters = {
     }
 };
 
-export const compactMode = () =>
-    `
-<div style="display: flex; justify-content: space-around; margin-bottom: 1rem; flex-wrap: wrap;">
+export const compactMode = () => `<div style="display: flex; justify-content: space-around; margin-bottom: 1rem; flex-wrap: wrap;">
     <div class='fd-time fd-time--compact'>
         <div class='fd-time__col'>
             <label class='fd-time__slider-label'>Hrs</label>
@@ -539,8 +534,7 @@ compactMode.parameters = {
     }
 };
 
-export const scrollableMode = () => `
-<div style="display: flex; justify-content: space-around; margin-bottom: 1rem; flex-wrap: wrap;">
+export const scrollableMode = () => `<div style="display: flex; justify-content: space-around; margin-bottom: 1rem; flex-wrap: wrap;">
     <div class='fd-time fd-time--scrollable'>
         <div class='fd-time__col'>
             <label class='fd-time__slider-label'>Hrs</label>

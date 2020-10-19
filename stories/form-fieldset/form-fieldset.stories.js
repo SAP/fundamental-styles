@@ -87,8 +87,7 @@ checkboxGroups.parameters = {
     }
 };
 
-export const radioButtonGroups = () => `
-    <fieldset class="fd-fieldset" id="radio1">
+export const radioButtonGroups = () => `<fieldset class="fd-fieldset" id="radio1">
         <legend class="fd-fieldset__legend">Radio Buttons Cozy Mode</legend>
         <div class="fd-form__group">
             <div class="fd-form-item">

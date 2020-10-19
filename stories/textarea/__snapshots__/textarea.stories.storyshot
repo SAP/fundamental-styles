@@ -57,8 +57,35 @@ exports[`Storyshots Components/Forms/Textarea Content Density - cozy and compact
 `;
 
 exports[`Storyshots Components/Forms/Textarea Counter 1`] = `
+<div
+  class="fd-form-item"
+>
+  
+    
+  <label
+    class="fd-form-label"
+    for="textarea-2"
+  >
+    Compact text area:
+  </label>
+  
+    
+  <textarea
+    class="fd-textarea fd-textarea--compact"
+    id="textarea-2"
+  >
+    Pellentesque metus lacus commodo eget justo ut rutrum varius nunc.
+  </textarea>
+  
+    
+  <div
+    class="fd-textarea-counter"
+  >
+    150 characters left
+  </div>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Components/Forms/Textarea Disabled And Read Only 1`] = `
@@ -375,9 +402,4 @@ exports[`Storyshots Components/Forms/Textarea Responsiveness 1`] = `
   
 
 </section>
-`;
-
-exports[`Storyshots Components/Forms/Textarea Right-to-Left 1`] = `
-
-
 `;

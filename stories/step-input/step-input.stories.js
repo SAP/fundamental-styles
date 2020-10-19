@@ -21,8 +21,7 @@ Do not use the step input if:
 
 /** On smartphones and tablets, the step input is shown in cozy mode (default). */
 
-export const primary = () => `
-<div class="fd-step-input">
+export const primary = () => `<div class="fd-step-input">
         <button aria-label="Step down" class="
             fd-button
             fd-button--transparent
@@ -55,8 +54,7 @@ It can be achieved by adding the `--compact` modifier to the main element as wel
 button and input elements.
  */
 
-export const compact = () => `
-<div class="fd-form-item fd-form-item--horizontal">
+export const compact = () => `<div class="fd-form-item fd-form-item--horizontal">
     <div class="fd-step-input fd-step-input--compact">
             <button aria-label="Step down" class="
                 fd-button
@@ -92,8 +90,7 @@ export const compact = () => `
 To make focus work on IE11, it should be added by putting `.is-focus` class to component
  */
 
-export const focused = () => `
-<div class="fd-step-input is-focus">
+export const focused = () => `<div class="fd-step-input is-focus">
         <button aria-label="Step down" class="
             fd-button
             fd-button--transparent
@@ -123,8 +120,7 @@ export const focused = () => `
 The semantic states can be customized by adding the `is-error` | `is-success` | `is-warning` | or `is-information` into the fd-step-input element.
  */
 
-export const states = () => `
-<h3>Success</h3>
+export const states = () => `<h3>Success</h3>
 
 <div class="fd-step-input is-success">
         <button aria-label="Step down" class="
@@ -236,8 +232,7 @@ states.parameters = {
 };
 
 
-export const disabled = () => `
-<div class="fd-step-input is-disabled">
+export const disabled = () => `<div class="fd-step-input is-disabled">
         <button aria-label="Step down" class="
             fd-button
             fd-button--transparent
@@ -262,8 +257,7 @@ export const disabled = () => `
 </div>
 `;
 
-export const readOnly = () => `
-<div class="fd-step-input is-readonly">
+export const readOnly = () => `<div class="fd-step-input is-readonly">
         <button aria-label="Step down" class="
             fd-button
             fd-button--transparent

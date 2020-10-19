@@ -22,8 +22,7 @@ primary.parameters = {
     }
 };
 
-export const paragraph = () => `
-<p>Lorem ipsum <span class="fd-counter" aria-label="Unread count">5</span> </p>
+export const paragraph = () => `<p>Lorem ipsum <span class="fd-counter" aria-label="Unread count">5</span> </p>
 `;
 paragraph.storyName = 'Text';
 paragraph.parameters = {
@@ -32,8 +31,7 @@ paragraph.parameters = {
     }
 };
 
-export const tabs = () => `
-<ul class="fd-tabs" role="tablist">
+export const tabs = () => `<ul class="fd-tabs" role="tablist">
     <li class="fd-tabs__item">
         <a class="fd-tabs__link" aria-controls="AvcVC566" href="#AvcVC566" role="tab">Link
         <span class="fd-counter" aria-label="Unread count">25</span></a>
@@ -85,34 +83,5 @@ notifier.storyName = 'Notification';
 notifier.parameters = {
     docs: {
         storyDescription: 'Counter with <code>--notification</code> modifier'
-    }
-};
-
-export const rtl = () => `
-<div dir="rtl">
-    <ul class="fd-tabs" role="tablist">
-        <li class="fd-tabs__item">
-            <a class="fd-tabs__link" aria-controls="AvcVC566" href="#AvcVC566" role="tab">Link
-            <span class="fd-counter" aria-label="Unread count">25</span></a>
-        </li>
-        <li class="fd-tabs__item">
-            <a class="fd-tabs__link" aria-controls="5mxO9110" aria-selected="true" href="#5mxO9110" role="tab">
-                <span class="fd-tabs__tag">Selected</span>
-            </a>
-        </li>
-        <li class="fd-tabs__item">
-            <a class="fd-tabs__link" aria-controls="r0pk3445" href="#r0pk3445" role="tab">Link</a>
-        </li>
-        <li class="fd-tabs__item">
-            <a class="fd-tabs__link" aria-controls="Dj1Ri832" aria-disabled="true" role="tab">Disabled</a>
-        </li>
-    </ul>
-</div>
-`;
-
-rtl.storyName = 'Right-to-Left example';
-rtl.parameters = {
-    docs: {
-        storyDescription: 'RTL example'
     }
 };

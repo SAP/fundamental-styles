@@ -31,4 +31,13 @@
   --fdWizard_Content_Transparent_Background: transparent;
   --fdWizard_Selection_Bar_Height: 0.188rem;
   --fdWizard_Selection_Bar_Background: var(--sapSelectedColor);
+
+  /* Dynamic Page Layout */
+  --fdDynamicPage_Hover_Border_Bottom: none;
+  --fdDynamicPage_Title_Header_Transparent_Background: transparent;
+  --fdDynamicPage_Button_Left_Gradient: linear-gradient(to left, var(--sapHighlightColor), transparent);
+  --fdDynamicPage_Button_Right_Gradient: linear-gradient(to right, var(--sapHighlightColor), transparent);
+  --fdDynamicPage_Button_Group_Background: var(--sapHighlightColor);
+  --fdDynamicPage_Content_List_Background: var(--sapGroup_ContentBackground);
+  --fdDynamicPage_Content_Transparent_Background: transparent;
 }

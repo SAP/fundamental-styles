@@ -21,8 +21,7 @@ Implementation Guidelines:
     }
 };
 
-export const withIconAndButton = () => `
-<div style="display:flex;justify-content:space-around">
+export const withIconAndButton = () => `<div style="display:flex;justify-content:space-around">
     <div class="fd-popover">
         <div class="fd-popover__control">
             <button class="fd-button fd-button--transparent" aria-controls="pQqQR213" aria-haspopup="true" aria-expanded="true" aria-label="More">

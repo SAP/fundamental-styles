@@ -1,13 +1,282 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Dialog Default 1`] = `
+<div
+  class="fd-dialog-docs-static fd-dialog fd-dialog--active"
+>
+  
+    
+  <div
+    aria-labelledby="dialog-title-1"
+    aria-modal="true"
+    class="fd-dialog__content"
+    role="dialog"
+  >
+    
+        
+    <span
+      class="fd-dialog__resize-handle"
+    />
+    
+        
+    <header
+      class="fd-dialog__header fd-bar fd-bar--header-with-subheader"
+    >
+      
+            
+      <div
+        class="fd-bar__left"
+      >
+        
+                
+        <div
+          class="fd-bar__element"
+        >
+          
+                    Dialog header
+                
+        </div>
+        
+                
+        <div
+          class="fd-bar__element"
+        >
+          
+                    
+          <h2
+            class="fd-title fd-title--h5"
+            id="dialog-title-1"
+          >
+            
+                        Dialog title
+                    
+          </h2>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </header>
+    
+        
+    <div
+      class="fd-dialog__subheader fd-bar fd-bar--subheader"
+    >
+      
+            
+      <div
+        class="fd-bar__left"
+      >
+        
+                
+        <div
+          class="fd-bar__element"
+        >
+          
+                    Dialog subheader
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-dialog__body"
+    >
+      
+            Dialog body
+            
+      <div
+        class="fd-dialog__loader"
+      >
+        
+                Dialog loader
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <footer
+      class="fd-dialog__footer fd-bar fd-bar--footer"
+    >
+      
+            
+      <div
+        class="fd-bar__right"
+      >
+        
+                
+        <div
+          class="fd-bar__element"
+        >
+          
+                    Dialog footer
+                
+        </div>
+        
+                
+        <div
+          class="fd-bar__element"
+        >
+          
+                    
+          <button
+            class="fd-dialog__decisive-button fd-button fd-button--compact"
+          >
+            
+                        Begin button
+                    
+          </button>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-bar__element"
+        >
+          
+                    
+          <button
+            class="fd-dialog__decisive-button fd-button fd-button--compact"
+          >
+            
+                        End button
+                    
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </footer>
+    
+    
+  </div>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Components/Dialog Draggable 1`] = `
+<div
+  class="fd-dialog-docs-static fd-dialog fd-dialog--active"
+>
+  
+    
+  <div
+    aria-labelledby="dialog-title-7"
+    aria-modal="true"
+    class="fd-dialog__content fd-dialog__content--draggable-grab fd-dialog__content--s"
+    role="dialog"
+  >
+    
+        
+    <header
+      class="fd-dialog__header fd-bar fd-bar--header"
+    >
+      
+            
+      <div
+        class="fd-bar__left"
+      >
+        
+                
+        <div
+          class="fd-bar__element"
+        >
+          
+                    
+          <h2
+            class="fd-title fd-title--h5"
+            id="dialog-title-7"
+          >
+            
+                        Lorem ipsum
+                    
+          </h2>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </header>
+    
+        
+    <div
+      class="fd-dialog__body"
+    >
+      
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        
+    </div>
+    
+        
+    <footer
+      class="fd-dialog__footer fd-bar fd-bar--footer"
+    >
+      
+            
+      <div
+        class="fd-bar__right"
+      >
+        
+                
+        <div
+          class="fd-bar__element"
+        >
+          
+                    
+          <button
+            class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact"
+          >
+            Save
+          </button>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-bar__element"
+        >
+          
+                    
+          <button
+            class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact"
+          >
+            Cancel
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </footer>
+    
+    
+  </div>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Components/Dialog Loading 1`] = `
@@ -150,8 +419,117 @@ exports[`Storyshots Components/Dialog Loading 1`] = `
 `;
 
 exports[`Storyshots Components/Dialog Resizable 1`] = `
-
-
+<div
+  class="fd-dialog-docs-static fd-dialog fd-dialog--active"
+>
+  
+        
+  <div
+    aria-labelledby="dialog-title-6"
+    aria-modal="true"
+    class="fd-dialog__content fd-dialog__content--s"
+    role="dialog"
+  >
+    
+            
+    <span
+      class="fd-dialog__resize-handle"
+    />
+    
+            
+    <header
+      class="fd-dialog__header fd-bar fd-bar--header"
+    >
+      
+                
+      <div
+        class="fd-bar__left"
+      >
+        
+                    
+        <div
+          class="fd-bar__element"
+        >
+          
+                        
+          <h2
+            class="fd-title fd-title--h5"
+            id="dialog-title-6"
+          >
+            
+                            Lorem ipsum
+                        
+          </h2>
+          
+                    
+        </div>
+        
+                
+      </div>
+      
+            
+    </header>
+    
+            
+    <div
+      class="fd-dialog__body"
+    >
+      
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            
+    </div>
+    
+            
+    <footer
+      class="fd-dialog__footer fd-bar fd-bar--footer"
+    >
+      
+                
+      <div
+        class="fd-bar__right"
+      >
+        
+                    
+        <div
+          class="fd-bar__element"
+        >
+          
+                        
+          <button
+            class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact"
+          >
+            Save
+          </button>
+          
+                    
+        </div>
+        
+                    
+        <div
+          class="fd-bar__element"
+        >
+          
+                        
+          <button
+            class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact"
+          >
+            Cancel
+          </button>
+          
+                    
+        </div>
+        
+                
+      </div>
+      
+            
+    </footer>
+    
+        
+  </div>
+  
+    
+</div>
 `;
 
 exports[`Storyshots Components/Dialog Selectable 1`] = `

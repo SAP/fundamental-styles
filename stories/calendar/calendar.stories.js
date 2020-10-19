@@ -117,8 +117,7 @@ These classes are used to style calendar grid elements with colors, which are id
     }
 };
 
-export const days = () => `
-<div style="display: flex; justify-content: space-around;">
+export const days = () => `<div style="display: flex; justify-content: space-around;">
     <div class="fd-calendar">
         <header class="fd-calendar__header">
             <div class="fd-calendar__navigation">
@@ -317,8 +316,7 @@ days.parameters = {
 };
 
 
-export const months = () => `
-    <div style="display: flex; justify-content: space-around;">
+export const months = () => `    <div style="display: flex; justify-content: space-around;">
         <div class="fd-calendar">
             <header class="fd-calendar__header">
                 <div class="fd-calendar__navigation">
@@ -404,8 +402,7 @@ months.parameters = {
     }
 };
 
-export const years = () => `
-<div style="display: flex; justify-content: space-around; margin-bottom: 1rem; flex-wrap: wrap;">
+export const years = () => `<div style="display: flex; justify-content: space-around; margin-bottom: 1rem; flex-wrap: wrap;">
     <div class="fd-calendar" style="margin-bottom: 1rem;">
     <header class="fd-calendar__header">
         <div class="fd-calendar__navigation">
@@ -655,8 +652,7 @@ years.parameters = {
     }
 };
 
-export const compact = () => `
-<div style="display: flex; justify-content: space-around;">
+export const compact = () => `<div style="display: flex; justify-content: space-around;">
     <div class="fd-calendar fd-calendar--compact">
         <header class="fd-calendar__header">
             <div class="fd-calendar__navigation">
@@ -817,8 +813,7 @@ compact.parameters = {
     }
 };
 
-export const LandscapeMobile = () => `
-<div class="fd-dialog-docs-static fd-calendar-mobile-docs-static--landscape fd-dialog fd-dialog--active">
+export const LandscapeMobile = () => `<div class="fd-dialog-docs-static fd-calendar-mobile-docs-static--landscape fd-dialog fd-dialog--active">
     <div class="fd-dialog__content fd-dialog__content--s fd-dialog__content--mobile">
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
             <div class="fd-calendar fd-calendar--mobile-landscape">
@@ -1003,8 +998,7 @@ Note: For landscape mode, no dialog header element should be used. However, a di
     }
 };
 
-export const PortraitMobile = () => `
-<div class="fd-dialog-docs-static fd-calendar-mobile-docs-static--portrait fd-dialog fd-dialog--active">
+export const PortraitMobile = () => `<div class="fd-dialog-docs-static fd-calendar-mobile-docs-static--portrait fd-dialog fd-dialog--active">
     <div class="fd-dialog__content fd-dialog__content--s fd-dialog__content--mobile">
         <header class="fd-dialog__header fd-bar fd-bar--header fd-bar--cozy">
             <div class="fd-bar__left">

@@ -15,8 +15,7 @@ Notifications are used to relay information to the user about a situation or tas
     }
 };
 
-export const primary = () => `
-<div class="fd-notification">
+export const primary = () => `<div class="fd-notification">
     <div class="fd-notification__body">
         <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/400/400/nature/4/')" role="presentation" aria-label="John Doe"></span>
         <div class="fd-notification__content">
@@ -49,8 +48,7 @@ Primary notifications display a container with an avatar, content area with text
     }
 };
 
-export const noAvatar = () => `
-<div class="fd-notification">
+export const noAvatar = () => `<div class="fd-notification">
     <div class="fd-notification__body">
         <div class="fd-notification__content fd-notification__content--no-avatar">
             <div class="fd-notification__header">
@@ -82,8 +80,7 @@ Notifications can be displayed without an avatar by adding the <code>fd-notifica
     }
 };
 
-export const information = () => `
-<div class="fd-notification">
+export const information = () => `<div class="fd-notification">
   <div class="fd-message-strip fd-message-strip--information fd-message-strip--dismissible" role="alert">
       <p class="fd-message-strip__text">
         Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet.
@@ -122,8 +119,7 @@ Notifications can also include alerts, and in this case it is informative. You c
     }
 };
 
-export const warning = () => `
-<div class="fd-notification">
+export const warning = () => `<div class="fd-notification">
     <div class="fd-message-strip fd-message-strip--warning fd-message-strip--dismissible" role="alert">
       <p class="fd-message-strip__text">
         Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet.
@@ -163,8 +159,7 @@ Notifications can display warning alerts by adding the <code>fd-message-strip fd
     }
 };
 
-export const error = () => `
-<div class="fd-notification">
+export const error = () => `<div class="fd-notification">
     <div class="fd-message-strip fd-message-strip--error fd-message-strip--dismissible" role="alert">
         <p class="fd-message-strip__text">
           Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet.
@@ -204,8 +199,7 @@ Notifications can display error alerts by adding the <code>fd-message-strip fd-m
     }
 };
 
-export const notificationGroup = () => `
-<div class="fd-notification fd-notification--group">
+export const notificationGroup = () => `<div class="fd-notification fd-notification--group">
     <ul class="fd-tabs fd-tabs--l fd-notification--tabs" role="tablist">
         <li role="listitem" class="fd-tabs__item">
             <a 
@@ -447,8 +441,7 @@ notificationGroup.parameters = {
     }
 };
 
-export const mobile = () => `
-<div style="heigt: 200px; max-width: 20rem">
+export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
 
 <div class="fd-notification fd-notification--mobile"">
     <div class="fd-notification__body">

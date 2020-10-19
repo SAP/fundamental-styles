@@ -41,7 +41,17 @@ const DocsPage = () => {
     let [themeState, setThemeState] = useState('sap_fiori_3');
     const previousTheme = useRef();
 
+    let [directionalityState, setDirectionalityState] = useState('ltr');
+    const previousDirectionality = useRef();
+
     useEffect(() => {
+        if(!previousDirectionality.current || previousDirectionality.current !== directionalityState){
+            document.getElementsByClassName('sbdocs-preview').forEach(item => {
+                item.childNodes[1].setAttribute('dir', directionalityState);
+            });
+            previousDirectionality.current = directionalityState;
+        }
+        
         if (!previousTheme.current || previousTheme.current !== themeState) {
             // remove previous theme links
             let links = [].slice.call(document.getElementsByTagName('link'));
@@ -68,7 +78,7 @@ const DocsPage = () => {
             })
             previousTheme.current = themeState;
         }
-    }, [themeState]);
+    }, [themeState, directionalityState]);
 
     // do not display disabled stories (dev only)
     const stories = context.storyStore?.getStoriesForKind(context.kind)?.filter((s) => !s.parameters?.docs?.disable);
@@ -90,7 +100,7 @@ const DocsPage = () => {
 
     return (
         <>
-            <Header onThemeChange={(e) => setThemeState(e.target.value)} />
+            <Header onThemeChange={(e) => setThemeState(e.target.value)} onDirectionalityChange={(e) => setDirectionalityState(e.target.value)} />
             <Title />
             <Toc />
             <Subtitle />
