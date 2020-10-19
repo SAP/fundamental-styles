@@ -1,41 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Feed Input Default 1`] = `
+exports[`Storyshots Components/Feed Input Default 1`] = `    `;
 
-    
-`;
+exports[`Storyshots Components/Feed Input Disabled 1`] = `    `;
 
-exports[`Storyshots Components/Feed Input Disabled 1`] = `
+exports[`Storyshots Components/Feed Input Generic thumbnail 1`] = `    `;
 
-    
-`;
+exports[`Storyshots Components/Feed Input Max height 1`] = `    `;
 
-exports[`Storyshots Components/Feed Input Generic thumbnail 1`] = `
+exports[`Storyshots Components/Feed Input Multiline 1`] = `    `;
 
-    
-`;
+exports[`Storyshots Components/Feed Input No thumbnail 1`] = `    `;
 
-exports[`Storyshots Components/Feed Input Max height 1`] = `
-
-    
-`;
-
-exports[`Storyshots Components/Feed Input Multiline 1`] = `
-
-    
-`;
-
-exports[`Storyshots Components/Feed Input No thumbnail 1`] = `
-
-    
-`;
-
-exports[`Storyshots Components/Feed Input RTL 1`] = `
-
-    
-`;
-
-exports[`Storyshots Components/Feed Input With text 1`] = `
-
-    
-`;
+exports[`Storyshots Components/Feed Input With text 1`] = `    `;

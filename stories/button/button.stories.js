@@ -40,8 +40,7 @@ export const primary = () => `
  * - **Transparent Button** Used for secondary or negative path actions
  */
 
-export const types = () => `
-    <div class="fddocs-container"> 
+export const types = () => `<div class="fddocs-container"> 
         <button class="fd-button">Default Button</button>
         <button class="fd-button fd-button--emphasized">Emphasized Button</button>
         <button class="fd-button fd-button--ghost">Ghost Button</button>
@@ -49,8 +48,7 @@ export const types = () => `
         <button class="fd-button fd-button--negative">Negative Button</button>
         <button class="fd-button fd-button--attention">Attention Button</button>
         <button class="fd-button fd-button--transparent">Transparent Button</button>
-    </div>
-`;
+</div>`;
 
 types.storyName = 'Button styles';
 types.parameters = {
@@ -435,48 +433,5 @@ When the state of the button has changed, add <code>aria-live=”assertive”</c
 Note: For the text to be read out loud by screen readers, a helper text has been added with <code>aria-describedby</code> matching the <code>id</code> of the paragraph element with the <code>_instructions</code> element. The element uses the <code>screen-reader-only</code> styling so that it is not visible.
         
 `
-    }
-};
-
-export const RTL = () => `
-<div dir="RTL">
-  <button class="fd-button fd-button--emphasized">Add to Cart</button>
-  <button class="fd-button">Add to Cart</button>
-  <button class="fd-button fd-button--transparent">Add to Cart</button>
-  <button class="fd-button fd-button--ghost">Add to Cart</button>
-  <button class="fd-button fd-button--positive">Approve</button>
-  <button class="fd-button fd-button--negative">Reject</button>
-  <button class="fd-button fd-button--attention">Attention</button>
-  <br><br>
-  <button class="fd-button fd-button--emphasized fd-button--menu">Add to Cart</button>
-  <button class="fd-button fd-button--menu">Add to Cart</button>
-  <button class="fd-button fd-button--transparent fd-button--menu">Add to Cart</button>
-  <br><br>
-  <button aria-label="Add to cart" class="fd-button"><i class="sap-icon--cart"></i></button>
-  <button aria-label="Add to cart" class="fd-button fd-button--emphasized"><i class="sap-icon--cart"></i></button>
-  <button aria-label="Add to cart" class="fd-button fd-button--transparent"><i class="sap-icon--cart"></i></button>
-  <button aria-label="Filter" class="fd-button fd-button--ghost"><i class="sap-icon--filter"></i></button>
-  <button aria-label="Approve" class="fd-button fd-button--positive"><i class="sap-icon--accept"></i></button>
-  <button aria-label="Decline" class="fd-button fd-button--negative"><i class="sap-icon--decline"></i></button>
-  <button aria-label="Decline" class="fd-button fd-button--attention"><i class="sap-icon--decline"></i></button>
-  
-  <div class="fd-segmented-button" role="group" aria-label="Group label">
-    <button aria-label="Survey" class="fd-button"><i class="sap-icon--survey"></i></button>
-    <button aria-label="Chart" class="fd-button" aria-pressed="true"><i class="sap-icon--pie-chart"></i></button>
-    <button aria-label="Pool" class="fd-button"><i class="sap-icon--pool"></i></button>
-  </div>
-
-  <div class="fd-segmented-button" role="group" aria-label="Group label">
-    <button class="fd-button fd-button--compact" aria-pressed="true">Left</button>
-    <button class="fd-button fd-button--compact">Middle</button>
-    <button class="fd-button fd-button--compact">Right</button>
-  </div>
-</div>
-`;
-
-RTL.parameters = {
-    docs: {
-        iframeHeight: 200,
-        storyDescription: 'These buttons are displayed from right-to-left on the screen.'
     }
 };

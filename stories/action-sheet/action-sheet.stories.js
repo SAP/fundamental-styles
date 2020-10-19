@@ -137,8 +137,7 @@ actionSheetTablet.parameters = {
 
 actionSheetTablet.storyName = 'Tablet';
 
-export const actionSheetMobile = () => `
-<div style="width: 350px; height: 600px; position: relative">
+export const actionSheetMobile = () => `<div style="width: 350px; height: 600px; position: relative">
     <button class="fd-button fd-button--transparent"
             aria-label="More Options" aria-controls="actionSheetPhone" aria-expanded="false" 
             aria-haspopup="true" onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">

@@ -1,13 +1,17 @@
 import packageJson from '../../../package.json';
 import React from 'react';
 
-const Header = ({onThemeChange}) => {
+const Header = ({onThemeChange, onDirectionalityChange}) => {
     return (
         <header className='fddocs-header'>
             <section className='fddocs-header--left'>
                 <span>Fundamental Styles</span>
             </section>
             <section className='fddocs-header--right'>
+                <select className='fddocs-select' onChange={(e) => onDirectionalityChange(e)}>
+                    <option value='ltr'>Left-to-Right</option>
+                    <option value='rtl'>Right-to-Left</option>
+                </select>
                 <select className='fddocs-select' onChange={(e) => onThemeChange(e)}>
                     <option value='sap_fiori_3'>Light</option>
                     <option value='sap_fiori_3_dark'>Dark</option>

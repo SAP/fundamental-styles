@@ -77,8 +77,7 @@ desktopAndTablet.parameters = {
     }
 };
 
-export const mobileCozyMode = () => `
-<div style="width: 50%; display: inline-block" class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
+export const mobileCozyMode = () => `<div style="width: 50%; display: inline-block" class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
     <div class="fd-dialog__content fd-dialog__content--mobile">
         <header aria-label="bar-header" class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
@@ -194,8 +193,7 @@ mobileCozyMode.parameters = {
     }
 };
 
-export const seperatedItems = () => `
-<nav class="fd-menu">
+export const seperatedItems = () => `<nav class="fd-menu">
     <ul class="fd-menu__list" role="menu">
         <li class="fd-menu__item" role="presentation">
             <a class="fd-menu__link" href="#" role="menuitem">
@@ -236,8 +234,7 @@ seperatedItems.parameters = {
     }
 };
 
-export const differentStates = () => `
-<div style="width: 50%; display: inline-block">
+export const differentStates = () => `<div style="width: 50%; display: inline-block">
     <nav aria-label="navbar" class="fd-menu">
         <ul class="fd-menu__list" role="menu">
             <li class="fd-menu__item" role="presentation">
@@ -329,8 +326,7 @@ To remove default box shadow from menu containers use <code>fd-menu__list--no-sh
     }
 };
 
-export const menuIcon = () => `
-<nav class="fd-menu">
+export const menuIcon = () => `<nav class="fd-menu">
     <ul class="fd-menu__list" role="menu">
         <li class="fd-menu__item" role="presentation">
                 <a class="fd-menu__link" href="#" role="menuitem">
@@ -378,8 +374,7 @@ According to Fiori3 design shortcuts should be on desktop devices.`
     }
 };
 
-export const withSubmenu = () => `
-<nav class="fd-menu">
+export const withSubmenu = () => `<nav class="fd-menu">
     <ul class="fd-menu__list" role="menu">
         <li class="fd-menu__item" role="presentation">            
             <a class="fd-menu__link" href="#" role="menuitem">
@@ -441,47 +436,5 @@ For a submenu, do the following:
 - After the end of the <code>fd-menu__link</code> container, use <code>fd-menu__sublist</code> class in its own <code><ul><code>
 - Follow the same template for submenu as you would for a normal menu. The same <code>fd-menu__item</code> and <code>fd-menu__link</code> works for the subitems too.
 `
-    }
-};
-
-export const RTL = () => `
-<nav class="fd-menu" dir="rtl">
-    <ul class="fd-menu__list" role="menu">
-        <li class="fd-menu__item" role="presentation">
-            <a class="fd-menu__link" href="#" role="menuitem">
-                <span class="fd-menu__addon-before"><i class="sap-icon--grid" role="presentation"></i></span>
-                <span class="fd-menu__title">Option 1</span>
-                <span class="fd-menu__addon-after"><i class="sap-icon--history" role="presentation"></i></span>
-            </a>
-        </li>
-        <li class="fd-menu__item" role="presentation">
-            <a class="fd-menu__link" href="#" role="menuitem">
-                <span class="fd-menu__addon-before"><i class="sap-icon--accept" role="presentation"></i></span>
-                <span class="fd-menu__title">Option 2</span>
-                <span class="fd-menu__addon-after"><i class="sap-icon--grid" role="presentation"></i></span>
-            </a>
-        </li>
-        <li class="fd-menu__item" role="presentation">
-            <a class="fd-menu__link" href="#" role="menuitem">
-                <span class="fd-menu__addon-before"><i class="sap-icon--history" role="presentation"></i></span>
-                <span class="fd-menu__title">Option 3</span>
-                <span class="fd-menu__addon-after"><i class="sap-icon--cart" role="presentation"></i></span>
-            </a>
-        </li>
-        <li class="fd-menu__item" role="presentation">
-            <a class="fd-menu__link" href="#" role="menuitem">
-                <span class="fd-menu__addon-before"><i class="sap-icon--grid" role="presentation"></i></span>
-                <span class="fd-menu__title">Option 4</span>
-                <span class="fd-menu__addon-after"><i class="sap-icon--lightbulb" role="presentation"></i></span>
-            </a>
-        </li>
-    </ul>
-</nav>
-`;
-
-RTL.parameters = {
-    docs: {
-        iframeHeight: 220,
-        storyDescription: 'The basic stucture of a menu in RTL simulated mode.'
     }
 };

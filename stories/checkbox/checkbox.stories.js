@@ -146,8 +146,7 @@ mobile.parameters = {
     }
 };
 
-export const inline = () => `
-<fieldset class="fd-fieldset">
+export const inline = () => `<fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Inline checkboxes</legend>
     <div class="fd-form-group fd-form-group--inline">
         <div class="fd-form-group__item fd-form-item">
@@ -319,39 +318,5 @@ states.parameters = {
 | Information | <code>fd-checkbox is-information</code> |
 | Disabled | <code>fd-checkbox is-disabled</code> |
 `
-    }
-};
-
-export const rtl = () => `
-<fieldset class="fd-fieldset" dir="rtl">
-    <legend class="fd-fieldset__legend">RTL Support</legend>
-    <div class="fd-form-group">
-        <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez611tt">
-            <label class="fd-checkbox__label" for="Ai4ez611tt">
-                <span class="fd-checkbox__text">Text Option</span>
-            </label>
-        </div>
-        <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez612tt" checked>
-            <label class="fd-checkbox__label" for="Ai4ez612tt">
-                <span class="fd-checkbox__text">Selected State</span>
-            </label>
-        </div>
-        <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez613i7">
-            <label class="fd-checkbox__label" for="Ai4ez613i7">
-                <span class="fd-checkbox__text">TriState Text</span>
-            </label>
-        </div>
-    </div>
-</fieldset>
-`;
-
-rtl.storyName = 'RTL';
-rtl.parameters = {
-    docs: {
-        iframeHeight: 200,
-        storyDescription: 'Checkboxes can also be displayed from right to left on the screen so they may be used internationally.'
     }
 };

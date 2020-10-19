@@ -22,8 +22,7 @@ Do not use the panel if:
 /** Expandable panels are much like fixed panels, except their content can be expanded and collapsed
  * (including the info toolbar, if available). */
 
-export const expandable = () => `
-<div class="fd-panel">
+export const expandable = () => `<div class="fd-panel">
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
             <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="fghqwe321">
@@ -86,8 +85,7 @@ expandable.parameters = {
 To create a fixed panel, add the `--fixed` modifier.
  */
 
-export const fixed = () => `
-<div class="fd-panel fd-panel--fixed">
+export const fixed = () => `<div class="fd-panel fd-panel--fixed">
     <div class="fd-panel__header">
         <h4 class="fd-panel__title">Panel Header</h4>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
@@ -119,8 +117,7 @@ fixed.parameters = {
 
 /** To use a compact panel, add the `--compact` modifier. */
 
-export const compact = () => `
-<div class="fd-panel fd-panel--compact">
+export const compact = () => `<div class="fd-panel fd-panel--compact">
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
             <button class="fd-button fd-button--compact fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="Gekf63a" aria-labelledby="asdASD234">
@@ -157,8 +154,7 @@ compact.parameters = {
 
 /** When the height of the panel\'s content is set to a fixed size, the content area can be scrolled through. */
 
-export const fixedHeightContent = () => `
-<div class="fd-panel">
+export const fixedHeightContent = () => `<div class="fd-panel">
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
             <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="GJL745SV" aria-labelledby="asdASD345">

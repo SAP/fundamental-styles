@@ -2,8 +2,6 @@
 
 exports[`Storyshots Components/Toolbar Alignment 1`] = `
 <section>
-  
-
   <h3>
     Left and Right Aligned Content
   </h3>
@@ -275,14 +273,98 @@ exports[`Storyshots Components/Toolbar Alignment 1`] = `
 `;
 
 exports[`Storyshots Components/Toolbar Basic 1`] = `
+<div
+  class="fd-toolbar fd-toolbar--cozy"
+>
+  
+    
+  <span
+    class="fd-toolbar__spacer"
+  >
+     
+  </span>
+  
+    
+  <button
+    class="fd-button fd-button--transparent"
+  >
+    New
+  </button>
+  
+    
+  <button
+    class="fd-button fd-button--transparent"
+  >
+    Open
+  </button>
+  
+    
+  <button
+    class="fd-button fd-button--transparent"
+  >
+    Edit
+  </button>
+  
+    
+  <button
+    class="fd-button fd-button--transparent"
+  >
+    Delete
+  </button>
+  
+    
+  <span
+    class="fd-toolbar__separator"
+  />
+  
+    
+  <button
+    aria-label="Survey"
+    class="fd-button fd-button--transparent"
+  >
+    
+        
+    <i
+      class="sap-icon--survey"
+    />
+    
+    
+  </button>
+  
+    
+  <button
+    aria-label="Pool"
+    class="fd-button fd-button--transparent"
+  >
+    
+        
+    <i
+      class="sap-icon--pool"
+    />
+    
+    
+  </button>
+  
+    
+  <button
+    aria-label="Chart"
+    class="fd-button fd-button--transparent"
+  >
+    
+        
+    <i
+      class="sap-icon--pie-chart"
+    />
+    
+    
+  </button>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Components/Toolbar Overflow 1`] = `
 <section>
-  
-
   <div
     style="height:250px"
   >
@@ -590,8 +672,6 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
 
 exports[`Storyshots Components/Toolbar Separator 1`] = `
 <section>
-  
-
   <h3 />
   
 
@@ -699,11 +779,432 @@ exports[`Storyshots Components/Toolbar Separator 1`] = `
 `;
 
 exports[`Storyshots Components/Toolbar Sizes 1`] = `
+<div
+  class="fd-toolbar fd-toolbar--solid fd-toolbar--cozy"
+>
+  
+    
+  <span>
+    Products (420)
+  </span>
+  
+    
+  <button
+    class="fd-button fd-button--compact fd-button--transparent"
+  >
+    Create
+  </button>
+  
+    
+  <span
+    class="fd-toolbar__spacer"
+  />
+  
+    
+  <button
+    class="fd-button fd-button--positive"
+  >
+    Accept
+  </button>
+  
+    
+  <button
+    class="fd-button fd-button--reject"
+  >
+    Reject
+  </button>
+  
+    
+  <span
+    class="fd-toolbar__separator"
+  />
+  
+    
+  <button
+    aria-label="Survey"
+    class="fd-button fd-button--compact fd-button--transparent"
+  >
+    
+        
+    <i
+      class="sap-icon--survey"
+    />
+    
+    
+  </button>
+  
+    
+  <button
+    aria-label="Pool"
+    class="fd-button fd-button--compact fd-button--transparent"
+  >
+    
+        
+    <i
+      class="sap-icon--pool"
+    />
+    
+    
+  </button>
+  
+    
+  <button
+    aria-label="Chart"
+    class="fd-button fd-button--compact fd-button--transparent"
+  >
+    
+        
+    <i
+      class="sap-icon--pie-chart"
+    />
+    
+    
+  </button>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Components/Toolbar Types 1`] = `
+<div
+  style="background-color: #ccc;background-color:var(--sapContent_ImagePlaceholde, #ccc); padding: 1rem"
+>
+  
+    
+  <h3>
+    Solid
+  </h3>
+  
+    
+  <div
+    class="fd-toolbar fd-toolbar--solid"
+  >
+    
+        
+    <span>
+      Products (23)
+    </span>
+    
+        
+    <button
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      Create
+    </button>
+    
+        
+    <span
+      class="fd-toolbar__spacer "
+    >
+       
+    </span>
+    
+        
+    <button
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      Edit
+    </button>
+    
+        
+    <button
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      Delete
+    </button>
+    
+        
+    <span
+      class="fd-toolbar__separator"
+    />
+    
+        
+    <button
+      aria-label="Survey"
+      class="fd-button fd-button--transparent"
+    >
+      
+            
+      <i
+        class="sap-icon--survey"
+      />
+      
+        
+    </button>
+    
+        
+    <button
+      aria-label="Pool"
+      class="fd-button fd-button--transparent"
+    >
+      
+            
+      <i
+        class="sap-icon--pool"
+      />
+      
+        
+    </button>
+    
+        
+    <button
+      aria-label="Chart"
+      class="fd-button fd-button--transparent"
+    >
+      
+            
+      <i
+        class="sap-icon--pie-chart"
+      />
+      
+        
+    </button>
+    
+    
+  </div>
+  
+    
+  <h3>
+    Transparent
+  </h3>
+  
+    
+  <div
+    class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+  >
+    
+        
+    <button
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      Create
+    </button>
+    
+        
+    <button
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      Save
+    </button>
+    
+        
+    <span
+      class="fd-toolbar__spacer "
+    >
+       
+    </span>
+    
+        
+    <button
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      Edit
+    </button>
+    
+        
+    <button
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      Delete
+    </button>
+    
+        
+    <span
+      class="fd-toolbar__separator"
+    />
+    
+        
+    <button
+      aria-label="Survey"
+      class="fd-button fd-button--transparent"
+    >
+      
+            
+      <i
+        class="sap-icon--survey"
+      />
+      
+        
+    </button>
+    
+        
+    <button
+      aria-label="Pool"
+      class="fd-button fd-button--transparent"
+    >
+      
+            
+      <i
+        class="sap-icon--pool"
+      />
+      
+        
+    </button>
+    
+        
+    <button
+      aria-label="Chart"
+      class="fd-button fd-button--transparent"
+    >
+      
+            
+      <i
+        class="sap-icon--pie-chart"
+      />
+      
+        
+    </button>
+    
+    
+  </div>
+  
+    
+  <h3>
+    Auto
+  </h3>
+  
+    
+  <div
+    class="fd-toolbar fd-toolbar--clear fd-toolbar--auto"
+  >
+    
+        
+    <button
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      Create
+    </button>
+    
+        
+    <span
+      class="fd-toolbar__spacer "
+    >
+       
+    </span>
+    
+        
+    <button
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      Edit
+    </button>
+    
+        
+    <button
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      Delete
+    </button>
+    
+        
+    <span
+      class="fd-toolbar__separator"
+    />
+    
+        
+    <button
+      aria-label="Survey"
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      
+            
+      <i
+        class="sap-icon--survey"
+      />
+      
+        
+    </button>
+    
+        
+    <button
+      aria-label="Pool"
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      
+            
+      <i
+        class="sap-icon--pool"
+      />
+      
+        
+    </button>
+    
+        
+    <button
+      aria-label="Chart"
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      
+            
+      <i
+        class="sap-icon--pie-chart"
+      />
+      
+        
+    </button>
+    
+    
+  </div>
+  
+    
+  <h3>
+    Info
+  </h3>
+  
+    
+  <div
+    class="fd-toolbar fd-toolbar--info"
+  >
+    3 item selected
+  </div>
+  
+    
+  <br />
+  
+    
+  <div
+    class="fd-toolbar fd-toolbar--info fd-toolbar--active"
+  >
+    3 item selected
+  </div>
+  
+    
+  <h3>
+    Title
+  </h3>
+  
+    
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+        
+    <h4>
+      Producs (104)
+    </h4>
+    
+        
+    <span
+      class="fd-toolbar__spacer "
+    />
+    
+        
+    <button
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      Save
+    </button>
+    
+        
+    <button
+      class="fd-button fd-button--compact fd-button--transparent"
+    >
+      Delete
+    </button>
+    
+    
+  </div>
+  
 
-
+</div>
 `;

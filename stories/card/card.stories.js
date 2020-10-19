@@ -33,8 +33,7 @@ Counter (optional) | The counter indicates how many items are showing on the car
 };
 
 
-export const cardAnatomy = () => `
-<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
+export const cardAnatomy = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="Card Anatomy Example 1">
             <a class="fd-card__header" tabindex="0">
@@ -193,8 +192,7 @@ cardAnatomy.parameters = {
     }
 };
 
-export const analyticalCard = () => `
-<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
+export const analyticalCard = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card fd-card--analytical" role="region" aria-label="Analytical Card Example 1">
             <a class="fd-card__header" tabindex="0">
@@ -305,8 +303,7 @@ analyticalCard.parameters = {
 };
 
 
-export const listCard = () => `
-<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
+export const listCard = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 300px; height: 100%; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="List Card Example 1">
             <a class="fd-card__header" tabindex="0">
@@ -401,8 +398,7 @@ listCard.parameters = {
     }
 };
 
-export const tableCard = () => `
-<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
+export const tableCard = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 500px; height: 100%; margin: 1rem;">
         <div class="fd-card fd-card--table" role="region" aria-label="Table Card Example 1">
             <a class="fd-card__header" tabindex="0">
@@ -566,8 +562,7 @@ tableCard.parameters = {
 };
 
 
-export const objectCard = () => `
-<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
+export const objectCard = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 14rem; height: 34rem; margin: 1rem;">
         <div class="fd-card fd-card--object" role="region" aria-label="Object Card Example 1">
             <a class="fd-card__header" tabindex="0">

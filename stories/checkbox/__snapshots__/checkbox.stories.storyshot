@@ -233,8 +233,123 @@ exports[`Storyshots Components/Forms/Checkbox Desktop 1`] = `
 `;
 
 exports[`Storyshots Components/Forms/Checkbox Inline 1`] = `
+<fieldset
+  class="fd-fieldset"
+>
+  
+    
+  <legend
+    class="fd-fieldset__legend"
+  >
+    Inline checkboxes
+  </legend>
+  
+    
+  <div
+    class="fd-form-group fd-form-group--inline"
+  >
+    
+        
+    <div
+      class="fd-form-group__item fd-form-item"
+    >
+      
+            
+      <input
+        class="fd-checkbox"
+        id="Ai4ez617"
+        type="checkbox"
+      />
+      
+            
+      <label
+        class="fd-checkbox__label"
+        for="Ai4ez617"
+      >
+        
+                
+        <span
+          class="fd-checkbox__text"
+        >
+          Potatoes
+        </span>
+        
+            
+      </label>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-form-group__item fd-form-item"
+    >
+      
+            
+      <input
+        checked=""
+        class="fd-checkbox"
+        id="Ai4ez618"
+        type="checkbox"
+      />
+      
+            
+      <label
+        class="fd-checkbox__label"
+        for="Ai4ez618"
+      >
+        
+                
+        <span
+          class="fd-checkbox__text"
+        >
+          Tomatoes
+        </span>
+        
+            
+      </label>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-form-group__item fd-form-item"
+    >
+      
+            
+      <input
+        checked=""
+        class="fd-checkbox"
+        disabled=""
+        id="Ai4ez619"
+        type="checkbox"
+      />
+      
+            
+      <label
+        class="fd-checkbox__label"
+        for="Ai4ez619"
+      >
+        
+                
+        <span
+          class="fd-checkbox__text"
+        >
+          Carrots
+        </span>
+        
+            
+      </label>
+      
+        
+    </div>
+    
+    
+  </div>
+  
 
-
+</fieldset>
 `;
 
 exports[`Storyshots Components/Forms/Checkbox Mobile 1`] = `
@@ -467,11 +582,6 @@ exports[`Storyshots Components/Forms/Checkbox Mobile 1`] = `
   
 
 </section>
-`;
-
-exports[`Storyshots Components/Forms/Checkbox RTL 1`] = `
-
-
 `;
 
 exports[`Storyshots Components/Forms/Checkbox States 1`] = `

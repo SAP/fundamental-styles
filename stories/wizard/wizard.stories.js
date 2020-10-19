@@ -96,8 +96,7 @@ There are multiple connector types that can be displayed depending on the steps 
     }
 };
 
-export const defaultExample = () => `
-<section class="fd-wizard">
+export const defaultExample = () => `<section class="fd-wizard">
     <nav class="fd-wizard__navigation" aria-label="Wizard Navigation 1">
         <ul class="fd-wizard__progress-bar">
             <li class="fd-wizard__step fd-wizard__step--completed">
@@ -179,8 +178,7 @@ defaultExample.parameters = {
     }
 };
 
-export const customized = () => `
-<section class="fd-wizard">
+export const customized = () => `<section class="fd-wizard">
     <nav class="fd-wizard__navigation" aria-label="Wizard Navigation 2">
         <ul class="fd-wizard__progress-bar fd-wizard__progress-bar--md">
             <li class="fd-wizard__step fd-wizard__step--completed">
@@ -258,8 +256,7 @@ customized.parameters = {
     }
 };
 
-export const responsive = () => `
-<section class="fd-wizard">
+export const responsive = () => `<section class="fd-wizard">
     <nav class="fd-wizard__navigation" aria-label="Wizard Navigation 3">
         <ul class="fd-wizard__progress-bar fd-wizard__progress-bar--xl">
             <li class="fd-wizard__step fd-wizard__step--completed">
@@ -632,8 +629,7 @@ The unselected steps should stack on top of each other when there is limited scr
     }
 };
 
-export const mobile = () => `
-<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+export const mobile = () => `<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
     <div style="margin: 1rem;">
         <h4>Next Step button after content</h4>
         <section class="fd-wizard" style="max-width: 300px;">

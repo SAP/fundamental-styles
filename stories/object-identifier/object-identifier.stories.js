@@ -27,8 +27,7 @@ The object identifier should be easily read by the users, preferably displaying 
     }
 };
 
-export const titleOnly = () => `
-<div class="fd-object-identifier">
+export const titleOnly = () => `<div class="fd-object-identifier">
     <p class="fd-object-identifier__title">NoteBook Basic 15</p>
 </div>
 `;
@@ -40,8 +39,7 @@ titleOnly.parameters = {
     }
 };
 
-export const boldTitle = () => `
-<div class="fd-object-identifier">
+export const boldTitle = () => `<div class="fd-object-identifier">
     <p class="fd-object-identifier__title fd-object-identifier__title--bold">NoteBook Basic 15</p>
 </div>
 `;
@@ -54,8 +52,7 @@ boldTitle.parameters = {
     }
 };
 
-export const titleAsLink = () => `
-<div class="fd-object-identifier">
+export const titleAsLink = () => `<div class="fd-object-identifier">
     <p class="fd-object-identifier__title fd-object-identifier__title--link">NoteBook Basic 15</p>
 </div>
 <br>
@@ -79,8 +76,7 @@ titleAsLink.parameters = {
     }
 };
 
-export const titleAndText = () => `
-<div class="fd-object-identifier">
+export const titleAndText = () => `<div class="fd-object-identifier">
     <p class="fd-object-identifier__title">NoteBook Basic 15</p>
     <p class="fd-object-identifier__text">Notebook Basic 15 with 2,80 GHz quad core, 15" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro</p>
 </div>
@@ -114,8 +110,7 @@ titleAndText.parameters = {
     }
 };
 
-export const withTable = () => `
-<table class="fd-table fd-object-identifier__table">
+export const withTable = () => `<table class="fd-table fd-object-identifier__table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
             <th class="fd-table__cell" scope="col">Product</th>

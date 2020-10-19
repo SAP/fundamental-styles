@@ -524,8 +524,61 @@ exports[`Storyshots Components/Button Button states 1`] = `
 `;
 
 exports[`Storyshots Components/Button Button styles 1`] = `
+<div
+  class="fddocs-container"
+>
+   
+        
+  <button
+    class="fd-button"
+  >
+    Default Button
+  </button>
+  
+        
+  <button
+    class="fd-button fd-button--emphasized"
+  >
+    Emphasized Button
+  </button>
+  
+        
+  <button
+    class="fd-button fd-button--ghost"
+  >
+    Ghost Button
+  </button>
+  
+        
+  <button
+    class="fd-button fd-button--positive"
+  >
+    Positive Button
+  </button>
+  
+        
+  <button
+    class="fd-button fd-button--negative"
+  >
+    Negative Button
+  </button>
+  
+        
+  <button
+    class="fd-button fd-button--attention"
+  >
+    Attention Button
+  </button>
+  
+        
+  <button
+    class="fd-button fd-button--transparent"
+  >
+    Transparent Button
+  </button>
+  
 
-    
+</div>
 `;
 
 exports[`Storyshots Components/Button Focusable disabled 1`] = `
@@ -1191,11 +1244,6 @@ exports[`Storyshots Components/Button Primary 1`] = `
   
 
 </section>
-`;
-
-exports[`Storyshots Components/Button RTL 1`] = `
-
-
 `;
 
 exports[`Storyshots Components/Button Segmented button 1`] = `

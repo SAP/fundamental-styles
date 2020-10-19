@@ -9,8 +9,7 @@ export default {
 
 const messageStripHeight = 64;
 
-export const defaultStrip = () => `
-<div class="fd-message-strip fd-message-strip--dismissible" role="alert"  id="ZvPBg609" >
+export const defaultStrip = () => `<div class="fd-message-strip fd-message-strip--dismissible" role="alert"  id="ZvPBg609" >
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
@@ -33,8 +32,7 @@ class \`fd-message-strip--dismissible\` and include the close button.
     }
 };
 
-export const information = () => `
-<div class="fd-message-strip fd-message-strip--information fd-message-strip--dismissible" role="alert"  id="JwPcf464" >
+export const information = () => `<div class="fd-message-strip fd-message-strip--information fd-message-strip--dismissible" role="alert"  id="JwPcf464" >
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
@@ -53,8 +51,7 @@ information.parameters = {
     }
 };
 
-export const success = () => `
-<div class="fd-message-strip fd-message-strip--success fd-message-strip--dismissible" role="alert" id="ulr5z216">
+export const success = () => `<div class="fd-message-strip fd-message-strip--success fd-message-strip--dismissible" role="alert" id="ulr5z216">
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
@@ -73,8 +70,7 @@ success.parameters = {
     }
 };
 
-export const warning = () => `
-<div class="fd-message-strip fd-message-strip--warning fd-message-strip--dismissible" role="alert" id="fwYq4606">
+export const warning = () => `<div class="fd-message-strip fd-message-strip--warning fd-message-strip--dismissible" role="alert" id="fwYq4606">
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
@@ -96,8 +92,7 @@ Add the modifier class \`fd-message-strip--warning\` for Warning Message Strip.
     }
 };
 
-export const error = () => `
-<div class="fd-message-strip fd-message-strip--error fd-message-strip--dismissible" role="alert" id="SsoiW591">
+export const error = () => `<div class="fd-message-strip fd-message-strip--error fd-message-strip--dismissible" role="alert" id="SsoiW591">
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
@@ -120,8 +115,7 @@ The user will need to dismiss the Message Strip.Add the modifier class \`fd-mess
     }
 };
 
-export const noIcons = () => `
-<div class="fd-message-strip fd-message-strip--information fd-message-strip--no-icon fd-message-strip--dismissible" 
+export const noIcons = () => `<div class="fd-message-strip fd-message-strip--information fd-message-strip--no-icon fd-message-strip--dismissible" 
      role="alert" id="SsoiW592">
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
@@ -174,51 +168,5 @@ noIcons.parameters = {
     docs: {
         iframeHeight: messageStripHeight * 4,
         storyDescription: 'Add the modifier class `fd-message-strip--no-icon` to render Message Strip without any icon.'
-    }
-};
-
-export const rtl = () => `
-<div dir="rtl">
-    <div class="fd-message-strip fd-message-strip--dismissible" role="alert" id="ZvPBg609" >
-      <p class="fd-message-strip__text">
-        Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
-      </p>
-      <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="ZvPBg609" aria-label="Close">
-        <i class="sap-icon--decline"></i>
-      </button>
-    </div>
-
-     <br />
-
-   <div class="fd-message-strip fd-message-strip--information fd-message-strip--no-icon fd-message-strip--dismissible" 
-         role="alert" id="SsoiW592">
-      <p class="fd-message-strip__text">
-        Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
-      </p>
-      <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW592" aria-label="Close">
-        <i class="sap-icon--decline"></i>
-      </button>
-   </div>
-    
-   <br />
-    
-    <div class="fd-message-strip fd-message-strip--error fd-message-strip--dismissible" 
-         role="alert" id="SsoiW595">
-      <p class="fd-message-strip__text">
-        Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
-      </p>
-      <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW595" aria-label="Close">
-        <i class="sap-icon--decline"></i>
-      </button>
-    </div>
-</div>
-`;
-
-rtl.storyName = 'Rtl';
-
-rtl.parameters = {
-    docs: {
-        iframeHeight: messageStripHeight * 4,
-        storyDescription: 'Message Strip in Rtl mode'
     }
 };

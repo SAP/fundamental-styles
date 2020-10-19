@@ -14,8 +14,7 @@ Can hold two child types:
     }
 };
 
-export const structure = () => `
-<section class="fd-section">
+export const structure = () => `<section class="fd-section">
     .fd-section
 </section>
 <section class="fd-section">
@@ -34,8 +33,7 @@ structure.parameters = {
     }
 };
 
-export const sectionLayoutGrid = () => `
-<section class="fd-section">
+export const sectionLayoutGrid = () => `<section class="fd-section">
     <div class="fd-container">
       <div class="fd-row">
       <div class="fd-col fd-col--4">
@@ -89,8 +87,7 @@ This is most appropriate when displaying a collection of content in a linear ord
     }
 };
 
-export const sectionPanels = () => `
-<section class="fd-section">
+export const sectionPanels = () => `<section class="fd-section">
     <div class="fd-layout-panel">
         <div class="fd-layout-panel__header">
             <div class="fd-layout-panel__head">
@@ -128,8 +125,7 @@ This may be more appropriate depending on the need to maintain source order and 
     }
 };
 
-export const sectionHeaders = () => `
-<section class="fd-section">
+export const sectionHeaders = () => `<section class="fd-section">
     <div class="fd-section__header">
       <h3 class="fd-section__title">Section title</h3>
     </div>
@@ -149,8 +145,7 @@ sectionHeaders.parameters = {
     }
 };
 
-export const testingSimpleSection = () => `
-<section class='fd-section '>
+export const testingSimpleSection = () => `<section class='fd-section '>
     Simple Section
 </section>
 

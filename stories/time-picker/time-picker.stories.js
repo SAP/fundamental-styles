@@ -11,8 +11,7 @@ This component mostly relies on the CSS of other components and has no CSS of it
     }
 };
 
-export const cozyAndCompactMode = () => `
-<div style="height:550px">
+export const cozyAndCompactMode = () => `<div style="height:550px">
     <div class="fd-popover fd-popover--no-arrow">
         <div class="fd-popover__control">
             <div class="fd-input-group">
@@ -201,8 +200,7 @@ cozyAndCompactMode.parameters = {
     }
 };
 
-export const tabletMode = () => `
-<div class="fd-popover fd-popover--no-arrow">
+export const tabletMode = () => `<div class="fd-popover fd-popover--no-arrow">
     <div class="fd-popover__control">
         <div class="fd-input-group">
             <input type="text" class="fd-input fd-input-group__input" id="" value="4:25:10 PM" placeholder="hh:mm:ss am/pm">

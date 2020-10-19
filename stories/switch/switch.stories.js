@@ -14,8 +14,7 @@ export default {
 };
 
 
-export const basic = () => `
-<div class="fd-form-group">
+export const basic = () => `<div class="fd-form-group">
     <div class="fd-form-item">
         <div class="fd-form-label" id="label1">Default (Cozy) Switch</div>
         <label class="fd-switch__label">
@@ -52,8 +51,7 @@ basic.parameters = {
     }
 };
 
-export const withText = () => `
-<div class="fd-form-group">
+export const withText = () => `<div class="fd-form-group">
     <div class="fd-form-item">
         <div class="fd-form-label" id="label3">With Off Text</div>
         <label class="fd-switch__label">
@@ -90,9 +88,7 @@ withText.parameters = {
     }
 };
 
-export const semanticSwitch = () => `
-
-<div class="fd-form-group">
+export const semanticSwitch = () => `<div class="fd-form-group">
     <div class="fd-form-item">
         <label class="fd-form-label" id="label5">Semantic Switch</label>
         <label class="fd-switch__label">
@@ -131,58 +127,3 @@ semanticSwitch.parameters = {
         storyDescription: '`fd-switch--semantic` modifier renders semnatic colors and icons inside the switch'
     }
 };
-
-export const rtl = () => `
-<div dir="rtl">
-    <label class="fd-switch__label" for="y21YO3911">
-        <span class="fd-switch fd-switch--semantic" >
-            <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3911" aria-label="Rtl Semantic Cozy">
-            <div class="fd-switch__wrapper">
-                <div class="fd-switch__track">
-                    <i role="presentation" class="fd-switch__icon--on fd-switch__icon sap-icon--accept"></i>
-                    <span class="fd-switch__handle" role="presentation"></span>
-                    <i role="presentation" class="fd-switch__icon--off fd-switch__icon sap-icon--decline"></i>
-                </div>
-            </div>
-        </span>
-    </label>
-    <label class="fd-switch__label" for="y21YO3912">
-        <span class="fd-switch fd-switch--semantic fd-switch--compact" >
-            <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3912" aria-label="Rtl Semantic Compact">
-            <div class="fd-switch__wrapper">
-                <div class="fd-switch__track">
-                   <i role="presentation" class="fd-switch__icon--on fd-switch__icon sap-icon--accept"></i>
-                   <span class="fd-switch__handle" role="presentation"></span>
-                   <i role="presentation" class="fd-switch__icon--off fd-switch__icon sap-icon--decline"></i>
-               </div>
-            </div>
-        </span>
-    </label>
-    <label class="fd-switch__label" for="y21YO3913">
-        <span class="fd-switch fd-switch--compact">
-            <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3913" aria-label="Rtl Compact">
-            <div class="fd-switch__wrapper">
-                <div class="fd-switch__track">
-                   <span class="fd-switch__handle" role="presentation"></span>
-               </div>
-            </div>
-        </span>
-    </label>
-    <label class="fd-switch__label" for="y21YO3914">
-        <span class="fd-switch">
-            <input class="fd-switch__input" type="checkbox" name="" value="" id="y21YO3914" aria-label="Rtl Default">
-            <div class="fd-switch__wrapper">
-                <div class="fd-switch__track">
-                   <span class="fd-switch__handle" role="presentation"></span>
-               </div>
-            </div>
-        </span>
-    </label>
-</div>`;
-
-rtl.parameters = {
-    docs: {
-        iframeHeight: 200
-    }
-};
-
