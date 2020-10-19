@@ -557,6 +557,7 @@ export const rtl = () => `<div dir="rtl">
 rtl.storyName = 'RTL';
 rtl.parameters = {
     docs: {
-        storyDescription: 'The feed list item can display from right to left on the screen, so that it may be used internationally.'
+        storyDescription: 'The feed list item can display from right to left on the screen, so that it may be used internationally.',
+        skipRTLSnapshot: true
     }
 };
