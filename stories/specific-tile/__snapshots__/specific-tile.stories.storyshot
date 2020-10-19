@@ -51,7 +51,7 @@ exports[`Storyshots Components/Tile/Specific Badge Tile 1`] = `
         aria-label="Profile Image"
         class="fd-tile__profile-img"
         role="presentation"
-        style="background-image: url('http://lorempixel.com/60/60/nature/10/')"
+        style="background-image: url('https://loremflickr.com/cache/resized/65535_50178620828_b62a994cb0_q_80_80_nofilter.jpg')"
       />
       
         
@@ -121,7 +121,7 @@ exports[`Storyshots Components/Tile/Specific Badge Tile 1`] = `
         aria-label="Profile Image"
         class="fd-tile__profile-img"
         role="presentation"
-        style="background-image: url('http://lorempixel.com/60/60/nature/10/')"
+        style="background-image: url('https://loremflickr.com/cache/resized/65535_50178620828_b62a994cb0_q_80_80_nofilter.jpg')"
       />
       
         

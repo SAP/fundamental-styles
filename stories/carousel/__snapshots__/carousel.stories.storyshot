@@ -1077,7 +1077,7 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
                 
         <img
           alt="Carousel Image 1"
-          src="http://lorempixel.com/400/400/nature/1/"
+          src="https://loremflickr.com/cache/resized/65535_50324970052_954b023105_z_400_400_nofilter.jpg"
         />
         
             
@@ -1091,7 +1091,7 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
                 
         <img
           alt="Carousel Image 2"
-          src="http://lorempixel.com/400/400/nature/2/"
+          src="https://loremflickr.com/cache/resized/65535_50157218336_40a662e5b1_z_400_400_nofilter.jpg"
         />
         
             
@@ -1105,7 +1105,7 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
                 
         <img
           alt="Carousel Image 3"
-          src="http://lorempixel.com/400/400/nature/3/"
+          src="https://loremflickr.com/cache/resized/65535_50136925591_e657f283f8_z_400_400_nofilter.jpg"
         />
         
             
@@ -1119,7 +1119,7 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
                 
         <img
           alt="Carousel Image 4"
-          src="http://lorempixel.com/400/400/nature/4/"
+          src="https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg"
         />
         
             
