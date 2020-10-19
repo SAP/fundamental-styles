@@ -504,7 +504,7 @@ export const rtl = () => `<div dir="rtl">
                 title="John Doe">    
             </div>
         
-            <div dir="rtl" class="fd-feed-list__content">
+            <div class="fd-feed-list__content">
                 <div class="fd-feed-list__actions">
                     <div class="fd-popover">
                         <div class="fd-popover__control">
@@ -514,7 +514,7 @@ export const rtl = () => `<div dir="rtl">
                                 <i class="sap-icon--overflow"></i>
                             </button>
                         </div>
-                        <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="actionSheetDesktopRTL">
+                        <div class="fd-popover__body" aria-hidden="true" id="actionSheetDesktopRTL">
                             <ul class="fd-action-sheet fd-action-sheet--compact" role="list" aria-label="List of contextual options">
                                 <li class="fd-action-sheet__item" role="listitem">
                                     <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
