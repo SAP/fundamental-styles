@@ -33,13 +33,10 @@
   --fdWizard_Selection_Bar_Background: var(--sapList_SelectionBorderColor);
 
   /* Avatar */
+  --fdAvatar_BackgroundColor: var(--sapBackgroundColor);
   --fdAvatar_Tile_BackgroundColor: var(--sapBackgroundColor);
-  --fdAvatar_DefaultColor: var(--sapBackgroundColor);
-  --fdAvatar_Placeholder_BackgroundColor: var(--sapBackgroundColor);
-  --fdAvatar_Placeholder_DefaultColor: var(--sapTextColor);
-  --fdAvatar_Tile_DefaultColor: var(--sapTextColor);
+  --fdAvatar-Transparent_BackgroundColor: var(--sapBackgroundColor);
   --fdAvatar_Border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
-  --fdAvatar_Optional_Border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
 
   /* Tabs */
   --fdTabs_Selected_Color: var(--sapAccentColor6);

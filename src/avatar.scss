@@ -9,7 +9,7 @@ $block: #{$fd-namespace}-avatar;
 
 .#{$block} {
   $fd-avatar-border-radius: 50% !default;
-  $fd-avatar-background-color: var(--sapAccentColor6) !default;
+  $fd-avatar-background-color: var(--fdAvatar_BackgroundColor) !default;
   $fd-zoom-icon-s: 1.125rem !default;
   $fd-zoom-icon-l: 1.25rem !default;
   $fd-zoom-icon-xl: 1.75rem !default;
@@ -40,7 +40,8 @@ $block: #{$fd-namespace}-avatar;
     [class*="#{$block}"] {
       @include fd-reset();
 
-      color: var(--fdAvatar_DefaultColor);
+      border: var(--fdAvatar_Border);
+      color: var(--sapContent_ContrastTextColor);
       background-color: $fd-avatar-background-color;
       display: inline-block;
       position: relative;
@@ -91,27 +92,23 @@ $block: #{$fd-namespace}-avatar;
 
   // background
   &--transparent {
-    background-color: transparent;
+    background-color: var(--fdAvatar-Transparent_BackgroundColor);
     color: var(--sapContent_IconColor);
   }
 
   // placeholder background
   &--placeholder {
-    background-color: var(--fdAvatar_Placeholder_BackgroundColor);
-    border: var(--fdAvatar_Border);
-    color: var(--fdAvatar_Placeholder_DefaultColor);
+    background-color: var(--sapContent_ImagePlaceholderBackground);
   }
 
   // tile background
   &--tile {
     background-color: var(--fdAvatar_Tile_BackgroundColor);
-    border: var(--fdAvatar_Border);
-    color: var(--fdAvatar_Tile_DefaultColor);
   }
 
   // optional border
   &--border {
-    border: var(--fdAvatar_Optional_Border);
+    border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
   }
 
   // accent-colors
