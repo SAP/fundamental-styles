@@ -1,7 +1,27 @@
 export default {
     title: 'Components/Message Strip',
     parameters: {
-        description: 'Message Strip provide inline messages within the application that are color-coded to emphasize the level of urgency.',
+        description: `The message strip displays information bars with semantic colors and icons, indicating different levels of urgency and/or action required by the user. The message strip is fully responsive, with an icon and close button on opposite sides of the message text. Text and links behave differently, and wrap if space is limited.
+
+**The following semantic types are available:**
+
+ - Information
+ - Warning
+ - Error
+ - Success
+
+##Usage
+**Use the message strip if:**
+
+- You want to provide information within the detail area of an object.
+- You want to inform your user about a status of an object.
+- You want to warn your user about an issue.
+
+**Do not use the message strip if:**
+
+- You want to display information within the object page header, a control, in the master list, or above the page header.
+
+        `,
         tags: ['f3', 'a11y', 'theme'],
         components: ['button', 'message-strip', 'icon']
     }
@@ -25,9 +45,7 @@ defaultStrip.parameters = {
     docs: {
         iframeHeight: messageStripHeight,
         storyDescription: `
-The Message Strip provides information that is useful and relevant, but not critical. It can also provide feedback that
-an action has been executed. In most cases, the user should be able to dismiss the Message Strip so include the modifier
-class \`fd-message-strip--dismissible\` and include the close button.
+The default message strip can be used for general messages that don’t fit into any of the semantic type use cases. It can also provide feedback that an action has been executed. The user should (in most cases) be able to dismiss the message strip, so be sure to include the close button and the <code>fd-message-strip--dismissible</code> modifier class.
         `
     }
 };
@@ -47,7 +65,7 @@ information.storyName = 'Information';
 information.parameters = {
     docs: {
         iframeHeight: messageStripHeight,
-        storyDescription: 'Add the modifier class `fd-message-strip--information` for Information Message Strip.'
+        storyDescription: 'The information message strip simply relays useful information to the users. To display an information message strip, add the <code>fd-message-strip--information</code> modifier class.'
     }
 };
 
@@ -66,7 +84,7 @@ success.storyName = 'Success';
 success.parameters = {
     docs: {
         iframeHeight: messageStripHeight,
-        storyDescription: 'Add the modifier class `fd-message-strip--success` for Information Message Strip.'
+        storyDescription: 'The success message strip communicates to the user that when they’ve completed an action, it was completed successfully. To display a success message strip, add the <code>fd-message-strip--success</code> modifier class.'
     }
 };
 
@@ -86,8 +104,7 @@ warning.parameters = {
     docs: {
         iframeHeight: messageStripHeight,
         storyDescription: `
-The Message Strip warns of potential issues, but the user can still continue. The user will need to dismiss the Message Strip.
-Add the modifier class \`fd-message-strip--warning\` for Warning Message Strip.
+The warning message strip warns the user of potential issues; however, the user can still dismiss the message and continue. To display a warning message strip, add the <code>fd-message-strip--warning</code> modifier class.
 `
     }
 };
@@ -108,9 +125,7 @@ error.parameters = {
     docs: {
         iframeHeight: messageStripHeight,
         storyDescription: `
-This Message Strip is triggered after the user entered data incorrectly or a system error has occurred. It should
-interrupt the user. A final action such as Submit cannot be carried out until the user has rectified the error.
-The user will need to dismiss the Message Strip.Add the modifier class \`fd-message-strip--error\` for Error Message Strip.
+The error message strip is triggered after the user enters data incorrectly or when a system error occurs. It should interrupt the user, blocking them from performing any final actions (such as _Submit_) until the error has been rectified. To display the error message strip, add the <code>fd-message-strip--error</code> modifier class.
 `
     }
 };
@@ -162,11 +177,11 @@ export const noIcons = () => `<div class="fd-message-strip fd-message-strip--inf
 </div>
 `;
 
-noIcons.storyName = 'Without Icon';
+noIcons.storyName = 'No icon';
 
 noIcons.parameters = {
     docs: {
         iframeHeight: messageStripHeight * 4,
-        storyDescription: 'Add the modifier class `fd-message-strip--no-icon` to render Message Strip without any icon.'
+        storyDescription: 'To display message strip without an icon, add the <code>fd-message-strip--no-icon</code> modifier class.'
     }
 };
