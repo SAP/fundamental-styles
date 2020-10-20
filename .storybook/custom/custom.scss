@@ -445,6 +445,14 @@ body.sb-show-main {
   width: 50%;
 }
 
+.slider-container--range .fd-slider__track-range {
+  left: 40%;
+}
+
+[dir="rtl"] .slider-container--range .fd-slider__track-range {
+  left: -20%;
+}
+
 .mobile-container {
   display: flex;
   flex-direction: column;

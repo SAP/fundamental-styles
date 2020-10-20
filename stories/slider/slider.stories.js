@@ -30,11 +30,11 @@ export const basic = () => `
  */
 
 export const range = () => `
-<div class="slider-container">
+<div class="slider-container slider-container--range">
     <div class="fd-slider">
         <div class="fd-slider__inner">
             <div class="fd-slider__track">
-                <div class="fd-slider__track-range" style="width: 40%;left: 40%"></div>
+                <div class="fd-slider__track-range" style="width: 40%"></div>
                 <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="range slider left" aria-valuemin="1" aria-valuemax="80" aria-valuenow="40" style="left: 40%;"></div>
                 <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="range slider right" aria-valuemin="40" aria-valuemax="100" aria-valuenow="80" style="left: 80%;"></div>
             </div>
