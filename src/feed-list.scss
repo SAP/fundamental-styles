@@ -7,6 +7,7 @@ $block: #{$fd-namespace}-feed-list;
   $fd-feed-list-padding-end: 0.5rem;
   $fd-feed-list-margin-start: 0.75rem;
   $fd-feed-list-margin-end: 0;
+  $fd-feed-list-padding-group: 0.75rem;
   $fd-feed-list-icon-color: var(--sapContent_IconColor);
 
   @include fd-reset();
@@ -41,7 +42,17 @@ $block: #{$fd-namespace}-feed-list;
 
   &--no-border {
     .#{$block}__body {
+      padding: 1rem 1rem 0.75rem;
       border-top: none;
+
+      & + .#{$block}__body {
+        padding-top: $fd-feed-list-padding-group;
+        padding-bottom: $fd-feed-list-padding-group;
+      }
+
+      &:last-child {
+        padding-bottom: 1rem;
+      }
     }
   }
 
@@ -65,11 +76,6 @@ $block: #{$fd-namespace}-feed-list;
       right: 1rem;
       left: -1rem;
     }
-  }
-
-  &__actions--s {
-    padding-left: 0.75rem;
-    padding-bottom: 0.25rem;
   }
 
   &--group {
@@ -109,12 +115,30 @@ $block: #{$fd-namespace}-feed-list;
   }
 
   &--s {
+    .#{$block}__wrapper {
+      @include fd-reset();
+
+      display: flex;
+      justify-content: space-between;
+
+      &--header {
+        display: flex;
+      }
+    }
+
     .#{$block}__body {
       display: block;
     }
 
     .#{$block}__text {
       padding-top: 0.625rem;
+    }
+
+    .#{$block}__action {
+      @include fd-reset();
+
+      padding-left: 0.75rem;
+      padding-bottom: 0.25rem;
     }
   }
 }

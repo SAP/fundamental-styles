@@ -419,8 +419,8 @@ borderless.parameters = {
 export const mobile = () => `<div style="width: 350px; height: 600px; position: relative">
     <ul class="fd-feed-list fd-feed-list--s" aria-label="Feed List Item small size example">
         <li class="fd-feed-list__body">
-            <div style="display: flex; justify-content: space-between">
-                <div style="display: flex">
+            <div class="fd-feed-list__wrapper">
+                <div class="fd-feed-list__wrapper fd-feed-list__wrapper--header">
                 <div
                     class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
                     style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
@@ -444,7 +444,6 @@ export const mobile = () => `<div style="width: 350px; height: 600px; position: 
                             <i class="sap-icon--overflow"></i>
                     </button>
                 </div>
-                
             </div>    
         
             <div class="fd-feed-list__content">
