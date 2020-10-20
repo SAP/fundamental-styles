@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.14...v0.13.0-rc.15) (2020-10-20)
+
+
+### Bug Fixes
+
+* fiori 3 high contrast mode contrast ratios ([#1789](https://github.com/SAP/fundamental-styles/issues/1789)) ([b219761](https://github.com/SAP/fundamental-styles/commit/b21976165edb084db0b12080c72e31fa90c17b3a))
+
 ## [0.13.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.13...v0.13.0-rc.14) (2020-10-19)
 
 ## [0.13.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.12...v0.13.0-rc.13) (2020-10-19)
