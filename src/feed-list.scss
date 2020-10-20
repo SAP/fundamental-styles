@@ -8,6 +8,7 @@ $block: #{$fd-namespace}-feed-list;
   $fd-feed-list-margin-start: 0.75rem;
   $fd-feed-list-margin-end: 0;
   $fd-feed-list-padding-group: 0.75rem;
+  $fd-feed-list-padding-action-small: 0.75rem;
   $fd-feed-list-icon-color: var(--sapContent_IconColor);
 
   @include fd-reset();
@@ -137,8 +138,13 @@ $block: #{$fd-namespace}-feed-list;
     .#{$block}__action {
       @include fd-reset();
 
-      padding-left: 0.75rem;
+      padding-left: $fd-feed-list-padding-action-small;
       padding-bottom: 0.25rem;
+
+      @include fd-rtl() {
+        padding-right: $fd-feed-list-padding-action-small;
+        padding-bottom: initial;
+      }
     }
   }
 }
