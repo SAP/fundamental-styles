@@ -113,7 +113,7 @@ $block: #{$fd-namespace}-radio;
     content: "";
     position: absolute;
     border-radius: 50%;
-    background: var(--sapSelectedColor);
+    background: var(--fdRadio_Selected_Color);
   }
 
   // states
