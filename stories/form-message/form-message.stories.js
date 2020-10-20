@@ -19,8 +19,7 @@ Along with Error and Warning, error messages should be displayed below the field
     }
 };
 
-export const success = () => `
-    <div class="fd-form-item">
+export const success = () => `<div class="fd-form-item">
         <label class="fd-form-label" for="input-1bb">Success input:</label>
         <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
             <div class="fd-popover__control" aria-controls="popoverB2" aria-expanded="false" aria-haspopup="true"
@@ -34,8 +33,7 @@ export const success = () => `
     </div>
 `;
 
-export const error = () => `
-    <div class="fd-form-item">
+export const error = () => `<div class="fd-form-item">
         <label class="fd-form-label" for="input-1cc">Error input:</label>
         <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
             <div class="fd-popover__control" aria-controls="popoverB3" aria-expanded="false" aria-haspopup="true"
@@ -49,8 +47,7 @@ export const error = () => `
     </div>
 `;
 
-export const warning = () => `
-    <div class="fd-form-item">
+export const warning = () => `<div class="fd-form-item">
         <label class="fd-form-label" for="input-1cc">Warning input:</label>
         <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
             <div class="fd-popover__control" aria-controls="popoverB4" aria-expanded="false" aria-haspopup="true"
@@ -64,8 +61,7 @@ export const warning = () => `
     </div>
 `;
 
-export const information = () => `
-    <div class="fd-form-item">
+export const information = () => `<div class="fd-form-item">
         <label class="fd-form-label" for="input-1ee">Information input:</label>
         <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
             <div class="fd-popover__control" aria-controls="popoverB5" aria-expanded="false" aria-haspopup="true"

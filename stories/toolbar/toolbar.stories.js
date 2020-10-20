@@ -7,8 +7,7 @@ export default {
     }
 };
 
-export const basic = () => `
-<div class="fd-toolbar fd-toolbar--cozy">
+export const basic = () => `<div class="fd-toolbar fd-toolbar--cozy">
     <span class="fd-toolbar__spacer"> </span>
     <button class="fd-button fd-button--transparent">New</button>
     <button class="fd-button fd-button--transparent">Open</button>
@@ -27,8 +26,7 @@ export const basic = () => `
 </div>
 `;
 
-export const types = () => `
-<div style="background-color: #ccc;background-color:var(--sapContent_ImagePlaceholde, #ccc); padding: 1rem">
+export const types = () => `<div style="background-color: #ccc;background-color:var(--sapContent_ImagePlaceholde, #ccc); padding: 1rem">
     <h3>Solid</h3>
     <div class="fd-toolbar fd-toolbar--solid">
         <span>Products (23)</span>
@@ -113,8 +111,7 @@ types.parameters = {
     }
 };
 
-export const alignment = () => `
-<h3>Left and Right Aligned Content</h3>
+export const alignment = () => `<h3>Left and Right Aligned Content</h3>
 <div class="fd-toolbar">
     <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
     <span class="fd-toolbar__spacer"></span>
@@ -172,8 +169,7 @@ alignment.parameters = {
     }
 };
 
-export const separator = () => `
-<h3></h3>
+export const separator = () => `<h3></h3>
 <div class="fd-toolbar fd-toolbar--info fd-toolbar--cozy">
     <button class="fd-button fd-button--positive">Accept</button>
     <span class="fd-toolbar__separator"></span>
@@ -205,8 +201,7 @@ Separators should be used to visually separate items from each other. The class 
     }
 };
 
-export const sizes = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--cozy">
+export const sizes = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--cozy">
     <span>Products (420)</span>
     <button class="fd-button fd-button--compact fd-button--transparent">Create</button>
     <span class="fd-toolbar__spacer"></span>
@@ -232,8 +227,7 @@ The default size of the toolbar is compact but this can be changed by passing th
     }
 };
 
-export const overflow = () => `
-<div style="height:250px">
+export const overflow = () => `<div style="height:250px">
     <h3>Cozy example</h3>
     <div class="fd-toolbar fd-toolbar--cozy">
         <span>Products (34)</span>

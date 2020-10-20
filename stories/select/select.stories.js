@@ -4,12 +4,11 @@ export default {
         description: `The **Select** component is commonly used to enable users to select an item from a predefined list.
       It should be used when there are less than 12 items to choose from. 
       For lists that require more than 12 options, the Combobox Input should be used.`,
-        components: ['icon', 'popover', 'list', 'form-label', 'form-message', 'select', 'dialog', 'bar']
+        components: ['icon', 'popover', 'list', 'form-label', 'form-message', 'select', 'dialog', 'bar', 'button', 'icon']
     }
 };
 
-export const cozy = () => `
-<div style="height: 200px">
+export const cozy = () => `<div style="height: 200px">
     <div class="fd-popover">
         <div class="fd-popover__control">
             <div class="fd-select">
@@ -68,8 +67,7 @@ cozy.parameters = {
     docs: { iframeHeight: 300 }
 };
 
-export const compact = () => `
-<div style="height: 200px">
+export const compact = () => `<div style="height: 200px">
     <div class="fd-popover">
         <div class="fd-popover__control">
             <div class="fd-select fd-select--compact">
@@ -108,8 +106,7 @@ compact.parameters = {
     docs: { iframeHeight: 300 }
 };
 
-export const asFormItem = () =>`
-<div style="height:310px">
+export const asFormItem = () => `<div style="height:310px">
     <div class="fd-form-item">
         <div class="fd-popover">
             <div class="fd-popover__control">
@@ -182,8 +179,7 @@ Applications are free to override this in their custom styles if needed and own 
 
 /** The **Select** component can be customized by adding additional information in additional columns. */
 
-export const twoColumn = () => `
-<div style="height: 200px">
+export const twoColumn = () => `<div style="height: 200px">
     <div class="fd-popover">
     <div class="fd-popover__control">
         <div class="fd-select">
@@ -257,8 +253,7 @@ twoColumn.parameters = {
     }
 };
 
-export const twoColumnsAndIcons = () => `
-<div style="height: 200px">
+export const twoColumnsAndIcons = () => `<div style="height: 200px">
     <div class="fd-popover">
     <div class="fd-popover__control">
         <div class="fd-select">
@@ -304,8 +299,7 @@ twoColumnsAndIcons.parameters = {
 
 /** In cases where the list items need to be categorized into groups, it is possible to add headers for each category. */
 
-export const itemGrouping = () => `
-<div style="height: 450px">
+export const itemGrouping = () => `<div style="height: 450px">
     <div class="fd-popover">
     <div class="fd-popover__control">
         <div class="fd-select">
@@ -364,8 +358,7 @@ itemGrouping.parameters = {
 /** In the **Select** component, the text is wrapped by default. In order to prevent the text from wrapping,
 * the `--no-wrap` modifier can be added to the `fd-list__title`, or `fd-list__secondary` elements. */
 
-export const textWrapping = () => `
-<div style="height: 300px">
+export const textWrapping = () => `<div style="height: 300px">
     <div class="fd-popover">
     <div class="fd-popover__control">
         <div class="fd-select">
@@ -407,8 +400,7 @@ textWrapping.parameters = {
     }
 };
 
-export const noWrapping = () => `
-<div style="height: 200px">
+export const noWrapping = () => `<div style="height: 200px">
     <div class="fd-popover">
     <div class="fd-popover__control">
         <div class="fd-select fd-select--compact">
@@ -453,8 +445,7 @@ noWrapping.parameters = {
 /** The default size for the popover body is often longer than the text length. The length can be adjusted to match the text
  * length by adding the `fd-popover__body--dropdown-fill` class to `fd-popover__body`. */
 
-export const matchSelectPopoverBodySize = () => `
-<div style="height: 250px">
+export const matchSelectPopoverBodySize = () => `<div style="height: 250px">
     <div class="fd-popover">
     <div class="fd-popover__control">
         <div class="fd-select">
@@ -500,8 +491,7 @@ matchSelectPopoverBodySize.parameters = {
 /** To disable a **Select** component, the `aria-disabled="true"` attribute needs to be added to the
 * `fd-popover__control` and the `fd-select__control` elements. */
 
-export const disabled = () => `
-<div class="fd-popover">
+export const disabled = () => `<div class="fd-popover">
     <div class="fd-popover__control" aria-disabled="true">
         <div class="fd-select">
             <div class="fd-select__control" role="combobox" aria-expanded="false" aria-haspopup="false" aria-disabled="true">
@@ -517,8 +507,7 @@ export const disabled = () => `
 
 /** To make the **Select** component read-only, the `.is-readonly` class needs to be added to the `fd-select__control` element.  */
 
-export const readonly = () => `
-<div class="fd-popover">
+export const readonly = () => `<div class="fd-popover">
     <div class="fd-popover__control">
         <div class="fd-select">
             <div class="fd-select__control is-readonly" role="combobox" aria-readonly="true" aria-expanded="false" aria-label="Select" aria-haspopup="false" tabindex="0">
@@ -536,8 +525,7 @@ export const readonly = () => `
  * above the `ul` element.
  */
 
-export const semanticStates = () => `
-<div style="height: 650px">
+export const semanticStates = () => `<div style="height: 650px">
     <label class="fd-form-label" id="a4546C40">
         Success Select Example
     </label>
@@ -723,8 +711,7 @@ semanticStates.parameters = {
 /** For mobile devices, or tablets, select component should be displayed in fullscreen mode. It can be achieved by wrapping
 select component in **Dialog** and **Bar** components.  */
 
-export const mobileMode = () => `
-<div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
+export const mobileMode = () => `<div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
     <div class="fd-dialog__content">
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
             <div class="fd-bar__left">
@@ -781,8 +768,7 @@ mobileMode.parameters = {
     }
 };
 
-export const expanded = () => `
-<div class="fd-popover">
+export const expanded = () => `<div class="fd-popover">
   <div class="fd-popover__control">
      <div class="fd-select">
          <div
@@ -839,8 +825,7 @@ expanded.parameters = {
     }
 };
 
-export const blank = () => `
-<div style="height: 250px">
+export const blank = () => `<div style="height: 250px">
     <label class="fd-form-label" id="h45336F3">
         Select with Blank Option
     </label>

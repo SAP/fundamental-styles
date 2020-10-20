@@ -22,8 +22,7 @@ Opening one popover should close all others to prevent multiple layers and colli
  * - No Arrow & Right Aligned - Modifier classes `--right` at the block level wrapper `fd-popover`, `--right` and `--no-arrow` calss on the `fd-popover_body`
  */
 
-export const placementOptions = () => `
-    <div class="fddocs-container"> 
+export const placementOptions = () => `<div class="fddocs-container"> 
         <div class="fd-popover">
             <div class="fd-popover__control">
                 <button class="fd-button" aria-label="Image label" aria-controls="popoverA1" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA1');">Left Aligned (default)</button>
@@ -62,7 +61,7 @@ export const placementOptions = () => `
             </div>
             <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="popoverA2">
                 <div style="margin: 20px;">
-                    <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/200/200/nature/4/');" role="presentation" aria-label="Nature"></span>
+                    <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg');" role="presentation" aria-label="Nature"></span>
                 </div>
             </div>
         </div>
@@ -139,8 +138,7 @@ export const placementOptions = () => `
  * Footer: `fd-popover__body-footer`
  */
 
-export const layoutOptions = () => `
-<div class="fddocs-container"> 
+export const layoutOptions = () => `<div class="fddocs-container">
     <div class="fd-popover">
         <div class="fd-popover__control">
             <button class="fd-button" aria-label="Image label" aria-controls="popoverHSF1" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverHSF1');">Header Only</button>
@@ -193,7 +191,7 @@ export const layoutOptions = () => `
         </div>
         <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="popoverHSF2">
             <div style="margin: 20px;">
-                <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/200/200/nature/8/');" role="presentation" aria-label="Nature"></span>
+                <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg');" role="presentation" aria-label="Nature"></span>
             </div>
             <div class="fd-popover__body-footer">
                 <div class="fd-bar fd-bar--footer">
@@ -249,7 +247,7 @@ export const layoutOptions = () => `
                 </div>
             </div>
             <div style="margin: 20px 80px;">
-                <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/100/100/nature/10/');" role="presentation" aria-label="Nature"></span>
+                <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg');" role="presentation" aria-label="Nature"></span>
             </div>
             <div class="fd-popover__body-footer">
                 <div class="fd-bar fd-bar--footer">
@@ -305,7 +303,7 @@ export const layoutOptions = () => `
                     </div>
                 </div>
             <div style="margin: 20px 80px;">
-                <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://lorempixel.com/100/100/nature/2/');" role="presentation" aria-label="Nature"></span>
+                <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg');" role="presentation" aria-label="Nature"></span>
             </div>
             <div class="fd-popover__body-footer">
                 <div class="fd-bar fd-bar--cozy fd-bar--footer">
@@ -330,12 +328,11 @@ layoutOptions.storyName = 'Popover with Header, Subheader and Footer';
  * Virtually any component can be used as a `fd-popover__control` to control the display of `fd-popover__body`
  */
 
-export const controlExamples = () => `
-<div class="fddocs-container">
+export const controlExamples = () => `<div class="fddocs-container">
     <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control" style="width: 48px; height: 48px;">
             <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail aria-label="Image label" aria-controls="popoverB2" aria-expanded="false" aria-haspopup="true" aria-label="Image label"
-                style="background-image: url('http://lorempixel.com/200/200/nature/2/');" onclick="onPopoverClick('popoverB2');"></span>
+                style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg');" onclick="onPopoverClick('popoverB2');"></span>
         </div>
         <div class="fd-popover__body fd-popover__body--left" aria-hidden="true" id="popoverB2">
             <nav class="fd-menu" id="">
@@ -403,8 +400,7 @@ export const controlExamples = () => `
  * Add the `fd-popover-body__wrapper` wrapper on the element below the `popover__body` to prevent body overflow.
  */
 
-export const overflowProtection = () => `
-<div class="fd-popover">
+export const overflowProtection = () => `<div class="fd-popover">
     <div class="fd-popover__control">
         <button class="fd-button" aria-label="Image label" aria-controls="popoverF1" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverF1');">Popover with overflow</button>
     </div>

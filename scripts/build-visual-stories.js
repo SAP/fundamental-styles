@@ -66,34 +66,71 @@ componentDirs.map((directory) => {
             const visualStoryName = componentName.split('-').map(str => str[0].toUpperCase() + str.substr(1)).join('');
             const dependentCompsArr = await getDependentComponents(`${directory.path}/${fileName}`);
             const dependentComps = dependentCompsArr && dependentCompsArr.length ? dependentCompsArr.map(name => `'${name}'`).join(', ') : false;
-            const fileContents =
-`import * as Case from 'case';
+
+
+            const themes = [
+                { value: 'sap_fiori_3', title: 'Light' },
+                { value: 'sap_fiori_3_dark', title: 'Dark' },
+                { value: 'sap_fiori_3_hcw', title: 'High Contrast Light' },
+                { value: 'sap_fiori_3_hcb', title: 'High Contrast Dark' }
+            ];
+
+            themes.forEach(theme => {
+                const {
+                    value: themeVal,
+                    title
+                } = theme;
+                const fileContents =
+`import { withThemeProvider } from '../../.storybook/custom/themeProvider.js';
+import * as Case from 'case';
 import * as stories from './${componentName}.stories.js';
 
 export default {
-    title: 'Visual/${prettyCompName}'${dependentComps ? ',' : ''}
+    title: 'Visual/${title}/${prettyCompName}'${dependentComps ? ',' : ''}
     ${
     dependentComps ?
         `parameters: {
-        components: [${dependentComps}]
-    }` : ''
+        components: [${dependentComps}],
+        theme: '${themeVal}'
+    },
+    decorators: [
+        withThemeProvider
+    ]` : ''
 }
 };
 
+const wrappedStory = (storyName, storyFn, direction) =>\`
+<h2> \${Case.capital(storyName)} </h2>
+<div dir="\${direction}">
+    \${storyFn()}
+</div>
+<br />
+<hr />
+<br />
+<br />\`;
+
 export const ${visualStoryName} = () => {
     let storyNames = Object.keys(stories).filter(story => story !== 'default' && story !== 'dev');
-    const div = document.createElement('div');
-    div.innerHTML = storyNames.map(function(item) {
-        return '<h2>' + Case.capital(item) + '</h2>' +
-        '<div>' + stories[item]() + '</div> <br /> <hr /> <br /> <br />';
+    const allVisualStories = document.createElement('div');
+    allVisualStories.innerHTML = storyNames.map(function(eachStoryName) {
+        const eachStory = stories[eachStoryName];
+
+        const eachStoryLTR = wrappedStory(eachStoryName, eachStory, 'ltr');
+
+        if (eachStory && eachStory.parameters && eachStory.parameters.skipRTLSnapshot) return eachStoryLTR;
+
+        const eachStoryRTL = wrappedStory(Case.capital(eachStoryName) + ' (Right to Left)', eachStory, 'rtl');
+
+        return eachStoryLTR + eachStoryRTL;
     }).join('');
-    return div;
+    return allVisualStories;
 };
 
 `;
-            // write the visual story file into the directory.
-            let visualPath = path.join(directory.path, `${componentName}.visual.js`);
-            writeFileSync(visualPath, fileContents);
+                // write the visual story file into the directory.
+                let visualPath = path.join(directory.path, `${componentName}-${themeVal}.visual.js`);
+                writeFileSync(visualPath, fileContents);
+            });
         }
     });
 });

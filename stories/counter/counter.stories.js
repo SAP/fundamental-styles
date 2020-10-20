@@ -22,8 +22,7 @@ primary.parameters = {
     }
 };
 
-export const paragraph = () => `
-<p>Lorem ipsum <span class="fd-counter" aria-label="Unread count">5</span> </p>
+export const paragraph = () => `<p>Lorem ipsum <span class="fd-counter" aria-label="Unread count">5</span> </p>
 `;
 paragraph.storyName = 'Text';
 paragraph.parameters = {
@@ -32,8 +31,7 @@ paragraph.parameters = {
     }
 };
 
-export const tabs = () => `
-<ul class="fd-tabs" role="tablist">
+export const tabs = () => `<ul class="fd-tabs" role="tablist">
     <li class="fd-tabs__item">
         <a class="fd-tabs__link" aria-controls="AvcVC566" href="#AvcVC566" role="tab">Link
         <span class="fd-counter" aria-label="Unread count">25</span></a>

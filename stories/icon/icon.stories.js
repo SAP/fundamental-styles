@@ -53,5 +53,6 @@ availableIcons.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: 'There are several icons available. To display any one of these icons, add the <code>sap-icon--{icon-name}</code> modifier class identifying the icon style to the <code>sap-icon</code> class. For example, for a search icon, add <code>sap-icon sap-icon--search</code> with the desired font size value.'
-    }
+    },
+    skipRTLSnapshot: true
 };

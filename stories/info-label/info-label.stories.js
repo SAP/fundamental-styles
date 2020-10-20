@@ -12,7 +12,7 @@ Use the Info Label base class with following modifiers:
     - \`fd-info-label--numeric\`
       `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['info-label']
+        components: ['info-label', 'icon']
     }
 };
 
@@ -20,8 +20,7 @@ Use the Info Label base class with following modifiers:
  * Options include numbers from 1 to 10.
  */
 
-export const colors = () => `
-<div class="fddocs-container">
+export const colors = () => `<div class="fddocs-container">
     <span class="fd-info-label fd-info-label--accent-color-1">
         <span class="fd-info-label__text">Info Label</span>
     </span>
@@ -67,8 +66,7 @@ colors.storyName = 'Color Flavors';
 
 /** Use the `fd-info-label--icon` modifier class and icon type to create Info Label with Icon. */
 
-export const icons = () => `
-<div class="fddocs-container">
+export const icons = () => `<div class="fddocs-container">
     <span class="fd-info-label fd-info-label--accent-color-1 fd-info-label--icon">
         <i role="presentation" class="fd-info-label__icon sap-icon--future"></i>
         <span class="fd-info-label__text">Info Label</span>
@@ -83,8 +81,7 @@ icons.storyName = 'Info Label with Icon';
 
 /** For Numeric Info Label use the `fd-info-label--numeric` modifier class. */
 
-export const numeric = () => `
-<div class="fddocs-container">
+export const numeric = () => `<div class="fddocs-container">
     <span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-1">
         <span class="fd-info-label__text">6</span>
     </span>

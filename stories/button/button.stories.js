@@ -40,8 +40,7 @@ export const primary = () => `
  * - **Transparent Button** Used for secondary or negative path actions
  */
 
-export const types = () => `
-    <div class="fddocs-container"> 
+export const types = () => `<div class="fddocs-container"> 
         <button class="fd-button">Default Button</button>
         <button class="fd-button fd-button--emphasized">Emphasized Button</button>
         <button class="fd-button fd-button--ghost">Ghost Button</button>
@@ -49,8 +48,7 @@ export const types = () => `
         <button class="fd-button fd-button--negative">Negative Button</button>
         <button class="fd-button fd-button--attention">Attention Button</button>
         <button class="fd-button fd-button--transparent">Transparent Button</button>
-    </div>
-`;
+</div>`;
 
 types.storyName = 'Button styles';
 types.parameters = {

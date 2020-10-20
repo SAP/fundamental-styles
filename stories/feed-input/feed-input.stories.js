@@ -20,12 +20,11 @@ export default {
     }
 };
 
-export const standard = () => `
-    <div class="fd-feed-input" 
+export const standard = () => `    <div class="fd-feed-input" 
          role="region" 
          aria-label="Feed input empty example">
         <div class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb" 
-             style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
+             style="background-image: url(https://loremflickr.com/cache/resized/65535_50180766926_9acc451386_240_240_nofilter.jpg)" 
              role="img" 
              aria-label="John Doe"
              title="John Doe"></div>
@@ -52,12 +51,11 @@ standard.parameters = {
     }
 };
 
-export const notEmpty = () => `
-    <div class="fd-feed-input" 
+export const notEmpty = () => `    <div class="fd-feed-input" 
          role="region" 
          aria-label="Feed input with one row text">
         <div class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb" 
-             style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
+             style="background-image: url(https://loremflickr.com/cache/resized/65535_50180766926_9acc451386_240_240_nofilter.jpg)" 
              role="img" 
              aria-label="John Doe"
              title="John Doe"></div>
@@ -84,12 +82,11 @@ notEmpty.parameters = {
     }
 };
 
-export const disabled = () => `
-    <div class="fd-feed-input is-disabled" 
+export const disabled = () => `    <div class="fd-feed-input is-disabled" 
          role="region" 
          aria-label="Feed input disabled example">
         <div class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb" 
-             style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
+             style="background-image: url(https://loremflickr.com/cache/resized/65535_50180766926_9acc451386_240_240_nofilter.jpg)" 
              role="img" 
              aria-label="John Doe"
              title="John Doe"></div>
@@ -118,8 +115,7 @@ disabled.parameters = {
     }
 };
 
-export const withoutUserImage = () => `
-    <div class="fd-feed-input" 
+export const withoutUserImage = () => `    <div class="fd-feed-input" 
          role="region" 
          aria-label="Feed input empty example">
         <textarea class="fd-textarea fd-feed-input__textarea"  
@@ -143,8 +139,7 @@ withoutUserImage.parameters = {
     }
 };
 
-export const placeholderImage = () => `
-    <div class="fd-feed-input" 
+export const placeholderImage = () => `    <div class="fd-feed-input" 
          role="region" 
          aria-label="Feed input empty example">
         <div class="fd-avatar fd-avatar--s fd-avatar--placeholder sap-icon--person-placeholder fd-feed-input__thumb"
@@ -172,12 +167,11 @@ placeholderImage.parameters = {
     }
 };
 
-export const inputGrowth = () => `
-    <div class="fd-feed-input" 
+export const inputGrowth = () => `    <div class="fd-feed-input" 
          role="region" 
          aria-label="Feed input height growth">
         <div class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb" 
-             style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
+             style="background-image: url(https://loremflickr.com/cache/resized/65535_50180766926_9acc451386_240_240_nofilter.jpg)" 
              role="img"
              aria-label="John Doe" 
              title="John Doe"></div>
@@ -203,12 +197,11 @@ inputGrowth.parameters = {
     }
 };
 
-export const overMaxHeight = () => `
-    <div class="fd-feed-input" 
+export const overMaxHeight = () => `    <div class="fd-feed-input" 
          role="region" 
          aria-label="Feed input over max height">
         <div class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb" 
-             style="background-image: url(http://lorempixel.com/460/620/people/7/)" 
+             style="background-image: url(https://loremflickr.com/cache/resized/65535_50180766926_9acc451386_240_240_nofilter.jpg)" 
              role="img" 
              aria-label="John Doe"
              title="John Doe"></div>

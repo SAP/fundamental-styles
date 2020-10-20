@@ -1,19 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Layouts/Dynamic Side Content Below 1`] = `
+exports[`Storyshots Layouts/Dynamic Side Content Below 1`] = `    `;
 
-    
-`;
+exports[`Storyshots Layouts/Dynamic Side Content Equal split 1`] = `    `;
 
-exports[`Storyshots Layouts/Dynamic Side Content Equal split 1`] = `
-
-    
-`;
-
-exports[`Storyshots Layouts/Dynamic Side Content Left 1`] = `
-
-    
-`;
+exports[`Storyshots Layouts/Dynamic Side Content Left 1`] = `    `;
 
 exports[`Storyshots Layouts/Dynamic Side Content Responsiveness 1`] = `
 <section>
@@ -153,7 +144,4 @@ exports[`Storyshots Layouts/Dynamic Side Content Responsiveness 1`] = `
 </section>
 `;
 
-exports[`Storyshots Layouts/Dynamic Side Content Right 1`] = `
-
-    
-`;
+exports[`Storyshots Layouts/Dynamic Side Content Right 1`] = `    `;

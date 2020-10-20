@@ -30,8 +30,7 @@ To ensure that the carousel is accessible, a div element with class <code class=
     }
 };
 
-export const carouselBottom = () => `
-<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
+export const carouselBottom = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
     <h4>Navigation buttons in page indicator</h4>
     <div 
         class="fd-carousel" 
@@ -193,8 +192,7 @@ carouselBottom.parameters = {
     }
 };
 
-export const carouselTop = () => `
-<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
+export const carouselTop = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
     <h4>Navigation buttons in page indicator</h4>
     <div 
         class="fd-carousel" 
@@ -343,16 +341,16 @@ export const carouselTop = () => `
         </div>
         <div class="fd-carousel__content" style="text-align: center; padding: 1rem; min-height: 15.5rem;">
             <div class="fd-carousel__item">
-                <img src="http://lorempixel.com/400/400/nature/1/" alt="Carousel Image 1" />
+                <img src="https://loremflickr.com/cache/resized/65535_50324970052_954b023105_z_400_400_nofilter.jpg" alt="Carousel Image 1" />
             </div>
             <div class="fd-carousel__item">
-                <img src="http://lorempixel.com/400/400/nature/2/" alt="Carousel Image 2" />
+                <img src="https://loremflickr.com/cache/resized/65535_50157218336_40a662e5b1_z_400_400_nofilter.jpg" alt="Carousel Image 2" />
             </div>
             <div class="fd-carousel__item">
-                <img src="http://lorempixel.com/400/400/nature/3/" alt="Carousel Image 3" />
+                <img src="https://loremflickr.com/cache/resized/65535_50136925591_e657f283f8_z_400_400_nofilter.jpg" alt="Carousel Image 3" />
             </div>
             <div class="fd-carousel__item fd-carousel__item--active">
-                <img src="http://lorempixel.com/400/400/nature/4/" alt="Carousel Image 4" />
+                <img src="https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg" alt="Carousel Image 4" />
             </div>
         </div>
     </div>
@@ -372,8 +370,7 @@ carouselTop.parameters = {
 };
 
 
-export const carouselNoNavigation = () => `
-<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
+export const carouselNoNavigation = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
     <h4>Hiding navigation buttons in page indicator</h4>
     <div 
         class="fd-carousel fd-carousel--no-navigation" 

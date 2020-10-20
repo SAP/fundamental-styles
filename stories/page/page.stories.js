@@ -34,8 +34,7 @@ export default {
     }
 };
 
-export const basicPage = () => `
-<main class="fd-page">
+export const basicPage = () => `<main class="fd-page">
     <header>
         <div class="fd-bar fd-bar--page fd-bar--header">
             <div class="fd-bar__left">
@@ -82,8 +81,7 @@ basicPage.parameters = {
     }
 };
 
-export const transparentPage = () => `
-<main class="fd-page fd-page--transparent">
+export const transparentPage = () => `<main class="fd-page fd-page--transparent">
     <header>
         <div class="fd-bar fd-bar--page-m_l fd-bar--header-with-subheader">
             <div class="fd-bar__left">
@@ -144,8 +142,7 @@ transparentPage.parameters = {
 };
 
 
-export const responsivePage = () => `
-<main class="fd-page fd-page--home fd-page--list">
+export const responsivePage = () => `<main class="fd-page fd-page--home fd-page--list">
     <header>
         <div class="fd-bar fd-bar--home-page-xl fd-bar--header-with-subheader">
             <div class="fd-bar__left">

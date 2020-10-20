@@ -28,8 +28,7 @@ The size of the message page adjusts to fit the available space.
 
 const messageBoxHeight = 800;
 
-export const filter = () => `
-<div style="height: 600px; width: 100%;">
+export const filter = () => `<div style="height: 600px; width: 100%;">
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
@@ -58,8 +57,7 @@ Mandatory: Use the <code class="docs-code">.sap-icon--filter</code> icon.
     }
 };
 
-export const search = () => `
-<div style="height: 600px; width: 100%;">
+export const search = () => `<div style="height: 600px; width: 100%;">
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
@@ -85,8 +83,7 @@ Mandatory: Use the <code class="docs-code">.sap-icon--search</code> icon.
     }
 };
 
-export const noItems = () => `
-<div style="height: 600px; width: 100%;">
+export const noItems = () => `<div style="height: 600px; width: 100%;">
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
@@ -112,8 +109,7 @@ Mandatory: Use the <code class="docs-code">.sap-icon--product</code> icon, or an
     }
 };
 
-export const error = () => `
-<div style="height: 600px; width: 100%;">
+export const error = () => `<div style="height: 600px; width: 100%;">
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
@@ -145,8 +141,7 @@ Provide a link to the app start screen if you can.
 };
 
 
-export const buttons = () => `
-<div style="height: 600px; width: 100%;">
+export const buttons = () => `<div style="height: 600px; width: 100%;">
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">

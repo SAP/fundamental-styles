@@ -34,8 +34,7 @@ primary.parameters = {
     }
 };
 
-export const counter = () => `
-<div class="fd-form-item">
+export const counter = () => `<div class="fd-form-item">
     <label class="fd-form-label" for="textarea-2">Compact text area:</label>
     <textarea class="fd-textarea fd-textarea--compact" id="textarea-2">Pellentesque metus lacus commodo eget justo ut rutrum varius nunc.</textarea>
     <div class="fd-textarea-counter">150 characters left</div>

@@ -20,8 +20,7 @@ export default {
     }
 };
 
-export const primary = () => `
-<div class="fd-layout-panel">
+export const primary = () => `<div class="fd-layout-panel">
   <div class="fd-layout-panel__header">
     <div class="fd-layout-panel__head">
       <div class="fd-layout-panel__title">

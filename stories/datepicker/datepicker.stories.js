@@ -10,12 +10,11 @@ The date-picker component is an opinionated composition of the <code>input-group
 
 This component mostly relies on the CSS of other components and has very little CSS of its own.
 `,
-        components: ['calendar', 'input-group', 'popover', 'title', 'button', 'input', 'form-label']
+        components: ['calendar', 'input-group', 'popover', 'title', 'button', 'input', 'form-label', 'icon', 'bar', 'dialog']
     }
 };
 
-export const defaultAndCompactSizes = () => `
-<div style="display:flex;justify-content:space-around;height:400px">
+export const defaultAndCompactSizes = () => `<div style="display:flex;justify-content:space-around;height:400px">
   <div class="fd-docs-date-picker">
     <div class="fd-popover">
       <div class="fd-popover__control">
@@ -409,8 +408,7 @@ defaultAndCompactSizes.parameters = {
     }
 };
 
-export const todaySelectionButton = () =>`
-<div class="fd-docs-date-picker" style="height:450px">
+export const todaySelectionButton = () => `<div class="fd-docs-date-picker" style="height:450px">
   <div class="fd-popover">
     <div class="fd-popover__control">
     <label class="fd-form-label" for="todaySelectionDateInput">en-US DatePicker with today selection</label>
@@ -626,8 +624,7 @@ This date value then appears in the DatePicker's input field. If using a compact
     }
 };
 
-export const todayNavigationButton = () =>`
-<div class="fd-docs-date-picker" style="height:500px">
+export const todayNavigationButton = () => `<div class="fd-docs-date-picker" style="height:500px">
   <div class="fd-popover">
     <div class="fd-popover__control">
       <label class="fd-form-label" for="todayNavigationDateInput">en-US DatePicker with today navigation</label>
@@ -847,8 +844,7 @@ If using a compact datepicker add the \`fd-button--compact\` class to this butto
     }
 };
 
-export const mobileLandscape = () => `
-<div class="fd-dialog-docs-static fd-calendar-mobile-docs-static--landscape fd-dialog fd-dialog--active">
+export const mobileLandscape = () => `<div class="fd-dialog-docs-static fd-calendar-mobile-docs-static--landscape fd-dialog fd-dialog--active">
   <div class="fd-dialog__content fd-dialog__content--s fd-dialog__content--mobile">
     <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
       <div class="fd-calendar fd-calendar--mobile-landscape">
@@ -1061,8 +1057,7 @@ mobileLandscape.parameters = {
 };
 
 
-export const mobilePortrait = () => `
-<div class="fd-dialog-docs-static fd-calendar-mobile-docs-static--portrait fd-dialog fd-dialog--active">
+export const mobilePortrait = () => `<div class="fd-dialog-docs-static fd-calendar-mobile-docs-static--portrait fd-dialog fd-dialog--active">
   <div class="fd-dialog__content fd-dialog__content--s fd-dialog__content--mobile">
     <div class="fd-dialog__header fd-bar fd-bar--header fd-bar--cosy">
       <div class="fd-bar__left">

@@ -17,8 +17,7 @@ export default {
  * The lists in both sections (Main and Utility) should have the fd-nested-list--text-only modifier class.
  */
 
-export const cozy = () => `
-<div class="fd-side-nav">
+export const cozy = () => `<div class="fd-side-nav">
     <a class="fd-side-nav__skip-link" href="#content">Skip navigation</a>
     <nav class="fd-side-nav__main-navigation" aria-label="Main Menu">
         <ul class="fd-nested-list fd-nested-list--text-only" aria-label="Main Menu">
@@ -61,8 +60,7 @@ export const cozy = () => `
 </div>
 `;
 
-export const cozyIcons = () => `
-<div class="fd-side-nav">
+export const cozyIcons = () => `<div class="fd-side-nav">
     <a class="fd-side-nav__skip-link" href="#content">Skip navigation</a>
     <nav class="fd-side-nav__main-navigation" aria-label="Main Menu">
         <ul class="fd-nested-list">
@@ -118,8 +116,7 @@ cozyIcons.parameters = {
     }
 };
 
-export const cozyMultiple = () => `
-<div class="fd-side-nav">
+export const cozyMultiple = () => `<div class="fd-side-nav">
     <a class="fd-side-nav__skip-link" href="#content">Skip navigation</a>
     <nav class="fd-side-nav__main-navigation" aria-label="Main Menu">
         <ul class="fd-nested-list fd-nested-list--text-only">
@@ -206,8 +203,7 @@ is the element which triggers another level..
     }
 };
 
-export const complexCozySideNav = () => `
-<div class="fd-side-nav">
+export const complexCozySideNav = () => `<div class="fd-side-nav">
     <a class="fd-side-nav__skip-link" href="#content">Skip navigation</a>
     <div class="fd-side-nav__group-header" id="EX400H1">
         Group Header 1
@@ -309,8 +305,7 @@ complexCozySideNav.parameters = {
     }
 };
 
-export const complexCompactSideNav = () => `
-<div class="fd-side-nav">
+export const complexCompactSideNav = () => `<div class="fd-side-nav">
     <a class="fd-side-nav__skip-link" href="#content">Skip navigation</a>
     <div class="fd-side-nav__group-header" id="EX500H1">
         Group Header 1
@@ -411,8 +406,7 @@ complexCompactSideNav.parameters = {
     }
 };
 
-export const condensedStateCozy = () => `
-<nav class="fd-side-nav fd-side-nav--condensed">
+export const condensedStateCozy = () => `<nav class="fd-side-nav fd-side-nav--condensed">
     <a class="fd-side-nav__skip-link" href="#content">Skip navigation</a>
     <div class="fd-side-nav__main-navigation">
         <ul class="fd-nested-list">
@@ -476,8 +470,7 @@ condensedStateCozy.parameters = {
 };
 
 
-export const condensedStateCompact = () => `
-<nav class="fd-side-nav fd-side-nav--condensed">
+export const condensedStateCompact = () => `<nav class="fd-side-nav fd-side-nav--condensed">
     <a class="fd-side-nav__skip-link" href="#content">Skip navigation</a>
     <div class="fd-side-nav__main-navigation">
         <ul class="fd-nested-list fd-nested-list--compact">
@@ -544,8 +537,7 @@ length by adding the <code>fd-popover__body--dropdown-fill</code> class to <code
     }
 };
 
-export const nestedListWithoutIcons = () => `
-<ul class="fd-nested-list fd-nested-list--text-only">
+export const nestedListWithoutIcons = () => `<ul class="fd-nested-list fd-nested-list--text-only">
     <li class="fd-nested-list__item">
         <a class="fd-nested-list__link"href="#/">
             <span class="fd-nested-list__title">Level 1 Item</span>
@@ -710,8 +702,7 @@ nestedListWithoutIcons.parameters = {
     }
 };
 
-export const nestedListWithIconsOnlyInFirstLevel = () => `
-<ul class="fd-nested-list">
+export const nestedListWithIconsOnlyInFirstLevel = () => `<ul class="fd-nested-list">
     <li class="fd-nested-list__item">
         <a class="fd-nested-list__link"href="#/">
             <i role="presentation" class="fd-nested-list__icon sap-icon--home"></i>
@@ -834,8 +825,7 @@ nestedListWithIconsOnlyInFirstLevel.parameters = {
     }
 };
 
-export const nestedListWithGroupHeaders = () => `
-<ul class="fd-nested-list">
+export const nestedListWithGroupHeaders = () => `<ul class="fd-nested-list">
     <li class="fd-nested-list__group-header">
         Group Header 1
     </li>
@@ -964,8 +954,7 @@ nestedListWithGroupHeaders.parameters = {
     }
 };
 
-export const nestedListWithGroupHeadersCompactMode = () => `
-<ul class="fd-nested-list fd-nested-list--compact">
+export const nestedListWithGroupHeadersCompactMode = () => `<ul class="fd-nested-list fd-nested-list--compact">
     <li class="fd-nested-list__group-header">
         Group Header 1
     </li>
@@ -1094,8 +1083,7 @@ nestedListWithGroupHeadersCompactMode.parameters = {
     }
 };
 
-export const nestedListWithoutLinks = () => `
-<ul class="fd-nested-list fd-nested-list--compact">
+export const nestedListWithoutLinks = () => `<ul class="fd-nested-list fd-nested-list--compact">
     <li class="fd-nested-list__group-header">
         Group Header 1
     </li>
