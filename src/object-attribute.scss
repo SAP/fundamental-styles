@@ -20,24 +20,17 @@ $block: #{$fd-namespace}-object-attribute;
       color: var(--sapLink_Visited_Color);
     }
 
-    &:hover {
-      @include fd-hover() {
-        text-decoration: underline;
-        color: var(--sapLink_Hover_Color);
-      }
+    @include fd-hover() {
+      text-decoration: underline;
+      color: var(--sapLink_Hover_Color);
     }
 
-    &:focus {
-      @include fd-focus();
-      @include fd-fiori-focus($offset: -0.0625rem);
-    }
+    @include fd-focus();
+    @include fd-fiori-focus($offset: -0.0625rem);
 
-    &[disabled],
-    &[aria-disabled="true"] {
-      @include fd-disabled() {
-        opacity: var(--sapContent_DisabledOpacity);
-        pointer-events: none;
-      }
+    @include fd-disabled() {
+      opacity: var(--sapContent_DisabledOpacity);
+      pointer-events: none;
     }
   }
 }
