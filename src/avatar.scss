@@ -115,6 +115,7 @@ $block: #{$fd-namespace}-avatar;
   @each $set-name, $color-set in $fd-avatar-accent-colors {
     &--accent-color-#{$set-name} {
       background-color: map_get($color-set, "background-color");
+      color: var(--fdAvatar_Accent_Color);
     }
   }
 
