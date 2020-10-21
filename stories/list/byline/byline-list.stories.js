@@ -5,6 +5,7 @@ export default {
 Byline lists allow users to extend standard list items with additional content. To display a byline list, add the \`fd-list--byline\` modifier class to the \`fd-list\` element introduced in **Standard List**.
 
 ##Usage
+
 **Use the byline list if:**
 
 -	You want to include additional text in standard list items.
