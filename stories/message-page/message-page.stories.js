@@ -171,7 +171,7 @@ buttons.storyName = 'Formatted text and buttons';
 buttons.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `The message page with formatted text and buttons is useful for when you want to add formatted text (bold, italic, underline and/or bullet points) and buttons to the action area. It's highly recommended not to use more than two buttons in the actions area.
+        storyDescription: `The message page with formatted text and buttons is useful for when you want to add formatted text (bold, italic, underline and/or bullet points) and buttons to the action area. It's highly recommended not to add more than two buttons.
     `
     }
 };
