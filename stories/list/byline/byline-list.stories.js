@@ -200,7 +200,7 @@ navigationIndicator.parameters = {
     docs: {
         iframeHeight: 275,
         storyDescription: `
-If only a subset of the list items is navigable you should indicate them with an arrow icon. To display navigation indicators, add the \`fd-list--navigation-indication\` modifier class to the unordered list element. Do not show indicators if all items are navigable. In this case, use a byline list with navigation (in the example above).
+If only a subset of the list items is navigable, you should indicate them with an arrow icon. To display navigation indicators, add the \`fd-list--navigation-indication\` modifier class to the unordered list element. Do not show indicators if all items are navigable. In this case, use a byline list with navigation (in the example above).
 `
     }
 };
