@@ -95,7 +95,7 @@ noItems.storyName = 'No items';
 noItems.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `Message page displays a message indicating that there are no items when the user attempts to view a page that is supposed to contain items, however, they are either not available or do not exist. It is mandatory to use either the <code>.sap-icon--product</code> icon, or another icon that matches your use case.
+        storyDescription: `Message page displays a message indicating that there are no items when the user attempts to view a page that is supposed to contain items, but they are either not available or do not exist. It is mandatory to use either the <code>.sap-icon--product</code> icon, or another icon that matches your use case.
         `
     }
 };
