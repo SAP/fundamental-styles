@@ -1,24 +1,20 @@
 export default {
     title: 'Components/Message Page',
     parameters: {
-        description: `A message page gives feedback to the user when an app or list is empty or if an error has occurred. The text and icon on the message page changes depending on the use case, however, the layout stays the same.
-        
+        description: `Message page displays a message to the user when an app or list is empty or if an error has occurred. The text and icon on the message page changes depending on the use case, however, the layout stays the same. It is responsive and adjusts to fit the available screen space.
+
 **The message page can be used in the following situations:**
 
-- Filtering with no results
-- Searching with no results
+- Filter with no results
+- Search with no results
 - Empty app
 - Too many items
-- Item saved as a tile that is not longer available
+- Item saved as a tile that is no longer available
 - Error
 
-## Responsiveness
-The size of the message page adjusts to fit the available space.
-
-## Guidelines
-
-- The icon in the message page is mandatory, and can vary depending on the message. The default icon is <code class="docs-code">.sap-icon--documents</code>.
-- The title is also mandatory. Add a description with further details if needed. 
+##Guidelines
+- The icon is mandatory and can vary depending on the message. The default icon is <code>.sap-icon--documents</code>.
+- The title is also mandatory. Add a description with further details if needed.
 - The message should be as concise as possible.
         `,
         tags: ['f3', 'a11y', 'theme', 'development'],
@@ -50,9 +46,7 @@ export const filter = () => `<div style="height: 600px; width: 100%;">
 filter.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `Use the filter message page for when a user has set a filter and there are no results. This message then prompts the user to remove or re-evaluate the filter they set for the page.
-
-Mandatory: Use the <code class="docs-code">.sap-icon--filter</code> icon.
+        storyDescription: `The filter message page is displayed when the user has set a filter and there are no results. This message then prompts the user to remove or re-evaluate the filter they set for the page. It is mandatory to use the <code>.sap-icon--filter</code>  icon.
     `
     }
 };
@@ -76,9 +70,7 @@ export const search = () => `<div style="height: 600px; width: 100%;">
 search.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `Use the search message page for when a user has searched for something, but there are no results for that inquiry.
-
-Mandatory: Use the <code class="docs-code">.sap-icon--search</code> icon.
+        storyDescription: `The search message page is displayed when a user has searched for something, but there are no results for that inquiry. It is mandatory to use the <code>.sap-icon--search</code> icon.
     `
     }
 };
@@ -99,13 +91,12 @@ export const noItems = () => `<div style="height: 600px; width: 100%;">
 </div>
 `;
 
+noItems.storyName = 'No items';
 noItems.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `Use the no items message page for when the user has viewed a page that is supposed to contain items, but there are none.
-
-Mandatory: Use the <code class="docs-code">.sap-icon--product</code> icon, or any other icon that matches your use case.
-    `
+        storyDescription: `Message page displays a message indicating that there are no items when the user attempts to view a page that is supposed to contain items, however, they are either not available or do not exist. It is mandatory to use either the <code>.sap-icon--product</code> icon, or another icon that matches your use case.
+        `
     }
 };
 
@@ -131,15 +122,10 @@ export const error = () => `<div style="height: 600px; width: 100%;">
 error.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `Use the error message page for when the user attempts to view a page but an error has occurred, resulting in no available content. If you can, provide a link to the app start screen in the error message.
-
-Mandatory: Use the <code class="docs-code">.sap-icon--document</code> icon.
-
-Provide a link to the app start screen if you can.
+        storyDescription: `The error message page is displayed when the user attempts to view a page but an error has occurred, resulting in no available content. If you can, provide a link to the app start screen in the error message. It is mandatory to use the <code>.sap-icon--document</code> icon.
     `
     }
 };
-
 
 export const buttons = () => `<div style="height: 600px; width: 100%;">
     <div class="fd-message-page">
@@ -181,11 +167,11 @@ export const buttons = () => `<div style="height: 600px; width: 100%;">
 </div>
 `;
 
-buttons.storyName = 'Formatted Text and Buttons';
+buttons.storyName = 'Formatted text and buttons';
 buttons.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `Use the message page with formatted text and buttons when you want to add formatted text (bold, italic, underline and/or bullet points) and buttons to the action area. It's highly recommended not to use more than two buttons in the Actions area.
+        storyDescription: `The message page with formatted text and buttons is useful for when you want to add formatted text (bold, italic, underline and/or bullet points) and buttons to the action area. It's highly recommended not to use more than two buttons in the actions area.
     `
     }
 };
