@@ -1,0 +1,18 @@
+@import "./new-settings";
+@import './mixins';
+
+$block: #{$fd-namespace}-text;
+
+.#{$block} {
+  @include fd-reset();
+
+  font-weight: normal;
+  font-family: var(--sapFontFamily);
+  font-size: var(--sapFontSize);
+  color: var(--sapTextColor);
+
+  &::selection {
+    color: var(--sapContent_ContrastTextColor);
+    background-color: var(--sapSelectedColor);
+  }
+}
