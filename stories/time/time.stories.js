@@ -15,7 +15,7 @@ Multiple instances can be used in the <code class="docs-code">date-picker</code>
 `,
 
         tags: ['f3', 'a11y', 'theme'],
-        components: ['icon', 'time']
+        components: ['icon', 'button', 'time']
     }
 };
 

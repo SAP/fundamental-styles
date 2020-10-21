@@ -9,7 +9,7 @@ $block: #{$fd-namespace}-avatar;
 
 .#{$block} {
   $fd-avatar-border-radius: 50% !default;
-  $fd-avatar-background-color: var(--sapAccentColor6) !default;
+  $fd-avatar-background-color: var(--fdAvatar_BackgroundColor) !default;
   $fd-zoom-icon-s: 1.125rem !default;
   $fd-zoom-icon-l: 1.25rem !default;
   $fd-zoom-icon-xl: 1.75rem !default;
@@ -40,6 +40,7 @@ $block: #{$fd-namespace}-avatar;
     [class*="#{$block}"] {
       @include fd-reset();
 
+      border: var(--fdAvatar_Border);
       color: var(--sapContent_ContrastTextColor);
       background-color: $fd-avatar-background-color;
       display: inline-block;
@@ -91,7 +92,7 @@ $block: #{$fd-namespace}-avatar;
 
   // background
   &--transparent {
-    background-color: transparent;
+    background-color: var(--fdAvatar-Transparent_BackgroundColor);
     color: var(--sapContent_IconColor);
   }
 
@@ -102,7 +103,7 @@ $block: #{$fd-namespace}-avatar;
 
   // tile background
   &--tile {
-    background-color: var(--sapTile_IconColor);
+    background-color: var(--fdAvatar_Tile_BackgroundColor);
   }
 
   // optional border
@@ -114,6 +115,7 @@ $block: #{$fd-namespace}-avatar;
   @each $set-name, $color-set in $fd-avatar-accent-colors {
     &--accent-color-#{$set-name} {
       background-color: map_get($color-set, "background-color");
+      color: var(--fdAvatar_Accent_Color);
     }
   }
 

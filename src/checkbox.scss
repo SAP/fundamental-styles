@@ -59,7 +59,7 @@ $block: #{$fd-namespace}-checkbox;
       background-color: var(--sapField_Background);
       margin-right: $fd-checkbox-margin;
       margin-left: 0;
-      color: var(--sapSelectedColor);
+      color: var(--fdCheckbox_Selected_Color);
       border: var(--sapField_BorderWidth) solid var(--sapField_BorderColor);
       border-radius: var(--sapField_BorderCornerRadius);
     }

@@ -39,7 +39,7 @@ The shellbar handles layout and has some built-in elements but relies on standal
 Here are examples of various configurations.
 
 `,
-        components: ['button', 'input-group', 'icon', 'menu', 'avatar', 'input-group', 'popover', 'product-switch', 'shellbar']
+        components: ['button', 'input-group', 'icon', 'menu', 'avatar', 'input-group', 'popover', 'product-switch', 'shellbar', 'counter']
     }
 };
 

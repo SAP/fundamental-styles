@@ -40,6 +40,23 @@
   --fdSlider_Track_Active_Background: var(--sapSelectedColor);
   --fdSlider_Track_Active_Border: var(--sapField_BorderColor);
 
+  /* Avatar */
+  --fdAvatar_BackgroundColor: var(--sapAccentColor6);
+  --fdAvatar_Tile_BackgroundColor: var(--sapTile_IconColor);
+  --fdAvatar-Transparent_BackgroundColor: transparent;
+  --fdAvatar_Border: none;
+  --fdAvatar_Accent_Color: var(--sapContent_ContrastTextColor);
+
+  /* Tabs */
+  --fdTabs_Selected_Color: var(--sapSelectedColor);
+  --fdTabs_Selected_Icon_Color: var(--sapContent_ContrastIconColor);
+
+  /* Radio */
+  --fdRadio_Selected_Color: var(--sapSelectedColor);
+
+  /* Checkbox */
+  --fdCheckbox_Selected_Color: var(--sapSelectedColor);
+
   /* Dynamic Page Layout */
   --fdDynamicPage_Hover_Border_Bottom: none;
   --fdDynamicPage_Title_Header_Transparent_Background: transparent;

@@ -3,7 +3,7 @@ export default {
     parameters: {
         description: 'The input group includes form inputs with add-ons that allow the user to better understand the information being entered.',
         tags: ['f3', 'a11y', 'theme'],
-        components: ['form-item', 'form-label', 'input', 'popover', 'input-group']
+        components: ['icon', 'button', 'form-item', 'form-label', 'input', 'popover', 'input-group']
     }
 };
 

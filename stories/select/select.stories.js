@@ -4,7 +4,7 @@ export default {
         description: `The **Select** component is commonly used to enable users to select an item from a predefined list.
       It should be used when there are less than 12 items to choose from. 
       For lists that require more than 12 options, the Combobox Input should be used.`,
-        components: ['icon', 'popover', 'list', 'form-label', 'form-message', 'select', 'dialog', 'bar']
+        components: ['icon', 'popover', 'list', 'form-label', 'form-message', 'select', 'dialog', 'bar', 'button', 'icon']
     }
 };
 

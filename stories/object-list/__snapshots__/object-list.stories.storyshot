@@ -51,7 +51,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
         
             <span
               class="fd-avatar fd-avatar--s"
-              style="background-image: url('http://lorempixel.com/400/400/nature/4/')"
+              style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
             >
               
         
@@ -293,7 +293,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
         
             <span
               class="fd-avatar fd-avatar--s"
-              style="background-image: url('http://lorempixel.com/400/400/nature/4/')"
+              style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
             >
               
         
@@ -528,7 +528,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
         
             <span
               class="fd-avatar fd-avatar--s"
-              style="background-image: url('http://lorempixel.com/400/400/nature/4/')"
+              style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
             >
               
         
@@ -791,7 +791,7 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
         
               <span
                 class="fd-avatar fd-avatar--s fd-avatar--circle"
-                style="background-image: url('http://lorempixel.com/400/400/nature/4/')"
+                style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
               >
                 
         
@@ -1043,7 +1043,7 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
         
               <span
                 class="fd-avatar fd-avatar--s fd-avatar--circle"
-                style="background-image: url('http://lorempixel.com/400/400/nature/4/')"
+                style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
               >
                 
         
@@ -1548,7 +1548,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
         
             <span
               class="fd-avatar fd-avatar--s"
-              style="background-image: url('http://lorempixel.com/400/400/nature/4/')"
+              style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
             >
               
         
@@ -1823,7 +1823,7 @@ exports[`Storyshots Components/Object List Selection With Navigation 1`] = `
         
               <span
                 class="fd-avatar fd-avatar--s"
-                style="background-image: url('http://lorempixel.com/400/400/nature/4/')"
+                style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
               >
                 
         
@@ -2075,7 +2075,7 @@ exports[`Storyshots Components/Object List Selection With Navigation 1`] = `
         
               <span
                 class="fd-avatar fd-avatar--s"
-                style="background-image: url('http://lorempixel.com/400/400/nature/4/')"
+                style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
               >
                 
         
@@ -2340,7 +2340,7 @@ exports[`Storyshots Components/Object List Standard 1`] = `
         
           <span
             class="fd-avatar fd-avatar--s"
-            style="background-image: url('http://lorempixel.com/400/400/nature/4/')"
+            style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
           >
             
         
@@ -2582,7 +2582,7 @@ exports[`Storyshots Components/Object List Standard 1`] = `
         
           <span
             class="fd-avatar fd-avatar--s"
-            style="background-image: url('http://lorempixel.com/400/400/nature/4/')"
+            style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
           >
             
         
@@ -2816,7 +2816,7 @@ exports[`Storyshots Components/Object List Standard 1`] = `
         
           <span
             class="fd-avatar fd-avatar--s"
-            style="background-image: url('http://lorempixel.com/400/400/nature/4/')"
+            style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
           >
             
         
@@ -3036,7 +3036,7 @@ exports[`Storyshots Components/Object List Standard 1`] = `
         
           <span
             class="fd-avatar fd-avatar--s"
-            style="background-image: url('http://lorempixel.com/400/400/nature/4/')"
+            style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
           >
             
         
