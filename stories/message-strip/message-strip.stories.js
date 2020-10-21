@@ -45,7 +45,7 @@ defaultStrip.parameters = {
     docs: {
         iframeHeight: messageStripHeight,
         storyDescription: `
-The default message strip can be used for general messages that don’t fit into any of the semantic type use cases. It can also provide feedback that an action has been executed. The user should (in most cases) be able to dismiss the message strip, so be sure to include the close button and the <code>fd-message-strip--dismissible</code> modifier class.
+The default message strip can be used for general messages that don’t fit into any of the semantic type use cases. It can also provide feedback that an action has been executed. The user should be able to dismiss the message strip (in most cases), so be sure to include the close button and the <code>fd-message-strip--dismissible</code> modifier class.
         `
     }
 };
@@ -84,7 +84,7 @@ success.storyName = 'Success';
 success.parameters = {
     docs: {
         iframeHeight: messageStripHeight,
-        storyDescription: 'The success message strip communicates to the user that when they’ve completed an action, it was completed successfully. To display a success message strip, add the <code>fd-message-strip--success</code> modifier class.'
+        storyDescription: 'The success message strip communicates to the user that an action they’ve completed was success. To display a success message strip, add the <code>fd-message-strip--success</code> modifier class.'
     }
 };
 
