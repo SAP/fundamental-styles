@@ -31,7 +31,7 @@ Modifier/Class | Description
     }
 };
 
-export const standard = () => `<h4>Standard Size</h4>
+export const standard = () => `<h4>Standard size</h4>
 <ul class="fd-list fd-list--byline" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
@@ -43,29 +43,29 @@ export const standard = () => `<h4>Standard Size</h4>
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
       <div class="fd-list__content">
-        <div class="fd-list__title">List Item With No Byline</div>
+        <div class="fd-list__title">List item with no byline</div>
       </div>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
     <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
 style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
     <div class="fd-list__content">
-        <div class="fd-list__title">List Item With Two-Column Byline</div>
+        <div class="fd-list__title">List item with 2-column byline</div>
         <div class="fd-list__byline fd-list__byline--2-col">
-            <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
-            <div class="fd-list__byline-right">Second text item in Byline (Can be semantic (Status) or not)</div>
+            <div class="fd-list__byline-left">First text item in byline (standard text)</div>
+            <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
         </div>
     </div>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
       <div class="fd-list__content">
-        <div class="fd-list__title">Text-Only List Item</div>
+        <div class="fd-list__title">Text-only list item</div>
         <div class="fd-list__byline">Byline (description)</div>
       </div>
   </li>
 </ul>
 
-<h4>Compact Size</h4>
+<h4>Compact size</h4>
 <ul class="fd-list fd-list--compact fd-list--byline" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
@@ -77,28 +77,30 @@ style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
       <div class="fd-list__content">
-        <div class="fd-list__title">List Item With No Byline</div>
+        <div class="fd-list__title">List item with no byline</div>
       </div>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
     <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
 style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
     <div class="fd-list__content">
-        <div class="fd-list__title">List Item With Two-Column Byline</div>
+        <div class="fd-list__title">List item with 2-column byline</div>
         <div class="fd-list__byline fd-list__byline--2-col">
-            <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
-            <div class="fd-list__byline-right">Second text item in Byline (Can be semantic (Status) or not)</div>
+            <div class="fd-list__byline-left">First text item in byline (standard text)</div>
+            <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
         </div>
     </div>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
       <div class="fd-list__content">
-        <div class="fd-list__title">Text-Only List Item</div>
+        <div class="fd-list__title">Text-only list item</div>
         <div class="fd-list__byline">Byline (description)</div>
       </div>
   </li>
 </ul>
 `;
+
+standard.storyName = 'Default';
 
 standard.parameters = {
     docs: {
@@ -122,7 +124,7 @@ export const navigation = () => `<ul class="fd-list fd-list--byline fd-list--nav
     <a tabindex="0" class="fd-list__link" href="#"> 
       <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
       <div class="fd-list__content">
-        <div class="fd-list__title">List Item With No Byline</div>
+        <div class="fd-list__title">List item with no byline</div>
       </div>
     </a> 
   </li>
@@ -131,10 +133,10 @@ export const navigation = () => `<ul class="fd-list fd-list--byline fd-list--nav
         <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
     style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
         <div class="fd-list__content">
-            <div class="fd-list__title">List Item With Two-Column Byline</div>
+            <div class="fd-list__title">List item with 2-column byline</div>
             <div class="fd-list__byline fd-list__byline--2-col">
-                <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
-                <div class="fd-list__byline-right">Second text item in Byline (Can be semantic (Status) or not)</div>
+                <div class="fd-list__byline-left">First text item in byline (standard text)</div>
+                <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
             </div>
         </div>
     </a> 
@@ -142,7 +144,7 @@ export const navigation = () => `<ul class="fd-list fd-list--byline fd-list--nav
   <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
     <a tabindex="0" class="fd-list__link" href="#"> 
       <div class="fd-list__content">
-        <div class="fd-list__title">Text-Only List Item</div>
+        <div class="fd-list__title">Text-only list item</div>
         <div class="fd-list__byline">Byline (description)</div>
       </div>
     </a> 
@@ -154,7 +156,7 @@ navigation.parameters = {
     docs: {
         iframeHeight: 355,
         storyDescription: `
-      Byline list items can contain navigation links. To add navigation, add the \`fd-list--navigation\` modifier class to the list and the \`fd-list__item--link\` modifier class to the list elements that contain links. All items should be navigable.
+Byline list items can contain navigation links. To add navigation, add the \`fd-list--navigation\` modifier class to the list and the \`fd-list__item--link\` modifier class to the list elements that contain links. All items should be navigable.
 `
     }
 };
@@ -173,7 +175,7 @@ export const navigationIndicator = () => `<ul class="fd-list fd-list--byline fd-
     <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#"> 
       <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
       <div class="fd-list__content">
-        <div class="fd-list__title">List Item With No Byline</div>
+        <div class="fd-list__title">List item with no byline</div>
       </div>
     </a> 
   </li>
@@ -181,10 +183,10 @@ export const navigationIndicator = () => `<ul class="fd-list fd-list--byline fd-
         <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
     style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
         <div class="fd-list__content">
-            <div class="fd-list__title">List Item With Two-Column Byline</div>
+            <div class="fd-list__title">List item with 2-column byline</div>
             <div class="fd-list__byline fd-list__byline--2-col">
-                <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
-                <div class="fd-list__byline-right">Second text item in Byline (Can be semantic (Status) or not)</div>
+                <div class="fd-list__byline-left">First text item in byline (standard text)</div>
+                <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
             </div>
         </div>
   </li>
@@ -197,7 +199,7 @@ navigationIndicator.parameters = {
     docs: {
         iframeHeight: 275,
         storyDescription: `
-      If only a subset of the list items is navigable you should indicate them with an arrow icon. To display navigation indicators, add the \`fd-list--navigation-indication\` modifier class to the unordered list element. Do not show indicators if all items are navigable. In this case, use a byline list with navigation (in the example above).
+If only a subset of the list items is navigable you should indicate them with an arrow icon. To display navigation indicators, add the \`fd-list--navigation-indication\` modifier class to the unordered list element. Do not show indicators if all items are navigable. In this case, use a byline list with navigation (in the example above).
 `
     }
 };
@@ -213,27 +215,27 @@ export const borderless = () => `<ul class="fd-list fd-list--no-border fd-list--
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
       <div class="fd-list__content">
-        <div class="fd-list__title">List Item With No Byline</div>
+        <div class="fd-list__title">list item with no byline</div>
       </div>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
     <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
 style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
     <div class="fd-list__content">
-        <div class="fd-list__title">List Item With Two-Column Byline</div>
+        <div class="fd-list__title">List item with 2-column byline</div>
         <div class="fd-list__byline fd-list__byline--2-col">
-            <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
-            <div class="fd-list__byline-right fd-list__byline-right--positive">Second text item in Byline - Semantic Positive</div>
+            <div class="fd-list__byline-left">First text item in byline (standard text)</div>
+            <div class="fd-list__byline-right fd-list__byline-right--positive">Second text item in byline (positive)</div>
         </div>
     </div>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--world"></i></span>
     <div class="fd-list__content">
-        <div class="fd-list__title">List Item With Two-Column Byline and Semantic Byline Second Item</div>
+        <div class="fd-list__title">List item with 2-column byline (with an additional semantic byline)</div>
         <div class="fd-list__byline fd-list__byline--2-col">
-            <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
-            <div class="fd-list__byline-right fd-list__byline-right--informative">Second text item in Byline - Semantic Informative</div>
+            <div class="fd-list__byline-left">First text item in byline (standard text)</div>
+            <div class="fd-list__byline-right fd-list__byline-right--informative">Second text item in byline (information)</div>
         </div>
     </div>
   </li>
@@ -248,7 +250,7 @@ borderless.parameters = {
     }
 };
 
-export const selection = () => `<h4 id="O09lk9">Standard Size</h4>
+export const selection = () => `<h4 id="O09lk9">Standard size</h4>
 <ul class="fd-list fd-list--selection fd-list--byline" role="listbox" aria-labelledby="O09lk9">
   <li role="option" tabindex="0" class="fd-list__item is-selected">
       <div class="fd-form-item fd-list__form-item">
@@ -269,10 +271,10 @@ export const selection = () => `<h4 id="O09lk9">Standard Size</h4>
     <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
 style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
     <div class="fd-list__content">
-        <div class="fd-list__title" id="O09lk2">List Item With Two-Column Byline</div>
+        <div class="fd-list__title" id="O09lk2">List item with 2-column byline</div>
         <div class="fd-list__byline fd-list__byline--2-col">
-            <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
-            <div class="fd-list__byline-right">Second text item in Byline (Can be semantic (Status) or not)</div>
+            <div class="fd-list__byline-left">First text item in byline (standard text)</div>
+            <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
         </div>
     </div>
   </li>
@@ -282,13 +284,13 @@ style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span
           <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6113C"></label>
       </div>
       <div class="fd-list__content">
-        <div class="fd-list__title" id="O09lk3">Text-Only List Item</div>
+        <div class="fd-list__title" id="O09lk3">Text-only list item</div>
         <div class="fd-list__byline">Byline (description)</div>
       </div>
   </li>
 </ul>
 
-<h4 id="O09lk8">Compact Size</h4>
+<h4 id="O09lk8">Compact size</h4>
 <ul class="fd-list fd-list--compact fd-list--selection fd-list--byline" role="listbox" aria-labelledby="O09lk8">
   <li role="option" tabindex="0" class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
@@ -309,10 +311,10 @@ style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span
     <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
 style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
     <div class="fd-list__content">
-        <div class="fd-list__title" id="O09lk5">List Item With Two-Column Byline</div>
+        <div class="fd-list__title" id="O09lk5">List item with 2-column byline</div>
         <div class="fd-list__byline fd-list__byline--2-col">
-            <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
-            <div class="fd-list__byline-right">Second text item in Byline (Can be semantic (Status) or not)</div>
+            <div class="fd-list__byline-left">First text item in byline (standard text)</div>
+            <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
         </div>
     </div>
   </li>
@@ -322,7 +324,7 @@ style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span
           <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6117N"></label>
       </div>
       <div class="fd-list__content">
-        <div class="fd-list__title" id="O09lk6">Text-Only List Item</div>
+        <div class="fd-list__title" id="O09lk6">Text-only list item</div>
         <div class="fd-list__byline">Byline (description)</div>
       </div>
   </li>
@@ -359,10 +361,10 @@ export const selectionAndNavigation = () => `<h4 id="Ki81L1">Standard Size</h4>
     <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
 style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
     <div class="fd-list__content">
-        <div class="fd-list__title" id="Ki81L3">List Item With Two-Column Byline</div>
+        <div class="fd-list__title" id="Ki81L3">List item with 2-column byline</div>
         <div class="fd-list__byline fd-list__byline--2-col">
-            <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
-            <div class="fd-list__byline-right">Second text item in Byline (Can be semantic (Status) or not)</div>
+            <div class="fd-list__byline-left">First text item in byline (standard text)</div>
+            <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
         </div>
     </div>
     </a>
@@ -374,14 +376,14 @@ style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span
     </div>
     <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
       <div class="fd-list__content">
-        <div class="fd-list__title" id="Ki81L4">Text-Only List Item</div>
+        <div class="fd-list__title" id="Ki81L4">Text-only list item</div>
         <div class="fd-list__byline">Byline (description)</div>
       </div>
     </a>
   </li>
 </ul>
 
-<h4 id="Ki81L5">Compact Size</h4>
+<h4 id="Ki81L5">Compact size</h4>
 <ul class="fd-list fd-list--compact fd-list--selection fd-list--byline fd-list--navigation fd-list--navigation-indication" role="listbox" aria-labelledby="Ki81L5">
   <li role="option" tabindex="-1" class="fd-list__item fd-list__item--link">
     <div class="fd-form-item fd-list__form-item">
@@ -404,10 +406,10 @@ style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span
     <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
 style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
     <div class="fd-list__content">
-        <div class="fd-list__title" id="Ki81L7">List Item With Two-Column Byline</div>
+        <div class="fd-list__title" id="Ki81L7">List item with 2-column byline</div>
         <div class="fd-list__byline fd-list__byline--2-col">
-            <div class="fd-list__byline-left">First text item in Byline (Standard text item)</div>
-            <div class="fd-list__byline-right">Second text item in Byline (Can be semantic (Status) or not)</div>
+            <div class="fd-list__byline-left">First text item in byline (standard text)</div>
+            <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
         </div>
     </div>
   </li>
@@ -418,7 +420,7 @@ style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span
     </div>
     <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
       <div class="fd-list__content">
-        <div class="fd-list__title" id="Ki81L8">Text-Only List Item</div>
+        <div class="fd-list__title" id="Ki81L8">Text-only list item</div>
         <div class="fd-list__byline">Byline (description)</div>
       </div>
     </a>
@@ -432,6 +434,7 @@ selectionAndNavigation.parameters = {
     docs: {
         iframeHeight: 625,
         storyDescription: `To display byline list items with selection and navigation, add these following modifier classes to the main element:
+
 - \`fd-list--byline\`
 - \`fd-list--selection\`
 - \`fd-list--navigation\`
