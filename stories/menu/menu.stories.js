@@ -7,7 +7,7 @@ The menu component is the listing structure with optional headers to create menu
 
 Commonly used as the contents when composing "dropdowns", "contextual menus", etc, when paired with the popover component.
 `,
-        components: ['button', 'icon', 'menu', 'title']
+        components: ['bar', 'button', 'dialog', 'icon', 'menu', 'title']
     }
 };
 
