@@ -1,223 +1,233 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Action Bar Contextual 1`] = `
-<div
-  class="fd-action-bar"
->
-  
-    
+<section>
   <div
-    class="fd-action-bar__header"
+    class="fd-action-bar"
   >
     
-        
-    <div
-      class="fd-action-bar__title"
-    >
-      
-            
-      <h1
-        class="fd-title fd-title--h3"
-      >
-        Page Title
-      </h1>
-      
-        
-    </div>
     
-        
     <div
-      class="fd-action-bar__actions"
+      class="fd-action-bar__header"
     >
       
-            
+        
       <div
-        class="fd-popover"
+        class="fd-action-bar__title"
       >
         
-                
-        <div
-          class="fd-popover__control"
+            
+        <h1
+          class="fd-title fd-title--h3"
         >
-          
-                    
-          <button
-            aria-controls="wgxzK859"
-            aria-expanded="false"
-            aria-haspopup="true"
-            aria-label="button"
-            class="fd-button fd-button--transparent fd-button--compact"
-          >
-            
-                        
-            <i
-              class="sap-icon--overflow"
-            />
-            
-                    
-          </button>
-          
-                
-        </div>
+          Page Title
+        </h1>
         
-                
-        <div
-          aria-hidden="true"
-          class="fd-popover__body fd-popover__body--right"
-          id="wgxzK859"
-        >
-          
-                    
-          <nav
-            class="fd-menu"
-            id=""
-          >
-            
-                        
-            <ul
-              class="fd-menu__list fd-menu__list--no-shadow"
-            >
-              
-                            
-              <li
-                class="fd-menu__item"
-              >
-                
-                                
-                <a
-                  class="fd-menu__link"
-                  href="#"
-                >
-                  
-                                    
-                  <span
-                    class="fd-menu__title"
-                  >
-                    Edit
-                  </span>
-                  
-                                
-                </a>
-                
-                            
-              </li>
-              
-                            
-              <li
-                class="fd-menu__item"
-              >
-                
-                                
-                <a
-                  class="fd-menu__link"
-                  href="#"
-                >
-                  
-                                    
-                  <span
-                    class="fd-menu__title"
-                  >
-                    Delete
-                  </span>
-                  
-                                
-                </a>
-                
-                            
-              </li>
-              
-                            
-              <li
-                class="fd-menu__item"
-              >
-                
-                                
-                <a
-                  class="fd-menu__link"
-                  href="#"
-                >
-                  
-                                    
-                  <span
-                    class="fd-menu__title"
-                  >
-                    Assign
-                  </span>
-                  
-                                
-                </a>
-                
-                            
-              </li>
-              
-                            
-              <li
-                class="fd-menu__item"
-              >
-                
-                                
-                <a
-                  class="fd-menu__link"
-                  href="#"
-                >
-                  
-                                    
-                  <span
-                    class="fd-menu__title"
-                  >
-                    Expire
-                  </span>
-                  
-                                
-                </a>
-                
-                            
-              </li>
-              
-                            
-              <li
-                class="fd-menu__item"
-              >
-                
-                                
-                <a
-                  class="fd-menu__link"
-                  href="#"
-                >
-                  
-                                    
-                  <span
-                    class="fd-menu__title"
-                  >
-                    Archive
-                  </span>
-                  
-                                
-                </a>
-                
-                            
-              </li>
-              
-                        
-            </ul>
-            
-                    
-          </nav>
-          
-               
-        </div>
         
-            
       </div>
       
         
+      <div
+        class="fd-action-bar__actions"
+      >
+        
+            
+        <div
+          class="fd-popover"
+        >
+          
+                
+          <div
+            class="fd-popover__control"
+          >
+            
+                    
+            <button
+              aria-controls="wgxzK859"
+              aria-expanded="false"
+              aria-haspopup="true"
+              aria-label="button"
+              class="fd-button fd-button--transparent fd-button--compact"
+              onclick="onPopoverClick('wgxzK859');"
+            >
+              
+                        
+              <i
+                class="sap-icon--overflow"
+              />
+              
+                    
+            </button>
+            
+                
+          </div>
+          
+                
+          <div
+            aria-hidden="true"
+            class="fd-popover__body fd-popover__body--right"
+            id="wgxzK859"
+          >
+            
+                    
+            <nav
+              class="fd-menu"
+              id=""
+            >
+              
+                        
+              <ul
+                class="fd-menu__list fd-menu__list--no-shadow"
+              >
+                
+                            
+                <li
+                  class="fd-menu__item"
+                >
+                  
+                                
+                  <a
+                    class="fd-menu__link"
+                    href="#"
+                  >
+                    
+                                    
+                    <span
+                      class="fd-menu__title"
+                    >
+                      Edit
+                    </span>
+                    
+                                
+                  </a>
+                  
+                            
+                </li>
+                
+                            
+                <li
+                  class="fd-menu__item"
+                >
+                  
+                                
+                  <a
+                    class="fd-menu__link"
+                    href="#"
+                  >
+                    
+                                    
+                    <span
+                      class="fd-menu__title"
+                    >
+                      Delete
+                    </span>
+                    
+                                
+                  </a>
+                  
+                            
+                </li>
+                
+                            
+                <li
+                  class="fd-menu__item"
+                >
+                  
+                                
+                  <a
+                    class="fd-menu__link"
+                    href="#"
+                  >
+                    
+                                    
+                    <span
+                      class="fd-menu__title"
+                    >
+                      Assign
+                    </span>
+                    
+                                
+                  </a>
+                  
+                            
+                </li>
+                
+                            
+                <li
+                  class="fd-menu__item"
+                >
+                  
+                                
+                  <a
+                    class="fd-menu__link"
+                    href="#"
+                  >
+                    
+                                    
+                    <span
+                      class="fd-menu__title"
+                    >
+                      Expire
+                    </span>
+                    
+                                
+                  </a>
+                  
+                            
+                </li>
+                
+                            
+                <li
+                  class="fd-menu__item"
+                >
+                  
+                                
+                  <a
+                    class="fd-menu__link"
+                    href="#"
+                  >
+                    
+                                    
+                    <span
+                      class="fd-menu__title"
+                    >
+                      Archive
+                    </span>
+                    
+                                
+                  </a>
+                  
+                            
+                </li>
+                
+                        
+              </ul>
+              
+                    
+            </nav>
+            
+               
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
     </div>
     
-    
+
   </div>
   
 
-</div>
+  <div
+    style="min-height: 200px"
+  />
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Action Bar Default 1`] = `
@@ -402,230 +412,240 @@ exports[`Storyshots Components/Action Bar Descriptive 1`] = `
 `;
 
 exports[`Storyshots Components/Action Bar Mobile 1`] = `
-<div
-  style="width:319px;"
->
-  
-    
+<section>
   <div
-    class="fd-action-bar fd-action-bar--s"
+    style="width:319px;"
   >
-     
-        
+    
+    
     <div
-      class="fd-action-bar__header"
+      class="fd-action-bar fd-action-bar--s"
     >
-      
-            
+       
+        
       <div
-        class="fd-action-bar__back"
+        class="fd-action-bar__header"
       >
         
-                
-        <button
-          aria-label="Go Back"
-          class="fd-button fd-button--transparent"
-        >
-          
-                    
-          <i
-            class="sap-icon--navigation-left-arrow"
-            role="presentation"
-          />
-          
-                
-        </button>
-        
             
-      </div>
-      
-            
-      <div
-        class="fd-action-bar__title"
-      >
-        
-                
-        <h1
-          class="fd-title fd-title--h3"
-        >
-          Action Bar with description and back button
-        </h1>
-        
-            
-      </div>
-      
-            
-      <div
-        class="fd-action-bar__actions"
-      >
-        
-                
         <div
-          class="fd-popover"
+          class="fd-action-bar__back"
         >
           
-                    
-          <div
-            class="fd-popover__control"
+                
+          <button
+            aria-label="Go Back"
+            class="fd-button fd-button--transparent"
           >
             
-                        
-            <button
-              aria-controls="wgxzK85"
-              aria-expanded="false"
-              aria-haspopup="true"
-              aria-label="button"
-              class="fd-button fd-button--transparent"
-            >
-              
-                            
-              <i
-                class="sap-icon--overflow"
-              />
-              
-                        
-            </button>
-            
                     
-          </div>
+            <i
+              class="sap-icon--navigation-left-arrow"
+              role="presentation"
+            />
+            
+                
+          </button>
           
-                    
-          <div
-            aria-hidden="true"
-            class="fd-popover__body"
-            id="wgxzK85"
-          >
             
-                        
-            <nav
-              class="fd-menu"
-              id=""
-            >
-              
-                            
-              <ul
-                class="fd-menu__list fd-menu__list--no-shadow"
-              >
-                
-                                
-                <li
-                  class="fd-menu__item"
-                >
-                  
-                                    
-                  <a
-                    class="fd-menu__link"
-                    href="#"
-                  >
-                    
-                                        
-                    <span
-                      class="fd-menu__title"
-                    >
-                      Option 1
-                    </span>
-                    
-                                    
-                  </a>
-                  
-                                
-                </li>
-                
-                                
-                <li
-                  class="fd-menu__item"
-                >
-                  
-                                    
-                  <a
-                    class="fd-menu__link"
-                    href="#"
-                  >
-                    
-                                        
-                    <span
-                      class="fd-menu__title"
-                    >
-                      Option 2
-                    </span>
-                    
-                                    
-                  </a>
-                  
-                                
-                </li>
-                
-                                
-                <li
-                  class="fd-menu__item"
-                >
-                  
-                                    
-                  <a
-                    class="fd-menu__link"
-                    href="#"
-                  >
-                    
-                                        
-                    <span
-                      class="fd-menu__title"
-                    >
-                      Option 3
-                    </span>
-                    
-                                    
-                  </a>
-                  
-                                
-                </li>
-                
-                                
-                <li
-                  class="fd-menu__item"
-                >
-                  
-                                    
-                  <a
-                    class="fd-menu__link"
-                    href="#"
-                  >
-                    
-                                        
-                    <span
-                      class="fd-menu__title"
-                    >
-                      Option 4
-                    </span>
-                    
-                                    
-                  </a>
-                  
-                                
-                </li>
-                
-                            
-              </ul>
-              
-                        
-            </nav>
-            
-                    
-          </div>
-          
-                
         </div>
         
             
+        <div
+          class="fd-action-bar__title"
+        >
+          
+                
+          <h1
+            class="fd-title fd-title--h3"
+          >
+            Action Bar with description and back button
+          </h1>
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-action-bar__actions"
+        >
+          
+                
+          <div
+            class="fd-popover"
+          >
+            
+                    
+            <div
+              class="fd-popover__control"
+            >
+              
+                        
+              <button
+                aria-controls="wgxzK85"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="button"
+                class="fd-button fd-button--transparent"
+                onclick="onPopoverClick('wgxzK85');"
+              >
+                
+                            
+                <i
+                  class="sap-icon--overflow"
+                />
+                
+                        
+              </button>
+              
+                    
+            </div>
+            
+                    
+            <div
+              aria-hidden="true"
+              class="fd-popover__body"
+              id="wgxzK85"
+            >
+              
+                        
+              <nav
+                class="fd-menu"
+                id=""
+              >
+                
+                            
+                <ul
+                  class="fd-menu__list fd-menu__list--no-shadow"
+                >
+                  
+                                
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                    
+                    <a
+                      class="fd-menu__link"
+                      href="#"
+                    >
+                      
+                                        
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Option 1
+                      </span>
+                      
+                                    
+                    </a>
+                    
+                                
+                  </li>
+                  
+                                
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                    
+                    <a
+                      class="fd-menu__link"
+                      href="#"
+                    >
+                      
+                                        
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Option 2
+                      </span>
+                      
+                                    
+                    </a>
+                    
+                                
+                  </li>
+                  
+                                
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                    
+                    <a
+                      class="fd-menu__link"
+                      href="#"
+                    >
+                      
+                                        
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Option 3
+                      </span>
+                      
+                                    
+                    </a>
+                    
+                                
+                  </li>
+                  
+                                
+                  <li
+                    class="fd-menu__item"
+                  >
+                    
+                                    
+                    <a
+                      class="fd-menu__link"
+                      href="#"
+                    >
+                      
+                                        
+                      <span
+                        class="fd-menu__title"
+                      >
+                        Option 4
+                      </span>
+                      
+                                    
+                    </a>
+                    
+                                
+                  </li>
+                  
+                            
+                </ul>
+                
+                        
+              </nav>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
       </div>
       
-        
+    
     </div>
     
-    
+
   </div>
   
 
-</div>
+  <div
+    style="min-height: 200px"
+  />
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Action Bar No back button 1`] = `
