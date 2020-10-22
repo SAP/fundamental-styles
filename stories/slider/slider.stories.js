@@ -2,7 +2,25 @@ export default {
     title: 'Components/Slider',
     parameters: {
         description: `A slider is a control that enables the user to adjust single values within a specified numerical range. A range slider is a user interface control that enables the user to select a value range within a predefined numerical
-interval.`,
+interval.
+
+
+## Accessibility
+
+To ensure that the slider is accessible, a div element with class <code class="docs-code">fd-slider\\_\\_handle</code> must have following  ARIA attributes: 
+
+- <code class="docs-code">tabindex="0"</code>
+- <code class="docs-code">role="slider"</code>
+- <code class="docs-code">aria-label</code> —  string that labels the element
+- <code class="docs-code">aria-valuemin</code> — decimal value representing the minimum allowed value of the slider
+- <code class="docs-code">aria-valuemax</code> — decimal value representing the maximum allowed value of the slider
+- <code class="docs-code">aria-valuenow</code> — decimal value representing the current value of the slider
+- <code class="docs-code">aria-valuetext</code> — string representation of the current value if needed (e.g., 20$, 33°C)
+
+The same rules apply for range slider, in this case both <code class="docs-code">fd-slider\\_\\_handle</code> elements must have ARIA attributes described above
+
+Also, it should be possible to change slider's value by pressing arrow keys <code class="docs-code">Up</code>, <code class="docs-code">Down</code>, <code class="docs-code">Left</code>, <code class="docs-code">Right</code>
+`,
         components: ['slider']
     },
     tags: ['f3', 'theme']
