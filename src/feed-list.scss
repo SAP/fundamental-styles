@@ -9,6 +9,7 @@ $block: #{$fd-namespace}-feed-list;
   $fd-feed-list-margin-end: 0;
   $fd-feed-list-padding-group: 0.75rem;
   $fd-feed-list-padding-action-small: 0.75rem;
+  $fd-feed-list-actions-negative: -1rem;
   $fd-feed-list-icon-color: var(--sapContent_IconColor);
 
   @include fd-reset();
@@ -70,12 +71,12 @@ $block: #{$fd-namespace}-feed-list;
     margin: 0.5rem;
     position: relative;
     top: -1rem;
-    right: -1rem;
+    right: $fd-feed-list-actions-negative;
 
     @include fd-rtl() {
       float: left;
       right: 1rem;
-      left: -1rem;
+      left: $fd-feed-list-actions-negative;
     }
   }
 
