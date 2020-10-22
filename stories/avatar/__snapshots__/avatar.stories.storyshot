@@ -165,7 +165,7 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
     aria-label="John Doe"
     class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
     role="presentation"
-    style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
+    style="background-image: url('http://picsum.photos/id/1018/400')"
   />
   
 
@@ -173,7 +173,7 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
     aria-label="John Doe"
     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail"
     role="presentation"
-    style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
+    style="background-image: url('http://picsum.photos/id/1018/400')"
   />
   
 
@@ -181,7 +181,7 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
     aria-label="John Doe"
     class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--thumbnail"
     role="presentation"
-    style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
+    style="background-image: url('http://picsum.photos/id/1018/400')"
   />
   
 
@@ -189,7 +189,7 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
     aria-label="John Doe"
     class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--thumbnail"
     role="presentation"
-    style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
+    style="background-image: url('http://picsum.photos/id/1018/400')"
   />
   
 
@@ -197,7 +197,7 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
     aria-label="John Doe"
     class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail"
     role="presentation"
-    style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
+    style="background-image: url('http://picsum.photos/id/1018/400')"
   />
   
 

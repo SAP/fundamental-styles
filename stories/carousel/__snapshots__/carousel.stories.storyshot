@@ -1119,7 +1119,7 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
                 
         <img
           alt="Carousel Image 4"
-          src="https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg"
+          src="http://picsum.photos/id/1018/400"
         />
         
             
