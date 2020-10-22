@@ -180,6 +180,7 @@ $block: #{$fd-namespace}-menu;
     color: var(--sapList_TextColor);
     font-size: var(--sapFontSize);
     font-family: $fd-menu-title-font-family;
+    text-shadow: var(--fdMenu_Text_Shadow);
   }
 
   &__addon-before,
@@ -194,6 +195,7 @@ $block: #{$fd-namespace}-menu;
     height: 1.25rem;
     font-size: var(--sapFontLargeSize);
     background-color: transparent;
+    text-shadow: var(--fdMenu_Text_Shadow);
   }
 
   &__addon-before {

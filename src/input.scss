@@ -18,6 +18,7 @@ $block: #{$fd-namespace}-input;
   z-index: 1;
   cursor: text;
   overflow: hidden;
+  text-shadow: var(--fdInput_Text_Shadow);
 
   &::-ms-clear {
     display: none;

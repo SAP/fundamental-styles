@@ -180,11 +180,12 @@ $fd-calendar-special-days: (
 }
 
 %fd-calendar-item-current {
-  border: $fd-calendar-item-current-border;
+  border: $fd-calendar-item-current-border !important;
 }
 
 %fd-calendar-item-active {
   background-color: $fd-calendar-item-active-background;
+  border: var(--fdCalendar_Active_Item_Border);
 
   @include fd-hover() {
     background-color: $fd-calendar-item-active-background-hover;
@@ -229,6 +230,7 @@ $fd-calendar-special-days: (
   height: 100%;
   color: $fd-calendar-item-color;
   font-size: $fd-calendar-item-font-size;
+  text-shadow: var(--fdCalendar_Text_Shadow);
 }
 
 .#{$block} {

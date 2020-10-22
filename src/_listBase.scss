@@ -6,6 +6,7 @@
   position: relative;
   list-style: none;
   width: 100%;
+  text-shadow: var(--fdListBase_Text_Shadow);
 
   &__item,
   &__group-header,
@@ -49,6 +50,7 @@
         color: var(--sapButton_TextColor);
         pointer-events: all;
         cursor: pointer;
+        text-shadow: var(--fdListBase_Text_Shadow);
 
         @include fd-focus() {
           outline-style: dotted;
