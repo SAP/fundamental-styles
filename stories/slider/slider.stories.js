@@ -12,6 +12,7 @@ To ensure that the slider is accessible, a div element with class <code class="d
 - <code class="docs-code">tabindex="0"</code>
 - <code class="docs-code">role="slider"</code>
 - <code class="docs-code">aria-label</code> —  string that labels the element
+- <code class="docs-code">aria-labelledby</code> — an ID reference to a visible element that labels the slider, used if <code class="docs-code">aria-label</code> isn't provided 
 - <code class="docs-code">aria-valuemin</code> — decimal value representing the minimum allowed value of the slider
 - <code class="docs-code">aria-valuemax</code> — decimal value representing the maximum allowed value of the slider
 - <code class="docs-code">aria-valuenow</code> — decimal value representing the current value of the slider
