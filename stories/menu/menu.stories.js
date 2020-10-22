@@ -12,7 +12,7 @@ Commonly used as the contents when composing "dropdowns", "contextual menus", et
 };
 
 
-export const desktopAndTablet = () => `   
+export const desktopAndTablet = () => `
 <label class="fd-form-label">Combobox Tablet Cozy Mode - default mode</label><br/><br/>
 
 <nav aria-label="fd-menu-nav" class="fd-menu">
@@ -40,7 +40,7 @@ export const desktopAndTablet = () => `
     </ul>
 </nav>
 
-<br> 
+<br>
 <label class="fd-form-label">Combobox Desktop Compact Mode</label><br/><br/>
 
 <nav class="fd-menu fd-menu--compact">
@@ -95,7 +95,7 @@ export const mobileCozyMode = () => `<div style="width: 50%; display: inline-blo
                         <a class="fd-menu__link" href="#" role="menuitem">
                             <span class="fd-menu__addon-before"><i class="sap-icon--grid" role="presentation"></i></span>
                             <span class="fd-menu__title">Option 1</span>
-                            <span class="fd-menu__addon-after"><i class="sap-icon--wrench" role="presentation"></i></span> 
+                            <span class="fd-menu__addon-after"><i class="sap-icon--wrench" role="presentation"></i></span>
                         </a>
                     </li>
                     <li class="fd-menu__item" role="presentation">
@@ -154,19 +154,19 @@ export const mobileCozyMode = () => `<div style="width: 50%; display: inline-blo
                     <li class="fd-menu__item" role="presentation">
                         <a class="fd-menu__link" href="#" role="menuitem">
                             <span class="fd-menu__title">Sub-option 1</span>
-                        </a>                    
+                        </a>
                     </li>
-                    <li class="fd-menu__item" role="presentation">                    
+                    <li class="fd-menu__item" role="presentation">
                         <a class="fd-menu__link" href="#" role="menuitem">
                             <span class="fd-menu__title">Sub-option 2</span>
                         </a>
                     </li>
-                    <li class="fd-menu__item" role="presentation">                    
+                    <li class="fd-menu__item" role="presentation">
                         <a class="fd-menu__link" href="#" role="menuitem">
                             <span class="fd-menu__title">Sub-option 3</span>
                         </a>
                     </li>
-                    <li class="fd-menu__item" role="presentation">                    
+                    <li class="fd-menu__item" role="presentation">
                         <a class="fd-menu__link" href="#" role="menuitem">
                             <span class="fd-menu__title">Sub-option 4</span>
                         </a>
@@ -277,29 +277,29 @@ export const differentStates = () => `<div style="width: 50%; display: inline-bl
             <li class="fd-menu__item" role="presentation">
                 <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 1</span>
-                </a>                    
+                </a>
             </li>
-            <li class="fd-menu__item" role="presentation">                    
+            <li class="fd-menu__item" role="presentation">
                 <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 2</span>
                 </a>
             </li>
-            <li class="fd-menu__item" role="presentation">                    
+            <li class="fd-menu__item" role="presentation">
                 <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 3</span>
                 </a>
             </li>
-            <li class="fd-menu__item" role="presentation">                    
+            <li class="fd-menu__item" role="presentation">
                 <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 4</span>
                 </a>
             </li>
-            <li class="fd-menu__item" role="presentation">                    
+            <li class="fd-menu__item" role="presentation">
                 <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 5</span>
                 </a>
             </li>
-            <li class="fd-menu__item" role="presentation">                    
+            <li class="fd-menu__item" role="presentation">
                 <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__title">Option 6</span>
                 </a>
@@ -340,7 +340,7 @@ export const menuIcon = () => `<nav class="fd-menu">
                     <span class="fd-menu__addon-before"><i class="sap-icon--accept" role="presentation"></i></span>
                     <span class="fd-menu__title">Option 2</span>
                     <span class="fd-menu__addon-after"><i class="sap-icon--history" role="presentation"></i></span>
-                </a>            
+                </a>
         </li>
         <li class="fd-menu__item" role="presentation">
                 <a class="fd-menu__link" href="#" role="menuitem">
@@ -349,7 +349,7 @@ export const menuIcon = () => `<nav class="fd-menu">
                     <span class="fd-menu__addon-after"><i class="sap-icon--lightbulb" role="presentation"></i></span>
                 </a>
         </li>
-        <li class="fd-menu__item" role="presentation">            
+        <li class="fd-menu__item" role="presentation">
                 <a class="fd-menu__link" href="#" role="menuitem">
                     <span class="fd-menu__addon-before"><i class="sap-icon--cart" role="presentation"></i></span>
                     <span class="fd-menu__title">Option 4</span>
@@ -376,34 +376,40 @@ According to Fiori3 design shortcuts should be on desktop devices.`
 
 export const withSubmenu = () => `<nav class="fd-menu">
     <ul class="fd-menu__list" role="menu">
-        <li class="fd-menu__item" role="presentation">            
+        <li class="fd-menu__item" role="presentation">
             <a class="fd-menu__link" href="#" role="menuitem">
-                <span class="fd-menu__title">Option 1</span>  
-            </a>          
+                <span class="fd-menu__title">Option 1</span>
+            </a>
         </li>
         <li class="fd-menu__item" role="presentation">
         <!-- For submenu, have the parent menu item in its own span so that its states do not override the submenu states -->
-            <a class="fd-menu__link has-child" aria-controls="EX100M2" href="#" aria-haspopup="true" role="menuitem" onclick = onPopoverClick('EX100M2')>
-                <span class="fd-menu__title">Option 2 with submenu</span>
-                <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span> 
-            </a>       
-            <ul class="fd-menu__sublist" id="EX100M2" aria-hidden="true" role="menu">
+            <span
+                class="fd-menu__link has-child is-expanded"
+                aria-controls="EX100M2"
+                aria-expanded="true"
+                aria-haspopup="true"
+                role="menuitem"
+                onclick = onPopoverClick('EX100M2')>
+                    <span class="fd-menu__title">Option 2 with submenu</span>
+                    <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>
+            </span>
+            <ul class="fd-menu__sublist" id="EX100M2" aria-hidden="false" role="menu">
                 <li class="fd-menu__item" role="presentation">
                     <a class="fd-menu__link" href="#" role="menuitem">
                         <span class="fd-menu__title">Sub-option 1</span>
-                    </a>                    
+                    </a>
                 </li>
-                <li class="fd-menu__item" role="presentation">                    
+                <li class="fd-menu__item" role="presentation">
                     <a class="fd-menu__link" href="#" role="menuitem">
                         <span class="fd-menu__title">Sub-option 2</span>
                     </a>
                 </li>
-                <li class="fd-menu__item" role="presentation">                    
+                <li class="fd-menu__item" role="presentation">
                     <a class="fd-menu__link" href="#" role="menuitem">
                         <span class="fd-menu__title">Sub-option 3</span>
                     </a>
                 </li>
-                <li class="fd-menu__item" role="presentation">                    
+                <li class="fd-menu__item" role="presentation">
                     <a class="fd-menu__link" href="#" role="menuitem">
                         <span class="fd-menu__title">Sub-option 4</span>
                     </a>
@@ -411,16 +417,16 @@ export const withSubmenu = () => `<nav class="fd-menu">
             </ul>
         </li>
         <span class="fd-menu__separator"></span>
-        <li class="fd-menu__item" role="presentation">            
+        <li class="fd-menu__item" role="presentation">
             <a class="fd-menu__link" href="#" role="menuitem">
                 <span class="fd-menu__title">Option 3</span>
             </a>
         </li>
-        <li class="fd-menu__item" role="presentation">            
+        <li class="fd-menu__item" role="presentation">
             <a class="fd-menu__link" href="#" role="menuitem">
                 <span class="fd-menu__title">Option 4</span>
             </a>
-        </li>        
+        </li>
     </ul>
 </nav>
 `;
