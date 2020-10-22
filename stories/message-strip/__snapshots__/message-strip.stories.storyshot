@@ -105,77 +105,7 @@ exports[`Storyshots Components/Message Strip Information 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Message Strip Success 1`] = `
-<div
-  class="fd-message-strip fd-message-strip--success fd-message-strip--dismissible"
-  id="ulr5z216"
-  role="alert"
->
-  
-  
-  <p
-    class="fd-message-strip__text"
-  >
-    
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
-  
-  </p>
-  
-  
-  <button
-    aria-controls="ulr5z216"
-    aria-label="Close"
-    class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close"
-  >
-    
-    
-    <i
-      class="sap-icon--decline"
-    />
-    
-  
-  </button>
-  
-
-</div>
-`;
-
-exports[`Storyshots Components/Message Strip Warning 1`] = `
-<div
-  class="fd-message-strip fd-message-strip--warning fd-message-strip--dismissible"
-  id="fwYq4606"
-  role="alert"
->
-  
-  
-  <p
-    class="fd-message-strip__text"
-  >
-    
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
-  
-  </p>
-  
-  
-  <button
-    aria-controls="fwYq4606"
-    aria-label="Close"
-    class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close"
-  >
-    
-    
-    <i
-      class="sap-icon--decline"
-    />
-    
-  
-  </button>
-  
-
-</div>
-`;
-
-exports[`Storyshots Components/Message Strip Without Icon 1`] = `
+exports[`Storyshots Components/Message Strip No icon 1`] = `
 <section>
   <div
     class="fd-message-strip fd-message-strip--information fd-message-strip--no-icon fd-message-strip--dismissible"
@@ -329,4 +259,74 @@ exports[`Storyshots Components/Message Strip Without Icon 1`] = `
   
 
 </section>
+`;
+
+exports[`Storyshots Components/Message Strip Success 1`] = `
+<div
+  class="fd-message-strip fd-message-strip--success fd-message-strip--dismissible"
+  id="ulr5z216"
+  role="alert"
+>
+  
+  
+  <p
+    class="fd-message-strip__text"
+  >
+    
+    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
+  
+  </p>
+  
+  
+  <button
+    aria-controls="ulr5z216"
+    aria-label="Close"
+    class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close"
+  >
+    
+    
+    <i
+      class="sap-icon--decline"
+    />
+    
+  
+  </button>
+  
+
+</div>
+`;
+
+exports[`Storyshots Components/Message Strip Warning 1`] = `
+<div
+  class="fd-message-strip fd-message-strip--warning fd-message-strip--dismissible"
+  id="fwYq4606"
+  role="alert"
+>
+  
+  
+  <p
+    class="fd-message-strip__text"
+  >
+    
+    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
+  
+  </p>
+  
+  
+  <button
+    aria-controls="fwYq4606"
+    aria-label="Close"
+    class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close"
+  >
+    
+    
+    <i
+      class="sap-icon--decline"
+    />
+    
+  
+  </button>
+  
+
+</div>
 `;
