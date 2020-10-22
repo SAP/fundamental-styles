@@ -15,7 +15,7 @@ Commonly used as the contents when composing "dropdowns", "contextual menus", et
 export const desktopAndTablet = () => `
 <label class="fd-form-label">Combobox Tablet Cozy Mode - default mode</label><br/><br/>
 
-<nav aria-label="fd-menu-nav" class="fd-menu">
+<nav aria-label="navigation menu" class="fd-menu">
     <ul class="fd-menu__list" role="menu">
         <li class="fd-menu__item" role="presentation">
             <a class="fd-menu__link" href="#" role="menuitem">
@@ -78,18 +78,27 @@ desktopAndTablet.parameters = {
 };
 
 export const mobileCozyMode = () => `<div style="width: 50%; display: inline-block" class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
-    <div class="fd-dialog__content fd-dialog__content--mobile">
+    <section
+        aria-labelledby="exampleSubMenuHeader"
+        class="fd-dialog__content fd-dialog__content--mobile"
+        role="dialog">
         <header aria-label="bar-header" class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h3 class="fd-title fd-title--h5">
+                    <h3
+                        id="exampleSubMenuHeader"
+                        class="fd-title fd-title--h5">
                         Example Submenu
                     </h3>
                 </div>
             </div>
         </header>
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
-             <nav tabindex="-1" class="fd-menu fd-menu--mobile" aria-hidden="true" id="parent-menu">
+             <nav
+                aria-label="example sub-menu options"
+                class="fd-menu fd-menu--mobile"
+                id="parent-menu"
+                tabindex="-1">
                 <ul class="fd-menu__list" role="menu">
                     <li class="fd-menu__item" role="presentation">
                         <a class="fd-menu__link" href="#" role="menuitem">
@@ -122,34 +131,47 @@ export const mobileCozyMode = () => `<div style="width: 50%; display: inline-blo
                 </ul>
             </nav>
         </div>
-       <footer aria-label="bar-footer" class="fd-dialog__footer fd-bar fd-bar--cozy fd-bar--footer">
+       <footer class="fd-dialog__footer fd-bar fd-bar--cozy fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button aria-label="fd-button" role="button" class="fd-button fd-button--light fd-dialog__decisive-button">Cancel</button>
+                    <button
+                        aria-label="close options dialog"
+                        class="fd-button fd-button--light fd-dialog__decisive-button">
+                        Cancel
+                    </button>
                 </div>
             </div>
         </footer>
-    </div>
+    </section>
 </div>
 
 <div style="display: inline-block; width: auto;" class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example-inner">
-    <div class="fd-dialog__content fd-dialog__content--mobile">
+    <section
+        aria-labelledby="subOptionHeader"
+        class="fd-dialog__content fd-dialog__content--mobile"
+        role="dialog">
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                <button aria-label="fd-button" role="button" class="fd-button fd-button--transparent">
+                <button
+                    aria-label="Show main menu options"
+                    class="fd-button fd-button--transparent">
                     <i class="sap-icon--navigation-left-arrow" role="presentation"></i>
                 </button>
             </div>
             <div class="fd-bar__element">
-                    <h3 class="fd-title fd-title--h5">
+                    <h3
+                        class="fd-title fd-title--h5"
+                        id="subOptionHeader">
                         Option 2
                     </h3>
                 </div>
             </div>
         </header>
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
-             <nav class="fd-menu fd-menu--mobile">
+             <nav
+                aria-label="option 2 sub-options"
+                class="fd-menu fd-menu--mobile">
                 <ul class="fd-menu__sublist" role="menu">
                     <li class="fd-menu__item" role="presentation">
                         <a class="fd-menu__link" href="#" role="menuitem">
@@ -177,11 +199,15 @@ export const mobileCozyMode = () => `<div style="width: 50%; display: inline-blo
        <footer class="fd-dialog__footer fd-bar fd-bar--cozy fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button aria-label="fd-button" role="button" class="fd-button fd-button--light fd-dialog__decisive-button">Cancel</button>
+                    <button
+                        aria-label="close options dialog"
+                        class="fd-button fd-button--light fd-dialog__decisive-button">
+                        Cancel
+                    </button>
                 </div>
             </div>
         </footer>
-    </div>
+    </section>
 </div>
 `;
 
@@ -432,7 +458,7 @@ export const withSubmenu = () => `<nav class="fd-menu">
 `;
 withSubmenu.parameters = {
     docs: {
-        iframeHeight: 220,
+        iframeHeight: 400,
         storyDescription: `
 Menu with an additional submenu that can be used for items that can be further grouped under a level but not necessarily visible to user always.
 
