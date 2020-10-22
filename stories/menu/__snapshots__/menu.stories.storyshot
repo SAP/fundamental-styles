@@ -1554,254 +1554,263 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
 `;
 
 exports[`Storyshots Components/Menu With Submenu 1`] = `
-<nav
-  class="fd-menu"
->
-  
-    
-  <ul
-    class="fd-menu__list"
-    role="menu"
+<section>
+  <nav
+    class="fd-menu"
   >
     
-        
-    <li
-      class="fd-menu__item"
-      role="presentation"
+    
+    <ul
+      class="fd-menu__list"
+      role="menu"
     >
       
-            
-      <a
-        class="fd-menu__link"
-        href="#"
-        role="menuitem"
+        
+      <li
+        class="fd-menu__item"
+        role="presentation"
       >
         
-                
-        <span
-          class="fd-menu__title"
+            
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
         >
-          Option 1
+          
+                
+          <span
+            class="fd-menu__title"
+          >
+            Option 1
+          </span>
+          
+            
+        </a>
+        
+        
+      </li>
+      
+        
+      <li
+        class="fd-menu__item"
+        role="presentation"
+      >
+        
+        
+        <!-- For submenu, have the parent menu item in its own span so that its states do not override the submenu states -->
+        
+            
+        <span
+          aria-controls="EX100M2"
+          aria-expanded="true"
+          aria-haspopup="true"
+          class="fd-menu__link has-child is-expanded"
+          onclick="onPopoverClick('EX100M2')"
+          role="menuitem"
+        >
+          
+                    
+          <span
+            class="fd-menu__title"
+          >
+            Option 2 with submenu
+          </span>
+          
+                    
+          <span
+            class="fd-menu__addon-after fd-menu__addon-after--submenu"
+          />
+          
+            
         </span>
         
             
-      </a>
-      
-        
-    </li>
-    
-        
-    <li
-      class="fd-menu__item"
-      role="presentation"
-    >
-      
-        
-      <!-- For submenu, have the parent menu item in its own span so that its states do not override the submenu states -->
-      
+        <ul
+          aria-hidden="false"
+          class="fd-menu__sublist"
+          id="EX100M2"
+          role="menu"
+        >
+          
+                
+          <li
+            class="fd-menu__item"
+            role="presentation"
+          >
             
+                    
+            <a
+              class="fd-menu__link"
+              href="#"
+              role="menuitem"
+            >
+              
+                        
+              <span
+                class="fd-menu__title"
+              >
+                Sub-option 1
+              </span>
+              
+                    
+            </a>
+            
+                
+          </li>
+          
+                
+          <li
+            class="fd-menu__item"
+            role="presentation"
+          >
+            
+                    
+            <a
+              class="fd-menu__link"
+              href="#"
+              role="menuitem"
+            >
+              
+                        
+              <span
+                class="fd-menu__title"
+              >
+                Sub-option 2
+              </span>
+              
+                    
+            </a>
+            
+                
+          </li>
+          
+                
+          <li
+            class="fd-menu__item"
+            role="presentation"
+          >
+            
+                    
+            <a
+              class="fd-menu__link"
+              href="#"
+              role="menuitem"
+            >
+              
+                        
+              <span
+                class="fd-menu__title"
+              >
+                Sub-option 3
+              </span>
+              
+                    
+            </a>
+            
+                
+          </li>
+          
+                
+          <li
+            class="fd-menu__item"
+            role="presentation"
+          >
+            
+                    
+            <a
+              class="fd-menu__link"
+              href="#"
+              role="menuitem"
+            >
+              
+                        
+              <span
+                class="fd-menu__title"
+              >
+                Sub-option 4
+              </span>
+              
+                    
+            </a>
+            
+                
+          </li>
+          
+            
+        </ul>
+        
+        
+      </li>
+      
+        
       <span
-        aria-controls="EX100M2"
-        aria-expanded="true"
-        aria-haspopup="true"
-        class="fd-menu__link has-child is-expanded"
-        onclick="onPopoverClick('EX100M2')"
-        role="menuitem"
+        class="fd-menu__separator"
+      />
+      
+        
+      <li
+        class="fd-menu__item"
+        role="presentation"
       >
         
-                    
-        <span
-          class="fd-menu__title"
+            
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
         >
-          Option 2 with submenu
-        </span>
-        
-                    
-        <span
-          class="fd-menu__addon-after fd-menu__addon-after--submenu"
-        />
-        
+          
+                
+          <span
+            class="fd-menu__title"
+          >
+            Option 3
+          </span>
+          
             
-      </span>
+        </a>
+        
+        
+      </li>
       
-            
-      <ul
-        aria-hidden="false"
-        class="fd-menu__sublist"
-        id="EX100M2"
-        role="menu"
+        
+      <li
+        class="fd-menu__item"
+        role="presentation"
       >
         
-                
-        <li
-          class="fd-menu__item"
-          role="presentation"
+            
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
         >
           
-                    
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
+                
+          <span
+            class="fd-menu__title"
           >
-            
-                        
-            <span
-              class="fd-menu__title"
-            >
-              Sub-option 1
-            </span>
-            
-                    
-          </a>
+            Option 4
+          </span>
           
-                
-        </li>
+            
+        </a>
         
-                
-        <li
-          class="fd-menu__item"
-          role="presentation"
-        >
-          
-                    
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
-          >
-            
-                        
-            <span
-              class="fd-menu__title"
-            >
-              Sub-option 2
-            </span>
-            
-                    
-          </a>
-          
-                
-        </li>
         
-                
-        <li
-          class="fd-menu__item"
-          role="presentation"
-        >
-          
-                    
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
-          >
-            
-                        
-            <span
-              class="fd-menu__title"
-            >
-              Sub-option 3
-            </span>
-            
-                    
-          </a>
-          
-                
-        </li>
-        
-                
-        <li
-          class="fd-menu__item"
-          role="presentation"
-        >
-          
-                    
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
-          >
-            
-                        
-            <span
-              class="fd-menu__title"
-            >
-              Sub-option 4
-            </span>
-            
-                    
-          </a>
-          
-                
-        </li>
-        
-            
-      </ul>
+      </li>
       
-        
-    </li>
     
-        
-    <span
-      class="fd-menu__separator"
-    />
+    </ul>
     
-        
-    <li
-      class="fd-menu__item"
-      role="presentation"
-    >
-      
-            
-      <a
-        class="fd-menu__link"
-        href="#"
-        role="menuitem"
-      >
-        
-                
-        <span
-          class="fd-menu__title"
-        >
-          Option 3
-        </span>
-        
-            
-      </a>
-      
-        
-    </li>
-    
-        
-    <li
-      class="fd-menu__item"
-      role="presentation"
-    >
-      
-            
-      <a
-        class="fd-menu__link"
-        href="#"
-        role="menuitem"
-      >
-        
-                
-        <span
-          class="fd-menu__title"
-        >
-          Option 4
-        </span>
-        
-            
-      </a>
-      
-        
-    </li>
-    
-    
-  </ul>
+
+  </nav>
   
 
-</nav>
+  <div
+    style="min-height: 75px"
+  />
+  
+
+</section>
 `;

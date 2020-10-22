@@ -455,6 +455,7 @@ export const withSubmenu = () => `<nav class="fd-menu">
         </li>
     </ul>
 </nav>
+<div style="min-height: 75px"></div>
 `;
 withSubmenu.parameters = {
     docs: {
