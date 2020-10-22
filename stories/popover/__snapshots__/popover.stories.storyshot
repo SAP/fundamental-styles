@@ -170,14 +170,23 @@ exports[`Storyshots Components/Popover Control Examples 1`] = `
     >
       
             
-      <span
+      <button
         aria-controls="popoverB4"
         aria-expanded="false"
         aria-haspopup="true"
         aria-label="Image label"
-        class="sap-icon--cart sap-icon--xl"
+        class="fd-button"
         onclick="onPopoverClick('popoverB4');"
-      />
+      >
+        
+                
+        <i
+          class="sap-icon--cart"
+          role="presentation"
+        />
+        
+            
+      </button>
       
         
     </div>
