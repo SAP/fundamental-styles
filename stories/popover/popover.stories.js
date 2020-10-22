@@ -10,7 +10,7 @@ As a general rule, it is suggested that one popover be revealed on the page at a
 Opening one popover should close all others to prevent multiple layers and collisions of several popovers.`,
         docs: { iframeHeight: 350 },
         tags: ['f3', 'a11y', 'theme'],
-        components: ['avatar', 'button', 'icon', 'menu', 'popover', 'segmented-button']
+        components: ['avatar', 'bar', 'button', 'icon', 'menu', 'popover', 'segmented-button']
     }
 };
 
@@ -364,7 +364,9 @@ export const controlExamples = () => `<div class="fddocs-container">
 
     <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
-            <span class="sap-icon--cart sap-icon--xl" aria-label="Image label" aria-controls="popoverB4" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverB4');"></span>
+            <button class="fd-button" aria-label="Image label" aria-controls="popoverB4" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverB4');">
+                <i class="sap-icon--cart" role="presentation"></i>
+            </button>
         </div>
         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="popoverB4">
             <nav class="fd-menu" id="">
