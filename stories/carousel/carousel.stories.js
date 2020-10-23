@@ -350,7 +350,7 @@ export const carouselTop = () => `<div style="display: flex; flex-direction: col
                 <img src="https://loremflickr.com/cache/resized/65535_50136925591_e657f283f8_z_400_400_nofilter.jpg" alt="Carousel Image 3" />
             </div>
             <div class="fd-carousel__item fd-carousel__item--active">
-                <img src="http://picsum.photos/id/1018/400" alt="Carousel Image 4" />
+                <img src="/background-image.jpg" alt="Carousel Image 4" />
             </div>
         </div>
     </div>

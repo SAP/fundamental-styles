@@ -17,7 +17,7 @@ Notifications are used to relay information to the user about a situation or tas
 
 export const primary = () => `<div class="fd-notification">
     <div class="fd-notification__body">
-        <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://picsum.photos/id/1018/400')" role="presentation" aria-label="John Doe"></span>
+        <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/background-image.jpg')" role="presentation" aria-label="John Doe"></span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
                 <div class="fd-notification__indicator fd-notification__indicator--success"></div>
@@ -90,7 +90,7 @@ export const information = () => `<div class="fd-notification">
       </button>
     </div>
     <div class="fd-notification__body fd-notification__body--message">
-        <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://picsum.photos/id/1018/400')" role="presentation" aria-label="John Doe"></span>
+        <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/background-image.jpg')" role="presentation" aria-label="John Doe"></span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
                 <h2 class="fd-notification__title fd-notification__title--unread">You have new items</h2>
@@ -129,7 +129,7 @@ export const warning = () => `<div class="fd-notification">
       </button>
     </div>
     <div class="fd-notification__body fd-notification__body--message">
-       <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://picsum.photos/id/1018/400')" role="presentation" aria-label="John Doe"></span>
+       <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/background-image.jpg')" role="presentation" aria-label="John Doe"></span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
               <h2 class="fd-notification__title fd-notification__title--unread">You have new items</h2>
@@ -169,7 +169,7 @@ export const error = () => `<div class="fd-notification">
           </button>
     </div>
     <div class="fd-notification__body fd-notification__body--message">
-        <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://picsum.photos/id/1018/400')" role="presentation" aria-label="John Doe"></span>
+        <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/background-image.jpg')" role="presentation" aria-label="John Doe"></span>
         <div class="fd-notification__content">
           <div class="fd-notification__header">
             <h2 class="fd-notification__title fd-notification__title--unread">You have new items</h2>
@@ -302,7 +302,7 @@ export const notificationGroup = () => `<div class="fd-notification fd-notificat
             </div>
         </div>
         <div class="fd-notification__body">
-            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://picsum.photos/id/1018/400')" role="presentation" aria-label="John Doe"></span>
+            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/background-image.jpg')" role="presentation" aria-label="John Doe"></span>
             <div class="fd-notification__content">
                 <div class="fd-notification__header">
                 <div class="fd-notification__indicator fd-notification__indicator--success"></div>
@@ -324,7 +324,7 @@ export const notificationGroup = () => `<div class="fd-notification fd-notificat
             </div>
         </div>
         <div class="fd-notification__body">
-            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://picsum.photos/id/1018/400')" role="presentation" aria-label="John Doe"></span>
+            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/background-image.jpg')" role="presentation" aria-label="John Doe"></span>
             <div class="fd-notification__content">
                 <div class="fd-notification__header">
                 <div class="fd-notification__indicator fd-notification__indicator--error"></div>
@@ -368,7 +368,7 @@ export const notificationGroup = () => `<div class="fd-notification fd-notificat
             </div>
         </div>
         <div class="fd-notification__body">
-            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://picsum.photos/id/1018/400')" role="presentation" aria-label="John Doe"></span>
+            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/background-image.jpg')" role="presentation" aria-label="John Doe"></span>
             <div class="fd-notification__content">
                 <div class="fd-notification__header">
                 <div class="fd-notification__indicator fd-notification__indicator--success"></div>
@@ -409,7 +409,7 @@ export const notificationGroup = () => `<div class="fd-notification fd-notificat
             </div>
         </div>
         <div class="fd-notification__body">
-            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://picsum.photos/id/1018/400')" role="presentation" aria-label="John Doe"></span>
+            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/background-image.jpg')" role="presentation" aria-label="John Doe"></span>
             <div class="fd-notification__content">
                 <div class="fd-notification__header">
                 <div class="fd-notification__indicator fd-notification__indicator--success"></div>
@@ -445,7 +445,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
 
 <div class="fd-notification fd-notification--mobile"">
     <div class="fd-notification__body">
-        <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://picsum.photos/id/1018/400')" role="presentation" aria-label="John Doe"></span>
+        <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/background-image.jpg')" role="presentation" aria-label="John Doe"></span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
                 <div class="fd-notification__indicator fd-notification__indicator--success"></div>
@@ -588,7 +588,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                 </div>
             </div>
             <div class="fd-notification__body">
-                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://picsum.photos/id/1018/400')" role="presentation" aria-label="John Doe"></span>
+                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/background-image.jpg')" role="presentation" aria-label="John Doe"></span>
                 <div class="fd-notification__content">
                     <div class="fd-notification__header">
                     <div class="fd-notification__indicator fd-notification__indicator--success"></div>
@@ -687,7 +687,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                 </div>
             </div>
             <div class="fd-notification__body">
-                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://picsum.photos/id/1018/400')" role="presentation" aria-label="John Doe"></span>
+                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/background-image.jpg')" role="presentation" aria-label="John Doe"></span>
                 <div class="fd-notification__content">
                     <div class="fd-notification__header">
                     <div class="fd-notification__indicator fd-notification__indicator--success"></div>
@@ -786,7 +786,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                 </div>
             </div>
             <div class="fd-notification__body">
-                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('http://picsum.photos/id/1018/400')" role="presentation" aria-label="John Doe"></span>
+                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/background-image.jpg')" role="presentation" aria-label="John Doe"></span>
                 <div class="fd-notification__content">
                     <div class="fd-notification__header">
                     <div class="fd-notification__indicator fd-notification__indicator--success"></div>

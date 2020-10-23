@@ -1119,7 +1119,7 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
                 
         <img
           alt="Carousel Image 4"
-          src="http://picsum.photos/id/1018/400"
+          src="/background-image.jpg"
         />
         
             

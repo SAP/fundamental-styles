@@ -74,7 +74,7 @@ export const object = () => `
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
-         style="background-image: url('http://picsum.photos/id/1018/400')">
+         style="background-image: url('/background-image.jpg')">
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
@@ -137,7 +137,7 @@ export const object = () => `
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
-         style="background-image: url('http://picsum.photos/id/1018/400')">
+         style="background-image: url('/background-image.jpg')">
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
@@ -196,7 +196,7 @@ export const object = () => `
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
-         style="background-image: url('http://picsum.photos/id/1018/400')">
+         style="background-image: url('/background-image.jpg')">
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
@@ -252,7 +252,7 @@ export const object = () => `
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
-         style="background-image: url('http://picsum.photos/id/1018/400')">
+         style="background-image: url('/background-image.jpg')">
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
@@ -325,7 +325,7 @@ export const navigation = () => `
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s fd-avatar--circle"
-         style="background-image: url('http://picsum.photos/id/1018/400')">
+         style="background-image: url('/background-image.jpg')">
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
@@ -390,7 +390,7 @@ export const navigation = () => `
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s fd-avatar--circle"
-         style="background-image: url('http://picsum.photos/id/1018/400')">
+         style="background-image: url('/background-image.jpg')">
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
@@ -529,7 +529,7 @@ export const selection = () => `
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
-         style="background-image: url('http://picsum.photos/id/1018/400')">
+         style="background-image: url('/background-image.jpg')">
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
@@ -607,7 +607,7 @@ export const selectionWithNavigation = () => `
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
-         style="background-image: url('http://picsum.photos/id/1018/400')">
+         style="background-image: url('/background-image.jpg')">
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
@@ -672,7 +672,7 @@ export const selectionWithNavigation = () => `
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
-         style="background-image: url('http://picsum.photos/id/1018/400')">
+         style="background-image: url('/background-image.jpg')">
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
@@ -750,7 +750,7 @@ export const borderless = () => `
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
-         style="background-image: url('http://picsum.photos/id/1018/400')">
+         style="background-image: url('/background-image.jpg')">
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
@@ -813,7 +813,7 @@ export const borderless = () => `
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
-         style="background-image: url('http://picsum.photos/id/1018/400')">
+         style="background-image: url('/background-image.jpg')">
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">
@@ -873,7 +873,7 @@ export const borderless = () => `
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
-         style="background-image: url('http://picsum.photos/id/1018/400')">
+         style="background-image: url('/background-image.jpg')">
         </span>
         <div class="fd-object-list__header-left">
          <div class="fd-object-identifier fd-object-list__object-identifier">

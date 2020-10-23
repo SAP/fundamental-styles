@@ -39,7 +39,7 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
             <a class="fd-card__header" tabindex="0">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('http://picsum.photos/id/1018/400')" 
+                    style="background-image: url('/background-image.jpg')" 
                     role="presentation" 
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
@@ -61,7 +61,7 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
             <a class="fd-card__header" tabindex="0">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('http://picsum.photos/id/1018/400')" 
+                    style="background-image: url('/background-image.jpg')" 
                     role="presentation" 
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
@@ -81,7 +81,7 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
             <a class="fd-card__header" tabindex="0">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('http://picsum.photos/id/1018/400')" 
+                    style="background-image: url('/background-image.jpg')" 
                     role="presentation" 
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
@@ -102,7 +102,7 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
             <a class="fd-card__header" tabindex="0">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('http://picsum.photos/id/1018/400')" 
+                    style="background-image: url('/background-image.jpg')" 
                     role="presentation" 
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
@@ -568,7 +568,7 @@ export const objectCard = () => `<div style="display:flex; justify-content:space
             <a class="fd-card__header" tabindex="0">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('http://picsum.photos/id/1018/400')" 
+                    style="background-image: url('/background-image.jpg')" 
                     role="presentation" 
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
@@ -632,7 +632,7 @@ export const objectCard = () => `<div style="display:flex; justify-content:space
             <a class="fd-card__header" tabindex="0">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('http://picsum.photos/id/1018/400')" 
+                    style="background-image: url('/background-image.jpg')" 
                     role="presentation" 
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">

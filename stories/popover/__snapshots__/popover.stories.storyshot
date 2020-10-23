@@ -26,7 +26,7 @@ exports[`Storyshots Components/Popover Control Examples 1`] = `
         image=""
         label"=""
         onclick="onPopoverClick('popoverB2');"
-        style="background-image: url('http://picsum.photos/id/1018/400');"
+        style="background-image: url('/background-image.jpg');"
       />
       
         
@@ -768,7 +768,7 @@ exports[`Storyshots Components/Popover Placement Options 1`] = `
           aria-label="Nature"
           class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail"
           role="presentation"
-          style="background-image: url('http://picsum.photos/id/1018/400');"
+          style="background-image: url('/background-image.jpg');"
         />
         
                 
@@ -1341,7 +1341,7 @@ exports[`Storyshots Components/Popover Popover with Header, Subheader and Footer
           aria-label="Nature"
           class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail"
           role="presentation"
-          style="background-image: url('http://picsum.photos/id/1018/400');"
+          style="background-image: url('/background-image.jpg');"
         />
         
             
@@ -1586,7 +1586,7 @@ exports[`Storyshots Components/Popover Popover with Header, Subheader and Footer
           aria-label="Nature"
           class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail"
           role="presentation"
-          style="background-image: url('http://picsum.photos/id/1018/400');"
+          style="background-image: url('/background-image.jpg');"
         />
         
             
@@ -1831,7 +1831,7 @@ exports[`Storyshots Components/Popover Popover with Header, Subheader and Footer
           aria-label="Nature"
           class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail"
           role="presentation"
-          style="background-image: url('http://picsum.photos/id/1018/400');"
+          style="background-image: url('/background-image.jpg');"
         />
         
             
