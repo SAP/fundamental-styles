@@ -1875,29 +1875,33 @@ exports[`Storyshots Components/Wizard Mobile 1`] = `
       >
         
                 
-        <img
-          aria-label="John Doe"
-          class=""
-          role="presentation"
-          src="http://lorempixel.com/220/220/nature/4/"
-        />
-        
-                
         <div
-          class="fd-wizard__next-step fd-wizard__next-step--floating"
+          aria-label="Image 4"
+          role="img"
+          style="
+                    width:100%;
+                    background-image: url(assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg);
+                    height: 300px;
+                    background-size:cover;"
         >
           
-                    
-          <button
-            class="fd-button fd-button--emphasized"
-          >
-            Next Step
-          </button>
-          
                 
-        </div>
-        
+          <div
+            class="fd-wizard__next-step fd-wizard__next-step--floating"
+          >
             
+                    
+            <button
+              class="fd-button fd-button--emphasized"
+            >
+              Next Step
+            </button>
+            
+                
+          </div>
+          
+            
+        </div>
       </section>
       
             
