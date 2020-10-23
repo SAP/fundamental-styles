@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.19...v0.13.0-rc.20) (2020-10-23)
+
+
+### Features
+
+* introduce Object Attribute ([#1765](https://github.com/SAP/fundamental-styles/issues/1765)) ([20bfd14](https://github.com/SAP/fundamental-styles/commit/20bfd14271882d3ad456f327cfc9be8e7d61d0c2))
+
 ## [0.13.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.18...v0.13.0-rc.19) (2020-10-21)
 
 ## [0.13.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.17...v0.13.0-rc.18) (2020-10-21)
