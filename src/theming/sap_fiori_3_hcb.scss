@@ -32,6 +32,14 @@
   --fdWizard_Selection_Bar_Height: 0.313rem;
   --fdWizard_Selection_Bar_Background: var(--sapList_SelectionBorderColor);
 
+  /* Slider */
+
+  --fdSlider_Track_Height: 0.375rem;
+  --fdSlider_Track_BorderRadius: 0.375rem;
+  --fdSlider_Tick_Height: 1.125rem;
+  --fdSlider_Track_Active_Background: var(--sapSelectedColor);
+  --fdSlider_Track_Active_Border: var(--sapField_BorderColor);
+
   /* Avatar */
   --fdAvatar_BackgroundColor: var(--sapBackgroundColor);
   --fdAvatar_Tile_BackgroundColor: var(--sapContent_ImagePlaceholderBackground);

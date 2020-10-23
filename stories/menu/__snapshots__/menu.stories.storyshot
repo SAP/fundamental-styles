@@ -2,7 +2,7 @@
 
 exports[`Storyshots Components/Menu Desktop and Tablet Modes 1`] = `
 <section>
-     
+  
 
   <label
     class="fd-form-label"
@@ -15,7 +15,7 @@ exports[`Storyshots Components/Menu Desktop and Tablet Modes 1`] = `
 
 
   <nav
-    aria-label="fd-menu-nav"
+    aria-label="navigation menu"
     class="fd-menu"
   >
     
@@ -138,7 +138,7 @@ exports[`Storyshots Components/Menu Desktop and Tablet Modes 1`] = `
 
 
   <br />
-   
+  
 
   <label
     class="fd-form-label"
@@ -496,7 +496,7 @@ exports[`Storyshots Components/Menu List different states 1`] = `
             
                 
           </a>
-                              
+          
             
         </li>
         
@@ -505,7 +505,7 @@ exports[`Storyshots Components/Menu List different states 1`] = `
           class="fd-menu__item"
           role="presentation"
         >
-                              
+          
                 
           <a
             class="fd-menu__link"
@@ -531,7 +531,7 @@ exports[`Storyshots Components/Menu List different states 1`] = `
           class="fd-menu__item"
           role="presentation"
         >
-                              
+          
                 
           <a
             class="fd-menu__link"
@@ -557,7 +557,7 @@ exports[`Storyshots Components/Menu List different states 1`] = `
           class="fd-menu__item"
           role="presentation"
         >
-                              
+          
                 
           <a
             class="fd-menu__link"
@@ -583,7 +583,7 @@ exports[`Storyshots Components/Menu List different states 1`] = `
           class="fd-menu__item"
           role="presentation"
         >
-                              
+          
                 
           <a
             class="fd-menu__link"
@@ -609,7 +609,7 @@ exports[`Storyshots Components/Menu List different states 1`] = `
           class="fd-menu__item"
           role="presentation"
         >
-                              
+          
                 
           <a
             class="fd-menu__link"
@@ -742,7 +742,7 @@ exports[`Storyshots Components/Menu List with Icon 1`] = `
         
                 
       </a>
-                  
+      
         
     </li>
     
@@ -797,7 +797,7 @@ exports[`Storyshots Components/Menu List with Icon 1`] = `
       class="fd-menu__item"
       role="presentation"
     >
-                  
+      
                 
       <a
         class="fd-menu__link"
@@ -1019,8 +1019,10 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
   >
     
     
-    <div
+    <section
+      aria-labelledby="exampleSubMenuHeader"
       class="fd-dialog__content fd-dialog__content--mobile"
+      role="dialog"
     >
       
         
@@ -1042,6 +1044,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
                     
             <h3
               class="fd-title fd-title--h5"
+              id="exampleSubMenuHeader"
             >
               
                         Example Submenu
@@ -1064,7 +1067,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
         
              
         <nav
-          aria-hidden="true"
+          aria-label="example sub-menu options"
           class="fd-menu fd-menu--mobile"
           id="parent-menu"
           tabindex="-1"
@@ -1115,7 +1118,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
                     role="presentation"
                   />
                 </span>
-                 
+                
                         
               </a>
               
@@ -1266,7 +1269,6 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
       
        
       <footer
-        aria-label="bar-footer"
         class="fd-dialog__footer fd-bar fd-bar--cozy fd-bar--footer"
       >
         
@@ -1282,11 +1284,12 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
             
                     
             <button
-              aria-label="fd-button"
+              aria-label="close options dialog"
               class="fd-button fd-button--light fd-dialog__decisive-button"
-              role="button"
             >
-              Cancel
+              
+                        Cancel
+                    
             </button>
             
                 
@@ -1299,7 +1302,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
       </footer>
       
     
-    </div>
+    </section>
     
 
   </div>
@@ -1313,8 +1316,10 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
   >
     
     
-    <div
+    <section
+      aria-labelledby="subOptionHeader"
       class="fd-dialog__content fd-dialog__content--mobile"
+      role="dialog"
     >
       
         
@@ -1334,9 +1339,8 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
             
                 
             <button
-              aria-label="fd-button"
+              aria-label="Show main menu options"
               class="fd-button fd-button--transparent"
-              role="button"
             >
               
                     
@@ -1359,6 +1363,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
                     
             <h3
               class="fd-title fd-title--h5"
+              id="subOptionHeader"
             >
               
                         Option 2
@@ -1381,6 +1386,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
         
              
         <nav
+          aria-label="option 2 sub-options"
           class="fd-menu fd-menu--mobile"
         >
           
@@ -1412,7 +1418,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
                 
                         
               </a>
-                                  
+              
                     
             </li>
             
@@ -1421,7 +1427,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
               class="fd-menu__item"
               role="presentation"
             >
-                                  
+              
                         
               <a
                 class="fd-menu__link"
@@ -1447,7 +1453,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
               class="fd-menu__item"
               role="presentation"
             >
-                                  
+              
                         
               <a
                 class="fd-menu__link"
@@ -1473,7 +1479,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
               class="fd-menu__item"
               role="presentation"
             >
-                                  
+              
                         
               <a
                 class="fd-menu__link"
@@ -1520,11 +1526,12 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
             
                     
             <button
-              aria-label="fd-button"
+              aria-label="close options dialog"
               class="fd-button fd-button--light fd-dialog__decisive-button"
-              role="button"
             >
-              Cancel
+              
+                        Cancel
+                    
             </button>
             
                 
@@ -1537,7 +1544,7 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
       </footer>
       
     
-    </div>
+    </section>
     
 
   </div>
@@ -1547,254 +1554,263 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
 `;
 
 exports[`Storyshots Components/Menu With Submenu 1`] = `
-<nav
-  class="fd-menu"
->
-  
-    
-  <ul
-    class="fd-menu__list"
-    role="menu"
+<section>
+  <nav
+    class="fd-menu"
   >
     
-        
-    <li
-      class="fd-menu__item"
-      role="presentation"
-    >
-                  
-            
-      <a
-        class="fd-menu__link"
-        href="#"
-        role="menuitem"
-      >
-        
-                
-        <span
-          class="fd-menu__title"
-        >
-          Option 1
-        </span>
-          
-            
-      </a>
-                
-        
-    </li>
     
-        
-    <li
-      class="fd-menu__item"
-      role="presentation"
+    <ul
+      class="fd-menu__list"
+      role="menu"
     >
       
         
-      <!-- For submenu, have the parent menu item in its own span so that its states do not override the submenu states -->
-      
-            
-      <a
-        aria-controls="EX100M2"
-        aria-haspopup="true"
-        class="fd-menu__link has-child"
-        href="#"
-        onclick="onPopoverClick('EX100M2')"
-        role="menuitem"
+      <li
+        class="fd-menu__item"
+        role="presentation"
       >
         
-                
-        <span
-          class="fd-menu__title"
-        >
-          Option 2 with submenu
-        </span>
-        
-                
-        <span
-          class="fd-menu__addon-after fd-menu__addon-after--submenu"
-        />
-         
             
-      </a>
-             
-            
-      <ul
-        aria-hidden="true"
-        class="fd-menu__sublist"
-        id="EX100M2"
-        role="menu"
-      >
-        
-                
-        <li
-          class="fd-menu__item"
-          role="presentation"
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
         >
           
-                    
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
-          >
-            
-                        
-            <span
-              class="fd-menu__title"
-            >
-              Sub-option 1
-            </span>
-            
-                    
-          </a>
-                              
                 
-        </li>
-        
-                
-        <li
-          class="fd-menu__item"
-          role="presentation"
-        >
-                              
-                    
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
+          <span
+            class="fd-menu__title"
           >
-            
-                        
-            <span
-              class="fd-menu__title"
-            >
-              Sub-option 2
-            </span>
-            
-                    
-          </a>
+            Option 1
+          </span>
           
-                
-        </li>
+            
+        </a>
         
-                
-        <li
-          class="fd-menu__item"
-          role="presentation"
-        >
-                              
-                    
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
-          >
-            
-                        
-            <span
-              class="fd-menu__title"
-            >
-              Sub-option 3
-            </span>
-            
-                    
-          </a>
-          
-                
-        </li>
         
-                
-        <li
-          class="fd-menu__item"
-          role="presentation"
-        >
-                              
-                    
-          <a
-            class="fd-menu__link"
-            href="#"
-            role="menuitem"
-          >
-            
-                        
-            <span
-              class="fd-menu__title"
-            >
-              Sub-option 4
-            </span>
-            
-                    
-          </a>
-          
-                
-        </li>
-        
-            
-      </ul>
+      </li>
       
         
-    </li>
-    
-        
-    <span
-      class="fd-menu__separator"
-    />
-    
-        
-    <li
-      class="fd-menu__item"
-      role="presentation"
-    >
-                  
-            
-      <a
-        class="fd-menu__link"
-        href="#"
-        role="menuitem"
+      <li
+        class="fd-menu__item"
+        role="presentation"
       >
         
-                
+        
+        <!-- For submenu, have the parent menu item in its own span so that its states do not override the submenu states -->
+        
+            
         <span
-          class="fd-menu__title"
+          aria-controls="EX100M2"
+          aria-expanded="true"
+          aria-haspopup="true"
+          class="fd-menu__link has-child is-expanded"
+          onclick="onPopoverClick('EX100M2')"
+          role="menuitem"
         >
-          Option 3
+          
+                    
+          <span
+            class="fd-menu__title"
+          >
+            Option 2 with submenu
+          </span>
+          
+                    
+          <span
+            class="fd-menu__addon-after fd-menu__addon-after--submenu"
+          />
+          
+            
         </span>
         
             
-      </a>
+        <ul
+          aria-hidden="false"
+          class="fd-menu__sublist"
+          id="EX100M2"
+          role="menu"
+        >
+          
+                
+          <li
+            class="fd-menu__item"
+            role="presentation"
+          >
+            
+                    
+            <a
+              class="fd-menu__link"
+              href="#"
+              role="menuitem"
+            >
+              
+                        
+              <span
+                class="fd-menu__title"
+              >
+                Sub-option 1
+              </span>
+              
+                    
+            </a>
+            
+                
+          </li>
+          
+                
+          <li
+            class="fd-menu__item"
+            role="presentation"
+          >
+            
+                    
+            <a
+              class="fd-menu__link"
+              href="#"
+              role="menuitem"
+            >
+              
+                        
+              <span
+                class="fd-menu__title"
+              >
+                Sub-option 2
+              </span>
+              
+                    
+            </a>
+            
+                
+          </li>
+          
+                
+          <li
+            class="fd-menu__item"
+            role="presentation"
+          >
+            
+                    
+            <a
+              class="fd-menu__link"
+              href="#"
+              role="menuitem"
+            >
+              
+                        
+              <span
+                class="fd-menu__title"
+              >
+                Sub-option 3
+              </span>
+              
+                    
+            </a>
+            
+                
+          </li>
+          
+                
+          <li
+            class="fd-menu__item"
+            role="presentation"
+          >
+            
+                    
+            <a
+              class="fd-menu__link"
+              href="#"
+              role="menuitem"
+            >
+              
+                        
+              <span
+                class="fd-menu__title"
+              >
+                Sub-option 4
+              </span>
+              
+                    
+            </a>
+            
+                
+          </li>
+          
+            
+        </ul>
+        
+        
+      </li>
       
         
-    </li>
-    
+      <span
+        class="fd-menu__separator"
+      />
+      
         
-    <li
-      class="fd-menu__item"
-      role="presentation"
-    >
-                  
-            
-      <a
-        class="fd-menu__link"
-        href="#"
-        role="menuitem"
+      <li
+        class="fd-menu__item"
+        role="presentation"
       >
         
-                
-        <span
-          class="fd-menu__title"
-        >
-          Option 4
-        </span>
-        
             
-      </a>
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
+        >
+          
+                
+          <span
+            class="fd-menu__title"
+          >
+            Option 3
+          </span>
+          
+            
+        </a>
+        
+        
+      </li>
       
         
-    </li>
+      <li
+        class="fd-menu__item"
+        role="presentation"
+      >
+        
             
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
+        >
+          
+                
+          <span
+            class="fd-menu__title"
+          >
+            Option 4
+          </span>
+          
+            
+        </a>
+        
+        
+      </li>
+      
     
-  </ul>
+    </ul>
+    
+
+  </nav>
   
 
-</nav>
+  <div
+    style="min-height: 75px"
+  />
+  
+
+</section>
 `;
