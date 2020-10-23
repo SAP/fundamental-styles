@@ -44,9 +44,9 @@ exports[`Storyshots Components/Action Bar Contextual 1`] = `
                     
             <button
               aria-controls="wgxzK859"
-              aria-expanded="false"
+              aria-expanded="true"
               aria-haspopup="true"
-              aria-label="button"
+              aria-label="More"
               class="fd-button fd-button--transparent fd-button--compact"
               onclick="onPopoverClick('wgxzK859');"
             >
@@ -483,9 +483,9 @@ exports[`Storyshots Components/Action Bar Mobile 1`] = `
                         
               <button
                 aria-controls="wgxzK85"
-                aria-expanded="false"
+                aria-expanded="true"
                 aria-haspopup="true"
-                aria-label="button"
+                aria-label="More"
                 class="fd-button fd-button--transparent"
                 onclick="onPopoverClick('wgxzK85');"
               >
