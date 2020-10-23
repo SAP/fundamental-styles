@@ -923,7 +923,14 @@ export const mobile = () => `<div style="display: flex; justify-content: space-a
                 </ul>
             </nav>
             <section class="fd-wizard__content fd-wizard__content--sm" id="wizard-section-7" style="min-height: 300px;">
-                <img class="" src='http://lorempixel.com/220/220/nature/4/' role="presentation" aria-label="John Doe" />
+                <div
+                style="
+                    width:100%;
+                    background-image: url(assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg);
+                    height: 300px;
+                    background-size:cover;"
+                role="img"
+                aria-label="Image 4" />
                 <div class="fd-wizard__next-step fd-wizard__next-step--floating">
                     <button class="fd-button fd-button--emphasized">Next Step</button>
                 </div>

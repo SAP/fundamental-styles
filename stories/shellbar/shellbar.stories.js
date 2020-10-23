@@ -151,10 +151,14 @@ export const productMenuAndSearch = () => `<div style="height:200px">
                 <div class="fd-popover fd-popover--right">
                     <div class="fd-popover__control">
                         <div class="fd-button fd-shellbar__button fd-user-menu__control" aria-controls="ZY3AY276" onclick="onPopoverClick('ZY3AY276')" aria-expanded="false" aria-haspopup="true" role="button">
-                            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle" style="background-image: url('http://lorempixel.com/50/50/abstract/3/');" aria-label="William Wallingham">WW</span>
+                            <span
+                                class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle"
+                                style="background-image: url('assets/images/avatars/1.svg');"
+                                aria-label="William Wallingham">
+                            </span>
                         </div>
                     </div>
-                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="ZY3AY276">
+                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="false" id="ZY3AY276">
                         <nav class="fd-menu">
                             <ul class="fd-menu__list fd-menu__list--no-shadow">
                                 <li class="fd-menu__item">
@@ -549,8 +553,9 @@ export const productSwitch = () => `<div style="height:600px">
                              aria-haspopup="true" role="button">
                             <span
                                 class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle"
-                                style="background-image: url('http://lorempixel.com/50/50/abstract/3/');"
-                                aria-label="William Wallingham">WW</span>
+                                style="background-image: url('assets/images/avatars/1.svg');"
+                                aria-label="William Wallingham">
+                            </span>
                         </div>
                     </div>
                     <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true"
