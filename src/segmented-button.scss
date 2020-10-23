@@ -6,6 +6,7 @@
     .fd-button
 */
 $block: #{$fd-namespace}-segmented-button;
+$button-block: #{$fd-namespace}-button;
 
 @mixin styleButtonContent() {
   @content;
@@ -16,6 +17,14 @@ $block: #{$fd-namespace}-segmented-button;
 
   display: inline-flex;
   vertical-align: middle;
+
+  .#{$button-block} {
+    @include fd-selected() {
+      &::after {
+        border-color: transparent;
+      }
+    }
+  }
 
   & > * {
     margin: 0;
