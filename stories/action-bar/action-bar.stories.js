@@ -137,7 +137,7 @@ export const actions = () => `<div class="fd-action-bar">
                         <i class="sap-icon--overflow"></i>
                     </button>
                 </div>
-                <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="wgxzK859">
+                <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="wgxzK859">
                     <nav class="fd-menu" id="">
                         <ul class="fd-menu__list fd-menu__list--no-shadow">
                             <li class="fd-menu__item">
@@ -256,7 +256,7 @@ export const mobile = () => `<div style="width:319px;">
                             <i class="sap-icon--overflow"></i>
                         </button>
                     </div>
-                    <div class="fd-popover__body" aria-hidden="true" id="wgxzK85">
+                    <div class="fd-popover__body" aria-hidden="false" id="wgxzK85">
                         <nav class="fd-menu" id="">
                             <ul class="fd-menu__list fd-menu__list--no-shadow">
                                 <li class="fd-menu__item">

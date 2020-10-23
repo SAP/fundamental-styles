@@ -64,7 +64,7 @@ exports[`Storyshots Components/Action Bar Contextual 1`] = `
           
                 
           <div
-            aria-hidden="true"
+            aria-hidden="false"
             class="fd-popover__body fd-popover__body--right"
             id="wgxzK859"
           >
@@ -503,7 +503,7 @@ exports[`Storyshots Components/Action Bar Mobile 1`] = `
             
                     
             <div
-              aria-hidden="true"
+              aria-hidden="false"
               class="fd-popover__body"
               id="wgxzK85"
             >
