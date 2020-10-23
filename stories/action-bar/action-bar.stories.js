@@ -131,8 +131,8 @@ export const actions = () => `<div class="fd-action-bar">
         <div class="fd-action-bar__actions">
             <div class="fd-popover">
                 <div class="fd-popover__control">
-                    <button aria-label="button"class="fd-button fd-button--transparent fd-button--compact"
-                    aria-controls="wgxzK859" aria-haspopup="true" aria-expanded="false" aria-label="More"
+                    <button class="fd-button fd-button--transparent fd-button--compact"
+                    aria-controls="wgxzK859" aria-haspopup="true" aria-expanded="true" aria-label="More"
                     onclick="onPopoverClick('wgxzK859');">
                         <i class="sap-icon--overflow"></i>
                     </button>
@@ -251,8 +251,8 @@ export const mobile = () => `<div style="width:319px;">
             <div class="fd-action-bar__actions">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button aria-label="button"class="fd-button fd-button--transparent" onclick="onPopoverClick('wgxzK85');"
-                        aria-controls="wgxzK85" aria-haspopup="true" aria-expanded="false" aria-label="More">
+                        <button class="fd-button fd-button--transparent" onclick="onPopoverClick('wgxzK85');"
+                        aria-controls="wgxzK85" aria-haspopup="true" aria-expanded="true" aria-label="More">
                             <i class="sap-icon--overflow"></i>
                         </button>
                     </div>
