@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.22...v0.13.0-rc.23) (2020-10-25)
+
+
+### Bug Fixes
+
+* Apply stronger selector for button in calendar mobile mode ([#1811](https://github.com/SAP/fundamental-styles/issues/1811)) ([d1f835d](https://github.com/SAP/fundamental-styles/commit/d1f835d709dca61c77ae2e9ac156e96260df565e))
+
 ## [0.13.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.21...v0.13.0-rc.22) (2020-10-23)
 
 
