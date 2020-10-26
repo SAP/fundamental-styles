@@ -1,90 +1,74 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Text Default 1`] = `
-
-    
+<p
+  class="fd-text"
+>
+  
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+    deserunt mollit anim id est laborum.
+</p>
 `;
 
 exports[`Storyshots Components/Text Hyphenation 1`] = `
-<section>
+<div
+  class="example-container"
+>
   
-
-    
-  <h3>
-    Without hyphens
-  </h3>
-  
-    
+        
   <div
-    style="width: 300px"
+    class="mw-300"
   >
     
-        
+            
+    <h3>
+      Without hyphens
+    </h3>
+    
+            
     <p
       class="fd-text"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.
     </p>
-    
-    
-  </div>
-  
-    
-    
-  <h3>
-    Hyphen
-  </h3>
-  
-    
-  <div
-    style="width: 300px"
-  >
     
         
-    <p
-      class="fd-text"
-    >
-      Lorem ipsum dolor sit amet, consectetur adip-iscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad mi-nim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.
-    </p>
-    
-    
-  </div>
-  
-    
-    
-  <h3>
-    Shy
-  </h3>
-  
-    
-  <div
-    style="width: 300px"
-  >
-    
-        
-    <p
-      class="fd-text"
-    >
-      Lorem ipsum dolor sit amet, con­sectetur adip­iscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad mi­nim veniam, quis nostrud exer­citation ullamco laboris nisi ut
-        aliquip ex ea commodo conse­quat. Duis aute irure dolor in reprehenderit in vo­luptate velit esse cillum dolore
-        eu fu­giat nulla pari­atur. Excepteur sint occaecat cupidatat non pro­ident, sunt in culpa qui officia
-        deserunt mollit anim id est la­bo­rum.
-    </p>
-    
-    
   </div>
   
 
-</section>
+        
+  <div
+    class="mw-300"
+  >
+    
+            
+    <h3>
+      Hyphenation
+    </h3>
+    
+            
+    <p
+      class="fd-text fd-text--hyphenation"
+    >
+      Lorem ipsum dolor sit amet, con­sectetur adip­iscing el­it, sed do eiusmod tempor
+            incididunt ut labore et do­lore magna aliqua. Ut enim ad mi­nim veniam, quis nostrud exer­citation ullamco laboris nisi ut
+            aliquip ex ea commodo conse­quat. Duis aute irure dolor in repre­henderit in vo­luptate velit esse cillum dolore
+            eu fu­giat nulla pari­atur. Excepteur sint occaecat cupidatat non pro­ident, sunt in culpa qui officia
+            deserunt mollit anim id est la­bo­rum.
+    </p>
+    
+        
+  </div>
+  
+    
+</div>
 `;
 
 exports[`Storyshots Components/Text Max lines 1`] = `
@@ -98,7 +82,6 @@ exports[`Storyshots Components/Text Max lines 1`] = `
     
   <p
     classname="fd-text"
-    style="white-space: normal;"
   >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada bibendum arcu vitae elementum. Ut etiam sit
@@ -125,8 +108,8 @@ exports[`Storyshots Components/Text Max lines 1`] = `
   
     
   <p
-    class="fd-text"
-    style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;"
+    class="fd-text fd-text--max-lines"
+    style="-webkit-line-clamp: 2;"
   >
     
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -154,8 +137,8 @@ exports[`Storyshots Components/Text Max lines 1`] = `
   
     
   <p
-    class="fd-text"
-    style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden;"
+    class="fd-text fd-text--max-lines"
+    style="-webkit-line-clamp: 3;"
   >
     
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -189,8 +172,8 @@ exports[`Storyshots Components/Text Wrapping 1`] = `
   
     
   <p
+    "=""
     class="fd-text"
-    style="white-space: normal;"
   >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -207,41 +190,17 @@ exports[`Storyshots Components/Text Wrapping 1`] = `
   
     
   <p
-    class="fd-text"
-    style="white-space: pre-wrap;"
+    class="fd-text fd-text--pre-wrap"
   >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore et
+dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat.
+ 
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
 eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
 deserunt mollit anim id est laborum.
   </p>
-  
-
-    
-  <h3>
-    Whitespace nowrap
-  </h3>
-  
-    
-  <div
-    style="overflow: auto;"
-  >
-    
-        
-    <p
-      class="fd-text"
-      style="white-space: nowrap;"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.
-    </p>
-    
-    
-  </div>
   
 
 </section>
