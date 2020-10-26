@@ -101,5 +101,5 @@
 
   /* Calendar */
   --fdCalendar_Text_Shadow: none;
-  --fdCalendar_Active_Item_Border: none;
+  --fdCalendar_Active_Item_Border: solid 0.0625rem var(--sapList_SelectionBorderColor, #000);
 }
