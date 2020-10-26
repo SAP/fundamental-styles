@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.23...v0.13.0-rc.24) (2020-10-26)
+
+
+### Bug Fixes
+
+* wcag aaa text color contrast ([#1814](https://github.com/SAP/fundamental-styles/issues/1814)) ([a5c29a1](https://github.com/SAP/fundamental-styles/commit/a5c29a14ad16ce2e7863ab9e2d8f58155416d8b2))
+
 ## [0.13.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.22...v0.13.0-rc.23) (2020-10-25)
 
 
