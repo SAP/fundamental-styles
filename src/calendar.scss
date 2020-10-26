@@ -407,7 +407,7 @@ $fd-calendar-special-days: (
 
   @include special-days($fd-calendar-special-days);
 
-  &__close-button--navigation {
+  &__close-button--navigation.#{$fd-namespace}-button {
     @include fd-rtl() {
       left: 0;
       right: auto;
