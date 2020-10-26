@@ -29,6 +29,7 @@ $has-child-content-arrow-margin: 0.125rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-shadow: var(--fdSideNav_Text_Shadow);
 
   &__skip-link {
     @include fd-reset();

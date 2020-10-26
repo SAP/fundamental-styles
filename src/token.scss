@@ -68,6 +68,7 @@ $block: #{$fd-namespace}-token;
     min-width: auto;
     width: 100%;
     text-overflow: ellipsis;
+    text-shadow: var(--fdToken_Text_Shadow);
   }
 
   &__close {

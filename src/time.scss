@@ -95,6 +95,7 @@ $block: #{$fd-namespace}-time;
     border-radius: var(--sapButton_BorderCornerRadius);
     background-color: var(--sapLegend_WorkingBackground);
     border: 0.0625rem solid var(--sapList_Background);
+    text-shadow: var(--fdTime_Text_Shadow);
 
     &:hover {
       background-color: var(--sapList_Hover_Background);

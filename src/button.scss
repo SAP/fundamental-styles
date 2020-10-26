@@ -57,6 +57,7 @@ $block: #{$fd-namespace}-button;
   padding-left: $fd-button-padding-x;
   padding-right: $fd-button-padding-x;
   text-align: center;
+  text-shadow: var(--fdButton_Text_Shadow);
 
   // look
   border-style: solid;

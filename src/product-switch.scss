@@ -198,6 +198,7 @@ $block: #{$fd-namespace}-product-switch;
     width: 100%;
     overflow: hidden;
     max-height: 2.5rem;
+    text-shadow: var(--fdProductSwitch_Text_Shadow);
   }
 
   &__title {
