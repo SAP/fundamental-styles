@@ -2,9 +2,57 @@ export default {
     title: 'Components/Tile/Generic',
     parameters: {
         description: `
-Generic Tiles can be used to represent an app similar to the SAP Fiori launchpad home page. They can display different
-types of content, which are based on the data supplied by the app. They can contain an icon, a title, an informative
-text, KPIs, counters and charts.
+The generic tile is a container that represents an app on the SAP Fiori launchpad home page. They can display types of content based on the data supplied from the app. They can additionally contain an icon, information text, a title, KPIs, counters and charts. Tiles move to the next row if there is insufficient horizontal screen space to display them all.
+
+##Guidelines
+
+**Do’s**
+
+- Only use tiles on the launchpad home page. Don’t use them anywhere else.
+- In the content area, only show content types described in this guideline. For example, don’t play videos, animations, or gifs in the tiles.
+- If you are not showing a KPI or a chart, try to show an icon instead to help users to distinguish the tiles.
+- Use short tile names.
+
+**Don’ts**
+
+- Do not use the status area for error messages.
+- Do not use the tile subtitle for explanations. Use the subtitle only if you need a differentiator (such as a specific view on the data).
+- Do not use icons on KPI tiles; only use icons on basic launch tiles or monitoring tiles.
+- Do not show icons next to a counter when you expect 5 digits or more.
+- Do not develop your own icons or use custom icons.
+
+##Modifiers
+
+Generic tiles can display different elements and/or semantic states depending on the type of content being shown.
+
+Modifier class | Description
+-------- | -------------------
+\`fd-numeric-content__scale--text\` | To display text in the numeric content area.
+\`fd-tile--feed\` | To display a feed tile.
+\`fd-tile--double\` | To double the layout dimensions. See the layout section below for more details.
+\`fd-tile--container—list\` | To display a list within a line tile.
+\`fd-tile--compact\` | Used only with the line tile.
+\`sap-icon--down\` or \`sap-icon--up\` | To display deviation arrows in the scale container area.
+
+**To display different states for numeric content (KPIs):**
+
+States | Modifier class
+-------- | -------------------
+Neutral | (default)
+Positive | \`fd-numeric-content__kpi--positive\`
+Negative | \`fd-numeric-content__kpi--negative\`
+Critical | \`fd-numeric-content__kpi--critical\`
+Informative | \`fd-numeric-content__kpi—informative\`
+
+**To display different states for the scale container (icons/text beside numeric content):**
+
+States | Modifier class
+-------- | -------------------
+Neutral | (default)
+Positive | \`fd-numeric-content__scale--positive\`
+Negative | \`fd-numeric-content__scale--negative\`
+Critical | \`fd-numeric-content__scale--critical\`
+Informative | \`fd-numeric-content__scale—informative\`
       `,
         tags: ['f3', 'a11y', 'theme'],
         docs: { iframeHeight: 500 },
@@ -29,9 +77,27 @@ genericTileSizes.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
-The large (default) tiles are designed for screens larger than 374px. For smaller screens use the small tiles \`fd-tile--s\`.
--   Large Tile - 11 x 11rem
--   Small Tile - 9.25 x 9.25rem
+Generic tiles can be displayed in two tile dimensions: the default 1x1, and 2x1 by adding the \`fd-tile--double\` modifier class. 
+
+The typical generic tile dimensions include:
+        
+- Large tile (1 x 1) - 11 x 11rem
+- Large tile (2 x 1) - 22.5 x 11rem
+- Small tile (1 x 1) - 9.25 x 9.25rem
+- Small tile (2 x 1) - 19 x 9.25rem
+  
+ 
+
+The layout of the generic tile is fixed, with designated areas for the header, content area and footer. Below are the elements usually displayed in generic tiles:
+
+Element | Class | Description
+:------ | :------------- | :-----------
+Header (mandatory) | \`fd-tile__header\` | The tile displays a title and an optional subtitle.
+Title (mandatory) | \`fd-tile__title\` | The title can display up to two lines of text before it truncates (or three lines if there is no subtitle).
+Subtitle (optional) | \`fd-tile__subtitle\` | The subtitle can display one line of text before it truncates.
+Content (optional) | \`fd-tile__content\` | Generic tile can display content if necessary.
+Footer (optional) | \`fd-tile__footer\` | The footer can contain a refresh icon \`sap-icon--refresh\` and/or status.
+        
         ` }
 };
 
