@@ -1,7 +1,49 @@
 export default {
     title: 'Components/Message Box',
     parameters: {
-        description: 'Message Box is used to display simple messages (text) to the user. These messages could be Standard (Default), Confirmation, Error, Success, Warning and Information (Neutral). The Message Box component inherits the look and the basic behaviour (excludes dragging and resizing) of the Dialog component.',
+        description: `
+The message box displays a dialog with a simple message to the user. Contrary to the **Popover**, message box can relay messages unrelated to the UI, such as technical errors. This component inherits the look and behavior of the **Dialog** (excluding dragging/resizing).
+
+Note: Include two action buttons in the message box when the user's decision is required before continuing. The primary action button should always include the action they're performing, while the secondary buttons provides them with an option to cancel.
+
+**The messages can be displayed with semantic colors and icons to indicate:**
+
+- Error
+- Warning
+- Success
+- Information
+- Confirmation
+        
+
+##Usage
+
+**Use the message box if:**
+
+- You want to display non-field-related messages.
+- You want to interrupt the user while he or she performs an action.
+- You want to display error, warning, success, confirmation, or information messages.
+- You need to interrupt the user for some other reason.
+- You need the user to acknowledge the message.
+- You need the user to make a decision.
+     
+
+**Do not use the message box if:**
+
+- You want to display a short success message. Instead, use **Message Toast**.
+- You can show the message directly in a form field.
+        
+
+##Structure 
+**Message box follows the structure of a dialog, consisting of following elements:**
+
+- \`.fd-message-box\`: styles the backdrop and displays the message box container with \`position: fixed\`. The message box becomes visible by adding the \`.fd-message--active\` modifier class to the container.
+    - \`.fd-message__content\`: Content container
+        - \`.fd-message__header\`: Header
+            - \`.fd-message__title\`: Title
+        - \`.fd-message__body\`: Content body
+        - \`.fd-message__footer\`: Footer
+            - \`.fd-message__decisive-button\`: Action buttons in footer
+        `,
         tags: ['f3', 'a11y', 'theme'],
         components: ['message-box', 'title', 'bar', 'button', 'link']
     }
@@ -39,55 +81,18 @@ export const structure = () => `<div class="fd-message-box-docs-static fd-messag
 </div>
 `;
 
-structure.storyName = 'Structure';
+structure.storyName = 'Default';
 
 structure.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
         storyDescription: `
-The Message Box follows the Dialog structure and consists of following elements:
-
-- \`.fd-message-box\`: styles the Backdrop and displays the Message Box Container with \`position: fixed\`. The Message Box becomes visible by applying \`.fd-message--active\` modifier class.
-    - \`.fd-message__content\`: Message Box container
-        - \`.fd-message__header\`: Message Box Header
-            - \`.fd-message__title\`: Message Box Title
-        - \`.fd-message__body\`: Message Box Content
-        - \`.fd-message__footer\`: Message Box Footer
-            - \`.fd-message__decisive-button\`: Footer begin/end button
+The default message box displays a small dialog with a title, message text and action buttons. Use the default if the message is not suitable with one of the semantic type use cases.
     `
     }
 };
 
-export const types = () => `<div class="fd-message-box-docs-static fd-message-box fd-message-box--active">
-    <div class="fd-message-box__content">
-        <header class="fd-bar fd-bar--header fd-message-box__header">
-            <div class="fd-bar__left">
-                <div class="fd-bar__element">
-                    <h2 class="fd-title fd-title--h5">Standard</h2>
-                </div>
-            </div>
-        </header>
-        <div class="fd-message-box__body">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            <div class="fd-message-box__more">
-                <a href="#" class="fd-link" tabindex="0">Show more</a>
-            </div>
-        </div>
-        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
-            <div class="fd-bar__right">
-                <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
-                        Close
-                    </button>
-                </div>
-            </div>
-        </footer>
-    </div>
-</div>
-
-<br><br><br>
-
-<div class="fd-message-box-docs-static fd-message-box fd-message-box--confirmation fd-message-box--active">
+export const types = () => `<div class="fd-message-box-docs-static fd-message-box fd-message-box--confirmation fd-message-box--active">
     <div class="fd-message-box__content">
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
@@ -220,15 +225,23 @@ export const types = () => `<div class="fd-message-box-docs-static fd-message-bo
     </div>
 </div>
 `;
-types.storyName = 'Types';
+types.storyName = 'Semantic types';
 
 types.parameters = {
     docs: {
         iframeHeight: messageBoxHeight * 6.5,
-        storyDescription: `Available options are \`standard | confirmation | error | success | warning | information\`.
-        Add modifier classes \`fd-message-box--confirmation\`, \`fd-message-box--error\`, \`fd-message-box--success\`,
-        \`fd-message-box--warning\`, and \`fd-message-box--information\` to the container class.
-        For standard Message Box you don't need a modifier class.`
+        storyDescription: `
+The message box can be displayed with various semantic colors and icons, indicating the type of message being relayed.
+
+Semantic type | Modifier class | Description
+:------------------ | :------------------- | :---------------
+Confirmation | \`fd-message-box--confirmation\` | Confirmation messages prompt users to confirm an action that they have triggered. The title of the message box already includes the action that has to be confirmed, such as an intended deletion or an approval.
+Error&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \`fd-message-box--error\` | Error messages can be triggered after the user has entered incorrect data or a system error has occurred. They should interrupt the user by displaying a dialog. A final action such as _Submit_ cannot be carried out until the user has rectified the error.
+Success | \`fd-message-box--success\` | Success messages give feedback to the user that an action has been executed. The user needs to acknowledge the message.
+Warning | \`fd-message-box--warning\` | Warning messages highlight potential issues, but the user can still continue. This includes unintended data loss scenarios.
+Information | \`fd-message-box--information\` | Information messages provide information the user needs to acknowledge, but which does not involve a decision. The message provides information that is useful and relevant, but never critical.
+                
+        `
     }
 };
 
@@ -245,7 +258,7 @@ export const noIcon = () =>
             </div>
         </header>
         <div class="fd-message-box__body">
-            Success Message Box with no status icon in the title and "Show more" link in the body
+            Success message box without an icon in the title and a "Show more" link in the body.
             <div class="fd-message-box__more">
                 <a href="#" class="fd-link" tabindex="0">Show more</a>
             </div>
@@ -274,7 +287,7 @@ export const noIcon = () =>
             </div>
         </header>
         <div class="fd-message-box__body">
-            Error Message Box with no status icon in the title
+            Error message box without an icon in the title.
         </div>
         <footer class="fd-bar fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
@@ -293,8 +306,8 @@ noIcon.storyName = 'No icon';
 noIcon.parameters = {
     docs: {
         iframeHeight: messageBoxHeight * 2,
-        storyDescription: `To remove the semantic icon from the title of the Message Box apply the
-        \`fd-message-box--no-icon\` modifier class to the container.`
+        storyDescription: `Message box can be displayed without an icon. To remove the icon from the title, add the \`fd-message-box--no-icon\` modifier class to the container.
+        `
     }
 };
 
@@ -311,7 +324,7 @@ export const responsive = () =>
             </div>
         </header>
         <div class="fd-message-box__body">
-            Information Message Box on small screen in Cozy mode 
+            Informative message box for a small screen in cozy mode (mobile) and a "Show more" link in the body.
             <div class="fd-message-box__more">
                 <a href="#" class="fd-link" tabindex="0">Show more</a>
             </div>
@@ -340,7 +353,7 @@ export const responsive = () =>
             </div>
         </header>
         <div class="fd-message-box__body">
-            Error Message Box on medium screen in Cozy mode  
+            Error message box for a medium-sized screen in cozy mode (mobile). 
         </div>
         <footer class="fd-bar fd-bar--cozy fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
@@ -367,7 +380,7 @@ export const responsive = () =>
             </div>
         </header>
         <div class="fd-message-box__body">
-            Success Message Box on large screen in compact (desktop) mode  
+            Success message box for a large screen in compact mode (desktop).
         </div>
         <footer class="fd-bar fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
@@ -393,7 +406,7 @@ export const responsive = () =>
             </div>
         </header>
         <div class="fd-message-box__body">
-           Warning Message Box on extra large screen in compact (desktop) mode 
+           Warning message box for an extra large screen in compact mode (desktop). 
         </div>
         <footer class="fd-bar fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
@@ -413,19 +426,20 @@ responsive.parameters = {
     docs: {
         iframeHeight: messageBoxHeight * 4,
         storyDescription: `
-By default the Message Box body has 1rem padding all around the content. The values for the paddings in the header and the footer are inherited from the Bar component. 
+The message box has 1rem padding all around the body, and the header and footer both inherit their padding from the **Bar** component. Responsive horizontal padding can be applied to the header, body and footer of the message box; however, the amount depends on the screen size. 
 
-Horizontal responsive paddings can be applied to the header, the body and the footer of the Message Box. Their values depend on the screen size.
-To enable responsive behavior for the paddings use the following modifier classes on the content container:
+**To display responsive padding, add the following modifier classes to the content container:**
 
-- \`.fd-message-box__content--s\`: 1rem - max-width: 599px
-- \`.fd-message-box__content--m\`: 2rem - min-width: 600px and max-width: 1023px
-- \`.fd-message-box__content--l\`: 2rem - min-width: 1024px and max-width: 1439px
-- \`.fd-message-box__content--xl\`: 3rem - min-width: 1440px
+Modifier class | rem | Screen width
+------------------ | ---- | ---------------------
+\`fd-message-box__content--s\` | 1rem | <= 599px
+\`fd-message-box__content--m\` | 2rem | 600px - 1023px
+\`fd-message-box__content--l\` | 2rem | 1024px - 1439px
+\`fd-message-box__content--xl\` | 3rem | >= 1440px
 
-On mobile devices the component should be in \`cozy\` mode. Add the \`fd-bar--cozy\` modifier class to the header and the footer. The buttons in the footer should also be in Cozy mode. The deafult mode for Buttons is \`cozy\` so no modifier classes are required.
+####Mobile
 
-On phone devices the content container takes 100vh and 100vw. It's achieved by applying the \`fd-message-box__content--mobile\` modifier class on the Message Box content container.
-        `
+Enable cozy mode when message box is being displayed on mobile. To display message box in cozy mode, add the \`fd-bar--cozy\` modifier class to the header and footer (this will also apply to the buttons). It's also important to note that the content container should always take the full height and width of mobile screens. To achieve this, add the \`fd-message-box__content--mobile\` modifier class to the content container.
+         `
     }
 };
