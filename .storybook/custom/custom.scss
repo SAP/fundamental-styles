@@ -371,6 +371,15 @@ code.docs-code-grey {
   }
 }
 
+.themed-container {
+  background-color: #f7f7f7;
+  background-color: var(--sapBackgroundColor, #f7f7f7);
+}
+
+.sb-docs-intro {
+  color: #404040;
+}
+
 body.sb-show-main {
   background-color: #f7f7f7;
   background-color: var(--sapBackgroundColor, #f7f7f7);

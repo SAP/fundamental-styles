@@ -31,6 +31,14 @@ const DocsPage = () => {
         document.querySelectorAll('.toc-link').forEach(x => x.setAttribute('target', '_self'));
     }, []);
 
+    // make story containers themed by adding appropriate class
+    useEffect(() => {
+        document.getElementsByClassName('sbdocs-preview').forEach(storyPreview => {
+            const previewBody = storyPreview?.childNodes[1];
+            previewBody?.classList.add('themed-container');
+        });
+    }, []);
+
     const context = useContext(DocsContext);
 
     // do not display Dev or Visual stories in docs
@@ -101,11 +109,14 @@ const DocsPage = () => {
     return (
         <>
             <Header onThemeChange={(e) => setThemeState(e.target.value)} onDirectionalityChange={(e) => setDirectionalityState(e.target.value)} />
-            <Title />
-            <Toc />
-            <Subtitle />
-            {renderInfoLabels(context?.parameters?.tags)}
-            {context?.parameters?.description && <Description desc={context?.parameters?.description} />}
+            {/* wrapping intro content in the sb-docs-intro class for appropriate text color in all themes */}
+            <div className="sb-docs-intro">
+                <Title />
+                <Toc />
+                <Subtitle />
+                {renderInfoLabels(context?.parameters?.tags)}
+                {context?.parameters?.description && <Description desc={context?.parameters?.description} />}
+            </div>
             <Heading>Examples</Heading>
             {stories.map((story) => story && <DocsStory
                 key={story.id}
