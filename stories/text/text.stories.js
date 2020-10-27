@@ -54,7 +54,7 @@ To enable whitespace rendering add a <code class="docs-code">fd-text--pre-wrap</
 
 export const maxLines = () => `
     <h3>No max lines rule</h3>
-    <p className="fd-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    <p class="fd-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada bibendum arcu vitae elementum. Ut etiam sit
     amet nisl. Laoreet suspendisse interdum consectetur libero id faucibus nisl. Tellus in metus vulputate eu
     scelerisque felis imperdiet proin fermentum. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra

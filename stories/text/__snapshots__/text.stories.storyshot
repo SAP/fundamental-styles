@@ -81,7 +81,7 @@ exports[`Storyshots Components/Text Max lines 1`] = `
   
     
   <p
-    classname="fd-text"
+    class="fd-text"
   >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada bibendum arcu vitae elementum. Ut etiam sit
