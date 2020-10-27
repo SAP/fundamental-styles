@@ -683,10 +683,10 @@ export const withAdvancedToolbar = () => `
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button aria-label="navigation" class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact" onclick="toggleDialog('filter-dialog-example', false)">OK</button>
+                    <button aria-label="navigation" class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact" onclick="toggleClass('filter-dialog-example', 'fd-dialog--active')">OK</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button aria-label="navigation" class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact" onclick="toggleDialog('filter-dialog-example', false)">Cancel</button>
+                    <button aria-label="navigation" class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact" onclick="toggleClass('filter-dialog-example', 'fd-dialog--active')">Cancel</button>
                 </div>
             </div>
         </footer>
@@ -762,10 +762,10 @@ export const withAdvancedToolbar = () => `
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button aria-label="navigation" class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact" onclick="toggleDialog('settings-dialog-example', false)">OK</button>
+                    <button aria-label="navigation" class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact" onclick="toggleClass('settings-dialog-example', 'fd-dialog--active')">OK</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button aria-label="navigation" class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact" onclick="toggleDialog('settings-dialog-example', false)">Cancel</button>
+                    <button aria-label="navigation" class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact" onclick="toggleClass('settings-dialog-example', 'fd-dialog--active')">Cancel</button>
                 </div>
             </div>
         </footer>
@@ -774,10 +774,10 @@ export const withAdvancedToolbar = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table With Advanced Shellbar</h4>
     <div class="fd-toolbar__spacer"></div>
-    <button aria-label="navigation" class="fd-button fd-button--compact fd-button--transparent" onclick="toggleDialog('filter-dialog-example', true)">
+    <button aria-label="navigation" class="fd-button fd-button--compact fd-button--transparent" onclick="toggleClass('filter-dialog-example', 'fd-dialog--active')">
         <i class="sap-icon--filter"></i>
     </button>
-    <button aria-label="navigation" class="fd-button fd-button--compact fd-button--transparent" onclick="toggleDialog('settings-dialog-example', true)">
+    <button aria-label="navigation" class="fd-button fd-button--compact fd-button--transparent" onclick="toggleClass('settings-dialog-example', 'fd-dialog--active')">
         <i class="sap-icon--action-settings"></i>
     </button>
 </div>

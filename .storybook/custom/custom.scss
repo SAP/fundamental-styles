@@ -277,6 +277,11 @@ code.docs-code-grey {
   background-color: #f8f8f8;
 }
 
+.fd-dialog,
+.fd-message-box {
+  z-index: 100;
+}
+
 .fd-dialog-docs-static,
 .fd-message-box-docs-static {
   &.fd-dialog,

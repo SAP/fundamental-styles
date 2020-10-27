@@ -176,19 +176,6 @@
     }
 })();
 
-function toggleDialog(dialogId, show) {
-    let dialog = document.getElementById(dialogId);
-    if(!dialog){
-        console.warn('No dialog with id', dialogId);
-        return;
-    }
-    if (show) {
-        dialog.classList.add('fd-dialog--active');
-    } else {
-        dialog.classList.remove('fd-dialog--active');
-    }
-}
-
 function onControlClick(controlId) {
     let ref = document.getElementById(controlId);
 

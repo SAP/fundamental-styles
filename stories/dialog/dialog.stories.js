@@ -37,7 +37,7 @@ The dialog component is a container that appears in response to an action made b
 Note: Dialog's header, subheader and footer are elements from the **Bar** component. This means that dialog headers and footers can be customized using bar component features. To style the elements according to dialog’s needs, CSS classes are used to slightly override bar’s original behaviour.
 `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['dialog', 'input-group', 'icon', 'bar', 'button', 'title', 'icon']
+        components: ['dialog', 'input-group', 'icon', 'bar', 'button', 'title', 'icon', 'list', 'checkbox', 'busy-indicator']
     }
 };
 
@@ -99,7 +99,7 @@ defaultDialog.parameters = {
 };
 
 
-export const sizes = () =>`
+export const sizes = () => `
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
 <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-2">
     <header class="fd-dialog__header fd-bar fd-bar--header">
@@ -329,7 +329,7 @@ Dialog can be draggable, enabling the user to drag the container around with the
 };
 
 export const Selectable = () => `
-<button class="fd-button" onclick="toggleDialog('select-dialog-example', true)">Open example</button>
+<button class="fd-button" onclick="toggleClass('select-dialog-example', 'fd-dialog--active')">Open example</button>
 <div class="fd-dialog" id="select-dialog-example">
     <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-8">
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
@@ -349,34 +349,58 @@ export const Selectable = () => `
         <div class="fd-dialog__subheader fd-bar fd-bar--subheader">
             <div class="fd-bar__middle">
                 <div class="fd-input-group">
-                    <input class="fd-input fd-input-group__input fd-input--compact" type="text" placeholder="Search...">
+                    <input class="fd-input fd-input-group__input fd-input--compact" type="text" aria-label="search" placeholder="Search...">
                     <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                        <button class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact">
-                            <i class="sap-icon--search"></i>
+                        <button class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact" aria-label="perform search">
+                            <i class="sap-icon--search" role="presentation"></i>
                         </button>
                     </span>
                 </div>
             </div>
         </div>
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
-            <ul class="fd-list fd-list--compact">
-                <li class="fd-list__item">
-                    <span class="fd-list__title">List item 1</span>
+            <ul class="fd-list fd-list--selection fd-list--compact fd-list--no-border" aria-label="selection list" role="listbox">
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez4" aria-labelledby="Az0bg4">
+                        <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez4"></label>
+                    </div>
+                    <span class="fd-list__title" id="Az0bg4">List item 1</span>
                 </li>
-                <li class="fd-list__item">
-                    <span class="fd-list__title">List item 2</span>
+                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez5" checked aria-labelledby="Az0bg5">
+                        <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez5"></label>
+                    </div>
+                    <span class="fd-list__title" id="Az0bg5">List item 2</span>
                 </li>
-                <li class="fd-list__item is-active">
-                    <span class="fd-list__title">List item 3</span>
+                <li role="option" tabindex="0" class="fd-list__item is-selected">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6" checked aria-labelledby="Az0bg6">
+                        <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6"></label>
+                    </div>
+                    <span class="fd-list__title" id="Az0bg6">List item 3</span>
                 </li>
-                <li class="fd-list__item is-active">
-                    <span class="fd-list__title">List item 4</span>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4e44" aria-labelledby="440bg6">
+                        <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4e44"></label>
+                    </div>
+                    <span class="fd-list__title" id="440bg6">List item 4</span>
                 </li>
-                <li class="fd-list__item">
-                    <span class="fd-list__title">List item 5</span>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4e55" aria-labelledby="550bg6">
+                        <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4e55"></label>
+                    </div>
+                    <span class="fd-list__title" id="550bg6">List item 5</span>
                 </li>
-                <li class="fd-list__item">
-                    <span class="fd-list__title">List item 6</span>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4e66" aria-labelledby="660bg6">
+                        <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4e66"></label>
+                    </div>
+                    <span class="fd-list__title" id="660bg6">List item 6</span>
                 </li>
             </ul>
             <span class="fd-list__footer">
@@ -389,7 +413,7 @@ export const Selectable = () => `
                     <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Select</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact" onclick="toggleDialog('select-dialog-example', false)">Cancel</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact" onclick="toggleClass('select-dialog-example', 'fd-dialog--active')">Cancel</button>
                 </div>
             </div>
         </footer>
@@ -407,7 +431,7 @@ Selectable.parameters = {
 
 
 export const Loading = () => `
-<button class="fd-button" onclick="toggleDialog('loading-dialog-example', true)">Open example</button>
+<button class="fd-button" onclick="toggleClass('loading-dialog-example', 'fd-dialog--active')">Open example</button>
 <div class="fd-dialog" id="loading-dialog-example">
     <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-9">
         <header class="fd-dialog__header fd-bar fd-bar--header">
@@ -430,7 +454,7 @@ export const Loading = () => `
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact" onclick="toggleDialog('loading-dialog-example', false)">Cancel</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact" onclick="toggleClass('loading-dialog-example', 'fd-dialog--active')">Cancel</button>
                 </div>
             </div>
         </footer>
