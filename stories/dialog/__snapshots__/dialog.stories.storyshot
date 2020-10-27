@@ -285,7 +285,7 @@ exports[`Storyshots Components/Dialog Loading 1`] = `
 
   <button
     class="fd-button"
-    onclick="toggleDialog('loading-dialog-example', true)"
+    onclick="toggleClass('loading-dialog-example', 'fd-dialog--active')"
   >
     Open example
   </button>
@@ -394,7 +394,7 @@ exports[`Storyshots Components/Dialog Loading 1`] = `
                     
             <button
               class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact"
-              onclick="toggleDialog('loading-dialog-example', false)"
+              onclick="toggleClass('loading-dialog-example', 'fd-dialog--active')"
             >
               Cancel
             </button>
@@ -538,7 +538,7 @@ exports[`Storyshots Components/Dialog Selectable 1`] = `
 
   <button
     class="fd-button"
-    onclick="toggleDialog('select-dialog-example', true)"
+    onclick="toggleClass('select-dialog-example', 'fd-dialog--active')"
   >
     Open example
   </button>
@@ -631,6 +631,7 @@ exports[`Storyshots Components/Dialog Selectable 1`] = `
             
                     
             <input
+              aria-label="search"
               class="fd-input fd-input-group__input fd-input--compact"
               placeholder="Search..."
               type="text"
@@ -643,12 +644,14 @@ exports[`Storyshots Components/Dialog Selectable 1`] = `
               
                         
               <button
+                aria-label="perform search"
                 class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact"
               >
                 
                             
                 <i
                   class="sap-icon--search"
+                  role="presentation"
                 />
                 
                         
@@ -673,17 +676,45 @@ exports[`Storyshots Components/Dialog Selectable 1`] = `
         
             
         <ul
-          class="fd-list fd-list--compact"
+          aria-label="selection list"
+          class="fd-list fd-list--selection fd-list--compact fd-list--no-border"
+          role="listbox"
         >
           
                 
           <li
             class="fd-list__item"
+            role="option"
+            tabindex="0"
           >
+            
+                    
+            <div
+              class="fd-form-item fd-list__form-item"
+            >
+              
+                        
+              <input
+                aria-labelledby="Az0bg4"
+                class="fd-checkbox fd-checkbox--compact"
+                id="Ai4ez4"
+                type="checkbox"
+              />
+              
+                        
+              <label
+                class="fd-checkbox__label fd-checkbox__label--compact"
+                for="Ai4ez4"
+                tabindex="-1"
+              />
+              
+                    
+            </div>
             
                     
             <span
               class="fd-list__title"
+              id="Az0bg4"
             >
               List item 1
             </span>
@@ -693,12 +724,40 @@ exports[`Storyshots Components/Dialog Selectable 1`] = `
           
                 
           <li
-            class="fd-list__item"
+            aria-selected="true"
+            class="fd-list__item is-selected"
+            role="option"
+            tabindex="0"
           >
+            
+                    
+            <div
+              class="fd-form-item fd-list__form-item"
+            >
+              
+                        
+              <input
+                aria-labelledby="Az0bg5"
+                checked=""
+                class="fd-checkbox fd-checkbox--compact"
+                id="Ai4ez5"
+                type="checkbox"
+              />
+              
+                        
+              <label
+                class="fd-checkbox__label fd-checkbox__label--compact"
+                for="Ai4ez5"
+                tabindex="-1"
+              />
+              
+                    
+            </div>
             
                     
             <span
               class="fd-list__title"
+              id="Az0bg5"
             >
               List item 2
             </span>
@@ -708,12 +767,39 @@ exports[`Storyshots Components/Dialog Selectable 1`] = `
           
                 
           <li
-            class="fd-list__item is-active"
+            class="fd-list__item is-selected"
+            role="option"
+            tabindex="0"
           >
+            
+                    
+            <div
+              class="fd-form-item fd-list__form-item"
+            >
+              
+                        
+              <input
+                aria-labelledby="Az0bg6"
+                checked=""
+                class="fd-checkbox fd-checkbox--compact"
+                id="Ai4ez6"
+                type="checkbox"
+              />
+              
+                        
+              <label
+                class="fd-checkbox__label fd-checkbox__label--compact"
+                for="Ai4ez6"
+                tabindex="-1"
+              />
+              
+                    
+            </div>
             
                     
             <span
               class="fd-list__title"
+              id="Az0bg6"
             >
               List item 3
             </span>
@@ -723,12 +809,38 @@ exports[`Storyshots Components/Dialog Selectable 1`] = `
           
                 
           <li
-            class="fd-list__item is-active"
+            class="fd-list__item"
+            role="option"
+            tabindex="0"
           >
+            
+                    
+            <div
+              class="fd-form-item fd-list__form-item"
+            >
+              
+                        
+              <input
+                aria-labelledby="440bg6"
+                class="fd-checkbox fd-checkbox--compact"
+                id="Ai4e44"
+                type="checkbox"
+              />
+              
+                        
+              <label
+                class="fd-checkbox__label fd-checkbox__label--compact"
+                for="Ai4e44"
+                tabindex="-1"
+              />
+              
+                    
+            </div>
             
                     
             <span
               class="fd-list__title"
+              id="440bg6"
             >
               List item 4
             </span>
@@ -739,11 +851,37 @@ exports[`Storyshots Components/Dialog Selectable 1`] = `
                 
           <li
             class="fd-list__item"
+            role="option"
+            tabindex="0"
           >
+            
+                    
+            <div
+              class="fd-form-item fd-list__form-item"
+            >
+              
+                        
+              <input
+                aria-labelledby="550bg6"
+                class="fd-checkbox fd-checkbox--compact"
+                id="Ai4e55"
+                type="checkbox"
+              />
+              
+                        
+              <label
+                class="fd-checkbox__label fd-checkbox__label--compact"
+                for="Ai4e55"
+                tabindex="-1"
+              />
+              
+                    
+            </div>
             
                     
             <span
               class="fd-list__title"
+              id="550bg6"
             >
               List item 5
             </span>
@@ -754,11 +892,37 @@ exports[`Storyshots Components/Dialog Selectable 1`] = `
                 
           <li
             class="fd-list__item"
+            role="option"
+            tabindex="0"
           >
+            
+                    
+            <div
+              class="fd-form-item fd-list__form-item"
+            >
+              
+                        
+              <input
+                aria-labelledby="660bg6"
+                class="fd-checkbox fd-checkbox--compact"
+                id="Ai4e66"
+                type="checkbox"
+              />
+              
+                        
+              <label
+                class="fd-checkbox__label fd-checkbox__label--compact"
+                for="Ai4e66"
+                tabindex="-1"
+              />
+              
+                    
+            </div>
             
                     
             <span
               class="fd-list__title"
+              id="660bg6"
             >
               List item 6
             </span>
@@ -814,7 +978,7 @@ exports[`Storyshots Components/Dialog Selectable 1`] = `
                     
             <button
               class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact"
-              onclick="toggleDialog('select-dialog-example', false)"
+              onclick="toggleClass('select-dialog-example', 'fd-dialog--active')"
             >
               Cancel
             </button>

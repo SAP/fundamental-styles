@@ -5812,7 +5812,7 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
             <button
               aria-label="navigation"
               class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact"
-              onclick="toggleDialog('filter-dialog-example', false)"
+              onclick="toggleClass('filter-dialog-example', 'fd-dialog--active')"
             >
               OK
             </button>
@@ -5829,7 +5829,7 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
             <button
               aria-label="navigation"
               class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact"
-              onclick="toggleDialog('filter-dialog-example', false)"
+              onclick="toggleClass('filter-dialog-example', 'fd-dialog--active')"
             >
               Cancel
             </button>
@@ -6199,7 +6199,7 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
             <button
               aria-label="navigation"
               class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact"
-              onclick="toggleDialog('settings-dialog-example', false)"
+              onclick="toggleClass('settings-dialog-example', 'fd-dialog--active')"
             >
               OK
             </button>
@@ -6216,7 +6216,7 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
             <button
               aria-label="navigation"
               class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact"
-              onclick="toggleDialog('settings-dialog-example', false)"
+              onclick="toggleClass('settings-dialog-example', 'fd-dialog--active')"
             >
               Cancel
             </button>
@@ -6257,7 +6257,7 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
     <button
       aria-label="navigation"
       class="fd-button fd-button--compact fd-button--transparent"
-      onclick="toggleDialog('filter-dialog-example', true)"
+      onclick="toggleClass('filter-dialog-example', 'fd-dialog--active')"
     >
       
         
@@ -6272,7 +6272,7 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
     <button
       aria-label="navigation"
       class="fd-button fd-button--compact fd-button--transparent"
-      onclick="toggleDialog('settings-dialog-example', true)"
+      onclick="toggleClass('settings-dialog-example', 'fd-dialog--active')"
     >
       
         
