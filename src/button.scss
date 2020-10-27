@@ -334,7 +334,6 @@ $block: #{$fd-namespace}-button;
   }
 
   @include fd-active-pressed-selected() {
-    @include buttonContainerFocus();
     @include buttonContainerPressedFocus();
   }
 
