@@ -48,8 +48,8 @@ export const standard = () => `<h4>Standard size</h4>
     </div>
 </li>
 <li role="listitem" tabindex="0" class="fd-list__item">
-  <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
-style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
+  <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
   <div class="fd-list__content">
       <div class="fd-list__title">List item with 2-column byline</div>
       <div class="fd-list__byline fd-list__byline--2-col">
@@ -82,8 +82,8 @@ style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span
     </div>
 </li>
 <li role="listitem" tabindex="0" class="fd-list__item">
-  <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
-style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
+  <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
   <div class="fd-list__content">
       <div class="fd-list__title">List item with 2-column byline</div>
       <div class="fd-list__byline fd-list__byline--2-col">
@@ -131,8 +131,8 @@ export const navigation = () => `<ul class="fd-list fd-list--byline fd-list--nav
 </li>
 <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
   <a tabindex="0" class="fd-list__link" href="#"> 
-      <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
-  style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
+      <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+  style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
       <div class="fd-list__content">
           <div class="fd-list__title">List item with 2-column byline</div>
           <div class="fd-list__byline fd-list__byline--2-col">
@@ -181,8 +181,8 @@ export const navigationIndicator = () => `<ul class="fd-list fd-list--byline fd-
   </a> 
 </li>
 <li role="listitem" tabindex="-1" class="fd-list__item">
-      <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
-  style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
+      <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+  style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
       <div class="fd-list__content">
           <div class="fd-list__title">List item with 2-column byline</div>
           <div class="fd-list__byline fd-list__byline--2-col">
@@ -220,8 +220,8 @@ export const borderless = () => `<ul class="fd-list fd-list--no-border fd-list--
     </div>
 </li>
 <li role="listitem" tabindex="0" class="fd-list__item">
-  <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
-style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
+  <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
   <div class="fd-list__content">
       <div class="fd-list__title">List item with 2-column byline</div>
       <div class="fd-list__byline fd-list__byline--2-col">
@@ -269,8 +269,8 @@ export const selection = () => `<h4 id="O09lk9">Standard size</h4>
         <input type="checkbox" class="fd-checkbox" id="Ai4ez6112X" aria-labelledby="O09lk2">
         <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6112X"></label>
     </div>
-  <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
-style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
+  <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
   <div class="fd-list__content">
       <div class="fd-list__title" id="O09lk2">List item with 2-column byline</div>
       <div class="fd-list__byline fd-list__byline--2-col">
@@ -309,8 +309,8 @@ style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span
         <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6116B" aria-labelledby="O09lk5">
         <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6116B"></label>
     </div>
-  <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
-style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
+  <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
   <div class="fd-list__content">
       <div class="fd-list__title" id="O09lk5">List item with 2-column byline</div>
       <div class="fd-list__byline fd-list__byline--2-col">
@@ -359,8 +359,8 @@ export const selectionAndNavigation = () => `<h4 id="Ki81L1">Standard Size</h4>
       <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6119N"></label>
   </div>
   <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
-  <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
-style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
+  <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
   <div class="fd-list__content">
       <div class="fd-list__title" id="Ki81L3">List item with 2-column byline</div>
       <div class="fd-list__byline fd-list__byline--2-col">
@@ -404,8 +404,8 @@ style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span
       <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6119CON" checked aria-labelledby="Ki81L7">
       <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6119CON"></label>
   </div>
-  <span class="fd-image--s fd-list__thumbnail" aria-label="Image label"
-style="background-image: url('http://lorempixel.com/400/400/nature/5/');"></span>
+  <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
   <div class="fd-list__content">
       <div class="fd-list__title" id="Ki81L7">List item with 2-column byline</div>
       <div class="fd-list__byline fd-list__byline--2-col">

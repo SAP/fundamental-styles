@@ -51,7 +51,7 @@ exports[`Storyshots Components/Tile/Specific Badge Tile 1`] = `
         aria-label="Profile Image"
         class="fd-tile__profile-img"
         role="presentation"
-        style="background-image: url('https://loremflickr.com/cache/resized/65535_50178620828_b62a994cb0_q_80_80_nofilter.jpg')"
+        style="background-image: url('assets/images/avatars/5.svg')"
       />
       
         
@@ -121,7 +121,7 @@ exports[`Storyshots Components/Tile/Specific Badge Tile 1`] = `
         aria-label="Profile Image"
         class="fd-tile__profile-img"
         role="presentation"
-        style="background-image: url('https://loremflickr.com/cache/resized/65535_50178620828_b62a994cb0_q_80_80_nofilter.jpg')"
+        style="background-image: url('assets/images/avatars/5.svg')"
       />
       
         
@@ -1774,7 +1774,7 @@ exports[`Storyshots Components/Tile/Specific Launch Tile 1`] = `
           aria-label="Profile Image"
           class="fd-tile__profile-img"
           role="presentation"
-          style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/ImageContent/images/ProfileImage_LargeGenTile.png')"
+          style="background-image: url('assets/images/avatars/2.svg')"
         />
         
         
@@ -1837,7 +1837,7 @@ exports[`Storyshots Components/Tile/Specific Launch Tile 1`] = `
           aria-label="Profile Image"
           class="fd-tile__profile-img"
           role="presentation"
-          style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/ImageContent/images/ProfileImage_LargeGenTile.png')"
+          style="background-image: url('assets/images/avatars/2.svg')"
         />
         
         
@@ -4321,7 +4321,7 @@ exports[`Storyshots Components/Tile/Specific Slide Tile 1`] = `
         
     <div
       class="fd-tile__background-img"
-      style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png')"
+      style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
     />
     
         
@@ -4421,7 +4421,7 @@ exports[`Storyshots Components/Tile/Specific Slide Tile 1`] = `
         
     <div
       class="fd-tile__background-img"
-      style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png')"
+      style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
     />
     
         
@@ -4521,7 +4521,7 @@ exports[`Storyshots Components/Tile/Specific Slide Tile 1`] = `
         
     <div
       class="fd-tile__background-img"
-      style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png')"
+      style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
     />
     
         
@@ -4631,7 +4631,7 @@ exports[`Storyshots Components/Tile/Specific Slide Tile 1`] = `
         
     <div
       class="fd-tile__background-img"
-      style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png')"
+      style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
     />
     
         
@@ -4813,7 +4813,7 @@ exports[`Storyshots Components/Tile/Specific Tile In Action Mode 1`] = `
         aria-label="Profile Image"
         class="fd-tile__profile-img"
         role="presentation"
-        style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/ImageContent/images/ProfileImage_LargeGenTile.png')"
+        style="background-image: url('assets/images/avatars/2.svg')"
       />
       
         
@@ -4910,7 +4910,7 @@ exports[`Storyshots Components/Tile/Specific Tile In Action Mode 1`] = `
         aria-label="Profile Image"
         class="fd-tile__profile-img"
         role="presentation"
-        style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/ImageContent/images/ProfileImage_LargeGenTile.png')"
+        style="background-image: url('assets/images/avatars/2.svg')"
       />
       
         
@@ -4944,7 +4944,7 @@ exports[`Storyshots Components/Tile/Specific Tile In Action Mode 1`] = `
         
     <div
       class="fd-tile__background-img"
-      style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png')"
+      style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
     />
     
         
@@ -5088,7 +5088,7 @@ exports[`Storyshots Components/Tile/Specific Tile In Action Mode 1`] = `
         
     <div
       class="fd-tile__background-img"
-      style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png')"
+      style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
     />
     
         

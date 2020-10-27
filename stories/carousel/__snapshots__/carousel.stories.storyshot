@@ -1071,76 +1071,42 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
       
             
       <div
-        class="fd-carousel__item"
-      >
-        
-                
-        <img
-          alt="Carousel Image 1"
-          src="https://loremflickr.com/cache/resized/65535_50324970052_954b023105_z_400_400_nofilter.jpg"
-        />
-        
-            
-      </div>
-      
-            
-      <div
-        class="fd-carousel__item"
-      >
-        
-                
-        <img
-          alt="Carousel Image 2"
-          src="https://loremflickr.com/cache/resized/65535_50157218336_40a662e5b1_z_400_400_nofilter.jpg"
-        />
-        
-            
-      </div>
-      
-            
-      <div
-        class="fd-carousel__item"
-      >
-        
-                
-        <img
-          alt="Carousel Image 3"
-          src="https://loremflickr.com/cache/resized/65535_50136925591_e657f283f8_z_400_400_nofilter.jpg"
-        />
-        
-            
-      </div>
-      
-            
-      <div
         class="fd-carousel__item fd-carousel__item--active"
       >
         
                 
-        <img
-          alt="Carousel Image 4"
-          src="https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg"
-        />
-        
+        <div
+          aria-label="Carousel Image 4"
+          role="img"
+          style="
+                        width:100%;
+                        background-image: url(assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg);
+                        height: 15.5rem;
+                        background-size:cover;"
+        >
+          
             
+        </div>
+        
+        
       </div>
       
-        
+    
     </div>
     
     
-  </div>
-  
-    
-  <div
-    aria-live="polite"
-    id="carousel-8"
-    role="region"
-    style="display: none;"
-  >
-    
+    <div
+      aria-live="polite"
+      id="carousel-8"
+      role="region"
+      style="display: none;"
+    >
+      
         Displaying item 1 of 4
     
+    </div>
+    
+
   </div>
   
 

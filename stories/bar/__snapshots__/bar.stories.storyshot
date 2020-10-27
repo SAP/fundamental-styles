@@ -160,43 +160,41 @@ exports[`Storyshots Components/Bar Cozy 1`] = `
       
             
       <span
-        aria-label="Image label"
-        class="fd-image--s"
-        style="background-image: url('https://placeimg.com/400/400/nature');"
-      >
-        
-            
-      </span>
+        aria-label="John Doe"
+        class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+        role="presentation"
+        style="background-image: url('/assets/images/avatars/1.svg')"
+      />
       
-        
+            
     </div>
     
         
-    <div
-      class="fd-bar__element"
-    >
-      
-            
-      <button
-        aria-label="button"
-        class="fd-button fd-button--transparent"
-      >
-        
-                
-        <i
-          class="sap-icon--grid"
-        />
-        
-            
-      </button>
-      
-        
-    </div>
-    
-    
   </div>
   
-
+        
+  <div
+    class="fd-bar__element"
+  >
+    
+            
+    <button
+      aria-label="button"
+      class="fd-button fd-button--transparent"
+    >
+      
+                
+      <i
+        class="sap-icon--grid"
+      />
+      
+            
+    </button>
+    
+        
+  </div>
+  
+    
 </div>
 `;
 
@@ -329,15 +327,13 @@ exports[`Storyshots Components/Bar Default 1`] = `
       class="fd-bar__element"
     >
       
-            
-      <span
-        aria-label="Image label"
-        class="fd-image--s"
-        style="background-image: url('https://placeimg.com/400/400/nature');"
-      >
         
-            
-      </span>
+      <span
+        aria-label="John Doe"
+        class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+        role="presentation"
+        style="background-image: url('/assets/images/avatars/1.svg')"
+      />
       
         
     </div>
@@ -818,45 +814,44 @@ exports[`Storyshots Components/Bar Header 1`] = `
         
             
         <span
-          aria-label="Image label"
-          class="fd-image--s"
-          style="background-image: url('https://placeimg.com/400/400/nature');"
-        >
-          
+          aria-label="John Doe"
+          class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+          role="presentation"
+          style="background-image: url('/assets/images/avatars/1.svg')"
+        />
+        
             
-        </span>
-        
-        
       </div>
       
         
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent"
-        >
-          
-                
-          <i
-            class="sap-icon--grid"
-          />
-          
-            
-        </button>
-        
-        
-      </div>
-      
-    
     </div>
     
-
+        
+    <div
+      class="fd-bar__element"
+    >
+      
+            
+      <button
+        aria-label="button"
+        class="fd-button fd-button--transparent"
+      >
+        
+                
+        <i
+          class="sap-icon--grid"
+        />
+        
+            
+      </button>
+      
+        
+    </div>
+    
+    
   </div>
   
+
 
   <br />
   <br />
@@ -1031,45 +1026,44 @@ exports[`Storyshots Components/Bar Header 1`] = `
         
             
         <span
-          aria-label="Image label"
-          class="fd-image--s"
-          style="background-image: url('https://placeimg.com/400/400/nature');"
-        >
-          
+          aria-label="John Doe"
+          class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+          role="presentation"
+          style="background-image: url('/assets/images/avatars/1.svg')"
+        />
+        
             
-        </span>
-        
-        
       </div>
       
         
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent"
-        >
-          
-                
-          <i
-            class="sap-icon--grid"
-          />
-          
-            
-        </button>
-        
-        
-      </div>
-      
-    
     </div>
     
-
+        
+    <div
+      class="fd-bar__element"
+    >
+      
+            
+      <button
+        aria-label="button"
+        class="fd-button fd-button--transparent"
+      >
+        
+                
+        <i
+          class="sap-icon--grid"
+        />
+        
+            
+      </button>
+      
+        
+    </div>
+    
+    
   </div>
   
+
 
 </section>
 `;
@@ -1247,45 +1241,44 @@ exports[`Storyshots Components/Bar Header With Subheader 1`] = `
         
             
         <span
-          aria-label="Image label"
-          class="fd-image--s"
-          style="background-image: url('https://placeimg.com/400/400/nature');"
-        >
-          
-            
-        </span>
+          aria-label="John Doe"
+          class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+          role="presentation"
+          style="background-image: url('/assets/images/avatars/1.svg')"
+        />
         
         
       </div>
       
         
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent"
-        >
-          
-                
-          <i
-            class="sap-icon--grid"
-          />
-          
-            
-        </button>
-        
-        
-      </div>
-      
-    
     </div>
     
-
+        
+    <div
+      class="fd-bar__element"
+    >
+      
+            
+      <button
+        aria-label="button"
+        class="fd-button fd-button--transparent"
+      >
+        
+                
+        <i
+          class="sap-icon--grid"
+        />
+        
+            
+      </button>
+      
+        
+    </div>
+    
+    
   </div>
   
+
 
   <div
     class="fd-bar fd-bar--subheader"
@@ -1406,45 +1399,44 @@ exports[`Storyshots Components/Bar Subheader 1`] = `
         
             
         <span
-          aria-label="Image label"
-          class="fd-image--s"
-          style="background-image: url('https://placeimg.com/400/400/nature');"
-        >
-          
+          aria-label="John Doe"
+          class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+          role="presentation"
+          style="background-image: url('/assets/images/avatars/1.svg')"
+        />
+        
             
-        </span>
-        
-        
       </div>
       
         
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <button
-          aria-label="button"
-          class="fd-button fd-button--compact fd-button--transparent"
-        >
-          
-                
-          <i
-            class="sap-icon--grid"
-          />
-          
-            
-        </button>
-        
-        
-      </div>
-      
-    
     </div>
     
-
+        
+    <div
+      class="fd-bar__element"
+    >
+      
+            
+      <button
+        aria-label="button"
+        class="fd-button fd-button--compact fd-button--transparent"
+      >
+        
+                
+        <i
+          class="sap-icon--grid"
+        />
+        
+            
+      </button>
+      
+        
+    </div>
+    
+    
   </div>
   
+
 
   <br />
   <br />

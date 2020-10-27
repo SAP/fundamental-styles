@@ -39,7 +39,7 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
             <a class="fd-card__header" tabindex="0">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')" 
+                    style="background-image: url('/assets/images/backgrounds/city.jpg')" 
                     role="presentation" 
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
@@ -61,7 +61,7 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
             <a class="fd-card__header" tabindex="0">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')" 
+                    style="background-image: url('/assets/images/backgrounds/city.jpg')" 
                     role="presentation" 
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
@@ -81,7 +81,7 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
             <a class="fd-card__header" tabindex="0">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')" 
+                    style="background-image: url('/assets/images/backgrounds/city.jpg')" 
                     role="presentation" 
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
@@ -102,7 +102,7 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
             <a class="fd-card__header" tabindex="0">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')" 
+                    style="background-image: url('/assets/images/backgrounds/city.jpg')" 
                     role="presentation" 
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
@@ -568,7 +568,7 @@ export const objectCard = () => `<div style="display:flex; justify-content:space
             <a class="fd-card__header" tabindex="0">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')" 
+                    style="background-image: url('/assets/images/avatars/1.svg')" 
                     role="presentation" 
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
@@ -632,7 +632,7 @@ export const objectCard = () => `<div style="display:flex; justify-content:space
             <a class="fd-card__header" tabindex="0">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')" 
+                    style="background-image: url('/assets/images/avatars/1.svg')" 
                     role="presentation" 
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
