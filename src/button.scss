@@ -57,6 +57,7 @@ $block: #{$fd-namespace}-button;
   padding-left: $fd-button-padding-x;
   padding-right: $fd-button-padding-x;
   text-align: center;
+  text-shadow: var(--fdButton_Text_Shadow);
 
   // look
   border-style: solid;
@@ -333,7 +334,6 @@ $block: #{$fd-namespace}-button;
   }
 
   @include fd-active-pressed-selected() {
-    @include buttonContainerFocus();
     @include buttonContainerPressedFocus();
   }
 

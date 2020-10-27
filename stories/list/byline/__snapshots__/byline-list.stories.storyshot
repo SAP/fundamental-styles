@@ -92,9 +92,9 @@ exports[`Storyshots Components/List/Byline Borderless 1`] = `
     
   
     <span
-      aria-label="Image label"
+      aria-label="Godafoss waterfall in northern Iceland"
       class="fd-image--s fd-list__thumbnail"
-      style="background-image: url('http://lorempixel.com/400/400/nature/5/');"
+      style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"
     />
     
   
@@ -296,9 +296,9 @@ exports[`Storyshots Components/List/Byline Default 1`] = `
       
   
       <span
-        aria-label="Image label"
+        aria-label="Godafoss waterfall in northern Iceland"
         class="fd-image--s fd-list__thumbnail"
-        style="background-image: url('http://lorempixel.com/400/400/nature/5/');"
+        style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"
       />
       
   
@@ -474,9 +474,9 @@ exports[`Storyshots Components/List/Byline Default 1`] = `
       
   
       <span
-        aria-label="Image label"
+        aria-label="Godafoss waterfall in northern Iceland"
         class="fd-image--s fd-list__thumbnail"
-        style="background-image: url('http://lorempixel.com/400/400/nature/5/');"
+        style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"
       />
       
   
@@ -677,9 +677,9 @@ exports[`Storyshots Components/List/Byline Navigation 1`] = `
        
       
       <span
-        aria-label="Image label"
+        aria-label="Godafoss waterfall in northern Iceland"
         class="fd-image--s fd-list__thumbnail"
-        style="background-image: url('http://lorempixel.com/400/400/nature/5/');"
+        style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"
       />
       
       
@@ -883,9 +883,9 @@ exports[`Storyshots Components/List/Byline Navigation indicators 1`] = `
     
       
     <span
-      aria-label="Image label"
+      aria-label="Godafoss waterfall in northern Iceland"
       class="fd-image--s fd-list__thumbnail"
-      style="background-image: url('http://lorempixel.com/400/400/nature/5/');"
+      style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"
     />
     
       
@@ -1046,9 +1046,9 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
       
   
       <span
-        aria-label="Image label"
+        aria-label="Godafoss waterfall in northern Iceland"
         class="fd-image--s fd-list__thumbnail"
-        style="background-image: url('http://lorempixel.com/400/400/nature/5/');"
+        style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"
       />
       
   
@@ -1264,9 +1264,9 @@ exports[`Storyshots Components/List/Byline Selection 1`] = `
       
   
       <span
-        aria-label="Image label"
+        aria-label="Godafoss waterfall in northern Iceland"
         class="fd-image--s fd-list__thumbnail"
-        style="background-image: url('http://lorempixel.com/400/400/nature/5/');"
+        style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"
       />
       
   
@@ -1495,9 +1495,9 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
         
   
         <span
-          aria-label="Image label"
+          aria-label="Godafoss waterfall in northern Iceland"
           class="fd-image--s fd-list__thumbnail"
-          style="background-image: url('http://lorempixel.com/400/400/nature/5/');"
+          style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"
         />
         
   
@@ -1737,9 +1737,9 @@ exports[`Storyshots Components/List/Byline Selection with navigation 1`] = `
       
   
       <span
-        aria-label="Image label"
+        aria-label="Godafoss waterfall in northern Iceland"
         class="fd-image--s fd-list__thumbnail"
-        style="background-image: url('http://lorempixel.com/400/400/nature/5/');"
+        style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"
       />
       
   

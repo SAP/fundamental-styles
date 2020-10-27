@@ -340,17 +340,15 @@ export const carouselTop = () => `<div style="display: flex; flex-direction: col
             </button>
         </div>
         <div class="fd-carousel__content" style="text-align: center; padding: 1rem; min-height: 15.5rem;">
-            <div class="fd-carousel__item">
-                <img src="https://loremflickr.com/cache/resized/65535_50324970052_954b023105_z_400_400_nofilter.jpg" alt="Carousel Image 1" />
-            </div>
-            <div class="fd-carousel__item">
-                <img src="https://loremflickr.com/cache/resized/65535_50157218336_40a662e5b1_z_400_400_nofilter.jpg" alt="Carousel Image 2" />
-            </div>
-            <div class="fd-carousel__item">
-                <img src="https://loremflickr.com/cache/resized/65535_50136925591_e657f283f8_z_400_400_nofilter.jpg" alt="Carousel Image 3" />
-            </div>
             <div class="fd-carousel__item fd-carousel__item--active">
-                <img src="https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg" alt="Carousel Image 4" />
+                <div
+                    style="
+                        width:100%;
+                        background-image: url(assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg);
+                        height: 15.5rem;
+                        background-size:cover;"
+                    role="img"
+                    aria-label="Carousel Image 4" />
             </div>
         </div>
     </div>
