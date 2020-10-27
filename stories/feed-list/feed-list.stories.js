@@ -140,7 +140,7 @@ export const linked = () => `<ul class="fd-feed-list" aria-label="Feed List Item
 linked.storyName = 'Linked';
 linked.parameters = {
     docs: {
-        storyDescription: 'The feed list item can display linked usernames (and images). To display a linked username, add the <code class="docs-code">fd-link</code> class with the <code class="docs-code">fd-link--emphasized</code> modifier to the <code class="docs-code">fd-feed-list__name element.</code>'
+        storyDescription: 'The feed list item can display linked usernames (and images). To display a linked username, add the <code class="docs-code">fd-link</code> class with the <code class="docs-code">fd-link--emphasized</code> modifier to the <code class="docs-code">fd-feed-list__name</code> element.'
     }
 };
 
@@ -270,7 +270,7 @@ export const withActions = () => `<ul class="fd-feed-list" aria-label="Feed List
 withActions.storyName = 'Actions';
 withActions.parameters = {
     docs: {
-        storyDescription: 'Feed list items can display actions that users can perform on their individual feed posts. These typically include actions like Edit and Delete, however, other actions can be displayed depending on the use case. It is recommended to display a maximum of 5 actions per post.'
+        storyDescription: 'Feed list items can display actions that users can perform on their individual feed posts. These typically include actions like <i>Edit</i> and <i>Delete</i>, however, other actions can be displayed depending on the use case. It is recommended to display a maximum of 5 actions per post.'
     }
 };
 
@@ -412,7 +412,7 @@ export const borderless = () => `<ul class="fd-feed-list fd-feed-list--group fd-
 borderless.storyName = 'Borderless group';
 borderless.parameters = {
     docs: {
-        storyDescription: 'The example below displays a feed list item without a separated border'
+        storyDescription: 'When feed list items are displayed in a group, they are usually separated by borders. However, to remove the borders, add the <code class="docs-code">fd-feed-list--no-border</code> modifier class to the main element.'
     }
 };
 
@@ -489,74 +489,5 @@ mobile.storyName = 'Mobile';
 mobile.parameters = {
     docs: {
         storyDescription: 'The feed list item can be mobile responsive by adding the <code class="docs-code">fd-feed-list--s</code> modifier class to the main element.'
-    }
-};
-
-export const rtl = () => `<div dir="rtl">
-    <ul class="fd-feed-list" aria-label="Feed List Item with RTL direction example">
-        <li class="fd-feed-list__body">
-            <div 
-                class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
-                style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
-                role="img" 
-                aria-label="John Doe"
-                title="John Doe">    
-            </div>
-        
-            <div class="fd-feed-list__content">
-                <div class="fd-feed-list__actions">
-                    <div class="fd-popover">
-                        <div class="fd-popover__control">
-                            <button class="fd-button fd-button--compact fd-button--transparent" 
-                                    aria-label="More Options" aria-controls="actionSheetDesktopRTL" aria-expanded="false" 
-                                    aria-haspopup="true" onclick="onPopoverClick('actionSheetDesktopRTL');">
-                                <i class="sap-icon--overflow"></i>
-                            </button>
-                        </div>
-                        <div class="fd-popover__body" aria-hidden="true" id="actionSheetDesktopRTL">
-                            <ul class="fd-action-sheet fd-action-sheet--compact" role="list" aria-label="List of contextual options">
-                                <li class="fd-action-sheet__item" role="listitem">
-                                    <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                                        <i class="sap-icon--attachment"></i>
-                                        <span class="fd-button__text">Button 1</span>
-                                    </button>
-                                </li>
-                                <li class="fd-action-sheet__item" role="listitem">
-                                    <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                                        <i class="sap-icon--add"></i>
-                                        <span class="fd-button__text">Button 2</span>
-                                    </button>
-                                </li>
-                                <li class="fd-action-sheet__item" role="listitem">
-                                    <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
-                                        <i class="sap-icon--print"></i>
-                                        <span class="fd-button__text">Button 3</span>
-                                    </button>
-                                </li>
-                            </ul>
-                            </div>
-                        </div>
-                    </div>
-            
-                <p dir="rtl" class="fd-feed-list__text">
-                    <span class="fd-feed-list__name">Joe Doe: </span>
-                    <span>Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.</span>
-                </p>
-                
-                <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
-                    <small class="fd-feed-list__footer--byline">Reply</small>
-                </div>
-            </div>          
-        </li>    
-    </ul>
-</div>
-`;
-
-rtl.storyName = 'RTL';
-rtl.parameters = {
-    docs: {
-        storyDescription: 'The feed list item can display from right to left on the screen, so that it may be used internationally.',
-        skipRTLSnapshot: true
     }
 };
