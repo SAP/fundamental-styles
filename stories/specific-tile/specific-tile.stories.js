@@ -613,7 +613,7 @@ To create a Slide Tile, use the \`fd-tile--slide\` modifier class.
 export const tileInActionMode = () => `<div class="fddocs-container">
     <div role="button" tabindex="0" class="fd-tile fd-tile--launch fd-tile--action">
         <div class="fd-tile__overlay"></div>
-        <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
+        <button aria-label="close button" class="fd-button fd-button--compact fd-button--ghost fd-tile__action-close">
                     <i class="sap-icon--decline" role="presentation"></i>
                 </button><button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
                     <i class="sap-icon--overflow" role="presentation"></i>
@@ -631,7 +631,7 @@ export const tileInActionMode = () => `<div class="fddocs-container">
     </div>
     <div role="button" tabindex="0" class="fd-tile fd-tile--launch fd-tile--s fd-tile--action">
         <div class="fd-tile__overlay"></div>
-        <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
+        <button aria-label="close button" class="fd-button fd-button--compact fd-button--ghost fd-tile__action-close">
                     <i class="sap-icon--decline" role="presentation"></i>
                 </button><button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
                     <i class="sap-icon--overflow" role="presentation"></i>
@@ -651,7 +651,7 @@ export const tileInActionMode = () => `<div class="fddocs-container">
         <div class="fd-tile__background-img" style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png')"></div>
         <div class="fd-tile__overlay"></div>
         <button aria-label="toggle button" class="fd-tile__toggle fd-tile__toggle--pause"></button>
-        <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
+        <button aria-label="close button" class="fd-button fd-button--compact fd-button--ghost fd-tile__action-close">
                     <i class="sap-icon--decline" role="presentation"></i>
                 </button><button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
                     <i class="sap-icon--overflow" role="presentation"></i>
@@ -679,7 +679,7 @@ export const tileInActionMode = () => `<div class="fddocs-container">
         <div class="fd-tile__background-img" style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png')"></div>
         <div class="fd-tile__overlay"></div>
         <button aria-label="toggle button" class="fd-tile__toggle fd-tile__toggle--pause"></button>
-        <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
+        <button aria-label="close button" class="fd-button fd-button--compact fd-button--ghost fd-tile__action-close">
                     <i class="sap-icon--decline" role="presentation"></i>
                 </button><button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
                     <i class="sap-icon--overflow" role="presentation"></i>
@@ -997,7 +997,7 @@ export const lineTile = () => `<h4>Line Tile - Floating Behaviour, Cozy Mode</h4
             <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
                 <i class="sap-icon--overflow"></i>
             </button>
-            <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
+            <button aria-label="close button" class="fd-button fd-button--compact fd-button--ghost fd-tile__action-close">
                 <i class="sap-icon--decline" role="presentation"></i>
             </button></div>
     </div>
@@ -1010,7 +1010,7 @@ export const lineTile = () => `<h4>Line Tile - Floating Behaviour, Cozy Mode</h4
             <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
                 <i class="sap-icon--overflow" role="presentation"></i>
             </button>
-            <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
+            <button aria-label="close button" class="fd-button fd-button--compact fd-button--ghost fd-tile__action-close">
                 <i class="sap-icon--decline" role="presentation"></i>
             </button>
         </div>
@@ -1024,7 +1024,7 @@ export const lineTile = () => `<h4>Line Tile - Floating Behaviour, Cozy Mode</h4
             <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
                 <i class="sap-icon--overflow" role="presentation"></i>
             </button>
-            <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
+            <button aria-label="close button" class="fd-button fd-button--compact fd-button--ghost fd-tile__action-close">
                 <i class="sap-icon--decline" role="presentation"></i>
             </button></div>
     </div>
@@ -1037,7 +1037,7 @@ export const lineTile = () => `<h4>Line Tile - Floating Behaviour, Cozy Mode</h4
             <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
                 <i class="sap-icon--overflow" role="presentation"></i>
             </button>
-            <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
+            <button aria-label="close button" class="fd-button fd-button--compact fd-button--ghost fd-tile__action-close">
                 <i class="sap-icon--decline" role="presentation"></i>
             </button></div>
     </div>
@@ -1050,7 +1050,7 @@ export const lineTile = () => `<h4>Line Tile - Floating Behaviour, Cozy Mode</h4
             <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
                 <i class="sap-icon--overflow" role="presentation"></i>
             </button>
-            <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
+            <button aria-label="close button" class="fd-button fd-button--compact fd-button--ghost fd-tile__action-close">
                 <i class="sap-icon--decline" role="presentation"></i>
             </button></div>
     </div>
@@ -1063,7 +1063,7 @@ export const lineTile = () => `<h4>Line Tile - Floating Behaviour, Cozy Mode</h4
             <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
                 <i class="sap-icon--overflow" role="presentation"></i>
             </button>
-            <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
+            <button aria-label="close button" class="fd-button fd-button--compact fd-button--ghost fd-tile__action-close">
                 <i class="sap-icon--decline" role="presentation"></i>
             </button></div>
     </div>
@@ -1080,7 +1080,7 @@ export const lineTile = () => `<h4>Line Tile - Floating Behaviour, Cozy Mode</h4
             <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
                 <i class="sap-icon--overflow" role="presentation"></i>
             </button>
-            <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
+            <button aria-label="close button" class="fd-button fd-button--compact fd-button--ghost fd-tile__action-close">
                 <i class="sap-icon--decline" role="presentation"></i>
             </button></div>
     </div>
@@ -1093,7 +1093,7 @@ export const lineTile = () => `<h4>Line Tile - Floating Behaviour, Cozy Mode</h4
             <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
                 <i class="sap-icon--overflow" role="presentation"></i>
             </button>
-            <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
+            <button aria-label="close button" class="fd-button fd-button--compact fd-button--ghost fd-tile__action-close">
                 <i class="sap-icon--decline" role="presentation"></i>
             </button></div>
     </div>
@@ -1106,7 +1106,7 @@ export const lineTile = () => `<h4>Line Tile - Floating Behaviour, Cozy Mode</h4
             <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
                 <i class="sap-icon--overflow" role="presentation"></i>
             </button>
-            <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
+            <button aria-label="close button" class="fd-button fd-button--compact fd-button--ghost fd-tile__action-close">
                 <i class="sap-icon--decline" role="presentation"></i>
             </button></div>
     </div>
@@ -1119,7 +1119,7 @@ export const lineTile = () => `<h4>Line Tile - Floating Behaviour, Cozy Mode</h4
             <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
                 <i class="sap-icon--overflow" role="presentation"></i>
             </button>
-            <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
+            <button aria-label="close button" class="fd-button fd-button--compact fd-button--ghost fd-tile__action-close">
                 <i class="sap-icon--decline" role="presentation"></i>
             </button>
         </div>
@@ -1133,7 +1133,7 @@ export const lineTile = () => `<h4>Line Tile - Floating Behaviour, Cozy Mode</h4
             <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
                 <i class="sap-icon--overflow" role="presentation"></i>
             </button>
-            <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
+            <button aria-label="close button" class="fd-button fd-button--compact fd-button--ghost fd-tile__action-close">
                 <i class="sap-icon--decline" role="presentation"></i>
             </button>
         </div>
@@ -1147,7 +1147,7 @@ export const lineTile = () => `<h4>Line Tile - Floating Behaviour, Cozy Mode</h4
             <button aria-label="indicator button" tabindex="-1" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator">
                 <i class="sap-icon--overflow" role="presentation"></i>
             </button>
-            <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
+            <button aria-label="close button" class="fd-button fd-button--compact fd-button--ghost fd-tile__action-close">
                 <i class="sap-icon--decline" role="presentation"></i>
             </button>
         </div>
