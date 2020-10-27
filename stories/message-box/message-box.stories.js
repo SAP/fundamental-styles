@@ -4,7 +4,7 @@ export default {
         description: `
 The message box displays a dialog with a simple message to the user. Contrary to the **Popover**, message box can relay messages unrelated to the UI, such as technical errors. This component inherits the look and behavior of the **Dialog** (excluding dragging/resizing).
 
-Note: Include two action buttons in the message box when the user's decision is required before continuing. The primary action button should always include the action they're performing, while the secondary buttons provides them with an option to cancel.
+Note: Include two action buttons in the message box when the user's decision is required before continuing. The primary action button should always explicitly display the action they're performing (in text), while the secondary buttons provides them with an option to cancel.
 
 **The messages can be displayed with semantic colors and icons to indicate:**
 
@@ -87,7 +87,7 @@ structure.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
         storyDescription: `
-The default message box displays a small dialog with a title, message text and action buttons. Use the default if the message is not suitable with one of the semantic type use cases.
+The default message box displays a small dialog with a title, message text and action buttons. Use the default if the message does not fit with one of the semantic types.
     `
     }
 };
@@ -426,7 +426,7 @@ responsive.parameters = {
     docs: {
         iframeHeight: messageBoxHeight * 4,
         storyDescription: `
-The message box has 1rem padding all around the body, and the header and footer both inherit their padding from the **Bar** component. Responsive horizontal padding can be applied to the header, body and footer of the message box; however, the amount depends on the screen size. 
+The message box has 1rem padding all around the body, and the header and footer both inherit their padding from the **Bar** component. Responsive horizontal padding can be applied to the header, body and footer of the message box; however, the amount depends on the screen width. 
 
 **To display responsive padding, add the following modifier classes to the content container:**
 
