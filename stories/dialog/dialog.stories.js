@@ -328,9 +328,7 @@ Dialog can be draggable, enabling the user to drag the container around with the
     }
 };
 
-export const Selectable = () => `
-<button class="fd-button" onclick="toggleClass('select-dialog-example', 'fd-dialog--active')">Open example</button>
-<div class="fd-dialog fd-dialog--active" style="position:absolute;" id="select-dialog-example">
+export const Selectable = () => `<div class="fd-dialog-docs-static fd-dialog fd-dialog--active" id="select-dialog-example">
     <section class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-8">
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
             <div class="fd-bar__left">
@@ -413,14 +411,12 @@ export const Selectable = () => `
                     <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Select</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact" onclick="toggleClass('select-dialog-example', 'fd-dialog--active')">Cancel</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
                 </div>
             </div>
         </footer>
     </section>
-</div>
-<div style="margin-bottom:500px"/>
-`;
+</div>`;
 
 Selectable.parameters = {
     docs: {
@@ -431,9 +427,7 @@ Selectable.parameters = {
 };
 
 
-export const Loading = () => `
-<button class="fd-button" onclick="toggleClass('loading-dialog-example', 'fd-dialog--active')">Open example</button>
-<div class="fd-dialog fd-dialog--active" style="position:absolute;" id="loading-dialog-example">
+export const Loading = () => `<div class="fd-dialog-docs-static fd-dialog fd-dialog--active" id="loading-dialog-example">
     <section class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-9">
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
@@ -455,14 +449,13 @@ export const Loading = () => `
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact" onclick="toggleClass('loading-dialog-example', 'fd-dialog--active')">Cancel</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
                 </div>
             </div>
         </footer>
     </section>
-</div>
-<div style="margin-bottom:500px"/>
-`;
+</div>`;
+
 Loading.parameters = {
     docs: {
         iframeHeight: 500,
