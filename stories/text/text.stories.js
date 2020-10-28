@@ -33,7 +33,7 @@ export const wrapping = () => `
     eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
     deserunt mollit anim id est laborum.</p>
     
-    <h3>Whitespace pre-wrap</h3>
+    <h3>Pre-wrapped whitespace</h3>
     <p class="fd-text fd-text--pre-wrap">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore et
 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
@@ -119,7 +119,7 @@ add the <code class="docs-code">fd-text--max-lines</code> modifier class and an 
 lines to the main element. For example, add <code class="docs-code">style="-webkit-line-clamp: 3;"</code> to display
 three lines of text.
 
-**Note**: Property <code class="docs-code">-webkit-line-clamp</code> doesn't work in IE11 and should be changed
+**Note**: The property <code class="docs-code">-webkit-line-clamp</code> doesn't work in IE11 and should be changed
 to <code class="docs-code">height</code>. For example, <code class="docs-code">style="height: 200px;"</code> 
 `
     }
@@ -127,7 +127,7 @@ to <code class="docs-code">height</code>. For example, <code class="docs-code">s
 
 export const hyphenation = () => `<div class="example-container">
         <div class="fddocs-text">
-            <h3>Without hyphens</h3>
+            <h3>Without hyphenation</h3>
             <p class="fd-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
@@ -153,8 +153,8 @@ hyphenation.parameters = {
         storyDescription: `The text component can display words that are broken at appropriate hyphenation
 points in a text block. To display hyphens, add the <code class="docs-code">fd-text--hyphenation</code> to the main element.
         
-It is also possible to suggest line break opportunities with two Unicode characters that manually specify
-potential line breakpoints:
+**It is also possible to suggest line break opportunities with two Unicode characters that manually specify
+potential line breakpoints:**
 
 - Hyphen: The "hard" hyphen character indicates a visible line break opportunity.
 Even if the line is not actually broken at that point, the hyphen is still displayed.

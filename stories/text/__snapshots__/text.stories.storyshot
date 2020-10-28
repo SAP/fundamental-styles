@@ -25,7 +25,7 @@ exports[`Storyshots Components/Text Hyphenation 1`] = `
     
             
     <h3>
-      Without hyphens
+      Without hyphenation
     </h3>
     
             
@@ -185,7 +185,7 @@ exports[`Storyshots Components/Text Wrapping 1`] = `
     
     
   <h3>
-    Whitespace pre-wrap
+    Pre-wrapped whitespace
   </h3>
   
     
