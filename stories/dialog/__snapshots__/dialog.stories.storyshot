@@ -6,7 +6,7 @@ exports[`Storyshots Components/Dialog Default 1`] = `
 >
   
     
-  <div
+  <section
     aria-labelledby="dialog-title-1"
     aria-modal="true"
     class="fd-dialog__content"
@@ -164,7 +164,7 @@ exports[`Storyshots Components/Dialog Default 1`] = `
     </footer>
     
     
-  </div>
+  </section>
   
 
 </div>
@@ -176,7 +176,7 @@ exports[`Storyshots Components/Dialog Draggable 1`] = `
 >
   
     
-  <div
+  <section
     aria-labelledby="dialog-title-7"
     aria-modal="true"
     class="fd-dialog__content fd-dialog__content--draggable-grab fd-dialog__content--s"
@@ -273,149 +273,134 @@ exports[`Storyshots Components/Dialog Draggable 1`] = `
     </footer>
     
     
-  </div>
+  </section>
   
 
 </div>
 `;
 
 exports[`Storyshots Components/Dialog Loading 1`] = `
-<section>
+<div
+  class="fd-dialog-docs-static fd-dialog fd-dialog--active"
+  id="loading-dialog-example"
+>
   
-
-  <button
-    class="fd-button"
-    onclick="toggleClass('loading-dialog-example', 'fd-dialog--active')"
-  >
-    Open example
-  </button>
-  
-
-  <div
-    class="fd-dialog"
-    id="loading-dialog-example"
+    
+  <section
+    aria-labelledby="dialog-title-9"
+    aria-modal="true"
+    class="fd-dialog__content fd-dialog__content--s"
+    role="dialog"
   >
     
-    
-    <div
-      aria-labelledby="dialog-title-9"
-      aria-modal="true"
-      class="fd-dialog__content fd-dialog__content--s"
-      role="dialog"
+        
+    <header
+      class="fd-dialog__header fd-bar fd-bar--header"
     >
       
-        
-      <header
-        class="fd-dialog__header fd-bar fd-bar--header"
+            
+      <div
+        class="fd-bar__left"
       >
         
-            
+                
         <div
-          class="fd-bar__left"
+          class="fd-bar__element"
         >
           
-                
-          <div
-            class="fd-bar__element"
+                    
+          <h2
+            class="fd-title fd-title--h5"
+            id="dialog-title-9"
           >
             
-                    
-            <h2
-              class="fd-title fd-title--h5"
-              id="dialog-title-9"
-            >
-              
                         Loading Data...
                     
-            </h2>
-            
-                
-          </div>
+          </h2>
           
-            
+                
         </div>
         
-        
-      </header>
-      
-        
-      <div
-        class="fd-dialog__body"
-      >
-        
             
-        <strong>
-          Status:
-        </strong>
-         Connecting 127.0.0.1
-            
-        <div
-          aria-hidden="false"
-          aria-label="Loading"
-          class="fd-dialog__loader fd-busy-indicator--l"
-        >
-          
-                
-          <div
-            class="fd-busy-indicator--circle-0"
-          />
-          
-                
-          <div
-            class="fd-busy-indicator--circle-1"
-          />
-          
-                
-          <div
-            class="fd-busy-indicator--circle-2"
-          />
-          
-            
-        </div>
-        
-        
       </div>
       
         
-      <footer
-        class="fd-dialog__footer fd-bar fd-bar--footer"
+    </header>
+    
+        
+    <div
+      class="fd-dialog__body"
+    >
+      
+            
+      <strong>
+        Status:
+      </strong>
+       Connecting 127.0.0.1
+            
+      <div
+        aria-hidden="false"
+        aria-label="Loading"
+        class="fd-dialog__loader fd-busy-indicator--l"
       >
         
-            
+                
         <div
-          class="fd-bar__right"
-        >
-          
-                
-          <div
-            class="fd-bar__element"
-          >
-            
-                    
-            <button
-              class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact"
-              onclick="toggleClass('loading-dialog-example', 'fd-dialog--active')"
-            >
-              Cancel
-            </button>
-            
-                
-          </div>
-          
-            
-        </div>
+          class="fd-busy-indicator--circle-0"
+        />
         
+                
+        <div
+          class="fd-busy-indicator--circle-1"
+        />
         
-      </footer>
+                
+        <div
+          class="fd-busy-indicator--circle-2"
+        />
+        
+            
+      </div>
       
-    
+        
     </div>
     
-
-  </div>
+        
+    <footer
+      class="fd-dialog__footer fd-bar fd-bar--footer"
+    >
+      
+            
+      <div
+        class="fd-bar__right"
+      >
+        
+                
+        <div
+          class="fd-bar__element"
+        >
+          
+                    
+          <button
+            class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact"
+          >
+            Cancel
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </footer>
+    
+    
+  </section>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Dialog Resizable 1`] = `
@@ -424,7 +409,7 @@ exports[`Storyshots Components/Dialog Resizable 1`] = `
 >
   
         
-  <div
+  <section
     aria-labelledby="dialog-title-6"
     aria-modal="true"
     class="fd-dialog__content fd-dialog__content--s"
@@ -526,480 +511,465 @@ exports[`Storyshots Components/Dialog Resizable 1`] = `
     </footer>
     
         
-  </div>
+  </section>
   
     
 </div>
 `;
 
 exports[`Storyshots Components/Dialog Selectable 1`] = `
-<section>
+<div
+  class="fd-dialog-docs-static fd-dialog fd-dialog--active"
+  id="select-dialog-example"
+>
   
-
-  <button
-    class="fd-button"
-    onclick="toggleClass('select-dialog-example', 'fd-dialog--active')"
-  >
-    Open example
-  </button>
-  
-
-  <div
-    class="fd-dialog"
-    id="select-dialog-example"
+    
+  <section
+    aria-labelledby="dialog-title-8"
+    aria-modal="true"
+    class="fd-dialog__content"
+    role="dialog"
   >
     
-    
-    <div
-      aria-labelledby="dialog-title-8"
-      aria-modal="true"
-      class="fd-dialog__content"
-      role="dialog"
+        
+    <header
+      class="fd-dialog__header fd-bar fd-bar--header-with-subheader"
     >
       
-        
-      <header
-        class="fd-dialog__header fd-bar fd-bar--header-with-subheader"
+            
+      <div
+        class="fd-bar__left"
       >
         
-            
+                
         <div
-          class="fd-bar__left"
+          class="fd-bar__element"
         >
           
-                
-          <div
-            class="fd-bar__element"
+                    
+          <h2
+            class="fd-title fd-title--h5"
+            id="dialog-title-8"
           >
             
-                    
-            <h2
-              class="fd-title fd-title--h5"
-              id="dialog-title-8"
-            >
-              
                         Select Dialog
                     
-            </h2>
-            
-                
-          </div>
+          </h2>
           
-            
+                
         </div>
         
             
-        <div
-          class="fd-bar__right"
-        >
-          
-                
-          <div
-            class="fd-bar__element"
-          >
-            
-                    
-            <button
-              class="fd-button fd-button--transparent fd-button--compact"
-            >
-              Clear
-            </button>
-            
-                
-          </div>
-          
-            
-        </div>
-        
-        
-      </header>
+      </div>
       
-        
+            
       <div
-        class="fd-dialog__subheader fd-bar fd-bar--subheader"
+        class="fd-bar__right"
       >
         
-            
+                
         <div
-          class="fd-bar__middle"
+          class="fd-bar__element"
         >
           
+                    
+          <button
+            class="fd-button fd-button--transparent fd-button--compact"
+          >
+            Clear
+          </button>
+          
                 
-          <div
-            class="fd-input-group"
+        </div>
+        
+            
+      </div>
+      
+        
+    </header>
+    
+        
+    <div
+      class="fd-dialog__subheader fd-bar fd-bar--subheader"
+    >
+      
+            
+      <div
+        class="fd-bar__middle"
+      >
+        
+                
+        <div
+          class="fd-input-group"
+        >
+          
+                    
+          <input
+            aria-label="search"
+            class="fd-input fd-input-group__input fd-input--compact"
+            placeholder="Search..."
+            type="text"
+          />
+          
+                    
+          <span
+            class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact"
           >
             
+                        
+            <button
+              aria-label="perform search"
+              class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact"
+            >
+              
+                            
+              <i
+                class="sap-icon--search"
+                role="presentation"
+              />
+              
+                        
+            </button>
+            
                     
+          </span>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-dialog__body fd-dialog__body--no-vertical-padding"
+    >
+      
+            
+      <ul
+        aria-label="selection list"
+        class="fd-list fd-list--selection fd-list--compact fd-list--no-border"
+        role="listbox"
+      >
+        
+                
+        <li
+          class="fd-list__item"
+          role="option"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-form-item fd-list__form-item"
+          >
+            
+                        
             <input
-              aria-label="search"
-              class="fd-input fd-input-group__input fd-input--compact"
-              placeholder="Search..."
-              type="text"
+              aria-labelledby="Az0bg4"
+              class="fd-checkbox fd-checkbox--compact"
+              id="Ai4ez4"
+              type="checkbox"
+            />
+            
+                        
+            <label
+              class="fd-checkbox__label fd-checkbox__label--compact"
+              for="Ai4ez4"
+              tabindex="-1"
             />
             
                     
-            <span
-              class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact"
-            >
-              
-                        
-              <button
-                aria-label="perform search"
-                class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact"
-              >
-                
-                            
-                <i
-                  class="sap-icon--search"
-                  role="presentation"
-                />
-                
-                        
-              </button>
-              
-                    
-            </span>
-            
-                
           </div>
           
+                    
+          <span
+            class="fd-list__title"
+            id="Az0bg4"
+          >
+            List item 1
+          </span>
+          
+                
+        </li>
+        
+                
+        <li
+          aria-selected="true"
+          class="fd-list__item is-selected"
+          role="option"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-form-item fd-list__form-item"
+          >
             
-        </div>
+                        
+            <input
+              aria-labelledby="Az0bg5"
+              checked=""
+              class="fd-checkbox fd-checkbox--compact"
+              id="Ai4ez5"
+              type="checkbox"
+            />
+            
+                        
+            <label
+              class="fd-checkbox__label fd-checkbox__label--compact"
+              for="Ai4ez5"
+              tabindex="-1"
+            />
+            
+                    
+          </div>
+          
+                    
+          <span
+            class="fd-list__title"
+            id="Az0bg5"
+          >
+            List item 2
+          </span>
+          
+                
+        </li>
         
+                
+        <li
+          class="fd-list__item is-selected"
+          role="option"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-form-item fd-list__form-item"
+          >
+            
+                        
+            <input
+              aria-labelledby="Az0bg6"
+              checked=""
+              class="fd-checkbox fd-checkbox--compact"
+              id="Ai4ez6"
+              type="checkbox"
+            />
+            
+                        
+            <label
+              class="fd-checkbox__label fd-checkbox__label--compact"
+              for="Ai4ez6"
+              tabindex="-1"
+            />
+            
+                    
+          </div>
+          
+                    
+          <span
+            class="fd-list__title"
+            id="Az0bg6"
+          >
+            List item 3
+          </span>
+          
+                
+        </li>
         
-      </div>
+                
+        <li
+          class="fd-list__item"
+          role="option"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-form-item fd-list__form-item"
+          >
+            
+                        
+            <input
+              aria-labelledby="440bg6"
+              class="fd-checkbox fd-checkbox--compact"
+              id="Ai4e44"
+              type="checkbox"
+            />
+            
+                        
+            <label
+              class="fd-checkbox__label fd-checkbox__label--compact"
+              for="Ai4e44"
+              tabindex="-1"
+            />
+            
+                    
+          </div>
+          
+                    
+          <span
+            class="fd-list__title"
+            id="440bg6"
+          >
+            List item 4
+          </span>
+          
+                
+        </li>
+        
+                
+        <li
+          class="fd-list__item"
+          role="option"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-form-item fd-list__form-item"
+          >
+            
+                        
+            <input
+              aria-labelledby="550bg6"
+              class="fd-checkbox fd-checkbox--compact"
+              id="Ai4e55"
+              type="checkbox"
+            />
+            
+                        
+            <label
+              class="fd-checkbox__label fd-checkbox__label--compact"
+              for="Ai4e55"
+              tabindex="-1"
+            />
+            
+                    
+          </div>
+          
+                    
+          <span
+            class="fd-list__title"
+            id="550bg6"
+          >
+            List item 5
+          </span>
+          
+                
+        </li>
+        
+                
+        <li
+          class="fd-list__item"
+          role="option"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-form-item fd-list__form-item"
+          >
+            
+                        
+            <input
+              aria-labelledby="660bg6"
+              class="fd-checkbox fd-checkbox--compact"
+              id="Ai4e66"
+              type="checkbox"
+            />
+            
+                        
+            <label
+              class="fd-checkbox__label fd-checkbox__label--compact"
+              for="Ai4e66"
+              tabindex="-1"
+            />
+            
+                    
+          </div>
+          
+                    
+          <span
+            class="fd-list__title"
+            id="660bg6"
+          >
+            List item 6
+          </span>
+          
+                
+        </li>
+        
+            
+      </ul>
       
-        
-      <div
-        class="fd-dialog__body fd-dialog__body--no-vertical-padding"
+            
+      <span
+        class="fd-list__footer"
       >
         
-            
-        <ul
-          aria-label="selection list"
-          class="fd-list fd-list--selection fd-list--compact fd-list--no-border"
-          role="listbox"
-        >
-          
-                
-          <li
-            class="fd-list__item"
-            role="option"
-            tabindex="0"
-          >
-            
-                    
-            <div
-              class="fd-form-item fd-list__form-item"
-            >
-              
-                        
-              <input
-                aria-labelledby="Az0bg4"
-                class="fd-checkbox fd-checkbox--compact"
-                id="Ai4ez4"
-                type="checkbox"
-              />
-              
-                        
-              <label
-                class="fd-checkbox__label fd-checkbox__label--compact"
-                for="Ai4ez4"
-                tabindex="-1"
-              />
-              
-                    
-            </div>
-            
-                    
-            <span
-              class="fd-list__title"
-              id="Az0bg4"
-            >
-              List item 1
-            </span>
-            
-                
-          </li>
-          
-                
-          <li
-            aria-selected="true"
-            class="fd-list__item is-selected"
-            role="option"
-            tabindex="0"
-          >
-            
-                    
-            <div
-              class="fd-form-item fd-list__form-item"
-            >
-              
-                        
-              <input
-                aria-labelledby="Az0bg5"
-                checked=""
-                class="fd-checkbox fd-checkbox--compact"
-                id="Ai4ez5"
-                type="checkbox"
-              />
-              
-                        
-              <label
-                class="fd-checkbox__label fd-checkbox__label--compact"
-                for="Ai4ez5"
-                tabindex="-1"
-              />
-              
-                    
-            </div>
-            
-                    
-            <span
-              class="fd-list__title"
-              id="Az0bg5"
-            >
-              List item 2
-            </span>
-            
-                
-          </li>
-          
-                
-          <li
-            class="fd-list__item is-selected"
-            role="option"
-            tabindex="0"
-          >
-            
-                    
-            <div
-              class="fd-form-item fd-list__form-item"
-            >
-              
-                        
-              <input
-                aria-labelledby="Az0bg6"
-                checked=""
-                class="fd-checkbox fd-checkbox--compact"
-                id="Ai4ez6"
-                type="checkbox"
-              />
-              
-                        
-              <label
-                class="fd-checkbox__label fd-checkbox__label--compact"
-                for="Ai4ez6"
-                tabindex="-1"
-              />
-              
-                    
-            </div>
-            
-                    
-            <span
-              class="fd-list__title"
-              id="Az0bg6"
-            >
-              List item 3
-            </span>
-            
-                
-          </li>
-          
-                
-          <li
-            class="fd-list__item"
-            role="option"
-            tabindex="0"
-          >
-            
-                    
-            <div
-              class="fd-form-item fd-list__form-item"
-            >
-              
-                        
-              <input
-                aria-labelledby="440bg6"
-                class="fd-checkbox fd-checkbox--compact"
-                id="Ai4e44"
-                type="checkbox"
-              />
-              
-                        
-              <label
-                class="fd-checkbox__label fd-checkbox__label--compact"
-                for="Ai4e44"
-                tabindex="-1"
-              />
-              
-                    
-            </div>
-            
-                    
-            <span
-              class="fd-list__title"
-              id="440bg6"
-            >
-              List item 4
-            </span>
-            
-                
-          </li>
-          
-                
-          <li
-            class="fd-list__item"
-            role="option"
-            tabindex="0"
-          >
-            
-                    
-            <div
-              class="fd-form-item fd-list__form-item"
-            >
-              
-                        
-              <input
-                aria-labelledby="550bg6"
-                class="fd-checkbox fd-checkbox--compact"
-                id="Ai4e55"
-                type="checkbox"
-              />
-              
-                        
-              <label
-                class="fd-checkbox__label fd-checkbox__label--compact"
-                for="Ai4e55"
-                tabindex="-1"
-              />
-              
-                    
-            </div>
-            
-                    
-            <span
-              class="fd-list__title"
-              id="550bg6"
-            >
-              List item 5
-            </span>
-            
-                
-          </li>
-          
-                
-          <li
-            class="fd-list__item"
-            role="option"
-            tabindex="0"
-          >
-            
-                    
-            <div
-              class="fd-form-item fd-list__form-item"
-            >
-              
-                        
-              <input
-                aria-labelledby="660bg6"
-                class="fd-checkbox fd-checkbox--compact"
-                id="Ai4e66"
-                type="checkbox"
-              />
-              
-                        
-              <label
-                class="fd-checkbox__label fd-checkbox__label--compact"
-                for="Ai4e66"
-                tabindex="-1"
-              />
-              
-                    
-            </div>
-            
-                    
-            <span
-              class="fd-list__title"
-              id="660bg6"
-            >
-              List item 6
-            </span>
-            
-                
-          </li>
-          
-            
-        </ul>
-        
-            
-        <span
-          class="fd-list__footer"
-        >
-          
                 2 items selected
             
-        </span>
+      </span>
+      
         
+    </div>
+    
         
+    <footer
+      class="fd-dialog__footer fd-bar fd-bar--footer"
+    >
+      
+            
+      <div
+        class="fd-bar__right"
+      >
+        
+                
+        <div
+          class="fd-bar__element"
+        >
+          
+                    
+          <button
+            class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact"
+          >
+            Select
+          </button>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-bar__element"
+        >
+          
+                    
+          <button
+            class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact"
+          >
+            Cancel
+          </button>
+          
+                
+        </div>
+        
+            
       </div>
       
         
-      <footer
-        class="fd-dialog__footer fd-bar fd-bar--footer"
-      >
-        
-            
-        <div
-          class="fd-bar__right"
-        >
-          
-                
-          <div
-            class="fd-bar__element"
-          >
-            
-                    
-            <button
-              class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact"
-            >
-              Select
-            </button>
-            
-                
-          </div>
-          
-                
-          <div
-            class="fd-bar__element"
-          >
-            
-                    
-            <button
-              class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact"
-              onclick="toggleClass('select-dialog-example', 'fd-dialog--active')"
-            >
-              Cancel
-            </button>
-            
-                
-          </div>
-          
-            
-        </div>
-        
-        
-      </footer>
-      
+    </footer>
     
-    </div>
     
-
-  </div>
+  </section>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Dialog Sizes 1`] = `
@@ -1011,7 +981,7 @@ exports[`Storyshots Components/Dialog Sizes 1`] = `
   >
     
 
-    <div
+    <section
       aria-labelledby="dialog-title-2"
       aria-modal="true"
       class="fd-dialog__content fd-dialog__content--s"
@@ -1108,7 +1078,7 @@ exports[`Storyshots Components/Dialog Sizes 1`] = `
       </footer>
       
 
-    </div>
+    </section>
     
 
   </div>
@@ -1122,7 +1092,7 @@ exports[`Storyshots Components/Dialog Sizes 1`] = `
   >
     
 
-    <div
+    <section
       aria-labelledby="dialog-title-3"
       aria-modal="true"
       class="fd-dialog__content fd-dialog__content--m"
@@ -1219,7 +1189,7 @@ exports[`Storyshots Components/Dialog Sizes 1`] = `
       </footer>
       
 
-    </div>
+    </section>
      
 
   </div>
@@ -1233,7 +1203,7 @@ exports[`Storyshots Components/Dialog Sizes 1`] = `
   >
     
 
-    <div
+    <section
       aria-labelledby="dialog-title-4"
       aria-modal="true"
       class="fd-dialog__content fd-dialog__content--l"
@@ -1330,7 +1300,7 @@ exports[`Storyshots Components/Dialog Sizes 1`] = `
       </footer>
       
 
-    </div>
+    </section>
     
 
   </div>
@@ -1344,7 +1314,7 @@ exports[`Storyshots Components/Dialog Sizes 1`] = `
   >
     
 
-    <div
+    <section
       aria-labelledby="dialog-title-5"
       aria-modal="true"
       class="fd-dialog__content fd-dialog__content--xl"
@@ -1441,7 +1411,7 @@ exports[`Storyshots Components/Dialog Sizes 1`] = `
       </footer>
       
 
-    </div>
+    </section>
     
 
   </div>
