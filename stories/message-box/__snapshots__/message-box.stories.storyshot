@@ -1,5 +1,112 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Components/Message Box Default 1`] = `
+<div
+  class="fd-message-box-docs-static fd-message-box fd-message-box--active"
+>
+  
+    
+  <div
+    class="fd-message-box__content"
+  >
+    
+        
+    <header
+      class="fd-bar fd-bar--header fd-message-box__header"
+    >
+      
+            
+      <div
+        class="fd-bar__left"
+      >
+        
+                
+        <div
+          class="fd-bar__element"
+        >
+          
+                    
+          <h2
+            class="fd-title fd-title--h5"
+          >
+            Title
+          </h2>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </header>
+    
+        
+    <div
+      class="fd-message-box__body"
+    >
+      
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        
+    </div>
+    
+        
+    <footer
+      class="fd-bar fd-bar--footer fd-message-box__footer"
+    >
+      
+            
+      <div
+        class="fd-bar__right"
+      >
+        
+                
+        <div
+          class="fd-bar__element"
+        >
+          
+                    
+          <button
+            class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button"
+          >
+            
+                        Begin button
+                    
+          </button>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-bar__element"
+        >
+          
+                    
+          <button
+            class="fd-button fd-button--transparent fd-button--compact fd-message-box__decisive-button"
+          >
+            
+                        End button
+                    
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </footer>
+    
+    
+  </div>
+  
+
+</div>
+`;
+
 exports[`Storyshots Components/Message Box No icon 1`] = `
 <section>
   
@@ -49,7 +156,7 @@ exports[`Storyshots Components/Message Box No icon 1`] = `
         class="fd-message-box__body"
       >
         
-            Success Message Box with no status icon in the title and "Show more" link in the body
+            Success message box without an icon in the title and a "Show more" link in the body.
             
         <div
           class="fd-message-box__more"
@@ -162,7 +269,7 @@ exports[`Storyshots Components/Message Box No icon 1`] = `
         class="fd-message-box__body"
       >
         
-            Error Message Box with no status icon in the title
+            Error message box without an icon in the title.
         
       </div>
       
@@ -258,7 +365,7 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
         class="fd-message-box__body"
       >
         
-            Information Message Box on small screen in Cozy mode 
+            Informative message box for a small screen in cozy mode (mobile) and a "Show more" link in the body.
             
         <div
           class="fd-message-box__more"
@@ -371,7 +478,7 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
         class="fd-message-box__body"
       >
         
-            Error Message Box on medium screen in Cozy mode  
+            Error message box for a medium-sized screen in cozy mode (mobile). 
         
       </div>
       
@@ -468,7 +575,7 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
         class="fd-message-box__body"
       >
         
-            Success Message Box on large screen in compact (desktop) mode  
+            Success message box for a large screen in compact mode (desktop).
         
       </div>
       
@@ -564,7 +671,7 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
         class="fd-message-box__body"
       >
         
-           Warning Message Box on extra large screen in compact (desktop) mode 
+           Warning message box for an extra large screen in compact mode (desktop). 
         
       </div>
       
@@ -611,228 +718,8 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Message Box Structure 1`] = `
-<div
-  class="fd-message-box-docs-static fd-message-box fd-message-box--active"
->
-  
-    
-  <div
-    class="fd-message-box__content"
-  >
-    
-        
-    <header
-      class="fd-bar fd-bar--header fd-message-box__header"
-    >
-      
-            
-      <div
-        class="fd-bar__left"
-      >
-        
-                
-        <div
-          class="fd-bar__element"
-        >
-          
-                    
-          <h2
-            class="fd-title fd-title--h5"
-          >
-            Title
-          </h2>
-          
-                
-        </div>
-        
-            
-      </div>
-      
-        
-    </header>
-    
-        
-    <div
-      class="fd-message-box__body"
-    >
-      
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        
-    </div>
-    
-        
-    <footer
-      class="fd-bar fd-bar--footer fd-message-box__footer"
-    >
-      
-            
-      <div
-        class="fd-bar__right"
-      >
-        
-                
-        <div
-          class="fd-bar__element"
-        >
-          
-                    
-          <button
-            class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button"
-          >
-            
-                        Begin button
-                    
-          </button>
-          
-                
-        </div>
-        
-                
-        <div
-          class="fd-bar__element"
-        >
-          
-                    
-          <button
-            class="fd-button fd-button--transparent fd-button--compact fd-message-box__decisive-button"
-          >
-            
-                        End button
-                    
-          </button>
-          
-                
-        </div>
-        
-            
-      </div>
-      
-        
-    </footer>
-    
-    
-  </div>
-  
-
-</div>
-`;
-
-exports[`Storyshots Components/Message Box Types 1`] = `
+exports[`Storyshots Components/Message Box Semantic types 1`] = `
 <section>
-  <div
-    class="fd-message-box-docs-static fd-message-box fd-message-box--active"
-  >
-    
-    
-    <div
-      class="fd-message-box__content"
-    >
-      
-        
-      <header
-        class="fd-bar fd-bar--header fd-message-box__header"
-      >
-        
-            
-        <div
-          class="fd-bar__left"
-        >
-          
-                
-          <div
-            class="fd-bar__element"
-          >
-            
-                    
-            <h2
-              class="fd-title fd-title--h5"
-            >
-              Standard
-            </h2>
-            
-                
-          </div>
-          
-            
-        </div>
-        
-        
-      </header>
-      
-        
-      <div
-        class="fd-message-box__body"
-      >
-        
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            
-        <div
-          class="fd-message-box__more"
-        >
-          
-                
-          <a
-            class="fd-link"
-            href="#"
-            tabindex="0"
-          >
-            Show more
-          </a>
-          
-            
-        </div>
-        
-        
-      </div>
-      
-        
-      <footer
-        class="fd-bar fd-bar--footer fd-message-box__footer"
-      >
-        
-            
-        <div
-          class="fd-bar__right"
-        >
-          
-                
-          <div
-            class="fd-bar__element"
-          >
-            
-                    
-            <button
-              class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button"
-            >
-              
-                        Close
-                    
-            </button>
-            
-                
-          </div>
-          
-            
-        </div>
-        
-        
-      </footer>
-      
-    
-    </div>
-    
-
-  </div>
-  
-
-
-  <br />
-  <br />
-  <br />
-  
-
-
   <div
     class="fd-message-box-docs-static fd-message-box fd-message-box--confirmation fd-message-box--active"
   >
