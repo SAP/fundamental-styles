@@ -35,7 +35,7 @@ export default {
 - Buttons are sorted by usage i.e. from frequently-used to seldomly-used.
         `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['button', 'icon', 'input', 'segmented-button', 'image', 'bar']
+        components: ['button', 'icon', 'input', 'segmented-button', 'avatar', 'bar']
     }
 };
 
@@ -67,9 +67,10 @@ export const Default = () => `<div class="fd-bar">
     </div>
     <div class="fd-bar__right">
         <div class="fd-bar__element">
-            <span class="fd-image--s" aria-label="Image label"
-                style="background-image: url('https://placeimg.com/400/400/nature');">
-            </span>
+        <span
+            class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+            style="background-image: url('/assets/images/avatars/1.svg')"
+            role="presentation" aria-label="John Doe"></span>
         </div>
         <div class="fd-bar__element">
             <button aria-label="button" class="fd-button fd-button--transparent">
@@ -122,9 +123,11 @@ export const Cozy = () => `<div class="fd-bar fd-bar--cozy">
     </div>
     <div class="fd-bar__right">
         <div class="fd-bar__element">
-            <span class="fd-image--s" aria-label="Image label"
-                style="background-image: url('https://placeimg.com/400/400/nature');">
-            </span>
+            <span
+                class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+                style="background-image: url('/assets/images/avatars/1.svg')"
+                role="presentation" aria-label="John Doe"></span>
+            </div>
         </div>
         <div class="fd-bar__element">
             <button aria-label="button" class="fd-button fd-button--transparent">
@@ -180,9 +183,11 @@ export const Header = () => `
     </div>
     <div class="fd-bar__right">
         <div class="fd-bar__element">
-            <span class="fd-image--s" aria-label="Image label"
-                style="background-image: url('https://placeimg.com/400/400/nature');">
-            </span>
+            <span
+                class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+                style="background-image: url('/assets/images/avatars/1.svg')"
+                role="presentation" aria-label="John Doe"></span>
+            </div>
         </div>
         <div class="fd-bar__element">
             <button aria-label="button" class="fd-button fd-button--transparent">
@@ -229,9 +234,11 @@ export const Header = () => `
     </div>
     <div class="fd-bar__right">
         <div class="fd-bar__element">
-            <span class="fd-image--s" aria-label="Image label"
-                style="background-image: url('https://placeimg.com/400/400/nature');">
-            </span>
+            <span
+                class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+                style="background-image: url('/assets/images/avatars/1.svg')"
+                role="presentation" aria-label="John Doe"></span>
+            </div>
         </div>
         <div class="fd-bar__element">
             <button aria-label="button" class="fd-button fd-button--transparent">
@@ -268,9 +275,11 @@ export const Subheader = () => `
     </div>
     <div class="fd-bar__right">
         <div class="fd-bar__element">
-            <span class="fd-image--s" aria-label="Image label"
-                style="background-image: url('https://placeimg.com/400/400/nature');">
-            </span>
+            <span
+                class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+                style="background-image: url('/assets/images/avatars/1.svg')"
+                role="presentation" aria-label="John Doe"></span>
+            </div>
         </div>
         <div class="fd-bar__element">
             <button aria-label="button" class="fd-button fd-button--compact fd-button--transparent">
@@ -359,9 +368,11 @@ export const HeaderWithSubheader = () => `
     </div>
     <div class="fd-bar__right">
         <div class="fd-bar__element">
-            <span class="fd-image--s" aria-label="Image label"
-                style="background-image: url('https://placeimg.com/400/400/nature');">
-            </span>
+            <span
+                class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+                style="background-image: url('/assets/images/avatars/1.svg')"
+                role="presentation" aria-label="John Doe"></span>
+        </div>
         </div>
         <div class="fd-bar__element">
             <button aria-label="button" class="fd-button fd-button--transparent">

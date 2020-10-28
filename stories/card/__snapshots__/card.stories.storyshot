@@ -907,7 +907,7 @@ exports[`Storyshots Components/Card Object card 1`] = `
           aria-label="John Doe"
           class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
           role="presentation"
-          style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
+          style="background-image: url('/assets/images/avatars/1.svg')"
         />
         
                 
@@ -1179,7 +1179,7 @@ exports[`Storyshots Components/Card Object card 1`] = `
           aria-label="John Doe"
           class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
           role="presentation"
-          style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
+          style="background-image: url('/assets/images/avatars/1.svg')"
         />
         
                 
@@ -1514,7 +1514,7 @@ exports[`Storyshots Components/Card Standard card 1`] = `
           aria-label="John Doe"
           class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
           role="presentation"
-          style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
+          style="background-image: url('/assets/images/backgrounds/city.jpg')"
         />
         
                 
@@ -1608,7 +1608,7 @@ exports[`Storyshots Components/Card Standard card 1`] = `
           aria-label="John Doe"
           class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
           role="presentation"
-          style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
+          style="background-image: url('/assets/images/backgrounds/city.jpg')"
         />
         
                 
@@ -1688,7 +1688,7 @@ exports[`Storyshots Components/Card Standard card 1`] = `
           aria-label="John Doe"
           class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
           role="presentation"
-          style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
+          style="background-image: url('/assets/images/backgrounds/city.jpg')"
         />
         
                 
@@ -1775,7 +1775,7 @@ exports[`Storyshots Components/Card Standard card 1`] = `
           aria-label="John Doe"
           class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
           role="presentation"
-          style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
+          style="background-image: url('/assets/images/backgrounds/city.jpg')"
         />
         
                 

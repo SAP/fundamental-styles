@@ -7,7 +7,8 @@ export default {
     }
 };
 
-export const productSwitchInShellbar = () => `<div style="background-color: #354A5F;text-align: right;padding: 6px;">
+export const productSwitchInShellbar = () => `
+<div style="background-color: #354A5F;text-align: right;padding: 6px;">
     <div class="fd-product-switch">
         <div class="fd-popover fd-popover--right">
             <div class="fd-popover__control">
@@ -120,6 +121,7 @@ export const productSwitchInShellbar = () => `<div style="background-color: #354
         </div>
     </div>
 </div>
+<div style="min-height: 530px"></div>
 `;
 
 productSwitchInShellbar.parameters = {

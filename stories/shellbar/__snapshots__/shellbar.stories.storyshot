@@ -1935,9 +1935,10 @@ exports[`Storyshots Components/Shellbar Product Menu And Search 1`] = `
               <span
                 aria-label="William Wallingham"
                 class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle"
-                style="background-image: url('http://lorempixel.com/50/50/abstract/3/');"
+                style="background-image: url('assets/images/avatars/1.svg');"
               >
-                WW
+                
+                            
               </span>
               
                         
@@ -1948,7 +1949,7 @@ exports[`Storyshots Components/Shellbar Product Menu And Search 1`] = `
           
                     
           <div
-            aria-hidden="true"
+            aria-hidden="false"
             class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"
             id="ZY3AY276"
           >
@@ -2174,9 +2175,10 @@ exports[`Storyshots Components/Shellbar Product Switch 1`] = `
               <span
                 aria-label="William Wallingham"
                 class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle"
-                style="background-image: url('http://lorempixel.com/50/50/abstract/3/');"
+                style="background-image: url('assets/images/avatars/1.svg');"
               >
-                WW
+                
+                            
               </span>
               
                         

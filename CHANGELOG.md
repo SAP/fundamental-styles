@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.27...v0.13.0-rc.28) (2020-10-28)
+
+
+### Bug Fixes
+
+* popover accessibility improvements + fix popover and product switch snapshots ([#1808](https://github.com/SAP/fundamental-styles/issues/1808)) ([37cc85b](https://github.com/SAP/fundamental-styles/commit/37cc85b8d92f42866a278ff40ca95211e9c396fd))
+
+## [0.13.0-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.26...v0.13.0-rc.27) (2020-10-27)
+
+
+### Bug Fixes
+
+* Remove focus on pressed button ([#1815](https://github.com/SAP/fundamental-styles/issues/1815)) ([1160892](https://github.com/SAP/fundamental-styles/commit/11608922697901c81c7a0428ccfc14f6ab39cd3d))
+
+## [0.13.0-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.25...v0.13.0-rc.26) (2020-10-27)
+
+## [0.13.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.24...v0.13.0-rc.25) (2020-10-27)
+
 ## [0.13.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.23...v0.13.0-rc.24) (2020-10-26)
 
 

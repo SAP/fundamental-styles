@@ -165,7 +165,7 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
     aria-label="John Doe"
     class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
     role="presentation"
-    style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
+    style="background-image: url('/assets/images/avatars/1.svg')"
   />
   
 
@@ -173,7 +173,7 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
     aria-label="John Doe"
     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail"
     role="presentation"
-    style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
+    style="background-image: url('/assets/images/avatars/2.svg')"
   />
   
 
@@ -181,7 +181,7 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
     aria-label="John Doe"
     class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--thumbnail"
     role="presentation"
-    style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
+    style="background-image: url('/assets/images/avatars/3.svg')"
   />
   
 
@@ -189,7 +189,7 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
     aria-label="John Doe"
     class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--thumbnail"
     role="presentation"
-    style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
+    style="background-image: url('/assets/images/avatars/4.svg')"
   />
   
 
@@ -197,7 +197,7 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
     aria-label="John Doe"
     class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail"
     role="presentation"
-    style="background-image: url('https://loremflickr.com/cache/resized/65535_50339791553_f1808eac29_z_400_400_nofilter.jpg')"
+    style="background-image: url('/assets/images/avatars/5.svg')"
   />
   
 
