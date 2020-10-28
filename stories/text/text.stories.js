@@ -1,8 +1,8 @@
 export default {
     title: 'Components/Text',
     parameters: {
-        description: `The text control is used to display text. It generally contains the text
-         that developers want apps to display (property: text).`,
+        description: `The text component displays text inside a form, table, or any other content area.
+        It is generally used throughout the entire application and is responsive to all screen sizes.`,
         tags: ['f3', 'a11y', 'theme'],
         components: ['text']
     }
@@ -20,12 +20,13 @@ defaultExample.storyName = 'Default';
 defaultExample.parameters = {
     docs: {
         iframeHeight: 100,
-        storyDescription: 'Default example of the text component'
+        storyDescription: `The default text component can display lines of text that wrap to the next line
+        once they reach the end of the content container width.`
     }
 };
 
 export const wrapping = () => `
-    <h3>Whitespace normal</h3>
+    <h3>No whitespace</h3>
     <p class="fd-text"">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
@@ -47,8 +48,9 @@ wrapping.storyName = 'Wrapping';
 wrapping.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `The Text component has a property allowing browsers to render whitespace and tabs. 
-To enable whitespace rendering add a <code class="docs-code">fd-text--pre-wrap</code> class`
+        storyDescription: `The text component has a property that allows browsers to render specified indents and
+        whitespace. To display indents and/or whitespace, add a
+        <code class="docs-code">fd-text--pre-wrap</code> modifier class to the main element.`
     }
 };
 
@@ -111,16 +113,20 @@ maxLines.storyName = 'Max lines';
 maxLines.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `You can define maximum number of lines for text, after reaching the limit text will be
-        truncated and ellipsis will be added. To set maximum numbers you should add
-        <code class="docs-code">fd-text--max-lines</code> class and inline style rule
-        <code class="docs-code">-webkit-line-clamp</code> with number of visible lines. For example:
-        <code class="docs-code">style="-webkit-line-clamp: 3;"</code>`
+        storyDescription: `The text component can be displayed with a maximum number of lines.
+When the maximum is reached, the text truncates and displays an ellipsis. To display text with a maximum line count,
+add the <code class="docs-code">fd-text--max-lines</code> modifier class and an inline style rule with the number of
+lines to the main element. For example, add <code class="docs-code">style="-webkit-line-clamp: 3;"</code> to display
+three lines of text.
+
+**Note**: Property <code class="docs-code">-webkit-line-clamp</code> doesn't work in IE11 and should be changed
+to <code class="docs-code">height</code>. For example, <code class="docs-code">style="height: 200px;"</code> 
+`
     }
 };
 
 export const hyphenation = () => `<div class="example-container">
-        <div class="mw-300">
+        <div class="fddocs-text">
             <h3>Without hyphens</h3>
             <p class="fd-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -129,7 +135,7 @@ export const hyphenation = () => `<div class="example-container">
             deserunt mollit anim id est laborum.</p>
         </div>
 
-        <div class="mw-300">
+        <div class="fddocs-text">
             <h3>Hyphenation</h3>
             <p class="fd-text fd-text--hyphenation">Lorem ipsum dolor sit amet, con&shy;sectetur adip&shy;iscing el&shy;it, sed do eiusmod tempor
             incididunt ut labore et do&shy;lore magna aliqua. Ut enim ad mi&shy;nim veniam, quis nostrud exer&shy;citation ullamco laboris nisi ut
@@ -144,16 +150,18 @@ hyphenation.storyName = 'Hyphenation';
 hyphenation.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `To allow browser to automatically break words at appropriate hyphenation points, 
-        following whatever rules it chooses you can add <code class="docs-code">fd-text--hyphenation</code> class.
-        Also you can suggest line break opportunities.
-        There are two Unicode characters used to manually specify potential line break points within text:
+        storyDescription: `The text component can display words that are broken at appropriate hyphenation
+points in a text block. To display hyphens, add the <code class="docs-code">fd-text--hyphenation</code> to the main element.
+        
+It is also possible to suggest line break opportunities with two Unicode characters that manually specify
+potential line breakpoints:
 
-- **HYPHEN:** The "hard" hyphen character indicates a visible line break opportunity. Even if the line
-is not actually broken at that point, the hyphen is still rendered.
+- Hyphen: The "hard" hyphen character indicates a visible line break opportunity.
+Even if the line is not actually broken at that point, the hyphen is still displayed.
 
-- **SHY:** An invisible, "soft" hyphen. This character is not rendered visibly; instead, 
-it marks a place where the browser should break the word if hyphenation is necessary.
-In HTML, use <code class="docs-code">&shy;</code> to insert a soft hyphen.`
+- Shy: An invisible, "soft" hyphen. Although this character is not visible, it marks a place
+where the browser should break the word if hyphenation is necessary.
+
+In HTML, add the <code class="docs-code">&shy;</code> Unicode to insert a soft hyphen.`
     }
 };

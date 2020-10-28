@@ -20,7 +20,7 @@ exports[`Storyshots Components/Text Hyphenation 1`] = `
   
         
   <div
-    class="mw-300"
+    class="fddocs-text"
   >
     
             
@@ -45,7 +45,7 @@ exports[`Storyshots Components/Text Hyphenation 1`] = `
 
         
   <div
-    class="mw-300"
+    class="fddocs-text"
   >
     
             
@@ -167,7 +167,7 @@ exports[`Storyshots Components/Text Wrapping 1`] = `
   
     
   <h3>
-    Whitespace normal
+    No whitespace
   </h3>
   
     
