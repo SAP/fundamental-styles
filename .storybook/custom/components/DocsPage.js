@@ -14,6 +14,7 @@ import {
     DocsStory,
 } from '@storybook/addon-docs/blocks';
 import InfoLabel from './InfoLabel';
+import { changeDocumentTheme } from '../themeProvider';
 
 const DocsPage = () => {
     // setup toc bot
@@ -61,30 +62,7 @@ const DocsPage = () => {
         }
         
         if (!previousTheme.current || previousTheme.current !== themeState) {
-            // remove previous theme links
-            let links = [].slice.call(document.getElementsByTagName('link'));
-            links.forEach(item => {
-                if(item.attributes['data-theme-id']) {
-                    item.parentNode.removeChild(item);
-                }
-            });
-            let cssArr = context?.parameters?.components || [];
-            cssArr.indexOf('info-label') === -1 && cssArr.push('info-label');
-            cssArr.forEach(component => {
-                let stylePath = `${component}-${themeState}.css`;
-                let link = document.createElement('link');
-
-                link.type = 'text/css';
-                link.rel = 'stylesheet';
-                link.href = stylePath;
-                link.setAttribute('data-theme-id', themeState);
-
-
-                document.head.appendChild(link);
-
-                return () => { document.head.removeChild(link); }
-            })
-            previousTheme.current = themeState;
+            changeDocumentTheme(themeState, context?.parameters?.components || [])
         }
     }, [themeState, directionalityState]);
 
