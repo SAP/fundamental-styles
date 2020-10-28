@@ -2,7 +2,7 @@
 
 exports[`Storyshots Components/Busy Indicator Contrast Mode 1`] = `
 <div
-  style="display:flex;justify-content:center;flex-direction:column;align-items:center;background-color:cadetblue;height:250px"
+  style="display:flex;justify-content:center;flex-direction:column;align-items:center;background-color: lightblue; padding: 2rem;"
 >
   
 
@@ -36,7 +36,7 @@ exports[`Storyshots Components/Busy Indicator Contrast Mode 1`] = `
 
 exports[`Storyshots Components/Busy Indicator Standard 1`] = `
 <div
-  style="text-align: center"
+  style="text-align: center; background-color: lightblue; padding: 2rem"
 >
   
     

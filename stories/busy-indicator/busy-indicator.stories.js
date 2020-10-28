@@ -30,7 +30,7 @@ The ongoing operation only covers part of a screen that has multiple controls, a
     }
 };
 
-export const Standard = () => `<div style="text-align: center">
+export const Standard = () => `<div style="text-align: center; background-color: lightblue; padding: 2rem">
     <div class="fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
         <div class="fd-busy-indicator--circle-0"></div>
         <div class="fd-busy-indicator--circle-1"></div>
@@ -52,11 +52,12 @@ export const Standard = () => `<div style="text-align: center">
 Standard.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'The standard busy indicator animates a sequence of cascading dots expanding and shrinking in a loop. The component comes in three sizes detailed above. To display the busy indicator, use the <code>fd-busy-indicator</code> class. If you want to display a certain size, add the modifier class of the desired size i.e. <code>--m</code> to the element.'
+        storyDescription:
+            'The standard busy indicator animates a sequence of cascading dots expanding and shrinking in a loop. The component comes in three sizes detailed above. To display the busy indicator, use the <code>fd-busy-indicator</code> class. If you want to display a certain size, add the modifier class of the desired size i.e. <code>--m</code> to the element.'
     }
 };
 
-export const contrastMode = () => `<div style="display:flex;justify-content:center;flex-direction:column;align-items:center;background-color:cadetblue;height:250px">
+export const contrastMode = () => `<div style="display:flex;justify-content:center;flex-direction:column;align-items:center;background-color: lightblue; padding: 2rem;">
 <div class="fd-busy-indicator--l contrast" aria-hidden="false" aria-label="Loading">
     <div class="fd-busy-indicator--circle-0"></div>
     <div class="fd-busy-indicator--circle-1"></div>
@@ -68,6 +69,7 @@ export const contrastMode = () => `<div style="display:flex;justify-content:cent
 contrastMode.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'The busy indicator also comes in contrast mode and displays white dots against a dark background. To apply contrast mode, add <code>contrast</code> into the element i.e. <code>fd-busy-indicator--m contrast</code>.'
+        storyDescription:
+            'The busy indicator also comes in contrast mode and displays white dots against a dark background. To apply contrast mode, add <code>contrast</code> into the element i.e. <code>fd-busy-indicator--m contrast</code>.'
     }
 };
