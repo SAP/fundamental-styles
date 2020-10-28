@@ -42,7 +42,7 @@ Note: Dialog's header, subheader and footer are elements from the **Bar** compon
 };
 
 export const defaultDialog = () => `<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1">
+    <section class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1">
         <span class="fd-dialog__resize-handle"></span>
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
             <div class="fd-bar__left">
@@ -86,7 +86,7 @@ export const defaultDialog = () => `<div class="fd-dialog-docs-static fd-dialog 
                 </div>
             </div>
         </footer>
-    </div>
+    </section>
 </div>
 `;
 
@@ -101,7 +101,7 @@ defaultDialog.parameters = {
 
 export const sizes = () => `
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-<div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-2">
+<section class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-2">
     <header class="fd-dialog__header fd-bar fd-bar--header">
         <div class="fd-bar__left">
             <div class="fd-bar__element">
@@ -124,11 +124,11 @@ export const sizes = () => `
             </div>
         </div>
     </footer>
-</div>
+</section>
 </div>
 <br />
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-<div class="fd-dialog__content fd-dialog__content--m" role="dialog" aria-modal="true" aria-labelledby="dialog-title-3">
+<section class="fd-dialog__content fd-dialog__content--m" role="dialog" aria-modal="true" aria-labelledby="dialog-title-3">
     <header class="fd-dialog__header fd-bar fd-bar--header">
         <div class="fd-bar__left">
             <div class="fd-bar__element">
@@ -151,11 +151,11 @@ export const sizes = () => `
             </div>
         </div>
     </footer>
-</div> 
+</section> 
 </div>
 <br />
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-<div class="fd-dialog__content fd-dialog__content--l" role="dialog" aria-modal="true" aria-labelledby="dialog-title-4">
+<section class="fd-dialog__content fd-dialog__content--l" role="dialog" aria-modal="true" aria-labelledby="dialog-title-4">
     <header class="fd-dialog__header fd-bar fd-bar--header">
         <div class="fd-bar__left">
             <div class="fd-bar__element">
@@ -178,11 +178,11 @@ export const sizes = () => `
             </div>
         </div>
     </footer>
-</div>
+</section>
 </div>
 <br />
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-<div class="fd-dialog__content fd-dialog__content--xl" role="dialog" aria-modal="true" aria-labelledby="dialog-title-5">
+<section class="fd-dialog__content fd-dialog__content--xl" role="dialog" aria-modal="true" aria-labelledby="dialog-title-5">
     <header class="fd-dialog__header fd-bar fd-bar--header">
         <div class="fd-bar__left">
             <div class="fd-bar__element">
@@ -205,7 +205,7 @@ export const sizes = () => `
             </div>
         </div>
     </footer>
-</div>
+</section>
 </div>
 `;
 
@@ -248,7 +248,7 @@ Note: On mobile devices, the bar component should be used with the <code>fd-bar-
 };
 
 export const Resizable = () => `<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-        <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-6">
+        <section class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-6">
             <span class="fd-dialog__resize-handle"></span>
             <header class="fd-dialog__header fd-bar fd-bar--header">
                 <div class="fd-bar__left">
@@ -272,7 +272,7 @@ export const Resizable = () => `<div class="fd-dialog-docs-static fd-dialog fd-d
                     </div>
                 </div>
             </footer>
-        </div>
+        </section>
     </div>
 `;
 
@@ -287,7 +287,7 @@ Note: This feature should be enabled for desktop screens only.`
 };
 
 export const Draggable = () => `<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div class="fd-dialog__content fd-dialog__content--draggable-grab fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-7">
+    <section class="fd-dialog__content fd-dialog__content--draggable-grab fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-7">
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -310,7 +310,7 @@ export const Draggable = () => `<div class="fd-dialog-docs-static fd-dialog fd-d
                 </div>
             </div>
         </footer>
-    </div>
+    </section>
 </div>
 `;
 
@@ -331,7 +331,7 @@ Dialog can be draggable, enabling the user to drag the container around with the
 export const Selectable = () => `
 <button class="fd-button" onclick="toggleClass('select-dialog-example', 'fd-dialog--active')">Open example</button>
 <div class="fd-dialog fd-dialog--active" style="position:absolute;" id="select-dialog-example">
-    <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-8">
+    <section class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-8">
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -417,7 +417,7 @@ export const Selectable = () => `
                 </div>
             </div>
         </footer>
-    </div>
+    </section>
 </div>
 <div style="margin-bottom:500px"/>
 `;
@@ -434,7 +434,7 @@ Selectable.parameters = {
 export const Loading = () => `
 <button class="fd-button" onclick="toggleClass('loading-dialog-example', 'fd-dialog--active')">Open example</button>
 <div class="fd-dialog fd-dialog--active" style="position:absolute;" id="loading-dialog-example">
-    <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-9">
+    <section class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-9">
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -459,7 +459,7 @@ export const Loading = () => `
                 </div>
             </div>
         </footer>
-    </div>
+    </section>
 </div>
 <div style="margin-bottom:500px"/>
 `;
