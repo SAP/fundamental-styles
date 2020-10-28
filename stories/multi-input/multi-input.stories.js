@@ -15,6 +15,7 @@ If the entries are not validated by the application, users can also enter custom
             'input',
             'form-label',
             'form-item',
+            'form-message',
             'popover',
             'radio',
             'title',
@@ -24,7 +25,10 @@ If the entries are not validated by the application, users can also enter custom
             'checkbox',
             'list',
             'button',
-            'icon'
+            'icon',
+            'bar',
+            'dialog',
+            'link'
         ]
     }
 };
