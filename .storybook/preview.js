@@ -1,5 +1,6 @@
 import fundamentals from './custom/fundamentals';
 import { withCssResources } from "@storybook/addon-cssresources";
+import { withThemeProvider } from './custom/themeProvider';
 import { DocsContainer } from '@storybook/addon-docs/blocks';
 import DocsPage from './custom/components/DocsPage';
 import { makeDecorator } from '@storybook/addons';
@@ -45,14 +46,6 @@ export const parameters = {
         id: 'windows-hcm-light',
         code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-light.css"></link>',
         picked: false
-    },
-    {
-      id: 'css_variables',
-      code: `
-            <link rel="stylesheet" type="text/css" href="./theming/sap_fiori_3.css"></link>
-            <link rel="stylesheet" type="text/css" href="./theming-base-content/content/Base/baseLib/sap_fiori_3/css_variables.css"></link>
-    `,
-      picked: false
     }
   ],
   docs: {
@@ -88,46 +81,6 @@ export const globalTypes = {
     },
   },
 };
-
-// this decorator is used to inject link style tags
-// based on the current selected theme from the addon toolbar
-// and current component.
-const withThemeProvider = makeDecorator({
-  name: 'withThemeProvider',
-  parameterName: 'themes',
-  wrapper: (storyFn, context, { parameters }) => {
-    let links = [].slice.call(document.getElementsByTagName('link'));
-    let toRemove = [];
-    links.forEach(item => {
-        if(item.attributes['data-theme-id']) {
-            toRemove.push(item);
-        }
-    });
-    let cssArr = context?.parameters?.components || [];
-    cssArr.indexOf('info-label') === -1 && cssArr.push('info-label');
-
-    const styleLinkTag = (stylePath) => {
-      let link = document.createElement('link');
-      link.type = 'text/css';
-      link.rel = 'stylesheet';
-      link.href = stylePath;
-      link.setAttribute('data-theme-id', context?.globals?.theme);
-      return link;
-    };
-
-    cssArr.forEach(component => {
-        let stylePath = `${component}-${context?.globals?.theme}.css`;
-        document.head.appendChild(styleLinkTag(stylePath));
-    })
-
-    toRemove.forEach(item => {
-      item.parentNode.removeChild(item);
-    })
-    document.head.appendChild(styleLinkTag(`theming-base-content/content/Base/baseLib/${context?.globals?.theme}/css_variables.css`));
-
-    return storyFn(context);
-  }
-})
 
 export const decorators = [
   withThemeProvider,
