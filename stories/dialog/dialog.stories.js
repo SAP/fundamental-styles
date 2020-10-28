@@ -330,7 +330,7 @@ Dialog can be draggable, enabling the user to drag the container around with the
 
 export const Selectable = () => `
 <button class="fd-button" onclick="toggleClass('select-dialog-example', 'fd-dialog--active')">Open example</button>
-<div class="fd-dialog" id="select-dialog-example">
+<div class="fd-dialog fd-dialog--active" style="position:absolute;" id="select-dialog-example">
     <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-8">
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
             <div class="fd-bar__left">
@@ -419,6 +419,7 @@ export const Selectable = () => `
         </footer>
     </div>
 </div>
+<div style="margin-bottom:500px"/>
 `;
 
 Selectable.parameters = {
@@ -432,7 +433,7 @@ Selectable.parameters = {
 
 export const Loading = () => `
 <button class="fd-button" onclick="toggleClass('loading-dialog-example', 'fd-dialog--active')">Open example</button>
-<div class="fd-dialog" id="loading-dialog-example">
+<div class="fd-dialog fd-dialog--active" style="position:absolute;" id="loading-dialog-example">
     <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-9">
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
@@ -460,6 +461,7 @@ export const Loading = () => `
         </footer>
     </div>
 </div>
+<div style="margin-bottom:500px"/>
 `;
 Loading.parameters = {
     docs: {
