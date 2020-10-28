@@ -76,6 +76,11 @@ $heading-toc-spacer: $docs-hd-tp + $docs-hd-bp + $docs-hd-ch + $docs-tm;
   border-bottom: 2px solid #d7dbde;
   z-index: 10;
 
+  &--label {
+    align-self: center;
+    margin: 0 6px;
+  }
+
   &--left {
     display: flex;
     align-items: center;
