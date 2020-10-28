@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.28...v0.13.0-rc.29) (2020-10-28)
+
+
+### Bug Fixes
+
+* high contrast black side navigation nested-list/icon text shadow ([#1825](https://github.com/SAP/fundamental-styles/issues/1825)) ([704c8e2](https://github.com/SAP/fundamental-styles/commit/704c8e209923acb119291c067b5eb246bee7129d))
+
 ## [0.13.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.27...v0.13.0-rc.28) (2020-10-28)
 
 
