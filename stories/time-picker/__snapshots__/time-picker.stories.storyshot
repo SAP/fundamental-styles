@@ -852,420 +852,428 @@ exports[`Storyshots Patterns/Time Picker Cozy And Compact Mode 1`] = `
 
 exports[`Storyshots Patterns/Time Picker Tablet Mode 1`] = `
 <div
-  class="fd-popover fd-popover--no-arrow"
+  style="min-height: 580px;"
 >
   
     
   <div
-    class="fd-popover__control"
+    class="fd-popover fd-popover--no-arrow"
   >
     
         
     <div
-      class="fd-input-group"
-    >
-      
-            
-      <input
-        class="fd-input fd-input-group__input"
-        id=""
-        placeholder="hh:mm:ss am/pm"
-        type="text"
-        value="4:25:10 PM"
-      />
-      
-            
-      <span
-        class="fd-input-group__addon fd-input-group__addon--button"
-      >
-        
-                
-        <button
-          aria-controls="rKLHJ5311"
-          aria-expanded="true"
-          aria-haspopup="true"
-          class="fd-input-group__button fd-button fd-button--transparent fd-popover__control"
-        >
-          
-                    
-          <i
-            class="sap-icon--time-entry-request"
-          />
-          
-                
-        </button>
-        
-            
-      </span>
-      
-        
-    </div>
-    
-    
-  </div>
-  
-    
-  <div
-    aria-hidden="false"
-    class="fd-popover__body fd-popover__body--no-arrow"
-    id="rKLHJ5311"
-  >
-    
-        
-    <div
-      class="fd-time fd-time--scrollable fd-time--tablet"
+      class="fd-popover__control"
     >
       
             
       <div
-        class="fd-time__col"
+        class="fd-input-group"
       >
         
                 
-        <label
-          class="fd-time__slider-label fd-form-label"
-        >
-          Hrs
-        </label>
+        <input
+          class="fd-input fd-input-group__input"
+          id=""
+          placeholder="hh:mm:ss am/pm"
+          type="text"
+          value="4:25:10 PM"
+        />
         
                 
-        <button
-          aria-label="Increase hours"
-          class="fd-button fd-button--transparent"
-        >
-          
-                    
-          <i
-            class="sap-icon--navigation-up-arrow"
-          />
-          
-                
-        </button>
-        
-                
-        <div
-          class="fd-time__wrapper fd-time__wrapper--active"
-        >
-          
-                   
-          <ul
-            class="fd-time__list"
-          >
-            
-                       
-            <li
-              class="fd-time__item"
-            >
-              
-                           
-              <span
-                class="fd-time__unit"
-              >
-                01
-              </span>
-              
-                       
-            </li>
-            
-                       
-            <li
-              class="fd-time__item"
-            >
-              
-                           
-              <span
-                class="fd-time__unit"
-              >
-                02
-              </span>
-                                  
-                       
-            </li>
-            
-                       
-            <li
-              class="fd-time__item"
-            >
-              
-                           
-              <span
-                class="fd-time__unit"
-              >
-                03
-              </span>
-              
-                       
-            </li>
-            
-                       
-            <li
-              class="fd-time__item"
-            >
-              
-                           
-              <div
-                class="fd-time__current-indicator"
-              />
-              
-                           
-              <span
-                class="fd-time__unit"
-              >
-                
-                               04
-                           
-              </span>
-              
-                       
-            </li>
-            
-                       
-            <li
-              class="fd-time__item"
-            >
-              
-                           
-              <span
-                class="fd-time__unit"
-              >
-                05
-              </span>
-              
-                       
-            </li>
-            
-                       
-            <li
-              class="fd-time__item"
-            >
-              
-                           
-              <span
-                class="fd-time__unit"
-              >
-                06
-              </span>
-              
-                       
-            </li>
-            
-                       
-            <li
-              class="fd-time__item"
-            >
-              
-                           
-              <span
-                class="fd-time__unit"
-              >
-                07
-              </span>
-              
-                       
-            </li>
-            
-                       
-            <li
-              class="fd-time__item"
-            >
-              
-                           
-              <span
-                class="fd-time__unit"
-              >
-                08
-              </span>
-              
-                       
-            </li>
-            
-                       
-            <li
-              class="fd-time__item"
-            >
-              
-                           
-              <span
-                class="fd-time__unit"
-              >
-                09
-              </span>
-              
-                       
-            </li>
-            
-                       
-            <li
-              class="fd-time__item"
-            >
-              
-                           
-              <span
-                class="fd-time__unit"
-              >
-                10
-              </span>
-              
-                       
-            </li>
-            
-                   
-          </ul>
-          
-                
-        </div>
-        
-                
-        <button
-          aria-label="Decrease hours"
-          class="fd-button fd-button fd-button--transparent"
+        <span
+          class="fd-input-group__addon fd-input-group__addon--button"
         >
           
                     
-          <i
-            class="sap-icon--navigation-down-arrow"
-          />
-          
-                
-        </button>
-        
-            
-      </div>
-      
-            
-      <div
-        class="fd-time__col"
-      >
-        
-                
-        <label
-          class="fd-time__slider-label fd-form-label"
-        >
-          Min
-        </label>
-        
-                
-        <div
-          class="fd-time__wrapper"
-        >
-          
-                    
-          <span
-            class="fd-time__item fd-time__item--collapsed"
-          >
-            25
-          </span>
-          
-                
-        </div>
-        
-            
-      </div>
-      
-            
-      <div
-        class="fd-time__col"
-      >
-        
-                
-        <label
-          class="fd-time__slider-label fd-form-label"
-        >
-          Sec
-        </label>
-        
-                
-        <div
-          class="fd-time__wrapper"
-        >
-          
-                    
-          <span
-            class="fd-time__item fd-time__item--collapsed"
-          >
-            10
-          </span>
-          
-                
-        </div>
-        
-            
-      </div>
-      
-            
-      <div
-        class="fd-time__col"
-      >
-        
-                
-        <label
-          class="fd-time__slider-label fd-form-label"
-        >
-          AM/PM
-        </label>
-        
-                
-        <div
-          class="fd-time__wrapper fd-time__wrapper--meridian"
-        >
-          
-                    
-          <span
-            class="fd-time__item fd-time__item--collapsed"
-          >
-            AM
-          </span>
-          
-                
-        </div>
-        
-            
-      </div>
-      
-        
-    </div>
-    
-       
-    <div
-      class="fd-popover__body-footer"
-    >
-      
-            
-      <div
-        class="fd-bar fd-bar--cozy fd-bar--footer"
-      >
-        
-                
-        <div
-          class="fd-bar__right"
-        >
-          
-                    
-          <div
-            class="fd-bar__element"
+          <button
+            aria-controls="rKLHJ5311"
+            aria-expanded="true"
+            aria-haspopup="true"
+            class="fd-input-group__button fd-button fd-button--transparent fd-popover__control"
           >
             
                         
-            <button
-              class="fd-button fd-button--emphasized"
+            <i
+              class="sap-icon--time-entry-request"
+            />
+            
+                    
+          </button>
+          
+                
+        </span>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      aria-hidden="false"
+      class="fd-popover__body fd-popover__body--no-arrow"
+      id="rKLHJ5311"
+    >
+      
+            
+      <div
+        class="fd-time fd-time--scrollable fd-time--tablet"
+      >
+        
+                
+        <div
+          class="fd-time__col"
+        >
+          
+                    
+          <label
+            class="fd-time__slider-label fd-form-label"
+          >
+            Hrs
+          </label>
+          
+                    
+          <button
+            aria-label="Increase hours"
+            class="fd-button fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--navigation-up-arrow"
+            />
+            
+                    
+          </button>
+          
+                    
+          <div
+            class="fd-time__wrapper fd-time__wrapper--active"
+          >
+            
+                    
+            <ul
+              class="fd-time__list"
             >
-              OK
-            </button>
+              
+                        
+              <li
+                class="fd-time__item"
+              >
+                
+                            
+                <span
+                  class="fd-time__unit"
+                >
+                  01
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-time__item"
+              >
+                
+                            
+                <span
+                  class="fd-time__unit"
+                >
+                  02
+                </span>
+                                    
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-time__item"
+              >
+                
+                            
+                <span
+                  class="fd-time__unit"
+                >
+                  03
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-time__item"
+              >
+                
+                            
+                <div
+                  class="fd-time__current-indicator"
+                />
+                
+                            
+                <span
+                  class="fd-time__unit"
+                >
+                  
+                                04
+                            
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-time__item"
+              >
+                
+                            
+                <span
+                  class="fd-time__unit"
+                >
+                  05
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-time__item"
+              >
+                
+                            
+                <span
+                  class="fd-time__unit"
+                >
+                  06
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-time__item"
+              >
+                
+                            
+                <span
+                  class="fd-time__unit"
+                >
+                  07
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-time__item"
+              >
+                
+                            
+                <span
+                  class="fd-time__unit"
+                >
+                  08
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-time__item"
+              >
+                
+                            
+                <span
+                  class="fd-time__unit"
+                >
+                  09
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-time__item"
+              >
+                
+                            
+                <span
+                  class="fd-time__unit"
+                >
+                  10
+                </span>
+                
+                        
+              </li>
+              
+                    
+            </ul>
             
                     
           </div>
           
                     
-          <div
-            class="fd-bar__element"
+          <button
+            aria-label="Decrease hours"
+            class="fd-button fd-button fd-button--transparent"
           >
             
                         
-            <button
-              class="fd-button fd-button--transparent"
+            <i
+              class="sap-icon--navigation-down-arrow"
+            />
+            
+                    
+          </button>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-time__col"
+        >
+          
+                    
+          <label
+            class="fd-time__slider-label fd-form-label"
+          >
+            Min
+          </label>
+          
+                    
+          <div
+            class="fd-time__wrapper"
+          >
+            
+                        
+            <span
+              class="fd-time__item fd-time__item--collapsed"
             >
-              Cancel
-            </button>
+              25
+            </span>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-time__col"
+        >
+          
+                    
+          <label
+            class="fd-time__slider-label fd-form-label"
+          >
+            Sec
+          </label>
+          
+                    
+          <div
+            class="fd-time__wrapper"
+          >
+            
+                        
+            <span
+              class="fd-time__item fd-time__item--collapsed"
+            >
+              10
+            </span>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-time__col"
+        >
+          
+                    
+          <label
+            class="fd-time__slider-label fd-form-label"
+          >
+            AM/PM
+          </label>
+          
+                    
+          <div
+            class="fd-time__wrapper fd-time__wrapper--meridian"
+          >
+            
+                        
+            <span
+              class="fd-time__item fd-time__item--collapsed"
+            >
+              AM
+            </span>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+      <div
+        class="fd-popover__body-footer"
+      >
+        
+                
+        <div
+          class="fd-bar fd-bar--cozy fd-bar--footer"
+        >
+          
+                    
+          <div
+            class="fd-bar__right"
+          >
+            
+                        
+            <div
+              class="fd-bar__element"
+            >
+              
+                            
+              <button
+                class="fd-button fd-button--emphasized"
+              >
+                OK
+              </button>
+              
+                        
+            </div>
+            
+                        
+            <div
+              class="fd-bar__element"
+            >
+              
+                            
+              <button
+                class="fd-button fd-button--transparent"
+              >
+                Cancel
+              </button>
+              
+                        
+            </div>
             
                     
           </div>

@@ -1140,290 +1140,298 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
 
 exports[`Storyshots Patterns/Multi Input Filtering 1`] = `
 <div
-  class="fd-popover"
+  style="min-height: 400px;"
 >
   
     
   <div
-    aria-controls="F4GcX348aB"
-    aria-expanded="true"
-    aria-haspopup="true"
-    class="fd-popover__control"
+    class="fd-popover"
   >
     
         
     <div
-      class="fd-input-group fd-input-group--control"
+      aria-controls="F4GcX348aB"
+      aria-expanded="true"
+      aria-haspopup="true"
+      class="fd-popover__control"
     >
       
             
       <div
-        class="fd-tokenizer"
+        class="fd-input-group fd-input-group--control"
       >
         
                 
         <div
-          class="fd-tokenizer__inner"
+          class="fd-tokenizer"
         >
           
                     
-          <span
-            class="fd-token"
-            role="button"
+          <div
+            class="fd-tokenizer__inner"
           >
             
                         
             <span
-              class="fd-token__text"
+              class="fd-token"
+              role="button"
             >
               
-                            Apple
+                            
+              <span
+                class="fd-token__text"
+              >
+                
+                                Apple
+                            
+              </span>
+              
+                            
+              <button
+                class="fd-token__close"
+              />
+              
                         
             </span>
-            
-                        
-            <button
-              class="fd-token__close"
-            />
-            
-                    
-          </span>
-          
-                    
-          <span
-            class="fd-token"
-            role="button"
-          >
             
                         
             <span
-              class="fd-token__text"
+              class="fd-token"
+              role="button"
             >
               
-                            Orange
+                            
+              <span
+                class="fd-token__text"
+              >
+                
+                                Orange
+                            
+              </span>
+              
+                            
+              <button
+                class="fd-token__close"
+              />
+              
                         
             </span>
-            
-                        
-            <button
-              class="fd-token__close"
-            />
-            
-                    
-          </span>
-          
-                    
-          <span
-            class="fd-token"
-            role="button"
-          >
             
                         
             <span
-              class="fd-token__text"
+              class="fd-token"
+              role="button"
             >
               
-                            Banana
+                            
+              <span
+                class="fd-token__text"
+              >
+                
+                                Banana
+                            
+              </span>
+              
+                            
+              <button
+                class="fd-token__close"
+              />
+              
                         
             </span>
             
                         
-            <button
-              class="fd-token__close"
+            <input
+              class="fd-input fd-input-group__input fd-tokenizer__input"
+              value="A"
             />
             
                     
-          </span>
-          
-                    
-          <input
-            class="fd-input fd-input-group__input fd-tokenizer__input"
-            value="A"
-          />
+          </div>
           
                 
         </div>
         
-            
-      </div>
-      
-            
-      <span
-        class="fd-input-group__addon fd-input-group__addon--button"
-      >
-        
                 
-        <button
-          aria-controls="F4GcX348aB"
-          aria-expanded="false"
-          aria-haspopup="true"
-          class="fd-input-group__button fd-button fd-button--transparent"
+        <span
+          class="fd-input-group__addon fd-input-group__addon--button"
         >
           
                     
-          <i
-            class="sap-icon--value-help"
-          />
+          <button
+            aria-controls="F4GcX348aB"
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="fd-input-group__button fd-button fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--value-help"
+            />
+            
+                    
+          </button>
           
                 
-        </button>
+        </span>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      aria-hidden="false"
+      class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill"
+      id="F4GcX348aB"
+    >
+      
+            
+      <ul
+        class="fd-list fd-list--multi-input"
+      >
+        
+                
+        <li
+          class="fd-list__item is-selected"
+          role="option"
+        >
+          
+                    
+          <input
+            checked=""
+            class="fd-checkbox fd-list__input"
+            id="Ai4ez611A"
+            type="checkbox"
+          />
+          
+                    
+          <label
+            class="fd-checkbox__label fd-list__label"
+            for="Ai4ez611A"
+          >
+            
+                        
+            <span
+              class="fd-checkbox__text fd-list__title"
+            >
+              
+                            
+              <b>
+                A
+              </b>
+              pple
+                        
+            </span>
+            
+                    
+          </label>
+          
+                
+        </li>
+        
+                
+        <li
+          class="fd-list__item is-selected"
+          role="option"
+        >
+          
+                    
+          <input
+            checked=""
+            class="fd-checkbox fd-list__input"
+            id="Ai4ez612A"
+            type="checkbox"
+          />
+          
+                    
+          <label
+            class="fd-checkbox__label fd-list__label"
+            for="Ai4ez612A"
+          >
+            
+                        
+            <span
+              class="fd-list__title"
+            >
+              
+                            Or
+              <b>
+                a
+              </b>
+              nge
+                        
+            </span>
+            
+                    
+          </label>
+          
+                
+        </li>
+        
+                
+        <li
+          class="fd-list__item is-selected"
+          role="option"
+        >
+          
+                    
+          <input
+            checked=""
+            class="fd-checkbox fd-list__input"
+            id="Ai4ez614A"
+            type="checkbox"
+          />
+          
+                    
+          <label
+            class="fd-checkbox__label fd-list__label"
+            for="Ai4ez614A"
+          >
+            
+                        
+            <span
+              class="fd-list__title"
+            >
+              
+                            B
+              <b>
+                a
+              </b>
+              nana
+                        
+            </span>
+            
+                    
+          </label>
+          
+                
+        </li>
+        
+            
+      </ul>
+      
+            
+      <span
+        class="fd-list__footer"
+      >
+        
+            
+        <a
+          class="fd-link"
+          href="#"
+        >
+          Show All
+        </a>
         
             
       </span>
       
         
     </div>
-    
-    
-  </div>
-  
-    
-  <div
-    aria-hidden="false"
-    class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill"
-    id="F4GcX348aB"
-  >
-    
-        
-    <ul
-      class="fd-list fd-list--multi-input"
-    >
-      
-             
-      <li
-        class="fd-list__item is-selected"
-        role="option"
-      >
-        
-                
-        <input
-          checked=""
-          class="fd-checkbox fd-list__input"
-          id="Ai4ez611A"
-          type="checkbox"
-        />
-        
-                
-        <label
-          class="fd-checkbox__label fd-list__label"
-          for="Ai4ez611A"
-        >
-          
-                    
-          <span
-            class="fd-checkbox__text fd-list__title"
-          >
-            
-                        
-            <b>
-              A
-            </b>
-            pple
-                    
-          </span>
-          
-                
-        </label>
-        
-            
-      </li>
-      
-             
-      <li
-        class="fd-list__item is-selected"
-        role="option"
-      >
-        
-                
-        <input
-          checked=""
-          class="fd-checkbox fd-list__input"
-          id="Ai4ez612A"
-          type="checkbox"
-        />
-        
-                
-        <label
-          class="fd-checkbox__label fd-list__label"
-          for="Ai4ez612A"
-        >
-          
-                    
-          <span
-            class="fd-list__title"
-          >
-            
-                        Or
-            <b>
-              a
-            </b>
-            nge
-                    
-          </span>
-          
-                
-        </label>
-        
-            
-      </li>
-      
-             
-      <li
-        class="fd-list__item is-selected"
-        role="option"
-      >
-        
-                
-        <input
-          checked=""
-          class="fd-checkbox fd-list__input"
-          id="Ai4ez614A"
-          type="checkbox"
-        />
-        
-                
-        <label
-          class="fd-checkbox__label fd-list__label"
-          for="Ai4ez614A"
-        >
-          
-                    
-          <span
-            class="fd-list__title"
-          >
-            
-                        B
-            <b>
-              a
-            </b>
-            nana
-                    
-          </span>
-          
-                
-        </label>
-        
-            
-      </li>
-      
-        
-    </ul>
-    
-        
-    <span
-      class="fd-list__footer"
-    >
-      
-          
-      <a
-        class="fd-link"
-        href="#"
-      >
-        Show All
-      </a>
-      
-        
-    </span>
     
     
   </div>

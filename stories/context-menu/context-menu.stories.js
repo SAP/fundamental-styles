@@ -1,5 +1,5 @@
 export default {
-    title: 'Patterns/Contextul Menu',
+    title: 'Patterns/Contextual Menu',
     parameters: {
         description: `
 The contextual menu component is an opinionated composition of the <code>popover</code> and <code>menu</code> components with the use of a styled button.
@@ -21,70 +21,66 @@ Implementation Guidelines:
     }
 };
 
-export const withIconAndButton = () => `<div style="display:flex;justify-content:space-around">
-    <div class="fd-popover">
-        <div class="fd-popover__control">
-            <button class="fd-button fd-button--transparent" aria-controls="pQqQR213" aria-haspopup="true" aria-expanded="true" aria-label="More">
-                <i class="sap-icon--overflow"></i>
-            </button>
+export const withIconAndButton = () => `<div style="height: 400px;">
+    <div style="display:flex;justify-content:space-around;">
+        <div class="fd-popover">
+            <div class="fd-popover__control">
+                <button class="fd-button fd-button--transparent" aria-controls="pQqQR213" aria-haspopup="true" aria-expanded="true" aria-label="More">
+                    <i class="sap-icon--overflow"></i>
+                </button>
+            </div>
+            <div class="fd-popover__body" aria-hidden="false" id="pQqQR213">
+                <nav class="fd-menu">
+                    <ul class="fd-menu__list fd-menu__list--no-shadow">
+                        <li class="fd-menu__item">
+                            <a href="#" class="fd-menu__link">
+                                <span class="fd-menu__title">Option 1</span>
+                            </a>
+                        </li>
+                        <li class="fd-menu__item">
+                            <a href="#" class="fd-menu__link">
+                                <span class="fd-menu__title">Option 2</span>
+                            </a>
+                        </li>
+                        <li class="fd-menu__item">
+                            <a href="#" class="fd-menu__link">
+                                <span class="fd-menu__title">Option 3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div class="fd-popover__body" aria-hidden="false" id="pQqQR213">
-            <nav class="fd-menu">
-                <ul class="fd-menu__list fd-menu__list--no-shadow">
-                    <li class="fd-menu__item">
-                        <a href="#" class="fd-menu__link">
-                            <span class="fd-menu__title">Option 1</span>
-                        </a>
-                    </li>
-                    <li class="fd-menu__item">
-                        <a href="#" class="fd-menu__link">
-                            <span class="fd-menu__title">Option 2</span>
-                        </a>
-                    </li>
-                    <li class="fd-menu__item">
-                        <a href="#" class="fd-menu__link">
-                            <span class="fd-menu__title">Option 3</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
 
-    <div class="fd-popover">
-        <div class="fd-popover__control">
-            <button class="fd-button" aria-controls="jhqD0558" aria-haspopup="true" aria-expanded="true" aria-label="More">More</button>
-        </div>
-        <div class="fd-popover__body" aria-hidden="false" id="jhqD0558">
-            <nav class="fd-menu">
-                <ul class="fd-menu__list fd-menu__list--no-shadow">
-                    <li class="fd-menu__item">
-                        <a href="#" class="fd-menu__link">
-                            <span class="fd-menu__title">Option 1</span>
-                        </a>
-                    </li>
-                    <span class="fd-menu__separator"></span>
-                    <li class="fd-menu__item">
-                        <a href="#" class="fd-menu__link">
-                            <span class="fd-menu__title">Option 2</span>
-                        </a>
-                    </li>
-                    <li class="fd-menu__item">
-                        <a href="#" class="fd-menu__link">
-                            <span class="fd-menu__title">Option 3</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="fd-popover">
+            <div class="fd-popover__control">
+                <button class="fd-button" aria-controls="jhqD0558" aria-haspopup="true" aria-expanded="true" aria-label="More">More</button>
+            </div>
+            <div class="fd-popover__body" aria-hidden="false" id="jhqD0558">
+                <nav class="fd-menu">
+                    <ul class="fd-menu__list fd-menu__list--no-shadow">
+                        <li class="fd-menu__item">
+                            <a href="#" class="fd-menu__link">
+                                <span class="fd-menu__title">Option 1</span>
+                            </a>
+                        </li>
+                        <span class="fd-menu__separator"></span>
+                        <li class="fd-menu__item">
+                            <a href="#" class="fd-menu__link">
+                                <span class="fd-menu__title">Option 2</span>
+                            </a>
+                        </li>
+                        <li class="fd-menu__item">
+                            <a href="#" class="fd-menu__link">
+                                <span class="fd-menu__title">Option 3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
 </div>
 `;
 
-
 withIconAndButton.storyName = 'Examples with Icon and Button';
-withIconAndButton.parameters = {
-    docs: {
-        iframeHeight: 250
-    }
-};

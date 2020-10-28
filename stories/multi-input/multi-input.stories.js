@@ -11,7 +11,21 @@ It provides an editable input field for filtering the list, and a dropdown menu 
 If the entries are not validated by the application, users can also enter custom values. 
 `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['input', 'form-label', 'form-item', 'popover', 'radio', 'title', 'token', 'tokenizer', 'input-group', 'checkbox', 'list', 'button', 'icon']
+        components: [
+            'input',
+            'form-label',
+            'form-item',
+            'popover',
+            'radio',
+            'title',
+            'token',
+            'tokenizer',
+            'input-group',
+            'checkbox',
+            'list',
+            'button',
+            'icon'
+        ]
     }
 };
 
@@ -417,7 +431,8 @@ export const grouping = () => `<div style="height:450px">
 grouping.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'In cases where the list items need to be categorized into groups, it is possible to add headers for each category as seen below.'
+        storyDescription:
+            'In cases where the list items need to be categorized into groups, it is possible to add headers for each category as seen below.'
     }
 };
 
@@ -872,69 +887,71 @@ So instead of using popover and dropdown, it should be wrapped in \`dialog\` and
     }
 };
 
-export const filtering = () => `<div class="fd-popover">
-    <div class="fd-popover__control" aria-controls="F4GcX348aB" aria-expanded="true" aria-haspopup="true">
-        <div class="fd-input-group fd-input-group--control">
-            <div class="fd-tokenizer">
-                <div class="fd-tokenizer__inner">
-                    <span class="fd-token" role="button">
-                        <span class="fd-token__text">
-                            Apple
+export const filtering = () => `<div style="min-height: 400px;">
+    <div class="fd-popover">
+        <div class="fd-popover__control" aria-controls="F4GcX348aB" aria-expanded="true" aria-haspopup="true">
+            <div class="fd-input-group fd-input-group--control">
+                <div class="fd-tokenizer">
+                    <div class="fd-tokenizer__inner">
+                        <span class="fd-token" role="button">
+                            <span class="fd-token__text">
+                                Apple
+                            </span>
+                            <button class="fd-token__close"></button>
                         </span>
-                        <button class="fd-token__close"></button>
-                    </span>
-                    <span class="fd-token" role="button">
-                        <span class="fd-token__text">
-                            Orange
+                        <span class="fd-token" role="button">
+                            <span class="fd-token__text">
+                                Orange
+                            </span>
+                            <button class="fd-token__close"></button>
                         </span>
-                        <button class="fd-token__close"></button>
-                    </span>
-                    <span class="fd-token" role="button">
-                        <span class="fd-token__text">
-                            Banana
+                        <span class="fd-token" role="button">
+                            <span class="fd-token__text">
+                                Banana
+                            </span>
+                            <button class="fd-token__close"></button>
                         </span>
-                        <button class="fd-token__close"></button>
-                    </span>
-                    <input class="fd-input fd-input-group__input fd-tokenizer__input" value="A" />
+                        <input class="fd-input fd-input-group__input fd-tokenizer__input" value="A" />
+                    </div>
                 </div>
+                <span class="fd-input-group__addon fd-input-group__addon--button">
+                    <button class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcX348aB" aria-expanded="false" aria-haspopup="true">
+                        <i class="sap-icon--value-help"></i>
+                    </button>
+                </span>
             </div>
-            <span class="fd-input-group__addon fd-input-group__addon--button">
-                <button class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcX348aB" aria-expanded="false" aria-haspopup="true">
-                    <i class="sap-icon--value-help"></i>
-                </button>
+        </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcX348aB">
+            <ul class="fd-list fd-list--multi-input">
+                <li class="fd-list__item is-selected" role="option">
+                    <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez611A">
+                    <label class="fd-checkbox__label fd-list__label" for="Ai4ez611A">
+                        <span class="fd-checkbox__text fd-list__title">
+                            <b>A</b>pple
+                        </span>
+                    </label>
+                </li>
+                <li class="fd-list__item is-selected" role="option">
+                    <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez612A">
+                    <label class="fd-checkbox__label fd-list__label" for="Ai4ez612A">
+                        <span class="fd-list__title">
+                            Or<b>a</b>nge
+                        </span>
+                    </label>
+                </li>
+                <li class="fd-list__item is-selected" role="option">
+                    <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez614A">
+                    <label class="fd-checkbox__label fd-list__label" for="Ai4ez614A">
+                        <span class="fd-list__title">
+                            B<b>a</b>nana
+                        </span>
+                    </label>
+                </li>
+            </ul>
+            <span class="fd-list__footer">
+            <a class="fd-link" href="#">Show All</a>
             </span>
         </div>
-    </div>
-    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcX348aB">
-        <ul class="fd-list fd-list--multi-input">
-             <li class="fd-list__item is-selected" role="option">
-                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez611A">
-                <label class="fd-checkbox__label fd-list__label" for="Ai4ez611A">
-                    <span class="fd-checkbox__text fd-list__title">
-                        <b>A</b>pple
-                    </span>
-                </label>
-            </li>
-             <li class="fd-list__item is-selected" role="option">
-                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez612A">
-                <label class="fd-checkbox__label fd-list__label" for="Ai4ez612A">
-                    <span class="fd-list__title">
-                        Or<b>a</b>nge
-                    </span>
-                </label>
-            </li>
-             <li class="fd-list__item is-selected" role="option">
-                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="Ai4ez614A">
-                <label class="fd-checkbox__label fd-list__label" for="Ai4ez614A">
-                    <span class="fd-list__title">
-                        B<b>a</b>nana
-                    </span>
-                </label>
-            </li>
-        </ul>
-        <span class="fd-list__footer">
-          <a class="fd-link" href="#">Show All</a>
-        </span>
     </div>
 </div>
 `;
