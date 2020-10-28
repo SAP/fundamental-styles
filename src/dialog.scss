@@ -20,9 +20,6 @@ $button: #{$fd-namespace}-button;
 
 .#{$block} {
 
-  // OVERLAY
-  $fd-dialog-overlay-color: rgba(0, 0, 0, 0.6); // Should be fade(var(--sapBlockLayer_Background), 60)
-
   // CONTENT
   $fd-dialog-content-margin-y: 6%;
   $fd-dialog-content-margin-x: 10%;
@@ -77,6 +74,7 @@ $button: #{$fd-namespace}-button;
     }
 
     &--no-mobile-stretch {
+      border-radius: $fd-dialog-content-border-radius;
       max-width: calc(100vw - #{$fd-dialog-content-margin-x});
       max-height: calc(100vh - #{$fd-dialog-content-margin-y});
     }
@@ -119,8 +117,6 @@ $button: #{$fd-namespace}-button;
 
   &__header.#{$bar} {
     position: relative;
-    border-top-left-radius: $fd-dialog-content-border-radius;
-    border-top-right-radius: $fd-dialog-content-border-radius;
   }
 
   &__body {
@@ -150,11 +146,6 @@ $button: #{$fd-namespace}-button;
     }
   }
 
-  &__footer.#{$bar} {
-    border-bottom-left-radius: $fd-dialog-content-border-radius;
-    border-bottom-right-radius: $fd-dialog-content-border-radius;
-  }
-
   &__loader {
     @include fd-reset();
 
@@ -172,7 +163,6 @@ $button: #{$fd-namespace}-button;
     font-size: 1rem;
     cursor: se-resize;
     overflow: hidden;
-    border-bottom-right-radius: $fd-dialog-content-border-radius;
 
     @include fd-rtl() {
       right: unset;
