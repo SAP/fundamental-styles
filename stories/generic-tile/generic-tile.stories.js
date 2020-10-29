@@ -92,36 +92,36 @@ Large | \`fd-tile--l\` | 11 x 11rem | >= 374 px
 
 export const Layout = () => `<div class="fddocs-container">
     <div role="button" aria-label="button" tabindex="0" class="fd-tile">
-        <div class="fd-tile__header" style="background-color: #C0E0FA">
+        <div class="fd-tile__header" style="background-color: var(--sapBackgroundColor); filter: invert(1)">
             <div class="fd-tile__title">.fd-tile__title</div>
             <div class="fd-tile__subtitle">.fd-tile__subtitle</div>
         </div>
-        <div class="fd-tile__content" style="background-color: #C0E0FA">.fd-tile__content</div>
-        <div class="fd-tile__footer" style="background-color: #C0E0FA">.fd-tile__footer</div>
+        <div class="fd-tile__content" style="background-color: var(--sapBackgroundColor); filter: invert(1)">.fd-tile__content</div>
+        <div class="fd-tile__footer" style="background-color: var(--sapBackgroundColor); filter: invert(1)">.fd-tile__footer</div>
     </div>
     <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--double">
-        <div class="fd-tile__header" style="background-color: #C0E0FA">
+        <div class="fd-tile__header" style="background-color: var(--sapBackgroundColor); filter: invert(1)">
             <div class="fd-tile__title">.fd-tile__title</div>
             <div class="fd-tile__subtitle">.fd-tile__subtitle</div>
         </div>
-        <div class="fd-tile__content" style="background-color: #C0E0FA">.fd-tile__content</div>
-        <div class="fd-tile__footer" style="background-color: #C0E0FA">.fd-tile__footer</div>
+        <div class="fd-tile__content" style="background-color: var(--sapBackgroundColor); filter: invert(1)">.fd-tile__content</div>
+        <div class="fd-tile__footer" style="background-color: var(--sapBackgroundColor); filter: invert(1)">.fd-tile__footer</div>
     </div>
     <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s">
-        <div class="fd-tile__header" style="background-color: #C0E0FA">
+        <div class="fd-tile__header" style="background-color: var(--sapBackgroundColor); filter: invert(1)">
             <div class="fd-tile__title">.fd-tile__title</div>
             <div class="fd-tile__subtitle">.fd-tile__subtitle</div>
         </div>
-        <div class="fd-tile__content" style="background-color: #C0E0FA">.fd-tile__content</div>
-        <div class="fd-tile__footer" style="background-color: #C0E0FA">.fd-tile__footer</div>
+        <div class="fd-tile__content" style="background-color: var(--sapBackgroundColor); filter: invert(1)">.fd-tile__content</div>
+        <div class="fd-tile__footer" style="background-color: var(--sapBackgroundColor); filter: invert(1)">.fd-tile__footer</div>
     </div>
     <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s fd-tile--double">
-        <div class="fd-tile__header" style="background-color: #C0E0FA">
+        <div class="fd-tile__header" style="background-color: var(--sapBackgroundColor); filter: invert(1)">
             <div class="fd-tile__title">.fd-tile__title</div>
             <div class="fd-tile__subtitle">.fd-tile__subtitle</div>
         </div>
-        <div class="fd-tile__content" style="background-color: #C0E0FA">.fd-tile__content</div>
-        <div class="fd-tile__footer" style="background-color: #C0E0FA">.fd-tile__footer</div>
+        <div class="fd-tile__content" style="background-color: var(--sapBackgroundColor); filter: invert(1)">.fd-tile__content</div>
+        <div class="fd-tile__footer" style="background-color: var(--sapBackgroundColor); filter: invert(1)">.fd-tile__footer</div>
     </div>
 </div>
             `;
@@ -159,58 +159,58 @@ Note: the background color displayed in the example below is only for illustrati
 export const Columns = () => `<div class="fddocs-container">
     <div role="button" aria-label="button" tabindex="0" class="fd-tile">
         <div class="fd-tile__header fd-tile__header--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
         </div>
         <div class="fd-tile__content fd-tile__content--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
         </div>
         <div class="fd-tile__footer fd-tile__footer--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
         </div>
     </div>
     <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--double">
         <div class="fd-tile__header fd-tile__header--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
         </div>
         <div class="fd-tile__content fd-tile__content--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
         </div>
         <div class="fd-tile__footer fd-tile__footer--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
         </div>
     </div>
     <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s">
         <div class="fd-tile__header fd-tile__header--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
         </div>
         <div class="fd-tile__content fd-tile__content--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
         </div>
         <div class="fd-tile__footer fd-tile__footer--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
         </div>
     </div>
     <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s fd-tile--double">
         <div class="fd-tile__header fd-tile__header--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
         </div>
         <div class="fd-tile__content fd-tile__content--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
         </div>
         <div class="fd-tile__footer fd-tile__footer--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
+            <div class="fd-tile__section" style="background-color: var(--sapBackgroundColor); filter: invert(1)"></div>
         </div>
     </div>
 </div>
