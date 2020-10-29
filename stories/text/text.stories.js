@@ -25,15 +25,15 @@ defaultExample.parameters = {
     }
 };
 
-export const wrapping = () => `
-    <h3>No whitespace</h3>
+export const whitespace = () => `
+    <h3>No indents and whitespace</h3>
     <p class="fd-text"">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
     eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
     deserunt mollit anim id est laborum.</p>
     
-    <h3>Pre-wrapped whitespace</h3>
+    <h3>Wrapped text with indents and whitespace</h3>
     <p class="fd-text fd-text--pre-wrap">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore et
 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
@@ -44,8 +44,8 @@ eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt i
 deserunt mollit anim id est laborum.</p>
 `;
 
-wrapping.storyName = 'Wrapping';
-wrapping.parameters = {
+whitespace.storyName = 'Whitespace';
+whitespace.parameters = {
     docs: {
         iframeHeight: 300,
         storyDescription: `The text component has a property that allows browsers to render specified indents and
@@ -120,7 +120,7 @@ lines to the main element. For example, add <code class="docs-code">style="-webk
 three lines of text.
 
 **Note**: The property <code class="docs-code">-webkit-line-clamp</code> doesn't work in IE11 and should be changed
-to <code class="docs-code">height</code>. For example, <code class="docs-code">style="height: 200px;"</code> 
+to <code class="docs-code">height</code>. For example, <code class="docs-code">style="height: 200px;"</code>.
 `
     }
 };

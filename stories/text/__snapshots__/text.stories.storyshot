@@ -162,12 +162,12 @@ exports[`Storyshots Components/Text Max lines 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Text Wrapping 1`] = `
+exports[`Storyshots Components/Text Whitespace 1`] = `
 <section>
   
     
   <h3>
-    No whitespace
+    No indents and whitespace
   </h3>
   
     
@@ -185,7 +185,7 @@ exports[`Storyshots Components/Text Wrapping 1`] = `
     
     
   <h3>
-    Pre-wrapped whitespace
+    Wrapped text with indents and whitespace
   </h3>
   
     
