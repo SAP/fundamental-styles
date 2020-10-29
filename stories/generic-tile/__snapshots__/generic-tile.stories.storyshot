@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Tile/Generic Generic Tile Content Columns 1`] = `
+exports[`Storyshots Components/Tile/Generic Columns 1`] = `
 <div
   class="fddocs-container"
 >
@@ -21,13 +21,13 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Content Columns 1`] = `
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
         
@@ -41,13 +41,13 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Content Columns 1`] = `
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
         
@@ -61,13 +61,13 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Content Columns 1`] = `
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
         
@@ -92,13 +92,13 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Content Columns 1`] = `
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
         
@@ -112,13 +112,13 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Content Columns 1`] = `
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
         
@@ -132,13 +132,13 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Content Columns 1`] = `
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
         
@@ -163,13 +163,13 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Content Columns 1`] = `
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
         
@@ -183,13 +183,13 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Content Columns 1`] = `
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
         
@@ -203,13 +203,13 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Content Columns 1`] = `
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
         
@@ -234,13 +234,13 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Content Columns 1`] = `
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
         
@@ -254,13 +254,13 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Content Columns 1`] = `
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
         
@@ -274,13 +274,13 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Content Columns 1`] = `
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
             
       <div
         class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        style="background-color: var(--sapBackgroundColor); filter: invert(1)"
       />
       
         
@@ -293,7 +293,7 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Content Columns 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tile/Generic Generic Tile Layout 1`] = `
+exports[`Storyshots Components/Tile/Generic Layout 1`] = `
 <div
   class="fddocs-container"
 >
@@ -309,7 +309,7 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Layout 1`] = `
         
     <div
       class="fd-tile__header"
-      style="background-color: #C0E0FA"
+      style="background-color: var(--sapBackgroundColor); filter: invert(1)"
     >
       
             
@@ -332,7 +332,7 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Layout 1`] = `
         
     <div
       class="fd-tile__content"
-      style="background-color: #C0E0FA"
+      style="background-color: var(--sapBackgroundColor); filter: invert(1)"
     >
       .fd-tile__content
     </div>
@@ -340,7 +340,7 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Layout 1`] = `
         
     <div
       class="fd-tile__footer"
-      style="background-color: #C0E0FA"
+      style="background-color: var(--sapBackgroundColor); filter: invert(1)"
     >
       .fd-tile__footer
     </div>
@@ -359,7 +359,7 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Layout 1`] = `
         
     <div
       class="fd-tile__header"
-      style="background-color: #C0E0FA"
+      style="background-color: var(--sapBackgroundColor); filter: invert(1)"
     >
       
             
@@ -382,7 +382,7 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Layout 1`] = `
         
     <div
       class="fd-tile__content"
-      style="background-color: #C0E0FA"
+      style="background-color: var(--sapBackgroundColor); filter: invert(1)"
     >
       .fd-tile__content
     </div>
@@ -390,7 +390,7 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Layout 1`] = `
         
     <div
       class="fd-tile__footer"
-      style="background-color: #C0E0FA"
+      style="background-color: var(--sapBackgroundColor); filter: invert(1)"
     >
       .fd-tile__footer
     </div>
@@ -409,7 +409,7 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Layout 1`] = `
         
     <div
       class="fd-tile__header"
-      style="background-color: #C0E0FA"
+      style="background-color: var(--sapBackgroundColor); filter: invert(1)"
     >
       
             
@@ -432,7 +432,7 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Layout 1`] = `
         
     <div
       class="fd-tile__content"
-      style="background-color: #C0E0FA"
+      style="background-color: var(--sapBackgroundColor); filter: invert(1)"
     >
       .fd-tile__content
     </div>
@@ -440,7 +440,7 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Layout 1`] = `
         
     <div
       class="fd-tile__footer"
-      style="background-color: #C0E0FA"
+      style="background-color: var(--sapBackgroundColor); filter: invert(1)"
     >
       .fd-tile__footer
     </div>
@@ -459,7 +459,7 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Layout 1`] = `
         
     <div
       class="fd-tile__header"
-      style="background-color: #C0E0FA"
+      style="background-color: var(--sapBackgroundColor); filter: invert(1)"
     >
       
             
@@ -482,7 +482,7 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Layout 1`] = `
         
     <div
       class="fd-tile__content"
-      style="background-color: #C0E0FA"
+      style="background-color: var(--sapBackgroundColor); filter: invert(1)"
     >
       .fd-tile__content
     </div>
@@ -490,7 +490,7 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Layout 1`] = `
         
     <div
       class="fd-tile__footer"
-      style="background-color: #C0E0FA"
+      style="background-color: var(--sapBackgroundColor); filter: invert(1)"
     >
       .fd-tile__footer
     </div>
@@ -502,7 +502,7 @@ exports[`Storyshots Components/Tile/Generic Generic Tile Layout 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tile/Generic Generic Tile Sizes 1`] = `
+exports[`Storyshots Components/Tile/Generic Sizes 1`] = `
 <div
   class="fddocs-container"
 >
