@@ -34,8 +34,9 @@ exports[`Storyshots Components/Breadcrumb Overflow 1`] = `
             
                 ...
                     
-            <span
-              class="fd-breadcrumb__dropdown-icon"
+            <i
+              aria-label="Show collapsed breadcrumbs"
+              class="fd-breadcrumb__dropdown-icon sap-icon sap-icon--slim-arrow-down"
             />
             
                 
