@@ -4,148 +4,163 @@ exports[`Storyshots Components/Breadcrumb Overflow 1`] = `
 <section>
   
 
-  <ul
-    class="fd-breadcrumb"
+  <nav
+    aria-label="overflowing product breadcrumbs"
   >
     
     
-    <li
-      class="fd-breadcrumb__item"
+    <ul
+      class="fd-breadcrumb"
     >
       
         
-      <div
-        class="fd-popover"
+      <li
+        class="fd-breadcrumb__item"
       >
         
             
         <div
-          class="fd-popover__control"
+          class="fd-popover"
         >
           
                 
           <div
-            aria-controls="breadcrumb1"
-            aria-expanded="false"
-            aria-haspopup="true"
-            class="fd-breadcrumb__link"
-            onclick="onPopoverClick('breadcrumb1');"
+            class="fd-popover__control"
           >
             
-                ...
                     
-            <i
+            <div
+              aria-controls="breadcrumb1"
+              aria-expanded="true"
+              aria-haspopup="true"
               aria-label="Show collapsed breadcrumbs"
-              class="fd-breadcrumb__dropdown-icon sap-icon sap-icon--slim-arrow-down"
-            />
+              class="fd-breadcrumb__link"
+              onclick="onPopoverClick('breadcrumb1');"
+              onkeypress="isSpaceOrEnter(event, onPopoverClick('breadcrumb1'));"
+              role="button"
+              tabindex="0"
+            >
+              
+                            ...
+                        
+              <i
+                class="fd-breadcrumb__dropdown-icon sap-icon sap-icon--slim-arrow-down"
+                role="presentation"
+              />
+              
+                    
+            </div>
             
                 
           </div>
           
-            
-        </div>
-        
-            
-        <div
-          aria-hidden="true"
-          class="fd-popover__body fd-popover__body--no-arrow"
-          id="breadcrumb1"
-        >
-          
                 
           <div
-            class="fd-popover__wrapper"
+            aria-hidden="false"
+            class="fd-popover__body fd-popover__body--no-arrow"
+            id="breadcrumb1"
           >
             
                     
-            <ul
-              class="fd-list fd-list--navigation"
-              role="list"
+            <div
+              class="fd-popover__wrapper"
             >
               
                         
-              <li
-                class="fd-list__item fd-list__item--link"
-                role="listitem"
-                tabindex="-1"
+              <ul
+                class="fd-list fd-list--navigation"
+                role="menu"
               >
                 
                             
-                <a
-                  class="fd-list__link"
-                  href="https://sap.github.io/fundamental-styles/"
-                  tabindex="0"
+                <li
+                  class="fd-list__item fd-list__item--link"
+                  role="none"
+                  tabindex="-1"
                 >
                   
-                            
-                  <span
-                    class="fd-list__title"
+                                
+                  <a
+                    class="fd-list__link"
+                    href="#"
+                    role="menuitem"
+                    tabindex="0"
                   >
-                    Products
-                  </span>
+                    
+                                    
+                    <span
+                      class="fd-list__title"
+                    >
+                      Products
+                    </span>
+                    
+                                
+                  </a>
                   
                             
-                </a>
-                
-                        
-              </li>
-              
-                        
-              <li
-                class="fd-list__item fd-list__item--link"
-                role="listitem"
-                tabindex="-1"
-              >
+                </li>
                 
                             
-                <a
-                  class="fd-list__link"
-                  href="https://sap.github.io/fundamental-styles/"
-                  tabindex="0"
+                <li
+                  class="fd-list__item fd-list__item--link"
+                  role="none"
+                  tabindex="-1"
                 >
                   
-                            
-                  <span
-                    class="fd-list__title"
+                                
+                  <a
+                    class="fd-list__link"
+                    href="#"
+                    role="menuitem"
+                    tabindex="0"
                   >
-                    Suppliers
-                  </span>
+                    
+                                    
+                    <span
+                      class="fd-list__title"
+                    >
+                      Suppliers
+                    </span>
+                    
+                                
+                  </a>
                   
                             
-                </a>
-                
-                        
-              </li>
-              
-                        
-              <li
-                class="fd-list__item fd-list__item--link"
-                role="listitem"
-                tabindex="-1"
-              >
+                </li>
                 
                             
-                <a
-                  class="fd-list__link"
-                  href="https://sap.github.io/fundamental-styles/"
-                  tabindex="0"
+                <li
+                  class="fd-list__item fd-list__item--link"
+                  role="none"
+                  tabindex="-1"
                 >
                   
-                            
-                  <span
-                    class="fd-list__title"
+                                
+                  <a
+                    class="fd-list__link"
+                    href="#"
+                    role="menuitem"
+                    tabindex="0"
                   >
-                    Titanium
-                  </span>
+                    
+                                    
+                    <span
+                      class="fd-list__title"
+                    >
+                      Titanium
+                    </span>
+                    
+                                
+                  </a>
                   
                             
-                </a>
+                </li>
                 
                         
-              </li>
+              </ul>
               
                     
-            </ul>
+            </div>
             
                 
           </div>
@@ -154,12 +169,120 @@ exports[`Storyshots Components/Breadcrumb Overflow 1`] = `
         </div>
         
         
-      </div>
+      </li>
+      
+        
+      <li
+        class="fd-breadcrumb__item"
+      >
+        <a
+          class="fd-breadcrumb__link"
+          href="#"
+          tabindex="0"
+        >
+          Ultra Portable
+        </a>
+      </li>
+      
+        
+      <li
+        class="fd-breadcrumb__item"
+      >
+        <a
+          class="fd-breadcrumb__link"
+          href="#"
+          tabindex="0"
+        >
+          12 inch
+        </a>
+      </li>
+      
+        
+      <li
+        class="fd-breadcrumb__item"
+      >
+        <a
+          class="fd-breadcrumb__link"
+          href="#"
+          tabindex="0"
+        >
+          Super portable deluxe
+        </a>
+      </li>
+      
+        
+      <li
+        aria-current="page"
+        class="fd-breadcrumb__item"
+      >
+        Laptop
+      </li>
       
     
+    </ul>
+    
+
+  </nav>
+  
+
+  <div
+    style="height: 150px"
+  />
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Breadcrumb Standard 1`] = `
+<nav
+  aria-label="products breadcrumbs"
+>
+  
+    
+  <ul
+    class="fd-breadcrumb"
+  >
+    
+        
+    <li
+      class="fd-breadcrumb__item"
+    >
+      <a
+        class="fd-breadcrumb__link"
+        href="#"
+        tabindex="0"
+      >
+        Products
+      </a>
     </li>
     
+        
+    <li
+      class="fd-breadcrumb__item"
+    >
+      <a
+        class="fd-breadcrumb__link"
+        href="#"
+        tabindex="0"
+      >
+        Suppliers
+      </a>
+    </li>
     
+        
+    <li
+      class="fd-breadcrumb__item"
+    >
+      <a
+        class="fd-breadcrumb__link"
+        href="#"
+        tabindex="0"
+      >
+        Titanium
+      </a>
+    </li>
+    
+        
     <li
       class="fd-breadcrumb__item"
     >
@@ -172,7 +295,7 @@ exports[`Storyshots Components/Breadcrumb Overflow 1`] = `
       </a>
     </li>
     
-    
+        
     <li
       class="fd-breadcrumb__item"
     >
@@ -185,7 +308,7 @@ exports[`Storyshots Components/Breadcrumb Overflow 1`] = `
       </a>
     </li>
     
-    
+        
     <li
       class="fd-breadcrumb__item"
     >
@@ -198,115 +321,17 @@ exports[`Storyshots Components/Breadcrumb Overflow 1`] = `
       </a>
     </li>
     
-    
+        
     <li
+      aria-current="page"
       class="fd-breadcrumb__item"
     >
       Laptop
     </li>
     
-
+    
   </ul>
   
 
-  <div
-    style="height: 200px"
-  />
-  
-
-</section>
-`;
-
-exports[`Storyshots Components/Breadcrumb Standard 1`] = `
-<ul
-  class="fd-breadcrumb"
->
-  
-    
-  <li
-    class="fd-breadcrumb__item"
-  >
-    <a
-      class="fd-breadcrumb__link"
-      href="#"
-      tabindex="0"
-    >
-      Products
-    </a>
-  </li>
-  
-    
-  <li
-    class="fd-breadcrumb__item"
-  >
-    <a
-      class="fd-breadcrumb__link"
-      href="#"
-      tabindex="0"
-    >
-      Suppliers
-    </a>
-  </li>
-  
-    
-  <li
-    class="fd-breadcrumb__item"
-  >
-    <a
-      class="fd-breadcrumb__link"
-      href="#"
-      tabindex="0"
-    >
-      Titanium
-    </a>
-  </li>
-  
-    
-  <li
-    class="fd-breadcrumb__item"
-  >
-    <a
-      class="fd-breadcrumb__link"
-      href="#"
-      tabindex="0"
-    >
-      Ultra Portable
-    </a>
-  </li>
-  
-    
-  <li
-    class="fd-breadcrumb__item"
-  >
-    <a
-      class="fd-breadcrumb__link"
-      href="#"
-      tabindex="0"
-    >
-      12 inch
-    </a>
-  </li>
-  
-    
-  <li
-    class="fd-breadcrumb__item"
-  >
-    <a
-      class="fd-breadcrumb__link"
-      href="#"
-      tabindex="0"
-    >
-      Super portable deluxe
-    </a>
-  </li>
-  
-    
-  <li
-    class="fd-breadcrumb__item"
-  >
-    Laptop
-  </li>
-  
-
-</ul>
+</nav>
 `;
