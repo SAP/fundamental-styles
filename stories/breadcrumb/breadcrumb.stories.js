@@ -23,7 +23,7 @@ The breadcrumb component is a type of navigation that indicates the position of 
 - Independent object pages, such as fact sheets
 `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['popover', 'list', 'breadcrumb']
+        components: ['popover', 'list', 'breadcrumb', 'icon']
     }
 };
 
@@ -57,7 +57,7 @@ export const overflow = () => `
                     aria-haspopup="true"
                     >
                 ...
-                    <span class="fd-breadcrumb__dropdown-icon"></span>
+                    <i aria-label="Show collapsed breadcrumbs" class="fd-breadcrumb__dropdown-icon sap-icon sap-icon--slim-arrow-down"></i>
                 </div>
             </div>
             <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="breadcrumb1">
