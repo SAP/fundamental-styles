@@ -1,265 +1,273 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Patterns/Contextul Menu Examples with Icon and Button 1`] = `
+exports[`Storyshots Patterns/Contextual Menu Examples with Icon and Button 1`] = `
 <div
-  style="display:flex;justify-content:space-around"
+  style="height: 400px;"
 >
   
     
   <div
-    class="fd-popover"
+    style="display:flex;justify-content:space-around;"
   >
     
         
     <div
-      class="fd-popover__control"
+      class="fd-popover"
     >
       
             
-      <button
-        aria-controls="pQqQR213"
-        aria-expanded="true"
-        aria-haspopup="true"
-        aria-label="More"
-        class="fd-button fd-button--transparent"
+      <div
+        class="fd-popover__control"
       >
         
                 
-        <i
-          class="sap-icon--overflow"
-        />
-        
-            
-      </button>
-      
-        
-    </div>
-    
-        
-    <div
-      aria-hidden="false"
-      class="fd-popover__body"
-      id="pQqQR213"
-    >
-      
-            
-      <nav
-        class="fd-menu"
-      >
-        
-                
-        <ul
-          class="fd-menu__list fd-menu__list--no-shadow"
+        <button
+          aria-controls="pQqQR213"
+          aria-expanded="true"
+          aria-haspopup="true"
+          aria-label="More"
+          class="fd-button fd-button--transparent"
         >
           
                     
-          <li
-            class="fd-menu__item"
-          >
-            
-                        
-            <a
-              class="fd-menu__link"
-              href="#"
-            >
-              
-                            
-              <span
-                class="fd-menu__title"
-              >
-                Option 1
-              </span>
-              
-                        
-            </a>
-            
-                    
-          </li>
-          
-                    
-          <li
-            class="fd-menu__item"
-          >
-            
-                        
-            <a
-              class="fd-menu__link"
-              href="#"
-            >
-              
-                            
-              <span
-                class="fd-menu__title"
-              >
-                Option 2
-              </span>
-              
-                        
-            </a>
-            
-                    
-          </li>
-          
-                    
-          <li
-            class="fd-menu__item"
-          >
-            
-                        
-            <a
-              class="fd-menu__link"
-              href="#"
-            >
-              
-                            
-              <span
-                class="fd-menu__title"
-              >
-                Option 3
-              </span>
-              
-                        
-            </a>
-            
-                    
-          </li>
-          
-                
-        </ul>
-        
-            
-      </nav>
-      
-        
-    </div>
-    
-    
-  </div>
-  
-
-    
-  <div
-    class="fd-popover"
-  >
-    
-        
-    <div
-      class="fd-popover__control"
-    >
-      
-            
-      <button
-        aria-controls="jhqD0558"
-        aria-expanded="true"
-        aria-haspopup="true"
-        aria-label="More"
-        class="fd-button"
-      >
-        More
-      </button>
-      
-        
-    </div>
-    
-        
-    <div
-      aria-hidden="false"
-      class="fd-popover__body"
-      id="jhqD0558"
-    >
-      
-            
-      <nav
-        class="fd-menu"
-      >
-        
-                
-        <ul
-          class="fd-menu__list fd-menu__list--no-shadow"
-        >
-          
-                    
-          <li
-            class="fd-menu__item"
-          >
-            
-                        
-            <a
-              class="fd-menu__link"
-              href="#"
-            >
-              
-                            
-              <span
-                class="fd-menu__title"
-              >
-                Option 1
-              </span>
-              
-                        
-            </a>
-            
-                    
-          </li>
-          
-                    
-          <span
-            class="fd-menu__separator"
+          <i
+            class="sap-icon--overflow"
           />
           
-                    
-          <li
-            class="fd-menu__item"
-          >
-            
-                        
-            <a
-              class="fd-menu__link"
-              href="#"
-            >
-              
-                            
-              <span
-                class="fd-menu__title"
-              >
-                Option 2
-              </span>
-              
-                        
-            </a>
-            
-                    
-          </li>
-          
-                    
-          <li
-            class="fd-menu__item"
-          >
-            
-                        
-            <a
-              class="fd-menu__link"
-              href="#"
-            >
-              
-                            
-              <span
-                class="fd-menu__title"
-              >
-                Option 3
-              </span>
-              
-                        
-            </a>
-            
-                    
-          </li>
-          
                 
-        </ul>
+        </button>
         
             
-      </nav>
+      </div>
+      
+            
+      <div
+        aria-hidden="false"
+        class="fd-popover__body"
+        id="pQqQR213"
+      >
+        
+                
+        <nav
+          class="fd-menu"
+        >
+          
+                    
+          <ul
+            class="fd-menu__list fd-menu__list--no-shadow"
+          >
+            
+                        
+            <li
+              class="fd-menu__item"
+            >
+              
+                            
+              <a
+                class="fd-menu__link"
+                href="#"
+              >
+                
+                                
+                <span
+                  class="fd-menu__title"
+                >
+                  Option 1
+                </span>
+                
+                            
+              </a>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-menu__item"
+            >
+              
+                            
+              <a
+                class="fd-menu__link"
+                href="#"
+              >
+                
+                                
+                <span
+                  class="fd-menu__title"
+                >
+                  Option 2
+                </span>
+                
+                            
+              </a>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-menu__item"
+            >
+              
+                            
+              <a
+                class="fd-menu__link"
+                href="#"
+              >
+                
+                                
+                <span
+                  class="fd-menu__title"
+                >
+                  Option 3
+                </span>
+                
+                            
+              </a>
+              
+                        
+            </li>
+            
+                    
+          </ul>
+          
+                
+        </nav>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+
+        
+    <div
+      class="fd-popover"
+    >
+      
+            
+      <div
+        class="fd-popover__control"
+      >
+        
+                
+        <button
+          aria-controls="jhqD0558"
+          aria-expanded="true"
+          aria-haspopup="true"
+          aria-label="More"
+          class="fd-button"
+        >
+          More
+        </button>
+        
+            
+      </div>
+      
+            
+      <div
+        aria-hidden="false"
+        class="fd-popover__body"
+        id="jhqD0558"
+      >
+        
+                
+        <nav
+          class="fd-menu"
+        >
+          
+                    
+          <ul
+            class="fd-menu__list fd-menu__list--no-shadow"
+          >
+            
+                        
+            <li
+              class="fd-menu__item"
+            >
+              
+                            
+              <a
+                class="fd-menu__link"
+                href="#"
+              >
+                
+                                
+                <span
+                  class="fd-menu__title"
+                >
+                  Option 1
+                </span>
+                
+                            
+              </a>
+              
+                        
+            </li>
+            
+                        
+            <span
+              class="fd-menu__separator"
+            />
+            
+                        
+            <li
+              class="fd-menu__item"
+            >
+              
+                            
+              <a
+                class="fd-menu__link"
+                href="#"
+              >
+                
+                                
+                <span
+                  class="fd-menu__title"
+                >
+                  Option 2
+                </span>
+                
+                            
+              </a>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-menu__item"
+            >
+              
+                            
+              <a
+                class="fd-menu__link"
+                href="#"
+              >
+                
+                                
+                <span
+                  class="fd-menu__title"
+                >
+                  Option 3
+                </span>
+                
+                            
+              </a>
+              
+                        
+            </li>
+            
+                    
+          </ul>
+          
+                
+        </nav>
+        
+            
+      </div>
       
         
     </div>

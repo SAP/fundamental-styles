@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.30...v0.13.0-rc.31) (2020-10-30)
+
+
+### Bug Fixes
+
+* multi-input accessibility + add iframe height to some examples ([#1831](https://github.com/SAP/fundamental-styles/issues/1831)) ([7e830dc](https://github.com/SAP/fundamental-styles/commit/7e830dc74ecc3c1259a5b30f5cfb063fa9dedfc7))
+
 ## [0.13.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.29...v0.13.0-rc.30) (2020-10-30)
 
 
