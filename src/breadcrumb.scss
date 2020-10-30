@@ -57,10 +57,9 @@ $fd-breadcrumb-border-top-radius: 0.125rem !default;
   }
 
   &__dropdown-icon {
-    @include fd-reset();
-    @include fd-icon('slim-arrow-down');
-
-    text-decoration: inherit;
-    color: var(--sapLinkColor);
+    @include fd-icon-element-base() {
+      text-decoration: inherit;
+      color: var(--sapLinkColor);
+    }
   }
 }
