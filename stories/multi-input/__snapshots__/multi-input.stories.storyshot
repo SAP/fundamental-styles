@@ -13,6 +13,7 @@ exports[`Storyshots Patterns/Multi Input As Form Item 1`] = `
     
     <label
       class="fd-form-label"
+      for="formItemMultiInput"
     >
       
         Multi Input as form item
@@ -51,6 +52,7 @@ exports[`Storyshots Patterns/Multi Input As Form Item 1`] = `
               <span
                 class="fd-token"
                 role="button"
+                tabindex="0"
               >
                 
                             
@@ -64,6 +66,7 @@ exports[`Storyshots Patterns/Multi Input As Form Item 1`] = `
                 
                             
                 <button
+                  aria-label="unselect option: apple"
                   class="fd-token__close"
                 />
                 
@@ -74,6 +77,7 @@ exports[`Storyshots Patterns/Multi Input As Form Item 1`] = `
               <span
                 class="fd-token"
                 role="button"
+                tabindex="0"
               >
                 
                             
@@ -87,6 +91,7 @@ exports[`Storyshots Patterns/Multi Input As Form Item 1`] = `
                 
                             
                 <button
+                  aria-label="unselect option: orange"
                   class="fd-token__close"
                 />
                 
@@ -97,6 +102,7 @@ exports[`Storyshots Patterns/Multi Input As Form Item 1`] = `
               <span
                 class="fd-token"
                 role="button"
+                tabindex="0"
               >
                 
                             
@@ -110,6 +116,7 @@ exports[`Storyshots Patterns/Multi Input As Form Item 1`] = `
                 
                             
                 <button
+                  aria-label="unselect option: kiwi"
                   class="fd-token__close"
                 />
                 
@@ -120,6 +127,7 @@ exports[`Storyshots Patterns/Multi Input As Form Item 1`] = `
               <span
                 class="fd-token"
                 role="button"
+                tabindex="0"
               >
                 
                             
@@ -133,6 +141,7 @@ exports[`Storyshots Patterns/Multi Input As Form Item 1`] = `
                 
                             
                 <button
+                  aria-label="unselect option: banana"
                   class="fd-token__close"
                 />
                 
@@ -142,6 +151,7 @@ exports[`Storyshots Patterns/Multi Input As Form Item 1`] = `
                         
               <input
                 class="fd-input fd-input-group__input fd-tokenizer__input"
+                id="formItemMultiInput"
               />
               
                     
@@ -160,6 +170,7 @@ exports[`Storyshots Patterns/Multi Input As Form Item 1`] = `
               aria-controls="F4GcX348a"
               aria-expanded="false"
               aria-haspopup="true"
+              aria-label="show options"
               class="fd-input-group__button fd-button fd-button--transparent"
             >
               
@@ -194,11 +205,15 @@ exports[`Storyshots Patterns/Multi Input As Form Item 1`] = `
           
             
           <ul
+            aria-label="list of fruits"
+            aria-multiselectable="true"
             class="fd-list fd-list--multi-input"
+            role="listbox"
           >
             
                 
             <li
+              aria-selected="true"
               class="fd-list__item is-selected"
               role="option"
             >
@@ -234,6 +249,7 @@ exports[`Storyshots Patterns/Multi Input As Form Item 1`] = `
             
                 
             <li
+              aria-selected="true"
               class="fd-list__item is-selected"
               role="option"
             >
@@ -269,6 +285,7 @@ exports[`Storyshots Patterns/Multi Input As Form Item 1`] = `
             
                 
             <li
+              aria-selected="true"
               class="fd-list__item is-selected"
               role="option"
             >
@@ -304,6 +321,7 @@ exports[`Storyshots Patterns/Multi Input As Form Item 1`] = `
             
                 
             <li
+              aria-selected="true"
               class="fd-list__item is-selected"
               role="option"
             >
@@ -403,6 +421,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
         
     <label
       class="fd-form-label"
+      for="cozyMultiInput"
     >
       
             Multi Input Cozy Mode
@@ -441,6 +460,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
               <span
                 class="fd-token"
                 role="button"
+                tabindex="0"
               >
                 
                                 
@@ -454,6 +474,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
                 
                                 
                 <button
+                  aria-label="unselect option: apple"
                   class="fd-token__close"
                 />
                 
@@ -464,6 +485,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
               <span
                 class="fd-token"
                 role="button"
+                tabindex="0"
               >
                 
                                 
@@ -477,6 +499,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
                 
                                 
                 <button
+                  aria-label="unselect option: orange"
                   class="fd-token__close"
                 />
                 
@@ -487,6 +510,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
               <span
                 class="fd-token"
                 role="button"
+                tabindex="0"
               >
                 
                                 
@@ -500,6 +524,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
                 
                                 
                 <button
+                  aria-label="unselect option: kiwi"
                   class="fd-token__close"
                 />
                 
@@ -510,6 +535,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
               <span
                 class="fd-token"
                 role="button"
+                tabindex="0"
               >
                 
                                 
@@ -523,6 +549,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
                 
                                 
                 <button
+                  aria-label="unselect option: banana"
                   class="fd-token__close"
                 />
                 
@@ -532,6 +559,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
                             
               <input
                 class="fd-input fd-input-group__input fd-tokenizer__input"
+                id="cozyMultiInput"
               />
               
                         
@@ -548,8 +576,9 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
                         
             <button
               aria-controls="F4GcX348a"
-              aria-expanded="false"
+              aria-expanded="true"
               aria-haspopup="true"
+              aria-label="show options"
               class="fd-input-group__button fd-button fd-button--transparent"
             >
               
@@ -584,11 +613,15 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
           
                 
           <ul
+            aria-label="list of fruits"
+            aria-multiselectable="true"
             class="fd-list fd-list--multi-input"
+            role="listbox"
           >
             
                     
             <li
+              aria-selected="true"
               class="fd-list__item is-selected"
               role="option"
             >
@@ -624,6 +657,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
             
                     
             <li
+              aria-selected="true"
               class="fd-list__item is-selected"
               role="option"
             >
@@ -659,6 +693,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
             
                     
             <li
+              aria-selected="true"
               class="fd-list__item is-selected"
               role="option"
             >
@@ -694,6 +729,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
             
                     
             <li
+              aria-selected="true"
               class="fd-list__item is-selected"
               role="option"
             >
@@ -784,6 +820,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
         
     <label
       class="fd-form-label"
+      for="compactMultiInput"
     >
       
             Multi Input Compact Mode
@@ -823,6 +860,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
               <span
                 class="fd-token fd-token--compact"
                 role="button"
+                tabindex="0"
               >
                 
                                 
@@ -836,6 +874,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
                 
                                 
                 <button
+                  aria-label="unselect option: apple"
                   class="fd-token__close"
                 />
                 
@@ -846,6 +885,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
               <span
                 class="fd-token fd-token--compact"
                 role="button"
+                tabindex="0"
               >
                 
                                 
@@ -859,6 +899,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
                 
                                 
                 <button
+                  aria-label="unselect option: orange"
                   class="fd-token__close"
                 />
                 
@@ -869,6 +910,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
               <span
                 class="fd-token fd-token--compact"
                 role="button"
+                tabindex="0"
               >
                 
                                 
@@ -882,6 +924,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
                 
                                 
                 <button
+                  aria-label="unselect option: banana"
                   class="fd-token__close"
                 />
                 
@@ -891,6 +934,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
                             
               <input
                 class="fd-input fd-input-group__input fd-input--compact fd-tokenizer__input"
+                id="compactMultiInput"
               />
               
                         
@@ -909,6 +953,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
               aria-controls="F4GcX34a"
               aria-expanded="false"
               aria-haspopup="true"
+              aria-label="show options"
               class="fd-input-group__button fd-button fd-button--transparent fd-button--compact"
             >
               
@@ -943,11 +988,15 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
           
                 
           <ul
+            aria-label="list of fruits"
+            aria-multiselectable="true"
             class="fd-list fd-list--multi-input fd-list--compact"
+            role="listbox"
           >
             
                     
             <li
+              aria-selected="true"
               class="fd-list__item is-selected"
               role="option"
             >
@@ -983,6 +1032,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
             
                     
             <li
+              aria-selected="true"
               class="fd-list__item is-selected"
               role="option"
             >
@@ -1018,6 +1068,7 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
             
                     
             <li
+              aria-selected="true"
               class="fd-list__item is-selected"
               role="option"
             >
@@ -1140,290 +1191,323 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
 
 exports[`Storyshots Patterns/Multi Input Filtering 1`] = `
 <div
-  class="fd-popover"
+  style="min-height: 250px;"
 >
+  
+
+  <label
+    class="fd-form-label"
+    for="filteringMultiInput"
+  >
+    
+    Filtered Fruits
+
+  </label>
   
     
   <div
-    aria-controls="F4GcX348aB"
-    aria-expanded="true"
-    aria-haspopup="true"
-    class="fd-popover__control"
+    class="fd-popover"
   >
     
         
     <div
-      class="fd-input-group fd-input-group--control"
+      aria-controls="F4GcX348aB"
+      aria-expanded="true"
+      aria-haspopup="true"
+      class="fd-popover__control"
     >
       
             
       <div
-        class="fd-tokenizer"
+        class="fd-input-group fd-input-group--control"
       >
         
                 
         <div
-          class="fd-tokenizer__inner"
+          class="fd-tokenizer"
         >
           
                     
-          <span
-            class="fd-token"
-            role="button"
+          <div
+            class="fd-tokenizer__inner"
           >
             
                         
             <span
-              class="fd-token__text"
+              class="fd-token"
+              role="button"
+              tabindex="0"
             >
               
-                            Apple
+                            
+              <span
+                class="fd-token__text"
+              >
+                
+                                Apple
+                            
+              </span>
+              
+                            
+              <button
+                aria-label="unselect option: apple"
+                class="fd-token__close"
+              />
+              
                         
             </span>
-            
-                        
-            <button
-              class="fd-token__close"
-            />
-            
-                    
-          </span>
-          
-                    
-          <span
-            class="fd-token"
-            role="button"
-          >
             
                         
             <span
-              class="fd-token__text"
+              class="fd-token"
+              role="button"
+              tabindex="0"
             >
               
-                            Orange
+                            
+              <span
+                class="fd-token__text"
+              >
+                
+                                Orange
+                            
+              </span>
+              
+                            
+              <button
+                aria-label="unselect option: orange"
+                class="fd-token__close"
+              />
+              
                         
             </span>
-            
-                        
-            <button
-              class="fd-token__close"
-            />
-            
-                    
-          </span>
-          
-                    
-          <span
-            class="fd-token"
-            role="button"
-          >
             
                         
             <span
-              class="fd-token__text"
+              class="fd-token"
+              role="button"
+              tabindex="0"
             >
               
-                            Banana
+                            
+              <span
+                class="fd-token__text"
+              >
+                
+                                Banana
+                            
+              </span>
+              
+                            
+              <button
+                aria-label="unselect option: banana"
+                class="fd-token__close"
+              />
+              
                         
             </span>
             
                         
-            <button
-              class="fd-token__close"
+            <input
+              class="fd-input fd-input-group__input fd-tokenizer__input"
+              id="filteringMultiInput"
+              value="A"
             />
             
                     
-          </span>
-          
-                    
-          <input
-            class="fd-input fd-input-group__input fd-tokenizer__input"
-            value="A"
-          />
+          </div>
           
                 
         </div>
         
-            
-      </div>
-      
-            
-      <span
-        class="fd-input-group__addon fd-input-group__addon--button"
-      >
-        
                 
-        <button
-          aria-controls="F4GcX348aB"
-          aria-expanded="false"
-          aria-haspopup="true"
-          class="fd-input-group__button fd-button fd-button--transparent"
+        <span
+          class="fd-input-group__addon fd-input-group__addon--button"
         >
           
                     
-          <i
-            class="sap-icon--value-help"
-          />
+          <button
+            aria-controls="F4GcX348aB"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-label="show options"
+            class="fd-input-group__button fd-button fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--value-help"
+            />
+            
+                    
+          </button>
           
                 
-        </button>
+        </span>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      aria-hidden="false"
+      class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill"
+      id="F4GcX348aB"
+    >
+      
+            
+      <ul
+        aria-label="list of fruits"
+        aria-multiselectable="true"
+        class="fd-list fd-list--multi-input"
+        role="listbox"
+      >
+        
+                
+        <li
+          aria-selected="true"
+          class="fd-list__item is-selected"
+          role="option"
+        >
+          
+                    
+          <input
+            checked=""
+            class="fd-checkbox fd-list__input"
+            id="Ai4ez611A"
+            type="checkbox"
+          />
+          
+                    
+          <label
+            class="fd-checkbox__label fd-list__label"
+            for="Ai4ez611A"
+          >
+            
+                        
+            <span
+              class="fd-checkbox__text fd-list__title"
+            >
+              
+                            
+              <b>
+                A
+              </b>
+              pple
+                        
+            </span>
+            
+                    
+          </label>
+          
+                
+        </li>
+        
+                
+        <li
+          aria-selected="true"
+          class="fd-list__item is-selected"
+          role="option"
+        >
+          
+                    
+          <input
+            checked=""
+            class="fd-checkbox fd-list__input"
+            id="Ai4ez612A"
+            type="checkbox"
+          />
+          
+                    
+          <label
+            class="fd-checkbox__label fd-list__label"
+            for="Ai4ez612A"
+          >
+            
+                        
+            <span
+              class="fd-list__title"
+            >
+              
+                            Or
+              <b>
+                a
+              </b>
+              nge
+                        
+            </span>
+            
+                    
+          </label>
+          
+                
+        </li>
+        
+                
+        <li
+          aria-selected="true"
+          class="fd-list__item is-selected"
+          role="option"
+        >
+          
+                    
+          <input
+            checked=""
+            class="fd-checkbox fd-list__input"
+            id="Ai4ez614A"
+            type="checkbox"
+          />
+          
+                    
+          <label
+            class="fd-checkbox__label fd-list__label"
+            for="Ai4ez614A"
+          >
+            
+                        
+            <span
+              class="fd-list__title"
+            >
+              
+                            B
+              <b>
+                a
+              </b>
+              nana
+                        
+            </span>
+            
+                    
+          </label>
+          
+                
+        </li>
+        
+            
+      </ul>
+      
+            
+      <span
+        class="fd-list__footer"
+      >
+        
+            
+        <a
+          class="fd-link"
+          role="button"
+          tabindex="0"
+        >
+          Show All
+        </a>
         
             
       </span>
       
         
     </div>
-    
-    
-  </div>
-  
-    
-  <div
-    aria-hidden="false"
-    class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill"
-    id="F4GcX348aB"
-  >
-    
-        
-    <ul
-      class="fd-list fd-list--multi-input"
-    >
-      
-             
-      <li
-        class="fd-list__item is-selected"
-        role="option"
-      >
-        
-                
-        <input
-          checked=""
-          class="fd-checkbox fd-list__input"
-          id="Ai4ez611A"
-          type="checkbox"
-        />
-        
-                
-        <label
-          class="fd-checkbox__label fd-list__label"
-          for="Ai4ez611A"
-        >
-          
-                    
-          <span
-            class="fd-checkbox__text fd-list__title"
-          >
-            
-                        
-            <b>
-              A
-            </b>
-            pple
-                    
-          </span>
-          
-                
-        </label>
-        
-            
-      </li>
-      
-             
-      <li
-        class="fd-list__item is-selected"
-        role="option"
-      >
-        
-                
-        <input
-          checked=""
-          class="fd-checkbox fd-list__input"
-          id="Ai4ez612A"
-          type="checkbox"
-        />
-        
-                
-        <label
-          class="fd-checkbox__label fd-list__label"
-          for="Ai4ez612A"
-        >
-          
-                    
-          <span
-            class="fd-list__title"
-          >
-            
-                        Or
-            <b>
-              a
-            </b>
-            nge
-                    
-          </span>
-          
-                
-        </label>
-        
-            
-      </li>
-      
-             
-      <li
-        class="fd-list__item is-selected"
-        role="option"
-      >
-        
-                
-        <input
-          checked=""
-          class="fd-checkbox fd-list__input"
-          id="Ai4ez614A"
-          type="checkbox"
-        />
-        
-                
-        <label
-          class="fd-checkbox__label fd-list__label"
-          for="Ai4ez614A"
-        >
-          
-                    
-          <span
-            class="fd-list__title"
-          >
-            
-                        B
-            <b>
-              a
-            </b>
-            nana
-                    
-          </span>
-          
-                
-        </label>
-        
-            
-      </li>
-      
-        
-    </ul>
-    
-        
-    <span
-      class="fd-list__footer"
-    >
-      
-          
-      <a
-        class="fd-link"
-        href="#"
-      >
-        Show All
-      </a>
-      
-        
-    </span>
     
     
   </div>
@@ -1436,6 +1520,16 @@ exports[`Storyshots Patterns/Multi Input Grouping 1`] = `
 <div
   style="height:450px"
 >
+  
+    
+  <label
+    class="fd-form-label"
+    for="fruitsAndVegsMultiInput"
+  >
+    
+    Fruits and Vegetables
+    
+  </label>
   
     
   <div
@@ -1469,6 +1563,7 @@ exports[`Storyshots Patterns/Multi Input Grouping 1`] = `
             <span
               class="fd-token"
               role="button"
+              tabindex="0"
             >
               
                             
@@ -1482,6 +1577,7 @@ exports[`Storyshots Patterns/Multi Input Grouping 1`] = `
               
                             
               <button
+                aria-label="unselect option: apple"
                 class="fd-token__close"
               />
               
@@ -1492,6 +1588,7 @@ exports[`Storyshots Patterns/Multi Input Grouping 1`] = `
             <span
               class="fd-token"
               role="button"
+              tabindex="0"
             >
               
                             
@@ -1505,6 +1602,7 @@ exports[`Storyshots Patterns/Multi Input Grouping 1`] = `
               
                             
               <button
+                aria-label="unselect option: orange"
                 class="fd-token__close"
               />
               
@@ -1515,6 +1613,7 @@ exports[`Storyshots Patterns/Multi Input Grouping 1`] = `
             <span
               class="fd-token"
               role="button"
+              tabindex="0"
             >
               
                             
@@ -1528,6 +1627,7 @@ exports[`Storyshots Patterns/Multi Input Grouping 1`] = `
               
                             
               <button
+                aria-label="unselect option: kiwi"
                 class="fd-token__close"
               />
               
@@ -1544,6 +1644,7 @@ exports[`Storyshots Patterns/Multi Input Grouping 1`] = `
                         
             <input
               class="fd-input fd-input-group__input fd-tokenizer__input"
+              id="fruitsAndVegsMultiInput"
             />
             
                     
@@ -1562,6 +1663,7 @@ exports[`Storyshots Patterns/Multi Input Grouping 1`] = `
             aria-controls="F4H8X34a"
             aria-expanded="false"
             aria-haspopup="true"
+            aria-label="show options"
             class="fd-input-group__button fd-button fd-button--transparent"
           >
             
@@ -1595,21 +1697,26 @@ exports[`Storyshots Patterns/Multi Input Grouping 1`] = `
       >
         
             
+        <h3
+          class="fd-list__group-header"
+          id="fruitListHeader"
+        >
+          
+                Fruits
+            
+        </h3>
+        
+            
         <ul
+          aria-labelledby="fruitListHeader"
+          aria-multiselectable="true"
           class="fd-list fd-list--multi-input"
+          role="listbox"
         >
           
                 
           <li
-            class="fd-list__group-header"
-          >
-            
-                    Fruits
-                
-          </li>
-          
-                
-          <li
+            aria-selected="true"
             class="fd-list__item is-selected"
             role="option"
           >
@@ -1645,6 +1752,7 @@ exports[`Storyshots Patterns/Multi Input Grouping 1`] = `
           
                 
           <li
+            aria-selected="true"
             class="fd-list__item is-selected"
             role="option"
           >
@@ -1680,6 +1788,7 @@ exports[`Storyshots Patterns/Multi Input Grouping 1`] = `
           
                 
           <li
+            aria-selected="true"
             class="fd-list__item is-selected"
             role="option"
           >
@@ -1781,17 +1890,30 @@ exports[`Storyshots Patterns/Multi Input Grouping 1`] = `
                 
           </li>
           
-                
-          <li
-            class="fd-list__group-header"
-          >
             
-                    Vegetables
-                
-          </li>
+        </ul>
+        
+            
+        <h3
+          class="fd-list__group-header"
+          id="vegListHeader"
+        >
+          
+                Vegetables
+            
+        </h3>
+        
+            
+        <ul
+          aria-labelledby="vegListHeader"
+          aria-multiselectable="true"
+          class="fd-list fd-list--multi-input"
+          role="listbox"
+        >
           
                 
           <li
+            aria-selected="true"
             class="fd-list__item is-selected"
             role="option"
           >
@@ -1827,6 +1949,7 @@ exports[`Storyshots Patterns/Multi Input Grouping 1`] = `
           
                 
           <li
+            aria-selected="true"
             class="fd-list__item is-selected"
             role="option"
           >
@@ -1882,6 +2005,16 @@ exports[`Storyshots Patterns/Multi Input Match Popover Body Size 1`] = `
 >
   
     
+  <label
+    class="fd-form-label"
+    for="matchPopoverBodySizeMultiInput"
+  >
+    
+    Fruits
+    
+  </label>
+  
+    
   <div
     class="fd-popover"
   >
@@ -1913,6 +2046,7 @@ exports[`Storyshots Patterns/Multi Input Match Popover Body Size 1`] = `
             <span
               class="fd-token"
               role="button"
+              tabindex="0"
             >
               
                             
@@ -1926,6 +2060,7 @@ exports[`Storyshots Patterns/Multi Input Match Popover Body Size 1`] = `
               
                             
               <button
+                aria-label="unselect option: apple"
                 class="fd-token__close"
               />
               
@@ -1936,6 +2071,7 @@ exports[`Storyshots Patterns/Multi Input Match Popover Body Size 1`] = `
             <span
               class="fd-token"
               role="button"
+              tabindex="0"
             >
               
                             
@@ -1949,6 +2085,7 @@ exports[`Storyshots Patterns/Multi Input Match Popover Body Size 1`] = `
               
                             
               <button
+                aria-label="unselect option: orange"
                 class="fd-token__close"
               />
               
@@ -1959,6 +2096,7 @@ exports[`Storyshots Patterns/Multi Input Match Popover Body Size 1`] = `
             <span
               class="fd-token"
               role="button"
+              tabindex="0"
             >
               
                             
@@ -1972,6 +2110,7 @@ exports[`Storyshots Patterns/Multi Input Match Popover Body Size 1`] = `
               
                             
               <button
+                aria-label="unselect option: kiwi"
                 class="fd-token__close"
               />
               
@@ -1988,6 +2127,7 @@ exports[`Storyshots Patterns/Multi Input Match Popover Body Size 1`] = `
                         
             <input
               class="fd-input fd-input-group__input fd-tokenizer__input"
+              id="matchPopoverBodySizeMultiInput"
             />
             
                     
@@ -2006,6 +2146,7 @@ exports[`Storyshots Patterns/Multi Input Match Popover Body Size 1`] = `
             aria-controls="F4HGFHX34a"
             aria-expanded="false"
             aria-haspopup="true"
+            aria-label="show options"
             class="fd-input-group__button fd-button fd-button--transparent"
           >
             
@@ -2040,11 +2181,15 @@ exports[`Storyshots Patterns/Multi Input Match Popover Body Size 1`] = `
         
             
         <ul
+          aria-label="list of fruits"
+          aria-multiselectable="true"
           class="fd-list fd-list--multi-input"
+          role="listbox"
         >
           
                 
           <li
+            aria-selected="true"
             class="fd-list__item is-selected"
             role="option"
           >
@@ -2080,6 +2225,7 @@ exports[`Storyshots Patterns/Multi Input Match Popover Body Size 1`] = `
           
                 
           <li
+            aria-selected="true"
             class="fd-list__item is-selected"
             role="option"
           >
@@ -2115,6 +2261,7 @@ exports[`Storyshots Patterns/Multi Input Match Popover Body Size 1`] = `
           
                 
           <li
+            aria-selected="true"
             class="fd-list__item is-selected"
             role="option"
           >
@@ -2233,9 +2380,11 @@ exports[`Storyshots Patterns/Multi Input Match Popover Body Size 1`] = `
 `;
 
 exports[`Storyshots Patterns/Multi Input Mobile Mode 1`] = `
-<div
+<section
+  aria-labelledby="mobileModeMultiInputHeader"
   class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active"
   id="select-dialog-example"
+  role="dialog"
 >
   
     
@@ -2261,6 +2410,7 @@ exports[`Storyshots Patterns/Multi Input Mobile Mode 1`] = `
                     
           <h3
             class="fd-title fd-title--h5"
+            id="mobileModeMultiInputHeader"
           >
             
                         Select Ingredient
@@ -2340,6 +2490,7 @@ exports[`Storyshots Patterns/Multi Input Mobile Mode 1`] = `
                 <span
                   class="fd-token"
                   role="button"
+                  tabindex="0"
                 >
                   
                                      
@@ -2353,6 +2504,7 @@ exports[`Storyshots Patterns/Multi Input Mobile Mode 1`] = `
                   
                                      
                   <button
+                    aria-label="unselect option: apple"
                     class="fd-token__close"
                   />
                   
@@ -2363,6 +2515,7 @@ exports[`Storyshots Patterns/Multi Input Mobile Mode 1`] = `
                 <span
                   class="fd-token"
                   role="button"
+                  tabindex="0"
                 >
                   
                                      
@@ -2376,6 +2529,7 @@ exports[`Storyshots Patterns/Multi Input Mobile Mode 1`] = `
                   
                                      
                   <button
+                    aria-label="unselect option: orange"
                     class="fd-token__close"
                   />
                   
@@ -2386,6 +2540,7 @@ exports[`Storyshots Patterns/Multi Input Mobile Mode 1`] = `
                 <span
                   class="fd-token"
                   role="button"
+                  tabindex="0"
                 >
                   
                                      
@@ -2399,6 +2554,7 @@ exports[`Storyshots Patterns/Multi Input Mobile Mode 1`] = `
                   
                                      
                   <button
+                    aria-label="unselect option: kiwi"
                     class="fd-token__close"
                   />
                   
@@ -2414,6 +2570,7 @@ exports[`Storyshots Patterns/Multi Input Mobile Mode 1`] = `
                  
                                  
                 <input
+                  aria-labelledby="mobileModeMultiInputHeader"
                   class="fd-input fd-input-group__input fd-tokenizer__input"
                 />
                 
@@ -2430,6 +2587,7 @@ exports[`Storyshots Patterns/Multi Input Mobile Mode 1`] = `
               
                             
               <button
+                aria-label="show options"
                 class="fd-input-group__button fd-button fd-button--transparent"
               >
                 
@@ -2457,6 +2615,7 @@ exports[`Storyshots Patterns/Multi Input Mobile Mode 1`] = `
           
                     
           <button
+            aria-label="select all"
             class="fd-button fd-button--transparent"
           >
             
@@ -2482,20 +2641,24 @@ exports[`Storyshots Patterns/Multi Input Mobile Mode 1`] = `
       class="fd-dialog__body fd-dialog__body--no-vertical-padding"
     >
       
+            
+      <span
+        class="fd-list__message fd-list__message--success"
+      >
+        Success Message
+      </span>
+      
              
       <ul
+        aria-label="list of fruits"
+        aria-multiselectable="true"
         class="fd-list fd-list--multi-input fd-list--has-message"
+        role="listbox"
       >
         
                 
         <li
-          class="fd-list__message fd-list__message--success"
-        >
-          Success Message
-        </li>
-        
-                
-        <li
+          aria-selected="true"
           class="fd-list__item is-selected"
           role="option"
         >
@@ -2531,6 +2694,7 @@ exports[`Storyshots Patterns/Multi Input Mobile Mode 1`] = `
         
                   
         <li
+          aria-selected="true"
           class="fd-list__item is-selected"
           role="option"
         >
@@ -2564,6 +2728,7 @@ exports[`Storyshots Patterns/Multi Input Mobile Mode 1`] = `
         
                   
         <li
+          aria-selected="true"
           class="fd-list__item is-selected"
           role="option"
         >
@@ -2698,238 +2863,276 @@ exports[`Storyshots Patterns/Multi Input Mobile Mode 1`] = `
     
     
   </div>
-  
-
-</div>
+</section>
 `;
 
 exports[`Storyshots Patterns/Multi Input Read Only And Disabled 1`] = `
 <div
-  style="display:flex;height:80px;"
+  style="display:flex;height:250px;margin-top:1em;"
 >
   
     
-  <div
-    class="fd-popover"
-    style="display:flex;flex-direction:column;padding-right:1rem"
-  >
+  <div>
     
         
     <div
-      aria-controls="F4GcX3X8a"
-      aria-expanded="false"
-      aria-haspopup="false"
-      class="fd-popover__control"
+      style="margin-bottom:1em;"
     >
       
             
-      <div
-        aria-readonly="true"
-        class="fd-input-group fd-input-group--control"
-        readonly=""
-      >
+      <div>
+        
+                
+        <label
+          class="fd-form-label"
+          for="disabledMultiInput"
+        >
+          
+                    Latin Words (Disabled)
+                
+        </label>
         
                 
         <div
-          class="fd-tokenizer fd-tokenizer--readonly"
+          class="fd-popover"
+          style="display:flex;flex-direction:column"
         >
           
                     
           <div
-            class="fd-tokenizer__inner"
+            aria-disabled="true"
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="fd-popover__control"
+            disabled=""
           >
             
                         
-            <span
-              class="fd-token fd-token--readonly"
-              role="button"
-            >
-              
-                            
-              <span
-                class="fd-token__text"
-              >
-                
-                                Bibendum
-                            
-              </span>
-              
-                        
-            </span>
-            
-                        
-            <span
-              class="fd-token fd-token--readonly"
-              role="button"
-            >
-              
-                            
-              <span
-                class="fd-token__text"
-              >
-                
-                                Lorem
-                            
-              </span>
-              
-                        
-            </span>
-            
-                        
-            <span
-              class="fd-token fd-token--readonly"
-              role="button"
-            >
-              
-                            
-              <span
-                class="fd-token__text"
-              >
-                
-                                Dolor
-                            
-              </span>
-              
-                        
-            </span>
-            
-                        
-            <span
-              class="fd-token fd-token--readonly"
-              role="button"
-            >
-              
-                            
-              <span
-                class="fd-token__text"
-              >
-                
-                                Filter
-                            
-              </span>
-              
-                        
-            </span>
-            
-                        
-            <span
-              class="fd-token fd-token--readonly"
-            >
-              
-                            
-              <span
-                class="fd-token__text"
-              >
-                
-                                Lorem
-                            
-              </span>
-              
-                        
-            </span>
-            
-                        
-            <span
-              class="fd-tokenizer__indicator"
+            <div
+              aria-disabled="true"
+              class="fd-input-group fd-input-group--control"
+              disabled=""
             >
               
                             
               <div
-                class="fd-popover"
+                class="fd-tokenizer"
               >
                 
                                 
                 <div
-                  aria-controls="F4GF5348a"
-                  aria-expanded="false"
-                  aria-haspopup="true"
-                  class="fd-popover__control fd-input-group__control"
+                  class="fd-tokenizer__inner"
                 >
                   
                                     
-                  <a
-                    class="fd-link"
-                    href="#"
-                  >
-                    
-                                        4 more
-                                    
-                  </a>
-                  
-                                
-                </div>
-                
-                                
-                <div
-                  aria-hidden="true"
-                  class="fd-popover__body"
-                  id="F4GF5348a"
-                >
-                  
-                                    
-                  <nav
-                    class="fd-menu"
-                    id=""
+                  <span
+                    class="fd-token fd-token--readonly"
+                    role="button"
                   >
                     
                                         
-                    <ul
-                      class="fd-menu__list fd-menu__list--no-shadow"
+                    <span
+                      class="fd-token__text"
+                    >
+                      
+                                            Bibendum
+                                        
+                    </span>
+                    
+                                    
+                  </span>
+                  
+                                    
+                  <span
+                    class="fd-token fd-token--readonly"
+                    role="button"
+                  >
+                    
+                                        
+                    <span
+                      class="fd-token__text"
+                    >
+                      
+                                            Lorem
+                                        
+                    </span>
+                    
+                                    
+                  </span>
+                  
+                                    
+                  <span
+                    class="fd-token fd-token--readonly"
+                    role="button"
+                  >
+                    
+                                        
+                    <span
+                      class="fd-token__text"
+                    >
+                      
+                                            Dolor
+                                        
+                    </span>
+                    
+                                    
+                  </span>
+                  
+                                    
+                  <span
+                    class="fd-token fd-token--readonly"
+                    role="button"
+                  >
+                    
+                                        
+                    <span
+                      class="fd-token__text"
+                    >
+                      
+                                            Filter
+                                        
+                    </span>
+                    
+                                    
+                  </span>
+                  
+                                    
+                  <span
+                    class="fd-token fd-token--readonly"
+                  >
+                    
+                                        
+                    <span
+                      class="fd-token__text"
+                    >
+                      
+                                            Lorem
+                                        
+                    </span>
+                    
+                                    
+                  </span>
+                  
+                                    
+                  <span
+                    class="fd-tokenizer__indicator"
+                  >
+                    
+                                        
+                    <div
+                      class="fd-popover"
                     >
                       
                                             
-                      <li
-                        class="fd-menu__item"
+                      <div
+                        aria-controls="F4GcX34Xa"
+                        aria-expanded="false"
+                        aria-haspopup="true"
+                        class="fd-popover__control fd-input-group__control"
+                        onclick="onPopoverClick('F4GcX34Xa');"
                       >
                         
                                                 
                         <a
-                          class="fd-menu__link"
-                          href="#"
+                          class="fd-link"
                         >
                           
-                                                    
-                          <span
-                            class="fd-menu__title"
-                          >
-                            Option 1
-                          </span>
-                          
+                                                    2 more
                                                 
                         </a>
                         
                                             
-                      </li>
+                      </div>
                       
                                             
-                      <li
-                        class="fd-menu__item"
+                      <div
+                        aria-hidden="true"
+                        class="fd-popover__body"
+                        id="F4GcX34Xa"
                       >
                         
                                                 
-                        <a
-                          class="fd-menu__link"
-                          href="#"
+                        <nav
+                          class="fd-menu"
+                          id=""
                         >
                           
                                                     
-                          <span
-                            class="fd-menu__title"
+                          <ul
+                            class="fd-menu__list fd-menu__list--no-shadow"
                           >
-                            Option 2
-                          </span>
+                            
+                                                        
+                            <li
+                              class="fd-menu__item"
+                            >
+                              
+                                                            
+                              <a
+                                class="fd-menu__link"
+                                href="#"
+                                tabindex="-1"
+                              >
+                                
+                                                                
+                                <span
+                                  class="fd-menu__title"
+                                >
+                                  Consectetur
+                                </span>
+                                
+                                                            
+                              </a>
+                              
+                                                        
+                            </li>
+                            
+                                                        
+                            <li
+                              class="fd-menu__item"
+                            >
+                              
+                                                            
+                              <a
+                                class="fd-menu__link"
+                                href="#"
+                                tabindex="-1"
+                              >
+                                
+                                                                
+                                <span
+                                  class="fd-menu__title"
+                                >
+                                  Adipiscing
+                                </span>
+                                
+                                                            
+                              </a>
+                              
+                                                        
+                            </li>
+                            
+                                                    
+                          </ul>
                           
                                                 
-                        </a>
+                        </nav>
                         
                                             
-                      </li>
+                      </div>
                       
                                         
-                    </ul>
+                    </div>
                     
                                     
-                  </nav>
+                  </span>
+                  
+                                    
+                  <input
+                    class="fd-input fd-input-group__input fd-tokenizer__input"
+                    disabled=""
+                    id="disabledMultiInput"
+                  />
                   
                                 
                 </div>
@@ -2937,15 +3140,31 @@ exports[`Storyshots Patterns/Multi Input Read Only And Disabled 1`] = `
                             
               </div>
               
+                            
+              <span
+                class="fd-input-group__addon fd-input-group__addon--button"
+              >
+                
+                                
+                <button
+                  aria-label="show options"
+                  class="fd-input-group__button fd-button fd-button--transparent"
+                  tabindex="-1"
+                >
+                  
+                                    
+                  <i
+                    class="sap-icon--value-help"
+                  />
+                  
+                                
+                </button>
+                
+                            
+              </span>
+              
                         
-            </span>
-            
-                        
-            <input
-              aria-readonly="true"
-              class="fd-input fd-input-group__input fd-tokenizer__input"
-              readonly=""
-            />
+            </div>
             
                     
           </div>
@@ -2959,233 +3178,264 @@ exports[`Storyshots Patterns/Multi Input Read Only And Disabled 1`] = `
         
     </div>
     
-    
-  </div>
-  
-
-    
-  <div
-    class="fd-popover"
-    style="display:flex;flex-direction:column"
-  >
-    
         
-    <div
-      aria-disabled="true"
-      aria-expanded="false"
-      aria-haspopup="true"
-      class="fd-popover__control"
-      disabled=""
-    >
+    <div>
       
             
-      <div
-        aria-disabled="true"
-        class="fd-input-group fd-input-group--control"
-        disabled=""
-      >
+      <div>
+        
+                
+        <label
+          class="fd-form-label"
+          for="readOnlyMultiInput"
+        >
+          
+                    Latin Words (Readonly)
+                
+        </label>
         
                 
         <div
-          class="fd-tokenizer"
+          class="fd-popover"
+          style="display:flex;flex-direction:column;padding-right:1rem"
         >
           
                     
           <div
-            class="fd-tokenizer__inner"
+            aria-controls="F4GcX3X8a"
+            aria-expanded="false"
+            aria-haspopup="false"
+            class="fd-popover__control"
           >
             
                         
-            <span
-              class="fd-token fd-token--readonly"
-              role="button"
-            >
-              
-                            
-              <span
-                class="fd-token__text"
-              >
-                
-                                Bibendum
-                            
-              </span>
-              
-                        
-            </span>
-            
-                        
-            <span
-              class="fd-token fd-token--readonly"
-              role="button"
-            >
-              
-                            
-              <span
-                class="fd-token__text"
-              >
-                
-                                Lorem
-                            
-              </span>
-              
-                        
-            </span>
-            
-                        
-            <span
-              class="fd-token fd-token--readonly"
-              role="button"
-            >
-              
-                            
-              <span
-                class="fd-token__text"
-              >
-                
-                                Dolor
-                            
-              </span>
-              
-                        
-            </span>
-            
-                        
-            <span
-              class="fd-token fd-token--readonly"
-              role="button"
-            >
-              
-                            
-              <span
-                class="fd-token__text"
-              >
-                
-                                Filter
-                            
-              </span>
-              
-                        
-            </span>
-            
-                        
-            <span
-              class="fd-token fd-token--readonly"
-            >
-              
-                            
-              <span
-                class="fd-token__text"
-              >
-                
-                                Lorem
-                            
-              </span>
-              
-                        
-            </span>
-            
-                        
-            <span
-              class="fd-tokenizer__indicator"
+            <div
+              aria-readonly="true"
+              class="fd-input-group fd-input-group--control"
+              readonly=""
             >
               
                             
               <div
-                class="fd-popover"
+                class="fd-tokenizer fd-tokenizer--readonly"
               >
                 
                                 
                 <div
-                  aria-controls="F4GcX34Xa"
-                  aria-expanded="false"
-                  aria-haspopup="true"
-                  class="fd-popover__control fd-input-group__control"
+                  class="fd-tokenizer__inner"
                 >
                   
                                     
-                  <a
-                    class="fd-link"
-                    href="#"
-                  >
-                    
-                                        4 more
-                                    
-                  </a>
-                  
-                                
-                </div>
-                
-                                
-                <div
-                  aria-hidden="true"
-                  class="fd-popover__body"
-                  id="F4GcX34Xa"
-                >
-                  
-                                    
-                  <nav
-                    class="fd-menu"
-                    id=""
+                  <span
+                    class="fd-token fd-token--readonly"
+                    tabindex="0"
                   >
                     
                                         
-                    <ul
-                      class="fd-menu__list fd-menu__list--no-shadow"
+                    <span
+                      class="fd-token__text"
+                    >
+                      
+                                            Bibendum
+                                        
+                    </span>
+                    
+                                    
+                  </span>
+                  
+                                    
+                  <span
+                    class="fd-token fd-token--readonly"
+                    tabindex="0"
+                  >
+                    
+                                        
+                    <span
+                      class="fd-token__text"
+                    >
+                      
+                                            Lorem
+                                        
+                    </span>
+                    
+                                    
+                  </span>
+                  
+                                    
+                  <span
+                    class="fd-token fd-token--readonly"
+                    tabindex="0"
+                  >
+                    
+                                        
+                    <span
+                      class="fd-token__text"
+                    >
+                      
+                                            Dolor
+                                        
+                    </span>
+                    
+                                    
+                  </span>
+                  
+                                    
+                  <span
+                    class="fd-token fd-token--readonly"
+                    tabindex="0"
+                  >
+                    
+                                        
+                    <span
+                      class="fd-token__text"
+                    >
+                      
+                                            Filter
+                                        
+                    </span>
+                    
+                                    
+                  </span>
+                  
+                                    
+                  <span
+                    class="fd-token fd-token--readonly"
+                    tabindex="0"
+                  >
+                    
+                                        
+                    <span
+                      class="fd-token__text"
+                    >
+                      
+                                            Lorem
+                                        
+                    </span>
+                    
+                                    
+                  </span>
+                  
+                                    
+                  <span
+                    class="fd-tokenizer__indicator"
+                  >
+                    
+                                        
+                    <div
+                      class="fd-popover"
                     >
                       
                                             
-                      <li
-                        class="fd-menu__item"
+                      <div
+                        aria-controls="F4GF5348a"
+                        aria-expanded="true"
+                        aria-haspopup="true"
+                        class="fd-popover__control fd-input-group__control"
+                        onclick="onPopoverClick('F4GF5348a');"
                       >
                         
                                                 
                         <a
-                          class="fd-menu__link"
-                          href="#"
+                          class="fd-link"
+                          tabindex="0"
                         >
                           
-                                                    
-                          <span
-                            class="fd-menu__title"
-                          >
-                            Option 1
-                          </span>
-                          
+                                                    2 more
                                                 
                         </a>
                         
                                             
-                      </li>
+                      </div>
                       
                                             
-                      <li
-                        class="fd-menu__item"
+                      <div
+                        aria-hidden="false"
+                        class="fd-popover__body"
+                        id="F4GF5348a"
                       >
                         
                                                 
-                        <a
-                          class="fd-menu__link"
-                          href="#"
+                        <nav
+                          aria-label="more options"
+                          class="fd-menu"
+                          id=""
                         >
                           
                                                     
-                          <span
-                            class="fd-menu__title"
+                          <ul
+                            class="fd-menu__list fd-menu__list--no-shadow"
                           >
-                            Option 2
-                          </span>
+                            
+                                                        
+                            <li
+                              class="fd-menu__item"
+                            >
+                              
+                                                            
+                              <a
+                                class="fd-menu__link"
+                                href="#"
+                              >
+                                
+                                                                
+                                <span
+                                  class="fd-menu__title"
+                                >
+                                  Consectetur
+                                </span>
+                                
+                                                            
+                              </a>
+                              
+                                                        
+                            </li>
+                            
+                                                        
+                            <li
+                              class="fd-menu__item"
+                            >
+                              
+                                                            
+                              <a
+                                class="fd-menu__link"
+                                href="#"
+                              >
+                                
+                                                                
+                                <span
+                                  class="fd-menu__title"
+                                >
+                                  Adipiscing
+                                </span>
+                                
+                                                            
+                              </a>
+                              
+                                                        
+                            </li>
+                            
+                                                    
+                          </ul>
                           
                                                 
-                        </a>
+                        </nav>
                         
                                             
-                      </li>
+                      </div>
                       
                                         
-                    </ul>
+                    </div>
                     
                                     
-                  </nav>
+                  </span>
+                  
+                                    
+                  <input
+                    aria-readonly="true"
+                    class="fd-input fd-input-group__input fd-tokenizer__input"
+                    id="readOnlyMultiInput"
+                    readonly=""
+                  />
                   
                                 
                 </div>
@@ -3194,40 +3444,13 @@ exports[`Storyshots Patterns/Multi Input Read Only And Disabled 1`] = `
               </div>
               
                         
-            </span>
-            
-                        
-            <input
-              class="fd-input fd-input-group__input fd-tokenizer__input"
-            />
+            </div>
             
                     
           </div>
           
                 
         </div>
-        
-                
-        <span
-          class="fd-input-group__addon fd-input-group__addon--button"
-        >
-          
-                    
-          <button
-            class="fd-input-group__button fd-button fd-button--transparent"
-            tabindex="-1"
-          >
-            
-                        
-            <i
-              class="sap-icon--value-help"
-            />
-            
-                    
-          </button>
-          
-                
-        </span>
         
             
       </div>
@@ -3246,6 +3469,16 @@ exports[`Storyshots Patterns/Multi Input Semantic 1`] = `
 <div
   style="height:300px"
 >
+  
+
+  <label
+    class="fd-form-label"
+    for="semanticMultiInput"
+  >
+    
+    Semantic Fruits
+
+  </label>
   
 
   <div
@@ -3279,6 +3512,7 @@ exports[`Storyshots Patterns/Multi Input Semantic 1`] = `
             <span
               class="fd-token"
               role="button"
+              tabindex="0"
             >
               
                          
@@ -3292,6 +3526,7 @@ exports[`Storyshots Patterns/Multi Input Semantic 1`] = `
               
                          
               <button
+                aria-label="unselect option: apple"
                 class="fd-token__close"
               />
               
@@ -3302,6 +3537,7 @@ exports[`Storyshots Patterns/Multi Input Semantic 1`] = `
             <span
               class="fd-token"
               role="button"
+              tabindex="0"
             >
               
                          
@@ -3315,6 +3551,7 @@ exports[`Storyshots Patterns/Multi Input Semantic 1`] = `
               
                          
               <button
+                aria-label="unselect option: orange"
                 class="fd-token__close"
               />
               
@@ -3325,6 +3562,7 @@ exports[`Storyshots Patterns/Multi Input Semantic 1`] = `
             <span
               class="fd-token"
               role="button"
+              tabindex="0"
             >
               
                          
@@ -3338,6 +3576,7 @@ exports[`Storyshots Patterns/Multi Input Semantic 1`] = `
               
                          
               <button
+                aria-label="unselect option: kiwi"
                 class="fd-token__close"
               />
               
@@ -3354,6 +3593,7 @@ exports[`Storyshots Patterns/Multi Input Semantic 1`] = `
                      
             <input
               class="fd-input fd-input-group__input fd-tokenizer__input"
+              id="semanticMultiInput"
             />
             
                  
@@ -3372,6 +3612,7 @@ exports[`Storyshots Patterns/Multi Input Semantic 1`] = `
             aria-controls="F4GcKJH8a"
             aria-expanded="false"
             aria-haspopup="true"
+            aria-label="show options"
             class="fd-input-group__button fd-button fd-button--transparent"
           >
             
@@ -3405,19 +3646,23 @@ exports[`Storyshots Patterns/Multi Input Semantic 1`] = `
       >
         
         
-        <ul
-          class="fd-list fd-list--multi-input fd-list--has-message"
+        <span
+          class="fd-list__message fd-list__message--success"
         >
-          
-            
-          <li
-            class="fd-list__message fd-list__message--success"
-          >
-            Success Message
-          </li>
+          Success Message
+        </span>
+        
+        
+        <ul
+          aria-label="list of fruits"
+          aria-multiselectable="true"
+          class="fd-list fd-list--multi-input fd-list--has-message"
+          role="listbox"
+        >
           
              
           <li
+            aria-selected="true"
             class="fd-list__item is-selected"
             role="option"
           >
@@ -3453,6 +3698,7 @@ exports[`Storyshots Patterns/Multi Input Semantic 1`] = `
           
              
           <li
+            aria-selected="true"
             class="fd-list__item is-selected"
             role="option"
           >
@@ -3486,6 +3732,7 @@ exports[`Storyshots Patterns/Multi Input Semantic 1`] = `
           
              
           <li
+            aria-selected="true"
             class="fd-list__item is-selected"
             role="option"
           >
@@ -3592,13 +3839,6 @@ exports[`Storyshots Patterns/Multi Input Semantic 1`] = `
     
 
   </div>
-  
-
-  <span
-    class="fd-form-message fd-form-message--static fd-form-message--success"
-  >
-    Success message
-  </span>
   
 
 </div>
