@@ -1,11 +1,11 @@
 name: "Chromatic"
 on: push
-if: "! contains(toJSON(github.event.commits[0].message), '[ci skip]')"
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+    - if: "! contains(toJSON(github.event.commits[0].message), '[ci skip]')"
     - uses: actions/checkout@v1
     - run: |
         yarn && yarn build
