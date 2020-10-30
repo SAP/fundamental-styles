@@ -3,14 +3,13 @@ on: push
 
 jobs:
   test:
+    if: "! contains(toJSON(github.event.commits[0].message), '[ci skip]')"
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-      if: "! contains(toJSON(github.event.commits[0].message), '[ci skip]')"
     - run: |
         yarn && yarn build
     - uses: chromaui/action@v1
-      if: "! contains(toJSON(github.event.commits[0].message), '[ci skip]')"
       with: 
         projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
         token: ${{ secrets.GITHUB_TOKEN }}
