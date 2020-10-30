@@ -14,6 +14,7 @@ import {
     DocsStory,
 } from '@storybook/addon-docs/blocks';
 import InfoLabel from './InfoLabel';
+import { changeDocumentTheme } from '../themeProvider';
 
 const DocsPage = () => {
     // setup toc bot
@@ -29,6 +30,14 @@ const DocsPage = () => {
             }
         );
         document.querySelectorAll('.toc-link').forEach(x => x.setAttribute('target', '_self'));
+    }, []);
+
+    // make story containers themed by adding appropriate class
+    useEffect(() => {
+        document.getElementsByClassName('sbdocs-preview').forEach(storyPreview => {
+            const previewBody = storyPreview?.childNodes[1];
+            previewBody?.classList.add('themed-container');
+        });
     }, []);
 
     const context = useContext(DocsContext);
@@ -53,30 +62,7 @@ const DocsPage = () => {
         }
         
         if (!previousTheme.current || previousTheme.current !== themeState) {
-            // remove previous theme links
-            let links = [].slice.call(document.getElementsByTagName('link'));
-            links.forEach(item => {
-                if(item.attributes['data-theme-id']) {
-                    item.parentNode.removeChild(item);
-                }
-            });
-            let cssArr = context?.parameters?.components || [];
-            cssArr.indexOf('info-label') === -1 && cssArr.push('info-label');
-            cssArr.forEach(component => {
-                let stylePath = `${component}-${themeState}.css`;
-                let link = document.createElement('link');
-
-                link.type = 'text/css';
-                link.rel = 'stylesheet';
-                link.href = stylePath;
-                link.setAttribute('data-theme-id', themeState);
-
-
-                document.head.appendChild(link);
-
-                return () => { document.head.removeChild(link); }
-            })
-            previousTheme.current = themeState;
+            changeDocumentTheme(themeState, context?.parameters?.components || [])
         }
     }, [themeState, directionalityState]);
 
@@ -101,11 +87,14 @@ const DocsPage = () => {
     return (
         <>
             <Header onThemeChange={(e) => setThemeState(e.target.value)} onDirectionalityChange={(e) => setDirectionalityState(e.target.value)} />
-            <Title />
-            <Toc />
-            <Subtitle />
-            {renderInfoLabels(context?.parameters?.tags)}
-            {context?.parameters?.description && <Description desc={context?.parameters?.description} />}
+            {/* wrapping intro content in the sb-docs-intro class for appropriate text color in all themes */}
+            <div className="sb-docs-intro">
+                <Title />
+                <Toc />
+                <Subtitle />
+                {renderInfoLabels(context?.parameters?.tags)}
+                {context?.parameters?.description && <Description desc={context?.parameters?.description} />}
+            </div>
             <Heading>Examples</Heading>
             {stories.map((story) => story && <DocsStory
                 key={story.id}
