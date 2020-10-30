@@ -1,0 +1,31 @@
+@import './new-settings';
+@import './mixins';
+
+/*!
+.fd-form-header
+   .fd-form-header__text
+*/
+$block: #{$fd-namespace}-form-header;
+$fd-form-header-padding-x: 1rem !default;
+
+.#{$block} {
+  @include fd-reset();
+  @include fd-flex-vertical-center();
+
+  width: 100%;
+  height: 2.75rem;
+  background-color: var(--sapGroup_TitleBackground);
+  padding-left: $fd-form-header-padding-x;
+  padding-right: $fd-form-header-padding-x;
+  box-shadow: 0 var(--sapList_BorderWidth) var(--sapList_BorderWidth) var(--sapGroup_TitleBorderColor);
+
+  &__text {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    font-family: var(--sapFontHeaderFamily);
+    font-size: var(--sapFontHeader4Size);
+    font-weight: var(--sapFontHeaderWeight);
+    color: var(--sapGroup_TitleTextColor);
+  }
+}
