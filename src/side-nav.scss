@@ -94,6 +94,7 @@ $has-child-content-arrow-margin: 0.125rem;
       &__link,
       &__content {
         border-bottom: none;
+        text-shadow: var(--fdSideNav_Text_Shadow);
 
         @include fd-selected() {
           border-bottom: var(--sapList_BorderWidth) solid;
