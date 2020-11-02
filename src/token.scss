@@ -54,7 +54,6 @@ $block: #{$fd-namespace}-token;
   text-overflow: clip;
   height: $fd-token-height;
   line-height: 1.5rem;
-  flex: 1 0 auto;
   border: var(--sapButton_BorderWidth) solid $fd-token-border-color;
 
   @include fd-rtl() {
