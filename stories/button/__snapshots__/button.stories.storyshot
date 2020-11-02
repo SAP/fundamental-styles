@@ -16,11 +16,11 @@ exports[`Storyshots Components/Button Button With Badge 1`] = `
     </span>
     
     
-    <div
+    <span
       class="fd-button__badge"
     >
       3984
-    </div>
+    </span>
        
 
   </button>
@@ -38,11 +38,11 @@ exports[`Storyshots Components/Button Button With Badge 1`] = `
     />
     
     
-    <div
+    <span
       class="fd-button__badge"
     >
       3
-    </div>
+    </span>
        
 
   </button>
@@ -60,11 +60,11 @@ exports[`Storyshots Components/Button Button With Badge 1`] = `
     </span>
     
     
-    <div
+    <span
       class="fd-button__badge"
     >
       654
-    </div>
+    </span>
        
 
   </button>
@@ -82,11 +82,11 @@ exports[`Storyshots Components/Button Button With Badge 1`] = `
     />
     
     
-    <div
+    <span
       class="fd-button__badge"
     >
       12
-    </div>
+    </span>
        
 
   </button>
