@@ -91,27 +91,29 @@ segmentedButton.parameters = {
 export const badgeOnButton = () => `
 <button class="fd-button">
     <span class="fd-button__text">Cozy Badge Button</span>
-    <div class="fd-button__badge">3984</div>   
+    <span class="fd-button__badge">3984</span>   
 </button>
 <button class="fd-button" aria-label="Add to cart">
     <i class="sap-icon--cart" role="presentation"></i>
-    <div class="fd-button__badge">3</div>   
+    <span class="fd-button__badge">3</span>   
 </button>
 <button class="fd-button fd-button--compact">
     <span class="fd-button__text">Compact Badge Button</span>
-    <div class="fd-button__badge">654</div>   
+    <span class="fd-button__badge">654</span>   
 </button>
 <button class="fd-button fd-button--compact" aria-label="Add to cart">
     <i class="sap-icon--cart" role="presentation"></i>
-    <div class="fd-button__badge">12</div>   
+    <span class="fd-button__badge">12</span>   
 </button>
 `;
 
 badgeOnButton.storyName = 'Button With Badge';
 badgeOnButton.parameters = {
     docs: {
-        storyDescription: `Button gets a badge in cases of collecting a number of items from various pages in order to trigger an action. <br/> 
-        Currently the Emphasized, Standard, Ghost and Transparent type of buttons are recommended to be used with Badge.`
+        storyDescription: `Button gets a badge in cases of collecting a number of items from various pages in order to
+        trigger an action. <br/> 
+        Currently the Emphasized, Standard, Ghost and Transparent type of buttons are recommended to be used with Badge. <br/>
+        <b>Badges can not contain more characters than 4</b>.`
     }
 };
 
