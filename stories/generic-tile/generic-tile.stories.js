@@ -28,7 +28,6 @@ Generic tiles can display different elements and/or semantic states depending on
 
 Modifier class | Description
 :-------- | :-------------------
-\`fd-tile--s\` | To display small tiles for screens =< 374px.
 \`fd-numeric-content__scale--text\` | To display text in the numeric content area.
 \`fd-tile--double\` | To double the layout dimensions. See the layout section below for more details.
 \`fd-tile--action\` | Display a tile in action mode.
