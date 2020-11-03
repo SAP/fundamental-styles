@@ -1,7 +1,7 @@
 export default {
     title: 'Components/Pagination',
     parameters: {
-        description: `Pagination allows users to separate their content into discrete pages, making the content easier to digest and navigate through. It is commonly used for tables and tiles.
+        description: `Pagination allows users to separate their content into discrete pages, making it easier to digest and navigate through. Pagination is commonly used for tables and tiles.
 
 ##Usage
 **Use pagination if:**
@@ -9,7 +9,23 @@ export default {
 - The user needs to search through several related items (over 30 is a good basis).
 - The content contains products that users can choose from.
 - You want to allow users to bookmark pages.
-- You want your content to be optimized for search.     
+- You want your content to be optimized for search. 
+
+##Elements
+The pagination component consists of the following elements:
+
+Element | Modifier/class | Description
+:------ | :------------- | :----------
+Main | \`fd-pagination\` | The main container
+Navigation | \`fd-pagination__nav\` | The navigation area
+Total page count | \`fd-pagination__total\` | The total number of pages
+Links | \`fd-pagination__link\` | The page number links that users can select to navigate to a different page
+Selected page | \`fd-pagination__link is-selected\` | The page that is currently selected
+Previous arrow | \`fd-pagination__link--previous\` | The previous arrow that users can use to navigate backward. This arrow is disabled when on the first page.
+Next arrow | \`fd-pagination__link--next\` | The next arrow that users can use to navigate forward. This arrow is disabled when on the last page.
+<br>
+<br>
+
       `,
         tags: ['a11y', 'theme'],
         components: ['pagination']
