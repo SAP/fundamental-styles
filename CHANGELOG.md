@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.35...v0.13.0-rc.36) (2020-11-03)
+
+
+### Bug Fixes
+
+* Improve Dialog documentation examples ([#1824](https://github.com/SAP/fundamental-styles/issues/1824)) ([9cb3f3e](https://github.com/SAP/fundamental-styles/commit/9cb3f3e25f88541b5ab15b18ca136a5c4c283d30))
+
 ## [0.13.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.34...v0.13.0-rc.35) (2020-11-03)
 
 ## [0.13.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.33...v0.13.0-rc.34) (2020-11-02)
