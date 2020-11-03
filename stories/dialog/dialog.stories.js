@@ -41,8 +41,9 @@ Note: Dialog's header, subheader and footer are elements from the **Bar** compon
     }
 };
 
-export const defaultDialog = () => `<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <section class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1">
+export const defaultDialog = () => `
+<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1">
         <span class="fd-dialog__resize-handle"></span>
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
             <div class="fd-bar__left">
@@ -86,8 +87,8 @@ export const defaultDialog = () => `<div class="fd-dialog-docs-static fd-dialog 
                 </div>
             </div>
         </footer>
-    </section>
-</div>
+    </div>
+</section>
 `;
 
 defaultDialog.storyName = 'Default';
@@ -100,113 +101,113 @@ defaultDialog.parameters = {
 
 
 export const sizes = () => `
-<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-<section class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-2">
-    <header class="fd-dialog__header fd-bar fd-bar--header">
-        <div class="fd-bar__left">
-            <div class="fd-bar__element">
-                <h2 class="fd-title fd-title--h5" id="dialog-title-2">
-                    Small Dialog
-                </h2>
+<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-2">
+        <header class="fd-dialog__header fd-bar fd-bar--header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-title fd-title--h5" id="dialog-title-2">
+                        Small Dialog
+                    </h2>
+                </div>
             </div>
+        </header>
+        <div class="fd-dialog__body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         </div>
-    </header>
-    <div class="fd-dialog__body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
+                </div>
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                </div>
+            </div>
+        </footer>
     </div>
-    <footer class="fd-dialog__footer fd-bar fd-bar--footer">
-        <div class="fd-bar__right">
-            <div class="fd-bar__element">
-                <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
-            </div>
-            <div class="fd-bar__element">
-                <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
-            </div>
-        </div>
-    </footer>
 </section>
-</div>
 <br />
-<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-<section class="fd-dialog__content fd-dialog__content--m" role="dialog" aria-modal="true" aria-labelledby="dialog-title-3">
-    <header class="fd-dialog__header fd-bar fd-bar--header">
-        <div class="fd-bar__left">
-            <div class="fd-bar__element">
-                <h2 class="fd-title fd-title--h5" id="dialog-title-3">
-                    Medium Dialog
-                </h2>
+<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div class="fd-dialog__content fd-dialog__content--m" role="dialog" aria-modal="true" aria-labelledby="dialog-title-3">
+        <header class="fd-dialog__header fd-bar fd-bar--header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-title fd-title--h5" id="dialog-title-3">
+                        Medium Dialog
+                    </h2>
+                </div>
             </div>
+        </header>
+        <div class="fd-dialog__body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         </div>
-    </header>
-    <div class="fd-dialog__body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-    </div>
-    <footer class="fd-dialog__footer fd-bar fd-bar--footer">
-        <div class="fd-bar__right">
-            <div class="fd-bar__element">
-                <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
+                </div>
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                </div>
             </div>
-            <div class="fd-bar__element">
-                <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
-            </div>
-        </div>
-    </footer>
-</section> 
-</div>
-<br />
-<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-<section class="fd-dialog__content fd-dialog__content--l" role="dialog" aria-modal="true" aria-labelledby="dialog-title-4">
-    <header class="fd-dialog__header fd-bar fd-bar--header">
-        <div class="fd-bar__left">
-            <div class="fd-bar__element">
-                <h2 class="fd-title fd-title--h5" id="dialog-title-4">
-                    Large Dialog
-                </h2>
-            </div>
-        </div>
-    </header>
-    <div class="fd-dialog__body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-    </div>
-    <footer class="fd-dialog__footer fd-bar fd-bar--footer">
-        <div class="fd-bar__right">
-            <div class="fd-bar__element">
-                <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
-            </div>
-            <div class="fd-bar__element">
-                <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div> 
 </section>
-</div>
 <br />
-<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-<section class="fd-dialog__content fd-dialog__content--xl" role="dialog" aria-modal="true" aria-labelledby="dialog-title-5">
-    <header class="fd-dialog__header fd-bar fd-bar--header">
-        <div class="fd-bar__left">
-            <div class="fd-bar__element">
-                <h2 class="fd-title fd-title--h5" id="dialog-title-5">
-                    Extra Large Dialog
-                </h2>
+<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div class="fd-dialog__content fd-dialog__content--l" role="dialog" aria-modal="true" aria-labelledby="dialog-title-4">
+        <header class="fd-dialog__header fd-bar fd-bar--header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-title fd-title--h5" id="dialog-title-4">
+                        Large Dialog
+                    </h2>
+                </div>
             </div>
+        </header>
+        <div class="fd-dialog__body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         </div>
-    </header>
-    <div class="fd-dialog__body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
+                </div>
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                </div>
+            </div>
+        </footer>
     </div>
-    <footer class="fd-dialog__footer fd-bar fd-bar--footer">
-        <div class="fd-bar__right">
-            <div class="fd-bar__element">
-                <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
-            </div>
-            <div class="fd-bar__element">
-                <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
-            </div>
-        </div>
-    </footer>
 </section>
-</div>
+<br />
+<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div class="fd-dialog__content fd-dialog__content--xl" role="dialog" aria-modal="true" aria-labelledby="dialog-title-5">
+        <header class="fd-dialog__header fd-bar fd-bar--header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-title fd-title--h5" id="dialog-title-5">
+                        Extra Large Dialog
+                    </h2>
+                </div>
+            </div>
+        </header>
+        <div class="fd-dialog__body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        </div>
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
+                </div>
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</section>
 `;
 
 sizes.parameters = {
@@ -247,33 +248,34 @@ Note: On mobile devices, the bar component should be used with the <code>fd-bar-
     }
 };
 
-export const Resizable = () => `<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-        <section class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-6">
-            <span class="fd-dialog__resize-handle"></span>
-            <header class="fd-dialog__header fd-bar fd-bar--header">
-                <div class="fd-bar__left">
-                    <div class="fd-bar__element">
-                        <h2 class="fd-title fd-title--h5" id="dialog-title-6">
-                            Lorem ipsum
-                        </h2>
-                    </div>
+export const Resizable = () => `
+<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-6">
+        <span class="fd-dialog__resize-handle"></span>
+        <header class="fd-dialog__header fd-bar fd-bar--header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-title fd-title--h5" id="dialog-title-6">
+                        Lorem ipsum
+                    </h2>
                 </div>
-            </header>
-            <div class="fd-dialog__body">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             </div>
-            <footer class="fd-dialog__footer fd-bar fd-bar--footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
-                    </div>
-                    <div class="fd-bar__element">
-                        <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
-                    </div>
+        </header>
+        <div class="fd-dialog__body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        </div>
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
                 </div>
-            </footer>
-        </section>
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                </div>
+            </div>
+        </footer>
     </div>
+</section>
 `;
 
 Resizable.parameters = {
@@ -286,8 +288,9 @@ Note: This feature should be enabled for desktop screens only.`
     }
 };
 
-export const Draggable = () => `<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <section class="fd-dialog__content fd-dialog__content--draggable-grab fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-7">
+export const Draggable = () => `
+<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div class="fd-dialog__content fd-dialog__content--draggable-grab fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-7">
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -310,8 +313,8 @@ export const Draggable = () => `<div class="fd-dialog-docs-static fd-dialog fd-d
                 </div>
             </div>
         </footer>
-    </section>
-</div>
+    </div>
+</section>
 `;
 
 Draggable.parameters = {
@@ -328,8 +331,9 @@ Dialog can be draggable, enabling the user to drag the container around with the
     }
 };
 
-export const Selectable = () => `<div class="fd-dialog-docs-static fd-dialog fd-dialog--active" id="select-dialog-example">
-    <section class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-8">
+export const Selectable = () => `
+<section class="fd-dialog-docs-static fd-dialog fd-dialog--active" id="select-dialog-example">
+    <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-8">
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -415,8 +419,8 @@ export const Selectable = () => `<div class="fd-dialog-docs-static fd-dialog fd-
                 </div>
             </div>
         </footer>
-    </section>
-</div>`;
+    </div>
+</section>`;
 
 Selectable.parameters = {
     docs: {
@@ -427,8 +431,9 @@ Selectable.parameters = {
 };
 
 
-export const Loading = () => `<div class="fd-dialog-docs-static fd-dialog fd-dialog--active" id="loading-dialog-example">
-    <section class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-9">
+export const Loading = () => `
+<section class="fd-dialog-docs-static fd-dialog fd-dialog--active" id="loading-dialog-example">
+    <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-9">
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -453,8 +458,8 @@ export const Loading = () => `<div class="fd-dialog-docs-static fd-dialog fd-dia
                 </div>
             </div>
         </footer>
-    </section>
-</div>`;
+    </div>
+</section>`;
 
 Loading.parameters = {
     docs: {
