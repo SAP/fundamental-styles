@@ -1,15 +1,20 @@
 export default {
     title: 'Components/Pagination',
     parameters: {
-        description: 'Pagination is commonly used for tables and tiles. It allows users to see how many pages of content exist, to navigate and highlights which page they are currently viewing.',
+        description: `Pagination allows users to separate their content into discrete pages, making the content easier to digest and navigate through. It is commonly used for tables and tiles.
+
+##Usage
+**Use pagination if:**
+
+- The user needs to search through several related items (over 30 is a good basis).
+- The content contains products that users can choose from.
+- You want to allow users to bookmark pages.
+- You want your content to be optimized for search.     
+        `,
         tags: ['a11y', 'theme'],
         components: ['pagination']
     }
 };
-
-/**
- * When the first page is active, the Back arrow should be disabled.
- */
 
 export const firstPage = () => `<div class="fd-pagination">
     <span class="fd-pagination__total">30 items</span>
@@ -24,10 +29,14 @@ export const firstPage = () => `<div class="fd-pagination">
 </div>
 `;
 
-/**
- * ##### Second Page
- * When any other page different than the first is active, the Back button should be enabled
- */
+firstPage.storyName = 'First page';
+
+firstPage.parameters = {
+    docs: {
+        iframeHeight: 500,
+        storyDescription: `Pagination displays a non-interactive page number and a disabled back button when it is active.
+      ` }
+};
 
 export const secondPage = () => `<div class="fd-pagination">
   <span class="fd-pagination__total">30 items</span>
@@ -43,9 +52,14 @@ export const secondPage = () => `<div class="fd-pagination">
 </div>
 `;
 
-/**
-  * More than 3 pages
-  */
+secondPage.storyName = 'Second page';
+
+secondPage.parameters = {
+    docs: {
+        iframeHeight: 500,
+        storyDescription: `When the user is on any other page after the first page, the back button should be enabled.
+      ` }
+};
 
 export const multiplePages = () => `<div class="fd-pagination">
   <span class="fd-pagination__total">500 items</span>
@@ -63,9 +77,14 @@ export const multiplePages = () => `<div class="fd-pagination">
 </div>
 `;
 
-/**
- * In between more than three Pages
- */
+multiplePages.storyName = 'Mutliple pages';
+
+multiplePages.parameters = {
+    docs: {
+        iframeHeight: 500,
+        storyDescription: `The pagination component displays a certain number of pages before an ellipsis appears followed by the last page number. The general rule is that if there is a lot of screen space, pagination can display several page numbers to select from. For mobile, however, there should be a maximum of three page numbers displayed before an ellipsis and last page appears.
+      ` }
+};
 
 export const middlePage = () => `<div class="fd-pagination">
   <span class="fd-pagination__total">500 items</span>
@@ -85,9 +104,14 @@ export const middlePage = () => `<div class="fd-pagination">
 </div>
 `;
 
-/**
- * On the last page, the Next arrow should be disabled.
- */
+middlePage.storyName = 'Middle pages';
+
+middlePage.parameters = {
+    docs: {
+        iframeHeight: 500,
+        storyDescription: `Pagination can display middle pages to increase searchability. The ellipsis will not only display at the end before the last page but also after the first page, showing three page numbers in the middle.
+      ` }
+};
 
 export const lastPage = () => `<div class="fd-pagination">
   <span class="fd-pagination__total">500 items</span>
@@ -103,3 +127,12 @@ export const lastPage = () => `<div class="fd-pagination">
   </nav>
 </div>
 `;
+
+lastPage.storyName = 'Last page';
+
+lastPage.parameters = {
+    docs: {
+        iframeHeight: 500,
+        storyDescription: `When the user reaches the last page, the next arrow button should be disabled.
+      ` }
+};
