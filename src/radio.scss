@@ -12,11 +12,11 @@ $block: #{$fd-namespace}-radio;
 }
 
 .#{$block} {
-  @mixin fd-radio-state($background-color, $text-color, $border-color, $border-size) {
+  @mixin fd-radio-state($background-color, $text-color, $border-color, $border-size, $border-type) {
     + .#{$block}__label {
       &::before {
         background-color: $background-color;
-        border: $border-size solid $border-color;
+        border: $border-size $border-type $border-color;
       }
 
       &::after {
@@ -119,24 +119,24 @@ $block: #{$fd-namespace}-radio;
   // states
   &.is-warning,
   &.is-alert {
-    @include fd-radio-state(var(--sapField_WarningBackground), var(--sapField_TextColor), var(--sapField_WarningColor), 0.125rem);
+    @include fd-radio-state(var(--sapField_WarningBackground), var(--sapField_TextColor), var(--sapField_WarningColor), 0.125rem, var(--fdRadio_State_Border_Type));
   }
 
   &.is-error {
-    @include fd-radio-state(var(--sapField_InvalidBackground), var(--sapField_InvalidColor), var(--sapField_InvalidColor), 0.125rem);
+    @include fd-radio-state(var(--sapField_InvalidBackground), var(--sapField_InvalidColor), var(--sapField_InvalidColor), 0.125rem, var(--fdRadio_State_Border_Type));
   }
 
   &.is-success {
-    @include fd-radio-state(var(--sapField_SuccessBackground), var(--sapField_SuccessColor), var(--sapField_SuccessColor), var(--sapField_BorderWidth));
+    @include fd-radio-state(var(--sapField_SuccessBackground), var(--sapField_SuccessColor), var(--sapField_SuccessColor), var(--sapField_BorderWidth), solid);
   }
 
   &.is-information {
-    @include fd-radio-state(var(--sapField_InformationBackground), var(--sapField_InformationColor), var(--sapField_InformationColor), 0.125rem);
+    @include fd-radio-state(var(--sapField_InformationBackground), var(--sapField_InformationColor), var(--sapField_InformationColor), 0.125rem, var(--fdRadio_State_Border_Type));
   }
 
   &[readonly],
   &.is-readonly {
-    @include fd-radio-state(var(--sapField_ReadOnly_Background), var(--sapContent_NonInteractiveIconColor), var(--sapField_ReadOnly_BorderColor), var(--sapField_BorderWidth));
+    @include fd-radio-state(var(--sapField_ReadOnly_Background), var(--sapContent_NonInteractiveIconColor), var(--sapField_ReadOnly_BorderColor), var(--sapField_BorderWidth), solid);
   }
 
   @include fd-focus() {
