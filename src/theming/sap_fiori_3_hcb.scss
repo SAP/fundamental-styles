@@ -102,4 +102,7 @@
   /* Calendar */
   --fdCalendar_Text_Shadow: 0 0 0.125rem #000;
   --fdCalendar_Active_Item_Border: solid 0.0625rem var(--sapList_SelectionBorderColor, #fff);
+
+  /* Form Header */
+  --fdFormHeader_Border_Width: calc(3 * var(--sapList_BorderWidth));
 }

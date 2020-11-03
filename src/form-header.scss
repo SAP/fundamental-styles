@@ -17,7 +17,7 @@ $fd-form-header-padding-x: 1rem !default;
   background-color: var(--sapGroup_TitleBackground);
   padding-left: $fd-form-header-padding-x;
   padding-right: $fd-form-header-padding-x;
-  box-shadow: 0 var(--sapList_BorderWidth) var(--sapList_BorderWidth) var(--sapGroup_TitleBorderColor);
+  box-shadow: 0 var(--fdFormHeader_Border_Width) var(--fdFormHeader_Border_Width) var(--sapGroup_TitleBorderColor);
 
   &__text {
     @include fd-reset();
@@ -25,7 +25,6 @@ $fd-form-header-padding-x: 1rem !default;
 
     font-family: var(--sapFontHeaderFamily);
     font-size: var(--sapFontHeader4Size);
-    font-weight: var(--sapFontHeaderWeight);
     color: var(--sapGroup_TitleTextColor);
   }
 }
