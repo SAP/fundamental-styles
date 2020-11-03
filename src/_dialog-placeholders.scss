@@ -25,6 +25,7 @@ $fd-dialog-overlay-color: rgba(0, 0, 0, 0.6); // Should be fade(var(--sapBlockLa
   display: flex;
   flex-direction: column;
   outline: none;
+  overflow: hidden;
   position: absolute;
   min-width: $fd-dialog-content-min-width;
   min-height: $fd-dialog-content-min-height;
@@ -51,6 +52,7 @@ $fd-dialog-overlay-color: rgba(0, 0, 0, 0.6); // Should be fade(var(--sapBlockLa
   height: 100vh;
   max-width: 100vw;
   max-height: 100vh;
+  border-radius: 0;
 }
 
 %dialog-title {
