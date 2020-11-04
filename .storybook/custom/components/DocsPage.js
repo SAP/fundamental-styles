@@ -43,7 +43,7 @@ const DocsPage = () => {
     const context = useContext(DocsContext);
 
     // do not display Dev or Visual stories in docs
-    if (context.kind === 'Visual' || /Dev/.test(context.kind)) {
+    if (context.kind === 'Visual' || 'Dev' || /Dev/.test(context.kind)) {
         return null;
     }
 
