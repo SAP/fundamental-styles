@@ -149,7 +149,8 @@ $title-toolbar-height: 2.75rem;
     max-width: 20rem;
     padding: 0.1875rem 0.375rem;
 
-    > * {
+    > *,
+    > .#{$fd-namespace}-button {
       display: block;
       text-align: left;
       width: auto;
