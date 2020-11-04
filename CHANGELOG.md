@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.39...v0.13.0-rc.40) (2020-11-04)
+
+
+### Bug Fixes
+
+* add delta theming for Radio and Checkbox ([#1846](https://github.com/SAP/fundamental-styles/issues/1846)) ([644c850](https://github.com/SAP/fundamental-styles/commit/644c850966605c3b38ff10938b031566f23bc0f3))
+
 ## [0.13.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.38...v0.13.0-rc.39) (2020-11-04)
 
 ## [0.13.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.37...v0.13.0-rc.38) (2020-11-04)
