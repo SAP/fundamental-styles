@@ -140,65 +140,60 @@ $title-toolbar-height: 2.75rem;
     background-color: var(--sapToolbar_SeparatorColor);
   }
 
-  &__overflow {
-    &.#{$fd-namespace}-popover {
-      .#{$block}__overflow__body {
-        @include fd-reset();
+  &__overflow__body {
+    @include fd-reset();
 
-        display: flex;
-        flex-direction: column;
-        max-width: 20rem;
-        padding: 0.1875rem 0.375rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    padding: 0.1875rem 0.375rem;
 
-        > * {
-          display: block;
-          text-align: left;
-          width: auto;
+    > * {
+      display: block;
+      text-align: left;
+      width: auto;
 
-          @include fd-rtl() {
-            text-align: right;
-          }
-        }
-        > .#{$block}__separator {
-          height: 0.0625rem;
-          margin: 0.375rem 0.1875rem;
-          width: auto;
-          background-color: var(--sapToolbar_SeparatorColor);
-        }
-
-        .#{$block}__overflow__label {
-          &.#{$fd-namespace}-label {
-            margin: 0.375rem 0;
-          }
-        }
-
-        .#{$block}__overflow__form-label {
-          &.#{$fd-namespace}-form-label {
-            margin: 0.625rem 0 0.125rem 0;
-          }
-        }
-        .#{$block}__overflow__form-label,
-        .#{$block}__overflow__label {
-          overflow: hidden;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-        }
+      @include fd-rtl() {
+        text-align: right;
       }
+    }
+
+    > .#{$block}__separator {
+      height: 0.0625rem;
+      margin: 0.375rem 0.1875rem;
+      width: auto;
+      background-color: var(--sapToolbar_SeparatorColor);
+    }
+
+    .#{$block}__overflow__label {
+      &.#{$fd-namespace}-label {
+        margin: 0.375rem 0;
+      }
+    }
+
+    .#{$block}__overflow__form-label {
+      &.#{$fd-namespace}-form-label {
+        margin: 0.625rem 0 0.125rem 0;
+      }
+    }
+
+    .#{$block}__overflow__form-label,
+    .#{$block}__overflow__label {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
   }
 
   &--cozy {
     height: $toolbar-height-cozy;
+
     .#{$block}__separator {
       height: $toolbar-separator-height-cozy;
     }
 
-    .#{$block}__overflow {
-      &.#{$fd-namespace}-popover {
-        .#{$block}__overflow__body {
-          padding: 0.25rem 0.5rem;
-        }
-      }
+    .#{$block}__overflow__body {
+      padding: 0.25rem 0.5rem;
     }
   }
 }
