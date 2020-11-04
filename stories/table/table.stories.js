@@ -6,7 +6,27 @@ export default {
         docs: {
             iframeHeight: 500
         },
-        components: ['button', 'form-label', 'fieldset', 'icon', 'link', 'object-status', 'table', 'toolbar', 'pagination', 'popover', 'list', 'toolbar', 'bar', 'dialog', 'input', 'input-group', 'multi-input', 'checkbox']
+        components: [
+            'button',
+            'form-label',
+            'fieldset',
+            'icon',
+            'link',
+            'object-status',
+            'table',
+            'toolbar',
+            'pagination',
+            'popover',
+            'list',
+            'toolbar',
+            'bar',
+            'dialog',
+            'input',
+            'input-group',
+            'multi-input',
+            'checkbox',
+            'select'
+        ]
     }
 };
 
@@ -582,7 +602,6 @@ export const withCheckboxCondensed = () => `
     </tbody>
 </table>
 `;
-
 
 export const withPagination = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
