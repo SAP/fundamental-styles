@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.36...v0.13.0-rc.37) (2020-11-04)
+
+
+### Features
+
+* introduce Feed List Item  ([#1755](https://github.com/SAP/fundamental-styles/issues/1755)) ([b4795ac](https://github.com/SAP/fundamental-styles/commit/b4795ac8254f9c7afd9dd333e266caa2feac146c))
+
 ## [0.13.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.35...v0.13.0-rc.36) (2020-11-03)
 
 
