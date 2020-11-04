@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.37...v0.13.0-rc.38) (2020-11-04)
+
+
+### Bug Fixes
+
+* add 2 new icons ([#1849](https://github.com/SAP/fundamental-styles/issues/1849)) ([9f54952](https://github.com/SAP/fundamental-styles/commit/9f54952ace38dca2979c676b6adf00b5398011dc))
+
 ## [0.13.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.36...v0.13.0-rc.37) (2020-11-04)
 
 
