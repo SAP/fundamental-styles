@@ -486,3 +486,8 @@ body.sb-show-main {
   margin-left: 30%;
   margin-right: 30%;
 }
+
+.fddocs-tile-example-border {
+  border: 1px dashed var(--sapTextColor) !important;
+  border-radius: 0.25rem;
+}
