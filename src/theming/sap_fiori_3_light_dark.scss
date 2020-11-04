@@ -53,9 +53,11 @@
 
   /* Radio */
   --fdRadio_Selected_Color: var(--sapSelectedColor);
+  --fdRadio_State_Border_Type: solid;
 
   /* Checkbox */
   --fdCheckbox_Selected_Color: var(--sapSelectedColor);
+  --fdCheckbox_State_Border_Type: solid;
 
   /* Dynamic Page Layout */
   --fdDynamicPage_Hover_Border_Bottom: none;

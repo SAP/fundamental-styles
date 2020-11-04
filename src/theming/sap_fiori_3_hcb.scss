@@ -53,9 +53,11 @@
 
   /* Radio */
   --fdRadio_Selected_Color: var(--sapTextColor);
+  --fdRadio_State_Border_Type: dashed;
 
   /* Checkbox */
   --fdCheckbox_Selected_Color: var(--sapTextColor);
+  --fdCheckbox_State_Border_Type: dashed;
 
   /* Dynamic Page Layout */
   --fdDynamicPage_Hover_Border_Bottom: solid 0.0625rem var(--sapObjectHeader_BorderColor);
