@@ -173,7 +173,7 @@ export const showMore = () => `<ul class="fd-feed-list" aria-label="Feed List It
 showMore.storyName = 'Show more';
 showMore.parameters = {
     docs: {
-        storyDescription: 'Feed list items can display a <i>MORE</i> link that can show more text (when/if it is truncated). When hovering over the link, the text is highlighted and underlined.'
+        storyDescription: 'Feed list items can display a <i>MORE</i> link that can show more text (when/if it is truncated). Truncation occurs when the text reaches 300 characters. When hovering over the link, the text is highlighted and underlined.'
     }
 };
 
