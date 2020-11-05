@@ -104,4 +104,7 @@
   /* Calendar */
   --fdCalendar_Text_Shadow: none;
   --fdCalendar_Active_Item_Border: none;
+
+  /* Form Header */
+  --fdFormHeader_Border_Width: var(--sapList_BorderWidth);
 }
