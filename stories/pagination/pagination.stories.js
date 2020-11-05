@@ -6,10 +6,10 @@ export default {
 ##Usage
 **Use pagination if:**
 
-- The user needs to search through several related items (over 30 is a good basis).
-- The content contains products that users can choose from.
-- You want to allow users to bookmark pages.
-- You want your content to be optimized for search. 
+- The user needs to search through several related items (over 30 is a good basis)
+- The content contains products that users can choose from
+- You want to allow users to bookmark pages
+- You want your content to be optimized for search
 
 ##Elements
 The pagination component consists of the following elements:
@@ -125,7 +125,7 @@ middlePage.storyName = 'Middle pages';
 middlePage.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `Pagination can display middle pages to increase searchability. The ellipsis will not only display at the end before the last page but also after the first page, showing three page numbers in the middle.
+        storyDescription: `Pagination can display middle pages to increase searchability. The ellipsis will not only display before the last page but also after the first page, showing three page numbers in the middle.
     ` }
 };
 
