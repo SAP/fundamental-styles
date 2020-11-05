@@ -1,0 +1,6834 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Grid List "More" Button 1`] = `
+<div
+  class="fd-grid-list"
+>
+  
+    
+  <div
+    class="fd-container"
+  >
+    
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12"
+      >
+        
+                
+        <div
+          class="fd-toolbar fd-toolbar--solid"
+        >
+          
+                    
+          <span>
+            Products
+          </span>
+          
+
+                    
+          <span
+            class="fd-toolbar__spacer"
+          />
+          
+
+                    
+          <button
+            aria-label="Sort"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--sort"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Filter"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--filter"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Group"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--group-2"
+            />
+            
+                    
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <span
+              class="fd-grid-list__item--counter"
+            >
+              10
+            </span>
+            
+
+                        
+            <button
+              aria-label="Navigation"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--navigation-right-arrow"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <button
+              aria-label="Edit"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--edit"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12"
+      >
+        
+                
+        <div
+          class="fd-grid-list__more"
+        >
+          
+                    
+          <h6
+            class="fd-title fd-title--h6 fd-grid-list__more--title"
+          >
+            More
+          </h6>
+          
+                    
+          <p
+            class="fd-grid-list__more--description"
+          >
+            [ 5 / 10 ]
+          </p>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Components/Grid List Delete mode 1`] = `
+<div
+  class="fd-grid-list fd-grid-list__mode--delete"
+>
+  
+    
+  <div
+    class="fd-container"
+  >
+    
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12"
+      >
+        
+                
+        <div
+          class="fd-toolbar fd-toolbar--solid"
+        >
+          
+                    
+          <span>
+            Products (420)
+          </span>
+          
+
+                    
+          <span
+            class="fd-toolbar__spacer"
+          />
+          
+
+                    
+          <button
+            aria-label="Sort"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--sort"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Filter"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--filter"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Group"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--group-2"
+            />
+            
+                    
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <span
+              class="fd-grid-list__item--counter"
+            >
+              10
+            </span>
+            
+
+                        
+            <button
+              aria-label="Navigation"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--navigation-right-arrow"
+              />
+              
+                        
+            </button>
+            
+
+                        
+            <button
+              aria-label="Delete"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--decline"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <button
+              aria-label="Edit"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--edit"
+              />
+              
+                        
+            </button>
+            
+
+                        
+            <button
+              aria-label="Delete"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--decline"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <button
+              aria-label="Delete"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--decline"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+                        
+            <button
+              aria-label="Delete"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--decline"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Components/Grid List Filter Infobar 1`] = `
+<div
+  class="fd-grid-list"
+>
+  
+    
+  <div
+    class="fd-container"
+  >
+    
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12"
+      >
+        
+                
+        <div
+          class="fd-toolbar fd-toolbar--solid"
+        >
+          
+                    
+          <span>
+            Products (420)
+          </span>
+          
+
+                    
+          <span
+            class="fd-toolbar__spacer"
+          />
+          
+
+                    
+          <button
+            aria-label="Sort"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--sort"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Filter"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--filter"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Group"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--group-2"
+            />
+            
+                    
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12"
+      >
+        
+                
+        <div
+          class="fd-toolbar fd-toolbar--info fd-toolbar--active"
+        >
+          
+                    Filtered by: Company (Company A, Company B)
+                    
+          <span
+            class="fd-toolbar__spacer"
+          />
+          
+                    
+          <button
+            aria-label="Cancel"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--decline"
+            />
+            
+                    
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <span
+              class="fd-grid-list__item--counter"
+            >
+              10
+            </span>
+            
+
+                        
+            <button
+              aria-label="Navigation"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--navigation-right-arrow"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <button
+              aria-label="Edit"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--edit"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Components/Grid List Footer 1`] = `
+<div
+  class="fd-grid-list"
+>
+  
+    
+  <div
+    class="fd-container"
+  >
+    
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12"
+      >
+        
+                
+        <div
+          class="fd-toolbar fd-toolbar--solid"
+        >
+          
+                    
+          <span>
+            Products (420)
+          </span>
+          
+
+                    
+          <span
+            class="fd-toolbar__spacer"
+          />
+          
+
+                    
+          <button
+            aria-label="Sort"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--sort"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Filter"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--filter"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Group"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--group-2"
+            />
+            
+                    
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <span
+              class="fd-grid-list__item--counter"
+            >
+              10
+            </span>
+            
+
+                        
+            <button
+              aria-label="Navigation"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--navigation-right-arrow"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <button
+              aria-label="Edit"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--edit"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12"
+      >
+        
+                
+        <div
+          class="fd-grid-list__footer"
+        >
+          
+                    This is footer text
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Components/Grid List Group 1`] = `
+<div
+  class="fd-grid-list"
+>
+  
+    
+  <div
+    class="fd-container"
+  >
+    
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12"
+      >
+        
+                
+        <div
+          class="fd-toolbar fd-toolbar--solid"
+        >
+          
+                    
+          <span>
+            Products (420)
+          </span>
+          
+
+                    
+          <span
+            class="fd-toolbar__spacer"
+          />
+          
+
+                    
+          <button
+            aria-label="Sort"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--sort"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Filter"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--filter"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Group"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--group-2"
+            />
+            
+                    
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12 fd-grid-list__group-header"
+      >
+        
+                Company: Company A
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <span
+              class="fd-grid-list__item--counter"
+            >
+              10
+            </span>
+            
+
+                        
+            <button
+              aria-label="Navigation"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--navigation-right-arrow"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company A
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <button
+              aria-label="Edit"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--edit"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company A
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-grid-list__group-header"
+      >
+        
+                Company: Company B
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Components/Grid List Highlight 1`] = `
+<div
+  class="fd-grid-list"
+>
+  
+    
+  <div
+    class="fd-container"
+  >
+    
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12"
+      >
+        
+                
+        <div
+          class="fd-toolbar fd-toolbar--solid"
+        >
+          
+                    
+          <span>
+            Products (420)
+          </span>
+          
+
+                    
+          <span
+            class="fd-toolbar__spacer"
+          />
+          
+
+                    
+          <button
+            aria-label="Sort"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--sort"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Filter"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--filter"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Group"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--group-2"
+            />
+            
+                    
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <span
+            class="fd-grid-list__highlight--success"
+          />
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <span
+              class="fd-grid-list__item--counter"
+            >
+              10
+            </span>
+            
+
+                        
+            <button
+              aria-label="Navigation"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--navigation-right-arrow"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <span
+            class="fd-grid-list__highlight--error"
+          />
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <button
+              aria-label="Edit"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--edit"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <span
+            class="fd-grid-list__highlight--warning"
+          />
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <span
+            class="fd-grid-list__highlight--neutral"
+          />
+          
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Components/Grid List Multi select mode 1`] = `
+<div
+  class="fd-grid-list fd-grid-list__mode--multi-select"
+>
+  
+    
+  <div
+    class="fd-container"
+  >
+    
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12"
+      >
+        
+                
+        <div
+          class="fd-toolbar fd-toolbar--solid"
+        >
+          
+                    
+          <span>
+            Products (420)
+          </span>
+          
+
+                    
+          <span
+            class="fd-toolbar__spacer"
+          />
+          
+
+                    
+          <button
+            aria-label="Sort"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--sort"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Filter"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--filter"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Group"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--group-2"
+            />
+            
+                    
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item fd-grid-list__item--link is-selected"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <input
+              checked=""
+              class="fd-checkbox fd-checkbox--compact"
+              id="Ai4ez611c"
+              type="checkbox"
+            />
+            
+                        
+            <label
+              class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox--label"
+              for="Ai4ez611c"
+            />
+            
+                        
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <span
+              class="fd-grid-list__item--counter"
+            >
+              10
+            </span>
+            
+
+                        
+            <button
+              aria-label="Navigation"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--navigation-right-arrow"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <input
+              class="fd-checkbox fd-checkbox--compact"
+              id="Ai4ez611c2"
+              type="checkbox"
+            />
+            
+                        
+            <label
+              class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox--label"
+              for="Ai4ez611c2"
+            />
+            
+
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <button
+              aria-label="Edit"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--edit"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item is-selected"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <input
+              checked=""
+              class="fd-checkbox fd-checkbox--compact"
+              id="Ai4ez611c3"
+              type="checkbox"
+            />
+            
+                        
+            <label
+              class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox--label"
+              for="Ai4ez611c3"
+            />
+            
+
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <span
+              class="fd-grid-list__item--counter"
+            >
+              5
+            </span>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <input
+              class="fd-checkbox fd-checkbox--compact"
+              id="Ai4ez611c4"
+              type="checkbox"
+            />
+            
+                        
+            <label
+              class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox--label"
+              for="Ai4ez611c4"
+            />
+            
+
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <span
+              class="fd-grid-list__item--counter"
+            >
+              5
+            </span>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Components/Grid List None mode 1`] = `
+<div
+  class="fd-grid-list"
+>
+  
+    
+  <div
+    class="fd-container"
+  >
+    
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12"
+      >
+        
+                
+        <div
+          class="fd-toolbar fd-toolbar--solid"
+        >
+          
+                    
+          <span>
+            Products (420)
+          </span>
+          
+
+                    
+          <span
+            class="fd-toolbar__spacer"
+          />
+          
+
+                    
+          <button
+            aria-label="Pool"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--sort"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Chart"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--filter"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Chart"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--group-2"
+            />
+            
+                    
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item fd-grid-list__item--link is-navigated"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <span
+              class="fd-grid-list__item--counter"
+            >
+              10
+            </span>
+            
+
+                        
+            <button
+              aria-label="Navigation"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--navigation-right-arrow"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+                                
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <button
+              aria-label="Edit"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--edit"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+                                
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item fd-grid-list__item--link"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <span
+              class="fd-grid-list__item--counter"
+            >
+              10
+            </span>
+            
+
+                        
+            <button
+              aria-label="Navigation"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--navigation-right-arrow"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+                                
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Components/Grid List Single select left mode 1`] = `
+<div
+  class="fd-grid-list fd-grid-list__mode--single-select-left"
+>
+  
+    
+  <div
+    class="fd-container"
+  >
+    
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12"
+      >
+        
+                
+        <div
+          class="fd-toolbar fd-toolbar--solid"
+        >
+          
+                    
+          <span>
+            Products (420)
+          </span>
+          
+
+                    
+          <span
+            class="fd-toolbar__spacer"
+          />
+          
+
+                    
+          <button
+            aria-label="Sort"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--sort"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Filter"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--filter"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Group"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--group-2"
+            />
+            
+                    
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <input
+              class="fd-radio fd-radio--compact"
+              id="pDidh1761"
+              name="singleSelectLeftRadio"
+              type="radio"
+            />
+            
+                        
+            <label
+              class="fd-radio__label fd-grid-list__radio--label"
+              for="pDidh1761"
+            />
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <span
+              class="fd-grid-list__item--counter"
+            >
+              10
+            </span>
+            
+
+                        
+            <button
+              aria-label="Navigation"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--navigation-right-arrow"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item is-selected"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <input
+              checked=""
+              class="fd-radio fd-radio--compact"
+              id="p1Didh1761"
+              name="singleSelectLeftRadio"
+              type="radio"
+            />
+            
+                        
+            <label
+              class="fd-radio__label fd-grid-list__radio--label"
+              for="p1Didh1761"
+            />
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <button
+              aria-label="Edit"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--edit"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <input
+              class="fd-radio fd-radio--compact"
+              id="p12Didh1761"
+              name="singleSelectLeftRadio"
+              type="radio"
+            />
+            
+                        
+            <label
+              class="fd-radio__label fd-grid-list__radio--label"
+              for="p12Didh1761"
+            />
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <span
+              class="fd-grid-list__item--counter"
+            >
+              5
+            </span>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <input
+              class="fd-radio fd-radio--compact"
+              id="p1x2Didh1761"
+              name="singleSelectLeftRadio"
+              type="radio"
+            />
+            
+                        
+            <label
+              class="fd-radio__label fd-grid-list__radio--label"
+              for="p1x2Didh1761"
+            />
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+                    
+          </div>
+          
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Components/Grid List Single select master mode 1`] = `
+<div
+  class="fd-grid-list fd-grid-list__mode--single-select-master"
+>
+  
+    
+  <div
+    class="fd-container"
+  >
+    
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12"
+      >
+        
+                
+        <div
+          class="fd-toolbar fd-toolbar--solid"
+        >
+          
+                    
+          <span>
+            Products (420)
+          </span>
+          
+
+                    
+          <span
+            class="fd-toolbar__spacer"
+          />
+          
+
+                    
+          <button
+            aria-label="Pool"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--sort"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Chart"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--filter"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Chart"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--group-2"
+            />
+            
+                    
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item fd-grid-list__item--link"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            class="fd-radio fd-radio--compact"
+            id="pDidh761"
+            name="singleSelectMasterRadio"
+            type="radio"
+          />
+          
+                    
+          <label
+            class="fd-radio__label fd-grid-list__radio--label"
+            for="pDidh761"
+          />
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <span
+              class="fd-grid-list__item--counter"
+            >
+              10
+            </span>
+            
+
+                        
+            <button
+              aria-label="Chart"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--navigation-right-arrow"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            class="fd-radio fd-radio--compact"
+            id="pDidh761123"
+            name="singleSelectMasterRadio"
+            type="radio"
+          />
+          
+                    
+          <label
+            class="fd-radio__label fd-grid-list__radio--label"
+            for="pDidh761123"
+          />
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <button
+              aria-label="Pool"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--edit"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+                                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item is-selected"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            checked=""
+            class="fd-radio fd-radio--compact"
+            id="pDidh7611234"
+            name="singleSelectMasterRadio"
+            type="radio"
+          />
+          
+                    
+          <label
+            class="fd-radio__label fd-grid-list__radio--label"
+            for="pDidh7611234"
+          />
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <span
+              class="fd-grid-list__item--counter"
+            >
+              5
+            </span>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            class="fd-radio fd-radio--compact"
+            id="pDidh761642"
+            name="singleSelectMasterRadio"
+            type="radio"
+          />
+          
+                    
+          <label
+            class="fd-radio__label fd-grid-list__radio--label"
+            for="pDidh761642"
+          />
+          
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Components/Grid List States 1`] = `
+<div
+  class="fd-grid-list"
+>
+  
+    
+  <div
+    class="fd-container"
+  >
+    
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12"
+      >
+        
+                
+        <div
+          class="fd-toolbar fd-toolbar--solid"
+        >
+          
+                    
+          <span>
+            Products (420)
+          </span>
+          
+
+                    
+          <span
+            class="fd-toolbar__spacer"
+          />
+          
+
+                    
+          <button
+            aria-label="Sort"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--sort"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Filter"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--filter"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Group"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--group-2"
+            />
+            
+                    
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12 fd-grid-list__group-header"
+      >
+        
+                State: Unread
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item fd-grid-list__item--state-unread"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <span
+              class="fd-grid-list__item--counter"
+            >
+              10
+            </span>
+            
+
+                        
+            <button
+              aria-label="Navigation"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--navigation-right-arrow"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-grid-list__group-header"
+      >
+        
+                State: Error
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item fd-grid-list__item--state-error"
+          tabindex="0"
+        >
+          
+                    
+          <span
+            class="fd-grid-list__highlight--error"
+          />
+          
+
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <button
+              aria-label="Edit"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--edit"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+                                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+
+                        
+            <div
+              class="fd-grid-list__item--state-actions"
+            >
+              
+                            
+              <span
+                class="fd-object-status fd-object-status--negative"
+              >
+                
+                                
+                <span
+                  class="fd-object-status__text"
+                >
+                  (Contains errors)
+                </span>
+                
+                            
+              </span>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-grid-list__group-header"
+      >
+        
+                State: Locked
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item fd-grid-list__item--state-locked"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+
+                        
+            <div
+              class="fd-grid-list__item--state-actions"
+            >
+              
+                            
+              <button
+                aria-label="Locked"
+                class="fd-button fd-button--compact fd-button--transparent"
+              >
+                
+                                
+                <i
+                  class="sap-icon--private"
+                />
+                
+                                Locked
+                            
+              </button>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-grid-list__group-header"
+      >
+        
+                State: Draft
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item fd-grid-list__item--state-draft"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+
+                        
+            <div
+              class="fd-grid-list__item--state-actions"
+            >
+              
+                            
+              <button
+                aria-label="Draft"
+                class="fd-button fd-button--compact fd-button--transparent"
+              >
+                
+                                Draft
+                            
+              </button>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+</div>
+`;

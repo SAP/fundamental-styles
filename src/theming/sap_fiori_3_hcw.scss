@@ -132,4 +132,7 @@
 
   /** Dialog */
   --fdDialogBackgroundOpacity: 0.8;
+
+  /* Grid List */
+  --fdGrid_List_Item_Hover_BoxShadow: 0 0 0 0.125rem var(--sapContent_ShadowColor);
 }

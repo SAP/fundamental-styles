@@ -504,3 +504,25 @@ body.sb-show-main {
   border: 1px dashed var(--sapTextColor) !important;
   border-radius: 0.25rem;
 }
+
+.grid-list-item-body-example {
+  display: flex;
+
+  .grid-list-item-body-example-avatar {
+    background-image: url('http://lorempixel.com/400/400/nature/4/');
+    margin-right: 1rem;
+  }
+
+  p {
+    margin: 0;
+
+    + div {
+      margin: 1rem 0;
+    }
+  }
+}
+
+[dir="rtl"] .grid-list-item-body-example .grid-list-item-body-example-avatar {
+  margin-right: 0;
+  margin-left: 1rem;
+}
