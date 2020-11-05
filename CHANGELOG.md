@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.40...v0.13.0-rc.41) (2020-11-05)
+
+
+### Features
+
+* add Form Header ([#1836](https://github.com/SAP/fundamental-styles/issues/1836)) ([8f62bf8](https://github.com/SAP/fundamental-styles/commit/8f62bf8da21e76119e3602352c0312fc38d9f50b))
+
 ## [0.13.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.39...v0.13.0-rc.40) (2020-11-04)
 
 
