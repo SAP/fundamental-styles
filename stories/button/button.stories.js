@@ -113,7 +113,7 @@ badgeOnButton.parameters = {
         storyDescription: `Button gets a badge in cases of collecting a number of items from various pages in order to
         trigger an action. <br/> 
         Currently the Emphasized, Standard, Ghost and Transparent type of buttons are recommended to be used with Badge. <br/>
-        <b>Badges can not contain more characters than 4</b>.`
+        <b>Badges cannot contain more characters than 4</b>.`
     }
 };
 
