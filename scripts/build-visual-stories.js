@@ -101,8 +101,8 @@ import * as stories from './${componentName}.stories.js';
 export default {
     title: 'Visual/${title}/${prettyCompName}'${dependentComps ? ',' : ''}
     ${
-dependentComps ?
-    `parameters: {
+    dependentComps ?
+        `parameters: {
         components: [${dependentComps}],
         theme: '${themeVal}'
     },
