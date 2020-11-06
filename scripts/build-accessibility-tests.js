@@ -4,40 +4,42 @@ const path = require('path');
 const srcPath = path.join(__dirname, '../stories');
 const rimraf = require('rimraf');
 
-console.info('Trying to clean/remove all accessibility tests. 🧪 🗑 ');
+console.info('Accessibility unit tests 🧪');
+console.info('  Trying to clean/remove all accessibility tests. 🗑');
 
 rimraf('**/*.accessibility.test.js', (rimRafError) => {
     if (rimRafError) {
-        console.error('Unable to clean all accessibility tests!! 🧪 ❌', rimRafError);
+        console.error('    Failed to clean all accessibility tests!! ❌ ', rimRafError);
     } else {
-        console.info('Removed all accessibility tests. 🧪 🗑 ✅');
+        console.info('    Removed all accessibility tests. ✅ ');
     }
 
-    console.info('Trying to build all accessibility tests. 🧪 🏗');
+    try {
+        console.info('  Trying to build all accessibility tests. 🏗');
 
-    const isComponentDirectory = (source) => {
-        const ignoredDirectories = ['utils', 'Docs'];
-        return lstatSync(source).isDirectory() && !ignoredDirectories.some(ignored => source.includes(ignored));
-    };
-
-    const componentDirs = readdirSync(srcPath).map(name => path.join(srcPath, name)).filter(isComponentDirectory).map(directory => {
-        return {
-            path: `${directory}/`,
-            fileNames: readdirSync(`${directory}/`)
+        const isComponentDirectory = (source) => {
+            const ignoredDirectories = ['utils', 'Docs'];
+            return lstatSync(source).isDirectory() && !ignoredDirectories.some(ignored => source.includes(ignored));
         };
-    });
 
-    // For every component directory.
-    componentDirs.map((directory) => {
-        // Loop through its files.
-        directory.fileNames.map(async(fileName) => {
-            // get only stories.js files
-            if (fileName.includes('.stories.js')) {
-                // Grab the component name
-                const componentName = fileName.substr(0, fileName.indexOf('.'));
+        const componentDirs = readdirSync(srcPath).map(name => path.join(srcPath, name)).filter(isComponentDirectory).map(directory => {
+            return {
+                path: `${directory}/`,
+                fileNames: readdirSync(`${directory}/`)
+            };
+        });
+
+        // For every component directory.
+        componentDirs.map((directory) => {
+            // Loop through its files.
+            directory.fileNames.map(async(fileName) => {
+                // get only stories.js files
+                if (fileName.includes('.stories.js')) {
+                    // Grab the component name
+                    const componentName = fileName.substr(0, fileName.indexOf('.'));
 
 
-                const fileContents =
+                    const fileContents =
 `import { axe } from '../../scripts/axe-unit-test';
 import { toHaveNoViolations } from 'jest-axe';
 import * as stories from './${componentName}.stories.js';
@@ -54,10 +56,15 @@ describe('${componentName} and all its variants', () => {
 });
 
 `;
-                // write the accessibility test file into the directory.
-                let testPath = path.join(directory.path, `${componentName}.accessibility.test.js`);
-                writeFileSync(testPath, fileContents);
-            }
+                    // write the accessibility test file into the directory.
+                    let testPath = path.join(directory.path, `${componentName}.accessibility.test.js`);
+                    writeFileSync(testPath, fileContents);
+                }
+            });
         });
-    });
+        console.info('    Built all accessibility tests. ✅');
+    } catch (error) {
+        console.error('    Failed to build all accessibility tests. ❌', error);
+
+    }
 });
