@@ -7,16 +7,16 @@ const traverse = require('@babel/traverse').default;
 const fs = require('fs');
 const rimraf = require('rimraf');
 
-console.info('Trying to clean/remove all visual stories. 🗑 ');
+console.info('Trying to clean/remove all visual stories. 👀 🗑 ');
 
 rimraf('**/*.visual.js', (rimRafError) => {
     if (rimRafError) {
-        console.error('Unable to clean all visual stories!! ❌', rimRafError);
+        console.error('Unable to clean all visual stories!! 👀 ❌', rimRafError);
     } else {
-        console.info('Removed all visual stories. 🗑 ✅');
+        console.info('Removed all visual stories. 👀 🗑 ✅');
     }
 
-    console.info('Trying to build all visual stories. 🏗');
+    console.info('Trying to build all visual stories. 👀 🏗');
 
     const isComponentDirectory = (source) => {
         const ignoredDirectories = ['utils', 'Docs'];
@@ -94,52 +94,52 @@ rimraf('**/*.visual.js', (rimRafError) => {
                         title
                     } = theme;
                     const fileContents =
-    `import { withThemeProvider } from '../../.storybook/custom/themeProvider.js';
-    import * as Case from 'case';
-    import * as stories from './${componentName}.stories.js';
-    
-    export default {
-        title: 'Visual/${title}/${prettyCompName}'${dependentComps ? ',' : ''}
-        ${
-    dependentComps ?
-        `parameters: {
-            components: [${dependentComps}],
-            theme: '${themeVal}'
-        },
-        decorators: [
-            withThemeProvider
-        ]` : ''
+`import { withThemeProvider } from '../../.storybook/custom/themeProvider.js';
+import * as Case from 'case';
+import * as stories from './${componentName}.stories.js';
+
+export default {
+    title: 'Visual/${title}/${prettyCompName}'${dependentComps ? ',' : ''}
+    ${
+dependentComps ?
+    `parameters: {
+        components: [${dependentComps}],
+        theme: '${themeVal}'
+    },
+    decorators: [
+        withThemeProvider
+    ]` : ''
 }
-    };
-    
-    const wrappedStory = (storyName, storyFn, direction) =>\`
-    <h2> \${Case.capital(storyName)} </h2>
-    <div dir="\${direction}">
-        \${storyFn()}
-    </div>
-    <br />
-    <hr />
-    <br />
-    <br />\`;
-    
-    export const ${visualStoryName} = () => {
-        let storyNames = Object.keys(stories).filter(story => story !== 'default' && story !== 'dev');
-        const allVisualStories = document.createElement('div');
-        allVisualStories.innerHTML = storyNames.map(function(eachStoryName) {
-            const eachStory = stories[eachStoryName];
-    
-            const eachStoryLTR = wrappedStory(eachStoryName, eachStory, 'ltr');
-    
-            if (eachStory && eachStory.parameters && eachStory.parameters.skipRTLSnapshot) return eachStoryLTR;
-    
-            const eachStoryRTL = wrappedStory(Case.capital(eachStoryName) + ' (Right to Left)', eachStory, 'rtl');
-    
-            return eachStoryLTR + eachStoryRTL;
-        }).join('');
-        return allVisualStories;
-    };
-    
-    `;
+};
+
+const wrappedStory = (storyName, storyFn, direction) =>\`
+<h2> \${Case.capital(storyName)} </h2>
+<div dir="\${direction}">
+    \${storyFn()}
+</div>
+<br />
+<hr />
+<br />
+<br />\`;
+
+export const ${visualStoryName} = () => {
+    let storyNames = Object.keys(stories).filter(story => story !== 'default' && story !== 'dev');
+    const allVisualStories = document.createElement('div');
+    allVisualStories.innerHTML = storyNames.map(function(eachStoryName) {
+        const eachStory = stories[eachStoryName];
+
+        const eachStoryLTR = wrappedStory(eachStoryName, eachStory, 'ltr');
+
+        if (eachStory && eachStory.parameters && eachStory.parameters.skipRTLSnapshot) return eachStoryLTR;
+
+        const eachStoryRTL = wrappedStory(Case.capital(eachStoryName) + ' (Right to Left)', eachStory, 'rtl');
+
+        return eachStoryLTR + eachStoryRTL;
+    }).join('');
+    return allVisualStories;
+};
+
+`;
                     // write the visual story file into the directory.
                     let visualPath = path.join(directory.path, `${componentName}-${themeVal}.visual.js`);
                     writeFileSync(visualPath, fileContents);
