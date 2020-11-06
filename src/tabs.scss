@@ -92,7 +92,7 @@ $block: #{$fd-namespace}-tabs;
   box-shadow: 0 0 0.25rem 0 fade(var(--sapContent_ShadowColor), 15), inset 0 -0.0625rem 0 0 var(--sapObjectHeader_BorderColor);
   background-color: var(--sapObjectHeader_Background);
   color: $fd-tabs-label-color;
-  border-color: var(--sapObjectHeader_BorderColor);
+  border-bottom: var(--fdTabs_Border_Bottom);
 
   &__count {
     @include fd-reset();
