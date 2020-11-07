@@ -16,22 +16,22 @@ Tabs should be ordered to create a visual hierarchy based on priority.
 
 export const primary = () => `
 <ul class="fd-tabs fd-tabs--l" role="tablist">
-    <li role="listitem" class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="fuCwV550" href="#fuCwV550" role="tab">
+    <li role="tab" class="fd-tabs__item">
+        <a class="fd-tabs__link" aria-controls="fuCwV550" href="#fuCwV550">
             <span class="fd-tabs__tag">
                 Link
             </span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="AiWfz165" aria-selected="true" href="#AiWfz165" role="tab">
+    <li role="tab" class="fd-tabs__item" aria-selected="true">
+        <a class="fd-tabs__link" aria-controls="AiWfz165" href="#AiWfz165">
             <span class="fd-tabs__tag">
                 Selected
             </span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="7ae0T849" href="#7ae0T849" role="tab">
+    <li role="tab" class="fd-tabs__item">
+        <a class="fd-tabs__link" aria-controls="7ae0T849" href="#7ae0T849">
             <span class="fd-tabs__tag">
                 Link
             </span>
@@ -57,24 +57,24 @@ primary.storyName = 'Default';
 
 export const tabWithCounters = () => `
 <ul class="fd-tabs fd-tabs--s fd-tabs--compact" role="tablist">
-    <li role="listitem" class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="d9vOir" href="#d9vOir" role="tab">
+    <li role="tab" class="fd-tabs__item" aria-selected="true">
+        <a class="fd-tabs__link" aria-controls="d9vOir" href="#d9vOir">
             <p class="fd-tabs__count">13</p>
             <span class="fd-tabs__tag">
                 Link
             </span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="bSj6ft" aria-selected="true" href="#bSj6ft" role="tab">
+    <li role="tab" class="fd-tabs__item">
+        <a class="fd-tabs__link" aria-controls="bSj6ft" href="#bSj6ft">
             <p class="fd-tabs__count">1</p>
             <span class="fd-tabs__tag">
                 Selected
             </span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="VrHfHi" href="#VrHfHi" role="tab">
+    <li role="tab" class="fd-tabs__item">
+        <a class="fd-tabs__link" aria-controls="VrHfHi" href="#VrHfHi">
             <p class="fd-tabs__count">97</p>
             <span class="fd-tabs__tag">
                 Link
@@ -147,24 +147,24 @@ navTab.parameters = {
 
 export const iconOnly = () => `
 <ul class="fd-tabs fd-tabs--l fd-tabs--icon-only" role="tablist">
-    <li role="listitem" class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="pliA92" href="#pliA92" role="tab">
+    <li role="tab" class="fd-tabs__item">
+        <a class="fd-tabs__link" aria-controls="pliA92" href="#pliA92">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
                 <p class="fd-tabs__count">12</p>
             </span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item">
-      <a class="fd-tabs__link" aria-controls="ZAN8Hd" aria-selected="true" href="#ZAN8Hd" role="tab">
+    <li role="tab" aria-selected="true" class="fd-tabs__item">
+      <a class="fd-tabs__link" aria-controls="ZAN8Hd" href="#ZAN8Hd">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
                 <p class="fd-tabs__count">15</p>
             </span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="QrQ5Cl" href="#QrQ5Cl" role="tab">
+    <li role="tab" class="fd-tabs__item">
+        <a class="fd-tabs__link" aria-controls="QrQ5Cl" href="#QrQ5Cl">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
                 <p class="fd-tabs__count">1</p>
@@ -196,24 +196,24 @@ iconOnly.parameters = {
 
 export const compactIconOnly = () => `
 <ul class="fd-tabs fd-tabs--s fd-tabs--icon-only fd-tabs--compact" role="tablist">
-    <li role="listitem" class="fd-tabs__item fd-tabs__item--icon-only">
-        <a class="fd-tabs__link" aria-controls="0bT4aB" href="#0bT4aB" role="tab">
+    <li role="tab" class="fd-tabs__item fd-tabs__item--icon-only">
+        <a class="fd-tabs__link" aria-controls="0bT4aB" href="#0bT4aB">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
                 <p class="fd-tabs__count">5</p>
             </span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item">
-      <a class="fd-tabs__link" aria-controls="kzRyN3" aria-selected="true" href="#kzRyN3" role="tab">
+    <li role="tab" class="fd-tabs__item" aria-selected="true">
+      <a class="fd-tabs__link" aria-controls="kzRyN3" href="#kzRyN3">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
                 <p class="fd-tabs__count">78</p>
             </span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="f2epu6" href="#f2epu6" role="tab">
+    <li role="tab" class="fd-tabs__item">
+        <a class="fd-tabs__link" aria-controls="f2epu6" href="#f2epu6">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
                 <p class="fd-tabs__count">43</p>
@@ -240,8 +240,8 @@ export const compactIconOnly = () => `
 
 export const processMode = () => `
 <ul class="fd-tabs fd-tabs--l fd-tabs--process" role="tablist">
-    <li role="listitem" class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="NoQLy6" href="#NoQLy6" role="tab">
+    <li role="tab" class="fd-tabs__item">
+        <a class="fd-tabs__link" aria-controls="NoQLy6" href="#NoQLy6">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
             </span>
@@ -252,8 +252,8 @@ export const processMode = () => `
         </a>
         <span class="fd-tabs__process-icon"></span>
     </li>
-    <li role="listitem" class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="h4yBDR" href="#h4yBDR" role="tab">
+    <li role="tab" class="fd-tabs__item">
+        <a class="fd-tabs__link" aria-controls="h4yBDR" href="#h4yBDR">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
             </span>
@@ -264,8 +264,8 @@ export const processMode = () => `
         </a>
         <span class="fd-tabs__process-icon"></span>
     </li>
-    <li role="listitem" class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="nd1EMQ" href="#nd1EMQ" role="tab">
+    <li role="tab" class="fd-tabs__item">
+        <a class="fd-tabs__link" aria-controls="nd1EMQ" href="#nd1EMQ">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
             </span>
@@ -296,8 +296,8 @@ export const processMode = () => `
 
 export const compactProcessMode = () => `
 <ul class="fd-tabs fd-tabs--s fd-tabs--process fd-tabs--compact" role="tablist">
-    <li role="listitem" class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="LHsxsZ" href="#LHsxsZ" role="tab">
+    <li role="tab" class="fd-tabs__item">
+        <a class="fd-tabs__link" aria-controls="LHsxsZ" href="#LHsxsZ">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
             </span>
@@ -308,8 +308,8 @@ export const compactProcessMode = () => `
         </a>
         <span class="fd-tabs__process-icon"></span>
     </li>
-    <li role="listitem" class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="ZQvAjG" href="#ZQvAjG" role="tab">
+    <li role="tab" class="fd-tabs__item">
+        <a class="fd-tabs__link" aria-controls="ZQvAjG" href="#ZQvAjG">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
             </span>
@@ -320,8 +320,8 @@ export const compactProcessMode = () => `
         </a>
         <span class="fd-tabs__process-icon"></span>
     </li>
-    <li role="listitem" class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="wdqPV9" href="#wdqPV9" role="tab">
+    <li role="tab" class="fd-tabs__item">
+        <a class="fd-tabs__link" aria-controls="wdqPV9" href="#wdqPV9">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
             </span>
@@ -349,8 +349,8 @@ export const compactProcessMode = () => `
 
 export const filterMode = () => `
 <ul class="fd-tabs fd-tabs--l fd-tabs--filter" role="tablist">
-    <li role="listitem" class="fd-tabs__item fd-tabs__item--header">
-        <a class="fd-tabs__link" aria-controls="5ZkDVE" href="#5ZkDVE" role="tab">
+    <li role="tab" class="fd-tabs__item fd-tabs__item--header">
+        <a class="fd-tabs__link" aria-controls="5ZkDVE" href="#5ZkDVE">
             <span class="fd-tabs__header">
                 <span class="fd-tabs__counter-header">100</span>
                 <span class="fd-tabs__label">products</span>
@@ -358,8 +358,8 @@ export const filterMode = () => `
         </a>
     </li>
     <div class="fd-tabs__separator"></div>
-    <li role="listitem" class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="znvnwr" href="#znvnwr" role="tab">
+    <li role="tab" class="fd-tabs__item">
+        <a class="fd-tabs__link" aria-controls="znvnwr" href="#znvnwr">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
                 <p class="fd-tabs__count">35</p>
@@ -367,8 +367,8 @@ export const filterMode = () => `
             <span class="fd-tabs__label">Description</span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="oyYpL7" href="#oyYpL7" role="tab">
+    <li role="tab" class="fd-tabs__item">
+        <a class="fd-tabs__link" aria-controls="oyYpL7" href="#oyYpL7">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
                 <p class="fd-tabs__count">5</p>
@@ -376,8 +376,8 @@ export const filterMode = () => `
             <span class="fd-tabs__label">Description</span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="gRpu9H" href="#gRpu9H" role="tab">
+    <li role="tab" class="fd-tabs__item">
+        <a class="fd-tabs__link" aria-controls="gRpu9H" href="#gRpu9H">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
                 <p class="fd-tabs__count">60</p>
@@ -406,8 +406,8 @@ export const filterMode = () => `
 
 export const compactFilterMode = () => `
 <ul class="fd-tabs fd-tabs--s fd-tabs--filter fd-tabs--compact" role="tablist">
-    <li role="listitem" class="fd-tabs__item fd-tabs__item--header">
-        <a class="fd-tabs__link" aria-controls="YETAv8" href="#YETAv8" role="tab">
+    <li role="tab" class="fd-tabs__item fd-tabs__item--header">
+        <a class="fd-tabs__link" aria-controls="YETAv8" href="#YETAv8">
             <span class="fd-tabs__header">
                 <span class="fd-tabs__counter-header">150</span>
                 <span class="fd-tabs__label">products</span>
@@ -415,8 +415,8 @@ export const compactFilterMode = () => `
         </a>
     </li>
     <div class="fd-tabs__separator"></div>
-    <li role="listitem" class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="eu3WeD" href="#eu3WeD" role="tab">
+    <li role="tab" class="fd-tabs__item">
+        <a class="fd-tabs__link" aria-controls="eu3WeD" href="#eu3WeD">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
                 <p class="fd-tabs__count">3</p>
@@ -424,8 +424,8 @@ export const compactFilterMode = () => `
             <span class="fd-tabs__label">Description</span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="VqJcYO" href="#VqJcYO" role="tab">
+    <li role="tab" class="fd-tabs__item">
+        <a class="fd-tabs__link" aria-controls="VqJcYO" href="#VqJcYO">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
                 <p class="fd-tabs__count">40</p>
@@ -433,8 +433,8 @@ export const compactFilterMode = () => `
             <span class="fd-tabs__label">Description</span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item">
-        <a class="fd-tabs__link" aria-controls="ceoDu7" href="#ceoDu7" role="tab">
+    <li role="tab" class="fd-tabs__item">
+        <a class="fd-tabs__link" aria-controls="ceoDu7" href="#ceoDu7">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
                 <p class="fd-tabs__count">107</p>
@@ -463,40 +463,40 @@ export const compactFilterMode = () => `
 
 export const semanticMode = () => `
 <ul class="fd-tabs fd-tabs--s fd-tabs--icon-only fd-tabs--compact" role="tablist">
-    <li role="listitem" class="fd-tabs__item fd-tabs__item--success">
-        <a class="fd-tabs__link" aria-controls="XTsSDD" href="#XTsSDD" role="tab">
+    <li role="tab" class="fd-tabs__item fd-tabs__item--success">
+        <a class="fd-tabs__link" aria-controls="XTsSDD" href="#XTsSDD">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
                 <p class="fd-tabs__count">54</p>
             </span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item fd-tabs__item--warning">
-      <a class="fd-tabs__link" aria-controls="DomvG6" aria-selected="true" href="#DomvG6" role="tab">
+    <li role="tab" class="fd-tabs__item fd-tabs__item--warning" aria-selected="true">
+      <a class="fd-tabs__link" aria-controls="DomvG6"  href="#DomvG6">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
                 <p class="fd-tabs__count">71</p>
             </span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item fd-tabs__item--information">
-        <a class="fd-tabs__link" aria-controls="DqIStt" href="#DqIStt" role="tab">
+    <li role="tab" class="fd-tabs__item fd-tabs__item--information">
+        <a class="fd-tabs__link" aria-controls="DqIStt" href="#DqIStt">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
                 <p class="fd-tabs__count">23</p>
             </span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item fd-tabs__item--error">
-        <a class="fd-tabs__link" aria-controls="bRCSzS" href="#bRCSzS" role="tab">
+    <li role="tab" class="fd-tabs__item fd-tabs__item--error">
+        <a class="fd-tabs__link" aria-controls="bRCSzS" href="#bRCSzS">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
                 <p class="fd-tabs__count">4</p>
             </span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item fd-tabs__item--neutral">
-        <a class="fd-tabs__link" aria-controls="xMN6I9" href="#xMN6I9" role="tab">
+    <li role="tab" class="fd-tabs__item fd-tabs__item--neutral">
+        <a class="fd-tabs__link" aria-controls="xMN6I9" href="#xMN6I9">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
                 <p class="fd-tabs__count">100</p>
@@ -527,8 +527,8 @@ export const semanticMode = () => `
 
 export const semanticFilterMode = () => `
 <ul class="fd-tabs fd-tabs--l fd-tabs--filter" role="tablist">
-    <li role="listitem" class="fd-tabs__item fd-tabs__item--header">
-        <a class="fd-tabs__link" aria-controls="5ZkDVE" href="#5ZkDVE" role="tab">
+    <li role="tab" class="fd-tabs__item fd-tabs__item--header">
+        <a class="fd-tabs__link" aria-controls="5ZkDVE" href="#5ZkDVE">
             <span class="fd-tabs__header">
                 <span class="fd-tabs__counter-header">150</span>
                 <span class="fd-tabs__label">products</span>
@@ -536,8 +536,8 @@ export const semanticFilterMode = () => `
         </a>
     </li>
     <div class="fd-tabs__separator"></div>
-    <li role="listitem" class="fd-tabs__item fd-tabs__item--success">
-        <a class="fd-tabs__link" aria-controls="znvnwr" href="#znvnwr" role="tab">
+    <li role="tab" class="fd-tabs__item fd-tabs__item--success">
+        <a class="fd-tabs__link" aria-controls="znvnwr" href="#znvnwr">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
                 <p class="fd-tabs__count">35</p>
@@ -545,8 +545,8 @@ export const semanticFilterMode = () => `
             <span class="fd-tabs__label">Success</span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item fd-tabs__item--warning">
-        <a class="fd-tabs__link" aria-controls="oyYpL7" href="#oyYpL7" role="tab">
+    <li role="tab" class="fd-tabs__item fd-tabs__item--warning">
+        <a class="fd-tabs__link" aria-controls="oyYpL7" href="#oyYpL7">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
                 <p class="fd-tabs__count">5</p>
@@ -554,8 +554,8 @@ export const semanticFilterMode = () => `
             <span class="fd-tabs__label">Warning</span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item fd-tabs__item--information">
-        <a class="fd-tabs__link" aria-controls="gRpu9H" href="#gRpu9H" role="tab">
+    <li role="tab" class="fd-tabs__item fd-tabs__item--information">
+        <a class="fd-tabs__link" aria-controls="gRpu9H" href="#gRpu9H">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
                 <p class="fd-tabs__count">60</p>
@@ -563,8 +563,8 @@ export const semanticFilterMode = () => `
             <span class="fd-tabs__label">Information</span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item fd-tabs__item--error">
-        <a class="fd-tabs__link" aria-controls="gRpu1A" href="#gRpu1A" role="tab">
+    <li role="tab" class="fd-tabs__item fd-tabs__item--error">
+        <a class="fd-tabs__link" aria-controls="gRpu1A" href="#gRpu1A">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
                 <p class="fd-tabs__count">50</p>
@@ -596,40 +596,40 @@ export const semanticFilterMode = () => `
 
 export const semanticInline = () => `
 <ul class="fd-tabs fd-tabs--l" role="tablist">
-    <li role="listitem" class="fd-tabs__item fd-tabs__item--error">
-        <a class="fd-tabs__link" aria-controls="5abyKZ" href="#5abyKZ" role="tab">
+    <li role="tab" class="fd-tabs__item fd-tabs__item--error">
+        <a class="fd-tabs__link" aria-controls="5abyKZ" href="#5abyKZ">
             <p class="fd-tabs__count">13</p>
             <span class="fd-tabs__tag">
                 Error
             </span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item fd-tabs__item--information">
-        <a class="fd-tabs__link" aria-controls="wupC7s" aria-selected="true" href="#wupC7s" role="tab">
+    <li role="tab" aria-selected="true" class="fd-tabs__item fd-tabs__item--information">
+        <a class="fd-tabs__link" aria-controls="wupC7s" href="#wupC7s">
             <p class="fd-tabs__count">24</p>
             <span class="fd-tabs__tag">
                 Information
             </span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item fd-tabs__item--warning">
-        <a class="fd-tabs__link" aria-controls="XlKpQM" href="#XlKpQM" role="tab">
+    <li role="tab" class="fd-tabs__item fd-tabs__item--warning">
+        <a class="fd-tabs__link" aria-controls="XlKpQM" href="#XlKpQM">
             <p class="fd-tabs__count">31</p>
             <span class="fd-tabs__tag">
                 Warning
             </span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item fd-tabs__item--success">
-        <a class="fd-tabs__link" aria-controls="3dUJAI" href="#3dUJAI" role="tab">
+    <li role="tab" class="fd-tabs__item fd-tabs__item--success">
+        <a class="fd-tabs__link" aria-controls="3dUJAI" href="#3dUJAI">
             <p class="fd-tabs__count">65</p>
             <span class="fd-tabs__tag">
                 Success
             </span>
         </a>
     </li>
-    <li role="listitem" class="fd-tabs__item fd-tabs__item--neutral">
-        <a class="fd-tabs__link" aria-controls="TWlAup" href="#TWlAup" role="tab">
+    <li role="tab" class="fd-tabs__item fd-tabs__item--neutral">
+        <a class="fd-tabs__link" aria-controls="TWlAup" href="#TWlAup">
             <p class="fd-tabs__count">159</p>
             <span class="fd-tabs__tag">
                 Neutral
