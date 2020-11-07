@@ -43,10 +43,10 @@ export const defaultAndCompactSizes = () => `<div style="display:flex;justify-co
                 </button>
               </div>
               <div class="fd-calendar__action">
-                <button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">September</button>
+                <button class="fd-button fd-button--transparent" aria-expanded="false">September</button>
               </div>
               <div class="fd-calendar__action">
-                <button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">2018</button>
+                <button class="fd-button fd-button--transparent" aria-expanded="false">2018</button>
               </div>
               <div class="fd-calendar__action">
                 <button class="fd-button fd-button--transparent" aria-label="Next"> 
@@ -235,10 +235,10 @@ export const defaultAndCompactSizes = () => `<div style="display:flex;justify-co
                 </button>
               </div>
               <div class="fd-calendar__action">
-                <button class="fd-button fd-button--transparent fd-button--compact" aria-selected="false" aria-expanded="false">September</button>
+                <button class="fd-button fd-button--transparent fd-button--compact" aria-expanded="false">September</button>
               </div>
               <div class="fd-calendar__action">
-                <button class="fd-button fd-button--transparent fd-button--compact" aria-selected="false" aria-expanded="false">2018</button>
+                <button class="fd-button fd-button--transparent fd-button--compact" aria-expanded="false">2018</button>
               </div>
               <div class="fd-calendar__action">
                 <button class="fd-button fd-button--transparent fd-button--compact" aria-label="Next">
@@ -435,10 +435,10 @@ export const todaySelectionButton = () => `<div class="fd-docs-date-picker" styl
               </button>
             </div>
             <div class="fd-calendar__action">
-              <button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">September</button>
+              <button class="fd-button fd-button--transparent" aria-expanded="false">September</button>
             </div>
             <div class="fd-calendar__action">
-              <button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">2018</button>
+              <button class="fd-button fd-button--transparent" aria-expanded="false">2018</button>
             </div>
             <div class="fd-calendar__action">
               <button class="fd-button fd-button--transparent" aria-label="Next"> 
@@ -651,10 +651,10 @@ export const todayNavigationButton = () => `<div class="fd-docs-date-picker" sty
               </button>
             </div>
             <div class="fd-calendar__action">
-              <button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">September</button>
+              <button class="fd-button fd-button--transparent" aria-expanded="false">September</button>
             </div>
             <div class="fd-calendar__action">
-              <button class="fd-button fd-button--transparent" aria-selected="false" aria-expanded="false">2018</button>
+              <button class="fd-button fd-button--transparent" aria-expanded="false">2018</button>
             </div>
             <div class="fd-calendar__action">
               <button class="fd-button fd-button--transparent" aria-label="Next"> 
@@ -663,7 +663,6 @@ export const todayNavigationButton = () => `<div class="fd-docs-date-picker" sty
             </div>
             <div class="fd-calendar__action">
               <button class="fd-button fd-button--transparent"
-                aria-selected="false"
                 aria-expanded="false"
                 onClick="
                   setValue('todayNavigationDateInput', new Date('9/6/2018').toLocaleDateString('en-US'));
