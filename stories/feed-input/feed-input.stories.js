@@ -20,7 +20,7 @@ export default {
     }
 };
 
-export const standard = () => `    <div class="fd-feed-input" 
+export const standard = () => `<div class="fd-feed-input" 
          role="region" 
          aria-label="Feed input empty example">
         <div class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb" 
@@ -31,7 +31,7 @@ export const standard = () => `    <div class="fd-feed-input"
         <textarea class="fd-textarea fd-feed-input__textarea"  
                   placeholder="Post something here" 
                   aria-label="Feed message" 
-                  aria-required
+                  required
                   rows="1"></textarea>
         <button class="fd-button fd-feed-input__submit-button" 
                 aria-label="Send"  
@@ -62,7 +62,7 @@ export const notEmpty = () => `    <div class="fd-feed-input"
         <textarea class="fd-textarea fd-feed-input__textarea" 
                   placeholder="Post something here"
                   aria-label="Feed message" 
-                  aria-required 
+                  required 
                   rows="1">"When there is text, the submit button becomes active.</textarea>
         <button class="fd-button 
                 fd-feed-input__submit-button" 
@@ -93,7 +93,7 @@ export const disabled = () => `    <div class="fd-feed-input is-disabled"
         <textarea class="fd-textarea fd-feed-input__textarea"  
                   placeholder="Post something here" 
                   aria-label="Feed message" 
-                  aria-required
+                  required
                   rows="1"
                   aria-disabled="true" 
                   disabled>Disabled</textarea>
@@ -121,7 +121,7 @@ export const withoutUserImage = () => `    <div class="fd-feed-input"
         <textarea class="fd-textarea fd-feed-input__textarea"  
                   placeholder="Post something here" 
                   aria-label="Feed message" 
-                  aria-required
+                  required
                   rows="1">Without user image</textarea>
         <button class="fd-button fd-feed-input__submit-button" 
                 aria-label="Send"  
@@ -149,7 +149,7 @@ export const placeholderImage = () => `    <div class="fd-feed-input"
         <textarea class="fd-textarea fd-feed-input__textarea"  
                   placeholder="Post something here" 
                   aria-label="Feed message" 
-                  aria-required
+                  required
                   rows="1">With generic user image</textarea>
         <button class="fd-button fd-feed-input__submit-button" 
                 aria-label="Send"  
@@ -178,7 +178,7 @@ export const inputGrowth = () => `    <div class="fd-feed-input"
         <textarea class="fd-textarea fd-feed-input__textarea" 
                   placeholder="Post something here"
                   aria-label="Feed" 
-                  aria-required 
+                  required 
                   rows="4">With every line\n"textarea" grows upward\nuntil it reaches\nthe max height</textarea>
         <button class="fd-button fd-feed-input__submit-button" 
                 aria-label="Send"  
@@ -208,7 +208,7 @@ export const overMaxHeight = () => `    <div class="fd-feed-input"
         <textarea class="fd-textarea fd-feed-input__textarea"
                   placeholder="Post something here" 
                   aria-label="Feed message" 
-                  aria-required 
+                  required 
                   rows="18">X\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX</textarea>
         <button class="fd-button fd-feed-input__submit-button" 
                 aria-label="Send" 
