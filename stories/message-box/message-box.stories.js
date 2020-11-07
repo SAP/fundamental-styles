@@ -52,7 +52,7 @@ Note: Include two action buttons in the message box when the user's decision is 
 const messageBoxHeight = 200;
 
 export const structure = () => `<div class="fd-message-box-docs-static fd-message-box fd-message-box--active">
-    <div class="fd-message-box__content">
+    <section class="fd-message-box__content">
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -77,7 +77,7 @@ export const structure = () => `<div class="fd-message-box-docs-static fd-messag
                 </div>
             </div>
         </footer>
-    </div>
+    </section>
 </div>
 `;
 
@@ -93,7 +93,7 @@ The default message box displays a small dialog with a title, message text and a
 };
 
 export const types = () => `<div class="fd-message-box-docs-static fd-message-box fd-message-box--confirmation fd-message-box--active">
-    <div class="fd-message-box__content">
+    <section class="fd-message-box__content">
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -118,13 +118,13 @@ export const types = () => `<div class="fd-message-box-docs-static fd-message-bo
                 </div>
             </div>
         </footer>
-    </div>
+    </section>
 </div>
 
 <br><br><br>
 
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--error fd-message-box--active">
-    <div class="fd-message-box__content">
+    <section class="fd-message-box__content">
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -144,13 +144,13 @@ export const types = () => `<div class="fd-message-box-docs-static fd-message-bo
                 </div>
             </div>
         </footer>
-    </div>
+    </section>
 </div>
 
 <br><br><br>
 
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--success fd-message-box--active">
-    <div class="fd-message-box__content">
+    <section class="fd-message-box__content">
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -170,13 +170,13 @@ export const types = () => `<div class="fd-message-box-docs-static fd-message-bo
                 </div>
             </div>
         </footer>
-    </div>
+    </section>
 </div>
 
 <br><br><br>
 
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--warning fd-message-box--active">
-    <div class="fd-message-box__content">
+    <section class="fd-message-box__content">
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -196,13 +196,13 @@ export const types = () => `<div class="fd-message-box-docs-static fd-message-bo
                 </div>
             </div>
         </footer>
-    </div>
+    </section>
 </div>
 
 <br><br><br>
 
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--information fd-message-box--active">
-    <div class="fd-message-box__content">
+    <section class="fd-message-box__content">
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -222,7 +222,7 @@ export const types = () => `<div class="fd-message-box-docs-static fd-message-bo
                 </div>
             </div>
         </footer>
-    </div>
+    </section>
 </div>
 `;
 types.storyName = 'Semantic types';
@@ -249,7 +249,7 @@ Information | \`fd-message-box--information\` | Information messages provide inf
 export const noIcon = () =>
     `
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--no-icon fd-message-box--success fd-message-box--active">
-    <div class="fd-message-box__content">
+    <section class="fd-message-box__content">
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -272,13 +272,13 @@ export const noIcon = () =>
                 </div>
             </div>
         </footer>
-    </div>
+    </section>
 </div>
 
 <br><br><br>
 
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--error fd-message-box--no-icon fd-message-box--active">
-    <div class="fd-message-box__content">
+    <section class="fd-message-box__content">
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -298,7 +298,7 @@ export const noIcon = () =>
                 </div>
             </div>
         </footer>
-    </div>
+    </section>
 </div>
 `;
 
@@ -315,7 +315,7 @@ noIcon.parameters = {
 export const responsive = () =>
     `
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--information fd-message-box--active">
-    <div class="fd-message-box__content fd-message-box__content--s">
+    <section class="fd-message-box__content fd-message-box__content--s">
         <header class="fd-bar fd-bar--cozy fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -338,13 +338,13 @@ export const responsive = () =>
                 </div>
             </div>
         </footer>
-    </div>
+    </section>
 </div>
 
 <br><br><br>
 
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--error fd-message-box--active">
-    <div class="fd-message-box__content fd-message-box__content--m">
+    <section class="fd-message-box__content fd-message-box__content--m">
         <header class="fd-bar fd-bar--cozy fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -364,14 +364,14 @@ export const responsive = () =>
                 </div>
             </div>
         </footer>
-    </div>
+    </section>
 </div>
 
 
 <br><br><br>
 
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--success fd-message-box--active">
-    <div class="fd-message-box__content fd-message-box__content--l">
+    <section class="fd-message-box__content fd-message-box__content--l">
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -391,13 +391,13 @@ export const responsive = () =>
                 </div>
             </div>
         </footer>
-    </div>
+    </section>
 </div>
 
 <br><br><br>
 
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--warning fd-message-box--active">
-    <div class="fd-message-box__content fd-message-box__content--xl">
+    <section class="fd-message-box__content fd-message-box__content--xl">
         <header class="fd-bar fd-bar--header fd-message-box__header">
              <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -417,7 +417,7 @@ export const responsive = () =>
                 </div>
             </div>
         </footer>
-    </div>
+    </section>
 </div>
 `;
 
