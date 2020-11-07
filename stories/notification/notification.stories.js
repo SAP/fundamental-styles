@@ -201,35 +201,31 @@ Notifications can display error alerts by adding the <code>fd-message-strip fd-m
 
 export const notificationGroup = () => `<div class="fd-notification fd-notification--group">
     <ul class="fd-tabs fd-tabs--l fd-notification--tabs" role="tablist">
-        <li role="listitem" class="fd-tabs__item">
+        <li role="tab" class="fd-tabs__item" aria-selected="true">
             <a 
-                class="fd-tabs__link" 
-                aria-controls="notifV550" 
-                href="#notifV550" 
-                aria-selected="true" 
-                role="tab">
+                class="fd-tabs__link"
+                aria-controls="notifV550"
+                href="#notifV550">
                 <span class="fd-tabs__tag">
                     By Date
                 </span>
             </a>
         </li>
-        <li role="listitem" class="fd-tabs__item">
+        <li role="tab" class="fd-tabs__item">
             <a 
-                class="fd-tabs__link" 
                 aria-controls="notifV551" 
-                href="#notifV551"
-                role="tab">
+                class="fd-tabs__link" 
+                href="#notifV551">
                 <span class="fd-tabs__tag">
                     By Type
                 </span>
             </a>
         </li>
-        <li role="listitem" class="fd-tabs__item">
-            <a 
+        <li role="tab" class="fd-tabs__item">
+            <a
+                aria-controls="notifV552"
                 class="fd-tabs__link" 
-                aria-controls="notifV552" 
-                href="#notifV552" 
-                role="tab">
+                href="#notifV552">
                 <span class="fd-tabs__tag">
                     By Priority
                 </span>
@@ -492,35 +488,31 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
 <div style="heigt: 200px; max-width: 20rem">
     <div class="fd-notification fd-notification--mobile fd-notification--group">
         <ul class="fd-tabs fd-tabs--l fd-notification--tabs" role="tablist">
-            <li role="listitem" class="fd-tabs__item">
+            <li role="tab" aria-selected="true" class="fd-tabs__item">
                 <a 
                     class="fd-tabs__link" 
-                    aria-selected="true"
                     aria-controls="notifP300" 
-                    href="#notifP300"  
-                    role="tab">
+                    href="#notifP300">
                     <span class="fd-tabs__tag">
                         By Date
                     </span>
                 </a>
             </li>
-            <li role="listitem" class="fd-tabs__item">
+            <li role="tab" class="fd-tabs__item">
                 <a 
                     class="fd-tabs__link" 
                     aria-controls="notifP301" 
-                    href="#notifP301"  
-                    role="tab">
+                    href="#notifP301">
                     <span class="fd-tabs__tag">
                         By Type
                     </span>
                 </a>
             </li>
-            <li role="listitem" class="fd-tabs__item">
+            <li role="tab" class="fd-tabs__item">
                 <a 
                     class="fd-tabs__link"
                     aria-controls="notifP302" 
-                    href="#notifP302"  
-                    role="tab">
+                    href="#notifP302">
                     <span class="fd-tabs__tag">
                         By Priority
                     </span>
@@ -660,11 +652,11 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                 <div class="fd-notification__actions">
                     <div class="fd-popover fd-popover--right">
                         <div class="fd-popover__control">
-                            <button class="fd-button fd-button--transparent" aria-label="Image label" aria-controls="popoverA3" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA3');">
+                            <button class="fd-button fd-button--transparent" aria-label="Image label" aria-controls="popoverA42" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA42');">
                                 <i class="sap-icon--overflow"></i>
                             </button>
                         </div>
-                        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA3">
+                        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA42">
                             <nav class="fd-menu" id="">
                                 <ul class="fd-menu__list fd-menu__list--no-shadow">
                                     <li class="fd-menu__item">
@@ -703,11 +695,11 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                 <div class="fd-notification__actions">
                     <div class="fd-popover fd-popover--right">
                         <div class="fd-popover__control">
-                            <button class="fd-button fd-button--transparent" aria-label="Image label" aria-controls="popoverA2" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA2');">
+                            <button class="fd-button fd-button--transparent" aria-label="Image label" aria-controls="popoverA245" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA245');">
                                 <i class="sap-icon--overflow"></i>
                             </button>
                         </div>
-                        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA2">
+                        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA245">
                             <nav class="fd-menu" id="">
                                 <ul class="fd-menu__list fd-menu__list--no-shadow">
                                     <li class="fd-menu__item">
@@ -759,11 +751,11 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                 <div class="fd-notification__actions">
                     <div class="fd-popover fd-popover--right">
                         <div class="fd-popover__control">
-                            <button class="fd-button fd-button--transparent" aria-label="Image label" aria-controls="popoverA3" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA3');">
+                            <button class="fd-button fd-button--transparent" aria-label="Image label" aria-controls="popoverA5" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA5');">
                                 <i class="sap-icon--overflow"></i>
                             </button>
                         </div>
-                        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA3">
+                        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA5">
                             <nav class="fd-menu" id="">
                                 <ul class="fd-menu__list fd-menu__list--no-shadow">
                                     <li class="fd-menu__item">
@@ -802,11 +794,11 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                 <div class="fd-notification__actions">
                     <div class="fd-popover fd-popover--right">
                         <div class="fd-popover__control">
-                            <button class="fd-button fd-button--transparent" aria-label="Image label" aria-controls="popoverA2" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA2');">
+                            <button class="fd-button fd-button--transparent" aria-label="Image label" aria-controls="popoverA43212" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA43212');">
                                 <i class="sap-icon--overflow"></i>
                             </button>
                         </div>
-                        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA2">
+                        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA43212">
                             <nav class="fd-menu" id="">
                                 <ul class="fd-menu__list fd-menu__list--no-shadow">
                                     <li class="fd-menu__item">
