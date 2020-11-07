@@ -45,6 +45,8 @@ import { toHaveNoViolations } from 'jest-axe';
 import * as stories from './${componentName}.stories.js';
 
 expect.extend(toHaveNoViolations);
+jest.setTimeout(10000); //to give some time for dom rendering
+
 describe('${componentName} and all its variants', () => {
     it('should not have any accessibility violations', async() => {
         let storyNames = Object.keys(stories).filter(story => story !== 'default' && story !== 'dev');

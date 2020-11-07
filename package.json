@@ -24,7 +24,7 @@
     "style:postCSS": "postcss --config config/postcss.config.js --replace dist/*.css",
     "style:remove": "rimraf dist",
     "test": "server-test storybook:ci http-get://localhost:6006 'npm run storybook:visual:setup'",
-    "test:accessibility": "babel-node scripts/build-accessibility-tests.js; jest ---testPathIgnorePatterns=storybook-testing/storyshots.test.js",
+    "test:accessibility": "babel-node scripts/build-accessibility-tests.js && jest ---testPathIgnorePatterns=storybook-testing/storyshots.test.js",
     "test:update": "server-test storybook:ci http-get://localhost:6006 'npm run storybook:visual:setup -- --updateSnapshot'",
     "storybook": "npm run storybook:prep && start-storybook -s .storybook/static/,node_modules/@sap-theming,dist/ -p 6006",
     "storybook:ci": "npm run storybook -- --ci --quiet",
