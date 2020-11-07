@@ -30,7 +30,7 @@ export const withIconAndButton = () => `<div style="height: 400px;">
                 </button>
             </div>
             <div class="fd-popover__body" aria-hidden="false" id="pQqQR213">
-                <nav class="fd-menu">
+                <nav aria-label="context menu" class="fd-menu">
                     <ul class="fd-menu__list fd-menu__list--no-shadow">
                         <li class="fd-menu__item">
                             <a href="#" class="fd-menu__link">
@@ -57,14 +57,14 @@ export const withIconAndButton = () => `<div style="height: 400px;">
                 <button class="fd-button" aria-controls="jhqD0558" aria-haspopup="true" aria-expanded="true" aria-label="More">More</button>
             </div>
             <div class="fd-popover__body" aria-hidden="false" id="jhqD0558">
-                <nav class="fd-menu">
+                <nav aria-label="more options"class="fd-menu">
                     <ul class="fd-menu__list fd-menu__list--no-shadow">
                         <li class="fd-menu__item">
                             <a href="#" class="fd-menu__link">
                                 <span class="fd-menu__title">Option 1</span>
                             </a>
-                        </li>
-                        <span class="fd-menu__separator"></span>
+                            </li>
+                        <li class="fd-menu__separator"></li>
                         <li class="fd-menu__item">
                             <a href="#" class="fd-menu__link">
                                 <span class="fd-menu__title">Option 2</span>
