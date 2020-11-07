@@ -26,7 +26,7 @@ export const basic = () => `<div class="fd-toolbar fd-toolbar--cozy">
 </div>
 `;
 
-export const types = () => `<div style="background-color: #ccc;background-color:var(--sapContent_ImagePlaceholde, #ccc); padding: 1rem">
+export const types = () => `<div style="background-color: #00000012; padding: 1rem">
     <h3>Solid</h3>
     <div class="fd-toolbar fd-toolbar--solid">
         <span>Products (23)</span>
@@ -169,14 +169,13 @@ alignment.parameters = {
     }
 };
 
-export const separator = () => `<h3></h3>
+export const separator = () => `
 <div class="fd-toolbar fd-toolbar--info fd-toolbar--cozy">
     <button class="fd-button fd-button--positive">Accept</button>
     <span class="fd-toolbar__separator"></span>
     <button class="fd-button fd-button--reject">Reject</button>
     <span class="fd-toolbar__separator"></span>
 </div>
-<h3></h3>
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--cozy">
     <span class="fd-toolbar__spacer"></span>
     <span class="fd-toolbar__separator"></span>
