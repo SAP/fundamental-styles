@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.43](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.42...v0.13.0-rc.43) (2020-11-07)
+
+
+### Bug Fixes
+
+* add fix for Product Switch truncation issue ([#1854](https://github.com/SAP/fundamental-styles/issues/1854)) ([4d03aa5](https://github.com/SAP/fundamental-styles/commit/4d03aa5f5ee9e2ed240fbbddb85cce6497833275))
+
 ## [0.13.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.41...v0.13.0-rc.42) (2020-11-06)
 
 ## [0.13.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.40...v0.13.0-rc.41) (2020-11-05)
