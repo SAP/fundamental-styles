@@ -1,5 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
+@import "./mixins/button/button-helper";
 
 $block: #{$fd-namespace}-carousel;
 $button: #{$fd-namespace}-button;
@@ -12,6 +13,15 @@ $button: #{$fd-namespace}-button;
   $fd-carousel-button-content-offset: 0.5rem !default;
   $fd-carousel-dot-size: 0.25rem !default;
   $fd-carousel-dot-active-size: 0.5rem !default;
+
+  @mixin after-position-overwrite() {
+    &::after {
+      top: $fd-carousel-button-focus-outline-offset;
+      bottom: $fd-carousel-button-focus-outline-offset;
+      left: $fd-carousel-button-focus-outline-offset;
+      right: $fd-carousel-button-focus-outline-offset;
+    }
+  }
 
   @include fd-reset();
   @include fd-flex(column);
@@ -148,12 +158,12 @@ $button: #{$fd-namespace}-button;
     }
 
     @include fd-focus() {
-      &::after {
-        top: $fd-carousel-button-focus-outline-offset;
-        bottom: $fd-carousel-button-focus-outline-offset;
-        left: $fd-carousel-button-focus-outline-offset;
-        right: $fd-carousel-button-focus-outline-offset;
-      }
+      @include after-position-overwrite();
+    }
+
+    @include fd-active() {
+      @include buttonFocus();
+      @include after-position-overwrite();
     }
   }
 
