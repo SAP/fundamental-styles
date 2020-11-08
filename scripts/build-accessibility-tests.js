@@ -4,7 +4,7 @@ const path = require('path');
 const srcPath = path.join(__dirname, '../stories');
 const rimraf = require('rimraf');
 
-console.info('Accessibility unit tests 🧪');
+console.info('Accessibility unit tests 🔬');
 console.info('  Trying to clean/remove all accessibility tests. 🗑');
 
 rimraf('**/*.accessibility.test.js', (rimRafError) => {
@@ -45,7 +45,7 @@ import { toHaveNoViolations } from 'jest-axe';
 import * as stories from './${componentName}.stories.js';
 
 expect.extend(toHaveNoViolations);
-jest.setTimeout(10000); //to give some time for dom rendering
+jest.setTimeout(30000); //to give some time (30s) for dom rendering
 
 describe('${componentName} and all its variants', () => {
     it('should not have any accessibility violations', async() => {

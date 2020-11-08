@@ -9,7 +9,6 @@ jobs:
   include:
   - stage: Lint, Test and Size
     script:
-      - npm run test:accessibility
       - npm run test
   -
     script: npm run lint
