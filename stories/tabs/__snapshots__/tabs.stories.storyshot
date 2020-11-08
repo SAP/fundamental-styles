@@ -12,7 +12,7 @@ exports[`Storyshots Components/Tabs Compact Filter Mode 1`] = `
     
     <li
       class="fd-tabs__item fd-tabs__item--header"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -20,7 +20,6 @@ exports[`Storyshots Components/Tabs Compact Filter Mode 1`] = `
         aria-controls="YETAv8"
         class="fd-tabs__link"
         href="#YETAv8"
-        role="tab"
       >
         
             
@@ -59,7 +58,7 @@ exports[`Storyshots Components/Tabs Compact Filter Mode 1`] = `
     
     <li
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -67,7 +66,6 @@ exports[`Storyshots Components/Tabs Compact Filter Mode 1`] = `
         aria-controls="eu3WeD"
         class="fd-tabs__link"
         href="#eu3WeD"
-        role="tab"
       >
         
             
@@ -107,7 +105,7 @@ exports[`Storyshots Components/Tabs Compact Filter Mode 1`] = `
     
     <li
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -115,7 +113,6 @@ exports[`Storyshots Components/Tabs Compact Filter Mode 1`] = `
         aria-controls="VqJcYO"
         class="fd-tabs__link"
         href="#VqJcYO"
-        role="tab"
       >
         
             
@@ -155,7 +152,7 @@ exports[`Storyshots Components/Tabs Compact Filter Mode 1`] = `
     
     <li
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -163,7 +160,6 @@ exports[`Storyshots Components/Tabs Compact Filter Mode 1`] = `
         aria-controls="ceoDu7"
         class="fd-tabs__link"
         href="#ceoDu7"
-        role="tab"
       >
         
             
@@ -282,7 +278,7 @@ exports[`Storyshots Components/Tabs Compact Icon Only 1`] = `
     
     <li
       class="fd-tabs__item fd-tabs__item--icon-only"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -290,7 +286,6 @@ exports[`Storyshots Components/Tabs Compact Icon Only 1`] = `
         aria-controls="0bT4aB"
         class="fd-tabs__link"
         href="#0bT4aB"
-        role="tab"
       >
         
             
@@ -322,17 +317,16 @@ exports[`Storyshots Components/Tabs Compact Icon Only 1`] = `
     
     
     <li
+      aria-selected="true"
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
       
       <a
         aria-controls="kzRyN3"
-        aria-selected="true"
         class="fd-tabs__link"
         href="#kzRyN3"
-        role="tab"
       >
         
             
@@ -365,7 +359,7 @@ exports[`Storyshots Components/Tabs Compact Icon Only 1`] = `
     
     <li
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -373,7 +367,6 @@ exports[`Storyshots Components/Tabs Compact Icon Only 1`] = `
         aria-controls="f2epu6"
         class="fd-tabs__link"
         href="#f2epu6"
-        role="tab"
       >
         
             
@@ -473,7 +466,7 @@ exports[`Storyshots Components/Tabs Compact Process Mode 1`] = `
     
     <li
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -481,7 +474,6 @@ exports[`Storyshots Components/Tabs Compact Process Mode 1`] = `
         aria-controls="LHsxsZ"
         class="fd-tabs__link"
         href="#LHsxsZ"
-        role="tab"
       >
         
             
@@ -534,7 +526,7 @@ exports[`Storyshots Components/Tabs Compact Process Mode 1`] = `
     
     <li
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -542,7 +534,6 @@ exports[`Storyshots Components/Tabs Compact Process Mode 1`] = `
         aria-controls="ZQvAjG"
         class="fd-tabs__link"
         href="#ZQvAjG"
-        role="tab"
       >
         
             
@@ -595,7 +586,7 @@ exports[`Storyshots Components/Tabs Compact Process Mode 1`] = `
     
     <li
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -603,7 +594,6 @@ exports[`Storyshots Components/Tabs Compact Process Mode 1`] = `
         aria-controls="wdqPV9"
         class="fd-tabs__link"
         href="#wdqPV9"
-        role="tab"
       >
         
             
@@ -718,7 +708,7 @@ exports[`Storyshots Components/Tabs Default 1`] = `
     
     <li
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -726,7 +716,6 @@ exports[`Storyshots Components/Tabs Default 1`] = `
         aria-controls="fuCwV550"
         class="fd-tabs__link"
         href="#fuCwV550"
-        role="tab"
       >
         
             
@@ -746,17 +735,16 @@ exports[`Storyshots Components/Tabs Default 1`] = `
     
     
     <li
+      aria-selected="true"
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
         
       <a
         aria-controls="AiWfz165"
-        aria-selected="true"
         class="fd-tabs__link"
         href="#AiWfz165"
-        role="tab"
       >
         
             
@@ -777,7 +765,7 @@ exports[`Storyshots Components/Tabs Default 1`] = `
     
     <li
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -785,7 +773,6 @@ exports[`Storyshots Components/Tabs Default 1`] = `
         aria-controls="7ae0T849"
         class="fd-tabs__link"
         href="#7ae0T849"
-        role="tab"
       >
         
             
@@ -873,7 +860,7 @@ exports[`Storyshots Components/Tabs Filter Mode 1`] = `
     
     <li
       class="fd-tabs__item fd-tabs__item--header"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -881,7 +868,6 @@ exports[`Storyshots Components/Tabs Filter Mode 1`] = `
         aria-controls="5ZkDVE"
         class="fd-tabs__link"
         href="#5ZkDVE"
-        role="tab"
       >
         
             
@@ -920,7 +906,7 @@ exports[`Storyshots Components/Tabs Filter Mode 1`] = `
     
     <li
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -928,7 +914,6 @@ exports[`Storyshots Components/Tabs Filter Mode 1`] = `
         aria-controls="znvnwr"
         class="fd-tabs__link"
         href="#znvnwr"
-        role="tab"
       >
         
             
@@ -968,7 +953,7 @@ exports[`Storyshots Components/Tabs Filter Mode 1`] = `
     
     <li
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -976,7 +961,6 @@ exports[`Storyshots Components/Tabs Filter Mode 1`] = `
         aria-controls="oyYpL7"
         class="fd-tabs__link"
         href="#oyYpL7"
-        role="tab"
       >
         
             
@@ -1016,7 +1000,7 @@ exports[`Storyshots Components/Tabs Filter Mode 1`] = `
     
     <li
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -1024,7 +1008,6 @@ exports[`Storyshots Components/Tabs Filter Mode 1`] = `
         aria-controls="gRpu9H"
         class="fd-tabs__link"
         href="#gRpu9H"
-        role="tab"
       >
         
             
@@ -1143,7 +1126,7 @@ exports[`Storyshots Components/Tabs Icon Only 1`] = `
     
     <li
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -1151,7 +1134,6 @@ exports[`Storyshots Components/Tabs Icon Only 1`] = `
         aria-controls="pliA92"
         class="fd-tabs__link"
         href="#pliA92"
-        role="tab"
       >
         
             
@@ -1183,17 +1165,16 @@ exports[`Storyshots Components/Tabs Icon Only 1`] = `
     
     
     <li
+      aria-selected="true"
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
       
       <a
         aria-controls="ZAN8Hd"
-        aria-selected="true"
         class="fd-tabs__link"
         href="#ZAN8Hd"
-        role="tab"
       >
         
             
@@ -1226,7 +1207,7 @@ exports[`Storyshots Components/Tabs Icon Only 1`] = `
     
     <li
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -1234,7 +1215,6 @@ exports[`Storyshots Components/Tabs Icon Only 1`] = `
         aria-controls="QrQ5Cl"
         class="fd-tabs__link"
         href="#QrQ5Cl"
-        role="tab"
       >
         
             
@@ -1482,7 +1462,7 @@ exports[`Storyshots Components/Tabs Process Mode 1`] = `
     
     <li
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -1490,7 +1470,6 @@ exports[`Storyshots Components/Tabs Process Mode 1`] = `
         aria-controls="NoQLy6"
         class="fd-tabs__link"
         href="#NoQLy6"
-        role="tab"
       >
         
             
@@ -1543,7 +1522,7 @@ exports[`Storyshots Components/Tabs Process Mode 1`] = `
     
     <li
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -1551,7 +1530,6 @@ exports[`Storyshots Components/Tabs Process Mode 1`] = `
         aria-controls="h4yBDR"
         class="fd-tabs__link"
         href="#h4yBDR"
-        role="tab"
       >
         
             
@@ -1604,7 +1582,7 @@ exports[`Storyshots Components/Tabs Process Mode 1`] = `
     
     <li
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -1612,7 +1590,6 @@ exports[`Storyshots Components/Tabs Process Mode 1`] = `
         aria-controls="nd1EMQ"
         class="fd-tabs__link"
         href="#nd1EMQ"
-        role="tab"
       >
         
             
@@ -1727,7 +1704,7 @@ exports[`Storyshots Components/Tabs Semantic Filter Mode 1`] = `
     
     <li
       class="fd-tabs__item fd-tabs__item--header"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -1735,7 +1712,6 @@ exports[`Storyshots Components/Tabs Semantic Filter Mode 1`] = `
         aria-controls="5ZkDVE"
         class="fd-tabs__link"
         href="#5ZkDVE"
-        role="tab"
       >
         
             
@@ -1774,7 +1750,7 @@ exports[`Storyshots Components/Tabs Semantic Filter Mode 1`] = `
     
     <li
       class="fd-tabs__item fd-tabs__item--success"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -1782,7 +1758,6 @@ exports[`Storyshots Components/Tabs Semantic Filter Mode 1`] = `
         aria-controls="znvnwr"
         class="fd-tabs__link"
         href="#znvnwr"
-        role="tab"
       >
         
             
@@ -1822,7 +1797,7 @@ exports[`Storyshots Components/Tabs Semantic Filter Mode 1`] = `
     
     <li
       class="fd-tabs__item fd-tabs__item--warning"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -1830,7 +1805,6 @@ exports[`Storyshots Components/Tabs Semantic Filter Mode 1`] = `
         aria-controls="oyYpL7"
         class="fd-tabs__link"
         href="#oyYpL7"
-        role="tab"
       >
         
             
@@ -1870,7 +1844,7 @@ exports[`Storyshots Components/Tabs Semantic Filter Mode 1`] = `
     
     <li
       class="fd-tabs__item fd-tabs__item--information"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -1878,7 +1852,6 @@ exports[`Storyshots Components/Tabs Semantic Filter Mode 1`] = `
         aria-controls="gRpu9H"
         class="fd-tabs__link"
         href="#gRpu9H"
-        role="tab"
       >
         
             
@@ -1918,7 +1891,7 @@ exports[`Storyshots Components/Tabs Semantic Filter Mode 1`] = `
     
     <li
       class="fd-tabs__item fd-tabs__item--error"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -1926,7 +1899,6 @@ exports[`Storyshots Components/Tabs Semantic Filter Mode 1`] = `
         aria-controls="gRpu1A"
         class="fd-tabs__link"
         href="#gRpu1A"
-        role="tab"
       >
         
             
@@ -2057,7 +2029,7 @@ exports[`Storyshots Components/Tabs Semantic Inline 1`] = `
     
     <li
       class="fd-tabs__item fd-tabs__item--error"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -2065,7 +2037,6 @@ exports[`Storyshots Components/Tabs Semantic Inline 1`] = `
         aria-controls="5abyKZ"
         class="fd-tabs__link"
         href="#5abyKZ"
-        role="tab"
       >
         
             
@@ -2092,17 +2063,16 @@ exports[`Storyshots Components/Tabs Semantic Inline 1`] = `
     
     
     <li
+      aria-selected="true"
       class="fd-tabs__item fd-tabs__item--information"
-      role="listitem"
+      role="tab"
     >
       
         
       <a
         aria-controls="wupC7s"
-        aria-selected="true"
         class="fd-tabs__link"
         href="#wupC7s"
-        role="tab"
       >
         
             
@@ -2130,7 +2100,7 @@ exports[`Storyshots Components/Tabs Semantic Inline 1`] = `
     
     <li
       class="fd-tabs__item fd-tabs__item--warning"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -2138,7 +2108,6 @@ exports[`Storyshots Components/Tabs Semantic Inline 1`] = `
         aria-controls="XlKpQM"
         class="fd-tabs__link"
         href="#XlKpQM"
-        role="tab"
       >
         
             
@@ -2166,7 +2135,7 @@ exports[`Storyshots Components/Tabs Semantic Inline 1`] = `
     
     <li
       class="fd-tabs__item fd-tabs__item--success"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -2174,7 +2143,6 @@ exports[`Storyshots Components/Tabs Semantic Inline 1`] = `
         aria-controls="3dUJAI"
         class="fd-tabs__link"
         href="#3dUJAI"
-        role="tab"
       >
         
             
@@ -2202,7 +2170,7 @@ exports[`Storyshots Components/Tabs Semantic Inline 1`] = `
     
     <li
       class="fd-tabs__item fd-tabs__item--neutral"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -2210,7 +2178,6 @@ exports[`Storyshots Components/Tabs Semantic Inline 1`] = `
         aria-controls="TWlAup"
         class="fd-tabs__link"
         href="#TWlAup"
-        role="tab"
       >
         
             
@@ -2329,7 +2296,7 @@ exports[`Storyshots Components/Tabs Semantic Mode 1`] = `
     
     <li
       class="fd-tabs__item fd-tabs__item--success"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -2337,7 +2304,6 @@ exports[`Storyshots Components/Tabs Semantic Mode 1`] = `
         aria-controls="XTsSDD"
         class="fd-tabs__link"
         href="#XTsSDD"
-        role="tab"
       >
         
             
@@ -2369,17 +2335,16 @@ exports[`Storyshots Components/Tabs Semantic Mode 1`] = `
     
     
     <li
+      aria-selected="true"
       class="fd-tabs__item fd-tabs__item--warning"
-      role="listitem"
+      role="tab"
     >
       
       
       <a
         aria-controls="DomvG6"
-        aria-selected="true"
         class="fd-tabs__link"
         href="#DomvG6"
-        role="tab"
       >
         
             
@@ -2412,7 +2377,7 @@ exports[`Storyshots Components/Tabs Semantic Mode 1`] = `
     
     <li
       class="fd-tabs__item fd-tabs__item--information"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -2420,7 +2385,6 @@ exports[`Storyshots Components/Tabs Semantic Mode 1`] = `
         aria-controls="DqIStt"
         class="fd-tabs__link"
         href="#DqIStt"
-        role="tab"
       >
         
             
@@ -2453,7 +2417,7 @@ exports[`Storyshots Components/Tabs Semantic Mode 1`] = `
     
     <li
       class="fd-tabs__item fd-tabs__item--error"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -2461,7 +2425,6 @@ exports[`Storyshots Components/Tabs Semantic Mode 1`] = `
         aria-controls="bRCSzS"
         class="fd-tabs__link"
         href="#bRCSzS"
-        role="tab"
       >
         
             
@@ -2494,7 +2457,7 @@ exports[`Storyshots Components/Tabs Semantic Mode 1`] = `
     
     <li
       class="fd-tabs__item fd-tabs__item--neutral"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -2502,7 +2465,6 @@ exports[`Storyshots Components/Tabs Semantic Mode 1`] = `
         aria-controls="xMN6I9"
         class="fd-tabs__link"
         href="#xMN6I9"
-        role="tab"
       >
         
             
@@ -2625,8 +2587,9 @@ exports[`Storyshots Components/Tabs Tab With Counters 1`] = `
     
     
     <li
+      aria-selected="true"
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -2634,7 +2597,6 @@ exports[`Storyshots Components/Tabs Tab With Counters 1`] = `
         aria-controls="d9vOir"
         class="fd-tabs__link"
         href="#d9vOir"
-        role="tab"
       >
         
             
@@ -2662,16 +2624,14 @@ exports[`Storyshots Components/Tabs Tab With Counters 1`] = `
     
     <li
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
         
       <a
         aria-controls="bSj6ft"
-        aria-selected="true"
         class="fd-tabs__link"
         href="#bSj6ft"
-        role="tab"
       >
         
             
@@ -2699,7 +2659,7 @@ exports[`Storyshots Components/Tabs Tab With Counters 1`] = `
     
     <li
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
         
@@ -2707,7 +2667,6 @@ exports[`Storyshots Components/Tabs Tab With Counters 1`] = `
         aria-controls="VrHfHi"
         class="fd-tabs__link"
         href="#VrHfHi"
-        role="tab"
       >
         
             

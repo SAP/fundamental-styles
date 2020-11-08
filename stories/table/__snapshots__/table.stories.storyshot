@@ -145,12 +145,12 @@ exports[`Storyshots Components/Table Fix Column Header 1`] = `
           >
             
                
-            <td
+            <th
               class="fd-table__cell fd-table__cell--fixed"
               scope="row"
             >
-              Lorem ipsum dolor sit amet ipsum
-            </td>
+              Row header
+            </th>
             
                
             <td
@@ -210,12 +210,12 @@ exports[`Storyshots Components/Table Fix Column Header 1`] = `
           >
             
                
-            <td
+            <th
               class="fd-table__cell fd-table__cell--fixed"
               scope="row"
             >
-              Lorem ipsum dolor sit amet ipsum
-            </td>
+              Row header
+            </th>
             
                
             <td
@@ -275,12 +275,12 @@ exports[`Storyshots Components/Table Fix Column Header 1`] = `
           >
             
                
-            <td
+            <th
               class="fd-table__cell fd-table__cell--fixed"
               scope="row"
             >
-              Lorem ipsum dolor sit amet ipsum
-            </td>
+              Row header
+            </th>
             
                
             <td
@@ -1192,7 +1192,6 @@ exports[`Storyshots Components/Table Grid Table 1`] = `
                 aria-haspopup="listbox"
                 aria-labelledby="fd-hEzpEm5PMU2"
                 class="fd-select"
-                role="combobox"
                 tabindex="-1"
               >
                 
@@ -1510,7 +1509,6 @@ exports[`Storyshots Components/Table Grid Table 1`] = `
                 aria-haspopup="listbox"
                 aria-labelledby="fd-hEzpEm5PMU2"
                 class="fd-select"
-                role="combobox"
                 tabindex="-1"
               >
                 
@@ -1828,7 +1826,6 @@ exports[`Storyshots Components/Table Grid Table 1`] = `
                 aria-haspopup="listbox"
                 aria-labelledby="fd-hEzpEm5PMU2"
                 class="fd-select"
-                role="combobox"
                 tabindex="-1"
               >
                 
@@ -2147,7 +2144,6 @@ exports[`Storyshots Components/Table Grid Table 1`] = `
                 aria-haspopup="listbox"
                 aria-labelledby="fd-hEzpEm5PMU2"
                 class="fd-select"
-                role="combobox"
                 tabindex="-1"
               >
                 
@@ -5655,7 +5651,7 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
   >
     
     
-    <div
+    <section
       aria-labelledby="dialog-filter"
       aria-modal="true"
       class="fd-dialog__content"
@@ -5844,7 +5840,7 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
       </footer>
       
     
-    </div>
+    </section>
     
 
   </div>
@@ -5856,7 +5852,7 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
   >
     
     
-    <div
+    <section
       aria-labelledby="dialog-settings"
       aria-modal="true"
       class="fd-dialog__content"
@@ -5955,6 +5951,7 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
               
                         
               <input
+                aria-labelledby="dialog-settings"
                 class="fd-input fd-input-group__input fd-input--compact"
                 placeholder="Search..."
                 type="text"
@@ -6001,7 +5998,10 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
         
             
         <ul
+          aria-labelledby="dialog-settings"
+          aria-multiselectable="true"
           class="fd-list fd-list--multi-input fd-list--compact"
+          role="listbox"
         >
           
                 
@@ -6231,7 +6231,7 @@ exports[`Storyshots Components/Table With Advanced Toolbar 1`] = `
       </footer>
       
     
-    </div>
+    </section>
     
 
   </div>

@@ -146,14 +146,13 @@ exports[`Storyshots Components/Counter Tabs 1`] = `
     
   <li
     class="fd-tabs__item"
+    role="tab"
   >
     
         
     <a
-      aria-controls="AvcVC566"
       class="fd-tabs__link"
       href="#AvcVC566"
-      role="tab"
     >
       Link
         
@@ -170,16 +169,15 @@ exports[`Storyshots Components/Counter Tabs 1`] = `
   
     
   <li
+    aria-selected="true"
     class="fd-tabs__item"
+    role="tab"
   >
     
         
     <a
-      aria-controls="5mxO9110"
-      aria-selected="true"
       class="fd-tabs__link"
       href="#5mxO9110"
-      role="tab"
     >
       
             
@@ -198,14 +196,13 @@ exports[`Storyshots Components/Counter Tabs 1`] = `
     
   <li
     class="fd-tabs__item"
+    role="tab"
   >
     
         
     <a
-      aria-controls="r0pk3445"
       class="fd-tabs__link"
       href="#r0pk3445"
-      role="tab"
     >
       Link
     </a>
@@ -215,15 +212,14 @@ exports[`Storyshots Components/Counter Tabs 1`] = `
   
     
   <li
+    aria-disabled="true"
     class="fd-tabs__item"
+    role="tab"
   >
     
         
     <a
-      aria-controls="Dj1Ri832"
-      aria-disabled="true"
       class="fd-tabs__link"
-      role="tab"
     >
       Disabled
     </a>

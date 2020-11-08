@@ -126,7 +126,6 @@ exports[`Storyshots Patterns/Date Picker Default And Compact Sizes 1`] = `
                 
                 <button
                   aria-expanded="false"
-                  aria-selected="false"
                   class="fd-button fd-button--transparent"
                 >
                   September
@@ -143,7 +142,6 @@ exports[`Storyshots Patterns/Date Picker Default And Compact Sizes 1`] = `
                 
                 <button
                   aria-expanded="false"
-                  aria-selected="false"
                   class="fd-button fd-button--transparent"
                 >
                   2018
@@ -1079,7 +1077,6 @@ exports[`Storyshots Patterns/Date Picker Default And Compact Sizes 1`] = `
                 
                 <button
                   aria-expanded="false"
-                  aria-selected="false"
                   class="fd-button fd-button--transparent fd-button--compact"
                 >
                   September
@@ -1096,7 +1093,6 @@ exports[`Storyshots Patterns/Date Picker Default And Compact Sizes 1`] = `
                 
                 <button
                   aria-expanded="false"
-                  aria-selected="false"
                   class="fd-button fd-button--transparent fd-button--compact"
                 >
                   2018
@@ -4238,7 +4234,6 @@ exports[`Storyshots Patterns/Date Picker Today Navigation Button 1`] = `
               
                 <button
                   aria-expanded="false"
-                  aria-selected="false"
                   class="fd-button fd-button--transparent"
                 >
                   September
@@ -4255,7 +4250,6 @@ exports[`Storyshots Patterns/Date Picker Today Navigation Button 1`] = `
               
                 <button
                   aria-expanded="false"
-                  aria-selected="false"
                   class="fd-button fd-button--transparent"
                 >
                   2018
@@ -4294,7 +4288,6 @@ exports[`Storyshots Patterns/Date Picker Today Navigation Button 1`] = `
               
                 <button
                   aria-expanded="false"
-                  aria-selected="false"
                   class="fd-button fd-button--transparent"
                   onclick="
                   setValue('todayNavigationDateInput', new Date('9/6/2018').toLocaleDateString('en-US'));
@@ -5224,7 +5217,6 @@ exports[`Storyshots Patterns/Date Picker Today Selection Button 1`] = `
               
               <button
                 aria-expanded="false"
-                aria-selected="false"
                 class="fd-button fd-button--transparent"
               >
                 September
@@ -5241,7 +5233,6 @@ exports[`Storyshots Patterns/Date Picker Today Selection Button 1`] = `
               
               <button
                 aria-expanded="false"
-                aria-selected="false"
                 class="fd-button fd-button--transparent"
               >
                 2018

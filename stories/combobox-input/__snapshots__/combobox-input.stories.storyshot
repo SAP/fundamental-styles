@@ -13,6 +13,7 @@ exports[`Storyshots Patterns/Combobox Input As Form Item 1`] = `
         
     <label
       class="fd-form-label"
+      for="comboboxAsFormItem"
     >
       Combobox as a form item
     </label>
@@ -24,7 +25,7 @@ exports[`Storyshots Patterns/Combobox Input As Form Item 1`] = `
       
             
       <div
-        aria-controls="F4GcX348"
+        aria-controls="F4GcX349"
         aria-expanded="false"
         aria-haspopup="true"
         class="fd-popover__control"
@@ -38,7 +39,7 @@ exports[`Storyshots Patterns/Combobox Input As Form Item 1`] = `
                     
           <input
             class="fd-input fd-input-group__input"
-            id=""
+            id="comboboxAsFormItem"
             placeholder="Select Fruit"
             type="text"
           />
@@ -50,11 +51,18 @@ exports[`Storyshots Patterns/Combobox Input As Form Item 1`] = `
             
                         
             <button
-              aria-controls="F4GcX348"
+              aria-controls="F4GcX349"
               aria-expanded="true"
               aria-haspopup="true"
-              class="fd-input-group__button fd-button fd-button--transparent sap-icon--navigation-down-arrow"
-            />
+              aria-label="show/hide fruit options"
+              class="fd-input-group__button fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--navigation-down-arrow"
+              />
+            </button>
             
                     
           </span>
@@ -69,7 +77,7 @@ exports[`Storyshots Patterns/Combobox Input As Form Item 1`] = `
       <div
         aria-hidden="false"
         class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill"
-        id="F4GcX348"
+        id="F4GcX349"
       >
         
                 
@@ -79,6 +87,7 @@ exports[`Storyshots Patterns/Combobox Input As Form Item 1`] = `
           
                     
           <ul
+            aria-label="fruit options"
             class="fd-list fd-list--dropdown"
             role="listbox"
           >
@@ -378,6 +387,7 @@ exports[`Storyshots Patterns/Combobox Input Cozy And Compact 1`] = `
         
     <label
       class="fd-form-label"
+      for="cozyCombobox"
     >
       Combobox Cozy Mode
     </label>
@@ -403,7 +413,7 @@ exports[`Storyshots Patterns/Combobox Input Cozy And Compact 1`] = `
                     
           <input
             class="fd-input fd-input-group__input"
-            id=""
+            id="cozyCombobox"
             placeholder="Select Fruit"
             type="text"
           />
@@ -418,6 +428,7 @@ exports[`Storyshots Patterns/Combobox Input Cozy And Compact 1`] = `
               aria-controls="F4GcX348"
               aria-expanded="true"
               aria-haspopup="true"
+              aria-label="show/hide fruit options"
               class="fd-input-group__button fd-button fd-button--transparent"
             >
               
@@ -452,6 +463,7 @@ exports[`Storyshots Patterns/Combobox Input Cozy And Compact 1`] = `
           
                     
           <ul
+            aria-label="fruit options"
             class="fd-list fd-list--dropdown"
             role="listbox"
           >
@@ -742,6 +754,7 @@ exports[`Storyshots Patterns/Combobox Input Cozy And Compact 1`] = `
         
     <label
       class="fd-form-label"
+      for="compactCombobox"
     >
       Combobox Compact Mode
     </label>
@@ -767,7 +780,7 @@ exports[`Storyshots Patterns/Combobox Input Cozy And Compact 1`] = `
                     
           <input
             class="fd-input fd-input--compact fd-input-group__input"
-            id=""
+            id="compactCombobox"
             placeholder="Select Fruit"
             type="text"
           />
@@ -782,6 +795,7 @@ exports[`Storyshots Patterns/Combobox Input Cozy And Compact 1`] = `
               aria-controls="F4GcX34"
               aria-expanded="true"
               aria-haspopup="true"
+              aria-label="show/hide fruit options"
               class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-select__button"
             >
               
@@ -816,6 +830,7 @@ exports[`Storyshots Patterns/Combobox Input Cozy And Compact 1`] = `
           
                     
           <ul
+            aria-label="fruit options"
             class="fd-list fd-list--dropdown fd-list--compact"
             role="listbox"
           >
@@ -922,55 +937,72 @@ exports[`Storyshots Patterns/Combobox Input Disabled And Read Only 1`] = `
   
     
   <div
-    class="fd-popover"
+    style="display:flex;flex-direction:column"
   >
     
         
+    <label
+      class="fd-form-label"
+      for="disabledCombobox"
+    >
+      Disabled
+    </label>
+    
+        
     <div
-      aria-controls="F4GcX348"
-      aria-disabled="true"
-      aria-expanded="false"
-      aria-haspopup="true"
-      class="fd-popover__control"
-      disabled=""
+      class="fd-popover"
     >
       
             
       <div
+        aria-controls="F4GcX348"
         aria-disabled="true"
-        class="fd-input-group fd-input-group--control"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="fd-popover__control"
         disabled=""
       >
         
                 
-        <input
-          class="fd-input fd-input-group__input"
-          id=""
-          placeholder="Select Fruit"
-          type="text"
-          value="Orange"
-        />
-        
-                
-        <span
-          class="fd-input-group__addon fd-input-group__addon--button"
+        <div
+          aria-disabled="true"
+          class="fd-input-group fd-input-group--control"
+          disabled=""
         >
           
                     
-          <button
-            class="fd-input-group__button fd-button fd-button--transparent fd-select__button"
+          <input
+            class="fd-input fd-input-group__input"
+            id="disabledCombobox"
+            placeholder="Select Fruit"
+            type="text"
+            value="Orange"
+          />
+          
+                    
+          <span
+            class="fd-input-group__addon fd-input-group__addon--button"
           >
             
                         
-            <i
-              class="sap-icon--navigation-down-arrow"
-            />
+            <button
+              aria-label="show/hide options button"
+              class="fd-input-group__button fd-button fd-button--transparent fd-select__button"
+            >
+              
+                            
+              <i
+                class="sap-icon--navigation-down-arrow"
+              />
+              
+                        
+            </button>
             
                     
-          </button>
+          </span>
           
                 
-        </span>
+        </div>
         
             
       </div>
@@ -983,28 +1015,44 @@ exports[`Storyshots Patterns/Combobox Input Disabled And Read Only 1`] = `
   
     
   <div
-    class="fd-popover"
+    style="display:flex;flex-direction:column"
   >
     
         
+    <label
+      class="fd-form-label"
+      for="readonlyCombobox"
+    >
+      Readonly
+    </label>
+    
+        
     <div
-      aria-controls="F4GcX348"
-      aria-expanded="false"
-      aria-haspopup="false"
-      aria-readonly="true"
-      class="fd-popover__control"
-      readonly=""
+      class="fd-popover"
     >
       
             
-      <input
+      <div
+        aria-controls="F4GcX348"
+        aria-expanded="false"
+        aria-haspopup="false"
         aria-readonly="true"
-        class="fd-input fd-input-group__input"
-        id=""
+        class="fd-popover__control"
         readonly=""
-        type="text"
-        value="Orange"
-      />
+      >
+        
+                
+        <input
+          aria-readonly="true"
+          class="fd-input fd-input-group__input"
+          id="readonlyCombobox"
+          readonly=""
+          type="text"
+          value="Orange"
+        />
+        
+            
+      </div>
       
         
     </div>
@@ -1023,153 +1071,171 @@ exports[`Storyshots Patterns/Combobox Input Match Popover Body Size 1`] = `
   
     
   <div
-    class="fd-popover"
+    style="display:flex;flex-direction:column"
   >
     
+        
+    <label
+      class="fd-form-label"
+      for="matchPopoverBodySize"
+    >
+      Match Popover Body Size
+    </label>
     
+        
     <div
-      aria-controls="F4HTFDLK6"
-      aria-expanded="false"
-      aria-haspopup="true"
-      class="fd-popover__control"
+      class="fd-popover"
     >
       
-        
+            
       <div
-        class="fd-input-group fd-input-group--control"
+        aria-controls="F4HTFDLK6"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="fd-popover__control"
       >
         
-            
-        <input
-          class="fd-input fd-input-group__input"
-          id=""
-          placeholder="Select Ingredient"
-          type="text"
-        />
-        
-            
-        <span
-          class="fd-input-group__addon fd-input-group__addon--button"
+                
+        <div
+          class="fd-input-group fd-input-group--control"
         >
           
-                
-          <button
-            aria-controls="F4HTFDLK6"
-            aria-expanded="true"
-            aria-haspopup="true"
-            class="fd-input-group__button fd-button fd-button--transparent"
+                    
+          <input
+            class="fd-input fd-input-group__input"
+            id="matchPopoverBodySize"
+            placeholder="Select Ingredient"
+            type="text"
+          />
+          
+                    
+          <span
+            class="fd-input-group__addon fd-input-group__addon--button"
           >
             
+                        
+            <button
+              aria-controls="F4HTFDLK6"
+              aria-expanded="true"
+              aria-haspopup="true"
+              aria-label="show/hide fruit options"
+              class="fd-input-group__button fd-button fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--navigation-down-arrow"
+              />
+              
+                        
+            </button>
+            
                     
-            <i
-              class="sap-icon--navigation-down-arrow"
-            />
-            
-                
-          </button>
+          </span>
           
+                
+        </div>
+        
             
-        </span>
-        
-        
       </div>
       
-    
-    </div>
-    
-    
-    <div
-      aria-hidden="false"
-      class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
-      id="F4HTFDLK6"
-    >
-      
-        
+            
       <div
-        class="fd-popover__wrapper"
+        aria-hidden="false"
+        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+        id="F4HTFDLK6"
       >
         
-            
-        <ul
-          class="fd-list fd-list--dropdown"
-          role="listbox"
+                
+        <div
+          class="fd-popover__wrapper"
         >
           
-                
-          <li
-            class="fd-list__item is-selected"
-            role="option"
-            tabindex="0"
+                    
+          <ul
+            aria-label="fruit options"
+            class="fd-list fd-list--dropdown"
+            role="listbox"
           >
             
-                    
-            <span
-              class="fd-list__title"
+                        
+            <li
+              class="fd-list__item is-selected"
+              role="option"
+              tabindex="0"
             >
-              Apple
-            </span>
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Apple
+              </span>
+              
+                        
+            </li>
             
-                
-          </li>
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Orange
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Banana
+              </span>
+              
+                        
+            </li>
+            
+                        
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__title"
+              >
+                Kiwi
+              </span>
+              
+                        
+            </li>
+            
+                    
+          </ul>
           
                 
-          <li
-            class="fd-list__item"
-            role="option"
-            tabindex="0"
-          >
-            
-                    
-            <span
-              class="fd-list__title"
-            >
-              Orange
-            </span>
-            
-                
-          </li>
-          
-                
-          <li
-            class="fd-list__item"
-            role="option"
-            tabindex="0"
-          >
-            
-                    
-            <span
-              class="fd-list__title"
-            >
-              Banana
-            </span>
-            
-                
-          </li>
-          
-                
-          <li
-            class="fd-list__item"
-            role="option"
-            tabindex="0"
-          >
-            
-                    
-            <span
-              class="fd-list__title"
-            >
-              Kiwi
-            </span>
-            
-                
-          </li>
-          
-            
-        </ul>
+        </div>
         
-        
+            
       </div>
       
-    
+        
     </div>
     
     
@@ -1187,8 +1253,10 @@ exports[`Storyshots Patterns/Combobox Input Mobile 1`] = `
 >
   
     
-  <div
+  <section
+    aria-labelledby="mobileDialogHeader"
     class="fd-dialog__content"
+    role="dialog"
   >
     
         
@@ -1209,6 +1277,7 @@ exports[`Storyshots Patterns/Combobox Input Mobile 1`] = `
                     
           <h3
             class="fd-title fd-title--h5"
+            id="mobileDialogHeader"
           >
             
                         Ingredients
@@ -1271,8 +1340,9 @@ exports[`Storyshots Patterns/Combobox Input Mobile 1`] = `
           
                      
           <input
+            aria-labelledby="mobileDialogHeader"
             class="fd-input fd-input-group__input"
-            id=""
+            id="mobileCombobox"
             placeholder="Select Ingredient"
             type="text"
             value="Apple"
@@ -1285,6 +1355,7 @@ exports[`Storyshots Patterns/Combobox Input Mobile 1`] = `
             
                          
             <button
+              aria-label="hide/show options"
               class="fd-input-group__button fd-button fd-button--transparent"
             >
               
@@ -1313,167 +1384,176 @@ exports[`Storyshots Patterns/Combobox Input Mobile 1`] = `
       class="fd-dialog__body fd-dialog__body--no-vertical-padding"
     >
       
-              
+            
+      <label
+        class="fd-list__group-header"
+        id="fruitsMobileHeader"
+      >
+        Fruits
+      </label>
+      
+            
       <ul
+        aria-labelledby="fruitsMobileHeader"
         class="fd-list fd-list--dropdown"
         role="listbox"
       >
         
-                 
-        <li
-          class="fd-list__group-header"
-        >
-          
-                     Fruits
-                 
-        </li>
-        
-                 
+                
         <li
           class="fd-list__item is-selected"
           role="option"
           tabindex="0"
         >
           
-                     
+                    
           <span
             class="fd-list__title"
           >
             Apple
           </span>
           
-                 
+                
         </li>
         
-                 
+                
         <li
           class="fd-list__item"
           role="option"
           tabindex="0"
         >
           
-                     
+                    
           <span
             class="fd-list__title"
           >
             Orange
           </span>
           
-                 
+                
         </li>
         
-                 
+                
         <li
           class="fd-list__item"
           role="option"
           tabindex="0"
         >
           
-                     
+                    
           <span
             class="fd-list__title"
           >
             Banana
           </span>
           
-                 
+                
         </li>
         
-                 
+                
         <li
           class="fd-list__item"
           role="option"
           tabindex="0"
         >
           
-                     
+                    
           <span
             class="fd-list__title"
           >
             Kiwi
           </span>
           
-                 
+                
         </li>
         
-                 
-        <li
-          class="fd-list__group-header"
-        >
-          
-                     Vegetables
-                 
-        </li>
+            
+      </ul>
+      
+            
+      <label
+        class="fd-list__group-header"
+        id="vegMobileHeader"
+      >
+        Vegetables
+      </label>
+      
+            
+      <ul
+        aria-labelledby="vegMobileHeader"
+        class="fd-list fd-list--dropdown"
+        role="listbox"
+      >
         
-                 
+                
         <li
           class="fd-list__item"
           role="option"
           tabindex="0"
         >
           
-                     
+                    
           <span
             class="fd-list__title"
           >
             Tomato
           </span>
           
-                 
+                
         </li>
         
-                 
+                
         <li
           class="fd-list__item"
           role="option"
           tabindex="0"
         >
           
-                     
+                    
           <span
             class="fd-list__title"
           >
             Onion
           </span>
           
-                 
+                
         </li>
         
-                 
+                
         <li
           class="fd-list__item"
           role="option"
           tabindex="0"
         >
           
-                     
+                    
           <span
             class="fd-list__title"
           >
             Spinach
           </span>
           
-                 
+                
         </li>
         
-                 
+                
         <li
           class="fd-list__item"
           role="option"
           tabindex="0"
         >
           
-                     
+                    
           <span
             class="fd-list__title"
           >
             Potato
           </span>
           
-                 
+                
         </li>
         
-             
+            
       </ul>
       
         
@@ -1511,7 +1591,7 @@ exports[`Storyshots Patterns/Combobox Input Mobile 1`] = `
     </footer>
     
     
-  </div>
+  </section>
   
 
 </div>
@@ -1523,11 +1603,19 @@ exports[`Storyshots Patterns/Combobox Input Semantic 1`] = `
 >
   
     
+  <label
+    class="fd-form-label"
+    for="semanticCombobox"
+  >
+    Semantic Combobox
+  </label>
+  
+    
   <div
     class="fd-popover"
   >
     
-    
+        
     <div
       aria-controls="F4GcEX34"
       aria-expanded="false"
@@ -1535,157 +1623,159 @@ exports[`Storyshots Patterns/Combobox Input Semantic 1`] = `
       class="fd-popover__control"
     >
       
-                
+            
       <div
         class="fd-input-group fd-input-group--control is-success"
       >
         
-                    
+                
         <input
           class="fd-input fd-input--compact fd-input-group__input"
-          id=""
+          id="semanticCombobox"
           placeholder="Select Fruit"
           type="text"
         />
         
-                    
+                
         <span
           class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button"
         >
           
-                        
+                    
           <button
             aria-controls="F4GcEX34"
             aria-expanded="true"
             aria-haspopup="true"
+            aria-label="show/hide fruit options"
             class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-select__button"
           >
             
-                            
+                        
             <i
               class="sap-icon--navigation-down-arrow"
             />
             
-                        
+                    
           </button>
           
-                    
+                
         </span>
         
-                
+            
       </div>
       
-            
+        
     </div>
     
-    
+        
     <div
       aria-hidden="false"
       class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill"
       id="F4GcEX34"
     >
       
-        
+            
       <div
         class="fd-popover__wrapper"
       >
         
-            
+                
+        <span
+          class="fd-list__message fd-list__message--success"
+        >
+          Success message
+        </span>
+        
+                
         <ul
+          aria-label="fruit options"
           class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact"
           role="listbox"
         >
           
-                
-          <li
-            class="fd-list__message fd-list__message--success"
-          >
-            Success message
-          </li>
-          
-                
+                    
           <li
             class="fd-list__item is-selected"
             role="option"
             tabindex="0"
           >
             
-                    
+                        
             <span
               class="fd-list__title"
             >
               
-                        
+                            
               <span
                 class="fd-list__bold"
               >
                 App
               </span>
               le
-                    
+                        
             </span>
             
-                
+                    
           </li>
           
-                
+                    
           <li
             class="fd-list__item"
             role="option"
             tabindex="0"
           >
             
-                    
+                        
             <span
               class="fd-list__title"
             >
               Orange
             </span>
             
-                
+                    
           </li>
           
-                
+                    
           <li
             class="fd-list__item"
             role="option"
             tabindex="0"
           >
             
-                    
+                        
             <span
               class="fd-list__title"
             >
               Banana
             </span>
             
-                
+                    
           </li>
           
-                
+                    
           <li
             class="fd-list__item"
             role="option"
             tabindex="0"
           >
             
-                    
+                        
             <span
               class="fd-list__title"
             >
               Kiwi
             </span>
             
-                
+                    
           </li>
           
-            
+                
         </ul>
         
-        
+            
       </div>
       
-    
+        
     </div>
     
     
@@ -1697,13 +1787,21 @@ exports[`Storyshots Patterns/Combobox Input Semantic 1`] = `
 
 exports[`Storyshots Patterns/Combobox Input Two Items And Items Grouping 1`] = `
 <div
-  style="height:500px"
+  style="display:flex;justify-content:space-around;height:700px"
 >
   
     
   <div
-    style="display:flex;justify-content:space-around"
+    style="display:flex;flex-direction:column"
   >
+    
+        
+    <label
+      class="fd-form-label"
+      for="twoItems"
+    >
+      Product prices
+    </label>
     
         
     <div
@@ -1726,7 +1824,7 @@ exports[`Storyshots Patterns/Combobox Input Two Items And Items Grouping 1`] = `
                     
           <input
             class="fd-input fd-input-group__input"
-            id=""
+            id="twoItems"
             placeholder="Select Product"
             type="text"
           />
@@ -1741,6 +1839,7 @@ exports[`Storyshots Patterns/Combobox Input Two Items And Items Grouping 1`] = `
               aria-controls="F4GRTGLK6"
               aria-expanded="true"
               aria-haspopup="true"
+              aria-label="show/hide fruit options"
               class="fd-input-group__button fd-button fd-button--transparent fd-select__button"
             >
               
@@ -1775,6 +1874,7 @@ exports[`Storyshots Patterns/Combobox Input Two Items And Items Grouping 1`] = `
           
                     
           <ul
+            aria-label="fruit options"
             class="fd-list fd-list--dropdown"
             role="listbox"
           >
@@ -1887,6 +1987,22 @@ exports[`Storyshots Patterns/Combobox Input Two Items And Items Grouping 1`] = `
         
     </div>
     
+    
+  </div>
+  
+    
+  <div
+    style="display:flex;flex-direction:column"
+  >
+    
+        
+    <label
+      class="fd-form-label"
+      for="groupedItems"
+    >
+      Fruits and Vegetables
+    </label>
+    
         
     <div
       class="fd-popover"
@@ -1908,7 +2024,7 @@ exports[`Storyshots Patterns/Combobox Input Two Items And Items Grouping 1`] = `
                     
           <input
             class="fd-input fd-input-group__input"
-            id=""
+            id="groupedItems"
             placeholder="Select Ingredient"
             type="text"
           />
@@ -1923,6 +2039,7 @@ exports[`Storyshots Patterns/Combobox Input Two Items And Items Grouping 1`] = `
               aria-controls="F4GcXLK6"
               aria-expanded="true"
               aria-haspopup="true"
+              aria-label="show/hide fruit options"
               class="fd-input-group__button fd-button fd-button--transparent"
             >
               
@@ -1956,19 +2073,21 @@ exports[`Storyshots Patterns/Combobox Input Two Items And Items Grouping 1`] = `
         >
           
                     
+          <label
+            class="fd-list__group-header"
+            id="fruitListHeader"
+          >
+            
+                        Fruits
+                    
+          </label>
+          
+                    
           <ul
+            aria-labelledby="fruitListHeader"
             class="fd-list fd-list--dropdown"
             role="listbox"
           >
-            
-                        
-            <li
-              class="fd-list__group-header"
-            >
-              
-                            Fruits
-                        
-            </li>
             
                         
             <li
@@ -2038,14 +2157,25 @@ exports[`Storyshots Patterns/Combobox Input Two Items And Items Grouping 1`] = `
                         
             </li>
             
-                        
-            <li
-              class="fd-list__group-header"
-            >
-              
-                            Vegetables
-                        
-            </li>
+                    
+          </ul>
+          
+                    
+          <label
+            class="fd-list__group-header"
+            id="vegListHeader"
+          >
+            
+                        Vegetables
+                    
+          </label>
+          
+                    
+          <ul
+            aria-labelledby="vegListHeader"
+            class="fd-list fd-list--dropdown"
+            role="listbox"
+          >
             
                         
             <li

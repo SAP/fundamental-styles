@@ -49,6 +49,7 @@ exports[`Storyshots Patterns/Contextual Menu Examples with Icon and Button 1`] =
         
                 
         <nav
+          aria-label="context menu"
           class="fd-menu"
         >
           
@@ -175,6 +176,7 @@ exports[`Storyshots Patterns/Contextual Menu Examples with Icon and Button 1`] =
         
                 
         <nav
+          aria-label="more options"
           class="fd-menu"
         >
           
@@ -204,11 +206,11 @@ exports[`Storyshots Patterns/Contextual Menu Examples with Icon and Button 1`] =
                             
               </a>
               
-                        
+                            
             </li>
             
                         
-            <span
+            <li
               class="fd-menu__separator"
             />
             

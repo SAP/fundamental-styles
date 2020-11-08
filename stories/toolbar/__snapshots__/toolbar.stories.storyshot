@@ -672,7 +672,6 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
 
 exports[`Storyshots Components/Toolbar Separator 1`] = `
 <section>
-  <h3 />
   
 
   <div
@@ -705,9 +704,6 @@ exports[`Storyshots Components/Toolbar Separator 1`] = `
     
 
   </div>
-  
-
-  <h3 />
   
 
   <div
@@ -867,7 +863,7 @@ exports[`Storyshots Components/Toolbar Sizes 1`] = `
 
 exports[`Storyshots Components/Toolbar Types 1`] = `
 <div
-  style="background-color: #ccc;background-color:var(--sapContent_ImagePlaceholde, #ccc); padding: 1rem"
+  style="background-color: #00000012; padding: 1rem"
 >
   
     

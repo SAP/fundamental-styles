@@ -6,7 +6,7 @@ exports[`Storyshots Components/Message Box Default 1`] = `
 >
   
     
-  <div
+  <section
     class="fd-message-box__content"
   >
     
@@ -101,7 +101,7 @@ exports[`Storyshots Components/Message Box Default 1`] = `
     </footer>
     
     
-  </div>
+  </section>
   
 
 </div>
@@ -116,7 +116,7 @@ exports[`Storyshots Components/Message Box No icon 1`] = `
   >
     
     
-    <div
+    <section
       class="fd-message-box__content"
     >
       
@@ -211,7 +211,7 @@ exports[`Storyshots Components/Message Box No icon 1`] = `
       </footer>
       
     
-    </div>
+    </section>
     
 
   </div>
@@ -229,7 +229,7 @@ exports[`Storyshots Components/Message Box No icon 1`] = `
   >
     
     
-    <div
+    <section
       class="fd-message-box__content"
     >
       
@@ -307,7 +307,7 @@ exports[`Storyshots Components/Message Box No icon 1`] = `
       </footer>
       
     
-    </div>
+    </section>
     
 
   </div>
@@ -325,7 +325,7 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
   >
     
     
-    <div
+    <section
       class="fd-message-box__content fd-message-box__content--s"
     >
       
@@ -420,7 +420,7 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
       </footer>
       
     
-    </div>
+    </section>
     
 
   </div>
@@ -438,7 +438,7 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
   >
     
     
-    <div
+    <section
       class="fd-message-box__content fd-message-box__content--m"
     >
       
@@ -516,7 +516,7 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
       </footer>
       
     
-    </div>
+    </section>
     
 
   </div>
@@ -535,7 +535,7 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
   >
     
     
-    <div
+    <section
       class="fd-message-box__content fd-message-box__content--l"
     >
       
@@ -613,7 +613,7 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
       </footer>
       
     
-    </div>
+    </section>
     
 
   </div>
@@ -631,7 +631,7 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
   >
     
     
-    <div
+    <section
       class="fd-message-box__content fd-message-box__content--xl"
     >
       
@@ -709,7 +709,7 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
       </footer>
       
     
-    </div>
+    </section>
     
 
   </div>
@@ -725,7 +725,7 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
   >
     
     
-    <div
+    <section
       class="fd-message-box__content"
     >
       
@@ -820,7 +820,7 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
       </footer>
       
     
-    </div>
+    </section>
     
 
   </div>
@@ -838,7 +838,7 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
   >
     
     
-    <div
+    <section
       class="fd-message-box__content"
     >
       
@@ -916,7 +916,7 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
       </footer>
       
     
-    </div>
+    </section>
     
 
   </div>
@@ -934,7 +934,7 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
   >
     
     
-    <div
+    <section
       class="fd-message-box__content"
     >
       
@@ -1012,7 +1012,7 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
       </footer>
       
     
-    </div>
+    </section>
     
 
   </div>
@@ -1030,7 +1030,7 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
   >
     
     
-    <div
+    <section
       class="fd-message-box__content"
     >
       
@@ -1108,7 +1108,7 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
       </footer>
       
     
-    </div>
+    </section>
     
 
   </div>
@@ -1126,7 +1126,7 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
   >
     
     
-    <div
+    <section
       class="fd-message-box__content"
     >
       
@@ -1204,7 +1204,7 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
       </footer>
       
     
-    </div>
+    </section>
     
 
   </div>
