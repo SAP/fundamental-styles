@@ -2071,7 +2071,7 @@ exports[`Storyshots Components/Tabs Semantic Inline 1`] = `
       
         
       <a
-        class="fd-tabs__link"
+        class="fd-tabs__link is-selected"
         href="#wupC7s"
       >
         
@@ -2343,7 +2343,7 @@ exports[`Storyshots Components/Tabs Semantic Mode 1`] = `
       
       
       <a
-        class="fd-tabs__link"
+        class="fd-tabs__link is-selected"
         href="#DomvG6"
       >
         
@@ -2588,7 +2588,6 @@ exports[`Storyshots Components/Tabs Tab With Counters 1`] = `
     
     <li
       aria-controls="d9vOir"
-      aria-selected="true"
       class="fd-tabs__item"
       role="tab"
     >
@@ -2624,6 +2623,7 @@ exports[`Storyshots Components/Tabs Tab With Counters 1`] = `
     
     <li
       aria-controls="bSj6ft"
+      aria-selected="true"
       class="fd-tabs__item"
       role="tab"
     >

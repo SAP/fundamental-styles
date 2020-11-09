@@ -57,7 +57,7 @@ primary.storyName = 'Default';
 
 export const tabWithCounters = () => `
 <ul class="fd-tabs fd-tabs--s fd-tabs--compact" role="tablist">
-    <li role="tab" class="fd-tabs__item" aria-selected="true" aria-controls="d9vOir">
+    <li role="tab" class="fd-tabs__item" aria-controls="d9vOir">
         <a class="fd-tabs__link" href="#d9vOir">
             <p class="fd-tabs__count">13</p>
             <span class="fd-tabs__tag">
@@ -65,7 +65,7 @@ export const tabWithCounters = () => `
             </span>
         </a>
     </li>
-    <li role="tab" class="fd-tabs__item" aria-controls="bSj6ft">
+    <li role="tab" class="fd-tabs__item" aria-controls="bSj6ft" aria-selected="true">
         <a class="fd-tabs__link" href="#bSj6ft">
             <p class="fd-tabs__count">1</p>
             <span class="fd-tabs__tag">
@@ -472,7 +472,7 @@ export const semanticMode = () => `
         </a>
     </li>
     <li role="tab" class="fd-tabs__item fd-tabs__item--warning" aria-selected="true" aria-controls="DomvG6">
-      <a class="fd-tabs__link" href="#DomvG6">
+      <a class="fd-tabs__link is-selected" href="#DomvG6">
             <span class="fd-tabs__icon">
                 <i class="sap-icon--cart" role="presentation"></i>
                 <p class="fd-tabs__count">71</p>
@@ -605,7 +605,7 @@ export const semanticInline = () => `
         </a>
     </li>
     <li role="tab" aria-selected="true" class="fd-tabs__item fd-tabs__item--information" aria-controls="wupC7s">
-        <a class="fd-tabs__link" href="#wupC7s">
+        <a class="fd-tabs__link is-selected" href="#wupC7s">
             <p class="fd-tabs__count">24</p>
             <span class="fd-tabs__tag">
                 Information
