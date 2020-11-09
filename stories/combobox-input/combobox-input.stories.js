@@ -19,11 +19,18 @@ export const cozyAndCompact = () => `<div style="display:flex;justify-content:sp
     <div style="display:flex;flex-direction:column">
         <label for="cozyCombobox" class="fd-form-label">Combobox Cozy Mode</label>
         <div class="fd-popover">
-            <div class="fd-popover__control" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="true">
+            <div class="fd-popover__control" aria-controls="F4GcX348" aria-expanded="true" aria-haspopup="true"
+                id="msac9uc"
+                onclick="
+                    toggleElAttrs('F4GcX348', ['aria-hidden']);
+                    toggleElAttrs('amodjsaidn', ['aria-expanded']);
+                    toggleElAttrs('msac9uc', ['aria-expanded']);
+                ">
                 <div class="fd-input-group fd-input-group--control">
                     <input type="text" class="fd-input fd-input-group__input" id="cozyCombobox" placeholder="Select Fruit">
                     <span class="fd-input-group__addon fd-input-group__addon--button">
                         <button
+                            id="amodjsaidn"
                             aria-label="show/hide fruit options"
                             aria-controls="F4GcX348"
                             aria-expanded="true" aria-haspopup="true"
@@ -91,11 +98,18 @@ export const cozyAndCompact = () => `<div style="display:flex;justify-content:sp
     <div style="display:flex;flex-direction:column">
         <label for="compactCombobox" class="fd-form-label">Combobox Compact Mode</label>
         <div class="fd-popover">
-            <div class="fd-popover__control" aria-controls="F4GcX34" aria-expanded="false" aria-haspopup="true">
+            <div class="fd-popover__control" aria-controls="F4GcX34" aria-expanded="true" aria-haspopup="true"
+                id="emi2qudh"
+                onclick="
+                    toggleElAttrs('F4GcX34', ['aria-hidden']);
+                    toggleElAttrs('nda8sd7abd', ['aria-expanded']);
+                    toggleElAttrs('emi2qudh', ['aria-expanded']);
+                ">
                 <div class="fd-input-group fd-input-group--control">
                     <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="compactCombobox" placeholder="Select Fruit">
                     <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
                         <button
+                            id="nda8sd7abd"
                             aria-label="show/hide fruit options"
                             aria-controls="F4GcX34"
                             aria-expanded="true"
@@ -141,13 +155,20 @@ export const asFormItem = () => `<div style="height:700px">
     <div class="fd-form-item">
         <label for="comboboxAsFormItem" class="fd-form-label">Combobox as a form item</label>
         <div class="fd-popover">
-            <div class="fd-popover__control" aria-controls="F4GcX349" aria-expanded="false" aria-haspopup="true">
+            <div class="fd-popover__control" aria-controls="amsfiaufuaskhjd" aria-expanded="true" aria-haspopup="true"
+                id="ansioda7dh"
+                onclick="
+                    toggleElAttrs('amsfiaufuaskhjd', ['aria-hidden']);
+                    toggleElAttrs('ansioda7dh', ['aria-expanded']);
+                    toggleElAttrs('ansid87arfgj', ['aria-expanded']);
+                ">
                 <div class="fd-input-group fd-input-group--control">
                     <input type="text" class="fd-input fd-input-group__input" id="comboboxAsFormItem" placeholder="Select Fruit">
                     <span class="fd-input-group__addon fd-input-group__addon--button">
                         <button
+                            id="ansid87arfgj"
                             aria-label="show/hide fruit options"
-                            aria-controls="F4GcX349"
+                            aria-controls="amsfiaufuaskhjd"
                             aria-expanded="true"
                             aria-haspopup="true"
                             class="fd-input-group__button fd-button fd-button--transparent">
@@ -155,7 +176,7 @@ export const asFormItem = () => `<div style="height:700px">
                     </span>
                 </div>
             </div>
-            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcX349">
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="amsfiaufuaskhjd">
                 <div class="fd-popover__wrapper docs-max-height">
                     <ul aria-label="fruit options" class="fd-list fd-list--dropdown" role="listbox">
                         <li role="option" tabindex="0" class="fd-list__item is-selected">
@@ -227,11 +248,18 @@ export const twoItemsAndItemsGrouping = () => `<div style="display:flex;justify-
     <div style="display:flex;flex-direction:column">
         <label for="twoItems" class="fd-form-label">Product prices</label>
         <div class="fd-popover">
-            <div class="fd-popover__control" aria-controls="F4GRTGLK6" aria-expanded="false" aria-haspopup="true">
+            <div class="fd-popover__control" aria-controls="F4GRTGLK6" aria-expanded="true" aria-haspopup="true"
+                id="124qqdf34"
+                onclick="
+                    toggleElAttrs('F4GRTGLK6', ['aria-hidden']);
+                    toggleElAttrs('124qqdf34', ['aria-expanded']);
+                    toggleElAttrs('f32rafsef', ['aria-expanded']);
+                ">
                 <div class="fd-input-group fd-input-group--control">
                     <input type="text" class="fd-input fd-input-group__input" id="twoItems" placeholder="Select Product">
                     <span class="fd-input-group__addon fd-input-group__addon--button">
                         <button
+                            id="f32rafsef"
                             aria-label="show/hide fruit options"
                             aria-controls="F4GRTGLK6"
                             aria-expanded="true"
@@ -269,11 +297,18 @@ export const twoItemsAndItemsGrouping = () => `<div style="display:flex;justify-
     <div style="display:flex;flex-direction:column">
         <label for="groupedItems" class="fd-form-label">Fruits and Vegetables</label>
         <div class="fd-popover">
-            <div class="fd-popover__control" aria-controls="F4GcXLK6" aria-expanded="true" aria-haspopup="true">
+            <div class="fd-popover__control" aria-controls="F4GcXLK6" aria-expanded="true" aria-haspopup="true"
+                id="mad09sudka"
+                onclick="
+                    toggleElAttrs('F4GcXLK6', ['aria-hidden']);
+                    toggleElAttrs('mad09sudka', ['aria-expanded']);
+                    toggleElAttrs('masioda8sdh', ['aria-expanded']);
+                ">
                 <div class="fd-input-group fd-input-group--control">
                     <input type="text" class="fd-input fd-input-group__input" id="groupedItems" placeholder="Select Ingredient">
                     <span class="fd-input-group__addon fd-input-group__addon--button">
                         <button
+                            id="masioda8sdh"
                             aria-label="show/hide fruit options"
                             aria-controls="F4GcXLK6"
                             aria-expanded="true"
@@ -341,11 +376,18 @@ export const matchPopoverBodySize = () => `<div style="display:flex;height:250px
     <div style="display:flex;flex-direction:column">
         <label for="matchPopoverBodySize" class="fd-form-label">Match Popover Body Size</label>
         <div class="fd-popover">
-            <div class="fd-popover__control" aria-controls="F4HTFDLK6" aria-expanded="false" aria-haspopup="true">
+            <div class="fd-popover__control" aria-controls="F4HTFDLK6" aria-expanded="true" aria-haspopup="true"
+                id="anmsdic0a8dh"
+                onclick="
+                    toggleElAttrs('F4HTFDLK6', ['aria-hidden']);
+                    toggleElAttrs('anmsdic0a8dh', ['aria-expanded']);
+                    toggleElAttrs('samdoia8fhg', ['aria-expanded']);
+                ">
                 <div class="fd-input-group fd-input-group--control">
                     <input type="text" class="fd-input fd-input-group__input" id="matchPopoverBodySize" placeholder="Select Ingredient">
                     <span class="fd-input-group__addon fd-input-group__addon--button">
                         <button
+                            id="samdoia8fhg"
                             aria-label="show/hide fruit options"
                             aria-controls="F4HTFDLK6"
                             aria-expanded="true"
@@ -432,11 +474,17 @@ This can also be done by using the \`.is-readonly\` class or \`aria-readonly="tr
 export const semantic = () => `<div style="height:200px">
     <label for="semanticCombobox" class="fd-form-label">Semantic Combobox</label>
     <div class="fd-popover">
-        <div class="fd-popover__control" aria-controls="F4GcEX34" aria-expanded="false" aria-haspopup="true">
+        <div class="fd-popover__control" aria-controls="F4GcEX34" aria-expanded="true" aria-haspopup="true"
+            id="mfa98agh4ih3"
+            onclick="
+                toggleElAttrs('F4GcEX34', ['aria-hidden']);
+                toggleElAttrs('mfa98agh4ih3', ['aria-expanded']);
+                toggleElAttrs('mpzjf2q09ugd', ['aria-expanded']);
+            ">
             <div class="fd-input-group fd-input-group--control is-success">
                 <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="semanticCombobox" placeholder="Select Fruit">
                 <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
-                    <button aria-label="show/hide fruit options"
+                    <button id="mpzjf2q09ugd" aria-label="show/hide fruit options"
                         class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-select__button" 
                     aria-controls="F4GcEX34" aria-expanded="true" aria-haspopup="true">
                         <i class="sap-icon--navigation-down-arrow"></i>

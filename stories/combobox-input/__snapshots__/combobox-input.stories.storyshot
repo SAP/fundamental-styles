@@ -25,10 +25,16 @@ exports[`Storyshots Patterns/Combobox Input As Form Item 1`] = `
       
             
       <div
-        aria-controls="F4GcX349"
-        aria-expanded="false"
+        aria-controls="amsfiaufuaskhjd"
+        aria-expanded="true"
         aria-haspopup="true"
         class="fd-popover__control"
+        id="ansioda7dh"
+        onclick="
+                    toggleElAttrs('amsfiaufuaskhjd', ['aria-hidden']);
+                    toggleElAttrs('ansioda7dh', ['aria-expanded']);
+                    toggleElAttrs('ansid87arfgj', ['aria-expanded']);
+                "
       >
         
                 
@@ -51,11 +57,12 @@ exports[`Storyshots Patterns/Combobox Input As Form Item 1`] = `
             
                         
             <button
-              aria-controls="F4GcX349"
+              aria-controls="amsfiaufuaskhjd"
               aria-expanded="true"
               aria-haspopup="true"
               aria-label="show/hide fruit options"
               class="fd-input-group__button fd-button fd-button--transparent"
+              id="ansid87arfgj"
             >
               
                             
@@ -77,7 +84,7 @@ exports[`Storyshots Patterns/Combobox Input As Form Item 1`] = `
       <div
         aria-hidden="false"
         class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill"
-        id="F4GcX349"
+        id="amsfiaufuaskhjd"
       >
         
                 
@@ -400,9 +407,15 @@ exports[`Storyshots Patterns/Combobox Input Cozy And Compact 1`] = `
             
       <div
         aria-controls="F4GcX348"
-        aria-expanded="false"
+        aria-expanded="true"
         aria-haspopup="true"
         class="fd-popover__control"
+        id="msac9uc"
+        onclick="
+                    toggleElAttrs('F4GcX348', ['aria-hidden']);
+                    toggleElAttrs('amodjsaidn', ['aria-expanded']);
+                    toggleElAttrs('msac9uc', ['aria-expanded']);
+                "
       >
         
                 
@@ -430,6 +443,7 @@ exports[`Storyshots Patterns/Combobox Input Cozy And Compact 1`] = `
               aria-haspopup="true"
               aria-label="show/hide fruit options"
               class="fd-input-group__button fd-button fd-button--transparent"
+              id="amodjsaidn"
             >
               
                             
@@ -767,9 +781,15 @@ exports[`Storyshots Patterns/Combobox Input Cozy And Compact 1`] = `
             
       <div
         aria-controls="F4GcX34"
-        aria-expanded="false"
+        aria-expanded="true"
         aria-haspopup="true"
         class="fd-popover__control"
+        id="emi2qudh"
+        onclick="
+                    toggleElAttrs('F4GcX34', ['aria-hidden']);
+                    toggleElAttrs('nda8sd7abd', ['aria-expanded']);
+                    toggleElAttrs('emi2qudh', ['aria-expanded']);
+                "
       >
         
                 
@@ -797,6 +817,7 @@ exports[`Storyshots Patterns/Combobox Input Cozy And Compact 1`] = `
               aria-haspopup="true"
               aria-label="show/hide fruit options"
               class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-select__button"
+              id="nda8sd7abd"
             >
               
                             
@@ -1090,9 +1111,15 @@ exports[`Storyshots Patterns/Combobox Input Match Popover Body Size 1`] = `
             
       <div
         aria-controls="F4HTFDLK6"
-        aria-expanded="false"
+        aria-expanded="true"
         aria-haspopup="true"
         class="fd-popover__control"
+        id="anmsdic0a8dh"
+        onclick="
+                    toggleElAttrs('F4HTFDLK6', ['aria-hidden']);
+                    toggleElAttrs('anmsdic0a8dh', ['aria-expanded']);
+                    toggleElAttrs('samdoia8fhg', ['aria-expanded']);
+                "
       >
         
                 
@@ -1120,6 +1147,7 @@ exports[`Storyshots Patterns/Combobox Input Match Popover Body Size 1`] = `
               aria-haspopup="true"
               aria-label="show/hide fruit options"
               class="fd-input-group__button fd-button fd-button--transparent"
+              id="samdoia8fhg"
             >
               
                             
@@ -1618,9 +1646,15 @@ exports[`Storyshots Patterns/Combobox Input Semantic 1`] = `
         
     <div
       aria-controls="F4GcEX34"
-      aria-expanded="false"
+      aria-expanded="true"
       aria-haspopup="true"
       class="fd-popover__control"
+      id="mfa98agh4ih3"
+      onclick="
+                toggleElAttrs('F4GcEX34', ['aria-hidden']);
+                toggleElAttrs('mfa98agh4ih3', ['aria-expanded']);
+                toggleElAttrs('mpzjf2q09ugd', ['aria-expanded']);
+            "
     >
       
             
@@ -1648,6 +1682,7 @@ exports[`Storyshots Patterns/Combobox Input Semantic 1`] = `
             aria-haspopup="true"
             aria-label="show/hide fruit options"
             class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-select__button"
+            id="mpzjf2q09ugd"
           >
             
                         
@@ -1811,9 +1846,15 @@ exports[`Storyshots Patterns/Combobox Input Two Items And Items Grouping 1`] = `
             
       <div
         aria-controls="F4GRTGLK6"
-        aria-expanded="false"
+        aria-expanded="true"
         aria-haspopup="true"
         class="fd-popover__control"
+        id="124qqdf34"
+        onclick="
+                    toggleElAttrs('F4GRTGLK6', ['aria-hidden']);
+                    toggleElAttrs('124qqdf34', ['aria-expanded']);
+                    toggleElAttrs('f32rafsef', ['aria-expanded']);
+                "
       >
         
                 
@@ -1841,6 +1882,7 @@ exports[`Storyshots Patterns/Combobox Input Two Items And Items Grouping 1`] = `
               aria-haspopup="true"
               aria-label="show/hide fruit options"
               class="fd-input-group__button fd-button fd-button--transparent fd-select__button"
+              id="f32rafsef"
             >
               
                             
@@ -2014,6 +2056,12 @@ exports[`Storyshots Patterns/Combobox Input Two Items And Items Grouping 1`] = `
         aria-expanded="true"
         aria-haspopup="true"
         class="fd-popover__control"
+        id="mad09sudka"
+        onclick="
+                    toggleElAttrs('F4GcXLK6', ['aria-hidden']);
+                    toggleElAttrs('mad09sudka', ['aria-expanded']);
+                    toggleElAttrs('masioda8sdh', ['aria-expanded']);
+                "
       >
         
                 
@@ -2041,6 +2089,7 @@ exports[`Storyshots Patterns/Combobox Input Two Items And Items Grouping 1`] = `
               aria-haspopup="true"
               aria-label="show/hide fruit options"
               class="fd-input-group__button fd-button fd-button--transparent"
+              id="masioda8sdh"
             >
               
                             
