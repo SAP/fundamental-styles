@@ -223,7 +223,7 @@ Applications are free to override this in their custom styles if needed and own 
     }
 };
 
-export const twoItemsAndItemsGrouping = () => `<div style="display:flex;justify-content:space-around;height:700px">
+export const twoItemsAndItemsGrouping = () => `<div style="display:flex;justify-content:space-around;height:500px">
     <div style="display:flex;flex-direction:column">
         <label for="twoItems" class="fd-form-label">Product prices</label>
         <div class="fd-popover">
@@ -337,7 +337,7 @@ In cases where the list items need to be categorized into groups, it is possible
     }
 };
 
-export const matchPopoverBodySize = () => `<div style="height:250px">
+export const matchPopoverBodySize = () => `<div style="display:flex;height:250px">
     <div style="display:flex;flex-direction:column">
         <label for="matchPopoverBodySize" class="fd-form-label">Match Popover Body Size</label>
         <div class="fd-popover">
