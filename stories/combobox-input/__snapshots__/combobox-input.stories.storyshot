@@ -1066,7 +1066,7 @@ exports[`Storyshots Patterns/Combobox Input Disabled And Read Only 1`] = `
 
 exports[`Storyshots Patterns/Combobox Input Match Popover Body Size 1`] = `
 <div
-  style="height:250px"
+  style="display:flex;height:250px"
 >
   
     
@@ -1787,7 +1787,7 @@ exports[`Storyshots Patterns/Combobox Input Semantic 1`] = `
 
 exports[`Storyshots Patterns/Combobox Input Two Items And Items Grouping 1`] = `
 <div
-  style="display:flex;justify-content:space-around;height:700px"
+  style="display:flex;justify-content:space-around;height:500px"
 >
   
     
