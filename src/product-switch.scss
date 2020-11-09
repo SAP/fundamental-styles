@@ -211,21 +211,8 @@ $block: #{$fd-namespace}-product-switch;
     white-space: normal;
     z-index: 1;
 
-    @include multiline-truncate($lineHeight: 1.25rem, $lineCount: 2);
-
-    &::after,
-    &::before {
-      content: none;
-    }
-
     &:last-child {
-      &::after {
-        content: "";
-      }
-
-      &::before {
-        content: "...";
-      }
+      @include line-clamp(2);
     }
 
     &::before {
@@ -390,7 +377,9 @@ $block: #{$fd-namespace}-product-switch;
         }
 
         .#{$block}__subtitle {
-          @include multiline-truncate($lineHeight: 1.25rem, $lineCount: 1);
+          @include fd-ellipsis();
+
+          line-height: 1.25rem;
 
           &::before {
             right: $before-right;
