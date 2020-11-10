@@ -3576,7 +3576,7 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
                         
             <input
               checked=""
-              class="fd-checkbox fd-checkbox--compact"
+              class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox--input"
               id="Ai4ez611c"
               type="checkbox"
             />
@@ -3718,7 +3718,7 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
             
                         
             <input
-              class="fd-checkbox fd-checkbox--compact"
+              class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox--input"
               id="Ai4ez611c2"
               type="checkbox"
             />
@@ -3853,7 +3853,7 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
                         
             <input
               checked=""
-              class="fd-checkbox fd-checkbox--compact"
+              class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox--input"
               id="Ai4ez611c3"
               type="checkbox"
             />
@@ -3980,7 +3980,7 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
             
                         
             <input
-              class="fd-checkbox fd-checkbox--compact"
+              class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox--input"
               id="Ai4ez611c4"
               type="checkbox"
             />
@@ -5056,7 +5056,7 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
             
                         
             <input
-              class="fd-radio fd-radio--compact"
+              class="fd-radio fd-radio--compact fd-grid-list__radio--input"
               id="pDidh1761"
               name="singleSelectLeftRadio"
               type="radio"
@@ -5199,7 +5199,7 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
                         
             <input
               checked=""
-              class="fd-radio fd-radio--compact"
+              class="fd-radio fd-radio--compact fd-grid-list__radio--input"
               id="p1Didh1761"
               name="singleSelectLeftRadio"
               type="radio"
@@ -5333,7 +5333,7 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
             
                         
             <input
-              class="fd-radio fd-radio--compact"
+              class="fd-radio fd-radio--compact fd-grid-list__radio--input"
               id="p12Didh1761"
               name="singleSelectLeftRadio"
               type="radio"
@@ -5460,7 +5460,7 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
             
                         
             <input
-              class="fd-radio fd-radio--compact"
+              class="fd-radio fd-radio--compact fd-grid-list__radio--input"
               id="p1x2Didh1761"
               name="singleSelectLeftRadio"
               type="radio"
@@ -5678,7 +5678,7 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
           
                     
           <input
-            class="fd-radio fd-radio--compact"
+            class="fd-radio fd-radio--compact fd-grid-list__radio--input"
             id="pDidh761"
             name="singleSelectMasterRadio"
             type="radio"
@@ -5820,7 +5820,7 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
           
                     
           <input
-            class="fd-radio fd-radio--compact"
+            class="fd-radio fd-radio--compact fd-grid-list__radio--input"
             id="pDidh761123"
             name="singleSelectMasterRadio"
             type="radio"
@@ -5956,7 +5956,7 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
                     
           <input
             checked=""
-            class="fd-radio fd-radio--compact"
+            class="fd-radio fd-radio--compact fd-grid-list__radio--input"
             id="pDidh7611234"
             name="singleSelectMasterRadio"
             type="radio"
@@ -6083,7 +6083,7 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
           
                     
           <input
-            class="fd-radio fd-radio--compact"
+            class="fd-radio fd-radio--compact fd-grid-list__radio--input"
             id="pDidh761642"
             name="singleSelectMasterRadio"
             type="radio"

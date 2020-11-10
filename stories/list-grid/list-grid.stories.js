@@ -285,7 +285,7 @@ export const singleSelectMasterMode = () => `<div class="fd-grid-list fd-grid-li
         <div class="fd-row">
             <div class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
-                    <input type="radio" class="fd-radio fd-radio--compact" id="pDidh761" name="singleSelectMasterRadio">
+                    <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio--input" id="pDidh761" name="singleSelectMasterRadio">
                     <label class="fd-radio__label fd-grid-list__radio--label" for="pDidh761"></label>
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <span class="fd-toolbar__spacer"></span>
@@ -319,7 +319,7 @@ export const singleSelectMasterMode = () => `<div class="fd-grid-list fd-grid-li
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <input type="radio" class="fd-radio fd-radio--compact" id="pDidh761123" name="singleSelectMasterRadio">
+                    <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio--input" id="pDidh761123" name="singleSelectMasterRadio">
                     <label class="fd-radio__label fd-grid-list__radio--label" for="pDidh761123"></label>
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <span class="fd-toolbar__spacer"></span>
@@ -352,7 +352,7 @@ export const singleSelectMasterMode = () => `<div class="fd-grid-list fd-grid-li
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item is-selected">
-                    <input type="radio" class="fd-radio fd-radio--compact" id="pDidh7611234" name="singleSelectMasterRadio" checked>
+                    <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio--input" id="pDidh7611234" name="singleSelectMasterRadio" checked>
                     <label class="fd-radio__label fd-grid-list__radio--label" for="pDidh7611234"></label>
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <span class="fd-toolbar__spacer"></span>
@@ -382,7 +382,7 @@ export const singleSelectMasterMode = () => `<div class="fd-grid-list fd-grid-li
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <input type="radio" class="fd-radio fd-radio--compact" id="pDidh761642" name="singleSelectMasterRadio">
+                    <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio--input" id="pDidh761642" name="singleSelectMasterRadio">
                     <label class="fd-radio__label fd-grid-list__radio--label" for="pDidh761642"></label>
                     <div class="fd-grid-list__item--body fd-grid-list__item--body--padding">
                         <div class="grid-list-item-body-example">
@@ -447,7 +447,7 @@ export const singleSelectLeftMode = () => `<div class="fd-grid-list fd-grid-list
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
-                        <input type="radio" class="fd-radio fd-radio--compact" id="pDidh1761" name="singleSelectLeftRadio">
+                        <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio--input" id="pDidh1761" name="singleSelectLeftRadio">
                         <label class="fd-radio__label fd-grid-list__radio--label" for="pDidh1761"></label>
                         <span class="fd-toolbar__spacer"></span>
 
@@ -481,7 +481,7 @@ export const singleSelectLeftMode = () => `<div class="fd-grid-list fd-grid-list
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item is-selected">
                     <div class="fd-toolbar fd-grid-list__toolbar">
-                        <input type="radio" class="fd-radio fd-radio--compact" id="p1Didh1761" name="singleSelectLeftRadio" checked>
+                        <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio--input" id="p1Didh1761" name="singleSelectLeftRadio" checked>
                         <label class="fd-radio__label fd-grid-list__radio--label" for="p1Didh1761"></label>
                         <span class="fd-toolbar__spacer"></span>
 
@@ -513,7 +513,7 @@ export const singleSelectLeftMode = () => `<div class="fd-grid-list fd-grid-list
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
-                        <input type="radio" class="fd-radio fd-radio--compact" id="p12Didh1761" name="singleSelectLeftRadio">
+                        <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio--input" id="p12Didh1761" name="singleSelectLeftRadio">
                         <label class="fd-radio__label fd-grid-list__radio--label" for="p12Didh1761"></label>
                         <span class="fd-toolbar__spacer"></span>
 
@@ -543,7 +543,7 @@ export const singleSelectLeftMode = () => `<div class="fd-grid-list fd-grid-list
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
-                        <input type="radio" class="fd-radio fd-radio--compact" id="p1x2Didh1761" name="singleSelectLeftRadio">
+                        <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio--input" id="p1x2Didh1761" name="singleSelectLeftRadio">
                         <label class="fd-radio__label fd-grid-list__radio--label" for="p1x2Didh1761"></label>
                         <span class="fd-toolbar__spacer"></span>
                     </div>
@@ -610,7 +610,7 @@ export const multiSelectMode = () => `<div class="fd-grid-list fd-grid-list__mod
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link is-selected">
                     <div class="fd-toolbar fd-grid-list__toolbar">
-                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez611c" checked>
+                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox--input" id="Ai4ez611c" checked>
                         <label class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox--label" for="Ai4ez611c"></label>
                         
                         <span class="fd-toolbar__spacer"></span>
@@ -645,7 +645,7 @@ export const multiSelectMode = () => `<div class="fd-grid-list fd-grid-list__mod
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
-                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez611c2">
+                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox--input" id="Ai4ez611c2">
                         <label class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox--label" for="Ai4ez611c2"></label>
 
                         <span class="fd-toolbar__spacer"></span>
@@ -678,7 +678,7 @@ export const multiSelectMode = () => `<div class="fd-grid-list fd-grid-list__mod
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item is-selected">
                     <div class="fd-toolbar fd-grid-list__toolbar">
-                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez611c3" checked>
+                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox--input" id="Ai4ez611c3" checked>
                         <label class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox--label" for="Ai4ez611c3"></label>
 
                         <span class="fd-toolbar__spacer"></span>
@@ -709,7 +709,7 @@ export const multiSelectMode = () => `<div class="fd-grid-list fd-grid-list__mod
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
-                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez611c4">
+                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox--input" id="Ai4ez611c4">
                         <label class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox--label" for="Ai4ez611c4"></label>
 
                         <span class="fd-toolbar__spacer"></span>

@@ -52,18 +52,45 @@ $block: #{$fd-namespace}-grid-list;
       color: var(--sapContent_MarkerTextColor);
     }
 
+    .#{$block}__radio--input {
+      @include fd-focus() {
+        + .#{$block}__radio--label {
+          outline-offset: 0;
+        }
+      }
+
+      + .#{$block}__radio--label {
+        @include fd-empty() {
+          padding: 0;
+        }
+
+        &::after {
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto !important;
+        }
+      }
+    }
+
+    .#{$block}__checkbox--input {
+      @include fd-focus() {
+        + .#{$block}__checkbox--label {
+          outline-offset: 0;
+        }
+      }
+
+      + .#{$block}__checkbox--label {
+        @include fd-empty() {
+          padding: 0;
+        }
+      }
+    }
+
     .#{$block}__checkbox--label,
     .#{$block}__radio--label {
       display: none;
-      padding: 0 !important;
-    }
-
-    .#{$block}__radio--label::after {
-      top: 0 !important;
-      right: 0;
-      bottom: 0;
-      left: 0 !important;
-      margin: auto !important;
     }
 
     &--state-unread {
@@ -108,7 +135,7 @@ $block: #{$fd-namespace}-grid-list;
     }
   }
 
-  &__toolbar {
+  .#{$block}__toolbar {
     @include fd-flex-vertical-center();
 
     padding: 0 1rem;
