@@ -41,7 +41,7 @@ The distrubtion folder contains several css files per component: a default file 
 
 ### Fonts & Icons
 
-This project does not contain fonts and icons. See our [Getting Started Guide](https://sap.github.io/fundamental-styles/getting-started.html) for more information.
+This project does not contain fonts and icons. These can be obtained from [here](https://www.npmjs.com/package/@sap-theming/theming-base-content).
 
 ## Working with the Project
 
