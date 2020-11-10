@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.51](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.50...v0.13.0-rc.51) (2020-11-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* Remove Inline Help from the library
+
+### Bug Fixes
+
+* remove the css for inline-help ([#1871](https://github.com/SAP/fundamental-styles/issues/1871)) ([3c20d06](https://github.com/SAP/fundamental-styles/commit/3c20d065bf821cb026f80d8f937b0f338b0a2cc3))
+
 ## [0.13.0-rc.50](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.49...v0.13.0-rc.50) (2020-11-10)
 
 
