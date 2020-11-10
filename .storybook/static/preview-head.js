@@ -183,11 +183,18 @@ function toggleElAttrs(id, toggleAttrs) {
         for(var i = 0; i < toggleAttrs.length; i++) {
             var val = ref.getAttribute(toggleAttrs[i]);
             if(val === 'true') {
-                ref.setAttribute(toggleAttrs[i], 'false');
+                setElAttr(id, toggleAttrs[i], 'false');
             } else if (val === 'false') {
-                ref.setAttribute(toggleAttrs[i], 'true');
+                setElAttr(id, toggleAttrs[i], 'true');
             }
         }
+    }
+}
+
+function setElAttr(id, attr, value) {
+    let ref = document.getElementById(id);
+    if (ref && attr && value){
+        ref.setAttribute(attr, value);
     }
 }
 

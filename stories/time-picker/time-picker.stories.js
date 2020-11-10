@@ -18,9 +18,20 @@ export const cozyAndCompactMode = () => `<div class="fd-container" style="height
     <div class="fd-popover fd-popover--no-arrow">
       <div class="fd-popover__control">
         <div class="fd-input-group">
-          <input type="text" class="fd-input fd-input-group__input" id="cozyTimepicker" value="4:25:10 PM" placeholder="hh:mm:ss am/pm">
+          <input
+            onfocus="
+              setElAttr('rKLOR811', 'aria-hidden', 'false');
+              setElAttr('sajdisa8fisfj', 'aria-expanded', 'true');
+            "
+            type="text" class="fd-input fd-input-group__input" id="cozyTimepicker" value="4:25:10 PM" placeholder="hh:mm:ss am/pm">
           <span class="fd-input-group__addon fd-input-group__addon--button">
-                      <button class="fd-input-group__button fd-button fd-button--transparent fd-popover__control"
+                      <button
+                        id="sajdisa8fisfj"
+                        onclick="
+                            toggleElAttrs('rKLOR811', ['aria-hidden']);
+                            toggleElAttrs('sajdisa8fisfj', ['aria-expanded']);
+                        "
+                        class="fd-input-group__button fd-button fd-button--transparent fd-popover__control"
                           aria-label="show/hide time picker" aria-controls="rKLOR811" aria-expanded="true" aria-haspopup="true">
                           <i class="sap-icon--time-entry-request"></i>
                       </button>
@@ -108,9 +119,20 @@ export const cozyAndCompactMode = () => `<div class="fd-container" style="height
     <div class="fd-popover fd-popover--no-arrow">
       <div class="fd-popover__control">
         <div class="fd-input-group">
-          <input type="text" class="fd-input fd-input-group__input fd-input--compact" id="compactTimepicker" value="4:25:10 PM" placeholder="hh:mm:ss am/pm">
+          <input
+            onfocus="
+              setElAttr('rKGNR811', 'aria-hidden', 'false');
+              setElAttr('maskdjasd98a', 'aria-expanded', 'true');
+            "
+            type="text" class="fd-input fd-input-group__input fd-input--compact" id="compactTimepicker" value="4:25:10 PM" placeholder="hh:mm:ss am/pm">
           <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                    <button class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-popover__control"
+                    <button
+                      id="maskdjasd98a"
+                      onclick="
+                          toggleElAttrs('rKGNR811', ['aria-hidden']);
+                          toggleElAttrs('maskdjasd98a', ['aria-expanded']);
+                      "
+                      class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-popover__control"
                         aria-label="show/hide time picker" aria-controls="rKGNR811" aria-expanded="true" aria-haspopup="true">
                         <i class="sap-icon--time-entry-request"></i>
                     </button>
@@ -215,9 +237,20 @@ export const tabletMode = () => `<div style="min-height: 580px;">
     <div class="fd-popover fd-popover--no-arrow">
         <div class="fd-popover__control">
             <div class="fd-input-group">
-                <input type="text" class="fd-input fd-input-group__input" id="tabletTimepicker" value="4:25:10 PM" placeholder="hh:mm:ss am/pm">
+                <input
+                  onfocus="
+                    setElAttr('rKLHJ5311', 'aria-hidden', 'false');
+                    setElAttr('a09dahsdkln', 'aria-expanded', 'true');
+                  "
+                  type="text" class="fd-input fd-input-group__input" id="tabletTimepicker" value="4:25:10 PM" placeholder="hh:mm:ss am/pm">
                 <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button fd-button--transparent fd-popover__control"
+                    <button
+                      id="a09dahsdkln"
+                      onclick="
+                          toggleElAttrs('rKLHJ5311', ['aria-hidden']);
+                          toggleElAttrs('a09dahsdkln', ['aria-expanded']);
+                      "
+                      class="fd-input-group__button fd-button fd-button--transparent fd-popover__control"
                         aria-label="show/hide time picker" aria-controls="rKLHJ5311" aria-expanded="true" aria-haspopup="true">
                         <i class="sap-icon--time-entry-request"></i>
                     </button>

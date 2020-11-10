@@ -20,9 +20,19 @@ export const defaultAndCompactSizes = () => `<div style="display:flex;justify-co
       <div class="fd-popover__control">
         <label class="fd-form-label" for="defaultDatepicker">Default</label>
         <div class="fd-input-group">
-          <input id="defaultDatepicker" class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date">
+          <input id="defaultDatepicker" class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date"
+            onfocus="
+              setElAttr('Itcgq828', 'aria-hidden', 'false');
+              setElAttr('kd9sg8dihf', 'aria-expanded', 'true');
+            "
+            >
           <span class="fd-input-group__addon fd-input-group__addon--button">
           <button
+            id="kd9sg8dihf"
+            onclick="
+                toggleElAttrs('Itcgq828', ['aria-hidden']);
+                toggleElAttrs('kd9sg8dihf', ['aria-expanded']);
+            "
             class="fd-input-group__button fd-popover__control fd-button fd-button--transparent"
             aria-controls="Itcgq828"
             aria-expanded="true"
@@ -213,9 +223,19 @@ export const defaultAndCompactSizes = () => `<div style="display:flex;justify-co
       <div class="fd-popover__control">
         <label class="fd-form-label" for="compactDatepicker">Compact</label>
         <div class="fd-input-group">
-          <input id="compactDatepicker" type="text" value="" placeholder="Pick a date" class="fd-input fd-input--compact fd-input-group__input">
+          <input id="compactDatepicker" type="text" value="" placeholder="Pick a date"
+            class="fd-input fd-input--compact fd-input-group__input"
+            onfocus="
+              setElAttr('Itcgq82', 'aria-hidden', 'false');
+              setElAttr('fmaiot78aiwohf', 'aria-expanded', 'true');
+            ">
           <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
           <button class="fd-button fd-button--transparent fd-button--compact fd-input-group__button fd-popover__control"
+            id="fmaiot78aiwohf"
+            onclick="
+                toggleElAttrs('Itcgq82', ['aria-hidden']);
+                toggleElAttrs('fmaiot78aiwohf', ['aria-expanded']);
+            "
             aria-controls="Itcgq82"
             aria-expanded="true"
             aria-haspopup="true"
@@ -413,10 +433,20 @@ export const todaySelectionButton = () => `<div class="fd-docs-date-picker" styl
     <div class="fd-popover__control">
     <label class="fd-form-label" for="todaySelectionDateInput">en-US DatePicker with today selection</label>
       <div class="fd-input-group">
-        <input id="todaySelectionDateInput" class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date">
+        <input id="todaySelectionDateInput" class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date"
+          onfocus="
+            setElAttr('amksodaidasdjs', 'aria-hidden', 'false');
+            setElAttr('mfapof8aosdusjd', 'aria-expanded', 'true');
+          ">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-        <button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent"
-          aria-controls="Itcgq829"
+        <button
+          id="mfapof8aosdusjd"
+          onclick="
+              toggleElAttrs('amksodaidasdjs', ['aria-hidden']);
+              toggleElAttrs('mfapof8aosdusjd', ['aria-expanded']);
+          "
+          class="fd-input-group__button fd-popover__control fd-button fd-button--transparent"
+          aria-controls="amksodaidasdjs"
           aria-expanded="true"
           aria-haspopup="true"
           aria-label="Choose Date"> 
@@ -425,7 +455,7 @@ export const todaySelectionButton = () => `<div class="fd-docs-date-picker" styl
         </span>
       </div>
     </div>
-    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false" id="Itcgq829">
+    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false" id="amksodaidasdjs">
       <div class="fd-calendar">
         <div class="fd-calendar__header">
           <div class="fd-calendar__navigation">
@@ -629,9 +659,18 @@ export const todayNavigationButton = () => `<div class="fd-docs-date-picker" sty
     <div class="fd-popover__control">
       <label class="fd-form-label" for="todayNavigationDateInput">en-US DatePicker with today navigation</label>
       <div class="fd-input-group">
-        <input id="todayNavigationDateInput" class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date">
+        <input id="todayNavigationDateInput" class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date"
+          onfocus="
+            setElAttr('Itcgq830', 'aria-hidden', 'false');
+            setElAttr('smniaof7ahfs', 'aria-expanded', 'true');
+          ">
         <span class="fd-input-group__addon fd-input-group__addon--button">
         <button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent"
+            id="smniaof7ahfs"
+            onclick="
+                toggleElAttrs('Itcgq830', ['aria-hidden']);
+                toggleElAttrs('smniaof7ahfs', ['aria-expanded']);
+            "
           aria-controls="Itcgq830"
           aria-expanded="true"
           aria-haspopup="true"

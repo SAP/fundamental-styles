@@ -202,7 +202,7 @@ desktop.storyName = 'Desktop';
 desktop.parameters = {
     docs: {
         storyDescription: `The dynamic page displays on desktop screens with the L, XL, and XXL sizes. To optimize dynamic page for desktop, add these modifier classes to the following elements:
-        
+    
 | Element | Modifier class |
 | ----------------: | :------------ |
 | Title Area | \`fd-dynamic-page__title-area--xl\` |
@@ -401,16 +401,22 @@ export const mobile = () => `
                             <div role="toolbar" aria-label="Header Content" class="fd-dynamic-page__title-content-toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                 <div class="fd-popover fd-toolbar__overflow">
                                     <div class="fd-popover__control">
-                                        <button class="fd-button fd-button--transparent"
-                                        aria-controls="wgxzK85915"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        aria-label="More Header Content">
-                                            <i class="sap-icon--overflow"></i>    
+                                        <button
+                                            id="asfmiasudashd"
+                                            onclick="
+                                                toggleElAttrs('wgxzK85915', ['aria-hidden']);
+                                                toggleElAttrs('asfmiasudashd', ['aria-expanded']);
+                                            "
+                                            class="fd-button fd-button--transparent"
+                                            aria-controls="wgxzK85915"
+                                            aria-haspopup="true"
+                                            aria-expanded="true"
+                                            aria-label="More Header Content">
+                                            <i class="sap-icon--overflow"></i>
                                         </button>
                                     </div>
                                     <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
-                                        aria-hidden="true"
+                                        aria-hidden="false"
                                         id="wgxzK85915">
                                         <div class="fd-toolbar__overflow__body">
                                             Overflowing title content
@@ -421,12 +427,18 @@ export const mobile = () => `
                             <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                 <div class="fd-popover fd-toolbar__overflow">
                                     <div class="fd-popover__control">
-                                        <button class="fd-button fd-button--transparent"
-                                        aria-controls="wgxzK85914"
-                                        aria-haspopup="true"
-                                        aria-expanded="true"
-                                        aria-label="Header actions">
-                                            <i class="sap-icon--overflow"></i>    
+                                        <button
+                                            id="maisodusakdnsma"
+                                            onclick="
+                                                toggleElAttrs('wgxzK85914', ['aria-hidden']);
+                                                toggleElAttrs('maisodusakdnsma', ['aria-expanded']);
+                                            "
+                                            class="fd-button fd-button--transparent"
+                                            aria-controls="wgxzK85914"
+                                            aria-haspopup="true"
+                                            aria-expanded="true"
+                                            aria-label="Header actions">
+                                            <i class="sap-icon--overflow"></i>
                                         </button>
                                     </div>
                                     <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
@@ -558,12 +570,18 @@ export const mobileCollapsed = () => `
                             <div role="toolbar" aria-label="Header Content" class="fd-dynamic-page__title-content-toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                 <div class="fd-popover fd-toolbar__overflow">
                                     <div class="fd-popover__control">
-                                        <button class="fd-button fd-button--transparent"
-                                        aria-controls="wgxzK85913"
-                                        aria-haspopup="true"
-                                        aria-expanded="true"
-                                        aria-label="More Header Content">
-                                            <i class="sap-icon--overflow"></i>    
+                                        <button
+                                            id="ko9as8dajskdj"
+                                            onclick="
+                                                toggleElAttrs('wgxzK85913', ['aria-hidden']);
+                                                toggleElAttrs('ko9as8dajskdj', ['aria-expanded']);
+                                            "
+                                            class="fd-button fd-button--transparent"
+                                            aria-controls="wgxzK85913"
+                                            aria-haspopup="true"
+                                            aria-expanded="true"
+                                            aria-label="More Header Content">
+                                            <i class="sap-icon--overflow"></i>
                                         </button>
                                     </div>
                                     <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
@@ -578,12 +596,18 @@ export const mobileCollapsed = () => `
                             <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-toolbar fd-toolbar--clear  fd-toolbar--cozy fd-toolbar--transparent">
                                 <div class="fd-popover fd-toolbar__overflow">
                                     <div class="fd-popover__control">
-                                        <button class="fd-button fd-button--transparent"
+                                        <button
+                                            id="k9r0a8ioasjd"
+                                            onclick="
+                                                toggleElAttrs('wgxzK85912', ['aria-hidden']);
+                                                toggleElAttrs('k9r0a8ioasjd', ['aria-expanded']);
+                                            "
+                                            class="fd-button fd-button--transparent"
                                             aria-controls="wgxzK85912"
                                             aria-haspopup="true"
                                             aria-expanded="false"
                                             aria-label="Header actions">
-                                            <i class="sap-icon--overflow"></i>    
+                                            <i class="sap-icon--overflow"></i>
                                         </button>
                                     </div>
                                     <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
@@ -759,7 +783,7 @@ export const summaryLine = () => `
                     </li>
                 </ul>  
             </div>
-        </header>     
+        </header> 
         <div class="fd-dynamic-page__content fd-dynamic-page__content--sm">
             <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV554" role="tabpanel">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 

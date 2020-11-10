@@ -25,7 +25,17 @@ export const withIconAndButton = () => `<div style="height: 400px;">
     <div style="display:flex;justify-content:space-around;">
         <div class="fd-popover">
             <div class="fd-popover__control">
-                <button class="fd-button fd-button--transparent" aria-controls="pQqQR213" aria-haspopup="true" aria-expanded="true" aria-label="More">
+                <button
+                    id="asmdi9a789edh"
+                    onclick="
+                        toggleElAttrs('pQqQR213', ['aria-hidden']);
+                        toggleElAttrs('asmdi9a789edh', ['aria-expanded']);
+                    "
+                    class="fd-button fd-button--transparent"
+                    aria-controls="pQqQR213"
+                    aria-haspopup="true"
+                    aria-expanded="true"
+                    aria-label="More">
                     <i class="sap-icon--overflow"></i>
                 </button>
             </div>
@@ -54,7 +64,17 @@ export const withIconAndButton = () => `<div style="height: 400px;">
 
         <div class="fd-popover">
             <div class="fd-popover__control">
-                <button class="fd-button" aria-controls="jhqD0558" aria-haspopup="true" aria-expanded="true" aria-label="More">More</button>
+                <button
+                    id="mioas8fahfmanf"
+                    onclick="
+                        toggleElAttrs('jhqD0558', ['aria-hidden']);
+                        toggleElAttrs('mioas8fahfmanf', ['aria-expanded']);
+                    "
+                    class="fd-button"
+                    aria-controls="jhqD0558"
+                    aria-haspopup="true"
+                    aria-expanded="true"
+                    aria-label="More">More</button>
             </div>
             <div class="fd-popover__body" aria-hidden="false" id="jhqD0558">
                 <nav aria-label="more options"class="fd-menu">

@@ -43,6 +43,10 @@ exports[`Storyshots Patterns/Time Picker Cozy And Compact Mode 1`] = `
             <input
               class="fd-input fd-input-group__input"
               id="cozyTimepicker"
+              onfocus="
+              setElAttr('rKLOR811', 'aria-hidden', 'false');
+              setElAttr('sajdisa8fisfj', 'aria-expanded', 'true');
+            "
               placeholder="hh:mm:ss am/pm"
               type="text"
               value="4:25:10 PM"
@@ -60,6 +64,11 @@ exports[`Storyshots Patterns/Time Picker Cozy And Compact Mode 1`] = `
                 aria-haspopup="true"
                 aria-label="show/hide time picker"
                 class="fd-input-group__button fd-button fd-button--transparent fd-popover__control"
+                id="sajdisa8fisfj"
+                onclick="
+                            toggleElAttrs('rKLOR811', ['aria-hidden']);
+                            toggleElAttrs('sajdisa8fisfj', ['aria-expanded']);
+                        "
               >
                 
                           
@@ -466,6 +475,10 @@ exports[`Storyshots Patterns/Time Picker Cozy And Compact Mode 1`] = `
             <input
               class="fd-input fd-input-group__input fd-input--compact"
               id="compactTimepicker"
+              onfocus="
+              setElAttr('rKGNR811', 'aria-hidden', 'false');
+              setElAttr('maskdjasd98a', 'aria-expanded', 'true');
+            "
               placeholder="hh:mm:ss am/pm"
               type="text"
               value="4:25:10 PM"
@@ -483,6 +496,11 @@ exports[`Storyshots Patterns/Time Picker Cozy And Compact Mode 1`] = `
                 aria-haspopup="true"
                 aria-label="show/hide time picker"
                 class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-popover__control"
+                id="maskdjasd98a"
+                onclick="
+                          toggleElAttrs('rKGNR811', ['aria-hidden']);
+                          toggleElAttrs('maskdjasd98a', ['aria-expanded']);
+                      "
               >
                 
                         
@@ -925,6 +943,10 @@ exports[`Storyshots Patterns/Time Picker Tablet Mode 1`] = `
         <input
           class="fd-input fd-input-group__input"
           id="tabletTimepicker"
+          onfocus="
+                    setElAttr('rKLHJ5311', 'aria-hidden', 'false');
+                    setElAttr('a09dahsdkln', 'aria-expanded', 'true');
+                  "
           placeholder="hh:mm:ss am/pm"
           type="text"
           value="4:25:10 PM"
@@ -942,6 +964,11 @@ exports[`Storyshots Patterns/Time Picker Tablet Mode 1`] = `
             aria-haspopup="true"
             aria-label="show/hide time picker"
             class="fd-input-group__button fd-button fd-button--transparent fd-popover__control"
+            id="a09dahsdkln"
+            onclick="
+                          toggleElAttrs('rKLHJ5311', ['aria-hidden']);
+                          toggleElAttrs('a09dahsdkln', ['aria-expanded']);
+                      "
           >
             
                         

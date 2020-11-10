@@ -37,6 +37,10 @@ exports[`Storyshots Patterns/Date Picker Default And Compact Sizes 1`] = `
           <input
             class="fd-input fd-input-group__input"
             id="defaultDatepicker"
+            onfocus="
+              setElAttr('Itcgq828', 'aria-hidden', 'false');
+              setElAttr('kd9sg8dihf', 'aria-expanded', 'true');
+            "
             placeholder="Pick a date"
             type="text"
             value=""
@@ -54,6 +58,11 @@ exports[`Storyshots Patterns/Date Picker Default And Compact Sizes 1`] = `
               aria-haspopup="true"
               aria-label="Choose Date"
               class="fd-input-group__button fd-popover__control fd-button fd-button--transparent"
+              id="kd9sg8dihf"
+              onclick="
+                toggleElAttrs('Itcgq828', ['aria-hidden']);
+                toggleElAttrs('kd9sg8dihf', ['aria-expanded']);
+            "
             >
               
                 
@@ -988,6 +997,10 @@ exports[`Storyshots Patterns/Date Picker Default And Compact Sizes 1`] = `
           <input
             class="fd-input fd-input--compact fd-input-group__input"
             id="compactDatepicker"
+            onfocus="
+              setElAttr('Itcgq82', 'aria-hidden', 'false');
+              setElAttr('fmaiot78aiwohf', 'aria-expanded', 'true');
+            "
             placeholder="Pick a date"
             type="text"
             value=""
@@ -1005,6 +1018,11 @@ exports[`Storyshots Patterns/Date Picker Default And Compact Sizes 1`] = `
               aria-haspopup="true"
               aria-label="Choose Date"
               class="fd-button fd-button--transparent fd-button--compact fd-input-group__button fd-popover__control"
+              id="fmaiot78aiwohf"
+              onclick="
+                toggleElAttrs('Itcgq82', ['aria-hidden']);
+                toggleElAttrs('fmaiot78aiwohf', ['aria-expanded']);
+            "
             >
               
                 
@@ -4145,6 +4163,10 @@ exports[`Storyshots Patterns/Date Picker Today Navigation Button 1`] = `
           <input
             class="fd-input fd-input-group__input"
             id="todayNavigationDateInput"
+            onfocus="
+            setElAttr('Itcgq830', 'aria-hidden', 'false');
+            setElAttr('smniaof7ahfs', 'aria-expanded', 'true');
+          "
             placeholder="Pick a date"
             type="text"
             value=""
@@ -4162,6 +4184,11 @@ exports[`Storyshots Patterns/Date Picker Today Navigation Button 1`] = `
               aria-haspopup="true"
               aria-label="Choose Date"
               class="fd-input-group__button fd-popover__control fd-button fd-button--transparent"
+              id="smniaof7ahfs"
+              onclick="
+                toggleElAttrs('Itcgq830', ['aria-hidden']);
+                toggleElAttrs('smniaof7ahfs', ['aria-expanded']);
+            "
             >
                
             
@@ -5128,6 +5155,10 @@ exports[`Storyshots Patterns/Date Picker Today Selection Button 1`] = `
         <input
           class="fd-input fd-input-group__input"
           id="todaySelectionDateInput"
+          onfocus="
+            setElAttr('amksodaidasdjs', 'aria-hidden', 'false');
+            setElAttr('mfapof8aosdusjd', 'aria-expanded', 'true');
+          "
           placeholder="Pick a date"
           type="text"
           value=""
@@ -5140,11 +5171,16 @@ exports[`Storyshots Patterns/Date Picker Today Selection Button 1`] = `
           
         
           <button
-            aria-controls="Itcgq829"
+            aria-controls="amksodaidasdjs"
             aria-expanded="true"
             aria-haspopup="true"
             aria-label="Choose Date"
             class="fd-input-group__button fd-popover__control fd-button fd-button--transparent"
+            id="mfapof8aosdusjd"
+            onclick="
+              toggleElAttrs('amksodaidasdjs', ['aria-hidden']);
+              toggleElAttrs('mfapof8aosdusjd', ['aria-expanded']);
+          "
           >
              
             
@@ -5168,7 +5204,7 @@ exports[`Storyshots Patterns/Date Picker Today Selection Button 1`] = `
     <div
       aria-hidden="false"
       class="fd-popover__body fd-popover__body--no-arrow"
-      id="Itcgq829"
+      id="amksodaidasdjs"
     >
       
       

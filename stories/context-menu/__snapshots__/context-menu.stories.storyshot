@@ -27,6 +27,11 @@ exports[`Storyshots Patterns/Contextual Menu Examples with Icon and Button 1`] =
           aria-haspopup="true"
           aria-label="More"
           class="fd-button fd-button--transparent"
+          id="asmdi9a789edh"
+          onclick="
+                        toggleElAttrs('pQqQR213', ['aria-hidden']);
+                        toggleElAttrs('asmdi9a789edh', ['aria-expanded']);
+                    "
         >
           
                     
@@ -160,6 +165,11 @@ exports[`Storyshots Patterns/Contextual Menu Examples with Icon and Button 1`] =
           aria-haspopup="true"
           aria-label="More"
           class="fd-button"
+          id="mioas8fahfmanf"
+          onclick="
+                        toggleElAttrs('jhqD0558', ['aria-hidden']);
+                        toggleElAttrs('mioas8fahfmanf', ['aria-expanded']);
+                    "
         >
           More
         </button>
