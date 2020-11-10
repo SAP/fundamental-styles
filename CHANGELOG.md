@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.50](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.49...v0.13.0-rc.50) (2020-11-10)
+
+
+### Bug Fixes
+
+* RTL mode arrow button direction ([#1861](https://github.com/SAP/fundamental-styles/issues/1861)) ([d62aaef](https://github.com/SAP/fundamental-styles/commit/d62aaefb564ee45777b92c900202a4b2e04f3afa))
+
 ## [0.13.0-rc.49](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.48...v0.13.0-rc.49) (2020-11-10)
 
 
