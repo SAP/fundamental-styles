@@ -1,23 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Pagination First Page 1`] = `
+exports[`Storyshots Components/Pagination First page 1`] = `
 <div
   class="fd-pagination"
 >
   
-    
+  
   <span
     class="fd-pagination__total"
   >
     30 items
   </span>
   
-    
+  
   <nav
     class="fd-pagination__nav"
   >
     
-        
+      
     <a
       aria-disabled="true"
       aria-label="Previous"
@@ -25,7 +25,7 @@ exports[`Storyshots Components/Pagination First Page 1`] = `
       href="#"
     />
     
-        
+      
     <a
       class="fd-pagination__link is-selected"
       href="#"
@@ -33,7 +33,7 @@ exports[`Storyshots Components/Pagination First Page 1`] = `
       1
     </a>
     
-        
+      
     <a
       class="fd-pagination__link"
       href="#"
@@ -41,7 +41,7 @@ exports[`Storyshots Components/Pagination First Page 1`] = `
       2
     </a>
     
-        
+      
     <a
       class="fd-pagination__link"
       href="#"
@@ -49,7 +49,7 @@ exports[`Storyshots Components/Pagination First Page 1`] = `
       3
     </a>
     
-        
+      
     <a
       aria-disabled="false"
       aria-label="Next"
@@ -57,31 +57,31 @@ exports[`Storyshots Components/Pagination First Page 1`] = `
       href="#"
     />
     
-    
+  
   </nav>
   
 
 </div>
 `;
 
-exports[`Storyshots Components/Pagination Last Page 1`] = `
+exports[`Storyshots Components/Pagination Last page 1`] = `
 <div
   class="fd-pagination"
 >
   
-  
+
   <span
     class="fd-pagination__total"
   >
     500 items
   </span>
   
-  
+
   <nav
     class="fd-pagination__nav"
   >
     
-    
+  
     <a
       aria-disabled="false"
       aria-label="Previous"
@@ -89,7 +89,7 @@ exports[`Storyshots Components/Pagination Last Page 1`] = `
       href="#"
     />
     
-    
+  
     <a
       class="fd-pagination__link"
       href="#"
@@ -97,13 +97,13 @@ exports[`Storyshots Components/Pagination Last Page 1`] = `
       1
     </a>
     
-    
+  
     <span
       class="fd-pagination__more"
       role="presentation"
     />
     
-    
+  
     <a
       class="fd-pagination__link"
       href="#"
@@ -111,7 +111,7 @@ exports[`Storyshots Components/Pagination Last Page 1`] = `
       49
     </a>
     
-    
+  
     <a
       class="fd-pagination__link is-selected"
       href="#"
@@ -119,7 +119,7 @@ exports[`Storyshots Components/Pagination Last Page 1`] = `
       50
     </a>
     
-    
+  
     <a
       aria-disabled="true"
       aria-label="Next"
@@ -127,31 +127,31 @@ exports[`Storyshots Components/Pagination Last Page 1`] = `
       href="#"
     />
     
-  
+
   </nav>
   
 
 </div>
 `;
 
-exports[`Storyshots Components/Pagination Middle Page 1`] = `
+exports[`Storyshots Components/Pagination Middle pages 1`] = `
 <div
   class="fd-pagination"
 >
   
-  
+
   <span
     class="fd-pagination__total"
   >
     500 items
   </span>
   
-  
+
   <nav
     class="fd-pagination__nav"
   >
     
-    
+  
     <a
       aria-disabled="false"
       aria-label="Previous"
@@ -159,7 +159,7 @@ exports[`Storyshots Components/Pagination Middle Page 1`] = `
       href="#"
     />
     
-    
+  
     <a
       class="fd-pagination__link"
       href="#"
@@ -167,13 +167,13 @@ exports[`Storyshots Components/Pagination Middle Page 1`] = `
       1
     </a>
     
-    
+  
     <span
       class="fd-pagination__more"
       role="presentation"
     />
     
-    
+  
     <a
       class="fd-pagination__link"
       href="#"
@@ -181,7 +181,7 @@ exports[`Storyshots Components/Pagination Middle Page 1`] = `
       21
     </a>
     
-    
+  
     <a
       class="fd-pagination__link is-selected"
       href="#"
@@ -189,7 +189,7 @@ exports[`Storyshots Components/Pagination Middle Page 1`] = `
       22
     </a>
     
-    
+  
     <a
       class="fd-pagination__link"
       href="#"
@@ -197,13 +197,13 @@ exports[`Storyshots Components/Pagination Middle Page 1`] = `
       23
     </a>
     
-    
+  
     <span
       class="fd-pagination__more"
       role="presentation"
     />
     
-    
+  
     <a
       class="fd-pagination__link"
       href="#"
@@ -211,7 +211,7 @@ exports[`Storyshots Components/Pagination Middle Page 1`] = `
       50
     </a>
     
-    
+  
     <a
       aria-disabled="false"
       aria-label="Next"
@@ -219,31 +219,31 @@ exports[`Storyshots Components/Pagination Middle Page 1`] = `
       href="#"
     />
     
-  
+
   </nav>
   
 
 </div>
 `;
 
-exports[`Storyshots Components/Pagination Multiple Pages 1`] = `
+exports[`Storyshots Components/Pagination Mutliple pages 1`] = `
 <div
   class="fd-pagination"
 >
   
-  
+
   <span
     class="fd-pagination__total"
   >
     500 items
   </span>
   
-  
+
   <nav
     class="fd-pagination__nav"
   >
     
-    
+  
     <a
       aria-disabled="false"
       aria-label="Previous"
@@ -251,7 +251,7 @@ exports[`Storyshots Components/Pagination Multiple Pages 1`] = `
       href="#"
     />
     
-    
+  
     <a
       class="fd-pagination__link"
       href="#"
@@ -259,7 +259,7 @@ exports[`Storyshots Components/Pagination Multiple Pages 1`] = `
       1
     </a>
     
-    
+  
     <a
       class="fd-pagination__link is-selected"
       href="#"
@@ -267,7 +267,7 @@ exports[`Storyshots Components/Pagination Multiple Pages 1`] = `
       2
     </a>
     
-    
+  
     <a
       class="fd-pagination__link"
       href="#"
@@ -275,13 +275,13 @@ exports[`Storyshots Components/Pagination Multiple Pages 1`] = `
       3
     </a>
     
-    
+  
     <span
       class="fd-pagination__more"
       role="presentation"
     />
     
-    
+  
     <a
       class="fd-pagination__link"
       href="#"
@@ -289,7 +289,7 @@ exports[`Storyshots Components/Pagination Multiple Pages 1`] = `
       50
     </a>
     
-    
+  
     <a
       aria-disabled="false"
       aria-label="Next"
@@ -297,31 +297,31 @@ exports[`Storyshots Components/Pagination Multiple Pages 1`] = `
       href="#"
     />
     
-  
+
   </nav>
   
 
 </div>
 `;
 
-exports[`Storyshots Components/Pagination Second Page 1`] = `
+exports[`Storyshots Components/Pagination Second page 1`] = `
 <div
   class="fd-pagination"
 >
   
-  
+
   <span
     class="fd-pagination__total"
   >
     30 items
   </span>
   
-  
+
   <nav
     class="fd-pagination__nav"
   >
     
-    
+  
     <a
       aria-disabled="false"
       aria-label="Previous"
@@ -329,7 +329,7 @@ exports[`Storyshots Components/Pagination Second Page 1`] = `
       href="#"
     />
     
-    
+  
     <a
       class="fd-pagination__link"
       href="#"
@@ -337,7 +337,7 @@ exports[`Storyshots Components/Pagination Second Page 1`] = `
       1
     </a>
     
-    
+  
     <a
       class="fd-pagination__link is-selected"
       href="#"
@@ -345,7 +345,7 @@ exports[`Storyshots Components/Pagination Second Page 1`] = `
       2
     </a>
     
-    
+  
     <a
       class="fd-pagination__link"
       href="#"
@@ -353,7 +353,7 @@ exports[`Storyshots Components/Pagination Second Page 1`] = `
       3
     </a>
     
-    
+  
     <a
       aria-disabled="false"
       aria-label="Next"
@@ -361,7 +361,7 @@ exports[`Storyshots Components/Pagination Second Page 1`] = `
       href="#"
     />
     
-  
+
   </nav>
   
 
