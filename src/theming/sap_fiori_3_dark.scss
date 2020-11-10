@@ -107,4 +107,7 @@
 
   /* Form Header */
   --fdFormHeader_Border_Width: var(--sapList_BorderWidth);
+
+  /** Badge on Button */
+  --fdBadgeButton_Border_Color: var(--sapContent_BadgeBackground);
 }

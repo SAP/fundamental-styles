@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.47...v0.13.0-rc.48) (2020-11-10)
+
+
+### Features
+
+* add Button with badge ([#1835](https://github.com/SAP/fundamental-styles/issues/1835)) ([c4a5c83](https://github.com/SAP/fundamental-styles/commit/c4a5c83ad88cc4f43b679c5e624403cc0163bd97))
+
 ## [0.13.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.46...v0.13.0-rc.47) (2020-11-09)
 
 ## [0.13.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.45...v0.13.0-rc.46) (2020-11-09)

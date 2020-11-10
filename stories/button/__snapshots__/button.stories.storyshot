@@ -1,5 +1,100 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Components/Button Button With Badge 1`] = `
+<section>
+  
+
+  <button
+    class="fd-button"
+  >
+    
+    
+    <span
+      class="fd-button__text"
+    >
+      Cozy Badge Button
+    </span>
+    
+    
+    <span
+      class="fd-button__badge"
+    >
+      3984
+    </span>
+       
+
+  </button>
+  
+
+  <button
+    aria-label="Add to cart"
+    class="fd-button"
+  >
+    
+    
+    <i
+      class="sap-icon--cart"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-button__badge"
+    >
+      3
+    </span>
+       
+
+  </button>
+  
+
+  <button
+    class="fd-button fd-button--compact"
+  >
+    
+    
+    <span
+      class="fd-button__text"
+    >
+      Compact Badge Button
+    </span>
+    
+    
+    <span
+      class="fd-button__badge"
+    >
+      654
+    </span>
+       
+
+  </button>
+  
+
+  <button
+    aria-label="Add to cart"
+    class="fd-button fd-button--compact"
+  >
+    
+    
+    <i
+      class="sap-icon--cart"
+      role="presentation"
+    />
+    
+    
+    <span
+      class="fd-button__badge"
+    >
+      12
+    </span>
+       
+
+  </button>
+  
+
+</section>
+`;
+
 exports[`Storyshots Components/Button Button sizes 1`] = `
 <section>
   
