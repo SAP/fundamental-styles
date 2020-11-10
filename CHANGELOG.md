@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.49](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.48...v0.13.0-rc.49) (2020-11-10)
+
+
+### Bug Fixes
+
+* Center vertically text in switch component ([#1862](https://github.com/SAP/fundamental-styles/issues/1862)) ([ef4581e](https://github.com/SAP/fundamental-styles/commit/ef4581e2a7c80b44ef9f6075679dbfa87a0cbaaa))
+
 ## [0.13.0-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.47...v0.13.0-rc.48) (2020-11-10)
 
 
