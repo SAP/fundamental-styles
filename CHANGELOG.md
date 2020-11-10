@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.53](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.52...v0.13.0-rc.53) (2020-11-10)
+
+
+### Bug Fixes
+
+* Make stronger selector for message strip ([#1856](https://github.com/SAP/fundamental-styles/issues/1856)) ([c6300d8](https://github.com/SAP/fundamental-styles/commit/c6300d8c11c11df58a7959f33e8899984de79fe1))
+
 ## [0.13.0-rc.52](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.51...v0.13.0-rc.52) (2020-11-10)
 
 ## [0.13.0-rc.51](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.50...v0.13.0-rc.51) (2020-11-10)
