@@ -104,6 +104,7 @@ $block: #{$fd-namespace}-switch;
   &__text {
     @include fd-form-label();
 
+    align-self: auto;
     cursor: pointer;
   }
 
