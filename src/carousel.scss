@@ -15,12 +15,10 @@ $button: #{$fd-namespace}-button;
   $fd-carousel-dot-active-size: 0.5rem !default;
 
   @mixin after-position-overwrite() {
-    &::after {
-      top: $fd-carousel-button-focus-outline-offset;
-      bottom: $fd-carousel-button-focus-outline-offset;
-      left: $fd-carousel-button-focus-outline-offset;
-      right: $fd-carousel-button-focus-outline-offset;
-    }
+    top: $fd-carousel-button-focus-outline-offset;
+    bottom: $fd-carousel-button-focus-outline-offset;
+    left: $fd-carousel-button-focus-outline-offset;
+    right: $fd-carousel-button-focus-outline-offset;
   }
 
   @include fd-reset();
@@ -162,8 +160,9 @@ $button: #{$fd-namespace}-button;
     }
 
     @include fd-active() {
-      @include buttonFocus();
-      @include after-position-overwrite();
+      @include buttonFocus() {
+        @include after-position-overwrite();
+      };
     }
   }
 
