@@ -4,7 +4,18 @@ export default {
         description: `The **Select** component is commonly used to enable users to select an item from a predefined list.
       It should be used when there are less than 12 items to choose from. 
       For lists that require more than 12 options, the Combobox Input should be used.`,
-        components: ['icon', 'popover', 'list', 'form-label', 'form-message', 'select', 'dialog', 'bar', 'button', 'icon']
+        components: [
+            'icon',
+            'popover',
+            'list',
+            'form-label',
+            'form-message',
+            'select',
+            'dialog',
+            'bar',
+            'button',
+            'icon'
+        ]
     }
 };
 
@@ -14,7 +25,7 @@ export const cozy = () => `<div style="height: 200px">
             <div class="fd-select">
                 <div
                     aria-controls="h031XCM5"
-                    aria-expanded="false"
+                    aria-expanded="true"
                     aria-haspopup="listbox"
                     class="fd-select__control"
                     onclick="onControlClick('h0C6A325');"
@@ -28,7 +39,7 @@ export const cozy = () => `<div style="height: 200px">
             </div>
         </div>
         <div
-            aria-hidden="true"
+            aria-hidden="false"
             class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
             id="h0C6A325">
             <ul
@@ -40,22 +51,22 @@ export const cozy = () => `<div style="height: 200px">
                     class="fd-list__item is-selected"
                     role="option"
                     tabindex="0">
-                <span class="fd-list__title">List item 1</span>
+                    <span class="fd-list__title">List item 1</span>
                 </li>
                 <li class="fd-list__item"
                     role="option"
                     tabindex="-1">
-                <span class="fd-list__title">List item 2</span>
-            </li>
-                <li class="fd-list__item"
-                    role="option"
-                    tabindex="-1">
-                <span class="fd-list__title">List item 3</span>
+                    <span class="fd-list__title">List item 2</span>
                 </li>
                 <li class="fd-list__item"
                     role="option"
                     tabindex="-1">
-                <span class="fd-list__title">List item 4</span>
+                    <span class="fd-list__title">List item 3</span>
+                </li>
+                <li class="fd-list__item"
+                    role="option"
+                    tabindex="-1">
+                    <span class="fd-list__title">List item 4</span>
                 </li>
             </ul>
         </div>
@@ -71,7 +82,8 @@ export const compact = () => `<div style="height: 200px">
     <div class="fd-popover">
         <div class="fd-popover__control">
             <div class="fd-select fd-select--compact">
-                <div onclick="onControlClick('h0C6A326');" class="fd-select__control" role="combobox" tabindex="0" aria-controls="h037CLM5" aria-expanded="false" aria-haspopup="listbox">
+                <div onclick="onControlClick('h0C6A326');" class="fd-select__control" role="combobox" tabindex="0"
+                     aria-controls="h037CLM5" aria-expanded="true" aria-haspopup="listbox">
                     <span class="fd-select__text-content">Select</span>
                     <span class="fd-button fd-button--transparent fd-select__button">
                         <i class="sap-icon--slim-arrow-down"></i>
@@ -79,8 +91,10 @@ export const compact = () => `<div style="height: 200px">
                 </div>
             </div>
         </div>
-        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h0C6A326">
-            <ul tabIndex="-1" aria-labelledby="f45564A58" class="fd-list fd-list--dropdown fd-list--compact" role="listbox" id="h037CLM5">
+        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="false"
+             id="h0C6A326">
+            <ul tabIndex="-1" aria-labelledby="f45564A58" class="fd-list fd-list--dropdown fd-list--compact"
+                role="listbox" id="h037CLM5">
                 <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
                 <span class="fd-list__title">
                     Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text, Very long text
@@ -88,13 +102,13 @@ export const compact = () => `<div style="height: 200px">
                 </span>
                 </li>
                 <li class="fd-list__item" role="option" tabindex="-1">
-                <span class="fd-list__title">List item 2</span>
+                    <span class="fd-list__title">List item 2</span>
                 </li>
                 <li class="fd-list__item" role="option" tabindex="-1">
-                <span class="fd-list__title">List item 3</span>
+                    <span class="fd-list__title">List item 3</span>
                 </li>
                 <li class="fd-list__item" role="option" tabindex="-1">
-                <span class="fd-list__title">List item 4</span>
+                    <span class="fd-list__title">List item 4</span>
                 </li>
             </ul>
         </div>
@@ -113,7 +127,7 @@ export const asFormItem = () => `<div style="height:310px">
                 <div class="fd-select">
                     <div
                         aria-controls="h031TOM5"
-                        aria-expanded="false"
+                        aria-expanded="true"
                         aria-haspopup="listbox"
                         class="fd-select__control"
                         onclick="onControlClick('h0C6B625');"
@@ -127,7 +141,7 @@ export const asFormItem = () => `<div style="height:310px">
                 </div>
             </div>
             <div
-                aria-hidden="true"
+                aria-hidden="false"
                 class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
                 id="h0C6B625">
                 <ul
@@ -148,17 +162,17 @@ export const asFormItem = () => `<div style="height:310px">
                     <li class="fd-list__item"
                         role="option"
                         tabindex="-1">
-                    <span class="fd-list__title">List item 2</span>
-                </li>
-                    <li class="fd-list__item"
-                        role="option"
-                        tabindex="-1">
-                    <span class="fd-list__title">List item 3</span>
+                        <span class="fd-list__title">List item 2</span>
                     </li>
                     <li class="fd-list__item"
                         role="option"
                         tabindex="-1">
-                    <span class="fd-list__title">List item 4</span>
+                        <span class="fd-list__title">List item 3</span>
+                    </li>
+                    <li class="fd-list__item"
+                        role="option"
+                        tabindex="-1">
+                        <span class="fd-list__title">List item 4</span>
                     </li>
                 </ul>
             </div>
@@ -179,70 +193,80 @@ Applications are free to override this in their custom styles if needed and own 
 
 /** The **Select** component can be customized by adding additional information in additional columns. */
 
-export const twoColumn = () => `<div style="height: 200px">
-    <div class="fd-popover">
-    <div class="fd-popover__control">
-        <div class="fd-select">
-            <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="a34FL7NC" onclick="onControlClick('h0C62325');" aria-expanded="false" aria-haspopup="listbox">
-                <span class="fd-select__text-content">Select Product</span>
-                <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
-                </span>
+export const twoColumn = () => `<div style="height: 200px;display: flex; justify-content: space-around;">
+    <div>
+        <div class="fd-popover">
+            <div class="fd-popover__control">
+                <div class="fd-select">
+                    <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="a34FL7NC"
+                         onclick="onControlClick('h0C62325');" aria-expanded="true" aria-haspopup="listbox">
+                        <span class="fd-select__text-content">Select Product</span>
+                        <span class="fd-button fd-button--transparent fd-select__button">
+                            <i class="sap-icon--slim-arrow-down"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="false"
+                 id="h0C62325">
+                <ul tabIndex="-1" aria-labelledby="f45564A59" class="fd-list fd-list--dropdown" role="listbox"
+                    id="a34FL7NC">
+                    <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
+                        <span class="fd-list__title">Product 1</span>
+                        <span class="fd-list__secondary">1000 EUR</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">Product 2</span>
+                        <span class="fd-list__secondary">750 EUR</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">Product 3</span>
+                        <span class="fd-list__secondary">780 EUR</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">Product 4</span>
+                        <span class="fd-list__secondary">40 EUR</span>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
-    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h0C62325">
-        <ul tabIndex="-1" aria-labelledby="f45564A59" class="fd-list fd-list--dropdown" role="listbox" id="a34FL7NC">
-            <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
-            <span class="fd-list__title">Product 1</span>
-            <span class="fd-list__secondary">1000 EUR</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__title">Product 2</span>
-            <span class="fd-list__secondary">750 EUR</span>
-        </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__title">Product 3</span>
-            <span class="fd-list__secondary">780 EUR</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__title">Product 4</span>
-            <span class="fd-list__secondary">40 EUR</span>
-            </li>
-        </ul>
-    </div>
-    </div>
-    <div class="fd-popover">
-    <div class="fd-popover__control">
-        <div class="fd-select fd-select--compact">
-            <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="d301CQF4" onclick="onControlClick('h07jj326');" aria-expanded="false" aria-haspopup="listbox">
-                <span class="fd-select__text-content">Select Product</span>
-                <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
-                </span>
+    <div>
+        <div class="fd-popover">
+            <div class="fd-popover__control">
+                <div class="fd-select fd-select--compact">
+                    <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="d301CQF4"
+                         onclick="onControlClick('h07jj326');" aria-expanded="true" aria-haspopup="listbox">
+                        <span class="fd-select__text-content">Select Product</span>
+                        <span class="fd-button fd-button--transparent fd-select__button">
+                            <i class="sap-icon--slim-arrow-down"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="false"
+                 id="h07jj326">
+                <ul tabIndex="-1" aria-labelledby="g45564A59" class="fd-list fd-list--dropdown fd-list--compact"
+                    role="listbox" id="d301CQF4">
+                    <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
+                        <span class="fd-list__title">Product 1</span>
+                        <span class="fd-list__secondary">1000 EUR</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">Product 2</span>
+                        <span class="fd-list__secondary">750 EUR</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">Product 3</span>
+                        <span class="fd-list__secondary">780 EUR</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">Product 4</span>
+                        <span class="fd-list__secondary">40 EUR</span>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h07jj326">
-        <ul tabIndex="-1" aria-labelledby="g45564A59" class="fd-list fd-list--dropdown fd-list--compact" role="listbox" id="d301CQF4">
-            <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
-            <span class="fd-list__title">Product 1</span>
-            <span class="fd-list__secondary">1000 EUR</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__title">Product 2</span>
-            <span class="fd-list__secondary">750 EUR</span>
-        </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__title">Product 3</span>
-            <span class="fd-list__secondary">780 EUR</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__title">Product 4</span>
-            <span class="fd-list__secondary">40 EUR</span>
-            </li>
-        </ul>
-    </div>
     </div>
 </div>
 `;
@@ -253,11 +277,11 @@ twoColumn.parameters = {
     }
 };
 
-export const twoColumnsAndIcons = () => `<div style="height: 200px">
-    <div class="fd-popover">
+export const twoColumnsAndIcons = () => `<div style="height: 200px;">
+<div class="fd-popover">
     <div class="fd-popover__control">
         <div class="fd-select">
-            <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="s45GH6Y7" onclick="onControlClick('h090G325');" aria-expanded="false" aria-haspopup="listbox">
+            <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="s45GH6Y7" onclick="onControlClick('h090G325');" aria-expanded="true" aria-haspopup="listbox">
                 <span class="fd-select__text-content">Select Product</span>
                 <span class="fd-button fd-button--transparent fd-select__button">
                     <i class="sap-icon--slim-arrow-down"></i>
@@ -265,7 +289,7 @@ export const twoColumnsAndIcons = () => `<div style="height: 200px">
             </div>
         </div>
     </div>
-    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h090G325">
+    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="false" id="h090G325">
         <ul tabIndex="-1" aria-labelledby="g45564A50" class="fd-list fd-list--dropdown" role="listbox" id="s45GH6Y7">
             <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
                 <i role="presentation" class="fd-list__icon sap-icon--marketing-campaign"></i>
@@ -303,7 +327,7 @@ export const itemGrouping = () => `<div style="height: 450px">
     <div class="fd-popover">
     <div class="fd-popover__control">
         <div class="fd-select">
-            <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="f34HLM5G" onclick="onControlClick('h09GDGG325');" aria-expanded="false" aria-haspopup="listbox">
+            <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="f34HLM5G" onclick="onControlClick('h09GDGG325');" aria-expanded="true" aria-haspopup="listbox">
                 <span class="fd-select__text-content">Select Ingredient</span>
                 <span class="fd-button fd-button--transparent fd-select__button">
                     <i class="sap-icon--slim-arrow-down"></i>
@@ -311,7 +335,7 @@ export const itemGrouping = () => `<div style="height: 450px">
             </div>
         </div>
     </div>
-    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="h09GDGG325">
+    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="h09GDGG325">
             <ul tabIndex="-1" aria-labelledby="g45464A50" class="fd-list fd-list--dropdown" role="listbox" id="f34HLM5G">
                 <li class="fd-list__group-header">
                     Fruits
@@ -356,40 +380,43 @@ itemGrouping.parameters = {
 };
 
 /** In the **Select** component, the text is wrapped by default. In order to prevent the text from wrapping,
-* the `--no-wrap` modifier can be added to the `fd-list__title`, or `fd-list__secondary` elements. */
+ * the `--no-wrap` modifier can be added to the `fd-list__title`, or `fd-list__secondary` elements. */
 
 export const textWrapping = () => `<div style="height: 300px">
     <div class="fd-popover">
-    <div class="fd-popover__control">
-        <div class="fd-select">
-            <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="s12LFMR5" onclick="onControlClick('h0GFF2325');" aria-expanded="false" aria-haspopup="listbox">
-                <span class="fd-select__text-content">Select</span>
-                <span class="fd-button fd-button--transparent fd-select__button">
+        <div class="fd-popover__control">
+            <div class="fd-select">
+                <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="s12LFMR5"
+                     onclick="onControlClick('h0GFF2325');" aria-expanded="true" aria-haspopup="listbox">
+                    <span class="fd-select__text-content">Select</span>
+                    <span class="fd-button fd-button--transparent fd-select__button">
                     <i class="sap-icon--slim-arrow-down"></i>
                 </span>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h0GFF2325">
-        <ul tabIndex="-1" aria-labelledby="g45464A40" class="fd-list fd-list--dropdown" role="listbox" id="s12LFMR5">
-            <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
-            <span class="fd-list__title">Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text </span>
-            <span class="fd-list__secondary">A1</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__title">List item 2</span>
-            <span class="fd-list__secondary">A2</span>
-        </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__title">List item 3</span>
-            <span class="fd-list__secondary">A3</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__title">List item 4</span>
-            <span class="fd-list__secondary">A4</span>
-            </li>
-        </ul>
-    </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="false"
+             id="h0GFF2325">
+            <ul tabIndex="-1" aria-labelledby="g45464A40" class="fd-list fd-list--dropdown" role="listbox"
+                id="s12LFMR5">
+                <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
+                    <span class="fd-list__title">Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text </span>
+                    <span class="fd-list__secondary">A1</span>
+                </li>
+                <li class="fd-list__item" role="option" tabindex="-1">
+                    <span class="fd-list__title">List item 2</span>
+                    <span class="fd-list__secondary">A2</span>
+                </li>
+                <li class="fd-list__item" role="option" tabindex="-1">
+                    <span class="fd-list__title">List item 3</span>
+                    <span class="fd-list__secondary">A3</span>
+                </li>
+                <li class="fd-list__item" role="option" tabindex="-1">
+                    <span class="fd-list__title">List item 4</span>
+                    <span class="fd-list__secondary">A4</span>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 `;
@@ -402,38 +429,41 @@ textWrapping.parameters = {
 
 export const noWrapping = () => `<div style="height: 200px">
     <div class="fd-popover">
-    <div class="fd-popover__control">
-        <div class="fd-select fd-select--compact">
-            <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="t53GL7U8" onclick="onControlClick('h0GZH2325');" aria-expanded="false" aria-haspopup="listbox">
-                <span class="fd-select__text-content">Select</span>
-                <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
-                </span>
+        <div class="fd-popover__control">
+            <div class="fd-select fd-select--compact">
+                <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="t53GL7U8"
+                     onclick="onControlClick('h0GZH2325');" aria-expanded="true" aria-haspopup="listbox">
+                    <span class="fd-select__text-content">Select</span>
+                    <span class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </span>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h0GZH2325">
-        <ul tabIndex="-1" aria-labelledby="g45464B40" class="fd-list fd-list--dropdown fd-list--compact" role="listbox" id="t53GL7U8">
-            <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
-            <span class="fd-list__title fd-list__title--no-wrap">
-                Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text 
-            </span>
-            <span class="fd-list__secondary">A1</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__title">List item 2</span>
-            <span class="fd-list__secondary">A2</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__title">List item 3</span>
-            <span class="fd-list__secondary">A3</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__title">List item 4</span>
-            <span class="fd-list__secondary">A4</span>
-            </li>
-        </ul>
-    </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="false"
+             id="h0GZH2325">
+            <ul tabIndex="-1" aria-labelledby="g45464B40" class="fd-list fd-list--dropdown fd-list--compact"
+                role="listbox" id="t53GL7U8">
+                <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
+                <span class="fd-list__title fd-list__title--no-wrap">
+                    Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text 
+                </span>
+                    <span class="fd-list__secondary">A1</span>
+                </li>
+                <li class="fd-list__item" role="option" tabindex="-1">
+                    <span class="fd-list__title">List item 2</span>
+                    <span class="fd-list__secondary">A2</span>
+                </li>
+                <li class="fd-list__item" role="option" tabindex="-1">
+                    <span class="fd-list__title">List item 3</span>
+                    <span class="fd-list__secondary">A3</span>
+                </li>
+                <li class="fd-list__item" role="option" tabindex="-1">
+                    <span class="fd-list__title">List item 4</span>
+                    <span class="fd-list__secondary">A4</span>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 `;
@@ -447,40 +477,41 @@ noWrapping.parameters = {
 
 export const matchSelectPopoverBodySize = () => `<div style="height: 250px">
     <div class="fd-popover">
-    <div class="fd-popover__control">
-        <div class="fd-select">
-            <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="wGH468IL" onclick="onControlClick('h0GTKE325');" aria-expanded="false" aria-haspopup="listbox">
-                <span class="fd-select__text-content">Much Longer than Usual</span>
-                <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
-                </span>
+        <div class="fd-popover__control">
+            <div class="fd-select">
+                <div class="fd-select__control" role="combobox" tabindex="0" aria-controls="wGH468IL"
+                     onclick="onControlClick('h0GTKE325');" aria-expanded="true" aria-haspopup="listbox">
+                    <span class="fd-select__text-content">Much Longer than Usual</span>
+                    <span class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </span>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="true" id="h0GTKE325">
-        <ul tabIndex="-1" aria-labelledby="g4546C40" class="fd-list fd-list--dropdown" role="listbox" id="wGH468IL">
-            <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
-            <span class="fd-list__title">List item 1</span>
-            <span class="fd-list__secondary">A1</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__title">List item 2</span>
-            <span class="fd-list__secondary">A2</span>
-        </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__title">List item 3</span>
-            <span class="fd-list__secondary">A3</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__title">List item 4</span>
-            <span class="fd-list__secondary">A4</span>
-            </li>
-        </ul>
-    </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill"
+             aria-hidden="false" id="h0GTKE325">
+            <ul tabIndex="-1" aria-labelledby="g4546C40" class="fd-list fd-list--dropdown" role="listbox" id="wGH468IL">
+                <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
+                    <span class="fd-list__title">List item 1</span>
+                    <span class="fd-list__secondary">A1</span>
+                </li>
+                <li class="fd-list__item" role="option" tabindex="-1">
+                    <span class="fd-list__title">List item 2</span>
+                    <span class="fd-list__secondary">A2</span>
+                </li>
+                <li class="fd-list__item" role="option" tabindex="-1">
+                    <span class="fd-list__title">List item 3</span>
+                    <span class="fd-list__secondary">A3</span>
+                </li>
+                <li class="fd-list__item" role="option" tabindex="-1">
+                    <span class="fd-list__title">List item 4</span>
+                    <span class="fd-list__secondary">A4</span>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 `;
-
 
 matchSelectPopoverBodySize.parameters = {
     docs: {
@@ -489,12 +520,12 @@ matchSelectPopoverBodySize.parameters = {
 };
 
 /** To disable a **Select** component, the `aria-disabled="true"` attribute needs to be added to the
-* `fd-popover__control` and the `fd-select__control` elements. */
+ * `fd-popover__control` and the `fd-select__control` elements. */
 
 export const disabled = () => `<div class="fd-popover">
     <div class="fd-popover__control" aria-disabled="true">
         <div class="fd-select">
-            <div class="fd-select__control" role="combobox" aria-expanded="false" aria-haspopup="false" aria-disabled="true">
+            <div class="fd-select__control" role="combobox" aria-expanded="true" aria-haspopup="false" aria-disabled="true">
                 <span class="fd-select__text-content">Select</span>
                 <span class="fd-button fd-button--transparent fd-select__button">
                     <i class="sap-icon--slim-arrow-down"></i>
@@ -510,7 +541,7 @@ export const disabled = () => `<div class="fd-popover">
 export const readonly = () => `<div class="fd-popover">
     <div class="fd-popover__control">
         <div class="fd-select">
-            <div class="fd-select__control is-readonly" role="combobox" aria-readonly="true" aria-expanded="false" aria-label="Select" aria-haspopup="false" tabindex="0">
+            <div class="fd-select__control is-readonly" role="combobox" aria-readonly="true" aria-expanded="true" aria-label="Select" aria-haspopup="false" tabindex="0">
               <span class="fd-select__text-content">Selected Item 2</span>
             </div>
         </div>
@@ -525,180 +556,203 @@ export const readonly = () => `<div class="fd-popover">
  * above the `ul` element.
  */
 
-export const semanticStates = () => `<div style="height: 650px">
-    <label class="fd-form-label" id="a4546C40">
-        Success Select Example
-    </label>
-    <br>
-    <div class="fd-popover">
-        <div class="fd-popover__control">
-            <div class="fd-select">
-                <div class="fd-select__control is-success" role="combobox" tabindex="0" aria-controls="s34GLW8I" onclick="onControlClick('h07jjhYH');"  aria-expanded="false" aria-haspopup="listbox">
-                    <span class="fd-select__text-content">Success</span>
-                    <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
-                    </span>
+export const semanticStates = () => `<div style="height: 650px;display: flex; justify-content: space-around;">
+    <div>
+        <label class="fd-form-label" id="a4546C40">
+            Success Select Example
+        </label>
+        <br>
+        <div class="fd-popover">
+            <div class="fd-popover__control">
+                <div class="fd-select">
+                    <div class="fd-select__control is-success" role="combobox" tabindex="0" aria-controls="s34GLW8I"
+                         onclick="onControlClick('h07jjhYH');" aria-expanded="false" aria-haspopup="listbox">
+                        <span class="fd-select__text-content">Success</span>
+                        <span class="fd-button fd-button--transparent fd-select__button">
+                            <i class="sap-icon--slim-arrow-down"></i>
+                        </span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h07jjhYH">
-            <div aria-live="assertive" class="fd-list__message fd-list__message--success" role="alert">Success message</div>
-            <ul tabIndex="-1" aria-labelledby="a4546C40" class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox" id="s34GLW8I">
-                <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
-                <span class="fd-list__title">
-                    List Item 1
-                </span>
-                <span class="fd-list__secondary">A1</span>
-                </li>
-                <li class="fd-list__item" role="option" tabindex="-1">
-                <span class="fd-list__title">List item 2</span>
-                <span class="fd-list__secondary">A2</span>
-                </li>
-                <li class="fd-list__item" role="option" tabindex="-1">
-                <span class="fd-list__title">List item 3</span>
-                <span class="fd-list__secondary">A3</span>
-                </li>
-                <li class="fd-list__item" role="option" tabindex="-1">
-                <span class="fd-list__title">List item 4</span>
-                <span class="fd-list__secondary">A4</span>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <span class="fd-form-message fd-form-message--static fd-form-message--success">Success message</span>
-
-    <br/>
-    <br/>
-    <br/>
-    <label class="fd-form-label" id="b4546C40">
-        Error Select Example
-    </label>
-    <br>
-    <div class="fd-popover">
-    <div class="fd-popover__control">
-        <div class="fd-select">
-            <div class="fd-select__control is-error" role="combobox" tabindex="0" aria-controls="e36GLS1W" onclick="onControlClick('h07j9978H');" aria-expanded="false" aria-haspopup="listbox">
-                <span class="fd-select__text-content">Error</span>
-                    <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true"
+                 id="h07jjhYH">
+                <div aria-live="assertive" class="fd-list__message fd-list__message--success" role="alert">Success
+                    message
+                </div>
+                <ul tabIndex="-1" aria-labelledby="a4546C40"
+                    class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox"
+                    id="s34GLW8I">
+                    <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
+                    <span class="fd-list__title">
+                        List Item 1
                     </span>
+                        <span class="fd-list__secondary">A1</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">List item 2</span>
+                        <span class="fd-list__secondary">A2</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">List item 3</span>
+                        <span class="fd-list__secondary">A3</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">List item 4</span>
+                        <span class="fd-list__secondary">A4</span>
+                    </li>
+                </ul>
             </div>
         </div>
+        <span class="fd-form-message fd-form-message--static fd-form-message--success">Success message
+        </span>
     </div>
-    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h07j9978H">
-            <div aria-live="assertive" class="fd-list__message fd-list__message--error" role="alert">Error message</div>
-            <ul tabIndex="-1" aria-labelledby="b4546C40" class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox" id="e36GLS1W">
-            <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
-                <span class="fd-list__title">
-                    List Item 1
-                </span>
-                <span class="fd-list__secondary">A1</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-                <span class="fd-list__title">List item 2</span>
-                <span class="fd-list__secondary">A2</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-                <span class="fd-list__title">List item 3</span>
-                <span class="fd-list__secondary">A3</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-                <span class="fd-list__title">List item 4</span>
-                <span class="fd-list__secondary">A4</span>
-            </li>
-            </ul>
-    </div>
-    </div>
-    <span class="fd-form-message fd-form-message--static fd-form-message--error">Error message</span>
-
-    <br/>
-    <br/>
-    <br/>
-    <label class="fd-form-label" id="b45336C4">
-        Warning Select Example
-    </label>
-    <br />
-    <div class="fd-popover">
-    <div class="fd-popover__control">
-        <div class="fd-select">
-            <div class="fd-select__control is-warning" role="combobox" tabindex="0" aria-controls="s490DG4M" onclick="onControlClick('h07j998hhH');"  aria-expanded="false" aria-haspopup="listbox">
-                <span class="fd-select__text-content">Warning</span>
-                    <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
+    <div>
+        <label class="fd-form-label" id="b4546C40">
+            Error Select Example
+        </label>
+        <br>
+        <div class="fd-popover">
+            <div class="fd-popover__control">
+                <div class="fd-select">
+                    <div class="fd-select__control is-error" role="combobox" tabindex="0" aria-controls="e36GLS1W"
+                         onclick="onControlClick('h07j9978H');" aria-expanded="false" aria-haspopup="listbox">
+                        <span class="fd-select__text-content">Error</span>
+                        <span class="fd-button fd-button--transparent fd-select__button">
+                            <i class="sap-icon--slim-arrow-down"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true"
+                 id="h07j9978H">
+                <div aria-live="assertive" class="fd-list__message fd-list__message--error" role="alert">Error message
+                </div>
+                <ul tabIndex="-1" aria-labelledby="b4546C40"
+                    class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox"
+                    id="e36GLS1W">
+                    <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
+                    <span class="fd-list__title">
+                        List Item 1
                     </span>
+                        <span class="fd-list__secondary">A1</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">List item 2</span>
+                        <span class="fd-list__secondary">A2</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">List item 3</span>
+                        <span class="fd-list__secondary">A3</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">List item 4</span>
+                        <span class="fd-list__secondary">A4</span>
+                    </li>
+                </ul>
             </div>
         </div>
+        <span class="fd-form-message fd-form-message--static fd-form-message--error">Error message
+        </span>
     </div>
-    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h07j998hhH">
-            <div aria-live="assertive" class="fd-list__message fd-list__message--warning" role="alert">Warning message</div>
-            <ul tabIndex="-1" aria-labelledby="b45336C4" class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox" id="s490DG4M">
-            <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
-                <span class="fd-list__title">
-                    List Item 1
-                </span>
-                <span class="fd-list__secondary">A1</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-                <span class="fd-list__title">List item 2</span>
-                <span class="fd-list__secondary">A2</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-                <span class="fd-list__title">List item 3</span>
-                <span class="fd-list__secondary">A3</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-                <span class="fd-list__title">List item 4</span>
-                <span class="fd-list__secondary">A4</span>
-            </li>
-            </ul>
-        </div>
-    </div>
-    <span class="fd-form-message fd-form-message--static fd-form-message--warning">Warning message</span>
-
-    <br/>
-    <br/>
-    <br/>
-
-    <label class="fd-form-label" id="h45336C4">
-        Information Select Example
-    </label>
-    <br />
-    <div class="fd-popover">
-    <div class="fd-popover__control">
-        <div class="fd-select">
-            <div class="fd-select__control is-information" role="combobox" tabindex="0" aria-controls="h83LDO23" onclick="onControlClick('hkhh998hhH');"  aria-expanded="false" aria-haspopup="listbox">
-                <span class="fd-select__text-content">Information</span>
-                    <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
-                    </span>
+    <div>
+        <label class="fd-form-label" id="b45336C4">
+            Warning Select Example
+        </label>
+        <br/>
+        <div class="fd-popover">
+            <div class="fd-popover__control">
+                <div class="fd-select">
+                    <div class="fd-select__control is-warning" role="combobox" tabindex="0" aria-controls="s490DG4M"
+                         onclick="onControlClick('h07j998hhH');" aria-expanded="true" aria-haspopup="listbox">
+                        <span class="fd-select__text-content">Warning</span>
+                        <span class="fd-button fd-button--transparent fd-select__button">
+                                <i class="sap-icon--slim-arrow-down"></i>
+                            </span>
+                    </div>
+                </div>
+            </div>
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="false"
+                 id="h07j998hhH">
+                <div aria-live="assertive" class="fd-list__message fd-list__message--warning" role="alert">Warning
+                    message
+                </div>
+                <ul tabIndex="-1" aria-labelledby="b45336C4"
+                    class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox"
+                    id="s490DG4M">
+                    <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
+                        <span class="fd-list__title">
+                            List Item 1
+                        </span>
+                        <span class="fd-list__secondary">A1</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">List item 2</span>
+                        <span class="fd-list__secondary">A2</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">List item 3</span>
+                        <span class="fd-list__secondary">A3</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">List item 4</span>
+                        <span class="fd-list__secondary">A4</span>
+                    </li>
+                </ul>
             </div>
         </div>
+        <span class="fd-form-message fd-form-message--static fd-form-message--warning">Warning message
+            </span>
     </div>
-    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="hkhh998hhH">
-            <div aria-live="assertive" class="fd-list__message fd-list__message--information" role="alert">Information message</div>
-            <ul tabIndex="-1" aria-labelledby="h45336C4" class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox" id="h83LDO23">
-            <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
-                <span class="fd-list__title">
-                    List Item 1
-                </span>
-                <span class="fd-list__secondary">A1</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-                <span class="fd-list__title">List item 2</span>
-                <span class="fd-list__secondary">A2</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-                <span class="fd-list__title">List item 3</span>
-                <span class="fd-list__secondary">A3</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-                <span class="fd-list__title">List item 4</span>
-                <span class="fd-list__secondary">A4</span>
-            </li>
-            </ul>
+    <div>
+        <label class="fd-form-label" id="h45336C4">
+            Information Select Example
+        </label>
+        <br/>
+        <div class="fd-popover">
+            <div class="fd-popover__control">
+                <div class="fd-select">
+                    <div class="fd-select__control is-information" role="combobox" tabindex="0" aria-controls="h83LDO23"
+                         onclick="onControlClick('hkhh998hhH');" aria-expanded="true" aria-haspopup="listbox">
+                        <span class="fd-select__text-content">Information</span>
+                        <span class="fd-button fd-button--transparent fd-select__button">
+                                <i class="sap-icon--slim-arrow-down"></i>
+                            </span>
+                    </div>
+                </div>
+            </div>
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="false"
+                 id="hkhh998hhH">
+                <div aria-live="assertive" class="fd-list__message fd-list__message--information" role="alert">
+                    Information message
+                </div>
+                <ul tabIndex="-1" aria-labelledby="h45336C4"
+                    class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox"
+                    id="h83LDO23">
+                    <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
+                                <span class="fd-list__title">
+                                    List Item 1
+                                </span>
+                        <span class="fd-list__secondary">A1</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">List item 2</span>
+                        <span class="fd-list__secondary">A2</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">List item 3</span>
+                        <span class="fd-list__secondary">A3</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">List item 4</span>
+                        <span class="fd-list__secondary">A4</span>
+                    </li>
+                </ul>
+            </div>
         </div>
+        <span class="fd-form-message fd-form-message--static fd-form-message--information">Information message
+        </span>
     </div>
-    <span class="fd-form-message fd-form-message--static fd-form-message--information">Information message</span>
+</div>
 </div>
 `;
 
@@ -825,44 +879,45 @@ expanded.parameters = {
     }
 };
 
-export const blank = () => `<div style="height: 250px">
+export const blank = () => `<div style="height: 250px; display: flex; justify-content: space-around;">
+<div>
     <label class="fd-form-label" id="h45336F3">
         Select with Blank Option
     </label>
     <br>
     <div class="fd-popover">
-    <div class="fd-popover__control">
-        <div class="fd-select">
-            <div onClick="onControlClick('h0B6A326');" class="fd-select__control" role="combobox" tabindex="0" aria-controls="h2A6CEW2" aria-expanded="false" aria-haspopup="listbox">
-                <span class="fd-select__text-content"></span>
-                <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i> 
-                </span>
+        <div class="fd-popover__control">
+            <div class="fd-select">
+                <div onClick="onControlClick('h0B6A326');" class="fd-select__control" role="combobox" tabindex="0" aria-controls="h2A6CEW2" aria-expanded="true" aria-haspopup="listbox">
+                    <span class="fd-select__text-content"></span>
+                    <span class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down"></i> 
+                    </span>
+                </div>
             </div>
         </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="false" id="h0B6A326">
+            <ul tabIndex="-1" aria-labelledby="h45336F3" class="fd-list fd-list--dropdown" role="listbox" id="h2A6CEW2">
+                <li class="fd-list__item is-selected" aria-label="None selected" aria-selected="true" role="option" tabIndex="0">
+                <span class="fd-list__title" />
+                </li>
+                <li class="fd-list__item" role="option" tabindex="-1">
+                <span class="fd-list__title">List item 1</span>
+                </li>
+                <li class="fd-list__item" role="option" tabindex="-1">
+                <span class="fd-list__title">List item 2</span>
+            </li>
+                <li class="fd-list__item" role="option" tabindex="-1">
+                <span class="fd-list__title">List item 3</span>
+                </li>
+                <li class="fd-list__item" role="option" tabindex="-1">
+                <span class="fd-list__title">List item 4</span>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h0B6A326">
-        <ul tabIndex="-1" aria-labelledby="h45336F3" class="fd-list fd-list--dropdown" role="listbox" id="h2A6CEW2">
-            <li class="fd-list__item is-selected" aria-label="None selected" aria-selected="true" role="option" tabIndex="0">
-            <span class="fd-list__title" />
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__title">List item 1</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__title">List item 2</span>
-        </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__title">List item 3</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-            <span class="fd-list__title">List item 4</span>
-            </li>
-        </ul>
-    </div>
-    </div>
-    <br />
-    <br />
+</div>
+<div>
     <label class="fd-form-label" id="h45336F4">
         Select with Blank Option - Compact Mode
     </label>
@@ -870,7 +925,7 @@ export const blank = () => `<div style="height: 250px">
     <div class="fd-popover">
     <div class="fd-popover__control">
         <div class="fd-select fd-select--compact">
-            <div onClick="onControlClick('h0B6A327');" class="fd-select__control" role="combobox" tabindex="0" aria-controls="r57YU8P5" aria-expanded="false" aria-haspopup="listbox">
+            <div onClick="onControlClick('h0B6A327');" class="fd-select__control" role="combobox" tabindex="0" aria-controls="r57YU8P5" aria-expanded="true" aria-haspopup="listbox">
                 <span class="fd-select__text-content"></span>
                 <span class="fd-button fd-button--transparent fd-select__button">
                     <i class="sap-icon--slim-arrow-down"></i> 
@@ -878,7 +933,7 @@ export const blank = () => `<div style="height: 250px">
             </div>
         </div>
     </div>
-    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="true" id="h0B6A327">
+    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="false" id="h0B6A327">
         <ul tabIndex="-1" aria-labelledby="h45336F4" class="fd-list fd-list--dropdown fd-list--compact" role="listbox" id="r57YU8P5">
             <li class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
             <span class="fd-list__title" />
@@ -893,6 +948,7 @@ export const blank = () => `<div style="height: 250px">
             <span class="fd-list__title">List item 4</span>
             </li>
         </ul>
+    </div>
     </div>
     </div>
 </div>

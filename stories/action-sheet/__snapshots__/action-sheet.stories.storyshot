@@ -16,7 +16,7 @@ exports[`Storyshots Components/Action Sheet Desktop 1`] = `
         
       <button
         aria-controls="actionSheetDesktop"
-        aria-expanded="false"
+        aria-expanded="true"
         aria-haspopup="true"
         aria-label="More Options"
         class="fd-button fd-button--compact fd-button--transparent"
@@ -36,7 +36,7 @@ exports[`Storyshots Components/Action Sheet Desktop 1`] = `
     
     
     <div
-      aria-hidden="true"
+      aria-hidden="false"
       class="fd-popover__body"
       id="actionSheetDesktop"
     >
@@ -215,7 +215,7 @@ exports[`Storyshots Components/Action Sheet Mobile 1`] = `
     
   <button
     aria-controls="actionSheetPhone"
-    aria-expanded="false"
+    aria-expanded="true"
     aria-haspopup="true"
     aria-label="More Options"
     class="fd-button fd-button--transparent"
@@ -232,7 +232,7 @@ exports[`Storyshots Components/Action Sheet Mobile 1`] = `
   
     
   <div
-    class="fd-action-sheet__wrapper"
+    class="fd-action-sheet__wrapper fd-action-sheet__wrapper--active"
     id="actionSheetPhone"
   >
     
@@ -442,7 +442,7 @@ exports[`Storyshots Components/Action Sheet Tablet 1`] = `
         
       <button
         aria-controls="actionSheetTablet"
-        aria-expanded="false"
+        aria-expanded="true"
         aria-haspopup="true"
         aria-label="More Options"
         class="fd-button fd-button--transparent"
@@ -462,7 +462,7 @@ exports[`Storyshots Components/Action Sheet Tablet 1`] = `
     
     
     <div
-      aria-hidden="true"
+      aria-hidden="false"
       class="fd-popover__body"
       id="actionSheetTablet"
     >
