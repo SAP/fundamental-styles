@@ -109,14 +109,14 @@ exports[`Storyshots Components/Select As Form Item 1`] = `
             tabindex="-1"
           >
             
-                    
+                        
             <span
               class="fd-list__title"
             >
               List item 2
             </span>
             
-                
+                    
           </li>
           
                     
@@ -126,7 +126,7 @@ exports[`Storyshots Components/Select As Form Item 1`] = `
             tabindex="-1"
           >
             
-                    
+                        
             <span
               class="fd-list__title"
             >
@@ -143,7 +143,7 @@ exports[`Storyshots Components/Select As Form Item 1`] = `
             tabindex="-1"
           >
             
-                    
+                        
             <span
               class="fd-list__title"
             >
@@ -630,7 +630,7 @@ exports[`Storyshots Components/Select Compact 1`] = `
           tabindex="-1"
         >
           
-                
+                    
           <span
             class="fd-list__title"
           >
@@ -647,7 +647,7 @@ exports[`Storyshots Components/Select Compact 1`] = `
           tabindex="-1"
         >
           
-                
+                    
           <span
             class="fd-list__title"
           >
@@ -664,7 +664,7 @@ exports[`Storyshots Components/Select Compact 1`] = `
           tabindex="-1"
         >
           
-                
+                    
           <span
             class="fd-list__title"
           >
@@ -770,7 +770,7 @@ exports[`Storyshots Components/Select Cozy 1`] = `
           tabindex="0"
         >
           
-                
+                    
           <span
             class="fd-list__title"
           >
@@ -787,14 +787,14 @@ exports[`Storyshots Components/Select Cozy 1`] = `
           tabindex="-1"
         >
           
-                
+                    
           <span
             class="fd-list__title"
           >
             List item 2
           </span>
           
-            
+                
         </li>
         
                 
@@ -804,7 +804,7 @@ exports[`Storyshots Components/Select Cozy 1`] = `
           tabindex="-1"
         >
           
-                
+                    
           <span
             class="fd-list__title"
           >
@@ -821,7 +821,7 @@ exports[`Storyshots Components/Select Cozy 1`] = `
           tabindex="-1"
         >
           
-                
+                    
           <span
             class="fd-list__title"
           >
@@ -1377,14 +1377,14 @@ exports[`Storyshots Components/Select Match Select Popover Body Size 1`] = `
           tabindex="0"
         >
           
-                
+                    
           <span
             class="fd-list__title"
           >
             List item 1
           </span>
           
-                
+                    
           <span
             class="fd-list__secondary"
           >
@@ -1401,21 +1401,21 @@ exports[`Storyshots Components/Select Match Select Popover Body Size 1`] = `
           tabindex="-1"
         >
           
-                
+                    
           <span
             class="fd-list__title"
           >
             List item 2
           </span>
           
-                
+                    
           <span
             class="fd-list__secondary"
           >
             A2
           </span>
           
-            
+                
         </li>
         
                 
@@ -1425,14 +1425,14 @@ exports[`Storyshots Components/Select Match Select Popover Body Size 1`] = `
           tabindex="-1"
         >
           
-                
+                    
           <span
             class="fd-list__title"
           >
             List item 3
           </span>
           
-                
+                    
           <span
             class="fd-list__secondary"
           >
@@ -1449,14 +1449,14 @@ exports[`Storyshots Components/Select Match Select Popover Body Size 1`] = `
           tabindex="-1"
         >
           
-                
+                    
           <span
             class="fd-list__title"
           >
             List item 4
           </span>
           
-                
+                    
           <span
             class="fd-list__secondary"
           >
@@ -1823,7 +1823,7 @@ exports[`Storyshots Components/Select No Wrapping 1`] = `
                 
           </span>
           
-                
+                    
           <span
             class="fd-list__secondary"
           >
@@ -1840,14 +1840,14 @@ exports[`Storyshots Components/Select No Wrapping 1`] = `
           tabindex="-1"
         >
           
-                
+                    
           <span
             class="fd-list__title"
           >
             List item 2
           </span>
           
-                
+                    
           <span
             class="fd-list__secondary"
           >
@@ -1864,14 +1864,14 @@ exports[`Storyshots Components/Select No Wrapping 1`] = `
           tabindex="-1"
         >
           
-                
+                    
           <span
             class="fd-list__title"
           >
             List item 3
           </span>
           
-                
+                    
           <span
             class="fd-list__secondary"
           >
@@ -1888,14 +1888,14 @@ exports[`Storyshots Components/Select No Wrapping 1`] = `
           tabindex="-1"
         >
           
-                
+                    
           <span
             class="fd-list__title"
           >
             List item 4
           </span>
           
-                
+                    
           <span
             class="fd-list__secondary"
           >
@@ -2053,7 +2053,9 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
           class="fd-list__message fd-list__message--success"
           role="alert"
         >
-          Success message
+          Success
+                    message
+                
         </div>
         
                 
@@ -2082,7 +2084,7 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
                     
             </span>
             
-                    
+                        
             <span
               class="fd-list__secondary"
             >
@@ -2099,14 +2101,14 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
             tabindex="-1"
           >
             
-                    
+                        
             <span
               class="fd-list__title"
             >
               List item 2
             </span>
             
-                    
+                        
             <span
               class="fd-list__secondary"
             >
@@ -2123,14 +2125,14 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
             tabindex="-1"
           >
             
-                    
+                        
             <span
               class="fd-list__title"
             >
               List item 3
             </span>
             
-                    
+                        
             <span
               class="fd-list__secondary"
             >
@@ -2147,14 +2149,14 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
             tabindex="-1"
           >
             
-                    
+                        
             <span
               class="fd-list__title"
             >
               List item 4
             </span>
             
-                    
+                        
             <span
               class="fd-list__secondary"
             >
@@ -2205,17 +2207,17 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
       class="fd-popover"
     >
       
-        
+            
       <div
         class="fd-popover__control"
       >
         
-            
+                
         <div
           class="fd-select"
         >
           
-                
+                    
           <div
             aria-controls="e36GLS1W"
             aria-expanded="false"
@@ -2226,7 +2228,7 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
             tabindex="0"
           >
             
-                    
+                        
             <span
               class="fd-select__text-content"
             >
@@ -2246,16 +2248,16 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
                         
             </span>
             
-                
+                    
           </div>
           
-            
+                
         </div>
         
-        
+            
       </div>
       
-        
+            
       <div
         aria-hidden="true"
         class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
@@ -2269,6 +2271,7 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
           role="alert"
         >
           Error message
+                
         </div>
         
                 
@@ -2280,7 +2283,7 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
           tabindex="-1"
         >
           
-                
+                    
           <li
             aria-selected="true"
             class="fd-list__item is-selected"
@@ -2297,86 +2300,86 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
                     
             </span>
             
-                    
+                        
             <span
               class="fd-list__secondary"
             >
               A1
             </span>
             
-                
+                    
           </li>
           
-                
+                    
           <li
             class="fd-list__item"
             role="option"
             tabindex="-1"
           >
             
-                    
+                        
             <span
               class="fd-list__title"
             >
               List item 2
             </span>
             
-                    
+                        
             <span
               class="fd-list__secondary"
             >
               A2
             </span>
             
-                
+                    
           </li>
           
-                
+                    
           <li
             class="fd-list__item"
             role="option"
             tabindex="-1"
           >
             
-                    
+                        
             <span
               class="fd-list__title"
             >
               List item 3
             </span>
             
-                    
+                        
             <span
               class="fd-list__secondary"
             >
               A3
             </span>
             
-                
+                    
           </li>
           
-                
+                    
           <li
             class="fd-list__item"
             role="option"
             tabindex="-1"
           >
             
-                    
+                        
             <span
               class="fd-list__title"
             >
               List item 4
             </span>
             
-                    
+                        
             <span
               class="fd-list__secondary"
             >
               A4
             </span>
             
-                
+                    
           </li>
           
                 
@@ -2448,7 +2451,7 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
               Warning
             </span>
             
-                            
+                        
             <span
               class="fd-button fd-button--transparent fd-select__button"
             >
@@ -2477,16 +2480,18 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
         id="h07j998hhH"
       >
         
-                    
+                
         <div
           aria-live="assertive"
           class="fd-list__message fd-list__message--warning"
           role="alert"
         >
-          Warning message
+          Warning
+                    message
+                
         </div>
         
-                    
+                
         <ul
           aria-labelledby="b45336C4"
           class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact"
@@ -2594,16 +2599,16 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
                     
           </li>
           
-                    
+                
         </ul>
         
-                
+            
       </div>
       
-            
+        
     </div>
     
-            
+        
     <span
       class="fd-form-message fd-form-message--static fd-form-message--warning"
     >
@@ -2611,10 +2616,10 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
             
     </span>
     
-        
+    
   </div>
   
-        
+    
   <div>
     
         
@@ -2663,7 +2668,7 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
               Information
             </span>
             
-                            
+                        
             <span
               class="fd-button fd-button--transparent fd-select__button"
             >
@@ -2692,16 +2697,18 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
         id="hkhh998hhH"
       >
         
-                    
+                
         <div
           aria-live="assertive"
           class="fd-list__message fd-list__message--information"
           role="alert"
         >
-          Information message
+          
+                    Information message
+                
         </div>
         
-                        
+                
         <ul
           aria-labelledby="h45336C4"
           class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact"
@@ -2710,7 +2717,7 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
           tabindex="-1"
         >
           
-                            
+                    
           <li
             aria-selected="true"
             class="fd-list__item is-selected"
@@ -2727,109 +2734,109 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
                                 
             </span>
             
-                                
+                        
             <span
               class="fd-list__secondary"
             >
               A1
             </span>
             
-                            
+                    
           </li>
           
-                            
+                    
           <li
             class="fd-list__item"
             role="option"
             tabindex="-1"
           >
             
-                                
+                        
             <span
               class="fd-list__title"
             >
               List item 2
             </span>
             
-                                
+                        
             <span
               class="fd-list__secondary"
             >
               A2
             </span>
             
-                            
+                    
           </li>
           
-                            
+                    
           <li
             class="fd-list__item"
             role="option"
             tabindex="-1"
           >
             
-                                
+                        
             <span
               class="fd-list__title"
             >
               List item 3
             </span>
             
-                                
+                        
             <span
               class="fd-list__secondary"
             >
               A3
             </span>
             
-                            
+                    
           </li>
           
-                            
+                    
           <li
             class="fd-list__item"
             role="option"
             tabindex="-1"
           >
             
-                                
+                        
             <span
               class="fd-list__title"
             >
               List item 4
             </span>
             
-                                
+                        
             <span
               class="fd-list__secondary"
             >
               A4
             </span>
             
-                            
+                    
           </li>
           
-                        
+                
         </ul>
         
-                    
+            
       </div>
       
-            
+        
     </div>
     
-            
+        
     <span
       class="fd-form-message fd-form-message--static fd-form-message--information"
     >
       Information message
-            
+        
     </span>
     
-        
+    
   </div>
   
-    
+
 </div>
 `;
 
@@ -2843,17 +2850,17 @@ exports[`Storyshots Components/Select Text Wrapping 1`] = `
     class="fd-popover"
   >
     
-    
+        
     <div
       class="fd-popover__control"
     >
       
-        
+            
       <div
         class="fd-select"
       >
         
-            
+                
         <div
           aria-controls="s12LFMR5"
           aria-expanded="true"
@@ -2864,14 +2871,14 @@ exports[`Storyshots Components/Select Text Wrapping 1`] = `
           tabindex="0"
         >
           
-                
+                    
           <span
             class="fd-select__text-content"
           >
             Select
           </span>
           
-                
+                    
           <span
             class="fd-button fd-button--transparent fd-select__button"
           >
@@ -2884,23 +2891,23 @@ exports[`Storyshots Components/Select Text Wrapping 1`] = `
                 
           </span>
           
-            
+                
         </div>
         
-        
+            
       </div>
       
-    
+        
     </div>
     
-    
+        
     <div
       aria-hidden="false"
       class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
       id="h0GFF2325"
     >
       
-        
+            
       <ul
         aria-labelledby="g45464A40"
         class="fd-list fd-list--dropdown"
@@ -2909,7 +2916,7 @@ exports[`Storyshots Components/Select Text Wrapping 1`] = `
         tabindex="-1"
       >
         
-            
+                
         <li
           aria-selected="true"
           class="fd-list__item is-selected"
@@ -2917,99 +2924,99 @@ exports[`Storyshots Components/Select Text Wrapping 1`] = `
           tabindex="0"
         >
           
-            
+                    
           <span
             class="fd-list__title"
           >
             Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text 
           </span>
           
-            
+                    
           <span
             class="fd-list__secondary"
           >
             A1
           </span>
           
-            
+                
         </li>
         
-            
+                
         <li
           class="fd-list__item"
           role="option"
           tabindex="-1"
         >
           
-            
+                    
           <span
             class="fd-list__title"
           >
             List item 2
           </span>
           
-            
+                    
           <span
             class="fd-list__secondary"
           >
             A2
           </span>
           
-        
+                
         </li>
         
-            
+                
         <li
           class="fd-list__item"
           role="option"
           tabindex="-1"
         >
           
-            
+                    
           <span
             class="fd-list__title"
           >
             List item 3
           </span>
           
-            
+                    
           <span
             class="fd-list__secondary"
           >
             A3
           </span>
           
-            
+                
         </li>
         
-            
+                
         <li
           class="fd-list__item"
           role="option"
           tabindex="-1"
         >
           
-            
+                    
           <span
             class="fd-list__title"
           >
             List item 4
           </span>
           
-            
+                    
           <span
             class="fd-list__secondary"
           >
             A4
           </span>
           
-            
+                
         </li>
         
-        
+            
       </ul>
       
-    
+        
     </div>
     
     
@@ -3106,14 +3113,14 @@ exports[`Storyshots Components/Select Two Column 1`] = `
             tabindex="0"
           >
             
-                    
+                        
             <span
               class="fd-list__title"
             >
               Product 1
             </span>
             
-                    
+                        
             <span
               class="fd-list__secondary"
             >
@@ -3130,21 +3137,21 @@ exports[`Storyshots Components/Select Two Column 1`] = `
             tabindex="-1"
           >
             
-                    
+                        
             <span
               class="fd-list__title"
             >
               Product 2
             </span>
             
-                    
+                        
             <span
               class="fd-list__secondary"
             >
               750 EUR
             </span>
             
-                
+                    
           </li>
           
                     
@@ -3154,14 +3161,14 @@ exports[`Storyshots Components/Select Two Column 1`] = `
             tabindex="-1"
           >
             
-                    
+                        
             <span
               class="fd-list__title"
             >
               Product 3
             </span>
             
-                    
+                        
             <span
               class="fd-list__secondary"
             >
@@ -3178,14 +3185,14 @@ exports[`Storyshots Components/Select Two Column 1`] = `
             tabindex="-1"
           >
             
-                    
+                        
             <span
               class="fd-list__title"
             >
               Product 4
             </span>
             
-                    
+                        
             <span
               class="fd-list__secondary"
             >
@@ -3289,14 +3296,14 @@ exports[`Storyshots Components/Select Two Column 1`] = `
             tabindex="0"
           >
             
-                    
+                        
             <span
               class="fd-list__title"
             >
               Product 1
             </span>
             
-                    
+                        
             <span
               class="fd-list__secondary"
             >
@@ -3313,21 +3320,21 @@ exports[`Storyshots Components/Select Two Column 1`] = `
             tabindex="-1"
           >
             
-                    
+                        
             <span
               class="fd-list__title"
             >
               Product 2
             </span>
             
-                    
+                        
             <span
               class="fd-list__secondary"
             >
               750 EUR
             </span>
             
-                
+                    
           </li>
           
                     
@@ -3337,14 +3344,14 @@ exports[`Storyshots Components/Select Two Column 1`] = `
             tabindex="-1"
           >
             
-                    
+                        
             <span
               class="fd-list__title"
             >
               Product 3
             </span>
             
-                    
+                        
             <span
               class="fd-list__secondary"
             >
@@ -3361,14 +3368,14 @@ exports[`Storyshots Components/Select Two Column 1`] = `
             tabindex="-1"
           >
             
-                    
+                        
             <span
               class="fd-list__title"
             >
               Product 4
             </span>
             
-                    
+                        
             <span
               class="fd-list__secondary"
             >
