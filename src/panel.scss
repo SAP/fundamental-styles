@@ -55,7 +55,9 @@ $block: #{$fd-namespace}-panel;
     font-size: 1rem;
 
     @include fd-rtl() {
-      @include fd-icon('slim-arrow-left');
+      .sap-icon--slim-arrow-right {
+        transform: rotate(180deg);
+      }
     }
   }
 
