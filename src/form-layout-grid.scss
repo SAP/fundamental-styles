@@ -15,7 +15,6 @@ $cols: 11;
 
 @media (min-width: 0) {
   .#{$blockContainer}.#{$block}-container {
-    padding: 1rem;
     margin: 0 -0.25rem;
 
     & > .fd-row {
@@ -53,7 +52,6 @@ $cols: 11;
 
         .fd-form-label {
           display: inline-block;
-          margin-right: 0;
           padding-bottom: 0.125rem;
         }
 
@@ -84,6 +82,10 @@ $cols: 11;
         .#{$blockRow} {
           margin: 0 -0.25rem;
         }
+      }
+
+      .#{$fd-namespace}-form-group.#{$blockCol} {
+        padding: 1rem;
       }
     }
 
