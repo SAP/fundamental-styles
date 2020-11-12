@@ -3,8 +3,8 @@
 
 /*!
 .fd-tabs+()
-    .fd-tabs__item?
-    .fd-tabs__link+((.is-selected|[aria-selected=true]),)
+    .fd-tabs__item?+(([aria-selected=true]),)
+    .fd-tabs__link+((.is-selected,)
 .fd-tabs__panel+([aria-expanded]|.is-expanded)
 */
 

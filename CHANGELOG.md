@@ -2,6 +2,63 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.57](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.56...v0.13.0-rc.57) (2020-11-12)
+
+
+### Bug Fixes
+
+* add the correct cursor for hover state of disabled Switch component ([#1868](https://github.com/SAP/fundamental-styles/issues/1868)) ([b2939a6](https://github.com/SAP/fundamental-styles/commit/b2939a6966a3d2e510ef8dd6001fbbbe1b7ba586))
+
+## [0.13.0-rc.56](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.55...v0.13.0-rc.56) (2020-11-12)
+
+
+### Bug Fixes
+
+* Center buttons in product switch and dialog ([#1875](https://github.com/SAP/fundamental-styles/issues/1875)) ([3dfa723](https://github.com/SAP/fundamental-styles/commit/3dfa723545d66a864d0cfbea81fab3de4ea3ad38))
+
+## [0.13.0-rc.55](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.54...v0.13.0-rc.55) (2020-11-12)
+
+
+### Bug Fixes
+
+* Core Carousel navigation buttons - focus/active state in Safari and Firefox browser ([#1866](https://github.com/SAP/fundamental-styles/issues/1866)) ([32e6035](https://github.com/SAP/fundamental-styles/commit/32e6035915e18645f147be4cab91df5ead813617))
+
+## [0.13.0-rc.54](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.53...v0.13.0-rc.54) (2020-11-11)
+
+## [0.13.0-rc.53](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.52...v0.13.0-rc.53) (2020-11-10)
+
+
+### Bug Fixes
+
+* Make stronger selector for message strip ([#1856](https://github.com/SAP/fundamental-styles/issues/1856)) ([c6300d8](https://github.com/SAP/fundamental-styles/commit/c6300d8c11c11df58a7959f33e8899984de79fe1))
+
+## [0.13.0-rc.52](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.51...v0.13.0-rc.52) (2020-11-10)
+
+## [0.13.0-rc.51](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.50...v0.13.0-rc.51) (2020-11-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* Remove Inline Help from the library
+
+### Bug Fixes
+
+* remove the css for inline-help ([#1871](https://github.com/SAP/fundamental-styles/issues/1871)) ([3c20d06](https://github.com/SAP/fundamental-styles/commit/3c20d065bf821cb026f80d8f937b0f338b0a2cc3))
+
+## [0.13.0-rc.50](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.49...v0.13.0-rc.50) (2020-11-10)
+
+
+### Bug Fixes
+
+* RTL mode arrow button direction ([#1861](https://github.com/SAP/fundamental-styles/issues/1861)) ([d62aaef](https://github.com/SAP/fundamental-styles/commit/d62aaefb564ee45777b92c900202a4b2e04f3afa))
+
+## [0.13.0-rc.49](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.48...v0.13.0-rc.49) (2020-11-10)
+
+
+### Bug Fixes
+
+* Center vertically text in switch component ([#1862](https://github.com/SAP/fundamental-styles/issues/1862)) ([ef4581e](https://github.com/SAP/fundamental-styles/commit/ef4581e2a7c80b44ef9f6075679dbfa87a0cbaaa))
+
 ## [0.13.0-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.47...v0.13.0-rc.48) (2020-11-10)
 
 

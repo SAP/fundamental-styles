@@ -57,7 +57,6 @@ $block: #{$fd-namespace}-switch;
 
   @include fd-reset();
 
-  cursor: pointer;
   display: inline-block;
   position: relative;
   padding: $fd-switch-container-padding-y 0;
@@ -71,7 +70,9 @@ $block: #{$fd-namespace}-switch;
     cursor: pointer;
     padding: 0;
 
-    &.is-disabled {
+    @include fd-disabled() {
+      cursor: auto;
+      pointer-events: none;
       opacity: var(--sapContent_DisabledOpacity);
     }
   }
@@ -104,7 +105,8 @@ $block: #{$fd-namespace}-switch;
   &__text {
     @include fd-form-label();
 
-    cursor: pointer;
+    align-self: auto;
+    cursor: inherit;
   }
 
   &__icon {

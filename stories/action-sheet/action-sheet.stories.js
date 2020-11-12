@@ -28,12 +28,12 @@ export const actionSheetDesktop = () => `
 <div class="fd-popover">
     <div class="fd-popover__control">
         <button class="fd-button fd-button--compact fd-button--transparent" 
-                aria-label="More Options" aria-controls="actionSheetDesktop" aria-expanded="false" 
+                aria-label="More Options" aria-controls="actionSheetDesktop" aria-expanded="true" 
                 aria-haspopup="true" onclick="onPopoverClick('actionSheetDesktop');">
             <i class="sap-icon--settings"></i>
         </button>
     </div>
-    <div class="fd-popover__body" aria-hidden="true" id="actionSheetDesktop">
+    <div class="fd-popover__body" aria-hidden="false" id="actionSheetDesktop">
         <ul class="fd-action-sheet fd-action-sheet--compact" role="list" aria-label="List of contextual options">
             <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
@@ -74,23 +74,23 @@ export const actionSheetDesktop = () => `
 actionSheetDesktop.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'The action sheet is displayed in desktop mode by adding the `fd-action-sheet--compact` modifier class to the container, and `fd-button--compact` to each button.'
+        storyDescription:
+            'The action sheet is displayed in desktop mode by adding the `fd-action-sheet--compact` modifier class to the container, and `fd-button--compact` to each button.'
     }
 };
 
 actionSheetDesktop.storyName = 'Desktop';
 
-
 export const actionSheetTablet = () => `    
 <div class="fd-popover">
     <div class="fd-popover__control">
         <button class="fd-button fd-button--transparent" 
-                aria-label="More Options" aria-controls="actionSheetTablet" aria-expanded="false" 
+                aria-label="More Options" aria-controls="actionSheetTablet" aria-expanded="true" 
                 aria-haspopup="true" onclick="onPopoverClick('actionSheetTablet');">
             <i class="sap-icon--settings"></i>
         </button>
     </div>
-    <div class="fd-popover__body" aria-hidden="true" id="actionSheetTablet">
+    <div class="fd-popover__body" aria-hidden="false" id="actionSheetTablet">
         <ul class="fd-action-sheet" role="list" aria-label="List of contextual options">
             <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
@@ -131,7 +131,8 @@ export const actionSheetTablet = () => `
 actionSheetTablet.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'Although the tablet mode is visually similar to desktop, it doesn\'t require any modifier classes. Therefore, the container and buttons appear slightly larger for better visibility.'
+        storyDescription:
+            'Although the tablet mode is visually similar to desktop, it doesn\'t require any modifier classes. Therefore, the container and buttons appear slightly larger for better visibility.'
     }
 };
 
@@ -139,11 +140,11 @@ actionSheetTablet.storyName = 'Tablet';
 
 export const actionSheetMobile = () => `<div style="width: 350px; height: 600px; position: relative">
     <button class="fd-button fd-button--transparent"
-            aria-label="More Options" aria-controls="actionSheetPhone" aria-expanded="false" 
+            aria-label="More Options" aria-controls="actionSheetPhone" aria-expanded="true" 
             aria-haspopup="true" onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
         <i class="sap-icon--settings"></i>
     </button>
-    <div class="fd-action-sheet__wrapper" id="actionSheetPhone">
+    <div class="fd-action-sheet__wrapper fd-action-sheet__wrapper--active" id="actionSheetPhone">
         <h6 class="fd-action-sheet__title">Press cancel to hide action sheet</h6>
         <ul class="fd-action-sheet fd-action-sheet--mobile" role="list" aria-label="List of contextual options">
             <li class="fd-action-sheet__item" role="listitem">
