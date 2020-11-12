@@ -2,25 +2,36 @@ export default {
     title: 'Components/Panel',
     parameters: {
         description: `
-The panel is a container for grouping and displaying information.
-It can be collapsed to save space on the screen.
+The panel is a container for grouping and displaying information. Panels are responsive and can be collapsed to save additional screen space.
 
-Use the panel if:
-
+##Usage
+**Use the panel if:**
+        
 - You need to group or display information.
-- You want to give users the option of hiding this information.
+- You want to give users the option to hide this information.
 - You want to show additional information on demand (for example, a panel could show optional input fields for an advanced search).
+        
+**Do not use the panel if:**
+        
+- You are designing an object page. Panels should not be used in the object page content area.
+        
 
-Do not use the panel if:
-
-- You are designing an object page. Never use panels in the object page content area.
+##Types
+There are two types of panels: fixed and expandable.
+        
   `,
         components: ['button', 'icon', 'panel', 'segmented-button', 'toolbar']
     }
 };
 
-/** Expandable panels are much like fixed panels, except their content can be expanded and collapsed
- * (including the info toolbar, if available). */
+fixed.storyName = 'Expandable';
+
+fixed.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: `Fixed panels are useful for grouping custom content. They include headers and info toolbars. To display a fixed panel, add the \`fd-panel--fixed\` modifier class to the main element.
+        ` }
+};
 
 export const expandable = () => `<div class="fd-panel">
     <div class="fd-panel__header">
@@ -76,16 +87,14 @@ export const expandable = () => `<div class="fd-panel">
 </div>
 `;
 
+expandable.storyName = 'Expandable';
+
 expandable.parameters = {
     docs: {
-        iframeHeight: 200
-    }
+        iframeHeight: 200,
+        storyDescription: `Expandable panels are much like fixed panels, except their content can be expanded and collapsed (including the info toolbar, if available).
+        ` }
 };
-
-/**
- * Fixed panels are useful for grouping custom content. They include headers and info toolbars.
-To create a fixed panel, add the `--fixed` modifier.
- */
 
 export const fixed = () => `<div class="fd-panel fd-panel--fixed">
     <div class="fd-panel__header">
@@ -111,13 +120,14 @@ export const fixed = () => `<div class="fd-panel fd-panel--fixed">
 </div>
 `;
 
+fixed.storyName = 'Fixed';
+
 fixed.parameters = {
     docs: {
-        iframeHeight: 200
-    }
+        iframeHeight: 200,
+        storyDescription: `When the height of the panel's content is set to a fixed size, the content area becomes scrollable.
+        ` }
 };
-
-/** To use a compact panel, add the `--compact` modifier. */
 
 export const compact = () => `<div class="fd-panel fd-panel--compact">
     <div class="fd-panel__header">
@@ -148,13 +158,14 @@ export const compact = () => `<div class="fd-panel fd-panel--compact">
 </div>
 `;
 
+compact.storyName = 'Compact';
+
 compact.parameters = {
     docs: {
-        iframeHeight: 200
-    }
+        iframeHeight: 200,
+        storyDescription: `Panels can be displayed in compact mode, which decreases the padding and button sizes. To display a compact panel, add the \`fd-panel--compact\` modifier class to the main element.
+        ` }
 };
-
-/** When the height of the panel\'s content is set to a fixed size, the content area can be scrolled through. */
 
 export const fixedHeightContent = () => `<div class="fd-panel">
     <div class="fd-panel__header">
@@ -194,8 +205,11 @@ export const fixedHeightContent = () => `<div class="fd-panel">
 </div>
 `;
 
+fixedHeightContent.storyName = 'Fixed height';
+
 fixedHeightContent.parameters = {
     docs: {
-        iframeHeight: 300
-    }
+        iframeHeight: 300,
+        storyDescription: `When the height of the panel's content is set to a fixed size, the content area becomes scrollable.
+        ` }
 };
