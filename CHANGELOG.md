@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.55](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.54...v0.13.0-rc.55) (2020-11-12)
+
+
+### Bug Fixes
+
+* Core Carousel navigation buttons - focus/active state in Safari and Firefox browser ([#1866](https://github.com/SAP/fundamental-styles/issues/1866)) ([32e6035](https://github.com/SAP/fundamental-styles/commit/32e6035915e18645f147be4cab91df5ead813617))
+
 ## [0.13.0-rc.54](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.53...v0.13.0-rc.54) (2020-11-11)
 
 ## [0.13.0-rc.53](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.52...v0.13.0-rc.53) (2020-11-10)
