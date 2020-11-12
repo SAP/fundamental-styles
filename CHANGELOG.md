@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.57](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.56...v0.13.0-rc.57) (2020-11-12)
+
+
+### Bug Fixes
+
+* add the correct cursor for hover state of disabled Switch component ([#1868](https://github.com/SAP/fundamental-styles/issues/1868)) ([b2939a6](https://github.com/SAP/fundamental-styles/commit/b2939a6966a3d2e510ef8dd6001fbbbe1b7ba586))
+
 ## [0.13.0-rc.56](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.55...v0.13.0-rc.56) (2020-11-12)
 
 
