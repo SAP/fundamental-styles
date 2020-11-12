@@ -70,8 +70,9 @@ $block: #{$fd-namespace}-switch;
     cursor: pointer;
     padding: 0;
 
-    &.is-disabled {
+    @include fd-disabled() {
       cursor: auto;
+      pointer-events: none;
       opacity: var(--sapContent_DisabledOpacity);
     }
   }
