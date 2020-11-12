@@ -24,6 +24,7 @@ $block: #{$fd-namespace}-counter;
   display: inline-block;
   text-align: center;
   padding: $fd-counter-padding;
+  z-index: 1;
 
   &--notification {
     transform: translate(-40%, -50%);
