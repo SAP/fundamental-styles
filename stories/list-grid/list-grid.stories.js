@@ -65,7 +65,7 @@ export const noneMode = () => `<div class="fd-grid-list">
         </div>
 
         <div class="fd-row">
-            <div class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link is-navigated">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <span class="fd-toolbar__spacer"></span>
@@ -97,7 +97,7 @@ export const noneMode = () => `<div class="fd-grid-list">
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <span class="fd-toolbar__spacer"></span>
@@ -127,7 +127,7 @@ export const noneMode = () => `<div class="fd-grid-list">
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item--body fd-grid-list__item--body--padding">
                         <div class="grid-list-item-body-example">
@@ -149,7 +149,7 @@ export const noneMode = () => `<div class="fd-grid-list">
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item--body fd-grid-list__item--body--padding">
                         <div class="grid-list-item-body-example">
@@ -171,7 +171,7 @@ export const noneMode = () => `<div class="fd-grid-list">
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item--body fd-grid-list__item--body--padding">
                         <div class="grid-list-item-body-example">
@@ -193,7 +193,7 @@ export const noneMode = () => `<div class="fd-grid-list">
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <span class="fd-toolbar__spacer"></span>
@@ -224,7 +224,7 @@ export const noneMode = () => `<div class="fd-grid-list">
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item--body fd-grid-list__item--body--padding">
                         <div class="grid-list-item-body-example">
@@ -283,7 +283,7 @@ export const singleSelectMasterMode = () => `<div class="fd-grid-list fd-grid-li
         </div>
 
         <div class="fd-row">
-            <div class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
                     <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio--input" id="pDidh761" name="singleSelectMasterRadio">
                     <label class="fd-radio__label fd-grid-list__radio--label" for="pDidh761"></label>
@@ -317,7 +317,7 @@ export const singleSelectMasterMode = () => `<div class="fd-grid-list fd-grid-li
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio--input" id="pDidh761123" name="singleSelectMasterRadio">
                     <label class="fd-radio__label fd-grid-list__radio--label" for="pDidh761123"></label>
@@ -350,7 +350,7 @@ export const singleSelectMasterMode = () => `<div class="fd-grid-list fd-grid-li
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item is-selected">
                     <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio--input" id="pDidh7611234" name="singleSelectMasterRadio" checked>
                     <label class="fd-radio__label fd-grid-list__radio--label" for="pDidh7611234"></label>
@@ -380,7 +380,7 @@ export const singleSelectMasterMode = () => `<div class="fd-grid-list fd-grid-li
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio--input" id="pDidh761642" name="singleSelectMasterRadio">
                     <label class="fd-radio__label fd-grid-list__radio--label" for="pDidh761642"></label>
@@ -444,7 +444,7 @@ export const singleSelectLeftMode = () => `<div class="fd-grid-list fd-grid-list
         </div>
 
         <div class="fd-row">
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio--input" id="pDidh1761" name="singleSelectLeftRadio">
@@ -478,7 +478,7 @@ export const singleSelectLeftMode = () => `<div class="fd-grid-list fd-grid-list
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item is-selected">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio--input" id="p1Didh1761" name="singleSelectLeftRadio" checked>
@@ -510,7 +510,7 @@ export const singleSelectLeftMode = () => `<div class="fd-grid-list fd-grid-list
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio--input" id="p12Didh1761" name="singleSelectLeftRadio">
@@ -540,7 +540,7 @@ export const singleSelectLeftMode = () => `<div class="fd-grid-list fd-grid-list
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio--input" id="p1x2Didh1761" name="singleSelectLeftRadio">
@@ -607,7 +607,7 @@ export const multiSelectMode = () => `<div class="fd-grid-list fd-grid-list__mod
         </div>
 
         <div class="fd-row">
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link is-selected">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox--input" id="Ai4ez611c" checked>
@@ -642,7 +642,7 @@ export const multiSelectMode = () => `<div class="fd-grid-list fd-grid-list__mod
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox--input" id="Ai4ez611c2">
@@ -675,7 +675,7 @@ export const multiSelectMode = () => `<div class="fd-grid-list fd-grid-list__mod
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item is-selected">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox--input" id="Ai4ez611c3" checked>
@@ -706,7 +706,7 @@ export const multiSelectMode = () => `<div class="fd-grid-list fd-grid-list__mod
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox--input" id="Ai4ez611c4">
@@ -777,7 +777,7 @@ export const deleteMode = () => `<div class="fd-grid-list fd-grid-list__mode--de
         </div>
 
         <div class="fd-row">
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <span class="fd-toolbar__spacer"></span>
@@ -813,7 +813,7 @@ export const deleteMode = () => `<div class="fd-grid-list fd-grid-list__mode--de
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <span class="fd-toolbar__spacer"></span>
@@ -847,7 +847,7 @@ export const deleteMode = () => `<div class="fd-grid-list fd-grid-list__mode--de
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <span class="fd-toolbar__spacer"></span>
@@ -877,7 +877,7 @@ export const deleteMode = () => `<div class="fd-grid-list fd-grid-list__mode--de
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <span class="fd-toolbar__spacer"></span>
@@ -950,7 +950,7 @@ export const group = () => `<div class="fd-grid-list">
                 Company: Company A
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <span class="fd-toolbar__spacer"></span>
@@ -982,7 +982,7 @@ export const group = () => `<div class="fd-grid-list">
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <span class="fd-toolbar__spacer"></span>
@@ -1016,7 +1016,7 @@ export const group = () => `<div class="fd-grid-list">
                 Company: Company B
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item--body fd-grid-list__item--body--padding">
                         <div class="grid-list-item-body-example">
@@ -1038,7 +1038,7 @@ export const group = () => `<div class="fd-grid-list">
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item--body fd-grid-list__item--body--padding">
                         <div class="grid-list-item-body-example">
@@ -1104,7 +1104,7 @@ export const states = () => `<div class="fd-grid-list">
                 State: Unread
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--state-unread">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <span class="fd-toolbar__spacer"></span>
@@ -1140,7 +1140,7 @@ export const states = () => `<div class="fd-grid-list">
                 State: Error
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--state-error">
                     <span class="fd-grid-list__highlight--error"></span>
 
@@ -1183,7 +1183,7 @@ export const states = () => `<div class="fd-grid-list">
                 State: Locked
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--state-locked">
                     <div class="fd-grid-list__item--body fd-grid-list__item--body--padding">
                         <div class="grid-list-item-body-example">
@@ -1216,7 +1216,7 @@ export const states = () => `<div class="fd-grid-list">
                 State: Draft
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--state-draft">
                     <div class="fd-grid-list__item--body fd-grid-list__item--body--padding">
                         <div class="grid-list-item-body-example">
@@ -1283,7 +1283,7 @@ export const highlight = () => `<div class="fd-grid-list">
         </div>
 
         <div class="fd-row">
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <span class="fd-grid-list__highlight--success"></span>
                     <div class="fd-toolbar fd-grid-list__toolbar">
@@ -1316,7 +1316,7 @@ export const highlight = () => `<div class="fd-grid-list">
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <span class="fd-grid-list__highlight--error"></span>
                     <div class="fd-toolbar fd-grid-list__toolbar">
@@ -1347,7 +1347,7 @@ export const highlight = () => `<div class="fd-grid-list">
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <span class="fd-grid-list__highlight--warning"></span>
                     <div class="fd-toolbar fd-grid-list__toolbar">
@@ -1374,7 +1374,7 @@ export const highlight = () => `<div class="fd-grid-list">
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <span class="fd-grid-list__highlight--neutral"></span>
                     <div class="fd-grid-list__item--body fd-grid-list__item--body--padding">
@@ -1449,7 +1449,7 @@ export const filterInfobar = () => `<div class="fd-grid-list">
         </div>
 
         <div class="fd-row">
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <span class="fd-toolbar__spacer"></span>
@@ -1481,7 +1481,7 @@ export const filterInfobar = () => `<div class="fd-grid-list">
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <span class="fd-toolbar__spacer"></span>
@@ -1511,7 +1511,7 @@ export const filterInfobar = () => `<div class="fd-grid-list">
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item--body fd-grid-list__item--body--padding">
                         <div class="grid-list-item-body-example">
@@ -1533,7 +1533,7 @@ export const filterInfobar = () => `<div class="fd-grid-list">
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item--body fd-grid-list__item--body--padding">
                         <div class="grid-list-item-body-example">
@@ -1595,7 +1595,7 @@ export const more = () => `<div class="fd-grid-list">
         </div>
 
         <div class="fd-row">
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <span class="fd-toolbar__spacer"></span>
@@ -1627,7 +1627,7 @@ export const more = () => `<div class="fd-grid-list">
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <span class="fd-toolbar__spacer"></span>
@@ -1657,7 +1657,7 @@ export const more = () => `<div class="fd-grid-list">
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item--body fd-grid-list__item--body--padding">
                         <div class="grid-list-item-body-example">
@@ -1679,7 +1679,7 @@ export const more = () => `<div class="fd-grid-list">
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item--body fd-grid-list__item--body--padding">
                         <div class="grid-list-item-body-example">
@@ -1750,7 +1750,7 @@ export const footer = () => `<div class="fd-grid-list">
         </div>
 
         <div class="fd-row">
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <span class="fd-toolbar__spacer"></span>
@@ -1782,7 +1782,7 @@ export const footer = () => `<div class="fd-grid-list">
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-toolbar fd-grid-list__toolbar">
                         <span class="fd-toolbar__spacer"></span>
@@ -1812,7 +1812,7 @@ export const footer = () => `<div class="fd-grid-list">
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item--body fd-grid-list__item--body--padding">
                         <div class="grid-list-item-body-example">
@@ -1834,7 +1834,7 @@ export const footer = () => `<div class="fd-grid-list">
                 </div>
             </div>
 
-            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--3 fd-col-xl--3">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item--body fd-grid-list__item--body--padding">
                         <div class="grid-list-item-body-example">
