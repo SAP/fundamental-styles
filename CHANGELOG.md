@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.59](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.58...v0.13.0-rc.59) (2020-11-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* DOM updated for multiple components for accessibility purposes. Notably, tab > tab items need the tab role and have aria-selected set to true, instead of the link within.
+
+### Bug Fixes
+
+* accessibility improvements + integrate automated accessibility testing with jest-axe ([#1865](https://github.com/SAP/fundamental-styles/issues/1865)) ([fb9d28b](https://github.com/SAP/fundamental-styles/commit/fb9d28b1a79c49d3c3f1805bd2a0a92ffcab8d67))
+
 ## [0.13.0-rc.58](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.57...v0.13.0-rc.58) (2020-11-12)
 
 
