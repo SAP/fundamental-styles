@@ -9,12 +9,13 @@ export default {
  - If it is not clear if the control is showing a state or action. 
  - If there are more than two options.
   `,
-        components: ['form-label', 'switch', 'icon']
+        components: ['form-label', 'switch', 'icon', 'form']
     }
 };
 
 
-export const basic = () => `<div class="fd-form-group">
+export const basic = () => `
+<div class="fd-form-group">
     <div class="fd-form-item">
         <div class="fd-form-label" id="label1">Default (Cozy) Switch</div>
         <label class="fd-switch__label">
@@ -41,6 +42,32 @@ export const basic = () => `<div class="fd-form-group">
             </span>
         </label>
     </div>
+    <div class="fd-form-item">
+        <div class="fd-form-label" id="label7">Disabled Switch</div>
+        <label class="fd-switch__label is-disabled">
+            <span class="fd-switch">
+                <input class="fd-switch__input" type="checkbox" name="" value="" aria-labelledby="label7" id="y21Y13431">
+                <div class="fd-switch__wrapper">
+                    <div class="fd-switch__track">
+                        <span class="fd-switch__handle" role="presentation"></span>
+                    </div>
+                </div>
+            </span>
+        </label>
+    </div>
+    <div class="fd-form-item">
+        <div class="fd-form-label" id="label8">Disabled Compact Switch</div>
+        <label class="fd-switch__label is-disabled">
+            <span class="fd-switch fd-switch--compact">
+                <input class="fd-switch__input" type="checkbox" name="" value="" aria-labelledby="label8" id="y21Y13491">
+                <div class="fd-switch__wrapper">
+                    <div class="fd-switch__track">
+                        <span class="fd-switch__handle" role="presentation"></span>
+                    </div>
+                </div>
+            </span>
+        </label>
+    </div>
 </div>
 `;
 
@@ -51,7 +78,8 @@ basic.parameters = {
     }
 };
 
-export const withText = () => `<div class="fd-form-group">
+export const withText = () => `
+<div class="fd-form-group">
     <div class="fd-form-item">
         <div class="fd-form-label" id="label3">With Off Text</div>
         <label class="fd-switch__label">
@@ -80,6 +108,20 @@ export const withText = () => `<div class="fd-form-group">
             </span>
         </label>
     </div>
+    <div class="fd-form-item">
+        <div class="fd-form-label" id="label9">Disabled With Text</div>
+        <label class="fd-switch__label is-disabled">
+            <span class="fd-switch__text">On</span> 
+            <span class="fd-switch">
+                <input class="fd-switch__input" checked type="checkbox" aria-labelledby="label9" name="" value="" id="y29653431">
+                <div class="fd-switch__wrapper">
+                    <div class="fd-switch__track">
+                        <span class="fd-switch__handle" role="presentation"></span>
+                    </div>
+                </div>
+            </span>
+        </label>
+    </div>
 </div>`;
 
 withText.parameters = {
@@ -88,7 +130,8 @@ withText.parameters = {
     }
 };
 
-export const semanticSwitch = () => `<div class="fd-form-group">
+export const semanticSwitch = () => `
+<div class="fd-form-group">
     <div class="fd-form-item">
         <label class="fd-form-label" id="label5">Semantic Switch</label>
         <label class="fd-switch__label">
