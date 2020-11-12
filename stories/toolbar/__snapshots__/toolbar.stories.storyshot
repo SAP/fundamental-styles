@@ -369,7 +369,7 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
     style="height:250px"
   >
     
-    
+
     <h3>
       Cozy example
     </h3>
@@ -422,85 +422,87 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
         class="fd-popover fd-toolbar__overflow"
       >
         
-        
+            
         <div
           class="fd-popover__control"
         >
           
-            
+                
           <button
             aria-controls="wgxzK85912"
             aria-expanded="true"
             aria-haspopup="true"
             aria-label="More"
             class="fd-button fd-button--transparent"
+            id="amr9034qihr"
+            onclick="toggleElAttrs('wgxzK85912', ['aria-hidden']);toggleElAttrs('amr9034qihr', ['aria-expanded']);"
           >
             
-                
+                    
             <i
               class="sap-icon--overflow"
             />
-                
             
+                
           </button>
           
-        
+            
         </div>
         
-        
+            
         <div
           aria-hidden="false"
           class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
           id="wgxzK85912"
         >
           
-            
+                
           <div
             class="fd-toolbar__overflow__body"
           >
             
-                
+                    
             <button
               class="fd-button fd-button--transparent"
             >
               Edit
             </button>
             
-                
+                    
             <span
               class="fd-toolbar__separator"
             />
             
-                
+                    
             <button
               class="fd-button fd-button--transparent"
             >
               Delete
             </button>
             
-                
+                    
             <span
               class="fd-toolbar__separator"
             />
             
-                
+                    
             <button
               class="fd-button fd-button--transparent"
             >
               Assign
             </button>
             
-                
+                    
             <button
               class="fd-button fd-button--transparent"
             >
               Exit
             </button>
             
-            
+                
           </div>
           
-        
+            
         </div>
         
         
@@ -513,151 +515,161 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
   </div>
   
 
-  <h3>
-    Compact example
-  </h3>
-  
-
   <div
-    class="fd-toolbar"
+    style="height:300px"
   >
     
-    
-    <span>
-      Products (34)
-    </span>
-    
-    
-    <button
-      class="fd-button fd-button--compact fd-button--transparent"
-    >
-      Create
-    </button>
-    
-    
-    <span
-      class="fd-toolbar__spacer "
-    >
-       
-    </span>
-    
-    
-    <button
-      class="fd-button fd-button--compact fd-button--transparent"
-    >
-      Save
-    </button>
-    
-    
-    <button
-      class="fd-button fd-button--compact fd-button--transparent"
-    >
-      Copy
-    </button>
-    
-    
-    <span
-      class="fd-toolbar__separator"
-    />
+
+    <h3>
+      Compact example
+    </h3>
     
     
     <div
-      class="fd-popover fd-toolbar__overflow"
+      class="fd-toolbar"
     >
       
-    
-      <div
-        class="fd-popover__control"
-      >
         
-        
-        <button
-          aria-controls="wgxzK859122"
-          aria-expanded="true"
-          aria-haspopup="true"
-          aria-label="More"
-          class="fd-button fd-button--compact fd-button--transparent"
-        >
-          
-            
-          <i
-            class="sap-icon--overflow"
-          />
-              
-        
-        </button>
-        
-    
-      </div>
+      <span>
+        Products (34)
+      </span>
       
-    
+        
+      <button
+        class="fd-button fd-button--compact fd-button--transparent"
+      >
+        Create
+      </button>
+      
+        
+      <span
+        class="fd-toolbar__spacer "
+      >
+         
+      </span>
+      
+        
+      <button
+        class="fd-button fd-button--compact fd-button--transparent"
+      >
+        Save
+      </button>
+      
+        
+      <button
+        class="fd-button fd-button--compact fd-button--transparent"
+      >
+        Copy
+      </button>
+      
+        
+      <span
+        class="fd-toolbar__separator"
+      />
+      
+        
       <div
-        aria-hidden="false"
-        class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
-        id="wgxzK859122"
+        class="fd-popover fd-toolbar__overflow"
       >
         
-        
+            
         <div
-          class="fd-toolbar__overflow__body"
+          class="fd-popover__control"
         >
           
-            
-          <label
-            class="fd-label fd-toolbar__overflow__label"
-          >
-            Label
-          </label>
-          
-            
+                
           <button
+            aria-controls="mw0daw8d7h"
+            aria-expanded="true"
+            aria-haspopup="true"
+            aria-label="More"
             class="fd-button fd-button--compact fd-button--transparent"
+            id="31jr8oaufh"
+            onclick="toggleElAttrs('mw0daw8d7h', ['aria-hidden']);toggleElAttrs('31jr8oaufh', ['aria-expanded']);"
           >
-            Edit
+            
+                    
+            <i
+              class="sap-icon--overflow"
+            />
+                
+                
           </button>
           
             
-          <span
-            class="fd-toolbar__separator"
-          />
-          
-            
-          <label
-            class="fd-form-label fd-toolbar__overflow__form-label"
-          >
-            Form label
-          </label>
-          
-            
-          <button
-            class="fd-button fd-button--compact fd-button--transparent"
-          >
-            Delete
-          </button>
-          
-            
-          <span
-            class="fd-toolbar__separator"
-          />
-          
-            
-          <button
-            class="fd-button fd-button--compact fd-button--transparent"
-          >
-            Assign
-          </button>
-          
-            
-          <button
-            class="fd-button fd-button--compact fd-button--transparent"
-          >
-            Exit
-          </button>
-          
-        
         </div>
         
-    
+            
+        <div
+          aria-hidden="false"
+          class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+          id="mw0daw8d7h"
+        >
+          
+                
+          <div
+            class="fd-toolbar__overflow__body"
+          >
+            
+                    
+            <label
+              class="fd-label fd-toolbar__overflow__label"
+            >
+              Label
+            </label>
+            
+                    
+            <button
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              Edit
+            </button>
+            
+                    
+            <span
+              class="fd-toolbar__separator"
+            />
+            
+                    
+            <label
+              class="fd-form-label fd-toolbar__overflow__form-label"
+            >
+              Form label
+            </label>
+            
+                    
+            <button
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              Delete
+            </button>
+            
+                    
+            <span
+              class="fd-toolbar__separator"
+            />
+            
+                    
+            <button
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              Assign
+            </button>
+            
+                    
+            <button
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              Exit
+            </button>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
       </div>
       
     
@@ -672,7 +684,6 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
 
 exports[`Storyshots Components/Toolbar Separator 1`] = `
 <section>
-  <h3 />
   
 
   <div
@@ -705,9 +716,6 @@ exports[`Storyshots Components/Toolbar Separator 1`] = `
     
 
   </div>
-  
-
-  <h3 />
   
 
   <div
@@ -867,7 +875,7 @@ exports[`Storyshots Components/Toolbar Sizes 1`] = `
 
 exports[`Storyshots Components/Toolbar Types 1`] = `
 <div
-  style="background-color: #ccc;background-color:var(--sapContent_ImagePlaceholde, #ccc); padding: 1rem"
+  style="background-color: #00000012; padding: 1rem"
 >
   
     

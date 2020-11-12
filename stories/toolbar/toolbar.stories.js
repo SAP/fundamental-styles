@@ -26,7 +26,7 @@ export const basic = () => `<div class="fd-toolbar fd-toolbar--cozy">
 </div>
 `;
 
-export const types = () => `<div style="background-color: #ccc;background-color:var(--sapContent_ImagePlaceholde, #ccc); padding: 1rem">
+export const types = () => `<div style="background-color: #00000012; padding: 1rem">
     <h3>Solid</h3>
     <div class="fd-toolbar fd-toolbar--solid">
         <span>Products (23)</span>
@@ -169,14 +169,13 @@ alignment.parameters = {
     }
 };
 
-export const separator = () => `<h3></h3>
+export const separator = () => `
 <div class="fd-toolbar fd-toolbar--info fd-toolbar--cozy">
     <button class="fd-button fd-button--positive">Accept</button>
     <span class="fd-toolbar__separator"></span>
     <button class="fd-button fd-button--reject">Reject</button>
     <span class="fd-toolbar__separator"></span>
 </div>
-<h3></h3>
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--cozy">
     <span class="fd-toolbar__spacer"></span>
     <span class="fd-toolbar__separator"></span>
@@ -228,7 +227,7 @@ The default size of the toolbar is compact but this can be changed by passing th
 };
 
 export const overflow = () => `<div style="height:250px">
-    <h3>Cozy example</h3>
+<h3>Cozy example</h3>
     <div class="fd-toolbar fd-toolbar--cozy">
         <span>Products (34)</span>
         <button class="fd-button fd-button--transparent">Create</button>
@@ -237,62 +236,69 @@ export const overflow = () => `<div style="height:250px">
         <button class="fd-button fd-button--transparent">Copy</button>
         <span class="fd-toolbar__separator"></span>
         <div class="fd-popover fd-toolbar__overflow">
-        <div class="fd-popover__control">
-            <button class="fd-button fd-button--transparent"
-            aria-controls="wgxzK85912"
-            aria-haspopup="true"
-            aria-expanded="true"
-            aria-label="More">
-                <i class="sap-icon--overflow"></i>    
-            </button>
-        </div>
-        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
-            aria-hidden="false"
-            id="wgxzK85912">
-            <div class="fd-toolbar__overflow__body">
-                <button class="fd-button fd-button--transparent">Edit</button>
-                <span class="fd-toolbar__separator"></span>
-                <button class="fd-button fd-button--transparent">Delete</button>
-                <span class="fd-toolbar__separator"></span>
-                <button class="fd-button fd-button--transparent">Assign</button>
-                <button class="fd-button fd-button--transparent">Exit</button>
+            <div class="fd-popover__control">
+                <button class="fd-button fd-button--transparent"
+                aria-controls="wgxzK85912"
+                aria-haspopup="true"
+                aria-expanded="true"
+                id="amr9034qihr"
+                onclick="toggleElAttrs('wgxzK85912', ['aria-hidden']);toggleElAttrs('amr9034qihr', ['aria-expanded']);"
+                aria-label="More">
+                    <i class="sap-icon--overflow"></i>
+                </button>
             </div>
-        </div>
+            <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+                aria-hidden="false"
+                id="wgxzK85912">
+                <div class="fd-toolbar__overflow__body">
+                    <button class="fd-button fd-button--transparent">Edit</button>
+                    <span class="fd-toolbar__separator"></span>
+                    <button class="fd-button fd-button--transparent">Delete</button>
+                    <span class="fd-toolbar__separator"></span>
+                    <button class="fd-button fd-button--transparent">Assign</button>
+                    <button class="fd-button fd-button--transparent">Exit</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+<div style="height:300px">
 <h3>Compact example</h3>
-<div class="fd-toolbar">
-    <span>Products (34)</span>
-    <button class="fd-button fd-button--compact fd-button--transparent">Create</button>
-    <span class="fd-toolbar__spacer "> </span>
-    <button class="fd-button fd-button--compact fd-button--transparent">Save</button>
-    <button class="fd-button fd-button--compact fd-button--transparent">Copy</button>
-    <span class="fd-toolbar__separator"></span>
-    <div class="fd-popover fd-toolbar__overflow">
-    <div class="fd-popover__control">
-        <button class="fd-button fd-button--compact fd-button--transparent"
-        aria-controls="wgxzK859122"
-        aria-haspopup="true"
-        aria-expanded="true"
-        aria-label="More">
-            <i class="sap-icon--overflow"></i>    
-        </button>
-    </div>
-    <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
-        aria-hidden="false"
-        id="wgxzK859122">
-        <div class="fd-toolbar__overflow__body">
-            <label class="fd-label fd-toolbar__overflow__label">Label</label>
-            <button class="fd-button fd-button--compact fd-button--transparent">Edit</button>
-            <span class="fd-toolbar__separator"></span>
-            <label class="fd-form-label fd-toolbar__overflow__form-label">Form label</label>
-            <button class="fd-button fd-button--compact fd-button--transparent">Delete</button>
-            <span class="fd-toolbar__separator"></span>
-            <button class="fd-button fd-button--compact fd-button--transparent">Assign</button>
-            <button class="fd-button fd-button--compact fd-button--transparent">Exit</button>
+    <div class="fd-toolbar">
+        <span>Products (34)</span>
+        <button class="fd-button fd-button--compact fd-button--transparent">Create</button>
+        <span class="fd-toolbar__spacer "> </span>
+        <button class="fd-button fd-button--compact fd-button--transparent">Save</button>
+        <button class="fd-button fd-button--compact fd-button--transparent">Copy</button>
+        <span class="fd-toolbar__separator"></span>
+        <div class="fd-popover fd-toolbar__overflow">
+            <div class="fd-popover__control">
+                <button
+                class="fd-button fd-button--compact fd-button--transparent"
+                aria-controls="mw0daw8d7h"
+                aria-haspopup="true"
+                aria-expanded="true"
+                id="31jr8oaufh"
+                onclick="toggleElAttrs('mw0daw8d7h', ['aria-hidden']);toggleElAttrs('31jr8oaufh', ['aria-expanded']);"
+                aria-label="More">
+                    <i class="sap-icon--overflow"></i>    
+                </button>
+            </div>
+            <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+                aria-hidden="false"
+                id="mw0daw8d7h">
+                <div class="fd-toolbar__overflow__body">
+                    <label class="fd-label fd-toolbar__overflow__label">Label</label>
+                    <button class="fd-button fd-button--compact fd-button--transparent">Edit</button>
+                    <span class="fd-toolbar__separator"></span>
+                    <label class="fd-form-label fd-toolbar__overflow__form-label">Form label</label>
+                    <button class="fd-button fd-button--compact fd-button--transparent">Delete</button>
+                    <span class="fd-toolbar__separator"></span>
+                    <button class="fd-button fd-button--compact fd-button--transparent">Assign</button>
+                    <button class="fd-button fd-button--compact fd-button--transparent">Exit</button>
+                </div>
+            </div>
         </div>
-    </div>
     </div>
 </div>
 `;

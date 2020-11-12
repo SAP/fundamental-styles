@@ -1,6 +1,3 @@
-import iconRated from './rated.png';
-import iconUnrated from './unrated.png';
-
 export default {
     title: 'Components/Rating Indicator',
     parameters: {
@@ -250,7 +247,7 @@ modifier class together with the \`fd-rating-indicator\` class.
 export const CustomIcons = () => `
 <div class="example-container">
     <div class="fd-rating-indicator fd-rating-indicator--icon"
-    style="--sapRating-indicator-icon-rated: url(${iconRated}); --sapRating-indicator-icon-unrated: url(${iconUnrated})">
+    style="--sapRating-indicator-icon-rated: url('./assets/icons/rated.png'); --sapRating-indicator-icon-unrated: url('./assets/icons/unrated.png')">
         <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
             <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-icon-1" name="rating-icon" value="1">
             <label class="fd-rating-indicator__label" for="rating-icon-1"></label>

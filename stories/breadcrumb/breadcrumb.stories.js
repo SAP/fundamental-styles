@@ -69,18 +69,18 @@ export const overflow = () => `
                 <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false" id="breadcrumb1">
                     <div class="fd-popover__wrapper">
                         <ul class="fd-list fd-list--navigation" role="menu">
-                            <li tabindex="-1" role="none" class="fd-list__item fd-list__item--link">
-                                <a role="menuitem" tabindex="0" class="fd-list__link" href="#">
+                            <li tabindex="-1" role="menuitem" class="fd-list__item fd-list__item--link">
+                                <a tabindex="0" class="fd-list__link" href="#">
                                     <span class="fd-list__title">Products</span>
                                 </a>
                             </li>
-                            <li tabindex="-1" role="none" class="fd-list__item fd-list__item--link">
-                                <a role="menuitem" tabindex="0" class="fd-list__link" href="#">
+                            <li tabindex="-1" role="menuitem" class="fd-list__item fd-list__item--link">
+                                <a tabindex="0" class="fd-list__link" href="#">
                                     <span class="fd-list__title">Suppliers</span>
                                 </a>
                             </li>
-                            <li tabindex="-1" role="none" class="fd-list__item fd-list__item--link">
-                                <a role="menuitem" tabindex="0" class="fd-list__link" href="#">
+                            <li tabindex="-1" role="menuitem" class="fd-list__item fd-list__item--link">
+                                <a tabindex="0" class="fd-list__link" href="#">
                                     <span class="fd-list__title">Titanium</span>
                                 </a>
                             </li>

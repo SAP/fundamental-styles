@@ -25,7 +25,8 @@ Do not use the panel if:
 export const expandable = () => `<div class="fd-panel">
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
-            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="fghqwe321">
+            <button class="fd-button fd-button--transparent fd-panel__button"
+                aria-expanded="false" aria-haspopup="true" aria-label="expand/collapse panel" aria-controls="fghqwe321">
                 <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
@@ -54,13 +55,14 @@ export const expandable = () => `<div class="fd-panel">
 <div class="fd-panel">
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
-            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="true" aria-haspopup="true" aria-controls="fghqwe32122">
+            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="true"
+                aria-haspopup="true" aria-label="expand/collapse panel" aria-controls="fghqwe3214213">
                 <i class="sap-icon--slim-arrow-down"></i>
             </button>
         </div>
         <h4 class="fd-panel__title" id="asdASD1234">Panel Header Expanded</h4>
     </div>
-    <div role="region" aria-labelledby="jhqDKYdf" class="fd-panel__content" aria-hidden="false" id="fghqwe32122">
+    <div role="region" aria-labelledby="jhqDKYdf" class="fd-panel__content" aria-hidden="false" id="fghqwe3214213">
         <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
             et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 

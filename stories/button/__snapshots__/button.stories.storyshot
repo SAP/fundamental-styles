@@ -251,7 +251,6 @@ exports[`Storyshots Components/Button Button states 1`] = `
   
 
   <button
-    aria-selected="true"
     class="fd-button fd-button--emphasized is-selected"
   >
     Selected State
@@ -298,7 +297,6 @@ exports[`Storyshots Components/Button Button states 1`] = `
   
 
   <button
-    aria-selected="true"
     class="fd-button is-selected"
   >
     Selected State
@@ -345,7 +343,6 @@ exports[`Storyshots Components/Button Button states 1`] = `
   
 
   <button
-    aria-selected="true"
     class="fd-button fd-button--transparent is-selected"
   >
     Selected State
@@ -392,7 +389,6 @@ exports[`Storyshots Components/Button Button states 1`] = `
   
 
   <button
-    aria-selected="true"
     class="fd-button fd-button is-selected"
   >
     Selected State
@@ -439,7 +435,6 @@ exports[`Storyshots Components/Button Button states 1`] = `
   
 
   <button
-    aria-selected="true"
     class="fd-button fd-button--ghost is-selected"
   >
     Selected State
@@ -486,7 +481,6 @@ exports[`Storyshots Components/Button Button states 1`] = `
   
 
   <button
-    aria-selected="true"
     class="fd-button fd-button--positive is-selected"
   >
     Selected State
@@ -533,7 +527,6 @@ exports[`Storyshots Components/Button Button states 1`] = `
   
 
   <button
-    aria-selected="true"
     class="fd-button fd-button--negative is-selected"
   >
     Selected State
@@ -580,7 +573,6 @@ exports[`Storyshots Components/Button Button states 1`] = `
   
 
   <button
-    aria-selected="true"
     class="fd-button fd-button--attention is-selected"
   >
     Selected State

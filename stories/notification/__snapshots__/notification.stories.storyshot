@@ -523,17 +523,16 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
         
             
         <li
+          aria-selected="true"
           class="fd-tabs__item"
-          role="listitem"
+          role="tab"
         >
           
                 
           <a
             aria-controls="notifP300"
-            aria-selected="true"
             class="fd-tabs__link"
             href="#notifP300"
-            role="tab"
           >
             
                     
@@ -554,7 +553,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
             
         <li
           class="fd-tabs__item"
-          role="listitem"
+          role="tab"
         >
           
                 
@@ -562,7 +561,6 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
             aria-controls="notifP301"
             class="fd-tabs__link"
             href="#notifP301"
-            role="tab"
           >
             
                     
@@ -583,7 +581,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
             
         <li
           class="fd-tabs__item"
-          role="listitem"
+          role="tab"
         >
           
                 
@@ -591,7 +589,6 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
             aria-controls="notifP302"
             class="fd-tabs__link"
             href="#notifP302"
-            role="tab"
           >
             
                     
@@ -1262,12 +1259,12 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                 
                             
                 <button
-                  aria-controls="popoverA3"
+                  aria-controls="popoverA42"
                   aria-expanded="false"
                   aria-haspopup="true"
                   aria-label="Image label"
                   class="fd-button fd-button--transparent"
-                  onclick="onPopoverClick('popoverA3');"
+                  onclick="onPopoverClick('popoverA42');"
                 >
                   
                                 
@@ -1285,7 +1282,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
               <div
                 aria-hidden="true"
                 class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover"
-                id="popoverA3"
+                id="popoverA42"
               >
                 
                             
@@ -1469,12 +1466,12 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                 
                             
                 <button
-                  aria-controls="popoverA2"
+                  aria-controls="popoverA245"
                   aria-expanded="false"
                   aria-haspopup="true"
                   aria-label="Image label"
                   class="fd-button fd-button--transparent"
-                  onclick="onPopoverClick('popoverA2');"
+                  onclick="onPopoverClick('popoverA245');"
                 >
                   
                                 
@@ -1492,7 +1489,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
               <div
                 aria-hidden="true"
                 class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover"
-                id="popoverA2"
+                id="popoverA245"
               >
                 
                             
@@ -1738,12 +1735,12 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                 
                             
                 <button
-                  aria-controls="popoverA3"
+                  aria-controls="popoverA5"
                   aria-expanded="false"
                   aria-haspopup="true"
                   aria-label="Image label"
                   class="fd-button fd-button--transparent"
-                  onclick="onPopoverClick('popoverA3');"
+                  onclick="onPopoverClick('popoverA5');"
                 >
                   
                                 
@@ -1761,7 +1758,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
               <div
                 aria-hidden="true"
                 class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover"
-                id="popoverA3"
+                id="popoverA5"
               >
                 
                             
@@ -1945,12 +1942,12 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                 
                             
                 <button
-                  aria-controls="popoverA2"
+                  aria-controls="popoverA43212"
                   aria-expanded="false"
                   aria-haspopup="true"
                   aria-label="Image label"
                   class="fd-button fd-button--transparent"
-                  onclick="onPopoverClick('popoverA2');"
+                  onclick="onPopoverClick('popoverA43212');"
                 >
                   
                                 
@@ -1968,7 +1965,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
               <div
                 aria-hidden="true"
                 class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover"
-                id="popoverA2"
+                id="popoverA43212"
               >
                 
                             
@@ -2171,17 +2168,16 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
     
         
     <li
+      aria-selected="true"
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
             
       <a
         aria-controls="notifV550"
-        aria-selected="true"
         class="fd-tabs__link"
         href="#notifV550"
-        role="tab"
       >
         
                 
@@ -2202,7 +2198,7 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
         
     <li
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
             
@@ -2210,7 +2206,6 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
         aria-controls="notifV551"
         class="fd-tabs__link"
         href="#notifV551"
-        role="tab"
       >
         
                 
@@ -2231,7 +2226,7 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
         
     <li
       class="fd-tabs__item"
-      role="listitem"
+      role="tab"
     >
       
             
@@ -2239,7 +2234,6 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
         aria-controls="notifV552"
         class="fd-tabs__link"
         href="#notifV552"
-        role="tab"
       >
         
                 

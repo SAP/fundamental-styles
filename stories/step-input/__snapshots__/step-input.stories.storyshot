@@ -1,337 +1,416 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/StepInput Compact 1`] = `
-<div
-  class="fd-form-item fd-form-item--horizontal"
->
+<section>
+  <label
+    class="fd-form-label"
+    for="step-1"
+  >
+    Compact Step Input
+  </label>
+  <br />
   
-    
+
   <div
-    class="fd-step-input fd-step-input--compact"
+    class="fd-form-item fd-form-item--horizontal"
   >
     
+    
+    <div
+      class="fd-step-input fd-step-input--compact"
+    >
+      
             
-    <button
-      aria-label="Step down"
-      class="
+      <button
+        aria-label="Step down"
+        class="
                 fd-button
                 fd-button--compact
                 fd-button--transparent
                 fd-step-input__button"
-      onclick="stepInputValue('step-1', 'down');"
-      tabindex="-1"
-      type="button"
-    >
-      
-                    
-      <i
-        class="sap-icon--less"
-      />
-      
-            
-    </button>
-    
+        onclick="stepInputValue('step-1', 'down');"
+        tabindex="-1"
+        type="button"
+      >
         
-    <input
-      class="
+                    
+        <i
+          class="sap-icon--less"
+        />
+        
+            
+      </button>
+      
+        
+      <input
+        class="
                 fd-input 
                 fd-input--compact 
                 fd-input--no-number-spinner 
                 fd-step-input__input
         "
-      id="step-1"
-      type="number"
-      value="0"
-    />
-    
+        id="step-1"
+        type="number"
+        value="0"
+      />
+      
             
-    <button
-      aria-label="Step up"
-      class="
+      <button
+        aria-label="Step up"
+        class="
                 fd-button 
                 fd-button--compact
                 fd-button--transparent
                 fd-step-input__button"
-      onclick="stepInputValue('step-1', 'up');"
+        onclick="stepInputValue('step-1', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+                    
+        <i
+          class="sap-icon--add"
+        />
+        
+            
+      </button>
+      
+    
+    </div>
+    
+    
+    <span
+      class="fd-form-label fd-form-label--unit-description"
+    >
+      PC
+    </span>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/StepInput Default 1`] = `
+<section>
+  <label
+    class="fd-form-label"
+    for="step-3"
+  >
+    Default Step Input
+  </label>
+  <br />
+  
+
+  <div
+    class="fd-step-input"
+  >
+    
+  
+    <button
+      aria-label="Step down"
+      class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button"
+      onclick="stepInputValue('step-3', 'down');"
       tabindex="-1"
       type="button"
     >
       
-                    
+    
+      <i
+        class="sap-icon--less"
+      />
+      
+  
+    </button>
+    
+  
+    <input
+      class="fd-input fd-input--no-number-spinner fd-step-input__input"
+      id="step-3"
+      type="number"
+      value="0"
+    />
+    
+  
+    <button
+      aria-label="Step up"
+      class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button"
+      onclick="stepInputValue('step-3', 'up');"
+      tabindex="-1"
+      type="button"
+    >
+      
+    
       <i
         class="sap-icon--add"
       />
       
-            
+  
     </button>
     
-    
+
   </div>
   
-    
-  <span
-    class="fd-form-label fd-form-label--unit-description"
-  >
-    PC
-  </span>
-  
 
-</div>
-`;
-
-exports[`Storyshots Components/StepInput Default 1`] = `
-<div
-  class="fd-step-input"
->
-  
-        
-  <button
-    aria-label="Step down"
-    class="
-            fd-button
-            fd-button--transparent
-            fd-step-input__button"
-    onclick="stepInputValue('step-3', 'down');"
-    tabindex="-1"
-    type="button"
-  >
-    
-                
-    <i
-      class="sap-icon--less"
-    />
-    
-        
-  </button>
-  
-    
-  <input
-    class="
-            fd-input 
-            fd-input--no-number-spinner 
-            fd-step-input__input
-    "
-    id="step-3"
-    type="number"
-    value="0"
-  />
-  
-        
-  <button
-    aria-label="Step up"
-    class="
-            fd-button 
-            fd-button--transparent
-            fd-step-input__button"
-    onclick="stepInputValue('step-3', 'up');"
-    tabindex="-1"
-    type="button"
-  >
-    
-                
-    <i
-      class="sap-icon--add"
-    />
-    
-        
-  </button>
-  
-
-</div>
+</section>
 `;
 
 exports[`Storyshots Components/StepInput Disabled 1`] = `
-<div
-  class="fd-step-input is-disabled"
->
+<section>
+  <label
+    class="fd-form-label"
+    for="step-13"
+  >
+    Disabled Step Input
+  </label>
+  <br />
   
+
+  <div
+    class="fd-step-input is-disabled"
+  >
+    
         
-  <button
-    aria-label="Step down"
-    class="
+    <button
+      aria-label="Step down"
+      class="
             fd-button
             fd-button--transparent
             fd-step-input__button"
-    onclick="stepInputValue('step-13', 'down');"
-    tabindex="-1"
-    type="button"
-  >
-    
+      onclick="stepInputValue('step-13', 'down');"
+      tabindex="-1"
+      type="button"
+    >
+      
                 
-    <i
-      class="sap-icon--less"
-    />
-    
+      <i
+        class="sap-icon--less"
+      />
+      
         
-  </button>
-  
+    </button>
     
-  <input
-    class="
+    
+    <input
+      class="
             fd-input 
             fd-input--no-number-spinner 
             fd-step-input__input
     "
-    disabled=""
-    id="step-13"
-    type="number"
-    value="0"
-  />
-  
-        
-  <button
-    aria-label="Step up"
-    class="
-            fd-button 
-            fd-button--transparent
-            fd-step-input__button"
-    onclick="stepInputValue('step-13', 'up');"
-    tabindex="-1"
-    type="button"
-  >
-    
-                
-    <i
-      class="sap-icon--add"
+      disabled=""
+      id="step-13"
+      type="number"
+      value="0"
     />
     
         
-  </button>
+    <button
+      aria-label="Step up"
+      class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button"
+      onclick="stepInputValue('step-13', 'up');"
+      tabindex="-1"
+      type="button"
+    >
+      
+                
+      <i
+        class="sap-icon--add"
+      />
+      
+        
+    </button>
+    
+
+  </div>
   
 
-</div>
+</section>
 `;
 
 exports[`Storyshots Components/StepInput Focused 1`] = `
-<div
-  class="fd-step-input is-focus"
->
+<section>
+  <label
+    class="fd-form-label"
+    for="step-20"
+  >
+    Focused Step Input
+  </label>
+  <br />
   
+
+  <div
+    class="fd-step-input is-focus"
+  >
+    
         
-  <button
-    aria-label="Step down"
-    class="
+    <button
+      aria-label="Step down"
+      class="
             fd-button
             fd-button--transparent
             fd-step-input__button"
-    onclick="stepInputValue('step-20', 'down');"
-    tabindex="-1"
-    type="button"
-  >
-    
+      onclick="stepInputValue('step-20', 'down');"
+      tabindex="-1"
+      type="button"
+    >
+      
                 
-    <i
-      class="sap-icon--less"
-    />
-    
+      <i
+        class="sap-icon--less"
+      />
+      
         
-  </button>
-  
+    </button>
     
-  <input
-    class="
+    
+    <input
+      class="
             fd-input 
             fd-input--no-number-spinner 
             fd-step-input__input
     "
-    id="step-20"
-    type="number"
-    value="0"
-  />
-  
-        
-  <button
-    aria-label="Step up"
-    class="
-            fd-button 
-            fd-button--transparent
-            fd-step-input__button"
-    onclick="stepInputValue('step-20', 'up');"
-    tabindex="-1"
-    type="button"
-  >
-    
-                
-    <i
-      class="sap-icon--add"
+      id="step-20"
+      type="number"
+      value="0"
     />
     
         
-  </button>
+    <button
+      aria-label="Step up"
+      class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button"
+      onclick="stepInputValue('step-20', 'up');"
+      tabindex="-1"
+      type="button"
+    >
+      
+                
+      <i
+        class="sap-icon--add"
+      />
+      
+        
+    </button>
+    
+
+  </div>
   
 
-</div>
+</section>
 `;
 
 exports[`Storyshots Components/StepInput Read Only 1`] = `
-<div
-  class="fd-step-input is-readonly"
->
-  
-        
-  <button
-    aria-label="Step down"
-    class="
-            fd-button
-            fd-button--transparent
-            fd-step-input__button"
-    onclick="stepInputValue('step-14', 'down');"
-    tabindex="-1"
-    type="button"
+<section>
+  <label
+    class="fd-form-label"
+    for="step-14"
   >
-    
-                
-    <i
-      class="sap-icon--less"
-    />
-    
-        
-  </button>
-  
-    
-  <input
-    class="
-            fd-input 
-            fd-input--no-number-spinner 
-            fd-step-input__input
-    "
-    id="step-14"
-    readonly=""
-    type="number"
-    value="0"
-  />
-  
-        
-  <button
-    aria-label="Step up"
-    class="
-            fd-button 
-            fd-button--transparent
-            fd-step-input__button"
-    onclick="stepInputValue('step-14', 'up');"
-    tabindex="-1"
-    type="button"
-  >
-    
-                
-    <i
-      class="sap-icon--add"
-    />
-    
-        
-  </button>
+    Temperature set to
+  </label>
+  <br />
   
 
-</div>
+  <div
+    class="fd-form-item fd-form-item--horizontal"
+  >
+    
+    
+    <div
+      class="fd-step-input is-readonly"
+    >
+      
+            
+      <button
+        aria-label="Step down"
+        class="
+                fd-button
+                fd-button--transparent
+                fd-step-input__button"
+        onclick="stepInputValue('step-14', 'down');"
+        tabindex="-1"
+        type="button"
+      >
+        
+                    
+        <i
+          class="sap-icon--less"
+        />
+        
+            
+      </button>
+      
+        
+      <input
+        class="
+                fd-input 
+                fd-input--no-number-spinner 
+                fd-step-input__input
+        "
+        id="step-14"
+        readonly=""
+        type="number"
+        value="23"
+      />
+      
+            
+      <button
+        aria-label="Step up"
+        class="
+                fd-button 
+                fd-button--transparent
+                fd-step-input__button"
+        onclick="stepInputValue('step-14', 'up');"
+        tabindex="-1"
+        type="button"
+      >
+        
+                    
+        <i
+          class="sap-icon--add"
+        />
+        
+            
+      </button>
+      
+            
+    </div>
+    
+        
+    <span
+      class="fd-form-label fd-form-label--unit-description"
+    >
+      Degree Celsius
+    </span>
+    
+
+  </div>
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/StepInput States 1`] = `
 <section>
-  <h3>
-    Success
-  </h3>
+  <label
+    class="fd-form-label"
+    for="step-5"
+  >
+    Success Step Input
+  </label>
+  <br />
   
-
 
   <div
     class="fd-step-input is-success"
@@ -398,9 +477,13 @@ exports[`Storyshots Components/StepInput States 1`] = `
   <br />
   
 
-  <h3>
-    Information
-  </h3>
+  <label
+    class="fd-form-label"
+    for="step-6"
+  >
+    Information Step Input
+  </label>
+  <br />
   
 
   <div
@@ -467,9 +550,13 @@ exports[`Storyshots Components/StepInput States 1`] = `
   <br />
   
 
-  <h3>
-    Error
-  </h3>
+  <label
+    class="fd-form-label"
+    for="step-7"
+  >
+    Error Step Input
+  </label>
+  <br />
   
 
   <div
@@ -538,9 +625,13 @@ exports[`Storyshots Components/StepInput States 1`] = `
   
 
 
-  <h3>
-    Warning
-  </h3>
+  <label
+    class="fd-form-label"
+    for="step-8"
+  >
+    Warning Step Input
+  </label>
+  <br />
   
 
   <div

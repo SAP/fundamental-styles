@@ -668,7 +668,7 @@ export const withPagination = () => `
 
 export const withAdvancedToolbar = () => `
 <div class="fd-dialog" id="filter-dialog-example">
-    <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-filter">
+    <section class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-filter">
         <header class="fd-dialog__header fd-bar">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -709,10 +709,10 @@ export const withAdvancedToolbar = () => `
                 </div>
             </div>
         </footer>
-    </div>
+    </section>
 </div>
 <div class="fd-dialog" id="settings-dialog-example">
-    <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-settings">
+    <section class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-settings">
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -734,9 +734,11 @@ export const withAdvancedToolbar = () => `
                 </div>
                 <div class="fd-bar__element fd-bar__element--full-width">
                     <div class="fd-input-group">
-                        <input class="fd-input fd-input-group__input fd-input--compact" type="text" placeholder="Search...">
+                        <input aria-labelledby="dialog-settings" 
+                            class="fd-input fd-input-group__input fd-input--compact" type="text" placeholder="Search...">
                         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                            <button aria-label="navigation" class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact">
+                            <button aria-label="navigation"
+                                class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact">
                                 <i class="sap-icon--search"></i>
                             </button>
                         </span>
@@ -745,9 +747,11 @@ export const withAdvancedToolbar = () => `
             </div>
         </div>
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
-            <ul class="fd-list fd-list--multi-input fd-list--compact">
+            <ul aria-labelledby="dialog-settings" class="fd-list fd-list--multi-input fd-list--compact"
+                aria-multiselectable="true" role="listbox">
                 <li class="fd-list__item is-selected" role="option">
-                  <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="GGi4ezFD1">
+                  <input aria-label="checkbox" type="checkbox" checked
+                    class="fd-checkbox fd-checkbox--compact fd-list__input" id="GGi4ezFD1">
                   <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="GGi4ezFD1">
                       <span class="fd-list__title">All</span>
                   </label>
@@ -788,7 +792,7 @@ export const withAdvancedToolbar = () => `
                 </div>
             </div>
         </footer>
-    </div>
+    </section>
 </div>
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table With Advanced Shellbar</h4>
@@ -1522,7 +1526,7 @@ export const fixColumnHeader = () => `
          </thead>
          <tbody class="fd-table__body">
             <tr class="fd-table__row">
-               <td class="fd-table__cell fd-table__cell--fixed" scope="row">Lorem ipsum dolor sit amet ipsum</td>
+               <th class="fd-table__cell fd-table__cell--fixed" scope="row">Row header</th>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
@@ -1532,7 +1536,7 @@ export const fixColumnHeader = () => `
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
             </tr>
             <tr class="fd-table__row">
-               <td class="fd-table__cell fd-table__cell--fixed" scope="row">Lorem ipsum dolor sit amet ipsum</td>
+               <th class="fd-table__cell fd-table__cell--fixed" scope="row">Row header</th>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
@@ -1542,7 +1546,7 @@ export const fixColumnHeader = () => `
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
             </tr>
             <tr class="fd-table__row">
-               <td class="fd-table__cell fd-table__cell--fixed" scope="row">Lorem ipsum dolor sit amet ipsum</td>
+               <th class="fd-table__cell fd-table__cell--fixed" scope="row">Row header</th>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
@@ -1678,7 +1682,7 @@ export const gridTable = () => `<table class="fd-table" aria-describedby="FU4EwF
                 <div class="fd-form-item">
                     <div class="fd-popover">
                         <div class="fd-popover__control">
-                            <div class="fd-select" role="combobox" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
+                            <div class="fd-select" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
                                 <div class="fd-select__control">
                                     <span class="fd-select__text-content">Very Best Screens</span>
                                     <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
@@ -1737,7 +1741,7 @@ export const gridTable = () => `<table class="fd-table" aria-describedby="FU4EwF
                 <div class="fd-form-item">
                     <div class="fd-popover">
                         <div class="fd-popover__control">
-                            <div class="fd-select" role="combobox" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
+                            <div class="fd-select" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
                                 <div class="fd-select__control">
                                     <span class="fd-select__text-content">Fasttech</span>
                                     <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
@@ -1796,7 +1800,7 @@ export const gridTable = () => `<table class="fd-table" aria-describedby="FU4EwF
                 <div class="fd-form-item">
                     <div class="fd-popover">
                         <div class="fd-popover__control">
-                            <div class="fd-select" role="combobox" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
+                            <div class="fd-select" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
                                 <div class="fd-select__control">
                                     <span class="fd-select__text-content">Printers for All</span>
                                     <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
@@ -1856,7 +1860,7 @@ export const gridTable = () => `<table class="fd-table" aria-describedby="FU4EwF
                 <div class="fd-form-item">
                     <div class="fd-popover">
                         <div class="fd-popover__control">
-                            <div class="fd-select" role="combobox" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
+                            <div class="fd-select" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
                                 <div class="fd-select__control">
                                     <span class="fd-select__text-content">Technocom</span>
                                     <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>

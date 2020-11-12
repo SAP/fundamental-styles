@@ -137,15 +137,15 @@ export const desktop = () => `
             </div>
             <div class="fd-dynamic-page__tabs--overflow">
                 <ul class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--xl fd-dynamic-page__tabs--add-shadow" role="tablist">
-                    <li role="listitem" class="fd-tabs__item">
-                        <a class="fd-tabs__link" aria-controls="fuCwV550" href="#fuCwV550" role="tab">
+                    <li role="tab" class="fd-tabs__item">
+                        <a class="fd-tabs__link" aria-controls="fuCwV550" href="#fuCwV550">
                             <span class="fd-tabs__tag">
                                 Link
                             </span>
                         </a>
                     </li>
-                    <li role="listitem" class="fd-tabs__item">
-                        <a class="fd-tabs__link" aria-controls="AiWfz165" aria-selected="true" href="#AiWfz165" role="tab">
+                    <li role="tab" class="fd-tabs__item" aria-selected="true">
+                        <a class="fd-tabs__link" aria-controls="AiWfz165" href="#AiWfz165">
                             <span class="fd-tabs__tag">
                                 Selected
                             </span>
@@ -202,7 +202,7 @@ desktop.storyName = 'Desktop';
 desktop.parameters = {
     docs: {
         storyDescription: `The dynamic page displays on desktop screens with the L, XL, and XXL sizes. To optimize dynamic page for desktop, add these modifier classes to the following elements:
-        
+    
 | Element | Modifier class |
 | ----------------: | :------------ |
 | Title Area | \`fd-dynamic-page__title-area--xl\` |
@@ -293,15 +293,15 @@ export const tablet = () => `
             </div>
             <div class="fd-dynamic-page__tabs--overflow">
                 <ul class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--md fd-dynamic-page__tabs--add-shadow" role="tablist">
-                    <li role="listitem" class="fd-tabs__item">
-                        <a class="fd-tabs__link" aria-controls="fuCwV551" href="#fuCwV551" role="tab">
+                    <li role="tab" class="fd-tabs__item" aria-controls="fuCwV551" >
+                        <a class="fd-tabs__link" href="#fuCwV551">
                             <span class="fd-tabs__tag">
                                 Link
                             </span>
                         </a>
                     </li>
-                    <li role="listitem" class="fd-tabs__item">
-                        <a class="fd-tabs__link" aria-controls="AiWfz166" aria-selected="true" href="#AiWfz166" role="tab">
+                    <li role="tab" class="fd-tabs__item" aria-selected="true" aria-controls="AiWfz166">
+                        <a class="fd-tabs__link" href="#AiWfz166">
                             <span class="fd-tabs__tag">
                                 Selected
                             </span>
@@ -401,16 +401,22 @@ export const mobile = () => `
                             <div role="toolbar" aria-label="Header Content" class="fd-dynamic-page__title-content-toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                 <div class="fd-popover fd-toolbar__overflow">
                                     <div class="fd-popover__control">
-                                        <button class="fd-button fd-button--transparent"
-                                        aria-controls="wgxzK85915"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        aria-label="More Header Content">
-                                            <i class="sap-icon--overflow"></i>    
+                                        <button
+                                            id="asfmiasudashd"
+                                            onclick="
+                                                toggleElAttrs('wgxzK85915', ['aria-hidden']);
+                                                toggleElAttrs('asfmiasudashd', ['aria-expanded']);
+                                            "
+                                            class="fd-button fd-button--transparent"
+                                            aria-controls="wgxzK85915"
+                                            aria-haspopup="true"
+                                            aria-expanded="true"
+                                            aria-label="More Header Content">
+                                            <i class="sap-icon--overflow"></i>
                                         </button>
                                     </div>
                                     <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
-                                        aria-hidden="true"
+                                        aria-hidden="false"
                                         id="wgxzK85915">
                                         <div class="fd-toolbar__overflow__body">
                                             Overflowing title content
@@ -421,12 +427,18 @@ export const mobile = () => `
                             <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                 <div class="fd-popover fd-toolbar__overflow">
                                     <div class="fd-popover__control">
-                                        <button class="fd-button fd-button--transparent"
-                                        aria-controls="wgxzK85914"
-                                        aria-haspopup="true"
-                                        aria-expanded="true"
-                                        aria-label="Header actions">
-                                            <i class="sap-icon--overflow"></i>    
+                                        <button
+                                            id="maisodusakdnsma"
+                                            onclick="
+                                                toggleElAttrs('wgxzK85914', ['aria-hidden']);
+                                                toggleElAttrs('maisodusakdnsma', ['aria-expanded']);
+                                            "
+                                            class="fd-button fd-button--transparent"
+                                            aria-controls="wgxzK85914"
+                                            aria-haspopup="true"
+                                            aria-expanded="true"
+                                            aria-label="Header actions">
+                                            <i class="sap-icon--overflow"></i>
                                         </button>
                                     </div>
                                     <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
@@ -466,15 +478,15 @@ export const mobile = () => `
             </div>
             <div class="fd-dynamic-page__tabs--overflow">
                 <ul class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--sm fd-dynamic-page__tabs--add-shadow" role="tablist">
-                    <li role="listitem" class="fd-tabs__item">
-                        <a class="fd-tabs__link" aria-controls="fuCwV552" href="#fuCwV552" role="tab">
+                    <li class="fd-tabs__item" aria-controls="fuCwV552" role="tab">
+                        <a class="fd-tabs__link" href="#fuCwV552">
                             <span class="fd-tabs__tag">
                                 Link
                             </span>
                         </a>
                     </li>
-                    <li role="listitem" class="fd-tabs__item">
-                        <a class="fd-tabs__link" aria-controls="AiWfz167" aria-selected="true" href="#AiWfz167" role="tab">
+                    <li class="fd-tabs__item" aria-selected="true" role="tab">
+                        <a class="fd-tabs__link" aria-controls="AiWfz167" href="#AiWfz167">
                             <span class="fd-tabs__tag">
                                 Selected
                             </span>
@@ -558,12 +570,18 @@ export const mobileCollapsed = () => `
                             <div role="toolbar" aria-label="Header Content" class="fd-dynamic-page__title-content-toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                 <div class="fd-popover fd-toolbar__overflow">
                                     <div class="fd-popover__control">
-                                        <button class="fd-button fd-button--transparent"
-                                        aria-controls="wgxzK85913"
-                                        aria-haspopup="true"
-                                        aria-expanded="true"
-                                        aria-label="More Header Content">
-                                            <i class="sap-icon--overflow"></i>    
+                                        <button
+                                            id="ko9as8dajskdj"
+                                            onclick="
+                                                toggleElAttrs('wgxzK85913', ['aria-hidden']);
+                                                toggleElAttrs('ko9as8dajskdj', ['aria-expanded']);
+                                            "
+                                            class="fd-button fd-button--transparent"
+                                            aria-controls="wgxzK85913"
+                                            aria-haspopup="true"
+                                            aria-expanded="true"
+                                            aria-label="More Header Content">
+                                            <i class="sap-icon--overflow"></i>
                                         </button>
                                     </div>
                                     <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
@@ -578,16 +596,22 @@ export const mobileCollapsed = () => `
                             <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-toolbar fd-toolbar--clear  fd-toolbar--cozy fd-toolbar--transparent">
                                 <div class="fd-popover fd-toolbar__overflow">
                                     <div class="fd-popover__control">
-                                        <button class="fd-button fd-button--transparent"
-                                        aria-controls="wgxzK85912"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        aria-label="Header actions">
-                                            <i class="sap-icon--overflow"></i>    
+                                        <button
+                                            id="k9r0a8ioasjd"
+                                            onclick="
+                                                toggleElAttrs('wgxzK85912', ['aria-hidden']);
+                                                toggleElAttrs('k9r0a8ioasjd', ['aria-expanded']);
+                                            "
+                                            class="fd-button fd-button--transparent"
+                                            aria-controls="wgxzK85912"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                            aria-label="Header actions">
+                                            <i class="sap-icon--overflow"></i>
                                         </button>
                                     </div>
                                     <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
-                                        aria-hidden="true"
+                                        aria-hidden="false"
                                         id="wgxzK85912">
                                         <div class="fd-toolbar__overflow__body">
                                             <button class="fd-button fd-button--transparent">Accept</button>
@@ -623,15 +647,15 @@ export const mobileCollapsed = () => `
             </div>
             <div class="fd-dynamic-page__tabs--overflow">
                 <ul class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--sm fd-dynamic-page__tabs--add-shadow" role="tablist">
-                    <li role="listitem" class="fd-tabs__item">
-                        <a class="fd-tabs__link" aria-controls="fuCwV553" href="#fuCwV553" role="tab">
+                    <li role="tab" class="fd-tabs__item">
+                        <a class="fd-tabs__link" aria-controls="fuCwV553" href="#fuCwV553">
                             <span class="fd-tabs__tag">
                                 Link
                             </span>
                         </a>
                     </li>
-                    <li role="listitem" class="fd-tabs__item">
-                        <a class="fd-tabs__link" aria-controls="AiWfz168" aria-selected="true" href="#AiWfz168" role="tab">
+                    <li role="tab" class="fd-tabs__item" aria-selected="true">
+                        <a class="fd-tabs__link" aria-controls="AiWfz168" href="#AiWfz168">
                             <span class="fd-tabs__tag">
                                 Selected
                             </span>
@@ -679,25 +703,29 @@ export const summaryLine = () => `
 <div class="mobile-container">
     <section class="fd-dynamic-page" aria-label="Dynamic Page Mobile Summary Line Example">
         <header class="fd-dynamic-page__header">
-            <div class="fd-dynamic-page__summarized-title-area fd-dynamic-page__summarized-title-area--sm fd-dynamic-page__summarized-title-area--no-shadow" tabindex="0">
+            <div
+                class="fd-dynamic-page__summarized-title-area fd-dynamic-page__summarized-title-area--sm fd-dynamic-page__summarized-title-area--no-shadow"
+                tabindex="0">
                 <h1 class="fd-dynamic-page__summarized-title fd-dynamic-page__summarized-title--collapsed"> Balenciaga Triple S Trainers </h1>
-                <div role="toolbar" aria-label="Expand summary line action" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                <div role="toolbar" aria-label="Expand summary line action"
+                    class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                         <button class="fd-button fd-button--transparent" aria-label="Expand">
                             <i class="sap-icon--slim-arrow-down"></i>
                         </button>
                 </div>
             </div>
-            <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--sm fd-dynamic-page__title-area--collapsed" aria-hidden="true" tabindex="0">
+            <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--sm fd-dynamic-page__title-area--collapsed"
+                aria-hidden="true">
                 <div class="fd-dynamic-page__breadcrumb-title-container">
                     <nav aria-label="Breadcrumbs">
                         <ul class="fd-dynamic-page__breadcrumb--sm fd-breadcrumb">
-                            <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
-                            <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Shoes</a></li>
-                            <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
+                            <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="-1" href="#">Men</a></li>
+                            <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="-1" href="#">Shoes</a></li>
+                            <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="-1" href="#">Running Shoes</a></li>
                         </ul>
                     </nav>
                     <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                        <button class="fd-button fd-button--transparent" aria-label="Close">
+                        <button tabindex="-1" class="fd-button fd-button--transparent" aria-label="Close">
                             <i class="sap-icon--decline"></i>
                         </button>
                     </div>
@@ -705,10 +733,10 @@ export const summaryLine = () => `
                 <div class="fd-dynamic-page__title-container">
                     <h1 class="fd-title fd-dynamic-page__title"> Balenciaga Triple S Trainers </h1>
                         <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                            <button class="fd-button fd-button--transparent" aria-label="More Header Content">
+                            <button tabindex="-1" class="fd-button fd-button--transparent" aria-label="More Header Content">
                                 <i class="sap-icon--overflow"></i>
                             </button>
-                            <button class="fd-button fd-button--transparent" aria-label="Header actions">
+                            <button tabindex="-1" class="fd-button fd-button--transparent" aria-label="Header actions">
                                 <i class="sap-icon--overflow"></i>
                             </button>
                         </div>
@@ -716,15 +744,17 @@ export const summaryLine = () => `
                 <div class="fd-dynamic-page__subtitle"> Collapsed title area and header with summary line </div>
             </div>
             <div class="fd-dynamic-page__collapsible-header-container">
-                <div class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--sm" role="region" aria-hidden="true" id="fddplhvcm2"  aria-label="Dynamic Page Mobile Collapsed Header" >
+                <div class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--sm"
+                    role="region" aria-hidden="true" id="fddplhvcm2"  aria-label="Dynamic Page Mobile Collapsed Header" >
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
                     delectus necessitatibus incidunt numquam asperiores tenetur iure. 
                     Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
                 </div>
-                <div class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow" aria-hidden="true">
+                <div class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow"
+                    aria-hidden="true">
                     <div class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"></div>
                     <div role="toolbar" aria-label="Header actions" class="fd-dynamic-page__collapsible-header-visibility-container--button-group">
-                        <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
+                        <button tabindex="-1" class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
                                 aria-label="See More" 
                                 aria-expanded="false" 
                                 aria-haspopup="true" 
@@ -737,15 +767,15 @@ export const summaryLine = () => `
             </div>
             <div class="fd-dynamic-page__tabs--overflow">
                 <ul class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--sm fd-dynamic-page__tabs--add-shadow" role="tablist">
-                    <li role="listitem" class="fd-tabs__item">
-                        <a class="fd-tabs__link" aria-controls="fuCwV554" href="#fuCwV554" role="tab">
+                    <li role="tab" class="fd-tabs__item">
+                        <a class="fd-tabs__link" aria-controls="fuCwV554" href="#fuCwV554">
                             <span class="fd-tabs__tag">
                                 Link
                             </span>
                         </a>
                     </li>
-                    <li role="listitem" class="fd-tabs__item">
-                        <a class="fd-tabs__link" aria-controls="AiWfz169" aria-selected="true" href="#AiWfz169" role="tab">
+                    <li role="tab" class="fd-tabs__item" aria-selected="true">
+                        <a class="fd-tabs__link" aria-controls="AiWfz169" href="#AiWfz169">
                             <span class="fd-tabs__tag">
                                 Selected
                             </span>
@@ -753,7 +783,7 @@ export const summaryLine = () => `
                     </li>
                 </ul>  
             </div>
-        </header>     
+        </header> 
         <div class="fd-dynamic-page__content fd-dynamic-page__content--sm">
             <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV554" role="tabpanel">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 

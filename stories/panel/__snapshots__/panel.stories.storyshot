@@ -138,6 +138,7 @@ exports[`Storyshots Components/Panel Expandable 1`] = `
           aria-controls="fghqwe321"
           aria-expanded="false"
           aria-haspopup="true"
+          aria-label="expand/collapse panel"
           class="fd-button fd-button--transparent fd-panel__button"
         >
           
@@ -256,9 +257,10 @@ exports[`Storyshots Components/Panel Expandable 1`] = `
         
             
         <button
-          aria-controls="fghqwe32122"
+          aria-controls="fghqwe3214213"
           aria-expanded="true"
           aria-haspopup="true"
+          aria-label="expand/collapse panel"
           class="fd-button fd-button--transparent fd-panel__button"
         >
           
@@ -289,7 +291,7 @@ exports[`Storyshots Components/Panel Expandable 1`] = `
       aria-hidden="false"
       aria-labelledby="jhqDKYdf"
       class="fd-panel__content"
-      id="fghqwe32122"
+      id="fghqwe3214213"
       role="region"
     >
       

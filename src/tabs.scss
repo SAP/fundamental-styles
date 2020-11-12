@@ -3,8 +3,8 @@
 
 /*!
 .fd-tabs+()
-    .fd-tabs__item?
-    .fd-tabs__link+((.is-selected|[aria-selected=true]),)
+    .fd-tabs__item?+(([aria-selected=true]),)
+    .fd-tabs__link+((.is-selected,)
 .fd-tabs__panel+([aria-expanded]|.is-expanded)
 */
 
@@ -114,25 +114,6 @@ $block: #{$fd-namespace}-tabs;
     line-height: 1rem;
     padding: $fd-tabs-link-padding-y $fd-tabs-item-padding-x;
 
-    @include fd-selected() {
-      .#{$block}__tag {
-        color: var(--fdTabs_Selected_Color);
-      }
-
-      .#{$block}__icon {
-        color: var(--fdTabs_Selected_Icon_Color);
-        background-color: $fd-tabs-selected-color;
-      }
-
-      .#{$block}__icon,
-      .#{$block}__tag,
-      & {
-        &::after {
-          background-color: var(--fdTabs_Selected_Color);
-        }
-      }
-    }
-
     @include fd-focus() {
       box-shadow: none;
       outline: none;
@@ -176,6 +157,25 @@ $block: #{$fd-namespace}-tabs;
 
       .#{$block}__link {
         padding-left: 0;
+      }
+    }
+
+    @include fd-selected() {
+      .#{$block}__tag {
+        color: var(--fdTabs_Selected_Color);
+      }
+
+      .#{$block}__icon {
+        color: var(--fdTabs_Selected_Icon_Color);
+        background-color: $fd-tabs-selected-color;
+      }
+
+      .#{$block}__icon,
+      .#{$block}__tag,
+      & {
+        &::after {
+          background-color: var(--fdTabs_Selected_Color);
+        }
       }
     }
 

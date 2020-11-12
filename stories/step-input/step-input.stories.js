@@ -21,28 +21,21 @@ Do not use the step input if:
 
 /** On smartphones and tablets, the step input is shown in cozy mode (default). */
 
-export const primary = () => `<div class="fd-step-input">
-        <button aria-label="Step down" class="
+export const primary = () => `<label class="fd-form-label" for="step-3">Default Step Input</label><br />
+<div class="fd-step-input">
+  <button aria-label="Step down" class="
             fd-button
             fd-button--transparent
-            fd-step-input__button"
-            onclick="stepInputValue('step-3', 'down');"
-            tabindex="-1" type="button">
-                <i class="sap-icon--less"></i>
-        </button>
-    <input class="
-            fd-input 
-            fd-input--no-number-spinner 
-            fd-step-input__input
-    " id="step-3" type="number" value="0">
-        <button aria-label="Step up" class="
+            fd-step-input__button" onclick="stepInputValue('step-3', 'down');" tabindex="-1" type="button">
+    <i class="sap-icon--less"></i>
+  </button>
+  <input class="fd-input fd-input--no-number-spinner fd-step-input__input" id="step-3" type="number" value="0" />
+  <button aria-label="Step up" class="
             fd-button 
             fd-button--transparent
-            fd-step-input__button"
-            onclick="stepInputValue('step-3', 'up');" 
-            tabindex="-1" type="button">
-                <i class="sap-icon--add"></i>
-        </button>
+            fd-step-input__button" onclick="stepInputValue('step-3', 'up');" tabindex="-1" type="button">
+    <i class="sap-icon--add"></i>
+  </button>
 </div>
 `;
 
@@ -54,7 +47,8 @@ It can be achieved by adding the `--compact` modifier to the main element as wel
 button and input elements.
  */
 
-export const compact = () => `<div class="fd-form-item fd-form-item--horizontal">
+export const compact = () => `<label class="fd-form-label" for="step-1">Compact Step Input</label><br />
+<div class="fd-form-item fd-form-item--horizontal">
     <div class="fd-step-input fd-step-input--compact">
             <button aria-label="Step down" class="
                 fd-button
@@ -90,7 +84,8 @@ export const compact = () => `<div class="fd-form-item fd-form-item--horizontal"
 To make focus work on IE11, it should be added by putting `.is-focus` class to component
  */
 
-export const focused = () => `<div class="fd-step-input is-focus">
+export const focused = () => `<label class="fd-form-label" for="step-20">Focused Step Input</label><br />
+<div class="fd-step-input is-focus">
         <button aria-label="Step down" class="
             fd-button
             fd-button--transparent
@@ -120,8 +115,7 @@ export const focused = () => `<div class="fd-step-input is-focus">
 The semantic states can be customized by adding the `is-error` | `is-success` | `is-warning` | or `is-information` into the fd-step-input element.
  */
 
-export const states = () => `<h3>Success</h3>
-
+export const states = () => `<label class="fd-form-label" for="step-5">Success Step Input</label><br />
 <div class="fd-step-input is-success">
         <button aria-label="Step down" class="
             fd-button
@@ -147,7 +141,7 @@ export const states = () => `<h3>Success</h3>
 </div>
 
 <br><br>
-<h3>Information</h3>
+<label class="fd-form-label" for="step-6">Information Step Input</label><br />
 <div class="fd-step-input is-information">
         <button aria-label="Step down" class="
             fd-button
@@ -172,7 +166,7 @@ export const states = () => `<h3>Success</h3>
         </button>
 </div>
 <br><br>
-<h3>Error</h3>
+<label class="fd-form-label" for="step-7">Error Step Input</label><br />
 <div class="fd-step-input is-error">
         <button aria-label="Step down" class="
             fd-button
@@ -199,7 +193,7 @@ export const states = () => `<h3>Success</h3>
 
 <br><br>
 
-<h3>Warning</h3>
+<label class="fd-form-label" for="step-8">Warning Step Input</label><br />
 <div class="fd-step-input is-warning">
     <button aria-label="Step down" class="
         fd-button
@@ -232,7 +226,8 @@ states.parameters = {
 };
 
 
-export const disabled = () => `<div class="fd-step-input is-disabled">
+export const disabled = () => `<label class="fd-form-label" for="step-13">Disabled Step Input</label><br />
+<div class="fd-step-input is-disabled">
         <button aria-label="Step down" class="
             fd-button
             fd-button--transparent
@@ -257,27 +252,31 @@ export const disabled = () => `<div class="fd-step-input is-disabled">
 </div>
 `;
 
-export const readOnly = () => `<div class="fd-step-input is-readonly">
-        <button aria-label="Step down" class="
-            fd-button
-            fd-button--transparent
-            fd-step-input__button"
-            onclick="stepInputValue('step-14', 'down');"
-            tabindex="-1" type="button">
-                <i class="sap-icon--less"></i>
-        </button>
-    <input class="
-            fd-input 
-            fd-input--no-number-spinner 
-            fd-step-input__input
-    " id="step-14" type="number" readonly value="0">
-        <button aria-label="Step up" class="
-            fd-button 
-            fd-button--transparent
-            fd-step-input__button"
-            onclick="stepInputValue('step-14', 'up');" 
-            tabindex="-1" type="button">
-                <i class="sap-icon--add"></i>
-        </button>
+export const readOnly = () => `<label class="fd-form-label" for="step-14">Temperature set to</label><br />
+<div class="fd-form-item fd-form-item--horizontal">
+    <div class="fd-step-input is-readonly">
+            <button aria-label="Step down" class="
+                fd-button
+                fd-button--transparent
+                fd-step-input__button"
+                onclick="stepInputValue('step-14', 'down');"
+                tabindex="-1" type="button">
+                    <i class="sap-icon--less"></i>
+            </button>
+        <input class="
+                fd-input 
+                fd-input--no-number-spinner 
+                fd-step-input__input
+        " id="step-14" type="number" readonly value="23">
+            <button aria-label="Step up" class="
+                fd-button 
+                fd-button--transparent
+                fd-step-input__button"
+                onclick="stepInputValue('step-14', 'up');" 
+                tabindex="-1" type="button">
+                    <i class="sap-icon--add"></i>
+            </button>
+            </div>
+        <span class="fd-form-label fd-form-label--unit-description">Degree Celsius</span>
 </div>
 `;
