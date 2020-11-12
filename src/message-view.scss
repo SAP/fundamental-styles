@@ -1,0 +1,112 @@
+@import './new-settings';
+@import './mixins';
+
+$block: #{$fd-namespace}-message-view;
+
+$fd-message-view-xxx: 1rem;
+
+$fd-message-view-title-area-padding: 1rem 1rem 1rem 0;
+$fd-message-view-title-area-padding-rtl: 1rem 0 1rem 1rem;
+
+$fd-message-view-content-area-padding: 1rem 1rem 1rem 3rem;
+$fd-message-view-content-area-padding-rtl: 1rem 3rem 1rem 1rem;
+
+.#{$block} {
+  @include fd-reset();
+
+  &__filtering-area {
+    @include fd-reset();
+  }
+
+  &__list-area {
+    @include fd-reset();
+  }
+
+  &__title-area {
+    @include fd-reset();
+    @include fd-flex();
+
+    padding: $fd-message-view-title-area-padding;
+
+    @include fd-rtl() {
+      padding: $fd-message-view-title-area-padding-rtl;
+    }
+
+    .#{$block}__icon-container {
+      @include set-width(3rem);
+    }
+  }
+
+  &__icon-container {
+    @include fd-reset();
+    @include fd-flex-center();
+    @include set-width(2.75rem);
+    @include set-height(2rem);
+  }
+
+  &__title-container {
+    @include fd-reset();
+    @include fd-flex(column);
+
+    width: 100%;
+  }
+
+  &__title {
+    @include fd-reset();
+
+    font-family: var(--sapFontHeaderFamily);
+    font-size: var(--sapFontHeader5Size);
+    color: var(--sapGroup_TitleTextColor);
+    margin-bottom: 0.5rem;
+  }
+
+  &__subtitle {
+    @include fd-reset();
+
+    color: var(--sapContent_LabelColor);
+  }
+
+  &__content-area {
+    @include fd-reset();
+
+    padding: $fd-message-view-content-area-padding;
+
+    @include fd-rtl() {
+      padding: $fd-message-view-content-area-padding-rtl;
+    }
+
+    .#{$block}__title {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__content {
+    @include fd-reset();
+
+    margin-bottom: 1rem;
+  }
+
+  // LIST
+  &__list {
+    .#{$block}__list-item {
+      .#{$block}__title {
+        font-family: var(--sapFontHeaderFamily);
+        font-size: var(--sapFontHeader5Size);
+        color: var(--sapGroup_TitleTextColor);
+      }
+    }
+
+    .#{$block}__list-item--byline {
+      height: 3.25rem;
+      background-color: pink;
+    }
+
+    &--compact {
+      .#{$block}__list-item {
+        .#{$block}__title {
+          font-size: var(--sapFontHeader6Size);
+        }
+      }
+    }
+  }
+}
