@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.56](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.55...v0.13.0-rc.56) (2020-11-12)
+
+
+### Bug Fixes
+
+* Center buttons in product switch and dialog ([#1875](https://github.com/SAP/fundamental-styles/issues/1875)) ([3dfa723](https://github.com/SAP/fundamental-styles/commit/3dfa723545d66a864d0cfbea81fab3de4ea3ad38))
+
 ## [0.13.0-rc.55](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.54...v0.13.0-rc.55) (2020-11-12)
 
 
