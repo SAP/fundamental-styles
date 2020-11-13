@@ -10,7 +10,8 @@ The panel is a container for grouping and displaying information. Panels are res
 - You need to group or display information.
 - You want to give users the option to hide this information.
 - You want to show additional information on demand (for example, a panel could show optional input fields for an advanced search).
-        
+
+
 **Do not use the panel if:**
         
 - You are designing an object page. Panels should not be used in the object page content area.
@@ -24,12 +25,36 @@ There are two types of panels: fixed and expandable.
     }
 };
 
-fixed.storyName = 'Expandable';
+export const fixed = () => `<div class="fd-panel fd-panel--fixed">
+    <div class="fd-panel__header">
+        <h4 class="fd-panel__title">Panel header</h4>
+        <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+            <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
+              <button class="fd-button is-selected" id="jhqDKYrt" aria-pressed="true">Left</button>
+              <button class="fd-button">Middle</button>
+              <button class="fd-button">Right</button>
+            </div>
+        </div>
+    </div>
+    <div role="region" aria-labelledby="jhqDKYrt" class="fd-panel__content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+        et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+        Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+        Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+        Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+        Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+        Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+    </div>
+</div>
+`;
+
+fixed.storyName = 'Fixed';
 
 fixed.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `Fixed panels are useful for grouping custom content. They include headers and info toolbars. To display a fixed panel, add the \`fd-panel--fixed\` modifier class to the main element.
+        storyDescription: `When the height of the panel's content is set to a fixed size, the content area becomes scrollable.
         ` }
 };
 
@@ -93,39 +118,6 @@ expandable.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: `Expandable panels are much like fixed panels, except their content can be expanded and collapsed (including the info toolbar, if available).
-        ` }
-};
-
-export const fixed = () => `<div class="fd-panel fd-panel--fixed">
-    <div class="fd-panel__header">
-        <h4 class="fd-panel__title">Panel header</h4>
-        <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-            <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
-            <div class="fd-segmented-button" role="group" aria-label="Group label">
-              <button class="fd-button is-selected" id="jhqDKYrt" aria-pressed="true">Left</button>
-              <button class="fd-button">Middle</button>
-              <button class="fd-button">Right</button>
-            </div>
-        </div>
-    </div>
-    <div role="region" aria-labelledby="jhqDKYrt" class="fd-panel__content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
-        et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
-        Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
-        Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
-        Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
-        Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
-        Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
-    </div>
-</div>
-`;
-
-fixed.storyName = 'Fixed';
-
-fixed.parameters = {
-    docs: {
-        iframeHeight: 200,
-        storyDescription: `When the height of the panel's content is set to a fixed size, the content area becomes scrollable.
         ` }
 };
 
