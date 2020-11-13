@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0-rc.60](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.59...v0.13.0-rc.60) (2020-11-13)
+
+
+### Bug Fixes
+
+* prevent Token from growing ([#1843](https://github.com/SAP/fundamental-styles/issues/1843)) ([6a0ff8b](https://github.com/SAP/fundamental-styles/commit/6a0ff8b4b2cef40d22b17d043c92bacc419039d2))
+
 ## [0.13.0-rc.59](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.58...v0.13.0-rc.59) (2020-11-12)
 
 
