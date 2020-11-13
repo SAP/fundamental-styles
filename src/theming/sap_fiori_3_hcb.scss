@@ -122,4 +122,8 @@
   --fdCarousel_Dot_Size: 0.5rem;
   --fdCarousel_Dot_Margin: 0 0.25rem;
   --fdCarousel_Dot_Border: 1px solid var(--sapContent_ForegroundBorderColor);
+
+  /** Flexible Column Layout */
+  --fdFlexibleColumnLayoutToggleImageColor: var(--sapObjectHeader_BorderColor);
+  --fdFlexibleColumnLayoutBorder: solid 0.0625rem var(--sapGroup_ContentBorderColor)
 }
