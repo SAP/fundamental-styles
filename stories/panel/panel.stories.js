@@ -12,9 +12,9 @@ The panel is a container for grouping and displaying information. Panels are res
 - You want to show additional information on demand (for example, a panel could show optional input fields for an advanced search).
 
 
-**Do not use the panel if:**
+**Do not use the panel in:**
         
-- You are designing an object page. Panels should not be used in the object page content area.
+- The content area of a **Dynamic Page**.
         
 
 ##Types
