@@ -29,7 +29,7 @@ $block: #{$fd-namespace}-tokenizer;
 
   .fd-token {
     margin-right: $fd-tokenizer-spacing;
-    max-width: calc(100% - #{$fd-tokenizer-input-width});
+    max-width: calc(100% - #{$fd-tokenizer-input-width} - #{$fd-tokenizer-spacing});
 
     @include fd-rtl() {
       margin: 0 0 0 $fd-tokenizer-spacing;
@@ -89,7 +89,7 @@ $block: #{$fd-namespace}-tokenizer;
 
     .fd-token {
       margin-right: $fd-tokenizer-compact-spacing;
-      max-width: calc(100% - #{$fd-tokenizer-input-width-compact});
+      max-width: calc(100% - #{$fd-tokenizer-input-width-compact} - #{$fd-tokenizer-compact-spacing});
 
       @include fd-rtl() {
         margin: 0 0 0 $fd-tokenizer-spacing;
