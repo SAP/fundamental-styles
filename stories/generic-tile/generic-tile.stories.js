@@ -382,6 +382,14 @@ launchTile.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `As the name suggests, the launch tile is used for when users need to launch an application from the launchpad. It can display several elements, such as a header, subtitle, refresh button, footer, KPIs and images. The header can contain a maximum of 3 lines; all 3 lines can be used for the title or one of the lines can be used for a subtitle. If a fourth line title or an optional subtitle line is required, the \`fd-tile_header-content\` can be added to represent a header, which will merge the content containers into one tile. To display a launch tile, add the \`fd-tile--launch\` modifier class to the main element.
+
+**Note:** Because the examples are displaying numeric content, it is important to note how many characters tiles can support depending on its size. For instance, when a large tile displays numeric content, the text size is 2.25rem (36px). Due to the large text, the tile can only support a maximum of 4 characters.
+
+Tile size | Maximum...
+--------: | :---------------
+S | 8 characters can be displayed within numeric content.
+M | 6 characters can be displayed within numeric content.
+L | 4 characters can be displayed within numeric content.
         ` }
 };
 
@@ -536,7 +544,9 @@ kpiTile.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
-A KPI tile displays key performance indicators that are used to measure and monitor a company’s performance at a strategic and operational level. The KPI tile supports a limited number of digits, which varies depending on the tile size. The tile displays the KPI values as large, easy-to-recognize digits. In addition, you can show deviation arrows, semantic values, and scaling factors. The number of digits is limited by the size of the tiles. To display a KPI tile, add the \`fd-tile--kpi\` modifier class to the main element.
+A KPI tile displays key performance indicators that are used to measure and monitor a company’s performance at a strategic and operational level. The tile displays the KPI values as large, easy-to-recognize digits. In addition, you can show deviation arrows, semantic values, and scaling factors. The number of digits is limited by the size of the tiles. To display a KPI tile, add the \`fd-tile--kpi\` modifier class to the main element.
+
+**Note:** The KPI tile supports a limited number of characters, which varies depending on the tile size (see launch tile above for more details). 
         ` }
 };
 
@@ -1229,9 +1239,9 @@ linkTile.parameters = {
 ####Sizes
 Link tiles are displayed in two modes depending on the screen width.
         
-Size | Screen width | Modifier class | Behaviour
------ | :----------------- | :------------------ | :----------
-M – XL | >= 450px | Default | Floating: If there is insufficient space, the content wraps into two rows. (This behaviour is not provided by Fundamental Styles and requires JavaScript).
+&nbsp;&nbsp;&nbsp; Size &nbsp; | Screen width | Modifier class | Behaviour
+:----- | :----------------- | :------------------ | :----------
+M-XL | >= 450px | Default | Floating: If there is insufficient space, the content wraps into two rows. (This behaviour is not provided by Fundamental Styles and requires JavaScript).
 S | < 450px | \`fd-tile-container--list\` | List: The tile grows vertically and the text wraps into two rows, placing the title in the first row and the subtitle in the second.
 
 The link tile can be displayed in cozy (default) and compact mode. To display link tile in compact mode, add the \`fd-tile--compact\` to the main element.
