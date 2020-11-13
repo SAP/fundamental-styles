@@ -6,6 +6,7 @@ $object-status: #{$fd-namespace}-object-status;
 $numeric-content: #{$fd-namespace}-numeric-content;
 
 $fd-card-header-border: 0.0625rem solid var(--sapTile_SeparatorColor) !default;
+$fd-card-header-border-radius: var(--sapElement_BorderCornerRadius) !default;
 $fd-card-avatar-text-spacing: 0.75rem !default;
 $fd-card-title-counter-spacing: 1rem !default;
 $fd-card-currency-spacing: 0.25rem !default;
@@ -32,7 +33,7 @@ $fd-card-content-avatar-text-spacing: 0.5rem !default;
   width: 100%;
   position: relative;
   background: var(--sapTile_Background);
-  box-shadow: var(--sapContent_Shadow0);
+  box-shadow: var(--fdCard_Box_Shadow);
   border-radius: var(--sapElement_BorderCornerRadius);
   border: 0.0625rem solid var(--sapTile_BorderColor);
 
@@ -58,12 +59,14 @@ $fd-card-content-avatar-text-spacing: 0.5rem !default;
     padding: 1rem;
     background: var(--sapTile_Background);
     border-bottom: $fd-card-header-border;
+    border-radius: $fd-card-header-border-radius $fd-card-header-border-radius 0 0;
     text-decoration: none;
     cursor: pointer;
 
     &:last-child {
       border-bottom: none;
       border-top: $fd-card-header-border;
+      border-radius: 0 0 $fd-card-header-border-radius $fd-card-header-border-radius;
     }
   }
 

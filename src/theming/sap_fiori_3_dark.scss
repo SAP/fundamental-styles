@@ -94,6 +94,8 @@
 
   /* Button */
   --fdButton_Text_Shadow: none;
+  --fdButton_Emphasized_Border_Width: var(--sapButton_BorderWidth);
+  --fdButton_Emphasized_Border_Color: var(--sapButton_Emphasized_Hover_Background);
 
   /* Input Group */
   --fdInputGroup_Text_Shadow: none;
@@ -110,4 +112,15 @@
 
   /** Badge on Button */
   --fdBadgeButton_Border_Color: var(--sapContent_BadgeBackground);
+
+  /* Card */
+  --fdCard_Box_Shadow: var(--sapContent_Shadow0);
+
+  /* Badge */
+  --fdBadge_Border_Color: transparent;
+
+  /* Carousel */
+  --fdCarousel_Dot_Size: 0.25rem;
+  --fdCarousel_Dot_Margin: 0 0.375rem;
+  --fdCarousel_Dot_Border: none;
 }
