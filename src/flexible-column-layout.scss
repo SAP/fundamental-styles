@@ -1,0 +1,73 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-flexible-column-layout;
+
+.#{$block} {
+
+  $toggle-button-height: 2rem;
+
+  @mixin both-pseudo-selectors() {
+    &::after,
+    &::before {
+      @content;
+    }
+  }
+
+  @mixin center-vertically() {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @include fd-reset();
+  @include fd-flex();
+
+  &__separator {
+    @include fd-reset();
+    @include fd-flex-center();
+
+    position: relative;
+    width: 1rem;
+    background: var(--sapShell_Background);
+
+    @include both-pseudo-selectors() {
+      content: "";
+      display: block;
+      width: 0.0625rem;
+      height: 4rem;
+      position: absolute;
+      transition: all 0.1s ease-in;
+
+      @include center-vertically();
+    }
+
+    &::before {
+      bottom: calc(50% + #{$toggle-button-height} / 2);
+      background-image: linear-gradient(to top, var(--sapHighlightColor), transparent);
+    }
+
+    &::after {
+      top: calc(50% + #{$toggle-button-height} / 2);
+      background-image: linear-gradient(to bottom, var(--sapHighlightColor), transparent);
+    }
+
+    @include fd-hover() {
+      @include both-pseudo-selectors() {
+        height: 7rem;
+      }
+    }
+  }
+
+  .#{$block}__button {
+    height: $toggle-button-height;
+    width: 1.5rem;
+    min-width: 1.5rem;
+    justify-content: center;
+  }
+
+  &__column {
+    @include fd-reset();
+
+    min-width: 20rem;
+  }
+}
