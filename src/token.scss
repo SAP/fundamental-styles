@@ -44,6 +44,7 @@ $block: #{$fd-namespace}-token;
   color: $fd-token-color;
   font-size: var(--sapFontSize);
   display: inline-flex;
+  flex-shrink: 0;
   align-items: center;
   text-align: center;
   padding: $fd-token-padding-vertical 0 $fd-token-padding-vertical $fd-token-padding-horizontal;
