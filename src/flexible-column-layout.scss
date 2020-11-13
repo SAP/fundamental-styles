@@ -71,18 +71,20 @@ $block: #{$fd-namespace}-flexible-column-layout;
     @include fd-reset();
 
     min-width: 20rem;
+    border-left: var(--fdFlexibleColumnLayoutBorder);
+    border-right: var(--fdFlexibleColumnLayoutBorder);
 
-    + .#{$block}__separator {
-      border-left: var(--fdFlexibleColumnLayoutBorder);
-      border-right: var(--fdFlexibleColumnLayoutBorder);
+    @include fd-first-child() {
+      border-left: none;
+    }
+
+    @include fd-last-child() {
+      border-right: none;
     }
 
     &--hidden {
+      border: none;
       min-width: 0;
-
-      + .#{$block}__separator {
-        border: none;
-      }
     }
   }
 }
