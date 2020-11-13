@@ -1,0 +1,1344 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+.fd-tile {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: 11rem;
+  min-height: 11rem;
+  max-height: 11rem;
+  width: 11rem;
+  min-width: 11rem;
+  max-width: 11rem;
+  position: relative;
+  padding: calc(1rem - .0625rem);
+  background: #29313a;
+  background: var(--sapTile_Background,#29313a);
+  -webkit-box-shadow: 0 0 0 .0625rem rgba(255,255,255,.2),0 .125rem .5rem 0 rgba(0,0,0,.3);
+  -webkit-box-shadow: var(--sapContent_Shadow0,0 0 0 .0625rem rgba(255,255,255,.2),0 .125rem .5rem 0 rgba(0,0,0,.3));
+  box-shadow: 0 0 0 .0625rem rgba(255,255,255,.2),0 .125rem .5rem 0 rgba(0,0,0,.3);
+  box-shadow: var(--sapContent_Shadow0,0 0 0 .0625rem rgba(255,255,255,.2),0 .125rem .5rem 0 rgba(0,0,0,.3));
+  border-radius: .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  border: .0625rem solid transparent;
+  border: .0625rem solid var(--sapTile_BorderColor,transparent);
+  cursor: pointer
+}
+.fd-tile::after,
+.fd-tile::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tile.is-active,
+.fd-tile:active {
+  background: #21272e;
+  background: var(--sapTile_Active_Background,#21272e)
+}
+.fd-tile.is-hover,
+.fd-tile:hover {
+  background: #21272e;
+  background: var(--sapTile_Hover_Background,#21272e)
+}
+.fd-tile.is-hover .fd-tile__toggle,
+.fd-tile:hover .fd-tile__toggle {
+  display: block
+}
+.fd-tile.is-focus,
+.fd-tile:focus {
+  z-index: 5;
+  outline: 0
+}
+.fd-tile.is-focus::before,
+.fd-tile:focus::before {
+  content: '';
+  position: absolute;
+  display: block;
+  border: .0625rem dotted #fff;
+  border: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_FocusColor,#fff);
+  border-radius: .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3
+}
+.fd-tile__content,
+.fd-tile__footer,
+.fd-tile__header,
+.fd-tile__header-content {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  overflow: hidden
+}
+.fd-tile__content::after,
+.fd-tile__content::before,
+.fd-tile__footer::after,
+.fd-tile__footer::before,
+.fd-tile__header-content::after,
+.fd-tile__header-content::before,
+.fd-tile__header::after,
+.fd-tile__header::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tile__content--2-col,
+.fd-tile__footer--2-col,
+.fd-tile__header--2-col,
+.fd-tile__header-content--2-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+.fd-tile__header {
+  height: 3.625rem;
+  min-height: 3.625rem;
+  max-height: 3.625rem;
+  margin-bottom: .25rem
+}
+.fd-tile__content {
+  height: 3.875rem;
+  min-height: 3.875rem;
+  max-height: 3.875rem;
+  margin-bottom: .25rem
+}
+.fd-tile__header-content {
+  height: 7.75rem;
+  min-height: 7.75rem;
+  max-height: 7.75rem;
+  margin-bottom: .25rem
+}
+.fd-tile__header-content .fd-tile__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden
+}
+.fd-tile__footer {
+  height: 1rem;
+  min-height: 1rem;
+  max-height: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.fd-tile__section {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  overflow: hidden;
+  width: calc(50% - .125rem);
+  height: 100%
+}
+.fd-tile__section::after,
+.fd-tile__section::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tile__footer-text,
+.fd-tile__subtitle,
+.fd-tile__title {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: normal;
+  color: #d3d7d9;
+  color: var(--sapTile_TextColor,#d3d7d9)
+}
+.fd-tile__footer-text::after,
+.fd-tile__footer-text::before,
+.fd-tile__subtitle::after,
+.fd-tile__subtitle::before,
+.fd-tile__title::after,
+.fd-tile__title::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tile__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: #fafafa;
+  color: var(--sapTile_TitleTextColor,#fafafa);
+  font-size: 1rem;
+  font-size: var(--sapFontHeader5Size,1rem)
+}
+.fd-tile__footer-text,
+.fd-tile__subtitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+.fd-tile__refresh [class*=sap-icon],
+.fd-tile__refresh[class*=sap-icon] {
+  color: inherit;
+  background: inherit;
+  font-size: inherit;
+  border-radius: inherit;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: normal;
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  color: #91c8f6;
+  color: var(--sapButton_IconColor,#91c8f6);
+  min-width: .875rem;
+  text-align: center;
+  margin-right: .5rem
+}
+.fd-tile__refresh [class*=sap-icon][dir=rtl],
+.fd-tile__refresh[class*=sap-icon][dir=rtl],
+[dir=rtl] .fd-tile__refresh [class*=sap-icon],
+[dir=rtl] .fd-tile__refresh[class*=sap-icon] {
+  margin-right: 0;
+  margin-left: .5rem
+}
+.fd-tile__profile-img {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 3.5rem;
+  min-width: 3.5rem;
+  max-width: 3.5rem;
+  height: 3.5rem;
+  min-height: 3.5rem;
+  max-height: 3.5rem;
+  border-radius: 50%
+}
+.fd-tile__profile-img::after,
+.fd-tile__profile-img::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tile__logo {
+  width: 3.625rem;
+  min-width: 3.625rem;
+  max-width: 3.625rem;
+  height: 1.75rem;
+  min-height: 1.75rem;
+  max-height: 1.75rem
+}
+.fd-tile__action-close,
+.fd-tile__action-indicator,
+.fd-tile__overlay {
+  display: none
+}
+.fd-tile--double {
+  width: 22.5rem;
+  min-width: 22.5rem;
+  max-width: 22.5rem
+}
+.fd-tile--s {
+  height: 9.25rem;
+  min-height: 9.25rem;
+  max-height: 9.25rem;
+  width: 9.25rem;
+  min-width: 9.25rem;
+  max-width: 9.25rem;
+  padding: calc(.5rem - .0625rem)
+}
+.fd-tile--s.fd-tile--double {
+  width: 19rem;
+  min-width: 19rem;
+  max-width: 19rem
+}
+.fd-tile--s .fd-tile__header {
+  height: 3.25rem;
+  min-height: 3.25rem;
+  max-height: 3.25rem
+}
+.fd-tile--s .fd-tile__content {
+  height: 3.438rem;
+  min-height: 3.438rem;
+  max-height: 3.438rem
+}
+.fd-tile--s .fd-tile__header-content {
+  height: 6.938rem;
+  min-height: 6.938rem;
+  max-height: 6.938rem
+}
+.fd-tile--s .fd-tile__footer {
+  height: 1.063rem;
+  min-height: 1.063rem;
+  max-height: 1.063rem
+}
+.fd-tile--s .fd-tile__title {
+  font-size: .875rem;
+  font-size: var(--sapFontHeader6Size,.875rem)
+}
+.fd-tile--s .fd-tile__footer-text {
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem)
+}
+.fd-tile--s .fd-tile__profile-img {
+  width: 3rem;
+  min-width: 3rem;
+  max-width: 3rem;
+  height: 3rem;
+  min-height: 3rem;
+  max-height: 3rem
+}
+.fd-tile--s .fd-tile__logo {
+  width: 3rem;
+  min-width: 3rem;
+  max-width: 3rem;
+  height: 1.438rem;
+  min-height: 1.438rem;
+  max-height: 1.438rem
+}
+.fd-tile--feed .fd-tile__content,
+.fd-tile--kpi .fd-tile__content,
+.fd-tile--launch .fd-tile__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end
+}
+.fd-tile--feed .fd-tile__content--2-col .fd-tile__section,
+.fd-tile--kpi .fd-tile__content--2-col .fd-tile__section,
+.fd-tile--launch .fd-tile__content--2-col .fd-tile__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end
+}
+.fd-tile--feed .fd-tile__footer,
+.fd-tile--kpi .fd-tile__footer,
+.fd-tile--launch .fd-tile__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fd-tile--feed .fd-tile__footer--2-col .fd-tile__section,
+.fd-tile--kpi .fd-tile__footer--2-col .fd-tile__section,
+.fd-tile--launch .fd-tile__footer--2-col .fd-tile__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fd-tile--feed .fd-tile__footer--2-col .fd-tile__section:last-child,
+.fd-tile--kpi .fd-tile__footer--2-col .fd-tile__section:last-child,
+.fd-tile--launch .fd-tile__footer--2-col .fd-tile__section:last-child {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end
+}
+.fd-tile--feed .fd-tile__content .fd-tile__section {
+  width: auto
+}
+.fd-tile--feed .fd-tile__content .fd-tile__section:first-child {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 100%;
+  margin-right: .25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end
+}
+.fd-tile--feed .fd-tile__content .fd-tile__section:first-child[dir=rtl],
+[dir=rtl] .fd-tile--feed .fd-tile__content .fd-tile__section:first-child {
+  margin-left: .25rem;
+  margin-right: 0
+}
+.fd-tile--feed .fd-tile__content .fd-tile__section:nth-child(2) {
+  max-width: 10.25rem;
+  padding-left: .5rem
+}
+.fd-tile--feed .fd-tile__content .fd-tile__section:nth-child(2)[dir=rtl],
+[dir=rtl] .fd-tile--feed .fd-tile__content .fd-tile__section:nth-child(2) {
+  padding-right: .5rem;
+  padding-left: 0
+}
+.fd-tile--feed .fd-tile__content-byline,
+.fd-tile--feed .fd-tile__content-text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  max-width: 100%;
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem);
+  line-height: 1.063rem;
+  color: #fafafa;
+  color: var(--sapTile_TitleTextColor,#fafafa)
+}
+.fd-tile--feed .fd-tile__content-byline::after,
+.fd-tile--feed .fd-tile__content-byline::before,
+.fd-tile--feed .fd-tile__content-text::after,
+.fd-tile--feed .fd-tile__content-text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tile--feed .fd-tile__content-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden
+}
+.fd-tile--feed .fd-tile__content-byline {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #d3d7d9;
+  color: var(--sapTile_TextColor,#d3d7d9)
+}
+.fd-tile--feed.fd-tile--s .fd-tile__content .fd-tile__section:nth-child(2) {
+  max-width: 8.25rem
+}
+.fd-tile--slide {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end
+}
+.fd-tile--slide .fd-tile__background-img {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  border-radius: .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem)
+}
+.fd-tile--slide .fd-tile__background-img::after,
+.fd-tile--slide .fd-tile__background-img::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tile--slide .fd-tile__background-img.is-hover,
+.fd-tile--slide .fd-tile__background-img:hover {
+  opacity: .9
+}
+.fd-tile--slide .fd-tile__background-img.is-active,
+.fd-tile--slide .fd-tile__background-img:active {
+  opacity: .8
+}
+.fd-tile--slide .fd-tile__toggle {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: 3rem;
+  min-height: 3rem;
+  max-height: 3rem;
+  width: 3rem;
+  min-width: 3rem;
+  max-width: 3rem;
+  display: none;
+  padding: .5rem;
+  position: absolute;
+  background: 0 0;
+  top: -.0625rem;
+  right: -.0625rem
+}
+.fd-tile--slide .fd-tile__toggle::after,
+.fd-tile--slide .fd-tile__toggle::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tile--slide .fd-tile__toggle[dir=rtl],
+[dir=rtl] .fd-tile--slide .fd-tile__toggle {
+  right: initial;
+  left: -.0625rem
+}
+.fd-tile--slide .fd-tile__toggle::before {
+  height: 2rem;
+  min-height: 2rem;
+  max-height: 2rem;
+  width: 2rem;
+  min-width: 2rem;
+  max-width: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #000;
+  background-color: var(--sapBlockLayer_Background,#000);
+  opacity: .6;
+  border-radius: 50%;
+  font-family: SAP-icons;
+  font-size: 1rem;
+  color: #fff;
+  color: var(--sapButton_Emphasized_TextColor,#fff);
+  text-shadow: transparent;
+  text-shadow: var(--sapButton_Emphasized_TextShadow,transparent);
+  content: "\e14b"
+}
+.fd-tile--slide .fd-tile__toggle--pause::before {
+  content: "\e14c"
+}
+.fd-tile--slide .fd-tile__toggle.is-focus,
+.fd-tile--slide .fd-tile__toggle:focus {
+  z-index: 5;
+  outline: 0
+}
+.fd-tile--slide .fd-tile__toggle.is-hover::before,
+.fd-tile--slide .fd-tile__toggle:hover::before {
+  opacity: .8
+}
+.fd-tile--slide .fd-tile__toggle.is-active::before,
+.fd-tile--slide .fd-tile__toggle:active::before {
+  opacity: 1
+}
+.fd-tile--slide .fd-tile__container {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: 6.125rem;
+  min-height: 6.125rem;
+  max-height: 6.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  z-index: 2;
+  width: 100%;
+  max-width: 100%;
+  background-color: #000;
+  background-color: var(--sapBlockLayer_Background,#000);
+  opacity: .8;
+  padding-top: .25rem;
+  padding-left: calc(1rem - .0625rem);
+  padding-right: calc(1rem - .0625rem);
+  border-bottom-left-radius: .25rem;
+  border-bottom-left-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  border-bottom-right-radius: .25rem;
+  border-bottom-right-radius: var(--sapElement_BorderCornerRadius,.25rem)
+}
+.fd-tile--slide .fd-tile__container::after,
+.fd-tile--slide .fd-tile__container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tile--slide .fd-tile__footer-text,
+.fd-tile--slide .fd-tile__subtitle,
+.fd-tile--slide .fd-tile__title {
+  color: #29313a;
+  color: var(--sapContent_ContrastTextColor,#29313a);
+  text-shadow: #fff;
+  text-shadow: var(--sapContent_ContrastShadowColor,#fff);
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: normal
+}
+.fd-tile--slide .fd-tile__page-indicator {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: .5rem;
+  min-height: .5rem;
+  max-height: .5rem;
+  margin-bottom: .125rem;
+  margin-top: .375rem
+}
+.fd-tile--slide .fd-tile__page-indicator::after,
+.fd-tile--slide .fd-tile__page-indicator::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tile--slide .fd-tile__dot {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: .188rem;
+  min-height: .188rem;
+  max-height: .188rem;
+  width: .188rem;
+  min-width: .188rem;
+  max-width: .188rem;
+  border-radius: 50%;
+  background-color: #29313a;
+  background-color: var(--sapContent_ContrastTextColor,#29313a);
+  -webkit-box-shadow: 0 0 .25rem #000;
+  -webkit-box-shadow: 0 0 .25rem var(--sapContent_ShadowColor,#000);
+  box-shadow: 0 0 .25rem #000;
+  box-shadow: 0 0 .25rem var(--sapContent_ShadowColor,#000);
+  margin-right: .375rem
+}
+.fd-tile--slide .fd-tile__dot::after,
+.fd-tile--slide .fd-tile__dot::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tile--slide .fd-tile__dot[dir=rtl],
+[dir=rtl] .fd-tile--slide .fd-tile__dot {
+  margin-right: 0;
+  margin-left: .375rem
+}
+.fd-tile--slide .fd-tile__dot--active {
+  height: .313rem;
+  min-height: .313rem;
+  max-height: .313rem;
+  width: .313rem;
+  min-width: .313rem;
+  max-width: .313rem;
+  color: #29313a;
+  color: var(--sapContent_ContrastTextColor,#29313a)
+}
+.fd-tile--slide .fd-tile__dot:last-child {
+  margin: 0
+}
+.fd-tile--slide.fd-tile--s .fd-tile__container {
+  height: 5.25rem;
+  min-height: 5.25rem;
+  max-height: 5.25rem;
+  padding-top: .1875rem;
+  padding-right: calc(.5rem - .0625rem);
+  padding-left: calc(.5rem - .0625rem)
+}
+.fd-tile--slide.fd-tile--s .fd-tile__footer-text,
+.fd-tile--slide.fd-tile--s .fd-tile__subtitle,
+.fd-tile--slide.fd-tile--s .fd-tile__title {
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem)
+}
+.fd-tile--slide.fd-tile--s .fd-tile__page-indicator {
+  margin-bottom: 0;
+  margin-top: 0
+}
+.fd-tile--action .fd-tile__action-close,
+.fd-tile--action .fd-tile__action-indicator,
+.fd-tile--action .fd-tile__overlay {
+  display: block
+}
+.fd-tile--action .fd-tile__overlay {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #29313a;
+  background: var(--sapTile_Background,#29313a);
+  border-radius: .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  opacity: .7;
+  z-index: 4
+}
+.fd-tile--action .fd-tile__overlay::after,
+.fd-tile--action .fd-tile__overlay::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tile--action .fd-tile__footer {
+  display: none
+}
+.fd-tile--action .fd-badge {
+  display: none
+}
+.fd-tile--action .fd-tile__action-close {
+  height: 2rem;
+  min-height: 2rem;
+  max-height: 2rem;
+  width: 2rem;
+  min-width: 2rem;
+  max-width: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: absolute;
+  padding: 0;
+  top: -.375rem;
+  right: -.375rem;
+  z-index: 5
+}
+.fd-tile--action .fd-tile__action-close.is-focus,
+.fd-tile--action .fd-tile__action-close:focus {
+  outline: 0
+}
+.fd-tile--action .fd-tile__action-close.is-focus::after,
+.fd-tile--action .fd-tile__action-close:focus::after {
+  content: '';
+  width: 1.5rem;
+  height: 1.5rem;
+  top: -.0625rem;
+  left: .4375rem;
+  right: 0;
+  bottom: 0;
+  z-index: 3
+}
+.fd-tile--action .fd-tile__action-close.is-focus[dir=rtl]::after,
+.fd-tile--action .fd-tile__action-close:focus[dir=rtl]::after,
+[dir=rtl] .fd-tile--action .fd-tile__action-close.is-focus::after,
+[dir=rtl] .fd-tile--action .fd-tile__action-close:focus::after {
+  left: 0;
+  right: .4375rem
+}
+.fd-tile--action .fd-tile__action-close[dir=rtl],
+[dir=rtl] .fd-tile--action .fd-tile__action-close {
+  right: initial;
+  left: -.375rem
+}
+.fd-tile--action .fd-tile__action-close [class*=sap-icon],
+.fd-tile--action .fd-tile__action-close[class*=sap-icon] {
+  color: inherit;
+  background: inherit;
+  font-size: inherit;
+  border-radius: inherit;
+  line-height: 1;
+  height: 1.375rem;
+  min-height: 1.375rem;
+  max-height: 1.375rem;
+  width: 1.375rem;
+  min-width: 1.375rem;
+  max-width: 1.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #29313a;
+  background: var(--sapButton_Background,#29313a);
+  border: .0625rem solid #91c8f6;
+  border: .0625rem solid var(--sapButton_BorderColor,#91c8f6);
+  color: #91c8f6;
+  color: var(--sapButton_IconColor,#91c8f6);
+  font-size: .75rem
+}
+.fd-tile--action .fd-tile__action-close [class*=sap-icon]::before,
+.fd-tile--action .fd-tile__action-close[class*=sap-icon]::before {
+  width: auto;
+  height: auto
+}
+.fd-tile--action .fd-tile__action-close.is-focus,
+.fd-tile--action .fd-tile__action-close:focus {
+  z-index: 5;
+  outline: 0
+}
+.fd-tile--action .fd-tile__action-close::-moz-focus-inner {
+  border: 0
+}
+.fd-tile--action .fd-tile__action-indicator {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: .25rem;
+  margin-right: .25rem;
+  z-index: 5
+}
+.fd-tile--action .fd-tile__action-indicator[dir=rtl],
+[dir=rtl] .fd-tile--action .fd-tile__action-indicator {
+  right: initial;
+  left: 0;
+  margin-right: initial;
+  margin-left: .25rem
+}
+.fd-tile--action .fd-tile__action-indicator [class*=sap-icon],
+.fd-tile--action .fd-tile__action-indicator[class*=sap-icon] {
+  color: inherit;
+  background: inherit;
+  font-size: inherit;
+  border-radius: inherit;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #91c8f6;
+  color: var(--sapButton_IconColor,#91c8f6)
+}
+.fd-tile--action .fd-tile__action-close.is-hover,
+.fd-tile--action .fd-tile__action-close:hover,
+.fd-tile--action .fd-tile__action-indicator.is-hover,
+.fd-tile--action .fd-tile__action-indicator:hover {
+  background: 0 0;
+  border-color: transparent
+}
+.fd-tile--action .fd-tile__action-close.is-active,
+.fd-tile--action .fd-tile__action-close:active,
+.fd-tile--action .fd-tile__action-indicator.is-active,
+.fd-tile--action .fd-tile__action-indicator:active {
+  background: 0 0;
+  border-color: transparent
+}
+.fd-tile--action .fd-tile__action-close.is-active.is-focus,
+.fd-tile--action .fd-tile__action-close.is-active:focus,
+.fd-tile--action .fd-tile__action-close:active.is-focus,
+.fd-tile--action .fd-tile__action-close:active:focus,
+.fd-tile--action .fd-tile__action-indicator.is-active.is-focus,
+.fd-tile--action .fd-tile__action-indicator.is-active:focus,
+.fd-tile--action .fd-tile__action-indicator:active.is-focus,
+.fd-tile--action .fd-tile__action-indicator:active:focus {
+  z-index: 5
+}
+.fd-tile--action .fd-tile__action-close.is-active.is-focus::after,
+.fd-tile--action .fd-tile__action-close.is-active:focus::after,
+.fd-tile--action .fd-tile__action-close:active.is-focus::after,
+.fd-tile--action .fd-tile__action-close:active:focus::after,
+.fd-tile--action .fd-tile__action-indicator.is-active.is-focus::after,
+.fd-tile--action .fd-tile__action-indicator.is-active:focus::after,
+.fd-tile--action .fd-tile__action-indicator:active.is-focus::after,
+.fd-tile--action .fd-tile__action-indicator:active:focus::after {
+  border-color: #fff;
+  border-color: var(--sapContent_FocusColor,#fff)
+}
+.fd-tile--action.fd-tile--slide .fd-tile__action-indicator [class*=sap-icon],
+.fd-tile--action.fd-tile--slide .fd-tile__action-indicator[class*=sap-icon] {
+  color: #fafafa;
+  color: var(--sapShell_Active_TextColor,#fafafa)
+}
+.fd-tile-container {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  border: .0625rem solid transparent;
+  border: .0625rem solid var(--sapTile_BorderColor,transparent);
+  background-color: #29313a;
+  background-color: var(--sapTile_Background,#29313a);
+  -webkit-box-shadow: 0 0 0 .0625rem rgba(255,255,255,.2),0 .125rem .5rem 0 rgba(0,0,0,.3);
+  -webkit-box-shadow: var(--sapContent_Shadow0,0 0 0 .0625rem rgba(255,255,255,.2),0 .125rem .5rem 0 rgba(0,0,0,.3));
+  box-shadow: 0 0 0 .0625rem rgba(255,255,255,.2),0 .125rem .5rem 0 rgba(0,0,0,.3);
+  box-shadow: var(--sapContent_Shadow0,0 0 0 .0625rem rgba(255,255,255,.2),0 .125rem .5rem 0 rgba(0,0,0,.3));
+  padding: .5rem
+}
+.fd-tile-container::after,
+.fd-tile-container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tile-container--list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #29313a;
+  background-color: var(--sapGroup_ContentBackground,#29313a)
+}
+.fd-tile-container--list .fd-tile--line {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 0;
+  margin-left: 0;
+  max-height: 3.25rem
+}
+.fd-tile-container--list .fd-tile--line.fd-tile--compact {
+  max-height: 2.875rem
+}
+.fd-tile-container--list .fd-tile--action .fd-tile__header {
+  mask-image: -webkit-gradient(linear,left top,left bottom,from(linear),color-stop(top,right),color-stop(top,left),color-stop(from(transparent)),color-stop(color-stop(7%,#000)),to(to(#000)));
+  mask-image: linear-gradient(linear,right top,left top,from(transparent),color-stop(7%,#000),to(#000));
+  -webkit-mask-image: -webkit-gradient(linear,right top,left top,from(transparent),color-stop(7%,#000),to(#000))
+}
+.fd-tile-container--list .fd-tile--action .fd-tile__header[dir=rtl],
+[dir=rtl] .fd-tile-container--list .fd-tile--action .fd-tile__header {
+  mask-image: -webkit-gradient(linear,left top,left bottom,from(linear),color-stop(top,left),color-stop(top,right),color-stop(from(transparent)),color-stop(color-stop(7%,#000)),to(to(#000)));
+  mask-image: linear-gradient(linear,left top,right top,from(transparent),color-stop(7%,#000),to(#000));
+  -webkit-mask-image: -webkit-gradient(linear,left top,right top,from(transparent),color-stop(7%,#000),to(#000))
+}
+.fd-tile-container--list .fd-tile__header {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1
+}
+.fd-tile--line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 2.25rem;
+  max-height: 2.25rem;
+  height: 100%;
+  min-width: 2rem;
+  max-width: 100%;
+  width: auto;
+  padding: 0 .5rem;
+  margin-right: 1.25rem;
+  margin-top: .125rem;
+  margin-bottom: .125rem;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: 0 0
+}
+.fd-tile--line.is-hover,
+.fd-tile--line:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fd-tile--line.is-active,
+.fd-tile--line:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fd-tile--line.is-disabled,
+.fd-tile--line:disabled,
+.fd-tile--line[aria-disabled=true] {
+  opacity: .5;
+  background: 0 0;
+  pointer-events: none
+}
+.fd-tile--line[dir=rtl],
+[dir=rtl] .fd-tile--line {
+  margin-right: 0;
+  margin-left: 1.25rem
+}
+.fd-tile--line:last-child {
+  margin-right: 0
+}
+.fd-tile--line .fd-tile__header {
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0
+}
+.fd-tile--line .fd-tile__title-container {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 100%
+}
+.fd-tile--line .fd-tile__title-container::after,
+.fd-tile--line .fd-tile__title-container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tile--line .fd-tile__subtitle,
+.fd-tile--line .fd-tile__title {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  text-shadow: 0 0 .125rem #000;
+  text-shadow: var(--sapContent_TextShadow,0 0 .125rem #000);
+  color: #d3d7d9;
+  color: var(--sapTile_TextColor,#d3d7d9);
+  line-height: 1.625rem;
+  min-width: 2rem
+}
+.fd-tile--line .fd-tile__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: .625rem;
+  color: #91c8f6;
+  color: var(--sapButton_TextColor,#91c8f6);
+  display: inline;
+  -webkit-line-clamp: initial
+}
+.fd-tile--line .fd-tile__title[dir=rtl],
+[dir=rtl] .fd-tile--line .fd-tile__title {
+  margin-right: 0;
+  margin-left: .625rem
+}
+.fd-tile--line.fd-tile--compact {
+  min-height: 1.625rem;
+  max-height: 1.625rem
+}
+.fd-tile--line.fd-tile--compact .fd-tile__subtitle,
+.fd-tile--line.fd-tile--compact .fd-tile__title {
+  line-height: 1.4375rem
+}
+.fd-tile--line.fd-tile--compact .fd-tile__title {
+  margin-right: .5rem
+}
+.fd-tile--line.fd-tile--compact .fd-tile__title[dir=rtl],
+[dir=rtl] .fd-tile--line.fd-tile--compact .fd-tile__title {
+  margin-right: 0;
+  margin-left: .5rem
+}
+.fd-tile--line.fd-tile--action {
+  padding-right: 0
+}
+.fd-tile--line.fd-tile--action[dir=rtl],
+[dir=rtl] .fd-tile--line.fd-tile--action {
+  padding-left: 0;
+  padding-right: .5rem
+}
+.fd-tile--line.fd-tile--action .fd-tile__action-container {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: .25rem
+}
+.fd-tile--line.fd-tile--action .fd-tile__action-container::after,
+.fd-tile--line.fd-tile--action .fd-tile__action-container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tile--line.fd-tile--action .fd-tile__action-container[dir=rtl],
+[dir=rtl] .fd-tile--line.fd-tile--action .fd-tile__action-container {
+  margin-left: 0;
+  margin-right: .25rem
+}
+.fd-tile--line.fd-tile--action .fd-tile__action-close {
+  height: 1.625rem;
+  min-height: 1.625rem;
+  max-height: 1.625rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 .25rem
+}
+.fd-tile--line.fd-tile--action .fd-tile__action-indicator {
+  margin: 0
+}
+.fd-tile--line.fd-tile--action .fd-tile__action-close,
+.fd-tile--line.fd-tile--action .fd-tile__action-indicator {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0
+}
+.fd-tile--line.fd-tile--action .fd-tile__action-close.is-focus,
+.fd-tile--line.fd-tile--action .fd-tile__action-close:focus,
+.fd-tile--line.fd-tile--action .fd-tile__action-indicator.is-focus,
+.fd-tile--line.fd-tile--action .fd-tile__action-indicator:focus {
+  z-index: 5
+}
+.fd-tile--line.fd-tile--action .fd-tile__action-close.is-focus::after,
+.fd-tile--line.fd-tile--action .fd-tile__action-close:focus::after,
+.fd-tile--line.fd-tile--action .fd-tile__action-indicator.is-focus::after,
+.fd-tile--line.fd-tile--action .fd-tile__action-indicator:focus::after {
+  content: "";
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: .0625rem dotted #fff;
+  border: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#fff)
+}
+.fd-tile--line .fd-badge {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-right: .375rem;
+  -ms-flex-negative: 0;
+  flex-shrink: 0
+}
+.fd-tile--line .fd-badge[dir=rtl],
+[dir=rtl] .fd-tile--line .fd-badge {
+  margin-left: .375rem;
+  margin-right: 0
+}

@@ -1,0 +1,217 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+.fd-toolbar > * ~ :not(.fd-toolbar__spacer) {
+  margin-left: .5rem
+}
+.fd-toolbar > * ~ [dir=rtl]:not(.fd-toolbar__spacer),
+[dir=rtl] .fd-toolbar > * ~ :not(.fd-toolbar__spacer) {
+  margin-left: 0;
+  margin-right: .5rem
+}
+.fd-toolbar {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: 2rem;
+  padding: 0 .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: solid .0625rem #fff;
+  border-bottom: solid .0625rem var(--sapGroup_TitleBorderColor,#fff)
+}
+.fd-toolbar::after,
+.fd-toolbar::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-toolbar > .fd-toolbar__spacer + :not(.fd-toolbar__spacer) {
+  margin-left: 0;
+  margin-right: 0
+}
+.fd-toolbar--title {
+  padding: 0 .5rem 0 1rem;
+  height: 2.75rem
+}
+.fd-toolbar--clear {
+  border-bottom: none
+}
+.fd-toolbar--auto {
+  background-color: inherit
+}
+.fd-toolbar--solid {
+  background-color: #000;
+  background-color: var(--sapBackgroundColor,#000)
+}
+.fd-toolbar--transparent {
+  background-color: #000;
+  background-color: var(--sapToolbar_Background,#000)
+}
+.fd-toolbar--info {
+  background-color: #000;
+  background-color: var(--sapBackgroundColor,#000)
+}
+.fd-toolbar--info.fd-toolbar--active {
+  background-color: #000;
+  background-color: var(--sapInfobar_Background,#000);
+  color: #fff
+}
+.fd-toolbar--info.fd-toolbar--active.is-hover,
+.fd-toolbar--info.fd-toolbar--active:hover {
+  background-color: #7a5100;
+  background-color: var(--sapInfobar_Hover_Background,#7a5100)
+}
+.fd-toolbar--info.fd-toolbar--active.is-active,
+.fd-toolbar--info.fd-toolbar--active:active {
+  background-color: #7a5100;
+  background-color: var(--sapInfobar_Active_Background,#7a5100)
+}
+.fd-toolbar__spacer {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 auto;
+  flex: 1 auto
+}
+.fd-toolbar__spacer::after,
+.fd-toolbar__spacer::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-toolbar__spacer--fixed {
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  display: inline-block
+}
+.fd-toolbar__separator {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: .0625rem;
+  height: 1.5rem;
+  background-color: #fff;
+  background-color: var(--sapToolbar_SeparatorColor,#fff)
+}
+.fd-toolbar__separator::after,
+.fd-toolbar__separator::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 20rem;
+  padding: .1875rem .375rem
+}
+.fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body::after,
+.fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body > * {
+  display: block;
+  text-align: left;
+  width: auto
+}
+.fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body > [dir=rtl],
+[dir=rtl] .fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body > * {
+  text-align: right
+}
+.fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body > .fd-toolbar__separator {
+  height: .0625rem;
+  margin: .375rem .1875rem;
+  width: auto;
+  background-color: #fff;
+  background-color: var(--sapToolbar_SeparatorColor,#fff)
+}
+.fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body .fd-toolbar__overflow__label.fd-label {
+  margin: .375rem 0
+}
+.fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body .fd-toolbar__overflow__form-label.fd-form-label {
+  margin: .625rem 0 .125rem 0
+}
+.fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body .fd-toolbar__overflow__form-label,
+.fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body .fd-toolbar__overflow__label {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+.fd-toolbar--cozy {
+  height: 2.75rem
+}
+.fd-toolbar--cozy .fd-toolbar__separator {
+  height: 2rem
+}
+.fd-toolbar--cozy .fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body {
+  padding: .25rem .5rem
+}

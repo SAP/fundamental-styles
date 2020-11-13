@@ -1,0 +1,561 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+.fd-select {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: block;
+  padding-right: 0;
+  text-shadow: none;
+  text-shadow: var(--fdSelect_Text_Shadow,none)
+}
+.fd-select::after,
+.fd-select::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-select__control {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fafafa;
+  color: var(--sapField_TextColor,#fafafa);
+  background-color: #29313a;
+  background-color: var(--sapField_Background,#29313a);
+  border-style: solid;
+  border-width: .0625rem;
+  border-width: var(--sapField_BorderWidth,.0625rem);
+  border-color: #8696a9;
+  border-color: var(--sapField_BorderColor,#8696a9);
+  border-radius: .125rem;
+  border-radius: var(--sapField_BorderCornerRadius,.125rem);
+  outline: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 2.25rem;
+  width: 100%;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-right: 0;
+  padding-left: .625rem
+}
+.fd-select__control::after,
+.fd-select__control::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-select__control::-webkit-input-placeholder {
+  font-style: italic;
+  color: #b8bec1;
+  color: var(--sapField_PlaceholderTextColor,#b8bec1)
+}
+.fd-select__control::-moz-placeholder {
+  font-style: italic;
+  color: #b8bec1;
+  color: var(--sapField_PlaceholderTextColor,#b8bec1)
+}
+.fd-select__control:-ms-input-placeholder {
+  font-style: italic;
+  color: #b8bec1;
+  color: var(--sapField_PlaceholderTextColor,#b8bec1)
+}
+.fd-select__control::-ms-input-placeholder {
+  font-style: italic;
+  color: #b8bec1;
+  color: var(--sapField_PlaceholderTextColor,#b8bec1)
+}
+.fd-select__control::placeholder {
+  font-style: italic;
+  color: #b8bec1;
+  color: var(--sapField_PlaceholderTextColor,#b8bec1)
+}
+.fd-select__control::-moz-selection {
+  color: #29313a;
+  color: var(--sapContent_ContrastTextColor,#29313a);
+  background-color: #91c8f6;
+  background-color: var(--sapSelectedColor,#91c8f6)
+}
+.fd-select__control::selection {
+  color: #29313a;
+  color: var(--sapContent_ContrastTextColor,#29313a);
+  background-color: #91c8f6;
+  background-color: var(--sapSelectedColor,#91c8f6)
+}
+.fd-select__control.is-hover,
+.fd-select__control:hover {
+  background-color: #29313a;
+  background-color: var(--sapField_Hover_Background,#29313a);
+  border-color: #91c8f6;
+  border-color: var(--sapField_Hover_BorderColor,#91c8f6)
+}
+.fd-select__control.is-success {
+  background-color: #29313a;
+  background-color: var(--sapField_SuccessBackground,#29313a);
+  border-color: #abe2ab;
+  border-color: var(--sapField_SuccessColor,#abe2ab);
+  border-width: .0625rem
+}
+.fd-select__control.is-success.is-hover,
+.fd-select__control.is-success:hover {
+  background-color: #29313a;
+  background-color: var(--sapField_SuccessBackground,#29313a);
+  border-color: #abe2ab;
+  border-color: var(--sapField_SuccessColor,#abe2ab)
+}
+.fd-select__control.is-error {
+  background-color: #29313a;
+  background-color: var(--sapField_InvalidBackground,#29313a);
+  border-color: #f88;
+  border-color: var(--sapField_InvalidColor,#f88)
+}
+.fd-select__control.is-error.is-hover,
+.fd-select__control.is-error:hover {
+  background-color: #29313a;
+  background-color: var(--sapField_InvalidBackground,#29313a);
+  border-color: #f88;
+  border-color: var(--sapField_InvalidColor,#f88)
+}
+.fd-select__control.is-alert,
+.fd-select__control.is-warning {
+  background-color: #29313a;
+  background-color: var(--sapField_WarningBackground,#29313a);
+  border-color: #fabd64;
+  border-color: var(--sapField_WarningColor,#fabd64)
+}
+.fd-select__control.is-alert.is-hover,
+.fd-select__control.is-alert:hover,
+.fd-select__control.is-warning.is-hover,
+.fd-select__control.is-warning:hover {
+  background-color: #29313a;
+  background-color: var(--sapField_WarningBackground,#29313a);
+  border-color: #fabd64;
+  border-color: var(--sapField_WarningColor,#fabd64)
+}
+.fd-select__control.is-information {
+  background-color: #29313a;
+  background-color: var(--sapField_InformationBackground,#29313a);
+  border-color: #91c8f6;
+  border-color: var(--sapField_InformationColor,#91c8f6)
+}
+.fd-select__control.is-information.is-hover,
+.fd-select__control.is-information:hover {
+  background-color: #29313a;
+  background-color: var(--sapField_InformationBackground,#29313a);
+  border-color: #91c8f6;
+  border-color: var(--sapField_InformationColor,#91c8f6)
+}
+.fd-select__control.is-focus,
+.fd-select__control:focus {
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.1875rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #fff;
+  outline-color: var(--sapContent_FocusColor,#fff);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-select__control.is-alert,
+.fd-select__control.is-error,
+.fd-select__control.is-information,
+.fd-select__control.is-warning {
+  border-width: .125rem
+}
+.fd-select__control.is-alert.is-focus,
+.fd-select__control.is-alert:focus,
+.fd-select__control.is-error.is-focus,
+.fd-select__control.is-error:focus,
+.fd-select__control.is-information.is-focus,
+.fd-select__control.is-information:focus,
+.fd-select__control.is-warning.is-focus,
+.fd-select__control.is-warning:focus {
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.25rem
+}
+.fd-select__control.is-disabled,
+.fd-select__control:disabled,
+.fd-select__control[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4;
+  opacity: var(--sapContent_DisabledOpacity,.4)
+}
+.fd-select__control.is-disabled::-webkit-input-placeholder,
+.fd-select__control:disabled::-webkit-input-placeholder,
+.fd-select__control[aria-disabled=true]::-webkit-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-disabled::-moz-placeholder,
+.fd-select__control:disabled::-moz-placeholder,
+.fd-select__control[aria-disabled=true]::-moz-placeholder {
+  color: transparent
+}
+.fd-select__control.is-disabled:-ms-input-placeholder,
+.fd-select__control:disabled:-ms-input-placeholder,
+.fd-select__control[aria-disabled=true]:-ms-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-disabled::-ms-input-placeholder,
+.fd-select__control:disabled::-ms-input-placeholder,
+.fd-select__control[aria-disabled=true]::-ms-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-disabled::placeholder,
+.fd-select__control:disabled::placeholder,
+.fd-select__control[aria-disabled=true]::placeholder {
+  color: transparent
+}
+.fd-select__control.is-readonly,
+.fd-select__control[aria-readonly=true],
+.fd-select__control[readonly] {
+  background-color: rgba(242,242,242,.5);
+  background-color: rgba(58,69,82,.5);
+  background-color: var(--sapField_ReadOnly_Background,rgba(58,69,82,.5));
+  border-color: #546375;
+  border-color: var(--sapField_ReadOnly_BorderColor,#546375)
+}
+.fd-select__control.is-readonly::-webkit-input-placeholder,
+.fd-select__control[aria-readonly=true]::-webkit-input-placeholder,
+.fd-select__control[readonly]::-webkit-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-readonly::-moz-placeholder,
+.fd-select__control[aria-readonly=true]::-moz-placeholder,
+.fd-select__control[readonly]::-moz-placeholder {
+  color: transparent
+}
+.fd-select__control.is-readonly:-ms-input-placeholder,
+.fd-select__control[aria-readonly=true]:-ms-input-placeholder,
+.fd-select__control[readonly]:-ms-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-readonly::-ms-input-placeholder,
+.fd-select__control[aria-readonly=true]::-ms-input-placeholder,
+.fd-select__control[readonly]::-ms-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-readonly::placeholder,
+.fd-select__control[aria-readonly=true]::placeholder,
+.fd-select__control[readonly]::placeholder {
+  color: transparent
+}
+.fd-select__control .fd-select__button {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: .5rem;
+  color: #91c8f6;
+  color: var(--sapContent_IconColor,#91c8f6);
+  border: none
+}
+.fd-select__control .fd-select__button.is-hover,
+.fd-select__control .fd-select__button:hover {
+  border: none
+}
+.fd-select__control.is-focus,
+.fd-select__control:focus {
+  outline-offset: -.1875rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #fff;
+  outline-color: var(--sapContent_FocusColor,#fff);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-select__control.is-hover,
+.fd-select__control:hover {
+  background-color: #29313a;
+  background-color: var(--sapField_Hover_Background,#29313a);
+  border-color: #91c8f6;
+  border-color: var(--sapField_Hover_BorderColor,#91c8f6)
+}
+.fd-select__control.is-success {
+  background-color: #29313a;
+  background-color: var(--sapField_SuccessBackground,#29313a);
+  border-color: #abe2ab;
+  border-color: var(--sapField_SuccessColor,#abe2ab);
+  border-width: .0625rem
+}
+.fd-select__control.is-success.is-hover,
+.fd-select__control.is-success:hover {
+  background-color: #29313a;
+  background-color: var(--sapField_SuccessBackground,#29313a);
+  border-color: #abe2ab;
+  border-color: var(--sapField_SuccessColor,#abe2ab)
+}
+.fd-select__control.is-error {
+  background-color: #29313a;
+  background-color: var(--sapField_InvalidBackground,#29313a);
+  border-color: #f88;
+  border-color: var(--sapField_InvalidColor,#f88)
+}
+.fd-select__control.is-error.is-hover,
+.fd-select__control.is-error:hover {
+  background-color: #29313a;
+  background-color: var(--sapField_InvalidBackground,#29313a);
+  border-color: #f88;
+  border-color: var(--sapField_InvalidColor,#f88)
+}
+.fd-select__control.is-alert,
+.fd-select__control.is-warning {
+  background-color: #29313a;
+  background-color: var(--sapField_WarningBackground,#29313a);
+  border-color: #fabd64;
+  border-color: var(--sapField_WarningColor,#fabd64)
+}
+.fd-select__control.is-alert.is-hover,
+.fd-select__control.is-alert:hover,
+.fd-select__control.is-warning.is-hover,
+.fd-select__control.is-warning:hover {
+  background-color: #29313a;
+  background-color: var(--sapField_WarningBackground,#29313a);
+  border-color: #fabd64;
+  border-color: var(--sapField_WarningColor,#fabd64)
+}
+.fd-select__control.is-information {
+  background-color: #29313a;
+  background-color: var(--sapField_InformationBackground,#29313a);
+  border-color: #91c8f6;
+  border-color: var(--sapField_InformationColor,#91c8f6)
+}
+.fd-select__control.is-information.is-hover,
+.fd-select__control.is-information:hover {
+  background-color: #29313a;
+  background-color: var(--sapField_InformationBackground,#29313a);
+  border-color: #91c8f6;
+  border-color: var(--sapField_InformationColor,#91c8f6)
+}
+.fd-select__control.is-focus,
+.fd-select__control:focus {
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.1875rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #fff;
+  outline-color: var(--sapContent_FocusColor,#fff);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-select__control.is-alert,
+.fd-select__control.is-error,
+.fd-select__control.is-information,
+.fd-select__control.is-warning {
+  border-width: .125rem
+}
+.fd-select__control.is-alert.is-focus,
+.fd-select__control.is-alert:focus,
+.fd-select__control.is-error.is-focus,
+.fd-select__control.is-error:focus,
+.fd-select__control.is-information.is-focus,
+.fd-select__control.is-information:focus,
+.fd-select__control.is-warning.is-focus,
+.fd-select__control.is-warning:focus {
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.25rem
+}
+.fd-select__control.is-disabled,
+.fd-select__control:disabled,
+.fd-select__control[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4;
+  opacity: var(--sapContent_DisabledOpacity,.4)
+}
+.fd-select__control.is-disabled::-webkit-input-placeholder,
+.fd-select__control:disabled::-webkit-input-placeholder,
+.fd-select__control[aria-disabled=true]::-webkit-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-disabled::-moz-placeholder,
+.fd-select__control:disabled::-moz-placeholder,
+.fd-select__control[aria-disabled=true]::-moz-placeholder {
+  color: transparent
+}
+.fd-select__control.is-disabled:-ms-input-placeholder,
+.fd-select__control:disabled:-ms-input-placeholder,
+.fd-select__control[aria-disabled=true]:-ms-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-disabled::-ms-input-placeholder,
+.fd-select__control:disabled::-ms-input-placeholder,
+.fd-select__control[aria-disabled=true]::-ms-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-disabled::placeholder,
+.fd-select__control:disabled::placeholder,
+.fd-select__control[aria-disabled=true]::placeholder {
+  color: transparent
+}
+.fd-select__control.is-readonly,
+.fd-select__control[aria-readonly=true],
+.fd-select__control[readonly] {
+  background-color: rgba(242,242,242,.5);
+  background-color: rgba(58,69,82,.5);
+  background-color: var(--sapField_ReadOnly_Background,rgba(58,69,82,.5));
+  border-color: #546375;
+  border-color: var(--sapField_ReadOnly_BorderColor,#546375)
+}
+.fd-select__control.is-readonly::-webkit-input-placeholder,
+.fd-select__control[aria-readonly=true]::-webkit-input-placeholder,
+.fd-select__control[readonly]::-webkit-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-readonly::-moz-placeholder,
+.fd-select__control[aria-readonly=true]::-moz-placeholder,
+.fd-select__control[readonly]::-moz-placeholder {
+  color: transparent
+}
+.fd-select__control.is-readonly:-ms-input-placeholder,
+.fd-select__control[aria-readonly=true]:-ms-input-placeholder,
+.fd-select__control[readonly]:-ms-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-readonly::-ms-input-placeholder,
+.fd-select__control[aria-readonly=true]::-ms-input-placeholder,
+.fd-select__control[readonly]::-ms-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-readonly::placeholder,
+.fd-select__control[aria-readonly=true]::placeholder,
+.fd-select__control[readonly]::placeholder {
+  color: transparent
+}
+.fd-select__control[dir=rtl],
+[dir=rtl] .fd-select__control {
+  text-align: right;
+  padding-right: .625rem;
+  padding-left: 0
+}
+.fd-select__control.is-hover .fd-select__button,
+.fd-select__control:hover .fd-select__button {
+  background-color: #062e4f;
+  background-color: var(--sapButton_Lite_Hover_Background,#062e4f)
+}
+.fd-select__control.is-expanded .fd-select__button,
+.fd-select__control[aria-expanded=true] .fd-select__button {
+  background-color: #91c8f6;
+  background-color: var(--sapButton_Active_Background,#91c8f6);
+  color: #29313a;
+  color: var(--sapButton_Active_TextColor,#29313a)
+}
+.fd-select__control.is-expanded .fd-select__button.is-focus,
+.fd-select__control.is-expanded .fd-select__button:focus,
+.fd-select__control[aria-expanded=true] .fd-select__button.is-focus,
+.fd-select__control[aria-expanded=true] .fd-select__button:focus {
+  outline-offset: -.1875rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #fff;
+  outline-color: var(--sapContent_FocusColor,#fff);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted);
+  outline-color: #000;
+  outline-color: var(--sapContent_ContrastFocusColor,#000)
+}
+.fd-select__control.is-active .fd-select__button,
+.fd-select__control:active .fd-select__button {
+  background-color: #91c8f6;
+  background-color: var(--sapButton_Active_Background,#91c8f6);
+  color: #29313a;
+  color: var(--sapButton_Active_TextColor,#29313a)
+}
+.fd-select__control.is-active .fd-select__button.is-focus,
+.fd-select__control.is-active .fd-select__button:focus,
+.fd-select__control:active .fd-select__button.is-focus,
+.fd-select__control:active .fd-select__button:focus {
+  outline-offset: -.1875rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #fff;
+  outline-color: var(--sapContent_FocusColor,#fff);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted);
+  outline-color: #000;
+  outline-color: var(--sapContent_ContrastFocusColor,#000)
+}
+.fd-select__control.is-readonly {
+  padding-right: .625rem;
+  padding-left: .625rem;
+  cursor: text
+}
+.fd-select__text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem)
+}
+.fd-select__text-content {
+  min-width: 5rem
+}
+.fd-select--compact .fd-select__control {
+  height: 1.625rem;
+  padding-left: .5rem
+}
+.fd-select--compact .fd-select__control[dir=rtl],
+[dir=rtl] .fd-select--compact .fd-select__control {
+  text-align: right;
+  padding-right: .5rem;
+  padding-left: 0
+}
+.fd-select--compact .fd-select__control.is-readonly {
+  padding-right: .5rem;
+  padding-left: .5rem
+}
+.fd-select[dir=rtl] .fd-select__control .fd-select__button,
+[dir=rtl] .fd-select .fd-select__control .fd-select__button {
+  margin-left: 0;
+  margin-right: .5rem
+}

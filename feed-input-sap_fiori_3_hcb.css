@@ -1,0 +1,109 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+.fd-feed-input {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 1rem .5rem 1rem 1rem;
+  background-color: #000;
+  background-color: var(--sapField_Background,#000)
+}
+.fd-feed-input::after,
+.fd-feed-input::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+@media (min-width:600px) {
+  .fd-feed-input {
+    margin-top: 1rem;
+    margin-bottom: 1rem
+  }
+}
+.fd-feed-input[dir=rtl],
+[dir=rtl] .fd-feed-input {
+  padding-right: 1rem;
+  padding-left: .5rem
+}
+.fd-feed-input.is-disabled,
+.fd-feed-input:disabled,
+.fd-feed-input[aria-disabled=true] {
+  cursor: not-allowed
+}
+.fd-feed-input .fd-feed-input__thumb {
+  display: none;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  margin-left: 0;
+  margin-right: .5rem
+}
+@media (min-width:600px) {
+  .fd-feed-input .fd-feed-input__thumb {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex
+  }
+}
+.fd-feed-input .fd-feed-input__thumb[dir=rtl],
+[dir=rtl] .fd-feed-input .fd-feed-input__thumb {
+  margin-left: .5rem;
+  margin-right: 0
+}
+.fd-feed-input .fd-feed-input__textarea {
+  min-height: 3rem;
+  max-height: 20rem;
+  margin: 0;
+  padding: .3125rem .5rem
+}
+.fd-feed-input .fd-feed-input__submit-button {
+  margin-top: auto;
+  margin-bottom: .375rem;
+  margin-left: .5rem;
+  margin-right: 0
+}
+.fd-feed-input .fd-feed-input__submit-button[class*=sap-icon]::before {
+  display: inline-block
+}
+.fd-feed-input .fd-feed-input__submit-button[dir=rtl],
+[dir=rtl] .fd-feed-input .fd-feed-input__submit-button {
+  margin-left: 0;
+  margin-right: .5rem
+}
+.fd-feed-input .fd-feed-input__submit-button[dir=rtl][class*=sap-icon]::before,
+[dir=rtl] .fd-feed-input .fd-feed-input__submit-button[class*=sap-icon]::before {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
+.fd-feed-input--m {
+  margin-top: 1rem;
+  margin-bottom: 1rem
+}
+.fd-feed-input--m .fd-feed-input__thumb {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex
+}

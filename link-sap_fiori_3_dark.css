@@ -1,0 +1,95 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+/*!
+.fd-link
+*/
+.fd-link {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: #91c8f6;
+  color: var(--sapLinkColor,#91c8f6);
+  text-decoration: none;
+  text-shadow: 0 0 .125rem #000;
+  text-shadow: var(--sapContent_TextShadow,0 0 .125rem #000);
+  display: inline-block;
+  -webkit-transition: all 125ms ease-in;
+  transition: all 125ms ease-in;
+  line-height: inherit
+}
+.fd-link::after,
+.fd-link::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-link--emphasized {
+  font-weight: 700
+}
+.fd-link:visited {
+  color: #91c8f6;
+  color: var(--sapLink_Visited_Color,#91c8f6)
+}
+.fd-link.is-hover,
+.fd-link:hover {
+  color: #62b0f2;
+  color: var(--sapLink_Hover_Color,#62b0f2);
+  text-decoration: underline
+}
+.fd-link.is-focus,
+.fd-link:focus {
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.0625rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #fff;
+  outline-color: var(--sapContent_FocusColor,#fff);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-link.is-active,
+.fd-link:active {
+  color: #91c8f6;
+  color: var(--sapLink_Active_Color,#91c8f6)
+}
+.fd-link--inverted {
+  color: #d3e9fb;
+  color: var(--sapLink_InvertedColor,#d3e9fb);
+  text-shadow: none
+}
+.fd-link--inverted.is-hover,
+.fd-link--inverted:hover {
+  color: #d3e9fb;
+  color: var(--sapLink_InvertedColor,#d3e9fb)
+}
+.fd-link--subtle {
+  color: #c0e0fa;
+  color: var(--sapLink_SubtleColor,#c0e0fa)
+}
+.fd-link.is-disabled,
+.fd-link:disabled,
+.fd-link[aria-disabled=true] {
+  opacity: .4;
+  opacity: var(--sapContent_DisabledOpacity,.4);
+  color: #91c8f6;
+  color: var(--sapLinkColor,#91c8f6);
+  pointer-events: none
+}

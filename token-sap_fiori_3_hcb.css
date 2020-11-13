@@ -1,0 +1,217 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+.fd-token {
+  cursor: default;
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: #000;
+  background-color: var(--sapButton_TokenBackground,#000);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding: .25rem 0 .25rem .3125rem;
+  border-radius: .25rem;
+  white-space: nowrap;
+  max-width: 100%;
+  min-width: 3.625rem;
+  text-overflow: clip;
+  height: 1.625rem;
+  line-height: 1.5rem;
+  border: .0625rem solid #fff;
+  border: var(--sapButton_BorderWidth,.0625rem) solid var(--sapButton_TokenBorderColor,#fff)
+}
+.fd-token::after,
+.fd-token::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-token[dir=rtl],
+[dir=rtl] .fd-token {
+  padding-left: 0;
+  padding-right: .3125rem
+}
+.fd-token__text {
+  overflow: hidden;
+  max-width: 100%;
+  min-width: auto;
+  width: 100%;
+  text-overflow: ellipsis;
+  text-shadow: 0 0 .125rem #000;
+  text-shadow: var(--fdToken_Text_Shadow,0 0 .125rem #000)
+}
+.fd-token__close {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem);
+  color: #fff;
+  color: var(--sapContent_IconColor,#fff);
+  padding: .25rem .5rem;
+  width: 1.75rem;
+  min-width: 1.75rem;
+  height: 1.625rem;
+  background-color: transparent;
+  line-height: 1.25rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+.fd-token__close::after,
+.fd-token__close::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-token__close::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+.fd-token__close::before {
+  content: ""
+}
+.fd-token__close.is-focus,
+.fd-token__close:focus {
+  z-index: 5;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fd-token:hover {
+  background-color: #7a5100;
+  background-color: var(--sapButton_Hover_Background,#7a5100);
+  border-color: #fff;
+  border-color: var(--sapButton_Hover_BorderColor,#fff)
+}
+.fd-token.is-focus,
+.fd-token:focus {
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.1875rem;
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #fff;
+  outline-color: var(--sapContent_FocusColor,#fff);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-token--compact {
+  padding: 0 0 .1rem .25rem;
+  height: 1.25rem;
+  min-width: 3rem;
+  line-height: 1.125rem
+}
+.fd-token--compact .fd-token__close {
+  padding: .1rem .25rem;
+  vertical-align: baseline;
+  width: 1.25rem;
+  min-width: 1.25rem;
+  height: 1.25rem
+}
+.fd-token--compact[dir=rtl],
+[dir=rtl] .fd-token--compact {
+  padding-left: 0;
+  padding-right: .25rem
+}
+.fd-token--selected {
+  color: #fff;
+  color: var(--sapButton_Selected_TextColor,#fff);
+  background-color: #0f5d94;
+  background-color: var(--sapButton_Selected_Background,#0f5d94);
+  border-color: #fff;
+  border-color: var(--sapButton_Selected_BorderColor,#fff)
+}
+.fd-token--selected .fd-token__close {
+  color: #fff;
+  color: var(--sapButton_Selected_TextColor,#fff)
+}
+.fd-token--selected:hover {
+  background-color: #7a5100;
+  background-color: var(--sapButton_Selected_Hover_Background,#7a5100);
+  border-color: #fff;
+  border-color: var(--sapButton_Selected_Hover_BorderColor,#fff)
+}
+.fd-token--selected.is-focus,
+.fd-token--selected:focus {
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.1875rem;
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #fff;
+  outline-color: var(--sapContent_FocusColor,#fff);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted);
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+}
+.fd-token--readonly {
+  color: #fff;
+  color: var(--sapContent_LabelColor,#fff);
+  padding: .25rem .375rem
+}
+.fd-token--readonly.fd-token--compact {
+  padding: .1rem .25rem
+}
+.fd-token--readonly.fd-token--compact[dir=rtl],
+[dir=rtl] .fd-token--readonly.fd-token--compact {
+  padding-left: .25rem
+}
+.fd-token--readonly[dir=rtl],
+[dir=rtl] .fd-token--readonly {
+  padding-left: .375rem
+}

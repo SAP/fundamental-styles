@@ -1,0 +1,251 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+.fd-has-display-none {
+  display: none!important
+}
+.fd-has-display-block {
+  display: block!important
+}
+.fd-has-display-inline-block {
+  display: inline-block!important
+}
+.fd-has-display-grid {
+  display: grid!important
+}
+.fd-has-display-inline-grid {
+  display: inline-grid!important
+}
+.fd-has-display-flex {
+  display: -webkit-box!important;
+  display: -ms-flexbox!important;
+  display: flex!important
+}
+.fd-has-display-inline-flex {
+  display: -webkit-inline-box!important;
+  display: -ms-inline-flexbox!important;
+  display: inline-flex!important
+}
+.fd-has-display-table {
+  display: table!important
+}
+.fd-has-display-table-row {
+  display: table-row!important
+}
+.fd-has-display-table-cell {
+  display: table-cell!important
+}
+.fd-has-display-none--s {
+  display: none!important
+}
+.fd-has-display-block--s {
+  display: block!important
+}
+.fd-has-display-inline-block--s {
+  display: inline-block!important
+}
+.fd-has-display-grid--s {
+  display: grid!important
+}
+.fd-has-display-inline-grid--s {
+  display: inline-grid!important
+}
+.fd-has-display-flex--s {
+  display: -webkit-box!important;
+  display: -ms-flexbox!important;
+  display: flex!important
+}
+.fd-has-display-inline-flex--s {
+  display: -webkit-inline-box!important;
+  display: -ms-inline-flexbox!important;
+  display: inline-flex!important
+}
+.fd-has-display-table--s {
+  display: table!important
+}
+.fd-has-display-table-row--s {
+  display: table-row!important
+}
+.fd-has-display-table-cell--s {
+  display: table-cell!important
+}
+.fd-has-display-none--m {
+  display: none!important
+}
+.fd-has-display-block--m {
+  display: block!important
+}
+.fd-has-display-inline-block--m {
+  display: inline-block!important
+}
+.fd-has-display-grid--m {
+  display: grid!important
+}
+.fd-has-display-inline-grid--m {
+  display: inline-grid!important
+}
+.fd-has-display-flex--m {
+  display: -webkit-box!important;
+  display: -ms-flexbox!important;
+  display: flex!important
+}
+.fd-has-display-inline-flex--m {
+  display: -webkit-inline-box!important;
+  display: -ms-inline-flexbox!important;
+  display: inline-flex!important
+}
+.fd-has-display-table--m {
+  display: table!important
+}
+.fd-has-display-table-row--m {
+  display: table-row!important
+}
+.fd-has-display-table-cell--m {
+  display: table-cell!important
+}
+.fd-has-display-none--l {
+  display: none!important
+}
+.fd-has-display-block--l {
+  display: block!important
+}
+.fd-has-display-inline-block--l {
+  display: inline-block!important
+}
+.fd-has-display-grid--l {
+  display: grid!important
+}
+.fd-has-display-inline-grid--l {
+  display: inline-grid!important
+}
+.fd-has-display-flex--l {
+  display: -webkit-box!important;
+  display: -ms-flexbox!important;
+  display: flex!important
+}
+.fd-has-display-inline-flex--l {
+  display: -webkit-inline-box!important;
+  display: -ms-inline-flexbox!important;
+  display: inline-flex!important
+}
+.fd-has-display-table--l {
+  display: table!important
+}
+.fd-has-display-table-row--l {
+  display: table-row!important
+}
+.fd-has-display-table-cell--l {
+  display: table-cell!important
+}
+.fd-has-display-none--xl {
+  display: none!important
+}
+.fd-has-display-block--xl {
+  display: block!important
+}
+.fd-has-display-inline-block--xl {
+  display: inline-block!important
+}
+.fd-has-display-grid--xl {
+  display: grid!important
+}
+.fd-has-display-inline-grid--xl {
+  display: inline-grid!important
+}
+.fd-has-display-flex--xl {
+  display: -webkit-box!important;
+  display: -ms-flexbox!important;
+  display: flex!important
+}
+.fd-has-display-inline-flex--xl {
+  display: -webkit-inline-box!important;
+  display: -ms-inline-flexbox!important;
+  display: inline-flex!important
+}
+.fd-has-display-table--xl {
+  display: table!important
+}
+.fd-has-display-table-row--xl {
+  display: table-row!important
+}
+.fd-has-display-table-cell--xl {
+  display: table-cell!important
+}
+.fd-has-display-none--xxl {
+  display: none!important
+}
+.fd-has-display-block--xxl {
+  display: block!important
+}
+.fd-has-display-inline-block--xxl {
+  display: inline-block!important
+}
+.fd-has-display-grid--xxl {
+  display: grid!important
+}
+.fd-has-display-inline-grid--xxl {
+  display: inline-grid!important
+}
+.fd-has-display-flex--xxl {
+  display: -webkit-box!important;
+  display: -ms-flexbox!important;
+  display: flex!important
+}
+.fd-has-display-inline-flex--xxl {
+  display: -webkit-inline-box!important;
+  display: -ms-inline-flexbox!important;
+  display: inline-flex!important
+}
+.fd-has-display-table--xxl {
+  display: table!important
+}
+.fd-has-display-table-row--xxl {
+  display: table-row!important
+}
+.fd-has-display-table-cell--xxl {
+  display: table-cell!important
+}
+.fd-has-align-items-flex-start {
+  -webkit-box-align: start!important;
+  -ms-flex-align: start!important;
+  align-items: flex-start!important
+}
+.fd-has-align-items-flex-end {
+  -webkit-box-align: end!important;
+  -ms-flex-align: end!important;
+  align-items: flex-end!important
+}
+.fd-has-align-items-center {
+  -webkit-box-align: center!important;
+  -ms-flex-align: center!important;
+  align-items: center!important
+}
+.fd-has-align-items-baseline {
+  -webkit-box-align: baseline!important;
+  -ms-flex-align: baseline!important;
+  align-items: baseline!important
+}
+.fd-has-align-items-stretch {
+  -webkit-box-align: stretch!important;
+  -ms-flex-align: stretch!important;
+  align-items: stretch!important
+}
+.fd-has-flex-grow-1 {
+  -webkit-box-flex: 1!important;
+  -ms-flex-positive: 1!important;
+  flex-grow: 1!important
+}
+.fd-has-clearfix::after {
+  content: "";
+  display: table;
+  clear: both
+}
+.fd-has-float-left {
+  float: left!important
+}
+.fd-has-float-right {
+  float: right!important
+}

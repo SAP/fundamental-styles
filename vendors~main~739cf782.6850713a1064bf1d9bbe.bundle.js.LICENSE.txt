@@ -1,0 +1,6 @@
+/*!
+ * condense-newlines <https://github.com/jonschlinkert/condense-newlines>
+ *
+ * Copyright (c) 2014 Jon Schlinkert, contributors.
+ * Licensed under the MIT License
+ */

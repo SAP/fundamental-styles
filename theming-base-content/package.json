@@ -1,6 +1,6 @@
 {
   "name": "@sap-theming/theming-base-content",
-  "version": "11.1.22",
+  "version": "11.1.23",
   "description": "Theming Base Content",
   "author": "SAP SE (https://www.sap.com)",
   "license": "Apache-2.0",
@@ -15,7 +15,7 @@
   },
   "dependencies": {}
 
-,"_resolved": "https://registry.npmjs.org/@sap-theming/theming-base-content/-/theming-base-content-11.1.22.tgz"
-,"_integrity": "sha512-69b6GbcFuL4FbkzBXF4RS2/8Gq3WoPCVu+2PZnWpqABksdxLM0l1h+MDEFyANouVjUkTJDTy1bS5NB25dUXzjA=="
-,"_from": "@sap-theming/theming-base-content@11.1.22"
+,"_resolved": "https://registry.npmjs.org/@sap-theming/theming-base-content/-/theming-base-content-11.1.23.tgz"
+,"_integrity": "sha512-77Va338KAMRmY1z8R6qaWqSebTXPW8gMe5HucDRCSmEwWEaTR6JIqL/H26/zEh6XnQg/40gurTYilvszdgyf9Q=="
+,"_from": "@sap-theming/theming-base-content@11.1.23"
 }

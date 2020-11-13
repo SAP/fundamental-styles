@@ -1,0 +1,149 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+/*!
+.fd-shell+(--fixed)
+    .fd-shell__header+(--fixed)
+    .fd-shell__app
+    .fd-shell__footer+(--fixed)
+    .fd-shell__overlay
+*/
+.fd-shell {
+  overflow: hidden;
+  position: absolute;
+  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  background-size: cover;
+  background-attachment: fixed
+}
+.fd-shell--fixed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-height: 100vh
+}
+.fd-shell--fixed .fd-shell__header {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 3rem;
+  flex: 0 0 3rem;
+  position: static
+}
+.fd-shell--fixed .fd-shell__footer {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 2.5rem;
+  flex: 0 0 2.5rem;
+  position: static
+}
+.fd-shell--fixed .fd-shell__app {
+  overflow: hidden;
+  margin-top: 0;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-height: auto
+}
+.fd-shell__header {
+  background-color: #000;
+  background-color: var(--sapShellColor,#000);
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 3rem
+}
+.fd-shell__header--fixed {
+  position: fixed
+}
+.fd-shell__footer {
+  width: 100%;
+  min-height: 2.5rem
+}
+.fd-shell__app {
+  margin-top: 3rem;
+  min-height: calc(100vh - 2.5rem - 3rem);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative
+}
+.fd-shell__overlay {
+  position: absolute
+}
+/*!
+.fd-app
+  .fd-app__navigation+(--horizontal|--vertical)
+  .fd-app__sidebar
+  .fd-app__main
+*/
+.fd-app {
+  position: relative;
+  width: 100%
+}
+@media (min-width:600px) {
+  .fd-app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-line-pack: start;
+    align-content: flex-start
+  }
+}
+.fd-app__navigation {
+  background-color: #000;
+  background-color: var(--sapGroup_ContentBackground,#000);
+  height: 3.25rem;
+  max-height: 3.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.fd-app__navigation--horizontal {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 100%;
+  flex: 1 100%;
+  padding: 0 .5rem
+}
+@media (min-width:600px) {
+  .fd-app__navigation--horizontal {
+    padding: 0 2rem
+  }
+}
+@media (min-width:1440px) {
+  .fd-app__navigation--horizontal {
+    padding: 0 3rem
+  }
+}
+.fd-app__navigation--vertical {
+  overflow-y: auto;
+  -webkit-box-flex: 0;
+  -ms-flex: 0;
+  flex: 0
+}
+@media (min-width:600px) {
+  .fd-app__navigation--vertical {
+    max-width: .5rem;
+    position: relative;
+    height: 100%;
+    max-height: inherit
+  }
+}
+.fd-app__main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1;
+  flex: 1 1;
+  overflow-y: auto;
+  height: 100%
+}

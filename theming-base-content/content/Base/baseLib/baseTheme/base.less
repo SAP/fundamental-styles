@@ -1,11 +1,11 @@
 /**
 * Copyright (c) 2012-2020 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
 * Theming Engine 1.51.0
-* data:{"sModified":"2020-08-31T07:13:14Z"}
+* data:{"sModified":"2020-10-23T11:38:37Z"}
 */
 
 
-/******************* FILE /Base/baseLib/baseTheme/base.less (Version 11.1.22) *******************/
+/******************* FILE /Base/baseLib/baseTheme/base.less (Version 11.1.23) *******************/
 
 
 // [Label "Brand Color"]
@@ -437,6 +437,12 @@
 // [Description "Defines which monospaced font is used for specific texts in the content area."]
 // [Tags "Base", "Content", "Font", "Protected"]
 @sapContent_MonospaceFontFamily: @sapDefault_Font;
+
+// [Label "Monospace Bold Font Family"]
+// [Description "Defines which monospaced bold font is used for specific texts in the content area."]
+// [TranslationKey "sapContent_MonoBoldFontFamily"]
+// [Tags "Base", "Content", "Font", "Protected"]
+@sapContent_MonospaceBoldFontFamily: @sapDefault_Font;
 
 // [Label "Disabled Text Color"]
 // [Description "The color of texts on disabled screen elements in the content area."]
@@ -2484,6 +2490,30 @@
 // [Tags "SapInternal", "Base", "URI", "Font", "Protected"]
 @sapFontUrl_72_Light_full_woff: none;
 
+// [Tags "SapInternal", "Base", "URI", "Font", "Protected"]
+@sapFontUrl_72Mono_Regular_woff2: none;
+
+// [Tags "SapInternal", "Base", "URI", "Font", "Protected"]
+@sapFontUrl_72Mono_Regular_woff: none;
+
+// [Tags "SapInternal", "Base", "URI", "Font", "Protected"]
+@sapFontUrl_72Mono_Regular_full_woff2: none;
+
+// [Tags "SapInternal", "Base", "URI", "Font", "Protected"]
+@sapFontUrl_72Mono_Regular_full_woff: none;
+
+// [Tags "SapInternal", "Base", "URI", "Font", "Protected"]
+@sapFontUrl_72Mono_Bold_woff2: none;
+
+// [Tags "SapInternal", "Base", "URI", "Font", "Protected"]
+@sapFontUrl_72Mono_Bold_woff: none;
+
+// [Tags "SapInternal", "Base", "URI", "Font", "Protected"]
+@sapFontUrl_72Mono_Bold_full_woff2: none;
+
+// [Tags "SapInternal", "Base", "URI", "Font", "Protected"]
+@sapFontUrl_72Mono_Bold_full_woff: none;
+
 // [Tags "SapInternal", "Base", "URI", "Protected"]
 @sapSvgLib_SAP-icons: none;
 
@@ -2618,7 +2648,7 @@
 }
 
 @font-face {
-  font-family: '72-Lighfull';
+  font-family: '72-Lightfull';
   src: @sapFontUrl_72_Light_full_woff2 format('woff2'), @sapFontUrl_72_Light_full_woff format('woff');
 }
 
@@ -2630,6 +2660,26 @@
 @font-face {
   font-family: '72-Boldfull';
   src: @sapFontUrl_72_Bold_full_woff2 format('woff2'), @sapFontUrl_72_Bold_full_woff format('woff');
+}
+
+@font-face {
+  font-family: '72Mono';
+  src: local('72Mono'), @sapFontUrl_72Mono_Regular_woff2 format('woff2'), @sapFontUrl_72Mono_Regular_woff format('woff');
+}
+
+@font-face {
+  font-family: '72Monofull';
+  src: @sapFontUrl_72Mono_Regular_full_woff2 format('woff2'), @sapFontUrl_72Mono_Regular_full_woff format('woff');
+}
+
+@font-face {
+  font-family: '72Mono-Bold';
+  src: local('72Mono-Bold'), @sapFontUrl_72Mono_Bold_woff2 format('woff2'), @sapFontUrl_72Mono_Bold_woff format('woff');
+}
+
+@font-face {
+  font-family: '72Mono-Boldfull';
+  src: @sapFontUrl_72Mono_Bold_full_woff2 format('woff2'), @sapFontUrl_72Mono_Bold_full_woff format('woff');
 }
 
 .sapSvgLibs {

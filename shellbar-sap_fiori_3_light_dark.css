@@ -1,0 +1,430 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+.fd-shellbar {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: #354a5f;
+  background-color: var(--sapShellColor,#354a5f);
+  -webkit-box-shadow: 0 0 .25rem 0 rgba(0,0,0,.8),inset 0 -.0625rem 0 0 #3a4552;
+  -webkit-box-shadow: var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.8),inset 0 -.0625rem 0 0 #3a4552);
+  box-shadow: 0 0 .25rem 0 rgba(0,0,0,.8),inset 0 -.0625rem 0 0 #3a4552;
+  box-shadow: var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.8),inset 0 -.0625rem 0 0 #3a4552);
+  height: 2.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fafafa;
+  color: var(--sapShell_TextColor,#fafafa);
+  position: relative;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 1rem
+}
+.fd-shellbar::after,
+.fd-shellbar::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-shellbar__group {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0
+}
+.fd-shellbar__group::after,
+.fd-shellbar__group::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-shellbar__group--product {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1
+}
+.fd-shellbar__group--copilot {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2
+}
+.fd-shellbar__group--copilot .fd-shellbar__button {
+  padding-left: 0
+}
+.fd-shellbar__group--actions {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3
+}
+.fd-shellbar__group .fd-shellbar__avatar--circle {
+  border: .0625rem solid #7996b4;
+  border: .0625rem solid var(--sapShell_InteractiveBorderColor,#7996b4)
+}
+.fd-shellbar__subtitle,
+.fd-shellbar__title {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: #fafafa;
+  color: var(--sapShell_TextColor,#fafafa);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+.fd-shellbar__subtitle::after,
+.fd-shellbar__subtitle::before,
+.fd-shellbar__title::after,
+.fd-shellbar__title::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-shellbar__subtitle {
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem);
+  margin-left: .5rem
+}
+.fd-shellbar__subtitle[dir=rtl],
+[dir=rtl] .fd-shellbar__subtitle {
+  margin-left: 0;
+  margin-right: .5rem
+}
+.fd-shellbar__logo,
+.fd-shellbar__product,
+.fd-shellbar__subtitle {
+  display: inline-block;
+  vertical-align: middle
+}
+.fd-shellbar__title {
+  font-weight: 700;
+  padding-right: 0;
+  vertical-align: middle
+}
+.fd-shellbar__title[dir=rtl],
+[dir=rtl] .fd-shellbar__title {
+  padding-right: .5rem;
+  padding-left: 0
+}
+.fd-shellbar__logo {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  padding-left: 0;
+  margin-right: .5rem;
+  max-height: 2rem;
+  background-repeat: no-repeat;
+  background-size: contain
+}
+.fd-shellbar__logo::after,
+.fd-shellbar__logo::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-shellbar__logo[dir=rtl],
+[dir=rtl] .fd-shellbar__logo {
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: .5rem
+}
+.fd-shellbar__logo > * {
+  line-height: 0;
+  max-height: 2.5rem;
+  width: auto;
+  display: block
+}
+.fd-shellbar__logo--image-replaced {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MTIuMzggMjA0Ij48ZGVmcz48c3R5bGU+LmNscy0xLC5jbHMtMntmaWxsLXJ1bGU6ZXZlbm9kZH0uY2xzLTF7ZmlsbDp1cmwoI2xpbmVhci1ncmFkaWVudCl9LmNscy0ye2ZpbGw6I2ZmZn08L3N0eWxlPjxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iMjA2LjE5IiB4Mj0iMjA2LjE5IiB5Mj0iMjA0IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDBiOGYxIi8+PHN0b3Agb2Zmc2V0PSIuMDIiIHN0b3AtY29sb3I9IiMwMWI2ZjAiLz48c3RvcCBvZmZzZXQ9Ii4zMSIgc3RvcC1jb2xvcj0iIzBkOTBkOSIvPjxzdG9wIG9mZnNldD0iLjU4IiBzdG9wLWNvbG9yPSIjMTc3NWM4Ii8+PHN0b3Agb2Zmc2V0PSIuODIiIHN0b3AtY29sb3I9IiMxYzY1YmYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxZTVmYmIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48dGl0bGU+U0FQX2dyYWRfUl9zY3JuX1plaWNoZW5mbMOkY2hlIDE8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTAgMjA0aDIwOC40MUw0MTIuMzggMEgwdjIwNCIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI0NC43MyAzOC4zNmgtNDAuNnY5Ni41MmwtMzUuNDYtOTYuNTVoLTM1LjE2bC0zMC4yNyA4MC43MkMxMDAgOTguNyA3OSA5MS42NyA2Mi40IDg2LjQgNTEuNDYgODIuODkgMzkuODUgNzcuNzIgNDAgNzJjLjA5LTQuNjggNi4yMy05IDE4LjM4LTguMzggOC4xNy40MyAxNS4zNyAxLjA5IDI5LjcxIDhsMTQuMS0yNC41NUM4OS4wNiA0MC40MiA3MSAzNi4yMSA1Ni4xNyAzNi4xOWgtLjA5Yy0xNy4yOCAwLTMxLjY4IDUuNi00MC42IDE0LjgzQTM0LjIzIDM0LjIzIDAgMCAwIDUuNzcgNzQuN0M1LjU0IDg3LjE1IDEwLjExIDk2IDE5LjcxIDEwM2M4LjEgNS45NCAxOC40NiA5Ljc5IDI3LjYgMTIuNjIgMTEuMjcgMy40OSAyMC40NyA2LjUzIDIwLjM2IDEzQTkuNTcgOS41NyAwIDAgMSA2NSAxMzVjLTIuODEgMi45LTcuMTMgNC0xMy4wOSA0LjEtMTEuNDkuMjQtMjAtMS41Ni0zMy42MS05LjU5TDUuNzcgMTU0LjQyYTkzLjc3IDkzLjc3IDAgMCAwIDQ2IDEyLjIyaDIuMTFjMTQuMjQtLjI1IDI1Ljc0LTQuMzEgMzQuOTItMTEuNzEuNTMtLjQxIDEtLjg0IDEuNDktMS4yOGwtNC4xMiAxMC44NUgxMjNsNi4xOS0xOC44MmE2Ny40NiA2Ny40NiAwIDAgMCAyMS42OCAzLjQzIDY4LjMzIDY4LjMzIDAgMCAwIDIxLjE2LTMuMjVsNiAxOC42NGg2MC4xNHYtMzloMTMuMTFjMzEuNzEgMCA1MC40Ni0xNi4xNSA1MC40Ni00My4yIDAtMzAuMTEtMTguMjItNDMuOTQtNTcuMDEtNDMuOTR6TTE1MC45MSAxMjFhMzYuOTMgMzYuOTMgMCAwIDEtMTMtMi4yOGwxMi44Ny00MC41OWguMjJsMTIuNjUgNDAuNzFhMzguNSAzOC41IDAgMCAxLTEyLjc0IDIuMTZ6bTk2LjItMjMuMzNoLTguOTRWNjQuOTFoOC45NGMxMS45MyAwIDIxLjQ0IDQgMjEuNDQgMTYuMTQgMCAxMi42LTkuNTEgMTYuNTctMjEuNDQgMTYuNTciLz48L3N2Zz4=);
+  width: 3rem;
+  height: 1.5rem
+}
+.fd-shellbar__action {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  padding-right: 0;
+  padding-left: .5rem
+}
+.fd-shellbar__action::after,
+.fd-shellbar__action::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-shellbar__action[dir=rtl],
+[dir=rtl] .fd-shellbar__action {
+  padding-right: .5rem;
+  padding-left: 0
+}
+.fd-shellbar__action > * {
+  vertical-align: middle
+}
+.fd-shellbar__action .fd-shellbar__counter--notification {
+  max-width: 2.5rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: absolute;
+  background: #d14242;
+  background: var(--sapContent_BadgeBackground,#d14242);
+  border: #d14242;
+  border: var(--sapContent_BadgeBackground,#d14242);
+  color: #fafafa;
+  color: var(--sapShell_TextColor,#fafafa);
+  line-height: .8;
+  max-height: 1rem;
+  overflow: hidden;
+  right: -.25rem;
+  top: -.25rem;
+  -webkit-transform: none;
+  transform: none
+}
+.fd-shellbar__action .fd-shellbar__counter--notification[dir=rtl],
+[dir=rtl] .fd-shellbar__action .fd-shellbar__counter--notification {
+  -webkit-transform: none;
+  transform: none;
+  right: initial;
+  left: -.25rem
+}
+.fd-shellbar__action .fd-shellbar__input-group__addon {
+  background-color: transparent
+}
+.fd-shellbar__action .fd-shellbar__input-group__addon .fd-shellbar__button {
+  border-radius: 0
+}
+.fd-shellbar__action .fd-shellbar__input-group {
+  background-color: transparent;
+  cursor: text
+}
+.fd-shellbar__action .fd-shellbar__input-group:hover {
+  border-color: #8696a9;
+  border-color: var(--sapField_BorderColor,#8696a9)
+}
+.fd-shellbar__action .fd-shellbar__input-group .fd-shellbar__input-group__input {
+  border: none;
+  color: #fafafa;
+  color: var(--sapShell_TextColor,#fafafa)
+}
+.fd-shellbar__action .fd-shellbar__input-group .fd-shellbar__input-group__input:hover {
+  background-color: #283848;
+  background-color: var(--sapShell_Hover_Background,#283848)
+}
+.fd-shellbar__popover__body--right::after,
+.fd-shellbar__popover__body--right::before {
+  right: 14px
+}
+.fd-shellbar .fd-button.fd-shellbar__button {
+  position: relative;
+  border-color: transparent;
+  background: 0 0;
+  color: #d1e8ff;
+  color: var(--sapShell_InteractiveTextColor,#d1e8ff);
+  overflow: visible;
+  padding: 0
+}
+.fd-shellbar .fd-button.fd-shellbar__button.is-focus,
+.fd-shellbar .fd-button.fd-shellbar__button:focus {
+  z-index: 5
+}
+.fd-shellbar .fd-button.fd-shellbar__button.is-focus::after,
+.fd-shellbar .fd-button.fd-shellbar__button:focus::after {
+  content: "";
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: .0625rem;
+  left: .0625rem;
+  right: .0625rem;
+  bottom: .0625rem;
+  border: .0625rem dotted #fff;
+  border: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#fff);
+  border-color: #000;
+  border-color: var(--sapContent_ContrastFocusColor,#000)
+}
+.fd-shellbar .fd-button.fd-shellbar__button.is-active,
+.fd-shellbar .fd-button.fd-shellbar__button:active {
+  background: #23303e;
+  background: var(--sapShell_Active_Background,#23303e)
+}
+.fd-shellbar .fd-button.fd-shellbar__button:active,
+.fd-shellbar .fd-button.fd-shellbar__button:hover {
+  color: #fafafa;
+  color: var(--sapShell_Active_TextColor,#fafafa)
+}
+.fd-shellbar .fd-button.fd-shellbar__button.is-hover,
+.fd-shellbar .fd-button.fd-shellbar__button:hover {
+  background: #283848;
+  background: var(--sapShell_Hover_Background,#283848)
+}
+.fd-shellbar .fd-button.fd-shellbar__button.is-hover.is-disabled,
+.fd-shellbar .fd-button.fd-shellbar__button.is-hover:disabled,
+.fd-shellbar .fd-button.fd-shellbar__button.is-hover[aria-disabled=true],
+.fd-shellbar .fd-button.fd-shellbar__button:hover.is-disabled,
+.fd-shellbar .fd-button.fd-shellbar__button:hover:disabled,
+.fd-shellbar .fd-button.fd-shellbar__button:hover[aria-disabled=true] {
+  background: 0 0
+}
+.fd-shellbar .fd-button.fd-shellbar__button.sap-icon--bell::before {
+  margin-right: 0
+}
+.fd-shellbar .fd-button.fd-shellbar__button.sap-icon--bell[dir=rtl]::before,
+[dir=rtl] .fd-shellbar .fd-button.fd-shellbar__button.sap-icon--bell::before {
+  margin-left: 0
+}
+.fd-shellbar .fd-button.fd-shellbar__button.fd-shellbar__button--user-menu {
+  outline-offset: .1px
+}
+.fd-shellbar .fd-shellbar__button--icon {
+  color: #d1e8ff;
+  color: var(--sapShell_InteractiveTextColor,#d1e8ff)
+}
+.fd-shellbar .fd-button.fd-shellbar__button--menu {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_ContrastFocusColor,#000)
+}
+.fd-shellbar .fd-button.fd-shellbar__button--menu:hover {
+  background: #283848;
+  background: var(--sapShell_Hover_Background,#283848);
+  border-color: transparent
+}
+.fd-shellbar .fd-button.fd-shellbar__button--menu:active,
+.fd-shellbar .fd-button.fd-shellbar__button--menu:focus {
+  background: #23303e;
+  background: var(--sapShell_Active_Background,#23303e);
+  color: #fafafa;
+  color: var(--sapShell_Active_TextColor,#fafafa);
+  outline-color: #000;
+  outline-color: var(--sapContent_ContrastFocusColor,#000)
+}
+.fd-shellbar--s {
+  padding: 0 1rem
+}
+.fd-shellbar--s .fd-shellbar__action--mobile {
+  display: inline-block
+}
+.fd-shellbar--s .fd-shellbar__action--desktop {
+  display: none
+}
+.fd-shellbar--s .fd-shellbar__subtitle,
+.fd-shellbar--s .fd-shellbar__title {
+  display: none
+}
+.fd-shellbar--s .fd-button.fd-button--menu.fd-shellbar__button--menu {
+  padding: 0
+}
+.fd-shellbar--l,
+.fd-shellbar--m {
+  padding: 0 2rem
+}
+.fd-shellbar--xl {
+  padding: 0 3rem
+}
+.fd-shellbar--l .fd-shellbar__action--mobile,
+.fd-shellbar--m .fd-shellbar__action--mobile,
+.fd-shellbar--xl .fd-shellbar__action--mobile {
+  display: none
+}
+.fd-shellbar--l .fd-shellbar__action--desktop,
+.fd-shellbar--m .fd-shellbar__action--desktop,
+.fd-shellbar--xl .fd-shellbar__action--desktop {
+  display: inline-block
+}
+.fd-shellbar--l .fd-shellbar__subtitle,
+.fd-shellbar--l .fd-shellbar__title,
+.fd-shellbar--m .fd-shellbar__subtitle,
+.fd-shellbar--m .fd-shellbar__title,
+.fd-shellbar--xl .fd-shellbar__subtitle,
+.fd-shellbar--xl .fd-shellbar__title {
+  display: inline-block
+}

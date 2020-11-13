@@ -1,0 +1,1296 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+/*!
+.fd-object-status+(--success | --warning | --error)
+*/
+.fd-object-status {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  color: #000;
+  color: var(--sapNeutralTextColor,#000);
+  text-shadow: none;
+  text-shadow: var(--sapContent_TextShadow,none);
+  max-width: 100%;
+  word-break: break-word;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 1
+}
+.fd-object-status::after,
+.fd-object-status::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-object-status__text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  word-break: inherit;
+  color: inherit;
+  font-family: inherit;
+  line-height: 1
+}
+.fd-object-status__text::after,
+.fd-object-status__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-object-status__icon [class*=sap-icon],
+.fd-object-status__icon[class*=sap-icon] {
+  color: inherit;
+  background: inherit;
+  font-size: inherit;
+  border-radius: inherit;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1rem;
+  padding-right: .25rem;
+  color: #000;
+  color: var(--sapNeutralElementColor,#000)
+}
+.fd-object-status__icon [class*=sap-icon]:first-child:last-child,
+.fd-object-status__icon[class*=sap-icon]:first-child:last-child {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-right: 0;
+  padding-left: 0
+}
+.fd-object-status[dir=rtl] .fd-object-status__icon [class*=sap-icon],
+.fd-object-status[dir=rtl] .fd-object-status__icon[class*=sap-icon],
+[dir=rtl] .fd-object-status .fd-object-status__icon [class*=sap-icon],
+[dir=rtl] .fd-object-status .fd-object-status__icon[class*=sap-icon] {
+  padding-right: 0;
+  padding-left: .25rem
+}
+.fd-object-status--positive {
+  color: #006362;
+  color: var(--sapPositiveTextColor,#006362)
+}
+.fd-object-status--positive .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--positive .fd-object-status__icon[class*=sap-icon] {
+  color: #006362;
+  color: var(--sapPositiveElementColor,#006362)
+}
+.fd-object-status--critical {
+  color: #5c5c00;
+  color: var(--sapCriticalTextColor,#5c5c00)
+}
+.fd-object-status--critical .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--critical .fd-object-status__icon[class*=sap-icon] {
+  color: #5c5c00;
+  color: var(--sapCriticalElementColor,#5c5c00)
+}
+.fd-object-status--negative {
+  color: #ab0000;
+  color: var(--sapNegativeTextColor,#ab0000)
+}
+.fd-object-status--negative .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--negative .fd-object-status__icon[class*=sap-icon] {
+  color: #ab0000;
+  color: var(--sapNegativeElementColor,#ab0000)
+}
+.fd-object-status--informative {
+  color: #000;
+  color: var(--sapInformativeTextColor,#000)
+}
+.fd-object-status--informative .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--informative .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapInformativeElementColor,#000)
+}
+.fd-object-status--indication-1 {
+  color: #780000;
+  color: var(--sapIndicationColor_1,#780000)
+}
+.fd-object-status--indication-1:visited {
+  color: #780000;
+  color: var(--sapIndicationColor_1,#780000)
+}
+.fd-object-status--indication-1:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--indication-1:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #780000;
+  color: var(--sapIndicationColor_1,#780000)
+}
+.fd-object-status--indication-2 {
+  color: #ab0000;
+  color: var(--sapIndicationColor_2,#ab0000)
+}
+.fd-object-status--indication-2:visited {
+  color: #ab0000;
+  color: var(--sapIndicationColor_2,#ab0000)
+}
+.fd-object-status--indication-2:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--indication-2:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #ab0000;
+  color: var(--sapIndicationColor_2,#ab0000)
+}
+.fd-object-status--indication-3 {
+  color: #5c5c00;
+  color: var(--sapIndicationColor_3,#5c5c00)
+}
+.fd-object-status--indication-3:visited {
+  color: #5c5c00;
+  color: var(--sapIndicationColor_3,#5c5c00)
+}
+.fd-object-status--indication-3:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--indication-3:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #5c5c00;
+  color: var(--sapIndicationColor_3,#5c5c00)
+}
+.fd-object-status--indication-4 {
+  color: #006362;
+  color: var(--sapIndicationColor_4,#006362)
+}
+.fd-object-status--indication-4:visited {
+  color: #006362;
+  color: var(--sapIndicationColor_4,#006362)
+}
+.fd-object-status--indication-4:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--indication-4:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #006362;
+  color: var(--sapIndicationColor_4,#006362)
+}
+.fd-object-status--indication-5 {
+  color: #004ccb;
+  color: var(--sapIndicationColor_5,#004ccb)
+}
+.fd-object-status--indication-5:visited {
+  color: #004ccb;
+  color: var(--sapIndicationColor_5,#004ccb)
+}
+.fd-object-status--indication-5:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--indication-5:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #004ccb;
+  color: var(--sapIndicationColor_5,#004ccb)
+}
+.fd-object-status--indication-6 {
+  color: #105b5b;
+  color: var(--sapAccentColor7,#105b5b)
+}
+.fd-object-status--indication-6:visited {
+  color: #105b5b;
+  color: var(--sapAccentColor7,#105b5b)
+}
+.fd-object-status--indication-6:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--indication-6:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #105b5b;
+  color: var(--sapAccentColor7,#105b5b)
+}
+.fd-object-status--indication-7 {
+  color: #6c32a9;
+  color: var(--sapAccentColor9,#6c32a9)
+}
+.fd-object-status--indication-7:visited {
+  color: #6c32a9;
+  color: var(--sapAccentColor9,#6c32a9)
+}
+.fd-object-status--indication-7:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--indication-7:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #6c32a9;
+  color: var(--sapAccentColor9,#6c32a9)
+}
+.fd-object-status--indication-8 {
+  color: #961d7c;
+  color: var(--sapAccentColor4,#961d7c)
+}
+.fd-object-status--indication-8:visited {
+  color: #961d7c;
+  color: var(--sapAccentColor4,#961d7c)
+}
+.fd-object-status--indication-8:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--indication-8:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #961d7c;
+  color: var(--sapAccentColor4,#961d7c)
+}
+.fd-object-status--link {
+  text-decoration: none;
+  cursor: pointer
+}
+.fd-object-status--link:hover .fd-object-status__text {
+  text-decoration: underline
+}
+.fd-object-status--link:visited {
+  text-decoration: none
+}
+.fd-object-status--large {
+  font-size: 1.5rem
+}
+.fd-object-status--large .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--large .fd-object-status__icon[class*=sap-icon] {
+  font-size: 1.5rem
+}
+.fd-object-status--inverted {
+  height: auto;
+  min-height: 1rem;
+  width: auto;
+  max-width: 100%;
+  padding: .0625rem .25rem;
+  border-radius: .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem);
+  font-weight: 700;
+  border-width: .0625rem;
+  border-width: var(--fdInverted_Object_Border_Width,.0625rem);
+  border-style: solid;
+  text-shadow: none;
+  color: #000;
+  color: var(--sapButton_Neutral_TextColor,#000);
+  background-color: #fff;
+  background-color: var(--sapButton_Neutral_Background,#fff)
+}
+.fd-object-status--inverted .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted .fd-object-status__icon[class*=sap-icon] {
+  font-size: .75rem;
+  padding-right: .25rem
+}
+.fd-object-status--inverted .fd-object-status__icon [class*=sap-icon]:first-child:last-child,
+.fd-object-status--inverted .fd-object-status__icon[class*=sap-icon]:first-child:last-child {
+  padding: 0 .25rem
+}
+.fd-object-status--inverted[dir=rtl] .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted[dir=rtl] .fd-object-status__icon[class*=sap-icon],
+[dir=rtl] .fd-object-status--inverted .fd-object-status__icon [class*=sap-icon],
+[dir=rtl] .fd-object-status--inverted .fd-object-status__icon[class*=sap-icon] {
+  padding-right: 0;
+  padding-left: .25rem
+}
+.fd-object-status--inverted .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Neutral_TextColor,#000)
+}
+.fd-object-status--inverted:active,
+.fd-object-status--inverted:hover,
+.fd-object-status--inverted:visited {
+  color: #000;
+  color: var(--sapButton_Neutral_TextColor,#000);
+  background-color: #fff;
+  background-color: var(--sapButton_Neutral_Background,#fff)
+}
+.fd-object-status--inverted:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Neutral_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--positive {
+  color: #000;
+  color: var(--sapButton_Success_TextColor,#000);
+  background-color: #fff;
+  background-color: var(--sapButton_Success_Background,#fff)
+}
+.fd-object-status--inverted.fd-object-status--positive .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--positive .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Success_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--positive:active,
+.fd-object-status--inverted.fd-object-status--positive:hover,
+.fd-object-status--inverted.fd-object-status--positive:visited {
+  color: #000;
+  color: var(--sapButton_Success_TextColor,#000);
+  background-color: #fff;
+  background-color: var(--sapButton_Success_Background,#fff)
+}
+.fd-object-status--inverted.fd-object-status--positive:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--positive:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--positive:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--positive:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--positive:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--positive:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Success_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--critical {
+  color: #000;
+  color: var(--sapButton_Critical_TextColor,#000);
+  background-color: #fff;
+  background-color: var(--sapButton_Critical_Background,#fff)
+}
+.fd-object-status--inverted.fd-object-status--critical .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--critical .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Critical_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--critical:active,
+.fd-object-status--inverted.fd-object-status--critical:hover,
+.fd-object-status--inverted.fd-object-status--critical:visited {
+  color: #000;
+  color: var(--sapButton_Critical_TextColor,#000);
+  background-color: #fff;
+  background-color: var(--sapButton_Critical_Background,#fff)
+}
+.fd-object-status--inverted.fd-object-status--critical:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--critical:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--critical:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--critical:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--critical:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--critical:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Critical_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--negative {
+  color: #000;
+  color: var(--sapButton_Negative_TextColor,#000);
+  background-color: #fff;
+  background-color: var(--sapButton_Negative_Background,#fff)
+}
+.fd-object-status--inverted.fd-object-status--negative .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--negative .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Negative_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--negative:active,
+.fd-object-status--inverted.fd-object-status--negative:hover,
+.fd-object-status--inverted.fd-object-status--negative:visited {
+  color: #000;
+  color: var(--sapButton_Negative_TextColor,#000);
+  background-color: #fff;
+  background-color: var(--sapButton_Negative_Background,#fff)
+}
+.fd-object-status--inverted.fd-object-status--negative:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--negative:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--negative:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--negative:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--negative:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--negative:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Negative_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--informative {
+  color: #000;
+  color: var(--sapButton_Information_TextColor,#000);
+  background-color: #fff;
+  background-color: var(--sapButton_Information_Background,#fff)
+}
+.fd-object-status--inverted.fd-object-status--informative .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--informative .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Information_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--informative:active,
+.fd-object-status--inverted.fd-object-status--informative:hover,
+.fd-object-status--inverted.fd-object-status--informative:visited {
+  color: #000;
+  color: var(--sapButton_Information_TextColor,#000);
+  background-color: #fff;
+  background-color: var(--sapButton_Information_Background,#fff)
+}
+.fd-object-status--inverted.fd-object-status--informative:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--informative:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--informative:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--informative:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--informative:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--informative:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Information_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--indication-1 {
+  color: #000;
+  color: var(--sapIndicationColor_1_TextColor,#000);
+  background-color: #780000;
+  background-color: var(--sapIndicationColor_1,#780000)
+}
+.fd-object-status--inverted.fd-object-status--indication-1 .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-1 .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_1_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--indication-1:active,
+.fd-object-status--inverted.fd-object-status--indication-1:hover,
+.fd-object-status--inverted.fd-object-status--indication-1:visited {
+  color: #000;
+  color: var(--sapIndicationColor_1_TextColor,#000);
+  background-color: #780000;
+  background-color: var(--sapIndicationColor_1,#780000)
+}
+.fd-object-status--inverted.fd-object-status--indication-1:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-1:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-1:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-1:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-1:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-1:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_1_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--indication-2 {
+  color: #000;
+  color: var(--sapIndicationColor_2_TextColor,#000);
+  background-color: #ab0000;
+  background-color: var(--sapIndicationColor_2,#ab0000)
+}
+.fd-object-status--inverted.fd-object-status--indication-2 .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-2 .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_2_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--indication-2:active,
+.fd-object-status--inverted.fd-object-status--indication-2:hover,
+.fd-object-status--inverted.fd-object-status--indication-2:visited {
+  color: #000;
+  color: var(--sapIndicationColor_2_TextColor,#000);
+  background-color: #ab0000;
+  background-color: var(--sapIndicationColor_2,#ab0000)
+}
+.fd-object-status--inverted.fd-object-status--indication-2:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-2:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-2:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-2:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-2:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-2:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_2_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--indication-3 {
+  color: #000;
+  color: var(--sapIndicationColor_3_TextColor,#000);
+  background-color: #5c5c00;
+  background-color: var(--sapIndicationColor_3,#5c5c00)
+}
+.fd-object-status--inverted.fd-object-status--indication-3 .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-3 .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_3_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--indication-3:active,
+.fd-object-status--inverted.fd-object-status--indication-3:hover,
+.fd-object-status--inverted.fd-object-status--indication-3:visited {
+  color: #000;
+  color: var(--sapIndicationColor_3_TextColor,#000);
+  background-color: #5c5c00;
+  background-color: var(--sapIndicationColor_3,#5c5c00)
+}
+.fd-object-status--inverted.fd-object-status--indication-3:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-3:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-3:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-3:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-3:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-3:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_3_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--indication-4 {
+  color: #000;
+  color: var(--sapIndicationColor_4_TextColor,#000);
+  background-color: #006362;
+  background-color: var(--sapIndicationColor_4,#006362)
+}
+.fd-object-status--inverted.fd-object-status--indication-4 .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-4 .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_4_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--indication-4:active,
+.fd-object-status--inverted.fd-object-status--indication-4:hover,
+.fd-object-status--inverted.fd-object-status--indication-4:visited {
+  color: #000;
+  color: var(--sapIndicationColor_4_TextColor,#000);
+  background-color: #006362;
+  background-color: var(--sapIndicationColor_4,#006362)
+}
+.fd-object-status--inverted.fd-object-status--indication-4:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-4:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-4:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-4:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-4:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-4:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_4_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--indication-5 {
+  color: #000;
+  color: var(--sapIndicationColor_5_TextColor,#000);
+  background-color: #004ccb;
+  background-color: var(--sapIndicationColor_5,#004ccb)
+}
+.fd-object-status--inverted.fd-object-status--indication-5 .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-5 .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_5_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--indication-5:active,
+.fd-object-status--inverted.fd-object-status--indication-5:hover,
+.fd-object-status--inverted.fd-object-status--indication-5:visited {
+  color: #000;
+  color: var(--sapIndicationColor_5_TextColor,#000);
+  background-color: #004ccb;
+  background-color: var(--sapIndicationColor_5,#004ccb)
+}
+.fd-object-status--inverted.fd-object-status--indication-5:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-5:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-5:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-5:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-5:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-5:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_5_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--indication-6 {
+  color: #000;
+  color: var(--sapIndicationColor_6_TextColor,#000);
+  background-color: #105b5b;
+  background-color: var(--sapIndicationColor_6,#105b5b)
+}
+.fd-object-status--inverted.fd-object-status--indication-6 .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-6 .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_6_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--indication-6:active,
+.fd-object-status--inverted.fd-object-status--indication-6:hover,
+.fd-object-status--inverted.fd-object-status--indication-6:visited {
+  color: #000;
+  color: var(--sapIndicationColor_6_TextColor,#000);
+  background-color: #105b5b;
+  background-color: var(--sapIndicationColor_6,#105b5b)
+}
+.fd-object-status--inverted.fd-object-status--indication-6:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-6:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-6:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-6:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-6:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-6:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_6_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--indication-7 {
+  color: #000;
+  color: var(--sapIndicationColor_7_TextColor,#000);
+  background-color: #6c32a9;
+  background-color: var(--sapIndicationColor_7,#6c32a9)
+}
+.fd-object-status--inverted.fd-object-status--indication-7 .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-7 .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_7_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--indication-7:active,
+.fd-object-status--inverted.fd-object-status--indication-7:hover,
+.fd-object-status--inverted.fd-object-status--indication-7:visited {
+  color: #000;
+  color: var(--sapIndicationColor_7_TextColor,#000);
+  background-color: #6c32a9;
+  background-color: var(--sapIndicationColor_7,#6c32a9)
+}
+.fd-object-status--inverted.fd-object-status--indication-7:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-7:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-7:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-7:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-7:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-7:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_7_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--indication-8 {
+  color: #000;
+  color: var(--sapIndicationColor_8_TextColor,#000);
+  background-color: #961d7c;
+  background-color: var(--sapIndicationColor_8,#961d7c)
+}
+.fd-object-status--inverted.fd-object-status--indication-8 .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-8 .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_8_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--indication-8:active,
+.fd-object-status--inverted.fd-object-status--indication-8:hover,
+.fd-object-status--inverted.fd-object-status--indication-8:visited {
+  color: #000;
+  color: var(--sapIndicationColor_8_TextColor,#000);
+  background-color: #961d7c;
+  background-color: var(--sapIndicationColor_8,#961d7c)
+}
+.fd-object-status--inverted.fd-object-status--indication-8:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-8:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-8:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-8:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-8:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-8:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_8_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--large {
+  font-size: 1.25rem;
+  padding: .125rem .25rem
+}
+.fd-object-status--inverted.fd-object-status--large .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--large .fd-object-status__icon[class*=sap-icon] {
+  font-size: 1.25rem
+}
+.fd-object-status--inverted.fd-object-status--large .fd-object-status__icon [class*=sap-icon].is-empty,
+.fd-object-status--inverted.fd-object-status--large .fd-object-status__icon [class*=sap-icon]:empty,
+.fd-object-status--inverted.fd-object-status--large .fd-object-status__icon[class*=sap-icon].is-empty,
+.fd-object-status--inverted.fd-object-status--large .fd-object-status__icon[class*=sap-icon]:empty {
+  height: 1.5rem;
+  min-width: 1.75rem;
+  padding: 0 .25rem
+}
+.fd-object-status--inverted.fd-object-status--link {
+  cursor: pointer;
+  color: #000;
+  color: var(--sapButton_Neutral_TextColor,#000);
+  background-color: #fff;
+  background-color: var(--sapButton_Neutral_Background,#fff);
+  border-color: #000;
+  border-color: var(--sapButton_Neutral_Hover_BorderColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link:active .fd-object-status__text,
+.fd-object-status--inverted.fd-object-status--link:hover .fd-object-status__text,
+.fd-object-status--inverted.fd-object-status--link:visited .fd-object-status__text {
+  text-decoration: none
+}
+.fd-object-status--inverted.fd-object-status--link:visited {
+  color: #000;
+  color: var(--sapButton_Neutral_TextColor,#000);
+  background-color: #fff;
+  background-color: var(--sapButton_Neutral_Background,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Neutral_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.is-hover,
+.fd-object-status--inverted.fd-object-status--link:hover {
+  color: #000;
+  color: var(--sapButton_Neutral_Hover_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapButton_Neutral_Hover_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Neutral_Hover_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.is-active,
+.fd-object-status--inverted.fd-object-status--link:active {
+  color: #000;
+  color: var(--sapButton_Active_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapButton_Neutral_Active_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link:active .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Active_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive {
+  color: #000;
+  color: var(--sapButton_Success_TextColor,#000);
+  background-color: #fff;
+  background-color: var(--sapButton_Success_Background,#fff);
+  border-color: #000;
+  border-color: var(--sapButton_Success_BorderColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive:visited {
+  color: #000;
+  color: var(--sapButton_Critical_TextColor,#000);
+  background-color: #fff;
+  background-color: var(--sapButton_Success_Background,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Critical_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive:hover {
+  color: #000;
+  color: var(--sapButton_Success_Hover_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapButton_Success_Hover_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Success_Hover_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive:active {
+  color: #000;
+  color: var(--sapButton_Active_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapButton_Success_Active_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive:active .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Active_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical {
+  color: #000;
+  color: var(--sapButton_Critical_TextColor,#000);
+  background-color: #fff;
+  background-color: var(--sapButton_Critical_Background,#fff);
+  border-color: #000;
+  border-color: var(--sapButton_Critical_BorderColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:visited {
+  color: #000;
+  color: var(--sapButton_Critical_TextColor,#000);
+  background-color: #fff;
+  background-color: var(--sapButton_Critical_Background,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Critical_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:hover {
+  color: var(sapButton_Critical_Hover_TextColor);
+  background-color: #ec8b46;
+  background-color: var(--sapButton_Critical_Hover_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:hover .fd-object-status__icon[class*=sap-icon] {
+  color: var(sapButton_Critical_Hover_TextColor)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:active {
+  color: #000;
+  color: var(--sapButton_Active_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapButton_Critical_Active_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:active .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Active_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative {
+  color: #000;
+  color: var(--sapButton_Negative_TextColor,#000);
+  background-color: #fff;
+  background-color: var(--sapButton_Negative_Background,#fff);
+  border-color: #000;
+  border-color: var(--sapButton_Negative_BorderColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative:visited {
+  color: #000;
+  color: var(--sapButton_Negative_TextColor,#000);
+  background-color: #fff;
+  background-color: var(--sapButton_Negative_Background,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Negative_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative:hover {
+  color: #000;
+  color: var(--sapButton_Negative_Hover_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapButton_Negative_Hover_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Negative_Hover_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative:active {
+  color: #000;
+  color: var(--sapButton_Active_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapButton_Negative_Active_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative:active .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Active_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative {
+  color: #000;
+  color: var(--sapButton_Information_TextColor,#000);
+  background-color: #fff;
+  background-color: var(--sapButton_Information_Background,#fff);
+  border-color: #000;
+  border-color: var(--sapButton_Information_BorderColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative:visited {
+  color: #000;
+  color: var(--sapButton_Information_TextColor,#000);
+  background-color: #fff;
+  background-color: var(--sapButton_Information_Background,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Information_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative:hover {
+  color: #000;
+  color: var(--sapButton_Information_Hover_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapButton_Information_Hover_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Information_Hover_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative:active {
+  color: #000;
+  color: var(--sapButton_Active_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapButton_Information_Active_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative:active .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapButton_Active_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1 {
+  color: #000;
+  color: var(--sapIndicationColor_1_TextColor,#000);
+  background-color: #780000;
+  background-color: var(--sapIndicationColor_1,#780000);
+  border-color: #000;
+  border-color: var(--sapContent_ForegroundBorderColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1:visited {
+  color: #000;
+  color: var(--sapIndicationColor_1_TextColor,#000);
+  background-color: #780000;
+  background-color: var(--sapIndicationColor_1,#780000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_1_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1:hover {
+  color: #000;
+  color: var(--sapIndicationColor_1_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapIndicationColor_1_Hover_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_1_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1:active {
+  color: #000;
+  color: var(--sapIndicationColor_1_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapIndicationColor_1_Active_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1:active .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_1_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2 {
+  color: #000;
+  color: var(--sapIndicationColor_2_TextColor,#000);
+  background-color: #ab0000;
+  background-color: var(--sapIndicationColor_2,#ab0000);
+  border-color: #000;
+  border-color: var(--sapContent_ForegroundBorderColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2:visited {
+  color: #000;
+  color: var(--sapIndicationColor_2_TextColor,#000);
+  background-color: #ab0000;
+  background-color: var(--sapIndicationColor_2,#ab0000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_2_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2:hover {
+  color: #000;
+  color: var(--sapIndicationColor_2_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapIndicationColor_2_Hover_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_2_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2:active {
+  color: #000;
+  color: var(--sapIndicationColor_2_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapIndicationColor_2_Active_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2:active .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_2_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3 {
+  color: #000;
+  color: var(--sapIndicationColor_3_TextColor,#000);
+  background-color: #5c5c00;
+  background-color: var(--sapIndicationColor_3,#5c5c00);
+  border-color: #000;
+  border-color: var(--sapContent_ForegroundBorderColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:visited {
+  color: #000;
+  color: var(--sapIndicationColor_3_TextColor,#000);
+  background-color: #5c5c00;
+  background-color: var(--sapIndicationColor_3,#5c5c00)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_3_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:hover {
+  color: #000;
+  color: var(--sapIndicationColor_3_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapIndicationColor_3_Hover_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_3_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:active {
+  color: #000;
+  color: var(--sapIndicationColor_3_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapIndicationColor_3_Active_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:active .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_3_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4 {
+  color: #000;
+  color: var(--sapIndicationColor_4_TextColor,#000);
+  background-color: #006362;
+  background-color: var(--sapIndicationColor_4,#006362);
+  border-color: #000;
+  border-color: var(--sapContent_ForegroundBorderColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4:visited {
+  color: #000;
+  color: var(--sapIndicationColor_4_TextColor,#000);
+  background-color: #006362;
+  background-color: var(--sapIndicationColor_4,#006362)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_4_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4:hover {
+  color: #000;
+  color: var(--sapIndicationColor_4_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapIndicationColor_4_Hover_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_4_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4:active {
+  color: #000;
+  color: var(--sapIndicationColor_4_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapIndicationColor_4_Active_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4:active .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_4_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5 {
+  color: #000;
+  color: var(--sapIndicationColor_5_TextColor,#000);
+  background-color: #004ccb;
+  background-color: var(--sapIndicationColor_5,#004ccb);
+  border-color: #000;
+  border-color: var(--sapContent_ForegroundBorderColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5:visited {
+  color: #000;
+  color: var(--sapIndicationColor_5_TextColor,#000);
+  background-color: #004ccb;
+  background-color: var(--sapIndicationColor_5,#004ccb)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_5_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5:hover {
+  color: #000;
+  color: var(--sapIndicationColor_5_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapIndicationColor_5_Hover_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_5_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5:active {
+  color: #000;
+  color: var(--sapIndicationColor_5_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapIndicationColor_5_Active_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5:active .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_5_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6 {
+  color: #000;
+  color: var(--sapIndicationColor_6_TextColor,#000);
+  background-color: #105b5b;
+  background-color: var(--sapIndicationColor_6,#105b5b);
+  border-color: #000;
+  border-color: var(--sapContent_ForegroundBorderColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6:visited {
+  color: #000;
+  color: var(--sapIndicationColor_6_TextColor,#000);
+  background-color: #105b5b;
+  background-color: var(--sapIndicationColor_6,#105b5b)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_6_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6:hover {
+  color: #000;
+  color: var(--sapIndicationColor_6_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapIndicationColor_6_Hover_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_6_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6:active {
+  color: #000;
+  color: var(--sapIndicationColor_6_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapIndicationColor_6_Active_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6:active .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_6_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7 {
+  color: #000;
+  color: var(--sapIndicationColor_7_TextColor,#000);
+  background-color: #6c32a9;
+  background-color: var(--sapIndicationColor_7,#6c32a9);
+  border-color: #000;
+  border-color: var(--sapContent_ForegroundBorderColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7:visited {
+  color: #000;
+  color: var(--sapIndicationColor_7_TextColor,#000);
+  background-color: #6c32a9;
+  background-color: var(--sapIndicationColor_7,#6c32a9)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_7_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7:hover {
+  color: #000;
+  color: var(--sapIndicationColor_7_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapIndicationColor_7_Hover_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_7_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7:active {
+  color: #000;
+  color: var(--sapIndicationColor_7_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapIndicationColor_7_Active_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7:active .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_7_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8 {
+  color: #000;
+  color: var(--sapIndicationColor_8_TextColor,#000);
+  background-color: #961d7c;
+  background-color: var(--sapIndicationColor_8,#961d7c);
+  border-color: #000;
+  border-color: var(--sapContent_ForegroundBorderColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8:visited {
+  color: #000;
+  color: var(--sapIndicationColor_8_TextColor,#000);
+  background-color: #961d7c;
+  background-color: var(--sapIndicationColor_8,#961d7c)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_8_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8:hover {
+  color: #000;
+  color: var(--sapIndicationColor_8_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapIndicationColor_8_Hover_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_8_TextColor,#000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8:active {
+  color: #000;
+  color: var(--sapIndicationColor_8_TextColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapIndicationColor_8_Active_Background,#ec8b46)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8:active .fd-object-status__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapIndicationColor_8_TextColor,#000)
+}

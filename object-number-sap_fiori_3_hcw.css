@@ -1,0 +1,107 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+/*!
+.fd-object-number+(--success | --warning | --error)
+*/
+.fd-object-number {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: #000;
+  color: var(--sapNeutralTextColor,#000);
+  max-width: 100%;
+  display: inline-block;
+  text-shadow: none;
+  text-shadow: var(--sapContent_TextShadow,none)
+}
+.fd-object-number::after,
+.fd-object-number::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-object-number__text,
+.fd-object-number__unit {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: .125rem
+}
+.fd-object-number__text::after,
+.fd-object-number__text::before,
+.fd-object-number__unit::after,
+.fd-object-number__unit::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-object-number__text::after {
+  content: '\00a0 '
+}
+.fd-object-number__text--bold {
+  font-weight: 700
+}
+.fd-object-number__unit {
+  font-family: "72-Light", "72-Lightfull", "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontLightFamily, "72-Light", "72-Lightfull", "72", "72full", Arial, Helvetica, sans-serif)
+}
+.fd-object-number--positive .fd-object-number__text,
+.fd-object-number--positive .fd-object-number__unit {
+  color: #006362;
+  color: var(--sapPositiveTextColor,#006362)
+}
+.fd-object-number--critical .fd-object-number__text,
+.fd-object-number--critical .fd-object-number__unit {
+  color: #5c5c00;
+  color: var(--sapCriticalTextColor,#5c5c00)
+}
+.fd-object-number--negative .fd-object-number__text,
+.fd-object-number--negative .fd-object-number__unit {
+  color: #ab0000;
+  color: var(--sapNegativeTextColor,#ab0000)
+}
+.fd-object-number--informative .fd-object-number__text,
+.fd-object-number--informative .fd-object-number__unit {
+  color: #000;
+  color: var(--sapInformativeTextColor,#000)
+}
+.fd-object-number--large .fd-object-number__text,
+.fd-object-number--large .fd-object-number__unit {
+  font-family: "72-Light", "72-Lightfull", "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontLightFamily, "72-Light", "72-Lightfull", "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: 1.5rem
+}

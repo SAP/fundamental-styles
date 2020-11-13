@@ -1,0 +1,439 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+.fd-numeric-content {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3rem;
+  width: 100%
+}
+.fd-numeric-content::after,
+.fd-numeric-content::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-numeric-content__kpi-container,
+.fd-numeric-content__launch-icon-container {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  padding-top: .125rem;
+  margin-right: .375rem
+}
+.fd-numeric-content__kpi-container::after,
+.fd-numeric-content__kpi-container::before,
+.fd-numeric-content__launch-icon-container::after,
+.fd-numeric-content__launch-icon-container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-numeric-content__kpi-container[dir=rtl],
+.fd-numeric-content__launch-icon-container[dir=rtl],
+[dir=rtl] .fd-numeric-content__kpi-container,
+[dir=rtl] .fd-numeric-content__launch-icon-container {
+  margin-right: 0;
+  margin-left: .375rem
+}
+.fd-numeric-content__kpi-container:first-child:last-child,
+.fd-numeric-content__launch-icon-container:first-child:last-child {
+  margin: 0
+}
+.fd-numeric-content__launch-icon-container {
+  width: 1.75rem;
+  min-width: 1.75rem;
+  max-width: 1.75rem
+}
+.fd-numeric-content__scale-container {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  padding-top: .5rem;
+  padding-bottom: .375rem
+}
+.fd-numeric-content__scale-container::after,
+.fd-numeric-content__scale-container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-numeric-content__scale-container:first-child:last-child {
+  margin: 0
+}
+.fd-numeric-content__launch-icon [class*=sap-icon],
+.fd-numeric-content__launch-icon[class*=sap-icon] {
+  color: inherit;
+  background: inherit;
+  font-size: inherit;
+  border-radius: inherit;
+  line-height: 1;
+  line-height: normal;
+  font-size: 1.75rem;
+  color: #fff;
+  color: var(--sapTile_IconColor,#fff)
+}
+.fd-numeric-content__kpi {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  line-height: normal;
+  color: #fff;
+  color: var(--sapNeutralTextColor,#fff);
+  font-weight: lighter;
+  font-size: 2.25rem
+}
+.fd-numeric-content__kpi::after,
+.fd-numeric-content__kpi::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-numeric-content__kpi--positive {
+  color: #9c9;
+  color: var(--sapPositiveTextColor,#9c9)
+}
+.fd-numeric-content__kpi--critical {
+  color: #ffab1d;
+  color: var(--sapCriticalTextColor,#ffab1d)
+}
+.fd-numeric-content__kpi--negative {
+  color: #ff5e5e;
+  color: var(--sapNegativeTextColor,#ff5e5e)
+}
+.fd-numeric-content__kpi--informative {
+  color: #fff;
+  color: var(--sapInformativeTextColor,#fff)
+}
+.fd-numeric-content__scale {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+.fd-numeric-content__scale::after,
+.fd-numeric-content__scale::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-numeric-content__scale-arrow [class*=sap-icon],
+.fd-numeric-content__scale-arrow[class*=sap-icon] {
+  color: inherit;
+  background: inherit;
+  font-size: inherit;
+  border-radius: inherit;
+  line-height: 1;
+  font-size: .875rem;
+  line-height: normal;
+  color: #fff;
+  color: var(--sapNeutralTextColor,#fff)
+}
+.fd-numeric-content__scale-text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: .875rem;
+  line-height: normal;
+  color: #fff;
+  color: var(--sapNeutralTextColor,#fff)
+}
+.fd-numeric-content__scale-text::after,
+.fd-numeric-content__scale-text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-numeric-content__scale--positive .fd-numeric-content__scale-arrow [class*=sap-icon],
+.fd-numeric-content__scale--positive .fd-numeric-content__scale-arrow[class*=sap-icon] {
+  color: #9c9;
+  color: var(--sapPositiveTextColor,#9c9)
+}
+.fd-numeric-content__scale--positive .fd-numeric-content__scale-text {
+  color: #9c9;
+  color: var(--sapPositiveTextColor,#9c9)
+}
+.fd-numeric-content__scale--critical .fd-numeric-content__scale-arrow [class*=sap-icon],
+.fd-numeric-content__scale--critical .fd-numeric-content__scale-arrow[class*=sap-icon] {
+  color: #ffab1d;
+  color: var(--sapCriticalTextColor,#ffab1d)
+}
+.fd-numeric-content__scale--critical .fd-numeric-content__scale-text {
+  color: #ffab1d;
+  color: var(--sapCriticalTextColor,#ffab1d)
+}
+.fd-numeric-content__scale--negative .fd-numeric-content__scale-arrow [class*=sap-icon],
+.fd-numeric-content__scale--negative .fd-numeric-content__scale-arrow[class*=sap-icon] {
+  color: #ff5e5e;
+  color: var(--sapNegativeTextColor,#ff5e5e)
+}
+.fd-numeric-content__scale--negative .fd-numeric-content__scale-text {
+  color: #ff5e5e;
+  color: var(--sapNegativeTextColor,#ff5e5e)
+}
+.fd-numeric-content__scale--informative .fd-numeric-content__scale-arrow [class*=sap-icon],
+.fd-numeric-content__scale--informative .fd-numeric-content__scale-arrow[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapInformativeTextColor,#fff)
+}
+.fd-numeric-content__scale--informative .fd-numeric-content__scale-text {
+  color: #fff;
+  color: var(--sapInformativeTextColor,#fff)
+}
+.fd-numeric-content--m {
+  height: 2.5rem
+}
+.fd-numeric-content--m .fd-numeric-content__kpi-container,
+.fd-numeric-content--m .fd-numeric-content__launch-icon-container {
+  padding-top: 0;
+  margin-right: .5rem
+}
+.fd-numeric-content--m .fd-numeric-content__kpi-container[dir=rtl],
+.fd-numeric-content--m .fd-numeric-content__launch-icon-container[dir=rtl],
+[dir=rtl] .fd-numeric-content--m .fd-numeric-content__kpi-container,
+[dir=rtl] .fd-numeric-content--m .fd-numeric-content__launch-icon-container {
+  margin-right: 0;
+  margin-left: .5rem
+}
+.fd-numeric-content--m .fd-numeric-content__launch-icon-container {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end
+}
+.fd-numeric-content--m .fd-numeric-content__scale-container {
+  padding-top: .375rem;
+  padding-bottom: .188rem
+}
+.fd-numeric-content--m .fd-numeric-content__kpi {
+  font-size: 2rem
+}
+.fd-numeric-content--s {
+  height: 2.25rem
+}
+.fd-numeric-content--s .fd-numeric-content__kpi-container,
+.fd-numeric-content--s .fd-numeric-content__launch-icon-container {
+  padding-top: 0;
+  margin-right: .5rem
+}
+.fd-numeric-content--s .fd-numeric-content__kpi-container[dir=rtl],
+.fd-numeric-content--s .fd-numeric-content__launch-icon-container[dir=rtl],
+[dir=rtl] .fd-numeric-content--s .fd-numeric-content__kpi-container,
+[dir=rtl] .fd-numeric-content--s .fd-numeric-content__launch-icon-container {
+  margin-right: 0;
+  margin-left: .5rem
+}
+.fd-numeric-content--s .fd-numeric-content__scale-container {
+  padding-top: 0;
+  padding-bottom: .313rem
+}
+.fd-numeric-content--s .fd-numeric-content__kpi {
+  font-size: 1.75rem
+}
+.fd-numeric-content--small-tile {
+  height: 2.375rem
+}
+.fd-numeric-content--small-tile .fd-numeric-content__kpi-container,
+.fd-numeric-content--small-tile .fd-numeric-content__launch-icon-container {
+  padding-top: .5rem;
+  margin-right: .375rem
+}
+.fd-numeric-content--small-tile .fd-numeric-content__kpi-container[dir=rtl],
+.fd-numeric-content--small-tile .fd-numeric-content__launch-icon-container[dir=rtl],
+[dir=rtl] .fd-numeric-content--small-tile .fd-numeric-content__kpi-container,
+[dir=rtl] .fd-numeric-content--small-tile .fd-numeric-content__launch-icon-container {
+  margin-right: 0;
+  margin-left: .375rem
+}
+.fd-numeric-content--small-tile .fd-numeric-content__launch-icon-container {
+  width: 1.5rem;
+  min-width: 1.5rem;
+  max-width: 1.5rem
+}
+.fd-numeric-content--small-tile .fd-numeric-content__scale-container {
+  padding-top: .25rem;
+  padding-bottom: .25rem
+}
+.fd-numeric-content--small-tile .fd-numeric-content__launch-icon [class*=sap-icon],
+.fd-numeric-content--small-tile .fd-numeric-content__launch-icon[class*=sap-icon] {
+  font-size: 1.5rem
+}
+.fd-numeric-content--small-tile .fd-numeric-content__kpi {
+  font-size: 1.5rem
+}
+.fd-numeric-content--small-tile.fd-numeric-content--m {
+  height: 2.375rem
+}
+.fd-numeric-content--small-tile.fd-numeric-content--m .fd-numeric-content__kpi-container,
+.fd-numeric-content--small-tile.fd-numeric-content--m .fd-numeric-content__launch-icon-container {
+  padding-top: .5rem;
+  margin-right: .375rem
+}
+.fd-numeric-content--small-tile.fd-numeric-content--m .fd-numeric-content__kpi-container[dir=rtl],
+.fd-numeric-content--small-tile.fd-numeric-content--m .fd-numeric-content__launch-icon-container[dir=rtl],
+[dir=rtl] .fd-numeric-content--small-tile.fd-numeric-content--m .fd-numeric-content__kpi-container,
+[dir=rtl] .fd-numeric-content--small-tile.fd-numeric-content--m .fd-numeric-content__launch-icon-container {
+  margin-right: 0;
+  margin-left: .375rem
+}
+.fd-numeric-content--small-tile.fd-numeric-content--m .fd-numeric-content__launch-icon-container {
+  width: 1.5rem;
+  min-width: 1.5rem;
+  max-width: 1.5rem
+}
+.fd-numeric-content--small-tile.fd-numeric-content--m .fd-numeric-content__scale-container {
+  padding-top: .25rem;
+  padding-bottom: .25rem
+}
+.fd-numeric-content--small-tile.fd-numeric-content--m .fd-numeric-content__launch-icon [class*=sap-icon],
+.fd-numeric-content--small-tile.fd-numeric-content--m .fd-numeric-content__launch-icon[class*=sap-icon] {
+  font-size: 1.5rem
+}
+.fd-numeric-content--small-tile.fd-numeric-content--m .fd-numeric-content__kpi {
+  font-size: 1.5rem
+}
+.fd-numeric-content--small-tile.fd-numeric-content--m .fd-numeric-content__launch-icon-container {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end
+}
+.fd-numeric-content--small-tile.fd-numeric-content--s {
+  height: 2.375rem
+}
+.fd-numeric-content--small-tile.fd-numeric-content--s .fd-numeric-content__kpi-container,
+.fd-numeric-content--small-tile.fd-numeric-content--s .fd-numeric-content__launch-icon-container {
+  padding-top: .5rem;
+  margin-right: .375rem
+}
+.fd-numeric-content--small-tile.fd-numeric-content--s .fd-numeric-content__kpi-container[dir=rtl],
+.fd-numeric-content--small-tile.fd-numeric-content--s .fd-numeric-content__launch-icon-container[dir=rtl],
+[dir=rtl] .fd-numeric-content--small-tile.fd-numeric-content--s .fd-numeric-content__kpi-container,
+[dir=rtl] .fd-numeric-content--small-tile.fd-numeric-content--s .fd-numeric-content__launch-icon-container {
+  margin-right: 0;
+  margin-left: .375rem
+}
+.fd-numeric-content--small-tile.fd-numeric-content--s .fd-numeric-content__launch-icon-container {
+  width: 1.5rem;
+  min-width: 1.5rem;
+  max-width: 1.5rem
+}
+.fd-numeric-content--small-tile.fd-numeric-content--s .fd-numeric-content__scale-container {
+  padding-top: .25rem;
+  padding-bottom: .25rem
+}
+.fd-numeric-content--small-tile.fd-numeric-content--s .fd-numeric-content__launch-icon [class*=sap-icon],
+.fd-numeric-content--small-tile.fd-numeric-content--s .fd-numeric-content__launch-icon[class*=sap-icon] {
+  font-size: 1.5rem
+}
+.fd-numeric-content--small-tile.fd-numeric-content--s .fd-numeric-content__kpi {
+  font-size: 1.5rem
+}
+.fd-numeric-content--small-tile.fd-numeric-content--s .fd-numeric-content__scale-container {
+  padding-top: 0
+}

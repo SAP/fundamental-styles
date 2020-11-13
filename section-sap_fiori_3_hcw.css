@@ -1,0 +1,233 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+/*!
+.fd-section+(--full-bleed, --no-border)
+    .fd-section__header
+        .fd-section__title
+        .fd-section__actions
+    .fd-section__footer
+*/
+.fd-section {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  border-bottom: none;
+  background-color: #fff;
+  background-color: var(--sapToolbar_Background,#fff)
+}
+.fd-section::after,
+.fd-section::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-section::after {
+  content: "";
+  display: table;
+  clear: both
+}
+@media (min-width:600px) {
+  .fd-section {
+    padding-left: 2rem;
+    padding-right: 2rem
+  }
+}
+@media (min-width:1440px) {
+  .fd-section {
+    padding-left: 3rem;
+    padding-right: 3rem
+  }
+}
+.fd-section--no-border,
+.fd-section:last-child {
+  border-bottom: 0
+}
+.fd-section--bleed,
+.fd-section--full-bleed {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  padding-right: 0;
+  padding-left: 0
+}
+.fd-section--bleed::after,
+.fd-section--bleed::before,
+.fd-section--full-bleed::after,
+.fd-section--full-bleed::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-section--bleed .fd-section__footer,
+.fd-section--bleed .fd-section__header,
+.fd-section--full-bleed .fd-section__footer,
+.fd-section--full-bleed .fd-section__header {
+  padding-left: .5rem;
+  padding-right: .5rem
+}
+@media (min-width:600px) {
+  .fd-section--bleed .fd-section__footer,
+  .fd-section--bleed .fd-section__header,
+  .fd-section--full-bleed .fd-section__footer,
+  .fd-section--full-bleed .fd-section__header {
+    padding-left: 2rem;
+    padding-right: 2rem
+  }
+}
+@media (min-width:1440px) {
+  .fd-section--bleed .fd-section__footer,
+  .fd-section--bleed .fd-section__header,
+  .fd-section--full-bleed .fd-section__footer,
+  .fd-section--full-bleed .fd-section__header {
+    padding-left: 3rem;
+    padding-right: 3rem
+  }
+}
+.fd-section__header {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  min-height: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1.5rem
+}
+.fd-section__header::after,
+.fd-section__header::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-section__title {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 1.5rem;
+  font-size: var(--sapFontHeader2Size,1.5rem);
+  line-height: 2rem;
+  color: #000;
+  color: var(--sapTitleColor,#000);
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-bottom: 0
+}
+.fd-section__title::after,
+.fd-section__title::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-section__actions {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin-left: auto
+}
+.fd-section__actions::after,
+.fd-section__actions::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-section__footer {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+.fd-section__footer::after,
+.fd-section__footer::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}

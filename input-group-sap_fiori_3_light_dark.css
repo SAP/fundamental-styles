@@ -1,0 +1,436 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+/*!
+.fd-input-group+(--inline, --control)
+    .fd-input-group__addon+(--button)
+*/
+.fd-input-group {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-style: solid;
+  border-width: .0625rem;
+  border-width: var(--sapField_BorderWidth,.0625rem);
+  border-color: #8696a9;
+  border-color: var(--sapField_BorderColor,#8696a9);
+  border-radius: .125rem;
+  border-radius: var(--sapField_BorderCornerRadius,.125rem);
+  background-color: #29313a;
+  background-color: var(--sapField_Background,#29313a);
+  width: 100%;
+  overflow: hidden;
+  text-shadow: none;
+  text-shadow: var(--fdInputGroup_Text_Shadow,none)
+}
+.fd-input-group::after,
+.fd-input-group::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-input-group.is-hover,
+.fd-input-group:hover {
+  background-color: #29313a;
+  background-color: var(--sapField_Hover_Background,#29313a);
+  border-color: #91c8f6;
+  border-color: var(--sapField_Hover_BorderColor,#91c8f6)
+}
+.fd-input-group.is-success {
+  background-color: #29313a;
+  background-color: var(--sapField_SuccessBackground,#29313a);
+  border-color: #abe2ab;
+  border-color: var(--sapField_SuccessColor,#abe2ab);
+  border-width: .0625rem
+}
+.fd-input-group.is-success.is-hover,
+.fd-input-group.is-success:hover {
+  background-color: #29313a;
+  background-color: var(--sapField_SuccessBackground,#29313a);
+  border-color: #abe2ab;
+  border-color: var(--sapField_SuccessColor,#abe2ab)
+}
+.fd-input-group.is-error {
+  background-color: #29313a;
+  background-color: var(--sapField_InvalidBackground,#29313a);
+  border-color: #f88;
+  border-color: var(--sapField_InvalidColor,#f88)
+}
+.fd-input-group.is-error.is-hover,
+.fd-input-group.is-error:hover {
+  background-color: #29313a;
+  background-color: var(--sapField_InvalidBackground,#29313a);
+  border-color: #f88;
+  border-color: var(--sapField_InvalidColor,#f88)
+}
+.fd-input-group.is-alert,
+.fd-input-group.is-warning {
+  background-color: #29313a;
+  background-color: var(--sapField_WarningBackground,#29313a);
+  border-color: #fabd64;
+  border-color: var(--sapField_WarningColor,#fabd64)
+}
+.fd-input-group.is-alert.is-hover,
+.fd-input-group.is-alert:hover,
+.fd-input-group.is-warning.is-hover,
+.fd-input-group.is-warning:hover {
+  background-color: #29313a;
+  background-color: var(--sapField_WarningBackground,#29313a);
+  border-color: #fabd64;
+  border-color: var(--sapField_WarningColor,#fabd64)
+}
+.fd-input-group.is-information {
+  background-color: #29313a;
+  background-color: var(--sapField_InformationBackground,#29313a);
+  border-color: #91c8f6;
+  border-color: var(--sapField_InformationColor,#91c8f6)
+}
+.fd-input-group.is-information.is-hover,
+.fd-input-group.is-information:hover {
+  background-color: #29313a;
+  background-color: var(--sapField_InformationBackground,#29313a);
+  border-color: #91c8f6;
+  border-color: var(--sapField_InformationColor,#91c8f6)
+}
+.fd-input-group.is-focus,
+.fd-input-group:focus {
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.1875rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #fff;
+  outline-color: var(--sapContent_FocusColor,#fff);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-input-group.is-alert,
+.fd-input-group.is-error,
+.fd-input-group.is-information,
+.fd-input-group.is-warning {
+  border-width: .125rem
+}
+.fd-input-group.is-alert.is-focus,
+.fd-input-group.is-alert:focus,
+.fd-input-group.is-error.is-focus,
+.fd-input-group.is-error:focus,
+.fd-input-group.is-information.is-focus,
+.fd-input-group.is-information:focus,
+.fd-input-group.is-warning.is-focus,
+.fd-input-group.is-warning:focus {
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.25rem
+}
+.fd-input-group.is-disabled,
+.fd-input-group:disabled,
+.fd-input-group[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4;
+  opacity: var(--sapContent_DisabledOpacity,.4)
+}
+.fd-input-group.is-disabled::-webkit-input-placeholder,
+.fd-input-group:disabled::-webkit-input-placeholder,
+.fd-input-group[aria-disabled=true]::-webkit-input-placeholder {
+  color: transparent
+}
+.fd-input-group.is-disabled::-moz-placeholder,
+.fd-input-group:disabled::-moz-placeholder,
+.fd-input-group[aria-disabled=true]::-moz-placeholder {
+  color: transparent
+}
+.fd-input-group.is-disabled:-ms-input-placeholder,
+.fd-input-group:disabled:-ms-input-placeholder,
+.fd-input-group[aria-disabled=true]:-ms-input-placeholder {
+  color: transparent
+}
+.fd-input-group.is-disabled::-ms-input-placeholder,
+.fd-input-group:disabled::-ms-input-placeholder,
+.fd-input-group[aria-disabled=true]::-ms-input-placeholder {
+  color: transparent
+}
+.fd-input-group.is-disabled::placeholder,
+.fd-input-group:disabled::placeholder,
+.fd-input-group[aria-disabled=true]::placeholder {
+  color: transparent
+}
+.fd-input-group.is-readonly,
+.fd-input-group[aria-readonly=true],
+.fd-input-group[readonly] {
+  background-color: rgba(242,242,242,.5);
+  background-color: rgba(58,69,82,.5);
+  background-color: var(--sapField_ReadOnly_Background,rgba(58,69,82,.5));
+  border-color: #546375;
+  border-color: var(--sapField_ReadOnly_BorderColor,#546375)
+}
+.fd-input-group.is-readonly::-webkit-input-placeholder,
+.fd-input-group[aria-readonly=true]::-webkit-input-placeholder,
+.fd-input-group[readonly]::-webkit-input-placeholder {
+  color: transparent
+}
+.fd-input-group.is-readonly::-moz-placeholder,
+.fd-input-group[aria-readonly=true]::-moz-placeholder,
+.fd-input-group[readonly]::-moz-placeholder {
+  color: transparent
+}
+.fd-input-group.is-readonly:-ms-input-placeholder,
+.fd-input-group[aria-readonly=true]:-ms-input-placeholder,
+.fd-input-group[readonly]:-ms-input-placeholder {
+  color: transparent
+}
+.fd-input-group.is-readonly::-ms-input-placeholder,
+.fd-input-group[aria-readonly=true]::-ms-input-placeholder,
+.fd-input-group[readonly]::-ms-input-placeholder {
+  color: transparent
+}
+.fd-input-group.is-readonly::placeholder,
+.fd-input-group[aria-readonly=true]::placeholder,
+.fd-input-group[readonly]::placeholder {
+  color: transparent
+}
+.fd-input-group.is-focus,
+.fd-input-group:focus {
+  outline-offset: -.1875rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #fff;
+  outline-color: var(--sapContent_FocusColor,#fff);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-input-group > * {
+  border-radius: .125rem;
+  border-radius: var(--sapField_BorderCornerRadius,.125rem)
+}
+.fd-input-group > :first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0
+}
+.fd-input-group > :last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0
+}
+.fd-input-group > :not(:first-child):not(:last-child) {
+  border-radius: 0
+}
+.fd-input-group > [dir=rtl],
+[dir=rtl] .fd-input-group > * {
+  border-radius: .125rem;
+  border-radius: var(--sapField_BorderCornerRadius,.125rem)
+}
+.fd-input-group > [dir=rtl]:first-child,
+[dir=rtl] .fd-input-group > :first-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0
+}
+.fd-input-group > [dir=rtl]:last-child,
+[dir=rtl] .fd-input-group > :last-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0
+}
+.fd-input-group .fd-input-group__input {
+  background-color: transparent;
+  border: none;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 10rem;
+  flex: 1 1 10rem;
+  padding-right: .25rem;
+  padding-left: .25rem;
+  text-shadow: none;
+  text-shadow: var(--fdInputGroup_Text_Shadow,none)
+}
+.fd-input-group .fd-input-group__input:nth-child(n+1) {
+  margin: 0
+}
+.fd-input-group .fd-input-group__input.is-focus,
+.fd-input-group .fd-input-group__input:focus {
+  z-index: 5;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fd-input-group .fd-input-group__input.is-disabled,
+.fd-input-group .fd-input-group__input:disabled,
+.fd-input-group .fd-input-group__input[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4;
+  opacity: var(--sapContent_DisabledOpacity,.4)
+}
+.fd-input-group .fd-input-group__input:nth-child(1) {
+  padding-left: .625rem;
+  padding-right: .25rem
+}
+.fd-input-group .fd-input-group__input:nth-child(1)[dir=rtl],
+[dir=rtl] .fd-input-group .fd-input-group__input:nth-child(1) {
+  padding-left: .25rem;
+  padding-right: .625rem
+}
+.fd-input-group .fd-input-group__input:nth-last-child(1) {
+  padding-left: .25rem;
+  padding-right: .625rem
+}
+.fd-input-group .fd-input-group__input:nth-last-child(1)[dir=rtl],
+[dir=rtl] .fd-input-group .fd-input-group__input:nth-last-child(1) {
+  padding-left: .625rem;
+  padding-right: .25rem
+}
+.fd-input-group--inline {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: bottom;
+  width: auto
+}
+.fd-input-group__addon {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #d3d7d9;
+  color: var(--sapContent_NonInteractiveIconColor,#d3d7d9);
+  background-color: #29313a;
+  background-color: var(--sapField_Background,#29313a);
+  font-size: 1rem;
+  font-size: var(--sapFontLargeSize,1rem);
+  min-width: 2.25rem;
+  min-height: 2.25rem;
+  padding-left: .625rem;
+  padding-right: .625rem
+}
+.fd-input-group__addon::after,
+.fd-input-group__addon::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-input-group__addon span[class*=sap-icon--]::before {
+  font-size: 1rem;
+  font-size: var(--sapFontLargeSize,1rem)
+}
+.fd-input-group__addon--compact {
+  min-width: 2rem;
+  min-height: 1.625rem
+}
+.fd-input-group__addon--readonly {
+  opacity: .4
+}
+.fd-input-group__addon--button {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: none;
+  border-radius: .0625rem
+}
+.fd-input-group__addon--button .fd-input-group__button {
+  border-radius: 0;
+  height: 100%;
+  max-height: 100%
+}
+.fd-input-group__addon--button .fd-input-group__button:nth-child(n+1) {
+  margin: 0
+}
+.fd-input-group__addon--button > * {
+  border-radius: 0
+}
+.fd-input-group__addon--button:first-child {
+  border-radius: .0625rem 0 0 .0625rem
+}
+.fd-input-group__addon--button:last-child {
+  border-radius: 0 .0625rem .0625rem 0
+}
+.fd-input-group__addon--button:not(:first-child):not(:last-child) .fd-input-group__button {
+  border-radius: 0
+}
+.fd-input-group__addon--button[dir=rtl]:first-child,
+[dir=rtl] .fd-input-group__addon--button:first-child {
+  border-radius: 0 .0625rem .0625rem 0;
+  margin-right: 0
+}
+.fd-input-group__addon--button[dir=rtl]:last-child,
+[dir=rtl] .fd-input-group__addon--button:last-child {
+  border-radius: .0625rem 0 0 .0625rem;
+  margin-left: 0
+}
+.fd-input-group__button {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: none;
+  width: 100%
+}
+.fd-input-group .fd-button.fd-input-group__button {
+  border-color: transparent
+}
+.fd-input-group--control .fd-input-group__button.is-expanded {
+  background-color: #91c8f6;
+  background-color: var(--sapButton_Active_Background,#91c8f6);
+  color: #29313a;
+  color: var(--sapButton_Active_TextColor,#29313a)
+}
+.fd-input-group--control .fd-input-group__button.is-expanded.is-focus,
+.fd-input-group--control .fd-input-group__button.is-expanded:focus {
+  outline-offset: -.1875rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #fff;
+  outline-color: var(--sapContent_FocusColor,#fff);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted);
+  outline-color: #000;
+  outline-color: var(--sapContent_ContrastFocusColor,#000)
+}
+.fd-input-group .fd-textarea {
+  resize: vertical
+}
+.fd-input-group.is-readonly,
+.fd-input-group[readonly] {
+  overflow: visible
+}

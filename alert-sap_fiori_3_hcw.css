@@ -1,0 +1,358 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+/*!
+.fd-alert+(--information, --success, --warning, --error, --no-icon)
+    .fd-alert__close
+*/
+.fd-alert {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  position: relative;
+  color: #000;
+  color: var(--sapTextColor,#000);
+  background-color: #fff;
+  background-color: var(--sapNeutralBackground,#fff);
+  border: 1px solid;
+  border-color: #000;
+  border-color: var(--sapNeutralBorderColor,#000);
+  border-radius: .25rem;
+  padding: .4375rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 2rem
+}
+.fd-alert::after,
+.fd-alert::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-alert .sap-icon--message-error,
+.fd-alert .sap-icon--message-information,
+.fd-alert .sap-icon--message-success,
+.fd-alert .sap-icon--message-warning {
+  display: none
+}
+.fd-alert__close {
+  position: absolute;
+  top: .125rem;
+  right: .125rem
+}
+.fd-alert__close::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+.fd-alert__close::before {
+  content: ""
+}
+.fd-alert__close[dir=rtl],
+[dir=rtl] .fd-alert__close {
+  left: .125rem;
+  right: auto
+}
+.fd-alert--dismissible {
+  padding-right: 2.5rem
+}
+.fd-alert--dismissible[dir=rtl],
+[dir=rtl] .fd-alert--dismissible {
+  padding-right: 1rem;
+  padding-left: 2.5rem
+}
+.fd-alert--error,
+.fd-alert--information,
+.fd-alert--success,
+.fd-alert--warning {
+  padding-left: 2.5rem
+}
+.fd-alert--error::after,
+.fd-alert--error::before,
+.fd-alert--information::after,
+.fd-alert--information::before,
+.fd-alert--success::after,
+.fd-alert--success::before,
+.fd-alert--warning::after,
+.fd-alert--warning::before {
+  position: absolute;
+  width: 2.5rem;
+  top: .4375rem;
+  left: 0
+}
+.fd-alert--error[dir=rtl],
+.fd-alert--information[dir=rtl],
+.fd-alert--success[dir=rtl],
+.fd-alert--warning[dir=rtl],
+[dir=rtl] .fd-alert--error,
+[dir=rtl] .fd-alert--information,
+[dir=rtl] .fd-alert--success,
+[dir=rtl] .fd-alert--warning {
+  padding-right: 2.5rem;
+  padding-left: 1rem
+}
+.fd-alert--error[dir=rtl]::before,
+.fd-alert--information[dir=rtl]::before,
+.fd-alert--success[dir=rtl]::before,
+.fd-alert--warning[dir=rtl]::before,
+[dir=rtl] .fd-alert--error::before,
+[dir=rtl] .fd-alert--information::before,
+[dir=rtl] .fd-alert--success::before,
+[dir=rtl] .fd-alert--warning::before {
+  display: none
+}
+.fd-alert--error[dir=rtl]::after,
+.fd-alert--information[dir=rtl]::after,
+.fd-alert--success[dir=rtl]::after,
+.fd-alert--warning[dir=rtl]::after,
+[dir=rtl] .fd-alert--error::after,
+[dir=rtl] .fd-alert--information::after,
+[dir=rtl] .fd-alert--success::after,
+[dir=rtl] .fd-alert--warning::after {
+  display: none
+}
+.fd-alert--error.fd-alert--dismissible,
+.fd-alert--information.fd-alert--dismissible,
+.fd-alert--success.fd-alert--dismissible,
+.fd-alert--warning.fd-alert--dismissible {
+  padding-right: 2.5rem
+}
+.fd-alert--error.fd-alert--dismissible[dir=rtl],
+.fd-alert--information.fd-alert--dismissible[dir=rtl],
+.fd-alert--success.fd-alert--dismissible[dir=rtl],
+.fd-alert--warning.fd-alert--dismissible[dir=rtl],
+[dir=rtl] .fd-alert--error.fd-alert--dismissible,
+[dir=rtl] .fd-alert--information.fd-alert--dismissible,
+[dir=rtl] .fd-alert--success.fd-alert--dismissible,
+[dir=rtl] .fd-alert--warning.fd-alert--dismissible {
+  padding-left: 2.5rem
+}
+.fd-alert--error[dir=rtl]::after,
+.fd-alert--information[dir=rtl]::after,
+.fd-alert--success[dir=rtl]::after,
+.fd-alert--warning[dir=rtl]::after,
+[dir=rtl] .fd-alert--error::after,
+[dir=rtl] .fd-alert--information::after,
+[dir=rtl] .fd-alert--success::after,
+[dir=rtl] .fd-alert--warning::after {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  right: 0
+}
+.fd-alert--warning {
+  background-color: #fff;
+  background-color: var(--sapWarningBackground,#fff);
+  border-color: #5c5c00;
+  border-color: var(--sapWarningBorderColor,#5c5c00)
+}
+.fd-alert--warning::after,
+.fd-alert--warning::before {
+  color: #5c5c00;
+  color: var(--sapWarningBorderColor,#5c5c00)
+}
+.fd-alert--warning::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+.fd-alert--warning::before {
+  content: ""
+}
+.fd-alert--warning[dir=rtl]::after,
+[dir=rtl] .fd-alert--warning::after {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+.fd-alert--warning[dir=rtl]::after,
+[dir=rtl] .fd-alert--warning::after {
+  content: ""
+}
+.fd-alert--error {
+  background-color: #fff;
+  background-color: var(--sapErrorBackground,#fff);
+  border-color: #ab0000;
+  border-color: var(--sapErrorBorderColor,#ab0000)
+}
+.fd-alert--error::after,
+.fd-alert--error::before {
+  color: #ab0000;
+  color: var(--sapErrorBorderColor,#ab0000)
+}
+.fd-alert--error::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+.fd-alert--error::before {
+  content: ""
+}
+.fd-alert--error[dir=rtl]::after,
+[dir=rtl] .fd-alert--error::after {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+.fd-alert--error[dir=rtl]::after,
+[dir=rtl] .fd-alert--error::after {
+  content: ""
+}
+.fd-alert--success {
+  background-color: #fff;
+  background-color: var(--sapSuccessBackground,#fff);
+  border-color: #006362;
+  border-color: var(--sapSuccessBorderColor,#006362)
+}
+.fd-alert--success::after,
+.fd-alert--success::before {
+  color: #006362;
+  color: var(--sapSuccessBorderColor,#006362)
+}
+.fd-alert--success::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+.fd-alert--success::before {
+  content: ""
+}
+.fd-alert--success[dir=rtl]::after,
+[dir=rtl] .fd-alert--success::after {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+.fd-alert--success[dir=rtl]::after,
+[dir=rtl] .fd-alert--success::after {
+  content: ""
+}
+.fd-alert--information {
+  background-color: #fff;
+  background-color: var(--sapInformationBackground,#fff);
+  border-color: #000;
+  border-color: var(--sapInformationBorderColor,#000)
+}
+.fd-alert--information::after,
+.fd-alert--information::before {
+  color: #000;
+  color: var(--sapInformationBorderColor,#000)
+}
+.fd-alert--information::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+.fd-alert--information::before {
+  content: ""
+}
+.fd-alert--information[dir=rtl]::after,
+[dir=rtl] .fd-alert--information::after {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+.fd-alert--information[dir=rtl]::after,
+[dir=rtl] .fd-alert--information::after {
+  content: ""
+}
+.fd-alert--no-icon {
+  padding-left: 1rem
+}
+.fd-alert--no-icon::before {
+  display: none
+}
+.fd-alert--no-icon[dir=rtl],
+[dir=rtl] .fd-alert--no-icon {
+  padding-right: 1rem
+}
+.fd-alert--no-icon[dir=rtl]::after,
+[dir=rtl] .fd-alert--no-icon::after {
+  display: none
+}
+.fd-alert__text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  line-height: 1rem
+}
+.fd-alert__text::after,
+.fd-alert__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}

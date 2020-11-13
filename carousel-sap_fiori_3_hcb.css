@@ -1,0 +1,344 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+.fd-carousel {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  min-width: 15.5rem;
+  max-width: 100%;
+  height: 100%
+}
+.fd-carousel::after,
+.fd-carousel::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-carousel__content {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 100%;
+  background: #000;
+  background: var(--sapBackgroundColor,#000);
+  position: relative
+}
+.fd-carousel__content::after,
+.fd-carousel__content::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-carousel__content .fd-carousel__button.fd-button {
+  -webkit-box-shadow: 0 0 1rem 0 rgba(255,255,255,.5),0 0 0 .125rem #fff;
+  -webkit-box-shadow: var(--sapContent_Shadow1,0 0 1rem 0 rgba(255,255,255,.5),0 0 0 .125rem #fff);
+  box-shadow: 0 0 1rem 0 rgba(255,255,255,.5),0 0 0 .125rem #fff;
+  box-shadow: var(--sapContent_Shadow1,0 0 1rem 0 rgba(255,255,255,.5),0 0 0 .125rem #fff);
+  position: absolute;
+  margin: 0;
+  top: calc(50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%)
+}
+.fd-carousel__content .fd-carousel__button.fd-button.fd-carousel__button--left {
+  left: .5rem
+}
+.fd-carousel__content .fd-carousel__button.fd-button.fd-carousel__button--left[dir=rtl],
+[dir=rtl] .fd-carousel__content .fd-carousel__button.fd-button.fd-carousel__button--left {
+  left: initial;
+  right: .5rem
+}
+.fd-carousel__content .fd-carousel__button.fd-button.fd-carousel__button--right {
+  right: .5rem
+}
+.fd-carousel__content .fd-carousel__button.fd-button.fd-carousel__button--right[dir=rtl],
+[dir=rtl] .fd-carousel__content .fd-carousel__button.fd-button.fd-carousel__button--right {
+  right: initial;
+  left: .5rem
+}
+.fd-carousel__item {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: none
+}
+.fd-carousel__item::after,
+.fd-carousel__item::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-carousel__item--active {
+  display: block
+}
+.fd-carousel__page-indicator-container {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 2.75rem;
+  max-height: 3.5rem;
+  background: #000;
+  background: var(--sapPageFooter_Background,#000);
+  padding: .375rem .5rem;
+  border-top: .0625rem solid #000;
+  border-top: .0625rem solid var(--sapPageFooter_BorderColor,#000)
+}
+.fd-carousel__page-indicator-container::after,
+.fd-carousel__page-indicator-container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-carousel__page-indicator-container:first-child {
+  border-top: none;
+  border-bottom: .0625rem solid #000;
+  border-bottom: .0625rem solid var(--sapPageFooter_BorderColor,#000)
+}
+.fd-carousel__page-indicators {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 9rem;
+  padding: .5rem
+}
+.fd-carousel__page-indicators::after,
+.fd-carousel__page-indicators::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-carousel__page-indicator {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  list-style-type: none;
+  margin: 0 .375rem;
+  width: .25rem;
+  height: .25rem;
+  border-radius: 50%;
+  background-color: #fff;
+  background-color: var(--sapContent_NonInteractiveIconColor,#fff)
+}
+.fd-carousel__page-indicator::after,
+.fd-carousel__page-indicator::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-carousel__page-indicator--active {
+  margin: 0 .25rem;
+  width: .5rem;
+  height: .5rem;
+  background-color: #0f5d94;
+  background-color: var(--sapSelectedColor,#0f5d94)
+}
+.fd-carousel__text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+  color: var(--sapPageFooter_TextColor,#fff);
+  text-align: center
+}
+.fd-carousel__text::after,
+.fd-carousel__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-carousel__button.fd-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 2.125rem;
+  min-width: 2.125rem;
+  max-width: 2.125rem;
+  height: 2.125rem;
+  min-height: 2.125rem;
+  max-height: 2.125rem;
+  border-radius: 50%;
+  padding: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin: .25rem
+}
+.fd-carousel__button.fd-button::before {
+  left: -.25rem;
+  right: -.25rem;
+  height: 2.625rem;
+  width: 2.625rem
+}
+.fd-carousel__button.fd-button[dir=rtl] > [class*=sap-icon],
+[dir=rtl] .fd-carousel__button.fd-button > [class*=sap-icon] {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
+.fd-carousel__button.fd-button.is-focus,
+.fd-carousel__button.fd-button:focus {
+  z-index: 5;
+  top: -.125rem;
+  bottom: -.125rem;
+  left: -.125rem;
+  right: -.125rem
+}
+.fd-carousel__button.fd-button.is-active::after,
+.fd-carousel__button.fd-button:active::after {
+  content: "";
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: .0625rem;
+  left: .0625rem;
+  right: .0625rem;
+  bottom: .0625rem;
+  border: .125rem dotted #fff;
+  border: var(--sapContent_FocusWidth,.125rem) dotted var(--sapContent_FocusColor,#fff);
+  top: -.125rem;
+  bottom: -.125rem;
+  left: -.125rem;
+  right: -.125rem
+}
+.fd-carousel--no-navigation .fd-carousel__button.fd-button {
+  display: none
+}

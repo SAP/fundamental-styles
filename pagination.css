@@ -1,0 +1,393 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+/*!
+.fd-pagination
+*/
+.fd-pagination {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem)
+}
+.fd-pagination::after,
+.fd-pagination::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-pagination__total {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  color: #6a6d70;
+  color: var(--sapContent_LabelColor,#6a6d70);
+  margin-right: .5rem
+}
+.fd-pagination__total::after,
+.fd-pagination__total::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-pagination__total[dir=rtl],
+[dir=rtl] .fd-pagination__total {
+  margin-right: 0;
+  margin-left: .5rem
+}
+.fd-pagination__nav {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none;
+  margin-bottom: 0
+}
+.fd-pagination__nav::after,
+.fd-pagination__nav::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-pagination__more {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0
+}
+.fd-pagination__more::after,
+.fd-pagination__more::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-pagination__more::before {
+  content: "...";
+  color: #6a6d70;
+  color: var(--sapContent_LabelColor,#6a6d70);
+  font-weight: 700
+}
+.fd-pagination__link {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: #0a6ed1;
+  color: var(--sapLinkColor,#0a6ed1);
+  text-decoration: none;
+  text-shadow: 0 0 .125rem #fff;
+  text-shadow: var(--sapContent_TextShadow,0 0 .125rem #fff);
+  display: inline-block;
+  -webkit-transition: all 125ms ease-in;
+  transition: all 125ms ease-in;
+  line-height: inherit;
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  background-color: transparent;
+  padding-left: .25rem;
+  padding-right: .25rem;
+  position: relative;
+  text-decoration: none
+}
+.fd-pagination__link::after,
+.fd-pagination__link::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-pagination__link--emphasized {
+  font-weight: 700
+}
+.fd-pagination__link:visited {
+  color: #0a6ed1;
+  color: var(--sapLink_Visited_Color,#0a6ed1)
+}
+.fd-pagination__link.is-hover,
+.fd-pagination__link:hover {
+  color: #0854a0;
+  color: var(--sapLink_Hover_Color,#0854a0);
+  text-decoration: underline
+}
+.fd-pagination__link.is-focus,
+.fd-pagination__link:focus {
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.0625rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-pagination__link.is-active,
+.fd-pagination__link:active {
+  color: #0a6ed1;
+  color: var(--sapLink_Active_Color,#0a6ed1)
+}
+.fd-pagination__link--inverted {
+  color: #d3e8fd;
+  color: var(--sapLink_InvertedColor,#d3e8fd);
+  text-shadow: none
+}
+.fd-pagination__link--inverted.is-hover,
+.fd-pagination__link--inverted:hover {
+  color: #d3e8fd;
+  color: var(--sapLink_InvertedColor,#d3e8fd)
+}
+.fd-pagination__link--subtle {
+  color: #074888;
+  color: var(--sapLink_SubtleColor,#074888)
+}
+.fd-pagination__link.is-disabled,
+.fd-pagination__link:disabled,
+.fd-pagination__link[aria-disabled=true] {
+  opacity: .4;
+  opacity: var(--sapContent_DisabledOpacity,.4);
+  color: #0a6ed1;
+  color: var(--sapLinkColor,#0a6ed1);
+  pointer-events: none
+}
+.fd-pagination__link.is-selected,
+.fd-pagination__link[aria-selected=true] {
+  color: #6a6d70;
+  color: var(--sapContent_LabelColor,#6a6d70);
+  text-decoration: none;
+  cursor: default;
+  font-weight: 700
+}
+.fd-pagination__link--next,
+.fd-pagination__link--previous {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: #0a6ed1;
+  color: var(--sapLinkColor,#0a6ed1);
+  text-decoration: none;
+  text-shadow: 0 0 .125rem #fff;
+  text-shadow: var(--sapContent_TextShadow,0 0 .125rem #fff);
+  display: inline-block;
+  -webkit-transition: all 125ms ease-in;
+  transition: all 125ms ease-in;
+  line-height: inherit;
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  padding-left: .5rem;
+  padding-right: .5rem
+}
+.fd-pagination__link--next::after,
+.fd-pagination__link--next::before,
+.fd-pagination__link--previous::after,
+.fd-pagination__link--previous::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-pagination__link--next--emphasized,
+.fd-pagination__link--previous--emphasized {
+  font-weight: 700
+}
+.fd-pagination__link--next:visited,
+.fd-pagination__link--previous:visited {
+  color: #0a6ed1;
+  color: var(--sapLink_Visited_Color,#0a6ed1)
+}
+.fd-pagination__link--next.is-hover,
+.fd-pagination__link--next:hover,
+.fd-pagination__link--previous.is-hover,
+.fd-pagination__link--previous:hover {
+  color: #0854a0;
+  color: var(--sapLink_Hover_Color,#0854a0);
+  text-decoration: underline
+}
+.fd-pagination__link--next.is-focus,
+.fd-pagination__link--next:focus,
+.fd-pagination__link--previous.is-focus,
+.fd-pagination__link--previous:focus {
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.0625rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-pagination__link--next.is-active,
+.fd-pagination__link--next:active,
+.fd-pagination__link--previous.is-active,
+.fd-pagination__link--previous:active {
+  color: #0a6ed1;
+  color: var(--sapLink_Active_Color,#0a6ed1)
+}
+.fd-pagination__link--next--inverted,
+.fd-pagination__link--previous--inverted {
+  color: #d3e8fd;
+  color: var(--sapLink_InvertedColor,#d3e8fd);
+  text-shadow: none
+}
+.fd-pagination__link--next--inverted.is-hover,
+.fd-pagination__link--next--inverted:hover,
+.fd-pagination__link--previous--inverted.is-hover,
+.fd-pagination__link--previous--inverted:hover {
+  color: #d3e8fd;
+  color: var(--sapLink_InvertedColor,#d3e8fd)
+}
+.fd-pagination__link--next--subtle,
+.fd-pagination__link--previous--subtle {
+  color: #074888;
+  color: var(--sapLink_SubtleColor,#074888)
+}
+.fd-pagination__link--next.is-disabled,
+.fd-pagination__link--next:disabled,
+.fd-pagination__link--next[aria-disabled=true],
+.fd-pagination__link--previous.is-disabled,
+.fd-pagination__link--previous:disabled,
+.fd-pagination__link--previous[aria-disabled=true] {
+  opacity: .4;
+  opacity: var(--sapContent_DisabledOpacity,.4);
+  color: #0a6ed1;
+  color: var(--sapLinkColor,#0a6ed1);
+  pointer-events: none
+}
+.fd-pagination__link--previous {
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem)
+}
+.fd-pagination__link--previous::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+.fd-pagination__link--previous::before {
+  content: ""
+}
+.fd-pagination__link--previous[dir=rtl]::before,
+[dir=rtl] .fd-pagination__link--previous::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+.fd-pagination__link--previous[dir=rtl]::before,
+[dir=rtl] .fd-pagination__link--previous::before {
+  content: ""
+}
+.fd-pagination__link--next {
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem)
+}
+.fd-pagination__link--next::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+.fd-pagination__link--next::before {
+  content: ""
+}
+.fd-pagination__link--next[dir=rtl]::before,
+[dir=rtl] .fd-pagination__link--next::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+.fd-pagination__link--next[dir=rtl]::before,
+[dir=rtl] .fd-pagination__link--next::before {
+  content: ""
+}

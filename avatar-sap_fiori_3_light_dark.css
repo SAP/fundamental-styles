@@ -1,0 +1,355 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+/*!
+.fd-avatar+((--circle), (--thumbnail), (--xxs|--xs|--s|--m|--l|--xl|--xxl), (--accent-color-{1-10}))
+  .fd-avatar__icon
+  .fd-avatar__zoom-icon
+*/
+[class*=fd-avatar] {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border: none;
+  border: var(--fdAvatar_Border,none);
+  color: #29313a;
+  color: var(--sapContent_ContrastTextColor,#29313a);
+  background-color: #6bd3ff;
+  background-color: var(--fdAvatar_BackgroundColor,var(--sapAccentColor6,#6bd3ff));
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem)
+}
+[class*=fd-avatar]::after,
+[class*=fd-avatar]::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-avatar__zoom-icon [class*=sap-icon],
+.fd-avatar__zoom-icon[class*=sap-icon] {
+  color: inherit;
+  background: inherit;
+  font-size: inherit;
+  border-radius: inherit;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  color: #fff;
+  color: var(--sapButton_Emphasized_TextColor,#fff);
+  background-color: #1b8dec;
+  background-color: var(--sapButton_Emphasized_Background,#1b8dec);
+  border-radius: 50%;
+  border: .0625rem solid #1b8dec;
+  border: .0625rem solid var(--sapButton_Emphasized_BorderColor,#1b8dec)
+}
+.fd-avatar__icon [class*=sap-icon],
+.fd-avatar__icon[class*=sap-icon] {
+  color: inherit;
+  background: inherit;
+  font-size: inherit;
+  border-radius: inherit;
+  line-height: 1
+}
+.fd-avatar--circle {
+  border-radius: 50%
+}
+.fd-avatar--circle .fd-avatar__zoom-icon [class*=sap-icon],
+.fd-avatar--circle .fd-avatar__zoom-icon[class*=sap-icon] {
+  bottom: 0;
+  right: 0
+}
+.fd-avatar--circle .fd-avatar__zoom-icon [class*=sap-icon][dir=rtl],
+.fd-avatar--circle .fd-avatar__zoom-icon[class*=sap-icon][dir=rtl],
+[dir=rtl] .fd-avatar--circle .fd-avatar__zoom-icon [class*=sap-icon],
+[dir=rtl] .fd-avatar--circle .fd-avatar__zoom-icon[class*=sap-icon] {
+  right: auto;
+  left: 0
+}
+.fd-avatar--transparent {
+  background-color: transparent;
+  background-color: var(--fdAvatar-Transparent_BackgroundColor,transparent);
+  color: #91c8f6;
+  color: var(--sapContent_IconColor,#91c8f6)
+}
+.fd-avatar--placeholder {
+  background-color: #687d94;
+  background-color: var(--sapContent_ImagePlaceholderBackground,#687d94)
+}
+.fd-avatar--tile {
+  background-color: #89a3bd;
+  background-color: var(--fdAvatar_Tile_BackgroundColor,var(--sapTile_IconColor,#89a3bd))
+}
+.fd-avatar--border {
+  border: .0625rem solid #3e4a58;
+  border: .0625rem solid var(--sapGroup_ContentBorderColor,#3e4a58)
+}
+.fd-avatar--accent-color-1 {
+  background-color: #ffc847;
+  background-color: var(--sapAccentColor1,#ffc847);
+  color: #29313a;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-avatar--accent-color-2 {
+  background-color: #e7a1a1;
+  background-color: var(--sapAccentColor2,#e7a1a1);
+  color: #29313a;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-avatar--accent-color-3 {
+  background-color: #f37aa2;
+  background-color: var(--sapAccentColor3,#f37aa2);
+  color: #29313a;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-avatar--accent-color-4 {
+  background-color: #e269c9;
+  background-color: var(--sapAccentColor4,#e269c9);
+  color: #29313a;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-avatar--accent-color-5 {
+  background-color: #8ca7d5;
+  background-color: var(--sapAccentColor5,#8ca7d5);
+  color: #29313a;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-avatar--accent-color-6 {
+  background-color: #6bd3ff;
+  background-color: var(--sapAccentColor6,#6bd3ff);
+  color: #29313a;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-avatar--accent-color-7 {
+  background-color: #7fc6c6;
+  background-color: var(--sapAccentColor7,#7fc6c6);
+  color: #29313a;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-avatar--accent-color-8 {
+  background-color: #b2e484;
+  background-color: var(--sapAccentColor8,#b2e484);
+  color: #29313a;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-avatar--accent-color-9 {
+  background-color: #b995e0;
+  background-color: var(--sapAccentColor9,#b995e0);
+  color: #29313a;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-avatar--accent-color-10 {
+  background-color: #b0bcc5;
+  background-color: var(--sapAccentColor10,#b0bcc5);
+  color: #29313a;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-avatar--xs {
+  padding: 0;
+  margin: 0;
+  width: 2rem;
+  height: 2rem;
+  max-width: 2rem;
+  max-height: 2rem;
+  min-width: 2rem;
+  min-height: 2rem;
+  font-size: 1rem;
+  font-stretch: condensed;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+.fd-avatar--xs .fd-avatar__zoom-icon [class*=sap-icon],
+.fd-avatar--xs .fd-avatar__zoom-icon[class*=sap-icon] {
+  font-size: .75rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  bottom: -.125rem;
+  right: -.125rem
+}
+.fd-avatar--xs .fd-avatar__zoom-icon [class*=sap-icon][dir=rtl],
+.fd-avatar--xs .fd-avatar__zoom-icon[class*=sap-icon][dir=rtl],
+[dir=rtl] .fd-avatar--xs .fd-avatar__zoom-icon [class*=sap-icon],
+[dir=rtl] .fd-avatar--xs .fd-avatar__zoom-icon[class*=sap-icon] {
+  right: auto;
+  left: -.125rem
+}
+.fd-avatar--s {
+  padding: 0;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  max-width: 3rem;
+  max-height: 3rem;
+  min-width: 3rem;
+  min-height: 3rem;
+  font-size: 1.125rem;
+  font-stretch: condensed;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+.fd-avatar--s .fd-avatar__zoom-icon [class*=sap-icon],
+.fd-avatar--s .fd-avatar__zoom-icon[class*=sap-icon] {
+  font-size: .75rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  bottom: -.125rem;
+  right: -.125rem
+}
+.fd-avatar--s .fd-avatar__zoom-icon [class*=sap-icon][dir=rtl],
+.fd-avatar--s .fd-avatar__zoom-icon[class*=sap-icon][dir=rtl],
+[dir=rtl] .fd-avatar--s .fd-avatar__zoom-icon [class*=sap-icon],
+[dir=rtl] .fd-avatar--s .fd-avatar__zoom-icon[class*=sap-icon] {
+  right: auto;
+  left: -.125rem
+}
+.fd-avatar--m {
+  padding: 0;
+  margin: 0;
+  width: 4rem;
+  height: 4rem;
+  max-width: 4rem;
+  max-height: 4rem;
+  min-width: 4rem;
+  min-height: 4rem;
+  font-size: 1.5rem;
+  font-stretch: normal;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+.fd-avatar--m .fd-avatar__zoom-icon [class*=sap-icon],
+.fd-avatar--m .fd-avatar__zoom-icon[class*=sap-icon] {
+  font-size: .75rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  bottom: -.125rem;
+  right: -.125rem
+}
+.fd-avatar--m .fd-avatar__zoom-icon [class*=sap-icon][dir=rtl],
+.fd-avatar--m .fd-avatar__zoom-icon[class*=sap-icon][dir=rtl],
+[dir=rtl] .fd-avatar--m .fd-avatar__zoom-icon [class*=sap-icon],
+[dir=rtl] .fd-avatar--m .fd-avatar__zoom-icon[class*=sap-icon] {
+  right: auto;
+  left: -.125rem
+}
+.fd-avatar--l {
+  padding: 0;
+  margin: 0;
+  width: 5rem;
+  height: 5rem;
+  max-width: 5rem;
+  max-height: 5rem;
+  min-width: 5rem;
+  min-height: 5rem;
+  font-size: 2.25rem;
+  font-stretch: normal;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+.fd-avatar--l .fd-avatar__zoom-icon [class*=sap-icon],
+.fd-avatar--l .fd-avatar__zoom-icon[class*=sap-icon] {
+  font-size: .875rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  bottom: -.1875rem;
+  right: -.1875rem
+}
+.fd-avatar--l .fd-avatar__zoom-icon [class*=sap-icon][dir=rtl],
+.fd-avatar--l .fd-avatar__zoom-icon[class*=sap-icon][dir=rtl],
+[dir=rtl] .fd-avatar--l .fd-avatar__zoom-icon [class*=sap-icon],
+[dir=rtl] .fd-avatar--l .fd-avatar__zoom-icon[class*=sap-icon] {
+  right: auto;
+  left: -.1875rem
+}
+.fd-avatar--xl {
+  padding: 0;
+  margin: 0;
+  width: 7rem;
+  height: 7rem;
+  max-width: 7rem;
+  max-height: 7rem;
+  min-width: 7rem;
+  min-height: 7rem;
+  font-size: 3rem;
+  font-stretch: normal;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+.fd-avatar--xl .fd-avatar__zoom-icon [class*=sap-icon],
+.fd-avatar--xl .fd-avatar__zoom-icon[class*=sap-icon] {
+  font-size: 1rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  bottom: -.25rem;
+  right: -.25rem
+}
+.fd-avatar--xl .fd-avatar__zoom-icon [class*=sap-icon][dir=rtl],
+.fd-avatar--xl .fd-avatar__zoom-icon[class*=sap-icon][dir=rtl],
+[dir=rtl] .fd-avatar--xl .fd-avatar__zoom-icon [class*=sap-icon],
+[dir=rtl] .fd-avatar--xl .fd-avatar__zoom-icon[class*=sap-icon] {
+  right: auto;
+  left: -.25rem
+}

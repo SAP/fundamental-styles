@@ -1,0 +1,1096 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+/*!
+.fd-calendar+(--compact, --mobile-landscape, --mobile-portrait)
+    .fd-calendar__header
+      .fd-calendar__navigation(--main-navigation)
+        .fd-calendar__action(+[--arrow-left, --arrow-right])
+        .fd-calendar__close-button--navigation
+    .fd-calendar__content(+[--months, --years])
+        .fd-calendar__table
+          .fd-calendar__group
+            .fd-calendar__row
+              .fd-calendar__item(+[--other-month, --current, --side-helper, --weekend, --range],
+                                 +[(.is-disabled | [aria-disabled=true]), (.is-focus | [aria-focus=true]), (.is-active | [aria-active=true])])
+              .fd-calendar__special-day(+[--1, --2, ..., --19, --20])
+                .fd-calendar__text
+*/
+.fd-calendar__item,
+.fd-calendar__item--side-helper {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  overflow: hidden;
+  position: relative;
+  height: 2.75rem;
+  margin: .0625rem;
+  min-width: 2.125rem;
+  border-radius: .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  background-color: #2e2e2e;
+  background-color: var(--sapLegend_WorkingBackground,#2e2e2e);
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 .375rem;
+  flex: 1 1 .375rem
+}
+.fd-calendar__item--side-helper::after,
+.fd-calendar__item--side-helper::before,
+.fd-calendar__item::after,
+.fd-calendar__item::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-calendar__item--side-helper:hover,
+.fd-calendar__item:hover,
+.is-hover.fd-calendar__item,
+.is-hover.fd-calendar__item--side-helper {
+  cursor: default;
+  background-color: #7a5100;
+  background-color: var(--sapList_Hover_Background,#7a5100)
+}
+.fd-calendar__item--side-helper {
+  -ms-flex-item-align: center;
+  align-self: center;
+  pointer-events: none;
+  height: 1.875rem;
+  background-color: #000;
+  background-color: var(--sapList_Background,#000)
+}
+.fd-calendar__item--other-month {
+  background-color: #000;
+  background-color: var(--sapList_Background,#000)
+}
+.fd-calendar__item--other-month:hover,
+.is-hover.fd-calendar__item--other-month {
+  background-color: #7a5100;
+  background-color: var(--sapList_Hover_Background,#7a5100)
+}
+.fd-calendar__item--weekend {
+  background-color: #4d4d4d;
+  background-color: var(--sapLegend_NonWorkingBackground,#4d4d4d)
+}
+.fd-calendar__item--weekend:hover,
+.is-hover.fd-calendar__item--weekend {
+  background-color: #7a5100;
+  background-color: var(--sapList_Hover_Background,#7a5100)
+}
+.fd-calendar__item--current,
+.fd-calendar__item--range.fd-calendar__item--current {
+  border: solid medium #e269c9!important;
+  border: solid medium var(--sapLegend_CurrentDateTime,#e269c9)!important
+}
+.fd-calendar__item.is-active,
+.fd-calendar__item:active {
+  background-color: #0f5d94;
+  background-color: var(--sapContent_Selected_Background,#0f5d94);
+  border: solid .0625rem #fff;
+  border: var(--fdCalendar_Active_Item_Border,solid .0625rem var(--sapList_SelectionBorderColor,#fff))
+}
+.fd-calendar__item.is-active:hover,
+.fd-calendar__item:hover:active,
+.is-hover.fd-calendar__item.is-active,
+.is-hover.fd-calendar__item:active {
+  background-color: #7a5100;
+  background-color: var(--sapContent_Selected_Hover_Background,#7a5100)
+}
+.fd-calendar__item.is-active:focus,
+.fd-calendar__item:focus:active,
+.is-focus.fd-calendar__item.is-active,
+.is-focus.fd-calendar__item:active {
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+}
+.fd-calendar__item--range {
+  border: solid .0625rem #fff;
+  border: solid .0625rem var(--sapList_SelectionBorderColor,#fff);
+  background-color: #0f5d94;
+  background-color: var(--sapList_SelectionBackgroundColor,#0f5d94)
+}
+.fd-calendar__item--range:hover,
+.is-hover.fd-calendar__item--range {
+  background-color: #7a5100;
+  background-color: var(--sapList_Hover_SelectionBackground,#7a5100)
+}
+.fd-calendar__item.is-disabled,
+.fd-calendar__item:disabled,
+.fd-calendar__item[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4
+}
+.fd-calendar__item.is-disabled:hover,
+.fd-calendar__item:hover:disabled,
+.fd-calendar__item:hover[aria-disabled=true] {
+  cursor: not-allowed
+}
+.fd-calendar__item.is-focus,
+.fd-calendar__item:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.1875rem;
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #fff;
+  outline-color: var(--sapContent_FocusColor,#fff);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-calendar__text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-size: var(--sapFontMediumSize);
+  text-shadow: 0 0 .125rem #000;
+  text-shadow: var(--fdCalendar_Text_Shadow,0 0 .125rem #000)
+}
+.fd-calendar__text::after,
+.fd-calendar__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-calendar {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 20rem;
+  padding: 1rem;
+  background-color: #000;
+  background-color: var(--sapList_Background,#000);
+  border-radius: .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem)
+}
+.fd-calendar::after,
+.fd-calendar::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-calendar__header {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+.fd-calendar__header::after,
+.fd-calendar__header::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-calendar__navigation {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: .25rem;
+  padding-bottom: .25rem
+}
+.fd-calendar__navigation::after,
+.fd-calendar__navigation::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-calendar__action {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1
+}
+.fd-calendar__action::after,
+.fd-calendar__action::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-calendar__action:not(:last-child):not(:first-child) {
+  margin-left: .25rem;
+  margin-right: .25rem
+}
+.fd-calendar__action:first-child {
+  margin-right: .25rem
+}
+.fd-calendar__action:last-child {
+  margin-left: .25rem
+}
+.fd-calendar__action > [type=button] {
+  width: 100%
+}
+.fd-calendar__action--arrow-left,
+.fd-calendar__action--arrow-right {
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0
+}
+.fd-calendar__action [class*=sap-icon][dir=rtl],
+[dir=rtl] .fd-calendar__action [class*=sap-icon] {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1)
+}
+.fd-calendar__content {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0
+}
+.fd-calendar__content::after,
+.fd-calendar__content::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-calendar__content--months,
+.fd-calendar__content--years {
+  padding-top: 1.875rem
+}
+.fd-calendar__content--screen-reader-only {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  border: 0;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap
+}
+.fd-calendar__table {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  display: table;
+  border-spacing: 0
+}
+.fd-calendar__table::after,
+.fd-calendar__table::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-calendar__group {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: table-row-group
+}
+.fd-calendar__group::after,
+.fd-calendar__group::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-calendar__row {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.fd-calendar__row::after,
+.fd-calendar__row::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-calendar__item {
+  display: inline-block
+}
+.fd-calendar__item--side-helper .fd-calendar__text {
+  color: #fff;
+  color: var(--sapContent_LabelColor,#fff);
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem)
+}
+.fd-calendar__item--other-month .fd-calendar__text {
+  color: #fff;
+  color: var(--sapContent_LabelColor,#fff)
+}
+.fd-calendar__item--current .fd-calendar__text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border: .0625rem solid #000;
+  border: .0625rem solid var(--sapList_Background,#000);
+  border-radius: calc(.25rem/ 2);
+  border-radius: calc(var(--sapElement_BorderCornerRadius,.25rem)/ 2)
+}
+.fd-calendar__item.is-active .fd-calendar__text,
+.fd-calendar__item:active .fd-calendar__text {
+  color: #fff;
+  color: var(--sapContent_Selected_TextColor,#fff)
+}
+.fd-calendar__item.is-focus,
+.fd-calendar__item:focus {
+  z-index: 5
+}
+.fd-calendar__text:active {
+  background-color: #0f5d94;
+  background-color: var(--sapContent_Selected_Background,#0f5d94);
+  color: #fff;
+  color: var(--sapContent_Selected_TextColor,#fff)
+}
+.fd-calendar__special-day--1 .fd-calendar__text::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: .25rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #ffc847;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor1,#ffc847);
+  box-shadow: inset 0 -.25rem 0 #ffc847;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor1,#ffc847)
+}
+.fd-calendar__special-day--1.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--1:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #ffc847,inset 0 -.33rem 0 #000;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor1,#ffc847),inset 0 -.33rem 0 var(--sapList_Background,#000);
+  box-shadow: inset 0 -.25rem 0 #ffc847,inset 0 -.33rem 0 #000;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor1,#ffc847),inset 0 -.33rem 0 var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--1.fd-calendar__item--current.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--1.fd-calendar__item--current:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.1875rem 0 #ffc847,inset 0 -.25rem #000;
+  -webkit-box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor1,#ffc847),inset 0 -.25rem var(--sapList_Background,#000);
+  box-shadow: inset 0 -.1875rem 0 #ffc847,inset 0 -.25rem #000;
+  box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor1,#ffc847),inset 0 -.25rem var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--2 .fd-calendar__text::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: .25rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #ed884a;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor2,#ed884a);
+  box-shadow: inset 0 -.25rem 0 #ed884a;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor2,#ed884a)
+}
+.fd-calendar__special-day--2.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--2:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #ed884a,inset 0 -.33rem 0 #000;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor2,#ed884a),inset 0 -.33rem 0 var(--sapList_Background,#000);
+  box-shadow: inset 0 -.25rem 0 #ed884a,inset 0 -.33rem 0 #000;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor2,#ed884a),inset 0 -.33rem 0 var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--2.fd-calendar__item--current.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--2.fd-calendar__item--current:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.1875rem 0 #ed884a,inset 0 -.25rem #000;
+  -webkit-box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor2,#ed884a),inset 0 -.25rem var(--sapList_Background,#000);
+  box-shadow: inset 0 -.1875rem 0 #ed884a,inset 0 -.25rem #000;
+  box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor2,#ed884a),inset 0 -.25rem var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--3 .fd-calendar__text::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: .25rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #db9292;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor3,#db9292);
+  box-shadow: inset 0 -.25rem 0 #db9292;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor3,#db9292)
+}
+.fd-calendar__special-day--3.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--3:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #db9292,inset 0 -.33rem 0 #000;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor3,#db9292),inset 0 -.33rem 0 var(--sapList_Background,#000);
+  box-shadow: inset 0 -.25rem 0 #db9292,inset 0 -.33rem 0 #000;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor3,#db9292),inset 0 -.33rem 0 var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--3.fd-calendar__item--current.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--3.fd-calendar__item--current:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.1875rem 0 #db9292,inset 0 -.25rem #000;
+  -webkit-box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor3,#db9292),inset 0 -.25rem var(--sapList_Background,#000);
+  box-shadow: inset 0 -.1875rem 0 #db9292,inset 0 -.25rem #000;
+  box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor3,#db9292),inset 0 -.25rem var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--4 .fd-calendar__text::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: .25rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #ff741f;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor4,#ff741f);
+  box-shadow: inset 0 -.25rem 0 #ff741f;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor4,#ff741f)
+}
+.fd-calendar__special-day--4.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--4:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #ff741f,inset 0 -.33rem 0 #000;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor4,#ff741f),inset 0 -.33rem 0 var(--sapList_Background,#000);
+  box-shadow: inset 0 -.25rem 0 #ff741f,inset 0 -.33rem 0 #000;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor4,#ff741f),inset 0 -.33rem 0 var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--4.fd-calendar__item--current.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--4.fd-calendar__item--current:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.1875rem 0 #ff741f,inset 0 -.25rem #000;
+  -webkit-box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor4,#ff741f),inset 0 -.25rem var(--sapList_Background,#000);
+  box-shadow: inset 0 -.1875rem 0 #ff741f,inset 0 -.25rem #000;
+  box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor4,#ff741f),inset 0 -.25rem var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--5 .fd-calendar__text::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: .25rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #e269c9;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor5,#e269c9);
+  box-shadow: inset 0 -.25rem 0 #e269c9;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor5,#e269c9)
+}
+.fd-calendar__special-day--5.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--5:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #e269c9,inset 0 -.33rem 0 #000;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor5,#e269c9),inset 0 -.33rem 0 var(--sapList_Background,#000);
+  box-shadow: inset 0 -.25rem 0 #e269c9,inset 0 -.33rem 0 #000;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor5,#e269c9),inset 0 -.33rem 0 var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--5.fd-calendar__item--current.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--5.fd-calendar__item--current:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.1875rem 0 #e269c9,inset 0 -.25rem #000;
+  -webkit-box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor5,#e269c9),inset 0 -.25rem var(--sapList_Background,#000);
+  box-shadow: inset 0 -.1875rem 0 #e269c9,inset 0 -.25rem #000;
+  box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor5,#e269c9),inset 0 -.25rem var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--6 .fd-calendar__text::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: .25rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #6bd3ff;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor6,#6bd3ff);
+  box-shadow: inset 0 -.25rem 0 #6bd3ff;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor6,#6bd3ff)
+}
+.fd-calendar__special-day--6.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--6:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #6bd3ff,inset 0 -.33rem 0 #000;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor6,#6bd3ff),inset 0 -.33rem 0 var(--sapList_Background,#000);
+  box-shadow: inset 0 -.25rem 0 #6bd3ff,inset 0 -.33rem 0 #000;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor6,#6bd3ff),inset 0 -.33rem 0 var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--6.fd-calendar__item--current.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--6.fd-calendar__item--current:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.1875rem 0 #6bd3ff,inset 0 -.25rem #000;
+  -webkit-box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor6,#6bd3ff),inset 0 -.25rem var(--sapList_Background,#000);
+  box-shadow: inset 0 -.1875rem 0 #6bd3ff,inset 0 -.25rem #000;
+  box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor6,#6bd3ff),inset 0 -.25rem var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--7 .fd-calendar__text::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: .25rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #7fc6c6;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor7,#7fc6c6);
+  box-shadow: inset 0 -.25rem 0 #7fc6c6;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor7,#7fc6c6)
+}
+.fd-calendar__special-day--7.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--7:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #7fc6c6,inset 0 -.33rem 0 #000;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor7,#7fc6c6),inset 0 -.33rem 0 var(--sapList_Background,#000);
+  box-shadow: inset 0 -.25rem 0 #7fc6c6,inset 0 -.33rem 0 #000;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor7,#7fc6c6),inset 0 -.33rem 0 var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--7.fd-calendar__item--current.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--7.fd-calendar__item--current:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.1875rem 0 #7fc6c6,inset 0 -.25rem #000;
+  -webkit-box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor7,#7fc6c6),inset 0 -.25rem var(--sapList_Background,#000);
+  box-shadow: inset 0 -.1875rem 0 #7fc6c6,inset 0 -.25rem #000;
+  box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor7,#7fc6c6),inset 0 -.25rem var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--8 .fd-calendar__text::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: .25rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #b2e484;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor8,#b2e484);
+  box-shadow: inset 0 -.25rem 0 #b2e484;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor8,#b2e484)
+}
+.fd-calendar__special-day--8.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--8:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #b2e484,inset 0 -.33rem 0 #000;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor8,#b2e484),inset 0 -.33rem 0 var(--sapList_Background,#000);
+  box-shadow: inset 0 -.25rem 0 #b2e484,inset 0 -.33rem 0 #000;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor8,#b2e484),inset 0 -.33rem 0 var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--8.fd-calendar__item--current.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--8.fd-calendar__item--current:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.1875rem 0 #b2e484,inset 0 -.25rem #000;
+  -webkit-box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor8,#b2e484),inset 0 -.25rem var(--sapList_Background,#000);
+  box-shadow: inset 0 -.1875rem 0 #b2e484,inset 0 -.25rem #000;
+  box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor8,#b2e484),inset 0 -.25rem var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--9 .fd-calendar__text::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: .25rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #b0bcc5;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor9,#b0bcc5);
+  box-shadow: inset 0 -.25rem 0 #b0bcc5;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor9,#b0bcc5)
+}
+.fd-calendar__special-day--9.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--9:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #b0bcc5,inset 0 -.33rem 0 #000;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor9,#b0bcc5),inset 0 -.33rem 0 var(--sapList_Background,#000);
+  box-shadow: inset 0 -.25rem 0 #b0bcc5,inset 0 -.33rem 0 #000;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor9,#b0bcc5),inset 0 -.33rem 0 var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--9.fd-calendar__item--current.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--9.fd-calendar__item--current:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.1875rem 0 #b0bcc5,inset 0 -.25rem #000;
+  -webkit-box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor9,#b0bcc5),inset 0 -.25rem var(--sapList_Background,#000);
+  box-shadow: inset 0 -.1875rem 0 #b0bcc5,inset 0 -.25rem #000;
+  box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor9,#b0bcc5),inset 0 -.25rem var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--10 .fd-calendar__text::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: .25rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #bb86b0;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor10,#bb86b0);
+  box-shadow: inset 0 -.25rem 0 #bb86b0;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor10,#bb86b0)
+}
+.fd-calendar__special-day--10.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--10:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #bb86b0,inset 0 -.33rem 0 #000;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor10,#bb86b0),inset 0 -.33rem 0 var(--sapList_Background,#000);
+  box-shadow: inset 0 -.25rem 0 #bb86b0,inset 0 -.33rem 0 #000;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor10,#bb86b0),inset 0 -.33rem 0 var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--10.fd-calendar__item--current.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--10.fd-calendar__item--current:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.1875rem 0 #bb86b0,inset 0 -.25rem #000;
+  -webkit-box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor10,#bb86b0),inset 0 -.25rem var(--sapList_Background,#000);
+  box-shadow: inset 0 -.1875rem 0 #bb86b0,inset 0 -.25rem #000;
+  box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor10,#bb86b0),inset 0 -.25rem var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--11 .fd-calendar__text::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: .25rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #ffe6ad;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor11,#ffe6ad);
+  box-shadow: inset 0 -.25rem 0 #ffe6ad;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor11,#ffe6ad)
+}
+.fd-calendar__special-day--11.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--11:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #ffe6ad,inset 0 -.33rem 0 #000;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor11,#ffe6ad),inset 0 -.33rem 0 var(--sapList_Background,#000);
+  box-shadow: inset 0 -.25rem 0 #ffe6ad,inset 0 -.33rem 0 #000;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor11,#ffe6ad),inset 0 -.33rem 0 var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--11.fd-calendar__item--current.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--11.fd-calendar__item--current:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.1875rem 0 #ffe6ad,inset 0 -.25rem #000;
+  -webkit-box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor11,#ffe6ad),inset 0 -.25rem var(--sapList_Background,#000);
+  box-shadow: inset 0 -.1875rem 0 #ffe6ad,inset 0 -.25rem #000;
+  box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor11,#ffe6ad),inset 0 -.25rem var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--12 .fd-calendar__text::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: .25rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #cdaf9d;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor12,#cdaf9d);
+  box-shadow: inset 0 -.25rem 0 #cdaf9d;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor12,#cdaf9d)
+}
+.fd-calendar__special-day--12.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--12:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #cdaf9d,inset 0 -.33rem 0 #000;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor12,#cdaf9d),inset 0 -.33rem 0 var(--sapList_Background,#000);
+  box-shadow: inset 0 -.25rem 0 #cdaf9d,inset 0 -.33rem 0 #000;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor12,#cdaf9d),inset 0 -.33rem 0 var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--12.fd-calendar__item--current.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--12.fd-calendar__item--current:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.1875rem 0 #cdaf9d,inset 0 -.25rem #000;
+  -webkit-box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor12,#cdaf9d),inset 0 -.25rem var(--sapList_Background,#000);
+  box-shadow: inset 0 -.1875rem 0 #cdaf9d,inset 0 -.25rem #000;
+  box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor12,#cdaf9d),inset 0 -.25rem var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--13 .fd-calendar__text::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: .25rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #ff8787;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor13,#ff8787);
+  box-shadow: inset 0 -.25rem 0 #ff8787;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor13,#ff8787)
+}
+.fd-calendar__special-day--13.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--13:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #ff8787,inset 0 -.33rem 0 #000;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor13,#ff8787),inset 0 -.33rem 0 var(--sapList_Background,#000);
+  box-shadow: inset 0 -.25rem 0 #ff8787,inset 0 -.33rem 0 #000;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor13,#ff8787),inset 0 -.33rem 0 var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--13.fd-calendar__item--current.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--13.fd-calendar__item--current:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.1875rem 0 #ff8787,inset 0 -.25rem #000;
+  -webkit-box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor13,#ff8787),inset 0 -.25rem var(--sapList_Background,#000);
+  box-shadow: inset 0 -.1875rem 0 #ff8787,inset 0 -.25rem #000;
+  box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor13,#ff8787),inset 0 -.25rem var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--14 .fd-calendar__text::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: .25rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #ffb385;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor14,#ffb385);
+  box-shadow: inset 0 -.25rem 0 #ffb385;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor14,#ffb385)
+}
+.fd-calendar__special-day--14.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--14:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #ffb385,inset 0 -.33rem 0 #000;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor14,#ffb385),inset 0 -.33rem 0 var(--sapList_Background,#000);
+  box-shadow: inset 0 -.25rem 0 #ffb385,inset 0 -.33rem 0 #000;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor14,#ffb385),inset 0 -.33rem 0 var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--14.fd-calendar__item--current.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--14.fd-calendar__item--current:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.1875rem 0 #ffb385,inset 0 -.25rem #000;
+  -webkit-box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor14,#ffb385),inset 0 -.25rem var(--sapList_Background,#000);
+  box-shadow: inset 0 -.1875rem 0 #ffb385,inset 0 -.25rem #000;
+  box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor14,#ffb385),inset 0 -.25rem var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--15 .fd-calendar__text::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: .25rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #ffb2ef;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor15,#ffb2ef);
+  box-shadow: inset 0 -.25rem 0 #ffb2ef;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor15,#ffb2ef)
+}
+.fd-calendar__special-day--15.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--15:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #ffb2ef,inset 0 -.33rem 0 #000;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor15,#ffb2ef),inset 0 -.33rem 0 var(--sapList_Background,#000);
+  box-shadow: inset 0 -.25rem 0 #ffb2ef,inset 0 -.33rem 0 #000;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor15,#ffb2ef),inset 0 -.33rem 0 var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--15.fd-calendar__item--current.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--15.fd-calendar__item--current:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.1875rem 0 #ffb2ef,inset 0 -.25rem #000;
+  -webkit-box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor15,#ffb2ef),inset 0 -.25rem var(--sapList_Background,#000);
+  box-shadow: inset 0 -.1875rem 0 #ffb2ef,inset 0 -.25rem #000;
+  box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor15,#ffb2ef),inset 0 -.25rem var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--16 .fd-calendar__text::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: .25rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #9cabc5;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor16,#9cabc5);
+  box-shadow: inset 0 -.25rem 0 #9cabc5;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor16,#9cabc5)
+}
+.fd-calendar__special-day--16.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--16:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #9cabc5,inset 0 -.33rem 0 #000;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor16,#9cabc5),inset 0 -.33rem 0 var(--sapList_Background,#000);
+  box-shadow: inset 0 -.25rem 0 #9cabc5,inset 0 -.33rem 0 #000;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor16,#9cabc5),inset 0 -.33rem 0 var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--16.fd-calendar__item--current.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--16.fd-calendar__item--current:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.1875rem 0 #9cabc5,inset 0 -.25rem #000;
+  -webkit-box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor16,#9cabc5),inset 0 -.25rem var(--sapList_Background,#000);
+  box-shadow: inset 0 -.1875rem 0 #9cabc5,inset 0 -.25rem #000;
+  box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor16,#9cabc5),inset 0 -.25rem var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--17 .fd-calendar__text::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: .25rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #a4eeee;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor17,#a4eeee);
+  box-shadow: inset 0 -.25rem 0 #a4eeee;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor17,#a4eeee)
+}
+.fd-calendar__special-day--17.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--17:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #a4eeee,inset 0 -.33rem 0 #000;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor17,#a4eeee),inset 0 -.33rem 0 var(--sapList_Background,#000);
+  box-shadow: inset 0 -.25rem 0 #a4eeee,inset 0 -.33rem 0 #000;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor17,#a4eeee),inset 0 -.33rem 0 var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--17.fd-calendar__item--current.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--17.fd-calendar__item--current:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.1875rem 0 #a4eeee,inset 0 -.25rem #000;
+  -webkit-box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor17,#a4eeee),inset 0 -.25rem var(--sapList_Background,#000);
+  box-shadow: inset 0 -.1875rem 0 #a4eeee,inset 0 -.25rem #000;
+  box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor17,#a4eeee),inset 0 -.25rem var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--18 .fd-calendar__text::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: .25rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #8d9e7e;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor18,#8d9e7e);
+  box-shadow: inset 0 -.25rem 0 #8d9e7e;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor18,#8d9e7e)
+}
+.fd-calendar__special-day--18.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--18:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #8d9e7e,inset 0 -.33rem 0 #000;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor18,#8d9e7e),inset 0 -.33rem 0 var(--sapList_Background,#000);
+  box-shadow: inset 0 -.25rem 0 #8d9e7e,inset 0 -.33rem 0 #000;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor18,#8d9e7e),inset 0 -.33rem 0 var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--18.fd-calendar__item--current.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--18.fd-calendar__item--current:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.1875rem 0 #8d9e7e,inset 0 -.25rem #000;
+  -webkit-box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor18,#8d9e7e),inset 0 -.25rem var(--sapList_Background,#000);
+  box-shadow: inset 0 -.1875rem 0 #8d9e7e,inset 0 -.25rem #000;
+  box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor18,#8d9e7e),inset 0 -.25rem var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--19 .fd-calendar__text::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: .25rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #addcf0;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor19,#addcf0);
+  box-shadow: inset 0 -.25rem 0 #addcf0;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor19,#addcf0)
+}
+.fd-calendar__special-day--19.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--19:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #addcf0,inset 0 -.33rem 0 #000;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor19,#addcf0),inset 0 -.33rem 0 var(--sapList_Background,#000);
+  box-shadow: inset 0 -.25rem 0 #addcf0,inset 0 -.33rem 0 #000;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor19,#addcf0),inset 0 -.33rem 0 var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--19.fd-calendar__item--current.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--19.fd-calendar__item--current:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.1875rem 0 #addcf0,inset 0 -.25rem #000;
+  -webkit-box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor19,#addcf0),inset 0 -.25rem var(--sapList_Background,#000);
+  box-shadow: inset 0 -.1875rem 0 #addcf0,inset 0 -.25rem #000;
+  box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor19,#addcf0),inset 0 -.25rem var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--20 .fd-calendar__text::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: .25rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #629cff;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor20,#629cff);
+  box-shadow: inset 0 -.25rem 0 #629cff;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor20,#629cff)
+}
+.fd-calendar__special-day--20.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--20:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.25rem 0 #629cff,inset 0 -.33rem 0 #000;
+  -webkit-box-shadow: inset 0 -.25rem 0 var(--sapLegendColor20,#629cff),inset 0 -.33rem 0 var(--sapList_Background,#000);
+  box-shadow: inset 0 -.25rem 0 #629cff,inset 0 -.33rem 0 #000;
+  box-shadow: inset 0 -.25rem 0 var(--sapLegendColor20,#629cff),inset 0 -.33rem 0 var(--sapList_Background,#000)
+}
+.fd-calendar__special-day--20.fd-calendar__item--current.is-active .fd-calendar__text::after,
+.fd-calendar__special-day--20.fd-calendar__item--current:active .fd-calendar__text::after {
+  height: .3125rem;
+  -webkit-box-shadow: inset 0 -.1875rem 0 #629cff,inset 0 -.25rem #000;
+  -webkit-box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor20,#629cff),inset 0 -.25rem var(--sapList_Background,#000);
+  box-shadow: inset 0 -.1875rem 0 #629cff,inset 0 -.25rem #000;
+  box-shadow: inset 0 -.1875rem 0 var(--sapLegendColor20,#629cff),inset 0 -.25rem var(--sapList_Background,#000)
+}
+.fd-calendar__close-button--navigation.fd-button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%)
+}
+.fd-calendar__close-button--navigation.fd-button[dir=rtl],
+[dir=rtl] .fd-calendar__close-button--navigation.fd-button {
+  left: 0;
+  right: auto
+}
+.fd-calendar--compact {
+  width: 17rem;
+  padding: .5rem
+}
+.fd-calendar--compact .fd-calendar__navigation {
+  padding-top: .1875rem;
+  padding-bottom: .1875rem
+}
+.fd-calendar--compact .fd-calendar__action--arrow-left,
+.fd-calendar--compact .fd-calendar__action--arrow-right {
+  width: 1.875rem
+}
+.fd-calendar--compact .fd-calendar__item {
+  height: 1.875rem;
+  min-width: 1.875rem
+}
+.fd-calendar--mobile-landscape,
+.fd-calendar--mobile-portrait {
+  width: 100%;
+  height: 100%
+}
+.fd-calendar--mobile-landscape {
+  padding: 0
+}
+.fd-calendar--mobile-landscape .fd-calendar__item--side-helper {
+  height: 1.625rem
+}
+.fd-calendar--mobile-landscape .fd-calendar__navigation--main {
+  max-width: 20rem
+}
+.fd-calendar--mobile-portrait {
+  padding: 1rem 0 0 0
+}

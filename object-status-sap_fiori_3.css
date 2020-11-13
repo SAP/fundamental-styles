@@ -1,0 +1,1296 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+/*!
+.fd-object-status+(--success | --warning | --error)
+*/
+.fd-object-status {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  color: #6a6d70;
+  color: var(--sapNeutralTextColor,#6a6d70);
+  text-shadow: 0 0 .125rem #fff;
+  text-shadow: var(--sapContent_TextShadow,0 0 .125rem #fff);
+  max-width: 100%;
+  word-break: break-word;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 1
+}
+.fd-object-status::after,
+.fd-object-status::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-object-status__text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  word-break: inherit;
+  color: inherit;
+  font-family: inherit;
+  line-height: 1
+}
+.fd-object-status__text::after,
+.fd-object-status__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-object-status__icon [class*=sap-icon],
+.fd-object-status__icon[class*=sap-icon] {
+  color: inherit;
+  background: inherit;
+  font-size: inherit;
+  border-radius: inherit;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1rem;
+  padding-right: .25rem;
+  color: #6a6d70;
+  color: var(--sapNeutralElementColor,#6a6d70)
+}
+.fd-object-status__icon [class*=sap-icon]:first-child:last-child,
+.fd-object-status__icon[class*=sap-icon]:first-child:last-child {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-right: 0;
+  padding-left: 0
+}
+.fd-object-status[dir=rtl] .fd-object-status__icon [class*=sap-icon],
+.fd-object-status[dir=rtl] .fd-object-status__icon[class*=sap-icon],
+[dir=rtl] .fd-object-status .fd-object-status__icon [class*=sap-icon],
+[dir=rtl] .fd-object-status .fd-object-status__icon[class*=sap-icon] {
+  padding-right: 0;
+  padding-left: .25rem
+}
+.fd-object-status--positive {
+  color: #107e3e;
+  color: var(--sapPositiveTextColor,#107e3e)
+}
+.fd-object-status--positive .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--positive .fd-object-status__icon[class*=sap-icon] {
+  color: #107e3e;
+  color: var(--sapPositiveElementColor,#107e3e)
+}
+.fd-object-status--critical {
+  color: #e9730c;
+  color: var(--sapCriticalTextColor,#e9730c)
+}
+.fd-object-status--critical .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--critical .fd-object-status__icon[class*=sap-icon] {
+  color: #e9730c;
+  color: var(--sapCriticalElementColor,#e9730c)
+}
+.fd-object-status--negative {
+  color: #b00;
+  color: var(--sapNegativeTextColor,#b00)
+}
+.fd-object-status--negative .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--negative .fd-object-status__icon[class*=sap-icon] {
+  color: #b00;
+  color: var(--sapNegativeElementColor,#b00)
+}
+.fd-object-status--informative {
+  color: #053b70;
+  color: var(--sapInformativeTextColor,#053b70)
+}
+.fd-object-status--informative .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--informative .fd-object-status__icon[class*=sap-icon] {
+  color: #0a6ed1;
+  color: var(--sapInformativeElementColor,#0a6ed1)
+}
+.fd-object-status--indication-1 {
+  color: #800;
+  color: var(--sapIndicationColor_1,#800)
+}
+.fd-object-status--indication-1:visited {
+  color: #800;
+  color: var(--sapIndicationColor_1,#800)
+}
+.fd-object-status--indication-1:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--indication-1:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #800;
+  color: var(--sapIndicationColor_1,#800)
+}
+.fd-object-status--indication-2 {
+  color: #b00;
+  color: var(--sapIndicationColor_2,#b00)
+}
+.fd-object-status--indication-2:visited {
+  color: #b00;
+  color: var(--sapIndicationColor_2,#b00)
+}
+.fd-object-status--indication-2:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--indication-2:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #b00;
+  color: var(--sapIndicationColor_2,#b00)
+}
+.fd-object-status--indication-3 {
+  color: #e9730c;
+  color: var(--sapIndicationColor_3,#e9730c)
+}
+.fd-object-status--indication-3:visited {
+  color: #e9730c;
+  color: var(--sapIndicationColor_3,#e9730c)
+}
+.fd-object-status--indication-3:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--indication-3:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #e9730c;
+  color: var(--sapIndicationColor_3,#e9730c)
+}
+.fd-object-status--indication-4 {
+  color: #107e3e;
+  color: var(--sapIndicationColor_4,#107e3e)
+}
+.fd-object-status--indication-4:visited {
+  color: #107e3e;
+  color: var(--sapIndicationColor_4,#107e3e)
+}
+.fd-object-status--indication-4:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--indication-4:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #107e3e;
+  color: var(--sapIndicationColor_4,#107e3e)
+}
+.fd-object-status--indication-5 {
+  color: #0a6ed1;
+  color: var(--sapIndicationColor_5,#0a6ed1)
+}
+.fd-object-status--indication-5:visited {
+  color: #0a6ed1;
+  color: var(--sapIndicationColor_5,#0a6ed1)
+}
+.fd-object-status--indication-5:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--indication-5:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #0a6ed1;
+  color: var(--sapIndicationColor_5,#0a6ed1)
+}
+.fd-object-status--indication-6 {
+  color: #0f828f;
+  color: var(--sapAccentColor7,#0f828f)
+}
+.fd-object-status--indication-6:visited {
+  color: #0f828f;
+  color: var(--sapAccentColor7,#0f828f)
+}
+.fd-object-status--indication-6:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--indication-6:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #0f828f;
+  color: var(--sapAccentColor7,#0f828f)
+}
+.fd-object-status--indication-7 {
+  color: #925ace;
+  color: var(--sapAccentColor9,#925ace)
+}
+.fd-object-status--indication-7:visited {
+  color: #925ace;
+  color: var(--sapAccentColor9,#925ace)
+}
+.fd-object-status--indication-7:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--indication-7:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #925ace;
+  color: var(--sapAccentColor9,#925ace)
+}
+.fd-object-status--indication-8 {
+  color: #c0399f;
+  color: var(--sapAccentColor4,#c0399f)
+}
+.fd-object-status--indication-8:visited {
+  color: #c0399f;
+  color: var(--sapAccentColor4,#c0399f)
+}
+.fd-object-status--indication-8:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--indication-8:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #c0399f;
+  color: var(--sapAccentColor4,#c0399f)
+}
+.fd-object-status--link {
+  text-decoration: none;
+  cursor: pointer
+}
+.fd-object-status--link:hover .fd-object-status__text {
+  text-decoration: underline
+}
+.fd-object-status--link:visited {
+  text-decoration: none
+}
+.fd-object-status--large {
+  font-size: 1.5rem
+}
+.fd-object-status--large .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--large .fd-object-status__icon[class*=sap-icon] {
+  font-size: 1.5rem
+}
+.fd-object-status--inverted {
+  height: auto;
+  min-height: 1rem;
+  width: auto;
+  max-width: 100%;
+  padding: .0625rem .25rem;
+  border-radius: .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem);
+  font-weight: 700;
+  border-width: 0;
+  border-width: var(--fdInverted_Object_Border_Width,0);
+  border-style: solid;
+  text-shadow: none;
+  color: #fff;
+  color: var(--sapButton_Neutral_TextColor,#fff);
+  background-color: #6a6d70;
+  background-color: var(--sapButton_Neutral_Background,#6a6d70)
+}
+.fd-object-status--inverted .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted .fd-object-status__icon[class*=sap-icon] {
+  font-size: .75rem;
+  padding-right: .25rem
+}
+.fd-object-status--inverted .fd-object-status__icon [class*=sap-icon]:first-child:last-child,
+.fd-object-status--inverted .fd-object-status__icon[class*=sap-icon]:first-child:last-child {
+  padding: 0 .25rem
+}
+.fd-object-status--inverted[dir=rtl] .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted[dir=rtl] .fd-object-status__icon[class*=sap-icon],
+[dir=rtl] .fd-object-status--inverted .fd-object-status__icon [class*=sap-icon],
+[dir=rtl] .fd-object-status--inverted .fd-object-status__icon[class*=sap-icon] {
+  padding-right: 0;
+  padding-left: .25rem
+}
+.fd-object-status--inverted .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Neutral_TextColor,#fff)
+}
+.fd-object-status--inverted:active,
+.fd-object-status--inverted:hover,
+.fd-object-status--inverted:visited {
+  color: #fff;
+  color: var(--sapButton_Neutral_TextColor,#fff);
+  background-color: #6a6d70;
+  background-color: var(--sapButton_Neutral_Background,#6a6d70)
+}
+.fd-object-status--inverted:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Neutral_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--positive {
+  color: #fff;
+  color: var(--sapButton_Success_TextColor,#fff);
+  background-color: #107e3e;
+  background-color: var(--sapButton_Success_Background,#107e3e)
+}
+.fd-object-status--inverted.fd-object-status--positive .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--positive .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Success_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--positive:active,
+.fd-object-status--inverted.fd-object-status--positive:hover,
+.fd-object-status--inverted.fd-object-status--positive:visited {
+  color: #fff;
+  color: var(--sapButton_Success_TextColor,#fff);
+  background-color: #107e3e;
+  background-color: var(--sapButton_Success_Background,#107e3e)
+}
+.fd-object-status--inverted.fd-object-status--positive:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--positive:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--positive:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--positive:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--positive:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--positive:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Success_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--critical {
+  color: #fff;
+  color: var(--sapButton_Critical_TextColor,#fff);
+  background-color: #e9730c;
+  background-color: var(--sapButton_Critical_Background,#e9730c)
+}
+.fd-object-status--inverted.fd-object-status--critical .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--critical .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Critical_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--critical:active,
+.fd-object-status--inverted.fd-object-status--critical:hover,
+.fd-object-status--inverted.fd-object-status--critical:visited {
+  color: #fff;
+  color: var(--sapButton_Critical_TextColor,#fff);
+  background-color: #e9730c;
+  background-color: var(--sapButton_Critical_Background,#e9730c)
+}
+.fd-object-status--inverted.fd-object-status--critical:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--critical:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--critical:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--critical:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--critical:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--critical:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Critical_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--negative {
+  color: #fff;
+  color: var(--sapButton_Negative_TextColor,#fff);
+  background-color: #b00;
+  background-color: var(--sapButton_Negative_Background,#b00)
+}
+.fd-object-status--inverted.fd-object-status--negative .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--negative .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Negative_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--negative:active,
+.fd-object-status--inverted.fd-object-status--negative:hover,
+.fd-object-status--inverted.fd-object-status--negative:visited {
+  color: #fff;
+  color: var(--sapButton_Negative_TextColor,#fff);
+  background-color: #b00;
+  background-color: var(--sapButton_Negative_Background,#b00)
+}
+.fd-object-status--inverted.fd-object-status--negative:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--negative:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--negative:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--negative:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--negative:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--negative:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Negative_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--informative {
+  color: #fff;
+  color: var(--sapButton_Information_TextColor,#fff);
+  background-color: #0a6ed1;
+  background-color: var(--sapButton_Information_Background,#0a6ed1)
+}
+.fd-object-status--inverted.fd-object-status--informative .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--informative .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Information_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--informative:active,
+.fd-object-status--inverted.fd-object-status--informative:hover,
+.fd-object-status--inverted.fd-object-status--informative:visited {
+  color: #fff;
+  color: var(--sapButton_Information_TextColor,#fff);
+  background-color: #0a6ed1;
+  background-color: var(--sapButton_Information_Background,#0a6ed1)
+}
+.fd-object-status--inverted.fd-object-status--informative:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--informative:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--informative:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--informative:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--informative:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--informative:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Information_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--indication-1 {
+  color: #fff;
+  color: var(--sapIndicationColor_1_TextColor,#fff);
+  background-color: #800;
+  background-color: var(--sapIndicationColor_1,#800)
+}
+.fd-object-status--inverted.fd-object-status--indication-1 .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-1 .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_1_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--indication-1:active,
+.fd-object-status--inverted.fd-object-status--indication-1:hover,
+.fd-object-status--inverted.fd-object-status--indication-1:visited {
+  color: #fff;
+  color: var(--sapIndicationColor_1_TextColor,#fff);
+  background-color: #800;
+  background-color: var(--sapIndicationColor_1,#800)
+}
+.fd-object-status--inverted.fd-object-status--indication-1:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-1:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-1:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-1:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-1:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-1:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_1_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--indication-2 {
+  color: #fff;
+  color: var(--sapIndicationColor_2_TextColor,#fff);
+  background-color: #b00;
+  background-color: var(--sapIndicationColor_2,#b00)
+}
+.fd-object-status--inverted.fd-object-status--indication-2 .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-2 .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_2_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--indication-2:active,
+.fd-object-status--inverted.fd-object-status--indication-2:hover,
+.fd-object-status--inverted.fd-object-status--indication-2:visited {
+  color: #fff;
+  color: var(--sapIndicationColor_2_TextColor,#fff);
+  background-color: #b00;
+  background-color: var(--sapIndicationColor_2,#b00)
+}
+.fd-object-status--inverted.fd-object-status--indication-2:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-2:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-2:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-2:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-2:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-2:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_2_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--indication-3 {
+  color: #fff;
+  color: var(--sapIndicationColor_3_TextColor,#fff);
+  background-color: #e9730c;
+  background-color: var(--sapIndicationColor_3,#e9730c)
+}
+.fd-object-status--inverted.fd-object-status--indication-3 .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-3 .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_3_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--indication-3:active,
+.fd-object-status--inverted.fd-object-status--indication-3:hover,
+.fd-object-status--inverted.fd-object-status--indication-3:visited {
+  color: #fff;
+  color: var(--sapIndicationColor_3_TextColor,#fff);
+  background-color: #e9730c;
+  background-color: var(--sapIndicationColor_3,#e9730c)
+}
+.fd-object-status--inverted.fd-object-status--indication-3:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-3:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-3:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-3:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-3:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-3:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_3_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--indication-4 {
+  color: #fff;
+  color: var(--sapIndicationColor_4_TextColor,#fff);
+  background-color: #107e3e;
+  background-color: var(--sapIndicationColor_4,#107e3e)
+}
+.fd-object-status--inverted.fd-object-status--indication-4 .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-4 .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_4_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--indication-4:active,
+.fd-object-status--inverted.fd-object-status--indication-4:hover,
+.fd-object-status--inverted.fd-object-status--indication-4:visited {
+  color: #fff;
+  color: var(--sapIndicationColor_4_TextColor,#fff);
+  background-color: #107e3e;
+  background-color: var(--sapIndicationColor_4,#107e3e)
+}
+.fd-object-status--inverted.fd-object-status--indication-4:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-4:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-4:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-4:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-4:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-4:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_4_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--indication-5 {
+  color: #fff;
+  color: var(--sapIndicationColor_5_TextColor,#fff);
+  background-color: #0a6ed1;
+  background-color: var(--sapIndicationColor_5,#0a6ed1)
+}
+.fd-object-status--inverted.fd-object-status--indication-5 .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-5 .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_5_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--indication-5:active,
+.fd-object-status--inverted.fd-object-status--indication-5:hover,
+.fd-object-status--inverted.fd-object-status--indication-5:visited {
+  color: #fff;
+  color: var(--sapIndicationColor_5_TextColor,#fff);
+  background-color: #0a6ed1;
+  background-color: var(--sapIndicationColor_5,#0a6ed1)
+}
+.fd-object-status--inverted.fd-object-status--indication-5:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-5:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-5:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-5:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-5:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-5:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_5_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--indication-6 {
+  color: #fff;
+  color: var(--sapIndicationColor_6_TextColor,#fff);
+  background-color: #0f828f;
+  background-color: var(--sapIndicationColor_6,#0f828f)
+}
+.fd-object-status--inverted.fd-object-status--indication-6 .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-6 .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_6_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--indication-6:active,
+.fd-object-status--inverted.fd-object-status--indication-6:hover,
+.fd-object-status--inverted.fd-object-status--indication-6:visited {
+  color: #fff;
+  color: var(--sapIndicationColor_6_TextColor,#fff);
+  background-color: #0f828f;
+  background-color: var(--sapIndicationColor_6,#0f828f)
+}
+.fd-object-status--inverted.fd-object-status--indication-6:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-6:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-6:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-6:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-6:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-6:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_6_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--indication-7 {
+  color: #fff;
+  color: var(--sapIndicationColor_7_TextColor,#fff);
+  background-color: #925ace;
+  background-color: var(--sapIndicationColor_7,#925ace)
+}
+.fd-object-status--inverted.fd-object-status--indication-7 .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-7 .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_7_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--indication-7:active,
+.fd-object-status--inverted.fd-object-status--indication-7:hover,
+.fd-object-status--inverted.fd-object-status--indication-7:visited {
+  color: #fff;
+  color: var(--sapIndicationColor_7_TextColor,#fff);
+  background-color: #925ace;
+  background-color: var(--sapIndicationColor_7,#925ace)
+}
+.fd-object-status--inverted.fd-object-status--indication-7:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-7:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-7:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-7:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-7:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-7:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_7_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--indication-8 {
+  color: #fff;
+  color: var(--sapIndicationColor_8_TextColor,#fff);
+  background-color: #c0399f;
+  background-color: var(--sapIndicationColor_8,#c0399f)
+}
+.fd-object-status--inverted.fd-object-status--indication-8 .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-8 .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_8_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--indication-8:active,
+.fd-object-status--inverted.fd-object-status--indication-8:hover,
+.fd-object-status--inverted.fd-object-status--indication-8:visited {
+  color: #fff;
+  color: var(--sapIndicationColor_8_TextColor,#fff);
+  background-color: #c0399f;
+  background-color: var(--sapIndicationColor_8,#c0399f)
+}
+.fd-object-status--inverted.fd-object-status--indication-8:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-8:active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-8:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-8:hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-8:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--indication-8:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_8_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--large {
+  font-size: 1.25rem;
+  padding: .125rem .25rem
+}
+.fd-object-status--inverted.fd-object-status--large .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--large .fd-object-status__icon[class*=sap-icon] {
+  font-size: 1.25rem
+}
+.fd-object-status--inverted.fd-object-status--large .fd-object-status__icon [class*=sap-icon].is-empty,
+.fd-object-status--inverted.fd-object-status--large .fd-object-status__icon [class*=sap-icon]:empty,
+.fd-object-status--inverted.fd-object-status--large .fd-object-status__icon[class*=sap-icon].is-empty,
+.fd-object-status--inverted.fd-object-status--large .fd-object-status__icon[class*=sap-icon]:empty {
+  height: 1.5rem;
+  min-width: 1.75rem;
+  padding: 0 .25rem
+}
+.fd-object-status--inverted.fd-object-status--link {
+  cursor: pointer;
+  color: #fff;
+  color: var(--sapButton_Neutral_TextColor,#fff);
+  background-color: #6a6d70;
+  background-color: var(--sapButton_Neutral_Background,#6a6d70);
+  border-color: #595b5e;
+  border-color: var(--sapButton_Neutral_Hover_BorderColor,#595b5e)
+}
+.fd-object-status--inverted.fd-object-status--link:active .fd-object-status__text,
+.fd-object-status--inverted.fd-object-status--link:hover .fd-object-status__text,
+.fd-object-status--inverted.fd-object-status--link:visited .fd-object-status__text {
+  text-decoration: none
+}
+.fd-object-status--inverted.fd-object-status--link:visited {
+  color: #fff;
+  color: var(--sapButton_Neutral_TextColor,#fff);
+  background-color: #6a6d70;
+  background-color: var(--sapButton_Neutral_Background,#6a6d70)
+}
+.fd-object-status--inverted.fd-object-status--link:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Neutral_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.is-hover,
+.fd-object-status--inverted.fd-object-status--link:hover {
+  color: #fff;
+  color: var(--sapButton_Neutral_Hover_TextColor,#fff);
+  background-color: #595b5e;
+  background-color: var(--sapButton_Neutral_Hover_Background,#595b5e)
+}
+.fd-object-status--inverted.fd-object-status--link.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Neutral_Hover_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.is-active,
+.fd-object-status--inverted.fd-object-status--link:active {
+  color: #fff;
+  color: var(--sapButton_Active_TextColor,#fff);
+  background-color: #515456;
+  background-color: var(--sapButton_Neutral_Active_Background,#515456)
+}
+.fd-object-status--inverted.fd-object-status--link.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link:active .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Active_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive {
+  color: #fff;
+  color: var(--sapButton_Success_TextColor,#fff);
+  background-color: #107e3e;
+  background-color: var(--sapButton_Success_Background,#107e3e);
+  border-color: #107e3e;
+  border-color: var(--sapButton_Success_BorderColor,#107e3e)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive:visited {
+  color: #fff;
+  color: var(--sapButton_Critical_TextColor,#fff);
+  background-color: #107e3e;
+  background-color: var(--sapButton_Success_Background,#107e3e)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Critical_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive:hover {
+  color: #fff;
+  color: var(--sapButton_Success_Hover_TextColor,#fff);
+  background-color: #0c5e2e;
+  background-color: var(--sapButton_Success_Hover_Background,#0c5e2e)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Success_Hover_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive:active {
+  color: #fff;
+  color: var(--sapButton_Active_TextColor,#fff);
+  background-color: #0a5128;
+  background-color: var(--sapButton_Success_Active_Background,#0a5128)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--positive:active .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Active_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical {
+  color: #fff;
+  color: var(--sapButton_Critical_TextColor,#fff);
+  background-color: #e9730c;
+  background-color: var(--sapButton_Critical_Background,#e9730c);
+  border-color: #e9730c;
+  border-color: var(--sapButton_Critical_BorderColor,#e9730c)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:visited {
+  color: #fff;
+  color: var(--sapButton_Critical_TextColor,#fff);
+  background-color: #e9730c;
+  background-color: var(--sapButton_Critical_Background,#e9730c)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Critical_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:hover {
+  color: var(sapButton_Critical_Hover_TextColor);
+  background-color: #c7620a;
+  background-color: var(--sapButton_Critical_Hover_Background,#c7620a)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:hover .fd-object-status__icon[class*=sap-icon] {
+  color: var(sapButton_Critical_Hover_TextColor)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:active {
+  color: #fff;
+  color: var(--sapButton_Active_TextColor,#fff);
+  background-color: #b85b0a;
+  background-color: var(--sapButton_Critical_Active_Background,#b85b0a)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:active .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Active_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative {
+  color: #fff;
+  color: var(--sapButton_Negative_TextColor,#fff);
+  background-color: #b00;
+  background-color: var(--sapButton_Negative_Background,#b00);
+  border-color: #b00;
+  border-color: var(--sapButton_Negative_BorderColor,#b00)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative:visited {
+  color: #fff;
+  color: var(--sapButton_Negative_TextColor,#fff);
+  background-color: #b00;
+  background-color: var(--sapButton_Negative_Background,#b00)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Negative_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative:hover {
+  color: #fff;
+  color: var(--sapButton_Negative_Hover_TextColor,#fff);
+  background-color: #970000;
+  background-color: var(--sapButton_Negative_Hover_Background,#970000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Negative_Hover_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative:active {
+  color: #fff;
+  color: var(--sapButton_Active_TextColor,#fff);
+  background-color: #800;
+  background-color: var(--sapButton_Negative_Active_Background,#800)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--negative:active .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Active_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative {
+  color: #fff;
+  color: var(--sapButton_Information_TextColor,#fff);
+  background-color: #0a6ed1;
+  background-color: var(--sapButton_Information_Background,#0a6ed1);
+  border-color: #0a6ed1;
+  border-color: var(--sapButton_Information_BorderColor,#0a6ed1)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative:visited {
+  color: #fff;
+  color: var(--sapButton_Information_TextColor,#fff);
+  background-color: #0a6ed1;
+  background-color: var(--sapButton_Information_Background,#0a6ed1)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Information_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative:hover {
+  color: #fff;
+  color: var(--sapButton_Information_Hover_TextColor,#fff);
+  background-color: #0961b9;
+  background-color: var(--sapButton_Information_Hover_Background,#0961b9)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Information_Hover_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative:active {
+  color: #fff;
+  color: var(--sapButton_Active_TextColor,#fff);
+  background-color: #0854a0;
+  background-color: var(--sapButton_Information_Active_Background,#0854a0)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--informative:active .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapButton_Active_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1 {
+  color: #fff;
+  color: var(--sapIndicationColor_1_TextColor,#fff);
+  background-color: #800;
+  background-color: var(--sapIndicationColor_1,#800);
+  border-color: #89919a;
+  border-color: var(--sapContent_ForegroundBorderColor,#89919a)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1:visited {
+  color: #fff;
+  color: var(--sapIndicationColor_1_TextColor,#fff);
+  background-color: #800;
+  background-color: var(--sapIndicationColor_1,#800)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_1_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1:hover {
+  color: #fff;
+  color: var(--sapIndicationColor_1_TextColor,#fff);
+  background-color: #6f0000;
+  background-color: var(--sapIndicationColor_1_Hover_Background,#6f0000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_1_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1:active {
+  color: #fff;
+  color: var(--sapIndicationColor_1_TextColor,#fff);
+  background-color: #500;
+  background-color: var(--sapIndicationColor_1_Active_Background,#500)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-1:active .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_1_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2 {
+  color: #fff;
+  color: var(--sapIndicationColor_2_TextColor,#fff);
+  background-color: #b00;
+  background-color: var(--sapIndicationColor_2,#b00);
+  border-color: #89919a;
+  border-color: var(--sapContent_ForegroundBorderColor,#89919a)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2:visited {
+  color: #fff;
+  color: var(--sapIndicationColor_2_TextColor,#fff);
+  background-color: #b00;
+  background-color: var(--sapIndicationColor_2,#b00)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_2_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2:hover {
+  color: #fff;
+  color: var(--sapIndicationColor_2_TextColor,#fff);
+  background-color: #a20000;
+  background-color: var(--sapIndicationColor_2_Hover_Background,#a20000)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_2_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2:active {
+  color: #fff;
+  color: var(--sapIndicationColor_2_TextColor,#fff);
+  background-color: #800;
+  background-color: var(--sapIndicationColor_2_Active_Background,#800)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-2:active .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_2_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3 {
+  color: #fff;
+  color: var(--sapIndicationColor_3_TextColor,#fff);
+  background-color: #e9730c;
+  background-color: var(--sapIndicationColor_3,#e9730c);
+  border-color: #89919a;
+  border-color: var(--sapContent_ForegroundBorderColor,#89919a)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:visited {
+  color: #fff;
+  color: var(--sapIndicationColor_3_TextColor,#fff);
+  background-color: #e9730c;
+  background-color: var(--sapIndicationColor_3,#e9730c)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_3_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:hover {
+  color: #fff;
+  color: var(--sapIndicationColor_3_TextColor,#fff);
+  background-color: #da6c0b;
+  background-color: var(--sapIndicationColor_3_Hover_Background,#da6c0b)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_3_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:active {
+  color: #fff;
+  color: var(--sapIndicationColor_3_TextColor,#fff);
+  background-color: #cc650b;
+  background-color: var(--sapIndicationColor_3_Active_Background,#cc650b)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:active .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_3_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4 {
+  color: #fff;
+  color: var(--sapIndicationColor_4_TextColor,#fff);
+  background-color: #107e3e;
+  background-color: var(--sapIndicationColor_4,#107e3e);
+  border-color: #89919a;
+  border-color: var(--sapContent_ForegroundBorderColor,#89919a)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4:visited {
+  color: #fff;
+  color: var(--sapIndicationColor_4_TextColor,#fff);
+  background-color: #107e3e;
+  background-color: var(--sapIndicationColor_4,#107e3e)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_4_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4:hover {
+  color: #fff;
+  color: var(--sapIndicationColor_4_TextColor,#fff);
+  background-color: #0d6733;
+  background-color: var(--sapIndicationColor_4_Hover_Background,#0d6733)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_4_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4:active {
+  color: #fff;
+  color: var(--sapIndicationColor_4_TextColor,#fff);
+  background-color: #0a5128;
+  background-color: var(--sapIndicationColor_4_Active_Background,#0a5128)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-4:active .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_4_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5 {
+  color: #fff;
+  color: var(--sapIndicationColor_5_TextColor,#fff);
+  background-color: #0a6ed1;
+  background-color: var(--sapIndicationColor_5,#0a6ed1);
+  border-color: #89919a;
+  border-color: var(--sapContent_ForegroundBorderColor,#89919a)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5:visited {
+  color: #fff;
+  color: var(--sapIndicationColor_5_TextColor,#fff);
+  background-color: #0a6ed1;
+  background-color: var(--sapIndicationColor_5,#0a6ed1)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_5_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5:hover {
+  color: #fff;
+  color: var(--sapIndicationColor_5_TextColor,#fff);
+  background-color: #0961b9;
+  background-color: var(--sapIndicationColor_5_Hover_Background,#0961b9)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_5_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5:active {
+  color: #fff;
+  color: var(--sapIndicationColor_5_TextColor,#fff);
+  background-color: #0854a0;
+  background-color: var(--sapIndicationColor_5_Active_Background,#0854a0)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-5:active .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_5_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6 {
+  color: #fff;
+  color: var(--sapIndicationColor_6_TextColor,#fff);
+  background-color: #0f828f;
+  background-color: var(--sapIndicationColor_6,#0f828f);
+  border-color: #89919a;
+  border-color: var(--sapContent_ForegroundBorderColor,#89919a)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6:visited {
+  color: #fff;
+  color: var(--sapIndicationColor_6_TextColor,#fff);
+  background-color: #0f828f;
+  background-color: var(--sapIndicationColor_6,#0f828f)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_6_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6:hover {
+  color: #fff;
+  color: var(--sapIndicationColor_6_TextColor,#fff);
+  background-color: #0d6d78;
+  background-color: var(--sapIndicationColor_6_Hover_Background,#0d6d78)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_6_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6:active {
+  color: #fff;
+  color: var(--sapIndicationColor_6_TextColor,#fff);
+  background-color: #0a5861;
+  background-color: var(--sapIndicationColor_6_Active_Background,#0a5861)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-6:active .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_6_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7 {
+  color: #fff;
+  color: var(--sapIndicationColor_7_TextColor,#fff);
+  background-color: #925ace;
+  background-color: var(--sapIndicationColor_7,#925ace);
+  border-color: #89919a;
+  border-color: var(--sapContent_ForegroundBorderColor,#89919a)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7:visited {
+  color: #fff;
+  color: var(--sapIndicationColor_7_TextColor,#fff);
+  background-color: #925ace;
+  background-color: var(--sapIndicationColor_7,#925ace)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_7_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7:hover {
+  color: #fff;
+  color: var(--sapIndicationColor_7_TextColor,#fff);
+  background-color: #8546c8;
+  background-color: var(--sapIndicationColor_7_Hover_Background,#8546c8)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_7_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7:active {
+  color: #fff;
+  color: var(--sapIndicationColor_7_TextColor,#fff);
+  background-color: #7838bd;
+  background-color: var(--sapIndicationColor_7_Active_Background,#7838bd)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-7:active .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_7_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8 {
+  color: #fff;
+  color: var(--sapIndicationColor_8_TextColor,#fff);
+  background-color: #c0399f;
+  background-color: var(--sapIndicationColor_8,#c0399f);
+  border-color: #89919a;
+  border-color: var(--sapContent_ForegroundBorderColor,#89919a)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8:visited {
+  color: #fff;
+  color: var(--sapIndicationColor_8_TextColor,#fff);
+  background-color: #c0399f;
+  background-color: var(--sapIndicationColor_8,#c0399f)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8:visited .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8:visited .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_8_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8.is-hover,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8:hover {
+  color: #fff;
+  color: var(--sapIndicationColor_8_TextColor,#fff);
+  background-color: #ac338f;
+  background-color: var(--sapIndicationColor_8_Hover_Background,#ac338f)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8.is-hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8.is-hover .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8:hover .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8:hover .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_8_TextColor,#fff)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8.is-active,
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8:active {
+  color: #fff;
+  color: var(--sapIndicationColor_8_TextColor,#fff);
+  background-color: #992d7e;
+  background-color: var(--sapIndicationColor_8_Active_Background,#992d7e)
+}
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8.is-active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8.is-active .fd-object-status__icon[class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8:active .fd-object-status__icon [class*=sap-icon],
+.fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-8:active .fd-object-status__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapIndicationColor_8_TextColor,#fff)
+}

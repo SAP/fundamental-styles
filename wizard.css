@@ -1,0 +1,621 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+.fd-wizard {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  position: relative
+}
+.fd-wizard::after,
+.fd-wizard::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-wizard__navigation {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0
+}
+.fd-wizard__navigation::after,
+.fd-wizard__navigation::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-wizard__progress-bar {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  height: 4rem;
+  display: table;
+  padding-top: 1rem;
+  position: relative;
+  table-layout: fixed;
+  list-style-type: none;
+  background: #fff;
+  background: var(--sapObjectHeader_Background,#fff);
+  -webkit-box-shadow: 0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9;
+  -webkit-box-shadow: var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9);
+  box-shadow: 0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9;
+  box-shadow: var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9)
+}
+.fd-wizard__progress-bar::after,
+.fd-wizard__progress-bar::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-wizard__progress-bar--sm {
+  padding-left: 1rem;
+  padding-right: 1rem
+}
+.fd-wizard__progress-bar--lg,
+.fd-wizard__progress-bar--md {
+  padding-left: 2rem;
+  padding-right: 2rem
+}
+.fd-wizard__progress-bar--xl {
+  padding-left: 3rem;
+  padding-right: 3rem
+}
+.fd-wizard__step-wrapper {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 2rem
+}
+.fd-wizard__step-wrapper::after,
+.fd-wizard__step-wrapper::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-wizard__step {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  min-width: 10.5rem;
+  position: relative;
+  display: table-cell;
+  vertical-align: top
+}
+.fd-wizard__step::after,
+.fd-wizard__step::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-wizard__step--completed .fd-wizard__step-indicator {
+  background: #fff;
+  background: var(--sapObjectHeader_Background,#fff);
+  color: #0854a0;
+  color: var(--fdWizard_Completed_Step_Color,var(--sapSelectedColor,#0854a0));
+  border: .0625rem solid #0854a0;
+  border: var(--fdWizard_Completed_Step_Border,.0625rem solid var(--sapSelectedColor,#0854a0))
+}
+.fd-wizard__step--completed .fd-wizard__step-indicator .fd-wizard__icon [class*=sap-icon],
+.fd-wizard__step--completed .fd-wizard__step-indicator .fd-wizard__icon[class*=sap-icon] {
+  color: #0854a0;
+  color: var(--fdWizard_Completed_Step_Icon_Color,var(--sapSelectedColor,#0854a0))
+}
+.fd-wizard__step--current .fd-wizard__step-indicator {
+  position: relative;
+  background: #0854a0;
+  background: var(--sapSelectedColor,#0854a0);
+  color: #fff;
+  color: var(--fdWizard_Current_Step_Color,var(--sapContent_ContrastTextColor,#fff))
+}
+.fd-wizard__step--current .fd-wizard__step-indicator .fd-wizard__icon [class*=sap-icon],
+.fd-wizard__step--current .fd-wizard__step-indicator .fd-wizard__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--fdWizard_Current_Step_Icon_Color,var(--sapContent_ContrastIconColor,#fff))
+}
+.fd-wizard__step--current .fd-wizard__step-indicator::after {
+  content: "";
+  bottom: -1rem;
+  left: -.1875rem;
+  position: absolute;
+  display: inline-block;
+  width: calc(100% + 2 * .1875rem);
+  height: .188rem;
+  height: var(--fdWizard_Selection_Bar_Height,.188rem);
+  background: #0854a0;
+  background: var(--fdWizard_Selection_Bar_Background,var(--sapSelectedColor,#0854a0));
+  border-radius: .125rem .125rem 0 0;
+  -webkit-transition: all 125ms ease-in;
+  transition: all 125ms ease-in
+}
+.fd-wizard__step--upcoming .fd-wizard__step-indicator {
+  background: #fff;
+  background: var(--sapObjectHeader_Background,#fff);
+  border: .0625rem solid #e4e4e4;
+  border: var(--fdWizard_Upcoming_Step_Border,.0625rem solid var(--sapList_BorderColor,#e4e4e4));
+  color: #6a6d70;
+  color: var(--fdWizard_Upcoming_Step_Color,var(--sapContent_LabelColor,#6a6d70))
+}
+.fd-wizard__step--upcoming .fd-wizard__step-indicator .fd-wizard__icon [class*=sap-icon],
+.fd-wizard__step--upcoming .fd-wizard__step-indicator .fd-wizard__icon[class*=sap-icon] {
+  color: #6a6d70;
+  color: var(--fdWizard_Upcoming_Step_Icon_Color,var(--sapContent_LabelColor,#6a6d70))
+}
+.fd-wizard__step--upcoming .fd-wizard__step-container {
+  cursor: default;
+  pointer-events: none
+}
+.fd-wizard__step--no-label {
+  min-width: 4rem
+}
+.fd-wizard__step--no-label .fd-wizard__label-container {
+  display: none
+}
+.fd-wizard__step--stacked-top.fd-wizard__step--stacked {
+  min-width: 4rem;
+  width: 4rem
+}
+.fd-wizard__step--stacked-top.fd-wizard__step--stacked .fd-wizard__connector {
+  display: block;
+  min-width: auto
+}
+.fd-wizard__step--stacked {
+  width: .25rem;
+  min-width: auto
+}
+.fd-wizard__step--stacked .fd-wizard__connector,
+.fd-wizard__step--stacked .fd-wizard__label-container {
+  display: none
+}
+.fd-wizard__step--stacked.fd-wizard__step--upcoming:last-child {
+  padding-right: 2.375rem
+}
+.fd-wizard__step--stacked.fd-wizard__step--upcoming:last-child[dir=rtl],
+[dir=rtl] .fd-wizard__step--stacked.fd-wizard__step--upcoming:last-child {
+  padding-right: 0;
+  padding-left: 2.375rem
+}
+.fd-wizard__step--stacked.fd-wizard__step--upcoming:nth-child(1) {
+  z-index: calc(10 - 1)
+}
+.fd-wizard__step--stacked.fd-wizard__step--upcoming:nth-child(2) {
+  z-index: calc(10 - 2)
+}
+.fd-wizard__step--stacked.fd-wizard__step--upcoming:nth-child(3) {
+  z-index: calc(10 - 3)
+}
+.fd-wizard__step--stacked.fd-wizard__step--upcoming:nth-child(4) {
+  z-index: calc(10 - 4)
+}
+.fd-wizard__step--stacked.fd-wizard__step--upcoming:nth-child(5) {
+  z-index: calc(10 - 5)
+}
+.fd-wizard__step--stacked.fd-wizard__step--upcoming:nth-child(6) {
+  z-index: calc(10 - 6)
+}
+.fd-wizard__step--stacked.fd-wizard__step--upcoming:nth-child(7) {
+  z-index: calc(10 - 7)
+}
+.fd-wizard__step--stacked.fd-wizard__step--upcoming:nth-child(8) {
+  z-index: calc(10 - 8)
+}
+.fd-wizard__step--active .fd-wizard__step-indicator {
+  background: #0854a0;
+  background: var(--sapActiveColor,#0854a0);
+  border-color: #0854a0;
+  border-color: var(--fdWizard_Active_Step_Border_Color,var(--sapActiveColor,#0854a0));
+  color: #fff;
+  color: var(--fdWizard_Active_Step_Color,var(--sapContent_ContrastTextColor,#fff))
+}
+.fd-wizard__step--active .fd-wizard__icon [class*=sap-icon],
+.fd-wizard__step--active .fd-wizard__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--fdWizard_Active_Step_Icon_Color,var(--sapContent_ContrastIconColor,#fff))
+}
+.fd-wizard__step-container {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer
+}
+.fd-wizard__step-container::after,
+.fd-wizard__step-container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-wizard__step-container.is-focus,
+.fd-wizard__step-container:focus {
+  z-index: 5;
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted);
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000)
+}
+.fd-wizard__step-indicator {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  min-width: 2rem;
+  min-height: 2rem;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 .1875rem
+}
+.fd-wizard__step-indicator::after,
+.fd-wizard__step-indicator::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-wizard__icon [class*=sap-icon],
+.fd-wizard__icon[class*=sap-icon] {
+  color: inherit;
+  background: inherit;
+  font-size: inherit;
+  border-radius: inherit;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1rem;
+  font-size: var(--sapFontLargeSize,1rem)
+}
+.fd-wizard__label-container {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 100%;
+  max-height: 2rem;
+  color: #6a6d70;
+  color: var(--sapContent_LabelColor,#6a6d70);
+  overflow: hidden
+}
+.fd-wizard__label-container::after,
+.fd-wizard__label-container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-wizard__label-container--optional .fd-wizard__label {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  max-height: 1rem
+}
+.fd-wizard__label {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  line-height: 1rem;
+  max-width: 100%
+}
+.fd-wizard__label::after,
+.fd-wizard__label::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-wizard__optional-text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem)
+}
+.fd-wizard__optional-text::after,
+.fd-wizard__optional-text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-wizard__connector {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin: .5rem;
+  max-width: 100%;
+  min-width: 1rem;
+  border-bottom: .0625rem solid #e4e4e4;
+  border-bottom: .0625rem solid var(--sapList_BorderColor,#e4e4e4)
+}
+.fd-wizard__connector::after,
+.fd-wizard__connector::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-wizard__connector--active {
+  border-bottom-color: #0854a0;
+  border-bottom-color: var(--fdWizard_Connector_Active_Border_Color,var(--sapSelectedColor,#0854a0))
+}
+.fd-wizard__connector--branching {
+  border-bottom-style: dashed
+}
+.fd-wizard__content {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 1rem;
+  background: #f7f7f7;
+  background: var(--fdWizard_Content_Default_Background,var(--sapBackgroundColor,#f7f7f7))
+}
+.fd-wizard__content::after,
+.fd-wizard__content::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-wizard__content--sm {
+  padding-left: 1rem;
+  padding-right: 1rem
+}
+.fd-wizard__content--lg,
+.fd-wizard__content--md {
+  padding-left: 2rem;
+  padding-right: 2rem
+}
+.fd-wizard__content--xl {
+  padding-left: 3rem;
+  padding-right: 3rem
+}
+.fd-wizard__content--solid {
+  background: #edeff0;
+  background: var(--fdWizard_Content_Solid_Background,var(--sapShell_Background,#edeff0))
+}
+.fd-wizard__content--list {
+  background: #fff;
+  background: var(--fdWizard_Content_List_Background,var(--sapGroup_ContentBackground,#fff))
+}
+.fd-wizard__content--transparent {
+  background: transparent;
+  background: var(--fdWizard_Content_Transparent_Background,transparent)
+}
+.fd-wizard__next-step {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin-top: 1rem
+}
+.fd-wizard__next-step::after,
+.fd-wizard__next-step::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-wizard__next-step--sm {
+  padding-left: 1rem;
+  padding-right: 1rem
+}
+.fd-wizard__next-step--lg,
+.fd-wizard__next-step--md {
+  padding-left: 2rem;
+  padding-right: 2rem
+}
+.fd-wizard__next-step--xl {
+  padding-left: 3rem;
+  padding-right: 3rem
+}
+.fd-wizard__next-step--floating {
+  position: absolute;
+  bottom: 3.5rem
+}

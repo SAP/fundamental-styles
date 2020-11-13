@@ -1,0 +1,2297 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+.fd-tree {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  list-style-type: none
+}
+.fd-tree::after,
+.fd-tree::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tree[aria-hidden=true] {
+  display: none
+}
+.fd-tree.expanded-level-1 .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 4.25rem
+}
+.fd-tree.expanded-level-1 .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-1 .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.25rem
+}
+.fd-tree.expanded-level-1.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 3.5rem
+}
+.fd-tree.expanded-level-1.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-1.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.5rem
+}
+.fd-tree.expanded-level-2 .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 3.75rem
+}
+.fd-tree.expanded-level-2 .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-2 .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.75rem
+}
+.fd-tree.expanded-level-2.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 3rem
+}
+.fd-tree.expanded-level-2.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-2.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3rem
+}
+.fd-tree.expanded-level-2 .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 5.25rem
+}
+.fd-tree.expanded-level-2 .fd-tree__item[aria-level="3"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-2 .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5.25rem
+}
+.fd-tree.expanded-level-2.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 4.5rem
+}
+.fd-tree.expanded-level-2.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-2.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.5rem
+}
+.fd-tree.expanded-level-3 .fd-tree__item[aria-level="2"] .fd-tree__item-container,
+.fd-tree.expanded-level-4 .fd-tree__item[aria-level="2"] .fd-tree__item-container,
+.fd-tree.expanded-level-5 .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 3.25rem
+}
+.fd-tree.expanded-level-3 .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+.fd-tree.expanded-level-4 .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+.fd-tree.expanded-level-5 .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-3 .fd-tree__item[aria-level="2"] .fd-tree__item-container,
+[dir=rtl] .fd-tree.expanded-level-4 .fd-tree__item[aria-level="2"] .fd-tree__item-container,
+[dir=rtl] .fd-tree.expanded-level-5 .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.25rem
+}
+.fd-tree.expanded-level-3.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container,
+.fd-tree.expanded-level-4.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container,
+.fd-tree.expanded-level-5.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 2.5rem
+}
+.fd-tree.expanded-level-3.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+.fd-tree.expanded-level-4.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+.fd-tree.expanded-level-5.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-3.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container,
+[dir=rtl] .fd-tree.expanded-level-4.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container,
+[dir=rtl] .fd-tree.expanded-level-5.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.5rem
+}
+.fd-tree.expanded-level-3 .fd-tree__item[aria-level="3"] .fd-tree__item-container,
+.fd-tree.expanded-level-4 .fd-tree__item[aria-level="3"] .fd-tree__item-container,
+.fd-tree.expanded-level-5 .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 3.75rem
+}
+.fd-tree.expanded-level-3 .fd-tree__item[aria-level="3"] .fd-tree__item-container[dir=rtl],
+.fd-tree.expanded-level-4 .fd-tree__item[aria-level="3"] .fd-tree__item-container[dir=rtl],
+.fd-tree.expanded-level-5 .fd-tree__item[aria-level="3"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-3 .fd-tree__item[aria-level="3"] .fd-tree__item-container,
+[dir=rtl] .fd-tree.expanded-level-4 .fd-tree__item[aria-level="3"] .fd-tree__item-container,
+[dir=rtl] .fd-tree.expanded-level-5 .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.75rem
+}
+.fd-tree.expanded-level-3.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container,
+.fd-tree.expanded-level-4.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container,
+.fd-tree.expanded-level-5.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 3rem
+}
+.fd-tree.expanded-level-3.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container[dir=rtl],
+.fd-tree.expanded-level-4.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container[dir=rtl],
+.fd-tree.expanded-level-5.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-3.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container,
+[dir=rtl] .fd-tree.expanded-level-4.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container,
+[dir=rtl] .fd-tree.expanded-level-5.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3rem
+}
+.fd-tree.expanded-level-3 .fd-tree__item[aria-level="4"] .fd-tree__item-container,
+.fd-tree.expanded-level-4 .fd-tree__item[aria-level="4"] .fd-tree__item-container,
+.fd-tree.expanded-level-5 .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 4.25rem
+}
+.fd-tree.expanded-level-3 .fd-tree__item[aria-level="4"] .fd-tree__item-container[dir=rtl],
+.fd-tree.expanded-level-4 .fd-tree__item[aria-level="4"] .fd-tree__item-container[dir=rtl],
+.fd-tree.expanded-level-5 .fd-tree__item[aria-level="4"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-3 .fd-tree__item[aria-level="4"] .fd-tree__item-container,
+[dir=rtl] .fd-tree.expanded-level-4 .fd-tree__item[aria-level="4"] .fd-tree__item-container,
+[dir=rtl] .fd-tree.expanded-level-5 .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.25rem
+}
+.fd-tree.expanded-level-3.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container,
+.fd-tree.expanded-level-4.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container,
+.fd-tree.expanded-level-5.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 3.5rem
+}
+.fd-tree.expanded-level-3.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container[dir=rtl],
+.fd-tree.expanded-level-4.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container[dir=rtl],
+.fd-tree.expanded-level-5.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-3.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container,
+[dir=rtl] .fd-tree.expanded-level-4.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container,
+[dir=rtl] .fd-tree.expanded-level-5.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.5rem
+}
+.fd-tree.expanded-level-3 .fd-tree__item[aria-level="5"] .fd-tree__item-container,
+.fd-tree.expanded-level-4 .fd-tree__item[aria-level="5"] .fd-tree__item-container,
+.fd-tree.expanded-level-5 .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 4.75rem
+}
+.fd-tree.expanded-level-3 .fd-tree__item[aria-level="5"] .fd-tree__item-container[dir=rtl],
+.fd-tree.expanded-level-4 .fd-tree__item[aria-level="5"] .fd-tree__item-container[dir=rtl],
+.fd-tree.expanded-level-5 .fd-tree__item[aria-level="5"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-3 .fd-tree__item[aria-level="5"] .fd-tree__item-container,
+[dir=rtl] .fd-tree.expanded-level-4 .fd-tree__item[aria-level="5"] .fd-tree__item-container,
+[dir=rtl] .fd-tree.expanded-level-5 .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.75rem
+}
+.fd-tree.expanded-level-3.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container,
+.fd-tree.expanded-level-4.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container,
+.fd-tree.expanded-level-5.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 4rem
+}
+.fd-tree.expanded-level-3.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container[dir=rtl],
+.fd-tree.expanded-level-4.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container[dir=rtl],
+.fd-tree.expanded-level-5.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-3.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container,
+[dir=rtl] .fd-tree.expanded-level-4.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container,
+[dir=rtl] .fd-tree.expanded-level-5.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4rem
+}
+.fd-tree.expanded-level-3 .fd-tree__item[aria-level="6"] .fd-tree__item-container,
+.fd-tree.expanded-level-4 .fd-tree__item[aria-level="6"] .fd-tree__item-container,
+.fd-tree.expanded-level-5 .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 5.25rem
+}
+.fd-tree.expanded-level-3 .fd-tree__item[aria-level="6"] .fd-tree__item-container[dir=rtl],
+.fd-tree.expanded-level-4 .fd-tree__item[aria-level="6"] .fd-tree__item-container[dir=rtl],
+.fd-tree.expanded-level-5 .fd-tree__item[aria-level="6"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-3 .fd-tree__item[aria-level="6"] .fd-tree__item-container,
+[dir=rtl] .fd-tree.expanded-level-4 .fd-tree__item[aria-level="6"] .fd-tree__item-container,
+[dir=rtl] .fd-tree.expanded-level-5 .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5.25rem
+}
+.fd-tree.expanded-level-3.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container,
+.fd-tree.expanded-level-4.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container,
+.fd-tree.expanded-level-5.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 4.5rem
+}
+.fd-tree.expanded-level-3.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container[dir=rtl],
+.fd-tree.expanded-level-4.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container[dir=rtl],
+.fd-tree.expanded-level-5.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-3.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container,
+[dir=rtl] .fd-tree.expanded-level-4.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container,
+[dir=rtl] .fd-tree.expanded-level-5.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.5rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 2.75rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="1"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6 .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.75rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 2rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="1"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 3rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6 .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 2.25rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.25rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 3.25rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="3"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6 .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.25rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 2.5rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.5rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 3.5rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="4"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6 .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.5rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 2.75rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.75rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 3.75rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="5"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6 .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.75rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 3rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 4rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="6"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6 .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 3.25rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.25rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 4.25rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="7"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6 .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.25rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 3.5rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="7"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.5rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 4.5rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="8"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6 .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.5rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 3.75rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="8"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.75rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 4.75rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="9"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6 .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.75rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 4rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="9"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 5rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="10"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6 .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 4.25rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="10"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.25rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 5.25rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="11"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6 .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5.25rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 4.5rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="11"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.5rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 5.5rem
+}
+.fd-tree.expanded-level-6 .fd-tree__item[aria-level="12"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6 .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5.5rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 4.75rem
+}
+.fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="12"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-6.fd-tree--compact .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.75rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 2.75rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="1"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7 .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.75rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 2rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="1"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 3rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7 .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 2.25rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.25rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 3.25rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="3"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7 .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.25rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 2.5rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.5rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 3.5rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="4"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7 .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.5rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 2.75rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.75rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 3.75rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="5"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7 .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.75rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 3rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 4rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="6"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7 .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 3.25rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.25rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 4.25rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="7"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7 .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.25rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 3.5rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="7"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.5rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 4.5rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="8"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7 .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.5rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 3.75rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="8"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.75rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 4.75rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="9"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7 .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.75rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 4rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="9"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 5rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="10"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7 .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 4.25rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="10"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.25rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 5.25rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="11"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7 .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5.25rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 4.5rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="11"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.5rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 5.5rem
+}
+.fd-tree.expanded-level-7 .fd-tree__item[aria-level="12"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7 .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5.5rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 4.75rem
+}
+.fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="12"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-7.fd-tree--compact .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.75rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 2.75rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="1"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8 .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.75rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 2rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="1"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 3rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8 .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 2.25rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.25rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 3.25rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="3"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8 .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.25rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 2.5rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.5rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 3.5rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="4"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8 .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.5rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 2.75rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.75rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 3.75rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="5"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8 .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.75rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 3rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 4rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="6"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8 .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 3.25rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.25rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 4.25rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="7"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8 .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.25rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 3.5rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="7"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.5rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 4.5rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="8"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8 .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.5rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 3.75rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="8"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.75rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 4.75rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="9"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8 .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.75rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 4rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="9"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 5rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="10"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8 .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 4.25rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="10"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.25rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 5.25rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="11"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8 .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5.25rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 4.5rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="11"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.5rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 5.5rem
+}
+.fd-tree.expanded-level-8 .fd-tree__item[aria-level="12"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8 .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5.5rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 4.75rem
+}
+.fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="12"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-8.fd-tree--compact .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.75rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 2.75rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="1"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9 .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.75rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 2rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="1"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 3rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9 .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 2.25rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.25rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 3.25rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="3"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9 .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.25rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 2.5rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.5rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 3.5rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="4"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9 .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.5rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 2.75rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.75rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 3.75rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="5"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9 .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.75rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 3rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 4rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="6"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9 .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 3.25rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.25rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 4.25rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="7"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9 .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.25rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 3.5rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="7"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.5rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 4.5rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="8"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9 .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.5rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 3.75rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="8"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.75rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 4.75rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="9"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9 .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.75rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 4rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="9"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 5rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="10"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9 .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 4.25rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="10"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.25rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 5.25rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="11"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9 .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5.25rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 4.5rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="11"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.5rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 5.5rem
+}
+.fd-tree.expanded-level-9 .fd-tree__item[aria-level="12"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9 .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5.5rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 4.75rem
+}
+.fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="12"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-9.fd-tree--compact .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.75rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 2.75rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="1"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10 .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.75rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 2rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="1"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 3rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10 .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 2.25rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.25rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 3.25rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="3"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10 .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.25rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 2.5rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.5rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 3.5rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="4"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10 .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.5rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 2.75rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.75rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 3.75rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="5"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10 .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.75rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 3rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 4rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="6"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10 .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 3.25rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.25rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 4.25rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="7"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10 .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.25rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 3.5rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="7"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.5rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 4.5rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="8"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10 .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.5rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 3.75rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="8"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.75rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 4.75rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="9"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10 .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.75rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 4rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="9"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 5rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="10"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10 .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 4.25rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="10"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.25rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 5.25rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="11"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10 .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5.25rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 4.5rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="11"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.5rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 5.5rem
+}
+.fd-tree.expanded-level-10 .fd-tree__item[aria-level="12"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10 .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5.5rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 4.75rem
+}
+.fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="12"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-10.fd-tree--compact .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.75rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 2.75rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="1"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11 .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.75rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 2rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="1"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 3rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11 .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 2.25rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.25rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 3.25rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="3"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11 .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.25rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 2.5rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.5rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 3.5rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="4"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11 .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.5rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 2.75rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.75rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 3.75rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="5"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11 .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.75rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 3rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 4rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="6"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11 .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 3.25rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.25rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 4.25rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="7"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11 .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.25rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 3.5rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="7"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.5rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 4.5rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="8"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11 .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.5rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 3.75rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="8"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.75rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 4.75rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="9"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11 .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.75rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 4rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="9"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 5rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="10"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11 .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 4.25rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="10"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.25rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 5.25rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="11"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11 .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5.25rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 4.5rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="11"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.5rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 5.5rem
+}
+.fd-tree.expanded-level-11 .fd-tree__item[aria-level="12"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11 .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5.5rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 4.75rem
+}
+.fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="12"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-11.fd-tree--compact .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.75rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 2.75rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="1"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12 .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.75rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 2rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="1"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="1"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 3rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12 .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 2.25rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="2"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.25rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 3.25rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="3"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12 .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.25rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 2.5rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="3"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.5rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 3.5rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="4"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12 .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.5rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 2.75rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="4"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.75rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 3.75rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="5"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12 .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.75rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 3rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="5"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 4rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="6"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12 .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 3.25rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="6"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.25rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 4.25rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="7"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12 .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.25rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 3.5rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="7"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="7"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.5rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 4.5rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="8"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12 .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.5rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 3.75rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="8"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="8"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 3.75rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 4.75rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="9"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12 .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.75rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 4rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="9"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="9"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 5rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="10"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12 .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 4.25rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="10"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="10"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.25rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 5.25rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="11"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12 .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5.25rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 4.5rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="11"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="11"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.5rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 5.5rem
+}
+.fd-tree.expanded-level-12 .fd-tree__item[aria-level="12"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12 .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 5.5rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 4.75rem
+}
+.fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="12"] .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree.expanded-level-12.fd-tree--compact .fd-tree__item[aria-level="12"] .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 4.75rem
+}
+.fd-tree__item {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0
+}
+.fd-tree__item::after,
+.fd-tree__item::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container {
+  padding-left: 2.75rem;
+  background: #fff;
+  background: var(--sapList_Background,#fff);
+  border-bottom: .0625rem solid #e4e4e4;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+}
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2.75rem
+}
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-selected,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container[aria-selected=true] {
+  background: #e5f0fa;
+  background: var(--sapList_SelectionBackgroundColor,#e5f0fa);
+  border-bottom: .0625rem solid #0854a0;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
+}
+.fd-tree__item-container {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 2.75rem;
+  padding-right: 1rem;
+  background: #f7f7f7;
+  background: var(--sapList_AlternatingBackground,#f7f7f7);
+  border-bottom: .0625rem solid transparent;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid transparent
+}
+.fd-tree__item-container::after,
+.fd-tree__item-container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tree__item-container.is-selected,
+.fd-tree__item-container[aria-selected=true] {
+  background: #e5f0fa;
+  background: var(--sapList_SelectionBackgroundColor,#e5f0fa);
+  border-bottom: .0625rem solid #0854a0;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
+}
+.fd-tree__item-container.is-navigated {
+  -webkit-box-shadow: inset -.1875rem 0 0 0 #0854a0;
+  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0);
+  box-shadow: inset -.1875rem 0 0 0 #0854a0;
+  box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0)
+}
+.fd-tree__item-container.is-navigated[dir=rtl],
+[dir=rtl] .fd-tree__item-container.is-navigated {
+  -webkit-box-shadow: inset .1875rem 0 0 0 #0854a0;
+  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0);
+  box-shadow: inset .1875rem 0 0 0 #0854a0;
+  box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0)
+}
+.fd-tree__item-container.is-focus,
+.fd-tree__item-container:focus {
+  z-index: 5;
+  outline-style: dotted;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-offset: -.125rem
+}
+.fd-tree__item-container.is-focus.is-active,
+.fd-tree__item-container.is-focus:active,
+.fd-tree__item-container:focus.is-active,
+.fd-tree__item-container:focus:active {
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+}
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active {
+  cursor: pointer
+}
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-hover,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active:hover,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-hover,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:hover {
+  background: #f5f5f5;
+  background: var(--sapList_Hover_Background,#f5f5f5)
+}
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-selected,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active[aria-selected=true],
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-selected,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active[aria-selected=true] {
+  background: #e5f0fa;
+  background: var(--sapList_SelectionBackgroundColor,#e5f0fa);
+  border-bottom: .0625rem solid #0854a0;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
+}
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-selected.is-hover,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-selected:hover,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active[aria-selected=true].is-hover,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active[aria-selected=true]:hover,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-selected.is-hover,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-selected:hover,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active[aria-selected=true].is-hover,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active[aria-selected=true]:hover {
+  background: #d8e9f8;
+  background: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+}
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active:active,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active {
+  background: #0854a0;
+  background: var(--sapList_Active_Background,#0854a0)
+}
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-button.is-focus,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-button:focus,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-tree__expander.is-focus,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-tree__expander:focus,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active:active .fd-button.is-focus,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active:active .fd-button:focus,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active:active .fd-tree__expander.is-focus,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active:active .fd-tree__expander:focus,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-button.is-focus,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-button:focus,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-tree__expander.is-focus,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-tree__expander:focus,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active .fd-button.is-focus,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active .fd-button:focus,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active .fd-tree__expander.is-focus,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active .fd-tree__expander:focus {
+  z-index: 5;
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+}
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-tree__icon [class*=sap-icon],
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-tree__icon[class*=sap-icon],
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active:active .fd-tree__icon [class*=sap-icon],
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active:active .fd-tree__icon[class*=sap-icon],
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-tree__icon [class*=sap-icon],
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-tree__icon[class*=sap-icon],
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active .fd-tree__icon [class*=sap-icon],
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active .fd-tree__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapList_Active_TextColor,#fff)
+}
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-button,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-tree__text,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active:active .fd-button,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active:active .fd-tree__text,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-button,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-tree__text,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active .fd-button,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active .fd-tree__text {
+  color: #fff;
+  color: var(--sapList_Active_TextColor,#fff)
+}
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active.is-hover,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active:hover,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active:active.is-hover,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active:active:hover,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active.is-hover,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active:hover,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active.is-hover,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active:hover {
+  background: #0854a0;
+  background: var(--sapList_Active_Background,#0854a0)
+}
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active.is-selected,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active[aria-selected=true],
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active:active.is-selected,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active:active[aria-selected=true],
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active.is-selected,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active[aria-selected=true],
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active.is-selected,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active[aria-selected=true] {
+  background: #0854a0;
+  background: var(--sapList_Active_Background,#0854a0)
+}
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active.is-selected.is-hover,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active.is-selected:hover,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active[aria-selected=true].is-hover,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active[aria-selected=true]:hover,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active:active.is-selected.is-hover,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active:active.is-selected:hover,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active:active[aria-selected=true].is-hover,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active:active[aria-selected=true]:hover,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active.is-selected.is-hover,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active.is-selected:hover,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active[aria-selected=true].is-hover,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active[aria-selected=true]:hover,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active.is-selected.is-hover,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active.is-selected:hover,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active[aria-selected=true].is-hover,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active[aria-selected=true]:hover {
+  background: #0854a0;
+  background: var(--sapList_Active_Background,#0854a0)
+}
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active.is-focus,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active:focus,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active:active.is-focus,
+.fd-tree .fd-tree__item-container.fd-tree__item-container--active:active:focus,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active.is-focus,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active:focus,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active.is-focus,
+.fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active:focus {
+  z-index: 5;
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+}
+.fd-tree__expander {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  color: #0854a0;
+  color: var(--sapButton_IconColor,#0854a0);
+  background: 0 0;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  margin-left: -2.75rem
+}
+.fd-tree__expander::after,
+.fd-tree__expander::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tree__expander .fd-tree__icon [class*=sap-icon],
+.fd-tree__expander .fd-tree__icon[class*=sap-icon] {
+  font-size: 1rem;
+  font-size: var(--sapFontLargeSize,1rem);
+  color: #0854a0;
+  color: var(--sapButton_IconColor,#0854a0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fd-tree__expander.is-focus,
+.fd-tree__expander:focus {
+  z-index: 5;
+  outline-style: dotted;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-offset: -.125rem
+}
+.fd-tree__expander.is-focus.is-active,
+.fd-tree__expander.is-focus:active,
+.fd-tree__expander:focus.is-active,
+.fd-tree__expander:focus:active {
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+}
+.fd-tree__expander[dir=rtl],
+[dir=rtl] .fd-tree__expander {
+  margin-left: 0;
+  margin-right: -2.75rem
+}
+.fd-tree__expander.is-expanded,
+.fd-tree__expander[aria-expanded=true] {
+  border-bottom: none
+}
+.fd-tree__content {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 2.75rem;
+  width: 100%;
+  text-decoration: none
+}
+.fd-tree__content::after,
+.fd-tree__content::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tree__content--wrap {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: initial
+}
+.fd-tree__content--wrap .fd-tree__text {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: initial;
+  line-height: 1.4
+}
+.fd-tree__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  line-height: 2.75rem
+}
+.fd-tree__icon [class*=sap-icon],
+.fd-tree__icon[class*=sap-icon] {
+  font-size: 1.125rem;
+  color: #6a6d70;
+  color: var(--sapContent_NonInteractiveIconColor,#6a6d70);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fd-tree__icon--navigation [class*=sap-icon],
+.fd-tree__icon--navigation[class*=sap-icon] {
+  min-width: 2.5rem;
+  font-size: .75rem
+}
+.fd-tree__icon--navigation:last-child {
+  margin-right: -1rem
+}
+.fd-tree__icon--navigation[dir=rtl]:last-child,
+[dir=rtl] .fd-tree__icon--navigation:last-child {
+  margin-right: 0;
+  margin-left: -1rem
+}
+.fd-tree__text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  font-size: 1rem;
+  font-size: var(--sapFontLargeSize,1rem);
+  color: #32363a;
+  color: var(--sapList_TextColor,#32363a);
+  line-height: 2.75rem
+}
+.fd-tree__text::after,
+.fd-tree__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tree--compact .fd-tree__item[aria-level="1"] > .fd-tree__item-container {
+  padding-left: 2rem
+}
+.fd-tree--compact .fd-tree__item[aria-level="1"] > .fd-tree__item-container[dir=rtl],
+[dir=rtl] .fd-tree--compact .fd-tree__item[aria-level="1"] > .fd-tree__item-container {
+  padding-left: 1rem;
+  padding-right: 2rem
+}
+.fd-tree--compact .fd-tree__item-container {
+  min-height: 2rem
+}
+.fd-tree--compact .fd-tree__content {
+  min-height: 2rem
+}
+.fd-tree--compact .fd-tree__content--wrap .fd-tree__text {
+  line-height: 1.4
+}
+.fd-tree--compact .fd-tree__text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 2rem
+}
+.fd-tree--compact .fd-tree__expander {
+  min-height: 2rem;
+  min-width: 2rem;
+  margin-left: -2rem
+}
+.fd-tree--compact .fd-tree__expander [class*=sap-icon],
+.fd-tree--compact .fd-tree__expander[class*=sap-icon] {
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem)
+}
+.fd-tree--compact .fd-tree__expander[dir=rtl],
+[dir=rtl] .fd-tree--compact .fd-tree__expander {
+  margin-left: 0;
+  margin-right: -2rem
+}
+.fd-tree--compact .fd-tree__icon {
+  min-height: 2rem;
+  line-height: 2rem;
+  font-size: 1rem
+}
+.fd-tree--no-border .fd-tree__item[aria-level="1"] > .fd-tree__item-container {
+  border-bottom: .0625rem solid transparent;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid transparent
+}
+.fd-tree--no-border .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-selected,
+.fd-tree--no-border .fd-tree__item[aria-level="1"] > .fd-tree__item-container[aria-selected=true] {
+  border-bottom: .0625rem solid #0854a0;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
+}
+.fd-tree--active .fd-tree__item-container,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container {
+  cursor: pointer
+}
+.fd-tree--active .fd-tree__item-container.is-hover,
+.fd-tree--active .fd-tree__item-container:hover,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-hover,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:hover {
+  background: #f5f5f5;
+  background: var(--sapList_Hover_Background,#f5f5f5)
+}
+.fd-tree--active .fd-tree__item-container.is-selected,
+.fd-tree--active .fd-tree__item-container[aria-selected=true],
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-selected,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container[aria-selected=true] {
+  background: #e5f0fa;
+  background: var(--sapList_SelectionBackgroundColor,#e5f0fa);
+  border-bottom: .0625rem solid #0854a0;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
+}
+.fd-tree--active .fd-tree__item-container.is-selected.is-hover,
+.fd-tree--active .fd-tree__item-container.is-selected:hover,
+.fd-tree--active .fd-tree__item-container[aria-selected=true].is-hover,
+.fd-tree--active .fd-tree__item-container[aria-selected=true]:hover,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-selected.is-hover,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-selected:hover,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container[aria-selected=true].is-hover,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container[aria-selected=true]:hover {
+  background: #d8e9f8;
+  background: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+}
+.fd-tree--active .fd-tree__item-container.is-active,
+.fd-tree--active .fd-tree__item-container:active,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active {
+  background: #0854a0;
+  background: var(--sapList_Active_Background,#0854a0)
+}
+.fd-tree--active .fd-tree__item-container.is-active .fd-button.is-focus,
+.fd-tree--active .fd-tree__item-container.is-active .fd-button:focus,
+.fd-tree--active .fd-tree__item-container.is-active .fd-tree__expander.is-focus,
+.fd-tree--active .fd-tree__item-container.is-active .fd-tree__expander:focus,
+.fd-tree--active .fd-tree__item-container:active .fd-button.is-focus,
+.fd-tree--active .fd-tree__item-container:active .fd-button:focus,
+.fd-tree--active .fd-tree__item-container:active .fd-tree__expander.is-focus,
+.fd-tree--active .fd-tree__item-container:active .fd-tree__expander:focus,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active .fd-button.is-focus,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active .fd-button:focus,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active .fd-tree__expander.is-focus,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active .fd-tree__expander:focus,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active .fd-button.is-focus,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active .fd-button:focus,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active .fd-tree__expander.is-focus,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active .fd-tree__expander:focus {
+  z-index: 5;
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+}
+.fd-tree--active .fd-tree__item-container.is-active .fd-tree__icon [class*=sap-icon],
+.fd-tree--active .fd-tree__item-container.is-active .fd-tree__icon[class*=sap-icon],
+.fd-tree--active .fd-tree__item-container:active .fd-tree__icon [class*=sap-icon],
+.fd-tree--active .fd-tree__item-container:active .fd-tree__icon[class*=sap-icon],
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active .fd-tree__icon [class*=sap-icon],
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active .fd-tree__icon[class*=sap-icon],
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active .fd-tree__icon [class*=sap-icon],
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active .fd-tree__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapList_Active_TextColor,#fff)
+}
+.fd-tree--active .fd-tree__item-container.is-active .fd-button,
+.fd-tree--active .fd-tree__item-container.is-active .fd-tree__text,
+.fd-tree--active .fd-tree__item-container:active .fd-button,
+.fd-tree--active .fd-tree__item-container:active .fd-tree__text,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active .fd-button,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active .fd-tree__text,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active .fd-button,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active .fd-tree__text {
+  color: #fff;
+  color: var(--sapList_Active_TextColor,#fff)
+}
+.fd-tree--active .fd-tree__item-container.is-active.is-hover,
+.fd-tree--active .fd-tree__item-container.is-active:hover,
+.fd-tree--active .fd-tree__item-container:active.is-hover,
+.fd-tree--active .fd-tree__item-container:active:hover,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active.is-hover,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active:hover,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active.is-hover,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active:hover {
+  background: #0854a0;
+  background: var(--sapList_Active_Background,#0854a0)
+}
+.fd-tree--active .fd-tree__item-container.is-active.is-selected,
+.fd-tree--active .fd-tree__item-container.is-active[aria-selected=true],
+.fd-tree--active .fd-tree__item-container:active.is-selected,
+.fd-tree--active .fd-tree__item-container:active[aria-selected=true],
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active.is-selected,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active[aria-selected=true],
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active.is-selected,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active[aria-selected=true] {
+  background: #0854a0;
+  background: var(--sapList_Active_Background,#0854a0)
+}
+.fd-tree--active .fd-tree__item-container.is-active.is-selected.is-hover,
+.fd-tree--active .fd-tree__item-container.is-active.is-selected:hover,
+.fd-tree--active .fd-tree__item-container.is-active[aria-selected=true].is-hover,
+.fd-tree--active .fd-tree__item-container.is-active[aria-selected=true]:hover,
+.fd-tree--active .fd-tree__item-container:active.is-selected.is-hover,
+.fd-tree--active .fd-tree__item-container:active.is-selected:hover,
+.fd-tree--active .fd-tree__item-container:active[aria-selected=true].is-hover,
+.fd-tree--active .fd-tree__item-container:active[aria-selected=true]:hover,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active.is-selected.is-hover,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active.is-selected:hover,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active[aria-selected=true].is-hover,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active[aria-selected=true]:hover,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active.is-selected.is-hover,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active.is-selected:hover,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active[aria-selected=true].is-hover,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active[aria-selected=true]:hover {
+  background: #0854a0;
+  background: var(--sapList_Active_Background,#0854a0)
+}
+.fd-tree--active .fd-tree__item-container.is-active.is-focus,
+.fd-tree--active .fd-tree__item-container.is-active:focus,
+.fd-tree--active .fd-tree__item-container:active.is-focus,
+.fd-tree--active .fd-tree__item-container:active:focus,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active.is-focus,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active:focus,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active.is-focus,
+.fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active:focus {
+  z-index: 5;
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+}
+.fd-tree--no-data .fd-tree__text {
+  text-align: center
+}
+.fd-tree .has-highlight-indicator {
+  -webkit-box-shadow: inset .375rem 0 0 0 #0a6ed1;
+  -webkit-box-shadow: inset .375rem 0 0 0 var(--sapInformationBorderColor,#0a6ed1);
+  box-shadow: inset .375rem 0 0 0 #0a6ed1;
+  box-shadow: inset .375rem 0 0 0 var(--sapInformationBorderColor,#0a6ed1)
+}
+.fd-tree .has-highlight-indicator[dir=rtl],
+[dir=rtl] .fd-tree .has-highlight-indicator {
+  -webkit-box-shadow: inset -.375rem 0 0 0 #0a6ed1;
+  -webkit-box-shadow: inset -.375rem 0 0 0 var(--sapInformationBorderColor,#0a6ed1);
+  box-shadow: inset -.375rem 0 0 0 #0a6ed1;
+  box-shadow: inset -.375rem 0 0 0 var(--sapInformationBorderColor,#0a6ed1)
+}
+.fd-tree .has-highlight-indicator.is-navigated {
+  -webkit-box-shadow: inset -.1875rem 0 0 0 #0854a0,inset .375rem 0 0 0 #0a6ed1;
+  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset .375rem 0 0 0 var(--sapInformationBorderColor,#0a6ed1);
+  box-shadow: inset -.1875rem 0 0 0 #0854a0,inset .375rem 0 0 0 #0a6ed1;
+  box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset .375rem 0 0 0 var(--sapInformationBorderColor,#0a6ed1)
+}
+.fd-tree .has-highlight-indicator.is-navigated[dir=rtl],
+[dir=rtl] .fd-tree .has-highlight-indicator.is-navigated {
+  -webkit-box-shadow: inset .1875rem 0 0 0 #0854a0,inset -.375rem 0 0 0 #0a6ed1;
+  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset -.375rem 0 0 0 var(--sapInformationBorderColor,#0a6ed1);
+  box-shadow: inset .1875rem 0 0 0 #0854a0,inset -.375rem 0 0 0 #0a6ed1;
+  box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset -.375rem 0 0 0 var(--sapInformationBorderColor,#0a6ed1)
+}
+.fd-tree .has-highlight-indicator--error {
+  -webkit-box-shadow: inset .375rem 0 0 0 #b00;
+  -webkit-box-shadow: inset .375rem 0 0 0 var(--sapErrorBorderColor,#b00);
+  box-shadow: inset .375rem 0 0 0 #b00;
+  box-shadow: inset .375rem 0 0 0 var(--sapErrorBorderColor,#b00)
+}
+.fd-tree .has-highlight-indicator--error[dir=rtl],
+[dir=rtl] .fd-tree .has-highlight-indicator--error {
+  -webkit-box-shadow: inset -.375rem 0 0 0 #b00;
+  -webkit-box-shadow: inset -.375rem 0 0 0 var(--sapErrorBorderColor,#b00);
+  box-shadow: inset -.375rem 0 0 0 #b00;
+  box-shadow: inset -.375rem 0 0 0 var(--sapErrorBorderColor,#b00)
+}
+.fd-tree .has-highlight-indicator--error.is-navigated {
+  -webkit-box-shadow: inset -.1875rem 0 0 0 #0854a0,inset .375rem 0 0 0 #b00;
+  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset .375rem 0 0 0 var(--sapErrorBorderColor,#b00);
+  box-shadow: inset -.1875rem 0 0 0 #0854a0,inset .375rem 0 0 0 #b00;
+  box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset .375rem 0 0 0 var(--sapErrorBorderColor,#b00)
+}
+.fd-tree .has-highlight-indicator--error.is-navigated[dir=rtl],
+[dir=rtl] .fd-tree .has-highlight-indicator--error.is-navigated {
+  -webkit-box-shadow: inset .1875rem 0 0 0 #0854a0,inset -.375rem 0 0 0 #b00;
+  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset -.375rem 0 0 0 var(--sapErrorBorderColor,#b00);
+  box-shadow: inset .1875rem 0 0 0 #0854a0,inset -.375rem 0 0 0 #b00;
+  box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset -.375rem 0 0 0 var(--sapErrorBorderColor,#b00)
+}
+.fd-tree .has-highlight-indicator--warning {
+  -webkit-box-shadow: inset .375rem 0 0 0 #e9730c;
+  -webkit-box-shadow: inset .375rem 0 0 0 var(--sapWarningBorderColor,#e9730c);
+  box-shadow: inset .375rem 0 0 0 #e9730c;
+  box-shadow: inset .375rem 0 0 0 var(--sapWarningBorderColor,#e9730c)
+}
+.fd-tree .has-highlight-indicator--warning[dir=rtl],
+[dir=rtl] .fd-tree .has-highlight-indicator--warning {
+  -webkit-box-shadow: inset -.375rem 0 0 0 #e9730c;
+  -webkit-box-shadow: inset -.375rem 0 0 0 var(--sapWarningBorderColor,#e9730c);
+  box-shadow: inset -.375rem 0 0 0 #e9730c;
+  box-shadow: inset -.375rem 0 0 0 var(--sapWarningBorderColor,#e9730c)
+}
+.fd-tree .has-highlight-indicator--warning.is-navigated {
+  -webkit-box-shadow: inset -.1875rem 0 0 0 #0854a0,inset .375rem 0 0 0 #e9730c;
+  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset .375rem 0 0 0 var(--sapWarningBorderColor,#e9730c);
+  box-shadow: inset -.1875rem 0 0 0 #0854a0,inset .375rem 0 0 0 #e9730c;
+  box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset .375rem 0 0 0 var(--sapWarningBorderColor,#e9730c)
+}
+.fd-tree .has-highlight-indicator--warning.is-navigated[dir=rtl],
+[dir=rtl] .fd-tree .has-highlight-indicator--warning.is-navigated {
+  -webkit-box-shadow: inset .1875rem 0 0 0 #0854a0,inset -.375rem 0 0 0 #e9730c;
+  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset -.375rem 0 0 0 var(--sapWarningBorderColor,#e9730c);
+  box-shadow: inset .1875rem 0 0 0 #0854a0,inset -.375rem 0 0 0 #e9730c;
+  box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset -.375rem 0 0 0 var(--sapWarningBorderColor,#e9730c)
+}
+.fd-tree .has-highlight-indicator--success {
+  -webkit-box-shadow: inset .375rem 0 0 0 #107e3e;
+  -webkit-box-shadow: inset .375rem 0 0 0 var(--sapSuccessBorderColor,#107e3e);
+  box-shadow: inset .375rem 0 0 0 #107e3e;
+  box-shadow: inset .375rem 0 0 0 var(--sapSuccessBorderColor,#107e3e)
+}
+.fd-tree .has-highlight-indicator--success[dir=rtl],
+[dir=rtl] .fd-tree .has-highlight-indicator--success {
+  -webkit-box-shadow: inset -.375rem 0 0 0 #107e3e;
+  -webkit-box-shadow: inset -.375rem 0 0 0 var(--sapSuccessBorderColor,#107e3e);
+  box-shadow: inset -.375rem 0 0 0 #107e3e;
+  box-shadow: inset -.375rem 0 0 0 var(--sapSuccessBorderColor,#107e3e)
+}
+.fd-tree .has-highlight-indicator--success.is-navigated {
+  -webkit-box-shadow: inset -.1875rem 0 0 0 #0854a0,inset .375rem 0 0 0 #107e3e;
+  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset .375rem 0 0 0 var(--sapSuccessBorderColor,#107e3e);
+  box-shadow: inset -.1875rem 0 0 0 #0854a0,inset .375rem 0 0 0 #107e3e;
+  box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset .375rem 0 0 0 var(--sapSuccessBorderColor,#107e3e)
+}
+.fd-tree .has-highlight-indicator--success.is-navigated[dir=rtl],
+[dir=rtl] .fd-tree .has-highlight-indicator--success.is-navigated {
+  -webkit-box-shadow: inset .1875rem 0 0 0 #0854a0,inset -.375rem 0 0 0 #107e3e;
+  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset -.375rem 0 0 0 var(--sapSuccessBorderColor,#107e3e);
+  box-shadow: inset .1875rem 0 0 0 #0854a0,inset -.375rem 0 0 0 #107e3e;
+  box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset -.375rem 0 0 0 var(--sapSuccessBorderColor,#107e3e)
+}

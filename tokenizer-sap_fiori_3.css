@@ -1,0 +1,136 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+.fd-tokenizer {
+  width: 100%;
+  background-color: #fff;
+  background-color: var(--sapField_Background,#fff);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fd-tokenizer__inner {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding: 0 .3125rem;
+  overflow: hidden;
+  float: right;
+  white-space: nowrap;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end
+}
+.fd-tokenizer__inner::-webkit-scrollbar {
+  display: none
+}
+.fd-tokenizer .fd-token {
+  margin-right: .3125rem;
+  max-width: calc(100% - 3rem - .3125rem)
+}
+.fd-tokenizer .fd-token[dir=rtl],
+[dir=rtl] .fd-tokenizer .fd-token {
+  margin: 0 0 0 .3125rem
+}
+.fd-tokenizer__indicator {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: inline-block;
+  cursor: pointer
+}
+.fd-tokenizer__indicator::after,
+.fd-tokenizer__indicator::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tokenizer__input.fd-input {
+  border: none;
+  padding: 0;
+  min-width: 3rem
+}
+.fd-tokenizer__input:first-child {
+  padding: 0 .3125rem
+}
+.fd-tokenizer__input:last-child {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%
+}
+.fd-tokenizer__input.is-focus,
+.fd-tokenizer__input:focus {
+  z-index: 5;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none
+}
+.fd-tokenizer.is-focus,
+.fd-tokenizer:focus {
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  outline-offset: -.0625rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-tokenizer--compact .fd-tokenizer__inner {
+  padding: 0 .25rem
+}
+.fd-tokenizer--compact .fd-tokenizer__input.fd-input {
+  min-width: 2rem
+}
+.fd-tokenizer--compact .fd-tokenizer__input:first-child {
+  padding: 0 .25rem
+}
+.fd-tokenizer--compact .fd-token {
+  margin-right: .25rem;
+  max-width: calc(100% - 2rem - .25rem)
+}
+.fd-tokenizer--compact .fd-token[dir=rtl],
+[dir=rtl] .fd-tokenizer--compact .fd-token {
+  margin: 0 0 0 .3125rem
+}
+.fd-tokenizer--readonly {
+  overflow: visible;
+  background-color: rgba(242,242,242,.5);
+  background-color: var(--sapField_ReadOnly_Background,rgba(242,242,242,.5))
+}
+.fd-tokenizer--readonly .fd-tokenizer__inner {
+  overflow: visible
+}
+.fd-tokenizer--scrollable .fd-tokenizer__inner {
+  -webkit-box-pack: initial;
+  -ms-flex-pack: initial;
+  justify-content: initial;
+  overflow: scroll
+}

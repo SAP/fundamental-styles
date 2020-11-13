@@ -1,0 +1,49 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+.fd-message-toast {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: auto;
+  max-width: 15rem;
+  -webkit-box-shadow: 0 0 0 .0625rem rgba(255,255,255,.5),0 .625rem 1.875rem 0 rgba(0,0,0,.6);
+  -webkit-box-shadow: var(--sapContent_Shadow2,0 0 0 .0625rem rgba(255,255,255,.5),0 .625rem 1.875rem 0 rgba(0,0,0,.6));
+  box-shadow: 0 0 0 .0625rem rgba(255,255,255,.5),0 .625rem 1.875rem 0 rgba(0,0,0,.6);
+  box-shadow: var(--sapContent_Shadow2,0 0 0 .0625rem rgba(255,255,255,.5),0 .625rem 1.875rem 0 rgba(0,0,0,.6));
+  background-color: #29313a;
+  background-color: var(--sapList_Background,#29313a);
+  border-radius: .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  padding: 1rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  color: #fafafa;
+  color: var(--sapList_TextColor,#fafafa)
+}
+.fd-message-toast::after,
+.fd-message-toast::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}

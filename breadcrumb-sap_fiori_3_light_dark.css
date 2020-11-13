@@ -1,0 +1,182 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+/*!
+.fd-breadcrumb
+    .fd-breadcrumb__item
+    .fd-breadcrump__link
+*/
+.fd-breadcrumb {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none
+}
+.fd-breadcrumb::after,
+.fd-breadcrumb::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-breadcrumb__item {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: #d3d7d9;
+  color: var(--sapContent_LabelColor,#d3d7d9)
+}
+.fd-breadcrumb__item::after,
+.fd-breadcrumb__item::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-breadcrumb__item::after {
+  content: "/";
+  color: #d3d7d9;
+  color: var(--sapContent_LabelColor,#d3d7d9);
+  margin-right: .25rem;
+  margin-left: .25rem
+}
+.fd-breadcrumb__item:last-child::after {
+  content: none
+}
+.fd-breadcrumb__item .fd-breadcrumb__popover-body {
+  border: none;
+  border-top-left-radius: .125rem;
+  border-top-right-radius: .125rem
+}
+.fd-breadcrumb__link {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: #91c8f6;
+  color: var(--sapLinkColor,#91c8f6);
+  text-decoration: none;
+  text-shadow: 0 0 .125rem #000;
+  text-shadow: var(--sapContent_TextShadow,0 0 .125rem #000);
+  display: inline-block;
+  -webkit-transition: all 125ms ease-in;
+  transition: all 125ms ease-in;
+  line-height: inherit;
+  display: inline-block;
+  transition: all 125ms ease-in
+}
+.fd-breadcrumb__link::after,
+.fd-breadcrumb__link::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-breadcrumb__link--emphasized {
+  font-weight: 700
+}
+.fd-breadcrumb__link:visited {
+  color: #91c8f6;
+  color: var(--sapLink_Visited_Color,#91c8f6)
+}
+.fd-breadcrumb__link.is-hover,
+.fd-breadcrumb__link:hover {
+  color: #62b0f2;
+  color: var(--sapLink_Hover_Color,#62b0f2);
+  text-decoration: underline
+}
+.fd-breadcrumb__link.is-focus,
+.fd-breadcrumb__link:focus {
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.0625rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #fff;
+  outline-color: var(--sapContent_FocusColor,#fff);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-breadcrumb__link.is-active,
+.fd-breadcrumb__link:active {
+  color: #91c8f6;
+  color: var(--sapLink_Active_Color,#91c8f6)
+}
+.fd-breadcrumb__link--inverted {
+  color: #d3e9fb;
+  color: var(--sapLink_InvertedColor,#d3e9fb);
+  text-shadow: none
+}
+.fd-breadcrumb__link--inverted.is-hover,
+.fd-breadcrumb__link--inverted:hover {
+  color: #d3e9fb;
+  color: var(--sapLink_InvertedColor,#d3e9fb)
+}
+.fd-breadcrumb__link--subtle {
+  color: #c0e0fa;
+  color: var(--sapLink_SubtleColor,#c0e0fa)
+}
+.fd-breadcrumb__link.is-disabled,
+.fd-breadcrumb__link:disabled,
+.fd-breadcrumb__link[aria-disabled=true] {
+  opacity: .4;
+  opacity: var(--sapContent_DisabledOpacity,.4);
+  color: #91c8f6;
+  color: var(--sapLinkColor,#91c8f6);
+  pointer-events: none
+}
+.fd-breadcrumb__dropdown-icon [class*=sap-icon],
+.fd-breadcrumb__dropdown-icon[class*=sap-icon] {
+  color: inherit;
+  background: inherit;
+  font-size: inherit;
+  border-radius: inherit;
+  line-height: 1;
+  text-decoration: inherit;
+  color: #91c8f6;
+  color: var(--sapLinkColor,#91c8f6)
+}

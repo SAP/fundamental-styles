@@ -1,0 +1,220 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+.fd-info-label {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 1.125rem;
+  height: 1.125rem;
+  min-width: 1.125rem;
+  max-width: 100%;
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem);
+  letter-spacing: .0125rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  padding: 0 .625rem;
+  border-width: .063rem;
+  border-style: solid
+}
+.fd-info-label::after,
+.fd-info-label::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-info-label__icon [class*=sap-icon],
+.fd-info-label__icon[class*=sap-icon] {
+  color: inherit;
+  background: inherit;
+  font-size: inherit;
+  border-radius: inherit;
+  line-height: 1;
+  font-size: .75rem;
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  margin-right: .1875rem
+}
+.fd-info-label__icon [class*=sap-icon][dir=rtl],
+.fd-info-label__icon[class*=sap-icon][dir=rtl],
+[dir=rtl] .fd-info-label__icon [class*=sap-icon],
+[dir=rtl] .fd-info-label__icon[class*=sap-icon] {
+  margin-right: 0;
+  margin-left: .1875rem
+}
+.fd-info-label__icon [class*=sap-icon]:first-child:last-child,
+.fd-info-label__icon[class*=sap-icon]:first-child:last-child {
+  margin: 0
+}
+.fd-info-label__icon [class*=sap-icon]:first-child:last-child[dir=rtl],
+.fd-info-label__icon[class*=sap-icon]:first-child:last-child[dir=rtl],
+[dir=rtl] .fd-info-label__icon [class*=sap-icon]:first-child:last-child,
+[dir=rtl] .fd-info-label__icon[class*=sap-icon]:first-child:last-child {
+  margin: 0
+}
+.fd-info-label__text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: inherit;
+  color: inherit;
+  line-height: 1
+}
+.fd-info-label__text::after,
+.fd-info-label__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-info-label--accent-color-1 {
+  background-color: #402706;
+  background-color: var(--sapLegendBackgroundColor1,#402706);
+  border-color: #f0b25f;
+  border-color: var(--sapLegendColor1,#f0b25f)
+}
+.fd-info-label--accent-color-1[class*=sap-icon] {
+  border-color: #f0b25f;
+  border-color: var(--sapLegendColor1,#f0b25f)
+}
+.fd-info-label--accent-color-2 {
+  background-color: #421c04;
+  background-color: var(--sapLegendBackgroundColor2,#421c04);
+  border-color: #f58c4b;
+  border-color: var(--sapLegendColor2,#f58c4b)
+}
+.fd-info-label--accent-color-2[class*=sap-icon] {
+  border-color: #f58c4b;
+  border-color: var(--sapLegendColor2,#f58c4b)
+}
+.fd-info-label--accent-color-3 {
+  background-color: #341111;
+  background-color: var(--sapLegendBackgroundColor3,#341111);
+  border-color: #d88b8b;
+  border-color: var(--sapLegendColor3,#d88b8b)
+}
+.fd-info-label--accent-color-3[class*=sap-icon] {
+  border-color: #d88b8b;
+  border-color: var(--sapLegendColor3,#d88b8b)
+}
+.fd-info-label--accent-color-4 {
+  background-color: #3c0c32;
+  background-color: var(--sapLegendBackgroundColor5,#3c0c32);
+  border-color: #bd8969;
+  border-color: var(--sapLegendColor4,#bd8969)
+}
+.fd-info-label--accent-color-4[class*=sap-icon] {
+  border-color: #bd8969;
+  border-color: var(--sapLegendColor4,#bd8969)
+}
+.fd-info-label--accent-color-5 {
+  background-color: #020544;
+  background-color: var(--sapLegendBackgroundColor20,#020544);
+  border-color: #de54c1;
+  border-color: var(--sapLegendColor5,#de54c1)
+}
+.fd-info-label--accent-color-5[class*=sap-icon] {
+  border-color: #de54c1;
+  border-color: var(--sapLegendColor5,#de54c1)
+}
+.fd-info-label--accent-color-6 {
+  background-color: #003247;
+  background-color: var(--sapLegendBackgroundColor6,#003247);
+  border-color: #6bd3ff;
+  border-color: var(--sapLegendColor6,#6bd3ff)
+}
+.fd-info-label--accent-color-6[class*=sap-icon] {
+  border-color: #6bd3ff;
+  border-color: var(--sapLegendColor6,#6bd3ff)
+}
+.fd-info-label--accent-color-7 {
+  background-color: #0a3d3d;
+  background-color: var(--sapLegendBackgroundColor7,#0a3d3d);
+  border-color: #21c4c4;
+  border-color: var(--sapLegendColor7,#21c4c4)
+}
+.fd-info-label--accent-color-7[class*=sap-icon] {
+  border-color: #21c4c4;
+  border-color: var(--sapLegendColor7,#21c4c4)
+}
+.fd-info-label--accent-color-8 {
+  background-color: #303d0d;
+  background-color: var(--sapLegendBackgroundColor8,#303d0d);
+  border-color: #afd645;
+  border-color: var(--sapLegendColor8,#afd645)
+}
+.fd-info-label--accent-color-8[class*=sap-icon] {
+  border-color: #afd645;
+  border-color: var(--sapLegendColor8,#afd645)
+}
+.fd-info-label--accent-color-9 {
+  background-color: #2c1a28;
+  background-color: var(--sapLegendBackgroundColor10,#2c1a28);
+  border-color: #b0bcc5;
+  border-color: var(--sapLegendColor9,#b0bcc5)
+}
+.fd-info-label--accent-color-9[class*=sap-icon] {
+  border-color: #b0bcc5;
+  border-color: var(--sapLegendColor9,#b0bcc5)
+}
+.fd-info-label--accent-color-10 {
+  background-color: #1f252a;
+  background-color: var(--sapLegendBackgroundColor9,#1f252a);
+  border-color: #bb8aaf;
+  border-color: var(--sapLegendColor10,#bb8aaf)
+}
+.fd-info-label--accent-color-10[class*=sap-icon] {
+  border-color: #bb8aaf;
+  border-color: var(--sapLegendColor10,#bb8aaf)
+}
+.fd-info-label--display {
+  height: 1rem;
+  min-width: 1rem
+}
+.fd-info-label--numeric {
+  padding: 0 .3125rem
+}
+.fd-info-label--icon {
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 .3125rem;
+  line-height: 1rem
+}

@@ -1,0 +1,83 @@
+/*!
+ * Fundamental Library Styles v0.13.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+.fd-object-identifier__title {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: #fff;
+  color: var(--sapList_TextColor,#fff);
+  font-size: 1rem;
+  font-size: var(--sapFontLargeSize,1rem)
+}
+.fd-object-identifier__title::after,
+.fd-object-identifier__title::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-object-identifier__title--link {
+  color: #fff;
+  color: var(--sapLinkColor,#fff)
+}
+.fd-object-identifier__title--bold {
+  font-weight: 700
+}
+.fd-object-identifier__title--bold .fd-object-identifier__link {
+  font-weight: 700
+}
+.fd-object-identifier__link,
+.fd-object-identifier__title--bold .fd-object-identifier__link {
+  font-size: 1rem;
+  font-size: var(--sapFontLargeSize,1rem)
+}
+.fd-object-identifier__text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin-top: .5rem;
+  color: #fff;
+  color: var(--sapContent_LabelColor,#fff)
+}
+.fd-object-identifier__text::after,
+.fd-object-identifier__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-object-identifier__table .fd-object-identifier__link,
+.fd-object-identifier__table .fd-object-identifier__title,
+.fd-object-identifier__table .fd-object-identifier__title .fd-object-identifier__link,
+.fd-object-identifier__table .fd-object-identifier__title--bold,
+.fd-object-identifier__table .fd-object-identifier__title--bold .fd-object-identifier__link,
+.fd-object-identifier__table .fd-object-identifier__title--link {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem)
+}
