@@ -2,25 +2,61 @@ export default {
     title: 'Components/Panel',
     parameters: {
         description: `
-The panel is a container for grouping and displaying information.
-It can be collapsed to save space on the screen.
+The panel is a container for grouping and displaying information. Panels are responsive and can be collapsed to save additional screen space.
 
-Use the panel if:
-
+##Usage
+**Use the panel if:**
+        
 - You need to group or display information.
-- You want to give users the option of hiding this information.
+- You want to give users the option to hide this information.
 - You want to show additional information on demand (for example, a panel could show optional input fields for an advanced search).
 
-Do not use the panel if:
 
-- You are designing an object page. Never use panels in the object page content area.
+**Do not use the panel in:**
+        
+- The content area of a **Dynamic Page**.
+        
+
+##Types
+There are two types of panels: fixed and expandable.
+        
   `,
         components: ['button', 'icon', 'panel', 'segmented-button', 'toolbar']
     }
 };
 
-/** Expandable panels are much like fixed panels, except their content can be expanded and collapsed
- * (including the info toolbar, if available). */
+export const fixed = () => `<div class="fd-panel fd-panel--fixed">
+    <div class="fd-panel__header">
+        <h4 class="fd-panel__title">Panel header</h4>
+        <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+            <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
+              <button class="fd-button is-selected" id="jhqDKYrt" aria-pressed="true">Left</button>
+              <button class="fd-button">Middle</button>
+              <button class="fd-button">Right</button>
+            </div>
+        </div>
+    </div>
+    <div role="region" aria-labelledby="jhqDKYrt" class="fd-panel__content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+        et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+        Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+        Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+        Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+        Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+        Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+    </div>
+</div>
+`;
+
+fixed.storyName = 'Fixed';
+
+fixed.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: `When the height of the panel's content is set to a fixed size, the content area becomes scrollable.
+        ` }
+};
 
 export const expandable = () => `<div class="fd-panel">
     <div class="fd-panel__header">
@@ -30,7 +66,7 @@ export const expandable = () => `<div class="fd-panel">
                 <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
-        <h4 class="fd-panel__title" id="asdASD123">Panel Header Collapsed</h4>
+        <h4 class="fd-panel__title" id="asdASD123">Panel header collapsed</h4>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
@@ -60,7 +96,7 @@ export const expandable = () => `<div class="fd-panel">
                 <i class="sap-icon--slim-arrow-down"></i>
             </button>
         </div>
-        <h4 class="fd-panel__title" id="asdASD1234">Panel Header Expanded</h4>
+        <h4 class="fd-panel__title" id="asdASD1234">Panel header expanded</h4>
     </div>
     <div role="region" aria-labelledby="jhqDKYdf" class="fd-panel__content" aria-hidden="false" id="fghqwe3214213">
         <span>
@@ -76,48 +112,14 @@ export const expandable = () => `<div class="fd-panel">
 </div>
 `;
 
+expandable.storyName = 'Expandable';
+
 expandable.parameters = {
     docs: {
-        iframeHeight: 200
-    }
+        iframeHeight: 200,
+        storyDescription: `Expandable panels are much like fixed panels, except their content can be expanded and collapsed (including the info toolbar, if available).
+        ` }
 };
-
-/**
- * Fixed panels are useful for grouping custom content. They include headers and info toolbars.
-To create a fixed panel, add the `--fixed` modifier.
- */
-
-export const fixed = () => `<div class="fd-panel fd-panel--fixed">
-    <div class="fd-panel__header">
-        <h4 class="fd-panel__title">Panel Header</h4>
-        <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-            <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
-            <div class="fd-segmented-button" role="group" aria-label="Group label">
-              <button class="fd-button is-selected" id="jhqDKYrt" aria-pressed="true">Left</button>
-              <button class="fd-button">Middle</button>
-              <button class="fd-button">Right</button>
-            </div>
-        </div>
-    </div>
-    <div role="region" aria-labelledby="jhqDKYrt" class="fd-panel__content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
-        et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
-        Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
-        Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
-        Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
-        Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
-        Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
-    </div>
-</div>
-`;
-
-fixed.parameters = {
-    docs: {
-        iframeHeight: 200
-    }
-};
-
-/** To use a compact panel, add the `--compact` modifier. */
 
 export const compact = () => `<div class="fd-panel fd-panel--compact">
     <div class="fd-panel__header">
@@ -126,7 +128,7 @@ export const compact = () => `<div class="fd-panel fd-panel--compact">
                 <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
-        <h4 class="fd-panel__title" id="asdASD234">Panel Header</h4>
+        <h4 class="fd-panel__title" id="asdASD234">Panel header</h4>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
@@ -148,13 +150,14 @@ export const compact = () => `<div class="fd-panel fd-panel--compact">
 </div>
 `;
 
+compact.storyName = 'Compact';
+
 compact.parameters = {
     docs: {
-        iframeHeight: 200
-    }
+        iframeHeight: 200,
+        storyDescription: `Panels can be displayed in compact mode, which decreases the padding and button sizes. To display a compact panel, add the \`fd-panel--compact\` modifier class to the main element.
+        ` }
 };
-
-/** When the height of the panel\'s content is set to a fixed size, the content area can be scrolled through. */
 
 export const fixedHeightContent = () => `<div class="fd-panel">
     <div class="fd-panel__header">
@@ -163,7 +166,7 @@ export const fixedHeightContent = () => `<div class="fd-panel">
                 <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
-        <h4 class="fd-panel__title" id="asdASD345">Panel Header</h4>
+        <h4 class="fd-panel__title" id="asdASD345">Panel header</h4>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
@@ -194,8 +197,11 @@ export const fixedHeightContent = () => `<div class="fd-panel">
 </div>
 `;
 
+fixedHeightContent.storyName = 'Fixed height';
+
 fixedHeightContent.parameters = {
     docs: {
-        iframeHeight: 300
-    }
+        iframeHeight: 300,
+        storyDescription: `When the height of the panel's content is set to a fixed size, the content area becomes scrollable.
+        ` }
 };
