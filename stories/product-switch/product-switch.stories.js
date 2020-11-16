@@ -309,7 +309,7 @@ export const Small = () => `<div style="width:450px;">
             <li class="fd-product-switch__item selected" tabindex="0">
                 <i role="presentation" class="fd-product-switch__icon sap-icon--business-objects-experience"></i>
                 <div class="fd-product-switch__text">
-                    <div class="fd-product-switch__title">Analytics Cloud Analytics CloudAnalytics CloudAnalytics Cloud</div>
+                    <div class="fd-product-switch__title">Analytics Cloud Analytics Cloud Analytics Cloud Analytics Cloud</div>
                     <div class="fd-product-switch__subtitle">Analytics Cloud</div>
                 </div>
             </li>
@@ -349,7 +349,7 @@ export const Small = () => `<div style="width:450px;">
             <li class="fd-product-switch__item" tabindex="0">
                 <i role="presentation" class="fd-product-switch__icon sap-icon--customer"></i>
                 <div class="fd-product-switch__text">
-                    <div class="fd-product-switch__title">Product Management Very Long Text ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus rhoncus, tempus diam non, mattis tellus. Praesent ut odio ac lorem mollis dapibus. Maecenas turpis libero, placerat et dui ut, sagittis aliquam augue. Etiam et ex tempus, lobortis velit eget, laoreet nibh. Aliquam molestie sem at lectus ullamcorper eleifend. </div>
+                    <div class="fd-product-switch__title">Product Management (very long text) ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lacus rhoncus, tempus diam non, mattis tellus. Praesent ut odio ac lorem mollis dapibus. Maecenas turpis libero, placerat et dui ut, sagittis aliquam augue. Etiam et ex tempus, lobortis velit eget, laoreet nibh. Aliquam molestie sem at lectus ullamcorper eleifend. </div>
                 </div>
             </li>
             <li class="fd-product-switch__item" tabindex="0">
