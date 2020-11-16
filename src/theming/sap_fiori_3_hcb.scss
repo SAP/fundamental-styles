@@ -125,5 +125,8 @@
 
   /** Flexible Column Layout */
   --fdFlexibleColumnLayoutToggleImageColor: var(--sapObjectHeader_BorderColor);
-  --fdFlexibleColumnLayoutBorder: solid 0.0625rem var(--sapGroup_ContentBorderColor)
+  --fdFlexibleColumnLayoutBorder: solid 0.0625rem var(--sapGroup_ContentBorderColor);
+  --fdFlexibleColumnBackgroundSolid: var(--sapBackgroundColor);
+  --fdFlexibleColumnBackgroundTranslucent: var(--sapBackgroundColor);
+  --fdFlexibleColumnBackgroundTransparent: var(--sapBackgroundColor);
 }

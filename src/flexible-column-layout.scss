@@ -30,7 +30,7 @@ $block: #{$fd-namespace}-flexible-column-layout;
 
     position: relative;
     width: 1rem;
-    background: var(--sapShell_Background);
+    background-color: var(--fdFlexibleColumnBackgroundSolid);
 
     @include both-pseudo-selectors() {
       content: "";
@@ -85,6 +85,18 @@ $block: #{$fd-namespace}-flexible-column-layout;
     &--hidden {
       border: none;
       min-width: 0;
+    }
+  }
+
+  &--translucent {
+    .#{$block}__separator {
+      background-color: var(--fdFlexibleColumnBackgroundTranslucent);
+    }
+  }
+
+  &--transparent {
+    .#{$block}__separator {
+      background-color: var(--fdFlexibleColumnBackgroundTransparent);
     }
   }
 }

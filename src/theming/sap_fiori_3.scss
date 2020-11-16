@@ -126,4 +126,7 @@
   /** Flexible Column Layout */
   --fdFlexibleColumnLayoutToggleImageColor: var(--sapHighlightColor);
   --fdFlexibleColumnLayoutBorder: none;
+  --fdFlexibleColumnBackgroundSolid: var(--sapShell_Background);
+  --fdFlexibleColumnBackgroundTranslucent: var(--sapGroup_ContentBackground);
+  --fdFlexibleColumnBackgroundTransparent: transparent;
 }
