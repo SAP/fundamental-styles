@@ -16,11 +16,6 @@ $block: #{$fd-namespace}-flexible-column-layout;
     }
   }
 
-  @mixin center-vertically() {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
   @include fd-reset();
   @include fd-flex();
 
@@ -37,10 +32,9 @@ $block: #{$fd-namespace}-flexible-column-layout;
       display: block;
       width: 0.0625rem;
       height: 4rem;
-      position: absolute;
       transition: all 0.1s ease-in;
 
-      @include center-vertically();
+      @include fd-absolute-horizontal-center();
     }
 
     &::before {
@@ -65,6 +59,8 @@ $block: #{$fd-namespace}-flexible-column-layout;
     width: 1.5rem;
     min-width: 1.5rem;
     justify-content: center;
+
+    @include fd-absolute-center();
   }
 
   &__column {
