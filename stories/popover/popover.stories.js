@@ -1,22 +1,21 @@
 export default {
     title: 'Components/Popover',
     parameters: {
-        description: `The popover displays additional information for an object in a compact way and without leaving the page. The component contains two essential elements: the control (trigger) and body (content). It can also be paired with a **Menu**, whereas the menu button would trigger a dropdown (body). 
+        description: `The popover displays additional information for an object in a compact way without leaving the page. The component contains two essential elements: the control (trigger) and body (content). It can also be paired with a **Menu**, whereas the menu button would trigger a dropdown (body). 
 
-##Usage
-        
+##Usage   
 **Use a popover if:**
         
 - You need to define your own structure.
 - You want to show UI elements that are not available with the quick view.
-        
+
+
 **Do not use a popover if:**
         
 - The objects are in a master list (in this case, the details are shown in the details area).
-        
-        
+
+
 ##Guidelines
-        
 - As a general rule, it is suggested that one popover be revealed on the page at any given time. Opening one popover should close all others to prevent multiple layers and collisions of several popovers.
 - Show status information as text fields in a content group. You can use semantic text colors.
 - You can define a height for the popover. If the content exceeds the height, a scroll bar is displayed.
@@ -447,11 +446,11 @@ variants.parameters = {
         storyDescription: `There are several variants of the popover body that can be displayed depending on the use case.
 
 Variant | Modifier class | Description
-:------ | :--------------- :---------------
+:------ | :------------- | :---------------
 Header | \`fd-popover__body-header\` | To display a header with text.
 Footer | \`fd-popover__body-footer\` | To display a footer with actions.
 Header, subheader and footer | \`fd-popover__body-header\` containing \`fd-bar fd-bar--header-with-subheader\` and \`fd-bar fd-bar--subheader\` | This variant uses the **Bar** component. 
-Cozy mode | fd-bar--cozy | Add this modifier class to the previous variant in the header area where \`fd-bar\` is used.
+Cozy mode | \`fd-bar--cozy\` | Add this modifier class to the header area where \`fd-bar\` is used.
         
         ` }
 };
@@ -625,6 +624,6 @@ scrollable.storyName = 'Scrollable';
 scrollable.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `When the content overflows, the popover body can become scrollable. To achieve this, add the \`fd-popover-body__wrapper\` wrapper on the element below the body element.
+        storyDescription: `When the content overflows, the popover body can become scrollable. To achieve this, add \`fd-popover-body__wrapper\` on the element below the body element.
         ` }
 };
