@@ -9,7 +9,7 @@
 @mixin emphasizedHover {
   @include applyColors(
     var(--sapButton_Emphasized_Hover_TextColor),
-    var(--fdButton_Emphasized_Border_Color),
+    var(--sapButton_Emphasized_Hover_BorderColor),
     var(--sapButton_Emphasized_Hover_Background)
   );
 }
