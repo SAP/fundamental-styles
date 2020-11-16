@@ -10,10 +10,11 @@ The panel is a container for grouping and displaying information. Panels are res
 - You need to group or display information.
 - You want to give users the option to hide this information.
 - You want to show additional information on demand (for example, a panel could show optional input fields for an advanced search).
+
+
+**Do not use the panel in:**
         
-**Do not use the panel if:**
-        
-- You are designing an object page. Panels should not be used in the object page content area.
+- The content area of a **Dynamic Page**.
         
 
 ##Types
@@ -24,81 +25,9 @@ There are two types of panels: fixed and expandable.
     }
 };
 
-fixed.storyName = 'Expandable';
-
-fixed.parameters = {
-    docs: {
-        iframeHeight: 200,
-        storyDescription: `Fixed panels are useful for grouping custom content. They include headers and info toolbars. To display a fixed panel, add the \`fd-panel--fixed\` modifier class to the main element.
-        ` }
-};
-
-export const expandable = () => `<div class="fd-panel">
-    <div class="fd-panel__header">
-        <div class="fd-panel__expand">
-            <button class="fd-button fd-button--transparent fd-panel__button"
-                aria-expanded="false" aria-haspopup="true" aria-label="expand/collapse panel" aria-controls="fghqwe321">
-                <i class="sap-icon--slim-arrow-right"></i>
-            </button>
-        </div>
-        <h4 class="fd-panel__title" id="asdASD123">Panel Header Collapsed</h4>
-        <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-            <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
-            <div class="fd-segmented-button" role="group" aria-label="Group label">
-              <button class="fd-button is-selected" id="jhqDKYdf" aria-pressed="true">Left</button>
-              <button class="fd-button">Middle</button>
-              <button class="fd-button">Right</button>
-            </div>
-        </div>
-    </div>
-    <div role="region" aria-labelledby="jhqDKYdf" class="fd-panel__content" aria-hidden="true" id="fghqwe321">
-        <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
-            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
-            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
-            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
-            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
-            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
-            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
-        </span>
-    </div>
-</div>
-<div class="fd-panel">
-    <div class="fd-panel__header">
-        <div class="fd-panel__expand">
-            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="true"
-                aria-haspopup="true" aria-label="expand/collapse panel" aria-controls="fghqwe3214213">
-                <i class="sap-icon--slim-arrow-down"></i>
-            </button>
-        </div>
-        <h4 class="fd-panel__title" id="asdASD1234">Panel Header Expanded</h4>
-    </div>
-    <div role="region" aria-labelledby="jhqDKYdf" class="fd-panel__content" aria-hidden="false" id="fghqwe3214213">
-        <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
-            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
-            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
-            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
-            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
-            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
-            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
-        </span>
-    </div>
-</div>
-`;
-
-expandable.storyName = 'Expandable';
-
-expandable.parameters = {
-    docs: {
-        iframeHeight: 200,
-        storyDescription: `Expandable panels are much like fixed panels, except their content can be expanded and collapsed (including the info toolbar, if available).
-        ` }
-};
-
 export const fixed = () => `<div class="fd-panel fd-panel--fixed">
     <div class="fd-panel__header">
-        <h4 class="fd-panel__title">Panel Header</h4>
+        <h4 class="fd-panel__title">Panel header</h4>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
@@ -129,6 +58,69 @@ fixed.parameters = {
         ` }
 };
 
+export const expandable = () => `<div class="fd-panel">
+    <div class="fd-panel__header">
+        <div class="fd-panel__expand">
+            <button class="fd-button fd-button--transparent fd-panel__button"
+                aria-expanded="false" aria-haspopup="true" aria-label="expand/collapse panel" aria-controls="fghqwe321">
+                <i class="sap-icon--slim-arrow-right"></i>
+            </button>
+        </div>
+        <h4 class="fd-panel__title" id="asdASD123">Panel header collapsed</h4>
+        <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+            <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
+              <button class="fd-button is-selected" id="jhqDKYdf" aria-pressed="true">Left</button>
+              <button class="fd-button">Middle</button>
+              <button class="fd-button">Right</button>
+            </div>
+        </div>
+    </div>
+    <div role="region" aria-labelledby="jhqDKYdf" class="fd-panel__content" aria-hidden="true" id="fghqwe321">
+        <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+        </span>
+    </div>
+</div>
+<div class="fd-panel">
+    <div class="fd-panel__header">
+        <div class="fd-panel__expand">
+            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="true"
+                aria-haspopup="true" aria-label="expand/collapse panel" aria-controls="fghqwe3214213">
+                <i class="sap-icon--slim-arrow-down"></i>
+            </button>
+        </div>
+        <h4 class="fd-panel__title" id="asdASD1234">Panel header expanded</h4>
+    </div>
+    <div role="region" aria-labelledby="jhqDKYdf" class="fd-panel__content" aria-hidden="false" id="fghqwe3214213">
+        <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+        </span>
+    </div>
+</div>
+`;
+
+expandable.storyName = 'Expandable';
+
+expandable.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: `Expandable panels are much like fixed panels, except their content can be expanded and collapsed (including the info toolbar, if available).
+        ` }
+};
+
 export const compact = () => `<div class="fd-panel fd-panel--compact">
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
@@ -136,7 +128,7 @@ export const compact = () => `<div class="fd-panel fd-panel--compact">
                 <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
-        <h4 class="fd-panel__title" id="asdASD234">Panel Header</h4>
+        <h4 class="fd-panel__title" id="asdASD234">Panel header</h4>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
@@ -174,7 +166,7 @@ export const fixedHeightContent = () => `<div class="fd-panel">
                 <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
-        <h4 class="fd-panel__title" id="asdASD345">Panel Header</h4>
+        <h4 class="fd-panel__title" id="asdASD345">Panel header</h4>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
