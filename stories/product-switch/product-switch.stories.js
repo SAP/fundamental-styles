@@ -1,13 +1,24 @@
 export default {
     title: 'Components/Product Switch',
     parameters: {
-        description: 'Product Switch provides a role based access to all products or LoBs. It shows only one level of navigation.',
+        description: `The product switch provides users with role-based access to several products or lines of businesses (LoBs). The product switch displays an icon button that triggers a **Popover** with the products or LoBs. Because it is designed to be as simple as possible, the product switch only has one level of navigation.
+
+##Usage
+**Use the product switch if:**
+
+-	You want give your users access to several different products or LoBs within the same UI.
+
+
+**Do not use the product switch if:**
+
+-	You want your users to navigate within the current product. In this case, use a product menu (see **Shellbar**).        
+        `,
         tags: ['f3', 'a11y', 'theme'],
         components: ['product-switch', 'popover', 'button', 'icon']
     }
 };
 
-export const productSwitchInShellbar = () => `
+export const Shellbar = () => `
 <div style="background-color: #354A5F;text-align: right;padding: 6px;">
     <div class="fd-product-switch">
         <div class="fd-popover fd-popover--right">
@@ -124,13 +135,15 @@ export const productSwitchInShellbar = () => `
 <div style="min-height: 530px"></div>
 `;
 
-productSwitchInShellbar.parameters = {
+Shellbar.parameters = {
     docs: {
-        iframeHeight: 600
+        iframeHeight: 600,
+        storyDescription: `The product switch button is typically displayed within a **Shellbar** on the far-right side.
+        `
     }
 };
 
-export const productSwitchOnDesktop = () => `<div class="fd-product-switch__body">
+export const Large = () => `<div class="fd-product-switch__body">
    <ul class="fd-product-switch__list">
       <li class="fd-product-switch__item" tabindex="0">
          <i role="presentation" class="fd-product-switch__icon sap-icon--home"></i>
@@ -228,14 +241,14 @@ export const productSwitchOnDesktop = () => `<div class="fd-product-switch__body
 </div>
 `;
 
-productSwitchOnDesktop.parameters = {
+Large.parameters = {
     docs: {
-        storyDescription: 'Desktop or very large screen has a maximum of 4 columns.',
+        storyDescription: 'Product switch is displayed with a maximum of 4 columns on large desktop screens. When the popover contains too many items, it will grow until the maximum is reached. Once the maximum is reached, the popover can be scrolled vertically.',
         iframeHeight: 600
     }
 };
 
-export const productSwitch3ColumnLayout = () => `<div class="fd-product-switch__body fd-product-switch__body--col-3">
+export const Medium = () => `<div class="fd-product-switch__body fd-product-switch__body--col-3">
     <ul class="fd-product-switch__list">
         <li class="fd-product-switch__item" tabindex="0">
             <i role="presentation" class="fd-product-switch__icon sap-icon--home"></i>
@@ -274,17 +287,16 @@ export const productSwitch3ColumnLayout = () => `<div class="fd-product-switch__
 </div>
 `;
 
-productSwitch3ColumnLayout.parameters = {
+Medium.parameters = {
     docs: {
         iframeHeight: 350,
-        storyDescription: `Use the 3 column layout when the Product Switch has up to 6 items. 
-
-Add the modifier class <code>fd-product-switch__body--col-3</code> for 3 column layout.`
+        storyDescription: `If there are 6 (or less) items to display, it is recommended to use the 3-column layout (medium). To display a medium-sized product switch, add the \`fd-product-switchbody--col-3\` modifier class to the main element.
+        `
     }
 };
 
 
-export const smallestScreen = () => `<div style="width:450px;">
+export const Small = () => `<div style="width:450px;">
     <div class="fd-product-switch__body fd-product-switch__body--mobile">
         <ul class="fd-product-switch__list">
             <li class="fd-product-switch__item" tabindex="0">
@@ -384,11 +396,10 @@ export const smallestScreen = () => `<div style="width:450px;">
 </div>
 `;
 
-smallestScreen.parameters = {
+Small.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: `For narrow screens the Product Switch transforms to a List.
-
-Add the modifier class <code>fd-product-switch__body--mobile</code> for a list layout.`
+        storyDescription: `For smaller screens (mobile), the product switch is displayed in list format. To achieve this style, add the \`fd-product-switch__body--mobile\` modifier class to the main element.
+        `
     }
 };
