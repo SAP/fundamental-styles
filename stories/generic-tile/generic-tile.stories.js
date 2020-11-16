@@ -383,7 +383,7 @@ launchTile.parameters = {
         iframeHeight: 500,
         storyDescription: `As the name suggests, the launch tile is used for when users need to launch an application from the launchpad. It can display several elements, such as a header, subtitle, refresh button, footer, KPIs and images. The header can contain a maximum of 3 lines; all 3 lines can be used for the title or one of the lines can be used for a subtitle. If a fourth line title or an optional subtitle line is required, the \`fd-tile_header-content\` can be added to represent a header, which will merge the content containers into one tile. To display a launch tile, add the \`fd-tile--launch\` modifier class to the main element.
 
-**Note:** Because the examples are displaying numeric content, it is important to note how many characters tiles can support depending on its size. For instance, when a large tile displays numeric content, the text size is 2.25rem (36px). Due to the large text, the tile can only support a maximum of 4 characters.
+**Note:** Because the examples are displaying numeric content, it is important to note how many characters a tile can support depending on its size. For instance, when a large tile displays numeric content, the text size is 2.25rem (36px). Due to the large text, the tile can only support a maximum of 4 characters.
 
 Tile size | Maximum...
 --------: | :---------------
