@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.0...v0.13.1-rc.1) (2020-11-16)
+
+
+### Bug Fixes
+
+* update delta theming for Button, Card, Badge and Carousel ([#1886](https://github.com/SAP/fundamental-styles/issues/1886)) ([cd7421d](https://github.com/SAP/fundamental-styles/commit/cd7421d3b2a3de8af2799a3ceb6fae4e349e6863))
+
 ### [0.13.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.13.0...v0.13.1-rc.0) (2020-11-14)
 
 ## [0.13.0](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.60...v0.13.0) (2020-11-13)
