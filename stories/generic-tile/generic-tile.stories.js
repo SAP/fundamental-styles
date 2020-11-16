@@ -145,7 +145,7 @@ Subtitle (optional) | \`fd-tile__subtitle\` | The subtitle can display one line 
 Content (optional) | \`fd-tile__content\` | Generic tile can display content if necessary.
 Footer (optional) | \`fd-tile__footer\` | The footer can contain a refresh icon \`sap-icon--refresh\` and/or status.
 
-Note: In the example below, the background color (and class names) illustrate the placement of elements within tiles.
+**Note:** In the example below, the background color (and class names) illustrate the placement of elements within tiles.
         ` }
 };
 
@@ -227,7 +227,7 @@ The header, content and footer of generic tile can be split into two columns wit
     - Section \`fd-tile__section\`
     - Section \`fd-tile__section\`
 
-Note: In the example below, the background color illustrates the column sections for generic tiles.
+**Note:** In the example below, the background color illustrates the column sections for generic tiles.
         ` }
 };
 
@@ -1246,7 +1246,7 @@ S | < 450px | \`fd-tile-container--list\` | List: The tile grows vertically and 
 
 The link tile can be displayed in cozy (default) and compact mode. To display link tile in compact mode, add the \`fd-tile--compact\` to the main element.
         
-Note: The compact mode should only be applied to link tiles and should not be applied to the other types.
+**Note:** The compact mode should only be applied to link tiles and should not be applied to the other types.
         
 ####List states
 
