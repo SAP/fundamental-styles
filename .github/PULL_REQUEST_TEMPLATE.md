@@ -29,6 +29,7 @@ Closes SAP/fundamental-styles#
 - [ ] Includes Compact/Cosy/Tablet design
 - [ ] RTL support
 2. The code follows fundamental-styles code standards and style
+- [ ] only one top level `fd-*` class is used in the file
 - [ ] BEM naming convention is used
 - [ ] Mixins are used for repeatable code (`fd-rtl`, `fd-ellipsis`, `fd-flex`, `fd-selected`, `fd-focus`, ect.)
 - [ ] A11y support - keyboard support, screenreader support, proper ARIA attributes, etc.

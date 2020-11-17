@@ -17,26 +17,30 @@ Use the File Uploader if:
 };
 
 export const primary = () => `<div class="fd-form-item">
+  <label class="fd-form-label" id="browse_input1_label" >Upload Document</label>
   <div class="fd-file-uploader">
-    <input 
-      aria-label="File upload"
-      class="fd-input fd-file-uploader__input" 
-      onclick="browseFile('input1');" 
-      title="Choose a file for upload" 
-      type="text" 
-      id="browse_input1" 
+    <input
+      aria-labelledby="browse_input1_label"
+      class="fd-input fd-file-uploader__input"
+      onclick="browseFile('input1');"
+      title="Choose a file for upload"
+      type="text"
+      id="browse_input1"
       autocomplete="off"
       placeholder="Choose a file for upload"
       readonly>
-    <button 
+    <button
       class="fd-button"
-      onclick="browseFile('input1');" 
-      id="file-uploader-button-1" 
-      aria-label="Select a file for uploading">Browse...
+      onclick="browseFile('input1');"
+      id="file-uploader-button-1"
+      aria-label="Select a file for uploading">
+        Browse...
     </button>
   </div>
   <div class="fd-file-uploader__hidden" aria-live="polite" aria-atomic="true"></div>
   <input
+    aria-labelledby="browse_input1_label"
+    hidden
     id="input1"
     class="fd-file-uploader__hidden"
     type="file"
@@ -52,14 +56,15 @@ primary.parameters = {
 };
 
 export const selected = () => `<div class="fd-form-item">
+  <label class="fd-form-label"  id="browse_input2_label" >Upload Document</label>
   <div class="fd-file-uploader">
-    <input 
-      aria-label="File upload"
+    <input
+      aria-labelledby="browse_input2_label"
       class="fd-input fd-file-uploader__input" 
       onclick="browseFile('input1');" 
       title="document.pdf" 
       type="text" 
-      id="browse_input1" 
+      id="browse_input2" 
       autocomplete="off"
       value="document.pdf"
       readonly>
@@ -72,10 +77,12 @@ export const selected = () => `<div class="fd-form-item">
   </div>
   <div class="fd-file-uploader__hidden" aria-live="polite" aria-atomic="true">document.pdf</div>
   <input
+    aria-labelledby="browse_input2_label"
+    hidden
     id="input1"
     class="fd-file-uploader__hidden"
     type="file"
-    onchange="selectFile(this,'browse_input1')">
+    onchange="selectFile(this,'browse_input2')">
 </div>
 `;
 
@@ -89,12 +96,13 @@ selected.parameters = {
 
 
 export const compact = () => `<div class="fd-form-item">
+  <label class="fd-form-label" id="browse_input3_label" >Upload Document (Compact)</label>
   <div class="fd-file-uploader">
-    <input 
-      aria-label="File upload"
+    <input
+      aria-labelledby="browse_input3_label"
       class="fd-input fd-input--compact fd-file-uploader__input" 
       onclick="browseFile('input2');" 
-      id="browse_input2" 
+      id="browse_input3" 
       type="text"
       title="Choose a file for upload"  
       placeholder="Choose a file for upload"
@@ -109,10 +117,12 @@ export const compact = () => `<div class="fd-form-item">
   </div>
   <div class="fd-file-uploader__hidden" aria-live="polite" aria-atomic="true"></div>
   <input
+    aria-labelledby="browse_input3_label"
+    hidden
     id="input2"
     class="fd-file-uploader__hidden"
     type="file"
-    onchange="selectFile(this,'browse_input2')">
+    onchange="selectFile(this,'browse_input3')">
 </div>
 `;
 compact.parameters = {

@@ -1,0 +1,42 @@
+$fd-button-badge-spacing: 0.25rem;
+$fd-button-badge-offset: -0.25rem;
+
+@mixin button-badge() {
+  @include fd-reset();
+
+  @include fd-flex-center() {
+    display: inline-flex;
+  }
+
+  z-index: 6;
+  font-size: var(--sapFontSmallSize);
+  border-radius: 0.5rem;
+  height: 1rem;
+  padding: 0 0.3125rem;
+  background-color: var(--sapContent_BadgeBackground);
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: var(--fdBadgeButton_Border_Color);
+  color: var(--sapContent_BadgeTextColor);
+  position: absolute;
+  top: $fd-button-badge-offset;
+  right: $fd-button-badge-offset;
+
+  @include fd-rtl() {
+    right: auto;
+    left: $fd-button-badge-offset;
+  }
+}
+
+@mixin button-badge-compact() {
+  position: relative;
+  top: 0;
+  right: 0;
+  margin-left: $fd-button-badge-spacing;
+
+  @include fd-rtl() {
+    left: 0;
+    margin-left: 0;
+    margin-right: $fd-button-badge-spacing;
+  }
+}

@@ -67,7 +67,7 @@ $block: #{$fd-namespace}-message-strip;
   min-height: 2rem;
 
   // Elements
-  &__close {
+  .#{$block}__close {
     @include fd-message-strip-close-btn-container();
 
     @include fd-rtl() {

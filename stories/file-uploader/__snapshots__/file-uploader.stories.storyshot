@@ -6,16 +6,24 @@ exports[`Storyshots Components/File Uploader After Selecting 1`] = `
 >
   
   
+  <label
+    class="fd-form-label"
+    id="browse_input2_label"
+  >
+    Upload Document
+  </label>
+  
+  
   <div
     class="fd-file-uploader"
   >
     
     
     <input
-      aria-label="File upload"
+      aria-labelledby="browse_input2_label"
       autocomplete="off"
       class="fd-input fd-file-uploader__input"
-      id="browse_input1"
+      id="browse_input2"
       onclick="browseFile('input1');"
       readonly=""
       title="document.pdf"
@@ -48,9 +56,11 @@ exports[`Storyshots Components/File Uploader After Selecting 1`] = `
   
   
   <input
+    aria-labelledby="browse_input2_label"
     class="fd-file-uploader__hidden"
+    hidden=""
     id="input1"
-    onchange="selectFile(this,'browse_input1')"
+    onchange="selectFile(this,'browse_input2')"
     type="file"
   />
   
@@ -64,16 +74,24 @@ exports[`Storyshots Components/File Uploader Compact 1`] = `
 >
   
   
+  <label
+    class="fd-form-label"
+    id="browse_input3_label"
+  >
+    Upload Document (Compact)
+  </label>
+  
+  
   <div
     class="fd-file-uploader"
   >
     
     
     <input
-      aria-label="File upload"
+      aria-labelledby="browse_input3_label"
       autocomplete="off"
       class="fd-input fd-input--compact fd-file-uploader__input"
-      id="browse_input2"
+      id="browse_input3"
       onclick="browseFile('input2');"
       placeholder="Choose a file for upload"
       readonly=""
@@ -104,9 +122,11 @@ exports[`Storyshots Components/File Uploader Compact 1`] = `
   
   
   <input
+    aria-labelledby="browse_input3_label"
     class="fd-file-uploader__hidden"
+    hidden=""
     id="input2"
-    onchange="selectFile(this,'browse_input2')"
+    onchange="selectFile(this,'browse_input3')"
     type="file"
   />
   
@@ -120,13 +140,21 @@ exports[`Storyshots Components/File Uploader Default 1`] = `
 >
   
   
+  <label
+    class="fd-form-label"
+    id="browse_input1_label"
+  >
+    Upload Document
+  </label>
+  
+  
   <div
     class="fd-file-uploader"
   >
     
     
     <input
-      aria-label="File upload"
+      aria-labelledby="browse_input1_label"
       autocomplete="off"
       class="fd-input fd-file-uploader__input"
       id="browse_input1"
@@ -144,7 +172,8 @@ exports[`Storyshots Components/File Uploader Default 1`] = `
       id="file-uploader-button-1"
       onclick="browseFile('input1');"
     >
-      Browse...
+      
+        Browse...
     
     </button>
     
@@ -160,7 +189,9 @@ exports[`Storyshots Components/File Uploader Default 1`] = `
   
   
   <input
+    aria-labelledby="browse_input1_label"
     class="fd-file-uploader__hidden"
+    hidden=""
     id="input1"
     onchange="selectFile(this,'browse_input1')"
     type="file"

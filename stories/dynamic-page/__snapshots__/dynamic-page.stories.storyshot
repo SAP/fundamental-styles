@@ -326,7 +326,7 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
                     
           <li
             class="fd-tabs__item"
-            role="listitem"
+            role="tab"
           >
             
                         
@@ -334,7 +334,6 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
               aria-controls="fuCwV550"
               class="fd-tabs__link"
               href="#fuCwV550"
-              role="tab"
             >
               
                             
@@ -354,17 +353,16 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
           
                     
           <li
+            aria-selected="true"
             class="fd-tabs__item"
-            role="listitem"
+            role="tab"
           >
             
                         
             <a
               aria-controls="AiWfz165"
-              aria-selected="true"
               class="fd-tabs__link"
               href="#AiWfz165"
-              role="tab"
             >
               
                             
@@ -844,16 +842,15 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
           
                     
           <li
+            aria-controls="fuCwV551"
             class="fd-tabs__item"
-            role="listitem"
+            role="tab"
           >
             
                         
             <a
-              aria-controls="fuCwV551"
               class="fd-tabs__link"
               href="#fuCwV551"
-              role="tab"
             >
               
                             
@@ -873,17 +870,16 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
           
                     
           <li
+            aria-controls="AiWfz166"
+            aria-selected="true"
             class="fd-tabs__item"
-            role="listitem"
+            role="tab"
           >
             
                         
             <a
-              aria-controls="AiWfz166"
-              aria-selected="true"
               class="fd-tabs__link"
               href="#AiWfz166"
-              role="tab"
             >
               
                             

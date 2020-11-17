@@ -1,5 +1,5 @@
-@import "./new-settings";
-@import "./mixins";
+@import './new-settings';
+@import './mixins';
 
 /*!
 .fd-form-label
@@ -33,11 +33,11 @@ $block: #{$fd-namespace}-form-label;
   }
 
   &--required,
-  &[aria-required="true"] {
+  &[aria-required='true'] {
     padding-right: $fd-require-space-padding;
 
     &::after {
-      content: "*";
+      content: '*';
       font-size: var(--sapFontSize);
       font-weight: bold;
       color: var(--sapField_RequiredColor);
@@ -61,7 +61,7 @@ $block: #{$fd-namespace}-form-label;
     padding-right: $fd-colon-space-padding;
 
     &::before {
-      content: ":";
+      content: ':';
       font-size: var(--sapFontSize);
       color: inherit;
       position: absolute;
@@ -80,7 +80,7 @@ $block: #{$fd-namespace}-form-label;
     }
 
     &.#{$block}--required,
-    &[aria-required="true"] {
+    &[aria-required='true'] {
       padding-right: $fd-require-colon-space-spacing;
 
       &::before {
@@ -104,9 +104,5 @@ $block: #{$fd-namespace}-form-label;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    .#{$fd-namespace}-inline-help {
-      top: 0;
-    }
   }
 }

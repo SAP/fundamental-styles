@@ -1,5 +1,6 @@
 @import './new-settings';
 @import './mixins';
+@import './mixins/button/badge';
 @import './mixins/button/button-helper';
 @import './mixins/button/standard';
 @import './mixins/button/negative';
@@ -56,6 +57,7 @@ $block: #{$fd-namespace}-button;
   position: relative;
   padding-left: $fd-button-padding-x;
   padding-right: $fd-button-padding-x;
+  line-height: 1rem;
   text-align: center;
   text-shadow: var(--fdButton_Text_Shadow);
 
@@ -65,7 +67,7 @@ $block: #{$fd-namespace}-button;
 
   // Extended touchable area
   &::before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     height: auto;
@@ -153,6 +155,7 @@ $block: #{$fd-namespace}-button;
 
   &.#{$block}--emphasized {
     font-weight: bold;
+    border-width: var(--fdButton_Emphasized_Border_Width);
 
     @include emphasized();
   }
@@ -228,6 +231,15 @@ $block: #{$fd-namespace}-button;
   }
 }
 
+@mixin iconTextMargin() {
+  margin-left: $fd-button-icon-margin;
+
+  @include fd-rtl() {
+    margin-left: 0;
+    margin-right: $fd-button-icon-margin;
+  }
+}
+
 @mixin iconStyles() {
   > [class*='sap-icon'] {
     @include iconSize($fd-button-icon-font-size);
@@ -235,42 +247,6 @@ $block: #{$fd-namespace}-button;
     color: inherit;
     font-style: normal;
     vertical-align: text-bottom;
-    margin-right: $fd-button-icon-margin;
-    margin-left: $fd-button-icon-margin;
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
-
-    @include fd-only-child() {
-      margin-right: 0;
-      margin-left: 0;
-    }
-
-    @include fd-rtl() {
-      &:first-child {
-        margin-left: $fd-button-icon-margin;
-        margin-right: 0;
-      }
-
-      &:last-child {
-        margin-right: $fd-button-icon-margin;
-        margin-left: 0;
-      }
-
-      @include fd-only-child() {
-        margin-right: 0;
-        margin-left: 0;
-      }
-    }
-
-    & + [class*='sap-icon'] {
-      margin-left: 0;
-    }
 
     &::before,
     &::after {
@@ -287,6 +263,10 @@ $block: #{$fd-namespace}-button;
   @include buttonContainer();
   @include iconStyles();
 
+  @include fd-flex-vertical-center() {
+    display: inline-flex;
+  }
+
   overflow: visible;
   min-width: $fd-button-min-width;
 
@@ -297,8 +277,20 @@ $block: #{$fd-namespace}-button;
     color: inherit;
   }
 
+  * + * {
+    @include iconTextMargin();
+  }
+
+  &__badge {
+    @include button-badge();
+  }
+
   &--compact {
     @include compact();
+
+    .#{$block}__badge {
+      @include button-badge-compact();
+    }
   }
 
   &--menu {

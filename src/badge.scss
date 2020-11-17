@@ -15,7 +15,7 @@ $block: #{$fd-namespace}-badge;
   background: var(--sapHighlightColor);
   color: var(--sapContent_ContrastTextColor);
   padding: 0 0.5rem;
-  border: 0.0625rem solid transparent;
+  border: 0.0625rem solid var(--fdBadge_Border_Color);
   border-radius: 0.5rem;
   position: absolute;
   right: 0.5rem;

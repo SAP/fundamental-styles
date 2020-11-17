@@ -6,6 +6,8 @@ $block: #{$fd-namespace}-tokenizer;
 .#{$block} {
   $fd-tokenizer-compact-spacing: 0.25rem;
   $fd-tokenizer-spacing: 0.3125rem;
+  $fd-tokenizer-input-width: 3rem;
+  $fd-tokenizer-input-width-compact: 2rem;
 
   width: 100%;
   background-color: var(--sapField_Background);
@@ -27,6 +29,7 @@ $block: #{$fd-namespace}-tokenizer;
 
   .fd-token {
     margin-right: $fd-tokenizer-spacing;
+    max-width: calc(100% - #{$fd-tokenizer-input-width} - #{$fd-tokenizer-spacing});
 
     @include fd-rtl() {
       margin: 0 0 0 $fd-tokenizer-spacing;
@@ -44,7 +47,7 @@ $block: #{$fd-namespace}-tokenizer;
     &.#{$fd-namespace}-input {
       border: none;
       padding: 0;
-      min-width: 3rem;
+      min-width: $fd-tokenizer-input-width;
     }
 
     &:first-child {
@@ -77,7 +80,7 @@ $block: #{$fd-namespace}-tokenizer;
     }
 
     .#{$block}__input.#{$fd-namespace}-input {
-      min-width: 2rem;
+      min-width: $fd-tokenizer-input-width-compact;
     }
 
     .#{$block}__input:first-child {
@@ -86,6 +89,7 @@ $block: #{$fd-namespace}-tokenizer;
 
     .fd-token {
       margin-right: $fd-tokenizer-compact-spacing;
+      max-width: calc(100% - #{$fd-tokenizer-input-width-compact} - #{$fd-tokenizer-compact-spacing});
 
       @include fd-rtl() {
         margin: 0 0 0 $fd-tokenizer-spacing;

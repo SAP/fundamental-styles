@@ -176,7 +176,29 @@
     }
 })();
 
-function onControlClick(controlId) {
+
+function toggleElAttrs(id, toggleAttrs) {
+    let ref = document.getElementById(id);
+    if (ref && Array.isArray(toggleAttrs) && toggleAttrs.length){
+        for(var i = 0; i < toggleAttrs.length; i++) {
+            var val = ref.getAttribute(toggleAttrs[i]);
+            if(val === 'true') {
+                setElAttr(id, toggleAttrs[i], 'false');
+            } else if (val === 'false') {
+                setElAttr(id, toggleAttrs[i], 'true');
+            }
+        }
+    }
+}
+
+function setElAttr(id, attr, value) {
+    let ref = document.getElementById(id);
+    if (ref && attr && value){
+        ref.setAttribute(attr, value);
+    }
+}
+
+function onControlClick(controlId, selfId, toggleAttrs) {
     let ref = document.getElementById(controlId);
 
     if (ref.getAttribute("aria-hidden") === "true") {

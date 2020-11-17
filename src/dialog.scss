@@ -112,6 +112,7 @@ $button: #{$fd-namespace}-button;
   &__footer.#{$bar} {
     .#{$block}__decisive-button {
       min-width: $fd-dialog-footer-button-min-width;
+      justify-content: center;
     }
   }
 

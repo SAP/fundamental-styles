@@ -2,6 +2,127 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.2...v0.13.1-rc.3) (2020-11-17)
+
+### [0.13.1-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.1...v0.13.1-rc.2) (2020-11-16)
+
+### [0.13.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.0...v0.13.1-rc.1) (2020-11-16)
+
+
+### Bug Fixes
+
+* update delta theming for Button, Card, Badge and Carousel ([#1886](https://github.com/SAP/fundamental-styles/issues/1886)) ([cd7421d](https://github.com/SAP/fundamental-styles/commit/cd7421d3b2a3de8af2799a3ceb6fae4e349e6863))
+
+### [0.13.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.13.0...v0.13.1-rc.0) (2020-11-14)
+
+## [0.13.0](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.60...v0.13.0) (2020-11-13)
+
+## [0.13.0-rc.60](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.59...v0.13.0-rc.60) (2020-11-13)
+
+
+### Bug Fixes
+
+* prevent Token from growing ([#1843](https://github.com/SAP/fundamental-styles/issues/1843)) ([6a0ff8b](https://github.com/SAP/fundamental-styles/commit/6a0ff8b4b2cef40d22b17d043c92bacc419039d2))
+
+## [0.13.0-rc.59](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.58...v0.13.0-rc.59) (2020-11-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* DOM updated for multiple components for accessibility purposes. Notably, tab > tab items need the tab role and have aria-selected set to true, instead of the link within.
+
+### Bug Fixes
+
+* accessibility improvements + integrate automated accessibility testing with jest-axe ([#1865](https://github.com/SAP/fundamental-styles/issues/1865)) ([fb9d28b](https://github.com/SAP/fundamental-styles/commit/fb9d28b1a79c49d3c3f1805bd2a0a92ffcab8d67))
+
+## [0.13.0-rc.58](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.57...v0.13.0-rc.58) (2020-11-12)
+
+
+### Bug Fixes
+
+* Shellbar button focus color ([#1863](https://github.com/SAP/fundamental-styles/issues/1863)) ([090d830](https://github.com/SAP/fundamental-styles/commit/090d830ee3b5c1038c859641aae04ef55895426c))
+
+## [0.13.0-rc.57](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.56...v0.13.0-rc.57) (2020-11-12)
+
+
+### Bug Fixes
+
+* add the correct cursor for hover state of disabled Switch component ([#1868](https://github.com/SAP/fundamental-styles/issues/1868)) ([b2939a6](https://github.com/SAP/fundamental-styles/commit/b2939a6966a3d2e510ef8dd6001fbbbe1b7ba586))
+
+## [0.13.0-rc.56](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.55...v0.13.0-rc.56) (2020-11-12)
+
+
+### Bug Fixes
+
+* Center buttons in product switch and dialog ([#1875](https://github.com/SAP/fundamental-styles/issues/1875)) ([3dfa723](https://github.com/SAP/fundamental-styles/commit/3dfa723545d66a864d0cfbea81fab3de4ea3ad38))
+
+## [0.13.0-rc.55](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.54...v0.13.0-rc.55) (2020-11-12)
+
+
+### Bug Fixes
+
+* Core Carousel navigation buttons - focus/active state in Safari and Firefox browser ([#1866](https://github.com/SAP/fundamental-styles/issues/1866)) ([32e6035](https://github.com/SAP/fundamental-styles/commit/32e6035915e18645f147be4cab91df5ead813617))
+
+## [0.13.0-rc.54](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.53...v0.13.0-rc.54) (2020-11-11)
+
+## [0.13.0-rc.53](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.52...v0.13.0-rc.53) (2020-11-10)
+
+
+### Bug Fixes
+
+* Make stronger selector for message strip ([#1856](https://github.com/SAP/fundamental-styles/issues/1856)) ([c6300d8](https://github.com/SAP/fundamental-styles/commit/c6300d8c11c11df58a7959f33e8899984de79fe1))
+
+## [0.13.0-rc.52](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.51...v0.13.0-rc.52) (2020-11-10)
+
+## [0.13.0-rc.51](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.50...v0.13.0-rc.51) (2020-11-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* Remove Inline Help from the library
+
+### Bug Fixes
+
+* remove the css for inline-help ([#1871](https://github.com/SAP/fundamental-styles/issues/1871)) ([3c20d06](https://github.com/SAP/fundamental-styles/commit/3c20d065bf821cb026f80d8f937b0f338b0a2cc3))
+
+## [0.13.0-rc.50](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.49...v0.13.0-rc.50) (2020-11-10)
+
+
+### Bug Fixes
+
+* RTL mode arrow button direction ([#1861](https://github.com/SAP/fundamental-styles/issues/1861)) ([d62aaef](https://github.com/SAP/fundamental-styles/commit/d62aaefb564ee45777b92c900202a4b2e04f3afa))
+
+## [0.13.0-rc.49](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.48...v0.13.0-rc.49) (2020-11-10)
+
+
+### Bug Fixes
+
+* Center vertically text in switch component ([#1862](https://github.com/SAP/fundamental-styles/issues/1862)) ([ef4581e](https://github.com/SAP/fundamental-styles/commit/ef4581e2a7c80b44ef9f6075679dbfa87a0cbaaa))
+
+## [0.13.0-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.47...v0.13.0-rc.48) (2020-11-10)
+
+
+### Features
+
+* add Button with badge ([#1835](https://github.com/SAP/fundamental-styles/issues/1835)) ([c4a5c83](https://github.com/SAP/fundamental-styles/commit/c4a5c83ad88cc4f43b679c5e624403cc0163bd97))
+
+## [0.13.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.46...v0.13.0-rc.47) (2020-11-09)
+
+## [0.13.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.45...v0.13.0-rc.46) (2020-11-09)
+
+## [0.13.0-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.44...v0.13.0-rc.45) (2020-11-09)
+
+## [0.13.0-rc.44](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.43...v0.13.0-rc.44) (2020-11-09)
+
+## [0.13.0-rc.43](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.42...v0.13.0-rc.43) (2020-11-07)
+
+
+### Bug Fixes
+
+* add fix for Product Switch truncation issue ([#1854](https://github.com/SAP/fundamental-styles/issues/1854)) ([4d03aa5](https://github.com/SAP/fundamental-styles/commit/4d03aa5f5ee9e2ed240fbbddb85cce6497833275))
+
+## [0.13.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.41...v0.13.0-rc.42) (2020-11-06)
+
 ## [0.13.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.40...v0.13.0-rc.41) (2020-11-05)
 
 

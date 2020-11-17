@@ -291,7 +291,7 @@ focus.parameters = {
 
 export const testOne = () => `
 <div class="fd-input-group  ">
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
    <span class="fd-input-group__addon ">
    km/h
    </span>
@@ -301,21 +301,21 @@ export const testOne = () => `
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
 </div>
 <br />
 <div class="fd-input-group  ">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
    <span class="fd-input-group__addon ">
    .00
    </span>
 </div>
 <br />
 <div class="fd-input-group  ">
-   <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+   <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
    <span class="fd-input-group__addon ">
    km/h
    </span>
@@ -325,21 +325,21 @@ export const testOne = () => `
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+   <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
 </div>
 <br />
 <div class="fd-input-group  ">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+   <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
    <span class="fd-input-group__addon ">
    .00
    </span>
 </div>
 <br />
 <div class="fd-input-group   is-disabled">
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
    <span class="fd-input-group__addon ">
    km/h
    </span>
@@ -349,21 +349,21 @@ export const testOne = () => `
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
 </div>
 <br />
 <div class="fd-input-group   is-disabled">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
    <span class="fd-input-group__addon ">
    .00
    </span>
 </div>
 <br />
 <div class="fd-input-group   is-disabled">
-   <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+   <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
    <span class="fd-input-group__addon ">
    km/h
    </span>
@@ -373,14 +373,14 @@ export const testOne = () => `
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+   <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
 </div>
 <br />
 <div class="fd-input-group   is-disabled">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+   <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
    <span class="fd-input-group__addon ">
    .00
    </span>
@@ -395,7 +395,7 @@ testOne.parameters = {
 
 export const testTwo = () => `
 <div class="fd-input-group  ">
-   <input class="input-group-input-playground input-group-input-playground--compact fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground input-group-input-playground--compact fd-input-group__input" placeholder="" value="19387309" />
    <span class="fd-input-group__addon fd-input-group__addon--compact">
    km/h
    </span>
@@ -405,14 +405,14 @@ export const testTwo = () => `
    <span class="fd-input-group__addon  fd-input-group__addon--compact">
    $
    </span>
-   <input class="input-group-input-playground input-group-input-playground--compact fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground input-group-input-playground--compact fd-input-group__input" placeholder="" value="19387309" />
 </div>
 <br />
 <div class="fd-input-group  ">
    <span class="fd-input-group__addon  fd-input-group__addon--compact">
    $
    </span>
-   <input class="input-group-input-playground input-group-input-playground--compact fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground input-group-input-playground--compact fd-input-group__input" placeholder="" value="19387309" />
    <span class="fd-input-group__addon fd-input-group__addon--compact">
    .00
    </span>
@@ -429,112 +429,112 @@ export const testThree = () => `
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
 </div>
 <br />
 <div class="fd-input-group  is-success ">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+   <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
 </div>
 <br />
 <div class="fd-input-group  is-success  is-disabled">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
 </div>
 <br />
 <div class="fd-input-group  is-success  is-disabled">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+   <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
 </div>
 <br />
 <div class="fd-input-group  is-error ">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
 </div>
 <br />
 <div class="fd-input-group  is-error ">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+   <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
 </div>
 <br />
 <div class="fd-input-group  is-error  is-disabled">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
 </div>
 <br />
 <div class="fd-input-group  is-error  is-disabled">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+   <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
 </div>
 <br />
 <div class="fd-input-group  is-warning ">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
 </div>
 <br />
 <div class="fd-input-group  is-warning ">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+   <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
 </div>
 <br />
 <div class="fd-input-group  is-warning  is-disabled">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
 </div>
 <br />
 <div class="fd-input-group  is-warning  is-disabled">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+   <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
 </div>
 <br />
 <div class="fd-input-group  is-information ">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
 </div>
 <br />
 <div class="fd-input-group  is-information ">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+   <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
 </div>
 <br />
 <div class="fd-input-group  is-information  is-disabled">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
 </div>
 <br />
 <div class="fd-input-group  is-information  is-disabled">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+   <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
 </div>
 `;
 
@@ -546,7 +546,7 @@ testThree.parameters = {
 
 export const testFour = () => `
 <div class="fd-input-group  ">
-        <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+        <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
         <span class="fd-input-group__addon fd-input-group__addon--button ">
                     <button class="btn-playground fd-input-group__button">Click Me</button>
 
@@ -559,7 +559,7 @@ export const testFour = () => `
                     <button class="btn-playground fd-input-group__button">Click Me</button>
 
         </span>
-        <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+        <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
 </div>
                 <br />
                 
@@ -568,7 +568,7 @@ export const testFour = () => `
                     <button class="btn-playground fd-input-group__button">Click Me</button>
 
         </span>
-        <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+        <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
         <span class="fd-input-group__addon fd-input-group__addon--button ">
                     <button class="btn-playground fd-input-group__button">Click Me</button>
 
@@ -577,7 +577,7 @@ export const testFour = () => `
                 <br />
                 
 <div class="fd-input-group  ">
-        <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+        <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
         <span class="fd-input-group__addon fd-input-group__addon--button ">
                     <button class="btn-playground fd-input-group__button">Click Me</button>
 
@@ -590,7 +590,7 @@ export const testFour = () => `
                     <button class="btn-playground fd-input-group__button">Click Me</button>
 
         </span>
-        <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+        <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
 </div>
                 <br />
                 
@@ -599,7 +599,7 @@ export const testFour = () => `
                     <button class="btn-playground fd-input-group__button">Click Me</button>
 
         </span>
-        <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+        <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
         <span class="fd-input-group__addon fd-input-group__addon--button ">
                     <button class="btn-playground fd-input-group__button">Click Me</button>
 
@@ -609,7 +609,7 @@ export const testFour = () => `
         <h3>Disabled</h3>
                 
 <div class="fd-input-group   is-disabled">
-        <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+        <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
         <span class="fd-input-group__addon fd-input-group__addon--button ">
                     <button class="btn-playground fd-input-group__button">Click Me</button>
 
@@ -622,7 +622,7 @@ export const testFour = () => `
                     <button class="btn-playground fd-input-group__button">Click Me</button>
 
         </span>
-        <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+        <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
 </div>
                 <br />
                 
@@ -631,7 +631,7 @@ export const testFour = () => `
                     <button class="btn-playground fd-input-group__button">Click Me</button>
 
         </span>
-        <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+        <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
         <span class="fd-input-group__addon fd-input-group__addon--button ">
                     <button class="btn-playground fd-input-group__button">Click Me</button>
 
@@ -640,7 +640,7 @@ export const testFour = () => `
                 <br />
                 
 <div class="fd-input-group   is-disabled">
-        <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+        <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
         <span class="fd-input-group__addon fd-input-group__addon--button ">
                     <button class="btn-playground fd-input-group__button">Click Me</button>
 
@@ -653,7 +653,7 @@ export const testFour = () => `
                     <button class="btn-playground fd-input-group__button">Click Me</button>
 
         </span>
-        <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+        <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
 </div>
                 <br />
                 
@@ -662,7 +662,7 @@ export const testFour = () => `
                     <button class="btn-playground fd-input-group__button">Click Me</button>
 
         </span>
-        <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+        <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
         <span class="fd-input-group__addon fd-input-group__addon--button ">
                     <button class="btn-playground fd-input-group__button">Click Me</button>
 
@@ -681,112 +681,112 @@ export const testFive = () => `
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
 </div>
 <br />
 <div class="fd-input-group  is-success ">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+   <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
 </div>
 <br />
 <div class="fd-input-group  is-success  is-disabled">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
 </div>
 <br />
 <div class="fd-input-group  is-success  is-disabled">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+   <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
 </div>
 <br />
 <div class="fd-input-group  is-error ">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
 </div>
 <br />
 <div class="fd-input-group  is-error ">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+   <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
 </div>
 <br />
 <div class="fd-input-group  is-error  is-disabled">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
 </div>
 <br />
 <div class="fd-input-group  is-error  is-disabled">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+   <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
 </div>
 <br />
 <div class="fd-input-group  is-warning ">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
 </div>
 <br />
 <div class="fd-input-group  is-warning ">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+   <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
 </div>
 <br />
 <div class="fd-input-group  is-warning  is-disabled">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
 </div>
 <br />
 <div class="fd-input-group  is-warning  is-disabled">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+   <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
 </div>
 <br />
 <div class="fd-input-group  is-information ">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
 </div>
 <br />
 <div class="fd-input-group  is-information ">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+   <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
 </div>
 <br />
 <div class="fd-input-group  is-information  is-disabled">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
 </div>
 <br />
 <div class="fd-input-group  is-information  is-disabled">
    <span class="fd-input-group__addon  ">
    $
    </span>
-   <textarea class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
+   <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
 </div>
 `;
 
@@ -801,10 +801,10 @@ export const testSix = () => `
    <span class="fd-input-group__addon  ">
    phone
    </span>
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="Field placeholder text" value="" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="Field placeholder text" value="" />
 </div>
 <div class="fd-input-group fd-input-group--inline  ">
-   <input class="input-group-input-playground  fd-input-group__input" placeholder="Field placeholder text" value="" />
+   <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="Field placeholder text" value="" />
    <span class="fd-input-group__addon ">
    fax
    </span>

@@ -10,6 +10,15 @@ exports[`Storyshots Components/Select As Form Item 1`] = `
     class="fd-form-item"
   >
     
+    
+    <label
+      class="fd-form-label"
+      id="formSelectLabel"
+    >
+      Choose an option
+    </label>
+    <br />
+    
         
     <div
       class="fd-popover"
@@ -26,19 +35,23 @@ exports[`Storyshots Components/Select As Form Item 1`] = `
         >
           
                     
-          <div
-            aria-controls="h031TOM5"
-            aria-expanded="false"
+          <button
+            aria-expanded="true"
             aria-haspopup="listbox"
+            aria-labelledby="formSelectLabel formSelectValue"
             class="fd-select__control"
-            onclick="onControlClick('h0C6B625');"
-            role="combobox"
+            id="asFormItemSelectCombobox"
+            onclick="
+                            toggleElAttrs('h0C6B625', ['aria-hidden']);
+                            toggleElAttrs('asFormItemSelectCombobox', ['aria-expanded']);
+                        "
             tabindex="0"
           >
             
                         
             <span
               class="fd-select__text-content"
+              is="formSelectValue"
             >
               Select
             </span>
@@ -57,7 +70,7 @@ exports[`Storyshots Components/Select As Form Item 1`] = `
             </span>
             
                     
-          </div>
+          </button>
           
                 
         </div>
@@ -67,16 +80,16 @@ exports[`Storyshots Components/Select As Form Item 1`] = `
       
             
       <div
-        aria-hidden="true"
+        aria-hidden="false"
         class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
         id="h0C6B625"
       >
         
                 
         <ul
-          aria-labelledby="f45564A57"
+          aria-activedescendant="asFormItemSelectCombobox-currentlyFocusedItem"
+          aria-labelledby="formSelectLabel"
           class="fd-list fd-list--dropdown"
-          id="h031TOM5"
           role="listbox"
         >
           
@@ -84,6 +97,7 @@ exports[`Storyshots Components/Select As Form Item 1`] = `
           <li
             aria-selected="true"
             class="fd-list__item is-selected"
+            id="asFormItemSelectCombobox-currentlyFocusedItem"
             role="option"
             tabindex="0"
           >
@@ -174,62 +188,369 @@ exports[`Storyshots Components/Select Blank 1`] = `
   style="height: 250px"
 >
   
-    
-  <label
-    class="fd-form-label"
-    id="h45336F3"
-  >
-    
-        Select with Blank Option
-    
-  </label>
-  
-    
-  <br />
-  
-    
+
   <div
-    class="fd-popover"
+    class="fd-container"
   >
     
-    
+  
     <div
-      class="fd-popover__control"
+      class="fd-row"
     >
       
         
       <div
-        class="fd-select"
+        class="fd-col fd-col--6"
       >
         
             
+        <label
+          class="fd-form-label"
+          id="h45336F3"
+        >
+          
+                Choose an option
+            
+        </label>
+        
+            
+        <br />
+        
+            
         <div
-          aria-controls="h2A6CEW2"
-          aria-expanded="false"
-          aria-haspopup="listbox"
-          class="fd-select__control"
-          onclick="onControlClick('h0B6A326');"
-          role="combobox"
-          tabindex="0"
+          class="fd-popover"
         >
           
                 
-          <span
-            class="fd-select__text-content"
-          />
-          
-                
-          <span
-            class="fd-button fd-button--transparent fd-select__button"
+          <div
+            class="fd-popover__control"
           >
             
                     
-            <i
-              class="sap-icon--slim-arrow-down"
-            />
-             
+            <div
+              class="fd-select"
+            >
+              
+                        
+              <button
+                aria-expanded="true"
+                aria-haspopup="listbox"
+                aria-labelledby="h45336F3 h45336F3Value"
+                class="fd-select__control"
+                id="acqw4q3r3d"
+                onclick="
+                                toggleElAttrs('d2qrdad2', ['aria-hidden']);
+                                toggleElAttrs('acqw4q3r3d', ['aria-expanded']);
+                            "
+                tabindex="0"
+              >
                 
-          </span>
+                            
+                <span
+                  class="fd-select__text-content"
+                  id="h45336F3Value"
+                />
+                
+                            
+                <span
+                  class="fd-button fd-button--transparent fd-select__button"
+                >
+                  
+                                
+                  <i
+                    class="sap-icon--slim-arrow-down"
+                  />
+                   
+                            
+                </span>
+                
+                        
+              </button>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+                
+          <div
+            aria-hidden="false"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+            id="d2qrdad2"
+          >
+            
+                    
+            <ul
+              aria-activedescendant="blankSelectCombobox-currentlyFocusedItem"
+              aria-labelledby="h45336F3"
+              class="fd-list fd-list--dropdown"
+              role="listbox"
+            >
+              
+                        
+              <li
+                aria-label="None selected"
+                aria-selected="true"
+                class="fd-list__item is-selected"
+                id="blankSelectCombobox-currentlyFocusedItem"
+                role="option"
+                tabindex="0"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  
+                        
+                </span>
+              </li>
+              
+                        
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  List item 1
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  List item 2
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  List item 3
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  List item 4
+                </span>
+                
+                        
+              </li>
+              
+                    
+            </ul>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-col fd-col--6"
+      >
+        
+            
+        <label
+          class="fd-form-label"
+          id="h45336F4"
+        >
+          
+                Choose an option
+            
+        </label>
+        
+            
+        <br />
+        
+            
+        <div
+          class="fd-popover"
+        >
+          
+                
+          <div
+            class="fd-popover__control"
+          >
+            
+                    
+            <div
+              class="fd-select fd-select--compact"
+            >
+              
+                        
+              <button
+                aria-expanded="true"
+                aria-haspopup="listbox"
+                aria-labelledby="h45336F4 h45336F4Value"
+                class="fd-select__control"
+                id="oj89qyeuawbd"
+                onclick="
+                                toggleElAttrs('oj89qyeuawbd', ['aria-expanded']);
+                                toggleElAttrs('m8ae7ahrb', ['aria-hidden']);
+                            "
+                tabindex="0"
+              >
+                
+                            
+                <span
+                  class="fd-select__text-content"
+                  id="h45336F4Value"
+                />
+                
+                            
+                <span
+                  class="fd-button fd-button--transparent fd-select__button"
+                >
+                  
+                                
+                  <i
+                    class="sap-icon--slim-arrow-down"
+                  />
+                   
+                            
+                </span>
+                
+                        
+              </button>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+                
+          <div
+            aria-hidden="false"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+            id="m8ae7ahrb"
+          >
+            
+                    
+            <ul
+              aria-activedescendant="blankSelectComboboxComp-currentlyFocusedItem"
+              aria-labelledby="h45336F4"
+              class="fd-list fd-list--dropdown fd-list--compact"
+              role="listbox"
+            >
+              
+                        
+              <li
+                aria-selected="true"
+                class="fd-list__item is-selected"
+                id="blankSelectComboboxComp-currentlyFocusedItem"
+                role="option"
+                tabindex="0"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  
+                        
+                </span>
+              </li>
+              
+                        
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  List item 2
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  List item 3
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  List item 4
+                </span>
+                
+                        
+              </li>
+              
+                    
+            </ul>
+            
+                
+          </div>
           
             
         </div>
@@ -240,280 +561,7 @@ exports[`Storyshots Components/Select Blank 1`] = `
     
     </div>
     
-    
-    <div
-      aria-hidden="true"
-      class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
-      id="h0B6A326"
-    >
-      
-        
-      <ul
-        aria-labelledby="h45336F3"
-        class="fd-list fd-list--dropdown"
-        id="h2A6CEW2"
-        role="listbox"
-        tabindex="-1"
-      >
-        
-            
-        <li
-          aria-label="None selected"
-          aria-selected="true"
-          class="fd-list__item is-selected"
-          role="option"
-          tabindex="0"
-        >
-          
-            
-          <span
-            class="fd-list__title"
-          >
-            
-            
-          </span>
-        </li>
-        
-            
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-            
-          <span
-            class="fd-list__title"
-          >
-            List item 1
-          </span>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-            
-          <span
-            class="fd-list__title"
-          >
-            List item 2
-          </span>
-          
-        
-        </li>
-        
-            
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-            
-          <span
-            class="fd-list__title"
-          >
-            List item 3
-          </span>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-            
-          <span
-            class="fd-list__title"
-          >
-            List item 4
-          </span>
-          
-            
-        </li>
-        
-        
-      </ul>
-      
-    
-    </div>
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <label
-    class="fd-form-label"
-    id="h45336F4"
-  >
-    
-        Select with Blank Option - Compact Mode
-    
-  </label>
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-popover"
-  >
-    
-    
-    <div
-      class="fd-popover__control"
-    >
-      
-        
-      <div
-        class="fd-select fd-select--compact"
-      >
-        
-            
-        <div
-          aria-controls="r57YU8P5"
-          aria-expanded="false"
-          aria-haspopup="listbox"
-          class="fd-select__control"
-          onclick="onControlClick('h0B6A327');"
-          role="combobox"
-          tabindex="0"
-        >
-          
-                
-          <span
-            class="fd-select__text-content"
-          />
-          
-                
-          <span
-            class="fd-button fd-button--transparent fd-select__button"
-          >
-            
-                    
-            <i
-              class="sap-icon--slim-arrow-down"
-            />
-             
-                
-          </span>
-          
-            
-        </div>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-    
-    <div
-      aria-hidden="true"
-      class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
-      id="h0B6A327"
-    >
-      
-        
-      <ul
-        aria-labelledby="h45336F4"
-        class="fd-list fd-list--dropdown fd-list--compact"
-        id="r57YU8P5"
-        role="listbox"
-        tabindex="-1"
-      >
-        
-            
-        <li
-          aria-selected="true"
-          class="fd-list__item is-selected"
-          role="option"
-          tabindex="0"
-        >
-          
-            
-          <span
-            class="fd-list__title"
-          >
-            
-            
-          </span>
-        </li>
-        
-            
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-            
-          <span
-            class="fd-list__title"
-          >
-            List item 2
-          </span>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-            
-          <span
-            class="fd-list__title"
-          >
-            List item 3
-          </span>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-            
-          <span
-            class="fd-list__title"
-          >
-            List item 4
-          </span>
-          
-            
-        </li>
-        
-        
-      </ul>
-      
-    
-    </div>
-    
-    
+
   </div>
   
 
@@ -526,6 +574,15 @@ exports[`Storyshots Components/Select Compact 1`] = `
 >
   
     
+  <label
+    class="fd-form-label"
+    id="compactSelectLabel"
+  >
+    Choose an option
+  </label>
+  <br />
+  
+    
   <div
     class="fd-popover"
   >
@@ -541,19 +598,23 @@ exports[`Storyshots Components/Select Compact 1`] = `
       >
         
                 
-        <div
-          aria-controls="h037CLM5"
-          aria-expanded="false"
+        <button
+          aria-expanded="true"
           aria-haspopup="listbox"
+          aria-labelledby="compactSelectLabel compactSelectValue"
           class="fd-select__control"
-          onclick="onControlClick('h0C6A326');"
-          role="combobox"
+          id="compactSelectCombobox"
+          onclick="
+                        toggleElAttrs('h0C6A326', ['aria-hidden']);
+                        toggleElAttrs('compactSelectCombobox', ['aria-expanded']);
+                    "
           tabindex="0"
         >
           
                     
           <span
             class="fd-select__text-content"
+            id="compactSelectValue"
           >
             Select
           </span>
@@ -572,7 +633,7 @@ exports[`Storyshots Components/Select Compact 1`] = `
           </span>
           
                 
-        </div>
+        </button>
         
             
       </div>
@@ -582,24 +643,24 @@ exports[`Storyshots Components/Select Compact 1`] = `
     
         
     <div
-      aria-hidden="true"
+      aria-hidden="false"
       class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
       id="h0C6A326"
     >
       
             
       <ul
-        aria-labelledby="f45564A58"
+        aria-activedescendant="compactSelectCombobox-currentlyFocusedItem"
+        aria-labelledby="compactSelectLabel"
         class="fd-list fd-list--dropdown fd-list--compact"
-        id="h037CLM5"
         role="listbox"
-        tabindex="-1"
       >
         
                 
         <li
           aria-selected="true"
           class="fd-list__item is-selected"
+          id="compactSelectCombobox-currentlyFocusedItem"
           role="option"
           tabindex="0"
         >
@@ -683,8 +744,17 @@ exports[`Storyshots Components/Select Compact 1`] = `
 
 exports[`Storyshots Components/Select Cozy 1`] = `
 <div
-  style="height: 200px"
+  style="height: 250px"
 >
+  
+    
+  <label
+    class="fd-form-label"
+    id="cozySelectLabel"
+  >
+    Choose an option
+  </label>
+  <br />
   
     
   <div
@@ -702,21 +772,26 @@ exports[`Storyshots Components/Select Cozy 1`] = `
       >
         
                 
-        <div
-          aria-controls="h031XCM5"
-          aria-expanded="false"
+        <button
+          aria-expanded="true"
           aria-haspopup="listbox"
+          aria-labelledby="cozySelectLabel cozySelectValue"
           class="fd-select__control"
-          onclick="onControlClick('h0C6A325');"
-          role="combobox"
+          id="cozySelectCombobox"
+          onclick="
+                        toggleElAttrs('h0C6A325', ['aria-hidden']);
+                        toggleElAttrs('cozySelectCombobox', ['aria-expanded']);
+                    "
           tabindex="0"
+          value="List Item 1"
         >
           
                     
           <span
             class="fd-select__text-content"
+            is="cozySelectValue"
           >
-            Select
+            List Item 1
           </span>
           
                     
@@ -733,7 +808,7 @@ exports[`Storyshots Components/Select Cozy 1`] = `
           </span>
           
                 
-        </div>
+        </button>
         
             
       </div>
@@ -743,18 +818,36 @@ exports[`Storyshots Components/Select Cozy 1`] = `
     
         
     <div
-      aria-hidden="true"
+      aria-hidden="false"
       class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
       id="h0C6A325"
     >
       
             
       <ul
-        aria-labelledby="f45564A57"
+        aria-activedescendant="cozySelectCombobox-currentlyFocusedItem"
+        aria-labelledby="cozySelectLabel"
         class="fd-list fd-list--dropdown"
-        id="h031XCM5"
         role="listbox"
       >
+        
+                
+        <li
+          class="fd-list__item"
+          id="cozySelectCombobox-currentlyFocusedItem"
+          role="option"
+          tabindex="0"
+        >
+          
+                
+          <span
+            class="fd-list__title"
+          >
+            Select
+          </span>
+          
+                
+        </li>
         
                 
         <li
@@ -778,7 +871,7 @@ exports[`Storyshots Components/Select Cozy 1`] = `
         <li
           class="fd-list__item"
           role="option"
-          tabindex="-1"
+          tabindex="0"
         >
           
                 
@@ -795,7 +888,7 @@ exports[`Storyshots Components/Select Cozy 1`] = `
         <li
           class="fd-list__item"
           role="option"
-          tabindex="-1"
+          tabindex="0"
         >
           
                 
@@ -812,7 +905,7 @@ exports[`Storyshots Components/Select Cozy 1`] = `
         <li
           class="fd-list__item"
           role="option"
-          tabindex="-1"
+          tabindex="0"
         >
           
                 
@@ -839,214 +932,88 @@ exports[`Storyshots Components/Select Cozy 1`] = `
 `;
 
 exports[`Storyshots Components/Select Disabled 1`] = `
-<div
-  class="fd-popover"
->
+<section>
+  <label
+    class="fd-form-label"
+    id="disabledLabel"
+  >
+    Choose an option
+  </label>
+  <br />
   
-    
+
   <div
-    aria-disabled="true"
-    class="fd-popover__control"
+    class="fd-popover"
   >
     
-        
+    
     <div
-      class="fd-select"
+      aria-disabled="true"
+      class="fd-popover__control"
     >
       
-            
+        
       <div
-        aria-disabled="true"
-        aria-expanded="false"
-        aria-haspopup="false"
-        class="fd-select__control"
-        role="combobox"
+        class="fd-select"
       >
         
-                
-        <span
-          class="fd-select__text-content"
-        >
-          Select
-        </span>
-        
-                
-        <span
-          class="fd-button fd-button--transparent fd-select__button"
+            
+        <button
+          aria-disabled="true"
+          aria-labelledby="disabledLabel disabledValue"
+          class="fd-select__control"
         >
           
+                
+          <span
+            class="fd-select__text-content"
+            id="disabledValue"
+          >
+            Mango
+          </span>
+          
+                
+          <span
+            class="fd-button fd-button--transparent fd-select__button"
+          >
+            
                     
-          <i
-            class="sap-icon--slim-arrow-down"
-          />
-          
-                
-        </span>
-        
+            <i
+              class="sap-icon--slim-arrow-down"
+            />
             
+                
+          </span>
+          
+            
+        </button>
+        
+        
       </div>
       
-        
+    
     </div>
     
-    
+
   </div>
   
 
-</div>
-`;
-
-exports[`Storyshots Components/Select Expanded 1`] = `
-<div
-  class="fd-popover"
->
-  
-  
-  <div
-    class="fd-popover__control"
-  >
-    
-     
-    <div
-      class="fd-select"
-    >
-      
-         
-      <div
-        aria-controls="h0C6A3245234"
-        aria-expanded="true"
-        aria-haspopup="listbox"
-        class="fd-select__control"
-        role="combobox"
-        tabindex="0"
-      >
-        
-             
-        <span
-          class="fd-select__text-content"
-        >
-          Select
-        </span>
-        
-             
-        <span
-          class="fd-button fd-button--transparent fd-select__button"
-        >
-          
-                
-          <i
-            class="sap-icon--slim-arrow-down"
-          />
-           
-            
-        </span>
-        
-         
-      </div>
-      
-      
-    </div>
-    
-  
-  </div>
-  
-  
-  <div
-    aria-hidden="false"
-    class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
-    id="h0C6A325"
-  >
-    
-     
-    <ul
-      aria-labelledby="h0C6A3245234"
-      class="fd-list fd-list--dropdown"
-      role="listbox"
-    >
-      
-        
-      <li
-        aria-selected="true"
-        class="fd-list__item is-selected"
-        role="option"
-        tabindex="0"
-      >
-        
-           
-        <span
-          class="fd-list__title"
-        >
-          List item 1
-        </span>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fd-list__item"
-        role="option"
-        tabindex="-1"
-      >
-        
-           
-        <span
-          class="fd-list__title"
-        >
-          List item 2
-        </span>
-        
-       
-      </li>
-      
-        
-      <li
-        class="fd-list__item"
-        role="option"
-        tabindex="-1"
-      >
-        
-           
-        <span
-          class="fd-list__title"
-        >
-          List item 3
-        </span>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fd-list__item"
-        role="option"
-        tabindex="-1"
-      >
-        
-           
-        <span
-          class="fd-list__title"
-        >
-          List item 4
-        </span>
-        
-        
-      </li>
-      
-     
-    </ul>
-    
-  
-  </div>
-  
-
-</div>
+</section>
 `;
 
 exports[`Storyshots Components/Select Item Grouping 1`] = `
 <div
   style="height: 450px"
 >
+  
+
+  <label
+    class="fd-form-label"
+    id="itemGroupingLabel"
+  >
+    Choose an option
+  </label>
+  <br />
   
     
   <div
@@ -1064,19 +1031,23 @@ exports[`Storyshots Components/Select Item Grouping 1`] = `
       >
         
             
-        <div
-          aria-controls="f34HLM5G"
-          aria-expanded="false"
+        <button
+          aria-expanded="true"
           aria-haspopup="listbox"
+          aria-labelledby="itemGroupingLabel itemGroupingValue"
           class="fd-select__control"
-          onclick="onControlClick('h09GDGG325');"
-          role="combobox"
+          id="itemGroupingSelectCombobox"
+          onclick="
+                    toggleElAttrs('f34HLM5G', ['aria-hidden']);
+                    toggleElAttrs('itemGroupingSelectCombobox', ['aria-expanded']);
+                "
           tabindex="0"
         >
           
                 
           <span
             class="fd-select__text-content"
+            id="itemGroupingValue"
           >
             Select Ingredient
           </span>
@@ -1095,7 +1066,7 @@ exports[`Storyshots Components/Select Item Grouping 1`] = `
           </span>
           
             
-        </div>
+        </button>
         
         
       </div>
@@ -1105,33 +1076,34 @@ exports[`Storyshots Components/Select Item Grouping 1`] = `
     
     
     <div
-      aria-hidden="true"
+      aria-hidden="false"
       class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill"
-      id="h09GDGG325"
+      id="f34HLM5G"
     >
       
             
-      <ul
-        aria-labelledby="g45464A50"
-        class="fd-list fd-list--dropdown"
-        id="f34HLM5G"
-        role="listbox"
-        tabindex="-1"
+      <label
+        class="fd-list__group-header"
+        id="fruitsHeader"
       >
         
-                
-        <li
-          class="fd-list__group-header"
-        >
-          
-                    Fruits
-                
-        </li>
+                Fruits
+            
+      </label>
+      
+            
+      <ul
+        aria-activedescendant="itemGroupingSelectCombobox-currentlyFocusedItem"
+        aria-labelledby="itemGroupingLabel fruitsHeader"
+        class="fd-list fd-list--dropdown"
+        role="listbox"
+      >
         
                 
         <li
           aria-selected="true"
           class="fd-list__item is-selected"
+          id="itemGroupingSelectCombobox-currentlyFocusedItem"
           role="option"
           tabindex="0"
         >
@@ -1197,14 +1169,25 @@ exports[`Storyshots Components/Select Item Grouping 1`] = `
                 
         </li>
         
-                
-        <li
-          class="fd-list__group-header"
-        >
-          
-                    Vegetables
-                
-        </li>
+            
+      </ul>
+      
+            
+      <label
+        class="fd-list__group-header"
+        id="vegHeader"
+      >
+        
+                Vegetables
+            
+      </label>
+      
+            
+      <ul
+        aria-labelledby="itemGroupingLabel vegHeader"
+        class="fd-list fd-list--dropdown"
+        role="listbox"
+      >
         
                 
         <li
@@ -1293,6 +1276,15 @@ exports[`Storyshots Components/Select Match Select Popover Body Size 1`] = `
 >
   
     
+  <label
+    class="fd-form-label"
+    id="matchSelectPopoverBodySizeLabel"
+  >
+    Choose an option
+  </label>
+  <br />
+  
+    
   <div
     class="fd-popover"
   >
@@ -1308,19 +1300,23 @@ exports[`Storyshots Components/Select Match Select Popover Body Size 1`] = `
       >
         
             
-        <div
-          aria-controls="wGH468IL"
-          aria-expanded="false"
+        <button
+          aria-expanded="true"
           aria-haspopup="listbox"
+          aria-labelledby="matchSelectPopoverBodySizeLabel matchSelectPopoverBodySizeValue"
           class="fd-select__control"
-          onclick="onControlClick('h0GTKE325');"
-          role="combobox"
+          id="matchSelectPopoverBodySizeSelectCombobox"
+          onclick="
+                    toggleElAttrs('h0GTKE325', ['aria-hidden']);
+                    toggleElAttrs('matchSelectPopoverBodySizeSelectCombobox', ['aria-expanded']);
+                "
           tabindex="0"
         >
           
                 
           <span
             class="fd-select__text-content"
+            id="matchSelectPopoverBodySizeValue"
           >
             Much Longer than Usual
           </span>
@@ -1339,7 +1335,7 @@ exports[`Storyshots Components/Select Match Select Popover Body Size 1`] = `
           </span>
           
             
-        </div>
+        </button>
         
         
       </div>
@@ -1349,36 +1345,36 @@ exports[`Storyshots Components/Select Match Select Popover Body Size 1`] = `
     
     
     <div
-      aria-hidden="true"
+      aria-hidden="false"
       class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill"
       id="h0GTKE325"
     >
       
         
       <ul
-        aria-labelledby="g4546C40"
+        aria-activedescendant="matchSelectPopoverBodySizeSelectCombobox-currentlyFocusedItem"
+        aria-labelledby="matchSelectPopoverBodySizeLabel"
         class="fd-list fd-list--dropdown"
-        id="wGH468IL"
         role="listbox"
-        tabindex="-1"
       >
         
             
         <li
           aria-selected="true"
           class="fd-list__item is-selected"
+          id="matchSelectPopoverBodySizeSelectCombobox-currentlyFocusedItem"
           role="option"
           tabindex="0"
         >
           
-            
+                
           <span
             class="fd-list__title"
           >
             List item 1
           </span>
           
-            
+                
           <span
             class="fd-list__secondary"
           >
@@ -1395,21 +1391,21 @@ exports[`Storyshots Components/Select Match Select Popover Body Size 1`] = `
           tabindex="-1"
         >
           
-            
+                
           <span
             class="fd-list__title"
           >
             List item 2
           </span>
           
-            
+                
           <span
             class="fd-list__secondary"
           >
             A2
           </span>
           
-        
+            
         </li>
         
             
@@ -1419,14 +1415,14 @@ exports[`Storyshots Components/Select Match Select Popover Body Size 1`] = `
           tabindex="-1"
         >
           
-            
+                
           <span
             class="fd-list__title"
           >
             List item 3
           </span>
           
-            
+                
           <span
             class="fd-list__secondary"
           >
@@ -1443,14 +1439,14 @@ exports[`Storyshots Components/Select Match Select Popover Body Size 1`] = `
           tabindex="-1"
         >
           
-            
+                
           <span
             class="fd-list__title"
           >
             List item 4
           </span>
           
-            
+                
           <span
             class="fd-list__secondary"
           >
@@ -1502,6 +1498,7 @@ exports[`Storyshots Components/Select Mobile Mode 1`] = `
                     
           <h3
             class="fd-dialog__title"
+            id="mobileHeader"
           >
             
                         
@@ -1570,6 +1567,7 @@ exports[`Storyshots Components/Select Mobile Mode 1`] = `
       
             
       <ul
+        aria-labelledby="mobileHeader"
         class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact"
         role="listbox"
       >
@@ -1730,6 +1728,15 @@ exports[`Storyshots Components/Select No Wrapping 1`] = `
 >
   
     
+  <label
+    class="fd-form-label"
+    id="noWrappingLabel"
+  >
+    Choose an option
+  </label>
+  <br />
+  
+    
   <div
     class="fd-popover"
   >
@@ -1745,19 +1752,23 @@ exports[`Storyshots Components/Select No Wrapping 1`] = `
       >
         
             
-        <div
-          aria-controls="t53GL7U8"
-          aria-expanded="false"
+        <button
+          aria-expanded="true"
           aria-haspopup="listbox"
+          aria-labelledby="noWrappingLabel noWrappingValue"
           class="fd-select__control"
-          onclick="onControlClick('h0GZH2325');"
-          role="combobox"
+          id="noWrappingSelectCombobox"
+          onclick="
+                    toggleElAttrs('h0GZH2325', ['aria-hidden']);
+                    toggleElAttrs('noWrappingSelectCombobox', ['aria-expanded']);
+                "
           tabindex="0"
         >
           
                 
           <span
             class="fd-select__text-content"
+            id="noWrappingValue"
           >
             Select
           </span>
@@ -1776,7 +1787,7 @@ exports[`Storyshots Components/Select No Wrapping 1`] = `
           </span>
           
             
-        </div>
+        </button>
         
         
       </div>
@@ -1786,38 +1797,38 @@ exports[`Storyshots Components/Select No Wrapping 1`] = `
     
     
     <div
-      aria-hidden="true"
+      aria-hidden="false"
       class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
       id="h0GZH2325"
     >
       
         
       <ul
-        aria-labelledby="g45464B40"
+        aria-activedescendant="noWrappingSelectCombobox-currentlyFocusedItem"
+        aria-labelledby="noWrappingLabel"
         class="fd-list fd-list--dropdown fd-list--compact"
-        id="t53GL7U8"
         role="listbox"
-        tabindex="-1"
       >
         
             
         <li
           aria-selected="true"
           class="fd-list__item is-selected"
+          id="noWrappingSelectCombobox-currentlyFocusedItem"
           role="option"
           tabindex="0"
         >
           
-            
+                
           <span
             class="fd-list__title fd-list__title--no-wrap"
           >
             
-                Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text 
-            
+                    Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text 
+                
           </span>
           
-            
+                
           <span
             class="fd-list__secondary"
           >
@@ -1834,14 +1845,14 @@ exports[`Storyshots Components/Select No Wrapping 1`] = `
           tabindex="-1"
         >
           
-            
+                
           <span
             class="fd-list__title"
           >
             List item 2
           </span>
           
-            
+                
           <span
             class="fd-list__secondary"
           >
@@ -1858,14 +1869,14 @@ exports[`Storyshots Components/Select No Wrapping 1`] = `
           tabindex="-1"
         >
           
-            
+                
           <span
             class="fd-list__title"
           >
             List item 3
           </span>
           
-            
+                
           <span
             class="fd-list__secondary"
           >
@@ -1882,14 +1893,14 @@ exports[`Storyshots Components/Select No Wrapping 1`] = `
           tabindex="-1"
         >
           
-            
+                
           <span
             class="fd-list__title"
           >
             List item 4
           </span>
           
-            
+                
           <span
             class="fd-list__secondary"
           >
@@ -1913,332 +1924,301 @@ exports[`Storyshots Components/Select No Wrapping 1`] = `
 `;
 
 exports[`Storyshots Components/Select Readonly 1`] = `
-<div
-  class="fd-popover"
->
+<section>
+  <label
+    class="fd-form-label"
+    id="readonlyLabel"
+  >
+    Chosen option
+  </label>
+  <br />
   
-    
+
   <div
-    class="fd-popover__control"
+    class="fd-popover"
   >
     
-        
+    
     <div
-      class="fd-select"
+      class="fd-popover__control"
     >
       
-            
+        
       <div
-        aria-expanded="false"
-        aria-haspopup="false"
-        aria-label="Select"
-        aria-readonly="true"
-        class="fd-select__control is-readonly"
-        role="combobox"
-        tabindex="0"
+        class="fd-select"
       >
         
-              
+            
         <span
-          class="fd-select__text-content"
+          aria-expanded="false"
+          aria-haspopup="false"
+          aria-labelledby="readonlyLabel readonlyValue"
+          class="fd-select__control is-readonly"
+          readonly=""
+          tabindex="0"
         >
-          Selected Item 2
+          
+              
+          <span
+            class="fd-select__text-content"
+            id="readonlyValue"
+          >
+            Selected Item 2
+          </span>
+          
+            
         </span>
         
-            
+        
       </div>
       
-        
+    
     </div>
     
-    
+
   </div>
   
 
-</div>
+</section>
 `;
 
 exports[`Storyshots Components/Select Semantic States 1`] = `
 <div
-  style="height: 650px"
+  style="height: 200px"
 >
   
-    
-  <label
-    class="fd-form-label"
-    id="a4546C40"
-  >
-    
-        Success Select Example
-    
-  </label>
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-popover"
-  >
-    
-        
-    <div
-      class="fd-popover__control"
-    >
-      
-            
-      <div
-        class="fd-select"
-      >
-        
-                
-        <div
-          aria-controls="s34GLW8I"
-          aria-expanded="false"
-          aria-haspopup="listbox"
-          class="fd-select__control is-success"
-          onclick="onControlClick('h07jjhYH');"
-          role="combobox"
-          tabindex="0"
-        >
-          
-                    
-          <span
-            class="fd-select__text-content"
-          >
-            Success
-          </span>
-          
-                    
-          <span
-            class="fd-button fd-button--transparent fd-select__button"
-          >
-            
-                        
-            <i
-              class="sap-icon--slim-arrow-down"
-            />
-            
-                    
-          </span>
-          
-                
-        </div>
-        
-            
-      </div>
-      
-        
-    </div>
-    
-        
-    <div
-      aria-hidden="true"
-      class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
-      id="h07jjhYH"
-    >
-      
-            
-      <div
-        aria-live="assertive"
-        class="fd-list__message fd-list__message--success"
-        role="alert"
-      >
-        Success message
-      </div>
-      
-            
-      <ul
-        aria-labelledby="a4546C40"
-        class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact"
-        id="s34GLW8I"
-        role="listbox"
-        tabindex="-1"
-      >
-        
-                
-        <li
-          aria-selected="true"
-          class="fd-list__item is-selected"
-          role="option"
-          tabindex="0"
-        >
-          
-                
-          <span
-            class="fd-list__title"
-          >
-            
-                    List Item 1
-                
-          </span>
-          
-                
-          <span
-            class="fd-list__secondary"
-          >
-            A1
-          </span>
-          
-                
-        </li>
-        
-                
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="fd-list__title"
-          >
-            List item 2
-          </span>
-          
-                
-          <span
-            class="fd-list__secondary"
-          >
-            A2
-          </span>
-          
-                
-        </li>
-        
-                
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="fd-list__title"
-          >
-            List item 3
-          </span>
-          
-                
-          <span
-            class="fd-list__secondary"
-          >
-            A3
-          </span>
-          
-                
-        </li>
-        
-                
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="fd-list__title"
-          >
-            List item 4
-          </span>
-          
-                
-          <span
-            class="fd-list__secondary"
-          >
-            A4
-          </span>
-          
-                
-        </li>
-        
-            
-      </ul>
-      
-        
-    </div>
-    
-    
-  </div>
-  
-    
-  <span
-    class="fd-form-message fd-form-message--static fd-form-message--success"
-  >
-    Success message
-  </span>
-  
 
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <label
-    class="fd-form-label"
-    id="b4546C40"
-  >
-    
-        Error Select Example
-    
-  </label>
-  
-    
-  <br />
-  
-    
   <div
-    class="fd-popover"
+    class="fd-container"
   >
     
     
     <div
-      class="fd-popover__control"
+      class="fd-row"
     >
       
         
       <div
-        class="fd-select"
+        class="fd-col fd-col--3"
       >
         
             
+        <label
+          class="fd-form-label"
+          id="a4546C40"
+        >
+          
+                Choose an option
+            
+        </label>
+        <br />
+        
+            
         <div
-          aria-controls="e36GLS1W"
-          aria-expanded="false"
-          aria-haspopup="listbox"
-          class="fd-select__control is-error"
-          onclick="onControlClick('h07j9978H');"
-          role="combobox"
-          tabindex="0"
+          class="fd-popover"
         >
           
                 
-          <span
-            class="fd-select__text-content"
-          >
-            Error
-          </span>
-          
-                    
-          <span
-            class="fd-button fd-button--transparent fd-select__button"
+          <div
+            class="fd-popover__control"
           >
             
+                    
+            <div
+              class="fd-select"
+            >
+              
                         
-            <i
-              class="sap-icon--slim-arrow-down"
-            />
+              <button
+                aria-expanded="true"
+                aria-haspopup="listbox"
+                aria-labelledby="a4546C40 a4546C40Value"
+                class="fd-select__control is-success"
+                id="semanticStatesSuccessSelectCombobox"
+                onclick="
+                                toggleElAttrs('h07jjhYH', ['aria-hidden']);
+                                toggleElAttrs('semanticStatesSuccessSelectCombobox', ['aria-expanded']);
+                                toggleElAttrs('successFormMessage', ['aria-hidden']);
+                            "
+                tabindex="0"
+              >
+                
+                            
+                <span
+                  class="fd-select__text-content"
+                  id="a4546C40Value"
+                >
+                  Success
+                </span>
+                
+                            
+                <span
+                  class="fd-button fd-button--transparent fd-select__button"
+                >
+                  
+                                
+                  <i
+                    class="sap-icon--slim-arrow-down"
+                  />
+                  
+                            
+                </span>
+                
+                        
+              </button>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+                
+          <div
+            aria-hidden="false"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+            id="h07jjhYH"
+          >
             
                     
-          </span>
+            <div
+              aria-live="assertive"
+              class="fd-list__message fd-list__message--success"
+              role="alert"
+            >
+              Success message
+            </div>
+            
+                    
+            <ul
+              aria-activedescendant="semanticStatesSuccessSelectCombobox-currentlyFocusedItem"
+              aria-labelledby="a4546C40"
+              class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact"
+              role="listbox"
+            >
+              
+                        
+              <li
+                aria-selected="true"
+                class="fd-list__item is-selected"
+                id="semanticStatesSuccessSelectCombobox-currentlyFocusedItem"
+                role="option"
+                tabindex="0"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  
+                                List Item 1
+                            
+                </span>
+                
+                            
+                <span
+                  class="fd-list__secondary"
+                >
+                  A1
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  List item 2
+                </span>
+                
+                            
+                <span
+                  class="fd-list__secondary"
+                >
+                  A2
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  List item 3
+                </span>
+                
+                            
+                <span
+                  class="fd-list__secondary"
+                >
+                  A3
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  List item 4
+                </span>
+                
+                            
+                <span
+                  class="fd-list__secondary"
+                >
+                  A4
+                </span>
+                
+                        
+              </li>
+              
+                    
+            </ul>
+            
+                
+          </div>
+          
+                
+          <div
+            aria-hidden="true"
+            class="fd-popover__body fd-popover__body--no-arrow"
+            id="successFormMessage"
+          >
+            
+                    
+            <span
+              class="fd-form-message fd-form-message--static fd-form-message--success"
+            >
+              Success message
+            </span>
+            
+                
+          </div>
           
             
         </div>
@@ -2246,217 +2226,691 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
         
       </div>
       
-    
-    </div>
-    
-    
-    <div
-      aria-hidden="true"
-      class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
-      id="h07j9978H"
-    >
-      
-            
-      <div
-        aria-live="assertive"
-        class="fd-list__message fd-list__message--error"
-        role="alert"
-      >
-        Error message
-      </div>
-      
-            
-      <ul
-        aria-labelledby="b4546C40"
-        class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact"
-        id="e36GLS1W"
-        role="listbox"
-        tabindex="-1"
-      >
-        
-            
-        <li
-          aria-selected="true"
-          class="fd-list__item is-selected"
-          role="option"
-          tabindex="0"
-        >
-          
-                
-          <span
-            class="fd-list__title"
-          >
-            
-                    List Item 1
-                
-          </span>
-          
-                
-          <span
-            class="fd-list__secondary"
-          >
-            A1
-          </span>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="fd-list__title"
-          >
-            List item 2
-          </span>
-          
-                
-          <span
-            class="fd-list__secondary"
-          >
-            A2
-          </span>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="fd-list__title"
-          >
-            List item 3
-          </span>
-          
-                
-          <span
-            class="fd-list__secondary"
-          >
-            A3
-          </span>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="fd-list__title"
-          >
-            List item 4
-          </span>
-          
-                
-          <span
-            class="fd-list__secondary"
-          >
-            A4
-          </span>
-          
-            
-        </li>
-        
-            
-      </ul>
-      
-    
-    </div>
-    
-    
-  </div>
-  
-    
-  <span
-    class="fd-form-message fd-form-message--static fd-form-message--error"
-  >
-    Error message
-  </span>
-  
-
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <label
-    class="fd-form-label"
-    id="b45336C4"
-  >
-    
-        Warning Select Example
-    
-  </label>
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-popover"
-  >
-    
-    
-    <div
-      class="fd-popover__control"
-    >
-      
         
       <div
-        class="fd-select"
+        class="fd-col fd-col--3"
       >
+        
+            
+        <label
+          class="fd-form-label"
+          id="b4546C40"
+        >
+          
+                Choose an option
+            
+        </label>
+        
+            
+        <br />
         
             
         <div
-          aria-controls="s490DG4M"
-          aria-expanded="false"
-          aria-haspopup="listbox"
-          class="fd-select__control is-warning"
-          onclick="onControlClick('h07j998hhH');"
-          role="combobox"
-          tabindex="0"
+          class="fd-popover"
         >
           
                 
-          <span
-            class="fd-select__text-content"
-          >
-            Warning
-          </span>
-          
-                    
-          <span
-            class="fd-button fd-button--transparent fd-select__button"
+          <div
+            class="fd-popover__control"
           >
             
+                    
+            <div
+              class="fd-select"
+            >
+              
                         
-            <i
-              class="sap-icon--slim-arrow-down"
-            />
+              <button
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-labelledby="b4546C40 b4546C40Value"
+                class="fd-select__control is-error"
+                id="semanticStatesErrorSelectCombobox"
+                onclick="
+                                toggleElAttrs('semanticStatesErrorSelectCombobox', ['aria-expanded']);
+                                toggleElAttrs('h07j9978H', ['aria-hidden']);
+                                toggleElAttrs('errorFormMessage', ['aria-hidden']);
+                            "
+                tabindex="0"
+              >
+                
+                            
+                <span
+                  class="fd-select__text-content"
+                  id="b4546C40Value"
+                >
+                  Error
+                </span>
+                
+                            
+                <span
+                  class="fd-button fd-button--transparent fd-select__button"
+                >
+                  
+                                
+                  <i
+                    class="sap-icon--slim-arrow-down"
+                  />
+                  
+                            
+                </span>
+                
+                        
+              </button>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+                
+          <div
+            aria-hidden="true"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+            id="h07j9978H"
+          >
             
                     
-          </span>
+            <div
+              aria-live="assertive"
+              class="fd-list__message fd-list__message--error"
+              role="alert"
+            >
+              Error message
+            </div>
+            
+                    
+            <ul
+              aria-activedescendant="semanticStatesErrorSelectCombobox-currentlyFocusedItem"
+              aria-labelledby="b4546C40"
+              class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact"
+              role="listbox"
+              tabindex="-1"
+            >
+              
+                        
+              <li
+                class="fd-list__item"
+                id="semanticStatesErrorSelectCombobox-currentlyFocusedItem"
+                role="option"
+                tabindex="-1"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  
+                                List Item 1
+                            
+                </span>
+                
+                            
+                <span
+                  class="fd-list__secondary"
+                >
+                  A1
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  List item 2
+                </span>
+                
+                            
+                <span
+                  class="fd-list__secondary"
+                >
+                  A2
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  List item 3
+                </span>
+                
+                            
+                <span
+                  class="fd-list__secondary"
+                >
+                  A3
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  List item 4
+                </span>
+                
+                            
+                <span
+                  class="fd-list__secondary"
+                >
+                  A4
+                </span>
+                
+                        
+              </li>
+              
+                    
+            </ul>
+            
+                
+          </div>
+          
+                
+          <div
+            aria-hidden="false"
+            class="fd-popover__body fd-popover__body--no-arrow"
+            id="errorFormMessage"
+          >
+            
+                    
+            <span
+              class="fd-form-message fd-form-message--static fd-form-message--error"
+            >
+              Error message
+            </span>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-col fd-col--3"
+      >
+        
+            
+        <label
+          class="fd-form-label"
+          id="b45336C4"
+        >
+          
+                Choose an option
+            
+        </label>
+        
+            
+        <br />
+        
+            
+        <div
+          class="fd-popover"
+        >
+          
+                
+          <div
+            class="fd-popover__control"
+          >
+            
+                    
+            <div
+              class="fd-select"
+            >
+              
+                        
+              <button
+                aria-expanded="true"
+                aria-haspopup="listbox"
+                aria-labelledby="b45336C4 b45336C4Value"
+                class="fd-select__control is-warning"
+                id="semanticStatesWarningSelectCombobox"
+                onclick="
+                                toggleElAttrs('semanticStatesWarningSelectCombobox', ['aria-expanded']);
+                                toggleElAttrs('h07j998hhH', ['aria-hidden']);
+                                toggleElAttrs('warningFormMessage', ['aria-hidden']);
+                            "
+                tabindex="0"
+              >
+                
+                            
+                <span
+                  class="fd-select__text-content"
+                  is="b45336C4Value"
+                >
+                  Warning
+                </span>
+                
+                            
+                <span
+                  class="fd-button fd-button--transparent fd-select__button"
+                >
+                  
+                                
+                  <i
+                    class="sap-icon--slim-arrow-down"
+                  />
+                  
+                            
+                </span>
+                
+                        
+              </button>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+                
+          <div
+            aria-hidden="false"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+            id="h07j998hhH"
+          >
+            
+                    
+            <div
+              aria-live="assertive"
+              class="fd-list__message fd-list__message--warning"
+              role="alert"
+            >
+              Warning message
+            </div>
+            
+                    
+            <ul
+              aria-activedescendant="semanticStatesWarningSelectCombobox-currentlyFocusedItem"
+              aria-labelledby="b45336C4"
+              class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact"
+              role="listbox"
+            >
+              
+                        
+              <li
+                aria-selected="true"
+                class="fd-list__item is-selected"
+                id="semanticStatesWarningSelectCombobox-currentlyFocusedItem"
+                role="option"
+                tabindex="0"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  
+                                List Item 1
+                            
+                </span>
+                
+                            
+                <span
+                  class="fd-list__secondary"
+                >
+                  A1
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  List item 2
+                </span>
+                
+                            
+                <span
+                  class="fd-list__secondary"
+                >
+                  A2
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  List item 3
+                </span>
+                
+                            
+                <span
+                  class="fd-list__secondary"
+                >
+                  A3
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  List item 4
+                </span>
+                
+                            
+                <span
+                  class="fd-list__secondary"
+                >
+                  A4
+                </span>
+                
+                        
+              </li>
+              
+                    
+            </ul>
+            
+                
+          </div>
+          
+                
+          <div
+            aria-hidden="true"
+            class="fd-popover__body fd-popover__body--no-arrow"
+            id="warningFormMessage"
+          >
+            
+                    
+            <span
+              class="fd-form-message fd-form-message--static fd-form-message--warning"
+            >
+              Warning message
+            </span>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-col fd-col--3"
+      >
+        
+            
+        <label
+          class="fd-form-label"
+          id="h45336C4"
+        >
+          
+                Choose an option
+            
+        </label>
+        
+            
+        <br />
+        
+            
+        <div
+          class="fd-popover"
+        >
+          
+                
+          <div
+            class="fd-popover__control"
+          >
+            
+                    
+            <div
+              class="fd-select"
+            >
+              
+                        
+              <button
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-labelledby="h45336C4 h45336C4Value"
+                class="fd-select__control is-information"
+                id="semanticStatesInformationSelectCombobox"
+                onclick="
+                                toggleElAttrs('semanticStatesInformationSelectCombobox', ['aria-expanded']);
+                                toggleElAttrs('hkhh998hhH', ['aria-hidden']);
+                                toggleElAttrs('informationFormMessage', ['aria-hidden']);
+                            "
+                tabindex="0"
+              >
+                
+                            
+                <span
+                  class="fd-select__text-content"
+                  id="h45336C4Value"
+                >
+                  Information
+                </span>
+                
+                                
+                <span
+                  class="fd-button fd-button--transparent fd-select__button"
+                >
+                  
+                                    
+                  <i
+                    class="sap-icon--slim-arrow-down"
+                  />
+                  
+                                
+                </span>
+                
+                        
+              </button>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+                
+          <div
+            aria-hidden="true"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+            id="hkhh998hhH"
+          >
+            
+                    
+            <div
+              aria-live="assertive"
+              class="fd-list__message fd-list__message--information"
+              role="alert"
+            >
+              Information message
+            </div>
+            
+                    
+            <ul
+              aria-activedescendant="semanticStatesInformationSelectCombobox-currentlyFocusedItem"
+              aria-labelledby="h45336C4"
+              class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact"
+              role="listbox"
+            >
+              
+                        
+              <li
+                class="fd-list__item"
+                id="semanticStatesInformationSelectCombobox-currentlyFocusedItem"
+                role="option"
+                tabindex="-1"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  
+                                List Item 1
+                            
+                </span>
+                
+                            
+                <span
+                  class="fd-list__secondary"
+                >
+                  A1
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  List item 2
+                </span>
+                
+                            
+                <span
+                  class="fd-list__secondary"
+                >
+                  A2
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  List item 3
+                </span>
+                
+                            
+                <span
+                  class="fd-list__secondary"
+                >
+                  A3
+                </span>
+                
+                        
+              </li>
+              
+                        
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+                            
+                <span
+                  class="fd-list__title"
+                >
+                  List item 4
+                </span>
+                
+                            
+                <span
+                  class="fd-list__secondary"
+                >
+                  A4
+                </span>
+                
+                        
+              </li>
+              
+                    
+            </ul>
+            
+                
+          </div>
+          
+                
+          <div
+            aria-hidden="false"
+            class="fd-popover__body fd-popover__body--no-arrow"
+            id="informationFormMessage"
+          >
+            
+                    
+            <span
+              class="fd-form-message fd-form-message--static fd-form-message--information"
+            >
+              Information message
+            </span>
+            
+                
+          </div>
           
             
         </div>
@@ -2467,364 +2921,8 @@ exports[`Storyshots Components/Select Semantic States 1`] = `
     
     </div>
     
-    
-    <div
-      aria-hidden="true"
-      class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
-      id="h07j998hhH"
-    >
-      
-            
-      <div
-        aria-live="assertive"
-        class="fd-list__message fd-list__message--warning"
-        role="alert"
-      >
-        Warning message
-      </div>
-      
-            
-      <ul
-        aria-labelledby="b45336C4"
-        class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact"
-        id="s490DG4M"
-        role="listbox"
-        tabindex="-1"
-      >
-        
-            
-        <li
-          aria-selected="true"
-          class="fd-list__item is-selected"
-          role="option"
-          tabindex="0"
-        >
-          
-                
-          <span
-            class="fd-list__title"
-          >
-            
-                    List Item 1
-                
-          </span>
-          
-                
-          <span
-            class="fd-list__secondary"
-          >
-            A1
-          </span>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="fd-list__title"
-          >
-            List item 2
-          </span>
-          
-                
-          <span
-            class="fd-list__secondary"
-          >
-            A2
-          </span>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="fd-list__title"
-          >
-            List item 3
-          </span>
-          
-                
-          <span
-            class="fd-list__secondary"
-          >
-            A3
-          </span>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="fd-list__title"
-          >
-            List item 4
-          </span>
-          
-                
-          <span
-            class="fd-list__secondary"
-          >
-            A4
-          </span>
-          
-            
-        </li>
-        
-            
-      </ul>
-      
-        
-    </div>
-    
-    
-  </div>
-  
-    
-  <span
-    class="fd-form-message fd-form-message--static fd-form-message--warning"
-  >
-    Warning message
-  </span>
-  
 
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <br />
-  
-
-    
-  <label
-    class="fd-form-label"
-    id="h45336C4"
-  >
-    
-        Information Select Example
-    
-  </label>
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-popover"
-  >
-    
-    
-    <div
-      class="fd-popover__control"
-    >
-      
-        
-      <div
-        class="fd-select"
-      >
-        
-            
-        <div
-          aria-controls="h83LDO23"
-          aria-expanded="false"
-          aria-haspopup="listbox"
-          class="fd-select__control is-information"
-          onclick="onControlClick('hkhh998hhH');"
-          role="combobox"
-          tabindex="0"
-        >
-          
-                
-          <span
-            class="fd-select__text-content"
-          >
-            Information
-          </span>
-          
-                    
-          <span
-            class="fd-button fd-button--transparent fd-select__button"
-          >
-            
-                        
-            <i
-              class="sap-icon--slim-arrow-down"
-            />
-            
-                    
-          </span>
-          
-            
-        </div>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-    
-    <div
-      aria-hidden="true"
-      class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
-      id="hkhh998hhH"
-    >
-      
-            
-      <div
-        aria-live="assertive"
-        class="fd-list__message fd-list__message--information"
-        role="alert"
-      >
-        Information message
-      </div>
-      
-            
-      <ul
-        aria-labelledby="h45336C4"
-        class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact"
-        id="h83LDO23"
-        role="listbox"
-        tabindex="-1"
-      >
-        
-            
-        <li
-          aria-selected="true"
-          class="fd-list__item is-selected"
-          role="option"
-          tabindex="0"
-        >
-          
-                
-          <span
-            class="fd-list__title"
-          >
-            
-                    List Item 1
-                
-          </span>
-          
-                
-          <span
-            class="fd-list__secondary"
-          >
-            A1
-          </span>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="fd-list__title"
-          >
-            List item 2
-          </span>
-          
-                
-          <span
-            class="fd-list__secondary"
-          >
-            A2
-          </span>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="fd-list__title"
-          >
-            List item 3
-          </span>
-          
-                
-          <span
-            class="fd-list__secondary"
-          >
-            A3
-          </span>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="fd-list__title"
-          >
-            List item 4
-          </span>
-          
-                
-          <span
-            class="fd-list__secondary"
-          >
-            A4
-          </span>
-          
-            
-        </li>
-        
-            
-      </ul>
-      
-        
-    </div>
-    
-    
   </div>
-  
-    
-  <span
-    class="fd-form-message fd-form-message--static fd-form-message--information"
-  >
-    Information message
-  </span>
   
 
 </div>
@@ -2836,6 +2934,15 @@ exports[`Storyshots Components/Select Text Wrapping 1`] = `
 >
   
     
+  <label
+    class="fd-form-label"
+    id="textWrappingLabel"
+  >
+    Choose an option
+  </label>
+  <br />
+  
+    
   <div
     class="fd-popover"
   >
@@ -2851,19 +2958,23 @@ exports[`Storyshots Components/Select Text Wrapping 1`] = `
       >
         
             
-        <div
-          aria-controls="s12LFMR5"
-          aria-expanded="false"
+        <button
+          aria-expanded="true"
           aria-haspopup="listbox"
+          aria-labelledby="textWrappingLabel textWrappingValue"
           class="fd-select__control"
-          onclick="onControlClick('h0GFF2325');"
-          role="combobox"
+          id="textWrappingSelectCombobox"
+          onclick="
+                    toggleElAttrs('h0GFF2325', ['aria-hidden']);
+                    toggleElAttrs('textWrappingSelectCombobox', ['aria-expanded']);
+                "
           tabindex="0"
         >
           
                 
           <span
             class="fd-select__text-content"
+            is="textWrappingValue"
           >
             Select
           </span>
@@ -2882,7 +2993,7 @@ exports[`Storyshots Components/Select Text Wrapping 1`] = `
           </span>
           
             
-        </div>
+        </button>
         
         
       </div>
@@ -2892,36 +3003,36 @@ exports[`Storyshots Components/Select Text Wrapping 1`] = `
     
     
     <div
-      aria-hidden="true"
+      aria-hidden="false"
       class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
       id="h0GFF2325"
     >
       
         
       <ul
-        aria-labelledby="g45464A40"
+        aria-activedescendant="textWrappingSelectCombobox-currentlyFocusedItem"
+        aria-labelledby="textWrappingLabel"
         class="fd-list fd-list--dropdown"
-        id="s12LFMR5"
         role="listbox"
-        tabindex="-1"
       >
         
             
         <li
           aria-selected="true"
           class="fd-list__item is-selected"
+          id="textWrappingSelectCombobox-currentlyFocusedItem"
           role="option"
           tabindex="0"
         >
           
-            
+                
           <span
             class="fd-list__title"
           >
             Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text Very Long Text 
           </span>
           
-            
+                
           <span
             class="fd-list__secondary"
           >
@@ -2938,21 +3049,21 @@ exports[`Storyshots Components/Select Text Wrapping 1`] = `
           tabindex="-1"
         >
           
-            
+                
           <span
             class="fd-list__title"
           >
             List item 2
           </span>
           
-            
+                
           <span
             class="fd-list__secondary"
           >
             A2
           </span>
           
-        
+            
         </li>
         
             
@@ -2962,14 +3073,14 @@ exports[`Storyshots Components/Select Text Wrapping 1`] = `
           tabindex="-1"
         >
           
-            
+                
           <span
             class="fd-list__title"
           >
             List item 3
           </span>
           
-            
+                
           <span
             class="fd-list__secondary"
           >
@@ -2986,14 +3097,14 @@ exports[`Storyshots Components/Select Text Wrapping 1`] = `
           tabindex="-1"
         >
           
-            
+                
           <span
             class="fd-list__title"
           >
             List item 4
           </span>
           
-            
+                
           <span
             class="fd-list__secondary"
           >
@@ -3021,358 +3132,416 @@ exports[`Storyshots Components/Select Two Column 1`] = `
   style="height: 200px"
 >
   
-    
+
   <div
-    class="fd-popover"
+    class="fd-container"
   >
     
-    
-    <div
-      class="fd-popover__control"
-    >
-      
-        
-      <div
-        class="fd-select"
-      >
-        
-            
-        <div
-          aria-controls="a34FL7NC"
-          aria-expanded="false"
-          aria-haspopup="listbox"
-          class="fd-select__control"
-          onclick="onControlClick('h0C62325');"
-          role="combobox"
-          tabindex="0"
-        >
-          
-                
-          <span
-            class="fd-select__text-content"
-          >
-            Select Product
-          </span>
-          
-                
-          <span
-            class="fd-button fd-button--transparent fd-select__button"
-          >
-            
-                    
-            <i
-              class="sap-icon--slim-arrow-down"
-            />
-            
-                
-          </span>
-          
-            
-        </div>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-    
-    <div
-      aria-hidden="true"
-      class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
-      id="h0C62325"
-    >
-      
-        
-      <ul
-        aria-labelledby="f45564A59"
-        class="fd-list fd-list--dropdown"
-        id="a34FL7NC"
-        role="listbox"
-        tabindex="-1"
-      >
-        
-            
-        <li
-          aria-selected="true"
-          class="fd-list__item is-selected"
-          role="option"
-          tabindex="0"
-        >
-          
-            
-          <span
-            class="fd-list__title"
-          >
-            Product 1
-          </span>
-          
-            
-          <span
-            class="fd-list__secondary"
-          >
-            1000 EUR
-          </span>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-            
-          <span
-            class="fd-list__title"
-          >
-            Product 2
-          </span>
-          
-            
-          <span
-            class="fd-list__secondary"
-          >
-            750 EUR
-          </span>
-          
-        
-        </li>
-        
-            
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-            
-          <span
-            class="fd-list__title"
-          >
-            Product 3
-          </span>
-          
-            
-          <span
-            class="fd-list__secondary"
-          >
-            780 EUR
-          </span>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-            
-          <span
-            class="fd-list__title"
-          >
-            Product 4
-          </span>
-          
-            
-          <span
-            class="fd-list__secondary"
-          >
-            40 EUR
-          </span>
-          
-            
-        </li>
-        
-        
-      </ul>
-      
-    
-    </div>
-    
-    
-  </div>
   
-    
-  <div
-    class="fd-popover"
-  >
-    
-    
     <div
-      class="fd-popover__control"
+      class="fd-row"
     >
       
-        
+    
       <div
-        class="fd-select fd-select--compact"
+        class="fd-col fd-col--6"
       >
         
-            
+    
+        <label
+          class="fd-form-label"
+          id="twoColumn1Label"
+        >
+          Choose an option
+        </label>
+        <br />
+        
+      
         <div
-          aria-controls="d301CQF4"
-          aria-expanded="false"
-          aria-haspopup="listbox"
-          class="fd-select__control"
-          onclick="onControlClick('h07jj326');"
-          role="combobox"
-          tabindex="0"
+          class="fd-popover"
         >
           
-                
-          <span
-            class="fd-select__text-content"
-          >
-            Select Product
-          </span>
-          
-                
-          <span
-            class="fd-button fd-button--transparent fd-select__button"
+        
+          <div
+            class="fd-popover__control"
           >
             
+          
+            <div
+              class="fd-select"
+            >
+              
+            
+              <button
+                aria-expanded="true"
+                aria-haspopup="listbox"
+                aria-labelledby="twoColumn1Label twoColumn1Value"
+                class="fd-select__control"
+                id="twoColumnSelectCombobox"
+                onclick="
+                    toggleElAttrs('h0C62325', ['aria-hidden']);
+                    toggleElAttrs('twoColumnSelectCombobox', ['aria-expanded']);
+                "
+                tabindex="0"
+              >
+                
+              
+                <span
+                  class="fd-select__text-content"
+                  is="twoColumn1Value"
+                >
+                  Select Product
+                </span>
+                
+              
+                <span
+                  class="fd-button fd-button--transparent fd-select__button"
+                >
+                  
                     
-            <i
-              class="sap-icon--slim-arrow-down"
-            />
-            
+                  <i
+                    class="sap-icon--slim-arrow-down"
+                  />
+                  
                 
-          </span>
-          
+                </span>
+                
             
+              </button>
+              
+          
+            </div>
+            
+        
+          </div>
+          
+        
+          <div
+            aria-hidden="false"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+            id="h0C62325"
+          >
+            
+          
+            <ul
+              aria-activedescendant="twoColumnSelectCombobox-currentlyFocusedItem"
+              aria-labelledby="twoColumn1Label"
+              class="fd-list fd-list--dropdown"
+              role="listbox"
+            >
+              
+                
+              <li
+                aria-selected="true"
+                class="fd-list__item is-selected"
+                id="twoColumnSelectCombobox-currentlyFocusedItem"
+                role="option"
+                tabindex="0"
+              >
+                
+                    
+                <span
+                  class="fd-list__title"
+                >
+                  Product 1
+                </span>
+                
+                    
+                <span
+                  class="fd-list__secondary"
+                >
+                  1000 EUR
+                </span>
+                
+                
+              </li>
+              
+                
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+                    
+                <span
+                  class="fd-list__title"
+                >
+                  Product 2
+                </span>
+                
+                    
+                <span
+                  class="fd-list__secondary"
+                >
+                  750 EUR
+                </span>
+                
+                
+              </li>
+              
+                
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+                    
+                <span
+                  class="fd-list__title"
+                >
+                  Product 3
+                </span>
+                
+                    
+                <span
+                  class="fd-list__secondary"
+                >
+                  780 EUR
+                </span>
+                
+                
+              </li>
+              
+                
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+                    
+                <span
+                  class="fd-list__title"
+                >
+                  Product 4
+                </span>
+                
+                    
+                <span
+                  class="fd-list__secondary"
+                >
+                  40 EUR
+                </span>
+                
+                
+              </li>
+              
+          
+            </ul>
+            
+        
+          </div>
+          
+      
         </div>
         
-        
+    
       </div>
       
     
-    </div>
-    
-    
-    <div
-      aria-hidden="true"
-      class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
-      id="h07jj326"
-    >
-      
-        
-      <ul
-        aria-labelledby="g45564A59"
-        class="fd-list fd-list--dropdown fd-list--compact"
-        id="d301CQF4"
-        role="listbox"
-        tabindex="-1"
+      <div
+        class="fd-col fd-col--6"
       >
         
-            
-        <li
-          aria-selected="true"
-          class="fd-list__item is-selected"
-          role="option"
-          tabindex="0"
-        >
-          
-            
-          <span
-            class="fd-list__title"
-          >
-            Product 1
-          </span>
-          
-            
-          <span
-            class="fd-list__secondary"
-          >
-            1000 EUR
-          </span>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-            
-          <span
-            class="fd-list__title"
-          >
-            Product 2
-          </span>
-          
-            
-          <span
-            class="fd-list__secondary"
-          >
-            750 EUR
-          </span>
-          
-        
-        </li>
-        
-            
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-            
-          <span
-            class="fd-list__title"
-          >
-            Product 3
-          </span>
-          
-            
-          <span
-            class="fd-list__secondary"
-          >
-            780 EUR
-          </span>
-          
-            
-        </li>
-        
-            
-        <li
-          class="fd-list__item"
-          role="option"
-          tabindex="-1"
-        >
-          
-            
-          <span
-            class="fd-list__title"
-          >
-            Product 4
-          </span>
-          
-            
-          <span
-            class="fd-list__secondary"
-          >
-            40 EUR
-          </span>
-          
-            
-        </li>
-        
-        
-      </ul>
-      
     
+        <label
+          class="fd-form-label"
+          id="twoColumn2Label"
+        >
+          Choose an option
+        </label>
+        <br />
+        
+      
+        <div
+          class="fd-popover"
+        >
+          
+        
+          <div
+            class="fd-popover__control"
+          >
+            
+          
+            <div
+              class="fd-select fd-select--compact"
+            >
+              
+            
+              <button
+                aria-expanded="true"
+                aria-haspopup="listbox"
+                aria-labelledby="twoColumn2Label twoColumn2Value"
+                class="fd-select__control"
+                id="twoColumnSelectCombobox2"
+                onclick="
+                    toggleElAttrs('h07jj326', ['aria-hidden']);
+                    toggleElAttrs('twoColumnSelectCombobox2', ['aria-expanded']);
+                "
+                tabindex="0"
+              >
+                
+                
+                <span
+                  class="fd-select__text-content"
+                  id="twoColumn2Value"
+                >
+                  Select Product
+                </span>
+                
+                
+                <span
+                  class="fd-button fd-button--transparent fd-select__button"
+                >
+                  
+                        
+                  <i
+                    class="sap-icon--slim-arrow-down"
+                  />
+                  
+                
+                </span>
+                
+            
+              </button>
+              
+          
+            </div>
+            
+        
+          </div>
+          
+        
+          <div
+            aria-hidden="false"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+            id="h07jj326"
+          >
+            
+          
+            <ul
+              aria-activedescendant="twoColumnSelectCombobox2-currentlyFocusedItem"
+              aria-labelledby="twoColumn2Label"
+              class="fd-list fd-list--dropdown fd-list--compact"
+              role="listbox"
+            >
+              
+            
+              <li
+                aria-selected="true"
+                class="fd-list__item is-selected"
+                id="twoColumnSelectCombobox2-currentlyFocusedItem"
+                role="option"
+                tabindex="0"
+              >
+                
+              
+                <span
+                  class="fd-list__title"
+                >
+                  Product 1
+                </span>
+                
+              
+                <span
+                  class="fd-list__secondary"
+                >
+                  1000 EUR
+                </span>
+                
+            
+              </li>
+              
+            
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+              
+                <span
+                  class="fd-list__title"
+                >
+                  Product 2
+                </span>
+                
+              
+                <span
+                  class="fd-list__secondary"
+                >
+                  750 EUR
+                </span>
+                
+            
+              </li>
+              
+            
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+              
+                <span
+                  class="fd-list__title"
+                >
+                  Product 3
+                </span>
+                
+              
+                <span
+                  class="fd-list__secondary"
+                >
+                  780 EUR
+                </span>
+                
+            
+              </li>
+              
+            
+              <li
+                class="fd-list__item"
+                role="option"
+                tabindex="-1"
+              >
+                
+              
+                <span
+                  class="fd-list__title"
+                >
+                  Product 4
+                </span>
+                
+              
+                <span
+                  class="fd-list__secondary"
+                >
+                  40 EUR
+                </span>
+                
+            
+              </li>
+              
+          
+            </ul>
+            
+        
+          </div>
+          
+      
+        </div>
+        
+    
+      </div>
+      
+  
     </div>
     
-    
+
   </div>
   
 
@@ -3385,6 +3554,15 @@ exports[`Storyshots Components/Select Two Columns And Icons 1`] = `
 >
   
     
+  <label
+    class="fd-form-label"
+    id="twoColumnsAndIconsLabel"
+  >
+    Choose an option
+  </label>
+  <br />
+  
+    
   <div
     class="fd-popover"
   >
@@ -3400,19 +3578,23 @@ exports[`Storyshots Components/Select Two Columns And Icons 1`] = `
       >
         
             
-        <div
-          aria-controls="s45GH6Y7"
-          aria-expanded="false"
+        <button
+          aria-expanded="true"
           aria-haspopup="listbox"
+          aria-labelledby="twoColumnsAndIconsLabel twoColumnsAndIconsValue"
           class="fd-select__control"
-          onclick="onControlClick('h090G325');"
-          role="combobox"
+          id="twoColumnsAndIconSelectCombobox"
+          onclick="
+                    toggleElAttrs('h090G325', ['aria-hidden']);
+                    toggleElAttrs('twoColumnsAndIconSelectCombobox', ['aria-expanded']);
+                "
           tabindex="0"
         >
           
                 
           <span
             class="fd-select__text-content"
+            is="twoColumnsAndIconsValue"
           >
             Select Product
           </span>
@@ -3431,7 +3613,7 @@ exports[`Storyshots Components/Select Two Columns And Icons 1`] = `
           </span>
           
             
-        </div>
+        </button>
         
         
       </div>
@@ -3441,24 +3623,24 @@ exports[`Storyshots Components/Select Two Columns And Icons 1`] = `
     
     
     <div
-      aria-hidden="true"
+      aria-hidden="false"
       class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
       id="h090G325"
     >
       
         
       <ul
-        aria-labelledby="g45564A50"
+        aria-activedescendant="twoColumnsAndIconSelectCombobox-currentlyFocusedItem"
+        aria-labelledby="twoColumnsAndIconsLabel"
         class="fd-list fd-list--dropdown"
-        id="s45GH6Y7"
         role="listbox"
-        tabindex="-1"
       >
         
             
         <li
           aria-selected="true"
           class="fd-list__item is-selected"
+          id="twoColumnsAndIconSelectCombobox-currentlyFocusedItem"
           role="option"
           tabindex="0"
         >

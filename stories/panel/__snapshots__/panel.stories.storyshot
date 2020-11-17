@@ -40,7 +40,7 @@ exports[`Storyshots Components/Panel Compact 1`] = `
       class="fd-panel__title"
       id="asdASD234"
     >
-      Panel Header
+      Panel header
     </h4>
     
         
@@ -138,6 +138,7 @@ exports[`Storyshots Components/Panel Expandable 1`] = `
           aria-controls="fghqwe321"
           aria-expanded="false"
           aria-haspopup="true"
+          aria-label="expand/collapse panel"
           class="fd-button fd-button--transparent fd-panel__button"
         >
           
@@ -157,7 +158,7 @@ exports[`Storyshots Components/Panel Expandable 1`] = `
         class="fd-panel__title"
         id="asdASD123"
       >
-        Panel Header Collapsed
+        Panel header collapsed
       </h4>
       
         
@@ -256,9 +257,10 @@ exports[`Storyshots Components/Panel Expandable 1`] = `
         
             
         <button
-          aria-controls="fghqwe32122"
+          aria-controls="fghqwe3214213"
           aria-expanded="true"
           aria-haspopup="true"
+          aria-label="expand/collapse panel"
           class="fd-button fd-button--transparent fd-panel__button"
         >
           
@@ -278,7 +280,7 @@ exports[`Storyshots Components/Panel Expandable 1`] = `
         class="fd-panel__title"
         id="asdASD1234"
       >
-        Panel Header Expanded
+        Panel header expanded
       </h4>
       
     
@@ -289,7 +291,7 @@ exports[`Storyshots Components/Panel Expandable 1`] = `
       aria-hidden="false"
       aria-labelledby="jhqDKYdf"
       class="fd-panel__content"
-      id="fghqwe32122"
+      id="fghqwe3214213"
       role="region"
     >
       
@@ -330,7 +332,7 @@ exports[`Storyshots Components/Panel Fixed 1`] = `
     <h4
       class="fd-panel__title"
     >
-      Panel Header
+      Panel header
     </h4>
     
         
@@ -405,7 +407,7 @@ exports[`Storyshots Components/Panel Fixed 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Panel Fixed Height Content 1`] = `
+exports[`Storyshots Components/Panel Fixed height 1`] = `
 <div
   class="fd-panel"
 >
@@ -445,7 +447,7 @@ exports[`Storyshots Components/Panel Fixed Height Content 1`] = `
       class="fd-panel__title"
       id="asdASD345"
     >
-      Panel Header
+      Panel header
     </h4>
     
         

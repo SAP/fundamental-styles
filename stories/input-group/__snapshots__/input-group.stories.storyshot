@@ -1017,6 +1017,7 @@ exports[`Storyshots Components/Forms/Input Group Test Five 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1044,6 +1045,7 @@ exports[`Storyshots Components/Forms/Input Group Test Five 1`] = `
     
    
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1071,6 +1073,7 @@ exports[`Storyshots Components/Forms/Input Group Test Five 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1098,6 +1101,7 @@ exports[`Storyshots Components/Forms/Input Group Test Five 1`] = `
     
    
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1125,6 +1129,7 @@ exports[`Storyshots Components/Forms/Input Group Test Five 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1152,6 +1157,7 @@ exports[`Storyshots Components/Forms/Input Group Test Five 1`] = `
     
    
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1179,6 +1185,7 @@ exports[`Storyshots Components/Forms/Input Group Test Five 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1206,6 +1213,7 @@ exports[`Storyshots Components/Forms/Input Group Test Five 1`] = `
     
    
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1233,6 +1241,7 @@ exports[`Storyshots Components/Forms/Input Group Test Five 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1260,6 +1269,7 @@ exports[`Storyshots Components/Forms/Input Group Test Five 1`] = `
     
    
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1287,6 +1297,7 @@ exports[`Storyshots Components/Forms/Input Group Test Five 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1314,6 +1325,7 @@ exports[`Storyshots Components/Forms/Input Group Test Five 1`] = `
     
    
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1341,6 +1353,7 @@ exports[`Storyshots Components/Forms/Input Group Test Five 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1368,6 +1381,7 @@ exports[`Storyshots Components/Forms/Input Group Test Five 1`] = `
     
    
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1395,6 +1409,7 @@ exports[`Storyshots Components/Forms/Input Group Test Five 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1422,6 +1437,7 @@ exports[`Storyshots Components/Forms/Input Group Test Five 1`] = `
     
    
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1444,6 +1460,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
     
         
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1495,6 +1512,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
     
         
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1530,6 +1548,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
     
         
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1565,6 +1584,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
     
         
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1616,6 +1636,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
     
         
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1651,6 +1672,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
     
         
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1691,6 +1713,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
     
         
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1742,6 +1765,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
     
         
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1777,6 +1801,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
     
         
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1812,6 +1837,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
     
         
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1863,6 +1889,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
     
         
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1898,6 +1925,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
     
         
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1936,6 +1964,7 @@ exports[`Storyshots Components/Forms/Input Group Test One 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1972,6 +2001,7 @@ exports[`Storyshots Components/Forms/Input Group Test One 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -1999,6 +2029,7 @@ exports[`Storyshots Components/Forms/Input Group Test One 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2026,6 +2057,7 @@ exports[`Storyshots Components/Forms/Input Group Test One 1`] = `
     
    
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2062,6 +2094,7 @@ exports[`Storyshots Components/Forms/Input Group Test One 1`] = `
     
    
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2089,6 +2122,7 @@ exports[`Storyshots Components/Forms/Input Group Test One 1`] = `
     
    
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2116,6 +2150,7 @@ exports[`Storyshots Components/Forms/Input Group Test One 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2152,6 +2187,7 @@ exports[`Storyshots Components/Forms/Input Group Test One 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2179,6 +2215,7 @@ exports[`Storyshots Components/Forms/Input Group Test One 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2206,6 +2243,7 @@ exports[`Storyshots Components/Forms/Input Group Test One 1`] = `
     
    
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2242,6 +2280,7 @@ exports[`Storyshots Components/Forms/Input Group Test One 1`] = `
     
    
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2269,6 +2308,7 @@ exports[`Storyshots Components/Forms/Input Group Test One 1`] = `
     
    
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2309,6 +2349,7 @@ exports[`Storyshots Components/Forms/Input Group Test Six 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder="Field placeholder text"
       value=""
@@ -2324,6 +2365,7 @@ exports[`Storyshots Components/Forms/Input Group Test Six 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder="Field placeholder text"
       value=""
@@ -2364,6 +2406,7 @@ exports[`Storyshots Components/Forms/Input Group Test Three 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2391,6 +2434,7 @@ exports[`Storyshots Components/Forms/Input Group Test Three 1`] = `
     
    
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2418,6 +2462,7 @@ exports[`Storyshots Components/Forms/Input Group Test Three 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2445,6 +2490,7 @@ exports[`Storyshots Components/Forms/Input Group Test Three 1`] = `
     
    
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2472,6 +2518,7 @@ exports[`Storyshots Components/Forms/Input Group Test Three 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2499,6 +2546,7 @@ exports[`Storyshots Components/Forms/Input Group Test Three 1`] = `
     
    
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2526,6 +2574,7 @@ exports[`Storyshots Components/Forms/Input Group Test Three 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2553,6 +2602,7 @@ exports[`Storyshots Components/Forms/Input Group Test Three 1`] = `
     
    
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2580,6 +2630,7 @@ exports[`Storyshots Components/Forms/Input Group Test Three 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2607,6 +2658,7 @@ exports[`Storyshots Components/Forms/Input Group Test Three 1`] = `
     
    
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2634,6 +2686,7 @@ exports[`Storyshots Components/Forms/Input Group Test Three 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2661,6 +2714,7 @@ exports[`Storyshots Components/Forms/Input Group Test Three 1`] = `
     
    
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2688,6 +2742,7 @@ exports[`Storyshots Components/Forms/Input Group Test Three 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2715,6 +2770,7 @@ exports[`Storyshots Components/Forms/Input Group Test Three 1`] = `
     
    
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2742,6 +2798,7 @@ exports[`Storyshots Components/Forms/Input Group Test Three 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2769,6 +2826,7 @@ exports[`Storyshots Components/Forms/Input Group Test Three 1`] = `
     
    
     <textarea
+      aria-label="test"
       class="input-group-input-playground  fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2791,6 +2849,7 @@ exports[`Storyshots Components/Forms/Input Group Test Two 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground input-group-input-playground--compact fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2827,6 +2886,7 @@ exports[`Storyshots Components/Forms/Input Group Test Two 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground input-group-input-playground--compact fd-input-group__input"
       placeholder=""
       value="19387309"
@@ -2854,6 +2914,7 @@ exports[`Storyshots Components/Forms/Input Group Test Two 1`] = `
     
    
     <input
+      aria-label="test"
       class="input-group-input-playground input-group-input-playground--compact fd-input-group__input"
       placeholder=""
       value="19387309"

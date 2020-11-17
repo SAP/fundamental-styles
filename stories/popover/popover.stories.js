@@ -1,28 +1,33 @@
 export default {
     title: 'Components/Popover',
     parameters: {
-        description: `The popover is a wrapping component that accepts a "control" as well as a "body".
+        description: `The popover displays additional information for an object in a compact way without leaving the page. The component contains two essential elements: the control (trigger) and body (content). It can also be paired with a **Menu**, whereas the menu button would trigger a dropdown (body). 
 
-A control can be anything that you want to trigger the interaction from. The body will be the contents of what you reveal on the page after triggering the popover.
-Commonly used as the interaction/wrapping component when composing "dropdowns", "contextual menus", "mega menu", etc, when paired with the menu component.
+##Usage   
+**Use a popover if:**
+        
+- You need to define your own structure.
+- You want to show UI elements that are not available with the quick view.
 
-As a general rule, it is suggested that one popover be revealed on the page at any given time.
-Opening one popover should close all others to prevent multiple layers and collisions of several popovers.`,
+
+**Do not use a popover if:**
+        
+- The objects are in a master list (in this case, the details are shown in the details area).
+
+
+##Guidelines
+- As a general rule, it is suggested that one popover be revealed on the page at any given time. Opening one popover should close all others to prevent multiple layers and collisions of several popovers.
+- Show status information as text fields in a content group. You can use semantic text colors.
+- You can define a height for the popover. If the content exceeds the height, a scroll bar is displayed.
+        
+`,
         docs: { iframeHeight: 350 },
         tags: ['f3', 'a11y', 'theme'],
         components: ['avatar', 'bar', 'button', 'icon', 'menu', 'popover', 'segmented-button', 'layout-grid']
     }
 };
 
-/**
- *
- * - Left Aligned - This is the default placement and no extra modifier classes are needed
- * - Right Aligned - A modifier class `--right` should be applied at the block level wrapper `fd-popover` and `--right` to the `fd-popover__body` warapper
- * - No Arrow & Left Aligned - `--no-arrow` modifier class on the `fd-popover__body` wrapper
- * - No Arrow & Right Aligned - Modifier classes `--right` at the block level wrapper `fd-popover`, `--right` and `--no-arrow` calss on the `fd-popover_body`
- */
-
-export const placementOptions = () => `<div class="fddocs-container" style="margin-bottom: 200px">
+export const Alignment = () => `<div class="fddocs-container" style="margin-bottom: 200px">
         <div class="fd-popover">
             <div class="fd-popover__control">
                 <button
@@ -33,7 +38,7 @@ export const placementOptions = () => `<div class="fddocs-container" style="marg
                     onclick="onPopoverClick('popoverA1');"
                     role="button">
                     <!- role is needed to override the combobox role due to aria-haspopup -->
-                        Left Aligned (default)
+                        Left-aligned (default)
                 </button>
             </div>
             <div class="fd-popover__body" aria-hidden="false" id="popoverA1">
@@ -74,7 +79,7 @@ export const placementOptions = () => `<div class="fddocs-container" style="marg
                     onclick="onPopoverClick('popoverA2');"
                     role="button">
                         <!- role is needed to override the combobox role due to aria-haspopup -->
-                        Right Aligned
+                        Right-aligned
                     </button>
             </div>
             <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="popoverA2">
@@ -98,7 +103,7 @@ export const placementOptions = () => `<div class="fddocs-container" style="marg
                     onclick="onPopoverClick('popoverA3');"
                     role="button">
                         <!- role is needed to override the combobox role due to aria-haspopup -->
-                        No Arrow & Left Aligned
+                        Left-aligned (no arrow)
                     </button>
             </div>
             <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false" id="popoverA3">
@@ -139,7 +144,7 @@ export const placementOptions = () => `<div class="fddocs-container" style="marg
                     onclick="onPopoverClick('popoverA4');"
                     role="button">
                         <!- role is needed to override the combobox role due to aria-haspopup -->
-                        No Arrow & Right Aligned
+                        Right-aligned (no arrow)
                     </button>
             </div>
             <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="false" id="popoverA4">
@@ -172,13 +177,21 @@ export const placementOptions = () => `<div class="fddocs-container" style="marg
     </div>
 `;
 
+Alignment.storyName = 'Alignment';
 
-/**
- * Header (with/without a subheader): `fd-popover__body-header`
- * Footer: `fd-popover__body-footer`
- */
+Alignment.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: `The popover body can be aligned to the left or right of the control. Additionally, it’s possible to remove the arrow from the body by adding the \`fd-popover__body--no-arrow\` modifier class to the body element.
 
-export const layoutOptions = () => `<div class="fddocs-container">
+Alignment | Modifier class
+:------------- | :-----------------
+Left | (default)
+Right | \`fd-popover__body--right\`   
+        ` }
+};
+
+export const variants = () => `<div class="fddocs-container">
     <div class="fd-popover">
         <div class="fd-popover__control">
             <button
@@ -189,7 +202,7 @@ export const layoutOptions = () => `<div class="fddocs-container">
                 onclick="onPopoverClick('popoverHSF1');"
                 role="button">
                     <!- role is needed to override the combobox role due to aria-haspopup -->
-                    Header Only
+                    Header
                 </button>
         </div>
         <div class="fd-popover__body" aria-hidden="false" id="popoverHSF1">
@@ -244,7 +257,7 @@ export const layoutOptions = () => `<div class="fddocs-container">
                 onclick="onPopoverClick('popoverHSF2');"
                 role="button">
                     <!- role is needed to override the combobox role due to aria-haspopup -->
-                    Footer Only
+                    Footer
                 </button>
         </div>
         <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="popoverHSF2">
@@ -282,7 +295,7 @@ export const layoutOptions = () => `<div class="fddocs-container">
                     onclick="onPopoverClick('popoverHSF3');"
                     role="button">
                         <!- role is needed to override the combobox role due to aria-haspopup -->
-                        With Header, Subheader and Footer
+                        Header, subheader and footer
                 </button>
             </div>
             <section
@@ -357,7 +370,7 @@ export const layoutOptions = () => `<div class="fddocs-container">
                     onclick="onPopoverClick('popoverHSF345');"
                     role="button">
                         <!- role is needed to override the combobox role due to aria-haspopup -->
-                        All Cozy Mode
+                        Cozy mode
                 </button>
             </div>
             <section
@@ -425,11 +438,22 @@ export const layoutOptions = () => `<div class="fddocs-container">
 </div>
 `;
 
-layoutOptions.storyName = 'Popover with Header, Subheader and Footer';
+variants.storyName = 'Body variants';
 
-/**
- * Virtually any component can be used as a `fd-popover__control` to control the display of `fd-popover__body`
- */
+variants.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: `There are several variants of the popover body that can be displayed depending on the use case.
+
+Variant | Modifier class | Description
+:------ | :------------- | :---------------
+Header | \`fd-popover__body-header\` | To display a header with text.
+Footer | \`fd-popover__body-footer\` | To display a footer with actions.
+Header, subheader and footer | \`fd-popover__body-header\` containing \`fd-bar fd-bar--header-with-subheader\` and \`fd-bar fd-bar--subheader\` | This variant uses the **Bar** component. 
+Cozy mode | \`fd-bar--cozy\` | Add this modifier class to the header area where \`fd-bar\` is used.
+        
+        ` }
+};
 
 export const controlExamples = () => `<div class="fd-container" style="margin-bottom: 200px">
     <div class="fd-row">
@@ -522,11 +546,16 @@ export const controlExamples = () => `<div class="fd-container" style="margin-bo
 </div>
 `;
 
-/**
- * Add the `fd-popover-body__wrapper` wrapper on the element below the `popover__body` to prevent body overflow.
- */
+controlExamples.storyName = 'Control variants';
 
-export const overflowProtection = () => `<div class="fd-popover" style="margin-bottom: 300px">
+controlExamples.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: `Controls can be displayed as buttons, images, icons, and more. In the example below, the **Avatar** and **Icon** act as controls.
+        ` }
+};
+
+export const scrollable = () => `<div class="fd-popover" style="margin-bottom: 300px">
     <div class="fd-popover__control">
         <button
             class="fd-button"
@@ -589,3 +618,12 @@ export const overflowProtection = () => `<div class="fd-popover" style="margin-b
     </div>
 </div>
 `;
+
+scrollable.storyName = 'Scrollable';
+
+scrollable.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: `When the content overflows, the popover body can become scrollable. To achieve this, add \`fd-popover-body__wrapper\` on the element below the body element.
+        ` }
+};

@@ -1,5 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
+@import "./mixins/button/button-helper";
 
 $block: #{$fd-namespace}-shellbar;
 
@@ -233,15 +234,15 @@ $block: #{$fd-namespace}-shellbar;
     color: $fd-shell-icon-button-color;
     overflow: visible;
     padding: 0;
-    outline-color: var(--sapContent_ContrastFocusColor);
 
-    &:hover {
-      background: $fd-shell-hover-background;
+    @include fd-focus() {
+      @include buttonFocus() {
+        border-color: var(--sapContent_ContrastFocusColor);
+      }
     }
 
-    &:active {
+    @include fd-active() {
       background: $fd-shell-active-background;
-      outline-color: var(--sapContent_ContrastFocusColor);
     }
 
     &:hover,
@@ -250,6 +251,8 @@ $block: #{$fd-namespace}-shellbar;
     }
 
     @include fd-hover() {
+      background: $fd-shell-hover-background;
+
       @include fd-disabled() {
         background: $fd-shellbar-background-color;
       }
