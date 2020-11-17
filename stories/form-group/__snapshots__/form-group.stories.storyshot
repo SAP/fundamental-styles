@@ -130,12 +130,12 @@ exports[`Storyshots Components/Forms/Form Group Group Header 1`] = `
   >
     
             
-    <span
+    <h1
       class="fd-form-group__header-text"
       id="basicGroupHeader"
     >
       Group Header
-    </span>
+    </h1>
     
         
   </div>
