@@ -544,11 +544,11 @@ exports[`Storyshots Components/Grid List "More" Button 1`] = `
         >
           
                     
-          <h6
+          <h5
             class="fd-title fd-title--h6 fd-grid-list__more-title"
           >
             More
-          </h6>
+          </h5>
           
                     
           <p
