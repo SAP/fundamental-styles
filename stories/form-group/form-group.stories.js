@@ -40,7 +40,7 @@ export const required = () => `<div class="fd-form-group">
 export const groupHeader = () =>
     `<div class="fd-form-group" role="group" aria-labelledby="basicGroupHeader">
         <div class="fd-form-group__header">
-            <span class="fd-form-group__header-text" id="basicGroupHeader">Group Header</span>
+            <h1 class="fd-form-group__header-text" id="basicGroupHeader">Group Header</h1>
         </div>
         <div class="fd-form-item">
             <label class="fd-form-label fd-form-label--required" for="input-1d">Group Header Input:</label>
