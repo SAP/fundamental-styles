@@ -134,5 +134,5 @@
   --fdDialogBackgroundOpacity: 0.6;
 
   /* Grid List */
-  --fdGrid_List_Item_Hover_BoxShadow: 0 0.125rem 0.5rem 0 rgba(0, 0, 0, 0.3); // Should be fade(var(--sapContent_ShadowColor), 30)
+  --fdGrid_List_Item_Hover_Border_Color: var(--sapTile_Interactive_BorderColor);
 }

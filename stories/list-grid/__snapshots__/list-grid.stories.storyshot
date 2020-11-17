@@ -120,7 +120,9 @@ exports[`Storyshots Components/Grid List "More" Button 1`] = `
 
                         
             <span
-              class="fd-grid-list__item--counter"
+              aria-label="Item has 10 children"
+              class="fd-grid-list__item-counter"
+              tabindex="0"
             >
               10
             </span>
@@ -146,7 +148,7 @@ exports[`Storyshots Components/Grid List "More" Button 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -156,7 +158,6 @@ exports[`Storyshots Components/Grid List "More" Button 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -266,7 +267,7 @@ exports[`Storyshots Components/Grid List "More" Button 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -276,7 +277,6 @@ exports[`Storyshots Components/Grid List "More" Button 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -357,7 +357,7 @@ exports[`Storyshots Components/Grid List "More" Button 1`] = `
           
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -367,7 +367,6 @@ exports[`Storyshots Components/Grid List "More" Button 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -448,7 +447,7 @@ exports[`Storyshots Components/Grid List "More" Button 1`] = `
           
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -458,7 +457,6 @@ exports[`Storyshots Components/Grid List "More" Button 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -542,18 +540,19 @@ exports[`Storyshots Components/Grid List "More" Button 1`] = `
                 
         <div
           class="fd-grid-list__more"
+          tabindex="0"
         >
           
                     
           <h6
-            class="fd-title fd-title--h6 fd-grid-list__more--title"
+            class="fd-title fd-title--h6 fd-grid-list__more-title"
           >
             More
           </h6>
           
                     
           <p
-            class="fd-grid-list__more--description"
+            class="fd-grid-list__more-description"
           >
             [ 5 / 10 ]
           </p>
@@ -576,7 +575,7 @@ exports[`Storyshots Components/Grid List "More" Button 1`] = `
 
 exports[`Storyshots Components/Grid List Delete mode 1`] = `
 <div
-  class="fd-grid-list fd-grid-list__mode--delete"
+  class="fd-grid-list fd-grid-list--mode-delete"
 >
   
     
@@ -694,25 +693,12 @@ exports[`Storyshots Components/Grid List Delete mode 1`] = `
 
                         
             <span
-              class="fd-grid-list__item--counter"
+              aria-label="Item has 10 children"
+              class="fd-grid-list__item-counter"
+              tabindex="0"
             >
               10
             </span>
-            
-
-                        
-            <button
-              aria-label="Navigation"
-              class="fd-button fd-button--compact fd-button--transparent"
-            >
-              
-                            
-              <i
-                class="sap-icon--navigation-right-arrow"
-              />
-              
-                        
-            </button>
             
 
                         
@@ -729,13 +715,28 @@ exports[`Storyshots Components/Grid List Delete mode 1`] = `
                         
             </button>
             
+                        
+                        
+            <button
+              aria-label="Navigation"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--navigation-right-arrow"
+              />
+              
+                        
+            </button>
+            
                     
           </div>
           
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -745,7 +746,6 @@ exports[`Storyshots Components/Grid List Delete mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -870,7 +870,7 @@ exports[`Storyshots Components/Grid List Delete mode 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -880,7 +880,6 @@ exports[`Storyshots Components/Grid List Delete mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -990,7 +989,7 @@ exports[`Storyshots Components/Grid List Delete mode 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -1000,7 +999,6 @@ exports[`Storyshots Components/Grid List Delete mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -1109,7 +1107,7 @@ exports[`Storyshots Components/Grid List Delete mode 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -1119,7 +1117,6 @@ exports[`Storyshots Components/Grid List Delete mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -1299,7 +1296,8 @@ exports[`Storyshots Components/Grid List Filter Infobar 1`] = `
         
                 
         <div
-          class="fd-toolbar fd-toolbar--info fd-toolbar--active"
+          class="fd-toolbar fd-toolbar--info fd-toolbar--active fd-grid-list__filter"
+          tabindex="0"
         >
           
                     Filtered by: Company (Company A, Company B)
@@ -1361,7 +1359,9 @@ exports[`Storyshots Components/Grid List Filter Infobar 1`] = `
 
                         
             <span
-              class="fd-grid-list__item--counter"
+              aria-label="Item has 10 children"
+              class="fd-grid-list__item-counter"
+              tabindex="0"
             >
               10
             </span>
@@ -1387,7 +1387,7 @@ exports[`Storyshots Components/Grid List Filter Infobar 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -1397,7 +1397,6 @@ exports[`Storyshots Components/Grid List Filter Infobar 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -1507,7 +1506,7 @@ exports[`Storyshots Components/Grid List Filter Infobar 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -1517,7 +1516,6 @@ exports[`Storyshots Components/Grid List Filter Infobar 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -1598,7 +1596,7 @@ exports[`Storyshots Components/Grid List Filter Infobar 1`] = `
           
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -1608,7 +1606,6 @@ exports[`Storyshots Components/Grid List Filter Infobar 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -1689,7 +1686,7 @@ exports[`Storyshots Components/Grid List Filter Infobar 1`] = `
           
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -1699,7 +1696,6 @@ exports[`Storyshots Components/Grid List Filter Infobar 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -1896,7 +1892,9 @@ exports[`Storyshots Components/Grid List Footer 1`] = `
 
                         
             <span
-              class="fd-grid-list__item--counter"
+              aria-label="Item has 10 children"
+              class="fd-grid-list__item-counter"
+              tabindex="0"
             >
               10
             </span>
@@ -1922,7 +1920,7 @@ exports[`Storyshots Components/Grid List Footer 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -1932,7 +1930,6 @@ exports[`Storyshots Components/Grid List Footer 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -2042,7 +2039,7 @@ exports[`Storyshots Components/Grid List Footer 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -2052,7 +2049,6 @@ exports[`Storyshots Components/Grid List Footer 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -2133,7 +2129,7 @@ exports[`Storyshots Components/Grid List Footer 1`] = `
           
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -2143,7 +2139,6 @@ exports[`Storyshots Components/Grid List Footer 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -2224,7 +2219,7 @@ exports[`Storyshots Components/Grid List Footer 1`] = `
           
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -2234,7 +2229,6 @@ exports[`Storyshots Components/Grid List Footer 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -2318,6 +2312,7 @@ exports[`Storyshots Components/Grid List Footer 1`] = `
                 
         <div
           class="fd-grid-list__footer"
+          tabindex="0"
         >
           
                     This is footer text
@@ -2435,10 +2430,20 @@ exports[`Storyshots Components/Grid List Group 1`] = `
       
             
       <div
-        class="fd-col fd-col--12 fd-grid-list__group-header"
+        class="fd-col fd-col--12"
       >
         
-                Company: Company A
+                
+        <div
+          aria-label="Group Title: Grouped by Company A"
+          class="fd-grid-list__group-header fd-grid-list__group-header--no-margin"
+          tabindex="0"
+        >
+          
+                    Company: Company A
+                
+        </div>
+        
             
       </div>
       
@@ -2467,7 +2472,9 @@ exports[`Storyshots Components/Grid List Group 1`] = `
 
                         
             <span
-              class="fd-grid-list__item--counter"
+              aria-label="Item has 10 children"
+              class="fd-grid-list__item-counter"
+              tabindex="0"
             >
               10
             </span>
@@ -2493,7 +2500,7 @@ exports[`Storyshots Components/Grid List Group 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -2503,7 +2510,6 @@ exports[`Storyshots Components/Grid List Group 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -2574,6 +2580,7 @@ exports[`Storyshots Components/Grid List Group 1`] = `
             
       <div
         class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3"
+        tabindex="0"
       >
         
                 
@@ -2613,7 +2620,7 @@ exports[`Storyshots Components/Grid List Group 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -2623,7 +2630,6 @@ exports[`Storyshots Components/Grid List Group 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -2693,10 +2699,20 @@ exports[`Storyshots Components/Grid List Group 1`] = `
 
             
       <div
-        class="fd-col fd-col--12 fd-grid-list__group-header"
+        class="fd-col fd-col--12"
       >
         
-                Company: Company B
+                
+        <div
+          aria-label="Group Title: Grouped by Company B"
+          class="fd-grid-list__group-header"
+          tabindex="0"
+        >
+          
+                    Company: Company B
+                
+        </div>
+        
             
       </div>
       
@@ -2714,7 +2730,7 @@ exports[`Storyshots Components/Grid List Group 1`] = `
           
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -2724,7 +2740,6 @@ exports[`Storyshots Components/Grid List Group 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -2795,6 +2810,7 @@ exports[`Storyshots Components/Grid List Group 1`] = `
             
       <div
         class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3"
+        tabindex="0"
       >
         
                 
@@ -2805,7 +2821,7 @@ exports[`Storyshots Components/Grid List Group 1`] = `
           
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -2815,7 +2831,6 @@ exports[`Storyshots Components/Grid List Group 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -3001,9 +3016,11 @@ exports[`Storyshots Components/Grid List Highlight 1`] = `
           
                     
           <span
-            class="fd-grid-list__highlight--success"
+            aria-label="Item is highlighted. Status: positive."
+            class="fd-grid-list__highlight fd-grid-list__highlight--positive"
           />
           
+
                     
           <div
             class="fd-toolbar fd-grid-list__toolbar"
@@ -3017,7 +3034,9 @@ exports[`Storyshots Components/Grid List Highlight 1`] = `
 
                         
             <span
-              class="fd-grid-list__item--counter"
+              aria-label="Item has 10 children"
+              class="fd-grid-list__item-counter"
+              tabindex="0"
             >
               10
             </span>
@@ -3043,7 +3062,7 @@ exports[`Storyshots Components/Grid List Highlight 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -3053,7 +3072,6 @@ exports[`Storyshots Components/Grid List Highlight 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -3134,9 +3152,11 @@ exports[`Storyshots Components/Grid List Highlight 1`] = `
           
                     
           <span
-            class="fd-grid-list__highlight--error"
+            aria-label="Item is highlighted. Status: negative."
+            class="fd-grid-list__highlight fd-grid-list__highlight--negative"
           />
           
+
                     
           <div
             class="fd-toolbar fd-grid-list__toolbar"
@@ -3168,7 +3188,7 @@ exports[`Storyshots Components/Grid List Highlight 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -3178,7 +3198,6 @@ exports[`Storyshots Components/Grid List Highlight 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -3259,9 +3278,11 @@ exports[`Storyshots Components/Grid List Highlight 1`] = `
           
                     
           <span
-            class="fd-grid-list__highlight--warning"
+            aria-label="Item is highlighted. Status: critical."
+            class="fd-grid-list__highlight fd-grid-list__highlight--critical"
           />
           
+
                     
           <div
             class="fd-toolbar fd-grid-list__toolbar"
@@ -3278,7 +3299,7 @@ exports[`Storyshots Components/Grid List Highlight 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -3288,7 +3309,6 @@ exports[`Storyshots Components/Grid List Highlight 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -3369,12 +3389,14 @@ exports[`Storyshots Components/Grid List Highlight 1`] = `
           
                     
           <span
-            class="fd-grid-list__highlight--neutral"
+            aria-label="Item is highlighted. Status: neutral."
+            class="fd-grid-list__highlight fd-grid-list__highlight--neutral"
           />
           
+
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -3384,7 +3406,6 @@ exports[`Storyshots Components/Grid List Highlight 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -3463,7 +3484,7 @@ exports[`Storyshots Components/Grid List Highlight 1`] = `
 
 exports[`Storyshots Components/Grid List Multi select mode 1`] = `
 <div
-  class="fd-grid-list fd-grid-list__mode--multi-select"
+  class="fd-grid-list fd-grid-list--mode-multi-select"
 >
   
     
@@ -3575,16 +3596,18 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
             
                         
             <input
+              aria-label="John Li, Product Owner, Company B"
               checked=""
-              class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox--input"
+              class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox-input"
               id="Ai4ez611c"
               type="checkbox"
             />
             
                         
             <label
-              class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox--label"
+              class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox-label"
               for="Ai4ez611c"
+              tabindex="-1"
             />
             
                         
@@ -3596,7 +3619,9 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
 
                         
             <span
-              class="fd-grid-list__item--counter"
+              aria-label="Item has 10 children"
+              class="fd-grid-list__item-counter"
+              tabindex="0"
             >
               10
             </span>
@@ -3622,7 +3647,7 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -3632,7 +3657,6 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -3718,15 +3742,17 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
             
                         
             <input
-              class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox--input"
+              aria-label="John Li, Product Owner, Company B"
+              class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox-input"
               id="Ai4ez611c2"
               type="checkbox"
             />
             
                         
             <label
-              class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox--label"
+              class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox-label"
               for="Ai4ez611c2"
+              tabindex="-1"
             />
             
 
@@ -3756,7 +3782,7 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -3766,7 +3792,6 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -3852,16 +3877,18 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
             
                         
             <input
+              aria-label="John Li, Product Owner, Company B"
               checked=""
-              class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox--input"
+              class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox-input"
               id="Ai4ez611c3"
               type="checkbox"
             />
             
                         
             <label
-              class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox--label"
+              class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox-label"
               for="Ai4ez611c3"
+              tabindex="-1"
             />
             
 
@@ -3873,7 +3900,9 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
 
                         
             <span
-              class="fd-grid-list__item--counter"
+              aria-label="Item has 5 children"
+              class="fd-grid-list__item-counter"
+              tabindex="0"
             >
               5
             </span>
@@ -3884,7 +3913,7 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -3894,7 +3923,6 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -3980,15 +4008,17 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
             
                         
             <input
-              class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox--input"
+              aria-label="John Li, Product Owner, Company B"
+              class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox-input"
               id="Ai4ez611c4"
               type="checkbox"
             />
             
                         
             <label
-              class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox--label"
+              class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox-label"
               for="Ai4ez611c4"
+              tabindex="-1"
             />
             
 
@@ -4000,7 +4030,9 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
 
                         
             <span
-              class="fd-grid-list__item--counter"
+              aria-label="Item has 5 children"
+              class="fd-grid-list__item-counter"
+              tabindex="0"
             >
               5
             </span>
@@ -4011,7 +4043,7 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -4021,7 +4053,6 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -4218,7 +4249,9 @@ exports[`Storyshots Components/Grid List None mode 1`] = `
 
                         
             <span
-              class="fd-grid-list__item--counter"
+              aria-label="Item has 10 children"
+              class="fd-grid-list__item-counter"
+              tabindex="0"
             >
               10
             </span>
@@ -4244,7 +4277,7 @@ exports[`Storyshots Components/Grid List None mode 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -4254,7 +4287,6 @@ exports[`Storyshots Components/Grid List None mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -4364,7 +4396,7 @@ exports[`Storyshots Components/Grid List None mode 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -4374,7 +4406,6 @@ exports[`Storyshots Components/Grid List None mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -4455,7 +4486,7 @@ exports[`Storyshots Components/Grid List None mode 1`] = `
           
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -4465,7 +4496,6 @@ exports[`Storyshots Components/Grid List None mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -4546,7 +4576,7 @@ exports[`Storyshots Components/Grid List None mode 1`] = `
           
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -4556,7 +4586,6 @@ exports[`Storyshots Components/Grid List None mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -4637,7 +4666,7 @@ exports[`Storyshots Components/Grid List None mode 1`] = `
           
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -4647,7 +4676,6 @@ exports[`Storyshots Components/Grid List None mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -4739,7 +4767,9 @@ exports[`Storyshots Components/Grid List None mode 1`] = `
 
                         
             <span
-              class="fd-grid-list__item--counter"
+              aria-label="Item has 10 children"
+              class="fd-grid-list__item-counter"
+              tabindex="0"
             >
               10
             </span>
@@ -4764,7 +4794,7 @@ exports[`Storyshots Components/Grid List None mode 1`] = `
           
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -4774,7 +4804,6 @@ exports[`Storyshots Components/Grid List None mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -4855,7 +4884,7 @@ exports[`Storyshots Components/Grid List None mode 1`] = `
           
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -4865,7 +4894,6 @@ exports[`Storyshots Components/Grid List None mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -4944,7 +4972,7 @@ exports[`Storyshots Components/Grid List None mode 1`] = `
 
 exports[`Storyshots Components/Grid List Single select left mode 1`] = `
 <div
-  class="fd-grid-list fd-grid-list__mode--single-select-left"
+  class="fd-grid-list fd-grid-list--mode-single-select-left"
 >
   
     
@@ -5056,7 +5084,8 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
             
                         
             <input
-              class="fd-radio fd-radio--compact fd-grid-list__radio--input"
+              aria-label="John Li, Product Owner, Company B"
+              class="fd-radio fd-radio--compact fd-grid-list__radio-input"
               id="pDidh1761"
               name="singleSelectLeftRadio"
               type="radio"
@@ -5064,10 +5093,12 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
             
                         
             <label
-              class="fd-radio__label fd-grid-list__radio--label"
+              class="fd-radio__label fd-grid-list__radio-label"
               for="pDidh1761"
+              tabindex="-1"
             />
             
+
                         
             <span
               class="fd-toolbar__spacer"
@@ -5076,7 +5107,9 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
 
                         
             <span
-              class="fd-grid-list__item--counter"
+              aria-label="Item has 10 children"
+              class="fd-grid-list__item-counter"
+              tabindex="0"
             >
               10
             </span>
@@ -5102,7 +5135,7 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -5112,7 +5145,6 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -5198,8 +5230,9 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
             
                         
             <input
+              aria-label="John Li, Product Owner, Company B"
               checked=""
-              class="fd-radio fd-radio--compact fd-grid-list__radio--input"
+              class="fd-radio fd-radio--compact fd-grid-list__radio-input"
               id="p1Didh1761"
               name="singleSelectLeftRadio"
               type="radio"
@@ -5207,8 +5240,9 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
             
                         
             <label
-              class="fd-radio__label fd-grid-list__radio--label"
+              class="fd-radio__label fd-grid-list__radio-label"
               for="p1Didh1761"
+              tabindex="-1"
             />
             
                         
@@ -5237,7 +5271,7 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -5247,7 +5281,6 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -5333,7 +5366,8 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
             
                         
             <input
-              class="fd-radio fd-radio--compact fd-grid-list__radio--input"
+              aria-label="John Li, Product Owner, Company B"
+              class="fd-radio fd-radio--compact fd-grid-list__radio-input"
               id="p12Didh1761"
               name="singleSelectLeftRadio"
               type="radio"
@@ -5341,8 +5375,9 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
             
                         
             <label
-              class="fd-radio__label fd-grid-list__radio--label"
+              class="fd-radio__label fd-grid-list__radio-label"
               for="p12Didh1761"
+              tabindex="-1"
             />
             
                         
@@ -5353,7 +5388,9 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
 
                         
             <span
-              class="fd-grid-list__item--counter"
+              aria-label="Item has 5 children"
+              class="fd-grid-list__item-counter"
+              tabindex="0"
             >
               5
             </span>
@@ -5364,7 +5401,7 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -5374,7 +5411,6 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -5382,6 +5418,7 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
                             
               <div>
                 
+
                                 
                 <h4
                   class="fd-title fd-title--h4"
@@ -5460,7 +5497,8 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
             
                         
             <input
-              class="fd-radio fd-radio--compact fd-grid-list__radio--input"
+              aria-label="John Li, Product Owner, Company B"
+              class="fd-radio fd-radio--compact fd-grid-list__radio-input"
               id="p1x2Didh1761"
               name="singleSelectLeftRadio"
               type="radio"
@@ -5468,8 +5506,9 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
             
                         
             <label
-              class="fd-radio__label fd-grid-list__radio--label"
+              class="fd-radio__label fd-grid-list__radio-label"
               for="p1x2Didh1761"
+              tabindex="-1"
             />
             
                         
@@ -5480,9 +5519,10 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
                     
           </div>
           
+
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -5492,7 +5532,6 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -5569,9 +5608,9 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Grid List Single select master mode 1`] = `
+exports[`Storyshots Components/Grid List Single select mode 1`] = `
 <div
-  class="fd-grid-list fd-grid-list__mode--single-select-master"
+  class="fd-grid-list fd-grid-list--mode-single-select"
 >
   
     
@@ -5678,7 +5717,7 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
           
                     
           <input
-            class="fd-radio fd-radio--compact fd-grid-list__radio--input"
+            class="fd-radio fd-radio--compact fd-grid-list__radio-input"
             id="pDidh761"
             name="singleSelectMasterRadio"
             type="radio"
@@ -5686,10 +5725,12 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
           
                     
           <label
-            class="fd-radio__label fd-grid-list__radio--label"
+            aria-label="John Li, Product Owner, Company B"
+            class="fd-radio__label fd-grid-list__radio-label"
             for="pDidh761"
           />
           
+
                     
           <div
             class="fd-toolbar fd-grid-list__toolbar"
@@ -5703,7 +5744,9 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
 
                         
             <span
-              class="fd-grid-list__item--counter"
+              aria-label="Item has 10 children"
+              class="fd-grid-list__item-counter"
+              tabindex="0"
             >
               10
             </span>
@@ -5711,7 +5754,7 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
 
                         
             <button
-              aria-label="Chart"
+              aria-label="Navigation"
               class="fd-button fd-button--compact fd-button--transparent"
             >
               
@@ -5729,7 +5772,7 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -5739,7 +5782,6 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -5820,7 +5862,7 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
           
                     
           <input
-            class="fd-radio fd-radio--compact fd-grid-list__radio--input"
+            class="fd-radio fd-radio--compact fd-grid-list__radio-input"
             id="pDidh761123"
             name="singleSelectMasterRadio"
             type="radio"
@@ -5828,10 +5870,12 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
           
                     
           <label
-            class="fd-radio__label fd-grid-list__radio--label"
+            aria-label="John Li, Product Owner, Company B"
+            class="fd-radio__label fd-grid-list__radio-label"
             for="pDidh761123"
           />
           
+
                     
           <div
             class="fd-toolbar fd-grid-list__toolbar"
@@ -5863,7 +5907,7 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -5873,7 +5917,6 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -5916,7 +5959,6 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
                 </div>
                 
                                 
-
                                 
                 <a
                   class="fd-link"
@@ -5955,8 +5997,9 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
           
                     
           <input
+            aria-label="John Li, Product Owner, Company B"
             checked=""
-            class="fd-radio fd-radio--compact fd-grid-list__radio--input"
+            class="fd-radio fd-radio--compact fd-grid-list__radio-input"
             id="pDidh7611234"
             name="singleSelectMasterRadio"
             type="radio"
@@ -5964,10 +6007,11 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
           
                     
           <label
-            class="fd-radio__label fd-grid-list__radio--label"
+            class="fd-radio__label fd-grid-list__radio-label"
             for="pDidh7611234"
           />
           
+
                     
           <div
             class="fd-toolbar fd-grid-list__toolbar"
@@ -5981,7 +6025,9 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
 
                         
             <span
-              class="fd-grid-list__item--counter"
+              aria-label="Item has 5 children"
+              class="fd-grid-list__item-counter"
+              tabindex="0"
             >
               5
             </span>
@@ -5992,7 +6038,7 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -6002,7 +6048,6 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -6083,7 +6128,8 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
           
                     
           <input
-            class="fd-radio fd-radio--compact fd-grid-list__radio--input"
+            aria-label="John Li, Product Owner, Company B"
+            class="fd-radio fd-radio--compact fd-grid-list__radio-input"
             id="pDidh761642"
             name="singleSelectMasterRadio"
             type="radio"
@@ -6091,13 +6137,14 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
           
                     
           <label
-            class="fd-radio__label fd-grid-list__radio--label"
+            class="fd-radio__label fd-grid-list__radio-label"
             for="pDidh761642"
           />
           
+
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -6107,7 +6154,645 @@ exports[`Storyshots Components/Grid List Single select master mode 1`] = `
               
                             
               <span
-                aria-label="John Doe"
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Components/Grid List Single select right mode 1`] = `
+<div
+  class="fd-grid-list fd-grid-list--mode-single-select-right"
+>
+  
+    
+  <div
+    class="fd-container"
+  >
+    
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12"
+      >
+        
+                
+        <div
+          class="fd-toolbar fd-toolbar--solid"
+        >
+          
+                    
+          <span>
+            Products (420)
+          </span>
+          
+
+                    
+          <span
+            class="fd-toolbar__spacer"
+          />
+          
+
+                    
+          <button
+            aria-label="Sort"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--sort"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Filter"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--filter"
+            />
+            
+                    
+          </button>
+          
+
+                    
+          <button
+            aria-label="Group"
+            class="fd-button fd-button--compact fd-button--transparent"
+          >
+            
+                        
+            <i
+              class="sap-icon--group-2"
+            />
+            
+                    
+          </button>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+
+        
+    <div
+      class="fd-row"
+    >
+      
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <input
+              aria-label="John Li, Product Owner, Company B"
+              class="fd-radio fd-radio--compact fd-grid-list__radio-input"
+              id="pDidh1v761541"
+              name="singleSelectRightRadio"
+              type="radio"
+            />
+            
+                        
+            <label
+              class="fd-radio__label fd-grid-list__radio-label"
+              for="pDidh1v761541"
+              tabindex="-1"
+            />
+            
+
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <span
+              aria-label="Item has 10 children"
+              class="fd-grid-list__item-counter"
+              tabindex="0"
+            >
+              10
+            </span>
+            
+
+                        
+            <button
+              aria-label="Navigation"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--navigation-right-arrow"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item-body"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item is-selected"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <input
+              aria-label="John Li, Product Owner, Company B"
+              checked=""
+              class="fd-radio fd-radio--compact fd-grid-list__radio-input"
+              id="p1Didh1761g234"
+              name="singleSelectRightRadio"
+              type="radio"
+            />
+            
+                        
+            <label
+              class="fd-radio__label fd-grid-list__radio-label"
+              for="p1Didh1761g234"
+              tabindex="-1"
+            />
+            
+
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <button
+              aria-label="Edit"
+              class="fd-button fd-button--compact fd-button--transparent"
+            >
+              
+                            
+              <i
+                class="sap-icon--edit"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item-body"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <input
+              aria-label="John Li, Product Owner, Company B"
+              class="fd-radio fd-radio--compact fd-grid-list__radio-input"
+              id="p12Didh176141w"
+              name="singleSelectRightRadio"
+              type="radio"
+            />
+            
+                        
+            <label
+              class="fd-radio__label fd-grid-list__radio-label"
+              for="p12Didh176141w"
+              tabindex="-1"
+            />
+            
+
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+
+                        
+            <span
+              aria-label="Item has 5 children"
+              class="fd-grid-list__item-counter"
+              tabindex="0"
+            >
+              5
+            </span>
+            
+                    
+          </div>
+          
+
+                    
+          <div
+            class="fd-grid-list__item-body"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-toolbar fd-grid-list__toolbar"
+          >
+            
+                        
+            <input
+              aria-label="John Li, Product Owner, Company B"
+              class="fd-radio fd-radio--compact fd-grid-list__radio-input"
+              id="p1x2Didh176132"
+              name="singleSelectRightRadio"
+              type="radio"
+            />
+            
+                        
+            <label
+              class="fd-radio__label fd-grid-list__radio-label"
+              for="p1x2Didh176132"
+              tabindex="-1"
+            />
+            
+
+                        
+            <span
+              class="fd-toolbar__spacer"
+            />
+            
+                    
+          </div>
+          
+                    
+          <div
+            class="fd-grid-list__item-body"
+          >
+            
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -6282,10 +6967,20 @@ exports[`Storyshots Components/Grid List States 1`] = `
       
             
       <div
-        class="fd-col fd-col--12 fd-grid-list__group-header"
+        class="fd-col fd-col--12"
       >
         
-                State: Unread
+                
+        <div
+          aria-label="Group Title: Unread"
+          class="fd-grid-list__group-header fd-grid-list__group-header--no-margin"
+          tabindex="0"
+        >
+          
+                    State: Unread
+                
+        </div>
+        
             
       </div>
       
@@ -6297,7 +6992,7 @@ exports[`Storyshots Components/Grid List States 1`] = `
         
                 
         <div
-          class="fd-grid-list__item fd-grid-list__item--state-unread"
+          class="fd-grid-list__item fd-grid-list__item--unread"
           tabindex="0"
         >
           
@@ -6314,7 +7009,9 @@ exports[`Storyshots Components/Grid List States 1`] = `
 
                         
             <span
-              class="fd-grid-list__item--counter"
+              aria-label="Item has 10 children"
+              class="fd-grid-list__item-counter"
+              tabindex="0"
             >
               10
             </span>
@@ -6340,7 +7037,7 @@ exports[`Storyshots Components/Grid List States 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
@@ -6350,7 +7047,6 @@ exports[`Storyshots Components/Grid List States 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -6420,10 +7116,20 @@ exports[`Storyshots Components/Grid List States 1`] = `
 
             
       <div
-        class="fd-col fd-col--12 fd-grid-list__group-header"
+        class="fd-col fd-col--12"
       >
         
-                State: Error
+                
+        <div
+          aria-label="Group Title: Error"
+          class="fd-grid-list__group-header"
+          tabindex="0"
+        >
+          
+                    State: Error
+                
+        </div>
+        
             
       </div>
       
@@ -6435,13 +7141,14 @@ exports[`Storyshots Components/Grid List States 1`] = `
         
                 
         <div
-          class="fd-grid-list__item fd-grid-list__item--state-error"
+          class="fd-grid-list__item"
           tabindex="0"
         >
           
                     
           <span
-            class="fd-grid-list__highlight--error"
+            aria-label="Item is highlighted. Status: negative."
+            class="fd-grid-list__highlight fd-grid-list__highlight--negative"
           />
           
 
@@ -6476,79 +7183,12 @@ exports[`Storyshots Components/Grid List States 1`] = `
 
                     
           <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
+            class="fd-grid-list__item-body"
           >
             
                         
             <div
-              class="grid-list-item-body-example"
-            >
-              
-                            
-              <span
-                aria-label="John Doe"
-                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                role="presentation"
-              />
-              
-                            
-              <div>
-                
-                                
-                <h4
-                  class="fd-title fd-title--h4"
-                >
-                  John Li
-                </h4>
-                
-                                
-                <p>
-                  Product Owner, Company B
-                </p>
-                
-
-                                
-                <div>
-                  
-                                    
-                  <p>
-                    781 Main Street
-                  </p>
-                  
-                                    
-                  <p>
-                    Anytown, SD 57401
-                  </p>
-                  
-                                    
-                  <p>
-                    USA
-                  </p>
-                  
-                                
-                </div>
-                
-                                
-
-                                
-                <a
-                  class="fd-link"
-                  href="#"
-                  tabindex="0"
-                >
-                  john_li@example.com
-                </a>
-                
-                            
-              </div>
-              
-                        
-            </div>
-            
-
-                        
-            <div
-              class="fd-grid-list__item--state-actions"
+              class="fd-grid-list__item-body-actions"
             >
               
                             
@@ -6569,42 +7209,7 @@ exports[`Storyshots Components/Grid List States 1`] = `
                         
             </div>
             
-                    
-          </div>
-          
-                
-        </div>
-        
-            
-      </div>
-      
 
-            
-      <div
-        class="fd-col fd-col--12 fd-grid-list__group-header"
-      >
-        
-                State: Locked
-            
-      </div>
-      
-
-            
-      <div
-        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3"
-      >
-        
-                
-        <div
-          class="fd-grid-list__item fd-grid-list__item--state-locked"
-          tabindex="0"
-        >
-          
-                    
-          <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
-          >
-            
                         
             <div
               class="grid-list-item-body-example"
@@ -6612,7 +7217,6 @@ exports[`Storyshots Components/Grid List States 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -6654,6 +7258,7 @@ exports[`Storyshots Components/Grid List States 1`] = `
                                 
                 </div>
                 
+                                
 
                                 
                 <a
@@ -6670,10 +7275,54 @@ exports[`Storyshots Components/Grid List States 1`] = `
                         
             </div>
             
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
 
+            
+      <div
+        class="fd-col fd-col--12"
+      >
+        
+                
+        <div
+          class="fd-grid-list__group-header"
+          tabindex="0"
+        >
+          
+                    State: Locked
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item fd-grid-list__item--locked"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-grid-list__item-body"
+          >
+            
                         
             <div
-              class="fd-grid-list__item--state-actions"
+              class="fd-grid-list__item-body-actions"
             >
               
                             
@@ -6687,49 +7336,20 @@ exports[`Storyshots Components/Grid List States 1`] = `
                   class="sap-icon--private"
                 />
                 
-                                Locked
+                                
+                <span
+                  class="fd-button__text"
+                >
+                  Locked
+                </span>
+                
                             
               </button>
               
                         
             </div>
             
-                    
-          </div>
-          
-                
-        </div>
-        
-            
-      </div>
-      
 
-            
-      <div
-        class="fd-col fd-col--12 fd-grid-list__group-header"
-      >
-        
-                State: Draft
-            
-      </div>
-      
-
-            
-      <div
-        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3"
-      >
-        
-                
-        <div
-          class="fd-grid-list__item fd-grid-list__item--state-draft"
-          tabindex="0"
-        >
-          
-                    
-          <div
-            class="fd-grid-list__item--body fd-grid-list__item--body--padding"
-          >
-            
                         
             <div
               class="grid-list-item-body-example"
@@ -6737,7 +7357,6 @@ exports[`Storyshots Components/Grid List States 1`] = `
               
                             
               <span
-                aria-label="John Doe"
                 class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
                 role="presentation"
               />
@@ -6795,10 +7414,54 @@ exports[`Storyshots Components/Grid List States 1`] = `
                         
             </div>
             
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
 
+            
+      <div
+        class="fd-col fd-col--12"
+      >
+        
+                
+        <div
+          class="fd-grid-list__group-header"
+          tabindex="0"
+        >
+          
+                    State: Draft
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3"
+      >
+        
+                
+        <div
+          class="fd-grid-list__item fd-grid-list__item--draft"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-grid-list__item-body"
+          >
+            
                         
             <div
-              class="fd-grid-list__item--state-actions"
+              class="fd-grid-list__item-body-actions"
             >
               
                             
@@ -6810,6 +7473,71 @@ exports[`Storyshots Components/Grid List States 1`] = `
                                 Draft
                             
               </button>
+              
+                        
+            </div>
+            
+
+                        
+            <div
+              class="grid-list-item-body-example"
+            >
+              
+                            
+              <span
+                class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
+                role="presentation"
+              />
+              
+                            
+              <div>
+                
+                                
+                <h4
+                  class="fd-title fd-title--h4"
+                >
+                  John Li
+                </h4>
+                
+                                
+                <p>
+                  Product Owner, Company B
+                </p>
+                
+
+                                
+                <div>
+                  
+                                    
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                                    
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                                    
+                  <p>
+                    USA
+                  </p>
+                  
+                                
+                </div>
+                
+
+                                
+                <a
+                  class="fd-link"
+                  href="#"
+                  tabindex="0"
+                >
+                  john_li@example.com
+                </a>
+                
+                            
+              </div>
               
                         
             </div>
