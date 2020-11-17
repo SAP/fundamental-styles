@@ -5,16 +5,11 @@ $block: #{$fd-namespace}-flexible-column-layout;
 
 .#{$block} {
 
-  $column-layout-expand-decoration-image: var(--fdFlexibleColumnLayoutToggleImage);
-
-  $toggle-button-height: 2rem;
-
-  @mixin both-pseudo-selectors() {
-    &::after,
-    &::before {
-      @content;
-    }
-  }
+  $fd-column-layout-expand-decoration-image: var(--fdFlexibleColumnLayoutToggleImage);
+  $fd-toggle-button-height: 2rem;
+  $fd-toggle-button-width: 1.5rem;
+  $fd-column-layout-border-x: var(--fdFlexibleColumnLayoutBorder);
+  $fd-column-layout-expand-decoration-position: calc(50% + #{$fd-toggle-button-height} / 2);
 
   @include fd-reset();
   @include fd-flex();
@@ -38,12 +33,12 @@ $block: #{$fd-namespace}-flexible-column-layout;
     }
 
     &::before {
-      bottom: calc(50% + #{$toggle-button-height} / 2);
+      bottom: $fd-column-layout-expand-decoration-position;
       background-image: linear-gradient(to top, var(--fdFlexibleColumnLayoutToggleImageColor), transparent);
     }
 
     &::after {
-      top: calc(50% + #{$toggle-button-height} / 2);
+      top: $fd-column-layout-expand-decoration-position;
       background-image: linear-gradient(to bottom, var(--fdFlexibleColumnLayoutToggleImageColor), transparent);
     }
 
@@ -55,9 +50,9 @@ $block: #{$fd-namespace}-flexible-column-layout;
   }
 
   .#{$block}__button {
-    height: $toggle-button-height;
-    width: 1.5rem;
-    min-width: 1.5rem;
+    height: $fd-toggle-button-height;
+    width: $fd-toggle-button-width;
+    min-width: $fd-toggle-button-width;
     justify-content: center;
 
     @include fd-absolute-center();
@@ -67,8 +62,8 @@ $block: #{$fd-namespace}-flexible-column-layout;
     @include fd-reset();
 
     min-width: 20rem;
-    border-left: var(--fdFlexibleColumnLayoutBorder);
-    border-right: var(--fdFlexibleColumnLayoutBorder);
+    border-left: $fd-column-layout-border-x;
+    border-right: $fd-column-layout-border-x;
 
     @include fd-first-child() {
       border-left: none;

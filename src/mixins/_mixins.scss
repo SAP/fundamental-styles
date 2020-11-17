@@ -328,7 +328,6 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  @content;
 }
 
 @mixin fd-absolute-center {
@@ -336,7 +335,6 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  @content;
 }
 
 @mixin fd-screen-reader-only {
@@ -364,6 +362,13 @@
   font-family: var(--sapFontHeaderFamily);
   color: $color;
   font-size: $fd-size;
+}
+
+@mixin both-pseudo-selectors() {
+  &::after,
+  &::before {
+    @content;
+  }
 }
 
 @mixin fd-icon-overwrite {
