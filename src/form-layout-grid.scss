@@ -52,7 +52,15 @@ $cols: 11;
 
         .fd-form-label {
           display: inline-block;
+          margin-right: 0;
+          padding-right: 0.5rem;
           padding-bottom: 0.125rem;
+
+          @include fd-rtl() {
+            padding-left: 0.5rem;
+            margin-left: 0;
+            padding-right: 0;
+          }
         }
 
         @for $n from 0 through $cols {
@@ -86,6 +94,9 @@ $cols: 11;
 
       .#{$fd-namespace}-form-group.#{$blockCol} {
         padding: 1rem;
+      }
+      .#{$fd-namespace}-form-item.#{$blockRow} {
+        flex-direction: row;
       }
     }
 

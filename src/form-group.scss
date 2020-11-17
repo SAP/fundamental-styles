@@ -10,8 +10,6 @@ $block: #{$fd-namespace}-form-group;
 .#{$block} {
   @include fd-reset();
 
-  min-inline-size: auto;
-
   &:last-child {
     margin-bottom: 0;
   }

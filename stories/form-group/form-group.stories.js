@@ -37,10 +37,10 @@ export const required = () => `<div class="fd-form-group">
     </div>
 `;
 
-export const groupHeader = () => `
-    <div class="fd-form-group">
+export const groupHeader = () =>
+    `<div class="fd-form-group" role="group" aria-labelledby="basicGroupHeader">
         <div class="fd-form-group__header">
-            <span class="fd-form-group__header-text">Group Header</span>
+            <span class="fd-form-group__header-text" id="basicGroupHeader">Group Header</span>
         </div>
         <div class="fd-form-item">
             <label class="fd-form-label fd-form-label--required" for="input-1d">Group Header Input:</label>
@@ -51,15 +51,16 @@ export const groupHeader = () => `
 groupHeader.parameters = {
     docs: {
         storyDescription: `
-        To provide a group header, use the class <code class="docs-code">fd-form-group\\_\\_header</code> and wrap the header text in <code class="docs-code">fd-form-group\\_\\_header-text</code>.
-        `
+To provide a group header, use the class <code class="docs-code">fd-form-group\\_\\_header</code> and wrap the header text in <code class="docs-code">fd-form-group\\_\\_header-text</code>.
+`
     }
 };
 
-export const groupHeaderCompact = () => `
-    <div class="fd-form-group">
+
+export const groupHeaderCompact = () =>
+    `<div class="fd-form-group" role="group" aria-labelledby="compactGroupHeader">
         <div class="fd-form-group__header fd-form-group__header--compact">
-            <span class="fd-form-group__header-text">Group Header</span>
+            <h1 class="fd-form-group__header-text" id="compactGroupHeader">Group Header</h1>
         </div>
         <div class="fd-form-item">
             <label class="fd-form-label fd-form-label--required" for="input-1e">Compact Group Header Input:</label>
@@ -71,90 +72,109 @@ groupHeaderCompact.storyName = 'Compact Group Header';
 groupHeaderCompact.parameters = {
     docs: {
         storyDescription: `
-        A compact group header can be displayed by adding the <code class="docs-code">--compact</code> modifier class to the element.
+A compact group header can be displayed by adding the <code class="docs-code">--compact</code> modifier class to the element.
         `
     }
 };
 
-export const groupHeaderInFormGrid = () => `
-<div class="fd-container fd-form-layout-grid-container">
-    <div class="fd-row"> 
-        <div class="fd-form-group fd-col fd-col-md--6  fd-col-lg--6 fd-col-xl--6 fd-col--wrap">
-            <div class="fd-form-group__header">
-                <span class="fd-form-group__header-text">Group Header 1</span>
+export const groupHeaderInFormGrid = () =>
+    `<div class="fd-container fd-form-layout-grid-container">
+        <div class="fd-row"> 
+            <div class="fd-form-group fd-col fd-col-md--6  fd-col-lg--6 fd-col-xl--6 fd-col--wrap" role="group" aria-labelledby="grid1GroupHeader">
+                <div class="fd-form-group__header"  id="grid1GroupHeader">
+                    <h1 class="fd-form-group__header-text">Group Header 1</h1>
+                </div>
+                <div class="fd-form-item fd-row">
+                    <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+                        <label class="fd-form-label" for="input-14-name">Name:</label>
+                    </div>
+                    <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+                        <input class="fd-input" type="text" id="input-14-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+                    </div>
+                </div>
+                <div class="fd-form-item fd-row">
+                    <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+                        <label class="fd-form-label" for="input-14x-name">Name:</label>
+                    </div>
+                    <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+                        <input class="fd-input" type="text" id="input-14x-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+                    </div>
+                </div>
+                <div class="fd-form-item fd-row">
+                    <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+                        <label class="fd-form-label" for="input-14y-name">Name:</label>
+                    </div>
+                    <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+                        <input class="fd-input" type="text" id="input-14y-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+                    </div>
+                </div>
             </div>
-            <div class="fd-row">
-                <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
-                <label class="fd-form-label" for="input-14-name">Name:</label>
+            <div class="fd-form-group fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap" role="group" aria-labelledby="grid2GroupHeader">
+                <div class="fd-form-group__header">
+                    <h1 class="fd-form-group__header-text" id="grid2GroupHeader">Group Header 2</h1>
                 </div>
-                <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
-                <input class="fd-input" type="text" id="input-14-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+                <div class="fd-form-item fd-row">
+                    <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+                        <label class="fd-form-label" for="input-14a-name">Name:</label>
+                    </div>
+                    <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+                        <input class="fd-input" type="text" id="input-14a-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+                    </div>
                 </div>
-                <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
-                <label class="fd-form-label" for="input-14x-name">Name:</label>
+                <div class="fd-form-item fd-row">
+                    <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+                        <label class="fd-form-label" for="input-14b-name">Name:</label>
+                    </div>
+                    <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+                        <input class="fd-input" type="text" id="input-14b-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+                    </div>
                 </div>
-                <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
-                <input class="fd-input" type="text" id="input-14x-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+                <div class="fd-form-item fd-row">
+                    <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+                        <label class="fd-form-label" for="input-14c-name">Name:</label>
+                    </div>
+                    <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+                        <input class="fd-input" type="text" id="input-14c-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+                    </div>
                 </div>
-                <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
-                <label class="fd-form-label" for="input-14y-name">Name:</label>
+            </div>
+            <div class="fd-form-group fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap" role="group" aria-labelledby="grid3GroupHeader">
+                <div class="fd-form-group__header">
+                    <h1 class="fd-form-group__header-text" id="grid3GroupHeader">Group Header 3</h1>
                 </div>
-                <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
-                <input class="fd-input" type="text" id="input-14y-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+                <div class="fd-form-item fd-row">
+                    <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+                        <label class="fd-form-label" for="input-14j-name">Name:</label>
+                    </div>
+                    <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+                        <input class="fd-input" type="text" id="input-14j-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+                    </div>
+                </div>
+                <div class="fd-form-item fd-row">
+                    <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+                        <label class="fd-form-label" for="input-14h-name">Name:</label>
+                    </div>
+                    <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+                        <input class="fd-input" type="text" id="input-14h-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+                    </div>
+                </div>
+                <div class="fd-form-item fd-row">
+                    <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+                        <label class="fd-form-label" for="input-14k-name">Name:</label>
+                    </div>
+                    <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+                        <input class="fd-input" type="text" id="input-14k-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="fd-form-group fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap">
-            <div class="fd-form-group__header">
-                <span class="fd-form-group__header-text">Group Header 2</span>
-            </div>
-            <div class="fd-row">
-                <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
-                <label class="fd-form-label" for="input-14a-name">Name:</label>
-                </div>
-                <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
-                <input class="fd-input" type="text" id="input-14a-name" placeholder="Enter First and Last Name" value="Amelia Perry">
-                </div>
-                <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
-                <label class="fd-form-label" for="input-14b-name">Name:</label>
-                </div>
-                <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
-                <input class="fd-input" type="text" id="input-14b-name" placeholder="Enter First and Last Name" value="Amelia Perry">
-                </div>
-                <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
-                <label class="fd-form-label" for="input-14c-name">Name:</label>
-                </div>
-                <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
-                <input class="fd-input" type="text" id="input-14c-name" placeholder="Enter First and Last Name" value="Amelia Perry">
-                </div>
-            </div>
-        </div>
-        <div class="fd-form-group fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap">
-            <div class="fd-form-group__header">
-                <span class="fd-form-group__header-text">Group Header 3</span>
-            </div>
-            <div class="fd-row">
-                <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
-                <label class="fd-form-label" for="input-14j-name">Name:</label>
-                </div>
-                <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
-                <input class="fd-input" type="text" id="input-14j-name" placeholder="Enter First and Last Name" value="Amelia Perry">
-                </div>
-                <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
-                <label class="fd-form-label" for="input-14h-name">Name:</label>
-                </div>
-                <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
-                <input class="fd-input" type="text" id="input-14h-name" placeholder="Enter First and Last Name" value="Amelia Perry">
-                </div>
-                <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
-                <label class="fd-form-label" for="input-14k-name">Name:</label>
-                </div>
-                <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
-                <input class="fd-input" type="text" id="input-14k-name" placeholder="Enter First and Last Name" value="Amelia Perry">
-                </div>
-            </div>
-        </div>
-  </div>
-</div>
+    </div>
 `;
+groupHeaderInFormGrid.storyName = 'Group Header in Form Grid';
+groupHeaderInFormGrid.parameters = {
+    docs: {
+        storyDescription: `
+When used in a form grid, paddings are added to the groups.
+        `
+    }
+};
