@@ -8,6 +8,7 @@ $block: #{$fd-namespace}-flexible-column-layout;
   $fd-column-layout-expand-decoration-image: var(--fdFlexibleColumnLayoutToggleImage);
   $fd-toggle-button-height: 2rem;
   $fd-toggle-button-width: 1.5rem;
+  $fd-column-layout-separator-width: 1rem;
   $fd-column-layout-border-x: var(--fdFlexibleColumnLayoutBorder);
   $fd-column-layout-expand-decoration-position: calc(50% + #{$fd-toggle-button-height} / 2);
 
@@ -19,7 +20,8 @@ $block: #{$fd-namespace}-flexible-column-layout;
     @include fd-flex-center();
 
     position: relative;
-    width: 1rem;
+    width: $fd-column-layout-separator-width;
+    min-width: $fd-column-layout-separator-width;
     background-color: var(--fdFlexibleColumnBackgroundSolid);
 
     @include both-pseudo-selectors() {
