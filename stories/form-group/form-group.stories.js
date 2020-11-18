@@ -80,11 +80,11 @@ A compact group header can be displayed by adding the <code class="docs-code">--
 export const groupHeaderInFormGrid = () =>
     `<div class="fd-container fd-form-layout-grid-container">
         <div class="fd-row"> 
-            <div class="fd-form-group fd-col fd-col-md--6  fd-col-lg--6 fd-col-xl--6 fd-col--wrap" role="group" aria-labelledby="grid1GroupHeader">
+            <div class="fd-form-group fd-col__form-group fd-col fd-col-md--6  fd-col-lg--6 fd-col-xl--6 fd-col--wrap" role="group" aria-labelledby="grid1GroupHeader">
                 <div class="fd-form-group__header"  id="grid1GroupHeader">
                     <h1 class="fd-form-group__header-text">Group Header 1</h1>
                 </div>
-                <div class="fd-form-item fd-row">
+                <div class="fd-form-item fd-row__form-item fd-row">
                     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
                         <label class="fd-form-label" for="input-14-name">Name:</label>
                     </div>
@@ -92,7 +92,7 @@ export const groupHeaderInFormGrid = () =>
                         <input class="fd-input" type="text" id="input-14-name" placeholder="Enter First and Last Name" value="Amelia Perry">
                     </div>
                 </div>
-                <div class="fd-form-item fd-row">
+                <div class="fd-form-item fd-row__form-item fd-row">
                     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
                         <label class="fd-form-label" for="input-14x-name">Name:</label>
                     </div>
@@ -100,7 +100,7 @@ export const groupHeaderInFormGrid = () =>
                         <input class="fd-input" type="text" id="input-14x-name" placeholder="Enter First and Last Name" value="Amelia Perry">
                     </div>
                 </div>
-                <div class="fd-form-item fd-row">
+                <div class="fd-form-item fd-row__form-item fd-row">
                     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
                         <label class="fd-form-label" for="input-14y-name">Name:</label>
                     </div>
@@ -109,11 +109,11 @@ export const groupHeaderInFormGrid = () =>
                     </div>
                 </div>
             </div>
-            <div class="fd-form-group fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap" role="group" aria-labelledby="grid2GroupHeader">
+            <div class="fd-form-group fd-col__form-group fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap" role="group" aria-labelledby="grid2GroupHeader">
                 <div class="fd-form-group__header">
                     <h1 class="fd-form-group__header-text" id="grid2GroupHeader">Group Header 2</h1>
                 </div>
-                <div class="fd-form-item fd-row">
+                <div class="fd-form-item fd-row__form-item fd-row">
                     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
                         <label class="fd-form-label" for="input-14a-name">Name:</label>
                     </div>
@@ -121,7 +121,7 @@ export const groupHeaderInFormGrid = () =>
                         <input class="fd-input" type="text" id="input-14a-name" placeholder="Enter First and Last Name" value="Amelia Perry">
                     </div>
                 </div>
-                <div class="fd-form-item fd-row">
+                <div class="fd-form-item fd-row__form-item fd-row">
                     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
                         <label class="fd-form-label" for="input-14b-name">Name:</label>
                     </div>
@@ -129,7 +129,7 @@ export const groupHeaderInFormGrid = () =>
                         <input class="fd-input" type="text" id="input-14b-name" placeholder="Enter First and Last Name" value="Amelia Perry">
                     </div>
                 </div>
-                <div class="fd-form-item fd-row">
+                <div class="fd-form-item fd-row__form-item fd-row">
                     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
                         <label class="fd-form-label" for="input-14c-name">Name:</label>
                     </div>
@@ -138,11 +138,11 @@ export const groupHeaderInFormGrid = () =>
                     </div>
                 </div>
             </div>
-            <div class="fd-form-group fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap" role="group" aria-labelledby="grid3GroupHeader">
+            <div class="fd-form-group fd-col__form-group fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap" role="group" aria-labelledby="grid3GroupHeader">
                 <div class="fd-form-group__header">
                     <h1 class="fd-form-group__header-text" id="grid3GroupHeader">Group Header 3</h1>
                 </div>
-                <div class="fd-form-item fd-row">
+                <div class="fd-form-item fd-row__form-item fd-row">
                     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
                         <label class="fd-form-label" for="input-14j-name">Name:</label>
                     </div>
@@ -150,7 +150,7 @@ export const groupHeaderInFormGrid = () =>
                         <input class="fd-input" type="text" id="input-14j-name" placeholder="Enter First and Last Name" value="Amelia Perry">
                     </div>
                 </div>
-                <div class="fd-form-item fd-row">
+                <div class="fd-form-item fd-row__form-item fd-row">
                     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
                         <label class="fd-form-label" for="input-14h-name">Name:</label>
                     </div>
@@ -158,7 +158,7 @@ export const groupHeaderInFormGrid = () =>
                         <input class="fd-input" type="text" id="input-14h-name" placeholder="Enter First and Last Name" value="Amelia Perry">
                     </div>
                 </div>
-                <div class="fd-form-item fd-row">
+                <div class="fd-form-item fd-row__form-item fd-row">
                     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
                         <label class="fd-form-label" for="input-14k-name">Name:</label>
                     </div>
@@ -174,7 +174,8 @@ groupHeaderInFormGrid.storyName = 'Group Header in Form Grid';
 groupHeaderInFormGrid.parameters = {
     docs: {
         storyDescription: `
-When used in a form grid, paddings are added to the groups.
+When used in a form grid, paddings are added to the groups. When using \`fd-form-group\`, add the element \`fd-col__form-group\` at the same level
+for the styles to reflect properly. Similarly, when using \`fd-form-item\`, add the element \`fd-row__form-item\` at the same level.
         `
     }
 };

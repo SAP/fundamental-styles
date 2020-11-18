@@ -92,10 +92,10 @@ $cols: 11;
         }
       }
 
-      .#{$fd-namespace}-form-group.#{$blockCol} {
+      .#{$blockCol}__form-group {
         padding: 1rem;
       }
-      .#{$fd-namespace}-form-item.#{$blockRow} {
+      .#{$blockRow}__form-item {
         flex-direction: row;
       }
     }
