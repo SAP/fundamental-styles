@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.4...v0.13.1-rc.5) (2020-11-18)
+
+
+### Features
+
+* introduce flexible column layout ([#1887](https://github.com/SAP/fundamental-styles/issues/1887)) ([ff6fbaf](https://github.com/SAP/fundamental-styles/commit/ff6fbafe01eadd43639ab6b98d82fc9e57536759))
+
 ### [0.13.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.3...v0.13.1-rc.4) (2020-11-18)
 
 ### [0.13.1-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.2...v0.13.1-rc.3) (2020-11-17)
