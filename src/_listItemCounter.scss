@@ -1,0 +1,16 @@
+@import "./listDefinitions.scss";
+
+.#{$block} {
+  &__item-counter {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    color: var(--sapContent_MarkerTextColor);
+    margin-left: $fd-list-item-counter-spacing;
+
+    @include fd-rtl() {
+      margin-left: 0;
+      margin-right: $fd-list-item-counter-spacing;
+    }
+  }
+}

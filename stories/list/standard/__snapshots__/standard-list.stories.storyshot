@@ -782,6 +782,124 @@ exports[`Storyshots Components/List/Standard Icon 1`] = `
 </ul>
 `;
 
+exports[`Storyshots Components/List/Standard Item Counter 1`] = `
+<ul
+  class="fd-list"
+  role="list"
+>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+      
+    <span
+      class="fd-list__title"
+    >
+      List item 1
+    </span>
+    
+      
+    <span
+      class="fd-list__item-counter"
+    >
+      12345
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+      
+    <span
+      class="fd-list__title"
+    >
+      List item 2
+    </span>
+    
+      
+    <span
+      class="fd-list__item-counter"
+    >
+      12345
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+      
+    <i
+      class="fd-list__icon sap-icon--lightbulb"
+      role="presentation"
+    />
+    
+      
+    <span
+      class="fd-list__title"
+    >
+      List item 3
+    </span>
+    
+      
+    <span
+      class="fd-list__item-counter"
+    >
+      12345
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+      
+    <i
+      class="fd-list__icon sap-icon--cart"
+      role="presentation"
+    />
+    
+      
+    <span
+      class="fd-list__title"
+    >
+      List item 4
+    </span>
+    
+      
+    <span
+      class="fd-list__item-counter"
+    >
+      12345
+    </span>
+    
+  
+  </li>
+  
+
+</ul>
+`;
+
 exports[`Storyshots Components/List/Standard Navigation 1`] = `
 <ul
   class="fd-list fd-list--navigation"
