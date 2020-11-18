@@ -117,6 +117,12 @@ $block: #{$fd-namespace}-grid-list;
         }
       }
     }
+
+    .#{$item}-toolbar {
+      @include fd-flex-vertical-center();
+
+      padding: 0 1rem;
+    }
   }
 
   &__item-body {
@@ -129,7 +135,7 @@ $block: #{$fd-namespace}-grid-list;
     height: 100%;
     padding: 1rem;
 
-    &---no-padding {
+    &--no-padding {
       padding: 0;
     }
   }
@@ -143,12 +149,6 @@ $block: #{$fd-namespace}-grid-list;
     @include fd-fiori-focus(0);
 
     color: var(--sapContent_MarkerTextColor);
-  }
-
-  .#{$block}__toolbar {
-    @include fd-flex-vertical-center();
-
-    padding: 0 1rem;
   }
 
   .#{$block}__group-header {
