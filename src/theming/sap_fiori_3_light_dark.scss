@@ -122,4 +122,11 @@
   --fdCarousel_Dot_Size: 0.25rem;
   --fdCarousel_Dot_Margin: 0 0.375rem;
   --fdCarousel_Dot_Border: none;
+
+  /** Flexible Column Layout */
+  --fdFlexibleColumnLayoutToggleImageColor: var(--sapHighlightColor);
+  --fdFlexibleColumnLayoutBorder: none;
+  --fdFlexibleColumnBackgroundSolid: var(--sapShell_Background);
+  --fdFlexibleColumnBackgroundTranslucent: var(--sapGroup_ContentBackground);
+  --fdFlexibleColumnBackgroundTransparent: transparent;
 }

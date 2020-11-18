@@ -321,6 +321,10 @@ code.docs-code-grey {
   min-height: 4rem;
   text-align: center;
 
+  &--tall {
+    min-height: 25rem;
+  }
+
   &--vertical {
     height: 100%;
   }
