@@ -42,7 +42,7 @@ Neutral | (default)
 Positive | \`fd-numeric-content__kpi--positive\`
 Negative | \`fd-numeric-content__kpi--negative\`
 Critical | \`fd-numeric-content__kpi--critical\`
-Informative | \`fd-numeric-content__kpi—informative\`
+Informative | \`fd-numeric-content__kpi—-informative\`
 
 **To display different states for the scale container (icons/text beside numeric content):**
 
@@ -52,7 +52,7 @@ Neutral | (default)
 Positive | \`fd-numeric-content__scale--positive\`
 Negative | \`fd-numeric-content__scale--negative\`
 Critical | \`fd-numeric-content__scale--critical\`
-Informative | \`fd-numeric-content__scale—informative\`
+Informative | \`fd-numeric-content__scale—-informative\`
 <br>
       `,
         tags: ['f3', 'a11y', 'theme'],
@@ -93,36 +93,36 @@ Generic tiles can be displayed in two tile dimensions: the default 1x1, and 2x1 
 
 export const genericTileLayout = () => `<div class="fddocs-container">
     <div role="button" aria-label="button" tabindex="0" class="fd-tile">
-        <div class="fd-tile__header" style="background-color: #C0E0FA">
+        <div class="fd-tile__header fddocs-tile-example-background-color">
             <div class="fd-tile__title">.fd-tile__title</div>
             <div class="fd-tile__subtitle">.fd-tile__subtitle</div>
         </div>
-        <div class="fd-tile__content" style="background-color: #C0E0FA">.fd-tile__content</div>
-        <div class="fd-tile__footer" style="background-color: #C0E0FA">.fd-tile__footer</div>
+        <div class="fd-tile__content fddocs-tile-example-background-color">.fd-tile__content</div>
+        <div class="fd-tile__footer fddocs-tile-example-background-color">.fd-tile__footer</div>
     </div>
     <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--double">
-        <div class="fd-tile__header" style="background-color: #C0E0FA">
+        <div class="fd-tile__header fddocs-tile-example-background-color">
             <div class="fd-tile__title">.fd-tile__title</div>
             <div class="fd-tile__subtitle">.fd-tile__subtitle</div>
         </div>
-        <div class="fd-tile__content" style="background-color: #C0E0FA">.fd-tile__content</div>
-        <div class="fd-tile__footer" style="background-color: #C0E0FA">.fd-tile__footer</div>
+        <div class="fd-tile__content fddocs-tile-example-background-color">.fd-tile__content</div>
+        <div class="fd-tile__footer fddocs-tile-example-background-color">.fd-tile__footer</div>
     </div>
     <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s">
-        <div class="fd-tile__header" style="background-color: #C0E0FA">
+        <div class="fd-tile__header fddocs-tile-example-background-color">
             <div class="fd-tile__title">.fd-tile__title</div>
             <div class="fd-tile__subtitle">.fd-tile__subtitle</div>
         </div>
-        <div class="fd-tile__content" style="background-color: #C0E0FA">.fd-tile__content</div>
-        <div class="fd-tile__footer" style="background-color: #C0E0FA">.fd-tile__footer</div>
+        <div class="fd-tile__content fddocs-tile-example-background-color">.fd-tile__content</div>
+        <div class="fd-tile__footer fddocs-tile-example-background-color">.fd-tile__footer</div>
     </div>
     <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s fd-tile--double">
-        <div class="fd-tile__header" style="background-color: #C0E0FA">
+        <div class="fd-tile__header fddocs-tile-example-background-color">
             <div class="fd-tile__title">.fd-tile__title</div>
             <div class="fd-tile__subtitle">.fd-tile__subtitle</div>
         </div>
-        <div class="fd-tile__content" style="background-color: #C0E0FA">.fd-tile__content</div>
-        <div class="fd-tile__footer" style="background-color: #C0E0FA">.fd-tile__footer</div>
+        <div class="fd-tile__content fddocs-tile-example-background-color">.fd-tile__content</div>
+        <div class="fd-tile__footer fddocs-tile-example-background-color">.fd-tile__footer</div>
     </div>
 </div>
 `;
@@ -152,58 +152,58 @@ Footer (optional) | \`fd-tile__footer\` | The footer can contain a refresh icon 
 export const genericTileContentColumns = () => `<div class="fddocs-container">
     <div role="button" aria-label="button" tabindex="0" class="fd-tile">
         <div class="fd-tile__header fd-tile__header--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
         </div>
         <div class="fd-tile__content fd-tile__content--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
         </div>
         <div class="fd-tile__footer fd-tile__footer--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
         </div>
     </div>
     <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--double">
         <div class="fd-tile__header fd-tile__header--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
         </div>
         <div class="fd-tile__content fd-tile__content--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
         </div>
         <div class="fd-tile__footer fd-tile__footer--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
         </div>
     </div>
     <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s">
         <div class="fd-tile__header fd-tile__header--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
         </div>
         <div class="fd-tile__content fd-tile__content--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
         </div>
         <div class="fd-tile__footer fd-tile__footer--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
         </div>
     </div>
     <div role="button" aria-label="button" tabindex="0" class="fd-tile fd-tile--s fd-tile--double">
         <div class="fd-tile__header fd-tile__header--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
         </div>
         <div class="fd-tile__content fd-tile__content--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
         </div>
         <div class="fd-tile__footer fd-tile__footer--2-col">
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
-            <div class="fd-tile__section" style="background-color: #C0E0FA"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
+            <div class="fd-tile__section fddocs-tile-example-background-color"></div>
         </div>
     </div>
 </div>
