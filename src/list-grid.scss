@@ -224,6 +224,11 @@ $block: #{$fd-namespace}-grid-list;
       .#{$block}__radio-label {
         order: 1;
         margin-left: 0.5rem !important;
+
+        @include fd-rtl() {
+          margin-right: 0.5rem !important;
+          margin-left: 0 !important;
+        }
       }
     }
   }
