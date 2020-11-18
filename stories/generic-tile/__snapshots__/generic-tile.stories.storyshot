@@ -890,14 +890,12 @@ exports[`Storyshots Components/Tile/Generic Columns 1`] = `
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
         
@@ -910,14 +908,12 @@ exports[`Storyshots Components/Tile/Generic Columns 1`] = `
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
         
@@ -930,14 +926,12 @@ exports[`Storyshots Components/Tile/Generic Columns 1`] = `
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
         
@@ -961,14 +955,12 @@ exports[`Storyshots Components/Tile/Generic Columns 1`] = `
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
         
@@ -981,14 +973,12 @@ exports[`Storyshots Components/Tile/Generic Columns 1`] = `
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
         
@@ -1001,14 +991,12 @@ exports[`Storyshots Components/Tile/Generic Columns 1`] = `
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
         
@@ -1032,14 +1020,12 @@ exports[`Storyshots Components/Tile/Generic Columns 1`] = `
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
         
@@ -1052,14 +1038,12 @@ exports[`Storyshots Components/Tile/Generic Columns 1`] = `
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
         
@@ -1072,14 +1056,12 @@ exports[`Storyshots Components/Tile/Generic Columns 1`] = `
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
         
@@ -1103,14 +1085,12 @@ exports[`Storyshots Components/Tile/Generic Columns 1`] = `
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
         
@@ -1123,14 +1103,12 @@ exports[`Storyshots Components/Tile/Generic Columns 1`] = `
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
         
@@ -1143,14 +1121,12 @@ exports[`Storyshots Components/Tile/Generic Columns 1`] = `
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
             
       <div
-        class="fd-tile__section"
-        style="background-color: #C0E0FA"
+        class="fd-tile__section fddocs-tile-example-background-color"
       />
       
         
@@ -2813,8 +2789,7 @@ exports[`Storyshots Components/Tile/Generic Layout 1`] = `
     
         
     <div
-      class="fd-tile__header"
-      style="background-color: #C0E0FA"
+      class="fd-tile__header fddocs-tile-example-background-color"
     >
       
             
@@ -2836,16 +2811,14 @@ exports[`Storyshots Components/Tile/Generic Layout 1`] = `
     
         
     <div
-      class="fd-tile__content"
-      style="background-color: #C0E0FA"
+      class="fd-tile__content fddocs-tile-example-background-color"
     >
       .fd-tile__content
     </div>
     
         
     <div
-      class="fd-tile__footer"
-      style="background-color: #C0E0FA"
+      class="fd-tile__footer fddocs-tile-example-background-color"
     >
       .fd-tile__footer
     </div>
@@ -2863,8 +2836,7 @@ exports[`Storyshots Components/Tile/Generic Layout 1`] = `
     
         
     <div
-      class="fd-tile__header"
-      style="background-color: #C0E0FA"
+      class="fd-tile__header fddocs-tile-example-background-color"
     >
       
             
@@ -2886,16 +2858,14 @@ exports[`Storyshots Components/Tile/Generic Layout 1`] = `
     
         
     <div
-      class="fd-tile__content"
-      style="background-color: #C0E0FA"
+      class="fd-tile__content fddocs-tile-example-background-color"
     >
       .fd-tile__content
     </div>
     
         
     <div
-      class="fd-tile__footer"
-      style="background-color: #C0E0FA"
+      class="fd-tile__footer fddocs-tile-example-background-color"
     >
       .fd-tile__footer
     </div>
@@ -2913,8 +2883,7 @@ exports[`Storyshots Components/Tile/Generic Layout 1`] = `
     
         
     <div
-      class="fd-tile__header"
-      style="background-color: #C0E0FA"
+      class="fd-tile__header fddocs-tile-example-background-color"
     >
       
             
@@ -2936,16 +2905,14 @@ exports[`Storyshots Components/Tile/Generic Layout 1`] = `
     
         
     <div
-      class="fd-tile__content"
-      style="background-color: #C0E0FA"
+      class="fd-tile__content fddocs-tile-example-background-color"
     >
       .fd-tile__content
     </div>
     
         
     <div
-      class="fd-tile__footer"
-      style="background-color: #C0E0FA"
+      class="fd-tile__footer fddocs-tile-example-background-color"
     >
       .fd-tile__footer
     </div>
@@ -2963,8 +2930,7 @@ exports[`Storyshots Components/Tile/Generic Layout 1`] = `
     
         
     <div
-      class="fd-tile__header"
-      style="background-color: #C0E0FA"
+      class="fd-tile__header fddocs-tile-example-background-color"
     >
       
             
@@ -2986,16 +2952,14 @@ exports[`Storyshots Components/Tile/Generic Layout 1`] = `
     
         
     <div
-      class="fd-tile__content"
-      style="background-color: #C0E0FA"
+      class="fd-tile__content fddocs-tile-example-background-color"
     >
       .fd-tile__content
     </div>
     
         
     <div
-      class="fd-tile__footer"
-      style="background-color: #C0E0FA"
+      class="fd-tile__footer fddocs-tile-example-background-color"
     >
       .fd-tile__footer
     </div>
