@@ -215,14 +215,14 @@ genericTileContentColumns.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
-The header, content and footer of generic tile can be split into two columns with a 0.25rem vertical padding. Use the (\`*--2-col\`) modifier classes to achieve the 2-col design.
+The header, content and footer of generic tile can be split into two columns with a 0.25rem vertical padding. Use the (\`*--2-col\`) modifier classes to achieve the 2-column design.
 
 - Header \`fd-tile__header fd-tile__header--2-col\`
     - Section \`fd-tile__section\`
     - Section \`fd-tile__section\`
 - Content \`fd-tile__content fd-tile__content--2-col\`
     - Section \`fd-tile__section\`
-    -Section \`fd-tile__section\`
+    - Section \`fd-tile__section\`
 - Footer \`fd-tile__footer fd-tile__footer--2-col\`
     - Section \`fd-tile__section\`
     - Section \`fd-tile__section\`
@@ -398,7 +398,7 @@ export const kpiTile = () => `<h4>KPI tile with numeric content (size L)</h4>
     <div role="button" tabindex="0" class="fd-tile fd-tile--kpi">
         <div class="fd-tile__header">
             <div class="fd-tile__title">Title</div>
-            <div class="fd-tile__subtitle">Subtitle text</div>
+            <div class="fd-tile__subtitle">Subtitle</div>
         </div>
         <div class="fd-tile__content">
             <div class="fd-numeric-content">
@@ -659,7 +659,7 @@ export const badgeTile = () => `<div class="fddocs-container">
     <div role="button" tabindex="0" class="fd-tile fd-tile--double fd-tile--s fd-tile--feed">
         <div class="fd-badge">Badge with very very very very very very very very very long text</div>
         <div class="fd-tile__header">
-            <div class="fd-tile__title">Title: Sed do eiusmod</div>
+            <div class="fd-tile__title">Feed tile title: Sed do eiusmod</div>
             <div class="fd-tile__subtitle">Subtitle</div>
         </div>
         <div class="fd-tile__content fd-tile__content--2-col">
@@ -1271,8 +1271,8 @@ export const tileInActionMode = () => `<div class="fddocs-container">
                     <i class="sap-icon--overflow" role="presentation"></i>
                 </button>
         <div class="fd-tile__header">
-            <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
-            <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
+            <div class="fd-tile__title">Title</div>
+            <div class="fd-tile__subtitle">Subtitle</div>
         </div>
         <div class="fd-tile__content">
             <span class="fd-tile__profile-img" style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/ImageContent/images/ProfileImage_LargeGenTile.png')" role="presentation" aria-label="Profile Image"></span>
@@ -1289,8 +1289,8 @@ export const tileInActionMode = () => `<div class="fddocs-container">
                     <i class="sap-icon--overflow" role="presentation"></i>
                 </button>
         <div class="fd-tile__header">
-            <div class="fd-tile__title">Launch Tile (Profile) Title Text</div>
-            <div class="fd-tile__subtitle">Launch Tile Subtitle</div>
+            <div class="fd-tile__title">Title</div>
+            <div class="fd-tile__subtitle">Subtitle</div>
         </div>
         <div class="fd-tile__content">
             <span class="fd-tile__profile-img" style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/ImageContent/images/ProfileImage_LargeGenTile.png')" role="presentation" aria-label="Profile Image"></span>
@@ -1310,7 +1310,7 @@ export const tileInActionMode = () => `<div class="fddocs-container">
                 </button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
-                <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
+                <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions Across the Globe</div>
                 <div class="fd-tile__subtitle">SAP News</div>
             </div>
             <div class="fd-tile__footer">
@@ -1338,7 +1338,7 @@ export const tileInActionMode = () => `<div class="fddocs-container">
                 </button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
-                <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe</div>
+                <div class="fd-tile__title">Wind Map: Monitoring Real-Time and Forecasted Wind Conditions Across the Globe</div>
                 <div class="fd-tile__subtitle">SAP News</div>
             </div>
             <div class="fd-tile__footer">
