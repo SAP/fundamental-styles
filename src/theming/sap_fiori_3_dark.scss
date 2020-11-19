@@ -129,4 +129,7 @@
   --fdFlexibleColumnBackgroundSolid: var(--sapShell_Background);
   --fdFlexibleColumnBackgroundTranslucent: var(--sapGroup_ContentBackground);
   --fdFlexibleColumnBackgroundTransparent: transparent;
+
+  /** Dialog */
+  --fdDialogBackgroundOpacity: 0.6;
 }
