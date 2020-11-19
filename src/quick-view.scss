@@ -1,0 +1,11 @@
+@import "./new-settings";
+@import "./mixins";
+
+/*!
+.fd-radio
+*/
+$block: #{$fd-namespace}-quick-view;
+
+.#{$block} {
+  @include fd-reset();
+}
