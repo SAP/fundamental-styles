@@ -107,7 +107,7 @@ export const launchTile = () => `<h4>Launch tile with numeric content and launch
             <div class="fd-tile__subtitle">Subtitle</div>
         </div>
         <div class="fd-tile__content">
-            <span class="fd-tile__profile-img" style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/ImageContent/images/ProfileImage_LargeGenTile.png')" role="presentation" aria-label="Profile Image"></span>
+            <span class="fd-tile__profile-img" style="background-image: url('assets/images/avatars/profile_image.png')" role="presentation" aria-label="Profile Image"></span>
         </div>
         <div class="fd-tile__footer">
             <span class="fd-tile__footer-text">Footer</span>
@@ -119,7 +119,7 @@ export const launchTile = () => `<h4>Launch tile with numeric content and launch
             <div class="fd-tile__subtitle">Subtitle</div>
         </div>
         <div class="fd-tile__content">
-            <span class="fd-tile__profile-img" style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/ImageContent/images/ProfileImage_LargeGenTile.png')" role="presentation" aria-label="Profile Image"></span>
+            <span class="fd-tile__profile-img" style="background-image: url('assets/images/avatars/profile_image.png')" role="presentation" aria-label="Profile Image"></span>
         </div>
         <div class="fd-tile__footer">
             <span class="fd-tile__footer-text">Unit, Notification</span>
@@ -395,7 +395,7 @@ export const badgeTile = () => `<div class="fddocs-container">
             <div class="fd-tile__subtitle">Subtitle</div>
         </div>
         <div class="fd-tile__content">
-            <span class="fd-tile__profile-img" style="background-image: url('https://loremflickr.com/cache/resized/65535_50178620828_b62a994cb0_q_80_80_nofilter.jpg')" role="presentation" aria-label="Profile Image"></span>
+            <span class="fd-tile__profile-img" style="background-image: url('assets/images/avatars/profile_image.png')" role="presentation" aria-label="Profile Image"></span>
         </div>
         <div class="fd-tile__footer">
             <span class="fd-tile__footer-text">Footer</span>
@@ -408,7 +408,7 @@ export const badgeTile = () => `<div class="fddocs-container">
             <div class="fd-tile__subtitle">Subtitle</div>
         </div>
         <div class="fd-tile__content">
-            <span class="fd-tile__profile-img" style="background-image: url('https://loremflickr.com/cache/resized/65535_50178620828_b62a994cb0_q_80_80_nofilter.jpg')" role="presentation" aria-label="Profile Image"></span>
+            <span class="fd-tile__profile-img" style="background-image: url('assets/images/avatars/profile_image.png')" role="presentation" aria-label="Profile Image"></span>
         </div>
         <div class="fd-tile__footer">
             <span class="fd-tile__footer-text">Unit, Notification</span>
@@ -473,7 +473,7 @@ badgeTile.parameters = {
 
 export const slideTile = () => `<div class="fddocs-container">
     <div role="button" tabindex="0" class="fd-tile fd-tile--slide">
-        <div class="fd-tile__background-img" style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png')"></div>
+        <div class="fd-tile__background-img" style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"></div>
         <button aria-label="toggle play button" class="fd-tile__toggle"></button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
@@ -493,7 +493,7 @@ export const slideTile = () => `<div class="fddocs-container">
         </div>
     </div>
     <div role="button" tabindex="0" class="fd-tile fd-tile--slide fd-tile--s">
-        <div class="fd-tile__background-img" style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png')"></div>
+        <div class="fd-tile__background-img" style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"></div>
         <button aria-label="toggle play button" class="fd-tile__toggle"></button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
@@ -513,7 +513,7 @@ export const slideTile = () => `<div class="fddocs-container">
         </div>
     </div>
     <div role="button" tabindex="0" class="fd-tile fd-tile--double fd-tile--slide">
-        <div class="fd-tile__background-img" style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png')"></div>
+        <div class="fd-tile__background-img" style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"></div>
         <button aria-label="toggle pause button" class="fd-tile__toggle fd-tile__toggle--pause"></button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
@@ -535,7 +535,7 @@ export const slideTile = () => `<div class="fddocs-container">
         </div>
     </div>
     <div role="button" tabindex="0" class="fd-tile fd-tile--double fd-tile--s fd-tile--slide">
-        <div class="fd-tile__background-img" style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png')"></div>
+        <div class="fd-tile__background-img" style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"></div>
         <button aria-label="toggle pause button" class="fd-tile__toggle fd-tile__toggle--pause"></button>
         <div class="fd-tile__container">
             <div class="fd-tile__header">
@@ -1056,7 +1056,7 @@ export const tileInActionMode = () => `<div class="fddocs-container">
             <div class="fd-tile__subtitle">Subtitle</div>
         </div>
         <div class="fd-tile__content">
-            <span class="fd-tile__profile-img" style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/ImageContent/images/ProfileImage_LargeGenTile.png')" role="presentation" aria-label="Profile Image"></span>
+            <span class="fd-tile__profile-img" style="background-image: url('assets/images/avatars/profile_image.png')" role="presentation" aria-label="Profile Image"></span>
         </div>
         <div class="fd-tile__footer">
             <span class="fd-tile__footer-text">Footer Text</span>
@@ -1074,14 +1074,14 @@ export const tileInActionMode = () => `<div class="fddocs-container">
             <div class="fd-tile__subtitle">Subtitle</div>
         </div>
         <div class="fd-tile__content">
-            <span class="fd-tile__profile-img" style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/ImageContent/images/ProfileImage_LargeGenTile.png')" role="presentation" aria-label="Profile Image"></span>
+            <span class="fd-tile__profile-img" style="background-image: url('assets/images/avatars/profile_image.png')" role="presentation" aria-label="Profile Image"></span>
         </div>
         <div class="fd-tile__footer">
             <span class="fd-tile__footer-text">Unit, Notification</span>
         </div>
     </div>
     <div role="button" tabindex="0" class="fd-tile fd-tile--double fd-tile--slide fd-tile--action">
-        <div class="fd-tile__background-img" style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png')"></div>
+        <div class="fd-tile__background-img" style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"></div>
         <div class="fd-tile__overlay"></div>
         <button aria-label="toggle button" class="fd-tile__toggle fd-tile__toggle--pause"></button>
         <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
@@ -1109,7 +1109,7 @@ export const tileInActionMode = () => `<div class="fddocs-container">
         </div>
     </div>
     <div role="button" tabindex="0" class="fd-tile fd-tile--double fd-tile--s fd-tile--slide fd-tile--action">
-        <div class="fd-tile__background-img" style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png')"></div>
+        <div class="fd-tile__background-img" style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"></div>
         <div class="fd-tile__overlay"></div>
         <button aria-label="toggle button" class="fd-tile__toggle fd-tile__toggle--pause"></button>
         <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
