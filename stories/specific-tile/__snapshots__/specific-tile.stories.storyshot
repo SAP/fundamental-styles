@@ -1,6 +1,497 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Tile/Specific Badge Tile 1`] = `
+exports[`Storyshots Components/Tile/Specific Action mode 1`] = `
+<div
+  class="fddocs-container"
+>
+  
+    
+  <div
+    class="fd-tile fd-tile--launch fd-tile--action"
+    role="button"
+    tabindex="0"
+  >
+    
+        
+    <div
+      class="fd-tile__overlay"
+    />
+    
+        
+    <button
+      aria-label="close button"
+      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
+    >
+      
+                    
+      <i
+        class="sap-icon--decline"
+        role="presentation"
+      />
+      
+                
+    </button>
+    <button
+      aria-label="indicator button"
+      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
+      tabindex="-1"
+    >
+      
+                    
+      <i
+        class="sap-icon--overflow"
+        role="presentation"
+      />
+      
+                
+    </button>
+    
+        
+    <div
+      class="fd-tile__header"
+    >
+      
+            
+      <div
+        class="fd-tile__title"
+      >
+        Title
+      </div>
+      
+            
+      <div
+        class="fd-tile__subtitle"
+      >
+        Subtitle
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-tile__content"
+    >
+      
+            
+      <span
+        aria-label="Profile Image"
+        class="fd-tile__profile-img"
+        role="presentation"
+        style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/ImageContent/images/ProfileImage_LargeGenTile.png')"
+      />
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-tile__footer"
+    >
+      
+            
+      <span
+        class="fd-tile__footer-text"
+      >
+        Footer Text
+      </span>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <div
+    class="fd-tile fd-tile--launch fd-tile--s fd-tile--action"
+    role="button"
+    tabindex="0"
+  >
+    
+        
+    <div
+      class="fd-tile__overlay"
+    />
+    
+        
+    <button
+      aria-label="close button"
+      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
+    >
+      
+                    
+      <i
+        class="sap-icon--decline"
+        role="presentation"
+      />
+      
+                
+    </button>
+    <button
+      aria-label="indicator button"
+      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
+      tabindex="-1"
+    >
+      
+                    
+      <i
+        class="sap-icon--overflow"
+        role="presentation"
+      />
+      
+                
+    </button>
+    
+        
+    <div
+      class="fd-tile__header"
+    >
+      
+            
+      <div
+        class="fd-tile__title"
+      >
+        Title
+      </div>
+      
+            
+      <div
+        class="fd-tile__subtitle"
+      >
+        Subtitle
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-tile__content"
+    >
+      
+            
+      <span
+        aria-label="Profile Image"
+        class="fd-tile__profile-img"
+        role="presentation"
+        style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/ImageContent/images/ProfileImage_LargeGenTile.png')"
+      />
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-tile__footer"
+    >
+      
+            
+      <span
+        class="fd-tile__footer-text"
+      >
+        Unit, Notification
+      </span>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <div
+    class="fd-tile fd-tile--double fd-tile--slide fd-tile--action"
+    role="button"
+    tabindex="0"
+  >
+    
+        
+    <div
+      class="fd-tile__background-img"
+      style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png')"
+    />
+    
+        
+    <div
+      class="fd-tile__overlay"
+    />
+    
+        
+    <button
+      aria-label="toggle button"
+      class="fd-tile__toggle fd-tile__toggle--pause"
+    />
+    
+        
+    <button
+      aria-label="close button"
+      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
+    >
+      
+                    
+      <i
+        class="sap-icon--decline"
+        role="presentation"
+      />
+      
+                
+    </button>
+    <button
+      aria-label="indicator button"
+      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
+      tabindex="-1"
+    >
+      
+                    
+      <i
+        class="sap-icon--overflow"
+        role="presentation"
+      />
+      
+                
+    </button>
+    
+        
+    <div
+      class="fd-tile__container"
+    >
+      
+            
+      <div
+        class="fd-tile__header"
+      >
+        
+                
+        <div
+          class="fd-tile__title"
+        >
+          Wind Map: Monitoring Real-Time and Forecasted Wind Conditions Across the Globe
+        </div>
+        
+                
+        <div
+          class="fd-tile__subtitle"
+        >
+          SAP News
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fd-tile__footer"
+      >
+        
+                
+        <span
+          class="fd-tile__footer-text"
+        >
+          May 14, 2020
+        </span>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fd-tile__page-indicator"
+      >
+        
+                
+        <span
+          class="fd-tile__dot"
+        />
+        
+                
+        <span
+          class="fd-tile__dot"
+        />
+        
+                
+        <span
+          class="fd-tile__dot fd-tile__dot--active"
+        />
+        
+                
+        <span
+          class="fd-tile__dot"
+        />
+        
+                
+        <span
+          class="fd-tile__dot"
+        />
+        
+                
+        <span
+          class="fd-tile__dot"
+        />
+        
+                
+        <span
+          class="fd-tile__dot"
+        />
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <div
+    class="fd-tile fd-tile--double fd-tile--s fd-tile--slide fd-tile--action"
+    role="button"
+    tabindex="0"
+  >
+    
+        
+    <div
+      class="fd-tile__background-img"
+      style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png')"
+    />
+    
+        
+    <div
+      class="fd-tile__overlay"
+    />
+    
+        
+    <button
+      aria-label="toggle button"
+      class="fd-tile__toggle fd-tile__toggle--pause"
+    />
+    
+        
+    <button
+      aria-label="close button"
+      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
+    >
+      
+                    
+      <i
+        class="sap-icon--decline"
+        role="presentation"
+      />
+      
+                
+    </button>
+    <button
+      aria-label="indicator button"
+      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
+      tabindex="-1"
+    >
+      
+                    
+      <i
+        class="sap-icon--overflow"
+        role="presentation"
+      />
+      
+                
+    </button>
+    
+        
+    <div
+      class="fd-tile__container"
+    >
+      
+            
+      <div
+        class="fd-tile__header"
+      >
+        
+                
+        <div
+          class="fd-tile__title"
+        >
+          Wind Map: Monitoring Real-Time and Forecasted Wind Conditions Across the Globe
+        </div>
+        
+                
+        <div
+          class="fd-tile__subtitle"
+        >
+          SAP News
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fd-tile__footer"
+      >
+        
+                
+        <span
+          class="fd-tile__footer-text"
+        >
+          May 14, 2020
+        </span>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fd-tile__page-indicator"
+      >
+        
+                
+        <span
+          class="fd-tile__dot"
+        />
+        
+                
+        <span
+          class="fd-tile__dot"
+        />
+        
+                
+        <span
+          class="fd-tile__dot fd-tile__dot--active"
+        />
+        
+                
+        <span
+          class="fd-tile__dot"
+        />
+        
+                
+        <span
+          class="fd-tile__dot"
+        />
+        
+                
+        <span
+          class="fd-tile__dot"
+        />
+        
+                
+        <span
+          class="fd-tile__dot"
+        />
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Components/Tile/Specific Badge tile 1`] = `
 <div
   class="fddocs-container"
 >
@@ -28,14 +519,14 @@ exports[`Storyshots Components/Tile/Specific Badge Tile 1`] = `
       <div
         class="fd-tile__title"
       >
-        Launch Tile (Profile) Title Text
+        Launch tile title
       </div>
       
             
       <div
         class="fd-tile__subtitle"
       >
-        Launch Tile Subtitle
+        Subtitle
       </div>
       
         
@@ -51,7 +542,7 @@ exports[`Storyshots Components/Tile/Specific Badge Tile 1`] = `
         aria-label="Profile Image"
         class="fd-tile__profile-img"
         role="presentation"
-        style="background-image: url('assets/images/avatars/5.svg')"
+        style="background-image: url('https://loremflickr.com/cache/resized/65535_50178620828_b62a994cb0_q_80_80_nofilter.jpg')"
       />
       
         
@@ -66,7 +557,7 @@ exports[`Storyshots Components/Tile/Specific Badge Tile 1`] = `
       <span
         class="fd-tile__footer-text"
       >
-        Footer Text
+        Footer
       </span>
       
         
@@ -86,7 +577,7 @@ exports[`Storyshots Components/Tile/Specific Badge Tile 1`] = `
     <div
       class="fd-badge"
     >
-      Badge with a very very very very very very very very very long text
+      Badge with very very very very very very very very very long text
     </div>
     
         
@@ -98,14 +589,14 @@ exports[`Storyshots Components/Tile/Specific Badge Tile 1`] = `
       <div
         class="fd-tile__title"
       >
-        Launch Tile (Profile) Title Text
+        Launch tile title
       </div>
       
             
       <div
         class="fd-tile__subtitle"
       >
-        Launch Tile Subtitle
+        Subtitle
       </div>
       
         
@@ -121,7 +612,7 @@ exports[`Storyshots Components/Tile/Specific Badge Tile 1`] = `
         aria-label="Profile Image"
         class="fd-tile__profile-img"
         role="presentation"
-        style="background-image: url('assets/images/avatars/5.svg')"
+        style="background-image: url('https://loremflickr.com/cache/resized/65535_50178620828_b62a994cb0_q_80_80_nofilter.jpg')"
       />
       
         
@@ -168,14 +659,14 @@ exports[`Storyshots Components/Tile/Specific Badge Tile 1`] = `
       <div
         class="fd-tile__title"
       >
-        Feed Tile Title Text sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        Feed tile title: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
       </div>
       
             
       <div
         class="fd-tile__subtitle"
       >
-        Feed Tile Subtitle Text
+        Subtitle
       </div>
       
         
@@ -202,7 +693,7 @@ exports[`Storyshots Components/Tile/Specific Badge Tile 1`] = `
         <div
           class="fd-tile__content-byline"
         >
-          About 1 minute ago.
+          About 1 minute ago
         </div>
         
             
@@ -271,7 +762,7 @@ exports[`Storyshots Components/Tile/Specific Badge Tile 1`] = `
     <div
       class="fd-badge"
     >
-      Badge with a very very very very very very very very very long text
+      Badge with very very very very very very very very very long text
     </div>
     
         
@@ -283,14 +774,14 @@ exports[`Storyshots Components/Tile/Specific Badge Tile 1`] = `
       <div
         class="fd-tile__title"
       >
-        Feed Tile Title Text sed do eiusmod
+        Feed tile title: Sed do eiusmod
       </div>
       
             
       <div
         class="fd-tile__subtitle"
       >
-        Feed Tile Subtitle Text
+        Subtitle
       </div>
       
         
@@ -317,7 +808,7 @@ exports[`Storyshots Components/Tile/Specific Badge Tile 1`] = `
         <div
           class="fd-tile__content-byline"
         >
-          About 1 minute ago.
+          About 1 minute ago
         </div>
         
             
@@ -379,7 +870,7 @@ exports[`Storyshots Components/Tile/Specific Badge Tile 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tile/Specific Feed Tile 1`] = `
+exports[`Storyshots Components/Tile/Specific Feed tile 1`] = `
 <div
   class="fddocs-container"
 >
@@ -400,14 +891,14 @@ exports[`Storyshots Components/Tile/Specific Feed Tile 1`] = `
       <div
         class="fd-tile__title"
       >
-        Feed Tile Title Text sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        Title: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
       </div>
       
             
       <div
         class="fd-tile__subtitle"
       >
-        Feed Tile Subtitle Text
+        Subtitle
       </div>
       
         
@@ -434,7 +925,7 @@ exports[`Storyshots Components/Tile/Specific Feed Tile 1`] = `
         <div
           class="fd-tile__content-byline"
         >
-          About 1 minute ago.
+          About 1 minute ago
         </div>
         
             
@@ -508,14 +999,14 @@ exports[`Storyshots Components/Tile/Specific Feed Tile 1`] = `
       <div
         class="fd-tile__title"
       >
-        Feed Tile Title Text sed do eiusmod
+        Title: Sed do eiusmod
       </div>
       
             
       <div
         class="fd-tile__subtitle"
       >
-        Feed Tile Subtitle Text
+        Subtitle
       </div>
       
         
@@ -542,7 +1033,7 @@ exports[`Storyshots Components/Tile/Specific Feed Tile 1`] = `
         <div
           class="fd-tile__content-byline"
         >
-          About 1 minute ago.
+          About 1 minute ago
         </div>
         
             
@@ -604,10 +1095,10 @@ exports[`Storyshots Components/Tile/Specific Feed Tile 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tile/Specific Kpi Tile 1`] = `
+exports[`Storyshots Components/Tile/Specific KPI tile 1`] = `
 <section>
   <h4>
-    KPI Tile with L-Size Numeric Content
+    KPI tile with numeric content (size L)
   </h4>
   
 
@@ -631,14 +1122,14 @@ exports[`Storyshots Components/Tile/Specific Kpi Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Tile Title Text
+          Title
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Tile Subtitle Text
+          Subtitle
         </div>
         
         
@@ -763,14 +1254,14 @@ exports[`Storyshots Components/Tile/Specific Kpi Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Tile Title Text
+          Title
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Tile Subtitle Text
+          Subtitle
         </div>
         
         
@@ -890,7 +1381,7 @@ exports[`Storyshots Components/Tile/Specific Kpi Tile 1`] = `
   
 
   <h4>
-    KPI Tile with M-Size Numeric Content
+    KPI tile with numeric content (size M)
   </h4>
   
 
@@ -914,7 +1405,7 @@ exports[`Storyshots Components/Tile/Specific Kpi Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Tile Title Text eiusmod tempor incididunt ut labore 
+          Title: Eiusmod tempor incididunt ut labore 
         </div>
         
         
@@ -1007,14 +1498,14 @@ exports[`Storyshots Components/Tile/Specific Kpi Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Title Text eiusmod tempor incididunt
+          Title: Eiusmod tempor incididunt
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Subtitle Text
+          Subtitle
         </div>
         
         
@@ -1102,7 +1593,7 @@ exports[`Storyshots Components/Tile/Specific Kpi Tile 1`] = `
   
 
   <h4>
-    KPI Tile with S-Size Numeric Content
+    KPI tile with numeric content (size S)
   </h4>
   
 
@@ -1126,7 +1617,7 @@ exports[`Storyshots Components/Tile/Specific Kpi Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Tile Title Text
+          Title
         </div>
         
         
@@ -1226,14 +1717,14 @@ exports[`Storyshots Components/Tile/Specific Kpi Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Tile Title Text
+          Title
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Tile Subtitle Text
+          Subtitle
         </div>
         
         
@@ -1279,7 +1770,7 @@ exports[`Storyshots Components/Tile/Specific Kpi Tile 1`] = `
         <span
           class="fd-tile__footer-text"
         >
-          CAD, Current Quarter
+          CAD, Current quarter
         </span>
         
         
@@ -1295,10 +1786,10 @@ exports[`Storyshots Components/Tile/Specific Kpi Tile 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Tile/Specific Launch Tile 1`] = `
+exports[`Storyshots Components/Tile/Specific Launch tile 1`] = `
 <section>
   <h4>
-    Launch Tile With Numeric Content and Launch Icon
+    Launch tile with numeric content and launch icon
   </h4>
   
 
@@ -1325,14 +1816,14 @@ exports[`Storyshots Components/Tile/Specific Launch Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Launch Tile Title Text
+          Title
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Launch Tile Subtitle
+          Subtitle
         </div>
         
         
@@ -1471,14 +1962,14 @@ exports[`Storyshots Components/Tile/Specific Launch Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Launch Tile Title Text
+          Title
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Launch Tile Subtitle
+          Subtitle
         </div>
         
         
@@ -1558,7 +2049,7 @@ exports[`Storyshots Components/Tile/Specific Launch Tile 1`] = `
   
 
   <h4>
-    Launch Tile With Combined Header and Content
+    Launch tile with combined header and content
   </h4>
   
 
@@ -1585,14 +2076,14 @@ exports[`Storyshots Components/Tile/Specific Launch Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Launch Tile Title Text Lorem ipsum dolor sit amet, consectetur elit
+          Title: Lorem ipsum dolor sit amet, consectetur elit
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Subtitle Text
+          Subtitle
         </div>
         
         
@@ -1657,14 +2148,14 @@ exports[`Storyshots Components/Tile/Specific Launch Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Launch Tile Title Text Lorem ipsum dolor sit amet, consectetur elit
+          Title: Lorem ipsum dolor sit amet, consectetur elit
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Subtitle Text
+          Subtitle
         </div>
         
         
@@ -1724,7 +2215,7 @@ exports[`Storyshots Components/Tile/Specific Launch Tile 1`] = `
   
 
   <h4>
-    Launch Tile (Profile)
+    Launch tile (profile)
   </h4>
   
 
@@ -1751,14 +2242,14 @@ exports[`Storyshots Components/Tile/Specific Launch Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Launch Tile (Profile) Title Text
+          Title
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Launch Tile Subtitle
+          Subtitle
         </div>
         
         
@@ -1774,7 +2265,7 @@ exports[`Storyshots Components/Tile/Specific Launch Tile 1`] = `
           aria-label="Profile Image"
           class="fd-tile__profile-img"
           role="presentation"
-          style="background-image: url('assets/images/avatars/2.svg')"
+          style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/ImageContent/images/ProfileImage_LargeGenTile.png')"
         />
         
         
@@ -1789,7 +2280,7 @@ exports[`Storyshots Components/Tile/Specific Launch Tile 1`] = `
         <span
           class="fd-tile__footer-text"
         >
-          Footer Text
+          Footer
         </span>
         
         
@@ -1814,14 +2305,14 @@ exports[`Storyshots Components/Tile/Specific Launch Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Launch Tile (Profile) Title Text
+          Title
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Launch Tile Subtitle
+          Subtitle
         </div>
         
         
@@ -1837,7 +2328,7 @@ exports[`Storyshots Components/Tile/Specific Launch Tile 1`] = `
           aria-label="Profile Image"
           class="fd-tile__profile-img"
           role="presentation"
-          style="background-image: url('assets/images/avatars/2.svg')"
+          style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/ImageContent/images/ProfileImage_LargeGenTile.png')"
         />
         
         
@@ -1872,7 +2363,7 @@ exports[`Storyshots Components/Tile/Specific Launch Tile 1`] = `
   
 
   <h4>
-    Launch Tile (Logo)
+    Launch tile (logo)
   </h4>
   
 
@@ -1899,14 +2390,14 @@ exports[`Storyshots Components/Tile/Specific Launch Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Launch Tile (Logo) Title Text
+          Title
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Launch Tile Subtitle
+          Subtitle
         </div>
         
         
@@ -1937,7 +2428,7 @@ exports[`Storyshots Components/Tile/Specific Launch Tile 1`] = `
         <span
           class="fd-tile__footer-text"
         >
-          Footer Text
+          Footer
         </span>
         
         
@@ -1962,14 +2453,14 @@ exports[`Storyshots Components/Tile/Specific Launch Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Launch Tile (Logo) Title Text
+          Title
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Launch Tile Subtitle
+          Subtitle
         </div>
         
         
@@ -2014,10 +2505,10 @@ exports[`Storyshots Components/Tile/Specific Launch Tile 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
+exports[`Storyshots Components/Tile/Specific Link tile 1`] = `
 <section>
   <h4>
-    Line Tile - Floating Behaviour, Cozy Mode
+    Link tile: Floating behaviour in cozy mode
   </h4>
   
 
@@ -2041,14 +2532,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title
+          Title
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle
+          Subtitle
         </div>
         
         
@@ -2073,14 +2564,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title very very very very very very long text
+          Title with very very very very very very long text
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle very very very very very very long text
+          Subtitle with very very very very very very long text
         </div>
         
         
@@ -2105,14 +2596,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title
+          Title
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle
+          Subtitle
         </div>
         
         
@@ -2137,14 +2628,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          Title: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle aute irure dolor in reprehenderit in voluptate velit esse cillum
+          Subtitle: Aute irure dolor in reprehenderit in voluptate velit esse cillum
         </div>
         
         
@@ -2169,14 +2660,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title perspiciatis unde omnis iste natus error sit voluptatem
+          Title: Perspiciatis unde omnis iste natus error sit voluptatem
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle enim ipsam voluptatem 
+          Subtitle: Enim ipsam voluptatem 
         </div>
         
         
@@ -2201,14 +2692,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title iusto odio dignissimos ducimus
+          Title: Iusto odio dignissimos ducimus
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle lorem ipsum dolor sit amet
+          Subtitle: Lorem ipsum dolor sit amet
         </div>
         
         
@@ -2227,7 +2718,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
   
 
   <h4>
-    Line Tile - List Behaviour, Cozy Mode
+    Link tile: List behaviour in cozy mode
   </h4>
   
 
@@ -2251,14 +2742,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title
+          Title
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle
+          Subtitle
         </div>
         
         
@@ -2283,14 +2774,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title very very very very very very long text
+          Title with very very very very very very long text
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle very very very very very very long text
+          Subtitle with very very very very very very long text
         </div>
         
         
@@ -2315,14 +2806,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title
+          Title
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle
+          Subtitle
         </div>
         
         
@@ -2347,14 +2838,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Title: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle aute irure dolor in reprehenderit in voluptate velit esse cillum
+          Subtitle: Aute irure dolor in reprehenderit in voluptate velit esse cillum
         </div>
         
         
@@ -2379,14 +2870,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Very Long Title perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+          Very long title: Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Very Long Subtitle enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+          Very long subtitle: Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
         </div>
         
         
@@ -2411,14 +2902,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title iusto odio dignissimos ducimus
+          Title: Iusto odio dignissimos ducimus
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle lorem ipsum dolor sit amet
+          Subtitle: Lorem ipsum dolor sit amet
         </div>
         
         
@@ -2437,7 +2928,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
   
 
   <h4>
-    Line Tile - Floating Behaviour, Compact Mode
+    Link tile: Floating behaviour in compact mode
   </h4>
   
 
@@ -2461,14 +2952,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title
+          Title
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle
+          Subtitle
         </div>
         
         
@@ -2493,14 +2984,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title very very very very very very long text
+          Title with very very very very very very long text
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle very very very very very very long text
+          Subtitle with very very very very very very long text
         </div>
         
         
@@ -2525,14 +3016,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title
+          Title
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle
+          Subtitle
         </div>
         
         
@@ -2557,14 +3048,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Title: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle aute irure dolor in reprehenderit in voluptate velit esse cillum
+          Subtitle: Aute irure dolor in reprehenderit in voluptate velit esse cillum
         </div>
         
         
@@ -2589,14 +3080,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title perspiciatis unde omnis iste natus error sit voluptatem
+          Title: Perspiciatis unde omnis iste natus error sit voluptatem
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle enim ipsam voluptatem
+          Subtitle: Enim ipsam voluptatem
         </div>
         
         
@@ -2621,14 +3112,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title iusto odio dignissimos ducimus
+          Title: Iusto odio dignissimos ducimus
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle lorem ipsum dolor sit amet
+          Subtitle: Lorem ipsum dolor sit amet
         </div>
         
         
@@ -2647,7 +3138,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
   
 
   <h4>
-    Line Tile - List Behaviour, Compact Mode
+    Link tile: List behaviour in compact mode
   </h4>
   
 
@@ -2671,14 +3162,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title
+          Title
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle
+          Subtitle
         </div>
         
         
@@ -2703,14 +3194,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Title: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle aute irure dolor in reprehenderit in voluptate velit esse cillum
+          Subtitle: Aute irure dolor in reprehenderit in voluptate velit esse cillum
         </div>
         
         
@@ -2735,14 +3226,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Very Long Title perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+          Very long title: Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Very Long Subtitle enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+          Very long subtitle: Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
         </div>
         
         
@@ -2767,14 +3258,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title praesentium voluptatum deleniti atque
+          Title: Praesentium voluptatum deleniti atque
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle aute irure dolor in reprehenderit
+          Subtitle: Aute irure dolor in reprehenderit
         </div>
         
         
@@ -2793,7 +3284,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
   
 
   <h4>
-    Line Tile - Floating Behaviour, Cozy Mode, With Badge
+    Link tile: Floating behaviour in cozy mode (with badge)
   </h4>
   
 
@@ -2829,7 +3320,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
           <div
             class="fd-tile__title"
           >
-            Line Tile Title
+            Title
           </div>
           
             
@@ -2839,7 +3330,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle
+          Subtitle
         </div>
         
         
@@ -2876,7 +3367,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
           <div
             class="fd-tile__title"
           >
-            Line Tile Title very very very very very very long text
+            Title with very very very very very very long text
           </div>
           
             
@@ -2886,7 +3377,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle very very very very very very long text
+          Subtitle with very very very very very very long text
         </div>
         
         
@@ -2923,7 +3414,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
           <div
             class="fd-tile__title"
           >
-            Line Tile Title
+            Title
           </div>
           
             
@@ -2933,7 +3424,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle
+          Subtitle
         </div>
         
         
@@ -2970,7 +3461,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
           <div
             class="fd-tile__title"
           >
-            Line Tile Title sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Title: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
           
             
@@ -2980,7 +3471,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle aute irure dolor in reprehenderit in voluptate velit esse cillum
+          Subtitle: Aute irure dolor in reprehenderit in voluptate velit esse cillum
         </div>
         
         
@@ -3017,7 +3508,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
           <div
             class="fd-tile__title"
           >
-            Line Tile Title
+            Title
           </div>
           
             
@@ -3027,7 +3518,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle
+          Subtitle
         </div>
         
         
@@ -3064,7 +3555,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
           <div
             class="fd-tile__title"
           >
-            Line Tile Title perspiciatis unde omnis iste natus error
+            Title: Perspiciatis unde omnis iste natus error
           </div>
           
             
@@ -3074,7 +3565,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle enim ipsam voluptatem quia voluptas
+          Subtitle: Enim ipsam voluptatem quia voluptas
         </div>
         
         
@@ -3111,7 +3602,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
           <div
             class="fd-tile__title"
           >
-            Line Tile Title accusamus dignissimos ducimus
+            Title: Accusamus dignissimos ducimus
           </div>
           
             
@@ -3121,7 +3612,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle facilis distinctio
+          Subtitle: Facilis distinctio
         </div>
         
         
@@ -3140,7 +3631,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
   
 
   <h4>
-    Line Tile - List Behaviour, Cozy Mode, With Badge
+    Link tile: List behaviour in cozy mode (with badge)
   </h4>
   
 
@@ -3176,7 +3667,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
           <div
             class="fd-tile__title"
           >
-            Line Tile Title
+            Title
           </div>
           
             
@@ -3186,7 +3677,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle
+          Subtitle
         </div>
         
         
@@ -3223,7 +3714,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
           <div
             class="fd-tile__title"
           >
-            Line Tile Title sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Title: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
           
             
@@ -3233,7 +3724,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle aute irure dolor in reprehenderit in voluptate velit esse cillum
+          Subtitle: Aute irure dolor in reprehenderit in voluptate velit esse cillum
         </div>
         
         
@@ -3270,7 +3761,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
           <div
             class="fd-tile__title"
           >
-            Line Tile Very Long Title perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+            Very long title: Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
           </div>
           
             
@@ -3280,7 +3771,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Very Long Subtitle enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+          Very long subtitle: Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
         </div>
         
         
@@ -3317,7 +3808,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
           <div
             class="fd-tile__title"
           >
-            Line Tile Title accusamus et iusto odio dignissimos ducimus
+            Title: Accusamus et iusto odio dignissimos ducimus
           </div>
           
             
@@ -3327,7 +3818,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle facilis est et expedita distinctio
+          Subtitle: Facilis est et expedita distinctio
         </div>
         
         
@@ -3364,7 +3855,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
           <div
             class="fd-tile__title"
           >
-            Line Tile Title iusto odio dignissimos ducimus
+            Title: Iusto odio dignissimos ducimus
           </div>
           
             
@@ -3374,7 +3865,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle lorem ipsum dolor sit amet
+          Subtitle: Lorem ipsum dolor sit amet
         </div>
         
         
@@ -3411,7 +3902,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
           <div
             class="fd-tile__title"
           >
-            Line Tile Title praesentium voluptatum deleniti atque
+            Title: Praesentium voluptatum deleniti atque
           </div>
           
             
@@ -3421,7 +3912,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle aute irure dolor in reprehenderit
+          Subtitle: Aute irure dolor in reprehenderit
         </div>
         
         
@@ -3440,7 +3931,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
   
 
   <h4>
-    Line Tile - Floating Behaviour, Cozy and Action Mode
+    Link tile: Floating behaviour in cozy and action mode
   </h4>
   
 
@@ -3464,14 +3955,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title
+          Title
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle
+          Subtitle
         </div>
         
         
@@ -3532,14 +4023,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title very very very very very very long text
+          Title with very very very very very very long text
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle very very very very very very long text
+          Subtitle with very very very very very very long text
         </div>
         
         
@@ -3603,14 +4094,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title
+          Title
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle
+          Subtitle
         </div>
         
         
@@ -3672,14 +4163,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Title: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle aute irure dolor in reprehenderit in voluptate velit esse cillum
+          Subtitle: Aute irure dolor in reprehenderit in voluptate velit esse cillum
         </div>
         
         
@@ -3741,14 +4232,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Disabled Line Tile Title perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+          Disabled title: Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle enim ipsam voluptatem quia
+          Subtitle: Enim ipsam voluptatem quia
         </div>
         
         
@@ -3810,14 +4301,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title iusto odio dignissimos ducimus
+          Title: Iusto odio dignissimos ducimus
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle lorem ipsum dolor sit amet
+          Subtitle: Lorem ipsum dolor sit amet
         </div>
         
         
@@ -3873,7 +4364,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
   
 
   <h4>
-    Line Tile - List Behaviour, Cozy and Action Mode
+    Link tile: List behaviour in cozy and action mode
   </h4>
   
 
@@ -3897,14 +4388,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title
+          Title
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle
+          Subtitle
         </div>
         
         
@@ -3966,14 +4457,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title very very very very very very long text
+          Title with very very very very very very long text
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle very very very very very very long text
+          Subtitle with very very very very very very long text
         </div>
         
         
@@ -4035,14 +4526,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title
+          Title
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle
+          Subtitle
         </div>
         
         
@@ -4104,14 +4595,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Disabled Line Tile Title sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Disabled title: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle aute irure dolor in reprehenderit in voluptate velit esse cillum
+          Subtitle: Aute irure dolor in reprehenderit in voluptate velit esse cillum
         </div>
         
         
@@ -4175,14 +4666,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Very Long Title perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+          Very long title: Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Very Long Subtitle enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+          Very long subtitle: Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
         </div>
         
         
@@ -4246,14 +4737,14 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Line Tile Title iusto odio dignissimos ducimus
+          Title: Iusto odio dignissimos ducimus
         </div>
         
             
         <div
           class="fd-tile__subtitle"
         >
-          Line Tile Subtitle lorem ipsum dolor sit amet
+          Subtitle: Lorem ipsum dolor sit amet
         </div>
         
         
@@ -4306,7 +4797,7 @@ exports[`Storyshots Components/Tile/Specific Line Tile 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Tile/Specific Slide Tile 1`] = `
+exports[`Storyshots Components/Tile/Specific Slide tile 1`] = `
 <div
   class="fddocs-container"
 >
@@ -4321,7 +4812,7 @@ exports[`Storyshots Components/Tile/Specific Slide Tile 1`] = `
         
     <div
       class="fd-tile__background-img"
-      style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
+      style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png')"
     />
     
         
@@ -4421,7 +4912,7 @@ exports[`Storyshots Components/Tile/Specific Slide Tile 1`] = `
         
     <div
       class="fd-tile__background-img"
-      style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
+      style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png')"
     />
     
         
@@ -4521,7 +5012,7 @@ exports[`Storyshots Components/Tile/Specific Slide Tile 1`] = `
         
     <div
       class="fd-tile__background-img"
-      style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
+      style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png')"
     />
     
         
@@ -4544,7 +5035,7 @@ exports[`Storyshots Components/Tile/Specific Slide Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe
+          Wind Map: Monitoring Real-Time and Forecasted Wind Conditions Across the Globe
         </div>
         
                 
@@ -4631,7 +5122,7 @@ exports[`Storyshots Components/Tile/Specific Slide Tile 1`] = `
         
     <div
       class="fd-tile__background-img"
-      style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
+      style="background-image: url('https://ui5.sap.com/test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png')"
     />
     
         
@@ -4654,498 +5145,7 @@ exports[`Storyshots Components/Tile/Specific Slide Tile 1`] = `
         <div
           class="fd-tile__title"
         >
-          Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe
-        </div>
-        
-                
-        <div
-          class="fd-tile__subtitle"
-        >
-          SAP News
-        </div>
-        
-            
-      </div>
-      
-            
-      <div
-        class="fd-tile__footer"
-      >
-        
-                
-        <span
-          class="fd-tile__footer-text"
-        >
-          May 14, 2020
-        </span>
-        
-            
-      </div>
-      
-            
-      <div
-        class="fd-tile__page-indicator"
-      >
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot fd-tile__dot--active"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-            
-      </div>
-      
-        
-    </div>
-    
-    
-  </div>
-  
-
-</div>
-`;
-
-exports[`Storyshots Components/Tile/Specific Tile In Action Mode 1`] = `
-<div
-  class="fddocs-container"
->
-  
-    
-  <div
-    class="fd-tile fd-tile--launch fd-tile--action"
-    role="button"
-    tabindex="0"
-  >
-    
-        
-    <div
-      class="fd-tile__overlay"
-    />
-    
-        
-    <button
-      aria-label="close button"
-      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-    >
-      
-                    
-      <i
-        class="sap-icon--decline"
-        role="presentation"
-      />
-      
-                
-    </button>
-    <button
-      aria-label="indicator button"
-      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
-      tabindex="-1"
-    >
-      
-                    
-      <i
-        class="sap-icon--overflow"
-        role="presentation"
-      />
-      
-                
-    </button>
-    
-        
-    <div
-      class="fd-tile__header"
-    >
-      
-            
-      <div
-        class="fd-tile__title"
-      >
-        Launch Tile (Profile) Title Text
-      </div>
-      
-            
-      <div
-        class="fd-tile__subtitle"
-      >
-        Launch Tile Subtitle
-      </div>
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-tile__content"
-    >
-      
-            
-      <span
-        aria-label="Profile Image"
-        class="fd-tile__profile-img"
-        role="presentation"
-        style="background-image: url('assets/images/avatars/2.svg')"
-      />
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-tile__footer"
-    >
-      
-            
-      <span
-        class="fd-tile__footer-text"
-      >
-        Footer Text
-      </span>
-      
-        
-    </div>
-    
-    
-  </div>
-  
-    
-  <div
-    class="fd-tile fd-tile--launch fd-tile--s fd-tile--action"
-    role="button"
-    tabindex="0"
-  >
-    
-        
-    <div
-      class="fd-tile__overlay"
-    />
-    
-        
-    <button
-      aria-label="close button"
-      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-    >
-      
-                    
-      <i
-        class="sap-icon--decline"
-        role="presentation"
-      />
-      
-                
-    </button>
-    <button
-      aria-label="indicator button"
-      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
-      tabindex="-1"
-    >
-      
-                    
-      <i
-        class="sap-icon--overflow"
-        role="presentation"
-      />
-      
-                
-    </button>
-    
-        
-    <div
-      class="fd-tile__header"
-    >
-      
-            
-      <div
-        class="fd-tile__title"
-      >
-        Launch Tile (Profile) Title Text
-      </div>
-      
-            
-      <div
-        class="fd-tile__subtitle"
-      >
-        Launch Tile Subtitle
-      </div>
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-tile__content"
-    >
-      
-            
-      <span
-        aria-label="Profile Image"
-        class="fd-tile__profile-img"
-        role="presentation"
-        style="background-image: url('assets/images/avatars/2.svg')"
-      />
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-tile__footer"
-    >
-      
-            
-      <span
-        class="fd-tile__footer-text"
-      >
-        Unit, Notification
-      </span>
-      
-        
-    </div>
-    
-    
-  </div>
-  
-    
-  <div
-    class="fd-tile fd-tile--double fd-tile--slide fd-tile--action"
-    role="button"
-    tabindex="0"
-  >
-    
-        
-    <div
-      class="fd-tile__background-img"
-      style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
-    />
-    
-        
-    <div
-      class="fd-tile__overlay"
-    />
-    
-        
-    <button
-      aria-label="toggle button"
-      class="fd-tile__toggle fd-tile__toggle--pause"
-    />
-    
-        
-    <button
-      aria-label="close button"
-      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-    >
-      
-                    
-      <i
-        class="sap-icon--decline"
-        role="presentation"
-      />
-      
-                
-    </button>
-    <button
-      aria-label="indicator button"
-      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
-      tabindex="-1"
-    >
-      
-                    
-      <i
-        class="sap-icon--overflow"
-        role="presentation"
-      />
-      
-                
-    </button>
-    
-        
-    <div
-      class="fd-tile__container"
-    >
-      
-            
-      <div
-        class="fd-tile__header"
-      >
-        
-                
-        <div
-          class="fd-tile__title"
-        >
-          Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe
-        </div>
-        
-                
-        <div
-          class="fd-tile__subtitle"
-        >
-          SAP News
-        </div>
-        
-            
-      </div>
-      
-            
-      <div
-        class="fd-tile__footer"
-      >
-        
-                
-        <span
-          class="fd-tile__footer-text"
-        >
-          May 14, 2020
-        </span>
-        
-            
-      </div>
-      
-            
-      <div
-        class="fd-tile__page-indicator"
-      >
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot fd-tile__dot--active"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-            
-      </div>
-      
-        
-    </div>
-    
-    
-  </div>
-  
-    
-  <div
-    class="fd-tile fd-tile--double fd-tile--s fd-tile--slide fd-tile--action"
-    role="button"
-    tabindex="0"
-  >
-    
-        
-    <div
-      class="fd-tile__background-img"
-      style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
-    />
-    
-        
-    <div
-      class="fd-tile__overlay"
-    />
-    
-        
-    <button
-      aria-label="toggle button"
-      class="fd-tile__toggle fd-tile__toggle--pause"
-    />
-    
-        
-    <button
-      aria-label="close button"
-      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-    >
-      
-                    
-      <i
-        class="sap-icon--decline"
-        role="presentation"
-      />
-      
-                
-    </button>
-    <button
-      aria-label="indicator button"
-      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
-      tabindex="-1"
-    >
-      
-                    
-      <i
-        class="sap-icon--overflow"
-        role="presentation"
-      />
-      
-                
-    </button>
-    
-        
-    <div
-      class="fd-tile__container"
-    >
-      
-            
-      <div
-        class="fd-tile__header"
-      >
-        
-                
-        <div
-          class="fd-tile__title"
-        >
-          Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe
+          Wind Map: Monitoring Real-Time and Forecasted Wind Conditions Across the Globe
         </div>
         
                 
