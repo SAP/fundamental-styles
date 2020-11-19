@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.5...v0.13.1-rc.6) (2020-11-19)
+
+
+### Features
+
+* introduce Text component ([#1804](https://github.com/SAP/fundamental-styles/issues/1804)) ([4a2cdb0](https://github.com/SAP/fundamental-styles/commit/4a2cdb0578daa1ff7704ac6ab42c7e998ea5a49e))
+
 ### [0.13.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.4...v0.13.1-rc.5) (2020-11-18)
 
 
