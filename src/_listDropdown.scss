@@ -100,7 +100,7 @@
   &--dropdown,
   &--multi-input {
     display: block;
-    min-width: 5rem;
+    min-width: 7rem;
     max-width: 37.5rem;
 
     .#{$block}__item {
@@ -135,6 +135,7 @@
     .#{$block}__secondary {
       width: auto;
       max-width: 15rem;
+      display: contents;
     }
 
     .#{$block}__icon {
