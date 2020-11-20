@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.6...v0.13.1-rc.7) (2020-11-20)
+
+
+### Bug Fixes
+
+* replace fade functions ([#1899](https://github.com/SAP/fundamental-styles/issues/1899)) ([d126bc5](https://github.com/SAP/fundamental-styles/commit/d126bc5171e277d5bfd171df8c07e35755e2394c))
+
 ### [0.13.1-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.5...v0.13.1-rc.6) (2020-11-19)
 
 
