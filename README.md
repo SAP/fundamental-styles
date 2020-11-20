@@ -6,6 +6,10 @@
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP/fundamental-styles)](https://api.reuse.software/info/github.com/SAP/fundamental-styles)
 [![Storybook](https://raw.githubusercontent.com/storybookjs/brand/master/badge/badge-storybook.svg)](https://master--5f85e3904b19d600221872af.chromatic.com)
 
+<a href="https://www.netlify.com">
+  <img src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Deploys by Netlify" />
+</a>
+
 ## What is Fundamental Library Styles?
 
 Fundamental Library Styles is a light-weight presentation layer that can be used with your UI framework of choice (e.g. Angular, React, Vue, etc.). With Fundamental Library Styles, library of stylesheets and HTML tags, developers can build consistent Fiori apps in any web-based technology.
