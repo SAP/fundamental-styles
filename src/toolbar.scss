@@ -32,11 +32,10 @@ $title-toolbar-height: 2.75rem;
 }
 
 @mixin toolbarInfo() {
-  // no contrast function color: contrast(@sapUiInfobarBackground, @ sapUiBaseText , @ sapUiContentContrastTextColor , @sapUiContentContrastTextThreshold);
-  $active-color: white;
+  $active-color: var(--sapInfobar__TextColor);
 
-  // no contrast function: background: darken(@sapUiListBackground, 10);
-  background-color: var(--sapBackgroundColor);
+  background-color: var(--sapInfobar_NonInteractive_Background);
+  color: var(--sapList_TextColor);
 
   @include activeStyles() {
     background-color: var(--sapInfobar_Background);

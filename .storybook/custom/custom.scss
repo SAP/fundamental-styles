@@ -290,6 +290,10 @@ code.docs-code-grey {
   .fd-message-box {
     position: static;
     background-color: transparent;
+
+    &::before {
+      background-color: transparent;
+    }
   }
 
   &.fd-dialog__content,
