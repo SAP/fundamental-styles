@@ -72,8 +72,8 @@ export const globalTypes = {
     toolbar: {
       icon: 'paintbrush',
       items: [
-        { value: 'sap_fiori_3', title: 'Light' },
-        { value: 'sap_fiori_3_dark', title: 'Dark' },
+        { value: 'sap_fiori_3', title: 'Quartz Light' },
+        { value: 'sap_fiori_3_dark', title: 'Quartz Dark' },
         { value: 'sap_fiori_3_light_dark', title: 'Light Dark' },
         { value: 'sap_fiori_3_hcw', title: 'High Contrast White' },
         { value: 'sap_fiori_3_hcb', title: 'High Contrast Black' },
