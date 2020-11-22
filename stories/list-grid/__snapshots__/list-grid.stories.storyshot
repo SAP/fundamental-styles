@@ -540,6 +540,7 @@ exports[`Storyshots Components/Grid List "More" Button 1`] = `
                 
         <div
           class="fd-grid-list__more"
+          role="button"
           tabindex="0"
         >
           

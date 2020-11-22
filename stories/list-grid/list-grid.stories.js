@@ -1893,7 +1893,7 @@ export const more = () => `<div class="fd-grid-list">
 
         <div class="fd-row">
             <div class="fd-col fd-col--12">
-                <div tabindex="0" class="fd-grid-list__more">
+                <div tabindex="0" class="fd-grid-list__more" role="button">
                     <h5 class="fd-title fd-title--h6 fd-grid-list__more-title">More</h5>
                     <p class="fd-grid-list__more-description">[ 5 / 10 ]</p>
                 </div>
