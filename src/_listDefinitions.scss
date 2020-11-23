@@ -40,6 +40,8 @@ $fd-list-navigation-navigator-bar-right: inset -0.1875rem 0 0 0 var(--sapSelecte
 $fd-list-navigation-navigator-bar-left: inset 0.1875rem 0 0 0 var(--sapSelectedColor);
 $fd-list-navigation-indicator-width: 2.75rem !default;
 
+$fd-list-item-counter-spacing: 1rem !default;
+
 $semantic-color: (
   "neutral": ("color": var(--sapNeutralTextColor)),
   "positive": ("color": var(--sapPositiveTextColor)),

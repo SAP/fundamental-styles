@@ -222,6 +222,38 @@ secondaryData.parameters = {
     }
 };
 
+export const itemCounter = () => `<ul class="fd-list" role="list">
+  <li role="listitem" tabindex="0" class="fd-list__item">
+      <span class="fd-list__title">List item 1</span>
+      <span class="fd-list__item-counter">12345</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+      <span class="fd-list__title">List item 2</span>
+      <span class="fd-list__item-counter">12345</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+      <i role="presentation" class="fd-list__icon sap-icon--lightbulb"></i>
+      <span class="fd-list__title">List item 3</span>
+      <span class="fd-list__item-counter">12345</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+      <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
+      <span class="fd-list__title">List item 4</span>
+      <span class="fd-list__item-counter">12345</span>
+  </li>
+</ul>
+`;
+
+itemCounter.storyName = 'Item Counter';
+
+itemCounter.parameters = {
+    docs: {
+        iframeHeight: 210,
+        storyDescription: `The item counter is vertically aligned within the list item, to the right. The maximum number of digits is 5. In case of more digits, the formatting and the transformation is left to the applications. It's recommended to avoid combining item counter to other list variations and status texts.
+        `
+    }
+};
+
 export const icons = () => `<ul class="fd-list" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
