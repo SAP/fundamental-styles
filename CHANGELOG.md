@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.11...v0.13.1-rc.12) (2020-11-23)
+
+
+### Features
+
+* add Item Counter to List component ([#1897](https://github.com/SAP/fundamental-styles/issues/1897)) ([0ea0bc2](https://github.com/SAP/fundamental-styles/commit/0ea0bc2643d7e4bc41abfa2104305ff51fb3be6f))
+
 ### [0.13.1-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.10...v0.13.1-rc.11) (2020-11-23)
 
 ### [0.13.1-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.9...v0.13.1-rc.10) (2020-11-22)
