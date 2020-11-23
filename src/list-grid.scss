@@ -253,6 +253,17 @@ $block: #{$fd-namespace}-grid-list;
     @include fd-fiori-focus();
   }
 
+  &__filter,
+  &__filter-button {
+    color: #fff !important;
+  }
+
+  &__filter-button {
+    @include fd-hover() {
+      color: var(--sapButton_TextColor) !important;
+    }
+  }
+
   &__more {
     @include fd-reset();
     @include fd-fiori-focus();

@@ -1630,7 +1630,7 @@ export const filterInfobar = () => `<div class="fd-grid-list">
                 <div class="fd-toolbar fd-toolbar--info fd-toolbar--active fd-grid-list__filter" tabindex="0">
                     Filtered by: Company (Company A, Company B)
                     <span class="fd-toolbar__spacer"></span>
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Cancel">
+                    <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__filter-button" aria-label="Cancel">
                         <i class="sap-icon--decline"></i>
                     </button>
                 </div>
@@ -1893,7 +1893,7 @@ export const more = () => `<div class="fd-grid-list">
 
         <div class="fd-row">
             <div class="fd-col fd-col--12">
-                <div tabindex="0" class="fd-grid-list__more" role="button">
+                <div tabindex="0" role="button" class="fd-grid-list__more">
                     <h5 class="fd-title fd-title--h6 fd-grid-list__more-title">More</h5>
                     <p class="fd-grid-list__more-description">[ 5 / 10 ]</p>
                 </div>
