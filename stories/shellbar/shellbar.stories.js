@@ -2,41 +2,29 @@ export default {
     title: 'Components/Shellbar',
     parameters: {
         tags: ['f3', 'a11y', 'theme'],
-        description: `The shellbar offers consistent, responsive navigation across all products and applications.
-                Includes support for branding, product navigation, search, notifications, user settings, and CoPilot. This is a composite component comprised of mandatory and optional elements.
-                ##How it works    
+        description: `
+The shellbar offers consistent, responsive navigation across all products and applications. It also includes support for branding, product navigation, search, notifications, user settings, and CoPilot. This is a composite component comprised of mandatory and optional elements. Shellbar should always be placed inside the shell layout container. As mentioned early, it is completely responsive by default with margins and padding already built in. 
+        
+**Shellbar has three primary container groups:**
 
-- The shellbar should be placed inside the shell layout container.
+-	Product: for branding and product elements.
+-	CoPilot: reseved for the CoPilot element.
+-	Actions: for search, product links, and user settings.
 
-- The shellbar is fluid and responsive by default with proper margins and padding built in.
-
-- The shellbar has three primary containers groups —<code>product</code> for branding and product elements, <code>copilot</code> reserved for CoPilot, and <code>actions</code> for search, product links, and user settings.
-
-- The shellbar actions are duplicated into the overflow menu on mobile screens.
-
-Moving from left to right, the shellbar content will become more variable based on the product needs. See below for more details about child elements.
-
-##Supported elements
-
-The shellbar handles layout and has some built-in elements but relies on standalone components for much of its content.
-
-* <code>.fd-shellbar__logo</code> (required) for company branding. Use <code>--image-replaced<code> modifier when using CSS to apply the logo.
-
-* <code>.fd-shellbar__title</code> (required) displays the current application.
-
-* <code>.fd-shellbar__subtitle</code> (optional) displays an application context. _This should be used rarely._
-
-* <code>.fd-shellbar__action</code> (required) container for each product action and link.
-
-* <code>.fd-shellbar__action--mobile</code> (optional) for product actions only visible on small shellbar (--s).
-
-* <code>.fd-shellbar__action--desktop</code> (optional) for product actions only visible on desktop screens (--m/l/xl).
-
-* <code>.fd-avatar</code> (required) for user settings and application meta links such as Sign Out. [Accent colors between 11-15]({{site.baseurl}}/foundation/colors.html#accent) can be randomly assigned to the background.
-
-* <code>.fd-product-switch</code> (optional) for navigating between products.
-
-Here are examples of various configurations.
+##Elements
+The shellbar supports layout functionality and has some built-in elements, but relies on standalone components for most of its content.
+        
+Elements | Class | Description
+:------------ | :------- | :------------
+Logo (Mandatory) | \`fd-shellbar__logo\` | For company branding, add the \`--image-replaced\` modifier class when using CSS to display the logo.
+Title (Mandatory) | \`fd-shellbar__title\` | Displays the current application.
+Subtitle | \`fd-shellbar__subtitle\` | Displays an application context. Subtitles should seldomly be used.
+Action button (Mandatory) | \`fd-shellbar__action\` | A container for each product action and link.
+Mobile action button (Optional) | \`fd-shellbar__action--mobile\` | For product actions only, visible on small shellbar (--s).
+Desktop action button (Optional) | \`fd-shellbar__action--desktop\` | For product actions only, visible on desktop screens (--m/l/xl).
+Avatar (Mandatory) | \`fd-avatar\` | For user settings and application meta links such as _Sign Out_. Accent colors between 11-15 can be randomly assigned to the background.
+Product Switch (Optional) | \`fd-product-switch\` | For navigating between products.
+        
 
 `,
         components: ['button', 'input-group', 'icon', 'menu', 'avatar', 'input-group', 'popover', 'product-switch', 'shellbar', 'counter']
