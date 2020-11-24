@@ -27,7 +27,7 @@ exports[`Storyshots Components/Message Box Default 1`] = `
           
                     
           <h2
-            class="fd-title fd-title--h5"
+            class="fd-title fd-title--h5 fd-message__title"
           >
             Title
           </h2>
@@ -112,7 +112,7 @@ exports[`Storyshots Components/Message Box No icon 1`] = `
   
 
   <div
-    class="fd-message-box-docs-static fd-message-box fd-message-box--no-icon fd-message-box--success fd-message-box--active"
+    class="fd-message-box-docs-static fd-message-box fd-message-box--success fd-message-box--no-icon fd-message-box--active"
   >
     
     
@@ -137,7 +137,7 @@ exports[`Storyshots Components/Message Box No icon 1`] = `
             
                     
             <h2
-              class="fd-title fd-title--h5"
+              class="fd-title fd-title--h5 fd-message__title"
             >
               Success
             </h2>
@@ -250,7 +250,7 @@ exports[`Storyshots Components/Message Box No icon 1`] = `
             
                     
             <h2
-              class="fd-title fd-title--h5"
+              class="fd-title fd-title--h5 fd-message__title"
             >
               Error
             </h2>
@@ -346,7 +346,7 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
             
                     
             <h2
-              class="fd-title fd-title--h5"
+              class="fd-title fd-title--h5 fd-message__title"
             >
               Information
             </h2>
@@ -459,7 +459,7 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
             
                     
             <h2
-              class="fd-title fd-title--h5"
+              class="fd-title fd-title--h5 fd-message__title"
             >
               Error
             </h2>
@@ -556,7 +556,7 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
             
                     
             <h2
-              class="fd-title fd-title--h5"
+              class="fd-title fd-title--h5 fd-message__title"
             >
               Success
             </h2>
@@ -652,7 +652,7 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
             
                     
             <h2
-              class="fd-title fd-title--h5"
+              class="fd-title fd-title--h5 fd-message__title"
             >
               Warning
             </h2>
@@ -746,7 +746,7 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
             
                     
             <h2
-              class="fd-title fd-title--h5"
+              class="fd-title fd-title--h5 fd-message__title"
             >
               Confirmation
             </h2>
@@ -859,7 +859,7 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
             
                     
             <h2
-              class="fd-title fd-title--h5"
+              class="fd-title fd-title--h5 fd-message__title"
             >
               Error
             </h2>
@@ -955,7 +955,7 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
             
                     
             <h2
-              class="fd-title fd-title--h5"
+              class="fd-title fd-title--h5 fd-message__title"
             >
               Success
             </h2>
@@ -1051,7 +1051,7 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
             
                     
             <h2
-              class="fd-title fd-title--h5"
+              class="fd-title fd-title--h5 fd-message__title"
             >
               Warning
             </h2>
@@ -1147,7 +1147,7 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
             
                     
             <h2
-              class="fd-title fd-title--h5"
+              class="fd-title fd-title--h5 fd-message__title"
             >
               Information
             </h2>
