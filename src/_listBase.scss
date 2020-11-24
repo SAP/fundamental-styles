@@ -165,6 +165,14 @@
     color: var(--sapList_FooterTextColor);
     font-size: $fd-list-normal-font-size;
     height: 2rem;
+
+    &--right {
+      justify-content: flex-end;
+    }
+
+    &--left {
+      justify-content: flex-start;
+    }
   }
 
   &__bold {
