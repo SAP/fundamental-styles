@@ -1448,7 +1448,7 @@ exports[`Storyshots Patterns/Multi ComboBox Grouping 1`] = `
            
         <label
           class="fd-list__group-header"
-          id="Fruits"
+          id="selectMultipleFruitsLabel"
         >
           
                 Fruits
@@ -1457,7 +1457,7 @@ exports[`Storyshots Patterns/Multi ComboBox Grouping 1`] = `
         
             
         <ul
-          aria-label="Fruits"
+          aria-labelledby="selectMultipleFruitsLabel"
           aria-multiselectable="true"
           class="fd-list fd-list--multi-input"
           role="listbox"
@@ -1690,7 +1690,7 @@ exports[`Storyshots Patterns/Multi ComboBox Grouping 1`] = `
         
             
         <ul
-          aria-label="selectMultipleVegsLabel"
+          aria-labelledby="selectMultipleVegsLabel"
           aria-multiselectable="true"
           class="fd-list fd-list--multi-input"
           role="listbox"

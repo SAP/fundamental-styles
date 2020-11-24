@@ -335,10 +335,10 @@ export const grouping = () => `<div style="height: 450px;">
         </div>
         <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4H8X34a">
         <div class="fd-popover__wrapper">
-           <label class="fd-list__group-header" id="Fruits">
+           <label class="fd-list__group-header" id="selectMultipleFruitsLabel">
                 Fruits
             </label>
-            <ul class="fd-list fd-list--multi-input" role="listbox" aria-multiselectable="true" aria-label="Fruits">
+            <ul class="fd-list fd-list--multi-input" role="listbox" aria-multiselectable="true" aria-labelledby="selectMultipleFruitsLabel">
                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
 					<div class="fd-form-item fd-list__form-item">
 						<input type="checkbox" class="fd-checkbox" id="Ai4ez625" checked aria-labelledby="Az0bg35">
@@ -379,7 +379,7 @@ export const grouping = () => `<div style="height: 450px;">
             <label class="fd-list__group-header" id="selectMultipleVegsLabel">
                 Vegetables
             </label>
-            <ul class="fd-list fd-list--multi-input" role="listbox" aria-multiselectable="true" aria-label="selectMultipleVegsLabel">
+            <ul class="fd-list fd-list--multi-input" role="listbox" aria-multiselectable="true" aria-labelledby="selectMultipleVegsLabel">
  				<li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
 					<div class="fd-form-item fd-list__form-item">
 						<input type="checkbox" class="fd-checkbox" id="Ai4ez630" checked aria-labelledby="Az0bg40">
