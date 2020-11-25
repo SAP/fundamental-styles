@@ -15,7 +15,6 @@ $cols: 11;
 
 @media (min-width: 0) {
   .#{$blockContainer}.#{$block}-container {
-    padding: 1rem;
     margin: 0 -0.25rem;
 
     & > .fd-row {
@@ -54,7 +53,14 @@ $cols: 11;
         .fd-form-label {
           display: inline-block;
           margin-right: 0;
+          padding-right: 0.5rem;
           padding-bottom: 0.125rem;
+
+          @include fd-rtl() {
+            padding-left: 0.5rem;
+            margin-left: 0;
+            padding-right: 0;
+          }
         }
 
         @for $n from 0 through $cols {
@@ -84,6 +90,13 @@ $cols: 11;
         .#{$blockRow} {
           margin: 0 -0.25rem;
         }
+      }
+
+      .#{$blockCol}__form-group {
+        padding: 1rem;
+      }
+      .#{$blockRow}__form-item {
+        flex-direction: row;
       }
     }
 
