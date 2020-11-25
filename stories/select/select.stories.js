@@ -1096,7 +1096,7 @@ readonly.parameters = {
     docs: {
         iframeHeight: 300,
         storyDescription: `
-?
+Select can be displayed as read-only, meaning the value in the input field cannot be changed via typing. To display select as read-only, add the \`.is-readonly\` class to the \`fd-select__control\` element.
         `
     }
 };
