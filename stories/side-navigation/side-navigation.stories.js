@@ -506,7 +506,7 @@ condensedStateCozy.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
-Side navigation can be displayed in a condensed cozy mode, showing only icons that represent the navigation links. To display a condensed side navigation, add the \`fd-side-nav--condensed\` modifier class to the main element.        
+Side navigation can be displayed in a condensed cozy mode, showing only icons that represent the navigation links. When the user selects an entry from the navigation, a **Popover** is displayed. The default size for the popover body is often longer than the text length. The length can be adjusted to match the text length by adding the \`fd-popover__body--dropdown-fill\` class to the \`fd-popover__body\` element. To display a condensed side navigation, add the \`fd-side-nav--condensed\` modifier class to the main element.        
         `
     }
 };
@@ -574,7 +574,7 @@ condensedStateCompact.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
-Side navigation can be displayed in a condensed compact mode, showing only icons that represent the navigation links. The default size for the popover body is often longer than the text length. The length can be adjusted to match the text length by adding the \`fd-popover__body--dropdown-fill\` class to the \`fd-popover__body\` element. To display a condensed side navigation, add the \` fd-side-nav--condensed\` modifier class to the main element.
+Side navigation can be displayed in a condensed compact mode, showing only icons that represent the navigation links. Similar to the condensed cozy mode, the default size for the popover body is often longer than the text length, and can be adjusted by adding the \`fd-popover__body--dropdown-fill\` class to the \`fd-popover__body\` element. To display a condensed side navigation, add the \` fd-side-nav--condensed\` modifier class to the main element.
 `
     }
 };
