@@ -1,0 +1,47 @@
+@import "./mixins";
+
+$block: #{$fd-namespace}-semantic-color;
+$information-text-color: var(--sapNeutralTextColor);
+$information-icon-color: var(--sapInformativeElementColor);
+$information-icon: "\e201";
+
+$icon-states: (
+  "question": ("iconColor": var(--sapNeutralElementColor), "icon": "\e1c4","textColor":var(--sapNeutralTextColor)),
+  "error": ("iconColor": var(--sapNegativeElementColor), "icon": "\e0b1","textColor":var(--sapNegativeTextColor)),
+  "success": ("iconColor": var(--sapPositiveElementColor), "icon": "\e203","textColor":var(--sapPositiveTextColor)),
+  "warning": ("iconColor": var(--sapCriticalElementColor), "icon": "\e201","textColor":var(--sapCriticalTextColor)),
+);
+
+.#{$block} {
+  @include fd-reset();
+
+  color: $information-text-color;
+
+  &__icon {
+    @include fd-reset();
+
+    font-style: normal;
+
+    @include fd-icon-base ("before") {
+      color: $information-icon-color;
+      content: $information-icon;
+    }
+
+    @each $set-name, $state-set in $icon-states {
+      &--#{$set-name} {
+        font-style: normal;
+
+        @include fd-icon-base ("before") {
+          color: map_get($state-set, "iconColor");
+          content: map_get($state-set, "icon");
+        }
+      }
+    }
+  }
+
+  @each $set-name, $state-set in $icon-states {
+    &--#{$set-name} {
+      color: map_get($state-set, "textColor");
+    }
+  }
+}

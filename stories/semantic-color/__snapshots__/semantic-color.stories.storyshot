@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Semantic Color Error 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Semantic Color Information 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Semantic Color Question 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Semantic Color Success 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Semantic Color Warning 1`] = `
+
+
+`;
