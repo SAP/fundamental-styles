@@ -2,20 +2,36 @@ export default {
     title: 'Components/Side Navigation',
     parameters: {
         description: `
-  The left navigation area can be used to display navigation structures with links that change the content in the main area. The side navigation consists of two container section:  the Main Navigation Section (top-aligned) with links used to navigate within the user’s current work context, and Utility Section (bottom-aligned) that contains links to additional information.
-  Each of the sections uses a Nested List to display the navigation items.`,
-        docs: {
-            iframeHeight: 400
-        },
+The side navigation area can be used to display navigation structures with up to two levels and contains links that change the content area. The side navigation consists of two container sections: the _main navigation section_ (top-aligned) with links used to navigate within the user’s current work context, and the _utility section_ (bottom-aligned) that contains links to additional information. Both of these sections use a nested list to display navigation items.
+
+##Usage      
+**Use the side navigation if:**
+
+- You need to display global navigation structures of up to two levels.
+- Your scenarios are in the tooling or administration space.
+- If you want the navigation links to contain dynamic content.
+        
+
+**Do not use the side navigation if:**
+
+- Your scenarios are not in the tooling or administration space.
+- You want the navigation links to open a new browser window.
+
+##States
+Side navigation can be viewed in three different states:
+
+- **Expanded:** everything is shown; icons and/or text.
+- **Condensed:** only icons are shown; text-only condensed state is not supported.
+- **Off-canvas:** side navigation is completely off-screen, and can be triggered via the menu icon in the tool header.
+
+**Note:** Depending on the device context, only two states are used per device. App developers can choose the default state for each device.
+
+        `,
+
         tags: ['f3', 'a11y', 'theme'],
         components: ['side-nav', 'button', 'icon', 'nested-list']
     }
 };
-
-/** Side Navigation with one level - text-only, cozy mode.
- * There is only one level of navigation; all further navigation is shown in the content area.
- * The lists in both sections (Main and Utility) should have the fd-nested-list--text-only modifier class.
- */
 
 export const cozy = () => `<div class="fd-side-nav">
     <a class="fd-side-nav__skip-link" href="#content">Skip navigation</a>
@@ -59,6 +75,17 @@ export const cozy = () => `<div class="fd-side-nav">
     </nav>
 </div>
 `;
+
+cozy.storyName = 'Cozy mode';
+
+cozy.parameters = {
+    docs: {
+        iframeHeight: 400,
+        storyDescription: `
+Side navigation can be displayed in cozy mode with one navigation level and text only. Because there is only one level of navigation, all further navigation is shown in the content area. The \`fd-nested-list--text-only\` modifier class should be added to the lists in both the main and utility sections.
+        `
+    }
+};
 
 export const cozyIcons = () => `<div class="fd-side-nav">
     <a class="fd-side-nav__skip-link" href="#content">Skip navigation</a>
@@ -109,14 +136,18 @@ export const cozyIcons = () => `<div class="fd-side-nav">
 </div>
 `;
 
+cozyIcons.storyName = 'Cozy with icons';
+
 cozyIcons.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'Side Navigation with one level - with icons, cozy mode.'
+        storyDescription: `
+Side navigation can be displayed with icons. Entries in the side navigation area can consist of text only or an icon with text. The use or non-use of icons must be consistent for all links on one level. Do not combine entries with and without icons on the same level. To display icons in list items, add the \`fd-nested-list__icon\` class within the list items.
+        `
     }
 };
 
-export const cozyMultiple = () => `<div class="fd-side-nav">
+export const cozyGrouping = () => `<div class="fd-side-nav">
     <a class="fd-side-nav__skip-link" href="#content">Skip navigation</a>
     <nav class="fd-side-nav__main-navigation" aria-label="Main Menu">
         <ul class="fd-nested-list fd-nested-list--text-only">
@@ -190,15 +221,13 @@ export const cozyMultiple = () => `<div class="fd-side-nav">
 </div>
 `;
 
-cozyMultiple.parameters = {
+cozyGrouping.storyName = 'Cozy grouping';
+
+cozyGrouping.parameters = {
     docs: {
         iframeHeight: 400,
         storyDescription: `
-Use this when there is more than one level of hierarchy in the left navigation.
-The entries on the first level are just group headers(don't trigger navigation themselves).
-It's recommended to use up to two levels of navigation. For more levels of navigation, use the content area.
-On expand, the <code>is-expanded</code> class should be propagated also to <code>__content</code> element. <code>fd-nested-list__button</code>
-is the element which triggers another level..
+Side navigation can be displayed with group headers that organize the navigation links, which is ideal for when there is more than one level of hierarchy. When they are grouped, the entries on the first level are just headers and don't trigger navigation themselves. It's recommended to use up to two levels of navigation, however; for more levels of navigation, use the content area. On expand, the \`is-expanded\` class should also be extended to the content element. To trigger another level, use the \`fd-nested-list__button\` element.
         `
     }
 };
@@ -298,10 +327,14 @@ export const complexCozySideNav = () => `<div class="fd-side-nav">
 </div>
 `;
 
+complexCozySideNav.storyName = 'Complex cozy';
+
 complexCozySideNav.parameters = {
     docs: {
         iframeHeight: 550,
-        storyDescription: 'Side navigation with 2 levels - with icons and group headers, cozy mode'
+        storyDescription: `
+Side navigation can display several different features such as icons, group headers, and two levels of navigation.
+        `
     }
 };
 
@@ -399,10 +432,14 @@ export const complexCompactSideNav = () => `<div class="fd-side-nav">
 </div>
 `;
 
+complexCompactSideNav.storyName = 'Complex compact';
+
 complexCompactSideNav.parameters = {
     docs: {
         iframeHeight: 550,
-        storyDescription: 'Side navigation with 2 levels - with icons and group headers, compact mode'
+        storyDescription: `
+Side navigation can be displayed in compact mode and can also display several features like icons, group headers, and two levels of navigation. Compact mode is best viewed from a large desktop screen.
+        `
     }
 };
 
@@ -463,12 +500,16 @@ export const condensedStateCozy = () => `<nav class="fd-side-nav fd-side-nav--co
 </nav>
 `;
 
+condensedStateCozy.storyName = 'Condensed cozy';
+
 condensedStateCozy.parameters = {
     docs: {
-        iframeHeight: 500
+        iframeHeight: 500,
+        storyDescription: `
+Side navigation can be displayed in a condensed cozy mode, showing only icons that represent the navigation links. To display a condensed side navigation, add the \`fd-side-nav--condensed\` modifier class to the main element.        
+        `
     }
 };
-
 
 export const condensedStateCompact = () => `<nav class="fd-side-nav fd-side-nav--condensed">
     <a class="fd-side-nav__skip-link" href="#content">Skip navigation</a>
@@ -527,12 +568,13 @@ export const condensedStateCompact = () => `<nav class="fd-side-nav fd-side-nav-
 </nav>
 `;
 
+condensedStateCompact.storyName = 'Condensed compact';
 
 condensedStateCompact.parameters = {
     docs: {
+        iframeHeight: 500,
         storyDescription: `
-The default size for the popover body is often longer than the text length. The length can be adjusted to match the text
-length by adding the <code>fd-popover__body--dropdown-fill</code> class to <code>fd-popover__body</code>.
+Side navigation can be displayed in a condensed compact mode, showing only icons that represent the navigation links. The default size for the popover body is often longer than the text length. The length can be adjusted to match the text length by adding the \`fd-popover__body--dropdown-fill\` class to the \`fd-popover__body\` element. To display a condensed side navigation, add the \` fd-side-nav--condensed\` modifier class to the main element.
 `
     }
 };
@@ -1199,7 +1241,6 @@ export const nestedListWithoutLinks = () => `<ul class="fd-nested-list fd-nested
     </li>
 </ul>
 `;
-
 
 nestedListWithoutLinks.parameters = {
     docs: {
