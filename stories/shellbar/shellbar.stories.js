@@ -8,7 +8,7 @@ The shellbar offers consistent, responsive navigation across all products and ap
 **Shellbar has three primary container groups:**
 
 -	Product: for branding and product elements.
--	CoPilot: reseved for the CoPilot element.
+-	[CoPilot](https://ux.wdf.sap.corp/conversational-ux/sap-copilot/): reseved for the CoPilot element.
 -	Actions: for search, product links, and user settings.
 
 ##Elements
