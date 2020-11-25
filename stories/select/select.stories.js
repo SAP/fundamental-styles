@@ -151,7 +151,7 @@ compact.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
-When in compact mode, select displays a dropdown menu that can contain long list items with text that wraps to the next line. The maximum width should be 37.5rem (600px) to avoid readability issues, unless the list contains more than 2 columns. If the list has 3 or more columns, the dropdown menu should not be limited to a max width. To display select in compact mode, add \`fd-select—compact\` to the main element.
+When in compact mode, select displays a dropdown menu that can contain long list items with text that wraps to the next line. The maximum width should be 37.5rem (600px) to avoid readability issues, unless the list contains more than 2 columns. If the list has 3 or more columns, the dropdown menu should not be limited to a max width. To display select in compact mode, add \`fd-select--compact\` to the main element.
         ` }
 };
 
