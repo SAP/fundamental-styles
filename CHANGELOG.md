@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.17...v0.13.1-rc.18) (2020-11-25)
+
+
+### Features
+
+* introduce Form Group Header to Form Group ([#1881](https://github.com/SAP/fundamental-styles/issues/1881)) ([2df0730](https://github.com/SAP/fundamental-styles/commit/2df07307a52e577a0d040526aaf9b165e15b2239))
+
 ### [0.13.1-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.16...v0.13.1-rc.17) (2020-11-25)
 
 ### [0.13.1-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.15...v0.13.1-rc.16) (2020-11-25)
