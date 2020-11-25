@@ -15,6 +15,7 @@ export default {
 - Users need to choose between two options, such as _On_ or _Off_ and _Yes_ or _No_. In this case, consider using a **Switch** instead.
 - Users need to pick one item from a very large set of options. In this case, consider using the **Combobox Input** instead.
 - Your use case requires all available options to be displayed right away, without any user interaction. In this case, consider using **radio buttons or a radio button group** instead.
+
 `,
         components: ['icon', 'popover', 'list', 'form-label', 'form-message', 'select', 'dialog', 'bar', 'button', 'icon', 'layout-grid']
     }
