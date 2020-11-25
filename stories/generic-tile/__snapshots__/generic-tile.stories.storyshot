@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Tiles Action mode 1`] = `
+exports[`Storyshots Components/Generic Tiles Action mode 1`] = `
 <div
   class="fddocs-container"
 >
@@ -491,7 +491,7 @@ exports[`Storyshots Components/Tiles Action mode 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tiles Badge tile 1`] = `
+exports[`Storyshots Components/Generic Tiles Badge tile 1`] = `
 <div
   class="fddocs-container"
 >
@@ -870,7 +870,7 @@ exports[`Storyshots Components/Tiles Badge tile 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tiles Columns 1`] = `
+exports[`Storyshots Components/Generic Tiles Columns 1`] = `
 <div
   class="fddocs-container"
 >
@@ -1139,7 +1139,7 @@ exports[`Storyshots Components/Tiles Columns 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tiles Feed tile 1`] = `
+exports[`Storyshots Components/Generic Tiles Feed tile 1`] = `
 <div
   class="fddocs-container"
 >
@@ -1364,7 +1364,7 @@ exports[`Storyshots Components/Tiles Feed tile 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tiles KPI tile 1`] = `
+exports[`Storyshots Components/Generic Tiles KPI tile 1`] = `
 <section>
   <h4>
     KPI tile with numeric content (size L)
@@ -2055,7 +2055,7 @@ exports[`Storyshots Components/Tiles KPI tile 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Tiles Launch tile 1`] = `
+exports[`Storyshots Components/Generic Tiles Launch tile 1`] = `
 <section>
   <h4>
     Launch tile with numeric content and launch icon
@@ -2774,7 +2774,7 @@ exports[`Storyshots Components/Tiles Launch tile 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Tiles Layout 1`] = `
+exports[`Storyshots Components/Generic Tiles Layout 1`] = `
 <div
   class="fddocs-container"
 >
@@ -2971,7 +2971,7 @@ exports[`Storyshots Components/Tiles Layout 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tiles Link tile 1`] = `
+exports[`Storyshots Components/Generic Tiles Link tile 1`] = `
 <section>
   <h4>
     Link tile: Floating behaviour in cozy mode
@@ -5263,7 +5263,7 @@ exports[`Storyshots Components/Tiles Link tile 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Tiles Sizes 1`] = `
+exports[`Storyshots Components/Generic Tiles Sizes 1`] = `
 <div
   class="fddocs-container"
 >
@@ -5328,7 +5328,7 @@ exports[`Storyshots Components/Tiles Sizes 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tiles Slide tile 1`] = `
+exports[`Storyshots Components/Generic Tiles Slide tile 1`] = `
 <div
   class="fddocs-container"
 >

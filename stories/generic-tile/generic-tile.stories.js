@@ -1,5 +1,5 @@
 export default {
-    title: 'Components/Tiles',
+    title: 'Components/Generic Tiles',
     parameters: {
         description: `
 The generic tile is a container that represents an app on the SAP Fiori launchpad home page. They can display types of content based on the data supplied from the app. In addition, they can contain an icon, information text, a title, KPIs, counters and charts. Tiles move to the next row if there is insufficient horizontal screen space to display them all.
