@@ -3,12 +3,11 @@ export default {
     parameters: {
         tags: ['f3', 'a11y', 'theme'],
         description: `
-The shellbar offers consistent, responsive navigation across all products and applications. It also includes support for branding, product navigation, search, notifications, user settings, and CoPilot. This is a composite component comprised of mandatory and optional elements. Shellbar should always be placed inside the shell layout container. As mentioned early, it is completely responsive by default with margins and padding already built in. 
+The shellbar offers consistent, responsive navigation across all products and applications. It also includes support for branding, product navigation, search, notifications, and user settings. This is a composite component comprised of mandatory and optional elements. Shellbar should always be placed inside the shell layout container. As mentioned earlier, it is completely responsive by default with margins and padding already built in. 
         
-**Shellbar has three primary container groups:**
+**Shellbar has two primary container groups:**
 
 -	Product: for branding and product elements.
--	[CoPilot](https://ux.wdf.sap.corp/conversational-ux/sap-copilot/): reseved for the CoPilot element.
 -	Actions: for search, product links, and user settings.
 
 ##Elements
