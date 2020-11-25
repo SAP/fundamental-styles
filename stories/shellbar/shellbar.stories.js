@@ -515,7 +515,7 @@ linksWithCollapsibleMenuSSize.storyName = 'Small';
 linksWithCollapsibleMenuSSize.parameters = {
     docs: {
         storyDescription: `
-The shellbar can be optimized for mobile and small tablet screens. To achieve this style, add the \`fd-shellbar—s\` modifier class to the main element. All actions expect the user menu should be collapsed, displaying an overflow button.
+The shellbar can be optimized for mobile and small tablet screens. To achieve this style, add the \`fd-shellbar--s\` modifier class to the main element. All actions except the user menu should be collapsed, displaying an overflow button.
         `
     }
 };
