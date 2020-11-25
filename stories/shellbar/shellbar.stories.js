@@ -2,42 +2,29 @@ export default {
     title: 'Components/Shellbar',
     parameters: {
         tags: ['f3', 'a11y', 'theme'],
-        description: `The shellbar offers consistent, responsive navigation across all products and applications.
-                Includes support for branding, product navigation, search, notifications, user settings, and CoPilot. This is a composite component comprised of mandatory and optional elements.
-                ##How it works    
+        description: `
+The shellbar offers consistent, responsive navigation across all products and applications. It also includes support for branding, product navigation, search, notifications, user settings, and CoPilot. This is a composite component comprised of mandatory and optional elements. Shellbar should always be placed inside the shell layout container. As mentioned early, it is completely responsive by default with margins and padding already built in. 
+        
+**Shellbar has three primary container groups:**
 
-- The shellbar should be placed inside the shell layout container.
+-	Product: for branding and product elements.
+-	CoPilot: reseved for the CoPilot element.
+-	Actions: for search, product links, and user settings.
 
-- The shellbar is fluid and responsive by default with proper margins and padding built in.
-
-- The shellbar has three primary containers groups —<code>product</code> for branding and product elements, <code>copilot</code> reserved for CoPilot, and <code>actions</code> for search, product links, and user settings.
-
-- The shellbar actions are duplicated into the overflow menu on mobile screens.
-
-Moving from left to right, the shellbar content will become more variable based on the product needs. See below for more details about child elements.
-
-##Supported elements
-
-The shellbar handles layout and has some built-in elements but relies on standalone components for much of its content.
-
-* <code>.fd-shellbar__logo</code> (required) for company branding. Use <code>--image-replaced<code> modifier when using CSS to apply the logo.
-
-* <code>.fd-shellbar__title</code> (required) displays the current application.
-
-* <code>.fd-shellbar__subtitle</code> (optional) displays an application context. _This should be used rarely._
-
-* <code>.fd-shellbar__action</code> (required) container for each product action and link.
-
-* <code>.fd-shellbar__action--mobile</code> (optional) for product actions only visible on small shellbar (--s).
-
-* <code>.fd-shellbar__action--desktop</code> (optional) for product actions only visible on desktop screens (--m/l/xl).
-
-* <code>.fd-avatar</code> (required) for user settings and application meta links such as Sign Out. [Accent colors between 11-15]({{site.baseurl}}/foundation/colors.html#accent) can be randomly assigned to the background.
-
-* <code>.fd-product-switch</code> (optional) for navigating between products.
-
-Here are examples of various configurations.
-
+##Elements
+The shellbar supports layout functionality and has some built-in elements, but relies on standalone components for most of its content.
+        
+Elements | Class | Description
+:------------ | :------- | :------------
+Logo (Mandatory) | \`fd-shellbar__logo\` | For company branding, add the \`--image-replaced\` modifier class when using CSS to display the logo.
+Title (Mandatory) | \`fd-shellbar__title\` | Displays the current application.
+Subtitle | \`fd-shellbar__subtitle\` | Displays an application context. Subtitles should seldomly be used.
+Action button (Mandatory) | \`fd-shellbar__action\` | A container for each product action and link.
+Mobile action button (Optional) | \`fd-shellbar__action--mobile\` | For product actions only, visible on small shellbar (--s).
+Desktop action button (Optional) | \`fd-shellbar__action--desktop\` | For product actions only, visible on desktop screens (--m/l/xl).
+Avatar (Mandatory) | \`fd-avatar\` | For user settings and application meta links such as _Sign Out_. Accent colors between 11-15 can be randomly assigned to the background.
+Product Switch (Optional) | \`fd-product-switch\` | For navigating between products.
+<br>
 `,
         components: ['button', 'input-group', 'icon', 'menu', 'avatar', 'input-group', 'popover', 'product-switch', 'shellbar', 'counter']
     }
@@ -81,7 +68,9 @@ export const primary = () => `<div style="height:150px">
 `;
 primary.parameters = {
     docs: {
-        storyDescription: 'This example shows the minimum shellbar for a single application product with only user settings. If no user thumbnail is available then display initials.'
+        storyDescription: `
+The primary shellbar displays a logo, title, and an avatar where the user settings are found. If the avatar does not contain a thumbnail, then the initials of the user will be displayed.
+    `
     }
 };
 
@@ -180,9 +169,14 @@ export const productMenuAndSearch = () => `<div style="height:200px">
     </div>
 </div>
 `;
+
+productMenuAndSearch.storyName = 'Product menu and search';
+
 productMenuAndSearch.parameters = {
     docs: {
-        storyDescription: 'This example includes the product menu for navigating to applications within the product and shows a search box.'
+        storyDescription: `
+Shellbar can be displayed with a product menu and search box. The product menu is used for navigating to other applications within the product. To display a product menu, add the \`fd-popover\` class after the \`fd-shellbar__logo\` class.
+    `
     }
 };
 
@@ -288,11 +282,13 @@ export const linksWithCollapsibleMenuXlSize = () => `<div style="height:300px">
     </div>
 </div>
 `;
+
+linksWithCollapsibleMenuXlSize.storyName = 'Extra large';
+
 linksWithCollapsibleMenuXlSize.parameters = {
     docs: {
-        storyDescription: `This example includes XL shellbar. All actions except \`--mobile\` should be displayed. 
-            This type of shellbar can be achieved by adding \`fd-shellbar--xl\` modifier, it also increases padding of
-            shellbar container to \`3rem\`
+        storyDescription: `
+The shellbar can be optimized for extra-large screens. To achieve this style, add the \`fd-shellbar--xl\` modifier class to the main element, which increases the container padding to 3rem.
         `
     }
 };
@@ -400,16 +396,16 @@ export const linksWithCollapsibleMenuMSize = () => `<div style="height:300px; ma
     </div>
 </div>
 `;
+
+linksWithCollapsibleMenuMSize.storyName = 'Medium-large';
+
 linksWithCollapsibleMenuMSize.parameters = {
     docs: {
-        storyDescription: `This example includes M/L shellbar. All actions except \`--mobile\` should be displayed. 
-            This type of shellbar can be achieved by adding \`fd-shellbar--m\` or \`fd-shellbar--l\` modifier, 
-            it also sets padding of shellbar container to \`2rem\`
+        storyDescription: `
+The shellbar can be optimized for medium-large screens. To achieve this style, add the \`fd-shellbar--m\` or \`fd-shellbar--l\`modifier class to the main element, which increases the container padding to 2rem.
         `
     }
 };
-linksWithCollapsibleMenuMSize.storyName = 'Links With Collapsible Menu M/L Size';
-
 
 export const linksWithCollapsibleMenuSSize = () => `<div style="height:300px; max-width: 600px;">
     <div class="fd-shellbar fd-shellbar--s">
@@ -513,12 +509,13 @@ export const linksWithCollapsibleMenuSSize = () => `<div style="height:300px; ma
     </div>
 </div>
 `;
+
+linksWithCollapsibleMenuSSize.storyName = 'Small';
+
 linksWithCollapsibleMenuSSize.parameters = {
     docs: {
-        storyDescription: `When a product has multiple links, the product links should collapse into an overflow menu on mobile screens. 
-            All actions, except for the user menu, should be collapsed. 
-            See the placement of the \`.fd-shellbar__action--mobile\` container below.
-            This type of shellbar can be achieved by adding \`fd-shellbar--s\` modifier
+        storyDescription: `
+The shellbar can be optimized for mobile and small tablet screens. To achieve this style, add the \`fd-shellbar—s\` modifier class to the main element. All actions expect the user menu should be collapsed, displaying an overflow button.
         `
     }
 };
@@ -698,8 +695,13 @@ export const productSwitch = () => `<div style="height:600px">
     </div>
 </div>
 `;
+
+productSwitch.storyName = 'Product switch';
+
 productSwitch.parameters = {
     docs: {
-        storyDescription: 'This example shows an integration with other products, and a customized logo. For more information about the Product Switch, see [Product Switch](product-switch.html) component.'
+        storyDescription: `
+Shellbar can be displayed with a product switch component, indicating to the user that they can navigate to other products. See [Product Switch](product-switch.html) for more details.
+    `
     }
 };
