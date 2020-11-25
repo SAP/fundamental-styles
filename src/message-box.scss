@@ -100,7 +100,7 @@ $message-box-states: (
         box-shadow: map_get($state-set, "boxShadow");
       }
 
-      .#{$message}__title {
+      .#{$block}__title {
         @include fd-icon-base ("before") {
           position: relative;
           top: 0.0625rem;
