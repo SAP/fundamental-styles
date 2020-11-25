@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.15...v0.13.1-rc.16) (2020-11-25)
+
+
+### Features
+
+* introduce Grid List component ([#1845](https://github.com/SAP/fundamental-styles/issues/1845)) ([2391628](https://github.com/SAP/fundamental-styles/commit/2391628f8b78149984c76407be481791fab27f43))
+
 ### [0.13.1-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.14...v0.13.1-rc.15) (2020-11-25)
 
 ### [0.13.1-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.13...v0.13.1-rc.14) (2020-11-25)
