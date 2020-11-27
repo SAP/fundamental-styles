@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.19...v0.13.1-rc.20) (2020-11-27)
+
+
+### Bug Fixes
+
+* add animation for column in Flexible Column Layout ([#1917](https://github.com/SAP/fundamental-styles/issues/1917)) ([a27f02c](https://github.com/SAP/fundamental-styles/commit/a27f02ce0052e963a7aad9a25791ad4f9e038f14))
+
 ### [0.13.1-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.18...v0.13.1-rc.19) (2020-11-25)
 
 ### [0.13.1-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.17...v0.13.1-rc.18) (2020-11-25)
