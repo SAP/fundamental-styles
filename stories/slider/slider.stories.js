@@ -1,37 +1,40 @@
 export default {
     title: 'Components/Slider',
     parameters: {
-        description: `A slider is a control that enables the user to adjust single values within a specified numerical range. A range slider is a user interface control that enables the user to select a value range within a predefined numerical
-interval.
+        description: `A slider is a control that enables the user to adjust single values within a specified numerical range. A range slider is a user interface control that enables the user to select a value range within a predefined numerical interval. There are two types of sliders, the default and a range slider. A range slider is a user interface control that enables the user to select a value range within a predefined numerical interval.
+
+##Usage
+**Use the slider if:**
+        
+-	You want to change values with graphical support.
+
+
+**Use the range slide if:**
+
+- You want to select a value range within a predefined numerical interval. If you want to specify only a single value within a predefined numerical interval, use the slider instead.
 
 
 ## Accessibility
-
-To ensure that the slider is accessible, a div element with class <code class="docs-code">fd-slider\\_\\_handle</code> must have following  ARIA attributes: 
+To ensure that both the standard and range sliders are accessible, a div element with class <code class="docs-code">fd-slider\\_\\_handle</code> must have the following aria attributes: 
 
 - <code class="docs-code">tabindex="0"</code>
 - <code class="docs-code">role="slider"</code>
-- <code class="docs-code">aria-label</code> —  string that labels the element
-- <code class="docs-code">aria-labelledby</code> — an ID reference to a visible element that labels the slider, used if <code class="docs-code">aria-label</code> isn't provided 
-- <code class="docs-code">aria-valuemin</code> — decimal value representing the minimum allowed value of the slider
-- <code class="docs-code">aria-valuemax</code> — decimal value representing the maximum allowed value of the slider
-- <code class="docs-code">aria-valuenow</code> — decimal value representing the current value of the slider
-- <code class="docs-code">aria-valuetext</code> — string representation of the current value if needed (e.g., 20$, 33°C)
+- <code class="docs-code">aria-label</code>: a string that labels the element
+- <code class="docs-code">aria-labelledby</code>: an ID reference to a visible element that labels the slider, used if <code class="docs-code">aria-label</code> isn't provided 
+- <code class="docs-code">aria-valuemin</code>: the decimal value representing the minimum allowed value of the slider
+- <code class="docs-code">aria-valuemax</code>: the decimal value representing the maximum allowed value of the slider
+- <code class="docs-code">aria-valuenow</code>: the decimal value representing the current value of the slider
+- <code class="docs-code">aria-valuetext</code>: a string representation of the current value if needed (e.g., 20$, 33°C)
 
-The same rules apply for range slider, in this case both <code class="docs-code">fd-slider\\_\\_handle</code> elements must have ARIA attributes described above
+**Note:** It should be possible to change slider's value by pressing the arrow keys.
 
-Also, it should be possible to change slider's value by pressing arrow keys <code class="docs-code">Up</code>, <code class="docs-code">Down</code>, <code class="docs-code">Left</code>, <code class="docs-code">Right</code>
 `,
         components: ['slider']
     },
     tags: ['f3', 'theme']
 };
 
-/**
- * Basic slider
- */
-
-export const basic = () => `
+export const Standard = () => `
 <div class="slider-container">
     <div class="fd-slider">
         <div class="fd-slider__inner">
@@ -44,9 +47,15 @@ export const basic = () => `
 </div>
 `;
 
-/**
- * Range slider
- */
+Standard.storyName = 'Standard';
+
+Standard.parameters = {
+    docs: {
+        iframeHeight: 500,
+        storyDescription: `
+The standard slider displays a bar with a circular grip. When the user hovers over the grip, a hand cursor appears. The user can either drag and drop the grip or click on the bar to change the slider setting.
+` }
+};
 
 export const range = () => `
 <div class="slider-container slider-container--range">
@@ -61,6 +70,17 @@ export const range = () => `
     </div>
 </div>
 `;
+
+range.storyName = 'Range';
+
+range.parameters = {
+    docs: {
+        iframeHeight: 500,
+        storyDescription: `
+The range slider displays a bar with two circular grips, indicating that a range between two values can be selected. To display a range slider, add the \`fd-slider__track-range\` class to the \`fd-slider__track\` element.
+
+        ` }
+};
 
 export const ticks = () => `
 <div class="slider-container">
@@ -90,10 +110,12 @@ export const ticks = () => `
 </div>
 `;
 
-ticks.storyName = 'Slider with ticks';
+ticks.storyName = 'Ticks';
 ticks.parameters = {
     docs: {
-        storyDescription: 'Slider with ticks. A tick is an element with class <code>fd-slider\\_\\_tick</code> If a tick is in selected range, a modifier class <code>--in-range</code> should be applied.'
+        storyDescription: `
+The slider can display ticks on the bar to help guide the user. Ticks can be displayed with the \`fd-slider__tick\` class. If a tick is in selected range, a \`--in-range\` modifier class should be applied.
+        `
     }
 };
 
@@ -137,13 +159,15 @@ export const ticksAndLabels = () => `
     </div>
 </div>
 `;
-ticksAndLabels.storyName = 'Slider with ticks and labels';
+
+ticksAndLabels.storyName = 'Ticks and labels';
 ticksAndLabels.parameters = {
     docs: {
-        storyDescription: 'Slider with ticks and labels. A label is an element with class <code>fd-slider\\_\\_label</code>  Please be aware that labels positioning mechanism should be implemented by application developer.'
+        storyDescription: `
+The slider can display labels that indicate the values of each tick. Labels can be displayed with the \`fd-slider__label\` class. Be advised that this styling does not include the positioning of the labels.
+        `
     }
 };
-
 
 export const mobileMode = () => `
 <div class="slider-container">
@@ -157,9 +181,11 @@ export const mobileMode = () => `
     </div>
 </div>
 `;
-mobileMode.storyName = 'Mobile mode';
+mobileMode.storyName = 'Mobile';
 mobileMode.parameters = {
     docs: {
-        storyDescription: 'The slider itself is not responsive. You can enlarge slider thumb and its hit area by adding <code>fd-slider\\_\\_handle--lg</code> class to <code>fd-slider\\_\\_handle</code> element.'
+        storyDescription: `
+By default, the slider is not responsive. However, you may enlarge the slider grip and its hit area by adding \`fd-slider__handle--lg\` class to \`fd-slider__handle\` element.
+        `
     }
 };
