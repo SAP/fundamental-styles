@@ -1,7 +1,7 @@
 export default {
     title: 'Components/Slider',
     parameters: {
-        description: `A slider is a control that enables the user to adjust single values within a specified numerical range. A range slider is a user interface control that enables the user to select a value range within a predefined numerical interval. There are two types of sliders, the default and a range slider. A range slider is a user interface control that enables the user to select a value range within a predefined numerical interval.
+        description: `There are two types of sliders, the **standard slider** and a **range slider**. The standard slider is a control that enables the user to adjust single values within a specified numerical range. The range slider, however, enables the user to select a value range within a predefined numerical interval.
 
 ##Usage
 **Use the slider if:**
@@ -185,7 +185,7 @@ mobileMode.storyName = 'Mobile';
 mobileMode.parameters = {
     docs: {
         storyDescription: `
-By default, the slider is not responsive. However, you may enlarge the slider grip and its hit area by adding \`fd-slider__handle--lg\` class to \`fd-slider__handle\` element.
+By default, the slider is not responsive. However, to make the slider more mobile-friendly, you may enlarge the slider grip and its hit area by adding \`fd-slider__handle--lg\` class to \`fd-slider__handle\` element.
         `
     }
 };
