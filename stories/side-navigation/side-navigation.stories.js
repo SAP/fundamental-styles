@@ -433,7 +433,7 @@ export const complexCompactSideNav = () => `<div class="fd-side-nav">
 </div>
 `;
 
-complexCompactSideNav.storyName = 'Complex compact';
+complexCompactSideNav.storyName = 'Complex (compact)';
 
 complexCompactSideNav.parameters = {
     docs: {
@@ -570,7 +570,7 @@ export const condensedStateCompact = () => `<nav class="fd-side-nav fd-side-nav-
 </nav>
 `;
 
-condensedStateCompact.storyName = 'Condensed compact';
+condensedStateCompact.storyName = 'Condensed (compact)';
 
 condensedStateCompact.parameters = {
     docs: {
