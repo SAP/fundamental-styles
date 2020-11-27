@@ -2,29 +2,29 @@ export default {
     title: 'Components/Side Navigation',
     parameters: {
         description: `
-The side navigation area can be used to display navigation structures with up to two levels and contains links that change the content area. The side navigation consists of two container sections: the _main navigation section_ (top-aligned) with links used to navigate within the user’s current work context, and the _utility section_ (bottom-aligned) that contains links to additional information. Both of these sections use a nested list to display navigation items.
+The side navigation area can be used to display navigation structures with up to two levels and contains links that change the content area. The side navigation consists of two container sections: the **main navigation section** (top-aligned) with links used to navigate within the user’s current work context, and the **utility section** (bottom-aligned) that contains links to additional information. Both of these sections use a nested list to display navigation items.
 
 ##Usage      
 **Use the side navigation if:**
 
 - You need to display global navigation structures of up to two levels.
 - Your scenarios are in the tooling or administration space.
-- If you want the navigation links to contain dynamic content.
+- If you want the entries to change as though they are dynamic content.
         
 
 **Do not use the side navigation if:**
 
 - Your scenarios are not in the tooling or administration space.
-- You want the navigation links to open a new browser window.
+- You want the entries to open a new browser window.
 
 ##States
 Side navigation can be viewed in three different states:
 
 - **Expanded:** everything is shown; icons and/or text.
 - **Condensed:** only icons are shown; text-only condensed state is not supported.
-- **Off-canvas:** side navigation is completely off-screen, and can be triggered via the menu icon in the tool header.
+- **Off-canvas:** side navigation is completely off-screen, and can be triggered via the menu icon in the shellbar.
 
-**Note:** Depending on the device context, only two states are used per device. App developers can choose the default state for each device.
+**Note:** It is recommend to use only two states per device.
 
         `,
 
@@ -76,13 +76,13 @@ export const cozy = () => `<div class="fd-side-nav">
 </div>
 `;
 
-cozy.storyName = 'Cozy mode';
+cozy.storyName = 'Default';
 
 cozy.parameters = {
     docs: {
         iframeHeight: 400,
         storyDescription: `
-Side navigation can be displayed in cozy mode with one navigation level and text only. Because there is only one level of navigation, all further navigation is shown in the content area. The \`fd-nested-list--text-only\` modifier class should be added to the lists in both the main and utility sections.
+The default side navigation is displayed in cozy mode with one navigation level. Because there is only one level, all further navigation is shown in the content area. The \`fd-nested-list--text-only\` modifier class should be added to the lists in both the main and utility sections.
         `
     }
 };
@@ -136,13 +136,13 @@ export const cozyIcons = () => `<div class="fd-side-nav">
 </div>
 `;
 
-cozyIcons.storyName = 'Cozy with icons';
+cozyIcons.storyName = 'Icons';
 
 cozyIcons.parameters = {
     docs: {
         iframeHeight: 400,
         storyDescription: `
-Side navigation can be displayed with icons. Entries in the side navigation area can consist of text only or an icon with text. The use or non-use of icons must be consistent for all links on one level. Do not combine entries with and without icons on the same level. To display icons in list items, add the \`fd-nested-list__icon\` class within the list items.
+Side navigation can be displayed with icons. Entries in the side navigation area can consist of only text or an icon with text. The use or non-use of icons must be consistent for all links on one level. Do not combine entries with and without icons on the same level. To display icons in list items, add the \`fd-nested-list__icon\` class within the list items.
         `
     }
 };
@@ -221,13 +221,14 @@ export const cozyGrouping = () => `<div class="fd-side-nav">
 </div>
 `;
 
-cozyGrouping.storyName = 'Cozy grouping';
+cozyGrouping.storyName = 'Grouping';
 
 cozyGrouping.parameters = {
     docs: {
         iframeHeight: 400,
         storyDescription: `
-Side navigation can be displayed with group headers that organize the navigation links, which is ideal for when there is more than one level of hierarchy. When they are grouped, the entries on the first level are just headers and don't trigger navigation themselves. It's recommended to use up to two levels of navigation, however; for more levels of navigation, use the content area. On expand, the \`is-expanded\` class should also be extended to the content element. To trigger another level, use the \`fd-nested-list__button\` element.
+Side navigation can be displayed with group headers that organize the entries, which is ideal for when there is more than one level of hierarchy. When they are grouped, the entries on the first level are just headers and don't trigger navigation themselves.
+<br><br>It's recommended to use up to two levels of navigation, however; for more levels of navigation, use the content area. On expand, the \`is-expanded\` class should also be extended to the content element. To trigger another level, use the \`fd-nested-list__button\` element.
         `
     }
 };
@@ -327,7 +328,7 @@ export const complexCozySideNav = () => `<div class="fd-side-nav">
 </div>
 `;
 
-complexCozySideNav.storyName = 'Complex cozy';
+complexCozySideNav.storyName = 'Complex';
 
 complexCozySideNav.parameters = {
     docs: {
@@ -438,7 +439,7 @@ complexCompactSideNav.parameters = {
     docs: {
         iframeHeight: 550,
         storyDescription: `
-Side navigation can be displayed in compact mode and can also display several features like icons, group headers, and two levels of navigation. Compact mode is best viewed from a large desktop screen.
+Side navigation can be displayed in compact mode and can also display several features like icons, group headers, and two levels of navigation. Compact mode is best viewed from a large desktop screen. To display a complex side navigation in compact mode, add the \`fd-nested-list--compact\` modifier class to the nested list element.
         `
     }
 };
@@ -500,13 +501,14 @@ export const condensedStateCozy = () => `<nav class="fd-side-nav fd-side-nav--co
 </nav>
 `;
 
-condensedStateCozy.storyName = 'Condensed cozy';
+condensedStateCozy.storyName = 'Condensed';
 
 condensedStateCozy.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
-Side navigation can be displayed in a condensed cozy mode, showing only icons that represent the navigation links. When the user selects an entry from the navigation, a **Popover** is displayed. The default size for the popover body is often longer than the text length. The length can be adjusted to match the text length by adding the \`fd-popover__body--dropdown-fill\` class to the \`fd-popover__body\` element. To display a condensed side navigation, add the \`fd-side-nav--condensed\` modifier class to the main element.        
+Side navigation can be displayed in a condensed state, showing only icons that represent the navigation entries. When the user selects an entry from the navigation, a **Popover** is displayed. The default size for the popover body is often longer than the text length. The length can be adjusted to match the text length by adding the \`fd-popover__body--dropdown-fill\` class to the \`fd-popover__body\` element.
+<br><br>To display a condensed side navigation, add the \`fd-side-nav--condensed\` modifier class to the main element.        
         `
     }
 };
@@ -574,7 +576,8 @@ condensedStateCompact.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
-Side navigation can be displayed in a condensed compact mode, showing only icons that represent the navigation links. Similar to the condensed cozy mode, the default size for the popover body is often longer than the text length, and can be adjusted by adding the \`fd-popover__body--dropdown-fill\` class to the \`fd-popover__body\` element. To display a condensed side navigation, add the \` fd-side-nav--condensed\` modifier class to the main element.
+Side navigation can be displayed in a condensed state, showing only icons that represent the navigation entries. Like the previous example, the default size for the popover body is often longer than the text length, and can be adjusted by adding the \`fd-popover__body--dropdown-fill\` class to the \`fd-popover__body\` element.
+<br><br>To display a condensed side navigation in compact mode, add the \` fd-side-nav--condensed\` modifier class to the main element and the \`fd-nested-list--compact\` modifier class to the nested list element.
 `
     }
 };
