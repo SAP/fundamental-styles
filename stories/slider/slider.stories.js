@@ -53,7 +53,7 @@ Standard.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
-The standard slider displays a bar with a circular grip. When the user hovers over the grip, a hand cursor appears. The user can either drag and drop the grip or click on the bar to change the slider setting.
+The standard slider displays a bar with a circular handle. When the user hovers over the handle, a hand cursor appears. The user can either drag and drop the handle or click on the bar to change the slider setting.
 ` }
 };
 
@@ -77,7 +77,7 @@ range.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
-The range slider displays a bar with two circular grips, indicating that a range between two values can be selected. To display a range slider, add the \`fd-slider__track-range\` class to the \`fd-slider__track\` element.
+The range slider displays a bar with two circular handles, indicating that a range between two values can be selected. To display a range slider, add the \`fd-slider__track-range\` class to the \`fd-slider__track\` element.
 
         ` }
 };
@@ -185,7 +185,7 @@ mobileMode.storyName = 'Mobile';
 mobileMode.parameters = {
     docs: {
         storyDescription: `
-By default, the slider is not responsive. However, to make the slider more mobile-friendly, you may enlarge the slider grip and its hit area by adding \`fd-slider__handle--lg\` class to \`fd-slider__handle\` element.
+By default, the slider is not responsive. However, to make the slider more mobile-friendly, you may enlarge the slider handle and its hit area by adding \`fd-slider__handle--lg\` class to \`fd-slider__handle\` element.
         `
     }
 };
