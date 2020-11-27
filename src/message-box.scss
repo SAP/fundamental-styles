@@ -5,7 +5,6 @@
 $block: #{$fd-namespace}-message-box;
 $bar: #{$fd-namespace}-bar;
 $button: #{$fd-namespace}-button;
-$message: #{$fd-namespace}-message;
 
 $fd-message-box-icon-text-spacing: 0.5rem;
 $fd-message-box-title-icon-text-size: 1rem;
@@ -101,7 +100,9 @@ $message-box-states: (
       }
 
       .#{$block}__title {
-        @include fd-icon-base ("before") {
+        font-style: normal;
+
+        @include fd-icon-base () {
           position: relative;
           top: 0.0625rem;
           font-size: $fd-message-box-title-icon-text-size;
@@ -112,7 +113,7 @@ $message-box-states: (
       }
 
       @include fd-rtl() {
-        .#{$message}-title::before {
+        .#{$block}__title::before {
           margin-right: 0;
           margin-left: $fd-message-box-icon-text-spacing;
         }
@@ -121,7 +122,7 @@ $message-box-states: (
   }
 
   &--no-icon {
-    .#{$message}__title::before {
+    .#{$block}__title::before {
       content: none;
       margin: 0;
     }
