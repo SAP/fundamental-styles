@@ -66,6 +66,7 @@ $block: #{$fd-namespace}-flexible-column-layout;
     min-width: 20rem;
     border-left: $fd-column-layout-border-x;
     border-right: $fd-column-layout-border-x;
+    transition: width 560ms cubic-bezier(0.1, 0, 0.05, 1), visibility 560ms ease-in;
 
     @include fd-first-child() {
       border-left: none;
