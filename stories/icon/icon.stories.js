@@ -15,7 +15,7 @@ export default {
 Note: If an icon needs to be selected or have any interaction states, it is recommended to use the transparent button style. See **Button** for more details on how to implement it.
           `,
         tags: ['development'],
-        components: ['button', 'button-split', 'icon', 'menu', 'popover', 'segmented-button']
+        components: ['button', 'button-split', 'icon', 'menu', 'popover', 'segmented-button', 'icon-message']
     }
 };
 
@@ -55,4 +55,37 @@ availableIcons.parameters = {
         storyDescription: 'There are several icons available. To display any one of these icons, add the <code>sap-icon--{icon-name}</code> modifier class identifying the icon style to the <code>sap-icon</code> class. For example, for a search icon, add <code>sap-icon sap-icon--search</code> with the desired font size value.'
     },
     skipRTLSnapshot: true
+};
+
+
+export const iconSemantics = () => `
+<div>
+    <i arial-label="information" class="fd-icon-message__icon"></i>
+    <i arial-label="success" class="fd-icon-message__icon--success"></i>
+    <i arial-label="error" class="fd-icon-message__icon--error"></i>
+    <i arial-label="warning" class="fd-icon-message__icon--warning"></i>
+    <i arial-label="question" class="fd-icon-message__icon--question"></i>
+</div>
+`;
+iconSemantics.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'To display icons with semantic colors use the `fd-icon-message__icon`.For success color use the `--success` modifier. For error color use the `--error` modifier. For warning color use the `--warning` modifier. For question color use the `--question` modifier.'
+    }
+};
+
+export const iconTextSemantics = () => `
+<div>
+<span class="fd-icon-message">Information</span>
+<span class="fd-icon-message fd-icon-message--success">Success</span>
+<span class="fd-icon-message fd-icon-message--error">Error</span>
+<span class="fd-icon-message fd-icon-message--warning">Warning</span>
+<span class="fd-icon-message fd-icon-message--question">Question</span>
+</div>
+`;
+iconTextSemantics.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'To display text associated with the given icon with semantic colors use the `fd-icon-message` class.For success color use the `--success` modifier. For error color use the `--error` modifier. For warning color use the `--warning` modifier. For question color use the `--question` modifier.'
+    }
 };
