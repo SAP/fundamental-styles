@@ -99,7 +99,7 @@ $message-box-states: (
         box-shadow: map_get($state-set, "boxShadow");
       }
 
-      .#{$block}__title {
+      .#{$block}__icon {
         font-style: normal;
 
         @include fd-icon-base () {
@@ -113,7 +113,7 @@ $message-box-states: (
       }
 
       @include fd-rtl() {
-        .#{$block}__title::before {
+        .#{$block}__icon::before {
           margin-right: 0;
           margin-left: $fd-message-box-icon-text-spacing;
         }
@@ -122,7 +122,7 @@ $message-box-states: (
   }
 
   &--no-icon {
-    .#{$block}__title::before {
+    .#{$block}__icon::before {
       content: none;
       margin: 0;
     }
