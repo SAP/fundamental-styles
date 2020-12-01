@@ -10,6 +10,8 @@ The shellbar offers consistent, responsive navigation across all products and ap
 -	Product: for branding and product elements.
 -	Actions: for search, product links, and user settings.
 
+**Note:** There is a third container group for [SAP CoPilot](https://help.sap.com/viewer/product/SAP_COPILOT/1902/en-US), which is a chatbot feature leveraged internally at SAP. The SAP CoPilot icon is displayed in the product switch example, and can act as a placeholder for third-party chatbot applications.
+
 ##Elements
 The shellbar supports layout functionality and has some built-in elements, but relies on standalone components for most of its content.
         
@@ -701,6 +703,8 @@ productSwitch.parameters = {
     docs: {
         storyDescription: `
 Shellbar can be displayed with a product switch component, indicating to the user that they can navigate to other products. See [Product Switch](product-switch.html) for more details.
+
+**Note:** There is an [SAP CoPilot](https://help.sap.com/viewer/product/SAP_COPILOT/1902/en-US) icon displayed in the middle of the shellbar, which can be used to trigger a chatbot if desired.
     `
     }
 };
