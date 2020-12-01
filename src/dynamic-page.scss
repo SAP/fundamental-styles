@@ -83,7 +83,9 @@ $block: #{$fd-namespace}-dynamic-page;
       justify-content: space-between;
     }
 
-    @include fd-fiori-focus(0.0625rem);
+    @include fd-fiori-focus($fd-dynamic-page-focus-outline-offset) {
+      z-index: 1;
+    }
 
     min-height: 3rem;
     word-wrap: break-word;
@@ -133,9 +135,11 @@ $block: #{$fd-namespace}-dynamic-page;
   &__title-container {
     @include fd-reset();
 
-    @include fd-flex-vertical-center() {
-      justify-content: flex-start;
+    @include fd-flex() {
+      align-items: baseline;
     }
+
+    max-width: 100%;
   }
 
   .#{$fd-namespace}-breadcrumb.#{$block}__breadcrumb {
@@ -148,9 +152,10 @@ $block: #{$fd-namespace}-dynamic-page;
 
   &__breadcrumb-title-container {
     @include fd-reset();
-    @include fd-flex(column);
 
-    flex: 1;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
   }
 
   &__breadcrumb-container {
@@ -167,6 +172,7 @@ $block: #{$fd-namespace}-dynamic-page;
     color: var(--sapGroup_TitleTextColor);
     font-size: var(--sapFontHeader3Size);
     padding: 0.3125rem 0 0 0;
+    display: table-cell;
 
     @include fd-ellipsis();
 
@@ -183,6 +189,7 @@ $block: #{$fd-namespace}-dynamic-page;
       color: var(--sapGroup_TitleTextColor);
       font-size: var(--sapFontHeader3Size);
       max-width: 100%;
+      vertical-align: bottom;
     }
   }
 
@@ -196,8 +203,11 @@ $block: #{$fd-namespace}-dynamic-page;
 
   &__title-content {
     @include fd-reset();
+    @include fd-ellipsis();
 
     padding: 0 0 0 1rem;
+    display: table-cell;
+    vertical-align: baseline;
 
     @include fd-rtl() {
       padding: 0 1rem 0 0;
@@ -229,6 +239,7 @@ $block: #{$fd-namespace}-dynamic-page;
     padding: 0 0 0 1rem;
     order: 1;
     justify-content: flex-end;
+    align-items: flex-end;
 
     @include fd-rtl() {
       padding: 0 1rem 0 0;
@@ -260,6 +271,7 @@ $block: #{$fd-namespace}-dynamic-page;
     padding: 0;
     order: 2;
     justify-content: flex-end;
+    align-items: baseline;
 
     &--sm {
       flex: 1;
@@ -282,7 +294,7 @@ $block: #{$fd-namespace}-dynamic-page;
       justify-content: space-between;
     }
 
-    @include fd-fiori-focus(0.0625rem);
+    @include fd-fiori-focus($fd-dynamic-page-focus-outline-offset);
 
     word-wrap: break-word;
     background: var(--sapObjectHeader_Background);
@@ -325,10 +337,6 @@ $block: #{$fd-namespace}-dynamic-page;
   &__collapsible-header-container {
     // contains B and B1
     @include fd-reset();
-
-    &--collapsed {
-      z-index: 1;
-    }
   }
 
   &__collapsible-header {
@@ -422,6 +430,7 @@ $block: #{$fd-namespace}-dynamic-page;
       background: var(--fdDynamicPage_Button_Group_Background);
       width: 4.25rem;
       height: $fd-dynamic-page-button-group-height;
+      z-index: 1;
 
       // button styles
       .#{$block}__pin-button.#{$fd-namespace}-button,
