@@ -104,10 +104,6 @@ $block: #{$fd-namespace}-message-strip;
       &::before {
         display: none;
       }
-
-      &::after {
-        display: none;
-      }
     }
 
     &.#{$block}--dismissible {
@@ -138,6 +134,10 @@ $block: #{$fd-namespace}-message-strip;
     @include fd-icon("message-warning");
 
     @include fd-rtl() {
+      &::before {
+        display: none;
+      }
+
       @include fd-icon("message-warning", "after");
     }
   }
