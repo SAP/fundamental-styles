@@ -10,7 +10,7 @@ The date-picker component is an opinionated composition of the <code>input-group
 
 This component mostly relies on the CSS of other components and has very little CSS of its own.
 `,
-        components: ['calendar', 'input-group', 'popover', 'title', 'button', 'input', 'form-label', 'icon', 'bar', 'dialog']
+        components: ['calendar', 'input-group', 'popover', 'title', 'button', 'input', 'form-label', 'icon', 'bar', 'dialog', 'segmented-button']
     }
 };
 
@@ -1118,8 +1118,8 @@ export const mobilePortrait = () => `<div class="fd-dialog-docs-static fd-calend
         <div class="fd-calendar__header">
           <div class="fd-calendar__navigation">
             <div class="fd-segmented-button" role="group" aria-label="Switch Date/Time picker">
-              <button class="fd-button is-active">Date</button>
-              <button class="fd-button">Time</button>
+              <button aria-label="date-button" class="fd-button is-active">Date</button>
+              <button aria-label="time-button" class="fd-button">Time</button>
             </div>
           </div>
           <div class="fd-calendar__navigation">

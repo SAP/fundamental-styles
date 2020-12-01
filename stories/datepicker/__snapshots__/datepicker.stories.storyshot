@@ -3086,6 +3086,7 @@ exports[`Storyshots Patterns/Date Picker Mobile portrait mode with today navigat
               
               
               <button
+                aria-label="date-button"
                 class="fd-button is-active"
               >
                 Date
@@ -3093,6 +3094,7 @@ exports[`Storyshots Patterns/Date Picker Mobile portrait mode with today navigat
               
               
               <button
+                aria-label="time-button"
                 class="fd-button"
               >
                 Time
