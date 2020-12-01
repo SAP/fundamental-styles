@@ -142,7 +142,7 @@ cozyIcons.parameters = {
     docs: {
         iframeHeight: 400,
         storyDescription: `
-Side navigation can be displayed with icons. Entries in the side navigation area can consist of only text or an icon with text. The use or non-use of icons must be consistent for all links on one level. Do not combine entries with and without icons on the same level. To display icons in list items, add the \`fd-nested-list__icon\` class within the list items.
+Side navigation can be displayed with icons. In the expanded state, entries can consist of only text or an icon with text. The use or non-use of icons must be consistent for all links on one level. Do not combine entries with and without icons on the same level. To display icons in list items, add the \`fd-nested-list__icon\` class within the list items.
         `
     }
 };
@@ -221,14 +221,14 @@ export const cozyGrouping = () => `<div class="fd-side-nav">
 </div>
 `;
 
-cozyGrouping.storyName = 'Grouping';
+cozyGrouping.storyName = 'Group';
 
 cozyGrouping.parameters = {
     docs: {
         iframeHeight: 400,
         storyDescription: `
 Side navigation can be displayed with group headers that organize the entries, which is ideal for when there is more than one level of hierarchy. When they are grouped, the entries on the first level are just headers and don't trigger navigation themselves.
-<br><br>It's recommended to use up to two levels of navigation, however; for more levels of navigation, use the content area. On expand, the \`is-expanded\` class should also be extended to the content element. To trigger another level, use the \`fd-nested-list__button\` element.
+<br><br>It's recommended to use up to two levels of navigation, however; for more levels of navigation, use the content area. When expanded, the \`is-expanded\` class should also be extended to the content element. To trigger another level, use the \`fd-nested-list__button\` element.
         `
     }
 };
@@ -507,7 +507,7 @@ condensedStateCozy.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
-Side navigation can be displayed in a condensed state, showing only icons that represent the navigation entries. When the user selects an entry from the navigation, a **Popover** is displayed. The default size for the popover body is often longer than the text length. The length can be adjusted to match the text length by adding the \`fd-popover__body--dropdown-fill\` class to the \`fd-popover__body\` element.
+Side navigation can be displayed in a condensed state, showing only icons that represent the navigation entries. When the user selects an entry from the navigation, a **Popover** is displayed. The default size for the popover body is often longer than the text length. However, the length can be adjusted to match the text length by adding the \`fd-popover__body--dropdown-fill\` class to the \`fd-popover__body\` element.
 <br><br>To display a condensed side navigation, add the \`fd-side-nav--condensed\` modifier class to the main element.        
         `
     }
