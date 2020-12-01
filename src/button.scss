@@ -232,11 +232,11 @@ $block: #{$fd-namespace}-button;
 }
 
 @mixin iconTextMargin() {
-  margin-left: $fd-button-icon-margin;
+  margin-left: $fd-button-icon-margin !important;
 
   @include fd-rtl() {
-    margin-left: 0;
-    margin-right: $fd-button-icon-margin;
+    margin-left: 0 !important;
+    margin-right: $fd-button-icon-margin !important;
   }
 }
 
