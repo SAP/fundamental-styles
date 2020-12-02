@@ -56,6 +56,7 @@ $block: #{$fd-namespace}-flexible-column-layout;
     width: $fd-toggle-button-width;
     min-width: $fd-toggle-button-width;
     justify-content: center;
+    padding: 0;
 
     @include fd-absolute-center();
   }
