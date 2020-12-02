@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.20...v0.13.1-rc.21) (2020-12-02)
+
+
+### Bug Fixes
+
+* Center button by default ([#1930](https://github.com/SAP/fundamental-styles/issues/1930)) ([0328e46](https://github.com/SAP/fundamental-styles/commit/0328e46ad1f942b1cbb251a56f5c8519edb06e97))
+
 ### [0.13.1-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.19...v0.13.1-rc.20) (2020-11-27)
 
 
