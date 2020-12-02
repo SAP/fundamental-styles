@@ -17,14 +17,15 @@ The shellbar supports layout functionality and has some built-in elements, but r
         
 Elements | Class | Description
 :------------ | :------- | :------------
-Logo (Mandatory) | \`fd-shellbar__logo\` | For company branding, add the \`--image-replaced\` modifier class when using CSS to display the logo.
-Title (Mandatory) | \`fd-shellbar__title\` | Displays the current application.
+Logo (mandatory) | \`fd-shellbar__logo\` | For company branding, add the \`--image-replaced\` modifier class when using CSS to display the logo.
+Title (mandatory) | \`fd-shellbar__title\` | Displays the current application.
 Subtitle | \`fd-shellbar__subtitle\` | Displays an application context. Subtitles should seldomly be used.
-Action button (Mandatory) | \`fd-shellbar__action\` | A container for each product action and link.
-Mobile action button (Optional) | \`fd-shellbar__action--mobile\` | For product actions only, visible on small shellbar (--s).
-Desktop action button (Optional) | \`fd-shellbar__action--desktop\` | For product actions only, visible on desktop screens (--m/l/xl).
-Avatar (Mandatory) | \`fd-avatar\` | For user settings and application meta links such as _Sign Out_. Accent colors between 11-15 can be randomly assigned to the background.
-Product Switch (Optional) | \`fd-product-switch\` | For navigating between products.
+Action button (mandatory) | \`fd-shellbar__action\` | A container for each product action and link.
+Mobile action button (optional) | \`fd-shellbar__action--mobile\` | For product actions only, visible on small shellbar (--s).
+Desktop action button (optional) | \`fd-shellbar__action--desktop\` | For product actions only, visible on desktop screens (--m/l/xl).
+Avatar (mandatory) | \`fd-avatar\` | For user settings and application meta links such as _Sign Out_. Accent colors between 11-15 can be randomly assigned to the background.
+Product Switch (optional) | \`fd-product-switch\` | For navigating between products.
+Notifications (optional) | \`fd-button__badge\` | To display notifications, add this class to the button. See **Button** to find documentation on Badge button.
 <br>
 `,
         components: ['button', 'input-group', 'icon', 'menu', 'avatar', 'input-group', 'popover', 'product-switch', 'shellbar', 'counter']
