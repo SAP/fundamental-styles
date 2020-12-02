@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.21...v0.13.1-rc.22) (2020-12-02)
+
+
+### Bug Fixes
+
+* add fix for missing space between Menu Button text and expand arrow ([#1929](https://github.com/SAP/fundamental-styles/issues/1929)) ([1a811e6](https://github.com/SAP/fundamental-styles/commit/1a811e601a18214569cb6bf1b3a1b67957508c57))
+
 ### [0.13.1-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.20...v0.13.1-rc.21) (2020-12-02)
 
 
