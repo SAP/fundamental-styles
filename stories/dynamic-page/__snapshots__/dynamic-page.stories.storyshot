@@ -122,7 +122,7 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
             
                             
             <div
-              class="fd-dynamic-page__title-container"
+              class="fd-dynamic-page__title-container fd-dynamic-page__title-container--sm"
             >
               
                                 
@@ -203,7 +203,7 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
                                 
               <div
                 aria-label="Product actions"
-                class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-toolbar fd-toolbar--clear  fd-toolbar--cozy fd-toolbar--transparent"
+                class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
                 role="toolbar"
               >
                 
@@ -1801,7 +1801,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
             
                             
             <div
-              class="fd-dynamic-page__title-container"
+              class="fd-dynamic-page__title-container  fd-dynamic-page__title-container--sm"
             >
               
                                 

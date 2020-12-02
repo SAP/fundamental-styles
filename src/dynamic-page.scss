@@ -140,6 +140,10 @@ $block: #{$fd-namespace}-dynamic-page;
     }
 
     max-width: 100%;
+
+    &--sm {
+      align-items: flex-start;
+    }
   }
 
   .#{$fd-namespace}-breadcrumb.#{$block}__breadcrumb {
@@ -250,6 +254,8 @@ $block: #{$fd-namespace}-dynamic-page;
     &--sm {
       flex: 2;
       padding: 0;
+      align-items: center;
+      align-self: center;
 
       @include fd-rtl() {
         padding: 0;
@@ -275,6 +281,7 @@ $block: #{$fd-namespace}-dynamic-page;
 
     &--sm {
       flex: 1;
+      align-items: center;
     }
 
     &--md {
@@ -284,6 +291,7 @@ $block: #{$fd-namespace}-dynamic-page;
 
   .#{$fd-namespace}-toolbar.#{$block}__title-content-toolbar {
     justify-content: flex-start;
+    align-self: center;
     padding: 0;
   }
 
