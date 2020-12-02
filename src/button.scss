@@ -263,7 +263,7 @@ $block: #{$fd-namespace}-button;
   @include buttonContainer();
   @include iconStyles();
 
-  @include fd-flex-vertical-center() {
+  @include fd-flex-center() {
     display: inline-flex;
   }
 
