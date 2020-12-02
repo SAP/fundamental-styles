@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.23...v0.13.1-rc.24) (2020-12-02)
+
+
+### Bug Fixes
+
+* add fix for broken segmented button in DateTime picker  ([#1925](https://github.com/SAP/fundamental-styles/issues/1925)) ([bc907b2](https://github.com/SAP/fundamental-styles/commit/bc907b2a0d2d7d7cde84d9c7918f2ada1bf1bfd0))
+
 ### [0.13.1-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.22...v0.13.1-rc.23) (2020-12-02)
 
 ### [0.13.1-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.21...v0.13.1-rc.22) (2020-12-02)
