@@ -459,7 +459,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       right: $fd-tile-toggle-button-position;
 
       @include fd-rtl() {
-        right: initial;
+        right: auto;
         left: $fd-tile-toggle-button-position;
       }
 
@@ -636,7 +636,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       z-index: 5;
 
       @include fd-rtl() {
-        right: initial;
+        right: auto;
         left: $fd-tile-close-button-position;
       }
 
@@ -676,9 +676,9 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       z-index: 5;
 
       @include fd-rtl() {
-        right: initial;
+        right: auto;
         left: 0;
-        margin-right: initial;
+        margin-right: auto;
         margin-left: $fd-tile-action-indicator-offset;
       }
 
@@ -913,6 +913,8 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       @include fd-rtl() {
         margin-left: $fd-line-tile-badge-horizontal-spacing;
         margin-right: 0;
+        left: 0;
+        right: 0;
       }
     }
   }

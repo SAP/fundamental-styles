@@ -23,7 +23,7 @@ $block: #{$fd-namespace}-badge;
   z-index: 10;
 
   @include fd-rtl() {
-    right: initial;
+    right: auto;
     left: 0.5rem;
   }
 }
