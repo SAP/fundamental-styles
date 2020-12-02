@@ -1,11 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Slider Basic 1`] = `
-
-
-`;
-
-exports[`Storyshots Components/Slider Mobile mode 1`] = `
+exports[`Storyshots Components/Slider Mobile 1`] = `
 
 
 `;
@@ -15,12 +10,17 @@ exports[`Storyshots Components/Slider Range 1`] = `
 
 `;
 
-exports[`Storyshots Components/Slider Slider with ticks 1`] = `
+exports[`Storyshots Components/Slider Standard 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Slider Slider with ticks and labels 1`] = `
+exports[`Storyshots Components/Slider Ticks 1`] = `
+
+
+`;
+
+exports[`Storyshots Components/Slider Ticks and labels 1`] = `
 
 
 `;
