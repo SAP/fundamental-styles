@@ -138,13 +138,6 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-flex() {
       align-items: baseline;
     }
-
-    max-width: 100%;
-    width: 100%;
-
-    &--sm {
-      align-items: flex-start;
-    }
   }
 
   .#{$fd-namespace}-breadcrumb.#{$block}__breadcrumb {
@@ -250,7 +243,7 @@ $block: #{$fd-namespace}-dynamic-page;
     }
 
     &--sm {
-      flex: 2;
+      margin-left: auto;
       padding: 0;
       align-items: center;
       align-self: center;

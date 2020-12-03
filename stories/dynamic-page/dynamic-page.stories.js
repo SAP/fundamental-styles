@@ -395,7 +395,7 @@ export const mobile = () =>
                                     </button>
                                 </div>
                             </div>
-                            <div class="fd-dynamic-page__title-container  fd-dynamic-page__title-container--sm">
+                            <div class="fd-dynamic-page__title-container">
                                 <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
                                 <div role="toolbar" aria-label="Header Content" class="fd-dynamic-page__title-content-toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                     <div class="fd-popover fd-toolbar__overflow">
@@ -530,7 +530,6 @@ mobile.parameters = {
 | Element | Modifier class |
 | ----------------: | :------------ |
 | Title Area | \`fd-dynamic-page__title-area--sm\` |
-| Title Container | \` fd-dynamic-page__title-container--sm\` |
 | Breadcrumb | \`fd-dynamic-page__breadcrumb--sm\` |
 | Header | \`fd-dynamic-page__collapsible-header--sm\` |
 | Global Actions | \`fd-dynamic-page__toolbar--sm\` |
@@ -565,7 +564,7 @@ export const mobileCollapsed = () =>
                                         </button>
                                 </div>
                             </div>
-                            <div class="fd-dynamic-page__title-container fd-dynamic-page__title-container--sm">
+                            <div class="fd-dynamic-page__title-container">
                                 <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
                                 <div role="toolbar" aria-label="Header Content" class="fd-dynamic-page__title-content-toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                     <div class="fd-popover fd-toolbar__overflow">
