@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.30...v0.13.1-rc.31) (2020-12-03)
+
+
+### Bug Fixes
+
+* (Core) add fix for Carousel button position on click ([#1928](https://github.com/SAP/fundamental-styles/issues/1928)) ([4eabc84](https://github.com/SAP/fundamental-styles/commit/4eabc8480dcaeafb7a71d9ab6dd1aea36cb56508))
+
 ### [0.13.1-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.29...v0.13.1-rc.30) (2020-12-03)
 
 
