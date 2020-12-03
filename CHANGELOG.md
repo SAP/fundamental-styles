@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.29...v0.13.1-rc.30) (2020-12-03)
+
+
+### Bug Fixes
+
+* add fix for buttons not changing position in RTL in IE11 ([#1933](https://github.com/SAP/fundamental-styles/issues/1933)) ([cfbc72a](https://github.com/SAP/fundamental-styles/commit/cfbc72a253b8a86e15ccae17b78f980118fca55c))
+
 ### [0.13.1-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.28...v0.13.1-rc.29) (2020-12-03)
 
 ### [0.13.1-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.27...v0.13.1-rc.28) (2020-12-03)
