@@ -3,27 +3,29 @@ export default {
     parameters: {
         tags: ['f3', 'a11y', 'theme'],
         description: `
-The shellbar offers consistent, responsive navigation across all products and applications. It also includes support for branding, product navigation, search, notifications, user settings, and CoPilot. This is a composite component comprised of mandatory and optional elements. Shellbar should always be placed inside the shell layout container. As mentioned early, it is completely responsive by default with margins and padding already built in. 
+The shellbar offers consistent, responsive navigation across all products and applications. It also includes support for branding, product navigation, search, notifications, and user settings. This is a composite component comprised of mandatory and optional elements. Shellbar should always be placed inside the shell layout container. As mentioned earlier, it is completely responsive by default with margins and padding already built in. 
         
-**Shellbar has three primary container groups:**
+**Shellbar has two primary container groups:**
 
 -	Product: for branding and product elements.
--	CoPilot: reseved for the CoPilot element.
 -	Actions: for search, product links, and user settings.
+
+**Note:** There is a third container group for [SAP CoPilot](https://help.sap.com/viewer/product/SAP_COPILOT/1902/en-US), which is a chatbot feature leveraged internally at SAP. The SAP CoPilot icon is displayed in the product switch example, and can act as a placeholder for third-party chatbot applications.
 
 ##Elements
 The shellbar supports layout functionality and has some built-in elements, but relies on standalone components for most of its content.
         
 Elements | Class | Description
 :------------ | :------- | :------------
-Logo (Mandatory) | \`fd-shellbar__logo\` | For company branding, add the \`--image-replaced\` modifier class when using CSS to display the logo.
-Title (Mandatory) | \`fd-shellbar__title\` | Displays the current application.
+Logo (mandatory) | \`fd-shellbar__logo\` | For company branding, add the \`--image-replaced\` modifier class when using CSS to display the logo.
+Title (mandatory) | \`fd-shellbar__title\` | Displays the current application.
 Subtitle | \`fd-shellbar__subtitle\` | Displays an application context. Subtitles should seldomly be used.
-Action button (Mandatory) | \`fd-shellbar__action\` | A container for each product action and link.
-Mobile action button (Optional) | \`fd-shellbar__action--mobile\` | For product actions only, visible on small shellbar (--s).
-Desktop action button (Optional) | \`fd-shellbar__action--desktop\` | For product actions only, visible on desktop screens (--m/l/xl).
-Avatar (Mandatory) | \`fd-avatar\` | For user settings and application meta links such as _Sign Out_. Accent colors between 11-15 can be randomly assigned to the background.
-Product Switch (Optional) | \`fd-product-switch\` | For navigating between products.
+Action button (mandatory) | \`fd-shellbar__action\` | A container for each product action and link.
+Mobile action button (optional) | \`fd-shellbar__action--mobile\` | For product actions only, visible on small shellbar (--s).
+Desktop action button (optional) | \`fd-shellbar__action--desktop\` | For product actions only, visible on desktop screens (--m/l/xl).
+Avatar (mandatory) | \`fd-avatar\` | For user settings and application meta links such as _Sign Out_. Accent colors between 11-15 can be randomly assigned to the background.
+Product Switch (optional) | \`fd-product-switch\` | For navigating between products.
+Notifications (optional) | \`fd-button__badge\` | To display notifications, add this class to the button. See **Button** to find documentation on Badge button.
 <br>
 `,
         components: ['button', 'input-group', 'icon', 'menu', 'avatar', 'input-group', 'popover', 'product-switch', 'shellbar', 'counter']
@@ -515,7 +517,7 @@ linksWithCollapsibleMenuSSize.storyName = 'Small';
 linksWithCollapsibleMenuSSize.parameters = {
     docs: {
         storyDescription: `
-The shellbar can be optimized for mobile and small tablet screens. To achieve this style, add the \`fd-shellbar—s\` modifier class to the main element. All actions expect the user menu should be collapsed, displaying an overflow button.
+The shellbar can be optimized for mobile and small tablet screens. To achieve this style, add the \`fd-shellbar--s\` modifier class to the main element. All actions except the user menu should be collapsed, displaying an overflow button.
         `
     }
 };
@@ -702,6 +704,8 @@ productSwitch.parameters = {
     docs: {
         storyDescription: `
 Shellbar can be displayed with a product switch component, indicating to the user that they can navigate to other products. See [Product Switch](product-switch.html) for more details.
+
+**Note:** There is an [SAP CoPilot](https://help.sap.com/viewer/product/SAP_COPILOT/1902/en-US) icon displayed in the middle of the shellbar, which can be used to trigger a chatbot if desired.
     `
     }
 };
