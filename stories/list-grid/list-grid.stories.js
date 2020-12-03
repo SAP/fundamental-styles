@@ -40,7 +40,8 @@ The grid list is usually used as an alternative view for a list or table. It is 
     }
 };
 
-export const noneMode = () => `<div class="fd-grid-list">
+export const noneMode = () => `<div style="min-height: 500px;">
+<div class="fd-grid-list">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
@@ -248,6 +249,7 @@ export const noneMode = () => `<div class="fd-grid-list">
         </div>
     </div>
 </div>
+</div>
 `;
 
 noneMode.storyName = 'None mode';
@@ -258,7 +260,8 @@ noneMode.parameters = {
     }
 };
 
-export const singleSelectMasterMode = () => `<div class="fd-grid-list fd-grid-list--mode-single-select">
+export const singleSelectMasterMode = () => `<div style="min-height: 300px;">
+<div class="fd-grid-list fd-grid-list--mode-single-select">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
@@ -409,6 +412,7 @@ export const singleSelectMasterMode = () => `<div class="fd-grid-list fd-grid-li
         </div>
     </div>
 </div>
+</div>
 `;
 
 singleSelectMasterMode.storyName = 'Single select mode';
@@ -422,7 +426,8 @@ To turn on the Single select mode, add the \`fd-grid-list--mode-single-select\` 
     }
 };
 
-export const singleSelectLeftMode = () => `<div class="fd-grid-list fd-grid-list--mode-single-select-left">
+export const singleSelectLeftMode = () => `<div style="min-height: 300px;">
+<div class="fd-grid-list fd-grid-list--mode-single-select-left">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
@@ -575,6 +580,7 @@ export const singleSelectLeftMode = () => `<div class="fd-grid-list fd-grid-list
         </div>
     </div>
 </div>
+</div>
 `;
 
 singleSelectLeftMode.storyName = 'Single select left mode';
@@ -588,7 +594,8 @@ To turn on the Single select left mode, add the \`fd-grid-list--mode-single-sele
     }
 };
 
-export const singleSelectRightMode = () => `<div class="fd-grid-list fd-grid-list--mode-single-select-right">
+export const singleSelectRightMode = () => `<div style="min-height: 300px;">
+<div class="fd-grid-list fd-grid-list--mode-single-select-right">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
@@ -742,6 +749,7 @@ export const singleSelectRightMode = () => `<div class="fd-grid-list fd-grid-lis
         </div>
     </div>
 </div>
+</div>
 `;
 
 singleSelectRightMode.storyName = 'Single select right mode';
@@ -755,7 +763,8 @@ To turn on the Single select right mode, add the \`fd-grid-list--mode-single-sel
     }
 };
 
-export const multiSelectMode = () => `<div class="fd-grid-list fd-grid-list--mode-multi-select">
+export const multiSelectMode = () => `<div style="min-height: 300px;">
+<div class="fd-grid-list fd-grid-list--mode-multi-select">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
@@ -912,6 +921,7 @@ export const multiSelectMode = () => `<div class="fd-grid-list fd-grid-list--mod
         </div>
     </div>
 </div>
+</div>
 `;
 
 multiSelectMode.storyName = 'Multi select mode';
@@ -925,7 +935,8 @@ To turn on the Multi select mode, add the \`fd-grid-list--mode-multi-select\` mo
     }
 };
 
-export const deleteMode = () => `<div class="fd-grid-list fd-grid-list--mode-delete">
+export const deleteMode = () => `<div style="min-height: 300px;">
+<div class="fd-grid-list fd-grid-list--mode-delete">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
@@ -1081,6 +1092,7 @@ export const deleteMode = () => `<div class="fd-grid-list fd-grid-list--mode-del
         </div>
     </div>
 </div>
+</div>
 `;
 
 deleteMode.storyName = 'Delete mode';
@@ -1094,7 +1106,8 @@ To turn on the Delete mode, add the \`fd-grid-list--mode-delete\` modifier class
     }
 };
 
-export const group = () => `<div class="fd-grid-list">
+export const group = () => `<div style="min-height: 600px;">
+<div class="fd-grid-list">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
@@ -1252,7 +1265,8 @@ To create grid list group headers use \`fd-grid-list__group-header\` class.
     }
 };
 
-export const states = () => `<div class="fd-grid-list">
+export const states = () => `<div style="min-height: 600px;">
+<div class="fd-grid-list">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
@@ -1431,6 +1445,7 @@ export const states = () => `<div class="fd-grid-list">
         </div>
     </div>
 </div>
+</div>
 `;
 
 states.storyName = 'States';
@@ -1443,7 +1458,8 @@ To apply state, add the corresponding class \`.fd-grid-list__item--(unread|error
     }
 };
 
-export const highlight = () => `<div class="fd-grid-list">
+export const highlight = () => `<div style="min-height: 350px;">
+<div class="fd-grid-list">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
@@ -1588,6 +1604,7 @@ export const highlight = () => `<div class="fd-grid-list">
         </div>
     </div>
 </div>
+</div>
 `;
 
 highlight.storyName = 'Highlight';
@@ -1601,7 +1618,8 @@ To add highlight indicator, add a span element with \`.fd-grid-list__highlight f
     }
 };
 
-export const filterInfobar = () => `<div class="fd-grid-list">
+export const filterInfobar = () => `<div style="min-height: 350px;">
+<div class="fd-grid-list">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
@@ -1746,6 +1764,7 @@ export const filterInfobar = () => `<div class="fd-grid-list">
         </div>
     </div>
 </div>
+</div>
 `;
 
 filterInfobar.storyName = 'Filter Infobar';
@@ -1759,7 +1778,8 @@ To show filter information panel, follow the current example.
     }
 };
 
-export const more = () => `<div class="fd-grid-list">
+export const more = () => `<div style="min-height: 400px;">
+<div class="fd-grid-list">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
@@ -1901,6 +1921,7 @@ export const more = () => `<div class="fd-grid-list">
         </div>
     </div>
 </div>
+</div>
 `;
 
 more.storyName = '"More" Button';
@@ -1914,7 +1935,8 @@ To show "More" button, follow the current example.
     }
 };
 
-export const footer = () => `<div class="fd-grid-list">
+export const footer = () => `<div style="min-height: 300px;">
+<div class="fd-grid-list">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
@@ -2054,6 +2076,7 @@ export const footer = () => `<div class="fd-grid-list">
             </div>
         </div>
     </div>
+</div>
 </div>
 `;
 
