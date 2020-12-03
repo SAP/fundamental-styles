@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.27...v0.13.1-rc.28) (2020-12-03)
+
+
+### Bug Fixes
+
+* remove padding from button in Flexible Column Layout ([#1937](https://github.com/SAP/fundamental-styles/issues/1937)) ([bfafe25](https://github.com/SAP/fundamental-styles/commit/bfafe255a07c0bedba9fe9353941de97fea2b546))
+
 ### [0.13.1-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.26...v0.13.1-rc.27) (2020-12-03)
 
 ### [0.13.1-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.25...v0.13.1-rc.26) (2020-12-02)
