@@ -140,6 +140,7 @@ $block: #{$fd-namespace}-dynamic-page;
     }
 
     max-width: 100%;
+    width: 100%;
 
     &--sm {
       align-items: flex-start;
@@ -157,9 +158,8 @@ $block: #{$fd-namespace}-dynamic-page;
   &__breadcrumb-title-container {
     @include fd-reset();
 
-    display: table;
-    width: 100%;
-    table-layout: fixed;
+    flex: 1;
+    min-width: 0;
   }
 
   &__breadcrumb-container {
@@ -176,7 +176,6 @@ $block: #{$fd-namespace}-dynamic-page;
     color: var(--sapGroup_TitleTextColor);
     font-size: var(--sapFontHeader3Size);
     padding: 0.3125rem 0 0 0;
-    display: table-cell;
 
     @include fd-ellipsis();
 
@@ -210,7 +209,6 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-ellipsis();
 
     padding: 0 0 0 1rem;
-    display: table-cell;
     vertical-align: baseline;
 
     @include fd-rtl() {
