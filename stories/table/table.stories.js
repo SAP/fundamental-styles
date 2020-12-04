@@ -1680,7 +1680,7 @@ export const gridTable = () => `<table class="fd-table" aria-describedby="FU4EwF
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
                 <div class="fd-form-item">
-                    <div class="fd-popover">
+                    <div class="fd-popover fd-popover--full-width">
                         <div class="fd-popover__control">
                             <div class="fd-select" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
                                 <div class="fd-select__control">
@@ -1704,7 +1704,7 @@ export const gridTable = () => `<table class="fd-table" aria-describedby="FU4EwF
                 <input aria-labelledby="fd-OspcU6H7F0q" class="fd-input" type="text" value="" tabindex="-1" />
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <div class="fd-popover">
+                <div class="fd-popover fd-popover--full-width">
                     <div class="fd-popover__control">
                         <div aria-expanded="false" aria-haspopup="true" class="fd-input-group--control fd-input-group">
                             <input aria-labelledby="fd-nEac1Ko5K0e" class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
@@ -1739,7 +1739,7 @@ export const gridTable = () => `<table class="fd-table" aria-describedby="FU4EwF
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
                 <div class="fd-form-item">
-                    <div class="fd-popover">
+                    <div class="fd-popover fd-popover--full-width">
                         <div class="fd-popover__control">
                             <div class="fd-select" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
                                 <div class="fd-select__control">
@@ -1763,7 +1763,7 @@ export const gridTable = () => `<table class="fd-table" aria-describedby="FU4EwF
                 <input aria-labelledby="fd-OspcU6H7F0q" class="fd-input" type="text" value="" tabindex="-1" />
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <div class="fd-popover">
+                <div class="fd-popover fd-popover--full-width">
                     <div class="fd-popover__control">
                         <div aria-expanded="false" aria-haspopup="true" class="fd-input-group--control fd-input-group">
                             <input aria-labelledby="fd-nEac1Ko5K0e" class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
@@ -1798,7 +1798,7 @@ export const gridTable = () => `<table class="fd-table" aria-describedby="FU4EwF
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
                 <div class="fd-form-item">
-                    <div class="fd-popover">
+                    <div class="fd-popover fd-popover--full-width">
                         <div class="fd-popover__control">
                             <div class="fd-select" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
                                 <div class="fd-select__control">
@@ -1822,7 +1822,7 @@ export const gridTable = () => `<table class="fd-table" aria-describedby="FU4EwF
                 <input aria-labelledby="fd-OspcU6H7F0q" class="fd-input" type="text" value="" tabindex="-1" />
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <div class="fd-popover">
+                <div class="fd-popover fd-popover--full-width">
                     <div class="fd-popover__control">
                         <div aria-expanded="false" aria-haspopup="true" class="fd-input-group--control fd-input-group">
                                 <input aria-labelledby="fd-nEac1Ko5K0e" class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
@@ -1858,7 +1858,7 @@ export const gridTable = () => `<table class="fd-table" aria-describedby="FU4EwF
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
                 <div class="fd-form-item">
-                    <div class="fd-popover">
+                    <div class="fd-popover fd-popover--full-width">
                         <div class="fd-popover__control">
                             <div class="fd-select" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
                                 <div class="fd-select__control">
@@ -1882,7 +1882,7 @@ export const gridTable = () => `<table class="fd-table" aria-describedby="FU4EwF
                 <input aria-labelledby="fd-OspcU6H7F0q" class="fd-input" type="text" value="" tabindex="-1" />
             </td>
             <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <div class="fd-popover">
+                <div class="fd-popover fd-popover--full-width">
                     <div class="fd-popover__control">
                         <div aria-expanded="false" aria-haspopup="true" class="fd-input-group--control fd-input-group">
                             <input aria-labelledby="fd-nEac1Ko5K0e" class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
