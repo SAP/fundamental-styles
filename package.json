@@ -50,7 +50,7 @@
     "@babel/plugin-transform-runtime": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "@sap-theming/theming-base-content": "~11.1.23",
-    "@storybook/addon-a11y": "6.0.28",
+    "@storybook/addon-a11y": "6.1.9",
     "@storybook/addon-actions": "6.0.28",
     "@storybook/addon-cssresources": "6.0.28",
     "@storybook/addon-docs": "6.0.28",
