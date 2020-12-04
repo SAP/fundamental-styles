@@ -4,22 +4,22 @@ export default {
         description: `
 The step input control allows the user to change the input values in predefined increments (steps).
 
-Use the step input if:
+##Usage
+**Use the step input if:**
 
-* The user needs to adjust amounts, quantities, or other values quickly.
-* The user needs to adjust values for a specific step (for example, in a shopping cart).
+- The user needs to adjust amounts, quantities, or other values quickly.
+- The user needs to adjust values for a specific step (for example, in a shopping cart).
 
-Do not use the step input if:
+**Do not use the step input if:**
 
-* The user needs to enter a static number (for example, postal code, phone number, or ID). In this case, use the regular input field control instead.
-* You want to display a value that rarely needs to be adjusted and does not pertain to a particular step. In this case, use the regular input field control instead.
-* You want the user to enter dates and times. In this case, use the date picker, date range selection, time picker, or date/time picker instead.  
-  `,
+- The user needs to enter a static number (for example, postal code, phone number, or ID). In this case, use **Input Field** instead.
+- You want to display a value that rarely needs to be adjusted and does not pertain to a particular step. In this case, use **Input Field** instead.
+- You want the user to enter dates and times. In this case, use the **Date Picker** or **Time Picker** pattern instead.  
+  
+`,
         components: ['button', 'icon', 'form-item', 'step-input', 'form-label', 'input']
     }
 };
-
-/** On smartphones and tablets, the step input is shown in cozy mode (default). */
 
 export const primary = () => `<label class="fd-form-label" for="step-3">Default Step Input</label><br />
 <div class="fd-step-input">
@@ -40,12 +40,13 @@ export const primary = () => `<label class="fd-form-label" for="step-3">Default 
 `;
 
 primary.storyName = 'Default';
-
-/**
- * The Step Input should be used in compact mode when using a desktop of devices with large screens.
-It can be achieved by adding the `--compact` modifier to the main element as well as the
-button and input elements.
- */
+primary.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: `The default step input displays an input field with a plus and minus icon on opposing sides to either increase or decrease the value. It is displayed in cozy mode, which is ideal for mobile and tablet screens.
+        `
+    }
+};
 
 export const compact = () => `<label class="fd-form-label" for="step-1">Compact Step Input</label><br />
 <div class="fd-form-item fd-form-item--horizontal">
@@ -79,41 +80,14 @@ export const compact = () => `<label class="fd-form-label" for="step-1">Compact 
 </div>
 `;
 
-/**
- * By default there is built-in focus indicator for StepInput component, which is not supported by IE11.
-To make focus work on IE11, it should be added by putting `.is-focus` class to component
- */
-
-export const focused = () => `<label class="fd-form-label" for="step-20">Focused Step Input</label><br />
-<div class="fd-step-input is-focus">
-        <button aria-label="Step down" class="
-            fd-button
-            fd-button--transparent
-            fd-step-input__button"
-            onclick="stepInputValue('step-20', 'down');"
-            tabindex="-1" type="button">
-                <i class="sap-icon--less"></i>
-        </button>
-    <input class="
-            fd-input 
-            fd-input--no-number-spinner 
-            fd-step-input__input
-    " id="step-20" type="number" value="0">
-        <button aria-label="Step up" class="
-            fd-button 
-            fd-button--transparent
-            fd-step-input__button"
-            onclick="stepInputValue('step-20', 'up');" 
-            tabindex="-1" type="button">
-                <i class="sap-icon--add"></i>
-        </button>
-</div>
-`;
-
-/**
- * The Step Input component also supports semantic states as does every form.
-The semantic states can be customized by adding the `is-error` | `is-success` | `is-warning` | or `is-information` into the fd-step-input element.
- */
+compact.storyName = 'Compact';
+compact.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: `The step input can be displayed in compact mode, which is ideal for desktop screens. To display a compact step input, add the \`--compact\` modifier class to the main element, as well as the button and input elements.
+        `
+    }
+};
 
 export const states = () => `<label class="fd-form-label" for="step-5">Success Step Input</label><br />
 <div class="fd-step-input is-success">
@@ -219,12 +193,59 @@ export const states = () => `<label class="fd-form-label" for="step-5">Success S
 </div>
 `;
 
+states.storyName = 'States';
 states.parameters = {
     docs: {
-        iframeHeight: 300
+        iframeHeight: 300,
+        storyDescription: `Step input can be displayed in various states such as Success, Information, Error and Warning.
+
+**To display step input in a semantic state, add the following classes to the main elements:**
+
+State | Class
+:------ | :-----------
+Success | \`is-success\`
+Information | \`is-information\`
+Error | \`is-error\`
+Warning | \`is-warning\`
+        
+        `
     }
 };
 
+export const focused = () => `<label class="fd-form-label" for="step-20">Focused Step Input</label><br />
+<div class="fd-step-input is-focus">
+        <button aria-label="Step down" class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button"
+            onclick="stepInputValue('step-20', 'down');"
+            tabindex="-1" type="button">
+                <i class="sap-icon--less"></i>
+        </button>
+    <input class="
+            fd-input 
+            fd-input--no-number-spinner 
+            fd-step-input__input
+    " id="step-20" type="number" value="0">
+        <button aria-label="Step up" class="
+            fd-button 
+            fd-button--transparent
+            fd-step-input__button"
+            onclick="stepInputValue('step-20', 'up');" 
+            tabindex="-1" type="button">
+                <i class="sap-icon--add"></i>
+        </button>
+</div>
+`;
+
+focused.storyName = 'Focused';
+focused.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: `By default, step input has a built-in focused state, however; it is not supported by IE11. To enable the focused state on IE11, add the \`is-focus\` class to the main element.
+        `
+    }
+};
 
 export const disabled = () => `<label class="fd-form-label" for="step-13">Disabled Step Input</label><br />
 <div class="fd-step-input is-disabled">
@@ -251,6 +272,15 @@ export const disabled = () => `<label class="fd-form-label" for="step-13">Disabl
         </button>
 </div>
 `;
+
+disabled.storyName = 'Disabled';
+disabled.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: `Step input can be disabled by adding the \`is-disabled\` class to the main element.
+        `
+    }
+};
 
 export const readOnly = () => `<label class="fd-form-label" for="step-14">Temperature set to</label><br />
 <div class="fd-form-item fd-form-item--horizontal">
@@ -280,3 +310,12 @@ export const readOnly = () => `<label class="fd-form-label" for="step-14">Temper
         <span class="fd-form-label fd-form-label--unit-description">Degree Celsius</span>
 </div>
 `;
+
+readOnly.storyName = 'Read-only';
+readOnly.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: `Step input can be displayed as read-only by adding the \`is-readonly\` class to the main element.
+        `
+    }
+};
