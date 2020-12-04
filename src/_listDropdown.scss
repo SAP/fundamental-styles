@@ -138,6 +138,12 @@
       display: contents;
     }
 
+    @supports not (display: contents) { /* workaround because Edge doesn't support display: contents; */
+      .#{$block}__secondary {
+        display: inline-block;
+      }
+    }
+
     .#{$block}__icon {
       line-height: 1rem;
     }
