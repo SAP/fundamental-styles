@@ -2251,7 +2251,7 @@ exports[`Storyshots Layouts/Dynamic Page Summary Line (mobile) 1`] = `
                     
         <div
           aria-label="Expand summary line action"
-          class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+          class="fd-dynamic-page__toolbar-actions  fd-dynamic-page__toolbar-actions--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
           role="toolbar"
         >
           

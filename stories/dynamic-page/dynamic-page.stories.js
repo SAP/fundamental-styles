@@ -707,7 +707,7 @@ export const summaryLine = () =>
                     tabindex="0">
                     <h1 class="fd-dynamic-page__summarized-title fd-dynamic-page__summarized-title--collapsed" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
                     <div role="toolbar" aria-label="Expand summary line action"
-                        class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                        class="fd-dynamic-page__toolbar-actions  fd-dynamic-page__toolbar-actions--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                             <button class="fd-button fd-button--transparent" aria-label="Expand">
                                 <i class="sap-icon--slim-arrow-down"></i>
                             </button>
