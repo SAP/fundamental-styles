@@ -311,7 +311,7 @@ exports[`Storyshots Components/StepInput Focused 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/StepInput Read Only 1`] = `
+exports[`Storyshots Components/StepInput Read-only 1`] = `
 <section>
   <label
     class="fd-form-label"
