@@ -1178,7 +1178,7 @@ exports[`Storyshots Components/Table Grid Table 1`] = `
           
                     
           <div
-            class="fd-popover"
+            class="fd-popover fd-popover--full-width"
           >
             
                         
@@ -1312,7 +1312,7 @@ exports[`Storyshots Components/Table Grid Table 1`] = `
         
                 
         <div
-          class="fd-popover"
+          class="fd-popover fd-popover--full-width"
         >
           
                     
@@ -1495,7 +1495,7 @@ exports[`Storyshots Components/Table Grid Table 1`] = `
           
                     
           <div
-            class="fd-popover"
+            class="fd-popover fd-popover--full-width"
           >
             
                         
@@ -1629,7 +1629,7 @@ exports[`Storyshots Components/Table Grid Table 1`] = `
         
                 
         <div
-          class="fd-popover"
+          class="fd-popover fd-popover--full-width"
         >
           
                     
@@ -1812,7 +1812,7 @@ exports[`Storyshots Components/Table Grid Table 1`] = `
           
                     
           <div
-            class="fd-popover"
+            class="fd-popover fd-popover--full-width"
           >
             
                         
@@ -1946,7 +1946,7 @@ exports[`Storyshots Components/Table Grid Table 1`] = `
         
                 
         <div
-          class="fd-popover"
+          class="fd-popover fd-popover--full-width"
         >
           
                     
@@ -2130,7 +2130,7 @@ exports[`Storyshots Components/Table Grid Table 1`] = `
           
                     
           <div
-            class="fd-popover"
+            class="fd-popover fd-popover--full-width"
           >
             
                         
@@ -2264,7 +2264,7 @@ exports[`Storyshots Components/Table Grid Table 1`] = `
         
                 
         <div
-          class="fd-popover"
+          class="fd-popover fd-popover--full-width"
         >
           
                     
