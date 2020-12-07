@@ -29,14 +29,22 @@ $message-box-states: (
 
   position: relative;
   z-index: 1;
+  background-color: transparent;
 
   @extend %dialog;
 
   display: none;
 
+  &::before {
+    background-color: transparent;
+  }
+
   // ELEMENTS
   &__content {
     @include fd-reset();
+
+    position: relative;
+    z-index: 1;
 
     @extend %dialog-content;
 
