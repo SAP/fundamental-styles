@@ -140,7 +140,9 @@ $block: #{$fd-namespace}-dynamic-page;
     }
   }
 
-  .#{$fd-namespace}-breadcrumb.#{$block}__breadcrumb {
+  &__breadcrumb {
+    @include fd-reset();
+
     padding: 0.5rem 0 0.25rem 0;
 
     &--sm {
@@ -230,7 +232,9 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-flex-vertical-center();
   }
 
-  .#{$fd-namespace}-toolbar.#{$block}__toolbar {
+  &__toolbar {
+    @include fd-reset();
+
     padding: 0 0 0 1rem;
     order: 1;
     justify-content: flex-end;
@@ -264,7 +268,9 @@ $block: #{$fd-namespace}-dynamic-page;
     }
   }
 
-  .#{$fd-namespace}-toolbar.#{$block}__toolbar-actions {
+  &__toolbar-actions {
+    @include fd-reset();
+
     padding: 0;
     order: 2;
     justify-content: flex-end;
@@ -280,7 +286,9 @@ $block: #{$fd-namespace}-dynamic-page;
     }
   }
 
-  .#{$fd-namespace}-toolbar.#{$block}__title-content-toolbar {
+  &__title-content-toolbar {
+    @include fd-reset();
+
     justify-content: flex-start;
     align-self: center;
     padding: 0;
@@ -372,8 +380,7 @@ $block: #{$fd-namespace}-dynamic-page;
     &--overflow {
       overflow: hidden;
     }
-  }
-  .#{$fd-namespace}-tabs.#{$block}__tabs {
+
     &--sm {
       @include responsive-page($padding-x: 0.5rem);
     }
