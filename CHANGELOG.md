@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.38...v0.13.1-rc.39) (2020-12-07)
+
+
+### Bug Fixes
+
+* align title and title content in Dynamic Page ([#1924](https://github.com/SAP/fundamental-styles/issues/1924)) ([9a1530c](https://github.com/SAP/fundamental-styles/commit/9a1530c4e15cb252585978330bbc7f514e51ff63))
+
 ### [0.13.1-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.37...v0.13.1-rc.38) (2020-12-07)
 
 
