@@ -231,7 +231,8 @@ $fd-card-content-avatar-text-spacing: 0.5rem !default;
   }
 
   &__numeric-content.#{$numeric-content} {
-    width: initial;
+    flex-shrink: 0;
+    width: auto;
   }
 
   &__content {
