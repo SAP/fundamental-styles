@@ -17,11 +17,11 @@ $warningBoxShadow: inset 0 -0.0625rem var(--sapWarningBorderColor), var(--sapCon
 $informationBoxShadow: inset 0 -0.0625rem var(--sapInformationBorderColor), var(--sapContent_HeaderShadow);
 
 $message-box-states: (
-  "confirmation": ("iconColor": var(--sapNeutralElementColor), "icon": "\e1c4", "boxShadow": var(--sapContent_HeaderShadow)),
-  "error": ("iconColor": var(--sapNegativeElementColor), "icon": "\e0b1", "boxShadow": $errorBoxShadow),
-  "success": ("iconColor": var(--sapPositiveElementColor), "icon": "\e203", "boxShadow": $successBoxShadow),
-  "warning": ("iconColor": var(--sapCriticalElementColor), "icon": "\e201", "boxShadow": $warningBoxShadow),
-  "information": ("iconColor": var(--sapInformativeElementColor), "icon": "\e05c", "boxShadow": $informationBoxShadow)
+  "confirmation": ("iconColor": var(--sapNeutralElementColor), "boxShadow": var(--sapContent_HeaderShadow)),
+  "error": ("iconColor": var(--sapNegativeElementColor), "boxShadow": $errorBoxShadow),
+  "success": ("iconColor": var(--sapPositiveElementColor), "boxShadow": $successBoxShadow),
+  "warning": ("iconColor": var(--sapCriticalElementColor), "boxShadow": $warningBoxShadow),
+  "information": ("iconColor": var(--sapInformativeElementColor), "boxShadow": $informationBoxShadow)
 );
 
 .#{$block} {
@@ -97,30 +97,16 @@ $message-box-states: (
     &--#{$set-name} {
       .#{$block}__header.#{$bar} {
         box-shadow: map_get($state-set, "boxShadow");
-      }
 
-      .#{$block}__title {
-        @include fd-icon-base () {
-          position: relative;
-          top: 0.0625rem;
-          font-size: $fd-message-box-title-icon-text-size;
+        [class*=sap-icon] {
+          font-size: 1rem;
           margin-right: $fd-message-box-icon-text-spacing;
           color: map_get($state-set, "iconColor");
-          content: map_get($state-set, "icon");
-        }
-      }
 
-      @include fd-rtl() {
-        .#{$block}__title::before {
-          margin-right: 0;
-          margin-left: $fd-message-box-icon-text-spacing;
-        }
-      }
-
-      &.#{$block}--no-icon {
-        .#{$block}__title::before {
-          content: '';
-          margin: 0;
+          @include fd-rtl() {
+            margin-right: 0;
+            margin-left: $fd-message-box-icon-text-spacing;
+          }
         }
       }
     }
