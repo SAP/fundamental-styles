@@ -2,7 +2,42 @@
 export default {
     title: 'Components/Table',
     parameters: {
-        description: 'A table is a set of tabular data. Line items can support data, images and actions.',
+        description: `
+A table contains a set of line items and usually comprises rows (with each row showing one line item) and columns. Line items can contain data of any kind, but also interactive elements, for example, for editing the data, navigating, or triggering actions relating to the line item.
+To display large amounts of data in tabular form, several table components are provided. These are divided into two groups, each of which is defined by a consistent feature set:
+
+- Fully responsive tables
+- Desktop-centric tables
+
+
+##Usage 
+**Use the responsive table if:**
+
+- The table content should be flexible and visually appealing. The responsive table offers the most flexibility in regards to its content because multiple components can be used. In addition, different rows can be based on different item templates.
+- The focus lies on working on line items, not on individual cells.
+- A main use case involves selecting one or more items, for which details are needed in order to choose the correct item.
+- Line items are independent of each other and no operation across columns is needed.
+- You want to have only one implementation for all devices.
+
+
+**Use the grid table if:**
+
+- You need to display more than 1,000 rows at the same time.
+- The cell level and the spatial relationship between cells are more important than the line item, such as if users need to recognize patterns in the data, like in waterfall charts.
+- Comparing items is a major use case. The grid table layout remains stable irrespective of the screen width. In addition, a cell only ever contains one component.
+- You need an analytical table, but you cannot provide an analytical binding.
+
+
+**Do not use the table if:**
+
+- You want to display a simple hierarchical dataset.
+- You want to use a hierarchical master list for a master-detail scenario using the **Flexible Column Layout**.
+- Using a tree table would be too complex.
+- The main use case involves selecting one of several hierarchical items with only a few details per item.
+
+In these cases, use the **Tree** instead.
+         
+        `,
         docs: {
             iframeHeight: 500
         },
@@ -71,14 +106,16 @@ export const primary = () => `
 </table>
 `;
 
-/**
- * * `--no-vertical-borders` modifier can be applied to render a table without vertical borders.
- * `--no-horizontal-borders` modifier can be applied to render a table without horizontal borders.
+primary.storyName = 'Primary';
+primary.parameters = {
+    docs: {
+        storyDescription: `
+The primary table contains columns with headers, and rows with links. In the first column, links are displayed. To display links within a table, add the \`fd-link\` class within the table data.
+    `
+    }
+};
 
- Both can be added to  `fd-table`, `fd-table__header`, or `fd-table__body`.
- */
-
-export const withoutBorders = () => `
+export const borderless = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table Without Borders</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
@@ -115,7 +152,19 @@ export const withoutBorders = () => `
 </table>
 `;
 
-export const withoutBordersOnBody = () => `
+borderless.storyName = 'Borderless';
+borderless.parameters = {
+    docs: {
+        storyDescription: `
+Table can be displayed without borders that separate the columns, column headers, and rows. To display a borderless table, add the \`fd-table--no-horizontal-borders\` and \`fd-table--no-vertical-borders\` modifier classes to the main element.
+
+**Note:** You can remove borders on individual cells by adding the above-mentioned modifier classes to them only.
+        
+    `
+    }
+};
+
+export const borderlessbody = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table Without Borders On Body</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
@@ -152,10 +201,16 @@ export const withoutBordersOnBody = () => `
 </table>
 `;
 
-/** Footer can be added by using `fd-table__footer` class with `tfoot` element.
- It has to contain same size of columns as tbody and thead. */
+borderlessbody.storyName = 'Borderless (body)';
+borderlessbody.parameters = {
+    docs: {
+        storyDescription: `
+Table can be displayed without borders that separate the columns and rows only, leaving the column headers with borders. To display a borderless table body, add the  \`fd-table--no-horizontal-borders\` and \`fd-table--no-vertical-borders\` modifier classes to the body element.
+    `
+    }
+};
 
-export const withFooter = () => `
+export const footer = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table With Footer Cozy Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
@@ -199,7 +254,16 @@ export const withFooter = () => `
     </tfoot>
 </table>`;
 
-export const withFooterCompact = () => `
+footer.storyName = 'Footer';
+footer.parameters = {
+    docs: {
+        storyDescription: `
+Table can be displayed with a footer. To display a table footer, add the \`td-table__footer\` class with a \`tfoot\` element. It must contain the same amount and size of columns as the table head and body containers.
+    `
+    }
+};
+
+export const compactFooter = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table With Footer Compact Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
@@ -244,7 +308,16 @@ export const withFooterCompact = () => `
 </table>
 `;
 
-export const withFooterCondensed = () => `
+compactFooter.storyName = 'Footer (compact)';
+compactFooter.parameters = {
+    docs: {
+        storyDescription: `
+Table can be displayed with a footer in compact mode, which is ideal for larger desktop screens. To display a compact table, add the \`fd-table--compact\` modifier class to the main element.
+    `
+    }
+};
+
+export const condensedFooter = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table With Footer Condensed Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
@@ -289,14 +362,16 @@ export const withFooterCondensed = () => `
 </table>
 `;
 
-/**
- * Interactive states of columns and row can be set by adding
+condensedFooter.storyName = 'Footer (condensed)';
+condensedFooter.parameters = {
+    docs: {
+        storyDescription: `
+Similar to the previous example, table can be displayed with a footer in condensed mode (for desktop screens). To display a condensed table, add the \`fd-table--condensed\` modifier class to the main element.
+    `
+    }
+};
 
- * For active state handler `--activable` modifier
- * For hover state handler `--hoverable` modifier
- */
-
-export const interactiveRowsAndColumns = () => `
+export const interactive = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Interactive Table With Hoverable and Activable Cells and Rows</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
@@ -344,12 +419,161 @@ export const interactiveRowsAndColumns = () => `
 </table>
 `;
 
-interactiveRowsAndColumns.storyName = 'Interactive Table With Hoverable and Activable Cells and Rows';
+interactive.storyName = 'Interactive';
+interactive.parameters = {
+    docs: {
+        storyDescription: `
+The table component can be interactive with hoverable and activable cells and rows. 
 
-/**
- * A table can be set to have focusable rows by adding `fd-table__row--focusable` and a valid `tabindex` to the rows.
- * It is not recommended to use focusable rows simultaneously with focusable cells.
- */
+Interaction | Modifier class
+:------------- | :------------------
+Activate | \`--activable\`
+Hover | \`--hoverable\`     
+    `
+    }
+};
+
+export const semanticRows = () => `
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin: 0;">Table with Semantic Rows</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
+<table class="fd-table">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell fd-table__cell--status-indicator"></th>
+            <th class="fd-table__cell fd-table__cell--checkbox" scope="col">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ez611">
+                <label class="fd-checkbox__label" for="Ai9ez611"></label>
+            </th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--status-indicator"></td>
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ek611">
+                <label class="fd-checkbox__label" for="Ai9ek611"></label>
+            </td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--valid"></td>
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ek673">
+                <label class="fd-checkbox__label" for="Ai9ek673"></label>
+            </td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell fd-table__cell--valid">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--status-indicator"></td>
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ek69s">
+                <label class="fd-checkbox__label" for="Ai9ek69s"></label>
+            </td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+         <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--warning"></td>
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ekk69s">
+                <label class="fd-checkbox__label" for="Ai9ekk69s"></label>
+            </td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell fd-table__cell--warning">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--status-indicator"></td>
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai73k69s">
+                <label class="fd-checkbox__label" for="Ai73k69s"></label>
+            </td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+         <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--error"></td>
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai734F6s">
+                <label class="fd-checkbox__label" for="Ai734F6s"></label>
+            </td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell fd-table__cell--error">01/26/17</td>
+        </tr>  
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--status-indicator"></td>
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai73HE36s">
+                <label class="fd-checkbox__label" for="Ai73HE36s"></label>
+            </td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+         <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--information"></td>
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai7JDE36s">
+                <label class="fd-checkbox__label" for="Ai7JDE36s"></label>
+            </td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell fd-table__cell--information">01/26/17</td>
+        </tr>   
+        <tr class="fd-table__row">
+            <td class="fd-table__cell fd-table__cell--status-indicator"></td>
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai7JGD6s">
+                <label class="fd-checkbox__label" for="Ai7JGD6s"></label>
+            </td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>                    
+    </tbody>
+</table>
+`;
+
+semanticRows.storyName = 'Semantic';
+semanticRows.parameters = {
+    docs: {
+        storyDescription: `
+The table component can display highlight indicators to classify certain items with semantic states. To display status indicators in table, add the \`fd-table__cell--status-indicator\` modifier class to each row. 
+
+**To display semantic highlight indicators, add the following modifier classes to \`fd-table__cell--status-indicator\`:**
+        
+Semantic states | Modifier class
+:-------------------- | :-----------------
+Valid | \`--valid\`
+Warning | \`--warning\`
+Error | \`--error\`
+Information | \`--information\` 
+             
+    `
+    }
+};
 
 export const focusableRows = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
@@ -392,10 +616,14 @@ export const focusableRows = () => `
 </table>
 `;
 
-/**
- * A table can be set to have focusable cells by adding `fd-table__cell--focusable` and a valid `tabindex` to the cells.
- * It is not recommended to use focusable cells simultaneously with focusable rows.
- */
+focusableRows.storyName = 'Focusable rows';
+focusableRows.parameters = {
+    docs: {
+        storyDescription: `
+Table can display focusable rows by adding the \`fd-table__row--focusable\` modifier class and a valid \`tabindex\` to the rows. It is not recommended to use focusable rows simultaneously with focusable cells.         
+    `
+    }
+};
 
 export const focusableCells = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
@@ -438,13 +666,16 @@ export const focusableCells = () => `
 </table>
 `;
 
-/**
- * The checkbox input can be used at the beginning of each row to allow for bulk actions.
- It is recommended to add the parameter `aria-selected="true"` to the row that is selected.
- Also for cells that include a checkbox should contain the `fd-table__cell--checkbox` class.
- */
+focusableCells.storyName = 'Focusable cells';
+focusableCells.parameters = {
+    docs: {
+        storyDescription: `
+Table can display focusable cells by adding the \`fd-table__cell--focusable\` modifier class and a valid \`tabindex\` to the cells. It is not recommended to use focusable cells simultaneously with focusable rows.
+    `
+    }
+};
 
-export const withCheckbox = () => `
+export const checkbox = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table With Checkbox Cozy Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
@@ -497,7 +728,16 @@ export const withCheckbox = () => `
 </table>
 `;
 
-export const withCheckboxCompact = () => `
+checkbox.storyName = 'Checkbox';
+checkbox.parameters = {
+    docs: {
+        storyDescription: `
+Table can display checkboxes to allow the user to perform bulk actions. To display checkboxes in table, add the \`fd-table__cell--checkbox\` modifier class to the appropriate cell. It is recommended to add the parameter \`aria-selected="true"\` to the row that is selected.
+    `
+    }
+};
+
+export const compactCheckbox = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table With Checkbox Compact Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
@@ -550,7 +790,19 @@ export const withCheckboxCompact = () => `
 </table>
 `;
 
-export const withCheckboxCondensed = () => `
+compactCheckbox.storyName = 'Checkbox (compact)';
+compactCheckbox.parameters = {
+    docs: {
+        storyDescription: `
+Table can be displayed with checkboxes in compact mode. To display checkboxes in table, add the \`fd-table__cell--checkbox\` modifier class to the appropriate cell. It is recommended to add the parameter \`aria-selected="true"\` to the row that is selected.
+
+
+To display the table in compact mode, add the \`fd-table--compact\` modifier class to the table element.        
+    `
+    }
+};
+
+export const condensedCheckbox = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table With Checkbox Condensed Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
@@ -603,7 +855,20 @@ export const withCheckboxCondensed = () => `
 </table>
 `;
 
-export const withPagination = () => `
+condensedCheckbox.storyName = 'Checkbox (compact)';
+condensedCheckbox.parameters = {
+    docs: {
+        storyDescription: `
+Table can be displayed with checkboxes in condensed mode. To display checkboxes in table, add the \`fd-table__cell--checkbox\` modifier class to the appropriate cell. It is recommended to add the parameter \`aria-selected="true"\` to the row that is selected.
+
+
+To display the table in condensed mode, add the \`fd-table--condensed\` modifier class to the table element.
+               
+    `
+    }
+};
+
+export const pagination = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table With Pagination at The Bottom</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
@@ -664,9 +929,16 @@ export const withPagination = () => `
 </div>
 `;
 
-/** Advanced Toolbar can be used to customize table. Certain buttons trigger dialogs, where user can set some data. */
+pagination.storyName = 'Pagination';
+pagination.parameters = {
+    docs: {
+        storyDescription: `
+Table can be displayed with bottom pagination by adding the \`fd-pagination\` class after the table.               
+    `
+    }
+};
 
-export const withAdvancedToolbar = () => `
+export const advancedToolbar = () => `
 <div class="fd-dialog" id="filter-dialog-example">
     <section class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-filter">
         <header class="fd-dialog__header fd-bar">
@@ -848,11 +1120,403 @@ export const withAdvancedToolbar = () => `
 </table>
 `;
 
-/**
- * Responsive table is not that different than basic table, there should be used some modifiers, to remove borders.
- For Pop-in example markup is changed, one row is transformed to 2 rows with `fd-table__row--main` and
- `fd-table__row--secondary`modifiers. Also some cells should be merged into paragraphs.
- */
+advancedToolbar.storyName = 'Advanced toolbar';
+advancedToolbar.parameters = {
+    docs: {
+        storyDescription: `
+The table component can be displayed with an advanced **Toolbar**, which allows users to customize their table. In this example, buttons trigger **Dialogs**. To display an advanced toolbar, pair \`fd-dialog\` components with an \`fd-toolbar\` component.             
+    `
+    }
+};
+
+export const contextualMenu = () => `
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin: 0;">Table with Contextual Menu</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
+<table class="fd-table" >
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col"></th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell fd-table__cell--fit-content">
+                <div class="fd-popover">
+                    <div class="fd-popover__control">
+                        <button aria-label="navigation" class="fd-button fd-button--transparent" aria-controls="pQqQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More">
+                            <i class="sap-icon--overflow"></i>
+                        </button>
+                    </div>
+                    <div class="fd-popover__body" aria-hidden="true" id="pQqQRFF3">
+                        <nav class="fd-menu">
+                            <ul class="fd-menu__list fd-menu__list--no-shadow">
+                                <li class="fd-menu__item">
+                                    <a href="#" class="fd-menu__link">
+                                        <span class="fd-menu__title">Option 1</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a href="#" class="fd-menu__link">
+                                        <span class="fd-menu__title">Option 2</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a href="#" class="fd-menu__link">
+                                        <span class="fd-menu__title">Option 3</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell fd-table__cell--fit-content">
+                <div class="fd-popover">
+                    <div class="fd-popover__control">
+                        <button aria-label="navigation" class="fd-button fd-button--transparent" aria-controls="G54qQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More">
+                            <i class="sap-icon--overflow"></i>
+                        </button>
+                    </div>
+                    <div class="fd-popover__body" aria-hidden="true" id="G54qQRFF3">
+                        <nav class="fd-menu">
+                            <ul class="fd-menu__list fd-menu__list--no-shadow">
+                                <li class="fd-menu__item">
+                                    <a href="#" class="fd-menu__link">
+                                        <span class="fd-menu__title">Option 1</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a href="#" class="fd-menu__link">
+                                        <span class="fd-menu__title">Option 2</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a href="#" class="fd-menu__link">
+                                        <span class="fd-menu__title">Option 3</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell fd-table__cell--fit-content">
+                <div class="fd-popover">
+                    <div class="fd-popover__control">
+                        <button aria-label="navigation" class="fd-button fd-button--transparent" aria-controls="G54JRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More">
+                            <i class="sap-icon--overflow"></i>
+                        </button>
+                    </div>
+                    <div class="fd-popover__body" aria-hidden="true" id="G54JRFF3">
+                        <nav class="fd-menu">
+                            <ul class="fd-menu__list fd-menu__list--no-shadow">
+                                <li class="fd-menu__item">
+                                    <a href="#" class="fd-menu__link">
+                                        <span class="fd-menu__title">Option 1</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a href="#" class="fd-menu__link">
+                                        <span class="fd-menu__title">Option 2</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a href="#" class="fd-menu__link">
+                                        <span class="fd-menu__title">Option 3</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+ `;
+
+contextualMenu.storyName = 'Contextual menu';
+contextualMenu.parameters = {
+    docs: {
+        storyDescription: `
+Table can display a contextual menu containing actions if there is not enough space in a given row. It is recommended to use a contextual menu if there are more than three actions. To display table with a contextual menu, add the \`fd-popover\` component to any given cell. See **Popover** for more details.
+    `
+    }
+};
+
+export const menuHeader = () => `
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin: 0;">Table with Popover in Headers</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
+<table class="fd-table" >
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col">
+                <div class="fd-table__popover fd-popover">
+                    <div class="fd-popover__control" aria-controls="popoverA1" aria-expanded="false" aria-haspopup="true">
+                        <div class="fd-table__inner">
+                            Column Header Ascending
+                            <span class="fd-table__icon sap-icon--sort-ascending"></span>
+                        </div>
+                    </div>
+                    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverA1">
+                        <ul class="fd-list fd-list--compact" role="list">
+                            <li tabindex="0" role="listitem" class="fd-list__item">
+                                <span class="fd-list__icon sap-icon--sort-descending"></span>
+                                <span class="fd-list__title">Sort Descending</span>
+                            </li>
+                            <li tabindex="0" role="listitem" class="fd-list__item">
+                                <span class="fd-list__icon sap-icon--sort-ascending"></span>
+                                <span class="fd-list__title">Sort Ascendnig</span>
+                            </li>
+                            <li role="listitem" class="fd-list__item">
+                                <span class="fd-list__icon sap-icon--filter"></span>
+                                <div class="fd-form-item  fd-form-item--horizontal">
+                                    <label class="fd-form-label" for="input-1d">Filter</label>
+                                    <input class="fd-input fd-input--compact" id="input-1d">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </th>
+            <th class="fd-table__cell" scope="col">
+                <div class="fd-table__popover fd-popover">
+                    <div class="fd-popover__control" aria-controls="popoverA2" aria-expanded="false" aria-haspopup="true">
+                        <div class="fd-table__inner">
+                            Column Header Descending
+                            <span class="fd-table__icon sap-icon--sort-descending"></span>
+                        </div>
+                    </div>
+                    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverA2">
+                        <ul class="fd-list fd-list--compact" role="list">
+                            <li tabindex="0" role="listitem" class="fd-list__item">
+                                <span class="fd-list__icon sap-icon--sort-descending"></span>
+                                <span class="fd-list__title">Sort Descending</span>
+                            </li>
+                            <li tabindex="0" role="listitem" class="fd-list__item">
+                                <span class="fd-list__icon sap-icon--sort-ascending"></span>
+                                <span class="fd-list__title">Sort Ascendnig</span>
+                            </li>
+                            <li role="listitem" class="fd-list__item">
+                                <span class="fd-list__icon sap-icon--filter"></span>
+                                <div class="fd-form-item  fd-form-item--horizontal">
+                                    <label class="fd-form-label" for="input-1d">Filter</label>
+                                    <input class="fd-input fd-input--compact" id="input-1d2">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+    </tbody>
+</table>
+`;
+
+menuHeader.storyName = 'Menu header';
+menuHeader.parameters = {
+    docs: {
+        storyDescription: `
+Table can display menu options from a popover within headers. The example below demonstrates headers containing customization actions such as _Ascending_ and _Descending_. To display a menu within a header, add the \`fd-table__popover\` class to the header cells.
+    `
+    }
+};
+
+export const fixColumnHeader = () => `
+<style>
+        .fd-table--fixed {
+           padding-left: 200px;
+        }
+        [dir=rtl] .fd-table--fixed,
+        .fd-table--fixed[dir=rtl] {
+           padding-left: 0;
+           padding-right: 200px;            
+        }
+        
+        .fd-table--fixed .fd-table__cell {
+            min-width: 200px;
+            max-width: 200px;
+        }
+</style>
+<div style="position: relative">
+    <div class="fd-table--fixed">
+      <table class="fd-table">
+         <thead class="fd-table__header">
+            <tr class="fd-table__row">
+               <th class="fd-table__cell fd-table__cell--fixed"  aria-haspopup="true" scope="col">
+                Header Column
+               </th>
+               <th class="fd-table__cell" scope="col">
+                    Header Column
+               </th>
+               <th class="fd-table__cell" scope="col">
+                    Header Column
+               </th>
+               <th class="fd-table__cell" scope="col">
+                    Header Column
+               </th>
+               <th class="fd-table__cell" scope="col">
+                    Header Column
+               </th>
+               <th class="fd-table__cell" scope="col">
+                    Header Column
+               </th>
+               <th class="fd-table__cell" scope="col">
+                    Header Column
+               </th>
+               <th class="fd-table__cell" scope="col">
+                    Header Column
+               </th>
+            </tr>
+         </thead>
+         <tbody class="fd-table__body">
+            <tr class="fd-table__row">
+               <th class="fd-table__cell fd-table__cell--fixed" scope="row">Row header</th>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+            </tr>
+            <tr class="fd-table__row">
+               <th class="fd-table__cell fd-table__cell--fixed" scope="row">Row header</th>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+            </tr>
+            <tr class="fd-table__row">
+               <th class="fd-table__cell fd-table__cell--fixed" scope="row">Row header</th>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+            </tr>
+         </tbody>
+      </table>
+    </div>
+</div>
+`;
+
+fixColumnHeader.storyName = 'Fixed header';
+fixColumnHeader.parameters = {
+    docs: {
+        storyDescription: `
+Table can display columns with a fixed header. To display fixed headers, wrap the table with the \`fd-table--fixed\` modifier class. In addition, add the \`fd-table__cell--fixed\` modifier class to each cell element, it should be propagated to the entire row. 
+        
+        
+It’s important to hardcode the width of the columns, otherwise the cells will be squished.
+    `
+    }
+};
+
+export const navIndicators = () => `
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin: 0;">Table with Navigation Indication State</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
+<table class="fd-table">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col"></th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell fd-table__cell--fit-content">
+                <button aria-label="navigation" class="fd-button fd-button--transparent">
+                    <i class="sap-icon--navigation-right-arrow"></i>
+                </button>
+            </td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated">
+                <button aria-label="navigation" class="fd-button fd-button--transparent">
+                    <i class="sap-icon--navigation-right-arrow"></i>
+                </button>
+            </td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell fd-table__cell--fit-content">
+                <button aria-label="navigation" class="fd-button fd-button--transparent">
+                    <i class="sap-icon--navigation-right-arrow"></i>
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+`;
+
+navIndicators.storyName = 'Navigation indicators';
+navIndicators.parameters = {
+    docs: {
+        storyDescription: `
+The table component can display navigation indicators. You can also display a “navigated” indicator, as indicated in the second row, to mark an item that is currently open. To display a navigated indicator, add the \`fd-table__cell--navigated\` class to the desired table cell.
+    `
+    }
+};
 
 export const responsiveTable = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
@@ -927,6 +1591,16 @@ export const responsiveTable = () => `
         </tr>
     </tbody>
 </table>`;
+
+responsiveTable.storyName = 'Responsive Table';
+responsiveTable.parameters = {
+    docs: {
+        storyDescription: `
+...
+
+    `
+    }
+};
 
 export const responsiveTablePopInMode = () => `
 <div style="max-width: 450px">
@@ -1066,557 +1740,19 @@ export const responsiveTablePopInMode = () => `
 </div>
 `;
 
-/**
- * To show that an item needs attention, you can show a highlight indicator next to the item.
- This can be achieved by passing the `fd-table__cell--status-indicator` class to each row.
- Other indicators such as semantic states and modes can be added using the `--valid`,
- `--information`, `--error`, `--warning` modifiers.
- */
-
-export const semanticRows = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Table with Semantic Rows</h4>
-    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
-</div>
-<table class="fd-table">
-    <thead class="fd-table__header">
-        <tr class="fd-table__row">
-            <th class="fd-table__cell fd-table__cell--status-indicator"></th>
-            <th class="fd-table__cell fd-table__cell--checkbox" scope="col">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ez611">
-                <label class="fd-checkbox__label" for="Ai9ez611"></label>
-            </th>
-            <th class="fd-table__cell" scope="col">Column Header</th>
-            <th class="fd-table__cell" scope="col">Column Header</th>
-            <th class="fd-table__cell" scope="col">Column Header</th>
-            <th class="fd-table__cell" scope="col">Column Header</th>
-        </tr>
-    </thead>
-    <tbody class="fd-table__body">
-        <tr class="fd-table__row">
-            <td class="fd-table__cell fd-table__cell--status-indicator"></td>
-            <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ek611">
-                <label class="fd-checkbox__label" for="Ai9ek611"></label>
-            </td>
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
-        </tr>
-        <tr class="fd-table__row">
-            <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--valid"></td>
-            <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ek673">
-                <label class="fd-checkbox__label" for="Ai9ek673"></label>
-            </td>
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell fd-table__cell--valid">01/26/17</td>
-        </tr>
-        <tr class="fd-table__row">
-            <td class="fd-table__cell fd-table__cell--status-indicator"></td>
-            <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ek69s">
-                <label class="fd-checkbox__label" for="Ai9ek69s"></label>
-            </td>
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
-        </tr>
-         <tr class="fd-table__row">
-            <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--warning"></td>
-            <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ekk69s">
-                <label class="fd-checkbox__label" for="Ai9ekk69s"></label>
-            </td>
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell fd-table__cell--warning">01/26/17</td>
-        </tr>
-        <tr class="fd-table__row">
-            <td class="fd-table__cell fd-table__cell--status-indicator"></td>
-            <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai73k69s">
-                <label class="fd-checkbox__label" for="Ai73k69s"></label>
-            </td>
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
-        </tr>
-         <tr class="fd-table__row">
-            <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--error"></td>
-            <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai734F6s">
-                <label class="fd-checkbox__label" for="Ai734F6s"></label>
-            </td>
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell fd-table__cell--error">01/26/17</td>
-        </tr>  
-        <tr class="fd-table__row">
-            <td class="fd-table__cell fd-table__cell--status-indicator"></td>
-            <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai73HE36s">
-                <label class="fd-checkbox__label" for="Ai73HE36s"></label>
-            </td>
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
-        </tr>
-         <tr class="fd-table__row">
-            <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--information"></td>
-            <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai7JDE36s">
-                <label class="fd-checkbox__label" for="Ai7JDE36s"></label>
-            </td>
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell fd-table__cell--information">01/26/17</td>
-        </tr>   
-        <tr class="fd-table__row">
-            <td class="fd-table__cell fd-table__cell--status-indicator"></td>
-            <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai7JGD6s">
-                <label class="fd-checkbox__label" for="Ai7JGD6s"></label>
-            </td>
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
-        </tr>                    
-    </tbody>
-</table>
-`;
-
-/** To merge cells, the `--no-horizontal-border` or `--no-vertical-border` modifier should be added. */
-
-export const mergedCells = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Table with Merged Cells</h4>
-    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
-</div>
-<table class="fd-table">
-    <thead class="fd-table__header">
-        <tr class="fd-table__row">
-            <th class="fd-table__cell" scope="col">Name</th>
-            <th class="fd-table__cell" scope="col">Status</th>
-            <th class="fd-table__cell" scope="col">Price</th>
-            <th class="fd-table__cell" scope="col">Country</th>
-        </tr>
-    </thead>
-    <tbody class="fd-table__body">
-        <tr class="fd-table__row fd-table__row--activable">
-            <td class="fd-table__cell fd-table__cell--no-horizontal-border fd-table__cell--no-vertical-border">Banana</td>
-            <td class="fd-table__cell fd-table__cell--no-vertical-border">
-                <span class="fd-object-status fd-object-status--positive">
-                    Available
-                </span>
-            </td>
-            <td class="fd-table__cell">5 EUR</td>
-            <td class="fd-table__cell">India</td>
-        </tr>
-        <tr class="fd-table__row fd-table__row--activable">
-            <td class="fd-table__cell fd-table__cell--no-horizontal-border">Pineapple</td>
-            <td class="fd-table__cell">
-                <span class="fd-object-status fd-object-status--negative">
-                    Out of stock
-                </span>
-            </td>
-            <td class="fd-table__cell">2 EUR</td>
-            <td class="fd-table__cell">Mexico</td>
-        </tr>
-        <tr class="fd-table__row fd-table__row--activable">
-            <td class="fd-table__cell">Orange</td>
-            <td class="fd-table__cell">
-                <span class="fd-object-status fd-object-status--informative">
-                    Temporary unavailable
-                </span>
-            </td>
-            <td class="fd-table__cell">6 EUR</td>
-            <td class="fd-table__cell">Spain</td>
-        </tr>
-    </tbody>
-</table>
-`;
-
-/**
- * When more than three actions exist per row and/or there isn't enough space for the required actions,
- a contextual menu can be substituted to display all actions in one menu.
- */
-
-export const tableWithContextualMenu = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Table with Contextual Menu</h4>
-    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
-</div>
-<table class="fd-table" >
-    <thead class="fd-table__header">
-        <tr class="fd-table__row">
-            <th class="fd-table__cell" scope="col">Column Header</th>
-            <th class="fd-table__cell" scope="col">Column Header</th>
-            <th class="fd-table__cell" scope="col">Column Header</th>
-            <th class="fd-table__cell" scope="col"></th>
-        </tr>
-    </thead>
-    <tbody class="fd-table__body">
-        <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">01/26/17</td>
-            <td class="fd-table__cell fd-table__cell--fit-content">
-                <div class="fd-popover">
-                    <div class="fd-popover__control">
-                        <button aria-label="navigation" class="fd-button fd-button--transparent" aria-controls="pQqQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More">
-                            <i class="sap-icon--overflow"></i>
-                        </button>
-                    </div>
-                    <div class="fd-popover__body" aria-hidden="true" id="pQqQRFF3">
-                        <nav class="fd-menu">
-                            <ul class="fd-menu__list fd-menu__list--no-shadow">
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Option 1</span>
-                                    </a>
-                                </li>
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Option 2</span>
-                                    </a>
-                                </li>
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Option 3</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">01/26/17</td>
-            <td class="fd-table__cell fd-table__cell--fit-content">
-                <div class="fd-popover">
-                    <div class="fd-popover__control">
-                        <button aria-label="navigation" class="fd-button fd-button--transparent" aria-controls="G54qQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More">
-                            <i class="sap-icon--overflow"></i>
-                        </button>
-                    </div>
-                    <div class="fd-popover__body" aria-hidden="true" id="G54qQRFF3">
-                        <nav class="fd-menu">
-                            <ul class="fd-menu__list fd-menu__list--no-shadow">
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Option 1</span>
-                                    </a>
-                                </li>
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Option 2</span>
-                                    </a>
-                                </li>
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Option 3</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">01/26/17</td>
-            <td class="fd-table__cell fd-table__cell--fit-content">
-                <div class="fd-popover">
-                    <div class="fd-popover__control">
-                        <button aria-label="navigation" class="fd-button fd-button--transparent" aria-controls="G54JRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More">
-                            <i class="sap-icon--overflow"></i>
-                        </button>
-                    </div>
-                    <div class="fd-popover__body" aria-hidden="true" id="G54JRFF3">
-                        <nav class="fd-menu">
-                            <ul class="fd-menu__list fd-menu__list--no-shadow">
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Option 1</span>
-                                    </a>
-                                </li>
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Option 2</span>
-                                    </a>
-                                </li>
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Option 3</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </td>
-        </tr>
-    </tbody>
-</table>
- `;
-
-/**
- * Some customization actions can be added to headers, the options will be displayed in popover. Those popover should be
- added with `fd-table__popover` class.
- */
-
-export const withMenuInHeader = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Table with Popover in Headers</h4>
-    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
-</div>
-<table class="fd-table" >
-    <thead class="fd-table__header">
-        <tr class="fd-table__row">
-            <th class="fd-table__cell" scope="col">
-                <div class="fd-table__popover fd-popover">
-                    <div class="fd-popover__control" aria-controls="popoverA1" aria-expanded="false" aria-haspopup="true">
-                        <div class="fd-table__inner">
-                            Column Header Ascending
-                            <span class="fd-table__icon sap-icon--sort-ascending"></span>
-                        </div>
-                    </div>
-                    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverA1">
-                        <ul class="fd-list fd-list--compact" role="list">
-                            <li tabindex="0" role="listitem" class="fd-list__item">
-                                <span class="fd-list__icon sap-icon--sort-descending"></span>
-                                <span class="fd-list__title">Sort Descending</span>
-                            </li>
-                            <li tabindex="0" role="listitem" class="fd-list__item">
-                                <span class="fd-list__icon sap-icon--sort-ascending"></span>
-                                <span class="fd-list__title">Sort Ascendnig</span>
-                            </li>
-                            <li role="listitem" class="fd-list__item">
-                                <span class="fd-list__icon sap-icon--filter"></span>
-                                <div class="fd-form-item  fd-form-item--horizontal">
-                                    <label class="fd-form-label" for="input-1d">Filter</label>
-                                    <input class="fd-input fd-input--compact" id="input-1d">
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </th>
-            <th class="fd-table__cell" scope="col">
-                <div class="fd-table__popover fd-popover">
-                    <div class="fd-popover__control" aria-controls="popoverA2" aria-expanded="false" aria-haspopup="true">
-                        <div class="fd-table__inner">
-                            Column Header Descending
-                            <span class="fd-table__icon sap-icon--sort-descending"></span>
-                        </div>
-                    </div>
-                    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverA2">
-                        <ul class="fd-list fd-list--compact" role="list">
-                            <li tabindex="0" role="listitem" class="fd-list__item">
-                                <span class="fd-list__icon sap-icon--sort-descending"></span>
-                                <span class="fd-list__title">Sort Descending</span>
-                            </li>
-                            <li tabindex="0" role="listitem" class="fd-list__item">
-                                <span class="fd-list__icon sap-icon--sort-ascending"></span>
-                                <span class="fd-list__title">Sort Ascendnig</span>
-                            </li>
-                            <li role="listitem" class="fd-list__item">
-                                <span class="fd-list__icon sap-icon--filter"></span>
-                                <div class="fd-form-item  fd-form-item--horizontal">
-                                    <label class="fd-form-label" for="input-1d">Filter</label>
-                                    <input class="fd-input fd-input--compact" id="input-1d2">
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </th>
-            <th class="fd-table__cell" scope="col">Column Header</th>
-        </tr>
-    </thead>
-    <tbody class="fd-table__body">
-        <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">01/26/17</td>
-        </tr>
-        <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">01/26/17</td>
-        </tr>
-        <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">01/26/17</td>
-        </tr>
-    </tbody>
-</table>
-`;
-
-/**
- * To create fixed column, these steps need to be reproduced
- * Wrap the table with element with class `fd-table--fixed`
- * Add `fd-table__cell--fixed` class to cell elements, it should be propagated to whole row
- * Hard code the width of columns, otherwise the cells will be squashed.
- */
-
-export const fixColumnHeader = () => `
-<style>
-        .fd-table--fixed {
-           padding-left: 200px;
-        }
-        [dir=rtl] .fd-table--fixed,
-        .fd-table--fixed[dir=rtl] {
-           padding-left: 0;
-           padding-right: 200px;            
-        }
+responsiveTablePopInMode.storyName = 'Responsive Table (pop-in mode)';
+responsiveTablePopInMode.parameters = {
+    docs: {
+        storyDescription: `
+The responsive table can be displayed in pop-in mode for mobile and tablet screens. To display responsive table in pop-in mode, add the \`fd-table--pop-in\` modifier class to the main element and remove the borders (see borderless example). In pop-in mode, a row actually contains two rows:
+-	\`fd-table__row--main\`
+-	\`fd-table__row--secondary\`
         
-        .fd-table--fixed .fd-table__cell {
-            min-width: 200px;
-            max-width: 200px;
-        }
-</style>
-<div style="position: relative">
-    <div class="fd-table--fixed">
-      <table class="fd-table">
-         <thead class="fd-table__header">
-            <tr class="fd-table__row">
-               <th class="fd-table__cell fd-table__cell--fixed"  aria-haspopup="true" scope="col">
-                Header Column
-               </th>
-               <th class="fd-table__cell" scope="col">
-                    Header Column
-               </th>
-               <th class="fd-table__cell" scope="col">
-                    Header Column
-               </th>
-               <th class="fd-table__cell" scope="col">
-                    Header Column
-               </th>
-               <th class="fd-table__cell" scope="col">
-                    Header Column
-               </th>
-               <th class="fd-table__cell" scope="col">
-                    Header Column
-               </th>
-               <th class="fd-table__cell" scope="col">
-                    Header Column
-               </th>
-               <th class="fd-table__cell" scope="col">
-                    Header Column
-               </th>
-            </tr>
-         </thead>
-         <tbody class="fd-table__body">
-            <tr class="fd-table__row">
-               <th class="fd-table__cell fd-table__cell--fixed" scope="row">Row header</th>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-            </tr>
-            <tr class="fd-table__row">
-               <th class="fd-table__cell fd-table__cell--fixed" scope="row">Row header</th>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-            </tr>
-            <tr class="fd-table__row">
-               <th class="fd-table__cell fd-table__cell--fixed" scope="row">Row header</th>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-            </tr>
-         </tbody>
-      </table>
-    </div>
-</div>
-`;
-
-/** Navigation can be indicated on a row in the final column using the `.fd-table__cell--navigated` class. */
-
-export const navigationIndicationStates = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Table with Navigation Indication State</h4>
-    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
-</div>
-<table class="fd-table">
-    <thead class="fd-table__header">
-        <tr class="fd-table__row">
-            <th class="fd-table__cell" scope="col">Column Header</th>
-            <th class="fd-table__cell" scope="col">Column Header</th>
-            <th class="fd-table__cell" scope="col">Column Header</th>
-            <th class="fd-table__cell" scope="col">Column Header</th>
-            <th class="fd-table__cell" scope="col"></th>
-        </tr>
-    </thead>
-    <tbody class="fd-table__body">
-        <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
-            <td class="fd-table__cell fd-table__cell--fit-content">
-                <button aria-label="navigation" class="fd-button fd-button--transparent">
-                    <i class="sap-icon--navigation-right-arrow"></i>
-                </button>
-            </td>
-        </tr>
-        <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
-            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated">
-                <button aria-label="navigation" class="fd-button fd-button--transparent">
-                    <i class="sap-icon--navigation-right-arrow"></i>
-                </button>
-            </td>
-        </tr>
-        <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
-            <td class="fd-table__cell fd-table__cell--fit-content">
-                <button aria-label="navigation" class="fd-button fd-button--transparent">
-                    <i class="sap-icon--navigation-right-arrow"></i>
-                </button>
-            </td>
-        </tr>
-    </tbody>
-</table>
-`;
-
-/** Grid tables can contain various input elements inside of cells. Provide information about the table for screen readers (such as a title, summary, and / or keyboard navigation instructions) using the `fd-table__caption` class. */
+**Note:** cells with titles and text should be wrapped in paragraph tags.
+        
+    `
+    }
+};
 
 export const gridTable = () => `<table class="fd-table" aria-describedby="FU4EwF6st">
     <caption class="fd-table__caption" id="FU4EwF6st" aria-live="polite">
@@ -1899,3 +2035,15 @@ export const gridTable = () => `<table class="fd-table" aria-describedby="FU4EwF
     </tbody>
 </table>
 `;
+
+gridTable.storyName = 'Grid Table';
+gridTable.parameters = {
+    docs: {
+        storyDescription: `
+Grid tables can contain various input elements inside of cells, such as checkboxes, input fields, links and drop-down menus.
+
+####Accessibility
+Information about the table such as a title, summary, and/or keyboard navigation instructions should be provided in captions for screen readers. To caption table information, use the \`fd-table__caption\` class.        
+    `
+    }
+};
