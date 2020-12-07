@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.37...v0.13.1-rc.38) (2020-12-07)
+
+
+### Bug Fixes
+
+* add fix for overflowing card numeric content ([#1940](https://github.com/SAP/fundamental-styles/issues/1940)) ([ad0a01c](https://github.com/SAP/fundamental-styles/commit/ad0a01caeae62b5f0b82f4d8edc1eb8efd704ff0))
+
 ### [0.13.1-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.36...v0.13.1-rc.37) (2020-12-06)
 
 ### [0.13.1-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.35...v0.13.1-rc.36) (2020-12-04)
