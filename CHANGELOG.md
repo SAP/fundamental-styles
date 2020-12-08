@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.14.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.40...v0.14.0-rc.0) (2020-12-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* .fd-message-box--no-icon modifier class is removed
+Semantic icons are added separately: <i class="sap-icon--message-error"></i>
+
+### Bug Fixes
+
+* add missing icons to semantic Message Box ([#1945](https://github.com/SAP/fundamental-styles/issues/1945)) ([b6a5b1e](https://github.com/SAP/fundamental-styles/commit/b6a5b1e18234c7fd48ff043ab7f643d25d56b57d))
+
 ### [0.13.1-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.39...v0.13.1-rc.40) (2020-12-08)
 
 
