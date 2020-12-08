@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.39...v0.13.1-rc.40) (2020-12-08)
+
+
+### Bug Fixes
+
+* form controls in Table ([#1942](https://github.com/SAP/fundamental-styles/issues/1942)) ([c6b6130](https://github.com/SAP/fundamental-styles/commit/c6b6130505053a15802c5b9766de445e8e615b80))
+
 ### [0.13.1-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.38...v0.13.1-rc.39) (2020-12-07)
 
 
