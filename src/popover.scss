@@ -224,6 +224,10 @@ $block: #{$fd-namespace}-popover;
     }
   }
 
+  &--full-width {
+    width: 100%;
+  }
+
   &__popper {
     @include fd-reset();
 
