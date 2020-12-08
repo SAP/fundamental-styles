@@ -18,10 +18,10 @@ export const basic = () => `
 <div class="fd-form-group">
     <div class="fd-form-item">
         <div class="fd-form-label" id="label1">Default (Cozy) Switch</div>
-        <label class="fd-switch__label">
-            <span class="fd-switch">
+        <label class="fd-switch">
+            <span class="fd-switch__control">
                 <input class="fd-switch__input" type="checkbox" name="" value="" aria-labelledby="label1" id="y21YO3251">
-                <div class="fd-switch__wrapper">
+                <div class="fd-switch__slider">
                     <div class="fd-switch__track">
                         <span class="fd-switch__handle" role="presentation"></span>
                     </div>
@@ -31,10 +31,10 @@ export const basic = () => `
     </div>
     <div class="fd-form-item">
         <div class="fd-form-label" id="label2">Compact Switch</div>
-        <label class="fd-switch__label">
-            <span class="fd-switch fd-switch--compact">
+        <label class="fd-switch">
+            <span class="fd-switch__control fd-switch--compact">
                 <input class="fd-switch__input" type="checkbox" name="" value="" aria-labelledby="label2" id="y21YO3431">
-                <div class="fd-switch__wrapper">
+                <div class="fd-switch__slider">
                     <div class="fd-switch__track">
                         <span class="fd-switch__handle" role="presentation"></span>
                     </div>
@@ -44,10 +44,10 @@ export const basic = () => `
     </div>
     <div class="fd-form-item">
         <div class="fd-form-label" id="label7">Disabled Switch</div>
-        <label class="fd-switch__label is-disabled">
-            <span class="fd-switch">
+        <label class="fd-switch is-disabled">
+            <span class="fd-switch__control">
                 <input class="fd-switch__input" type="checkbox" name="" value="" aria-labelledby="label7" id="y21Y13431">
-                <div class="fd-switch__wrapper">
+                <div class="fd-switch__slider">
                     <div class="fd-switch__track">
                         <span class="fd-switch__handle" role="presentation"></span>
                     </div>
@@ -57,10 +57,10 @@ export const basic = () => `
     </div>
     <div class="fd-form-item">
         <div class="fd-form-label" id="label8">Disabled Compact Switch</div>
-        <label class="fd-switch__label is-disabled">
-            <span class="fd-switch fd-switch--compact">
+        <label class="fd-switch is-disabled">
+            <span class="fd-switch__control fd-switch--compact">
                 <input class="fd-switch__input" type="checkbox" name="" value="" aria-labelledby="label8" id="y21Y13491">
-                <div class="fd-switch__wrapper">
+                <div class="fd-switch__slider">
                     <div class="fd-switch__track">
                         <span class="fd-switch__handle" role="presentation"></span>
                     </div>
@@ -82,11 +82,23 @@ export const withText = () => `
 <div class="fd-form-group">
     <div class="fd-form-item">
         <div class="fd-form-label" id="label3">With Off Text</div>
-        <label class="fd-switch__label">
+        <label class="fd-switch">
             <span class="fd-switch__text">Off</span> 
-            <span class="fd-switch">
+            <span class="fd-switch__control">
                 <input class="fd-switch__input" type="checkbox" name="" aria-labelledby="label3" value="" id="y21Y677251">
-                <div class="fd-switch__wrapper">
+                <div class="fd-switch__slider">
+                    <div class="fd-switch__track">
+                        <span class="fd-switch__handle" role="presentation"></span>
+                    </div>
+                </div>
+            </span>
+        </label>
+        
+        <label class="fd-switch">
+            <span class="fd-switch__text">Off</span> 
+            <span class="fd-switch__control">
+                <input class="fd-switch__input" type="checkbox" name="" aria-labelledby="label3" value="" id="y21Y677251">
+                <div class="fd-switch__slider">
                     <div class="fd-switch__track">
                         <span class="fd-switch__handle" role="presentation"></span>
                     </div>
@@ -96,11 +108,11 @@ export const withText = () => `
     </div>
     <div class="fd-form-item">
         <div class="fd-form-label" id="label4">With On Text</div>
-        <label class="fd-switch__label">
+        <label class="fd-switch">
             <span class="fd-switch__text">On</span> 
-            <span class="fd-switch">
+            <span class="fd-switch__control">
                 <input class="fd-switch__input" checked type="checkbox" aria-labelledby="label4" name="" value="" id="y21653431">
-                <div class="fd-switch__wrapper">
+                <div class="fd-switch__slider">
                     <div class="fd-switch__track">
                         <span class="fd-switch__handle" role="presentation"></span>
                     </div>
@@ -110,11 +122,11 @@ export const withText = () => `
     </div>
     <div class="fd-form-item">
         <div class="fd-form-label" id="label9">Disabled With Text</div>
-        <label class="fd-switch__label is-disabled">
+        <label class="fd-switch is-disabled">
             <span class="fd-switch__text">On</span> 
-            <span class="fd-switch">
+            <span class="fd-switch__control">
                 <input class="fd-switch__input" checked type="checkbox" aria-labelledby="label9" name="" value="" id="y29653431">
-                <div class="fd-switch__wrapper">
+                <div class="fd-switch__slider">
                     <div class="fd-switch__track">
                         <span class="fd-switch__handle" role="presentation"></span>
                     </div>
@@ -134,10 +146,10 @@ export const semanticSwitch = () => `
 <div class="fd-form-group">
     <div class="fd-form-item">
         <label class="fd-form-label" id="label5">Semantic Switch</label>
-        <label class="fd-switch__label">
-            <span class="fd-switch fd-switch--semantic">
+        <label class="fd-switch">
+            <span class="fd-switch__control fd-switch--semantic">
                 <input class="fd-switch__input" type="checkbox" aria-labelledby="label5" name="" value="" id="y21YO3251">
-                <div class="fd-switch__wrapper">
+                <div class="fd-switch__slider">
                     <div class="fd-switch__track">
                         <i role="presentation" class="fd-switch__icon--on fd-switch__icon sap-icon--accept"></i>
                         <span class="fd-switch__handle" role="presentation"></span>
@@ -149,10 +161,10 @@ export const semanticSwitch = () => `
     </div>
     <div class="fd-form-item">
         <label class="fd-form-label" id="label6">Semantic Compact Switch</label>
-        <label class="fd-switch__label">
-            <span class="fd-switch fd-switch--semantic fd-switch--compact">
+        <label class="fd-switch">
+            <span class="fd-switch__control fd-switch--semantic fd-switch--compact">
                 <input class="fd-switch__input" type="checkbox" name="" aria-labelledby="label6" value="" id="y21YO3431">
-                <div class="fd-switch__wrapper">
+                <div class="fd-switch__slider">
                     <div class="fd-switch__track">
                         <i role="presentation" class="fd-switch__icon--on fd-switch__icon sap-icon--accept"></i>
                         <span class="fd-switch__handle" role="presentation"></span>
