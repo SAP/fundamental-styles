@@ -36,16 +36,16 @@ Note: Include two action buttons in the message box when the user's decision is 
 ##Structure 
 **Message box follows the structure of a dialog, consisting of following elements:**
 
-- \`.fd-message-box\`: styles the backdrop and displays the message box container with \`position: fixed\`. The message box becomes visible by adding the \`.fd-message--active\` modifier class to the container.
-    - \`.fd-message__content\`: Content container
-        - \`.fd-message__header\`: Header
-            - \`.fd-message__title\`: Title
-        - \`.fd-message__body\`: Content body
-        - \`.fd-message__footer\`: Footer
-            - \`.fd-message__decisive-button\`: Action buttons in footer
+- \`.fd-message-box\`: styles the backdrop and displays the message box container with \`position: fixed\`. The message box becomes visible by adding the \`.fd-message-box--active\` modifier class to the container.
+    - \`.fd-message-box__content\`: Content container
+        - \`.fd-message-box__header\`: Header
+            - \`.fd-message-box__title\`: Title
+        - \`.fd-message-box__body\`: Content body
+        - \`.fd-message-box__footer\`: Footer
+            - \`.fd-message-box__decisive-button\`: Action buttons in footer
         `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['message-box', 'title', 'bar', 'button', 'link']
+        components: ['message-box', 'title', 'bar', 'button', 'link', 'icon']
     }
 };
 
@@ -97,6 +97,7 @@ export const types = () => `<div class="fd-message-box-docs-static fd-message-bo
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
+                    <i class="sap-icon--question-mark"></i>
                     <h2 class="fd-title fd-title--h5">Confirmation</h2>
                 </div>
             </div>
@@ -128,6 +129,7 @@ export const types = () => `<div class="fd-message-box-docs-static fd-message-bo
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
+                    <i class="sap-icon--message-error"></i>
                     <h2 class="fd-title fd-title--h5">Error</h2>
                 </div>
             </div>
@@ -154,6 +156,7 @@ export const types = () => `<div class="fd-message-box-docs-static fd-message-bo
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
+                    <i class="sap-icon--message-success"></i>
                     <h2 class="fd-title fd-title--h5">Success</h2>
                 </div>
             </div>
@@ -180,6 +183,7 @@ export const types = () => `<div class="fd-message-box-docs-static fd-message-bo
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
+                    <i class="sap-icon--message-warning"></i>
                     <h2 class="fd-title fd-title--h5">Warning</h2>
                 </div>
             </div>
@@ -206,6 +210,7 @@ export const types = () => `<div class="fd-message-box-docs-static fd-message-bo
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
+                    <i class="sap-icon--message-information"></i>
                     <h2 class="fd-title fd-title--h5">Information</h2>
                 </div>
             </div>
@@ -244,73 +249,6 @@ Information | \`fd-message-box--information\` | Information messages provide inf
         `
     }
 };
-
-
-export const noIcon = () =>
-    `
-<div class="fd-message-box-docs-static fd-message-box fd-message-box--no-icon fd-message-box--success fd-message-box--active">
-    <section class="fd-message-box__content">
-        <header class="fd-bar fd-bar--header fd-message-box__header">
-            <div class="fd-bar__left">
-                <div class="fd-bar__element">
-                    <h2 class="fd-title fd-title--h5">Success</h2>
-                </div>
-            </div>
-        </header>
-        <div class="fd-message-box__body">
-            Success message box without an icon in the title and a "Show more" link in the body.
-            <div class="fd-message-box__more">
-                <a href="#" class="fd-link" tabindex="0">Show more</a>
-            </div>
-        </div>
-        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
-            <div class="fd-bar__right">
-                <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
-                        Close
-                    </button>
-                </div>
-            </div>
-        </footer>
-    </section>
-</div>
-
-<br><br><br>
-
-<div class="fd-message-box-docs-static fd-message-box fd-message-box--error fd-message-box--no-icon fd-message-box--active">
-    <section class="fd-message-box__content">
-        <header class="fd-bar fd-bar--header fd-message-box__header">
-            <div class="fd-bar__left">
-                <div class="fd-bar__element">
-                    <h2 class="fd-title fd-title--h5">Error</h2>
-                </div>
-            </div>
-        </header>
-        <div class="fd-message-box__body">
-            Error message box without an icon in the title.
-        </div>
-        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
-            <div class="fd-bar__right">
-                <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
-                        Close
-                    </button>
-                </div>
-            </div>
-        </footer>
-    </section>
-</div>
-`;
-
-noIcon.storyName = 'No icon';
-noIcon.parameters = {
-    docs: {
-        iframeHeight: messageBoxHeight * 2,
-        storyDescription: `Message box can be displayed without an icon. To remove the icon from the title, add the \`fd-message-box--no-icon\` modifier class to the container.
-        `
-    }
-};
-
 
 export const responsive = () =>
     `

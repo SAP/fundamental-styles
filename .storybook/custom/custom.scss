@@ -288,8 +288,9 @@ code.docs-code-grey {
   .fd-dialog,
   &.fd-message-box,
   .fd-message-box {
-    position: static;
+    position: relative;
     background-color: transparent;
+    z-index: 1;
 
     &::before {
       background-color: transparent;
@@ -300,7 +301,7 @@ code.docs-code-grey {
   .fd-dialog__content,
   &.fd-message-box__content,
   .fd-message-box__content {
-    position: static;
+    position: relative;
     transform: translate(0%, 0%);
     width: 30rem;
     margin: auto;

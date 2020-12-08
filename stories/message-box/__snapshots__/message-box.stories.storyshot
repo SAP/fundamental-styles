@@ -107,215 +107,6 @@ exports[`Storyshots Components/Message Box Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Message Box No icon 1`] = `
-<section>
-  
-
-  <div
-    class="fd-message-box-docs-static fd-message-box fd-message-box--no-icon fd-message-box--success fd-message-box--active"
-  >
-    
-    
-    <section
-      class="fd-message-box__content"
-    >
-      
-        
-      <header
-        class="fd-bar fd-bar--header fd-message-box__header"
-      >
-        
-            
-        <div
-          class="fd-bar__left"
-        >
-          
-                
-          <div
-            class="fd-bar__element"
-          >
-            
-                    
-            <h2
-              class="fd-title fd-title--h5"
-            >
-              Success
-            </h2>
-            
-                
-          </div>
-          
-            
-        </div>
-        
-        
-      </header>
-      
-        
-      <div
-        class="fd-message-box__body"
-      >
-        
-            Success message box without an icon in the title and a "Show more" link in the body.
-            
-        <div
-          class="fd-message-box__more"
-        >
-          
-                
-          <a
-            class="fd-link"
-            href="#"
-            tabindex="0"
-          >
-            Show more
-          </a>
-          
-            
-        </div>
-        
-        
-      </div>
-      
-        
-      <footer
-        class="fd-bar fd-bar--footer fd-message-box__footer"
-      >
-        
-            
-        <div
-          class="fd-bar__right"
-        >
-          
-                
-          <div
-            class="fd-bar__element"
-          >
-            
-                    
-            <button
-              class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button"
-            >
-              
-                        Close
-                    
-            </button>
-            
-                
-          </div>
-          
-            
-        </div>
-        
-        
-      </footer>
-      
-    
-    </section>
-    
-
-  </div>
-  
-
-
-  <br />
-  <br />
-  <br />
-  
-
-
-  <div
-    class="fd-message-box-docs-static fd-message-box fd-message-box--error fd-message-box--no-icon fd-message-box--active"
-  >
-    
-    
-    <section
-      class="fd-message-box__content"
-    >
-      
-        
-      <header
-        class="fd-bar fd-bar--header fd-message-box__header"
-      >
-        
-            
-        <div
-          class="fd-bar__left"
-        >
-          
-                
-          <div
-            class="fd-bar__element"
-          >
-            
-                    
-            <h2
-              class="fd-title fd-title--h5"
-            >
-              Error
-            </h2>
-            
-                
-          </div>
-          
-            
-        </div>
-        
-        
-      </header>
-      
-        
-      <div
-        class="fd-message-box__body"
-      >
-        
-            Error message box without an icon in the title.
-        
-      </div>
-      
-        
-      <footer
-        class="fd-bar fd-bar--footer fd-message-box__footer"
-      >
-        
-            
-        <div
-          class="fd-bar__right"
-        >
-          
-                
-          <div
-            class="fd-bar__element"
-          >
-            
-                    
-            <button
-              class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button"
-            >
-              
-                        Close
-                    
-            </button>
-            
-                
-          </div>
-          
-            
-        </div>
-        
-        
-      </footer>
-      
-    
-    </section>
-    
-
-  </div>
-  
-
-</section>
-`;
-
 exports[`Storyshots Components/Message Box Responsive 1`] = `
 <section>
   
@@ -745,6 +536,11 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
           >
             
                     
+            <i
+              class="sap-icon--question-mark"
+            />
+            
+                    
             <h2
               class="fd-title fd-title--h5"
             >
@@ -858,6 +654,11 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
           >
             
                     
+            <i
+              class="sap-icon--message-error"
+            />
+            
+                    
             <h2
               class="fd-title fd-title--h5"
             >
@@ -952,6 +753,11 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
           <div
             class="fd-bar__element"
           >
+            
+                    
+            <i
+              class="sap-icon--message-success"
+            />
             
                     
             <h2
@@ -1050,6 +856,11 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
           >
             
                     
+            <i
+              class="sap-icon--message-warning"
+            />
+            
+                    
             <h2
               class="fd-title fd-title--h5"
             >
@@ -1144,6 +955,11 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
           <div
             class="fd-bar__element"
           >
+            
+                    
+            <i
+              class="sap-icon--message-information"
+            />
             
                     
             <h2
