@@ -10,50 +10,27 @@ $block: #{$fd-namespace}-switch;
 
 .#{$block} {
 
+  $fd-switch-off-opacity: 0;
+  $fd-switch-transition: all 0.1s;
   $fd-switch-active-border-color: var(--sapButton_Selected_BorderColor);
-  $fd-switch-active-background-color: var(--sapButton_Selected_Background);
   $fd-switch-inactive-border-color: var(--sapContent_ForegroundBorderColor);
   $fd-switch-inactive-handle-background: var(--sapButton_Background);
 
   $fd-switch-hover-border-color: var(--sapButton_Hover_BorderColor);
   $fd-switch-hover-selected-border-color: var(--sapButton_Selected_Hover_BorderColor);
-  $fd-switch-hover-background: var(--sapButton_Hover_Background);
-  $fd-switch-hover-selected-background: var(--sapButton_Selected_Hover_Background);
   $fd-switch-success-border-color: var(--sapSuccessBorderColor);
   $fd-switch-error-border-color: var(--sapErrorBorderColor);
   $fd-switch-border-width: var(--sapButton_BorderWidth);
 
   $fd-switch-label-width: 1.75rem;
 
-  $fd-switch-transition: all 0.1s;
-  $fd-switch-semantic-icon-transition: visibility 0s ease 0.03s, opacity 0s ease 0.03s;
-
-  $fd-switch-container-padding-y: 0.375rem;
-  $fd-switch-size-x: 3.75rem;
-  $fd-switch-size-y: 1.25rem;
   $fd-switch-handle-size: 1.875rem;
-  $fd-switch-border-radius: 0.75rem;
-  $fd-switch-handle-border-radius: 1rem;
-
-  $fd-switch-container-compact-padding-y: 0.1875rem;
-  $fd-switch-container-compact-no-label-padding-y: 0.25rem;
-  $fd-switch-size-compact-x: 3.375rem;
-  $fd-switch-size-compact-y: 1.25rem;
   $fd-switch-handle-compact-size: 1.5rem;
-
-  $fd-switch-track-no-label-width: 3.125rem;
-  $fd-switch-track-no-label-height: 1.25rem;
-
-  $fd-switch-track-no-label-compact-width: 2.375rem;
-  $fd-switch-track-no-label-compact-height: 1rem;
 
   $fd-switch-track-compact-offset: 0.8125rem;
   $fd-switch-track-offset: 1.1875rem;
   $fd-switch-track-semantic-offset: 1.9375rem;
   $fd-switch-track-border-offset: 0.0625rem;
-
-  $fd-switch-off-opacity: 0;
-  $fd-switch-on-opacity: 1;
 
   @include fd-reset();
   @include fd-form-label();
@@ -73,7 +50,7 @@ $block: #{$fd-namespace}-switch;
   &__control {
     display: inline-block;
     position: relative;
-    padding: $fd-switch-container-padding-y 0;
+    padding: 0.375rem 0;
   }
 
   &__slider {
@@ -81,11 +58,11 @@ $block: #{$fd-namespace}-switch;
 
     background-color: var(--sapButton_Track_Background);
     box-sizing: content-box;
-    width: $fd-switch-track-no-label-width;
-    height: $fd-switch-track-no-label-height;
+    width: 3.125rem;
+    height: 1.25rem;
     border: $fd-switch-border-width solid $fd-switch-inactive-border-color;
     transition: $fd-switch-transition;
-    border-radius: $fd-switch-border-radius;
+    border-radius: 0.75rem;
   }
 
   &__track {
@@ -116,7 +93,7 @@ $block: #{$fd-namespace}-switch;
       min-width: $fd-switch-label-width;
       font-size: 0.75rem;
       line-height: 1.375rem;
-      transition: $fd-switch-semantic-icon-transition;
+      transition: visibility 0s ease 0.03s, opacity 0s ease 0.03s;
     }
 
     &--off {
@@ -144,7 +121,7 @@ $block: #{$fd-namespace}-switch;
     background-color: $fd-switch-inactive-handle-background;
     min-width: $fd-switch-handle-size;
     min-height: $fd-switch-handle-size;
-    border-radius: $fd-switch-handle-border-radius;
+    border-radius: 1rem;
     background-clip: padding-box;
   }
 
@@ -193,7 +170,7 @@ $block: #{$fd-namespace}-switch;
     border-color: $fd-switch-active-border-color;
 
     .#{$block}__handle {
-      background-color: $fd-switch-active-background-color;
+      background-color: var(--sapButton_Selected_Background);
       border-color: $fd-switch-active-border-color;
     }
 
@@ -211,7 +188,7 @@ $block: #{$fd-namespace}-switch;
 
       &--on {
         @include fd-icon-selector() {
-          opacity: $fd-switch-on-opacity;
+          opacity: 1;
           visibility: visible;
         }
       }
@@ -247,7 +224,7 @@ $block: #{$fd-namespace}-switch;
 
     .#{$block}__handle {
       border-color: $fd-switch-hover-border-color;
-      background-color: $fd-switch-hover-background;
+      background-color: var(--sapButton_Hover_Background);
     }
 
     .#{$block}:checked + .#{$block}__slider {
@@ -255,13 +232,13 @@ $block: #{$fd-namespace}-switch;
 
       .#{$block}__handle {
         border-color: $fd-switch-hover-selected-border-color;
-        background-color: $fd-switch-hover-selected-background;
+        background-color: var(--sapButton_Selected_Hover_Background);
       }
     }
   }
 
   &--compact {
-    padding: $fd-switch-container-compact-no-label-padding-y 0;
+    padding: 0.25rem 0;
 
     .#{$block}__handle {
       min-width: $fd-switch-handle-compact-size;
@@ -269,8 +246,8 @@ $block: #{$fd-namespace}-switch;
     }
 
     .#{$block}__slider {
-      width: $fd-switch-track-no-label-compact-width;
-      height: $fd-switch-track-no-label-compact-height;
+      width: 2.375rem;
+      height: 1rem;
     }
 
     .#{$block}__track {
@@ -287,8 +264,8 @@ $block: #{$fd-namespace}-switch;
 
   &--semantic {
     .#{$block}__slider {
-      width: $fd-switch-size-x;
-      height: $fd-switch-size-y;
+      width: 3.75rem;
+      height: 1.25rem;
       border-color: $fd-switch-error-border-color;
       background-color: var(--sapErrorBackground);
     }
@@ -317,11 +294,11 @@ $block: #{$fd-namespace}-switch;
     }
 
     &.#{$block}--compact {
-      padding: $fd-switch-container-compact-padding-y 0;
+      padding: 0.1875rem 0;
 
       .#{$block}__slider {
-        width: $fd-switch-size-compact-x;
-        height: $fd-switch-size-compact-y;
+        width: 3.375rem;
+        height: 1.25rem;
       }
     }
 

@@ -85,7 +85,7 @@ export const withText = () => `
         <label class="fd-switch">
             <span class="fd-switch__text">Off</span> 
             <span class="fd-switch__control">
-                <input class="fd-switch__input" type="checkbox" name="" aria-labelledby="label3" value="" id="y21Y677251">
+                <input class="fd-switch__input" type="checkbox" name="" aria-labelledby="label3" value="" id="y21O677251">
                 <div class="fd-switch__slider">
                     <div class="fd-switch__track">
                         <span class="fd-switch__handle" role="presentation"></span>
