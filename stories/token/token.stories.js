@@ -1,8 +1,11 @@
 export default {
     title: 'Components/Token',
     parameters: {
-        description: `Token are used to represent contextualizing information. They can be useful to show applied filters, 
-selected values for form field or object metadata.`,
+        description: `Tokens are small items of information (similar to tags) that mainly serve to visualize previously selected items. The tokenizer is the container that handles the tokens. Tokens can be added, removed, selected, or deselected.
+
+##Usage
+- Use tokens only in the **Multi Input** component. 
+        `,
         tags: ['f3', 'a11y', 'theme'],
         components: ['token', 'tokenizer']
     }
@@ -34,10 +37,14 @@ export const primary = () => `<span class="fd-token" role="button" tabindex="0">
 </span>
 `;
 
-/**
- *
-* - **Selected Token** modifier different color of token
- */
+primary.storyName = 'Default';
+primary.parameters = {
+    docs: {
+        iframeHeight: 350,
+        storyDescription: `The primary token displays a rectangular token with text and a close button.
+        `
+    }
+};
 
 export const selected = () => `<span class="fd-token fd-token--selected" role="button" tabindex="0">
     <span class="fd-token__text">
@@ -65,9 +72,14 @@ export const selected = () => `<span class="fd-token fd-token--selected" role="b
 </span>
 `;
 
-/**
- * Readonly token modifier different color of token. Readonly token shouldn't contain close button
- */
+selected.storyName = 'Selected';
+selected.parameters = {
+    docs: {
+        iframeHeight: 350,
+        storyDescription: `Tokens can be displayed in blue, signaling to the user that they are selected. To display tokens as read-only, add the \`fd-token--selected\` modifier class to the main element.
+        `
+    }
+};
 
 export const readOnlyToken = () => `<span class="fd-token fd-token--readonly" role="button" tabindex="0">
     <span class="fd-token__text">
@@ -91,9 +103,14 @@ export const readOnlyToken = () => `<span class="fd-token fd-token--readonly" ro
 </span>
 `;
 
-/**
- * Compact token modifier adds compact mode
- */
+readOnlyToken.storyName = 'Read-only';
+readOnlyToken.parameters = {
+    docs: {
+        iframeHeight: 350,
+        storyDescription: `Tokens can be displayed as read-only, indicating that they cannot be interacted with. Read-only tokens should not contain a close button. To display tokens as read-only, add the \`fd-token--readonly\` modifier class to the main element.
+        `
+    }
+};
 
 export const compactToken = () => `<span class="fd-token fd-token--compact" role="button" tabindex="0">
     <span class="fd-token__text">
@@ -121,12 +138,14 @@ export const compactToken = () => `<span class="fd-token fd-token--compact" role
 </span>
 `;
 
-/**
- Tokenizer is a container for tokens, often placed inside multi-input components.
- To focus the whole element, `.is-focus` should be added to the container.
- The Cozy tokenizer is for small and medium sized screens.
- The user can review the tokens by swiping them to the left or right.
- */
+compactToken.storyName = 'Compact';
+compactToken.parameters = {
+    docs: {
+        iframeHeight: 350,
+        storyDescription: `Tokens can be displayed in compact mode, which is ideal for larger desktop screens. To display compact tokens, add the \`fd-token--compact\` modifier class to the main element.
+        `
+    }
+};
 
 export const cozyTokenizer = () => `<div class="fd-tokenizer ">
     <div class="fd-tokenizer__inner">
@@ -199,10 +218,16 @@ export const cozyTokenizer = () => `<div class="fd-tokenizer ">
 </div>
 `;
 
-/**
- The Compact tokenizer is for large screens.
- The user can review tokens by pressing the right or left arrows on the keyboard.
- */
+cozyTokenizer.storyName = 'Tokenizer';
+cozyTokenizer.parameters = {
+    docs: {
+        iframeHeight: 350,
+        storyDescription: `Tokenizer is a container for tokens, which is often placed inside Multi-Input components. It is displayed in cozy mode; therefore, the user can swipe the tokens to the left or right.
+
+To enable focus, the \`is-focus\` class must be added the container.       
+        `
+    }
+};
 
 export const compactTokenizer = () => `<div class="fd-tokenizer fd-tokenizer--compact">
     <div class="fd-tokenizer__inner">
@@ -275,10 +300,16 @@ export const compactTokenizer = () => `<div class="fd-tokenizer fd-tokenizer--co
 </div>
 `;
 
-/**
- The Compact tokenizer is for large screens.
- The user can review tokens by pressing the `tab` and `shift + tab` on the keyboard.
- */
+compactTokenizer.storyName = 'Compact tokenizer';
+compactTokenizer.parameters = {
+    docs: {
+        iframeHeight: 350,
+        storyDescription: `The tokenizer can be displayed in compact mode to be viewed on larger desktop screens. Contrary to the previous example, the user can view the tokens by pressing the right or left arrow keys. 
+
+To display a compact tokenizer, add the \`fd-tokenizer--compact\` modifier class to the main element.    
+        `
+    }
+};
 
 export const scrollableTokenizer = () => `<div class="fd-tokenizer fd-tokenizer--scrollable">
     <div class="fd-tokenizer__inner" id="tokenizer-scrollable">
@@ -345,3 +376,12 @@ export const scrollableTokenizer = () => `<div class="fd-tokenizer fd-tokenizer-
     </div>
 </div>
 `;
+
+scrollableTokenizer.storyName = 'Scrollable tokenizer';
+scrollableTokenizer.parameters = {
+    docs: {
+        iframeHeight: 350,
+        storyDescription: `The tokenizer can be scrollable by adding the \`fd-tokenizer--scrollable\` modifier class to the main element. The user can view the tokens by pressing the \`Tab\` key, then \`Shift + Tab\` to jump to the next one.  
+        `
+    }
+};
