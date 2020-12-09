@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.14.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.0...v0.14.0-rc.1) (2020-12-09)
+
+
+### Bug Fixes
+
+* change min width when a user image will disappear Feed Input ([#1951](https://github.com/SAP/fundamental-styles/issues/1951)) ([1bf670e](https://github.com/SAP/fundamental-styles/commit/1bf670e4384007d2152895c4a9304aa91b516f22))
+
 ## [0.14.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.13.1-rc.40...v0.14.0-rc.0) (2020-12-08)
 
 
