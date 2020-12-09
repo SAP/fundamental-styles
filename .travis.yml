@@ -15,9 +15,9 @@ jobs:
   -
     script: npm run build:prod && npm run size
   - stage: Pre-release
-    if: branch = master AND type = push
+    if: branch = main AND type = push
     before_deploy:
-    - git checkout master
+    - git checkout main
     - bash ./ci-scripts/setup-npm.sh
     deploy:
     - provider: script
@@ -28,7 +28,7 @@ jobs:
     before_deploy:
     - git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
     - git fetch
-    - git checkout master
+    - git checkout main
     - bash ./ci-scripts/setup-npm.sh
     deploy:
     - provider: script

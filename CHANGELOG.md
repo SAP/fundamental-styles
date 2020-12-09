@@ -3209,7 +3209,7 @@ Semantic icons are added separately: <i class="sap-icon--message-error"></i>
 ### Bug Fixes
 
 * radio button alignment in RTL mode ([115ff32](https://github.com/SAP/fundamental-styles/commit/115ff32))
-* revert accidental pushes to master ([#751](https://github.com/SAP/fundamental-styles/issues/751)) ([fbac0fe](https://github.com/SAP/fundamental-styles/commit/fbac0fe))
+* revert accidental pushes to main ([#751](https://github.com/SAP/fundamental-styles/issues/751)) ([fbac0fe](https://github.com/SAP/fundamental-styles/commit/fbac0fe))
 
 
 
