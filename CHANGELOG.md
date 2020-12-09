@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.14.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.1...v0.14.0-rc.2) (2020-12-09)
+
+
+### Bug Fixes
+
+* Shellbar menu button focus outline ([#1952](https://github.com/SAP/fundamental-styles/issues/1952)) ([5b97bc6](https://github.com/SAP/fundamental-styles/commit/5b97bc656e527eebabed79bc0f48827e6d996a69))
+
 ## [0.14.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.0...v0.14.0-rc.1) (2020-12-09)
 
 
