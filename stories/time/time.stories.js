@@ -1,17 +1,17 @@
 export default {
     title: 'Components/Time',
     parameters: {
-        description: `The time component is used to select a time value.
-Multiple instances can be used in the <code class="docs-code">date-picker</code> to choose hours, minutes, seconds and period of the day. It will be rare to see this component used alone.
+        description: `The time component is used to select a time value. It can be used to choose hours, minutes, seconds and/or a given period of the day. This component is rarely used alone and will likely be paired with the **Date Picker** pattern.
 
-> Looking for Date Picker? From a style perspective, a date-picker is simply a composition of our existing calendar, input group and popover, but contains no new styles of its own. Therefore, we consider it a pattern. [See the date picker pattern here](patterns/date-picker).
+The time component consists of three main styles to indicate a specific state:
 
-||||
-| -------------:| ------------- | -------------- |
-| <span style="margin: 0 1rem;"><code class="docs-code">.fd-time\\_\\_item</code></span> | <span style="margin: 0 1rem;">Class used to style default time slider item</span> | <span style="margin: 0 1rem;"><li class='fd-time__item'><span class='fd-time__unit'>01</span></li></span>
-| <span style="margin: 0 1rem;"><code class="docs-code">.fd-time\\_\\_item--collapsed</code></span> | <span style="margin: 0 1rem;">Class used to style collapsed time slider item</span> | <span style="margin: 0 1rem;"><li class='fd-time__item fd-time__item--collapsed'><span class='fd-time__unit'>01</span></li></span>
-| <span style="margin: 0 1rem;"><code class="docs-code">.fd-time\\_\\_item--current</code></span> | <span style="margin: 0 1rem;">Class used to style current time slider item</span> | <span style="margin: 0 1rem;"><li class='fd-time__item fd-time__item--current'><span class='fd-time__unit'>01</span></li></span>
 
+| Style&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Modifier class | Description |
+| -------------| :------------- | :-------------- |
+| <li class='fd-time__item'><span class='fd-time__unit'>01</span></li> | <code class="docs-code">.fd-time\\_\\_item</code> | Class used to style default time slider item | 
+| <li class='fd-time__item fd-time__item--collapsed'><span class='fd-time__unit'>01</span></li> | <code class="docs-code">.fd-time\\_\\_item--collapsed</code> | Class used to style collapsed time slider item |
+| <li class='fd-time__item fd-time__item--current'><span class='fd-time__unit'>01</span></li> | <code class="docs-code">.fd-time\\_\\_item--current</code> | Class used to style current time slider item |
+<br>
 `,
 
         tags: ['f3', 'a11y', 'theme'],
@@ -183,11 +183,14 @@ export const defaultCozyMode = () => `<div style="display: flex; justify-content
 </div>
 `;
 
+defaultCozyMode.storyName = 'Default';
 defaultCozyMode.parameters = {
     docs: {
         iframeHeight: 550,
-        storyDescription:
-            'Default cozy mode implemented mostly to be used mobile devices. There should be at most 1 active wrapper, marked with <code class="docs-code">fd-time__wrapper--active</code> modifier. In those examples it\'s hour or meridian. The rest of items should be marked as collapsed <code class="docs-code">fd-time__item--collapsed</code>. Also meridian (AM/PM) wrapper has to contain <code class="docs-code">fd-time__wrapper--meridian</code> modifier.'
+        storyDescription: `The default time component is displayed in cozy mode, which is ideal for mobile screens. 
+
+There should be only one active wrapper at a time: \`fd-timewrapper--active\`. The rest of the items should be collapsed with the \`fd-timeitem--collapsed\` modifier class. In addition, the meridian (AM/PM) wrapper must contain the \`fd-timewrapper--meridian\` modifier class. 
+        `
     }
 };
 
@@ -354,11 +357,12 @@ export const tabletMode = () => `<div style="display: flex; justify-content: spa
     </div>
 </div>`;
 
+tabletMode.storyName = 'Tablet';
 tabletMode.parameters = {
     docs: {
-        iframeHeight: 500,
-        storyDescription:
-            'Tablet Mode can be added by using <code class="docs-code">fd-time--tablet</code> modifier. IT provides lower padding on sides.'
+        iframeHeight: 550,
+        storyDescription: `Time can be optimized for tablet screens, which adds padding on each side of the component. To display the time component for tablet, add the \`fd-time--tablet\` modifier class to the main element.      
+        `
     }
 };
 
@@ -526,11 +530,12 @@ export const compactMode = () => `<div style="display: flex; justify-content: sp
 </div>
 `;
 
+compactMode.storyName = 'Desktop';
 compactMode.parameters = {
     docs: {
-        iframeHeight: 500,
-        storyDescription:
-            'Compact Mode can be added, by using <code class="docs-code">fd-time--compact</code> modifier. It\'s mostly implemented, to be used on desktop devices.'
+        iframeHeight: 550,
+        storyDescription: `The time component can be displayed in compact mode, which is ideal for desktop screens.  To display the time component for desktop, add the \`fd-time--compact\` modifier class to the main element.
+        `
     }
 };
 
@@ -698,10 +703,11 @@ export const scrollableMode = () => `<div style="display: flex; justify-content:
     </div>
 </div>
 `;
+scrollableMode.storyName = 'Scrollable';
 scrollableMode.parameters = {
     docs: {
         iframeHeight: 550,
-        storyDescription:
-            'Scrollable Mode can be added by using <code class="docs-code">fd-time--scrollable</code> modifier. It provides possibility to scroll up and down on active columns. So the unit can be chosen by mouse scroll or mobile tap and release. Current indicator element is vertically centered, but functionality to fit it inside indicator frames should be implemented no application level.'
+        storyDescription: `Time can be scrollable by adding the \`fd-time—scrollable\` modifier class to the main element. It provides users with the ability to scroll up and down active columns with either a mouse, or on mobile where they can tap and release.
+        `
     }
 };
