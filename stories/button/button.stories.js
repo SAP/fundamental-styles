@@ -66,40 +66,65 @@ types.parameters = {
     }
 };
 
-export const toggle = () => `<div class="fddocs-container"> 
-        <button class="fd-button">Default Toggle</button>
-        <button class="fd-button fd-button--emphasized">Emphasized Toggle</button>
-        <button class="fd-button fd-button--ghost">Ghost Toggle</button>
-        <button class="fd-button fd-button--positive">Positive Toggle</button>
-        <button class="fd-button fd-button--negative">Negative Toggle</button>
-        <button class="fd-button fd-button--attention">Attention Toggle</button>
-        <button class="fd-button fd-button--transparent">Transparent Toggle</button>
-</div>
-<h4>Toggled State</h4>
+export const toggle = () => `<h4>Inactive state of toggle button</h4>
 <div class="fddocs-container"> 
-        <button class="fd-button fd-button--toggled">Default Toggle</button>
-        <button class="fd-button fd-button--emphasized fd-button--toggled">Emphasized Toggle</button>
-        <button class="fd-button fd-button--ghost fd-button--toggled">Ghost Toggle</button>
-        <button class="fd-button fd-button--positive fd-button--toggled">Positive Toggle</button>
-        <button class="fd-button fd-button--negative fd-button--toggled">Negative Toggle</button>
-        <button class="fd-button fd-button--attention fd-button--toggled">Attention Toggle</button>
-        <button class="fd-button fd-button--transparent fd-button--toggled">Transparent Toggle</button>
+    <button class="fd-button">Default Toggle</button>
+    <button class="fd-button fd-button--emphasized">Emphasized Toggle</button>
+    <button class="fd-button fd-button--ghost">Ghost Toggle</button>
+    <button class="fd-button fd-button--positive">Positive Toggle</button>
+    <button class="fd-button fd-button--negative">Negative Toggle</button>
+    <button class="fd-button fd-button--attention">Attention Toggle</button>
+    <button class="fd-button fd-button--transparent">Transparent Toggle</button>
+    <button class="fd-button fd-button--menu">
+        <span class="fd-button__text">Action Button</span>
+        <i class="sap-icon--slim-arrow-down"></i>
+    </button>
+    <button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--attention">
+        <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
+    </button>
+    <button aria-label="Accept" class="fd-button fd-button--positive"><i class="sap-icon--accept"></i></button>
 </div>
-<h4>Disabled Toggled State</h4>
+<h4>Active (toggled) state of toggle button</h4>
 <div class="fddocs-container"> 
-        <button class="fd-button fd-button--toggled" disabled>Default Toggle</button>
-        <button class="fd-button fd-button--emphasized fd-button--toggled" disabled>Emphasized Toggle</button>
-        <button class="fd-button fd-button--ghost fd-button--toggled" disabled>Ghost Toggle</button>
-        <button class="fd-button fd-button--positive fd-button--toggled" disabled>Positive Toggle</button>
-        <button class="fd-button fd-button--negative fd-button--toggled" disabled>Negative Toggle</button>
-        <button class="fd-button fd-button--attention fd-button--toggled" disabled>Attention Toggle</button>
-        <button class="fd-button fd-button--transparent fd-button--toggled" disabled>Transparent Toggle</button>
+    <button class="fd-button fd-button--toggled">Default Toggle</button>
+    <button class="fd-button fd-button--emphasized fd-button--toggled">Emphasized Toggle</button>
+    <button class="fd-button fd-button--ghost fd-button--toggled">Ghost Toggle</button>
+    <button class="fd-button fd-button--positive fd-button--toggled">Positive Toggle</button>
+    <button class="fd-button fd-button--negative fd-button--toggled">Negative Toggle</button>
+    <button class="fd-button fd-button--attention fd-button--toggled">Attention Toggle</button>
+    <button class="fd-button fd-button--transparent fd-button--toggled">Transparent Toggle</button>
+    <button class="fd-button fd-button--menu fd-button--toggled">
+        <span class="fd-button__text">Action Button</span>
+        <i class="sap-icon--slim-arrow-down"></i>
+    </button>
+    <button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--attention fd-button--toggled">
+        <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
+    </button>
+    <button aria-label="Accept" class="fd-button fd-button--positive fd-button--toggled"><i class="sap-icon--accept"></i></button>
+</div>
+<h4>Disabled Toggle button in active state</h4>
+<div class="fddocs-container"> 
+    <button class="fd-button fd-button--toggled" disabled>Default Toggle</button>
+    <button class="fd-button fd-button--emphasized fd-button--toggled" disabled>Emphasized Toggle</button>
+    <button class="fd-button fd-button--ghost fd-button--toggled" disabled>Ghost Toggle</button>
+    <button class="fd-button fd-button--positive fd-button--toggled" disabled>Positive Toggle</button>
+    <button class="fd-button fd-button--negative fd-button--toggled" disabled>Negative Toggle</button>
+    <button class="fd-button fd-button--attention fd-button--toggled" disabled>Attention Toggle</button>
+    <button class="fd-button fd-button--transparent fd-button--toggled" disabled>Transparent Toggle</button>
+    <button class="fd-button fd-button--menu fd-button--toggled" aria-disabled="true" disabled>
+        <span class="fd-button__text">Action Button</span>
+        <i class="sap-icon--slim-arrow-down"></i>
+    </button>
+    <button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--attention fd-button--toggled" aria-disabled="true" disabled>
+        <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
+    </button>
+    <button aria-label="Accept" class="fd-button fd-button--positive" disabled><i class="sap-icon--accept"></i></button>
 </div>`;
 
-toggle.storyName = 'Toggle Buttons';
+toggle.storyName = 'Toggle button';
 toggle.parameters = {
     docs: {
-        storyDescription: 'Bla bla bla'
+        storyDescription: 'A toggle button switches between two actions. One of the actions is always active, one is inactive. Use the toggle button for secondary actions. Apply the <code>fd-button--toggled</code> modifier class to set the action to active.'
     }
 };
 
