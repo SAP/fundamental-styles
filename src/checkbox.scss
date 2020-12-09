@@ -57,18 +57,9 @@ $block: #{$fd-namespace}-checkbox;
       align-items: center;
       font-family: "SAP-icons";
       background-color: var(--sapField_Background);
-      margin-right: $fd-checkbox-margin;
-      margin-left: 0;
       color: var(--fdCheckbox_Selected_Color);
       border: var(--sapField_BorderWidth) solid var(--sapField_BorderColor);
       border-radius: var(--sapField_BorderCornerRadius);
-    }
-
-    @include fd-rtl() {
-      &::before {
-        margin-left: $fd-checkbox-margin;
-        margin-right: 0;
-      }
     }
 
     @include fd-hover() {
@@ -96,6 +87,14 @@ $block: #{$fd-namespace}-checkbox;
 
   &__text {
     @include fd-ellipsis();
+
+    margin-left: $fd-checkbox-margin;
+    margin-right: 0;
+
+    @include fd-rtl() {
+      margin-right: $fd-checkbox-margin;
+      margin-left: 0;
+    }
   }
 
   &:checked + .#{$block}__label::before {
@@ -152,6 +151,14 @@ $block: #{$fd-namespace}-checkbox;
   }
 
   &--compact {
+    > .#{$block}__text {
+      margin-left: $fd-checkbox-margin-compact;
+
+      @include fd-rtl() {
+        margin-left: 0;
+        margin-right: $fd-checkbox-margin-compact;
+      }
+    }
     + .#{$block}__label {
       padding: $fd-checkbox-margin-compact;
 
@@ -160,15 +167,7 @@ $block: #{$fd-namespace}-checkbox;
         height: $fd-checkbox-dimensions-compact;
         width: $fd-checkbox-dimensions-compact;
         min-width: $fd-checkbox-dimensions-compact;
-        margin-right: $fd-checkbox-margin-compact;
         margin-left: 0;
-      }
-
-      @include fd-rtl() {
-        &::before {
-          margin-left: $fd-checkbox-margin-compact;
-          margin-right: 0;
-        }
       }
 
       @include fd-empty() {
