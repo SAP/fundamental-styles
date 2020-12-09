@@ -43,9 +43,31 @@ npm install fundamental-styles --save
 
 The distrubtion folder contains several css files per component: a default file and one file per supported theme (`sap_fiori_3`, `sap_fiori_3_dark`, `sap_fori_3_light_dark`, `sap_fiori_3_hcb`, `sap_fori_3_hcw`). Each themed file includes fallback support for css variables in IE11 for the corresponding theme. The default file includes fallbacks for `sap_fiori_3`. 
 
-### Fonts & Icons
+### Icons
+See the [Icon Component](https://fundamental-styles.netlify.app/?path=/docs/components-icon--sizes) for a list of icon class names. See Project Configuration below for instructions to include SAP Fiori 3 icons in your project.
 
-This project does not contain fonts and icons. See our [Fonts and Icons FAQ](https://github.com/SAP/fundamental-styles/wiki/Fonts-and-Icons:-FAQs) for more information.
+### Project Confirguration
+This project does not contain fonts and icons - they must be added to your project separately. Download [Font 72](https://experience.sap.com/fiori-design-web/downloads/#download-font-72) and [SAP icons](https://experience.sap.com/fiori-design-web/downloads/#sap-icon-font). After adding fonts and icons to your project, include the following in your css:
+
+    @font-face {
+        font-family: "72";
+        src: url("path/to/fonts") format("woff"); // Bold, Light, Regular available in woff and woff2
+        font-weight: normal;
+        font-style: normal;
+    };
+
+    @font-face {
+        font-family: "SAP-icons";
+        src: url("path/to/icons") format("woff"); // available in woff, woff2 and ttf
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    html {
+      font-size: 16px;
+    }
+
+If you are not supporting IE11, the recommended format is `woff2`. If supporting IE11, use `woff`.
 
 ## Working with the Project
 
