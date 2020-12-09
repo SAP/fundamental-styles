@@ -1,5 +1,9 @@
 @mixin ghost() {
-  @include applyColors(var(--sapButton_TextColor), var(--sapButton_BorderColor), var(--sapButton_Lite_Background));
+  @include applyColors(
+    var(--sapButton_TextColor),
+    var(--sapButton_BorderColor),
+    var(--sapButton_Lite_Background)
+  );
 }
 
 @mixin ghostHover {
@@ -15,5 +19,30 @@
     var(--sapButton_Selected_TextColor),
     var(--sapButton_BorderColor),
     var(--sapButton_Active_Background)
+  );
+}
+
+// Toggled state
+@mixin ghostToggled() {
+  @include applyColors(
+    var(--sapButton_Selected_TextColor),
+    var(--sapButton_Selected_BorderColor),
+    var(--sapButton_Selected_Background)
+  );
+}
+
+@mixin ghostToggledHover {
+  @include applyColors(
+    var(--sapButton_Selected_TextColor),
+    var(--sapButton_Selected_Hover_BorderColor),
+    var(--sapButton_Selected_Hover_Background)
+  );
+}
+
+@mixin ghostToggledPressed() {
+  @include applyColors(
+    var(--sapButton_Selected_TextColor),
+    var(--sapButton_Selected_Hover_BorderColor),
+    var(--sapButton_Selected_Hover_Background)
   );
 }

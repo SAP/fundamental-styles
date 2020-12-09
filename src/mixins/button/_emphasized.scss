@@ -21,3 +21,28 @@
     var(--sapButton_Emphasized_Active_Background)
   );
 }
+
+// Toggled state
+@mixin emphasizedToggled() {
+  @include applyColors(
+    var(--sapButton_Selected_TextColor),
+    var(--sapButton_Selected_BorderColor),
+    var(--sapButton_Selected_Background)
+  );
+}
+
+@mixin emphasizedToggledHover {
+  @include applyColors(
+    var(--sapButton_Selected_TextColor),
+    var(--sapButton_Selected_Hover_BorderColor),
+    var(--sapButton_Selected_Hover_Background)
+  );
+}
+
+@mixin emphasizedToggledPressed() {
+  @include applyColors(
+    var(--sapButton_Selected_TextColor),
+    var(--sapButton_Selected_Hover_BorderColor),
+    var(--sapButton_Selected_Hover_Background)
+  );
+}

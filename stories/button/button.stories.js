@@ -66,6 +66,44 @@ types.parameters = {
     }
 };
 
+export const toggle = () => `<div class="fddocs-container"> 
+        <button class="fd-button">Default Toggle</button>
+        <button class="fd-button fd-button--emphasized">Emphasized Toggle</button>
+        <button class="fd-button fd-button--ghost">Ghost Toggle</button>
+        <button class="fd-button fd-button--positive">Positive Toggle</button>
+        <button class="fd-button fd-button--negative">Negative Toggle</button>
+        <button class="fd-button fd-button--attention">Attention Toggle</button>
+        <button class="fd-button fd-button--transparent">Transparent Toggle</button>
+</div>
+<h4>Toggled State</h4>
+<div class="fddocs-container"> 
+        <button class="fd-button fd-button--toggled">Default Toggle</button>
+        <button class="fd-button fd-button--emphasized fd-button--toggled">Emphasized Toggle</button>
+        <button class="fd-button fd-button--ghost fd-button--toggled">Ghost Toggle</button>
+        <button class="fd-button fd-button--positive fd-button--toggled">Positive Toggle</button>
+        <button class="fd-button fd-button--negative fd-button--toggled">Negative Toggle</button>
+        <button class="fd-button fd-button--attention fd-button--toggled">Attention Toggle</button>
+        <button class="fd-button fd-button--transparent fd-button--toggled">Transparent Toggle</button>
+</div>
+<h4>Disabled Toggled State</h4>
+<div class="fddocs-container"> 
+        <button class="fd-button fd-button--toggled" disabled>Default Toggle</button>
+        <button class="fd-button fd-button--emphasized fd-button--toggled" disabled>Emphasized Toggle</button>
+        <button class="fd-button fd-button--ghost fd-button--toggled" disabled>Ghost Toggle</button>
+        <button class="fd-button fd-button--positive fd-button--toggled" disabled>Positive Toggle</button>
+        <button class="fd-button fd-button--negative fd-button--toggled" disabled>Negative Toggle</button>
+        <button class="fd-button fd-button--attention fd-button--toggled" disabled>Attention Toggle</button>
+        <button class="fd-button fd-button--transparent fd-button--toggled" disabled>Transparent Toggle</button>
+</div>`;
+
+toggle.storyName = 'Toggle Buttons';
+toggle.parameters = {
+    docs: {
+        storyDescription: 'Bla bla bla'
+    }
+};
+
+
 export const segmentedButton = () => `
     <div class="fd-segmented-button" role="group" aria-label="Group label">
         <button aria-label="Survey" class="fd-button"><i class="sap-icon--survey"></i></button>

@@ -21,3 +21,28 @@
     var(--sapButton_Reject_Active_Background)
   );
 }
+
+// Toggled state
+@mixin negativeToggled() {
+  @include applyColors(
+    var(--sapButton_Reject_Selected_TextColor),
+    var(--sapButton_Reject_Selected_BorderColor),
+    var(--sapButton_Reject_Selected_Background)
+  );
+}
+
+@mixin negativeToggledHover() {
+  @include applyColors(
+    var(--sapButton_Reject_Selected_TextColor),
+    var(--sapButton_Reject_Selected_Hover_BorderColor),
+    var(--sapButton_Reject_Selected_Hover_Background)
+  );
+}
+
+@mixin negativeToggledPressed() {
+  @include applyColors(
+    var(--sapButton_Reject_Selected_TextColor),
+    var(--sapButton_Reject_Selected_Hover_BorderColor),
+    var(--sapButton_Reject_Selected_Hover_Background)
+  );
+}
