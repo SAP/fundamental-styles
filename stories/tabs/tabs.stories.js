@@ -2,9 +2,16 @@ export default {
     title: 'Components/Tabs',
     parameters: {
         tags: ['f3', 'a11y', 'theme'],
-        description: `
-Tabs are based on a folder metaphor and used to separate content into different sections. 
-Tabs should be ordered to create a visual hierarchy based on priority.
+        description: `Tabs are based on the folder metaphor and used to separate content into different sections. Tabs should be ordered based on priority to create visual hierarchy.
+
+##Sizes
+Depending on the screen width of the device, tabs can be displayed in two sizes:
+        
+Size | Modifier class | Screen width
+:---- | :----------------- | :----------------
+Large&nbsp;&nbsp; | \`fd-tabs--l\`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 600px – 1440px
+Small&nbsp;&nbsp; | \`fd-tabs--s\`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | > 599px
+<br>
         `,
         docs: {
             iframeHeight: 150
@@ -53,7 +60,13 @@ export const primary = () => `
 `;
 
 primary.storyName = 'Default';
-
+primary.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: `By default, tabs are displayed in a bar and are either inactive or active (highlighted in blue). The bar can also contain actions that apply to the whole page. The example below illustrates the tabs component in cozy mode, which is achieved with the \`fd-tabs--l\` modifier class.
+        `
+    }
+};
 
 export const tabWithCounters = () => `
 <ul class="fd-tabs fd-tabs--s fd-tabs--compact" role="tablist">
@@ -96,8 +109,14 @@ export const tabWithCounters = () => `
 </div>
 `;
 
-
-
+tabWithCounters.storyName = 'Counters';
+tabWithCounters.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: `Tabs can be displayed with counters to indicate that there are a number of resources the user can or should access. To display counters, wrap the \`fd-tabs__count\` class in paragraph tags below the \`fd-tabs__link\` element.
+        `
+    }
+};
 
 export const navTab = () => `
 <nav class="fd-tabs fd-tabs--l" role="navigation">
@@ -137,12 +156,14 @@ export const navTab = () => `
 </div>
 `;
 
-
+navTab.storyName = 'Navigable';
 navTab.parameters = {
-    storyDescription: 'Standard Tabs with `nav` element'
+    docs: {
+        iframeHeight: 300,
+        storyDescription: `Tabs can be navigable by applying the \`role=”navigation”\` attribute to the main element.
+    `
+    }
 };
-
-
 
 
 export const iconOnly = () => `
@@ -186,13 +207,14 @@ export const iconOnly = () => `
 </div>
 `;
 
-
+iconOnly.storyName = 'Icon';
 iconOnly.parameters = {
-    storyDescription: 'Standard Tabs with `nav` element'
+    docs: {
+        iframeHeight: 300,
+        storyDescription: `Tabs can display icons instead of text with the \` fd-tabs__icon\` class. In addition, add the \`fd-tabs--icon-only\` class to the main element.
+    `
+    }
 };
-
-
-
 
 export const compactIconOnly = () => `
 <ul class="fd-tabs fd-tabs--s fd-tabs--icon-only fd-tabs--compact" role="tablist">
@@ -235,8 +257,14 @@ export const compactIconOnly = () => `
 </div>
 `;
 
-
-
+compactIconOnly.storyName = 'Icon (compact)';
+compactIconOnly.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: `Tabs can be displayed with icons in compact mode. To display compact tabs, add the \`fd-tabs--s\` and \`fd-tabs--compact\` modifier classes to the main element.
+    `
+    }
+};
 
 export const processMode = () => `
 <ul class="fd-tabs fd-tabs--l fd-tabs--process" role="tablist">
@@ -290,9 +318,14 @@ export const processMode = () => `
 </div>
 `;
 
-
-
-
+processMode.storyName = 'Process mode';
+processMode.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: `Tabs can be displayed in subsequent steps, indicating to the user that there is a process to follow. To display tabs in process mode, add the \`fd-tabs--process\` modifier class to the main element.
+    `
+    }
+};
 
 export const compactProcessMode = () => `
 <ul class="fd-tabs fd-tabs--s fd-tabs--process fd-tabs--compact" role="tablist">
@@ -346,6 +379,14 @@ export const compactProcessMode = () => `
 </div>
 `;
 
+compactProcessMode.storyName = 'Process mode (compact)';
+compactProcessMode.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: `Tabs can be displayed in subsequent steps while in compact mode. To display compact tabs in process mode, add the \`fd-tabs--s\`, \`fd-tabs--process\` and \`fd-tabs--compact\` modifier classes to the main element.
+    `
+    }
+};
 
 export const filterMode = () => `
 <ul class="fd-tabs fd-tabs--l fd-tabs--filter" role="tablist">
@@ -403,6 +444,14 @@ export const filterMode = () => `
 </div>
 `;
 
+filterMode.storyName = 'Filter mode';
+filterMode.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: `Tabs can be displayed in filter mode, indicating to the user that a value has been filtered into separate tabs. To display tabs in filter mode, add the \`fd-tabs--filter\` modifier class to the main element.
+    `
+    }
+};
 
 export const compactFilterMode = () => `
 <ul class="fd-tabs fd-tabs--s fd-tabs--filter fd-tabs--compact" role="tablist">
@@ -460,6 +509,14 @@ export const compactFilterMode = () => `
 </div>
 `;
 
+compactFilterMode.storyName = 'Filter mode (compact)';
+compactFilterMode.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: `Tabs can be displayed in compact mode, while also in filter mode. To display compact tabs in filter mode, add the \`fd-tabs--s\`, \`fd-tabs--filter\` and \`fd-tabs--compact\` modifier classes to the main element.
+    `
+    }
+};
 
 export const semanticMode = () => `
 <ul class="fd-tabs fd-tabs--s fd-tabs--icon-only fd-tabs--compact" role="tablist">
@@ -523,6 +580,23 @@ export const semanticMode = () => `
     Occaecat cupidatat
 </div>
 `;
+
+semanticMode.storyName = 'Semantic mode';
+semanticMode.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: `Tabs can be displayed with semantic colors to indicate a status. To display semantic tabs, add the following modifier classes to the \`fd-tabs__item\` elements:
+
+State | Modifier class
+:------- | :---------------
+Success | \`fd-tabs__item--success\`
+Warning | \`fd-tabs__item--warning\`
+Information | \`fd-tabs__item--information\`
+Error | \`fd-tabs__item--error\`
+Neutral | \`fd-tabs__item--neutral\`  
+        `
+    }
+};
 
 
 export const semanticFilterMode = () => `
@@ -593,6 +667,14 @@ export const semanticFilterMode = () => `
 </div>
 `;
 
+semanticFilterMode.storyName = 'Semantic filter mode';
+semanticFilterMode.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: `Tabs can be displayed in filter mode with semantic colors. As detailed in the previous examples, add the \`fd-tabs--filter\` modifier class to the main element and add the semantic modifier classes to the \`fd-tabs__item\` elements (see **semantic mode** example for modifier names). 
+        `
+    }
+};
 
 export const semanticInline = () => `
 <ul class="fd-tabs fd-tabs--l" role="tablist">
@@ -656,3 +738,12 @@ export const semanticInline = () => `
     Occaecat cupidatat
 </div>
 `;
+
+semanticInline.storyName = 'Semantic inline';
+semanticInline.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: `Tabs can be displayed with inline text in semantic colors. To display inline text tabs, add the \`fd-tabs__tag\` class below the \`fd-tabs__link\` element. 
+        `
+    }
+};
