@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.14.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.2...v0.14.0-rc.3) (2020-12-09)
+
+
+### Bug Fixes
+
+* add fix for missing spacing in Multi Combobox secondary data in IE11  ([#1939](https://github.com/SAP/fundamental-styles/issues/1939)) ([8151b68](https://github.com/SAP/fundamental-styles/commit/8151b68b874921033ee4d36e8d6716d7146c79c1))
+
 ## [0.14.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.1...v0.14.0-rc.2) (2020-12-09)
 
 
