@@ -1,6 +1,13 @@
 
 @import "./listDefinitions.scss";
 
+@mixin ie11-combo-box-fix() {
+  // ie11 does not support display: 'contents'
+
+  display: flex;
+  justify-content: center;
+}
+
 .#{$block} {
   &--dropdown {
     @include fd-focus() {
@@ -133,15 +140,10 @@
     }
 
     .#{$block}__secondary {
+      @include ie11-combo-box-fix();
+
       width: auto;
       max-width: 15rem;
-      display: contents;
-    }
-
-    @supports not (display: contents) { /* workaround because Edge doesn't support display: contents; */
-      .#{$block}__secondary {
-        display: inline-block;
-      }
     }
 
     .#{$block}__icon {
