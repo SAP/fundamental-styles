@@ -20,6 +20,12 @@
         padding: $fd-dropdown-vertical-compact-padding $fd-list-item-padding-x;
       }
     }
+
+    .#{$block}__secondary {
+      width: auto;
+      max-width: 15rem;
+      display: contents;
+    }
   }
 
   &--multi-input {
@@ -60,6 +66,14 @@
             right: $fd-multi-input-focus-offset;
           }
         }
+      }
+    }
+
+    .#{$block}__secondary {
+      padding-right: 1rem;
+
+      @include fd-rtl() {
+        padding-left: 1rem;
       }
     }
 
@@ -130,12 +144,6 @@
       &:first-child:last-child {
         max-width: 37.5rem;
       }
-    }
-
-    .#{$block}__secondary {
-      width: auto;
-      max-width: 15rem;
-      display: contents;
     }
 
     .#{$block}__icon {
