@@ -2,7 +2,7 @@
 @import "./listDefinitions.scss";
 
 @mixin ie11-combo-box-fix() {
-  // ie11 does not support display: 'contents'
+  // ie11 does not support [display: contents]
 
   display: flex;
   justify-content: center;
@@ -144,6 +144,7 @@
 
       width: auto;
       max-width: 15rem;
+      display: contents;
     }
 
     .#{$block}__icon {
