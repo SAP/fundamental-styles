@@ -20,11 +20,6 @@ $block: #{$fd-namespace}-feed-input;
   padding: 1rem $fd-feed-input-padding-end 1rem $fd-feed-input-padding-start;
   background-color: var(--sapField_Background);
 
-  @include fd-screen(m) {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
   @include fd-rtl() {
     padding-right: $fd-feed-input-padding-start;
     padding-left: $fd-feed-input-padding-end;
@@ -39,10 +34,6 @@ $block: #{$fd-namespace}-feed-input;
     flex: 1 0 auto;
     margin-left: $fd-feed-input-thumb-margin-start;
     margin-right: $fd-feed-input-thumb-margin-end;
-
-    @include fd-screen(m) {
-      display: inline-flex;
-    }
 
     @include fd-rtl() {
       margin-left: $fd-feed-input-thumb-margin-end;
@@ -78,7 +69,7 @@ $block: #{$fd-namespace}-feed-input;
     }
   }
 
-  &--m {
+  @media (min-width: 25rem) {
     margin-top: 1rem;
     margin-bottom: 1rem;
 
