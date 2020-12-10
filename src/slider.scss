@@ -90,8 +90,8 @@ $handle-hit-area-mobile-dimensions: 2.75rem;
   &__label {
     @include fd-reset();
 
-    @include fd-flex() {
-      justify-content: center;
+    @include fd-flex(column) {
+      align-items: center;
     }
 
     width: 0;
