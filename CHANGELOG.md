@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.14.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.5...v0.14.0-rc.6) (2020-12-10)
+
+
+### Bug Fixes
+
+* checkbox focus with margin ([#1954](https://github.com/SAP/fundamental-styles/issues/1954)) ([ced5681](https://github.com/SAP/fundamental-styles/commit/ced56819beb0af5c9dfb69e1d3f07a3621f7dc8d))
+
 ## [0.14.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.4...v0.14.0-rc.5) (2020-12-10)
 
 ## [0.14.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.3...v0.14.0-rc.4) (2020-12-10)
