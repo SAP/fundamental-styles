@@ -2,15 +2,16 @@ export default {
     title: 'Components/Time',
     parameters: {
         description: `The time component is used to select a time value. It can be used to choose hours, minutes, seconds and/or a given period of the day. This component is rarely used alone and will likely be paired with the **Date Picker** pattern.
-
+<br>
+<br>
 The time component consists of three main styles to indicate a specific state:
 
 
 | Style&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Modifier class | Description |
 | -------------| :------------- | :-------------- |
-| <li class='fd-time__item'><span class='fd-time__unit'>01</span></li> | <code class="docs-code">.fd-time\\_\\_item</code> | Class used to style default time slider item | 
-| <li class='fd-time__item fd-time__item--collapsed'><span class='fd-time__unit'>01</span></li> | <code class="docs-code">.fd-time\\_\\_item--collapsed</code> | Class used to style collapsed time slider item |
-| <li class='fd-time__item fd-time__item--current'><span class='fd-time__unit'>01</span></li> | <code class="docs-code">.fd-time\\_\\_item--current</code> | Class used to style current time slider item |
+| <li class='fd-time__item'><span class='fd-time__unit'>01</span></li> | <code class="docs-code">.fd-time\\_\\_item</code> | Class used to style inactive time slider items. | 
+| <li class='fd-time__item fd-time__item--collapsed'><span class='fd-time__unit'>01</span></li> | <code class="docs-code">.fd-time\\_\\_item--collapsed</code> | Class used to style collapsed time slider items. <br>When this item is displayed, all inactive items below/above it are collapsed (out of sight). |
+| <li class='fd-time__item fd-time__item--current'><span class='fd-time__unit'>01</span></li> | <code class="docs-code">.fd-time\\_\\_item--current</code> | Class used to style current (selected) time slider items. |
 <br>
 `,
 
@@ -189,7 +190,9 @@ defaultCozyMode.parameters = {
         iframeHeight: 550,
         storyDescription: `The default time component is displayed in cozy mode, which is ideal for mobile screens. 
 
-There should be only one active wrapper at a time: \`fd-timewrapper--active\`. The rest of the items should be collapsed with the \`fd-timeitem--collapsed\` modifier class. In addition, the meridian (AM/PM) wrapper must contain the \`fd-timewrapper--meridian\` modifier class. 
+Only one item and wrapper should be active at a time with the \`fd-timewrapper--active\` modifier class. The rest of the items must be collapsed with the \`fd-timeitem--collapsed\` modifier class, displaying only the collapsed slider item (blue) next to the active item. 
+
+**Note:** The meridian (AM/PM) wrapper must contain the \`fd-timewrapper--meridian\` modifier class. 
         `
     }
 };
@@ -707,7 +710,7 @@ scrollableMode.storyName = 'Scrollable';
 scrollableMode.parameters = {
     docs: {
         iframeHeight: 550,
-        storyDescription: `Time can be scrollable by adding the \`fd-time—scrollable\` modifier class to the main element. It provides users with the ability to scroll up and down active columns with either a mouse, or on mobile where they can tap and release.
+        storyDescription: `Time can be scrollable by adding the \`fd-time--scrollable\` modifier class to the main element. It provides users with the ability to scroll up and down active columns with either a mouse, or on mobile where they can tap and release.
         `
     }
 };
