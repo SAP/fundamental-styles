@@ -45,7 +45,7 @@ The distrubtion folder contains several css files per component: a default file 
 
 ### Fonts & Icons
 
-This project does not contain fonts and icons.
+This project does not contain fonts and icons. See our [Fonts and Icons FAQ](https://github.com/SAP/fundamental-styles/wiki/Fonts-and-Icons:-FAQs) for more information.
 
 ## Working with the Project
 
