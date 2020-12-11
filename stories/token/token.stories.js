@@ -41,7 +41,7 @@ primary.storyName = 'Default';
 primary.parameters = {
     docs: {
         iframeHeight: 350,
-        storyDescription: `The primary token displays a rectangular token with text and a close button.
+        storyDescription: `The default token is displayed in grey with text, and a close button that will remove the token when selected. It is displayed in cozy mode, which is ideal for mobile and tablet screens.
         `
     }
 };
@@ -76,7 +76,7 @@ selected.storyName = 'Selected';
 selected.parameters = {
     docs: {
         iframeHeight: 350,
-        storyDescription: `Tokens can be displayed in blue, signaling to the user that they are selected. To display tokens as read-only, add the \`fd-token--selected\` modifier class to the main element.
+        storyDescription: `Tokens can be displayed in blue, signaling to the user that they are selected. To display selected tokens, add the \`fd-token--selected\` modifier class to the main element.
         `
     }
 };
@@ -222,7 +222,7 @@ cozyTokenizer.storyName = 'Tokenizer';
 cozyTokenizer.parameters = {
     docs: {
         iframeHeight: 350,
-        storyDescription: `Tokenizer is a container for tokens, which is often placed inside Multi-Input components. It is displayed in cozy mode; therefore, the user can swipe the tokens to the left or right.
+        storyDescription: `Tokenizer is a container for tokens, which is often placed inside **Multi-Input** components. It is displayed in cozy mode; therefore, the user can swipe the tokens to the left or right.
 
 To enable focus, the \`is-focus\` class must be added the container.       
         `
