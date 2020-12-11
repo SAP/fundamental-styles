@@ -18,6 +18,31 @@
   );
 }
 
+// Toggled state
+@mixin standardToggled() {
+  @include applyColors(
+    var(--sapButton_Selected_TextColor),
+    var(--sapButton_Selected_BorderColor),
+    var(--sapButton_Selected_Background)
+  );
+}
+
+@mixin standardToggledHover {
+  @include applyColors(
+    var(--sapButton_Selected_TextColor),
+    var(--sapButton_Selected_Hover_BorderColor),
+    var(--sapButton_Selected_Hover_Background)
+  );
+}
+
+@mixin standardToggledPressed() {
+  @include applyColors(
+    var(--sapButton_Selected_TextColor),
+    var(--sapButton_Selected_Hover_BorderColor),
+    var(--sapButton_Selected_Hover_Background)
+  );
+}
+
 @mixin standardPressedFocus() {
   &::after {
     border-color: var(--sapContent_ContrastFocusColor);

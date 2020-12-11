@@ -2,3 +2,12 @@
   border-color: var(--sapButton_Lite_BorderColor);
   background-color: var(--sapButton_Lite_Background);
 }
+
+// Toggled state
+@mixin transparentToggled() {
+  @include applyColors(
+    var(--sapButton_Selected_TextColor),
+    var(--sapButton_Selected_BorderColor),
+    var(--sapButton_Selected_Background)
+  );
+}

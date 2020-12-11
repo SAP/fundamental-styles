@@ -137,20 +137,40 @@ $block: #{$fd-namespace}-button;
 @mixin buttonContainer() {
   @include standard();
 
+  &.#{$block}--toggled {
+    @include standardToggled();
+  }
+
   &.#{$block}--ghost {
     @include ghost();
+
+    &.#{$block}--toggled {
+      @include ghostToggled();
+    }
   }
 
   &.#{$block}--positive {
     @include positive();
+
+    &.#{$block}--toggled {
+      @include positiveToggled();
+    }
   }
 
   &.#{$block}--negative {
     @include negative();
+
+    &.#{$block}--toggled {
+      @include negativeToggled();
+    }
   }
 
   &.#{$block}--attention {
     @include attention();
+
+    &.#{$block}--toggled {
+      @include attentionToggled();
+    }
   }
 
   &.#{$block}--emphasized {
@@ -158,10 +178,18 @@ $block: #{$fd-namespace}-button;
     border-width: var(--fdButton_Emphasized_Border_Width);
 
     @include emphasized();
+
+    &.#{$block}--toggled {
+      @include emphasizedToggled();
+    }
   }
 
   &.#{$block}--transparent {
     @include transparent();
+
+    &.#{$block}--toggled {
+      @include transparentToggled();
+    }
   }
 }
 
@@ -186,48 +214,96 @@ $block: #{$fd-namespace}-button;
   @include standardPressed();
   @include standardPressedFocus();
 
+  &.#{$block}--toggled {
+    @include standardToggledPressed();
+  }
+
   &.#{$block}--ghost {
     @include ghostPressed();
+
+    &.#{$block}--toggled {
+      @include ghostToggledPressed();
+    }
   }
 
   &.#{$block}--positive {
     @include positivePressed();
+
+    &.#{$block}--toggled {
+      @include positiveToggledPressed();
+    }
   }
 
   &.#{$block}--negative {
     @include negativePressed();
+
+    &.#{$block}--toggled {
+      @include negativeToggledPressed();
+    }
   }
 
   &.#{$block}--attention {
     @include attentionPressed();
+
+    &.#{$block}--toggled {
+      @include attentionToggledPressed();
+    }
   }
 
   &.#{$block}--emphasized {
     @include emphasizedPressed();
+
+    &.#{$block}--toggled {
+      @include emphasizedToggledPressed();
+    }
   }
 }
 
 @mixin buttonContainerHover() {
   @include standardHover();
 
+  &.#{$block}--toggled {
+    @include standardToggledHover();
+  }
+
   &.#{$block}--ghost {
     @include ghostHover();
+
+    &.#{$block}--toggled {
+      @include ghostToggledHover();
+    }
   }
 
   &.#{$block}--positive {
     @include positiveHover();
+
+    &.#{$block}--toggled {
+      @include positiveToggledHover();
+    }
   }
 
   &.#{$block}--negative {
     @include negativeHover();
+
+    &.#{$block}--toggled {
+      @include negativeToggledHover();
+    }
   }
 
   &.#{$block}--attention {
     @include attentionHover();
+
+    &.#{$block}--toggled {
+      @include attentionToggledHover();
+    }
   }
 
   &.#{$block}--emphasized {
     @include emphasizedHover();
+
+    &.#{$block}--toggled {
+      @include emphasizedToggledHover();
+    }
   }
 }
 

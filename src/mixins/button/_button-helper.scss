@@ -19,4 +19,10 @@ $block: #{$fd-namespace}-button;
     border: var(--sapContent_FocusWidth) dotted var(--sapContent_FocusColor);
     @content;
   }
+
+  &.#{$block}--toggled {
+    &::after {
+      border: var(--sapContent_FocusWidth) dotted var(--sapContent_ContrastFocusColor);
+    }
+  }
 }
