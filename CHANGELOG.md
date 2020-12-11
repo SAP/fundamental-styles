@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.14.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.7...v0.14.0-rc.8) (2020-12-11)
+
+
+### Features
+
+* add Toggle Button to Buttons ([#1956](https://github.com/SAP/fundamental-styles/issues/1956)) ([4d7ea4c](https://github.com/SAP/fundamental-styles/commit/4d7ea4cf23087efc2a09c2cc4eb67e35b74a00c0))
+
 ## [0.14.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.6...v0.14.0-rc.7) (2020-12-11)
 
 ## [0.14.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.5...v0.14.0-rc.6) (2020-12-10)
