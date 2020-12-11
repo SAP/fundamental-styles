@@ -350,6 +350,7 @@ $block: #{$fd-namespace}-button;
     @include fd-reset();
     @include fd-ellipsis();
 
+    font-weight: inherit;
     color: inherit;
   }
 
