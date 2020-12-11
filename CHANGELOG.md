@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.14.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.10...v0.14.0-rc.11) (2020-12-11)
+
+
+### Bug Fixes
+
+* inherit font weight on button text ([#1966](https://github.com/SAP/fundamental-styles/issues/1966)) ([289812b](https://github.com/SAP/fundamental-styles/commit/289812b50c911bcf4605d2caa788f859fcb1fa85))
+
 ## [0.14.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.9...v0.14.0-rc.10) (2020-12-11)
 
 
