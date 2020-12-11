@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1](https://github.com/SAP/fundamental-styles/compare/v0.13.0...v0.13.1) (2020-12-11)
+
+
+### Bug Fixes
+
+* add fix for Rating indicator parse error ([#1962](https://github.com/SAP/fundamental-styles/issues/1962)) ([c681d9d](https://github.com/SAP/fundamental-styles/commit/c681d9d0e88357acb6a0520886d3c785126d1eb9))
+
 ## [0.13.0](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.60...v0.13.0) (2020-11-13)
 
 ## [0.13.0-rc.60](https://github.com/SAP/fundamental-styles/compare/v0.13.0-rc.59...v0.13.0-rc.60) (2020-11-13)
