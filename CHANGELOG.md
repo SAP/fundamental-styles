@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.14.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.9...v0.14.0-rc.10) (2020-12-11)
+
+
+### Bug Fixes
+
+* add fix for Slider labels not being centered in IE11 ([#1964](https://github.com/SAP/fundamental-styles/issues/1964)) ([63fb78a](https://github.com/SAP/fundamental-styles/commit/63fb78a8619f0aef0bd18d25df04739e8021f26d))
+
 ## [0.14.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.8...v0.14.0-rc.9) (2020-12-11)
 
 ## [0.14.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.7...v0.14.0-rc.8) (2020-12-11)
