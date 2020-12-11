@@ -2,12 +2,23 @@ export default {
     title: 'Components/Switch',
     parameters: {
         description: `
- The Switch is meant to resemble a physical switch and allow a user to turn a setting “on” or “off”. 
- It should be used to switch between two states/modes: active or inactive.
- <b>Use a checkbox instead:</b>
+The switch mimics a physical switch, allowing users to set individual features (such as personalization or display settings) to either active or inactive. What the switch controls should be clarified with an inline label, while the state it’s currently in should be displayed on the switch itself.
 
- - If it is not clear if the control is showing a state or action. 
- - If there are more than two options.
+
+##Usage
+**Use the switch if:**
+        
+-	You want to enable users to set something as active or inactive (for example, within a **Dialog**).
+-	You need to clearly show the mode or state of a setting.
+-	The change takes immediate effect.
+
+
+**Do not use the switch if:**
+        
+-	The user has to choose several options or perform extra steps for changes to become effective.
+-	The setting requires a confirmation action or _Submit_ button before it can take effect. In this case, use a **Checkbox** instead.
+-	It’s not clear if the control is showing a state or an action. In this case, use a **Checkbox** instead.
+        
   `,
         components: ['form-label', 'switch', 'icon', 'form']
     }
@@ -56,7 +67,7 @@ export const basic = () => `
         </label>
     </div>
     <div class="fd-form-item">
-        <div class="fd-form-label" id="label8">Disabled Compact Switch</div>
+        <div class="fd-form-label" id="label8">Disabled switch (compact)</div>
         <label class="fd-switch fd-switch--compact is-disabled">
             <span class="fd-switch__control">
                 <input class="fd-switch__input" type="checkbox" name="" value="" aria-labelledby="label8" id="y21Y13491">
@@ -74,14 +85,16 @@ export const basic = () => `
 basic.storyName = 'Default';
 basic.parameters = {
     docs: {
-        iframeHeight: 150
+        iframeHeight: 350,
+        storyDescription: `The default switch displays what resembles a physical switch that toggles between an active and inactive state. It is displayed in cozy mode, which is ideal for mobile and small tablet screens. The switch should always be accompanied by a label that indicates its purpose.
+        `
     }
 };
 
 export const withText = () => `
 <div class="fd-form-group">
     <div class="fd-form-item">
-        <div class="fd-form-label" id="label3">With Off Text</div>
+        <div class="fd-form-label" id="label3">With inline text (off)</div>
         <label class="fd-switch">
             <span class="fd-switch__text">Off</span> 
             <span class="fd-switch__control">
@@ -95,7 +108,7 @@ export const withText = () => `
         </label>
     </div>
     <div class="fd-form-item">
-        <div class="fd-form-label" id="label4">With On Text</div>
+        <div class="fd-form-label" id="label4">With inline text (on)</div>
         <label class="fd-switch">
             <span class="fd-switch__text">On</span> 
             <span class="fd-switch__control">
@@ -109,7 +122,7 @@ export const withText = () => `
         </label>
     </div>
     <div class="fd-form-item">
-        <div class="fd-form-label" id="label9">Disabled With Text</div>
+        <div class="fd-form-label" id="label9">Disabled with inline text (on)</div>
         <label class="fd-switch is-disabled">
             <span class="fd-switch__text">On</span> 
             <span class="fd-switch__control">
@@ -124,16 +137,21 @@ export const withText = () => `
     </div>
 </div>`;
 
+withText.storyName = 'Optional text';
 withText.parameters = {
     docs: {
-        iframeHeight: 150
+        iframeHeight: 350,
+        storyDescription: `As mentioned in the previous example, a switch should always be accompanied by a label.
+
+        (code needs fixing)
+        `
     }
 };
 
 export const semanticSwitch = () => `
 <div class="fd-form-group">
     <div class="fd-form-item">
-        <label class="fd-form-label" id="label5">Semantic Switch</label>
+        <label class="fd-form-label" id="label5">Semantic switch</label>
         <label class="fd-switch fd-switch--semantic">
             <span class="fd-switch__control">
                 <input class="fd-switch__input" type="checkbox" aria-labelledby="label5" name="" value="" id="y21YO3251">
@@ -148,7 +166,7 @@ export const semanticSwitch = () => `
         </label>
     </div>
     <div class="fd-form-item">
-        <label class="fd-form-label" id="label6">Semantic Compact Switch</label>
+        <label class="fd-form-label" id="label6">Semantic switch (compact)</label>
         <label class="fd-switch fd-switch--semantic fd-switch--compact">
             <span class="fd-switch__control">
                 <input class="fd-switch__input" type="checkbox" name="" aria-labelledby="label6" value="" id="y21YO3431">
@@ -164,9 +182,11 @@ export const semanticSwitch = () => `
     </div>
 </div>`;
 
+semanticSwitch.storyName = 'States';
 semanticSwitch.parameters = {
     docs: {
-        iframeHeight: 150,
-        storyDescription: '`fd-switch--semantic` modifier renders semnatic colors and icons inside the switch'
+        iframeHeight: 350,
+        storyDescription: `The switch can be displayed with semantic colors, such as green for active and red for inactive. To display a semantic switch, add the \`fd-switch—semantic\` modifier class to the main element.
+        `
     }
 };
