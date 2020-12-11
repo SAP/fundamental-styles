@@ -1,7 +1,7 @@
 export default {
     title: 'Components/Time',
     parameters: {
-        description: `The time component is used to select a time value. It can be used to choose hours, minutes, seconds and/or a given period of the day. This component is rarely used alone and will likely be paired with the **Date Picker** pattern.
+        description: `The time component is used to select a time value. It can be used to choose hours, minutes, seconds and/or a given period of the day. This component is rarely used alone and will likely be paired with the **Time Picker** pattern.
 <br>
 <br>
 The time component consists of three main styles to indicate a specific state:
@@ -11,7 +11,20 @@ The time component consists of three main styles to indicate a specific state:
 | -------------| :------------- | :-------------- |
 | <li class='fd-time__item'><span class='fd-time__unit'>01</span></li> | <code class="docs-code">.fd-time\\_\\_item</code> | Class used to style inactive time slider items. | 
 | <li class='fd-time__item fd-time__item--collapsed'><span class='fd-time__unit'>01</span></li> | <code class="docs-code">.fd-time\\_\\_item--collapsed</code> | Class used to style collapsed time slider items. <br>When this item is displayed, all inactive items below/above it are collapsed (out of sight). |
-| <li class='fd-time__item fd-time__item--current'><span class='fd-time__unit'>01</span></li> | <code class="docs-code">.fd-time\\_\\_item--current</code> | Class used to style current (selected) time slider items. |
+| <li class='fd-time__item fd-time__item--current'><span class='fd-time__unit'>01</span></li> | <code class="docs-code">.fd-time\\_\\_item--current</code> | Class used to style current (active) time slider items. |
+
+
+##Usage
+**Use the time component in Time Picker if:**
+
+- You want the user to select a time.
+- You want the user to select a time range. In this case, one time picker can be used to set the starting time and a second one to set the end time.
+- You want the user to select a detailed duration, such as 1 minute and 30 seconds.
+
+**Do not use the time component in Time Picker if:**
+
+- You want the user to select a duration such as 15 minutes, 30 minutes, 1 hour, or 2 hours. In this case, use the **Select** component instead.
+- You want the user to select a date and time. In this case, use the **Date Picker**.
 <br>
 `,
 
