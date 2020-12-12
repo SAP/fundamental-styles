@@ -63,19 +63,19 @@ $fd-card-content-avatar-text-spacing: 0.5rem !default;
     text-decoration: none;
     cursor: pointer;
 
+    .#{$block}__avatar {
+      margin-right: $fd-card-avatar-text-spacing;
+
+      @include fd-rtl() {
+        margin-right: 0;
+        margin-left: $fd-card-avatar-text-spacing;
+      }
+    }
+
     &:last-child {
       border-bottom: none;
       border-top: $fd-card-header-border;
       border-radius: 0 0 $fd-card-header-border-radius $fd-card-header-border-radius;
-    }
-  }
-
-  &__avatar {
-    margin-right: $fd-card-avatar-text-spacing;
-
-    @include fd-rtl() {
-      margin-right: 0;
-      margin-left: $fd-card-avatar-text-spacing;
     }
   }
 
