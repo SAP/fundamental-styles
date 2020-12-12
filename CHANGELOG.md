@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.14.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.11...v0.14.0-rc.12) (2020-12-12)
+
+
+### Bug Fixes
+
+* add avatar selector under the header ([#1958](https://github.com/SAP/fundamental-styles/issues/1958)) ([c710f36](https://github.com/SAP/fundamental-styles/commit/c710f360cb88aba3fcccc76d62743d542e505e2d))
+
 ## [0.14.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.10...v0.14.0-rc.11) (2020-12-11)
 
 
