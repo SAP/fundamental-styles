@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.14.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.12...v0.14.0-rc.13) (2020-12-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* On .fd-switch__label level should be used .fd-switch class
+On .fd-switch level should be used .fd-switch__control class
+On .fd-switch level should be used .fd-switch__control class
+Instead of class should be used .fd-switch__slider
+.fd-switch__label and .fd-switch__wrapper have been removed
+
+### Bug Fixes
+
+* improve class structure for Switch component ([#1949](https://github.com/SAP/fundamental-styles/issues/1949)) ([6169416](https://github.com/SAP/fundamental-styles/commit/6169416a1f39ab51419dd8457db4afcb3ddbd709))
+
 ## [0.14.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.11...v0.14.0-rc.12) (2020-12-12)
 
 
