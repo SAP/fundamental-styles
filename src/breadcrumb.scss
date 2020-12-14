@@ -54,6 +54,30 @@ $fd-breadcrumb-border-top-radius: 0.125rem !default;
 
     display: inline-block;
     transition: all $fd-animation-speed ease-in;
+
+    &:focus {
+      .#{$block}__dropdown-icon {
+        color: var(--sapLink_Active_Color, #0a6ed1);
+      }
+    }
+
+    &:active {
+      .#{$block}__dropdown-icon {
+        color: var(--sapLink_Active_Color, #0a6ed1);
+      }
+
+      &:hover {
+        .#{$block}__dropdown-icon {
+          color: var(--sapLink_Active_Color, #0a6ed1);
+        }
+      }
+    }
+
+    &:hover {
+      .#{$block}__dropdown-icon {
+        color: var(--sapLink_Hover_Color, #0854a0);
+      }
+    }
   }
 
   &__dropdown-icon {
