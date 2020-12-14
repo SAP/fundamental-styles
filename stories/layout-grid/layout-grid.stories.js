@@ -290,7 +290,93 @@ offset.parameters = {
     }
 };
 
-export const noGap = () => `<div class="fd-container fd-container--no-gap">
+export const noHorizontalGap = () => `<div class="fd-container fd-container--no-horizontal-gap">
+  <div class="fd-row">
+    <div class="fd-col fd-col--8">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">
+            8 col no gap
+        </div>
+    </div>
+    <div class="fd-col fd-col--4">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-2">
+            4 col no gap
+        </div>
+    </div>
+    <div class="fd-col fd-col--6">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-3">
+            6 col no gap
+        </div>
+    </div>
+    <div class="fd-col fd-col--6">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-4">
+            6 col no gap
+        </div>
+    </div>
+    <div class="fd-col fd-col--4">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-5">
+            4 col no gap
+        </div>
+    </div>
+    <div class="fd-col fd-col--8">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-6">
+            8 col no gap
+        </div>
+    </div>
+  </div>
+</div>
+`;
+
+noHorizontalGap.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: 'To remove gutters between columns apply the <code class="docs-code">fd-container--no-horizontal-gap</code> modifier to the container.'
+    }
+};
+
+export const noVerticalGap = () => `<div class="fd-container fd-container--no-vertical-gap">
+  <div class="fd-row">
+    <div class="fd-col fd-col--8">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">
+            8 col no gap
+        </div>
+    </div>
+    <div class="fd-col fd-col--4">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-2">
+            4 col no gap
+        </div>
+    </div>
+    <div class="fd-col fd-col--6">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-3">
+            6 col no gap
+        </div>
+    </div>
+    <div class="fd-col fd-col--6">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-4">
+            6 col no gap
+        </div>
+    </div>
+    <div class="fd-col fd-col--4">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-5">
+            4 col no gap
+        </div>
+    </div>
+    <div class="fd-col fd-col--8">
+        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-6">
+            8 col no gap
+        </div>
+    </div>
+  </div>
+</div>
+`;
+
+noVerticalGap.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: 'To remove gutters between rows apply the <code class="docs-code">fd-container--no-vertical-gap</code> modifier to the container.'
+    }
+};
+
+export const noGap = () => `<div class="fd-container fd-container--no-horizontal-gap fd-container--no-vertical-gap">
   <div class="fd-row">
     <div class="fd-col fd-col--8">
         <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1">
@@ -329,7 +415,7 @@ export const noGap = () => `<div class="fd-container fd-container--no-gap">
 noGap.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'To remove gutters between columns apply the <code class="docs-code">fd-container--no-gap</code> modifier for the container and the <code class="docs-code">fd-col--no-gap</code> modifier with the column.'
+        storyDescription: 'To remove gutters between rows and columns apply both the <code class="docs-code">fd-container--no-vertical-gap</code> and <code class="docs-code">fd-container--no-horizontal-gap</code> modifiers to the container.'
     }
 };
 

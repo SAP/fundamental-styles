@@ -144,11 +144,18 @@ $cols: 12;
       margin-top: 0;
     }
 
-    &--no-gap {
+    &--no-horizontal-gap {
+      .fd-col {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    &--no-vertical-gap {
       margin: 0;
 
       .fd-col {
-        padding: 0;
+        padding-top: 0;
       }
     }
   }
