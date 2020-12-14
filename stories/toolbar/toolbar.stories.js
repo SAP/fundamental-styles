@@ -1,7 +1,7 @@
 export default {
     title: 'Components/Toolbar',
     parameters: {
-        description: `The toolbar enables the user to change the UI or trigger an action. For example, the toolbar allows the user to change views, manipulate data or objects, navigate to another page, perform generic actions, and so on. This component is usually paired with buttons, which are always right-aligned.
+        description: `The toolbar enables the user to change the UI or trigger an action. For example, the user can change views, manipulate data or objects, navigate to another page, perform generic actions, and so on. This component is usually paired with buttons, which are always right-aligned.
 
 ##Usage
 **Toolbar actions can be as follows:**
@@ -14,10 +14,10 @@ export default {
 ##Sizes
 There are two sizes of the toolbar that should be chosen based on the type of device and its screen width.
 
-Size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Screen width&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Device
-:---- | :----------------- | :-------
-Cozy | > 599 px | Mobile and small tablets
-Compact | 600 px and above | Desktop
+Size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Modifier class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Screen width&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Device
+:---- | :-------- | :--------- | :-------
+Cozy | \`fd-toolbar--cozy\` | < 599 px | Mobile and small tablets
+Compact | \`fd-toolbar--compact\` | 600 px and above | Desktop
 <br>
 
         `,
@@ -313,9 +313,9 @@ export const alignment = () => `<h3>Left and right-aligned</h3>
 alignment.storyName = 'Alignment';
 alignment.parameters = {
     docs: {
-        storyDescription: `Toolbars are typically used for left/right alignment; however, they can displayed in any which way. This can be achieved with the \`fd-toolbar__spacer\` class.
+        storyDescription: `Toolbars are typically used for left/right alignment; however, they can be displayed in any way with the \`fd-toolbar__spacer\` class.
 
-**Note:**Spacers share the horizontal space equally, therefore the content is not centered as precisely as it is in the **Bar**component.
+**Note:** Spacers share the horizontal space equally; therefore, the content is not centered as precisely as it is in the **Bar** component.
 `
     }
 };
