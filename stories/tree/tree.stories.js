@@ -1,49 +1,36 @@
 export default {
     title: 'Components/Tree',
     parameters: {
-        description: `Unlike tree tables, trees are used for rather basic data.
+        description: `Tree allows the user to display and work with a hierarchical set of items. Trees are mostly used in the master list for a master-detail scenario using the **Flexible Column Layout** and in **Popovers** or **Dialogs**. In certain use cases, they can also be used in the **Dynamic Page Layout**.
+        Items that contain additional items are called nodes, while items that do not contain any other items are called leaves. If available, a single top-most node is called a root node. Apart from the hierarchical structure of its nodes and leaves, a tree is quite similar to a **List**.
+        
+##Usage
+**Use the tree if:**
 
-
-### USE THE TREE IF:
-- You need to display the key identifier of hierarchically structured items
+- You need to display the key identifier of hierarchically structured items (for example in the first column of the **Flexible Column Layout**.
 - Selecting one or more items out of a set of hierarchically structured items is a main use case.
 - The hierarchy has a restricted number of levels (up to about 12, depending on the content) and items (around 200).
 - You want to have only one implementation for all devices.
+        
 
-### DO NOT USE THE TREE IF:
+**Do not use the tree if:**
 
-- The main use case is to select one item from a very small number of non-hierarchical items, without viewing additional details. In this case, a select or combo box might be more appropriate.
-- Items are not structured hierarchically. Use a list instead.
-- The hierarchy turns out to have only two levels. In this case, use a grouped list.
-- The hierarchy turns out to be just a categorization based on several details of the item. In this case, an analytical table provides multi-level grouping. Note that the analytical table is not fully responsive. It is only available for desktops and tablets, so you will need to take an adaptive approach by offering an additional UI for smartphones.
-- You need to display very deep hierarchies with additional data per item. In this case, use a tree table (not available yet in Fundamental-styles). Note that the tree table is not fully responsive. It is only available for desktops and tablets, so you will need to take an adaptive approach by offering an additional UI for smartphones.
-- The structure contains more than around 200 items. In this case, use the tree table (not available yet in Fundamental-styles). It is optimized for large item sets and provides better performance. Note that the tree table is not fully responsive. It is only available for desktops and tablets, so you will need to take an adaptive approach by offering an additional UI for smartphones.
-- You need an overview of a large amount of data. In this case, use a chart.
+- The main use case is to select one item from a very small number of non-hierarchical items, without viewing additional details. In this case, a **Select** or **Combobox Input** might be more appropriate.
+- Items are not structured hierarchically. Use a **List** instead.
+- The hierarchy turns out to have only two levels. In this case, use a **grouped list**.
+- The hierarchy turns out to be just a categorization based on several details of the item. In this case, an **an analytical table** provides multi-level grouping. Note that the analytical table is not fully responsive. It is only available for desktops and tablets, so you will need to take an adaptive approach by offering an additional UI for smartphones.
 
-### RESPONSIVENESS
+##Behaviour
+The tree is like a list containing hierarchical data. It acts as a container for items, with the possibility to expand and collapse nodes. The tree changes the indentation per level dynamically when the user expands a node, based on number of levels currently showing. The root tree contains a \`expanded-level-*\` class which keeps track of the current expanded level. The indentation rules are the same for compact and cozy mode.
 
-The tree is like a list containing hierarchical data. It acts as a container for items, with the possibility to expand and collapse nodes. The tree changes the indentation per level dynamically when the user expands a node, based on number of levels currently showing. The root tree has a class <code class="docs-code">.expanded-level-*</code> which keeps track of which level is currently expanded. The indentation rules are the same for compact and cozy mode.
+The default behaviour of the list item is that it does not wrap. To enable wrapping, add the \`fd-tree__content--wrap\` modifier class to the \`fd-tree__content\` element.
 
-### WRAPPING BEHAVIOUR
 
-The default behaviour of the list item is no wrapping. To allow wrapping use the <code class="docs-code">.fd-tree\\_\\_content--wrap</code> modifier class applied on the <code class="docs-code">.fd-tree\\_\\_content</code> element.
+##States
+By default, tree items are not interactive. If all tree items are navigable, it’s possible to add states (hover, selected, active) to them by adding the \`fd-tree--active\` modifier class to the root tree. If tree items do not necessarily contain links, use the \`fd-tree__item-container--active\` modifier class instead.
 
-### MODES
-
-There are 2 modes: Default(Tablet and Mobile) and Compact (Desktop). For compact mode apply the <code class="docs-code">.fd-tree--compact</code> modifier class to the root tree.
-
-### INTERACTIVE STATES
-
-By default tree items are not interactive. Items with single and multiple selection (radio buttons and checkboxes) can have <code class="docs-code">selected</code> state by adding <code class="docs-code">.is-selected</code> to the 
-<code class="docs-code">fd-tree\\_\\_item-container</code> element.
-
-For navigation links or clickable items add the <code class="docs-code">.fd-tree--active</code> modifier class to the root tree.
-
-### Levels
-
-The Tree currently supports up to 12 levels. More levels can be added per request.
-
-<span style="color: darkred; font-weight: bold;">NOTE: In some examples the expander is not interactive (will not show/hide the next level). Its purpose in these cases is simply to demonstrate the indentation rules.</span>
+Items with single and multiple selection (radio buttons and checkboxes) can display a selected state by adding the \`is-selected\` class to the \`fd-tree__item-container\` element.
+<br>
 `,
         docs: { iframeHeight: 400 },
         tags: ['f3', 'a11y', 'theme', 'development'],
@@ -51,7 +38,7 @@ The Tree currently supports up to 12 levels. More levels can be added per reques
     }
 };
 
-export const treeWithExpandedLevel1 = () => `<ul role="tree" aria-label="Root Tree" id="TREE1L1" class="fd-tree expanded-level-1">
+export const primary = () => `<ul role="tree" aria-label="Root Tree" id="TREE1L1" class="fd-tree expanded-level-1">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container">
             <button tabindex="0" class="fd-tree__expander is-expanded" aria-controls="TREE1L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true">
@@ -176,17 +163,16 @@ export const treeWithExpandedLevel1 = () => `<ul role="tree" aria-label="Root Tr
 </ul>
 `;
 
-treeWithExpandedLevel1.parameters = {
+primary.storyName = 'Primary';
+primary.parameters = {
     docs: {
         iframeHeight: 950,
         storyDescription: `
-When Level 1 is expanded to show Level 2, Level 2 is indented by 1.5rem.
-Only the root tree (ul element) needs to have the <code class="docs-code">.expanded-level-*</code> modifier class to indicate which level is currently expanded.
-`
+The primary tree component displays level 1 expanded to show level 2, which is indented by 1.5rem. Only the root tree (ul element) needs to have the \`expanded-level-*\` modifier class to indicate which level is currently expanded.`
     }
 };
 
-export const treeWithExpandedLevel2AndNoBorders = () => `<ul role="tree" aria-label="Root Tree" id="TREE2L1" class="fd-tree fd-tree--no-border expanded-level-2">
+export const borderless = () => `<ul role="tree" aria-label="Root Tree" id="TREE2L1" class="fd-tree fd-tree--no-border expanded-level-2">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container">
             <button tabindex="0" class="fd-tree__expander is-expanded" aria-controls="TREE2L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true">
@@ -301,20 +287,21 @@ export const treeWithExpandedLevel2AndNoBorders = () => `<ul role="tree" aria-la
 </ul>
 `;
 
-treeWithExpandedLevel2AndNoBorders.parameters = {
+borderless.storyName = 'Borderless';
+borderless.parameters = {
     docs: {
         iframeHeight: 400,
         storyDescription: `
-When Level 2 expands to show Level 3, Level 2 indents by 1rem while Level 3 indents by 2.5rem.
-<br>To remove the borders from the first level items apply the <code class="docs-code">.fd-tree--no-border</code> modifier class to the root tree.
-<br>Icons can be added before and/or after the text as children of <code class="docs-code">.fd-tree\\_\\_content</code>.
-<br>List items can have actions which are added as children of <code class="docs-code">.fd-tree\\_\\_item-container</code>.
-`
+Tree can be displayed without borders. To remove the borders from the first level items, add the \`fd-tree--no-border\` modifier class to the root tree. Additionally, tree list items can display actions, which are added as children of the \`fd-tree__item-container\` class.
+
+####Icons
+Icons can be added before and/or after the text as children of the \`fd-tree__content\` class.
+        `
     }
 };
 
 
-export const treeWithExpandedLevel3AndHighlightIndicators = () => `<ul role="tree" aria-label="Root Tree" id="TREE3L1" class="fd-tree expanded-level-3">
+export const highlightIndicators = () => `<ul role="tree" aria-label="Root Tree" id="TREE3L1" class="fd-tree expanded-level-3">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container has-highlight-indicator">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE3L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true">
@@ -399,36 +386,31 @@ export const treeWithExpandedLevel3AndHighlightIndicators = () => `<ul role="tre
 </ul>
 `;
 
-treeWithExpandedLevel3AndHighlightIndicators.parameters = {
+highlightIndicators.storyName = 'Highlight indicators';
+highlightIndicators.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
-Indentations are calculated with 0.5rem up to level 6.
-When Level 3 is expanded to show Level 4:
+Tree can display highlight indicators on tree items to indicate a status. In this example, each level indents by 0.5rem more than the previous level. For example, level 2 indents by 0.5, level 3 by 1rem and level 4 by 1.5rem (up to level 6).
 
-- Level 2 indents by 0.5rem
-- Level 3 indents by 1rem
-- Level 4 indents by 1.5rem
 
-This indentation repeats when level 4 and 5 are triggered.
+To display tree items with highlight indicators, add the \`has-highlight-indicator--*\` modifier class to the \`fd-tree__item-container\` element.
 
-- Level 5 indents by 2rem
-- Level 6 indents by 2.5rem
+**The semantic states of highlight indicators are:**
 
-Tree items can have highlight indicators. To apply a highlight indicator use the <code class="docs-code">.has-highlight-indicator--*</code> modifier class on the <code class="docs-code">.fd-tree\\_\\_item-container</code> element. 
-
-Options include:
-
-- **default** -<code class="docs-code">.has-highlight-indicator</code>
-- **error** -<code class="docs-code">.has-highlight-indicator--error</code>
-- **success** -<code class="docs-code">.has-highlight-indicator--success</code>
-- **warning** -<code class="docs-code">.has-highlight-indicator--warning</code>
+State | Modifier class
+:------ | :------------------
+Default | \` has-highlight-indicator\`
+Error | \` has-highlight-indicator--error\`
+Success | \` has-highlight-indicator--success\`
+Warning | \` has-highlight-indicator--warning\`
+        
 `
     }
 };
 
 
-export const treeWithExpandedLevel6AndNavigationLinks = () => `<ul role="tree" aria-label="Root Tree" id="TREE6CL1" class="fd-tree expanded-level-6">
+export const navigable = () => `<ul role="tree" aria-label="Root Tree" id="TREE6CL1" class="fd-tree expanded-level-6">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container fd-tree__item-container--active has-highlight-indicator--success">
             <button class="fd-tree__expander is-expanded" aria-controls="TREE6CL2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true">
@@ -726,35 +708,28 @@ export const treeWithExpandedLevel6AndNavigationLinks = () => `<ul role="tree" a
 </ul>
 `;
 
-treeWithExpandedLevel6AndNavigationLinks.parameters = {
+navigable.storyName = 'Navigable';
+navigable.parameters = {
     docs: {
         iframeHeight: 1350,
         storyDescription: `
-When Level 6 is expanded to show up to 12 levels:
+Tree can be displayed with navigation links by anchoring the \`href\` attribute with the \`fd-tree__content\` class. If only a subset of the tree items is navigable, you should indicate them with navigation arrows. 
 
-Indentations are calculated with 0.25rem
-
-- Level 2 indents by 0.25rem
-- Level 3 indents by 0.5rem
-- Level 4 indents by 0.75rem
-- Level 5 indents by 1rem
-- Level 6 indents by 1.25rem
-
-0.25rem is added to each indentation up to level 12.
-
-If only a subset of the tree items are navigable (contain links) you should indicate those by displaying a navigation arrow. This is achieved by creating an element with <code class="docs-code">.fd-tree\\_\\_icon</code> and <code class="docs-code">.fd-tree\\_\\_icon--navigation</code> classes inside <code class="docs-code">.fd-tree\\_\\_item-container</code> element and adding <code class="docs-code">.fd-tree\\_\\_item-container--active</code> modifier class. 
-
-Do not show arrows if all items are navigable. In this case apply the <code class="docs-code">.fd-tree--active</code> modifier class to the root tree. This will add states (hover, selected, active) to all tree items.
-
-To indicate that an item has been navigated to, apply the <code class="docs-code">.is-navigated</code> class to the <code class="docs-code">.fd-tree\\_\\_item-container</code> element.
-
-The <code class="docs-code">.fd-tree\\_\\_item-container--active</code> modifier class can be applied to tree items that have states (hover, selected, active), not necessarily containing links. If all tree items have states apply the <code class="docs-code">.fd-tree--active</code> modifier class to the root tree.
+####Navigation arrows
+To display navigation arrows in tree items, create an element with \`fd-tree__icon\` and \`fd-tree__icon--navigation\` classes inside \`fd-tree__item-container\` with the \`fd-tree__item-container--active\` modifier class applied.
+        
+**If all items are navigable:** Do not display arrows at all. In this case, add the \`fd-tree--active\` modifier class to the root tree. This will add states (hover, selected, active) to all tree items.
+        
+**When an item has previously been navigated to:** Add the \`is-navigated\` class to the \`fd-tree__item-container\` element.
+        
+**Note:** In this example, each level indents by 0.25rem more than the previous level (up to level 12).
+        
 `
     }
 };
 
 
-export const treeWithSelection = () => `<h3>Multi Selection Left</h3>
+export const selection = () => `<h3>Multi Selection Left</h3>
 <ul role="tree" aria-label="Root Tree" id="TREESELL1" class="fd-tree expanded-level-1">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container is-selected">
@@ -995,11 +970,19 @@ export const treeWithSelection = () => `<h3>Multi Selection Left</h3>
 </ul>
 `;
 
-treeWithSelection.parameters = {
+selection.storyName = 'Selection';
+selection.parameters = {
     docs: {
         iframeHeight: 1000,
         storyDescription: `
-Form items can be added before or after the tree content <code class="docs-code">.fd-tree\\_\\_content</code>. For Multi Selection use checkboxes and for Single Selection use radio buttons. The <code class="docs-code">.fd-tree\\_\\_form-item</code> modifier class has to be applied together with <code class="docs-code">.fd-form-item</code>.
+Tree can be displayed with checkboxes, allowing the user to select multiple items. To display selected tree items, add the \`is-selected\` class to the \`fd-tree__item-container\` element.
+
+####Form items
+Form items can be added before or after \`fd-tree__content\`. The \`fd-tree__form-item \`modifier class must be added together with \`fd-form-item\`.
+        
+- Multi-selection: use **Checkboxes**
+- Single selection: use **Radio buttons**
+        
 `
     }
 };
@@ -1015,11 +998,12 @@ export const treeWithNoData = () => `<ul role="tree" aria-label="Root Tree" id="
 </ul>
 `;
 
+treeWithNoData.storyName = 'No data';
 treeWithNoData.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: `
-Apply the <code class="docs-code">.fd-tree--no-data</code> modifier class to the root tree if there is no data to display.
+If there is no data to display, add the \`fd-tree--no-data\` modifier class to the root tree.
 `
     }
 };
