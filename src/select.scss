@@ -17,6 +17,7 @@ $block: #{$fd-namespace}-select;
   text-shadow: var(--fdSelect_Text_Shadow);
 
   &__control {
+    @include fd-reset();
     @include fd-form-base();
 
     height: $fd-form-input-height;
@@ -26,7 +27,7 @@ $block: #{$fd-namespace}-select;
     align-items: center;
     justify-content: space-between;
     padding-right: 0;
-    padding-left: $fd-select-padding-x;
+    box-sizing: content-box;
 
     .#{$block}__button {
       align-items: center;
@@ -42,12 +43,26 @@ $block: #{$fd-namespace}-select;
       }
     }
 
-    @include fd-fiori-focus();
     @include fd-form-states();
+
+    &:focus {
+      outline: 0;
+
+      &::before {
+        content: '';
+        outline-offset: -0.1875rem;
+        outline-width: var(--sapContent_FocusWidth);
+        outline-color: var(--sapContent_FocusColor);
+        outline-style: var(--sapContent_FocusStyle);
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+      }
+    }
 
     @include fd-rtl() {
       text-align: right;
-      padding-right: $fd-select-padding-x;
       padding-left: 0;
     }
 
@@ -81,34 +96,56 @@ $block: #{$fd-namespace}-select;
     }
 
     &.is-readonly {
-      padding-right: $fd-select-padding-x;
-      padding-left: $fd-select-padding-x;
+      .#{$block}__text-content {
+        padding-right: $fd-select-padding-x;
+        padding-left: $fd-select-padding-x;
+      }
+
       cursor: text;
     }
   }
 
   &__text {
+    @include fd-reset();
+
     font-size: var(--sapFontSize);
   }
 
   &__text-content {
+    @include fd-reset();
+
+    padding-left: $fd-select-padding-x;
     min-width: 5rem;
+
+    @include fd-rtl() {
+      padding-left: 0;
+      padding-right: $fd-select-padding-x;
+    }
   }
 
   &--compact {
     .#{$block}__control {
       height: $fd-form-input-height--compact;
-      padding-left: $fd-select-padding-compact-x;
+
+      .#{$block}.#{$block}__text-content {
+        padding-left: $fd-select-padding-compact-x;
+      }
 
       @include fd-rtl() {
         text-align: right;
-        padding-right: $fd-select-padding-compact-x;
         padding-left: 0;
+
+        .#{$block}.#{$block}__text-content {
+          padding-left: 0;
+          padding-right: $fd-select-padding-compact-x;
+        }
       }
 
       &.is-readonly {
-        padding-right: $fd-select-padding-compact-x;
-        padding-left: $fd-select-padding-compact-x;
+        .#{$block}.#{$block}__text-content {
+          padding-right: $fd-select-padding-compact-x;
+          padding-left: $fd-select-padding-compact-x;
+        }
       }
     }
   }
