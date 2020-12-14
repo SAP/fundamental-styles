@@ -2,6 +2,7 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-quick-view;
+
 $fd-quick-view-avatar-indent: 0.75rem;
 $fd-quick-view-title-bottom-indent: 0.5rem;
 
@@ -9,6 +10,7 @@ $fd-quick-view-title-bottom-indent: 0.5rem;
   @include fd-reset();
 
   min-width: 20rem;
+  max-width: 30rem;
 
   &__content {
     @include fd-reset();
@@ -25,13 +27,16 @@ $fd-quick-view-title-bottom-indent: 0.5rem;
     }
   }
 
+  &__text {
+    max-width: 100%;
+    min-width: 0; // fix for flex width https://github.com/philipwalton/flexbugs#flexbug-17
+  }
+
   &__subheader {
     @include fd-reset();
     @include fd-flex();
 
     @include fd-rtl() {
-      flex-direction: row-reverse;
-
       > *:first-child {
         margin-right: 0;
         margin-left: $fd-quick-view-avatar-indent;
@@ -45,7 +50,6 @@ $fd-quick-view-title-bottom-indent: 0.5rem;
 
   &__title {
     @include fd-reset();
-    @include fd-ellipsis();
 
     font-size: var(--sapFontHeader5Size);
     color: var(--sapTile_TitleTextColor);

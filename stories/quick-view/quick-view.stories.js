@@ -32,7 +32,7 @@ export const Popover = () => `<div class="fd-popover">
                         </div>
                         
                         <div class="fd-quick-view__subtitle">
-                            <div class="fd-quick-view__subtitle">Michael Adams</div>
+                            Michael Adams
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ export const Popover = () => `<div class="fd-popover">
                 </div>
                 
                 <div class="fd-quick-view__group">
-                    <div class="fd-quick-view__group__title">
+                    <div class="fd-quick-view__group-title">
                         <h5 class="fd-title fd-title--h5">Main Contact</h5>
                     </div>
                     
@@ -110,11 +110,11 @@ Popover.parameters = {
 };
 
 export const Dialog = () => `<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1">
+    <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title">
         <span class="fd-dialog__resize-handle"></span>
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__middle">
-                <div class="fd-bar__element">Company B</div>
+                <div class="fd-bar__element" id="dialog-title">Company B</div>
             </div>
         </header>
 
@@ -135,7 +135,7 @@ export const Dialog = () => `<section class="fd-dialog-docs-static fd-dialog fd-
                         </div>
                     </div>
                     
-                    <div class="fd-quick-view__group">                    
+                    <div class="fd-quick-view__group">
                         <div class="fd-quick-view__group-item">
                             <div class="fd-quick-view__group-item-label">
                                 Start Date:
@@ -213,7 +213,7 @@ export const NoHeader = () => `<div class="fd-popover">
                     </div>
                 </div>
                 
-                <div class="fd-quick-view__group">                    
+                <div class="fd-quick-view__group">
                     <div class="fd-quick-view__group-item">
                         <div class="fd-quick-view__group-item-label">
                             Start Date:
@@ -253,5 +253,66 @@ NoHeader.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: 'QuickView without the header'
+    }
+};
+
+export const RTLMode = () => `<div class="fd-popover">
+    <div class="fd-popover__body" aria-hidden="false" id="popoverA1">
+        <div class="fd-quick-view" dir="rtl">
+            <div class="fd-quick-view__content">
+                <div class="fd-quick-view__subheader">
+                    <span class="fd-avatar fd-avatar--s" role="presentation">
+                        <i role="presentation" class="fd-avatar__icon sap-icon--camera"></i>
+                    </span>
+                    
+                    <div class="fd-quick-view__text">
+                        <div class="fd-quick-view__title">
+                            <h5 class="fd-title fd-title--h5">
+                                <a class="fd-link" href="#">Inventarisation</a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fd-quick-view__group">
+                    <div class="fd-quick-view__group-item">
+                        <div class="fd-quick-view__group-item-label">
+                            Start Date:
+                        </div>
+                        <div class="fd-quick-view__group-item-content">
+                            01/01/2015
+                        </div>
+                    </div>
+                    
+                    <div class="fd-quick-view__group-item">
+                        <div class="fd-quick-view__group-item-label">
+                            End Date:
+                        </div>
+                        <div class="fd-quick-view__group-item-content">
+                            31/12/2015
+                        </div>
+                    </div>
+                    
+                    <div class="fd-quick-view__group-item">
+                        <div class="fd-quick-view__group-item-label">
+                            Occurrence:
+                        </div>
+                        <div class="fd-quick-view__group-item-content">
+                            Weekly
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+`;
+
+RTLMode.storyName = 'RTL mode';
+
+RTLMode.parameters = {
+    docs: {
+        iframeHeight: 500,
+        storyDescription: 'QuickView in the RTL mode'
     }
 };
