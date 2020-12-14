@@ -4,13 +4,27 @@ export default {
         tags: ['f3', 'a11y', 'theme'],
         description: `Tabs are based on the folder metaphor and used to separate content into different sections. Tabs should be ordered based on priority to create visual hierarchy.
 
+##Usage
+**Use tabs if:**
+
+- Your business objects need to show multiple facets at the same time.
+- You want to allow the user to browse through these facets.
+- You need a prominent or very visual filter on top of a list.
+- You have clear-cut process steps that need to be visualized.
+
+
+**Do not use tabs if:**
+
+- You plan to use only one single tab.
+
+
 ##Sizes
 Depending on the screen width of the device, tabs can be displayed in two sizes:
         
-Size | Modifier class | Screen width
-:---- | :----------------- | :----------------
-Large&nbsp;&nbsp; | \`fd-tabs--l\`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 600px – 1440px
-Small&nbsp;&nbsp; | \`fd-tabs--s\`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | > 599px
+Size | Modifier class | Screen width | Device
+:---- | :----------------- | :--------- | :-----
+Large&nbsp;&nbsp; | \`fd-tabs--l\`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 600 px and above&nbsp;&nbsp; | Desktop
+Small&nbsp;&nbsp; | \`fd-tabs--s\`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | < 599 px&nbsp;&nbsp;| Mobile and small tablets
 <br>
         `,
         docs: {
@@ -211,7 +225,7 @@ iconOnly.storyName = 'Icon';
 iconOnly.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `Tabs can display icons instead of text with the \` fd-tabs__icon\` class. In addition, add the \`fd-tabs--icon-only\` class to the main element.
+        storyDescription: `Tabs can display icons instead of text with the \` fd-tabs__icon\` class (see **Icon** for a list of available icons). To display icon tabs without text, you will also need to add the \`fd-tabs--icon-only\` modifier class to the main element.
     `
     }
 };
@@ -261,7 +275,7 @@ compactIconOnly.storyName = 'Icon (compact)';
 compactIconOnly.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `Tabs can be displayed with icons in compact mode. To display compact tabs, add the \`fd-tabs--s\` and \`fd-tabs--compact\` modifier classes to the main element.
+        storyDescription: `Tabs can be displayed with icons in compact mode. To display compact tabs, add the \`fd-tabs--s\` and \`fd-tabs--compact\` modifier classes to the main element. See example above on how to display icon tabs.
     `
     }
 };
@@ -513,7 +527,7 @@ compactFilterMode.storyName = 'Filter mode (compact)';
 compactFilterMode.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `Tabs can be displayed in compact mode, while also in filter mode. To display compact tabs in filter mode, add the \`fd-tabs--s\`, \`fd-tabs--filter\` and \`fd-tabs--compact\` modifier classes to the main element.
+        storyDescription: `Tabs can be displayed in compact mode while in filter mode. To display compact tabs in filter mode, add the \`fd-tabs--s\`, \`fd-tabs--filter\` and \`fd-tabs--compact\` modifier classes to the main element.
     `
     }
 };
@@ -671,7 +685,7 @@ semanticFilterMode.storyName = 'Semantic filter mode';
 semanticFilterMode.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `Tabs can be displayed in filter mode with semantic colors. As detailed in the previous examples, add the \`fd-tabs--filter\` modifier class to the main element and add the semantic modifier classes to the \`fd-tabs__item\` elements (see **semantic mode** example for modifier names). 
+        storyDescription: `Tabs can be displayed in filter mode with semantic colors. As detailed in the previous examples, add the \`fd-tabs--filter\` modifier class to the main element and add the semantic modifier classes to the \`fd-tabs__item\` elements (see **semantic mode** example for modifier class names). 
         `
     }
 };
