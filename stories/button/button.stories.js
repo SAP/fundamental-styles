@@ -19,7 +19,7 @@ export default {
 
 - You want to link to a different page or object. Instead, use the **Link** component.
 `,
-        components: ['popover', 'segmented-button', 'menu', 'icon', 'button-split', 'button']
+        components: ['popover', 'segmented-button', 'menu', 'icon', 'button', 'button-split']
     }
 };
 
@@ -284,7 +284,7 @@ menuButton.parameters = {
 
 export const splitMenuButton = () => `
 <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
-  <button class="fd-button" aria-label="button">Button with text</button>
+  <button class="fd-button fd-button-split__text" aria-label="button">Button with a lot of text</button>
   <button class="fd-button" aria-controls="t4c0o273" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
   id="t4c0o273">
