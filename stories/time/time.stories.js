@@ -203,9 +203,9 @@ defaultCozyMode.parameters = {
         iframeHeight: 550,
         storyDescription: `The default time component is displayed in cozy mode, which is ideal for mobile screens. 
 
-Only one item and wrapper should be active at a time with the \`fd-timewrapper--active\` modifier class. The rest of the items must be collapsed with the \`fd-timeitem--collapsed\` modifier class, displaying only the collapsed slider item (blue) next to the active item. 
+Only one item and wrapper should be active at a time with the \`fd-time__wrapper--active\` modifier class. The rest of the items must be collapsed with the \`fd-timeitem--collapsed\` modifier class, displaying only the collapsed slider item (blue) next to the active item. 
 
-**Note:** The meridian (AM/PM) wrapper must contain the \`fd-timewrapper--meridian\` modifier class. 
+**Note:** The meridian (AM/PM) wrapper must contain the \`fd-time__wrapper--meridian\` modifier class. 
         `
     }
 };
