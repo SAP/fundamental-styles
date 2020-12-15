@@ -21,18 +21,20 @@ Use a meaningful link text that indicates what will happen when the user interac
 Avoid texts such as *Click Here* or *Link*, as these do not make it clear to the user what the purpose of the link is.
 `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['link']
+        components: ['icon', 'link']
     }
 };
 
 export const primary = () => `
 <a href="#" class="fd-link" tabindex="0">Default link</a>
 <br><br>
+<br><br>
 <a href="#" class="fd-link fd-link--emphasized" tabindex="0">Emphasized link</a>
 <br><br>
 <a href="#" class="fd-link fd-link--subtle">Subtle link</a>
 <br><br>
-<a class="fd-link" aria-disabled="true">Disabled link</a>
+<a class="fd-link" aria-disabled="true">Disabled link
+</a>
 <br><br>
 <div style="background-color:#314a5e;padding:10px">
     <a href="#" class="fd-link fd-link--inverted">Inverted link</a>
@@ -40,11 +42,11 @@ export const primary = () => `
 <br><br>
 <a href="#" class="fd-link" tabindex="0">
     Right icon link 
-    <span class="sap-icon--slim-arrow-right sap-icon--s"></span>
+    <span class="sap-icon--slim-arrow-right sap-icon--s fd-link__icon"></span>
 </a>
 <br><br>
 <a href="#" class="fd-link" tabindex="0">
-    <span class="sap-icon--slim-arrow-left sap-icon--s"></span> 
+    <span class="sap-icon--slim-arrow-left sap-icon--s fd-link__icon"></span> 
     Left icon link
 </a>
 `;
