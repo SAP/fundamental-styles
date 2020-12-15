@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.13.0
+ * Fundamental Library Styles v0.14.0
  * Copyright (c) 2020 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
@@ -15,8 +15,19 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%
+}
+.fd-message-box::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,.6)
+  background-color: #fff;
+  background-color: var(--sapBlockLayer_Background,#fff);
+  opacity: .8;
+  opacity: var(--fdDialogBackgroundOpacity,.8)
 }
 .fd-message-box__content {
   display: -webkit-box;
@@ -225,30 +236,16 @@
   box-shadow: inset 0 -.125rem #000;
   box-shadow: var(--sapContent_HeaderShadow,inset 0 -.125rem #000)
 }
-.fd-message-box--confirmation .fd-message-box__title::before {
-  font-family: SAP-icons;
-  text-align: center;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  top: .0625rem;
+.fd-message-box--confirmation .fd-message-box__header.fd-bar [class*=sap-icon] {
   font-size: 1rem;
   margin-right: .5rem;
   color: #000;
-  color: var(--sapNeutralElementColor,#000);
-  content: ""
+  color: var(--sapNeutralElementColor,#000)
 }
-.fd-message-box--confirmation[dir=rtl] .fd-message-box__title::before,
-[dir=rtl] .fd-message-box--confirmation .fd-message-box__title::before {
+.fd-message-box--confirmation .fd-message-box__header.fd-bar [class*=sap-icon][dir=rtl],
+[dir=rtl] .fd-message-box--confirmation .fd-message-box__header.fd-bar [class*=sap-icon] {
   margin-right: 0;
   margin-left: .5rem
-}
-.fd-message-box--confirmation.fd-message-box--no-icon .fd-message-box__title::before {
-  content: '';
-  margin: 0
 }
 .fd-message-box--error .fd-message-box__header.fd-bar {
   -webkit-box-shadow: inset 0 -.0625rem #ab0000,inset 0 -.125rem #000;
@@ -256,30 +253,16 @@
   box-shadow: inset 0 -.0625rem #ab0000,inset 0 -.125rem #000;
   box-shadow: inset 0 -.0625rem var(--sapErrorBorderColor,#ab0000),var(--sapContent_HeaderShadow,inset 0 -.125rem #000)
 }
-.fd-message-box--error .fd-message-box__title::before {
-  font-family: SAP-icons;
-  text-align: center;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  top: .0625rem;
+.fd-message-box--error .fd-message-box__header.fd-bar [class*=sap-icon] {
   font-size: 1rem;
   margin-right: .5rem;
   color: #ab0000;
-  color: var(--sapNegativeElementColor,#ab0000);
-  content: ""
+  color: var(--sapNegativeElementColor,#ab0000)
 }
-.fd-message-box--error[dir=rtl] .fd-message-box__title::before,
-[dir=rtl] .fd-message-box--error .fd-message-box__title::before {
+.fd-message-box--error .fd-message-box__header.fd-bar [class*=sap-icon][dir=rtl],
+[dir=rtl] .fd-message-box--error .fd-message-box__header.fd-bar [class*=sap-icon] {
   margin-right: 0;
   margin-left: .5rem
-}
-.fd-message-box--error.fd-message-box--no-icon .fd-message-box__title::before {
-  content: '';
-  margin: 0
 }
 .fd-message-box--success .fd-message-box__header.fd-bar {
   -webkit-box-shadow: inset 0 -.0625rem #006362,inset 0 -.125rem #000;
@@ -287,30 +270,16 @@
   box-shadow: inset 0 -.0625rem #006362,inset 0 -.125rem #000;
   box-shadow: inset 0 -.0625rem var(--sapSuccessBorderColor,#006362),var(--sapContent_HeaderShadow,inset 0 -.125rem #000)
 }
-.fd-message-box--success .fd-message-box__title::before {
-  font-family: SAP-icons;
-  text-align: center;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  top: .0625rem;
+.fd-message-box--success .fd-message-box__header.fd-bar [class*=sap-icon] {
   font-size: 1rem;
   margin-right: .5rem;
   color: #006362;
-  color: var(--sapPositiveElementColor,#006362);
-  content: ""
+  color: var(--sapPositiveElementColor,#006362)
 }
-.fd-message-box--success[dir=rtl] .fd-message-box__title::before,
-[dir=rtl] .fd-message-box--success .fd-message-box__title::before {
+.fd-message-box--success .fd-message-box__header.fd-bar [class*=sap-icon][dir=rtl],
+[dir=rtl] .fd-message-box--success .fd-message-box__header.fd-bar [class*=sap-icon] {
   margin-right: 0;
   margin-left: .5rem
-}
-.fd-message-box--success.fd-message-box--no-icon .fd-message-box__title::before {
-  content: '';
-  margin: 0
 }
 .fd-message-box--warning .fd-message-box__header.fd-bar {
   -webkit-box-shadow: inset 0 -.0625rem #5c5c00,inset 0 -.125rem #000;
@@ -318,30 +287,16 @@
   box-shadow: inset 0 -.0625rem #5c5c00,inset 0 -.125rem #000;
   box-shadow: inset 0 -.0625rem var(--sapWarningBorderColor,#5c5c00),var(--sapContent_HeaderShadow,inset 0 -.125rem #000)
 }
-.fd-message-box--warning .fd-message-box__title::before {
-  font-family: SAP-icons;
-  text-align: center;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  top: .0625rem;
+.fd-message-box--warning .fd-message-box__header.fd-bar [class*=sap-icon] {
   font-size: 1rem;
   margin-right: .5rem;
   color: #5c5c00;
-  color: var(--sapCriticalElementColor,#5c5c00);
-  content: ""
+  color: var(--sapCriticalElementColor,#5c5c00)
 }
-.fd-message-box--warning[dir=rtl] .fd-message-box__title::before,
-[dir=rtl] .fd-message-box--warning .fd-message-box__title::before {
+.fd-message-box--warning .fd-message-box__header.fd-bar [class*=sap-icon][dir=rtl],
+[dir=rtl] .fd-message-box--warning .fd-message-box__header.fd-bar [class*=sap-icon] {
   margin-right: 0;
   margin-left: .5rem
-}
-.fd-message-box--warning.fd-message-box--no-icon .fd-message-box__title::before {
-  content: '';
-  margin: 0
 }
 .fd-message-box--information .fd-message-box__header.fd-bar {
   -webkit-box-shadow: inset 0 -.0625rem #000,inset 0 -.125rem #000;
@@ -349,28 +304,14 @@
   box-shadow: inset 0 -.0625rem #000,inset 0 -.125rem #000;
   box-shadow: inset 0 -.0625rem var(--sapInformationBorderColor,#000),var(--sapContent_HeaderShadow,inset 0 -.125rem #000)
 }
-.fd-message-box--information .fd-message-box__title::before {
-  font-family: SAP-icons;
-  text-align: center;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  top: .0625rem;
+.fd-message-box--information .fd-message-box__header.fd-bar [class*=sap-icon] {
   font-size: 1rem;
   margin-right: .5rem;
   color: #000;
-  color: var(--sapInformativeElementColor,#000);
-  content: ""
+  color: var(--sapInformativeElementColor,#000)
 }
-.fd-message-box--information[dir=rtl] .fd-message-box__title::before,
-[dir=rtl] .fd-message-box--information .fd-message-box__title::before {
+.fd-message-box--information .fd-message-box__header.fd-bar [class*=sap-icon][dir=rtl],
+[dir=rtl] .fd-message-box--information .fd-message-box__header.fd-bar [class*=sap-icon] {
   margin-right: 0;
   margin-left: .5rem
-}
-.fd-message-box--information.fd-message-box--no-icon .fd-message-box__title::before {
-  content: '';
-  margin: 0
 }

@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.13.0
+ * Fundamental Library Styles v0.14.0
  * Copyright (c) 2020 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
@@ -302,6 +302,9 @@
   box-shadow: none;
   border: none;
   margin-top: -.25rem
+}
+.fd-popover--full-width {
+  width: 100%
 }
 .fd-popover__popper {
   font-size: .875rem;

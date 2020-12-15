@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.13.0
+ * Fundamental Library Styles v0.14.0
  * Copyright (c) 2020 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
@@ -36,10 +36,10 @@
   flex-wrap: wrap;
   padding-left: 0;
   list-style: none;
-  -webkit-box-shadow: 0 0 .25rem 0 fade(#000,15),inset 0 -.0625rem 0 0 #000;
-  -webkit-box-shadow: 0 0 .25rem 0 fade(var(--sapContent_ShadowColor,#000),15),inset 0 -.0625rem 0 0 var(--sapObjectHeader_BorderColor,#000);
-  box-shadow: 0 0 .25rem 0 fade(#000,15),inset 0 -.0625rem 0 0 #000;
-  box-shadow: 0 0 .25rem 0 fade(var(--sapContent_ShadowColor,#000),15),inset 0 -.0625rem 0 0 var(--sapObjectHeader_BorderColor,#000);
+  -webkit-box-shadow: inset 0 -.125rem #000;
+  -webkit-box-shadow: var(--sapContent_HeaderShadow,inset 0 -.125rem #000);
+  box-shadow: inset 0 -.125rem #000;
+  box-shadow: var(--sapContent_HeaderShadow,inset 0 -.125rem #000);
   background-color: #fff;
   background-color: var(--sapObjectHeader_Background,#fff);
   color: #000;

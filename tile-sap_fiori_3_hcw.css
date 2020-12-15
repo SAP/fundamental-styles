@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.13.0
+ * Fundamental Library Styles v0.14.0
  * Copyright (c) 2020 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
@@ -49,12 +49,16 @@
 .fd-tile.is-active,
 .fd-tile:active {
   background: #ec8b46;
-  background: var(--sapTile_Active_Background,#ec8b46)
+  background: var(--sapTile_Active_Background,#ec8b46);
+  border: .0625rem solid #000;
+  border: .0625rem solid var(--sapTile_Interactive_BorderColor,#000)
 }
 .fd-tile.is-hover,
 .fd-tile:hover {
   background: #ec8b46;
-  background: var(--sapTile_Hover_Background,#ec8b46)
+  background: var(--sapTile_Hover_Background,#ec8b46);
+  border: .0625rem solid #000;
+  border: .0625rem solid var(--sapTile_Interactive_BorderColor,#000)
 }
 .fd-tile.is-hover .fd-tile__toggle,
 .fd-tile:hover .fd-tile__toggle {
@@ -589,7 +593,7 @@
 }
 .fd-tile--slide .fd-tile__toggle[dir=rtl],
 [dir=rtl] .fd-tile--slide .fd-tile__toggle {
-  right: initial;
+  right: auto;
   left: -.0625rem
 }
 .fd-tile--slide .fd-tile__toggle::before {
@@ -899,7 +903,7 @@
 }
 .fd-tile--action .fd-tile__action-close[dir=rtl],
 [dir=rtl] .fd-tile--action .fd-tile__action-close {
-  right: initial;
+  right: auto;
   left: -.375rem
 }
 .fd-tile--action .fd-tile__action-close [class*=sap-icon],
@@ -958,9 +962,9 @@
 }
 .fd-tile--action .fd-tile__action-indicator[dir=rtl],
 [dir=rtl] .fd-tile--action .fd-tile__action-indicator {
-  right: initial;
+  right: auto;
   left: 0;
-  margin-right: initial;
+  margin-right: auto;
   margin-left: .25rem
 }
 .fd-tile--action .fd-tile__action-indicator [class*=sap-icon],
@@ -1327,6 +1331,13 @@
   border: .125rem dotted #000;
   border: var(--sapContent_FocusWidth,.125rem) dotted var(--sapContent_FocusColor,#000)
 }
+.fd-tile--line.fd-tile--action .fd-tile__action-close.is-focus.fd-tile--toggled::after,
+.fd-tile--line.fd-tile--action .fd-tile__action-close:focus.fd-tile--toggled::after,
+.fd-tile--line.fd-tile--action .fd-tile__action-indicator.is-focus.fd-tile--toggled::after,
+.fd-tile--line.fd-tile--action .fd-tile__action-indicator:focus.fd-tile--toggled::after {
+  border: .125rem dotted #000;
+  border: var(--sapContent_FocusWidth,.125rem) dotted var(--sapContent_ContrastFocusColor,#000)
+}
 .fd-tile--line .fd-badge {
   position: relative;
   top: 0;
@@ -1340,5 +1351,7 @@
 .fd-tile--line .fd-badge[dir=rtl],
 [dir=rtl] .fd-tile--line .fd-badge {
   margin-left: .375rem;
-  margin-right: 0
+  margin-right: 0;
+  left: 0;
+  right: 0
 }

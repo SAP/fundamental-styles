@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.13.0
+ * Fundamental Library Styles v0.14.0
  * Copyright (c) 2020 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
@@ -330,6 +330,11 @@
   border-color: #fff;
   border-color: var(--sapContent_ContrastFocusColor,#fff)
 }
+.fd-shellbar .fd-button.fd-shellbar__button.is-focus.fd-shellbar--toggled::after,
+.fd-shellbar .fd-button.fd-shellbar__button:focus.fd-shellbar--toggled::after {
+  border: .0625rem dotted #fff;
+  border: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_ContrastFocusColor,#fff)
+}
 .fd-shellbar .fd-button.fd-shellbar__button.is-active,
 .fd-shellbar .fd-button.fd-shellbar__button:active {
   background: #23303e;
@@ -369,9 +374,7 @@
 }
 .fd-shellbar .fd-button.fd-shellbar__button--menu {
   font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  outline-color: #fff;
-  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+  font-size: var(--sapFontSize,.875rem)
 }
 .fd-shellbar .fd-button.fd-shellbar__button--menu:hover {
   background: #283848;
@@ -383,9 +386,12 @@
   background: #23303e;
   background: var(--sapShell_Active_Background,#23303e);
   color: #fff;
-  color: var(--sapShell_Active_TextColor,#fff);
-  outline-color: #fff;
-  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+  color: var(--sapShell_Active_TextColor,#fff)
+}
+.fd-shellbar .fd-button.fd-shellbar__button--menu:active::after,
+.fd-shellbar .fd-button.fd-shellbar__button--menu:focus::after {
+  border-color: #fff;
+  border-color: var(--sapContent_ContrastFocusColor,#fff)
 }
 .fd-shellbar--s {
   padding: 0 1rem

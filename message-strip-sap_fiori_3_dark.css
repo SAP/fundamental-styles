@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.13.0
+ * Fundamental Library Styles v0.14.0
  * Copyright (c) 2020 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
@@ -108,16 +108,6 @@
 [dir=rtl] .fd-message-strip--warning::before {
   display: none
 }
-.fd-message-strip--error[dir=rtl]::after,
-.fd-message-strip--information[dir=rtl]::after,
-.fd-message-strip--success[dir=rtl]::after,
-.fd-message-strip--warning[dir=rtl]::after,
-[dir=rtl] .fd-message-strip--error::after,
-[dir=rtl] .fd-message-strip--information::after,
-[dir=rtl] .fd-message-strip--success::after,
-[dir=rtl] .fd-message-strip--warning::after {
-  display: none
-}
 .fd-message-strip--error.fd-message-strip--dismissible,
 .fd-message-strip--information.fd-message-strip--dismissible,
 .fd-message-strip--success.fd-message-strip--dismissible,
@@ -174,6 +164,10 @@
 }
 .fd-message-strip--warning::before {
   content: ""
+}
+.fd-message-strip--warning[dir=rtl]::before,
+[dir=rtl] .fd-message-strip--warning::before {
+  display: none
 }
 .fd-message-strip--warning[dir=rtl]::after,
 [dir=rtl] .fd-message-strip--warning::after {

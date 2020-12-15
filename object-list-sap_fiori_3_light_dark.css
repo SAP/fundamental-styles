@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.13.0
+ * Fundamental Library Styles v0.14.0
  * Copyright (c) 2020 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
@@ -527,6 +527,16 @@
   font-size: var(--sapFontSize,.875rem);
   height: 2rem
 }
+.fd-list__footer--right {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end
+}
+.fd-list__footer--left {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start
+}
 .fd-list__bold {
   font-weight: 700
 }
@@ -722,6 +732,11 @@
   height: auto;
   padding: .5rem 1rem
 }
+.fd-list--dropdown .fd-list__secondary {
+  width: auto;
+  max-width: 15rem;
+  display: contents
+}
 .fd-list--multi-input .fd-list__item {
   padding: 0;
   height: auto
@@ -869,6 +884,13 @@
   left: .0625rem;
   right: .0625rem
 }
+.fd-list--multi-input .fd-list__secondary {
+  padding-right: 1rem
+}
+.fd-list--multi-input .fd-list__secondary[dir=rtl],
+[dir=rtl] .fd-list--multi-input .fd-list__secondary {
+  padding-left: 1rem
+}
 .fd-list--multi-input .fd-list__footer {
   height: auto;
   text-align: right;
@@ -899,7 +921,7 @@
 .fd-list--dropdown,
 .fd-list--multi-input {
   display: block;
-  min-width: 5rem;
+  min-width: 7rem;
   max-width: 37.5rem
 }
 .fd-list--dropdown .fd-list__item,
@@ -939,11 +961,6 @@
 .fd-list--dropdown .fd-list__title:first-child:last-child,
 .fd-list--multi-input .fd-list__title:first-child:last-child {
   max-width: 37.5rem
-}
-.fd-list--dropdown .fd-list__secondary,
-.fd-list--multi-input .fd-list__secondary {
-  width: auto;
-  max-width: 15rem
 }
 .fd-list--dropdown .fd-list__icon,
 .fd-list--multi-input .fd-list__icon {
@@ -1591,6 +1608,40 @@
 .fd-list--selection.fd-list--selection-row .fd-list__item[dir=rtl],
 [dir=rtl] .fd-list--selection.fd-list--selection-row .fd-list__item {
   padding-right: 1rem
+}
+.fd-list__item-counter {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #7fc6c6;
+  color: var(--sapContent_MarkerTextColor,#7fc6c6);
+  margin-left: 1rem
+}
+.fd-list__item-counter::after,
+.fd-list__item-counter::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-list__item-counter[dir=rtl],
+[dir=rtl] .fd-list__item-counter {
+  margin-left: 0;
+  margin-right: 1rem
 }
 .fd-object-list__item {
   padding-top: 1rem;

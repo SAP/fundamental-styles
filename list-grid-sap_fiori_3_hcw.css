@@ -1,0 +1,700 @@
+/*!
+ * Fundamental Library Styles v0.14.0
+ * Copyright (c) 2020 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ */
+@charset "UTF-8";
+/*!
+.fd-grid-list
+*/
+.fd-grid-list {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+.fd-grid-list::after,
+.fd-grid-list::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-grid-list__item {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  background-color: var(--sapList_Background,#fff);
+  border-radius: .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  -webkit-box-shadow: 0 0 0 .0625rem #000;
+  -webkit-box-shadow: var(--sapContent_Shadow0,0 0 0 .0625rem #000);
+  box-shadow: 0 0 0 .0625rem #000;
+  box-shadow: var(--sapContent_Shadow0,0 0 0 .0625rem #000);
+  height: 100%;
+  position: relative
+}
+.fd-grid-list__item::after,
+.fd-grid-list__item::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-grid-list__item.is-focus,
+.fd-grid-list__item:focus {
+  outline-offset: -.1875rem;
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-grid-list__item .fd-grid-list__radio-input {
+  height: 1rem;
+  width: 1rem
+}
+.fd-grid-list__item .fd-grid-list__radio-input.is-focus,
+.fd-grid-list__item .fd-grid-list__radio-input:focus {
+  z-index: 5
+}
+.fd-grid-list__item .fd-grid-list__radio-input.is-focus + .fd-grid-list__radio-label,
+.fd-grid-list__item .fd-grid-list__radio-input:focus + .fd-grid-list__radio-label {
+  outline-offset: 0
+}
+.fd-grid-list__item .fd-grid-list__radio-input + .fd-grid-list__radio-label.is-empty,
+.fd-grid-list__item .fd-grid-list__radio-input + .fd-grid-list__radio-label:empty {
+  padding: 0
+}
+.fd-grid-list__item .fd-grid-list__radio-input + .fd-grid-list__radio-label::after {
+  top: 0;
+  right: 0!important;
+  bottom: 0;
+  left: 0;
+  margin: auto!important
+}
+.fd-grid-list__item .fd-grid-list__checkbox-input {
+  height: 1rem;
+  width: 1rem
+}
+.fd-grid-list__item .fd-grid-list__checkbox-input.is-focus,
+.fd-grid-list__item .fd-grid-list__checkbox-input:focus {
+  z-index: 5
+}
+.fd-grid-list__item .fd-grid-list__checkbox-input.is-focus + .fd-grid-list__checkbox-label,
+.fd-grid-list__item .fd-grid-list__checkbox-input:focus + .fd-grid-list__checkbox-label {
+  outline-offset: 0
+}
+.fd-grid-list__item .fd-grid-list__checkbox-input + .fd-grid-list__checkbox-label.is-empty,
+.fd-grid-list__item .fd-grid-list__checkbox-input + .fd-grid-list__checkbox-label:empty {
+  padding: 0
+}
+.fd-grid-list__item .fd-grid-list__checkbox-label,
+.fd-grid-list__item .fd-grid-list__radio-label {
+  display: none
+}
+.fd-grid-list__item--unread .fd-grid-list__item-body * {
+  font-weight: 700
+}
+.fd-grid-list__item--link {
+  cursor: pointer
+}
+.fd-grid-list__item--link.is-hover,
+.fd-grid-list__item--link:hover {
+  -webkit-box-shadow: 0 0 0 .0625rem #000;
+  -webkit-box-shadow: 0 0 0 .0625rem var(--fdGrid_List_Item_Hover_Border_Color,var(--sapTile_Interactive_BorderColor,#000));
+  box-shadow: 0 0 0 .0625rem #000;
+  box-shadow: 0 0 0 .0625rem var(--fdGrid_List_Item_Hover_Border_Color,var(--sapTile_Interactive_BorderColor,#000));
+  background-color: #ec8b46;
+  background-color: var(--sapList_Hover_Background,#ec8b46)
+}
+.fd-grid-list__item--link.is-active,
+.fd-grid-list__item--link:active {
+  background-color: #ec8b46!important;
+  background-color: var(--sapList_Active_Background,#ec8b46)!important
+}
+.fd-grid-list__item--link.is-active *,
+.fd-grid-list__item--link:active * {
+  color: #000!important;
+  color: var(--sapList_Active_TextColor,#000)!important
+}
+.fd-grid-list__item--link.is-navigated::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: .1875rem;
+  display: block;
+  border-radius: 0 .25rem .25rem 0;
+  border-radius: 0 var(--sapElement_BorderCornerRadius,.25rem) var(--sapElement_BorderCornerRadius,.25rem) 0;
+  background-color: #000;
+  background-color: var(--sapList_SelectionBorderColor,#000)
+}
+.fd-grid-list__item .fd-grid-list__item-toolbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 1rem
+}
+.fd-grid-list__item-body {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1rem
+}
+.fd-grid-list__item-body::after,
+.fd-grid-list__item-body::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-grid-list__item-body--no-padding {
+  padding: 0
+}
+.fd-grid-list__item-body-actions {
+  margin-top: 1rem;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1
+}
+.fd-grid-list__item-counter {
+  color: #000;
+  color: var(--sapContent_MarkerTextColor,#000)
+}
+.fd-grid-list__item-counter.is-focus,
+.fd-grid-list__item-counter:focus {
+  outline-offset: 0;
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-grid-list .fd-grid-list__group-header {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1rem;
+  font-size: var(--sapFontHeader5Size,1rem);
+  margin-top: .75rem;
+  height: 2rem;
+  color: var(--sapList_GroupHeaderTextColo);
+  font-weight: 700;
+  line-height: 2rem
+}
+.fd-grid-list .fd-grid-list__group-header::after,
+.fd-grid-list .fd-grid-list__group-header::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-grid-list .fd-grid-list__group-header.is-focus,
+.fd-grid-list .fd-grid-list__group-header:focus {
+  outline-offset: -.1875rem;
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-grid-list .fd-grid-list__group-header--no-margin {
+  margin-top: 0
+}
+.fd-grid-list--mode-single-select .fd-grid-list__item {
+  cursor: pointer
+}
+.fd-grid-list--mode-single-select .fd-grid-list__item.is-hover,
+.fd-grid-list--mode-single-select .fd-grid-list__item:hover {
+  -webkit-box-shadow: 0 0 0 .0625rem #000;
+  -webkit-box-shadow: 0 0 0 .0625rem var(--fdGrid_List_Item_Hover_Border_Color,var(--sapTile_Interactive_BorderColor,#000));
+  box-shadow: 0 0 0 .0625rem #000;
+  box-shadow: 0 0 0 .0625rem var(--fdGrid_List_Item_Hover_Border_Color,var(--sapTile_Interactive_BorderColor,#000));
+  background-color: #ec8b46;
+  background-color: var(--sapList_Hover_Background,#ec8b46)
+}
+.fd-grid-list--mode-single-select .fd-grid-list__item .fd-grid-list__radio-input {
+  width: 100%;
+  height: 100%;
+  z-index: -1
+}
+.fd-grid-list--mode-multi-select .fd-grid-list__item .fd-grid-list__checkbox-label,
+.fd-grid-list--mode-multi-select .fd-grid-list__item .fd-grid-list__radio-label,
+.fd-grid-list--mode-single-select-left .fd-grid-list__item .fd-grid-list__checkbox-label,
+.fd-grid-list--mode-single-select-left .fd-grid-list__item .fd-grid-list__radio-label,
+.fd-grid-list--mode-single-select-right .fd-grid-list__item .fd-grid-list__checkbox-label,
+.fd-grid-list--mode-single-select-right .fd-grid-list__item .fd-grid-list__radio-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-item-align: inherit;
+  align-self: inherit;
+  color: #000;
+  color: var(--sapContent_LabelColor,#000)
+}
+.fd-grid-list--mode-multi-select .fd-grid-list__item.is-selected,
+.fd-grid-list--mode-multi-select .fd-grid-list__item[aria-selected=true],
+.fd-grid-list--mode-single-select .fd-grid-list__item.is-selected,
+.fd-grid-list--mode-single-select .fd-grid-list__item[aria-selected=true],
+.fd-grid-list--mode-single-select-left .fd-grid-list__item.is-selected,
+.fd-grid-list--mode-single-select-left .fd-grid-list__item[aria-selected=true],
+.fd-grid-list--mode-single-select-right .fd-grid-list__item.is-selected,
+.fd-grid-list--mode-single-select-right .fd-grid-list__item[aria-selected=true] {
+  -webkit-box-shadow: 0 0 0 .125rem #000;
+  -webkit-box-shadow: 0 0 0 .125rem var(--sapList_SelectionBorderColor,#000);
+  box-shadow: 0 0 0 .125rem #000;
+  box-shadow: 0 0 0 .125rem var(--sapList_SelectionBorderColor,#000);
+  background-color: #8fb5ff;
+  background-color: var(--sapList_SelectionBackgroundColor,#8fb5ff)
+}
+.fd-grid-list--mode-multi-select .fd-grid-list__item.is-selected.fd-grid-list__item--link.is-hover,
+.fd-grid-list--mode-multi-select .fd-grid-list__item.is-selected.fd-grid-list__item--link:hover,
+.fd-grid-list--mode-multi-select .fd-grid-list__item[aria-selected=true].fd-grid-list__item--link.is-hover,
+.fd-grid-list--mode-multi-select .fd-grid-list__item[aria-selected=true].fd-grid-list__item--link:hover,
+.fd-grid-list--mode-single-select .fd-grid-list__item.is-selected.fd-grid-list__item--link.is-hover,
+.fd-grid-list--mode-single-select .fd-grid-list__item.is-selected.fd-grid-list__item--link:hover,
+.fd-grid-list--mode-single-select .fd-grid-list__item[aria-selected=true].fd-grid-list__item--link.is-hover,
+.fd-grid-list--mode-single-select .fd-grid-list__item[aria-selected=true].fd-grid-list__item--link:hover,
+.fd-grid-list--mode-single-select-left .fd-grid-list__item.is-selected.fd-grid-list__item--link.is-hover,
+.fd-grid-list--mode-single-select-left .fd-grid-list__item.is-selected.fd-grid-list__item--link:hover,
+.fd-grid-list--mode-single-select-left .fd-grid-list__item[aria-selected=true].fd-grid-list__item--link.is-hover,
+.fd-grid-list--mode-single-select-left .fd-grid-list__item[aria-selected=true].fd-grid-list__item--link:hover,
+.fd-grid-list--mode-single-select-right .fd-grid-list__item.is-selected.fd-grid-list__item--link.is-hover,
+.fd-grid-list--mode-single-select-right .fd-grid-list__item.is-selected.fd-grid-list__item--link:hover,
+.fd-grid-list--mode-single-select-right .fd-grid-list__item[aria-selected=true].fd-grid-list__item--link.is-hover,
+.fd-grid-list--mode-single-select-right .fd-grid-list__item[aria-selected=true].fd-grid-list__item--link:hover {
+  -webkit-box-shadow: 0 0 0 .125rem #000;
+  -webkit-box-shadow: 0 0 0 .125rem var(--sapList_SelectionBorderColor,#000);
+  box-shadow: 0 0 0 .125rem #000;
+  box-shadow: 0 0 0 .125rem var(--sapList_SelectionBorderColor,#000);
+  background-color: #8fb5ff;
+  background-color: var(--sapList_SelectionBackgroundColor,#8fb5ff)
+}
+.fd-grid-list--mode-multi-select .fd-grid-list__item.is-selected.fd-grid-list__item--link.is-active,
+.fd-grid-list--mode-multi-select .fd-grid-list__item.is-selected.fd-grid-list__item--link:active,
+.fd-grid-list--mode-multi-select .fd-grid-list__item[aria-selected=true].fd-grid-list__item--link.is-active,
+.fd-grid-list--mode-multi-select .fd-grid-list__item[aria-selected=true].fd-grid-list__item--link:active,
+.fd-grid-list--mode-single-select .fd-grid-list__item.is-selected.fd-grid-list__item--link.is-active,
+.fd-grid-list--mode-single-select .fd-grid-list__item.is-selected.fd-grid-list__item--link:active,
+.fd-grid-list--mode-single-select .fd-grid-list__item[aria-selected=true].fd-grid-list__item--link.is-active,
+.fd-grid-list--mode-single-select .fd-grid-list__item[aria-selected=true].fd-grid-list__item--link:active,
+.fd-grid-list--mode-single-select-left .fd-grid-list__item.is-selected.fd-grid-list__item--link.is-active,
+.fd-grid-list--mode-single-select-left .fd-grid-list__item.is-selected.fd-grid-list__item--link:active,
+.fd-grid-list--mode-single-select-left .fd-grid-list__item[aria-selected=true].fd-grid-list__item--link.is-active,
+.fd-grid-list--mode-single-select-left .fd-grid-list__item[aria-selected=true].fd-grid-list__item--link:active,
+.fd-grid-list--mode-single-select-right .fd-grid-list__item.is-selected.fd-grid-list__item--link.is-active,
+.fd-grid-list--mode-single-select-right .fd-grid-list__item.is-selected.fd-grid-list__item--link:active,
+.fd-grid-list--mode-single-select-right .fd-grid-list__item[aria-selected=true].fd-grid-list__item--link.is-active,
+.fd-grid-list--mode-single-select-right .fd-grid-list__item[aria-selected=true].fd-grid-list__item--link:active {
+  background-color: #ec8b46;
+  background-color: var(--sapList_Active_Background,#ec8b46)
+}
+.fd-grid-list--mode-single-select-right .fd-grid-list__radio-input {
+  right: 1rem
+}
+.fd-grid-list--mode-single-select-right .fd-grid-list__radio-label {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  margin-left: .5rem!important
+}
+.fd-grid-list--mode-single-select-right .fd-grid-list__radio-label[dir=rtl],
+[dir=rtl] .fd-grid-list--mode-single-select-right .fd-grid-list__radio-label {
+  margin-right: .5rem!important;
+  margin-left: 0!important
+}
+.fd-grid-list__filter.is-focus,
+.fd-grid-list__filter:focus {
+  outline-offset: -.1875rem;
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-grid-list__filter,
+.fd-grid-list__filter-button {
+  color: #fff!important
+}
+.fd-grid-list__filter-button.is-hover,
+.fd-grid-list__filter-button:hover {
+  color: #000!important;
+  color: var(--sapButton_TextColor,#000)!important
+}
+.fd-grid-list__more {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  padding: .813rem;
+  background-color: #fff;
+  background-color: var(--sapGroup_ContentBackground,#fff);
+  border-radius: .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  -webkit-box-shadow: 0 0 0 .0625rem #000;
+  -webkit-box-shadow: var(--sapContent_Shadow0,0 0 0 .0625rem #000);
+  box-shadow: 0 0 0 .0625rem #000;
+  box-shadow: var(--sapContent_Shadow0,0 0 0 .0625rem #000);
+  text-align: center
+}
+.fd-grid-list__more::after,
+.fd-grid-list__more::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-grid-list__more.is-focus,
+.fd-grid-list__more:focus {
+  outline-offset: -.1875rem;
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-grid-list__more .fd-grid-list__more-title {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-weight: 700
+}
+.fd-grid-list__more .fd-grid-list__more-title::after,
+.fd-grid-list__more .fd-grid-list__more-title::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-grid-list__more-description {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin: .813rem 0 0
+}
+.fd-grid-list__more-description::after,
+.fd-grid-list__more-description::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-grid-list__more .fd-grid-list__more-title,
+.fd-grid-list__more-description {
+  color: #000;
+  color: var(--sapLink_Visited_Color,#000)
+}
+.fd-grid-list__more.is-hover,
+.fd-grid-list__more:hover {
+  background-color: #ec8b46;
+  background-color: var(--sapList_Hover_Background,#ec8b46)
+}
+.fd-grid-list__more:active {
+  background-color: #ec8b46;
+  background-color: var(--sapList_Active_Background,#ec8b46)
+}
+.fd-grid-list__more:active .fd-grid-list__more-description,
+.fd-grid-list__more:active .fd-grid-list__more-title {
+  color: #000;
+  color: var(--sapList_Active_TextColor,#000)
+}
+.fd-grid-list__footer {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: #000;
+  color: var(--sapList_FooterTextColor,#000)
+}
+.fd-grid-list__footer::after,
+.fd-grid-list__footer::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-grid-list__footer.is-focus,
+.fd-grid-list__footer:focus {
+  outline-offset: 0;
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-grid-list__highlight {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: .375rem;
+  display: block;
+  border-radius: .25rem 0 0 .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem) 0 0 var(--sapElement_BorderCornerRadius,.25rem)
+}
+.fd-grid-list__highlight::after,
+.fd-grid-list__highlight::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-grid-list__highlight--positive {
+  background-color: #006362;
+  background-color: var(--sapSuccessBorderColor,#006362)
+}
+.fd-grid-list__highlight {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: .375rem;
+  display: block;
+  border-radius: .25rem 0 0 .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem) 0 0 var(--sapElement_BorderCornerRadius,.25rem)
+}
+.fd-grid-list__highlight::after,
+.fd-grid-list__highlight::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-grid-list__highlight--negative {
+  background-color: #ab0000;
+  background-color: var(--sapErrorBorderColor,#ab0000)
+}
+.fd-grid-list__highlight {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: .375rem;
+  display: block;
+  border-radius: .25rem 0 0 .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem) 0 0 var(--sapElement_BorderCornerRadius,.25rem)
+}
+.fd-grid-list__highlight::after,
+.fd-grid-list__highlight::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-grid-list__highlight--critical {
+  background-color: #5c5c00;
+  background-color: var(--sapWarningBorderColor,#5c5c00)
+}
+.fd-grid-list__highlight {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: .375rem;
+  display: block;
+  border-radius: .25rem 0 0 .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem) 0 0 var(--sapElement_BorderCornerRadius,.25rem)
+}
+.fd-grid-list__highlight::after,
+.fd-grid-list__highlight::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-grid-list__highlight--neutral {
+  background-color: #000;
+  background-color: var(--sapNeutralBorderColor,#000)
+}

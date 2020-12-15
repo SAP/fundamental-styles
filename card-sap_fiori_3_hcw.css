@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.13.0
+ * Fundamental Library Styles v0.14.0
  * Copyright (c) 2020 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
@@ -32,10 +32,10 @@
   position: relative;
   background: #fff;
   background: var(--sapTile_Background,#fff);
-  -webkit-box-shadow: 0 0 0 .0625rem #000;
-  -webkit-box-shadow: var(--sapContent_Shadow0,0 0 0 .0625rem #000);
-  box-shadow: 0 0 0 .0625rem #000;
-  box-shadow: var(--sapContent_Shadow0,0 0 0 .0625rem #000);
+  -webkit-box-shadow: none;
+  -webkit-box-shadow: var(--fdCard_Box_Shadow,none);
+  box-shadow: none;
+  box-shadow: var(--fdCard_Box_Shadow,none);
   border-radius: .25rem;
   border-radius: var(--sapElement_BorderCornerRadius,.25rem);
   border: .0625rem solid #000;
@@ -75,6 +75,8 @@
   background: var(--sapTile_Background,#fff);
   border-bottom: .0625rem solid #000;
   border-bottom: .0625rem solid var(--sapTile_SeparatorColor,#000);
+  border-radius: .25rem .25rem 0 0;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem) var(--sapElement_BorderCornerRadius,.25rem) 0 0;
   text-decoration: none;
   cursor: pointer
 }
@@ -104,18 +106,20 @@
   outline-color: var(--sapContent_FocusColor,#000);
   outline-offset: -.125rem
 }
+.fd-card__header .fd-card__avatar {
+  margin-right: .75rem
+}
+.fd-card__header .fd-card__avatar[dir=rtl],
+[dir=rtl] .fd-card__header .fd-card__avatar {
+  margin-right: 0;
+  margin-left: .75rem
+}
 .fd-card__header:last-child {
   border-bottom: none;
   border-top: .0625rem solid #000;
-  border-top: .0625rem solid var(--sapTile_SeparatorColor,#000)
-}
-.fd-card__avatar {
-  margin-right: .75rem
-}
-.fd-card__avatar[dir=rtl],
-[dir=rtl] .fd-card__avatar {
-  margin-right: 0;
-  margin-left: .75rem
+  border-top: .0625rem solid var(--sapTile_SeparatorColor,#000);
+  border-radius: 0 0 .25rem .25rem;
+  border-radius: 0 0 var(--sapElement_BorderCornerRadius,.25rem) var(--sapElement_BorderCornerRadius,.25rem)
 }
 .fd-card__header-text {
   font-size: .875rem;
@@ -552,7 +556,9 @@
   font-size: inherit
 }
 .fd-card__numeric-content.fd-numeric-content {
-  width: initial
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: auto
 }
 .fd-card__content {
   font-size: .875rem;

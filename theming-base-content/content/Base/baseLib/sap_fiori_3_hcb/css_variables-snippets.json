@@ -339,6 +339,11 @@
     "body": "var(--sapContent_MonospaceBoldFontFamily)",
     "description": "Monospace Bold Font Family (Defines which monospaced bold font is used for specific texts in the content area.) Value: \"72Mono-Bold\", \"72Mono-Boldfull\", lucida console, monospace #Base, #Content, #Font"
   },
+  "sapContent_IconFontFamily": {
+    "prefix": "sapContent_IconFontFamily",
+    "body": "var(--sapContent_IconFontFamily)",
+    "description": "Icon Font Family (Defines which font is used to display the font icons.) Value: \"SAP-icons\" #Base, #Content, #Font"
+  },
   "sapContent_DisabledTextColor": {
     "prefix": "sapContent_DisabledTextColor",
     "body": "var(--sapContent_DisabledTextColor)",
@@ -1562,7 +1567,7 @@
   "sapPageFooter_BorderColor": {
     "prefix": "sapPageFooter_BorderColor",
     "body": "var(--sapPageFooter_BorderColor)",
-    "description": "Page Footer Border Color (The color of the page footer border.) Value: #000000 #Base, #Page, #Color"
+    "description": "Page Footer Border Color (The color of the page footer border.) Value: #ffffff #Base, #Page, #Color"
   },
   "sapPageFooter_TextColor": {
     "prefix": "sapPageFooter_TextColor",

@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.13.0
+ * Fundamental Library Styles v0.14.0
  * Copyright (c) 2020 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
@@ -15,8 +15,19 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%
+}
+.fd-dialog::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,.6)
+  background-color: #000;
+  background-color: var(--sapBlockLayer_Background,#000);
+  opacity: .6;
+  opacity: var(--fdDialogBackgroundOpacity,.6)
 }
 .fd-dialog__content {
   display: -webkit-box;

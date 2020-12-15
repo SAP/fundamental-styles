@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.13.0
+ * Fundamental Library Styles v0.14.0
  * Copyright (c) 2020 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
@@ -165,8 +165,8 @@
   background: #000;
   background: var(--sapPageFooter_Background,#000);
   padding: .375rem .5rem;
-  border-top: .0625rem solid #000;
-  border-top: .0625rem solid var(--sapPageFooter_BorderColor,#000)
+  border-top: .0625rem solid #fff;
+  border-top: .0625rem solid var(--sapPageFooter_BorderColor,#fff)
 }
 .fd-carousel__page-indicator-container::after,
 .fd-carousel__page-indicator-container::before {
@@ -176,8 +176,8 @@
 }
 .fd-carousel__page-indicator-container:first-child {
   border-top: none;
-  border-bottom: .0625rem solid #000;
-  border-bottom: .0625rem solid var(--sapPageFooter_BorderColor,#000)
+  border-bottom: .0625rem solid #fff;
+  border-bottom: .0625rem solid var(--sapPageFooter_BorderColor,#fff)
 }
 .fd-carousel__page-indicators {
   font-size: .875rem;
@@ -232,12 +232,17 @@
   margin: 0;
   border: 0;
   list-style-type: none;
-  margin: 0 .375rem;
-  width: .25rem;
-  height: .25rem;
+  margin: 0 .25rem;
+  margin: var(--fdCarousel_Dot_Margin,0 .25rem);
+  width: .5rem;
+  width: var(--fdCarousel_Dot_Size,.5rem);
+  height: .5rem;
+  height: var(--fdCarousel_Dot_Size,.5rem);
   border-radius: 50%;
   background-color: #fff;
-  background-color: var(--sapContent_NonInteractiveIconColor,#fff)
+  background-color: var(--sapContent_NonInteractiveIconColor,#fff);
+  border: 1px solid #fff;
+  border: var(--fdCarousel_Dot_Border,1px solid var(--sapContent_ForegroundBorderColor,#fff))
 }
 .fd-carousel__page-indicator::after,
 .fd-carousel__page-indicator::before {
@@ -316,7 +321,10 @@
 }
 .fd-carousel__button.fd-button.is-focus,
 .fd-carousel__button.fd-button:focus {
-  z-index: 5;
+  z-index: 5
+}
+.fd-carousel__button.fd-button.is-focus::after,
+.fd-carousel__button.fd-button:focus::after {
   top: -.125rem;
   bottom: -.125rem;
   left: -.125rem;
@@ -338,6 +346,11 @@
   bottom: -.125rem;
   left: -.125rem;
   right: -.125rem
+}
+.fd-carousel__button.fd-button.is-active.fd-carousel--toggled::after,
+.fd-carousel__button.fd-button:active.fd-carousel--toggled::after {
+  border: .125rem dotted #fff;
+  border: var(--sapContent_FocusWidth,.125rem) dotted var(--sapContent_ContrastFocusColor,#fff)
 }
 .fd-carousel--no-navigation .fd-carousel__button.fd-button {
   display: none

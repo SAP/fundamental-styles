@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.13.0
+ * Fundamental Library Styles v0.14.0
  * Copyright (c) 2020 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
@@ -322,19 +322,12 @@
   font-family: SAP-icons;
   background-color: #29313a;
   background-color: var(--sapField_Background,#29313a);
-  margin-right: .6875rem;
-  margin-left: 0;
   color: #91c8f6;
   color: var(--fdCheckbox_Selected_Color,var(--sapSelectedColor,#91c8f6));
   border: .0625rem solid #8696a9;
   border: var(--sapField_BorderWidth,.0625rem) solid var(--sapField_BorderColor,#8696a9);
   border-radius: .125rem;
   border-radius: var(--sapField_BorderCornerRadius,.125rem)
-}
-.fd-checkbox__label[dir=rtl]::before,
-[dir=rtl] .fd-checkbox__label::before {
-  margin-left: .6875rem;
-  margin-right: 0
 }
 .fd-checkbox__label.is-hover::before,
 .fd-checkbox__label:hover::before {
@@ -361,7 +354,14 @@
 .fd-checkbox__text {
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis
+  text-overflow: ellipsis;
+  margin-left: .6875rem;
+  margin-right: 0
+}
+.fd-checkbox__text[dir=rtl],
+[dir=rtl] .fd-checkbox__text {
+  margin-right: .6875rem;
+  margin-left: 0
 }
 .fd-checkbox:checked + .fd-checkbox__label::before {
   content: "\e05b"
@@ -495,6 +495,14 @@
   pointer-events: none;
   opacity: .4
 }
+.fd-checkbox--compact > .fd-checkbox__text {
+  margin-left: .5rem
+}
+.fd-checkbox--compact > .fd-checkbox__text[dir=rtl],
+[dir=rtl] .fd-checkbox--compact > .fd-checkbox__text {
+  margin-left: 0;
+  margin-right: .5rem
+}
 .fd-checkbox--compact + .fd-checkbox__label {
   padding: .5rem
 }
@@ -503,13 +511,7 @@
   height: 1rem;
   width: 1rem;
   min-width: 1rem;
-  margin-right: .5rem;
   margin-left: 0
-}
-.fd-checkbox--compact + .fd-checkbox__label[dir=rtl]::before,
-[dir=rtl] .fd-checkbox--compact + .fd-checkbox__label::before {
-  margin-left: .5rem;
-  margin-right: 0
 }
 .fd-checkbox--compact + .fd-checkbox__label.is-empty,
 .fd-checkbox--compact + .fd-checkbox__label:empty {

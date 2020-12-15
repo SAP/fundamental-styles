@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.13.0
+ * Fundamental Library Styles v0.14.0
  * Copyright (c) 2020 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
@@ -2010,8 +2010,8 @@
   content: ""
 }
 :root {
-  --sapRating-indicator-icon-rated: url();
-  --sapRating-indicator-icon-unrated: url()
+  --sapRating-indicator-icon-rated: none;
+  --sapRating-indicator-icon-unrated: none
 }
 .fd-rating-indicator {
   font-size: .875rem;
@@ -2287,8 +2287,8 @@
 .fd-rating-indicator.fd-rating-indicator--icon .fd-rating-indicator__label {
   width: 1.375rem;
   height: 1.375rem;
-  background-image: url();
-  background-image: var(--sapRating-indicator-icon-rated,url());
+  background-image: none;
+  background-image: var(--sapRating-indicator-icon-rated,none);
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat
@@ -2298,8 +2298,8 @@
   content: none!important
 }
 .fd-rating-indicator.fd-rating-indicator--icon .fd-rating-indicator__input:checked ~ input + .fd-rating-indicator__label {
-  background-image: url();
-  background-image: var(--sapRating-indicator-icon-unrated,url())
+  background-image: none;
+  background-image: var(--sapRating-indicator-icon-unrated,none)
 }
 .fd-rating-indicator--cozy {
   padding: 0;

@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.13.0
+ * Fundamental Library Styles v0.14.0
  * Copyright (c) 2020 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
@@ -191,8 +191,8 @@
   background: var(--sapPageFooter_Background,#fff);
   -webkit-box-shadow: none;
   box-shadow: none;
-  border-top: .0625rem solid #fff;
-  border-top: .0625rem solid var(--sapPageFooter_BorderColor,#fff)
+  border-top: .0625rem solid #000;
+  border-top: .0625rem solid var(--sapPageFooter_BorderColor,#000)
 }
 .fd-bar--floating-footer {
   height: 2.5rem;

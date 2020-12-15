@@ -1,11 +1,11 @@
 /**
 * Copyright (c) 2012-2020 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
 * Theming Engine 1.51.0
-* data:{"sModified":"2020-10-23T11:38:37Z"}
+* data:{"sModified":"2020-11-18T15:02:05Z"}
 */
 
 
-/******************* FILE /Base/baseLib/sap_fiori_3_hcb/base.less (Version 11.1.23) *******************/
+/******************* FILE /Base/baseLib/sap_fiori_3_hcb/base.less (Version 11.1.24) *******************/
 
 @sapBackgroundColorDefault: @sapBackgroundColor;
 
@@ -264,6 +264,9 @@
 
 // [Tags "!Protected"]
 @sapContent_MonospaceBoldFontFamily: "72Mono-Bold", "72Mono-Boldfull", lucida console, monospace;
+
+// [Tags "!Protected"]
+@sapContent_IconFontFamily: "SAP-icons";
 
 // [Tags "!Protected"]
 @sapContent_DisabledTextColor: @sapHC_ReducedForeground;
@@ -1004,7 +1007,7 @@
 @sapPageFooter_Background: @sapBackgroundColor;
 
 // [Tags "!Protected"]
-@sapPageFooter_BorderColor: @sapPageFooter_Background;
+@sapPageFooter_BorderColor: @sapHC_StandardForeground;
 
 // [Tags "!Protected"]
 @sapPageFooter_TextColor: contrast(@sapPageFooter_Background, @sapTextColor, @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold);

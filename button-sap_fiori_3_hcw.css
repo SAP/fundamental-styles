@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.13.0
+ * Fundamental Library Styles v0.14.0
  * Copyright (c) 2020 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
@@ -63,6 +63,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -82,7 +85,7 @@
   border: 0
 }
 .fd-button::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   height: auto;
@@ -92,6 +95,14 @@
   left: 0;
   right: 0
 }
+.fd-button.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Selected_BorderColor,#000);
+  background-color: #8fb5ff;
+  background-color: var(--sapButton_Selected_Background,#8fb5ff)
+}
 .fd-button.fd-button--ghost {
   color: #000;
   color: var(--sapButton_TextColor,#000);
@@ -99,6 +110,14 @@
   border-color: var(--sapButton_BorderColor,#000);
   background-color: #fff;
   background-color: var(--sapButton_Lite_Background,#fff)
+}
+.fd-button.fd-button--ghost.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Selected_BorderColor,#000);
+  background-color: #8fb5ff;
+  background-color: var(--sapButton_Selected_Background,#8fb5ff)
 }
 .fd-button.fd-button--positive {
   color: #000;
@@ -108,6 +127,14 @@
   background-color: #fff;
   background-color: var(--sapButton_Accept_Background,#fff)
 }
+.fd-button.fd-button--positive.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Accept_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Accept_Selected_BorderColor,#000);
+  background-color: #8fb5ff;
+  background-color: var(--sapButton_Accept_Selected_Background,#8fb5ff)
+}
 .fd-button.fd-button--negative {
   color: #000;
   color: var(--sapButton_Reject_TextColor,#000);
@@ -115,6 +142,14 @@
   border-color: var(--sapButton_Reject_BorderColor,#000);
   background-color: #fff;
   background-color: var(--sapButton_Reject_Background,#fff)
+}
+.fd-button.fd-button--negative.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Reject_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Reject_Selected_BorderColor,#000);
+  background-color: #8fb5ff;
+  background-color: var(--sapButton_Reject_Selected_Background,#8fb5ff)
 }
 .fd-button.fd-button--attention {
   color: #000;
@@ -124,8 +159,18 @@
   background-color: #fff;
   background-color: var(--sapButton_Attention_Background,#fff)
 }
+.fd-button.fd-button--attention.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Attention_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Attention_Selected_BorderColor,#000);
+  background-color: #8fb5ff;
+  background-color: var(--sapButton_Attention_Selected_Background,#8fb5ff)
+}
 .fd-button.fd-button--emphasized {
   font-weight: 700;
+  border-width: .125rem;
+  border-width: var(--fdButton_Emphasized_Border_Width,.125rem);
   color: #000;
   color: var(--sapButton_Emphasized_TextColor,#000);
   border-color: #000;
@@ -133,11 +178,27 @@
   background-color: #fff;
   background-color: var(--sapButton_Emphasized_Background,#fff)
 }
+.fd-button.fd-button--emphasized.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Selected_BorderColor,#000);
+  background-color: #8fb5ff;
+  background-color: var(--sapButton_Selected_Background,#8fb5ff)
+}
 .fd-button.fd-button--transparent {
   border-color: #000;
   border-color: var(--sapButton_Lite_BorderColor,#000);
   background-color: #fff;
   background-color: var(--sapButton_Lite_Background,#fff)
+}
+.fd-button.fd-button--transparent.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Selected_BorderColor,#000);
+  background-color: #8fb5ff;
+  background-color: var(--sapButton_Selected_Background,#8fb5ff)
 }
 .fd-button > [class*=sap-icon] {
   width: 1rem;
@@ -176,6 +237,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-weight: inherit;
   color: inherit
 }
 .fd-button__text::after,
@@ -185,12 +247,12 @@
   font-size: inherit
 }
 .fd-button * + * {
-  margin-left: .375rem
+  margin-left: .375rem!important
 }
 .fd-button * + [dir=rtl],
 [dir=rtl] .fd-button * + * {
-  margin-left: 0;
-  margin-right: .375rem
+  margin-left: 0!important;
+  margin-right: .375rem!important
 }
 .fd-button__badge {
   font-size: .875rem;
@@ -343,6 +405,15 @@
   background-color: #ec8b46;
   background-color: var(--sapButton_Hover_Background,#ec8b46)
 }
+.fd-button.is-hover.fd-button--toggled,
+.fd-button:hover.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Selected_Hover_BorderColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapButton_Selected_Hover_Background,#ec8b46)
+}
 .fd-button.is-hover.fd-button--ghost,
 .fd-button:hover.fd-button--ghost {
   color: #000;
@@ -351,6 +422,15 @@
   border-color: var(--sapButton_Hover_BorderColor,#000);
   background-color: #ec8b46;
   background-color: var(--sapButton_Hover_Background,#ec8b46)
+}
+.fd-button.is-hover.fd-button--ghost.fd-button--toggled,
+.fd-button:hover.fd-button--ghost.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Selected_Hover_BorderColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapButton_Selected_Hover_Background,#ec8b46)
 }
 .fd-button.is-hover.fd-button--positive,
 .fd-button:hover.fd-button--positive {
@@ -361,6 +441,15 @@
   background-color: #ec8b46;
   background-color: var(--sapButton_Accept_Hover_Background,#ec8b46)
 }
+.fd-button.is-hover.fd-button--positive.fd-button--toggled,
+.fd-button:hover.fd-button--positive.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Accept_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Accept_Selected_Hover_BorderColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapButton_Accept_Selected_Hover_Background,#ec8b46)
+}
 .fd-button.is-hover.fd-button--negative,
 .fd-button:hover.fd-button--negative {
   color: #000;
@@ -369,6 +458,15 @@
   border-color: var(--sapButton_Reject_Hover_BorderColor,#000);
   background-color: #ec8b46;
   background-color: var(--sapButton_Reject_Hover_Background,#ec8b46)
+}
+.fd-button.is-hover.fd-button--negative.fd-button--toggled,
+.fd-button:hover.fd-button--negative.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Reject_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Reject_Selected_Hover_BorderColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapButton_Reject_Selected_Hover_Background,#ec8b46)
 }
 .fd-button.is-hover.fd-button--attention,
 .fd-button:hover.fd-button--attention {
@@ -379,14 +477,32 @@
   background-color: #ec8b46;
   background-color: var(--sapButton_Attention_Hover_Background,#ec8b46)
 }
+.fd-button.is-hover.fd-button--attention.fd-button--toggled,
+.fd-button:hover.fd-button--attention.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Attention_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Attention_Selected_Hover_BorderColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapButton_Attention_Selected_Hover_Background,#ec8b46)
+}
 .fd-button.is-hover.fd-button--emphasized,
 .fd-button:hover.fd-button--emphasized {
   color: #000;
   color: var(--sapButton_Emphasized_Hover_TextColor,#000);
-  border-color: #ec8b46;
-  border-color: var(--sapButton_Emphasized_Hover_Background,#ec8b46);
+  border-color: #000;
+  border-color: var(--sapButton_Emphasized_Hover_BorderColor,#000);
   background-color: #ec8b46;
   background-color: var(--sapButton_Emphasized_Hover_Background,#ec8b46)
+}
+.fd-button.is-hover.fd-button--emphasized.fd-button--toggled,
+.fd-button:hover.fd-button--emphasized.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Selected_Hover_BorderColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapButton_Selected_Hover_Background,#ec8b46)
 }
 .fd-button.is-focus,
 .fd-button:focus {
@@ -406,6 +522,11 @@
   bottom: .0625rem;
   border: .125rem dotted #000;
   border: var(--sapContent_FocusWidth,.125rem) dotted var(--sapContent_FocusColor,#000)
+}
+.fd-button.is-focus.fd-button--toggled::after,
+.fd-button:focus.fd-button--toggled::after {
+  border: .125rem dotted #000;
+  border: var(--sapContent_FocusWidth,.125rem) dotted var(--sapContent_ContrastFocusColor,#000)
 }
 .fd-button.is-focus.fd-button--emphasized::after,
 .fd-button:focus.fd-button--emphasized::after {
@@ -436,6 +557,19 @@
   border-color: #000;
   border-color: var(--sapContent_ContrastFocusColor,#000)
 }
+.fd-button.is-active.fd-button--toggled,
+.fd-button.is-pressed.fd-button--toggled,
+.fd-button.is-selected.fd-button--toggled,
+.fd-button:active.fd-button--toggled,
+.fd-button[aria-pressed=true].fd-button--toggled,
+.fd-button[aria-selected=true].fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Selected_Hover_BorderColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapButton_Selected_Hover_Background,#ec8b46)
+}
 .fd-button.is-active.fd-button--ghost,
 .fd-button.is-pressed.fd-button--ghost,
 .fd-button.is-selected.fd-button--ghost,
@@ -448,6 +582,19 @@
   border-color: var(--sapButton_BorderColor,#000);
   background-color: #ec8b46;
   background-color: var(--sapButton_Active_Background,#ec8b46)
+}
+.fd-button.is-active.fd-button--ghost.fd-button--toggled,
+.fd-button.is-pressed.fd-button--ghost.fd-button--toggled,
+.fd-button.is-selected.fd-button--ghost.fd-button--toggled,
+.fd-button:active.fd-button--ghost.fd-button--toggled,
+.fd-button[aria-pressed=true].fd-button--ghost.fd-button--toggled,
+.fd-button[aria-selected=true].fd-button--ghost.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Selected_Hover_BorderColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapButton_Selected_Hover_Background,#ec8b46)
 }
 .fd-button.is-active.fd-button--positive,
 .fd-button.is-pressed.fd-button--positive,
@@ -462,6 +609,19 @@
   background-color: #ec8b46;
   background-color: var(--sapButton_Accept_Active_Background,#ec8b46)
 }
+.fd-button.is-active.fd-button--positive.fd-button--toggled,
+.fd-button.is-pressed.fd-button--positive.fd-button--toggled,
+.fd-button.is-selected.fd-button--positive.fd-button--toggled,
+.fd-button:active.fd-button--positive.fd-button--toggled,
+.fd-button[aria-pressed=true].fd-button--positive.fd-button--toggled,
+.fd-button[aria-selected=true].fd-button--positive.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Accept_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Accept_Selected_Hover_BorderColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapButton_Accept_Selected_Hover_Background,#ec8b46)
+}
 .fd-button.is-active.fd-button--negative,
 .fd-button.is-pressed.fd-button--negative,
 .fd-button.is-selected.fd-button--negative,
@@ -474,6 +634,19 @@
   border-color: var(--sapButton_Reject_Active_BorderColor,#000);
   background-color: #ec8b46;
   background-color: var(--sapButton_Reject_Active_Background,#ec8b46)
+}
+.fd-button.is-active.fd-button--negative.fd-button--toggled,
+.fd-button.is-pressed.fd-button--negative.fd-button--toggled,
+.fd-button.is-selected.fd-button--negative.fd-button--toggled,
+.fd-button:active.fd-button--negative.fd-button--toggled,
+.fd-button[aria-pressed=true].fd-button--negative.fd-button--toggled,
+.fd-button[aria-selected=true].fd-button--negative.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Reject_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Reject_Selected_Hover_BorderColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapButton_Reject_Selected_Hover_Background,#ec8b46)
 }
 .fd-button.is-active.fd-button--attention,
 .fd-button.is-pressed.fd-button--attention,
@@ -488,6 +661,19 @@
   background-color: #ec8b46;
   background-color: var(--sapButton_Attention_Active_Background,#ec8b46)
 }
+.fd-button.is-active.fd-button--attention.fd-button--toggled,
+.fd-button.is-pressed.fd-button--attention.fd-button--toggled,
+.fd-button.is-selected.fd-button--attention.fd-button--toggled,
+.fd-button:active.fd-button--attention.fd-button--toggled,
+.fd-button[aria-pressed=true].fd-button--attention.fd-button--toggled,
+.fd-button[aria-selected=true].fd-button--attention.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Attention_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Attention_Selected_Hover_BorderColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapButton_Attention_Selected_Hover_Background,#ec8b46)
+}
 .fd-button.is-active.fd-button--emphasized,
 .fd-button.is-pressed.fd-button--emphasized,
 .fd-button.is-selected.fd-button--emphasized,
@@ -500,6 +686,19 @@
   border-color: var(--sapButton_Emphasized_Active_BorderColor,#000);
   background-color: #ec8b46;
   background-color: var(--sapButton_Emphasized_Active_Background,#ec8b46)
+}
+.fd-button.is-active.fd-button--emphasized.fd-button--toggled,
+.fd-button.is-pressed.fd-button--emphasized.fd-button--toggled,
+.fd-button.is-selected.fd-button--emphasized.fd-button--toggled,
+.fd-button:active.fd-button--emphasized.fd-button--toggled,
+.fd-button[aria-pressed=true].fd-button--emphasized.fd-button--toggled,
+.fd-button[aria-selected=true].fd-button--emphasized.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Selected_Hover_BorderColor,#000);
+  background-color: #ec8b46;
+  background-color: var(--sapButton_Selected_Hover_Background,#ec8b46)
 }
 .fd-button.is-disabled,
 .fd-button:disabled,
@@ -517,6 +716,16 @@
   background-color: #fff;
   background-color: var(--sapButton_Background,#fff)
 }
+.fd-button.is-disabled.fd-button--toggled,
+.fd-button:disabled.fd-button--toggled,
+.fd-button[aria-disabled=true].fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Selected_BorderColor,#000);
+  background-color: #8fb5ff;
+  background-color: var(--sapButton_Selected_Background,#8fb5ff)
+}
 .fd-button.is-disabled.fd-button--ghost,
 .fd-button:disabled.fd-button--ghost,
 .fd-button[aria-disabled=true].fd-button--ghost {
@@ -526,6 +735,16 @@
   border-color: var(--sapButton_BorderColor,#000);
   background-color: #fff;
   background-color: var(--sapButton_Lite_Background,#fff)
+}
+.fd-button.is-disabled.fd-button--ghost.fd-button--toggled,
+.fd-button:disabled.fd-button--ghost.fd-button--toggled,
+.fd-button[aria-disabled=true].fd-button--ghost.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Selected_BorderColor,#000);
+  background-color: #8fb5ff;
+  background-color: var(--sapButton_Selected_Background,#8fb5ff)
 }
 .fd-button.is-disabled.fd-button--positive,
 .fd-button:disabled.fd-button--positive,
@@ -537,6 +756,16 @@
   background-color: #fff;
   background-color: var(--sapButton_Accept_Background,#fff)
 }
+.fd-button.is-disabled.fd-button--positive.fd-button--toggled,
+.fd-button:disabled.fd-button--positive.fd-button--toggled,
+.fd-button[aria-disabled=true].fd-button--positive.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Accept_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Accept_Selected_BorderColor,#000);
+  background-color: #8fb5ff;
+  background-color: var(--sapButton_Accept_Selected_Background,#8fb5ff)
+}
 .fd-button.is-disabled.fd-button--negative,
 .fd-button:disabled.fd-button--negative,
 .fd-button[aria-disabled=true].fd-button--negative {
@@ -546,6 +775,16 @@
   border-color: var(--sapButton_Reject_BorderColor,#000);
   background-color: #fff;
   background-color: var(--sapButton_Reject_Background,#fff)
+}
+.fd-button.is-disabled.fd-button--negative.fd-button--toggled,
+.fd-button:disabled.fd-button--negative.fd-button--toggled,
+.fd-button[aria-disabled=true].fd-button--negative.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Reject_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Reject_Selected_BorderColor,#000);
+  background-color: #8fb5ff;
+  background-color: var(--sapButton_Reject_Selected_Background,#8fb5ff)
 }
 .fd-button.is-disabled.fd-button--attention,
 .fd-button:disabled.fd-button--attention,
@@ -557,16 +796,38 @@
   background-color: #fff;
   background-color: var(--sapButton_Attention_Background,#fff)
 }
+.fd-button.is-disabled.fd-button--attention.fd-button--toggled,
+.fd-button:disabled.fd-button--attention.fd-button--toggled,
+.fd-button[aria-disabled=true].fd-button--attention.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Attention_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Attention_Selected_BorderColor,#000);
+  background-color: #8fb5ff;
+  background-color: var(--sapButton_Attention_Selected_Background,#8fb5ff)
+}
 .fd-button.is-disabled.fd-button--emphasized,
 .fd-button:disabled.fd-button--emphasized,
 .fd-button[aria-disabled=true].fd-button--emphasized {
   font-weight: 700;
+  border-width: .125rem;
+  border-width: var(--fdButton_Emphasized_Border_Width,.125rem);
   color: #000;
   color: var(--sapButton_Emphasized_TextColor,#000);
   border-color: #000;
   border-color: var(--sapButton_Emphasized_BorderColor,#000);
   background-color: #fff;
   background-color: var(--sapButton_Emphasized_Background,#fff)
+}
+.fd-button.is-disabled.fd-button--emphasized.fd-button--toggled,
+.fd-button:disabled.fd-button--emphasized.fd-button--toggled,
+.fd-button[aria-disabled=true].fd-button--emphasized.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Selected_BorderColor,#000);
+  background-color: #8fb5ff;
+  background-color: var(--sapButton_Selected_Background,#8fb5ff)
 }
 .fd-button.is-disabled.fd-button--transparent,
 .fd-button:disabled.fd-button--transparent,
@@ -575,4 +836,14 @@
   border-color: var(--sapButton_Lite_BorderColor,#000);
   background-color: #fff;
   background-color: var(--sapButton_Lite_Background,#fff)
+}
+.fd-button.is-disabled.fd-button--transparent.fd-button--toggled,
+.fd-button:disabled.fd-button--transparent.fd-button--toggled,
+.fd-button[aria-disabled=true].fd-button--transparent.fd-button--toggled {
+  color: #000;
+  color: var(--sapButton_Selected_TextColor,#000);
+  border-color: #000;
+  border-color: var(--sapButton_Selected_BorderColor,#000);
+  background-color: #8fb5ff;
+  background-color: var(--sapButton_Selected_Background,#8fb5ff)
 }

@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.13.0
+ * Fundamental Library Styles v0.14.0
  * Copyright (c) 2020 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
@@ -63,6 +63,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -82,7 +85,7 @@
   border: 0
 }
 .fd-button::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   height: auto;
@@ -92,6 +95,14 @@
   left: 0;
   right: 0
 }
+.fd-button.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Selected_TextColor,#29313a);
+  border-color: #91c8f6;
+  border-color: var(--sapButton_Selected_BorderColor,#91c8f6);
+  background-color: #91c8f6;
+  background-color: var(--sapButton_Selected_Background,#91c8f6)
+}
 .fd-button.fd-button--ghost {
   color: #91c8f6;
   color: var(--sapButton_TextColor,#91c8f6);
@@ -99,6 +110,14 @@
   border-color: var(--sapButton_BorderColor,#91c8f6);
   background-color: transparent;
   background-color: var(--sapButton_Lite_Background,transparent)
+}
+.fd-button.fd-button--ghost.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Selected_TextColor,#29313a);
+  border-color: #91c8f6;
+  border-color: var(--sapButton_Selected_BorderColor,#91c8f6);
+  background-color: #91c8f6;
+  background-color: var(--sapButton_Selected_Background,#91c8f6)
 }
 .fd-button.fd-button--positive {
   color: #abe2ab;
@@ -108,6 +127,14 @@
   background-color: #29313a;
   background-color: var(--sapButton_Accept_Background,#29313a)
 }
+.fd-button.fd-button--positive.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Accept_Selected_TextColor,#29313a);
+  border-color: #98db98;
+  border-color: var(--sapButton_Accept_Selected_BorderColor,#98db98);
+  background-color: #98db98;
+  background-color: var(--sapButton_Accept_Selected_Background,#98db98)
+}
 .fd-button.fd-button--negative {
   color: #f88;
   color: var(--sapButton_Reject_TextColor,#f88);
@@ -115,6 +142,14 @@
   border-color: var(--sapButton_Reject_BorderColor,#f88);
   background-color: #29313a;
   background-color: var(--sapButton_Reject_Background,#29313a)
+}
+.fd-button.fd-button--negative.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Reject_Selected_TextColor,#29313a);
+  border-color: #ff6e6e;
+  border-color: var(--sapButton_Reject_Selected_BorderColor,#ff6e6e);
+  background-color: #ff6e6e;
+  background-color: var(--sapButton_Reject_Selected_Background,#ff6e6e)
 }
 .fd-button.fd-button--attention {
   color: #fabd64;
@@ -124,8 +159,18 @@
   background-color: #29313a;
   background-color: var(--sapButton_Attention_Background,#29313a)
 }
+.fd-button.fd-button--attention.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Attention_Selected_TextColor,#29313a);
+  border-color: #f9b24b;
+  border-color: var(--sapButton_Attention_Selected_BorderColor,#f9b24b);
+  background-color: #f9b24b;
+  background-color: var(--sapButton_Attention_Selected_Background,#f9b24b)
+}
 .fd-button.fd-button--emphasized {
   font-weight: 700;
+  border-width: .0625rem;
+  border-width: var(--fdButton_Emphasized_Border_Width,var(--sapButton_BorderWidth,.0625rem));
   color: #fff;
   color: var(--sapButton_Emphasized_TextColor,#fff);
   border-color: #1b8dec;
@@ -133,11 +178,27 @@
   background-color: #1b8dec;
   background-color: var(--sapButton_Emphasized_Background,#1b8dec)
 }
+.fd-button.fd-button--emphasized.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Selected_TextColor,#29313a);
+  border-color: #91c8f6;
+  border-color: var(--sapButton_Selected_BorderColor,#91c8f6);
+  background-color: #91c8f6;
+  background-color: var(--sapButton_Selected_Background,#91c8f6)
+}
 .fd-button.fd-button--transparent {
   border-color: transparent;
   border-color: var(--sapButton_Lite_BorderColor,transparent);
   background-color: transparent;
   background-color: var(--sapButton_Lite_Background,transparent)
+}
+.fd-button.fd-button--transparent.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Selected_TextColor,#29313a);
+  border-color: #91c8f6;
+  border-color: var(--sapButton_Selected_BorderColor,#91c8f6);
+  background-color: #91c8f6;
+  background-color: var(--sapButton_Selected_Background,#91c8f6)
 }
 .fd-button > [class*=sap-icon] {
   width: 1rem;
@@ -176,6 +237,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-weight: inherit;
   color: inherit
 }
 .fd-button__text::after,
@@ -185,12 +247,12 @@
   font-size: inherit
 }
 .fd-button * + * {
-  margin-left: .375rem
+  margin-left: .375rem!important
 }
 .fd-button * + [dir=rtl],
 [dir=rtl] .fd-button * + * {
-  margin-left: 0;
-  margin-right: .375rem
+  margin-left: 0!important;
+  margin-right: .375rem!important
 }
 .fd-button__badge {
   font-size: .875rem;
@@ -343,6 +405,15 @@
   background-color: #062e4f;
   background-color: var(--sapButton_Hover_Background,#062e4f)
 }
+.fd-button.is-hover.fd-button--toggled,
+.fd-button:hover.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Selected_TextColor,#29313a);
+  border-color: #83c1f5;
+  border-color: var(--sapButton_Selected_Hover_BorderColor,#83c1f5);
+  background-color: #83c1f5;
+  background-color: var(--sapButton_Selected_Hover_Background,#83c1f5)
+}
 .fd-button.is-hover.fd-button--ghost,
 .fd-button:hover.fd-button--ghost {
   color: #91c8f6;
@@ -351,6 +422,15 @@
   border-color: var(--sapButton_Hover_BorderColor,#91c8f6);
   background-color: #062e4f;
   background-color: var(--sapButton_Hover_Background,#062e4f)
+}
+.fd-button.is-hover.fd-button--ghost.fd-button--toggled,
+.fd-button:hover.fd-button--ghost.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Selected_TextColor,#29313a);
+  border-color: #83c1f5;
+  border-color: var(--sapButton_Selected_Hover_BorderColor,#83c1f5);
+  background-color: #83c1f5;
+  background-color: var(--sapButton_Selected_Hover_Background,#83c1f5)
 }
 .fd-button.is-hover.fd-button--positive,
 .fd-button:hover.fd-button--positive {
@@ -361,6 +441,15 @@
   background-color: #153c15;
   background-color: var(--sapButton_Accept_Hover_Background,#153c15)
 }
+.fd-button.is-hover.fd-button--positive.fd-button--toggled,
+.fd-button:hover.fd-button--positive.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Accept_Selected_TextColor,#29313a);
+  border-color: #abe2ab;
+  border-color: var(--sapButton_Accept_Selected_Hover_BorderColor,#abe2ab);
+  background-color: #abe2ab;
+  background-color: var(--sapButton_Accept_Selected_Hover_Background,#abe2ab)
+}
 .fd-button.is-hover.fd-button--negative,
 .fd-button:hover.fd-button--negative {
   color: #f88;
@@ -369,6 +458,15 @@
   border-color: var(--sapButton_Reject_Hover_BorderColor,#f88);
   background-color: #3b0000;
   background-color: var(--sapButton_Reject_Hover_Background,#3b0000)
+}
+.fd-button.is-hover.fd-button--negative.fd-button--toggled,
+.fd-button:hover.fd-button--negative.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Reject_Selected_TextColor,#29313a);
+  border-color: #f88;
+  border-color: var(--sapButton_Reject_Selected_Hover_BorderColor,#f88);
+  background-color: #f88;
+  background-color: var(--sapButton_Reject_Selected_Hover_Background,#f88)
 }
 .fd-button.is-hover.fd-button--attention,
 .fd-button:hover.fd-button--attention {
@@ -379,14 +477,32 @@
   background-color: #2b1a01;
   background-color: var(--sapButton_Attention_Hover_Background,#2b1a01)
 }
+.fd-button.is-hover.fd-button--attention.fd-button--toggled,
+.fd-button:hover.fd-button--attention.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Attention_Selected_TextColor,#29313a);
+  border-color: #fabd64;
+  border-color: var(--sapButton_Attention_Selected_Hover_BorderColor,#fabd64);
+  background-color: #fabd64;
+  background-color: var(--sapButton_Attention_Selected_Hover_Background,#fabd64)
+}
 .fd-button.is-hover.fd-button--emphasized,
 .fd-button:hover.fd-button--emphasized {
   color: #fff;
   color: var(--sapButton_Emphasized_Hover_TextColor,#fff);
   border-color: #2e96ee;
-  border-color: var(--sapButton_Emphasized_Hover_Background,#2e96ee);
+  border-color: var(--sapButton_Emphasized_Hover_BorderColor,#2e96ee);
   background-color: #2e96ee;
   background-color: var(--sapButton_Emphasized_Hover_Background,#2e96ee)
+}
+.fd-button.is-hover.fd-button--emphasized.fd-button--toggled,
+.fd-button:hover.fd-button--emphasized.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Selected_TextColor,#29313a);
+  border-color: #83c1f5;
+  border-color: var(--sapButton_Selected_Hover_BorderColor,#83c1f5);
+  background-color: #83c1f5;
+  background-color: var(--sapButton_Selected_Hover_Background,#83c1f5)
 }
 .fd-button.is-focus,
 .fd-button:focus {
@@ -406,6 +522,11 @@
   bottom: .0625rem;
   border: .0625rem dotted #fff;
   border: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#fff)
+}
+.fd-button.is-focus.fd-button--toggled::after,
+.fd-button:focus.fd-button--toggled::after {
+  border: .0625rem dotted #000;
+  border: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_ContrastFocusColor,#000)
 }
 .fd-button.is-focus.fd-button--emphasized::after,
 .fd-button:focus.fd-button--emphasized::after {
@@ -436,6 +557,19 @@
   border-color: #000;
   border-color: var(--sapContent_ContrastFocusColor,#000)
 }
+.fd-button.is-active.fd-button--toggled,
+.fd-button.is-pressed.fd-button--toggled,
+.fd-button.is-selected.fd-button--toggled,
+.fd-button:active.fd-button--toggled,
+.fd-button[aria-pressed=true].fd-button--toggled,
+.fd-button[aria-selected=true].fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Selected_TextColor,#29313a);
+  border-color: #83c1f5;
+  border-color: var(--sapButton_Selected_Hover_BorderColor,#83c1f5);
+  background-color: #83c1f5;
+  background-color: var(--sapButton_Selected_Hover_Background,#83c1f5)
+}
 .fd-button.is-active.fd-button--ghost,
 .fd-button.is-pressed.fd-button--ghost,
 .fd-button.is-selected.fd-button--ghost,
@@ -448,6 +582,19 @@
   border-color: var(--sapButton_BorderColor,#91c8f6);
   background-color: #91c8f6;
   background-color: var(--sapButton_Active_Background,#91c8f6)
+}
+.fd-button.is-active.fd-button--ghost.fd-button--toggled,
+.fd-button.is-pressed.fd-button--ghost.fd-button--toggled,
+.fd-button.is-selected.fd-button--ghost.fd-button--toggled,
+.fd-button:active.fd-button--ghost.fd-button--toggled,
+.fd-button[aria-pressed=true].fd-button--ghost.fd-button--toggled,
+.fd-button[aria-selected=true].fd-button--ghost.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Selected_TextColor,#29313a);
+  border-color: #83c1f5;
+  border-color: var(--sapButton_Selected_Hover_BorderColor,#83c1f5);
+  background-color: #83c1f5;
+  background-color: var(--sapButton_Selected_Hover_Background,#83c1f5)
 }
 .fd-button.is-active.fd-button--positive,
 .fd-button.is-pressed.fd-button--positive,
@@ -462,6 +609,19 @@
   background-color: #98db98;
   background-color: var(--sapButton_Accept_Active_Background,#98db98)
 }
+.fd-button.is-active.fd-button--positive.fd-button--toggled,
+.fd-button.is-pressed.fd-button--positive.fd-button--toggled,
+.fd-button.is-selected.fd-button--positive.fd-button--toggled,
+.fd-button:active.fd-button--positive.fd-button--toggled,
+.fd-button[aria-pressed=true].fd-button--positive.fd-button--toggled,
+.fd-button[aria-selected=true].fd-button--positive.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Accept_Selected_TextColor,#29313a);
+  border-color: #abe2ab;
+  border-color: var(--sapButton_Accept_Selected_Hover_BorderColor,#abe2ab);
+  background-color: #abe2ab;
+  background-color: var(--sapButton_Accept_Selected_Hover_Background,#abe2ab)
+}
 .fd-button.is-active.fd-button--negative,
 .fd-button.is-pressed.fd-button--negative,
 .fd-button.is-selected.fd-button--negative,
@@ -474,6 +634,19 @@
   border-color: var(--sapButton_Reject_Active_BorderColor,#ff6e6e);
   background-color: #ff6e6e;
   background-color: var(--sapButton_Reject_Active_Background,#ff6e6e)
+}
+.fd-button.is-active.fd-button--negative.fd-button--toggled,
+.fd-button.is-pressed.fd-button--negative.fd-button--toggled,
+.fd-button.is-selected.fd-button--negative.fd-button--toggled,
+.fd-button:active.fd-button--negative.fd-button--toggled,
+.fd-button[aria-pressed=true].fd-button--negative.fd-button--toggled,
+.fd-button[aria-selected=true].fd-button--negative.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Reject_Selected_TextColor,#29313a);
+  border-color: #f88;
+  border-color: var(--sapButton_Reject_Selected_Hover_BorderColor,#f88);
+  background-color: #f88;
+  background-color: var(--sapButton_Reject_Selected_Hover_Background,#f88)
 }
 .fd-button.is-active.fd-button--attention,
 .fd-button.is-pressed.fd-button--attention,
@@ -488,6 +661,19 @@
   background-color: #f9b24b;
   background-color: var(--sapButton_Attention_Active_Background,#f9b24b)
 }
+.fd-button.is-active.fd-button--attention.fd-button--toggled,
+.fd-button.is-pressed.fd-button--attention.fd-button--toggled,
+.fd-button.is-selected.fd-button--attention.fd-button--toggled,
+.fd-button:active.fd-button--attention.fd-button--toggled,
+.fd-button[aria-pressed=true].fd-button--attention.fd-button--toggled,
+.fd-button[aria-selected=true].fd-button--attention.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Attention_Selected_TextColor,#29313a);
+  border-color: #fabd64;
+  border-color: var(--sapButton_Attention_Selected_Hover_BorderColor,#fabd64);
+  background-color: #fabd64;
+  background-color: var(--sapButton_Attention_Selected_Hover_Background,#fabd64)
+}
 .fd-button.is-active.fd-button--emphasized,
 .fd-button.is-pressed.fd-button--emphasized,
 .fd-button.is-selected.fd-button--emphasized,
@@ -500,6 +686,19 @@
   border-color: var(--sapButton_Emphasized_Active_BorderColor,#91c8f6);
   background-color: #91c8f6;
   background-color: var(--sapButton_Emphasized_Active_Background,#91c8f6)
+}
+.fd-button.is-active.fd-button--emphasized.fd-button--toggled,
+.fd-button.is-pressed.fd-button--emphasized.fd-button--toggled,
+.fd-button.is-selected.fd-button--emphasized.fd-button--toggled,
+.fd-button:active.fd-button--emphasized.fd-button--toggled,
+.fd-button[aria-pressed=true].fd-button--emphasized.fd-button--toggled,
+.fd-button[aria-selected=true].fd-button--emphasized.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Selected_TextColor,#29313a);
+  border-color: #83c1f5;
+  border-color: var(--sapButton_Selected_Hover_BorderColor,#83c1f5);
+  background-color: #83c1f5;
+  background-color: var(--sapButton_Selected_Hover_Background,#83c1f5)
 }
 .fd-button.is-disabled,
 .fd-button:disabled,
@@ -517,6 +716,16 @@
   background-color: #29313a;
   background-color: var(--sapButton_Background,#29313a)
 }
+.fd-button.is-disabled.fd-button--toggled,
+.fd-button:disabled.fd-button--toggled,
+.fd-button[aria-disabled=true].fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Selected_TextColor,#29313a);
+  border-color: #91c8f6;
+  border-color: var(--sapButton_Selected_BorderColor,#91c8f6);
+  background-color: #91c8f6;
+  background-color: var(--sapButton_Selected_Background,#91c8f6)
+}
 .fd-button.is-disabled.fd-button--ghost,
 .fd-button:disabled.fd-button--ghost,
 .fd-button[aria-disabled=true].fd-button--ghost {
@@ -526,6 +735,16 @@
   border-color: var(--sapButton_BorderColor,#91c8f6);
   background-color: transparent;
   background-color: var(--sapButton_Lite_Background,transparent)
+}
+.fd-button.is-disabled.fd-button--ghost.fd-button--toggled,
+.fd-button:disabled.fd-button--ghost.fd-button--toggled,
+.fd-button[aria-disabled=true].fd-button--ghost.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Selected_TextColor,#29313a);
+  border-color: #91c8f6;
+  border-color: var(--sapButton_Selected_BorderColor,#91c8f6);
+  background-color: #91c8f6;
+  background-color: var(--sapButton_Selected_Background,#91c8f6)
 }
 .fd-button.is-disabled.fd-button--positive,
 .fd-button:disabled.fd-button--positive,
@@ -537,6 +756,16 @@
   background-color: #29313a;
   background-color: var(--sapButton_Accept_Background,#29313a)
 }
+.fd-button.is-disabled.fd-button--positive.fd-button--toggled,
+.fd-button:disabled.fd-button--positive.fd-button--toggled,
+.fd-button[aria-disabled=true].fd-button--positive.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Accept_Selected_TextColor,#29313a);
+  border-color: #98db98;
+  border-color: var(--sapButton_Accept_Selected_BorderColor,#98db98);
+  background-color: #98db98;
+  background-color: var(--sapButton_Accept_Selected_Background,#98db98)
+}
 .fd-button.is-disabled.fd-button--negative,
 .fd-button:disabled.fd-button--negative,
 .fd-button[aria-disabled=true].fd-button--negative {
@@ -546,6 +775,16 @@
   border-color: var(--sapButton_Reject_BorderColor,#f88);
   background-color: #29313a;
   background-color: var(--sapButton_Reject_Background,#29313a)
+}
+.fd-button.is-disabled.fd-button--negative.fd-button--toggled,
+.fd-button:disabled.fd-button--negative.fd-button--toggled,
+.fd-button[aria-disabled=true].fd-button--negative.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Reject_Selected_TextColor,#29313a);
+  border-color: #ff6e6e;
+  border-color: var(--sapButton_Reject_Selected_BorderColor,#ff6e6e);
+  background-color: #ff6e6e;
+  background-color: var(--sapButton_Reject_Selected_Background,#ff6e6e)
 }
 .fd-button.is-disabled.fd-button--attention,
 .fd-button:disabled.fd-button--attention,
@@ -557,16 +796,38 @@
   background-color: #29313a;
   background-color: var(--sapButton_Attention_Background,#29313a)
 }
+.fd-button.is-disabled.fd-button--attention.fd-button--toggled,
+.fd-button:disabled.fd-button--attention.fd-button--toggled,
+.fd-button[aria-disabled=true].fd-button--attention.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Attention_Selected_TextColor,#29313a);
+  border-color: #f9b24b;
+  border-color: var(--sapButton_Attention_Selected_BorderColor,#f9b24b);
+  background-color: #f9b24b;
+  background-color: var(--sapButton_Attention_Selected_Background,#f9b24b)
+}
 .fd-button.is-disabled.fd-button--emphasized,
 .fd-button:disabled.fd-button--emphasized,
 .fd-button[aria-disabled=true].fd-button--emphasized {
   font-weight: 700;
+  border-width: .0625rem;
+  border-width: var(--fdButton_Emphasized_Border_Width,var(--sapButton_BorderWidth,.0625rem));
   color: #fff;
   color: var(--sapButton_Emphasized_TextColor,#fff);
   border-color: #1b8dec;
   border-color: var(--sapButton_Emphasized_BorderColor,#1b8dec);
   background-color: #1b8dec;
   background-color: var(--sapButton_Emphasized_Background,#1b8dec)
+}
+.fd-button.is-disabled.fd-button--emphasized.fd-button--toggled,
+.fd-button:disabled.fd-button--emphasized.fd-button--toggled,
+.fd-button[aria-disabled=true].fd-button--emphasized.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Selected_TextColor,#29313a);
+  border-color: #91c8f6;
+  border-color: var(--sapButton_Selected_BorderColor,#91c8f6);
+  background-color: #91c8f6;
+  background-color: var(--sapButton_Selected_Background,#91c8f6)
 }
 .fd-button.is-disabled.fd-button--transparent,
 .fd-button:disabled.fd-button--transparent,
@@ -575,4 +836,14 @@
   border-color: var(--sapButton_Lite_BorderColor,transparent);
   background-color: transparent;
   background-color: var(--sapButton_Lite_Background,transparent)
+}
+.fd-button.is-disabled.fd-button--transparent.fd-button--toggled,
+.fd-button:disabled.fd-button--transparent.fd-button--toggled,
+.fd-button[aria-disabled=true].fd-button--transparent.fd-button--toggled {
+  color: #29313a;
+  color: var(--sapButton_Selected_TextColor,#29313a);
+  border-color: #91c8f6;
+  border-color: var(--sapButton_Selected_BorderColor,#91c8f6);
+  background-color: #91c8f6;
+  background-color: var(--sapButton_Selected_Background,#91c8f6)
 }

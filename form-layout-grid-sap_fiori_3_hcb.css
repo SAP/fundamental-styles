@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.13.0
+ * Fundamental Library Styles v0.14.0
  * Copyright (c) 2020 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
@@ -1240,7 +1240,6 @@
 }
 @media (min-width:0) {
   .fd-container.fd-form-layout-grid-container {
-    padding: 1rem;
     margin: 0 -.25rem
   }
   .fd-container.fd-form-layout-grid-container > .fd-row > :first-child .fd-container.fd-form-layout-grid-container > .fd-row :not(.fd-col--wrap) {
@@ -1279,7 +1278,14 @@
   .fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-form-label {
     display: inline-block;
     margin-right: 0;
+    padding-right: .5rem;
     padding-bottom: .125rem
+  }
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-form-label[dir=rtl],
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-form-label {
+    padding-left: .5rem;
+    margin-left: 0;
+    padding-right: 0
   }
   .fd-container.fd-form-layout-grid-container .fd-row .fd-col--0 {
     margin-bottom: 0
@@ -1446,6 +1452,15 @@
   }
   .fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-row {
     margin: 0 -.25rem
+  }
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col__form-group {
+    padding: 1rem
+  }
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-row__form-item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
   }
   .fd-container.fd-form-layout-grid-container :last-child * > {
     margin-bottom: 0

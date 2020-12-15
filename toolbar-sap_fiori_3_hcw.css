@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.13.0
+ * Fundamental Library Styles v0.14.0
  * Copyright (c) 2020 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
@@ -68,13 +68,15 @@
   background-color: var(--sapToolbar_Background,#fff)
 }
 .fd-toolbar--info {
-  background-color: #fff;
-  background-color: var(--sapBackgroundColor,#fff)
+  background-color: #b3b3b3;
+  background-color: var(--sapInfobar_NonInteractive_Background,#b3b3b3);
+  color: #000;
+  color: var(--sapList_TextColor,#000)
 }
 .fd-toolbar--info.fd-toolbar--active {
   background-color: #fff;
   background-color: var(--sapInfobar_Background,#fff);
-  color: #fff
+  color: var(--sapInfobar__TextColor)
 }
 .fd-toolbar--info.fd-toolbar--active.is-hover,
 .fd-toolbar--info.fd-toolbar--active:hover {

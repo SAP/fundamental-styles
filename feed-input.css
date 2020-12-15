@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.13.0
+ * Fundamental Library Styles v0.14.0
  * Copyright (c) 2020 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
@@ -37,12 +37,6 @@
   box-sizing: inherit;
   font-size: inherit
 }
-@media (min-width:600px) {
-  .fd-feed-input {
-    margin-top: 1rem;
-    margin-bottom: 1rem
-  }
-}
 .fd-feed-input[dir=rtl],
 [dir=rtl] .fd-feed-input {
   padding-right: 1rem;
@@ -60,13 +54,6 @@
   flex: 1 0 auto;
   margin-left: 0;
   margin-right: .5rem
-}
-@media (min-width:600px) {
-  .fd-feed-input .fd-feed-input__thumb {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex
-  }
 }
 .fd-feed-input .fd-feed-input__thumb[dir=rtl],
 [dir=rtl] .fd-feed-input .fd-feed-input__thumb {
@@ -98,12 +85,14 @@
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg)
 }
-.fd-feed-input--m {
-  margin-top: 1rem;
-  margin-bottom: 1rem
-}
-.fd-feed-input--m .fd-feed-input__thumb {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex
+@media (min-width:25rem) {
+  .fd-feed-input {
+    margin-top: 1rem;
+    margin-bottom: 1rem
+  }
+  .fd-feed-input .fd-feed-input__thumb {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex
+  }
 }

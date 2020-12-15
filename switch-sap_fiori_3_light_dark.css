@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.13.0
+ * Fundamental Library Styles v0.14.0
  * Copyright (c) 2020 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
  */
@@ -25,17 +25,6 @@
   padding: 0;
   margin: 0;
   border: 0;
-  display: inline-block;
-  position: relative;
-  padding: .375rem 0
-}
-.fd-switch::after,
-.fd-switch::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
-}
-.fd-switch__label {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
   line-height: 1.4;
@@ -46,7 +35,6 @@
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -77,26 +65,37 @@
   cursor: pointer;
   padding: 0
 }
-.fd-switch__label::after,
-.fd-switch__label::before {
+.fd-switch::after,
+.fd-switch::before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-switch__label[dir=rtl],
-[dir=rtl] .fd-switch__label {
+.fd-switch::after,
+.fd-switch::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-switch[dir=rtl],
+[dir=rtl] .fd-switch {
   margin-left: .5rem;
   margin-right: 0
 }
-.fd-switch__label.is-disabled,
-.fd-switch__label:disabled,
-.fd-switch__label[aria-disabled=true] {
+.fd-switch.is-disabled,
+.fd-switch:disabled,
+.fd-switch[aria-disabled=true] {
   cursor: auto;
   pointer-events: none;
   opacity: .4;
   opacity: var(--sapContent_DisabledOpacity,.4)
 }
-.fd-switch__wrapper {
+.fd-switch__control {
+  display: inline-block;
+  position: relative;
+  padding: .375rem 0
+}
+.fd-switch__slider {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
   line-height: 1.4;
@@ -124,8 +123,8 @@
   transition: all .1s;
   border-radius: .75rem
 }
-.fd-switch__wrapper::after,
-.fd-switch__wrapper::before {
+.fd-switch__slider::after,
+.fd-switch__slider::before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
@@ -323,7 +322,7 @@
   opacity: .4;
   opacity: var(--sapContent_DisabledOpacity,.4)
 }
-.fd-switch__input:focus + .fd-switch__wrapper::before {
+.fd-switch__input:focus + .fd-switch__slider::before {
   position: absolute;
   display: block;
   outline-offset: -.0625rem;
@@ -339,29 +338,29 @@
   left: 0;
   right: 0
 }
-.fd-switch__input:checked + .fd-switch__wrapper {
+.fd-switch__input:checked + .fd-switch__slider {
   background-color: #062e4f;
   background-color: var(--sapButton_Track_Selected_Background,#062e4f);
   border-color: #91c8f6;
   border-color: var(--sapButton_Selected_BorderColor,#91c8f6)
 }
-.fd-switch__input:checked + .fd-switch__wrapper .fd-switch__handle {
+.fd-switch__input:checked + .fd-switch__slider .fd-switch__handle {
   background-color: #91c8f6;
   background-color: var(--sapButton_Selected_Background,#91c8f6);
   border-color: #91c8f6;
   border-color: var(--sapButton_Selected_BorderColor,#91c8f6)
 }
-.fd-switch__input:checked + .fd-switch__wrapper .fd-switch__track {
+.fd-switch__input:checked + .fd-switch__slider .fd-switch__track {
   -webkit-transform: translate(.0625rem,-50%);
   transform: translate(.0625rem,-50%)
 }
-.fd-switch__input:checked + .fd-switch__wrapper .fd-switch__icon--off [class*=sap-icon],
-.fd-switch__input:checked + .fd-switch__wrapper .fd-switch__icon--off[class*=sap-icon] {
+.fd-switch__input:checked + .fd-switch__slider .fd-switch__icon--off [class*=sap-icon],
+.fd-switch__input:checked + .fd-switch__slider .fd-switch__icon--off[class*=sap-icon] {
   opacity: 0;
   visibility: hidden
 }
-.fd-switch__input:checked + .fd-switch__wrapper .fd-switch__icon--on [class*=sap-icon],
-.fd-switch__input:checked + .fd-switch__wrapper .fd-switch__icon--on[class*=sap-icon] {
+.fd-switch__input:checked + .fd-switch__slider .fd-switch__icon--on [class*=sap-icon],
+.fd-switch__input:checked + .fd-switch__slider .fd-switch__icon--on[class*=sap-icon] {
   opacity: 1;
   visibility: visible
 }
@@ -378,13 +377,13 @@
   -webkit-transform: translate(1.1875rem,-50%);
   transform: translate(1.1875rem,-50%)
 }
-.fd-switch[dir=rtl] .fd-switch__input:checked + .fd-switch__wrapper .fd-switch__track,
-[dir=rtl] .fd-switch .fd-switch__input:checked + .fd-switch__wrapper .fd-switch__track {
+.fd-switch[dir=rtl] .fd-switch__input:checked + .fd-switch__slider .fd-switch__track,
+[dir=rtl] .fd-switch .fd-switch__input:checked + .fd-switch__slider .fd-switch__track {
   -webkit-transform: translate(-.0625rem,-50%);
   transform: translate(-.0625rem,-50%)
 }
-.fd-switch.is-hover .fd-switch__wrapper,
-.fd-switch:hover .fd-switch__wrapper {
+.fd-switch.is-hover .fd-switch__slider,
+.fd-switch:hover .fd-switch__slider {
   border-color: #91c8f6;
   border-color: var(--sapButton_Hover_BorderColor,#91c8f6)
 }
@@ -395,13 +394,13 @@
   background-color: #062e4f;
   background-color: var(--sapButton_Hover_Background,#062e4f)
 }
-.fd-switch.is-hover .fd-switch:checked + .fd-switch__wrapper,
-.fd-switch:hover .fd-switch:checked + .fd-switch__wrapper {
+.fd-switch.is-hover .fd-switch:checked + .fd-switch__slider,
+.fd-switch:hover .fd-switch:checked + .fd-switch__slider {
   border-color: #83c1f5;
   border-color: var(--sapButton_Selected_Hover_BorderColor,#83c1f5)
 }
-.fd-switch.is-hover .fd-switch:checked + .fd-switch__wrapper .fd-switch__handle,
-.fd-switch:hover .fd-switch:checked + .fd-switch__wrapper .fd-switch__handle {
+.fd-switch.is-hover .fd-switch:checked + .fd-switch__slider .fd-switch__handle,
+.fd-switch:hover .fd-switch:checked + .fd-switch__slider .fd-switch__handle {
   border-color: #83c1f5;
   border-color: var(--sapButton_Selected_Hover_BorderColor,#83c1f5);
   background-color: #83c1f5;
@@ -414,7 +413,7 @@
   min-width: 1.5rem;
   min-height: 1.5rem
 }
-.fd-switch--compact .fd-switch__wrapper {
+.fd-switch--compact .fd-switch__slider {
   width: 2.375rem;
   height: 1rem
 }
@@ -428,7 +427,7 @@
   -webkit-transform: translate(.8125rem,-50%);
   transform: translate(.8125rem,-50%)
 }
-.fd-switch--semantic .fd-switch__wrapper {
+.fd-switch--semantic .fd-switch__slider {
   width: 3.75rem;
   height: 1.25rem;
   border-color: #f88;
@@ -446,17 +445,17 @@
   border-color: #f88;
   border-color: var(--sapErrorBorderColor,#f88)
 }
-.fd-switch--semantic .fd-switch__input:checked + .fd-switch__wrapper {
+.fd-switch--semantic .fd-switch__input:checked + .fd-switch__slider {
   background-color: #153c15;
   background-color: var(--sapSuccessBackground,#153c15);
   border-color: #abe2ab;
   border-color: var(--sapSuccessBorderColor,#abe2ab)
 }
-.fd-switch--semantic .fd-switch__input:checked + .fd-switch__wrapper .fd-switch__track {
+.fd-switch--semantic .fd-switch__input:checked + .fd-switch__slider .fd-switch__track {
   -webkit-transform: translate(-.0625rem,-50%);
   transform: translate(-.0625rem,-50%)
 }
-.fd-switch--semantic .fd-switch__input:checked + .fd-switch__wrapper .fd-switch__handle {
+.fd-switch--semantic .fd-switch__input:checked + .fd-switch__slider .fd-switch__handle {
   border-color: #abe2ab;
   border-color: var(--sapSuccessBorderColor,#abe2ab);
   background-color: #29313a;
@@ -465,12 +464,12 @@
 .fd-switch--semantic.fd-switch--compact {
   padding: .1875rem 0
 }
-.fd-switch--semantic.fd-switch--compact .fd-switch__wrapper {
+.fd-switch--semantic.fd-switch--compact .fd-switch__slider {
   width: 3.375rem;
   height: 1.25rem
 }
-.fd-switch--semantic.is-hover .fd-switch__wrapper,
-.fd-switch--semantic:hover .fd-switch__wrapper {
+.fd-switch--semantic.is-hover .fd-switch__slider,
+.fd-switch--semantic:hover .fd-switch__slider {
   border-color: #f88;
   border-color: var(--sapErrorBorderColor,#f88)
 }
@@ -481,8 +480,8 @@
   border-color: #f88;
   border-color: var(--sapErrorBorderColor,#f88)
 }
-.fd-switch--semantic.is-hover .fd-switch__input:checked + .fd-switch__wrapper .fd-switch__handle,
-.fd-switch--semantic:hover .fd-switch__input:checked + .fd-switch__wrapper .fd-switch__handle {
+.fd-switch--semantic.is-hover .fd-switch__input:checked + .fd-switch__slider .fd-switch__handle,
+.fd-switch--semantic:hover .fd-switch__input:checked + .fd-switch__slider .fd-switch__handle {
   background-color: #153c15;
   background-color: var(--sapSuccessBackground,#153c15)
 }
@@ -491,8 +490,8 @@
   -webkit-transform: translate(1.9375rem,-50%);
   transform: translate(1.9375rem,-50%)
 }
-.fd-switch--semantic[dir=rtl] .fd-switch__input:checked + .fd-switch__wrapper .fd-switch__track,
-[dir=rtl] .fd-switch--semantic .fd-switch__input:checked + .fd-switch__wrapper .fd-switch__track {
+.fd-switch--semantic[dir=rtl] .fd-switch__input:checked + .fd-switch__slider .fd-switch__track,
+[dir=rtl] .fd-switch--semantic .fd-switch__input:checked + .fd-switch__slider .fd-switch__track {
   -webkit-transform: translate(.0625rem,-50%);
   transform: translate(.0625rem,-50%)
 }
