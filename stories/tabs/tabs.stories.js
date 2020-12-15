@@ -18,13 +18,19 @@ export default {
 - You plan to use only one single tab.
 
 
-##Sizes
-Depending on the screen width of the device, tabs can be displayed in two sizes:
-        
-Size | Modifier class | Screen width | Device
-:---- | :----------------- | :--------- | :-----
-Large&nbsp;&nbsp; | \`fd-tabs--l\`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 600 px and above&nbsp;&nbsp; | Desktop
-Small&nbsp;&nbsp; | \`fd-tabs--s\`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | < 599 px&nbsp;&nbsp;| Mobile and small tablets
+##Horizontal padding
+
+By default, tabs have no horizontal paddings. If horizontal paddings are added, they should behave responsively based on the screen width.
+
+These modifier classes are used to display horizontal padding for tabs in various sizes.
+
+| rem | min-width | max width | modifier class |
+| ---- | ---------- | ---------- | ----------- |
+| 1rem | _n/a_ | 599px | <code>fd-tabs--s</code> |
+| 2rem | 600px | 1023px | <code>fd-tabs--m</code> |
+| 2rem | 1024px | 1439px | <code>fd-tabs--l</code> |
+| 3rem | 1440px | _n/a_ | <code>fd-tabs--xl</code> |
+
 <br>
         `,
         docs: {
@@ -36,7 +42,7 @@ Small&nbsp;&nbsp; | \`fd-tabs--s\`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
 
 
 export const primary = () => `
-<ul class="fd-tabs fd-tabs--l" role="tablist">
+<ul class="fd-tabs" role="tablist">
     <li role="tab" class="fd-tabs__item" aria-controls="fuCwV550">
         <a class="fd-tabs__link" href="#fuCwV550">
             <span class="fd-tabs__tag">
@@ -77,13 +83,13 @@ primary.storyName = 'Default';
 primary.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `By default, tabs are displayed in a bar and are either inactive or active (highlighted in blue). The bar can also contain actions that apply to the whole page. The example below illustrates the tabs component in cozy mode, which is achieved with the \`fd-tabs--l\` modifier class.
+        storyDescription: `By default, tabs are displayed in a bar and are either inactive or active (highlighted in blue). The bar can also contain actions that apply to the whole page. The example below illustrates the tabs component in cozy mode with no horizontal paddings.
         `
     }
 };
 
 export const tabWithCounters = () => `
-<ul class="fd-tabs fd-tabs--s fd-tabs--compact" role="tablist">
+<ul class="fd-tabs fd-tabs--xl fd-tabs--compact" role="tablist">
     <li role="tab" class="fd-tabs__item" aria-controls="d9vOir">
         <a class="fd-tabs__link" href="#d9vOir">
             <p class="fd-tabs__count">13</p>
@@ -127,7 +133,7 @@ tabWithCounters.storyName = 'Counters';
 tabWithCounters.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `Tabs can be displayed with counters to indicate that there are a number of resources the user can or should access. To display counters, wrap the \`fd-tabs__count\` class in paragraph tags below the \`fd-tabs__link\` element.
+        storyDescription: `Tabs can be displayed with counters to indicate that there are a number of resources the user can or should access. To display counters, wrap the \`fd-tabs__count\` class in paragraph tags below the \`fd-tabs__link\` element. The example below illustrates the tabs component in XL screen and \`fd-tabs--xl\` modifier class which adds 3rem horizontal paddings.
         `
     }
 };
@@ -181,7 +187,7 @@ navTab.parameters = {
 
 
 export const iconOnly = () => `
-<ul class="fd-tabs fd-tabs--l fd-tabs--icon-only" role="tablist">
+<ul class="fd-tabs fd-tabs--s fd-tabs--icon-only" role="tablist">
     <li role="tab" class="fd-tabs__item" aria-controls="pliA92">
         <a class="fd-tabs__link" href="#pliA92">
             <span class="fd-tabs__icon">
@@ -231,7 +237,7 @@ iconOnly.parameters = {
 };
 
 export const compactIconOnly = () => `
-<ul class="fd-tabs fd-tabs--s fd-tabs--icon-only fd-tabs--compact" role="tablist">
+<ul class="fd-tabs fd-tabs--xl fd-tabs--icon-only fd-tabs--compact" role="tablist">
     <li role="tab" class="fd-tabs__item fd-tabs__item--icon-only" aria-controls="0bT4aB">
         <a class="fd-tabs__link" href="#0bT4aB">
             <span class="fd-tabs__icon">
@@ -275,7 +281,7 @@ compactIconOnly.storyName = 'Icon (compact)';
 compactIconOnly.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `Tabs can be displayed with icons in compact mode. To display compact tabs, add the \`fd-tabs--s\` and \`fd-tabs--compact\` modifier classes to the main element. See example above on how to display icon tabs.
+        storyDescription: `Tabs can be displayed with icons in compact mode. To display compact tabs, add the \`fd-tabs--compact\` modifier class to the main element. See example above on how to display icon tabs.
     `
     }
 };
@@ -342,7 +348,7 @@ processMode.parameters = {
 };
 
 export const compactProcessMode = () => `
-<ul class="fd-tabs fd-tabs--s fd-tabs--process fd-tabs--compact" role="tablist">
+<ul class="fd-tabs fd-tabs--l fd-tabs--process fd-tabs--compact" role="tablist">
     <li role="tab" class="fd-tabs__item" aria-controls="LHsxsZ">
         <a class="fd-tabs__link" href="#LHsxsZ">
             <span class="fd-tabs__icon">
@@ -397,7 +403,7 @@ compactProcessMode.storyName = 'Process mode (compact)';
 compactProcessMode.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `Tabs can be displayed in subsequent steps while in compact mode. To display compact tabs in process mode, add the \`fd-tabs--s\`, \`fd-tabs--process\` and \`fd-tabs--compact\` modifier classes to the main element.
+        storyDescription: `Tabs can be displayed in subsequent steps while in compact mode. To display compact tabs in process mode, add the \`fd-tabs--process\` and \`fd-tabs--compact\` modifier classes to the main element.
     `
     }
 };
@@ -468,7 +474,7 @@ filterMode.parameters = {
 };
 
 export const compactFilterMode = () => `
-<ul class="fd-tabs fd-tabs--s fd-tabs--filter fd-tabs--compact" role="tablist">
+<ul class="fd-tabs fd-tabs--l fd-tabs--filter fd-tabs--compact" role="tablist">
     <li role="tab" class="fd-tabs__item fd-tabs__item--header" aria-controls="YETAv8">
         <a class="fd-tabs__link" href="#YETAv8">
             <span class="fd-tabs__header">
@@ -527,13 +533,13 @@ compactFilterMode.storyName = 'Filter mode (compact)';
 compactFilterMode.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `Tabs can be displayed in compact mode while in filter mode. To display compact tabs in filter mode, add the \`fd-tabs--s\`, \`fd-tabs--filter\` and \`fd-tabs--compact\` modifier classes to the main element.
+        storyDescription: `Tabs can be displayed in compact mode while in filter mode. To display compact tabs in filter mode, add the \`fd-tabs--filter\` and \`fd-tabs--compact\` modifier classes to the main element.
     `
     }
 };
 
 export const semanticMode = () => `
-<ul class="fd-tabs fd-tabs--s fd-tabs--icon-only fd-tabs--compact" role="tablist">
+<ul class="fd-tabs fd-tabs--l fd-tabs--icon-only fd-tabs--compact" role="tablist">
     <li role="tab" class="fd-tabs__item fd-tabs__item--success" aria-controls="XTsSDD">
         <a class="fd-tabs__link" href="#XTsSDD">
             <span class="fd-tabs__icon">

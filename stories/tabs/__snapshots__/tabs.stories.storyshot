@@ -5,7 +5,7 @@ exports[`Storyshots Components/Tabs Counters 1`] = `
   
 
   <ul
-    class="fd-tabs fd-tabs--s fd-tabs--compact"
+    class="fd-tabs fd-tabs--xl fd-tabs--compact"
     role="tablist"
   >
     
@@ -178,7 +178,7 @@ exports[`Storyshots Components/Tabs Default 1`] = `
   
 
   <ul
-    class="fd-tabs fd-tabs--l"
+    class="fd-tabs"
     role="tablist"
   >
     
@@ -330,7 +330,7 @@ exports[`Storyshots Components/Tabs Filter mode (compact) 1`] = `
   
 
   <ul
-    class="fd-tabs fd-tabs--s fd-tabs--filter fd-tabs--compact"
+    class="fd-tabs fd-tabs--l fd-tabs--filter fd-tabs--compact"
     role="tablist"
   >
     
@@ -862,7 +862,7 @@ exports[`Storyshots Components/Tabs Icon (compact) 1`] = `
   
 
   <ul
-    class="fd-tabs fd-tabs--s fd-tabs--icon-only fd-tabs--compact"
+    class="fd-tabs fd-tabs--xl fd-tabs--icon-only fd-tabs--compact"
     role="tablist"
   >
     
@@ -1050,7 +1050,7 @@ exports[`Storyshots Components/Tabs Icon 1`] = `
   
 
   <ul
-    class="fd-tabs fd-tabs--l fd-tabs--icon-only"
+    class="fd-tabs fd-tabs--s fd-tabs--icon-only"
     role="tablist"
   >
     
@@ -1386,7 +1386,7 @@ exports[`Storyshots Components/Tabs Process mode (compact) 1`] = `
   
 
   <ul
-    class="fd-tabs fd-tabs--s fd-tabs--process fd-tabs--compact"
+    class="fd-tabs fd-tabs--l fd-tabs--process fd-tabs--compact"
     role="tablist"
   >
     
@@ -2462,7 +2462,7 @@ exports[`Storyshots Components/Tabs Semantic mode 1`] = `
   
 
   <ul
-    class="fd-tabs fd-tabs--s fd-tabs--icon-only fd-tabs--compact"
+    class="fd-tabs fd-tabs--l fd-tabs--icon-only fd-tabs--compact"
     role="tablist"
   >
     
