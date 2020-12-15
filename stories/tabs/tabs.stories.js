@@ -83,7 +83,7 @@ primary.storyName = 'Default';
 primary.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `By default, tabs are displayed in a bar and are either inactive or active (highlighted in blue). The bar can also contain actions that apply to the whole page. The example below illustrates the tabs component in cozy mode with no horizontal paddings.
+        storyDescription: `By default, tabs are displayed in a bar and are either inactive or active (highlighted in blue). The bar can also contain actions that apply to the whole page. The example below illustrates the tabs component in cozy mode with no horizontal padding.
         `
     }
 };
