@@ -26,7 +26,7 @@ export const Popover = () => `<div class="fd-popover">
                         <i role="presentation" class="fd-avatar__icon sap-icon--building"></i>
                     </span>
                     
-                    <div class="fd-quick-view__text">
+                    <div class="fd-quick-view__subheader-text">
                         <div class="fd-quick-view__title">
                             <h5 class="fd-title fd-title--h5">Company B</h5>
                         </div>
@@ -126,7 +126,7 @@ export const Dialog = () => `<section class="fd-dialog-docs-static fd-dialog fd-
                             <i role="presentation" class="fd-avatar__icon sap-icon--camera"></i>
                         </span>
                         
-                        <div class="fd-quick-view__text">
+                        <div class="fd-quick-view__subheader-text">
                             <div class="fd-quick-view__title">
                                 <h5 class="fd-title fd-title--h5">
                                     <a class="fd-link" href="#">Inventarisation</a>
@@ -204,7 +204,7 @@ export const NoHeader = () => `<div class="fd-popover">
                         <i role="presentation" class="fd-avatar__icon sap-icon--camera"></i>
                     </span>
                     
-                    <div class="fd-quick-view__text">
+                    <div class="fd-quick-view__subheader-text">
                         <div class="fd-quick-view__title">
                             <h5 class="fd-title fd-title--h5">
                                 <a class="fd-link" href="#">Inventarisation</a>
@@ -265,7 +265,7 @@ export const RTLMode = () => `<div class="fd-popover">
                         <i role="presentation" class="fd-avatar__icon sap-icon--camera"></i>
                     </span>
                     
-                    <div class="fd-quick-view__text">
+                    <div class="fd-quick-view__subheader-text">
                         <div class="fd-quick-view__title">
                             <h5 class="fd-title fd-title--h5">
                                 <a class="fd-link" href="#">Inventarisation</a>

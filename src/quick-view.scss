@@ -27,11 +27,6 @@ $fd-quick-view-title-bottom-indent: 0.5rem;
     }
   }
 
-  &__text {
-    max-width: 100%;
-    min-width: 0; // fix for flex width https://github.com/philipwalton/flexbugs#flexbug-17
-  }
-
   &__subheader {
     @include fd-reset();
     @include fd-flex();
@@ -45,6 +40,11 @@ $fd-quick-view-title-bottom-indent: 0.5rem;
 
     > *:first-child {
       margin-right: $fd-quick-view-avatar-indent;
+    }
+
+    &-text {
+      max-width: 100%;
+      min-width: 0; // fix for flex width https://github.com/philipwalton/flexbugs#flexbug-17
     }
   }
 
