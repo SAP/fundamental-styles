@@ -24,12 +24,12 @@ By default, tabs have no horizontal paddings. If horizontal paddings are added, 
 
 These modifier classes are used to display horizontal padding for tabs in various sizes.
 
-| rem | min-width | max width | modifier class |
+| rem&nbsp;&nbsp; | Min-width&nbsp;&nbsp; | Max-width&nbsp;&nbsp; | Modifier class |
 | ---- | ---------- | ---------- | ----------- |
-| 1rem | _n/a_ | 599px | <code>fd-tabs--s</code> |
-| 2rem | 600px | 1023px | <code>fd-tabs--m</code> |
-| 2rem | 1024px | 1439px | <code>fd-tabs--l</code> |
-| 3rem | 1440px | _n/a_ | <code>fd-tabs--xl</code> |
+| 1rem&nbsp;&nbsp; | _n/a_ | 599 px | <code>fd-tabs--s</code> |
+| 2rem&nbsp;&nbsp; | 600 px | 1023 px | <code>fd-tabs--m</code> |
+| 2rem&nbsp;&nbsp; | 1024 px | 1439 px| <code>fd-tabs--l</code> |
+| 3rem&nbsp;&nbsp; | 1440 px | _n/a_ | <code>fd-tabs--xl</code> |
 
 <br>
         `,
@@ -133,7 +133,9 @@ tabWithCounters.storyName = 'Counters';
 tabWithCounters.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `Tabs can be displayed with counters to indicate that there are a number of resources the user can or should access. To display counters, wrap the \`fd-tabs__count\` class in paragraph tags below the \`fd-tabs__link\` element. The example below illustrates the tabs component in XL screen and \`fd-tabs--xl\` modifier class which adds 3rem horizontal paddings.
+        storyDescription: `Tabs can be displayed with counters to indicate that there are a number of resources the user can or should access. To display counters, wrap the \`fd-tabs__count\` class in paragraph tags below the \`fd-tabs__link\` element. 
+        
+In the example below, the tabs component is optimized for an extra-large screen with the \`fd-tabs--xl\` modifier class, which adds 3rem horizontal paddings.
         `
     }
 };
