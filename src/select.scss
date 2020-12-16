@@ -27,7 +27,6 @@ $block: #{$fd-namespace}-select;
     align-items: center;
     justify-content: space-between;
     padding-right: 0;
-    box-sizing: content-box;
 
     .#{$block}__button {
       align-items: center;
@@ -57,6 +56,7 @@ $block: #{$fd-namespace}-select;
         height: 100%;
         width: 100%;
         z-index: 1;
+        right: 0.0234375rem;
         position: absolute;
       }
     }
@@ -64,6 +64,12 @@ $block: #{$fd-namespace}-select;
     @include fd-rtl() {
       text-align: right;
       padding-left: 0;
+
+      @include fd-focus() {
+        &::before {
+          right: -0.0234375rem;
+        }
+      }
     }
 
     @include fd-hover() {
@@ -96,7 +102,7 @@ $block: #{$fd-namespace}-select;
     }
 
     &.is-readonly {
-      .#{$block}__text-content {
+      .#{$block}__text {
         padding-right: $fd-select-padding-x;
         padding-left: $fd-select-padding-x;
       }
@@ -105,7 +111,7 @@ $block: #{$fd-namespace}-select;
     }
   }
 
-  &__text-content {
+  &__text {
     @include fd-reset();
 
     font-size: var(--sapFontSize);
@@ -122,7 +128,7 @@ $block: #{$fd-namespace}-select;
     .#{$block}__control {
       height: $fd-form-input-height--compact;
 
-      .#{$block}__text-content {
+      .#{$block}__text {
         padding-left: $fd-select-padding-compact-x;
       }
 
@@ -130,14 +136,14 @@ $block: #{$fd-namespace}-select;
         text-align: right;
         padding-left: 0;
 
-        .#{$block}__text-content {
+        .#{$block}__text {
           padding-left: 0;
           padding-right: $fd-select-padding-compact-x;
         }
       }
 
       &.is-readonly {
-        .#{$block}__text-content {
+        .#{$block}__text {
           padding-right: $fd-select-padding-compact-x;
           padding-left: $fd-select-padding-compact-x;
         }
