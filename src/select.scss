@@ -45,7 +45,7 @@ $block: #{$fd-namespace}-select;
 
     @include fd-form-states();
 
-    &:focus {
+    @include fd-focus() {
       outline: 0;
 
       &::before {
@@ -105,15 +105,10 @@ $block: #{$fd-namespace}-select;
     }
   }
 
-  &__text {
-    @include fd-reset();
-
-    font-size: var(--sapFontSize);
-  }
-
   &__text-content {
     @include fd-reset();
 
+    font-size: var(--sapFontSize);
     padding-left: $fd-select-padding-x;
     min-width: 5rem;
 
@@ -127,7 +122,7 @@ $block: #{$fd-namespace}-select;
     .#{$block}__control {
       height: $fd-form-input-height--compact;
 
-      .#{$block}.#{$block}__text-content {
+      .#{$block}__text-content {
         padding-left: $fd-select-padding-compact-x;
       }
 
@@ -135,14 +130,14 @@ $block: #{$fd-namespace}-select;
         text-align: right;
         padding-left: 0;
 
-        .#{$block}.#{$block}__text-content {
+        .#{$block}__text-content {
           padding-left: 0;
           padding-right: $fd-select-padding-compact-x;
         }
       }
 
       &.is-readonly {
-        .#{$block}.#{$block}__text-content {
+        .#{$block}__text-content {
           padding-right: $fd-select-padding-compact-x;
           padding-left: $fd-select-padding-compact-x;
         }
