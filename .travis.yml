@@ -23,6 +23,8 @@ jobs:
     - provider: script
       script: bash ./ci-scripts/publish-rc.sh
       skip_cleanup: true
+      on:
+        all_branches: true
   - stage: Release
     if: branch = tmp_branch_for_automated_release_do_not_use
     before_deploy:
