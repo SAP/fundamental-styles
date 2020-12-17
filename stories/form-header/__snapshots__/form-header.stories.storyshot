@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Forms/Form Header Form Header without Toolbar 1`] = `
+exports[`Storyshots Components/Forms/Form Header Default 1`] = `
 <div
   class="fd-form-header"
 >
