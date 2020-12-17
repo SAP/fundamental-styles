@@ -27,9 +27,15 @@ The default behaviour of the list item is that it does not wrap. To enable wrapp
 
 
 ##States
-By default, tree items are not interactive. If all tree items are navigable, it’s possible to add states (hover, selected, active) to them by adding the \`fd-tree--active\` modifier class to the root tree. If tree items do not necessarily contain links, use the \`fd-tree__item-container--active\` modifier class instead.
+By default, tree items are not interactive; however, there are a few ways to add states (hover, selected, active) depending on the status of the items.
 
-Items with single and multiple selection (radio buttons and checkboxes) can display a selected state by adding the \`is-selected\` class to the \`fd-tree__item-container\` element.
+State | Modifier class | Description
+:----- | :-------------- | :-----------------
+Active | \`fd-tree--active\` | If all tree items are navigable, add the modifier class to the main element.
+Active | \`fd-tree__item-container--active\`&nbsp;&nbsp;&nbsp; | If only certain tree items are navigable, add the modifier class to the container.
+Selected | \`is-selected\` | If tree items contain single and multiple selection (radio buttons and checkboxes), add the class to the container.
+Navigated&nbsp;&nbsp;&nbsp; | \`is-navigated\` | If a certain tree item has been previous navigated, add the class to the container.
+
 <br>
 `,
         docs: { iframeHeight: 400 },
@@ -100,7 +106,7 @@ export const primary = () => `<ul role="tree" aria-label="Root Tree" id="TREE1L1
 
 <br><br>
 
-<h3>Compact Mode </h3>
+<h3>Compact mode </h3>
 
 <ul role="tree" aria-label="Root Tree" id="TREE1CL1" class="fd-tree fd-tree--compact expanded-level-1">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
@@ -559,7 +565,7 @@ export const navigable = () => `<ul role="tree" aria-label="Root Tree" id="TREE6
 
 <br><br>
 
-<h3>Tree with Expanded Level 6 and Active Tree Items (All Tree Items) </h3>
+<h3>Level 6 expanded (active tree items) </h3>
 <ul role="tree" aria-label="Root Tree" id="TREE6L1" class="fd-tree fd-tree--active fd-tree--compact expanded-level-6">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container has-highlight-indicator--success">
@@ -720,7 +726,7 @@ To display navigation arrows in tree items, create an element with \`fd-tree__ic
         
 **If all items are navigable:** Do not display arrows at all. In this case, add the \`fd-tree--active\` modifier class to the root tree. This will add states (hover, selected, active) to all tree items.
         
-**When an item has previously been navigated to:** Add the \`is-navigated\` class to the \`fd-tree__item-container\` element.
+**If an item has been navigated:** When a user has navigated to an item, but has since moved onto another item. You can indicate that the item has been navigated by adding the \`is-navigated\` class to the \`fd-tree__item-container\` element.
         
 **Note:** In this example, each level indents by 0.25rem more than the previous level (up to level 12).
         
@@ -729,7 +735,7 @@ To display navigation arrows in tree items, create an element with \`fd-tree__ic
 };
 
 
-export const selection = () => `<h3>Multi Selection Left</h3>
+export const selection = () => `<h3>Left multi-selection</h3>
 <ul role="tree" aria-label="Root Tree" id="TREESELL1" class="fd-tree expanded-level-1">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container is-selected">
@@ -809,7 +815,7 @@ export const selection = () => `<h3>Multi Selection Left</h3>
 
 <br><br>
 
-<h3>Multi Selection Right, Compact Mode</h3>
+<h3>Right multi-selection (compact)</h3>
 
 <ul role="tree" aria-label="Root Tree" id="TREESELCL1" class="fd-tree fd-tree--compact fd-tree--no-border expanded-level-1">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
@@ -890,7 +896,7 @@ export const selection = () => `<h3>Multi Selection Left</h3>
 
 <br><br>
 
-<h3>Single Selection Left</h3>
+<h3>Left single selection</h3>
 
 <ul role="tree" aria-label="Root Tree" id="TREESESSLL1" class="fd-tree expanded-level-1">
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
@@ -991,7 +997,7 @@ export const treeWithNoData = () => `<ul role="tree" aria-label="Root Tree" id="
     <li role="treeitem" aria-level="1" class="fd-tree__item">
         <div class="fd-tree__item-container">
             <div class="fd-tree__content">
-                <span class="fd-tree__text">No Data</span>
+                <span class="fd-tree__text">No data</span>
             </div>
         </div>
     </li>
