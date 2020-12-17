@@ -6,10 +6,10 @@ The form grid component provides responsive layouts for forms on a 12-column gri
 
 Size | Form width | Breakpoint
 :----- | :-------------- | :---------------
-Small | 0 – 599 px | 600 px breaks to medium
-Medium | 600 px – 1024 px | 1025 px breaks to large
+Small | < 600 px | 601 px breaks to medium
+Medium | 601 px – 1024 px | 1025 px breaks to large
 Large | 1025 px – 1440 px | 1441 px breaks to extra-large
-Extra-large&nbsp;&nbsp;&nbsp; | 1441 px and above&nbsp;&nbsp;&nbsp; | _no breakpoint_
+Extra-large&nbsp;&nbsp;&nbsp; | 1441 px and above&nbsp;&nbsp;&nbsp; | _no breakpoint above 1441 px_
 
 **Note:** These breakpoints are not dependent on the screen width, but rather the width of the form.
 
@@ -92,7 +92,7 @@ sSize.parameters = {
     docs: {
         iframeHeight: 450,
         storyDescription: `
-The small form grid uses a single column layout and is best used for mobile screens and dialogs. The form groups are positioned below each other in a single column and the labels are positioned above the fields to avoid the labels from truncating.
+The small form grid uses a single-column layout and is best used for mobile screens and dialogs. The form groups are positioned below each other in a single column and the labels are positioned above the fields to avoid the labels from truncating.
 
 ####Label-field ratio
 The small form grid is organized into a **12:12:0** label-field ratio.
@@ -182,7 +182,7 @@ mSizeDefault.parameters = {
     docs: {
         iframeHeight: 370,
         storyDescription: `
-The default medium form grid uses a single column layout. The labels are positioned in the same row as the corresponding input field or value, and form groups are positioned below each other.
+The default medium form grid uses a single-column layout. The labels are positioned in the same row as the corresponding input field or value, and form groups are positioned below each other.
 
 ####Label-field ratio
 The default medium form grid is organized into a **2:10:0** label-field ratio. 
@@ -462,7 +462,7 @@ The medium form width can go down to 601 px, providing insufficient space for lo
 The medium form grid is organized into a **3:5:4** label-field ratio to accommodate long labels and fields. 
 
 Components | Grid columns | Description
-:------ | :-------- | :----------------------
+:------ | :--------: | :----------------------
 Label | 4 | Only four grid columns of the responsive grid layout are used by the labels.
 Fields | 8 | Eight grid columns of the responsive grid layout are used by the fields.
 Empty grid columns | 0 | There is no empty space on the right of the field.
@@ -637,7 +637,7 @@ lSizeSingleFormGroup.parameters = {
     docs: {
         iframeHeight: 530,
         storyDescription: `
-If the form contains a single form group, use a single-column layout.
+If the form contains a single form group, you can use a single-column layout.
 
 ####Label-field ratio
 The large form grid is organized into a **3:5:4** label-field ratio for single form groups.
@@ -982,7 +982,7 @@ xlSingleFormGroup.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
-If the form contains a single form group, use a single-column layout.
+If the form contains a single form group, you can use a single-column layout.
 
 ####Label-field ratio
 The extra-large form grid is organized into a **3:5:4** label-field ratio for single form groups.
@@ -1146,7 +1146,7 @@ xlDoubleFormGroup.parameters = {
     docs: {
         iframeHeight: 650,
         storyDescription: `
-If the form contains multiple form groups, you can also use a two-column layout.
+If the form contains multiple form groups, you can use a two-column layout.
 
 ####Label-field ratio
 The extra-large form grid is organized into a **4:8:0** label-field ratio for double form groups.
@@ -1641,7 +1641,8 @@ XL | 3
 L | 1
 M | 1
 S | 1
-        
+
+
 ####Layout 5
 
 Screen size | Columns
