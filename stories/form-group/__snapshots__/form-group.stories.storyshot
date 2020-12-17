@@ -33,7 +33,40 @@ exports[`Storyshots Components/Forms/Form Group Compact 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Forms/Form Group Compact Group Header 1`] = `
+exports[`Storyshots Components/Forms/Form Group Default 1`] = `
+<div
+  class="fd-form-group"
+>
+  
+        
+  <div
+    class="fd-form-item"
+  >
+    
+            
+    <label
+      class="fd-form-label"
+      for="input-1"
+    >
+      Default input:
+    </label>
+    
+            
+    <input
+      class="fd-input"
+      id="input-1"
+      placeholder="Field placeholder text"
+      type="text"
+    />
+    
+        
+  </div>
+  
+    
+</div>
+`;
+
+exports[`Storyshots Components/Forms/Form Group Group header (compact) 1`] = `
 <div
   aria-labelledby="compactGroupHeader"
   class="fd-form-group"
@@ -84,91 +117,7 @@ exports[`Storyshots Components/Forms/Form Group Compact Group Header 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Forms/Form Group Default 1`] = `
-<div
-  class="fd-form-group"
->
-  
-        
-  <div
-    class="fd-form-item"
-  >
-    
-            
-    <label
-      class="fd-form-label"
-      for="input-1"
-    >
-      Default input:
-    </label>
-    
-            
-    <input
-      class="fd-input"
-      id="input-1"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-        
-  </div>
-  
-    
-</div>
-`;
-
-exports[`Storyshots Components/Forms/Form Group Group Header 1`] = `
-<div
-  aria-labelledby="basicGroupHeader"
-  class="fd-form-group"
-  role="group"
->
-  
-        
-  <div
-    class="fd-form-group__header"
-  >
-    
-            
-    <h1
-      class="fd-form-group__header-text"
-      id="basicGroupHeader"
-    >
-      Group Header
-    </h1>
-    
-        
-  </div>
-  
-        
-  <div
-    class="fd-form-item"
-  >
-    
-            
-    <label
-      class="fd-form-label fd-form-label--required"
-      for="input-1d"
-    >
-      Group Header Input:
-    </label>
-    
-            
-    <input
-      class="fd-input"
-      id="input-1d"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-        
-  </div>
-  
-    
-</div>
-`;
-
-exports[`Storyshots Components/Forms/Form Group Group Header in Form Grid 1`] = `
+exports[`Storyshots Components/Forms/Form Group Group header (form grid) 1`] = `
 <div
   class="fd-container fd-form-layout-grid-container"
 >
@@ -624,6 +573,57 @@ exports[`Storyshots Components/Forms/Form Group Group Header in Form Grid 1`] = 
       
             
     </div>
+    
+        
+  </div>
+  
+    
+</div>
+`;
+
+exports[`Storyshots Components/Forms/Form Group Group header 1`] = `
+<div
+  aria-labelledby="basicGroupHeader"
+  class="fd-form-group"
+  role="group"
+>
+  
+        
+  <div
+    class="fd-form-group__header"
+  >
+    
+            
+    <h1
+      class="fd-form-group__header-text"
+      id="basicGroupHeader"
+    >
+      Group Header
+    </h1>
+    
+        
+  </div>
+  
+        
+  <div
+    class="fd-form-item"
+  >
+    
+            
+    <label
+      class="fd-form-label fd-form-label--required"
+      for="input-1d"
+    >
+      Group Header Input:
+    </label>
+    
+            
+    <input
+      class="fd-input"
+      id="input-1d"
+      placeholder="Field placeholder text"
+      type="text"
+    />
     
         
   </div>
