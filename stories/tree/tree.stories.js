@@ -29,7 +29,7 @@ The default behaviour of the list item is that it does not wrap. To enable wrapp
 ##States
 By default, tree items are not interactive; however, there are a few ways to add states (hover, selected, active) depending on the status of the items.
 
-State | Modifier class | Description
+State | Modifier/class | Description
 :----- | :-------------- | :-----------------
 Active | \`fd-tree--active\` | If all tree items are navigable, add the modifier class to the main element.
 Active | \`fd-tree__item-container--active\`&nbsp;&nbsp;&nbsp; | If only certain tree items are navigable, add the modifier class to the container.
@@ -726,7 +726,7 @@ To display navigation arrows in tree items, create an element with \`fd-tree__ic
         
 **If all items are navigable:** Do not display arrows at all. In this case, add the \`fd-tree--active\` modifier class to the root tree. This will add states (hover, selected, active) to all tree items.
         
-**If an item has been navigated:** When a user has navigated to an item, but has since moved onto another item. You can indicate that the item has been navigated by adding the \`is-navigated\` class to the \`fd-tree__item-container\` element.
+**If an item has been navigated:** When a user has navigated to an item but has since moved onto another item, you can indicate that it has been navigated to by adding the \`is-navigated\` class to the \`fd-tree__item-container\` element.
         
 **Note:** In this example, each level indents by 0.25rem more than the previous level (up to level 12).
         
@@ -984,7 +984,7 @@ selection.parameters = {
 Tree can be displayed with checkboxes, allowing the user to select multiple items. To display selected tree items, add the \`is-selected\` class to the \`fd-tree__item-container\` element.
 
 ####Form items
-Form items can be added before or after \`fd-tree__content\`. The \`fd-tree__form-item \`modifier class must be added together with \`fd-form-item\`.
+Form items can be added before or after the \`fd-tree__content\` element. The \`fd-tree__form-item \` class must be added together with the \`fd-form-item\` element.
         
 - Multi-selection: use **Checkboxes**
 - Single selection: use **Radio buttons**
