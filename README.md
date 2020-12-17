@@ -1,10 +1,10 @@
 # Fundamental Library Styles
 
 [![npm version](https://badge.fury.io/js/fundamental-styles.svg)](https://badge.fury.io/js/fundamental-styles)
-[![Build Status](https://travis-ci.com/SAP/fundamental-styles.svg?branch=master)](https://travis-ci.com/SAP/fundamental-styles)
+[![Build Status](https://travis-ci.com/SAP/fundamental-styles.svg?branch=main)](https://travis-ci.com/SAP/fundamental-styles)
 [![Slack](https://img.shields.io/badge/slack-ui--fundamentals-blue.svg?logo=slack)](https://join.slack.com/t/ui-fundamentals/shared_invite/enQtNTIzOTU0Mzc2NTc5LWQzZWI5MWFhYjE5OTc4YzliN2JhOTc1ZjQxZTg1YjZiMWZiYzRkNjMwYzgyMmFkYmNhZDVjMWE5MDIzOWEzMmM)
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP/fundamental-styles)](https://api.reuse.software/info/github.com/SAP/fundamental-styles)
-[![Storybook](https://raw.githubusercontent.com/storybookjs/brand/master/badge/badge-storybook.svg)](https://master--5f85e3904b19d600221872af.chromatic.com)
+[![Storybook](https://raw.githubusercontent.com/storybookjs/brand/main/badge/badge-storybook.svg)](https://main--5f85e3904b19d600221872af.chromatic.com)
 
 <a href="https://www.netlify.com">
   <img src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Deploys by Netlify" />
@@ -43,9 +43,34 @@ npm install fundamental-styles --save
 
 The distrubtion folder contains several css files per component: a default file and one file per supported theme (`sap_fiori_3`, `sap_fiori_3_dark`, `sap_fori_3_light_dark`, `sap_fiori_3_hcb`, `sap_fori_3_hcw`). Each themed file includes fallback support for css variables in IE11 for the corresponding theme. The default file includes fallbacks for `sap_fiori_3`. 
 
-### Fonts & Icons
+### Icons
+See the [Icon Component](https://fundamental-styles.netlify.app/?path=/docs/components-icon--sizes) for a list of icon class names. See Project Configuration below for instructions to include SAP Fiori 3 icons in your project.
 
-This project does not contain fonts and icons. See our [Fonts and Icons FAQ](https://github.com/SAP/fundamental-styles/wiki/Fonts-and-Icons:-FAQs) for more information.
+### Project Confirguration
+This project does not contain fonts and icons - they must be added to your project separately. Download the @sap-theming liibrary. After adding fonts and icons to your project, include the following in your css:
+
+    @font-face {
+        font-family: "72";
+        src: url("~@sap-theming/theming-base-content/content/Base/baseLib/sap_base_fiori/fonts/72-Regular-full.woff")
+            format("woff");
+        font-weight: normal;
+        font-style: normal;
+    }
+    and
+
+    @font-face {
+        font-family: "SAP-icons";
+        src: url("~@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/fonts/SAP-icons.woff")
+            format("woff");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    html {
+      font-size: 16px;
+    }
+
+If you are not supporting IE11, the recommended format is `woff2`. If supporting IE11, use `woff`.
 
 ## Working with the Project
 
@@ -96,7 +121,7 @@ If you want to contribute, please check the [Contribution Guidelines](https://gi
 
 The `fundamental-styles` library follows [Semantic Versioning](https://semver.org/). These components strictly adhere to the `[MAJOR].[MINOR].[PATCH]` numbering system (also known as `[BREAKING].[FEATURE].[FIX]`).
 
-Merges to the `master` branch will be published as a prerelease. Pre-releases will include an **rc** version (_e.g._ `[MAJOR].[MINOR].[PATCH]-rc.[RC]`).
+Merges to the `main` branch will be published as a prerelease. Pre-releases will include an **rc** version (_e.g._ `[MAJOR].[MINOR].[PATCH]-rc.[RC]`).
 
 The following circumstances will be considered a MAJOR or BREAKING change:
 * Dropping existing classnames, css variables, color names, color groups, spacing parameters

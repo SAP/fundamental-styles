@@ -1,601 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Tree Tree With Expanded Level 1 1`] = `
-<section>
-  <ul
-    aria-label="Root Tree"
-    class="fd-tree expanded-level-1"
-    id="TREE1L1"
-    role="tree"
-  >
-    
-    
-    <li
-      aria-expanded="true"
-      aria-level="1"
-      class="fd-tree__item"
-      role="treeitem"
-    >
-      
-        
-      <div
-        class="fd-tree__item-container"
-      >
-        
-            
-        <button
-          aria-controls="TREE1L2"
-          aria-expanded="true"
-          aria-haspopup="true"
-          aria-label="Expand level 2"
-          class="fd-tree__expander is-expanded"
-          tabindex="0"
-        >
-          
-                
-          <i
-            class="fd-tree__icon sap-icon--navigation-down-arrow"
-            role="presentation"
-          />
-          
-            
-        </button>
-        
-            
-        <div
-          class="fd-tree__content"
-        >
-          
-                
-          <span
-            class="fd-tree__text"
-          >
-            Level 1
-          </span>
-          
-            
-        </div>
-        
-        
-      </div>
-      
-        
-      <ul
-        aria-hidden="false"
-        class="fd-tree"
-        id="TREE1L2"
-        role="group"
-      >
-        
-            
-        <li
-          aria-level="2"
-          class="fd-tree__item"
-          role="treeitem"
-        >
-          
-                
-          <div
-            class="fd-tree__item-container"
-          >
-            
-                    
-            <button
-              aria-label="Expander"
-              class="fd-tree__expander"
-              tabindex="0"
-            >
-              
-                        
-              <i
-                class="fd-tree__icon sap-icon--navigation-right-arrow"
-                role="presentation"
-              />
-              
-                    
-            </button>
-            
-                    
-            <div
-              class="fd-tree__content"
-            >
-              
-                        
-              <span
-                class="fd-tree__text"
-              >
-                Level 2
-              </span>
-              
-                    
-            </div>
-            
-                
-          </div>
-          
-            
-        </li>
-        
-            
-        <li
-          aria-level="2"
-          class="fd-tree__item"
-          role="treeitem"
-        >
-          
-                
-          <div
-            class="fd-tree__item-container"
-          >
-            
-                    
-            <div
-              class="fd-tree__content"
-            >
-              
-                        
-              <span
-                class="fd-tree__text"
-              >
-                Level 2
-              </span>
-              
-                    
-            </div>
-            
-                
-          </div>
-          
-            
-        </li>
-        
-            
-        <li
-          aria-level="2"
-          class="fd-tree__item"
-          role="treeitem"
-        >
-          
-                
-          <div
-            class="fd-tree__item-container"
-          >
-            
-                    
-            <div
-              class="fd-tree__content"
-            >
-              
-                        
-              <span
-                class="fd-tree__text"
-              >
-                Level 2
-              </span>
-              
-                    
-            </div>
-            
-                
-          </div>
-          
-            
-        </li>
-        
-        
-      </ul>
-      
-    
-    </li>
-    
-    
-    <li
-      aria-level="1"
-      class="fd-tree__item"
-      role="treeitem"
-    >
-      
-        
-      <div
-        class="fd-tree__item-container"
-      >
-        
-            
-        <div
-          class="fd-tree__content"
-        >
-          
-                
-          <span
-            class="fd-tree__text"
-          >
-            Level 1
-          </span>
-          
-            
-        </div>
-        
-        
-      </div>
-      
-    
-    </li>
-    
-    
-    <li
-      aria-level="1"
-      class="fd-tree__item"
-      role="treeitem"
-    >
-      
-        
-      <div
-        class="fd-tree__item-container"
-      >
-        
-            
-        <div
-          class="fd-tree__content"
-        >
-          
-                
-          <span
-            class="fd-tree__text"
-          >
-            Level 1 with very long text that does not wrap ... perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-          </span>
-          
-            
-        </div>
-        
-        
-      </div>
-      
-    
-    </li>
-    
-    
-    <li
-      aria-level="1"
-      class="fd-tree__item"
-      role="treeitem"
-    >
-      
-        
-      <div
-        class="fd-tree__item-container"
-      >
-        
-            
-        <div
-          class="fd-tree__content fd-tree__content--wrap"
-        >
-          
-                
-          <span
-            class="fd-tree__text"
-          >
-            Level 1 with very long text and wrapping behaviour ... perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-          </span>
-          
-            
-        </div>
-        
-        
-      </div>
-      
-    
-    </li>
-    
-
-  </ul>
-  
-
-
-  <br />
-  <br />
-  
-
-
-  <h3>
-    Compact Mode 
-  </h3>
-  
-
-
-  <ul
-    aria-label="Root Tree"
-    class="fd-tree fd-tree--compact expanded-level-1"
-    id="TREE1CL1"
-    role="tree"
-  >
-    
-    
-    <li
-      aria-expanded="true"
-      aria-level="1"
-      class="fd-tree__item"
-      role="treeitem"
-    >
-      
-        
-      <div
-        class="fd-tree__item-container"
-      >
-        
-            
-        <button
-          aria-controls="TREE1CL2"
-          aria-expanded="true"
-          aria-haspopup="true"
-          aria-label="Expand level 2"
-          class="fd-tree__expander is-expanded"
-          tabindex="0"
-        >
-          
-                
-          <i
-            class="fd-tree__icon sap-icon--navigation-down-arrow"
-            role="presentation"
-          />
-          
-            
-        </button>
-        
-            
-        <div
-          class="fd-tree__content"
-        >
-          
-                
-          <span
-            class="fd-tree__text"
-          >
-            Level 1
-          </span>
-          
-            
-        </div>
-        
-        
-      </div>
-      
-        
-      <ul
-        aria-hidden="false"
-        class="fd-tree"
-        id="TREE1CL2"
-        role="group"
-      >
-        
-            
-        <li
-          aria-level="2"
-          class="fd-tree__item"
-          role="treeitem"
-        >
-          
-                
-          <div
-            class="fd-tree__item-container"
-          >
-            
-                    
-            <button
-              aria-label="Expander"
-              class="fd-tree__expander"
-              tabindex="0"
-            >
-              
-                        
-              <i
-                class="fd-tree__icon sap-icon--navigation-right-arrow"
-                role="presentation"
-              />
-              
-                    
-            </button>
-            
-                    
-            <div
-              class="fd-tree__content"
-            >
-              
-                        
-              <span
-                class="fd-tree__text"
-              >
-                Level 2
-              </span>
-              
-                    
-            </div>
-            
-                
-          </div>
-          
-            
-        </li>
-        
-            
-        <li
-          aria-level="2"
-          class="fd-tree__item"
-          role="treeitem"
-        >
-          
-                
-          <div
-            class="fd-tree__item-container"
-          >
-            
-                    
-            <div
-              class="fd-tree__content"
-            >
-              
-                        
-              <span
-                class="fd-tree__text"
-              >
-                Level 2
-              </span>
-              
-                    
-            </div>
-            
-                
-          </div>
-          
-            
-        </li>
-        
-            
-        <li
-          aria-level="2"
-          class="fd-tree__item"
-          role="treeitem"
-        >
-          
-                
-          <div
-            class="fd-tree__item-container"
-          >
-            
-                    
-            <div
-              class="fd-tree__content"
-            >
-              
-                        
-              <span
-                class="fd-tree__text"
-              >
-                Level 2
-              </span>
-              
-                    
-            </div>
-            
-                
-          </div>
-          
-            
-        </li>
-        
-        
-      </ul>
-      
-    
-    </li>
-    
-    
-    <li
-      aria-level="1"
-      class="fd-tree__item"
-      role="treeitem"
-    >
-      
-        
-      <div
-        class="fd-tree__item-container"
-      >
-        
-            
-        <div
-          class="fd-tree__content"
-        >
-          
-                
-          <span
-            class="fd-tree__text"
-          >
-            Level 1
-          </span>
-          
-            
-        </div>
-        
-        
-      </div>
-      
-    
-    </li>
-    
-    
-    <li
-      aria-level="1"
-      class="fd-tree__item"
-      role="treeitem"
-    >
-      
-        
-      <div
-        class="fd-tree__item-container"
-      >
-        
-            
-        <div
-          class="fd-tree__content"
-        >
-          
-                
-          <span
-            class="fd-tree__text"
-          >
-            Level 1 with very long text that does not wrap ... perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-          </span>
-          
-            
-        </div>
-        
-        
-      </div>
-      
-    
-    </li>
-    
-    
-    <li
-      aria-level="1"
-      class="fd-tree__item"
-      role="treeitem"
-    >
-      
-        
-      <div
-        class="fd-tree__item-container"
-      >
-        
-            
-        <div
-          class="fd-tree__content fd-tree__content--wrap"
-        >
-          
-                
-          <span
-            class="fd-tree__text"
-          >
-            Level 1 with very long text and wrapping behaviour ... perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-          </span>
-          
-            
-        </div>
-        
-        
-      </div>
-      
-    
-    </li>
-    
-
-  </ul>
-  
-
-</section>
-`;
-
-exports[`Storyshots Components/Tree Tree With Expanded Level 2 And No Borders 1`] = `
+exports[`Storyshots Components/Tree Borderless 1`] = `
 <ul
   aria-label="Root Tree"
   class="fd-tree fd-tree--no-border expanded-level-2"
@@ -1168,7 +573,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 2 And No Borders 1`
 </ul>
 `;
 
-exports[`Storyshots Components/Tree Tree With Expanded Level 3 And Highlight Indicators 1`] = `
+exports[`Storyshots Components/Tree Highlight indicators 1`] = `
 <ul
   aria-label="Root Tree"
   class="fd-tree expanded-level-3"
@@ -1582,7 +987,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 3 And Highlight Ind
 </ul>
 `;
 
-exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Links 1`] = `
+exports[`Storyshots Components/Tree Navigable 1`] = `
 <section>
   <ul
     aria-label="Root Tree"
@@ -2334,7 +1739,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
 
 
   <h3>
-    Tree with Expanded Level 6 and Active Tree Items (All Tree Items) 
+    Level 6 expanded (active tree items) 
   </h3>
   
 
@@ -3084,7 +2489,7 @@ exports[`Storyshots Components/Tree Tree With Expanded Level 6 And Navigation Li
 </section>
 `;
 
-exports[`Storyshots Components/Tree Tree With No Data 1`] = `
+exports[`Storyshots Components/Tree No data 1`] = `
 <ul
   aria-label="Root Tree"
   class="fd-tree fd-tree--no-data"
@@ -3113,7 +2518,7 @@ exports[`Storyshots Components/Tree Tree With No Data 1`] = `
         <span
           class="fd-tree__text"
         >
-          No Data
+          No data
         </span>
         
             
@@ -3129,10 +2534,605 @@ exports[`Storyshots Components/Tree Tree With No Data 1`] = `
 </ul>
 `;
 
-exports[`Storyshots Components/Tree Tree With Selection 1`] = `
+exports[`Storyshots Components/Tree Primary 1`] = `
+<section>
+  <ul
+    aria-label="Root Tree"
+    class="fd-tree expanded-level-1"
+    id="TREE1L1"
+    role="tree"
+  >
+    
+    
+    <li
+      aria-expanded="true"
+      aria-level="1"
+      class="fd-tree__item"
+      role="treeitem"
+    >
+      
+        
+      <div
+        class="fd-tree__item-container"
+      >
+        
+            
+        <button
+          aria-controls="TREE1L2"
+          aria-expanded="true"
+          aria-haspopup="true"
+          aria-label="Expand level 2"
+          class="fd-tree__expander is-expanded"
+          tabindex="0"
+        >
+          
+                
+          <i
+            class="fd-tree__icon sap-icon--navigation-down-arrow"
+            role="presentation"
+          />
+          
+            
+        </button>
+        
+            
+        <div
+          class="fd-tree__content"
+        >
+          
+                
+          <span
+            class="fd-tree__text"
+          >
+            Level 1
+          </span>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+        
+      <ul
+        aria-hidden="false"
+        class="fd-tree"
+        id="TREE1L2"
+        role="group"
+      >
+        
+            
+        <li
+          aria-level="2"
+          class="fd-tree__item"
+          role="treeitem"
+        >
+          
+                
+          <div
+            class="fd-tree__item-container"
+          >
+            
+                    
+            <button
+              aria-label="Expander"
+              class="fd-tree__expander"
+              tabindex="0"
+            >
+              
+                        
+              <i
+                class="fd-tree__icon sap-icon--navigation-right-arrow"
+                role="presentation"
+              />
+              
+                    
+            </button>
+            
+                    
+            <div
+              class="fd-tree__content"
+            >
+              
+                        
+              <span
+                class="fd-tree__text"
+              >
+                Level 2
+              </span>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </li>
+        
+            
+        <li
+          aria-level="2"
+          class="fd-tree__item"
+          role="treeitem"
+        >
+          
+                
+          <div
+            class="fd-tree__item-container"
+          >
+            
+                    
+            <div
+              class="fd-tree__content"
+            >
+              
+                        
+              <span
+                class="fd-tree__text"
+              >
+                Level 2
+              </span>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </li>
+        
+            
+        <li
+          aria-level="2"
+          class="fd-tree__item"
+          role="treeitem"
+        >
+          
+                
+          <div
+            class="fd-tree__item-container"
+          >
+            
+                    
+            <div
+              class="fd-tree__content"
+            >
+              
+                        
+              <span
+                class="fd-tree__text"
+              >
+                Level 2
+              </span>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </li>
+        
+        
+      </ul>
+      
+    
+    </li>
+    
+    
+    <li
+      aria-level="1"
+      class="fd-tree__item"
+      role="treeitem"
+    >
+      
+        
+      <div
+        class="fd-tree__item-container"
+      >
+        
+            
+        <div
+          class="fd-tree__content"
+        >
+          
+                
+          <span
+            class="fd-tree__text"
+          >
+            Level 1
+          </span>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </li>
+    
+    
+    <li
+      aria-level="1"
+      class="fd-tree__item"
+      role="treeitem"
+    >
+      
+        
+      <div
+        class="fd-tree__item-container"
+      >
+        
+            
+        <div
+          class="fd-tree__content"
+        >
+          
+                
+          <span
+            class="fd-tree__text"
+          >
+            Level 1 with very long text that does not wrap ... perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+          </span>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </li>
+    
+    
+    <li
+      aria-level="1"
+      class="fd-tree__item"
+      role="treeitem"
+    >
+      
+        
+      <div
+        class="fd-tree__item-container"
+      >
+        
+            
+        <div
+          class="fd-tree__content fd-tree__content--wrap"
+        >
+          
+                
+          <span
+            class="fd-tree__text"
+          >
+            Level 1 with very long text and wrapping behaviour ... perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+          </span>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </li>
+    
+
+  </ul>
+  
+
+
+  <br />
+  <br />
+  
+
+
+  <h3>
+    Compact mode 
+  </h3>
+  
+
+
+  <ul
+    aria-label="Root Tree"
+    class="fd-tree fd-tree--compact expanded-level-1"
+    id="TREE1CL1"
+    role="tree"
+  >
+    
+    
+    <li
+      aria-expanded="true"
+      aria-level="1"
+      class="fd-tree__item"
+      role="treeitem"
+    >
+      
+        
+      <div
+        class="fd-tree__item-container"
+      >
+        
+            
+        <button
+          aria-controls="TREE1CL2"
+          aria-expanded="true"
+          aria-haspopup="true"
+          aria-label="Expand level 2"
+          class="fd-tree__expander is-expanded"
+          tabindex="0"
+        >
+          
+                
+          <i
+            class="fd-tree__icon sap-icon--navigation-down-arrow"
+            role="presentation"
+          />
+          
+            
+        </button>
+        
+            
+        <div
+          class="fd-tree__content"
+        >
+          
+                
+          <span
+            class="fd-tree__text"
+          >
+            Level 1
+          </span>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+        
+      <ul
+        aria-hidden="false"
+        class="fd-tree"
+        id="TREE1CL2"
+        role="group"
+      >
+        
+            
+        <li
+          aria-level="2"
+          class="fd-tree__item"
+          role="treeitem"
+        >
+          
+                
+          <div
+            class="fd-tree__item-container"
+          >
+            
+                    
+            <button
+              aria-label="Expander"
+              class="fd-tree__expander"
+              tabindex="0"
+            >
+              
+                        
+              <i
+                class="fd-tree__icon sap-icon--navigation-right-arrow"
+                role="presentation"
+              />
+              
+                    
+            </button>
+            
+                    
+            <div
+              class="fd-tree__content"
+            >
+              
+                        
+              <span
+                class="fd-tree__text"
+              >
+                Level 2
+              </span>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </li>
+        
+            
+        <li
+          aria-level="2"
+          class="fd-tree__item"
+          role="treeitem"
+        >
+          
+                
+          <div
+            class="fd-tree__item-container"
+          >
+            
+                    
+            <div
+              class="fd-tree__content"
+            >
+              
+                        
+              <span
+                class="fd-tree__text"
+              >
+                Level 2
+              </span>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </li>
+        
+            
+        <li
+          aria-level="2"
+          class="fd-tree__item"
+          role="treeitem"
+        >
+          
+                
+          <div
+            class="fd-tree__item-container"
+          >
+            
+                    
+            <div
+              class="fd-tree__content"
+            >
+              
+                        
+              <span
+                class="fd-tree__text"
+              >
+                Level 2
+              </span>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </li>
+        
+        
+      </ul>
+      
+    
+    </li>
+    
+    
+    <li
+      aria-level="1"
+      class="fd-tree__item"
+      role="treeitem"
+    >
+      
+        
+      <div
+        class="fd-tree__item-container"
+      >
+        
+            
+        <div
+          class="fd-tree__content"
+        >
+          
+                
+          <span
+            class="fd-tree__text"
+          >
+            Level 1
+          </span>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </li>
+    
+    
+    <li
+      aria-level="1"
+      class="fd-tree__item"
+      role="treeitem"
+    >
+      
+        
+      <div
+        class="fd-tree__item-container"
+      >
+        
+            
+        <div
+          class="fd-tree__content"
+        >
+          
+                
+          <span
+            class="fd-tree__text"
+          >
+            Level 1 with very long text that does not wrap ... perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+          </span>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </li>
+    
+    
+    <li
+      aria-level="1"
+      class="fd-tree__item"
+      role="treeitem"
+    >
+      
+        
+      <div
+        class="fd-tree__item-container"
+      >
+        
+            
+        <div
+          class="fd-tree__content fd-tree__content--wrap"
+        >
+          
+                
+          <span
+            class="fd-tree__text"
+          >
+            Level 1 with very long text and wrapping behaviour ... perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+          </span>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </li>
+    
+
+  </ul>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Tree Selection 1`] = `
 <section>
   <h3>
-    Multi Selection Left
+    Left multi-selection
   </h3>
   
 
@@ -3539,7 +3539,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
 
 
   <h3>
-    Multi Selection Right, Compact Mode
+    Right multi-selection (compact)
   </h3>
   
 
@@ -3947,7 +3947,7 @@ exports[`Storyshots Components/Tree Tree With Selection 1`] = `
 
 
   <h3>
-    Single Selection Left
+    Left single selection
   </h3>
   
 

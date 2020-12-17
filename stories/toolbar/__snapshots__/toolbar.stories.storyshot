@@ -3,7 +3,7 @@
 exports[`Storyshots Components/Toolbar Alignment 1`] = `
 <section>
   <h3>
-    Left and Right Aligned Content
+    Left and right-aligned
   </h3>
   
 
@@ -35,7 +35,7 @@ exports[`Storyshots Components/Toolbar Alignment 1`] = `
   
 
   <h3>
-    Left Aligned Content
+    Left-aligned
   </h3>
   
 
@@ -62,7 +62,7 @@ exports[`Storyshots Components/Toolbar Alignment 1`] = `
   
 
   <h3>
-    Centered Content
+    Centered
   </h3>
   
 
@@ -79,7 +79,7 @@ exports[`Storyshots Components/Toolbar Alignment 1`] = `
     <button
       class="fd-button fd-button--compact"
     >
-      Centered Content
+      Centered
     </button>
     
     
@@ -92,7 +92,7 @@ exports[`Storyshots Components/Toolbar Alignment 1`] = `
   
 
   <h3>
-    Right Aligned Content
+    Right-aligned
   </h3>
   
 
@@ -109,7 +109,7 @@ exports[`Storyshots Components/Toolbar Alignment 1`] = `
     <button
       class="fd-button fd-button--compact"
     >
-      Right Content
+      Right-aligned
     </button>
     
 
@@ -117,7 +117,7 @@ exports[`Storyshots Components/Toolbar Alignment 1`] = `
   
 
   <h3>
-    Left, Centered, Right Aliged Content
+    Left, center, and right-aligned
   </h3>
   
 
@@ -129,7 +129,7 @@ exports[`Storyshots Components/Toolbar Alignment 1`] = `
     <button
       class="fd-button fd-button--compact"
     >
-      Left Content
+      Left-aligned
     </button>
     
     
@@ -141,7 +141,7 @@ exports[`Storyshots Components/Toolbar Alignment 1`] = `
     <button
       class="fd-button fd-button--compact"
     >
-      Centered Content
+      Centered
     </button>
     
     
@@ -153,7 +153,7 @@ exports[`Storyshots Components/Toolbar Alignment 1`] = `
     <button
       class="fd-button fd-button--compact"
     >
-      Right Content
+      Right-aligned
     </button>
     
 
@@ -161,7 +161,7 @@ exports[`Storyshots Components/Toolbar Alignment 1`] = `
   
 
   <h3>
-    Spacers share the free horizontal space equally, thus content centering is not as precise as in Bar
+    Spacers
   </h3>
   
 
@@ -173,7 +173,7 @@ exports[`Storyshots Components/Toolbar Alignment 1`] = `
     <button
       class="fd-button fd-button--compact"
     >
-      Left Content
+      Left-aligned
     </button>
     
     
@@ -185,7 +185,7 @@ exports[`Storyshots Components/Toolbar Alignment 1`] = `
     <button
       class="fd-button fd-button--compact"
     >
-      Inside Content
+      Inside
     </button>
     
     
@@ -197,7 +197,7 @@ exports[`Storyshots Components/Toolbar Alignment 1`] = `
     <button
       class="fd-button fd-button--compact"
     >
-      Inside Content
+      Inside
     </button>
     
     
@@ -209,7 +209,7 @@ exports[`Storyshots Components/Toolbar Alignment 1`] = `
     <button
       class="fd-button fd-button--compact"
     >
-      Right Content
+      Right-aligned
     </button>
     
 
@@ -270,97 +270,6 @@ exports[`Storyshots Components/Toolbar Alignment 1`] = `
   
 
 </section>
-`;
-
-exports[`Storyshots Components/Toolbar Basic 1`] = `
-<div
-  class="fd-toolbar fd-toolbar--cozy"
->
-  
-    
-  <span
-    class="fd-toolbar__spacer"
-  >
-     
-  </span>
-  
-    
-  <button
-    class="fd-button fd-button--transparent"
-  >
-    New
-  </button>
-  
-    
-  <button
-    class="fd-button fd-button--transparent"
-  >
-    Open
-  </button>
-  
-    
-  <button
-    class="fd-button fd-button--transparent"
-  >
-    Edit
-  </button>
-  
-    
-  <button
-    class="fd-button fd-button--transparent"
-  >
-    Delete
-  </button>
-  
-    
-  <span
-    class="fd-toolbar__separator"
-  />
-  
-    
-  <button
-    aria-label="Survey"
-    class="fd-button fd-button--transparent"
-  >
-    
-        
-    <i
-      class="sap-icon--survey"
-    />
-    
-    
-  </button>
-  
-    
-  <button
-    aria-label="Pool"
-    class="fd-button fd-button--transparent"
-  >
-    
-        
-    <i
-      class="sap-icon--pool"
-    />
-    
-    
-  </button>
-  
-    
-  <button
-    aria-label="Chart"
-    class="fd-button fd-button--transparent"
-  >
-    
-        
-    <i
-      class="sap-icon--pie-chart"
-    />
-    
-    
-  </button>
-  
-
-</div>
 `;
 
 exports[`Storyshots Components/Toolbar Overflow 1`] = `
@@ -682,7 +591,98 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Toolbar Separator 1`] = `
+exports[`Storyshots Components/Toolbar Primary 1`] = `
+<div
+  class="fd-toolbar fd-toolbar--cozy"
+>
+  
+    
+  <span
+    class="fd-toolbar__spacer"
+  >
+     
+  </span>
+  
+    
+  <button
+    class="fd-button fd-button--transparent"
+  >
+    New
+  </button>
+  
+    
+  <button
+    class="fd-button fd-button--transparent"
+  >
+    Open
+  </button>
+  
+    
+  <button
+    class="fd-button fd-button--transparent"
+  >
+    Edit
+  </button>
+  
+    
+  <button
+    class="fd-button fd-button--transparent"
+  >
+    Delete
+  </button>
+  
+    
+  <span
+    class="fd-toolbar__separator"
+  />
+  
+    
+  <button
+    aria-label="Survey"
+    class="fd-button fd-button--transparent"
+  >
+    
+        
+    <i
+      class="sap-icon--survey"
+    />
+    
+    
+  </button>
+  
+    
+  <button
+    aria-label="Pool"
+    class="fd-button fd-button--transparent"
+  >
+    
+        
+    <i
+      class="sap-icon--pool"
+    />
+    
+    
+  </button>
+  
+    
+  <button
+    aria-label="Chart"
+    class="fd-button fd-button--transparent"
+  >
+    
+        
+    <i
+      class="sap-icon--pie-chart"
+    />
+    
+    
+  </button>
+  
+
+</div>
+`;
+
+exports[`Storyshots Components/Toolbar Separators 1`] = `
 <section>
   
 
@@ -784,93 +784,6 @@ exports[`Storyshots Components/Toolbar Separator 1`] = `
   
 
 </section>
-`;
-
-exports[`Storyshots Components/Toolbar Sizes 1`] = `
-<div
-  class="fd-toolbar fd-toolbar--solid fd-toolbar--cozy"
->
-  
-    
-  <span>
-    Products (420)
-  </span>
-  
-    
-  <button
-    class="fd-button fd-button--compact fd-button--transparent"
-  >
-    Create
-  </button>
-  
-    
-  <span
-    class="fd-toolbar__spacer"
-  />
-  
-    
-  <button
-    class="fd-button fd-button--positive"
-  >
-    Accept
-  </button>
-  
-    
-  <button
-    class="fd-button fd-button--reject"
-  >
-    Reject
-  </button>
-  
-    
-  <span
-    class="fd-toolbar__separator"
-  />
-  
-    
-  <button
-    aria-label="Survey"
-    class="fd-button fd-button--compact fd-button--transparent"
-  >
-    
-        
-    <i
-      class="sap-icon--survey"
-    />
-    
-    
-  </button>
-  
-    
-  <button
-    aria-label="Pool"
-    class="fd-button fd-button--compact fd-button--transparent"
-  >
-    
-        
-    <i
-      class="sap-icon--pool"
-    />
-    
-    
-  </button>
-  
-    
-  <button
-    aria-label="Chart"
-    class="fd-button fd-button--compact fd-button--transparent"
-  >
-    
-        
-    <i
-      class="sap-icon--pie-chart"
-    />
-    
-    
-  </button>
-  
-
-</div>
 `;
 
 exports[`Storyshots Components/Toolbar Types 1`] = `

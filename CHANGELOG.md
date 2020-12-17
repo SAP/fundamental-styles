@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.1-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.5...v0.14.1-rc.6) (2020-12-17)
+
+### [0.14.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.4...v0.14.1-rc.5) (2020-12-17)
+
+### [0.14.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.3...v0.14.1-rc.4) (2020-12-17)
+
+### [0.14.1-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.2...v0.14.1-rc.3) (2020-12-17)
+
+### [0.14.1-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.1...v0.14.1-rc.2) (2020-12-15)
+
+### [0.14.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.0...v0.14.1-rc.1) (2020-12-15)
+
+### [0.14.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.14.0...v0.14.1-rc.0) (2020-12-15)
+
+## [0.14.0](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.14...v0.14.0) (2020-12-15)
+
+## [0.14.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.13...v0.14.0-rc.14) (2020-12-15)
+
 ## [0.14.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.14.0-rc.12...v0.14.0-rc.13) (2020-12-14)
 
 
@@ -3293,7 +3311,7 @@ Semantic icons are added separately: <i class="sap-icon--message-error"></i>
 ### Bug Fixes
 
 * radio button alignment in RTL mode ([115ff32](https://github.com/SAP/fundamental-styles/commit/115ff32))
-* revert accidental pushes to master ([#751](https://github.com/SAP/fundamental-styles/issues/751)) ([fbac0fe](https://github.com/SAP/fundamental-styles/commit/fbac0fe))
+* revert accidental pushes to main ([#751](https://github.com/SAP/fundamental-styles/issues/751)) ([fbac0fe](https://github.com/SAP/fundamental-styles/commit/fbac0fe))
 
 
 
