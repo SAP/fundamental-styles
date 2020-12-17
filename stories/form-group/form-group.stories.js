@@ -2,10 +2,11 @@ export default {
     title: 'Components/Forms/Form Group',
     parameters: {
         description: `
-        Form groups are used to assemble form elements with labels, messages, and help containers.
+Form groups are used to assemble form elements with labels, messages, and help containers.
 
-        These components can be used alone. For example, the 'form__item' element with the label and control could  
-        be used without the full form group since not every form field will need error messages.`,
+These components can be used alone. For example, the \`form__item\` element with the label and control could be used without the full form group since not every form field will need error messages.
+        
+        `,
         tags: ['f3', 'a11y', 'theme'],
         components: ['form-layout-grid', 'form-group', 'form-item', 'form-label', 'input']
     }
@@ -20,6 +21,13 @@ export const primary = () => `<div class="fd-form-group">
 `;
 
 primary.storyName = 'Default';
+primary.parameters = {
+    docs: {
+        storyDescription: `
+The default form group component displays an inline label and an input field that is highlighted in blue when selected.
+`
+    }
+};
 
 export const compact = () => `<div class="fd-form-group">
         <div class="fd-form-item">
@@ -29,6 +37,15 @@ export const compact = () => `<div class="fd-form-group">
     </div>
 `;
 
+compact.storyName = 'Compact';
+compact.parameters = {
+    docs: {
+        storyDescription: `
+Form group can be displayed in compact mode, which is ideal for larger desktop screens. To display a compact form group, add the \`--compact\` modifier class to the \`fd-input\` element.
+`
+    }
+};
+
 export const required = () => `<div class="fd-form-group">
         <div class="fd-form-item">
             <label class="fd-form-label fd-form-label--required" for="input-1c">Required Input:</label>
@@ -36,6 +53,15 @@ export const required = () => `<div class="fd-form-group">
         </div>
     </div>
 `;
+
+required.storyName = 'Required';
+required.parameters = {
+    docs: {
+        storyDescription: `
+To indicate to the user that it’s required to fill out an input field, add the \`--required\` modifier class to the \`fd-form-label\` element.
+`
+    }
+};
 
 export const groupHeader = () =>
     `<div class="fd-form-group" role="group" aria-labelledby="basicGroupHeader">
@@ -48,14 +74,15 @@ export const groupHeader = () =>
         </div>
     </div>
 `;
+
+groupHeader.storyName = 'Group header';
 groupHeader.parameters = {
     docs: {
         storyDescription: `
-To provide a group header, use the class <code class="docs-code">fd-form-group\\_\\_header</code> and wrap the header text in <code class="docs-code">fd-form-group\\_\\_header-text</code>.
+Form groups can be grouped together under a header with the \`fd-form-group__header\` class.
 `
     }
 };
-
 
 export const groupHeaderCompact = () =>
     `<div class="fd-form-group" role="group" aria-labelledby="compactGroupHeader">
@@ -68,11 +95,11 @@ export const groupHeaderCompact = () =>
         </div>
     </div>
 `;
-groupHeaderCompact.storyName = 'Compact Group Header';
+groupHeaderCompact.storyName = 'Group header (compact)';
 groupHeaderCompact.parameters = {
     docs: {
         storyDescription: `
-A compact group header can be displayed by adding the <code class="docs-code">--compact</code> modifier class to the element.
+Form group headers can be displayed in compact mode. To display compact group headers, add the \`--compact\` modifier class to the \`fd-form-group__header\` element.
         `
     }
 };
@@ -170,12 +197,13 @@ export const groupHeaderInFormGrid = () =>
         </div>
     </div>
 `;
-groupHeaderInFormGrid.storyName = 'Group Header in Form Grid';
+groupHeaderInFormGrid.storyName = 'Group header (form grid)';
 groupHeaderInFormGrid.parameters = {
     docs: {
         storyDescription: `
-When used in a form grid, paddings are added to the groups. When using \`fd-form-group\`, add the element \`fd-col__form-group\` at the same level
-for the styles to reflect properly. Similarly, when using \`fd-form-item\`, add the element \`fd-row__form-item\` at the same level.
+When group headers are displayed in a **Form Grid**, paddings are added to the groups. 
+
+To display group headers in a form grid, add the \`fd-col__form-group\` class at the same level as \`fd-form-group\` for the styles to reflect properly. Similarly, when using \`fd-form-item\`, add the \`fd-row__form-item\` element at the same level.   
         `
     }
 };
