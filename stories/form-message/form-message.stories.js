@@ -2,18 +2,21 @@ export default {
     title: 'Components/Forms/Form Message',
     parameters: {
         description: `
-Input States
+A form message can appear as a result of interacting with an input field. It essentially sends semantic feedback to the user, informing them whether the data they entered was successful, erroneous, needs further attention, or more.
 
-The state of the input field can reflect the validity of the data entered, whether the input data is editable or disabled.
+##Highlight indicators
+Form messages can be displayed in various semantic states by adding the following classes to the \`fd-input\` element:
 
-* **Default**: The field is editable but no validation has occurred
-* **Success**: The data format entered has been validated and it's correct, such as an email address.
-* **Error**: The data entered is not valid and must be corrected.
-* **Warning**: The data entered is formatted correctly but there are other issues are problematic but will not stop the user from moving forward.
-* **Disabled**: Indicates the field is not editable, commonly used when the field is dependent on a previous entry/selection within the form.
-* **Read Only**: Used to display static information in the context of a form.
-
-Along with Error and Warning, error messages should be displayed below the field so the user can correct the error and move forward.`,
+States | Class | Description
+:----- | :---- | :----------
+Default | _n/a_ | The field is editable, but no validation has occurred.
+Success | \`is-success\` | The data format entered has been validated and is correct, such as an email address.
+Error |\`is-error\` | The data entered is not valid and must be corrected, stopping the user from moving forward.
+Warning | \`is-warning\` | The data entered is formatted correctly but there are other issues that are problematic. However, these issues will not stop the user from moving forward.
+Disabled | \`is-disabled\` | Indicates the field is not editable. This state is commonly used when the field is dependent on a previous entry/selection within the form.
+Read-only&nbsp;&nbsp;&nbsp; | \`is-readonly\`&nbsp;&nbsp;&nbsp; | Used to display static information in the context of a form.
+        
+        `,
         tags: ['f3', 'a11y', 'theme'],
         components: ['form-message', 'form-item', 'form-label', 'input', 'popover']
     }
@@ -33,6 +36,14 @@ export const success = () => `<div class="fd-form-item">
     </div>
 `;
 
+success.storyName = 'Success';
+success.parameters = {
+    docs: {
+        storyDescription: `To display a success message below an input field, add the \`--success\` modifier class to the \`fd-form-message\` element.
+        `
+    }
+};
+
 export const error = () => `<div class="fd-form-item">
         <label class="fd-form-label" for="input-1cc">Error input:</label>
         <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
@@ -46,6 +57,14 @@ export const error = () => `<div class="fd-form-item">
         </div>
     </div>
 `;
+
+error.storyName = 'Error';
+error.parameters = {
+    docs: {
+        storyDescription: `To display an error message below an input field, add the \`--error\` modifier class to the \`fd-form-message\` element.
+        `
+    }
+};
 
 export const warning = () => `<div class="fd-form-item">
         <label class="fd-form-label" for="input-1cc">Warning input:</label>
@@ -61,6 +80,14 @@ export const warning = () => `<div class="fd-form-item">
     </div>
 `;
 
+warning.storyName = 'Warning';
+warning.parameters = {
+    docs: {
+        storyDescription: `To display a warning message below an input field, add the \`--warning\` modifier class to the \`fd-form-message\` element.
+        `
+    }
+};
+
 export const information = () => `<div class="fd-form-item">
         <label class="fd-form-label" for="input-1ee">Information input:</label>
         <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
@@ -74,3 +101,11 @@ export const information = () => `<div class="fd-form-item">
         </div>
     </div>
 `;
+
+information.storyName = 'Information';
+information.parameters = {
+    docs: {
+        storyDescription: `To display an information message below an input field, add the \`--information\` modifier class to the \`fd-form-message\` element.
+        `
+    }
+};
