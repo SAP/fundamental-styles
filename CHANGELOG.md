@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.1-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.10...v0.14.1-rc.11) (2020-12-18)
+
+
+### Features
+
+* more control over no gap for grid layout ([#1970](https://github.com/SAP/fundamental-styles/issues/1970)) ([296ad14](https://github.com/SAP/fundamental-styles/commit/296ad145ecec2b7bc80fe01ef9ab2978b82593cf))
+
+
+### Bug Fixes
+
+* outline color of breakcrumb icon overflow ([#1969](https://github.com/SAP/fundamental-styles/issues/1969)) ([b1d6f50](https://github.com/SAP/fundamental-styles/commit/b1d6f50272b90716155622f50f84820ad68a1870))
+
 ### [0.14.1-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.9...v0.14.1-rc.10) (2020-12-18)
 
 
