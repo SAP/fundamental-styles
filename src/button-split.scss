@@ -78,10 +78,9 @@ $fd-button-split-margin: 0.125rem / 2;
   }
 
   &__text {
+    @include fd-ellipsis();
+
     max-width: 9.75rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     display: block;
 
     &--compact {
