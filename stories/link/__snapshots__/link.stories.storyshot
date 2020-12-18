@@ -17,6 +17,10 @@ exports[`Storyshots Components/Link Types 1`] = `
   <br />
   
 
+  <br />
+  <br />
+  
+
   <a
     class="fd-link fd-link--emphasized"
     href="#"
@@ -47,6 +51,7 @@ exports[`Storyshots Components/Link Types 1`] = `
     class="fd-link"
   >
     Disabled link
+
   </a>
   
 
@@ -83,7 +88,7 @@ exports[`Storyshots Components/Link Types 1`] = `
     Right icon link 
     
     <span
-      class="sap-icon--slim-arrow-right sap-icon--s"
+      class="sap-icon--slim-arrow-right sap-icon--s fd-link__icon"
     />
     
 
@@ -102,7 +107,7 @@ exports[`Storyshots Components/Link Types 1`] = `
     
     
     <span
-      class="sap-icon--slim-arrow-left sap-icon--s"
+      class="sap-icon--slim-arrow-left sap-icon--s fd-link__icon"
     />
      
     Left icon link
