@@ -13,7 +13,7 @@ $fd-breadcrumb-separator-color: var(--sapContent_LabelColor);
 $fd-breadcrumb-item-color: var(--sapContent_LabelColor);
 $block: #{$fd-namespace}-breadcrumb;
 $fd-breadcrumb-border-top-radius: 0.125rem !default;
-
+$fd-breadcrumb-overflow-active-color: var(--sapLink_Active_Color);
 .#{$block} {
 
   // BLOCK BASE *******************************************
@@ -54,6 +54,30 @@ $fd-breadcrumb-border-top-radius: 0.125rem !default;
 
     display: inline-block;
     transition: all $fd-animation-speed ease-in;
+
+    &:focus {
+      .#{$block}__dropdown-icon {
+        color: $fd-breadcrumb-overflow-active-color;
+      }
+    }
+
+    &:active {
+      .#{$block}__dropdown-icon {
+        color: $fd-breadcrumb-overflow-active-color;
+      }
+
+      &:hover {
+        .#{$block}__dropdown-icon {
+          color: $fd-breadcrumb-overflow-active-color;
+        }
+      }
+    }
+
+    &:hover {
+      .#{$block}__dropdown-icon {
+        color: var(--sapLink_Hover_Color);
+      }
+    }
   }
 
   &__dropdown-icon {
