@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.1-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.9...v0.14.1-rc.10) (2020-12-18)
+
+
+### Bug Fixes
+
+* add fd-title to global styles ([#1974](https://github.com/SAP/fundamental-styles/issues/1974)) ([b5cccd7](https://github.com/SAP/fundamental-styles/commit/b5cccd78707e55756e36bbdc5796a149aaf7d454))
+
 ### [0.14.1-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.8...v0.14.1-rc.9) (2020-12-18)
 
 ### [0.14.1-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.7...v0.14.1-rc.8) (2020-12-17)
