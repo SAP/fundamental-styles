@@ -1427,9 +1427,9 @@ exports[`Storyshots Components/Button Split menu button 1`] = `
   
     <button
       aria-label="button"
-      class="fd-button"
+      class="fd-button fd-button-split__text"
     >
-      Button with text
+      Button with a lot of text
     </button>
     
   
