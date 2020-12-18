@@ -830,7 +830,245 @@ exports[`Storyshots Layouts/Layout Grid Nesting 1`] = `
 
 exports[`Storyshots Layouts/Layout Grid No Gap 1`] = `
 <div
-  class="fd-container fd-container--no-gap"
+  class="fd-container fd-container--no-horizontal-gap fd-container--no-vertical-gap"
+>
+  
+  
+  <div
+    class="fd-row"
+  >
+    
+    
+    <div
+      class="fd-col fd-col--8"
+    >
+      
+        
+      <div
+        class="docs-layout-grid-bg docs-layout-grid-bg--color-1"
+      >
+        
+            8 col no gap
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-col fd-col--4"
+    >
+      
+        
+      <div
+        class="docs-layout-grid-bg docs-layout-grid-bg--color-2"
+      >
+        
+            4 col no gap
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-col fd-col--6"
+    >
+      
+        
+      <div
+        class="docs-layout-grid-bg docs-layout-grid-bg--color-3"
+      >
+        
+            6 col no gap
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-col fd-col--6"
+    >
+      
+        
+      <div
+        class="docs-layout-grid-bg docs-layout-grid-bg--color-4"
+      >
+        
+            6 col no gap
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-col fd-col--4"
+    >
+      
+        
+      <div
+        class="docs-layout-grid-bg docs-layout-grid-bg--color-5"
+      >
+        
+            4 col no gap
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-col fd-col--8"
+    >
+      
+        
+      <div
+        class="docs-layout-grid-bg docs-layout-grid-bg--color-6"
+      >
+        
+            8 col no gap
+        
+      </div>
+      
+    
+    </div>
+    
+  
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Layouts/Layout Grid No Horizontal Gap 1`] = `
+<div
+  class="fd-container fd-container--no-horizontal-gap"
+>
+  
+  
+  <div
+    class="fd-row"
+  >
+    
+    
+    <div
+      class="fd-col fd-col--8"
+    >
+      
+        
+      <div
+        class="docs-layout-grid-bg docs-layout-grid-bg--color-1"
+      >
+        
+            8 col no gap
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-col fd-col--4"
+    >
+      
+        
+      <div
+        class="docs-layout-grid-bg docs-layout-grid-bg--color-2"
+      >
+        
+            4 col no gap
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-col fd-col--6"
+    >
+      
+        
+      <div
+        class="docs-layout-grid-bg docs-layout-grid-bg--color-3"
+      >
+        
+            6 col no gap
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-col fd-col--6"
+    >
+      
+        
+      <div
+        class="docs-layout-grid-bg docs-layout-grid-bg--color-4"
+      >
+        
+            6 col no gap
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-col fd-col--4"
+    >
+      
+        
+      <div
+        class="docs-layout-grid-bg docs-layout-grid-bg--color-5"
+      >
+        
+            4 col no gap
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-col fd-col--8"
+    >
+      
+        
+      <div
+        class="docs-layout-grid-bg docs-layout-grid-bg--color-6"
+      >
+        
+            8 col no gap
+        
+      </div>
+      
+    
+    </div>
+    
+  
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Layouts/Layout Grid No Vertical Gap 1`] = `
+<div
+  class="fd-container fd-container--no-vertical-gap"
 >
   
   
