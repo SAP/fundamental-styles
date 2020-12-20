@@ -5,93 +5,69 @@ export default {
         elements, and automatic UI rendering. Should be used in combination with the popover or dialog components`,
         docs: { iframeHeight: 500 },
         tags: ['f3', 'a11y', 'theme'],
-        components: ['quick-view', 'bar', 'button', 'popover', 'dialog', 'avatar', 'icon', 'title', 'link']
+        components: ['quick-view', 'bar', 'button', 'popover', 'dialog', 'avatar', 'icon', 'title', 'link', 'form-layout-grid', 'form-group', 'form-item', 'form-label', 'input']
     }
 };
 
 export const Popover = () => `<div class="fd-popover">
     <div class="fd-popover__body" aria-hidden="false" id="popoverA1">
         <div class="fd-quick-view">
-            <div class="fd-quick-view__header">
-                <div class="fd-bar fd-bar--header">
-                    <div class="fd-bar__middle">
-                        <div class="fd-bar__element">Company</div>
-                    </div>
+            <div class="fd-bar fd-bar--header">
+                <div class="fd-bar__middle">
+                    <div class="fd-bar__element">Company</div>
                 </div>
             </div>
 
             <div class="fd-quick-view__content">
-                <div class="fd-quick-view__subheader">
-                    <span class="fd-avatar fd-avatar--s" role="presentation">
-                        <i role="presentation" class="fd-avatar__icon sap-icon--building"></i>
-                    </span>
-                    
-                    <div class="fd-quick-view__subheader-text">
-                        <div class="fd-quick-view__title">
+                <div class="fd-bar fd-bar--header-with-subheader">
+                    <div class="fd-bar__left">
+                        <span class="fd-avatar fd-avatar--s" role="presentation">
+                            <i role="presentation" class="fd-avatar__icon sap-icon--building"></i>
+                        </span>
+    
+                        <div class="fd-quick-view__subheader-text">
                             <h5 class="fd-title fd-title--h5">Company B</h5>
-                        </div>
-                        
-                        <div class="fd-quick-view__subtitle">
-                            Michael Adams
+    
+                            <div class="fd-quick-view__subtitle">
+                                Michael Adams
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="fd-quick-view__group">
-                    <div class="fd-quick-view__group-title">
-                        <h5 class="fd-title fd-title--h5">Contact Details</h5>
+    
+    
+                <div class="fd-form-group" role="group">
+                    <div class="fd-form-group__header" aria-labelledby="contactDetails">
+                        <h1 class="fd-form-group__header-text" id="contactDetails">Contact Details</h1>
                     </div>
-                    
-                    <div class="fd-quick-view__group-item">
-                        <div class="fd-quick-view__group-item-label">
-                            Phone
-                        </div>
-                        <div class="fd-quick-view__group-item-content">
-                            <a class="fd-link" href="tel:+1 605 555 5555">+1 605 555 5555</a>
-                        </div>
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">Phone</label>
+                        <a class="fd-link fd-input" href="tel:+1 605 555 5555">+1 605 555 5555</a>
                     </div>
-                    
-                    <div class="fd-quick-view__group-item">
-                        <div class="fd-quick-view__group-item-label">
-                            Address
-                        </div>
-                        <div class="fd-quick-view__group-item-content">
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">Address</label>
+                        <span class="fd-input">
                             781 Main Street <br>
                             Anytown, SD 57401, USA
-                        </div>
+                        </span>
                     </div>
                 </div>
                 
-                <div class="fd-quick-view__group">
-                    <div class="fd-quick-view__group-title">
-                        <h5 class="fd-title fd-title--h5">Main Contact</h5>
+                <div class="fd-form-group" role="group">
+                    <div class="fd-form-group__header" aria-labelledby="mainContact">
+                        <h1 class="fd-form-group__header-text" id="mainContact">Main Contact</h1>
                     </div>
-                    
-                    <div class="fd-quick-view__group-item">
-                        <div class="fd-quick-view__group-item-label">
-                            Name
-                        </div>
-                        <div class="fd-quick-view__group-item-content">
-                            Michael Adams
-                        </div>
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">Name</label>
+                        <span class="fd-input">Michael Adams</span>
                     </div>
-                    
-                    <div class="fd-quick-view__group-item">
-                        <div class="fd-quick-view__group-item-label">
-                            Mobile
-                        </div>
-                        <div class="fd-quick-view__group-item-content">
-                            <a class="fd-link" href="tel:+1 605 555 5555">+1 605 555 5555</a>
-                        </div>
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">Mobile</label>
+                        <a class="fd-link fd-input" href="tel:+1 605 555 5555">+1 605 555 5555</a>
                     </div>
-                    
-                    <div class="fd-quick-view__group-item">
-                        <div class="fd-quick-view__group-item-label">
-                            Phone
-                        </div>
-                        <div class="fd-quick-view__group-item-content">
-                            <a class="fd-link" href="tel:+1 316 555 5555">+1 316 555 5555</a>
-                        </div>
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">Mobile</label>
+                        <a class="fd-link fd-input" href="tel:+1 316 555 5555">+1 316 555 5555</a>
                     </div>
                 </div>
             </div>
@@ -121,13 +97,13 @@ export const Dialog = () => `<section class="fd-dialog-docs-static fd-dialog fd-
         <div class="fd-dialog__body">
             <div class="fd-quick-view">
                 <div class="fd-quick-view__content">
-                    <div class="fd-quick-view__subheader">
-                        <span class="fd-avatar fd-avatar--s" role="presentation">
-                            <i role="presentation" class="fd-avatar__icon sap-icon--camera"></i>
-                        </span>
-                        
-                        <div class="fd-quick-view__subheader-text">
-                            <div class="fd-quick-view__title">
+                    <div class="fd-bar fd-bar--header-with-subheader">
+                        <div class="fd-bar__left">
+                            <span class="fd-avatar fd-avatar--s" role="presentation">
+                                <i role="presentation" class="fd-avatar__icon sap-icon--camera"></i>
+                            </span>
+        
+                            <div class="fd-quick-view__subheader-text">
                                 <h5 class="fd-title fd-title--h5">
                                     <a class="fd-link" href="#">Inventarisation</a>
                                 </h5>
@@ -135,32 +111,18 @@ export const Dialog = () => `<section class="fd-dialog-docs-static fd-dialog fd-
                         </div>
                     </div>
                     
-                    <div class="fd-quick-view__group">
-                        <div class="fd-quick-view__group-item">
-                            <div class="fd-quick-view__group-item-label">
-                                Start Date:
-                            </div>
-                            <div class="fd-quick-view__group-item-content">
-                                01/01/2015
-                            </div>
+                    <div class="fd-form-group" role="group">
+                        <div class="fd-form-item">
+                            <label class="fd-form-label">Start Date:</label>
+                            <span class="fd-input">01/01/2015</span>
                         </div>
-                        
-                        <div class="fd-quick-view__group-item">
-                            <div class="fd-quick-view__group-item-label">
-                                End Date:
-                            </div>
-                            <div class="fd-quick-view__group-item-content">
-                                31/12/2015
-                            </div>
+                        <div class="fd-form-item">
+                            <label class="fd-form-label">End Date:</label>
+                            <span class="fd-input">31/12/2015</span>
                         </div>
-                        
-                        <div class="fd-quick-view__group-item">
-                            <div class="fd-quick-view__group-item-label">
-                                Occurrence:
-                            </div>
-                            <div class="fd-quick-view__group-item-content">
-                                Weekly
-                            </div>
+                        <div class="fd-form-item">
+                            <label class="fd-form-label">Occurrence:</label>
+                            <span class="fd-input">Weekly</span>
                         </div>
                     </div>
                 </div>
@@ -199,13 +161,13 @@ export const NoHeader = () => `<div class="fd-popover">
     <div class="fd-popover__body" aria-hidden="false" id="popoverA1">
         <div class="fd-quick-view">
             <div class="fd-quick-view__content">
-                <div class="fd-quick-view__subheader">
-                    <span class="fd-avatar fd-avatar--s" role="presentation">
-                        <i role="presentation" class="fd-avatar__icon sap-icon--camera"></i>
-                    </span>
-                    
-                    <div class="fd-quick-view__subheader-text">
-                        <div class="fd-quick-view__title">
+                <div class="fd-bar fd-bar--header-with-subheader">
+                    <div class="fd-bar__left">
+                        <span class="fd-avatar fd-avatar--s" role="presentation">
+                            <i role="presentation" class="fd-avatar__icon sap-icon--camera"></i>
+                        </span>
+    
+                        <div class="fd-quick-view__subheader-text">
                             <h5 class="fd-title fd-title--h5">
                                 <a class="fd-link" href="#">Inventarisation</a>
                             </h5>
@@ -213,32 +175,18 @@ export const NoHeader = () => `<div class="fd-popover">
                     </div>
                 </div>
                 
-                <div class="fd-quick-view__group">
-                    <div class="fd-quick-view__group-item">
-                        <div class="fd-quick-view__group-item-label">
-                            Start Date:
-                        </div>
-                        <div class="fd-quick-view__group-item-content">
-                            01/01/2015
-                        </div>
+                <div class="fd-form-group" role="group">
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">Start Date:</label>
+                        <span class="fd-input">01/01/2015</span>
                     </div>
-                    
-                    <div class="fd-quick-view__group-item">
-                        <div class="fd-quick-view__group-item-label">
-                            End Date:
-                        </div>
-                        <div class="fd-quick-view__group-item-content">
-                            31/12/2015
-                        </div>
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">End Date:</label>
+                        <span class="fd-input">31/12/2015</span>
                     </div>
-                    
-                    <div class="fd-quick-view__group-item">
-                        <div class="fd-quick-view__group-item-label">
-                            Occurrence:
-                        </div>
-                        <div class="fd-quick-view__group-item-content">
-                            Weekly
-                        </div>
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">Occurrence:</label>
+                        <span class="fd-input">Weekly</span>
                     </div>
                 </div>
             </div>
@@ -259,14 +207,20 @@ NoHeader.parameters = {
 export const RTLMode = () => `<div class="fd-popover">
     <div class="fd-popover__body" aria-hidden="false" id="popoverA1">
         <div class="fd-quick-view" dir="rtl">
+            <div class="fd-bar fd-bar--header">
+                <div class="fd-bar__middle">
+                    <div class="fd-bar__element">Company</div>
+                </div>
+            </div>
+
             <div class="fd-quick-view__content">
-                <div class="fd-quick-view__subheader">
-                    <span class="fd-avatar fd-avatar--s" role="presentation">
-                        <i role="presentation" class="fd-avatar__icon sap-icon--camera"></i>
-                    </span>
-                    
-                    <div class="fd-quick-view__subheader-text">
-                        <div class="fd-quick-view__title">
+                <div class="fd-bar fd-bar--header-with-subheader">
+                    <div class="fd-bar__left">
+                        <span class="fd-avatar fd-avatar--s" role="presentation">
+                            <i role="presentation" class="fd-avatar__icon sap-icon--camera"></i>
+                        </span>
+    
+                        <div class="fd-quick-view__subheader-text">
                             <h5 class="fd-title fd-title--h5">
                                 <a class="fd-link" href="#">Inventarisation</a>
                             </h5>
@@ -274,32 +228,18 @@ export const RTLMode = () => `<div class="fd-popover">
                     </div>
                 </div>
                 
-                <div class="fd-quick-view__group">
-                    <div class="fd-quick-view__group-item">
-                        <div class="fd-quick-view__group-item-label">
-                            Start Date:
-                        </div>
-                        <div class="fd-quick-view__group-item-content">
-                            01/01/2015
-                        </div>
+                <div class="fd-form-group" role="group">
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">Start Date:</label>
+                        <span class="fd-input">01/01/2015</span>
                     </div>
-                    
-                    <div class="fd-quick-view__group-item">
-                        <div class="fd-quick-view__group-item-label">
-                            End Date:
-                        </div>
-                        <div class="fd-quick-view__group-item-content">
-                            31/12/2015
-                        </div>
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">End Date:</label>
+                        <span class="fd-input">31/12/2015</span>
                     </div>
-                    
-                    <div class="fd-quick-view__group-item">
-                        <div class="fd-quick-view__group-item-label">
-                            Occurrence:
-                        </div>
-                        <div class="fd-quick-view__group-item-content">
-                            Weekly
-                        </div>
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">Occurrence:</label>
+                        <span class="fd-input">Weekly</span>
                     </div>
                 </div>
             </div>

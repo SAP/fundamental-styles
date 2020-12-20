@@ -60,33 +60,33 @@ exports[`Storyshots Components/Quick View Dialog 1`] = `
           
                     
           <div
-            class="fd-quick-view__subheader"
+            class="fd-bar fd-bar--header-with-subheader"
           >
             
                         
-            <span
-              class="fd-avatar fd-avatar--s"
-              role="presentation"
+            <div
+              class="fd-bar__left"
             >
               
                             
-              <i
-                class="fd-avatar__icon sap-icon--camera"
+              <span
+                class="fd-avatar fd-avatar--s"
                 role="presentation"
-              />
+              >
+                
+                                
+                <i
+                  class="fd-avatar__icon sap-icon--camera"
+                  role="presentation"
+                />
+                
+                            
+              </span>
               
-                        
-            </span>
-            
-                        
-                        
-            <div
-              class="fd-quick-view__text"
-            >
-              
+        
                             
               <div
-                class="fd-quick-view__title"
+                class="fd-quick-view__subheader-text"
               >
                 
                                 
@@ -117,85 +117,72 @@ exports[`Storyshots Components/Quick View Dialog 1`] = `
                     
                     
           <div
-            class="fd-quick-view__group"
+            class="fd-form-group"
+            role="group"
           >
             
                         
             <div
-              class="fd-quick-view__group-item"
+              class="fd-form-item"
             >
               
                             
-              <div
-                class="fd-quick-view__group-item-label"
+              <label
+                class="fd-form-label"
               >
-                
-                                Start Date:
-                            
-              </div>
+                Start Date:
+              </label>
               
                             
-              <div
-                class="fd-quick-view__group-item-content"
+              <span
+                class="fd-input"
               >
-                
-                                01/01/2015
-                            
-              </div>
+                01/01/2015
+              </span>
               
                         
             </div>
             
                         
-                        
             <div
-              class="fd-quick-view__group-item"
+              class="fd-form-item"
             >
               
                             
-              <div
-                class="fd-quick-view__group-item-label"
+              <label
+                class="fd-form-label"
               >
-                
-                                End Date:
-                            
-              </div>
+                End Date:
+              </label>
               
                             
-              <div
-                class="fd-quick-view__group-item-content"
+              <span
+                class="fd-input"
               >
-                
-                                31/12/2015
-                            
-              </div>
+                31/12/2015
+              </span>
               
                         
             </div>
             
                         
-                        
             <div
-              class="fd-quick-view__group-item"
+              class="fd-form-item"
             >
               
                             
-              <div
-                class="fd-quick-view__group-item-label"
+              <label
+                class="fd-form-label"
               >
-                
-                                Occurrence:
-                            
-              </div>
+                Occurrence:
+              </label>
               
                             
-              <div
-                class="fd-quick-view__group-item-content"
+              <span
+                class="fd-input"
               >
-                
-                                Weekly
-                            
-              </div>
+                Weekly
+              </span>
               
                         
             </div>
@@ -289,27 +276,19 @@ exports[`Storyshots Components/Quick View Popover 1`] = `
       
             
       <div
-        class="fd-quick-view__header"
+        class="fd-bar fd-bar--header"
       >
         
                 
         <div
-          class="fd-bar fd-bar--header"
+          class="fd-bar__middle"
         >
           
                     
           <div
-            class="fd-bar__middle"
+            class="fd-bar__element"
           >
-            
-                        
-            <div
-              class="fd-bar__element"
-            >
-              Company
-            </div>
-            
-                    
+            Company
           </div>
           
                 
@@ -326,33 +305,33 @@ exports[`Storyshots Components/Quick View Popover 1`] = `
         
                 
         <div
-          class="fd-quick-view__subheader"
+          class="fd-bar fd-bar--header-with-subheader"
         >
           
                     
-          <span
-            class="fd-avatar fd-avatar--s"
-            role="presentation"
+          <div
+            class="fd-bar__left"
           >
             
                         
-            <i
-              class="fd-avatar__icon sap-icon--building"
+            <span
+              class="fd-avatar fd-avatar--s"
               role="presentation"
-            />
+            >
+              
+                            
+              <i
+                class="fd-avatar__icon sap-icon--building"
+                role="presentation"
+              />
+              
+                        
+            </span>
             
-                    
-          </span>
-          
-                    
-                    
-          <div
-            class="fd-quick-view__text"
-          >
-            
+    
                         
             <div
-              class="fd-quick-view__title"
+              class="fd-quick-view__subheader-text"
             >
               
                             
@@ -362,16 +341,16 @@ exports[`Storyshots Components/Quick View Popover 1`] = `
                 Company B
               </h5>
               
-                        
-            </div>
-            
-                        
-                        
-            <div
-              class="fd-quick-view__subtitle"
-            >
+    
+                            
+              <div
+                class="fd-quick-view__subtitle"
+              >
+                
+                                Michael Adams
+                            
+              </div>
               
-                            Michael Adams
                         
             </div>
             
@@ -381,79 +360,69 @@ exports[`Storyshots Components/Quick View Popover 1`] = `
                 
         </div>
         
-                
+    
+    
                 
         <div
-          class="fd-quick-view__group"
+          class="fd-form-group"
+          role="group"
         >
           
                     
           <div
-            class="fd-quick-view__group-title"
+            aria-labelledby="contactDetails"
+            class="fd-form-group__header"
           >
             
                         
-            <h5
-              class="fd-title fd-title--h5"
+            <h1
+              class="fd-form-group__header-text"
+              id="contactDetails"
             >
               Contact Details
-            </h5>
+            </h1>
             
                     
           </div>
           
                     
-                    
           <div
-            class="fd-quick-view__group-item"
+            class="fd-form-item"
           >
             
                         
-            <div
-              class="fd-quick-view__group-item-label"
+            <label
+              class="fd-form-label"
             >
-              
-                            Phone
-                        
-            </div>
+              Phone
+            </label>
             
                         
-            <div
-              class="fd-quick-view__group-item-content"
+            <a
+              class="fd-link fd-input"
+              href="tel:+1 605 555 5555"
             >
-              
-                            
-              <a
-                class="fd-link"
-                href="tel:+1 605 555 5555"
-              >
-                +1 605 555 5555
-              </a>
-              
-                        
-            </div>
+              +1 605 555 5555
+            </a>
             
                     
           </div>
           
                     
-                    
           <div
-            class="fd-quick-view__group-item"
+            class="fd-form-item"
           >
             
                         
-            <div
-              class="fd-quick-view__group-item-label"
+            <label
+              class="fd-form-label"
             >
-              
-                            Address
-                        
-            </div>
+              Address
+            </label>
             
                         
-            <div
-              class="fd-quick-view__group-item-content"
+            <span
+              class="fd-input"
             >
               
                             781 Main Street 
@@ -461,7 +430,7 @@ exports[`Storyshots Components/Quick View Popover 1`] = `
               
                             Anytown, SD 57401, USA
                         
-            </div>
+            </span>
             
                     
           </div>
@@ -472,115 +441,91 @@ exports[`Storyshots Components/Quick View Popover 1`] = `
                 
                 
         <div
-          class="fd-quick-view__group"
+          class="fd-form-group"
+          role="group"
         >
           
                     
           <div
-            class="fd-quick-view__group-title"
+            aria-labelledby="mainContact"
+            class="fd-form-group__header"
           >
             
                         
-            <h5
-              class="fd-title fd-title--h5"
+            <h1
+              class="fd-form-group__header-text"
+              id="mainContact"
             >
               Main Contact
-            </h5>
+            </h1>
             
                     
           </div>
           
                     
-                    
           <div
-            class="fd-quick-view__group-item"
+            class="fd-form-item"
           >
             
                         
-            <div
-              class="fd-quick-view__group-item-label"
+            <label
+              class="fd-form-label"
             >
-              
-                            Name
-                        
-            </div>
+              Name
+            </label>
             
                         
-            <div
-              class="fd-quick-view__group-item-content"
+            <span
+              class="fd-input"
             >
-              
-                            Michael Adams
-                        
-            </div>
+              Michael Adams
+            </span>
             
                     
           </div>
           
                     
-                    
           <div
-            class="fd-quick-view__group-item"
+            class="fd-form-item"
           >
             
                         
-            <div
-              class="fd-quick-view__group-item-label"
+            <label
+              class="fd-form-label"
             >
-              
-                            Mobile
-                        
-            </div>
+              Mobile
+            </label>
             
                         
-            <div
-              class="fd-quick-view__group-item-content"
+            <a
+              class="fd-link fd-input"
+              href="tel:+1 605 555 5555"
             >
-              
-                            
-              <a
-                class="fd-link"
-                href="tel:+1 605 555 5555"
-              >
-                +1 605 555 5555
-              </a>
-              
-                        
-            </div>
+              +1 605 555 5555
+            </a>
             
                     
           </div>
           
                     
-                    
           <div
-            class="fd-quick-view__group-item"
+            class="fd-form-item"
           >
             
                         
-            <div
-              class="fd-quick-view__group-item-label"
+            <label
+              class="fd-form-label"
             >
-              
-                            Phone
-                        
-            </div>
+              Mobile
+            </label>
             
                         
-            <div
-              class="fd-quick-view__group-item-content"
+            <a
+              class="fd-link fd-input"
+              href="tel:+1 316 555 5555"
             >
-              
-                            
-              <a
-                class="fd-link"
-                href="tel:+1 316 555 5555"
-              >
-                +1 316 555 5555
-              </a>
-              
-                        
-            </div>
+              +1 316 555 5555
+            </a>
             
                     
           </div>
@@ -621,38 +566,62 @@ exports[`Storyshots Components/Quick View RTL mode 1`] = `
       
             
       <div
+        class="fd-bar fd-bar--header"
+      >
+        
+                
+        <div
+          class="fd-bar__middle"
+        >
+          
+                    
+          <div
+            class="fd-bar__element"
+          >
+            Company
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
         class="fd-quick-view__content"
       >
         
                 
         <div
-          class="fd-quick-view__subheader"
+          class="fd-bar fd-bar--header-with-subheader"
         >
           
                     
-          <span
-            class="fd-avatar fd-avatar--s"
-            role="presentation"
+          <div
+            class="fd-bar__left"
           >
             
                         
-            <i
-              class="fd-avatar__icon sap-icon--camera"
+            <span
+              class="fd-avatar fd-avatar--s"
               role="presentation"
-            />
+            >
+              
+                            
+              <i
+                class="fd-avatar__icon sap-icon--camera"
+                role="presentation"
+              />
+              
+                        
+            </span>
             
-                    
-          </span>
-          
-                    
-                    
-          <div
-            class="fd-quick-view__text"
-          >
-            
+    
                         
             <div
-              class="fd-quick-view__title"
+              class="fd-quick-view__subheader-text"
             >
               
                             
@@ -683,85 +652,72 @@ exports[`Storyshots Components/Quick View RTL mode 1`] = `
                 
                 
         <div
-          class="fd-quick-view__group"
+          class="fd-form-group"
+          role="group"
         >
           
                     
           <div
-            class="fd-quick-view__group-item"
+            class="fd-form-item"
           >
             
                         
-            <div
-              class="fd-quick-view__group-item-label"
+            <label
+              class="fd-form-label"
             >
-              
-                            Start Date:
-                        
-            </div>
+              Start Date:
+            </label>
             
                         
-            <div
-              class="fd-quick-view__group-item-content"
+            <span
+              class="fd-input"
             >
-              
-                            01/01/2015
-                        
-            </div>
+              01/01/2015
+            </span>
             
                     
           </div>
           
                     
-                    
           <div
-            class="fd-quick-view__group-item"
+            class="fd-form-item"
           >
             
                         
-            <div
-              class="fd-quick-view__group-item-label"
+            <label
+              class="fd-form-label"
             >
-              
-                            End Date:
-                        
-            </div>
+              End Date:
+            </label>
             
                         
-            <div
-              class="fd-quick-view__group-item-content"
+            <span
+              class="fd-input"
             >
-              
-                            31/12/2015
-                        
-            </div>
+              31/12/2015
+            </span>
             
                     
           </div>
           
                     
-                    
           <div
-            class="fd-quick-view__group-item"
+            class="fd-form-item"
           >
             
                         
-            <div
-              class="fd-quick-view__group-item-label"
+            <label
+              class="fd-form-label"
             >
-              
-                            Occurrence:
-                        
-            </div>
+              Occurrence:
+            </label>
             
                         
-            <div
-              class="fd-quick-view__group-item-content"
+            <span
+              class="fd-input"
             >
-              
-                            Weekly
-                        
-            </div>
+              Weekly
+            </span>
             
                     
           </div>
@@ -806,33 +762,33 @@ exports[`Storyshots Components/Quick View Without the header 1`] = `
         
                 
         <div
-          class="fd-quick-view__subheader"
+          class="fd-bar fd-bar--header-with-subheader"
         >
           
                     
-          <span
-            class="fd-avatar fd-avatar--s"
-            role="presentation"
+          <div
+            class="fd-bar__left"
           >
             
                         
-            <i
-              class="fd-avatar__icon sap-icon--camera"
+            <span
+              class="fd-avatar fd-avatar--s"
               role="presentation"
-            />
+            >
+              
+                            
+              <i
+                class="fd-avatar__icon sap-icon--camera"
+                role="presentation"
+              />
+              
+                        
+            </span>
             
-                    
-          </span>
-          
-                    
-                    
-          <div
-            class="fd-quick-view__text"
-          >
-            
+    
                         
             <div
-              class="fd-quick-view__title"
+              class="fd-quick-view__subheader-text"
             >
               
                             
@@ -863,85 +819,72 @@ exports[`Storyshots Components/Quick View Without the header 1`] = `
                 
                 
         <div
-          class="fd-quick-view__group"
+          class="fd-form-group"
+          role="group"
         >
           
                     
           <div
-            class="fd-quick-view__group-item"
+            class="fd-form-item"
           >
             
                         
-            <div
-              class="fd-quick-view__group-item-label"
+            <label
+              class="fd-form-label"
             >
-              
-                            Start Date:
-                        
-            </div>
+              Start Date:
+            </label>
             
                         
-            <div
-              class="fd-quick-view__group-item-content"
+            <span
+              class="fd-input"
             >
-              
-                            01/01/2015
-                        
-            </div>
+              01/01/2015
+            </span>
             
                     
           </div>
           
                     
-                    
           <div
-            class="fd-quick-view__group-item"
+            class="fd-form-item"
           >
             
                         
-            <div
-              class="fd-quick-view__group-item-label"
+            <label
+              class="fd-form-label"
             >
-              
-                            End Date:
-                        
-            </div>
+              End Date:
+            </label>
             
                         
-            <div
-              class="fd-quick-view__group-item-content"
+            <span
+              class="fd-input"
             >
-              
-                            31/12/2015
-                        
-            </div>
+              31/12/2015
+            </span>
             
                     
           </div>
           
                     
-                    
           <div
-            class="fd-quick-view__group-item"
+            class="fd-form-item"
           >
             
                         
-            <div
-              class="fd-quick-view__group-item-label"
+            <label
+              class="fd-form-label"
             >
-              
-                            Occurrence:
-                        
-            </div>
+              Occurrence:
+            </label>
             
                         
-            <div
-              class="fd-quick-view__group-item-content"
+            <span
+              class="fd-input"
             >
-              
-                            Weekly
-                        
-            </div>
+              Weekly
+            </span>
             
                     
           </div>

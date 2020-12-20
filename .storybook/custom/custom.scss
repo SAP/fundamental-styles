@@ -88,7 +88,7 @@ $heading-toc-spacer: $docs-hd-tp + $docs-hd-bp + $docs-hd-ch + $docs-tm;
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid #d7dbde;
-  z-index: 10;
+  z-index: 1001;
 
   &--label {
     align-self: center;

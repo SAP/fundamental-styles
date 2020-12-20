@@ -4,13 +4,27 @@
 $block: #{$fd-namespace}-quick-view;
 
 $fd-quick-view-avatar-indent: 0.75rem;
-$fd-quick-view-title-bottom-indent: 0.5rem;
+$fd-quick-view-group-item-indent: 0.75rem;
 
 .#{$block} {
   @include fd-reset();
 
+  @include fd-rtl() {
+    .#{$fd-namespace}-bar {
+      .#{$fd-namespace}-avatar {
+        margin-right: 0;
+        margin-left: $fd-quick-view-avatar-indent;
+      }
+    }
+  }
+
   min-width: 20rem;
   max-width: 30rem;
+
+  > *:first-child {
+    border-top-right-radius: $fd-popover-border-radius;
+    border-top-left-radius: $fd-popover-border-radius;
+  }
 
   &__content {
     @include fd-reset();
@@ -18,83 +32,62 @@ $fd-quick-view-title-bottom-indent: 0.5rem;
     padding: 1rem;
   }
 
-  &__header {
-    @include fd-reset();
+  .#{$fd-namespace}-bar {
+    padding: 0;
 
-    > *:first-child {
-      border-top-right-radius: $fd-popover-border-radius;
-      border-top-left-radius: $fd-popover-border-radius;
-    }
-  }
+    &--header-with-subheader {
+      height: auto;
+      padding-bottom: $fd-quick-view-group-item-indent;
 
-  &__subheader {
-    @include fd-reset();
-    @include fd-flex();
+      .#{$fd-namespace}-avatar {
+        margin-right: $fd-quick-view-avatar-indent;
+      }
 
-    @include fd-rtl() {
-      > *:first-child {
-        margin-right: 0;
-        margin-left: $fd-quick-view-avatar-indent;
+      .#{$fd-namespace}-bar {
+        &__left,
+        &__middle,
+        &__right {
+          align-items: flex-start;
+        }
       }
     }
-
-    > *:first-child {
-      margin-right: $fd-quick-view-avatar-indent;
-    }
-
-    &-text {
-      max-width: 100%;
-      min-width: 0; // fix for flex width https://github.com/philipwalton/flexbugs#flexbug-17
-    }
   }
 
-  &__title {
-    @include fd-reset();
-
-    font-size: var(--sapFontHeader5Size);
-    color: var(--sapTile_TitleTextColor);
-    margin-bottom: $fd-quick-view-title-bottom-indent;
+  &__subheader-text {
+    max-width: 100%;
+    min-width: 0; // fix for flex width https://github.com/philipwalton/flexbugs#flexbug-17
   }
 
   &__subtitle {
     @include fd-reset();
     @include fd-ellipsis();
 
+    margin-top: 0.25rem;
     color: var(--sapTile_TextColor);
   }
 
-  &__group {
-    @include fd-reset();
+  .#{$fd-namespace}-input:not(input) {
+    height: auto;
+    padding: 0;
+    border: none;
+  }
 
-    margin-top: 1.75rem;
+  .#{$fd-namespace}-dialog__body & {
+    &__content {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
 
-    &-title {
-      @include fd-reset();
+  .#{$fd-namespace}-form-item {
+    padding-top: $fd-quick-view-group-item-indent;
+  }
+
+  .#{$fd-namespace}-title {
+    .#{$fd-namespace}-link {
       @include fd-ellipsis();
 
-      font-size: var(--sapFontHeader5Size);
-      color: var(--sapTile_TitleTextColor);
-      margin-bottom: $fd-quick-view-title-bottom-indent;
-    }
-
-    &-item {
-      @include fd-reset();
-
-      margin-top: 0.75rem;
-
-      &-label {
-        @include fd-reset();
-        @include fd-ellipsis();
-
-        color: var(--sapTile_TextColor);
-      }
-
-      &-content {
-        @include fd-reset();
-
-        padding-top: 0.25rem;
-        padding-bottom: 0.25rem;
-      }
+      width: 100%;
     }
   }
 }
