@@ -35,12 +35,12 @@ Next arrow | \`fd-pagination__link--next\` | The next arrow that users can use t
 export const firstPage = () => `<div class="fd-pagination">
   <span class="fd-pagination__total">30 items</span>
   <nav class="fd-pagination__nav">
-      <a href="#" class="fd-pagination__link fd-pagination__link--previous" aria-label="Previous"aria-disabled="true"></a>
-      <a href="#" class="fd-pagination__link is-selected" >1</a>
-      <a href="#" class="fd-pagination__link">2</a>
-      <a href="#" class="fd-pagination__link">3</a>
-      <a href="#" class="fd-pagination__link fd-pagination__link--next" aria-label="Next"
-      aria-disabled="false"></a>
+      <button role="link" href="#" class="fd-pagination__link fd-pagination__link--previous" aria-label="Previous"aria-disabled="true"></button>
+      <button role="link" href="#" class="fd-pagination__link is-selected" >1</button>
+      <button role="link" href="#" class="fd-pagination__link">2</button>
+      <button role="link" href="#" class="fd-pagination__link">3</button>
+      <button role="link" href="#" class="fd-pagination__link fd-pagination__link--next" aria-label="Next"
+      aria-disabled="false"></button>
   </nav>
 </div>
 `;
@@ -57,13 +57,13 @@ firstPage.parameters = {
 export const secondPage = () => `<div class="fd-pagination">
 <span class="fd-pagination__total">30 items</span>
 <nav class="fd-pagination__nav">
-  <a href="#" class="fd-pagination__link fd-pagination__link--previous" aria-label="Previous"
-  aria-disabled="false"></a>
-  <a href="#" class="fd-pagination__link">1</a>
-  <a href="#" class="fd-pagination__link is-selected">2</a>
-  <a href="#" class="fd-pagination__link">3</a>
-  <a href="#" class="fd-pagination__link fd-pagination__link--next" aria-label="Next"
-  aria-disabled="false"></a>
+  <button role="link" href="#" class="fd-pagination__link fd-pagination__link--previous" aria-label="Previous"
+  aria-disabled="false"></button>
+  <button role="link" href="#" class="fd-pagination__link">1</button>
+  <button role="link" href="#" class="fd-pagination__link is-selected">2</button>
+  <button role="link" href="#" class="fd-pagination__link">3</button>
+  <button role="link" href="#" class="fd-pagination__link fd-pagination__link--next" aria-label="Next"
+  aria-disabled="false"></button>
 </nav>
 </div>
 `;
@@ -80,15 +80,15 @@ secondPage.parameters = {
 export const multiplePages = () => `<div class="fd-pagination">
 <span class="fd-pagination__total">500 items</span>
 <nav class="fd-pagination__nav">
-  <a href="#" class="fd-pagination__link fd-pagination__link--previous" aria-label="Previous"
-  aria-disabled="false"></a>
-  <a href="#" class="fd-pagination__link">1</a>
-  <a href="#" class="fd-pagination__link is-selected">2</a>
-  <a href="#" class="fd-pagination__link">3</a>
+  <button role="link" href="#" class="fd-pagination__link fd-pagination__link--previous" aria-label="Previous"
+  aria-disabled="false"></button>
+  <button role="link" href="#" class="fd-pagination__link">1</button>
+  <button role="link" href="#" class="fd-pagination__link is-selected">2</button>
+  <button role="link" href="#" class="fd-pagination__link">3</button>
   <span class="fd-pagination__more" role="presentation"></span>
-  <a href="#" class="fd-pagination__link">50</a>
-  <a href="#" class="fd-pagination__link fd-pagination__link--next" aria-label="Next"
-  aria-disabled="false"></a>
+  <button role="link" href="#" class="fd-pagination__link">50</button>
+  <button role="link" href="#" class="fd-pagination__link fd-pagination__link--next" aria-label="Next"
+  aria-disabled="false"></button>
 </nav>
 </div>
 `;
@@ -105,17 +105,17 @@ multiplePages.parameters = {
 export const middlePage = () => `<div class="fd-pagination">
 <span class="fd-pagination__total">500 items</span>
 <nav class="fd-pagination__nav">
-  <a href="#" class="fd-pagination__link fd-pagination__link--previous" aria-label="Previous"
-  aria-disabled="false"></a>
-  <a href="#" class="fd-pagination__link">1</a>
+  <button role="link" href="#" class="fd-pagination__link fd-pagination__link--previous" aria-label="Previous"
+  aria-disabled="false"></button>
+  <button role="link" href="#" class="fd-pagination__link">1</button>
   <span class="fd-pagination__more" role="presentation"></span>
-  <a href="#" class="fd-pagination__link">21</a>
-  <a href="#" class="fd-pagination__link is-selected">22</a>
-  <a href="#" class="fd-pagination__link">23</a>
+  <button role="link" href="#" class="fd-pagination__link">21</button>
+  <button role="link" href="#" class="fd-pagination__link is-selected">22</button>
+  <button role="link" href="#" class="fd-pagination__link">23</button>
   <span class="fd-pagination__more" role="presentation"></span>
-  <a href="#" class="fd-pagination__link">50</a>
-  <a href="#" class="fd-pagination__link fd-pagination__link--next" aria-label="Next"
-  aria-disabled="false"></a>
+  <button role="link" href="#" class="fd-pagination__link">50</button>
+  <button role="link" href="#" class="fd-pagination__link fd-pagination__link--next" aria-label="Next"
+  aria-disabled="false"></button>
 </nav>
 </div>
 `;
@@ -132,14 +132,14 @@ middlePage.parameters = {
 export const lastPage = () => `<div class="fd-pagination">
 <span class="fd-pagination__total">500 items</span>
 <nav class="fd-pagination__nav">
-  <a href="#" class="fd-pagination__link fd-pagination__link--previous" aria-label="Previous"
-  aria-disabled="false"></a>
-  <a href="#" class="fd-pagination__link">1</a>
+  <button role="link" href="#" class="fd-pagination__link fd-pagination__link--previous" aria-label="Previous"
+  aria-disabled="false"></button>
+  <button role="link" href="#" class="fd-pagination__link">1</button>
   <span class="fd-pagination__more" role="presentation"></span>
-  <a href="#" class="fd-pagination__link">49</a>
-  <a href="#" class="fd-pagination__link is-selected">50</a>
-  <a href="#" class="fd-pagination__link fd-pagination__link--next" aria-label="Next"
-  aria-disabled="true"></a>
+  <button role="link" href="#" class="fd-pagination__link">49</button>
+  <button role="link" href="#" class="fd-pagination__link is-selected">50</button>
+  <button role="link" href="#" class="fd-pagination__link fd-pagination__link--next" aria-label="Next"
+  aria-disabled="true"></button>
 </nav>
 </div>
 `;
