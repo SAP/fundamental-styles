@@ -25,7 +25,7 @@ $block: #{$fd-namespace}-tabs;
       transition: all $fd-tabs-link-transition-params;
       content: "";
       position: absolute;
-      bottom: -$fd-tabs-link-padding-y;
+      bottom: -0.9375rem;
       left: -$fd-tabs-active-link-line-offset-x;
       display: inline-block;
       height: $fd-tabs-link-border-width;
@@ -107,6 +107,7 @@ $block: #{$fd-namespace}-tabs;
     @include action-cursor();
 
     transition: 0s;
+    background-color: var(--sapObjectHeader_Background, #fff);
     display: block;
     position: relative;
     text-decoration: none;
@@ -129,6 +130,7 @@ $block: #{$fd-namespace}-tabs;
     @include fd-reset();
 
     position: relative;
+    border-bottom: 1px solid transparent;
     padding: 0;
     margin: 0 $fd-tabs-item-spacing-x;
 

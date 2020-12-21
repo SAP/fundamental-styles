@@ -17,7 +17,7 @@ exports[`Storyshots Components/Tabs Counters 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#d9vOir"
       >
@@ -39,7 +39,7 @@ exports[`Storyshots Components/Tabs Counters 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -53,7 +53,7 @@ exports[`Storyshots Components/Tabs Counters 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#bSj6ft"
       >
@@ -75,7 +75,7 @@ exports[`Storyshots Components/Tabs Counters 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -88,7 +88,7 @@ exports[`Storyshots Components/Tabs Counters 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#VrHfHi"
       >
@@ -110,7 +110,7 @@ exports[`Storyshots Components/Tabs Counters 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -190,7 +190,7 @@ exports[`Storyshots Components/Tabs Default 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#fuCwV550"
       >
@@ -205,7 +205,7 @@ exports[`Storyshots Components/Tabs Default 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -219,7 +219,7 @@ exports[`Storyshots Components/Tabs Default 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#AiWfz165"
       >
@@ -234,7 +234,7 @@ exports[`Storyshots Components/Tabs Default 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -247,7 +247,7 @@ exports[`Storyshots Components/Tabs Default 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#7ae0T849"
       >
@@ -262,7 +262,7 @@ exports[`Storyshots Components/Tabs Default 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -342,7 +342,7 @@ exports[`Storyshots Components/Tabs Filter mode (compact) 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#YETAv8"
       >
@@ -370,7 +370,7 @@ exports[`Storyshots Components/Tabs Filter mode (compact) 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -388,7 +388,7 @@ exports[`Storyshots Components/Tabs Filter mode (compact) 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#eu3WeD"
       >
@@ -422,7 +422,7 @@ exports[`Storyshots Components/Tabs Filter mode (compact) 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -435,7 +435,7 @@ exports[`Storyshots Components/Tabs Filter mode (compact) 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#VqJcYO"
       >
@@ -469,7 +469,7 @@ exports[`Storyshots Components/Tabs Filter mode (compact) 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -482,7 +482,7 @@ exports[`Storyshots Components/Tabs Filter mode (compact) 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#ceoDu7"
       >
@@ -516,7 +516,7 @@ exports[`Storyshots Components/Tabs Filter mode (compact) 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -608,7 +608,7 @@ exports[`Storyshots Components/Tabs Filter mode 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#5ZkDVE"
       >
@@ -636,7 +636,7 @@ exports[`Storyshots Components/Tabs Filter mode 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -654,7 +654,7 @@ exports[`Storyshots Components/Tabs Filter mode 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#znvnwr"
       >
@@ -688,7 +688,7 @@ exports[`Storyshots Components/Tabs Filter mode 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -701,7 +701,7 @@ exports[`Storyshots Components/Tabs Filter mode 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#oyYpL7"
       >
@@ -735,7 +735,7 @@ exports[`Storyshots Components/Tabs Filter mode 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -748,7 +748,7 @@ exports[`Storyshots Components/Tabs Filter mode 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#gRpu9H"
       >
@@ -782,7 +782,7 @@ exports[`Storyshots Components/Tabs Filter mode 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -874,7 +874,7 @@ exports[`Storyshots Components/Tabs Icon (compact) 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#0bT4aB"
       >
@@ -901,7 +901,7 @@ exports[`Storyshots Components/Tabs Icon (compact) 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -915,7 +915,7 @@ exports[`Storyshots Components/Tabs Icon (compact) 1`] = `
     >
       
       
-      <a
+      <button
         class="fd-tabs__link"
         href="#kzRyN3"
       >
@@ -942,7 +942,7 @@ exports[`Storyshots Components/Tabs Icon (compact) 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -955,7 +955,7 @@ exports[`Storyshots Components/Tabs Icon (compact) 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#f2epu6"
       >
@@ -982,7 +982,7 @@ exports[`Storyshots Components/Tabs Icon (compact) 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -1062,7 +1062,7 @@ exports[`Storyshots Components/Tabs Icon 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#pliA92"
       >
@@ -1089,7 +1089,7 @@ exports[`Storyshots Components/Tabs Icon 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -1103,7 +1103,7 @@ exports[`Storyshots Components/Tabs Icon 1`] = `
     >
       
       
-      <a
+      <button
         class="fd-tabs__link"
         href="#ZAN8Hd"
       >
@@ -1130,7 +1130,7 @@ exports[`Storyshots Components/Tabs Icon 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -1143,7 +1143,7 @@ exports[`Storyshots Components/Tabs Icon 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#QrQ5Cl"
       >
@@ -1170,7 +1170,7 @@ exports[`Storyshots Components/Tabs Icon 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -1249,7 +1249,7 @@ exports[`Storyshots Components/Tabs Navigable 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#kf8369"
       >
@@ -1264,7 +1264,7 @@ exports[`Storyshots Components/Tabs Navigable 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </span>
@@ -1276,7 +1276,7 @@ exports[`Storyshots Components/Tabs Navigable 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#9uQ282"
       >
@@ -1291,7 +1291,7 @@ exports[`Storyshots Components/Tabs Navigable 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </span>
@@ -1303,7 +1303,7 @@ exports[`Storyshots Components/Tabs Navigable 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#DGl707"
       >
@@ -1318,7 +1318,7 @@ exports[`Storyshots Components/Tabs Navigable 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </span>
@@ -1398,7 +1398,7 @@ exports[`Storyshots Components/Tabs Process mode (compact) 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#LHsxsZ"
       >
@@ -1440,7 +1440,7 @@ exports[`Storyshots Components/Tabs Process mode (compact) 1`] = `
         </div>
         
         
-      </a>
+      </button>
       
         
       <span
@@ -1458,7 +1458,7 @@ exports[`Storyshots Components/Tabs Process mode (compact) 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#ZQvAjG"
       >
@@ -1500,7 +1500,7 @@ exports[`Storyshots Components/Tabs Process mode (compact) 1`] = `
         </div>
         
         
-      </a>
+      </button>
       
         
       <span
@@ -1518,7 +1518,7 @@ exports[`Storyshots Components/Tabs Process mode (compact) 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#wdqPV9"
       >
@@ -1560,7 +1560,7 @@ exports[`Storyshots Components/Tabs Process mode (compact) 1`] = `
         </div>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -1640,7 +1640,7 @@ exports[`Storyshots Components/Tabs Process mode 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#NoQLy6"
       >
@@ -1682,7 +1682,7 @@ exports[`Storyshots Components/Tabs Process mode 1`] = `
         </div>
         
         
-      </a>
+      </button>
       
         
       <span
@@ -1700,7 +1700,7 @@ exports[`Storyshots Components/Tabs Process mode 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#h4yBDR"
       >
@@ -1742,7 +1742,7 @@ exports[`Storyshots Components/Tabs Process mode 1`] = `
         </div>
         
         
-      </a>
+      </button>
       
         
       <span
@@ -1760,7 +1760,7 @@ exports[`Storyshots Components/Tabs Process mode 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#nd1EMQ"
       >
@@ -1802,7 +1802,7 @@ exports[`Storyshots Components/Tabs Process mode 1`] = `
         </div>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -1882,7 +1882,7 @@ exports[`Storyshots Components/Tabs Semantic filter mode 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#5ZkDVE"
       >
@@ -1910,7 +1910,7 @@ exports[`Storyshots Components/Tabs Semantic filter mode 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -1928,7 +1928,7 @@ exports[`Storyshots Components/Tabs Semantic filter mode 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#znvnwr"
       >
@@ -1962,7 +1962,7 @@ exports[`Storyshots Components/Tabs Semantic filter mode 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -1975,7 +1975,7 @@ exports[`Storyshots Components/Tabs Semantic filter mode 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#oyYpL7"
       >
@@ -2009,7 +2009,7 @@ exports[`Storyshots Components/Tabs Semantic filter mode 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -2022,7 +2022,7 @@ exports[`Storyshots Components/Tabs Semantic filter mode 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#gRpu9H"
       >
@@ -2056,7 +2056,7 @@ exports[`Storyshots Components/Tabs Semantic filter mode 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -2069,7 +2069,7 @@ exports[`Storyshots Components/Tabs Semantic filter mode 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#gRpu1A"
       >
@@ -2103,7 +2103,7 @@ exports[`Storyshots Components/Tabs Semantic filter mode 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -2207,7 +2207,7 @@ exports[`Storyshots Components/Tabs Semantic inline 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#5abyKZ"
       >
@@ -2229,7 +2229,7 @@ exports[`Storyshots Components/Tabs Semantic inline 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -2243,7 +2243,7 @@ exports[`Storyshots Components/Tabs Semantic inline 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link is-selected"
         href="#wupC7s"
       >
@@ -2265,7 +2265,7 @@ exports[`Storyshots Components/Tabs Semantic inline 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -2278,7 +2278,7 @@ exports[`Storyshots Components/Tabs Semantic inline 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#XlKpQM"
       >
@@ -2300,7 +2300,7 @@ exports[`Storyshots Components/Tabs Semantic inline 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -2312,7 +2312,7 @@ exports[`Storyshots Components/Tabs Semantic inline 1`] = `
     >
       
         
-      <a
+      <button
         aria-controls="3dUJAI"
         class="fd-tabs__link"
         href="#3dUJAI"
@@ -2335,7 +2335,7 @@ exports[`Storyshots Components/Tabs Semantic inline 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -2348,7 +2348,7 @@ exports[`Storyshots Components/Tabs Semantic inline 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#TWlAup"
       >
@@ -2370,7 +2370,7 @@ exports[`Storyshots Components/Tabs Semantic inline 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -2474,7 +2474,7 @@ exports[`Storyshots Components/Tabs Semantic mode 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#XTsSDD"
       >
@@ -2501,7 +2501,7 @@ exports[`Storyshots Components/Tabs Semantic mode 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -2515,7 +2515,7 @@ exports[`Storyshots Components/Tabs Semantic mode 1`] = `
     >
       
       
-      <a
+      <button
         class="fd-tabs__link is-selected"
         href="#DomvG6"
       >
@@ -2542,7 +2542,7 @@ exports[`Storyshots Components/Tabs Semantic mode 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -2555,7 +2555,7 @@ exports[`Storyshots Components/Tabs Semantic mode 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#DqIStt"
       >
@@ -2582,7 +2582,7 @@ exports[`Storyshots Components/Tabs Semantic mode 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -2595,7 +2595,7 @@ exports[`Storyshots Components/Tabs Semantic mode 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#bRCSzS"
       >
@@ -2622,7 +2622,7 @@ exports[`Storyshots Components/Tabs Semantic mode 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
@@ -2635,7 +2635,7 @@ exports[`Storyshots Components/Tabs Semantic mode 1`] = `
     >
       
         
-      <a
+      <button
         class="fd-tabs__link"
         href="#xMN6I9"
       >
@@ -2662,7 +2662,7 @@ exports[`Storyshots Components/Tabs Semantic mode 1`] = `
         </span>
         
         
-      </a>
+      </button>
       
     
     </li>
