@@ -10,7 +10,7 @@ $fd-quick-view-group-item-indent: 0.75rem;
   @include fd-reset();
 
   @include fd-rtl() {
-    .#{$fd-namespace}-bar {
+    .#{$fd-namespace}-bar--header-with-subheader {
       .#{$fd-namespace}-avatar {
         margin-right: 0;
         margin-left: $fd-quick-view-avatar-indent;
