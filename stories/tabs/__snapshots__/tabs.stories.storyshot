@@ -20,6 +20,7 @@ exports[`Storyshots Components/Tabs Counters 1`] = `
       <button
         class="fd-tabs__link"
         href="#d9vOir"
+        role="link"
       >
         
             
@@ -56,6 +57,7 @@ exports[`Storyshots Components/Tabs Counters 1`] = `
       <button
         class="fd-tabs__link"
         href="#bSj6ft"
+        role="link"
       >
         
             
@@ -91,6 +93,7 @@ exports[`Storyshots Components/Tabs Counters 1`] = `
       <button
         class="fd-tabs__link"
         href="#VrHfHi"
+        role="link"
       >
         
             
@@ -193,6 +196,7 @@ exports[`Storyshots Components/Tabs Default 1`] = `
       <button
         class="fd-tabs__link"
         href="#fuCwV550"
+        role="link"
       >
         
             
@@ -222,6 +226,7 @@ exports[`Storyshots Components/Tabs Default 1`] = `
       <button
         class="fd-tabs__link"
         href="#AiWfz165"
+        role="link"
       >
         
             
@@ -250,6 +255,7 @@ exports[`Storyshots Components/Tabs Default 1`] = `
       <button
         class="fd-tabs__link"
         href="#7ae0T849"
+        role="link"
       >
         
             
@@ -345,6 +351,7 @@ exports[`Storyshots Components/Tabs Filter mode (compact) 1`] = `
       <button
         class="fd-tabs__link"
         href="#YETAv8"
+        role="link"
       >
         
             
@@ -391,6 +398,7 @@ exports[`Storyshots Components/Tabs Filter mode (compact) 1`] = `
       <button
         class="fd-tabs__link"
         href="#eu3WeD"
+        role="link"
       >
         
             
@@ -438,6 +446,7 @@ exports[`Storyshots Components/Tabs Filter mode (compact) 1`] = `
       <button
         class="fd-tabs__link"
         href="#VqJcYO"
+        role="link"
       >
         
             
@@ -485,6 +494,7 @@ exports[`Storyshots Components/Tabs Filter mode (compact) 1`] = `
       <button
         class="fd-tabs__link"
         href="#ceoDu7"
+        role="link"
       >
         
             
@@ -611,6 +621,7 @@ exports[`Storyshots Components/Tabs Filter mode 1`] = `
       <button
         class="fd-tabs__link"
         href="#5ZkDVE"
+        role="link"
       >
         
             
@@ -657,6 +668,7 @@ exports[`Storyshots Components/Tabs Filter mode 1`] = `
       <button
         class="fd-tabs__link"
         href="#znvnwr"
+        role="link"
       >
         
             
@@ -704,6 +716,7 @@ exports[`Storyshots Components/Tabs Filter mode 1`] = `
       <button
         class="fd-tabs__link"
         href="#oyYpL7"
+        role="link"
       >
         
             
@@ -751,6 +764,7 @@ exports[`Storyshots Components/Tabs Filter mode 1`] = `
       <button
         class="fd-tabs__link"
         href="#gRpu9H"
+        role="link"
       >
         
             
@@ -877,6 +891,7 @@ exports[`Storyshots Components/Tabs Icon (compact) 1`] = `
       <button
         class="fd-tabs__link"
         href="#0bT4aB"
+        role="link"
       >
         
             
@@ -918,6 +933,7 @@ exports[`Storyshots Components/Tabs Icon (compact) 1`] = `
       <button
         class="fd-tabs__link"
         href="#kzRyN3"
+        role="link"
       >
         
             
@@ -958,6 +974,7 @@ exports[`Storyshots Components/Tabs Icon (compact) 1`] = `
       <button
         class="fd-tabs__link"
         href="#f2epu6"
+        role="link"
       >
         
             
@@ -1065,6 +1082,7 @@ exports[`Storyshots Components/Tabs Icon 1`] = `
       <button
         class="fd-tabs__link"
         href="#pliA92"
+        role="link"
       >
         
             
@@ -1106,6 +1124,7 @@ exports[`Storyshots Components/Tabs Icon 1`] = `
       <button
         class="fd-tabs__link"
         href="#ZAN8Hd"
+        role="link"
       >
         
             
@@ -1146,6 +1165,7 @@ exports[`Storyshots Components/Tabs Icon 1`] = `
       <button
         class="fd-tabs__link"
         href="#QrQ5Cl"
+        role="link"
       >
         
             
@@ -1252,6 +1272,7 @@ exports[`Storyshots Components/Tabs Navigable 1`] = `
       <button
         class="fd-tabs__link"
         href="#kf8369"
+        role="link"
       >
         
             
@@ -1279,6 +1300,7 @@ exports[`Storyshots Components/Tabs Navigable 1`] = `
       <button
         class="fd-tabs__link"
         href="#9uQ282"
+        role="link"
       >
         
             
@@ -1306,6 +1328,7 @@ exports[`Storyshots Components/Tabs Navigable 1`] = `
       <button
         class="fd-tabs__link"
         href="#DGl707"
+        role="link"
       >
         
             
@@ -1401,6 +1424,7 @@ exports[`Storyshots Components/Tabs Process mode (compact) 1`] = `
       <button
         class="fd-tabs__link"
         href="#LHsxsZ"
+        role="link"
       >
         
             
@@ -1461,6 +1485,7 @@ exports[`Storyshots Components/Tabs Process mode (compact) 1`] = `
       <button
         class="fd-tabs__link"
         href="#ZQvAjG"
+        role="link"
       >
         
             
@@ -1521,6 +1546,7 @@ exports[`Storyshots Components/Tabs Process mode (compact) 1`] = `
       <button
         class="fd-tabs__link"
         href="#wdqPV9"
+        role="link"
       >
         
             
@@ -1643,6 +1669,7 @@ exports[`Storyshots Components/Tabs Process mode 1`] = `
       <button
         class="fd-tabs__link"
         href="#NoQLy6"
+        role="link"
       >
         
             
@@ -1703,6 +1730,7 @@ exports[`Storyshots Components/Tabs Process mode 1`] = `
       <button
         class="fd-tabs__link"
         href="#h4yBDR"
+        role="link"
       >
         
             
@@ -1763,6 +1791,7 @@ exports[`Storyshots Components/Tabs Process mode 1`] = `
       <button
         class="fd-tabs__link"
         href="#nd1EMQ"
+        role="link"
       >
         
             
@@ -1885,6 +1914,7 @@ exports[`Storyshots Components/Tabs Semantic filter mode 1`] = `
       <button
         class="fd-tabs__link"
         href="#5ZkDVE"
+        role="link"
       >
         
             
@@ -1931,6 +1961,7 @@ exports[`Storyshots Components/Tabs Semantic filter mode 1`] = `
       <button
         class="fd-tabs__link"
         href="#znvnwr"
+        role="link"
       >
         
             
@@ -1978,6 +2009,7 @@ exports[`Storyshots Components/Tabs Semantic filter mode 1`] = `
       <button
         class="fd-tabs__link"
         href="#oyYpL7"
+        role="link"
       >
         
             
@@ -2025,6 +2057,7 @@ exports[`Storyshots Components/Tabs Semantic filter mode 1`] = `
       <button
         class="fd-tabs__link"
         href="#gRpu9H"
+        role="link"
       >
         
             
@@ -2072,6 +2105,7 @@ exports[`Storyshots Components/Tabs Semantic filter mode 1`] = `
       <button
         class="fd-tabs__link"
         href="#gRpu1A"
+        role="link"
       >
         
             
@@ -2210,6 +2244,7 @@ exports[`Storyshots Components/Tabs Semantic inline 1`] = `
       <button
         class="fd-tabs__link"
         href="#5abyKZ"
+        role="link"
       >
         
             
@@ -2281,6 +2316,7 @@ exports[`Storyshots Components/Tabs Semantic inline 1`] = `
       <button
         class="fd-tabs__link"
         href="#XlKpQM"
+        role="link"
       >
         
             
@@ -2316,6 +2352,7 @@ exports[`Storyshots Components/Tabs Semantic inline 1`] = `
         aria-controls="3dUJAI"
         class="fd-tabs__link"
         href="#3dUJAI"
+        role="link"
       >
         
             
@@ -2351,6 +2388,7 @@ exports[`Storyshots Components/Tabs Semantic inline 1`] = `
       <button
         class="fd-tabs__link"
         href="#TWlAup"
+        role="link"
       >
         
             
@@ -2477,6 +2515,7 @@ exports[`Storyshots Components/Tabs Semantic mode 1`] = `
       <button
         class="fd-tabs__link"
         href="#XTsSDD"
+        role="link"
       >
         
             
@@ -2558,6 +2597,7 @@ exports[`Storyshots Components/Tabs Semantic mode 1`] = `
       <button
         class="fd-tabs__link"
         href="#DqIStt"
+        role="link"
       >
         
             
@@ -2598,6 +2638,7 @@ exports[`Storyshots Components/Tabs Semantic mode 1`] = `
       <button
         class="fd-tabs__link"
         href="#bRCSzS"
+        role="link"
       >
         
             
@@ -2638,6 +2679,7 @@ exports[`Storyshots Components/Tabs Semantic mode 1`] = `
       <button
         class="fd-tabs__link"
         href="#xMN6I9"
+        role="link"
       >
         
             

@@ -98,6 +98,7 @@ $block: #{$fd-namespace}-tabs;
     @include fd-reset();
 
     line-height: 1rem;
+    text-align: left;
     padding-bottom: 0.125rem;
     color: $fd-tabs-label-color;
   }
@@ -271,6 +272,7 @@ $block: #{$fd-namespace}-tabs;
     @include fd-reset();
 
     display: block;
+    text-align: left;
     padding-left: 0.125rem;
     font-size: var(--sapFontSmallSize);
     color: $fd-tabs-label-color;
