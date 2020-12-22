@@ -60,7 +60,7 @@ exports[`Storyshots Components/Select 2-column 1`] = `
                 
               
                 <span
-                  class="fd-select__text"
+                  class="fd-select__text-content"
                   is="twoColumn1Value"
                 >
                   Select Product
@@ -258,7 +258,7 @@ exports[`Storyshots Components/Select 2-column 1`] = `
                 
                 
                 <span
-                  class="fd-select__text"
+                  class="fd-select__text-content"
                   id="twoColumn2Value"
                 >
                   Select Product
@@ -466,7 +466,7 @@ exports[`Storyshots Components/Select 2-column with icons 1`] = `
           
                 
           <span
-            class="fd-select__text"
+            class="fd-select__text-content"
             is="twoColumnsAndIconsValue"
           >
             Select Product
@@ -708,7 +708,7 @@ exports[`Storyshots Components/Select Blank 1`] = `
                 
                             
                 <span
-                  class="fd-select__text"
+                  class="fd-select__text-content"
                   id="h45336F3Value"
                 />
                 
@@ -897,7 +897,7 @@ exports[`Storyshots Components/Select Blank 1`] = `
                 
                             
                 <span
-                  class="fd-select__text"
+                  class="fd-select__text-content"
                   id="h45336F4Value"
                 />
                 
@@ -1074,7 +1074,7 @@ exports[`Storyshots Components/Select Compact 1`] = `
           
                     
           <span
-            class="fd-select__text"
+            class="fd-select__text-content"
             id="compactSelectValue"
           >
             Select
@@ -1249,7 +1249,7 @@ exports[`Storyshots Components/Select Cozy 1`] = `
           
                     
           <span
-            class="fd-select__text"
+            class="fd-select__text-content"
             is="cozySelectValue"
           >
             List Item 1
@@ -1427,7 +1427,7 @@ exports[`Storyshots Components/Select Disabled 1`] = `
           
                 
           <span
-            class="fd-select__text"
+            class="fd-select__text-content"
             id="disabledValue"
           >
             Mango
@@ -1512,7 +1512,7 @@ exports[`Storyshots Components/Select Form item 1`] = `
             
                         
             <span
-              class="fd-select__text"
+              class="fd-select__text-content"
               is="formSelectValue"
             >
               Select
@@ -1690,7 +1690,7 @@ exports[`Storyshots Components/Select Grouping 1`] = `
           
                 
           <span
-            class="fd-select__text"
+            class="fd-select__text-content"
             id="itemGroupingValue"
           >
             Select Ingredient
@@ -1948,7 +1948,7 @@ exports[`Storyshots Components/Select Mobile 1`] = `
             
                         
             <span
-              class="fd-select__text"
+              class="fd-select__text-content"
             >
               Select Ingredient
             </span>
@@ -2212,7 +2212,7 @@ exports[`Storyshots Components/Select No wrapping 1`] = `
           
                 
           <span
-            class="fd-select__text"
+            class="fd-select__text-content"
             id="noWrappingValue"
           >
             Select
@@ -2413,7 +2413,7 @@ exports[`Storyshots Components/Select Popover style 1`] = `
           
                 
           <span
-            class="fd-select__text"
+            class="fd-select__text-content"
             id="matchSelectPopoverBodySizeValue"
           >
             Much Longer than Usual
@@ -2604,7 +2604,7 @@ exports[`Storyshots Components/Select Read-only 1`] = `
           
               
           <span
-            class="fd-select__text"
+            class="fd-select__text-content"
             id="readonlyValue"
           >
             Selected Item 2
@@ -2689,7 +2689,7 @@ exports[`Storyshots Components/Select States 1`] = `
                 
                             
                 <span
-                  class="fd-select__text"
+                  class="fd-select__text-content"
                   id="a4546C40Value"
                 >
                   Success
@@ -2920,7 +2920,7 @@ exports[`Storyshots Components/Select States 1`] = `
                 
                             
                 <span
-                  class="fd-select__text"
+                  class="fd-select__text-content"
                   id="b4546C40Value"
                 >
                   Error
@@ -3151,7 +3151,7 @@ exports[`Storyshots Components/Select States 1`] = `
                 
                             
                 <span
-                  class="fd-select__text"
+                  class="fd-select__text-content"
                   is="b45336C4Value"
                 >
                   Warning
@@ -3382,7 +3382,7 @@ exports[`Storyshots Components/Select States 1`] = `
                 
                             
                 <span
-                  class="fd-select__text"
+                  class="fd-select__text-content"
                   id="h45336C4Value"
                 >
                   Information
@@ -3617,7 +3617,7 @@ exports[`Storyshots Components/Select Text wrapping 1`] = `
           
                 
           <span
-            class="fd-select__text"
+            class="fd-select__text-content"
             is="textWrappingValue"
           >
             Select
