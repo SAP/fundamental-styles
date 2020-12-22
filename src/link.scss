@@ -11,13 +11,9 @@ $block: #{$fd-namespace}-link;
   @include fd-link();
 
   &:hover {
-    .#{$block}__icon {
-      @include fd-reset();
-
-      &::before {
-        text-decoration: underline;
-        color: var(--sapLink_Hover_Color);
-      }
+    @include fd-icon-selector() {
+      text-decoration: underline;
+      color: var(--sapLink_Hover_Color);
     }
   }
 }
