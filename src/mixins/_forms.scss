@@ -70,6 +70,7 @@
   &.is-information,
   &.is-error {
     border-width: $fd-form-border-thick-width;
+    border-style: var(--fdInput_State_Border_Type);
 
     @include fd-focus() {
       box-shadow: none;
