@@ -27,8 +27,8 @@
   &.is-error {
     background-color: var(--sapField_InvalidBackground);
     border-color: var(--sapField_InvalidColor);
-    font-style: var(--fdError_Input_Text_Style);
-    font-weight: var(--fdError_Input_Font_Weight);
+    font-style: var(--fdInput_State_Text_Style);
+    font-weight: var(--fdInput_State_Font_Weight);
 
     @include fd-hover() {
       background-color: var(--sapField_InvalidBackground);
@@ -40,6 +40,8 @@
   &.is-alert {
     background-color: var(--sapField_WarningBackground);
     border-color: var(--sapField_WarningColor);
+    font-style: var(--fdInput_State_Text_Style);
+    font-weight: var(--fdInput_State_Font_Weight);
 
     @include fd-hover() {
       background-color: var(--sapField_WarningBackground);

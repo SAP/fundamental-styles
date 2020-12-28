@@ -101,9 +101,14 @@
 
   /* Input */
   --fdInput_Text_Shadow: none;
-  --fdError_Input_Text_Style: normal;
-  --fdError_Input_Font_Weight: normal;
+  --fdInput_State_Text_Style: normal;
+  --fdInput_State_Font_Weight: normal;
   --fdInput_State_Border_Type: solid;
+  --fdPlaceholder_Text_Style: normal;
+
+  /* Form Message */
+  --fdMessage_Box_Shadow: var(--sapContent_Shadow1);
+  --fdMessage_Border: none;
 
   /* Calendar */
   --fdCalendar_Text_Shadow: none;
