@@ -77,7 +77,7 @@ $fd-button-split-margin: 0.125rem / 2;
     }
   }
 
-  .fd-button__text {
+  .#{$fd-namespace}-button__text {
     @include fd-ellipsis();
 
     max-width: 9.75rem;
