@@ -66,6 +66,33 @@ standard.parameters = {
     }
 };
 
+export const unread = () => `<h4>Unread Options</h4>
+<ul class="fd-list" role="list">
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--unread">
+      <span class="fd-list__title">List item 1 Unread</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--unread">
+      <span class="fd-list__title">List item 2 Unread</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+      <span class="fd-list__title">List item 3 Read</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+      <span class="fd-list__title">List item 4 Read</span>
+  </li>
+</ul>
+`;
+
+unread.storyName = 'Unread';
+
+unread.parameters = {
+    docs: {
+        iframeHeight: 445,
+        storyDescription: `The \`fd-list__item--unread\` modifier will change the font weight to bold for easier legibility.
+        `
+    }
+};
+
 export const navigation = () => `<ul class="fd-list fd-list--navigation" role="list">
   <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
       <a tabindex="0" class="fd-list__link">
