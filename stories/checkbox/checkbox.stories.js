@@ -92,6 +92,28 @@ On desktop screens, the checkbox appears smaller and uses the <code>fd-checkbox\
     }
 };
 
+export const required = () => `
+<fieldset class="fd-fieldset">
+    <legend class="fd-fieldset__legend">Required checkbox</legend>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez611c">
+            <label class="fd-form-label--required fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez611c">
+                <span class="fd-checkbox__text">Required Checkbox</span>
+            </label>
+        </div>
+    </div>
+</fieldset>
+`;
+required.storyName = 'Required';
+required.parameters = {
+    docs: {
+        iframeHeight: 330,
+        storyDescription: `To show that a checkbox input is required, use the <code>fd-from-label--required</code> class.
+        `
+    }
+};
+
 export const mobile = () => `
 ${localStyles}
 <fieldset class="fd-fieldset">
