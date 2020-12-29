@@ -21,7 +21,7 @@ Use a meaningful link text that indicates what will happen when the user interac
 Avoid texts such as *Click Here* or *Link*, as these do not make it clear to the user what the purpose of the link is.
 `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['link']
+        components: ['icon', 'link']
     }
 };
 
