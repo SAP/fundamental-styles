@@ -1,0 +1,92 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-quick-view;
+
+$fd-quick-view-avatar-indent: 0.75rem;
+$fd-quick-view-group-item-indent: 0.75rem;
+
+.#{$block} {
+  @include fd-reset();
+
+  @include fd-rtl() {
+    .#{$fd-namespace}-bar--header-with-subheader {
+      .#{$fd-namespace}-avatar {
+        margin-right: 0;
+        margin-left: $fd-quick-view-avatar-indent;
+      }
+    }
+  }
+
+  min-width: 20rem;
+
+  > *:first-child {
+    border-top-right-radius: $fd-popover-border-radius;
+    border-top-left-radius: $fd-popover-border-radius;
+  }
+
+  &__content {
+    @include fd-reset();
+
+    padding: 1rem;
+  }
+
+  .#{$fd-namespace}-bar {
+    padding: 0;
+
+    &--header-with-subheader {
+      height: auto;
+      padding-bottom: $fd-quick-view-group-item-indent;
+
+      .#{$fd-namespace}-avatar {
+        margin-right: $fd-quick-view-avatar-indent;
+      }
+
+      .#{$fd-namespace}-bar {
+        &__left,
+        &__middle,
+        &__right {
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+
+  &__subheader-text {
+    max-width: 100%;
+    min-width: 0; // fix for flex width https://github.com/philipwalton/flexbugs#flexbug-17
+  }
+
+  &__subtitle {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    margin-top: 0.25rem;
+    color: var(--sapTile_TextColor);
+  }
+
+  .#{$fd-namespace}-input:not(input) {
+    height: auto;
+    padding: 0;
+    border: none;
+  }
+
+  .#{$fd-namespace}-dialog__body & {
+    &__content {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  .#{$fd-namespace}-form-item {
+    padding-top: $fd-quick-view-group-item-indent;
+  }
+
+  .#{$fd-namespace}-title {
+    .#{$fd-namespace}-link {
+      @include fd-ellipsis();
+
+      width: 100%;
+    }
+  }
+}
