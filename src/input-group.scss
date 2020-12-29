@@ -119,7 +119,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     @include fd-ellipsis();
 
     color: var(--sapContent_NonInteractiveIconColor);
-    background-color: var(--sapField_Background);
+    background: none !important;
     font-size: var(--sapFontLargeSize);
     min-width: 2.25rem;
     min-height: $fd-form-input-height;
@@ -193,6 +193,16 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
     border: none;
     width: 100%;
+    z-index: auto !important;
+    position: static !important;
+
+    @include fd-focus() {
+      outline: 0 !important;
+    }
+
+    &::before {
+      display: none !important;
+    }
   }
 
   .#{$fd-namespace}-button.#{$block}__button {

@@ -6,23 +6,12 @@ $block: #{$fd-namespace}-button;
   background-color: $backgroundColor;
 }
 
-@mixin buttonFocus($fd-button-outline-offset: 0.0625rem) {
-  &::after {
-    content: "";
-    position: absolute;
-    width: auto;
-    height: auto;
-    top: $fd-button-outline-offset;
-    left: $fd-button-outline-offset;
-    right: $fd-button-outline-offset;
-    bottom: $fd-button-outline-offset;
-    border: var(--sapContent_FocusWidth) dotted var(--sapContent_FocusColor);
-    @content;
-  }
+@mixin buttonFocus($fd-button-outline-offset: -0.1875rem) {
+  outline: var(--sapContent_FocusWidth) dotted var(--sapContent_FocusColor);
+  outline-offset: $fd-button-outline-offset;
+  @content;
 
   &.#{$block}--toggled {
-    &::after {
-      border: var(--sapContent_FocusWidth) dotted var(--sapContent_ContrastFocusColor);
-    }
+    outline-color: var(--sapContent_ContrastFocusColor);
   }
 }

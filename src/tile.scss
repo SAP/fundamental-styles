@@ -67,13 +67,23 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
 @mixin set-height($height) {
   height: $height;
   min-height: $height;
-  max-height: $height;
+
+  @if ($height == 'auto') {
+    max-height: none;
+  } @else {
+    max-height: $height;
+  }
 }
 
 @mixin set-width($width) {
   width: $width;
   min-width: $width;
-  max-width: $width;
+
+  @if ($width == 'auto') {
+    max-width: none;
+  } @else {
+    max-width: $width;
+  }
 }
 
 @mixin line-clamp($lines: 2) {
@@ -98,33 +108,6 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       right: 0;
       bottom: 0;
       z-index: 3;
-    }
-  }
-}
-
-@mixin focus-close-button-outline() {
-  &:focus,
-  &.is-focus {
-    outline: none;
-
-    &::after {
-      content: '';
-      width: 1.5rem;
-      height: 1.5rem;
-      top: -0.0625rem;
-      left: 0.4375rem;
-      right: 0;
-      bottom: 0;
-      z-index: 3;
-
-      @content;
-    }
-
-    @include fd-rtl() {
-      &::after {
-        left: 0;
-        right: 0.4375rem;
-      }
     }
   }
 }
@@ -622,9 +605,8 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
     }
 
     .#{$block}__action-close {
-      @include set-height(2rem);
-      @include set-width(2rem);
-      @include focus-close-button-outline();
+      @include set-height(auto);
+      @include set-width(auto);
 
       display: flex;
       align-items: flex-start;
@@ -652,14 +634,25 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
         color: var(--sapButton_IconColor);
         font-size: 0.75rem;
 
+        // Extended clickable/touchable area
         &::before {
-          width: auto;
-          height: auto;
+          @include set-height(2rem);
+          @include set-width(2rem);
+
+          top: 0;
+          right: 0;
+          left: auto;
+          bottom: auto;
+
+          @include fd-rtl() {
+            right: auto;
+            left: 0;
+          }
         }
       }
 
       @include fd-focus() {
-        outline: none;
+        @include buttonFocus(-0.0625rem);
       }
 
       &::-moz-focus-inner {
@@ -700,12 +693,6 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       @include fd-active() {
         background: transparent;
         border-color: transparent;
-
-        @include fd-focus() {
-          &::after {
-            border-color: var(--sapContent_FocusColor);
-          }
-        }
       }
     }
 
