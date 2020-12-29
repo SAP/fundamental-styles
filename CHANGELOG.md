@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.1-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.13...v0.14.1-rc.14) (2020-12-29)
+
+
+### Bug Fixes
+
+* hover text decoration of icon with link ([#1976](https://github.com/SAP/fundamental-styles/issues/1976)) ([a70dc12](https://github.com/SAP/fundamental-styles/commit/a70dc128376a09058eea656646b9975b40a00d26))
+* segmented button on calendar ([#1993](https://github.com/SAP/fundamental-styles/issues/1993)) ([91ef62b](https://github.com/SAP/fundamental-styles/commit/91ef62b8165bd76c046190d415de79bc0aaa2d4f))
+* table footer background color ([#1992](https://github.com/SAP/fundamental-styles/issues/1992)) ([d2b0b58](https://github.com/SAP/fundamental-styles/commit/d2b0b5834738ee33782ceed912a10efd85115397))
+
 ### [0.14.1-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.12...v0.14.1-rc.13) (2020-12-29)
 
 
