@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.1-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.12...v0.14.1-rc.13) (2020-12-29)
+
+
+### Features
+
+* introduce Quick View component ([#1898](https://github.com/SAP/fundamental-styles/issues/1898)) ([04249c2](https://github.com/SAP/fundamental-styles/commit/04249c2f534bb2f2f14b0dd0b0f523b4c65e1e30))
+
 ### [0.14.1-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.11...v0.14.1-rc.12) (2020-12-22)
 
 ### [0.14.1-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.10...v0.14.1-rc.11) (2020-12-18)
