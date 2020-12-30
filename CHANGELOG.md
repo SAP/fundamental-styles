@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.1-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.15...v0.14.1-rc.16) (2020-12-30)
+
+
+### Bug Fixes
+
+* focus of select ([#1973](https://github.com/SAP/fundamental-styles/issues/1973)) ([860970e](https://github.com/SAP/fundamental-styles/commit/860970e4b1d0cab2eae44a93650b42da50990347))
+
 ### [0.14.1-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.14...v0.14.1-rc.15) (2020-12-29)
 
 ### [0.14.1-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.13...v0.14.1-rc.14) (2020-12-29)
