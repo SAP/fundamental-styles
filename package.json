@@ -52,7 +52,7 @@
     "@sap-theming/theming-base-content": "~11.1.24",
     "@storybook/addon-a11y": "6.1.11",
     "@storybook/addon-actions": "6.0.28",
-    "@storybook/addon-cssresources": "6.0.28",
+    "@storybook/addon-cssresources": "6.1.11",
     "@storybook/addon-docs": "6.1.9",
     "@storybook/addon-knobs": "6.0.28",
     "@storybook/addon-links": "6.0.28",
