@@ -291,7 +291,7 @@ $inverted-color-accents: (
 
   // CLICKABLE OBJECT STATUS
   &--link {
-    @include fd-fiori-focus-within(0);
+    @include fd-fiori-focus(0);
 
     text-decoration: none;
     cursor: pointer;
