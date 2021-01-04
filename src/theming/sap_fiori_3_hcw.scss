@@ -101,6 +101,13 @@
 
   /* Input */
   --fdInput_Text_Shadow: none;
+  --fdInput_State_Text_Style: italic;
+  --fdInput_State_Font_Weight: bold;
+  --fdInput_State_Border_Type: dashed;
+
+  /* Form Message */
+  --fdMessage_Box_Shadow: none;
+  --fdMessage_Border: calc(2 * var(--sapField_BorderWidth)) solid var(--sapField_BorderColor);
 
   /* Calendar */
   --fdCalendar_Text_Shadow: none;
