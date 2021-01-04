@@ -97,8 +97,8 @@ export const required = () => `
     <legend class="fd-fieldset__legend">Required checkbox</legend>
     <div class="fd-form-group">
         <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez611c">
-            <label class="fd-form-label--required fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez611c">
+            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez61rc">
+            <label class="fd-form-label--required fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez61rc">
                 <span class="fd-checkbox__text">Required Checkbox</span>
             </label>
         </div>
