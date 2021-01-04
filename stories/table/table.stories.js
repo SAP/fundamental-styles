@@ -247,9 +247,9 @@ export const footer = () => `
     <tfoot class="fd-table__footer">
         <tr class="fd-table__row">
             <td class="fd-table__cell"></td>
-            <td class="fd-table__cell"></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell"></td>
         </tr>
     </tfoot>
 </table>`;
@@ -258,7 +258,7 @@ footer.storyName = 'Footer';
 footer.parameters = {
     docs: {
         storyDescription: `
-Table can be displayed with a footer. To display a table footer, add the \`td-table__footer\` class with a \`tfoot\` element. It must contain the same amount and size of columns as the table head and body containers.
+Table can be displayed with a footer. To display a table footer, add the \`fd-table__footer\` class with a \`tfoot\` element. It must contain the same amount and size of columns as the table head and body containers.
     `
     }
 };
@@ -1596,8 +1596,7 @@ responsiveTable.storyName = 'Responsive Table';
 responsiveTable.parameters = {
     docs: {
         storyDescription: `
-...
-
+The desktop responsive table markup is exactly the same as the regular table.
     `
     }
 };
