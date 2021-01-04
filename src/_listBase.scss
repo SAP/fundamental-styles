@@ -26,6 +26,12 @@
     background: var(--sapList_Background);
     position: relative;
 
+    &--unread {
+      .#{$block}__title {
+        font-weight: bold;
+      }
+    }
+
     &--no-data {
       .#{$block}__title {
         text-align: center;

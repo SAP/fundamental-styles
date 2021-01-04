@@ -1544,3 +1544,90 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
 
 </section>
 `;
+
+exports[`Storyshots Components/List/Standard Unread 1`] = `
+<section>
+  <h4>
+    Unread Options
+  </h4>
+  
+
+  <ul
+    class="fd-list"
+    role="list"
+  >
+    
+  
+    <li
+      class="fd-list__item fd-list__item--unread"
+      role="listitem"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__title"
+      >
+        List item 1 Unread
+      </span>
+      
+  
+    </li>
+    
+  
+    <li
+      class="fd-list__item fd-list__item--unread"
+      role="listitem"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__title"
+      >
+        List item 2 Unread
+      </span>
+      
+  
+    </li>
+    
+  
+    <li
+      class="fd-list__item"
+      role="listitem"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__title"
+      >
+        List item 3 Read
+      </span>
+      
+  
+    </li>
+    
+  
+    <li
+      class="fd-list__item"
+      role="listitem"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__title"
+      >
+        List item 4 Read
+      </span>
+      
+  
+    </li>
+    
+
+  </ul>
+  
+
+</section>
+`;
