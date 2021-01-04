@@ -5,12 +5,12 @@ exports[`Storyshots Components/Switch Default 1`] = `
 
 `;
 
-exports[`Storyshots Components/Switch Semantic Switch 1`] = `
+exports[`Storyshots Components/Switch Optional text 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Switch With Text 1`] = `
+exports[`Storyshots Components/Switch States 1`] = `
 
 
 `;
