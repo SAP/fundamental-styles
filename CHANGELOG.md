@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.1-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.25...v0.14.1-rc.26) (2021-01-04)
+
+
+### Features
+
+* unread selection ([#1997](https://github.com/SAP/fundamental-styles/issues/1997)) ([9d74d88](https://github.com/SAP/fundamental-styles/commit/9d74d889b703cc5307189d95931c23896448e3a1))
+
 ### [0.14.1-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.24...v0.14.1-rc.25) (2021-01-04)
 
 ### [0.14.1-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.23...v0.14.1-rc.24) (2021-01-04)
