@@ -164,11 +164,11 @@ export const clickableObjectStatus = () => `<div class="fddocs-container">
         <i class="fd-object-status__icon sap-icon--status-positive" role="presentation"></i>
         <span class="fd-object-status__text">Positive</span>
     </a>
-    <span role="button" class="fd-object-status fd-object-status--informative fd-object-status--link">
+    <span role="button" class="fd-object-status fd-object-status--informative fd-object-status--link" tabindex="0">
         <i class="fd-object-status__icon sap-icon--hint" role="presentation"></i>
         <span class="fd-object-status__text">Info</span>
     </span>
-    <span role="button" class="fd-object-status fd-object-status--link">
+    <span role="button" class="fd-object-status fd-object-status--link" tabindex="0">
         <i class="fd-object-status__icon sap-icon--to-be-reviewed" role="presentation"></i>
         <span class="fd-object-status__text">Neutral</span>
     </span>
@@ -188,13 +188,13 @@ export const clickableObjectStatus = () => `<div class="fddocs-container">
     <a href="#"  class="fd-object-status fd-object-status--link fd-object-status--indication-5">
         <span class="fd-object-status__text">Blue</span>
     </a>
-    <span role="button" class="fd-object-status fd-object-status--link fd-object-status--indication-6">
+    <span role="button" class="fd-object-status fd-object-status--link fd-object-status--indication-6" tabindex="0">
         <span class="fd-object-status__text">Teal</span>
     </span>
-    <span role="button" class="fd-object-status fd-object-status--link fd-object-status--indication-7">
+    <span role="button" class="fd-object-status fd-object-status--link fd-object-status--indication-7" tabindex="0">
         <span class="fd-object-status__text">Purple</span>
     </span>
-    <span role="button" class="fd-object-status fd-object-status--link fd-object-status--indication-8">
+    <span role="button" class="fd-object-status fd-object-status--link fd-object-status--indication-8" tabindex="0">
         <span class="fd-object-status__text">Pink</span>
     </span>
 </div>
@@ -330,28 +330,28 @@ export const invertedIndication = () => `<div class="fddocs-container">
 
 <h4>Clickable Inverted Object Status</h4>
 <div class="fddocs-container">
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1">
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1" tabindex="0">
         <span class="fd-object-status__text">Indication1</span>
     </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-2">
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-2" tabindex="0">
         <span class="fd-object-status__text">Indication2</span>
     </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-3">
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-3" tabindex="0">
         <span class="fd-object-status__text">Indication3</span>
     </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-4">
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-4" tabindex="0">
         <span class="fd-object-status__text">Indication4</span>
     </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-5">
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-5" tabindex="0">
         <span class="fd-object-status__text">Indication5</span>
     </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-6">
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-6" tabindex="0">
         <span class="fd-object-status__text">Indication6</span>
     </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-7">
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-7" tabindex="0">
         <span class="fd-object-status__text">Indication7</span>
     </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8">
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8" tabindex="0">
         <span class="fd-object-status__text">Indication8</span>
     </span>
 </div>
