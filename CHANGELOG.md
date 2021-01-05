@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.1-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.27...v0.14.1-rc.28) (2021-01-05)
+
+
+### Bug Fixes
+
+* object status link focus ([#2010](https://github.com/SAP/fundamental-styles/issues/2010)) ([4b38d84](https://github.com/SAP/fundamental-styles/commit/4b38d84a0a5c752c9047ab40f11a71e3cc5bbf48))
+
 ### [0.14.1-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.26...v0.14.1-rc.27) (2021-01-04)
 
 ### [0.14.1-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.25...v0.14.1-rc.26) (2021-01-04)
