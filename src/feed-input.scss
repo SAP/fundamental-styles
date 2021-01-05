@@ -46,6 +46,10 @@ $block: #{$fd-namespace}-feed-input;
     max-height: $fd-feed-input-max-height;
     margin: 0;
     padding: 0.3125rem 0.5rem;
+
+    &::placeholder {
+      font-style: var(--fdFeed_Input_Placeholder_Font_Style);
+    }
   }
 
   // It's needed to have stronger selector to override fd-button styles
