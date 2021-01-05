@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.1-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.28...v0.14.1-rc.29) (2021-01-05)
+
+
+### Bug Fixes
+
+* Add delta theming properties to message strip ([#2013](https://github.com/SAP/fundamental-styles/issues/2013)) ([3a6ff61](https://github.com/SAP/fundamental-styles/commit/3a6ff6157eada75885f5b0236f5b898f5a967cd5))
+
 ### [0.14.1-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.27...v0.14.1-rc.28) (2021-01-05)
 
 
