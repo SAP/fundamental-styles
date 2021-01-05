@@ -75,6 +75,7 @@ exports[`Storyshots Components/Object Status Clickable Object Status 1`] = `
   <span
     class="fd-object-status fd-object-status--informative fd-object-status--link"
     role="button"
+    tabindex="0"
   >
     
         
@@ -97,6 +98,7 @@ exports[`Storyshots Components/Object Status Clickable Object Status 1`] = `
   <span
     class="fd-object-status fd-object-status--link"
     role="button"
+    tabindex="0"
   >
     
         
@@ -200,6 +202,7 @@ exports[`Storyshots Components/Object Status Clickable Object Status 1`] = `
   <span
     class="fd-object-status fd-object-status--link fd-object-status--indication-6"
     role="button"
+    tabindex="0"
   >
     
         
@@ -216,6 +219,7 @@ exports[`Storyshots Components/Object Status Clickable Object Status 1`] = `
   <span
     class="fd-object-status fd-object-status--link fd-object-status--indication-7"
     role="button"
+    tabindex="0"
   >
     
         
@@ -232,6 +236,7 @@ exports[`Storyshots Components/Object Status Clickable Object Status 1`] = `
   <span
     class="fd-object-status fd-object-status--link fd-object-status--indication-8"
     role="button"
+    tabindex="0"
   >
     
         
@@ -1039,6 +1044,7 @@ exports[`Storyshots Components/Object Status Inverted Indication 1`] = `
     
     <span
       class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1"
+      tabindex="0"
     >
       
         
@@ -1054,6 +1060,7 @@ exports[`Storyshots Components/Object Status Inverted Indication 1`] = `
     
     <span
       class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-2"
+      tabindex="0"
     >
       
         
@@ -1069,6 +1076,7 @@ exports[`Storyshots Components/Object Status Inverted Indication 1`] = `
     
     <span
       class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-3"
+      tabindex="0"
     >
       
         
@@ -1084,6 +1092,7 @@ exports[`Storyshots Components/Object Status Inverted Indication 1`] = `
     
     <span
       class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-4"
+      tabindex="0"
     >
       
         
@@ -1099,6 +1108,7 @@ exports[`Storyshots Components/Object Status Inverted Indication 1`] = `
     
     <span
       class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-5"
+      tabindex="0"
     >
       
         
@@ -1114,6 +1124,7 @@ exports[`Storyshots Components/Object Status Inverted Indication 1`] = `
     
     <span
       class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-6"
+      tabindex="0"
     >
       
         
@@ -1129,6 +1140,7 @@ exports[`Storyshots Components/Object Status Inverted Indication 1`] = `
     
     <span
       class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-7"
+      tabindex="0"
     >
       
         
@@ -1144,6 +1156,7 @@ exports[`Storyshots Components/Object Status Inverted Indication 1`] = `
     
     <span
       class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8"
+      tabindex="0"
     >
       
         
