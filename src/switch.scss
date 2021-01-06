@@ -23,8 +23,10 @@ $block: #{$fd-namespace}-switch;
   $fd-switch-border-width: var(--sapButton_BorderWidth);
   $fd-switch-handle-border-width: var(--fdSwitch_Handle_Border_Width);
   $fd-switch-slider-on-hover-background: var(--fdSwitch_On_Hover_Slider_Background);
-  $fd-switch-semantic-success-border-color: var(--fdSwitch_Semantic_Success_Border-Color);
-  $fd-switch-semantic-success-background-color: var(--fdSwitch_Semantic_Success_Background-Color);
+  $fd-switch-semantic-success-border-color: var(--fdSwitch_Semantic_Success_Border_Color);
+  $fd-switch-semantic-success-background-color: var(--fdSwitch_Semantic_Success_Background_Color);
+  $fd-switch-semantic-error-border-color: var(--fdSwitch_Semantic_Error_Border_Color);
+  $fd-switch-semantic-error-background-color: var(--fdSwitch_Semantic_Error_Background_Color);
 
   $fd-switch-label-width: 1.75rem;
 
@@ -308,19 +310,19 @@ $block: #{$fd-namespace}-switch;
 
     @include fd-hover() {
       .#{$block}__slider {
-        border-color: $fd-switch-error-border-color;
+        border-color: $fd-switch-semantic-error-border-color;
       }
 
       .#{$block}__handle {
-        background-color: var(--sapErrorBackground);
-        border-color: $fd-switch-error-border-color;
+        background-color: $fd-switch-semantic-error-background-color;
+        border-color: $fd-switch-semantic-error-border-color;
       }
 
       .#{$block}__input:checked + .#{$block}__slider {
         background-color: $fd-switch-semantic-success-background-color;
         border-color: $fd-switch-semantic-success-border-color;
         .#{$block}__handle {
-          background-color: var(--sapSuccessBackground);
+          background-color: $fd-switch-semantic-success-background-color;
           border-color: $fd-switch-semantic-success-border-color;
         }
       }

@@ -150,6 +150,8 @@
   /* Switch */
   --fdSwitch_Handle_Border_Width: var(--sapButton_BorderWidth);
   --fdSwitch_On_Hover_Slider_Background: var(--sapButton_Track_Selected_Background);
-  --fdSwitch_Semantic_Success_Border-Color: var(--sapSuccessColor);
-  --fdSwitch_Semantic_Success_Background-Color: var(--sapSuccessBackground);
+  --fdSwitch_Semantic_Success_Border_Color: var(--sapSuccessColor);
+  --fdSwitch_Semantic_Success_Background_Color: var(--sapSuccessBackground);
+  --fdSwitch_Semantic_Error_Border_Color: var(--sapErrorBorderColor);
+  --fdSwitch_Semantic_Error_Background_Color: var(--sapErrorBackground);
 }
