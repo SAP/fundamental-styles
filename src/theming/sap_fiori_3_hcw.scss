@@ -170,4 +170,10 @@
   /* Link */
   --fdLink_Text_Decoration_Opposite: none;
   --fdLink_Text_Decoration: underline;
+
+  /* Message Box */
+  --fdMessage_Box_Error_Box_Shadow: inset 0 -0.125rem var(--sapErrorBorderColor);
+  --fdMessage_Box_Success_Box_Shadow: inset 0 -0.125rem var(--sapSuccessBorderColor);
+  --fdMessage_Box_Warning_Box_Shadow: inset 0 -0.125rem var(--sapWarningBorderColor);
+  --fdMessage_Box_Information_Box_Shadow: inset 0 -0.125rem var(--sapInformationBorderColor);
 }
