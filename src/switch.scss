@@ -27,6 +27,7 @@ $block: #{$fd-namespace}-switch;
   $fd-switch-semantic-success-background-color: var(--fdSwitch_Semantic_Success_Background_Color);
   $fd-switch-semantic-error-border-color: var(--fdSwitch_Semantic_Error_Border_Color);
   $fd-switch-semantic-error-background-color: var(--fdSwitch_Semantic_Error_Background_Color);
+  $fd-switch-semantic-success-handle-hover-background-color: var(--fdSwitch_Semantic_Success_Handle_Hover_Background_Color);
 
   $fd-switch-label-width: 1.75rem;
 
@@ -322,7 +323,7 @@ $block: #{$fd-namespace}-switch;
         background-color: $fd-switch-semantic-success-background-color;
         border-color: $fd-switch-semantic-success-border-color;
         .#{$block}__handle {
-          background-color: $fd-switch-semantic-success-background-color;
+          background-color: $fd-switch-semantic-success-handle-hover-background-color;
           border-color: $fd-switch-semantic-success-border-color;
         }
       }
