@@ -146,4 +146,8 @@
 
   /* Message Strip */
   --fdMessageStripBorderWidth: 0.0625rem;
+
+  /* Page */
+  --fdPage_List_Background: var(--sapGroup_ContentBackground);
+  --fdPage_Transparent_Background: transparent;
 }
