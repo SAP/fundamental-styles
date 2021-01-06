@@ -25,10 +25,9 @@ $block: #{$fd-namespace}-switch;
   $fd-switch-slider-on-hover-background: var(--fdSwitch_On_Hover_Slider_Background);
   $fd-switch-semantic-success-border-color: var(--fdSwitch_Semantic_Success_Border_Color);
   $fd-switch-semantic-success-background-color: var(--fdSwitch_Semantic_Success_Background_Color);
-  $fd-switch-semantic-error-border-color: var(--fdSwitch_Semantic_Error_Border_Color);
   $fd-switch-semantic-error-background-color: var(--fdSwitch_Semantic_Error_Background_Color);
   $fd-switch-semantic-success-handle-hover-background-color: var(--fdSwitch_Semantic_Success_Handle_Hover_Background_Color);
-  $fd-switch-semantic-error-icon-color: var(--fdSwitch_Semantic_Error_Icon_Color);
+  $fd-switch-semantic-error-color: var(--fdSwitch_Semantic_Error_Color);
 
   $fd-switch-label-width: 1.75rem;
 
@@ -313,16 +312,16 @@ $block: #{$fd-namespace}-switch;
     @include fd-hover() {
 
       .#{$block}__icon {
-        color: $fd-switch-semantic-error-border-color;
+        color: $fd-switch-semantic-error-color;
       }
 
       .#{$block}__slider {
-        border-color: $fd-switch-semantic-error-icon-color;
+        border-color: $fd-switch-semantic-error-color;
       }
 
       .#{$block}__handle {
         background-color: $fd-switch-semantic-error-background-color;
-        border-color: $fd-switch-semantic-error-border-color;
+        border-color: $fd-switch-semantic-error-color;
       }
 
       .#{$block}__input:checked + .#{$block}__slider {
