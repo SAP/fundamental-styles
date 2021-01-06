@@ -145,4 +145,10 @@
 
   /* Message Strip */
   --fdMessageStripBorderWidth: 0.125rem;
+
+  /* Switch */
+  --fdSwitch_Handle_Border_Width: 0.125rem;
+  --fdSwitch_On_Hover_Slider_Background: var(--sapButton_Background);
+  --fdSwitch_Semantic_Success_Border-Color: var(--sapButton_Hover_BorderColor);
+  --fdSwitch_Semantic_Success_Background-Color: var(--sapButton_Background);
 }

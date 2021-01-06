@@ -21,6 +21,10 @@ $block: #{$fd-namespace}-switch;
   $fd-switch-success-border-color: var(--sapSuccessBorderColor);
   $fd-switch-error-border-color: var(--sapErrorBorderColor);
   $fd-switch-border-width: var(--sapButton_BorderWidth);
+  $fd-switch-handle-border-width: var(--fdSwitch_Handle_Border_Width);
+  $fd-switch-slider-on-hover-background: var(--fdSwitch_On_Hover_Slider_Background);
+  $fd-switch-semantic-success-border-color: var(--fdSwitch_Semantic_Success_Border-Color);
+  $fd-switch-semantic-success-background-color: var(--fdSwitch_Semantic_Success_Background-Color);
 
   $fd-switch-label-width: 1.75rem;
 
@@ -117,7 +121,7 @@ $block: #{$fd-namespace}-switch;
     @include fd-reset();
 
     box-sizing: content-box;
-    border: $fd-switch-border-width solid $fd-switch-inactive-border-color;
+    border: $fd-switch-handle-border-width solid $fd-switch-inactive-border-color;
     background-color: $fd-switch-inactive-handle-background;
     min-width: $fd-switch-handle-size;
     min-height: $fd-switch-handle-size;
@@ -227,8 +231,8 @@ $block: #{$fd-namespace}-switch;
       background-color: var(--sapButton_Hover_Background);
     }
 
-    .#{$block}:checked + .#{$block}__slider {
-      border-color: $fd-switch-hover-selected-border-color;
+    .#{$block}__input:checked + .#{$block}__slider {
+      background-color: $fd-switch-slider-on-hover-background;
 
       .#{$block}__handle {
         border-color: $fd-switch-hover-selected-border-color;
@@ -280,7 +284,7 @@ $block: #{$fd-namespace}-switch;
     }
 
     .#{$block}__input:checked + .#{$block}__slider {
-      background-color: var(--sapSuccessBackground);
+      background-color: $fd-switch-semantic-success-background-color;
       border-color: $fd-switch-success-border-color;
 
       .#{$block}__track {
@@ -313,8 +317,11 @@ $block: #{$fd-namespace}-switch;
       }
 
       .#{$block}__input:checked + .#{$block}__slider {
+        background-color: $fd-switch-semantic-success-background-color;
+        border-color: $fd-switch-semantic-success-border-color;
         .#{$block}__handle {
           background-color: var(--sapSuccessBackground);
+          border-color: $fd-switch-semantic-success-border-color;
         }
       }
     }
