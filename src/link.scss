@@ -1,5 +1,5 @@
-@import "./new-settings";
-@import "./mixins";
+@import './new-settings';
+@import './mixins';
 
 /*!
 .fd-link
@@ -10,10 +10,28 @@ $block: #{$fd-namespace}-link;
   @include fd-reset();
   @include fd-link();
 
-  &:hover {
+  @include fd-icon-selector() {
+    text-decoration: var(--fdLink_Text_Decoration);
+  }
+
+  @include fd-hover() {
     @include fd-icon-selector() {
-      text-decoration: underline;
+      text-decoration: var(--fdLink_Text_Decoration_Opposite);
       color: var(--sapLink_Hover_Color);
+    }
+  }
+
+  @include fd-focus() {
+    @include fd-icon-selector() {
+      text-decoration: var(--fdLink_Text_Decoration_Opposite);
+      color: var(--sapLinkColor);
+    }
+  }
+
+  @include fd-active() {
+    @include fd-icon-selector() {
+      text-decoration: var(--fdLink_Text_Decoration_Opposite);
+      color: var(--sapLink_Active_Color);
     }
   }
 }

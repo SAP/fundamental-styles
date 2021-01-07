@@ -40,11 +40,11 @@ $block: #{$fd-namespace}-page;
   }
 
   &--list {
-    background: var(--sapGroup_ContentBackground);
+    background: var(--fdPage_List_Background);
   }
 
   &--transparent {
-    background: transparent;
+    background: var(--fdPage_Transparent_Background);
   }
 
   &--home {

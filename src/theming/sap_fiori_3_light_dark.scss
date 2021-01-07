@@ -134,20 +134,33 @@
   --fdCarousel_Dot_Border: none;
 
   /** Flexible Column Layout */
-  --fdFlexibleColumnLayoutToggleImageColor: var(--sapHighlightColor);
-  --fdFlexibleColumnLayoutBorder: none;
-  --fdFlexibleColumnBackgroundSolid: var(--sapShell_Background);
-  --fdFlexibleColumnBackgroundTranslucent: var(--sapGroup_ContentBackground);
-  --fdFlexibleColumnBackgroundTransparent: transparent;
+  --fdFlexibleColumnLayout_Toggle_Image_Color: var(--sapHighlightColor);
+  --fdFlexibleColumnLayout_Border: none;
+  --fdFlexibleColumnLayout_Background_Solid: var(--sapShell_Background);
+  --fdFlexibleColumnLayout_Background_Translucent: var(--sapGroup_ContentBackground);
+  --fdFlexibleColumnLayout_Background_Transparent: transparent;
 
   /** Dialog */
-  --fdDialogBackgroundOpacity: 0.6;
+  --fdDialog_Background_Opacity: 0.6;
 
   /* Grid List */
   --fdGrid_List_Item_Hover_Border_Color: var(--sapTile_Interactive_BorderColor);
 
   /* Message Strip */
-  --fdMessageStripBorderWidth: 0.0625rem;
+  --fdMessageStrip_Border_Width: 0.0625rem;
+
+  /* Page */
+  --fdPage_List_Background: var(--sapGroup_ContentBackground);
+  --fdPage_Transparent_Background: transparent;
+
+  /* Switch */
+  --fdSwitch_Handle_Border_Width: var(--sapButton_BorderWidth);
+  --fdSwitch_On_Hover_Slider_Background: var(--sapButton_Track_Selected_Background);
+  --fdSwitch_Semantic_Success_Border_Color: var(--sapSuccessColor);
+  --fdSwitch_Semantic_Success_Background_Color: var(--sapSuccessBackground);
+  --fdSwitch_Semantic_Error_Background_Color: var(--sapErrorBackground);
+  --fdSwitch_Semantic_Success_Handle_Hover_Background_Color: var(--sapSuccessBackground);
+  --fdSwitch_Semantic_Error_Color: var(--sapErrorBorderColor);
 
   /* Action List Item */
   --fdList_Item_Action_Border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
@@ -160,4 +173,8 @@
 
   /* Table */
   --fdTable_Hover_Down_Color: inherit;
+
+  /* Link */
+  --fdLink_Text_Decoration_Opposite: underline;
+  --fdLink_Text_Decoration: none;
 }
