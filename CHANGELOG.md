@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.1-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.32...v0.14.1-rc.33) (2021-01-07)
+
+
+### Bug Fixes
+
+* add delta theming for Link ([#2018](https://github.com/SAP/fundamental-styles/issues/2018)) ([a445585](https://github.com/SAP/fundamental-styles/commit/a4455854e8e24ea777a3eb95287f2aa95840d339))
+* add delta theming for Switch ([#2019](https://github.com/SAP/fundamental-styles/issues/2019)) ([e004236](https://github.com/SAP/fundamental-styles/commit/e00423609f97fa662dbb90a19262f4506d3380c2))
+
+### [0.14.1-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.31...v0.14.1-rc.32) (2021-01-07)
+
+
+### Bug Fixes
+
+* add delta theming for List ([#2028](https://github.com/SAP/fundamental-styles/issues/2028)) ([b5a87e4](https://github.com/SAP/fundamental-styles/commit/b5a87e44af4f443961370e1036c218e2f7b52c76))
+
+### [0.14.1-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.30...v0.14.1-rc.31) (2021-01-07)
+
+
+### Bug Fixes
+
+* Add Delta theming to combobox and multi input ([#2015](https://github.com/SAP/fundamental-styles/issues/2015)) ([43afe00](https://github.com/SAP/fundamental-styles/commit/43afe0055f1760b21e5f528548c62aed0ad7efe5))
+
+### [0.14.1-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.29...v0.14.1-rc.30) (2021-01-07)
+
+
+### Bug Fixes
+
+* Add theming to product switch ([#2014](https://github.com/SAP/fundamental-styles/issues/2014)) ([484ee4e](https://github.com/SAP/fundamental-styles/commit/484ee4ed574582d6d93366444e03673972eacfef))
+
 ### [0.14.1-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.28...v0.14.1-rc.29) (2021-01-05)
 
 

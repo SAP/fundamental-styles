@@ -206,7 +206,7 @@
 
 @mixin fd-link() {
   color: var(--sapLinkColor);
-  text-decoration: none;
+  text-decoration: var(--fdLink_Text_Decoration);
   text-shadow: var(--sapContent_TextShadow);
   display: inline-block;
   transition: all $fd-animation-speed ease-in;
@@ -222,7 +222,7 @@
 
   @include fd-hover() {
     color: var(--sapLink_Hover_Color);
-    text-decoration: underline;
+    text-decoration: var(--fdLink_Text_Decoration_Opposite);
   }
 
   @include fd-focus() {
@@ -231,10 +231,12 @@
     outline-width: var(--sapContent_FocusWidth);
     outline-color: var(--sapContent_FocusColor);
     outline-style: var(--sapContent_FocusStyle);
+    text-decoration: var(--fdLink_Text_Decoration_Opposite);
   }
 
   @include fd-active() {
     color: var(--sapLink_Active_Color);
+    text-decoration: var(--fdLink_Text_Decoration_Opposite);
   }
 
   &--inverted {
