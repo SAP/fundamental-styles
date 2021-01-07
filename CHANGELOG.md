@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.1-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.30...v0.14.1-rc.31) (2021-01-07)
+
+
+### Bug Fixes
+
+* Add Delta theming to combobox and multi input ([#2015](https://github.com/SAP/fundamental-styles/issues/2015)) ([43afe00](https://github.com/SAP/fundamental-styles/commit/43afe0055f1760b21e5f528548c62aed0ad7efe5))
+
 ### [0.14.1-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.29...v0.14.1-rc.30) (2021-01-07)
 
 
