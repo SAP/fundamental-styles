@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.1-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.31...v0.14.1-rc.32) (2021-01-07)
+
+
+### Bug Fixes
+
+* add delta theming for List ([#2028](https://github.com/SAP/fundamental-styles/issues/2028)) ([b5a87e4](https://github.com/SAP/fundamental-styles/commit/b5a87e44af4f443961370e1036c218e2f7b52c76))
+
 ### [0.14.1-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.30...v0.14.1-rc.31) (2021-01-07)
 
 
