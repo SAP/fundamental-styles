@@ -149,6 +149,10 @@
   /* Message Strip */
   --fdMessageStrip_Border_Width: 0.125rem;
 
+  /* Page */
+  --fdPage_List_Background: var(--sapBackgroundColor);
+  --fdPage_Transparent_Background: var(--sapBackgroundColor);
+
   /* Switch */
   --fdSwitch_Handle_Border_Width: 0.125rem;
   --fdSwitch_On_Hover_Slider_Background: var(--sapButton_Background);
