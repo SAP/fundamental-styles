@@ -5,6 +5,15 @@ $block: #{$fd-namespace}-select;
 $outline-offset: 0.1875rem;
 
 .#{$block} {
+  @mixin fd-control-button-side-border() {
+    border-left: var(--fdSelect_Button_Interractive_SideBorder);
+
+    @include fd-rtl() {
+      border-left: none;
+      border-right: var(--fdSelect_Button_Interractive_SideBorder);
+    }
+  }
+
   $fd-select-padding-x: 0.625rem;
   $fd-select-padding-compact-x: 0.5rem;
   $fd-select-button-active-text-color: var(--sapButton_Active_TextColor);
@@ -76,6 +85,8 @@ $outline-offset: 0.1875rem;
     @include fd-hover() {
       .#{$block}__button {
         background-color: var(--sapButton_Lite_Hover_Background);
+
+        @include fd-control-button-side-border();
       }
     }
 
@@ -88,6 +99,8 @@ $outline-offset: 0.1875rem;
         @include fd-fiori-focus() {
           outline-color: $fd-select-button-active-focus-color;
         }
+
+        @include fd-control-button-side-border();
       }
     }
 
@@ -99,6 +112,8 @@ $outline-offset: 0.1875rem;
         @include fd-fiori-focus() {
           outline-color: $fd-select-button-active-focus-color;
         }
+
+        @include fd-control-button-side-border();
       }
     }
 
