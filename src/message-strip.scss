@@ -57,7 +57,7 @@ $block: #{$fd-namespace}-message-strip;
   position: relative;
   color: $fd-message-strip-text-color;
   background-color: $fd-message-strip-background-color;
-  border-width: var(--fdMessageStripBorderWidth);
+  border-width: var(--fdMessageStrip_Border_Width);
   border-style: solid;
   border-color: $fd-message-strip-border-color;
   border-radius: $fd-message-strip-border-radius;
