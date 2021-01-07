@@ -134,20 +134,20 @@
   --fdCarousel_Dot_Border: 1px solid var(--sapContent_ForegroundBorderColor);
 
   /** Flexible Column Layout */
-  --fdFlexibleColumnLayoutToggleImageColor: var(--sapObjectHeader_BorderColor);
-  --fdFlexibleColumnLayoutBorder: solid 0.0625rem var(--sapGroup_ContentBorderColor);
-  --fdFlexibleColumnBackgroundSolid: var(--sapBackgroundColor);
-  --fdFlexibleColumnBackgroundTranslucent: var(--sapBackgroundColor);
-  --fdFlexibleColumnBackgroundTransparent: var(--sapBackgroundColor);
+  --fdFlexibleColumnLayout_Toggle_Image_Color: var(--sapObjectHeader_BorderColor);
+  --fdFlexibleColumnLayout_Border: solid 0.0625rem var(--sapGroup_ContentBorderColor);
+  --fdFlexibleColumnLayout_Background_Solid: var(--sapBackgroundColor);
+  --fdFlexibleColumnLayout_Background_Translucent: var(--sapBackgroundColor);
+  --fdFlexibleColumnLayout_Background_Transparent: var(--sapBackgroundColor);
 
   /** Dialog */
-  --fdDialogBackgroundOpacity: 0.8;
+  --fdDialog_Background_Opacity: 0.8;
 
   /* Grid List */
   --fdGrid_List_Item_Hover_Border_Color: var(--sapTile_Interactive_BorderColor);
 
   /* Message Strip */
-  --fdMessageStripBorderWidth: 0.125rem;
+  --fdMessageStrip_Border_Width: 0.125rem;
 
   /* Switch */
   --fdSwitch_Handle_Border_Width: 0.125rem;

@@ -9,7 +9,7 @@ $block: #{$fd-namespace}-flexible-column-layout;
   $fd-toggle-button-height: 2rem;
   $fd-toggle-button-width: 1.5rem;
   $fd-column-layout-separator-width: 1rem;
-  $fd-column-layout-border-x: var(--fdFlexibleColumnLayoutBorder);
+  $fd-column-layout-border-x: var(--fdFlexibleColumnLayout_Border);
   $fd-column-layout-expand-decoration-position: calc(50% + #{$fd-toggle-button-height} / 2);
 
   @include fd-reset();
@@ -22,7 +22,7 @@ $block: #{$fd-namespace}-flexible-column-layout;
     position: relative;
     width: $fd-column-layout-separator-width;
     min-width: $fd-column-layout-separator-width;
-    background-color: var(--fdFlexibleColumnBackgroundSolid);
+    background-color: var(--fdFlexibleColumnLayout_Background_Solid);
 
     @include both-pseudo-selectors() {
       content: "";
@@ -36,12 +36,12 @@ $block: #{$fd-namespace}-flexible-column-layout;
 
     &::before {
       bottom: $fd-column-layout-expand-decoration-position;
-      background-image: linear-gradient(to top, var(--fdFlexibleColumnLayoutToggleImageColor), transparent);
+      background-image: linear-gradient(to top, var(--fdFlexibleColumnLayout_Toggle_Image_Color), transparent);
     }
 
     &::after {
       top: $fd-column-layout-expand-decoration-position;
-      background-image: linear-gradient(to bottom, var(--fdFlexibleColumnLayoutToggleImageColor), transparent);
+      background-image: linear-gradient(to bottom, var(--fdFlexibleColumnLayout_Toggle_Image_Color), transparent);
     }
 
     @include fd-hover() {
@@ -85,13 +85,13 @@ $block: #{$fd-namespace}-flexible-column-layout;
 
   &--translucent {
     .#{$block}__separator {
-      background-color: var(--fdFlexibleColumnBackgroundTranslucent);
+      background-color: var(--fdFlexibleColumnLayout_Background_Translucent);
     }
   }
 
   &--transparent {
     .#{$block}__separator {
-      background-color: var(--fdFlexibleColumnBackgroundTransparent);
+      background-color: var(--fdFlexibleColumnLayout_Background_Transparent);
     }
   }
 }
