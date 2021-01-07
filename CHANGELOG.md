@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.1-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.32...v0.14.1-rc.33) (2021-01-07)
+
+
+### Bug Fixes
+
+* add delta theming for Link ([#2018](https://github.com/SAP/fundamental-styles/issues/2018)) ([a445585](https://github.com/SAP/fundamental-styles/commit/a4455854e8e24ea777a3eb95287f2aa95840d339))
+* add delta theming for Switch ([#2019](https://github.com/SAP/fundamental-styles/issues/2019)) ([e004236](https://github.com/SAP/fundamental-styles/commit/e00423609f97fa662dbb90a19262f4506d3380c2))
+
 ### [0.14.1-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.31...v0.14.1-rc.32) (2021-01-07)
 
 
