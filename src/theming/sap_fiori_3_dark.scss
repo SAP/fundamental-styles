@@ -177,4 +177,10 @@
   /* Link */
   --fdLink_Text_Decoration_Opposite: underline;
   --fdLink_Text_Decoration: none;
+
+  /* Message Box */
+  --fdMessage_Box_Error_Box_Shadow: inset 0 -0.0625rem var(--sapErrorBorderColor), var(--sapContent_HeaderShadow);
+  --fdMessage_Box_Success_Box_Shadow: inset 0 -0.0625rem var(--sapSuccessBorderColor), var(--sapContent_HeaderShadow);
+  --fdMessage_Box_Warning_Box_Shadow: inset 0 -0.0625rem var(--sapWarningBorderColor), var(--sapContent_HeaderShadow);
+  --fdMessage_Box_Information_Box_Shadow: inset 0 -0.0625rem var(--sapInformationBorderColor), var(--sapContent_HeaderShadow);
 }

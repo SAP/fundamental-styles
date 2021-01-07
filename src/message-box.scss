@@ -11,10 +11,10 @@ $fd-message-box-title-icon-text-size: 1rem;
 $fd-message-box-footer-button-min-width: 4rem;
 $fd-message-box-content-padding-x: (s: 1rem, m: 2rem, l: 2rem, xl: 3rem);
 $defaultBoxShadow: var(--sapContent_HeaderShadow);
-$errorBoxShadow: inset 0 -0.0625rem var(--sapErrorBorderColor), var(--sapContent_HeaderShadow);
-$successBoxShadow: inset 0 -0.0625rem var(--sapSuccessBorderColor), var(--sapContent_HeaderShadow);
-$warningBoxShadow: inset 0 -0.0625rem var(--sapWarningBorderColor), var(--sapContent_HeaderShadow);
-$informationBoxShadow: inset 0 -0.0625rem var(--sapInformationBorderColor), var(--sapContent_HeaderShadow);
+$errorBoxShadow: var(--fdMessage_Box_Error_Box_Shadow);
+$successBoxShadow: var(--fdMessage_Box_Success_Box_Shadow);
+$warningBoxShadow: var(--fdMessage_Box_Warning_Box_Shadow);
+$informationBoxShadow: var(--fdMessage_Box_Information_Box_Shadow);
 
 $message-box-states: (
   "confirmation": ("iconColor": var(--sapNeutralElementColor), "boxShadow": var(--sapContent_HeaderShadow)),
