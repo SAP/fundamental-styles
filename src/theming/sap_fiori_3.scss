@@ -149,4 +149,13 @@
 
   /* Message Strip */
   --fdMessageStripBorderWidth: 0.0625rem;
+
+  /* Action List Item */
+  --fdList_Item_Action_Border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+  --fdList_Item_Action_Height: 2.75rem;
+  --fdList_Item_Action_Button_Size: 100%;
+  --fdList_Item_Action_Button_Size_Compact: 100%;
+  --fdList_Item_Action_Button_Spacing: 0;
+  --fdList_Item_Action_Button_Border: none;
+  --fdList_Item_Action_Button_Border_Radius: 0;
 }
