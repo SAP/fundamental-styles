@@ -149,6 +149,15 @@
   /* Message Strip */
   --fdMessageStripBorderWidth: 0.0625rem;
 
+  /* Switch */
+  --fdSwitch_Handle_Border_Width: var(--sapButton_BorderWidth);
+  --fdSwitch_On_Hover_Slider_Background: var(--sapButton_Track_Selected_Background);
+  --fdSwitch_Semantic_Success_Border_Color: var(--sapSuccessColor);
+  --fdSwitch_Semantic_Success_Background_Color: var(--sapSuccessBackground);
+  --fdSwitch_Semantic_Error_Background_Color: var(--sapErrorBackground);
+  --fdSwitch_Semantic_Success_Handle_Hover_Background_Color: var(--sapSuccessBackground);
+  --fdSwitch_Semantic_Error_Color: var(--sapErrorBorderColor);
+
   /* Action List Item */
   --fdList_Item_Action_Border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
   --fdList_Item_Action_Height: 2.75rem;
