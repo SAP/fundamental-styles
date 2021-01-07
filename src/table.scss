@@ -276,6 +276,7 @@ $block: #{$fd-namespace}-table;
       .#{$block}__cell {
         @include fd-hover() {
           background-color: var(--sapList_Hover_Background);
+          color: var(--fdTable_Hover_Down_Color);
         }
       }
     }
