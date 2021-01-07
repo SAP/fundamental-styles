@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.1-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.33...v0.14.1-rc.34) (2021-01-07)
+
+
+### Bug Fixes
+
+* unify delta theming variables naming ([#2035](https://github.com/SAP/fundamental-styles/issues/2035)) ([600ceab](https://github.com/SAP/fundamental-styles/commit/600ceabb833bd3d7125642388625988dd3383ff3))
+
 ### [0.14.1-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.32...v0.14.1-rc.33) (2021-01-07)
 
 
