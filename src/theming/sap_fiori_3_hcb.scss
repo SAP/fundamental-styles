@@ -171,6 +171,9 @@
   --fdList_Item_Action_Button_Border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
   --fdList_Item_Action_Button_Border_Radius: 0.375rem;
 
+  /* Table */
+  --fdTable_Hover_Down_Color: var(--sapContent_ContrastTextColor);
+
   /* Link */
   --fdLink_Text_Decoration_Opposite: none;
   --fdLink_Text_Decoration: underline;
