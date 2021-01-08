@@ -1432,7 +1432,7 @@ exports[`Storyshots Components/Button Split menu button 1`] = `
       
     
       <span
-        class="fd-button__text"
+        class="fd-button-split__text"
       >
         Button with a big amount of text
       </span>
@@ -1536,7 +1536,7 @@ exports[`Storyshots Components/Button Split menu button 1`] = `
 
   <div
     aria-label="button-split"
-    class="fd-button-split"
+    class="fd-button-split fd-button-split--emphasized"
     role="group"
   >
     
@@ -1545,7 +1545,15 @@ exports[`Storyshots Components/Button Split menu button 1`] = `
       aria-label="button"
       class="fd-button fd-button--emphasized"
     >
-      Button with text
+      
+    
+      <span
+        class="fd-button-split__text"
+      >
+        Button with text
+      </span>
+      
+  
     </button>
     
   
@@ -1645,7 +1653,7 @@ exports[`Storyshots Components/Button Split menu button 1`] = `
 
   <div
     aria-label="button-split"
-    class="fd-button-split"
+    class="fd-button-split fd-button-split--transparent"
     role="group"
   >
     
@@ -1654,7 +1662,17 @@ exports[`Storyshots Components/Button Split menu button 1`] = `
       aria-label="button"
       class="fd-button fd-button--transparent"
     >
-      Button with text
+      
+    
+      <span
+        class="fd-button-split__text"
+      >
+        
+        Button with text
+    
+      </span>
+      
+ 
     </button>
     
   
