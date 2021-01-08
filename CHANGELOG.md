@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.1-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.36...v0.14.1-rc.37) (2021-01-08)
+
+
+### Bug Fixes
+
+* add delta theming for Feed Input ([#2016](https://github.com/SAP/fundamental-styles/issues/2016)) ([d949073](https://github.com/SAP/fundamental-styles/commit/d949073e38f732338ac0754ee9ded7b2430761e4))
+* checkbox label for required ([#1998](https://github.com/SAP/fundamental-styles/issues/1998)) ([f5baca7](https://github.com/SAP/fundamental-styles/commit/f5baca7a01927881a4e9c08d471b37b1deee6ff3))
+
 ### [0.14.1-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.35...v0.14.1-rc.36) (2021-01-07)
 
 ### [0.14.1-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.34...v0.14.1-rc.35) (2021-01-07)
