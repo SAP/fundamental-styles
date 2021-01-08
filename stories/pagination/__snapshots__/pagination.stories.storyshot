@@ -23,14 +23,14 @@ exports[`Storyshots Components/Pagination First page 1`] = `
       aria-label="Previous"
       class="fd-pagination__link fd-pagination__link--previous"
       href="#"
-      role="link"
+      role="navigation"
     />
     
       
     <button
       class="fd-pagination__link is-selected"
       href="#"
-      role="link"
+      role="navigation"
     >
       1
     </button>
@@ -39,7 +39,7 @@ exports[`Storyshots Components/Pagination First page 1`] = `
     <button
       class="fd-pagination__link"
       href="#"
-      role="link"
+      role="navigation"
     >
       2
     </button>
@@ -48,7 +48,7 @@ exports[`Storyshots Components/Pagination First page 1`] = `
     <button
       class="fd-pagination__link"
       href="#"
-      role="link"
+      role="navigation"
     >
       3
     </button>
@@ -59,7 +59,7 @@ exports[`Storyshots Components/Pagination First page 1`] = `
       aria-label="Next"
       class="fd-pagination__link fd-pagination__link--next"
       href="#"
-      role="link"
+      role="navigation"
     />
     
   
@@ -92,14 +92,14 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
       aria-label="Previous"
       class="fd-pagination__link fd-pagination__link--previous"
       href="#"
-      role="link"
+      role="navigation"
     />
     
   
     <button
       class="fd-pagination__link"
       href="#"
-      role="link"
+      role="navigation"
     >
       1
     </button>
@@ -114,7 +114,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
     <button
       class="fd-pagination__link"
       href="#"
-      role="link"
+      role="navigation"
     >
       49
     </button>
@@ -123,7 +123,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
     <button
       class="fd-pagination__link is-selected"
       href="#"
-      role="link"
+      role="navigation"
     >
       50
     </button>
@@ -134,7 +134,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
       aria-label="Next"
       class="fd-pagination__link fd-pagination__link--next"
       href="#"
-      role="link"
+      role="navigation"
     />
     
 
@@ -167,14 +167,14 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
       aria-label="Previous"
       class="fd-pagination__link fd-pagination__link--previous"
       href="#"
-      role="link"
+      role="navigation"
     />
     
   
     <button
       class="fd-pagination__link"
       href="#"
-      role="link"
+      role="navigation"
     >
       1
     </button>
@@ -189,7 +189,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
     <button
       class="fd-pagination__link"
       href="#"
-      role="link"
+      role="navigation"
     >
       21
     </button>
@@ -198,7 +198,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
     <button
       class="fd-pagination__link is-selected"
       href="#"
-      role="link"
+      role="navigation"
     >
       22
     </button>
@@ -207,7 +207,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
     <button
       class="fd-pagination__link"
       href="#"
-      role="link"
+      role="navigation"
     >
       23
     </button>
@@ -222,7 +222,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
     <button
       class="fd-pagination__link"
       href="#"
-      role="link"
+      role="navigation"
     >
       50
     </button>
@@ -233,7 +233,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
       aria-label="Next"
       class="fd-pagination__link fd-pagination__link--next"
       href="#"
-      role="link"
+      role="navigation"
     />
     
 
@@ -266,14 +266,14 @@ exports[`Storyshots Components/Pagination Mutliple pages 1`] = `
       aria-label="Previous"
       class="fd-pagination__link fd-pagination__link--previous"
       href="#"
-      role="link"
+      role="navigation"
     />
     
   
     <button
       class="fd-pagination__link"
       href="#"
-      role="link"
+      role="navigation"
     >
       1
     </button>
@@ -282,7 +282,7 @@ exports[`Storyshots Components/Pagination Mutliple pages 1`] = `
     <button
       class="fd-pagination__link is-selected"
       href="#"
-      role="link"
+      role="navigation"
     >
       2
     </button>
@@ -291,7 +291,7 @@ exports[`Storyshots Components/Pagination Mutliple pages 1`] = `
     <button
       class="fd-pagination__link"
       href="#"
-      role="link"
+      role="navigation"
     >
       3
     </button>
@@ -306,7 +306,7 @@ exports[`Storyshots Components/Pagination Mutliple pages 1`] = `
     <button
       class="fd-pagination__link"
       href="#"
-      role="link"
+      role="navigation"
     >
       50
     </button>
@@ -317,7 +317,7 @@ exports[`Storyshots Components/Pagination Mutliple pages 1`] = `
       aria-label="Next"
       class="fd-pagination__link fd-pagination__link--next"
       href="#"
-      role="link"
+      role="navigation"
     />
     
 
@@ -350,14 +350,14 @@ exports[`Storyshots Components/Pagination Second page 1`] = `
       aria-label="Previous"
       class="fd-pagination__link fd-pagination__link--previous"
       href="#"
-      role="link"
+      role="navigation"
     />
     
   
     <button
       class="fd-pagination__link"
       href="#"
-      role="link"
+      role="navigation"
     >
       1
     </button>
@@ -366,7 +366,7 @@ exports[`Storyshots Components/Pagination Second page 1`] = `
     <button
       class="fd-pagination__link is-selected"
       href="#"
-      role="link"
+      role="navigation"
     >
       2
     </button>
@@ -375,7 +375,7 @@ exports[`Storyshots Components/Pagination Second page 1`] = `
     <button
       class="fd-pagination__link"
       href="#"
-      role="link"
+      role="navigation"
     >
       3
     </button>
@@ -386,7 +386,7 @@ exports[`Storyshots Components/Pagination Second page 1`] = `
       aria-label="Next"
       class="fd-pagination__link fd-pagination__link--next"
       href="#"
-      role="link"
+      role="navigation"
     />
     
 
