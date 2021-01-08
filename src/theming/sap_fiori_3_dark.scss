@@ -183,4 +183,7 @@
   --fdMessage_Box_Success_Box_Shadow: inset 0 -0.0625rem var(--sapSuccessBorderColor), var(--sapContent_HeaderShadow);
   --fdMessage_Box_Warning_Box_Shadow: inset 0 -0.0625rem var(--sapWarningBorderColor), var(--sapContent_HeaderShadow);
   --fdMessage_Box_Information_Box_Shadow: inset 0 -0.0625rem var(--sapInformationBorderColor), var(--sapContent_HeaderShadow);
+
+  /* Feed Input */
+  --fdFeed_Input_Placeholder_Font_Style: italic;
 }
