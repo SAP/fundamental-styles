@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.1-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.40...v0.14.1-rc.41) (2021-01-11)
+
+
+### Bug Fixes
+
+* split button overflow ([#1975](https://github.com/SAP/fundamental-styles/issues/1975)) ([138e766](https://github.com/SAP/fundamental-styles/commit/138e766b92316c430a1a2ead8c98a110a3799e4c))
+
 ### [0.14.1-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.39...v0.14.1-rc.40) (2021-01-10)
 
 ### [0.14.1-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.38...v0.14.1-rc.39) (2021-01-08)
