@@ -76,4 +76,73 @@ $fd-button-split-margin: 0.125rem / 2;
       }
     }
   }
+
+  & > :first-child {
+    &:hover {
+      .#{$block}__text {
+        color: var(--sapButton_TextColor);
+      }
+    }
+
+    &:active {
+
+      .#{$block}__text {
+        color: var(--sapButton_Selected_TextColor);
+      }
+    }
+  }
+
+  &--emphasized {
+    > [class*="--emphasized"] {
+      & > .#{$block}__text {
+        color: var(--sapButton_Emphasized_TextColor);
+        font-weight: bold;
+      }
+
+      &:hover {
+        & > .#{$block}__text {
+          color: var(--sapButton_Emphasized_Hover_TextColor);
+        }
+      }
+
+      &:active {
+        & > .#{$block}__text {
+          color: var(--sapButton_Selected_TextColor);
+        }
+      }
+    }
+  }
+
+  &--transparent {
+    > [class*="--transparent"] {
+      & > .#{$block}__text {
+        color: var(--sapButton_TextColor);
+      }
+
+      &:hover {
+        & > .#{$block}__text {
+          color: var(--sapButton_TextColor);
+        }
+      }
+
+      &:active {
+        & > .#{$block}__text {
+          color: var(--sapButton_Selected_TextColor);
+        }
+      }
+    }
+  }
+
+  .#{$block}__text {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    color: var(--sapButton_TextColor);
+    max-width: 9.75rem;
+    display: block;
+
+    &--compact {
+      max-width: 10rem;
+    }
+  }
 }
