@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.1-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.41...v0.14.1-rc.42) (2021-01-12)
+
+
+### Bug Fixes
+
+* fix Dynamic Page default scrollbar appearing in IE ([#2044](https://github.com/SAP/fundamental-styles/issues/2044)) ([6b40aa8](https://github.com/SAP/fundamental-styles/commit/6b40aa8603472398c51949741f5ac803ca23936e))
+
 ### [0.14.1-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.40...v0.14.1-rc.41) (2021-01-11)
 
 
