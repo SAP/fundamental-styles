@@ -460,7 +460,7 @@ $block: #{$fd-namespace}-dynamic-page;
 
     padding: 1rem 0 0 0;
     background-color: $fd-dynamic-page-content-background-color;
-    overflow-y: scroll;
+    overflow-y: auto;
 
     &--sm {
       @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 0.5rem);
