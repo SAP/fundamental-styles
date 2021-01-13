@@ -60,7 +60,8 @@ In these cases, use the **Tree** instead.
             'input-group',
             'multi-input',
             'checkbox',
-            'select'
+            'select',
+            'menu'
         ]
     }
 };
@@ -1130,6 +1131,7 @@ The table component can be displayed with an advanced **Toolbar**, which allows 
 };
 
 export const contextualMenu = () => `
+<div style="min-height: 400px">
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table with Contextual Menu</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
@@ -1151,11 +1153,12 @@ export const contextualMenu = () => `
             <td class="fd-table__cell fd-table__cell--fit-content">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button aria-label="navigation" class="fd-button fd-button--transparent" aria-controls="pQqQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More">
+                        <button aria-label="navigation" class="fd-button fd-button--transparent" aria-controls="pQqQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More"
+                        onclick="onPopoverClick('pQqQRFF3')">
                             <i class="sap-icon--overflow"></i>
                         </button>
                     </div>
-                    <div class="fd-popover__body" aria-hidden="true" id="pQqQRFF3">
+                    <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="pQqQRFF3">
                         <nav class="fd-menu">
                             <ul class="fd-menu__list fd-menu__list--no-shadow">
                                 <li class="fd-menu__item">
@@ -1186,11 +1189,11 @@ export const contextualMenu = () => `
             <td class="fd-table__cell fd-table__cell--fit-content">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button aria-label="navigation" class="fd-button fd-button--transparent" aria-controls="G54qQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More">
+                        <button aria-label="navigation" class="fd-button fd-button--transparent" aria-controls="G54qQRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More" onclick="onPopoverClick('G54qQRFF3')">
                             <i class="sap-icon--overflow"></i>
                         </button>
                     </div>
-                    <div class="fd-popover__body" aria-hidden="true" id="G54qQRFF3">
+                    <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="G54qQRFF3">
                         <nav class="fd-menu">
                             <ul class="fd-menu__list fd-menu__list--no-shadow">
                                 <li class="fd-menu__item">
@@ -1221,11 +1224,11 @@ export const contextualMenu = () => `
             <td class="fd-table__cell fd-table__cell--fit-content">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button aria-label="navigation" class="fd-button fd-button--transparent" aria-controls="G54JRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More">
+                        <button aria-label="navigation" class="fd-button fd-button--transparent" aria-controls="G54JRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More" onclick="onPopoverClick('G54JRFF3')">
                             <i class="sap-icon--overflow"></i>
                         </button>
                     </div>
-                    <div class="fd-popover__body" aria-hidden="true" id="G54JRFF3">
+                    <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="G54JRFF3">
                         <nav class="fd-menu">
                             <ul class="fd-menu__list fd-menu__list--no-shadow">
                                 <li class="fd-menu__item">
@@ -1251,6 +1254,7 @@ export const contextualMenu = () => `
         </tr>
     </tbody>
 </table>
+</div>
  `;
 
 contextualMenu.storyName = 'Contextual menu';
