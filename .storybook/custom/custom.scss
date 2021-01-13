@@ -286,6 +286,15 @@ code.docs-code-grey {
   background-color: #f8f8f8;
 }
 
+.fddocs-button-container {
+  &.fd-button,
+  .fd-button {
+    margin-bottom: 5px;
+  }
+
+  display: block;
+}
+
 .fd-dialog,
 .fd-message-box {
   z-index: 101;

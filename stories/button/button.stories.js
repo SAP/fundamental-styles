@@ -40,7 +40,7 @@ export const primary = () => `
  * - **Transparent Button** Used for secondary or negative path actions
  */
 
-export const types = () => `<div class="fddocs-container"> 
+export const types = () => `<div class="fddocs-container fddocs-button-container"> 
         <button class="fd-button">Default Button</button>
         <button class="fd-button fd-button--emphasized">Emphasized Button</button>
         <button class="fd-button fd-button--ghost">Ghost Button</button>
@@ -67,7 +67,7 @@ types.parameters = {
 };
 
 export const toggle = () => `<h4>Inactive state of toggle button</h4>
-<div class="fddocs-container"> 
+<div class="fddocs-container fddocs-button-container"> 
     <button class="fd-button">Default Toggle</button>
     <button class="fd-button fd-button--emphasized">Emphasized Toggle</button>
     <button class="fd-button fd-button--ghost">Ghost Toggle</button>
@@ -85,7 +85,7 @@ export const toggle = () => `<h4>Inactive state of toggle button</h4>
     <button aria-label="Accept" class="fd-button fd-button--positive"><i class="sap-icon--accept"></i></button>
 </div>
 <h4>Active (toggled) state of toggle button</h4>
-<div class="fddocs-container"> 
+<div class="fddocs-container fddocs-button-container"> 
     <button class="fd-button fd-button--toggled">Default Toggle</button>
     <button class="fd-button fd-button--emphasized fd-button--toggled">Emphasized Toggle</button>
     <button class="fd-button fd-button--ghost fd-button--toggled">Ghost Toggle</button>
@@ -103,7 +103,7 @@ export const toggle = () => `<h4>Inactive state of toggle button</h4>
     <button aria-label="Accept" class="fd-button fd-button--positive fd-button--toggled"><i class="sap-icon--accept"></i></button>
 </div>
 <h4>Disabled Toggle button in active state</h4>
-<div class="fddocs-container"> 
+<div class="fddocs-container fddocs-button-container"> 
     <button class="fd-button fd-button--toggled" disabled>Default Toggle</button>
     <button class="fd-button fd-button--emphasized fd-button--toggled" disabled>Emphasized Toggle</button>
     <button class="fd-button fd-button--ghost fd-button--toggled" disabled>Ghost Toggle</button>
