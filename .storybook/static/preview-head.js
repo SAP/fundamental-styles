@@ -345,3 +345,9 @@ function isSpaceOrEnter(event, buttonFn) {
             break;
     }
 }
+
+function toggleNestedListSubmenu(event) {
+    let button = event.target;
+    let icon = button.children[0];
+    icon.classList= button && button.classList.contains('is-expanded') ? 'sap-icon--navigation-right-arrow' : 'sap-icon--navigation-down-arrow';
+}

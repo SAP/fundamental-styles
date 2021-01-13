@@ -170,7 +170,9 @@ export const cozyGrouping = () => `<div class="fd-side-nav">
                         aria-controls="EX100L2" 
                         aria-haspopup="true" 
                         aria-expanded="false" 
-                        aria-label="Expand submenu">
+                        aria-label="Expand submenu"
+                        onclick="toggleNestedListSubmenu(event)"
+                        >
                         <i class="sap-icon--navigation-right-arrow" role="presentation"></i>    
                     </button>
                 </div>
@@ -263,7 +265,8 @@ export const complexCozySideNav = () => `<div class="fd-side-nav">
                         aria-controls="EX400L2" 
                         aria-haspopup="true" 
                         aria-expanded="false" 
-                        aria-label="Expand submenu">
+                        aria-label="Expand submenu"
+                        onclick="toggleNestedListSubmenu(event)">
                         <i class="sap-icon--navigation-right-arrow" role="presentation"></i>    
                     </button>
                 </div>
@@ -368,7 +371,8 @@ export const complexCompactSideNav = () => `<div class="fd-side-nav">
                         aria-controls="EX500L2" 
                         aria-haspopup="true" 
                         aria-expanded="false" 
-                        aria-label="Expand submenu">
+                        aria-label="Expand submenu"
+                        onclick="toggleNestedListSubmenu(event)">
                         <i class="sap-icon--navigation-right-arrow" role="presentation"></i>    
                     </button>
                 </div>
