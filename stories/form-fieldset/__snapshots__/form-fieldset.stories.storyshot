@@ -38,7 +38,15 @@ exports[`Storyshots Components/Forms/Field Set Checkbox Groups 1`] = `
           for="Ai4ez611"
         >
           
-                    Field label
+                    
+          <span
+            class="fd-checkbox__text"
+          >
+            
+                        Field label
+                    
+          </span>
+          
                 
         </label>
         
@@ -64,7 +72,15 @@ exports[`Storyshots Components/Forms/Field Set Checkbox Groups 1`] = `
           for="Ai4ez612"
         >
           
-                    Selected State
+                    
+          <span
+            class="fd-checkbox__text"
+          >
+            
+                        Selected State
+                    
+          </span>
+          
                 
         </label>
         
@@ -88,7 +104,17 @@ exports[`Storyshots Components/Forms/Field Set Checkbox Groups 1`] = `
           class="fd-checkbox__label"
           for="Ai4ez613"
         >
-          TriState Text
+          
+                    
+          <span
+            class="fd-checkbox__text"
+          >
+            
+                        TriState Text
+                    
+          </span>
+          
+                
         </label>
         
             
@@ -137,7 +163,15 @@ exports[`Storyshots Components/Forms/Field Set Checkbox Groups 1`] = `
           for="Ai4ez614"
         >
           
-                    Field label
+                    
+          <span
+            class="fd-checkbox__text"
+          >
+            
+                        Field label
+                    
+          </span>
+          
                 
         </label>
         
@@ -163,7 +197,15 @@ exports[`Storyshots Components/Forms/Field Set Checkbox Groups 1`] = `
           for="Ai4ez615"
         >
           
-                    Field label
+                    
+          <span
+            class="fd-checkbox__text"
+          >
+            
+                        Field label
+                    
+          </span>
+          
                 
         </label>
         
@@ -189,7 +231,15 @@ exports[`Storyshots Components/Forms/Field Set Checkbox Groups 1`] = `
           for="Ai4ez616"
         >
           
-                    Field label
+                    
+          <span
+            class="fd-checkbox__text"
+          >
+            
+                        Field label
+                    
+          </span>
+          
                 
         </label>
         
@@ -238,7 +288,15 @@ exports[`Storyshots Components/Forms/Field Set Checkbox Groups 1`] = `
           for="Ai4ez617"
         >
           
-                    Field label
+                    
+          <span
+            class="fd-checkbox__text"
+          >
+            
+                        Field label
+                    
+          </span>
+          
                 
         </label>
         
@@ -263,7 +321,15 @@ exports[`Storyshots Components/Forms/Field Set Checkbox Groups 1`] = `
           for="Ai4ez618"
         >
           
-                    Field label
+                    
+          <span
+            class="fd-checkbox__text"
+          >
+            
+                        Field label
+                    
+          </span>
+          
                 
         </label>
         
@@ -288,7 +354,15 @@ exports[`Storyshots Components/Forms/Field Set Checkbox Groups 1`] = `
           for="Ai4ez619"
         >
           
-                    Field label
+                    
+          <span
+            class="fd-checkbox__text"
+          >
+            
+                        Field label
+                    
+          </span>
+          
                 
         </label>
         
