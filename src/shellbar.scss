@@ -77,10 +77,6 @@ $block: #{$fd-namespace}-shellbar;
       justify-content: flex-end;
       order: 3;
     }
-
-    .#{$block}__avatar--circle {
-      background-color: var(--sapLinkColor);
-    }
   }
 
   &__title,
