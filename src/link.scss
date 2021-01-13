@@ -9,11 +9,5 @@ $block: #{$fd-namespace}-link;
 .#{$block} {
   @include fd-reset();
   @include fd-link();
-
-  &:hover {
-    @include fd-icon-selector() {
-      text-decoration: underline;
-      color: var(--sapLink_Hover_Color);
-    }
-  }
+  @include fd-icon-element-base();
 }
