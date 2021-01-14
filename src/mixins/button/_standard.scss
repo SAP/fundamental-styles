@@ -44,9 +44,7 @@
 }
 
 @mixin standardPressedFocus() {
-  &::after {
-    border-color: var(--sapContent_ContrastFocusColor);
-  }
+  outline-color: var(--sapContent_ContrastFocusColor);
 }
 
 @mixin standardFocus() {

@@ -9,16 +9,13 @@ $button: #{$fd-namespace}-button;
   $fd-carousel-page-indicator-border: 0.0625rem solid var(--sapPageFooter_BorderColor) !default;
   $fd-carousel-button-size: 2.125rem !default;
   $fd-carousel-touchable-button-size: 2.625rem !default;
-  $fd-carousel-button-focus-outline-offset: -0.125rem !default;
+  $fd-carousel-button-focus-outline-offset: 0.0625rem !default;
   $fd-carousel-button-content-offset: 0.5rem !default;
   $fd-carousel-dot-size: var(--fdCarousel_Dot_Size) !default;
   $fd-carousel-dot-active-size: 0.5rem !default;
 
   @mixin after-position-overwrite() {
-    top: $fd-carousel-button-focus-outline-offset;
-    bottom: $fd-carousel-button-focus-outline-offset;
-    left: $fd-carousel-button-focus-outline-offset;
-    right: $fd-carousel-button-focus-outline-offset;
+    outline-offset: $fd-carousel-button-focus-outline-offset;
   }
 
   @include fd-reset();
@@ -157,9 +154,7 @@ $button: #{$fd-namespace}-button;
     }
 
     @include fd-focus() {
-      &::after {
-        @include after-position-overwrite();
-      }
+      @include after-position-overwrite();
     }
 
     @include fd-active() {
