@@ -134,6 +134,7 @@ exports[`Storyshots Components/Side Navigation Complex (compact) 1`] = `
             aria-haspopup="true"
             aria-label="Expand submenu"
             class="fd-button fd-nested-list__button"
+            onclick="toggleNestedListSubmenu(event)"
           >
             
                         
@@ -558,6 +559,7 @@ exports[`Storyshots Components/Side Navigation Complex 1`] = `
             aria-haspopup="true"
             aria-label="Expand submenu"
             class="fd-button fd-nested-list__button"
+            onclick="toggleNestedListSubmenu(event)"
           >
             
                         
@@ -1686,6 +1688,7 @@ exports[`Storyshots Components/Side Navigation Group 1`] = `
             aria-haspopup="true"
             aria-label="Expand submenu"
             class="fd-button fd-nested-list__button"
+            onclick="toggleNestedListSubmenu(event)"
           >
             
                         
