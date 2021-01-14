@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.1-rc.53](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.52...v0.14.1-rc.53) (2021-01-14)
+
+
+### Bug Fixes
+
+* add delta theming for Generic Tiles ([#2017](https://github.com/SAP/fundamental-styles/issues/2017)) ([6b2f75c](https://github.com/SAP/fundamental-styles/commit/6b2f75c0460b9e64425a555919014674a7ce4169))
+
 ### [0.14.1-rc.52](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.51...v0.14.1-rc.52) (2021-01-14)
 
 
