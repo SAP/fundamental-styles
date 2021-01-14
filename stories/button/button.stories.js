@@ -40,7 +40,7 @@ export const primary = () => `
  * - **Transparent Button** Used for secondary or negative path actions
  */
 
-export const types = () => `<div class="fddocs-container"> 
+export const types = () => `<div class="fddocs-container fddocs-button-container"> 
         <button class="fd-button">Default Button</button>
         <button class="fd-button fd-button--emphasized">Emphasized Button</button>
         <button class="fd-button fd-button--ghost">Ghost Button</button>
@@ -67,7 +67,7 @@ types.parameters = {
 };
 
 export const toggle = () => `<h4>Inactive state of toggle button</h4>
-<div class="fddocs-container"> 
+<div class="fddocs-container fddocs-button-container"> 
     <button class="fd-button">Default Toggle</button>
     <button class="fd-button fd-button--emphasized">Emphasized Toggle</button>
     <button class="fd-button fd-button--ghost">Ghost Toggle</button>
@@ -85,7 +85,7 @@ export const toggle = () => `<h4>Inactive state of toggle button</h4>
     <button aria-label="Accept" class="fd-button fd-button--positive"><i class="sap-icon--accept"></i></button>
 </div>
 <h4>Active (toggled) state of toggle button</h4>
-<div class="fddocs-container"> 
+<div class="fddocs-container fddocs-button-container"> 
     <button class="fd-button fd-button--toggled">Default Toggle</button>
     <button class="fd-button fd-button--emphasized fd-button--toggled">Emphasized Toggle</button>
     <button class="fd-button fd-button--ghost fd-button--toggled">Ghost Toggle</button>
@@ -103,7 +103,7 @@ export const toggle = () => `<h4>Inactive state of toggle button</h4>
     <button aria-label="Accept" class="fd-button fd-button--positive fd-button--toggled"><i class="sap-icon--accept"></i></button>
 </div>
 <h4>Disabled Toggle button in active state</h4>
-<div class="fddocs-container"> 
+<div class="fddocs-container fddocs-button-container"> 
     <button class="fd-button fd-button--toggled" disabled>Default Toggle</button>
     <button class="fd-button fd-button--emphasized fd-button--toggled" disabled>Emphasized Toggle</button>
     <button class="fd-button fd-button--ghost fd-button--toggled" disabled>Ghost Toggle</button>
@@ -130,16 +130,18 @@ toggle.parameters = {
 
 
 export const segmentedButton = () => `
-    <div class="fd-segmented-button" role="group" aria-label="Group label">
-        <button aria-label="Survey" class="fd-button"><i class="sap-icon--survey"></i></button>
-        <button aria-label="Chart" class="fd-button is-selected" aria-pressed="true"><i class="sap-icon--pie-chart"></i></button>
-        <button aria-label="Pool" class="fd-button"><i class="sap-icon--pool"></i></button>
-    </div>
-
-    <div class="fd-segmented-button" role="group" aria-label="Group label">
-        <button class="fd-button fd-button--compact is-selected" aria-pressed="true">Left</button>
-        <button class="fd-button fd-button--compact">Middle</button>
-        <button class="fd-button fd-button--compact">Right</button>
+    <div class="fddocs-button-container">
+        <div class="fd-segmented-button" role="group" aria-label="Group label">
+            <button aria-label="Survey" class="fd-button"><i class="sap-icon--survey"></i></button>
+            <button aria-label="Chart" class="fd-button is-selected" aria-pressed="true"><i class="sap-icon--pie-chart"></i></button>
+            <button aria-label="Pool" class="fd-button"><i class="sap-icon--pool"></i></button>
+        </div>
+    
+        <div class="fd-segmented-button" role="group" aria-label="Group label">
+            <button class="fd-button fd-button--compact is-selected" aria-pressed="true">Left</button>
+            <button class="fd-button fd-button--compact">Middle</button>
+            <button class="fd-button fd-button--compact">Right</button>
+        </div>
     </div>
 `;
 
@@ -152,22 +154,24 @@ segmentedButton.parameters = {
 };
 
 export const badgeOnButton = () => `
-<button class="fd-button">
-    <span class="fd-button__text">Cozy Badge Button</span>
-    <span class="fd-button__badge">3984</span>   
-</button>
-<button class="fd-button" aria-label="Add to cart">
-    <i class="sap-icon--cart" role="presentation"></i>
-    <span class="fd-button__badge">3</span>   
-</button>
-<button class="fd-button fd-button--compact">
-    <span class="fd-button__text">Compact Badge Button</span>
-    <span class="fd-button__badge">654</span>   
-</button>
-<button class="fd-button fd-button--compact" aria-label="Add to cart">
-    <i class="sap-icon--cart" role="presentation"></i>
-    <span class="fd-button__badge">12</span>   
-</button>
+    <div class="fddocs-button-container">
+        <button class="fd-button">
+            <span class="fd-button__text">Cozy Badge Button</span>
+            <span class="fd-button__badge">3984</span>   
+        </button>
+        <button class="fd-button" aria-label="Add to cart">
+            <i class="sap-icon--cart" role="presentation"></i>
+            <span class="fd-button__badge">3</span>   
+        </button>
+        <button class="fd-button fd-button--compact">
+            <span class="fd-button__text">Compact Badge Button</span>
+            <span class="fd-button__badge">654</span>   
+        </button>
+        <button class="fd-button fd-button--compact" aria-label="Add to cart">
+            <i class="sap-icon--cart" role="presentation"></i>
+            <span class="fd-button__badge">12</span>   
+        </button>
+    </div>
 `;
 
 badgeOnButton.storyName = 'Button With Badge';
@@ -181,97 +185,99 @@ badgeOnButton.parameters = {
 };
 
 export const menuButton = () => `
-<button class="fd-button fd-button--menu">
-    <span class="fd-button__text">Action Button</span>
-    <i class="sap-icon--slim-arrow-down"></i>
-</button>
-<button class="fd-button fd-button--ghost fd-button--menu">
-    <span class="fd-button__text">Ghost Button</span>
-    <i class="sap-icon--slim-arrow-down"></i>
-</button>
-<button class="fd-button fd-button--positive fd-button--menu">
-    <span class="fd-button__text">Positive Button</span>
-    <i class="sap-icon--slim-arrow-down"></i>
-</button>
-<button class="fd-button fd-button--negative fd-button--menu">
-    <span class="fd-button__text">Negative Button</span>
-    <i class="sap-icon--slim-arrow-down"></i>
-</button>
-<button class="fd-button fd-button--attention fd-button--menu">
-    <span class="fd-button__text">Attention Button</span>
-    <i class="sap-icon--slim-arrow-down"></i>
-</button>
-<br /><br />
-<button class="fd-button fd-button--menu" aria-disabled="true" disabled>
-    <span class="fd-button__text">Action Button</span>
-    <i class="sap-icon--slim-arrow-down"></i>
-</button>
-<button class="fd-button fd-button--ghost fd-button--menu" aria-disabled="true" disabled>
-    <span class="fd-button__text">Ghost Button</span>
-    <i class="sap-icon--slim-arrow-down"></i>
-</button>
-<button class="fd-button fd-button--positive fd-button--menu" aria-disabled="true" disabled>
-    <span class="fd-button__text">Positive Button</span>
-    <i class="sap-icon--slim-arrow-down"></i>
-</button>
-<button class="fd-button fd-button--negative fd-button--menu" aria-disabled="true" disabled>
-    <span class="fd-button__text">Negative Button</span>
-    <i class="sap-icon--slim-arrow-down"></i>
-</button>
-<button class="fd-button fd-button--attention fd-button--menu" aria-disabled="true" disabled>
-    <span class="fd-button__text">Attention Button</span>
-    <i class="sap-icon--slim-arrow-down"></i>
-</button>
-<br /><br />
-<button class="fd-button fd-button--emphasized fd-button--menu">
-    <span class="fd-button__text">Add to Cart</span>
-    <i class="sap-icon--slim-arrow-down"></i>
-</button>
-<button class="fd-button fd-button--menu">
-    <span class="fd-button__text">Add to Cart</span>
-    <i class="sap-icon--slim-arrow-down"></i>
-</button>
-<button class="fd-button fd-button--transparent fd-button--menu">
-    <span class="fd-button__text">Add to Cart</span>
-    <i class="sap-icon--slim-arrow-down"></i>
-</button>
-<button class="fd-button fd-button--emphasized fd-button--menu fd-button--positive">
-    <span class="fd-button__text">Approve Cart</span>
-    <i class="sap-icon--slim-arrow-down"></i>
-</button>
-<button class="fd-button fd-button--negative fd-button--menu">
-    <span class="fd-button__text">Reject</span>
-    <i class="sap-icon--slim-arrow-down"></i>
-</button>
-<button class="fd-button fd-button--attention fd-button--menu">
-    <span class="fd-button__text">Attention</span>
-    <i class="sap-icon--slim-arrow-down"></i>
-</button>
-<br /><br />
-<button aria-label="Add to cart" class="fd-button fd-button--menu">
-    <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
-</button>
-<button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--transparent">
-    <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
-</button>
-<button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--positive">
-    <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
-</button>
-<button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--negative">
-    <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
-</button>
-<button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--attention">
-    <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
-</button>
-<br /><br />
-<button class="fd-button fd-button--menu">
-    <span class="fd-button__text">Default</span>
-    <i class="sap-icon--slim-arrow-down"></i>
-</button>
-<button class="fd-button fd-button--compact fd-button--menu">
-    <span class="fd-button__text">Compact</span>
-    <i class="sap-icon--slim-arrow-down"></i>
-</button>
+    <div class="fddocs-button-container">
+        <button class="fd-button fd-button--menu">
+            <span class="fd-button__text">Action Button</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button class="fd-button fd-button--ghost fd-button--menu">
+            <span class="fd-button__text">Ghost Button</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button class="fd-button fd-button--positive fd-button--menu">
+            <span class="fd-button__text">Positive Button</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button class="fd-button fd-button--negative fd-button--menu">
+            <span class="fd-button__text">Negative Button</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button class="fd-button fd-button--attention fd-button--menu">
+            <span class="fd-button__text">Attention Button</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <br /><br />
+        <button class="fd-button fd-button--menu" aria-disabled="true" disabled>
+            <span class="fd-button__text">Action Button</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button class="fd-button fd-button--ghost fd-button--menu" aria-disabled="true" disabled>
+            <span class="fd-button__text">Ghost Button</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button class="fd-button fd-button--positive fd-button--menu" aria-disabled="true" disabled>
+            <span class="fd-button__text">Positive Button</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button class="fd-button fd-button--negative fd-button--menu" aria-disabled="true" disabled>
+            <span class="fd-button__text">Negative Button</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button class="fd-button fd-button--attention fd-button--menu" aria-disabled="true" disabled>
+            <span class="fd-button__text">Attention Button</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <br /><br />
+        <button class="fd-button fd-button--emphasized fd-button--menu">
+            <span class="fd-button__text">Add to Cart</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button class="fd-button fd-button--menu">
+            <span class="fd-button__text">Add to Cart</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button class="fd-button fd-button--transparent fd-button--menu">
+            <span class="fd-button__text">Add to Cart</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button class="fd-button fd-button--emphasized fd-button--menu fd-button--positive">
+            <span class="fd-button__text">Approve Cart</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button class="fd-button fd-button--negative fd-button--menu">
+            <span class="fd-button__text">Reject</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button class="fd-button fd-button--attention fd-button--menu">
+            <span class="fd-button__text">Attention</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <br /><br />
+        <button aria-label="Add to cart" class="fd-button fd-button--menu">
+            <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--transparent">
+            <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--positive">
+            <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--negative">
+            <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--attention">
+            <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <br /><br />
+        <button class="fd-button fd-button--menu">
+            <span class="fd-button__text">Default</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button class="fd-button fd-button--compact fd-button--menu">
+            <span class="fd-button__text">Compact</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+    </div>
 `;
 
 menuButton.storyName = 'Menu button';
@@ -283,82 +289,83 @@ menuButton.parameters = {
 };
 
 export const splitMenuButton = () => `
-<div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
-  <button class="fd-button" aria-label="button">
-    <span class="fd-button-split__text">Button with a big amount of text</span>
-  </button>
-  <button class="fd-button" aria-controls="t4c0o273" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
-  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
-  id="t4c0o273">
-    <nav class="fd-menu">
-        <ul class="fd-menu__list fd-menu__list--no-shadow">
-          <li class="fd-menu__item">
-              <a class="fd-menu__link" role="button" href="#">
-                  <span class="fd-menu__title">Add to list</span>
-              </a>
-          </li>
-          <li class="fd-menu__item">
-              <a class="fd-menu__link" role="button" href="#">
-                  <span class="fd-menu__title">Save for later</span>
-              </a>
-          </li>
-        </ul>
-    </nav>
-  </div>
-</div>
-
-<div class="fd-button-split fd-button-split--emphasized" role="group" aria-label="button-split">
-  <button class="fd-button fd-button--emphasized" aria-label="button">
-    <span class="fd-button-split__text">Button with text</span>
-  </button>
-  <button class="fd-button fd-button--emphasized" aria-controls="t4c0o2732" 
-  aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
-
-  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
-    id="t4c0o2732">
-    <nav class="fd-menu">
-        <ul class="fd-menu__list fd-menu__list--no-shadow">
-          <li class="fd-menu__item">
-              <a class="fd-menu__link" role="button" href="#">
-                  <span class="fd-menu__title">Add to list</span>
-              </a>
-          </li>
-          <li class="fd-menu__item">
-              <a class="fd-menu__link" role="button" href="#">
-                  <span class="fd-menu__title">Save for later</span>
-              </a>
-          </li>
-        </ul>
-    </nav>
-  </div>
-</div>
-
-<div class="fd-button-split fd-button-split--transparent" role="group" aria-label="button-split">
-  <button class="fd-button fd-button--transparent" aria-label="button">
-    <span class="fd-button-split__text">
-        Button with text
-    </span>
- </button>
-  <button class="fd-button fd-button--transparent" aria-controls="t4c0o27322" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
-  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
-    id="t4c0o27322">
-    <nav class="fd-menu">
-        <ul class="fd-menu__list fd-menu__list--no-shadow">
-          <li class="fd-menu__item">
-              <a class="fd-menu__link" role="button" href="#">
-                  <span class="fd-menu__title">Add to list</span>
-              </a>
-          </li>
-          <li class="fd-menu__item">
-              <a class="fd-menu__link" role="button" href="#">
-                  <span class="fd-menu__title">Save for later</span>
-              </a>
-          </li>
-        </ul>
-    </nav>
-  </div>
-</div>
-
+    <div class="fddocs-button-container">
+        <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
+          <button class="fd-button" aria-label="button">
+            <span class="fd-button-split__text">Button with a big amount of text</span>
+          </button>
+          <button class="fd-button" aria-controls="t4c0o273" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
+          <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
+          id="t4c0o273">
+            <nav class="fd-menu">
+                <ul class="fd-menu__list fd-menu__list--no-shadow">
+                  <li class="fd-menu__item">
+                      <a class="fd-menu__link" role="button" href="#">
+                          <span class="fd-menu__title">Add to list</span>
+                      </a>
+                  </li>
+                  <li class="fd-menu__item">
+                      <a class="fd-menu__link" role="button" href="#">
+                          <span class="fd-menu__title">Save for later</span>
+                      </a>
+                  </li>
+                </ul>
+            </nav>
+          </div>
+        </div>
+        
+        <div class="fd-button-split fd-button-split--emphasized" role="group" aria-label="button-split">
+          <button class="fd-button fd-button--emphasized" aria-label="button">
+            <span class="fd-button-split__text">Button with text</span>
+          </button>
+          <button class="fd-button fd-button--emphasized" aria-controls="t4c0o2732" 
+          aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
+        
+          <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
+            id="t4c0o2732">
+            <nav class="fd-menu">
+                <ul class="fd-menu__list fd-menu__list--no-shadow">
+                  <li class="fd-menu__item">
+                      <a class="fd-menu__link" role="button" href="#">
+                          <span class="fd-menu__title">Add to list</span>
+                      </a>
+                  </li>
+                  <li class="fd-menu__item">
+                      <a class="fd-menu__link" role="button" href="#">
+                          <span class="fd-menu__title">Save for later</span>
+                      </a>
+                  </li>
+                </ul>
+            </nav>
+          </div>
+        </div>
+        
+        <div class="fd-button-split fd-button-split--transparent" role="group" aria-label="button-split">
+          <button class="fd-button fd-button--transparent" aria-label="button">
+            <span class="fd-button-split__text">
+                Button with text
+            </span>
+         </button>
+          <button class="fd-button fd-button--transparent" aria-controls="t4c0o27322" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
+          <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
+            id="t4c0o27322">
+            <nav class="fd-menu">
+                <ul class="fd-menu__list fd-menu__list--no-shadow">
+                  <li class="fd-menu__item">
+                      <a class="fd-menu__link" role="button" href="#">
+                          <span class="fd-menu__title">Add to list</span>
+                      </a>
+                  </li>
+                  <li class="fd-menu__item">
+                      <a class="fd-menu__link" role="button" href="#">
+                          <span class="fd-menu__title">Save for later</span>
+                      </a>
+                  </li>
+                </ul>
+            </nav>
+          </div>
+        </div>
+    </div>
 `;
 
 splitMenuButton.storyName = 'Split menu button';
@@ -379,23 +386,25 @@ The split menu button can be displayed by using <code class="docs-code>fd-button
 };
 
 export const sizes = () => `
-<button class="fd-button">Save</button>
-<button aria-label="Add to cart" class="fd-button"><i class="sap-icon--cart"></i></button>
-<button aria-label="Add to cart" class="fd-button fd-button--ghost"><i class="sap-icon--cart"></i></button>
-<button aria-label="Add to cart" class="fd-button fd-button--emphasized"><i class="sap-icon--cart"></i></button>
-<button aria-label="Add to cart" class="fd-button fd-button--transparent"><i class="sap-icon--cart"></i></button>
-<button class="fd-button fd-button--positive">Approve</button>
-<button class="fd-button fd-button--negative">Reject</button>
-<button class="fd-button fd-button--attention">Attention</button>
-<br><br>
-<button class="fd-button fd-button--compact">Edit</button>
-<button aria-label="Add to cart" class="fd-button fd-button--compact"><i class="sap-icon--cart"></i></button>
-<button class="fd-button fd-button--ghost fd-button--compact">Edit</button>
-<button aria-label="Add to cart" class="fd-button fd-button--emphasized fd-button--compact"><i class="sap-icon--cart"></i></button>
-<button aria-label="Add to cart" class="fd-button fd-button--transparent fd-button--compact"><i class="sap-icon--cart"></i></button>
-<button class="fd-button fd-button--positive fd-button--compact ">Approve</button>
-<button class="fd-button fd-button--negative fd-button--compact">Reject</button>
-<button class="fd-button fd-button--attention fd-button--compact">Attention</button>
+    <div class="fddocs-button-container">
+        <button class="fd-button">Save</button>
+        <button aria-label="Add to cart" class="fd-button"><i class="sap-icon--cart"></i></button>
+        <button aria-label="Add to cart" class="fd-button fd-button--ghost"><i class="sap-icon--cart"></i></button>
+        <button aria-label="Add to cart" class="fd-button fd-button--emphasized"><i class="sap-icon--cart"></i></button>
+        <button aria-label="Add to cart" class="fd-button fd-button--transparent"><i class="sap-icon--cart"></i></button>
+        <button class="fd-button fd-button--positive">Approve</button>
+        <button class="fd-button fd-button--negative">Reject</button>
+        <button class="fd-button fd-button--attention">Attention</button>
+        <br><br>
+        <button class="fd-button fd-button--compact">Edit</button>
+        <button aria-label="Add to cart" class="fd-button fd-button--compact"><i class="sap-icon--cart"></i></button>
+        <button class="fd-button fd-button--ghost fd-button--compact">Edit</button>
+        <button aria-label="Add to cart" class="fd-button fd-button--emphasized fd-button--compact"><i class="sap-icon--cart"></i></button>
+        <button aria-label="Add to cart" class="fd-button fd-button--transparent fd-button--compact"><i class="sap-icon--cart"></i></button>
+        <button class="fd-button fd-button--positive fd-button--compact ">Approve</button>
+        <button class="fd-button fd-button--negative fd-button--compact">Reject</button>
+        <button class="fd-button fd-button--attention fd-button--compact">Attention</button>
+    </div>
 `;
 
 sizes.storyName = 'Button sizes';
@@ -409,21 +418,23 @@ The buttons in the first row are displayed in cozy size, which is the default si
 };
 
 export const iconAndText = () => `
-<button class="fd-button fd-button--emphasized">Add to Cart</button>
-<button class="fd-button">Add to Cart</button>
-<button class="fd-button fd-button--transparent">Add to Cart</button>
-<button class="fd-button fd-button--ghost">Add to Cart</button>
-<button class="fd-button fd-button--positive">Approve</button>
-<button class="fd-button fd-button--negative">Reject</button>
-<button class="fd-button fd-button--attention">Attention</button>
-<br><br>
-<button aria-label="Add to cart" class="fd-button"><i class="sap-icon--cart"></i></button>
-<button aria-label="Add to cart" class="fd-button fd-button--emphasized"><i class="sap-icon--cart"></i></button>
-<button aria-label="Add to cart" class="fd-button fd-button--transparent"><i class="sap-icon--cart"></i></button>
-<button aria-label="Filter" class="fd-button fd-button--ghost"><i class="sap-icon--filter"></i></button>
-<button aria-label="Accept" class="fd-button fd-button--positive"><i class="sap-icon--accept"></i></button>
-<button aria-label="Decline" class="fd-button fd-button--negative"><i class="sap-icon--decline"></i></button>
-<button aria-label="Decline" class="fd-button fd-button--attention"><i class="sap-icon--decline"></i></button>
+    <div class="fddocs-button-container">
+        <button class="fd-button fd-button--emphasized">Add to Cart</button>
+        <button class="fd-button">Add to Cart</button>
+        <button class="fd-button fd-button--transparent">Add to Cart</button>
+        <button class="fd-button fd-button--ghost">Add to Cart</button>
+        <button class="fd-button fd-button--positive">Approve</button>
+        <button class="fd-button fd-button--negative">Reject</button>
+        <button class="fd-button fd-button--attention">Attention</button>
+        <br><br>
+        <button aria-label="Add to cart" class="fd-button"><i class="sap-icon--cart"></i></button>
+        <button aria-label="Add to cart" class="fd-button fd-button--emphasized"><i class="sap-icon--cart"></i></button>
+        <button aria-label="Add to cart" class="fd-button fd-button--transparent"><i class="sap-icon--cart"></i></button>
+        <button aria-label="Filter" class="fd-button fd-button--ghost"><i class="sap-icon--filter"></i></button>
+        <button aria-label="Accept" class="fd-button fd-button--positive"><i class="sap-icon--accept"></i></button>
+        <button aria-label="Decline" class="fd-button fd-button--negative"><i class="sap-icon--decline"></i></button>
+        <button aria-label="Decline" class="fd-button fd-button--attention"><i class="sap-icon--decline"></i></button>
+    </div>
 `;
 
 iconAndText.storyName = 'Icon or text';
@@ -450,53 +461,55 @@ The full list of all the available icons can be found on the <a href="icon.html"
 };
 
 export const buttonStates = () => `
-<button class="fd-button fd-button--emphasized">Normal State</button>
-<button class="fd-button fd-button--emphasized is-selected" >Selected State</button>
-<button class="fd-button fd-button--emphasized" aria-disabled="true" disabled>Disabled State</button>
-<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF1" class="fd-button fd-button--emphasized is-disabled" type="button">Disabled Focusable</button>
-<p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF1">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
-<br><br>
-<button class="fd-button">Normal State</button>
-<button class="fd-button is-selected" >Selected State</button>
-<button class="fd-button is-disabled" aria-disabled="true" disabled>Disabled State</button>
-<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF2" class="fd-button is-disabled" type="button">Disabled Focusable</button>
-<p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF2">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
-<br><br>
-<button class="fd-button fd-button--transparent">Normal State</button>
-<button class="fd-button fd-button--transparent is-selected" >Selected State</button>
-<button class="fd-button fd-button--transparent is-disabled" aria-disabled="true" disabled>Disabled State</button>
-<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF3" class="fd-button fd-button--transparent is-disabled" type="button">Disabled Focusable</button>
-<p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF3">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
-<br><br>
-<button class="fd-button fd-button">Normal State</button>
-<button class="fd-button fd-button is-selected" >Selected State</button>
-<button class="fd-button fd-button" aria-disabled="true" disabled>Disabled State</button>
-<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF4" class="fd-button fd-button is-disabled" type="button">Disabled Focusable</button>
-<p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF4">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
-<br><br>
-<button class="fd-button fd-button--ghost">Normal State</button>
-<button class="fd-button fd-button--ghost is-selected" >Selected State</button>
-<button class="fd-button fd-button--ghost" aria-disabled="true" disabled>Disabled State</button>
-<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF5" class="fd-button fd-button--ghost is-disabled" type="button">Disabled Focusable</button>
-<p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF5">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
-<br><br>
-<button class="fd-button fd-button--positive">Normal State</button>
-<button class="fd-button fd-button--positive is-selected" >Selected State</button>
-<button class="fd-button fd-button--positive" aria-disabled="true" disabled>Disabled State</button>
-<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF6" class="fd-button fd-button--positive is-disabled" type="button">Disabled Focusable</button>
-<p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF6">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
-<br><br>
-<button class="fd-button fd-button--negative">Normal State</button>
-<button class="fd-button fd-button--negative is-selected" >Selected State</button>
-<button class="fd-button fd-button--negative" aria-disabled="true" disabled>Disabled State</button>
-<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF7" class="fd-button fd-button--negative is-disabled" type="button">Disabled Focusable</button>
-<p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF7">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
-<br><br>
-<button class="fd-button fd-button--attention">Normal State</button>
-<button class="fd-button fd-button--attention is-selected" >Selected State</button>
-<button class="fd-button fd-button--attention is-disabled" aria-disabled="true" disabled>Disabled State</button>
-<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF8" class="fd-button fd-button--attention is-disabled" type="button">Disabled Focusable</button>
-<p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF8">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
+    <div class="fddocs-button-container">
+        <button class="fd-button fd-button--emphasized">Normal State</button>
+        <button class="fd-button fd-button--emphasized is-selected" >Selected State</button>
+        <button class="fd-button fd-button--emphasized" aria-disabled="true" disabled>Disabled State</button>
+        <button aria-disabled="true" aria-describedby="fd-ONXuqucVcF1" class="fd-button fd-button--emphasized is-disabled" type="button">Disabled Focusable</button>
+        <p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF1">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
+        <br><br>
+        <button class="fd-button">Normal State</button>
+        <button class="fd-button is-selected" >Selected State</button>
+        <button class="fd-button is-disabled" aria-disabled="true" disabled>Disabled State</button>
+        <button aria-disabled="true" aria-describedby="fd-ONXuqucVcF2" class="fd-button is-disabled" type="button">Disabled Focusable</button>
+        <p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF2">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
+        <br><br>
+        <button class="fd-button fd-button--transparent">Normal State</button>
+        <button class="fd-button fd-button--transparent is-selected" >Selected State</button>
+        <button class="fd-button fd-button--transparent is-disabled" aria-disabled="true" disabled>Disabled State</button>
+        <button aria-disabled="true" aria-describedby="fd-ONXuqucVcF3" class="fd-button fd-button--transparent is-disabled" type="button">Disabled Focusable</button>
+        <p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF3">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
+        <br><br>
+        <button class="fd-button fd-button">Normal State</button>
+        <button class="fd-button fd-button is-selected" >Selected State</button>
+        <button class="fd-button fd-button" aria-disabled="true" disabled>Disabled State</button>
+        <button aria-disabled="true" aria-describedby="fd-ONXuqucVcF4" class="fd-button fd-button is-disabled" type="button">Disabled Focusable</button>
+        <p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF4">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
+        <br><br>
+        <button class="fd-button fd-button--ghost">Normal State</button>
+        <button class="fd-button fd-button--ghost is-selected" >Selected State</button>
+        <button class="fd-button fd-button--ghost" aria-disabled="true" disabled>Disabled State</button>
+        <button aria-disabled="true" aria-describedby="fd-ONXuqucVcF5" class="fd-button fd-button--ghost is-disabled" type="button">Disabled Focusable</button>
+        <p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF5">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
+        <br><br>
+        <button class="fd-button fd-button--positive">Normal State</button>
+        <button class="fd-button fd-button--positive is-selected" >Selected State</button>
+        <button class="fd-button fd-button--positive" aria-disabled="true" disabled>Disabled State</button>
+        <button aria-disabled="true" aria-describedby="fd-ONXuqucVcF6" class="fd-button fd-button--positive is-disabled" type="button">Disabled Focusable</button>
+        <p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF6">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
+        <br><br>
+        <button class="fd-button fd-button--negative">Normal State</button>
+        <button class="fd-button fd-button--negative is-selected" >Selected State</button>
+        <button class="fd-button fd-button--negative" aria-disabled="true" disabled>Disabled State</button>
+        <button aria-disabled="true" aria-describedby="fd-ONXuqucVcF7" class="fd-button fd-button--negative is-disabled" type="button">Disabled Focusable</button>
+        <p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF7">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
+        <br><br>
+        <button class="fd-button fd-button--attention">Normal State</button>
+        <button class="fd-button fd-button--attention is-selected" >Selected State</button>
+        <button class="fd-button fd-button--attention is-disabled" aria-disabled="true" disabled>Disabled State</button>
+        <button aria-disabled="true" aria-describedby="fd-ONXuqucVcF8" class="fd-button fd-button--attention is-disabled" type="button">Disabled Focusable</button>
+        <p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF8">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
+    </div>
 `;
 
 buttonStates.storyName = 'Button states';
@@ -515,8 +528,10 @@ These button types indicate different states: normal, selected, disabled and foc
 };
 
 export const focusableDisabled = () => `
-<button aria-disabled="true" aria-describedby="fd-ONXuqucVcF" class="fd-button is-disabled" type="button">Disabled Focusable</button>
-<p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
+    <div class="fddocs-button-container">
+        <button aria-disabled="true" aria-describedby="fd-ONXuqucVcF" class="fd-button is-disabled" type="button">Disabled Focusable</button>
+        <p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
+    </div>
 `;
 
 focusableDisabled.storyName = 'Focusable disabled';
