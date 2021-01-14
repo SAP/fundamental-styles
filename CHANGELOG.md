@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.1-rc.49](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.48...v0.14.1-rc.49) (2021-01-14)
+
+
+### Bug Fixes
+
+* put back button background color ([#2058](https://github.com/SAP/fundamental-styles/issues/2058)) ([b12f34d](https://github.com/SAP/fundamental-styles/commit/b12f34d6666942df7ee7521eaa05897dfa03f7f2))
+
 ### [0.14.1-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.47...v0.14.1-rc.48) (2021-01-14)
 
 ### [0.14.1-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.46...v0.14.1-rc.47) (2021-01-14)
