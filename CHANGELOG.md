@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.1-rc.52](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.51...v0.14.1-rc.52) (2021-01-14)
+
+
+### Bug Fixes
+
+* Reworked styles for button and related components: combobox, input-group, carousel, tile ([#1999](https://github.com/SAP/fundamental-styles/issues/1999)) ([ec7f9a6](https://github.com/SAP/fundamental-styles/commit/ec7f9a60a9b7045ce1603b575f27c3184e931e18))
+
 ### [0.14.1-rc.51](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.50...v0.14.1-rc.51) (2021-01-14)
 
 ### [0.14.1-rc.50](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.49...v0.14.1-rc.50) (2021-01-14)
