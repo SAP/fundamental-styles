@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.1-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.46...v0.14.1-rc.47) (2021-01-14)
+
+
+### Bug Fixes
+
+* change the cursor to pointer for MORE/LESS links in Feed List Item ([#2053](https://github.com/SAP/fundamental-styles/issues/2053)) ([3501a50](https://github.com/SAP/fundamental-styles/commit/3501a50af7ec52a6f147dbbb061f755fe5c848c0))
+
 ### [0.14.1-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.45...v0.14.1-rc.46) (2021-01-14)
 
 ### [0.14.1-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.44...v0.14.1-rc.45) (2021-01-14)
