@@ -587,7 +587,7 @@ export const readOnlyAndDisabled = () => `<div class="fd-container">
 									<span class="fd-tokenizer__indicator">
 										<div class="fd-popover">
 											<div class="fd-popover__control fd-input-group__control" aria-controls="F4GcX34Xa" aria-expanded="false" aria-haspopup="true" aria-label="multi combobox">
-												<span class="fd-tokenizer__indicator" role="button>
+												<span class="fd-tokenizer__indicator" role="button">
 													4 more
 												</span>
 											</div>
@@ -995,7 +995,7 @@ export const twoColumnComboBox = () => ` <div style="height: 350px;">
         <span class="fd-list__footer fd-list__footer--right">
         <a class="fd-link" role="button" >Show All</a>
         </span>
-    </div
+    </div>
 </div>
 </div>
 `;

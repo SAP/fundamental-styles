@@ -211,182 +211,216 @@ exports[`Storyshots Patterns/Multi Input As Form Item 1`] = `
             role="listbox"
           >
             
-                
+				
             <li
               aria-selected="true"
               class="fd-list__item is-selected"
               role="option"
+              tabindex="0"
             >
               
-                    
-              <input
-                checked=""
-                class="fd-checkbox fd-list__input"
-                id="Ai4ez611"
-                type="checkbox"
-              />
-              
-                    
-              <label
-                class="fd-checkbox__label fd-list__label"
-                for="Ai4ez611"
+					
+              <div
+                class="fd-form-item fd-list__form-item"
               >
                 
-                        
-                <span
-                  class="fd-checkbox__text fd-list__title"
-                >
-                  
-                            Apple
-                        
-                </span>
+						
+                <input
+                  aria-labelledby="Az0bg30"
+                  checked=""
+                  class="fd-checkbox"
+                  id="Ai4ez620"
+                  type="checkbox"
+                />
                 
-                    
-              </label>
+						
+                <label
+                  class="fd-checkbox__label"
+                  for="Ai4e20"
+                  tabindex="-1"
+                />
+                
+					
+              </div>
               
-                
+					
+              <span
+                class="fd-list__title"
+                id="Az0bg30"
+              >
+                Apple
+              </span>
+              
+				
             </li>
             
-                
+
+				
             <li
               aria-selected="true"
               class="fd-list__item is-selected"
               role="option"
+              tabindex="0"
             >
               
-                    
-              <input
-                checked=""
-                class="fd-checkbox fd-list__input"
-                id="Ai4ez612"
-                type="checkbox"
-              />
-              
-                    
-              <label
-                class="fd-checkbox__label fd-list__label"
-                for="Ai4ez612"
+					
+              <div
+                class="fd-form-item fd-list__form-item"
               >
                 
-                        
-                <span
-                  class="fd-checkbox__text fd-list__title"
-                >
-                  
-                            Orange
-                        
-                </span>
+						
+                <input
+                  aria-labelledby="Az0bg31"
+                  checked=""
+                  class="fd-checkbox"
+                  id="Ai4ez621"
+                  type="checkbox"
+                />
                 
-                    
-              </label>
+						
+                <label
+                  class="fd-checkbox__label"
+                  for="Ai4ez621"
+                  tabindex="-1"
+                />
+                
+					
+              </div>
               
-                
+					
+              <span
+                class="fd-list__title"
+                id="Az0bg31"
+              >
+                Orange
+              </span>
+              
+				
             </li>
             
-                
+				
             <li
               aria-selected="true"
               class="fd-list__item is-selected"
               role="option"
+              tabindex="0"
             >
               
-                    
-              <input
-                checked=""
-                class="fd-checkbox fd-list__input"
-                id="Ai4ez614"
-                type="checkbox"
-              />
-              
-                    
-              <label
-                class="fd-checkbox__label fd-list__label"
-                for="Ai4ez614"
+					
+              <div
+                class="fd-form-item fd-list__form-item"
               >
                 
-                        
-                <span
-                  class="fd-checkbox__text fd-list__title"
-                >
-                  
-                            Banana
-                        
-                </span>
+						
+                <input
+                  aria-labelledby="Az0bg32"
+                  checked=""
+                  class="fd-checkbox"
+                  id="Ai4ez622"
+                  type="checkbox"
+                />
                 
-                    
-              </label>
-              
+						
+                <label
+                  class="fd-checkbox__label"
+                  for="Ai4ez622"
+                  tabindex="-1"
+                />
                 
-            </li>
-            
-                
-            <li
-              aria-selected="true"
-              class="fd-list__item is-selected"
-              role="option"
-            >
+					
+              </div>
               
-                    
-              <input
-                checked=""
-                class="fd-checkbox fd-list__input"
-                id="Ai4ez615"
-                type="checkbox"
-              />
-              
-                    
-              <label
-                class="fd-checkbox__label fd-list__label"
-                for="Ai4ez615"
+					
+              <span
+                class="fd-list__title"
+                id="Az0bg32"
               >
-                
-                        
-                <span
-                  class="fd-checkbox__text fd-list__title"
-                >
-                  
-                            Kiwi
-                        
-                </span>
-                
-                    
-              </label>
+                Banana
+              </span>
               
-                
+				
             </li>
             
-                
+				
             <li
               class="fd-list__item"
               role="option"
+              tabindex="0"
             >
               
-                    
-              <input
-                class="fd-checkbox fd-list__input"
-                id="Ai4ez617"
-                type="checkbox"
-              />
-              
-                    
-              <label
-                class="fd-checkbox__label fd-list__label"
-                for="Ai4ez617"
+					
+              <div
+                class="fd-form-item fd-list__form-item"
               >
                 
-                        
-                <span
-                  class="fd-checkbox__text fd-list__title"
-                >
-                  
-                            Lemon
-                        
-                </span>
+						
+                <input
+                  aria-labelledby="Az0bg33"
+                  class="fd-checkbox"
+                  id="Ai4ez623"
+                  type="checkbox"
+                />
                 
-                    
-              </label>
+						
+                <label
+                  class="fd-checkbox__label"
+                  for="Ai4ez623"
+                  tabindex="-1"
+                />
+                
+					
+              </div>
               
+					
+              <span
+                class="fd-list__title"
+                id="Az0bg33"
+              >
+                Kiwi
+              </span>
+              
+				
+            </li>
+            
+				
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+					
+              <div
+                class="fd-form-item fd-list__form-item"
+              >
                 
+						
+                <input
+                  aria-labelledby="Az0bg34"
+                  class="fd-checkbox"
+                  id="Ai4ez624"
+                  type="checkbox"
+                />
+                
+						
+                <label
+                  class="fd-checkbox__label"
+                  for="Ai4ez624"
+                  tabindex="-1"
+                />
+                
+					
+              </div>
+              
+					
+              <span
+                class="fd-list__title"
+                id="Az0bg34"
+              >
+                Lemon
+              </span>
+              
+				
             </li>
             
             
@@ -619,182 +653,216 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
             role="listbox"
           >
             
-                    
+					
             <li
               aria-selected="true"
               class="fd-list__item is-selected"
               role="option"
+              tabindex="0"
             >
               
-                        
-              <input
-                checked=""
-                class="fd-checkbox fd-list__input"
-                id="Ai4ez611"
-                type="checkbox"
-              />
-              
-                        
-              <label
-                class="fd-checkbox__label fd-list__label"
-                for="Ai4ez611"
+						
+              <div
+                class="fd-form-item fd-list__form-item"
               >
                 
-                            
-                <span
-                  class="fd-checkbox__text fd-list__title"
-                >
-                  
-                                Apple
-                            
-                </span>
+							
+                <input
+                  aria-labelledby="Az0bg2"
+                  checked=""
+                  class="fd-checkbox"
+                  id="Ai4ez611"
+                  type="checkbox"
+                />
                 
-                        
-              </label>
+							
+                <label
+                  class="fd-checkbox__label"
+                  for="Ai4ez611"
+                  tabindex="-1"
+                />
+                
+						
+              </div>
               
-                    
+						
+              <span
+                class="fd-list__title"
+                id="Az0bg2"
+              >
+                Apple
+              </span>
+              
+					
             </li>
             
-                    
+
+					
             <li
               aria-selected="true"
               class="fd-list__item is-selected"
               role="option"
+              tabindex="0"
             >
               
-                        
-              <input
-                checked=""
-                class="fd-checkbox fd-list__input"
-                id="Ai4ez612"
-                type="checkbox"
-              />
-              
-                        
-              <label
-                class="fd-checkbox__label fd-list__label"
-                for="Ai4ez612"
+						
+              <div
+                class="fd-form-item fd-list__form-item"
               >
                 
-                            
-                <span
-                  class="fd-checkbox__text fd-list__title"
-                >
-                  
-                                Orange
-                            
-                </span>
+							
+                <input
+                  aria-labelledby="Az0bg21"
+                  checked=""
+                  class="fd-checkbox"
+                  id="Ai4ez612"
+                  type="checkbox"
+                />
                 
-                        
-              </label>
+							
+                <label
+                  class="fd-checkbox__label"
+                  for="Ai4ez12"
+                  tabindex="-1"
+                />
+                
+						
+              </div>
               
-                    
+						
+              <span
+                class="fd-list__title"
+                id="Az0bg21"
+              >
+                Orange
+              </span>
+              
+					
             </li>
             
-                    
+					
             <li
               aria-selected="true"
               class="fd-list__item is-selected"
               role="option"
+              tabindex="0"
             >
               
-                        
-              <input
-                checked=""
-                class="fd-checkbox fd-list__input"
-                id="Ai4ez614"
-                type="checkbox"
-              />
-              
-                        
-              <label
-                class="fd-checkbox__label fd-list__label"
-                for="Ai4ez614"
+						
+              <div
+                class="fd-form-item fd-list__form-item"
               >
                 
-                            
-                <span
-                  class="fd-checkbox__text fd-list__title"
-                >
-                  
-                                Banana
-                            
-                </span>
+							
+                <input
+                  aria-labelledby="Az0bg22"
+                  checked=""
+                  class="fd-checkbox"
+                  id="Ai4ez6s13"
+                  type="checkbox"
+                />
                 
-                        
-              </label>
+							
+                <label
+                  class="fd-checkbox__label"
+                  for="Ai4ez6s13"
+                  tabindex="-1"
+                />
+                
+						
+              </div>
               
-                    
-            </li>
-            
-                    
-            <li
-              aria-selected="true"
-              class="fd-list__item is-selected"
-              role="option"
-            >
-              
-                        
-              <input
-                checked=""
-                class="fd-checkbox fd-list__input"
-                id="Ai4ez615"
-                type="checkbox"
-              />
-              
-                        
-              <label
-                class="fd-checkbox__label fd-list__label"
-                for="Ai4ez615"
+						
+              <span
+                class="fd-list__title"
+                id="Az0bg22"
               >
-                
-                            
-                <span
-                  class="fd-checkbox__text fd-list__title"
-                >
-                  
-                                Kiwi
-                            
-                </span>
-                
-                        
-              </label>
+                Banana
+              </span>
               
-                    
+					
             </li>
             
-                    
+					
             <li
               class="fd-list__item"
               role="option"
+              tabindex="0"
             >
               
-                        
-              <input
-                class="fd-checkbox fd-list__input"
-                id="Ai4ez617"
-                type="checkbox"
-              />
-              
-                        
-              <label
-                class="fd-checkbox__label fd-list__label"
-                for="Ai4ez617"
+						
+              <div
+                class="fd-form-item fd-list__form-item"
               >
                 
-                            
-                <span
-                  class="fd-checkbox__text fd-list__title"
-                >
-                  
-                                Lemon
-                            
-                </span>
+							
+                <input
+                  aria-labelledby="Az0bg23"
+                  class="fd-checkbox"
+                  id="Ai4ez614"
+                  type="checkbox"
+                />
                 
-                        
-              </label>
+							
+                <label
+                  class="fd-checkbox__label"
+                  for="Ai4ez614"
+                  tabindex="-1"
+                />
+                
+						
+              </div>
               
-                    
+						
+              <span
+                class="fd-list__title"
+                id="Az0bg23"
+              >
+                Kiwi
+              </span>
+              
+					
+            </li>
+            
+					
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+						
+              <div
+                class="fd-form-item fd-list__form-item"
+              >
+                
+							
+                <input
+                  aria-labelledby="Az0bg24"
+                  class="fd-checkbox"
+                  id="Ai4ez615"
+                  type="checkbox"
+                />
+                
+							
+                <label
+                  class="fd-checkbox__label"
+                  for="Ai4ez615"
+                  tabindex="-1"
+                />
+                
+						
+              </div>
+              
+						
+              <span
+                class="fd-list__title"
+                id="Az0bg24"
+              >
+                Lemon
+              </span>
+              
+					
             </li>
             
                 
@@ -994,180 +1062,216 @@ exports[`Storyshots Patterns/Multi Input Cozy And Compact 1`] = `
             role="listbox"
           >
             
-                    
+                   	
             <li
               aria-selected="true"
               class="fd-list__item is-selected"
               role="option"
+              tabindex="0"
             >
               
-                        
-              <input
-                checked=""
-                class="fd-checkbox fd-checkbox--compact fd-list__input"
-                id="Ai1ez611"
-                type="checkbox"
-              />
-              
-                        
-              <label
-                class="fd-checkbox__label fd-list__label"
-                for="Ai1ez611"
+						
+              <div
+                class="fd-form-item fd-list__form-item"
               >
                 
-                            
-                <span
-                  class="fd-checkbox__text fd-list__title"
-                >
-                  
-                                Apple
-                            
-                </span>
+							
+                <input
+                  aria-labelledby="Az0bg25"
+                  checked=""
+                  class="fd-checkbox fd-checkbox--compact"
+                  id="Ai4ez616"
+                  type="checkbox"
+                />
                 
-                        
-              </label>
+							
+                <label
+                  class="fd-checkbox__label"
+                  for="Ai4ez616"
+                  tabindex="-1"
+                />
+                
+						
+              </div>
               
-                    
+						
+              <span
+                class="fd-list__title"
+                id="Az0bg25"
+              >
+                Apple
+              </span>
+              
+					
             </li>
             
-                    
+
+					
             <li
               aria-selected="true"
               class="fd-list__item is-selected"
               role="option"
+              tabindex="0"
             >
               
-                        
-              <input
-                checked=""
-                class="fd-checkbox fd-checkbox--compact fd-list__input"
-                id="Ai2ez612"
-                type="checkbox"
-              />
-              
-                        
-              <label
-                class="fd-checkbox__label fd-list__label"
-                for="Ai2ez612"
+						
+              <div
+                class="fd-form-item fd-list__form-item"
               >
                 
-                            
-                <span
-                  class="fd-checkbox__text fd-list__title"
-                >
-                  
-                                Orange
-                            
-                </span>
+							
+                <input
+                  aria-labelledby="Az0bg26"
+                  checked=""
+                  class="fd-checkbox fd-checkbox--compact"
+                  id="Ai4ez617"
+                  type="checkbox"
+                />
                 
-                        
-              </label>
+							
+                <label
+                  class="fd-checkbox__label"
+                  for="Ai4ez617"
+                  tabindex="-1"
+                />
+                
+						
+              </div>
               
-                    
+						
+              <span
+                class="fd-list__title"
+                id="Az0bg26"
+              >
+                Orange
+              </span>
+              
+					
             </li>
             
-                    
+					
             <li
               aria-selected="true"
               class="fd-list__item is-selected"
               role="option"
+              tabindex="0"
             >
               
-                        
-              <input
-                checked=""
-                class="fd-checkbox fd-checkbox--compact fd-list__input"
-                id="Ai3ez614"
-                type="checkbox"
-              />
-              
-                        
-              <label
-                class="fd-checkbox__label fd-list__label"
-                for="Ai3ez614"
+						
+              <div
+                class="fd-form-item fd-list__form-item"
               >
                 
-                            
-                <span
-                  class="fd-checkbox__text fd-list__title"
-                >
-                  
-                                Banana
-                            
-                </span>
+							
+                <input
+                  aria-labelledby="Az0bg2a"
+                  checked=""
+                  class="fd-checkbox fd-checkbox--compact"
+                  id="Ai4ez61a3"
+                  type="checkbox"
+                />
                 
-                        
-              </label>
+							
+                <label
+                  class="fd-checkbox__label"
+                  for="Ai4ez61a3"
+                  tabindex="-1"
+                />
+                
+						
+              </div>
               
-                    
+						
+              <span
+                class="fd-list__title"
+                id="Az0bg2a"
+              >
+                Banana
+              </span>
+              
+					
             </li>
             
-                    
+					
             <li
               class="fd-list__item"
               role="option"
+              tabindex="0"
             >
               
-                        
-              <input
-                class="fd-checkbox fd-checkbox--compact fd-list__input"
-                id="Ai8ez615"
-                type="checkbox"
-              />
-              
-                        
-              <label
-                class="fd-checkbox__label fd-list__label"
-                for="Ai8ez615"
+						
+              <div
+                class="fd-form-item fd-list__form-item"
               >
                 
-                            
-                <span
-                  class="fd-checkbox__text fd-list__title"
-                >
-                  
-                                Kiwi
-                            
-                </span>
+							
+                <input
+                  aria-labelledby="Az0bg27"
+                  class="fd-checkbox fd-checkbox--compact"
+                  id="Ai4ez618"
+                  type="checkbox"
+                />
                 
-                        
-              </label>
+							
+                <label
+                  class="fd-checkbox__label"
+                  for="Ai4ez618"
+                  tabindex="-1"
+                />
+                
+						
+              </div>
               
-                    
+						
+              <span
+                class="fd-list__title"
+                id="Az0bg27"
+              >
+                Kiwi
+              </span>
+              
+					
             </li>
             
-                    
+					
             <li
               class="fd-list__item"
               role="option"
+              tabindex="0"
             >
               
-                        
-              <input
-                class="fd-checkbox fd-checkbox--compact fd-list__input"
-                id="AiHez617"
-                type="checkbox"
-              />
-              
-                        
-              <label
-                class="fd-checkbox__label fd-list__label"
-                for="AiHez617"
+						
+              <div
+                class="fd-form-item fd-list__form-item"
               >
                 
-                            
-                <span
-                  class="fd-checkbox__text fd-list__title"
-                >
-                  
-                                Lemon
-                            
-                </span>
+							
+                <input
+                  aria-labelledby="Az0bg28"
+                  class="fd-checkbox fd-checkbox--compact"
+                  id="Ai4ez619"
+                  type="checkbox"
+                />
                 
-                        
-              </label>
+							
+                <label
+                  class="fd-checkbox__label"
+                  for="Ai4ez619"
+                  tabindex="-1"
+                />
+                
+						
+              </div>
               
-                    
+						
+              <span
+                class="fd-list__title"
+                id="Az0bg28"
+              >
+                Lemon
+              </span>
+              
+					
             </li>
             
                 
@@ -1371,37 +1475,50 @@ exports[`Storyshots Patterns/Multi Input Filtering 1`] = `
           aria-selected="true"
           class="fd-list__item is-selected"
           role="option"
+          tabindex="0"
         >
           
                     
-          <input
-            checked=""
-            class="fd-checkbox fd-list__input"
-            id="Ai4ez611A"
-            type="checkbox"
-          />
-          
-                    
-          <label
-            class="fd-checkbox__label fd-list__label"
-            for="Ai4ez611A"
+          <div
+            class="fd-form-item fd-list__form-item"
           >
             
                         
-            <span
-              class="fd-checkbox__text fd-list__title"
-            >
-              
-                            
-              <b>
-                A
-              </b>
-              pple
+            <input
+              aria-labelledby="Az0bg59"
+              checked=""
+              class="fd-checkbox"
+              id="Ai4ez651"
+              type="checkbox"
+            />
+            
                         
-            </span>
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez651"
+              tabindex="-1"
+            />
             
                     
-          </label>
+          </div>
+          
+                
+          <span
+            class="fd-list__title"
+            id="Az0bg59"
+          >
+            <b>
+              A
+            </b>
+            pple
+          </span>
+          
+                
+          <span
+            class="fd-list__secondary"
+          >
+            A2
+          </span>
           
                 
         </li>
@@ -1411,37 +1528,51 @@ exports[`Storyshots Patterns/Multi Input Filtering 1`] = `
           aria-selected="true"
           class="fd-list__item is-selected"
           role="option"
+          tabindex="0"
         >
           
                     
-          <input
-            checked=""
-            class="fd-checkbox fd-list__input"
-            id="Ai4ez612A"
-            type="checkbox"
-          />
-          
-                    
-          <label
-            class="fd-checkbox__label fd-list__label"
-            for="Ai4ez612A"
+          <div
+            class="fd-form-item fd-list__form-item"
           >
             
                         
-            <span
-              class="fd-list__title"
-            >
-              
-                            Or
-              <b>
-                a
-              </b>
-              nge
+            <input
+              aria-labelledby="Az0bg60"
+              checked=""
+              class="fd-checkbox"
+              id="Ai4ez652"
+              type="checkbox"
+            />
+            
                         
-            </span>
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez652"
+              tabindex="-1"
+            />
             
                     
-          </label>
+          </div>
+          
+                    
+          <span
+            class="fd-list__title"
+            id="Az0bg60"
+          >
+            Or
+            <b>
+              a
+            </b>
+            nge
+          </span>
+          
+                    
+          <span
+            class="fd-list__secondary"
+          >
+            A1
+          </span>
           
                 
         </li>
@@ -1451,37 +1582,206 @@ exports[`Storyshots Patterns/Multi Input Filtering 1`] = `
           aria-selected="true"
           class="fd-list__item is-selected"
           role="option"
+          tabindex="0"
         >
           
                     
-          <input
-            checked=""
-            class="fd-checkbox fd-list__input"
-            id="Ai4ez614A"
-            type="checkbox"
-          />
-          
-                    
-          <label
-            class="fd-checkbox__label fd-list__label"
-            for="Ai4ez614A"
+          <div
+            class="fd-form-item fd-list__form-item"
           >
             
                         
-            <span
-              class="fd-list__title"
-            >
-              
-                            B
-              <b>
-                a
-              </b>
-              nana
+            <input
+              aria-labelledby="Az0bg61"
+              checked=""
+              class="fd-checkbox"
+              id="Ai4ez653"
+              type="checkbox"
+            />
+            
                         
-            </span>
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez653"
+              tabindex="-1"
+            />
             
                     
-          </label>
+          </div>
+          
+                    
+          <span
+            class="fd-list__title"
+            id="Az0bg61"
+          >
+            B
+            <b>
+              a
+            </b>
+            nana
+          </span>
+          
+                    
+          <span
+            class="fd-list__secondary"
+          >
+            A3
+          </span>
+          
+                
+        </li>
+        
+                
+        <li
+          class="fd-list__item"
+          role="option"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-form-item fd-list__form-item"
+          >
+            
+                        
+            <input
+              aria-labelledby="Az0bg62"
+              class="fd-checkbox"
+              id="Ai4ez654"
+              type="checkbox"
+            />
+            
+                        
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez654"
+              tabindex="-1"
+            />
+            
+                    
+          </div>
+          
+                
+          <span
+            class="fd-list__title"
+            id="Az0bg62"
+          >
+            <b>
+              A
+            </b>
+            pple
+          </span>
+          
+                
+          <span
+            class="fd-list__secondary"
+          >
+            A1
+          </span>
+          
+                
+        </li>
+        
+                
+        <li
+          class="fd-list__item"
+          role="option"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-form-item fd-list__form-item"
+          >
+            
+                        
+            <input
+              aria-labelledby="Az0bg63"
+              class="fd-checkbox"
+              id="Ai4ez655"
+              type="checkbox"
+            />
+            
+                        
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez655"
+              tabindex="-1"
+            />
+            
+                    
+          </div>
+          
+                    
+          <span
+            class="fd-list__title"
+            id="Az0bg63"
+          >
+            Or
+            <b>
+              a
+            </b>
+            nge
+          </span>
+          
+                    
+          <span
+            class="fd-list__secondary"
+          >
+            A2
+          </span>
+          
+                
+        </li>
+        
+                
+        <li
+          class="fd-list__item"
+          role="option"
+          tabindex="0"
+        >
+          
+                    
+          <div
+            class="fd-form-item fd-list__form-item"
+          >
+            
+                        
+            <input
+              aria-labelledby="Az0bg64"
+              class="fd-checkbox"
+              id="Ai4ez656"
+              type="checkbox"
+            />
+            
+                        
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez656"
+              tabindex="-1"
+            />
+            
+                    
+          </div>
+          
+                    
+          <span
+            class="fd-list__title"
+            id="Az0bg64"
+          >
+            B
+            <b>
+              a
+            </b>
+            nana
+          </span>
+          
+                    
+          <span
+            class="fd-list__secondary"
+          >
+            A3
+          </span>
           
                 
         </li>
@@ -1714,273 +2014,324 @@ exports[`Storyshots Patterns/Multi Input Grouping 1`] = `
           role="listbox"
         >
           
-                
+               
           <li
             aria-selected="true"
             class="fd-list__item is-selected"
             role="option"
+            tabindex="0"
           >
             
-                    
-            <input
-              checked=""
-              class="fd-checkbox fd-list__input"
-              id="Ai1ez651"
-              type="checkbox"
-            />
-            
-                    
-            <label
-              class="fd-checkbox__label fd-list__label"
-              for="Ai1ez651"
+					
+            <div
+              class="fd-form-item fd-list__form-item"
             >
               
-                        
-              <span
-                class="fd-checkbox__text fd-list__title"
-              >
-                
-                            Apple
-                        
-              </span>
+						
+              <input
+                aria-labelledby="Az0bg35"
+                checked=""
+                class="fd-checkbox"
+                id="Ai4ez625"
+                type="checkbox"
+              />
               
-                    
-            </label>
+						
+              <label
+                class="fd-checkbox__label"
+                for="Ai4ez625"
+                tabindex="-1"
+              />
+              
+					
+            </div>
             
-                
+					
+            <span
+              class="fd-list__title"
+              id="Az0bg35"
+            >
+              Apple
+            </span>
+            
+				
           </li>
           
-                
+
+				
           <li
             aria-selected="true"
             class="fd-list__item is-selected"
             role="option"
+            tabindex="0"
           >
             
-                    
-            <input
-              checked=""
-              class="fd-checkbox fd-list__input"
-              id="Ai2ez652"
-              type="checkbox"
-            />
-            
-                    
-            <label
-              class="fd-checkbox__label fd-list__label"
-              for="Ai2ez652"
+					
+            <div
+              class="fd-form-item fd-list__form-item"
             >
               
-                        
-              <span
-                class="fd-checkbox__text fd-list__title"
-              >
-                
-                            Orange
-                        
-              </span>
+						
+              <input
+                aria-labelledby="Az0bg36"
+                checked=""
+                class="fd-checkbox"
+                id="Ai4ez626"
+                type="checkbox"
+              />
               
-                    
-            </label>
+						
+              <label
+                class="fd-checkbox__label"
+                for="Ai4ez626"
+                tabindex="-1"
+              />
+              
+					
+            </div>
             
-                
+					
+            <span
+              class="fd-list__title"
+              id="Az0bg36"
+            >
+              Orange
+            </span>
+            
+				
           </li>
           
-                
+				
           <li
             aria-selected="true"
             class="fd-list__item is-selected"
             role="option"
+            tabindex="0"
           >
             
-                    
-            <input
-              checked=""
-              class="fd-checkbox fd-list__input"
-              id="Ai3ez654"
-              type="checkbox"
-            />
-            
-                    
-            <label
-              class="fd-checkbox__label fd-list__label"
-              for="Ai3ez654"
+					
+            <div
+              class="fd-form-item fd-list__form-item"
             >
               
-                        
-              <span
-                class="fd-checkbox__text fd-list__title"
-              >
-                
-                            Kiwi
-                        
-              </span>
+						
+              <input
+                aria-labelledby="Az0bg37"
+                checked=""
+                class="fd-checkbox"
+                id="Ai4ez627"
+                type="checkbox"
+              />
               
-                    
-            </label>
+						
+              <label
+                class="fd-checkbox__label"
+                for="Ai4ez627"
+                tabindex="-1"
+              />
+              
+					
+            </div>
             
-                
+					
+            <span
+              class="fd-list__title"
+              id="Az0bg37"
+            >
+              Banana
+            </span>
+            
+				
           </li>
           
-                
+				
           <li
             class="fd-list__item"
             role="option"
+            tabindex="0"
           >
             
-                    
-            <input
-              class="fd-checkbox fd-list__input"
-              id="Ai8ez655"
-              type="checkbox"
-            />
-            
-                    
-            <label
-              class="fd-checkbox__label fd-list__label"
-              for="Ai8ez655"
+					
+            <div
+              class="fd-form-item fd-list__form-item"
             >
               
-                        
-              <span
-                class="fd-checkbox__text fd-list__title"
-              >
-                
-                            Banana
-                        
-              </span>
+						
+              <input
+                aria-labelledby="Az0bg38"
+                class="fd-checkbox"
+                id="Ai4ez628"
+                type="checkbox"
+              />
               
-                    
-            </label>
+						
+              <label
+                class="fd-checkbox__label"
+                for="Ai4ez628"
+                tabindex="-1"
+              />
+              
+					
+            </div>
             
-                
+					
+            <span
+              class="fd-list__title"
+              id="Az0bg38"
+            >
+              Kiwi
+            </span>
+            
+				
           </li>
           
-                
+				
           <li
             class="fd-list__item"
             role="option"
+            tabindex="0"
           >
             
-                    
-            <input
-              class="fd-checkbox fd-list__input"
-              id="AiHez657"
-              type="checkbox"
-            />
-            
-                    
-            <label
-              class="fd-checkbox__label fd-list__label"
-              for="AiHez657"
+					
+            <div
+              class="fd-form-item fd-list__form-item"
             >
               
-                        
-              <span
-                class="fd-checkbox__text fd-list__title"
-              >
-                
-                            Lemon
-                        
-              </span>
+						
+              <input
+                aria-labelledby="Az0bg39"
+                class="fd-checkbox"
+                id="Ai4ez629"
+                type="checkbox"
+              />
               
-                    
-            </label>
+						
+              <label
+                class="fd-checkbox__label"
+                for="Ai4ez629"
+                tabindex="-1"
+              />
+              
+					
+            </div>
             
-                
+					
+            <span
+              class="fd-list__title"
+              id="Az0bg39"
+            >
+              Lemon
+            </span>
+            
+				
           </li>
           
             
         </ul>
         
             
-        <h3
+        <label
           class="fd-list__group-header"
-          id="vegListHeader"
+          id="selectMultipleVegsLabel"
         >
           
                 Vegetables
             
-        </h3>
+        </label>
         
             
         <ul
-          aria-labelledby="vegListHeader"
+          aria-labelledby="selectMultipleVegsLabel"
           aria-multiselectable="true"
           class="fd-list fd-list--multi-input"
           role="listbox"
         >
           
-                
+ 				
           <li
             aria-selected="true"
             class="fd-list__item is-selected"
             role="option"
+            tabindex="0"
           >
             
-                    
-            <input
-              checked=""
-              class="fd-checkbox fd-list__input"
-              id="Ai8ez689"
-              type="checkbox"
-            />
-            
-                    
-            <label
-              class="fd-checkbox__label fd-list__label"
-              for="Ai8ez689"
+					
+            <div
+              class="fd-form-item fd-list__form-item"
             >
               
-                        
-              <span
-                class="fd-checkbox__text fd-list__title"
-              >
-                
-                            Onion
-                        
-              </span>
+						
+              <input
+                aria-labelledby="Az0bg40"
+                checked=""
+                class="fd-checkbox"
+                id="Ai4ez630"
+                type="checkbox"
+              />
               
-                    
-            </label>
+						
+              <label
+                class="fd-checkbox__label"
+                for="Ai4ez630"
+                tabindex="-1"
+              />
+              
+					
+            </div>
             
-                
+					
+            <span
+              class="fd-list__title"
+              id="Az0bg40"
+            >
+              Onion
+            </span>
+            
+				
           </li>
           
-                
+
+				
           <li
             aria-selected="true"
             class="fd-list__item is-selected"
             role="option"
+            tabindex="0"
           >
             
-                    
-            <input
-              checked=""
-              class="fd-checkbox fd-list__input"
-              id="Ai8ez685"
-              type="checkbox"
-            />
-            
-                    
-            <label
-              class="fd-checkbox__label fd-list__label"
-              for="Ai8ez685"
+					
+            <div
+              class="fd-form-item fd-list__form-item"
             >
               
-                        
-              <span
-                class="fd-checkbox__text fd-list__title"
-              >
-                
-                            Tomato
-                        
-              </span>
+						
+              <input
+                aria-labelledby="Az0bg41"
+                checked=""
+                class="fd-checkbox"
+                id="Ai4ez631"
+                type="checkbox"
+              />
               
-                    
-            </label>
+						
+              <label
+                class="fd-checkbox__label"
+                for="Ai4ez632"
+                tabindex="-1"
+              />
+              
+					
+            </div>
             
-                
+					
+            <span
+              class="fd-list__title"
+              id="Az0bg41"
+            >
+              Tomato
+            </span>
+            
+				
           </li>
           
             
@@ -2187,180 +2538,216 @@ exports[`Storyshots Patterns/Multi Input Match Popover Body Size 1`] = `
           role="listbox"
         >
           
-                
+        		
           <li
             aria-selected="true"
             class="fd-list__item is-selected"
             role="option"
+            tabindex="0"
           >
             
-                    
-            <input
-              checked=""
-              class="fd-checkbox fd-list__input"
-              id="Ai124z651"
-              type="checkbox"
-            />
-            
-                    
-            <label
-              class="fd-checkbox__label fd-list__label"
-              for="Ai124z651"
+					
+            <div
+              class="fd-form-item fd-list__form-item"
             >
               
-                        
-              <span
-                class="fd-checkbox__text fd-list__title"
-              >
-                
-                            Apple
-                        
-              </span>
+						
+              <input
+                aria-labelledby="Az0bg42"
+                checked=""
+                class="fd-checkbox"
+                id="Ai4ez633"
+                type="checkbox"
+              />
               
-                    
-            </label>
+						
+              <label
+                class="fd-checkbox__label"
+                for="Ai4ez633"
+                tabindex="-1"
+              />
+              
+					
+            </div>
             
-                
+					
+            <span
+              class="fd-list__title"
+              id="Az0bg42"
+            >
+              Apple
+            </span>
+            
+				
           </li>
           
-                
+
+				
           <li
             aria-selected="true"
             class="fd-list__item is-selected"
             role="option"
+            tabindex="0"
           >
             
-                    
-            <input
-              checked=""
-              class="fd-checkbox fd-list__input"
-              id="Ai134z651"
-              type="checkbox"
-            />
-            
-                    
-            <label
-              class="fd-checkbox__label fd-list__label"
-              for="Ai134z651"
+					
+            <div
+              class="fd-form-item fd-list__form-item"
             >
               
-                        
-              <span
-                class="fd-checkbox__text fd-list__title"
-              >
-                
-                            Orange
-                        
-              </span>
+						
+              <input
+                aria-labelledby="Az0bg43"
+                checked=""
+                class="fd-checkbox"
+                id="Ai4ez634"
+                type="checkbox"
+              />
               
-                    
-            </label>
+						
+              <label
+                class="fd-checkbox__label"
+                for="Ai4ez634"
+                tabindex="-1"
+              />
+              
+					
+            </div>
             
-                
+					
+            <span
+              class="fd-list__title"
+              id="Az0bg43"
+            >
+              Orange
+            </span>
+            
+				
           </li>
           
-                
+				
           <li
             aria-selected="true"
             class="fd-list__item is-selected"
             role="option"
+            tabindex="0"
           >
             
-                    
-            <input
-              checked=""
-              class="fd-checkbox fd-list__input"
-              id="Ai1366z651"
-              type="checkbox"
-            />
-            
-                    
-            <label
-              class="fd-checkbox__label fd-list__label"
-              for="Ai1366z651"
+					
+            <div
+              class="fd-form-item fd-list__form-item"
             >
               
-                        
-              <span
-                class="fd-checkbox__text fd-list__title"
-              >
-                
-                            Kiwi
-                        
-              </span>
+						
+              <input
+                aria-labelledby="Az0bg44"
+                checked=""
+                class="fd-checkbox"
+                id="Ai4ez635"
+                type="checkbox"
+              />
               
-                    
-            </label>
+						
+              <label
+                class="fd-checkbox__label"
+                for="Ai4ez635"
+                tabindex="-1"
+              />
+              
+					
+            </div>
             
-                
+					
+            <span
+              class="fd-list__title"
+              id="Az0bg44"
+            >
+              Banana
+            </span>
+            
+				
           </li>
           
-                
+				
           <li
             class="fd-list__item"
             role="option"
+            tabindex="0"
           >
             
-                    
-            <input
-              class="fd-checkbox fd-list__input"
-              id="Ai136gf51"
-              type="checkbox"
-            />
-            
-                    
-            <label
-              class="fd-checkbox__label fd-list__label"
-              for="Ai136gf51"
+					
+            <div
+              class="fd-form-item fd-list__form-item"
             >
               
-                        
-              <span
-                class=" fd-checkbox__text fd-list__title"
-              >
-                
-                            Banana
-                        
-              </span>
+						
+              <input
+                aria-labelledby="Az0bg45"
+                class="fd-checkbox"
+                id="Ai4ez636"
+                type="checkbox"
+              />
               
-                    
-            </label>
+						
+              <label
+                class="fd-checkbox__label"
+                for="Ai4ez636"
+                tabindex="-1"
+              />
+              
+					
+            </div>
             
-                
+					
+            <span
+              class="fd-list__title"
+              id="Az0bg45"
+            >
+              Kiwi
+            </span>
+            
+				
           </li>
           
-                
+				
           <li
             class="fd-list__item"
             role="option"
+            tabindex="0"
           >
             
-                    
-            <input
-              class="fd-checkbox fd-list__input"
-              id="Ai136ggfd"
-              type="checkbox"
-            />
-            
-                    
-            <label
-              class="fd-checkbox__label fd-list__label"
-              for="Ai136ggfd"
+					
+            <div
+              class="fd-form-item fd-list__form-item"
             >
               
-                        
-              <span
-                class="fd-checkbox__text fd-list__title"
-              >
-                
-                            Lemon
-                        
-              </span>
+						
+              <input
+                aria-labelledby="Az0bg46"
+                class="fd-checkbox"
+                id="Ai4ez637"
+                type="checkbox"
+              />
               
-                    
-            </label>
+						
+              <label
+                class="fd-checkbox__label"
+                for="Ai4ez637"
+                tabindex="-1"
+              />
+              
+					
+            </div>
             
-                
+					
+            <span
+              class="fd-list__title"
+              id="Az0bg46"
+            >
+              Lemon
+            </span>
+            
+				
           </li>
           
             
@@ -2661,167 +3048,128 @@ exports[`Storyshots Patterns/Multi Input Mobile Mode 1`] = `
           aria-selected="true"
           class="fd-list__item is-selected"
           role="option"
+          tabindex="0"
         >
           
-                     
-          <input
-            checked=""
-            class="fd-checkbox  fd-list__input"
-            id="GGi4ez641"
-            type="checkbox"
-          />
-          
-                     
-          <label
-            class="fd-checkbox__label fd-list__label"
-            for="GGi4ez641"
+                    
+          <div
+            class="fd-form-item fd-list__form-item"
           >
             
-                         
-            <span
-              class="fd-checkbox__text fd-list__title"
-            >
-              
-                             Apple
-                         
-            </span>
+                        
+            <input
+              aria-labelledby="Az0bg57"
+              checked=""
+              class="fd-checkbox"
+              id="Ai4ez648"
+              type="checkbox"
+            />
             
-                     
-          </label>
+                        
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez648"
+              tabindex="-1"
+            />
+            
+                    
+          </div>
           
-                 
+                    
+          <span
+            class="fd-list__title"
+            id="Az0bg57"
+          >
+            Apple
+          </span>
+          
+                
         </li>
         
-                  
+                
         <li
           aria-selected="true"
           class="fd-list__item is-selected"
           role="option"
+          tabindex="0"
         >
           
-                     
-          <input
-            checked=""
-            class="fd-checkbox  fd-list__input"
-            id="Ai4FGFG612"
-            type="checkbox"
-          />
-          
-                     
-          <label
-            class="fd-checkbox__label fd-list__label"
-            for="Ai4FGFG612"
+                    
+          <div
+            class="fd-form-item fd-list__form-item"
           >
             
-                         
-            <span
-              class="fd-checkbox__text fd-list__title"
-            >
-              Orange
-            </span>
+                        
+            <input
+              aria-labelledby="Az0bg58"
+              checked=""
+              class="fd-checkbox"
+              id="Ai4ez649"
+              type="checkbox"
+            />
             
-                     
-          </label>
+                        
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez649"
+              tabindex="-1"
+            />
+            
+                    
+          </div>
           
-                 
+                    
+          <span
+            class="fd-list__title"
+            id="Az0bg58"
+          >
+            Orange
+          </span>
+          
+                
         </li>
         
-                  
+                
         <li
           aria-selected="true"
           class="fd-list__item is-selected"
           role="option"
+          tabindex="0"
         >
           
-                     
-          <input
-            checked=""
-            class="fd-checkbox  fd-list__input"
-            id="Ai4e88614"
-            type="checkbox"
-          />
-          
-                     
-          <label
-            class="fd-checkbox__label fd-list__label"
-            for="Ai4e88614"
+                    
+          <div
+            class="fd-form-item fd-list__form-item"
           >
             
-                         
-            <span
-              class="fd-checkbox__text fd-list__title"
-            >
-              Kiwi
-            </span>
+                        
+            <input
+              aria-labelledby="Az0bg59"
+              checked=""
+              class="fd-checkbox"
+              id="Ai4ez650"
+              type="checkbox"
+            />
             
-                     
-          </label>
+                        
+            <label
+              class="fd-checkbox__label"
+              for="Ai4ez650"
+              tabindex="-1"
+            />
+            
+                    
+          </div>
           
-                 
-        </li>
-        
-                  
-        <li
-          class="fd-list__item"
-          role="option"
-        >
-          
-                     
-          <input
-            class="fd-checkbox  fd-list__input"
-            id="Ai4egh6024"
-            type="checkbox"
-          />
-          
-                     
-          <label
-            class="fd-checkbox__label fd-list__label"
-            for="Ai4egh6024"
+                    
+          <span
+            class="fd-list__title"
+            id="Az0bg59"
           >
-            
-                         
-            <span
-              class="fd-checkbox__text fd-list__title"
-            >
-              Banana
-            </span>
-            
-                     
-          </label>
+            Banana
+          </span>
           
-                 
-        </li>
-        
-                  
-        <li
-          class="fd-list__item"
-          role="option"
-        >
-          
-                     
-          <input
-            class="fd-checkbox  fd-list__input"
-            id="7gJHdsad"
-            type="checkbox"
-          />
-          
-                     
-          <label
-            class="fd-checkbox__label fd-list__label"
-            for="7gJHdsad"
-          >
-            
-                         
-            <span
-              class="fd-checkbox__text fd-list__title"
-            >
-              Lemon
-            </span>
-            
-                     
-          </label>
-          
-                 
+                
         </li>
         
              
@@ -3660,172 +4008,223 @@ exports[`Storyshots Patterns/Multi Input Semantic 1`] = `
           role="listbox"
         >
           
-             
+			
+          <li
+            class="fd-list__message fd-list__message--success"
+            role="option"
+          >
+            Success Message
+          </li>
+          
+			
           <li
             aria-selected="true"
             class="fd-list__item is-selected"
             role="option"
+            tabindex="0"
           >
             
-                
-            <input
-              checked=""
-              class="fd-checkbox fd-list__input"
-              id="AGi4ez611"
-              type="checkbox"
-            />
-            
-                
-            <label
-              class="fd-checkbox__label fd-list__label"
-              for="AGi4ez611"
+				
+            <div
+              class="fd-form-item fd-list__form-item"
             >
               
-                    
-              <span
-                class="fd-checkbox__text fd-list__title"
-              >
-                
-                        Apple
-                    
-              </span>
+					
+              <input
+                aria-labelledby="Az0bg47"
+                checked=""
+                class="fd-checkbox"
+                id="Ai4ez638"
+                type="checkbox"
+              />
               
-                
-            </label>
+					
+              <label
+                class="fd-checkbox__label"
+                for="Ai4ez638"
+                tabindex="-1"
+              />
+              
+				
+            </div>
             
+				
+            <span
+              class="fd-list__title"
+              id="Az0bg47"
+            >
+              Apple
+            </span>
             
+			
           </li>
           
-             
+			
           <li
             aria-selected="true"
             class="fd-list__item is-selected"
             role="option"
+            tabindex="0"
           >
             
-                
-            <input
-              checked=""
-              class="fd-checkbox fd-list__input"
-              id="Ai4Fez612"
-              type="checkbox"
-            />
-            
-                
-            <label
-              class="fd-checkbox__label fd-list__label"
-              for="Ai4Fez612"
+				
+            <div
+              class="fd-form-item fd-list__form-item"
             >
               
-                    
-              <span
-                class="fd-checkbox__text fd-list__title"
-              >
-                Orange
-              </span>
+					
+              <input
+                aria-labelledby="Az0bg48"
+                checked=""
+                class="fd-checkbox"
+                id="Ai4ez639"
+                type="checkbox"
+              />
               
-                
-            </label>
+					
+              <label
+                class="fd-checkbox__label"
+                for="Ai4ez639"
+                tabindex="-1"
+              />
+              
+				
+            </div>
             
+				
+            <span
+              class="fd-list__title"
+              id="Az0bg48"
+            >
+              Orange
+            </span>
             
+			
           </li>
           
-             
+			
           <li
             aria-selected="true"
             class="fd-list__item is-selected"
             role="option"
+            tabindex="0"
           >
             
-                
-            <input
-              checked=""
-              class="fd-checkbox fd-list__input"
-              id="Ai4eGz614"
-              type="checkbox"
-            />
-            
-                
-            <label
-              class="fd-checkbox__label fd-list__label"
-              for="Ai4eGz614"
+				
+            <div
+              class="fd-form-item fd-list__form-item"
             >
               
-                    
-              <span
-                class="fd-checkbox__text fd-list__title"
-              >
-                Kiwi
-              </span>
+					
+              <input
+                aria-labelledby="Az0bg49"
+                checked=""
+                class="fd-checkbox"
+                id="Ai4ez640"
+                type="checkbox"
+              />
               
-                
-            </label>
+					
+              <label
+                class="fd-checkbox__label"
+                for="Ai4ez640"
+                tabindex="-1"
+              />
+              
+				
+            </div>
             
+				
+            <span
+              class="fd-list__title"
+              id="Az0bg49"
+            >
+              Banana
+            </span>
             
+			
           </li>
           
-             
+			
           <li
             class="fd-list__item"
             role="option"
+            tabindex="0"
           >
             
-                
-            <input
-              class="fd-checkbox fd-list__input"
-              id="Ai4egh614"
-              type="checkbox"
-            />
-            
-                
-            <label
-              class="fd-checkbox__label fd-list__label"
-              for="Ai4egh614"
+				
+            <div
+              class="fd-form-item fd-list__form-item"
             >
               
-                    
-              <span
-                class="fd-checkbox__text fd-list__title"
-              >
-                Banana
-              </span>
+					
+              <input
+                aria-labelledby="Az0bg50"
+                class="fd-checkbox"
+                id="Ai4ez641"
+                type="checkbox"
+              />
               
-                
-            </label>
+					
+              <label
+                class="fd-checkbox__label"
+                for="Ai4ez641"
+                tabindex="-1"
+              />
+              
+				
+            </div>
             
+				
+            <span
+              class="fd-list__title"
+              id="Az0bg50"
+            >
+              Kiwi
+            </span>
             
+			
           </li>
           
-             
+			
           <li
             class="fd-list__item"
             role="option"
+            tabindex="0"
           >
             
-                
-            <input
-              class="fd-checkbox fd-list__input"
-              id="jdFffsd3"
-              type="checkbox"
-            />
-            
-                
-            <label
-              class="fd-checkbox__label fd-list__label"
-              for="jdFffsd3"
+				
+            <div
+              class="fd-form-item fd-list__form-item"
             >
               
-                    
-              <span
-                class="fd-checkbox__text fd-list__title"
-              >
-                Lemon
-              </span>
+					
+              <input
+                aria-labelledby="Az0bg51"
+                class="fd-checkbox"
+                id="Ai4ez642"
+                type="checkbox"
+              />
               
-                
-            </label>
+					
+              <label
+                class="fd-checkbox__label"
+                for="Ai4ez642"
+                tabindex="-1"
+              />
+              
+				
+            </div>
             
+				
+            <span
+              class="fd-list__title"
+              id="Az0bg51"
+            >
+              Lemon
+            </span>
             
+			
           </li>
           
         

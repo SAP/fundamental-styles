@@ -3096,19 +3096,25 @@ exports[`Storyshots Patterns/Multi ComboBox Read Only And Disabled 1`] = `
                       
 												
                       <span
-                        aria-hidden="true"
                         class="fd-tokenizer__indicator"
-                        fd-popover__body"=""
-                        id="F4GcX34Xa"
-                        role="button>
-													4 more
-												</span>
-											</div>
-											<div class="
+                        role="button"
                       >
                         
-											
+													4 more
+												
                       </span>
+                      
+											
+                    </div>
+                    
+											
+                    <div
+                      aria-hidden="true"
+                      class="fd-popover__body"
+                      id="F4GcX34Xa"
+                    >
+                      
+											
                     </div>
                     
 										
