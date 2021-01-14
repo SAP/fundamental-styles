@@ -41,22 +41,27 @@
     &--action {
       padding: 0;
       text-align: center;
+      border-bottom: var(--fdList_Item_Action_Border);
+      height: var(--fdList_Item_Action_Height);
 
       &:first-child {
-        border-top: $fd-list-item-border;
+        border-top: var(--fdList_Item_Action_Border);
       }
 
       .#{$block}__title {
         @include list-item-states();
 
         padding: 0 $fd-list-item-padding-x;
-        height: 100%;
+        height: var(--fdList_Item_Action_Button_Size);
         width: 100%;
         background: transparent;
         color: var(--sapButton_TextColor);
         pointer-events: all;
         cursor: pointer;
         text-shadow: var(--fdListBase_Text_Shadow);
+        margin: var(--fdList_Item_Action_Button_Spacing);
+        border: var(--fdList_Item_Action_Button_Border);
+        border-radius: var(--fdList_Item_Action_Button_Border_Radius);
 
         @include fd-focus() {
           outline-style: dotted;
@@ -224,6 +229,12 @@
   &--compact {
     .#{$block}__item {
       height: 2rem;
+    }
+
+    .#{$block}__item.#{$block}__item--action {
+      .#{$block}__title {
+        height: var(--fdList_Item_Action_Button_Size_Compact);
+      }
     }
 
     .#{$block}__title {

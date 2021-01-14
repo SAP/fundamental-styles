@@ -11,6 +11,16 @@ $block: #{$fd-namespace}-input-group;
 $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
 .#{$block} {
+  @mixin fd-control-button-side-border() {
+    .#{$block}__button {
+      border-left: var(--fdInputGroup_ControlButton_SideBorder);
+
+      @include fd-rtl() {
+        border-left: none;
+        border-right: var(--fdInputGroup_ControlButton_SideBorder);
+      }
+    }
+  }
 
   $fd-input-width-basis: 10rem;
   $fd-input-group-add-on-border: 0.0625rem;
@@ -209,6 +219,14 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
           outline-color: $fd-input-group-button-active-focus-color;
         }
       }
+    }
+
+    @include fd-hover() {
+      @include fd-control-button-side-border();
+    }
+
+    @include fd-active() {
+      @include fd-control-button-side-border();
     }
   }
 

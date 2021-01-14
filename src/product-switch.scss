@@ -83,6 +83,7 @@ $block: #{$fd-namespace}-product-switch;
     margin-bottom: 0.5rem;
     background-color: var(--sapList_Background);
     border-radius: var(--sapElement_BorderCornerRadius);
+    box-shadow: var(--fdProductSwitch_Shadow);
 
     .#{$block}__title:not(:last-child) {
       @include fd-ellipsis();
@@ -90,35 +91,56 @@ $block: #{$fd-namespace}-product-switch;
 
     @include fd-product-pseudo-element-background(var(--sapList_Background));
 
+    @include fd-hover() {
+      background-color: var(--sapList_Hover_Background);
+      border: var(--fdProductSwitch_Border);
+      cursor: pointer;
+
+      @include fd-product-pseudo-element-background(var(--sapList_Hover_Background));
+    }
+
+    @include fd-active() {
+      background-color: var(--sapList_Active_Background);
+      border: var(--fdProductSwitch_Border);
+
+      .#{$block}__title,
+      .#{$block}__subtitle {
+        color: var(--sapList_Active_TextColor);
+      }
+
+      .#{$block}__icon {
+        @include fd-icon-selector() {
+          color: var(--sapList_Active_TextColor);
+        }
+      }
+
+      @include fd-product-pseudo-element-background(var(--sapList_Active_Background));
+
+      @include fd-hover() {
+        @include fd-product-pseudo-element-background(var(--sapList_Active_Background));
+      }
+    }
+
     &.selected {
       background-color: var(--sapList_SelectionBackgroundColor);
-      box-shadow: 0 0 0 0.125rem var(--sapList_SelectionBorderColor);
+      border: 0.125rem solid var(--sapList_SelectionBorderColor);
 
       @include fd-product-pseudo-element-background(var(--sapList_SelectionBackgroundColor));
 
-      &:hover {
+      @include fd-hover() {
         background-color: var(--sapList_Hover_SelectionBackground);
 
         @include fd-product-pseudo-element-background(var(--sapList_Hover_SelectionBackground));
       }
 
-      &:active {
+      @include fd-active() {
         background-color: var(--sapList_Active_Background);
 
         @include fd-product-pseudo-element-background(var(--sapList_Active_Background));
       }
-
-      &:focus {
-        box-shadow: none;
-      }
     }
 
-    &:focus {
-      outline: none;
-      border: 0.0625rem dotted;
-      border-color: var(--sapContent_FocusColor);
-      border-radius: var(--sapElement_BorderCornerRadius);
-    }
+    @include fd-fiori-focus();
 
     &.dragged {
       @include dragged() {
@@ -146,38 +168,10 @@ $block: #{$fd-namespace}-product-switch;
           box-shadow: var(--sapContent_Shadow2);
         }
 
-        &:focus {
+        @include fd-hover() {
           outline: none;
         }
       }
-    }
-  }
-
-  &__item:hover {
-    background-color: var(--sapList_Hover_Background);
-    cursor: pointer;
-
-    @include fd-product-pseudo-element-background(var(--sapList_Hover_Background));
-  }
-
-  &__item:active {
-    background-color: var(--sapList_Active_Background);
-
-    .#{$block}__title,
-    .#{$block}__subtitle {
-      color: var(--sapList_Active_TextColor);
-    }
-
-    .#{$block}__icon {
-      @include fd-icon-selector() {
-        color: var(--sapList_Active_TextColor);
-      }
-    }
-
-    @include fd-product-pseudo-element-background(var(--sapList_Active_Background));
-
-    &:hover {
-      @include fd-product-pseudo-element-background(var(--sapList_Active_Background));
     }
   }
 
@@ -212,7 +206,7 @@ $block: #{$fd-namespace}-product-switch;
     white-space: normal;
     z-index: 1;
 
-    &:last-child {
+    @include fd-last-child() {
       @include line-clamp(2);
     }
 
@@ -283,11 +277,11 @@ $block: #{$fd-namespace}-product-switch;
 
       @include fd-product-pseudo-element-background(var(--sapTile_Background));
 
-      &:hover {
+      @include fd-hover() {
         @include fd-product-pseudo-element-background(var(--sapList_Hover_Background));
       }
 
-      &:active {
+      @include fd-active() {
         @include fd-product-pseudo-element-background(var(--sapList_SelectionBorderColor));
       }
 
@@ -297,25 +291,20 @@ $block: #{$fd-namespace}-product-switch;
 
         @include fd-product-pseudo-element-background(var(--sapList_SelectionBorderColor));
 
-        &:hover {
+        @include fd-hover() {
           @include fd-product-pseudo-element-background(var(--sapList_Hover_SelectionBackground));
         }
 
-        &:active {
+        @include fd-active() {
           @include fd-product-pseudo-element-background(var(--sapList_Active_Background));
 
-          &:hover {
+          @include fd-hover() {
             @include fd-product-pseudo-element-background(var(--sapList_Active_Background));
           }
         }
       }
 
-      &:focus {
-        outline: none;
-        border: 0.0625rem dotted;
-        border-color: var(--sapContent_FocusColor);
-        border-radius: 0;
-      }
+      @include fd-fiori-focus();
 
       .#{$block}__title {
         &::before,
@@ -395,7 +384,7 @@ $block: #{$fd-namespace}-product-switch;
           }
         }
 
-        &:active {
+        @include fd-active() {
           .#{$block}__subtitle {
             color: var(--sapList_Active_TextColor);
           }

@@ -19,7 +19,7 @@ export default {
 
 - You want to link to a different page or object. Instead, use the **Link** component.
 `,
-        components: ['popover', 'segmented-button', 'menu', 'icon', 'button-split', 'button']
+        components: ['popover', 'segmented-button', 'menu', 'icon', 'button', 'button-split']
     }
 };
 
@@ -284,7 +284,9 @@ menuButton.parameters = {
 
 export const splitMenuButton = () => `
 <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
-  <button class="fd-button" aria-label="button">Button with text</button>
+  <button class="fd-button" aria-label="button">
+    <span class="fd-button-split__text">Button with a big amount of text</span>
+  </button>
   <button class="fd-button" aria-controls="t4c0o273" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
   id="t4c0o273">
@@ -305,8 +307,10 @@ export const splitMenuButton = () => `
   </div>
 </div>
 
-<div class="fd-button-split" role="group" aria-label="button-split">
-  <button class="fd-button fd-button--emphasized" aria-label="button">Button with text</button>
+<div class="fd-button-split fd-button-split--emphasized" role="group" aria-label="button-split">
+  <button class="fd-button fd-button--emphasized" aria-label="button">
+    <span class="fd-button-split__text">Button with text</span>
+  </button>
   <button class="fd-button fd-button--emphasized" aria-controls="t4c0o2732" 
   aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
 
@@ -329,8 +333,12 @@ export const splitMenuButton = () => `
   </div>
 </div>
 
-<div class="fd-button-split" role="group" aria-label="button-split">
-  <button class="fd-button fd-button--transparent" aria-label="button">Button with text</button>
+<div class="fd-button-split fd-button-split--transparent" role="group" aria-label="button-split">
+  <button class="fd-button fd-button--transparent" aria-label="button">
+    <span class="fd-button-split__text">
+        Button with text
+    </span>
+ </button>
   <button class="fd-button fd-button--transparent" aria-controls="t4c0o27322" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
   <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
     id="t4c0o27322">
