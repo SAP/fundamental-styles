@@ -311,6 +311,7 @@ code.docs-code-grey {
     position: relative;
     background-color: transparent;
     z-index: 1;
+    justify-content: center;
 
     &::before {
       background-color: transparent;
@@ -324,7 +325,6 @@ code.docs-code-grey {
     position: relative;
     transform: translate(0%, 0%);
     width: 50%;
-    margin: auto;
     height: auto;
 
     &:not(:last-child) {
