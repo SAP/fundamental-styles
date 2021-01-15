@@ -99,9 +99,6 @@ export const iconAndText = () => `<div class="fddocs-container">
         <i class="fd-object-status__icon sap-icon--message-information" role="presentation"></i>
         <span class="fd-object-status__text">Info</span>
     </span>
-    <span class="fd-object-status">
-        <span class="fd-object-status__text">Neutral</span>
-    </span>
 </div>
 `;
 

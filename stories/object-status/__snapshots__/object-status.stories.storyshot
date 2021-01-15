@@ -530,21 +530,6 @@ exports[`Storyshots Components/Object Status Icon And Text 1`] = `
     
   </span>
   
-    
-  <span
-    class="fd-object-status"
-  >
-    
-        
-    <span
-      class="fd-object-status__text"
-    >
-      Neutral
-    </span>
-    
-    
-  </span>
-  
 
 </div>
 `;
