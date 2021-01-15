@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.15.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.54...v0.15.0-rc.0) (2021-01-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* update the semantic icons for Object Status and Object List and remove icon for neutral Object Status
+
+### Bug Fixes
+
+* update semantic icons in object status and object list ([#2062](https://github.com/SAP/fundamental-styles/issues/2062)) ([87fe079](https://github.com/SAP/fundamental-styles/commit/87fe07947d24f4875acfb46f4c025a7cc9646f09))
+
 ### [0.14.1-rc.54](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.53...v0.14.1-rc.54) (2021-01-14)
 
 ### [0.14.1-rc.53](https://github.com/SAP/fundamental-styles/compare/v0.14.1-rc.52...v0.14.1-rc.53) (2021-01-14)
