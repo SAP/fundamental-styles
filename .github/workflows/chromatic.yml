@@ -3,7 +3,7 @@ on: push
 
 jobs:
   test:
-    if: "contains(toJSON(github.event.commits[0].message), '[ci visual]')"
+    if: "contains(toJSON(github.event.commits[0].message), '[ci visual]')" 
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
