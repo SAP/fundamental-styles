@@ -13,7 +13,7 @@ exports[`Storyshots Components/Object Status Clickable Object Status 1`] = `
     
         
     <i
-      class="fd-object-status__icon sap-icon--status-negative"
+      class="fd-object-status__icon sap-icon--message-error"
       role="presentation"
     />
     
@@ -35,7 +35,7 @@ exports[`Storyshots Components/Object Status Clickable Object Status 1`] = `
     
         
     <i
-      class="fd-object-status__icon sap-icon--status-critical"
+      class="fd-object-status__icon sap-icon--message-warning"
       role="presentation"
     />
     
@@ -57,7 +57,7 @@ exports[`Storyshots Components/Object Status Clickable Object Status 1`] = `
     
         
     <i
-      class="fd-object-status__icon sap-icon--status-positive"
+      class="fd-object-status__icon sap-icon--message-success"
       role="presentation"
     />
     
@@ -80,7 +80,7 @@ exports[`Storyshots Components/Object Status Clickable Object Status 1`] = `
     
         
     <i
-      class="fd-object-status__icon sap-icon--hint"
+      class="fd-object-status__icon sap-icon--message-information"
       role="presentation"
     />
     
@@ -100,12 +100,6 @@ exports[`Storyshots Components/Object Status Clickable Object Status 1`] = `
     role="button"
     tabindex="0"
   >
-    
-        
-    <i
-      class="fd-object-status__icon sap-icon--to-be-reviewed"
-      role="presentation"
-    />
     
         
     <span
@@ -395,7 +389,7 @@ exports[`Storyshots Components/Object Status Icon 1`] = `
         
     <i
       aria-label="Negative"
-      class="fd-object-status__icon sap-icon--status-negative"
+      class="fd-object-status__icon sap-icon--message-error"
     />
     
     
@@ -409,7 +403,7 @@ exports[`Storyshots Components/Object Status Icon 1`] = `
         
     <i
       aria-label="Warning"
-      class="fd-object-status__icon sap-icon--status-critical"
+      class="fd-object-status__icon sap-icon--message-warning"
     />
     
     
@@ -423,7 +417,7 @@ exports[`Storyshots Components/Object Status Icon 1`] = `
         
     <i
       aria-label="Correct"
-      class="fd-object-status__icon sap-icon--status-positive"
+      class="fd-object-status__icon sap-icon--message-success"
     />
     
     
@@ -437,21 +431,7 @@ exports[`Storyshots Components/Object Status Icon 1`] = `
         
     <i
       aria-label="More information"
-      class="fd-object-status__icon sap-icon--hint"
-    />
-    
-    
-  </span>
-  
-    
-  <span
-    class="fd-object-status"
-  >
-    
-        
-    <i
-      aria-label="To be reviewed"
-      class="fd-object-status__icon sap-icon--to-be-reviewed"
+      class="fd-object-status__icon sap-icon--message-information"
     />
     
     
@@ -473,7 +453,7 @@ exports[`Storyshots Components/Object Status Icon And Text 1`] = `
     
         
     <i
-      class="fd-object-status__icon sap-icon--status-negative"
+      class="fd-object-status__icon sap-icon--message-error"
       role="presentation"
     />
     
@@ -494,7 +474,7 @@ exports[`Storyshots Components/Object Status Icon And Text 1`] = `
     
         
     <i
-      class="fd-object-status__icon sap-icon--status-critical"
+      class="fd-object-status__icon sap-icon--message-warning"
       role="presentation"
     />
     
@@ -515,7 +495,7 @@ exports[`Storyshots Components/Object Status Icon And Text 1`] = `
     
         
     <i
-      class="fd-object-status__icon sap-icon--status-positive"
+      class="fd-object-status__icon sap-icon--message-success"
       role="presentation"
     />
     
@@ -536,7 +516,7 @@ exports[`Storyshots Components/Object Status Icon And Text 1`] = `
     
         
     <i
-      class="fd-object-status__icon sap-icon--hint"
+      class="fd-object-status__icon sap-icon--message-information"
       role="presentation"
     />
     
@@ -554,12 +534,6 @@ exports[`Storyshots Components/Object Status Icon And Text 1`] = `
   <span
     class="fd-object-status"
   >
-    
-        
-    <i
-      class="fd-object-status__icon sap-icon--to-be-reviewed"
-      role="presentation"
-    />
     
         
     <span
@@ -663,7 +637,7 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
       
         
       <i
-        class="fd-object-status__icon sap-icon--status-negative"
+        class="fd-object-status__icon sap-icon--message-error"
         role="presentation"
       />
       
@@ -677,7 +651,7 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
       
         
       <i
-        class="fd-object-status__icon sap-icon--status-negative"
+        class="fd-object-status__icon sap-icon--message-error"
         role="presentation"
       />
       
@@ -698,7 +672,7 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
       
         
       <i
-        class="fd-object-status__icon sap-icon--status-critical"
+        class="fd-object-status__icon sap-icon--message-warning"
         role="presentation"
       />
       
@@ -719,7 +693,7 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
       
         
       <i
-        class="fd-object-status__icon sap-icon--status-positive"
+        class="fd-object-status__icon sap-icon--message-success"
         role="presentation"
       />
       
@@ -740,7 +714,7 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
       
         
       <i
-        class="fd-object-status__icon sap-icon--hint"
+        class="fd-object-status__icon sap-icon--message-information"
         role="presentation"
       />
       
@@ -758,12 +732,6 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
     <span
       class="fd-object-status fd-object-status--inverted"
     >
-      
-        
-      <i
-        class="fd-object-status__icon sap-icon--to-be-reviewed"
-        role="presentation"
-      />
       
         
       <span
@@ -796,7 +764,7 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
       
         
       <i
-        class="fd-object-status__icon sap-icon--status-negative"
+        class="fd-object-status__icon sap-icon--message-error"
         role="presentation"
       />
       
@@ -817,7 +785,7 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
       
         
       <i
-        class="fd-object-status__icon sap-icon--status-critical"
+        class="fd-object-status__icon sap-icon--message-warning"
         role="presentation"
       />
       
@@ -838,7 +806,7 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
       
         
       <i
-        class="fd-object-status__icon sap-icon--status-positive"
+        class="fd-object-status__icon sap-icon--message-success"
         role="presentation"
       />
       
@@ -859,7 +827,7 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
       
         
       <i
-        class="fd-object-status__icon sap-icon--hint"
+        class="fd-object-status__icon sap-icon--message-information"
         role="presentation"
       />
       
@@ -877,12 +845,6 @@ exports[`Storyshots Components/Object Status Inverted 1`] = `
     <a
       class="fd-object-status fd-object-status--link fd-object-status--inverted"
     >
-      
-        
-      <i
-        class="fd-object-status__icon sap-icon--to-be-reviewed"
-        role="presentation"
-      />
       
         
       <span
@@ -1188,7 +1150,7 @@ exports[`Storyshots Components/Object Status Large Object Status 1`] = `
     
         
     <i
-      class="fd-object-status__icon sap-icon--status-negative"
+      class="fd-object-status__icon sap-icon--message-error"
       role="presentation"
     />
     
@@ -1209,7 +1171,7 @@ exports[`Storyshots Components/Object Status Large Object Status 1`] = `
     
         
     <i
-      class="fd-object-status__icon sap-icon--status-critical"
+      class="fd-object-status__icon sap-icon--message-warning"
       role="presentation"
     />
     
@@ -1230,7 +1192,7 @@ exports[`Storyshots Components/Object Status Large Object Status 1`] = `
     
         
     <i
-      class="fd-object-status__icon sap-icon--status-positive"
+      class="fd-object-status__icon sap-icon--message-success"
       role="presentation"
     />
     
@@ -1251,7 +1213,7 @@ exports[`Storyshots Components/Object Status Large Object Status 1`] = `
     
         
     <i
-      class="fd-object-status__icon sap-icon--hint"
+      class="fd-object-status__icon sap-icon--message-information"
       role="presentation"
     />
     
@@ -1269,12 +1231,6 @@ exports[`Storyshots Components/Object Status Large Object Status 1`] = `
   <span
     class="fd-object-status fd-object-status--large"
   >
-    
-        
-    <i
-      class="fd-object-status__icon sap-icon--to-be-reviewed"
-      role="presentation"
-    />
     
         
     <span
@@ -1302,7 +1258,7 @@ exports[`Storyshots Components/Object Status Primary 1`] = `
     
         
     <i
-      class="fd-object-status__icon sap-icon--status-negative"
+      class="fd-object-status__icon sap-icon--message-error"
       role="presentation"
     />
     
@@ -1323,7 +1279,7 @@ exports[`Storyshots Components/Object Status Primary 1`] = `
     
         
     <i
-      class="fd-object-status__icon sap-icon--status-critical"
+      class="fd-object-status__icon sap-icon--message-warning"
       role="presentation"
     />
     
@@ -1344,7 +1300,7 @@ exports[`Storyshots Components/Object Status Primary 1`] = `
     
         
     <i
-      class="fd-object-status__icon sap-icon--status-positive"
+      class="fd-object-status__icon sap-icon--message-success"
       role="presentation"
     />
     
@@ -1365,7 +1321,7 @@ exports[`Storyshots Components/Object Status Primary 1`] = `
     
         
     <i
-      class="fd-object-status__icon sap-icon--hint"
+      class="fd-object-status__icon sap-icon--message-information"
       role="presentation"
     />
     
@@ -1374,27 +1330,6 @@ exports[`Storyshots Components/Object Status Primary 1`] = `
       class="fd-object-status__text"
     >
       Info
-    </span>
-    
-    
-  </span>
-  
-    
-  <span
-    class="fd-object-status"
-  >
-    
-        
-    <i
-      class="fd-object-status__icon sap-icon--to-be-reviewed"
-      role="presentation"
-    />
-    
-        
-    <span
-      class="fd-object-status__text"
-    >
-      Neutral
     </span>
     
     

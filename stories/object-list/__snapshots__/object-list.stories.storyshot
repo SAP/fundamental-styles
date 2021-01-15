@@ -397,7 +397,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
                   
           
                   <i
-                    class="fd-object-status__icon sap-icon--status-negative"
+                    class="fd-object-status__icon sap-icon--message-error"
                     role="presentation"
                   />
                   
@@ -1147,7 +1147,7 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
                     
           
                     <i
-                      class="fd-object-status__icon sap-icon--status-negative"
+                      class="fd-object-status__icon sap-icon--message-error"
                       role="presentation"
                     />
                     
@@ -1652,7 +1652,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
                   
           
                   <i
-                    class="fd-object-status__icon sap-icon--status-negative"
+                    class="fd-object-status__icon sap-icon--message-error"
                     role="presentation"
                   />
                   
@@ -2179,7 +2179,7 @@ exports[`Storyshots Components/Object List Selection With Navigation 1`] = `
                     
           
                     <i
-                      class="fd-object-status__icon sap-icon--status-negative"
+                      class="fd-object-status__icon sap-icon--message-error"
                       role="presentation"
                     />
                     
@@ -2685,7 +2685,7 @@ exports[`Storyshots Components/Object List Standard 1`] = `
                 
           
                 <i
-                  class="fd-object-status__icon sap-icon--status-negative"
+                  class="fd-object-status__icon sap-icon--message-error"
                   role="presentation"
                 />
                 
