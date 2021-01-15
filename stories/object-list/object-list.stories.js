@@ -162,7 +162,7 @@ export const object = () => `
           </div>
           <div class="fd-object-list__row-right">
           <span class="fd-object-status fd-object-status--negative">
-          <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
+          <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
           <span class="fd-object-status__text">Negative</span>
          </span>
           </div>
@@ -416,7 +416,7 @@ export const navigation = () => `
           </div>
           <div class="fd-object-list__row-right">
           <span class="fd-object-status fd-object-status--negative">
-          <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
+          <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
           <span class="fd-object-status__text">Negative</span>
          </span>
           </div>
@@ -555,7 +555,7 @@ export const selection = () => `
           </div>
           <div class="fd-object-list__row-right">
           <span class="fd-object-status fd-object-status--negative">
-          <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
+          <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
           <span class="fd-object-status__text">Negative</span>
          </span>
           </div>
@@ -698,7 +698,7 @@ export const selectionWithNavigation = () => `
           </div>
           <div class="fd-object-list__row-right">
           <span class="fd-object-status fd-object-status--negative">
-          <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
+          <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
           <span class="fd-object-status__text">Negative</span>
          </span>
           </div>
@@ -839,7 +839,7 @@ export const borderless = () => `
           </div>
           <div class="fd-object-list__row-right">
           <span class="fd-object-status fd-object-status--negative">
-          <i class="fd-object-status__icon sap-icon--status-negative" role="presentation"></i>
+          <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
           <span class="fd-object-status__text">Negative</span>
          </span>
           </div>
