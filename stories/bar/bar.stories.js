@@ -42,7 +42,7 @@ export default {
 export const Default = () => `<div class="fd-bar">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
                 <i class="sap-icon--navigation-left-arrow"></i>
             </button>
         </div>
@@ -73,7 +73,7 @@ export const Default = () => `<div class="fd-bar">
             role="presentation" aria-label="John Doe"></span>
         </div>
         <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
                 <i class="sap-icon--grid"></i>
             </button>
         </div>
@@ -151,17 +151,17 @@ export const Header = () => `
 <div class="fd-bar fd-bar--header">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
                 <i class="sap-icon--navigation-left-arrow"></i>
             </button>
         </div>
         <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
                 <i class="sap-icon--home"></i>
             </button>
         </div>
         <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
                 <i class="sap-icon--account"></i>
             </button>
         </div>
@@ -190,7 +190,7 @@ export const Header = () => `
             </div>
         </div>
         <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
                 <i class="sap-icon--grid"></i>
             </button>
         </div>
@@ -296,13 +296,13 @@ export const Subheader = () => `
         <div class="fd-bar__element">
             <div class="fd-form-item">
                 <div class="fd-segmented-button" role="group" aria-label="Group label">
-                    <button aria-label="button" class="fd-button fd-button--compact" aria-pressed="true">
+                    <button aria-label="button" class="fd-button" aria-pressed="true">
                         <i class="sap-icon--email"></i>
                     </button>
-                    <button aria-label="button" class="fd-button fd-button--compact">
+                    <button aria-label="button" class="fd-button">
                         <i class="sap-icon--iphone"></i>
                     </button>
-                    <button aria-label="button" class="fd-button fd-button--compact">
+                    <button aria-label="button" class="fd-button">
                         <i class="sap-icon--notification-2"></i>
                     </button>
                 </div>
@@ -336,17 +336,17 @@ export const HeaderWithSubheader = () => `
 <div class="fd-bar fd-bar--header-with-subheader">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
                 <i class="sap-icon--navigation-left-arrow"></i>
             </button>
         </div>
         <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
                 <i class="sap-icon--home"></i>
             </button>
         </div>
         <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
                 <i class="sap-icon--account"></i>
             </button>
         </div>
@@ -375,7 +375,7 @@ export const HeaderWithSubheader = () => `
         </div>
         </div>
         <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
                 <i class="sap-icon--grid"></i>
             </button>
         </div>
@@ -416,10 +416,10 @@ export const Footer = () => `
 <div class="fd-bar fd-bar--footer fd-bar--cozy">
     <div class="fd-bar__right">
         <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--emphasized">Save</button>
+            <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
         </div>
         <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent">Cancel</button>
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
         </div>
     </div>
 </div>
