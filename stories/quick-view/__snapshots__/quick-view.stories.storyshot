@@ -281,7 +281,7 @@ exports[`Storyshots Components/Quick View Popover 1`] = `
         
                 
         <div
-          class="fd-bar__middle"
+          class="fd-bar__left"
         >
           
                     
