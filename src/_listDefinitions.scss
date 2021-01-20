@@ -50,6 +50,27 @@ $semantic-color: (
   "informative": ("color": var(--sapInformativeTextColor))
 );
 
+@mixin list-part-elements() {
+  .#{$block}__title,
+  .#{$block}__secondary,
+  .#{$block}__icon,
+  .#{$block}__content,
+  .#{$block}__byline,
+  .#{$block}__byline-left,
+  .#{$block}__byline-right,
+  .#{$block}__thumbnail,
+  &.#{$block}__link--navigation-indicator::after,
+  & {
+    @content;
+  }
+
+  @each $set-name, $color-set in $semantic-color {
+    .#{$block}__byline-right--#{$set-name} {
+      @content;
+    }
+  }
+}
+
 @mixin fake-list-outline() {
   &:focus,
   &.is-focus {
@@ -107,23 +128,8 @@ $semantic-color: (
       }
     }
 
-    .#{$block}__title,
-    .#{$block}__secondary,
-    .#{$block}__icon,
-    .#{$block}__content,
-    .#{$block}__byline,
-    .#{$block}__byline-left,
-    .#{$block}__byline-right,
-    .#{$block}__thumbnail,
-    &.#{$block}__link--navigation-indicator::after,
-    & {
+    @include list-part-elements() {
       color: var(--sapList_Active_TextColor);
-    }
-
-    @each $set-name, $color-set in $semantic-color {
-      .#{$block}__byline-right--#{$set-name} {
-        color: var(--sapList_Active_TextColor);
-      }
     }
   }
 }

@@ -38,6 +38,10 @@
       }
     }
 
+    &--interractive {
+      @include list-item-states();
+    }
+
     &--action {
       padding: 0;
       text-align: center;
@@ -63,12 +67,7 @@
         border: var(--fdList_Item_Action_Button_Border);
         border-radius: var(--fdList_Item_Action_Button_Border_Radius);
 
-        @include fd-focus() {
-          outline-style: dotted;
-          outline-width: var(--sapContent_FocusWidth);
-          outline-color: var(--sapContent_FocusColor);
-          outline-offset: -0.125rem;
-
+        @include fd-fiori-focus(-0.125rem) {
           @include fd-active() {
             outline-color: var(--sapContent_ContrastFocusColor);
           }
@@ -78,6 +77,10 @@
           border: 0;
         }
       }
+    }
+
+    @include fd-selected() {
+      @include list-item-selected-state();
     }
   }
 
