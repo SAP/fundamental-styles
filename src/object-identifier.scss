@@ -7,28 +7,20 @@ $block: #{$fd-namespace}-object-identifier;
   $fd-object-identifier-title-font-size: var(--sapFontLargeSize);
   $fd-object-identifier-title-font-weight: bold;
 
+  .#{$fd-namespace}-link {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
   &__title {
     @include fd-reset();
 
     color: var(--sapList_TextColor);
     font-size: $fd-object-identifier-title-font-size;
 
-    &--link {
-      color: var(--sapLinkColor);
-    }
-
     &--bold {
       font-weight: $fd-object-identifier-title-font-weight;
-
-      .#{$block}__link {
-        font-weight: $fd-object-identifier-title-font-weight;
-      }
     }
-  }
-
-  &__title--bold .#{$block}__link,
-  &__link {
-    font-size: $fd-object-identifier-title-font-size;
   }
 
   &__text {
@@ -37,16 +29,9 @@ $block: #{$fd-namespace}-object-identifier;
     margin-top: 0.5rem;
     color: var(--sapContent_LabelColor);
   }
-}
 
-.#{$block}__table {
-  .#{$block} {
-    &__title,
-    &__title--bold,
-    &__title--link,
-    &__link,
-    &__title .#{$block}__link,
-    &__title--bold .#{$block}__link {
+  &--medium {
+    .#{$block}__title {
       font-size: var(--sapFontSize);
     }
   }
