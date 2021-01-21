@@ -2,7 +2,7 @@
 
 exports[`Storyshots Components/Avatar Group Group Type 1`] = `
 <div
-  class="fd-popover fd-popover--right"
+  class="fd-popover"
 >
   
     
@@ -15,7 +15,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
       aria-expanded="false"
       aria-haspopup="true"
       aria-label="Has popup type dialog Conjoined avatars, 6 avatars displayed, 8 avatars hidden, activate for complete list"
-      class="fd-avatar-group fd-avatar-group--group fd-avatar-group--m"
+      class="fd-avatar-group fd-avatar-group--group-type fd-avatar-group--m"
       onclick="onPopoverClick('popover_avatar-group_tztuj');"
       role="button"
       tabindex="0"
@@ -140,13 +140,11 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
       >
         
                 
-        <span
-          class="fd-button__text"
+        <bdi
+          class="fd-button__text fd-avatar-group__button-text"
         >
-          <bdi>
-            +8
-          </bdi>
-        </span>
+          +8
+        </bdi>
         
             
       </button>
@@ -161,7 +159,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
     
   <div
     aria-hidden="false"
-    class="fd-popover__body fd-popover__body--right"
+    class="fd-popover__body"
     id="popover_avatar-group_tztuj"
   >
     
@@ -596,7 +594,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
 
 exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
 <div
-  class="fd-avatar-group fd-avatar-group--individual fd-avatar-group--s"
+  class="fd-avatar-group fd-avatar-group--individual-type fd-avatar-group--s"
 >
   
     
@@ -1517,7 +1515,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
 
     
   <div
-    class="fd-popover fd-popover--right"
+    class="fd-popover"
   >
     
         
@@ -1536,13 +1534,11 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
       >
         
                
-        <span
-          class="fd-button__text"
+        <bdi
+          class="fd-button__text fd-avatar-group__button-text"
         >
-          <bdi>
-            +4
-          </bdi>
-        </span>
+          +4
+        </bdi>
         
             
       </button>
@@ -1554,7 +1550,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
         
     <div
       aria-hidden="true"
-      class="fd-popover__body fd-popover__body--right"
+      class="fd-popover__body"
       id="popover_avatar_more_aoiwjth"
     >
       

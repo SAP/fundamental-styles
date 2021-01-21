@@ -31,18 +31,19 @@ $block: #{$fd-namespace}-avatar-group;
     "l": ("ratio": ($fd-const-ratio * 5), "font-size": 2.25rem),
     "xl": ("ratio": ($fd-const-ratio * 7), "font-size": 3rem)
   );
+  $fd-focus-outline-offset: 0.0625rem;
 
   @include fd-reset();
 
-  &--individual {
+  &--individual-type {
     .#{$block}__item {
-      @include fd-fiori-focus();
+      @include fd-fiori-focus($fd-focus-outline-offset);
       @include action-cursor();
     }
   }
 
-  &--group {
-    @include fd-fiori-focus();
+  &--group-type {
+    @include fd-fiori-focus($fd-focus-outline-offset);
     @include action-cursor();
 
     .#{$block}__more-button {
@@ -59,7 +60,7 @@ $block: #{$fd-namespace}-avatar-group;
   &__more-button {
     @include fd-reset();
 
-    .fd-button__text {
+    .#{$block}__button-text {
       font-size: inherit;
 
       bdi {
@@ -71,6 +72,8 @@ $block: #{$fd-namespace}-avatar-group;
   @each $set-name, $size-set in $fd-avatar-group-more-button-sizes {
     &--#{$set-name} {
       .#{$block}__more-button {
+        @include fd-fiori-focus($fd-focus-outline-offset);
+
         height: map_get($size-set, "ratio");
         max-height: map_get($size-set, "ratio");
         min-height: map_get($size-set, "ratio");
@@ -84,7 +87,7 @@ $block: #{$fd-namespace}-avatar-group;
 
   @each $type-name, $type-set in $fd-avatar-group-item-spacing {
     @each $size-name, $size-set in map_get($fd-avatar-group-item-spacing, $type-name) {
-      &--#{$type-name} {
+      &--#{$type-name}-type {
         &.#{$block}--#{$size-name} {
           .#{$block}__item {
             margin-right: map_get($size-set, "margin-right");

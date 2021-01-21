@@ -44,7 +44,7 @@ Do not use the **AvatarGroup** if:
     }
 };
 
-export const individualType = () => `<div class="fd-avatar-group fd-avatar-group--individual fd-avatar-group--s">
+export const individualType = () => `<div class="fd-avatar-group fd-avatar-group--individual-type fd-avatar-group--s">
     <div class="fd-popover">
         <div class="fd-popover__control">
             <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false" onclick="onPopoverClick('popover_avatar_5z28edb');">
@@ -228,18 +228,18 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
         </div>
     </div>
 
-    <div class="fd-popover fd-popover--right">
+    <div class="fd-popover">
         <div class="fd-popover__control">
             <button class="fd-button fd-avatar-group__more-button fd-avatar-group__more-button--s"
                     role="button" aria-label="Has popup type dialog"
                     aria-haspopup="true"
                     aria-expanded="false"
                     onclick="onPopoverClick('popover_avatar_more_aoiwjth');">
-               <span class="fd-button__text"><bdi>+4</bdi></span>
+               <bdi class="fd-button__text fd-avatar-group__button-text">+4</bdi>
             </button>
         </div>
         
-        <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="popover_avatar_more_aoiwjth">
+        <div class="fd-popover__body" aria-hidden="true" id="popover_avatar_more_aoiwjth">
             <div class="fd-popover__wrapper" style="max-height: 200px; min-width: 250px; overflow-x: hidden;">
                 <div class="fd-popover__body-header">
                     <div class="fd-bar fd-bar--header">
@@ -290,9 +290,9 @@ individualType.parameters = {
 
 
 
-export const groupType = () => `<div class="fd-popover fd-popover--right">
+export const groupType = () => `<div class="fd-popover">
     <div class="fd-popover__control">
-        <div class="fd-avatar-group fd-avatar-group--group fd-avatar-group--m"
+        <div class="fd-avatar-group fd-avatar-group--group-type fd-avatar-group--m"
              role="button"
              tabindex="0"
              aria-label="Has popup type dialog Conjoined avatars, 6 avatars displayed, 8 avatars hidden, activate for complete list"
@@ -323,12 +323,12 @@ export const groupType = () => `<div class="fd-popover fd-popover--right">
             </div>
         
             <button class="fd-button fd-avatar-group__more-button fd-avatar-group__more-button--m" role="button" tabindex="-1">
-                <span class="fd-button__text"><bdi>+8</bdi></span>
+                <bdi class="fd-button__text fd-avatar-group__button-text">+8</bdi>
             </button>
         </div>
     </div>
     
-    <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="popover_avatar-group_tztuj">
+    <div class="fd-popover__body" aria-hidden="false" id="popover_avatar-group_tztuj">
         <div class="fd-popover__wrapper" style="max-height: 200px; overflow-x: hidden">
             <div class="fd-popover__body-header">
                 <div class="fd-bar fd-bar--header">
