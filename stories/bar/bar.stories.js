@@ -39,7 +39,9 @@ export default {
     }
 };
 
-export const Default = () => `<div class="fd-bar">
+export const Default = () => `
+<p><b>Compact bar with compact elements</b></p>
+<div class="fd-bar">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
             <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
@@ -79,12 +81,54 @@ export const Default = () => `<div class="fd-bar">
         </div>
     </div>
 </div>
+<p><b>Compact bar with cozy elements</b></p>
+<div class="fd-bar">
+    <div class="fd-bar__left">
+        <div class="fd-bar__element">
+            <button aria-label="button" class="fd-button fd-button--transparent">
+                <i class="sap-icon--navigation-left-arrow"></i>
+            </button>
+        </div>
+        <div class="fd-bar__element">
+            <span aria-label="text">TEXT</span>
+        </div>
+    </div>
+    <div class="fd-bar__middle">
+        <div class="fd-bar__element">
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
+                <button aria-label="button" class="fd-button" aria-pressed="true">
+                    <i class="sap-icon--email"></i>
+                </button>
+                <button aria-label="button" class="fd-button">
+                    <i class="sap-icon--iphone"></i>
+                </button>
+                <button aria-label="button" class="fd-button">
+                    <i class="sap-icon--notification-2"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="fd-bar__right">
+        <div class="fd-bar__element">
+        <span
+            class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+            style="background-image: url('/assets/images/avatars/1.svg')"
+            role="presentation" aria-label="John Doe"></span>
+        </div>
+        <div class="fd-bar__element">
+            <button aria-label="button" class="fd-button fd-button--transparent">
+                <i class="sap-icon--grid"></i>
+            </button>
+        </div>
+    </div>
+</div>
 `;
 
 Default.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'The default bar contains a back button, page title, segmented button and product switch button. It can be displayed by using the <code class="docs-code">fd-bar</code> class, and is responsive to desktop screen sizes.'
+        storyDescription: `
+The default bar contains a back button, page title, segmented button and product switch button. It can be displayed by using the <code class="docs-code">fd-bar</code> class, and is responsive to desktop screen sizes. The default bar is in compact mode. Fiori 3 doesn't forbid including cozy elements inside (e.g. cozy buttons)`
     }
 };
 
