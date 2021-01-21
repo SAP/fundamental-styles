@@ -199,172 +199,360 @@ exports[`Storyshots Components/Bar Cozy 1`] = `
 `;
 
 exports[`Storyshots Components/Bar Default 1`] = `
-<div
-  class="fd-bar"
->
+<section>
   
-    
+
+  <p>
+    <b>
+      Compact bar with compact elements
+    </b>
+  </p>
+  
+
   <div
-    class="fd-bar__left"
+    class="fd-bar"
   >
     
-        
+    
     <div
-      class="fd-bar__element"
+      class="fd-bar__left"
     >
       
-            
-      <button
-        aria-label="button"
-        class="fd-button fd-button--transparent"
-      >
         
-                
-        <i
-          class="sap-icon--navigation-left-arrow"
-        />
-        
-            
-      </button>
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-bar__element"
-    >
-      
-            
-      <span
-        aria-label="text"
-      >
-        TEXT
-      </span>
-      
-        
-    </div>
-    
-    
-  </div>
-  
-    
-  <div
-    class="fd-bar__middle"
-  >
-    
-        
-    <div
-      class="fd-bar__element"
-    >
-      
-            
       <div
-        aria-label="Group label"
-        class="fd-segmented-button"
-        role="group"
+        class="fd-bar__element"
       >
         
-                
-        <button
-          aria-label="button"
-          aria-pressed="true"
-          class="fd-button fd-button--compact"
-        >
-          
-                    
-          <i
-            class="sap-icon--email"
-          />
-          
-                
-        </button>
-        
-                
-        <button
-          aria-label="button"
-          class="fd-button fd-button--compact"
-        >
-          
-                    
-          <i
-            class="sap-icon--iphone"
-          />
-          
-                
-        </button>
-        
-                
-        <button
-          aria-label="button"
-          class="fd-button fd-button--compact"
-        >
-          
-                    
-          <i
-            class="sap-icon--notification-2"
-          />
-          
-                
-        </button>
-        
             
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          
+                
+          <i
+            class="sap-icon--navigation-left-arrow"
+          />
+          
+            
+        </button>
+        
+        
       </div>
       
         
-    </div>
-    
-    
-  </div>
-  
-    
-  <div
-    class="fd-bar__right"
-  >
-    
-        
-    <div
-      class="fd-bar__element"
-    >
-      
-        
-      <span
-        aria-label="John Doe"
-        class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
-        role="presentation"
-        style="background-image: url('/assets/images/avatars/1.svg')"
-      />
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-bar__element"
-    >
-      
-            
-      <button
-        aria-label="button"
-        class="fd-button fd-button--transparent"
+      <div
+        class="fd-bar__element"
       >
         
-                
-        <i
-          class="sap-icon--grid"
-        />
-        
             
-      </button>
-      
+        <span
+          aria-label="text"
+        >
+          TEXT
+        </span>
         
+        
+      </div>
+      
+    
     </div>
     
     
+    <div
+      class="fd-bar__middle"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <div
+          aria-label="Group label"
+          class="fd-segmented-button"
+          role="group"
+        >
+          
+                
+          <button
+            aria-label="button"
+            aria-pressed="true"
+            class="fd-button fd-button--compact"
+          >
+            
+                    
+            <i
+              class="sap-icon--email"
+            />
+            
+                
+          </button>
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--compact"
+          >
+            
+                    
+            <i
+              class="sap-icon--iphone"
+            />
+            
+                
+          </button>
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button fd-button--compact"
+          >
+            
+                    
+            <i
+              class="sap-icon--notification-2"
+            />
+            
+                
+          </button>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__right"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+        
+        <span
+          aria-label="John Doe"
+          class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+          role="presentation"
+          style="background-image: url('/assets/images/avatars/1.svg')"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          
+                
+          <i
+            class="sap-icon--grid"
+          />
+          
+            
+        </button>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
   </div>
   
 
-</div>
+  <p>
+    <b>
+      Compact bar with cozy elements
+    </b>
+  </p>
+  
+
+  <div
+    class="fd-bar"
+  >
+    
+    
+    <div
+      class="fd-bar__left"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--navigation-left-arrow"
+          />
+          
+            
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <span
+          aria-label="text"
+        >
+          TEXT
+        </span>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__middle"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <div
+          aria-label="Group label"
+          class="fd-segmented-button"
+          role="group"
+        >
+          
+                
+          <button
+            aria-label="button"
+            aria-pressed="true"
+            class="fd-button"
+          >
+            
+                    
+            <i
+              class="sap-icon--email"
+            />
+            
+                
+          </button>
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button"
+          >
+            
+                    
+            <i
+              class="sap-icon--iphone"
+            />
+            
+                
+          </button>
+          
+                
+          <button
+            aria-label="button"
+            class="fd-button"
+          >
+            
+                    
+            <i
+              class="sap-icon--notification-2"
+            />
+            
+                
+          </button>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-bar__right"
+    >
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+        
+        <span
+          aria-label="John Doe"
+          class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+          role="presentation"
+          style="background-image: url('/assets/images/avatars/1.svg')"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-bar__element"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--grid"
+          />
+          
+            
+        </button>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Bar Floating Footer 1`] = `
@@ -607,7 +795,7 @@ exports[`Storyshots Components/Bar Footer 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--emphasized"
+          class="fd-button fd-button--emphasized fd-button--compact"
         >
           Save
         </button>
@@ -623,7 +811,7 @@ exports[`Storyshots Components/Bar Footer 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent"
+          class="fd-button fd-button--transparent fd-button--compact"
         >
           Cancel
         </button>
@@ -672,7 +860,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent"
+          class="fd-button fd-button--transparent fd-button--compact"
         >
           
                 
@@ -694,7 +882,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent"
+          class="fd-button fd-button--transparent fd-button--compact"
         >
           
                 
@@ -716,7 +904,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent"
+          class="fd-button fd-button--transparent fd-button--compact"
         >
           
                 
@@ -834,7 +1022,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
             
       <button
         aria-label="button"
-        class="fd-button fd-button--transparent"
+        class="fd-button fd-button--transparent fd-button--compact"
       >
         
                 
@@ -1099,7 +1287,7 @@ exports[`Storyshots Components/Bar Header With Subheader 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent"
+          class="fd-button fd-button--transparent fd-button--compact"
         >
           
                 
@@ -1121,7 +1309,7 @@ exports[`Storyshots Components/Bar Header With Subheader 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent"
+          class="fd-button fd-button--transparent fd-button--compact"
         >
           
                 
@@ -1143,7 +1331,7 @@ exports[`Storyshots Components/Bar Header With Subheader 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent"
+          class="fd-button fd-button--transparent fd-button--compact"
         >
           
                 
@@ -1261,7 +1449,7 @@ exports[`Storyshots Components/Bar Header With Subheader 1`] = `
             
       <button
         aria-label="button"
-        class="fd-button fd-button--transparent"
+        class="fd-button fd-button--transparent fd-button--compact"
       >
         
                 
@@ -1482,7 +1670,7 @@ exports[`Storyshots Components/Bar Subheader 1`] = `
             <button
               aria-label="button"
               aria-pressed="true"
-              class="fd-button fd-button--compact"
+              class="fd-button"
             >
               
                         
@@ -1496,7 +1684,7 @@ exports[`Storyshots Components/Bar Subheader 1`] = `
                     
             <button
               aria-label="button"
-              class="fd-button fd-button--compact"
+              class="fd-button"
             >
               
                         
@@ -1510,7 +1698,7 @@ exports[`Storyshots Components/Bar Subheader 1`] = `
                     
             <button
               aria-label="button"
-              class="fd-button fd-button--compact"
+              class="fd-button"
             >
               
                         
