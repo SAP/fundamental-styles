@@ -127,8 +127,7 @@ export const Default = () => `
 Default.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `
-The default bar contains a back button, page title, segmented button and product switch button. It can be displayed by using the <code class="docs-code">fd-bar</code> class, and is responsive to desktop screen sizes. The default bar is in compact mode. Fiori 3 doesn't forbid including cozy elements inside (e.g. cozy buttons)`
+        storyDescription: 'The default bar contains a back button, page title, segmented button and product switch button. It can be displayed by using the <code class="docs-code">fd-bar</code> class, and is responsive to desktop screen sizes. The default bar is in compact mode. Fiori 3 doesn\'t forbid including cozy elements inside (e.g. cozy buttons)'
     }
 };
 
