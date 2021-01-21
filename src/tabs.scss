@@ -100,6 +100,11 @@ $block: #{$fd-namespace}-tabs;
     line-height: 1rem;
     padding-bottom: 0.125rem;
     color: $fd-tabs-label-color;
+    text-align: left;
+
+    @include fd-rtl() {
+      text-align: right;
+    }
   }
 
   &__link {
@@ -113,6 +118,7 @@ $block: #{$fd-namespace}-tabs;
     color: var(--sapContent_LabelColor);
     line-height: 1rem;
     padding: $fd-tabs-link-padding-y $fd-tabs-item-padding-x;
+    background: transparent;
 
     @include fd-focus() {
       box-shadow: none;
@@ -125,12 +131,25 @@ $block: #{$fd-namespace}-tabs;
     }
   }
 
+  &__wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &--collapsible {
+      overflow: hidden;
+      flex-wrap: nowrap;
+    }
+  }
+
   &__item {
     @include fd-reset();
 
     position: relative;
     padding: 0;
     margin: 0 $fd-tabs-item-spacing-x;
+    flex-shrink: 0;
 
     &--error {
       @include tabs-semantic(var(--sapErrorColor));
@@ -220,6 +239,11 @@ $block: #{$fd-namespace}-tabs;
 
     display: inline-block;
     line-height: 1rem;
+  }
+
+  &__content {
+    overflow-y: auto;
+    flex-grow: 1;
   }
 
   &__panel {
@@ -504,4 +528,10 @@ $block: #{$fd-namespace}-tabs;
 
 .fd-tabs__process {
   @include fd-reset();
+
+  text-align: left;
+
+  @include fd-rtl() {
+    text-align: right;
+  }
 }
