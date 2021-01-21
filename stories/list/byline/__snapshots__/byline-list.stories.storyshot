@@ -198,6 +198,11 @@ exports[`Storyshots Components/List/Byline Borderless 1`] = `
 </ul>
 `;
 
+exports[`Storyshots Components/List/Byline Byline List with Counter 1`] = `
+
+
+`;
+
 exports[`Storyshots Components/List/Byline Default 1`] = `
 <section>
   <h4>
@@ -236,7 +241,7 @@ exports[`Storyshots Components/List/Byline Default 1`] = `
         <div
           class="fd-list__title"
         >
-          Title
+          List Item Title
         </div>
         
       
@@ -556,6 +561,11 @@ exports[`Storyshots Components/List/Byline Default 1`] = `
   
 
 </section>
+`;
+
+exports[`Storyshots Components/List/Byline List with long Title and Byline 1`] = `
+
+
 `;
 
 exports[`Storyshots Components/List/Byline Navigation 1`] = `

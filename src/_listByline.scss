@@ -5,19 +5,24 @@
   &--byline {
     .#{$block}__item {
       width: 100%;
-      height: $fd-list-byline-item-height;
+      min-height: $fd-list-byline-item-height;
+      height: auto;
       padding: $fd-list-byline-item-padding-y $fd-list-byline-item-padding-x;
-      align-items: flex-start;
+      align-items: center;
+
+      .#{$block}__item-counter {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        min-width: $fd-list-navigation-indicator-width;
+      }
     }
 
     .#{$block}__thumbnail {
       @include fd-reset();
-      @include fd-flex-center();
       @include ie11-active-state-fix();
-
-      @include fd-icon-element-base() {
-        @include fd-flex-center();
-      }
+      @include fd-icon-element-base();
 
       width: $fd-list-byline-thumbnail-dimensions;
       height: $fd-list-byline-thumbnail-dimensions;
@@ -28,6 +33,7 @@
       border-radius: $fd-list-byline-thumbnail-border-radius;
       margin-right: $fd-list-byline-thumbnail-spacing;
       font-size: 2.5rem;
+      align-self: flex-start;
       color: var(--sapContent_NonInteractiveIconColor);
 
       @include fd-rtl() {
@@ -62,9 +68,23 @@
       font-size: $fd-list-normal-font-size;
       color: $fd-list-byline-section-text-color;
       line-height: $fd-list-byline-text-line-height;
+      padding-top: $fd-list-byline-padding-top;
 
       &--2-col {
         display: flex;
+      }
+    }
+
+    .#{$block}__link {
+      &--more {
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+
+    .#{$block}__title, .#{$block}__byline {
+      &--wrap {
+        white-space: normal;
       }
     }
 
@@ -76,6 +96,7 @@
       color: $fd-list-byline-section-text-color;
       padding-right: $fd-list-byline-elements-spacing;
       line-height: $fd-list-byline-text-line-height;
+      align-self: flex-end;
 
       @include fd-rtl() {
         padding-left: $fd-list-byline-elements-spacing;
@@ -91,16 +112,25 @@
       color: $fd-list-byline-section-text-color;
       padding-left: $fd-list-byline-elements-spacing;
       line-height: $fd-list-byline-text-line-height;
+      text-align: right;
+      align-self: flex-end;
 
       @include fd-rtl() {
         padding-left: 0;
         padding-right: $fd-list-byline-elements-spacing;
+        text-align: left;
       }
 
       @each $set-name, $color-set in $semantic-color {
         &--#{$set-name} {
           color: map_get($color-set, "color");
         }
+      }
+    }
+
+    .#{$block}__byline-left, .#{$block}__byline-right {
+      &--wrap {
+        white-space: normal;
       }
     }
 
