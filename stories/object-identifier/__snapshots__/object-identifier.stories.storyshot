@@ -85,7 +85,7 @@ exports[`Storyshots Components/Object Identifier Descriptive 1`] = `
       
         
       <a
-        class="fd-link"
+        class="fd-link fd-object-identifier__link"
         href="#"
       >
         
@@ -123,7 +123,7 @@ exports[`Storyshots Components/Object Identifier Descriptive 1`] = `
       
         
       <a
-        class="fd-link"
+        class="fd-link fd-object-identifier__link"
         href="#"
       >
         
@@ -163,7 +163,7 @@ exports[`Storyshots Components/Object Identifier Link 1`] = `
       
         
       <a
-        class="fd-link"
+        class="fd-link fd-object-identifier__link"
         href="#"
       >
         
@@ -192,7 +192,7 @@ exports[`Storyshots Components/Object Identifier Link 1`] = `
       
         
       <a
-        class="fd-link"
+        class="fd-link fd-object-identifier__link"
         href="#"
       >
         

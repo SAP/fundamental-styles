@@ -7,7 +7,7 @@ $block: #{$fd-namespace}-object-identifier;
   $fd-object-identifier-title-font-size: var(--sapFontLargeSize);
   $fd-object-identifier-title-font-weight: bold;
 
-  .#{$fd-namespace}-link {
+  .#{$block}__link {
     font-size: inherit;
     font-weight: inherit;
   }

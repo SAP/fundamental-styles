@@ -55,7 +55,7 @@ boldTitle.parameters = {
 export const titleAsLink = () => `
 <div class="fd-object-identifier">
     <p class="fd-object-identifier__title">
-        <a href="#" class="fd-link">
+        <a href="#" class="fd-link fd-object-identifier__link">
             NoteBook Basic 15
         </a>
     </p>
@@ -63,7 +63,7 @@ export const titleAsLink = () => `
 <br>
 <div class="fd-object-identifier">
     <p class="fd-object-identifier__title fd-object-identifier__title--bold">
-        <a href="#" class="fd-link">
+        <a href="#" class="fd-link fd-object-identifier__link">
             NoteBook Basic 15
         </a>
     </p>
@@ -73,7 +73,7 @@ export const titleAsLink = () => `
 titleAsLink.storyName = 'Link';
 titleAsLink.parameters = {
     docs: {
-        storyDescription: 'To display the object identifier as a link, use anchor element with `.fd-link` class.'
+        storyDescription: 'To display the object identifier as a link, use anchor element with `.fd-link .fd-object-identifier__link` classes.'
     }
 };
 
@@ -94,7 +94,7 @@ export const titleAndText = () => `
 
 <div class="fd-object-identifier">
     <p class="fd-object-identifier__title">
-        <a href="#" class="fd-link">
+        <a href="#" class="fd-link fd-object-identifier__link">
             NoteBook Basic 15
         </a>
     </p>
@@ -105,7 +105,7 @@ export const titleAndText = () => `
 
 <div class="fd-object-identifier">
     <p class="fd-object-identifier__title fd-object-identifier__title--bold">
-        <a href="#" class="fd-link">
+        <a href="#" class="fd-link fd-object-identifier__link">
             NoteBook Basic 15
         </a>
     </p>
