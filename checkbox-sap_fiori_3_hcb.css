@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 /*!
@@ -114,7 +114,11 @@
   background-color: #7a5100;
   background-color: var(--sapField_InvalidBackground,#7a5100);
   border-color: #fff;
-  border-color: var(--sapField_InvalidColor,#fff)
+  border-color: var(--sapField_InvalidColor,#fff);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-checkbox.is-error.is-hover,
 .fd-checkbox.is-error:hover {
@@ -128,7 +132,11 @@
   background-color: #000;
   background-color: var(--sapField_WarningBackground,#000);
   border-color: #fff;
-  border-color: var(--sapField_WarningColor,#fff)
+  border-color: var(--sapField_WarningColor,#fff);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-checkbox.is-alert.is-hover,
 .fd-checkbox.is-alert:hover,
@@ -169,7 +177,9 @@
 .fd-checkbox.is-error,
 .fd-checkbox.is-information,
 .fd-checkbox.is-warning {
-  border-width: .125rem
+  border-width: .125rem;
+  border-style: dashed;
+  border-style: var(--fdInput_State_Border_Type,dashed)
 }
 .fd-checkbox.is-alert.is-focus,
 .fd-checkbox.is-alert:focus,
@@ -328,6 +338,15 @@
   border: var(--sapField_BorderWidth,.0625rem) solid var(--sapField_BorderColor,#fff);
   border-radius: 0;
   border-radius: var(--sapField_BorderCornerRadius,0)
+}
+.fd-checkbox__label::after {
+  padding-left: .125rem;
+  position: relative
+}
+.fd-checkbox__label[dir=rtl]::after,
+[dir=rtl] .fd-checkbox__label::after {
+  padding-left: 0;
+  padding-right: .125rem
 }
 .fd-checkbox__label.is-hover::before,
 .fd-checkbox__label:hover::before {

@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 /*!
@@ -255,6 +255,16 @@
 .fd-object-status--link {
   text-decoration: none;
   cursor: pointer
+}
+.fd-object-status--link.is-focus,
+.fd-object-status--link:focus {
+  outline-offset: .0625rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #fff;
+  outline-color: var(--sapContent_FocusColor,#fff);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
 }
 .fd-object-status--link:hover .fd-object-status__text {
   text-decoration: underline

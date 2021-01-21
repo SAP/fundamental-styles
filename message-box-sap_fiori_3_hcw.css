@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 .fd-message-box {
@@ -27,7 +27,7 @@
   background-color: #fff;
   background-color: var(--sapBlockLayer_Background,#fff);
   opacity: .8;
-  opacity: var(--fdDialogBackgroundOpacity,.8)
+  opacity: var(--fdDialog_Background_Opacity,.8)
 }
 .fd-message-box__content {
   display: -webkit-box;
@@ -248,10 +248,10 @@
   margin-left: .5rem
 }
 .fd-message-box--error .fd-message-box__header.fd-bar {
-  -webkit-box-shadow: inset 0 -.0625rem #ab0000,inset 0 -.125rem #000;
-  -webkit-box-shadow: inset 0 -.0625rem var(--sapErrorBorderColor,#ab0000),var(--sapContent_HeaderShadow,inset 0 -.125rem #000);
-  box-shadow: inset 0 -.0625rem #ab0000,inset 0 -.125rem #000;
-  box-shadow: inset 0 -.0625rem var(--sapErrorBorderColor,#ab0000),var(--sapContent_HeaderShadow,inset 0 -.125rem #000)
+  -webkit-box-shadow: inset 0 -.125rem #ab0000;
+  -webkit-box-shadow: var(--fdMessage_Box_Error_Box_Shadow,inset 0 -.125rem var(--sapErrorBorderColor,#ab0000));
+  box-shadow: inset 0 -.125rem #ab0000;
+  box-shadow: var(--fdMessage_Box_Error_Box_Shadow,inset 0 -.125rem var(--sapErrorBorderColor,#ab0000))
 }
 .fd-message-box--error .fd-message-box__header.fd-bar [class*=sap-icon] {
   font-size: 1rem;
@@ -265,10 +265,10 @@
   margin-left: .5rem
 }
 .fd-message-box--success .fd-message-box__header.fd-bar {
-  -webkit-box-shadow: inset 0 -.0625rem #006362,inset 0 -.125rem #000;
-  -webkit-box-shadow: inset 0 -.0625rem var(--sapSuccessBorderColor,#006362),var(--sapContent_HeaderShadow,inset 0 -.125rem #000);
-  box-shadow: inset 0 -.0625rem #006362,inset 0 -.125rem #000;
-  box-shadow: inset 0 -.0625rem var(--sapSuccessBorderColor,#006362),var(--sapContent_HeaderShadow,inset 0 -.125rem #000)
+  -webkit-box-shadow: inset 0 -.125rem #006362;
+  -webkit-box-shadow: var(--fdMessage_Box_Success_Box_Shadow,inset 0 -.125rem var(--sapSuccessBorderColor,#006362));
+  box-shadow: inset 0 -.125rem #006362;
+  box-shadow: var(--fdMessage_Box_Success_Box_Shadow,inset 0 -.125rem var(--sapSuccessBorderColor,#006362))
 }
 .fd-message-box--success .fd-message-box__header.fd-bar [class*=sap-icon] {
   font-size: 1rem;
@@ -282,10 +282,10 @@
   margin-left: .5rem
 }
 .fd-message-box--warning .fd-message-box__header.fd-bar {
-  -webkit-box-shadow: inset 0 -.0625rem #5c5c00,inset 0 -.125rem #000;
-  -webkit-box-shadow: inset 0 -.0625rem var(--sapWarningBorderColor,#5c5c00),var(--sapContent_HeaderShadow,inset 0 -.125rem #000);
-  box-shadow: inset 0 -.0625rem #5c5c00,inset 0 -.125rem #000;
-  box-shadow: inset 0 -.0625rem var(--sapWarningBorderColor,#5c5c00),var(--sapContent_HeaderShadow,inset 0 -.125rem #000)
+  -webkit-box-shadow: inset 0 -.125rem #5c5c00;
+  -webkit-box-shadow: var(--fdMessage_Box_Warning_Box_Shadow,inset 0 -.125rem var(--sapWarningBorderColor,#5c5c00));
+  box-shadow: inset 0 -.125rem #5c5c00;
+  box-shadow: var(--fdMessage_Box_Warning_Box_Shadow,inset 0 -.125rem var(--sapWarningBorderColor,#5c5c00))
 }
 .fd-message-box--warning .fd-message-box__header.fd-bar [class*=sap-icon] {
   font-size: 1rem;
@@ -299,10 +299,10 @@
   margin-left: .5rem
 }
 .fd-message-box--information .fd-message-box__header.fd-bar {
-  -webkit-box-shadow: inset 0 -.0625rem #000,inset 0 -.125rem #000;
-  -webkit-box-shadow: inset 0 -.0625rem var(--sapInformationBorderColor,#000),var(--sapContent_HeaderShadow,inset 0 -.125rem #000);
-  box-shadow: inset 0 -.0625rem #000,inset 0 -.125rem #000;
-  box-shadow: inset 0 -.0625rem var(--sapInformationBorderColor,#000),var(--sapContent_HeaderShadow,inset 0 -.125rem #000)
+  -webkit-box-shadow: inset 0 -.125rem #000;
+  -webkit-box-shadow: var(--fdMessage_Box_Information_Box_Shadow,inset 0 -.125rem var(--sapInformationBorderColor,#000));
+  box-shadow: inset 0 -.125rem #000;
+  box-shadow: var(--fdMessage_Box_Information_Box_Shadow,inset 0 -.125rem var(--sapInformationBorderColor,#000))
 }
 .fd-message-box--information .fd-message-box__header.fd-bar [class*=sap-icon] {
   font-size: 1rem;

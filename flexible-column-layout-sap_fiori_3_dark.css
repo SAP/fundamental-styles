@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 .fd-flexible-column-layout {
@@ -63,7 +63,7 @@
   width: 1rem;
   min-width: 1rem;
   background-color: #232a31;
-  background-color: var(--fdFlexibleColumnBackgroundSolid,var(--sapShell_Background,#232a31))
+  background-color: var(--fdFlexibleColumnLayout_Background_Solid,var(--sapShell_Background,#232a31))
 }
 .fd-flexible-column-layout__separator::after,
 .fd-flexible-column-layout__separator::before {
@@ -87,16 +87,16 @@
 .fd-flexible-column-layout__separator::before {
   bottom: calc(50% + 2rem / 2);
   background-image: -webkit-gradient(linear,left bottom,left top,from(#91c8f6),to(transparent));
-  background-image: -webkit-gradient(linear,left bottom,left top,from(var(--fdFlexibleColumnLayoutToggleImageColor,var(--sapHighlightColor,#91c8f6))),to(transparent));
+  background-image: -webkit-gradient(linear,left bottom,left top,from(var(--fdFlexibleColumnLayout_Toggle_Image_Color,var(--sapHighlightColor,#91c8f6))),to(transparent));
   background-image: linear-gradient(to top,#91c8f6,transparent);
-  background-image: linear-gradient(to top,var(--fdFlexibleColumnLayoutToggleImageColor,var(--sapHighlightColor,#91c8f6)),transparent)
+  background-image: linear-gradient(to top,var(--fdFlexibleColumnLayout_Toggle_Image_Color,var(--sapHighlightColor,#91c8f6)),transparent)
 }
 .fd-flexible-column-layout__separator::after {
   top: calc(50% + 2rem / 2);
   background-image: -webkit-gradient(linear,left top,left bottom,from(#91c8f6),to(transparent));
-  background-image: -webkit-gradient(linear,left top,left bottom,from(var(--fdFlexibleColumnLayoutToggleImageColor,var(--sapHighlightColor,#91c8f6))),to(transparent));
+  background-image: -webkit-gradient(linear,left top,left bottom,from(var(--fdFlexibleColumnLayout_Toggle_Image_Color,var(--sapHighlightColor,#91c8f6))),to(transparent));
   background-image: linear-gradient(to bottom,#91c8f6,transparent);
-  background-image: linear-gradient(to bottom,var(--fdFlexibleColumnLayoutToggleImageColor,var(--sapHighlightColor,#91c8f6)),transparent)
+  background-image: linear-gradient(to bottom,var(--fdFlexibleColumnLayout_Toggle_Image_Color,var(--sapHighlightColor,#91c8f6)),transparent)
 }
 .fd-flexible-column-layout__separator.is-hover::after,
 .fd-flexible-column-layout__separator.is-hover::before,
@@ -136,9 +136,9 @@
   border: 0;
   min-width: 20rem;
   border-left: none;
-  border-left: var(--fdFlexibleColumnLayoutBorder,none);
+  border-left: var(--fdFlexibleColumnLayout_Border,none);
   border-right: none;
-  border-right: var(--fdFlexibleColumnLayoutBorder,none);
+  border-right: var(--fdFlexibleColumnLayout_Border,none);
   -webkit-transition: width 560ms cubic-bezier(.1,0,.05,1),visibility 560ms ease-in;
   transition: width 560ms cubic-bezier(.1,0,.05,1),visibility 560ms ease-in
 }
@@ -163,9 +163,9 @@
 }
 .fd-flexible-column-layout--translucent .fd-flexible-column-layout__separator {
   background-color: #29313a;
-  background-color: var(--fdFlexibleColumnBackgroundTranslucent,var(--sapGroup_ContentBackground,#29313a))
+  background-color: var(--fdFlexibleColumnLayout_Background_Translucent,var(--sapGroup_ContentBackground,#29313a))
 }
 .fd-flexible-column-layout--transparent .fd-flexible-column-layout__separator {
   background-color: transparent;
-  background-color: var(--fdFlexibleColumnBackgroundTransparent,transparent)
+  background-color: var(--fdFlexibleColumnLayout_Background_Transparent,transparent)
 }

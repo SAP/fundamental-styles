@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 /*!
@@ -266,7 +266,7 @@
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   border: .0625rem solid #89919a;
-  border: var(--sapButton_BorderWidth,.0625rem) solid var(--sapContent_ForegroundBorderColor,#89919a);
+  border: var(--fdSwitch_Handle_Border_Width,var(--sapButton_BorderWidth,.0625rem)) solid var(--sapContent_ForegroundBorderColor,#89919a);
   background-color: #fff;
   background-color: var(--sapButton_Background,#fff);
   min-width: 1.875rem;
@@ -394,13 +394,13 @@
   background-color: #ebf5fe;
   background-color: var(--sapButton_Hover_Background,#ebf5fe)
 }
-.fd-switch.is-hover .fd-switch:checked + .fd-switch__slider,
-.fd-switch:hover .fd-switch:checked + .fd-switch__slider {
-  border-color: #095caf;
-  border-color: var(--sapButton_Selected_Hover_BorderColor,#095caf)
+.fd-switch.is-hover .fd-switch__input:checked + .fd-switch__slider,
+.fd-switch:hover .fd-switch__input:checked + .fd-switch__slider {
+  background-color: #ebf5fe;
+  background-color: var(--fdSwitch_On_Hover_Slider_Background,var(--sapButton_Track_Selected_Background,#ebf5fe))
 }
-.fd-switch.is-hover .fd-switch:checked + .fd-switch__slider .fd-switch__handle,
-.fd-switch:hover .fd-switch:checked + .fd-switch__slider .fd-switch__handle {
+.fd-switch.is-hover .fd-switch__input:checked + .fd-switch__slider .fd-switch__handle,
+.fd-switch:hover .fd-switch__input:checked + .fd-switch__slider .fd-switch__handle {
   border-color: #095caf;
   border-color: var(--sapButton_Selected_Hover_BorderColor,#095caf);
   background-color: #095caf;
@@ -447,7 +447,7 @@
 }
 .fd-switch--semantic .fd-switch__input:checked + .fd-switch__slider {
   background-color: #f1fdf6;
-  background-color: var(--sapSuccessBackground,#f1fdf6);
+  background-color: var(--fdSwitch_Semantic_Success_Background_Color,var(--sapSuccessBackground,#f1fdf6));
   border-color: #107e3e;
   border-color: var(--sapSuccessBorderColor,#107e3e)
 }
@@ -468,22 +468,41 @@
   width: 3.375rem;
   height: 1.25rem
 }
+.fd-switch--semantic.is-hover .fd-switch__icon,
+.fd-switch--semantic:hover .fd-switch__icon {
+  color: #b00;
+  color: var(--fdSwitch_Semantic_Error_Color,var(--sapErrorBorderColor,#b00))
+}
 .fd-switch--semantic.is-hover .fd-switch__slider,
 .fd-switch--semantic:hover .fd-switch__slider {
   border-color: #b00;
-  border-color: var(--sapErrorBorderColor,#b00)
+  border-color: var(--fdSwitch_Semantic_Error_Color,var(--sapErrorBorderColor,#b00))
 }
 .fd-switch--semantic.is-hover .fd-switch__handle,
 .fd-switch--semantic:hover .fd-switch__handle {
   background-color: #ffebeb;
-  background-color: var(--sapErrorBackground,#ffebeb);
+  background-color: var(--fdSwitch_Semantic_Error_Background_Color,var(--sapErrorBackground,#ffebeb));
   border-color: #b00;
-  border-color: var(--sapErrorBorderColor,#b00)
+  border-color: var(--fdSwitch_Semantic_Error_Color,var(--sapErrorBorderColor,#b00))
+}
+.fd-switch--semantic.is-hover .fd-switch__input:checked + .fd-switch__slider,
+.fd-switch--semantic:hover .fd-switch__input:checked + .fd-switch__slider {
+  background-color: #f1fdf6;
+  background-color: var(--fdSwitch_Semantic_Success_Background_Color,var(--sapSuccessBackground,#f1fdf6));
+  border-color: #107e3e;
+  border-color: var(--fdSwitch_Semantic_Success_Border_Color,var(--sapSuccessColor,#107e3e))
 }
 .fd-switch--semantic.is-hover .fd-switch__input:checked + .fd-switch__slider .fd-switch__handle,
 .fd-switch--semantic:hover .fd-switch__input:checked + .fd-switch__slider .fd-switch__handle {
   background-color: #f1fdf6;
-  background-color: var(--sapSuccessBackground,#f1fdf6)
+  background-color: var(--fdSwitch_Semantic_Success_Handle_Hover_Background_Color,var(--sapSuccessBackground,#f1fdf6));
+  border-color: #107e3e;
+  border-color: var(--fdSwitch_Semantic_Success_Border_Color,var(--sapSuccessColor,#107e3e))
+}
+.fd-switch--semantic.is-hover .fd-switch__input:checked + .fd-switch__slider .fd-switch__icon,
+.fd-switch--semantic:hover .fd-switch__input:checked + .fd-switch__slider .fd-switch__icon {
+  color: #107e3e;
+  color: var(--fdSwitch_Semantic_Success_Border_Color,var(--sapSuccessColor,#107e3e))
 }
 .fd-switch--semantic[dir=rtl] .fd-switch__track,
 [dir=rtl] .fd-switch--semantic .fd-switch__track {

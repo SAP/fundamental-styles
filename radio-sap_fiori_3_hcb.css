@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 /*!
@@ -114,7 +114,11 @@
   background-color: #7a5100;
   background-color: var(--sapField_InvalidBackground,#7a5100);
   border-color: #fff;
-  border-color: var(--sapField_InvalidColor,#fff)
+  border-color: var(--sapField_InvalidColor,#fff);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-radio.is-error.is-hover,
 .fd-radio.is-error:hover {
@@ -128,7 +132,11 @@
   background-color: #000;
   background-color: var(--sapField_WarningBackground,#000);
   border-color: #fff;
-  border-color: var(--sapField_WarningColor,#fff)
+  border-color: var(--sapField_WarningColor,#fff);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-radio.is-alert.is-hover,
 .fd-radio.is-alert:hover,
@@ -169,7 +177,9 @@
 .fd-radio.is-error,
 .fd-radio.is-information,
 .fd-radio.is-warning {
-  border-width: .125rem
+  border-width: .125rem;
+  border-style: dashed;
+  border-style: var(--fdInput_State_Border_Type,dashed)
 }
 .fd-radio.is-alert.is-focus,
 .fd-radio.is-alert:focus,

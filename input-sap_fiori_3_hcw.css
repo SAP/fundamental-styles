@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 /*!
@@ -123,7 +123,11 @@
   background-color: #ec8b46;
   background-color: var(--sapField_InvalidBackground,#ec8b46);
   border-color: #000;
-  border-color: var(--sapField_InvalidColor,#000)
+  border-color: var(--sapField_InvalidColor,#000);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-input.is-error.is-hover,
 .fd-input.is-error:hover {
@@ -137,7 +141,11 @@
   background-color: #fff;
   background-color: var(--sapField_WarningBackground,#fff);
   border-color: #000;
-  border-color: var(--sapField_WarningColor,#000)
+  border-color: var(--sapField_WarningColor,#000);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-input.is-alert.is-hover,
 .fd-input.is-alert:hover,
@@ -178,7 +186,9 @@
 .fd-input.is-error,
 .fd-input.is-information,
 .fd-input.is-warning {
-  border-width: .125rem
+  border-width: .125rem;
+  border-style: dashed;
+  border-style: var(--fdInput_State_Border_Type,dashed)
 }
 .fd-input.is-alert.is-focus,
 .fd-input.is-alert:focus,

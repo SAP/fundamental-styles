@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 .fd-button {
@@ -508,30 +508,20 @@
 .fd-button:focus {
   z-index: 5;
   -webkit-box-shadow: none;
-  box-shadow: none
+  box-shadow: none;
+  outline: .125rem dotted #fff;
+  outline: var(--sapContent_FocusWidth,.125rem) dotted var(--sapContent_FocusColor,#fff);
+  outline-offset: -.1875rem
 }
-.fd-button.is-focus::after,
-.fd-button:focus::after {
-  content: "";
-  position: absolute;
-  width: auto;
-  height: auto;
-  top: .0625rem;
-  left: .0625rem;
-  right: .0625rem;
-  bottom: .0625rem;
-  border: .125rem dotted #fff;
-  border: var(--sapContent_FocusWidth,.125rem) dotted var(--sapContent_FocusColor,#fff)
+.fd-button.is-focus.fd-button--toggled,
+.fd-button:focus.fd-button--toggled {
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
-.fd-button.is-focus.fd-button--toggled::after,
-.fd-button:focus.fd-button--toggled::after {
-  border: .125rem dotted #fff;
-  border: var(--sapContent_FocusWidth,.125rem) dotted var(--sapContent_ContrastFocusColor,#fff)
-}
-.fd-button.is-focus.fd-button--emphasized::after,
-.fd-button:focus.fd-button--emphasized::after {
-  border-color: #fff;
-  border-color: var(--sapContent_ContrastFocusColor,#fff)
+.fd-button.is-focus.fd-button--emphasized,
+.fd-button:focus.fd-button--emphasized {
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
 .fd-button.is-active,
 .fd-button.is-pressed,
@@ -546,16 +536,9 @@
   border-color: #fff;
   border-color: var(--sapButton_BorderColor,#fff);
   background-color: #7a5100;
-  background-color: var(--sapButton_Active_Background,#7a5100)
-}
-.fd-button.is-active::after,
-.fd-button.is-pressed::after,
-.fd-button.is-selected::after,
-.fd-button:active::after,
-.fd-button[aria-pressed=true]::after,
-.fd-button[aria-selected=true]::after {
-  border-color: #fff;
-  border-color: var(--sapContent_ContrastFocusColor,#fff)
+  background-color: var(--sapButton_Active_Background,#7a5100);
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
 .fd-button.is-active.fd-button--toggled,
 .fd-button.is-pressed.fd-button--toggled,

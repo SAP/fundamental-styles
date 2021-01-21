@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 .sapThemeMetaData-Base-baseLib {
@@ -4028,7 +4028,10 @@
   border: 0;
   color: #0a6ed1;
   color: var(--sapLinkColor,#0a6ed1);
-  text-decoration: none;
+  -webkit-text-decoration: underline;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration,underline);
+  text-decoration: underline;
+  text-decoration: var(--fdLink_Text_Decoration,underline);
   text-shadow: 0 0 0.125rem #fff;
   text-shadow: var(--sapContent_TextShadow,0 0 .125rem #fff);
   display: inline-block;
@@ -4055,7 +4058,10 @@
 .fd-breadcrumb__link:hover {
   color: #0854a0;
   color: var(--sapLink_Hover_Color,#0854a0);
-  text-decoration: underline
+  -webkit-text-decoration: none;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,none);
+  text-decoration: none;
+  text-decoration: var(--fdLink_Text_Decoration_Opposite,none)
 }
 .fd-breadcrumb__link.is-focus,
 .fd-breadcrumb__link:focus {
@@ -4068,12 +4074,20 @@
   outline-color: #000;
   outline-color: var(--sapContent_FocusColor,#000);
   outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
+  outline-style: var(--sapContent_FocusStyle,dotted);
+  -webkit-text-decoration: none;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,none);
+  text-decoration: none;
+  text-decoration: var(--fdLink_Text_Decoration_Opposite,none)
 }
 .fd-breadcrumb__link.is-active,
 .fd-breadcrumb__link:active {
   color: #0a6ed1;
-  color: var(--sapLink_Active_Color,#0a6ed1)
+  color: var(--sapLink_Active_Color,#0a6ed1);
+  -webkit-text-decoration: none;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,none);
+  text-decoration: none;
+  text-decoration: var(--fdLink_Text_Decoration_Opposite,none)
 }
 .fd-breadcrumb__link--inverted {
   color: #d3e8fd;
@@ -4097,6 +4111,22 @@
   color: #0a6ed1;
   color: var(--sapLinkColor,#0a6ed1);
   pointer-events: none
+}
+.fd-breadcrumb__link:focus .fd-breadcrumb__dropdown-icon {
+  color: #0a6ed1;
+  color: var(--sapLink_Active_Color,#0a6ed1)
+}
+.fd-breadcrumb__link:active .fd-breadcrumb__dropdown-icon {
+  color: #0a6ed1;
+  color: var(--sapLink_Active_Color,#0a6ed1)
+}
+.fd-breadcrumb__link:active:hover .fd-breadcrumb__dropdown-icon {
+  color: #0a6ed1;
+  color: var(--sapLink_Active_Color,#0a6ed1)
+}
+.fd-breadcrumb__link:hover .fd-breadcrumb__dropdown-icon {
+  color: #0854a0;
+  color: var(--sapLink_Hover_Color,#0854a0)
 }
 .fd-breadcrumb__dropdown-icon [class*=sap-icon],
 .fd-breadcrumb__dropdown-icon[class*=sap-icon] {
@@ -4754,30 +4784,20 @@
 .fd-button:focus {
   z-index: 5;
   -webkit-box-shadow: none;
-  box-shadow: none
+  box-shadow: none;
+  outline: .0625rem dotted #000;
+  outline: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000);
+  outline-offset: -.1875rem
 }
-.fd-button.is-focus::after,
-.fd-button:focus::after {
-  content: "";
-  position: absolute;
-  width: auto;
-  height: auto;
-  top: .0625rem;
-  left: .0625rem;
-  right: .0625rem;
-  bottom: .0625rem;
-  border: .0625rem dotted #000;
-  border: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000)
+.fd-button.is-focus.fd-button--toggled,
+.fd-button:focus.fd-button--toggled {
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
-.fd-button.is-focus.fd-button--toggled::after,
-.fd-button:focus.fd-button--toggled::after {
-  border: .0625rem dotted #fff;
-  border: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_ContrastFocusColor,#fff)
-}
-.fd-button.is-focus.fd-button--emphasized::after,
-.fd-button:focus.fd-button--emphasized::after {
-  border-color: #fff;
-  border-color: var(--sapContent_ContrastFocusColor,#fff)
+.fd-button.is-focus.fd-button--emphasized,
+.fd-button:focus.fd-button--emphasized {
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
 .fd-button.is-active,
 .fd-button.is-pressed,
@@ -4792,16 +4812,9 @@
   border-color: #0854a0;
   border-color: var(--sapButton_BorderColor,#0854a0);
   background-color: #0854a0;
-  background-color: var(--sapButton_Active_Background,#0854a0)
-}
-.fd-button.is-active::after,
-.fd-button.is-pressed::after,
-.fd-button.is-selected::after,
-.fd-button:active::after,
-.fd-button[aria-pressed=true]::after,
-.fd-button[aria-selected=true]::after {
-  border-color: #fff;
-  border-color: var(--sapContent_ContrastFocusColor,#fff)
+  background-color: var(--sapButton_Active_Background,#0854a0);
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
 .fd-button.is-active.fd-button--toggled,
 .fd-button.is-pressed.fd-button--toggled,
@@ -5169,6 +5182,72 @@
 [dir=rtl] .fd-button-split > [class*="--emphasized"]:first-child {
   margin-right: 0;
   margin-left: .0625rem
+}
+.fd-button-split > :first-child:hover .fd-button-split__text {
+  color: #0854a0;
+  color: var(--sapButton_TextColor,#0854a0)
+}
+.fd-button-split > :first-child:active .fd-button-split__text {
+  color: #fff;
+  color: var(--sapButton_Selected_TextColor,#fff)
+}
+.fd-button-split--emphasized > [class*="--emphasized"] > .fd-button-split__text {
+  color: #fff;
+  color: var(--sapButton_Emphasized_TextColor,#fff);
+  font-weight: 700
+}
+.fd-button-split--emphasized > [class*="--emphasized"]:hover > .fd-button-split__text {
+  color: #fff;
+  color: var(--sapButton_Emphasized_Hover_TextColor,#fff)
+}
+.fd-button-split--emphasized > [class*="--emphasized"]:active > .fd-button-split__text {
+  color: #fff;
+  color: var(--sapButton_Selected_TextColor,#fff)
+}
+.fd-button-split--transparent > [class*="--transparent"] > .fd-button-split__text {
+  color: #0854a0;
+  color: var(--sapButton_TextColor,#0854a0)
+}
+.fd-button-split--transparent > [class*="--transparent"]:hover > .fd-button-split__text {
+  color: #0854a0;
+  color: var(--sapButton_TextColor,#0854a0)
+}
+.fd-button-split--transparent > [class*="--transparent"]:active > .fd-button-split__text {
+  color: #fff;
+  color: var(--sapButton_Selected_TextColor,#fff)
+}
+.fd-button-split .fd-button-split__text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #0854a0;
+  color: var(--sapButton_TextColor,#0854a0);
+  max-width: 9.75rem;
+  display: block
+}
+.fd-button-split .fd-button-split__text::after,
+.fd-button-split .fd-button-split__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-button-split .fd-button-split__text--compact {
+  max-width: 10rem
 }
 /*!
 .fd-calendar+(--compact, --mobile-landscape, --mobile-portrait)
@@ -7373,36 +7452,20 @@
 }
 .fd-carousel__button.fd-button.is-focus,
 .fd-carousel__button.fd-button:focus {
-  z-index: 5
+  z-index: 5;
+  outline-offset: .0625rem
 }
-.fd-carousel__button.fd-button.is-focus::after,
-.fd-carousel__button.fd-button:focus::after {
-  top: -.125rem;
-  bottom: -.125rem;
-  left: -.125rem;
-  right: -.125rem
+.fd-carousel__button.fd-button.is-active,
+.fd-carousel__button.fd-button:active {
+  outline: .0625rem dotted #000;
+  outline: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000);
+  outline-offset: -.1875rem;
+  outline-offset: .0625rem
 }
-.fd-carousel__button.fd-button.is-active::after,
-.fd-carousel__button.fd-button:active::after {
-  content: "";
-  position: absolute;
-  width: auto;
-  height: auto;
-  top: .0625rem;
-  left: .0625rem;
-  right: .0625rem;
-  bottom: .0625rem;
-  border: .0625rem dotted #000;
-  border: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000);
-  top: -.125rem;
-  bottom: -.125rem;
-  left: -.125rem;
-  right: -.125rem
-}
-.fd-carousel__button.fd-button.is-active.fd-carousel--toggled::after,
-.fd-carousel__button.fd-button:active.fd-carousel--toggled::after {
-  border: .0625rem dotted #fff;
-  border: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_ContrastFocusColor,#fff)
+.fd-carousel__button.fd-button.is-active.fd-carousel--toggled,
+.fd-carousel__button.fd-button:active.fd-carousel--toggled {
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
 .fd-carousel--no-navigation .fd-carousel__button.fd-button {
   display: none
@@ -7517,7 +7580,11 @@
   background-color: #fff;
   background-color: var(--sapField_InvalidBackground,#fff);
   border-color: #bb0000;
-  border-color: var(--sapField_InvalidColor,#b00)
+  border-color: var(--sapField_InvalidColor,#b00);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-checkbox.is-error.is-hover,
 .fd-checkbox.is-error:hover {
@@ -7531,7 +7598,11 @@
   background-color: #fff;
   background-color: var(--sapField_WarningBackground,#fff);
   border-color: #e9730c;
-  border-color: var(--sapField_WarningColor,#e9730c)
+  border-color: var(--sapField_WarningColor,#e9730c);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-checkbox.is-alert.is-hover,
 .fd-checkbox.is-alert:hover,
@@ -7572,7 +7643,9 @@
 .fd-checkbox.is-error,
 .fd-checkbox.is-information,
 .fd-checkbox.is-warning {
-  border-width: .125rem
+  border-width: .125rem;
+  border-style: dashed;
+  border-style: var(--fdInput_State_Border_Type,dashed)
 }
 .fd-checkbox.is-alert.is-focus,
 .fd-checkbox.is-alert:focus,
@@ -7731,6 +7804,15 @@
   border: var(--sapField_BorderWidth,.0625rem) solid var(--sapField_BorderColor,#89919a);
   border-radius: .125rem;
   border-radius: var(--sapField_BorderCornerRadius,.125rem)
+}
+.fd-checkbox__label::after {
+  padding-left: .125rem;
+  position: relative
+}
+.fd-checkbox__label[dir=rtl]::after,
+[dir=rtl] .fd-checkbox__label::after {
+  padding-left: 0;
+  padding-right: .125rem
 }
 .fd-checkbox__label.is-hover::before,
 .fd-checkbox__label:hover::before {
@@ -8010,7 +8092,7 @@
   background-color: #000;
   background-color: var(--sapBlockLayer_Background,#000);
   opacity: .8;
-  opacity: var(--fdDialogBackgroundOpacity,.8)
+  opacity: var(--fdDialog_Background_Opacity,.8)
 }
 .fd-dialog__content,
 .fd-message-box__content {
@@ -8062,7 +8144,8 @@
   max-height: 100vh;
   border-radius: 0
 }
-.fd-message-box__title {
+.fd-message-box__title,
+.fd-title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -9302,7 +9385,7 @@
   padding: 1rem 0 0 0;
   background-color: #f7f7f7;
   background-color: var(--sapBackgroundColor,#f7f7f7);
-  overflow-y: scroll
+  overflow-y: auto
 }
 .fd-dynamic-page__content::after,
 .fd-dynamic-page__content::before {
@@ -9912,11 +9995,15 @@
   .fd-container .fd-row + .fd-row {
     margin-top: 0
   }
-  .fd-container--no-gap {
+  .fd-container--no-horizontal-gap .fd-col {
+    padding-left: 0;
+    padding-right: 0
+  }
+  .fd-container--no-vertical-gap {
     margin: 0
   }
-  .fd-container--no-gap .fd-col {
-    padding: 0
+  .fd-container--no-vertical-gap .fd-col {
+    padding-top: 0
   }
   .fd-row {
     margin-bottom: 0
@@ -11885,10 +11972,12 @@
   color: #32363a;
   color: var(--sapTextColor,#32363a);
   white-space: pre-line!important;
-  -webkit-box-shadow: 0 0 0 0.0625rem rgba(0,0,0,0.42),0 0.125rem 0.5rem 0 rgba(0,0,0,0.3);
-  -webkit-box-shadow: var(--sapContent_Shadow1,0 0 0 .0625rem rgba(0,0,0,.42),0 .125rem .5rem 0 rgba(0,0,0,.3));
-  box-shadow: 0 0 0 0.0625rem rgba(0,0,0,0.42),0 0.125rem 0.5rem 0 rgba(0,0,0,0.3);
-  box-shadow: var(--sapContent_Shadow1,0 0 0 .0625rem rgba(0,0,0,.42),0 .125rem .5rem 0 rgba(0,0,0,.3))
+  -webkit-box-shadow: none;
+  -webkit-box-shadow: var(--fdMessage_Box_Shadow,none);
+  box-shadow: none;
+  box-shadow: var(--fdMessage_Box_Shadow,none);
+  border: calc(2 * .0625rem) solid var(--sapField_BorderColor,#89919a);
+  border: var(--fdMessage_Border,calc(2 * var(--sapField_BorderWidth,.0625rem)) solid var(--sapField_BorderColor,#89919a))
 }
 .fd-form-message::after,
 .fd-form-message::before {
@@ -12040,7 +12129,11 @@
   background-color: #fff;
   background-color: var(--sapField_InvalidBackground,#fff);
   border-color: #bb0000;
-  border-color: var(--sapField_InvalidColor,#b00)
+  border-color: var(--sapField_InvalidColor,#b00);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-input.is-error.is-hover,
 .fd-input.is-error:hover {
@@ -12054,7 +12147,11 @@
   background-color: #fff;
   background-color: var(--sapField_WarningBackground,#fff);
   border-color: #e9730c;
-  border-color: var(--sapField_WarningColor,#e9730c)
+  border-color: var(--sapField_WarningColor,#e9730c);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-input.is-alert.is-hover,
 .fd-input.is-alert:hover,
@@ -12095,7 +12192,9 @@
 .fd-input.is-error,
 .fd-input.is-information,
 .fd-input.is-warning {
-  border-width: .125rem
+  border-width: .125rem;
+  border-style: dashed;
+  border-style: var(--fdInput_State_Border_Type,dashed)
 }
 .fd-input.is-alert.is-focus,
 .fd-input.is-alert:focus,
@@ -12276,7 +12375,11 @@
   background-color: #fff;
   background-color: var(--sapField_InvalidBackground,#fff);
   border-color: #bb0000;
-  border-color: var(--sapField_InvalidColor,#b00)
+  border-color: var(--sapField_InvalidColor,#b00);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-input-group.is-error.is-hover,
 .fd-input-group.is-error:hover {
@@ -12290,7 +12393,11 @@
   background-color: #fff;
   background-color: var(--sapField_WarningBackground,#fff);
   border-color: #e9730c;
-  border-color: var(--sapField_WarningColor,#e9730c)
+  border-color: var(--sapField_WarningColor,#e9730c);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-input-group.is-alert.is-hover,
 .fd-input-group.is-alert:hover,
@@ -12331,7 +12438,9 @@
 .fd-input-group.is-error,
 .fd-input-group.is-information,
 .fd-input-group.is-warning {
-  border-width: .125rem
+  border-width: .125rem;
+  border-style: dashed;
+  border-style: var(--fdInput_State_Border_Type,dashed)
 }
 .fd-input-group.is-alert.is-focus,
 .fd-input-group.is-alert:focus,
@@ -12535,8 +12644,7 @@
   text-overflow: ellipsis;
   color: #6a6d70;
   color: var(--sapContent_NonInteractiveIconColor,#6a6d70);
-  background-color: #fff;
-  background-color: var(--sapField_Background,#fff);
+  background: 0 0!important;
   font-size: 1rem;
   font-size: var(--sapFontLargeSize,1rem);
   min-width: 2.25rem;
@@ -12608,7 +12716,17 @@
   overflow: hidden;
   text-overflow: ellipsis;
   border: none;
-  width: 100%
+  width: 100%;
+  z-index: auto!important;
+  position: static!important
+}
+.fd-input-group__button.is-focus,
+.fd-input-group__button:focus {
+  z-index: 5;
+  outline: 0!important
+}
+.fd-input-group__button::before {
+  display: none!important
 }
 .fd-input-group .fd-button.fd-input-group__button {
   border-color: transparent
@@ -12630,6 +12748,32 @@
   outline-style: var(--sapContent_FocusStyle,dotted);
   outline-color: #fff;
   outline-color: var(--sapContent_ContrastFocusColor,#fff)
+}
+.fd-input-group--control.is-hover .fd-input-group__button,
+.fd-input-group--control:hover .fd-input-group__button {
+  border-left: solid .0625rem var(--sapList_SelectionBorderColor,#0854a0);
+  border-left: var(--fdInputGroup_ControlButton_SideBorder,solid .0625rem var(--sapList_SelectionBorderColor,#0854a0))
+}
+.fd-input-group--control.is-hover .fd-input-group__button[dir=rtl],
+.fd-input-group--control:hover .fd-input-group__button[dir=rtl],
+[dir=rtl] .fd-input-group--control.is-hover .fd-input-group__button,
+[dir=rtl] .fd-input-group--control:hover .fd-input-group__button {
+  border-left: none;
+  border-right: solid .0625rem var(--sapList_SelectionBorderColor,#0854a0);
+  border-right: var(--fdInputGroup_ControlButton_SideBorder,solid .0625rem var(--sapList_SelectionBorderColor,#0854a0))
+}
+.fd-input-group--control.is-active .fd-input-group__button,
+.fd-input-group--control:active .fd-input-group__button {
+  border-left: solid .0625rem var(--sapList_SelectionBorderColor,#0854a0);
+  border-left: var(--fdInputGroup_ControlButton_SideBorder,solid .0625rem var(--sapList_SelectionBorderColor,#0854a0))
+}
+.fd-input-group--control.is-active .fd-input-group__button[dir=rtl],
+.fd-input-group--control:active .fd-input-group__button[dir=rtl],
+[dir=rtl] .fd-input-group--control.is-active .fd-input-group__button,
+[dir=rtl] .fd-input-group--control:active .fd-input-group__button {
+  border-left: none;
+  border-right: solid .0625rem var(--sapList_SelectionBorderColor,#0854a0);
+  border-right: var(--fdInputGroup_ControlButton_SideBorder,solid .0625rem var(--sapList_SelectionBorderColor,#0854a0))
 }
 .fd-input-group .fd-textarea {
   resize: vertical
@@ -13047,11 +13191,15 @@
   .fd-container .fd-row + .fd-row {
     margin-top: 0
   }
-  .fd-container--no-gap {
+  .fd-container--no-horizontal-gap .fd-col {
+    padding-left: 0;
+    padding-right: 0
+  }
+  .fd-container--no-vertical-gap {
     margin: 0
   }
-  .fd-container--no-gap .fd-col {
-    padding: 0
+  .fd-container--no-vertical-gap .fd-col {
+    padding-top: 0
   }
   .fd-row {
     margin-bottom: 0
@@ -14200,7 +14348,10 @@
   border: 0;
   color: #0a6ed1;
   color: var(--sapLinkColor,#0a6ed1);
-  text-decoration: none;
+  -webkit-text-decoration: underline;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration,underline);
+  text-decoration: underline;
+  text-decoration: var(--fdLink_Text_Decoration,underline);
   text-shadow: 0 0 0.125rem #fff;
   text-shadow: var(--sapContent_TextShadow,0 0 .125rem #fff);
   display: inline-block;
@@ -14225,7 +14376,10 @@
 .fd-link:hover {
   color: #0854a0;
   color: var(--sapLink_Hover_Color,#0854a0);
-  text-decoration: underline
+  -webkit-text-decoration: none;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,none);
+  text-decoration: none;
+  text-decoration: var(--fdLink_Text_Decoration_Opposite,none)
 }
 .fd-link.is-focus,
 .fd-link:focus {
@@ -14238,12 +14392,20 @@
   outline-color: #000;
   outline-color: var(--sapContent_FocusColor,#000);
   outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
+  outline-style: var(--sapContent_FocusStyle,dotted);
+  -webkit-text-decoration: none;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,none);
+  text-decoration: none;
+  text-decoration: var(--fdLink_Text_Decoration_Opposite,none)
 }
 .fd-link.is-active,
 .fd-link:active {
   color: #0a6ed1;
-  color: var(--sapLink_Active_Color,#0a6ed1)
+  color: var(--sapLink_Active_Color,#0a6ed1);
+  -webkit-text-decoration: none;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,none);
+  text-decoration: none;
+  text-decoration: var(--fdLink_Text_Decoration_Opposite,none)
 }
 .fd-link--inverted {
   color: #d3e8fd;
@@ -14267,6 +14429,50 @@
   color: #0a6ed1;
   color: var(--sapLinkColor,#0a6ed1);
   pointer-events: none
+}
+.fd-link [class*=sap-icon],
+.fd-link[class*=sap-icon] {
+  -webkit-text-decoration: underline;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration,underline);
+  text-decoration: underline;
+  text-decoration: var(--fdLink_Text_Decoration,underline)
+}
+.fd-link.is-hover [class*=sap-icon],
+.fd-link.is-hover[class*=sap-icon],
+.fd-link:hover [class*=sap-icon],
+.fd-link:hover[class*=sap-icon] {
+  -webkit-text-decoration: none;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,none);
+  text-decoration: none;
+  text-decoration: var(--fdLink_Text_Decoration_Opposite,none);
+  color: #0854a0;
+  color: var(--sapLink_Hover_Color,#0854a0)
+}
+.fd-link.is-focus,
+.fd-link:focus {
+  z-index: 5
+}
+.fd-link.is-focus [class*=sap-icon],
+.fd-link.is-focus[class*=sap-icon],
+.fd-link:focus [class*=sap-icon],
+.fd-link:focus[class*=sap-icon] {
+  -webkit-text-decoration: none;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,none);
+  text-decoration: none;
+  text-decoration: var(--fdLink_Text_Decoration_Opposite,none);
+  color: #0a6ed1;
+  color: var(--sapLinkColor,#0a6ed1)
+}
+.fd-link.is-active [class*=sap-icon],
+.fd-link.is-active[class*=sap-icon],
+.fd-link:active [class*=sap-icon],
+.fd-link:active[class*=sap-icon] {
+  -webkit-text-decoration: none;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,none);
+  text-decoration: none;
+  text-decoration: var(--fdLink_Text_Decoration_Opposite,none);
+  color: #0a6ed1;
+  color: var(--sapLink_Active_Color,#0a6ed1)
 }
 /*!
 .fd-grid-list
@@ -15057,20 +15263,28 @@
   border: .0625rem dotted #fff;
   border: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_ContrastFocusColor,#fff)
 }
+.fd-list__item--unread .fd-list__title {
+  font-weight: 700
+}
 .fd-list__item--no-data .fd-list__title {
   text-align: center
 }
 .fd-list__item--action {
   padding: 0;
-  text-align: center
+  text-align: center;
+  border-bottom: none;
+  border-bottom: var(--fdList_Item_Action_Border,none);
+  height: 3rem;
+  height: var(--fdList_Item_Action_Height,3rem)
 }
 .fd-list__item--action:first-child {
-  border-top: .0625rem solid #e4e4e4;
-  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-top: none;
+  border-top: var(--fdList_Item_Action_Border,none)
 }
 .fd-list__item--action .fd-list__title {
   padding: 0 1rem;
-  height: 100%;
+  height: 2.5rem;
+  height: var(--fdList_Item_Action_Button_Size,2.5rem);
   width: 100%;
   background: 0 0;
   color: #0854a0;
@@ -15078,7 +15292,13 @@
   pointer-events: all;
   cursor: pointer;
   text-shadow: 0 0 .125rem #000;
-  text-shadow: var(--fdListBase_Text_Shadow,0 0 .125rem #000)
+  text-shadow: var(--fdListBase_Text_Shadow,0 0 .125rem #000);
+  margin: .25rem;
+  margin: var(--fdList_Item_Action_Button_Spacing,.25rem);
+  border: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
+  border: var(--fdList_Item_Action_Button_Border,var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4));
+  border-radius: .375rem;
+  border-radius: var(--fdList_Item_Action_Button_Border_Radius,.375rem)
 }
 .fd-list__item--action .fd-list__title.is-hover,
 .fd-list__item--action .fd-list__title:hover {
@@ -15555,6 +15775,10 @@
 }
 .fd-list--compact .fd-list__item {
   height: 2rem
+}
+.fd-list--compact .fd-list__item.fd-list__item--action .fd-list__title {
+  height: 1.625rem;
+  height: var(--fdList_Item_Action_Button_Size_Compact,1.625rem)
 }
 .fd-list--compact .fd-list__title {
   font-size: .875rem;
@@ -17180,7 +17404,7 @@
   background-color: #000;
   background-color: var(--sapBlockLayer_Background,#000);
   opacity: .8;
-  opacity: var(--fdDialogBackgroundOpacity,.8)
+  opacity: var(--fdDialog_Background_Opacity,.8)
 }
 .fd-dialog__content,
 .fd-message-box__content {
@@ -17232,7 +17456,8 @@
   max-height: 100vh;
   border-radius: 0
 }
-.fd-message-box__title {
+.fd-message-box__title,
+.fd-title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -17407,10 +17632,10 @@
   margin-left: .5rem
 }
 .fd-message-box--error .fd-message-box__header.fd-bar {
-  -webkit-box-shadow: inset 0 -.0625rem #bb0000,0 0 0.25rem 0 rgba(0,0,0,0.15),inset 0 -0.0625rem 0 0 #d9d9d9;
-  -webkit-box-shadow: inset 0 -.0625rem var(--sapErrorBorderColor,#b00),var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9);
-  box-shadow: inset 0 -.0625rem #bb0000,0 0 0.25rem 0 rgba(0,0,0,0.15),inset 0 -0.0625rem 0 0 #d9d9d9;
-  box-shadow: inset 0 -.0625rem var(--sapErrorBorderColor,#b00),var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9)
+  -webkit-box-shadow: inset 0 -.125rem var(--sapErrorBorderColor,#b00);
+  -webkit-box-shadow: var(--fdMessage_Box_Error_Box_Shadow,inset 0 -.125rem var(--sapErrorBorderColor,#b00));
+  box-shadow: inset 0 -.125rem var(--sapErrorBorderColor,#b00);
+  box-shadow: var(--fdMessage_Box_Error_Box_Shadow,inset 0 -.125rem var(--sapErrorBorderColor,#b00))
 }
 .fd-message-box--error .fd-message-box__header.fd-bar [class*=sap-icon] {
   font-size: 1rem;
@@ -17424,10 +17649,10 @@
   margin-left: .5rem
 }
 .fd-message-box--success .fd-message-box__header.fd-bar {
-  -webkit-box-shadow: inset 0 -.0625rem #107e3e,0 0 0.25rem 0 rgba(0,0,0,0.15),inset 0 -0.0625rem 0 0 #d9d9d9;
-  -webkit-box-shadow: inset 0 -.0625rem var(--sapSuccessBorderColor,#107e3e),var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9);
-  box-shadow: inset 0 -.0625rem #107e3e,0 0 0.25rem 0 rgba(0,0,0,0.15),inset 0 -0.0625rem 0 0 #d9d9d9;
-  box-shadow: inset 0 -.0625rem var(--sapSuccessBorderColor,#107e3e),var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9)
+  -webkit-box-shadow: inset 0 -.125rem var(--sapSuccessBorderColor,#107e3e);
+  -webkit-box-shadow: var(--fdMessage_Box_Success_Box_Shadow,inset 0 -.125rem var(--sapSuccessBorderColor,#107e3e));
+  box-shadow: inset 0 -.125rem var(--sapSuccessBorderColor,#107e3e);
+  box-shadow: var(--fdMessage_Box_Success_Box_Shadow,inset 0 -.125rem var(--sapSuccessBorderColor,#107e3e))
 }
 .fd-message-box--success .fd-message-box__header.fd-bar [class*=sap-icon] {
   font-size: 1rem;
@@ -17441,10 +17666,10 @@
   margin-left: .5rem
 }
 .fd-message-box--warning .fd-message-box__header.fd-bar {
-  -webkit-box-shadow: inset 0 -.0625rem #e9730c,0 0 0.25rem 0 rgba(0,0,0,0.15),inset 0 -0.0625rem 0 0 #d9d9d9;
-  -webkit-box-shadow: inset 0 -.0625rem var(--sapWarningBorderColor,#e9730c),var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9);
-  box-shadow: inset 0 -.0625rem #e9730c,0 0 0.25rem 0 rgba(0,0,0,0.15),inset 0 -0.0625rem 0 0 #d9d9d9;
-  box-shadow: inset 0 -.0625rem var(--sapWarningBorderColor,#e9730c),var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9)
+  -webkit-box-shadow: inset 0 -.125rem var(--sapWarningBorderColor,#e9730c);
+  -webkit-box-shadow: var(--fdMessage_Box_Warning_Box_Shadow,inset 0 -.125rem var(--sapWarningBorderColor,#e9730c));
+  box-shadow: inset 0 -.125rem var(--sapWarningBorderColor,#e9730c);
+  box-shadow: var(--fdMessage_Box_Warning_Box_Shadow,inset 0 -.125rem var(--sapWarningBorderColor,#e9730c))
 }
 .fd-message-box--warning .fd-message-box__header.fd-bar [class*=sap-icon] {
   font-size: 1rem;
@@ -17458,10 +17683,10 @@
   margin-left: .5rem
 }
 .fd-message-box--information .fd-message-box__header.fd-bar {
-  -webkit-box-shadow: inset 0 -.0625rem #0a6ed1,0 0 0.25rem 0 rgba(0,0,0,0.15),inset 0 -0.0625rem 0 0 #d9d9d9;
-  -webkit-box-shadow: inset 0 -.0625rem var(--sapInformationBorderColor,#0a6ed1),var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9);
-  box-shadow: inset 0 -.0625rem #0a6ed1,0 0 0.25rem 0 rgba(0,0,0,0.15),inset 0 -0.0625rem 0 0 #d9d9d9;
-  box-shadow: inset 0 -.0625rem var(--sapInformationBorderColor,#0a6ed1),var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9)
+  -webkit-box-shadow: inset 0 -.125rem var(--sapInformationBorderColor,#0a6ed1);
+  -webkit-box-shadow: var(--fdMessage_Box_Information_Box_Shadow,inset 0 -.125rem var(--sapInformationBorderColor,#0a6ed1));
+  box-shadow: inset 0 -.125rem var(--sapInformationBorderColor,#0a6ed1);
+  box-shadow: var(--fdMessage_Box_Information_Box_Shadow,inset 0 -.125rem var(--sapInformationBorderColor,#0a6ed1))
 }
 .fd-message-box--information .fd-message-box__header.fd-bar [class*=sap-icon] {
   font-size: 1rem;
@@ -17693,7 +17918,9 @@
   color: var(--sapTextColor,#32363a);
   background-color: #f4f4f4;
   background-color: var(--sapNeutralBackground,#f4f4f4);
-  border: 1px solid;
+  border-width: .125rem;
+  border-width: var(--fdMessageStrip_Border_Width,.125rem);
+  border-style: solid;
   border-color: #6a6d70;
   border-color: var(--sapNeutralBorderColor,#6a6d70);
   border-radius: .25rem;
@@ -19457,6 +19684,16 @@
   text-decoration: none;
   cursor: pointer
 }
+.fd-object-status--link.is-focus,
+.fd-object-status--link:focus {
+  outline-offset: .0625rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
 .fd-object-status--link:hover .fd-object-status__text {
   text-decoration: underline
 }
@@ -20629,11 +20866,12 @@
   background: var(--sapBackgroundColor,#f7f7f7)
 }
 .fd-page--list {
-  background: #fff;
-  background: var(--sapGroup_ContentBackground,#fff)
+  background: var(--sapBackgroundColor,#f7f7f7);
+  background: var(--fdPage_List_Background,var(--sapBackgroundColor,#f7f7f7))
 }
 .fd-page--transparent {
-  background: 0 0
+  background: var(--sapBackgroundColor,#f7f7f7);
+  background: var(--fdPage_Transparent_Background,var(--sapBackgroundColor,#f7f7f7))
 }
 .fd-page--home.fd-page__content--S {
   font-size: .875rem;
@@ -20795,7 +21033,10 @@
   border: 0;
   color: #0a6ed1;
   color: var(--sapLinkColor,#0a6ed1);
-  text-decoration: none;
+  -webkit-text-decoration: underline;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration,underline);
+  text-decoration: underline;
+  text-decoration: var(--fdLink_Text_Decoration,underline);
   text-shadow: 0 0 0.125rem #fff;
   text-shadow: var(--sapContent_TextShadow,0 0 .125rem #fff);
   display: inline-block;
@@ -20827,7 +21068,10 @@
 .fd-pagination__link:hover {
   color: #0854a0;
   color: var(--sapLink_Hover_Color,#0854a0);
-  text-decoration: underline
+  -webkit-text-decoration: none;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,none);
+  text-decoration: none;
+  text-decoration: var(--fdLink_Text_Decoration_Opposite,none)
 }
 .fd-pagination__link.is-focus,
 .fd-pagination__link:focus {
@@ -20840,12 +21084,20 @@
   outline-color: #000;
   outline-color: var(--sapContent_FocusColor,#000);
   outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
+  outline-style: var(--sapContent_FocusStyle,dotted);
+  -webkit-text-decoration: none;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,none);
+  text-decoration: none;
+  text-decoration: var(--fdLink_Text_Decoration_Opposite,none)
 }
 .fd-pagination__link.is-active,
 .fd-pagination__link:active {
   color: #0a6ed1;
-  color: var(--sapLink_Active_Color,#0a6ed1)
+  color: var(--sapLink_Active_Color,#0a6ed1);
+  -webkit-text-decoration: none;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,none);
+  text-decoration: none;
+  text-decoration: var(--fdLink_Text_Decoration_Opposite,none)
 }
 .fd-pagination__link--inverted {
   color: #d3e8fd;
@@ -20897,7 +21149,10 @@
   border: 0;
   color: #0a6ed1;
   color: var(--sapLinkColor,#0a6ed1);
-  text-decoration: none;
+  -webkit-text-decoration: underline;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration,underline);
+  text-decoration: underline;
+  text-decoration: var(--fdLink_Text_Decoration,underline);
   text-shadow: 0 0 0.125rem #fff;
   text-shadow: var(--sapContent_TextShadow,0 0 .125rem #fff);
   display: inline-block;
@@ -20932,7 +21187,10 @@
 .fd-pagination__link--previous:hover {
   color: #0854a0;
   color: var(--sapLink_Hover_Color,#0854a0);
-  text-decoration: underline
+  -webkit-text-decoration: none;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,none);
+  text-decoration: none;
+  text-decoration: var(--fdLink_Text_Decoration_Opposite,none)
 }
 .fd-pagination__link--next.is-focus,
 .fd-pagination__link--next:focus,
@@ -20947,14 +21205,22 @@
   outline-color: #000;
   outline-color: var(--sapContent_FocusColor,#000);
   outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
+  outline-style: var(--sapContent_FocusStyle,dotted);
+  -webkit-text-decoration: none;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,none);
+  text-decoration: none;
+  text-decoration: var(--fdLink_Text_Decoration_Opposite,none)
 }
 .fd-pagination__link--next.is-active,
 .fd-pagination__link--next:active,
 .fd-pagination__link--previous.is-active,
 .fd-pagination__link--previous:active {
   color: #0a6ed1;
-  color: var(--sapLink_Active_Color,#0a6ed1)
+  color: var(--sapLink_Active_Color,#0a6ed1);
+  -webkit-text-decoration: none;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,none);
+  text-decoration: none;
+  text-decoration: var(--fdLink_Text_Decoration_Opposite,none)
 }
 .fd-pagination__link--next--inverted,
 .fd-pagination__link--previous--inverted {
@@ -21785,7 +22051,11 @@
   background-color: #fff;
   background-color: var(--sapList_Background,#fff);
   border-radius: .25rem;
-  border-radius: var(--sapElement_BorderCornerRadius,.25rem)
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  -webkit-box-shadow: var(--sapContent_Shadow0,0 0 0 .0625rem rgba(0,0,0,.1),0 .125rem .5rem 0 rgba(0,0,0,.1));
+  -webkit-box-shadow: var(--fdProductSwitch_Shadow,var(--sapContent_Shadow0,0 0 0 .0625rem rgba(0,0,0,.1),0 .125rem .5rem 0 rgba(0,0,0,.1)));
+  box-shadow: var(--sapContent_Shadow0,0 0 0 .0625rem rgba(0,0,0,.1),0 .125rem .5rem 0 rgba(0,0,0,.1));
+  box-shadow: var(--fdProductSwitch_Shadow,var(--sapContent_Shadow0,0 0 0 .0625rem rgba(0,0,0,.1),0 .125rem .5rem 0 rgba(0,0,0,.1)))
 }
 .fd-product-switch__item::after,
 .fd-product-switch__item::before {
@@ -21803,48 +22073,104 @@
   background-color: #fff;
   background-color: var(--sapList_Background,#fff)
 }
+.fd-product-switch__item.is-hover,
+.fd-product-switch__item:hover {
+  background-color: #f5f5f5;
+  background-color: var(--sapList_Hover_Background,#f5f5f5);
+  border: .125rem solid var(--sapList_SelectionBorderColor,#0854a0);
+  border: var(--fdProductSwitch_Border,.125rem solid var(--sapList_SelectionBorderColor,#0854a0));
+  cursor: pointer
+}
+.fd-product-switch__item.is-hover .fd-product-switch__title::after,
+.fd-product-switch__item.is-hover .fd-product-switch__title::before,
+.fd-product-switch__item:hover .fd-product-switch__title::after,
+.fd-product-switch__item:hover .fd-product-switch__title::before {
+  background-color: #f5f5f5;
+  background-color: var(--sapList_Hover_Background,#f5f5f5)
+}
+.fd-product-switch__item.is-active,
+.fd-product-switch__item:active {
+  background-color: #0854a0;
+  background-color: var(--sapList_Active_Background,#0854a0);
+  border: .125rem solid var(--sapList_SelectionBorderColor,#0854a0);
+  border: var(--fdProductSwitch_Border,.125rem solid var(--sapList_SelectionBorderColor,#0854a0))
+}
+.fd-product-switch__item.is-active .fd-product-switch__subtitle,
+.fd-product-switch__item.is-active .fd-product-switch__title,
+.fd-product-switch__item:active .fd-product-switch__subtitle,
+.fd-product-switch__item:active .fd-product-switch__title {
+  color: #fff;
+  color: var(--sapList_Active_TextColor,#fff)
+}
+.fd-product-switch__item.is-active .fd-product-switch__icon [class*=sap-icon],
+.fd-product-switch__item.is-active .fd-product-switch__icon[class*=sap-icon],
+.fd-product-switch__item:active .fd-product-switch__icon [class*=sap-icon],
+.fd-product-switch__item:active .fd-product-switch__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapList_Active_TextColor,#fff)
+}
+.fd-product-switch__item.is-active .fd-product-switch__title::after,
+.fd-product-switch__item.is-active .fd-product-switch__title::before,
+.fd-product-switch__item:active .fd-product-switch__title::after,
+.fd-product-switch__item:active .fd-product-switch__title::before {
+  background-color: #0854a0;
+  background-color: var(--sapList_Active_Background,#0854a0)
+}
+.fd-product-switch__item.is-active.is-hover .fd-product-switch__title::after,
+.fd-product-switch__item.is-active.is-hover .fd-product-switch__title::before,
+.fd-product-switch__item.is-active:hover .fd-product-switch__title::after,
+.fd-product-switch__item.is-active:hover .fd-product-switch__title::before,
+.fd-product-switch__item:active.is-hover .fd-product-switch__title::after,
+.fd-product-switch__item:active.is-hover .fd-product-switch__title::before,
+.fd-product-switch__item:active:hover .fd-product-switch__title::after,
+.fd-product-switch__item:active:hover .fd-product-switch__title::before {
+  background-color: #0854a0;
+  background-color: var(--sapList_Active_Background,#0854a0)
+}
 .fd-product-switch__item.selected {
   background-color: #e5f0fa;
   background-color: var(--sapList_SelectionBackgroundColor,#e5f0fa);
-  -webkit-box-shadow: 0 0 0 .125rem #0854a0;
-  -webkit-box-shadow: 0 0 0 .125rem var(--sapList_SelectionBorderColor,#0854a0);
-  box-shadow: 0 0 0 .125rem #0854a0;
-  box-shadow: 0 0 0 .125rem var(--sapList_SelectionBorderColor,#0854a0)
+  border: .125rem solid #0854a0;
+  border: .125rem solid var(--sapList_SelectionBorderColor,#0854a0)
 }
 .fd-product-switch__item.selected .fd-product-switch__title::after,
 .fd-product-switch__item.selected .fd-product-switch__title::before {
   background-color: #e5f0fa;
   background-color: var(--sapList_SelectionBackgroundColor,#e5f0fa)
 }
+.fd-product-switch__item.selected.is-hover,
 .fd-product-switch__item.selected:hover {
   background-color: #d8e9f8;
   background-color: var(--sapList_Hover_SelectionBackground,#d8e9f8)
 }
+.fd-product-switch__item.selected.is-hover .fd-product-switch__title::after,
+.fd-product-switch__item.selected.is-hover .fd-product-switch__title::before,
 .fd-product-switch__item.selected:hover .fd-product-switch__title::after,
 .fd-product-switch__item.selected:hover .fd-product-switch__title::before {
   background-color: #d8e9f8;
   background-color: var(--sapList_Hover_SelectionBackground,#d8e9f8)
 }
+.fd-product-switch__item.selected.is-active,
 .fd-product-switch__item.selected:active {
   background-color: #0854a0;
   background-color: var(--sapList_Active_Background,#0854a0)
 }
+.fd-product-switch__item.selected.is-active .fd-product-switch__title::after,
+.fd-product-switch__item.selected.is-active .fd-product-switch__title::before,
 .fd-product-switch__item.selected:active .fd-product-switch__title::after,
 .fd-product-switch__item.selected:active .fd-product-switch__title::before {
   background-color: #0854a0;
   background-color: var(--sapList_Active_Background,#0854a0)
 }
-.fd-product-switch__item.selected:focus {
-  -webkit-box-shadow: none;
-  box-shadow: none
-}
+.fd-product-switch__item.is-focus,
 .fd-product-switch__item:focus {
-  outline: 0;
-  border: .0625rem dotted;
-  border-color: #000;
-  border-color: var(--sapContent_FocusColor,#000);
-  border-radius: .25rem;
-  border-radius: var(--sapElement_BorderCornerRadius,.25rem)
+  outline-offset: -.1875rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
 }
 .fd-product-switch__item.dragged {
   background-color: #fff;
@@ -21885,42 +22211,9 @@
   box-shadow: 0 0 0 0.0625rem rgba(0,0,0,0.42),0 0.625rem 1.875rem 0 rgba(0,0,0,0.3);
   box-shadow: var(--sapContent_Shadow2,0 0 0 .0625rem rgba(0,0,0,.42),0 .625rem 1.875rem 0 rgba(0,0,0,.3))
 }
-.fd-product-switch__item.dragged:focus {
+.fd-product-switch__item.dragged.is-hover,
+.fd-product-switch__item.dragged:hover {
   outline: 0
-}
-.fd-product-switch__item:hover {
-  background-color: #f5f5f5;
-  background-color: var(--sapList_Hover_Background,#f5f5f5);
-  cursor: pointer
-}
-.fd-product-switch__item:hover .fd-product-switch__title::after,
-.fd-product-switch__item:hover .fd-product-switch__title::before {
-  background-color: #f5f5f5;
-  background-color: var(--sapList_Hover_Background,#f5f5f5)
-}
-.fd-product-switch__item:active {
-  background-color: #0854a0;
-  background-color: var(--sapList_Active_Background,#0854a0)
-}
-.fd-product-switch__item:active .fd-product-switch__subtitle,
-.fd-product-switch__item:active .fd-product-switch__title {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
-}
-.fd-product-switch__item:active .fd-product-switch__icon [class*=sap-icon],
-.fd-product-switch__item:active .fd-product-switch__icon[class*=sap-icon] {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
-}
-.fd-product-switch__item:active .fd-product-switch__title::after,
-.fd-product-switch__item:active .fd-product-switch__title::before {
-  background-color: #0854a0;
-  background-color: var(--sapList_Active_Background,#0854a0)
-}
-.fd-product-switch__item:active:hover .fd-product-switch__title::after,
-.fd-product-switch__item:active:hover .fd-product-switch__title::before {
-  background-color: #0854a0;
-  background-color: var(--sapList_Active_Background,#0854a0)
 }
 .fd-product-switch__icon [class*=sap-icon],
 .fd-product-switch__icon[class*=sap-icon] {
@@ -22005,6 +22298,8 @@
   font-size: inherit
 }
 .fd-product-switch__title:last-child {
+  margin-bottom: 0;
+  margin-right: 0;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -22152,11 +22447,15 @@
   background-color: #fff;
   background-color: var(--sapTile_Background,#fff)
 }
+.fd-product-switch__body--mobile .fd-product-switch__item.is-hover .fd-product-switch__title::after,
+.fd-product-switch__body--mobile .fd-product-switch__item.is-hover .fd-product-switch__title::before,
 .fd-product-switch__body--mobile .fd-product-switch__item:hover .fd-product-switch__title::after,
 .fd-product-switch__body--mobile .fd-product-switch__item:hover .fd-product-switch__title::before {
   background-color: #f5f5f5;
   background-color: var(--sapList_Hover_Background,#f5f5f5)
 }
+.fd-product-switch__body--mobile .fd-product-switch__item.is-active .fd-product-switch__title::after,
+.fd-product-switch__body--mobile .fd-product-switch__item.is-active .fd-product-switch__title::before,
 .fd-product-switch__body--mobile .fd-product-switch__item:active .fd-product-switch__title::after,
 .fd-product-switch__body--mobile .fd-product-switch__item:active .fd-product-switch__title::before {
   background-color: #0854a0;
@@ -22173,27 +22472,40 @@
   background-color: #0854a0;
   background-color: var(--sapList_SelectionBorderColor,#0854a0)
 }
+.fd-product-switch__body--mobile .fd-product-switch__item.selected.is-hover .fd-product-switch__title::after,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected.is-hover .fd-product-switch__title::before,
 .fd-product-switch__body--mobile .fd-product-switch__item.selected:hover .fd-product-switch__title::after,
 .fd-product-switch__body--mobile .fd-product-switch__item.selected:hover .fd-product-switch__title::before {
   background-color: #d8e9f8;
   background-color: var(--sapList_Hover_SelectionBackground,#d8e9f8)
 }
+.fd-product-switch__body--mobile .fd-product-switch__item.selected.is-active .fd-product-switch__title::after,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected.is-active .fd-product-switch__title::before,
 .fd-product-switch__body--mobile .fd-product-switch__item.selected:active .fd-product-switch__title::after,
 .fd-product-switch__body--mobile .fd-product-switch__item.selected:active .fd-product-switch__title::before {
   background-color: #0854a0;
   background-color: var(--sapList_Active_Background,#0854a0)
 }
+.fd-product-switch__body--mobile .fd-product-switch__item.selected.is-active.is-hover .fd-product-switch__title::after,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected.is-active.is-hover .fd-product-switch__title::before,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected.is-active:hover .fd-product-switch__title::after,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected.is-active:hover .fd-product-switch__title::before,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected:active.is-hover .fd-product-switch__title::after,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected:active.is-hover .fd-product-switch__title::before,
 .fd-product-switch__body--mobile .fd-product-switch__item.selected:active:hover .fd-product-switch__title::after,
 .fd-product-switch__body--mobile .fd-product-switch__item.selected:active:hover .fd-product-switch__title::before {
   background-color: #0854a0;
   background-color: var(--sapList_Active_Background,#0854a0)
 }
+.fd-product-switch__body--mobile .fd-product-switch__item.is-focus,
 .fd-product-switch__body--mobile .fd-product-switch__item:focus {
-  outline: 0;
-  border: .0625rem dotted;
-  border-color: #000;
-  border-color: var(--sapContent_FocusColor,#000);
-  border-radius: 0
+  outline-offset: -.1875rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
 }
 .fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__title::after,
 .fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__title::before {
@@ -22272,10 +22584,139 @@
   z-index: 3;
   display: none
 }
+.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item.is-active .fd-product-switch__subtitle,
 .fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item:active .fd-product-switch__subtitle,
+[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item.is-active .fd-product-switch__subtitle,
 [dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item:active .fd-product-switch__subtitle {
   color: #fff;
   color: var(--sapList_Active_TextColor,#fff)
+}
+.fd-quick-view {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  min-width: 20rem
+}
+.fd-quick-view::after,
+.fd-quick-view::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-quick-view[dir=rtl] .fd-bar--header-with-subheader .fd-avatar,
+[dir=rtl] .fd-quick-view .fd-bar--header-with-subheader .fd-avatar {
+  margin-right: 0;
+  margin-left: .75rem
+}
+.fd-quick-view > :first-child {
+  border-top-right-radius: .25rem;
+  border-top-right-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  border-top-left-radius: .25rem;
+  border-top-left-radius: var(--sapElement_BorderCornerRadius,.25rem)
+}
+.fd-quick-view__content {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  padding: 1rem
+}
+.fd-quick-view__content::after,
+.fd-quick-view__content::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-quick-view .fd-bar {
+  padding: 0
+}
+.fd-quick-view .fd-bar--header-with-subheader {
+  height: auto;
+  padding-bottom: .75rem
+}
+.fd-quick-view .fd-bar--header-with-subheader .fd-avatar {
+  margin-right: .75rem
+}
+.fd-quick-view .fd-bar--header-with-subheader .fd-bar__left,
+.fd-quick-view .fd-bar--header-with-subheader .fd-bar__middle,
+.fd-quick-view .fd-bar--header-with-subheader .fd-bar__right {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start
+}
+.fd-quick-view__subheader-text {
+  max-width: 100%;
+  min-width: 0
+}
+.fd-quick-view__subtitle {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: .25rem;
+  color: #6a6d70;
+  color: var(--sapTile_TextColor,#6a6d70)
+}
+.fd-quick-view__subtitle::after,
+.fd-quick-view__subtitle::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-quick-view .fd-input:not(input) {
+  height: auto;
+  padding: 0;
+  border: none
+}
+.fd-dialog__body .fd-quick-view__content {
+  padding-top: 0;
+  padding-bottom: 0
+}
+.fd-quick-view .fd-form-item {
+  padding-top: .75rem
+}
+.fd-quick-view .fd-title .fd-link {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%
 }
 /*!
 .fd-radio
@@ -22387,7 +22828,11 @@
   background-color: #fff;
   background-color: var(--sapField_InvalidBackground,#fff);
   border-color: #bb0000;
-  border-color: var(--sapField_InvalidColor,#b00)
+  border-color: var(--sapField_InvalidColor,#b00);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-radio.is-error.is-hover,
 .fd-radio.is-error:hover {
@@ -22401,7 +22846,11 @@
   background-color: #fff;
   background-color: var(--sapField_WarningBackground,#fff);
   border-color: #e9730c;
-  border-color: var(--sapField_WarningColor,#e9730c)
+  border-color: var(--sapField_WarningColor,#e9730c);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-radio.is-alert.is-hover,
 .fd-radio.is-alert:hover,
@@ -22442,7 +22891,9 @@
 .fd-radio.is-error,
 .fd-radio.is-information,
 .fd-radio.is-warning {
-  border-width: .125rem
+  border-width: .125rem;
+  border-style: dashed;
+  border-style: var(--fdInput_State_Border_Type,dashed)
 }
 .fd-radio.is-alert.is-focus,
 .fd-radio.is-alert:focus,
@@ -23162,6 +23613,20 @@
   padding: 0;
   margin: 0;
   border: 0;
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -23192,8 +23657,13 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-right: 0;
-  padding-left: .625rem
+  padding-right: 0
+}
+.fd-select__control::after,
+.fd-select__control::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
 }
 .fd-select__control::after,
 .fd-select__control::before {
@@ -23263,7 +23733,11 @@
   background-color: #fff;
   background-color: var(--sapField_InvalidBackground,#fff);
   border-color: #bb0000;
-  border-color: var(--sapField_InvalidColor,#b00)
+  border-color: var(--sapField_InvalidColor,#b00);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-select__control.is-error.is-hover,
 .fd-select__control.is-error:hover {
@@ -23277,7 +23751,11 @@
   background-color: #fff;
   background-color: var(--sapField_WarningBackground,#fff);
   border-color: #e9730c;
-  border-color: var(--sapField_WarningColor,#e9730c)
+  border-color: var(--sapField_WarningColor,#e9730c);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-select__control.is-alert.is-hover,
 .fd-select__control.is-alert:hover,
@@ -23318,7 +23796,9 @@
 .fd-select__control.is-error,
 .fd-select__control.is-information,
 .fd-select__control.is-warning {
-  border-width: .125rem
+  border-width: .125rem;
+  border-style: dashed;
+  border-style: var(--fdInput_State_Border_Type,dashed)
 }
 .fd-select__control.is-alert.is-focus,
 .fd-select__control.is-alert:focus,
@@ -23419,16 +23899,6 @@
 .fd-select__control .fd-select__button:hover {
   border: none
 }
-.fd-select__control.is-focus,
-.fd-select__control:focus {
-  outline-offset: -.1875rem;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
-}
 .fd-select__control.is-hover,
 .fd-select__control:hover {
   background-color: #fff;
@@ -23454,7 +23924,11 @@
   background-color: #fff;
   background-color: var(--sapField_InvalidBackground,#fff);
   border-color: #bb0000;
-  border-color: var(--sapField_InvalidColor,#b00)
+  border-color: var(--sapField_InvalidColor,#b00);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-select__control.is-error.is-hover,
 .fd-select__control.is-error:hover {
@@ -23468,7 +23942,11 @@
   background-color: #fff;
   background-color: var(--sapField_WarningBackground,#fff);
   border-color: #e9730c;
-  border-color: var(--sapField_WarningColor,#e9730c)
+  border-color: var(--sapField_WarningColor,#e9730c);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-select__control.is-alert.is-hover,
 .fd-select__control.is-alert:hover,
@@ -23509,7 +23987,9 @@
 .fd-select__control.is-error,
 .fd-select__control.is-information,
 .fd-select__control.is-warning {
-  border-width: .125rem
+  border-width: .125rem;
+  border-style: dashed;
+  border-style: var(--fdInput_State_Border_Type,dashed)
 }
 .fd-select__control.is-alert.is-focus,
 .fd-select__control.is-alert:focus,
@@ -23590,23 +24070,67 @@
 .fd-select__control[readonly]::placeholder {
   color: transparent
 }
+.fd-select__control.is-focus,
+.fd-select__control:focus {
+  z-index: 5;
+  outline: 0
+}
+.fd-select__control.is-focus::before,
+.fd-select__control:focus::before {
+  content: '';
+  top: .1875rem;
+  left: .1875rem;
+  border-width: .0625rem;
+  border-width: var(--sapContent_FocusWidth,.0625rem);
+  border-color: #000;
+  border-color: var(--sapContent_FocusColor,#000);
+  border-style: dotted;
+  border-style: var(--sapContent_FocusStyle,dotted);
+  height: calc(100% - (2 * .1875rem));
+  width: calc(100% - (2 * .1875rem));
+  z-index: 1;
+  position: absolute
+}
 .fd-select__control[dir=rtl],
 [dir=rtl] .fd-select__control {
   text-align: right;
-  padding-right: .625rem;
   padding-left: 0
+}
+.fd-select__control[dir=rtl].is-focus,
+.fd-select__control[dir=rtl]:focus,
+[dir=rtl] .fd-select__control.is-focus,
+[dir=rtl] .fd-select__control:focus {
+  z-index: 5
+}
+.fd-select__control[dir=rtl].is-focus::before,
+.fd-select__control[dir=rtl]:focus::before,
+[dir=rtl] .fd-select__control.is-focus::before,
+[dir=rtl] .fd-select__control:focus::before {
+  right: -.0234375rem
 }
 .fd-select__control.is-hover .fd-select__button,
 .fd-select__control:hover .fd-select__button {
   background-color: #ebf5fe;
-  background-color: var(--sapButton_Lite_Hover_Background,#ebf5fe)
+  background-color: var(--sapButton_Lite_Hover_Background,#ebf5fe);
+  border-left: solid .0625rem var(--sapField_BorderColor,#89919a);
+  border-left: var(--fdSelect_Button_Interractive_SideBorder,solid .0625rem var(--sapField_BorderColor,#89919a))
+}
+.fd-select__control.is-hover .fd-select__button[dir=rtl],
+.fd-select__control:hover .fd-select__button[dir=rtl],
+[dir=rtl] .fd-select__control.is-hover .fd-select__button,
+[dir=rtl] .fd-select__control:hover .fd-select__button {
+  border-left: none;
+  border-right: solid .0625rem var(--sapField_BorderColor,#89919a);
+  border-right: var(--fdSelect_Button_Interractive_SideBorder,solid .0625rem var(--sapField_BorderColor,#89919a))
 }
 .fd-select__control.is-expanded .fd-select__button,
 .fd-select__control[aria-expanded=true] .fd-select__button {
   background-color: #0854a0;
   background-color: var(--sapButton_Active_Background,#0854a0);
   color: #fff;
-  color: var(--sapButton_Active_TextColor,#fff)
+  color: var(--sapButton_Active_TextColor,#fff);
+  border-left: solid .0625rem var(--sapField_BorderColor,#89919a);
+  border-left: var(--fdSelect_Button_Interractive_SideBorder,solid .0625rem var(--sapField_BorderColor,#89919a))
 }
 .fd-select__control.is-expanded .fd-select__button.is-focus,
 .fd-select__control.is-expanded .fd-select__button:focus,
@@ -23622,12 +24146,22 @@
   outline-color: #fff;
   outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
+.fd-select__control.is-expanded .fd-select__button[dir=rtl],
+.fd-select__control[aria-expanded=true] .fd-select__button[dir=rtl],
+[dir=rtl] .fd-select__control.is-expanded .fd-select__button,
+[dir=rtl] .fd-select__control[aria-expanded=true] .fd-select__button {
+  border-left: none;
+  border-right: solid .0625rem var(--sapField_BorderColor,#89919a);
+  border-right: var(--fdSelect_Button_Interractive_SideBorder,solid .0625rem var(--sapField_BorderColor,#89919a))
+}
 .fd-select__control.is-active .fd-select__button,
 .fd-select__control:active .fd-select__button {
   background-color: #0854a0;
   background-color: var(--sapButton_Active_Background,#0854a0);
   color: #fff;
-  color: var(--sapButton_Active_TextColor,#fff)
+  color: var(--sapButton_Active_TextColor,#fff);
+  border-left: solid .0625rem var(--sapField_BorderColor,#89919a);
+  border-left: var(--fdSelect_Button_Interractive_SideBorder,solid .0625rem var(--sapField_BorderColor,#89919a))
 }
 .fd-select__control.is-active .fd-select__button.is-focus,
 .fd-select__control.is-active .fd-select__button:focus,
@@ -23643,29 +24177,70 @@
   outline-color: #fff;
   outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
+.fd-select__control.is-active .fd-select__button[dir=rtl],
+.fd-select__control:active .fd-select__button[dir=rtl],
+[dir=rtl] .fd-select__control.is-active .fd-select__button,
+[dir=rtl] .fd-select__control:active .fd-select__button {
+  border-left: none;
+  border-right: solid .0625rem var(--sapField_BorderColor,#89919a);
+  border-right: var(--fdSelect_Button_Interractive_SideBorder,solid .0625rem var(--sapField_BorderColor,#89919a))
+}
 .fd-select__control.is-readonly {
-  padding-right: .625rem;
-  padding-left: .625rem;
   cursor: text
 }
-.fd-select__text {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem)
+.fd-select__control.is-readonly .fd-select__text-content {
+  padding-right: .625rem;
+  padding-left: .625rem
 }
 .fd-select__text-content {
-  min-width: 5rem
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  padding-left: .625rem;
+  min-width: 5.625rem
+}
+.fd-select__text-content::after,
+.fd-select__text-content::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-select__text-content[dir=rtl],
+[dir=rtl] .fd-select__text-content {
+  padding-left: 0;
+  padding-right: .625rem
 }
 .fd-select--compact .fd-select__control {
-  height: 1.625rem;
+  height: 1.625rem
+}
+.fd-select--compact .fd-select__control .fd-select__text-content {
   padding-left: .5rem
 }
 .fd-select--compact .fd-select__control[dir=rtl],
 [dir=rtl] .fd-select--compact .fd-select__control {
   text-align: right;
-  padding-right: .5rem;
   padding-left: 0
 }
-.fd-select--compact .fd-select__control.is-readonly {
+.fd-select--compact .fd-select__control[dir=rtl] .fd-select__text-content,
+[dir=rtl] .fd-select--compact .fd-select__control .fd-select__text-content {
+  padding-left: 0;
+  padding-right: .5rem
+}
+.fd-select--compact .fd-select__control.is-readonly .fd-select__text-content {
   padding-right: .5rem;
   padding-left: .5rem
 }
@@ -23779,10 +24354,6 @@
   -webkit-box-ordinal-group: 4;
   -ms-flex-order: 3;
   order: 3
-}
-.fd-shellbar__group .fd-shellbar__avatar--circle {
-  border: .0625rem solid #7996b4;
-  border: .0625rem solid var(--sapShell_InteractiveBorderColor,#7996b4)
 }
 .fd-shellbar__subtitle,
 .fd-shellbar__title {
@@ -23983,27 +24554,17 @@
 }
 .fd-shellbar .fd-button.fd-shellbar__button.is-focus,
 .fd-shellbar .fd-button.fd-shellbar__button:focus {
-  z-index: 5
-}
-.fd-shellbar .fd-button.fd-shellbar__button.is-focus::after,
-.fd-shellbar .fd-button.fd-shellbar__button:focus::after {
-  content: "";
-  position: absolute;
-  width: auto;
-  height: auto;
-  top: .0625rem;
-  left: .0625rem;
-  right: .0625rem;
-  bottom: .0625rem;
-  border: .0625rem dotted #000;
-  border: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000);
+  z-index: 5;
+  outline: .0625rem dotted #000;
+  outline: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000);
+  outline-offset: -.1875rem;
   border-color: #fff;
   border-color: var(--sapContent_ContrastFocusColor,#fff)
 }
-.fd-shellbar .fd-button.fd-shellbar__button.is-focus.fd-shellbar--toggled::after,
-.fd-shellbar .fd-button.fd-shellbar__button:focus.fd-shellbar--toggled::after {
-  border: .0625rem dotted #fff;
-  border: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_ContrastFocusColor,#fff)
+.fd-shellbar .fd-button.fd-shellbar__button.is-focus.fd-shellbar--toggled,
+.fd-shellbar .fd-button.fd-shellbar__button:focus.fd-shellbar--toggled {
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
 .fd-shellbar .fd-button.fd-shellbar__button.is-active,
 .fd-shellbar .fd-button.fd-shellbar__button:active {
@@ -26069,7 +26630,10 @@
 .fd-side-nav__skip-link:focus {
   color: #0a6ed1;
   color: var(--sapLinkColor,#0a6ed1);
-  text-decoration: none;
+  -webkit-text-decoration: underline;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration,underline);
+  text-decoration: underline;
+  text-decoration: var(--fdLink_Text_Decoration,underline);
   text-shadow: 0 0 0.125rem #fff;
   text-shadow: var(--sapContent_TextShadow,0 0 .125rem #fff);
   display: inline-block;
@@ -26091,7 +26655,10 @@
 .fd-side-nav__skip-link:focus:hover {
   color: #0854a0;
   color: var(--sapLink_Hover_Color,#0854a0);
-  text-decoration: underline
+  -webkit-text-decoration: none;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,none);
+  text-decoration: none;
+  text-decoration: var(--fdLink_Text_Decoration_Opposite,none)
 }
 .fd-side-nav__skip-link:focus.is-focus,
 .fd-side-nav__skip-link:focus:focus {
@@ -26104,12 +26671,20 @@
   outline-color: #000;
   outline-color: var(--sapContent_FocusColor,#000);
   outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
+  outline-style: var(--sapContent_FocusStyle,dotted);
+  -webkit-text-decoration: none;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,none);
+  text-decoration: none;
+  text-decoration: var(--fdLink_Text_Decoration_Opposite,none)
 }
 .fd-side-nav__skip-link:focus.is-active,
 .fd-side-nav__skip-link:focus:active {
   color: #0a6ed1;
-  color: var(--sapLink_Active_Color,#0a6ed1)
+  color: var(--sapLink_Active_Color,#0a6ed1);
+  -webkit-text-decoration: none;
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,none);
+  text-decoration: none;
+  text-decoration: var(--fdLink_Text_Decoration_Opposite,none)
 }
 .fd-side-nav__skip-link:focus--inverted {
   color: #d3e8fd;
@@ -26579,8 +27154,8 @@
   border: 0;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
-  border: .0625rem solid #89919a;
-  border: var(--sapButton_BorderWidth,.0625rem) solid var(--sapContent_ForegroundBorderColor,#89919a);
+  border: .125rem solid #89919a;
+  border: var(--fdSwitch_Handle_Border_Width,.125rem) solid var(--sapContent_ForegroundBorderColor,#89919a);
   background-color: #fff;
   background-color: var(--sapButton_Background,#fff);
   min-width: 1.875rem;
@@ -26708,13 +27283,13 @@
   background-color: #ebf5fe;
   background-color: var(--sapButton_Hover_Background,#ebf5fe)
 }
-.fd-switch.is-hover .fd-switch:checked + .fd-switch__slider,
-.fd-switch:hover .fd-switch:checked + .fd-switch__slider {
-  border-color: #095caf;
-  border-color: var(--sapButton_Selected_Hover_BorderColor,#095caf)
+.fd-switch.is-hover .fd-switch__input:checked + .fd-switch__slider,
+.fd-switch:hover .fd-switch__input:checked + .fd-switch__slider {
+  background-color: var(--sapButton_Background,#fff);
+  background-color: var(--fdSwitch_On_Hover_Slider_Background,var(--sapButton_Background,#fff))
 }
-.fd-switch.is-hover .fd-switch:checked + .fd-switch__slider .fd-switch__handle,
-.fd-switch:hover .fd-switch:checked + .fd-switch__slider .fd-switch__handle {
+.fd-switch.is-hover .fd-switch__input:checked + .fd-switch__slider .fd-switch__handle,
+.fd-switch:hover .fd-switch__input:checked + .fd-switch__slider .fd-switch__handle {
   border-color: #095caf;
   border-color: var(--sapButton_Selected_Hover_BorderColor,#095caf);
   background-color: #095caf;
@@ -26760,8 +27335,8 @@
   border-color: var(--sapErrorBorderColor,#b00)
 }
 .fd-switch--semantic .fd-switch__input:checked + .fd-switch__slider {
-  background-color: #f1fdf6;
-  background-color: var(--sapSuccessBackground,#f1fdf6);
+  background-color: var(--sapButton_Background,#fff);
+  background-color: var(--fdSwitch_Semantic_Success_Background_Color,var(--sapButton_Background,#fff));
   border-color: #107e3e;
   border-color: var(--sapSuccessBorderColor,#107e3e)
 }
@@ -26782,22 +27357,41 @@
   width: 3.375rem;
   height: 1.25rem
 }
+.fd-switch--semantic.is-hover .fd-switch__icon,
+.fd-switch--semantic:hover .fd-switch__icon {
+  color: var(--sapButton_Hover_BorderColor,#0854a0);
+  color: var(--fdSwitch_Semantic_Error_Color,var(--sapButton_Hover_BorderColor,#0854a0))
+}
 .fd-switch--semantic.is-hover .fd-switch__slider,
 .fd-switch--semantic:hover .fd-switch__slider {
-  border-color: #bb0000;
-  border-color: var(--sapErrorBorderColor,#b00)
+  border-color: var(--sapButton_Hover_BorderColor,#0854a0);
+  border-color: var(--fdSwitch_Semantic_Error_Color,var(--sapButton_Hover_BorderColor,#0854a0))
 }
 .fd-switch--semantic.is-hover .fd-switch__handle,
 .fd-switch--semantic:hover .fd-switch__handle {
-  background-color: #ffebeb;
-  background-color: var(--sapErrorBackground,#ffebeb);
-  border-color: #bb0000;
-  border-color: var(--sapErrorBorderColor,#b00)
+  background-color: var(--sapButton_Selected_Hover_Background,#095caf);
+  background-color: var(--fdSwitch_Semantic_Error_Background_Color,var(--sapButton_Selected_Hover_Background,#095caf));
+  border-color: var(--sapButton_Hover_BorderColor,#0854a0);
+  border-color: var(--fdSwitch_Semantic_Error_Color,var(--sapButton_Hover_BorderColor,#0854a0))
+}
+.fd-switch--semantic.is-hover .fd-switch__input:checked + .fd-switch__slider,
+.fd-switch--semantic:hover .fd-switch__input:checked + .fd-switch__slider {
+  background-color: var(--sapButton_Background,#fff);
+  background-color: var(--fdSwitch_Semantic_Success_Background_Color,var(--sapButton_Background,#fff));
+  border-color: var(--sapButton_Hover_BorderColor,#0854a0);
+  border-color: var(--fdSwitch_Semantic_Success_Border_Color,var(--sapButton_Hover_BorderColor,#0854a0))
 }
 .fd-switch--semantic.is-hover .fd-switch__input:checked + .fd-switch__slider .fd-switch__handle,
 .fd-switch--semantic:hover .fd-switch__input:checked + .fd-switch__slider .fd-switch__handle {
-  background-color: #f1fdf6;
-  background-color: var(--sapSuccessBackground,#f1fdf6)
+  background-color: var(--sapButton_Selected_Hover_Background,#095caf);
+  background-color: var(--fdSwitch_Semantic_Success_Handle_Hover_Background_Color,var(--sapButton_Selected_Hover_Background,#095caf));
+  border-color: var(--sapButton_Hover_BorderColor,#0854a0);
+  border-color: var(--fdSwitch_Semantic_Success_Border_Color,var(--sapButton_Hover_BorderColor,#0854a0))
+}
+.fd-switch--semantic.is-hover .fd-switch__input:checked + .fd-switch__slider .fd-switch__icon,
+.fd-switch--semantic:hover .fd-switch__input:checked + .fd-switch__slider .fd-switch__icon {
+  color: var(--sapButton_Hover_BorderColor,#0854a0);
+  color: var(--fdSwitch_Semantic_Success_Border_Color,var(--sapButton_Hover_BorderColor,#0854a0))
 }
 .fd-switch--semantic[dir=rtl] .fd-switch__track,
 [dir=rtl] .fd-switch--semantic .fd-switch__track {
@@ -27088,7 +27682,9 @@
 .fd-table__row--hoverable.is-hover,
 .fd-table__row--hoverable:hover {
   background-color: #f5f5f5;
-  background-color: var(--sapList_Hover_Background,#f5f5f5)
+  background-color: var(--sapList_Hover_Background,#f5f5f5);
+  color: var(--sapContent_ContrastTextColor,#fff);
+  color: var(--fdTable_Hover_Down_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-table__cell--activable,
 .fd-table__row--activable {
@@ -27157,6 +27753,10 @@
   outline-color: var(--sapContent_FocusColor,#000);
   outline-style: dotted;
   outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-table__footer {
+  background-color: #fafafa;
+  background-color: var(--sapList_FooterBackground,#fafafa)
 }
 .fd-table__footer .fd-table__row {
   border-top: .125rem solid #d8d8d8;
@@ -28418,7 +29018,11 @@
   background-color: #fff;
   background-color: var(--sapField_InvalidBackground,#fff);
   border-color: #bb0000;
-  border-color: var(--sapField_InvalidColor,#b00)
+  border-color: var(--sapField_InvalidColor,#b00);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-textarea.is-error.is-hover,
 .fd-textarea.is-error:hover {
@@ -28432,7 +29036,11 @@
   background-color: #fff;
   background-color: var(--sapField_WarningBackground,#fff);
   border-color: #e9730c;
-  border-color: var(--sapField_WarningColor,#e9730c)
+  border-color: var(--sapField_WarningColor,#e9730c);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-textarea.is-alert.is-hover,
 .fd-textarea.is-alert:hover,
@@ -28473,7 +29081,9 @@
 .fd-textarea.is-error,
 .fd-textarea.is-information,
 .fd-textarea.is-warning {
-  border-width: .125rem
+  border-width: .125rem;
+  border-style: dashed;
+  border-style: var(--fdInput_State_Border_Type,dashed)
 }
 .fd-textarea.is-alert.is-focus,
 .fd-textarea.is-alert:focus,
@@ -29222,10 +29832,10 @@
   color: var(--sapButton_Emphasized_TextColor,#fff);
   text-shadow: transparent;
   text-shadow: var(--sapButton_Emphasized_TextShadow,transparent);
-  content: "\e14b"
+  content: '\e14b'
 }
 .fd-tile--slide .fd-tile__toggle--pause::before {
-  content: "\e14c"
+  content: '\e14c'
 }
 .fd-tile--slide .fd-tile__toggle.is-focus,
 .fd-tile--slide .fd-tile__toggle:focus {
@@ -29272,9 +29882,10 @@
   z-index: 2;
   width: 100%;
   max-width: 100%;
-  background-color: #000;
-  background-color: var(--sapBlockLayer_Background,#000);
-  opacity: .8;
+  background-color: var(--sapTile_Background,#fff);
+  background-color: var(--fdSlide_Tile_Background_Color,var(--sapTile_Background,#fff));
+  opacity: 1;
+  opacity: var(--fdSlide_Tile_Background_Opacity,1);
   padding-top: .25rem;
   padding-left: calc(1rem - .0625rem);
   padding-right: calc(1rem - .0625rem);
@@ -29289,16 +29900,22 @@
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-tile--slide .fd-tile__footer-text,
-.fd-tile--slide .fd-tile__subtitle,
 .fd-tile--slide .fd-tile__title {
-  color: #fff;
-  color: var(--sapContent_ContrastTextColor,#fff);
-  text-shadow: #fff;
-  text-shadow: var(--sapContent_ContrastShadowColor,#fff);
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
-  line-height: normal
+  line-height: normal;
+  color: #32363a;
+  color: var(--sapTile_TitleTextColor,#32363a);
+  text-shadow: 0 0 .125rem #000;
+  text-shadow: 0 0 .125rem var(--sapContent_ShadowColor,#000)
+}
+.fd-tile--slide .fd-tile__footer-text,
+.fd-tile--slide .fd-tile__subtitle {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: normal;
+  color: #6a6d70;
+  color: var(--sapTile_TextColor,#6a6d70)
 }
 .fd-tile--slide .fd-tile__page-indicator {
   font-size: .875rem;
@@ -29353,20 +29970,29 @@
   padding: 0;
   margin: 0;
   border: 0;
-  height: .188rem;
-  min-height: .188rem;
-  max-height: .188rem;
-  width: .188rem;
-  min-width: .188rem;
-  max-width: .188rem;
+  height: .25rem;
+  height: var(--fdSlide_Tile_Indicator_Dot_Size,.25rem);
+  min-height: .25rem;
+  min-height: var(--fdSlide_Tile_Indicator_Dot_Size,.25rem);
+  max-height: .25rem;
+  max-height: var(--fdSlide_Tile_Indicator_Dot_Size,.25rem);
+  width: .25rem;
+  width: var(--fdSlide_Tile_Indicator_Dot_Size,.25rem);
+  min-width: .25rem;
+  min-width: var(--fdSlide_Tile_Indicator_Dot_Size,.25rem);
+  max-width: .25rem;
+  max-width: var(--fdSlide_Tile_Indicator_Dot_Size,.25rem);
   border-radius: 50%;
-  background-color: #fff;
-  background-color: var(--sapContent_ContrastTextColor,#fff);
-  -webkit-box-shadow: 0 0 .25rem #000;
-  -webkit-box-shadow: 0 0 .25rem var(--sapContent_ShadowColor,#000);
-  box-shadow: 0 0 .25rem #000;
-  box-shadow: 0 0 .25rem var(--sapContent_ShadowColor,#000);
-  margin-right: .375rem
+  background-color: var(--sapTile_Background,#fff);
+  background-color: var(--fdSlide_Tile_Indicator_Dot_Color,var(--sapTile_Background,#fff));
+  border: solid .0625rem var(--sapContent_NonInteractiveIconColor,#6a6d70);
+  border: var(--fdSlide_Tile_Indicator_Dot_Border,solid .0625rem var(--sapContent_NonInteractiveIconColor,#6a6d70));
+  -webkit-box-shadow: 0 0 .063rem #000;
+  -webkit-box-shadow: 0 0 .063rem var(--sapContent_ShadowColor,#000);
+  box-shadow: 0 0 .063rem #000;
+  box-shadow: 0 0 .063rem var(--sapContent_ShadowColor,#000);
+  margin-right: .188rem;
+  margin-right: var(--fdSlide_Tile_Indicator_Dot_Spacing,.188rem)
 }
 .fd-tile--slide .fd-tile__dot::after,
 .fd-tile--slide .fd-tile__dot::before {
@@ -29377,17 +30003,26 @@
 .fd-tile--slide .fd-tile__dot[dir=rtl],
 [dir=rtl] .fd-tile--slide .fd-tile__dot {
   margin-right: 0;
-  margin-left: .375rem
+  margin-left: .188rem;
+  margin-left: var(--fdSlide_Tile_Indicator_Dot_Spacing,.188rem)
 }
 .fd-tile--slide .fd-tile__dot--active {
-  height: .313rem;
-  min-height: .313rem;
-  max-height: .313rem;
-  width: .313rem;
-  min-width: .313rem;
-  max-width: .313rem;
-  color: #fff;
-  color: var(--sapContent_ContrastTextColor,#fff)
+  height: .25rem;
+  height: var(--fdSlide_Tile_Indicator_Ative_Dot_Size,.25rem);
+  min-height: .25rem;
+  min-height: var(--fdSlide_Tile_Indicator_Ative_Dot_Size,.25rem);
+  max-height: .25rem;
+  max-height: var(--fdSlide_Tile_Indicator_Ative_Dot_Size,.25rem);
+  width: .25rem;
+  width: var(--fdSlide_Tile_Indicator_Ative_Dot_Size,.25rem);
+  min-width: .25rem;
+  min-width: var(--fdSlide_Tile_Indicator_Ative_Dot_Size,.25rem);
+  max-width: .25rem;
+  max-width: var(--fdSlide_Tile_Indicator_Ative_Dot_Size,.25rem);
+  background-color: var(--sapContent_NonInteractiveIconColor,#6a6d70);
+  background-color: var(--fdSlide_Tile_Indicator_Active_Dot_Color,var(--sapContent_NonInteractiveIconColor,#6a6d70));
+  border: solid .0625rem var(--sapContent_NonInteractiveIconColor,#6a6d70);
+  border: var(--fdSlide_Tile_Indicator_Active_Dot_Border,solid .0625rem var(--sapContent_NonInteractiveIconColor,#6a6d70))
 }
 .fd-tile--slide .fd-tile__dot:last-child {
   margin: 0
@@ -29458,12 +30093,12 @@
   display: none
 }
 .fd-tile--action .fd-tile__action-close {
-  height: 2rem;
-  min-height: 2rem;
-  max-height: 2rem;
-  width: 2rem;
-  min-width: 2rem;
-  max-width: 2rem;
+  height: auto;
+  min-height: auto;
+  max-height: none;
+  width: auto;
+  min-width: auto;
+  max-width: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29478,28 +30113,6 @@
   top: -.375rem;
   right: -.375rem;
   z-index: 5
-}
-.fd-tile--action .fd-tile__action-close.is-focus,
-.fd-tile--action .fd-tile__action-close:focus {
-  outline: 0
-}
-.fd-tile--action .fd-tile__action-close.is-focus::after,
-.fd-tile--action .fd-tile__action-close:focus::after {
-  content: '';
-  width: 1.5rem;
-  height: 1.5rem;
-  top: -.0625rem;
-  left: .4375rem;
-  right: 0;
-  bottom: 0;
-  z-index: 3
-}
-.fd-tile--action .fd-tile__action-close.is-focus[dir=rtl]::after,
-.fd-tile--action .fd-tile__action-close:focus[dir=rtl]::after,
-[dir=rtl] .fd-tile--action .fd-tile__action-close.is-focus::after,
-[dir=rtl] .fd-tile--action .fd-tile__action-close:focus::after {
-  left: 0;
-  right: .4375rem
 }
 .fd-tile--action .fd-tile__action-close[dir=rtl],
 [dir=rtl] .fd-tile--action .fd-tile__action-close {
@@ -29541,13 +30154,35 @@
 }
 .fd-tile--action .fd-tile__action-close [class*=sap-icon]::before,
 .fd-tile--action .fd-tile__action-close[class*=sap-icon]::before {
-  width: auto;
-  height: auto
+  height: 2rem;
+  min-height: 2rem;
+  max-height: 2rem;
+  width: 2rem;
+  min-width: 2rem;
+  max-width: 2rem;
+  top: 0;
+  right: 0;
+  left: auto;
+  bottom: auto
+}
+.fd-tile--action .fd-tile__action-close [class*=sap-icon]::before[dir=rtl],
+.fd-tile--action .fd-tile__action-close[class*=sap-icon]::before[dir=rtl],
+[dir=rtl] .fd-tile--action .fd-tile__action-close [class*=sap-icon]::before,
+[dir=rtl] .fd-tile--action .fd-tile__action-close[class*=sap-icon]::before {
+  right: auto;
+  left: 0
 }
 .fd-tile--action .fd-tile__action-close.is-focus,
 .fd-tile--action .fd-tile__action-close:focus {
   z-index: 5;
-  outline: 0
+  outline: .0625rem dotted #000;
+  outline: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000);
+  outline-offset: -.0625rem
+}
+.fd-tile--action .fd-tile__action-close.is-focus.fd-tile--toggled,
+.fd-tile--action .fd-tile__action-close:focus.fd-tile--toggled {
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
 .fd-tile--action .fd-tile__action-close::-moz-focus-inner {
   border: 0
@@ -29600,27 +30235,6 @@
 .fd-tile--action .fd-tile__action-indicator:active {
   background: 0 0;
   border-color: transparent
-}
-.fd-tile--action .fd-tile__action-close.is-active.is-focus,
-.fd-tile--action .fd-tile__action-close.is-active:focus,
-.fd-tile--action .fd-tile__action-close:active.is-focus,
-.fd-tile--action .fd-tile__action-close:active:focus,
-.fd-tile--action .fd-tile__action-indicator.is-active.is-focus,
-.fd-tile--action .fd-tile__action-indicator.is-active:focus,
-.fd-tile--action .fd-tile__action-indicator:active.is-focus,
-.fd-tile--action .fd-tile__action-indicator:active:focus {
-  z-index: 5
-}
-.fd-tile--action .fd-tile__action-close.is-active.is-focus::after,
-.fd-tile--action .fd-tile__action-close.is-active:focus::after,
-.fd-tile--action .fd-tile__action-close:active.is-focus::after,
-.fd-tile--action .fd-tile__action-close:active:focus::after,
-.fd-tile--action .fd-tile__action-indicator.is-active.is-focus::after,
-.fd-tile--action .fd-tile__action-indicator.is-active:focus::after,
-.fd-tile--action .fd-tile__action-indicator:active.is-focus::after,
-.fd-tile--action .fd-tile__action-indicator:active:focus::after {
-  border-color: #000;
-  border-color: var(--sapContent_FocusColor,#000)
 }
 .fd-tile--action.fd-tile--slide .fd-tile__action-indicator [class*=sap-icon],
 .fd-tile--action.fd-tile--slide .fd-tile__action-indicator[class*=sap-icon] {
@@ -29914,29 +30528,17 @@
 .fd-tile--line.fd-tile--action .fd-tile__action-close:focus,
 .fd-tile--line.fd-tile--action .fd-tile__action-indicator.is-focus,
 .fd-tile--line.fd-tile--action .fd-tile__action-indicator:focus {
-  z-index: 5
+  z-index: 5;
+  outline: .0625rem dotted #000;
+  outline: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000);
+  outline-offset: 0
 }
-.fd-tile--line.fd-tile--action .fd-tile__action-close.is-focus::after,
-.fd-tile--line.fd-tile--action .fd-tile__action-close:focus::after,
-.fd-tile--line.fd-tile--action .fd-tile__action-indicator.is-focus::after,
-.fd-tile--line.fd-tile--action .fd-tile__action-indicator:focus::after {
-  content: "";
-  position: absolute;
-  width: auto;
-  height: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: .0625rem dotted #000;
-  border: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000)
-}
-.fd-tile--line.fd-tile--action .fd-tile__action-close.is-focus.fd-tile--toggled::after,
-.fd-tile--line.fd-tile--action .fd-tile__action-close:focus.fd-tile--toggled::after,
-.fd-tile--line.fd-tile--action .fd-tile__action-indicator.is-focus.fd-tile--toggled::after,
-.fd-tile--line.fd-tile--action .fd-tile__action-indicator:focus.fd-tile--toggled::after {
-  border: .0625rem dotted #fff;
-  border: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_ContrastFocusColor,#fff)
+.fd-tile--line.fd-tile--action .fd-tile__action-close.is-focus.fd-tile--toggled,
+.fd-tile--line.fd-tile--action .fd-tile__action-close:focus.fd-tile--toggled,
+.fd-tile--line.fd-tile--action .fd-tile__action-indicator.is-focus.fd-tile--toggled,
+.fd-tile--line.fd-tile--action .fd-tile__action-indicator:focus.fd-tile--toggled {
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
 .fd-tile--line .fd-badge {
   position: relative;
@@ -29954,6 +30556,144 @@
   margin-right: 0;
   left: 0;
   right: 0
+}
+.fd-dialog,
+.fd-message-box {
+  position: fixed;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
+.fd-dialog::before,
+.fd-message-box::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background-color: var(--sapBlockLayer_Background,#000);
+  opacity: .8;
+  opacity: var(--fdDialog_Background_Opacity,.8)
+}
+.fd-dialog__content,
+.fd-message-box__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  outline: 0;
+  overflow: hidden;
+  position: absolute;
+  min-width: 20rem;
+  min-height: 7.5rem;
+  max-width: calc(100vw - 10%);
+  max-height: calc(100vh - 6%);
+  -webkit-box-shadow: 0 0 0 0.0625rem rgba(0,0,0,0.42),0 1.25rem 5rem 0 rgba(0,0,0,0.3);
+  -webkit-box-shadow: var(--sapContent_Shadow3,0 0 0 .0625rem rgba(0,0,0,.42),0 1.25rem 5rem 0 rgba(0,0,0,.3));
+  box-shadow: 0 0 0 0.0625rem rgba(0,0,0,0.42),0 1.25rem 5rem 0 rgba(0,0,0,0.3);
+  box-shadow: var(--sapContent_Shadow3,0 0 0 .0625rem rgba(0,0,0,.42),0 1.25rem 5rem 0 rgba(0,0,0,.3));
+  border-radius: .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem)
+}
+.fd-dialog__body,
+.fd-message-box__body {
+  overflow: auto;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  background-color: #fff;
+  background-color: var(--sapGroup_ContentBackground,#fff)
+}
+.fd-dialog__footer.fd-bar,
+.fd-dialog__header.fd-bar,
+.fd-dialog__subheader.fd-bar,
+.fd-message-box__footer.fd-bar,
+.fd-message-box__header.fd-bar {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  -ms-flex-negative: 0;
+  flex-shrink: 0
+}
+.fd-dialog__content--mobile,
+.fd-message-box__content--mobile {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  border-radius: 0
+}
+.fd-message-box__title,
+.fd-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1rem
+}
+.fd-title {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: #32363a;
+  color: var(--sapTextColor,#32363a)
+}
+.fd-title::after,
+.fd-title::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-title--h1 {
+  font-size: 2.25rem;
+  font-size: var(--sapFontHeader1Size,2.25rem)
+}
+.fd-title--h2 {
+  font-size: 1.5rem;
+  font-size: var(--sapFontHeader2Size,1.5rem)
+}
+.fd-title--h3 {
+  font-size: 1.25rem;
+  font-size: var(--sapFontHeader3Size,1.25rem)
+}
+.fd-title--h4 {
+  font-size: 1.125rem;
+  font-size: var(--sapFontHeader4Size,1.125rem)
+}
+.fd-title--h5 {
+  font-size: 1rem;
+  font-size: var(--sapFontHeader5Size,1rem)
+}
+.fd-title--h6 {
+  font-size: .875rem;
+  font-size: var(--sapFontHeader6Size,.875rem)
+}
+.fd-title--wrap {
+  overflow: auto;
+  white-space: normal;
+  text-overflow: initial
 }
 .fd-time {
   font-size: .875rem;
@@ -33766,7 +34506,11 @@
   background-color: #fff;
   background-color: var(--sapField_InvalidBackground,#fff);
   border-color: #bb0000;
-  border-color: var(--sapField_InvalidColor,#b00)
+  border-color: var(--sapField_InvalidColor,#b00);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-step-input.is-error.is-hover,
 .fd-step-input.is-error:hover {
@@ -33780,7 +34524,11 @@
   background-color: #fff;
   background-color: var(--sapField_WarningBackground,#fff);
   border-color: #e9730c;
-  border-color: var(--sapField_WarningColor,#e9730c)
+  border-color: var(--sapField_WarningColor,#e9730c);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-step-input.is-alert.is-hover,
 .fd-step-input.is-alert:hover,
@@ -33821,7 +34569,9 @@
 .fd-step-input.is-error,
 .fd-step-input.is-information,
 .fd-step-input.is-warning {
-  border-width: .125rem
+  border-width: .125rem;
+  border-style: dashed;
+  border-style: var(--fdInput_State_Border_Type,dashed)
 }
 .fd-step-input.is-alert.is-focus,
 .fd-step-input.is-alert:focus,
@@ -34114,6 +34864,26 @@
   max-height: 20rem;
   margin: 0;
   padding: .3125rem .5rem
+}
+.fd-feed-input .fd-feed-input__textarea::-webkit-input-placeholder {
+  font-style: normal;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,normal)
+}
+.fd-feed-input .fd-feed-input__textarea::-moz-placeholder {
+  font-style: normal;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,normal)
+}
+.fd-feed-input .fd-feed-input__textarea:-ms-input-placeholder {
+  font-style: normal;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,normal)
+}
+.fd-feed-input .fd-feed-input__textarea::-ms-input-placeholder {
+  font-style: normal;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,normal)
+}
+.fd-feed-input .fd-feed-input__textarea::placeholder {
+  font-style: normal;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,normal)
 }
 .fd-feed-input .fd-feed-input__submit-button {
   margin-top: auto;

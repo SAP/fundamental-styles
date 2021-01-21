@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 /*!
@@ -80,4 +80,70 @@
 [dir=rtl] .fd-button-split > [class*="--emphasized"]:first-child {
   margin-right: 0;
   margin-left: .0625rem
+}
+.fd-button-split > :first-child:hover .fd-button-split__text {
+  color: #000;
+  color: var(--sapButton_TextColor,#000)
+}
+.fd-button-split > :first-child:active .fd-button-split__text {
+  color: #000;
+  color: var(--sapButton_Selected_TextColor,#000)
+}
+.fd-button-split--emphasized > [class*="--emphasized"] > .fd-button-split__text {
+  color: #000;
+  color: var(--sapButton_Emphasized_TextColor,#000);
+  font-weight: 700
+}
+.fd-button-split--emphasized > [class*="--emphasized"]:hover > .fd-button-split__text {
+  color: #000;
+  color: var(--sapButton_Emphasized_Hover_TextColor,#000)
+}
+.fd-button-split--emphasized > [class*="--emphasized"]:active > .fd-button-split__text {
+  color: #000;
+  color: var(--sapButton_Selected_TextColor,#000)
+}
+.fd-button-split--transparent > [class*="--transparent"] > .fd-button-split__text {
+  color: #000;
+  color: var(--sapButton_TextColor,#000)
+}
+.fd-button-split--transparent > [class*="--transparent"]:hover > .fd-button-split__text {
+  color: #000;
+  color: var(--sapButton_TextColor,#000)
+}
+.fd-button-split--transparent > [class*="--transparent"]:active > .fd-button-split__text {
+  color: #000;
+  color: var(--sapButton_Selected_TextColor,#000)
+}
+.fd-button-split .fd-button-split__text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #000;
+  color: var(--sapButton_TextColor,#000);
+  max-width: 9.75rem;
+  display: block
+}
+.fd-button-split .fd-button-split__text::after,
+.fd-button-split .fd-button-split__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-button-split .fd-button-split__text--compact {
+  max-width: 10rem
 }

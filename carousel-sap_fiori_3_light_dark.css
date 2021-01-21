@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 .fd-carousel {
@@ -321,36 +321,20 @@
 }
 .fd-carousel__button.fd-button.is-focus,
 .fd-carousel__button.fd-button:focus {
-  z-index: 5
+  z-index: 5;
+  outline-offset: .0625rem
 }
-.fd-carousel__button.fd-button.is-focus::after,
-.fd-carousel__button.fd-button:focus::after {
-  top: -.125rem;
-  bottom: -.125rem;
-  left: -.125rem;
-  right: -.125rem
+.fd-carousel__button.fd-button.is-active,
+.fd-carousel__button.fd-button:active {
+  outline: .0625rem dotted #fff;
+  outline: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#fff);
+  outline-offset: -.1875rem;
+  outline-offset: .0625rem
 }
-.fd-carousel__button.fd-button.is-active::after,
-.fd-carousel__button.fd-button:active::after {
-  content: "";
-  position: absolute;
-  width: auto;
-  height: auto;
-  top: .0625rem;
-  left: .0625rem;
-  right: .0625rem;
-  bottom: .0625rem;
-  border: .0625rem dotted #fff;
-  border: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#fff);
-  top: -.125rem;
-  bottom: -.125rem;
-  left: -.125rem;
-  right: -.125rem
-}
-.fd-carousel__button.fd-button.is-active.fd-carousel--toggled::after,
-.fd-carousel__button.fd-button:active.fd-carousel--toggled::after {
-  border: .0625rem dotted #000;
-  border: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_ContrastFocusColor,#000)
+.fd-carousel__button.fd-button.is-active.fd-carousel--toggled,
+.fd-carousel__button.fd-button:active.fd-carousel--toggled {
+  outline-color: #000;
+  outline-color: var(--sapContent_ContrastFocusColor,#000)
 }
 .fd-carousel--no-navigation .fd-carousel__button.fd-button {
   display: none

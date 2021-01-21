@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 .fd-page {
@@ -139,10 +139,11 @@
 }
 .fd-page--list {
   background: #fff;
-  background: var(--sapGroup_ContentBackground,#fff)
+  background: var(--fdPage_List_Background,var(--sapGroup_ContentBackground,#fff))
 }
 .fd-page--transparent {
-  background: 0 0
+  background: transparent;
+  background: var(--fdPage_Transparent_Background,transparent)
 }
 .fd-page--home.fd-page__content--S {
   font-size: .875rem;

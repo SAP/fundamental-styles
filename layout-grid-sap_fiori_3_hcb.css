@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 /*!
@@ -413,11 +413,15 @@
   .fd-container .fd-row + .fd-row {
     margin-top: 0
   }
-  .fd-container--no-gap {
+  .fd-container--no-horizontal-gap .fd-col {
+    padding-left: 0;
+    padding-right: 0
+  }
+  .fd-container--no-vertical-gap {
     margin: 0
   }
-  .fd-container--no-gap .fd-col {
-    padding: 0
+  .fd-container--no-vertical-gap .fd-col {
+    padding-top: 0
   }
   .fd-row {
     margin-bottom: 0

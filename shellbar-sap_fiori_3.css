@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 .fd-shellbar {
@@ -109,10 +109,6 @@
   -webkit-box-ordinal-group: 4;
   -ms-flex-order: 3;
   order: 3
-}
-.fd-shellbar__group .fd-shellbar__avatar--circle {
-  border: .0625rem solid #7996b4;
-  border: .0625rem solid var(--sapShell_InteractiveBorderColor,#7996b4)
 }
 .fd-shellbar__subtitle,
 .fd-shellbar__title {
@@ -313,27 +309,17 @@
 }
 .fd-shellbar .fd-button.fd-shellbar__button.is-focus,
 .fd-shellbar .fd-button.fd-shellbar__button:focus {
-  z-index: 5
-}
-.fd-shellbar .fd-button.fd-shellbar__button.is-focus::after,
-.fd-shellbar .fd-button.fd-shellbar__button:focus::after {
-  content: "";
-  position: absolute;
-  width: auto;
-  height: auto;
-  top: .0625rem;
-  left: .0625rem;
-  right: .0625rem;
-  bottom: .0625rem;
-  border: .0625rem dotted #000;
-  border: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000);
+  z-index: 5;
+  outline: .0625rem dotted #000;
+  outline: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000);
+  outline-offset: -.1875rem;
   border-color: #fff;
   border-color: var(--sapContent_ContrastFocusColor,#fff)
 }
-.fd-shellbar .fd-button.fd-shellbar__button.is-focus.fd-shellbar--toggled::after,
-.fd-shellbar .fd-button.fd-shellbar__button:focus.fd-shellbar--toggled::after {
-  border: .0625rem dotted #fff;
-  border: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_ContrastFocusColor,#fff)
+.fd-shellbar .fd-button.fd-shellbar__button.is-focus.fd-shellbar--toggled,
+.fd-shellbar .fd-button.fd-shellbar__button:focus.fd-shellbar--toggled {
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
 .fd-shellbar .fd-button.fd-shellbar__button.is-active,
 .fd-shellbar .fd-button.fd-shellbar__button:active {

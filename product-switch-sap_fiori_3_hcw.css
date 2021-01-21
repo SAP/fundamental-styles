@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 .drag-placeholder {
@@ -175,7 +175,11 @@
   background-color: #fff;
   background-color: var(--sapList_Background,#fff);
   border-radius: .25rem;
-  border-radius: var(--sapElement_BorderCornerRadius,.25rem)
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  -webkit-box-shadow: 0 0 0 .0625rem #000;
+  -webkit-box-shadow: var(--fdProductSwitch_Shadow,var(--sapContent_Shadow0,0 0 0 .0625rem #000));
+  box-shadow: 0 0 0 .0625rem #000;
+  box-shadow: var(--fdProductSwitch_Shadow,var(--sapContent_Shadow0,0 0 0 .0625rem #000))
 }
 .fd-product-switch__item::after,
 .fd-product-switch__item::before {
@@ -193,48 +197,104 @@
   background-color: #fff;
   background-color: var(--sapList_Background,#fff)
 }
+.fd-product-switch__item.is-hover,
+.fd-product-switch__item:hover {
+  background-color: #ec8b46;
+  background-color: var(--sapList_Hover_Background,#ec8b46);
+  border: .125rem solid #000;
+  border: var(--fdProductSwitch_Border,.125rem solid var(--sapList_SelectionBorderColor,#000));
+  cursor: pointer
+}
+.fd-product-switch__item.is-hover .fd-product-switch__title::after,
+.fd-product-switch__item.is-hover .fd-product-switch__title::before,
+.fd-product-switch__item:hover .fd-product-switch__title::after,
+.fd-product-switch__item:hover .fd-product-switch__title::before {
+  background-color: #ec8b46;
+  background-color: var(--sapList_Hover_Background,#ec8b46)
+}
+.fd-product-switch__item.is-active,
+.fd-product-switch__item:active {
+  background-color: #ec8b46;
+  background-color: var(--sapList_Active_Background,#ec8b46);
+  border: .125rem solid #000;
+  border: var(--fdProductSwitch_Border,.125rem solid var(--sapList_SelectionBorderColor,#000))
+}
+.fd-product-switch__item.is-active .fd-product-switch__subtitle,
+.fd-product-switch__item.is-active .fd-product-switch__title,
+.fd-product-switch__item:active .fd-product-switch__subtitle,
+.fd-product-switch__item:active .fd-product-switch__title {
+  color: #000;
+  color: var(--sapList_Active_TextColor,#000)
+}
+.fd-product-switch__item.is-active .fd-product-switch__icon [class*=sap-icon],
+.fd-product-switch__item.is-active .fd-product-switch__icon[class*=sap-icon],
+.fd-product-switch__item:active .fd-product-switch__icon [class*=sap-icon],
+.fd-product-switch__item:active .fd-product-switch__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--sapList_Active_TextColor,#000)
+}
+.fd-product-switch__item.is-active .fd-product-switch__title::after,
+.fd-product-switch__item.is-active .fd-product-switch__title::before,
+.fd-product-switch__item:active .fd-product-switch__title::after,
+.fd-product-switch__item:active .fd-product-switch__title::before {
+  background-color: #ec8b46;
+  background-color: var(--sapList_Active_Background,#ec8b46)
+}
+.fd-product-switch__item.is-active.is-hover .fd-product-switch__title::after,
+.fd-product-switch__item.is-active.is-hover .fd-product-switch__title::before,
+.fd-product-switch__item.is-active:hover .fd-product-switch__title::after,
+.fd-product-switch__item.is-active:hover .fd-product-switch__title::before,
+.fd-product-switch__item:active.is-hover .fd-product-switch__title::after,
+.fd-product-switch__item:active.is-hover .fd-product-switch__title::before,
+.fd-product-switch__item:active:hover .fd-product-switch__title::after,
+.fd-product-switch__item:active:hover .fd-product-switch__title::before {
+  background-color: #ec8b46;
+  background-color: var(--sapList_Active_Background,#ec8b46)
+}
 .fd-product-switch__item.selected {
   background-color: #8fb5ff;
   background-color: var(--sapList_SelectionBackgroundColor,#8fb5ff);
-  -webkit-box-shadow: 0 0 0 .125rem #000;
-  -webkit-box-shadow: 0 0 0 .125rem var(--sapList_SelectionBorderColor,#000);
-  box-shadow: 0 0 0 .125rem #000;
-  box-shadow: 0 0 0 .125rem var(--sapList_SelectionBorderColor,#000)
+  border: .125rem solid #000;
+  border: .125rem solid var(--sapList_SelectionBorderColor,#000)
 }
 .fd-product-switch__item.selected .fd-product-switch__title::after,
 .fd-product-switch__item.selected .fd-product-switch__title::before {
   background-color: #8fb5ff;
   background-color: var(--sapList_SelectionBackgroundColor,#8fb5ff)
 }
+.fd-product-switch__item.selected.is-hover,
 .fd-product-switch__item.selected:hover {
   background-color: #ec8b46;
   background-color: var(--sapList_Hover_SelectionBackground,#ec8b46)
 }
+.fd-product-switch__item.selected.is-hover .fd-product-switch__title::after,
+.fd-product-switch__item.selected.is-hover .fd-product-switch__title::before,
 .fd-product-switch__item.selected:hover .fd-product-switch__title::after,
 .fd-product-switch__item.selected:hover .fd-product-switch__title::before {
   background-color: #ec8b46;
   background-color: var(--sapList_Hover_SelectionBackground,#ec8b46)
 }
+.fd-product-switch__item.selected.is-active,
 .fd-product-switch__item.selected:active {
   background-color: #ec8b46;
   background-color: var(--sapList_Active_Background,#ec8b46)
 }
+.fd-product-switch__item.selected.is-active .fd-product-switch__title::after,
+.fd-product-switch__item.selected.is-active .fd-product-switch__title::before,
 .fd-product-switch__item.selected:active .fd-product-switch__title::after,
 .fd-product-switch__item.selected:active .fd-product-switch__title::before {
   background-color: #ec8b46;
   background-color: var(--sapList_Active_Background,#ec8b46)
 }
-.fd-product-switch__item.selected:focus {
-  -webkit-box-shadow: none;
-  box-shadow: none
-}
+.fd-product-switch__item.is-focus,
 .fd-product-switch__item:focus {
-  outline: 0;
-  border: .0625rem dotted;
-  border-color: #000;
-  border-color: var(--sapContent_FocusColor,#000);
-  border-radius: .25rem;
-  border-radius: var(--sapElement_BorderCornerRadius,.25rem)
+  outline-offset: -.1875rem;
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
 }
 .fd-product-switch__item.dragged {
   background-color: #fff;
@@ -275,42 +335,9 @@
   box-shadow: 0 .25rem 2rem 0 rgba(0,0,0,.6),0 0 0 .125rem #000;
   box-shadow: var(--sapContent_Shadow2,0 .25rem 2rem 0 rgba(0,0,0,.6),0 0 0 .125rem #000)
 }
-.fd-product-switch__item.dragged:focus {
+.fd-product-switch__item.dragged.is-hover,
+.fd-product-switch__item.dragged:hover {
   outline: 0
-}
-.fd-product-switch__item:hover {
-  background-color: #ec8b46;
-  background-color: var(--sapList_Hover_Background,#ec8b46);
-  cursor: pointer
-}
-.fd-product-switch__item:hover .fd-product-switch__title::after,
-.fd-product-switch__item:hover .fd-product-switch__title::before {
-  background-color: #ec8b46;
-  background-color: var(--sapList_Hover_Background,#ec8b46)
-}
-.fd-product-switch__item:active {
-  background-color: #ec8b46;
-  background-color: var(--sapList_Active_Background,#ec8b46)
-}
-.fd-product-switch__item:active .fd-product-switch__subtitle,
-.fd-product-switch__item:active .fd-product-switch__title {
-  color: #000;
-  color: var(--sapList_Active_TextColor,#000)
-}
-.fd-product-switch__item:active .fd-product-switch__icon [class*=sap-icon],
-.fd-product-switch__item:active .fd-product-switch__icon[class*=sap-icon] {
-  color: #000;
-  color: var(--sapList_Active_TextColor,#000)
-}
-.fd-product-switch__item:active .fd-product-switch__title::after,
-.fd-product-switch__item:active .fd-product-switch__title::before {
-  background-color: #ec8b46;
-  background-color: var(--sapList_Active_Background,#ec8b46)
-}
-.fd-product-switch__item:active:hover .fd-product-switch__title::after,
-.fd-product-switch__item:active:hover .fd-product-switch__title::before {
-  background-color: #ec8b46;
-  background-color: var(--sapList_Active_Background,#ec8b46)
 }
 .fd-product-switch__icon [class*=sap-icon],
 .fd-product-switch__icon[class*=sap-icon] {
@@ -395,6 +422,8 @@
   font-size: inherit
 }
 .fd-product-switch__title:last-child {
+  margin-bottom: 0;
+  margin-right: 0;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -542,11 +571,15 @@
   background-color: #fff;
   background-color: var(--sapTile_Background,#fff)
 }
+.fd-product-switch__body--mobile .fd-product-switch__item.is-hover .fd-product-switch__title::after,
+.fd-product-switch__body--mobile .fd-product-switch__item.is-hover .fd-product-switch__title::before,
 .fd-product-switch__body--mobile .fd-product-switch__item:hover .fd-product-switch__title::after,
 .fd-product-switch__body--mobile .fd-product-switch__item:hover .fd-product-switch__title::before {
   background-color: #ec8b46;
   background-color: var(--sapList_Hover_Background,#ec8b46)
 }
+.fd-product-switch__body--mobile .fd-product-switch__item.is-active .fd-product-switch__title::after,
+.fd-product-switch__body--mobile .fd-product-switch__item.is-active .fd-product-switch__title::before,
 .fd-product-switch__body--mobile .fd-product-switch__item:active .fd-product-switch__title::after,
 .fd-product-switch__body--mobile .fd-product-switch__item:active .fd-product-switch__title::before {
   background-color: #000;
@@ -563,27 +596,40 @@
   background-color: #000;
   background-color: var(--sapList_SelectionBorderColor,#000)
 }
+.fd-product-switch__body--mobile .fd-product-switch__item.selected.is-hover .fd-product-switch__title::after,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected.is-hover .fd-product-switch__title::before,
 .fd-product-switch__body--mobile .fd-product-switch__item.selected:hover .fd-product-switch__title::after,
 .fd-product-switch__body--mobile .fd-product-switch__item.selected:hover .fd-product-switch__title::before {
   background-color: #ec8b46;
   background-color: var(--sapList_Hover_SelectionBackground,#ec8b46)
 }
+.fd-product-switch__body--mobile .fd-product-switch__item.selected.is-active .fd-product-switch__title::after,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected.is-active .fd-product-switch__title::before,
 .fd-product-switch__body--mobile .fd-product-switch__item.selected:active .fd-product-switch__title::after,
 .fd-product-switch__body--mobile .fd-product-switch__item.selected:active .fd-product-switch__title::before {
   background-color: #ec8b46;
   background-color: var(--sapList_Active_Background,#ec8b46)
 }
+.fd-product-switch__body--mobile .fd-product-switch__item.selected.is-active.is-hover .fd-product-switch__title::after,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected.is-active.is-hover .fd-product-switch__title::before,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected.is-active:hover .fd-product-switch__title::after,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected.is-active:hover .fd-product-switch__title::before,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected:active.is-hover .fd-product-switch__title::after,
+.fd-product-switch__body--mobile .fd-product-switch__item.selected:active.is-hover .fd-product-switch__title::before,
 .fd-product-switch__body--mobile .fd-product-switch__item.selected:active:hover .fd-product-switch__title::after,
 .fd-product-switch__body--mobile .fd-product-switch__item.selected:active:hover .fd-product-switch__title::before {
   background-color: #ec8b46;
   background-color: var(--sapList_Active_Background,#ec8b46)
 }
+.fd-product-switch__body--mobile .fd-product-switch__item.is-focus,
 .fd-product-switch__body--mobile .fd-product-switch__item:focus {
-  outline: 0;
-  border: .0625rem dotted;
-  border-color: #000;
-  border-color: var(--sapContent_FocusColor,#000);
-  border-radius: 0
+  outline-offset: -.1875rem;
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
 }
 .fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__title::after,
 .fd-product-switch__body--mobile .fd-product-switch__item .fd-product-switch__title::before {
@@ -662,7 +708,9 @@
   z-index: 3;
   display: none
 }
+.fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item.is-active .fd-product-switch__subtitle,
 .fd-product-switch__body--mobile[dir=rtl] .fd-product-switch__item:active .fd-product-switch__subtitle,
+[dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item.is-active .fd-product-switch__subtitle,
 [dir=rtl] .fd-product-switch__body--mobile .fd-product-switch__item:active .fd-product-switch__subtitle {
   color: #000;
   color: var(--sapList_Active_TextColor,#000)

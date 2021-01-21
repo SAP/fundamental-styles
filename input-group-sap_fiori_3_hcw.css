@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 /*!
@@ -72,7 +72,11 @@
   background-color: #ec8b46;
   background-color: var(--sapField_InvalidBackground,#ec8b46);
   border-color: #000;
-  border-color: var(--sapField_InvalidColor,#000)
+  border-color: var(--sapField_InvalidColor,#000);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-input-group.is-error.is-hover,
 .fd-input-group.is-error:hover {
@@ -86,7 +90,11 @@
   background-color: #fff;
   background-color: var(--sapField_WarningBackground,#fff);
   border-color: #000;
-  border-color: var(--sapField_WarningColor,#000)
+  border-color: var(--sapField_WarningColor,#000);
+  font-style: italic;
+  font-style: var(--fdInput_State_Text_Style,italic);
+  font-weight: bold;
+  font-weight: var(--fdInput_State_Font_Weight,bold)
 }
 .fd-input-group.is-alert.is-hover,
 .fd-input-group.is-alert:hover,
@@ -127,7 +135,9 @@
 .fd-input-group.is-error,
 .fd-input-group.is-information,
 .fd-input-group.is-warning {
-  border-width: .125rem
+  border-width: .125rem;
+  border-style: dashed;
+  border-style: var(--fdInput_State_Border_Type,dashed)
 }
 .fd-input-group.is-alert.is-focus,
 .fd-input-group.is-alert:focus,
@@ -331,8 +341,7 @@
   text-overflow: ellipsis;
   color: #000;
   color: var(--sapContent_NonInteractiveIconColor,#000);
-  background-color: #fff;
-  background-color: var(--sapField_Background,#fff);
+  background: 0 0!important;
   font-size: 1rem;
   font-size: var(--sapFontLargeSize,1rem);
   min-width: 2.25rem;
@@ -404,7 +413,17 @@
   overflow: hidden;
   text-overflow: ellipsis;
   border: none;
-  width: 100%
+  width: 100%;
+  z-index: auto!important;
+  position: static!important
+}
+.fd-input-group__button.is-focus,
+.fd-input-group__button:focus {
+  z-index: 5;
+  outline: 0!important
+}
+.fd-input-group__button::before {
+  display: none!important
 }
 .fd-input-group .fd-button.fd-input-group__button {
   border-color: transparent
@@ -426,6 +445,32 @@
   outline-style: var(--sapContent_FocusStyle,dotted);
   outline-color: #000;
   outline-color: var(--sapContent_ContrastFocusColor,#000)
+}
+.fd-input-group--control.is-hover .fd-input-group__button,
+.fd-input-group--control:hover .fd-input-group__button {
+  border-left: solid .0625rem #000;
+  border-left: var(--fdInputGroup_ControlButton_SideBorder,solid .0625rem var(--sapList_SelectionBorderColor,#000))
+}
+.fd-input-group--control.is-hover .fd-input-group__button[dir=rtl],
+.fd-input-group--control:hover .fd-input-group__button[dir=rtl],
+[dir=rtl] .fd-input-group--control.is-hover .fd-input-group__button,
+[dir=rtl] .fd-input-group--control:hover .fd-input-group__button {
+  border-left: none;
+  border-right: solid .0625rem #000;
+  border-right: var(--fdInputGroup_ControlButton_SideBorder,solid .0625rem var(--sapList_SelectionBorderColor,#000))
+}
+.fd-input-group--control.is-active .fd-input-group__button,
+.fd-input-group--control:active .fd-input-group__button {
+  border-left: solid .0625rem #000;
+  border-left: var(--fdInputGroup_ControlButton_SideBorder,solid .0625rem var(--sapList_SelectionBorderColor,#000))
+}
+.fd-input-group--control.is-active .fd-input-group__button[dir=rtl],
+.fd-input-group--control:active .fd-input-group__button[dir=rtl],
+[dir=rtl] .fd-input-group--control.is-active .fd-input-group__button,
+[dir=rtl] .fd-input-group--control:active .fd-input-group__button {
+  border-left: none;
+  border-right: solid .0625rem #000;
+  border-right: var(--fdInputGroup_ControlButton_SideBorder,solid .0625rem var(--sapList_SelectionBorderColor,#000))
 }
 .fd-input-group .fd-textarea {
   resize: vertical

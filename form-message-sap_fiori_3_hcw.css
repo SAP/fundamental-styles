@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 /*!
@@ -37,10 +37,12 @@
   color: #000;
   color: var(--sapTextColor,#000);
   white-space: pre-line!important;
-  -webkit-box-shadow: 0 0 1rem 0 rgba(0,0,0,.5),0 0 0 .125rem #000;
-  -webkit-box-shadow: var(--sapContent_Shadow1,0 0 1rem 0 rgba(0,0,0,.5),0 0 0 .125rem #000);
-  box-shadow: 0 0 1rem 0 rgba(0,0,0,.5),0 0 0 .125rem #000;
-  box-shadow: var(--sapContent_Shadow1,0 0 1rem 0 rgba(0,0,0,.5),0 0 0 .125rem #000)
+  -webkit-box-shadow: none;
+  -webkit-box-shadow: var(--fdMessage_Box_Shadow,none);
+  box-shadow: none;
+  box-shadow: var(--fdMessage_Box_Shadow,none);
+  border: calc(2 * .0625rem) solid #000;
+  border: var(--fdMessage_Border,calc(2 * var(--sapField_BorderWidth,.0625rem)) solid var(--sapField_BorderColor,#000))
 }
 .fd-form-message::after,
 .fd-form-message::before {

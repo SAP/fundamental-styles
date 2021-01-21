@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 .fd-step-input {
@@ -70,7 +70,11 @@
   background-color: #29313a;
   background-color: var(--sapField_InvalidBackground,#29313a);
   border-color: #f88;
-  border-color: var(--sapField_InvalidColor,#f88)
+  border-color: var(--sapField_InvalidColor,#f88);
+  font-style: normal;
+  font-style: var(--fdInput_State_Text_Style,normal);
+  font-weight: normal;
+  font-weight: var(--fdInput_State_Font_Weight,normal)
 }
 .fd-step-input.is-error.is-hover,
 .fd-step-input.is-error:hover {
@@ -84,7 +88,11 @@
   background-color: #29313a;
   background-color: var(--sapField_WarningBackground,#29313a);
   border-color: #fabd64;
-  border-color: var(--sapField_WarningColor,#fabd64)
+  border-color: var(--sapField_WarningColor,#fabd64);
+  font-style: normal;
+  font-style: var(--fdInput_State_Text_Style,normal);
+  font-weight: normal;
+  font-weight: var(--fdInput_State_Font_Weight,normal)
 }
 .fd-step-input.is-alert.is-hover,
 .fd-step-input.is-alert:hover,
@@ -125,7 +133,9 @@
 .fd-step-input.is-error,
 .fd-step-input.is-information,
 .fd-step-input.is-warning {
-  border-width: .125rem
+  border-width: .125rem;
+  border-style: solid;
+  border-style: var(--fdInput_State_Border_Type,solid)
 }
 .fd-step-input.is-alert.is-focus,
 .fd-step-input.is-alert:focus,

@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 .fd-feed-input {
@@ -65,6 +65,26 @@
   max-height: 20rem;
   margin: 0;
   padding: .3125rem .5rem
+}
+.fd-feed-input .fd-feed-input__textarea::-webkit-input-placeholder {
+  font-style: italic;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic)
+}
+.fd-feed-input .fd-feed-input__textarea::-moz-placeholder {
+  font-style: italic;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic)
+}
+.fd-feed-input .fd-feed-input__textarea:-ms-input-placeholder {
+  font-style: italic;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic)
+}
+.fd-feed-input .fd-feed-input__textarea::-ms-input-placeholder {
+  font-style: italic;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic)
+}
+.fd-feed-input .fd-feed-input__textarea::placeholder {
+  font-style: italic;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic)
 }
 .fd-feed-input .fd-feed-input__submit-button {
   margin-top: auto;

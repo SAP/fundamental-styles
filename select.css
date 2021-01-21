@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 .fd-select {
@@ -47,6 +47,20 @@
   padding: 0;
   margin: 0;
   border: 0;
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -77,8 +91,13 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-right: 0;
-  padding-left: .625rem
+  padding-right: 0
+}
+.fd-select__control::after,
+.fd-select__control::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
 }
 .fd-select__control::after,
 .fd-select__control::before {
@@ -148,7 +167,11 @@
   background-color: #fff;
   background-color: var(--sapField_InvalidBackground,#fff);
   border-color: #b00;
-  border-color: var(--sapField_InvalidColor,#b00)
+  border-color: var(--sapField_InvalidColor,#b00);
+  font-style: normal;
+  font-style: var(--fdInput_State_Text_Style,normal);
+  font-weight: normal;
+  font-weight: var(--fdInput_State_Font_Weight,normal)
 }
 .fd-select__control.is-error.is-hover,
 .fd-select__control.is-error:hover {
@@ -162,7 +185,11 @@
   background-color: #fff;
   background-color: var(--sapField_WarningBackground,#fff);
   border-color: #e9730c;
-  border-color: var(--sapField_WarningColor,#e9730c)
+  border-color: var(--sapField_WarningColor,#e9730c);
+  font-style: normal;
+  font-style: var(--fdInput_State_Text_Style,normal);
+  font-weight: normal;
+  font-weight: var(--fdInput_State_Font_Weight,normal)
 }
 .fd-select__control.is-alert.is-hover,
 .fd-select__control.is-alert:hover,
@@ -203,7 +230,9 @@
 .fd-select__control.is-error,
 .fd-select__control.is-information,
 .fd-select__control.is-warning {
-  border-width: .125rem
+  border-width: .125rem;
+  border-style: solid;
+  border-style: var(--fdInput_State_Border_Type,solid)
 }
 .fd-select__control.is-alert.is-focus,
 .fd-select__control.is-alert:focus,
@@ -304,16 +333,6 @@
 .fd-select__control .fd-select__button:hover {
   border: none
 }
-.fd-select__control.is-focus,
-.fd-select__control:focus {
-  outline-offset: -.1875rem;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
-}
 .fd-select__control.is-hover,
 .fd-select__control:hover {
   background-color: #fff;
@@ -339,7 +358,11 @@
   background-color: #fff;
   background-color: var(--sapField_InvalidBackground,#fff);
   border-color: #b00;
-  border-color: var(--sapField_InvalidColor,#b00)
+  border-color: var(--sapField_InvalidColor,#b00);
+  font-style: normal;
+  font-style: var(--fdInput_State_Text_Style,normal);
+  font-weight: normal;
+  font-weight: var(--fdInput_State_Font_Weight,normal)
 }
 .fd-select__control.is-error.is-hover,
 .fd-select__control.is-error:hover {
@@ -353,7 +376,11 @@
   background-color: #fff;
   background-color: var(--sapField_WarningBackground,#fff);
   border-color: #e9730c;
-  border-color: var(--sapField_WarningColor,#e9730c)
+  border-color: var(--sapField_WarningColor,#e9730c);
+  font-style: normal;
+  font-style: var(--fdInput_State_Text_Style,normal);
+  font-weight: normal;
+  font-weight: var(--fdInput_State_Font_Weight,normal)
 }
 .fd-select__control.is-alert.is-hover,
 .fd-select__control.is-alert:hover,
@@ -394,7 +421,9 @@
 .fd-select__control.is-error,
 .fd-select__control.is-information,
 .fd-select__control.is-warning {
-  border-width: .125rem
+  border-width: .125rem;
+  border-style: solid;
+  border-style: var(--fdInput_State_Border_Type,solid)
 }
 .fd-select__control.is-alert.is-focus,
 .fd-select__control.is-alert:focus,
@@ -475,23 +504,67 @@
 .fd-select__control[readonly]::placeholder {
   color: transparent
 }
+.fd-select__control.is-focus,
+.fd-select__control:focus {
+  z-index: 5;
+  outline: 0
+}
+.fd-select__control.is-focus::before,
+.fd-select__control:focus::before {
+  content: '';
+  top: .1875rem;
+  left: .1875rem;
+  border-width: .0625rem;
+  border-width: var(--sapContent_FocusWidth,.0625rem);
+  border-color: #000;
+  border-color: var(--sapContent_FocusColor,#000);
+  border-style: dotted;
+  border-style: var(--sapContent_FocusStyle,dotted);
+  height: calc(100% - (2 * .1875rem));
+  width: calc(100% - (2 * .1875rem));
+  z-index: 1;
+  position: absolute
+}
 .fd-select__control[dir=rtl],
 [dir=rtl] .fd-select__control {
   text-align: right;
-  padding-right: .625rem;
   padding-left: 0
+}
+.fd-select__control[dir=rtl].is-focus,
+.fd-select__control[dir=rtl]:focus,
+[dir=rtl] .fd-select__control.is-focus,
+[dir=rtl] .fd-select__control:focus {
+  z-index: 5
+}
+.fd-select__control[dir=rtl].is-focus::before,
+.fd-select__control[dir=rtl]:focus::before,
+[dir=rtl] .fd-select__control.is-focus::before,
+[dir=rtl] .fd-select__control:focus::before {
+  right: -.0234375rem
 }
 .fd-select__control.is-hover .fd-select__button,
 .fd-select__control:hover .fd-select__button {
   background-color: #ebf5fe;
-  background-color: var(--sapButton_Lite_Hover_Background,#ebf5fe)
+  background-color: var(--sapButton_Lite_Hover_Background,#ebf5fe);
+  border-left: none;
+  border-left: var(--fdSelect_Button_Interractive_SideBorder,none)
+}
+.fd-select__control.is-hover .fd-select__button[dir=rtl],
+.fd-select__control:hover .fd-select__button[dir=rtl],
+[dir=rtl] .fd-select__control.is-hover .fd-select__button,
+[dir=rtl] .fd-select__control:hover .fd-select__button {
+  border-left: none;
+  border-right: none;
+  border-right: var(--fdSelect_Button_Interractive_SideBorder,none)
 }
 .fd-select__control.is-expanded .fd-select__button,
 .fd-select__control[aria-expanded=true] .fd-select__button {
   background-color: #0854a0;
   background-color: var(--sapButton_Active_Background,#0854a0);
   color: #fff;
-  color: var(--sapButton_Active_TextColor,#fff)
+  color: var(--sapButton_Active_TextColor,#fff);
+  border-left: none;
+  border-left: var(--fdSelect_Button_Interractive_SideBorder,none)
 }
 .fd-select__control.is-expanded .fd-select__button.is-focus,
 .fd-select__control.is-expanded .fd-select__button:focus,
@@ -507,12 +580,22 @@
   outline-color: #fff;
   outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
+.fd-select__control.is-expanded .fd-select__button[dir=rtl],
+.fd-select__control[aria-expanded=true] .fd-select__button[dir=rtl],
+[dir=rtl] .fd-select__control.is-expanded .fd-select__button,
+[dir=rtl] .fd-select__control[aria-expanded=true] .fd-select__button {
+  border-left: none;
+  border-right: none;
+  border-right: var(--fdSelect_Button_Interractive_SideBorder,none)
+}
 .fd-select__control.is-active .fd-select__button,
 .fd-select__control:active .fd-select__button {
   background-color: #0854a0;
   background-color: var(--sapButton_Active_Background,#0854a0);
   color: #fff;
-  color: var(--sapButton_Active_TextColor,#fff)
+  color: var(--sapButton_Active_TextColor,#fff);
+  border-left: none;
+  border-left: var(--fdSelect_Button_Interractive_SideBorder,none)
 }
 .fd-select__control.is-active .fd-select__button.is-focus,
 .fd-select__control.is-active .fd-select__button:focus,
@@ -528,29 +611,70 @@
   outline-color: #fff;
   outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
+.fd-select__control.is-active .fd-select__button[dir=rtl],
+.fd-select__control:active .fd-select__button[dir=rtl],
+[dir=rtl] .fd-select__control.is-active .fd-select__button,
+[dir=rtl] .fd-select__control:active .fd-select__button {
+  border-left: none;
+  border-right: none;
+  border-right: var(--fdSelect_Button_Interractive_SideBorder,none)
+}
 .fd-select__control.is-readonly {
-  padding-right: .625rem;
-  padding-left: .625rem;
   cursor: text
 }
-.fd-select__text {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem)
+.fd-select__control.is-readonly .fd-select__text-content {
+  padding-right: .625rem;
+  padding-left: .625rem
 }
 .fd-select__text-content {
-  min-width: 5rem
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  padding-left: .625rem;
+  min-width: 5.625rem
+}
+.fd-select__text-content::after,
+.fd-select__text-content::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-select__text-content[dir=rtl],
+[dir=rtl] .fd-select__text-content {
+  padding-left: 0;
+  padding-right: .625rem
 }
 .fd-select--compact .fd-select__control {
-  height: 1.625rem;
+  height: 1.625rem
+}
+.fd-select--compact .fd-select__control .fd-select__text-content {
   padding-left: .5rem
 }
 .fd-select--compact .fd-select__control[dir=rtl],
 [dir=rtl] .fd-select--compact .fd-select__control {
   text-align: right;
-  padding-right: .5rem;
   padding-left: 0
 }
-.fd-select--compact .fd-select__control.is-readonly {
+.fd-select--compact .fd-select__control[dir=rtl] .fd-select__text-content,
+[dir=rtl] .fd-select--compact .fd-select__control .fd-select__text-content {
+  padding-left: 0;
+  padding-right: .5rem
+}
+.fd-select--compact .fd-select__control.is-readonly .fd-select__text-content {
   padding-right: .5rem;
   padding-left: .5rem
 }

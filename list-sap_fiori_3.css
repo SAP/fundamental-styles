@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 .fd-list {
@@ -99,20 +99,28 @@
   border: .0625rem dotted #fff;
   border: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_ContrastFocusColor,#fff)
 }
+.fd-list__item--unread .fd-list__title {
+  font-weight: 700
+}
 .fd-list__item--no-data .fd-list__title {
   text-align: center
 }
 .fd-list__item--action {
   padding: 0;
-  text-align: center
+  text-align: center;
+  border-bottom: .0625rem solid #e4e4e4;
+  border-bottom: var(--fdList_Item_Action_Border,var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4));
+  height: 2.75rem;
+  height: var(--fdList_Item_Action_Height,2.75rem)
 }
 .fd-list__item--action:first-child {
   border-top: .0625rem solid #e4e4e4;
-  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-top: var(--fdList_Item_Action_Border,var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4))
 }
 .fd-list__item--action .fd-list__title {
   padding: 0 1rem;
   height: 100%;
+  height: var(--fdList_Item_Action_Button_Size,100%);
   width: 100%;
   background: 0 0;
   color: #0854a0;
@@ -120,7 +128,13 @@
   pointer-events: all;
   cursor: pointer;
   text-shadow: none;
-  text-shadow: var(--fdListBase_Text_Shadow,none)
+  text-shadow: var(--fdListBase_Text_Shadow,none);
+  margin: 0;
+  margin: var(--fdList_Item_Action_Button_Spacing,0);
+  border: none;
+  border: var(--fdList_Item_Action_Button_Border,none);
+  border-radius: 0;
+  border-radius: var(--fdList_Item_Action_Button_Border_Radius,0)
 }
 .fd-list__item--action .fd-list__title.is-hover,
 .fd-list__item--action .fd-list__title:hover {
@@ -597,6 +611,10 @@
 }
 .fd-list--compact .fd-list__item {
   height: 2rem
+}
+.fd-list--compact .fd-list__item.fd-list__item--action .fd-list__title {
+  height: 100%;
+  height: var(--fdList_Item_Action_Button_Size_Compact,100%)
 }
 .fd-list--compact .fd-list__title {
   font-size: .875rem;

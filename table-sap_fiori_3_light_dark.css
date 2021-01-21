@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 /*!
@@ -283,7 +283,9 @@
 .fd-table__row--hoverable.is-hover,
 .fd-table__row--hoverable:hover {
   background-color: #2f3943;
-  background-color: var(--sapList_Hover_Background,#2f3943)
+  background-color: var(--sapList_Hover_Background,#2f3943);
+  color: inherit;
+  color: var(--fdTable_Hover_Down_Color,inherit)
 }
 .fd-table__cell--activable,
 .fd-table__row--activable {
@@ -352,6 +354,10 @@
   outline-color: var(--sapContent_FocusColor,#fff);
   outline-style: dotted;
   outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-table__footer {
+  background-color: #252c34;
+  background-color: var(--sapList_FooterBackground,#252c34)
 }
 .fd-table__footer .fd-table__row {
   border-top: .125rem solid #4b596a;

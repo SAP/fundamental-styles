@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 .fd-flexible-column-layout {
@@ -63,7 +63,7 @@
   width: 1rem;
   min-width: 1rem;
   background-color: #000;
-  background-color: var(--fdFlexibleColumnBackgroundSolid,var(--sapBackgroundColor,#000))
+  background-color: var(--fdFlexibleColumnLayout_Background_Solid,var(--sapBackgroundColor,#000))
 }
 .fd-flexible-column-layout__separator::after,
 .fd-flexible-column-layout__separator::before {
@@ -87,16 +87,16 @@
 .fd-flexible-column-layout__separator::before {
   bottom: calc(50% + 2rem / 2);
   background-image: -webkit-gradient(linear,left bottom,left top,from(#fff),to(transparent));
-  background-image: -webkit-gradient(linear,left bottom,left top,from(var(--fdFlexibleColumnLayoutToggleImageColor,var(--sapObjectHeader_BorderColor,#fff))),to(transparent));
+  background-image: -webkit-gradient(linear,left bottom,left top,from(var(--fdFlexibleColumnLayout_Toggle_Image_Color,var(--sapObjectHeader_BorderColor,#fff))),to(transparent));
   background-image: linear-gradient(to top,#fff,transparent);
-  background-image: linear-gradient(to top,var(--fdFlexibleColumnLayoutToggleImageColor,var(--sapObjectHeader_BorderColor,#fff)),transparent)
+  background-image: linear-gradient(to top,var(--fdFlexibleColumnLayout_Toggle_Image_Color,var(--sapObjectHeader_BorderColor,#fff)),transparent)
 }
 .fd-flexible-column-layout__separator::after {
   top: calc(50% + 2rem / 2);
   background-image: -webkit-gradient(linear,left top,left bottom,from(#fff),to(transparent));
-  background-image: -webkit-gradient(linear,left top,left bottom,from(var(--fdFlexibleColumnLayoutToggleImageColor,var(--sapObjectHeader_BorderColor,#fff))),to(transparent));
+  background-image: -webkit-gradient(linear,left top,left bottom,from(var(--fdFlexibleColumnLayout_Toggle_Image_Color,var(--sapObjectHeader_BorderColor,#fff))),to(transparent));
   background-image: linear-gradient(to bottom,#fff,transparent);
-  background-image: linear-gradient(to bottom,var(--fdFlexibleColumnLayoutToggleImageColor,var(--sapObjectHeader_BorderColor,#fff)),transparent)
+  background-image: linear-gradient(to bottom,var(--fdFlexibleColumnLayout_Toggle_Image_Color,var(--sapObjectHeader_BorderColor,#fff)),transparent)
 }
 .fd-flexible-column-layout__separator.is-hover::after,
 .fd-flexible-column-layout__separator.is-hover::before,
@@ -136,9 +136,9 @@
   border: 0;
   min-width: 20rem;
   border-left: solid .0625rem #fff;
-  border-left: var(--fdFlexibleColumnLayoutBorder,solid .0625rem var(--sapGroup_ContentBorderColor,#fff));
+  border-left: var(--fdFlexibleColumnLayout_Border,solid .0625rem var(--sapGroup_ContentBorderColor,#fff));
   border-right: solid .0625rem #fff;
-  border-right: var(--fdFlexibleColumnLayoutBorder,solid .0625rem var(--sapGroup_ContentBorderColor,#fff));
+  border-right: var(--fdFlexibleColumnLayout_Border,solid .0625rem var(--sapGroup_ContentBorderColor,#fff));
   -webkit-transition: width 560ms cubic-bezier(.1,0,.05,1),visibility 560ms ease-in;
   transition: width 560ms cubic-bezier(.1,0,.05,1),visibility 560ms ease-in
 }
@@ -163,9 +163,9 @@
 }
 .fd-flexible-column-layout--translucent .fd-flexible-column-layout__separator {
   background-color: #000;
-  background-color: var(--fdFlexibleColumnBackgroundTranslucent,var(--sapBackgroundColor,#000))
+  background-color: var(--fdFlexibleColumnLayout_Background_Translucent,var(--sapBackgroundColor,#000))
 }
 .fd-flexible-column-layout--transparent .fd-flexible-column-layout__separator {
   background-color: #000;
-  background-color: var(--fdFlexibleColumnBackgroundTransparent,var(--sapBackgroundColor,#000))
+  background-color: var(--fdFlexibleColumnLayout_Background_Transparent,var(--sapBackgroundColor,#000))
 }

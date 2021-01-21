@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 /*!
@@ -31,7 +31,9 @@
   color: var(--sapTextColor,#000);
   background-color: #fff;
   background-color: var(--sapNeutralBackground,#fff);
-  border: 1px solid;
+  border-width: .125rem;
+  border-width: var(--fdMessageStrip_Border_Width,.125rem);
+  border-style: solid;
   border-color: #000;
   border-color: var(--sapNeutralBorderColor,#000);
   border-radius: .25rem;

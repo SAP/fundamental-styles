@@ -1,7 +1,7 @@
 /*!
- * Fundamental Library Styles v0.14.0
- * Copyright (c) 2020 SAP SE or an SAP affiliate company.
- * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/master/LICENSE)
+ * Fundamental Library Styles v0.15.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 .fd-tile {
@@ -622,10 +622,10 @@
   color: var(--sapButton_Emphasized_TextColor,#fff);
   text-shadow: transparent;
   text-shadow: var(--sapButton_Emphasized_TextShadow,transparent);
-  content: "\e14b"
+  content: '\e14b'
 }
 .fd-tile--slide .fd-tile__toggle--pause::before {
-  content: "\e14c"
+  content: '\e14c'
 }
 .fd-tile--slide .fd-tile__toggle.is-focus,
 .fd-tile--slide .fd-tile__toggle:focus {
@@ -673,8 +673,9 @@
   width: 100%;
   max-width: 100%;
   background-color: #000;
-  background-color: var(--sapBlockLayer_Background,#000);
-  opacity: .8;
+  background-color: var(--fdSlide_Tile_Background_Color,var(--sapTile_Background,#000));
+  opacity: 1;
+  opacity: var(--fdSlide_Tile_Background_Opacity,1);
   padding-top: .25rem;
   padding-left: calc(1rem - .0625rem);
   padding-right: calc(1rem - .0625rem);
@@ -689,16 +690,22 @@
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-tile--slide .fd-tile__footer-text,
-.fd-tile--slide .fd-tile__subtitle,
 .fd-tile--slide .fd-tile__title {
-  color: #fff;
-  color: var(--sapContent_ContrastTextColor,#fff);
-  text-shadow: #fff;
-  text-shadow: var(--sapContent_ContrastShadowColor,#fff);
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
-  line-height: normal
+  line-height: normal;
+  color: #fff;
+  color: var(--sapTile_TitleTextColor,#fff);
+  text-shadow: 0 0 .125rem #fff;
+  text-shadow: 0 0 .125rem var(--sapContent_ShadowColor,#fff)
+}
+.fd-tile--slide .fd-tile__footer-text,
+.fd-tile--slide .fd-tile__subtitle {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: normal;
+  color: #fff;
+  color: var(--sapTile_TextColor,#fff)
 }
 .fd-tile--slide .fd-tile__page-indicator {
   font-size: .875rem;
@@ -753,20 +760,29 @@
   padding: 0;
   margin: 0;
   border: 0;
-  height: .188rem;
-  min-height: .188rem;
-  max-height: .188rem;
-  width: .188rem;
-  min-width: .188rem;
-  max-width: .188rem;
+  height: .25rem;
+  height: var(--fdSlide_Tile_Indicator_Dot_Size,.25rem);
+  min-height: .25rem;
+  min-height: var(--fdSlide_Tile_Indicator_Dot_Size,.25rem);
+  max-height: .25rem;
+  max-height: var(--fdSlide_Tile_Indicator_Dot_Size,.25rem);
+  width: .25rem;
+  width: var(--fdSlide_Tile_Indicator_Dot_Size,.25rem);
+  min-width: .25rem;
+  min-width: var(--fdSlide_Tile_Indicator_Dot_Size,.25rem);
+  max-width: .25rem;
+  max-width: var(--fdSlide_Tile_Indicator_Dot_Size,.25rem);
   border-radius: 50%;
-  background-color: #fff;
-  background-color: var(--sapContent_ContrastTextColor,#fff);
-  -webkit-box-shadow: 0 0 .25rem #fff;
-  -webkit-box-shadow: 0 0 .25rem var(--sapContent_ShadowColor,#fff);
-  box-shadow: 0 0 .25rem #fff;
-  box-shadow: 0 0 .25rem var(--sapContent_ShadowColor,#fff);
-  margin-right: .375rem
+  background-color: #000;
+  background-color: var(--fdSlide_Tile_Indicator_Dot_Color,var(--sapTile_Background,#000));
+  border: solid .0625rem #fff;
+  border: var(--fdSlide_Tile_Indicator_Dot_Border,solid .0625rem var(--sapContent_NonInteractiveIconColor,#fff));
+  -webkit-box-shadow: 0 0 .063rem #fff;
+  -webkit-box-shadow: 0 0 .063rem var(--sapContent_ShadowColor,#fff);
+  box-shadow: 0 0 .063rem #fff;
+  box-shadow: 0 0 .063rem var(--sapContent_ShadowColor,#fff);
+  margin-right: .188rem;
+  margin-right: var(--fdSlide_Tile_Indicator_Dot_Spacing,.188rem)
 }
 .fd-tile--slide .fd-tile__dot::after,
 .fd-tile--slide .fd-tile__dot::before {
@@ -777,17 +793,26 @@
 .fd-tile--slide .fd-tile__dot[dir=rtl],
 [dir=rtl] .fd-tile--slide .fd-tile__dot {
   margin-right: 0;
-  margin-left: .375rem
+  margin-left: .188rem;
+  margin-left: var(--fdSlide_Tile_Indicator_Dot_Spacing,.188rem)
 }
 .fd-tile--slide .fd-tile__dot--active {
-  height: .313rem;
-  min-height: .313rem;
-  max-height: .313rem;
-  width: .313rem;
-  min-width: .313rem;
-  max-width: .313rem;
-  color: #fff;
-  color: var(--sapContent_ContrastTextColor,#fff)
+  height: .25rem;
+  height: var(--fdSlide_Tile_Indicator_Ative_Dot_Size,.25rem);
+  min-height: .25rem;
+  min-height: var(--fdSlide_Tile_Indicator_Ative_Dot_Size,.25rem);
+  max-height: .25rem;
+  max-height: var(--fdSlide_Tile_Indicator_Ative_Dot_Size,.25rem);
+  width: .25rem;
+  width: var(--fdSlide_Tile_Indicator_Ative_Dot_Size,.25rem);
+  min-width: .25rem;
+  min-width: var(--fdSlide_Tile_Indicator_Ative_Dot_Size,.25rem);
+  max-width: .25rem;
+  max-width: var(--fdSlide_Tile_Indicator_Ative_Dot_Size,.25rem);
+  background-color: #fff;
+  background-color: var(--fdSlide_Tile_Indicator_Active_Dot_Color,var(--sapContent_NonInteractiveIconColor,#fff));
+  border: solid .0625rem #fff;
+  border: var(--fdSlide_Tile_Indicator_Active_Dot_Border,solid .0625rem var(--sapContent_NonInteractiveIconColor,#fff))
 }
 .fd-tile--slide .fd-tile__dot:last-child {
   margin: 0
@@ -858,12 +883,12 @@
   display: none
 }
 .fd-tile--action .fd-tile__action-close {
-  height: 2rem;
-  min-height: 2rem;
-  max-height: 2rem;
-  width: 2rem;
-  min-width: 2rem;
-  max-width: 2rem;
+  height: auto;
+  min-height: auto;
+  max-height: none;
+  width: auto;
+  min-width: auto;
+  max-width: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -878,28 +903,6 @@
   top: -.375rem;
   right: -.375rem;
   z-index: 5
-}
-.fd-tile--action .fd-tile__action-close.is-focus,
-.fd-tile--action .fd-tile__action-close:focus {
-  outline: 0
-}
-.fd-tile--action .fd-tile__action-close.is-focus::after,
-.fd-tile--action .fd-tile__action-close:focus::after {
-  content: '';
-  width: 1.5rem;
-  height: 1.5rem;
-  top: -.0625rem;
-  left: .4375rem;
-  right: 0;
-  bottom: 0;
-  z-index: 3
-}
-.fd-tile--action .fd-tile__action-close.is-focus[dir=rtl]::after,
-.fd-tile--action .fd-tile__action-close:focus[dir=rtl]::after,
-[dir=rtl] .fd-tile--action .fd-tile__action-close.is-focus::after,
-[dir=rtl] .fd-tile--action .fd-tile__action-close:focus::after {
-  left: 0;
-  right: .4375rem
 }
 .fd-tile--action .fd-tile__action-close[dir=rtl],
 [dir=rtl] .fd-tile--action .fd-tile__action-close {
@@ -941,13 +944,35 @@
 }
 .fd-tile--action .fd-tile__action-close [class*=sap-icon]::before,
 .fd-tile--action .fd-tile__action-close[class*=sap-icon]::before {
-  width: auto;
-  height: auto
+  height: 2rem;
+  min-height: 2rem;
+  max-height: 2rem;
+  width: 2rem;
+  min-width: 2rem;
+  max-width: 2rem;
+  top: 0;
+  right: 0;
+  left: auto;
+  bottom: auto
+}
+.fd-tile--action .fd-tile__action-close [class*=sap-icon]::before[dir=rtl],
+.fd-tile--action .fd-tile__action-close[class*=sap-icon]::before[dir=rtl],
+[dir=rtl] .fd-tile--action .fd-tile__action-close [class*=sap-icon]::before,
+[dir=rtl] .fd-tile--action .fd-tile__action-close[class*=sap-icon]::before {
+  right: auto;
+  left: 0
 }
 .fd-tile--action .fd-tile__action-close.is-focus,
 .fd-tile--action .fd-tile__action-close:focus {
   z-index: 5;
-  outline: 0
+  outline: .125rem dotted #fff;
+  outline: var(--sapContent_FocusWidth,.125rem) dotted var(--sapContent_FocusColor,#fff);
+  outline-offset: -.0625rem
+}
+.fd-tile--action .fd-tile__action-close.is-focus.fd-tile--toggled,
+.fd-tile--action .fd-tile__action-close:focus.fd-tile--toggled {
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
 .fd-tile--action .fd-tile__action-close::-moz-focus-inner {
   border: 0
@@ -1000,27 +1025,6 @@
 .fd-tile--action .fd-tile__action-indicator:active {
   background: 0 0;
   border-color: transparent
-}
-.fd-tile--action .fd-tile__action-close.is-active.is-focus,
-.fd-tile--action .fd-tile__action-close.is-active:focus,
-.fd-tile--action .fd-tile__action-close:active.is-focus,
-.fd-tile--action .fd-tile__action-close:active:focus,
-.fd-tile--action .fd-tile__action-indicator.is-active.is-focus,
-.fd-tile--action .fd-tile__action-indicator.is-active:focus,
-.fd-tile--action .fd-tile__action-indicator:active.is-focus,
-.fd-tile--action .fd-tile__action-indicator:active:focus {
-  z-index: 5
-}
-.fd-tile--action .fd-tile__action-close.is-active.is-focus::after,
-.fd-tile--action .fd-tile__action-close.is-active:focus::after,
-.fd-tile--action .fd-tile__action-close:active.is-focus::after,
-.fd-tile--action .fd-tile__action-close:active:focus::after,
-.fd-tile--action .fd-tile__action-indicator.is-active.is-focus::after,
-.fd-tile--action .fd-tile__action-indicator.is-active:focus::after,
-.fd-tile--action .fd-tile__action-indicator:active.is-focus::after,
-.fd-tile--action .fd-tile__action-indicator:active:focus::after {
-  border-color: #fff;
-  border-color: var(--sapContent_FocusColor,#fff)
 }
 .fd-tile--action.fd-tile--slide .fd-tile__action-indicator [class*=sap-icon],
 .fd-tile--action.fd-tile--slide .fd-tile__action-indicator[class*=sap-icon] {
@@ -1314,29 +1318,17 @@
 .fd-tile--line.fd-tile--action .fd-tile__action-close:focus,
 .fd-tile--line.fd-tile--action .fd-tile__action-indicator.is-focus,
 .fd-tile--line.fd-tile--action .fd-tile__action-indicator:focus {
-  z-index: 5
+  z-index: 5;
+  outline: .125rem dotted #fff;
+  outline: var(--sapContent_FocusWidth,.125rem) dotted var(--sapContent_FocusColor,#fff);
+  outline-offset: 0
 }
-.fd-tile--line.fd-tile--action .fd-tile__action-close.is-focus::after,
-.fd-tile--line.fd-tile--action .fd-tile__action-close:focus::after,
-.fd-tile--line.fd-tile--action .fd-tile__action-indicator.is-focus::after,
-.fd-tile--line.fd-tile--action .fd-tile__action-indicator:focus::after {
-  content: "";
-  position: absolute;
-  width: auto;
-  height: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: .125rem dotted #fff;
-  border: var(--sapContent_FocusWidth,.125rem) dotted var(--sapContent_FocusColor,#fff)
-}
-.fd-tile--line.fd-tile--action .fd-tile__action-close.is-focus.fd-tile--toggled::after,
-.fd-tile--line.fd-tile--action .fd-tile__action-close:focus.fd-tile--toggled::after,
-.fd-tile--line.fd-tile--action .fd-tile__action-indicator.is-focus.fd-tile--toggled::after,
-.fd-tile--line.fd-tile--action .fd-tile__action-indicator:focus.fd-tile--toggled::after {
-  border: .125rem dotted #fff;
-  border: var(--sapContent_FocusWidth,.125rem) dotted var(--sapContent_ContrastFocusColor,#fff)
+.fd-tile--line.fd-tile--action .fd-tile__action-close.is-focus.fd-tile--toggled,
+.fd-tile--line.fd-tile--action .fd-tile__action-close:focus.fd-tile--toggled,
+.fd-tile--line.fd-tile--action .fd-tile__action-indicator.is-focus.fd-tile--toggled,
+.fd-tile--line.fd-tile--action .fd-tile__action-indicator:focus.fd-tile--toggled {
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
 .fd-tile--line .fd-badge {
   position: relative;
