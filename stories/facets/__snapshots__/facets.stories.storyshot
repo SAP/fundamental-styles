@@ -1,0 +1,3201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Facets Combination of facets 1`] = `
+<div
+  class="fd-facet"
+  role="group"
+>
+  
+        
+  <div
+    class="fd-facet__image"
+  >
+    
+            
+    <span
+      aria-label="Avatar"
+      class="fd-avatar fd-avatar--l"
+    >
+      
+                
+      <i
+        class="fd-avatar__icon sap-icon--money-bills"
+        role="presentation"
+      />
+      
+            
+    </span>
+    
+        
+  </div>
+  
+        
+  <div
+    aria-labelledby="formFacetTitle1"
+    class="fd-facet__form-container"
+    role="group"
+  >
+    
+            
+    <div
+      class="fd-facet__title-container"
+    >
+      
+                
+      <h1
+        class="fd-facet__title"
+        id="formFacetTitle1"
+      >
+        Technical Data
+      </h1>
+      
+            
+    </div>
+    
+            
+    <div
+      class="fd-facet__form-label-value"
+    >
+      
+                
+      <label
+        class="fd-form-label"
+        for="input-05"
+      >
+        Base unit:
+      </label>
+      
+                
+      <div
+        class="fd-facet__form-value"
+        id="input-05"
+      >
+        Each
+      </div>
+      
+            
+    </div>
+    
+            
+    <div
+      class="fd-facet__form-label-value"
+    >
+      
+                
+      <label
+        class="fd-form-label"
+        for="input-06"
+      >
+        Length:
+      </label>
+      
+                
+      <div
+        class="fd-facet__form-value"
+        id="input-06"
+      >
+        23.24 Centimeter
+      </div>
+      
+            
+    </div>
+    
+            
+    <div
+      class="fd-facet__form-label-value"
+    >
+      
+                
+      <label
+        class="fd-form-label"
+        for="input-07"
+      >
+        Width:
+      </label>
+      
+                
+      <div
+        class="fd-facet__form-value"
+        id="input-07"
+      >
+        86.1 Centimeter
+      </div>
+      
+            
+    </div>
+    
+            
+    <div
+      class="fd-facet__form-label-value"
+    >
+      
+                
+      <label
+        class="fd-form-label"
+        for="input-08"
+      >
+        Height:
+      </label>
+      
+                
+      <div
+        class="fd-facet__form-value"
+        id="input-08"
+      >
+        20.8 Centimeter
+      </div>
+      
+            
+    </div>
+    
+        
+  </div>
+  
+        
+  <div
+    aria-labelledby="kvFacetTitle1"
+    class="fd-facet__key-value"
+    role="group"
+  >
+    
+            
+    <div
+      class="fd-facet__title-container"
+    >
+      
+                
+      <h1
+        class="fd-facet__title"
+        id="kvFacetTitle1"
+      >
+        Status
+      </h1>
+      
+            
+    </div>
+    
+            
+    <span
+      class="fd-object-status fd-object-status--positive fd-facet__object-status"
+    >
+      
+                
+      <span
+        class="fd-object-status__text"
+      >
+        Delivery
+      </span>
+      
+            
+    </span>
+    
+        
+  </div>
+  
+        
+  <div
+    aria-labelledby="kvFacetTitle2"
+    class="fd-facet__key-value"
+    role="group"
+  >
+    
+            
+    <div
+      class="fd-facet__title-container"
+    >
+      
+                
+      <h1
+        class="fd-facet__title"
+        id="kvFacetTitle2"
+      >
+        Delivery Time
+      </h1>
+      
+            
+    </div>
+    
+            
+    <span
+      class="fd-object-status fd-object-status--critical fd-facet__object-status"
+    >
+      
+                
+      <i
+        class="fd-object-status__icon sap-icon--shipping-status"
+        role="presentation"
+      />
+      
+                
+      <span
+        class="fd-object-status__text"
+      >
+        12 days
+      </span>
+      
+            
+    </span>
+    
+        
+  </div>
+  
+        
+  <div
+    aria-labelledby="kvFacetTitle3"
+    class="fd-facet__key-value"
+    role="group"
+  >
+    
+            
+    <div
+      class="fd-facet__title-container"
+    >
+      
+                
+      <h1
+        class="fd-facet__title"
+        id="kvFacetTitle3"
+      >
+        Assembly Option 
+      </h1>
+      
+            
+    </div>
+    
+            
+    <span
+      class="fd-object-status fd-object-status--negative fd-facet__object-status"
+    >
+      
+                
+      <span
+        class="fd-object-status__text"
+      >
+        To be selected
+      </span>
+      
+            
+    </span>
+    
+        
+  </div>
+  
+        
+  <div
+    aria-labelledby="kvFacetTitle4"
+    class="fd-facet__key-value"
+    role="group"
+  >
+    
+            
+    <div
+      class="fd-facet__title-container"
+    >
+      
+                
+      <h1
+        class="fd-facet__title"
+        id="kvFacetTitle4"
+      >
+        Pricing 
+      </h1>
+      
+            
+    </div>
+    
+            
+    <span
+      class="fd-object-number fd-object-number--large fd-object-number--informative fd-facet__object-number"
+    >
+      
+                
+      <span
+        class="fd-object-number__text fd-facet__object-number-text"
+      >
+        579
+      </span>
+      <span
+        class="fd-object-number__unit fd-facet__object-number-unit"
+      >
+        EUR
+      </span>
+      
+            
+    </span>
+    
+        
+  </div>
+  
+
+        
+  <div
+    aria-labelledby="ratingFacetTitle1"
+    class="fd-facet__rating-indicator-container"
+    role="group"
+  >
+    
+            
+    <div
+      class="fd-facet__title-container"
+    >
+      
+                
+      <h1
+        class="fd-facet__title"
+        id="ratingFacetTitle1"
+      >
+        Average User Rating
+      </h1>
+      
+                
+      <h2
+        class="fd-facet__subtitle fd-form-label"
+      >
+        6 reviews
+      </h2>
+      
+            
+    </div>
+    
+            
+    <div
+      class="fd-rating-indicator fd-facet__rating-indicator"
+    >
+      
+                
+      <div
+        aria-label="Star Rating (out of 5)"
+        class="fd-rating-indicator__container fd-facet__rating-container"
+      >
+        
+                
+        <input
+          aria-label="1 star"
+          class="fd-rating-indicator__input"
+          id="rating-max-value-5-1"
+          name="rating-max-value-5"
+          type="radio"
+          value="1"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-max-value-5-1"
+        />
+        
+
+                
+        <input
+          aria-label="2 star"
+          checked=""
+          class="fd-rating-indicator__input"
+          id="rating-max-value-5-2"
+          name="rating-max-value-5"
+          type="radio"
+          value="2"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-max-value-5-2"
+        />
+        
+
+                
+        <input
+          aria-label="3 star"
+          class="fd-rating-indicator__input"
+          id="rating-max-value-5-3"
+          name="rating-max-value-5"
+          type="radio"
+          value="3"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-max-value-5-3"
+        />
+        
+
+                
+        <input
+          aria-label="4 star"
+          class="fd-rating-indicator__input"
+          id="rating-max-value-5-4"
+          name="rating-max-value-5"
+          type="radio"
+          value="4"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-max-value-5-4"
+        />
+        
+
+                
+        <input
+          aria-label="5 star"
+          class="fd-rating-indicator__input"
+          id="rating-max-value-5-5"
+          name="rating-max-value-5"
+          type="radio"
+          value="5"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-max-value-5-5"
+        />
+        
+                
+      </div>
+      
+                
+      <span
+        class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text"
+      >
+        (2 of 5)
+      </span>
+      
+            
+    </div>
+    
+        
+  </div>
+  
+    
+</div>
+`;
+
+exports[`Storyshots Components/Facets Facets in Object Page 1`] = `
+<section
+  aria-label="Dynamic Page Desktop Example"
+  class="fd-dynamic-page"
+>
+  
+        
+  <header
+    class="fd-dynamic-page__header"
+  >
+    
+            
+    <div
+      aria-hidden="false"
+      class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl"
+      id="mainContainer"
+      tabindex="0"
+    >
+      
+                
+      <div
+        class="fd-dynamic-page__main-container"
+      >
+        
+                    
+        <div
+          class="fd-dynamic-page__breadcrumb-title-container"
+        >
+          
+                        
+          <nav
+            aria-label="Breadcrumbs"
+          >
+            
+                            
+            <ul
+              class="fd-dynamic-page__breadcrumb fd-breadcrumb"
+            >
+              
+                                
+              <li
+                class="fd-breadcrumb__item"
+              >
+                <a
+                  class="fd-breadcrumb__link"
+                  href="#"
+                  tabindex="0"
+                >
+                  Men
+                </a>
+              </li>
+              
+                                
+              <li
+                class="fd-breadcrumb__item"
+              >
+                <a
+                  class="fd-breadcrumb__link"
+                  href="#"
+                  tabindex="0"
+                >
+                  Shoes
+                </a>
+              </li>
+              
+                                
+              <li
+                class="fd-breadcrumb__item"
+              >
+                <a
+                  aria-current="page"
+                  class="fd-breadcrumb__link"
+                  href="#"
+                  tabindex="0"
+                >
+                  Running Shoes
+                </a>
+              </li>
+              
+                            
+            </ul>
+            
+                        
+          </nav>
+          
+                        
+          <div
+            class="fd-dynamic-page__title-container"
+          >
+            
+                            
+            <h1
+              class="fd-title fd-dynamic-page__title"
+              title="Balenciaga Triple S Trainers"
+            >
+               Balenciaga Triple S Trainers 
+            </h1>
+            
+                        
+          </div>
+          
+                    
+        </div>
+        
+                    
+        <div
+          class="fd-dynamic-page__actions-container"
+        >
+          
+                        
+          <div
+            class="fd-dynamic-page__toolbar-container"
+          >
+            
+                            
+            <div
+              aria-label="Product actions"
+              class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+              role="toolbar"
+            >
+              
+                                
+              <button
+                class="fd-button fd-button--compact fd-button--positive"
+              >
+                Accept
+              </button>
+              
+                                
+              <button
+                class="fd-button fd-button--compact fd-button--reject"
+              >
+                Reject
+              </button>
+              
+                                
+              <span
+                class="fd-toolbar__separator"
+              />
+              
+                                
+            </div>
+            
+                            
+            <div
+              aria-label="Navigation actions"
+              class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+              role="toolbar"
+            >
+              
+                                
+              <button
+                aria-label="Resize"
+                class="fd-button fd-button--transparent"
+              >
+                
+                                    
+                <i
+                  class="sap-icon--resize"
+                />
+                
+                                
+              </button>
+              
+                                
+              <button
+                aria-label="Exit fullscreen"
+                class="fd-button fd-button--transparent"
+              >
+                
+                                    
+                <i
+                  class="sap-icon--exitfullscreen"
+                />
+                
+                                
+              </button>
+              
+                                
+              <button
+                aria-label="Close"
+                class="fd-button fd-button--transparent"
+              >
+                
+                                    
+                <i
+                  class="sap-icon--decline"
+                />
+                
+                                
+              </button>
+              
+                            
+            </div>
+            
+                        
+          </div>
+          
+                    
+        </div>
+        
+                
+      </div>
+      
+                
+      <div
+        class="fd-dynamic-page__subtitle"
+      >
+         Oversized multimaterial sneakers with quilted effect 
+      </div>
+      
+            
+    </div>
+    
+            
+    <div
+      aria-hidden="true"
+      class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl fd-dynamic-page__title-area--collapsed"
+      id="mainImageContainer"
+      tabindex="0"
+    >
+      
+                
+      <div
+        class="fd-dynamic-page__main-container"
+      >
+        
+                    
+        <div
+          class="fd-dynamic-page__breadcrumb-title-container"
+        >
+          
+                        
+          <nav
+            aria-label="Breadcrumbs"
+          >
+            
+                            
+            <ul
+              class="fd-dynamic-page__breadcrumb fd-breadcrumb"
+            >
+              
+                                
+              <li
+                class="fd-breadcrumb__item"
+              >
+                <a
+                  class="fd-breadcrumb__link"
+                  href="#"
+                  tabindex="0"
+                >
+                  Men
+                </a>
+              </li>
+              
+                                
+              <li
+                class="fd-breadcrumb__item"
+              >
+                <a
+                  class="fd-breadcrumb__link"
+                  href="#"
+                  tabindex="0"
+                >
+                  Shoes
+                </a>
+              </li>
+              
+                                
+              <li
+                class="fd-breadcrumb__item"
+              >
+                <a
+                  aria-current="page"
+                  class="fd-breadcrumb__link"
+                  href="#"
+                  tabindex="0"
+                >
+                  Running Shoes
+                </a>
+              </li>
+              
+                            
+            </ul>
+            
+                        
+          </nav>
+          
+                        
+          <div
+            class="fd-dynamic-page__image-title-container"
+          >
+            
+                            
+            <div
+              class="fd-facet__image fd-facet__image--header"
+            >
+              
+                                
+              <span
+                aria-label="Avatar"
+                class="fd-avatar fd-avatar--s"
+              >
+                
+                                    
+                <i
+                  class="fd-avatar__icon sap-icon--money-bills"
+                  role="presentation"
+                />
+                
+                                
+              </span>
+              
+                            
+            </div>
+            
+                            
+            <div
+              class="fd-dynamic-page__title-subtitle-container"
+            >
+              
+                                
+              <div
+                class="fd-dynamic-page__title-container"
+              >
+                
+                                    
+                <h1
+                  class="fd-title fd-dynamic-page__title"
+                  title="Balenciaga Triple S Trainers"
+                >
+                   Balenciaga Triple S Trainers 
+                </h1>
+                
+                                
+              </div>
+              
+                                
+              <div
+                class="fd-dynamic-page__subtitle"
+              >
+                 Oversized multimaterial sneakers with quilted effect 
+              </div>
+              
+                            
+            </div>
+            
+                        
+          </div>
+          
+                    
+        </div>
+        
+                    
+        <div
+          class="fd-dynamic-page__actions-container fd-dynamic-page__actions-container--centered"
+        >
+          
+                        
+          <div
+            class="fd-dynamic-page__toolbar-container"
+          >
+            
+                            
+            <div
+              aria-label="Product actions"
+              class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+              role="toolbar"
+            >
+              
+                                
+              <button
+                class="fd-button fd-button--compact fd-button--positive"
+              >
+                Accept
+              </button>
+              
+                                
+              <button
+                class="fd-button fd-button--compact fd-button--reject"
+              >
+                Reject
+              </button>
+              
+                                
+              <span
+                class="fd-toolbar__separator"
+              />
+              
+                                
+            </div>
+            
+                            
+            <div
+              aria-label="Navigation actions"
+              class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+              role="toolbar"
+            >
+              
+                                
+              <button
+                aria-label="Resize"
+                class="fd-button fd-button--transparent"
+              >
+                
+                                    
+                <i
+                  class="sap-icon--resize"
+                />
+                
+                                
+              </button>
+              
+                                
+              <button
+                aria-label="Exit fullscreen"
+                class="fd-button fd-button--transparent"
+              >
+                
+                                    
+                <i
+                  class="sap-icon--exitfullscreen"
+                />
+                
+                                
+              </button>
+              
+                                
+              <button
+                aria-label="Close"
+                class="fd-button fd-button--transparent"
+              >
+                
+                                    
+                <i
+                  class="sap-icon--decline"
+                />
+                
+                                
+              </button>
+              
+                            
+            </div>
+            
+                        
+          </div>
+          
+                    
+        </div>
+        
+                
+      </div>
+      
+            
+    </div>
+    
+            
+    <div
+      class="fd-dynamic-page__collapsible-header-container"
+    >
+      
+                
+      <div
+        aria-hidden="false"
+        aria-label="Dynamic Page Desktop Header"
+        class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--xl"
+        id="fddplhvc6"
+        role="region"
+      >
+        
+                    
+        <div
+          class="fd-facet"
+        >
+          
+                        
+          <div
+            class="fd-facet__image"
+          >
+            
+                            
+            <span
+              aria-label="Avatar"
+              class="fd-avatar fd-avatar--l"
+            >
+              
+                                
+              <i
+                class="fd-avatar__icon sap-icon--money-bills"
+                role="presentation"
+              />
+              
+                            
+            </span>
+            
+                        
+          </div>
+          
+                        
+          <div
+            aria-labelledby="formFacetTitle4"
+            class="fd-facet__form-container"
+            role="group"
+          >
+            
+                            
+            <div
+              class="fd-facet__title-container"
+            >
+              
+                                
+              <h1
+                class="fd-facet__title"
+                id="formFacetTitle4"
+              >
+                Technical Data
+              </h1>
+              
+                            
+            </div>
+            
+                            
+            <div
+              class="fd-facet__form-label-value"
+            >
+              
+                                
+              <label
+                class="fd-form-label"
+                for="input-10"
+              >
+                Base unit:
+              </label>
+              
+                                
+              <div
+                class="fd-facet__form-value"
+                id="input-10"
+              >
+                Each
+              </div>
+              
+                            
+            </div>
+            
+                            
+            <div
+              class="fd-facet__form-label-value"
+            >
+              
+                                
+              <label
+                class="fd-form-label"
+                for="input-11"
+              >
+                Length:
+              </label>
+              
+                                
+              <div
+                class="fd-facet__form-value"
+                id="input-11"
+              >
+                23.24 Centimeter
+              </div>
+              
+                            
+            </div>
+            
+                            
+            <div
+              class="fd-facet__form-label-value"
+            >
+              
+                                
+              <label
+                class="fd-form-label"
+                for="input-12"
+              >
+                Width:
+              </label>
+              
+                                
+              <div
+                class="fd-facet__form-value"
+                id="input-12"
+              >
+                86.1 Centimeter
+              </div>
+              
+                            
+            </div>
+            
+                            
+            <div
+              class="fd-facet__form-label-value"
+            >
+              
+                                
+              <label
+                class="fd-form-label"
+                for="input-13"
+              >
+                Height:
+              </label>
+              
+                                
+              <div
+                class="fd-facet__form-value"
+                id="input-13"
+              >
+                20.8 Centimeter
+              </div>
+              
+                            
+            </div>
+            
+                        
+          </div>
+          
+                        
+          <div
+            aria-labelledby="kvFacetTitle9"
+            class="fd-facet__key-value"
+            role="group"
+          >
+            
+                            
+            <div
+              class="fd-facet__title-container"
+            >
+              
+                                
+              <h1
+                class="fd-facet__title"
+                id="kvFacetTitle9"
+              >
+                Status
+              </h1>
+              
+                            
+            </div>
+            
+                            
+            <span
+              class="fd-object-status fd-object-status--positive fd-facet__object-status"
+            >
+              
+                                
+              <span
+                class="fd-object-status__text"
+              >
+                Delivery
+              </span>
+              
+                            
+            </span>
+            
+                        
+          </div>
+          
+                        
+          <div
+            aria-labelledby="kvFacetTitle10"
+            class="fd-facet__key-value"
+            role="group"
+          >
+            
+                            
+            <div
+              class="fd-facet__title-container"
+            >
+              
+                                
+              <h1
+                class="fd-facet__title"
+                id="kvFacetTitle10"
+              >
+                Delivery Time
+              </h1>
+              
+                            
+            </div>
+            
+                            
+            <span
+              class="fd-object-status fd-object-status--critical fd-facet__object-status"
+            >
+              
+                                
+              <i
+                class="fd-object-status__icon sap-icon--shipping-status"
+                role="presentation"
+              />
+              
+                                
+              <span
+                class="fd-object-status__text"
+              >
+                12 days
+              </span>
+              
+                            
+            </span>
+            
+                        
+          </div>
+          
+                        
+          <div
+            aria-labelledby="kvFacetTitle11"
+            class="fd-facet__key-value"
+            role="group"
+          >
+            
+                            
+            <div
+              class="fd-facet__title-container"
+            >
+              
+                                
+              <h1
+                class="fd-facet__title"
+                id="kvFacetTitle11"
+              >
+                Assembly Option 
+              </h1>
+              
+                            
+            </div>
+            
+                            
+            <span
+              class="fd-object-status fd-object-status--negative fd-facet__object-status"
+            >
+              
+                                
+              <span
+                class="fd-object-status__text"
+              >
+                To be selected
+              </span>
+              
+                            
+            </span>
+            
+                        
+          </div>
+          
+                        
+          <div
+            aria-labelledby="kvFacetTitle12"
+            class="fd-facet__key-value"
+            role="group"
+          >
+            
+                            
+            <div
+              class="fd-facet__title-container"
+            >
+              
+                                
+              <h1
+                class="fd-facet__title"
+                id="kvFacetTitle12"
+              >
+                Pricing 
+              </h1>
+              
+                            
+            </div>
+            
+                            
+            <span
+              class="fd-object-number fd-object-number--large fd-object-number--informative fd-facet__object-number"
+            >
+              
+                                
+              <span
+                class="fd-object-number__text fd-facet__object-number-text"
+              >
+                579
+              </span>
+              <span
+                class="fd-object-number__unit fd-facet__object-number-unit"
+              >
+                EUR
+              </span>
+              
+                            
+            </span>
+            
+                        
+          </div>
+          
+                    
+                        
+          <div
+            aria-labelledby="ratingFacetTitle3"
+            class="fd-facet__rating-indicator-container"
+            role="group"
+          >
+            
+                            
+            <div
+              class="fd-facet__title-container"
+            >
+              
+                                
+              <h1
+                class="fd-facet__title"
+                id="ratingFacetTitle3"
+              >
+                Average User Rating
+              </h1>
+              
+                                
+              <h2
+                class="fd-facet__subtitle fd-form-label"
+              >
+                6 reviews
+              </h2>
+              
+                            
+            </div>
+            
+                            
+            <div
+              class="fd-rating-indicator fd-facet__rating-indicator"
+            >
+              
+                                
+              <div
+                aria-label="Star Rating (out of 5)"
+                class="fd-rating-indicator__container fd-facet__rating-container"
+              >
+                
+                                
+                <input
+                  aria-label="1 star"
+                  class="fd-rating-indicator__input"
+                  id="2-rating-max-value-5-1"
+                  name="2-rating-max-value-5"
+                  type="radio"
+                  value="1"
+                />
+                
+                                
+                <label
+                  class="fd-rating-indicator__label"
+                  for="2-rating-max-value-5-1"
+                />
+                
+                    
+                                
+                <input
+                  aria-label="2 star"
+                  checked=""
+                  class="fd-rating-indicator__input"
+                  id="2-rating-max-value-5-2"
+                  name="2-rating-max-value-5"
+                  type="radio"
+                  value="2"
+                />
+                
+                                
+                <label
+                  class="fd-rating-indicator__label"
+                  for="2-rating-max-value-5-2"
+                />
+                
+                    
+                                
+                <input
+                  aria-label="3 star"
+                  class="fd-rating-indicator__input"
+                  id="2-rating-max-value-5-3"
+                  name="2-rating-max-value-5"
+                  type="radio"
+                  value="3"
+                />
+                
+                                
+                <label
+                  class="fd-rating-indicator__label"
+                  for="2-rating-max-value-5-3"
+                />
+                
+                    
+                                
+                <input
+                  aria-label="4 star"
+                  class="fd-rating-indicator__input"
+                  id="2-rating-max-value-5-4"
+                  name="2-rating-max-value-5"
+                  type="radio"
+                  value="4"
+                />
+                
+                                
+                <label
+                  class="fd-rating-indicator__label"
+                  for="2-rating-max-value-5-4"
+                />
+                
+                    
+                                
+                <input
+                  aria-label="5 star"
+                  class="fd-rating-indicator__input"
+                  id="2-rating-max-value-5-5"
+                  name="2-rating-max-value-5"
+                  type="radio"
+                  value="5"
+                />
+                
+                                
+                <label
+                  class="fd-rating-indicator__label"
+                  for="2-rating-max-value-5-5"
+                />
+                
+                                
+              </div>
+              
+                                
+              <span
+                class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text"
+              >
+                (2 of 5)
+              </span>
+              
+                            
+            </div>
+            
+                        
+          </div>
+          
+                    
+        </div>
+        
+                
+      </div>
+      
+                
+      <div
+        class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow"
+      >
+        
+                    
+        <div
+          class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"
+        />
+        
+                    
+        <div
+          aria-label="Header actions"
+          class="fd-dynamic-page__collapsible-header-visibility-container--button-group"
+          role="toolbar"
+        >
+          
+                        
+          <button
+            aria-controls="fddplhvc6"
+            aria-expanded="true"
+            aria-haspopup="true"
+            aria-hidden="false"
+            aria-label="Collapse"
+            class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+            id="expandBtn"
+            onclick="
+                                        toggleElAttrs('fddplhvc6', ['aria-hidden']);
+                                        toggleElAttrs('expandBtn', ['aria-expanded']);
+                                        toggleElAttrs('expandBtn', ['aria-hidden']);
+                                        toggleElAttrs('collapseBtn', ['aria-expanded']);
+                                        toggleElAttrs('collapseBtn', ['aria-hidden']);
+                                        toggleElAttrs('mainContainer', ['aria-hidden']);
+                                        toggleElAttrs('mainImageContainer', ['aria-hidden']);
+                                    "
+          >
+            
+                                
+            <i
+              class="sap-icon--slim-arrow-up"
+            />
+            
+                        
+          </button>
+          
+                        
+          <button
+            aria-controls="fddplhvc6"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-hidden="true"
+            aria-label="Collapse"
+            class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+            id="collapseBtn"
+            onclick="
+                                        toggleElAttrs('fddplhvc6', ['aria-hidden']);
+                                        toggleElAttrs('collapseBtn', ['aria-expanded']);
+                                        toggleElAttrs('collapseBtn', ['aria-hidden']);
+                                        toggleElAttrs('expandBtn', ['aria-expanded']);
+                                        toggleElAttrs('expandBtn', ['aria-hidden']);
+                                        toggleElAttrs('mainContainer', ['aria-hidden']);
+                                        toggleElAttrs('mainImageContainer', ['aria-hidden']);
+                                    "
+          >
+            
+                                
+            <i
+              class="sap-icon--slim-arrow-down"
+            />
+            
+                        
+          </button>
+          
+                        
+          <button
+            aria-label="Pin this"
+            class="fd-dynamic-page__pin-button fd-button fd-button--compact"
+          >
+            
+                                
+            <i
+              class="sap-icon--pushpin-off"
+            />
+            
+                        
+          </button>
+          
+                    
+        </div>
+        
+                    
+        <div
+          class="fd-dynamic-page__collapsible-header-visibility-container--right-gradient"
+        />
+        
+                
+      </div>
+      
+            
+    </div>
+    
+            
+    <div
+      class="fd-dynamic-page__tabs--overflow"
+    >
+      
+                
+      <ul
+        class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--xl fd-dynamic-page__tabs--add-shadow"
+        role="tablist"
+      >
+        
+                    
+        <li
+          class="fd-tabs__item"
+          role="tab"
+        >
+          
+                        
+          <a
+            aria-controls="fuCwV550"
+            class="fd-tabs__link"
+            href="#fuCwV550"
+          >
+            
+                            
+            <span
+              class="fd-tabs__tag"
+            >
+              
+                                Link
+                            
+            </span>
+            
+                        
+          </a>
+          
+                    
+        </li>
+        
+                    
+        <li
+          aria-selected="true"
+          class="fd-tabs__item"
+          role="tab"
+        >
+          
+                        
+          <a
+            aria-controls="AiWfz165"
+            class="fd-tabs__link"
+            href="#AiWfz165"
+          >
+            
+                            
+            <span
+              class="fd-tabs__tag"
+            >
+              
+                                Selected
+                            
+            </span>
+            
+                        
+          </a>
+          
+                    
+        </li>
+        
+                
+      </ul>
+      
+            
+    </div>
+    
+        
+  </header>
+  
+        
+  <div
+    class="fd-dynamic-page__content fd-dynamic-page__content--xl"
+  >
+    
+            
+    <div
+      aria-expanded="false"
+      class="fd-tabs__panel"
+      id="fuCwV550"
+      role="tabpanel"
+    >
+      
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+                eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+                dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+            
+    </div>
+    
+            
+    <div
+      aria-expanded="true"
+      class="fd-tabs__panel"
+      id="AiWfz165"
+      role="tabpanel"
+    >
+      
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+            
+    </div>
+    
+        
+  </div>
+  
+        
+  <footer
+    class="fd-bar fd-bar--floating-footer"
+    style="position:relative"
+  >
+    
+            
+    <div
+      aria-label="Finalizing actions"
+      class="fd-bar__right"
+      role="toolbar"
+    >
+      
+                
+      <div
+        class="fd-bar__element"
+      >
+        
+                    
+        <button
+          aria-label="button"
+          class="fd-button fd-button--emphasized fd-button--compact"
+        >
+          Save
+        </button>
+        
+                
+      </div>
+      
+                
+      <div
+        class="fd-bar__element"
+      >
+        
+                    
+        <button
+          aria-label="button"
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          Cancel
+        </button>
+        
+                
+      </div>
+      
+            
+    </div>
+    
+        
+  </footer>
+  
+    
+</section>
+`;
+
+exports[`Storyshots Components/Facets Facets in Object Page Mobile 1`] = `
+<div
+  class="mobile-container"
+>
+  
+        
+  <section
+    aria-label="Dynamic Page Mobile Example"
+    class="fd-dynamic-page"
+  >
+    
+            
+    <header
+      class="fd-dynamic-page__header"
+    >
+      
+                
+      <div
+        aria-hidden="false"
+        class="fd-dynamic-page__title-area fd-dynamic-page__title-area--sm"
+        id="mainContainerMobile"
+        tabindex="0"
+      >
+        
+                    
+        <div
+          class="fd-dynamic-page__main-container"
+        >
+          
+                        
+          <div
+            class="fd-dynamic-page__breadcrumb-title-container"
+          >
+            
+                            
+            <div
+              class="fd-dynamic-page__breadcrumb-container"
+            >
+              
+                                
+              <nav
+                aria-label="Breadcrumbs"
+              >
+                
+                                    
+                <ul
+                  class="fd-dynamic-page__breadcrumb--sm fd-breadcrumb"
+                >
+                  
+                                        
+                  <li
+                    class="fd-breadcrumb__item"
+                  >
+                    <a
+                      class="fd-breadcrumb__link"
+                      href="#"
+                      tabindex="0"
+                    >
+                      Men
+                    </a>
+                  </li>
+                  
+                                        
+                  <li
+                    class="fd-breadcrumb__item"
+                  >
+                    <a
+                      class="fd-breadcrumb__link"
+                      href="#"
+                      tabindex="0"
+                    >
+                      Shoes
+                    </a>
+                  </li>
+                  
+                                        
+                  <li
+                    class="fd-breadcrumb__item"
+                  >
+                    <a
+                      aria-current="page"
+                      class="fd-breadcrumb__link"
+                      href="#"
+                      tabindex="0"
+                    >
+                      Running Shoes
+                    </a>
+                  </li>
+                  
+                                    
+                </ul>
+                
+                                
+              </nav>
+              
+                                
+              <div
+                aria-label="Close action"
+                class="fd-dynamic-page__toolbar-actions fd-dynamic-page__toolbar-actions--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                role="toolbar"
+              >
+                
+                                    
+                <button
+                  aria-label="Close"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                        
+                  <i
+                    class="sap-icon--decline"
+                  />
+                  
+                                    
+                </button>
+                
+                                
+              </div>
+              
+                            
+            </div>
+            
+                            
+            <div
+              class="fd-dynamic-page__title-container"
+            >
+              
+                                
+              <h1
+                class="fd-title fd-dynamic-page__title"
+                title="Balenciaga Triple S Trainers"
+              >
+                 Balenciaga Triple S Trainers 
+              </h1>
+              
+                                
+              <div
+                aria-label="Product actions"
+                class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                role="toolbar"
+              >
+                
+                                    
+                <div
+                  class="fd-popover fd-toolbar__overflow"
+                >
+                  
+                                        
+                  <div
+                    class="fd-popover__control"
+                  >
+                    
+                                            
+                    <button
+                      aria-controls="wgxzK85915"
+                      aria-expanded="true"
+                      aria-haspopup="true"
+                      aria-label="Header actions"
+                      class="fd-button fd-button--transparent"
+                      id="maisodusakdnsma"
+                      onclick="
+                                                    toggleElAttrs('wgxzK85915', ['aria-hidden']);
+                                                    toggleElAttrs('maisodusakdnsma', ['aria-expanded']);
+                                                "
+                    >
+                      
+                                                
+                      <i
+                        class="sap-icon--overflow"
+                      />
+                      
+                                            
+                    </button>
+                    
+                                        
+                  </div>
+                  
+                                        
+                  <div
+                    aria-hidden="false"
+                    class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+                    id="wgxzK85915"
+                  >
+                    
+                                            
+                    <div
+                      class="fd-toolbar__overflow__body"
+                    >
+                      
+                                                
+                      <button
+                        class="fd-button fd-button--transparent"
+                      >
+                        Accept
+                      </button>
+                      
+                                                
+                      <button
+                        class="fd-button fd-button--transparent"
+                      >
+                        Reject
+                      </button>
+                      
+                                            
+                    </div>
+                    
+                                        
+                  </div>
+                  
+                                    
+                </div>
+                
+                                
+              </div>
+              
+                            
+            </div>
+            
+                        
+          </div>
+          
+                    
+        </div>
+        
+                    
+        <div
+          class="fd-dynamic-page__subtitle"
+        >
+           Expanded header in mobile 
+        </div>
+        
+                
+      </div>
+      
+                
+      <div
+        aria-hidden="true"
+        class="fd-dynamic-page__title-area fd-dynamic-page__title-area--sm fd-dynamic-page__title-area--collapsed"
+        id="mainImageContainerMobile"
+        tabindex="0"
+      >
+        
+                    
+        <div
+          class="fd-dynamic-page__main-container"
+        >
+          
+                        
+          <div
+            class="fd-dynamic-page__breadcrumb-title-container"
+          >
+            
+                            
+            <div
+              class="fd-dynamic-page__breadcrumb-container"
+            >
+              
+                                
+              <nav
+                aria-label="Breadcrumbs"
+              >
+                
+                                    
+                <ul
+                  class="fd-dynamic-page__breadcrumb--sm fd-breadcrumb"
+                >
+                  
+                                        
+                  <li
+                    class="fd-breadcrumb__item"
+                  >
+                    <a
+                      class="fd-breadcrumb__link"
+                      href="#"
+                      tabindex="0"
+                    >
+                      Men
+                    </a>
+                  </li>
+                  
+                                        
+                  <li
+                    class="fd-breadcrumb__item"
+                  >
+                    <a
+                      class="fd-breadcrumb__link"
+                      href="#"
+                      tabindex="0"
+                    >
+                      Shoes
+                    </a>
+                  </li>
+                  
+                                        
+                  <li
+                    class="fd-breadcrumb__item"
+                  >
+                    <a
+                      aria-current="page"
+                      class="fd-breadcrumb__link"
+                      href="#"
+                      tabindex="0"
+                    >
+                      Running Shoes
+                    </a>
+                  </li>
+                  
+                                    
+                </ul>
+                
+                                
+              </nav>
+              
+                                
+              <div
+                aria-label="Close action"
+                class="fd-dynamic-page__toolbar-actions fd-dynamic-page__toolbar-actions--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                role="toolbar"
+              >
+                
+                                    
+                <button
+                  aria-label="Close"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                        
+                  <i
+                    class="sap-icon--decline"
+                  />
+                  
+                                    
+                </button>
+                
+                                
+              </div>
+              
+                            
+            </div>
+            
+                            
+            <div
+              class="fd-dynamic-page__image-title-container"
+            >
+              
+                                
+              <div
+                class="fd-facet__image fd-facet__image--header"
+              >
+                
+                                    
+                <span
+                  aria-label="Avatar"
+                  class="fd-avatar fd-avatar--s"
+                >
+                  
+                                        
+                  <i
+                    class="fd-avatar__icon sap-icon--money-bills"
+                    role="presentation"
+                  />
+                  
+                                    
+                </span>
+                
+                                
+              </div>
+              
+                                
+              <div
+                class="fd-dynamic-page__title-subtitle-container"
+              >
+                
+                                    
+                <div
+                  class="fd-dynamic-page__title-container"
+                >
+                  
+                                        
+                  <h1
+                    class="fd-title fd-dynamic-page__title"
+                    title="Balenciaga Triple S Trainers"
+                  >
+                     Balenciaga Triple S Trainers 
+                  </h1>
+                  
+                                    
+                </div>
+                
+                                    
+                <div
+                  class="fd-dynamic-page__subtitle"
+                >
+                   Collapsed header in mobile 
+                </div>
+                
+                                
+              </div>
+              
+                                
+              <div
+                aria-label="Product actions"
+                class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                role="toolbar"
+              >
+                
+                                    
+                <div
+                  class="fd-popover fd-toolbar__overflow"
+                >
+                  
+                                        
+                  <div
+                    class="fd-popover__control"
+                  >
+                    
+                                            
+                    <button
+                      aria-controls="wgxzK85914"
+                      aria-expanded="true"
+                      aria-haspopup="true"
+                      aria-label="Header actions"
+                      class="fd-button fd-button--transparent"
+                      id="maisodusakdnsmag"
+                      onclick="
+                                                    toggleElAttrs('wgxzK85914', ['aria-hidden']);
+                                                    toggleElAttrs('maisodusakdnsmag', ['aria-expanded']);
+                                                "
+                    >
+                      
+                                                
+                      <i
+                        class="sap-icon--overflow"
+                      />
+                      
+                                            
+                    </button>
+                    
+                                        
+                  </div>
+                  
+                                        
+                  <div
+                    aria-hidden="false"
+                    class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+                    id="wgxzK85914"
+                  >
+                    
+                                            
+                    <div
+                      class="fd-toolbar__overflow__body"
+                    >
+                      
+                                                
+                      <button
+                        class="fd-button fd-button--transparent"
+                      >
+                        Accept
+                      </button>
+                      
+                                                
+                      <button
+                        class="fd-button fd-button--transparent"
+                      >
+                        Reject
+                      </button>
+                      
+                                            
+                    </div>
+                    
+                                        
+                  </div>
+                  
+                                    
+                </div>
+                
+                                
+              </div>
+              
+                            
+            </div>
+            
+                        
+          </div>
+          
+                    
+        </div>
+        
+                
+      </div>
+      
+                
+      <div
+        class="fd-dynamic-page__collapsible-header-container"
+      >
+        
+                    
+        <div
+          aria-hidden="false"
+          aria-label="Dynamic Page Mobile Header"
+          class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--sm"
+          id="fddplhvc4"
+          role="region"
+        >
+          
+                        
+          <div
+            class="fd-facet"
+          >
+            
+                            
+            <div
+              class="fd-facet__image fd-facet__image--sm"
+            >
+              
+                                
+              <span
+                aria-label="Avatar"
+                class="fd-avatar fd-avatar--l"
+              >
+                
+                                    
+                <i
+                  class="fd-avatar__icon sap-icon--camera"
+                  role="presentation"
+                />
+                
+                                
+              </span>
+              
+                            
+            </div>
+            
+                            
+                            
+            <div
+              aria-labelledby="kvFacetTitle13"
+              class="fd-facet__key-value"
+              role="group"
+            >
+              
+                                
+              <div
+                class="fd-facet__title-container"
+              >
+                
+                                    
+                <h1
+                  class="fd-facet__title"
+                  id="kvFacetTitle13"
+                >
+                  Availablity
+                </h1>
+                
+                                
+              </div>
+              
+                                
+              <span
+                class="fd-object-status fd-object-status--positive fd-facet__object-status"
+              >
+                
+                                    
+                <span
+                  class="fd-object-status__text"
+                >
+                  In Stock
+                </span>
+                
+                                
+              </span>
+              
+                            
+            </div>
+            
+                            
+            <div
+              aria-labelledby="kvFacetTitle14"
+              class="fd-facet__key-value"
+              role="group"
+            >
+              
+                                
+              <div
+                class="fd-facet__title-container"
+              >
+                
+                                    
+                <h1
+                  class="fd-facet__title"
+                  id="kvFacetTitle14"
+                >
+                  Price 
+                </h1>
+                
+                                
+              </div>
+              
+                                
+              <span
+                class="fd-object-number fd-object-number--large fd-object-number--informative fd-facet__object-number"
+              >
+                
+                                    
+                <span
+                  class="fd-object-number__text fd-facet__object-number-text"
+                >
+                  750
+                </span>
+                <span
+                  class="fd-object-number__unit fd-facet__object-number-unit"
+                >
+                  EUR
+                </span>
+                
+                                
+              </span>
+              
+                            
+            </div>
+            
+                        
+          </div>
+          
+                    
+        </div>
+        
+                    
+        <div
+          class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow"
+        >
+          
+                        
+          <div
+            class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"
+          />
+          
+                        
+          <div
+            aria-label="Header actions"
+            class="fd-dynamic-page__collapsible-header-visibility-container--button-group"
+            role="toolbar"
+          >
+            
+                            
+            <button
+              aria-controls="fddplhvc4"
+              aria-expanded="true"
+              aria-haspopup="true"
+              aria-hidden="false"
+              aria-label="Collapse header"
+              class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+              id="expandBtnMobile"
+              onclick="
+                                        toggleElAttrs('fddplhvc4', ['aria-hidden']);
+                                        toggleElAttrs('expandBtnMobile', ['aria-expanded']);
+                                        toggleElAttrs('expandBtnMobile', ['aria-hidden']);
+                                        toggleElAttrs('collapseBtnMobile', ['aria-expanded']);
+                                        toggleElAttrs('collapseBtnMobile', ['aria-hidden']);
+                                        toggleElAttrs('mainContainerMobile', ['aria-hidden']);
+                                        toggleElAttrs('mainImageContainerMobile', ['aria-hidden']);
+                                    "
+            >
+              
+                                
+              <i
+                class="sap-icon--slim-arrow-up"
+              />
+              
+                            
+            </button>
+            
+                            
+            <button
+              aria-controls="fddplhvc4"
+              aria-expanded="false"
+              aria-haspopup="true"
+              aria-hidden="true"
+              aria-label="Expand header"
+              class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+              id="collapseBtnMobile"
+              onclick="
+                                        toggleElAttrs('fddplhvc4', ['aria-hidden']);
+                                        toggleElAttrs('collapseBtnMobile', ['aria-expanded']);
+                                        toggleElAttrs('collapseBtnMobile', ['aria-hidden']);
+                                        toggleElAttrs('expandBtnMobile', ['aria-expanded']);
+                                        toggleElAttrs('expandBtnMobile', ['aria-hidden']);
+                                        toggleElAttrs('mainContainerMobile', ['aria-hidden']);
+                                        toggleElAttrs('mainImageContainerMobile', ['aria-hidden']);
+                                    "
+            >
+              
+                                
+              <i
+                class="sap-icon--slim-arrow-down"
+                id="downArrow"
+              />
+              
+                            
+            </button>
+            
+                        
+          </div>
+          
+                        
+          <div
+            class="fd-dynamic-page__collapsible-header-visibility-container--right-gradient"
+          />
+          
+                    
+        </div>
+        
+                
+      </div>
+      
+                
+      <div
+        class="fd-dynamic-page__tabs--overflow"
+      >
+        
+                    
+        <ul
+          class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--sm fd-dynamic-page__tabs--add-shadow"
+          role="tablist"
+        >
+          
+                        
+          <li
+            aria-controls="fuCwV552"
+            class="fd-tabs__item"
+            role="tab"
+          >
+            
+                            
+            <a
+              class="fd-tabs__link"
+              href="#fuCwV552"
+            >
+              
+                                
+              <span
+                class="fd-tabs__tag"
+              >
+                
+                                    Link
+                                
+              </span>
+              
+                            
+            </a>
+            
+                        
+          </li>
+          
+                        
+          <li
+            aria-selected="true"
+            class="fd-tabs__item"
+            role="tab"
+          >
+            
+                            
+            <a
+              aria-controls="AiWfz167"
+              class="fd-tabs__link"
+              href="#AiWfz167"
+            >
+              
+                                
+              <span
+                class="fd-tabs__tag"
+              >
+                
+                                    Selected
+                                
+              </span>
+              
+                            
+            </a>
+            
+                        
+          </li>
+          
+                    
+        </ul>
+          
+                
+      </div>
+      
+            
+    </header>
+    
+            
+    <div
+      class="fd-dynamic-page__content fd-dynamic-page__content--sm"
+    >
+      
+                
+      <div
+        aria-expanded="false"
+        class="fd-tabs__panel"
+        id="fuCwV552"
+        role="tabpanel"
+      >
+        
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+                    eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+                    dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+                
+      </div>
+      
+                
+      <div
+        aria-expanded="true"
+        class="fd-tabs__panel"
+        id="AiWfz167"
+        role="tabpanel"
+      >
+        
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                
+      </div>
+      
+            
+    </div>
+    
+            
+    <footer
+      class="fd-bar fd-bar--floating-footer"
+      style="position:relative"
+    >
+      
+                
+      <div
+        aria-label="Finalizing actions"
+        class="fd-bar__right"
+        role="toolbar"
+      >
+        
+                    
+        <div
+          class="fd-bar__element"
+        >
+          
+                        
+          <button
+            aria-label="button"
+            class="fd-button fd-button--emphasized fd-button--compact"
+          >
+            Save
+          </button>
+          
+                    
+        </div>
+        
+                    
+        <div
+          class="fd-bar__element"
+        >
+          
+                        
+          <button
+            aria-label="button"
+            class="fd-button fd-button--transparent fd-button--compact"
+          >
+            Cancel
+          </button>
+          
+                    
+        </div>
+        
+                
+      </div>
+      
+            
+    </footer>
+    
+        
+  </section>
+  
+    
+</div>
+`;
+
+exports[`Storyshots Components/Facets Form Facet 1`] = `
+<div
+  aria-labelledby="formFacetTitle2"
+  class="fd-facet__form-container"
+  role="group"
+>
+  
+        
+  <div
+    class="fd-facet__title-container"
+  >
+    
+            
+    <h1
+      class="fd-facet__title"
+      id="formFacetTitle2"
+    >
+       Technical Data 
+    </h1>
+    
+        
+  </div>
+  
+        
+  <div
+    class="fd-facet__form-label-value"
+  >
+    
+            
+    <label
+      class="fd-form-label"
+      for="input-01"
+    >
+      Base unit:
+    </label>
+    
+            
+    <div
+      class="fd-facet__form-value"
+      id="input-01"
+    >
+      Each
+    </div>
+    
+        
+  </div>
+  
+        
+  <div
+    class="fd-facet__form-label-value"
+  >
+    
+            
+    <label
+      class="fd-form-label"
+      for="input-02"
+    >
+      Length:
+    </label>
+    
+            
+    <div
+      class="fd-facet__form-value"
+      id="input-02"
+    >
+      23.24 Centimeter
+    </div>
+    
+        
+  </div>
+  
+        
+  <div
+    class="fd-facet__form-label-value"
+  >
+    
+            
+    <label
+      class="fd-form-label"
+      for="input-03"
+    >
+      Width:
+    </label>
+    
+            
+    <div
+      class="fd-facet__form-value"
+      id="input-03"
+    >
+      86.1 Centimeter
+    </div>
+    
+        
+  </div>
+  
+        
+  <div
+    class="fd-facet__form-label-value"
+  >
+    
+            
+    <label
+      class="fd-form-label"
+      for="input-04"
+    >
+      Height:
+    </label>
+    
+            
+    <div
+      class="fd-facet__form-value"
+      id="input-04"
+    >
+      20.8 Centimeter
+    </div>
+    
+        
+  </div>
+  
+    
+</div>
+`;
+
+exports[`Storyshots Components/Facets Form Facet with Link 1`] = `
+<div
+  aria-labelledby="formFacetTitle3"
+  class="fd-facet__form-container"
+  role="group"
+>
+  
+        
+  <div
+    class="fd-facet__title-container"
+  >
+    
+            
+    <h1
+      class="fd-facet__title"
+      id="formFacetTitle3"
+    >
+      Contact Information
+    </h1>
+    
+        
+  </div>
+  
+        
+  <div
+    class="fd-facet__form-label-value"
+  >
+    
+            
+    <i
+      class="sap-icon--add-employee"
+      role="presentation"
+    />
+    
+            
+    <div
+      class="fd-facet__form-value"
+    >
+      
+                
+      <a
+        class="fd-link fd-facet__link"
+        href="#"
+        tabindex="0"
+      >
+        John Miller
+      </a>
+      
+            
+    </div>
+    
+        
+  </div>
+  
+        
+  <div
+    class="fd-facet__form-label-value"
+  >
+    
+            
+    <i
+      class="sap-icon--outgoing-call"
+      role="presentation"
+    />
+    
+            
+    <div
+      class="fd-facet__form-value"
+    >
+      
+                
+      <a
+        class="fd-link fd-facet__link"
+        href="#"
+        tabindex="0"
+      >
+        +1 234 5678
+      </a>
+      
+            
+    </div>
+    
+        
+  </div>
+  
+        
+  <div
+    class="fd-facet__form-label-value"
+  >
+    
+            
+    <i
+      class="sap-icon--email"
+      role="presentation"
+    />
+    
+            
+    <div
+      class="fd-facet__form-value"
+    >
+      
+                
+      <a
+        class="fd-link fd-facet__link"
+        href="#"
+        tabindex="0"
+      >
+        john.miller@company.com
+      </a>
+      
+            
+    </div>
+    
+        
+  </div>
+  
+        
+  <div
+    class="fd-facet__form-label-value"
+  >
+    
+            
+    <label
+      class="fd-form-label"
+      for="input-09"
+    >
+      Height:
+    </label>
+    
+            
+    <div
+      class="fd-facet__form-value"
+      id="input-09"
+    >
+      20.8 Centimeter
+    </div>
+    
+        
+  </div>
+  
+    
+</div>
+`;
+
+exports[`Storyshots Components/Facets Image/Avatar Facet 1`] = `
+<div
+  class="fd-facet__image"
+>
+  
+        
+  <span
+    aria-label="Avatar"
+    class="fd-avatar fd-avatar--l"
+  >
+    
+            
+    <i
+      class="fd-avatar__icon sap-icon--money-bills"
+      role="presentation"
+    />
+    
+        
+  </span>
+  
+    
+</div>
+`;
+
+exports[`Storyshots Components/Facets Key-Value Facet 1`] = `
+<section>
+  <div
+    aria-labelledby="kvFacetTitle5"
+    class="fd-facet__key-value"
+    role="group"
+  >
+    
+        
+    <div
+      class="fd-facet__title-container"
+    >
+      
+            
+      <h1
+        class="fd-facet__title"
+        id="kvFacetTitle5"
+      >
+         Status 
+      </h1>
+      
+        
+    </div>
+    
+        
+    <span
+      class="fd-object-status fd-object-status--positive fd-facet__object-status"
+    >
+      
+            
+      <span
+        class="fd-object-status__text"
+      >
+        Delivery
+      </span>
+      
+        
+    </span>
+    
+    
+  </div>
+  
+    
+  <div
+    aria-labelledby="kvFacetTitle6"
+    class="fd-facet__key-value"
+    role="group"
+  >
+    
+        
+    <div
+      class="fd-facet__title-container"
+    >
+      
+            
+      <h1
+        class="fd-facet__title"
+        id="kvFacetTitle6"
+      >
+         Delivery Time 
+      </h1>
+      
+        
+    </div>
+    
+        
+    <span
+      class="fd-object-status fd-object-status--negative fd-facet__object-status"
+    >
+      
+            
+      <span
+        class="fd-object-status__text"
+      >
+        12 days
+      </span>
+      
+        
+    </span>
+    
+    
+  </div>
+  
+    
+  <div
+    aria-labelledby="kvFacetTitle7"
+    class="fd-facet__key-value"
+    role="group"
+  >
+    
+        
+    <div
+      class="fd-facet__title-container"
+    >
+      
+            
+      <h1
+        class="fd-facet__title"
+        id="kvFacetTitle7"
+      >
+         Assembly Option 
+      </h1>
+      
+        
+    </div>
+    
+        
+    <span
+      class="fd-object-status fd-object-status--critical fd-facet__object-status"
+    >
+      
+            
+      <span
+        class="fd-object-status__text"
+      >
+        To be selected
+      </span>
+      
+        
+    </span>
+    
+    
+  </div>
+  
+    
+  <div
+    aria-labelledby="kvFacetTitle8"
+    class="fd-facet__key-value"
+    role="group"
+  >
+    
+        
+    <div
+      class="fd-facet__title-container"
+    >
+      
+            
+      <h1
+        class="fd-facet__title"
+        id="kvFacetTitle8"
+      >
+         Pricing 
+      </h1>
+      
+        
+    </div>
+    
+        
+    <span
+      class="fd-object-number fd-object-number--large  fd-facet__object-number"
+    >
+      
+            
+      <span
+        class="fd-object-number__text fd-facet__object-number-text"
+      >
+        -2,000.00
+      </span>
+      <span
+        class="fd-object-number__unit fd-facet__object-number-unit"
+      >
+        EUR
+      </span>
+      
+        
+    </span>
+    
+    
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Facets Rating Indicator Facet 1`] = `
+<div
+  aria-labelledby="ratingFacetTitle2"
+  class="fd-facet__rating-indicator-container"
+  role="group"
+>
+  
+        
+  <div
+    class="fd-facet__title-container"
+  >
+    
+            
+    <h1
+      class="fd-facet__title"
+      id="ratingFacetTitle2"
+    >
+      Average User Rating
+    </h1>
+    
+            
+    <h2
+      class="fd-facet__subtitle fd-form-label"
+    >
+      6 reviews
+    </h2>
+    
+        
+  </div>
+  
+        
+  <div
+    class="fd-rating-indicator fd-facet__rating-indicator"
+  >
+    
+            
+    <div
+      aria-label="Star Rating (out of 5)"
+      class="fd-rating-indicator__container fd-facet__rating-container"
+    >
+      
+            
+      <input
+        aria-label="1 star"
+        class="fd-rating-indicator__input"
+        id="1-rating-max-value-5-1"
+        name="1-rating-max-value-5"
+        type="radio"
+        value="1"
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="1-rating-max-value-5-1"
+      />
+      
+
+            
+      <input
+        aria-label="2 star"
+        class="fd-rating-indicator__input"
+        id="1-rating-max-value-5-2"
+        name="1-rating-max-value-5"
+        type="radio"
+        value="2"
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="1-rating-max-value-5-2"
+      />
+      
+
+            
+      <input
+        aria-label="3 star"
+        class="fd-rating-indicator__input"
+        id="1-rating-max-value-5-3"
+        name="1-rating-max-value-5"
+        type="radio"
+        value="3"
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="1-rating-max-value-5-3"
+      />
+      
+
+            
+      <input
+        aria-label="4 star"
+        checked=""
+        class="fd-rating-indicator__input"
+        id="1-rating-max-value-5-4"
+        name="1-rating-max-value-5"
+        type="radio"
+        value="4"
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="1-rating-max-value-5-4"
+      />
+      
+
+            
+      <input
+        aria-label="5 star"
+        class="fd-rating-indicator__input"
+        id="1-rating-max-value-5-5"
+        name="1-rating-max-value-5"
+        type="radio"
+        value="5"
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="1-rating-max-value-5-5"
+      />
+      
+            
+    </div>
+    
+            
+    <span
+      class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text"
+    >
+      (4 of 5)
+    </span>
+    
+        
+  </div>
+  
+    
+</div>
+`;
