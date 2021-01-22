@@ -7268,11 +7268,11 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--main-task-triangle"
+      class="sap-icon sap-icon--master-task-triangle"
       style="font-size:3rem"
     />
     <div>
-      .sap-icon--main-task-triangle
+      .sap-icon--master-task-triangle
     </div>
   </div>
   <br />
@@ -7280,11 +7280,11 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--main-task-triangle-2"
+      class="sap-icon sap-icon--master-task-triangle-2"
       style="font-size:3rem"
     />
     <div>
-      .sap-icon--main-task-triangle-2
+      .sap-icon--master-task-triangle-2
     </div>
   </div>
   <br />
