@@ -2,7 +2,7 @@ export default {
     title: 'Components/List/Standard',
     parameters: {
         description: `
-In SAP Fiori, we distinguish between tables and lists. Both usually contain homogeneous data, but lists generally have rather basic data, while the data in tables tend to be more complex. Lists are mostly used in the master list for a master-detail scenario using the flexible column layout, as well as in **Popovers** or **Dialogs**.
+In SAP Fiori, we distinguish between tables and lists. Both usually contain homogeneous data, but lists generally have rather basic data, while the data in tables tend to be more complex. Lists are mostly used in the main list for a main-detail scenario using the flexible column layout, as well as in **Popovers** or **Dialogs**.
 
 ##Usage
 **Use the standard list if:**

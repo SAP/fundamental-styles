@@ -31,7 +31,7 @@ To display large amounts of data in tabular form, several table components are p
 **Do not use the table if:**
 
 - You want to display a simple hierarchical dataset.
-- You want to use a hierarchical master list for a master-detail scenario using the **Flexible Column Layout**.
+- You want to use a hierarchical main list for a main-detail scenario using the **Flexible Column Layout**.
 - Using a tree table would be too complex.
 - The main use case involves selecting one of several hierarchical items with only a few details per item.
 

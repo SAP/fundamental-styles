@@ -19,7 +19,7 @@ export default {
 
 **Do not use the message strip if:**
 
-- You want to display information within the object page header, a control, in the master list, or above the page header.
+- You want to display information within the object page header, a control, in the main list, or above the page header.
 
         `,
         tags: ['f3', 'a11y', 'theme'],

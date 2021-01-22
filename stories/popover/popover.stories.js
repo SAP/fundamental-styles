@@ -12,7 +12,7 @@ export default {
 
 **Do not use a popover if:**
         
-- The objects are in a master list (in this case, the details are shown in the details area).
+- The objects are in a main list (in this case, the details are shown in the details area).
 
 
 ##Guidelines

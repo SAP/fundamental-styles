@@ -1,7 +1,7 @@
 export default {
     title: 'Components/Tree',
     parameters: {
-        description: `Tree allows the user to display and work with a hierarchical set of items. Trees are mostly used in the master list for a master-detail scenario using the **Flexible Column Layout** and in **Popovers** or **Dialogs**. In certain use cases, they can also be used in the **Dynamic Page Layout**.
+        description: `Tree allows the user to display and work with a hierarchical set of items. Trees are mostly used in the main list for a main-detail scenario using the **Flexible Column Layout** and in **Popovers** or **Dialogs**. In certain use cases, they can also be used in the **Dynamic Page Layout**.
         Items that contain additional items are called nodes, while items that do not contain any other items are called leaves. If available, a single top-most node is called a root node. Apart from the hierarchical structure of its nodes and leaves, a tree is quite similar to a **List**.
         
 ##Usage
