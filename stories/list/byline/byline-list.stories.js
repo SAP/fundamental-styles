@@ -28,7 +28,7 @@ Modifier/Class | Description
 \` fd-list__byline-right--*\` | To represent a semantic status, replace the * with either: _neutral_, _positive_, _negative_, _critical_ or _informative_.
 `,
         tags: ['f3', 'a11y', 'theme', 'development'],
-        components: ['list', 'icon', 'checkbox']
+        components: ['list', 'icon', 'checkbox', 'button']
     }
 };
 
@@ -158,6 +158,32 @@ navigation.parameters = {
         iframeHeight: 355,
         storyDescription: `
 Byline list items can contain navigation links. To add navigation, add the \`fd-list--navigation\` modifier class to the list and the \`fd-list__item--link\` modifier class to the list elements that contain links. All items should be navigable.
+`
+    }
+};
+
+export const buttons = () => `
+<ul class="fd-list fd-list--byline" role="list">
+    <li role="listitem" class="fd-list__item">
+        <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+        <div class="fd-list__content">
+            <span class="fd-list__title">List item 1</span>
+        </div>
+        <button class="fd-button fd-button--transparent fd-list__button">
+            <i class="sap-icon--edit"></i>
+        </button>
+        <button class="fd-button fd-button--transparent fd-list__button">
+            <i class="sap-icon--decline"></i>
+        </button>
+    </li>
+</ul>
+`;
+
+buttons.storyName = 'Buttons';
+buttons.parameters = {
+    docs: {
+        iframeHeight: 165,
+        storyDescription: `
 `
     }
 };

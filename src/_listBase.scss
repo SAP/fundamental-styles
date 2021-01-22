@@ -226,6 +226,15 @@
     }
   }
 
+  .#{$block}__button {
+    margin-left: var(--fdListButtonSpacing);
+
+    @include fd-rtl() {
+      margin-left: 0;
+      margin-right: var(--fdListButtonSpacing);
+    }
+  }
+
   &--compact {
     .#{$block}__item {
       height: 2rem;
