@@ -497,7 +497,7 @@ export const longText = () => `
     <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
     <div class="fd-list__content">
       <div class="fd-list__title">List Item Title</div>
-      <div class="fd-list__byline fd-list__byline--wrap">Very Long Byline (description), Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... <a class="fd-link fd-list__link--more" tabindex="0">More</a></div>
+      <div class="fd-list__byline fd-list__byline--wrap">Very Long Byline (description), Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... <a href="#" class="fd-link fd-list__link--more" tabindex="0">More</a></div>
     </div>
     <span class="fd-list__item-counter">12345</span>
 </li>

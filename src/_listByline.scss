@@ -78,7 +78,7 @@
     .#{$block}__link {
       &--more {
         text-transform: uppercase;
-        cursor: pointer;
+        pointer-events: all;
       }
     }
 
