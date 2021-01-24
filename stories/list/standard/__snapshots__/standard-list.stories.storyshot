@@ -287,6 +287,119 @@ exports[`Storyshots Components/List/Standard Borderless 1`] = `
 </ul>
 `;
 
+exports[`Storyshots Components/List/Standard Buttons 1`] = `
+<ul
+  class="fd-list"
+  role="list"
+>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="-1"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 1
+    </span>
+    
+    
+    <button
+      class="fd-button fd-button--transparent fd-list__button"
+    >
+      
+        
+      <i
+        class="sap-icon--edit"
+      />
+      
+    
+    </button>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="-1"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 1
+    </span>
+    
+    
+    <button
+      class="fd-button fd-button--transparent fd-list__button"
+    >
+      
+        
+      <i
+        class="sap-icon--decline"
+      />
+      
+    
+    </button>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="-1"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 2
+    </span>
+    
+    
+    <button
+      class="fd-button fd-button--transparent fd-list__button"
+    >
+      
+        
+      <i
+        class="sap-icon--edit"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fd-button fd-button--transparent fd-list__button"
+    >
+      
+        
+      <i
+        class="sap-icon--decline"
+      />
+      
+    
+    </button>
+    
+  
+  </li>
+  
+
+</ul>
+`;
+
 exports[`Storyshots Components/List/Standard Default 1`] = `
 <section>
   <h4>
