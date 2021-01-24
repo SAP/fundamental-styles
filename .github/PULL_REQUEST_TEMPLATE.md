@@ -41,6 +41,7 @@ Closes SAP/fundamental-styles#
 - [ ] tested Storybook examples with "CSS Resources" `unnormalize` option 
 - [ ] Verified all styles in IE11
 - [ ] Updated tests
+- [ ] last commit message should have `[ci visual]` so it can trigger chromatic visual regression (e.g. `test: run chromatic visual regression [ci visual]`)
 4. Documentation
 - [ ] Storybook documentation has been created/updated
 - [ ] Breaking Changes [wiki](https://github.com/SAP/fundamental-styles/wiki/Breaking-Changes) has been updated in case of breaking changes.
