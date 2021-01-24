@@ -7,7 +7,7 @@
       width: 100%;
       height: $fd-list-byline-item-height;
       padding: $fd-list-byline-item-padding-y $fd-list-byline-item-padding-x;
-      align-items: flex-start;
+      align-items: center;
     }
 
     .#{$block}__thumbnail {

@@ -198,6 +198,11 @@ exports[`Storyshots Components/List/Byline Borderless 1`] = `
 </ul>
 `;
 
+exports[`Storyshots Components/List/Byline Buttons 1`] = `
+
+
+`;
+
 exports[`Storyshots Components/List/Byline Default 1`] = `
 <section>
   <h4>

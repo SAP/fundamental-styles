@@ -19,7 +19,7 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
         
 `,
         tags: ['f3', 'a11y', 'theme', 'development'],
-        components: ['list', 'icon', 'checkbox']
+        components: ['list', 'icon', 'checkbox', 'button']
     }
 };
 
@@ -121,6 +121,40 @@ navigation.parameters = {
         iframeHeight: 165,
         storyDescription: `
 Standard list items can contain navigation links. To add navigation, add the \`fd-list—navigation\` modifier class to the list and the \`fd-list__item--link\` modifier class to the list elements that contain links. All items should be navigable.
+`
+    }
+};
+
+export const buttons = () => `<ul class="fd-list" role="list">
+  <li tabindex="-1" role="listitem" class="fd-list__item">
+    <span class="fd-list__title">List item 1</span>
+    <button class="fd-button fd-button--transparent fd-list__button">
+        <i class="sap-icon--edit"></i>
+    </button>
+  </li>
+  <li tabindex="-1" role="listitem" class="fd-list__item">
+    <span class="fd-list__title">List item 1</span>
+    <button class="fd-button fd-button--transparent fd-list__button">
+        <i class="sap-icon--decline"></i>
+    </button>
+  </li>
+  <li tabindex="-1" role="listitem" class="fd-list__item">
+    <span class="fd-list__title">List item 2</span>
+    <button class="fd-button fd-button--transparent fd-list__button">
+        <i class="sap-icon--edit"></i>
+    </button>
+    <button class="fd-button fd-button--transparent fd-list__button">
+        <i class="sap-icon--decline"></i>
+    </button>
+  </li>
+</ul>
+`;
+
+buttons.storyName = 'Buttons';
+buttons.parameters = {
+    docs: {
+        iframeHeight: 165,
+        storyDescription: `
 `
     }
 };
