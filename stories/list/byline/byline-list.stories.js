@@ -188,6 +188,33 @@ buttons.parameters = {
     }
 };
 
+export const interractive = () => `
+<ul class="fd-list fd-list--byline" role="list">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--interractive">
+        <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+        <div class="fd-list__content">
+          <div class="fd-list__title">Title</div>
+          <div class="fd-list__byline">Byline</div>
+        </div>
+    </li>
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--interractive is-selected">
+        <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
+        <div class="fd-list__content">
+          <div class="fd-list__title">Selected List</div>
+          <div class="fd-list__byline">Byline</div>
+        </div>
+    </li>
+</ul>
+`;
+
+interractive.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: `The \`fd-list__item--interractive\` will force list item to handle hover and active states. 
+            Usage of this modifier is not needed on \`Selection\`, \`Navigation\` and \`Action\` modes.`
+    }
+};
+
 export const navigationIndicator = () => `<ul class="fd-list fd-list--byline fd-list--navigation fd-list--navigation-indication" role="list">
 <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
   <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#"> 
