@@ -1,0 +1,105 @@
+@import "./mixins";
+@import "./avatar";
+
+/*!
+.fd-avatar-group+((--individual|--group), (--xxs|--xs|--s|--m|--l|--xl|--xxl)
+*/
+$block: #{$fd-namespace}-avatar-group;
+
+.#{$block} {
+  $fd-avatar-group-item-spacing: (
+    "individual": (
+      "xs": ("margin-right": 0.0625rem),
+      "s": ("margin-right": 0.125rem),
+      "m": ("margin-right": 0.125rem),
+      "l": ("margin-right": 0.125rem),
+      "xl": ("margin-right": 0.25rem)
+    ),
+    "group": (
+      "xs": ("margin-right": -0.75rem),
+      "s": ("margin-right": -1.25rem),
+      "m": ("margin-right": -1.625rem),
+      "l": ("margin-right": -2rem),
+      "xl": ("margin-right": -2.75rem)
+    )
+  );
+  $fd-const-ratio: 1rem;
+  $fd-avatar-group-more-button-sizes: (
+    "xs": ("ratio": ($fd-const-ratio * 2), "font-size": 1rem),
+    "s": ("ratio": ($fd-const-ratio * 3), "font-size": 1.125rem),
+    "m": ("ratio": ($fd-const-ratio * 4), "font-size": 1.5rem),
+    "l": ("ratio": ($fd-const-ratio * 5), "font-size": 2.25rem),
+    "xl": ("ratio": ($fd-const-ratio * 7), "font-size": 3rem)
+  );
+  $fd-focus-outline-offset: 0.0625rem;
+
+  @include fd-reset();
+
+  &--individual-type {
+    .#{$block}__item {
+      @include fd-fiori-focus($fd-focus-outline-offset);
+      @include action-cursor();
+    }
+  }
+
+  &--group-type {
+    @include fd-fiori-focus($fd-focus-outline-offset);
+    @include action-cursor();
+
+    .#{$block}__more-button {
+      pointer-events: none;
+    }
+  }
+
+  &__item {
+    @include fd-reset();
+
+    display: inline-block;
+  }
+
+  &__more-button {
+    @include fd-reset();
+
+    .#{$block}__button-text {
+      font-size: inherit;
+
+      bdi {
+        font-size: inherit;
+      }
+    }
+  }
+
+  @each $set-name, $size-set in $fd-avatar-group-more-button-sizes {
+    &--#{$set-name} {
+      .#{$block}__more-button {
+        @include fd-fiori-focus($fd-focus-outline-offset);
+
+        height: map_get($size-set, "ratio");
+        max-height: map_get($size-set, "ratio");
+        min-height: map_get($size-set, "ratio");
+        min-width: map_get($size-set, "ratio");
+        font-size: map_get($size-set, "font-size");
+        border-radius: 25rem;
+        border-width: var(--fdAvatarGroup_MoreButton_Border);
+      }
+    }
+  }
+
+  @each $type-name, $type-set in $fd-avatar-group-item-spacing {
+    @each $size-name, $size-set in map_get($fd-avatar-group-item-spacing, $type-name) {
+      &--#{$type-name}-type {
+        &.#{$block}--#{$size-name} {
+          .#{$block}__item {
+            margin-right: map_get($size-set, "margin-right");
+            margin-left: 0;
+
+            @include fd-rtl() {
+              margin-right: 0;
+              margin-left: map_get($size-set, "margin-right");
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -35,24 +35,19 @@ $block: #{$fd-namespace}-avatar;
     "10": ("background-color": var(--sapAccentColor10))
   );
 
-  // BLOCK BASE *******************************************
-  @at-root {
-    [class*="#{$block}"] {
-      @include fd-reset();
+  @include fd-reset();
 
-      border: var(--fdAvatar_Border);
-      color: var(--sapContent_ContrastTextColor);
-      background-color: $fd-avatar-background-color;
-      display: inline-block;
-      position: relative;
-      vertical-align: middle;
-      text-align: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50%;
-      border-radius: var(--sapElement_BorderCornerRadius);
-    }
-  }
+  border: var(--fdAvatar_Border);
+  color: var(--sapContent_ContrastTextColor);
+  background-color: $fd-avatar-background-color;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: var(--sapElement_BorderCornerRadius);
 
   // BLOCK ELEMENTS ************
   // zoom icon
