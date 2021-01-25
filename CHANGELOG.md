@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.15.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.3...v0.15.1-rc.4) (2021-01-25)
+
+
+### Features
+
+* introduce Avatar Group component ([#2066](https://github.com/SAP/fundamental-styles/issues/2066)) ([b150efb](https://github.com/SAP/fundamental-styles/commit/b150efb51d8bd0c77d0f2efa0897923276bbc47d))
+
 ### [0.15.1-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.2...v0.15.1-rc.3) (2021-01-25)
 
 
