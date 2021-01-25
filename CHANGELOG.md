@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.15.1-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.2...v0.15.1-rc.3) (2021-01-25)
+
+
+### Bug Fixes
+
+* Simplify object identifier ([#2067](https://github.com/SAP/fundamental-styles/issues/2067)) ([6d99d5f](https://github.com/SAP/fundamental-styles/commit/6d99d5fb0ec39b491bec4a636693523c3fd271bc))
+
 ### [0.15.1-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.1...v0.15.1-rc.2) (2021-01-24)
 
 
