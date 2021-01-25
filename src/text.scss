@@ -24,4 +24,11 @@ $block: #{$fd-namespace}-text;
   &--hyphenation {
     hyphens: auto;
   }
+
+  &__link {
+    &--more {
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
 }
