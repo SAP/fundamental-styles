@@ -15,9 +15,11 @@ $block: #{$fd-namespace}-table;
   @mixin fd-table-active() {
     background-color: var(--sapList_Active_Background);
     color: var(--sapList_Active_TextColor);
+    text-shadow: none;
 
     .#{$block}__cell {
       border-bottom-color: var(--sapList_SelectionBorderColor);
+      text-shadow: none;
 
       @include fd-hover() {
         background-color: var(--sapList_Active_Background);
@@ -42,6 +44,12 @@ $block: #{$fd-namespace}-table;
 
     @include fd-active() {
       @include fd-table-active();
+
+      &--focusable {
+        @include fd-fiori-focus() {
+          outline-color: var(--sapContent_ContrastFocusColor);
+        }
+      }
     }
   }
 
