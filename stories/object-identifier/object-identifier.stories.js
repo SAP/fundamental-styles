@@ -52,31 +52,33 @@ boldTitle.parameters = {
     }
 };
 
-export const titleAsLink = () => `<div class="fd-object-identifier">
-    <p class="fd-object-identifier__title fd-object-identifier__title--link">NoteBook Basic 15</p>
+export const titleAsLink = () => `
+<div class="fd-object-identifier">
+    <p class="fd-object-identifier__title">
+        <a href="#" class="fd-link fd-object-identifier__link">
+            NoteBook Basic 15
+        </a>
+    </p>
 </div>
 <br>
 <div class="fd-object-identifier">
-    <p class="fd-object-identifier__title fd-object-identifier__title--bold fd-object-identifier__title--link">NoteBook Basic 15</p>
-</div>
-<br>
-<div class="fd-object-identifier">
-    <p class="fd-object-identifier__title"><a href="#" class="fd-link fd-object-identifier__link">NoteBook Basic 15</a></p>
-</div>
-<br>
-<div class="fd-object-identifier">
-    <p class="fd-object-identifier__title fd-object-identifier__title--bold"><a href="#" class="fd-link fd-object-identifier__link">NoteBook Basic 15</a></p>
+    <p class="fd-object-identifier__title fd-object-identifier__title--bold">
+        <a href="#" class="fd-link fd-object-identifier__link">
+            NoteBook Basic 15
+        </a>
+    </p>
 </div>
 `;
 
 titleAsLink.storyName = 'Link';
 titleAsLink.parameters = {
     docs: {
-        storyDescription: 'To display the object identifier as a link, add the `fd-object-identifier__title--link` modifier class to the title element.'
+        storyDescription: 'To display the object identifier as a link, use anchor element with `.fd-link .fd-object-identifier__link` classes.'
     }
 };
 
-export const titleAndText = () => `<div class="fd-object-identifier">
+export const titleAndText = () => `
+<div class="fd-object-identifier">
     <p class="fd-object-identifier__title">NoteBook Basic 15</p>
     <p class="fd-object-identifier__text">Notebook Basic 15 with 2,80 GHz quad core, 15" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro</p>
 </div>
@@ -91,14 +93,22 @@ export const titleAndText = () => `<div class="fd-object-identifier">
 <br>
 
 <div class="fd-object-identifier">
-    <p class="fd-object-identifier__title fd-object-identifier__title--link">NoteBook Basic 15</p>
+    <p class="fd-object-identifier__title">
+        <a href="#" class="fd-link fd-object-identifier__link">
+            NoteBook Basic 15
+        </a>
+    </p>
     <p class="fd-object-identifier__text">Notebook Basic 15 with 2,80 GHz quad core, 15" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro</p>
 </div>
 
 <br>
 
 <div class="fd-object-identifier">
-    <p class="fd-object-identifier__title fd-object-identifier__title--bold fd-object-identifier__title--link">NoteBook Basic 15</p>
+    <p class="fd-object-identifier__title fd-object-identifier__title--bold">
+        <a href="#" class="fd-link fd-object-identifier__link">
+            NoteBook Basic 15
+        </a>
+    </p>
     <p class="fd-object-identifier__text">Notebook Basic 15 with 2,80 GHz quad core, 15" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro</p>
 </div>
 `;
@@ -110,56 +120,16 @@ titleAndText.parameters = {
     }
 };
 
-export const withTable = () => `<table class="fd-table fd-object-identifier__table">
-    <thead class="fd-table__header">
-        <tr class="fd-table__row">
-            <th class="fd-table__cell" scope="col">Product</th>
-            <th class="fd-table__cell" scope="col">Supplier</th>
-            <th class="fd-table__cell" scope="col">Weight</th>
-            <th class="fd-table__cell" scope="col">Price</th>
-        </tr>
-    </thead>
-    <tbody class="fd-table__body">
-        <tr class="fd-table__row">
-            <td class="fd-table__cell">
-                <div class="fd-object-identifier">
-                    <p class="fd-object-identifier__title">10" Portable DVD player</p>
-                    <p class="fd-object-identifier__text">HT-2001</p>
-                </div>
-            </td>
-            <td class="fd-table__cell">Titanium</td>
-            <td class="fd-table__cell">0.84 KG</td>
-            <td class="fd-table__cell">449.99 EUR</td>
-        </tr>
-        <tr class="fd-table__row">
-            <td class="fd-table__cell">
-                <div class="fd-object-identifier">
-                    <p class="fd-object-identifier__title fd-object-identifier__title--bold">Astro Phone 6</p>
-                    <p class="fd-object-identifier__text">HT-1252</p>
-                </div>
-            </td>
-            <td class="fd-table__cell">Technocom</td>
-            <td class="fd-table__cell">1.79 KG</td>
-            <td class="fd-table__cell">349.99 EUR</td>
-        </tr>
-        <tr class="fd-table__row">
-            <td class="fd-table__cell">
-                <div class="fd-object-identifier">
-                    <p class="fd-object-identifier__title fd-object-identifier__title--link">Blaster Extreme</p>
-                    <p class="fd-object-identifier__text">HT-1091</p>
-                </div>
-            </td>
-            <td class="fd-table__cell">Ultrasonic United</td>
-            <td class="fd-table__cell">0.79 KG</td>
-            <td class="fd-table__cell">249.99 EUR</td>
-        </tr>
-    </tbody>
-</table>
+export const mediumSize = () => `
+<div class="fd-object-identifier fd-object-identifier--medium">
+    <p class="fd-object-identifier__title">NoteBook Basic 15</p>
+    <p class="fd-object-identifier__text">Notebook Basic 15 with 2,80 GHz quad core, 15" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro</p>
+</div>
 `;
 
-withTable.storyName = 'Table';
-withTable.parameters = {
+mediumSize.storyName = 'Medium Size';
+mediumSize.parameters = {
     docs: {
-        storyDescription: 'To display the object identifier in a table, add the `fd-object-identifier__table` class to the table then add the `fd-object-identifier` within the table cells, along with any additional tags to include modifier classes for the styles mentioned above.'
+        storyDescription: 'To display the object identifier title in medium size, add the `fd-object-identifier--medium` modifier.'
     }
 };

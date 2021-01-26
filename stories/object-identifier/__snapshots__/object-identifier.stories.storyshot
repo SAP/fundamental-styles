@@ -18,6 +18,8 @@ exports[`Storyshots Components/Object Identifier Bold 1`] = `
 
 exports[`Storyshots Components/Object Identifier Descriptive 1`] = `
 <section>
+  
+
   <div
     class="fd-object-identifier"
   >
@@ -78,9 +80,20 @@ exports[`Storyshots Components/Object Identifier Descriptive 1`] = `
     
     
     <p
-      class="fd-object-identifier__title fd-object-identifier__title--link"
+      class="fd-object-identifier__title"
     >
-      NoteBook Basic 15
+      
+        
+      <a
+        class="fd-link fd-object-identifier__link"
+        href="#"
+      >
+        
+            NoteBook Basic 15
+        
+      </a>
+      
+    
     </p>
     
     
@@ -105,9 +118,20 @@ exports[`Storyshots Components/Object Identifier Descriptive 1`] = `
     
     
     <p
-      class="fd-object-identifier__title fd-object-identifier__title--bold fd-object-identifier__title--link"
+      class="fd-object-identifier__title fd-object-identifier__title--bold"
     >
-      NoteBook Basic 15
+      
+        
+      <a
+        class="fd-link fd-object-identifier__link"
+        href="#"
+      >
+        
+            NoteBook Basic 15
+        
+      </a>
+      
+    
     </p>
     
     
@@ -126,40 +150,6 @@ exports[`Storyshots Components/Object Identifier Descriptive 1`] = `
 
 exports[`Storyshots Components/Object Identifier Link 1`] = `
 <section>
-  <div
-    class="fd-object-identifier"
-  >
-    
-    
-    <p
-      class="fd-object-identifier__title fd-object-identifier__title--link"
-    >
-      NoteBook Basic 15
-    </p>
-    
-
-  </div>
-  
-
-  <br />
-  
-
-  <div
-    class="fd-object-identifier"
-  >
-    
-    
-    <p
-      class="fd-object-identifier__title fd-object-identifier__title--bold fd-object-identifier__title--link"
-    >
-      NoteBook Basic 15
-    </p>
-    
-
-  </div>
-  
-
-  <br />
   
 
   <div
@@ -170,12 +160,18 @@ exports[`Storyshots Components/Object Identifier Link 1`] = `
     <p
       class="fd-object-identifier__title"
     >
+      
+        
       <a
         class="fd-link fd-object-identifier__link"
         href="#"
       >
-        NoteBook Basic 15
+        
+            NoteBook Basic 15
+        
       </a>
+      
+    
     </p>
     
 
@@ -193,12 +189,18 @@ exports[`Storyshots Components/Object Identifier Link 1`] = `
     <p
       class="fd-object-identifier__title fd-object-identifier__title--bold"
     >
+      
+        
       <a
         class="fd-link fd-object-identifier__link"
         href="#"
       >
-        NoteBook Basic 15
+        
+            NoteBook Basic 15
+        
       </a>
+      
+    
     </p>
     
 
@@ -208,246 +210,9 @@ exports[`Storyshots Components/Object Identifier Link 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Object Identifier Table 1`] = `
-<table
-  class="fd-table fd-object-identifier__table"
->
-  
-    
-  <thead
-    class="fd-table__header"
-  >
-    
-        
-    <tr
-      class="fd-table__row"
-    >
-      
-            
-      <th
-        class="fd-table__cell"
-        scope="col"
-      >
-        Product
-      </th>
-      
-            
-      <th
-        class="fd-table__cell"
-        scope="col"
-      >
-        Supplier
-      </th>
-      
-            
-      <th
-        class="fd-table__cell"
-        scope="col"
-      >
-        Weight
-      </th>
-      
-            
-      <th
-        class="fd-table__cell"
-        scope="col"
-      >
-        Price
-      </th>
-      
-        
-    </tr>
-    
-    
-  </thead>
-  
-    
-  <tbody
-    class="fd-table__body"
-  >
-    
-        
-    <tr
-      class="fd-table__row"
-    >
-      
-            
-      <td
-        class="fd-table__cell"
-      >
-        
-                
-        <div
-          class="fd-object-identifier"
-        >
-          
-                    
-          <p
-            class="fd-object-identifier__title"
-          >
-            10" Portable DVD player
-          </p>
-          
-                    
-          <p
-            class="fd-object-identifier__text"
-          >
-            HT-2001
-          </p>
-          
-                
-        </div>
-        
-            
-      </td>
-      
-            
-      <td
-        class="fd-table__cell"
-      >
-        Titanium
-      </td>
-      
-            
-      <td
-        class="fd-table__cell"
-      >
-        0.84 KG
-      </td>
-      
-            
-      <td
-        class="fd-table__cell"
-      >
-        449.99 EUR
-      </td>
-      
-        
-    </tr>
-    
-        
-    <tr
-      class="fd-table__row"
-    >
-      
-            
-      <td
-        class="fd-table__cell"
-      >
-        
-                
-        <div
-          class="fd-object-identifier"
-        >
-          
-                    
-          <p
-            class="fd-object-identifier__title fd-object-identifier__title--bold"
-          >
-            Astro Phone 6
-          </p>
-          
-                    
-          <p
-            class="fd-object-identifier__text"
-          >
-            HT-1252
-          </p>
-          
-                
-        </div>
-        
-            
-      </td>
-      
-            
-      <td
-        class="fd-table__cell"
-      >
-        Technocom
-      </td>
-      
-            
-      <td
-        class="fd-table__cell"
-      >
-        1.79 KG
-      </td>
-      
-            
-      <td
-        class="fd-table__cell"
-      >
-        349.99 EUR
-      </td>
-      
-        
-    </tr>
-    
-        
-    <tr
-      class="fd-table__row"
-    >
-      
-            
-      <td
-        class="fd-table__cell"
-      >
-        
-                
-        <div
-          class="fd-object-identifier"
-        >
-          
-                    
-          <p
-            class="fd-object-identifier__title fd-object-identifier__title--link"
-          >
-            Blaster Extreme
-          </p>
-          
-                    
-          <p
-            class="fd-object-identifier__text"
-          >
-            HT-1091
-          </p>
-          
-                
-        </div>
-        
-            
-      </td>
-      
-            
-      <td
-        class="fd-table__cell"
-      >
-        Ultrasonic United
-      </td>
-      
-            
-      <td
-        class="fd-table__cell"
-      >
-        0.79 KG
-      </td>
-      
-            
-      <td
-        class="fd-table__cell"
-      >
-        249.99 EUR
-      </td>
-      
-        
-    </tr>
-    
-    
-  </tbody>
-  
+exports[`Storyshots Components/Object Identifier Medium Size 1`] = `
 
-</table>
+
 `;
 
 exports[`Storyshots Components/Object Identifier Title 1`] = `

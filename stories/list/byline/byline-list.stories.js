@@ -28,7 +28,7 @@ Modifier/Class | Description
 \` fd-list__byline-right--*\` | To represent a semantic status, replace the * with either: _neutral_, _positive_, _negative_, _critical_ or _informative_.
 `,
         tags: ['f3', 'a11y', 'theme', 'development'],
-        components: ['list', 'icon', 'checkbox', 'link']
+        components: ['list', 'icon', 'checkbox', 'link', 'button']
     }
 };
 
@@ -158,6 +158,32 @@ navigation.parameters = {
         iframeHeight: 355,
         storyDescription: `
 Byline list items can contain navigation links. To add navigation, add the \`fd-list--navigation\` modifier class to the list and the \`fd-list__item--link\` modifier class to the list elements that contain links. All items should be navigable.
+`
+    }
+};
+
+export const buttons = () => `
+<ul class="fd-list fd-list--byline" role="list">
+    <li role="listitem" class="fd-list__item">
+        <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+        <div class="fd-list__content">
+            <span class="fd-list__title">List item 1</span>
+        </div>
+        <button class="fd-button fd-button--transparent fd-list__button">
+            <i class="sap-icon--edit"></i>
+        </button>
+        <button class="fd-button fd-button--transparent fd-list__button">
+            <i class="sap-icon--decline"></i>
+        </button>
+    </li>
+</ul>
+`;
+
+buttons.storyName = 'Buttons';
+buttons.parameters = {
+    docs: {
+        iframeHeight: 165,
+        storyDescription: `
 `
     }
 };
@@ -513,7 +539,7 @@ style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_no
   <div class="fd-list__content">
       <div class="fd-list__title fd-list__title--wrap">List item with 2-column byline and also a very long title, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
       <div class="fd-list__byline fd-list__byline--2-col">
-          <div class="fd-list__byline-left fd-list__byline-left--wrap">First text item in byline (standard text), Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+          <div class="fd-list__byline-left fd-list__byline-left--wrap">First text item in byline (standard text), Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<a href="#" class="fd-link fd-list__link--more" tabindex="0">Less</a></div>
           <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
       </div>
   </div>

@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.15.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.3...v0.15.1-rc.4) (2021-01-25)
+
+
+### Features
+
+* introduce Avatar Group component ([#2066](https://github.com/SAP/fundamental-styles/issues/2066)) ([b150efb](https://github.com/SAP/fundamental-styles/commit/b150efb51d8bd0c77d0f2efa0897923276bbc47d))
+
+### [0.15.1-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.2...v0.15.1-rc.3) (2021-01-25)
+
+
+### Bug Fixes
+
+* Simplify object identifier ([#2067](https://github.com/SAP/fundamental-styles/issues/2067)) ([6d99d5f](https://github.com/SAP/fundamental-styles/commit/6d99d5fb0ec39b491bec4a636693523c3fd271bc))
+
+### [0.15.1-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.1...v0.15.1-rc.2) (2021-01-24)
+
+
+### Features
+
+* button inside list ([#2075](https://github.com/SAP/fundamental-styles/issues/2075)) ([940bad6](https://github.com/SAP/fundamental-styles/commit/940bad67815bd9d823e10998ace85a0bc3e60bb2))
+
 ### [0.15.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.0...v0.15.1-rc.1) (2021-01-22)
 
 ### [0.15.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.15.0...v0.15.1-rc.0) (2021-01-21)

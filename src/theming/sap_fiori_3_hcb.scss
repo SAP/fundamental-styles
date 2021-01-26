@@ -47,6 +47,9 @@
   --fdAvatar_Border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
   --fdAvatar_Accent_Color: var(--sapBackgroundColor);
 
+  /* Avatar Group */
+  --fdAvatarGroup_MoreButton_Border: 0.125rem;
+
   /* Tabs */
   --fdTabs_Selected_Color: var(--sapIndicationColor_5);
   --fdTabs_Selected_Icon_Color: var(--sapBaseColor);
@@ -94,6 +97,7 @@
 
   /* List */
   --fdListBase_Text_Shadow: 0 0 0.125rem #000;
+  --fdListButtonSpacing: 0.25rem;
 
   /* Button */
   --fdButton_Text_Shadow: 0 0 0.125rem #000;
