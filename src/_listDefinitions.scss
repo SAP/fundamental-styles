@@ -118,6 +118,7 @@ $semantic-color: (
     &.#{$block}__link--navigation-indicator::after,
     & {
       color: var(--sapList_Active_TextColor);
+      text-shadow: none;
     }
 
     @each $set-name, $color-set in $semantic-color {
