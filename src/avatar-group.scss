@@ -32,6 +32,18 @@ $block: #{$fd-namespace}-avatar-group;
     "xl": ("ratio": ($fd-const-ratio * 7), "font-size": 3rem)
   );
   $fd-focus-outline-offset: 0.0625rem;
+  $fd-avatar-group-more-button-accent-colors: (
+    "1": ("background-color": var(--sapAccentColor1)),
+    "2": ("background-color": var(--sapAccentColor2)),
+    "3": ("background-color": var(--sapAccentColor3)),
+    "4": ("background-color": var(--sapAccentColor4)),
+    "5": ("background-color": var(--sapAccentColor5)),
+    "6": ("background-color": var(--sapAccentColor6)),
+    "7": ("background-color": var(--sapAccentColor7)),
+    "8": ("background-color": var(--sapAccentColor8)),
+    "9": ("background-color": var(--sapAccentColor9)),
+    "10": ("background-color": var(--sapAccentColor10))
+  );
 
   @include fd-reset();
 
@@ -100,6 +112,13 @@ $block: #{$fd-namespace}-avatar-group;
           }
         }
       }
+    }
+  }
+
+  @each $accent-name, $color-set in $fd-avatar-group-more-button-accent-colors {
+    .#{$block}__more-button--accent-color-#{$accent-name} {
+      background-color: map_get($color-set, "background-color");
+      color: var(--fdAvatar_Accent_Color);
     }
   }
 }
