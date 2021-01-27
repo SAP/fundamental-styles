@@ -349,7 +349,7 @@ exports[`Storyshots Components/Facets Combination of facets 1`] = `
       
                 
       <h2
-        class="fd-facet__subtitle fd-form-label"
+        class="fd-form-label"
       >
         6 reviews
       </h2>
@@ -1291,7 +1291,7 @@ exports[`Storyshots Components/Facets Facets in Object Page 1`] = `
               
                                 
               <h2
-                class="fd-facet__subtitle fd-form-label"
+                class="fd-form-label"
               >
                 6 reviews
               </h2>
@@ -3079,7 +3079,7 @@ exports[`Storyshots Components/Facets Rating Indicator Facet 1`] = `
     
             
     <h2
-      class="fd-facet__subtitle fd-form-label"
+      class="fd-form-label"
     >
       6 reviews
     </h2>

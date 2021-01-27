@@ -155,8 +155,6 @@ $block: #{$fd-namespace}-facet;
   }
 
   &__rating-indicator {
-    @include fd-reset();
-
     flex-direction: column;
 
     .#{$block}__rating-container {

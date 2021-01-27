@@ -4,7 +4,7 @@ export default {
         description: `Facets can be used as a standalone component or linked to another component. Facets are usually a part of the *Object Page* header content.
         Each facet adapts its size to the content and makes optimal use of the space without truncating the texts. If the facets do not all fit on one line, those on the right wrap to the line below. `,
         tags: ['f3', 'a11y', 'theme', 'development'],
-        components: ['facet', 'form-label', 'object-status', 'object-number', 'icon', 'button', 'rating-indicator', 'avatar', 'bar', 'breadcrumb', 'tabs', 'popover', 'toolbar', 'dynamic-page']
+        components: ['facet', 'form-label', 'object-status', 'object-number', 'icon', 'button', 'rating-indicator', 'avatar', 'link', 'bar', 'breadcrumb', 'tabs', 'popover', 'toolbar', 'dynamic-page']
     }
 };
 
@@ -74,7 +74,7 @@ export const combined = () =>
         <div class="fd-facet__rating-indicator-container" role="group" aria-labelledby="ratingFacetTitle1">
             <div class="fd-facet__title-container">
                 <h1 class="fd-facet__title" id="ratingFacetTitle1">Average User Rating</h1>
-                <h2 class="fd-facet__subtitle fd-form-label">6 reviews</h2>
+                <h2 class="fd-form-label">6 reviews</h2>
             </div>
             <div class="fd-rating-indicator fd-facet__rating-indicator">
                 <div class="fd-rating-indicator__container fd-facet__rating-container" aria-label="Star Rating (out of 5)">
@@ -224,7 +224,7 @@ export const ratingIndicator = () =>
     `<div class="fd-facet__rating-indicator-container" role="group" aria-labelledby="ratingFacetTitle2">
         <div class="fd-facet__title-container">
             <h1 class="fd-facet__title" id="ratingFacetTitle2">Average User Rating</h1>
-            <h2 class="fd-facet__subtitle fd-form-label">6 reviews</h2>
+            <h2 class="fd-form-label">6 reviews</h2>
         </div>
         <div class="fd-rating-indicator fd-facet__rating-indicator">
             <div class="fd-rating-indicator__container fd-facet__rating-container" aria-label="Star Rating (out of 5)">
@@ -423,7 +423,7 @@ export const objectPage = () =>
                         <div class="fd-facet__rating-indicator-container" role="group" aria-labelledby="ratingFacetTitle3">
                             <div class="fd-facet__title-container">
                                 <h1 class="fd-facet__title" id="ratingFacetTitle3">Average User Rating</h1>
-                                <h2 class="fd-facet__subtitle fd-form-label">6 reviews</h2>
+                                <h2 class="fd-form-label">6 reviews</h2>
                             </div>
                             <div class="fd-rating-indicator fd-facet__rating-indicator">
                                 <div class="fd-rating-indicator__container fd-facet__rating-container" aria-label="Star Rating (out of 5)">
