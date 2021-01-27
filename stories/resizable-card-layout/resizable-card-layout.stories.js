@@ -5,7 +5,7 @@ export default {
         
 This layout gives users much greater flexibility in tailoring the overview page to their specific business needs. And it allows app teams to offer varying levels of detail for any given card. Whenever the size of a card changes, the content adapts automatically to show the most relevant information in the available space.
 
-Cards can be increased and decreased vertically in rows of 1 rem and horizontally in steps of 20 rem (minimum width).
+Cards can be resized vertically in rows of 1 rem and horizontally in steps of 20 rem (minimum width).
         `,
         tags: ['f3', 'theme', 'development'],
         components: [
