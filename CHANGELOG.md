@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.15.1-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.5...v0.15.1-rc.6) (2021-01-27)
+
+
+### Features
+
+* list interractive states ([#2068](https://github.com/SAP/fundamental-styles/issues/2068)) ([cd0d456](https://github.com/SAP/fundamental-styles/commit/cd0d4566897a4838c8b934b19197f2b14fb1c868))
+
 ### [0.15.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.4...v0.15.1-rc.5) (2021-01-27)
 
 
