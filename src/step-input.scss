@@ -11,6 +11,52 @@ $block: #{$fd-namespace}-step-input;
   $fd-step-input-compact-button-width: 1.5rem;
   $fd-step-input-description-padding: 0.5rem;
   $fd-step-input-semantic-border-offset: 0.125rem;
+  $fd-step-input-button-outline-border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+  $fd-step-input-button-outline-offset: 0.0625rem;
+
+  @mixin fd-step-input-button-focus($left: false, $right: false) {
+    @include fd-hover() {
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        border-top: $fd-step-input-button-outline-border;
+        border-bottom: $fd-step-input-button-outline-border;
+        top: $fd-step-input-button-outline-offset;
+        left: $fd-step-input-button-outline-offset;
+        right: $fd-step-input-button-outline-offset;
+        bottom: $fd-step-input-button-outline-offset;
+
+        @if $left {
+          border-left: $fd-step-input-button-outline-border;
+        }
+
+        @if $right {
+          border-right: $fd-step-input-button-outline-border;
+        }
+      }
+
+      @include fd-rtl() {
+        &::after {
+          @if $left {
+            border-right: $fd-step-input-button-outline-border;
+            border-left: none;
+          }
+
+          @if $right {
+            border-left: $fd-step-input-button-outline-border;
+            border-right: none;
+          }
+        }
+      }
+
+      @include fd-active() {
+        &::after {
+          border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_ContrastFocusColor);
+        }
+      }
+    }
+  }
 
   @include fd-reset();
   @include fd-form-states();
@@ -27,6 +73,16 @@ $block: #{$fd-namespace}-step-input;
   align-items: center;
   line-height: 0;
 
+  &:focus-within {
+    .#{$block}__button.#{$fd-namespace}-button:first-child {
+      @include fd-step-input-button-focus($left: true);
+    }
+
+    .#{$block}__button.#{$fd-namespace}-button:last-child {
+      @include fd-step-input-button-focus($right: true);
+    }
+  }
+
   &__button.#{$fd-namespace}-button {
     width: $fd-step-input-cozy-button-width;
     min-width: $fd-step-input-cozy-button-width;
@@ -37,6 +93,7 @@ $block: #{$fd-namespace}-step-input;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 
     &::before,
     &::after {
@@ -46,10 +103,6 @@ $block: #{$fd-namespace}-step-input;
 
     @include fd-focus() {
       outline: none;
-
-      @include fd-hover() {
-        z-index: auto;
-      }
     }
 
     &--compact {
@@ -77,6 +130,10 @@ $block: #{$fd-namespace}-step-input;
 
     &--compact {
       height: 100%;
+    }
+
+    @include fd-hover() {
+      background-color: transparent;
     }
   }
 
