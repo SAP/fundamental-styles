@@ -2625,6 +2625,13 @@ exports[`Storyshots Components/Shellbar Small 1`] = `
                         Notifications Out
                       </span>
                       
+                                                
+                      <span
+                        class="fd-counter fd-shellbar__counter--overflowed"
+                      >
+                        21
+                      </span>
+                      
                                             
                     </a>
                     
@@ -2647,6 +2654,13 @@ exports[`Storyshots Components/Shellbar Small 1`] = `
                         class="fd-menu__title"
                       >
                         Pool
+                      </span>
+                      
+                                                
+                      <span
+                        class="fd-counter fd-shellbar__counter--overflowed"
+                      >
+                        4
                       </span>
                       
                                             
