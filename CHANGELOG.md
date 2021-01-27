@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.15.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.4...v0.15.1-rc.5) (2021-01-27)
+
+
+### Features
+
+* introduce expand example for the Text component [ci visual] ([#2084](https://github.com/SAP/fundamental-styles/issues/2084)) ([e2c8be9](https://github.com/SAP/fundamental-styles/commit/e2c8be9279470b1a47e059f1cec3918e0ca0eb5f))
+
 ### [0.15.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.3...v0.15.1-rc.4) (2021-01-25)
 
 
