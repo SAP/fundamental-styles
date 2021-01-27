@@ -1,0 +1,224 @@
+@import './new-settings';
+@import './mixins';
+@import './icon';
+
+$block: #{$fd-namespace}-resizable-card-layout;
+
+.#{$block} {
+  @include fd-reset();
+
+  display: grid;
+  grid-auto-rows: 1rem;
+  gap: 1rem;
+
+  .fd-card-container {
+    position: relative;
+
+    &__card {
+      float: left;
+      width: 99.5%;
+      height: 100%;
+
+      @include fd-rtl() {
+        float: right;
+      }
+    }
+
+    &__resize {
+      &__direction {
+        &--horizontal {
+          resize: horizontal;
+          overflow: hidden;
+        }
+
+        &--vertical {
+          resize: vertical;
+          overflow: hidden;
+        }
+
+        &--both {
+          resize: both;
+          overflow: hidden;
+        }
+      }
+
+      &__cursor {
+        &--horizontal {
+          cursor: ew-resize;
+        }
+
+        &--vertical {
+          cursor: ns-resize;
+        }
+
+        &--both {
+          cursor: nwse-resize;
+
+          @include fd-rtl() {
+            cursor: nesw-resize;
+          }
+        }
+      }
+
+      &__handle {
+        &--vertical-handle {
+          float: right;
+          height: 96%;
+          width: 0.0625rem;
+          cursor: ew-resize;
+
+          @include fd-rtl() {
+            float: left;
+          }
+        }
+
+        &--vertical-handle::after {
+          content: '';
+          position: absolute;
+        }
+
+        &--horizontal-handle {
+          width: 96%;
+          height: 0.0625rem;
+          position: absolute;
+          bottom: 0;
+          cursor: ns-resize;
+        }
+      }
+
+      &--indication-border {
+        border: 0.125rem dashed var(--sapContent_DragAndDropActiveColor, #0854a0);
+      }
+
+      &--icon {
+        @include fd-icon('resize-corner');
+
+        font-size: 1rem;
+        position: absolute;
+        // positioning icon at bottom corner
+        bottom: -0.1875rem;
+        right: 0.0625rem;
+        z-index: 1;
+        cursor: nwse-resize;
+
+        @include fd-rtl() {
+          right: auto;
+          left: 0.25rem;
+          transform: rotate(90deg);
+          cursor: nesw-resize;
+        }
+      }
+    }
+
+    &__row-span {
+      grid-row-end: span 1;
+    }
+
+    &__row-span-1 {
+      grid-row-end: span 1;
+    }
+
+    &__row-span-2 {
+      grid-row-end: span 2;
+    }
+
+    &__row-span-3 {
+      grid-row-end: span 3;
+    }
+
+    &__row-span-4 {
+      grid-row-end: span 4;
+    }
+
+    &__row-span-5 {
+      grid-row-end: span 5;
+    }
+
+    &__row-span-6 {
+      grid-row-end: span 6;
+    }
+
+    &__row-span-7 {
+      grid-row-end: span 7;
+    }
+
+    &__row-span-8 {
+      grid-row-end: span 8;
+    }
+
+    &__row-span-9 {
+      grid-row-end: span 9;
+    }
+
+    &__row-span-10 {
+      grid-row-end: span 10;
+    }
+
+    &__row-span-15 {
+      grid-row-end: span 15;
+    }
+
+    &__row-span-20 {
+      grid-row-end: span 20;
+    }
+
+    &__row-span-25 {
+      grid-row-end: span 25;
+    }
+
+    &__col-span-1 {
+      grid-column-end: span 1;
+    }
+
+    &__col-span-2 {
+      grid-column-end: span 2;
+    }
+
+    &__col-span-3 {
+      grid-column-end: span 3;
+    }
+
+    &__col-span-4 {
+      grid-column-end: span 4;
+    }
+  }
+}
+
+// 1 column layout
+@media (max-width: 656px) {
+  .#{$block} {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+    grid-template-columns: repeat(1, 20rem);
+  }
+}
+
+// 2 column layout
+@media (min-width: 656px) {
+  .#{$block} {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    grid-template-columns: repeat(2, 20rem);
+  }
+}
+
+// 3 column layout
+@media (min-width: 976px) {
+  .#{$block} {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    grid-template-columns: repeat(3, 20rem);
+  }
+}
+
+@media (min-width: 1360px) {
+  .#{$block} {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    grid-template-columns: repeat(4, 20rem);
+  }
+}
