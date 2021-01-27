@@ -895,6 +895,108 @@ exports[`Storyshots Components/List/Standard Icon 1`] = `
 </ul>
 `;
 
+exports[`Storyshots Components/List/Standard Interractive 1`] = `
+<section>
+  <h4>
+    Interractive Items
+  </h4>
+  
+
+  <ul
+    class="fd-list"
+    role="list"
+  >
+    
+  
+    <li
+      class="fd-list__item fd-list__item--interractive"
+      role="listitem"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__title"
+      >
+        List item 1
+      </span>
+      
+  
+    </li>
+    
+  
+    <li
+      class="fd-list__item fd-list__item--interractive"
+      role="listitem"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__title"
+      >
+        List item 2
+      </span>
+      
+  
+    </li>
+    
+  
+    <li
+      class="fd-list__item fd-list__item--interractive"
+      role="listitem"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__title"
+      >
+        List item 3
+      </span>
+      
+  
+    </li>
+    
+  
+    <li
+      class="fd-list__item fd-list__item--interractive"
+      role="listitem"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__title"
+      >
+        List item 4
+      </span>
+      
+  
+    </li>
+    
+  
+    <li
+      class="fd-list__item fd-list__item--interractive is-selected"
+      role="listitem"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__title"
+      >
+        List item 5 - with .is-selected
+      </span>
+      
+  
+    </li>
+    
+
+  </ul>
+</section>
+`;
+
 exports[`Storyshots Components/List/Standard Item Counter 1`] = `
 <ul
   class="fd-list"
