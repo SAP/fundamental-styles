@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.15.1-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.7...v0.15.1-rc.8) (2021-01-27)
+
+
+### Bug Fixes
+
+* add fix for Table text shadow and focus color ([#2088](https://github.com/SAP/fundamental-styles/issues/2088)) ([efefe2c](https://github.com/SAP/fundamental-styles/commit/efefe2c9546013ab4db091e8e0d766fff8d44924))
+
 ### [0.15.1-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.6...v0.15.1-rc.7) (2021-01-27)
 
 
