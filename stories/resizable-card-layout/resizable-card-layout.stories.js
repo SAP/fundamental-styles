@@ -96,7 +96,7 @@ export const resizableCardLayout = () => `
     <div id="three" class="fd-card-container fd-card-container__row-span-10 fd-card-container__resize__direction--both">
         <div class="fd-card-container__resize__handle--vertical-handle"></div>
         <div class="fd-card-container__card">
-            <div class="fd-card" role="region" aria-label="List Card Example 1">
+            <div class="fd-card" role="region" aria-label="List Card Example 2">
                 <a class="fd-card__header" tabindex="0">
                     <div class="fd-card__header-text">
                         <div class="fd-card__title-area">
@@ -272,7 +272,7 @@ export const resizableCardLayout = () => `
     <div id="six" class="fd-card-container fd-card-container__row-span-10 fd-card-container__resize__direction--horizontal">
         <div class="fd-card-container__resize__handle--vertical-handle"></div>
         <div class="fd-card-container__card">
-            <div class="fd-card" role="region" aria-label="List Card Example 1">
+            <div class="fd-card" role="region" aria-label="List Card Example 3">
                 <a class="fd-card__header" tabindex="0">
                     <div class="fd-card__header-text">
                         <div class="fd-card__title-area">
@@ -323,7 +323,7 @@ export const resizeCardHorizontalVerticalDirection = () => `
         <div id="one" class="fd-card-container fd-card-container__row-span-8 fd-card-container__resize__direction--both fd-card-container__resize--indication-border">
             <div class="fd-card-container__resize__handle--vertical-handle"></div>
             <div class="fd-card-container__card">
-                <div class="fd-card" role="region" aria-label="List Card Example 1">
+                <div class="fd-card" role="region" aria-label="List Card Example 4">
                     <a class="fd-card__header" tabindex="0">
                         <div class="fd-card__header-text">
                             <div class="fd-card__title-area">
@@ -374,7 +374,7 @@ export const resizeCardHorizontalDirection = () => `
         <div id="one" class="fd-card-container fd-card-container__row-span-8 fd-card-container__resize__direction--horizontal fd-card-container__resize--indication-border">
             <div class="fd-card-container__resize__handle--vertical-handle"></div>
             <div class="fd-card-container__card">
-                <div class="fd-card" role="region" aria-label="List Card Example 1">
+                <div class="fd-card" role="region" aria-label="List Card Example 5">
                     <a class="fd-card__header" tabindex="0">
                         <div class="fd-card__header-text">
                             <div class="fd-card__title-area">
@@ -423,7 +423,7 @@ export const resizeCardVerticalDirection = () => `
     <div class="fd-resizable-card-layout">
         <div id="one" class="fd-card-container fd-card-container__row-span-8 fd-card-container__resize__direction--vertical fd-card-container__resize--indication-border">
             <div class="fd-card-container__card">
-                <div class="fd-card" role="region" aria-label="List Card Example 1">
+                <div class="fd-card" role="region" aria-label="List Card Example 6">
                     <a class="fd-card__header" tabindex="0">
                         <div class="fd-card__header-text">
                             <div class="fd-card__title-area">

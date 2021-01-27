@@ -3,19 +3,48 @@
 @import './icon';
 
 $block: #{$fd-namespace}-resizable-card-layout;
+$blockContainer: #{$fd-namespace}-card-container;
+
+$fd-grid-column-width: 20rem;
+$fd-grid-row-height: 1rem;
+$fd-grid-gap: 1rem;
+$fd-resize-handle-width: 0.0625rem;
+$fd-border-on-drag: 0.125rem dashed var(--sapContent_DragAndDropActiveColor, #0854a0);
+
+$fd-layout-bottom-padding: 1rem;
+$fd-layout-padding-xl-screen: 3rem;
+$fd-layout-padding: 1rem;
+$fd-layout-padding-s-screen: 0.5rem;
 
 .#{$block} {
   @include fd-reset();
 
-  display: grid;
-  grid-auto-rows: 1rem;
-  gap: 1rem;
+  @mixin row-span($row-span: 1) {
+    @include fd-reset();
 
-  .fd-card-container {
+    grid-row-end: span $row-span;
+  }
+
+  @mixin col-span($col-span: 1) {
+    @include fd-reset();
+
+    grid-column-end: span $col-span;
+  }
+
+  display: grid;
+  grid-auto-rows: $fd-grid-row-height;
+  gap: $fd-grid-gap;
+
+  .#{$blockContainer} {
+    @include fd-reset();
+
     position: relative;
 
     &__card {
+      @include fd-reset();
+
       float: left;
+      // some width taken by vertical handler
       width: 99.5%;
       height: 100%;
 
@@ -27,16 +56,22 @@ $block: #{$fd-namespace}-resizable-card-layout;
     &__resize {
       &__direction {
         &--horizontal {
+          @include fd-reset();
+
           resize: horizontal;
           overflow: hidden;
         }
 
         &--vertical {
+          @include fd-reset();
+
           resize: vertical;
           overflow: hidden;
         }
 
         &--both {
+          @include fd-reset();
+
           resize: both;
           overflow: hidden;
         }
@@ -44,14 +79,20 @@ $block: #{$fd-namespace}-resizable-card-layout;
 
       &__cursor {
         &--horizontal {
+          @include fd-reset();
+
           cursor: ew-resize;
         }
 
         &--vertical {
+          @include fd-reset();
+
           cursor: ns-resize;
         }
 
         &--both {
+          @include fd-reset();
+
           cursor: nwse-resize;
 
           @include fd-rtl() {
@@ -62,9 +103,11 @@ $block: #{$fd-namespace}-resizable-card-layout;
 
       &__handle {
         &--vertical-handle {
+          @include fd-reset();
+
           float: right;
           height: 96%;
-          width: 0.0625rem;
+          width: $fd-resize-handle-width;
           cursor: ew-resize;
 
           @include fd-rtl() {
@@ -78,8 +121,10 @@ $block: #{$fd-namespace}-resizable-card-layout;
         }
 
         &--horizontal-handle {
+          @include fd-reset();
+
           width: 96%;
-          height: 0.0625rem;
+          height: $fd-resize-handle-width;
           position: absolute;
           bottom: 0;
           cursor: ns-resize;
@@ -87,10 +132,13 @@ $block: #{$fd-namespace}-resizable-card-layout;
       }
 
       &--indication-border {
-        border: 0.125rem dashed var(--sapContent_DragAndDropActiveColor, #0854a0);
+        @include fd-reset();
+
+        border: $fd-border-on-drag;
       }
 
       &--icon {
+        @include fd-reset();
         @include fd-icon('resize-corner');
 
         font-size: 1rem;
@@ -111,75 +159,77 @@ $block: #{$fd-namespace}-resizable-card-layout;
     }
 
     &__row-span {
+      @include fd-reset();
+
       grid-row-end: span 1;
     }
 
     &__row-span-1 {
-      grid-row-end: span 1;
+      @include row-span(1);
     }
 
     &__row-span-2 {
-      grid-row-end: span 2;
+      @include row-span(2);
     }
 
     &__row-span-3 {
-      grid-row-end: span 3;
+      @include row-span(3);
     }
 
     &__row-span-4 {
-      grid-row-end: span 4;
+      @include row-span(4);
     }
 
     &__row-span-5 {
-      grid-row-end: span 5;
+      @include row-span(5);
     }
 
     &__row-span-6 {
-      grid-row-end: span 6;
+      @include row-span(6);
     }
 
     &__row-span-7 {
-      grid-row-end: span 7;
+      @include row-span(7);
     }
 
     &__row-span-8 {
-      grid-row-end: span 8;
+      @include row-span(8);
     }
 
     &__row-span-9 {
-      grid-row-end: span 9;
+      @include row-span(9);
     }
 
     &__row-span-10 {
-      grid-row-end: span 10;
+      @include row-span(10);
     }
 
     &__row-span-15 {
-      grid-row-end: span 15;
+      @include row-span(15);
     }
 
     &__row-span-20 {
-      grid-row-end: span 20;
+      @include row-span(20);
     }
 
     &__row-span-25 {
-      grid-row-end: span 25;
+      @include row-span(25);
     }
 
     &__col-span-1 {
-      grid-column-end: span 1;
+      @include col-span(1);
     }
 
     &__col-span-2 {
-      grid-column-end: span 2;
+      @include col-span(2);
     }
 
     &__col-span-3 {
-      grid-column-end: span 3;
+      @include col-span(3);
     }
 
     &__col-span-4 {
-      grid-column-end: span 4;
+      @include col-span(4);
     }
   }
 }
@@ -187,38 +237,46 @@ $block: #{$fd-namespace}-resizable-card-layout;
 // 1 column layout
 @media (max-width: 656px) {
   .#{$block} {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-bottom: 1rem;
-    grid-template-columns: repeat(1, 20rem);
+    @include fd-reset();
+
+    padding-left: $fd-layout-padding-s-screen;
+    padding-right: $fd-layout-padding-s-screen;
+    padding-bottom: $fd-layout-bottom-padding;
+    grid-template-columns: repeat(1, $fd-grid-column-width);
   }
 }
 
 // 2 column layout
 @media (min-width: 656px) {
   .#{$block} {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-    grid-template-columns: repeat(2, 20rem);
+    @include fd-reset();
+
+    padding-left: $fd-layout-padding;
+    padding-right: $fd-layout-padding;
+    padding-bottom: $fd-layout-bottom-padding;
+    grid-template-columns: repeat(2, $fd-grid-column-width);
   }
 }
 
 // 3 column layout
 @media (min-width: 976px) {
   .#{$block} {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-    grid-template-columns: repeat(3, 20rem);
+    @include fd-reset();
+
+    padding-left: $fd-layout-padding;
+    padding-right: $fd-layout-padding;
+    padding-bottom: $fd-layout-bottom-padding;
+    grid-template-columns: repeat(3, $fd-grid-column-width);
   }
 }
 
 @media (min-width: 1360px) {
   .#{$block} {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 1rem;
-    grid-template-columns: repeat(4, 20rem);
+    @include fd-reset();
+
+    padding-left: $fd-layout-padding-xl-screen;
+    padding-right: $fd-layout-padding-xl-screen;
+    padding-bottom: $fd-layout-bottom-padding;
+    grid-template-columns: repeat(4, $fd-grid-column-width);
   }
 }
