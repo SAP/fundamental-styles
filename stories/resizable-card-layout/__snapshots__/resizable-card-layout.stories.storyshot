@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Layouts/Resizable Card Layout Card resize in horizontal and vertical directions 1`] = `
+
+    
+`;
+
+exports[`Storyshots Layouts/Resizable Card Layout Card resize in horizontal directions 1`] = `
+
+    
+`;
+
+exports[`Storyshots Layouts/Resizable Card Layout Card resize in vertical directions 1`] = `
+
+    
+`;
+
+exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
+
+
+`;
