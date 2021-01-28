@@ -61,6 +61,7 @@
 
 // Newer FOCUS state which follows fiori3 spec (tab onto, click into)
 // `.is-focus` is for demo purposes
+// This brings border + pseudo element
 @mixin fd-fiori-pseudo-focus($_offset: -0.0625rem) {
   &:focus,
   &.is-focus {
@@ -70,8 +71,8 @@
   }
 }
 
-// Newer FOCUS state which follows fiori3 spec (tab onto, click into)
-// `.is-focus` is for demo purposes
+// Focus state, which is not support by IE11. Use it with `fd-fiori-focus` mixin.
+// This brings border + pseudo element
 @mixin fd-fiori-pseudo-focus-within($_offset: -0.0625rem) {
   &:focus-within {
     @include fd-internal-pseudo-element-focus($_offset) {
