@@ -45,7 +45,7 @@ $fd-layout-padding-s-screen: 0.5rem;
 
       float: left;
       // some width taken by vertical handler
-      width: 99.5%;
+      width: calc(100% - 0.0625rem);
       height: 100%;
 
       @include fd-rtl() {
@@ -106,7 +106,8 @@ $fd-layout-padding-s-screen: 0.5rem;
           @include fd-reset();
 
           float: right;
-          height: 96%;
+          // subtract resize-corner icon font-size/2
+          height: calc(100% - 0.5rem);
           width: $fd-resize-handle-width;
           cursor: ew-resize;
 
@@ -122,8 +123,8 @@ $fd-layout-padding-s-screen: 0.5rem;
 
         &--horizontal-handle {
           @include fd-reset();
-
-          width: 96%;
+          // subtract resize-corner icon font-size/2
+          width: calc(100% - 0.5rem);
           height: $fd-resize-handle-width;
           position: absolute;
           bottom: 0;
@@ -144,7 +145,7 @@ $fd-layout-padding-s-screen: 0.5rem;
         font-size: 1rem;
         position: absolute;
         // positioning icon at bottom corner
-        bottom: -0.1875rem;
+        bottom: -0.35rem;
         right: 0.0625rem;
         z-index: 1;
         cursor: nwse-resize;
