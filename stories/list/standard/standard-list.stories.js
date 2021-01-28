@@ -285,12 +285,12 @@ export const actionList = () => `<h4>Standard Size</h4>
   </li>
   <li role="listitem" class="fd-list__item fd-list__item--action fd-list__item--growing">
       <button class="fd-list__title">
-        <div class="fd-busy-indicator--m fd-list__busy-indicator" aria-hidden="false" aria-label="Loading">
+        <div class="fd-busy-indicator--m" aria-hidden="false" aria-label="Loading">
             <div class="fd-busy-indicator--circle-0"></div>
             <div class="fd-busy-indicator--circle-1"></div>
             <div class="fd-busy-indicator--circle-2"></div>
         </div>
-        More Options
+        <div class="fd-list__title-text">More Options</div>
     </button>
   </li>
 </ul>

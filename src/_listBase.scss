@@ -84,12 +84,18 @@
         @include fd-flex-center();
       }
 
-      .#{$block}__busy-indicator {
-        margin-right: $fd-list-rating-indicator-spacing;
+      .#{$block}__title-text {
+        @include fd-reset();
+        @include fd-ellipsis();
+
+        color: inherit;
+        text-shadow: inherit;
+        font-size: inherit;
+        margin-left: $fd-list-rating-indicator-spacing;
 
         @include fd-rtl() {
-          margin-left: $fd-list-rating-indicator-spacing;
-          margin-right: 0;
+          margin-right: $fd-list-rating-indicator-spacing;
+          margin-left: 0;
         }
       }
     }
