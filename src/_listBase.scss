@@ -79,6 +79,21 @@
       }
     }
 
+    &--growing {
+      .#{$block}__title {
+        @include fd-flex-center();
+      }
+
+      .#{$block}__busy-indicator {
+        margin-right: $fd-list-rating-indicator-spacing;
+
+        @include fd-rtl() {
+          margin-left: $fd-list-rating-indicator-spacing;
+          margin-right: 0;
+        }
+      }
+    }
+
     @include fd-selected() {
       @include list-item-selected-state();
     }
