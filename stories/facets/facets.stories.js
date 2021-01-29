@@ -1,9 +1,8 @@
 export default {
-    title: 'Components/Facets',
+    title: 'Dev/Facets',
     parameters: {
         description: `Facets can be used as a standalone component or linked to another component. Facets are usually a part of the *Object Page* header content.
         Each facet adapts its size to the content and makes optimal use of the space without truncating the texts. If the facets do not all fit on one line, those on the right wrap to the line below. `,
-        tags: ['f3', 'a11y', 'theme', 'development'],
         components: ['facet', 'form-label', 'object-status', 'object-number', 'icon', 'button', 'rating-indicator', 'avatar', 'link', 'bar', 'breadcrumb', 'tabs', 'popover', 'toolbar', 'dynamic-page']
     }
 };
@@ -11,33 +10,33 @@ export default {
 
 export const combined = () =>
     `<div class="fd-facet" role="group">
-        <div class="fd-facet__image">
+        <div class="fd-facet__container fd-facet__container--image">
             <span class="fd-avatar fd-avatar--l" aria-label="Avatar">
                 <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
             </span>
         </div>
-        <div class="fd-facet__form-container" role="group" aria-labelledby="formFacetTitle1">
+        <div class="fd-facet__container fd-facet__container--form" role="group" aria-labelledby="formFacetTitle1">
             <div class="fd-facet__title-container">
                 <h1 class="fd-facet__title" id="formFacetTitle1">Technical Data</h1>
             </div>
-            <div class="fd-facet__form-label-value">
+            <div class="fd-facet__content-container fd-facet__content-container--form">
                 <label class="fd-form-label" for="input-05">Base unit:</label>
                 <div class="fd-facet__form-value" id="input-05">Each</div>
             </div>
-            <div class="fd-facet__form-label-value">
+            <div class="fd-facet__content-container fd-facet__content-container--form">
                 <label class="fd-form-label" for="input-06">Length:</label>
                 <div class="fd-facet__form-value" id="input-06">23.24 Centimeter</div>
             </div>
-            <div class="fd-facet__form-label-value">
+            <div class="fd-facet__content-container fd-facet__content-container--form">
                 <label class="fd-form-label" for="input-07">Width:</label>
                 <div class="fd-facet__form-value" id="input-07">86.1 Centimeter</div>
             </div>
-            <div class="fd-facet__form-label-value">
+            <div class="fd-facet__content-container fd-facet__content-container--form">
                 <label class="fd-form-label" for="input-08">Height:</label>
                 <div class="fd-facet__form-value" id="input-08">20.8 Centimeter</div>
             </div>
         </div>
-        <div class="fd-facet__key-value" role="group" aria-labelledby="kvFacetTitle1">
+        <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle1">
             <div class="fd-facet__title-container">
                 <h1 class="fd-facet__title" id="kvFacetTitle1">Status</h1>
             </div>
@@ -45,7 +44,7 @@ export const combined = () =>
                 <span class="fd-object-status__text">Delivery</span>
             </span>
         </div>
-        <div class="fd-facet__key-value" role="group" aria-labelledby="kvFacetTitle2">
+        <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle2">
             <div class="fd-facet__title-container">
                 <h1 class="fd-facet__title" id="kvFacetTitle2">Delivery Time</h1>
             </div>
@@ -54,7 +53,7 @@ export const combined = () =>
                 <span class="fd-object-status__text">12 days</span>
             </span>
         </div>
-        <div class="fd-facet__key-value" role="group" aria-labelledby="kvFacetTitle3">
+        <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle3">
             <div class="fd-facet__title-container">
                 <h1 class="fd-facet__title" id="kvFacetTitle3">Assembly Option </h1>
             </div>
@@ -62,7 +61,7 @@ export const combined = () =>
                 <span class="fd-object-status__text">To be selected</span>
             </span>
         </div>
-        <div class="fd-facet__key-value" role="group" aria-labelledby="kvFacetTitle4">
+        <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle4">
             <div class="fd-facet__title-container">
                 <h1 class="fd-facet__title" id="kvFacetTitle4">Pricing </h1>
             </div>
@@ -71,12 +70,12 @@ export const combined = () =>
             </span>
         </div>
 
-        <div class="fd-facet__rating-indicator-container" role="group" aria-labelledby="ratingFacetTitle1">
+        <div class="fd-facet__container fd-facet__container--rating-indicator" role="group" aria-labelledby="ratingFacetTitle1">
             <div class="fd-facet__title-container">
                 <h1 class="fd-facet__title" id="ratingFacetTitle1">Average User Rating</h1>
                 <h2 class="fd-form-label">6 reviews</h2>
             </div>
-            <div class="fd-rating-indicator fd-facet__rating-indicator">
+            <div class="fd-rating-indicator fd-facet__content-container fd-facet__content-container--rating-indicator">
                 <div class="fd-rating-indicator__container fd-facet__rating-container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-5-1" name="rating-max-value-5" value="1">
                 <label class="fd-rating-indicator__label" for="rating-max-value-5-1"></label>
@@ -107,7 +106,7 @@ combined.parameters = {
 };
 
 export const keyValue = () =>
-    `<div class="fd-facet__key-value" role="group" aria-labelledby="kvFacetTitle5">
+    `<div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle5">
         <div class="fd-facet__title-container">
             <h1 class="fd-facet__title" id="kvFacetTitle5"> Status </h1>
         </div>
@@ -115,7 +114,7 @@ export const keyValue = () =>
             <span class="fd-object-status__text">Delivery</span>
         </span>
     </div>
-    <div class="fd-facet__key-value" role="group" aria-labelledby="kvFacetTitle6">
+    <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle6">
         <div class="fd-facet__title-container">
             <h1 class="fd-facet__title" id="kvFacetTitle6"> Delivery Time </h1>
         </div>
@@ -123,7 +122,7 @@ export const keyValue = () =>
             <span class="fd-object-status__text">12 days</span>
         </span>
     </div>
-    <div class="fd-facet__key-value" role="group" aria-labelledby="kvFacetTitle7">
+    <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle7">
         <div class="fd-facet__title-container">
             <h1 class="fd-facet__title" id="kvFacetTitle7"> Assembly Option </h1>
         </div>
@@ -131,7 +130,7 @@ export const keyValue = () =>
             <span class="fd-object-status__text">To be selected</span>
         </span>
     </div>
-    <div class="fd-facet__key-value" role="group" aria-labelledby="kvFacetTitle8">
+    <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle8">
         <div class="fd-facet__title-container">
             <h1 class="fd-facet__title" id="kvFacetTitle8"> Pricing </h1>
         </div>
@@ -151,23 +150,23 @@ keyValue.parameters = {
 };
 
 export const formFacet = () =>
-    `<div class="fd-facet__form-container" role="group" aria-labelledby="formFacetTitle2">
+    `<div class="fd-facet__container fd-facet__container--form" role="group" aria-labelledby="formFacetTitle2">
         <div class="fd-facet__title-container">
             <h1 class="fd-facet__title" id="formFacetTitle2"> Technical Data </h1>
         </div>
-        <div class="fd-facet__form-label-value">
+        <div class="fd-facet__content-container fd-facet__content-container--form">
             <label class="fd-form-label" for="input-01">Base unit:</label>
             <div class="fd-facet__form-value" id="input-01">Each</div>
         </div>
-        <div class="fd-facet__form-label-value">
+        <div class="fd-facet__content-container fd-facet__content-container--form">
             <label class="fd-form-label" for="input-02">Length:</label>
             <div class="fd-facet__form-value" id="input-02">23.24 Centimeter</div>
         </div>
-        <div class="fd-facet__form-label-value">
+        <div class="fd-facet__content-container fd-facet__content-container--form">
             <label class="fd-form-label" for="input-03">Width:</label>
             <div class="fd-facet__form-value" id="input-03">86.1 Centimeter</div>
         </div>
-        <div class="fd-facet__form-label-value">
+        <div class="fd-facet__content-container fd-facet__content-container--form">
             <label class="fd-form-label" for="input-04">Height:</label>
             <div class="fd-facet__form-value" id="input-04">20.8 Centimeter</div>
         </div>
@@ -184,29 +183,29 @@ formFacet.parameters = {
 };
 
 export const formFacetLink = () =>
-    `<div class="fd-facet__form-container" role="group" aria-labelledby="formFacetTitle3">
+    `<div class="fd-facet__container fd-facet__container--form" role="group" aria-labelledby="formFacetTitle3">
         <div class="fd-facet__title-container">
             <h1 class="fd-facet__title" id="formFacetTitle3">Contact Information</h1>
         </div>
-        <div class="fd-facet__form-label-value">
+        <div class="fd-facet__content-container fd-facet__content-container--form">
             <i class="sap-icon--add-employee" role="presentation"></i>
             <div class="fd-facet__form-value">
                 <a href="#" class="fd-link fd-facet__link" tabindex="0">John Miller</a>
             </div>
         </div>
-        <div class="fd-facet__form-label-value">
+        <div class="fd-facet__content-container fd-facet__content-container--form">
             <i class="sap-icon--outgoing-call" role="presentation"></i>
             <div class="fd-facet__form-value">
                 <a href="#" class="fd-link fd-facet__link" tabindex="0">+1 234 5678</a>
             </div>
         </div>
-        <div class="fd-facet__form-label-value">
+        <div class="fd-facet__content-container fd-facet__content-container--form">
             <i class="sap-icon--email" role="presentation"></i>
             <div class="fd-facet__form-value">
                 <a href="#" class="fd-link fd-facet__link" tabindex="0">john.miller@company.com</a>
             </div>
         </div>
-        <div class="fd-facet__form-label-value">
+        <div class="fd-facet__content-container fd-facet__content-container--form">
             <label class="fd-form-label" for="input-09">Height:</label>
             <div class="fd-facet__form-value" id="input-09">20.8 Centimeter</div>
         </div>
@@ -221,12 +220,12 @@ formFacetLink.parameters = {
 };
 
 export const ratingIndicator = () =>
-    `<div class="fd-facet__rating-indicator-container" role="group" aria-labelledby="ratingFacetTitle2">
+    `<div class="fd-facet__container fd-facet__container--rating-indicator" role="group" aria-labelledby="ratingFacetTitle2">
         <div class="fd-facet__title-container">
             <h1 class="fd-facet__title" id="ratingFacetTitle2">Average User Rating</h1>
             <h2 class="fd-form-label">6 reviews</h2>
         </div>
-        <div class="fd-rating-indicator fd-facet__rating-indicator">
+        <div class="fd-rating-indicator fd-facet__content-container fd-facet__content-container--rating-indicator">
             <div class="fd-rating-indicator__container fd-facet__rating-container" aria-label="Star Rating (out of 5)">
             <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="1-rating-max-value-5-1" name="1-rating-max-value-5" value="1">
             <label class="fd-rating-indicator__label" for="1-rating-max-value-5-1"></label>
@@ -256,7 +255,7 @@ ratingIndicator.parameters = {
 };
 
 export const imageFacet = () =>
-    `<div class="fd-facet__image">
+    `<div class="fd-facet__container fd-facet__container--image">
         <span class="fd-avatar fd-avatar--l" aria-label="Avatar">
             <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
         </span>
@@ -322,7 +321,7 @@ export const objectPage = () =>
                             </ul>
                         </nav>
                         <div class="fd-dynamic-page__image-title-container">
-                            <div class="fd-facet__image fd-facet__image--header">
+                            <div class="fd-facet__container fd-facet__container--image fd-facet__container--image-header">
                                 <span class="fd-avatar fd-avatar--s" aria-label="Avatar">
                                     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
                                 </span>
@@ -360,33 +359,33 @@ export const objectPage = () =>
             <div class="fd-dynamic-page__collapsible-header-container">
                 <div class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--xl" role="region" id="fddplhvc6" aria-hidden="false" aria-label="Dynamic Page Desktop Header" >
                     <div class="fd-facet">
-                        <div class="fd-facet__image">
+                        <div class="fd-facet__container fd-facet__container--image">
                             <span class="fd-avatar fd-avatar--l" aria-label="Avatar">
                                 <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
                             </span>
                         </div>
-                        <div class="fd-facet__form-container" role="group" aria-labelledby="formFacetTitle4">
+                        <div class="fd-facet__container fd-facet__container--form" role="group" aria-labelledby="formFacetTitle4">
                             <div class="fd-facet__title-container">
                                 <h1 class="fd-facet__title" id="formFacetTitle4">Technical Data</h1>
                             </div>
-                            <div class="fd-facet__form-label-value">
+                            <div class="fd-facet__content-container fd-facet__content-container--form">
                                 <label class="fd-form-label" for="input-10">Base unit:</label>
                                 <div class="fd-facet__form-value" id="input-10">Each</div>
                             </div>
-                            <div class="fd-facet__form-label-value">
+                            <div class="fd-facet__content-container fd-facet__content-container--form">
                                 <label class="fd-form-label" for="input-11">Length:</label>
                                 <div class="fd-facet__form-value" id="input-11">23.24 Centimeter</div>
                             </div>
-                            <div class="fd-facet__form-label-value">
+                            <div class="fd-facet__content-container fd-facet__content-container--form">
                                 <label class="fd-form-label" for="input-12">Width:</label>
                                 <div class="fd-facet__form-value" id="input-12">86.1 Centimeter</div>
                             </div>
-                            <div class="fd-facet__form-label-value">
+                            <div class="fd-facet__content-container fd-facet__content-container--form">
                                 <label class="fd-form-label" for="input-13">Height:</label>
                                 <div class="fd-facet__form-value" id="input-13">20.8 Centimeter</div>
                             </div>
                         </div>
-                        <div class="fd-facet__key-value" role="group" aria-labelledby="kvFacetTitle9">
+                        <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle9">
                             <div class="fd-facet__title-container">
                                 <h1 class="fd-facet__title" id="kvFacetTitle9">Status</h1>
                             </div>
@@ -394,7 +393,7 @@ export const objectPage = () =>
                                 <span class="fd-object-status__text">Delivery</span>
                             </span>
                         </div>
-                        <div class="fd-facet__key-value" role="group" aria-labelledby="kvFacetTitle10">
+                        <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle10">
                             <div class="fd-facet__title-container">
                                 <h1 class="fd-facet__title" id="kvFacetTitle10">Delivery Time</h1>
                             </div>
@@ -403,7 +402,7 @@ export const objectPage = () =>
                                 <span class="fd-object-status__text">12 days</span>
                             </span>
                         </div>
-                        <div class="fd-facet__key-value" role="group" aria-labelledby="kvFacetTitle11">
+                        <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle11">
                             <div class="fd-facet__title-container">
                                 <h1 class="fd-facet__title" id="kvFacetTitle11">Assembly Option </h1>
                             </div>
@@ -411,7 +410,7 @@ export const objectPage = () =>
                                 <span class="fd-object-status__text">To be selected</span>
                             </span>
                         </div>
-                        <div class="fd-facet__key-value" role="group" aria-labelledby="kvFacetTitle12">
+                        <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle12">
                             <div class="fd-facet__title-container">
                                 <h1 class="fd-facet__title" id="kvFacetTitle12">Pricing </h1>
                             </div>
@@ -420,12 +419,12 @@ export const objectPage = () =>
                             </span>
                         </div>
                     
-                        <div class="fd-facet__rating-indicator-container" role="group" aria-labelledby="ratingFacetTitle3">
+                        <div class="fd-facet__container fd-facet__container--rating-indicator" role="group" aria-labelledby="ratingFacetTitle3">
                             <div class="fd-facet__title-container">
                                 <h1 class="fd-facet__title" id="ratingFacetTitle3">Average User Rating</h1>
                                 <h2 class="fd-form-label">6 reviews</h2>
                             </div>
-                            <div class="fd-rating-indicator fd-facet__rating-indicator">
+                            <div class="fd-rating-indicator fd-facet__content-container fd-facet__content-container--rating-indicator">
                                 <div class="fd-rating-indicator__container fd-facet__rating-container" aria-label="Star Rating (out of 5)">
                                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="2-rating-max-value-5-1" name="2-rating-max-value-5" value="1">
                                 <label class="fd-rating-indicator__label" for="2-rating-max-value-5-1"></label>
@@ -560,7 +559,7 @@ objectPage.storyName = 'Facets in Object Page';
 objectPage.parameters = {
     docs: {
         storyDescription: `All facet types used together in the context of a dynamic page. To have the image from the image facet
-        appear next to the title, add the class \`fd-facet__image\` and apply the modifier \`fd-facet__image--header\` to the 
+        appear next to the title, add the class \`fd-facet__container\` and apply the modifiers \`fd-facet__container--image\` and \`fd-facet__container--image-header\` to the 
         \`fd-dynamic-page__image-title-container\` class. 
 
 The final structure of a collapsed header with image next to the title is shown below with changes marked in bold:
@@ -570,7 +569,7 @@ The final structure of a collapsed header with image next to the title is shown 
     - <code class="docs-code">fd-dynamic-page\\_\\_breadcrumb-title-container</code> Container that holds breadcrumb, title, and title content
             - <code class="docs-code">fd-dynamic-page\\_\\_breadcrumb</code> Breadcrumbs
             - **<code class="docs-code-grey">fd-dynamic-page\\_\\_image-title-container</code> The container for image, title and subtitle**
-                - **<code class="docs-code-grey">fd-facet\\_\\_image</code> The image facet**
+                - **<code class="docs-code-grey">fd-facet\\_\\_container fd-facet\\_\\_container--image</code> The image facet**
                 - **<code class="docs-code-grey">fd-facet\\_\\_title-subtitle-container</code> The container for title and subtitle**
                     - **<code class="docs-code">fd-dynamic-page\\_\\_title-container</code> The container for title, KPI content and actions**
                         - <code class="docs-code">fd-dynamic-page\\_\\_title</code> Dynamic page title
@@ -658,7 +657,7 @@ export const objectPageMobile = () =>
                                 </div>
                             </div>
                             <div class="fd-dynamic-page__image-title-container">
-                                <div class="fd-facet__image fd-facet__image--header">
+                                <div class="fd-facet__container fd-facet__container--image fd-facet__container--image-header">
                                     <span class="fd-avatar fd-avatar--s" aria-label="Avatar">
                                         <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
                                     </span>
@@ -703,13 +702,13 @@ export const objectPageMobile = () =>
                 <div class="fd-dynamic-page__collapsible-header-container">
                     <div class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--sm" role="region" id="fddplhvc4" aria-hidden="false" aria-label="Dynamic Page Mobile Header">
                         <div class="fd-facet">
-                            <div class="fd-facet__image fd-facet__image--sm">
+                            <div class="fd-facet__container fd-facet__container--image fd-facet__container--image-sm">
                                 <span class="fd-avatar fd-avatar--l" aria-label="Avatar">
                                     <i class="fd-avatar__icon sap-icon--camera" role="presentation"></i>
                                 </span>
                             </div>
                             
-                            <div class="fd-facet__key-value" role="group" aria-labelledby="kvFacetTitle13">
+                            <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle13">
                                 <div class="fd-facet__title-container">
                                     <h1 class="fd-facet__title" id="kvFacetTitle13">Availablity</h1>
                                 </div>
@@ -717,7 +716,7 @@ export const objectPageMobile = () =>
                                     <span class="fd-object-status__text">In Stock</span>
                                 </span>
                             </div>
-                            <div class="fd-facet__key-value" role="group" aria-labelledby="kvFacetTitle14">
+                            <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle14">
                                 <div class="fd-facet__title-container">
                                     <h1 class="fd-facet__title" id="kvFacetTitle14">Price </h1>
                                 </div>
@@ -764,7 +763,7 @@ export const objectPageMobile = () =>
                                         toggleElAttrs('mainImageContainerMobile', ['aria-hidden']);
                                     "
                                 aria-controls="fddplhvc4">
-                                <i class="sap-icon--slim-arrow-down" id="downArrow"></i>
+                                <i class="sap-icon--slim-arrow-down"></i>
                             </button>
                         </div>
                         <div class="fd-dynamic-page__collapsible-header-visibility-container--right-gradient"></div>
@@ -817,3 +816,11 @@ export const objectPageMobile = () =>
     </div>
 `;
 objectPageMobile.storyName = 'Facets in Object Page Mobile';
+objectPageMobile.parameters = {
+    docs: {
+        storyDescription: `To have the image from the image facet appear next to the title, add the class 
+        \`fd-facet__container\` and apply the modifiers \`fd-facet__container--image\` and \`fd-facet__container--image-header\` to the 
+        \`fd-dynamic-page__image-title-container\` class when expanded, and \`fd-facet__container--image-sm\` when collapsed.
+`
+    }
+};

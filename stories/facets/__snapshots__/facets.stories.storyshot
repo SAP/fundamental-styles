@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Facets Combination of facets 1`] = `
+exports[`Storyshots Dev/Facets Combination of facets 1`] = `
 <div
   class="fd-facet"
   role="group"
@@ -8,7 +8,7 @@ exports[`Storyshots Components/Facets Combination of facets 1`] = `
   
         
   <div
-    class="fd-facet__image"
+    class="fd-facet__container fd-facet__container--image"
   >
     
             
@@ -32,7 +32,7 @@ exports[`Storyshots Components/Facets Combination of facets 1`] = `
         
   <div
     aria-labelledby="formFacetTitle1"
-    class="fd-facet__form-container"
+    class="fd-facet__container fd-facet__container--form"
     role="group"
   >
     
@@ -54,7 +54,7 @@ exports[`Storyshots Components/Facets Combination of facets 1`] = `
     
             
     <div
-      class="fd-facet__form-label-value"
+      class="fd-facet__content-container fd-facet__content-container--form"
     >
       
                 
@@ -78,7 +78,7 @@ exports[`Storyshots Components/Facets Combination of facets 1`] = `
     
             
     <div
-      class="fd-facet__form-label-value"
+      class="fd-facet__content-container fd-facet__content-container--form"
     >
       
                 
@@ -102,7 +102,7 @@ exports[`Storyshots Components/Facets Combination of facets 1`] = `
     
             
     <div
-      class="fd-facet__form-label-value"
+      class="fd-facet__content-container fd-facet__content-container--form"
     >
       
                 
@@ -126,7 +126,7 @@ exports[`Storyshots Components/Facets Combination of facets 1`] = `
     
             
     <div
-      class="fd-facet__form-label-value"
+      class="fd-facet__content-container fd-facet__content-container--form"
     >
       
                 
@@ -154,7 +154,7 @@ exports[`Storyshots Components/Facets Combination of facets 1`] = `
         
   <div
     aria-labelledby="kvFacetTitle1"
-    class="fd-facet__key-value"
+    class="fd-facet__container fd-facet__container--key-value"
     role="group"
   >
     
@@ -195,7 +195,7 @@ exports[`Storyshots Components/Facets Combination of facets 1`] = `
         
   <div
     aria-labelledby="kvFacetTitle2"
-    class="fd-facet__key-value"
+    class="fd-facet__container fd-facet__container--key-value"
     role="group"
   >
     
@@ -242,7 +242,7 @@ exports[`Storyshots Components/Facets Combination of facets 1`] = `
         
   <div
     aria-labelledby="kvFacetTitle3"
-    class="fd-facet__key-value"
+    class="fd-facet__container fd-facet__container--key-value"
     role="group"
   >
     
@@ -283,7 +283,7 @@ exports[`Storyshots Components/Facets Combination of facets 1`] = `
         
   <div
     aria-labelledby="kvFacetTitle4"
-    class="fd-facet__key-value"
+    class="fd-facet__container fd-facet__container--key-value"
     role="group"
   >
     
@@ -330,7 +330,7 @@ exports[`Storyshots Components/Facets Combination of facets 1`] = `
         
   <div
     aria-labelledby="ratingFacetTitle1"
-    class="fd-facet__rating-indicator-container"
+    class="fd-facet__container fd-facet__container--rating-indicator"
     role="group"
   >
     
@@ -359,7 +359,7 @@ exports[`Storyshots Components/Facets Combination of facets 1`] = `
     
             
     <div
-      class="fd-rating-indicator fd-facet__rating-indicator"
+      class="fd-rating-indicator fd-facet__content-container fd-facet__content-container--rating-indicator"
     >
       
                 
@@ -473,7 +473,7 @@ exports[`Storyshots Components/Facets Combination of facets 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Facets Facets in Object Page 1`] = `
+exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
 <section
   aria-label="Dynamic Page Desktop Example"
   class="fd-dynamic-page"
@@ -768,7 +768,7 @@ exports[`Storyshots Components/Facets Facets in Object Page 1`] = `
             
                             
             <div
-              class="fd-facet__image fd-facet__image--header"
+              class="fd-facet__container fd-facet__container--image fd-facet__container--image-header"
             >
               
                                 
@@ -950,7 +950,7 @@ exports[`Storyshots Components/Facets Facets in Object Page 1`] = `
           
                         
           <div
-            class="fd-facet__image"
+            class="fd-facet__container fd-facet__container--image"
           >
             
                             
@@ -974,7 +974,7 @@ exports[`Storyshots Components/Facets Facets in Object Page 1`] = `
                         
           <div
             aria-labelledby="formFacetTitle4"
-            class="fd-facet__form-container"
+            class="fd-facet__container fd-facet__container--form"
             role="group"
           >
             
@@ -996,7 +996,7 @@ exports[`Storyshots Components/Facets Facets in Object Page 1`] = `
             
                             
             <div
-              class="fd-facet__form-label-value"
+              class="fd-facet__content-container fd-facet__content-container--form"
             >
               
                                 
@@ -1020,7 +1020,7 @@ exports[`Storyshots Components/Facets Facets in Object Page 1`] = `
             
                             
             <div
-              class="fd-facet__form-label-value"
+              class="fd-facet__content-container fd-facet__content-container--form"
             >
               
                                 
@@ -1044,7 +1044,7 @@ exports[`Storyshots Components/Facets Facets in Object Page 1`] = `
             
                             
             <div
-              class="fd-facet__form-label-value"
+              class="fd-facet__content-container fd-facet__content-container--form"
             >
               
                                 
@@ -1068,7 +1068,7 @@ exports[`Storyshots Components/Facets Facets in Object Page 1`] = `
             
                             
             <div
-              class="fd-facet__form-label-value"
+              class="fd-facet__content-container fd-facet__content-container--form"
             >
               
                                 
@@ -1096,7 +1096,7 @@ exports[`Storyshots Components/Facets Facets in Object Page 1`] = `
                         
           <div
             aria-labelledby="kvFacetTitle9"
-            class="fd-facet__key-value"
+            class="fd-facet__container fd-facet__container--key-value"
             role="group"
           >
             
@@ -1137,7 +1137,7 @@ exports[`Storyshots Components/Facets Facets in Object Page 1`] = `
                         
           <div
             aria-labelledby="kvFacetTitle10"
-            class="fd-facet__key-value"
+            class="fd-facet__container fd-facet__container--key-value"
             role="group"
           >
             
@@ -1184,7 +1184,7 @@ exports[`Storyshots Components/Facets Facets in Object Page 1`] = `
                         
           <div
             aria-labelledby="kvFacetTitle11"
-            class="fd-facet__key-value"
+            class="fd-facet__container fd-facet__container--key-value"
             role="group"
           >
             
@@ -1225,7 +1225,7 @@ exports[`Storyshots Components/Facets Facets in Object Page 1`] = `
                         
           <div
             aria-labelledby="kvFacetTitle12"
-            class="fd-facet__key-value"
+            class="fd-facet__container fd-facet__container--key-value"
             role="group"
           >
             
@@ -1272,7 +1272,7 @@ exports[`Storyshots Components/Facets Facets in Object Page 1`] = `
                         
           <div
             aria-labelledby="ratingFacetTitle3"
-            class="fd-facet__rating-indicator-container"
+            class="fd-facet__container fd-facet__container--rating-indicator"
             role="group"
           >
             
@@ -1301,7 +1301,7 @@ exports[`Storyshots Components/Facets Facets in Object Page 1`] = `
             
                             
             <div
-              class="fd-rating-indicator fd-facet__rating-indicator"
+              class="fd-rating-indicator fd-facet__content-container fd-facet__content-container--rating-indicator"
             >
               
                                 
@@ -1704,7 +1704,7 @@ exports[`Storyshots Components/Facets Facets in Object Page 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Facets Facets in Object Page Mobile 1`] = `
+exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
 <div
   class="mobile-container"
 >
@@ -2051,7 +2051,7 @@ exports[`Storyshots Components/Facets Facets in Object Page Mobile 1`] = `
               
                                 
               <div
-                class="fd-facet__image fd-facet__image--header"
+                class="fd-facet__container fd-facet__container--image fd-facet__container--image-header"
               >
                 
                                     
@@ -2216,7 +2216,7 @@ exports[`Storyshots Components/Facets Facets in Object Page Mobile 1`] = `
             
                             
             <div
-              class="fd-facet__image fd-facet__image--sm"
+              class="fd-facet__container fd-facet__container--image fd-facet__container--image-sm"
             >
               
                                 
@@ -2241,7 +2241,7 @@ exports[`Storyshots Components/Facets Facets in Object Page Mobile 1`] = `
                             
             <div
               aria-labelledby="kvFacetTitle13"
-              class="fd-facet__key-value"
+              class="fd-facet__container fd-facet__container--key-value"
               role="group"
             >
               
@@ -2282,7 +2282,7 @@ exports[`Storyshots Components/Facets Facets in Object Page Mobile 1`] = `
                             
             <div
               aria-labelledby="kvFacetTitle14"
-              class="fd-facet__key-value"
+              class="fd-facet__container fd-facet__container--key-value"
               role="group"
             >
               
@@ -2399,7 +2399,6 @@ exports[`Storyshots Components/Facets Facets in Object Page Mobile 1`] = `
                                 
               <i
                 class="sap-icon--slim-arrow-down"
-                id="downArrow"
               />
               
                             
@@ -2592,10 +2591,10 @@ exports[`Storyshots Components/Facets Facets in Object Page Mobile 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Facets Form Facet 1`] = `
+exports[`Storyshots Dev/Facets Form Facet 1`] = `
 <div
   aria-labelledby="formFacetTitle2"
-  class="fd-facet__form-container"
+  class="fd-facet__container fd-facet__container--form"
   role="group"
 >
   
@@ -2617,7 +2616,7 @@ exports[`Storyshots Components/Facets Form Facet 1`] = `
   
         
   <div
-    class="fd-facet__form-label-value"
+    class="fd-facet__content-container fd-facet__content-container--form"
   >
     
             
@@ -2641,7 +2640,7 @@ exports[`Storyshots Components/Facets Form Facet 1`] = `
   
         
   <div
-    class="fd-facet__form-label-value"
+    class="fd-facet__content-container fd-facet__content-container--form"
   >
     
             
@@ -2665,7 +2664,7 @@ exports[`Storyshots Components/Facets Form Facet 1`] = `
   
         
   <div
-    class="fd-facet__form-label-value"
+    class="fd-facet__content-container fd-facet__content-container--form"
   >
     
             
@@ -2689,7 +2688,7 @@ exports[`Storyshots Components/Facets Form Facet 1`] = `
   
         
   <div
-    class="fd-facet__form-label-value"
+    class="fd-facet__content-container fd-facet__content-container--form"
   >
     
             
@@ -2715,10 +2714,10 @@ exports[`Storyshots Components/Facets Form Facet 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Facets Form Facet with Link 1`] = `
+exports[`Storyshots Dev/Facets Form Facet with Link 1`] = `
 <div
   aria-labelledby="formFacetTitle3"
-  class="fd-facet__form-container"
+  class="fd-facet__container fd-facet__container--form"
   role="group"
 >
   
@@ -2740,7 +2739,7 @@ exports[`Storyshots Components/Facets Form Facet with Link 1`] = `
   
         
   <div
-    class="fd-facet__form-label-value"
+    class="fd-facet__content-container fd-facet__content-container--form"
   >
     
             
@@ -2771,7 +2770,7 @@ exports[`Storyshots Components/Facets Form Facet with Link 1`] = `
   
         
   <div
-    class="fd-facet__form-label-value"
+    class="fd-facet__content-container fd-facet__content-container--form"
   >
     
             
@@ -2802,7 +2801,7 @@ exports[`Storyshots Components/Facets Form Facet with Link 1`] = `
   
         
   <div
-    class="fd-facet__form-label-value"
+    class="fd-facet__content-container fd-facet__content-container--form"
   >
     
             
@@ -2833,7 +2832,7 @@ exports[`Storyshots Components/Facets Form Facet with Link 1`] = `
   
         
   <div
-    class="fd-facet__form-label-value"
+    class="fd-facet__content-container fd-facet__content-container--form"
   >
     
             
@@ -2859,9 +2858,9 @@ exports[`Storyshots Components/Facets Form Facet with Link 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Facets Image/Avatar Facet 1`] = `
+exports[`Storyshots Dev/Facets Image/Avatar Facet 1`] = `
 <div
-  class="fd-facet__image"
+  class="fd-facet__container fd-facet__container--image"
 >
   
         
@@ -2883,11 +2882,11 @@ exports[`Storyshots Components/Facets Image/Avatar Facet 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Facets Key-Value Facet 1`] = `
+exports[`Storyshots Dev/Facets Key-Value Facet 1`] = `
 <section>
   <div
     aria-labelledby="kvFacetTitle5"
-    class="fd-facet__key-value"
+    class="fd-facet__container fd-facet__container--key-value"
     role="group"
   >
     
@@ -2928,7 +2927,7 @@ exports[`Storyshots Components/Facets Key-Value Facet 1`] = `
     
   <div
     aria-labelledby="kvFacetTitle6"
-    class="fd-facet__key-value"
+    class="fd-facet__container fd-facet__container--key-value"
     role="group"
   >
     
@@ -2969,7 +2968,7 @@ exports[`Storyshots Components/Facets Key-Value Facet 1`] = `
     
   <div
     aria-labelledby="kvFacetTitle7"
-    class="fd-facet__key-value"
+    class="fd-facet__container fd-facet__container--key-value"
     role="group"
   >
     
@@ -3010,7 +3009,7 @@ exports[`Storyshots Components/Facets Key-Value Facet 1`] = `
     
   <div
     aria-labelledby="kvFacetTitle8"
-    class="fd-facet__key-value"
+    class="fd-facet__container fd-facet__container--key-value"
     role="group"
   >
     
@@ -3057,10 +3056,10 @@ exports[`Storyshots Components/Facets Key-Value Facet 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Facets Rating Indicator Facet 1`] = `
+exports[`Storyshots Dev/Facets Rating Indicator Facet 1`] = `
 <div
   aria-labelledby="ratingFacetTitle2"
-  class="fd-facet__rating-indicator-container"
+  class="fd-facet__container fd-facet__container--rating-indicator"
   role="group"
 >
   
@@ -3089,7 +3088,7 @@ exports[`Storyshots Components/Facets Rating Indicator Facet 1`] = `
   
         
   <div
-    class="fd-rating-indicator fd-facet__rating-indicator"
+    class="fd-rating-indicator fd-facet__content-container fd-facet__content-container--rating-indicator"
   >
     
             
