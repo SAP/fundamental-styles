@@ -2,282 +2,110 @@
 @import './mixins';
 @import './icon';
 
-$block: #{$fd-namespace}-resizable-card-layout;
-$blockContainer: #{$fd-namespace}-card-container;
+$block: #{$fd-namespace}-resizable-card;
 
-$fd-grid-column-width: 20rem;
-$fd-grid-row-height: 1rem;
-$fd-grid-gap: 1rem;
 $fd-resize-handle-width: 0.0625rem;
 $fd-border-on-drag: 0.125rem dashed var(--sapContent_DragAndDropActiveColor, #0854a0);
-
-$fd-layout-bottom-padding: 1rem;
-$fd-layout-padding-xl-screen: 3rem;
-$fd-layout-padding: 1rem;
-$fd-layout-padding-s-screen: 0.5rem;
 
 .#{$block} {
   @include fd-reset();
 
-  @mixin row-span($row-span: 1) {
+  position: relative;
+
+  &__card {
     @include fd-reset();
 
-    grid-row-end: span $row-span;
-  }
+    float: left;
+    // some width taken by vertical handler
+    width: calc(100% - 0.0625rem);
+    height: 100%;
 
-  @mixin col-span($col-span: 1) {
-    @include fd-reset();
-
-    grid-column-end: span $col-span;
-  }
-
-  display: grid;
-  grid-auto-rows: $fd-grid-row-height;
-  gap: $fd-grid-gap;
-
-  .#{$blockContainer} {
-    @include fd-reset();
-
-    position: relative;
-
-    &__card {
-      @include fd-reset();
-
-      float: left;
-      // some width taken by vertical handler
-      width: calc(100% - 0.0625rem);
-      height: 100%;
-
-      @include fd-rtl() {
-        float: right;
-      }
+    @include fd-rtl() {
+      float: right;
     }
+  }
 
-    &__resize {
-      &__direction {
-        &--horizontal {
-          @include fd-reset();
-
-          resize: horizontal;
-          overflow: hidden;
-        }
-
-        &--vertical {
-          @include fd-reset();
-
-          resize: vertical;
-          overflow: hidden;
-        }
-
-        &--both {
-          @include fd-reset();
-
-          resize: both;
-          overflow: hidden;
-        }
-      }
-
-      &__cursor {
-        &--horizontal {
-          @include fd-reset();
-
-          cursor: ew-resize;
-        }
-
-        &--vertical {
-          @include fd-reset();
-
-          cursor: ns-resize;
-        }
-
-        &--both {
-          @include fd-reset();
-
-          cursor: nwse-resize;
-
-          @include fd-rtl() {
-            cursor: nesw-resize;
-          }
-        }
-      }
-
-      &__handle {
-        &--vertical-handle {
-          @include fd-reset();
-
-          float: right;
-          // subtract resize-corner icon font-size/2
-          height: calc(100% - 0.5rem);
-          width: $fd-resize-handle-width;
-          cursor: ew-resize;
-
-          @include fd-rtl() {
-            float: left;
-          }
-        }
-
-        &--vertical-handle::after {
-          content: '';
-          position: absolute;
-        }
-
-        &--horizontal-handle {
-          @include fd-reset();
-          // subtract resize-corner icon font-size/2
-          width: calc(100% - 0.5rem);
-          height: $fd-resize-handle-width;
-          position: absolute;
-          bottom: 0;
-          cursor: ns-resize;
-        }
-      }
-
-      &--indication-border {
+  &__resize {
+    &__cursor {
+      &--horizontal {
         @include fd-reset();
 
-        border: $fd-border-on-drag;
+        cursor: ew-resize;
       }
 
-      &--icon {
+      &--vertical {
         @include fd-reset();
-        @include fd-icon('resize-corner');
 
-        font-size: 1rem;
-        position: absolute;
-        // positioning icon at bottom corner
-        bottom: -0.35rem;
-        right: 0.0625rem;
-        z-index: 1;
+        cursor: ns-resize;
+      }
+
+      &--both {
+        @include fd-reset();
+
         cursor: nwse-resize;
 
         @include fd-rtl() {
-          right: auto;
-          left: 0.25rem;
-          transform: rotate(90deg);
           cursor: nesw-resize;
         }
       }
     }
 
-    &__row-span {
+    &__handle {
+      &--vertical-handle {
+        @include fd-reset();
+
+        float: right;
+        // subtract resize-corner icon font-size/2
+        height: calc(100% - 0.5rem);
+        width: $fd-resize-handle-width;
+        cursor: ew-resize;
+
+        @include fd-rtl() {
+          float: left;
+        }
+      }
+
+      &--vertical-handle::after {
+        content: '';
+        position: absolute;
+      }
+
+      &--horizontal-handle {
+        @include fd-reset();
+
+        // subtract resize-corner icon font-size/2
+        width: calc(100% - 0.5rem);
+        height: $fd-resize-handle-width;
+        position: absolute;
+        bottom: 0;
+        cursor: ns-resize;
+      }
+    }
+
+    &--indication-border {
       @include fd-reset();
 
-      grid-row-end: span 1;
+      border: $fd-border-on-drag;
     }
 
-    &__row-span-1 {
-      @include row-span(1);
+    &--icon {
+      @include fd-reset();
+      @include fd-icon('resize-corner');
+
+      font-size: 1rem;
+      position: absolute;
+      // positioning icon at bottom corner
+      bottom: -0.35rem;
+      right: 0.0625rem;
+      z-index: 1;
+      cursor: nwse-resize;
+
+      @include fd-rtl() {
+        right: auto;
+        left: 0.25rem;
+        transform: rotate(90deg);
+        cursor: nesw-resize;
+      }
     }
-
-    &__row-span-2 {
-      @include row-span(2);
-    }
-
-    &__row-span-3 {
-      @include row-span(3);
-    }
-
-    &__row-span-4 {
-      @include row-span(4);
-    }
-
-    &__row-span-5 {
-      @include row-span(5);
-    }
-
-    &__row-span-6 {
-      @include row-span(6);
-    }
-
-    &__row-span-7 {
-      @include row-span(7);
-    }
-
-    &__row-span-8 {
-      @include row-span(8);
-    }
-
-    &__row-span-9 {
-      @include row-span(9);
-    }
-
-    &__row-span-10 {
-      @include row-span(10);
-    }
-
-    &__row-span-15 {
-      @include row-span(15);
-    }
-
-    &__row-span-20 {
-      @include row-span(20);
-    }
-
-    &__row-span-25 {
-      @include row-span(25);
-    }
-
-    &__col-span-1 {
-      @include col-span(1);
-    }
-
-    &__col-span-2 {
-      @include col-span(2);
-    }
-
-    &__col-span-3 {
-      @include col-span(3);
-    }
-
-    &__col-span-4 {
-      @include col-span(4);
-    }
-  }
-}
-
-// 1 column layout
-@media (max-width: 656px) {
-  .#{$block} {
-    @include fd-reset();
-
-    padding-left: $fd-layout-padding-s-screen;
-    padding-right: $fd-layout-padding-s-screen;
-    padding-bottom: $fd-layout-bottom-padding;
-    grid-template-columns: repeat(1, $fd-grid-column-width);
-  }
-}
-
-// 2 column layout
-@media (min-width: 656px) {
-  .#{$block} {
-    @include fd-reset();
-
-    padding-left: $fd-layout-padding;
-    padding-right: $fd-layout-padding;
-    padding-bottom: $fd-layout-bottom-padding;
-    grid-template-columns: repeat(2, $fd-grid-column-width);
-  }
-}
-
-// 3 column layout
-@media (min-width: 976px) {
-  .#{$block} {
-    @include fd-reset();
-
-    padding-left: $fd-layout-padding;
-    padding-right: $fd-layout-padding;
-    padding-bottom: $fd-layout-bottom-padding;
-    grid-template-columns: repeat(3, $fd-grid-column-width);
-  }
-}
-
-@media (min-width: 1360px) {
-  .#{$block} {
-    @include fd-reset();
-
-    padding-left: $fd-layout-padding-xl-screen;
-    padding-right: $fd-layout-padding-xl-screen;
-    padding-bottom: $fd-layout-bottom-padding;
-    grid-template-columns: repeat(4, $fd-grid-column-width);
   }
 }
