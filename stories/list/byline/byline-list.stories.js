@@ -111,6 +111,44 @@ standard.parameters = {
     }
 };
 
+export const attachment = () => `<h4>Standard size</h4>
+<ul class="fd-list fd-list--byline" role="list">
+  <li role="listitem" tabindex="0" class="fd-list__item">
+      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--attachment-photo"></i></span>
+      <div class="fd-list__content">
+        <div class="fd-list__title">Title</div>
+        <div class="fd-list__byline">Byline (description)</div>
+      </div>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--pdf-attachment"></i></span>
+      <div class="fd-list__content">
+        <div class="fd-list__title">List item with no byline</div>
+      </div>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--attachment-text-file"></i></span>
+    <div class="fd-list__content">
+        <div class="fd-list__title">List item with 2-column byline</div>
+        <div class="fd-list__byline fd-list__byline--2-col">
+            <div class="fd-list__byline-left">First text item in byline (standard text)</div>
+            <div class="fd-list__byline-right">Second text item in byline (standard text)</div>
+        </div>
+    </div>
+  </li>
+</ul>
+`;
+
+attachment.storyName = 'Attachment';
+
+attachment.parameters = {
+    docs: {
+        iframeHeight: 785,
+        storyDescription: `The Attachment List shares the same specification as the Standard List with Byline. The only difference is that if two text items are set within the Byline row, the text aligned to the right is always standard text (i.e. not semantic text)
+    `
+    }
+};
+
 export const navigation = () => `<ul class="fd-list fd-list--byline fd-list--navigation" role="list">
 <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
   <a tabindex="0" class="fd-list__link" href="#"> 
