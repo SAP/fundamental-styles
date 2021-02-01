@@ -162,6 +162,12 @@ $block: #{$fd-namespace}-shellbar;
       vertical-align: middle;
     }
 
+    .#{$block}__counter--overflowed {
+      position: absolute;
+      right: (-$fd-shellbar-counter-notification-offset);
+      top: $fd-shellbar-counter-notification-offset;
+    }
+
     .#{$block}__counter--notification {
       max-width: 2.5rem;
       text-overflow: ellipsis;
