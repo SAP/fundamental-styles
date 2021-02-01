@@ -16,7 +16,7 @@ Use the status indicator in Grids, tables, or in a dialog box.
 export const Sizes = () => `
 <div class="example-container">
 <span style="min-width: 150px;">Small size :</span>
-<div class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--sm" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="35%" tabindex=0 aria-label="Status Indicator small size">
+<div class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--sm" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="35%" tabindex=0 aria-label="Status Indicator small size" focusable="true" title="35% with small size">
 	<svg id="__shape0__box1-24" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path1" data-sap-ui="__path1">
 			<defs>
@@ -48,7 +48,7 @@ export const Sizes = () => `
 </div>
 <div class="example-container">
 <span style="min-width: 150px;">Medium size(Default) :</span>
-<div class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--md" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="50%" tabindex=0 aria-label="Status Indicator Medium default size">
+<div class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--md" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="50%" tabindex=0 aria-label="Status Indicator Medium default size" focusable="true" title="50% with default medium size">
 	<svg id="__shape0__box2-24" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path11" data-sap-ui="__path11">
 			<defs>
@@ -80,7 +80,7 @@ export const Sizes = () => `
 </div>
 <div class="example-container">
 <span style="min-width: 150px;">Large Size :</span>
-<div class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--lg" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="80%" tabindex=0 aria-label="Status Indicator large size">
+<div class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--lg" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="80%" tabindex=0 aria-label="Status Indicator large size" focusable="true" title="80% with large size">
 	<svg id="__shape0__box3-24" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path12" data-sap-ui="__path12">
 			<defs>
@@ -112,13 +112,13 @@ export const Sizes = () => `
 </div>
 <div class="example-container">
 <span style="min-width: 150px;">Extra Large Size :</span>
-<div class="fd-status-indicator fd-status-indicator--xl" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="Status Indicator Extra Large size">
+<div class="fd-status-indicator fd-status-indicator--xl" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="Status Indicator Extra Large size" focusable="true" title="0% with size extra large">
 	<svg id="__shape0__box4-24" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path13" data-sap-ui="__path13">
 			<defs>
 				<linearGradient id="__path13-gradient" x1="0" y1="1" x2="0" y2="0">
-					<stop offset="1" stop-color="white"></stop>
-					<stop offset="1" stop-color="transparent"></stop>
+					<stop offset="0" stop-color="white"></stop>
+					<stop offset="0" stop-color="transparent"></stop>
 				</linearGradient>
 				<mask id="__path13-mask">
 					<path id="__path13-mask-shape" d="M13,0.5c-6.6,0-12,5.4-12,12s5.4,12,12,12s12-5.4,12-12S19.6,0.5,13,0.5z M16.4,10.1L15.9,12h-5.3v0.3H16
@@ -160,7 +160,7 @@ Sizes.parameters = {
 export const fillValues = () => `
 <div  class="example-container">
 <span style="min-width: 150px;">Negative Filling :</span>
-<div class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--lg" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="Status Indicator With Negative Filling">
+<div class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--lg" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="Status Indicator With Negative Filling" focusable="true" title="35% fill with negative color">
 	<svg id="__shape0__box5-24" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path21" data-sap-ui="__path21">
 			<defs>
@@ -192,7 +192,7 @@ export const fillValues = () => `
 </div>
 <div class="example-container">
 <span style="min-width: 150px;">Critical Filling :</span>
-<div class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--lg" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="Status Indicator With Critical Filling">
+<div class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--lg" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="Status Indicator With Critical Filling" focusable="true" title="60% with critical color filling">
 	<svg id="__shape0__box6-24" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path22" data-sap-ui="__path22">
 			<defs>
@@ -224,7 +224,7 @@ export const fillValues = () => `
 </div>
 <div class="example-container">
 <span style="min-width: 150px;">Positive Filling :</span>
-<div class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--lg" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="Status Indicator With Positive Filling">
+<div class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--lg" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="Status Indicator With Positive Filling" focusable="true" title="100% with Positive color filling">
 	<svg id="__shape0__box7-24" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path23" data-sap-ui="__path23">
 			<defs>
@@ -269,7 +269,7 @@ modifier class together with the \`fd-status-indicator\` class.
 export const StatusIndicatorLabels = () => `
 <div class="example-container">
 <span style="min-width: 150px;">Top Label :</span>
-<div class="fd-status-indicator fd-status-indicator--critical"  aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="Status Indicator With Labelled On Top">
+<div class="fd-status-indicator fd-status-indicator--critical"  aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="Status Indicator With Labelled On Top" focusable="true" title="100% with label on top">
 	<span class="fd-status-indicator--lg__text fd-status-indicator--critical__text">100%</span>
 	<svg id="__shape0__box9-24" class="fd-status-indicator--lg" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path25" data-sap-ui="__path25">
@@ -302,7 +302,7 @@ export const StatusIndicatorLabels = () => `
 </div>
 <div class="example-container">
 	<span style="min-width: 150px;">Bottom Label :</span>
-<div class="fd-status-indicator fd-status-indicator--positive " aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="Status Indicator With Labelled On Bottom">
+<div class="fd-status-indicator fd-status-indicator--positive " aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="Status Indicator With Labelled On Bottom" focusable="true" title="100% with label on bottom">
 	<svg id="__shape0__box10-24" data-sap-ui="__shape0-__box21-24" class="fd-status-indicator--lg" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path26" data-sap-ui="__path26">
 			<defs>
@@ -335,7 +335,7 @@ export const StatusIndicatorLabels = () => `
 </div>
 <div class="example-container">
 <span style="min-width: 150px;">Left Label :</span>
-<div class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--htext " aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="Status Indicator With Labelled On Left">
+<div class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--htext " aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="Status Indicator With Labelled On Left" focusable="true" title="100% with label on left">
 	<span class="fd-status-indicator--lg__text fd-status-indicator--critical__text">100%</span>
 	<svg id="__shape0__box12-24" class="fd-status-indicator--lg" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 36 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path261" data-sap-ui="__path261">
@@ -368,7 +368,7 @@ export const StatusIndicatorLabels = () => `
 </div>
 <div class="example-container">
 	<span style="min-width: 150px;">Right Label :</span>
-<div class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--htext"  aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="Status Indicator With Labelled On Right">
+<div class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--htext"  aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="Status Indicator With Labelled On Right" focusable="true" title="100% with label on right">
 	<svg id="__shape0__box101-24" class="fd-status-indicator--lg" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 16 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path262" data-sap-ui="__path262">
 			<defs>
@@ -415,7 +415,7 @@ modifier class for defining the font size and colour of the Label together with 
 export const StatusIndicatorLinearFilling = () => `
 <div class="example-container">
 	<span style="min-width: 150px;">Left to Right fill :</span>
-<div class="fd-status-indicator fd-status-indicator--negative" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="status indicator animated left to right filling ">
+<div class="fd-status-indicator fd-status-indicator--negative" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="status indicator animated left to right filling " focusable="true" title="80% fill from left to right">
 	<svg id="__shape0__box32a-24" class="fd-status-indicator--lg" data-sap-ui="__shape0-__box32-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path32a" data-sap-ui="__path32a">
 			<defs>
@@ -452,7 +452,7 @@ export const StatusIndicatorLinearFilling = () => `
 </div>
 <div class="example-container">
 	<span style="min-width: 150px;">Bottom to Top fill</span>
-<div class="fd-status-indicator fd-status-indicator--negative" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="status indicator animated bottom up filling">
+<div class="fd-status-indicator fd-status-indicator--negative" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="status indicator animated bottom up filling" focusable="true" title="80% fill from bottom to top">
 	<svg id="__shape0__box33-24" class="fd-status-indicator--lg" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path33" data-sap-ui="__path33">
 			<defs>
@@ -493,14 +493,14 @@ StatusIndicatorLinearFilling.storyName = 'Status Indicator With Linear filling';
 StatusIndicatorLinearFilling.parameters = {
     docs: {
         storyDescription: `
-To display Linear filling from left to right instead default bottom to top approach type of the status indicator Object
+To display Linear filling from left to right instead default bottom to top approach type of the status indicator Object, The object can be filled based on changing the value of  \`<linearGradient>\` property  \`x1,Y1,x2,y2\`. Filling can be done either Clock wise or Counter Clock wise.
 `
     }
 };
 
 export const StatusIndicatorCoreoGraphy = () => `
 <div class="example-container">
-<div class="fd-status-indicator fd-status-indicator--positive coreographed"  aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="status indicator example for order dispatching">
+<div class="fd-status-indicator fd-status-indicator--positive coreographed"  aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="status indicator example for order dispatching" focusable="true" title="Fill object to form single filling pattern">
 	<svg id="__shape0__box32-24-cart" class="fd-status-indicator--md" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path32" data-sap-ui="__path32">
 			<defs>
@@ -646,7 +646,7 @@ StatusIndicatorCoreoGraphy.parameters = {
 export const StatusIndicatorRadialFilling = () => `
 <div class="example-container">
 	<span style="min-width: 150px;">Radial Clock filling:</span>
-<div class="fd-status-indicator fd-status-indicator--negative" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="30%" tabindex=0 aria-label="status indicator Radial clock wise filling">
+<div class="fd-status-indicator fd-status-indicator--negative" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="30%" tabindex=0 aria-label="status indicator Radial clock wise filling" focusable="true" title="30% radial filling with clock wise">
 	<svg id="__shape0__box34-24" data-sap-ui="__shape0-__box21-24" version="1.1" class="fd-status-indicator--xl " xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path34" data-sap-ui="__path34">
 			<defs>
@@ -680,7 +680,7 @@ export const StatusIndicatorRadialFilling = () => `
 
 <div class="example-container">
 	<span style="min-width: 150px;">Radial Counter Clock filling:</span>
-<div class="fd-status-indicator fd-status-indicator--negative" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="3%" tabindex=0 aria-label="status indicator Radial clock wise filling">
+<div class="fd-status-indicator fd-status-indicator--negative" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="3%" tabindex=0 aria-label="status indicator Radial clock wise filling" focusable="true" title="30% radial filling with counter clock wise">
 	<svg id="__shape0__box35-24" data-sap-ui="__shape0-__box21-24" version="1.1" class="fd-status-indicator--xl " xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path35" data-sap-ui="__path35">
 			<defs>
@@ -725,8 +725,8 @@ To display Radial filling instead of default bottom to top approach type of stat
 export const StatusIndicatorAngularFilling = () => `
 <div class="example-container">
 	<span style="min-width: 150px;">Angular filling 270 degree:</span>
-<div class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--xl" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="30%" tabindex=0 aria-label="status indicator Angled filling at 270 degree">
-	<svg id="__shape0__box36-24" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
+<div class="fd-status-indicator fd-status-indicator--positive" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="30%" tabindex=0 aria-label="status indicator Angled filling at 270 degree" focusable="true"  title="80% angled filling in 270 degree">
+	<svg id="__shape0__box36-24" class="fd-status-indicator--xl" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path36" data-sap-ui="__path6">
 			<defs>
 				<linearGradient id="__path36-gradient" x1="0" y1="1" x2="1" y2="0">
@@ -763,8 +763,8 @@ export const StatusIndicatorAngularFilling = () => `
 
 <div class="example-container">
 	<span style="min-width: 150px;">Angular filling 40 degree:</span>
-<div class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--xl" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="3%" tabindex=0 aria-label="status indicator Angled filling at 40 degree">
-	<svg id="__shape0__box37-24" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
+<div class="fd-status-indicator fd-status-indicator--critical" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="3%" tabindex=0 aria-label="status indicator Angled filling at 40 degree" focusable="true"  title="50% angled filling in 40 degree">
+	<svg id="__shape0__box37-24" class="fd-status-indicator--xl" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path37" data-sap-ui="__path37">
 			<defs>
 				<linearGradient id="__path37-gradient" x1="1" y1="1" x2="0" y2="0">
@@ -801,8 +801,8 @@ export const StatusIndicatorAngularFilling = () => `
 
 <div class="example-container">
 	<span style="min-width: 150px;">Angular filling 98 degree:</span>
-<div class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--xl" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="50%" tabindex=0 aria-label="status indicator Angled filling at 98 degree">
-	<svg id="__shape0__box38-24" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
+<div class="fd-status-indicator fd-status-indicator--positive" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="50%" tabindex=0 aria-label="status indicator Angled filling at 98 degree" focusable="true"  title="50% angled filling in 98 degree">
+	<svg id="__shape0__box38-24" class="fd-status-indicator--xl" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path38" data-sap-ui="__path38">
 			<defs>
 				<linearGradient id="__path38-gradient" x1="0" y1="0" x2="1" y2="1">
@@ -839,8 +839,8 @@ export const StatusIndicatorAngularFilling = () => `
 
 <div class="example-container">
 	<span style="min-width: 150px;">Angular filling 140 degree:</span>
-<div class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--xl" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="3%" tabindex=0 aria-label="status indicator Angled filling at 140 degree">
-	<svg id="__shape0__box39-24" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
+<div class="fd-status-indicator fd-status-indicator--negative" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="3%" tabindex=0 aria-label="status indicator Angled filling at 140 degree" focusable="true"  title="40% angled filling in 140 degree">
+	<svg id="__shape0__box39-24" class="fd-status-indicator--xl" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path39" data-sap-ui="__path39">
 			<defs>
 				<linearGradient id="__path39-gradient" x1="1" y1="0" x2="0" y2="1">
@@ -880,7 +880,7 @@ StatusIndicatorAngularFilling.storyName = 'Status Indicator With Angular filling
 StatusIndicatorAngularFilling.parameters = {
     docs: {
         storyDescription: `
-To display Angular filling instead of default bottom to top approach type of status indicator Object, The object can be filled based on changing the value of  \`<linearGradient>\` property  \`cx,cy,r,fx,fy\`. Filling can be done either Clock wise or Counter Clock wise.
+To display Angular filling instead of default bottom to top approach type of status indicator Object, The object can be filled based on changing the value of  \`<linearGradient>\` property  \`x1,Y1,x2,y2\`. Filling can be done either Clock wise or Counter Clock wise.
 `
     }
 };

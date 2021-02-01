@@ -21,8 +21,10 @@ exports[`Storyshots Components/Status Indicator Fill values 1`] = `
       aria-roledescription="Status Indicator"
       aria-valuetext="0%"
       class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--lg"
+      focusable="true"
       role="progressbar"
       tabindex="0"
+      title="35% fill with negative color"
     >
       
 	
@@ -161,8 +163,10 @@ exports[`Storyshots Components/Status Indicator Fill values 1`] = `
       aria-roledescription="Status Indicator"
       aria-valuetext="0%"
       class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--lg"
+      focusable="true"
       role="progressbar"
       tabindex="0"
+      title="60% with critical color filling"
     >
       
 	
@@ -301,8 +305,10 @@ exports[`Storyshots Components/Status Indicator Fill values 1`] = `
       aria-roledescription="Status Indicator"
       aria-valuetext="0%"
       class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--lg"
+      focusable="true"
       role="progressbar"
       tabindex="0"
+      title="100% with Positive color filling"
     >
       
 	
@@ -448,8 +454,10 @@ exports[`Storyshots Components/Status Indicator Sizes 1`] = `
       aria-roledescription="Status Indicator"
       aria-valuetext="35%"
       class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--sm"
+      focusable="true"
       role="progressbar"
       tabindex="0"
+      title="35% with small size"
     >
       
 	
@@ -588,8 +596,10 @@ exports[`Storyshots Components/Status Indicator Sizes 1`] = `
       aria-roledescription="Status Indicator"
       aria-valuetext="50%"
       class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--md"
+      focusable="true"
       role="progressbar"
       tabindex="0"
+      title="50% with default medium size"
     >
       
 	
@@ -728,8 +738,10 @@ exports[`Storyshots Components/Status Indicator Sizes 1`] = `
       aria-roledescription="Status Indicator"
       aria-valuetext="80%"
       class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--lg"
+      focusable="true"
       role="progressbar"
       tabindex="0"
+      title="80% with large size"
     >
       
 	
@@ -868,8 +880,10 @@ exports[`Storyshots Components/Status Indicator Sizes 1`] = `
       aria-roledescription="Status Indicator"
       aria-valuetext="0%"
       class="fd-status-indicator fd-status-indicator--xl"
+      focusable="true"
       role="progressbar"
       tabindex="0"
+      title="0% with size extra large"
     >
       
 	
@@ -909,13 +923,13 @@ exports[`Storyshots Components/Status Indicator Sizes 1`] = `
               
 					
               <stop
-                offset="1"
+                offset="0"
                 stop-color="white"
               />
               
 					
               <stop
-                offset="1"
+                offset="0"
                 stop-color="transparent"
               />
               
@@ -1014,13 +1028,16 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Angular fi
       aria-label="status indicator Angled filling at 270 degree"
       aria-roledescription="Status Indicator"
       aria-valuetext="30%"
-      class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--xl"
+      class="fd-status-indicator fd-status-indicator--positive"
+      focusable="true"
       role="progressbar"
       tabindex="0"
+      title="80% angled filling in 270 degree"
     >
       
 	
       <svg
+        class="fd-status-indicator--xl"
         data-sap-ui="__shape0-__box21-24"
         height="100%"
         id="__shape0__box36-24"
@@ -1180,13 +1197,16 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Angular fi
       aria-label="status indicator Angled filling at 40 degree"
       aria-roledescription="Status Indicator"
       aria-valuetext="3%"
-      class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--xl"
+      class="fd-status-indicator fd-status-indicator--critical"
+      focusable="true"
       role="progressbar"
       tabindex="0"
+      title="50% angled filling in 40 degree"
     >
       
 	
       <svg
+        class="fd-status-indicator--xl"
         data-sap-ui="__shape0-__box21-24"
         height="100%"
         id="__shape0__box37-24"
@@ -1346,13 +1366,16 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Angular fi
       aria-label="status indicator Angled filling at 98 degree"
       aria-roledescription="Status Indicator"
       aria-valuetext="50%"
-      class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--xl"
+      class="fd-status-indicator fd-status-indicator--positive"
+      focusable="true"
       role="progressbar"
       tabindex="0"
+      title="50% angled filling in 98 degree"
     >
       
 	
       <svg
+        class="fd-status-indicator--xl"
         data-sap-ui="__shape0-__box21-24"
         height="100%"
         id="__shape0__box38-24"
@@ -1512,13 +1535,16 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Angular fi
       aria-label="status indicator Angled filling at 140 degree"
       aria-roledescription="Status Indicator"
       aria-valuetext="3%"
-      class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--xl"
+      class="fd-status-indicator fd-status-indicator--negative"
+      focusable="true"
       role="progressbar"
       tabindex="0"
+      title="40% angled filling in 140 degree"
     >
       
 	
       <svg
+        class="fd-status-indicator--xl"
         data-sap-ui="__shape0-__box21-24"
         height="100%"
         id="__shape0__box39-24"
@@ -1690,8 +1716,10 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
       aria-roledescription="Status Indicator"
       aria-valuetext="0%"
       class="fd-status-indicator fd-status-indicator--critical"
+      focusable="true"
       role="progressbar"
       tabindex="0"
+      title="100% with label on top"
     >
       
 	
@@ -1838,8 +1866,10 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
       aria-roledescription="Status Indicator"
       aria-valuetext="0%"
       class="fd-status-indicator fd-status-indicator--positive "
+      focusable="true"
       role="progressbar"
       tabindex="0"
+      title="100% with label on bottom"
     >
       
 	
@@ -1986,8 +2016,10 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
       aria-roledescription="Status Indicator"
       aria-valuetext="0%"
       class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--htext "
+      focusable="true"
       role="progressbar"
       tabindex="0"
+      title="100% with label on left"
     >
       
 	
@@ -2134,8 +2166,10 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
       aria-roledescription="Status Indicator"
       aria-valuetext="0%"
       class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--htext"
+      focusable="true"
       role="progressbar"
       tabindex="0"
+      title="100% with label on right"
     >
       
 	
@@ -2290,8 +2324,10 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Linear fil
       aria-roledescription="Status Indicator"
       aria-valuetext="0%"
       class="fd-status-indicator fd-status-indicator--negative"
+      focusable="true"
       role="progressbar"
       tabindex="0"
+      title="80% fill from left to right"
     >
       
 	
@@ -2456,8 +2492,10 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Linear fil
       aria-roledescription="Status Indicator"
       aria-valuetext="0%"
       class="fd-status-indicator fd-status-indicator--negative"
+      focusable="true"
       role="progressbar"
       tabindex="0"
+      title="80% fill from bottom to top"
     >
       
 	
@@ -2629,8 +2667,10 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Radial fil
       aria-roledescription="Status Indicator"
       aria-valuetext="30%"
       class="fd-status-indicator fd-status-indicator--negative"
+      focusable="true"
       role="progressbar"
       tabindex="0"
+      title="30% radial filling with clock wise"
     >
       
 	
@@ -2793,8 +2833,10 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Radial fil
       aria-roledescription="Status Indicator"
       aria-valuetext="3%"
       class="fd-status-indicator fd-status-indicator--negative"
+      focusable="true"
       role="progressbar"
       tabindex="0"
+      title="30% radial filling with counter clock wise"
     >
       
 	
