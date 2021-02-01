@@ -93,6 +93,7 @@ $fd-border-on-drag: 0.125rem dashed var(--sapContent_DragAndDropActiveColor);
       @include fd-icon('resize-corner');
 
       font-size: 1rem;
+      color: var(--sapContent_DragAndDropActiveColor);
       position: absolute;
       // positioning icon at bottom corner
       bottom: -0.3rem;
