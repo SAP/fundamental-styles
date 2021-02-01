@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.15.1-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.11...v0.15.1-rc.12) (2021-02-01)
+
+
+### Bug Fixes
+
+* add z-index to floating footer bar ([#2096](https://github.com/SAP/fundamental-styles/issues/2096)) ([f3a1632](https://github.com/SAP/fundamental-styles/commit/f3a1632b2d934459533c60f965ec9164d62c0cf8))
+
 ### [0.15.1-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.10...v0.15.1-rc.11) (2021-02-01)
 
 ### [0.15.1-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.9...v0.15.1-rc.10) (2021-02-01)
