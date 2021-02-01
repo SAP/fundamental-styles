@@ -1,5 +1,158 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Components/List/Byline Attachment 1`] = `
+<section>
+  <h4>
+    Standard size
+  </h4>
+  
+
+  <ul
+    class="fd-list fd-list--byline"
+    role="list"
+  >
+    
+  
+    <li
+      class="fd-list__item"
+      role="listitem"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__thumbnail"
+      >
+        <i
+          class="sap-icon--attachment-photo"
+          role="presentation"
+        />
+      </span>
+      
+      
+      <div
+        class="fd-list__content"
+      >
+        
+        
+        <div
+          class="fd-list__title"
+        >
+          Title
+        </div>
+        
+        
+        <div
+          class="fd-list__byline"
+        >
+          Byline (description)
+        </div>
+        
+      
+      </div>
+      
+  
+    </li>
+    
+  
+    <li
+      class="fd-list__item"
+      role="listitem"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__thumbnail"
+      >
+        <i
+          class="sap-icon--pdf-attachment"
+          role="presentation"
+        />
+      </span>
+      
+      
+      <div
+        class="fd-list__content"
+      >
+        
+        
+        <div
+          class="fd-list__title"
+        >
+          List item with no byline
+        </div>
+        
+      
+      </div>
+      
+  
+    </li>
+    
+  
+    <li
+      class="fd-list__item"
+      role="listitem"
+      tabindex="0"
+    >
+      
+    
+      <span
+        class="fd-list__thumbnail"
+      >
+        <i
+          class="sap-icon--attachment-text-file"
+          role="presentation"
+        />
+      </span>
+      
+    
+      <div
+        class="fd-list__content"
+      >
+        
+        
+        <div
+          class="fd-list__title"
+        >
+          List item with 2-column byline
+        </div>
+        
+        
+        <div
+          class="fd-list__byline fd-list__byline--2-col"
+        >
+          
+            
+          <div
+            class="fd-list__byline-left"
+          >
+            First text item in byline (standard text)
+          </div>
+          
+            
+          <div
+            class="fd-list__byline-right"
+          >
+            Second text item in byline (standard text)
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+  
+    </li>
+    
+
+  </ul>
+  
+
+</section>
+`;
+
 exports[`Storyshots Components/List/Byline Borderless 1`] = `
 <ul
   class="fd-list fd-list--no-border fd-list--byline"
