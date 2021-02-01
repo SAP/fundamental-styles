@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.15.1-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.9...v0.15.1-rc.10) (2021-02-01)
+
+
+### Bug Fixes
+
+* update the color of nav indicator in List ([#2102](https://github.com/SAP/fundamental-styles/issues/2102)) ([4ec510f](https://github.com/SAP/fundamental-styles/commit/4ec510f25a3ed2251925da120b85f6260737550a))
+
 ### [0.15.1-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.8...v0.15.1-rc.9) (2021-02-01)
 
 ### [0.15.1-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.7...v0.15.1-rc.8) (2021-01-27)
