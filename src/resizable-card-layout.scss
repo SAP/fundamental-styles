@@ -5,7 +5,7 @@
 $block: #{$fd-namespace}-resizable-card;
 
 $fd-resize-handle-width: 0.0625rem;
-$fd-border-on-drag: 0.125rem dashed var(--sapContent_DragAndDropActiveColor, #0854a0);
+$fd-border-on-drag: 0.125rem dashed var(--sapContent_DragAndDropActiveColor);
 
 .#{$block} {
   @include fd-reset();
@@ -95,15 +95,17 @@ $fd-border-on-drag: 0.125rem dashed var(--sapContent_DragAndDropActiveColor, #08
       font-size: 1rem;
       position: absolute;
       // positioning icon at bottom corner
-      bottom: -0.35rem;
-      right: 0.0625rem;
+      bottom: -0.3rem;
+      right: 0.125rem;
       z-index: 1;
       cursor: nwse-resize;
 
       @include fd-rtl() {
         right: auto;
-        left: 0.25rem;
         transform: rotate(90deg);
+        // after rotation positioning icon at left bottom corner
+        left: 0.25rem;
+        bottom: -0.45rem;
         cursor: nesw-resize;
       }
     }
