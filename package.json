@@ -102,7 +102,7 @@
     "standard-version": "9.0.0",
     "start-server-and-test": "^1.11.3",
     "story-description-loader": "^1.0.0",
-    "style-loader": "^1.2.1",
+    "style-loader": "^2.0.0",
     "stylelint": "^13.7.1",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-scss": "^3.18.0",
