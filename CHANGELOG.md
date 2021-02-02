@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.15.1-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.14...v0.15.1-rc.15) (2021-02-02)
+
+
+### Bug Fixes
+
+* Step Input focus within ([#2098](https://github.com/SAP/fundamental-styles/issues/2098)) ([a769b2f](https://github.com/SAP/fundamental-styles/commit/a769b2f87742dec539982e544b36d17ec698e803))
+
 ### [0.15.1-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.13...v0.15.1-rc.14) (2021-02-01)
 
 ### [0.15.1-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.12...v0.15.1-rc.13) (2021-02-01)
