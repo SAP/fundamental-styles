@@ -59,7 +59,7 @@
     "@storybook/addon-storyshots": "6.0.28",
     "@storybook/addon-toolbars": "6.0.28",
     "@storybook/addon-viewport": "6.0.28",
-    "@storybook/addons": "6.1.9",
+    "@storybook/addons": "6.1.15",
     "@storybook/html": "6.0.28",
     "@storybook/preset-scss": "^1.0.3",
     "babel-eslint": "^10.1.0",
