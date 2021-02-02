@@ -15,13 +15,54 @@ $fd-border-on-drag: 0.125rem dashed var(--sapContent_DragAndDropActiveColor);
   &__card {
     @include fd-reset();
 
+    position: relative;
     float: left;
-    // some width taken by vertical handler
-    width: calc(100% - 0.0625rem);
-    height: 100%;
+    // subtract width taken by vertical handler and horizontal handler
+    width: calc(100% - #{$fd-resize-handle-width});
+    height: calc(100% - #{$fd-resize-handle-width});
 
     @include fd-rtl() {
       float: right;
+    }
+
+    .#{$block}__icon-container {
+      @include fd-reset();
+
+      width: 1rem;
+      height: 1rem;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 2;
+      padding: 0 0.0625rem 0.0625rem 0;
+
+      @include fd-rtl() {
+        right: auto;
+        left: 0;
+        padding: 0 0 0.0625rem 0.0625rem;
+      }
+
+      .#{$block}--icon {
+        @include fd-reset();
+        @include fd-icon('resize-corner');
+
+        font-family: SAP-icons;
+        font-size: 1rem;
+        line-height: 1rem;
+        cursor: nwse-resize;
+        position: absolute;
+        bottom: 0;
+        right: 0.0625rem;
+        color: var(--sapButton_IconColor);
+
+        @include fd-rtl() {
+          transform: rotate(90deg);
+          position: relative;
+          cursor: nesw-resize;
+          padding: 0 0.0625rem 0.0625rem 0.5rem;
+          // padding-left is needed after rotation
+        }
+      }
     }
   }
 
@@ -51,7 +92,7 @@ $fd-border-on-drag: 0.125rem dashed var(--sapContent_DragAndDropActiveColor);
     }
 
     &__handle {
-      &--vertical-handle {
+      &--vertical {
         @include fd-reset();
 
         float: right;
@@ -65,12 +106,12 @@ $fd-border-on-drag: 0.125rem dashed var(--sapContent_DragAndDropActiveColor);
         }
       }
 
-      &--vertical-handle::after {
+      &--vertical::content {
         content: '';
         position: absolute;
       }
 
-      &--horizontal-handle {
+      &--horizontal {
         @include fd-reset();
 
         // subtract resize-corner icon font-size/2
@@ -86,29 +127,6 @@ $fd-border-on-drag: 0.125rem dashed var(--sapContent_DragAndDropActiveColor);
       @include fd-reset();
 
       border: $fd-border-on-drag;
-    }
-
-    &--icon {
-      @include fd-reset();
-      @include fd-icon('resize-corner');
-
-      font-size: 1rem;
-      color: var(--sapContent_DragAndDropActiveColor);
-      position: absolute;
-      // positioning icon at bottom corner
-      bottom: -0.3rem;
-      right: 0.125rem;
-      z-index: 1;
-      cursor: nwse-resize;
-
-      @include fd-rtl() {
-        right: auto;
-        transform: rotate(90deg);
-        // after rotation positioning icon at left bottom corner
-        left: 0.25rem;
-        bottom: -0.45rem;
-        cursor: nesw-resize;
-      }
     }
   }
 }

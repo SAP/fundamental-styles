@@ -27,7 +27,7 @@ Cards can be resized vertically in rows of 1 rem and horizontally in steps of 20
 
 export const resizeCardHorizontalVerticalDirection = () =>
     `<div id="one" class="fd-resizable-card fd-resizable-card__resize--indication-border">
-        <div class="fd-resizable-card__resize__handle--vertical-handle"></div>
+        <div class="fd-resizable-card__resize__handle--vertical"></div>
         <div class="fd-resizable-card__card">
             <div class="fd-card" role="region" aria-label="List Card Example 4">
                 <a class="fd-card__header" tabindex="0">
@@ -59,9 +59,11 @@ export const resizeCardHorizontalVerticalDirection = () =>
                     </ul>
                 </div>
             </div>
+            <div class="fd-resizable-card__icon-container">
+                <div class="fd-resizable-card--icon fd-resizable-card__resize__cursor--both"></div>
+            </div>
         </div>
-        <div class="fd-resizable-card__resize__handle--horizontal-handle"></div>
-        <div class="fd-resizable-card__resize--icon fd-resizable-card__resize__cursor--both"></div>
+        <div class="fd-resizable-card__resize__handle--horizontal"></div>
     </div>
 `;
 
@@ -76,7 +78,7 @@ resizeCardHorizontalVerticalDirection.parameters = {
 
 export const resizeCardHorizontalDirection = () =>
     `<div id="two" class="fd-resizable-card fd-resizable-card__resize--indication-border">
-        <div class="fd-resizable-card__resize__handle--vertical-handle"></div>
+        <div class="fd-resizable-card__resize__handle--vertical"></div>
         <div class="fd-resizable-card__card">
             <div class="fd-card" role="region" aria-label="List Card Example 5">
                 <a class="fd-card__header" tabindex="0">
@@ -107,6 +109,9 @@ export const resizeCardHorizontalDirection = () =>
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div class="fd-resizable-card__icon-container">
+                <div class="fd-resizable-card--icon fd-resizable-card__resize__cursor--both"></div>
             </div>
         </div>
         <div class="fd-resizable-card__resize--icon fd-resizable-card__resize__cursor--horizontal"></div>
@@ -155,9 +160,12 @@ export const resizeCardVerticalDirection = () =>
                     </ul>
                 </div>
             </div>
+            <div class="fd-resizable-card__icon-container">
+                <div class="fd-resizable-card--icon fd-resizable-card__resize__cursor--both"></div>
+            </div>
         </div>
-        <div class="fd-resizable-card__resize__handle--horizontal-handle"></div>
-        <div class="fd-resizable-card__resize--icon fd-resizable-card__resize__cursor--vertical"></div>
+        <div class="fd-resizable-card__resize__handle--horizontal"></div>
+        <div c    lass="fd-resizable-card__resize--icon fd-resizable-card__resize__cursor--vertical"></div>
     </div>
 `;
 

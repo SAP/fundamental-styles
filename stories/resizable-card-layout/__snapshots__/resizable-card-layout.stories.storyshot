@@ -8,7 +8,7 @@ exports[`Storyshots Layouts/Resizable Card Layout Card resize in horizontal and 
   
         
   <div
-    class="fd-resizable-card__resize__handle--vertical-handle"
+    class="fd-resizable-card__resize__handle--vertical"
   />
   
         
@@ -176,17 +176,25 @@ exports[`Storyshots Layouts/Resizable Card Layout Card resize in horizontal and 
             
     </div>
     
+            
+    <div
+      class="fd-resizable-card__icon-container"
+    >
+      
+                
+      <div
+        class="fd-resizable-card--icon fd-resizable-card__resize__cursor--both"
+      />
+      
+            
+    </div>
+    
         
   </div>
   
         
   <div
-    class="fd-resizable-card__resize__handle--horizontal-handle"
-  />
-  
-        
-  <div
-    class="fd-resizable-card__resize--icon fd-resizable-card__resize__cursor--both"
+    class="fd-resizable-card__resize__handle--horizontal"
   />
   
     
@@ -201,7 +209,7 @@ exports[`Storyshots Layouts/Resizable Card Layout Card resize in horizontal dire
   
         
   <div
-    class="fd-resizable-card__resize__handle--vertical-handle"
+    class="fd-resizable-card__resize__handle--vertical"
   />
   
         
@@ -365,6 +373,19 @@ exports[`Storyshots Layouts/Resizable Card Layout Card resize in horizontal dire
         
                 
       </div>
+      
+            
+    </div>
+    
+            
+    <div
+      class="fd-resizable-card__icon-container"
+    >
+      
+                
+      <div
+        class="fd-resizable-card--icon fd-resizable-card__resize__cursor--both"
+      />
       
             
     </div>
@@ -552,17 +573,31 @@ exports[`Storyshots Layouts/Resizable Card Layout Card resize in vertical direct
             
     </div>
     
+            
+    <div
+      class="fd-resizable-card__icon-container"
+    >
+      
+                
+      <div
+        class="fd-resizable-card--icon fd-resizable-card__resize__cursor--both"
+      />
+      
+            
+    </div>
+    
         
   </div>
   
         
   <div
-    class="fd-resizable-card__resize__handle--horizontal-handle"
+    class="fd-resizable-card__resize__handle--horizontal"
   />
   
         
   <div
-    class="fd-resizable-card__resize--icon fd-resizable-card__resize__cursor--vertical"
+    c=""
+    lass="fd-resizable-card__resize--icon fd-resizable-card__resize__cursor--vertical"
   />
   
     
