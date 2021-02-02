@@ -17,9 +17,9 @@ exports[`Storyshots Components/Status Indicator Fill values 1`] = `
     
 
     <div
-      aria-label="Status Indicator With Negative Filling"
+      aria-label="Euro Status Indicator With Negative Filling"
       aria-roledescription="Status Indicator"
-      aria-valuetext="0%"
+      aria-valuetext="35%"
       class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--lg"
       focusable="true"
       role="progressbar"
@@ -159,9 +159,9 @@ exports[`Storyshots Components/Status Indicator Fill values 1`] = `
     
 
     <div
-      aria-label="Status Indicator With Critical Filling"
+      aria-label="Euro Status Indicator With Critical Filling"
       aria-roledescription="Status Indicator"
-      aria-valuetext="0%"
+      aria-valuetext="60%"
       class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--lg"
       focusable="true"
       role="progressbar"
@@ -301,9 +301,9 @@ exports[`Storyshots Components/Status Indicator Fill values 1`] = `
     
 
     <div
-      aria-label="Status Indicator With Positive Filling"
+      aria-label="Euro Status Indicator With Positive Filling"
       aria-roledescription="Status Indicator"
-      aria-valuetext="0%"
+      aria-valuetext="100%"
       class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--lg"
       focusable="true"
       role="progressbar"
@@ -450,7 +450,7 @@ exports[`Storyshots Components/Status Indicator Sizes 1`] = `
     
 
     <div
-      aria-label="Status Indicator small size"
+      aria-label=" Euro Status Indicator small size"
       aria-roledescription="Status Indicator"
       aria-valuetext="35%"
       class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--sm"
@@ -592,7 +592,7 @@ exports[`Storyshots Components/Status Indicator Sizes 1`] = `
     
 
     <div
-      aria-label="Status Indicator Medium default size"
+      aria-label="Euro Status Indicator Medium default size"
       aria-roledescription="Status Indicator"
       aria-valuetext="50%"
       class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--md"
@@ -734,7 +734,7 @@ exports[`Storyshots Components/Status Indicator Sizes 1`] = `
     
 
     <div
-      aria-label="Status Indicator large size"
+      aria-label="Euro Status Indicator large size"
       aria-roledescription="Status Indicator"
       aria-valuetext="80%"
       class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--lg"
@@ -876,7 +876,7 @@ exports[`Storyshots Components/Status Indicator Sizes 1`] = `
     
 
     <div
-      aria-label="Status Indicator Extra Large size"
+      aria-label="Euro Status Indicator Extra Large size"
       aria-roledescription="Status Indicator"
       aria-valuetext="0%"
       class="fd-status-indicator fd-status-indicator--xl"
@@ -1025,9 +1025,9 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Angular fi
     
 
     <div
-      aria-label="status indicator Angled filling at 270 degree"
+      aria-label="Euro Status Indicator Angled filling at 270 degree"
       aria-roledescription="Status Indicator"
-      aria-valuetext="30%"
+      aria-valuetext="80%"
       class="fd-status-indicator fd-status-indicator--positive"
       focusable="true"
       role="progressbar"
@@ -1194,9 +1194,9 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Angular fi
     
 
     <div
-      aria-label="status indicator Angled filling at 40 degree"
+      aria-label="Euro Status Indicator Angled filling at 40 degree"
       aria-roledescription="Status Indicator"
-      aria-valuetext="3%"
+      aria-valuetext="50%"
       class="fd-status-indicator fd-status-indicator--critical"
       focusable="true"
       role="progressbar"
@@ -1363,7 +1363,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Angular fi
     
 
     <div
-      aria-label="status indicator Angled filling at 98 degree"
+      aria-label="Euro Status Indicator Angled filling at 98 degree"
       aria-roledescription="Status Indicator"
       aria-valuetext="50%"
       class="fd-status-indicator fd-status-indicator--positive"
@@ -1532,9 +1532,9 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Angular fi
     
 
     <div
-      aria-label="status indicator Angled filling at 140 degree"
+      aria-label="Euro Status Indicator Angled filling at 140 degree"
       aria-roledescription="Status Indicator"
-      aria-valuetext="3%"
+      aria-valuetext="40%"
       class="fd-status-indicator fd-status-indicator--negative"
       focusable="true"
       role="progressbar"
@@ -1712,9 +1712,9 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
     
 
     <div
-      aria-label="Status Indicator With Labelled On Top"
+      aria-label="Euro Status Indicator With Labelled On Top"
       aria-roledescription="Status Indicator"
-      aria-valuetext="0%"
+      aria-valuetext="100%"
       class="fd-status-indicator fd-status-indicator--critical"
       focusable="true"
       role="progressbar"
@@ -1862,9 +1862,9 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
     
 
     <div
-      aria-label="Status Indicator With Labelled On Bottom"
+      aria-label="Euro Status Indicator With Labelled On Bottom"
       aria-roledescription="Status Indicator"
-      aria-valuetext="0%"
+      aria-valuetext="100%"
       class="fd-status-indicator fd-status-indicator--positive "
       focusable="true"
       role="progressbar"
@@ -2012,9 +2012,9 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
     
 
     <div
-      aria-label="Status Indicator With Labelled On Left"
+      aria-label="Euro Status Indicator With Labelled On Left"
       aria-roledescription="Status Indicator"
-      aria-valuetext="0%"
+      aria-valuetext="100%"
       class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--htext "
       focusable="true"
       role="progressbar"
@@ -2162,9 +2162,9 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
     
 
     <div
-      aria-label="Status Indicator With Labelled On Right"
+      aria-label="Euro Status Indicator With Labelled On Right"
       aria-roledescription="Status Indicator"
-      aria-valuetext="0%"
+      aria-valuetext="100%"
       class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--htext"
       focusable="true"
       role="progressbar"
@@ -2320,9 +2320,9 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Linear fil
     
 
     <div
-      aria-label="status indicator animated left to right filling "
+      aria-label="Euro status indicator animated left to right filling "
       aria-roledescription="Status Indicator"
-      aria-valuetext="0%"
+      aria-valuetext="80%"
       class="fd-status-indicator fd-status-indicator--negative"
       focusable="true"
       role="progressbar"
@@ -2488,9 +2488,9 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Linear fil
     
 
     <div
-      aria-label="status indicator animated bottom up filling"
+      aria-label="Euro status indicator animated bottom up filling"
       aria-roledescription="Status Indicator"
-      aria-valuetext="0%"
+      aria-valuetext="80%"
       class="fd-status-indicator fd-status-indicator--negative"
       focusable="true"
       role="progressbar"
@@ -2663,7 +2663,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Radial fil
     
 
     <div
-      aria-label="status indicator Radial clock wise filling"
+      aria-label="Euro Status Indicator Radial clock wise filling"
       aria-roledescription="Status Indicator"
       aria-valuetext="30%"
       class="fd-status-indicator fd-status-indicator--negative"
@@ -2829,9 +2829,9 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Radial fil
     
 
     <div
-      aria-label="status indicator Radial clock wise filling"
+      aria-label="Euro Status Indicator Radial clock wise filling"
       aria-roledescription="Status Indicator"
-      aria-valuetext="3%"
+      aria-valuetext="30%"
       class="fd-status-indicator fd-status-indicator--negative"
       focusable="true"
       role="progressbar"
