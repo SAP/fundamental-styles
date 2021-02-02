@@ -1451,7 +1451,13 @@ exports[`Storyshots Patterns/Multi ComboBox Grouping 1`] = `
           id="selectMultipleFruitsLabel"
         >
           
-                Fruits
+                
+          <span
+            class="fd-list__title"
+          >
+            Fruits
+          </span>
+          
             
         </label>
         
@@ -1684,7 +1690,13 @@ exports[`Storyshots Patterns/Multi ComboBox Grouping 1`] = `
           id="selectMultipleVegsLabel"
         >
           
-                Vegetables
+                
+          <span
+            class="fd-list__title"
+          >
+            Vegetables
+          </span>
+          
             
         </label>
         
