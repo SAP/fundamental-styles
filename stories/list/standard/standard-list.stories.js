@@ -19,7 +19,7 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
         
 `,
         tags: ['f3', 'a11y', 'theme', 'development'],
-        components: ['list', 'icon', 'checkbox', 'button']
+        components: ['list', 'icon', 'checkbox', 'button', 'busy-indicator']
     }
 };
 
@@ -269,6 +269,29 @@ export const actionList = () => `<h4>Standard Size</h4>
   </li>
   <li role="listitem" class="fd-list__item fd-list__item--action">
       <button class="fd-list__title">More Options</button>
+  </li>
+</ul>
+
+<h4>Growing List item with Busy Indicator </h4>
+<ul class="fd-list" role="list">
+  <li role="listitem" class="fd-list__item">
+      <span class="fd-list__title">List Item 1</span>
+  </li>
+  <li role="listitem" class="fd-list__item">
+      <span class="fd-list__title">List Item 2</span>
+  </li>
+  <li role="listitem" class="fd-list__item">
+      <span class="fd-list__title">List Item 3</span>
+  </li>
+  <li role="listitem" class="fd-list__item fd-list__item--action fd-list__item--growing">
+      <button class="fd-list__title">
+        <div class="fd-busy-indicator--m" aria-hidden="false" aria-label="Loading">
+            <div class="fd-busy-indicator--circle-0"></div>
+            <div class="fd-busy-indicator--circle-1"></div>
+            <div class="fd-busy-indicator--circle-2"></div>
+        </div>
+        <div class="fd-list__title-text">More Options</div>
+    </button>
   </li>
 </ul>
 `;
