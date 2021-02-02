@@ -20,7 +20,7 @@ A card is a container that consists of two main components: a selectable header 
 
 Components | Description
 :--------- |:-----------
-Header (main) | The header displays a mandatory title, indicating what the card is about and functions as a navigation control that directs the user to the parent app.
+Header (main) | The header displays a mandatory title, indicating what the card is about and optionally functions as a navigation control that directs the user to the parent app.
 Content (main) | The content area is reserved for application content.
 Title | A title is mandatory to explain what content is being displayed to the user.
 Avatar (optional) | An avatar can be displayed in a size S (3rem).
@@ -36,7 +36,7 @@ Counter (optional) | The counter indicates how many items are showing on the car
 export const cardAnatomy = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="Card Anatomy Example 1">
-            <a class="fd-card__header" tabindex="0">
+            <div class="fd-card__header">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
                     style="background-image: url('/assets/images/backgrounds/city.jpg')" 
@@ -51,14 +51,14 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
                         <div class="fd-card__subtitle">Card Subtitle</div>
                     </div>
                 </div>
-            </a>
+            </div>
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="Card Anatomy Example 2">
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
-            <a class="fd-card__header" tabindex="0">
+            <a class="fd-card__header fd-card__header--interractive" tabindex="0">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
                     style="background-image: url('/assets/images/backgrounds/city.jpg')" 
@@ -66,11 +66,11 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
-                        <div class="fd-card__title">Card Title</div>
+                        <div class="fd-card__title">Interractive Header</div>
                         <span class="fd-object-status fd-card__counter">Counter</span>
                     </div>
                     <div class="fd-card__subtitle-area">
-                        <div class="fd-card__subtitle">Card Subtitle</div>
+                        <div class="fd-card__subtitle">Try to hover on it</div>
                     </div>
                 </div>
             </a>
@@ -78,7 +78,7 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
     </div>
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="Card Anatomy Example 3">
-            <a class="fd-card__header" tabindex="0">
+            <div class="fd-card__header">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
                     style="background-image: url('/assets/images/backgrounds/city.jpg')" 
@@ -93,13 +93,13 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
                         <div class="fd-card__subtitle">Card Subtitle With a Very Long Text ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
                     </div>
                 </div>
-            </a>
+            </div>
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="Card Anatomy Example 4">
-            <a class="fd-card__header" tabindex="0">
+            <div class="fd-card__header">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
                     style="background-image: url('/assets/images/backgrounds/city.jpg')" 
@@ -111,14 +111,14 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
                         <span class="fd-object-status fd-object-status--positive fd-card__counter">6 of 15</span>
                     </div>
                 </div>
-            </a>
+            </div>
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="Card Anatomy Example 5">
             <div class="fd-badge">Badge</div>
-            <a class="fd-card__header" tabindex="0">
+            <div class="fd-card__header">
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Card Title</div>
@@ -128,7 +128,7 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
                         <div class="fd-card__subtitle">Card Subtitle</div>
                     </div>
                 </div>
-            </a>
+            </div>
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
@@ -136,7 +136,7 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
         <div class="fd-card" role="region" aria-label="Card Anatomy Example 6">
             <div class="fd-badge">Badge</div>
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
-            <a class="fd-card__header" tabindex="0">
+            <div class="fd-card__header">
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Card Title</div>
@@ -146,13 +146,13 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
                         <div class="fd-card__subtitle">Card Subtitle</div>
                     </div>
                 </div>
-            </a>
+            </div>
         </div>
     </div>
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="Card Anatomy Example 7">
             <div class="fd-badge">New</div>
-            <a class="fd-card__header" tabindex="0">
+            <div class="fd-card__header">
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Card Title With a Very Long Text ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
@@ -162,21 +162,21 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
                         <div class="fd-card__subtitle">Card Subtitle With a Very Long Text ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
                     </div>
                 </div>
-            </a>
+            </div>
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="8">
             <div class="fd-badge">Updated Content</div>
-            <a class="fd-card__header" tabindex="0">
+            <div class="fd-card__header">
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Card Title</div>
                         <span class="fd-object-status fd-card__counter">1 of 15</span>
                     </div>
                 </div>
-            </a>
+            </div>
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
@@ -187,15 +187,15 @@ cardAnatomy.storyName = 'Standard card';
 cardAnatomy.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `The standard card displays a header area with a title and a content area, as well as any other components mentioned in the card anatomy section.
-`
+        storyDescription: `The standard card displays a header area with a title and a content area, as well as any other components 
+        mentioned in the card anatomy section. To make \`header\` interractive, add \`fd-card__header--interractive\` to element.`
     }
 };
 
 export const analyticalCard = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card fd-card--analytical" role="region" aria-label="Analytical Card Example 1">
-            <a class="fd-card__header" tabindex="0">
+            <div class="fd-card__header">
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Card Title</div>
@@ -230,14 +230,14 @@ export const analyticalCard = () => `<div style="display:flex; justify-content:s
                     </div>
                     <div class="fd-card__second-subtitle">Second Subtitle</div>
                 </div>
-            </a>
+            </div>
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
 
     <div style="width: 700px; height: 400px; margin: 1rem;">
         <div class="fd-card fd-card--analytical"  role="region" aria-label="Analytical Card Example 2">
-            <a class="fd-card__header" tabindex="0">
+            <div class="fd-card__header">
                 <div class="fd-badge">Badge</div>
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
@@ -273,7 +273,7 @@ export const analyticalCard = () => `<div style="display:flex; justify-content:s
                     </div>
                     <div class="fd-card__second-subtitle">Second Subtitle With a Very Long Text ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
                 </div>
-            </a>
+            </div>
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
@@ -306,37 +306,37 @@ analyticalCard.parameters = {
 export const listCard = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 300px; height: 100%; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="List Card Example 1">
-            <a class="fd-card__header" tabindex="0">
+            <div class="fd-card__header">
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Quick Links</div>
                         <span class="fd-object-status fd-card__counter">6 of 20</span>
                     </div>
                 </div>
-            </a>
+            </div>
             <div class="fd-card__content" role="group" aria-label="Card Content">
                 <ul class="fd-list fd-list--no-border" role="list">
-                    <li role="listitem" tabindex="0" class="fd-list__item">
+                    <li role="listitem" class="fd-list__item">
                         <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
                         <span class="fd-list__title">List item 1</span>
                     </li>
-                    <li role="listitem" tabindex="0" class="fd-list__item">
+                    <li role="listitem" class="fd-list__item">
                         <i role="presentation" class="fd-list__icon sap-icon--wrench"></i>
                         <span class="fd-list__title">List item 2</span>
                     </li>
-                    <li role="listitem" tabindex="0" class="fd-list__item">
+                    <li role="listitem" class="fd-list__item">
                         <i role="presentation" class="fd-list__icon sap-icon--leads"></i>
                         <span class="fd-list__title">List item 3</span>
                     </li>
-                    <li role="listitem" tabindex="0" class="fd-list__item">
+                    <li role="listitem" class="fd-list__item">
                         <i role="presentation" class="fd-list__icon sap-icon--batch-payments"></i>
                         <span class="fd-list__title">List item 4</span>
                     </li>
-                    <li role="listitem" tabindex="0" class="fd-list__item">
+                    <li role="listitem" class="fd-list__item">
                         <i role="presentation" class="fd-list__icon sap-icon--retail-store"></i>
                         <span class="fd-list__title">List item 3</span>
                     </li>
-                    <li role="listitem" tabindex="0" class="fd-list__item">
+                    <li role="listitem" class="fd-list__item">
                         <i role="presentation" class="fd-list__icon sap-icon--travel-expense"></i>
                         <span class="fd-list__title">List item 4</span>
                     </li>
@@ -346,7 +346,7 @@ export const listCard = () => `<div style="display:flex; justify-content:space-a
     </div>
     <div style="width: 300px; height: 100%; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="List Card Example 2">
-            <a class="fd-card__header" tabindex="0">
+            <div class="fd-card__header">
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Quick Links</div>
@@ -356,30 +356,30 @@ export const listCard = () => `<div style="display:flex; justify-content:space-a
                         <div class="fd-card__subtitle">Compact Mode</div>
                     </div>
                 </div>
-            </a>
+            </div>
             <div class="fd-card__content" role="group" aria-label="Card Content">
                 <ul class="fd-list fd-list--no-border fd-list--compact" role="list">
-                    <li role="listitem" tabindex="0" class="fd-list__item">
+                    <li role="listitem" class="fd-list__item">
                         <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
                         <span class="fd-list__title">List item 1</span>
                     </li>
-                    <li role="listitem" tabindex="0" class="fd-list__item">
+                    <li role="listitem" class="fd-list__item">
                         <i role="presentation" class="fd-list__icon sap-icon--wrench"></i>
                         <span class="fd-list__title">List item 2</span>
                     </li>
-                    <li role="listitem" tabindex="0" class="fd-list__item">
+                    <li role="listitem" class="fd-list__item">
                         <i role="presentation" class="fd-list__icon sap-icon--leads"></i>
                         <span class="fd-list__title">List item 3</span>
                     </li>
-                    <li role="listitem" tabindex="0" class="fd-list__item">
+                    <li role="listitem" class="fd-list__item">
                         <i role="presentation" class="fd-list__icon sap-icon--batch-payments"></i>
                         <span class="fd-list__title">List item 4</span>
                     </li>
-                    <li role="listitem" tabindex="0" class="fd-list__item">
+                    <li role="listitem" class="fd-list__item">
                         <i role="presentation" class="fd-list__icon sap-icon--retail-store"></i>
                         <span class="fd-list__title">List item 3</span>
                     </li>
-                    <li role="listitem" tabindex="0" class="fd-list__item">
+                    <li role="listitem" class="fd-list__item">
                         <i role="presentation" class="fd-list__icon sap-icon--travel-expense"></i>
                         <span class="fd-list__title">List item 4</span>
                     </li>
@@ -401,14 +401,14 @@ listCard.parameters = {
 export const tableCard = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 500px; height: 100%; margin: 1rem;">
         <div class="fd-card fd-card--table" role="region" aria-label="Table Card Example 1">
-            <a class="fd-card__header" tabindex="0">
+            <div class="fd-card__header">
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Table Card</div>
                         <span class="fd-object-status fd-card__counter">4 of 20</span>
                     </div>
                 </div>
-            </a>
+            </div>
             <div class="fd-card__content" role="group" aria-label="Card Content">
                 <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders">
                     <thead class="fd-table__header">
@@ -483,7 +483,7 @@ export const tableCard = () => `<div style="display:flex; justify-content:space-
     </div>
     <div style="width: 500px; height: 100%; margin: 1rem;">
         <div class="fd-card fd-card--table fd-card--compact" role="region" aria-label="Table Card Example 2">
-            <a class="fd-card__header" tabindex="0">
+            <div class="fd-card__header">
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Table Card</div>
@@ -493,7 +493,7 @@ export const tableCard = () => `<div style="display:flex; justify-content:space-
                         <div class="fd-card__subtitle">Compact Mode</div>
                     </div>
                 </div>
-            </a>
+            </div>
             <div class="fd-card__content" role="group" aria-label="Card Content">
                 <table class="fd-table fd-table--compact fd-table--no-horizontal-borders fd-table--no-vertical-borders">
                     <thead class="fd-table__header">
@@ -565,7 +565,7 @@ tableCard.parameters = {
 export const objectCard = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 14rem; height: 34rem; margin: 1rem;">
         <div class="fd-card fd-card--object" role="region" aria-label="Object Card Example 1">
-            <a class="fd-card__header" tabindex="0">
+            <div class="fd-card__header">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
                     style="background-image: url('/assets/images/avatars/1.svg')" 
@@ -579,7 +579,7 @@ export const objectCard = () => `<div style="display:flex; justify-content:space
                         <div class="fd-card__subtitle">Card Subtitle</div>
                     </div>
                 </div>
-            </a>
+            </div>
             <div class="fd-card__content" role="group" aria-label="Card Content">
                 <div class="fd-card__content-container">
                     <div class="fd-card__content-section">
@@ -629,7 +629,7 @@ export const objectCard = () => `<div style="display:flex; justify-content:space
     </div>
     <div style="width: 40rem; height: 20rem; margin: 1rem;">
         <div class="fd-card fd-card--object" role="region" aria-label="Object Card Example 2">
-            <a class="fd-card__header" tabindex="0">
+            <div class="fd-card__header">
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
                     style="background-image: url('/assets/images/avatars/1.svg')" 
@@ -643,7 +643,7 @@ export const objectCard = () => `<div style="display:flex; justify-content:space
                         <div class="fd-card__subtitle">Card Subtitle</div>
                     </div>
                 </div>
-            </a>
+            </div>
             <div class="fd-card__content" role="group" aria-label="Card Content">
                 <div class="fd-card__content-container fd-card__content-container--horizontal">
                     <div class="fd-card__content-section">
@@ -656,7 +656,7 @@ export const objectCard = () => `<div style="display:flex; justify-content:space
                             </span>
                             <div class="fd-card__content-group-text">
                                 <span style="color: green;">Label</span>
-                                <a href="#" class="fd-link" tabindex="0">Link Text</a>
+                                <a href="#" class="fd-link">Link Text</a>
                             </div>
                         </div>
                         <div class="fd-card__content-group">

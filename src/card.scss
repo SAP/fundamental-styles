@@ -41,27 +41,11 @@ $fd-card-content-avatar-text-spacing: 0.5rem !default;
     @include fd-reset();
     @include fd-flex();
 
-    @include fd-hover() {
-      background: var(--sapTile_Hover_Background);
-    }
-
-    @include fd-active() {
-      background: var(--sapTile_Active_Background);
-    }
-
-    @include fd-focus() {
-      outline-style: dotted;
-      outline-width: var(--sapContent_FocusWidth);
-      outline-color: var(--sapContent_FocusColor);
-      outline-offset: -0.125rem;
-    }
-
     padding: 1rem;
     background: var(--sapTile_Background);
     border-bottom: $fd-card-header-border;
     border-radius: $fd-card-header-border-radius $fd-card-header-border-radius 0 0;
     text-decoration: none;
-    cursor: pointer;
 
     .#{$block}__avatar {
       margin-right: $fd-card-avatar-text-spacing;
@@ -69,6 +53,25 @@ $fd-card-content-avatar-text-spacing: 0.5rem !default;
       @include fd-rtl() {
         margin-right: 0;
         margin-left: $fd-card-avatar-text-spacing;
+      }
+    }
+
+    &--interractive {
+      cursor: pointer;
+
+      @include fd-hover() {
+        background: var(--sapTile_Hover_Background);
+      }
+
+      @include fd-active() {
+        background: var(--sapTile_Active_Background);
+      }
+
+      @include fd-focus() {
+        outline-style: dotted;
+        outline-width: var(--sapContent_FocusWidth);
+        outline-color: var(--sapContent_FocusColor);
+        outline-offset: -0.125rem;
       }
     }
 
