@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.15.1-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.21...v0.15.1-rc.22) (2021-02-02)
+
+
+### Features
+
+* add busy state to the Action List ([#2099](https://github.com/SAP/fundamental-styles/issues/2099)) ([7a157bc](https://github.com/SAP/fundamental-styles/commit/7a157bc6c07d8e4985ebeffdf6f44b3266e7319c))
+
 ### [0.15.1-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.20...v0.15.1-rc.21) (2021-02-02)
 
 ### [0.15.1-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.19...v0.15.1-rc.20) (2021-02-02)
