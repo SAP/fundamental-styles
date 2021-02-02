@@ -39,6 +39,7 @@ $block: #{$fd-namespace}-grid-list;
     box-shadow: $fd-grid-list-item-box-shadow;
     height: 100%;
     position: relative;
+    overflow: hidden;
 
     .#{$block}__radio-input {
       height: 1rem;
@@ -47,10 +48,13 @@ $block: #{$fd-namespace}-grid-list;
       @include fd-focus() {
         + .#{$block}__radio-label {
           outline-offset: 0;
+          outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
         }
       }
 
       + .#{$block}__radio-label {
+        @include fd-fiori-focus(0);
+
         @include fd-empty() {
           padding: 0;
         }
