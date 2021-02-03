@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.15.1-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.22...v0.15.1-rc.23) (2021-02-03)
+
+
+### Features
+
+* introduce status indicator component ([#2072](https://github.com/SAP/fundamental-styles/issues/2072)) ([bee8010](https://github.com/SAP/fundamental-styles/commit/bee801008e5e69a0d0fd1497cb12522c5fc8b36b))
+
 ### [0.15.1-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.21...v0.15.1-rc.22) (2021-02-02)
 
 
