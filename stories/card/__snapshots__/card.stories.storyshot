@@ -445,9 +445,8 @@ exports[`Storyshots Components/Card List card 1`] = `
     >
       
             
-      <a
-        class="fd-card__header"
-        tabindex="0"
+      <div
+        class="fd-card__header fd-card__header--non-interactive"
       >
         
                 
@@ -481,7 +480,7 @@ exports[`Storyshots Components/Card List card 1`] = `
         </div>
         
             
-      </a>
+      </div>
       
             
       <div
@@ -659,9 +658,8 @@ exports[`Storyshots Components/Card List card 1`] = `
     >
       
             
-      <a
-        class="fd-card__header"
-        tabindex="0"
+      <div
+        class="fd-card__header fd-card__header--non-interactive"
       >
         
                 
@@ -710,7 +708,7 @@ exports[`Storyshots Components/Card List card 1`] = `
         </div>
         
             
-      </a>
+      </div>
       
             
       <div
