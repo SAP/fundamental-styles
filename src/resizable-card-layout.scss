@@ -9,21 +9,19 @@ $fd-border-on-drag: 0.125rem dashed var(--sapContent_DragAndDropActiveColor);
 
 .#{$block} {
   @include fd-reset();
+  @include fd-flex();
 
   position: relative;
 
   &__card {
     @include fd-reset();
 
+    order: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
     position: relative;
-    float: left;
     // subtract width taken by vertical handler and horizontal handler
-    width: calc(100% - #{$fd-resize-handle-width});
     height: calc(100% - #{$fd-resize-handle-width});
-
-    @include fd-rtl() {
-      float: right;
-    }
 
     .#{$block}__icon-container {
       @include fd-reset();
@@ -95,15 +93,11 @@ $fd-border-on-drag: 0.125rem dashed var(--sapContent_DragAndDropActiveColor);
       &--vertical {
         @include fd-reset();
 
-        float: right;
+        order: 2;
         // subtract resize-corner icon font-size/2
         height: calc(100% - 0.5rem);
         width: $fd-resize-handle-width;
         cursor: ew-resize;
-
-        @include fd-rtl() {
-          float: left;
-        }
       }
 
       &--vertical::content {

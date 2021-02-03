@@ -165,7 +165,7 @@ export const resizeCardVerticalDirection = () =>
             </div>
         </div>
         <div class="fd-resizable-card__resize__handle--horizontal"></div>
-        <div c    lass="fd-resizable-card__resize--icon fd-resizable-card__resize__cursor--vertical"></div>
+        <div class="fd-resizable-card__resize--icon fd-resizable-card__resize__cursor--vertical"></div>
     </div>
 `;
 
