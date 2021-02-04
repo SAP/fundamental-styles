@@ -189,10 +189,13 @@
     border-bottom: var(--sapList_BorderWidth) solid var(--sapList_GroupHeaderBorderColor);
     color: var(--sapList_GroupHeaderTextColor);
     align-items: flex-end;
-    font-size: $fd-list-normal-font-size;
-    font-weight: bold;
     height: 2.75rem;
-    line-height: 2rem;
+
+    .#{$block}__title {
+      font-size: $fd-list-normal-font-size;
+      font-weight: bold;
+      line-height: 2rem;
+    }
   }
 
   &__footer {

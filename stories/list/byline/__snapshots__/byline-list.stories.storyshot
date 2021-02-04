@@ -368,14 +368,14 @@ exports[`Storyshots Components/List/Byline Default 1`] = `
     role="list"
   >
     
-
+  
     <li
       class="fd-list__item"
       role="listitem"
       tabindex="0"
     >
       
-    
+      
       <span
         class="fd-list__thumbnail"
       >
@@ -385,39 +385,39 @@ exports[`Storyshots Components/List/Byline Default 1`] = `
         />
       </span>
       
-    
+      
       <div
         class="fd-list__content"
       >
         
-      
+        
         <div
           class="fd-list__title"
         >
           Title
         </div>
         
-      
+        
         <div
           class="fd-list__byline"
         >
           Byline (description)
         </div>
         
-    
+      
       </div>
       
-
+  
     </li>
     
-
+  
     <li
       class="fd-list__item"
       role="listitem"
       tabindex="0"
     >
       
-    
+      
       <span
         class="fd-list__thumbnail"
       >
@@ -427,108 +427,108 @@ exports[`Storyshots Components/List/Byline Default 1`] = `
         />
       </span>
       
-    
+      
       <div
         class="fd-list__content"
       >
         
-      
+        
         <div
           class="fd-list__title"
         >
           List item with no byline
         </div>
         
-    
+      
       </div>
       
-
+  
     </li>
     
-
+  
     <li
       class="fd-list__item"
       role="listitem"
       tabindex="0"
     >
       
-  
+    
       <span
         aria-label="Godafoss waterfall in northern Iceland"
         class="fd-image--s fd-list__thumbnail"
         style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"
       />
       
-  
+    
       <div
         class="fd-list__content"
       >
         
-      
+        
         <div
           class="fd-list__title"
         >
           List item with 2-column byline
         </div>
         
-      
+        
         <div
           class="fd-list__byline fd-list__byline--2-col"
         >
           
-          
+            
           <div
             class="fd-list__byline-left"
           >
             First text item in byline (standard text)
           </div>
           
-          
+            
           <div
             class="fd-list__byline-right"
           >
             Second text item in byline (can be semantic)
           </div>
           
-      
+        
         </div>
         
-  
+    
       </div>
       
-
+  
     </li>
     
-
+  
     <li
       class="fd-list__item"
       role="listitem"
       tabindex="0"
     >
       
-    
+      
       <div
         class="fd-list__content"
       >
         
-      
+        
         <div
           class="fd-list__title"
         >
           Text-only list item
         </div>
         
-      
+        
         <div
           class="fd-list__byline"
         >
           Byline (description)
         </div>
         
-    
+      
       </div>
       
-
+  
     </li>
     
 
@@ -546,14 +546,14 @@ exports[`Storyshots Components/List/Byline Default 1`] = `
     role="list"
   >
     
-
+  
     <li
       class="fd-list__item"
       role="listitem"
       tabindex="0"
     >
       
-    
+      
       <span
         class="fd-list__thumbnail"
       >
@@ -563,39 +563,39 @@ exports[`Storyshots Components/List/Byline Default 1`] = `
         />
       </span>
       
-    
+      
       <div
         class="fd-list__content"
       >
         
-      
+        
         <div
           class="fd-list__title"
         >
           Title
         </div>
         
-      
+        
         <div
           class="fd-list__byline"
         >
           Byline (description)
         </div>
         
-    
+      
       </div>
       
-
+  
     </li>
     
-
+  
     <li
       class="fd-list__item"
       role="listitem"
       tabindex="0"
     >
       
-    
+      
       <span
         class="fd-list__thumbnail"
       >
@@ -605,108 +605,108 @@ exports[`Storyshots Components/List/Byline Default 1`] = `
         />
       </span>
       
-    
+      
       <div
         class="fd-list__content"
       >
         
-      
+        
         <div
           class="fd-list__title"
         >
           List item with no byline
         </div>
         
-    
+      
       </div>
       
-
+  
     </li>
     
-
+  
     <li
       class="fd-list__item"
       role="listitem"
       tabindex="0"
     >
       
-  
+    
       <span
         aria-label="Godafoss waterfall in northern Iceland"
         class="fd-image--s fd-list__thumbnail"
         style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"
       />
       
-  
+    
       <div
         class="fd-list__content"
       >
         
-      
+        
         <div
           class="fd-list__title"
         >
           List item with 2-column byline
         </div>
         
-      
+        
         <div
           class="fd-list__byline fd-list__byline--2-col"
         >
           
-          
+            
           <div
             class="fd-list__byline-left"
           >
             First text item in byline (standard text)
           </div>
           
-          
+            
           <div
             class="fd-list__byline-right"
           >
             Second text item in byline (can be semantic)
           </div>
           
-      
+        
         </div>
         
-  
+    
       </div>
       
-
+  
     </li>
     
-
+  
     <li
       class="fd-list__item"
       role="listitem"
       tabindex="0"
     >
       
-    
+      
       <div
         class="fd-list__content"
       >
         
-      
+        
         <div
           class="fd-list__title"
         >
           Text-only list item
         </div>
         
-      
+        
         <div
           class="fd-list__byline"
         >
           Byline (description)
         </div>
         
-    
+      
       </div>
       
-
+  
     </li>
     
 

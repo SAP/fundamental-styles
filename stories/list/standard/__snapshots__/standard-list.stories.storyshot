@@ -785,7 +785,13 @@ exports[`Storyshots Components/List/Standard Group 1`] = `
     role="listitem"
   >
     
-    Group header 1
+    
+    <span
+      class="fd-list__title"
+    >
+      Group header 1
+    </span>
+    
   
   </li>
   
@@ -846,7 +852,13 @@ exports[`Storyshots Components/List/Standard Group 1`] = `
     role="listitem"
   >
     
-    Group header 2
+    
+    <span
+      class="fd-list__title"
+    >
+      Group header 2
+    </span>
+    
   
   </li>
   

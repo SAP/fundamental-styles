@@ -794,7 +794,7 @@ export const itemGrouping = () => `<div style="height: 450px">
         class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill"
         aria-hidden="false">
             <label class="fd-list__group-header" id="fruitsHeader">
-                Fruits
+                <span class="fd-list__title">Fruits</span>
             </label>
             <ul
                 aria-activedescendant="itemGroupingSelectCombobox-currentlyFocusedItem"
@@ -815,7 +815,7 @@ export const itemGrouping = () => `<div style="height: 450px">
                 </li>
             </ul>
             <label class="fd-list__group-header" id="vegHeader">
-                Vegetables
+                <span class="fd-list__title">Vegetables</span>
             </label>
             <ul aria-labelledby="itemGroupingLabel vegHeader" class="fd-list fd-list--dropdown" role="listbox">
                 <li role="option" tabindex="-1" class="fd-list__item">

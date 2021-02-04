@@ -1731,7 +1731,13 @@ exports[`Storyshots Components/Select Grouping 1`] = `
         id="fruitsHeader"
       >
         
-                Fruits
+                
+        <span
+          class="fd-list__title"
+        >
+          Fruits
+        </span>
+        
             
       </label>
       
@@ -1822,7 +1828,13 @@ exports[`Storyshots Components/Select Grouping 1`] = `
         id="vegHeader"
       >
         
-                Vegetables
+                
+        <span
+          class="fd-list__title"
+        >
+          Vegetables
+        </span>
+        
             
       </label>
       

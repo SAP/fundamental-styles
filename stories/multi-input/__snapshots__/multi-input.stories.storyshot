@@ -2002,7 +2002,13 @@ exports[`Storyshots Patterns/Multi Input Grouping 1`] = `
           id="fruitListHeader"
         >
           
-                Fruits
+                
+          <span
+            class="fd-list__title"
+          >
+            Fruits
+          </span>
+          
             
         </h3>
         
@@ -2235,7 +2241,13 @@ exports[`Storyshots Patterns/Multi Input Grouping 1`] = `
           id="selectMultipleVegsLabel"
         >
           
-                Vegetables
+                
+          <span
+            class="fd-list__title"
+          >
+            Vegetables
+          </span>
+          
             
         </label>
         
