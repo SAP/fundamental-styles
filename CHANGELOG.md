@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.16.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.23...v0.16.0-rc.0) (2021-02-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* change in the markup, now the text is wrapped in a span with fd-list__title class.
+Affected components: combobox-input, standard list, multi combobox, multi input, select
+
+### Bug Fixes
+
+* add truncation for List group header text ([#2101](https://github.com/SAP/fundamental-styles/issues/2101)) ([d723916](https://github.com/SAP/fundamental-styles/commit/d723916f16e4d849fc05a34bb12266116cb45b82))
+
 ### [0.15.1-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.22...v0.15.1-rc.23) (2021-02-03)
 
 
