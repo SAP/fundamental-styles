@@ -154,20 +154,21 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
       width: 0.25rem;
       min-width: auto;
 
+      &:last-child {
+        padding-right: $fd-wizard-stacked-upcoming-step-offset;
+
+        @include fd-rtl() {
+          padding-right: 0;
+          padding-left: $fd-wizard-stacked-upcoming-step-offset;
+        }
+      }
+
       .#{$block}__connector,
       .#{$block}__label-container {
         display: none;
       }
 
       &.#{$block}__step--upcoming {
-        &:last-child {
-          padding-right: $fd-wizard-stacked-upcoming-step-offset;
-
-          @include fd-rtl() {
-            padding-right: 0;
-            padding-left: $fd-wizard-stacked-upcoming-step-offset;
-          }
-        }
 
         // Fiori 3 recommends a maximum of 8 steps
         @for $i from 1 through 8 {
