@@ -768,7 +768,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
             
                             
             <div
-              class="fd-facet__container fd-facet__container--image fd-facet__container--image-header"
+              class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-title"
             >
               
                                 
@@ -950,7 +950,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
           
                         
           <div
-            class="fd-facet__container fd-facet__container--image"
+            class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-content"
           >
             
                             
@@ -2051,7 +2051,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
               
                                 
               <div
-                class="fd-facet__container fd-facet__container--image fd-facet__container--image-header"
+                class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-title"
               >
                 
                                     
@@ -2216,7 +2216,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
             
                             
             <div
-              class="fd-facet__container fd-facet__container--image fd-facet__container--image-sm"
+              class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-content-sm"
             >
               
                                 

@@ -37,6 +37,7 @@ $block: #{$fd-namespace}-facet;
 
   @include fd-flex() {
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   &__container {
@@ -46,16 +47,12 @@ $block: #{$fd-namespace}-facet;
     &--image {
       @include fd-flex();
 
-      @media (min-width: 0) {
-        @include image-facet-mobile-spacing();
-      }
+      // by itself, only right spacing is applied
+      margin-right: $fd-facet-horizontal-spacing;
+      margin-bottom: 0;
 
-      @media (min-width: 37rem) {
-        @include facet-spacing();
-      }
-
-      // when used in object/dynamic page header
-      &-header {
+      // when used in object/dynamic page header title, different spacings are applied
+      &-header-title {
         margin-right: $fd-image-facet-header-horizontal-spacing;
         margin-bottom: 0;
         align-items: center;
@@ -66,8 +63,19 @@ $block: #{$fd-namespace}-facet;
         }
       }
 
-      // when used in object/dynamic page header in mobile
-      &-sm {
+      // when used in object/dynamic page header content, different spacings are applied
+      &-header-content {
+        @media (min-width: 0) {
+          @include image-facet-mobile-spacing();
+        }
+
+        @media (min-width: 37rem) {
+          @include facet-spacing();
+        }
+      }
+
+      // when used in object/dynamic page header content in mobile
+      &-header-content-sm {
         @include image-facet-mobile-spacing();
       }
     }

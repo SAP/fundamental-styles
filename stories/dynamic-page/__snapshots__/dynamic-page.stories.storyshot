@@ -1637,7 +1637,7 @@ exports[`Storyshots Layouts/Dynamic Page Dynamic Page with header facets 1`] = `
             
                             
             <div
-              class="fd-facet__container fd-facet__container--image fd-facet__container--image-header"
+              class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-title"
             >
               
                                 
@@ -1819,7 +1819,7 @@ exports[`Storyshots Layouts/Dynamic Page Dynamic Page with header facets 1`] = `
           
                         
           <div
-            class="fd-facet__container fd-facet__container--image"
+            class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-content"
           >
             
                             
@@ -2920,7 +2920,7 @@ exports[`Storyshots Layouts/Dynamic Page Dynamic Page with header facets in Mobi
               
                                 
               <div
-                class="fd-facet__container fd-facet__container--image fd-facet__container--image-header"
+                class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-title"
               >
                 
                                     
@@ -3085,7 +3085,7 @@ exports[`Storyshots Layouts/Dynamic Page Dynamic Page with header facets in Mobi
             
                             
             <div
-              class="fd-facet__container fd-facet__container--image fd-facet__container--image-sm"
+              class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-content-sm"
             >
               
                                 

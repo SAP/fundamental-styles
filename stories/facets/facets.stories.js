@@ -321,7 +321,7 @@ export const objectPage = () =>
                             </ul>
                         </nav>
                         <div class="fd-dynamic-page__image-title-container">
-                            <div class="fd-facet__container fd-facet__container--image fd-facet__container--image-header">
+                            <div class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-title">
                                 <span class="fd-avatar fd-avatar--s" aria-label="Avatar">
                                     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
                                 </span>
@@ -359,7 +359,7 @@ export const objectPage = () =>
             <div class="fd-dynamic-page__collapsible-header-container">
                 <div class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--xl" role="region" id="fddplhvc6" aria-hidden="false" aria-label="Dynamic Page Desktop Header" >
                     <div class="fd-facet">
-                        <div class="fd-facet__container fd-facet__container--image">
+                        <div class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-content">
                             <span class="fd-avatar fd-avatar--l" aria-label="Avatar">
                                 <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
                             </span>
@@ -559,8 +559,8 @@ objectPage.storyName = 'Facets in Object Page';
 objectPage.parameters = {
     docs: {
         storyDescription: `All facet types used together in the context of a dynamic page. To have the image from the image facet
-        appear next to the title, add the class \`fd-facet__container\` and apply the modifiers \`fd-facet__container--image\` and \`fd-facet__container--image-header\` to the 
-        \`fd-dynamic-page__image-title-container\` class. 
+        appear next to the title, add the class \`fd-facet__container\` and apply the modifiers \`fd-facet__container--image\` and \`fd-facet__container--image-header-title\` to the 
+        \`fd-dynamic-page__image-title-container\` class when collapsed, and \`fd-facet__container--image-header-content\` when expanded.
 
 The final structure of a collapsed header with image next to the title is shown below with changes marked in bold:
 
@@ -657,7 +657,7 @@ export const objectPageMobile = () =>
                                 </div>
                             </div>
                             <div class="fd-dynamic-page__image-title-container">
-                                <div class="fd-facet__container fd-facet__container--image fd-facet__container--image-header">
+                                <div class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-title">
                                     <span class="fd-avatar fd-avatar--s" aria-label="Avatar">
                                         <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
                                     </span>
@@ -702,7 +702,7 @@ export const objectPageMobile = () =>
                 <div class="fd-dynamic-page__collapsible-header-container">
                     <div class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--sm" role="region" id="fddplhvc4" aria-hidden="false" aria-label="Dynamic Page Mobile Header">
                         <div class="fd-facet">
-                            <div class="fd-facet__container fd-facet__container--image fd-facet__container--image-sm">
+                            <div class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-content-sm">
                                 <span class="fd-avatar fd-avatar--l" aria-label="Avatar">
                                     <i class="fd-avatar__icon sap-icon--camera" role="presentation"></i>
                                 </span>
@@ -819,8 +819,8 @@ objectPageMobile.storyName = 'Facets in Object Page Mobile';
 objectPageMobile.parameters = {
     docs: {
         storyDescription: `To have the image from the image facet appear next to the title, add the class 
-        \`fd-facet__container\` and apply the modifiers \`fd-facet__container--image\` and \`fd-facet__container--image-header\` to the 
-        \`fd-dynamic-page__image-title-container\` class when expanded, and \`fd-facet__container--image-sm\` when collapsed.
+        \`fd-facet__container\` and apply the modifiers \`fd-facet__container--image\` and \`fd-facet__container--image-header-title\` to the 
+        \`fd-dynamic-page__image-title-container\` class when expanded, and \`fd-facet__container--image-header-content-sm\` when collapsed.
 `
     }
 };
