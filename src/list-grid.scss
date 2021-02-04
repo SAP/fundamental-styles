@@ -53,8 +53,6 @@ $block: #{$fd-namespace}-grid-list;
       }
 
       + .#{$block}__radio-label {
-        @include fd-fiori-focus(0);
-
         @include fd-empty() {
           padding: 0;
         }
