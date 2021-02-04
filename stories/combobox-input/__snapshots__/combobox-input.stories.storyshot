@@ -1417,7 +1417,15 @@ exports[`Storyshots Patterns/Combobox Input Mobile 1`] = `
         class="fd-list__group-header"
         id="fruitsMobileHeader"
       >
-        Fruits
+        
+                
+        <span
+          class="fd-list__title"
+        >
+          Fruits
+        </span>
+        
+            
       </label>
       
             
@@ -1503,7 +1511,15 @@ exports[`Storyshots Patterns/Combobox Input Mobile 1`] = `
         class="fd-list__group-header"
         id="vegMobileHeader"
       >
-        Vegetables
+        
+                
+        <span
+          class="fd-list__title"
+        >
+          Vegetables
+        </span>
+        
+            
       </label>
       
             
@@ -2127,7 +2143,13 @@ exports[`Storyshots Patterns/Combobox Input Two Items And Items Grouping 1`] = `
             id="fruitListHeader"
           >
             
-                        Fruits
+                        
+            <span
+              class="fd-list__title"
+            >
+              Fruits
+            </span>
+            
                     
           </label>
           
@@ -2215,7 +2237,13 @@ exports[`Storyshots Patterns/Combobox Input Two Items And Items Grouping 1`] = `
             id="vegListHeader"
           >
             
-                        Vegetables
+                        
+            <span
+              class="fd-list__title"
+            >
+              Vegetables
+            </span>
+            
                     
           </label>
           

@@ -373,7 +373,7 @@ export const grouping = () => `<div style="height:450px">
         <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4H8X34a">
         <div class="fd-popover__wrapper">
             <h3 id="fruitListHeader" class="fd-list__group-header">
-                Fruits
+                <span class="fd-list__title">Fruits</span>
             </h3>
             <ul aria-multiselectable="true" role="listbox" aria-labelledby="fruitListHeader" class="fd-list fd-list--multi-input">
                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
@@ -414,7 +414,7 @@ export const grouping = () => `<div style="height:450px">
 				</li>
             </ul>
             <label class="fd-list__group-header" id="selectMultipleVegsLabel">
-                Vegetables
+                <span class="fd-list__title">Vegetables</span>
             </label>
             <ul class="fd-list fd-list--multi-input" role="listbox" aria-multiselectable="true" aria-labelledby="selectMultipleVegsLabel">
  				<li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">

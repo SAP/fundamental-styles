@@ -2,6 +2,101 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.16.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.23...v0.16.0-rc.0) (2021-02-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* change in the markup, now the text is wrapped in a span with fd-list__title class.
+Affected components: combobox-input, standard list, multi combobox, multi input, select
+
+### Bug Fixes
+
+* add truncation for List group header text ([#2101](https://github.com/SAP/fundamental-styles/issues/2101)) ([d723916](https://github.com/SAP/fundamental-styles/commit/d723916f16e4d849fc05a34bb12266116cb45b82))
+
+### [0.15.1-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.22...v0.15.1-rc.23) (2021-02-03)
+
+
+### Features
+
+* introduce status indicator component ([#2072](https://github.com/SAP/fundamental-styles/issues/2072)) ([bee8010](https://github.com/SAP/fundamental-styles/commit/bee801008e5e69a0d0fd1497cb12522c5fc8b36b))
+
+### [0.15.1-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.21...v0.15.1-rc.22) (2021-02-02)
+
+
+### Features
+
+* add busy state to the Action List ([#2099](https://github.com/SAP/fundamental-styles/issues/2099)) ([7a157bc](https://github.com/SAP/fundamental-styles/commit/7a157bc6c07d8e4985ebeffdf6f44b3266e7319c))
+
+### [0.15.1-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.20...v0.15.1-rc.21) (2021-02-02)
+
+### [0.15.1-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.19...v0.15.1-rc.20) (2021-02-02)
+
+### [0.15.1-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.18...v0.15.1-rc.19) (2021-02-02)
+
+### [0.15.1-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.17...v0.15.1-rc.18) (2021-02-02)
+
+### [0.15.1-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.16...v0.15.1-rc.17) (2021-02-02)
+
+### [0.15.1-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.15...v0.15.1-rc.16) (2021-02-02)
+
+### [0.15.1-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.14...v0.15.1-rc.15) (2021-02-02)
+
+
+### Bug Fixes
+
+* Step Input focus within ([#2098](https://github.com/SAP/fundamental-styles/issues/2098)) ([a769b2f](https://github.com/SAP/fundamental-styles/commit/a769b2f87742dec539982e544b36d17ec698e803))
+
+### [0.15.1-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.13...v0.15.1-rc.14) (2021-02-01)
+
+### [0.15.1-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.12...v0.15.1-rc.13) (2021-02-01)
+
+### [0.15.1-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.11...v0.15.1-rc.12) (2021-02-01)
+
+
+### Bug Fixes
+
+* add z-index to floating footer bar ([#2096](https://github.com/SAP/fundamental-styles/issues/2096)) ([f3a1632](https://github.com/SAP/fundamental-styles/commit/f3a1632b2d934459533c60f965ec9164d62c0cf8))
+
+### [0.15.1-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.10...v0.15.1-rc.11) (2021-02-01)
+
+### [0.15.1-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.9...v0.15.1-rc.10) (2021-02-01)
+
+
+### Bug Fixes
+
+* update the color of nav indicator in List ([#2102](https://github.com/SAP/fundamental-styles/issues/2102)) ([4ec510f](https://github.com/SAP/fundamental-styles/commit/4ec510f25a3ed2251925da120b85f6260737550a))
+
+### [0.15.1-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.8...v0.15.1-rc.9) (2021-02-01)
+
+### [0.15.1-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.7...v0.15.1-rc.8) (2021-01-27)
+
+
+### Bug Fixes
+
+* add fix for Table text shadow and focus color ([#2088](https://github.com/SAP/fundamental-styles/issues/2088)) ([efefe2c](https://github.com/SAP/fundamental-styles/commit/efefe2c9546013ab4db091e8e0d766fff8d44924))
+
+### [0.15.1-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.6...v0.15.1-rc.7) (2021-01-27)
+
+
+### Bug Fixes
+
+* added color accents to Overflow Button in Avatar Group ([#2087](https://github.com/SAP/fundamental-styles/issues/2087)) ([e4981af](https://github.com/SAP/fundamental-styles/commit/e4981af3fd8ad080fd14ca930084cb96b9a66fe7))
+
+### [0.15.1-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.5...v0.15.1-rc.6) (2021-01-27)
+
+
+### Features
+
+* list interractive states ([#2068](https://github.com/SAP/fundamental-styles/issues/2068)) ([cd0d456](https://github.com/SAP/fundamental-styles/commit/cd0d4566897a4838c8b934b19197f2b14fb1c868))
+
+### [0.15.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.4...v0.15.1-rc.5) (2021-01-27)
+
+
+### Features
+
+* introduce expand example for the Text component [ci visual] ([#2084](https://github.com/SAP/fundamental-styles/issues/2084)) ([e2c8be9](https://github.com/SAP/fundamental-styles/commit/e2c8be9279470b1a47e059f1cec3918e0ca0eb5f))
+
 ### [0.15.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.3...v0.15.1-rc.4) (2021-01-25)
 
 

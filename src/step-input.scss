@@ -14,8 +14,12 @@ $block: #{$fd-namespace}-step-input;
 
   @include fd-reset();
   @include fd-form-states();
-  @include fd-fiori-focus-within();
 
+  @include fd-fiori-pseudo-focus-within() {
+    z-index: 10;
+  }
+
+  position: relative;
   width: auto;
   border-style: solid;
   border-width: var(--sapField_BorderWidth);

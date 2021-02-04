@@ -2,6 +2,7 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-list;
+
 $form-item: #{$fd-namespace}-form-item;
 
 $fd-list-item-padding-x: 1rem !default;
@@ -38,11 +39,13 @@ $fd-list-selection-container-width: 2.75rem !default;
 $fd-list-selection-form-item-compact-left-offset: 0.375rem !default;
 
 $fd-list-navigation-indicator-width: 2.5rem !default;
-$fd-list-navigation-navigator-bar-right: inset -0.1875rem 0 0 0 var(--sapSelectedColor);
-$fd-list-navigation-navigator-bar-left: inset 0.1875rem 0 0 0 var(--sapSelectedColor);
+$fd-list-navigation-navigator-bar-right: inset -0.1875rem 0 0 0 var(--sapList_SelectionBorderColor);
+$fd-list-navigation-navigator-bar-left: inset 0.1875rem 0 0 0 var(--sapList_SelectionBorderColor);
 $fd-list-navigation-indicator-width: 2.75rem !default;
 
 $fd-list-item-counter-spacing: 1rem !default;
+
+$fd-list-rating-indicator-spacing: 0.5rem !default;
 
 $semantic-color: (
   "neutral": ("color": var(--sapNeutralTextColor)),
@@ -51,6 +54,27 @@ $semantic-color: (
   "negative": ("color": var(--sapNegativeTextColor)),
   "informative": ("color": var(--sapInformativeTextColor))
 );
+
+@mixin list-part-elements() {
+  .#{$block}__title,
+  .#{$block}__secondary,
+  .#{$block}__icon,
+  .#{$block}__content,
+  .#{$block}__byline,
+  .#{$block}__byline-left,
+  .#{$block}__byline-right,
+  .#{$block}__thumbnail,
+  &.#{$block}__link--navigation-indicator::after,
+  & {
+    @content;
+  }
+
+  @each $set-name, $color-set in $semantic-color {
+    .#{$block}__byline-right--#{$set-name} {
+      @content;
+    }
+  }
+}
 
 @mixin fake-list-outline() {
   &:focus,
@@ -109,23 +133,9 @@ $semantic-color: (
       }
     }
 
-    .#{$block}__title,
-    .#{$block}__secondary,
-    .#{$block}__icon,
-    .#{$block}__content,
-    .#{$block}__byline,
-    .#{$block}__byline-left,
-    .#{$block}__byline-right,
-    .#{$block}__thumbnail,
-    &.#{$block}__link--navigation-indicator::after,
-    & {
+    @include list-part-elements() {
       color: var(--sapList_Active_TextColor);
-    }
-
-    @each $set-name, $color-set in $semantic-color {
-      .#{$block}__byline-right--#{$set-name} {
-        color: var(--sapList_Active_TextColor);
-      }
+      text-shadow: none;
     }
   }
 }

@@ -38,6 +38,10 @@
       }
     }
 
+    &--interractive {
+      @include list-item-states();
+    }
+
     &--action {
       padding: 0;
       text-align: center;
@@ -63,12 +67,7 @@
         border: var(--fdList_Item_Action_Button_Border);
         border-radius: var(--fdList_Item_Action_Button_Border_Radius);
 
-        @include fd-focus() {
-          outline-style: dotted;
-          outline-width: var(--sapContent_FocusWidth);
-          outline-color: var(--sapContent_FocusColor);
-          outline-offset: -0.125rem;
-
+        @include fd-fiori-focus(-0.125rem) {
           @include fd-active() {
             outline-color: var(--sapContent_ContrastFocusColor);
           }
@@ -78,6 +77,31 @@
           border: 0;
         }
       }
+    }
+
+    &--growing {
+      .#{$block}__title {
+        @include fd-flex-center();
+      }
+
+      .#{$block}__title-text {
+        @include fd-reset();
+        @include fd-ellipsis();
+
+        color: inherit;
+        text-shadow: inherit;
+        font-size: inherit;
+        margin-left: $fd-list-rating-indicator-spacing;
+
+        @include fd-rtl() {
+          margin-right: $fd-list-rating-indicator-spacing;
+          margin-left: 0;
+        }
+      }
+    }
+
+    @include fd-selected() {
+      @include list-item-selected-state();
     }
   }
 
@@ -165,10 +189,13 @@
     border-bottom: var(--sapList_BorderWidth) solid var(--sapList_GroupHeaderBorderColor);
     color: var(--sapList_GroupHeaderTextColor);
     align-items: flex-end;
-    font-size: $fd-list-normal-font-size;
-    font-weight: bold;
     height: 2.75rem;
-    line-height: 2rem;
+
+    .#{$block}__title {
+      font-size: $fd-list-normal-font-size;
+      font-weight: bold;
+      line-height: 2rem;
+    }
   }
 
   &__footer {

@@ -322,7 +322,7 @@ export const twoItemsAndItemsGrouping = () => `<div style="display:flex;justify-
             <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcXLK6">
                 <div class="fd-popover__wrapper">
                     <label id="fruitListHeader" class="fd-list__group-header">
-                        Fruits
+                        <span class="fd-list__title">Fruits</span>
                     </label>
                     <ul aria-labelledby="fruitListHeader" class="fd-list fd-list--dropdown" role="listbox">
                         <li role="option" tabindex="0" class="fd-list__item is-selected">
@@ -339,7 +339,7 @@ export const twoItemsAndItemsGrouping = () => `<div style="display:flex;justify-
                         </li>
                     </ul>
                     <label id="vegListHeader" class="fd-list__group-header">
-                        Vegetables
+                        <span class="fd-list__title">Vegetables</span>
                     </label>
                     <ul aria-labelledby="vegListHeader" class="fd-list fd-list--dropdown" role="listbox">
                         <li role="option" tabindex="0" class="fd-list__item">
@@ -563,7 +563,9 @@ id="select-dialog-example" style="height:600px">
             </div>
         </div>
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
-            <label id="fruitsMobileHeader" class="fd-list__group-header">Fruits</label>
+            <label id="fruitsMobileHeader" class="fd-list__group-header">
+                <span class="fd-list__title">Fruits</span>
+            </label>
             <ul aria-labelledby="fruitsMobileHeader" class="fd-list fd-list--dropdown" role="listbox">
                 <li role="option" tabindex="0" class="fd-list__item is-selected">
                     <span class="fd-list__title">Apple</span>
@@ -578,7 +580,9 @@ id="select-dialog-example" style="height:600px">
                     <span class="fd-list__title">Kiwi</span>
                 </li>
             </ul>
-            <label id="vegMobileHeader" class="fd-list__group-header">Vegetables</label>
+            <label id="vegMobileHeader" class="fd-list__group-header">
+                <span class="fd-list__title">Vegetables</span>
+            </label>
             <ul aria-labelledby="vegMobileHeader" class="fd-list fd-list--dropdown" role="listbox">
                 <li role="option" tabindex="0" class="fd-list__item">
                     <span class="fd-list__title">Tomato</span>

@@ -134,7 +134,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
         
             
       <button
-        class="fd-button fd-avatar-group__more-button fd-avatar-group__more-button--m"
+        class="fd-button fd-avatar-group__more-button fd-avatar-group__more-button--m fd-avatar-group__more-button--accent-color-6"
         role="button"
         tabindex="-1"
       >

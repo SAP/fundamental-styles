@@ -6,6 +6,7 @@ $block: #{$fd-namespace}-bar;
 .#{$block} {
   $fd-bar-padding-x: 0.5rem !default;
   $fd-bar-element-spacing: 0.5rem !default;
+  $fd-bar-floating-footer-z-index: map-get($fd-z-index-levels, "top") !default;
 
   @mixin bar-design($height: 2.5rem, $background: var(--sapPageHeader_Background), $shadow: var(--sapContent_HeaderShadow)) {
     height: $height;
@@ -128,6 +129,7 @@ $block: #{$fd-namespace}-bar;
       opacity: 1;
     }
 
+    z-index: $fd-bar-floating-footer-z-index;
     position: absolute;
     bottom: 0;
     left: 0;

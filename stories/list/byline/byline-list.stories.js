@@ -56,48 +56,64 @@ style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_no
           <div class="fd-list__byline-left">First text item in byline (standard text)</div>
           <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
       </div>
-  </div>
-</li>
-<li role="listitem" tabindex="0" class="fd-list__item">
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
+      <div class="fd-list__content">
+        <div class="fd-list__title">List item with no byline</div>
+      </div>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+  style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
     <div class="fd-list__content">
-      <div class="fd-list__title">Text-only list item</div>
-      <div class="fd-list__byline">Byline (description)</div>
+        <div class="fd-list__title">List item with 2-column byline</div>
+        <div class="fd-list__byline fd-list__byline--2-col">
+            <div class="fd-list__byline-left">First text item in byline (standard text)</div>
+            <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
+        </div>
     </div>
-</li>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+      <div class="fd-list__content">
+        <div class="fd-list__title">Text-only list item</div>
+        <div class="fd-list__byline">Byline (description)</div>
+      </div>
+  </li>
 </ul>
 
 <h4>Compact size</h4>
 <ul class="fd-list fd-list--compact fd-list--byline" role="list">
-<li role="listitem" tabindex="0" class="fd-list__item">
-    <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
-    <div class="fd-list__content">
-      <div class="fd-list__title">Title</div>
-      <div class="fd-list__byline">Byline (description)</div>
-    </div>
-</li>
-<li role="listitem" tabindex="0" class="fd-list__item">
-    <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
-    <div class="fd-list__content">
-      <div class="fd-list__title">List item with no byline</div>
-    </div>
-</li>
-<li role="listitem" tabindex="0" class="fd-list__item">
-  <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
-style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
-  <div class="fd-list__content">
-      <div class="fd-list__title">List item with 2-column byline</div>
-      <div class="fd-list__byline fd-list__byline--2-col">
-          <div class="fd-list__byline-left">First text item in byline (standard text)</div>
-          <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+      <div class="fd-list__content">
+        <div class="fd-list__title">Title</div>
+        <div class="fd-list__byline">Byline (description)</div>
       </div>
-  </div>
-</li>
-<li role="listitem" tabindex="0" class="fd-list__item">
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
+      <div class="fd-list__content">
+        <div class="fd-list__title">List item with no byline</div>
+      </div>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+  style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
     <div class="fd-list__content">
-      <div class="fd-list__title">Text-only list item</div>
-      <div class="fd-list__byline">Byline (description)</div>
+        <div class="fd-list__title">List item with 2-column byline</div>
+        <div class="fd-list__byline fd-list__byline--2-col">
+            <div class="fd-list__byline-left">First text item in byline (standard text)</div>
+            <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
+        </div>
     </div>
-</li>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+      <div class="fd-list__content">
+        <div class="fd-list__title">Text-only list item</div>
+        <div class="fd-list__byline">Byline (description)</div>
+      </div>
+  </li>
 </ul>
 `;
 
@@ -107,6 +123,44 @@ standard.parameters = {
     docs: {
         iframeHeight: 785,
         storyDescription: `The default byline list dislays list items in the standard size, which is ideal for mobile. To display the byline list in compact mode (for desktop), add the \`fd-list--compact\` modifier class to the main element.
+    `
+    }
+};
+
+export const attachment = () => `<h4>Standard size</h4>
+<ul class="fd-list fd-list--byline" role="list">
+  <li role="listitem" tabindex="0" class="fd-list__item">
+      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--attachment-photo"></i></span>
+      <div class="fd-list__content">
+        <div class="fd-list__title">Title</div>
+        <div class="fd-list__byline">Byline (description)</div>
+      </div>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--pdf-attachment"></i></span>
+      <div class="fd-list__content">
+        <div class="fd-list__title">List item with no byline</div>
+      </div>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--attachment-text-file"></i></span>
+    <div class="fd-list__content">
+        <div class="fd-list__title">List item with 2-column byline</div>
+        <div class="fd-list__byline fd-list__byline--2-col">
+            <div class="fd-list__byline-left">First text item in byline (standard text)</div>
+            <div class="fd-list__byline-right">Second text item in byline (standard text)</div>
+        </div>
+    </div>
+  </li>
+</ul>
+`;
+
+attachment.storyName = 'Attachment';
+
+attachment.parameters = {
+    docs: {
+        iframeHeight: 785,
+        storyDescription: `The Attachment List shares the same specification as the Standard List with Byline. The only difference is that if two text items are set within the Byline row, the text aligned to the right is always standard text (i.e. not semantic text)
     `
     }
 };
@@ -185,6 +239,33 @@ buttons.parameters = {
         iframeHeight: 165,
         storyDescription: `
 `
+    }
+};
+
+export const interractive = () => `
+<ul class="fd-list fd-list--byline" role="list">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--interractive">
+        <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+        <div class="fd-list__content">
+          <div class="fd-list__title">Title</div>
+          <div class="fd-list__byline">Byline</div>
+        </div>
+    </li>
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--interractive is-selected">
+        <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
+        <div class="fd-list__content">
+          <div class="fd-list__title">Selected List</div>
+          <div class="fd-list__byline">Byline</div>
+        </div>
+    </li>
+</ul>
+`;
+
+interractive.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: `The \`fd-list__item--interractive\` will force list item to handle hover and active states. 
+            Usage of this modifier is not needed on \`Selection\`, \`Navigation\` and \`Action\` modes.`
     }
 };
 

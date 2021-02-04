@@ -19,7 +19,7 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
         
 `,
         tags: ['f3', 'a11y', 'theme', 'development'],
-        components: ['list', 'icon', 'checkbox', 'button']
+        components: ['list', 'icon', 'checkbox', 'button', 'busy-indicator']
     }
 };
 
@@ -89,6 +89,37 @@ unread.parameters = {
     docs: {
         iframeHeight: 445,
         storyDescription: `The \`fd-list__item--unread\` modifier will change the font weight to bold for easier legibility.
+        `
+    }
+};
+
+export const interractive = () => `<h4>Interractive Items</h4>
+<ul class="fd-list" role="list">
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+      <span class="fd-list__title">List item 1</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+      <span class="fd-list__title">List item 2</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+      <span class="fd-list__title">List item 3</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+      <span class="fd-list__title">List item 4</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive is-selected">
+      <span class="fd-list__title">List item 5 - with .is-selected</span>
+  </li>
+`;
+
+interractive.storyName = 'Interractive';
+
+interractive.parameters = {
+    docs: {
+        iframeHeight: 445,
+        storyDescription: `
+            The \`fd-list__item--interractive\` will force list item to handle hover and active states. 
+            Usage of this modifier is not needed on \`Selection\`, \`Navigation\` and \`Action\` modes.
         `
     }
 };
@@ -240,6 +271,29 @@ export const actionList = () => `<h4>Standard Size</h4>
       <button class="fd-list__title">More Options</button>
   </li>
 </ul>
+
+<h4>Growing List item with Busy Indicator </h4>
+<ul class="fd-list" role="list">
+  <li role="listitem" class="fd-list__item">
+      <span class="fd-list__title">List Item 1</span>
+  </li>
+  <li role="listitem" class="fd-list__item">
+      <span class="fd-list__title">List Item 2</span>
+  </li>
+  <li role="listitem" class="fd-list__item">
+      <span class="fd-list__title">List Item 3</span>
+  </li>
+  <li role="listitem" class="fd-list__item fd-list__item--action fd-list__item--growing">
+      <button class="fd-list__title">
+        <div class="fd-busy-indicator--m" aria-hidden="false" aria-label="Loading">
+            <div class="fd-busy-indicator--circle-0"></div>
+            <div class="fd-busy-indicator--circle-1"></div>
+            <div class="fd-busy-indicator--circle-2"></div>
+        </div>
+        <div class="fd-list__title-text">More Options</div>
+    </button>
+  </li>
+</ul>
 `;
 
 actionList.storyName = 'Action';
@@ -347,7 +401,7 @@ icons.parameters = {
 
 export const groups = () => `<ul class="fd-list" role="list">
   <li role="listitem" class="fd-list__group-header">
-    Group header 1
+    <span class="fd-list__title">Group header 1</span>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
@@ -359,7 +413,7 @@ export const groups = () => `<ul class="fd-list" role="list">
       <span class="fd-list__title">List item 3</span>
   </li>
   <li role="listitem" class="fd-list__group-header">
-    Group header 2
+    <span class="fd-list__title">Group header 2</span>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 4</span>

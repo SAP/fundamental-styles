@@ -4,7 +4,7 @@ export default {
         description: `The text component displays text inside a form, table, or any other content area.
         It is generally used throughout the entire application and is responsive to all screen sizes.`,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['text']
+        components: ['text', 'link']
     }
 };
 
@@ -122,6 +122,37 @@ three lines of text.
 **Note**: The property <code class="docs-code">-webkit-line-clamp</code> doesn't work in IE11 and should be changed
 to <code class="docs-code">height</code>. For example, <code class="docs-code">style="height: 200px;"</code>.
 `
+    }
+};
+
+export const expand = () => `
+    <h3>Show More</h3>
+    <p class="fd-text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+    magna aliqua. Malesuada bibendum arcu vitae elementum. Ut etiam sit amet nisl. Laoreet suspendisse interdum
+    consectetur libero id faucibus nisl. Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum.
+    Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan. Mauris vitae ultricies...</p>
+    <a class="fd-link fd-text__link--more" tabindex="0">More</a>
+
+    <h3>Show Less</h3>
+    <p class="fd-text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada bibendum arcu vitae elementum. Ut etiam sit
+    amet nisl. Laoreet suspendisse interdum consectetur libero id faucibus nisl. Tellus in metus vulputate eu
+    scelerisque felis imperdiet proin fermentum. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra
+    accumsan. Mauris vitae ultricies leo integer malesuada nunc vel risus. Nisi est sit amet facilisis. Eu turpis
+    egestas pretium aenean. Nunc id cursus metus aliquam eleifend. Placerat in egestas erat imperdiet. Etiam dignissim
+    diam quis enim lobortis scelerisque. A erat nam at lectus. Amet nisl purus in mollis nunc sed id. Purus semper eget
+    duis at tellus at urna.</p>
+    <a class="fd-link fd-text__link--more" tabindex="0">Less</a>
+`;
+
+expand.storyName = 'Expand';
+expand.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: `Along with max lines, text component can display "MORE" and "LESS" links that can show
+more or less of the text.`
     }
 };
 

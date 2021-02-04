@@ -468,11 +468,13 @@ export const linksWithCollapsibleMenuSSize = () => `<div style="height:300px; ma
                                         <li class="fd-menu__item">
                                             <a role="button" class="fd-menu__link">
                                                 <span class="fd-menu__title">Notifications Out</span>
+                                                <span class="fd-counter fd-shellbar__counter--overflowed">21</span>
                                             </a>
                                         </li>
                                         <li class="fd-menu__item">
                                             <a role="button" class="fd-menu__link">
                                                 <span class="fd-menu__title">Pool</span>
+                                                <span class="fd-counter fd-shellbar__counter--overflowed">4</span>
                                             </a>
                                         </li>
                                     </ul>

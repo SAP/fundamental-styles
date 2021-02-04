@@ -37,6 +37,10 @@ Do not use the **AvatarGroup** if:
 - You want to display a gallery for simple images.
 - You want to use it for other visual content than avatars.
 
+##Overflow Button
+
+To change the background color of the button, add the <code>fd-avatar-group\\_\\_more-button--accent-color-*</code> class with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: <code>fd-avatar-group\\_\\_more-button--accent-color-1</code>
+
 `,
         docs: { iframeHeight: 250 },
         tags: ['a11y', 'f3', 'theme'],
@@ -284,7 +288,7 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
 individualType.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: ''
+        storyDescription: 'To use Individual type of Avatar Group use the <code>--individual-type</code> modifier class <i>(<code>fd-avatar-group--individual-type</code> class)<i>.'
     }
 };
 
@@ -322,7 +326,7 @@ export const groupType = () => `<div class="fd-popover">
                 <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/2.svg')" role="presentation" aria-label="John Doe"></span>
             </div>
         
-            <button class="fd-button fd-avatar-group__more-button fd-avatar-group__more-button--m" role="button" tabindex="-1">
+            <button class="fd-button fd-avatar-group__more-button fd-avatar-group__more-button--m fd-avatar-group__more-button--accent-color-6" role="button" tabindex="-1">
                 <bdi class="fd-button__text fd-avatar-group__button-text">+8</bdi>
             </button>
         </div>
@@ -429,7 +433,7 @@ export const groupType = () => `<div class="fd-popover">
 groupType.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: ''
+        storyDescription: 'To use Group type of Avatar Group use the <code>--group-type</code> modifier class <i>(<code>fd-avatar-group--group-type</code> class)<i>.'
     }
 };
 
