@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.16.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.16.0-rc.1...v0.16.0-rc.2) (2021-02-05)
+
+
+### Bug Fixes
+
+* remove font-smoothing [#2100](https://github.com/SAP/fundamental-styles/issues/2100) ([#2123](https://github.com/SAP/fundamental-styles/issues/2123)) ([4abcf28](https://github.com/SAP/fundamental-styles/commit/4abcf286978b77edd05d7147b08c0a33dbbb95cf))
+
 ## [0.16.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.16.0-rc.0...v0.16.0-rc.1) (2021-02-04)
 
 ## [0.16.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.15.1-rc.23...v0.16.0-rc.0) (2021-02-04)
