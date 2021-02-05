@@ -2,7 +2,7 @@
 
 exports[`Storyshots Components/Avatar Group Group Type 1`] = `
 <div
-  class="fd-popover"
+  class="fd-popover fd-avatar-group__overflow"
 >
   
     
@@ -203,385 +203,280 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
         
             
       <div
-        class="fd-container"
+        class="fd-avatar-group__overflow__body"
       >
-        
+         
                 
         <div
-          class="fd-row"
+          class="fd-avatar-group__item"
         >
           
                     
-          <div
-            class="fd-col fd-col--3"
+          <span
+            aria-label="Wendy Wallace"
+            class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
           >
-            
-                        
-            <div
-              class="fd-avatar-group__item"
-            >
-              
+            WW
+          </span>
+          
+                
+        </div>
                             
-              <span
-                aria-label="Wendy Wallace"
-                class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
-              >
-                WW
-              </span>
-              
-                        
-            </div>
-                                
-                    
-          </div>
+                
+        <div
+          class="fd-avatar-group__item"
+        >
           
                     
-          <div
-            class="fd-col fd-col--3"
+          <span
+            aria-label="Avatar"
+            class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
           >
             
                         
-            <div
-              class="fd-avatar-group__item"
-            >
-              
-                            
-              <span
-                aria-label="Avatar"
-                class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
-              >
-                
-                                
-                <i
-                  class="fd-avatar__icon sap-icon--money-bills"
-                  role="presentation"
-                />
-                
-                            
-              </span>
-              
-                        
-            </div>
-                
+            <i
+              class="fd-avatar__icon sap-icon--money-bills"
+              role="presentation"
+            />
+            
                     
-          </div>
+          </span>
+          
+                
+        </div>
+            
+                
+        <div
+          class="fd-avatar-group__item"
+        >
           
                     
-          <div
-            class="fd-col fd-col--3"
-          >
-            
-                        
-            <div
-              class="fd-avatar-group__item"
-            >
-              
-                            
-              <span
-                aria-label="John Doe"
-                class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
-                role="presentation"
-                style="background-image: url('/assets/images/avatars/1.svg')"
-              />
-              
-                        
-            </div>
+          <span
+            aria-label="John Doe"
+            class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
+            role="presentation"
+            style="background-image: url('/assets/images/avatars/1.svg')"
+          />
+          
                 
-                    
-          </div>
+        </div>
+            
+                
+        <div
+          class="fd-avatar-group__item"
+        >
           
                     
-          <div
-            class="fd-col fd-col--3"
+          <span
+            aria-label="Endy Wallace"
+            class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
           >
-            
-                        
-            <div
-              class="fd-avatar-group__item"
-            >
-              
-                            
-              <span
-                aria-label="Endy Wallace"
-                class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
-              >
-                EW
-              </span>
-              
-                        
-            </div>
+            EW
+          </span>
+          
                 
-                    
-          </div>
+        </div>
+            
+                
+        <div
+          class="fd-avatar-group__item"
+        >
           
                     
-          <div
-            class="fd-col fd-col--3"
+          <span
+            aria-label="Avatar"
+            class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
           >
             
                         
-            <div
-              class="fd-avatar-group__item"
-            >
-              
-                            
-              <span
-                aria-label="Avatar"
-                class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
-              >
-                
-                                
-                <i
-                  class="fd-avatar__icon sap-icon--washing-machine"
-                  role="presentation"
-                />
-                
-                            
-              </span>
-              
-                        
-            </div>
-                
+            <i
+              class="fd-avatar__icon sap-icon--washing-machine"
+              role="presentation"
+            />
+            
                     
-          </div>
+          </span>
+          
+                
+        </div>
+            
+                
+        <div
+          class="fd-avatar-group__item"
+        >
           
                     
-          <div
-            class="fd-col fd-col--3"
-          >
-            
-                        
-            <div
-              class="fd-avatar-group__item"
-            >
-              
-                            
-              <span
-                aria-label="John Doe"
-                class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
-                role="presentation"
-                style="background-image: url('/assets/images/avatars/2.svg')"
-              />
-              
-                        
-            </div>
+          <span
+            aria-label="John Doe"
+            class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
+            role="presentation"
+            style="background-image: url('/assets/images/avatars/2.svg')"
+          />
+          
                 
-                    
-          </div>
+        </div>
+            
+                
+        <div
+          class="fd-avatar-group__item"
+        >
           
                     
-                    
-          <div
-            class="fd-col fd-col--3"
+          <span
+            aria-label="Andy Wallace"
+            class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
           >
-            
-                        
-            <div
-              class="fd-avatar-group__item"
-            >
-              
-                            
-              <span
-                aria-label="Andy Wallace"
-                class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
-              >
-                AW
-              </span>
-              
-                        
-            </div>
+            AW
+          </span>
+          
                 
-                    
-          </div>
+        </div>
+            
+                
+        <div
+          class="fd-avatar-group__item"
+        >
           
                     
-          <div
-            class="fd-col fd-col--3"
+          <span
+            aria-label="Avatar"
+            class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
           >
             
                         
-            <div
-              class="fd-avatar-group__item"
-            >
-              
-                            
-              <span
-                aria-label="Avatar"
-                class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
-              >
-                
-                                
-                <i
-                  class="fd-avatar__icon sap-icon--account"
-                  role="presentation"
-                />
-                
-                            
-              </span>
-              
-                        
-            </div>
-                
+            <i
+              class="fd-avatar__icon sap-icon--account"
+              role="presentation"
+            />
+            
                     
-          </div>
+          </span>
+          
+                
+        </div>
+            
+                
+        <div
+          class="fd-avatar-group__item"
+        >
           
                     
-          <div
-            class="fd-col fd-col--3"
-          >
-            
-                        
-            <div
-              class="fd-avatar-group__item"
-            >
-              
-                            
-              <span
-                aria-label="John Doe"
-                class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
-                role="presentation"
-                style="background-image: url('/assets/images/avatars/3.svg')"
-              />
-              
-                        
-            </div>
+          <span
+            aria-label="John Doe"
+            class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
+            role="presentation"
+            style="background-image: url('/assets/images/avatars/3.svg')"
+          />
+          
                 
-                    
-          </div>
+        </div>
+            
+                
+        <div
+          class="fd-avatar-group__item"
+        >
           
                     
-          <div
-            class="fd-col fd-col--3"
+          <span
+            aria-label="John Moe"
+            class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
           >
-            
-                        
-            <div
-              class="fd-avatar-group__item"
-            >
-              
-                            
-              <span
-                aria-label="John Moe"
-                class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
-              >
-                JM
-              </span>
-              
-                        
-            </div>
+            JM
+          </span>
+          
                 
-                    
-          </div>
+        </div>
+            
+                
+        <div
+          class="fd-avatar-group__item"
+        >
           
                     
-          <div
-            class="fd-col fd-col--3"
+          <span
+            aria-label="Joe Bloggs"
+            class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
           >
-            
-                        
-            <div
-              class="fd-avatar-group__item"
-            >
-              
-                            
-              <span
-                aria-label="Joe Bloggs"
-                class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
-              >
-                JB
-              </span>
-              
-                        
-            </div>
+            JB
+          </span>
+          
                 
-                    
-          </div>
+        </div>
+            
+                
+        <div
+          class="fd-avatar-group__item"
+        >
           
                     
-          <div
-            class="fd-col fd-col--3"
+          <span
+            aria-label="Avatar"
+            class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
           >
             
                         
-            <div
-              class="fd-avatar-group__item"
-            >
-              
-                            
-              <span
-                aria-label="Avatar"
-                class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
-              >
-                
-                                
-                <i
-                  class="fd-avatar__icon sap-icon--visits"
-                  role="presentation"
-                />
-                
-                            
-              </span>
-              
-                        
-            </div>
-                
+            <i
+              class="fd-avatar__icon sap-icon--visits"
+              role="presentation"
+            />
+            
                     
-          </div>
+          </span>
+          
+                
+        </div>
+            
+                
+        <div
+          class="fd-avatar-group__item"
+        >
           
                     
-          <div
-            class="fd-col fd-col--3"
-          >
-            
-                        
-            <div
-              class="fd-avatar-group__item"
-            >
-              
-                            
-              <span
-                aria-label="John Doe"
-                class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
-                role="presentation"
-                style="background-image: url('/assets/images/avatars/4.svg')"
-              />
-              
-                        
-            </div>
+          <span
+            aria-label="John Doe"
+            class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
+            role="presentation"
+            style="background-image: url('/assets/images/avatars/4.svg')"
+          />
+          
                 
-                    
-          </div>
+        </div>
+            
+                
+        <div
+          class="fd-avatar-group__item"
+        >
           
                     
-          <div
-            class="fd-col fd-col--3"
+          <span
+            aria-label="Fred Bloggs"
+            class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
           >
-            
-                        
-            <div
-              class="fd-avatar-group__item"
-            >
-              
-                            
-              <span
-                aria-label="Fred Bloggs"
-                class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
-              >
-                FB
-              </span>
-              
-                        
-            </div>
+            FB
+          </span>
+          
                 
+        </div>
+        
+                
+        <div
+          class="fd-avatar-group__item"
+        >
+          
                     
-          </div>
+          <span
+            aria-label="Jan Alleman"
+            class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
+          >
+            JA
+          </span>
           
                 
         </div>
         
             
       </div>
-      
+       
         
     </div>
     
@@ -1515,7 +1410,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
 
     
   <div
-    class="fd-popover"
+    class="fd-popover fd-avatar-group__overflow"
   >
     
         
@@ -1552,12 +1447,12 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
       aria-hidden="true"
       class="fd-popover__body"
       id="popover_avatar_more_aoiwjth"
+      style="width: 245px;"
     >
       
             
       <div
         class="fd-popover__wrapper"
-        style="max-height: 200px; min-width: 250px; overflow-x: hidden;"
       >
         
                 
@@ -1590,132 +1485,92 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
           
                 
         </div>
-          
-            
+        
+
                 
         <div
-          class="fd-container"
+          class="fd-avatar-group__overflow__body"
         >
           
                     
           <div
-            class="fd-row"
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="fd-avatar-group__item"
+            tabindex="0"
           >
             
                         
-            <div
-              class="fd-col fd-col--3"
+            <span
+              aria-label="Avatar"
+              class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border"
             >
               
                             
-              <div
-                aria-expanded="false"
-                aria-haspopup="true"
-                class="fd-avatar-group__item"
-                tabindex="0"
-              >
-                
-                                
-                <span
-                  aria-label="Avatar"
-                  class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border"
-                >
-                  
-                                    
-                  <i
-                    class="fd-avatar__icon sap-icon--washing-machine"
-                    role="presentation"
-                  />
-                  
-                                
-                </span>
-                
-                            
-              </div>
+              <i
+                class="fd-avatar__icon sap-icon--washing-machine"
+                role="presentation"
+              />
               
                         
-            </div>
+            </span>
+            
+                    
+          </div>
+          
+                    
+          <div
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="fd-avatar-group__item"
+            tabindex="0"
+          >
             
                         
-            <div
-              class="fd-col fd-col--3"
-            >
-              
-                            
-              <div
-                aria-expanded="false"
-                aria-haspopup="true"
-                class="fd-avatar-group__item"
-                tabindex="0"
-              >
-                
-                                
-                <span
-                  aria-label="John Doe"
-                  class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
-                  role="presentation"
-                  style="background-image: url('/assets/images/avatars/2.svg')"
-                />
-                
-                            
-              </div>
-              
-                        
-            </div>
+            <span
+              aria-label="John Doe"
+              class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
+              role="presentation"
+              style="background-image: url('/assets/images/avatars/2.svg')"
+            />
+            
+                    
+          </div>
+          
+                    
+          <div
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="fd-avatar-group__item"
+            tabindex="0"
+          >
             
                         
-            <div
-              class="fd-col fd-col--3"
+            <span
+              aria-label="John Moe"
+              class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border"
             >
-              
-                            
-              <div
-                aria-expanded="false"
-                aria-haspopup="true"
-                class="fd-avatar-group__item"
-                tabindex="0"
-              >
-                
-                                
-                <span
-                  aria-label="John Moe"
-                  class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border"
-                >
-                  JM
-                </span>
-                
-                            
-              </div>
-              
-                        
-            </div>
+              JM
+            </span>
+            
+                    
+          </div>
+          
+                    
+          <div
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="fd-avatar-group__item"
+            tabindex="0"
+          >
             
                         
-            <div
-              class="fd-col fd-col--3"
+            <span
+              aria-label="Joe Bloggs"
+              class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border"
             >
-              
-                            
-              <div
-                aria-expanded="false"
-                aria-haspopup="true"
-                class="fd-avatar-group__item"
-                tabindex="0"
-              >
-                
-                                
-                <span
-                  aria-label="Joe Bloggs"
-                  class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border"
-                >
-                  JB
-                </span>
-                
-                            
-              </div>
-              
-                        
-            </div>
+              JB
+            </span>
             
                     
           </div>

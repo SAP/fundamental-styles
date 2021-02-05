@@ -2,7 +2,7 @@
 @import "./avatar";
 
 /*!
-.fd-avatar-group+((--individual|--group), (--xxs|--xs|--s|--m|--l|--xl|--xxl)
+.fd-avatar-group+((--individual|--group), (--xs|--s|--m|--l|--xl)
 */
 $block: #{$fd-namespace}-avatar-group;
 
@@ -81,6 +81,19 @@ $block: #{$fd-namespace}-avatar-group;
     }
   }
 
+  &__overflow {
+    @include fd-reset();
+
+    &__body {
+      padding: 1rem;
+      white-space: initial;
+
+      .#{$block}__item {
+        margin: 0.25rem;
+      }
+    }
+  }
+
   @each $set-name, $size-set in $fd-avatar-group-more-button-sizes {
     &--#{$set-name} {
       .#{$block}__more-button {
@@ -118,6 +131,7 @@ $block: #{$fd-namespace}-avatar-group;
   @each $accent-name, $color-set in $fd-avatar-group-more-button-accent-colors {
     .#{$block}__more-button--accent-color-#{$accent-name} {
       background-color: map_get($color-set, "background-color");
+      border-color: map_get($color-set, "background-color");
       color: var(--fdAvatar_Accent_Color);
     }
   }
