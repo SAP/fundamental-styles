@@ -4,6 +4,10 @@
 .#{$block} {
   &--byline {
     .#{$block}__item {
+      @include fd-focus() {
+        pointer-events: none;
+      }
+
       width: 100%;
       min-height: $fd-list-byline-item-height;
       height: auto;
