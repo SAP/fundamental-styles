@@ -67,7 +67,7 @@
     "babel-loader": "^8.1.0",
     "bundlesize": "^0.18.1",
     "case": "^1.6.3",
-    "chromatic": "^5.2.0",
+    "chromatic": "^5.6.1",
     "clean-css-cli": "^4.3.0",
     "cross-env": "^7.0.2",
     "css-loader": "^5.0.1",
