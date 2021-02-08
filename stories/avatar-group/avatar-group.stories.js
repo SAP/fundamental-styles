@@ -232,7 +232,7 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
         </div>
     </div>
 
-    <div class="fd-popover fd-avatar-group__overflow">
+    <div class="fd-popover">
         <div class="fd-popover__control">
             <button class="fd-button fd-avatar-group__more-button fd-avatar-group__more-button--s"
                     role="button" aria-label="Has popup type dialog"
@@ -253,7 +253,7 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
                     </div>
                 </div>
 
-                <div class="fd-avatar-group__overflow__body">
+                <div class="fd-avatar-group__overflow--body">
                     <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false">
                         <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" aria-label="Avatar">
                             <i class="fd-avatar__icon sap-icon--washing-machine" role="presentation"></i>
@@ -283,7 +283,7 @@ individualType.parameters = {
 
 
 
-export const groupType = () => `<div class="fd-popover fd-avatar-group__overflow">
+export const groupType = () => `<div class="fd-popover">
     <div class="fd-popover__control">
         <div class="fd-avatar-group fd-avatar-group--group-type fd-avatar-group--m"
              role="button"
@@ -331,7 +331,7 @@ export const groupType = () => `<div class="fd-popover fd-avatar-group__overflow
                 </div>
             </div>  
         
-            <div class="fd-avatar-group__overflow__body"> 
+            <div class="fd-avatar-group__overflow--body"> 
                 <div class="fd-avatar-group__item">
                     <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Wendy Wallace">WW</span>
                 </div>                    

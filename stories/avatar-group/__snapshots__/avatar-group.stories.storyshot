@@ -2,7 +2,7 @@
 
 exports[`Storyshots Components/Avatar Group Group Type 1`] = `
 <div
-  class="fd-popover fd-avatar-group__overflow"
+  class="fd-popover"
 >
   
     
@@ -203,7 +203,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
         
             
       <div
-        class="fd-avatar-group__overflow__body"
+        class="fd-avatar-group__overflow--body"
       >
          
                 
@@ -1410,7 +1410,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
 
     
   <div
-    class="fd-popover fd-avatar-group__overflow"
+    class="fd-popover"
   >
     
         
@@ -1489,7 +1489,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
 
                 
         <div
-          class="fd-avatar-group__overflow__body"
+          class="fd-avatar-group__overflow--body"
         >
           
                     

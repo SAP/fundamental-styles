@@ -81,16 +81,14 @@ $block: #{$fd-namespace}-avatar-group;
     }
   }
 
-  &__overflow {
+  &__overflow--body {
     @include fd-reset();
 
-    &__body {
-      padding: 1rem;
-      white-space: initial;
+    padding: 1rem;
+    white-space: initial;
 
-      .#{$block}__item {
-        margin: 0.25rem;
-      }
+    .#{$block}__item {
+      margin: 0.25rem;
     }
   }
 
