@@ -28,17 +28,33 @@ Modifier/Class | Description
 \` fd-list__byline-right--*\` | To represent a semantic status, replace the * with either: _neutral_, _positive_, _negative_, _critical_ or _informative_.
 `,
         tags: ['f3', 'a11y', 'theme', 'development'],
-        components: ['list', 'icon', 'checkbox', 'button']
+        components: ['list', 'icon', 'checkbox', 'link', 'button']
     }
 };
 
 export const standard = () => `<h4>Standard size</h4>
 <ul class="fd-list fd-list--byline" role="list">
-  <li role="listitem" tabindex="0" class="fd-list__item">
-      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
-      <div class="fd-list__content">
-        <div class="fd-list__title">Title</div>
-        <div class="fd-list__byline">Byline (description)</div>
+<li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+    <div class="fd-list__content">
+      <div class="fd-list__title">List Item Title</div>
+      <div class="fd-list__byline">Byline (description)</div>
+    </div>
+</li>
+<li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
+    <div class="fd-list__content">
+      <div class="fd-list__title">List item with no byline</div>
+    </div>
+</li>
+<li role="listitem" tabindex="0" class="fd-list__item">
+  <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
+  <div class="fd-list__content">
+      <div class="fd-list__title">List item with 2-column byline</div>
+      <div class="fd-list__byline fd-list__byline--2-col">
+          <div class="fd-list__byline-left">First text item in byline (standard text)</div>
+          <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
       </div>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
@@ -532,5 +548,102 @@ selectionAndNavigation.parameters = {
 - \`fd-list--navigation\`
 - \`fd-list--navigation-indicator\`
     `
+    }
+};
+
+export const counter = () => `
+<ul class="fd-list fd-list--byline" role="list">
+<li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+    <div class="fd-list__content">
+      <div class="fd-list__title">List Item Title</div>
+      <div class="fd-list__byline">Byline (description)</div>
+    </div>
+    <span class="fd-list__item-counter">123</span>
+</li>
+<li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
+    <div class="fd-list__content">
+      <div class="fd-list__title">List item with no byline</div>
+    </div>
+    <span class="fd-list__item-counter">456</span>
+</li>
+<li role="listitem" tabindex="0" class="fd-list__item">
+  <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
+  <div class="fd-list__content">
+      <div class="fd-list__title">List item with 2-column byline</div>
+      <div class="fd-list__byline fd-list__byline--2-col">
+          <div class="fd-list__byline-left">First text item in byline (standard text)</div>
+          <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
+      </div>
+  </div>
+  <span class="fd-list__item-counter">12345</span>
+</li>
+<li role="listitem" tabindex="0" class="fd-list__item">
+    <div class="fd-list__content">
+      <div class="fd-list__title">Text-only list item</div>
+      <div class="fd-list__byline">Byline (description)</div>
+    </div>
+    <span class="fd-list__item-counter">67890</span>
+</li>
+</ul>
+`;
+
+counter.storyName = 'Byline List with Counter';
+
+standard.parameters = {
+    docs: {
+        iframeHeight: 785
+    }
+};
+
+export const longText = () => `
+<ul class="fd-list fd-list--byline" role="list">
+<li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+    <div class="fd-list__content">
+      <div class="fd-list__title">List Item Title</div>
+      <div class="fd-list__byline fd-list__byline--wrap">Very Long Byline (description), Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... <a href="#" class="fd-link fd-list__link--more" tabindex="0">More</a></div>
+    </div>
+    <span class="fd-list__item-counter">12345</span>
+</li>
+<li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
+    <div class="fd-list__content">
+      <div class="fd-list__title fd-list__title--wrap">Very long list item with no byline, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+    </div>
+</li>
+<li role="listitem" tabindex="0" class="fd-list__item">
+  <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
+  <div class="fd-list__content">
+      <div class="fd-list__title fd-list__title--wrap">List item with 2-column byline and also a very long title, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      <div class="fd-list__byline fd-list__byline--2-col">
+          <div class="fd-list__byline-left fd-list__byline-left--wrap">First text item in byline (standard text), Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<a href="#" class="fd-link fd-list__link--more" tabindex="0">Less</a></div>
+          <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
+      </div>
+  </div>
+</li>
+<li role="listitem" tabindex="0" class="fd-list__item">
+    <div class="fd-list__content">
+      <div class="fd-list__title">Text-only list item</div>
+      <div class="fd-list__byline">Byline (description)</div>
+    </div>
+</li>
+</ul>
+`;
+
+longText.storyName = 'List with long Title and Byline';
+
+longText.parameters = {
+    docs: {
+        iframeHeight: 625,
+        storyDescription: `By default, To allow the title and byline text to wrap, add these following modifier classes to the the title and byline respectively:
+
+- \`fd-list__title--wrap\`
+- \`fd-list__byline--wrap\`
+    
+When more than 100 characters for small screens or 300 characters for medium to large screens are used, a clickable "MORE" link should be displayed to reveal the entire contents of the text.`
     }
 };

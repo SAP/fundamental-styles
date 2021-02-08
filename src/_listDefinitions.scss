@@ -17,6 +17,7 @@ $fd-list-message-padding-left: 0.5rem !default;
 $fd-list-selected-state-border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
 $fd-list-item-border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
 
+$fd-list-byline-padding-top: 0.75rem !default;
 $fd-list-byline-thumbnail-dimensions: 3rem !default;
 $fd-list-byline-thumbnail-border-radius: 0.25rem !default;
 $fd-list-byline-thumbnail-spacing: 0.75rem !default;
@@ -32,6 +33,7 @@ $fd-list-byline-form-item-top-offset: 0.3125rem !default;
 $fd-list-byline-form-item-compact-top-offset: 0.5rem !default;
 $fd-list-byline-form-item-left-offset: 0.375rem !default;
 $fd-list-byline-form-item-label-top-offset: 0.375rem !default;
+$fd-list-byline-counter-container-width: 2rem !default;
 
 $fd-list-selection-container-width: 2.75rem !default;
 $fd-list-selection-form-item-compact-left-offset: 0.375rem !default;
