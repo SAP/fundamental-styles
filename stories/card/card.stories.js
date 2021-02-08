@@ -302,18 +302,17 @@ analyticalCard.parameters = {
     }
 };
 
-
 export const listCard = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 300px; height: 100%; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="List Card Example 1">
-            <a class="fd-card__header" tabindex="0">
+            <div class="fd-card__header fd-card__header--non-interactive">
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Quick Links</div>
                         <span class="fd-object-status fd-card__counter">6 of 20</span>
                     </div>
                 </div>
-            </a>
+            </div>
             <div class="fd-card__content" role="group" aria-label="Card Content">
                 <ul class="fd-list fd-list--no-border" role="list">
                     <li role="listitem" tabindex="0" class="fd-list__item">
@@ -346,7 +345,7 @@ export const listCard = () => `<div style="display:flex; justify-content:space-a
     </div>
     <div style="width: 300px; height: 100%; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="List Card Example 2">
-            <a class="fd-card__header" tabindex="0">
+            <div class="fd-card__header fd-card__header--non-interactive">
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Quick Links</div>
@@ -356,7 +355,7 @@ export const listCard = () => `<div style="display:flex; justify-content:space-a
                         <div class="fd-card__subtitle">Compact Mode</div>
                     </div>
                 </div>
-            </a>
+            </div>
             <div class="fd-card__content" role="group" aria-label="Card Content">
                 <ul class="fd-list fd-list--no-border fd-list--compact" role="list">
                     <li role="listitem" tabindex="0" class="fd-list__item">
@@ -394,7 +393,10 @@ listCard.storyName = 'List card';
 listCard.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'A card can display various types of lists. All components placed inside should behave natively.'
+        storyDescription: `A card can display various types of lists. All components placed inside should behave natively.
+            For this kind of card it is not recommended to keep header interactive, or navigable.
+            Such a header can be achieved by adding \`fd-card__header--non-interactive\` modifier class.  
+        `
     }
 };
 
