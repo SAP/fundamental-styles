@@ -25,45 +25,375 @@ Cards can be resized vertically in rows of 1 rem and horizontally in steps of 20
     }
 };
 
-export const resizeCardHorizontalVerticalDirection = () =>
-    `<div id="one" class="fd-resizable-card fd-resizable-card__resize--indication-border">
-        <div class="fd-resizable-card__resize__handle--vertical"></div>
-        <div class="fd-resizable-card__card">
-            <div class="fd-card" role="region" aria-label="List Card Example 4">
-                <a class="fd-card__header" tabindex="0">
-                    <div class="fd-card__header-text">
-                        <div class="fd-card__title-area">
-                            <div class="fd-card__title">Quick Links</div>
-                            <span class="fd-object-status fd-card__counter">4 of 20</span>
+export const resizeCardLayout = () =>
+    `<div id="grid1" class="fd-resizable-card-layout">
+        <div id="one" class="fd-resizable-card-layout__wrapper" style="grid-row-end: span 8">
+            <div class="fd-resizable-card-layout__wrapper__resize__handle--vertical"></div>
+            <div class="fd-resizable-card-layout__wrapper__card">
+                <div class="fd-card" role="region" aria-label="List Card Example 4">
+                    <a class="fd-card__header" tabindex="0">
+                        <div class="fd-card__header-text">
+                            <div class="fd-card__title-area">
+                                <div class="fd-card__title">Quick Links</div>
+                                <span class="fd-object-status fd-card__counter">4 of 20</span>
+                            </div>
                         </div>
+                    </a>
+                    <div class="fd-card__content" role="group" aria-label="Card Content">
+                        <ul class="fd-list fd-list--no-border" role="list">
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
+                                <span class="fd-list__title">List item 1</span>
+                            </li>
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--wrench"></i>
+                                <span class="fd-list__title">List item 2</span>
+                            </li>
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--leads"></i>
+                                <span class="fd-list__title">List item 3</span>
+                            </li>
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--batch-payments"></i>
+                                <span class="fd-list__title">List item 4</span>
+                            </li>
+                        </ul>
                     </div>
-                </a>
-                <div class="fd-card__content" role="group" aria-label="Card Content">
-                    <ul class="fd-list fd-list--no-border" role="list">
-                        <li role="listitem" tabindex="0" class="fd-list__item">
-                            <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
-                            <span class="fd-list__title">List item 1</span>
-                        </li>
-                        <li role="listitem" tabindex="0" class="fd-list__item">
-                            <i role="presentation" class="fd-list__icon sap-icon--wrench"></i>
-                            <span class="fd-list__title">List item 2</span>
-                        </li>
-                        <li role="listitem" tabindex="0" class="fd-list__item">
-                            <i role="presentation" class="fd-list__icon sap-icon--leads"></i>
-                            <span class="fd-list__title">List item 3</span>
-                        </li>
-                        <li role="listitem" tabindex="0" class="fd-list__item">
-                            <i role="presentation" class="fd-list__icon sap-icon--batch-payments"></i>
-                            <span class="fd-list__title">List item 4</span>
-                        </li>
-                    </ul>
+                </div>
+                <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper">
+                    <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"></div>
                 </div>
             </div>
-            <div class="fd-resizable-card__icon-container">
-                <div class="fd-resizable-card--icon fd-resizable-card__resize__cursor--both"></div>
-            </div>
+            <div class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"></div>
         </div>
-        <div class="fd-resizable-card__resize__handle--horizontal"></div>
+
+        <div id="two" class="fd-resizable-card-layout__wrapper" style="grid-row-end: span 4">
+            <div class="fd-resizable-card-layout__wrapper__resize__handle--vertical"></div>
+            <div class="fd-resizable-card-layout__wrapper__card">
+                <div class="fd-card" role="region" aria-label="Card Anatomy Example 1">
+                    <a class="fd-card__header" tabindex="0">
+                        <span
+                            class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
+                            style="background-image: url('/assets/images/backgrounds/city.jpg')"
+                            role="presentation"
+                            aria-label="John Doe"></span>
+                        <div class="fd-card__header-text">
+                            <div class="fd-card__title-area">
+                                <div class="fd-card__title">Card Title</div>
+                                <span class="fd-object-status fd-card__counter">Counter</span>
+                            </div>
+                            <div class="fd-card__subtitle-area">
+                                <div class="fd-card__subtitle">Card Subtitle</div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="fd-card__content" role="group" aria-label="Card Content"></div>
+                </div>
+                <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper">
+                    <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"></div>
+                </div>
+            </div>
+            <div class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"></div>
+        </div>
+
+        <div id="three" class="fd-resizable-card-layout__wrapper" style="grid-row-end: span 10">
+            <div class="fd-resizable-card-layout__wrapper__resize__handle--vertical"></div>
+            <div class="fd-resizable-card-layout__wrapper__card">
+                <div class="fd-card" role="region" aria-label="List Card Example 4">
+                    <a class="fd-card__header" tabindex="0">
+                        <div class="fd-card__header-text">
+                            <div class="fd-card__title-area">
+                                <div class="fd-card__title">Quick Links</div>
+                                <span class="fd-object-status fd-card__counter">4 of 20</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="fd-card__content" role="group" aria-label="Card Content">
+                        <ul class="fd-list fd-list--no-border" role="list">
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
+                                <span class="fd-list__title">List item 1</span>
+                            </li>
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--wrench"></i>
+                                <span class="fd-list__title">List item 2</span>
+                            </li>
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--leads"></i>
+                                <span class="fd-list__title">List item 3</span>
+                            </li>
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--batch-payments"></i>
+                                <span class="fd-list__title">List item 4</span>
+                            </li>
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--leads"></i>
+                                <span class="fd-list__title">List item 5</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper">
+                    <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"></div>
+                </div>
+            </div>
+            <div class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"></div>
+        </div>
+
+        <div id="four" class="fd-resizable-card-layout__wrapper" style="grid-row-end: span 18">
+            <div class="fd-resizable-card-layout__wrapper__resize__handle--vertical"></div>
+            <div class="fd-resizable-card-layout__wrapper__card">
+                <div class="fd-card fd-card--object" role="region" aria-label="Object Card Example 1">
+                    <a class="fd-card__header" tabindex="0">
+                        <span
+                                    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
+                                    style="background-image: url('/assets/images/avatars/1.svg')"
+                                    role="presentation"
+                                    aria-label="John Doe"></span>
+                        <div class="fd-card__header-text">
+                        <div class="fd-card__title-area">
+                            <div class="fd-card__title">Card Title</div>
+                        </div>
+                        <div class="fd-card__subtitle-area">
+                            <div class="fd-card__subtitle">Card Subtitle</div>
+                        </div>
+                        </div>
+                    </a>
+                    <div class="fd-card__content" role="group" aria-label="Card Content">
+                        <div class="fd-card__content-container">
+                        <div class="fd-card__content-section">
+                            <div class="fd-card__content-title-container">Group Title 1</div>
+                            <div class="fd-card__content-group">
+                            <div class="fd-card__content-group-text">
+                                <span>Label</span>
+                                <span>Text</span>
+                            </div>
+                            </div>
+                            <div class="fd-card__content-group">
+                            <div class="fd-card__content-group-text">
+                                <span>Label</span>
+                                <span>Text</span>
+                            </div>
+                            </div>
+                            <div class="fd-card__content-group">
+                            <div class="fd-card__content-group-text">
+                                <span>Label</span>
+                                <span>Text</span>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="fd-card__content-section">
+                            <div class="fd-card__content-title-container">Group Title 2</div>
+                            <div class="fd-card__content-group">
+                            <div class="fd-card__content-group-text">
+                                <span>Label</span>
+                                <span>Text</span>
+                            </div>
+                            </div>
+                            <div class="fd-card__content-group">
+                            <div class="fd-card__content-group-text">
+                                <span>Label</span>
+                                <span>Text</span>
+                            </div>
+                            </div>
+                            <div class="fd-card__content-group">
+                            <div class="fd-card__content-group-text">
+                                <span>Label Only</span>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper">
+                    <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"></div>
+                </div>
+            </div>
+            <div class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"></div>
+        </div>
+
+        <div id="five" class="fd-resizable-card-layout__wrapper fd-resizable-card-layout__col-span-2" style="grid-row-end: span 10">
+            <div class="fd-resizable-card-layout__wrapper__resize__handle--vertical"></div>
+            <div class="fd-resizable-card-layout__wrapper__card">
+                <div class="fd-card fd-card--table" role="region" aria-label="Table Card Example 1">
+                    <a class="fd-card__header" tabindex="0">
+                        <div class="fd-card__header-text">
+                        <div class="fd-card__title-area">
+                            <div class="fd-card__title">Table Card</div>
+                            <span class="fd-object-status fd-card__counter">4 of 20</span>
+                        </div>
+                        </div>
+                    </a>
+                    <div class="fd-card__content" role="group" aria-label="Card Content">
+                        <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders">
+                        <thead class="fd-table__header">
+                            <tr class="fd-table__row">
+                            <th class="fd-table__cell fd-table__cell--checkbox">
+                                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="kqqzPI">
+                                <label class="fd-checkbox__label" for="kqqzPI"></label>
+                            </th>
+                            <th class="fd-table__cell" scope="col">Name</th>
+                            <th class="fd-table__cell" scope="col">Status</th>
+                            <th class="fd-table__cell" scope="col">Price</th>
+                            <th class="fd-table__cell" scope="col">Country</th>
+                            <th class="fd-table__cell"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="fd-table__body">
+                            <tr class="fd-table__row">
+                            <td class="fd-table__cell fd-table__cell--checkbox">
+                                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="EWuzWh">
+                                <label class="fd-checkbox__label" for="EWuzWh"></label>
+                            </td>
+                            <td class="fd-table__cell">Banana</td>
+                            <td class="fd-table__cell">
+                                <span class="fd-object-status fd-object-status--positive">
+                                                    Available
+                                                </span>
+                            </td>
+                            <td class="fd-table__cell">5 EUR</td>
+                            <td class="fd-table__cell">India</td>
+                            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
+                                <i role="presentation" class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></i>
+                            </td>
+                            </tr>
+                            <tr class="fd-table__row">
+                            <td class="fd-table__cell fd-table__cell--checkbox">
+                                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="19j0Sc">
+                                <label class="fd-checkbox__label" for="19j0Sc"></label>
+                            </td>
+                            <td class="fd-table__cell">Pineapple</td>
+                            <td class="fd-table__cell">
+                                <span class="fd-object-status fd-object-status--negative">
+                                                    Out of stock
+                                                </span>
+                            </td>
+                            <td class="fd-table__cell">2 EUR</td>
+                            <td class="fd-table__cell">Mexico</td>
+                            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
+                                <i role="presentation" class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></i>
+                            </td>
+                            </tr>
+                            <tr class="fd-table__row">
+                            <td class="fd-table__cell fd-table__cell--checkbox">
+                                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="a7SfGX">
+                                <label class="fd-checkbox__label" for="a7SfGX"></label>
+                            </td>
+                            <td class="fd-table__cell">Orange</td>
+                            <td class="fd-table__cell">
+                                <span class="fd-object-status fd-object-status--informative">
+                                                    Temporary unavailable
+                                                </span>
+                            </td>
+                            <td class="fd-table__cell">6 EUR</td>
+                            <td class="fd-table__cell">Spain</td>
+                            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
+                                <i role="presentation" class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"></i>
+                            </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper">
+                    <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"></div>
+                </div>
+            </div>
+            <div class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"></div>
+        </div>
+
+        <div id="six" class="fd-resizable-card-layout__wrapper" style="grid-row-end: span 10">
+            <div class="fd-resizable-card-layout__wrapper__resize__handle--vertical"></div>
+            <div class="fd-resizable-card-layout__wrapper__card">
+                <div class="fd-card" role="region" aria-label="List Card Example 4">
+                    <a class="fd-card__header" tabindex="0">
+                        <div class="fd-card__header-text">
+                            <div class="fd-card__title-area">
+                                <div class="fd-card__title">Quick Links</div>
+                                <span class="fd-object-status fd-card__counter">4 of 20</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="fd-card__content" role="group" aria-label="Card Content">
+                        <ul class="fd-list fd-list--no-border" role="list">
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
+                                <span class="fd-list__title">List item 1</span>
+                            </li>
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--wrench"></i>
+                                <span class="fd-list__title">List item 2</span>
+                            </li>
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--leads"></i>
+                                <span class="fd-list__title">List item 3</span>
+                            </li>
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--batch-payments"></i>
+                                <span class="fd-list__title">List item 4</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper">
+                    <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"></div>
+                </div>
+            </div>
+            <div class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"></div>
+        </div>
+    </div>
+`;
+
+resizeCardLayout.storyName = 'Resizable card layout';
+resizeCardLayout.parameters = {
+    docs: {
+        iframeHeight: 900,
+        storyDescription: `Resizable card layout with multiple cards. This is based on Grid structure.
+        `
+    }
+};
+
+export const resizeCardHorizontalVerticalDirection = () =>
+    `<div id="grid1" class="fd-resizable-card-layout">
+        <div id="seven" class="fd-resizable-card-layout__wrapper" style="grid-row-end: span 8">
+            <div class="fd-resizable-card-layout__wrapper__resize__handle--vertical"></div>
+            <div class="fd-resizable-card-layout__wrapper__card">
+                <div class="fd-card" role="region" aria-label="List Card Example 4">
+                    <a class="fd-card__header" tabindex="0">
+                        <div class="fd-card__header-text">
+                            <div class="fd-card__title-area">
+                                <div class="fd-card__title">Quick Links</div>
+                                <span class="fd-object-status fd-card__counter">4 of 20</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="fd-card__content" role="group" aria-label="Card Content">
+                        <ul class="fd-list fd-list--no-border" role="list">
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
+                                <span class="fd-list__title">List item 1</span>
+                            </li>
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--wrench"></i>
+                                <span class="fd-list__title">List item 2</span>
+                            </li>
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--leads"></i>
+                                <span class="fd-list__title">List item 3</span>
+                            </li>
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--batch-payments"></i>
+                                <span class="fd-list__title">List item 4</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper">
+                    <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"></div>
+                </div>
+            </div>
+            <div class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"></div>
+        </div>
     </div>
 `;
 
@@ -77,44 +407,45 @@ resizeCardHorizontalVerticalDirection.parameters = {
 };
 
 export const resizeCardHorizontalDirection = () =>
-    `<div id="two" class="fd-resizable-card fd-resizable-card__resize--indication-border">
-        <div class="fd-resizable-card__resize__handle--vertical"></div>
-        <div class="fd-resizable-card__card">
-            <div class="fd-card" role="region" aria-label="List Card Example 5">
-                <a class="fd-card__header" tabindex="0">
-                    <div class="fd-card__header-text">
-                        <div class="fd-card__title-area">
-                            <div class="fd-card__title">Quick Links</div>
-                            <span class="fd-object-status fd-card__counter">4 of 20</span>
+    `<div id="grid1" class="fd-resizable-card-layout">
+        <div id="eight" class="fd-resizable-card-layout__wrapper" style="grid-row-end: span 8">
+            <div class="fd-resizable-card-layout__wrapper__resize__handle--vertical"></div>
+            <div class="fd-resizable-card-layout__wrapper__card">
+                <div class="fd-card" role="region" aria-label="List Card Example 4">
+                    <a class="fd-card__header" tabindex="0">
+                        <div class="fd-card__header-text">
+                            <div class="fd-card__title-area">
+                                <div class="fd-card__title">Quick Links</div>
+                                <span class="fd-object-status fd-card__counter">4 of 20</span>
+                            </div>
                         </div>
+                    </a>
+                    <div class="fd-card__content" role="group" aria-label="Card Content">
+                        <ul class="fd-list fd-list--no-border" role="list">
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
+                                <span class="fd-list__title">List item 1</span>
+                            </li>
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--wrench"></i>
+                                <span class="fd-list__title">List item 2</span>
+                            </li>
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--leads"></i>
+                                <span class="fd-list__title">List item 3</span>
+                            </li>
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--batch-payments"></i>
+                                <span class="fd-list__title">List item 4</span>
+                            </li>
+                        </ul>
                     </div>
-                </a>
-                <div class="fd-card__content" role="group" aria-label="Card Content">
-                    <ul class="fd-list fd-list--no-border" role="list">
-                        <li role="listitem" tabindex="0" class="fd-list__item">
-                            <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
-                            <span class="fd-list__title">List item 1</span>
-                        </li>
-                        <li role="listitem" tabindex="0" class="fd-list__item">
-                            <i role="presentation" class="fd-list__icon sap-icon--wrench"></i>
-                            <span class="fd-list__title">List item 2</span>
-                        </li>
-                        <li role="listitem" tabindex="0" class="fd-list__item">
-                            <i role="presentation" class="fd-list__icon sap-icon--leads"></i>
-                            <span class="fd-list__title">List item 3</span>
-                        </li>
-                        <li role="listitem" tabindex="0" class="fd-list__item">
-                            <i role="presentation" class="fd-list__icon sap-icon--batch-payments"></i>
-                            <span class="fd-list__title">List item 4</span>
-                        </li>
-                    </ul>
+                </div>
+                <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper">
+                    <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"></div>
                 </div>
             </div>
-            <div class="fd-resizable-card__icon-container">
-                <div class="fd-resizable-card--icon fd-resizable-card__resize__cursor--both"></div>
-            </div>
         </div>
-        <div class="fd-resizable-card__resize--icon fd-resizable-card__resize__cursor--horizontal"></div>
     </div>
 `;
 
@@ -128,44 +459,45 @@ resizeCardHorizontalDirection.parameters = {
 };
 
 export const resizeCardVerticalDirection = () =>
-    `<div id="three" class="fd-resizable-card fd-resizable-card__resize--indication-border">
-        <div class="fd-resizable-card__card">
-            <div class="fd-card" role="region" aria-label="List Card Example 6">
-                <a class="fd-card__header" tabindex="0">
-                    <div class="fd-card__header-text">
-                        <div class="fd-card__title-area">
-                            <div class="fd-card__title">Quick Links</div>
-                            <span class="fd-object-status fd-card__counter">4 of 20</span>
+    `<div id="grid1" class="fd-resizable-card-layout">
+        <div id="nine" class="fd-resizable-card-layout__wrapper" style="grid-row-end: span 8">
+            <div class="fd-resizable-card-layout__wrapper__card">
+                <div class="fd-card" role="region" aria-label="List Card Example 4">
+                    <a class="fd-card__header" tabindex="0">
+                        <div class="fd-card__header-text">
+                            <div class="fd-card__title-area">
+                                <div class="fd-card__title">Quick Links</div>
+                                <span class="fd-object-status fd-card__counter">4 of 20</span>
+                            </div>
                         </div>
+                    </a>
+                    <div class="fd-card__content" role="group" aria-label="Card Content">
+                        <ul class="fd-list fd-list--no-border" role="list">
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
+                                <span class="fd-list__title">List item 1</span>
+                            </li>
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--wrench"></i>
+                                <span class="fd-list__title">List item 2</span>
+                            </li>
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--leads"></i>
+                                <span class="fd-list__title">List item 3</span>
+                            </li>
+                            <li role="listitem" tabindex="0" class="fd-list__item">
+                                <i role="presentation" class="fd-list__icon sap-icon--batch-payments"></i>
+                                <span class="fd-list__title">List item 4</span>
+                            </li>
+                        </ul>
                     </div>
-                </a>
-                <div class="fd-card__content" role="group" aria-label="Card Content">
-                    <ul class="fd-list fd-list--no-border" role="list">
-                        <li role="listitem" tabindex="0" class="fd-list__item">
-                            <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
-                            <span class="fd-list__title">List item 1</span>
-                        </li>
-                        <li role="listitem" tabindex="0" class="fd-list__item">
-                            <i role="presentation" class="fd-list__icon sap-icon--wrench"></i>
-                            <span class="fd-list__title">List item 2</span>
-                        </li>
-                        <li role="listitem" tabindex="0" class="fd-list__item">
-                            <i role="presentation" class="fd-list__icon sap-icon--leads"></i>
-                            <span class="fd-list__title">List item 3</span>
-                        </li>
-                        <li role="listitem" tabindex="0" class="fd-list__item">
-                            <i role="presentation" class="fd-list__icon sap-icon--batch-payments"></i>
-                            <span class="fd-list__title">List item 4</span>
-                        </li>
-                    </ul>
+                </div>
+                <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper">
+                    <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"></div>
                 </div>
             </div>
-            <div class="fd-resizable-card__icon-container">
-                <div class="fd-resizable-card--icon fd-resizable-card__resize__cursor--both"></div>
-            </div>
+            <div class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"></div>
         </div>
-        <div class="fd-resizable-card__resize__handle--horizontal"></div>
-        <div class="fd-resizable-card__resize--icon fd-resizable-card__resize__cursor--vertical"></div>
     </div>
 `;
 

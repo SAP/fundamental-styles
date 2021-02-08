@@ -1,126 +1,187 @@
-@import './new-settings';
-@import './mixins';
-@import './icon';
+@import "./new-settings";
+@import "./mixins";
+@import "./icon";
 
-$block: #{$fd-namespace}-resizable-card;
+$block: #{$fd-namespace}-resizable-card-layout;
 
+$fd-grid-column-width: 20rem;
+$fd-grid-row-height: 1rem;
+$fd-grid-gap: 1rem;
 $fd-resize-handle-width: 0.0625rem;
 $fd-border-on-drag: 0.125rem dashed var(--sapContent_DragAndDropActiveColor);
 
+$fd-resizable-card-padding-xl-screen: 3rem;
+$fd-resizable-card-padding: 1rem;
+$fd-resizable-card-padding-s-screen: 0.5rem;
+
 .#{$block} {
   @include fd-reset();
-  @include fd-flex();
 
-  position: relative;
+  display: grid;
+  gap: $fd-grid-gap;
+  grid-auto-rows: $fd-grid-row-height;
 
-  &__card {
+  &__wrapper {
     @include fd-reset();
+    @include fd-flex();
 
-    order: 1;
-    flex-grow: 1;
-    flex-shrink: 1;
     position: relative;
-    // subtract width taken by vertical handler and horizontal handler
-    height: calc(100% - #{$fd-resize-handle-width});
 
-    .#{$block}__icon-container {
+    &__card {
       @include fd-reset();
 
-      width: 1rem;
-      height: 1rem;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      z-index: 2;
-      padding: 0 0.0625rem 0.0625rem 0;
+      order: 1;
+      flex-grow: 1;
+      flex-shrink: 1;
+      position: relative;
+      // subtract width taken by vertical handler and horizontal handler
+      height: calc(100% - #{$fd-resize-handle-width});
 
-      @include fd-rtl() {
-        right: auto;
-        left: 0;
-        padding: 0 0 0.0625rem 0.0625rem;
-      }
-
-      .#{$block}--icon {
+      &__icon-wrapper {
         @include fd-reset();
-        @include fd-icon('resize-corner');
 
-        font-family: SAP-icons;
-        font-size: 1rem;
-        line-height: 1rem;
-        cursor: nwse-resize;
+        width: 1rem;
+        height: 1rem;
         position: absolute;
         bottom: 0;
-        right: 0.0625rem;
-        color: var(--sapButton_IconColor);
+        right: 0;
+        z-index: 2;
+        padding: 0 0.0625rem 0.0625rem 0;
 
         @include fd-rtl() {
-          transform: rotate(90deg);
-          position: relative;
-          cursor: nesw-resize;
-          padding: 0 0.0625rem 0.0625rem 0.5rem;
-          // padding-left is needed after rotation
+          right: auto;
+          left: 0;
+          padding: 0 0 0.0625rem 0.0625rem;
         }
+
+        &--icon {
+          @include fd-reset();
+          @include fd-icon("resize-corner");
+
+          font-family: SAP-icons;
+          font-size: 1rem;
+          line-height: 1rem;
+          cursor: nwse-resize;
+          position: absolute;
+          bottom: 0;
+          right: 0.0625rem;
+          color: var(--sapButton_IconColor);
+
+          @include fd-rtl() {
+            transform: rotate(90deg);
+            position: relative;
+            cursor: nesw-resize;
+            padding: 0 0.0625rem 0.0625rem 0.5rem;
+            // padding-left is needed after rotation
+          }
+        }
+      }
+    }
+
+    &__resize {
+      &__cursor {
+        &--horizontal {
+          cursor: ew-resize;
+        }
+
+        &--vertical {
+          cursor: ns-resize;
+        }
+
+        &--both {
+          cursor: nwse-resize;
+
+          @include fd-rtl() {
+            cursor: nesw-resize;
+          }
+        }
+      }
+
+      &__handle {
+        &--vertical {
+          order: 2;
+          // subtract resize-corner icon font-size/2
+          height: calc(100% - 0.5rem);
+          width: $fd-resize-handle-width;
+          cursor: ew-resize;
+        }
+
+        &--vertical::content {
+          content: "";
+          position: absolute;
+        }
+
+        &--horizontal {
+          // subtract resize-corner icon font-size/2
+          width: calc(100% - 0.5rem);
+          height: $fd-resize-handle-width;
+          position: absolute;
+          bottom: 0;
+          cursor: ns-resize;
+        }
+      }
+
+      &--indication-border {
+        @include fd-reset();
+
+        border: $fd-border-on-drag;
       }
     }
   }
 
-  &__resize {
-    &__cursor {
-      &--horizontal {
-        @include fd-reset();
+  &__row-span {
+    grid-row-end: span 1;
+  }
 
-        cursor: ew-resize;
-      }
+  &__col-span-1 {
+    grid-column-end: span 1;
+  }
 
-      &--vertical {
-        @include fd-reset();
+  &__col-span-2 {
+    grid-column-end: span 2;
+  }
 
-        cursor: ns-resize;
-      }
+  &__col-span-3 {
+    grid-column-end: span 3;
+  }
 
-      &--both {
-        @include fd-reset();
+  &__col-span-4 {
+    grid-column-end: span 4;
+  }
+}
 
-        cursor: nwse-resize;
+// 1 column layout
+@media (max-width: 656px) {
+  .#{$block} {
+    padding-left: $fd-resizable-card-padding-s-screen;
+    padding-right: $fd-resizable-card-padding-s-screen;
+    grid-template-columns: repeat(1, $fd-grid-column-width);
+  }
+}
 
-        @include fd-rtl() {
-          cursor: nesw-resize;
-        }
-      }
-    }
+// 2 column layout
+@media (min-width: 656px) {
+  .#{$block} {
+    padding-left: $fd-resizable-card-padding;
+    padding-right: $fd-resizable-card-padding;
+    grid-template-columns: repeat(2, $fd-grid-column-width);
+  }
+}
 
-    &__handle {
-      &--vertical {
-        @include fd-reset();
+// 3 column layout
+@media (min-width: 976px) {
+  .#{$block} {
+    padding-left: $fd-resizable-card-padding;
+    padding-right: $fd-resizable-card-padding;
+    grid-template-columns: repeat(3, $fd-grid-column-width);
+  }
+}
 
-        order: 2;
-        // subtract resize-corner icon font-size/2
-        height: calc(100% - 0.5rem);
-        width: $fd-resize-handle-width;
-        cursor: ew-resize;
-      }
-
-      &--vertical::content {
-        content: '';
-        position: absolute;
-      }
-
-      &--horizontal {
-        @include fd-reset();
-
-        // subtract resize-corner icon font-size/2
-        width: calc(100% - 0.5rem);
-        height: $fd-resize-handle-width;
-        position: absolute;
-        bottom: 0;
-        cursor: ns-resize;
-      }
-    }
-
-    &--indication-border {
-      @include fd-reset();
-
-      border: $fd-border-on-drag;
-    }
+// 4 column layout
+@media (min-width: 1360px) {
+  .#{$block} {
+    padding-left: $fd-resizable-card-padding-xl-screen;
+    padding-right: $fd-resizable-card-padding-xl-screen;
+    grid-template-columns: repeat(4, $fd-grid-column-width);
   }
 }
