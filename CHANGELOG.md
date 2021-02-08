@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.16.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.16.0-rc.2...v0.16.0-rc.3) (2021-02-08)
+
+
+### Features
+
+* Add non-interactive state to card header ([#2113](https://github.com/SAP/fundamental-styles/issues/2113)) ([8be8b7a](https://github.com/SAP/fundamental-styles/commit/8be8b7aab09efe05b111d5e8da08c718dfffd421))
+
 ## [0.16.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.16.0-rc.1...v0.16.0-rc.2) (2021-02-05)
 
 
