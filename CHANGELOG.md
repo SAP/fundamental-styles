@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.16.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.16.0-rc.3...v0.16.0-rc.4) (2021-02-08)
+
+
+### Bug Fixes
+
+* byline list improvements ([#2074](https://github.com/SAP/fundamental-styles/issues/2074)) ([60b871e](https://github.com/SAP/fundamental-styles/commit/60b871e21058e5d3c89cd4b817649190f2ad5d1e))
+
 ## [0.16.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.16.0-rc.2...v0.16.0-rc.3) (2021-02-08)
 
 
