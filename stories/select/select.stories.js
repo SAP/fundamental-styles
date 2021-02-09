@@ -157,7 +157,7 @@ When in compact mode, select displays a dropdown menu that can contain long list
 };
 
 export const mobileMode = () => `<div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
-    <div class="fd-dialog__content">
+    <div class="fd-dialog__content" style="max-width:37.5rem;">
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">

@@ -812,7 +812,7 @@ To add text in the \`body\` of the component, simply include your text in the \`
 };
 
 export const mobileMode = () => `<section role="dialog" aria-labelledby="mobileModeMultiInputHeader" class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
-    <div class="fd-dialog__content">
+    <div class="fd-dialog__content" style="max-width:37.5rem;">
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
