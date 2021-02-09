@@ -10,7 +10,6 @@ exports[`Storyshots Layouts/Resizable Card Layout Card resize in horizontal and 
   <div
     class="fd-resizable-card-layout__wrapper"
     id="seven"
-    style="grid-row-end: span 8"
   >
     
             
@@ -221,7 +220,6 @@ exports[`Storyshots Layouts/Resizable Card Layout Card resize in horizontal dire
   <div
     class="fd-resizable-card-layout__wrapper"
     id="eight"
-    style="grid-row-end: span 8"
   >
     
             
@@ -427,7 +425,6 @@ exports[`Storyshots Layouts/Resizable Card Layout Card resize in vertical direct
   <div
     class="fd-resizable-card-layout__wrapper"
     id="nine"
-    style="grid-row-end: span 8"
   >
     
             
@@ -625,15 +622,16 @@ exports[`Storyshots Layouts/Resizable Card Layout Card resize in vertical direct
 
 exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
 <div
-  class="fd-resizable-card-layout"
+  class="fd-resizable-card-layout fd-resizable-card-layout--m"
   id="grid1"
+  style="display:flex; flex-wrap:wrap;"
 >
   
         
   <div
     class="fd-resizable-card-layout__wrapper"
     id="one"
-    style="grid-row-end: span 8"
+    style="width: 40rem; height:16rem;"
   >
     
             
@@ -835,7 +833,7 @@ exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
   <div
     class="fd-resizable-card-layout__wrapper"
     id="two"
-    style="grid-row-end: span 4"
+    style="width:20rem; height: fit-content"
   >
     
             
@@ -956,7 +954,7 @@ exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
   <div
     class="fd-resizable-card-layout__wrapper"
     id="three"
-    style="grid-row-end: span 10"
+    style="width:20rem; height:20rem;"
   >
     
             
@@ -1180,8 +1178,619 @@ exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
         
   <div
     class="fd-resizable-card-layout__wrapper"
+    id="five"
+    style="width:20rem; height:25rem;"
+  >
+    
+            
+    <div
+      class="fd-resizable-card-layout__wrapper__resize__handle--vertical"
+    />
+    
+            
+    <div
+      class="fd-resizable-card-layout__wrapper__card"
+    >
+      
+                
+      <div
+        aria-label="Table Card Example 1"
+        class="fd-card fd-card--table"
+        role="region"
+      >
+        
+                    
+        <a
+          class="fd-card__header"
+          tabindex="0"
+        >
+          
+                        
+          <div
+            class="fd-card__header-text"
+          >
+            
+                        
+            <div
+              class="fd-card__title-area"
+            >
+              
+                            
+              <div
+                class="fd-card__title"
+              >
+                Table Card
+              </div>
+              
+                            
+              <span
+                class="fd-object-status fd-card__counter"
+              >
+                4 of 20
+              </span>
+              
+                        
+            </div>
+            
+                        
+          </div>
+          
+                    
+        </a>
+        
+                    
+        <div
+          aria-label="Card Content"
+          class="fd-card__content"
+          role="group"
+        >
+          
+                        
+          <table
+            class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders"
+          >
+            
+                        
+            <thead
+              class="fd-table__header"
+            >
+              
+                            
+              <tr
+                class="fd-table__row"
+              >
+                
+                            
+                <th
+                  class="fd-table__cell fd-table__cell--checkbox"
+                >
+                  
+                                
+                  <input
+                    aria-label="checkbox"
+                    class="fd-checkbox"
+                    id="kqqzPI"
+                    type="checkbox"
+                  />
+                  
+                                
+                  <label
+                    class="fd-checkbox__label"
+                    for="kqqzPI"
+                  />
+                  
+                            
+                </th>
+                
+                            
+                <th
+                  class="fd-table__cell"
+                  scope="col"
+                >
+                  Name
+                </th>
+                
+                            
+                <th
+                  class="fd-table__cell"
+                  scope="col"
+                >
+                  Status
+                </th>
+                
+                            
+                <th
+                  class="fd-table__cell"
+                  scope="col"
+                >
+                  Price
+                </th>
+                
+                            
+                <th
+                  class="fd-table__cell"
+                />
+                
+                            
+              </tr>
+              
+                        
+            </thead>
+            
+                        
+            <tbody
+              class="fd-table__body"
+            >
+              
+                            
+              <tr
+                class="fd-table__row"
+              >
+                
+                            
+                <td
+                  class="fd-table__cell fd-table__cell--checkbox"
+                >
+                  
+                                
+                  <input
+                    aria-label="checkbox"
+                    class="fd-checkbox"
+                    id="EWuzWh"
+                    type="checkbox"
+                  />
+                  
+                                
+                  <label
+                    class="fd-checkbox__label"
+                    for="EWuzWh"
+                  />
+                  
+                            
+                </td>
+                
+                            
+                <td
+                  class="fd-table__cell"
+                >
+                  Banana
+                </td>
+                
+                            
+                <td
+                  class="fd-table__cell"
+                >
+                  
+                                
+                  <span
+                    class="fd-object-status fd-object-status--positive"
+                  >
+                    
+                                                    Available
+                                                
+                  </span>
+                  
+                            
+                </td>
+                
+                            
+                <td
+                  class="fd-table__cell"
+                >
+                  5 EUR
+                </td>
+                
+                            
+                <td
+                  class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
+                >
+                  
+                                
+                  <i
+                    class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+                    role="presentation"
+                  />
+                  
+                            
+                </td>
+                
+                            
+              </tr>
+              
+                            
+              <tr
+                class="fd-table__row"
+              >
+                
+                            
+                <td
+                  class="fd-table__cell fd-table__cell--checkbox"
+                >
+                  
+                                
+                  <input
+                    aria-label="checkbox"
+                    class="fd-checkbox"
+                    id="19j0Sc"
+                    type="checkbox"
+                  />
+                  
+                                
+                  <label
+                    class="fd-checkbox__label"
+                    for="19j0Sc"
+                  />
+                  
+                            
+                </td>
+                
+                            
+                <td
+                  class="fd-table__cell"
+                >
+                  Pineapple
+                </td>
+                
+                            
+                <td
+                  class="fd-table__cell"
+                >
+                  
+                                
+                  <span
+                    class="fd-object-status fd-object-status--negative"
+                  >
+                    
+                                                    Out of stock
+                                                
+                  </span>
+                  
+                            
+                </td>
+                
+                            
+                <td
+                  class="fd-table__cell"
+                >
+                  2 EUR
+                </td>
+                
+                            
+                <td
+                  class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
+                >
+                  
+                                
+                  <i
+                    class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+                    role="presentation"
+                  />
+                  
+                            
+                </td>
+                
+                            
+              </tr>
+              
+                            
+              <tr
+                class="fd-table__row"
+              >
+                
+                            
+                <td
+                  class="fd-table__cell fd-table__cell--checkbox"
+                >
+                  
+                                
+                  <input
+                    aria-label="checkbox"
+                    class="fd-checkbox"
+                    id="a7SfGX"
+                    type="checkbox"
+                  />
+                  
+                                
+                  <label
+                    class="fd-checkbox__label"
+                    for="a7SfGX"
+                  />
+                  
+                            
+                </td>
+                
+                            
+                <td
+                  class="fd-table__cell"
+                >
+                  Orange
+                </td>
+                
+                            
+                <td
+                  class="fd-table__cell"
+                >
+                  
+                                
+                  <span
+                    class="fd-object-status fd-object-status--informative"
+                  >
+                    
+                                                    Temporary unavailable
+                                                
+                  </span>
+                  
+                            
+                </td>
+                
+                            
+                <td
+                  class="fd-table__cell"
+                >
+                  6 EUR
+                </td>
+                
+                            
+                <td
+                  class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
+                >
+                  
+                                
+                  <i
+                    class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+                    role="presentation"
+                  />
+                  
+                            
+                </td>
+                
+                            
+              </tr>
+              
+                        
+            </tbody>
+            
+                        
+          </table>
+          
+                    
+        </div>
+        
+                
+      </div>
+      
+                
+      <div
+        class="fd-resizable-card-layout__wrapper__card__icon-wrapper"
+      >
+        
+                    
+        <div
+          class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"
+        />
+        
+                
+      </div>
+      
+            
+    </div>
+    
+            
+    <div
+      class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"
+    />
+    
+        
+  </div>
+  
+
+        
+  <div
+    class="fd-resizable-card-layout__wrapper"
+    id="six"
+    style="width:20rem; height:20rem;"
+  >
+    
+            
+    <div
+      class="fd-resizable-card-layout__wrapper__resize__handle--vertical"
+    />
+    
+            
+    <div
+      class="fd-resizable-card-layout__wrapper__card"
+    >
+      
+                
+      <div
+        aria-label="List Card Example 4"
+        class="fd-card"
+        role="region"
+      >
+        
+                    
+        <a
+          class="fd-card__header"
+          tabindex="0"
+        >
+          
+                        
+          <div
+            class="fd-card__header-text"
+          >
+            
+                            
+            <div
+              class="fd-card__title-area"
+            >
+              
+                                
+              <div
+                class="fd-card__title"
+              >
+                Quick Links
+              </div>
+              
+                                
+              <span
+                class="fd-object-status fd-card__counter"
+              >
+                4 of 20
+              </span>
+              
+                            
+            </div>
+            
+                        
+          </div>
+          
+                    
+        </a>
+        
+                    
+        <div
+          aria-label="Card Content"
+          class="fd-card__content"
+          role="group"
+        >
+          
+                        
+          <ul
+            class="fd-list fd-list--no-border"
+            role="list"
+          >
+            
+                            
+            <li
+              class="fd-list__item"
+              role="listitem"
+              tabindex="0"
+            >
+              
+                                
+              <i
+                class="fd-list__icon sap-icon--cart"
+                role="presentation"
+              />
+              
+                                
+              <span
+                class="fd-list__title"
+              >
+                List item 1
+              </span>
+              
+                            
+            </li>
+            
+                            
+            <li
+              class="fd-list__item"
+              role="listitem"
+              tabindex="0"
+            >
+              
+                                
+              <i
+                class="fd-list__icon sap-icon--wrench"
+                role="presentation"
+              />
+              
+                                
+              <span
+                class="fd-list__title"
+              >
+                List item 2
+              </span>
+              
+                            
+            </li>
+            
+                            
+            <li
+              class="fd-list__item"
+              role="listitem"
+              tabindex="0"
+            >
+              
+                                
+              <i
+                class="fd-list__icon sap-icon--leads"
+                role="presentation"
+              />
+              
+                                
+              <span
+                class="fd-list__title"
+              >
+                List item 3
+              </span>
+              
+                            
+            </li>
+            
+                            
+            <li
+              class="fd-list__item"
+              role="listitem"
+              tabindex="0"
+            >
+              
+                                
+              <i
+                class="fd-list__icon sap-icon--batch-payments"
+                role="presentation"
+              />
+              
+                                
+              <span
+                class="fd-list__title"
+              >
+                List item 4
+              </span>
+              
+                            
+            </li>
+            
+                        
+          </ul>
+          
+                    
+        </div>
+        
+                
+      </div>
+      
+                
+      <div
+        class="fd-resizable-card-layout__wrapper__card__icon-wrapper"
+      >
+        
+                    
+        <div
+          class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"
+        />
+        
+                
+      </div>
+      
+            
+    </div>
+    
+            
+    <div
+      class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"
+    />
+    
+        
+  </div>
+  
+
+        
+  <div
+    class="fd-resizable-card-layout__wrapper"
     id="four"
-    style="grid-row-end: span 18"
+    style="width:20rem; height:35rem;"
   >
     
             
@@ -1451,646 +2060,6 @@ exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
             
                         
           </div>
-          
-                    
-        </div>
-        
-                
-      </div>
-      
-                
-      <div
-        class="fd-resizable-card-layout__wrapper__card__icon-wrapper"
-      >
-        
-                    
-        <div
-          class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"
-        />
-        
-                
-      </div>
-      
-            
-    </div>
-    
-            
-    <div
-      class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"
-    />
-    
-        
-  </div>
-  
-
-        
-  <div
-    class="fd-resizable-card-layout__wrapper fd-resizable-card-layout__col-span-2"
-    id="five"
-    style="grid-row-end: span 10"
-  >
-    
-            
-    <div
-      class="fd-resizable-card-layout__wrapper__resize__handle--vertical"
-    />
-    
-            
-    <div
-      class="fd-resizable-card-layout__wrapper__card"
-    >
-      
-                
-      <div
-        aria-label="Table Card Example 1"
-        class="fd-card fd-card--table"
-        role="region"
-      >
-        
-                    
-        <a
-          class="fd-card__header"
-          tabindex="0"
-        >
-          
-                        
-          <div
-            class="fd-card__header-text"
-          >
-            
-                        
-            <div
-              class="fd-card__title-area"
-            >
-              
-                            
-              <div
-                class="fd-card__title"
-              >
-                Table Card
-              </div>
-              
-                            
-              <span
-                class="fd-object-status fd-card__counter"
-              >
-                4 of 20
-              </span>
-              
-                        
-            </div>
-            
-                        
-          </div>
-          
-                    
-        </a>
-        
-                    
-        <div
-          aria-label="Card Content"
-          class="fd-card__content"
-          role="group"
-        >
-          
-                        
-          <table
-            class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders"
-          >
-            
-                        
-            <thead
-              class="fd-table__header"
-            >
-              
-                            
-              <tr
-                class="fd-table__row"
-              >
-                
-                            
-                <th
-                  class="fd-table__cell fd-table__cell--checkbox"
-                >
-                  
-                                
-                  <input
-                    aria-label="checkbox"
-                    class="fd-checkbox"
-                    id="kqqzPI"
-                    type="checkbox"
-                  />
-                  
-                                
-                  <label
-                    class="fd-checkbox__label"
-                    for="kqqzPI"
-                  />
-                  
-                            
-                </th>
-                
-                            
-                <th
-                  class="fd-table__cell"
-                  scope="col"
-                >
-                  Name
-                </th>
-                
-                            
-                <th
-                  class="fd-table__cell"
-                  scope="col"
-                >
-                  Status
-                </th>
-                
-                            
-                <th
-                  class="fd-table__cell"
-                  scope="col"
-                >
-                  Price
-                </th>
-                
-                            
-                <th
-                  class="fd-table__cell"
-                  scope="col"
-                >
-                  Country
-                </th>
-                
-                            
-                <th
-                  class="fd-table__cell"
-                />
-                
-                            
-              </tr>
-              
-                        
-            </thead>
-            
-                        
-            <tbody
-              class="fd-table__body"
-            >
-              
-                            
-              <tr
-                class="fd-table__row"
-              >
-                
-                            
-                <td
-                  class="fd-table__cell fd-table__cell--checkbox"
-                >
-                  
-                                
-                  <input
-                    aria-label="checkbox"
-                    class="fd-checkbox"
-                    id="EWuzWh"
-                    type="checkbox"
-                  />
-                  
-                                
-                  <label
-                    class="fd-checkbox__label"
-                    for="EWuzWh"
-                  />
-                  
-                            
-                </td>
-                
-                            
-                <td
-                  class="fd-table__cell"
-                >
-                  Banana
-                </td>
-                
-                            
-                <td
-                  class="fd-table__cell"
-                >
-                  
-                                
-                  <span
-                    class="fd-object-status fd-object-status--positive"
-                  >
-                    
-                                                    Available
-                                                
-                  </span>
-                  
-                            
-                </td>
-                
-                            
-                <td
-                  class="fd-table__cell"
-                >
-                  5 EUR
-                </td>
-                
-                            
-                <td
-                  class="fd-table__cell"
-                >
-                  India
-                </td>
-                
-                            
-                <td
-                  class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
-                >
-                  
-                                
-                  <i
-                    class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
-                    role="presentation"
-                  />
-                  
-                            
-                </td>
-                
-                            
-              </tr>
-              
-                            
-              <tr
-                class="fd-table__row"
-              >
-                
-                            
-                <td
-                  class="fd-table__cell fd-table__cell--checkbox"
-                >
-                  
-                                
-                  <input
-                    aria-label="checkbox"
-                    class="fd-checkbox"
-                    id="19j0Sc"
-                    type="checkbox"
-                  />
-                  
-                                
-                  <label
-                    class="fd-checkbox__label"
-                    for="19j0Sc"
-                  />
-                  
-                            
-                </td>
-                
-                            
-                <td
-                  class="fd-table__cell"
-                >
-                  Pineapple
-                </td>
-                
-                            
-                <td
-                  class="fd-table__cell"
-                >
-                  
-                                
-                  <span
-                    class="fd-object-status fd-object-status--negative"
-                  >
-                    
-                                                    Out of stock
-                                                
-                  </span>
-                  
-                            
-                </td>
-                
-                            
-                <td
-                  class="fd-table__cell"
-                >
-                  2 EUR
-                </td>
-                
-                            
-                <td
-                  class="fd-table__cell"
-                >
-                  Mexico
-                </td>
-                
-                            
-                <td
-                  class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
-                >
-                  
-                                
-                  <i
-                    class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
-                    role="presentation"
-                  />
-                  
-                            
-                </td>
-                
-                            
-              </tr>
-              
-                            
-              <tr
-                class="fd-table__row"
-              >
-                
-                            
-                <td
-                  class="fd-table__cell fd-table__cell--checkbox"
-                >
-                  
-                                
-                  <input
-                    aria-label="checkbox"
-                    class="fd-checkbox"
-                    id="a7SfGX"
-                    type="checkbox"
-                  />
-                  
-                                
-                  <label
-                    class="fd-checkbox__label"
-                    for="a7SfGX"
-                  />
-                  
-                            
-                </td>
-                
-                            
-                <td
-                  class="fd-table__cell"
-                >
-                  Orange
-                </td>
-                
-                            
-                <td
-                  class="fd-table__cell"
-                >
-                  
-                                
-                  <span
-                    class="fd-object-status fd-object-status--informative"
-                  >
-                    
-                                                    Temporary unavailable
-                                                
-                  </span>
-                  
-                            
-                </td>
-                
-                            
-                <td
-                  class="fd-table__cell"
-                >
-                  6 EUR
-                </td>
-                
-                            
-                <td
-                  class="fd-table__cell"
-                >
-                  Spain
-                </td>
-                
-                            
-                <td
-                  class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
-                >
-                  
-                                
-                  <i
-                    class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
-                    role="presentation"
-                  />
-                  
-                            
-                </td>
-                
-                            
-              </tr>
-              
-                        
-            </tbody>
-            
-                        
-          </table>
-          
-                    
-        </div>
-        
-                
-      </div>
-      
-                
-      <div
-        class="fd-resizable-card-layout__wrapper__card__icon-wrapper"
-      >
-        
-                    
-        <div
-          class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"
-        />
-        
-                
-      </div>
-      
-            
-    </div>
-    
-            
-    <div
-      class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"
-    />
-    
-        
-  </div>
-  
-
-        
-  <div
-    class="fd-resizable-card-layout__wrapper"
-    id="six"
-    style="grid-row-end: span 10"
-  >
-    
-            
-    <div
-      class="fd-resizable-card-layout__wrapper__resize__handle--vertical"
-    />
-    
-            
-    <div
-      class="fd-resizable-card-layout__wrapper__card"
-    >
-      
-                
-      <div
-        aria-label="List Card Example 4"
-        class="fd-card"
-        role="region"
-      >
-        
-                    
-        <a
-          class="fd-card__header"
-          tabindex="0"
-        >
-          
-                        
-          <div
-            class="fd-card__header-text"
-          >
-            
-                            
-            <div
-              class="fd-card__title-area"
-            >
-              
-                                
-              <div
-                class="fd-card__title"
-              >
-                Quick Links
-              </div>
-              
-                                
-              <span
-                class="fd-object-status fd-card__counter"
-              >
-                4 of 20
-              </span>
-              
-                            
-            </div>
-            
-                        
-          </div>
-          
-                    
-        </a>
-        
-                    
-        <div
-          aria-label="Card Content"
-          class="fd-card__content"
-          role="group"
-        >
-          
-                        
-          <ul
-            class="fd-list fd-list--no-border"
-            role="list"
-          >
-            
-                            
-            <li
-              class="fd-list__item"
-              role="listitem"
-              tabindex="0"
-            >
-              
-                                
-              <i
-                class="fd-list__icon sap-icon--cart"
-                role="presentation"
-              />
-              
-                                
-              <span
-                class="fd-list__title"
-              >
-                List item 1
-              </span>
-              
-                            
-            </li>
-            
-                            
-            <li
-              class="fd-list__item"
-              role="listitem"
-              tabindex="0"
-            >
-              
-                                
-              <i
-                class="fd-list__icon sap-icon--wrench"
-                role="presentation"
-              />
-              
-                                
-              <span
-                class="fd-list__title"
-              >
-                List item 2
-              </span>
-              
-                            
-            </li>
-            
-                            
-            <li
-              class="fd-list__item"
-              role="listitem"
-              tabindex="0"
-            >
-              
-                                
-              <i
-                class="fd-list__icon sap-icon--leads"
-                role="presentation"
-              />
-              
-                                
-              <span
-                class="fd-list__title"
-              >
-                List item 3
-              </span>
-              
-                            
-            </li>
-            
-                            
-            <li
-              class="fd-list__item"
-              role="listitem"
-              tabindex="0"
-            >
-              
-                                
-              <i
-                class="fd-list__icon sap-icon--batch-payments"
-                role="presentation"
-              />
-              
-                                
-              <span
-                class="fd-list__title"
-              >
-                List item 4
-              </span>
-              
-                            
-            </li>
-            
-                        
-          </ul>
           
                     
         </div>

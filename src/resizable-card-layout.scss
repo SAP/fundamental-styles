@@ -4,35 +4,35 @@
 
 $block: #{$fd-namespace}-resizable-card-layout;
 
-$fd-grid-column-width: 20rem;
-$fd-grid-row-height: 1rem;
-$fd-grid-gap: 1rem;
-$fd-resize-handle-width: 0.0625rem;
-$fd-border-on-drag: 0.125rem dashed var(--sapContent_DragAndDropActiveColor);
-
-$fd-resizable-card-padding-xl-screen: 3rem;
-$fd-resizable-card-padding: 1rem;
-$fd-resizable-card-padding-s-screen: 0.5rem;
-
 .#{$block} {
+  $fd-resizable-card-min-width: 20rem;
+  $fd-resize-handle-width: 0.0625rem;
+  $fd-border-on-drag: 0.125rem dashed var(--sapContent_DragAndDropActiveColor);
+
+  $fd-resizable-card-padding-x: (
+    s: 0.5rem,
+    m: 1rem,
+    l: 3rem,
+  );
+
   @include fd-reset();
 
-  display: grid;
-  gap: $fd-grid-gap;
-  grid-auto-rows: $fd-grid-row-height;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 
   &__wrapper {
     @include fd-reset();
     @include fd-flex();
 
+    min-width: $fd-resizable-card-min-width;
+    margin: 0.5rem;
     position: relative;
 
     &__card {
       @include fd-reset();
 
       order: 1;
-      flex-grow: 1;
-      flex-shrink: 1;
+      flex: 1;
       position: relative;
       // subtract width taken by vertical handler and horizontal handler
       height: calc(100% - #{$fd-resize-handle-width});
@@ -101,7 +101,6 @@ $fd-resizable-card-padding-s-screen: 0.5rem;
         &--vertical {
           order: 2;
           // subtract resize-corner icon font-size/2
-          height: calc(100% - 0.5rem);
           width: $fd-resize-handle-width;
           cursor: ew-resize;
         }
@@ -129,59 +128,10 @@ $fd-resizable-card-padding-s-screen: 0.5rem;
     }
   }
 
-  &__row-span {
-    grid-row-end: span 1;
-  }
-
-  &__col-span-1 {
-    grid-column-end: span 1;
-  }
-
-  &__col-span-2 {
-    grid-column-end: span 2;
-  }
-
-  &__col-span-3 {
-    grid-column-end: span 3;
-  }
-
-  &__col-span-4 {
-    grid-column-end: span 4;
-  }
-}
-
-// 1 column layout
-@media (max-width: 656px) {
-  .#{$block} {
-    padding-left: $fd-resizable-card-padding-s-screen;
-    padding-right: $fd-resizable-card-padding-s-screen;
-    grid-template-columns: repeat(1, $fd-grid-column-width);
-  }
-}
-
-// 2 column layout
-@media (min-width: 656px) {
-  .#{$block} {
-    padding-left: $fd-resizable-card-padding;
-    padding-right: $fd-resizable-card-padding;
-    grid-template-columns: repeat(2, $fd-grid-column-width);
-  }
-}
-
-// 3 column layout
-@media (min-width: 976px) {
-  .#{$block} {
-    padding-left: $fd-resizable-card-padding;
-    padding-right: $fd-resizable-card-padding;
-    grid-template-columns: repeat(3, $fd-grid-column-width);
-  }
-}
-
-// 4 column layout
-@media (min-width: 1360px) {
-  .#{$block} {
-    padding-left: $fd-resizable-card-padding-xl-screen;
-    padding-right: $fd-resizable-card-padding-xl-screen;
-    grid-template-columns: repeat(4, $fd-grid-column-width);
+  @each $size-label, $size in $fd-resizable-card-padding-x {
+    &--#{$size-label} {
+      padding-left: map_get($fd-resizable-card-padding-x, $size-label);
+      padding-right: map_get($fd-resizable-card-padding-x, $size-label);
+    }
   }
 }
