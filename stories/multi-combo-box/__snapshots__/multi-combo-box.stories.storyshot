@@ -2483,7 +2483,7 @@ exports[`Storyshots Patterns/Multi ComboBox Mobile Mode 1`] = `
       <ul
         aria-label="Fruits"
         aria-multiselectable="true"
-        class="fd-list fd-list--multi-input fd-list--has-message"
+        class="fd-list fd-list--multi-input fd-list--has-message fd-list--mobile"
         role="listbox"
       >
         

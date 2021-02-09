@@ -3051,7 +3051,7 @@ exports[`Storyshots Patterns/Multi Input Mobile Mode 1`] = `
       <ul
         aria-label="list of fruits"
         aria-multiselectable="true"
-        class="fd-list fd-list--multi-input fd-list--has-message"
+        class="fd-list fd-list--multi-input fd-list--has-message fd-list--mobile"
         role="listbox"
       >
         

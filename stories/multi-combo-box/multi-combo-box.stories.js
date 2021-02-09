@@ -776,7 +776,7 @@ export const mobileMode = () => `<div class="fd-dialog fd-dialog-docs-static fd-
             </div>
         </div>
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
-             <ul class="fd-list fd-list--multi-input fd-list--has-message"  role="listbox" aria-multiselectable="true" aria-label="Fruits">
+             <ul class="fd-list fd-list--multi-input fd-list--has-message fd-list--mobile"  role="listbox" aria-multiselectable="true" aria-label="Fruits">
 				<li class="fd-list__message fd-list__message--success" role="option">Success Message</li>
 				<li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
 					<div class="fd-form-item fd-list__form-item">

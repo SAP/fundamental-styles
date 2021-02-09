@@ -117,6 +117,10 @@
     min-width: 7rem;
     max-width: 37.5rem;
 
+    &.#{$block}--mobile {
+      max-width: 100%;
+    }
+
     .#{$block}__item {
       cursor: pointer;
       border: none;

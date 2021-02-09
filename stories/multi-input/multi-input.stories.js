@@ -873,7 +873,7 @@ export const mobileMode = () => `<section role="dialog" aria-labelledby="mobileM
         </div>
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
             <span class="fd-list__message fd-list__message--success">Success Message</span>
-             <ul aria-multiselectable="true" role="listbox" aria-label="list of fruits" class="fd-list fd-list--multi-input fd-list--has-message">
+             <ul aria-multiselectable="true" role="listbox" aria-label="list of fruits" class="fd-list fd-list--multi-input fd-list--has-message fd-list--mobile">
                 <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
                     <div class="fd-form-item fd-list__form-item">
                         <input type="checkbox" class="fd-checkbox" id="Ai4ez648" checked aria-labelledby="Az0bg57">

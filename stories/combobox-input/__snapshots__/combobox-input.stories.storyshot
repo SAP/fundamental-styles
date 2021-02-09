@@ -1431,7 +1431,7 @@ exports[`Storyshots Patterns/Combobox Input Mobile 1`] = `
             
       <ul
         aria-labelledby="fruitsMobileHeader"
-        class="fd-list fd-list--dropdown"
+        class="fd-list fd-list--dropdown fd-list--mobile"
         role="listbox"
       >
         
