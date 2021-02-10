@@ -384,7 +384,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
     .#{$block}__content-text {
       @include line-clamp();
 
-      max-height: 2.125rem; // fix for IE11 not supporting line clamp
+      max-height: 2.125rem; // fix for IE11 not supporting line-clamp
     }
 
     .#{$block}__content-byline {
