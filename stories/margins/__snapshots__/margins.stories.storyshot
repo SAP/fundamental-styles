@@ -1,0 +1,823 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Layouts/Margins All-Round Margin 1`] = `
+<div
+  class="docs-column-flex docs-column-flex--inline"
+>
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin--tiny"
+    >
+      container(tiny)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin--sm"
+    >
+      container(sm)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin--md"
+    >
+      container(md)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin--lg"
+    >
+      container(lg)
+    </div>
+    
+        
+  </div>
+  
+    
+</div>
+`;
+
+exports[`Storyshots Layouts/Margins Double-Sided Margin Begin-End 1`] = `
+<div
+  class="docs-column-flex docs-column-flex--inline"
+>
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-begin-end--tiny"
+    >
+      container(tiny)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-begin-end--sm"
+    >
+      container(sm)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-begin-end--md"
+    >
+      container(md)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-begin-end--lg"
+    >
+      container(lg)
+    </div>
+    
+        
+  </div>
+  
+    
+</div>
+`;
+
+exports[`Storyshots Layouts/Margins Double-Sided Margin Top-Bottom 1`] = `
+<div
+  class="docs-column-flex docs-column-flex--inline"
+>
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-top-bottom--tiny"
+    >
+      container(tiny)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-top-bottom--sm"
+    >
+      container(sm)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-top-bottom--md"
+    >
+      container(md)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-top-bottom--lg"
+    >
+      container(lg)
+    </div>
+    
+        
+  </div>
+  
+    
+</div>
+`;
+
+exports[`Storyshots Layouts/Margins Double-Sided Negative Margin Begin-End 1`] = `
+<div
+  class="docs-column-flex docs-layout-grid-bg--padded"
+>
+  
+        
+  <div
+    class="fd-panel fd-panel--fixed fd-margin-negative-begin-end--tiny"
+  >
+    
+            
+    <div
+      class="fd-panel__header"
+    >
+      
+                
+      <h4
+        class="fd-panel__title"
+      >
+        Panel header
+      </h4>
+      
+            
+    </div>
+    
+        
+  </div>
+  
+
+        
+  <div
+    class="fd-panel fd-panel--fixed fd-margin-negative-begin-end--sm"
+  >
+    
+            
+    <div
+      class="fd-panel__header"
+    >
+      
+                
+      <h4
+        class="fd-panel__title"
+      >
+        Panel header
+      </h4>
+      
+            
+    </div>
+    
+        
+  </div>
+  
+        
+  <div
+    class="fd-panel fd-panel--fixed fd-margin-negative-begin-end--md"
+  >
+    
+            
+    <div
+      class="fd-panel__header"
+    >
+      
+                
+      <h4
+        class="fd-panel__title"
+      >
+        Panel header
+      </h4>
+      
+            
+    </div>
+    
+        
+  </div>
+  
+        
+  <div
+    class="fd-panel fd-panel--fixed fd-margin-negative-begin-end--lg"
+  >
+    
+            
+    <div
+      class="fd-panel__header"
+    >
+      
+                
+      <h4
+        class="fd-panel__title"
+      >
+        Panel header
+      </h4>
+      
+            
+    </div>
+    
+        
+  </div>
+  
+    
+</div>
+`;
+
+exports[`Storyshots Layouts/Margins No Margin 1`] = `
+<div
+  class="docs-column-flex docs-column-flex--inline"
+>
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 docs-layout-grid-bg--margin fd-margin--none"
+    >
+      container
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 docs-layout-grid-bg--margin fd-margin-top--none"
+    >
+      container
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 docs-layout-grid-bg--margin fd-margin-end--none"
+    >
+      container
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 docs-layout-grid-bg--margin fd-margin-bottom--none"
+    >
+      container
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 docs-layout-grid-bg--margin fd-margin-begin--none"
+    >
+      container
+    </div>
+    
+        
+  </div>
+  
+    
+</div>
+`;
+
+exports[`Storyshots Layouts/Margins Responsive Margin 1`] = `
+<div
+  class="docs-column-flex docs-column-flex--inline"
+>
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-responsive--sm"
+    >
+      container(sm)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-responsive--md"
+    >
+      container(md)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-responsive--lg"
+    >
+      container(lg)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-responsive--xl"
+    >
+      container(xl)
+    </div>
+    
+        
+  </div>
+  
+    
+</div>
+`;
+
+exports[`Storyshots Layouts/Margins Single-Sided Margin Begin 1`] = `
+<div
+  class="docs-column-flex docs-column-flex--inline"
+>
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-begin--tiny"
+    >
+      container(tiny)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-begin--sm"
+    >
+      container(sm)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-begin--md"
+    >
+      container(md)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-begin--lg"
+    >
+      container(lg)
+    </div>
+    
+        
+  </div>
+  
+    
+</div>
+`;
+
+exports[`Storyshots Layouts/Margins Single-Sided Margin Bottom 1`] = `
+<div
+  class="docs-column-flex docs-column-flex--inline"
+>
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-bottom--tiny"
+    >
+      container(tiny)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-bottom--sm"
+    >
+      container(sm)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-bottom--md"
+    >
+      container(md)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-bottom--lg"
+    >
+      container(lg)
+    </div>
+    
+        
+  </div>
+  
+    
+</div>
+`;
+
+exports[`Storyshots Layouts/Margins Single-Sided Margin End 1`] = `
+<div
+  class="docs-column-flex docs-column-flex--inline"
+>
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-end--tiny"
+    >
+      container(tiny)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-end--sm"
+    >
+      container(sm)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-end--md"
+    >
+      container(md)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-end--lg"
+    >
+      container(lg)
+    </div>
+    
+        
+  </div>
+  
+    
+</div>
+`;
+
+exports[`Storyshots Layouts/Margins Single-Sided Margin Top 1`] = `
+<div
+  class="docs-column-flex docs-column-flex--inline"
+>
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-top--tiny"
+    >
+      container(tiny)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-top--sm"
+    >
+      container(sm)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-top--md"
+    >
+      container(md)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-top--lg"
+    >
+      container(lg)
+    </div>
+    
+        
+  </div>
+  
+    
+</div>
+`;

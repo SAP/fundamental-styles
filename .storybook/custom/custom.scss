@@ -379,6 +379,14 @@ code.docs-code-grey {
     height: 100%;
   }
 
+  &--padded {
+    padding: 1.5rem;
+  }
+
+  &--margin {
+    margin: 1.5rem;
+  }
+
   &--color-1 {
     background-color: #30c5d2;
     color: white;
@@ -608,5 +616,14 @@ body.sb-show-main {
   .card-six-dimensions {
     width: 20rem;
     height: 20rem;
+  }
+}
+
+.docs-column-flex {
+  display: flex;
+  flex-direction: column;
+
+  &--inline {
+    display: inline-flex;
   }
 }

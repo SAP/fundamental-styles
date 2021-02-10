@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Layouts/Paddings All-Round Padding 1`] = `
+<div
+  class="docs-column-flex docs-column-flex--inline"
+>
+  
+        
+  <div
+    class="docs-layout-grid-bg docs-layout-grid-bg--color-1 fd-padding"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7"
+    >
+      container
+    </div>
+    
+        
+  </div>
+  
+    
+</div>
+`;
+
+exports[`Storyshots Layouts/Paddings Double-Sided Padding 1`] = `
+<div
+  class="docs-column-flex docs-column-flex--inline"
+>
+  
+        
+  <div
+    class="docs-layout-grid-bg docs-layout-grid-bg--color-1 fd-padding-begin-end--tiny"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7"
+    >
+      container(tiny)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg docs-layout-grid-bg--color-1 fd-padding-begin-end--sm"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7"
+    >
+      container(sm)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg docs-layout-grid-bg--color-1 fd-padding-begin-end--md"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7"
+    >
+      container(md)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg docs-layout-grid-bg--color-1 fd-padding-begin-end--lg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7"
+    >
+      container(lg)
+    </div>
+    
+        
+  </div>
+  
+    
+</div>
+`;
+
+exports[`Storyshots Layouts/Paddings No Padding 1`] = `
+<div
+  class="docs-column-flex docs-column-flex--inline"
+>
+  
+        
+  <div
+    class="docs-layout-grid-bg docs-layout-grid-bg--color-1 docs-layout-grid-bg--padded fd-padding--none"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7"
+    >
+      container
+    </div>
+    
+        
+  </div>
+  
+    
+</div>
+`;
+
+exports[`Storyshots Layouts/Paddings Responsive Padding 1`] = `
+<div
+  class="docs-column-flex docs-column-flex--inline"
+>
+  
+        
+  <div
+    class="docs-layout-grid-bg docs-layout-grid-bg--color-1 fd-padding-responsive--sm"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7"
+    >
+      container(sm)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg docs-layout-grid-bg--color-1 fd-padding-responsive--md"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7"
+    >
+      container(md)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg docs-layout-grid-bg--color-1 fd-padding-responsive--lg"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7"
+    >
+      container(lg)
+    </div>
+    
+        
+  </div>
+  
+        
+  <br />
+  
+        
+  <div
+    class="docs-layout-grid-bg docs-layout-grid-bg--color-1 fd-padding-responsive--xl"
+  >
+    
+            
+    <div
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7"
+    >
+      container(xl)
+    </div>
+    
+        
+  </div>
+  
+    
+</div>
+`;

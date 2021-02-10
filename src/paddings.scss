@@ -1,0 +1,57 @@
+@import './new-settings';
+@import './mixins';
+
+$block: #{$fd-namespace}-padding;
+
+.#{$block} {
+  $fd-padding-tiny: 0.5rem;
+  $fd-padding-small: 1rem;
+  $fd-padding-medium: 2rem;
+  $fd-padding-large: 3rem;
+  $fd-padding-responsive-horizontal: 1rem;
+  $fd-padding-responsive-medium-large: 2rem;
+  $fd-padding-responsive-extra-large: 3rem;
+
+  padding: 1rem !important;
+
+  &-begin-end {
+    &--tiny {
+      padding-left: $fd-padding-tiny !important;
+      padding-right: $fd-padding-tiny !important;
+    }
+
+    &--sm {
+      padding-left: $fd-padding-small !important;
+      padding-right: $fd-padding-small !important;
+    }
+
+    &--md {
+      padding-left: $fd-padding-medium !important;
+      padding-right: $fd-padding-medium !important;
+    }
+
+    &--lg {
+      padding-left: $fd-padding-large !important;
+      padding-right: $fd-padding-large !important;
+    }
+  }
+
+  &--none {
+    padding: 0 !important;
+  }
+
+  &-responsive {
+    &--sm {
+      padding: 0 $fd-padding-responsive-horizontal !important;
+    }
+
+    &--md,
+    &--lg {
+      padding: 0 $fd-padding-responsive-medium-large !important;
+    }
+
+    &--xl {
+      padding: 0 $fd-padding-responsive-extra-large !important;
+    }
+  }
+}
