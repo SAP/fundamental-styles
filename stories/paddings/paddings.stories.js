@@ -9,8 +9,7 @@ export default {
     }
 };
 
-export const AllRoundPadding = () =>
-    `<div class="docs-column-flex docs-column-flex--inline">
+export const AllRoundPadding = () => `<div class="docs-column-flex docs-column-flex--inline">
         <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1 fd-padding">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7">container</div>
         </div>
@@ -24,8 +23,7 @@ AllRoundPadding.parameters = {
     }
 };
 
-export const DoubleSidedPadding = () =>
-    `<div class="docs-column-flex docs-column-flex--inline">
+export const DoubleSidedPadding = () => `<div class="docs-column-flex docs-column-flex--inline">
         <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1 fd-padding-begin-end--tiny">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7">container(tiny)</div>
         </div>
@@ -60,8 +58,7 @@ DoubleSidedPadding.parameters = {
 };
 
 
-export const NoPadding = () =>
-    `<div class="docs-column-flex docs-column-flex--inline">
+export const NoPadding = () => `<div class="docs-column-flex docs-column-flex--inline">
         <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1 docs-layout-grid-bg--padded fd-padding--none">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7">container</div>
         </div>
@@ -74,8 +71,7 @@ NoPadding.parameters = {
     }
 };
 
-export const ResponsivePadding = () =>
-    `<div class="docs-column-flex docs-column-flex--inline">
+export const ResponsivePadding = () => `<div class="docs-column-flex docs-column-flex--inline">
         <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1 fd-padding-responsive--sm">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7">container(sm)</div>
         </div>

@@ -250,11 +250,12 @@ exports[`Storyshots Layouts/Margins Double-Sided Negative Margin Begin-End 1`] =
     >
       
                 
-      <h4
+      <h1
         class="fd-panel__title"
+        title="Panel header"
       >
         Panel header
-      </h4>
+      </h1>
       
             
     </div>
@@ -274,11 +275,12 @@ exports[`Storyshots Layouts/Margins Double-Sided Negative Margin Begin-End 1`] =
     >
       
                 
-      <h4
+      <h1
         class="fd-panel__title"
+        title="Panel header"
       >
         Panel header
-      </h4>
+      </h1>
       
             
     </div>
@@ -297,11 +299,12 @@ exports[`Storyshots Layouts/Margins Double-Sided Negative Margin Begin-End 1`] =
     >
       
                 
-      <h4
+      <h1
         class="fd-panel__title"
+        title="Panel header"
       >
         Panel header
-      </h4>
+      </h1>
       
             
     </div>
@@ -320,11 +323,12 @@ exports[`Storyshots Layouts/Margins Double-Sided Negative Margin Begin-End 1`] =
     >
       
                 
-      <h4
+      <h1
         class="fd-panel__title"
+        title="Panel header"
       >
         Panel header
-      </h4>
+      </h1>
       
             
     </div>

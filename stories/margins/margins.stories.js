@@ -9,8 +9,7 @@ export default {
     }
 };
 
-export const AllRoundMargin = () =>
-    `<div class="docs-column-flex docs-column-flex--inline">
+export const AllRoundMargin = () => `<div class="docs-column-flex docs-column-flex--inline">
         <div class="docs-layout-grid-bg">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin--tiny">container(tiny)</div>
         </div>
@@ -44,8 +43,7 @@ AllRoundMargin.parameters = {
     }
 };
 
-export const SingleSidedMarginTop = () =>
-    `<div class="docs-column-flex docs-column-flex--inline">
+export const SingleSidedMarginTop = () => `<div class="docs-column-flex docs-column-flex--inline">
         <div class="docs-layout-grid-bg">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-top--tiny">container(tiny)</div>
         </div>
@@ -79,8 +77,7 @@ class with any of the size modifiers as mentioned above.
     }
 };
 
-export const SingleSidedMarginEnd = () =>
-    `<div class="docs-column-flex docs-column-flex--inline">
+export const SingleSidedMarginEnd = () => `<div class="docs-column-flex docs-column-flex--inline">
         <div class="docs-layout-grid-bg">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-end--tiny">container(tiny)</div>
         </div>
@@ -100,8 +97,7 @@ export const SingleSidedMarginEnd = () =>
 `;
 SingleSidedMarginEnd.storyName = 'Single-Sided Margin End';
 
-export const SingleSidedMarginBottom = () =>
-    `<div class="docs-column-flex docs-column-flex--inline">
+export const SingleSidedMarginBottom = () => `<div class="docs-column-flex docs-column-flex--inline">
         <div class="docs-layout-grid-bg">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-bottom--tiny">container(tiny)</div>
         </div>
@@ -121,8 +117,7 @@ export const SingleSidedMarginBottom = () =>
 `;
 SingleSidedMarginBottom.storyName = 'Single-Sided Margin Bottom';
 
-export const SingleSidedMarginBegin = () =>
-    `<div class="docs-column-flex docs-column-flex--inline">
+export const SingleSidedMarginBegin = () => `<div class="docs-column-flex docs-column-flex--inline">
         <div class="docs-layout-grid-bg">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-begin--tiny">container(tiny)</div>
         </div>
@@ -142,8 +137,7 @@ export const SingleSidedMarginBegin = () =>
 `;
 SingleSidedMarginBegin.storyName = 'Single-Sided Margin Begin';
 
-export const DoubleSidedMarginTopBottom = () =>
-    `<div class="docs-column-flex docs-column-flex--inline">
+export const DoubleSidedMarginTopBottom = () => `<div class="docs-column-flex docs-column-flex--inline">
         <div class="docs-layout-grid-bg">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-top-bottom--tiny">container(tiny)</div>
         </div>
@@ -173,8 +167,7 @@ Use <code>fd-margin-top-bottom</code> or <code>fd-margin-begin-end</code> class 
     }
 };
 
-export const DoubleSidedMarginBeginEnd = () =>
-    `<div class="docs-column-flex docs-column-flex--inline">
+export const DoubleSidedMarginBeginEnd = () => `<div class="docs-column-flex docs-column-flex--inline">
         <div class="docs-layout-grid-bg">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-begin-end--tiny">container(tiny)</div>
         </div>
@@ -194,8 +187,7 @@ export const DoubleSidedMarginBeginEnd = () =>
 `;
 DoubleSidedMarginBeginEnd.storyName = 'Double-Sided Margin Begin-End';
 
-export const NoMargin = () =>
-    `<div class="docs-column-flex docs-column-flex--inline">
+export const NoMargin = () => `<div class="docs-column-flex docs-column-flex--inline">
         <div class="docs-layout-grid-bg">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7 docs-layout-grid-bg--margin fd-margin--none">container</div>
         </div>
@@ -225,8 +217,7 @@ NoMargin.parameters = {
     }
 };
 
-export const ResponsiveMargin = () =>
-    `<div class="docs-column-flex docs-column-flex--inline">
+export const ResponsiveMargin = () => `<div class="docs-column-flex docs-column-flex--inline">
         <div class="docs-layout-grid-bg">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-responsive--sm">container(sm)</div>
         </div>
@@ -259,27 +250,26 @@ ResponsiveMargin.parameters = {
     }
 };
 
-export const DoubleSidedNegativeMarginBeginEnd = () =>
-    `<div class="docs-column-flex docs-layout-grid-bg--padded">
+export const DoubleSidedNegativeMarginBeginEnd = () => `<div class="docs-column-flex docs-layout-grid-bg--padded">
         <div class="fd-panel fd-panel--fixed fd-margin-negative-begin-end--tiny">
             <div class="fd-panel__header">
-                <h4 class="fd-panel__title">Panel header</h4>
+                <h1 class="fd-panel__title" title="Panel header">Panel header</h1>
             </div>
         </div>
 
         <div class="fd-panel fd-panel--fixed fd-margin-negative-begin-end--sm">
             <div class="fd-panel__header">
-                <h4 class="fd-panel__title">Panel header</h4>
+                <h1 class="fd-panel__title" title="Panel header">Panel header</h1>
             </div>
         </div>
         <div class="fd-panel fd-panel--fixed fd-margin-negative-begin-end--md">
             <div class="fd-panel__header">
-                <h4 class="fd-panel__title">Panel header</h4>
+                <h1 class="fd-panel__title" title="Panel header">Panel header</h1>
             </div>
         </div>
         <div class="fd-panel fd-panel--fixed fd-margin-negative-begin-end--lg">
             <div class="fd-panel__header">
-                <h4 class="fd-panel__title">Panel header</h4>
+                <h1 class="fd-panel__title" title="Panel header">Panel header</h1>
             </div>
         </div>
     </div>
