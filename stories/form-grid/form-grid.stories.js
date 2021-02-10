@@ -24,7 +24,7 @@ When working with form groups, it's always best to use the recommended number of
 <br>
 `,
         tags: ['f3', 'a11y'],
-        components: ['form-label', 'form-layout-grid', 'layout-grid', 'input', 'popover', 'select']
+        components: ['form-label', 'form-layout-grid', 'layout-grid', 'input', 'popover', 'select', 'icon', 'button']
     }
 };
 
