@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.16.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.16.0-rc.8...v0.16.0-rc.9) (2021-02-10)
+
+
+### Bug Fixes
+
+* add fix for hover state in selected mode ([#2124](https://github.com/SAP/fundamental-styles/issues/2124)) ([af4b161](https://github.com/SAP/fundamental-styles/commit/af4b161b6da76919818defbbb8241b5dcda07d56))
+
 ## [0.16.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.16.0-rc.7...v0.16.0-rc.8) (2021-02-10)
 
 
