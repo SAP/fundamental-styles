@@ -234,7 +234,7 @@ exports[`Storyshots Layouts/Resizable Card Layout Card resize in horizontal dire
       
                 
       <div
-        aria-label="List Card Example 4"
+        aria-label="List Card Example 5"
         class="fd-card"
         role="region"
       >
@@ -434,7 +434,7 @@ exports[`Storyshots Layouts/Resizable Card Layout Card resize in vertical direct
       
                 
       <div
-        aria-label="List Card Example 4"
+        aria-label="List Card Example 6"
         class="fd-card"
         role="region"
       >
@@ -646,7 +646,7 @@ exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
       
                 
       <div
-        aria-label="List Card Example 4"
+        aria-label="List Card Example 1"
         class="fd-card"
         role="region"
       >
@@ -969,7 +969,7 @@ exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
       
                 
       <div
-        aria-label="List Card Example 4"
+        aria-label="List Card Example 2"
         class="fd-card"
         role="region"
       >
@@ -1603,7 +1603,7 @@ exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
       
                 
       <div
-        aria-label="List Card Example 4"
+        aria-label="List Card Example 3"
         class="fd-card"
         role="region"
       >
