@@ -1,13 +1,13 @@
 (function() {
     document.addEventListener('DOMContentLoaded', function () {
         //set the indeterminate state of checkbox
-        var triStateCheckboxes = ['Ai4ez613', 'Ai4ez613i1', 'Ai4ez613i2', 'Ai4ez613i3', 'Ai4ez613i4', 'Ai4ez613i5', 'Ai4ez613i6', 'Ai4ez613i7', 'Ai4ez643', 'Ai4ez613c', 'Ai4ez643c'];
-        for (var i = 0; i < triStateCheckboxes.length; i++) {
-            const triStateCheckbox = document.getElementById(triStateCheckboxes[i]);
+        const triStateCheckboxes = ['Ai4ez613', 'Ai4ez613i1', 'Ai4ez613i2', 'Ai4ez613i3', 'Ai4ez613i4', 'Ai4ez613i5', 'Ai4ez613i6', 'Ai4ez613i7', 'Ai4ez643', 'Ai4ez613c', 'Ai4ez643c'];
+        triStateCheckboxes.forEach((_id) => {
+            const triStateCheckbox = document.getElementById(_id);
             if (triStateCheckbox) {
                 triStateCheckbox.indeterminate = true;
             }
-        };
+        });
 
         //climb up DOM to get block element
         function getBlock(control) {
