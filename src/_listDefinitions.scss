@@ -104,8 +104,8 @@ $semantic-color: (
   background: var(--sapList_SelectionBackgroundColor);
   border-bottom: $fd-list-selected-state-border-bottom;
 
-  @include fd-hover() {
-    background: var(--sapList_Hover_SelectionBackground);
+  .#{$block}__link {
+    background: inherit;
   }
 }
 
