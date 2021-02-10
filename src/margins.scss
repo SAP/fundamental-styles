@@ -65,22 +65,46 @@ $block: #{$fd-namespace}-margin;
   &-end {
     &--tiny {
       margin-right: $fd-margin-tiny !important;
+
+      @include fd-rtl() {
+        margin-left: $fd-margin-tiny !important;
+        margin-right: 0 !important;
+      }
     }
 
     &--sm {
       margin-right: $fd-margin-small !important;
+
+      @include fd-rtl() {
+        margin-left: $fd-margin-small !important;
+        margin-right: 0 !important;
+      }
     }
 
     &--md {
       margin-right: $fd-margin-medium !important;
+
+      @include fd-rtl() {
+        margin-left: $fd-margin-medium !important;
+        margin-right: 0 !important;
+      }
     }
 
     &--lg {
       margin-right: $fd-margin-large !important;
+
+      @include fd-rtl() {
+        margin-left: $fd-margin-large !important;
+        margin-right: 0 !important;
+      }
     }
 
     &--none {
       margin-right: 0 !important;
+
+      @include fd-rtl() {
+        margin-left: 0 !important;
+      }
     }
   }
 
@@ -111,22 +135,46 @@ $block: #{$fd-namespace}-margin;
   &-begin {
     &--tiny {
       margin-left: $fd-margin-tiny !important;
+
+      @include fd-rtl() {
+        margin-right: $fd-margin-tiny !important;
+        margin-left: 0 !important;
+      }
     }
 
     &--sm {
       margin-left: $fd-margin-small !important;
+
+      @include fd-rtl() {
+        margin-right: $fd-margin-small !important;
+        margin-left: 0 !important;
+      }
     }
 
     &--md {
       margin-left: $fd-margin-medium !important;
+
+      @include fd-rtl() {
+        margin-right: $fd-margin-medium !important;
+        margin-left: 0 !important;
+      }
     }
 
     &--lg {
       margin-left: $fd-margin-large !important;
+
+      @include fd-rtl() {
+        margin-right: $fd-margin-large !important;
+        margin-left: 0 !important;
+      }
     }
 
     &--none {
       margin-left: 0 !important;
+
+      @include fd-rtl() {
+        margin-right: 0 !important;
+      }
     }
   }
 
