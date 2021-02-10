@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.16.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.16.0-rc.7...v0.16.0-rc.8) (2021-02-10)
+
+
+### Bug Fixes
+
+* add fix for IE related issues in Tiles ([#2129](https://github.com/SAP/fundamental-styles/issues/2129)) ([a7c67f1](https://github.com/SAP/fundamental-styles/commit/a7c67f1ce5c3f8bb5c87f1be513b8d867e853b9d))
+
 ## [0.16.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.16.0-rc.6...v0.16.0-rc.7) (2021-02-10)
 
 ## [0.16.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.16.0-rc.5...v0.16.0-rc.6) (2021-02-10)
