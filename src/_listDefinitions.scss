@@ -141,8 +141,8 @@ $semantic-color: (
 }
 
 @mixin ie11-active-state-fix() {
-  // :active selector has issues in IE11 when there are nested elements.
-  // The solution is to remove the pointer events from the nested elements.
+  // :active selector has issues in IE11 when there are nested elements
+  // The solution is to remove the pointer events from the nested elements
 
   pointer-events: none;
 }
