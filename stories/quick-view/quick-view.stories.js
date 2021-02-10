@@ -13,7 +13,7 @@ export const Popover = () => `<div class="fd-popover">
     <div class="fd-popover__body" aria-hidden="false" id="popoverA1">
         <div class="fd-quick-view">
             <div class="fd-bar fd-bar--header">
-                <div class="fd-bar__left">
+                <div class="fd-bar__middle">
                     <div class="fd-bar__element">Company</div>
                 </div>
             </div>
