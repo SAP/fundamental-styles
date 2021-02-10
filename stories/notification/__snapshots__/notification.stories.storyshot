@@ -619,7 +619,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
         
             
         <div
-          class="fd-notification__group-header"
+          class="fd-notification--group-header"
         >
           
                 
@@ -1095,7 +1095,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
         
             
         <div
-          class="fd-notification__group-header"
+          class="fd-notification--group-header"
         >
           
                 
@@ -1571,7 +1571,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
         
             
         <div
-          class="fd-notification__group-header"
+          class="fd-notification--group-header"
         >
           
                 
@@ -2264,7 +2264,7 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
     
         
     <div
-      class="fd-notification__group-header"
+      class="fd-notification--group-header"
     >
       
             
@@ -2427,7 +2427,7 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
               aria-expanded="false"
               aria-haspopup="true"
               aria-label="Image label"
-              class="fd-button fd-button--transparent"
+              class="fd-button fd-button--transparent fd-button--compact"
               onclick="onPopoverClick('popoverA5');"
             >
               
@@ -2812,7 +2812,7 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
     
         
     <div
-      class="fd-notification__group-header"
+      class="fd-notification--group-header"
     >
       
             
@@ -3011,7 +3011,7 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
     
         
     <div
-      class="fd-notification__group-header"
+      class="fd-notification--group-header"
     >
       
             
