@@ -459,10 +459,10 @@ export const Footer = () => `
 <div class="fd-bar fd-bar--footer fd-bar--cozy">
     <div class="fd-bar__right">
         <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
+            <button aria-label="button" class="fd-button fd-button--emphasized">Save</button>
         </div>
         <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
+            <button aria-label="button" class="fd-button fd-button--transparent">Cancel</button>
         </div>
     </div>
 </div>

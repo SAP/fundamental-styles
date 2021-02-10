@@ -795,7 +795,7 @@ exports[`Storyshots Components/Bar Footer 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--emphasized fd-button--compact"
+          class="fd-button fd-button--emphasized"
         >
           Save
         </button>
@@ -811,7 +811,7 @@ exports[`Storyshots Components/Bar Footer 1`] = `
             
         <button
           aria-label="button"
-          class="fd-button fd-button--transparent fd-button--compact"
+          class="fd-button fd-button--transparent"
         >
           Cancel
         </button>
