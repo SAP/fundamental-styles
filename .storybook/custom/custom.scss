@@ -575,3 +575,38 @@ body.sb-show-main {
 .fd-status-indicator.coreographed {
   display: inline;
 }
+
+.fd-custom-resizable-card-layout-flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  .card-one-dimensions {
+    width: 40rem;
+    height: 16rem;
+  }
+
+  .card-two-dimensions {
+    width: 20rem;
+    height: fit-content;
+  }
+
+  .card-three-dimensions {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .card-four-dimensions {
+    width: 20rem;
+    height: 35rem;
+  }
+
+  .card-five-dimensions {
+    width: 40rem;
+    height: 25rem;
+  }
+
+  .card-six-dimensions {
+    width: 20rem;
+    height: 20rem;
+  }
+}

@@ -622,16 +622,14 @@ exports[`Storyshots Layouts/Resizable Card Layout Card resize in vertical direct
 
 exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
 <div
-  class="fd-resizable-card-layout fd-resizable-card-layout--m"
+  class="fd-resizable-card-layout fd-resizable-card-layout--md fd-custom-resizable-card-layout-flex"
   id="grid1"
-  style="display:flex; flex-wrap:wrap;"
 >
   
         
   <div
-    class="fd-resizable-card-layout__wrapper"
+    class="fd-resizable-card-layout__wrapper card-one-dimensions"
     id="one"
-    style="width: 40rem; height:16rem;"
   >
     
             
@@ -831,9 +829,8 @@ exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
 
         
   <div
-    class="fd-resizable-card-layout__wrapper"
+    class="fd-resizable-card-layout__wrapper card-two-dimensions"
     id="two"
-    style="width:20rem; height: fit-content"
   >
     
             
@@ -863,7 +860,6 @@ exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
           <span
             aria-label="John Doe"
             class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
-            role="presentation"
             style="background-image: url('/assets/images/backgrounds/city.jpg')"
           />
           
@@ -952,9 +948,8 @@ exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
 
         
   <div
-    class="fd-resizable-card-layout__wrapper"
+    class="fd-resizable-card-layout__wrapper card-three-dimensions"
     id="three"
-    style="width:20rem; height:20rem;"
   >
     
             
@@ -1177,9 +1172,513 @@ exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
 
         
   <div
-    class="fd-resizable-card-layout__wrapper"
+    class="fd-resizable-card-layout__wrapper card-six-dimensions"
+    id="six"
+  >
+    
+            
+    <div
+      class="fd-resizable-card-layout__wrapper__resize__handle--vertical"
+    />
+    
+            
+    <div
+      class="fd-resizable-card-layout__wrapper__card"
+    >
+      
+                
+      <div
+        aria-label="List Card Example 3"
+        class="fd-card"
+        role="region"
+      >
+        
+                    
+        <a
+          class="fd-card__header"
+          tabindex="0"
+        >
+          
+                        
+          <div
+            class="fd-card__header-text"
+          >
+            
+                            
+            <div
+              class="fd-card__title-area"
+            >
+              
+                                
+              <div
+                class="fd-card__title"
+              >
+                Quick Links
+              </div>
+              
+                                
+              <span
+                class="fd-object-status fd-card__counter"
+              >
+                4 of 20
+              </span>
+              
+                            
+            </div>
+            
+                        
+          </div>
+          
+                    
+        </a>
+        
+                    
+        <div
+          aria-label="Card Content"
+          class="fd-card__content"
+          role="group"
+        >
+          
+                        
+          <ul
+            class="fd-list fd-list--no-border"
+            role="list"
+          >
+            
+                            
+            <li
+              class="fd-list__item"
+              role="listitem"
+              tabindex="0"
+            >
+              
+                                
+              <i
+                class="fd-list__icon sap-icon--cart"
+                role="presentation"
+              />
+              
+                                
+              <span
+                class="fd-list__title"
+              >
+                List item 1
+              </span>
+              
+                            
+            </li>
+            
+                            
+            <li
+              class="fd-list__item"
+              role="listitem"
+              tabindex="0"
+            >
+              
+                                
+              <i
+                class="fd-list__icon sap-icon--wrench"
+                role="presentation"
+              />
+              
+                                
+              <span
+                class="fd-list__title"
+              >
+                List item 2
+              </span>
+              
+                            
+            </li>
+            
+                            
+            <li
+              class="fd-list__item"
+              role="listitem"
+              tabindex="0"
+            >
+              
+                                
+              <i
+                class="fd-list__icon sap-icon--leads"
+                role="presentation"
+              />
+              
+                                
+              <span
+                class="fd-list__title"
+              >
+                List item 3
+              </span>
+              
+                            
+            </li>
+            
+                            
+            <li
+              class="fd-list__item"
+              role="listitem"
+              tabindex="0"
+            >
+              
+                                
+              <i
+                class="fd-list__icon sap-icon--batch-payments"
+                role="presentation"
+              />
+              
+                                
+              <span
+                class="fd-list__title"
+              >
+                List item 4
+              </span>
+              
+                            
+            </li>
+            
+                        
+          </ul>
+          
+                    
+        </div>
+        
+                
+      </div>
+      
+                
+      <div
+        class="fd-resizable-card-layout__wrapper__card__icon-wrapper"
+      >
+        
+                    
+        <div
+          class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"
+        />
+        
+                
+      </div>
+      
+            
+    </div>
+    
+            
+    <div
+      class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"
+    />
+    
+        
+  </div>
+  
+
+        
+  <div
+    class="fd-resizable-card-layout__wrapper card-four-dimensions"
+    id="four"
+  >
+    
+            
+    <div
+      class="fd-resizable-card-layout__wrapper__resize__handle--vertical"
+    />
+    
+            
+    <div
+      class="fd-resizable-card-layout__wrapper__card"
+    >
+      
+                
+      <div
+        aria-label="Object Card Example 1"
+        class="fd-card fd-card--object"
+        role="region"
+      >
+        
+                    
+        <a
+          class="fd-card__header"
+          tabindex="0"
+        >
+          
+                        
+          <span
+            aria-label="John Doe"
+            class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
+            style="background-image: url('/assets/images/avatars/1.svg')"
+          />
+          
+                        
+          <div
+            class="fd-card__header-text"
+          >
+            
+                        
+            <div
+              class="fd-card__title-area"
+            >
+              
+                            
+              <div
+                class="fd-card__title"
+              >
+                Card Title
+              </div>
+              
+                        
+            </div>
+            
+                        
+            <div
+              class="fd-card__subtitle-area"
+            >
+              
+                            
+              <div
+                class="fd-card__subtitle"
+              >
+                Card Subtitle
+              </div>
+              
+                        
+            </div>
+            
+                        
+          </div>
+          
+                    
+        </a>
+        
+                    
+        <div
+          aria-label="Card Content"
+          class="fd-card__content"
+          role="group"
+        >
+          
+                        
+          <div
+            class="fd-card__content-container"
+          >
+            
+                        
+            <div
+              class="fd-card__content-section"
+            >
+              
+                            
+              <div
+                class="fd-card__content-title-container"
+              >
+                Group Title 1
+              </div>
+              
+                            
+              <div
+                class="fd-card__content-group"
+              >
+                
+                            
+                <div
+                  class="fd-card__content-group-text"
+                >
+                  
+                                
+                  <span>
+                    Label
+                  </span>
+                  
+                                
+                  <span>
+                    Text
+                  </span>
+                  
+                            
+                </div>
+                
+                            
+              </div>
+              
+                            
+              <div
+                class="fd-card__content-group"
+              >
+                
+                            
+                <div
+                  class="fd-card__content-group-text"
+                >
+                  
+                                
+                  <span>
+                    Label
+                  </span>
+                  
+                                
+                  <span>
+                    Text
+                  </span>
+                  
+                            
+                </div>
+                
+                            
+              </div>
+              
+                            
+              <div
+                class="fd-card__content-group"
+              >
+                
+                            
+                <div
+                  class="fd-card__content-group-text"
+                >
+                  
+                                
+                  <span>
+                    Label
+                  </span>
+                  
+                                
+                  <span>
+                    Text
+                  </span>
+                  
+                            
+                </div>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                        
+            <div
+              class="fd-card__content-section"
+            >
+              
+                            
+              <div
+                class="fd-card__content-title-container"
+              >
+                Group Title 2
+              </div>
+              
+                            
+              <div
+                class="fd-card__content-group"
+              >
+                
+                            
+                <div
+                  class="fd-card__content-group-text"
+                >
+                  
+                                
+                  <span>
+                    Label
+                  </span>
+                  
+                                
+                  <span>
+                    Text
+                  </span>
+                  
+                            
+                </div>
+                
+                            
+              </div>
+              
+                            
+              <div
+                class="fd-card__content-group"
+              >
+                
+                            
+                <div
+                  class="fd-card__content-group-text"
+                >
+                  
+                                
+                  <span>
+                    Label
+                  </span>
+                  
+                                
+                  <span>
+                    Text
+                  </span>
+                  
+                            
+                </div>
+                
+                            
+              </div>
+              
+                            
+              <div
+                class="fd-card__content-group"
+              >
+                
+                            
+                <div
+                  class="fd-card__content-group-text"
+                >
+                  
+                                
+                  <span>
+                    Label Only
+                  </span>
+                  
+                            
+                </div>
+                
+                            
+              </div>
+              
+                        
+            </div>
+            
+                        
+          </div>
+          
+                    
+        </div>
+        
+                
+      </div>
+      
+                
+      <div
+        class="fd-resizable-card-layout__wrapper__card__icon-wrapper"
+      >
+        
+                    
+        <div
+          class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"
+        />
+        
+                
+      </div>
+      
+            
+    </div>
+    
+            
+    <div
+      class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"
+    />
+    
+        
+  </div>
+  
+
+        
+  <div
+    class="fd-resizable-card-layout__wrapper card-five-dimensions"
     id="five"
-    style="width:20rem; height:25rem;"
   >
     
             
@@ -1552,514 +2051,6 @@ exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
             
                         
           </table>
-          
-                    
-        </div>
-        
-                
-      </div>
-      
-                
-      <div
-        class="fd-resizable-card-layout__wrapper__card__icon-wrapper"
-      >
-        
-                    
-        <div
-          class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"
-        />
-        
-                
-      </div>
-      
-            
-    </div>
-    
-            
-    <div
-      class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"
-    />
-    
-        
-  </div>
-  
-
-        
-  <div
-    class="fd-resizable-card-layout__wrapper"
-    id="six"
-    style="width:20rem; height:20rem;"
-  >
-    
-            
-    <div
-      class="fd-resizable-card-layout__wrapper__resize__handle--vertical"
-    />
-    
-            
-    <div
-      class="fd-resizable-card-layout__wrapper__card"
-    >
-      
-                
-      <div
-        aria-label="List Card Example 3"
-        class="fd-card"
-        role="region"
-      >
-        
-                    
-        <a
-          class="fd-card__header"
-          tabindex="0"
-        >
-          
-                        
-          <div
-            class="fd-card__header-text"
-          >
-            
-                            
-            <div
-              class="fd-card__title-area"
-            >
-              
-                                
-              <div
-                class="fd-card__title"
-              >
-                Quick Links
-              </div>
-              
-                                
-              <span
-                class="fd-object-status fd-card__counter"
-              >
-                4 of 20
-              </span>
-              
-                            
-            </div>
-            
-                        
-          </div>
-          
-                    
-        </a>
-        
-                    
-        <div
-          aria-label="Card Content"
-          class="fd-card__content"
-          role="group"
-        >
-          
-                        
-          <ul
-            class="fd-list fd-list--no-border"
-            role="list"
-          >
-            
-                            
-            <li
-              class="fd-list__item"
-              role="listitem"
-              tabindex="0"
-            >
-              
-                                
-              <i
-                class="fd-list__icon sap-icon--cart"
-                role="presentation"
-              />
-              
-                                
-              <span
-                class="fd-list__title"
-              >
-                List item 1
-              </span>
-              
-                            
-            </li>
-            
-                            
-            <li
-              class="fd-list__item"
-              role="listitem"
-              tabindex="0"
-            >
-              
-                                
-              <i
-                class="fd-list__icon sap-icon--wrench"
-                role="presentation"
-              />
-              
-                                
-              <span
-                class="fd-list__title"
-              >
-                List item 2
-              </span>
-              
-                            
-            </li>
-            
-                            
-            <li
-              class="fd-list__item"
-              role="listitem"
-              tabindex="0"
-            >
-              
-                                
-              <i
-                class="fd-list__icon sap-icon--leads"
-                role="presentation"
-              />
-              
-                                
-              <span
-                class="fd-list__title"
-              >
-                List item 3
-              </span>
-              
-                            
-            </li>
-            
-                            
-            <li
-              class="fd-list__item"
-              role="listitem"
-              tabindex="0"
-            >
-              
-                                
-              <i
-                class="fd-list__icon sap-icon--batch-payments"
-                role="presentation"
-              />
-              
-                                
-              <span
-                class="fd-list__title"
-              >
-                List item 4
-              </span>
-              
-                            
-            </li>
-            
-                        
-          </ul>
-          
-                    
-        </div>
-        
-                
-      </div>
-      
-                
-      <div
-        class="fd-resizable-card-layout__wrapper__card__icon-wrapper"
-      >
-        
-                    
-        <div
-          class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"
-        />
-        
-                
-      </div>
-      
-            
-    </div>
-    
-            
-    <div
-      class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"
-    />
-    
-        
-  </div>
-  
-
-        
-  <div
-    class="fd-resizable-card-layout__wrapper"
-    id="four"
-    style="width:20rem; height:35rem;"
-  >
-    
-            
-    <div
-      class="fd-resizable-card-layout__wrapper__resize__handle--vertical"
-    />
-    
-            
-    <div
-      class="fd-resizable-card-layout__wrapper__card"
-    >
-      
-                
-      <div
-        aria-label="Object Card Example 1"
-        class="fd-card fd-card--object"
-        role="region"
-      >
-        
-                    
-        <a
-          class="fd-card__header"
-          tabindex="0"
-        >
-          
-                        
-          <span
-            aria-label="John Doe"
-            class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
-            role="presentation"
-            style="background-image: url('/assets/images/avatars/1.svg')"
-          />
-          
-                        
-          <div
-            class="fd-card__header-text"
-          >
-            
-                        
-            <div
-              class="fd-card__title-area"
-            >
-              
-                            
-              <div
-                class="fd-card__title"
-              >
-                Card Title
-              </div>
-              
-                        
-            </div>
-            
-                        
-            <div
-              class="fd-card__subtitle-area"
-            >
-              
-                            
-              <div
-                class="fd-card__subtitle"
-              >
-                Card Subtitle
-              </div>
-              
-                        
-            </div>
-            
-                        
-          </div>
-          
-                    
-        </a>
-        
-                    
-        <div
-          aria-label="Card Content"
-          class="fd-card__content"
-          role="group"
-        >
-          
-                        
-          <div
-            class="fd-card__content-container"
-          >
-            
-                        
-            <div
-              class="fd-card__content-section"
-            >
-              
-                            
-              <div
-                class="fd-card__content-title-container"
-              >
-                Group Title 1
-              </div>
-              
-                            
-              <div
-                class="fd-card__content-group"
-              >
-                
-                            
-                <div
-                  class="fd-card__content-group-text"
-                >
-                  
-                                
-                  <span>
-                    Label
-                  </span>
-                  
-                                
-                  <span>
-                    Text
-                  </span>
-                  
-                            
-                </div>
-                
-                            
-              </div>
-              
-                            
-              <div
-                class="fd-card__content-group"
-              >
-                
-                            
-                <div
-                  class="fd-card__content-group-text"
-                >
-                  
-                                
-                  <span>
-                    Label
-                  </span>
-                  
-                                
-                  <span>
-                    Text
-                  </span>
-                  
-                            
-                </div>
-                
-                            
-              </div>
-              
-                            
-              <div
-                class="fd-card__content-group"
-              >
-                
-                            
-                <div
-                  class="fd-card__content-group-text"
-                >
-                  
-                                
-                  <span>
-                    Label
-                  </span>
-                  
-                                
-                  <span>
-                    Text
-                  </span>
-                  
-                            
-                </div>
-                
-                            
-              </div>
-              
-                        
-            </div>
-            
-                        
-            <div
-              class="fd-card__content-section"
-            >
-              
-                            
-              <div
-                class="fd-card__content-title-container"
-              >
-                Group Title 2
-              </div>
-              
-                            
-              <div
-                class="fd-card__content-group"
-              >
-                
-                            
-                <div
-                  class="fd-card__content-group-text"
-                >
-                  
-                                
-                  <span>
-                    Label
-                  </span>
-                  
-                                
-                  <span>
-                    Text
-                  </span>
-                  
-                            
-                </div>
-                
-                            
-              </div>
-              
-                            
-              <div
-                class="fd-card__content-group"
-              >
-                
-                            
-                <div
-                  class="fd-card__content-group-text"
-                >
-                  
-                                
-                  <span>
-                    Label
-                  </span>
-                  
-                                
-                  <span>
-                    Text
-                  </span>
-                  
-                            
-                </div>
-                
-                            
-              </div>
-              
-                            
-              <div
-                class="fd-card__content-group"
-              >
-                
-                            
-                <div
-                  class="fd-card__content-group-text"
-                >
-                  
-                                
-                  <span>
-                    Label Only
-                  </span>
-                  
-                            
-                </div>
-                
-                            
-              </div>
-              
-                        
-            </div>
-            
-                        
-          </div>
           
                     
         </div>
