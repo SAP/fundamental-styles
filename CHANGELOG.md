@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.16.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.16.0-rc.10...v0.16.0-rc.11) (2021-02-10)
+
+
+### Bug Fixes
+
+* change height of title and solve counter issues on byline ([#2132](https://github.com/SAP/fundamental-styles/issues/2132)) ([a703fff](https://github.com/SAP/fundamental-styles/commit/a703fff15b32d62a607a5238112566bdddc69aab))
+
 ## [0.16.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.16.0-rc.9...v0.16.0-rc.10) (2021-02-10)
 
 ## [0.16.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.16.0-rc.8...v0.16.0-rc.9) (2021-02-10)
