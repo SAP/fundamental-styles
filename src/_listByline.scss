@@ -57,12 +57,13 @@
       min-height: $fd-list-byline-thumbnail-dimensions;
       min-width: $fd-list-byline-thumbnail-dimensions;
       height: 100%;
-      width: 100%;
+      flex: 1 1 auto;
       padding: 0.125rem 0;
     }
 
     .#{$block}__title {
       font-size: $fd-list-large-font-size;
+      min-height: $fd-list-byline-text-line-height;
     }
 
     .#{$block}__byline {
