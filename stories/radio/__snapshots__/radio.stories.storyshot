@@ -278,7 +278,7 @@ exports[`Storyshots Components/Forms/Radio Interaction States 1`] = `
           for="iSpDidh7611"
         >
           
-                    Field label(disabled)
+                    Field label (disabled)
                 
         </label>
         
@@ -305,7 +305,7 @@ exports[`Storyshots Components/Forms/Radio Interaction States 1`] = `
           for="iSpDidh76121"
         >
           
-                    Field label(disabled)
+                    Field label (disabled)
                 
         </label>
         
@@ -332,7 +332,7 @@ exports[`Storyshots Components/Forms/Radio Interaction States 1`] = `
           for="iSpDidh76131"
         >
           
-                    Field label(disabled)
+                    Field label (disabled)
                 
         </label>
         
@@ -359,7 +359,7 @@ exports[`Storyshots Components/Forms/Radio Interaction States 1`] = `
           for="iSpDidh76141"
         >
           
-                    Field label(disabled)
+                    Field label (disabled)
                 
         </label>
         
@@ -386,7 +386,7 @@ exports[`Storyshots Components/Forms/Radio Interaction States 1`] = `
           for="iSpDidh76151"
         >
           
-                    Field label(disabled)
+                    Field label (disabled)
                 
         </label>
         
@@ -568,7 +568,7 @@ exports[`Storyshots Components/Forms/Radio Interaction States 1`] = `
           for="iSpDidh76193"
         >
           
-                    Field label(disabled)
+                    Field label (disabled)
                 
         </label>
         
@@ -595,7 +595,7 @@ exports[`Storyshots Components/Forms/Radio Interaction States 1`] = `
           for="iSpDidh761293"
         >
           
-                    Field label(disabled)
+                    Field label (disabled)
                 
         </label>
         
@@ -622,7 +622,7 @@ exports[`Storyshots Components/Forms/Radio Interaction States 1`] = `
           for="iSpDidh761393"
         >
           
-                    Field label(disabled)
+                    Field label (disabled)
                 
         </label>
         
@@ -649,7 +649,7 @@ exports[`Storyshots Components/Forms/Radio Interaction States 1`] = `
           for="iSpDidh761493"
         >
           
-                    Field label(disabled)
+                    Field label (disabled)
                 
         </label>
         
@@ -676,7 +676,7 @@ exports[`Storyshots Components/Forms/Radio Interaction States 1`] = `
           for="iSpDidh761593"
         >
           
-                    Field label(disabled)
+                    Field label (disabled)
                 
         </label>
         
@@ -777,33 +777,6 @@ exports[`Storyshots Components/Forms/Radio Responsiveness 1`] = `
                 
         <input
           class="fd-radio"
-          id="pDidh7613"
-          name="radio1"
-          readonly=""
-          type="radio"
-        />
-        
-                
-        <label
-          class="fd-radio__label"
-          for="pDidh7613"
-        >
-          
-                    Field label(read only)
-                
-        </label>
-        
-            
-      </div>
-      
-            
-      <div
-        class="fd-form-item"
-      >
-        
-                
-        <input
-          class="fd-radio"
           disabled=""
           id="pDidh764"
           name="radio3"
@@ -816,7 +789,7 @@ exports[`Storyshots Components/Forms/Radio Responsiveness 1`] = `
           for="pDidh764"
         >
           
-                    Field label(disabled)
+                    Field label (disabled)
                 
         </label>
         
@@ -908,33 +881,6 @@ exports[`Storyshots Components/Forms/Radio Responsiveness 1`] = `
                 
         <input
           class="fd-radio fd-radio--compact"
-          id="pDidh761311"
-          name="radio2"
-          readonly=""
-          type="radio"
-        />
-        
-                
-        <label
-          class="fd-radio__label"
-          for="pDidh761311"
-        >
-          
-                    Field label(read only)
-                
-        </label>
-        
-            
-      </div>
-      
-            
-      <div
-        class="fd-form-item"
-      >
-        
-                
-        <input
-          class="fd-radio fd-radio--compact"
           disabled=""
           id="pDidh76131133"
           name="radio2"
@@ -947,7 +893,7 @@ exports[`Storyshots Components/Forms/Radio Responsiveness 1`] = `
           for="pDidh76131133"
         >
           
-                    Field label(disabled)
+                    Field label (disabled)
                 
         </label>
         
