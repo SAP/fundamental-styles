@@ -7,7 +7,7 @@ export default {
 - Use tokens only in the **Multi Input** component. 
         `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['token', 'tokenizer']
+        components: ['input', 'token', 'tokenizer']
     }
 };
 
