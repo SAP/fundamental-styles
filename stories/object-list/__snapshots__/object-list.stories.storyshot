@@ -89,7 +89,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
               
           
               <span
-                class="fd-object-number fd-object-number--critical fd-object-list__object-number"
+                class="fd-object-number fd-object-list__object-number"
               >
                 
             
@@ -211,14 +211,14 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
                 
             
                 <span
-                  class="fd-object-status fd-object-status--critical"
+                  class="fd-object-status fd-object-status--positive"
                 >
                   
               
                   <span
                     class="fd-object-status__text"
                   >
-                    Critical very very very long
+                    Positive very very very long
                   </span>
                   
             
@@ -566,7 +566,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
               
           
               <span
-                class="fd-object-number fd-object-number--critical fd-object-list__object-number"
+                class="fd-object-number fd-object-list__object-number"
               >
                 
             
@@ -951,14 +951,14 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
                   
             
                   <span
-                    class="fd-object-status fd-object-status--critical"
+                    class="fd-object-status"
                   >
                     
               
                     <span
                       class="fd-object-status__text"
                     >
-                      Critical very very very long
+                      Default
                     </span>
                     
             
@@ -1081,7 +1081,7 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
                 
           
                 <span
-                  class="fd-object-number fd-object-number--critical fd-object-list__object-number"
+                  class="fd-object-number fd-object-list__object-number"
                 >
                   
             
@@ -1196,14 +1196,14 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
                   
             
                   <span
-                    class="fd-object-status fd-object-status--critical"
+                    class="fd-object-status fd-object-status--positive"
                   >
                     
               
                     <span
                       class="fd-object-status__text"
                     >
-                      Critical
+                      Positive
                     </span>
                     
             
@@ -1343,7 +1343,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
               
           
               <span
-                class="fd-object-number fd-object-number--critical fd-object-list__object-number"
+                class="fd-object-number fd-object-list__object-number"
               >
                 
             
@@ -1586,7 +1586,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
               
           
               <span
-                class="fd-object-number fd-object-number--critical fd-object-list__object-number"
+                class="fd-object-number fd-object-number--positive fd-object-list__object-number"
               >
                 
             
@@ -1701,14 +1701,14 @@ exports[`Storyshots Components/Object List Selection 1`] = `
                 
             
                 <span
-                  class="fd-object-status fd-object-status--critical"
+                  class="fd-object-status fd-object-status--informative"
                 >
                   
               
                   <span
                     class="fd-object-status__text"
                   >
-                    Critical
+                    Informative
                   </span>
                   
             
@@ -1861,7 +1861,7 @@ exports[`Storyshots Components/Object List Selection With Navigation 1`] = `
                 
           
                 <span
-                  class="fd-object-number fd-object-number--critical fd-object-list__object-number"
+                  class="fd-object-number fd-object-list__object-number"
                 >
                   
             
@@ -2113,7 +2113,7 @@ exports[`Storyshots Components/Object List Selection With Navigation 1`] = `
                 
           
                 <span
-                  class="fd-object-number fd-object-number--critical fd-object-list__object-number"
+                  class="fd-object-number fd-object-list__object-number"
                 >
                   
             
@@ -2378,7 +2378,7 @@ exports[`Storyshots Components/Object List Standard 1`] = `
             
           
             <span
-              class="fd-object-number fd-object-number--critical fd-object-list__object-number"
+              class="fd-object-number fd-object-list__object-number"
             >
               
             
@@ -2620,7 +2620,7 @@ exports[`Storyshots Components/Object List Standard 1`] = `
             
           
             <span
-              class="fd-object-number fd-object-number--critical fd-object-list__object-number"
+              class="fd-object-number fd-object-list__object-number"
             >
               
             
@@ -2734,14 +2734,14 @@ exports[`Storyshots Components/Object List Standard 1`] = `
               
             
               <span
-                class="fd-object-status fd-object-status--critical"
+                class="fd-object-status fd-object-status--Negative"
               >
                 
               
                 <span
                   class="fd-object-status__text"
                 >
-                  Critical
+                  Negative
                 </span>
                 
             
@@ -2854,7 +2854,7 @@ exports[`Storyshots Components/Object List Standard 1`] = `
             
           
             <span
-              class="fd-object-number fd-object-number--critical fd-object-list__object-number"
+              class="fd-object-number fd-object-number--informative fd-object-list__object-number"
             >
               
             
@@ -3074,7 +3074,7 @@ exports[`Storyshots Components/Object List Standard 1`] = `
             
           
             <span
-              class="fd-object-number fd-object-number--critical fd-object-list__object-number"
+              class="fd-object-number fd-object-number--negative fd-object-list__object-number"
             >
               
             

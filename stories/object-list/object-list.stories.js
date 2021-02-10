@@ -84,7 +84,7 @@ export const object = () => `
          </div>
         </div>
         <div class="fd-object-list__header-right">
-          <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
+          <span class="fd-object-number fd-object-list__object-number">
             <span class="fd-object-number__text">457.00</span>
             <span class="fd-object-number__unit">Euro</span>
           </span>
@@ -147,7 +147,7 @@ export const object = () => `
          </div>
         </div>
         <div class="fd-object-list__header-right">
-          <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
+          <span class="fd-object-number fd-object-list__object-number">
             <span class="fd-object-number__text">956.00</span>
             <span class="fd-object-number__unit">Euro</span>
           </span>
@@ -174,8 +174,8 @@ export const object = () => `
             </div>
           </div>
           <div class="fd-object-list__row-right">
-            <span class="fd-object-status fd-object-status--critical">
-              <span class="fd-object-status__text">Critical</span>
+            <span class="fd-object-status fd-object-status--Negative">
+              <span class="fd-object-status__text">Negative</span>
             </span>
           </div>
         </div>
@@ -206,7 +206,7 @@ export const object = () => `
          </div>
         </div>
         <div class="fd-object-list__header-right">
-          <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
+          <span class="fd-object-number fd-object-number--informative fd-object-list__object-number">
             <span class="fd-object-number__text">956.00</span>
             <span class="fd-object-number__unit">Euro</span>
           </span>
@@ -262,7 +262,7 @@ export const object = () => `
          </div>
         </div>
         <div class="fd-object-list__header-right">
-          <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
+          <span class="fd-object-number fd-object-number--negative fd-object-list__object-number">
             <span class="fd-object-number__text">457.00</span>
             <span class="fd-object-number__unit">Euro</span>
           </span>
@@ -366,8 +366,8 @@ export const navigation = () => `
             </div>
           </div>
           <div class="fd-object-list__row-right">
-            <span class="fd-object-status fd-object-status--critical">
-              <span class="fd-object-status__text">Critical very very very long</span>
+            <span class="fd-object-status">
+              <span class="fd-object-status__text">Default</span>
             </span>
           </div>
         </div>
@@ -400,7 +400,7 @@ export const navigation = () => `
          </div>
         </div>
         <div class="fd-object-list__header-right">
-          <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
+          <span class="fd-object-number fd-object-list__object-number">
             <span class="fd-object-number__text">956.00</span>
             <span class="fd-object-number__unit">Euro</span>
           </span>
@@ -428,8 +428,8 @@ export const navigation = () => `
             </div>
           </div>
           <div class="fd-object-list__row-right">
-            <span class="fd-object-status fd-object-status--critical">
-              <span class="fd-object-status__text">Critical</span>
+            <span class="fd-object-status fd-object-status--positive">
+              <span class="fd-object-status__text">Positive</span>
             </span>
           </div>
         </div>
@@ -476,7 +476,7 @@ export const selection = () => `
          </div>
         </div>
         <div class="fd-object-list__header-right">
-          <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
+          <span class="fd-object-number fd-object-list__object-number">
             <span class="fd-object-number__text">457.00</span>
             <span class="fd-object-number__unit">Euro</span>
           </span>
@@ -539,7 +539,7 @@ export const selection = () => `
          </div>
         </div>
         <div class="fd-object-list__header-right">
-          <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
+          <span class="fd-object-number fd-object-number--positive fd-object-list__object-number">
             <span class="fd-object-number__text">666.00</span>
             <span class="fd-object-number__unit">Euro</span>
           </span>
@@ -567,8 +567,8 @@ export const selection = () => `
             </div>
           </div>
           <div class="fd-object-list__row-right">
-            <span class="fd-object-status fd-object-status--critical">
-              <span class="fd-object-status__text">Critical</span>
+            <span class="fd-object-status fd-object-status--informative">
+              <span class="fd-object-status__text">Informative</span>
             </span>
           </div>
         </div>
@@ -617,7 +617,7 @@ export const selectionWithNavigation = () => `
          </div>
         </div>
         <div class="fd-object-list__header-right">
-          <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
+          <span class="fd-object-number fd-object-list__object-number">
             <span class="fd-object-number__text">457.00</span>
             <span class="fd-object-number__unit">Euro</span>
           </span>
@@ -682,7 +682,7 @@ export const selectionWithNavigation = () => `
          </div>
         </div>
         <div class="fd-object-list__header-right">
-          <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
+          <span class="fd-object-number fd-object-list__object-number">
             <span class="fd-object-number__text">666.00</span>
             <span class="fd-object-number__unit">Euro</span>
           </span>
@@ -760,7 +760,7 @@ export const borderless = () => `
          </div>
         </div>
         <div class="fd-object-list__header-right">
-          <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
+          <span class="fd-object-number fd-object-list__object-number">
             <span class="fd-object-number__text">457.00</span>
             <span class="fd-object-number__unit">Euro</span>
           </span>
@@ -791,8 +791,8 @@ export const borderless = () => `
             </div>
           </div>
           <div class="fd-object-list__row-right">
-            <span class="fd-object-status fd-object-status--critical">
-              <span class="fd-object-status__text">Critical very very very long</span>
+            <span class="fd-object-status fd-object-status--positive">
+              <span class="fd-object-status__text">Positive very very very long</span>
             </span>
           </div>
         </div>
@@ -883,7 +883,7 @@ export const borderless = () => `
          </div>
         </div>
         <div class="fd-object-list__header-right">
-          <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
+          <span class="fd-object-number fd-object-list__object-number">
             <span class="fd-object-number__text">956.00</span>
             <span class="fd-object-number__unit">Euro</span>
           </span>
