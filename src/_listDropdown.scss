@@ -117,6 +117,7 @@
     min-width: 7rem;
     max-width: 37.5rem;
 
+    // for when dropdown and multi input are used in mobile mode
     &.#{$block}--mobile {
       max-width: 100%;
     }
