@@ -189,7 +189,7 @@ exports[`Storyshots Layouts/Resizable Card Layout Card resize in horizontal and 
         
                     
         <div
-          class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"
+          class="fd-resizable-card-layout__icon"
         />
         
                 
@@ -399,7 +399,7 @@ exports[`Storyshots Layouts/Resizable Card Layout Card resize in horizontal dire
         
                     
         <div
-          class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"
+          class="fd-resizable-card-layout__icon fd-resizable-card-layout__icon--horizontal"
         />
         
                 
@@ -599,7 +599,7 @@ exports[`Storyshots Layouts/Resizable Card Layout Card resize in vertical direct
         
                     
         <div
-          class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"
+          class="fd-resizable-card-layout__icon fd-resizable-card-layout__icon--vertical"
         />
         
                 
@@ -809,7 +809,7 @@ exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
         
                     
         <div
-          class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"
+          class="fd-resizable-card-layout__icon"
         />
         
                 
@@ -928,7 +928,7 @@ exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
         
                     
         <div
-          class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"
+          class="fd-resizable-card-layout__icon"
         />
         
                 
@@ -1152,7 +1152,7 @@ exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
         
                     
         <div
-          class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"
+          class="fd-resizable-card-layout__icon"
         />
         
                 
@@ -1353,7 +1353,7 @@ exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
         
                     
         <div
-          class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"
+          class="fd-resizable-card-layout__icon"
         />
         
                 
@@ -1657,7 +1657,7 @@ exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
         
                     
         <div
-          class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"
+          class="fd-resizable-card-layout__icon"
         />
         
                 
@@ -2065,7 +2065,7 @@ exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
         
                     
         <div
-          class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"
+          class="fd-resizable-card-layout__icon"
         />
         
                 

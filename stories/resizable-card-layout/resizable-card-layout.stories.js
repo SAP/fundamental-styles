@@ -61,7 +61,7 @@ export const resizeCardLayout = () =>
                     </div>
                 </div>
                 <div class="fd-resizable-card-layout__icon-wrapper">
-                    <div class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"></div>
+                    <div class="fd-resizable-card-layout__icon"></div>
                 </div>
             </div>
             <div class="fd-resizable-card-layout__resize--horizontal"></div>
@@ -89,7 +89,7 @@ export const resizeCardLayout = () =>
                     <div class="fd-card__content" role="group" aria-label="Card Content"></div>
                 </div>
                 <div class="fd-resizable-card-layout__icon-wrapper">
-                    <div class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"></div>
+                    <div class="fd-resizable-card-layout__icon"></div>
                 </div>
             </div>
             <div class="fd-resizable-card-layout__resize--horizontal"></div>
@@ -133,7 +133,7 @@ export const resizeCardLayout = () =>
                     </div>
                 </div>
                 <div class="fd-resizable-card-layout__icon-wrapper">
-                    <div class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"></div>
+                    <div class="fd-resizable-card-layout__icon"></div>
                 </div>
             </div>
             <div class="fd-resizable-card-layout__resize--horizontal"></div>
@@ -173,7 +173,7 @@ export const resizeCardLayout = () =>
                     </div>
                 </div>
                 <div class="fd-resizable-card-layout__icon-wrapper">
-                    <div class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"></div>
+                    <div class="fd-resizable-card-layout__icon"></div>
                 </div>
             </div>
             <div class="fd-resizable-card-layout__resize--horizontal"></div>
@@ -244,7 +244,7 @@ export const resizeCardLayout = () =>
                     </div>
                 </div>
                 <div class="fd-resizable-card-layout__icon-wrapper">
-                    <div class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"></div>
+                    <div class="fd-resizable-card-layout__icon"></div>
                 </div>
             </div>
             <div class="fd-resizable-card-layout__resize--horizontal"></div>
@@ -330,7 +330,7 @@ export const resizeCardLayout = () =>
                     </div>
                 </div>
                 <div class="fd-resizable-card-layout__icon-wrapper">
-                    <div class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"></div>
+                    <div class="fd-resizable-card-layout__icon"></div>
                 </div>
             </div>
             <div class="fd-resizable-card-layout__resize--horizontal"></div>
@@ -342,7 +342,7 @@ resizeCardLayout.storyName = 'Resizable card layout';
 resizeCardLayout.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `Resizable card layout with multiple cards. This is based on Grid structure.
+        storyDescription: `Resizable card layout with multiple cards.
         `
     }
 };
@@ -383,7 +383,7 @@ export const resizeCardHorizontalVerticalDirection = () =>
                     </div>
                 </div>
                 <div class="fd-resizable-card-layout__icon-wrapper">
-                    <div class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"></div>
+                    <div class="fd-resizable-card-layout__icon"></div>
                 </div>
             </div>
             <div class="fd-resizable-card-layout__resize--horizontal"></div>
@@ -436,7 +436,7 @@ export const resizeCardHorizontalDirection = () =>
                     </div>
                 </div>
                 <div class="fd-resizable-card-layout__icon-wrapper">
-                    <div class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"></div>
+                    <div class="fd-resizable-card-layout__icon fd-resizable-card-layout__icon--horizontal"></div>
                 </div>
             </div>
         </div>
@@ -487,7 +487,7 @@ export const resizeCardVerticalDirection = () =>
                     </div>
                 </div>
                 <div class="fd-resizable-card-layout__icon-wrapper">
-                    <div class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"></div>
+                    <div class="fd-resizable-card-layout__icon fd-resizable-card-layout__icon--vertical"></div>
                 </div>
             </div>
             <div class="fd-resizable-card-layout__resize--horizontal"></div>

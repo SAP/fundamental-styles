@@ -79,22 +79,20 @@ $block: #{$fd-namespace}-resizable-card-layout;
       padding: 0 $fd-resize-icon-padding $fd-resize-icon-padding 0.5rem;
       // padding-left is needed after rotation
     }
-  }
-
-  &__resize-cursor {
-    &--horizontal {
-      cursor: ew-resize;
-    }
 
     &--vertical {
       cursor: ns-resize;
-    }
-
-    &--corner {
-      cursor: nwse-resize;
 
       @include fd-rtl() {
-        cursor: nesw-resize;
+        cursor: ns-resize;
+      }
+    }
+
+    &--horizontal {
+      cursor: ew-resize;
+
+      @include fd-rtl() {
+        cursor: ew-resize;
       }
     }
   }
