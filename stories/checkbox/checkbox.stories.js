@@ -5,7 +5,7 @@ export default {
 
 - **Checked**: the state described by the checkbox text applies, or that the item has been chosen.
 - **Un-checked**: the state described by the checkbox is not applied.
-- **Tri-state**: a state that indicates it is neither checked nor unchecked. The main purpose of the tri-state is to represent a mixed selection of states of dependent input fields. If some (but not all) of the dependent fields are selected, the checkbox shows a partially selected state. This is only a visual state and can’t be achieved by a direct user interaction.
+- **Tri-state**: a state that indicates it is neither checked nor unchecked. JavaScript must be used to set the input's 'indeterminate' property to true. The main purpose of the tri-state is to represent a mixed selection of states of dependent input fields. If some (but not all) of the dependent fields are selected, the checkbox shows a partially selected state. This is only a visual state and can’t be achieved by a direct user interaction. In this example the indeterminate state is set on page load.
 
 Note: With checkboxes, all options are visible, and the user can make one or more selections.
 
