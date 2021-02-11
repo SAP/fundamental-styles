@@ -2025,7 +2025,7 @@ exports[`Storyshots Components/Select Mobile 1`] = `
             
       <ul
         aria-labelledby="mobileHeader"
-        class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact"
+        class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact fd-list--mobile"
         role="listbox"
       >
         

@@ -176,7 +176,7 @@ export const mobileMode = () => `<div class="fd-dialog fd-dialog-docs-static fd-
         </header>
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
             <div aria-live="assertive" class="fd-list__message fd-list__message--information" role="alert">Choose one item</div>
-            <ul aria-labelledby="mobileHeader" class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact" role="listbox">
+            <ul aria-labelledby="mobileHeader" class="fd-list fd-list--has-message fd-list--dropdown fd-list--compact fd-list--mobile" role="listbox">
                 <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
                    <span class="fd-list__title">Apple</span>
                </li>

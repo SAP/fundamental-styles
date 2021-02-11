@@ -566,7 +566,7 @@ id="select-dialog-example" style="height:600px">
             <label id="fruitsMobileHeader" class="fd-list__group-header">
                 <span class="fd-list__title">Fruits</span>
             </label>
-            <ul aria-labelledby="fruitsMobileHeader" class="fd-list fd-list--dropdown" role="listbox">
+            <ul aria-labelledby="fruitsMobileHeader" class="fd-list fd-list--dropdown fd-list--mobile" role="listbox">
                 <li role="option" tabindex="0" class="fd-list__item is-selected">
                     <span class="fd-list__title">Apple</span>
                 </li>
