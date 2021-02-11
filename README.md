@@ -56,7 +56,20 @@ This project does not contain fonts and icons - they must be added to your proje
         font-weight: normal;
         font-style: normal;
     }
-    and
+    @font-face {
+        font-family: "72";
+        src: url("~@sap-theming/theming-base-content/content/Base/baseLib/sap_base_fiori/fonts/72-Bold-full.woff")
+            format("woff");
+        font-weight: 700;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "72";
+        src: url("~@sap-theming/theming-base-content/content/Base/baseLib/sap_base_fiori/fonts/72-Light-full.woff")
+            format("woff");
+        font-weight: 300;
+        font-style: normal;
+    }
 
     @font-face {
         font-family: "SAP-icons";
