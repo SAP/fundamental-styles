@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.16.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.16.0-rc.13...v0.16.0-rc.14) (2021-02-11)
+
+
+### Bug Fixes
+
+* fix Grid List styles [ci visual] ([#2143](https://github.com/SAP/fundamental-styles/issues/2143)) ([4a0cf7f](https://github.com/SAP/fundamental-styles/commit/4a0cf7fa10f4a9bf7778d0a88566c0c059236462))
+
 ## [0.16.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.16.0-rc.12...v0.16.0-rc.13) (2021-02-10)
 
 ## [0.16.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.16.0-rc.11...v0.16.0-rc.12) (2021-02-10)
