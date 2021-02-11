@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.16.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.16.0-rc.16...v0.16.0-rc.17) (2021-02-11)
+
+
+### Features
+
+* add modifier class for List being used in a dialog in mobile mode ([#2130](https://github.com/SAP/fundamental-styles/issues/2130)) ([fceecf8](https://github.com/SAP/fundamental-styles/commit/fceecf8a6314f0bf6645e252cd6a9e09b5c3a3ac))
+
 ## [0.16.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.16.0-rc.15...v0.16.0-rc.16) (2021-02-11)
 
 ## [0.16.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.16.0-rc.14...v0.16.0-rc.15) (2021-02-11)
