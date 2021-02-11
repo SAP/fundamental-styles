@@ -138,11 +138,11 @@
             if (triStateCheckbox) {
                 triStateCheckbox.indeterminate = true;
             }
-        };
+        }
     }
 
     document.addEventListener('DOMContentLoaded', function () {
-
+        runOnPageChange();
         const callback = function(mutationsList) {
             for (let i = 0, len = mutationsList.length; i < len; i++) {
                 if (mutationsList[i].type == 'childList') {
@@ -153,8 +153,9 @@
         };
 
         const observer = new MutationObserver(callback);
-        const config = { childList: true, subtree: false };
+        const config = { childList: true, subtree: true };
         observer.observe(document.getElementById('root'), config);
+        observer.observe(document.getElementById('docs-root'), config);
     });
    
 
