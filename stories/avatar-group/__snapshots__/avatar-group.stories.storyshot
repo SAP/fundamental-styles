@@ -161,6 +161,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
     aria-hidden="false"
     class="fd-popover__body"
     id="popover_avatar-group_tztuj"
+    style="width: 332px;"
   >
     
         
@@ -203,7 +204,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
         
             
       <div
-        class="fd-avatar-group__overflow--body"
+        class="fd-avatar-group__overflow-body"
       >
          
                 
@@ -1489,7 +1490,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
 
                 
         <div
-          class="fd-avatar-group__overflow--body"
+          class="fd-avatar-group__overflow-body"
         >
           
                     

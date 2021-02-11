@@ -47,6 +47,8 @@ $block: #{$fd-namespace}-avatar-group;
 
   @include fd-reset();
 
+  display: flex;
+
   &--individual-type {
     .#{$block}__item {
       @include fd-fiori-focus($fd-focus-outline-offset);
@@ -81,7 +83,7 @@ $block: #{$fd-namespace}-avatar-group;
     }
   }
 
-  &__overflow--body {
+  &__overflow-body {
     @include fd-reset();
 
     padding: 1rem;

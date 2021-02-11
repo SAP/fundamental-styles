@@ -253,7 +253,7 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
                     </div>
                 </div>
 
-                <div class="fd-avatar-group__overflow--body">
+                <div class="fd-avatar-group__overflow-body">
                     <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false">
                         <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" aria-label="Avatar">
                             <i class="fd-avatar__icon sap-icon--washing-machine" role="presentation"></i>
@@ -321,7 +321,7 @@ export const groupType = () => `<div class="fd-popover">
         </div>
     </div>
     
-    <div class="fd-popover__body" aria-hidden="false" id="popover_avatar-group_tztuj">
+    <div class="fd-popover__body" aria-hidden="false" id="popover_avatar-group_tztuj" style="width: 332px;">
         <div class="fd-popover__wrapper" style="max-height: 200px; overflow-x: hidden">
             <div class="fd-popover__body-header">
                 <div class="fd-bar fd-bar--header">
@@ -331,7 +331,7 @@ export const groupType = () => `<div class="fd-popover">
                 </div>
             </div>  
         
-            <div class="fd-avatar-group__overflow--body"> 
+            <div class="fd-avatar-group__overflow-body"> 
                 <div class="fd-avatar-group__item">
                     <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Wendy Wallace">WW</span>
                 </div>                    
