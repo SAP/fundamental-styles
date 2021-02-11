@@ -127,7 +127,6 @@ exports[`Storyshots Components/Grid List "More" Button 1`] = `
               <span
                 aria-label="Item has 10 children"
                 class="fd-grid-list__item-counter"
-                tabindex="0"
               >
                 10
               </span>
@@ -709,7 +708,6 @@ exports[`Storyshots Components/Grid List Delete mode 1`] = `
               <span
                 aria-label="Item has 10 children"
                 class="fd-grid-list__item-counter"
-                tabindex="0"
               >
                 10
               </span>
@@ -1383,7 +1381,6 @@ exports[`Storyshots Components/Grid List Filter Infobar 1`] = `
               <span
                 aria-label="Item has 10 children"
                 class="fd-grid-list__item-counter"
-                tabindex="0"
               >
                 10
               </span>
@@ -1924,7 +1921,6 @@ exports[`Storyshots Components/Grid List Footer 1`] = `
               <span
                 aria-label="Item has 10 children"
                 class="fd-grid-list__item-counter"
-                tabindex="0"
               >
                 10
               </span>
@@ -2512,7 +2508,6 @@ exports[`Storyshots Components/Grid List Group 1`] = `
               <span
                 aria-label="Item has 10 children"
                 class="fd-grid-list__item-counter"
-                tabindex="0"
               >
                 10
               </span>
@@ -3082,7 +3077,6 @@ exports[`Storyshots Components/Grid List Highlight 1`] = `
               <span
                 aria-label="Item has 10 children"
                 class="fd-grid-list__item-counter"
-                tabindex="0"
               >
                 10
               </span>
@@ -3675,7 +3669,6 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
               <span
                 aria-label="Item has 10 children"
                 class="fd-grid-list__item-counter"
-                tabindex="0"
               >
                 10
               </span>
@@ -3956,7 +3949,6 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
               <span
                 aria-label="Item has 5 children"
                 class="fd-grid-list__item-counter"
-                tabindex="0"
               >
                 5
               </span>
@@ -4086,7 +4078,6 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
               <span
                 aria-label="Item has 5 children"
                 class="fd-grid-list__item-counter"
-                tabindex="0"
               >
                 5
               </span>
@@ -4313,7 +4304,6 @@ exports[`Storyshots Components/Grid List None mode 1`] = `
               <span
                 aria-label="Item has 10 children"
                 class="fd-grid-list__item-counter"
-                tabindex="0"
               >
                 10
               </span>
@@ -4831,7 +4821,6 @@ exports[`Storyshots Components/Grid List None mode 1`] = `
               <span
                 aria-label="Item has 10 children"
                 class="fd-grid-list__item-counter"
-                tabindex="0"
               >
                 10
               </span>
@@ -5179,7 +5168,6 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
               <span
                 aria-label="Item has 10 children"
                 class="fd-grid-list__item-counter"
-                tabindex="0"
               >
                 10
               </span>
@@ -5460,7 +5448,6 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
               <span
                 aria-label="Item has 5 children"
                 class="fd-grid-list__item-counter"
-                tabindex="0"
               >
                 5
               </span>
@@ -5824,7 +5811,6 @@ exports[`Storyshots Components/Grid List Single select mode 1`] = `
               <span
                 aria-label="Item has 10 children"
                 class="fd-grid-list__item-counter"
-                tabindex="0"
               >
                 10
               </span>
@@ -6105,7 +6091,6 @@ exports[`Storyshots Components/Grid List Single select mode 1`] = `
               <span
                 aria-label="Item has 5 children"
                 class="fd-grid-list__item-counter"
-                tabindex="0"
               >
                 5
               </span>
@@ -6455,7 +6440,6 @@ exports[`Storyshots Components/Grid List Single select right mode 1`] = `
               <span
                 aria-label="Item has 10 children"
                 class="fd-grid-list__item-counter"
-                tabindex="0"
               >
                 10
               </span>
@@ -6738,7 +6722,6 @@ exports[`Storyshots Components/Grid List Single select right mode 1`] = `
               <span
                 aria-label="Item has 5 children"
                 class="fd-grid-list__item-counter"
-                tabindex="0"
               >
                 5
               </span>
@@ -7105,7 +7088,6 @@ exports[`Storyshots Components/Grid List States 1`] = `
               <span
                 aria-label="Item has 10 children"
                 class="fd-grid-list__item-counter"
-                tabindex="0"
               >
                 10
               </span>

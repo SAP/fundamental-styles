@@ -32,7 +32,15 @@ $block: #{$fd-namespace}-grid-list;
   &__item {
     @include fd-reset();
     @include fd-flex(column);
-    @include fd-fiori-focus();
+
+    @include fd-fiori-focus() {
+      .#{$block}__highlight {
+        width: 0.25rem;
+        left: 0.1875rem;
+        bottom: 0.1875rem;
+        top: 0.1875rem;
+      }
+    }
 
     background-color: var(--sapList_Background);
     border-radius: $fd-grid-list-border-radius;
@@ -154,8 +162,6 @@ $block: #{$fd-namespace}-grid-list;
   }
 
   &__item-counter {
-    @include fd-fiori-focus(0);
-
     color: var(--sapContent_MarkerTextColor);
   }
 
@@ -322,7 +328,7 @@ $block: #{$fd-namespace}-grid-list;
       position: absolute;
       top: 0;
       left: 0;
-      height: 100%;
+      bottom: 0;
       width: 0.375rem;
       display: block;
       border-radius: $fd-grid-list-border-radius 0 0 $fd-grid-list-border-radius;
