@@ -26,10 +26,10 @@ Cards can be resized vertically in rows of 1 rem and horizontally in steps of 20
 };
 
 export const resizeCardLayout = () =>
-    `<div id="grid1" class="fd-resizable-card-layout fd-resizable-card-layout--md fd-custom-resizable-card-layout-flex">
-        <div id="one" class="fd-resizable-card-layout__wrapper card-one-dimensions">
-            <div class="fd-resizable-card-layout__wrapper__resize__handle--vertical"></div>
-            <div class="fd-resizable-card-layout__wrapper__card">
+    `<div id="layout1" class="fd-resizable-card-layout fd-resizable-card-layout--md fd-custom-resizable-card-layout-flex">
+        <div id="one" class="fd-resizable-card-layout__item card-one-dimensions">
+            <div class="fd-resizable-card-layout__resize--vertical"></div>
+            <div class="fd-resizable-card-layout__card">
                 <div class="fd-card" role="region" aria-label="List Card Example 1">
                     <a class="fd-card__header" tabindex="0">
                         <div class="fd-card__header-text">
@@ -60,16 +60,16 @@ export const resizeCardLayout = () =>
                         </ul>
                     </div>
                 </div>
-                <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper">
-                    <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"></div>
+                <div class="fd-resizable-card-layout__icon-wrapper">
+                    <div class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"></div>
                 </div>
             </div>
-            <div class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"></div>
+            <div class="fd-resizable-card-layout__resize--horizontal"></div>
         </div>
 
-        <div id="two" class="fd-resizable-card-layout__wrapper card-two-dimensions">
-            <div class="fd-resizable-card-layout__wrapper__resize__handle--vertical"></div>
-            <div class="fd-resizable-card-layout__wrapper__card">
+        <div id="two" class="fd-resizable-card-layout__item card-two-dimensions">
+            <div class="fd-resizable-card-layout__resize--vertical"></div>
+            <div class="fd-resizable-card-layout__card">
                 <div class="fd-card" role="region" aria-label="Card Anatomy Example 1">
                     <a class="fd-card__header" tabindex="0">
                         <span
@@ -88,16 +88,16 @@ export const resizeCardLayout = () =>
                     </a>
                     <div class="fd-card__content" role="group" aria-label="Card Content"></div>
                 </div>
-                <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper">
-                    <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"></div>
+                <div class="fd-resizable-card-layout__icon-wrapper">
+                    <div class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"></div>
                 </div>
             </div>
-            <div class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"></div>
+            <div class="fd-resizable-card-layout__resize--horizontal"></div>
         </div>
 
-        <div id="three" class="fd-resizable-card-layout__wrapper card-three-dimensions">
-            <div class="fd-resizable-card-layout__wrapper__resize__handle--vertical"></div>
-            <div class="fd-resizable-card-layout__wrapper__card">
+        <div id="three" class="fd-resizable-card-layout__item card-three-dimensions">
+            <div class="fd-resizable-card-layout__resize--vertical"></div>
+            <div class="fd-resizable-card-layout__card">
                 <div class="fd-card" role="region" aria-label="List Card Example 2">
                     <a class="fd-card__header" tabindex="0">
                         <div class="fd-card__header-text">
@@ -132,16 +132,16 @@ export const resizeCardLayout = () =>
                         </ul>
                     </div>
                 </div>
-                <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper">
-                    <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"></div>
+                <div class="fd-resizable-card-layout__icon-wrapper">
+                    <div class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"></div>
                 </div>
             </div>
-            <div class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"></div>
+            <div class="fd-resizable-card-layout__resize--horizontal"></div>
         </div>
 
-        <div id="six" class="fd-resizable-card-layout__wrapper card-six-dimensions">
-            <div class="fd-resizable-card-layout__wrapper__resize__handle--vertical"></div>
-            <div class="fd-resizable-card-layout__wrapper__card">
+        <div id="six" class="fd-resizable-card-layout__item card-six-dimensions">
+            <div class="fd-resizable-card-layout__resize--vertical"></div>
+            <div class="fd-resizable-card-layout__card">
                 <div class="fd-card" role="region" aria-label="List Card Example 3">
                     <a class="fd-card__header" tabindex="0">
                         <div class="fd-card__header-text">
@@ -172,16 +172,16 @@ export const resizeCardLayout = () =>
                         </ul>
                     </div>
                 </div>
-                <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper">
-                    <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"></div>
+                <div class="fd-resizable-card-layout__icon-wrapper">
+                    <div class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"></div>
                 </div>
             </div>
-            <div class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"></div>
+            <div class="fd-resizable-card-layout__resize--horizontal"></div>
         </div>
 
-        <div id="four" class="fd-resizable-card-layout__wrapper card-four-dimensions">
-            <div class="fd-resizable-card-layout__wrapper__resize__handle--vertical"></div>
-            <div class="fd-resizable-card-layout__wrapper__card">
+        <div id="four" class="fd-resizable-card-layout__item card-four-dimensions">
+            <div class="fd-resizable-card-layout__resize--vertical"></div>
+            <div class="fd-resizable-card-layout__card">
                 <div class="fd-card fd-card--object" role="region" aria-label="Object Card Example 1">
                     <a class="fd-card__header" tabindex="0">
                         <span
@@ -243,16 +243,16 @@ export const resizeCardLayout = () =>
                         </div>
                     </div>
                 </div>
-                <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper">
-                    <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"></div>
+                <div class="fd-resizable-card-layout__icon-wrapper">
+                    <div class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"></div>
                 </div>
             </div>
-            <div class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"></div>
+            <div class="fd-resizable-card-layout__resize--horizontal"></div>
         </div>
 
-        <div id="five" class="fd-resizable-card-layout__wrapper card-five-dimensions">
-            <div class="fd-resizable-card-layout__wrapper__resize__handle--vertical"></div>
-            <div class="fd-resizable-card-layout__wrapper__card">
+        <div id="five" class="fd-resizable-card-layout__item card-five-dimensions">
+            <div class="fd-resizable-card-layout__resize--vertical"></div>
+            <div class="fd-resizable-card-layout__card">
                 <div class="fd-card fd-card--table" role="region" aria-label="Table Card Example 1">
                     <a class="fd-card__header" tabindex="0">
                         <div class="fd-card__header-text">
@@ -329,11 +329,11 @@ export const resizeCardLayout = () =>
                         </table>
                     </div>
                 </div>
-                <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper">
-                    <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"></div>
+                <div class="fd-resizable-card-layout__icon-wrapper">
+                    <div class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"></div>
                 </div>
             </div>
-            <div class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"></div>
+            <div class="fd-resizable-card-layout__resize--horizontal"></div>
         </div>
     </div>
 `;
@@ -349,9 +349,9 @@ resizeCardLayout.parameters = {
 
 export const resizeCardHorizontalVerticalDirection = () =>
     `<div id="grid1" class="fd-resizable-card-layout">
-        <div id="seven" class="fd-resizable-card-layout__wrapper">
-            <div class="fd-resizable-card-layout__wrapper__resize__handle--vertical"></div>
-            <div class="fd-resizable-card-layout__wrapper__card">
+        <div id="seven" class="fd-resizable-card-layout__item fd-resizable-card-layout__indication-border">
+            <div class="fd-resizable-card-layout__resize--vertical"></div>
+            <div class="fd-resizable-card-layout__card">
                 <div class="fd-card" role="region" aria-label="List Card Example 4">
                     <a class="fd-card__header" tabindex="0">
                         <div class="fd-card__header-text">
@@ -382,11 +382,11 @@ export const resizeCardHorizontalVerticalDirection = () =>
                         </ul>
                     </div>
                 </div>
-                <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper">
-                    <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"></div>
+                <div class="fd-resizable-card-layout__icon-wrapper">
+                    <div class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"></div>
                 </div>
             </div>
-            <div class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"></div>
+            <div class="fd-resizable-card-layout__resize--horizontal"></div>
         </div>
     </div>
 `;
@@ -402,9 +402,9 @@ resizeCardHorizontalVerticalDirection.parameters = {
 
 export const resizeCardHorizontalDirection = () =>
     `<div id="grid1" class="fd-resizable-card-layout">
-        <div id="eight" class="fd-resizable-card-layout__wrapper">
-            <div class="fd-resizable-card-layout__wrapper__resize__handle--vertical"></div>
-            <div class="fd-resizable-card-layout__wrapper__card">
+        <div id="eight" class="fd-resizable-card-layout__item">
+            <div class="fd-resizable-card-layout__resize--vertical"></div>
+            <div class="fd-resizable-card-layout__card">
                 <div class="fd-card" role="region" aria-label="List Card Example 5">
                     <a class="fd-card__header" tabindex="0">
                         <div class="fd-card__header-text">
@@ -435,8 +435,8 @@ export const resizeCardHorizontalDirection = () =>
                         </ul>
                     </div>
                 </div>
-                <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper">
-                    <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"></div>
+                <div class="fd-resizable-card-layout__icon-wrapper">
+                    <div class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"></div>
                 </div>
             </div>
         </div>
@@ -454,8 +454,8 @@ resizeCardHorizontalDirection.parameters = {
 
 export const resizeCardVerticalDirection = () =>
     `<div id="grid1" class="fd-resizable-card-layout">
-        <div id="nine" class="fd-resizable-card-layout__wrapper">
-            <div class="fd-resizable-card-layout__wrapper__card">
+        <div id="nine" class="fd-resizable-card-layout__item">
+            <div class="fd-resizable-card-layout__card">
                 <div class="fd-card" role="region" aria-label="List Card Example 6">
                     <a class="fd-card__header" tabindex="0">
                         <div class="fd-card__header-text">
@@ -486,11 +486,11 @@ export const resizeCardVerticalDirection = () =>
                         </ul>
                     </div>
                 </div>
-                <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper">
-                    <div class="fd-resizable-card-layout__wrapper__card__icon-wrapper--icon fd-resizable-card-layout__wrapper__resize__cursor--both"></div>
+                <div class="fd-resizable-card-layout__icon-wrapper">
+                    <div class="fd-resizable-card-layout__icon fd-resizable-card-layout__resize-cursor--corner"></div>
                 </div>
             </div>
-            <div class="fd-resizable-card-layout__wrapper__resize__handle--horizontal"></div>
+            <div class="fd-resizable-card-layout__resize--horizontal"></div>
         </div>
     </div>
 `;
