@@ -18,7 +18,7 @@ export default {
 - The message should be as concise as possible.
         `,
         tags: ['f3', 'a11y', 'theme', 'development'],
-        components: ['message-page', 'icon', 'button']
+        components: ['message-page', 'icon', 'button', 'link']
     }
 };
 
