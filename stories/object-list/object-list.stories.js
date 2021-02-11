@@ -174,7 +174,7 @@ export const object = () => `
             </div>
           </div>
           <div class="fd-object-list__row-right">
-            <span class="fd-object-status fd-object-status--Negative">
+            <span class="fd-object-status fd-object-status--negative">
               <span class="fd-object-status__text">Negative</span>
             </span>
           </div>
