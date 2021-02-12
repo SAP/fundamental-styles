@@ -1,11 +1,11 @@
 /*!
- * Fundamental Library Styles v0.15.0
+ * Fundamental Library Styles v0.16.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 .sapThemeMetaData-Base-baseLib {
-  background-image: url('data:text/plain;utf-8,{"Path": "Base.baseLib.sap_fiori_3.css_variables", "PathPattern": "/%frameworkId%/%libId%/%themeId%/%fileId%.css", "Extends": ["sap_base_fiori","baseTheme"], "Tags": ["Fiori_3","LightColorScheme"], "FallbackThemeId": "sap_belize", "Version": { "Build":"11.1.24.20201118150206", "Source": "11.1.24", "Engine": "1.51.0"}}')
+  background-image: url('data:text/plain;utf-8,{"Path": "Base.baseLib.sap_fiori_3.css_variables", "PathPattern": "/%frameworkId%/%libId%/%themeId%/%fileId%.css", "Extends": ["sap_base_fiori","baseTheme"], "Tags": ["Fiori_3","LightColorScheme"], "FallbackThemeId": "sap_belize", "Version": { "Build":"11.1.26.20210119083812", "Source": "11.1.26", "Engine": "1.51.0"}}')
 }
 :root {
   --sapBrandColor: #0a6ed1;
@@ -54,7 +54,7 @@
   --sapNegativeTextColor: #bb0000;
   --sapPositiveTextColor: #107e3e;
   --sapCriticalTextColor: #e9730c;
-  --sapInformativeTextColor: #053b70;
+  --sapInformativeTextColor: #0a6ed1;
   --sapNeutralTextColor: #6a6d70;
   --sapNeutralBorderColor: #6a6d70;
   --sapErrorColor: #bb0000;
@@ -172,6 +172,7 @@
   --sapShell_InteractiveTextColor: #d1e8ff;
   --sapShell_InteractiveBorderColor: #7996b4;
   --sapShell_GroupTitleTextColor: #32363a;
+  --sapShell_GroupTitleTextShadow: 0 0 0.125rem #fff;
   --sapShell_Hover_Background: #283848;
   --sapShell_Active_Background: #23303e;
   --sapShell_Active_TextColor: #fff;
@@ -187,6 +188,11 @@
   --sapShell_Navigation_Active_Background: #23303e;
   --sapShell_Navigation_Active_TextColor: #fff;
   --sapShell_Shadow: 0 0 0.25rem 0 rgba(0,0,0,0.4),inset 0 -0.0625rem 0 0 rgba(0,0,0,0.2);
+  --sapShell_NegativeColor: #f88;
+  --sapShell_CriticalColor: #f8b67c;
+  --sapShell_PositiveColor: #abe2c2;
+  --sapShell_InformativeColor: #b1d6fb;
+  --sapShell_NeutralColor: #d4d6d7;
   --sapButton_BorderWidth: .0625rem;
   --sapButton_BorderCornerRadius: .25rem;
   --sapButton_Background: #fff;
@@ -365,7 +371,7 @@
   --sapList_TableGroupHeaderBorderColor: #d8d8d8;
   --sapList_TableGroupHeaderTextColor: #32363a;
   --sapList_TableFooterBorder: #d8d8d8;
-  --sapList_TableFixedBorderColor: #d8d8d8;
+  --sapList_TableFixedBorderColor: #8b8b8b;
   --sapList_Active_Background: #0854a0;
   --sapScrollBar_FaceColor: #949494;
   --sapScrollBar_TrackColor: #fff;
@@ -500,7 +506,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -520,9 +525,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .sap-icon--accidental-leave::before {
   content: ""
@@ -2648,7 +2651,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -2684,7 +2686,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -2721,7 +2722,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -2762,7 +2762,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -2807,7 +2806,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -2856,7 +2854,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -2922,7 +2919,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -2970,9 +2966,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-alert__close::before {
   content: ""
@@ -3069,8 +3063,6 @@
   text-decoration: inherit;
   text-transform: none;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   position: absolute;
   right: 0
 }
@@ -3090,9 +3082,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-alert--warning::before {
   content: ""
@@ -3103,9 +3093,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-alert--warning[dir=rtl]::after,
 [dir=rtl] .fd-alert--warning::after {
@@ -3127,9 +3115,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-alert--error::before {
   content: ""
@@ -3140,9 +3126,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-alert--error[dir=rtl]::after,
 [dir=rtl] .fd-alert--error::after {
@@ -3164,9 +3148,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-alert--success::before {
   content: ""
@@ -3177,9 +3159,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-alert--success[dir=rtl]::after,
 [dir=rtl] .fd-alert--success::after {
@@ -3201,9 +3181,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-alert--information::before {
   content: ""
@@ -3214,9 +3192,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-alert--information[dir=rtl]::after,
 [dir=rtl] .fd-alert--information::after {
@@ -3246,7 +3222,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -3265,7 +3240,7 @@
   .fd-avatar__icon
   .fd-avatar__zoom-icon
 */
-[class*=fd-avatar] {
+.fd-avatar {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
   line-height: 1.4;
@@ -3275,7 +3250,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -3297,8 +3271,8 @@
   border-radius: .25rem;
   border-radius: var(--sapElement_BorderCornerRadius,.25rem)
 }
-[class*=fd-avatar]::after,
-[class*=fd-avatar]::before {
+.fd-avatar::after,
+.fd-avatar::before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
@@ -3619,7 +3593,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -3668,7 +3641,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -3711,7 +3683,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -3763,7 +3734,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -3860,6 +3830,7 @@
   border-radius: var(--sapElement_BorderCornerRadius,.25rem);
   border: none;
   opacity: 1;
+  z-index: 1000;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -3948,7 +3919,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -3980,7 +3950,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -4020,7 +3989,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -4151,7 +4119,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -4203,7 +4170,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -4290,7 +4256,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -4504,7 +4469,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -4540,7 +4504,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -5120,7 +5083,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -5226,7 +5188,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -5275,7 +5236,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -5409,7 +5369,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -5447,7 +5406,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -5476,7 +5434,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -5507,7 +5464,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -5539,7 +5495,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -5589,7 +5544,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -5627,7 +5581,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -5653,7 +5606,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -5677,7 +5629,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -6349,7 +6300,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -6392,7 +6342,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -6449,6 +6398,19 @@
   margin-right: 0;
   margin-left: .75rem
 }
+.fd-card__header--non-interactive {
+  cursor: auto
+}
+.fd-card__header--non-interactive.is-hover,
+.fd-card__header--non-interactive:hover {
+  background: #fff;
+  background: var(--sapTile_Background,#fff)
+}
+.fd-card__header--non-interactive.is-active,
+.fd-card__header--non-interactive:active {
+  background: #fff;
+  background: var(--sapTile_Background,#fff)
+}
 .fd-card__header:last-child {
   border-bottom: none;
   border-top: .0625rem solid #ccc;
@@ -6466,7 +6428,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -6500,7 +6461,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -6537,7 +6497,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -6575,7 +6534,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -6609,7 +6567,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -6656,7 +6613,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -6699,7 +6655,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -6731,7 +6686,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -6770,7 +6724,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -6817,7 +6770,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -6843,7 +6795,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -6868,7 +6819,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -6905,7 +6855,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -6931,7 +6880,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -6983,7 +6931,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -7020,7 +6967,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -7044,7 +6990,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -7078,7 +7023,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -7145,7 +7089,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -7179,7 +7122,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -7236,7 +7178,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -7274,7 +7215,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -7320,7 +7260,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -7356,7 +7295,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -7398,7 +7336,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -7487,7 +7424,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -7736,7 +7672,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -8033,7 +7968,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -8173,7 +8107,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -8202,7 +8135,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -8288,7 +8220,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -8329,7 +8260,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -8355,7 +8285,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -8387,9 +8316,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-dialog__resize-handle::after {
   content: ""
@@ -8408,7 +8335,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -8445,7 +8371,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -8478,7 +8403,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -8555,7 +8479,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -8588,7 +8511,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -8621,7 +8543,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -8648,7 +8569,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -8675,7 +8595,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -8707,7 +8626,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -8753,7 +8671,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -8781,7 +8698,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -8813,7 +8729,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -8858,7 +8773,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -8887,7 +8801,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -8952,7 +8865,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -8998,7 +8910,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -9027,7 +8938,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -9095,7 +9005,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -9127,7 +9036,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -9150,7 +9058,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -9193,7 +9100,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -9235,7 +9141,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -9297,7 +9202,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -9376,7 +9280,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -9432,7 +9335,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -9469,7 +9371,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -9492,7 +9393,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -9529,7 +9429,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -9568,7 +9467,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -9599,7 +9497,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -9650,7 +9547,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -9692,7 +9588,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -11614,7 +11509,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -11651,7 +11545,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -11674,7 +11567,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -11711,7 +11603,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -11747,7 +11638,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -11805,7 +11695,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -11952,7 +11841,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -12023,7 +11911,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -12321,7 +12208,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -12624,7 +12510,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -12795,7 +12680,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -12846,7 +12730,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -12888,7 +12771,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -14037,7 +13919,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -14076,7 +13957,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -14117,7 +13997,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -14140,7 +14019,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -14168,7 +14046,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -14196,7 +14073,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -14231,7 +14107,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -14268,7 +14143,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -14302,7 +14176,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -14340,7 +14213,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -14487,7 +14359,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -14517,7 +14388,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -14539,7 +14409,8 @@
   box-shadow: 0 0 0 0.0625rem rgba(0,0,0,0.1),0 0.125rem 0.5rem 0 rgba(0,0,0,0.1);
   box-shadow: var(--sapContent_Shadow0,0 0 0 .0625rem rgba(0,0,0,.1),0 .125rem .5rem 0 rgba(0,0,0,.1));
   height: 100%;
-  position: relative
+  position: relative;
+  overflow: hidden
 }
 .fd-grid-list__item::after,
 .fd-grid-list__item::before {
@@ -14557,6 +14428,13 @@
   outline-style: dotted;
   outline-style: var(--sapContent_FocusStyle,dotted)
 }
+.fd-grid-list__item.is-focus .fd-grid-list__highlight,
+.fd-grid-list__item:focus .fd-grid-list__highlight {
+  width: .25rem;
+  left: .1875rem;
+  bottom: .1875rem;
+  top: .1875rem
+}
 .fd-grid-list__item .fd-grid-list__radio-input {
   height: 1rem;
   width: 1rem
@@ -14567,7 +14445,9 @@
 }
 .fd-grid-list__item .fd-grid-list__radio-input.is-focus + .fd-grid-list__radio-label,
 .fd-grid-list__item .fd-grid-list__radio-input:focus + .fd-grid-list__radio-label {
-  outline-offset: 0
+  outline-offset: 0;
+  outline: .0625rem dotted #000;
+  outline: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_FocusColor,#000)
 }
 .fd-grid-list__item .fd-grid-list__radio-input + .fd-grid-list__radio-label.is-empty,
 .fd-grid-list__item .fd-grid-list__radio-input + .fd-grid-list__radio-label:empty {
@@ -14657,7 +14537,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -14695,16 +14574,6 @@
   color: #0e7581;
   color: var(--sapContent_MarkerTextColor,#0e7581)
 }
-.fd-grid-list__item-counter.is-focus,
-.fd-grid-list__item-counter:focus {
-  outline-offset: 0;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
-}
 .fd-grid-list .fd-grid-list__group-header {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -14715,7 +14584,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -14892,7 +14760,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -14936,7 +14803,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -14960,7 +14826,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -15003,7 +14868,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -15038,7 +14902,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -15047,7 +14910,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  bottom: 0;
   width: .375rem;
   display: block;
   border-radius: .25rem 0 0 .25rem;
@@ -15073,7 +14936,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -15082,7 +14944,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  bottom: 0;
   width: .375rem;
   display: block;
   border-radius: .25rem 0 0 .25rem;
@@ -15108,7 +14970,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -15117,7 +14978,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  bottom: 0;
   width: .375rem;
   display: block;
   border-radius: .25rem 0 0 .25rem;
@@ -15143,7 +15004,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -15152,7 +15012,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  bottom: 0;
   width: .375rem;
   display: block;
   border-radius: .25rem 0 0 .25rem;
@@ -15178,7 +15038,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -15208,7 +15067,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -15269,6 +15127,106 @@
 .fd-list__item--no-data .fd-list__title {
   text-align: center
 }
+.fd-list__item--interractive.is-hover,
+.fd-list__item--interractive:hover {
+  background: #f5f5f5;
+  background: var(--sapList_Hover_Background,#f5f5f5)
+}
+.fd-list__item--interractive.is-selected,
+.fd-list__item--interractive[aria-selected=true] {
+  background: #e5f0fa;
+  background: var(--sapList_SelectionBackgroundColor,#e5f0fa);
+  border-bottom: .0625rem solid #0854a0;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
+}
+.fd-list__item--interractive.is-selected .fd-list__link,
+.fd-list__item--interractive[aria-selected=true] .fd-list__link {
+  background: inherit
+}
+.fd-list__item--interractive.is-active,
+.fd-list__item--interractive:active {
+  background: #0854a0;
+  background: var(--sapList_Active_Background,#0854a0)
+}
+.fd-list__item--interractive.is-active.is-hover,
+.fd-list__item--interractive.is-active:hover,
+.fd-list__item--interractive:active.is-hover,
+.fd-list__item--interractive:active:hover {
+  background: #0854a0;
+  background: var(--sapList_Active_Background,#0854a0)
+}
+.fd-list__item--interractive.is-active.is-selected,
+.fd-list__item--interractive.is-active[aria-selected=true],
+.fd-list__item--interractive:active.is-selected,
+.fd-list__item--interractive:active[aria-selected=true] {
+  background: #0854a0;
+  background: var(--sapList_Active_Background,#0854a0)
+}
+.fd-list__item--interractive.is-active.is-selected.is-hover,
+.fd-list__item--interractive.is-active.is-selected:hover,
+.fd-list__item--interractive.is-active[aria-selected=true].is-hover,
+.fd-list__item--interractive.is-active[aria-selected=true]:hover,
+.fd-list__item--interractive:active.is-selected.is-hover,
+.fd-list__item--interractive:active.is-selected:hover,
+.fd-list__item--interractive:active[aria-selected=true].is-hover,
+.fd-list__item--interractive:active[aria-selected=true]:hover {
+  background: #0854a0;
+  background: var(--sapList_Active_Background,#0854a0)
+}
+.fd-list__item--interractive.is-active,
+.fd-list__item--interractive.is-active .fd-list__byline,
+.fd-list__item--interractive.is-active .fd-list__byline-left,
+.fd-list__item--interractive.is-active .fd-list__byline-right,
+.fd-list__item--interractive.is-active .fd-list__content,
+.fd-list__item--interractive.is-active .fd-list__icon,
+.fd-list__item--interractive.is-active .fd-list__secondary,
+.fd-list__item--interractive.is-active .fd-list__thumbnail,
+.fd-list__item--interractive.is-active .fd-list__title,
+.fd-list__item--interractive.is-active.fd-list__link--navigation-indicator::after,
+.fd-list__item--interractive:active,
+.fd-list__item--interractive:active .fd-list__byline,
+.fd-list__item--interractive:active .fd-list__byline-left,
+.fd-list__item--interractive:active .fd-list__byline-right,
+.fd-list__item--interractive:active .fd-list__content,
+.fd-list__item--interractive:active .fd-list__icon,
+.fd-list__item--interractive:active .fd-list__secondary,
+.fd-list__item--interractive:active .fd-list__thumbnail,
+.fd-list__item--interractive:active .fd-list__title,
+.fd-list__item--interractive:active.fd-list__link--navigation-indicator::after {
+  color: #fff;
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
+}
+.fd-list__item--interractive.is-active .fd-list__byline-right--neutral,
+.fd-list__item--interractive:active .fd-list__byline-right--neutral {
+  color: #fff;
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
+}
+.fd-list__item--interractive.is-active .fd-list__byline-right--positive,
+.fd-list__item--interractive:active .fd-list__byline-right--positive {
+  color: #fff;
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
+}
+.fd-list__item--interractive.is-active .fd-list__byline-right--critical,
+.fd-list__item--interractive:active .fd-list__byline-right--critical {
+  color: #fff;
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
+}
+.fd-list__item--interractive.is-active .fd-list__byline-right--negative,
+.fd-list__item--interractive:active .fd-list__byline-right--negative {
+  color: #fff;
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
+}
+.fd-list__item--interractive.is-active .fd-list__byline-right--informative,
+.fd-list__item--interractive:active .fd-list__byline-right--informative {
+  color: #fff;
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
+}
 .fd-list__item--action {
   padding: 0;
   text-align: center;
@@ -15312,12 +15270,9 @@
   border-bottom: .0625rem solid #0854a0;
   border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
 }
-.fd-list__item--action .fd-list__title.is-selected.is-hover,
-.fd-list__item--action .fd-list__title.is-selected:hover,
-.fd-list__item--action .fd-list__title[aria-selected=true].is-hover,
-.fd-list__item--action .fd-list__title[aria-selected=true]:hover {
-  background: #d8e9f8;
-  background: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+.fd-list__item--action .fd-list__title.is-selected .fd-list__link,
+.fd-list__item--action .fd-list__title[aria-selected=true] .fd-list__link {
+  background: inherit
 }
 .fd-list__item--action .fd-list__title.is-active,
 .fd-list__item--action .fd-list__title:active {
@@ -15370,42 +15325,48 @@
 .fd-list__item--action .fd-list__title:active .fd-list__title,
 .fd-list__item--action .fd-list__title:active.fd-list__link--navigation-indicator::after {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list__item--action .fd-list__title.is-active .fd-list__byline-right--neutral,
 .fd-list__item--action .fd-list__title:active .fd-list__byline-right--neutral {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list__item--action .fd-list__title.is-active .fd-list__byline-right--positive,
 .fd-list__item--action .fd-list__title:active .fd-list__byline-right--positive {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list__item--action .fd-list__title.is-active .fd-list__byline-right--critical,
 .fd-list__item--action .fd-list__title:active .fd-list__byline-right--critical {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list__item--action .fd-list__title.is-active .fd-list__byline-right--negative,
 .fd-list__item--action .fd-list__title:active .fd-list__byline-right--negative {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list__item--action .fd-list__title.is-active .fd-list__byline-right--informative,
 .fd-list__item--action .fd-list__title:active .fd-list__byline-right--informative {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list__item--action .fd-list__title.is-focus,
 .fd-list__item--action .fd-list__title:focus {
-  z-index: 5;
-  outline-style: dotted;
+  outline-offset: -.125rem;
   outline-width: .0625rem;
   outline-width: var(--sapContent_FocusWidth,.0625rem);
   outline-color: #000;
   outline-color: var(--sapContent_FocusColor,#000);
-  outline-offset: -.125rem
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
 }
 .fd-list__item--action .fd-list__title.is-focus.is-active,
 .fd-list__item--action .fd-list__title.is-focus:active,
@@ -15416,6 +15377,62 @@
 }
 .fd-list__item--action .fd-list__title::-moz-focus-inner {
   border: 0
+}
+.fd-list__item--growing .fd-list__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fd-list__item--growing .fd-list__title-text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: inherit;
+  text-shadow: inherit;
+  font-size: inherit;
+  margin-left: .5rem
+}
+.fd-list__item--growing .fd-list__title-text::after,
+.fd-list__item--growing .fd-list__title-text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-list__item--growing .fd-list__title-text[dir=rtl],
+[dir=rtl] .fd-list__item--growing .fd-list__title-text {
+  margin-right: .5rem;
+  margin-left: 0
+}
+.fd-list__item.is-selected,
+.fd-list__item[aria-selected=true] {
+  background: #e5f0fa;
+  background: var(--sapList_SelectionBackgroundColor,#e5f0fa);
+  border-bottom: .0625rem solid #0854a0;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
+}
+.fd-list__item.is-selected .fd-list__link,
+.fd-list__item[aria-selected=true] .fd-list__link {
+  background: inherit
 }
 .fd-list__secondary,
 .fd-list__title {
@@ -15428,7 +15445,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -15536,7 +15552,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -15595,12 +15610,9 @@
   border-bottom: .0625rem solid #0854a0;
   border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
 }
-.fd-list__link.is-selected.is-hover,
-.fd-list__link.is-selected:hover,
-.fd-list__link[aria-selected=true].is-hover,
-.fd-list__link[aria-selected=true]:hover {
-  background: #d8e9f8;
-  background: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+.fd-list__link.is-selected .fd-list__link,
+.fd-list__link[aria-selected=true] .fd-list__link {
+  background: inherit
 }
 .fd-list__link.is-active,
 .fd-list__link:active {
@@ -15653,32 +15665,38 @@
 .fd-list__link:active .fd-list__title,
 .fd-list__link:active.fd-list__link--navigation-indicator::after {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list__link.is-active .fd-list__byline-right--neutral,
 .fd-list__link:active .fd-list__byline-right--neutral {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list__link.is-active .fd-list__byline-right--positive,
 .fd-list__link:active .fd-list__byline-right--positive {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list__link.is-active .fd-list__byline-right--critical,
 .fd-list__link:active .fd-list__byline-right--critical {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list__link.is-active .fd-list__byline-right--negative,
 .fd-list__link:active .fd-list__byline-right--negative {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list__link.is-active .fd-list__byline-right--informative,
 .fd-list__link:active .fd-list__byline-right--informative {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list__group-header {
   background: #fff;
@@ -15690,10 +15708,12 @@
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  height: 2.75rem
+}
+.fd-list__group-header .fd-list__title {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
   font-weight: 700;
-  height: 2.75rem;
   line-height: 2rem
 }
 .fd-list__footer {
@@ -15728,7 +15748,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -15772,6 +15791,16 @@
 .fd-list__message--information {
   background-color: #f5faff;
   background-color: var(--sapInformationBackground,#f5faff)
+}
+.fd-list .fd-list__button {
+  margin-left: .25rem;
+  margin-left: var(--fdListButtonSpacing,.25rem)
+}
+.fd-list .fd-list__button[dir=rtl],
+[dir=rtl] .fd-list .fd-list__button {
+  margin-left: 0;
+  margin-right: .25rem;
+  margin-right: var(--fdListButtonSpacing,.25rem)
 }
 .fd-list--compact .fd-list__item {
   height: 2rem
@@ -15825,12 +15854,9 @@
   border-bottom: .0625rem solid #0854a0;
   border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
 }
-.fd-list--dropdown .fd-list__item.is-selected.is-hover,
-.fd-list--dropdown .fd-list__item.is-selected:hover,
-.fd-list--dropdown .fd-list__item[aria-selected=true].is-hover,
-.fd-list--dropdown .fd-list__item[aria-selected=true]:hover {
-  background: #d8e9f8;
-  background: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+.fd-list--dropdown .fd-list__item.is-selected .fd-list__link,
+.fd-list--dropdown .fd-list__item[aria-selected=true] .fd-list__link {
+  background: inherit
 }
 .fd-list--dropdown .fd-list__item.is-active,
 .fd-list--dropdown .fd-list__item:active {
@@ -15883,32 +15909,38 @@
 .fd-list--dropdown .fd-list__item:active .fd-list__title,
 .fd-list--dropdown .fd-list__item:active.fd-list__link--navigation-indicator::after {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--neutral,
 .fd-list--dropdown .fd-list__item:active .fd-list__byline-right--neutral {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--positive,
 .fd-list--dropdown .fd-list__item:active .fd-list__byline-right--positive {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--critical,
 .fd-list--dropdown .fd-list__item:active .fd-list__byline-right--critical {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--negative,
 .fd-list--dropdown .fd-list__item:active .fd-list__byline-right--negative {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--informative,
 .fd-list--dropdown .fd-list__item:active .fd-list__byline-right--informative {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list--dropdown.fd-list--compact .fd-list__item {
   height: auto;
@@ -15935,12 +15967,9 @@
   border-bottom: .0625rem solid #0854a0;
   border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
 }
-.fd-list--multi-input .fd-list__item.is-selected.is-hover,
-.fd-list--multi-input .fd-list__item.is-selected:hover,
-.fd-list--multi-input .fd-list__item[aria-selected=true].is-hover,
-.fd-list--multi-input .fd-list__item[aria-selected=true]:hover {
-  background: #d8e9f8;
-  background: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+.fd-list--multi-input .fd-list__item.is-selected .fd-list__link,
+.fd-list--multi-input .fd-list__item[aria-selected=true] .fd-list__link {
+  background: inherit
 }
 .fd-list--multi-input .fd-list__item.is-active,
 .fd-list--multi-input .fd-list__item:active {
@@ -15993,32 +16022,38 @@
 .fd-list--multi-input .fd-list__item:active .fd-list__title,
 .fd-list--multi-input .fd-list__item:active.fd-list__link--navigation-indicator::after {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list--multi-input .fd-list__item.is-active .fd-list__byline-right--neutral,
 .fd-list--multi-input .fd-list__item:active .fd-list__byline-right--neutral {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list--multi-input .fd-list__item.is-active .fd-list__byline-right--positive,
 .fd-list--multi-input .fd-list__item:active .fd-list__byline-right--positive {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list--multi-input .fd-list__item.is-active .fd-list__byline-right--critical,
 .fd-list--multi-input .fd-list__item:active .fd-list__byline-right--critical {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list--multi-input .fd-list__item.is-active .fd-list__byline-right--negative,
 .fd-list--multi-input .fd-list__item:active .fd-list__byline-right--negative {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list--multi-input .fd-list__item.is-active .fd-list__byline-right--informative,
 .fd-list--multi-input .fd-list__item:active .fd-list__byline-right--informative {
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-list--multi-input .fd-list__label {
   font-size: .875rem;
@@ -16030,7 +16065,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -16106,6 +16140,10 @@
   min-width: 7rem;
   max-width: 37.5rem
 }
+.fd-list--dropdown.fd-list--mobile,
+.fd-list--multi-input.fd-list--mobile {
+  max-width: 100%
+}
 .fd-list--dropdown .fd-list__item,
 .fd-list--multi-input .fd-list__item {
   cursor: pointer;
@@ -16157,11 +16195,30 @@
 }
 .fd-list--byline .fd-list__item {
   width: 100%;
-  height: 5rem;
+  min-height: 5rem;
+  height: auto;
   padding: 1rem 1rem;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fd-list--byline .fd-list__item.is-focus,
+.fd-list--byline .fd-list__item:focus {
+  z-index: 5;
+  pointer-events: none
+}
+.fd-list--byline .fd-list__item .fd-list__item-counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  min-width: 2rem
 }
 .fd-list--byline .fd-list__thumbnail {
   font-size: .875rem;
@@ -16173,21 +16230,11 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   pointer-events: none;
   width: 3rem;
   height: 3rem;
@@ -16198,6 +16245,8 @@
   border-radius: .25rem;
   margin-right: .75rem;
   font-size: 2.5rem;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
   color: #6a6d70;
   color: var(--sapContent_NonInteractiveIconColor,#6a6d70)
 }
@@ -16213,16 +16262,7 @@
   background: inherit;
   font-size: inherit;
   border-radius: inherit;
-  line-height: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center
+  line-height: 1
 }
 .fd-list--byline .fd-list__thumbnail[dir=rtl],
 [dir=rtl] .fd-list--byline .fd-list__thumbnail {
@@ -16239,7 +16279,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -16258,7 +16297,9 @@
   min-height: 3rem;
   min-width: 3rem;
   height: 100%;
-  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   padding: .125rem 0
 }
 .fd-list--byline .fd-list__content::after,
@@ -16269,7 +16310,8 @@
 }
 .fd-list--byline .fd-list__title {
   font-size: 1rem;
-  font-size: var(--sapFontLargeSize,1rem)
+  font-size: var(--sapFontLargeSize,1rem);
+  min-height: 1rem
 }
 .fd-list--byline .fd-list__byline {
   font-size: .875rem;
@@ -16281,7 +16323,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -16294,7 +16335,8 @@
   font-size: var(--sapFontSize,.875rem);
   color: #6a6d70;
   color: var(--sapContent_LabelColor,#6a6d70);
-  line-height: 1rem
+  line-height: 1rem;
+  padding-top: .75rem
 }
 .fd-list--byline .fd-list__byline::after,
 .fd-list--byline .fd-list__byline::before {
@@ -16307,6 +16349,14 @@
   display: -ms-flexbox;
   display: flex
 }
+.fd-list--byline .fd-list__link--more {
+  text-transform: uppercase;
+  pointer-events: all
+}
+.fd-list--byline .fd-list__byline--wrap,
+.fd-list--byline .fd-list__title--wrap {
+  white-space: normal
+}
 .fd-list--byline .fd-list__byline-left {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -16317,7 +16367,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -16330,7 +16379,9 @@
   color: #6a6d70;
   color: var(--sapContent_LabelColor,#6a6d70);
   padding-right: .5rem;
-  line-height: 1rem
+  line-height: 1rem;
+  -ms-flex-item-align: end;
+  align-self: flex-end
 }
 .fd-list--byline .fd-list__byline-left::after,
 .fd-list--byline .fd-list__byline-left::before {
@@ -16353,7 +16404,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -16366,7 +16416,10 @@
   color: #6a6d70;
   color: var(--sapContent_LabelColor,#6a6d70);
   padding-left: .5rem;
-  line-height: 1rem
+  line-height: 1rem;
+  text-align: right;
+  -ms-flex-item-align: end;
+  align-self: flex-end
 }
 .fd-list--byline .fd-list__byline-right::after,
 .fd-list--byline .fd-list__byline-right::before {
@@ -16377,7 +16430,8 @@
 .fd-list--byline .fd-list__byline-right[dir=rtl],
 [dir=rtl] .fd-list--byline .fd-list__byline-right {
   padding-left: 0;
-  padding-right: .5rem
+  padding-right: .5rem;
+  text-align: left
 }
 .fd-list--byline .fd-list__byline-right--neutral {
   color: #6a6d70;
@@ -16396,8 +16450,12 @@
   color: var(--sapNegativeTextColor,#b00)
 }
 .fd-list--byline .fd-list__byline-right--informative {
-  color: #053b70;
-  color: var(--sapInformativeTextColor,#053b70)
+  color: #0a6ed1;
+  color: var(--sapInformativeTextColor,#0a6ed1)
+}
+.fd-list--byline .fd-list__byline-left--wrap,
+.fd-list--byline .fd-list__byline-right--wrap {
+  white-space: normal
 }
 .fd-list--byline.fd-list--compact .fd-list__title {
   font-size: .875rem;
@@ -16666,16 +16724,16 @@
 }
 .fd-list--navigation-indication .is-navigated {
   -webkit-box-shadow: inset -.1875rem 0 0 0 #0854a0;
-  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0);
+  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapList_SelectionBorderColor,#0854a0);
   box-shadow: inset -.1875rem 0 0 0 #0854a0;
-  box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0)
+  box-shadow: inset -.1875rem 0 0 0 var(--sapList_SelectionBorderColor,#0854a0)
 }
 .fd-list--navigation-indication .is-navigated[dir=rtl],
 [dir=rtl] .fd-list--navigation-indication .is-navigated {
   -webkit-box-shadow: inset .1875rem 0 0 0 #0854a0;
-  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0);
+  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapList_SelectionBorderColor,#0854a0);
   box-shadow: inset .1875rem 0 0 0 #0854a0;
-  box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0)
+  box-shadow: inset .1875rem 0 0 0 var(--sapList_SelectionBorderColor,#0854a0)
 }
 .fd-list--selection .fd-list__item {
   padding-left: 2.75rem;
@@ -16699,12 +16757,9 @@
   border-bottom: .0625rem solid #0854a0;
   border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
 }
-.fd-list--selection .fd-list__item.is-selected.is-hover,
-.fd-list--selection .fd-list__item.is-selected:hover,
-.fd-list--selection .fd-list__item[aria-selected=true].is-hover,
-.fd-list--selection .fd-list__item[aria-selected=true]:hover {
-  background: #d8e9f8;
-  background: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+.fd-list--selection .fd-list__item.is-selected .fd-list__link,
+.fd-list--selection .fd-list__item[aria-selected=true] .fd-list__link {
+  background: inherit
 }
 .fd-list--selection .fd-list__form-item {
   position: absolute;
@@ -16801,7 +16856,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -16835,7 +16889,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -16861,7 +16914,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -16907,7 +16959,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -16949,7 +17000,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -16976,7 +17026,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -17015,7 +17064,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -17139,7 +17187,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -17175,7 +17222,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -17242,9 +17288,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-menu__addon-after--submenu::before {
   content: ""
@@ -17255,9 +17299,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-menu__addon-after--submenu[dir=rtl]::before,
 [dir=rtl] .fd-menu__addon-after--submenu::before {
@@ -17273,7 +17315,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -17473,7 +17514,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -17497,7 +17537,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -17548,7 +17587,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -17572,7 +17610,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -17595,7 +17632,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -17709,7 +17745,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -17751,7 +17786,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -17799,7 +17833,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -17905,7 +17938,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -18026,8 +18058,6 @@
   text-decoration: inherit;
   text-transform: none;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   position: absolute;
   right: 0
 }
@@ -18047,9 +18077,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-message-strip--warning::before {
   content: ""
@@ -18064,9 +18092,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-message-strip--warning[dir=rtl]::after,
 [dir=rtl] .fd-message-strip--warning::after {
@@ -18088,9 +18114,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-message-strip--error::before {
   content: ""
@@ -18101,9 +18125,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-message-strip--error[dir=rtl]::after,
 [dir=rtl] .fd-message-strip--error::after {
@@ -18125,9 +18147,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-message-strip--success::before {
   content: ""
@@ -18138,9 +18158,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-message-strip--success[dir=rtl]::after,
 [dir=rtl] .fd-message-strip--success::after {
@@ -18162,9 +18180,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-message-strip--information::before {
   content: ""
@@ -18175,9 +18191,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-message-strip--information[dir=rtl]::after,
 [dir=rtl] .fd-message-strip--information::after {
@@ -18207,7 +18221,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -18231,7 +18244,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -18274,7 +18286,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -18314,7 +18325,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -18346,7 +18356,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -18384,7 +18393,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -18421,7 +18429,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -18452,7 +18459,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -18488,7 +18494,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -18517,7 +18522,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -18543,7 +18547,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -18591,7 +18594,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -18616,7 +18618,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -18641,7 +18642,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -18665,7 +18665,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -18693,9 +18692,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-notification__indicator--error::before {
   content: ""
@@ -18709,9 +18706,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-notification__indicator--success::before {
   content: ""
@@ -18725,9 +18720,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-notification__indicator--warning::before {
   content: ""
@@ -18741,9 +18734,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-notification__indicator--information::before {
   content: ""
@@ -18764,7 +18755,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -18801,7 +18791,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -18876,7 +18865,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -18905,7 +18893,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -18956,7 +18943,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -19001,7 +18987,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -19032,8 +19017,8 @@
   color: var(--sapNegativeTextColor,#b00)
 }
 .fd-numeric-content__kpi--informative {
-  color: #053b70;
-  color: var(--sapInformativeTextColor,#053b70)
+  color: #0a6ed1;
+  color: var(--sapInformativeTextColor,#0a6ed1)
 }
 .fd-numeric-content__scale {
   font-size: .875rem;
@@ -19045,7 +19030,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -19093,7 +19077,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -19139,12 +19122,12 @@
 }
 .fd-numeric-content__scale--informative .fd-numeric-content__scale-arrow [class*=sap-icon],
 .fd-numeric-content__scale--informative .fd-numeric-content__scale-arrow[class*=sap-icon] {
-  color: #053b70;
-  color: var(--sapInformativeTextColor,#053b70)
+  color: #0a6ed1;
+  color: var(--sapInformativeTextColor,#0a6ed1)
 }
 .fd-numeric-content__scale--informative .fd-numeric-content__scale-text {
-  color: #053b70;
-  color: var(--sapInformativeTextColor,#053b70)
+  color: #0a6ed1;
+  color: var(--sapInformativeTextColor,#0a6ed1)
 }
 .fd-numeric-content--m {
   height: 2.5rem
@@ -19309,7 +19292,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -19401,7 +19383,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -19445,7 +19426,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -19485,7 +19465,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -19568,8 +19547,8 @@
   color: var(--sapNegativeElementColor,#b00)
 }
 .fd-object-status--informative {
-  color: #053b70;
-  color: var(--sapInformativeTextColor,#053b70)
+  color: #0a6ed1;
+  color: var(--sapInformativeTextColor,#0a6ed1)
 }
 .fd-object-status--informative .fd-object-status__icon [class*=sap-icon],
 .fd-object-status--informative .fd-object-status__icon[class*=sap-icon] {
@@ -20742,7 +20721,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -20775,7 +20753,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -20799,7 +20776,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -20823,7 +20799,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -20847,7 +20822,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -20883,7 +20857,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -20910,7 +20883,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -20935,7 +20907,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -20968,7 +20939,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -20996,7 +20966,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -21025,7 +20994,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -21141,7 +21109,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -21261,9 +21228,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-pagination__link--previous::before {
   content: ""
@@ -21274,9 +21239,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-pagination__link--previous[dir=rtl]::before,
 [dir=rtl] .fd-pagination__link--previous::before {
@@ -21291,9 +21254,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-pagination__link--next::before {
   content: ""
@@ -21304,9 +21265,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-pagination__link--next[dir=rtl]::before,
 [dir=rtl] .fd-pagination__link--next::before {
@@ -21326,7 +21285,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -21430,7 +21388,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -21457,7 +21414,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -21499,7 +21455,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -21732,7 +21687,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -21785,7 +21739,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -21897,7 +21850,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -21920,7 +21872,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -21990,7 +21941,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -22023,7 +21973,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -22248,7 +22197,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -22276,7 +22224,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -22327,7 +22274,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -22358,7 +22304,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -22410,7 +22355,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -22601,7 +22545,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -22636,7 +22579,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -22650,19 +22592,19 @@
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-quick-view .fd-bar {
+.fd-quick-view__content .fd-bar {
   padding: 0
 }
-.fd-quick-view .fd-bar--header-with-subheader {
+.fd-quick-view__content .fd-bar--header-with-subheader {
   height: auto;
   padding-bottom: .75rem
 }
-.fd-quick-view .fd-bar--header-with-subheader .fd-avatar {
+.fd-quick-view__content .fd-bar--header-with-subheader .fd-avatar {
   margin-right: .75rem
 }
-.fd-quick-view .fd-bar--header-with-subheader .fd-bar__left,
-.fd-quick-view .fd-bar--header-with-subheader .fd-bar__middle,
-.fd-quick-view .fd-bar--header-with-subheader .fd-bar__right {
+.fd-quick-view__content .fd-bar--header-with-subheader .fd-bar__left,
+.fd-quick-view__content .fd-bar--header-with-subheader .fd-bar__middle,
+.fd-quick-view__content .fd-bar--header-with-subheader .fd-bar__right {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start
@@ -22681,7 +22623,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -22735,7 +22676,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -22984,7 +22924,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -23289,7 +23228,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -23341,7 +23279,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -23393,7 +23330,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -23424,7 +23360,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -23456,7 +23391,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -23480,7 +23414,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -23513,7 +23446,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -23580,7 +23512,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -23607,7 +23538,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -23622,7 +23552,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -24202,7 +24131,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -24259,7 +24187,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -24302,7 +24229,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -24366,7 +24292,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -24422,7 +24347,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -24467,7 +24391,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -24489,6 +24412,11 @@
 }
 .fd-shellbar__action > * {
   vertical-align: middle
+}
+.fd-shellbar__action .fd-shellbar__counter--overflowed {
+  position: absolute;
+  right: .25rem;
+  top: -.25rem
 }
 .fd-shellbar__action .fd-shellbar__counter--notification {
   max-width: 2.5rem;
@@ -24675,7 +24603,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -25189,7 +25116,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -25221,7 +25147,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -25453,7 +25378,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -25506,7 +25430,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -26563,7 +26486,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -26605,7 +26527,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -26719,7 +26640,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -26764,7 +26684,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -26787,7 +26706,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -26908,7 +26826,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -26923,7 +26840,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -26994,7 +26910,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -27028,7 +26943,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -27067,7 +26981,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -27146,7 +27059,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -27179,7 +27091,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -27432,7 +27343,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -27586,8 +27496,8 @@
   background-color: var(--sapList_Hover_Background,#f5f5f5)
 }
 .fd-table__cell--fixed:last-of-type {
-  border-right: .125rem #d8d8d8 solid;
-  border-right: .125rem var(--sapList_TableFixedBorderColor,#d8d8d8) solid
+  border-right: .125rem #8b8b8b solid;
+  border-right: .125rem var(--sapList_TableFixedBorderColor,#8b8b8b) solid
 }
 .fd-table__cell--fixed[dir=rtl],
 [dir=rtl] .fd-table__cell--fixed {
@@ -27597,8 +27507,8 @@
 .fd-table__cell--fixed[dir=rtl]:last-of-type,
 [dir=rtl] .fd-table__cell--fixed:last-of-type {
   border-right: none;
-  border-left: .125rem #d8d8d8 solid;
-  border-left: .125rem var(--sapList_TableFixedBorderColor,#d8d8d8) solid
+  border-left: .125rem #8b8b8b solid;
+  border-left: .125rem var(--sapList_TableFixedBorderColor,#8b8b8b) solid
 }
 .fd-table__cell:first-child {
   margin-left: 0;
@@ -27697,14 +27607,16 @@
   background-color: #0854a0;
   background-color: var(--sapList_Active_Background,#0854a0);
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-table__cell--activable.is-active .fd-table__cell,
 .fd-table__cell--activable:active .fd-table__cell,
 .fd-table__row--activable.is-active .fd-table__cell,
 .fd-table__row--activable:active .fd-table__cell {
   border-bottom-color: #0854a0;
-  border-bottom-color: var(--sapList_SelectionBorderColor,#0854a0)
+  border-bottom-color: var(--sapList_SelectionBorderColor,#0854a0);
+  text-shadow: none
 }
 .fd-table__cell--activable.is-active .fd-table__cell.is-hover,
 .fd-table__cell--activable.is-active .fd-table__cell:hover,
@@ -27742,6 +27654,24 @@
 .fd-table__row--activable:active .fd-object-status {
   color: inherit
 }
+.fd-table__cell--activable.is-active--focusable.is-focus,
+.fd-table__cell--activable.is-active--focusable:focus,
+.fd-table__cell--activable:active--focusable.is-focus,
+.fd-table__cell--activable:active--focusable:focus,
+.fd-table__row--activable.is-active--focusable.is-focus,
+.fd-table__row--activable.is-active--focusable:focus,
+.fd-table__row--activable:active--focusable.is-focus,
+.fd-table__row--activable:active--focusable:focus {
+  outline-offset: -.1875rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted);
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+}
 .fd-table__cell--focusable.is-focus,
 .fd-table__cell--focusable:focus,
 .fd-table__row--focusable.is-focus,
@@ -27777,7 +27707,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -27877,12 +27806,14 @@
   background-color: #0854a0;
   background-color: var(--sapList_Active_Background,#0854a0);
   color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
 }
 .fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary .fd-table__cell,
 .fd-table--pop-in .fd-table__row--main.fd-table__row--activable:active + .fd-table__row--secondary .fd-table__cell {
   border-bottom-color: #0854a0;
-  border-bottom-color: var(--sapList_SelectionBorderColor,#0854a0)
+  border-bottom-color: var(--sapList_SelectionBorderColor,#0854a0);
+  text-shadow: none
 }
 .fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary .fd-table__cell.is-hover,
 .fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary .fd-table__cell:hover,
@@ -27992,7 +27923,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -28051,7 +27981,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -28078,7 +28007,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -28118,7 +28046,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -28311,7 +28238,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -28375,7 +28301,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -28413,7 +28338,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -28443,7 +28367,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -28471,7 +28394,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -28512,7 +28434,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -28538,9 +28459,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-tabs__process-icon::before {
   content: ""
@@ -28555,7 +28474,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -28588,7 +28506,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -28617,7 +28534,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -28839,7 +28755,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -28862,7 +28777,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -28900,6 +28814,10 @@
   -ms-hyphens: auto;
   hyphens: auto
 }
+.fd-text__link--more {
+  text-transform: uppercase;
+  cursor: pointer
+}
 /*!
 .fd-textarea
 */
@@ -28913,7 +28831,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -29185,7 +29102,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -29224,7 +29140,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -29307,7 +29222,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -29380,7 +29294,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -29408,7 +29321,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -29488,7 +29400,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -29679,7 +29590,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -29704,7 +29614,8 @@
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  overflow: hidden
+  overflow: hidden;
+  max-height: 2.125rem
 }
 .fd-tile--feed .fd-tile__content-byline {
   white-space: nowrap;
@@ -29735,7 +29646,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -29776,7 +29686,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -29860,7 +29769,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -29927,7 +29835,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -29964,7 +29871,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -30060,7 +29966,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -30132,15 +30037,6 @@
   width: 1.375rem;
   min-width: 1.375rem;
   max-width: 1.375rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 50%;
@@ -30154,23 +30050,7 @@
 }
 .fd-tile--action .fd-tile__action-close [class*=sap-icon]::before,
 .fd-tile--action .fd-tile__action-close[class*=sap-icon]::before {
-  height: 2rem;
-  min-height: 2rem;
-  max-height: 2rem;
-  width: 2rem;
-  min-width: 2rem;
-  max-width: 2rem;
-  top: 0;
-  right: 0;
-  left: auto;
-  bottom: auto
-}
-.fd-tile--action .fd-tile__action-close [class*=sap-icon]::before[dir=rtl],
-.fd-tile--action .fd-tile__action-close[class*=sap-icon]::before[dir=rtl],
-[dir=rtl] .fd-tile--action .fd-tile__action-close [class*=sap-icon]::before,
-[dir=rtl] .fd-tile--action .fd-tile__action-close[class*=sap-icon]::before {
-  right: auto;
-  left: 0
+  line-height: 1.25rem
 }
 .fd-tile--action .fd-tile__action-close.is-focus,
 .fd-tile--action .fd-tile__action-close:focus {
@@ -30251,7 +30131,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -30388,7 +30267,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -30468,7 +30346,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -30651,7 +30528,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -30705,7 +30581,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -30739,7 +30614,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -30776,7 +30650,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -30811,7 +30684,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -30869,7 +30741,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -30955,7 +30826,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -30988,7 +30858,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -31017,7 +30886,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -31078,7 +30946,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -31147,7 +31014,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -31209,7 +31075,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -31247,9 +31112,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-token__close::before {
   content: ""
@@ -31397,7 +31260,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -31495,7 +31357,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -31571,7 +31432,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -31604,7 +31464,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -31631,7 +31490,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -31700,7 +31558,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -33260,7 +33117,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -33302,7 +33158,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -33508,7 +33363,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -33580,7 +33434,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -33668,7 +33521,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -34236,7 +34088,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -34305,7 +34156,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -34450,12 +34300,12 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
+  position: relative;
   width: auto;
   border-style: solid;
   border-width: .0625rem;
@@ -34652,14 +34502,21 @@
 .fd-step-input[readonly]::placeholder {
   color: transparent
 }
-.fd-step-input:focus-within {
-  outline-offset: -.1875rem;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
+.fd-step-input:focus-within::after {
+  border-width: .0625rem;
+  border-width: var(--sapContent_FocusWidth,.0625rem);
+  border-color: #000;
+  border-color: var(--sapContent_FocusColor,#000);
+  border-style: dotted;
+  border-style: var(--sapContent_FocusStyle,dotted);
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  top: .0625rem;
+  bottom: .0625rem;
+  left: .0625rem;
+  right: .0625rem;
+  z-index: 10
 }
 .fd-step-input__button.fd-button {
   width: 2.125rem;
@@ -34745,7 +34602,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -34813,7 +34669,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -34925,7 +34780,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -34945,9 +34799,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .sap-icon--accidental-leave::before {
   content: ""
@@ -36934,7 +36786,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -36967,7 +36818,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -37024,7 +36874,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -37073,7 +36922,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -37679,7 +37527,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -37703,7 +37550,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -37726,7 +37572,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -37775,7 +37620,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -37805,7 +37649,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -37898,17 +37741,17 @@
   width: .25rem;
   min-width: auto
 }
+.fd-wizard__step--stacked:last-child {
+  padding-right: 2.375rem
+}
+.fd-wizard__step--stacked:last-child[dir=rtl],
+[dir=rtl] .fd-wizard__step--stacked:last-child {
+  padding-right: 0;
+  padding-left: 2.375rem
+}
 .fd-wizard__step--stacked .fd-wizard__connector,
 .fd-wizard__step--stacked .fd-wizard__label-container {
   display: none
-}
-.fd-wizard__step--stacked.fd-wizard__step--upcoming:last-child {
-  padding-right: 2.375rem
-}
-.fd-wizard__step--stacked.fd-wizard__step--upcoming:last-child[dir=rtl],
-[dir=rtl] .fd-wizard__step--stacked.fd-wizard__step--upcoming:last-child {
-  padding-right: 0;
-  padding-left: 2.375rem
 }
 .fd-wizard__step--stacked.fd-wizard__step--upcoming:nth-child(1) {
   z-index: calc(10 - 1)
@@ -37957,7 +37800,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -37997,7 +37839,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -38055,7 +37896,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -38099,7 +37939,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -38130,7 +37969,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -38162,7 +38000,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -38200,7 +38037,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -38253,7 +38089,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -38294,7 +38129,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -38325,7 +38159,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -38349,7 +38182,6 @@
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;

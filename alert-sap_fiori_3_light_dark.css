@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.15.0
+ * Fundamental Library Styles v0.16.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -18,7 +18,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -66,9 +65,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-alert__close::before {
   content: ""
@@ -165,8 +162,6 @@
   text-decoration: inherit;
   text-transform: none;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   position: absolute;
   right: 0
 }
@@ -186,9 +181,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-alert--warning::before {
   content: ""
@@ -199,9 +192,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-alert--warning[dir=rtl]::after,
 [dir=rtl] .fd-alert--warning::after {
@@ -223,9 +214,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-alert--error::before {
   content: ""
@@ -236,9 +225,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-alert--error[dir=rtl]::after,
 [dir=rtl] .fd-alert--error::after {
@@ -260,9 +247,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-alert--success::before {
   content: ""
@@ -273,9 +258,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-alert--success[dir=rtl]::after,
 [dir=rtl] .fd-alert--success::after {
@@ -297,9 +280,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-alert--information::before {
   content: ""
@@ -310,9 +291,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-alert--information[dir=rtl]::after,
 [dir=rtl] .fd-alert--information::after {
@@ -342,7 +321,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;

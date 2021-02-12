@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.15.0
+ * Fundamental Library Styles v0.16.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -14,12 +14,12 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
+  position: relative;
   width: auto;
   border-style: solid;
   border-width: .0625rem;
@@ -216,14 +216,21 @@
 .fd-step-input[readonly]::placeholder {
   color: transparent
 }
-.fd-step-input:focus-within {
-  outline-offset: -.1875rem;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
+.fd-step-input:focus-within::after {
+  border-width: .0625rem;
+  border-width: var(--sapContent_FocusWidth,.0625rem);
+  border-color: #000;
+  border-color: var(--sapContent_FocusColor,#000);
+  border-style: dotted;
+  border-style: var(--sapContent_FocusStyle,dotted);
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  top: .0625rem;
+  bottom: .0625rem;
+  left: .0625rem;
+  right: .0625rem;
+  z-index: 10
 }
 .fd-step-input__button.fd-button {
   width: 2.125rem;

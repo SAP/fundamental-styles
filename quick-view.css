@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.15.0
+ * Fundamental Library Styles v0.16.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -14,7 +14,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -49,7 +48,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -63,19 +61,19 @@
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-quick-view .fd-bar {
+.fd-quick-view__content .fd-bar {
   padding: 0
 }
-.fd-quick-view .fd-bar--header-with-subheader {
+.fd-quick-view__content .fd-bar--header-with-subheader {
   height: auto;
   padding-bottom: .75rem
 }
-.fd-quick-view .fd-bar--header-with-subheader .fd-avatar {
+.fd-quick-view__content .fd-bar--header-with-subheader .fd-avatar {
   margin-right: .75rem
 }
-.fd-quick-view .fd-bar--header-with-subheader .fd-bar__left,
-.fd-quick-view .fd-bar--header-with-subheader .fd-bar__middle,
-.fd-quick-view .fd-bar--header-with-subheader .fd-bar__right {
+.fd-quick-view__content .fd-bar--header-with-subheader .fd-bar__left,
+.fd-quick-view__content .fd-bar--header-with-subheader .fd-bar__middle,
+.fd-quick-view__content .fd-bar--header-with-subheader .fd-bar__right {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start
@@ -94,7 +92,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;

@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.15.0
+ * Fundamental Library Styles v0.16.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -33,7 +33,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -108,8 +107,8 @@
 }
 .fd-table__cell {
   text-align: left;
-  text-shadow: none;
-  text-shadow: var(--sapContent_TextShadow,none);
+  text-shadow: -1px 0 #fff,0 1px #fff,1px 0 #fff,0 -1px #fff;
+  text-shadow: var(--sapContent_TextShadow,-1px 0 #fff,0 1px #fff,1px 0 #fff,0 -1px #fff);
   height: 2.75rem;
   padding: 0 .5rem;
   color: inherit;
@@ -298,14 +297,16 @@
   background-color: #ec8b46;
   background-color: var(--sapList_Active_Background,#ec8b46);
   color: #000;
-  color: var(--sapList_Active_TextColor,#000)
+  color: var(--sapList_Active_TextColor,#000);
+  text-shadow: none
 }
 .fd-table__cell--activable.is-active .fd-table__cell,
 .fd-table__cell--activable:active .fd-table__cell,
 .fd-table__row--activable.is-active .fd-table__cell,
 .fd-table__row--activable:active .fd-table__cell {
   border-bottom-color: #000;
-  border-bottom-color: var(--sapList_SelectionBorderColor,#000)
+  border-bottom-color: var(--sapList_SelectionBorderColor,#000);
+  text-shadow: none
 }
 .fd-table__cell--activable.is-active .fd-table__cell.is-hover,
 .fd-table__cell--activable.is-active .fd-table__cell:hover,
@@ -343,6 +344,24 @@
 .fd-table__row--activable:active .fd-object-status {
   color: inherit
 }
+.fd-table__cell--activable.is-active--focusable.is-focus,
+.fd-table__cell--activable.is-active--focusable:focus,
+.fd-table__cell--activable:active--focusable.is-focus,
+.fd-table__cell--activable:active--focusable:focus,
+.fd-table__row--activable.is-active--focusable.is-focus,
+.fd-table__row--activable.is-active--focusable:focus,
+.fd-table__row--activable:active--focusable.is-focus,
+.fd-table__row--activable:active--focusable:focus {
+  outline-offset: -.1875rem;
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted);
+  outline-color: #000;
+  outline-color: var(--sapContent_ContrastFocusColor,#000)
+}
 .fd-table__cell--focusable.is-focus,
 .fd-table__cell--focusable:focus,
 .fd-table__row--focusable.is-focus,
@@ -378,7 +397,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -478,12 +496,14 @@
   background-color: #ec8b46;
   background-color: var(--sapList_Active_Background,#ec8b46);
   color: #000;
-  color: var(--sapList_Active_TextColor,#000)
+  color: var(--sapList_Active_TextColor,#000);
+  text-shadow: none
 }
 .fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary .fd-table__cell,
 .fd-table--pop-in .fd-table__row--main.fd-table__row--activable:active + .fd-table__row--secondary .fd-table__cell {
   border-bottom-color: #000;
-  border-bottom-color: var(--sapList_SelectionBorderColor,#000)
+  border-bottom-color: var(--sapList_SelectionBorderColor,#000);
+  text-shadow: none
 }
 .fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary .fd-table__cell.is-hover,
 .fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary .fd-table__cell:hover,

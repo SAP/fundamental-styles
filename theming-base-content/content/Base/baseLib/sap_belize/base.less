@@ -1,11 +1,11 @@
 /**
 * Copyright (c) 2012-2020 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
 * Theming Engine 1.51.0
-* data:{"sModified":"2020-11-18T15:02:05Z"}
+* data:{"sModified":"2021-01-19T08:38:11Z"}
 */
 
 
-/******************* FILE /Base/baseLib/sap_belize/base.less (Version 11.1.24) *******************/
+/******************* FILE /Base/baseLib/sap_belize/base.less (Version 11.1.26) *******************/
 
 
 // [Tags "ThemeSpecific", "Base", "Content", "Color", "Protected"]
@@ -362,10 +362,13 @@
 @sapShell_InteractiveTextColor: @sapShell_TextColor;
 
 // [Tags "!Protected"]
-@sapShell_InteractiveBorderColor: @sapField_BorderColor;
+@sapShell_InteractiveBorderColor: darken(@sapBrandColor, 10);
 
 // [Tags "!Protected"]
 @sapShell_GroupTitleTextColor: @sapTitleColor;
+
+// [Tags "!Protected"]
+@sapShell_GroupTitleTextShadow: 0 0 0.125rem contrast(@sapShell_GroupTitleTextColor, @sapContent_ShadowColor, @sapContent_ContrastShadowColor, @sapContent_ContrastTextThreshold);
 
 // [Tags "!Protected"]
 @sapShell_Hover_Background: darken(@sapBrandColor, 10);
@@ -411,6 +414,21 @@
 
 // [Tags "!Protected"]
 @sapShell_Shadow: 0 0.125rem 0 0 darken(@sapShell_Background, 5);
+
+// [Tags "!Protected"]
+@sapShell_NegativeColor: @sapNegativeColor;
+
+// [Tags "!Protected"]
+@sapShell_CriticalColor: @sapCriticalColor;
+
+// [Tags "!Protected"]
+@sapShell_PositiveColor: @sapPositiveColor;
+
+// [Tags "!Protected"]
+@sapShell_InformativeColor: @sapInformativeColor;
+
+// [Tags "!Protected"]
+@sapShell_NeutralColor: @sapNeutralColor;
 
 // [Tags "!Protected"]
 @sapButton_Background: darken(@sapPrimary4, 3);
@@ -1275,7 +1293,7 @@
 @sapLegendBackgroundColor18: #e6edd1;
 
 // [Tags "!Protected"]
-@sapLegendBackgroundColor19: #f0f7fa;
+@sapLegendBackgroundColor19: #cfebf7;
 
 // [Tags "!Protected"]
 @sapLegendBackgroundColor20: #f0f7fa;

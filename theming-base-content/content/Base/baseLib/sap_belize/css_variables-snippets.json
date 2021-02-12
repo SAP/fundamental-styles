@@ -447,12 +447,17 @@
   "sapShell_InteractiveBorderColor": {
     "prefix": "sapShell_InteractiveBorderColor",
     "body": "var(--sapShell_InteractiveBorderColor)",
-    "description": "Shell Interactive Border Color (The border color of interactive shell content.) Value: #bfbfbf #Base, #Shell, #Color"
+    "description": "Shell Interactive Border Color (The border color of interactive shell content.) Value: #346187 #Base, #Shell, #Color"
   },
   "sapShell_GroupTitleTextColor": {
     "prefix": "sapShell_GroupTitleTextColor",
     "body": "var(--sapShell_GroupTitleTextColor)",
     "description": "Shell Group Title Text Color (The text color for shell group titles.) Value: #333333 #Base, #Shell, #Color, #Font"
+  },
+  "sapShell_GroupTitleTextShadow": {
+    "prefix": "sapShell_GroupTitleTextShadow",
+    "body": "var(--sapShell_GroupTitleTextShadow)",
+    "description": "Shell Group Title Text Shadow (Text shadow of shell group title.) Value: 0 0 0.125rem #fff #Base, #Shell, #Color"
   },
   "sapShell_Hover_Background": {
     "prefix": "sapShell_Hover_Background",
@@ -528,6 +533,31 @@
     "prefix": "sapShell_Shadow",
     "body": "var(--sapShell_Shadow)",
     "description": "Shell Shadow (The shadow of the shell on the content area.) Value: 0 0.125rem 0 0 #b9cbde #Base, #Shell"
+  },
+  "sapShell_NegativeColor": {
+    "prefix": "sapShell_NegativeColor",
+    "body": "var(--sapShell_NegativeColor)",
+    "description": "Shell Negative Color (The negative semantic color for use in shell contexts.) Value: #bb0000 #Base, #Shell, #Color"
+  },
+  "sapShell_CriticalColor": {
+    "prefix": "sapShell_CriticalColor",
+    "body": "var(--sapShell_CriticalColor)",
+    "description": "Shell Critical Color (The critical semantic color for use in shell contexts.) Value: #e78c07 #Base, #Shell, #Color"
+  },
+  "sapShell_PositiveColor": {
+    "prefix": "sapShell_PositiveColor",
+    "body": "var(--sapShell_PositiveColor)",
+    "description": "Shell Positive Color (The positive semantic color for use in shell contexts.) Value: #2b7c2b #Base, #Shell, #Color"
+  },
+  "sapShell_InformativeColor": {
+    "prefix": "sapShell_InformativeColor",
+    "body": "var(--sapShell_InformativeColor)",
+    "description": "Shell Informative Color (The informative semantic color for use in shell contexts.) Value: #427cac #Base, #Shell, #Color"
+  },
+  "sapShell_NeutralColor": {
+    "prefix": "sapShell_NeutralColor",
+    "body": "var(--sapShell_NeutralColor)",
+    "description": "Shell Neutral Color (The neutral semantic color for use in shell contexts.) Value: #5e696e #Base, #Shell, #Color"
   },
   "sapButton_Background": {
     "prefix": "sapButton_Background",
@@ -1952,7 +1982,7 @@
   "sapLegendBackgroundColor19": {
     "prefix": "sapLegendBackgroundColor19",
     "body": "var(--sapLegendBackgroundColor19)",
-    "description": "Legend Background Color 19 (The background color that represents some legend elements.) Value: #f0f7fa #Base, #Legend, #Color"
+    "description": "Legend Background Color 19 (The background color that represents some legend elements.) Value: #cfebf7 #Base, #Legend, #Color"
   },
   "sapLegendBackgroundColor20": {
     "prefix": "sapLegendBackgroundColor20",

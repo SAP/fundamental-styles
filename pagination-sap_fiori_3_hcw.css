@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.15.0
+ * Fundamental Library Styles v0.16.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -17,7 +17,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -42,7 +41,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -75,7 +73,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -103,7 +100,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -132,7 +128,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -144,8 +139,8 @@
   -webkit-text-decoration: var(--fdLink_Text_Decoration,underline);
   text-decoration: underline;
   text-decoration: var(--fdLink_Text_Decoration,underline);
-  text-shadow: none;
-  text-shadow: var(--sapContent_TextShadow,none);
+  text-shadow: -1px 0 #fff,0 1px #fff,1px 0 #fff,0 -1px #fff;
+  text-shadow: var(--sapContent_TextShadow,-1px 0 #fff,0 1px #fff,1px 0 #fff,0 -1px #fff);
   display: inline-block;
   -webkit-transition: all 125ms ease-in;
   transition: all 125ms ease-in;
@@ -248,7 +243,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -260,8 +254,8 @@
   -webkit-text-decoration: var(--fdLink_Text_Decoration,underline);
   text-decoration: underline;
   text-decoration: var(--fdLink_Text_Decoration,underline);
-  text-shadow: none;
-  text-shadow: var(--sapContent_TextShadow,none);
+  text-shadow: -1px 0 #fff,0 1px #fff,1px 0 #fff,0 -1px #fff;
+  text-shadow: var(--sapContent_TextShadow,-1px 0 #fff,0 1px #fff,1px 0 #fff,0 -1px #fff);
   display: inline-block;
   -webkit-transition: all 125ms ease-in;
   transition: all 125ms ease-in;
@@ -368,9 +362,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-pagination__link--previous::before {
   content: ""
@@ -381,9 +373,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-pagination__link--previous[dir=rtl]::before,
 [dir=rtl] .fd-pagination__link--previous::before {
@@ -398,9 +388,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-pagination__link--next::before {
   content: ""
@@ -411,9 +399,7 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
 }
 .fd-pagination__link--next[dir=rtl]::before,
 [dir=rtl] .fd-pagination__link--next::before {

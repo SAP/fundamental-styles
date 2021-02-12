@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.15.0
+ * Fundamental Library Styles v0.16.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -14,7 +14,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -43,7 +42,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -94,7 +92,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -139,7 +136,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -170,8 +166,8 @@
   color: var(--sapNegativeTextColor,#b00)
 }
 .fd-numeric-content__kpi--informative {
-  color: #053b70;
-  color: var(--sapInformativeTextColor,#053b70)
+  color: #0a6ed1;
+  color: var(--sapInformativeTextColor,#0a6ed1)
 }
 .fd-numeric-content__scale {
   font-size: .875rem;
@@ -183,7 +179,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -231,7 +226,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -277,12 +271,12 @@
 }
 .fd-numeric-content__scale--informative .fd-numeric-content__scale-arrow [class*=sap-icon],
 .fd-numeric-content__scale--informative .fd-numeric-content__scale-arrow[class*=sap-icon] {
-  color: #053b70;
-  color: var(--sapInformativeTextColor,#053b70)
+  color: #0a6ed1;
+  color: var(--sapInformativeTextColor,#0a6ed1)
 }
 .fd-numeric-content__scale--informative .fd-numeric-content__scale-text {
-  color: #053b70;
-  color: var(--sapInformativeTextColor,#053b70)
+  color: #0a6ed1;
+  color: var(--sapInformativeTextColor,#0a6ed1)
 }
 .fd-numeric-content--m {
   height: 2.5rem

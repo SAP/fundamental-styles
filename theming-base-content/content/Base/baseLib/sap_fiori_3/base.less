@@ -1,11 +1,11 @@
 /**
 * Copyright (c) 2012-2020 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
 * Theming Engine 1.51.0
-* data:{"sModified":"2020-11-18T15:02:05Z"}
+* data:{"sModified":"2021-01-19T08:38:11Z"}
 */
 
 
-/******************* FILE /Base/baseLib/sap_fiori_3/base.less (Version 11.1.24) *******************/
+/******************* FILE /Base/baseLib/sap_fiori_3/base.less (Version 11.1.26) *******************/
 
 
 // [Tags "ThemeSpecific", "Base", "Content", "Color", "Protected"]
@@ -113,7 +113,7 @@
 @sapNegativeTextColor: @sapNegativeColor;
 @sapCriticalTextColor: @sapCriticalColor;
 @sapPositiveTextColor: @sapPositiveColor;
-@sapInformativeTextColor: darken(@sapInformativeColor, 20);
+@sapInformativeTextColor: @sapInformativeColor;
 @sapNeutralTextColor: @sapNeutralColor;
 @sapErrorColor: @sapNegativeColor;
 @sapWarningColor: @sapCriticalColor;
@@ -370,6 +370,9 @@
 @sapShell_GroupTitleTextColor: @sapTitleColor;
 
 // [Tags "!Protected"]
+@sapShell_GroupTitleTextShadow: 0 0 0.125rem contrast(@sapShell_GroupTitleTextColor, @sapContent_ShadowColor, @sapContent_ContrastShadowColor, @sapContent_ContrastTextThreshold);
+
+// [Tags "!Protected"]
 @sapShell_Hover_Background: darken(@sapShellColor, 7);
 
 // [Tags "!Protected"]
@@ -413,6 +416,21 @@
 
 // [Tags "!Protected"]
 @sapShell_Shadow: 0 0 0.25rem 0 fade(@sapContent_ShadowColor, 40), inset 0 -0.0625rem 0 0 fade(@sapContent_ShadowColor, 20);
+
+// [Tags "!Protected"]
+@sapShell_NegativeColor: lighten(@sapNegativeColor, 40);
+
+// [Tags "!Protected"]
+@sapShell_CriticalColor: lighten(@sapCriticalColor, 25);
+
+// [Tags "!Protected"]
+@sapShell_PositiveColor: lighten(desaturate(@sapPositiveColor,30),50);
+
+// [Tags "!Protected"]
+@sapShell_InformativeColor: lighten(@sapInformativeColor, 41);
+
+// [Tags "!Protected"]
+@sapShell_NeutralColor: lighten(@sapNeutralColor, 41);
 
 // [Tags "!Protected"]
 @sapButton_Background: @sapBaseColor;
@@ -955,7 +973,7 @@
 @sapList_TableFooterBorder: darken(@sapList_BorderColor, 4.9);
 
 // [Tags "!Protected"]
-@sapList_TableFixedBorderColor: darken(@sapList_BorderColor, 4.9);
+@sapList_TableFixedBorderColor: darken(@sapList_BorderColor, 35);
 
 // [Tags "!Protected"]
 @sapScrollBar_FaceColor: darken(@sapScrollBar_TrackColor, 42);

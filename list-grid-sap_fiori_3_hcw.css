@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.15.0
+ * Fundamental Library Styles v0.16.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -17,7 +17,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -47,7 +46,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -69,7 +67,8 @@
   box-shadow: 0 0 0 .0625rem #000;
   box-shadow: var(--sapContent_Shadow0,0 0 0 .0625rem #000);
   height: 100%;
-  position: relative
+  position: relative;
+  overflow: hidden
 }
 .fd-grid-list__item::after,
 .fd-grid-list__item::before {
@@ -87,6 +86,13 @@
   outline-style: dotted;
   outline-style: var(--sapContent_FocusStyle,dotted)
 }
+.fd-grid-list__item.is-focus .fd-grid-list__highlight,
+.fd-grid-list__item:focus .fd-grid-list__highlight {
+  width: .25rem;
+  left: .1875rem;
+  bottom: .1875rem;
+  top: .1875rem
+}
 .fd-grid-list__item .fd-grid-list__radio-input {
   height: 1rem;
   width: 1rem
@@ -97,7 +103,9 @@
 }
 .fd-grid-list__item .fd-grid-list__radio-input.is-focus + .fd-grid-list__radio-label,
 .fd-grid-list__item .fd-grid-list__radio-input:focus + .fd-grid-list__radio-label {
-  outline-offset: 0
+  outline-offset: 0;
+  outline: .125rem dotted #000;
+  outline: var(--sapContent_FocusWidth,.125rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_FocusColor,#000)
 }
 .fd-grid-list__item .fd-grid-list__radio-input + .fd-grid-list__radio-label.is-empty,
 .fd-grid-list__item .fd-grid-list__radio-input + .fd-grid-list__radio-label:empty {
@@ -187,7 +195,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -225,16 +232,6 @@
   color: #000;
   color: var(--sapContent_MarkerTextColor,#000)
 }
-.fd-grid-list__item-counter.is-focus,
-.fd-grid-list__item-counter:focus {
-  outline-offset: 0;
-  outline-width: .125rem;
-  outline-width: var(--sapContent_FocusWidth,.125rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
-}
 .fd-grid-list .fd-grid-list__group-header {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -245,7 +242,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -422,7 +418,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -466,7 +461,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -490,7 +484,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -533,7 +526,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -568,7 +560,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -577,7 +568,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  bottom: 0;
   width: .375rem;
   display: block;
   border-radius: .25rem 0 0 .25rem;
@@ -603,7 +594,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -612,7 +602,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  bottom: 0;
   width: .375rem;
   display: block;
   border-radius: .25rem 0 0 .25rem;
@@ -638,7 +628,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -647,7 +636,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  bottom: 0;
   width: .375rem;
   display: block;
   border-radius: .25rem 0 0 .25rem;
@@ -673,7 +662,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -682,7 +670,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  bottom: 0;
   width: .375rem;
   display: block;
   border-radius: .25rem 0 0 .25rem;

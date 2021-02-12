@@ -38,6 +38,8 @@
   --fdAvatar-Transparent_BackgroundColor: transparent;
   --fdAvatar_Border: none;
   --fdAvatar_Accent_Color: var(--sapContent_ContrastTextColor);
+  /* Avatar Group */
+  --fdAvatarGroup_MoreButton_Border: var(--sapButton_BorderWidth);
   /* Tabs */
   --fdTabs_Selected_Color: var(--sapSelectedColor);
   --fdTabs_Selected_Icon_Color: var(--sapContent_ContrastIconColor);
@@ -74,6 +76,7 @@
   --fdMenu_Text_Shadow: none;
   /* List */
   --fdListBase_Text_Shadow: none;
+  --fdListButtonSpacing: 0.125rem;
   /* Button */
   --fdButton_Text_Shadow: none;
   --fdButton_Emphasized_Border_Width: var(--sapButton_BorderWidth);

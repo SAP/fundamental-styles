@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.15.0
+ * Fundamental Library Styles v0.16.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -14,7 +14,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -44,7 +43,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -105,6 +103,106 @@
 .fd-list__item--no-data .fd-list__title {
   text-align: center
 }
+.fd-list__item--interractive.is-hover,
+.fd-list__item--interractive:hover {
+  background: #2f3943;
+  background: var(--sapList_Hover_Background,#2f3943)
+}
+.fd-list__item--interractive.is-selected,
+.fd-list__item--interractive[aria-selected=true] {
+  background: #344b5f;
+  background: var(--sapList_SelectionBackgroundColor,#344b5f);
+  border-bottom: .0625rem solid #91c8f6;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#91c8f6)
+}
+.fd-list__item--interractive.is-selected .fd-list__link,
+.fd-list__item--interractive[aria-selected=true] .fd-list__link {
+  background: inherit
+}
+.fd-list__item--interractive.is-active,
+.fd-list__item--interractive:active {
+  background: #91c8f6;
+  background: var(--sapList_Active_Background,#91c8f6)
+}
+.fd-list__item--interractive.is-active.is-hover,
+.fd-list__item--interractive.is-active:hover,
+.fd-list__item--interractive:active.is-hover,
+.fd-list__item--interractive:active:hover {
+  background: #91c8f6;
+  background: var(--sapList_Active_Background,#91c8f6)
+}
+.fd-list__item--interractive.is-active.is-selected,
+.fd-list__item--interractive.is-active[aria-selected=true],
+.fd-list__item--interractive:active.is-selected,
+.fd-list__item--interractive:active[aria-selected=true] {
+  background: #91c8f6;
+  background: var(--sapList_Active_Background,#91c8f6)
+}
+.fd-list__item--interractive.is-active.is-selected.is-hover,
+.fd-list__item--interractive.is-active.is-selected:hover,
+.fd-list__item--interractive.is-active[aria-selected=true].is-hover,
+.fd-list__item--interractive.is-active[aria-selected=true]:hover,
+.fd-list__item--interractive:active.is-selected.is-hover,
+.fd-list__item--interractive:active.is-selected:hover,
+.fd-list__item--interractive:active[aria-selected=true].is-hover,
+.fd-list__item--interractive:active[aria-selected=true]:hover {
+  background: #91c8f6;
+  background: var(--sapList_Active_Background,#91c8f6)
+}
+.fd-list__item--interractive.is-active,
+.fd-list__item--interractive.is-active .fd-list__byline,
+.fd-list__item--interractive.is-active .fd-list__byline-left,
+.fd-list__item--interractive.is-active .fd-list__byline-right,
+.fd-list__item--interractive.is-active .fd-list__content,
+.fd-list__item--interractive.is-active .fd-list__icon,
+.fd-list__item--interractive.is-active .fd-list__secondary,
+.fd-list__item--interractive.is-active .fd-list__thumbnail,
+.fd-list__item--interractive.is-active .fd-list__title,
+.fd-list__item--interractive.is-active.fd-list__link--navigation-indicator::after,
+.fd-list__item--interractive:active,
+.fd-list__item--interractive:active .fd-list__byline,
+.fd-list__item--interractive:active .fd-list__byline-left,
+.fd-list__item--interractive:active .fd-list__byline-right,
+.fd-list__item--interractive:active .fd-list__content,
+.fd-list__item--interractive:active .fd-list__icon,
+.fd-list__item--interractive:active .fd-list__secondary,
+.fd-list__item--interractive:active .fd-list__thumbnail,
+.fd-list__item--interractive:active .fd-list__title,
+.fd-list__item--interractive:active.fd-list__link--navigation-indicator::after {
+  color: #29313a;
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
+}
+.fd-list__item--interractive.is-active .fd-list__byline-right--neutral,
+.fd-list__item--interractive:active .fd-list__byline-right--neutral {
+  color: #29313a;
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
+}
+.fd-list__item--interractive.is-active .fd-list__byline-right--positive,
+.fd-list__item--interractive:active .fd-list__byline-right--positive {
+  color: #29313a;
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
+}
+.fd-list__item--interractive.is-active .fd-list__byline-right--critical,
+.fd-list__item--interractive:active .fd-list__byline-right--critical {
+  color: #29313a;
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
+}
+.fd-list__item--interractive.is-active .fd-list__byline-right--negative,
+.fd-list__item--interractive:active .fd-list__byline-right--negative {
+  color: #29313a;
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
+}
+.fd-list__item--interractive.is-active .fd-list__byline-right--informative,
+.fd-list__item--interractive:active .fd-list__byline-right--informative {
+  color: #29313a;
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
+}
 .fd-list__item--action {
   padding: 0;
   text-align: center;
@@ -148,12 +246,9 @@
   border-bottom: .0625rem solid #91c8f6;
   border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#91c8f6)
 }
-.fd-list__item--action .fd-list__title.is-selected.is-hover,
-.fd-list__item--action .fd-list__title.is-selected:hover,
-.fd-list__item--action .fd-list__title[aria-selected=true].is-hover,
-.fd-list__item--action .fd-list__title[aria-selected=true]:hover {
-  background: #395369;
-  background: var(--sapList_Hover_SelectionBackground,#395369)
+.fd-list__item--action .fd-list__title.is-selected .fd-list__link,
+.fd-list__item--action .fd-list__title[aria-selected=true] .fd-list__link {
+  background: inherit
 }
 .fd-list__item--action .fd-list__title.is-active,
 .fd-list__item--action .fd-list__title:active {
@@ -206,42 +301,48 @@
 .fd-list__item--action .fd-list__title:active .fd-list__title,
 .fd-list__item--action .fd-list__title:active.fd-list__link--navigation-indicator::after {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list__item--action .fd-list__title.is-active .fd-list__byline-right--neutral,
 .fd-list__item--action .fd-list__title:active .fd-list__byline-right--neutral {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list__item--action .fd-list__title.is-active .fd-list__byline-right--positive,
 .fd-list__item--action .fd-list__title:active .fd-list__byline-right--positive {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list__item--action .fd-list__title.is-active .fd-list__byline-right--critical,
 .fd-list__item--action .fd-list__title:active .fd-list__byline-right--critical {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list__item--action .fd-list__title.is-active .fd-list__byline-right--negative,
 .fd-list__item--action .fd-list__title:active .fd-list__byline-right--negative {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list__item--action .fd-list__title.is-active .fd-list__byline-right--informative,
 .fd-list__item--action .fd-list__title:active .fd-list__byline-right--informative {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list__item--action .fd-list__title.is-focus,
 .fd-list__item--action .fd-list__title:focus {
-  z-index: 5;
-  outline-style: dotted;
+  outline-offset: -.125rem;
   outline-width: .0625rem;
   outline-width: var(--sapContent_FocusWidth,.0625rem);
   outline-color: #fff;
   outline-color: var(--sapContent_FocusColor,#fff);
-  outline-offset: -.125rem
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
 }
 .fd-list__item--action .fd-list__title.is-focus.is-active,
 .fd-list__item--action .fd-list__title.is-focus:active,
@@ -252,6 +353,62 @@
 }
 .fd-list__item--action .fd-list__title::-moz-focus-inner {
   border: 0
+}
+.fd-list__item--growing .fd-list__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fd-list__item--growing .fd-list__title-text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: inherit;
+  text-shadow: inherit;
+  font-size: inherit;
+  margin-left: .5rem
+}
+.fd-list__item--growing .fd-list__title-text::after,
+.fd-list__item--growing .fd-list__title-text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-list__item--growing .fd-list__title-text[dir=rtl],
+[dir=rtl] .fd-list__item--growing .fd-list__title-text {
+  margin-right: .5rem;
+  margin-left: 0
+}
+.fd-list__item.is-selected,
+.fd-list__item[aria-selected=true] {
+  background: #344b5f;
+  background: var(--sapList_SelectionBackgroundColor,#344b5f);
+  border-bottom: .0625rem solid #91c8f6;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#91c8f6)
+}
+.fd-list__item.is-selected .fd-list__link,
+.fd-list__item[aria-selected=true] .fd-list__link {
+  background: inherit
 }
 .fd-list__secondary,
 .fd-list__title {
@@ -264,7 +421,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -372,7 +528,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -431,12 +586,9 @@
   border-bottom: .0625rem solid #91c8f6;
   border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#91c8f6)
 }
-.fd-list__link.is-selected.is-hover,
-.fd-list__link.is-selected:hover,
-.fd-list__link[aria-selected=true].is-hover,
-.fd-list__link[aria-selected=true]:hover {
-  background: #395369;
-  background: var(--sapList_Hover_SelectionBackground,#395369)
+.fd-list__link.is-selected .fd-list__link,
+.fd-list__link[aria-selected=true] .fd-list__link {
+  background: inherit
 }
 .fd-list__link.is-active,
 .fd-list__link:active {
@@ -489,32 +641,38 @@
 .fd-list__link:active .fd-list__title,
 .fd-list__link:active.fd-list__link--navigation-indicator::after {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list__link.is-active .fd-list__byline-right--neutral,
 .fd-list__link:active .fd-list__byline-right--neutral {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list__link.is-active .fd-list__byline-right--positive,
 .fd-list__link:active .fd-list__byline-right--positive {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list__link.is-active .fd-list__byline-right--critical,
 .fd-list__link:active .fd-list__byline-right--critical {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list__link.is-active .fd-list__byline-right--negative,
 .fd-list__link:active .fd-list__byline-right--negative {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list__link.is-active .fd-list__byline-right--informative,
 .fd-list__link:active .fd-list__byline-right--informative {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list__group-header {
   background: #29313a;
@@ -526,10 +684,12 @@
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  height: 2.75rem
+}
+.fd-list__group-header .fd-list__title {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
   font-weight: 700;
-  height: 2.75rem;
   line-height: 2rem
 }
 .fd-list__footer {
@@ -564,7 +724,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -608,6 +767,16 @@
 .fd-list__message--information {
   background-color: #062e4f;
   background-color: var(--sapInformationBackground,#062e4f)
+}
+.fd-list .fd-list__button {
+  margin-left: .125rem;
+  margin-left: var(--fdListButtonSpacing,.125rem)
+}
+.fd-list .fd-list__button[dir=rtl],
+[dir=rtl] .fd-list .fd-list__button {
+  margin-left: 0;
+  margin-right: .125rem;
+  margin-right: var(--fdListButtonSpacing,.125rem)
 }
 .fd-list--compact .fd-list__item {
   height: 2rem
@@ -661,12 +830,9 @@
   border-bottom: .0625rem solid #91c8f6;
   border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#91c8f6)
 }
-.fd-list--dropdown .fd-list__item.is-selected.is-hover,
-.fd-list--dropdown .fd-list__item.is-selected:hover,
-.fd-list--dropdown .fd-list__item[aria-selected=true].is-hover,
-.fd-list--dropdown .fd-list__item[aria-selected=true]:hover {
-  background: #395369;
-  background: var(--sapList_Hover_SelectionBackground,#395369)
+.fd-list--dropdown .fd-list__item.is-selected .fd-list__link,
+.fd-list--dropdown .fd-list__item[aria-selected=true] .fd-list__link {
+  background: inherit
 }
 .fd-list--dropdown .fd-list__item.is-active,
 .fd-list--dropdown .fd-list__item:active {
@@ -719,32 +885,38 @@
 .fd-list--dropdown .fd-list__item:active .fd-list__title,
 .fd-list--dropdown .fd-list__item:active.fd-list__link--navigation-indicator::after {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--neutral,
 .fd-list--dropdown .fd-list__item:active .fd-list__byline-right--neutral {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--positive,
 .fd-list--dropdown .fd-list__item:active .fd-list__byline-right--positive {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--critical,
 .fd-list--dropdown .fd-list__item:active .fd-list__byline-right--critical {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--negative,
 .fd-list--dropdown .fd-list__item:active .fd-list__byline-right--negative {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--informative,
 .fd-list--dropdown .fd-list__item:active .fd-list__byline-right--informative {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list--dropdown.fd-list--compact .fd-list__item {
   height: auto;
@@ -771,12 +943,9 @@
   border-bottom: .0625rem solid #91c8f6;
   border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#91c8f6)
 }
-.fd-list--multi-input .fd-list__item.is-selected.is-hover,
-.fd-list--multi-input .fd-list__item.is-selected:hover,
-.fd-list--multi-input .fd-list__item[aria-selected=true].is-hover,
-.fd-list--multi-input .fd-list__item[aria-selected=true]:hover {
-  background: #395369;
-  background: var(--sapList_Hover_SelectionBackground,#395369)
+.fd-list--multi-input .fd-list__item.is-selected .fd-list__link,
+.fd-list--multi-input .fd-list__item[aria-selected=true] .fd-list__link {
+  background: inherit
 }
 .fd-list--multi-input .fd-list__item.is-active,
 .fd-list--multi-input .fd-list__item:active {
@@ -829,32 +998,38 @@
 .fd-list--multi-input .fd-list__item:active .fd-list__title,
 .fd-list--multi-input .fd-list__item:active.fd-list__link--navigation-indicator::after {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list--multi-input .fd-list__item.is-active .fd-list__byline-right--neutral,
 .fd-list--multi-input .fd-list__item:active .fd-list__byline-right--neutral {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list--multi-input .fd-list__item.is-active .fd-list__byline-right--positive,
 .fd-list--multi-input .fd-list__item:active .fd-list__byline-right--positive {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list--multi-input .fd-list__item.is-active .fd-list__byline-right--critical,
 .fd-list--multi-input .fd-list__item:active .fd-list__byline-right--critical {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list--multi-input .fd-list__item.is-active .fd-list__byline-right--negative,
 .fd-list--multi-input .fd-list__item:active .fd-list__byline-right--negative {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list--multi-input .fd-list__item.is-active .fd-list__byline-right--informative,
 .fd-list--multi-input .fd-list__item:active .fd-list__byline-right--informative {
   color: #29313a;
-  color: var(--sapList_Active_TextColor,#29313a)
+  color: var(--sapList_Active_TextColor,#29313a);
+  text-shadow: none
 }
 .fd-list--multi-input .fd-list__label {
   font-size: .875rem;
@@ -866,7 +1041,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -942,6 +1116,10 @@
   min-width: 7rem;
   max-width: 37.5rem
 }
+.fd-list--dropdown.fd-list--mobile,
+.fd-list--multi-input.fd-list--mobile {
+  max-width: 100%
+}
 .fd-list--dropdown .fd-list__item,
 .fd-list--multi-input .fd-list__item {
   cursor: pointer;
@@ -993,11 +1171,30 @@
 }
 .fd-list--byline .fd-list__item {
   width: 100%;
-  height: 5rem;
+  min-height: 5rem;
+  height: auto;
   padding: 1rem 1rem;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fd-list--byline .fd-list__item.is-focus,
+.fd-list--byline .fd-list__item:focus {
+  z-index: 5;
+  pointer-events: none
+}
+.fd-list--byline .fd-list__item .fd-list__item-counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  min-width: 2rem
 }
 .fd-list--byline .fd-list__thumbnail {
   font-size: .875rem;
@@ -1009,21 +1206,11 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   pointer-events: none;
   width: 3rem;
   height: 3rem;
@@ -1034,6 +1221,8 @@
   border-radius: .25rem;
   margin-right: .75rem;
   font-size: 2.5rem;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
   color: #d3d7d9;
   color: var(--sapContent_NonInteractiveIconColor,#d3d7d9)
 }
@@ -1049,16 +1238,7 @@
   background: inherit;
   font-size: inherit;
   border-radius: inherit;
-  line-height: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center
+  line-height: 1
 }
 .fd-list--byline .fd-list__thumbnail[dir=rtl],
 [dir=rtl] .fd-list--byline .fd-list__thumbnail {
@@ -1075,7 +1255,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -1094,7 +1273,9 @@
   min-height: 3rem;
   min-width: 3rem;
   height: 100%;
-  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   padding: .125rem 0
 }
 .fd-list--byline .fd-list__content::after,
@@ -1105,7 +1286,8 @@
 }
 .fd-list--byline .fd-list__title {
   font-size: 1rem;
-  font-size: var(--sapFontLargeSize,1rem)
+  font-size: var(--sapFontLargeSize,1rem);
+  min-height: 1rem
 }
 .fd-list--byline .fd-list__byline {
   font-size: .875rem;
@@ -1117,7 +1299,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -1130,7 +1311,8 @@
   font-size: var(--sapFontSize,.875rem);
   color: #d3d7d9;
   color: var(--sapContent_LabelColor,#d3d7d9);
-  line-height: 1rem
+  line-height: 1rem;
+  padding-top: .75rem
 }
 .fd-list--byline .fd-list__byline::after,
 .fd-list--byline .fd-list__byline::before {
@@ -1143,6 +1325,14 @@
   display: -ms-flexbox;
   display: flex
 }
+.fd-list--byline .fd-list__link--more {
+  text-transform: uppercase;
+  pointer-events: all
+}
+.fd-list--byline .fd-list__byline--wrap,
+.fd-list--byline .fd-list__title--wrap {
+  white-space: normal
+}
 .fd-list--byline .fd-list__byline-left {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -1153,7 +1343,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -1166,7 +1355,9 @@
   color: #d3d7d9;
   color: var(--sapContent_LabelColor,#d3d7d9);
   padding-right: .5rem;
-  line-height: 1rem
+  line-height: 1rem;
+  -ms-flex-item-align: end;
+  align-self: flex-end
 }
 .fd-list--byline .fd-list__byline-left::after,
 .fd-list--byline .fd-list__byline-left::before {
@@ -1189,7 +1380,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -1202,7 +1392,10 @@
   color: #d3d7d9;
   color: var(--sapContent_LabelColor,#d3d7d9);
   padding-left: .5rem;
-  line-height: 1rem
+  line-height: 1rem;
+  text-align: right;
+  -ms-flex-item-align: end;
+  align-self: flex-end
 }
 .fd-list--byline .fd-list__byline-right::after,
 .fd-list--byline .fd-list__byline-right::before {
@@ -1213,7 +1406,8 @@
 .fd-list--byline .fd-list__byline-right[dir=rtl],
 [dir=rtl] .fd-list--byline .fd-list__byline-right {
   padding-left: 0;
-  padding-right: .5rem
+  padding-right: .5rem;
+  text-align: left
 }
 .fd-list--byline .fd-list__byline-right--neutral {
   color: #d3d7d9;
@@ -1232,8 +1426,12 @@
   color: var(--sapNegativeTextColor,#f88)
 }
 .fd-list--byline .fd-list__byline-right--informative {
-  color: #c0e0fa;
-  color: var(--sapInformativeTextColor,#c0e0fa)
+  color: #91c8f6;
+  color: var(--sapInformativeTextColor,#91c8f6)
+}
+.fd-list--byline .fd-list__byline-left--wrap,
+.fd-list--byline .fd-list__byline-right--wrap {
+  white-space: normal
 }
 .fd-list--byline.fd-list--compact .fd-list__title {
   font-size: .875rem;
@@ -1502,16 +1700,16 @@
 }
 .fd-list--navigation-indication .is-navigated {
   -webkit-box-shadow: inset -.1875rem 0 0 0 #91c8f6;
-  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#91c8f6);
+  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapList_SelectionBorderColor,#91c8f6);
   box-shadow: inset -.1875rem 0 0 0 #91c8f6;
-  box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#91c8f6)
+  box-shadow: inset -.1875rem 0 0 0 var(--sapList_SelectionBorderColor,#91c8f6)
 }
 .fd-list--navigation-indication .is-navigated[dir=rtl],
 [dir=rtl] .fd-list--navigation-indication .is-navigated {
   -webkit-box-shadow: inset .1875rem 0 0 0 #91c8f6;
-  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#91c8f6);
+  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapList_SelectionBorderColor,#91c8f6);
   box-shadow: inset .1875rem 0 0 0 #91c8f6;
-  box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#91c8f6)
+  box-shadow: inset .1875rem 0 0 0 var(--sapList_SelectionBorderColor,#91c8f6)
 }
 .fd-list--selection .fd-list__item {
   padding-left: 2.75rem;
@@ -1535,12 +1733,9 @@
   border-bottom: .0625rem solid #91c8f6;
   border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#91c8f6)
 }
-.fd-list--selection .fd-list__item.is-selected.is-hover,
-.fd-list--selection .fd-list__item.is-selected:hover,
-.fd-list--selection .fd-list__item[aria-selected=true].is-hover,
-.fd-list--selection .fd-list__item[aria-selected=true]:hover {
-  background: #395369;
-  background: var(--sapList_Hover_SelectionBackground,#395369)
+.fd-list--selection .fd-list__item.is-selected .fd-list__link,
+.fd-list--selection .fd-list__item[aria-selected=true] .fd-list__link {
+  background: inherit
 }
 .fd-list--selection .fd-list__form-item {
   position: absolute;
@@ -1637,7 +1832,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -1699,7 +1893,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -1730,7 +1923,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -1762,7 +1954,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -1797,7 +1988,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -1825,7 +2015,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -1864,7 +2053,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -1900,7 +2088,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -1934,7 +2121,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -1982,7 +2168,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -2024,7 +2209,6 @@
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;

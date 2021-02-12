@@ -1,11 +1,11 @@
 /**
 * Copyright (c) 2012-2020 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
 * Theming Engine 1.51.0
-* data:{"sModified":"2020-11-18T15:02:05Z"}
+* data:{"sModified":"2021-01-19T08:38:11Z"}
 */
 
 
-/******************* FILE /Base/baseLib/baseTheme/base.less (Version 11.1.24) *******************/
+/******************* FILE /Base/baseLib/baseTheme/base.less (Version 11.1.26) *******************/
 
 
 // [Label "Brand Color"]
@@ -687,6 +687,12 @@
 // [Tags "Base", "Shell", "Color", "Font", "Protected"]
 @sapShell_GroupTitleTextColor: @sapDefault_Color;
 
+// [Label "Shell Group Title Text Shadow"]
+// [Description "Text shadow of shell group title."]
+// [TranslationKey "sapShell_Group_Title_TxtShadow"]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_GroupTitleTextShadow: @sapDefault_Shadow;
+
 // [Label "Shell Hover Background"]
 // [Description "The hover background color for shell content."]
 // [Tags "Base", "Shell", "Color", "Protected"]
@@ -767,6 +773,36 @@
 // [Description "The shadow of the shell on the content area."]
 // [Tags "Base", "Shell", "Protected"]
 @sapShell_Shadow: @sapDefault_Shadow;
+
+// [Label "Shell Negative Color"]
+// [Description "The negative semantic color for use in shell contexts."]
+// [TranslationKey "sapShell_NegClr"]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_NegativeColor: @sapDefault_Color;
+
+// [Label "Shell Critical Color"]
+// [Description "The critical semantic color for use in shell contexts."]
+// [TranslationKey "sapShell_CritClr"]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_CriticalColor: @sapDefault_Color;
+
+// [Label "Shell Positive Color"]
+// [Description "The positive semantic color for use in shell contexts."]
+// [TranslationKey "sapShell_PosClr"]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_PositiveColor: @sapDefault_Color;
+
+// [Label "Shell Informative Color"]
+// [Description "The informative semantic color for use in shell contexts."]
+// [TranslationKey "sapShell_InfClr"]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_InformativeColor: @sapDefault_Color;
+
+// [Label "Shell Neutral Color"]
+// [Description "The neutral semantic color for use in shell contexts."]
+// [TranslationKey "sapShell_NeutClr"]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_NeutralColor: @sapDefault_Color;
 
 // [Label "Button Background Color"]
 // [Description "The background color of buttons."]
@@ -2685,14 +2721,6 @@
 @font-face {
   font-family: '72Mono-Boldfull';
   src: @sapFontUrl_72Mono_Bold_full_woff2 format('woff2'), @sapFontUrl_72Mono_Bold_full_woff format('woff');
-}
-
-.sapSvgLibs {
-  background-image: @sapSvgLib_SAP-icons, @sapSvgLib_SAPGUI-icons, @sapSvgLib_SAPWeb-icons;
-}
-
-.sapSvgLibsDataUri {
-  background-image: url("data:text/plain;utf-8, @{sapSvgLib_SAP-icons}, @{sapSvgLib_SAPGUI-icons}, @{sapSvgLib_SAPWeb-icons}");
 }
 
 .sapSvgIconPositive {
