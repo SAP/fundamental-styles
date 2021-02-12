@@ -30,6 +30,7 @@ $has-child-content-arrow-margin: 0.125rem;
   flex-direction: column;
   justify-content: space-between;
   text-shadow: var(--fdSideNav_Text_Shadow);
+  height: 100%;
 
   &__skip-link {
     @include fd-reset();
