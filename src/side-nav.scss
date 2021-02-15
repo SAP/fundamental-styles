@@ -2,19 +2,6 @@
 @import "./mixins";
 @import "./nested-list";
 
-/*!
-.fd-side-nav
-    .fd-side-nav__skip-link
-    .fd-side-nav__group
-        .fd-side-nav__title
-        .fd-side-nav__list
-            .fd-side-nav__item
-                .fd-side-nav__link (.has-child, .is-active, .is-expanded)
-                .fd-side-nav__sublist
-                    .fd-side-nav__subitem
-                    .fd-side-nav__sublink (.is-active)
-*/
-
 $block: #{$fd-namespace}-side-nav;
 $block-nested-list: #{$fd-namespace}-nested-list;
 $has-child-content-arrow-margin: 0.125rem;
