@@ -37,15 +37,9 @@ export const primary = () => `<div style="display:flex;justify-content:space-bet
                 </label>
             </div>
             <div class="fd-form-item">
-                <input type="radio" class="fd-radio" id="pDidh7613" name="radio1" readonly>
-                <label class="fd-radio__label" for="pDidh7613">
-                    Field label(read only)
-                </label>
-            </div>
-            <div class="fd-form-item">
                 <input type="radio" class="fd-radio" id="pDidh764" name="radio3" disabled>
                 <label class="fd-radio__label" for="pDidh764">
-                    Field label(disabled)
+                    Field label (disabled)
                 </label>
             </div>
         </div>
@@ -66,15 +60,9 @@ export const primary = () => `<div style="display:flex;justify-content:space-bet
                 </label>
             </div>
             <div class="fd-form-item">
-                <input type="radio" class="fd-radio fd-radio--compact" id="pDidh761311" name="radio2" readonly>
-                <label class="fd-radio__label" for="pDidh761311">
-                    Field label(read only)
-                </label>
-            </div>
-            <div class="fd-form-item">
                 <input type="radio" class="fd-radio fd-radio--compact" id="pDidh76131133" name="radio2" disabled>
                 <label class="fd-radio__label" for="pDidh76131133">
-                    Field label(disabled)
+                    Field label (disabled)
                 </label>
             </div>
         </div>
@@ -164,31 +152,31 @@ export const interactionStates = () => `<div style="display:flex;justify-content
             <div class="fd-form-item">
                 <input type="radio" class="fd-radio" id="iSpDidh7611" name="radio5" disabled>
                 <label class="fd-radio__label" for="iSpDidh7611">
-                    Field label(disabled)
+                    Field label (disabled)
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="radio" class="fd-radio is-success" id="iSpDidh76121" name="radio5" disabled>
                 <label class="fd-radio__label" for="iSpDidh76121">
-                    Field label(disabled)
+                    Field label (disabled)
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="radio" class="fd-radio is-error" id="iSpDidh76131" name="radio5" disabled>
                 <label class="fd-radio__label" for="iSpDidh76131">
-                    Field label(disabled)
+                    Field label (disabled)
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="radio" class="fd-radio is-warning" id="iSpDidh76141" name="radio5" disabled>
                 <label class="fd-radio__label" for="iSpDidh76141">
-                    Field label(disabled)
+                    Field label (disabled)
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="radio" class="fd-radio is-information" id="iSpDidh76151" name="radio5" disabled>
                 <label class="fd-radio__label" for="iSpDidh76151">
-                    Field label(disabled)
+                    Field label (disabled)
                 </label>
             </div>
         </div>
@@ -229,31 +217,31 @@ export const interactionStates = () => `<div style="display:flex;justify-content
             <div class="fd-form-item">
                 <input type="radio" class="fd-radio fd-radio--compact" id="iSpDidh76193" name="radio6" disabled>
                 <label class="fd-radio__label" for="iSpDidh76193">
-                    Field label(disabled)
+                    Field label (disabled)
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="radio" class="fd-radio fd-radio--compact is-success" id="iSpDidh761293" name="radio6" disabled>
                 <label class="fd-radio__label" for="iSpDidh761293">
-                    Field label(disabled)
+                    Field label (disabled)
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="radio" class="fd-radio fd-radio--compact is-error" id="iSpDidh761393" name="radio6" disabled>
                 <label class="fd-radio__label" for="iSpDidh761393">
-                    Field label(disabled)
+                    Field label (disabled)
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="radio" class="fd-radio fd-radio--compact is-warning" id="iSpDidh761493" name="radio6" disabled>
                 <label class="fd-radio__label" for="iSpDidh761493">
-                    Field label(disabled)
+                    Field label (disabled)
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="radio" class="fd-radio fd-radio--compact is-information" id="iSpDidh761593" name="radio6" disabled>
                 <label class="fd-radio__label" for="iSpDidh761593">
-                    Field label(disabled)
+                    Field label (disabled)
                 </label>
             </div>
         </div>
