@@ -197,7 +197,7 @@ export const NoMargin = () => `<div class="docs-column-flex docs-column-flex--in
         </div>
         <br />
         <div class="docs-layout-grid-bg">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7 docs-layout-grid-bg--margin fd-margin-end--none">container</div>
+            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fddocs-margin-end-none fd-margin-end--none">container</div>
         </div>
         <br />
         <div class="docs-layout-grid-bg">
@@ -205,7 +205,7 @@ export const NoMargin = () => `<div class="docs-column-flex docs-column-flex--in
         </div>
         <br />
         <div class="docs-layout-grid-bg">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7 docs-layout-grid-bg--margin fd-margin-begin--none">container</div>
+            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fddocs-margin-end-none fd-margin-begin--none">container</div>
         </div>
     </div>
 `;
@@ -213,7 +213,9 @@ NoMargin.parameters = {
     docs: {
         storyDescription: `No margin classes remove existing container margins. Use <code>fd-margin--none</code> or  <code>fd-margin-top--none</code>
         or <code>fd-margin-end--none</code> or <code>fd-margin-bottom--none</code> or <code>fd-margin-begin--none</code>
-        modifier classes to remove existing margin. Place the no margin classes last to make sure they will be applied.`
+        modifier classes to remove existing margin. Place the no margin classes last to make sure they will be applied.
+        In the case of <code>fd-margin-begin--none</code> and <code>fd-margin-end--none</code>, <code>!important</code> is not applied since we want
+        the user-specified margins(if any) to be reapplied in the RTL mode.`
     }
 };
 

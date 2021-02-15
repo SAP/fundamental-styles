@@ -388,7 +388,7 @@ exports[`Storyshots Layouts/Margins No Margin 1`] = `
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 docs-layout-grid-bg--margin fd-margin-end--none"
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fddocs-margin-end-none fd-margin-end--none"
     >
       container
     </div>
@@ -424,7 +424,7 @@ exports[`Storyshots Layouts/Margins No Margin 1`] = `
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 docs-layout-grid-bg--margin fd-margin-begin--none"
+      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fddocs-margin-end-none fd-margin-begin--none"
     >
       container
     </div>

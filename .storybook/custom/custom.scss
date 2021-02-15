@@ -627,3 +627,8 @@ body.sb-show-main {
     display: inline-flex;
   }
 }
+
+.fddocs-margin-end-none,
+[dir="rtl"] .fddocs-margin-end-none {
+  margin: 1.5rem;
+}
