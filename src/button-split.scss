@@ -78,6 +78,10 @@ $fd-button-split-margin: 0.125rem / 2;
   }
 
   & > :first-child {
+    @include fd-flex-vertical-center() {
+      justify-content: flex-start;
+    }
+
     &:hover {
       .#{$block}__text {
         color: var(--sapButton_TextColor);
