@@ -497,8 +497,8 @@ mobile.parameters = {
     docs: {
         storyDescription: `The dynamic page displays on mobile screens with the S size. To optimize dynamic page for mobile, add modifier class \`fd-dynamic-page--sm\`.
  
-To display the breadcrumb and close button, they must be wrapped in \`fd-dynamic-page__breadcrumb-container\`. The toolbar overflow actions are functional without being wrapped in an additional container. The title, however, requires \`fd-dynamic-page__toolbar-container\` to be displayed in an overflow toolbar.
-Use \`fd-dynamic-page__toolbar fd-dynamic-page__toolbar--content\` for the title content when it is used in an overflow toolbar.`
+To display the breadcrumb and close button, they must be wrapped in \`fd-dynamic-page__breadcrumb-container\`. The toolbar overflow actions are functional without being wrapped in an additional container.
+Use \`fd-dynamic-page__toolbar--content\` for the title content when it is used in an overflow toolbar.`
     }
 };
 

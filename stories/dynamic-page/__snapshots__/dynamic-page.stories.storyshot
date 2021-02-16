@@ -8,7 +8,7 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
         
   <section
     aria-label="Dynamic Page Mobile Collapsed Example"
-    class="fd-dynamic-page"
+    class="fd-dynamic-page fd-dynamic-page--sm"
   >
     
             
@@ -18,7 +18,7 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
       
                 
       <div
-        class="fd-dynamic-page__title-area fd-dynamic-page__title-area--sm fd-dynamic-page__title-area--collapsed"
+        class="fd-dynamic-page__title-area  fd-dynamic-page__title-area--collapsed"
         tabindex="0"
       >
         
@@ -44,7 +44,7 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
                 
                                     
                 <ul
-                  class="fd-dynamic-page__breadcrumb--sm fd-breadcrumb"
+                  class="fd-breadcrumb"
                 >
                   
                                         
@@ -96,7 +96,7 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
                                 
               <div
                 aria-label="Close action"
-                class="fd-dynamic-page__toolbar-actions fd-dynamic-page__toolbar-actions--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent"
                 role="toolbar"
               >
                 
@@ -136,7 +136,7 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
                                 
               <div
                 aria-label="Header Content"
-                class="fd-dynamic-page__title-content-toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--content fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent"
                 role="toolbar"
               >
                 
@@ -203,7 +203,7 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
                                 
               <div
                 aria-label="Product actions"
-                class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent"
                 role="toolbar"
               >
                 
@@ -308,7 +308,7 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
         <div
           aria-hidden="true"
           aria-label="Dynamic Page Mobile Collapsed Header"
-          class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--sm"
+          class="fd-dynamic-page__collapsible-header"
           id="fddplhvcm1"
           role="region"
         >
@@ -374,7 +374,7 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
         
                     
         <ul
-          class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--sm fd-dynamic-page__tabs--add-shadow"
+          class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--add-shadow"
           role="tablist"
         >
           
@@ -446,7 +446,7 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
     
             
     <div
-      class="fd-dynamic-page__content fd-dynamic-page__content--sm"
+      class="fd-dynamic-page__content"
     >
       
                 
@@ -484,7 +484,7 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
     
             
     <footer
-      class="fd-bar fd-bar--floating-footer"
+      class="fd-bar fd-bar--cozy fd-bar--floating-footer"
       style="position:relative"
     >
       
@@ -503,7 +503,7 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
                         
           <button
             aria-label="button"
-            class="fd-button fd-button--emphasized fd-button--compact"
+            class="fd-button fd-button--emphasized"
           >
             Save
           </button>
@@ -519,7 +519,7 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
                         
           <button
             aria-label="button"
-            class="fd-button fd-button--transparent fd-button--compact"
+            class="fd-button fd-button--transparent"
           >
             Cancel
           </button>
@@ -543,7 +543,7 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
 exports[`Storyshots Layouts/Dynamic Page Collapsed Header 1`] = `
 <section
   aria-label="Dynamic Page Collapsed Example"
-  class="fd-dynamic-page"
+  class="fd-dynamic-page fd-dynamic-page--xl"
 >
   
         
@@ -553,7 +553,7 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header 1`] = `
     
             
     <div
-      class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl fd-dynamic-page__title-area--collapsed"
+      class="fd-dynamic-page__title-area  fd-dynamic-page__title-area--collapsed"
       tabindex="0"
     >
       
@@ -652,94 +652,86 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header 1`] = `
         
                     
         <div
-          class="fd-dynamic-page__actions-container"
+          class="fd-dynamic-page__toolbar-container"
         >
           
                         
           <div
-            class="fd-dynamic-page__toolbar-container"
+            aria-label="Product actions"
+            class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+            role="toolbar"
           >
             
                             
-            <div
-              aria-label="Product actions"
-              class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-              role="toolbar"
+            <button
+              class="fd-button fd-button--compact fd-button--positive"
+            >
+              Accept
+            </button>
+            
+                            
+            <button
+              class="fd-button fd-button--compact fd-button--reject"
+            >
+              Reject
+            </button>
+            
+                            
+            <span
+              class="fd-toolbar__separator"
+            />
+            
+                        
+          </div>
+          
+                        
+          <div
+            aria-label="Navigation actions"
+            class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+            role="toolbar"
+          >
+            
+                            
+            <button
+              aria-label="Resize"
+              class="fd-button fd-button--transparent"
             >
               
                                 
-              <button
-                class="fd-button fd-button--compact fd-button--positive"
-              >
-                Accept
-              </button>
-              
-                                
-              <button
-                class="fd-button fd-button--compact fd-button--reject"
-              >
-                Reject
-              </button>
-              
-                                
-              <span
-                class="fd-toolbar__separator"
+              <i
+                class="sap-icon--resize"
               />
               
                             
-            </div>
+            </button>
             
                             
-            <div
-              aria-label="Navigation actions"
-              class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-              role="toolbar"
+            <button
+              aria-label="Exit fullscreen"
+              class="fd-button fd-button--transparent"
             >
               
                                 
-              <button
-                aria-label="Resize"
-                class="fd-button fd-button--transparent"
-              >
-                
-                                    
-                <i
-                  class="sap-icon--resize"
-                />
-                
-                                
-              </button>
-              
-                                
-              <button
-                aria-label="Exit fullscreen"
-                class="fd-button fd-button--transparent"
-              >
-                
-                                    
-                <i
-                  class="sap-icon--exitfullscreen"
-                />
-                
-                                
-              </button>
-              
-                                
-              <button
-                aria-label="Close"
-                class="fd-button fd-button--transparent"
-              >
-                
-                                    
-                <i
-                  class="sap-icon--decline"
-                />
-                
-                                
-              </button>
+              <i
+                class="sap-icon--exitfullscreen"
+              />
               
                             
-            </div>
+            </button>
+            
+                            
+            <button
+              aria-label="Close"
+              class="fd-button fd-button--transparent"
+            >
+              
+                                
+              <i
+                class="sap-icon--decline"
+              />
+              
+                            
+            </button>
             
                         
           </div>
@@ -769,7 +761,7 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header 1`] = `
       <div
         aria-hidden="true"
         aria-label="Collapsed header"
-        class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--xl"
+        class="fd-dynamic-page__collapsible-header"
         id="fddplhvc2"
         role="region"
       >
@@ -847,7 +839,7 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header 1`] = `
   
         
   <div
-    class="fd-dynamic-page__content fd-dynamic-page__content--xl"
+    class="fd-dynamic-page__content"
   >
     
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
@@ -867,7 +859,7 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
     
   <section
     aria-label="Dynamic Page Desktop Example"
-    class="fd-dynamic-page"
+    class="fd-dynamic-page fd-dynamic-page--xl"
   >
     
         
@@ -877,7 +869,7 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
       
             
       <div
-        class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl"
+        class="fd-dynamic-page__title-area "
         tabindex="0"
       >
         
@@ -968,99 +960,91 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
                  Some RANDOM things 
               </div>
               
-                        
-            </div>
-            
-                    
-          </div>
-          
-                    
-          <div
-            class="fd-dynamic-page__actions-container"
-          >
-            
-                        
-            <div
-              class="fd-dynamic-page__toolbar-container"
-            >
-              
                             
               <div
-                aria-label="Product actions"
-                class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-                role="toolbar"
+                class="fd-dynamic-page__toolbar-container"
               >
                 
                                 
-                <button
-                  class="fd-button fd-button--compact fd-button--positive"
-                >
-                  Accept
-                </button>
-                
-                                
-                <button
-                  class="fd-button fd-button--compact fd-button--reject"
-                >
-                  Reject
-                </button>
-                
-                                
-                <span
-                  class="fd-toolbar__separator"
-                />
-                
-                                
-              </div>
-              
-                            
-              <div
-                aria-label="Navigation actions"
-                class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-                role="toolbar"
-              >
-                
-                                
-                <button
-                  aria-label="Resize"
-                  class="fd-button fd-button--transparent"
+                <div
+                  aria-label="Product actions"
+                  class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                  role="toolbar"
                 >
                   
                                     
-                  <i
-                    class="sap-icon--resize"
+                  <button
+                    class="fd-button fd-button--compact fd-button--positive"
+                  >
+                    Accept
+                  </button>
+                  
+                                    
+                  <button
+                    class="fd-button fd-button--compact fd-button--reject"
+                  >
+                    Reject
+                  </button>
+                  
+                                    
+                  <span
+                    class="fd-toolbar__separator"
                   />
                   
                                 
-                </button>
+                </div>
                 
                                 
-                <button
-                  aria-label="Exit fullscreen"
-                  class="fd-button fd-button--transparent"
+                <div
+                  aria-label="Navigation actions"
+                  class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                  role="toolbar"
                 >
                   
                                     
-                  <i
-                    class="sap-icon--exitfullscreen"
-                  />
-                  
-                                
-                </button>
-                
-                                
-                <button
-                  aria-label="Close"
-                  class="fd-button fd-button--transparent"
-                >
+                  <button
+                    aria-label="Resize"
+                    class="fd-button fd-button--transparent"
+                  >
+                    
+                                        
+                    <i
+                      class="sap-icon--resize"
+                    />
+                    
+                                    
+                  </button>
                   
                                     
-                  <i
-                    class="sap-icon--decline"
-                  />
+                  <button
+                    aria-label="Exit fullscreen"
+                    class="fd-button fd-button--transparent"
+                  >
+                    
+                                        
+                    <i
+                      class="sap-icon--exitfullscreen"
+                    />
+                    
+                                    
+                  </button>
+                  
+                                    
+                  <button
+                    aria-label="Close"
+                    class="fd-button fd-button--transparent"
+                  >
+                    
+                                        
+                    <i
+                      class="sap-icon--decline"
+                    />
+                    
+                                    
+                  </button>
                   
                                 
-                </button>
+                </div>
                 
                             
               </div>
@@ -1092,7 +1076,7 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
                 
         <div
           aria-label="Dynamic Page Desktop Header"
-          class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--xl"
+          class="fd-dynamic-page__collapsible-header"
           id="fddplhvc6"
           role="region"
         >
@@ -1172,7 +1156,7 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
         
                 
         <ul
-          class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--xl fd-dynamic-page__tabs--add-shadow"
+          class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--add-shadow"
           role="tablist"
         >
           
@@ -1244,7 +1228,7 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
     
         
     <div
-      class="fd-dynamic-page__content fd-dynamic-page__content--xl"
+      class="fd-dynamic-page__content"
     >
       
             
@@ -1361,7 +1345,7 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
 exports[`Storyshots Layouts/Dynamic Page Expanded Header 1`] = `
 <section
   aria-label="Dynamic Page Expandable Example"
-  class="fd-dynamic-page"
+  class="fd-dynamic-page fd-dynamic-page--xl"
 >
   
         
@@ -1371,7 +1355,7 @@ exports[`Storyshots Layouts/Dynamic Page Expanded Header 1`] = `
     
             
     <div
-      class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl"
+      class="fd-dynamic-page__title-area "
       tabindex="0"
     >
       
@@ -1470,94 +1454,86 @@ exports[`Storyshots Layouts/Dynamic Page Expanded Header 1`] = `
         
                     
         <div
-          class="fd-dynamic-page__actions-container"
+          class="fd-dynamic-page__toolbar-container"
         >
           
                         
           <div
-            class="fd-dynamic-page__toolbar-container"
+            aria-label="Product actions"
+            class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+            role="toolbar"
           >
             
                             
-            <div
-              aria-label="Product actions"
-              class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-              role="toolbar"
+            <button
+              class="fd-button fd-button--compact fd-button--positive"
             >
-              
-                                
-              <button
-                class="fd-button fd-button--compact fd-button--positive"
-              >
-                Accept
-              </button>
-              
-                                
-              <button
-                class="fd-button fd-button--compact fd-button--reject"
-              >
-                Reject
-              </button>
-              
-                                
-              <span
-                class="fd-toolbar__separator"
-              />
-              
-                            
-            </div>
+              Accept
+            </button>
             
                             
-            <div
-              aria-label="Navigation actions"
-              class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-              role="toolbar"
+            <button
+              class="fd-button fd-button--compact fd-button--reject"
+            >
+              Reject
+            </button>
+            
+                            
+            <span
+              class="fd-toolbar__separator"
+            />
+            
+                        
+          </div>
+          
+                        
+          <div
+            aria-label="Navigation actions"
+            class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+            role="toolbar"
+          >
+            
+                                
+            <button
+              aria-label="Resize"
+              class="fd-button fd-button--transparent"
             >
               
                                     
-              <button
-                aria-label="Resize"
-                class="fd-button fd-button--transparent"
-              >
-                
-                                        
-                <i
-                  class="sap-icon--resize"
-                />
-                
-                                    
-              </button>
+              <i
+                class="sap-icon--resize"
+              />
+              
+                                
+            </button>
+            
+                                
+            <button
+              aria-label="Exit fullscreen"
+              class="fd-button fd-button--transparent"
+            >
               
                                     
-              <button
-                aria-label="Exit fullscreen"
-                class="fd-button fd-button--transparent"
-              >
-                
-                                        
-                <i
-                  class="sap-icon--exitfullscreen"
-                />
-                
-                                    
-              </button>
+              <i
+                class="sap-icon--exitfullscreen"
+              />
+              
+                                
+            </button>
+            
+                                
+            <button
+              aria-label="Close"
+              class="fd-button fd-button--transparent"
+            >
               
                                     
-              <button
-                aria-label="Close"
-                class="fd-button fd-button--transparent"
-              >
-                
-                                        
-                <i
-                  class="sap-icon--decline"
-                />
-                
-                                    
-              </button>
+              <i
+                class="sap-icon--decline"
+              />
               
-                            
-            </div>
+                                
+            </button>
             
                         
           </div>
@@ -1587,7 +1563,7 @@ exports[`Storyshots Layouts/Dynamic Page Expanded Header 1`] = `
       <div
         aria-hidden="false"
         aria-label="Default expanded header"
-        class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--xl"
+        class="fd-dynamic-page__collapsible-header"
         id="fddplhvc1"
         role="region"
       >
@@ -1665,7 +1641,7 @@ exports[`Storyshots Layouts/Dynamic Page Expanded Header 1`] = `
   
         
   <div
-    class="fd-dynamic-page__content fd-dynamic-page__content--xl"
+    class="fd-dynamic-page__content"
   >
     
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
@@ -1687,7 +1663,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
         
   <section
     aria-label="Dynamic Page Mobile Example"
-    class="fd-dynamic-page"
+    class="fd-dynamic-page fd-dynamic-page--sm"
   >
     
             
@@ -1697,7 +1673,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
       
                 
       <div
-        class="fd-dynamic-page__title-area fd-dynamic-page__title-area--sm"
+        class="fd-dynamic-page__title-area "
         tabindex="0"
       >
         
@@ -1723,7 +1699,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                 
                                     
                 <ul
-                  class="fd-dynamic-page__breadcrumb--sm fd-breadcrumb"
+                  class="fd-breadcrumb"
                 >
                   
                                         
@@ -1733,7 +1709,6 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                     <a
                       class="fd-breadcrumb__link"
                       href="#"
-                      tabindex="0"
                     >
                       Men
                     </a>
@@ -1746,7 +1721,6 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                     <a
                       class="fd-breadcrumb__link"
                       href="#"
-                      tabindex="0"
                     >
                       Shoes
                     </a>
@@ -1760,7 +1734,6 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                       aria-current="page"
                       class="fd-breadcrumb__link"
                       href="#"
-                      tabindex="0"
                     >
                       Running Shoes
                     </a>
@@ -1775,7 +1748,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                                 
               <div
                 aria-label="Close action"
-                class="fd-dynamic-page__toolbar-actions fd-dynamic-page__toolbar-actions--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent"
                 role="toolbar"
               >
                 
@@ -1815,7 +1788,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                                 
               <div
                 aria-label="Header Content"
-                class="fd-dynamic-page__title-content-toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--content fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent"
                 role="toolbar"
               >
                 
@@ -1882,7 +1855,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                                 
               <div
                 aria-label="Product actions"
-                class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent"
                 role="toolbar"
               >
                 
@@ -1986,7 +1959,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                     
         <div
           aria-label="Dynamic Page Mobile Header"
-          class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--sm"
+          class="fd-dynamic-page__collapsible-header"
           id="fddplhvc4"
           role="region"
         >
@@ -2052,7 +2025,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
         
                     
         <ul
-          class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--sm fd-dynamic-page__tabs--add-shadow"
+          class="fd-tabs fd-dynamic-page__tabs fd-dynamic-page__tabs--add-shadow"
           role="tablist"
         >
           
@@ -2124,7 +2097,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
     
             
     <div
-      class="fd-dynamic-page__content fd-dynamic-page__content--sm"
+      class="fd-dynamic-page__content"
     >
       
                 
@@ -2162,7 +2135,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
     
             
     <footer
-      class="fd-bar fd-bar--floating-footer"
+      class="fd-bar fd-bar--cozy fd-bar--floating-footer"
       style="position:relative"
     >
       
@@ -2181,7 +2154,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                         
           <button
             aria-label="button"
-            class="fd-button fd-button--emphasized fd-button--compact"
+            class="fd-button fd-button--emphasized"
           >
             Save
           </button>
@@ -2197,7 +2170,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                         
           <button
             aria-label="button"
-            class="fd-button fd-button--transparent fd-button--compact"
+            class="fd-button fd-button--transparent"
           >
             Cancel
           </button>
@@ -2226,7 +2199,7 @@ exports[`Storyshots Layouts/Dynamic Page Summary Line (mobile) 1`] = `
         
   <section
     aria-label="Dynamic Page Mobile Summary Line Example"
-    class="fd-dynamic-page"
+    class="fd-dynamic-page fd-dynamic-page--sm"
   >
     
             
@@ -2236,7 +2209,7 @@ exports[`Storyshots Layouts/Dynamic Page Summary Line (mobile) 1`] = `
       
                 
       <div
-        class="fd-dynamic-page__summarized-title-area fd-dynamic-page__summarized-title-area--sm fd-dynamic-page__summarized-title-area--no-shadow"
+        class="fd-dynamic-page__summarized-title-area fd-dynamic-page__summarized-title-area--no-shadow"
         tabindex="0"
       >
         
@@ -2251,7 +2224,7 @@ exports[`Storyshots Layouts/Dynamic Page Summary Line (mobile) 1`] = `
                     
         <div
           aria-label="Expand summary line action"
-          class="fd-dynamic-page__toolbar-actions  fd-dynamic-page__toolbar-actions--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+          class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions  fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent"
           role="toolbar"
         >
           
@@ -2278,7 +2251,7 @@ exports[`Storyshots Layouts/Dynamic Page Summary Line (mobile) 1`] = `
                 
       <div
         aria-hidden="true"
-        class="fd-dynamic-page__title-area fd-dynamic-page__title-area--sm fd-dynamic-page__title-area--collapsed"
+        class="fd-dynamic-page__title-area  fd-dynamic-page__title-area--collapsed"
       >
         
                     
@@ -2293,7 +2266,7 @@ exports[`Storyshots Layouts/Dynamic Page Summary Line (mobile) 1`] = `
             
                             
             <ul
-              class="fd-dynamic-page__breadcrumb--sm fd-breadcrumb"
+              class="fd-breadcrumb"
             >
               
                                 
@@ -2345,7 +2318,7 @@ exports[`Storyshots Layouts/Dynamic Page Summary Line (mobile) 1`] = `
                         
           <div
             aria-label="Close action"
-            class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+            class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent"
             role="toolbar"
           >
             
@@ -2386,7 +2359,7 @@ exports[`Storyshots Layouts/Dynamic Page Summary Line (mobile) 1`] = `
                             
           <div
             aria-label="Product actions"
-            class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+            class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent"
             role="toolbar"
           >
             
@@ -2445,7 +2418,7 @@ exports[`Storyshots Layouts/Dynamic Page Summary Line (mobile) 1`] = `
         <div
           aria-hidden="true"
           aria-label="Dynamic Page Mobile Collapsed Header"
-          class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--sm"
+          class="fd-dynamic-page__collapsible-header"
           id="fddplhvcm2"
           role="region"
         >
@@ -2513,7 +2486,7 @@ exports[`Storyshots Layouts/Dynamic Page Summary Line (mobile) 1`] = `
         
                     
         <ul
-          class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--sm fd-dynamic-page__tabs--add-shadow"
+          class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--add-shadow"
           role="tablist"
         >
           
@@ -2585,7 +2558,7 @@ exports[`Storyshots Layouts/Dynamic Page Summary Line (mobile) 1`] = `
      
             
     <div
-      class="fd-dynamic-page__content fd-dynamic-page__content--sm"
+      class="fd-dynamic-page__content"
     >
       
                 
@@ -2635,7 +2608,7 @@ exports[`Storyshots Layouts/Dynamic Page Summary Line (mobile) 1`] = `
     
             
     <footer
-      class="fd-bar fd-bar--floating-footer"
+      class="fd-bar fd-bar--cozy fd-bar--floating-footer"
       style="position:relative"
     >
       
@@ -2654,7 +2627,7 @@ exports[`Storyshots Layouts/Dynamic Page Summary Line (mobile) 1`] = `
                         
           <button
             aria-label="button"
-            class="fd-button fd-button--emphasized fd-button--compact"
+            class="fd-button fd-button--emphasized"
           >
             Save
           </button>
@@ -2670,7 +2643,7 @@ exports[`Storyshots Layouts/Dynamic Page Summary Line (mobile) 1`] = `
                         
           <button
             aria-label="button"
-            class="fd-button fd-button--transparent fd-button--compact"
+            class="fd-button fd-button--transparent"
           >
             Cancel
           </button>
@@ -2697,7 +2670,7 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
     
   <section
     aria-label="Dynamic Page Tablet Example"
-    class="fd-dynamic-page"
+    class="fd-dynamic-page fd-dynamic-page--md"
   >
     
         
@@ -2707,7 +2680,7 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
       
             
       <div
-        class="fd-dynamic-page__title-area fd-dynamic-page__title-area--md"
+        class="fd-dynamic-page__title-area "
         tabindex="0"
       >
         
@@ -2721,61 +2694,129 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
             class="fd-dynamic-page__breadcrumb-title-container"
           >
             
-                        
-            <nav
-              aria-label="Breadcrumbs"
+                            
+            <div
+              class="fd-dynamic-page__breadcrumb-container"
             >
               
                             
-              <ul
-                class="fd-dynamic-page__breadcrumb fd-breadcrumb"
+              <nav
+                aria-label="Breadcrumbs"
               >
                 
                                 
-                <li
-                  class="fd-breadcrumb__item"
+                <ul
+                  class="fd-dynamic-page__breadcrumb fd-breadcrumb"
                 >
-                  <a
-                    class="fd-breadcrumb__link"
-                    href="#"
-                    tabindex="0"
+                  
+                                    
+                  <li
+                    class="fd-breadcrumb__item"
                   >
-                    Men
-                  </a>
-                </li>
-                
+                    <a
+                      class="fd-breadcrumb__link"
+                      href="#"
+                      tabindex="0"
+                    >
+                      Men
+                    </a>
+                  </li>
+                  
+                                    
+                  <li
+                    class="fd-breadcrumb__item"
+                  >
+                    <a
+                      class="fd-breadcrumb__link"
+                      href="#"
+                      tabindex="0"
+                    >
+                      Shoes
+                    </a>
+                  </li>
+                  
+                                    
+                  <li
+                    class="fd-breadcrumb__item"
+                  >
+                    <a
+                      aria-current="page"
+                      class="fd-breadcrumb__link"
+                      href="#"
+                      tabindex="0"
+                    >
+                      Running Shoes
+                    </a>
+                  </li>
+                  
                                 
-                <li
-                  class="fd-breadcrumb__item"
-                >
-                  <a
-                    class="fd-breadcrumb__link"
-                    href="#"
-                    tabindex="0"
-                  >
-                    Shoes
-                  </a>
-                </li>
-                
-                                
-                <li
-                  class="fd-breadcrumb__item"
-                >
-                  <a
-                    aria-current="page"
-                    class="fd-breadcrumb__link"
-                    href="#"
-                    tabindex="0"
-                  >
-                    Running Shoes
-                  </a>
-                </li>
+                </ul>
                 
                             
-              </ul>
+              </nav>
+              
+                            
+              <div
+                class="fd-dynamic-page__toolbar-container"
+              >
+                
+                                
+                <div
+                  aria-label="Product actions"
+                  class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent"
+                  role="toolbar"
+                >
+                  
+                                    
+                  <button
+                    aria-label="Resize"
+                    class="fd-button fd-button--transparent"
+                  >
+                    
+                                        
+                    <i
+                      class="sap-icon--resize"
+                    />
+                    
+                                    
+                  </button>
+                  
+                                    
+                  <button
+                    aria-label="Exit fullscreen"
+                    class="fd-button fd-button--transparent"
+                  >
+                    
+                                        
+                    <i
+                      class="sap-icon--exitfullscreen"
+                    />
+                    
+                                    
+                  </button>
+                  
+                                    
+                  <button
+                    aria-label="Close"
+                    class="fd-button fd-button--transparent"
+                  >
+                    
+                                        
+                    <i
+                      class="sap-icon--decline"
+                    />
+                    
+                                    
+                  </button>
+                  
+                                
+                </div>
+                
+                            
+              </div>
               
                         
-            </nav>
+            </div>
             
                         
             <div
@@ -2784,14 +2825,13 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
               
                             
               <h1
-                class="fd-title fd-dynamic-page__title fd-dynamic-page__title--md"
+                class="fd-title fd-dynamic-page__title"
               >
                 
                                 
                 <a
                   class="fd-link"
                   href="#"
-                  tabindex="0"
                   title="Balenciaga Triple S Trainers"
                 >
                   Balenciaga Triple S Trainers 
@@ -2808,94 +2848,34 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
                  Some RANDOM things 
               </div>
               
-                        
-            </div>
-            
-                    
-          </div>
-          
-                    
-          <div
-            class="fd-dynamic-page__actions-container fd-dynamic-page__actions-container--md"
-          >
-            
-                        
-            <div
-              class="fd-dynamic-page__toolbar-container"
-            >
-              
                             
               <div
-                aria-label="Product actions"
-                class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--md fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-                role="toolbar"
+                class="fd-dynamic-page__toolbar-container"
               >
                 
                                 
-                <button
-                  class="fd-button fd-button--compact fd-button--positive"
-                >
-                  Accept
-                </button>
-                
-                                
-                <button
-                  class="fd-button fd-button--compact fd-button--reject"
-                >
-                  Reject
-                </button>
-                
-                            
-              </div>
-              
-                            
-              <div
-                aria-label="Navigation actions"
-                class="fd-dynamic-page__toolbar-actions fd-dynamic-page__toolbar-actions--md fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-                role="toolbar"
-              >
-                
-                                
-                <button
-                  aria-label="Resize"
-                  class="fd-button fd-button--transparent"
+                <div
+                  aria-label="Navigation actions"
+                  class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent"
+                  role="toolbar"
                 >
                   
                                     
-                  <i
-                    class="sap-icon--resize"
-                  />
-                  
-                                
-                </button>
-                
-                                
-                <button
-                  aria-label="Exit fullscreen"
-                  class="fd-button fd-button--transparent"
-                >
+                  <button
+                    class="fd-button fd-button--positive"
+                  >
+                    Accept
+                  </button>
                   
                                     
-                  <i
-                    class="sap-icon--exitfullscreen"
-                  />
+                  <button
+                    class="fd-button fd-button--reject"
+                  >
+                    Reject
+                  </button>
                   
                                 
-                </button>
-                
-                                
-                <button
-                  aria-label="Close"
-                  class="fd-button fd-button--transparent"
-                >
-                  
-                                    
-                  <i
-                    class="sap-icon--decline"
-                  />
-                  
-                                
-                </button>
+                </div>
                 
                             
               </div>
@@ -2929,7 +2909,7 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
         <div
           aria-hidden="false"
           aria-label="Tablet header"
-          class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--md"
+          class="fd-dynamic-page__collapsible-header"
           id="fddplhvc5"
           role="region"
         >
@@ -3009,7 +2989,7 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
         
                 
         <ul
-          class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--md fd-dynamic-page__tabs--add-shadow"
+          class="fd-tabs fd-dynamic-page__tabs fd-dynamic-page__tabs--add-shadow"
           role="tablist"
         >
           
@@ -3081,7 +3061,7 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
     
         
     <div
-      class="fd-dynamic-page__content fd-dynamic-page__content--md"
+      class="fd-dynamic-page__content"
     >
       
             
@@ -3135,7 +3115,7 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
     
         
     <footer
-      class="fd-bar fd-bar--floating-footer"
+      class="fd-bar fd-bar--cozy fd-bar--floating-footer"
       style="position:relative"
     >
       
@@ -3154,7 +3134,7 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
                     
           <button
             aria-label="button"
-            class="fd-button fd-button--emphasized fd-button--compact"
+            class="fd-button fd-button--emphasized"
           >
             Save
           </button>
@@ -3170,7 +3150,7 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
                     
           <button
             aria-label="button"
-            class="fd-button fd-button--transparent fd-button--compact"
+            class="fd-button fd-button--transparent"
           >
             Cancel
           </button>
@@ -3198,7 +3178,7 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
 exports[`Storyshots Layouts/Dynamic Page Without pin 1`] = `
 <section
   aria-label="Dynamic Page Pinnable Example"
-  class="fd-dynamic-page"
+  class="fd-dynamic-page fd-dynamic-page--xl"
 >
   
         
@@ -3208,7 +3188,7 @@ exports[`Storyshots Layouts/Dynamic Page Without pin 1`] = `
     
             
     <div
-      class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl"
+      class="fd-dynamic-page__title-area "
       tabindex="0"
     >
       
@@ -3299,99 +3279,91 @@ exports[`Storyshots Layouts/Dynamic Page Without pin 1`] = `
                The header can only be expanded/collapsed, not pinned. 
             </div>
             
-                        
-          </div>
-          
-                    
-        </div>
-        
-                    
-        <div
-          class="fd-dynamic-page__actions-container"
-        >
-          
-                        
-          <div
-            class="fd-dynamic-page__toolbar-container"
-          >
-            
                             
             <div
-              aria-label="Product actions"
-              class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-              role="toolbar"
+              class="fd-dynamic-page__toolbar-container"
             >
               
                                 
-              <button
-                class="fd-button fd-button--compact fd-button--positive"
-              >
-                Accept
-              </button>
-              
-                                
-              <button
-                class="fd-button fd-button--compact fd-button--reject"
-              >
-                Reject
-              </button>
-              
-                                
-              <span
-                class="fd-toolbar__separator"
-              />
-              
-                            
-            </div>
-            
-                            
-            <div
-              aria-label="Navigation actions"
-              class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-              role="toolbar"
-            >
-              
-                                
-              <button
-                aria-label="Resize"
-                class="fd-button fd-button--transparent"
+              <div
+                aria-label="Product actions"
+                class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                role="toolbar"
               >
                 
                                     
-                <i
-                  class="sap-icon--resize"
+                <button
+                  class="fd-button fd-button--compact fd-button--positive"
+                >
+                  Accept
+                </button>
+                
+                                    
+                <button
+                  class="fd-button fd-button--compact fd-button--reject"
+                >
+                  Reject
+                </button>
+                
+                                    
+                <span
+                  class="fd-toolbar__separator"
                 />
                 
                                 
-              </button>
+              </div>
               
                                 
-              <button
-                aria-label="Exit fullscreen"
-                class="fd-button fd-button--transparent"
+              <div
+                aria-label="Navigation actions"
+                class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                role="toolbar"
               >
                 
                                     
-                <i
-                  class="sap-icon--exitfullscreen"
-                />
-                
-                                
-              </button>
-              
-                                
-              <button
-                aria-label="Close"
-                class="fd-button fd-button--transparent"
-              >
+                <button
+                  aria-label="Resize"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                        
+                  <i
+                    class="sap-icon--resize"
+                  />
+                  
+                                    
+                </button>
                 
                                     
-                <i
-                  class="sap-icon--decline"
-                />
+                <button
+                  aria-label="Exit fullscreen"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                        
+                  <i
+                    class="sap-icon--exitfullscreen"
+                  />
+                  
+                                    
+                </button>
+                
+                                    
+                <button
+                  aria-label="Close"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                        
+                  <i
+                    class="sap-icon--decline"
+                  />
+                  
+                                    
+                </button>
                 
                                 
-              </button>
+              </div>
               
                             
             </div>
@@ -3424,7 +3396,7 @@ exports[`Storyshots Layouts/Dynamic Page Without pin 1`] = `
       <div
         aria-hidden="false"
         aria-label="Pinned header"
-        class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--xl"
+        class="fd-dynamic-page__collapsible-header"
         id="fddplhvc3"
         role="region"
       >
@@ -3488,7 +3460,7 @@ exports[`Storyshots Layouts/Dynamic Page Without pin 1`] = `
   
         
   <div
-    class="fd-dynamic-page__content fd-dynamic-page__content--xl"
+    class="fd-dynamic-page__content"
   >
     
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
