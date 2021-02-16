@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.16.0
+ * Fundamental Library Styles v0.16.1
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -1875,18 +1875,6 @@
   font-size: 1rem;
   font-size: var(--sapFontLargeSize,1rem)
 }
-/*!
-.fd-side-nav
-    .fd-side-nav__skip-link
-    .fd-side-nav__group
-        .fd-side-nav__title
-        .fd-side-nav__list
-            .fd-side-nav__item
-                .fd-side-nav__link (.has-child, .is-active, .is-expanded)
-                .fd-side-nav__sublist
-                    .fd-side-nav__subitem
-                    .fd-side-nav__sublink (.is-active)
-*/
 .fd-side-nav {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -1920,7 +1908,8 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   text-shadow: 0 0 .125rem #000;
-  text-shadow: var(--fdSideNav_Text_Shadow,0 0 .125rem #000)
+  text-shadow: var(--fdSideNav_Text_Shadow,0 0 .125rem #000);
+  height: 100%
 }
 .fd-side-nav::after,
 .fd-side-nav::before {

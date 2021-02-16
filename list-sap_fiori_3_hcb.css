@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.16.0
+ * Fundamental Library Styles v0.16.1
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -1161,13 +1161,6 @@
 .fd-list--dropdown .fd-list__icon,
 .fd-list--multi-input .fd-list__icon {
   line-height: 1rem
-}
-.fd-list--dropdown > :last-child,
-.fd-list--multi-input > :last-child {
-  border-bottom-left-radius: .25rem;
-  border-bottom-left-radius: var(--sapElement_BorderCornerRadius,.25rem);
-  border-bottom-right-radius: .25rem;
-  border-bottom-right-radius: var(--sapElement_BorderCornerRadius,.25rem)
 }
 .fd-list--byline .fd-list__item {
   width: 100%;

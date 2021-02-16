@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.16.0
+ * Fundamental Library Styles v0.16.1
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -5144,6 +5144,20 @@
 [dir=rtl] .fd-button-split > [class*="--emphasized"]:first-child {
   margin-right: 0;
   margin-left: .0625rem
+}
+.fd-button-split > :first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start
+}
+.fd-button-split > :first-child .fd-button-split__text {
+  display: inline-block
 }
 .fd-button-split > :first-child:hover .fd-button-split__text {
   color: #0854a0;
@@ -16186,13 +16200,6 @@
 .fd-list--multi-input .fd-list__icon {
   line-height: 1rem
 }
-.fd-list--dropdown > :last-child,
-.fd-list--multi-input > :last-child {
-  border-bottom-left-radius: .25rem;
-  border-bottom-left-radius: var(--sapElement_BorderCornerRadius,.25rem);
-  border-bottom-right-radius: .25rem;
-  border-bottom-right-radius: var(--sapElement_BorderCornerRadius,.25rem)
-}
 .fd-list--byline .fd-list__item {
   width: 100%;
   min-height: 5rem;
@@ -26464,18 +26471,6 @@
   font-size: 1rem;
   font-size: var(--sapFontLargeSize,1rem)
 }
-/*!
-.fd-side-nav
-    .fd-side-nav__skip-link
-    .fd-side-nav__group
-        .fd-side-nav__title
-        .fd-side-nav__list
-            .fd-side-nav__item
-                .fd-side-nav__link (.has-child, .is-active, .is-expanded)
-                .fd-side-nav__sublist
-                    .fd-side-nav__subitem
-                    .fd-side-nav__sublink (.is-active)
-*/
 .fd-side-nav {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -26509,7 +26504,8 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   text-shadow: 0 0 .125rem #000;
-  text-shadow: var(--fdSideNav_Text_Shadow,0 0 .125rem #000)
+  text-shadow: var(--fdSideNav_Text_Shadow,0 0 .125rem #000);
+  height: 100%
 }
 .fd-side-nav::after,
 .fd-side-nav::before {
