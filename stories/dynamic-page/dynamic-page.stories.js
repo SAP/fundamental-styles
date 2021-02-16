@@ -200,14 +200,7 @@ export const desktop = () => `
 desktop.storyName = 'Desktop';
 desktop.parameters = {
     docs: {
-        storyDescription: `The dynamic page displays on desktop screens with the L, XL, and XXL sizes. To optimize dynamic page for desktop, add these modifier classes to the following elements:
-    
-| Element | Modifier class |
-| ----------------: | :------------ |
-| Title Area | \`\` |
-| Header | \`fd-dynamic-page__collapsible-header--xl\` |
-| Tabs | \`fd-dynamic-page__tabs--xl\` |
-| Content | \`fd-dynamic-page__content--xl\` |
+        storyDescription: `The dynamic page displays on desktop screens with the L, XL, and XXL sizes. To optimize dynamic page for desktop, add modifier class \`fd-dynamic-page--xl\`.
 
 Note: The XL size is presented in this table, however the L and XXL size works as well.
 
@@ -356,18 +349,7 @@ export const tablet = () => `
 tablet.storyName = 'Tablet';
 tablet.parameters = {
     docs: {
-        storyDescription: `The dynamic page displays on tablet screens with the M size. To optimize dynamic page for tablet, add these modifier classes to the following elements:
-
-| Element | Modifier class |
-| ----------------: | :------------ |
-| Title area | \`\` |
-| Title | \`fd-dynamic-page__title--md\` |
-| Header | \`fd-dynamic-page__collapsible-header--md\` |
-| Tabs | \`fd-dynamic-page__tabs--md\` |
-| Content | \`fd-dynamic-page__content--md\` |
-| Actions container| \`fd-dynamic-page__actions-container--md\`|
-| Toolbar product actions| \`fd-dynamic-page__toolbar--md\`|
-| Toolbar layout actions | \`fd-dynamic-page__toolbar-actions--md\`|
+        storyDescription: `The dynamic page displays on tablet screens with the M size. To optimize dynamic page for tablet, add modifier class \`fd-dynamic-page--md\`.
 
  
 It is recommended that the navigation actions are displayed in a separate row above product actions, and are placed at the same level as the breadcrumb component.`
@@ -525,18 +507,7 @@ export const mobile = () =>
 mobile.storyName = 'Mobile';
 mobile.parameters = {
     docs: {
-        storyDescription: `The dynamic page displays on mobile screens with the S size. To optimize dynamic page for mobile, add these modifier classes to the following elements:
-        
-| Element | Modifier class |
-| ----------------: | :------------ |
-| Title Area | \`\` |
-| Breadcrumb | \`fd-dynamic-page__breadcrumb--sm\` |
-| Header | \`fd-dynamic-page__collapsible-header--sm\` |
-| Global Actions | \`fd-dynamic-page__toolbar--sm\` |
-| Layout Actions | \`fd-dynamic-page__toolbar-actions--sm\` |
-| Tabs | \`fd-dynamic-page__tabs--sm\` |
-| Content | \`fd-dynamic-page__content--sm\` |
-| Summary line (optional) | \`fd-dynamic-page__summarized-title-area--sm\` |
+        storyDescription: `The dynamic page displays on mobile screens with the S size. To optimize dynamic page for mobile, add modifier class \`fd-dynamic-page--sm\`.
  
 To display the breadcrumb and close button, they must be wrapped in \`fd-dynamic-page__breadcrumb-container\`. The toolbar overflow actions are functional without being wrapped in an additional container. The title, however, requires \`fd-dynamic-page__toolbar-container\` to be displayed in an overflow toolbar.
 Use \`fd-dynamic-page__title-content-toolbar\` for the title content when it is used in an overflow toolbar.`
