@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.16.1-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.16.1-rc.7...v0.16.1-rc.8) (2021-02-16)
+
+
+### Bug Fixes
+
+* Side Nav taking the whole height of the container ([#2145](https://github.com/SAP/fundamental-styles/issues/2145)) ([20a974d](https://github.com/SAP/fundamental-styles/commit/20a974dc5833cc503ddf9ad65a8c32da2888052a))
+
 ### [0.16.1-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.16.1-rc.6...v0.16.1-rc.7) (2021-02-16)
 
 ### [0.16.1-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.16.1-rc.5...v0.16.1-rc.6) (2021-02-16)
