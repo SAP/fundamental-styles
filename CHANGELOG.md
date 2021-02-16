@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.16.1-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.16.1-rc.8...v0.16.1-rc.9) (2021-02-16)
+
+
+### Bug Fixes
+
+* remove border-bottom radius from mult-input list items ([#2144](https://github.com/SAP/fundamental-styles/issues/2144)) ([cdee591](https://github.com/SAP/fundamental-styles/commit/cdee5914c3e7b552d447bd4906305f9b77eccd84))
+
 ### [0.16.1-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.16.1-rc.7...v0.16.1-rc.8) (2021-02-16)
 
 
