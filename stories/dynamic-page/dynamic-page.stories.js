@@ -22,14 +22,14 @@ export default {
     - <code class="docs-code">fd-dynamic-page\\_\\_title-area</code> The area holding title, KPI content, subtitle, and actions
         - <code class="docs-code">fd-dynamic-page\\_\\_main-container</code> Main container that holds **Breadcrumb**, title, title content and actions
             - <code class="docs-code">fd-dynamic-page\\_\\_breadcrumb-title-container</code> Container that holds breadcrumb, title, and title content
-                - <code class="docs-code">fd-dynamic-page\\_\\_breadcrumb</code> Breadcrumbs
-                - <code class="docs-code">fd-dynamic-page\\_\\_title-container</code> The container for title, KPI content and actions
+                - <code class="docs-code">fd-dynamic-page\\_\\_breadcrumb-container</code> Breadcrumbs Container, can contain toolbar container
+                    - <code class="docs-code">fd-dynamic-page\\_\\_breadcrumb</code> Breadcrumbs
+                - <code class="docs-code">fd-dynamic-page\\_\\_title-container</code> The container for title, KPI content and actions and toolbar container
                     - <code class="docs-code">fd-dynamic-page\\_\\_title</code> Dynamic page title
                     - <code class="docs-code">fd-dynamic-page\\_\\_title-content</code> The KPI content
-            - <code class="docs-code">fd-dynamic-page\\_\\_actions-container</code> Wrapper container for toolbar that handles toolbar positioning
                 - <code class="docs-code">fd-dynamic-page\\_\\_toolbar-container</code> Container that holds toolbar-related actions
                     - <code class="docs-code">fd-dynamic-page\\_\\_toolbar</code> Toolbar container for actions
-                    - <code class="docs-code">fd-dynamic-page\\_\\_toolbar-actions</code> Navigation actions
+                    - <code class="docs-code">fd-dynamic-page\\_\\_toolbar--actions</code> Navigation actions
         - <code class="docs-code">fd-dynamic-page\\_\\_subtitle</code> Dynamic page subtitle
     - <code class="docs-code">fd-dynamic-page\\_\\_collapsible-header-container</code> Dynamic page header container
         - <code class="docs-code">fd-dynamic-page\\_\\_collapsible-header</code> Dynamic page header
@@ -58,10 +58,8 @@ To display a sticky header, use the <code class="docs-code">fd-dynamic-page\\_\\
 
 | **Description** | <span style="margin-left: 2rem;">**Modifier class**</span> |
 | :---- | :-------------- |
-| List background for content area|<code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_content--list-bg</code>        |
-| Transparent background for title area | <code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_title-area--transparent-bg</code> |
-| Transparent background for header area|<code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_header--transparent-bg</code>        |
-| Transparent background for content area|<code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_content--transparent-bg</code>        |
+| List background for content area|<code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page--list-bg</code>        |
+| Transparent background for all areas | <code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page--transparent-bg</code>
 
 `,
         tags: ['f3', 'theme', 'development'],
@@ -199,15 +197,6 @@ desktop.storyName = 'Desktop';
 desktop.parameters = {
     docs: {
         storyDescription: `The dynamic page displays on desktop screens with the L, XL, and XXL sizes. To optimize dynamic page for desktop, add modifier class \`fd-dynamic-page--xl\`.
-
-Note: The XL size is presented in this table, however the L and XXL size works as well.
-
-It is also possible to add **Tabs** to the header area, which helps divide the page content. To display tabs, add the \`fd-dynamic-page__tabs\` class along with any of these size modifiers:
-
-- \`--sm\`
-- \`--md\`
-- \`--lg\`
-- \`--xl\`
 
 In addition, add the modifier classes \`--add-shadow\` to the unordered list, and \`--overflow\` at the parent level for the box-shadow styling.
 `
@@ -351,7 +340,6 @@ tablet.parameters = {
     docs: {
         storyDescription: `The dynamic page displays on tablet screens with the M size. To optimize dynamic page for tablet, add modifier class \`fd-dynamic-page--md\`.
 
- 
 It is recommended that the navigation actions are displayed in a separate row above product actions, and are placed at the same level as the breadcrumb component.`
     }
 };
