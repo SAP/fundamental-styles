@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.16.1-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.16.1-rc.9...v0.16.1-rc.10) (2021-02-16)
+
+
+### Bug Fixes
+
+* add proper alignment for the text inside Split button ([#2150](https://github.com/SAP/fundamental-styles/issues/2150)) ([cb5f1e5](https://github.com/SAP/fundamental-styles/commit/cb5f1e5b077763ca2546f109fd129e5b6d5ad941))
+
 ### [0.16.1-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.16.1-rc.8...v0.16.1-rc.9) (2021-02-16)
 
 
