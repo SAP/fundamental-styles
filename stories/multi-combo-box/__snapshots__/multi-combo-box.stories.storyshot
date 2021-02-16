@@ -732,14 +732,14 @@ exports[`Storyshots Patterns/Multi ComboBox Cozy And Compact 1`] = `
                     aria-labelledby="Az0bg22"
                     checked=""
                     class="fd-checkbox"
-                    id="Ai4ez613"
+                    id="Ai4ez61377"
                     type="checkbox"
                   />
                   
 							
                   <label
                     class="fd-checkbox__label"
-                    for="Ai4ez613"
+                    for="Ai4ez61377"
                     tabindex="-1"
                   />
                   
@@ -2513,14 +2513,14 @@ exports[`Storyshots Patterns/Multi ComboBox Mobile Mode 1`] = `
               aria-labelledby="Az0bg52"
               checked=""
               class="fd-checkbox"
-              id="Ai4ez643"
+              id="Ai4ez64300"
               type="checkbox"
             />
             
 						
             <label
               class="fd-checkbox__label"
-              for="Ai4ez643"
+              for="Ai4ez64300"
               tabindex="-1"
             />
             
