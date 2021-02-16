@@ -21,6 +21,35 @@ $block: #{$fd-namespace}-dynamic-page;
 
   @include fd-reset();
 
+  @mixin fd-background-page($background-color) {
+    .#{$block}__content {
+      background-color: $background-color;
+    }
+  }
+
+  @mixin fd-responsive-page($padding-y: 0,$padding-x: 1rem) {
+    .#{$block}__title-area {
+      @include responsive-page($fd-dynamic-page-padding-top-bottom, $padding-x);
+
+      &--collapsed {
+        padding-bottom: 1rem;
+      }
+    }
+
+    .#{$block}__collapsible-header,
+    .#{$block}__content {
+      @include responsive-page($padding-y, $padding-x);
+    }
+
+    .#{$block}__tabs {
+      @include responsive-page(0, $padding-x);
+    }
+
+    .#{$block}__summarized-title-area {
+      @include responsive-page($padding-y);
+    }
+  }
+
   @mixin responsive-page($padding-y: 0,$padding-x: 1rem) {
     padding: $padding-y $padding-x;
   }
@@ -98,23 +127,6 @@ $block: #{$fd-namespace}-dynamic-page;
       cursor: pointer;
     }
 
-    &--sm {
-      @include responsive-page($fd-dynamic-page-padding-top-bottom, 0.5rem);
-    }
-
-    &--md,
-    &--lg {
-      @include responsive-page($fd-dynamic-page-padding-top-bottom, 2rem);
-    }
-
-    &--xl {
-      @include responsive-page($fd-dynamic-page-padding-top-bottom, 3rem);
-    }
-
-    &--transparent-bg {
-      background: var(--fdDynamicPage_Title_Header_Transparent_Background);
-    }
-
     &--collapsed {
       padding-bottom: 1rem;
     }
@@ -144,10 +156,6 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-reset();
 
     padding: 0.5rem 0 0.25rem 0;
-
-    &--sm {
-      padding: 0;
-    }
   }
 
   &__breadcrumb-title-container {
@@ -173,11 +181,6 @@ $block: #{$fd-namespace}-dynamic-page;
     padding: 0.3125rem 0 0 0;
 
     @include fd-ellipsis();
-
-    // tablet spec
-    &--md {
-      padding: 0.6875rem 0 0 0;
-    }
 
     // if fd-link is used as a child class
     .#{$fd-namespace}-link {
@@ -216,15 +219,6 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-flex(column);
 
     justify-content: flex-end;
-
-    // tablet spec
-    &--md {
-      flex-flow: row;
-
-      .#{$block}__toolbar-container {
-        flex-flow: column wrap;
-      }
-    }
   }
 
   &__toolbar-container {
@@ -236,7 +230,6 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-reset();
 
     padding: 0 0 0 1rem;
-    order: 1;
     justify-content: flex-end;
     align-items: flex-end;
 
@@ -245,45 +238,14 @@ $block: #{$fd-namespace}-dynamic-page;
       margin-left: 0;
       margin-right: auto;
     }
-
-    &--sm {
-      margin-left: auto;
-      padding: 0;
-      align-items: center;
-      align-self: center;
-
-      @include fd-rtl() {
-        padding: 0;
-      }
-    }
-
-    &--md {
-      order: 2;
-      padding: 0;
-      flex: 2;
-
-      @include fd-rtl() {
-        padding: 0;
-      }
-    }
   }
 
   &__toolbar-actions {
     @include fd-reset();
 
     padding: 0;
-    order: 2;
     justify-content: flex-end;
     align-items: baseline;
-
-    &--sm {
-      flex: 1;
-      align-items: center;
-    }
-
-    &--md {
-      order: 1;
-    }
   }
 
   &__title-content-toolbar {
@@ -308,19 +270,6 @@ $block: #{$fd-namespace}-dynamic-page;
     box-shadow: $fd-dynamic-page-box-shadow;
     height: 2rem;
     z-index: 1;
-
-    &--sm {
-      @include responsive-page(0.5rem);
-    }
-
-    &--md,
-    &--lg {
-      @include responsive-page(2rem);
-    }
-
-    &--xl {
-      @include responsive-page(3rem);
-    }
 
     &--no-shadow {
       @include no-shadow();
@@ -352,23 +301,6 @@ $block: #{$fd-namespace}-dynamic-page;
     background-color: $fd-dynamic-page-background-color;
     padding: $fd-dynamic-page-header-padding-top-bottom 0;
 
-    &--transparent-bg {
-      background-color: var(--fdDynamicPage_Title_Header_Transparent_Background);
-    }
-
-    &--sm {
-      @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 0.5rem);
-    }
-
-    &--md,
-    &--lg {
-      @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 2rem);
-    }
-
-    &--xl {
-      @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 3rem);
-    }
-
     &[aria-hidden="true"] {
       display: none;
     }
@@ -379,19 +311,6 @@ $block: #{$fd-namespace}-dynamic-page;
 
     &--overflow {
       overflow: hidden;
-    }
-
-    &--sm {
-      @include responsive-page($padding-x: 0.5rem);
-    }
-
-    &--md,
-    &--lg {
-      @include responsive-page($padding-x: 2rem);
-    }
-
-    &--xl {
-      @include responsive-page($padding-x: 3rem);
     }
 
     &--add-shadow {
@@ -458,31 +377,8 @@ $block: #{$fd-namespace}-dynamic-page;
   &__content {
     @include fd-reset();
 
-    padding: 1rem 0 0 0;
     background-color: $fd-dynamic-page-content-background-color;
     overflow-y: auto;
-
-    &--sm {
-      @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 0.5rem);
-    }
-
-    &--md,
-    &--lg {
-      @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 2rem);
-    }
-
-    &--xl {
-      @include responsive-page($fd-dynamic-page-header-padding-top-bottom, 3rem);
-    }
-
-    // for list and transparent, different bg colors
-    &--list-bg {
-      background-color: var(--fdDynamicPage_Content_List_Background);
-    }
-
-    &--transparent-bg {
-      background-color: var(--fdDynamicPage_Content_Transparent_Background);
-    }
   }
 
   &__footer {
@@ -491,5 +387,73 @@ $block: #{$fd-namespace}-dynamic-page;
     right: 0;
     bottom: 0;
     margin: 0 $fd-dynamic-page-padding-top-bottom $fd-dynamic-page-padding-top-bottom;
+  }
+
+  &--sm {
+    @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom, 0.5rem);
+
+    .#{$block}__breadcrumb {
+      padding: 0;
+    }
+
+    .#{$block}__toolbar {
+      margin-left: auto;
+      padding: 0;
+      align-items: center;
+      align-self: center;
+    }
+
+    .#{$block}__toolbar-actions {
+      flex: 1;
+      align-items: center;
+    }
+  }
+
+  &--md,
+  &--lg {
+    @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom, 2rem);
+  }
+
+  &--xl {
+    @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom, 3rem);
+  }
+
+  &--md {
+    .#{$block}__title {
+      padding: 0.6875rem 0 0 0;
+    }
+
+    .#{$block}__actions-container {
+      flex-flow: row;
+    }
+
+    .#{$block}__toolbar-container {
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+    }
+
+    .#{$block}__toolbar {
+      padding: 0;
+    }
+  }
+
+  &--list-bg {
+    .#{$block}__content {
+      background-color: var(--fdDynamicPage_Content_List_Background);
+    }
+  }
+
+  &--transparent-bg {
+    .#{$block}__content {
+      background-color: var(--fdDynamicPage_Content_Transparent_Background);
+    }
+
+    .#{$block}__title-area {
+      background: var(--fdDynamicPage_Title_Header_Transparent_Background);
+    }
+
+    .#{$block}__collapsible-header {
+      background-color: var(--fdDynamicPage_Title_Header_Transparent_Background);
+    }
   }
 }
