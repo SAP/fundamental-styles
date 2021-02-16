@@ -91,8 +91,8 @@ export const cozyAndCompact = () => `<div class="fd-container" style="height: 30
 					</li>
 					<li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
 						<div class="fd-form-item fd-list__form-item">
-							<input type="checkbox" class="fd-checkbox" id="Ai4ez613" checked aria-labelledby="Az0bg22">
-							<label tabindex="-1" class="fd-checkbox__label" for="Ai4ez613"></label>
+							<input type="checkbox" class="fd-checkbox" id="Ai4ez61377" checked aria-labelledby="Az0bg22">
+							<label tabindex="-1" class="fd-checkbox__label" for="Ai4ez61377"></label>
 						</div>
 						<span class="fd-list__title" id="Az0bg22">Banana</span>
 					</li>
@@ -780,8 +780,8 @@ export const mobileMode = () => `<div class="fd-dialog fd-dialog-docs-static fd-
 				<li class="fd-list__message fd-list__message--success" role="option">Success Message</li>
 				<li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
 					<div class="fd-form-item fd-list__form-item">
-						<input type="checkbox" class="fd-checkbox" id="Ai4ez643" checked aria-labelledby="Az0bg52">
-						<label tabindex="-1" class="fd-checkbox__label" for="Ai4ez643"></label>
+						<input type="checkbox" class="fd-checkbox" id="Ai4ez64300" checked aria-labelledby="Az0bg52">
+						<label tabindex="-1" class="fd-checkbox__label" for="Ai4ez64300"></label>
 					</div>
 				<span class="fd-list__title" id="Az0bg52">Apple</span>
 				</li>
