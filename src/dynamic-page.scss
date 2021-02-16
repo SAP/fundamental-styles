@@ -214,46 +214,35 @@ $block: #{$fd-namespace}-dynamic-page;
     }
   }
 
-  &__actions-container {
-    @include fd-reset();
-    @include fd-flex(column);
-
-    justify-content: flex-end;
-  }
-
   &__toolbar-container {
     @include fd-reset();
     @include fd-flex-vertical-center();
+
+    margin-left: auto;
+
+    @include fd-rtl() {
+      margin-right: auto;
+      margin-left: initial;
+    }
   }
 
   &__toolbar {
     @include fd-reset();
 
     padding: 0 0 0 1rem;
-    justify-content: flex-end;
-    align-items: flex-end;
 
     @include fd-rtl() {
       padding: 0 1rem 0 0;
-      margin-left: 0;
-      margin-right: auto;
     }
-  }
 
-  &__toolbar-actions {
-    @include fd-reset();
+    &--actions,
+    &--content {
+      padding: 0;
 
-    padding: 0;
-    justify-content: flex-end;
-    align-items: baseline;
-  }
-
-  &__title-content-toolbar {
-    @include fd-reset();
-
-    justify-content: flex-start;
-    align-self: center;
-    padding: 0;
+      @include fd-rtl() {
+        padding: 0;
+      }
+    }
   }
 
   &__summarized-title-area {
@@ -396,16 +385,32 @@ $block: #{$fd-namespace}-dynamic-page;
       padding: 0;
     }
 
-    .#{$block}__toolbar {
-      margin-left: auto;
-      padding: 0;
-      align-items: center;
-      align-self: center;
+    .#{$block}__title {
+      padding: 0.6875rem 0 0 0;
     }
 
-    .#{$block}__toolbar-actions {
-      flex: 1;
-      align-items: center;
+    .#{$block}__title-container {
+      align-items: flex-start;
+    }
+
+    .#{$block}__toolbar {
+      padding-left: 1rem;
+      margin-left: auto;
+
+      @include fd-rtl() {
+        margin-left: initial;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 1rem;
+      }
+
+      &--content {
+        margin-left: initial;
+
+        @include fd-rtl() {
+          margin-right: initial;
+        }
+      }
     }
   }
 
@@ -423,13 +428,8 @@ $block: #{$fd-namespace}-dynamic-page;
       padding: 0.6875rem 0 0 0;
     }
 
-    .#{$block}__actions-container {
-      flex-flow: row;
-    }
-
-    .#{$block}__toolbar-container {
-      flex-direction: column-reverse;
-      flex-wrap: wrap;
+    .#{$block}__breadcrumb-container {
+      align-items: flex-end;
     }
 
     .#{$block}__toolbar {

@@ -85,25 +85,23 @@ export const desktop = () => `
                         <div class="fd-dynamic-page__title-container">
                             <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
                             <div class="fd-dynamic-page__title-content" title="Some RANDOM things"> Some RANDOM things </div>
-                        </div>
-                    </div>
-                    <div class="fd-dynamic-page__actions-container">
-                        <div class="fd-dynamic-page__toolbar-container">
-                            <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
-                                <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
-                                <span class="fd-toolbar__separator"></span>
+                            <div class="fd-dynamic-page__toolbar-container">
+                                <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                    <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
+                                    <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
+                                    <span class="fd-toolbar__separator"></span>
                                 </div>
-                            <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                <button class="fd-button fd-button--transparent" aria-label="Resize">
-                                    <i class="sap-icon--resize"></i>
-                                </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
-                                    <i class="sap-icon--exitfullscreen"></i>
-                                </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Close">
-                                    <i class="sap-icon--decline"></i>
-                                </button>
+                                <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                    <button class="fd-button fd-button--transparent" aria-label="Resize">
+                                        <i class="sap-icon--resize"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
+                                        <i class="sap-icon--exitfullscreen"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--transparent" aria-label="Close">
+                                        <i class="sap-icon--decline"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -222,36 +220,38 @@ export const tablet = () => `
             <div class="fd-dynamic-page__title-area " tabindex="0">
             <div class="fd-dynamic-page__main-container">
                     <div class="fd-dynamic-page__breadcrumb-title-container">
-                        <nav aria-label="Breadcrumbs">
-                            <ul class="fd-dynamic-page__breadcrumb fd-breadcrumb">
-                                <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
-                                <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Shoes</a></li>
-                                <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
-                            </ul>
-                        </nav>
+                            <div class="fd-dynamic-page__breadcrumb-container">
+                            <nav aria-label="Breadcrumbs">
+                                <ul class="fd-dynamic-page__breadcrumb fd-breadcrumb">
+                                    <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
+                                    <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Shoes</a></li>
+                                    <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
+                                </ul>
+                            </nav>
+                            <div class="fd-dynamic-page__toolbar-container">
+                                <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
+                                    <button class="fd-button fd-button--transparent" aria-label="Resize">
+                                        <i class="sap-icon--resize"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
+                                        <i class="sap-icon--exitfullscreen"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--transparent" aria-label="Close">
+                                        <i class="sap-icon--decline"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                         <div class="fd-dynamic-page__title-container">
                             <h1 class="fd-title fd-dynamic-page__title">
-                                <a href="#" class="fd-link" tabindex="0" title="Balenciaga Triple S Trainers">Balenciaga Triple S Trainers </a>
+                                <a href="#" class="fd-link" title="Balenciaga Triple S Trainers">Balenciaga Triple S Trainers </a>
                             </h1>
                             <div class="fd-dynamic-page__title-content" title="Some RANDOM things"> Some RANDOM things </div>
-                        </div>
-                    </div>
-                    <div class="fd-dynamic-page__actions-container">
-                        <div class="fd-dynamic-page__toolbar-container">
-                            <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
-                                <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
-                                <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
-                            </div>
-                            <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
-                                <button class="fd-button fd-button--transparent" aria-label="Resize">
-                                    <i class="sap-icon--resize"></i>
-                                </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
-                                    <i class="sap-icon--exitfullscreen"></i>
-                                </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Close">
-                                    <i class="sap-icon--decline"></i>
-                                </button>
+                            <div class="fd-dynamic-page__toolbar-container">
+                                <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
+                                    <button class="fd-button fd-button--positive">Accept</button>
+                                    <button class="fd-button fd-button--reject">Reject</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -366,12 +366,12 @@ export const mobile = () =>
                             <div class="fd-dynamic-page__breadcrumb-container">
                                 <nav aria-label="Breadcrumbs">
                                     <ul class="fd-breadcrumb">
-                                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
-                                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Shoes</a></li>
-                                        <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
+                                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" href="#">Men</a></li>
+                                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" href="#">Shoes</a></li>
+                                        <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" href="#">Running Shoes</a></li>
                                     </ul>
                                 </nav>
-                                <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
+                                <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
                                     <button class="fd-button fd-button--transparent" aria-label="Close">
                                         <i class="sap-icon--decline"></i>
                                     </button>
@@ -379,7 +379,7 @@ export const mobile = () =>
                             </div>
                             <div class="fd-dynamic-page__title-container">
                                 <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
-                                <div role="toolbar" aria-label="Header Content" class="fd-dynamic-page__title-content-toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
+                                <div role="toolbar" aria-label="Header Content" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--content fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
                                     <div class="fd-popover fd-toolbar__overflow">
                                         <div class="fd-popover__control">
                                             <button
@@ -510,7 +510,7 @@ mobile.parameters = {
         storyDescription: `The dynamic page displays on mobile screens with the S size. To optimize dynamic page for mobile, add modifier class \`fd-dynamic-page--sm\`.
  
 To display the breadcrumb and close button, they must be wrapped in \`fd-dynamic-page__breadcrumb-container\`. The toolbar overflow actions are functional without being wrapped in an additional container. The title, however, requires \`fd-dynamic-page__toolbar-container\` to be displayed in an overflow toolbar.
-Use \`fd-dynamic-page__title-content-toolbar\` for the title content when it is used in an overflow toolbar.`
+Use \`fd-dynamic-page__toolbar fd-dynamic-page__toolbar--content\` for the title content when it is used in an overflow toolbar.`
     }
 };
 
@@ -529,7 +529,7 @@ export const mobileCollapsed = () =>
                                         <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
                                     </ul>
                                 </nav>
-                                <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
+                                <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
                                         <button class="fd-button fd-button--transparent" aria-label="Close">
                                             <i class="sap-icon--decline"></i>
                                         </button>
@@ -537,7 +537,7 @@ export const mobileCollapsed = () =>
                             </div>
                             <div class="fd-dynamic-page__title-container">
                                 <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
-                                <div role="toolbar" aria-label="Header Content" class="fd-dynamic-page__title-content-toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
+                                <div role="toolbar" aria-label="Header Content" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--content fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
                                     <div class="fd-popover fd-toolbar__overflow">
                                         <div class="fd-popover__control">
                                             <button
@@ -678,7 +678,7 @@ export const summaryLine = () =>
                     tabindex="0">
                     <h1 class="fd-dynamic-page__summarized-title fd-dynamic-page__summarized-title--collapsed" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
                     <div role="toolbar" aria-label="Expand summary line action"
-                        class="fd-dynamic-page__toolbar-actions  fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
+                        class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions  fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
                             <button class="fd-button fd-button--transparent" aria-label="Expand">
                                 <i class="sap-icon--slim-arrow-down"></i>
                             </button>
@@ -694,7 +694,7 @@ export const summaryLine = () =>
                                 <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="-1" href="#">Running Shoes</a></li>
                             </ul>
                         </nav>
-                        <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
+                        <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
                             <button tabindex="-1" class="fd-button fd-button--transparent" aria-label="Close">
                                 <i class="sap-icon--decline"></i>
                             </button>
@@ -702,7 +702,7 @@ export const summaryLine = () =>
                     </div>
                     <div class="fd-dynamic-page__title-container">
                         <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
-                            <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
+                            <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
                                 <button tabindex="-1" class="fd-button fd-button--transparent" aria-label="More Header Content">
                                     <i class="sap-icon--overflow"></i>
                                 </button>
@@ -810,24 +810,22 @@ export const expandable = () =>
                             <div class="fd-dynamic-page__title-content" title="Header with both collapse and pin buttons, expanded by default"> Header with both collapse and pin buttons, expanded by default</div>
                         </div>
                     </div>
-                    <div class="fd-dynamic-page__actions-container">
-                        <div class="fd-dynamic-page__toolbar-container">
-                            <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
-                                <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
-                                <span class="fd-toolbar__separator"></span>
-                            </div>
-                            <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                    <button class="fd-button fd-button--transparent" aria-label="Resize">
-                                        <i class="sap-icon--resize"></i>
-                                    </button>
-                                    <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
-                                        <i class="sap-icon--exitfullscreen"></i>
-                                    </button>
-                                    <button class="fd-button fd-button--transparent" aria-label="Close">
-                                        <i class="sap-icon--decline"></i>
-                                    </button>
-                            </div>
+                    <div class="fd-dynamic-page__toolbar-container">
+                        <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                            <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
+                            <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
+                            <span class="fd-toolbar__separator"></span>
+                        </div>
+                        <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                <button class="fd-button fd-button--transparent" aria-label="Resize">
+                                    <i class="sap-icon--resize"></i>
+                                </button>
+                                <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
+                                    <i class="sap-icon--exitfullscreen"></i>
+                                </button>
+                                <button class="fd-button fd-button--transparent" aria-label="Close">
+                                    <i class="sap-icon--decline"></i>
+                                </button>
                         </div>
                     </div>
                 </div>
@@ -893,24 +891,22 @@ export const collapsedHeader = () =>
                             <div class="fd-dynamic-page__title-content" title="Collapsed Header with both expand and pin buttons">Collapsed Header with both expand and pin buttons </div>
                         </div>
                     </div>
-                    <div class="fd-dynamic-page__actions-container">
-                        <div class="fd-dynamic-page__toolbar-container">
-                            <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
-                                <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
-                                <span class="fd-toolbar__separator"></span>
-                            </div>
-                            <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                <button class="fd-button fd-button--transparent" aria-label="Resize">
-                                    <i class="sap-icon--resize"></i>
-                                </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
-                                    <i class="sap-icon--exitfullscreen"></i>
-                                </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Close">
-                                    <i class="sap-icon--decline"></i>
-                                </button>
-                            </div>
+                    <div class="fd-dynamic-page__toolbar-container">
+                        <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                            <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
+                            <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
+                            <span class="fd-toolbar__separator"></span>
+                        </div>
+                        <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                            <button class="fd-button fd-button--transparent" aria-label="Resize">
+                                <i class="sap-icon--resize"></i>
+                            </button>
+                            <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
+                                <i class="sap-icon--exitfullscreen"></i>
+                            </button>
+                            <button class="fd-button fd-button--transparent" aria-label="Close">
+                                <i class="sap-icon--decline"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -973,25 +969,23 @@ export const onlyCollapse = () =>
                         <div class="fd-dynamic-page__title-container">
                             <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
                             <div class="fd-dynamic-page__title-content" title="The header can only be expanded/collapsed, not pinned"> The header can only be expanded/collapsed, not pinned. </div>
-                        </div>
-                    </div>
-                    <div class="fd-dynamic-page__actions-container">
-                        <div class="fd-dynamic-page__toolbar-container">
-                            <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
-                                <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
-                                <span class="fd-toolbar__separator"></span>
-                            </div>
-                            <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                <button class="fd-button fd-button--transparent" aria-label="Resize">
-                                    <i class="sap-icon--resize"></i>
-                                </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
-                                    <i class="sap-icon--exitfullscreen"></i>
-                                </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Close">
-                                    <i class="sap-icon--decline"></i>
-                                </button>
+                            <div class="fd-dynamic-page__toolbar-container">
+                                <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                    <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
+                                    <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
+                                    <span class="fd-toolbar__separator"></span>
+                                </div>
+                                <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                    <button class="fd-button fd-button--transparent" aria-label="Resize">
+                                        <i class="sap-icon--resize"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
+                                        <i class="sap-icon--exitfullscreen"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--transparent" aria-label="Close">
+                                        <i class="sap-icon--decline"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
