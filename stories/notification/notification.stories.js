@@ -233,7 +233,7 @@ export const notificationGroup = () => `<div class="fd-notification fd-notificat
         </li>
     </ul>
     <div class="fd-tabs__panel" aria-expanded="true" id="notifV550" role="tabpanel">
-        <div class="fd-notification--group-header">
+        <div class="fd-notification__group-header">
             <button role="button" aria-label="arrow-down-button" class="fd-button fd-button--compact fd-button--transparent">
                 <i class="sap-icon--slim-arrow-down"></i>
             </button>
@@ -346,7 +346,7 @@ export const notificationGroup = () => `<div class="fd-notification fd-notificat
         </div>
     </div>
     <div class="fd-tabs__panel" aria-expanded="false" id="notifV551" role="tabpanel">
-        <div class="fd-notification--group-header">
+        <div class="fd-notification__group-header">
             <button role="button" aria-label="arrow-down-button" class="fd-button fd-button--compact fd-button--transparent">
                 <i class="sap-icon--slim-arrow-down"></i>
             </button>
@@ -387,7 +387,7 @@ export const notificationGroup = () => `<div class="fd-notification fd-notificat
         </div>
     </div>
     <div class="fd-tabs__panel" aria-expanded="false" id="notifV552" role="tabpanel">
-        <div class="fd-notification--group-header">
+        <div class="fd-notification__group-header">
             <button role="button" aria-label="arrow-down-button" class="fd-button fd-button--compact fd-button--transparent">
                 <i class="sap-icon--slim-arrow-down"></i>
             </button>
@@ -520,7 +520,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
             </li>
         </ul>
         <div class="fd-tabs__panel" aria-expanded="true" id="notifP300" role="tabpanel">
-            <div class="fd-notification--group-header">
+            <div class="fd-notification__group-header">
                 <button role="button" aria-label="arrow-down-button" class="fd-button fd-button--transparent">
                     <i class="sap-icon--slim-arrow-down"></i>
                 </button>
@@ -619,7 +619,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
             </div>
         </div>
         <div class="fd-tabs__panel" aria-expanded="false" id="notifP301" role="tabpanel">
-            <div class="fd-notification--group-header">
+            <div class="fd-notification__group-header">
                 <button role="button" aria-label="arrow-down-button" class="fd-button fd-button--transparent">
                     <i class="sap-icon--slim-arrow-down"></i>
                 </button>
@@ -718,7 +718,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
             </div>
         </div>
         <div class="fd-tabs__panel" aria-expanded="false" id="notifP302" role="tabpanel">
-            <div class="fd-notification--group-header">
+            <div class="fd-notification__group-header">
                 <button role="button" aria-label="arrow-down-button" class="fd-button fd-button--transparent">
                     <i class="sap-icon--slim-arrow-down"></i>
                 </button>
