@@ -315,7 +315,7 @@ export const groupType = () => `<div class="fd-popover">
                 <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/2.svg')" role="presentation" aria-label="John Doe"></span>
             </div>
         
-            <button class="fd-button fd-avatar-group__more-button fd-avatar-group__more-button--m fd-avatar-group__more-button--accent-color-6" role="button" tabindex="-1">
+            <button class="fd-button fd-avatar-group__more-button fd-avatar-group__more-button--m" role="button" tabindex="-1">
                 <bdi class="fd-button__text fd-avatar-group__button-text">+8</bdi>
             </button>
         </div>
