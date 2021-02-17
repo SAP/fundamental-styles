@@ -215,7 +215,8 @@ NoMargin.parameters = {
         or <code>fd-margin-end--none</code> or <code>fd-margin-bottom--none</code> or <code>fd-margin-begin--none</code>
         modifier classes to remove existing margin. Place the no margin classes last to make sure they will be applied.
         In the case of <code>fd-margin-begin--none</code> and <code>fd-margin-end--none</code>, <code>!important</code> is not applied since we want
-        the user-specified margins(if any) to be reapplied in the RTL mode.`
+        the user-specified margins(if any) to be reapplied in the RTL mode. Please note that for RTL to work correctly,
+        you must add <code>[dir="rtl"]</code> style on the class where these modifiers will be applied.`
     }
 };
 
