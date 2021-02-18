@@ -18,6 +18,7 @@ $block: #{$fd-namespace}-dynamic-page;
   $fd-button-height: 1.5rem;
   $fd-button-clickable-height: 2rem;
   $fd-button-touchable-area: ($fd-button-clickable-height - $fd-button-height) / 2;
+  $fd-dynamic-page-toolbar-space: 1rem;
 
   @include fd-reset();
 
@@ -222,17 +223,16 @@ $block: #{$fd-namespace}-dynamic-page;
 
     @include fd-rtl() {
       margin-right: auto;
-      margin-left: initial;
+      margin-left: 0;
     }
   }
 
-  &__toolbar {
-    @include fd-reset();
-
-    padding: 0 0 0 1rem;
+  .#{$block}__toolbar {
+    padding-left: $fd-dynamic-page-toolbar-space;
 
     @include fd-rtl() {
-      padding: 0 1rem 0 0;
+      padding-left: 0;
+      padding-right: $fd-dynamic-page-toolbar-space;
     }
 
     &--actions,
@@ -295,9 +295,7 @@ $block: #{$fd-namespace}-dynamic-page;
     }
   }
 
-  &__tabs {
-    @include fd-reset();
-
+  .#{$block}__tabs {
     &--overflow {
       overflow: hidden;
     }
@@ -394,21 +392,21 @@ $block: #{$fd-namespace}-dynamic-page;
     }
 
     .#{$block}__toolbar {
-      padding-left: 1rem;
+      padding-left: $fd-dynamic-page-toolbar-space;
       margin-left: auto;
 
       @include fd-rtl() {
-        margin-left: initial;
+        margin-left: 0;
         margin-right: auto;
         padding-left: 0;
-        padding-right: 1rem;
+        padding-right: $fd-dynamic-page-toolbar-space;
       }
 
       &--content {
-        margin-left: initial;
+        margin-left: 0;
 
         @include fd-rtl() {
-          margin-right: initial;
+          margin-right: 0;
         }
       }
     }
