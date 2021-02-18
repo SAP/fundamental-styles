@@ -37,7 +37,8 @@ a[title='Open canvas in new tab'] {
 /** Avatar Group docs styling */
 [id*=story--components-avatar-group--] {
   min-height: 250px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 
   [id^="popover_avatar_"] {
     left: -136px;
@@ -48,8 +49,7 @@ a[title='Open canvas in new tab'] {
   }
 
   [id^="popover_avatar-group_"] {
-    left: -50px;
-    right: -50px;
+    left: -20px;
   }
 
   .fd-popover__body {

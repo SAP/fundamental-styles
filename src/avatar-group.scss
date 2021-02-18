@@ -2,7 +2,7 @@
 @import "./avatar";
 
 /*!
-.fd-avatar-group+((--individual|--group), (--xxs|--xs|--s|--m|--l|--xl|--xxl)
+.fd-avatar-group+((--individual|--group), (--xs|--s|--m|--l|--xl)
 */
 $block: #{$fd-namespace}-avatar-group;
 
@@ -47,6 +47,8 @@ $block: #{$fd-namespace}-avatar-group;
 
   @include fd-reset();
 
+  display: flex;
+
   &--individual-type {
     .#{$block}__item {
       @include fd-fiori-focus($fd-focus-outline-offset);
@@ -78,6 +80,17 @@ $block: #{$fd-namespace}-avatar-group;
       bdi {
         font-size: inherit;
       }
+    }
+  }
+
+  &__overflow-body {
+    @include fd-reset();
+
+    padding: 1rem;
+    white-space: initial;
+
+    .#{$block}__item {
+      margin: 0.25rem;
     }
   }
 
@@ -118,6 +131,7 @@ $block: #{$fd-namespace}-avatar-group;
   @each $accent-name, $color-set in $fd-avatar-group-more-button-accent-colors {
     .#{$block}__more-button--accent-color-#{$accent-name} {
       background-color: map_get($color-set, "background-color");
+      border-color: map_get($color-set, "background-color");
       color: var(--fdAvatar_Accent_Color);
     }
   }
