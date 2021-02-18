@@ -228,6 +228,8 @@ $block: #{$fd-namespace}-dynamic-page;
   }
 
   .#{$block}__toolbar {
+    @include fd-reset-spacing();
+
     padding-left: $fd-dynamic-page-toolbar-space;
 
     @include fd-rtl() {
@@ -296,6 +298,8 @@ $block: #{$fd-namespace}-dynamic-page;
   }
 
   .#{$block}__tabs {
+    @include fd-reset-spacing();
+
     &--overflow {
       overflow: hidden;
     }
