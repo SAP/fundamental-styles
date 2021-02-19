@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.16.2-rc.0...v0.17.0-rc.0) (2021-02-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* Removed classes: elements modifier sizes: `--sm/--md/--lg/--xl`, `fd-dynamic-page__actions-container`, `fd-dynamic-page__toolbar-actions`, `fd-dynamic-page__content-toolbar`
+
+* fix: Dynamic Page simplification
+
+* remove unnecessary docs [ci visual]
+
+* remove unnecessary classes, change descriptions
+
+* update documentation [ci visual]
+
+* update tests [ci visual]
+
+* make toolbat/tabs selector stronger, address PR comments [ci visual]
+
+* BREAKING CHANGE: simplify dynamic page (#2154) ([c5c1825](https://github.com/SAP/fundamental-styles/commit/c5c1825a20827077e9db426784f48a605f54dd22)), closes [#2154](https://github.com/SAP/fundamental-styles/issues/2154)
+
 ### [0.16.2-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.16.1...v0.16.2-rc.0) (2021-02-19)
 
 
