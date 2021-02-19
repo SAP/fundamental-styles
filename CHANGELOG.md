@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.16.2-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.16.1...v0.16.2-rc.0) (2021-02-19)
+
+
+### Features
+
+* Introduce resizable card layout ([#2092](https://github.com/SAP/fundamental-styles/issues/2092)) ([c76213f](https://github.com/SAP/fundamental-styles/commit/c76213fe1662b1583156df6fcc45b1ce649a9a12))
+
 ### [0.16.1](https://github.com/SAP/fundamental-styles/compare/v0.16.1-rc.10...v0.16.1) (2021-02-16)
 
 ### [0.16.1-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.16.1-rc.9...v0.16.1-rc.10) (2021-02-16)
