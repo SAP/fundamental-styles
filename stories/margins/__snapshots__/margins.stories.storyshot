@@ -2,17 +2,17 @@
 
 exports[`Storyshots Layouts/Margins All-Round Margin 1`] = `
 <div
-  class="docs-column-flex docs-column-flex--inline"
+  class="docs-column-flex docs-column-flex--align-start"
 >
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin--tiny"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin--tiny"
     >
       container(tiny)
     </div>
@@ -25,12 +25,12 @@ exports[`Storyshots Layouts/Margins All-Round Margin 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin--sm"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin--sm"
     >
       container(sm)
     </div>
@@ -43,12 +43,12 @@ exports[`Storyshots Layouts/Margins All-Round Margin 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin--md"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin--md"
     >
       container(md)
     </div>
@@ -61,12 +61,12 @@ exports[`Storyshots Layouts/Margins All-Round Margin 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin--lg"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin--lg"
     >
       container(lg)
     </div>
@@ -80,17 +80,17 @@ exports[`Storyshots Layouts/Margins All-Round Margin 1`] = `
 
 exports[`Storyshots Layouts/Margins Double-Sided Margin Begin-End 1`] = `
 <div
-  class="docs-column-flex docs-column-flex--inline"
+  class="docs-column-flex docs-column-flex--align-start"
 >
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-begin-end--tiny"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-begin-end--tiny"
     >
       container(tiny)
     </div>
@@ -103,12 +103,12 @@ exports[`Storyshots Layouts/Margins Double-Sided Margin Begin-End 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-begin-end--sm"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-begin-end--sm"
     >
       container(sm)
     </div>
@@ -121,12 +121,12 @@ exports[`Storyshots Layouts/Margins Double-Sided Margin Begin-End 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-begin-end--md"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-begin-end--md"
     >
       container(md)
     </div>
@@ -139,12 +139,12 @@ exports[`Storyshots Layouts/Margins Double-Sided Margin Begin-End 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-begin-end--lg"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-begin-end--lg"
     >
       container(lg)
     </div>
@@ -158,17 +158,17 @@ exports[`Storyshots Layouts/Margins Double-Sided Margin Begin-End 1`] = `
 
 exports[`Storyshots Layouts/Margins Double-Sided Margin Top-Bottom 1`] = `
 <div
-  class="docs-column-flex docs-column-flex--inline"
+  class="docs-column-flex docs-column-flex--align-start"
 >
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-top-bottom--tiny"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-top-bottom--tiny"
     >
       container(tiny)
     </div>
@@ -181,12 +181,12 @@ exports[`Storyshots Layouts/Margins Double-Sided Margin Top-Bottom 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-top-bottom--sm"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-top-bottom--sm"
     >
       container(sm)
     </div>
@@ -199,12 +199,12 @@ exports[`Storyshots Layouts/Margins Double-Sided Margin Top-Bottom 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-top-bottom--md"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-top-bottom--md"
     >
       container(md)
     </div>
@@ -217,12 +217,12 @@ exports[`Storyshots Layouts/Margins Double-Sided Margin Top-Bottom 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-top-bottom--lg"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-top-bottom--lg"
     >
       container(lg)
     </div>
@@ -236,7 +236,7 @@ exports[`Storyshots Layouts/Margins Double-Sided Margin Top-Bottom 1`] = `
 
 exports[`Storyshots Layouts/Margins Double-Sided Negative Margin Begin-End 1`] = `
 <div
-  class="docs-column-flex docs-layout-grid-bg--padded"
+  class="docs-column-flex docs-layout-margins-paddings--padded"
 >
   
         
@@ -342,17 +342,17 @@ exports[`Storyshots Layouts/Margins Double-Sided Negative Margin Begin-End 1`] =
 
 exports[`Storyshots Layouts/Margins No Margin 1`] = `
 <div
-  class="docs-column-flex docs-column-flex--inline"
+  class="docs-column-flex docs-column-flex--align-start"
 >
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 docs-layout-grid-bg--margin fd-margin--none"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 docs-layout-margins-paddings--margin fd-margin--none"
     >
       container
     </div>
@@ -365,12 +365,12 @@ exports[`Storyshots Layouts/Margins No Margin 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 docs-layout-grid-bg--margin fd-margin-top--none"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 docs-layout-margins-paddings--margin fd-margin-top--none"
     >
       container
     </div>
@@ -383,12 +383,12 @@ exports[`Storyshots Layouts/Margins No Margin 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fddocs-margin-end-none fd-margin-end--none"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fddocs-margin-end-none fd-margin-end--none"
     >
       container
     </div>
@@ -401,12 +401,12 @@ exports[`Storyshots Layouts/Margins No Margin 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 docs-layout-grid-bg--margin fd-margin-bottom--none"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 docs-layout-margins-paddings--margin fd-margin-bottom--none"
     >
       container
     </div>
@@ -419,12 +419,12 @@ exports[`Storyshots Layouts/Margins No Margin 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fddocs-margin-end-none fd-margin-begin--none"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fddocs-margin-end-none fd-margin-begin--none"
     >
       container
     </div>
@@ -438,17 +438,17 @@ exports[`Storyshots Layouts/Margins No Margin 1`] = `
 
 exports[`Storyshots Layouts/Margins Responsive Margin 1`] = `
 <div
-  class="docs-column-flex docs-column-flex--inline"
+  class="docs-column-flex docs-column-flex--align-start"
 >
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-responsive--sm"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-responsive--sm"
     >
       container(sm)
     </div>
@@ -461,12 +461,12 @@ exports[`Storyshots Layouts/Margins Responsive Margin 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-responsive--md"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-responsive--md"
     >
       container(md)
     </div>
@@ -479,12 +479,12 @@ exports[`Storyshots Layouts/Margins Responsive Margin 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-responsive--lg"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-responsive--lg"
     >
       container(lg)
     </div>
@@ -497,12 +497,12 @@ exports[`Storyshots Layouts/Margins Responsive Margin 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-responsive--xl"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-responsive--xl"
     >
       container(xl)
     </div>
@@ -516,17 +516,17 @@ exports[`Storyshots Layouts/Margins Responsive Margin 1`] = `
 
 exports[`Storyshots Layouts/Margins Single-Sided Margin Begin 1`] = `
 <div
-  class="docs-column-flex docs-column-flex--inline"
+  class="docs-column-flex docs-column-flex--align-start"
 >
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-begin--tiny"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-begin--tiny"
     >
       container(tiny)
     </div>
@@ -539,12 +539,12 @@ exports[`Storyshots Layouts/Margins Single-Sided Margin Begin 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-begin--sm"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13  fd-margin-begin--sm"
     >
       container(sm)
     </div>
@@ -557,12 +557,12 @@ exports[`Storyshots Layouts/Margins Single-Sided Margin Begin 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-begin--md"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-begin--md"
     >
       container(md)
     </div>
@@ -575,12 +575,12 @@ exports[`Storyshots Layouts/Margins Single-Sided Margin Begin 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-begin--lg"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-begin--lg"
     >
       container(lg)
     </div>
@@ -594,17 +594,17 @@ exports[`Storyshots Layouts/Margins Single-Sided Margin Begin 1`] = `
 
 exports[`Storyshots Layouts/Margins Single-Sided Margin Bottom 1`] = `
 <div
-  class="docs-column-flex docs-column-flex--inline"
+  class="docs-column-flex docs-column-flex--align-start"
 >
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-bottom--tiny"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-bottom--tiny"
     >
       container(tiny)
     </div>
@@ -617,12 +617,12 @@ exports[`Storyshots Layouts/Margins Single-Sided Margin Bottom 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-bottom--sm"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-bottom--sm"
     >
       container(sm)
     </div>
@@ -635,12 +635,12 @@ exports[`Storyshots Layouts/Margins Single-Sided Margin Bottom 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-bottom--md"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-bottom--md"
     >
       container(md)
     </div>
@@ -653,12 +653,12 @@ exports[`Storyshots Layouts/Margins Single-Sided Margin Bottom 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-bottom--lg"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-bottom--lg"
     >
       container(lg)
     </div>
@@ -672,17 +672,17 @@ exports[`Storyshots Layouts/Margins Single-Sided Margin Bottom 1`] = `
 
 exports[`Storyshots Layouts/Margins Single-Sided Margin End 1`] = `
 <div
-  class="docs-column-flex docs-column-flex--inline"
+  class="docs-column-flex docs-column-flex--align-start"
 >
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-end--tiny"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-end--tiny"
     >
       container(tiny)
     </div>
@@ -695,12 +695,12 @@ exports[`Storyshots Layouts/Margins Single-Sided Margin End 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-end--sm"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-end--sm"
     >
       container(sm)
     </div>
@@ -713,12 +713,12 @@ exports[`Storyshots Layouts/Margins Single-Sided Margin End 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-end--md"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-end--md"
     >
       container(md)
     </div>
@@ -731,12 +731,12 @@ exports[`Storyshots Layouts/Margins Single-Sided Margin End 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-end--lg"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-end--lg"
     >
       container(lg)
     </div>
@@ -750,17 +750,17 @@ exports[`Storyshots Layouts/Margins Single-Sided Margin End 1`] = `
 
 exports[`Storyshots Layouts/Margins Single-Sided Margin Top 1`] = `
 <div
-  class="docs-column-flex docs-column-flex--inline"
+  class="docs-column-flex docs-column-flex--align-start"
 >
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-top--tiny"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-top--tiny"
     >
       container(tiny)
     </div>
@@ -773,12 +773,12 @@ exports[`Storyshots Layouts/Margins Single-Sided Margin Top 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-top--sm"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-top--sm"
     >
       container(sm)
     </div>
@@ -791,12 +791,12 @@ exports[`Storyshots Layouts/Margins Single-Sided Margin Top 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-top--md"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-top--md"
     >
       container(md)
     </div>
@@ -809,12 +809,12 @@ exports[`Storyshots Layouts/Margins Single-Sided Margin Top 1`] = `
   
         
   <div
-    class="docs-layout-grid-bg"
+    class="docs-layout-margins-paddings--secondary-bg"
   >
     
             
     <div
-      class="docs-layout-grid-bg docs-layout-grid-bg--color-7 fd-margin-top--lg"
+      class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-margins-paddings--color-13 fd-margin-top--lg"
     >
       container(lg)
     </div>

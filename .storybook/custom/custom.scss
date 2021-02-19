@@ -379,12 +379,8 @@ code.docs-code-grey {
     height: 100%;
   }
 
-  &--padded {
-    padding: 1.5rem;
-  }
-
-  &--margin {
-    margin: 1.5rem;
+  &--border {
+    border: 2px solid #000000;
   }
 
   &--color-1 {
@@ -623,8 +619,60 @@ body.sb-show-main {
   display: flex;
   flex-direction: column;
 
-  &--inline {
-    display: inline-flex;
+  &--align-start {
+    align-items: flex-start;
+  }
+}
+
+.docs-layout-margins-paddings {
+  background-color: #3d6299;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 4rem;
+  text-align: center;
+
+  &--color-13 {
+    background-color: #3d6299;
+    color: white;
+    border: 2px solid red;
+  }
+
+  &--color-14 {
+    background-color: #30c5d2;
+    color: white;
+    border: 2px solid black;
+  }
+
+  &--secondary-bg {
+    background-color: #dbdbdb;
+    display: inline-block;
+  }
+
+  &--padded {
+    padding: 1.5rem;
+  }
+
+  &--margin {
+    margin: 1.5rem;
+  }
+
+  // padding+width = actual width, so specifying different widths to show the backgrounds correctly
+  &--width {
+    width: 19rem; // for tiny 0.5rem each(horizontal padding)+19rem = 20rem total
+
+    &-sm {
+      width: 18rem; // for tiny 1rem each(horizontal padding)+18rem = 20rem total
+    }
+
+    &-md {
+      width: 16rem; // for tiny 2rem each(horizontal padding)+16rem = 20rem total
+    }
+
+    &-lg {
+      width: 14rem; // for tiny 3rem each(horizontal padding)+14rem = 20rem total
+    }
   }
 }
 

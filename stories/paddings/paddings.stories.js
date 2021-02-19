@@ -9,9 +9,9 @@ export default {
     }
 };
 
-export const AllRoundPadding = () => `<div class="docs-column-flex docs-column-flex--inline">
-        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1 fd-padding">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7">container</div>
+export const AllRoundPadding = () => `<div class="docs-column-flex docs-column-flex--align-start">
+        <div class="docs-layout-margins-paddings--color-14 fd-padding">
+            <div class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-grid-bg--color-7">container</div>
         </div>
     </div>
 `;
@@ -23,21 +23,21 @@ AllRoundPadding.parameters = {
     }
 };
 
-export const DoubleSidedPadding = () => `<div class="docs-column-flex docs-column-flex--inline">
-        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1 fd-padding-begin-end--tiny">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7">container(tiny)</div>
+export const DoubleSidedPadding = () => `<div class="docs-column-flex docs-column-flex--align-start">
+        <div class="docs-layout-margins-paddings--color-14 fd-padding-begin-end--tiny">
+            <div class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-grid-bg--color-7">container(tiny)</div>
         </div>
         <br />
-        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1 fd-padding-begin-end--sm">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7">container(sm)</div>
+        <div class="docs-layout-margins-paddings--color-14 fd-padding-begin-end--sm">
+            <div class="docs-layout-margins-paddings  docs-layout-margins-paddings--width-sm docs-layout-grid-bg--color-7">container(sm)</div>
         </div>
         <br />
-        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1 fd-padding-begin-end--md">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7">container(md)</div>
+        <div class="docs-layout-margins-paddings--color-14 fd-padding-begin-end--md">
+            <div class="docs-layout-margins-paddings docs-layout-margins-paddings--width-md docs-layout-grid-bg--color-7">container(md)</div>
         </div>
         <br />
-        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1 fd-padding-begin-end--lg">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7">container(lg)</div>
+        <div class="docs-layout-margins-paddings--color-14 fd-padding-begin-end--lg">
+            <div class="docs-layout-margins-paddings docs-layout-margins-paddings--width-lg docs-layout-grid-bg--color-7">container(lg)</div>
         </div>
     </div>
 `;
@@ -58,9 +58,9 @@ DoubleSidedPadding.parameters = {
 };
 
 
-export const NoPadding = () => `<div class="docs-column-flex docs-column-flex--inline">
-        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1 docs-layout-grid-bg--padded fd-padding--none">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7">container</div>
+export const NoPadding = () => `<div class="docs-column-flex docs-column-flex--align-start">
+        <div class="docs-layout-margins-paddings--color-14 docs-layout-margins-paddings--padded fd-padding--none">
+            <div class="docs-layout-margins-paddings docs-layout-margins-paddings--width docs-layout-grid-bg--color-7">container</div>
         </div>
     </div>
 `;
@@ -71,21 +71,21 @@ NoPadding.parameters = {
     }
 };
 
-export const ResponsivePadding = () => `<div class="docs-column-flex docs-column-flex--inline">
-        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1 fd-padding-responsive--sm">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7">container(sm)</div>
+export const ResponsivePadding = () => `<div class="docs-column-flex docs-column-flex--align-start">
+        <div class="docs-layout-margins-paddings--color-14 fd-padding-responsive--sm">
+            <div class="docs-layout-margins-paddings docs-layout-margins-paddings--width-sm docs-layout-grid-bg--color-7">container(sm)</div>
         </div>
         <br />
-        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1 fd-padding-responsive--md">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7">container(md)</div>
+        <div class="docs-layout-margins-paddings--color-14 fd-padding-responsive--md">
+            <div class="docs-layout-margins-paddings docs-layout-margins-paddings--width-md docs-layout-grid-bg--color-7">container(md)</div>
         </div>
         <br />
-        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1 fd-padding-responsive--lg">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7">container(lg)</div>
+        <div class="docs-layout-margins-paddings--color-14 fd-padding-responsive--lg">
+            <div class="docs-layout-margins-paddings docs-layout-margins-paddings--width-md docs-layout-grid-bg--color-7">container(lg)</div>
         </div>
         <br />
-        <div class="docs-layout-grid-bg docs-layout-grid-bg--color-1 fd-padding-responsive--xl">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-7">container(xl)</div>
+        <div class="docs-layout-margins-paddings--color-14 fd-padding-responsive--xl">
+            <div class="docs-layout-margins-paddings docs-layout-margins-paddings--width-lg docs-layout-grid-bg--color-7">container(xl)</div>
         </div>
     </div>
 `;
