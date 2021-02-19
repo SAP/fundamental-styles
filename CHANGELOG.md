@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.0...v0.17.0-rc.1) (2021-02-19)
+
+
+### Features
+
+* introduce Margins and Paddings ([#2131](https://github.com/SAP/fundamental-styles/issues/2131)) ([d02b12a](https://github.com/SAP/fundamental-styles/commit/d02b12afc0bc0fb535aa999da2df4ab0662511ab))
+
 ## [0.17.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.16.2-rc.0...v0.17.0-rc.0) (2021-02-19)
 
 
