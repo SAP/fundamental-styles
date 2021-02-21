@@ -6667,7 +6667,7 @@ exports[`Storyshots Components/Table Navigation indicators 1`] = `
         
       <tr
         aria-selected="true"
-        class="fd-table__row"
+        class="fd-table__row fd-table__row--activable fd-table__row--hoverable"
       >
         
             
@@ -6745,7 +6745,7 @@ exports[`Storyshots Components/Table Navigation indicators 1`] = `
         
       <tr
         aria-selected="true"
-        class="fd-table__row"
+        class="fd-table__row fd-table__row--activable fd-table__row--hoverable"
       >
         
             
@@ -6822,7 +6822,7 @@ exports[`Storyshots Components/Table Navigation indicators 1`] = `
       
         
       <tr
-        class="fd-table__row"
+        class="fd-table__row fd-table__row--activable fd-table__row--hoverable"
       >
         
             
@@ -8154,7 +8154,7 @@ exports[`Storyshots Components/Table Responsive Table 1`] = `
       
         
       <tr
-        class="fd-table__row"
+        class="fd-table__row fd-table__row--activable fd-table__row--hoverable"
       >
         
             
@@ -8224,7 +8224,7 @@ exports[`Storyshots Components/Table Responsive Table 1`] = `
           
                 
           <i
-            class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+            class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right"
             role="presentation"
           />
           
@@ -8236,7 +8236,7 @@ exports[`Storyshots Components/Table Responsive Table 1`] = `
       
         
       <tr
-        class="fd-table__row"
+        class="fd-table__row fd-table__row--activable fd-table__row--hoverable"
       >
         
             
@@ -8306,7 +8306,7 @@ exports[`Storyshots Components/Table Responsive Table 1`] = `
           
                 
           <i
-            class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+            class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right"
             role="presentation"
           />
           
@@ -8318,7 +8318,7 @@ exports[`Storyshots Components/Table Responsive Table 1`] = `
       
         
       <tr
-        class="fd-table__row"
+        class="fd-table__row fd-table__row--activable fd-table__row--hoverable"
       >
         
             
@@ -8388,7 +8388,7 @@ exports[`Storyshots Components/Table Responsive Table 1`] = `
           
                 
           <i
-            class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+            class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right"
             role="presentation"
           />
           

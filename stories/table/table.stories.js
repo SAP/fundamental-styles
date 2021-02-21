@@ -1613,7 +1613,7 @@ export const navIndicators = () => `
         </tr>
     </thead>
     <tbody class="fd-table__body">
-        <tr class="fd-table__row" aria-selected="true">
+        <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable" aria-selected="true">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox" id="EWuzWh33">
                 <label class="fd-checkbox__label" for="EWuzWh33"></label>
@@ -1626,7 +1626,7 @@ export const navIndicators = () => `
                 <i class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
             </td>
         </tr>
-        <tr class="fd-table__row" aria-selected="true">
+        <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable" aria-selected="true">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox" id="EWuzWh334">
                 <label class="fd-checkbox__label" for="EWuzWh334"></label>
@@ -1639,7 +1639,7 @@ export const navIndicators = () => `
                 <i class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
             </td>
         </tr>
-        <tr class="fd-table__row">
+        <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="EWuzWh335">
                 <label class="fd-checkbox__label" for="EWuzWh335"></label>
@@ -1686,7 +1686,7 @@ export const responsiveTable = () => `
         </tr>
     </thead>
     <tbody class="fd-table__body">
-        <tr class="fd-table__row">
+        <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="EWuzWh">
                 <label class="fd-checkbox__label" for="EWuzWh"></label>
@@ -1700,10 +1700,10 @@ export const responsiveTable = () => `
             <td class="fd-table__cell">5 EUR</td>
             <td class="fd-table__cell">India</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
+                <i class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
             </td>
         </tr>
-        <tr class="fd-table__row">
+        <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="19j0Sc">
                 <label class="fd-checkbox__label" for="19j0Sc"></label>
@@ -1717,10 +1717,10 @@ export const responsiveTable = () => `
             <td class="fd-table__cell">2 EUR</td>
             <td class="fd-table__cell">Mexico</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
+                <i class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
             </td>
         </tr>
-        <tr class="fd-table__row">
+        <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="a7SfGX">
                 <label class="fd-checkbox__label" for="a7SfGX"></label>
@@ -1734,7 +1734,7 @@ export const responsiveTable = () => `
             <td class="fd-table__cell">6 EUR</td>
             <td class="fd-table__cell">Spain</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
+                <i class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
             </td>
         </tr>
     </tbody>
