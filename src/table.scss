@@ -274,12 +274,27 @@ $block: #{$fd-namespace}-table;
           background-color: var(--sapList_Hover_SelectionBackground);
         }
       }
+
+      &--activable {
+        @include fd-selected() {
+          @include fd-active() {
+            background-color: var(--sapList_Active_Background);
+          }
+        }
+      }
     }
   }
 
   &__cell,
   &__row {
     &--hoverable {
+      @include fd-selected() {
+        .#{$block}__cell {
+          @include fd-hover() {
+            background-color: var(--sapList_Hover_SelectionBackground);
+          }
+        }
+      }
       &,
       .#{$block}__cell {
         @include fd-hover() {
@@ -291,6 +306,10 @@ $block: #{$fd-namespace}-table;
 
     &--activable {
       @include fd-trigger-element();
+
+      @include fd-selected() {
+        @include fd-trigger-element();
+      }
     }
 
     &--focusable {
@@ -404,7 +423,7 @@ $block: #{$fd-namespace}-table;
         }
       }
 
-      &.#{$block}__row--activable {
+      &.#{$block}__row--activable:not(:hover) {
         @include fd-active() {
           + .#{$block}__row--secondary {
             @include fd-table-active();

@@ -5991,7 +5991,7 @@ exports[`Storyshots Components/Table Menu header 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Table Navigation indicators 1`] = `
+exports[`Storyshots Components/Table Navigation from table rows 1`] = `
 <section>
   
 
@@ -6000,10 +6000,276 @@ exports[`Storyshots Components/Table Navigation indicators 1`] = `
   >
     
     
-    <h4
-      style="margin: 0;"
+    <h4>
+      Responsive Table - row navigation
+    </h4>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+    />
+    
+
+  </div>
+  
+
+  <table
+    class="fd-table fd-table--no-horizontal-borders"
+  >
+    
+    
+    <thead
+      class="fd-table__header"
     >
-      Table with Navigation Indication State
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Name
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Status
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Price
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Country
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+        />
+        
+        
+      </tr>
+      
+    
+    </thead>
+    
+    
+    <tbody
+      class="fd-table__body"
+    >
+      
+        
+      <tr
+        class="fd-table__row fd-table__row--activable fd-table__row--hoverable"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Banana
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          
+                
+          <span
+            class="fd-object-status fd-object-status--positive"
+          >
+            
+                    Available
+                
+          </span>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          5 EUR
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          India
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
+        >
+          
+                
+          <i
+            class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right"
+            role="presentation"
+          />
+          
+            
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row fd-table__row--activable fd-table__row--hoverable"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Pineapple
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          
+                
+          <span
+            class="fd-object-status fd-object-status--negative"
+          >
+            
+                    Out of stock
+                
+          </span>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          2 EUR
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Mexico
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
+        >
+          
+                
+          <i
+            class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right"
+            role="presentation"
+          />
+          
+            
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row fd-table__row--activable fd-table__row--hoverable"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Orange
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          
+                
+          <span
+            class="fd-object-status fd-object-status--informative"
+          >
+            
+                    Temporary unavailable
+                
+          </span>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          6 EUR
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Spain
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
+        >
+          
+                
+          <i
+            class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right"
+            role="presentation"
+          />
+          
+            
+        </td>
+        
+        
+      </tr>
+      
+    
+    </tbody>
+    
+
+  </table>
+  
+
+
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+    
+    <h4>
+      Table - icon button for navigation
     </h4>
     
     
@@ -6028,6 +6294,326 @@ exports[`Storyshots Components/Table Navigation indicators 1`] = `
       <tr
         class="fd-table__row"
       >
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Name
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Status
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Price
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+          scope="col"
+        >
+          Country
+        </th>
+        
+            
+        <th
+          class="fd-table__cell"
+        />
+        
+        
+      </tr>
+      
+    
+    </thead>
+    
+    
+    <tbody
+      class="fd-table__body"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Banana
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          
+                
+          <span
+            class="fd-object-status fd-object-status--positive"
+          >
+            
+                    Available
+                
+          </span>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          5 EUR
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          India
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--fit-content"
+        >
+          
+                
+          <button
+            aria-label="navigation"
+            class="fd-button fd-button--transparent"
+          >
+            
+                    
+            <i
+              class="sap-icon--navigation-right-arrow"
+            />
+            
+                
+          </button>
+          
+            
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Pineapple
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          
+                
+          <span
+            class="fd-object-status fd-object-status--negative"
+          >
+            
+                    Out of stock
+                
+          </span>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          2 EUR
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Mexico
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--fit-content"
+        >
+          
+                
+          <button
+            aria-label="navigation"
+            class="fd-button fd-button--transparent"
+          >
+            
+                    
+            <i
+              class="sap-icon--navigation-right-arrow"
+            />
+            
+                
+          </button>
+          
+            
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Orange
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          
+                
+          <span
+            class="fd-object-status fd-object-status--informative"
+          >
+            
+                    Temporary unavailable
+                
+          </span>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          6 EUR
+        </td>
+        
+            
+        <td
+          class="fd-table__cell"
+        >
+          Spain
+        </td>
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--fit-content"
+        >
+          
+                
+          <button
+            aria-label="navigation"
+            class="fd-button fd-button--transparent"
+          >
+            
+                    
+            <i
+              class="sap-icon--navigation-right-arrow"
+            />
+            
+                
+          </button>
+          
+            
+        </td>
+        
+        
+      </tr>
+      
+    
+    </tbody>
+    
+
+  </table>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Table Navigation indicators 1`] = `
+<section>
+  
+
+  <div
+    class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active"
+  >
+    
+    
+    <h4>
+      Table with Navigation Indication State
+    </h4>
+    
+    
+    <span
+      class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+    />
+    
+
+  </div>
+  
+
+  <table
+    class="fd-table fd-table--no-horizontal-borders"
+  >
+    
+    
+    <thead
+      class="fd-table__header"
+    >
+      
+        
+      <tr
+        class="fd-table__row"
+      >
+        
+            
+        <th
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox"
+            id="kqqzPI44"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="kqqzPI44"
+          />
+          
+            
+        </th>
         
             
         <th
@@ -6080,8 +6666,32 @@ exports[`Storyshots Components/Table Navigation indicators 1`] = `
       
         
       <tr
-        class="fd-table__row"
+        aria-selected="true"
+        class="fd-table__row fd-table__row--activable fd-table__row--hoverable"
       >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            checked=""
+            class="fd-checkbox"
+            id="EWuzWh33"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="EWuzWh33"
+          />
+          
+            
+        </td>
         
             
         <td
@@ -6117,22 +6727,14 @@ exports[`Storyshots Components/Table Navigation indicators 1`] = `
         
             
         <td
-          class="fd-table__cell fd-table__cell--fit-content"
+          class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
         >
           
                 
-          <button
-            aria-label="navigation"
-            class="fd-button fd-button--transparent"
-          >
-            
-                    
-            <i
-              class="sap-icon--navigation-right-arrow"
-            />
-            
-                
-          </button>
+          <i
+            class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right"
+            role="presentation"
+          />
           
             
         </td>
@@ -6142,8 +6744,32 @@ exports[`Storyshots Components/Table Navigation indicators 1`] = `
       
         
       <tr
-        class="fd-table__row"
+        aria-selected="true"
+        class="fd-table__row fd-table__row--activable fd-table__row--hoverable"
       >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            checked=""
+            class="fd-checkbox"
+            id="EWuzWh334"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="EWuzWh334"
+          />
+          
+            
+        </td>
         
             
         <td
@@ -6179,22 +6805,14 @@ exports[`Storyshots Components/Table Navigation indicators 1`] = `
         
             
         <td
-          class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated"
+          class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated fd-table__cell--no-padding"
         >
           
                 
-          <button
-            aria-label="navigation"
-            class="fd-button fd-button--transparent"
-          >
-            
-                    
-            <i
-              class="sap-icon--navigation-right-arrow"
-            />
-            
-                
-          </button>
+          <i
+            class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right"
+            role="presentation"
+          />
           
             
         </td>
@@ -6204,8 +6822,30 @@ exports[`Storyshots Components/Table Navigation indicators 1`] = `
       
         
       <tr
-        class="fd-table__row"
+        class="fd-table__row fd-table__row--activable fd-table__row--hoverable"
       >
+        
+            
+        <td
+          class="fd-table__cell fd-table__cell--checkbox"
+        >
+          
+                
+          <input
+            aria-label="checkbox"
+            class="fd-checkbox"
+            id="EWuzWh335"
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="EWuzWh335"
+          />
+          
+            
+        </td>
         
             
         <td
@@ -6241,22 +6881,14 @@ exports[`Storyshots Components/Table Navigation indicators 1`] = `
         
             
         <td
-          class="fd-table__cell fd-table__cell--fit-content"
+          class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding"
         >
           
-                
-          <button
-            aria-label="navigation"
-            class="fd-button fd-button--transparent"
-          >
-            
-                    
-            <i
-              class="sap-icon--navigation-right-arrow"
-            />
-            
-                
-          </button>
+              
+          <i
+            class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right"
+            role="presentation"
+          />
           
             
         </td>
@@ -7522,7 +8154,7 @@ exports[`Storyshots Components/Table Responsive Table 1`] = `
       
         
       <tr
-        class="fd-table__row"
+        class="fd-table__row fd-table__row--activable fd-table__row--hoverable"
       >
         
             
@@ -7592,7 +8224,7 @@ exports[`Storyshots Components/Table Responsive Table 1`] = `
           
                 
           <i
-            class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+            class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right"
             role="presentation"
           />
           
@@ -7604,7 +8236,7 @@ exports[`Storyshots Components/Table Responsive Table 1`] = `
       
         
       <tr
-        class="fd-table__row"
+        class="fd-table__row fd-table__row--activable fd-table__row--hoverable"
       >
         
             
@@ -7674,7 +8306,7 @@ exports[`Storyshots Components/Table Responsive Table 1`] = `
           
                 
           <i
-            class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+            class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right"
             role="presentation"
           />
           
@@ -7686,7 +8318,7 @@ exports[`Storyshots Components/Table Responsive Table 1`] = `
       
         
       <tr
-        class="fd-table__row"
+        class="fd-table__row fd-table__row--activable fd-table__row--hoverable"
       >
         
             
@@ -7756,7 +8388,7 @@ exports[`Storyshots Components/Table Responsive Table 1`] = `
           
                 
           <i
-            class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow"
+            class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right"
             role="presentation"
           />
           

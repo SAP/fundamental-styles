@@ -1460,27 +1460,88 @@ It’s important to hardcode the width of the columns, otherwise the cells will 
     }
 };
 
-export const navIndicators = () => `
+export const navIcon = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Table with Navigation Indication State</h4>
+    <h4>Responsive Table - row navigation</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
+<table class="fd-table fd-table--no-horizontal-borders">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col">Name</th>
+            <th class="fd-table__cell" scope="col">Status</th>
+            <th class="fd-table__cell" scope="col">Price</th>
+            <th class="fd-table__cell" scope="col">Country</th>
+            <th class="fd-table__cell"></th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable">
+            <td class="fd-table__cell">Banana</td>
+            <td class="fd-table__cell">
+                <span class="fd-object-status fd-object-status--positive">
+                    Available
+                </span>
+            </td>
+            <td class="fd-table__cell">5 EUR</td>
+            <td class="fd-table__cell">India</td>
+            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
+                <i class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
+            </td>
+        </tr>
+        <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable">
+            <td class="fd-table__cell">Pineapple</td>
+            <td class="fd-table__cell">
+                <span class="fd-object-status fd-object-status--negative">
+                    Out of stock
+                </span>
+            </td>
+            <td class="fd-table__cell">2 EUR</td>
+            <td class="fd-table__cell">Mexico</td>
+            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
+                <i class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
+            </td>
+        </tr>
+        <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable">
+            <td class="fd-table__cell">Orange</td>
+            <td class="fd-table__cell">
+                <span class="fd-object-status fd-object-status--informative">
+                    Temporary unavailable
+                </span>
+            </td>
+            <td class="fd-table__cell">6 EUR</td>
+            <td class="fd-table__cell">Spain</td>
+            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
+                <i class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4>Table - icon button for navigation</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
-            <th class="fd-table__cell" scope="col">Column Header</th>
-            <th class="fd-table__cell" scope="col">Column Header</th>
-            <th class="fd-table__cell" scope="col">Column Header</th>
-            <th class="fd-table__cell" scope="col">Column Header</th>
-            <th class="fd-table__cell" scope="col"></th>
+            <th class="fd-table__cell" scope="col">Name</th>
+            <th class="fd-table__cell" scope="col">Status</th>
+            <th class="fd-table__cell" scope="col">Price</th>
+            <th class="fd-table__cell" scope="col">Country</th>
+            <th class="fd-table__cell"></th>
         </tr>
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell">Banana</td>
+            <td class="fd-table__cell">
+                <span class="fd-object-status fd-object-status--positive">
+                    Available
+                </span>
+            </td>
+            <td class="fd-table__cell">5 EUR</td>
+            <td class="fd-table__cell">India</td>
             <td class="fd-table__cell fd-table__cell--fit-content">
                 <button aria-label="navigation" class="fd-button fd-button--transparent">
                     <i class="sap-icon--navigation-right-arrow"></i>
@@ -1488,21 +1549,29 @@ export const navIndicators = () => `
             </td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
-            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated">
+            <td class="fd-table__cell">Pineapple</td>
+            <td class="fd-table__cell">
+                <span class="fd-object-status fd-object-status--negative">
+                    Out of stock
+                </span>
+            </td>
+            <td class="fd-table__cell">2 EUR</td>
+            <td class="fd-table__cell">Mexico</td>
+            <td class="fd-table__cell fd-table__cell--fit-content">
                 <button aria-label="navigation" class="fd-button fd-button--transparent">
                     <i class="sap-icon--navigation-right-arrow"></i>
                 </button>
             </td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell">Orange</td>
+            <td class="fd-table__cell">
+                <span class="fd-object-status fd-object-status--informative">
+                    Temporary unavailable
+                </span>
+            </td>
+            <td class="fd-table__cell">6 EUR</td>
+            <td class="fd-table__cell">Spain</td>
             <td class="fd-table__cell fd-table__cell--fit-content">
                 <button aria-label="navigation" class="fd-button fd-button--transparent">
                     <i class="sap-icon--navigation-right-arrow"></i>
@@ -1513,11 +1582,86 @@ export const navIndicators = () => `
 </table>
 `;
 
+navIcon.storyName = 'Navigation from table rows';
+navIcon.parameters = {
+    docs: {
+        storyDescription: `
+Responsive table allows navigation from a line item. For that purpose you need to add a column with the icon \`sap-icon--slim-arrow-right\` at the end. The entire line needs to be clickable 
+
+You have an option to add icon button \`sap-icon--navigation-right-arrow\` as a separate column for non responsive table.
+    `
+    }
+};
+
+export const navIndicators = () => `
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4>Table with Navigation Indication State</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
+<table class="fd-table fd-table--no-horizontal-borders">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell fd-table__cell--checkbox">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="kqqzPI44">
+                <label class="fd-checkbox__label" for="kqqzPI44"></label>
+            </th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col"></th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable" aria-selected="true">
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox" id="EWuzWh33">
+                <label class="fd-checkbox__label" for="EWuzWh33"></label>
+            </td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
+                <i class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
+            </td>
+        </tr>
+        <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable" aria-selected="true">
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox" id="EWuzWh334">
+                <label class="fd-checkbox__label" for="EWuzWh334"></label>
+            </td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated fd-table__cell--no-padding">
+                <i class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
+            </td>
+        </tr>
+        <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable">
+            <td class="fd-table__cell fd-table__cell--checkbox">
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="EWuzWh335">
+                <label class="fd-checkbox__label" for="EWuzWh335"></label>
+            </td>
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
+              <i class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
+            </td>
+        </tr>
+    </tbody>
+</table>
+`;
+
 navIndicators.storyName = 'Navigation indicators';
 navIndicators.parameters = {
     docs: {
         storyDescription: `
-The table component can display navigation indicators. You can also display a “navigated” indicator, as indicated in the second row, to mark an item that is currently open. To display a navigated indicator, add the \`fd-table__cell--navigated\` class to the desired table cell.
+
+The table component can display navigation indicators. When multi-selection is used in a master-detail scenario, it is not clear which item was last opened, you can mark it as a “navigated” indicator, as indicated in the second row, to mark an item that is currently open. To display a navigated indicator, add the \`fd-table__cell--navigated\` class to the desired table cell.
     `
     }
 };
@@ -1542,7 +1686,7 @@ export const responsiveTable = () => `
         </tr>
     </thead>
     <tbody class="fd-table__body">
-        <tr class="fd-table__row">
+        <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="EWuzWh">
                 <label class="fd-checkbox__label" for="EWuzWh"></label>
@@ -1556,10 +1700,10 @@ export const responsiveTable = () => `
             <td class="fd-table__cell">5 EUR</td>
             <td class="fd-table__cell">India</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
+                <i class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
             </td>
         </tr>
-        <tr class="fd-table__row">
+        <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="19j0Sc">
                 <label class="fd-checkbox__label" for="19j0Sc"></label>
@@ -1573,10 +1717,10 @@ export const responsiveTable = () => `
             <td class="fd-table__cell">2 EUR</td>
             <td class="fd-table__cell">Mexico</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
+                <i class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
             </td>
         </tr>
-        <tr class="fd-table__row">
+        <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="a7SfGX">
                 <label class="fd-checkbox__label" for="a7SfGX"></label>
@@ -1590,7 +1734,7 @@ export const responsiveTable = () => `
             <td class="fd-table__cell">6 EUR</td>
             <td class="fd-table__cell">Spain</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-                <i class="fd-table__icon fd-table__icon--navigation sap-icon--navigation-right-arrow" role="presentation"></i>
+                <i class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
             </td>
         </tr>
     </tbody>
