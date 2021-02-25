@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.2...v0.17.0-rc.3) (2021-02-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* update responsive table navigation icon
+
+### Bug Fixes
+
+* update table navigation icons and states ([#2157](https://github.com/SAP/fundamental-styles/issues/2157)) ([433f67a](https://github.com/SAP/fundamental-styles/commit/433f67a337d4128119f59dda282dcb3a7ec01e51))
+
 ## [0.17.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.1...v0.17.0-rc.2) (2021-02-22)
 
 ## [0.17.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.0...v0.17.0-rc.1) (2021-02-19)
