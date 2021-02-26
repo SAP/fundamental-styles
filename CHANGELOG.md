@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.3...v0.17.0-rc.4) (2021-02-26)
+
+
+### Features
+
+* Avatar Group overflow spacing and overflow button border color ([#2121](https://github.com/SAP/fundamental-styles/issues/2121)) ([b20b90a](https://github.com/SAP/fundamental-styles/commit/b20b90a3e536995401353c52e3ad2b2d91fca3f1))
+
 ## [0.17.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.2...v0.17.0-rc.3) (2021-02-25)
 
 
