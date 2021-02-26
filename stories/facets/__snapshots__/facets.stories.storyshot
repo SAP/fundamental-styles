@@ -2,13 +2,13 @@
 
 exports[`Storyshots Dev/Facets Combination of facets 1`] = `
 <div
-  class="fd-facet"
+  class="fd-facet-group"
   role="group"
 >
   
         
   <div
-    class="fd-facet__container fd-facet__container--image"
+    class="fd-facet fd-facet--image fd-margin-end--md"
   >
     
             
@@ -32,43 +32,35 @@ exports[`Storyshots Dev/Facets Combination of facets 1`] = `
         
   <div
     aria-labelledby="formFacetTitle1"
-    class="fd-facet__container fd-facet__container--form"
+    class="fd-facet fd-facet--form fd-margin-end--md fd-margin-bottom--sm"
     role="group"
   >
     
             
-    <div
-      class="fd-facet__title-container"
+    <h1
+      class="fd-title fd-title--h5 fd-margin-bottom--sm"
+      id="formFacetTitle1"
     >
-      
-                
-      <h1
-        class="fd-facet__title"
-        id="formFacetTitle1"
-      >
-        Technical Data
-      </h1>
-      
-            
-    </div>
+      Technical Data
+    </h1>
     
             
     <div
-      class="fd-facet__content-container fd-facet__content-container--form"
+      class="fd-facet__container fd-margin-bottom--tiny"
     >
       
                 
       <label
         class="fd-form-label"
-        for="input-05"
+        for="form-value-05"
       >
         Base unit:
       </label>
       
                 
       <div
-        class="fd-facet__form-value"
-        id="input-05"
+        class="fd-text"
+        id="form-value-05"
       >
         Each
       </div>
@@ -78,21 +70,21 @@ exports[`Storyshots Dev/Facets Combination of facets 1`] = `
     
             
     <div
-      class="fd-facet__content-container fd-facet__content-container--form"
+      class="fd-facet__container fd-margin-bottom--tiny"
     >
       
                 
       <label
         class="fd-form-label"
-        for="input-06"
+        for="form-value-06"
       >
         Length:
       </label>
       
                 
       <div
-        class="fd-facet__form-value"
-        id="input-06"
+        class="fd-text"
+        id="form-value-06"
       >
         23.24 Centimeter
       </div>
@@ -102,21 +94,21 @@ exports[`Storyshots Dev/Facets Combination of facets 1`] = `
     
             
     <div
-      class="fd-facet__content-container fd-facet__content-container--form"
+      class="fd-facet__container fd-margin-bottom--tiny"
     >
       
                 
       <label
         class="fd-form-label"
-        for="input-07"
+        for="form-value-07"
       >
         Width:
       </label>
       
                 
       <div
-        class="fd-facet__form-value"
-        id="input-07"
+        class="fd-text"
+        id="form-value-07"
       >
         86.1 Centimeter
       </div>
@@ -126,21 +118,21 @@ exports[`Storyshots Dev/Facets Combination of facets 1`] = `
     
             
     <div
-      class="fd-facet__content-container fd-facet__content-container--form"
+      class="fd-facet__container"
     >
       
                 
       <label
         class="fd-form-label"
-        for="input-08"
+        for="form-value-08"
       >
         Height:
       </label>
       
                 
       <div
-        class="fd-facet__form-value"
-        id="input-08"
+        class="fd-text"
+        id="form-value-08"
       >
         20.8 Centimeter
       </div>
@@ -154,29 +146,21 @@ exports[`Storyshots Dev/Facets Combination of facets 1`] = `
         
   <div
     aria-labelledby="kvFacetTitle1"
-    class="fd-facet__container fd-facet__container--key-value"
+    class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm"
     role="group"
   >
     
             
-    <div
-      class="fd-facet__title-container"
+    <h1
+      class="fd-title fd-title--h5 fd-margin-bottom--sm"
+      id="kvFacetTitle1"
     >
-      
-                
-      <h1
-        class="fd-facet__title"
-        id="kvFacetTitle1"
-      >
-        Status
-      </h1>
-      
-            
-    </div>
+      Status
+    </h1>
     
             
     <span
-      class="fd-object-status fd-object-status--positive fd-facet__object-status"
+      class="fd-object-status fd-object-status--positive fd-object-status--large fd-facet__object-status"
     >
       
                 
@@ -195,34 +179,26 @@ exports[`Storyshots Dev/Facets Combination of facets 1`] = `
         
   <div
     aria-labelledby="kvFacetTitle2"
-    class="fd-facet__container fd-facet__container--key-value"
+    class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm"
     role="group"
   >
     
             
-    <div
-      class="fd-facet__title-container"
+    <h1
+      class="fd-title fd-title--h5 fd-margin-bottom--sm"
+      id="kvFacetTitle2"
     >
-      
-                
-      <h1
-        class="fd-facet__title"
-        id="kvFacetTitle2"
-      >
-        Delivery Time
-      </h1>
-      
-            
-    </div>
+      Delivery Time
+    </h1>
     
             
     <span
-      class="fd-object-status fd-object-status--critical fd-facet__object-status"
+      class="fd-object-status fd-object-status--large fd-facet__object-status fd-object-status--critical"
     >
       
                 
       <i
-        class="fd-object-status__icon sap-icon--shipping-status"
+        class="fd-object-status__icon sap-icon--shipping-status fd-padding--none fd-margin-end--tiny"
         role="presentation"
       />
       
@@ -242,29 +218,21 @@ exports[`Storyshots Dev/Facets Combination of facets 1`] = `
         
   <div
     aria-labelledby="kvFacetTitle3"
-    class="fd-facet__container fd-facet__container--key-value"
+    class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm"
     role="group"
   >
     
             
-    <div
-      class="fd-facet__title-container"
+    <h1
+      class="fd-title fd-title--h5 fd-margin-bottom--sm"
+      id="kvFacetTitle3"
     >
-      
-                
-      <h1
-        class="fd-facet__title"
-        id="kvFacetTitle3"
-      >
-        Assembly Option 
-      </h1>
-      
-            
-    </div>
+      Assembly Option 
+    </h1>
     
             
     <span
-      class="fd-object-status fd-object-status--negative fd-facet__object-status"
+      class="fd-object-status fd-object-status--negative fd-object-status--large fd-facet__object-status"
     >
       
                 
@@ -283,39 +251,31 @@ exports[`Storyshots Dev/Facets Combination of facets 1`] = `
         
   <div
     aria-labelledby="kvFacetTitle4"
-    class="fd-facet__container fd-facet__container--key-value"
+    class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm"
     role="group"
   >
     
             
-    <div
-      class="fd-facet__title-container"
+    <h1
+      class="fd-title fd-title--h5 fd-margin-bottom--sm"
+      id="kvFacetTitle4"
     >
-      
-                
-      <h1
-        class="fd-facet__title"
-        id="kvFacetTitle4"
-      >
-        Pricing 
-      </h1>
-      
-            
-    </div>
+      Pricing 
+    </h1>
     
             
     <span
-      class="fd-object-number fd-object-number--large fd-object-number--informative fd-facet__object-number"
+      class="fd-object-number fd-object-number--large fd-object-number--informative"
     >
       
                 
       <span
-        class="fd-object-number__text fd-facet__object-number-text"
+        class="fd-object-number__text"
       >
         579
       </span>
       <span
-        class="fd-object-number__unit fd-facet__object-number-unit"
+        class="fd-object-number__unit"
       >
         EUR
       </span>
@@ -330,36 +290,28 @@ exports[`Storyshots Dev/Facets Combination of facets 1`] = `
         
   <div
     aria-labelledby="ratingFacetTitle1"
-    class="fd-facet__container fd-facet__container--rating-indicator"
+    class="fd-facet fd-facet--rating-indicator fd-margin-end--md fd-margin-bottom--sm"
     role="group"
   >
     
             
-    <div
-      class="fd-facet__title-container"
+    <h1
+      class="fd-title fd-title--h5 fd-margin-bottom--sm"
+      id="ratingFacetTitle1"
     >
-      
-                
-      <h1
-        class="fd-facet__title"
-        id="ratingFacetTitle1"
-      >
-        Average User Rating
-      </h1>
-      
-                
-      <h2
-        class="fd-form-label"
-      >
-        6 reviews
-      </h2>
-      
+      Average User Rating
+    </h1>
+    
             
-    </div>
+    <h2
+      class="fd-form-label"
+    >
+      6 reviews
+    </h2>
     
             
     <div
-      class="fd-rating-indicator fd-facet__content-container fd-facet__content-container--rating-indicator"
+      class="fd-rating-indicator fd-facet__container"
     >
       
                 
@@ -458,7 +410,7 @@ exports[`Storyshots Dev/Facets Combination of facets 1`] = `
       
                 
       <span
-        class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text"
+        class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text fd-margin-top--tiny"
       >
         (2 of 5)
       </span>
@@ -476,7 +428,7 @@ exports[`Storyshots Dev/Facets Combination of facets 1`] = `
 exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
 <section
   aria-label="Dynamic Page Desktop Example"
-  class="fd-dynamic-page"
+  class="fd-dynamic-page fd-dynamic-page--xl"
 >
   
         
@@ -487,7 +439,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
             
     <div
       aria-hidden="false"
-      class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl"
+      class="fd-dynamic-page__title-area"
       id="mainContainer"
       tabindex="0"
     >
@@ -571,99 +523,91 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
                Balenciaga Triple S Trainers 
             </h1>
             
-                        
-          </div>
-          
-                    
-        </div>
-        
-                    
-        <div
-          class="fd-dynamic-page__actions-container"
-        >
-          
-                        
-          <div
-            class="fd-dynamic-page__toolbar-container"
-          >
-            
                             
             <div
-              aria-label="Product actions"
-              class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-              role="toolbar"
+              class="fd-dynamic-page__toolbar-container"
             >
               
                                 
-              <button
-                class="fd-button fd-button--compact fd-button--positive"
-              >
-                Accept
-              </button>
-              
-                                
-              <button
-                class="fd-button fd-button--compact fd-button--reject"
-              >
-                Reject
-              </button>
-              
-                                
-              <span
-                class="fd-toolbar__separator"
-              />
-              
-                                
-            </div>
-            
-                            
-            <div
-              aria-label="Navigation actions"
-              class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-              role="toolbar"
-            >
-              
-                                
-              <button
-                aria-label="Resize"
-                class="fd-button fd-button--transparent"
+              <div
+                aria-label="Product actions"
+                class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                role="toolbar"
               >
                 
                                     
-                <i
-                  class="sap-icon--resize"
+                <button
+                  class="fd-button fd-button--compact fd-button--positive"
+                >
+                  Accept
+                </button>
+                
+                                    
+                <button
+                  class="fd-button fd-button--compact fd-button--reject"
+                >
+                  Reject
+                </button>
+                
+                                    
+                <span
+                  class="fd-toolbar__separator"
                 />
                 
-                                
-              </button>
+                                    
+              </div>
               
                                 
-              <button
-                aria-label="Exit fullscreen"
-                class="fd-button fd-button--transparent"
+              <div
+                aria-label="Navigation actions"
+                class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                role="toolbar"
               >
                 
                                     
-                <i
-                  class="sap-icon--exitfullscreen"
-                />
-                
-                                
-              </button>
-              
-                                
-              <button
-                aria-label="Close"
-                class="fd-button fd-button--transparent"
-              >
+                <button
+                  aria-label="Resize"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                        
+                  <i
+                    class="sap-icon--resize"
+                  />
+                  
+                                    
+                </button>
                 
                                     
-                <i
-                  class="sap-icon--decline"
-                />
+                <button
+                  aria-label="Exit fullscreen"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                        
+                  <i
+                    class="sap-icon--exitfullscreen"
+                  />
+                  
+                                    
+                </button>
+                
+                                    
+                <button
+                  aria-label="Close"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                        
+                  <i
+                    class="sap-icon--decline"
+                  />
+                  
+                                    
+                </button>
                 
                                 
-              </button>
+              </div>
               
                             
             </div>
@@ -690,7 +634,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
             
     <div
       aria-hidden="true"
-      class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl fd-dynamic-page__title-area--collapsed"
+      class="fd-dynamic-page__title-area fd-dynamic-page__title-area--collapsed"
       id="mainImageContainer"
       tabindex="0"
     >
@@ -763,12 +707,12 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
           
                         
           <div
-            class="fd-dynamic-page__image-title-container"
+            class="fd-dynamic-page__title-container"
           >
             
                             
             <div
-              class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-title"
+              class="fd-facet fd-facet--image fd-facet--image-header-title fd-margin-end--sm"
             >
               
                                 
@@ -795,20 +739,12 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
             >
               
                                 
-              <div
-                class="fd-dynamic-page__title-container"
+              <h1
+                class="fd-title fd-dynamic-page__title"
+                title="Balenciaga Triple S Trainers"
               >
-                
-                                    
-                <h1
-                  class="fd-title fd-dynamic-page__title"
-                  title="Balenciaga Triple S Trainers"
-                >
-                   Balenciaga Triple S Trainers 
-                </h1>
-                
-                                
-              </div>
+                 Balenciaga Triple S Trainers 
+              </h1>
               
                                 
               <div
@@ -820,99 +756,91 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
                             
             </div>
             
-                        
-          </div>
-          
-                    
-        </div>
-        
-                    
-        <div
-          class="fd-dynamic-page__actions-container fd-dynamic-page__actions-container--centered"
-        >
-          
-                        
-          <div
-            class="fd-dynamic-page__toolbar-container"
-          >
-            
                             
             <div
-              aria-label="Product actions"
-              class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-              role="toolbar"
+              class="fd-dynamic-page__toolbar-container"
             >
               
                                 
-              <button
-                class="fd-button fd-button--compact fd-button--positive"
-              >
-                Accept
-              </button>
-              
-                                
-              <button
-                class="fd-button fd-button--compact fd-button--reject"
-              >
-                Reject
-              </button>
-              
-                                
-              <span
-                class="fd-toolbar__separator"
-              />
-              
-                                
-            </div>
-            
-                            
-            <div
-              aria-label="Navigation actions"
-              class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
-              role="toolbar"
-            >
-              
-                                
-              <button
-                aria-label="Resize"
-                class="fd-button fd-button--transparent"
+              <div
+                aria-label="Product actions"
+                class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                role="toolbar"
               >
                 
                                     
-                <i
-                  class="sap-icon--resize"
+                <button
+                  class="fd-button fd-button--compact fd-button--positive"
+                >
+                  Accept
+                </button>
+                
+                                    
+                <button
+                  class="fd-button fd-button--compact fd-button--reject"
+                >
+                  Reject
+                </button>
+                
+                                    
+                <span
+                  class="fd-toolbar__separator"
                 />
                 
                                 
-              </button>
+              </div>
               
                                 
-              <button
-                aria-label="Exit fullscreen"
-                class="fd-button fd-button--transparent"
+              <div
+                aria-label="Navigation actions"
+                class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                role="toolbar"
               >
                 
                                     
-                <i
-                  class="sap-icon--exitfullscreen"
-                />
-                
-                                
-              </button>
-              
-                                
-              <button
-                aria-label="Close"
-                class="fd-button fd-button--transparent"
-              >
+                <button
+                  aria-label="Resize"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                        
+                  <i
+                    class="sap-icon--resize"
+                  />
+                  
+                                    
+                </button>
                 
                                     
-                <i
-                  class="sap-icon--decline"
-                />
+                <button
+                  aria-label="Exit fullscreen"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                        
+                  <i
+                    class="sap-icon--exitfullscreen"
+                  />
+                  
+                                    
+                </button>
+                
+                                    
+                <button
+                  aria-label="Close"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                        
+                  <i
+                    class="sap-icon--decline"
+                  />
+                  
+                                    
+                </button>
                 
                                 
-              </button>
+              </div>
               
                             
             </div>
@@ -938,19 +866,19 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
       <div
         aria-hidden="false"
         aria-label="Dynamic Page Desktop Header"
-        class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--xl"
-        id="fddplhvc6"
+        class="fd-dynamic-page__collapsible-header"
+        id="fddplhvx6"
         role="region"
       >
         
                     
         <div
-          class="fd-facet"
+          class="fd-facet-group"
         >
           
                         
           <div
-            class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-content"
+            class="fd-facet fd-facet--image fd-margin-end--md"
           >
             
                             
@@ -974,43 +902,35 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
                         
           <div
             aria-labelledby="formFacetTitle4"
-            class="fd-facet__container fd-facet__container--form"
+            class="fd-facet fd-facet--form fd-margin-end--md fd-margin-bottom--sm"
             role="group"
           >
             
                             
-            <div
-              class="fd-facet__title-container"
+            <h1
+              class="fd-title fd-title--h5 fd-margin-bottom--sm"
+              id="formFacetTitle4"
             >
-              
-                                
-              <h1
-                class="fd-facet__title"
-                id="formFacetTitle4"
-              >
-                Technical Data
-              </h1>
-              
-                            
-            </div>
+              Technical Data
+            </h1>
             
                             
             <div
-              class="fd-facet__content-container fd-facet__content-container--form"
+              class="fd-facet__container fd-margin-bottom--tiny"
             >
               
                                 
               <label
                 class="fd-form-label"
-                for="input-10"
+                for="form-value-10"
               >
                 Base unit:
               </label>
               
                                 
               <div
-                class="fd-facet__form-value"
-                id="input-10"
+                class="fd-text"
+                id="form-value-10"
               >
                 Each
               </div>
@@ -1020,21 +940,21 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
             
                             
             <div
-              class="fd-facet__content-container fd-facet__content-container--form"
+              class="fd-facet__container fd-margin-bottom--tiny"
             >
               
                                 
               <label
                 class="fd-form-label"
-                for="input-11"
+                for="form-value-11"
               >
                 Length:
               </label>
               
                                 
               <div
-                class="fd-facet__form-value"
-                id="input-11"
+                class="fd-text"
+                id="form-value-11"
               >
                 23.24 Centimeter
               </div>
@@ -1044,21 +964,21 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
             
                             
             <div
-              class="fd-facet__content-container fd-facet__content-container--form"
+              class="fd-facet__container fd-margin-bottom--tiny"
             >
               
                                 
               <label
                 class="fd-form-label"
-                for="input-12"
+                for="form-value-12"
               >
                 Width:
               </label>
               
                                 
               <div
-                class="fd-facet__form-value"
-                id="input-12"
+                class="fd-text"
+                id="form-value-12"
               >
                 86.1 Centimeter
               </div>
@@ -1068,21 +988,21 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
             
                             
             <div
-              class="fd-facet__content-container fd-facet__content-container--form"
+              class="fd-facet__container"
             >
               
                                 
               <label
                 class="fd-form-label"
-                for="input-13"
+                for="form-value-13"
               >
                 Height:
               </label>
               
                                 
               <div
-                class="fd-facet__form-value"
-                id="input-13"
+                class="fd-text"
+                id="form-value-13"
               >
                 20.8 Centimeter
               </div>
@@ -1096,29 +1016,21 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
                         
           <div
             aria-labelledby="kvFacetTitle9"
-            class="fd-facet__container fd-facet__container--key-value"
+            class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm"
             role="group"
           >
             
                             
-            <div
-              class="fd-facet__title-container"
+            <h1
+              class="fd-title fd-title--h5 fd-margin-bottom--sm"
+              id="kvFacetTitle9"
             >
-              
-                                
-              <h1
-                class="fd-facet__title"
-                id="kvFacetTitle9"
-              >
-                Status
-              </h1>
-              
-                            
-            </div>
+              Status
+            </h1>
             
                             
             <span
-              class="fd-object-status fd-object-status--positive fd-facet__object-status"
+              class="fd-object-status fd-object-status--positive fd-object-status--large fd-facet__object-status"
             >
               
                                 
@@ -1137,34 +1049,26 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
                         
           <div
             aria-labelledby="kvFacetTitle10"
-            class="fd-facet__container fd-facet__container--key-value"
+            class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm"
             role="group"
           >
             
                             
-            <div
-              class="fd-facet__title-container"
+            <h1
+              class="fd-title fd-title--h5 fd-margin-bottom--sm"
+              id="kvFacetTitle10"
             >
-              
-                                
-              <h1
-                class="fd-facet__title"
-                id="kvFacetTitle10"
-              >
-                Delivery Time
-              </h1>
-              
-                            
-            </div>
+              Delivery Time
+            </h1>
             
                             
             <span
-              class="fd-object-status fd-object-status--critical fd-facet__object-status"
+              class="fd-object-status fd-object-status--large fd-facet__object-status fd-object-status--critical"
             >
               
                                 
               <i
-                class="fd-object-status__icon sap-icon--shipping-status"
+                class="fd-object-status__icon sap-icon--shipping-status fd-padding--none fd-margin-end--tiny"
                 role="presentation"
               />
               
@@ -1184,29 +1088,21 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
                         
           <div
             aria-labelledby="kvFacetTitle11"
-            class="fd-facet__container fd-facet__container--key-value"
+            class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm"
             role="group"
           >
             
                             
-            <div
-              class="fd-facet__title-container"
+            <h1
+              class="fd-title fd-title--h5 fd-margin-bottom--sm"
+              id="kvFacetTitle11"
             >
-              
-                                
-              <h1
-                class="fd-facet__title"
-                id="kvFacetTitle11"
-              >
-                Assembly Option 
-              </h1>
-              
-                            
-            </div>
+              Assembly Option 
+            </h1>
             
                             
             <span
-              class="fd-object-status fd-object-status--negative fd-facet__object-status"
+              class="fd-object-status fd-object-status--negative fd-object-status--large fd-facet__object-status"
             >
               
                                 
@@ -1225,39 +1121,31 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
                         
           <div
             aria-labelledby="kvFacetTitle12"
-            class="fd-facet__container fd-facet__container--key-value"
+            class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm"
             role="group"
           >
             
                             
-            <div
-              class="fd-facet__title-container"
+            <h1
+              class="fd-title fd-title--h5 fd-margin-bottom--sm"
+              id="kvFacetTitle12"
             >
-              
-                                
-              <h1
-                class="fd-facet__title"
-                id="kvFacetTitle12"
-              >
-                Pricing 
-              </h1>
-              
-                            
-            </div>
+              Pricing 
+            </h1>
             
                             
             <span
-              class="fd-object-number fd-object-number--large fd-object-number--informative fd-facet__object-number"
+              class="fd-object-number fd-object-number--large fd-object-number--informative"
             >
               
                                 
               <span
-                class="fd-object-number__text fd-facet__object-number-text"
+                class="fd-object-number__text"
               >
                 579
               </span>
               <span
-                class="fd-object-number__unit fd-facet__object-number-unit"
+                class="fd-object-number__unit"
               >
                 EUR
               </span>
@@ -1272,36 +1160,28 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
                         
           <div
             aria-labelledby="ratingFacetTitle3"
-            class="fd-facet__container fd-facet__container--rating-indicator"
+            class="fd-facet fd-facet--rating-indicator fd-margin-end--md  fd-margin-bottom--sm"
             role="group"
           >
             
                             
-            <div
-              class="fd-facet__title-container"
+            <h1
+              class="fd-title fd-title--h5 fd-margin-bottom--sm"
+              id="ratingFacetTitle3"
             >
-              
-                                
-              <h1
-                class="fd-facet__title"
-                id="ratingFacetTitle3"
-              >
-                Average User Rating
-              </h1>
-              
-                                
-              <h2
-                class="fd-form-label"
-              >
-                6 reviews
-              </h2>
-              
+              Average User Rating
+            </h1>
+            
                             
-            </div>
+            <h2
+              class="fd-form-label"
+            >
+              6 reviews
+            </h2>
             
                             
             <div
-              class="fd-rating-indicator fd-facet__content-container fd-facet__content-container--rating-indicator"
+              class="fd-rating-indicator fd-facet__container"
             >
               
                                 
@@ -1400,7 +1280,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
               
                                 
               <span
-                class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text"
+                class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text fd-margin-top--tiny"
               >
                 (2 of 5)
               </span>
@@ -1436,7 +1316,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
           
                         
           <button
-            aria-controls="fddplhvc6"
+            aria-controls="fddplhvx6"
             aria-expanded="true"
             aria-haspopup="true"
             aria-hidden="false"
@@ -1444,7 +1324,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
             class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
             id="expandBtn"
             onclick="
-                                        toggleElAttrs('fddplhvc6', ['aria-hidden']);
+                                        toggleElAttrs('fddplhvx6', ['aria-hidden']);
                                         toggleElAttrs('expandBtn', ['aria-expanded']);
                                         toggleElAttrs('expandBtn', ['aria-hidden']);
                                         toggleElAttrs('collapseBtn', ['aria-expanded']);
@@ -1464,7 +1344,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
           
                         
           <button
-            aria-controls="fddplhvc6"
+            aria-controls="fddplhvx6"
             aria-expanded="false"
             aria-haspopup="true"
             aria-hidden="true"
@@ -1472,7 +1352,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
             class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
             id="collapseBtn"
             onclick="
-                                        toggleElAttrs('fddplhvc6', ['aria-hidden']);
+                                        toggleElAttrs('fddplhvx6', ['aria-hidden']);
                                         toggleElAttrs('collapseBtn', ['aria-expanded']);
                                         toggleElAttrs('collapseBtn', ['aria-hidden']);
                                         toggleElAttrs('expandBtn', ['aria-expanded']);
@@ -1525,7 +1405,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
       
                 
       <ul
-        class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--xl fd-dynamic-page__tabs--add-shadow"
+        class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--add-shadow"
         role="tablist"
       >
         
@@ -1537,9 +1417,9 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
           
                         
           <a
-            aria-controls="fuCwV550"
+            aria-controls="fuCwV557"
             class="fd-tabs__link"
-            href="#fuCwV550"
+            href="#fuCwV557"
           >
             
                             
@@ -1566,9 +1446,9 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
           
                         
           <a
-            aria-controls="AiWfz165"
+            aria-controls="AiWfz155"
             class="fd-tabs__link"
-            href="#AiWfz165"
+            href="#AiWfz155"
           >
             
                             
@@ -1597,14 +1477,14 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
   
         
   <div
-    class="fd-dynamic-page__content fd-dynamic-page__content--xl"
+    class="fd-dynamic-page__content"
   >
     
             
     <div
       aria-expanded="false"
       class="fd-tabs__panel"
-      id="fuCwV550"
+      id="fuCwV557"
       role="tabpanel"
     >
       
@@ -1619,7 +1499,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
     <div
       aria-expanded="true"
       class="fd-tabs__panel"
-      id="AiWfz165"
+      id="AiWfz155"
       role="tabpanel"
     >
       
@@ -1712,7 +1592,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
         
   <section
     aria-label="Dynamic Page Mobile Example"
-    class="fd-dynamic-page"
+    class="fd-dynamic-page fd-dynamic-page--sm"
   >
     
             
@@ -1723,7 +1603,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                 
       <div
         aria-hidden="false"
-        class="fd-dynamic-page__title-area fd-dynamic-page__title-area--sm"
+        class="fd-dynamic-page__title-area"
         id="mainContainerMobile"
         tabindex="0"
       >
@@ -1750,7 +1630,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                 
                                     
                 <ul
-                  class="fd-dynamic-page__breadcrumb--sm fd-breadcrumb"
+                  class="fd-breadcrumb"
                 >
                   
                                         
@@ -1760,7 +1640,6 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                     <a
                       class="fd-breadcrumb__link"
                       href="#"
-                      tabindex="0"
                     >
                       Men
                     </a>
@@ -1773,7 +1652,6 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                     <a
                       class="fd-breadcrumb__link"
                       href="#"
-                      tabindex="0"
                     >
                       Shoes
                     </a>
@@ -1787,7 +1665,6 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                       aria-current="page"
                       class="fd-breadcrumb__link"
                       href="#"
-                      tabindex="0"
                     >
                       Running Shoes
                     </a>
@@ -1802,7 +1679,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                                 
               <div
                 aria-label="Close action"
-                class="fd-dynamic-page__toolbar-actions fd-dynamic-page__toolbar-actions--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
                 role="toolbar"
               >
                 
@@ -1842,7 +1719,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                                 
               <div
                 aria-label="Product actions"
-                class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent"
                 role="toolbar"
               >
                 
@@ -1858,15 +1735,15 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                     
                                             
                     <button
-                      aria-controls="wgxzK85915"
+                      aria-controls="wgxzK85901"
                       aria-expanded="true"
                       aria-haspopup="true"
                       aria-label="Header actions"
                       class="fd-button fd-button--transparent"
-                      id="maisodusakdnsma"
+                      id="maisodusakdnsmb"
                       onclick="
-                                                    toggleElAttrs('wgxzK85915', ['aria-hidden']);
-                                                    toggleElAttrs('maisodusakdnsma', ['aria-expanded']);
+                                                    toggleElAttrs('wgxzK85901', ['aria-hidden']);
+                                                    toggleElAttrs('maisodusakdnsmb', ['aria-expanded']);
                                                 "
                     >
                       
@@ -1885,7 +1762,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                   <div
                     aria-hidden="false"
                     class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
-                    id="wgxzK85915"
+                    id="wgxzK85901"
                   >
                     
                                             
@@ -1941,7 +1818,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                 
       <div
         aria-hidden="true"
-        class="fd-dynamic-page__title-area fd-dynamic-page__title-area--sm fd-dynamic-page__title-area--collapsed"
+        class="fd-dynamic-page__title-area fd-dynamic-page__title-area--collapsed"
         id="mainImageContainerMobile"
         tabindex="0"
       >
@@ -1968,7 +1845,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                 
                                     
                 <ul
-                  class="fd-dynamic-page__breadcrumb--sm fd-breadcrumb"
+                  class="fd-breadcrumb"
                 >
                   
                                         
@@ -2020,7 +1897,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                                 
               <div
                 aria-label="Close action"
-                class="fd-dynamic-page__toolbar-actions fd-dynamic-page__toolbar-actions--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
                 role="toolbar"
               >
                 
@@ -2046,12 +1923,12 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
             
                             
             <div
-              class="fd-dynamic-page__image-title-container"
+              class="fd-dynamic-page__title-container"
             >
               
                                 
               <div
-                class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-title"
+                class="fd-facet fd-facet--image fd-facet--image-header-title fd-margin-end--sm"
               >
                 
                                     
@@ -2078,20 +1955,12 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
               >
                 
                                     
-                <div
-                  class="fd-dynamic-page__title-container"
+                <h1
+                  class="fd-title fd-dynamic-page__title"
+                  title="Balenciaga Triple S Trainers"
                 >
-                  
-                                        
-                  <h1
-                    class="fd-title fd-dynamic-page__title"
-                    title="Balenciaga Triple S Trainers"
-                  >
-                     Balenciaga Triple S Trainers 
-                  </h1>
-                  
-                                    
-                </div>
+                   Balenciaga Triple S Trainers 
+                </h1>
                 
                                     
                 <div
@@ -2106,7 +1975,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                                 
               <div
                 aria-label="Product actions"
-                class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent"
                 role="toolbar"
               >
                 
@@ -2122,14 +1991,14 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                     
                                             
                     <button
-                      aria-controls="wgxzK85914"
+                      aria-controls="wgxzK85911"
                       aria-expanded="true"
                       aria-haspopup="true"
                       aria-label="Header actions"
                       class="fd-button fd-button--transparent"
                       id="maisodusakdnsmag"
                       onclick="
-                                                    toggleElAttrs('wgxzK85914', ['aria-hidden']);
+                                                    toggleElAttrs('wgxzK85911', ['aria-hidden']);
                                                     toggleElAttrs('maisodusakdnsmag', ['aria-expanded']);
                                                 "
                     >
@@ -2149,7 +2018,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                   <div
                     aria-hidden="false"
                     class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
-                    id="wgxzK85914"
+                    id="wgxzK85911"
                   >
                     
                                             
@@ -2204,19 +2073,19 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
         <div
           aria-hidden="false"
           aria-label="Dynamic Page Mobile Header"
-          class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--sm"
-          id="fddplhvc4"
+          class="fd-dynamic-page__collapsible-header"
+          id="fddplhvc7"
           role="region"
         >
           
                         
           <div
-            class="fd-facet"
+            class="fd-facet-group"
           >
             
                             
             <div
-              class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-content-sm"
+              class="fd-facet fd-facet--image fd-margin-end--sm fd-margin-bottom--tiny"
             >
               
                                 
@@ -2241,29 +2110,21 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                             
             <div
               aria-labelledby="kvFacetTitle13"
-              class="fd-facet__container fd-facet__container--key-value"
+              class="fd-facet fd-facet--key-value fd-margin-end--md  fd-margin-bottom--sm"
               role="group"
             >
               
                                 
-              <div
-                class="fd-facet__title-container"
+              <h1
+                class="fd-title fd-title--h5 fd-margin-bottom--sm"
+                id="kvFacetTitle13"
               >
-                
-                                    
-                <h1
-                  class="fd-facet__title"
-                  id="kvFacetTitle13"
-                >
-                  Availablity
-                </h1>
-                
-                                
-              </div>
+                Availablity
+              </h1>
               
                                 
               <span
-                class="fd-object-status fd-object-status--positive fd-facet__object-status"
+                class="fd-object-status fd-object-status--positive fd-object-status--large fd-facet__object-status"
               >
                 
                                     
@@ -2282,39 +2143,31 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                             
             <div
               aria-labelledby="kvFacetTitle14"
-              class="fd-facet__container fd-facet__container--key-value"
+              class="fd-facet fd-facet--key-value fd-margin-end--md  fd-margin-bottom--sm"
               role="group"
             >
               
                                 
-              <div
-                class="fd-facet__title-container"
+              <h1
+                class="fd-title fd-title--h5 fd-margin-bottom--sm"
+                id="kvFacetTitle14"
               >
-                
-                                    
-                <h1
-                  class="fd-facet__title"
-                  id="kvFacetTitle14"
-                >
-                  Price 
-                </h1>
-                
-                                
-              </div>
+                Price 
+              </h1>
               
                                 
               <span
-                class="fd-object-number fd-object-number--large fd-object-number--informative fd-facet__object-number"
+                class="fd-object-number fd-object-number--large fd-object-number--informative"
               >
                 
                                     
                 <span
-                  class="fd-object-number__text fd-facet__object-number-text"
+                  class="fd-object-number__text"
                 >
                   750
                 </span>
                 <span
-                  class="fd-object-number__unit fd-facet__object-number-unit"
+                  class="fd-object-number__unit"
                 >
                   EUR
                 </span>
@@ -2350,7 +2203,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
             
                             
             <button
-              aria-controls="fddplhvc4"
+              aria-controls="fddplhvc7"
               aria-expanded="true"
               aria-haspopup="true"
               aria-hidden="false"
@@ -2358,7 +2211,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
               class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
               id="expandBtnMobile"
               onclick="
-                                        toggleElAttrs('fddplhvc4', ['aria-hidden']);
+                                        toggleElAttrs('fddplhvc7', ['aria-hidden']);
                                         toggleElAttrs('expandBtnMobile', ['aria-expanded']);
                                         toggleElAttrs('expandBtnMobile', ['aria-hidden']);
                                         toggleElAttrs('collapseBtnMobile', ['aria-expanded']);
@@ -2378,7 +2231,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
             
                             
             <button
-              aria-controls="fddplhvc4"
+              aria-controls="fddplhvc7"
               aria-expanded="false"
               aria-haspopup="true"
               aria-hidden="true"
@@ -2386,7 +2239,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
               class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
               id="collapseBtnMobile"
               onclick="
-                                        toggleElAttrs('fddplhvc4', ['aria-hidden']);
+                                        toggleElAttrs('fddplhvc7', ['aria-hidden']);
                                         toggleElAttrs('collapseBtnMobile', ['aria-expanded']);
                                         toggleElAttrs('collapseBtnMobile', ['aria-hidden']);
                                         toggleElAttrs('expandBtnMobile', ['aria-expanded']);
@@ -2425,13 +2278,13 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
         
                     
         <ul
-          class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--sm fd-dynamic-page__tabs--add-shadow"
+          class="fd-tabs fd-dynamic-page__tabs fd-dynamic-page__tabs--add-shadow"
           role="tablist"
         >
           
                         
           <li
-            aria-controls="fuCwV552"
+            aria-controls="fuCwV559"
             class="fd-tabs__item"
             role="tab"
           >
@@ -2439,7 +2292,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                             
             <a
               class="fd-tabs__link"
-              href="#fuCwV552"
+              href="#fuCwV559"
             >
               
                                 
@@ -2466,9 +2319,9 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
             
                             
             <a
-              aria-controls="AiWfz167"
+              aria-controls="AiWfz161"
               class="fd-tabs__link"
-              href="#AiWfz167"
+              href="#AiWfz161"
             >
               
                                 
@@ -2497,14 +2350,14 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
     
             
     <div
-      class="fd-dynamic-page__content fd-dynamic-page__content--sm"
+      class="fd-dynamic-page__content"
     >
       
                 
       <div
         aria-expanded="false"
         class="fd-tabs__panel"
-        id="fuCwV552"
+        id="fuCwV559"
         role="tabpanel"
       >
         
@@ -2519,7 +2372,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
       <div
         aria-expanded="true"
         class="fd-tabs__panel"
-        id="AiWfz167"
+        id="AiWfz161"
         role="tabpanel"
       >
         
@@ -2535,7 +2388,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
     
             
     <footer
-      class="fd-bar fd-bar--floating-footer"
+      class="fd-bar fd-bar--cozy fd-bar--floating-footer"
       style="position:relative"
     >
       
@@ -2554,7 +2407,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                         
           <button
             aria-label="button"
-            class="fd-button fd-button--emphasized fd-button--compact"
+            class="fd-button fd-button--emphasized"
           >
             Save
           </button>
@@ -2570,7 +2423,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                         
           <button
             aria-label="button"
-            class="fd-button fd-button--transparent fd-button--compact"
+            class="fd-button fd-button--transparent"
           >
             Cancel
           </button>
@@ -2594,43 +2447,35 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
 exports[`Storyshots Dev/Facets Form Facet 1`] = `
 <div
   aria-labelledby="formFacetTitle2"
-  class="fd-facet__container fd-facet__container--form"
+  class="fd-facet fd-facet--form fd-margin-end--md fd-margin-bottom--sm"
   role="group"
 >
   
         
-  <div
-    class="fd-facet__title-container"
+  <h1
+    class="fd-title fd-title--h5 fd-margin-bottom--sm"
+    id="formFacetTitle2"
   >
-    
-            
-    <h1
-      class="fd-facet__title"
-      id="formFacetTitle2"
-    >
-       Technical Data 
-    </h1>
-    
-        
-  </div>
+     Technical Data 
+  </h1>
   
         
   <div
-    class="fd-facet__content-container fd-facet__content-container--form"
+    class="fd-facet__container fd-margin-bottom--tiny"
   >
     
             
     <label
       class="fd-form-label"
-      for="input-01"
+      for="form-value-01"
     >
       Base unit:
     </label>
     
             
     <div
-      class="fd-facet__form-value"
-      id="input-01"
+      class="fd-text"
+      id="form-value-01"
     >
       Each
     </div>
@@ -2640,21 +2485,21 @@ exports[`Storyshots Dev/Facets Form Facet 1`] = `
   
         
   <div
-    class="fd-facet__content-container fd-facet__content-container--form"
+    class="fd-facet__container fd-margin-bottom--tiny"
   >
     
             
     <label
       class="fd-form-label"
-      for="input-02"
+      for="form-value-02"
     >
       Length:
     </label>
     
             
     <div
-      class="fd-facet__form-value"
-      id="input-02"
+      class="fd-text"
+      id="form-value-02"
     >
       23.24 Centimeter
     </div>
@@ -2664,21 +2509,21 @@ exports[`Storyshots Dev/Facets Form Facet 1`] = `
   
         
   <div
-    class="fd-facet__content-container fd-facet__content-container--form"
+    class="fd-facet__container fd-margin-bottom--tiny"
   >
     
             
     <label
       class="fd-form-label"
-      for="input-03"
+      for="form-value-03"
     >
       Width:
     </label>
     
             
     <div
-      class="fd-facet__form-value"
-      id="input-03"
+      class="fd-text"
+      id="form-value-03"
     >
       86.1 Centimeter
     </div>
@@ -2688,21 +2533,21 @@ exports[`Storyshots Dev/Facets Form Facet 1`] = `
   
         
   <div
-    class="fd-facet__content-container fd-facet__content-container--form"
+    class="fd-facet__container"
   >
     
             
     <label
       class="fd-form-label"
-      for="input-04"
+      for="form-value-04"
     >
       Height:
     </label>
     
             
     <div
-      class="fd-facet__form-value"
-      id="input-04"
+      class="fd-text"
+      id="form-value-04"
     >
       20.8 Centimeter
     </div>
@@ -2717,29 +2562,21 @@ exports[`Storyshots Dev/Facets Form Facet 1`] = `
 exports[`Storyshots Dev/Facets Form Facet with Link 1`] = `
 <div
   aria-labelledby="formFacetTitle3"
-  class="fd-facet__container fd-facet__container--form"
+  class="fd-facet fd-facet--form fd-margin-end--md fd-margin-bottom--sm"
   role="group"
 >
   
         
-  <div
-    class="fd-facet__title-container"
+  <h1
+    class="fd-title fd-title--h5 fd-margin-bottom--sm"
+    id="formFacetTitle3"
   >
-    
-            
-    <h1
-      class="fd-facet__title"
-      id="formFacetTitle3"
-    >
-      Contact Information
-    </h1>
-    
-        
-  </div>
+    Contact Information
+  </h1>
   
         
   <div
-    class="fd-facet__content-container fd-facet__content-container--form"
+    class="fd-facet__container fd-margin-bottom--tiny"
   >
     
             
@@ -2750,12 +2587,12 @@ exports[`Storyshots Dev/Facets Form Facet with Link 1`] = `
     
             
     <div
-      class="fd-facet__form-value"
+      class="fd-text"
     >
       
                 
       <a
-        class="fd-link fd-facet__link"
+        class="fd-link fd-margin-begin--tiny"
         href="#"
         tabindex="0"
       >
@@ -2770,7 +2607,7 @@ exports[`Storyshots Dev/Facets Form Facet with Link 1`] = `
   
         
   <div
-    class="fd-facet__content-container fd-facet__content-container--form"
+    class="fd-facet__container fd-margin-bottom--tiny"
   >
     
             
@@ -2781,12 +2618,12 @@ exports[`Storyshots Dev/Facets Form Facet with Link 1`] = `
     
             
     <div
-      class="fd-facet__form-value"
+      class="fd-text"
     >
       
                 
       <a
-        class="fd-link fd-facet__link"
+        class="fd-link fd-margin-begin--tiny"
         href="#"
         tabindex="0"
       >
@@ -2801,7 +2638,7 @@ exports[`Storyshots Dev/Facets Form Facet with Link 1`] = `
   
         
   <div
-    class="fd-facet__content-container fd-facet__content-container--form"
+    class="fd-facet__container fd-margin-bottom--tiny"
   >
     
             
@@ -2812,12 +2649,12 @@ exports[`Storyshots Dev/Facets Form Facet with Link 1`] = `
     
             
     <div
-      class="fd-facet__form-value"
+      class="fd-text"
     >
       
                 
       <a
-        class="fd-link fd-facet__link"
+        class="fd-link fd-margin-begin--tiny"
         href="#"
         tabindex="0"
       >
@@ -2832,21 +2669,21 @@ exports[`Storyshots Dev/Facets Form Facet with Link 1`] = `
   
         
   <div
-    class="fd-facet__content-container fd-facet__content-container--form"
+    class="fd-facet__container"
   >
     
             
     <label
       class="fd-form-label"
-      for="input-09"
+      for="form-value-09"
     >
       Height:
     </label>
     
             
     <div
-      class="fd-facet__form-value"
-      id="input-09"
+      class="fd-text"
+      id="form-value-09"
     >
       20.8 Centimeter
     </div>
@@ -2860,7 +2697,7 @@ exports[`Storyshots Dev/Facets Form Facet with Link 1`] = `
 
 exports[`Storyshots Dev/Facets Image/Avatar Facet 1`] = `
 <div
-  class="fd-facet__container fd-facet__container--image"
+  class="fd-facet fd-facet--image fd-margin-end--md"
 >
   
         
@@ -2886,29 +2723,21 @@ exports[`Storyshots Dev/Facets Key-Value Facet 1`] = `
 <section>
   <div
     aria-labelledby="kvFacetTitle5"
-    class="fd-facet__container fd-facet__container--key-value"
+    class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm"
     role="group"
   >
     
         
-    <div
-      class="fd-facet__title-container"
+    <h1
+      class="fd-title fd-title--h5 fd-margin-bottom--sm"
+      id="kvFacetTitle5"
     >
-      
-            
-      <h1
-        class="fd-facet__title"
-        id="kvFacetTitle5"
-      >
-         Status 
-      </h1>
-      
-        
-    </div>
+       Status 
+    </h1>
     
         
     <span
-      class="fd-object-status fd-object-status--positive fd-facet__object-status"
+      class="fd-object-status fd-object-status--positive fd-object-status--large fd-facet__object-status"
     >
       
             
@@ -2927,29 +2756,21 @@ exports[`Storyshots Dev/Facets Key-Value Facet 1`] = `
     
   <div
     aria-labelledby="kvFacetTitle6"
-    class="fd-facet__container fd-facet__container--key-value"
+    class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm"
     role="group"
   >
     
         
-    <div
-      class="fd-facet__title-container"
+    <h1
+      class="fd-title fd-title--h5 fd-margin-bottom--sm"
+      id="kvFacetTitle6"
     >
-      
-            
-      <h1
-        class="fd-facet__title"
-        id="kvFacetTitle6"
-      >
-         Delivery Time 
-      </h1>
-      
-        
-    </div>
+       Delivery Time 
+    </h1>
     
         
     <span
-      class="fd-object-status fd-object-status--negative fd-facet__object-status"
+      class="fd-object-status fd-object-status--negative fd-object-status--large fd-facet__object-status"
     >
       
             
@@ -2968,29 +2789,21 @@ exports[`Storyshots Dev/Facets Key-Value Facet 1`] = `
     
   <div
     aria-labelledby="kvFacetTitle7"
-    class="fd-facet__container fd-facet__container--key-value"
+    class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm"
     role="group"
   >
     
         
-    <div
-      class="fd-facet__title-container"
+    <h1
+      class="fd-title fd-title--h5 fd-margin-bottom--sm"
+      id="kvFacetTitle7"
     >
-      
-            
-      <h1
-        class="fd-facet__title"
-        id="kvFacetTitle7"
-      >
-         Assembly Option 
-      </h1>
-      
-        
-    </div>
+       Assembly Option 
+    </h1>
     
         
     <span
-      class="fd-object-status fd-object-status--critical fd-facet__object-status"
+      class="fd-object-status fd-object-status--critical fd-object-status--large fd-facet__object-status"
     >
       
             
@@ -3009,39 +2822,31 @@ exports[`Storyshots Dev/Facets Key-Value Facet 1`] = `
     
   <div
     aria-labelledby="kvFacetTitle8"
-    class="fd-facet__container fd-facet__container--key-value"
+    class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm"
     role="group"
   >
     
         
-    <div
-      class="fd-facet__title-container"
+    <h1
+      class="fd-title fd-title--h5 fd-margin-bottom--sm"
+      id="kvFacetTitle8"
     >
-      
-            
-      <h1
-        class="fd-facet__title"
-        id="kvFacetTitle8"
-      >
-         Pricing 
-      </h1>
-      
-        
-    </div>
+       Pricing 
+    </h1>
     
         
     <span
-      class="fd-object-number fd-object-number--large  fd-facet__object-number"
+      class="fd-object-number fd-object-number--large "
     >
       
             
       <span
-        class="fd-object-number__text fd-facet__object-number-text"
+        class="fd-object-number__text"
       >
         -2,000.00
       </span>
       <span
-        class="fd-object-number__unit fd-facet__object-number-unit"
+        class="fd-object-number__unit"
       >
         EUR
       </span>
@@ -3059,36 +2864,28 @@ exports[`Storyshots Dev/Facets Key-Value Facet 1`] = `
 exports[`Storyshots Dev/Facets Rating Indicator Facet 1`] = `
 <div
   aria-labelledby="ratingFacetTitle2"
-  class="fd-facet__container fd-facet__container--rating-indicator"
+  class="fd-facet fd-facet--rating-indicator fd-margin-end--md fd-margin-bottom--sm"
   role="group"
 >
   
         
-  <div
-    class="fd-facet__title-container"
+  <h1
+    class="fd-title fd-title--h5 fd-margin-bottom--sm"
+    id="ratingFacetTitle2"
   >
-    
-            
-    <h1
-      class="fd-facet__title"
-      id="ratingFacetTitle2"
-    >
-      Average User Rating
-    </h1>
-    
-            
-    <h2
-      class="fd-form-label"
-    >
-      6 reviews
-    </h2>
-    
+    Average User Rating
+  </h1>
+  
         
-  </div>
+  <h2
+    class="fd-form-label"
+  >
+    6 reviews
+  </h2>
   
         
   <div
-    class="fd-rating-indicator fd-facet__content-container fd-facet__content-container--rating-indicator"
+    class="fd-rating-indicator fd-facet__container"
   >
     
             
@@ -3187,7 +2984,7 @@ exports[`Storyshots Dev/Facets Rating Indicator Facet 1`] = `
     
             
     <span
-      class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text"
+      class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text fd-margin-top--tiny"
     >
       (4 of 5)
     </span>

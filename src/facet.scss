@@ -4,144 +4,43 @@
 $block: #{$fd-namespace}-facet;
 
 .#{$block} {
-  $fd-facet-horizontal-spacing: 2rem;
-  $fd-facet-vertical-spacing: 1rem;
-  $fd-facet-title-vertical-spacing: 1rem;
-  $fd-form-kv-facet-horizontal-spacing: 0.5rem;
-  $fd-image-form-facet-bottom-spacing: 0.5rem;
-  $fd-image-facet-mobile-spacing: 1rem;
-  $fd-image-facet-header-horizontal-spacing: 1rem;
-  $fd-object-status-facet-font-size: 1.5rem;
-
-  @mixin facet-spacing() {
-    margin-right: $fd-facet-horizontal-spacing;
-    margin-bottom: $fd-facet-vertical-spacing;
-
-    @include fd-rtl() {
-      margin-right: 0;
-      margin-left: $fd-facet-horizontal-spacing;
-    }
-  }
-
-  @mixin image-facet-mobile-spacing() {
-    margin-right: $fd-image-facet-mobile-spacing;
-    margin-bottom: $fd-image-form-facet-bottom-spacing;
-
-    @include fd-rtl() {
-      margin-right: 0;
-      margin-left: $fd-image-facet-mobile-spacing;
-    }
-  }
-
   @include fd-reset();
 
-  @include fd-flex() {
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
-
-  &__container {
+  &-group {
     @include fd-reset();
-    @include facet-spacing();
 
-    &--image {
-      @include fd-flex();
-
-      // by itself, only right spacing is applied
-      margin-right: $fd-facet-horizontal-spacing;
-      margin-bottom: 0;
-
-      // when used in object/dynamic page header title, different spacings are applied
-      &-header-title {
-        margin-right: $fd-image-facet-header-horizontal-spacing;
-        margin-bottom: 0;
-        align-items: center;
-
-        @include fd-rtl() {
-          margin-right: 0;
-          margin-left: $fd-image-facet-header-horizontal-spacing;
-        }
-      }
-
-      // when used in object/dynamic page header content, different spacings are applied
-      &-header-content {
-        @media (min-width: 0) {
-          @include image-facet-mobile-spacing();
-        }
-
-        @media (min-width: 37rem) {
-          @include facet-spacing();
-        }
-      }
-
-      // when used in object/dynamic page header content in mobile
-      &-header-content-sm {
-        @include image-facet-mobile-spacing();
-      }
-    }
-
-    &--form {
-      @include fd-flex(column);
-    }
-
-    &--key-value {
-      .#{$block}__object-status {
-        font-family: var(--sapFontFamily);
-        font-size: $fd-object-status-facet-font-size;
-        // font-weight: var(--sapFontHeaderWeight);  // @sapFontHeaderWeight is not part of the current theming base content and is only available as part of UI5. Currently under evaluation.
-        font-weight: normal;
-
-        & > [class*=sap-icon] {
-          font-size: $fd-object-status-facet-font-size; // of icon
-          margin-right: $fd-form-kv-facet-horizontal-spacing;
-
-          @include fd-rtl() {
-            margin-right: 0;
-            margin-left: $fd-form-kv-facet-horizontal-spacing;
-          }
-        }
-      }
-
-      .#{$block}__object-number-text, .#{$block}__object-number-unit {
-        line-height: 1;
-        padding-top: 0;
-      }
-    }
-
-    &--rating-indicator {
-      display: inline-flex;
-      justify-content: flex-start;
+    @include fd-flex() {
+      flex-wrap: wrap;
       align-items: flex-start;
-      flex-direction: column;
     }
   }
 
-  &__title-container {
-    @include fd-reset();
-    @include fd-flex(column);
-
-    margin-bottom: $fd-facet-title-vertical-spacing;
-  }
-
-  &__title {
-    @include fd-reset();
-
-    font-size: var(--sapFontLargeSize);
-  }
-
-  &__content-container {
-    @include fd-reset();
+  &--image {
     @include fd-flex();
 
-    &--form {
-      margin-bottom: $fd-image-form-facet-bottom-spacing;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
+    // when used in object/dynamic page header title, we need different alignment
+    &-header-title {
+      align-self: flex-end;
     }
+  }
 
-    &--rating-indicator {
+  &--form {
+    @include fd-flex(column);
+  }
+
+  &--key-value {
+    .#{$block}__object-status {
+      font-family: var(--sapFontFamily);
+    }
+  }
+
+  &--rating-indicator {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .#{$block}__container {
       flex-direction: column;
 
       .#{$block}__rating-container {
@@ -150,9 +49,13 @@ $block: #{$fd-namespace}-facet;
 
       .#{$block}__rating-dynamic-text {
         align-self: flex-end;
-        margin-top: 0.5rem;
       }
     }
+  }
+
+  &__container {
+    @include fd-reset();
+    @include fd-flex();
   }
 
   &__form-value {
@@ -162,14 +65,5 @@ $block: #{$fd-namespace}-facet;
     font-size: var(--sapFontSize);
     font-weight: normal;
     color: var(--sapGroup_TitleTextColor);
-
-    .#{$block}__link {
-      margin-left: $fd-form-kv-facet-horizontal-spacing;
-
-      @include fd-rtl() {
-        margin-left: 0;
-        margin-right: $fd-form-kv-facet-horizontal-spacing;
-      }
-    }
   }
 }

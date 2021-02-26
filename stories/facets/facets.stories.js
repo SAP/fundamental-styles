@@ -3,79 +3,67 @@ export default {
     parameters: {
         description: `Facets can be used as a standalone component or linked to another component. Facets are usually a part of the *Object Page* header content.
         Each facet adapts its size to the content and makes optimal use of the space without truncating the texts. If the facets do not all fit on one line, those on the right wrap to the line below. `,
-        components: ['facet', 'form-label', 'object-status', 'object-number', 'icon', 'button', 'rating-indicator', 'avatar', 'link', 'bar', 'breadcrumb', 'tabs', 'popover', 'toolbar', 'dynamic-page']
+        components: ['facet', 'form-label', 'object-status', 'title', 'text', 'object-number', 'icon', 'button', 'rating-indicator', 'avatar', 'link', 'bar', 'breadcrumb', 'tabs', 'popover', 'toolbar', 'margins', 'paddings', 'dynamic-page']
     }
 };
 
 
 export const combined = () =>
-    `<div class="fd-facet" role="group">
-        <div class="fd-facet__container fd-facet__container--image">
+    `<div class="fd-facet-group" role="group">
+        <div class="fd-facet fd-facet--image fd-margin-end--md">
             <span class="fd-avatar fd-avatar--l" aria-label="Avatar">
                 <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
             </span>
         </div>
-        <div class="fd-facet__container fd-facet__container--form" role="group" aria-labelledby="formFacetTitle1">
-            <div class="fd-facet__title-container">
-                <h1 class="fd-facet__title" id="formFacetTitle1">Technical Data</h1>
+        <div class="fd-facet fd-facet--form fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="formFacetTitle1">
+            <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="formFacetTitle1">Technical Data</h1>
+            <div class="fd-facet__container fd-margin-bottom--tiny">
+                <label class="fd-form-label" for="form-value-05">Base unit:</label>
+                <div class="fd-text" id="form-value-05">Each</div>
             </div>
-            <div class="fd-facet__content-container fd-facet__content-container--form">
-                <label class="fd-form-label" for="input-05">Base unit:</label>
-                <div class="fd-facet__form-value" id="input-05">Each</div>
+            <div class="fd-facet__container fd-margin-bottom--tiny">
+                <label class="fd-form-label" for="form-value-06">Length:</label>
+                <div class="fd-text" id="form-value-06">23.24 Centimeter</div>
             </div>
-            <div class="fd-facet__content-container fd-facet__content-container--form">
-                <label class="fd-form-label" for="input-06">Length:</label>
-                <div class="fd-facet__form-value" id="input-06">23.24 Centimeter</div>
+            <div class="fd-facet__container fd-margin-bottom--tiny">
+                <label class="fd-form-label" for="form-value-07">Width:</label>
+                <div class="fd-text" id="form-value-07">86.1 Centimeter</div>
             </div>
-            <div class="fd-facet__content-container fd-facet__content-container--form">
-                <label class="fd-form-label" for="input-07">Width:</label>
-                <div class="fd-facet__form-value" id="input-07">86.1 Centimeter</div>
-            </div>
-            <div class="fd-facet__content-container fd-facet__content-container--form">
-                <label class="fd-form-label" for="input-08">Height:</label>
-                <div class="fd-facet__form-value" id="input-08">20.8 Centimeter</div>
+            <div class="fd-facet__container">
+                <label class="fd-form-label" for="form-value-08">Height:</label>
+                <div class="fd-text" id="form-value-08">20.8 Centimeter</div>
             </div>
         </div>
-        <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle1">
-            <div class="fd-facet__title-container">
-                <h1 class="fd-facet__title" id="kvFacetTitle1">Status</h1>
-            </div>
-            <span class="fd-object-status fd-object-status--positive fd-facet__object-status">
+        <div class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle1">
+            <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle1">Status</h1>
+            <span class="fd-object-status fd-object-status--positive fd-object-status--large fd-facet__object-status">
                 <span class="fd-object-status__text">Delivery</span>
             </span>
         </div>
-        <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle2">
-            <div class="fd-facet__title-container">
-                <h1 class="fd-facet__title" id="kvFacetTitle2">Delivery Time</h1>
-            </div>
-            <span class="fd-object-status fd-object-status--critical fd-facet__object-status">
-                <i class="fd-object-status__icon sap-icon--shipping-status" role="presentation"></i>
+        <div class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle2">
+            <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle2">Delivery Time</h1>
+            <span class="fd-object-status fd-object-status--large fd-facet__object-status fd-object-status--critical">
+                <i class="fd-object-status__icon sap-icon--shipping-status fd-padding--none fd-margin-end--tiny" role="presentation"></i>
                 <span class="fd-object-status__text">12 days</span>
             </span>
         </div>
-        <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle3">
-            <div class="fd-facet__title-container">
-                <h1 class="fd-facet__title" id="kvFacetTitle3">Assembly Option </h1>
-            </div>
-            <span class="fd-object-status fd-object-status--negative fd-facet__object-status">
+        <div class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle3">
+            <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle3">Assembly Option </h1>
+            <span class="fd-object-status fd-object-status--negative fd-object-status--large fd-facet__object-status">
                 <span class="fd-object-status__text">To be selected</span>
             </span>
         </div>
-        <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle4">
-            <div class="fd-facet__title-container">
-                <h1 class="fd-facet__title" id="kvFacetTitle4">Pricing </h1>
-            </div>
-            <span class="fd-object-number fd-object-number--large fd-object-number--informative fd-facet__object-number">
-                <span class="fd-object-number__text fd-facet__object-number-text">579</span><span class="fd-object-number__unit fd-facet__object-number-unit">EUR</span>
+        <div class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle4">
+            <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle4">Pricing </h1>
+            <span class="fd-object-number fd-object-number--large fd-object-number--informative">
+                <span class="fd-object-number__text">579</span><span class="fd-object-number__unit">EUR</span>
             </span>
         </div>
 
-        <div class="fd-facet__container fd-facet__container--rating-indicator" role="group" aria-labelledby="ratingFacetTitle1">
-            <div class="fd-facet__title-container">
-                <h1 class="fd-facet__title" id="ratingFacetTitle1">Average User Rating</h1>
-                <h2 class="fd-form-label">6 reviews</h2>
-            </div>
-            <div class="fd-rating-indicator fd-facet__content-container fd-facet__content-container--rating-indicator">
+        <div class="fd-facet fd-facet--rating-indicator fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="ratingFacetTitle1">
+            <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="ratingFacetTitle1">Average User Rating</h1>
+            <h2 class="fd-form-label">6 reviews</h2>
+            <div class="fd-rating-indicator fd-facet__container">
                 <div class="fd-rating-indicator__container fd-facet__rating-container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-5-1" name="rating-max-value-5" value="1">
                 <label class="fd-rating-indicator__label" for="rating-max-value-5-1"></label>
@@ -92,7 +80,7 @@ export const combined = () =>
                 <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-5-5" name="rating-max-value-5" value="5">
                 <label class="fd-rating-indicator__label" for="rating-max-value-5-5"></label>
                 </div>
-                <span class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text">(2 of 5)</span>
+                <span class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text fd-margin-top--tiny">(2 of 5)</span>
             </div>
         </div>
     </div>
@@ -106,36 +94,28 @@ combined.parameters = {
 };
 
 export const keyValue = () =>
-    `<div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle5">
-        <div class="fd-facet__title-container">
-            <h1 class="fd-facet__title" id="kvFacetTitle5"> Status </h1>
-        </div>
-        <span class="fd-object-status fd-object-status--positive fd-facet__object-status">
+    `<div class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle5">
+        <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle5"> Status </h1>
+        <span class="fd-object-status fd-object-status--positive fd-object-status--large fd-facet__object-status">
             <span class="fd-object-status__text">Delivery</span>
         </span>
     </div>
-    <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle6">
-        <div class="fd-facet__title-container">
-            <h1 class="fd-facet__title" id="kvFacetTitle6"> Delivery Time </h1>
-        </div>
-        <span class="fd-object-status fd-object-status--negative fd-facet__object-status">
+    <div class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle6">
+        <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle6"> Delivery Time </h1>
+        <span class="fd-object-status fd-object-status--negative fd-object-status--large fd-facet__object-status">
             <span class="fd-object-status__text">12 days</span>
         </span>
     </div>
-    <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle7">
-        <div class="fd-facet__title-container">
-            <h1 class="fd-facet__title" id="kvFacetTitle7"> Assembly Option </h1>
-        </div>
-        <span class="fd-object-status fd-object-status--critical fd-facet__object-status">
+    <div class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle7">
+        <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle7"> Assembly Option </h1>
+        <span class="fd-object-status fd-object-status--critical fd-object-status--large fd-facet__object-status">
             <span class="fd-object-status__text">To be selected</span>
         </span>
     </div>
-    <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle8">
-        <div class="fd-facet__title-container">
-            <h1 class="fd-facet__title" id="kvFacetTitle8"> Pricing </h1>
-        </div>
-        <span class="fd-object-number fd-object-number--large  fd-facet__object-number">
-            <span class="fd-object-number__text fd-facet__object-number-text">-2,000.00</span><span class="fd-object-number__unit fd-facet__object-number-unit">EUR</span>
+    <div class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle8">
+        <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle8"> Pricing </h1>
+        <span class="fd-object-number fd-object-number--large ">
+            <span class="fd-object-number__text">-2,000.00</span><span class="fd-object-number__unit">EUR</span>
         </span>
     </div>
 `;
@@ -150,25 +130,23 @@ keyValue.parameters = {
 };
 
 export const formFacet = () =>
-    `<div class="fd-facet__container fd-facet__container--form" role="group" aria-labelledby="formFacetTitle2">
-        <div class="fd-facet__title-container">
-            <h1 class="fd-facet__title" id="formFacetTitle2"> Technical Data </h1>
+    `<div class="fd-facet fd-facet--form fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="formFacetTitle2">
+        <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="formFacetTitle2"> Technical Data </h1>
+        <div class="fd-facet__container fd-margin-bottom--tiny">
+            <label class="fd-form-label" for="form-value-01">Base unit:</label>
+            <div class="fd-text" id="form-value-01">Each</div>
         </div>
-        <div class="fd-facet__content-container fd-facet__content-container--form">
-            <label class="fd-form-label" for="input-01">Base unit:</label>
-            <div class="fd-facet__form-value" id="input-01">Each</div>
+        <div class="fd-facet__container fd-margin-bottom--tiny">
+            <label class="fd-form-label" for="form-value-02">Length:</label>
+            <div class="fd-text" id="form-value-02">23.24 Centimeter</div>
         </div>
-        <div class="fd-facet__content-container fd-facet__content-container--form">
-            <label class="fd-form-label" for="input-02">Length:</label>
-            <div class="fd-facet__form-value" id="input-02">23.24 Centimeter</div>
+        <div class="fd-facet__container fd-margin-bottom--tiny">
+            <label class="fd-form-label" for="form-value-03">Width:</label>
+            <div class="fd-text" id="form-value-03">86.1 Centimeter</div>
         </div>
-        <div class="fd-facet__content-container fd-facet__content-container--form">
-            <label class="fd-form-label" for="input-03">Width:</label>
-            <div class="fd-facet__form-value" id="input-03">86.1 Centimeter</div>
-        </div>
-        <div class="fd-facet__content-container fd-facet__content-container--form">
-            <label class="fd-form-label" for="input-04">Height:</label>
-            <div class="fd-facet__form-value" id="input-04">20.8 Centimeter</div>
+        <div class="fd-facet__container">
+            <label class="fd-form-label" for="form-value-04">Height:</label>
+            <div class="fd-text" id="form-value-04">20.8 Centimeter</div>
         </div>
     </div>
 `;
@@ -183,31 +161,29 @@ formFacet.parameters = {
 };
 
 export const formFacetLink = () =>
-    `<div class="fd-facet__container fd-facet__container--form" role="group" aria-labelledby="formFacetTitle3">
-        <div class="fd-facet__title-container">
-            <h1 class="fd-facet__title" id="formFacetTitle3">Contact Information</h1>
-        </div>
-        <div class="fd-facet__content-container fd-facet__content-container--form">
+    `<div class="fd-facet fd-facet--form fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="formFacetTitle3">
+        <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="formFacetTitle3">Contact Information</h1>
+        <div class="fd-facet__container fd-margin-bottom--tiny">
             <i class="sap-icon--add-employee" role="presentation"></i>
-            <div class="fd-facet__form-value">
-                <a href="#" class="fd-link fd-facet__link" tabindex="0">John Miller</a>
+            <div class="fd-text">
+                <a href="#" class="fd-link fd-margin-begin--tiny" tabindex="0">John Miller</a>
             </div>
         </div>
-        <div class="fd-facet__content-container fd-facet__content-container--form">
+        <div class="fd-facet__container fd-margin-bottom--tiny">
             <i class="sap-icon--outgoing-call" role="presentation"></i>
-            <div class="fd-facet__form-value">
-                <a href="#" class="fd-link fd-facet__link" tabindex="0">+1 234 5678</a>
+            <div class="fd-text">
+                <a href="#" class="fd-link fd-margin-begin--tiny" tabindex="0">+1 234 5678</a>
             </div>
         </div>
-        <div class="fd-facet__content-container fd-facet__content-container--form">
+        <div class="fd-facet__container fd-margin-bottom--tiny">
             <i class="sap-icon--email" role="presentation"></i>
-            <div class="fd-facet__form-value">
-                <a href="#" class="fd-link fd-facet__link" tabindex="0">john.miller@company.com</a>
+            <div class="fd-text">
+                <a href="#" class="fd-link fd-margin-begin--tiny" tabindex="0">john.miller@company.com</a>
             </div>
         </div>
-        <div class="fd-facet__content-container fd-facet__content-container--form">
-            <label class="fd-form-label" for="input-09">Height:</label>
-            <div class="fd-facet__form-value" id="input-09">20.8 Centimeter</div>
+        <div class="fd-facet__container">
+            <label class="fd-form-label" for="form-value-09">Height:</label>
+            <div class="fd-text" id="form-value-09">20.8 Centimeter</div>
         </div>
     </div>
 `;
@@ -220,12 +196,10 @@ formFacetLink.parameters = {
 };
 
 export const ratingIndicator = () =>
-    `<div class="fd-facet__container fd-facet__container--rating-indicator" role="group" aria-labelledby="ratingFacetTitle2">
-        <div class="fd-facet__title-container">
-            <h1 class="fd-facet__title" id="ratingFacetTitle2">Average User Rating</h1>
-            <h2 class="fd-form-label">6 reviews</h2>
-        </div>
-        <div class="fd-rating-indicator fd-facet__content-container fd-facet__content-container--rating-indicator">
+    `<div class="fd-facet fd-facet--rating-indicator fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="ratingFacetTitle2">
+        <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="ratingFacetTitle2">Average User Rating</h1>
+        <h2 class="fd-form-label">6 reviews</h2>
+        <div class="fd-rating-indicator fd-facet__container">
             <div class="fd-rating-indicator__container fd-facet__rating-container" aria-label="Star Rating (out of 5)">
             <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="1-rating-max-value-5-1" name="1-rating-max-value-5" value="1">
             <label class="fd-rating-indicator__label" for="1-rating-max-value-5-1"></label>
@@ -242,7 +216,7 @@ export const ratingIndicator = () =>
             <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="1-rating-max-value-5-5" name="1-rating-max-value-5" value="5">
             <label class="fd-rating-indicator__label" for="1-rating-max-value-5-5"></label>
             </div>
-            <span class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text">(4 of 5)</span>
+            <span class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text fd-margin-top--tiny">(4 of 5)</span>
         </div>
     </div>
 `;
@@ -255,7 +229,7 @@ ratingIndicator.parameters = {
 };
 
 export const imageFacet = () =>
-    `<div class="fd-facet__container fd-facet__container--image">
+    `<div class="fd-facet fd-facet--image fd-margin-end--md">
         <span class="fd-avatar fd-avatar--l" aria-label="Avatar">
             <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
         </span>
@@ -271,9 +245,9 @@ imageFacet.parameters = {
 
 
 export const objectPage = () =>
-    `<section class="fd-dynamic-page" aria-label="Dynamic Page Desktop Example">
+    `<section class="fd-dynamic-page fd-dynamic-page--xl" aria-label="Dynamic Page Desktop Example">
         <header class="fd-dynamic-page__header">
-            <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl" tabindex="0" aria-hidden="false" id="mainContainer">
+            <div class="fd-dynamic-page__title-area" tabindex="0" aria-hidden="false" id="mainContainer">
                 <div class="fd-dynamic-page__main-container">
                     <div class="fd-dynamic-page__breadcrumb-title-container">
                         <nav aria-label="Breadcrumbs">
@@ -285,32 +259,30 @@ export const objectPage = () =>
                         </nav>
                         <div class="fd-dynamic-page__title-container">
                             <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
-                        </div>
-                    </div>
-                    <div class="fd-dynamic-page__actions-container">
-                        <div class="fd-dynamic-page__toolbar-container">
-                            <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
-                                <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
-                                <span class="fd-toolbar__separator"></span>
+                            <div class="fd-dynamic-page__toolbar-container">
+                                <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                    <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
+                                    <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
+                                    <span class="fd-toolbar__separator"></span>
+                                    </div>
+                                <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                    <button class="fd-button fd-button--transparent" aria-label="Resize">
+                                        <i class="sap-icon--resize"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
+                                        <i class="sap-icon--exitfullscreen"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--transparent" aria-label="Close">
+                                        <i class="sap-icon--decline"></i>
+                                    </button>
                                 </div>
-                            <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                <button class="fd-button fd-button--transparent" aria-label="Resize">
-                                    <i class="sap-icon--resize"></i>
-                                </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
-                                    <i class="sap-icon--exitfullscreen"></i>
-                                </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Close">
-                                    <i class="sap-icon--decline"></i>
-                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="fd-dynamic-page__subtitle"> Oversized multimaterial sneakers with quilted effect </div>
             </div>
-            <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl fd-dynamic-page__title-area--collapsed" tabindex="0" aria-hidden="true" id="mainImageContainer">
+            <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--collapsed" tabindex="0" aria-hidden="true" id="mainImageContainer">
                 <div class="fd-dynamic-page__main-container">
                     <div class="fd-dynamic-page__breadcrumb-title-container">
                         <nav aria-label="Breadcrumbs">
@@ -320,111 +292,95 @@ export const objectPage = () =>
                                 <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
                             </ul>
                         </nav>
-                        <div class="fd-dynamic-page__image-title-container">
-                            <div class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-title">
+                        <div class="fd-dynamic-page__title-container">
+                            <div class="fd-facet fd-facet--image fd-facet--image-header-title fd-margin-end--sm">
                                 <span class="fd-avatar fd-avatar--s" aria-label="Avatar">
                                     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
                                 </span>
                             </div>
                             <div class="fd-dynamic-page__title-subtitle-container">
-                                <div class="fd-dynamic-page__title-container">
-                                    <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
-                                </div>
+                                <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
                                 <div class="fd-dynamic-page__subtitle"> Oversized multimaterial sneakers with quilted effect </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="fd-dynamic-page__actions-container fd-dynamic-page__actions-container--centered">
-                        <div class="fd-dynamic-page__toolbar-container">
-                            <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
-                                <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
-                                <span class="fd-toolbar__separator"></span>
+                            <div class="fd-dynamic-page__toolbar-container">
+                                <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                    <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
+                                    <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
+                                    <span class="fd-toolbar__separator"></span>
                                 </div>
-                            <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                <button class="fd-button fd-button--transparent" aria-label="Resize">
-                                    <i class="sap-icon--resize"></i>
-                                </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
-                                    <i class="sap-icon--exitfullscreen"></i>
-                                </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Close">
-                                    <i class="sap-icon--decline"></i>
-                                </button>
+                                <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                    <button class="fd-button fd-button--transparent" aria-label="Resize">
+                                        <i class="sap-icon--resize"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
+                                        <i class="sap-icon--exitfullscreen"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--transparent" aria-label="Close">
+                                        <i class="sap-icon--decline"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="fd-dynamic-page__collapsible-header-container">
-                <div class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--xl" role="region" id="fddplhvc6" aria-hidden="false" aria-label="Dynamic Page Desktop Header" >
-                    <div class="fd-facet">
-                        <div class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-content">
+                <div class="fd-dynamic-page__collapsible-header" role="region" id="fddplhvx6" aria-hidden="false" aria-label="Dynamic Page Desktop Header" >
+                    <div class="fd-facet-group">
+                        <div class="fd-facet fd-facet--image fd-margin-end--md">
                             <span class="fd-avatar fd-avatar--l" aria-label="Avatar">
                                 <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
                             </span>
                         </div>
-                        <div class="fd-facet__container fd-facet__container--form" role="group" aria-labelledby="formFacetTitle4">
-                            <div class="fd-facet__title-container">
-                                <h1 class="fd-facet__title" id="formFacetTitle4">Technical Data</h1>
+                        <div class="fd-facet fd-facet--form fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="formFacetTitle4">
+                            <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="formFacetTitle4">Technical Data</h1>
+                            <div class="fd-facet__container fd-margin-bottom--tiny">
+                                <label class="fd-form-label" for="form-value-10">Base unit:</label>
+                                <div class="fd-text" id="form-value-10">Each</div>
                             </div>
-                            <div class="fd-facet__content-container fd-facet__content-container--form">
-                                <label class="fd-form-label" for="input-10">Base unit:</label>
-                                <div class="fd-facet__form-value" id="input-10">Each</div>
+                            <div class="fd-facet__container fd-margin-bottom--tiny">
+                                <label class="fd-form-label" for="form-value-11">Length:</label>
+                                <div class="fd-text" id="form-value-11">23.24 Centimeter</div>
                             </div>
-                            <div class="fd-facet__content-container fd-facet__content-container--form">
-                                <label class="fd-form-label" for="input-11">Length:</label>
-                                <div class="fd-facet__form-value" id="input-11">23.24 Centimeter</div>
+                            <div class="fd-facet__container fd-margin-bottom--tiny">
+                                <label class="fd-form-label" for="form-value-12">Width:</label>
+                                <div class="fd-text" id="form-value-12">86.1 Centimeter</div>
                             </div>
-                            <div class="fd-facet__content-container fd-facet__content-container--form">
-                                <label class="fd-form-label" for="input-12">Width:</label>
-                                <div class="fd-facet__form-value" id="input-12">86.1 Centimeter</div>
-                            </div>
-                            <div class="fd-facet__content-container fd-facet__content-container--form">
-                                <label class="fd-form-label" for="input-13">Height:</label>
-                                <div class="fd-facet__form-value" id="input-13">20.8 Centimeter</div>
+                            <div class="fd-facet__container">
+                                <label class="fd-form-label" for="form-value-13">Height:</label>
+                                <div class="fd-text" id="form-value-13">20.8 Centimeter</div>
                             </div>
                         </div>
-                        <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle9">
-                            <div class="fd-facet__title-container">
-                                <h1 class="fd-facet__title" id="kvFacetTitle9">Status</h1>
-                            </div>
-                            <span class="fd-object-status fd-object-status--positive fd-facet__object-status">
+                        <div class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle9">
+                            <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle9">Status</h1>
+                            <span class="fd-object-status fd-object-status--positive fd-object-status--large fd-facet__object-status">
                                 <span class="fd-object-status__text">Delivery</span>
                             </span>
                         </div>
-                        <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle10">
-                            <div class="fd-facet__title-container">
-                                <h1 class="fd-facet__title" id="kvFacetTitle10">Delivery Time</h1>
-                            </div>
-                            <span class="fd-object-status fd-object-status--critical fd-facet__object-status">
-                                <i class="fd-object-status__icon sap-icon--shipping-status" role="presentation"></i>
+                        <div class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle10">
+                            <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle10">Delivery Time</h1>
+                            <span class="fd-object-status fd-object-status--large fd-facet__object-status fd-object-status--critical">
+                                <i class="fd-object-status__icon sap-icon--shipping-status fd-padding--none fd-margin-end--tiny" role="presentation"></i>
                                 <span class="fd-object-status__text">12 days</span>
                             </span>
                         </div>
-                        <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle11">
-                            <div class="fd-facet__title-container">
-                                <h1 class="fd-facet__title" id="kvFacetTitle11">Assembly Option </h1>
-                            </div>
-                            <span class="fd-object-status fd-object-status--negative fd-facet__object-status">
+                        <div class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle11">
+                            <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle11">Assembly Option </h1>
+                            <span class="fd-object-status fd-object-status--negative fd-object-status--large fd-facet__object-status">
                                 <span class="fd-object-status__text">To be selected</span>
                             </span>
                         </div>
-                        <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle12">
-                            <div class="fd-facet__title-container">
-                                <h1 class="fd-facet__title" id="kvFacetTitle12">Pricing </h1>
-                            </div>
-                            <span class="fd-object-number fd-object-number--large fd-object-number--informative fd-facet__object-number">
-                                <span class="fd-object-number__text fd-facet__object-number-text">579</span><span class="fd-object-number__unit fd-facet__object-number-unit">EUR</span>
+                        <div class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle12">
+                            <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle12">Pricing </h1>
+                            <span class="fd-object-number fd-object-number--large fd-object-number--informative">
+                                <span class="fd-object-number__text">579</span><span class="fd-object-number__unit">EUR</span>
                             </span>
                         </div>
                     
-                        <div class="fd-facet__container fd-facet__container--rating-indicator" role="group" aria-labelledby="ratingFacetTitle3">
-                            <div class="fd-facet__title-container">
-                                <h1 class="fd-facet__title" id="ratingFacetTitle3">Average User Rating</h1>
-                                <h2 class="fd-form-label">6 reviews</h2>
-                            </div>
-                            <div class="fd-rating-indicator fd-facet__content-container fd-facet__content-container--rating-indicator">
+                        <div class="fd-facet fd-facet--rating-indicator fd-margin-end--md  fd-margin-bottom--sm" role="group" aria-labelledby="ratingFacetTitle3">
+                            <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="ratingFacetTitle3">Average User Rating</h1>
+                            <h2 class="fd-form-label">6 reviews</h2>
+                            <div class="fd-rating-indicator fd-facet__container">
                                 <div class="fd-rating-indicator__container fd-facet__rating-container" aria-label="Star Rating (out of 5)">
                                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="2-rating-max-value-5-1" name="2-rating-max-value-5" value="1">
                                 <label class="fd-rating-indicator__label" for="2-rating-max-value-5-1"></label>
@@ -441,7 +397,7 @@ export const objectPage = () =>
                                 <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="2-rating-max-value-5-5" name="2-rating-max-value-5" value="5">
                                 <label class="fd-rating-indicator__label" for="2-rating-max-value-5-5"></label>
                                 </div>
-                                <span class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text">(2 of 5)</span>
+                                <span class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text fd-margin-top--tiny">(2 of 5)</span>
                             </div>
                         </div>
                     </div>
@@ -456,7 +412,7 @@ export const objectPage = () =>
                                 id="expandBtn"
                                 aria-haspopup="true" 
                                 onclick="
-                                        toggleElAttrs('fddplhvc6', ['aria-hidden']);
+                                        toggleElAttrs('fddplhvx6', ['aria-hidden']);
                                         toggleElAttrs('expandBtn', ['aria-expanded']);
                                         toggleElAttrs('expandBtn', ['aria-hidden']);
                                         toggleElAttrs('collapseBtn', ['aria-expanded']);
@@ -464,7 +420,7 @@ export const objectPage = () =>
                                         toggleElAttrs('mainContainer', ['aria-hidden']);
                                         toggleElAttrs('mainImageContainer', ['aria-hidden']);
                                     "
-                                aria-controls="fddplhvc6">
+                                aria-controls="fddplhvx6">
                                 <i class="sap-icon--slim-arrow-up"></i>
                         </button>
                         <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
@@ -474,7 +430,7 @@ export const objectPage = () =>
                                 id="collapseBtn"
                                 aria-haspopup="true" 
                                 onclick="
-                                        toggleElAttrs('fddplhvc6', ['aria-hidden']);
+                                        toggleElAttrs('fddplhvx6', ['aria-hidden']);
                                         toggleElAttrs('collapseBtn', ['aria-expanded']);
                                         toggleElAttrs('collapseBtn', ['aria-hidden']);
                                         toggleElAttrs('expandBtn', ['aria-expanded']);
@@ -482,7 +438,7 @@ export const objectPage = () =>
                                         toggleElAttrs('mainContainer', ['aria-hidden']);
                                         toggleElAttrs('mainImageContainer', ['aria-hidden']);
                                     "
-                                aria-controls="fddplhvc6">
+                                aria-controls="fddplhvx6">
                                 <i class="sap-icon--slim-arrow-down"></i>
                         </button>
                         <button class="fd-dynamic-page__pin-button fd-button fd-button--compact" 
@@ -494,16 +450,16 @@ export const objectPage = () =>
                 </div>
             </div>
             <div class="fd-dynamic-page__tabs--overflow">
-                <ul class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--xl fd-dynamic-page__tabs--add-shadow" role="tablist">
+                <ul class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--add-shadow" role="tablist">
                     <li role="tab" class="fd-tabs__item">
-                        <a class="fd-tabs__link" aria-controls="fuCwV550" href="#fuCwV550">
+                        <a class="fd-tabs__link" aria-controls="fuCwV557" href="#fuCwV557">
                             <span class="fd-tabs__tag">
                                 Link
                             </span>
                         </a>
                     </li>
                     <li role="tab" class="fd-tabs__item" aria-selected="true">
-                        <a class="fd-tabs__link" aria-controls="AiWfz165" href="#AiWfz165">
+                        <a class="fd-tabs__link" aria-controls="AiWfz155" href="#AiWfz155">
                             <span class="fd-tabs__tag">
                                 Selected
                             </span>
@@ -512,14 +468,14 @@ export const objectPage = () =>
                 </ul>
             </div>
         </header>
-        <div class="fd-dynamic-page__content fd-dynamic-page__content--xl">
-            <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV550" role="tabpanel">
+        <div class="fd-dynamic-page__content">
+            <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV557" role="tabpanel">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
                 eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
                 dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
             </div>
-            <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz165" role="tabpanel" >
+            <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz155" role="tabpanel" >
                 Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
                 Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
@@ -558,27 +514,27 @@ export const objectPage = () =>
 objectPage.storyName = 'Facets in Object Page';
 objectPage.parameters = {
     docs: {
-        storyDescription: `All facet types used together in the context of a dynamic page. To have the image from the image facet
-        appear next to the title, add the class \`fd-facet__container\` and apply the modifiers \`fd-facet__container--image\` and \`fd-facet__container--image-header-title\` to the 
-        \`fd-dynamic-page__image-title-container\` class when collapsed, and \`fd-facet__container--image-header-content\` when expanded.
+        storyDescription: `All facet types used together in the context of a dynamic page. To have the image from the image facet appear next to the title, add the class 
+        \`fd-facet\` and apply the modifiers \`fd-facet--image\` and \`fd-facet--image-header-title\` to the 
+        \`fd-dynamic-page__title-container\` class. Note that the dynamic page title and subtitle should be placed in the \`fd-dynamic-page__title-subtitle-container\` class
+        for proper alignment with the image.
 
 The final structure of a collapsed header with image next to the title is shown below with changes marked in bold:
 
 - <code class="docs-code">fd-dynamic-page\\_\\_title-area</code> The area holding title, KPI content, subtitle, and actions
   - <code class="docs-code">fd-dynamic-page\\_\\_main-container</code> Main container that holds Breadcrumb, image, title, title content and actions
     - <code class="docs-code">fd-dynamic-page\\_\\_breadcrumb-title-container</code> Container that holds breadcrumb, title, and title content
+        - <code class="docs-code">fd-dynamic-page\\_\\_breadcrumb-container</code> Breadcrumbs Container, can contain toolbar container
             - <code class="docs-code">fd-dynamic-page\\_\\_breadcrumb</code> Breadcrumbs
-            - **<code class="docs-code-grey">fd-dynamic-page\\_\\_image-title-container</code> The container for image, title and subtitle**
-                - **<code class="docs-code-grey">fd-facet\\_\\_container fd-facet\\_\\_container--image</code> The image facet**
-                - **<code class="docs-code-grey">fd-facet\\_\\_title-subtitle-container</code> The container for title and subtitle**
-                    - **<code class="docs-code">fd-dynamic-page\\_\\_title-container</code> The container for title, KPI content and actions**
-                        - <code class="docs-code">fd-dynamic-page\\_\\_title</code> Dynamic page title
-                        - <code class="docs-code">fd-dynamic-page\\_\\_title-content</code> The KPI content
-                    - **<code class="docs-code-grey">fd-dynamic-page\\_\\_subtitle</code> Dynamic page subtitle**
-    - <code class="docs-code">fd-dynamic-page\\_\\_actions-container</code> Wrapper container for toolbar that handles toolbar positioning
+        - **<code class="docs-code-grey">fd-dynamic-page\\_\\_title-container</code> The container for image, title, subtitle and toolbar**
+            - **<code class="docs-code-grey">fd-facet fd-facet--image fd-facet--image-header-title</code> The image facet**
+            - **<code class="docs-code-grey">fd-facet\\_\\_title-subtitle-container</code> The container for title and subtitle**
+                - <code class="docs-code">fd-dynamic-page\\_\\_title</code> Dynamic page title
+                - **<code class="docs-code-grey">fd-dynamic-page\\_\\_subtitle</code> Dynamic page subtitle**
+            - <code class="docs-code">fd-dynamic-page\\_\\_title-content</code> The KPI content
             - <code class="docs-code">fd-dynamic-page\\_\\_toolbar-container</code> Container that holds toolbar-related actions
                 - <code class="docs-code">fd-dynamic-page\\_\\_toolbar</code> Toolbar container for actions
-                - <code class="docs-code">fd-dynamic-page\\_\\_toolbar-actions</code> Navigation actions
+                - <code class="docs-code">fd-dynamic-page\\_\\_toolbar--actions</code> Navigation actions
 `
     }
 };
@@ -586,20 +542,20 @@ The final structure of a collapsed header with image next to the title is shown 
 
 export const objectPageMobile = () =>
     `<div class="mobile-container">
-        <section class="fd-dynamic-page" aria-label="Dynamic Page Mobile Example">
+        <section class="fd-dynamic-page fd-dynamic-page--sm" aria-label="Dynamic Page Mobile Example">
             <header class="fd-dynamic-page__header">
-                <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--sm" tabindex="0" aria-hidden="false" id="mainContainerMobile">
+                <div class="fd-dynamic-page__title-area" tabindex="0" aria-hidden="false" id="mainContainerMobile">
                     <div class="fd-dynamic-page__main-container">
                         <div class="fd-dynamic-page__breadcrumb-title-container">
                             <div class="fd-dynamic-page__breadcrumb-container">
                                 <nav aria-label="Breadcrumbs">
-                                    <ul class="fd-dynamic-page__breadcrumb--sm fd-breadcrumb">
-                                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
-                                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Shoes</a></li>
-                                        <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
+                                    <ul class="fd-breadcrumb">
+                                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" href="#">Men</a></li>
+                                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" href="#">Shoes</a></li>
+                                        <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" href="#">Running Shoes</a></li>
                                     </ul>
                                 </nav>
-                                <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar-actions fd-dynamic-page__toolbar-actions--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                     <button class="fd-button fd-button--transparent" aria-label="Close">
                                         <i class="sap-icon--decline"></i>
                                     </button>
@@ -607,17 +563,17 @@ export const objectPageMobile = () =>
                             </div>
                             <div class="fd-dynamic-page__title-container">
                                 <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
-                                <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
                                     <div class="fd-popover fd-toolbar__overflow">
                                         <div class="fd-popover__control">
                                             <button
-                                                id="maisodusakdnsma"
+                                                id="maisodusakdnsmb"
                                                 onclick="
-                                                    toggleElAttrs('wgxzK85915', ['aria-hidden']);
-                                                    toggleElAttrs('maisodusakdnsma', ['aria-expanded']);
+                                                    toggleElAttrs('wgxzK85901', ['aria-hidden']);
+                                                    toggleElAttrs('maisodusakdnsmb', ['aria-expanded']);
                                                 "
                                                 class="fd-button fd-button--transparent"
-                                                aria-controls="wgxzK85915"
+                                                aria-controls="wgxzK85901"
                                                 aria-haspopup="true"
                                                 aria-expanded="true"
                                                 aria-label="Header actions">
@@ -626,7 +582,7 @@ export const objectPageMobile = () =>
                                         </div>
                                         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                                             aria-hidden="false"
-                                            id="wgxzK85915">
+                                            id="wgxzK85901">
                                             <div class="fd-toolbar__overflow__body">
                                                 <button class="fd-button fd-button--transparent">Accept</button>
                                                 <button class="fd-button fd-button--transparent">Reject</button>
@@ -639,46 +595,44 @@ export const objectPageMobile = () =>
                     </div>
                     <div class="fd-dynamic-page__subtitle"> Expanded header in mobile </div>
                 </div>
-                <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--sm fd-dynamic-page__title-area--collapsed" tabindex="0" aria-hidden="true" id="mainImageContainerMobile">
+                <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--collapsed" tabindex="0" aria-hidden="true" id="mainImageContainerMobile">
                     <div class="fd-dynamic-page__main-container">
                         <div class="fd-dynamic-page__breadcrumb-title-container">
                             <div class="fd-dynamic-page__breadcrumb-container">
                                 <nav aria-label="Breadcrumbs">
-                                    <ul class="fd-dynamic-page__breadcrumb--sm fd-breadcrumb">
+                                    <ul class="fd-breadcrumb">
                                         <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
                                         <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Shoes</a></li>
                                         <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
                                     </ul>
                                 </nav>
-                                <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar-actions fd-dynamic-page__toolbar-actions--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                     <button class="fd-button fd-button--transparent" aria-label="Close">
                                         <i class="sap-icon--decline"></i>
                                     </button>
                                 </div>
                             </div>
-                            <div class="fd-dynamic-page__image-title-container">
-                                <div class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-title">
+                            <div class="fd-dynamic-page__title-container">
+                                <div class="fd-facet fd-facet--image fd-facet--image-header-title fd-margin-end--sm">
                                     <span class="fd-avatar fd-avatar--s" aria-label="Avatar">
                                         <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
                                     </span>
                                 </div>
                                 <div class="fd-dynamic-page__title-subtitle-container">
-                                    <div class="fd-dynamic-page__title-container">
-                                        <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
-                                    </div>
+                                    <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
                                     <div class="fd-dynamic-page__subtitle"> Collapsed header in mobile </div>
                                 </div>
-                                <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
                                     <div class="fd-popover fd-toolbar__overflow">
                                         <div class="fd-popover__control">
                                             <button
                                                 id="maisodusakdnsmag"
                                                 onclick="
-                                                    toggleElAttrs('wgxzK85914', ['aria-hidden']);
+                                                    toggleElAttrs('wgxzK85911', ['aria-hidden']);
                                                     toggleElAttrs('maisodusakdnsmag', ['aria-expanded']);
                                                 "
                                                 class="fd-button fd-button--transparent"
-                                                aria-controls="wgxzK85914"
+                                                aria-controls="wgxzK85911"
                                                 aria-haspopup="true"
                                                 aria-expanded="true"
                                                 aria-label="Header actions">
@@ -687,7 +641,7 @@ export const objectPageMobile = () =>
                                         </div>
                                         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                                             aria-hidden="false"
-                                            id="wgxzK85914">
+                                            id="wgxzK85911">
                                             <div class="fd-toolbar__overflow__body">
                                                 <button class="fd-button fd-button--transparent">Accept</button>
                                                 <button class="fd-button fd-button--transparent">Reject</button>
@@ -700,28 +654,24 @@ export const objectPageMobile = () =>
                     </div>
                 </div>
                 <div class="fd-dynamic-page__collapsible-header-container">
-                    <div class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--sm" role="region" id="fddplhvc4" aria-hidden="false" aria-label="Dynamic Page Mobile Header">
-                        <div class="fd-facet">
-                            <div class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-content-sm">
+                    <div class="fd-dynamic-page__collapsible-header" role="region" id="fddplhvc7" aria-hidden="false" aria-label="Dynamic Page Mobile Header">
+                        <div class="fd-facet-group">
+                            <div class="fd-facet fd-facet--image fd-margin-end--sm fd-margin-bottom--tiny">
                                 <span class="fd-avatar fd-avatar--l" aria-label="Avatar">
                                     <i class="fd-avatar__icon sap-icon--camera" role="presentation"></i>
                                 </span>
                             </div>
                             
-                            <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle13">
-                                <div class="fd-facet__title-container">
-                                    <h1 class="fd-facet__title" id="kvFacetTitle13">Availablity</h1>
-                                </div>
-                                <span class="fd-object-status fd-object-status--positive fd-facet__object-status">
+                            <div class="fd-facet fd-facet--key-value fd-margin-end--md  fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle13">
+                                <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle13">Availablity</h1>
+                                <span class="fd-object-status fd-object-status--positive fd-object-status--large fd-facet__object-status">
                                     <span class="fd-object-status__text">In Stock</span>
                                 </span>
                             </div>
-                            <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle14">
-                                <div class="fd-facet__title-container">
-                                    <h1 class="fd-facet__title" id="kvFacetTitle14">Price </h1>
-                                </div>
-                                <span class="fd-object-number fd-object-number--large fd-object-number--informative fd-facet__object-number">
-                                    <span class="fd-object-number__text fd-facet__object-number-text">750</span><span class="fd-object-number__unit fd-facet__object-number-unit">EUR</span>
+                            <div class="fd-facet fd-facet--key-value fd-margin-end--md  fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle14">
+                                <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle14">Price </h1>
+                                <span class="fd-object-number fd-object-number--large fd-object-number--informative">
+                                    <span class="fd-object-number__text">750</span><span class="fd-object-number__unit">EUR</span>
                                 </span>
                             </div>
                         </div>
@@ -736,7 +686,7 @@ export const objectPageMobile = () =>
                                 id="expandBtnMobile"
                                 aria-haspopup="true" 
                                 onclick="
-                                        toggleElAttrs('fddplhvc4', ['aria-hidden']);
+                                        toggleElAttrs('fddplhvc7', ['aria-hidden']);
                                         toggleElAttrs('expandBtnMobile', ['aria-expanded']);
                                         toggleElAttrs('expandBtnMobile', ['aria-hidden']);
                                         toggleElAttrs('collapseBtnMobile', ['aria-expanded']);
@@ -744,7 +694,7 @@ export const objectPageMobile = () =>
                                         toggleElAttrs('mainContainerMobile', ['aria-hidden']);
                                         toggleElAttrs('mainImageContainerMobile', ['aria-hidden']);
                                     "
-                                aria-controls="fddplhvc4">
+                                aria-controls="fddplhvc7">
                                 <i class="sap-icon--slim-arrow-up"></i>
                             </button>
                             <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
@@ -754,7 +704,7 @@ export const objectPageMobile = () =>
                                 id="collapseBtnMobile"
                                 aria-haspopup="true" 
                                 onclick="
-                                        toggleElAttrs('fddplhvc4', ['aria-hidden']);
+                                        toggleElAttrs('fddplhvc7', ['aria-hidden']);
                                         toggleElAttrs('collapseBtnMobile', ['aria-expanded']);
                                         toggleElAttrs('collapseBtnMobile', ['aria-hidden']);
                                         toggleElAttrs('expandBtnMobile', ['aria-expanded']);
@@ -762,7 +712,7 @@ export const objectPageMobile = () =>
                                         toggleElAttrs('mainContainerMobile', ['aria-hidden']);
                                         toggleElAttrs('mainImageContainerMobile', ['aria-hidden']);
                                     "
-                                aria-controls="fddplhvc4">
+                                aria-controls="fddplhvc7">
                                 <i class="sap-icon--slim-arrow-down"></i>
                             </button>
                         </div>
@@ -770,16 +720,16 @@ export const objectPageMobile = () =>
                     </div>
                 </div>
                 <div class="fd-dynamic-page__tabs--overflow">
-                    <ul class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--sm fd-dynamic-page__tabs--add-shadow" role="tablist">
-                        <li class="fd-tabs__item" aria-controls="fuCwV552" role="tab">
-                            <a class="fd-tabs__link" href="#fuCwV552">
+                    <ul class="fd-tabs fd-dynamic-page__tabs fd-dynamic-page__tabs--add-shadow" role="tablist">
+                        <li class="fd-tabs__item" aria-controls="fuCwV559" role="tab">
+                            <a class="fd-tabs__link" href="#fuCwV559">
                                 <span class="fd-tabs__tag">
                                     Link
                                 </span>
                             </a>
                         </li>
                         <li class="fd-tabs__item" aria-selected="true" role="tab">
-                            <a class="fd-tabs__link" aria-controls="AiWfz167" href="#AiWfz167">
+                            <a class="fd-tabs__link" aria-controls="AiWfz161" href="#AiWfz161">
                                 <span class="fd-tabs__tag">
                                     Selected
                                 </span>
@@ -788,27 +738,27 @@ export const objectPageMobile = () =>
                     </ul>  
                 </div>
             </header>
-            <div class="fd-dynamic-page__content fd-dynamic-page__content--sm">
-                <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV552" role="tabpanel">
+            <div class="fd-dynamic-page__content">
+                <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV559" role="tabpanel">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
                     eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
                     dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
                 </div>
-                <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz167" role="tabpanel">
+                <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz161" role="tabpanel">
                     Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
                     in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
                     Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
                     in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
                 </div>
             </div>
-            <footer class="fd-bar fd-bar--floating-footer" style="position:relative">
+            <footer class="fd-bar fd-bar--cozy fd-bar--floating-footer" style="position:relative">
                 <div role="toolbar" aria-label="Finalizing actions" class="fd-bar__right">
                     <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
+                        <button aria-label="button" class="fd-button fd-button--emphasized">Save</button>
                     </div>
                     <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                        <button aria-label="button" class="fd-button fd-button--transparent">Cancel</button>
                     </div>
                 </div>
             </footer>
@@ -816,11 +766,4 @@ export const objectPageMobile = () =>
     </div>
 `;
 objectPageMobile.storyName = 'Facets in Object Page Mobile';
-objectPageMobile.parameters = {
-    docs: {
-        storyDescription: `To have the image from the image facet appear next to the title, add the class 
-        \`fd-facet__container\` and apply the modifiers \`fd-facet__container--image\` and \`fd-facet__container--image-header-title\` to the 
-        \`fd-dynamic-page__image-title-container\` class when expanded, and \`fd-facet__container--image-header-content-sm\` when collapsed.
-`
-    }
-};
+

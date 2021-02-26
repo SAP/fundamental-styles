@@ -204,6 +204,12 @@ $block: #{$fd-namespace}-dynamic-page;
     margin-top: 0.25rem;
   }
 
+  &__title-subtitle-container {
+    @include fd-reset();
+    @include fd-flex(column);
+    @include fd-ellipsis();
+  }
+
   &__title-content {
     @include fd-reset();
     @include fd-ellipsis();

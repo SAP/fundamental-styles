@@ -64,7 +64,7 @@ To display a sticky header, use the <code class="docs-code">fd-dynamic-page\\_\\
 `,
         tags: ['f3', 'theme', 'development'],
         components: ['bar', 'breadcrumb', 'tabs', 'link', 'toolbar', 'title', 'icon', 'button', 'popover', 'facet',
-            'form-label', 'object-status', 'object-number', 'rating-indicator', 'avatar', 'dynamic-page']
+            'form-label', 'object-status', 'object-number', 'rating-indicator', 'avatar', 'margins', 'paddings', 'text', 'dynamic-page']
     }
 };
 
@@ -797,24 +797,24 @@ export const expandable = () =>
                         <div class="fd-dynamic-page__title-container">
                             <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
                             <div class="fd-dynamic-page__title-content" title="Header with both collapse and pin buttons, expanded by default"> Header with both collapse and pin buttons, expanded by default</div>
-                        </div>
-                    </div>
-                    <div class="fd-dynamic-page__toolbar-container">
-                        <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                            <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
-                            <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
-                            <span class="fd-toolbar__separator"></span>
-                        </div>
-                        <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                <button class="fd-button fd-button--transparent" aria-label="Resize">
-                                    <i class="sap-icon--resize"></i>
-                                </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
-                                    <i class="sap-icon--exitfullscreen"></i>
-                                </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Close">
-                                    <i class="sap-icon--decline"></i>
-                                </button>
+                            <div class="fd-dynamic-page__toolbar-container">
+                                <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                    <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
+                                    <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
+                                    <span class="fd-toolbar__separator"></span>
+                                </div>
+                                <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                        <button class="fd-button fd-button--transparent" aria-label="Resize">
+                                            <i class="sap-icon--resize"></i>
+                                        </button>
+                                        <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
+                                            <i class="sap-icon--exitfullscreen"></i>
+                                        </button>
+                                        <button class="fd-button fd-button--transparent" aria-label="Close">
+                                            <i class="sap-icon--decline"></i>
+                                        </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -878,24 +878,24 @@ export const collapsedHeader = () =>
                         <div class="fd-dynamic-page__title-container">
                             <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers Model 123456AB On Sale"> Balenciaga Triple S Trainers Model 123456AB On Sale </h1>
                             <div class="fd-dynamic-page__title-content" title="Collapsed Header with both expand and pin buttons">Collapsed Header with both expand and pin buttons </div>
-                        </div>
-                    </div>
-                    <div class="fd-dynamic-page__toolbar-container">
-                        <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                            <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
-                            <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
-                            <span class="fd-toolbar__separator"></span>
-                        </div>
-                        <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                            <button class="fd-button fd-button--transparent" aria-label="Resize">
-                                <i class="sap-icon--resize"></i>
-                            </button>
-                            <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
-                                <i class="sap-icon--exitfullscreen"></i>
-                            </button>
-                            <button class="fd-button fd-button--transparent" aria-label="Close">
-                                <i class="sap-icon--decline"></i>
-                            </button>
+                            <div class="fd-dynamic-page__toolbar-container">
+                                <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                    <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
+                                    <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
+                                    <span class="fd-toolbar__separator"></span>
+                                </div>
+                                <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                    <button class="fd-button fd-button--transparent" aria-label="Resize">
+                                        <i class="sap-icon--resize"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
+                                        <i class="sap-icon--exitfullscreen"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--transparent" aria-label="Close">
+                                        <i class="sap-icon--decline"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1021,9 +1021,9 @@ onlyCollapse.parameters = {
 
 
 export const withFacets = () =>
-    `<section class="fd-dynamic-page" aria-label="Dynamic Page Desktop Example">
+    `<section class="fd-dynamic-page fd-dynamic-page--xl" aria-label="Dynamic Page Desktop Example">
         <header class="fd-dynamic-page__header">
-            <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl" tabindex="0" aria-hidden="false" id="mainContainer">
+            <div class="fd-dynamic-page__title-area" tabindex="0" aria-hidden="false" id="mainContainer">
                 <div class="fd-dynamic-page__main-container">
                     <div class="fd-dynamic-page__breadcrumb-title-container">
                         <nav aria-label="Breadcrumbs">
@@ -1035,32 +1035,30 @@ export const withFacets = () =>
                         </nav>
                         <div class="fd-dynamic-page__title-container">
                             <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
-                        </div>
-                    </div>
-                    <div class="fd-dynamic-page__actions-container">
-                        <div class="fd-dynamic-page__toolbar-container">
-                            <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
-                                <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
-                                <span class="fd-toolbar__separator"></span>
+                            <div class="fd-dynamic-page__toolbar-container">
+                                <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                    <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
+                                    <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
+                                    <span class="fd-toolbar__separator"></span>
+                                    </div>
+                                <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                    <button class="fd-button fd-button--transparent" aria-label="Resize">
+                                        <i class="sap-icon--resize"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
+                                        <i class="sap-icon--exitfullscreen"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--transparent" aria-label="Close">
+                                        <i class="sap-icon--decline"></i>
+                                    </button>
                                 </div>
-                            <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                <button class="fd-button fd-button--transparent" aria-label="Resize">
-                                    <i class="sap-icon--resize"></i>
-                                </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
-                                    <i class="sap-icon--exitfullscreen"></i>
-                                </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Close">
-                                    <i class="sap-icon--decline"></i>
-                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="fd-dynamic-page__subtitle"> Oversized multimaterial sneakers with quilted effect </div>
             </div>
-            <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--xl fd-dynamic-page__title-area--collapsed" tabindex="0" aria-hidden="true" id="mainImageContainer">
+            <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--collapsed" tabindex="0" aria-hidden="true" id="mainImageContainer">
                 <div class="fd-dynamic-page__main-container">
                     <div class="fd-dynamic-page__breadcrumb-title-container">
                         <nav aria-label="Breadcrumbs">
@@ -1070,111 +1068,95 @@ export const withFacets = () =>
                                 <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
                             </ul>
                         </nav>
-                        <div class="fd-dynamic-page__image-title-container">
-                            <div class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-title">
+                        <div class="fd-dynamic-page__title-container">
+                            <div class="fd-facet fd-facet--image fd-facet--image-header-title fd-margin-end--sm">
                                 <span class="fd-avatar fd-avatar--s" aria-label="Avatar">
                                     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
                                 </span>
                             </div>
                             <div class="fd-dynamic-page__title-subtitle-container">
-                                <div class="fd-dynamic-page__title-container">
-                                    <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
-                                </div>
+                                <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
                                 <div class="fd-dynamic-page__subtitle"> Oversized multimaterial sneakers with quilted effect </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="fd-dynamic-page__actions-container fd-dynamic-page__actions-container--centered">
-                        <div class="fd-dynamic-page__toolbar-container">
-                            <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
-                                <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
-                                <span class="fd-toolbar__separator"></span>
+                            <div class="fd-dynamic-page__toolbar-container">
+                                <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                    <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
+                                    <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
+                                    <span class="fd-toolbar__separator"></span>
+                                    </div>
+                                <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                    <button class="fd-button fd-button--transparent" aria-label="Resize">
+                                        <i class="sap-icon--resize"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
+                                        <i class="sap-icon--exitfullscreen"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--transparent" aria-label="Close">
+                                        <i class="sap-icon--decline"></i>
+                                    </button>
                                 </div>
-                            <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar-actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                <button class="fd-button fd-button--transparent" aria-label="Resize">
-                                    <i class="sap-icon--resize"></i>
-                                </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
-                                    <i class="sap-icon--exitfullscreen"></i>
-                                </button>
-                                <button class="fd-button fd-button--transparent" aria-label="Close">
-                                    <i class="sap-icon--decline"></i>
-                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="fd-dynamic-page__collapsible-header-container">
-                <div class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--xl" role="region" id="fddplhvx6" aria-hidden="false" aria-label="Dynamic Page Desktop Header" >
-                    <div class="fd-facet">
-                        <div class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-content">
+                <div class="fd-dynamic-page__collapsible-header" role="region" id="fddplhvx6" aria-hidden="false" aria-label="Dynamic Page Desktop Header" >
+                    <div class="fd-facet-group">
+                        <div class="fd-facet fd-facet--image fd-margin-end--md fd-margin-bottom--sm">
                             <span class="fd-avatar fd-avatar--l" aria-label="Avatar">
                                 <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
                             </span>
                         </div>
-                        <div class="fd-facet__container fd-facet__container--form" role="group" aria-labelledby="formFacetTitle4">
-                            <div class="fd-facet__title-container">
-                                <h1 class="fd-facet__title" id="formFacetTitle4">Technical Data</h1>
+                        <div class="fd-facet fd-facet--form fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="formFacetTitle4">
+                            <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="formFacetTitle4">Technical Data</h1>
+                            <div class="fd-facet__container fd-margin-bottom--tiny">
+                                <label class="fd-form-label" for="form-value-10">Base unit:</label>
+                                <div class="fd-text" id="form-value-10">Each</div>
                             </div>
-                            <div class="fd-facet__content-container fd-facet__content-container--form">
-                                <label class="fd-form-label" for="input-10">Base unit:</label>
-                                <div class="fd-facet__form-value" id="input-10">Each</div>
+                            <div class="fd-facet__container fd-margin-bottom--tiny">
+                                <label class="fd-form-label" for="form-value-11">Length:</label>
+                                <div class="fd-text" id="form-value-11">23.24 Centimeter</div>
                             </div>
-                            <div class="fd-facet__content-container fd-facet__content-container--form">
-                                <label class="fd-form-label" for="input-11">Length:</label>
-                                <div class="fd-facet__form-value" id="input-11">23.24 Centimeter</div>
+                            <div class="fd-facet__container fd-margin-bottom--tiny">
+                                <label class="fd-form-label" for="form-value-12">Width:</label>
+                                <div class="fd-text" id="form-value-12">86.1 Centimeter</div>
                             </div>
-                            <div class="fd-facet__content-container fd-facet__content-container--form">
-                                <label class="fd-form-label" for="input-12">Width:</label>
-                                <div class="fd-facet__form-value" id="input-12">86.1 Centimeter</div>
-                            </div>
-                            <div class="fd-facet__content-container fd-facet__content-container--form">
-                                <label class="fd-form-label" for="input-13">Height:</label>
-                                <div class="fd-facet__form-value" id="input-13">20.8 Centimeter</div>
+                            <div class="fd-facet__container">
+                                <label class="fd-form-label" for="form-value-13">Height:</label>
+                                <div class="fd-text" id="form-value-13">20.8 Centimeter</div>
                             </div>
                         </div>
-                        <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle9">
-                            <div class="fd-facet__title-container">
-                                <h1 class="fd-facet__title" id="kvFacetTitle9">Status</h1>
-                            </div>
-                            <span class="fd-object-status fd-object-status--positive fd-facet__object-status">
+                        <div class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle9">
+                            <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle9">Status</h1>
+                            <span class="fd-object-status fd-object-status--positive fd-object-status--large fd-facet__object-status">
                                 <span class="fd-object-status__text">Delivery</span>
                             </span>
                         </div>
-                        <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle10">
-                            <div class="fd-facet__title-container">
-                                <h1 class="fd-facet__title" id="kvFacetTitle10">Delivery Time</h1>
-                            </div>
-                            <span class="fd-object-status fd-object-status--critical fd-facet__object-status">
-                                <i class="fd-object-status__icon sap-icon--shipping-status" role="presentation"></i>
+                        <div class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle10">
+                            <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle10">Delivery Time</h1>
+                            <span class="fd-object-status fd-object-status--large fd-facet__object-status fd-object-status--critical">
+                                <i class="fd-object-status__icon sap-icon--shipping-status fd-padding--none fd-margin-end--tiny" role="presentation"></i>
                                 <span class="fd-object-status__text">12 days</span>
                             </span>
                         </div>
-                        <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle11">
-                            <div class="fd-facet__title-container">
-                                <h1 class="fd-facet__title" id="kvFacetTitle11">Assembly Option </h1>
-                            </div>
-                            <span class="fd-object-status fd-object-status--negative fd-facet__object-status">
+                        <div class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle11">
+                            <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle11">Assembly Option </h1>
+                            <span class="fd-object-status fd-object-status--negative fd-object-status--large fd-facet__object-status">
                                 <span class="fd-object-status__text">To be selected</span>
                             </span>
                         </div>
-                        <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle12">
-                            <div class="fd-facet__title-container">
-                                <h1 class="fd-facet__title" id="kvFacetTitle12">Pricing </h1>
-                            </div>
-                            <span class="fd-object-number fd-object-number--large fd-object-number--informative fd-facet__object-number">
-                                <span class="fd-object-number__text fd-facet__object-number-text">579</span><span class="fd-object-number__unit fd-facet__object-number-unit">EUR</span>
+                        <div class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle12">
+                            <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle12">Pricing </h1>
+                            <span class="fd-object-number fd-object-number--large fd-object-number--informative">
+                                <span class="fd-object-number__text">579</span><span class="fd-object-number__unit">EUR</span>
                             </span>
                         </div>
                     
-                        <div class="fd-facet__container fd-facet__container--rating-indicator" role="group" aria-labelledby="ratingFacetTitle3">
-                            <div class="fd-facet__title-container">
-                                <h1 class="fd-facet__title" id="ratingFacetTitle3">Average User Rating</h1>
-                                <h2 class="fd-form-label">6 reviews</h2>
-                            </div>
-                            <div class="fd-rating-indicator fd-facet__content-container fd-facet__content-container--rating-indicator">
+                        <div class="fd-facet fd-facet--rating-indicator fd-margin-end--md  fd-margin-bottom--sm" role="group" aria-labelledby="ratingFacetTitle3">
+                            <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="ratingFacetTitle3">Average User Rating</h1>
+                            <h2 class="fd-form-label">6 reviews</h2>
+                            <div class="fd-rating-indicator fd-facet__container">
                                 <div class="fd-rating-indicator__container fd-facet__rating-container" aria-label="Star Rating (out of 5)">
                                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="2-rating-max-value-5-1" name="2-rating-max-value-5" value="1">
                                 <label class="fd-rating-indicator__label" for="2-rating-max-value-5-1"></label>
@@ -1191,7 +1173,7 @@ export const withFacets = () =>
                                 <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="2-rating-max-value-5-5" name="2-rating-max-value-5" value="5">
                                 <label class="fd-rating-indicator__label" for="2-rating-max-value-5-5"></label>
                                 </div>
-                                <span class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text">(2 of 5)</span>
+                                <span class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text fd-margin-top--tiny">(2 of 5)</span>
                             </div>
                         </div>
                     </div>
@@ -1244,7 +1226,7 @@ export const withFacets = () =>
                 </div>
             </div>
             <div class="fd-dynamic-page__tabs--overflow">
-                <ul class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--xl fd-dynamic-page__tabs--add-shadow" role="tablist">
+                <ul class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--add-shadow" role="tablist">
                     <li role="tab" class="fd-tabs__item">
                         <a class="fd-tabs__link" aria-controls="fuCwV557" href="#fuCwV557">
                             <span class="fd-tabs__tag">
@@ -1262,7 +1244,7 @@ export const withFacets = () =>
                 </ul>
             </div>
         </header>
-        <div class="fd-dynamic-page__content fd-dynamic-page__content--xl">
+        <div class="fd-dynamic-page__content">
             <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV557" role="tabpanel">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
                 eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
@@ -1305,32 +1287,34 @@ export const withFacets = () =>
     </section>
 `;
 
-withFacets.storyName = 'Dynamic Page with header facets';
+withFacets.storyName = 'With header facets';
 withFacets.parameters = {
     docs: {
         storyDescription: `To have the image from the image facet appear next to the title, add the class 
-        \`fd-facet__container\` and apply the modifiers \`fd-facet__container--image\` and \`fd-facet__container--image-header-title\` to the 
-        \`fd-dynamic-page__image-title-container\` class when collapsed, and \`fd-facet__container--image-header-content\` when expanded.
+        \`fd-facet\` and apply the modifiers \`fd-facet--image\` and \`fd-facet--image-header-title\` to the 
+        \`fd-dynamic-page__title-container\` class.
+        Note that the dynamic page title and subtitle should be placed in the \`fd-dynamic-page__title-subtitle-container\` class
+        for proper alignment with the image.
 `
     }
 };
 
 export const withFacetsMobile = () =>
     `<div class="mobile-container">
-        <section class="fd-dynamic-page" aria-label="Dynamic Page Mobile Example">
+        <section class="fd-dynamic-page fd-dynamic-page--sm" aria-label="Dynamic Page Mobile Example">
             <header class="fd-dynamic-page__header">
-                <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--sm" tabindex="0" aria-hidden="false" id="mainContainerMobile">
+                <div class="fd-dynamic-page__title-area" tabindex="0" aria-hidden="false" id="mainContainerMobile">
                     <div class="fd-dynamic-page__main-container">
                         <div class="fd-dynamic-page__breadcrumb-title-container">
                             <div class="fd-dynamic-page__breadcrumb-container">
                                 <nav aria-label="Breadcrumbs">
-                                    <ul class="fd-dynamic-page__breadcrumb--sm fd-breadcrumb">
-                                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
-                                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Shoes</a></li>
-                                        <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
+                                    <ul class="fd-breadcrumb">
+                                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" href="#">Men</a></li>
+                                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" href="#">Shoes</a></li>
+                                        <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" href="#">Running Shoes</a></li>
                                     </ul>
                                 </nav>
-                                <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar-actions fd-dynamic-page__toolbar-actions--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                     <button class="fd-button fd-button--transparent" aria-label="Close">
                                         <i class="sap-icon--decline"></i>
                                     </button>
@@ -1338,7 +1322,7 @@ export const withFacetsMobile = () =>
                             </div>
                             <div class="fd-dynamic-page__title-container">
                                 <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
-                                <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
                                     <div class="fd-popover fd-toolbar__overflow">
                                         <div class="fd-popover__control">
                                             <button
@@ -1370,36 +1354,34 @@ export const withFacetsMobile = () =>
                     </div>
                     <div class="fd-dynamic-page__subtitle"> Expanded header in mobile </div>
                 </div>
-                <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--sm fd-dynamic-page__title-area--collapsed" tabindex="0" aria-hidden="true" id="mainImageContainerMobile">
+                <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--collapsed" tabindex="0" aria-hidden="true" id="mainImageContainerMobile">
                     <div class="fd-dynamic-page__main-container">
                         <div class="fd-dynamic-page__breadcrumb-title-container">
                             <div class="fd-dynamic-page__breadcrumb-container">
                                 <nav aria-label="Breadcrumbs">
-                                    <ul class="fd-dynamic-page__breadcrumb--sm fd-breadcrumb">
+                                    <ul class="fd-breadcrumb">
                                         <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
                                         <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Shoes</a></li>
                                         <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
                                     </ul>
                                 </nav>
-                                <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar-actions fd-dynamic-page__toolbar-actions--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                     <button class="fd-button fd-button--transparent" aria-label="Close">
                                         <i class="sap-icon--decline"></i>
                                     </button>
                                 </div>
                             </div>
-                            <div class="fd-dynamic-page__image-title-container">
-                                <div class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-title">
+                            <div class="fd-dynamic-page__title-container">
+                                <div class="fd-facet fd-facet--image fd-facet--image-header-title fd-margin-end--sm">
                                     <span class="fd-avatar fd-avatar--s" aria-label="Avatar">
                                         <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
                                     </span>
                                 </div>
                                 <div class="fd-dynamic-page__title-subtitle-container">
-                                    <div class="fd-dynamic-page__title-container">
-                                        <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
-                                    </div>
+                                    <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
                                     <div class="fd-dynamic-page__subtitle"> Collapsed header in mobile </div>
                                 </div>
-                                <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--sm fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
                                     <div class="fd-popover fd-toolbar__overflow">
                                         <div class="fd-popover__control">
                                             <button
@@ -1431,28 +1413,24 @@ export const withFacetsMobile = () =>
                     </div>
                 </div>
                 <div class="fd-dynamic-page__collapsible-header-container">
-                    <div class="fd-dynamic-page__collapsible-header fd-dynamic-page__collapsible-header--sm" role="region" id="fddplhvc7" aria-hidden="false" aria-label="Dynamic Page Mobile Header">
-                        <div class="fd-facet">
-                            <div class="fd-facet__container fd-facet__container--image fd-facet__container--image-header-content-sm">
+                    <div class="fd-dynamic-page__collapsible-header" role="region" id="fddplhvc7" aria-hidden="false" aria-label="Dynamic Page Mobile Header">
+                        <div class="fd-facet-group">
+                            <div class="fd-facet fd-facet--image fd-margin-end--sm fd-margin-bottom--tiny">
                                 <span class="fd-avatar fd-avatar--l" aria-label="Avatar">
                                     <i class="fd-avatar__icon sap-icon--camera" role="presentation"></i>
                                 </span>
                             </div>
                             
-                            <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle13">
-                                <div class="fd-facet__title-container">
-                                    <h1 class="fd-facet__title" id="kvFacetTitle13">Availablity</h1>
-                                </div>
-                                <span class="fd-object-status fd-object-status--positive fd-facet__object-status">
+                            <div class="fd-facet fd-facet--key-value fd-margin-end--md  fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle13">
+                                <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle13">Availablity</h1>
+                                <span class="fd-object-status fd-object-status--positive fd-object-status--large fd-facet__object-status">
                                     <span class="fd-object-status__text">In Stock</span>
                                 </span>
                             </div>
-                            <div class="fd-facet__container fd-facet__container--key-value" role="group" aria-labelledby="kvFacetTitle14">
-                                <div class="fd-facet__title-container">
-                                    <h1 class="fd-facet__title" id="kvFacetTitle14">Price </h1>
-                                </div>
-                                <span class="fd-object-number fd-object-number--large fd-object-number--informative fd-facet__object-number">
-                                    <span class="fd-object-number__text fd-facet__object-number-text">750</span><span class="fd-object-number__unit fd-facet__object-number-unit">EUR</span>
+                            <div class="fd-facet fd-facet--key-value fd-margin-end--md  fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle14">
+                                <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle14">Price </h1>
+                                <span class="fd-object-number fd-object-number--large fd-object-number--informative">
+                                    <span class="fd-object-number__text">750</span><span class="fd-object-number__unit">EUR</span>
                                 </span>
                             </div>
                         </div>
@@ -1501,7 +1479,7 @@ export const withFacetsMobile = () =>
                     </div>
                 </div>
                 <div class="fd-dynamic-page__tabs--overflow">
-                    <ul class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--sm fd-dynamic-page__tabs--add-shadow" role="tablist">
+                    <ul class="fd-tabs fd-dynamic-page__tabs fd-dynamic-page__tabs--add-shadow" role="tablist">
                         <li class="fd-tabs__item" aria-controls="fuCwV559" role="tab">
                             <a class="fd-tabs__link" href="#fuCwV559">
                                 <span class="fd-tabs__tag">
@@ -1519,7 +1497,7 @@ export const withFacetsMobile = () =>
                     </ul>  
                 </div>
             </header>
-            <div class="fd-dynamic-page__content fd-dynamic-page__content--sm">
+            <div class="fd-dynamic-page__content">
                 <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV559" role="tabpanel">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
                     eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
@@ -1533,26 +1511,19 @@ export const withFacetsMobile = () =>
                     in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
                 </div>
             </div>
-            <footer class="fd-bar fd-bar--floating-footer" style="position:relative">
+            <footer class="fd-bar fd-bar--cozy fd-bar--floating-footer" style="position:relative">
                 <div role="toolbar" aria-label="Finalizing actions" class="fd-bar__right">
                     <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
+                        <button aria-label="button" class="fd-button fd-button--emphasized">Save</button>
                     </div>
                     <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                        <button aria-label="button" class="fd-button fd-button--transparent">Cancel</button>
                     </div>
                 </div>
             </footer>
         </section>
     </div>
 `;
-withFacetsMobile.storyName = 'Dynamic Page with header facets in Mobile';
-withFacetsMobile.parameters = {
-    docs: {
-        storyDescription: `To have the image from the image facet appear next to the title in mobile mode, add the class 
-        \`fd-facet__container\` and apply the modifiers \`fd-facet__container--image\` and \`fd-facet__container--image-header-title\` to the 
-        \`fd-dynamic-page__image-title-container\` class when collapsed, and \`fd-facet__container--image-header-content-sm\` when expanded.
-`
-    }
-};
+withFacetsMobile.storyName = 'With header facets (mobile)';
+
 
