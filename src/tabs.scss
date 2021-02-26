@@ -45,19 +45,19 @@ $block: #{$fd-namespace}-tabs;
       .#{$block}__tag {
         color: $color;
       }
+    }
 
-      @include fd-selected() {
-        .#{$block}__icon {
-          color: var(--sapContent_ContrastIconColor);
+    @include fd-selected() {
+      .#{$block}__icon {
+        color: var(--sapContent_ContrastIconColor);
+        background-color: $color;
+      }
+
+      .#{$block}__icon,
+      .#{$block}__tag,
+      .#{$block}__link {
+        &::after {
           background-color: $color;
-        }
-
-        .#{$block}__icon,
-        .#{$block}__tag,
-        & {
-          &::after {
-            background-color: $color;
-          }
         }
       }
     }
@@ -132,6 +132,25 @@ $block: #{$fd-namespace}-tabs;
     padding: 0;
     margin: 0 $fd-tabs-item-spacing-x;
 
+    @include fd-selected() {
+      .#{$block}__tag {
+        color: var(--fdTabs_Selected_Color);
+      }
+
+      .#{$block}__icon {
+        color: var(--fdTabs_Selected_Icon_Color);
+        background-color: $fd-tabs-selected-color;
+      }
+
+      .#{$block}__icon,
+      .#{$block}__tag,
+      .#{$block}__link {
+        &::after {
+          background-color: var(--fdTabs_Selected_Color);
+        }
+      }
+    }
+
     &--error {
       @include tabs-semantic(var(--sapErrorColor));
     }
@@ -157,25 +176,6 @@ $block: #{$fd-namespace}-tabs;
 
       .#{$block}__link {
         padding-left: 0;
-      }
-    }
-
-    @include fd-selected() {
-      .#{$block}__tag {
-        color: var(--fdTabs_Selected_Color);
-      }
-
-      .#{$block}__icon {
-        color: var(--fdTabs_Selected_Icon_Color);
-        background-color: $fd-tabs-selected-color;
-      }
-
-      .#{$block}__icon,
-      .#{$block}__tag,
-      & {
-        &::after {
-          background-color: var(--fdTabs_Selected_Color);
-        }
       }
     }
 
