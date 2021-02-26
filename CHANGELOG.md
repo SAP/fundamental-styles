@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.4...v0.17.0-rc.5) (2021-02-26)
+
+
+### Bug Fixes
+
+* Semantic tabs color [ci visual] ([#2162](https://github.com/SAP/fundamental-styles/issues/2162)) ([f13a7c2](https://github.com/SAP/fundamental-styles/commit/f13a7c2b55ad960cbf3d9be018cebd874c58e7b9))
+
 ## [0.17.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.3...v0.17.0-rc.4) (2021-02-26)
 
 
