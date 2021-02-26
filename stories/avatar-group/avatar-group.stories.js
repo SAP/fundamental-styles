@@ -243,47 +243,36 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
             </button>
         </div>
         
-        <div class="fd-popover__body" aria-hidden="true" id="popover_avatar_more_aoiwjth">
-            <div class="fd-popover__wrapper" style="max-height: 200px; min-width: 250px; overflow-x: hidden;">
+        <div class="fd-popover__body" aria-hidden="true" id="popover_avatar_more_aoiwjth" style="width: 245px;">
+            <div class="fd-popover__wrapper">
                 <div class="fd-popover__body-header">
                     <div class="fd-bar fd-bar--header">
                         <div class="fd-bar__middle">
                             <div class="fd-bar__element">Team Members (4)</div>
                         </div>
                     </div>
-                </div>  
-            
-                <div class="fd-container">
-                    <div class="fd-row">
-                        <div class="fd-col fd-col--3">
-                            <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false">
-                                <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" aria-label="Avatar">
-                                    <i class="fd-avatar__icon sap-icon--washing-machine" role="presentation"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="fd-col fd-col--3">
-                            <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false">
-                                <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/2.svg')" role="presentation" aria-label="John Doe"></span>
-                            </div>
-                        </div>
-                        <div class="fd-col fd-col--3">
-                            <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false">
-                                <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" aria-label="John Moe">JM</span>
-                            </div>
-                        </div>
-                        <div class="fd-col fd-col--3">
-                            <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false">
-                                <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" aria-label="Joe Bloggs">JB</span>
-                            </div>
-                        </div>
+                </div>
+
+                <div class="fd-avatar-group__overflow-body">
+                    <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false">
+                        <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" aria-label="Avatar">
+                            <i class="fd-avatar__icon sap-icon--washing-machine" role="presentation"></i>
+                        </span>
+                    </div>
+                    <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false">
+                        <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/2.svg')" role="presentation" aria-label="John Doe"></span>
+                    </div>
+                    <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false">
+                        <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" aria-label="John Moe">JM</span>
+                    </div>
+                    <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false">
+                        <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" aria-label="Joe Bloggs">JB</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-`;
+</div>`;
 
 individualType.parameters = {
     docs: {
@@ -326,13 +315,13 @@ export const groupType = () => `<div class="fd-popover">
                 <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/2.svg')" role="presentation" aria-label="John Doe"></span>
             </div>
         
-            <button class="fd-button fd-avatar-group__more-button fd-avatar-group__more-button--m fd-avatar-group__more-button--accent-color-6" role="button" tabindex="-1">
+            <button class="fd-button fd-avatar-group__more-button fd-avatar-group__more-button--m" role="button" tabindex="-1">
                 <bdi class="fd-button__text fd-avatar-group__button-text">+8</bdi>
             </button>
         </div>
     </div>
     
-    <div class="fd-popover__body" aria-hidden="false" id="popover_avatar-group_tztuj">
+    <div class="fd-popover__body" aria-hidden="false" id="popover_avatar-group_tztuj" style="width: 332px;">
         <div class="fd-popover__wrapper" style="max-height: 200px; overflow-x: hidden">
             <div class="fd-popover__body-header">
                 <div class="fd-bar fd-bar--header">
@@ -342,89 +331,61 @@ export const groupType = () => `<div class="fd-popover">
                 </div>
             </div>  
         
-            <div class="fd-container">
-                <div class="fd-row">
-                    <div class="fd-col fd-col--3">
-                        <div class="fd-avatar-group__item">
-                            <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Wendy Wallace">WW</span>
-                        </div>                    
-                    </div>
-                    <div class="fd-col fd-col--3">
-                        <div class="fd-avatar-group__item">
-                            <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Avatar">
-                                <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
-                            </span>
-                        </div>    
-                    </div>
-                    <div class="fd-col fd-col--3">
-                        <div class="fd-avatar-group__item">
-                            <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="presentation" aria-label="John Doe"></span>
-                        </div>    
-                    </div>
-                    <div class="fd-col fd-col--3">
-                        <div class="fd-avatar-group__item">
-                            <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Endy Wallace">EW</span>
-                        </div>    
-                    </div>
-                    <div class="fd-col fd-col--3">
-                        <div class="fd-avatar-group__item">
-                            <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Avatar">
-                                <i class="fd-avatar__icon sap-icon--washing-machine" role="presentation"></i>
-                            </span>
-                        </div>    
-                    </div>
-                    <div class="fd-col fd-col--3">
-                        <div class="fd-avatar-group__item">
-                            <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/2.svg')" role="presentation" aria-label="John Doe"></span>
-                        </div>    
-                    </div>
-                    
-                    <div class="fd-col fd-col--3">
-                        <div class="fd-avatar-group__item">
-                            <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Andy Wallace">AW</span>
-                        </div>    
-                    </div>
-                    <div class="fd-col fd-col--3">
-                        <div class="fd-avatar-group__item">
-                            <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Avatar">
-                                <i class="fd-avatar__icon sap-icon--account" role="presentation"></i>
-                            </span>
-                        </div>    
-                    </div>
-                    <div class="fd-col fd-col--3">
-                        <div class="fd-avatar-group__item">
-                            <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="presentation" aria-label="John Doe"></span>
-                        </div>    
-                    </div>
-                    <div class="fd-col fd-col--3">
-                        <div class="fd-avatar-group__item">
-                            <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="John Moe">JM</span>
-                        </div>    
-                    </div>
-                    <div class="fd-col fd-col--3">
-                        <div class="fd-avatar-group__item">
-                            <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Joe Bloggs">JB</span>
-                        </div>    
-                    </div>
-                    <div class="fd-col fd-col--3">
-                        <div class="fd-avatar-group__item">
-                            <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Avatar">
-                                <i class="fd-avatar__icon sap-icon--visits" role="presentation"></i>
-                            </span>
-                        </div>    
-                    </div>
-                    <div class="fd-col fd-col--3">
-                        <div class="fd-avatar-group__item">
-                            <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/4.svg')" role="presentation" aria-label="John Doe"></span>
-                        </div>    
-                    </div>
-                    <div class="fd-col fd-col--3">
-                        <div class="fd-avatar-group__item">
-                            <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Fred Bloggs">FB</span>
-                        </div>    
-                    </div>
+            <div class="fd-avatar-group__overflow-body"> 
+                <div class="fd-avatar-group__item">
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Wendy Wallace">WW</span>
+                </div>                    
+                <div class="fd-avatar-group__item">
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Avatar">
+                        <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
+                    </span>
+                </div>    
+                <div class="fd-avatar-group__item">
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="presentation" aria-label="John Doe"></span>
+                </div>    
+                <div class="fd-avatar-group__item">
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Endy Wallace">EW</span>
+                </div>    
+                <div class="fd-avatar-group__item">
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Avatar">
+                        <i class="fd-avatar__icon sap-icon--washing-machine" role="presentation"></i>
+                    </span>
+                </div>    
+                <div class="fd-avatar-group__item">
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/2.svg')" role="presentation" aria-label="John Doe"></span>
+                </div>    
+                <div class="fd-avatar-group__item">
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Andy Wallace">AW</span>
+                </div>    
+                <div class="fd-avatar-group__item">
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Avatar">
+                        <i class="fd-avatar__icon sap-icon--account" role="presentation"></i>
+                    </span>
+                </div>    
+                <div class="fd-avatar-group__item">
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="presentation" aria-label="John Doe"></span>
+                </div>    
+                <div class="fd-avatar-group__item">
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="John Moe">JM</span>
+                </div>    
+                <div class="fd-avatar-group__item">
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Joe Bloggs">JB</span>
+                </div>    
+                <div class="fd-avatar-group__item">
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Avatar">
+                        <i class="fd-avatar__icon sap-icon--visits" role="presentation"></i>
+                    </span>
+                </div>    
+                <div class="fd-avatar-group__item">
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/4.svg')" role="presentation" aria-label="John Doe"></span>
+                </div>    
+                <div class="fd-avatar-group__item">
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Fred Bloggs">FB</span>
                 </div>
-            </div>
+                <div class="fd-avatar-group__item">
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Jan Alleman">JA</span>
+                </div>
+            </div> 
         </div>
     </div>
 </div>

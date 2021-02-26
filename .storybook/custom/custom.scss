@@ -37,25 +37,41 @@ a[title='Open canvas in new tab'] {
 /** Avatar Group docs styling */
 [id*=story--components-avatar-group--] {
   min-height: 250px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 
   [id^="popover_avatar_"] {
     left: -136px;
+
+    [dir="rtl"] & {
+      right: -136px;
+    }
   }
 
   [id^="popover_avatar_more_"] {
     left: -100px;
+
+    [dir="rtl"] & {
+      right: -100px;
+    }
   }
 
   [id^="popover_avatar-group_"] {
-    left: -50px;
-    right: -50px;
+    left: -20px;
+
+    [dir="rtl"] & {
+      right: -20px;
+    }
   }
 
   .fd-popover__body {
     &::before,
     &::after {
       left: calc(50% - 8px);
+
+      [dir="rtl"] & {
+        right: calc(50% - 8px);
+      }
     }
   }
 }
