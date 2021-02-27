@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.6...v0.17.0-rc.7) (2021-02-27)
+
+
+### Bug Fixes
+
+* update object status large font-family [ci visual] ([#2168](https://github.com/SAP/fundamental-styles/issues/2168)) ([f9d4349](https://github.com/SAP/fundamental-styles/commit/f9d4349acd25682ce8d9906b5c28d683eca61c18))
+
 ## [0.17.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.5...v0.17.0-rc.6) (2021-02-27)
 
 ## [0.17.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.4...v0.17.0-rc.5) (2021-02-26)
