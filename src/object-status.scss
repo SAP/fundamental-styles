@@ -311,6 +311,10 @@ $inverted-color-accents: (
   &--large {
     font-size: $fd-object-status-icon-text-font-size-large;
 
+    .#{$block}__text {
+      font-family: var(--sapFontLightFamily);
+    }
+
     @include fd-object-status-icon-selector() {
       font-size: $fd-object-status-icon-text-font-size-large;
     }
