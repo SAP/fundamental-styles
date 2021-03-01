@@ -3720,7 +3720,7 @@ exports[`Storyshots Layouts/Dynamic Page With header facets (mobile) 1`] = `
                 
                                     
                 <span
-                  class="fd-object-status__text"
+                  class="fd-object-status__text fd-facet__object-status-text"
                 >
                   In Stock
                 </span>
@@ -4645,7 +4645,7 @@ exports[`Storyshots Layouts/Dynamic Page With header facets 1`] = `
               
                                 
               <span
-                class="fd-object-status__text"
+                class="fd-object-status__text fd-facet__object-status-text"
               >
                 Delivery
               </span>
@@ -4673,7 +4673,7 @@ exports[`Storyshots Layouts/Dynamic Page With header facets 1`] = `
             
                             
             <span
-              class="fd-object-status fd-object-status--large fd-facet__object-status fd-object-status--critical"
+              class="fd-object-status fd-object-status--large fd-object-status--critical fd-facet__object-status"
             >
               
                                 
@@ -4684,7 +4684,7 @@ exports[`Storyshots Layouts/Dynamic Page With header facets 1`] = `
               
                                 
               <span
-                class="fd-object-status__text"
+                class="fd-object-status__text fd-facet__object-status-text"
               >
                 12 days
               </span>
@@ -4717,7 +4717,7 @@ exports[`Storyshots Layouts/Dynamic Page With header facets 1`] = `
               
                                 
               <span
-                class="fd-object-status__text"
+                class="fd-object-status__text fd-facet__object-status-text"
               >
                 To be selected
               </span>

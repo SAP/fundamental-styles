@@ -165,7 +165,7 @@ exports[`Storyshots Dev/Facets Combination of facets 1`] = `
       
                 
       <span
-        class="fd-object-status__text"
+        class="fd-object-status__text fd-facet__object-status-text"
       >
         Delivery
       </span>
@@ -193,7 +193,7 @@ exports[`Storyshots Dev/Facets Combination of facets 1`] = `
     
             
     <span
-      class="fd-object-status fd-object-status--large fd-facet__object-status fd-object-status--critical"
+      class="fd-object-status fd-object-status--large fd-object-status--critical fd-facet__object-status"
     >
       
                 
@@ -204,7 +204,7 @@ exports[`Storyshots Dev/Facets Combination of facets 1`] = `
       
                 
       <span
-        class="fd-object-status__text"
+        class="fd-object-status__text fd-facet__object-status-text"
       >
         12 days
       </span>
@@ -237,7 +237,7 @@ exports[`Storyshots Dev/Facets Combination of facets 1`] = `
       
                 
       <span
-        class="fd-object-status__text"
+        class="fd-object-status__text fd-facet__object-status-text"
       >
         To be selected
       </span>
@@ -1035,7 +1035,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
               
                                 
               <span
-                class="fd-object-status__text"
+                class="fd-object-status__text fd-facet__object-status-text"
               >
                 Delivery
               </span>
@@ -1063,7 +1063,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
             
                             
             <span
-              class="fd-object-status fd-object-status--large fd-facet__object-status fd-object-status--critical"
+              class="fd-object-status fd-object-status--large fd-object-status--critical fd-facet__object-status"
             >
               
                                 
@@ -1074,7 +1074,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
               
                                 
               <span
-                class="fd-object-status__text"
+                class="fd-object-status__text fd-facet__object-status-text"
               >
                 12 days
               </span>
@@ -1107,7 +1107,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
               
                                 
               <span
-                class="fd-object-status__text"
+                class="fd-object-status__text fd-facet__object-status-text"
               >
                 To be selected
               </span>
@@ -2129,7 +2129,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                 
                                     
                 <span
-                  class="fd-object-status__text"
+                  class="fd-object-status__text fd-facet__object-status-text"
                 >
                   In Stock
                 </span>
@@ -2742,7 +2742,7 @@ exports[`Storyshots Dev/Facets Key-Value Facet 1`] = `
       
             
       <span
-        class="fd-object-status__text"
+        class="fd-object-status__text fd-facet__object-status-text"
       >
         Delivery
       </span>
@@ -2775,7 +2775,7 @@ exports[`Storyshots Dev/Facets Key-Value Facet 1`] = `
       
             
       <span
-        class="fd-object-status__text"
+        class="fd-object-status__text fd-facet__object-status-text"
       >
         12 days
       </span>
@@ -2808,7 +2808,7 @@ exports[`Storyshots Dev/Facets Key-Value Facet 1`] = `
       
             
       <span
-        class="fd-object-status__text"
+        class="fd-object-status__text fd-facet__object-status-text"
       >
         To be selected
       </span>

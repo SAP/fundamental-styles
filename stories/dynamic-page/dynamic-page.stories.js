@@ -1130,20 +1130,20 @@ export const withFacets = () =>
                         <div class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle9">
                             <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle9">Status</h1>
                             <span class="fd-object-status fd-object-status--positive fd-object-status--large fd-facet__object-status">
-                                <span class="fd-object-status__text">Delivery</span>
+                                <span class="fd-object-status__text fd-facet__object-status-text">Delivery</span>
                             </span>
                         </div>
                         <div class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle10">
                             <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle10">Delivery Time</h1>
-                            <span class="fd-object-status fd-object-status--large fd-facet__object-status fd-object-status--critical">
+                            <span class="fd-object-status fd-object-status--large fd-object-status--critical fd-facet__object-status">
                                 <i class="fd-object-status__icon sap-icon--shipping-status fd-padding--none fd-margin-end--tiny" role="presentation"></i>
-                                <span class="fd-object-status__text">12 days</span>
+                                <span class="fd-object-status__text fd-facet__object-status-text">12 days</span>
                             </span>
                         </div>
                         <div class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle11">
                             <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle11">Assembly Option </h1>
                             <span class="fd-object-status fd-object-status--negative fd-object-status--large fd-facet__object-status">
-                                <span class="fd-object-status__text">To be selected</span>
+                                <span class="fd-object-status__text fd-facet__object-status-text">To be selected</span>
                             </span>
                         </div>
                         <div class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle12">
@@ -1424,7 +1424,7 @@ export const withFacetsMobile = () =>
                             <div class="fd-facet fd-facet--key-value fd-margin-end--md  fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle13">
                                 <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle13">Availablity</h1>
                                 <span class="fd-object-status fd-object-status--positive fd-object-status--large fd-facet__object-status">
-                                    <span class="fd-object-status__text">In Stock</span>
+                                    <span class="fd-object-status__text fd-facet__object-status-text">In Stock</span>
                                 </span>
                             </div>
                             <div class="fd-facet fd-facet--key-value fd-margin-end--md  fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle14">
