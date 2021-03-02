@@ -197,6 +197,7 @@ $block: #{$fd-namespace}-dynamic-page;
 
   &__subtitle {
     @include fd-reset();
+    @include fd-ellipsis();
 
     color: var(--sapContent_LabelColor);
     font-size: var(--sapFontSize);
@@ -213,6 +214,12 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-rtl() {
       padding: 0 1rem 0 0;
     }
+  }
+
+  &__title-subtitle-container {
+    @include fd-reset();
+    @include fd-flex(column);
+    @include fd-ellipsis();
   }
 
   &__toolbar-container {
@@ -353,6 +360,10 @@ $block: #{$fd-namespace}-dynamic-page;
       .#{$block}__expand-button.#{$fd-namespace}-button,
       .#{$block}__collapse-button.#{$fd-namespace}-button {
         @include custom-button();
+
+        &[aria-hidden="true"] {
+          display: none;
+        }
       }
     }
 

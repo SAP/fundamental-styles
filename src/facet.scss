@@ -1,0 +1,71 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-facet;
+
+.#{$block} {
+  @include fd-reset();
+
+  &-group {
+    @include fd-reset();
+
+    @include fd-flex() {
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+  }
+
+  &--image {
+    @include fd-flex();
+
+    // when used in object/dynamic page header title, we need different alignment
+    &-header-title {
+      align-self: flex-end;
+    }
+  }
+
+  &--form {
+    @include fd-flex(column);
+  }
+
+  &--key-value {
+    .#{$block}__object-status {
+      .#{$block}__object-status-text {
+        font-family: var(--sapFontFamily);
+      }
+    }
+  }
+
+  &--rating-indicator {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .#{$block}__container {
+      flex-direction: column;
+    }
+
+    .#{$block}__rating-container {
+      align-self: flex-start;
+    }
+
+    .#{$block}__rating-dynamic-text {
+      align-self: flex-end;
+    }
+  }
+
+  &__container {
+    @include fd-reset();
+    @include fd-flex();
+  }
+
+  &__form-value {
+    @include fd-reset();
+
+    font-family: var(--sapFontFamily);
+    font-size: var(--sapFontSize);
+    font-weight: normal;
+    color: var(--sapGroup_TitleTextColor);
+  }
+}
