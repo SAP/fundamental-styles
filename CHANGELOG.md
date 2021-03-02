@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.11...v0.17.0-rc.12) (2021-03-02)
+
+
+### Features
+
+* introduce Facets- Form, Key-value, Image, and Rating Indicator ([#2077](https://github.com/SAP/fundamental-styles/issues/2077)) ([42a74cb](https://github.com/SAP/fundamental-styles/commit/42a74cb37c5c9f4c1abdb0579f00584bb77a7ac8))
+
 ## [0.17.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.10...v0.17.0-rc.11) (2021-03-02)
 
 ## [0.17.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.9...v0.17.0-rc.10) (2021-03-02)
