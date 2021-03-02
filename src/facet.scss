@@ -44,14 +44,14 @@ $block: #{$fd-namespace}-facet;
 
     .#{$block}__container {
       flex-direction: column;
+    }
 
-      .#{$block}__rating-container {
-        align-self: flex-start;
-      }
+    .#{$block}__rating-container {
+      align-self: flex-start;
+    }
 
-      .#{$block}__rating-dynamic-text {
-        align-self: flex-end;
-      }
+    .#{$block}__rating-dynamic-text {
+      align-self: flex-end;
     }
   }
 
