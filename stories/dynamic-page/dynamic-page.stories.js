@@ -1189,14 +1189,12 @@ export const withFacets = () =>
                                 aria-haspopup="true" 
                                 onclick="
                                         toggleElAttrs('fddplhvx6', ['aria-hidden']);
-                                        toggleElAttrs('expandBtn', ['aria-expanded']);
                                         toggleElAttrs('expandBtn', ['aria-hidden']);
-                                        toggleElAttrs('collapseBtn', ['aria-expanded']);
                                         toggleElAttrs('collapseBtn', ['aria-hidden']);
                                         toggleElAttrs('mainContainer', ['aria-hidden']);
                                         toggleElAttrs('mainImageContainer', ['aria-hidden']);
                                     "
-                                aria-controls="fddplhvx6">
+                                >
                                 <i class="sap-icon--slim-arrow-up"></i>
                         </button>
                         <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
@@ -1207,14 +1205,12 @@ export const withFacets = () =>
                                 aria-haspopup="true" 
                                 onclick="
                                         toggleElAttrs('fddplhvx6', ['aria-hidden']);
-                                        toggleElAttrs('collapseBtn', ['aria-expanded']);
                                         toggleElAttrs('collapseBtn', ['aria-hidden']);
-                                        toggleElAttrs('expandBtn', ['aria-expanded']);
                                         toggleElAttrs('expandBtn', ['aria-hidden']);
                                         toggleElAttrs('mainContainer', ['aria-hidden']);
                                         toggleElAttrs('mainImageContainer', ['aria-hidden']);
                                     "
-                                aria-controls="fddplhvx6">
+                                >
                                 <i class="sap-icon--slim-arrow-down"></i>
                         </button>
                         <button class="fd-dynamic-page__pin-button fd-button fd-button--compact" 
@@ -1453,7 +1449,7 @@ export const withFacetsMobile = () =>
                                         toggleElAttrs('mainContainerMobile', ['aria-hidden']);
                                         toggleElAttrs('mainImageContainerMobile', ['aria-hidden']);
                                     "
-                                aria-controls="fddplhvc7">
+                                >
                                 <i class="sap-icon--slim-arrow-up"></i>
                             </button>
                             <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
@@ -1471,7 +1467,7 @@ export const withFacetsMobile = () =>
                                         toggleElAttrs('mainContainerMobile', ['aria-hidden']);
                                         toggleElAttrs('mainImageContainerMobile', ['aria-hidden']);
                                     "
-                                aria-controls="fddplhvc7">
+                                >
                                 <i class="sap-icon--slim-arrow-down"></i>
                             </button>
                         </div>

@@ -1316,7 +1316,6 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
           
                         
           <button
-            aria-controls="fddplhvx6"
             aria-expanded="true"
             aria-haspopup="true"
             aria-hidden="false"
@@ -1344,7 +1343,6 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
           
                         
           <button
-            aria-controls="fddplhvx6"
             aria-expanded="false"
             aria-haspopup="true"
             aria-hidden="true"
@@ -2203,7 +2201,6 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
             
                             
             <button
-              aria-controls="fddplhvc7"
               aria-expanded="true"
               aria-haspopup="true"
               aria-hidden="false"
@@ -2231,7 +2228,6 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
             
                             
             <button
-              aria-controls="fddplhvc7"
               aria-expanded="false"
               aria-haspopup="true"
               aria-hidden="true"

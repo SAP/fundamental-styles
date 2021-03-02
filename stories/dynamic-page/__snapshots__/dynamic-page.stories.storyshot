@@ -3794,7 +3794,6 @@ exports[`Storyshots Layouts/Dynamic Page With header facets (mobile) 1`] = `
             
                             
             <button
-              aria-controls="fddplhvc7"
               aria-expanded="true"
               aria-haspopup="true"
               aria-hidden="false"
@@ -3822,7 +3821,6 @@ exports[`Storyshots Layouts/Dynamic Page With header facets (mobile) 1`] = `
             
                             
             <button
-              aria-controls="fddplhvc7"
               aria-expanded="false"
               aria-haspopup="true"
               aria-hidden="true"
@@ -4926,7 +4924,6 @@ exports[`Storyshots Layouts/Dynamic Page With header facets 1`] = `
           
                         
           <button
-            aria-controls="fddplhvx6"
             aria-expanded="true"
             aria-haspopup="true"
             aria-hidden="false"
@@ -4935,9 +4932,7 @@ exports[`Storyshots Layouts/Dynamic Page With header facets 1`] = `
             id="expandBtn"
             onclick="
                                         toggleElAttrs('fddplhvx6', ['aria-hidden']);
-                                        toggleElAttrs('expandBtn', ['aria-expanded']);
                                         toggleElAttrs('expandBtn', ['aria-hidden']);
-                                        toggleElAttrs('collapseBtn', ['aria-expanded']);
                                         toggleElAttrs('collapseBtn', ['aria-hidden']);
                                         toggleElAttrs('mainContainer', ['aria-hidden']);
                                         toggleElAttrs('mainImageContainer', ['aria-hidden']);
@@ -4954,7 +4949,6 @@ exports[`Storyshots Layouts/Dynamic Page With header facets 1`] = `
           
                         
           <button
-            aria-controls="fddplhvx6"
             aria-expanded="false"
             aria-haspopup="true"
             aria-hidden="true"
@@ -4963,9 +4957,7 @@ exports[`Storyshots Layouts/Dynamic Page With header facets 1`] = `
             id="collapseBtn"
             onclick="
                                         toggleElAttrs('fddplhvx6', ['aria-hidden']);
-                                        toggleElAttrs('collapseBtn', ['aria-expanded']);
                                         toggleElAttrs('collapseBtn', ['aria-hidden']);
-                                        toggleElAttrs('expandBtn', ['aria-expanded']);
                                         toggleElAttrs('expandBtn', ['aria-hidden']);
                                         toggleElAttrs('mainContainer', ['aria-hidden']);
                                         toggleElAttrs('mainImageContainer', ['aria-hidden']);

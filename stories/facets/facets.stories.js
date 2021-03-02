@@ -420,7 +420,7 @@ export const objectPage = () =>
                                         toggleElAttrs('mainContainer', ['aria-hidden']);
                                         toggleElAttrs('mainImageContainer', ['aria-hidden']);
                                     "
-                                aria-controls="fddplhvx6">
+                                >
                                 <i class="sap-icon--slim-arrow-up"></i>
                         </button>
                         <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
@@ -438,7 +438,7 @@ export const objectPage = () =>
                                         toggleElAttrs('mainContainer', ['aria-hidden']);
                                         toggleElAttrs('mainImageContainer', ['aria-hidden']);
                                     "
-                                aria-controls="fddplhvx6">
+                                >
                                 <i class="sap-icon--slim-arrow-down"></i>
                         </button>
                         <button class="fd-dynamic-page__pin-button fd-button fd-button--compact" 
@@ -694,7 +694,7 @@ export const objectPageMobile = () =>
                                         toggleElAttrs('mainContainerMobile', ['aria-hidden']);
                                         toggleElAttrs('mainImageContainerMobile', ['aria-hidden']);
                                     "
-                                aria-controls="fddplhvc7">
+                                >
                                 <i class="sap-icon--slim-arrow-up"></i>
                             </button>
                             <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
@@ -712,7 +712,7 @@ export const objectPageMobile = () =>
                                         toggleElAttrs('mainContainerMobile', ['aria-hidden']);
                                         toggleElAttrs('mainImageContainerMobile', ['aria-hidden']);
                                     "
-                                aria-controls="fddplhvc7">
+                                >
                                 <i class="sap-icon--slim-arrow-down"></i>
                             </button>
                         </div>
