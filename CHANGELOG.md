@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.12...v0.17.0-rc.13) (2021-03-03)
+
+
+### Bug Fixes
+
+* center message toast text [ci visual] ([#2176](https://github.com/SAP/fundamental-styles/issues/2176)) ([427cc7c](https://github.com/SAP/fundamental-styles/commit/427cc7caf3b234af230c06459472cb5abcbe99d1))
+
 ## [0.17.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.11...v0.17.0-rc.12) (2021-03-02)
 
 
