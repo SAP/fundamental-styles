@@ -4,7 +4,9 @@
 [![Build Status](https://travis-ci.com/SAP/fundamental-styles.svg?branch=main)](https://travis-ci.com/SAP/fundamental-styles)
 [![Slack](https://img.shields.io/badge/slack-ui--fundamentals-blue.svg?logo=slack)](https://join.slack.com/t/ui-fundamentals/shared_invite/enQtNTIzOTU0Mzc2NTc5LWQzZWI5MWFhYjE5OTc4YzliN2JhOTc1ZjQxZTg1YjZiMWZiYzRkNjMwYzgyMmFkYmNhZDVjMWE5MDIzOWEzMmM)
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP/fundamental-styles)](https://api.reuse.software/info/github.com/SAP/fundamental-styles)
-[![Storybook](https://raw.githubusercontent.com/storybookjs/brand/main/badge/badge-storybook.svg)](https://main--5f85e3904b19d600221872af.chromatic.com)
+<a href="https://storybook.js.org/">
+  <img src="https://raw.githubusercontent.com/storybookjs/brand/master/badge/badge-storybook.svg" />
+</a>
 
 <a href="https://www.netlify.com">
   <img src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Deploys by Netlify" />
