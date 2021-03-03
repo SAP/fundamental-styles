@@ -715,7 +715,7 @@ Shellbar can be displayed with a product switch component, indicating to the use
 export const sideNav = () => `<div style="height:600px">
     <div class="fd-shellbar fd-shellbar--side-nav">
         <div class="fd-shellbar__group fd-shellbar__group--product">
-            <button class="fd-button fd-button--transparent fd-shellbar__button fd-shellbar__side-nav-control">
+            <button class="fd-button fd-button--transparent fd-shellbar__button fd-shellbar__side-nav-control" aria-label="Side Nav control button">
                 <i class="sap-icon--menu2"></i>
             </button>
             <span class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP"></span>
