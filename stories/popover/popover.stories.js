@@ -302,6 +302,7 @@ export const variants = () => `<div class="fddocs-container">
                 aria-hidden="false"
                 class="fd-popover__body fd-popover__body--no-arrow"
                 id="popoverHSF3"
+                aria-label="Dialog Data 1"
                 role="dialog">
                 <header class="fd-popover__body-header">
                     <div class="fd-bar fd-bar--header-with-subheader">
@@ -377,6 +378,7 @@ export const variants = () => `<div class="fddocs-container">
                 aria-hidden="false"
                 class="fd-popover__body fd-popover__body--no-arrow"
                 id="popoverHSF345"
+                aria-label="Dialog data"
                 role="dialog">
                 <header class="fd-popover__body-header">
                     <div class="fd-bar fd-bar--cozy fd-bar--header-with-subheader">

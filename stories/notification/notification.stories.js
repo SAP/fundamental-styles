@@ -251,7 +251,7 @@ export const notificationGroup = () => `<div class="fd-notification fd-notificat
             </div>
         </div>
         <div class="fd-notification__body">
-            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" role="presentation" aria-label="John Doe">JD</span>
+            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" role="presentation">JD</span>
             <div class="fd-notification__content">
                 <div class="fd-notification__header">
                     <div class="fd-notification__indicator fd-notification__indicator--warning"></div>
@@ -537,7 +537,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                 </div>
             </div>
             <div class="fd-notification__body">
-                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" role="presentation" aria-label="John Doe">JD</span>
+                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" role="presentation">JD</span>
                 <div class="fd-notification__content">
                     <div class="fd-notification__header">
                         <div class="fd-notification__indicator fd-notification__indicator--warning"></div>
@@ -636,7 +636,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                 </div>
             </div>
             <div class="fd-notification__body">
-                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" role="presentation" aria-label="John Doe">JD</span>
+                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" role="presentation">JD</span>
                 <div class="fd-notification__content">
                     <div class="fd-notification__header">
                         <div class="fd-notification__indicator fd-notification__indicator--warning"></div>
@@ -735,7 +735,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                 </div>
             </div>
             <div class="fd-notification__body">
-                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" role="presentation" aria-label="John Doe">JD</span>
+                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" role="presentation">JD</span>
                 <div class="fd-notification__content">
                     <div class="fd-notification__header">
                         <div class="fd-notification__indicator fd-notification__indicator--warning"></div>

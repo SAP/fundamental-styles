@@ -916,6 +916,7 @@ exports[`Storyshots Components/Popover Body variants 1`] = `
             
       <section
         aria-hidden="false"
+        aria-label="Dialog Data 1"
         class="fd-popover__body fd-popover__body--no-arrow"
         id="popoverHSF3"
         role="dialog"
@@ -1172,6 +1173,7 @@ exports[`Storyshots Components/Popover Body variants 1`] = `
             
       <section
         aria-hidden="false"
+        aria-label="Dialog data"
         class="fd-popover__body fd-popover__body--no-arrow"
         id="popoverHSF345"
         role="dialog"

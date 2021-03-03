@@ -694,7 +694,6 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
           
                 
           <span
-            aria-label="John Doe"
             class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
             role="presentation"
           >
@@ -1169,7 +1168,6 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
           
                 
           <span
-            aria-label="John Doe"
             class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
             role="presentation"
           >
@@ -1644,7 +1642,6 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
           
                 
           <span
-            aria-label="John Doe"
             class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
             role="presentation"
           >
@@ -2343,7 +2340,6 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
       
             
       <span
-        aria-label="John Doe"
         class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
         role="presentation"
       >

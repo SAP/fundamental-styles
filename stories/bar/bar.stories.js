@@ -72,7 +72,7 @@ export const Default = () => `
         <span
             class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
             style="background-image: url('/assets/images/avatars/1.svg')"
-            role="presentation" aria-label="John Doe"></span>
+            role="presentation"></span>
         </div>
         <div class="fd-bar__element">
             <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
@@ -113,7 +113,7 @@ export const Default = () => `
         <span
             class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
             style="background-image: url('/assets/images/avatars/1.svg')"
-            role="presentation" aria-label="John Doe"></span>
+            role="presentation"></span>
         </div>
         <div class="fd-bar__element">
             <button aria-label="button" class="fd-button fd-button--transparent">
@@ -169,7 +169,7 @@ export const Cozy = () => `<div class="fd-bar fd-bar--cozy">
             <span
                 class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
                 style="background-image: url('/assets/images/avatars/1.svg')"
-                role="presentation" aria-label="John Doe"></span>
+                role="presentation"></span>
             </div>
         </div>
         <div class="fd-bar__element">
@@ -229,7 +229,7 @@ export const Header = () => `
             <span
                 class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
                 style="background-image: url('/assets/images/avatars/1.svg')"
-                role="presentation" aria-label="John Doe"></span>
+                role="presentation"></span>
             </div>
         </div>
         <div class="fd-bar__element">
@@ -280,7 +280,7 @@ export const Header = () => `
             <span
                 class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
                 style="background-image: url('/assets/images/avatars/1.svg')"
-                role="presentation" aria-label="John Doe"></span>
+                role="presentation"></span>
             </div>
         </div>
         <div class="fd-bar__element">
@@ -321,7 +321,7 @@ export const Subheader = () => `
             <span
                 class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
                 style="background-image: url('/assets/images/avatars/1.svg')"
-                role="presentation" aria-label="John Doe"></span>
+                role="presentation"></span>
             </div>
         </div>
         <div class="fd-bar__element">
@@ -414,7 +414,7 @@ export const HeaderWithSubheader = () => `
             <span
                 class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
                 style="background-image: url('/assets/images/avatars/1.svg')"
-                role="presentation" aria-label="John Doe"></span>
+                role="presentation"></span>
         </div>
         </div>
         <div class="fd-bar__element">

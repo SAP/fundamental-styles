@@ -858,8 +858,8 @@ exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
           
                         
           <span
-            aria-label="John Doe"
             class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
+            role="presentation"
             style="background-image: url('/assets/images/backgrounds/city.jpg')"
           />
           
@@ -1402,8 +1402,8 @@ exports[`Storyshots Layouts/Resizable Card Layout Resizable card layout 1`] = `
           
                         
           <span
-            aria-label="John Doe"
             class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
+            role="presentation"
             style="background-image: url('/assets/images/avatars/1.svg')"
           />
           

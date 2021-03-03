@@ -940,6 +940,7 @@ exports[`Storyshots Components/Select Blank 1`] = `
               
                         
               <li
+                aria-label="item"
                 aria-selected="true"
                 class="fd-list__item is-selected"
                 id="blankSelectComboboxComp-currentlyFocusedItem"
