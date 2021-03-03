@@ -2339,6 +2339,7 @@ exports[`Storyshots Components/Shellbar Side Navigation 1`] = `
       
             
       <button
+        aria-label="Side Nav control button"
         class="fd-button fd-button--transparent fd-shellbar__button fd-shellbar__side-nav-control"
       >
         
