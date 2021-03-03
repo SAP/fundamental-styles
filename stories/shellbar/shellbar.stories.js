@@ -711,3 +711,59 @@ Shellbar can be displayed with a product switch component, indicating to the use
     `
     }
 };
+
+export const sideNav = () => `<div style="height:600px">
+    <div class="fd-shellbar fd-shellbar--side-nav">
+        <div class="fd-shellbar__group fd-shellbar__group--product">
+            <button class="fd-button fd-button--transparent fd-shellbar__button fd-shellbar__side-nav-control">
+                <i class="sap-icon--menu2"></i>
+            </button>
+            <span class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP"></span>
+            <span class="fd-shellbar__title">Corporate Portal</span>
+        </div>
+        <div class="fd-shellbar__group fd-shellbar__group--actions">
+            <div class="fd-shellbar__action">
+                <div class="fd-popover fd-popover--right">
+                    <div class="fd-popover__control">
+                        <div class="fd-button fd-shellbar__button fd-user-menu__control"
+                             onclick="onPopoverClick('MKFAY276')" aria-controls="MKFAY276" aria-expanded="false"
+                             aria-haspopup="true" role="button">
+                            <span
+                                class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle"
+                                style="background-image: url('assets/images/avatars/1.svg');"
+                                aria-label="William Wallingham">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true"
+                         id="MKFAY276">
+                        <nav class="fd-menu">
+                            <ul class="fd-menu__list fd-menu__list--no-shadow">
+                                <li class="fd-menu__item">
+                                    <a role="button" class="fd-menu__link">
+                                        <span class="fd-menu__title">Settings</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a role="button" class="fd-menu__link">
+                                        <span class="fd-menu__title">Sign Out</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+`;
+
+sideNav.storyName = 'Side Navigation';
+
+sideNav.parameters = {
+    docs: {
+        storyDescription: `Apply the <code>fd-shellbar--side-nav</code> modifier class to <code>fd-shellbar</code> when the Shellbar contains Side Navigation control. The button that is controlling the state of the Side Navigation (expanded, condensed, off-screen) has \`fd-shellbar__side-nav-control\` modifier class applied on it, together with \`fd-shellbar__button\` class. The Shellbar used with Side Navigation can also be optimised for different screens by appling <code>fd-shellbar--m</code>, <code>fd-shellbar--l</code> or <code>fd-shellbar--xl</code> modifier classes. In this case the responsive padding will only be applied on the right-hand side of the Shellbar.
+    `
+    }
+};
