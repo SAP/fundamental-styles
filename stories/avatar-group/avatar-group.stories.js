@@ -144,7 +144,7 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
     <div class="fd-popover">
         <div class="fd-popover__control">
             <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false" onclick="onPopoverClick('popover_avatar_4ahzcg');">
-               <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="presentation" aria-label="Christian Bow"></span>
+               <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="presentation" ></span>
             </div>
         </div>
         <div class="fd-popover__body" aria-hidden="true" id="popover_avatar_4ahzcg">
@@ -158,7 +158,7 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
                 <div class="fd-quick-view__content">
                     <div class="fd-bar fd-bar--header-with-subheader">
                         <div class="fd-bar__left">
-                            <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="presentation" aria-label="Christian Bow"></span>
+                            <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="presentation" ></span>
                             <div class="fd-quick-view__subheader-text">
                                 <h5 class="fd-title fd-title--h5">Christian Bow</h5>
                                 <div class="fd-quick-view__subtitle">Marketing Manager</div>

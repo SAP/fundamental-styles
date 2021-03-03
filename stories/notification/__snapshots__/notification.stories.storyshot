@@ -44,7 +44,6 @@ exports[`Storyshots Components/Notifications Error 1`] = `
     
         
     <span
-      aria-label="John Doe"
       class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
       role="presentation"
       style="background-image: url('/assets/images/avatars/3.svg')"
@@ -187,7 +186,6 @@ exports[`Storyshots Components/Notifications Information 1`] = `
     
         
     <span
-      aria-label="John Doe"
       class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
       role="presentation"
       style="background-image: url('/assets/images/avatars/3.svg')"
@@ -299,7 +297,6 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
         
         
         <span
-          aria-label="John Doe"
           class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
           role="presentation"
           style="background-image: url('/assets/images/avatars/3.svg')"
@@ -905,7 +902,6 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
           
                 
           <span
-            aria-label="John Doe"
             class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
             role="presentation"
             style="background-image: url('/assets/images/avatars/3.svg')"
@@ -1381,7 +1377,6 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
           
                 
           <span
-            aria-label="John Doe"
             class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
             role="presentation"
             style="background-image: url('/assets/images/avatars/3.svg')"
@@ -1857,7 +1852,6 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
           
                 
           <span
-            aria-label="John Doe"
             class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
             role="presentation"
             style="background-image: url('/assets/images/avatars/3.svg')"
@@ -2569,7 +2563,6 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
       
             
       <span
-        aria-label="John Doe"
         class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
         role="presentation"
         style="background-image: url('/assets/images/avatars/3.svg')"
@@ -2677,7 +2670,6 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
       
             
       <span
-        aria-label="John Doe"
         class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
         role="presentation"
         style="background-image: url('/assets/images/avatars/3.svg')"
@@ -2897,7 +2889,6 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
       
             
       <span
-        aria-label="John Doe"
         class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
         role="presentation"
         style="background-image: url('/assets/images/avatars/3.svg')"
@@ -3096,7 +3087,6 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
       
             
       <span
-        aria-label="John Doe"
         class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
         role="presentation"
         style="background-image: url('/assets/images/avatars/3.svg')"
@@ -3216,7 +3206,6 @@ exports[`Storyshots Components/Notifications Primary 1`] = `
     
         
     <span
-      aria-label="John Doe"
       class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
       role="presentation"
       style="background-image: url('/assets/images/avatars/3.svg')"
@@ -3364,7 +3353,6 @@ exports[`Storyshots Components/Notifications Warning 1`] = `
     
        
     <span
-      aria-label="John Doe"
       class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
       role="presentation"
       style="background-image: url('/assets/images/avatars/3.svg')"

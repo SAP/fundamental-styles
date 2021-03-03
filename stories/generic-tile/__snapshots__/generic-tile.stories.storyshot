@@ -75,7 +75,6 @@ exports[`Storyshots Components/Generic Tiles Action mode 1`] = `
       
             
       <span
-        aria-label="Profile Image"
         class="fd-tile__profile-img"
         role="presentation"
         style="background-image: url('assets/images/avatars/profile_image.png')"
@@ -172,7 +171,6 @@ exports[`Storyshots Components/Generic Tiles Action mode 1`] = `
       
             
       <span
-        aria-label="Profile Image"
         class="fd-tile__profile-img"
         role="presentation"
         style="background-image: url('assets/images/avatars/profile_image.png')"
@@ -539,7 +537,6 @@ exports[`Storyshots Components/Generic Tiles Badge tile 1`] = `
       
             
       <span
-        aria-label="Profile Image"
         class="fd-tile__profile-img"
         role="presentation"
         style="background-image: url('assets/images/avatars/profile_image.png')"
@@ -609,7 +606,6 @@ exports[`Storyshots Components/Generic Tiles Badge tile 1`] = `
       
             
       <span
-        aria-label="Profile Image"
         class="fd-tile__profile-img"
         role="presentation"
         style="background-image: url('assets/images/avatars/profile_image.png')"
@@ -2531,7 +2527,6 @@ exports[`Storyshots Components/Generic Tiles Launch tile 1`] = `
         
             
         <span
-          aria-label="Profile Image"
           class="fd-tile__profile-img"
           role="presentation"
           style="background-image: url('assets/images/avatars/profile_image.png')"
@@ -2594,7 +2589,6 @@ exports[`Storyshots Components/Generic Tiles Launch tile 1`] = `
         
             
         <span
-          aria-label="Profile Image"
           class="fd-tile__profile-img"
           role="presentation"
           style="background-image: url('assets/images/avatars/profile_image.png')"

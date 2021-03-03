@@ -162,7 +162,6 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
   
 
   <span
-    aria-label="John Doe"
     class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
     role="presentation"
     style="background-image: url('/assets/images/avatars/1.svg')"
@@ -170,7 +169,6 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
   
 
   <span
-    aria-label="John Doe"
     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail"
     role="presentation"
     style="background-image: url('/assets/images/avatars/2.svg')"
@@ -178,7 +176,6 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
   
 
   <span
-    aria-label="John Doe"
     class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--thumbnail"
     role="presentation"
     style="background-image: url('/assets/images/avatars/3.svg')"
@@ -186,7 +183,6 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
   
 
   <span
-    aria-label="John Doe"
     class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--thumbnail"
     role="presentation"
     style="background-image: url('/assets/images/avatars/4.svg')"
@@ -194,7 +190,6 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
   
 
   <span
-    aria-label="John Doe"
     class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail"
     role="presentation"
     style="background-image: url('/assets/images/avatars/5.svg')"
