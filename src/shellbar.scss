@@ -239,7 +239,7 @@ $block: #{$fd-namespace}-shellbar;
 
     @include fd-focus() {
       @include buttonFocus() {
-        border-color: var(--sapContent_ContrastFocusColor);
+        outline-color: var(--sapContent_ContrastFocusColor);
       }
     }
 
@@ -349,5 +349,34 @@ $block: #{$fd-namespace}-shellbar;
     .#{$block}__title {
       display: inline-block;
     }
+  }
+
+  &--side-nav {
+    padding: 0 1rem 0 0;
+
+    @include fd-rtl() {
+      padding: 0 0 0 1rem;
+    }
+
+    &.#{$block}--m,
+    &.#{$block}--l {
+      padding: 0 2rem 0 0;
+
+      @include fd-rtl() {
+        padding: 0 0 0 2rem;
+      }
+    }
+
+    &.#{$block}--xl {
+      padding: 0 3rem 0 0;
+
+      @include fd-rtl() {
+        padding: 0 0 0 3rem;
+      }
+    }
+  }
+
+  &__side-nav-control {
+    margin: 0 0.25rem;
   }
 }

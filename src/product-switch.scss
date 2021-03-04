@@ -1,6 +1,7 @@
 @import "./new-settings";
 @import "./mixins";
 @import "./drag-and-drop";
+@import "./mixins/button/button-helper";
 
 /*!
 .fd-product-switch
@@ -54,6 +55,12 @@ $block: #{$fd-namespace}-product-switch;
     @include fd-active-pressed-selected() {
       color: var(--sapShell_Active_TextColor);
       background-color: var(--sapShell_Active_Background);
+    }
+
+    @include fd-focus() {
+      @include buttonFocus() {
+        outline-color: var(--sapContent_ContrastFocusColor);
+      }
     }
   }
 
