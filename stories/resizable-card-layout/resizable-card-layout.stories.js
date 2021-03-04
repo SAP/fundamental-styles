@@ -186,7 +186,8 @@ export const resizeCardLayout = () =>
                     <a class="fd-card__header" tabindex="0">
                         <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
                               style="background-image: url('/assets/images/avatars/1.svg')"
-                              role="presentation"></span>
+                              role="img"
+                              aria-label="John Doe"></span>
                         <div class="fd-card__header-text">
                         <div class="fd-card__title-area">
                             <div class="fd-card__title">Card Title</div>

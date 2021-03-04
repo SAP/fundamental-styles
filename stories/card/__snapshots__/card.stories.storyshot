@@ -902,8 +902,9 @@ exports[`Storyshots Components/Card Object card 1`] = `
         
                 
         <span
+          aria-label="John Doe"
           class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
-          role="presentation"
+          role="img"
           style="background-image: url('/assets/images/avatars/1.svg')"
         />
         
@@ -1173,8 +1174,9 @@ exports[`Storyshots Components/Card Object card 1`] = `
         
                 
         <span
+          aria-label="John Doe"
           class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
-          role="presentation"
+          role="img"
           style="background-image: url('/assets/images/avatars/1.svg')"
         />
         
@@ -1507,8 +1509,9 @@ exports[`Storyshots Components/Card Standard card 1`] = `
         
                 
         <span
+          aria-label="John Doe"
           class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
-          role="presentation"
+          role="img"
           style="background-image: url('/assets/images/backgrounds/city.jpg')"
         />
         
@@ -1600,8 +1603,9 @@ exports[`Storyshots Components/Card Standard card 1`] = `
         
                 
         <span
+          aria-label="John Doe"
           class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
-          role="presentation"
+          role="img"
           style="background-image: url('/assets/images/backgrounds/city.jpg')"
         />
         
@@ -1679,8 +1683,9 @@ exports[`Storyshots Components/Card Standard card 1`] = `
         
                 
         <span
+          aria-label="John Doe"
           class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
-          role="presentation"
+          role="img"
           style="background-image: url('/assets/images/backgrounds/city.jpg')"
         />
         
@@ -1765,8 +1770,9 @@ exports[`Storyshots Components/Card Standard card 1`] = `
         
                 
         <span
+          aria-label="John Doe"
           class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
-          role="presentation"
+          role="img"
           style="background-image: url('/assets/images/backgrounds/city.jpg')"
         />
         

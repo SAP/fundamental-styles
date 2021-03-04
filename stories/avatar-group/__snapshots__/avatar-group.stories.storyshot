@@ -67,8 +67,9 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
         
                 
         <span
+          aria-label="John Doe"
           class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
-          role="presentation"
+          role="img"
           style="background-image: url('/assets/images/avatars/1.svg')"
         />
         
@@ -121,8 +122,9 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
         
                 
         <span
+          aria-label="John Doe"
           class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
-          role="presentation"
+          role="img"
           style="background-image: url('/assets/images/avatars/2.svg')"
         />
         
@@ -251,8 +253,9 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                     
           <span
+            aria-label="John Doe"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
-            role="presentation"
+            role="img"
             style="background-image: url('/assets/images/avatars/1.svg')"
           />
           
@@ -305,8 +308,9 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                     
           <span
+            aria-label="John Doe"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
-            role="presentation"
+            role="img"
             style="background-image: url('/assets/images/avatars/2.svg')"
           />
           
@@ -359,8 +363,9 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                     
           <span
+            aria-label="John Doe"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
-            role="presentation"
+            role="img"
             style="background-image: url('/assets/images/avatars/3.svg')"
           />
           
@@ -429,8 +434,9 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                     
           <span
+            aria-label="John Doe"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
-            role="presentation"
+            role="img"
             style="background-image: url('/assets/images/avatars/4.svg')"
           />
           
@@ -969,12 +975,11 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
         
                
         <span
+          aria-label="Christian Bow"
           class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
-          role="presentation"
+          role="img"
           style="background-image: url('/assets/images/avatars/1.svg')"
         />
-        
-            
       </div>
       
         
@@ -1033,8 +1038,9 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
               
                             
               <span
+                aria-label="Christian Bow"
                 class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
-                role="presentation"
+                role="img"
                 style="background-image: url('/assets/images/avatars/1.svg')"
               />
               
@@ -1523,7 +1529,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
             <span
               aria-label="John Doe"
               class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
-              role="presentation"
+              role="img"
               style="background-image: url('/assets/images/avatars/2.svg')"
             />
             

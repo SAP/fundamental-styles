@@ -40,7 +40,8 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
                     style="background-image: url('/assets/images/backgrounds/city.jpg')" 
-                    role="presentation"></span>
+                    role="img"
+                    aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Card Title</div>
@@ -61,7 +62,8 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
                     style="background-image: url('/assets/images/backgrounds/city.jpg')" 
-                    role="presentation"></span>
+                    role="img"
+                    aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Card Title</div>
@@ -80,7 +82,8 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
                     style="background-image: url('/assets/images/backgrounds/city.jpg')" 
-                    role="presentation"></span>
+                    role="img"
+                    aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Card Title With a Very Long Text ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
@@ -100,7 +103,8 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
                     style="background-image: url('/assets/images/backgrounds/city.jpg')" 
-                    role="presentation"></span>
+                    role="img"
+                    aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Card Title</div>
@@ -567,7 +571,8 @@ export const objectCard = () => `<div style="display:flex; justify-content:space
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
                     style="background-image: url('/assets/images/avatars/1.svg')" 
-                    role="presentation"></span>
+                    role="img"
+                    aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Card Title</div>
@@ -630,7 +635,8 @@ export const objectCard = () => `<div style="display:flex; justify-content:space
                 <span 
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
                     style="background-image: url('/assets/images/avatars/1.svg')" 
-                    role="presentation"></span>
+                    role="img"
+                    aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
                         <div class="fd-card__title">Card Title</div>
