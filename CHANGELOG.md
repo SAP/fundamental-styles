@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.14...v0.17.0-rc.15) (2021-03-04)
+
+
+### Bug Fixes
+
+* add alignment and focus related fixes for Shellbar ([#2179](https://github.com/SAP/fundamental-styles/issues/2179)) ([657329a](https://github.com/SAP/fundamental-styles/commit/657329a6f77af2473a174e4523620293207e2aa3))
+
 ## [0.17.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.13...v0.17.0-rc.14) (2021-03-03)
 
 ## [0.17.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.12...v0.17.0-rc.13) (2021-03-03)
