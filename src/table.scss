@@ -305,6 +305,12 @@ $block: #{$fd-namespace}-table;
     }
 
     &--activable {
+      @include fd-active() {
+        * {
+          color: var(--sapList_Active_TextColor) !important;
+        }
+      }
+
       @include fd-trigger-element();
 
       @include fd-selected() {

@@ -61,7 +61,10 @@ In these cases, use the **Tree** instead.
             'multi-input',
             'checkbox',
             'select',
-            'menu'
+            'menu',
+            'text',
+            'object-number',
+            'object-marker'
         ]
     }
 };
@@ -390,14 +393,28 @@ export const interactive = () => `
     <tbody class="fd-table__body">
         <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable">
             <td class="fd-table__cell">Clicking on any Cell</td>
-            <td class="fd-table__cell">On This Row</td>
-            <td class="fd-table__cell">Will cause</td>
-            <td class="fd-table__cell">Highlight of Whole Row</td>
+            <td class="fd-table__cell"><p class="fd-text">On This Row will cause</p></td>
+            <td class="fd-table__cell">
+                <span class="fd-object-number fd-object-number--negative">
+                    <span class="fd-object-number__text">-2,000.00</span><span class="fd-object-number__unit">EUR</span>
+                </span>
+            </td>
+            <td class="fd-table__cell">
+                <span class="fd-object-status fd-object-status--negative">
+                    <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
+                    <span class="fd-object-status__text">Highlight of Whole Row</span>
+                </span>
+            </td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--activable">Clicking On Cell</td>
-            <td class="fd-table__cell fd-table__cell--activable">Will cause</td>
+            <td class="fd-table__cell fd-table__cell--activable">
+                <a class="fd-object-marker fd-object-marker--link">
+                    <i class="fd-object-marker__icon sap-icon--private" role="presentation"></i>
+                    <span class="fd-object-marker__text">Will cause</span>
+                </a>
+            </td>
             <td class="fd-table__cell fd-table__cell--activable">Highlight of cell</td>
             <td class="fd-table__cell fd-table__cell--activable">Last Name</td>
             <td class="fd-table__cell fd-table__cell--activable">01/26/17</td>
@@ -461,8 +478,8 @@ export const semanticRows = () => `
                 <label class="fd-checkbox__label" for="Ai9ek611"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell"><p class="fd-text">First Name</p></td>
+            <td class="fd-table__cell"><p class="fd-text">Last Name</p></td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
