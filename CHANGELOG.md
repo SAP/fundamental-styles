@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.15...v0.17.0-rc.16) (2021-03-06)
+
+
+### Bug Fixes
+
+* components in active table rows ([#2186](https://github.com/SAP/fundamental-styles/issues/2186)) ([c6e9d52](https://github.com/SAP/fundamental-styles/commit/c6e9d522aa77cb3baee040e5b8544847bd4e2040))
+
 ## [0.17.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.14...v0.17.0-rc.15) (2021-03-04)
 
 
