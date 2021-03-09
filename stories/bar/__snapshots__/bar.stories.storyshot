@@ -162,7 +162,7 @@ exports[`Storyshots Components/Bar Cozy 1`] = `
       <span
         aria-label="John Doe"
         class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
-        role="presentation"
+        role="img"
         style="background-image: url('/assets/images/avatars/1.svg')"
       />
       
@@ -341,7 +341,7 @@ exports[`Storyshots Components/Bar Default 1`] = `
         <span
           aria-label="John Doe"
           class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
-          role="presentation"
+          role="img"
           style="background-image: url('/assets/images/avatars/1.svg')"
         />
         
@@ -516,7 +516,7 @@ exports[`Storyshots Components/Bar Default 1`] = `
         <span
           aria-label="John Doe"
           class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
-          role="presentation"
+          role="img"
           style="background-image: url('/assets/images/avatars/1.svg')"
         />
         
@@ -1004,7 +1004,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
         <span
           aria-label="John Doe"
           class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
-          role="presentation"
+          role="img"
           style="background-image: url('/assets/images/avatars/1.svg')"
         />
         
@@ -1216,7 +1216,7 @@ exports[`Storyshots Components/Bar Header 1`] = `
         <span
           aria-label="John Doe"
           class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
-          role="presentation"
+          role="img"
           style="background-image: url('/assets/images/avatars/1.svg')"
         />
         
@@ -1431,7 +1431,7 @@ exports[`Storyshots Components/Bar Header With Subheader 1`] = `
         <span
           aria-label="John Doe"
           class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
-          role="presentation"
+          role="img"
           style="background-image: url('/assets/images/avatars/1.svg')"
         />
         
@@ -1589,7 +1589,7 @@ exports[`Storyshots Components/Bar Subheader 1`] = `
         <span
           aria-label="John Doe"
           class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
-          role="presentation"
+          role="img"
           style="background-image: url('/assets/images/avatars/1.svg')"
         />
         

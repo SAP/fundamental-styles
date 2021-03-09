@@ -75,7 +75,7 @@ export const resizeCardLayout = () =>
                         <span
                             class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
                             style="background-image: url('/assets/images/backgrounds/city.jpg')"
-                            aria-label="John Doe"></span>
+                            role="presentation"></span>
                         <div class="fd-card__header-text">
                             <div class="fd-card__title-area">
                                 <div class="fd-card__title">Card Title</div>
@@ -184,10 +184,10 @@ export const resizeCardLayout = () =>
             <div class="fd-resizable-card-layout__card">
                 <div class="fd-card fd-card--object" role="region" aria-label="Object Card Example 1">
                     <a class="fd-card__header" tabindex="0">
-                        <span
-                                    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
-                                    style="background-image: url('/assets/images/avatars/1.svg')"
-                                    aria-label="John Doe"></span>
+                        <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
+                              style="background-image: url('/assets/images/avatars/1.svg')"
+                              role="img"
+                              aria-label="John Doe"></span>
                         <div class="fd-card__header-text">
                         <div class="fd-card__title-area">
                             <div class="fd-card__title">Card Title</div>

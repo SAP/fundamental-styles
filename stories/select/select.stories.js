@@ -1191,7 +1191,7 @@ export const blank = () => `<div style="height: 250px">
                         aria-labelledby="h45336F4" class="fd-list fd-list--dropdown fd-list--compact" role="listbox">
                         <li
                             id="blankSelectComboboxComp-currentlyFocusedItem"
-                            class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
+                            class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0" aria-label="item">
                             <span class="fd-list__title"/>
                         </li>
                         <li class="fd-list__item" role="option" tabindex="-1">

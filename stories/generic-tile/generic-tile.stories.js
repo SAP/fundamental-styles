@@ -326,7 +326,7 @@ export const launchTile = () => `<h4>Launch tile with numeric content and launch
             <div class="fd-tile__subtitle">Subtitle</div>
         </div>
         <div class="fd-tile__content">
-            <span class="fd-tile__profile-img" style="background-image: url('assets/images/avatars/profile_image.png')" role="presentation" aria-label="Profile Image"></span>
+            <span class="fd-tile__profile-img" style="background-image: url('assets/images/avatars/profile_image.png')" role="img" aria-label="Profile Image"></span>
         </div>
         <div class="fd-tile__footer">
             <span class="fd-tile__footer-text">Footer</span>
@@ -338,7 +338,7 @@ export const launchTile = () => `<h4>Launch tile with numeric content and launch
             <div class="fd-tile__subtitle">Subtitle</div>
         </div>
         <div class="fd-tile__content">
-            <span class="fd-tile__profile-img" style="background-image: url('assets/images/avatars/profile_image.png')" role="presentation" aria-label="Profile Image"></span>
+            <span class="fd-tile__profile-img" style="background-image: url('assets/images/avatars/profile_image.png')" role="img" aria-label="Profile Image"></span>
         </div>
         <div class="fd-tile__footer">
             <span class="fd-tile__footer-text">Unit, Notification</span>
@@ -614,7 +614,7 @@ export const badgeTile = () => `<div class="fddocs-container">
             <div class="fd-tile__subtitle">Subtitle</div>
         </div>
         <div class="fd-tile__content">
-            <span class="fd-tile__profile-img" style="background-image: url('assets/images/avatars/profile_image.png')" role="presentation" aria-label="Profile Image"></span>
+            <span class="fd-tile__profile-img" style="background-image: url('assets/images/avatars/profile_image.png')" role="img" aria-label="Profile Image"></span>
         </div>
         <div class="fd-tile__footer">
             <span class="fd-tile__footer-text">Footer</span>
@@ -627,7 +627,7 @@ export const badgeTile = () => `<div class="fddocs-container">
             <div class="fd-tile__subtitle">Subtitle</div>
         </div>
         <div class="fd-tile__content">
-            <span class="fd-tile__profile-img" style="background-image: url('assets/images/avatars/profile_image.png')" role="presentation" aria-label="Profile Image"></span>
+            <span class="fd-tile__profile-img" style="background-image: url('assets/images/avatars/profile_image.png')" role="img" aria-label="Profile Image"></span>
         </div>
         <div class="fd-tile__footer">
             <span class="fd-tile__footer-text">Unit, Notification</span>
@@ -1275,7 +1275,7 @@ export const tileInActionMode = () => `<div class="fddocs-container">
             <div class="fd-tile__subtitle">Subtitle</div>
         </div>
         <div class="fd-tile__content">
-            <span class="fd-tile__profile-img" style="background-image: url('assets/images/avatars/profile_image.png')" role="presentation" aria-label="Profile Image"></span>
+            <span class="fd-tile__profile-img" style="background-image: url('assets/images/avatars/profile_image.png')" role="img" aria-label="Profile Image"></span>
         </div>
         <div class="fd-tile__footer">
             <span class="fd-tile__footer-text">Footer Text</span>
@@ -1293,7 +1293,7 @@ export const tileInActionMode = () => `<div class="fddocs-container">
             <div class="fd-tile__subtitle">Subtitle</div>
         </div>
         <div class="fd-tile__content">
-            <span class="fd-tile__profile-img" style="background-image: url('assets/images/avatars/profile_image.png')" role="presentation" aria-label="Profile Image"></span>
+            <span class="fd-tile__profile-img" style="background-image: url('assets/images/avatars/profile_image.png')" role="img" aria-label="Profile Image"></span>
         </div>
         <div class="fd-tile__footer">
             <span class="fd-tile__footer-text">Unit, Notification</span>
