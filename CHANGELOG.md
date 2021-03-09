@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.17...v0.17.0-rc.18) (2021-03-09)
+
+
+### Bug Fixes
+
+* add fix for button cutting on hover for Flexible Column Layout ([#2189](https://github.com/SAP/fundamental-styles/issues/2189)) ([1a0d95e](https://github.com/SAP/fundamental-styles/commit/1a0d95e5d491fc1cac389d989632c6093ff73cdc))
+
 ## [0.17.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.16...v0.17.0-rc.17) (2021-03-07)
 
 ## [0.17.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.15...v0.17.0-rc.16) (2021-03-06)
