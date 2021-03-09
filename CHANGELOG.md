@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.18...v0.17.0-rc.19) (2021-03-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* update role attributes for avatar, generic tile and popover
+
+### Bug Fixes
+
+* migrate storybook to v.6.1.21 [ci visual] ([#2169](https://github.com/SAP/fundamental-styles/issues/2169)) ([f5c5cc9](https://github.com/SAP/fundamental-styles/commit/f5c5cc939ec86105e4ceceaa666b9db9bda71933))
+
 ## [0.17.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.17...v0.17.0-rc.18) (2021-03-09)
 
 
