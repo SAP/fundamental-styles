@@ -149,7 +149,7 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-reset();
 
     @include fd-flex() {
-      align-items: baseline;
+      align-items: center;
     }
   }
 
@@ -179,7 +179,6 @@ $block: #{$fd-namespace}-dynamic-page;
 
     color: var(--sapGroup_TitleTextColor);
     font-size: var(--sapFontHeader3Size);
-    padding: 0.3125rem 0 0 0;
 
     @include fd-ellipsis();
 
@@ -398,12 +397,8 @@ $block: #{$fd-namespace}-dynamic-page;
       padding: 0;
     }
 
-    .#{$block}__title {
-      padding: 0.6875rem 0 0 0;
-    }
-
     .#{$block}__title-container {
-      align-items: flex-start;
+      align-items: center;
     }
 
     .#{$block}__toolbar {
@@ -437,9 +432,6 @@ $block: #{$fd-namespace}-dynamic-page;
   }
 
   &--md {
-    .#{$block}__title {
-      padding: 0.6875rem 0 0 0;
-    }
 
     .#{$block}__breadcrumb-container {
       align-items: flex-end;
