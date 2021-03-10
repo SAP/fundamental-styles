@@ -42,6 +42,7 @@ $block: #{$fd-namespace}-tabs;
     }
 
     .#{$block}__link {
+      background: none;
       .#{$block}__tag {
         color: $color;
       }
@@ -106,6 +107,7 @@ $block: #{$fd-namespace}-tabs;
     @include fd-reset();
     @include action-cursor();
 
+    background: none;
     transition: 0s;
     display: block;
     position: relative;

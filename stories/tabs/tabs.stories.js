@@ -44,25 +44,25 @@ These modifier classes are used to display horizontal padding for tabs in variou
 export const primary = () => `
 <ul class="fd-tabs" role="tablist">
     <li role="tab" class="fd-tabs__item" aria-controls="fuCwV550">
-        <a class="fd-tabs__link" href="#fuCwV550">
+        <button class="fd-tabs__link" href="#fuCwV550">
             <span class="fd-tabs__tag">
                 Link
             </span>
-        </a>
+        </button>
     </li>
     <li role="tab" class="fd-tabs__item" aria-selected="true" aria-controls="AiWfz165">
-        <a class="fd-tabs__link" href="#AiWfz165">
+        <button class="fd-tabs__link" href="#AiWfz165">
             <span class="fd-tabs__tag">
                 Selected
             </span>
-        </a>
+        </button>
     </li>
     <li role="tab" class="fd-tabs__item" aria-controls="7ae0T849">
-        <a class="fd-tabs__link" href="#7ae0T849">
+        <button class="fd-tabs__link" href="#7ae0T849">
             <span class="fd-tabs__tag">
                 Link
             </span>
-        </a>
+        </button>
     </li>
     <button class="fd-button fd-button--transparent fd-tabs__overflow" aria-label="See More">
         <i class="sap-icon--slim-arrow-down" role="presentation"></i>
