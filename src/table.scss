@@ -130,6 +130,7 @@ $block: #{$fd-namespace}-table;
     height: $fd-table-cozy-cell-height;
     padding: 0 $fd-table-cell-padding;
     color: inherit;
+    word-break: break-all;
     border-right: $fd-table-border;
 
     &--valid {
@@ -146,6 +147,10 @@ $block: #{$fd-namespace}-table;
 
     &--information {
       color: var(--sapInformationColor);
+    }
+
+    &--no-data {
+      text-align: center;
     }
 
     &--checkbox {
@@ -486,6 +491,21 @@ $block: #{$fd-namespace}-table;
       .#{$block}__row {
         .#{$block}__cell {
           border-right: none;
+        }
+      }
+    }
+  }
+
+  &--responsive {
+    .#{$block}__body,
+    .#{$block}__header {
+      border: none;
+    }
+
+    .#{$block}-table__row {
+      @include fd-last-child() {
+        .#{$block}-table__cell {
+          border-bottom: none;
         }
       }
     }
