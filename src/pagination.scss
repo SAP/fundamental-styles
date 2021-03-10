@@ -77,7 +77,7 @@ $block: #{$fd-namespace}-pagination;
       padding-right: $fd-pagination-padding-x;
 
       @include fd-disabled() {
-        color: var(--sapContent_DisabledTextColor);
+        color: var(--sapField_PlaceholderTextColor);
       }
     }
 
