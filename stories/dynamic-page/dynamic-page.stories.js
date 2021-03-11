@@ -136,19 +136,19 @@ export const desktop = () => `
             </div>
             <div class="fd-dynamic-page__tabs--overflow">
                 <ul class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--xl fd-dynamic-page__tabs--add-shadow" role="tablist">
-                    <li role="tab" class="fd-tabs__item">
-                        <a class="fd-tabs__link" aria-controls="fuCwV550" href="#fuCwV550">
+                    <li role="tab" class="fd-tabs__item"  aria-controls="fuCwV550">
+                        <button class="fd-tabs__link">
                             <span class="fd-tabs__tag">
                                 Link
                             </span>
-                        </a>
+                        </button>
                     </li>
-                    <li role="tab" class="fd-tabs__item" aria-selected="true">
-                        <a class="fd-tabs__link" aria-controls="AiWfz165" href="#AiWfz165">
+                    <li role="tab" class="fd-tabs__item" aria-controls="AiWfz165" aria-selected="true">
+                        <button class="fd-tabs__link" >
                             <span class="fd-tabs__tag">
                                 Selected
                             </span>
-                        </a>
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -293,18 +293,18 @@ export const tablet = () => `
             <div class="fd-dynamic-page__tabs--overflow">
                 <ul class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--md fd-dynamic-page__tabs--add-shadow" role="tablist">
                     <li role="tab" class="fd-tabs__item" aria-controls="fuCwV551" >
-                        <a class="fd-tabs__link" href="#fuCwV551">
+                        <button class="fd-tabs__link">
                             <span class="fd-tabs__tag">
                                 Link
                             </span>
-                        </a>
+                        </button>
                     </li>
                     <li role="tab" class="fd-tabs__item" aria-selected="true" aria-controls="AiWfz166">
-                        <a class="fd-tabs__link" href="#AiWfz166">
+                        <button class="fd-tabs__link">
                             <span class="fd-tabs__tag">
                                 Selected
                             </span>
-                        </a>
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -478,18 +478,18 @@ export const mobile = () =>
                 <div class="fd-dynamic-page__tabs--overflow">
                     <ul class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--sm fd-dynamic-page__tabs--add-shadow" role="tablist">
                         <li class="fd-tabs__item" aria-controls="fuCwV552" role="tab">
-                            <a class="fd-tabs__link" href="#fuCwV552">
+                            <button class="fd-tabs__link">
                                 <span class="fd-tabs__tag">
                                     Link
                                 </span>
-                            </a>
+                            </button>
                         </li>
-                        <li class="fd-tabs__item" aria-selected="true" role="tab">
-                            <a class="fd-tabs__link" aria-controls="AiWfz167" href="#AiWfz167">
+                        <li class="fd-tabs__item" aria-selected="true"  aria-controls="AiWfz167" role="tab">
+                            <button class="fd-tabs__link">
                                 <span class="fd-tabs__tag">
                                     Selected
                                 </span>
-                            </a>
+                            </button>
                         </li>
                     </ul>  
                 </div>
@@ -647,18 +647,18 @@ export const mobileCollapsed = () =>
                 <div class="fd-dynamic-page__tabs--overflow">
                     <ul class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--sm fd-dynamic-page__tabs--add-shadow" role="tablist">
                         <li role="tab" class="fd-tabs__item">
-                            <a class="fd-tabs__link" aria-controls="fuCwV553" href="#fuCwV553">
+                            <button class="fd-tabs__link" aria-controls="fuCwV553">
                                 <span class="fd-tabs__tag">
                                     Link
                                 </span>
-                            </a>
+                            </button>
                         </li>
                         <li role="tab" class="fd-tabs__item" aria-selected="true">
-                            <a class="fd-tabs__link" aria-controls="AiWfz168" href="#AiWfz168">
+                            <button class="fd-tabs__link" aria-controls="AiWfz168">
                                 <span class="fd-tabs__tag">
                                     Selected
                                 </span>
-                            </a>
+                            </button>
                         </li>
                     </ul>   
                 </div>
@@ -766,19 +766,19 @@ export const summaryLine = () =>
                 </div>
                 <div class="fd-dynamic-page__tabs--overflow">
                     <ul class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--sm fd-dynamic-page__tabs--add-shadow" role="tablist">
-                        <li role="tab" class="fd-tabs__item">
-                            <a class="fd-tabs__link" aria-controls="fuCwV554" href="#fuCwV554">
+                        <li role="tab" class="fd-tabs__item" aria-controls="fuCwV554">
+                            <button class="fd-tabs__link">
                                 <span class="fd-tabs__tag">
                                     Link
                                 </span>
-                            </a>
+                            </button>
                         </li>
-                        <li role="tab" class="fd-tabs__item" aria-selected="true">
-                            <a class="fd-tabs__link" aria-controls="AiWfz169" href="#AiWfz169">
+                        <li role="tab" class="fd-tabs__item" aria-controls="AiWfz169" aria-selected="true">
+                            <button class="fd-tabs__link" >
                                 <span class="fd-tabs__tag">
                                     Selected
                                 </span>
-                            </a>
+                            </button>
                         </li>
                     </ul>  
                 </div>

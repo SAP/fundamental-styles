@@ -2,105 +2,105 @@
 
 exports[`Storyshots Components/Counter Notification 1`] = `
 <section>
-  
+
 
   <button
     aria-label="Notifications"
     class="fd-button fd-button--transparent"
   >
-    
-    
+
+
     <i
       class="sap-icon--bell"
     />
-    
-    
+
+
     <span
       aria-label="Unread count"
       class="fd-counter fd-counter--notification"
     >
       1
     </span>
-    
+
 
   </button>
-  
+
 
 
   <button
     aria-label="Notifications"
     class="fd-button fd-button--transparent"
   >
-    
-    
+
+
     <i
       class="sap-icon--bell"
     />
-    
-    
+
+
     <span
       aria-label="Unread count"
       class="fd-counter fd-counter--notification"
     >
       20
     </span>
-    
+
 
   </button>
-  
+
 
 
   <button
     aria-label="Notifications"
     class="fd-button fd-button--transparent"
   >
-    
-    
+
+
     <i
       class="sap-icon--bell"
     />
-    
-    
+
+
     <span
       aria-label="Unread count"
       class="fd-counter fd-counter--notification"
     >
       300
     </span>
-    
+
 
   </button>
-  
+
 
 
   <button
     aria-label="Notifications"
     class="fd-button fd-button--transparent"
   >
-    
-    
+
+
     <i
       class="sap-icon--bell"
     />
-    
-    
+
+
     <span
       aria-label="Unread count"
       class="fd-counter fd-counter--notification"
     >
       999+
     </span>
-    
+
 
   </button>
-  
+
 
 </section>
 `;
 
 exports[`Storyshots Components/Counter Standalone 1`] = `
 <section>
-  
+
 
   <span
     aria-label="Unread count"
@@ -108,7 +108,7 @@ exports[`Storyshots Components/Counter Standalone 1`] = `
   >
     5
   </span>
-  
+
 
   <span
     aria-label="Unread count"
@@ -116,7 +116,7 @@ exports[`Storyshots Components/Counter Standalone 1`] = `
   >
     25
   </span>
-  
+
 
   <span
     aria-label="Unread count"
@@ -124,7 +124,7 @@ exports[`Storyshots Components/Counter Standalone 1`] = `
   >
     101
   </span>
-  
+
 
   <span
     aria-label="Unread count"
@@ -132,7 +132,7 @@ exports[`Storyshots Components/Counter Standalone 1`] = `
   >
     999+
   </span>
-  
+
 
 </section>
 `;
@@ -142,104 +142,102 @@ exports[`Storyshots Components/Counter Tabs 1`] = `
   class="fd-tabs"
   role="tablist"
 >
-  
-    
+
+
   <li
     class="fd-tabs__item"
     role="tab"
   >
-    
-        
-    <a
+
+
+    <button
       class="fd-tabs__link"
-      href="#AvcVC566"
     >
       Link
-        
+
       <span
         aria-label="Unread count"
         class="fd-counter"
       >
         25
       </span>
-    </a>
-    
-    
+    </button>
+
+
   </li>
-  
-    
+
+
   <li
     aria-selected="true"
     class="fd-tabs__item"
     role="tab"
   >
-    
-        
-    <a
+
+
+    <button
       class="fd-tabs__link"
-      href="#5mxO9110"
     >
-      
-            
+
+
       <span
         class="fd-tabs__tag"
       >
         Selected
       </span>
-      
-        
-    </a>
-    
-    
+
+
+    </button>
+
+
   </li>
-  
-    
+
+
   <li
     class="fd-tabs__item"
     role="tab"
   >
-    
-        
-    <a
+
+
+    <button
       class="fd-tabs__link"
       href="#r0pk3445"
     >
       Link
-    </a>
-    
-    
+    </button>
+
+
   </li>
-  
-    
+
+
   <li
     aria-disabled="true"
     class="fd-tabs__item"
     role="tab"
   >
-    
-        
-    <a
+
+
+    <button
       class="fd-tabs__link"
     >
       Disabled
-    </a>
-    
-    
+    </button>
+
+
   </li>
-  
+
 
 </ul>
 `;
 
 exports[`Storyshots Components/Counter Text 1`] = `
 <p>
-  Lorem ipsum 
+  Lorem ipsum
   <span
     aria-label="Unread count"
     class="fd-counter"
   >
     5
   </span>
-   
+
 </p>
 `;

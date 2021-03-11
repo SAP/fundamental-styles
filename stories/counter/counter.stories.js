@@ -33,19 +33,19 @@ paragraph.parameters = {
 
 export const tabs = () => `<ul class="fd-tabs" role="tablist">
     <li class="fd-tabs__item" role="tab">
-        <a class="fd-tabs__link" href="#AvcVC566">Link
-        <span class="fd-counter" aria-label="Unread count">25</span></a>
+        <button class="fd-tabs__link" >Link
+        <span class="fd-counter" aria-label="Unread count">25</span></button>
     </li>
     <li class="fd-tabs__item" role="tab" aria-selected="true">
-        <a class="fd-tabs__link" href="#5mxO9110">
+        <button class="fd-tabs__link" >
             <span class="fd-tabs__tag">Selected</span>
-        </a>
+        </button>
     </li>
     <li class="fd-tabs__item" role="tab">
-        <a class="fd-tabs__link" href="#r0pk3445">Link</a>
+        <button class="fd-tabs__link" href="#r0pk3445">Link</button>
     </li>
     <li class="fd-tabs__item" role="tab" aria-disabled="true">
-        <a class="fd-tabs__link">Disabled</a>
+        <button class="fd-tabs__link">Disabled</button>
     </li>
 </ul>
 `;

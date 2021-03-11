@@ -202,34 +202,31 @@ Notifications can display error alerts by adding the <code>fd-message-strip fd-m
 export const notificationGroup = () => `<div class="fd-notification fd-notification--group">
     <ul class="fd-tabs fd-tabs--l fd-notification--tabs" role="tablist">
         <li role="tab" class="fd-tabs__item" aria-selected="true">
-            <a 
+            <button 
                 class="fd-tabs__link"
-                aria-controls="notifV550"
-                href="#notifV550">
+                aria-controls="notifV550">
                 <span class="fd-tabs__tag">
                     By Date
                 </span>
-            </a>
+            </button>
         </li>
         <li role="tab" class="fd-tabs__item">
-            <a 
+            <button 
                 aria-controls="notifV551" 
-                class="fd-tabs__link" 
-                href="#notifV551">
+                class="fd-tabs__link">
                 <span class="fd-tabs__tag">
                     By Type
                 </span>
-            </a>
+            </button>
         </li>
         <li role="tab" class="fd-tabs__item">
-            <a
+            <button
                 aria-controls="notifV552"
-                class="fd-tabs__link" 
-                href="#notifV552">
+                class="fd-tabs__link">
                 <span class="fd-tabs__tag">
                     By Priority
                 </span>
-            </a>
+            </button>
         </li>
     </ul>
     <div class="fd-tabs__panel" aria-expanded="true" id="notifV550" role="tabpanel">
@@ -489,34 +486,31 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
     <div class="fd-notification fd-notification--mobile fd-notification--group">
         <ul class="fd-tabs fd-tabs--l fd-notification--tabs" role="tablist">
             <li role="tab" aria-selected="true" class="fd-tabs__item">
-                <a 
+                <button 
                     class="fd-tabs__link" 
-                    aria-controls="notifP300" 
-                    href="#notifP300">
+                    aria-controls="notifP300">
                     <span class="fd-tabs__tag">
                         By Date
                     </span>
-                </a>
+                </button>
             </li>
             <li role="tab" class="fd-tabs__item">
-                <a 
+                <button 
                     class="fd-tabs__link" 
-                    aria-controls="notifP301" 
-                    href="#notifP301">
+                    aria-controls="notifP301">
                     <span class="fd-tabs__tag">
                         By Type
                     </span>
-                </a>
+                </button>
             </li>
             <li role="tab" class="fd-tabs__item">
-                <a 
+                <button
                     class="fd-tabs__link"
-                    aria-controls="notifP302" 
-                    href="#notifP302">
+                    aria-controls="notifP302">
                     <span class="fd-tabs__tag">
                         By Priority
                     </span>
-                </a>
+                </button>
             </li>
         </ul>
         <div class="fd-tabs__panel" aria-expanded="true" id="notifP300" role="tabpanel">

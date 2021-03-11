@@ -98,6 +98,7 @@ $block: #{$fd-namespace}-tabs;
   &__count {
     @include fd-reset();
 
+    text-align: left;
     line-height: 1rem;
     padding-bottom: 0.125rem;
     color: $fd-tabs-label-color;
