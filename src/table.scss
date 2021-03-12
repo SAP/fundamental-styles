@@ -125,8 +125,6 @@ $block: #{$fd-namespace}-table;
   }
 
   &__text {
-    @include fd-reset();
-
     word-break: break-all;
     white-space: nowrap;
     overflow: hidden;
