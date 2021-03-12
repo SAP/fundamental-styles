@@ -7393,16 +7393,16 @@ exports[`Storyshots Components/Table Primary 1`] = `
           
                 
           <div
-            class="fd-table__text"
+            class="fd-table__text fd-table__text--no-wrap"
             style="max-width: 250px"
           >
             
-                    Very long Text, limited by max-width
-                    Very long Text, limited by max-width
-                    Very long Text, limited by max-width
-                    Very long Text, limited by max-width
-                    Very long Text, limited by max-width
-                    Very long Text, limited by max-width
+                    Very long Text Not Wrapped, limited by max-width
+                    Very long Text Not Wrapped, limited by max-width
+                    Very long Text Not Wrapped, limited by max-width
+                    Very long Text Not Wrapped, limited by max-width
+                    Very long Text Not Wrapped, limited by max-width
+                    Very long Text Not Wrapped, limited by max-width
                 
           </div>
           
@@ -7456,10 +7456,11 @@ exports[`Storyshots Components/Table Primary 1`] = `
           
                 
           <div
-            class="fd-table__text fd-table__text--wrap"
+            class="fd-table__text"
             style="max-width: 250px"
           >
             
+                    Very long Text Wrapped, limited by max-width
                     Very long Text Wrapped, limited by max-width
                     Very long Text Wrapped, limited by max-width
                     Very long Text Wrapped, limited by max-width

@@ -125,13 +125,12 @@ $block: #{$fd-namespace}-table;
   }
 
   &__text {
-    word-break: break-all;
-    white-space: nowrap;
+    word-break: break-word;
     overflow: hidden;
     text-overflow: ellipsis;
 
-    &--wrap {
-      white-space: normal;
+    &--no-wrap {
+      white-space: nowrap;
     }
   }
 
