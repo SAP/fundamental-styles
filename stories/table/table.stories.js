@@ -87,14 +87,29 @@ export const primary = () => `
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">
+                <div class="fd-table__text" style="max-width: 250px">
+                    Very long Text, limited by max-width
+                    Very long Text, limited by max-width
+                    Very long Text, limited by max-width
+                    Very long Text, limited by max-width
+                    Very long Text, limited by max-width
+                    Very long Text, limited by max-width
+                </div>
+            </td>
             <td class="fd-table__cell">Middle Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">
+                <div class="fd-table__text fd-table__text--wrap" style="max-width: 250px">
+                    Very long Text Wrapped, limited by max-width
+                    Very long Text Wrapped, limited by max-width
+                    Very long Text Wrapped, limited by max-width
+                </div>
+            </td>
             <td class="fd-table__cell">Middle Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>

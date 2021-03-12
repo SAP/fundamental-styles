@@ -7390,7 +7390,23 @@ exports[`Storyshots Components/Table Primary 1`] = `
         <td
           class="fd-table__cell"
         >
-          First Name
+          
+                
+          <div
+            class="fd-table__text"
+            style="max-width: 250px"
+          >
+            
+                    Very long Text, limited by max-width
+                    Very long Text, limited by max-width
+                    Very long Text, limited by max-width
+                    Very long Text, limited by max-width
+                    Very long Text, limited by max-width
+                    Very long Text, limited by max-width
+                
+          </div>
+          
+            
         </td>
         
             
@@ -7437,7 +7453,20 @@ exports[`Storyshots Components/Table Primary 1`] = `
         <td
           class="fd-table__cell"
         >
-          First Name
+          
+                
+          <div
+            class="fd-table__text fd-table__text--wrap"
+            style="max-width: 250px"
+          >
+            
+                    Very long Text Wrapped, limited by max-width
+                    Very long Text Wrapped, limited by max-width
+                    Very long Text Wrapped, limited by max-width
+                
+          </div>
+          
+            
         </td>
         
             

@@ -124,13 +124,25 @@ $block: #{$fd-namespace}-table;
     }
   }
 
+  &__text {
+    @include fd-reset();
+
+    word-break: break-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &--wrap {
+      white-space: normal;
+    }
+  }
+
   &__cell {
     text-align: left;
     text-shadow: var(--sapContent_TextShadow);
     height: $fd-table-cozy-cell-height;
     padding: 0 $fd-table-cell-padding;
     color: inherit;
-    word-break: break-all;
     border-right: $fd-table-border;
 
     &--valid {
@@ -502,9 +514,9 @@ $block: #{$fd-namespace}-table;
       border: none;
     }
 
-    .#{$block}-table__row {
+    .#{$block}__row {
       @include fd-last-child() {
-        .#{$block}-table__cell {
+        .#{$block}__cell {
           border-bottom: none;
         }
       }
