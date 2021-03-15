@@ -124,6 +124,19 @@ $block: #{$fd-namespace}-table;
     }
   }
 
+  &__text {
+    @include fd-ellipsis();
+
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+
+    &--no-wrap {
+      white-space: nowrap;
+    }
+  }
+
   &__cell {
     text-align: left;
     text-shadow: var(--sapContent_TextShadow);
@@ -146,6 +159,10 @@ $block: #{$fd-namespace}-table;
 
     &--information {
       color: var(--sapInformationColor);
+    }
+
+    &--no-data {
+      text-align: center;
     }
 
     &--checkbox {
@@ -486,6 +503,21 @@ $block: #{$fd-namespace}-table;
       .#{$block}__row {
         .#{$block}__cell {
           border-right: none;
+        }
+      }
+    }
+  }
+
+  &--responsive {
+    .#{$block}__body,
+    .#{$block}__header {
+      border: none;
+    }
+
+    .#{$block}__row {
+      @include fd-last-child() {
+        .#{$block}__cell {
+          border-bottom: none;
         }
       }
     }

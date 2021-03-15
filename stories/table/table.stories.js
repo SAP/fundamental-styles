@@ -87,14 +87,30 @@ export const primary = () => `
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">
+                <div class="fd-table__text fd-table__text--no-wrap" style="max-width: 250px">
+                    Very long Text Not Wrapped, limited by max-width
+                    Very long Text Not Wrapped, limited by max-width
+                    Very long Text Not Wrapped, limited by max-width
+                    Very long Text Not Wrapped, limited by max-width
+                    Very long Text Not Wrapped, limited by max-width
+                    Very long Text Not Wrapped, limited by max-width
+                </div>
+            </td>
             <td class="fd-table__cell">Middle Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">
+                <div class="fd-table__text" style="max-width: 250px">
+                    Very long Text Wrapped, limited by max-width
+                    Very long Text Wrapped, limited by max-width
+                    Very long Text Wrapped, limited by max-width
+                    Very long Text Wrapped, limited by max-width
+                </div>
+            </td>
             <td class="fd-table__cell">Middle Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -1482,7 +1498,7 @@ export const navIcon = () => `
     <h4>Responsive Table - row navigation</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
-<table class="fd-table fd-table--no-horizontal-borders">
+<table class="fd-table fd-table--responsive fd-table--no-horizontal-borders">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
             <th class="fd-table__cell" scope="col">Name</th>
@@ -1539,7 +1555,7 @@ export const navIcon = () => `
     <h4>Table - icon button for navigation</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
-<table class="fd-table">
+<table class="fd-table ">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
             <th class="fd-table__cell" scope="col">Name</th>
@@ -1688,7 +1704,7 @@ export const responsiveTable = () => `
     <h4 style="margin: 0;">Responsive Table</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
-<table class="fd-table fd-table--no-horizontal-borders">
+<table class="fd-table fd-table--responsive fd-table--no-horizontal-borders">
     <thead class="fd-table__header">
         <tr class="fd-table__row">
             <th class="fd-table__cell fd-table__cell--checkbox">
@@ -1761,7 +1777,7 @@ responsiveTable.storyName = 'Responsive Table';
 responsiveTable.parameters = {
     docs: {
         storyDescription: `
-The desktop responsive table markup is exactly the same as the regular table.
+The desktop responsive table should contain \`fd-table--responsive\` modifier.
     `
     }
 };
@@ -1772,7 +1788,7 @@ export const responsiveTablePopInMode = () => `
         <h4 style="margin: 0;">Responsive Table - Pop-in mode</h4>
         <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
     </div>
-    <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in">
+    <table class="fd-table fd-table--responsive fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in">
         <tbody class="fd-table__body">
             <tr class="fd-table__row fd-table__row--main fd-table__row--activable fd-table__row--hoverable">
                 <td class="fd-table__cell">
@@ -1835,7 +1851,7 @@ export const responsiveTablePopInMode = () => `
         <h4 style="margin: 0;">Responsive Table - Pop-in Mode with Checkboxes and Navigation Indicator</h4>
         <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
     </div>
-    <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in">
+    <table class="fd-table fd-table--responsive fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in">
         <tbody class="fd-table__body">
             <tr class="fd-table__row fd-table__row--main">
                 <td class="fd-table__cell fd-table__cell--checkbox">
@@ -2208,6 +2224,49 @@ Grid tables can contain various input elements inside of cells, such as checkbox
 
 ####Accessibility
 Information about the table such as a title, summary, and/or keyboard navigation instructions should be provided in captions for screen readers. To caption table information, use the \`fd-table__caption\` class.        
+    `
+    }
+};
+
+export const noDataTable = () => `
+      <table class="fd-table">
+         <thead class="fd-table__header">
+            <tr class="fd-table__row">
+               <th class="fd-table__cell" scope="col">
+                    Header Column
+               </th>
+               <th class="fd-table__cell" scope="col">
+                    Header Column
+               </th>
+               <th class="fd-table__cell" scope="col">
+                    Header Column
+               </th>
+               <th class="fd-table__cell" scope="col">
+                    Header Column
+               </th>
+               <th class="fd-table__cell" scope="col">
+                    Header Column
+               </th>
+               <th class="fd-table__cell" scope="col">
+                    Header Column
+               </th>
+            </tr>
+         </thead>
+         <tbody class="fd-table__body">
+            <tr class="fd-table__row">
+                <td colspan="100%" class="fd-table__cell fd-table__cell--no-data">No Items Found!</td>
+            </tr>
+         </tbody>
+      </table>
+    </div>
+</div>
+`;
+
+noDataTable.storyName = 'Table without data';
+noDataTable.parameters = {
+    docs: {
+        storyDescription: `
+Table can indicate that there is no data to display.
     `
     }
 };
