@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.23...v0.17.0-rc.24) (2021-03-15)
+
+
+### Features
+
+* Add no-data, remove borders from responsive mode ([#2192](https://github.com/SAP/fundamental-styles/issues/2192)) ([c2ad842](https://github.com/SAP/fundamental-styles/commit/c2ad842204b5945fc532c8a2bea2775f102bbeba))
+
 ## [0.17.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.22...v0.17.0-rc.23) (2021-03-15)
 
 ## [0.17.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.21...v0.17.0-rc.22) (2021-03-13)
