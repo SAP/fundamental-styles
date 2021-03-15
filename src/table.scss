@@ -128,8 +128,6 @@ $block: #{$fd-namespace}-table;
     @include fd-ellipsis();
 
     word-break: break-word;
-    overflow: hidden;
-    text-overflow: ellipsis;
     white-space: normal;
 
     &--no-wrap {
