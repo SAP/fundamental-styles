@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.24...v0.17.0-rc.25) (2021-03-16)
+
+
+### Bug Fixes
+
+* Remove unnecessary code form table.scss [ci visual] ([#2199](https://github.com/SAP/fundamental-styles/issues/2199)) ([a08960d](https://github.com/SAP/fundamental-styles/commit/a08960d717c7b7ef93f7b5ada67d63963393c846))
+
 ## [0.17.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.23...v0.17.0-rc.24) (2021-03-15)
 
 
