@@ -75,10 +75,6 @@ $block: #{$fd-namespace}-pagination;
       font-size: var(--sapFontSize);
       padding-left: $fd-pagination-padding-x;
       padding-right: $fd-pagination-padding-x;
-
-      @include fd-disabled() {
-        color: var(--sapField_PlaceholderTextColor);
-      }
     }
 
     &--previous {
