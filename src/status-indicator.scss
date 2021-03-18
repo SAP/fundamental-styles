@@ -46,12 +46,16 @@ $color-states: (
     flex-direction: unset;
   }
 
+  &--link {
+    cursor: pointer;
+  }
+
   @each $set-name, $color-set in $color-states {
     &--#{$set-name} {
       fill: map_get($color-set, "color");
     }
 
-    &--#{$set-name}__text {
+    &__text--#{$set-name} {
       color: map_get($color-set, "color");
     }
   }
@@ -64,7 +68,7 @@ $color-states: (
       width: map-get($size-set, 'width');
       height: map-get($size-set, 'height');
     }
-    &--#{$set-name}__text {
+    &__text--#{$set-name} {
       font-size: map-get($size-set, 'font-size');
       margin: map-get($size-set, 'margin');
     }
