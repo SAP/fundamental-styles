@@ -270,7 +270,7 @@ export const StatusIndicatorLabels = () => `
 <div class="example-container">
 <span style="min-width: 150px;">Top Label :</span>
 <div class="fd-status-indicator fd-status-indicator--critical"  aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="100%" tabindex=0 aria-label="Euro Status Indicator With Labelled On Top" focusable="true" title="100% with label on top">
-	<span class="fd-status-indicator__text--lg fd-status-indicator__text--critical">100%</span>
+	<span class="fd-status-indicator__label--lg">100%</span>
 	<svg id="__shape0__box9-24" class="fd-status-indicator--lg" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path25" data-sap-ui="__path25">
 			<defs>
@@ -302,8 +302,8 @@ export const StatusIndicatorLabels = () => `
 </div>
 <div class="example-container">
 	<span style="min-width: 150px;">Bottom Label :</span>
-<div class="fd-status-indicator fd-status-indicator--positive " aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="100%" tabindex=0 aria-label="Euro Status Indicator With Labelled On Bottom" focusable="true" title="100% with label on bottom">
-	<svg id="__shape0__box10-24" data-sap-ui="__shape0-__box21-24" class="fd-status-indicator--lg" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
+<div class="fd-status-indicator fd-status-indicator--positive" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="100%" tabindex=0 aria-label="Euro Status Indicator With Labelled On Bottom" focusable="true" title="100% with label on bottom">
+	<svg id="__shape0__box10-24" class="fd-status-indicator--lg"  data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path26" data-sap-ui="__path26">
 			<defs>
 				<linearGradient id="__path26-gradient" x1="0" y1="1" x2="0" y2="0">
@@ -330,14 +330,14 @@ export const StatusIndicatorLabels = () => `
 			</path>
 		</svg>	
 	</svg>
-	<span class="fd-status-indicator__text--lg fd-status-indicator__text--positive">100%</span>
+	<span class="fd-status-indicator__label--lg">100%</span>
 </div>
 </div>
 <div class="example-container">
 <span style="min-width: 150px;">Left Label :</span>
-<div class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--htext " aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="100%" tabindex=0 aria-label="Euro Status Indicator With Labelled On Left" focusable="true" title="100% with label on left">
-	<span class="fd-status-indicator__text--lg fd-status-indicator__text--critical">100%</span>
-	<svg id="__shape0__box12-24" class="fd-status-indicator--lg" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 36 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
+<div class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--horizontal-label" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="100%" tabindex=0 aria-label="Euro Status Indicator With Labelled On Left" focusable="true" title="100% with label on left">
+	<span class="fd-status-indicator__label--lg">100%</span>
+	<svg id="__shape0__box12-24" class="fd-status-indicator--lg"  class=" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 36 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path261" data-sap-ui="__path261">
 			<defs>
 				<linearGradient id="__path261-gradient" x1="0" y1="1" x2="0" y2="0">
@@ -368,7 +368,7 @@ export const StatusIndicatorLabels = () => `
 </div>
 <div class="example-container">
 	<span style="min-width: 150px;">Right Label :</span>
-<div class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--htext"  aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="100%" tabindex=0 aria-label="Euro Status Indicator With Labelled On Right" focusable="true" title="100% with label on right">
+<div class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--horizontal-label"  aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="100%" tabindex=0 aria-label="Euro Status Indicator With Labelled On Right" focusable="true" title="100% with label on right">
 	<svg id="__shape0__box101-24" class="fd-status-indicator--lg" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 16 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path262" data-sap-ui="__path262">
 			<defs>
@@ -396,7 +396,7 @@ export const StatusIndicatorLabels = () => `
 			</path>
 		</svg>	
 	</svg>
-	<span class="fd-status-indicator__text--lg fd-status-indicator__text--positive">100%</span>
+	<span class="fd-status-indicator__label--lg">100%</span>
 </div>
 </div>
 

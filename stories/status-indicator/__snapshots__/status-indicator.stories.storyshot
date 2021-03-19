@@ -1724,7 +1724,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
       
 	
       <span
-        class="fd-status-indicator--lg__text fd-status-indicator--critical__text"
+        class="fd-status-indicator__label--lg"
       >
         100%
       </span>
@@ -1865,7 +1865,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
       aria-label="Euro Status Indicator With Labelled On Bottom"
       aria-roledescription="Status Indicator"
       aria-valuetext="100%"
-      class="fd-status-indicator fd-status-indicator--positive "
+      class="fd-status-indicator fd-status-indicator--positive"
       focusable="true"
       role="progressbar"
       tabindex="0"
@@ -1987,7 +1987,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
       
 	
       <span
-        class="fd-status-indicator--lg__text fd-status-indicator--positive__text"
+        class="fd-status-indicator__label--lg"
       >
         100%
       </span>
@@ -2015,7 +2015,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
       aria-label="Euro Status Indicator With Labelled On Left"
       aria-roledescription="Status Indicator"
       aria-valuetext="100%"
-      class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--htext "
+      class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--horizontal-label"
       focusable="true"
       role="progressbar"
       tabindex="0"
@@ -2024,15 +2024,15 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
       
 	
       <span
-        class="fd-status-indicator--lg__text fd-status-indicator--critical__text"
+        class="fd-status-indicator__label--lg"
       >
         100%
       </span>
       
 	
       <svg
+        __shape0-__box21-24"=""
         class="fd-status-indicator--lg"
-        data-sap-ui="__shape0-__box21-24"
         height="100%"
         id="__shape0__box12-24"
         preserveAspectRatio="xMidYMid meet"
@@ -2165,7 +2165,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
       aria-label="Euro Status Indicator With Labelled On Right"
       aria-roledescription="Status Indicator"
       aria-valuetext="100%"
-      class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--htext"
+      class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--horizontal-label"
       focusable="true"
       role="progressbar"
       tabindex="0"
@@ -2287,7 +2287,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
       
 	
       <span
-        class="fd-status-indicator--lg__text fd-status-indicator--positive__text"
+        class="fd-status-indicator__label--lg"
       >
         100%
       </span>

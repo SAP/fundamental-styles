@@ -33,14 +33,14 @@ $color-states: (
   flex-direction: column;
   align-items: center;
 
-  &:focus {
-    outline: 1px dotted #000;
-    outline-offset: 1px;
+  @include fd-focus() {
+    outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+    outline-offset: var(--sapContent_FocusWidth);
   }
 
   @include fd-reset();
 
-  &--htext {
+  &--horizontal-label {
     @include fd-reset();
 
     flex-direction: unset;
@@ -53,9 +53,6 @@ $color-states: (
   @each $set-name, $color-set in $color-states {
     &--#{$set-name} {
       fill: map_get($color-set, "color");
-    }
-
-    &__text--#{$set-name} {
       color: map_get($color-set, "color");
     }
   }
@@ -68,7 +65,7 @@ $color-states: (
       width: map-get($size-set, 'width');
       height: map-get($size-set, 'height');
     }
-    &__text--#{$set-name} {
+    &__label--#{$set-name} {
       font-size: map-get($size-set, 'font-size');
       margin: map-get($size-set, 'margin');
     }
