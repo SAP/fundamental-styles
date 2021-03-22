@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.27...v0.17.0-rc.28) (2021-03-22)
+
+
+### Bug Fixes
+
+* toolbar button not having any margin ([#2196](https://github.com/SAP/fundamental-styles/issues/2196)) ([e968b63](https://github.com/SAP/fundamental-styles/commit/e968b6355d9e69918c5e505880b81d6ff091ca5d))
+
 ## [0.17.0-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.26...v0.17.0-rc.27) (2021-03-21)
 
 ## [0.17.0-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.25...v0.17.0-rc.26) (2021-03-18)
