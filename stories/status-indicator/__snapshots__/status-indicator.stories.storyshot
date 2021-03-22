@@ -1731,7 +1731,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
       
 	
       <span
-        class="fd-status-indicator__label--lg"
+        class="fd-status-indicator__label fd-status-indicator__label--lg"
       >
         100%
       </span>
@@ -1994,7 +1994,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
       
 	
       <span
-        class="fd-status-indicator__label--lg"
+        class="fd-status-indicator__label fd-status-indicator__label--lg"
       >
         100%
       </span>
@@ -2031,7 +2031,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
       
 	
       <span
-        class="fd-status-indicator__label--lg"
+        class="fd-status-indicator__label fd-status-indicator__label--lg"
       >
         100%
       </span>
@@ -2294,7 +2294,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
       
 	
       <span
-        class="fd-status-indicator__label--lg"
+        class="fd-status-indicator__label fd-status-indicator__label--lg"
       >
         100%
       </span>

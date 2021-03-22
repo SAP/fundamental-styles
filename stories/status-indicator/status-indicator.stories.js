@@ -270,7 +270,7 @@ export const StatusIndicatorLabels = () => `
 <div class="example-container">
 <span style="min-width: 150px;">Top Label :</span>
 <div class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--lg"  aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="100%" tabindex=0 aria-label="Euro Status Indicator With Labelled On Top" focusable="true" title="100% with label on top">
-	<span class="fd-status-indicator__label--lg">100%</span>
+	<span class="fd-status-indicator__label fd-status-indicator__label--lg">100%</span>
 	<svg id="__shape0__box9-24" class="fd-status-indicator__svg" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path25" data-sap-ui="__path25">
 			<defs>
@@ -330,13 +330,13 @@ export const StatusIndicatorLabels = () => `
 			</path>
 		</svg>	
 	</svg>
-	<span class="fd-status-indicator__label--lg">100%</span>
+	<span class="fd-status-indicator__label fd-status-indicator__label--lg">100%</span>
 </div>
 </div>
 <div class="example-container">
 <span style="min-width: 150px;">Left Label :</span>
 <div class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--horizontal-label fd-status-indicator--lg" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="100%" tabindex=0 aria-label="Euro Status Indicator With Labelled On Left" focusable="true" title="100% with label on left">
-	<span class="fd-status-indicator__label--lg">100%</span>
+	<span class="fd-status-indicator__label fd-status-indicator__label--lg">100%</span>
 	<svg id="__shape0__box12-24" class="fd-status-indicator__svg"  class=" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 36 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path261" data-sap-ui="__path261">
 			<defs>
@@ -396,7 +396,7 @@ export const StatusIndicatorLabels = () => `
 			</path>
 		</svg>	
 	</svg>
-	<span class="fd-status-indicator__label--lg">100%</span>
+	<span class="fd-status-indicator__label fd-status-indicator__label--lg">100%</span>
 </div>
 </div>
 
