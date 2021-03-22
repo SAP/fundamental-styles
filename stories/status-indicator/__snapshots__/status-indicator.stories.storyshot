@@ -2670,14 +2670,14 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Radial fil
     
 
     <div
-      aria-label="Euro Status Indicator Radial clock wise filling"
+      aria-label="Euro Status Indicator Radial clockwise filling"
       aria-roledescription="Status Indicator"
       aria-valuetext="30%"
       class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--xl"
       focusable="true"
       role="progressbar"
       tabindex="0"
-      title="30% radial filling with clock wise"
+      title="30% radial filling with clockwise"
     >
       
 	
@@ -2836,14 +2836,14 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Radial fil
     
 
     <div
-      aria-label="Euro Status Indicator Radial clock wise filling"
+      aria-label="Euro Status Indicator Radial clockwise filling"
       aria-roledescription="Status Indicator"
       aria-valuetext="30%"
       class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--xl"
       focusable="true"
       role="progressbar"
       tabindex="0"
-      title="30% radial filling with counter clock wise"
+      title="30% radial filling with counterclockwise"
     >
       
 	

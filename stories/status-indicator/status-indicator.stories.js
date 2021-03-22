@@ -493,7 +493,7 @@ StatusIndicatorLinearFilling.storyName = 'Status Indicator With Linear filling';
 StatusIndicatorLinearFilling.parameters = {
     docs: {
         storyDescription: `
-To display Linear filling from left to right instead default bottom to top approach type of the status indicator Object, The object can be filled based on changing the value of  \`<linearGradient>\` property  \`x1,Y1,x2,y2\`. Filling can be done either Clock wise or Counter Clock wise.
+To display Linear filling from left to right instead default bottom to top approach type of the status indicator Object, The object can be filled based on changing the value of  \`<linearGradient>\` property  \`x1,Y1,x2,y2\`. Filling can be done either clockwise or counterclockwise.
 `
     }
 };
@@ -646,7 +646,7 @@ StatusIndicatorCoreoGraphy.parameters = {
 export const StatusIndicatorRadialFilling = () => `
 <div class="example-container">
 	<span style="min-width: 150px;">Radial Clock filling:</span>
-<div class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--xl" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="30%" tabindex=0 aria-label="Euro Status Indicator Radial clock wise filling" focusable="true" title="30% radial filling with clock wise">
+<div class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--xl" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="30%" tabindex=0 aria-label="Euro Status Indicator Radial clockwise filling" focusable="true" title="30% radial filling with clockwise">
 	<svg id="__shape0__box34-24" data-sap-ui="__shape0-__box21-24" class="fd-status-indicator__svg"  version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path34" data-sap-ui="__path34">
 			<defs>
@@ -680,7 +680,7 @@ export const StatusIndicatorRadialFilling = () => `
 
 <div class="example-container">
 	<span style="min-width: 150px;">Radial Counter Clock filling:</span>
-<div class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--xl" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="30%" tabindex=0 aria-label="Euro Status Indicator Radial clock wise filling" focusable="true" title="30% radial filling with counter clock wise">
+<div class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--xl" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="30%" tabindex=0 aria-label="Euro Status Indicator Radial clockwise filling" focusable="true" title="30% radial filling with counterclockwise">
 	<svg id="__shape0__box35-24" data-sap-ui="__shape0-__box21-24" version="1.1" class="fd-status-indicator__svg" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path35" data-sap-ui="__path35">
 			<defs>
@@ -717,7 +717,7 @@ StatusIndicatorRadialFilling.storyName = 'Status Indicator With Radial filling';
 StatusIndicatorRadialFilling.parameters = {
     docs: {
         storyDescription: `
-To display Radial filling instead of default bottom to top approach type of status indicator Object, The object can be filled based on changing the value of  \`<radialGradient>\` property  \`cx,cy,r,fx,fy\`. Filling can be done either Clock wise or Counter Clock wise.
+To display Radial filling instead of default bottom to top approach type of status indicator Object, The object can be filled based on changing the value of  \`<radialGradient>\` property  \`cx,cy,r,fx,fy\`. Filling can be done either clockwise or counterclockwise.
 `
     }
 };
@@ -880,7 +880,7 @@ StatusIndicatorAngularFilling.storyName = 'Status Indicator With Angular filling
 StatusIndicatorAngularFilling.parameters = {
     docs: {
         storyDescription: `
-To display Angular filling instead of default bottom to top approach type of status indicator Object, The object can be filled based on changing the value of  \`<linearGradient>\` property  \`x1,Y1,x2,y2\`. Filling can be done either Clock wise or Counter Clock wise.
+To display Angular filling instead of default bottom to top approach type of status indicator Object, The object can be filled based on changing the value of  \`<linearGradient>\` property  \`x1,Y1,x2,y2\`. Filling can be done either clockwise or counterclockwise.
 `
     }
 };
