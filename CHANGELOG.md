@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.28...v0.17.0-rc.29) (2021-03-22)
+
+
+### Bug Fixes
+
+* change the naming of status indicator classes to follow BEM ([#2204](https://github.com/SAP/fundamental-styles/issues/2204)) ([94f3bb1](https://github.com/SAP/fundamental-styles/commit/94f3bb15e986e7a11c9b67e921e74daae05ef27a))
+
 ## [0.17.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.27...v0.17.0-rc.28) (2021-03-22)
 
 
