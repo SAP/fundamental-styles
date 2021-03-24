@@ -603,31 +603,37 @@ body.sb-show-main {
   .card-one-dimensions {
     width: 40rem;
     height: 16rem;
+    margin: 0 0.5rem 0.5rem 0;
   }
 
   .card-two-dimensions {
     width: 20rem;
     height: fit-content;
+    margin: 0 0.5rem 0.5rem 0.5rem;
   }
 
   .card-three-dimensions {
     width: 20rem;
     height: 20rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
   }
 
   .card-four-dimensions {
     width: 20rem;
     height: 35rem;
+    margin: 0.5rem;
   }
 
   .card-five-dimensions {
     width: 40rem;
     height: 25rem;
+    margin: 0.5rem;
   }
 
   .card-six-dimensions {
     width: 20rem;
     height: 20rem;
+    margin: 0.5rem;
   }
 }
 
