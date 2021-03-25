@@ -600,40 +600,34 @@ body.sb-show-main {
   display: flex;
   flex-wrap: wrap;
 
-  .card-one-dimensions {
-    width: 40rem;
-    height: 16rem;
+  @mixin set-card-dimensions($width: 20rem, $height: 20rem) {
+    width: $width;
+    height: $height;
     margin: 0.5rem;
+  }
+
+  .card-one-dimensions {
+    @include set-card-dimensions(40rem, 16rem);
   }
 
   .card-two-dimensions {
-    width: 20rem;
-    height: fit-content;
-    margin: 0.5rem;
+    @include set-card-dimensions(20rem, fit-content);
   }
 
   .card-three-dimensions {
-    width: 20rem;
-    height: 20rem;
-    margin: 0.5rem;
+    @include set-card-dimensions();
   }
 
   .card-four-dimensions {
-    width: 20rem;
-    height: 35rem;
-    margin: 0.5rem;
+    @include set-card-dimensions(20rem, 35rem);
   }
 
   .card-five-dimensions {
-    width: 40rem;
-    height: 25rem;
-    margin: 0.5rem;
+    @include set-card-dimensions(40rem, 25rem);
   }
 
   .card-six-dimensions {
-    width: 20rem;
-    height: 20rem;
-    margin: 0.5rem;
+    @include set-card-dimensions();
   }
 }
 

@@ -11,6 +11,7 @@ $block: #{$fd-namespace}-resizable-card-layout;
   $fd-border-on-drag: 0.125rem dashed var(--sapContent_DragAndDropActiveColor);
   $fd-layout-top-margin: 1rem;
   $fd-layout-default-margin: 0.5rem;
+  $fd-resize-handle-index: 2;
 
   // reduced by 0.5rem as card already have 0.5rem padding
   $fd-resizable-card-padding-x: (
@@ -53,7 +54,7 @@ $block: #{$fd-namespace}-resizable-card-layout;
     position: absolute;
     bottom: 0;
     right: 0;
-    z-index: 2;
+    z-index: $fd-resize-handle-index;
     padding: 0 $fd-resize-icon-padding $fd-resize-icon-padding 0;
 
     @include fd-rtl() {
@@ -75,7 +76,7 @@ $block: #{$fd-namespace}-resizable-card-layout;
     bottom: 0;
     right: $fd-resize-icon-padding;
     color: var(--sapButton_IconColor);
-    z-index: 2;
+    z-index: $fd-resize-handle-index;
 
     @include fd-rtl() {
       transform: rotate(90deg);
@@ -105,7 +106,7 @@ $block: #{$fd-namespace}-resizable-card-layout;
   &__resize {
     &--vertical {
       order: 2;
-      z-index: 2;
+      z-index: $fd-resize-handle-index;
       // subtract resize-corner icon font-size/2
       width: $fd-resize-handle-width;
       cursor: ew-resize;
@@ -118,7 +119,7 @@ $block: #{$fd-namespace}-resizable-card-layout;
 
     &--horizontal {
       // subtract resize-corner icon font-size/2
-      z-index: 2;
+      z-index: $fd-resize-handle-index;
       width: calc(100% - 0.5rem);
       height: $fd-resize-handle-width;
       position: absolute;
