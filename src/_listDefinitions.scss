@@ -47,6 +47,9 @@ $fd-list-item-counter-spacing: 1rem !default;
 
 $fd-list-rating-indicator-spacing: 0.5rem !default;
 
+$fd-list-dropdown-max-width: 40rem !default;
+$fd-list-dropdown-optional-max-width: 62rem !default;
+
 $semantic-color: (
   "neutral": ("color": var(--sapNeutralTextColor)),
   "positive": ("color": var(--sapPositiveTextColor)),

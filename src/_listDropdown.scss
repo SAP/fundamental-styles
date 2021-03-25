@@ -1,4 +1,3 @@
-
 @import "./listDefinitions.scss";
 
 .#{$block} {
@@ -19,12 +18,6 @@
         height: auto;
         padding: $fd-dropdown-vertical-compact-padding $fd-list-item-padding-x;
       }
-    }
-
-    .#{$block}__secondary {
-      width: auto;
-      max-width: 15rem;
-      display: contents;
     }
   }
 
@@ -113,14 +106,29 @@
 
   &--dropdown,
   &--multi-input {
+    @mixin list-width-limit($maxWidth: $fd-list-dropdown-max-width) {
+      max-width: $maxWidth;
+
+      .#{$block}__title {
+        max-width: 0.6 * $maxWidth;
+
+        &:first-child:last-child {
+          max-width: $maxWidth;
+        }
+      }
+
+      .#{$block}__secondary {
+        max-width: 0.4 * $maxWidth;
+      }
+
+      // for when dropdown and multi input are used in mobile mode
+      &.#{$block}--mobile {
+        max-width: 100%;
+      }
+    }
+
     display: block;
     min-width: 7rem;
-    max-width: 37.5rem;
-
-    // for when dropdown and multi input are used in mobile mode
-    &.#{$block}--mobile {
-      max-width: 100%;
-    }
 
     .#{$block}__item {
       cursor: pointer;
@@ -142,17 +150,23 @@
       }
     }
 
+    .#{$block}__secondary {
+      width: auto;
+      display: block;
+    }
+
     .#{$block}__title {
       width: auto;
-      max-width: 22.5rem;
-
-      &:first-child:last-child {
-        max-width: 37.5rem;
-      }
     }
+
+    @include list-width-limit($fd-list-dropdown-max-width);
 
     .#{$block}__icon {
       line-height: 1rem;
+    }
+
+    &.#{$block}--large-dropdown {
+      @include list-width-limit($fd-list-dropdown-optional-max-width);
     }
   }
 }
