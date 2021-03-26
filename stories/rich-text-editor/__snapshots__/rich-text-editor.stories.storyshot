@@ -96,12 +96,17 @@ exports[`Storyshots Patterns/Rich Text Editor Compact Mode 1`] = `
           
 			
           <button
+            ['aria-expanded']);=""
+            ['aria-hidden']);=""
             aria-controls="h0C6A328"
             aria-expanded="false"
             aria-haspopup="true"
             aria-label="select-label"
             class="fd-button fd-button--compact fd-button--menu fd-button--transparent"
+            id="compactAllign"
             tabindex="0"
+            toggleelattrs('compactallign',=""
+            toggleelattrs('h0c6a328',=""
           >
             
 			
@@ -1038,11 +1043,16 @@ exports[`Storyshots Patterns/Rich Text Editor Compact Mode 1`] = `
         
 		  
         <button
+          ['aria-expanded']);=""
+          ['aria-hidden']);=""
           aria-controls="t4c0o2736"
           aria-expanded="false"
           aria-haspopup="true"
           aria-label="button"
           class="fd-button fd-button--compact fd-button--transparent"
+          id="compactRTEFontColor"
+          toggleelattrs('compactrtefontcolor',=""
+          toggleelattrs('t4c0o2736',=""
         >
           
 			
@@ -1089,12 +1099,19 @@ exports[`Storyshots Patterns/Rich Text Editor Compact Mode 1`] = `
         
 		  
         <button
+          ['aria-expanded']);=""
+          ['aria-hidden']);=""
           aria-controls="t4c0o2736"
           aria-expanded="false"
           aria-haspopup="true"
           aria-label="More"
           class="fd-button fd-button--compact fd-button--transparent"
+          id="compactRTEFontColorIcon"
+          toggleelattrs('compactrtefontcoloricon',=""
+          toggleelattrs('t4c0o2736',=""
         >
+          
+		  
           <i
             class="sap-icon--slim-arrow-down"
           />
@@ -1188,11 +1205,16 @@ exports[`Storyshots Patterns/Rich Text Editor Compact Mode 1`] = `
         
 		  
         <button
+          ['aria-expanded']);=""
+          ['aria-hidden']);=""
           aria-controls="t4c0o275"
           aria-expanded="false"
           aria-haspopup="true"
           aria-label="button"
           class="fd-button fd-button--compact fd-button--transparent"
+          id="compactRTEBackgroundColor"
+          toggleelattrs('compactrtebackgroundcolor',=""
+          toggleelattrs('t4c0o275',=""
         >
           
 		  
@@ -1205,11 +1227,16 @@ exports[`Storyshots Patterns/Rich Text Editor Compact Mode 1`] = `
         
 		  
         <button
+          ['aria-expanded']);=""
+          ['aria-hidden']);=""
           aria-controls="t4c0o275"
           aria-expanded="false"
           aria-haspopup="true"
           aria-label="More"
           class="fd-button fd-button--compact fd-button--transparent"
+          id="compactRTEBackgroundColorIcon"
+          toggleelattrs('compactrtebackgroundcoloricon',=""
+          toggleelattrs('t4c0o275',=""
         >
           <i
             class="sap-icon--slim-arrow-down"

@@ -31,8 +31,11 @@ export const cozyMode = () => `
 		  <div class="fd-popover">
 			<div class="fd-popover__control">
 			  <button aria-expanded="false" aria-haspopup="true" aria-label="allign-button"
-				class="fd-button fd-button--menu fd-button--transparent" 
-				aria-controls="h0C6A324"
+				class="fd-button fd-button--menu fd-button--transparent"
+				id="cozyAlign"
+				aria-controls="h0C6A324" 
+				toggleElAttrs('h0C6A324', ['aria-hidden']);
+				toggleElAttrs('cozyAlign', ['aria-expanded']);
 				tabindex="0" >
 			  <i class="sap-icon--text-align-left"></i>
 			  <i class="sap-icon--slim-arrow-down"></i> 
@@ -212,7 +215,8 @@ export const cozyMode = () => `
 			</div>
 		  </div>
 		  <div class="fd-button-split fd-button-split--transparent fd-has-margin-right-small" role="group" aria-label="button-split">
-			<button class="fd-button fd-button--transparent" aria-haspopup="true" aria-expanded="false" aria-label="button" aria-controls="t4c0o273">
+			<button id="cozyFontcolor" class="fd-button fd-button--transparent" aria-haspopup="true" aria-expanded="false" aria-label="button" aria-controls="t4c0o273" toggleElAttrs('t4c0o273', ['aria-hidden']);
+			toggleElAttrs('cozyFontcolor', ['aria-expanded']);>
 			  <svg class="RTE_fontColorIcon" xmlns="http://www.w3.org/2000/svg" 
 				viewBox="0 0 16 16" >
 				<path d="M662.477,379.355h3.038l.806,2.7h1.163l-2.729-9h-1.518l-2.753,9h1.21Zm1.519-5.4,1.281,4.5h-2.586Z" transform="translate(-656.047 -373.055)" style="fill:var(--sapButton_IconColor)"/>
@@ -220,7 +224,8 @@ export const cozyMode = () => `
 				<rect class="fill" fill="red" x="1" y="12" width="14" height="3" rx="0.2" ry="0.2"/>
 			  </svg>
 			</button>
-			<button class="fd-button fd-button--transparent" aria-controls="t4c0o273" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
+			<button class="fd-button fd-button--transparent" aria-controls="t4c0o273" id="cozyFontcoloricon" toggleElAttrs('t4c0o273', ['aria-hidden']);
+			toggleElAttrs('cozyFontcoloricon', ['aria-expanded']);  aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
 			<div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="t4c0o273">
 			  <nav class="fd-menu">
 				<ul class="fd-menu__list fd-menu__list--no-shadow">
@@ -239,10 +244,12 @@ export const cozyMode = () => `
 			</div>
 		  </div>
 		  <div class="fd-button-split fd-button-split--transparent fd-has-margin-right-small" role="group" aria-label="button-split">
-			<button class="fd-button fd-button--transparent" aria-haspopup="true" aria-expanded="false" aria-controls="t4c0o274" aria-label="button">
+			<button id="cozyBackgroundcolor" class="fd-button fd-button--transparent" aria-haspopup="true" aria-expanded="false" aria-controls="t4c0o274" toggleElAttrs('t4c0o274', ['aria-hidden']);
+			toggleElAttrs('cozyBackgroundcolor', ['aria-expanded']); aria-label="button">
 			<i class="sap-icon--color-fill"></i> 
 			</button>
-			<button class="fd-button fd-button--transparent" aria-controls="t4c0o274" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
+			<button class="fd-button fd-button--transparent" id="cozyBackgroundcoloricon" aria-controls="t4c0o274" toggleElAttrs('t4c0o274', ['aria-hidden']);
+			toggleElAttrs('cozyBackgroundcoloricon', ['aria-expanded']); aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
 			<div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="t4c0o274">
 			  <nav class="fd-menu">
 				<ul class="fd-menu__list fd-menu__list--no-shadow">
@@ -295,6 +302,9 @@ export const compactMode = () => `<div style="height:450px;overflow-y:hidden">
 			<button aria-expanded="false" aria-haspopup="true" aria-label="select-label"
 			  class="fd-button fd-button--compact fd-button--menu fd-button--transparent" 
 			  aria-controls="h0C6A328"
+			  id="compactAllign"
+			  toggleElAttrs('h0C6A328', ['aria-hidden']);
+			  toggleElAttrs('compactAllign', ['aria-expanded']);
 			  tabindex="0">
 			<i class="sap-icon--text-align-left"></i>
 			<i class="sap-icon--slim-arrow-down"></i> 
@@ -474,7 +484,8 @@ export const compactMode = () => `<div style="height:450px;overflow-y:hidden">
 		  </div>
 		</div>
 		<div class="fd-button-split fd-button-split--compact fd-button-split--transparent fd-has-margin-right-small" role="group" aria-label="button-split">
-		  <button class="fd-button fd-button--compact fd-button--transparent" aria-haspopup="true" aria-expanded="false" aria-label="button" aria-controls="t4c0o2736">
+		  <button class="fd-button fd-button--compact fd-button--transparent" id="compactRTEFontColor" aria-haspopup="true" aria-expanded="false" aria-label="button" aria-controls="t4c0o2736" toggleElAttrs('t4c0o2736', ['aria-hidden']);
+		  toggleElAttrs('compactRTEFontColor', ['aria-expanded']);>
 			<svg class="RTE_fontColorIcon" xmlns="http://www.w3.org/2000/svg" 
 			  viewBox="0 0 16 16">
 			  <path d="M662.477,379.355h3.038l.806,2.7h1.163l-2.729-9h-1.518l-2.753,9h1.21Zm1.519-5.4,1.281,4.5h-2.586Z" transform="translate(-656.047 -373.055)" style="fill:var(--sapButton_IconColor)"/>
@@ -482,7 +493,9 @@ export const compactMode = () => `<div style="height:450px;overflow-y:hidden">
 			  <rect class="fill" x="1" y="12" width="14" height="3" rx="0.2" ry="0.2"/>
 			</svg>
 		  </button>
-		  <button class="fd-button fd-button--compact fd-button--transparent" aria-controls="t4c0o2736" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
+		  <button id="compactRTEFontColorIcon" class="fd-button fd-button--compact fd-button--transparent" aria-controls="t4c0o2736" aria-haspopup="true" aria-expanded="false" aria-label="More" toggleElAttrs('t4c0o2736', ['aria-hidden']);
+		  toggleElAttrs('compactRTEFontColorIcon', ['aria-expanded']);>
+		  <i class="sap-icon--slim-arrow-down"></i></button>
 		  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="t4c0o2736">
 			<nav class="fd-menu fd-menu--compact">
 			  <ul class="fd-menu__list fd-menu__list--no-shadow">
@@ -501,10 +514,12 @@ export const compactMode = () => `<div style="height:450px;overflow-y:hidden">
 		  </div>
 		</div>
 		<div class="fd-button-split fd-button-split--compact fd-button-split--transparent fd-has-margin-right-small" role="group" aria-label="button-split">
-		  <button class="fd-button fd-button--compact fd-button--transparent" aria-haspopup="true" aria-expanded="false" aria-controls="t4c0o275" aria-label="button">
+		  <button id="compactRTEBackgroundColor" class="fd-button fd-button--compact fd-button--transparent" aria-haspopup="true" aria-expanded="false" aria-controls="t4c0o275" aria-label="button" toggleElAttrs('t4c0o275', ['aria-hidden']);
+		  toggleElAttrs('compactRTEBackgroundColor', ['aria-expanded']); >
 		  <i class="sap-icon--color-fill"></i> 
 		  </button>
-		  <button class="fd-button fd-button--compact fd-button--transparent" aria-controls="t4c0o275" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
+		  <button id="compactRTEBackgroundColorIcon"class="fd-button fd-button--compact fd-button--transparent" aria-controls="t4c0o275" aria-haspopup="true" aria-expanded="false" aria-label="More" toggleElAttrs('t4c0o275', ['aria-hidden']);
+		  toggleElAttrs('compactRTEBackgroundColorIcon', ['aria-expanded']);><i class="sap-icon--slim-arrow-down"></i></button>
 		  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="t4c0o275">
 			<nav class="fd-menu fd-menu--compact">
 			  <ul class="fd-menu__list fd-menu__list--no-shadow">
@@ -557,7 +572,9 @@ export const overFlowRTE = () => `
 			  <button aria-expanded="false" aria-haspopup="true" aria-label="select-label"
 				class="fd-button fd-button--compact fd-button--menu fd-button--transparent" 
 				aria-controls="h0C6A3219"
-				tabindex="0">
+				tabindex="0" 
+				toggleElAttrs('h0C6A3219', ['aria-hidden']);
+				toggleElAttrs('overflowAllign', ['aria-expanded']);>
 			  <i class="sap-icon--text-align-left"></i>
 			  <i class="sap-icon--slim-arrow-down"></i> 
 			  </button>
@@ -736,7 +753,9 @@ export const overFlowRTE = () => `
 			</div>
 		  </div>
 		  <div class="fd-button-split fd-button-split--compact fd-button-split--transparent fd-has-margin-right-small" role="group" aria-label="button-split">
-			<button class="fd-button fd-button--compact fd-button--transparent" aria-haspopup="true" aria-expanded="false" aria-label="button" aria-controls="t4c0o2737">
+			<button id="overflowRTEfontcolor"class="fd-button fd-button--compact fd-button--transparent" aria-haspopup="true" aria-expanded="false" aria-label="button" aria-controls="t4c0o2737" 
+			toggleElAttrs('t4c0o2737', ['aria-hidden']);
+			toggleElAttrs('overflowRTEfontcolor', ['aria-expanded']);>
 			  <svg class="RTE_fontColorIcon" xmlns="http://www.w3.org/2000/svg" 
 				viewBox="0 0 16 16">
 				<path d="M662.477,379.355h3.038l.806,2.7h1.163l-2.729-9h-1.518l-2.753,9h1.21Zm1.519-5.4,1.281,4.5h-2.586Z" transform="translate(-656.047 -373.055)" style="fill:var(--sapButton_IconColor)"/>
@@ -744,7 +763,9 @@ export const overFlowRTE = () => `
 				<rect class="fill" x="1" y="12" width="14" height="3" rx="0.2" ry="0.2"/>
 			  </svg>
 			</button>
-			<button class="fd-button fd-button--compact fd-button--transparent" aria-controls="t4c0o2737" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
+			<button id="overflowRTEfontcolorIcon" class="fd-button fd-button--compact fd-button--transparent" aria-controls="t4c0o2737" aria-haspopup="true" aria-expanded="false" aria-label="More" 
+			toggleElAttrs('t4c0o2737', ['aria-hidden']);
+			toggleElAttrs('overflowRTEfontcolorIcon', ['aria-expanded']);><i class="sap-icon--slim-arrow-down"></i></button>
 			<div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="t4c0o2737">
 			  <nav class="fd-menu fd-menu--compact">
 				<ul class="fd-menu__list fd-menu__list--no-shadow">
@@ -763,10 +784,14 @@ export const overFlowRTE = () => `
 			</div>
 		  </div>
 		  <div class="fd-button-split fd-button-split--compact fd-button-split--transparent fd-has-margin-right-small" role="group" aria-label="button-split">
-			<button class="fd-button fd-button--compact fd-button--transparent" aria-haspopup="true" aria-expanded="false" aria-controls="t4c0o276" aria-label="button">
+			<button id="overflowRTEbackgroundcolor" class="fd-button fd-button--compact fd-button--transparent" aria-haspopup="true" aria-expanded="false" aria-controls="t4c0o276" aria-label="button"
+			toggleElAttrs('t4c0o276', ['aria-hidden']);
+			toggleElAttrs('overflowRTEbackgroundcolor', ['aria-expanded']);>
 			<i class="sap-icon--color-fill"></i> 
 			</button>
-			<button class="fd-button fd-button--compact fd-button--transparent" aria-controls="t4c0o276" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
+			<button id="overflowRTEbackgroundcolorIcon" class="fd-button fd-button--compact fd-button--transparent" aria-controls="t4c0o276" aria-haspopup="true" aria-expanded="false" aria-label="More" 
+			toggleElAttrs('t4c0o276', ['aria-hidden']);
+			toggleElAttrs('overflowRTEbackgroundcolorIcon', ['aria-expanded']);><i class="sap-icon--slim-arrow-down"></i></button>
 			<div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="t4c0o276">
 			  <nav class="fd-menu fd-menu--compact">
 				<ul class="fd-menu__list fd-menu__list--no-shadow">
@@ -798,7 +823,10 @@ export const overFlowRTE = () => `
 		  </button>
 		  <div class="fd-popover">
 			<div class="fd-popover__control">
-			  <button class="fd-button fd-button--compact fd-button--transparent" aria-controls="t4c0o2739" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--overflow"></i></button>
+			  <button class="fd-button fd-button--compact fd-button--transparent" aria-controls="t4c0o2739" aria-haspopup="true" aria-expanded="false" aria-label="More"
+			  toggleElAttrs('t4c0o2739', ['aria-hidden']);
+			  toggleElAttrs('overflowRTEbackgroundcolorIcon', ['aria-expanded']); >
+			  <i class="sap-icon--overflow"></i></button>
 			  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="t4c0o2739">
 				<nav class="fd-menu fd-menu--compact">
 				  <ul class="fd-menu__list">
@@ -811,7 +839,7 @@ export const overFlowRTE = () => `
 					<li class="fd-menu__item">
 					  <a class="fd-menu__link" role="button" href="#">
 					  <span class="fd-menu__addon-before"><i class="sap-icon--edit"></i></span>
-					  <span class="fd-menu__title">Blue</span>
+					  <span class="fd-menu__title">Edit</span>
 					  </a>
 					</li>
 				  </ul>
@@ -849,6 +877,9 @@ export const overFlowRTEWithSolidToolBar = () => `
 			  <button aria-expanded="false" aria-haspopup="true" aria-label="select-label"
 				class="fd-button fd-button--compact fd-button--menu fd-button--transparent" 
 				aria-controls="h0C6A3213"
+				id="solidToolbarRTEAlign"
+				toggleElAttrs('h0C6A3213', ['aria-hidden']);
+				  toggleElAttrs('solidToolbarRTEAlign', ['aria-expanded']);
 				tabindex="0">
 			  <i class="sap-icon--text-align-left"></i>
 			  <i class="sap-icon--slim-arrow-down"></i> 
@@ -877,9 +908,9 @@ export const overFlowRTEWithSolidToolBar = () => `
 		  <div class="fd-popover">
 			<div class="fd-popover__control">
 			  <div class="fd-select fd-select--compact ">
-				<button aria-expanded="false" aria-haspopup="listbox" aria-label="select-label" class="fd-select__control" id="overflowRTEParagraph" onclick="
+				<button aria-expanded="false" aria-haspopup="listbox" aria-label="select-label" class="fd-select__control" id="solidToolbarRTEParagraph" onclick="
 				  toggleElAttrs('h0C6A3220', ['aria-hidden']);
-				  toggleElAttrs('overflowRTEParagraph', ['aria-expanded']);
+				  toggleElAttrs('solidToolbarRTEParagraph', ['aria-expanded']);
 				  " value="List Item 1" tabindex="0">
 				<span class="fd-select__text-content">Paragraph</span>
 				<span class="fd-button fd-button--compact fd-button--transparent fd-select__button">
@@ -917,9 +948,9 @@ export const overFlowRTEWithSolidToolBar = () => `
 		  <div class="fd-popover">
 			<div class="fd-popover__control">
 			  <div class="fd-select fd-select--compact">
-				<button aria-expanded="false" aria-haspopup="listbox" aria-label="select-label" class="fd-select__control" id="overflowRTEFont" onclick="
+				<button aria-expanded="false" aria-haspopup="listbox" aria-label="select-label" class="fd-select__control" id="solidToolbarRTEFont" onclick="
 				  toggleElAttrs('h0C6A3218', ['aria-hidden']);
-				  toggleElAttrs('overflowRTEFont', ['aria-expanded']);
+				  toggleElAttrs('solidToolbarRTEFont', ['aria-expanded']);
 				  " value="Times New Roman" tabindex="0">
 				<span class="fd-select__text-content">Times New Roman</span>
 				<span class="fd-button fd-button--compact fd-button--transparent fd-select__button">
@@ -990,9 +1021,9 @@ export const overFlowRTEWithSolidToolBar = () => `
 		  <div class="fd-popover">
 			<div class="fd-popover__control">
 			  <div class="fd-select fd-select--compact">
-				<button aria-expanded="false" aria-haspopup="listbox" aria-label="select-label" class="fd-select__control" id="overflowRTEFontSize" onclick="
+				<button aria-expanded="false" aria-haspopup="listbox" aria-label="select-label" class="fd-select__control" id="solidToolbarRTEFontSize" onclick="
 				  toggleElAttrs('h0C6A3217', ['aria-hidden']);
-				  toggleElAttrs('overflowRTEFontSize', ['aria-expanded']);
+				  toggleElAttrs('solidToolbarRTEFontSize', ['aria-expanded']);
 				  " value="List Item 1" tabindex="0">
 				<span class="fd-select__text-content">10 pt</span>
 				<span class="fd-button fd-button--compact fd-button--transparent fd-select__button">
@@ -1028,7 +1059,9 @@ export const overFlowRTEWithSolidToolBar = () => `
 			</div>
 		  </div>
 		  <div class="fd-button-split fd-button-split--compact fd-button-split--transparent fd-has-margin-right-small" role="group" aria-label="button-split">
-			<button class="fd-button fd-button--compact fd-button--transparent" aria-haspopup="true" aria-expanded="false" aria-label="button" aria-controls="t4c0o2738">
+			<button id="solidToolbarRTEFontColor" class="fd-button fd-button--compact fd-button--transparent" aria-haspopup="true" aria-expanded="false" aria-label="button" aria-controls="t4c0o2738" 
+			toggleElAttrs('t4c0o2738', ['aria-hidden']);
+			toggleElAttrs('solidToolbarRTEFontColor', ['aria-expanded']);>
 			  <svg class="RTE_fontColorIcon" xmlns="http://www.w3.org/2000/svg" 
 				viewBox="0 0 16 16">
 				<path d="M662.477,379.355h3.038l.806,2.7h1.163l-2.729-9h-1.518l-2.753,9h1.21Zm1.519-5.4,1.281,4.5h-2.586Z" transform="translate(-656.047 -373.055)" style="fill:var(--sapButton_IconColor)"/>
@@ -1036,7 +1069,10 @@ export const overFlowRTEWithSolidToolBar = () => `
 				<rect class="fill" x="1" y="12" width="14" height="3" rx="0.2" ry="0.2"/>
 			  </svg>
 			</button>
-			<button class="fd-button fd-button--compact fd-button--transparent" aria-controls="t4c0o2738" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
+			<button id="solidToolbarRTEFontColorIcon" class="fd-button fd-button--compact fd-button--transparent" aria-controls="t4c0o2738" aria-haspopup="true" aria-expanded="false" aria-label="More"
+			toggleElAttrs('t4c0o2738', ['aria-hidden']);
+			toggleElAttrs('solidToolbarRTEFontColorIcon', ['aria-expanded']);
+			><i class="sap-icon--slim-arrow-down"></i></button>
 			<div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="t4c0o2738">
 			  <nav class="fd-menu fd-menu--compact">
 				<ul class="fd-menu__list fd-menu__list--no-shadow">
@@ -1055,10 +1091,13 @@ export const overFlowRTEWithSolidToolBar = () => `
 			</div>
 		  </div>
 		  <div class="fd-button-split fd-button-split--compact fd-button-split--transparent fd-has-margin-right-small" role="group" aria-label="button-split">
-			<button class="fd-button fd-button--compact fd-button--transparent" aria-haspopup="true" aria-expanded="false" aria-controls="t4c0o276" aria-label="button">
+			<button id="solidToolbarRTEBackgroundColor"  class="fd-button fd-button--compact fd-button--transparent" aria-haspopup="true" aria-expanded="false" aria-controls="t4c0o278" aria-label="button" toggleElAttrs('t4c0o278', ['aria-hidden']);
+			toggleElAttrs('solidToolbarRTEBackgroundColor', ['aria-expanded']);>
 			<i class="sap-icon--color-fill"></i> 
 			</button>
-			<button class="fd-button fd-button--compact fd-button--transparent" aria-controls="t4c0o278" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
+			<button id="solidToolbarRTEBackgroundColorIcon" class="fd-button fd-button--compact fd-button--transparent" aria-controls="t4c0o278" aria-haspopup="true" aria-expanded="false" aria-label="More" toggleElAttrs('t4c0o278', ['aria-hidden']);
+			toggleElAttrs('solidToolbarRTEBackgroundColorIcon', ['aria-expanded']);>
+			<i class="sap-icon--slim-arrow-down"></i></button>
 			<div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="t4c0o278">
 			  <nav class="fd-menu fd-menu--compact">
 				<ul class="fd-menu__list fd-menu__list--no-shadow">
@@ -1090,7 +1129,8 @@ export const overFlowRTEWithSolidToolBar = () => `
 		  </button>
 		  <div class="fd-popover">
 			<div class="fd-popover__control">
-			  <button class="fd-button fd-button--compact fd-button--transparent" aria-controls="t4c0o2740" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--overflow"></i></button>
+			  <button id="solidToolbarRTEOverFlow" class="fd-button fd-button--compact fd-button--transparent" aria-controls="t4c0o2740" aria-haspopup="true" aria-expanded="false" aria-label="More"toggleElAttrs('t4c0o2740', ['aria-hidden']);
+			  toggleElAttrs('solidToolbarRTEOverFlow', ['aria-expanded']);><i class="sap-icon--overflow"></i></button>
 			  <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true" id="t4c0o2740">
 				<nav class="fd-menu fd-menu--compact">
 				  <ul class="fd-menu__list">
@@ -1103,7 +1143,7 @@ export const overFlowRTEWithSolidToolBar = () => `
 					<li class="fd-menu__item">
 					  <a class="fd-menu__link" role="button" href="#">
 					  <span class="fd-menu__addon-before"><i class="sap-icon--edit"></i></span>
-					  <span class="fd-menu__title">Blue</span>
+					  <span class="fd-menu__title">Edit</span>
 					  </a>
 					</li>
 				  </ul>
