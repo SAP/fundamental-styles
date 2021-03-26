@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.31...v0.17.0-rc.32) (2021-03-26)
+
+
+### Bug Fixes
+
+* remove margin from Resizable-Card-Layout item ([#2214](https://github.com/SAP/fundamental-styles/issues/2214)) ([d1060f6](https://github.com/SAP/fundamental-styles/commit/d1060f660511e2fc604a606da530b56fb313e077))
+
 ## [0.17.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.30...v0.17.0-rc.31) (2021-03-24)
 
 ## [0.17.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.29...v0.17.0-rc.30) (2021-03-23)
