@@ -21,6 +21,8 @@ $block: #{$fd-namespace}-object-list;
 
     .#{$fd-namespace}-list__link {
       @include fd-active() {
+        background: var(--sapList_Active_Background);
+
         .#{$block}__intro,
         .#{$block}__object-attribute,
         .#{$fd-namespace}-avatar,
