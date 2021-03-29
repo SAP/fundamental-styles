@@ -79,6 +79,10 @@ $block: #{$fd-namespace}-radio;
       left: $fd-radio-inner-content-padding;
     }
 
+    @include fd-focus() {
+      outline: none;
+    }
+
     @include fd-hover() {
       &::before {
         background-color: var(--sapField_Hover_Background);
