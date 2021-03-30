@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.35...v0.17.0-rc.36) (2021-03-30)
+
+
+### Bug Fixes
+
+* list docs, focus colors on menu and object list ([#2222](https://github.com/SAP/fundamental-styles/issues/2222)) ([b704440](https://github.com/SAP/fundamental-styles/commit/b70444060534c08cb5a04ae85df2ee505138fc2d))
+
 ## [0.17.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.34...v0.17.0-rc.35) (2021-03-30)
 
 
