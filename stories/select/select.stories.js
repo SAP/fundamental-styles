@@ -879,7 +879,11 @@ export const textWrapping = () => `<div style="height: 300px">
             <li
                 id="textWrappingSelectCombobox-currentlyFocusedItem"
                 class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
-                <span class="fd-list__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span>
+                <span class="fd-list__title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat.
+                </span>
                 <span class="fd-list__secondary">A1</span>
             </li>
             <li class="fd-list__item" role="option" tabindex="-1">
@@ -1040,6 +1044,80 @@ matchSelectPopoverBodySize.parameters = {
         iframeHeight: 300,
         storyDescription: `
 Select can be displayed as a popover, using all of its specifications. The default size for the popover body is often longer than the text length. The body can be adjusted to match the text length by adding the \`fd-popover__body—dropdown-fill\` class to \`fd-popover__body\`. See **Popover** for more details.       
+        `
+    }
+};
+
+export const largerSelect = () => `<div style="height: 250px">
+    <label class="fd-form-label" id="largeSelectPopoverSizeLabel">Choose an option</label><br />
+    <div class="fd-popover">
+    <div class="fd-popover__control">
+        <div class="fd-select">
+            <button
+                aria-labelledby="largeSelectPopoverSizeLabel"
+                class="fd-select__control"
+                tabindex="0"
+                id="largeSelectPopoverBodySizeLabelCombobx"
+                onclick="
+                    toggleElAttrs('h0GTKE325', ['aria-hidden']);
+                    toggleElAttrs('matchSelectPopoverBodySizeSelectCombobox', ['aria-expanded']);
+                "
+                aria-expanded="true"
+                aria-haspopup="listbox">
+                <span id="largeSelectPopoverSizeValue" class="fd-select__text-content">Larger Option Than Usual</span>
+                <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                </span>
+            </button>
+        </div>
+    </div>
+    <div
+        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+        aria-hidden="false"
+        id="h0GGFE325">
+        <ul
+            aria-activedescendant="largeSelectPopoverBodySizeSelectCombobox-currentlyFocusedItem"
+            aria-labelledby="largeSelectPopoverSizeLabel"
+            class="fd-list fd-list--dropdown fd-list--large-dropdown"
+            role="listbox">
+            <li
+                id="largeSelectPopoverBodySizeSelectCombobox-currentlyFocusedItem"
+                class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
+                <span class="fd-list__title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </span>
+            </li>
+            <li class="fd-list__item" role="option" tabindex="-1">
+                <span class="fd-list__title">List item 2</span>
+            </li>
+            <li class="fd-list__item" role="option" tabindex="-1">
+                <span class="fd-list__title">List item 3</span>
+            </li>
+            <li class="fd-list__item" role="option" tabindex="-1">
+                <span class="fd-list__title">List item 4</span>
+            </li>
+        </ul>
+    </div>
+    </div>
+</div>
+`;
+
+largerSelect.storyName = 'Large Select';
+
+largerSelect.parameters = {
+    docs: {
+        iframeHeight: 300,
+        storyDescription: `
+There is a way to make larger select select body, To achieve it, add \`fd-list--large-dropdown\` to \`fd-list\` element.        
         `
     }
 };
