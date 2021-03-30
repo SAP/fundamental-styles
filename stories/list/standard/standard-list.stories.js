@@ -93,7 +93,7 @@ unread.parameters = {
     }
 };
 
-export const interractive = () => `<h4>Interractive Items</h4>
+export const interactive = () => `<h4>Interactive Items</h4>
 <ul class="fd-list" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
       <span class="fd-list__title">List item 1</span>
@@ -110,16 +110,17 @@ export const interractive = () => `<h4>Interractive Items</h4>
   <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive is-selected">
       <span class="fd-list__title">List item 5 - with .is-selected</span>
   </li>
+</ul>
 `;
 
-interractive.storyName = 'Interractive';
+interactive.storyName = 'Interactive';
 
-interractive.parameters = {
+interactive.parameters = {
     docs: {
         iframeHeight: 445,
         storyDescription: `
-            The \`fd-list__item--interractive\` will force list item to handle hover and active states. 
-            Usage of this modifier is not needed on \`Selection\`, \`Navigation\` and \`Action\` modes.
+The \`fd-list__item--interractive\` will force list item to handle hover and active states. 
+Usage of this modifier is not needed on \`Selection\`, \`Navigation\` and \`Action\` modes.
         `
     }
 };

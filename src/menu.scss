@@ -157,6 +157,10 @@ $block: #{$fd-namespace}-menu;
       .#{$block}__addon-after {
         color: var(--sapList_Active_TextColor);
       }
+
+      @include fd-focus() {
+        outline-color: var(--sapContent_ContrastFocusColor);
+      }
     }
 
     @include fd-disabled() {
