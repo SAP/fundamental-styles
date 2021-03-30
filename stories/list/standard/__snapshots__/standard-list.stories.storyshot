@@ -1019,10 +1019,10 @@ exports[`Storyshots Components/List/Standard Icon 1`] = `
 </ul>
 `;
 
-exports[`Storyshots Components/List/Standard Interractive 1`] = `
+exports[`Storyshots Components/List/Standard Interactive 1`] = `
 <section>
   <h4>
-    Interractive Items
+    Interactive Items
   </h4>
   
 
