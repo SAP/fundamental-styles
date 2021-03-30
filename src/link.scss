@@ -10,7 +10,7 @@ $block: #{$fd-namespace}-link;
   @include fd-reset();
   @include fd-link();
 
-  @include fd-icon-selector() {
+  @include fd-icon-element-base() {
     text-decoration: var(--fdLink_Text_Decoration);
   }
 
