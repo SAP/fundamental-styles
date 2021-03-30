@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.33...v0.17.0-rc.34) (2021-03-30)
+
+
+### Bug Fixes
+
+* Remove outline from radio button ([#2221](https://github.com/SAP/fundamental-styles/issues/2221)) ([1c4c476](https://github.com/SAP/fundamental-styles/commit/1c4c4764ceb61c76cb8f9bd96b7c23dd0d973ebf))
+
 ## [0.17.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.32...v0.17.0-rc.33) (2021-03-30)
 
 
