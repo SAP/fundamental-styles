@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.32...v0.17.0-rc.33) (2021-03-30)
+
+
+### Features
+
+* larger select body [ci visual] ([#2218](https://github.com/SAP/fundamental-styles/issues/2218)) ([ecf1f7c](https://github.com/SAP/fundamental-styles/commit/ecf1f7c131865ed239fccdca5864a65f6cb6a7b4))
+
 ## [0.17.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.31...v0.17.0-rc.32) (2021-03-26)
 
 
