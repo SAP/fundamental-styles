@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.34...v0.17.0-rc.35) (2021-03-30)
+
+
+### Bug Fixes
+
+* Add color to link icon ([#2220](https://github.com/SAP/fundamental-styles/issues/2220)) ([d907097](https://github.com/SAP/fundamental-styles/commit/d90709736977aecf1de1f8fb7d7ba72721343cca))
+
 ## [0.17.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.33...v0.17.0-rc.34) (2021-03-30)
 
 
