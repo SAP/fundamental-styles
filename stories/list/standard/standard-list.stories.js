@@ -110,6 +110,7 @@ export const interactive = () => `<h4>Interactive Items</h4>
   <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive is-selected">
       <span class="fd-list__title">List item 5 - with .is-selected</span>
   </li>
+</ul>
 `;
 
 interactive.storyName = 'Interactive';
