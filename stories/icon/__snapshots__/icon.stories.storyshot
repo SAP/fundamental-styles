@@ -7888,6 +7888,42 @@ exports[`Storyshots Components/Icon Available Icons 1`] = `
     </div>
   </div>
   <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon sap-icon--clear-all"
+      style="font-size:3rem"
+    />
+    <div>
+      .sap-icon--clear-all
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon sap-icon--command-line-interfaces"
+      style="font-size:3rem"
+    />
+    <div>
+      .sap-icon--command-line-interfaces
+    </div>
+  </div>
+  <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon sap-icon--icon-sum"
+      style="font-size:3rem"
+    />
+    <div>
+      .sap-icon--icon-sum
+    </div>
+  </div>
+  <br />
 </div>
 `;
 
