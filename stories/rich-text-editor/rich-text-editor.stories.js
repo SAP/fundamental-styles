@@ -217,7 +217,7 @@ export const cozyMode = () => `
 		  <div class="fd-button-split fd-button-split--transparent fd-has-margin-right-small" role="group" aria-label="button-split">
 			<button id="cozyFontcolor" class="fd-button fd-button--transparent" aria-haspopup="true" aria-expanded="false" aria-label="button" aria-controls="t4c0o273" toggleElAttrs('t4c0o273', ['aria-hidden']);
 			toggleElAttrs('cozyFontcolor', ['aria-expanded']);>
-			  <svg class="RTE_fontColorIcon" xmlns="http://www.w3.org/2000/svg" 
+			  <svg xmlns="http://www.w3.org/2000/svg" 
 				viewBox="0 0 16 16" >
 				<path d="M662.477,379.355h3.038l.806,2.7h1.163l-2.729-9h-1.518l-2.753,9h1.21Zm1.519-5.4,1.281,4.5h-2.586Z" transform="translate(-656.047 -373.055)" style="fill:var(--sapButton_IconColor)"/>
 				<rect class="outline" x="1" y="12" width="14" height="3" rx="0.2" ry="0.2"/>
@@ -486,7 +486,7 @@ export const compactMode = () => `<div style="height:450px;overflow-y:hidden">
 		<div class="fd-button-split fd-button-split--compact fd-button-split--transparent fd-has-margin-right-small" role="group" aria-label="button-split">
 		  <button class="fd-button fd-button--compact fd-button--transparent" id="compactRTEFontColor" aria-haspopup="true" aria-expanded="false" aria-label="button" aria-controls="t4c0o2736" toggleElAttrs('t4c0o2736', ['aria-hidden']);
 		  toggleElAttrs('compactRTEFontColor', ['aria-expanded']);>
-			<svg class="RTE_fontColorIcon" xmlns="http://www.w3.org/2000/svg" 
+			<svg xmlns="http://www.w3.org/2000/svg" 
 			  viewBox="0 0 16 16">
 			  <path d="M662.477,379.355h3.038l.806,2.7h1.163l-2.729-9h-1.518l-2.753,9h1.21Zm1.519-5.4,1.281,4.5h-2.586Z" transform="translate(-656.047 -373.055)" style="fill:var(--sapButton_IconColor)"/>
 			  <rect class="outline" x="1" y="12" width="14" height="3" rx="0.2" ry="0.2"/>
@@ -756,7 +756,7 @@ export const overFlowRTE = () => `
 			<button id="overflowRTEfontcolor"class="fd-button fd-button--compact fd-button--transparent" aria-haspopup="true" aria-expanded="false" aria-label="button" aria-controls="t4c0o2737" 
 			toggleElAttrs('t4c0o2737', ['aria-hidden']);
 			toggleElAttrs('overflowRTEfontcolor', ['aria-expanded']);>
-			  <svg class="RTE_fontColorIcon" xmlns="http://www.w3.org/2000/svg" 
+			  <svg xmlns="http://www.w3.org/2000/svg" 
 				viewBox="0 0 16 16">
 				<path d="M662.477,379.355h3.038l.806,2.7h1.163l-2.729-9h-1.518l-2.753,9h1.21Zm1.519-5.4,1.281,4.5h-2.586Z" transform="translate(-656.047 -373.055)" style="fill:var(--sapButton_IconColor)"/>
 				<rect class="outline" x="1" y="12" width="14" height="3" rx="0.2" ry="0.2"/>
@@ -1062,7 +1062,7 @@ export const overFlowRTEWithSolidToolBar = () => `
 			<button id="solidToolbarRTEFontColor" class="fd-button fd-button--compact fd-button--transparent" aria-haspopup="true" aria-expanded="false" aria-label="button" aria-controls="t4c0o2738" 
 			toggleElAttrs('t4c0o2738', ['aria-hidden']);
 			toggleElAttrs('solidToolbarRTEFontColor', ['aria-expanded']);>
-			  <svg class="RTE_fontColorIcon" xmlns="http://www.w3.org/2000/svg" 
+			  <svg xmlns="http://www.w3.org/2000/svg" 
 				viewBox="0 0 16 16">
 				<path d="M662.477,379.355h3.038l.806,2.7h1.163l-2.729-9h-1.518l-2.753,9h1.21Zm1.519-5.4,1.281,4.5h-2.586Z" transform="translate(-656.047 -373.055)" style="fill:var(--sapButton_IconColor)"/>
 				<rect class="outline" x="1" y="12" width="14" height="3" rx="0.2" ry="0.2"/>
