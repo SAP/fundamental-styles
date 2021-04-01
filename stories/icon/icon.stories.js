@@ -1,4 +1,6 @@
 import data from './data.json';
+import dataBusinessSuite from './dataBusinessSuite.json';
+import dataTNT from './dataTNT.json';
 
 export default {
     title: 'Components/Icon',
@@ -53,6 +55,50 @@ availableIcons.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: 'There are several icons available. To display any one of these icons, add the <code>sap-icon--{icon-name}</code> modifier class identifying the icon style to the <code>sap-icon</code> class. For example, for a search icon, add <code>sap-icon sap-icon--search</code> with the desired font size value.'
+    },
+    skipRTLSnapshot: true
+};
+
+export const businessSuiteIcons = () => {
+    const div = document.createElement('div');
+    div.className = 'fddocs-container';
+    div.innerHTML = dataBusinessSuite.businessSuiteIcons.map((icon) => {
+        return (
+            '<div class="fddocs-container--icon">' +
+                `<span class="sap-icon-business-suite sap-icon-business-suite--${icon}" style="font-size:3rem"></span>` +
+                `<div>.sap-icon-business-suite--${icon}</div>` +
+            '</div><br />'
+        );
+    }).join('');
+    return div.outerHTML;
+};
+
+businessSuiteIcons.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'businessSuiteIcons'
+    },
+    skipRTLSnapshot: true
+};
+
+export const tntIcons = () => {
+    const div = document.createElement('div');
+    div.className = 'fddocs-container';
+    div.innerHTML = dataTNT.tntIcons.map((icon) => {
+        return (
+            '<div class="fddocs-container--icon">' +
+                `<span class="sap-icon-tnt sap-icon-tnt--${icon}" style="font-size:3rem"></span>` +
+                `<div>.sap-icon-tnt--${icon}</div>` +
+            '</div><br />'
+        );
+    }).join('');
+    return div.outerHTML;
+};
+
+tntIcons.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription: 'tntIcons'
     },
     skipRTLSnapshot: true
 };
