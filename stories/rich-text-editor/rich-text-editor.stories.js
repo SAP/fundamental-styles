@@ -15,7 +15,7 @@ export const cozyMode = () => `
 		<div class="fd-toolbar fd-toolbar--title fd-toolbar-active fd-toolbar--cozy">
 		  <h4>RTE Title</h4>
 		</div>
-		
+
 		<div class="fd-toolbar fd-toolbar--cozy">
 		  <button class="fd-button " aria-label="bold text">
 		  <i class="sap-icon--bold-text"></i>
@@ -189,6 +189,7 @@ export const cozyMode = () => `
 				</button>
 			  </div>
 			</div>
+			
 			<div aria-hidden="true" class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" id="h0C6A327">
 			  <ul aria-activedescendant="cozyRTEFontSize-currentlyFocusedItem" aria-label="select-option" class="fd-list fd-list--dropdown" role="listbox">
 				<li id="cozyRTEFontSize-currentlyFocusedItem" class="fd-list__item" role="option" tabindex="0">
