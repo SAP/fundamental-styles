@@ -37,13 +37,6 @@
   }
 }
 
-@font-face {
-  font-family: 'BusinessSuiteInAppSymbols';
-  src: url('../fonts/BusinessSuiteInAppSymbols.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 // business suite icon mixin
 @mixin fd-business-suite-icon($key, $position: 'before') {
   @include fd-business-suite-icon-base($position);
@@ -76,14 +69,6 @@
   } @else {
     @warn "Unknown `#{$glyph}` in $fd-business-suite-icons map";
   }
-}
-
-// SAP-icons-TNT
-@font-face {
-  font-family: 'SAP-icons-TNT';
-  src: url('../fonts/SAP-icons-TNT.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
 }
 
 // SAP-icons-TNT icon mixin

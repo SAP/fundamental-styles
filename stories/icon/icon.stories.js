@@ -65,8 +65,8 @@ export const businessSuiteIcons = () => {
     div.innerHTML = dataBusinessSuite.businessSuiteIcons.map((icon) => {
         return (
             '<div class="fddocs-container--icon">' +
-                `<span class="sap-icon-business-suite sap-icon-business-suite--${icon}" style="font-size:3rem"></span>` +
-                `<div>.sap-icon-business-suite--${icon}</div>` +
+                `<span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--${icon}" style="font-size:3rem"></span>` +
+                `<div>.sap-icon-businessSuiteInAppSymbols--${icon}</div>` +
             '</div><br />'
         );
     }).join('');
@@ -76,7 +76,7 @@ export const businessSuiteIcons = () => {
 businessSuiteIcons.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'businessSuiteIcons'
+        storyDescription: 'For icons of <b>BusinessSuiteInAppSymbols</b> font-family add the <code>sap-icon-businessSuiteInAppSymbols--{icon-name}</code> modifier class identifying the icon style to the <code>sap-icon-businessSuiteInAppSymbols</code> class. For example, for a <i>heart</i> icon, add <code>sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart</code> with the desired font size value.'
     },
     skipRTLSnapshot: true
 };
@@ -87,8 +87,8 @@ export const tntIcons = () => {
     div.innerHTML = dataTNT.tntIcons.map((icon) => {
         return (
             '<div class="fddocs-container--icon">' +
-                `<span class="sap-icon-tnt sap-icon-tnt--${icon}" style="font-size:3rem"></span>` +
-                `<div>.sap-icon-tnt--${icon}</div>` +
+                `<span class="sap-icon-TNT sap-icon-TNT--${icon}" style="font-size:3rem"></span>` +
+                `<div>.sap-icon-TNT--${icon}</div>` +
             '</div><br />'
         );
     }).join('');
@@ -98,7 +98,7 @@ export const tntIcons = () => {
 tntIcons.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'tntIcons'
+        storyDescription: 'For icons of <b>SAP-icons-TNT</b> font-family add the <code>sap-icon-TNT--{icon-name}</code> modifier class identifying the icon style to the <code>sap-icon-TNT</code> class. For example, for an <i>exceptions</i> icon, add <code>sap-icon-TNT sap-icon-TNT--exceptions</code> with the desired font size value.'
     },
     skipRTLSnapshot: true
 };

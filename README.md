@@ -81,6 +81,20 @@ This project does not contain fonts and icons - they must be added to your proje
         font-style: normal;
     }
 
+    @font-face {
+        font-family: 'BusinessSuiteInAppSymbols';
+        src: url('~@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/fonts/BusinessSuiteInAppSymbols.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'SAP-icons-TNT';
+        src: url('~@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/fonts/SAP-icons-TNT.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
     html {
       font-size: 16px;
     }
