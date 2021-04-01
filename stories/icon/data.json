@@ -656,6 +656,9 @@
         "feedback",
         "information",
         "s4hana",
-        "translate"
+        "translate",
+        "clear-all",
+        "command-line-interfaces",
+        "icon-sum"
     ]
 }
