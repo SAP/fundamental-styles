@@ -15,6 +15,7 @@ export const cozyMode = () => `
 		<div class="fd-toolbar fd-toolbar--title fd-toolbar-active fd-toolbar--cozy">
 		  <h4>RTE Title</h4>
 		</div>
+		
 		<div class="fd-toolbar fd-toolbar--cozy">
 		  <button class="fd-button " aria-label="bold text">
 		  <i class="sap-icon--bold-text"></i>
