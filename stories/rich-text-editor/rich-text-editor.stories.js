@@ -189,7 +189,6 @@ export const cozyMode = () => `
 				</button>
 			  </div>
 			</div>
-			
 			<div aria-hidden="true" class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" id="h0C6A327">
 			  <ul aria-activedescendant="cozyRTEFontSize-currentlyFocusedItem" aria-label="select-option" class="fd-list fd-list--dropdown" role="listbox">
 				<li id="cozyRTEFontSize-currentlyFocusedItem" class="fd-list__item" role="option" tabindex="0">
