@@ -1,10 +1,30 @@
 @import "./mixins";
 
+/* stylelint-disable */
 $block: sap-icon;
+$blockBusiness: sap-icon-businessSuiteInAppSymbols;
+$blockTNT: sap-icon-TNT;
+/* stylelint-enable */
 
 [class*="#{$block}"] {
   @include fd-reset();
   @include fd-icon-base();
+
+  font-style: normal;
+  display: inline-block;
+}
+
+[class*='#{$blockBusiness}'] {
+  @include fd-reset();
+  @include fd-business-suite-icon-base();
+
+  font-style: normal;
+  display: inline-block;
+}
+
+[class*='#{$blockTNT}'] {
+  @include fd-reset();
+  @include fd-tnt-icon-base();
 
   font-style: normal;
   display: inline-block;
@@ -18,36 +38,12 @@ $block: sap-icon;
   }
 }
 
-// Business Suite Icons
-$blockBusiness: sap-icon-business-suite;
-
-[class*='#{$blockBusiness}'] {
-  @include fd-reset();
-  @include fd-business-suite-icon-base();
-
-  font-family: 'BusinessSuiteInAppSymbols';
-  font-style: normal;
-  display: inline-block;
-}
-
 .#{$blockBusiness} {
   @each $key, $value in $fd-business-suite-icons {
     &--#{$key} {
       @include fd-business-suite-icon-glyph($key);
     }
   }
-}
-
-// SAP-icons-TNT Icons
-$blockTNT: sap-icon-tnt;
-
-[class*='#{$blockTNT}'] {
-  @include fd-reset();
-  @include fd-tnt-icon-base();
-
-  font-family: 'SAP-icons-TNT';
-  font-style: normal;
-  display: inline-block;
 }
 
 .#{$blockTNT} {
