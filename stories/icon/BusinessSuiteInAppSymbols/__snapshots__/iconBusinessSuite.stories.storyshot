@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Business Suite Icons 1`] = `
+exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Suite Icons 1`] = `
 <div
   class="fddocs-container"
 >
@@ -2563,7 +2563,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Business Suite Ico
 </div>
 `;
 
-exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Sizes 1`] = `
+exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Sizes 1`] = `
 <section>
   
 

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Icons/SAPIcons Available Icons 1`] = `
+exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
 <div
   class="fddocs-container"
 >
@@ -7927,7 +7927,7 @@ exports[`Storyshots Components/Icons/SAPIcons Available Icons 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Icons/SAPIcons Sizes 1`] = `
+exports[`Storyshots Components/Icons/SAP Icons Sizes 1`] = `
 <section>
   
 

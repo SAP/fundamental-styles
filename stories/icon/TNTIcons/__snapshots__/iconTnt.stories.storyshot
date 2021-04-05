@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Icons/TNTIcons Sizes 1`] = `
+exports[`Storyshots Components/Icons/TNT Icons Sizes 1`] = `
 <section>
   
 
@@ -31,7 +31,7 @@ exports[`Storyshots Components/Icons/TNTIcons Sizes 1`] = `
 </section>
 `;
 
-exports[`Storyshots Components/Icons/TNTIcons Tnt Icons 1`] = `
+exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
 <div
   class="fddocs-container"
 >
