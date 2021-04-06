@@ -3,7 +3,7 @@ import dataBusinessSuite from './dataBusinessSuite.json';
 export default {
     title: 'Components/Icons/BusinessSuiteInAppSymbol Icons',
     parameters: {
-        description: `Icons are used to provide visual clarity, save screen space, and help guide users as they navigate an application. They are often used as visual elements within other components, although they can be used independently, given that they can be read by screen readers or have a tooltip for accessibility purposes. See [Getting Started](../getting-started.html#project-configuration) for instructions on how to use the SAP icon font on your page.
+        description: `Icons are used to provide visual clarity, save screen space, and help guide users as they navigate an application. They are often used as visual elements within other components, although they can be used independently, given that they can be read by screen readers or have a tooltip for accessibility purposes. See [Project Confirguration](https://sap.github.io/fundamental-styles/?path=/docs/introduction-overview--page) for instructions on how to use the 'BusinessSuiteInAppSymbols' icon font on your page.
 
 ##Usage
 **Use the icon if:**
