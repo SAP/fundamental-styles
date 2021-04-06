@@ -22,15 +22,17 @@ const includedStories = storiesToInclude();
 module.exports = {
   stories: ['../stories/docs/introduction.stories.mdx', `../stories/**/*.@${includedStories}.@(js|mdx)`],
   addons: [
+    {
+      name: '@storybook/addon-essentials',
+      options: {
+          backgrounds: false,
+      },
+  },
     "@storybook/addon-knobs/register",
-    "@storybook/addon-actions",
     "@storybook/addon-links",
     "@storybook/preset-scss",
     "@storybook/addon-a11y",
     "@storybook/addon-cssresources/register",
-    "@storybook/addon-viewport/register",
-    '@storybook/addon-docs',
-    '@storybook/addon-toolbars',
   ],
   webpackFinal: async (config) => {
     config.module.rules.push({
