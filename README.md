@@ -49,7 +49,7 @@ The distrubtion folder contains several css files per component: a default file 
 See the [Icon Component](https://fundamental-styles.netlify.app/?path=/docs/components-icon--sizes) for a list of icon class names. See Project Configuration below for instructions to include SAP Fiori 3 icons in your project.
 
 ### Project Configuration
-This project does not contain fonts and icons - they must be added to your project separately. Download the @sap-theming liibrary. After adding fonts and icons to your project, include the following in your css:
+This project does not contain fonts and icons - they must be added to your project separately. Download the @sap-theming library. After adding fonts and icons to your project, include the following in your css:
 
     @font-face {
         font-family: "72";
@@ -77,6 +77,20 @@ This project does not contain fonts and icons - they must be added to your proje
         font-family: "SAP-icons";
         src: url("~@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/fonts/SAP-icons.woff")
             format("woff");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'BusinessSuiteInAppSymbols';
+        src: url('~@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/fonts/BusinessSuiteInAppSymbols.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'SAP-icons-TNT';
+        src: url('~@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/fonts/SAP-icons-TNT.woff') format('woff');
         font-weight: normal;
         font-style: normal;
     }

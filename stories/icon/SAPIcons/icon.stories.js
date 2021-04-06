@@ -1,7 +1,7 @@
 import data from './data.json';
 
 export default {
-    title: 'Components/Icon',
+    title: 'Components/Icons/SAP Icons',
     parameters: {
         description: `Icons are used to provide visual clarity, save screen space, and help guide users as they navigate an application. They are often used as visual elements within other components, although they can be used independently, given that they can be read by screen readers or have a tooltip for accessibility purposes. See [Getting Started](../getting-started.html#project-configuration) for instructions on how to use the SAP icon font on your page.
 
