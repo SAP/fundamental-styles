@@ -2,12 +2,12 @@
 @import "./mixins";
 
 /*!
-.fd-table(--compact, --condensed, --no-horizontal-borders, --no-vertical-borders)
+.fd-table(--compact, --condensed, --no-horizontal-borders, --no-vertical-borders, --fixed)
     thead(.fd-table__header(--no-horizontal-borders, --no-vertical-borders))
     tbody(.fd-table__body(--no-horizontal-borders, --no-vertical-borders))
     tfoot(.fd-table__footer)
         tr(.fd-table__row)([aria-selected])
-          td(.fd-table__cell(--status-indicator, --checkbox, --fit-content)) + semantic
+          td(.fd-table__cell(--status-indicator, --checkbox, --fit-content, --fixed)) + semantic
 */
 $block: #{$fd-namespace}-table;
 
@@ -204,7 +204,7 @@ $block: #{$fd-namespace}-table;
     &--fixed {
       left: 0;
       position: absolute;
-      background-color: $fd-table-basic-background;
+      background-color: inherit;
       border-bottom: $fd-table-border;
 
       @include fd-flex-vertical-center();
@@ -310,6 +310,7 @@ $block: #{$fd-namespace}-table;
           }
         }
       }
+
       &,
       .#{$block}__cell {
         @include fd-hover() {
@@ -336,10 +337,19 @@ $block: #{$fd-namespace}-table;
     &--focusable {
       @include fd-fiori-focus();
     }
+
+    @include fd-selected() {
+      .#{$block}__cell--fixed {
+        @include fd-hover() {
+          background-color: var(--sapList_Hover_SelectionBackground);
+        }
+      }
+    }
   }
 
   &__footer {
     background-color: var(--sapList_FooterBackground);
+
     .#{$block}__row {
       border-top: 0.125rem solid var(--sapList_TableFooterBorder);
       vertical-align: middle;
