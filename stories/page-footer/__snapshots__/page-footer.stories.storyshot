@@ -1,0 +1,491 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
+<section>
+  
+
+  <br />
+  
+
+  <label
+    class="fd-form-label"
+  >
+    Page footer with 'xl' (Extra Large) size
+  </label>
+  <br />
+  <br />
+  
+
+
+  <div
+    class="fd-page-footer fd-page-footer--xl"
+  >
+    
+	
+    <div
+      class="fd-page-footer__logo"
+    >
+      	
+		
+      <img
+        alt="page footer logo"
+        src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png"
+      />
+      
+	
+    </div>
+    
+	
+    <div
+      class="fd-page-footer__container"
+    >
+      
+        
+      <div
+        class="fd-page-footer__row"
+      >
+        
+			
+        <a
+          class="fd-page-footer__row__item fd-link"
+          href="/"
+          id="fd-link-19"
+          title="Supported Browser"
+        >
+          Supported Browser
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row__item fd-link"
+          href="/"
+          id="fd-link-20"
+          title="Security Disclosure"
+        >
+          Security Disclosure
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row__item fd-link"
+          href="/"
+          id="fd-link-21"
+          title="Privacy Statement"
+        >
+          Privacy Statement
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row__item fd-link"
+          href="/"
+          id="fd-link-22"
+          title="Cookie Statement"
+        >
+          Cookie Statement
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row__item fd-link"
+          href="/"
+          id="fd-link-23"
+          title="Participant Team"
+        >
+          Participant Team
+        </a>
+        
+        
+      </div>
+      
+		
+      <div
+        class="fd-page-footer__text"
+      >
+        
+			
+        <span
+          class="fd-form-label"
+        >
+           1992-2021 @copyright all right reserved.
+        </span>
+        
+		
+      </div>
+      
+	
+    </div>
+    
+
+  </div>
+  
+
+
+  <br />
+  
+
+  <label
+    class="fd-form-label"
+  >
+    Page footer with 'lg' (Large) size
+  </label>
+  <br />
+  <br />
+  
+
+
+  <div
+    class="fd-page-footer fd-page-footer--lg"
+  >
+    
+	
+    <div
+      class="fd-page-footer__logo"
+    >
+      	
+		
+      <img
+        alt="page footer logo"
+        src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png"
+      />
+      
+	
+    </div>
+    
+	
+    <div
+      class="fd-page-footer__container"
+    >
+      
+        
+      <div
+        class="fd-page-footer__row"
+      >
+        
+			
+        <a
+          class="fd-page-footer__row__item fd-link"
+          href="/"
+          id="fd-link-24"
+          title="Supported Browser"
+        >
+          Supported Browser
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row__item fd-link"
+          href="/"
+          id="fd-link-25"
+          title="Security Disclosure"
+        >
+          Security Disclosure
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row__item fd-link"
+          href="/"
+          id="fd-link-26"
+          title="Privacy Statement"
+        >
+          Privacy Statement
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row__item fd-link"
+          href="/"
+          id="fd-link-27"
+          title="Cookie Statement"
+        >
+          Cookie Statement
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row__item fd-link"
+          href="/"
+          id="fd-link-28"
+          title="Participant Team"
+        >
+          Participant Team
+        </a>
+        
+        
+      </div>
+      
+		
+      <div
+        class="fd-page-footer__text"
+      >
+        
+			
+        <span
+          class="fd-form-label"
+        >
+           1992-2021 @copyright all right reserved.
+        </span>
+        
+		
+      </div>
+      
+	
+    </div>
+    
+
+  </div>
+  
+
+
+
+  <br />
+  
+
+  <label
+    class="fd-form-label"
+  >
+    Page footer with 'md' (Medium) size
+  </label>
+  <br />
+  <br />
+  
+
+
+  <div
+    class="fd-page-footer fd-page-footer--md"
+  >
+    
+	
+    <div
+      class="fd-page-footer__logo"
+    >
+      	
+		
+      <img
+        alt="page footer logo"
+        src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png"
+      />
+      
+	
+    </div>
+    
+	
+    <div
+      class="fd-page-footer__container"
+    >
+      
+        
+      <div
+        class="fd-page-footer__row"
+      >
+        
+			
+        <a
+          class="fd-page-footer__row__item fd-link"
+          href="/"
+          id="fd-link-29"
+          title="Supported Browser"
+        >
+          Supported Browser
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row__item fd-link"
+          href="/"
+          id="fd-link-30"
+          title="Security Disclosure"
+        >
+          Security Disclosure
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row__item fd-link"
+          href="/"
+          id="fd-link-31"
+          title="Privacy Statement"
+        >
+          Privacy Statement
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row__item fd-link"
+          href="/"
+          id="fd-link-32"
+          title="Cookie Statement"
+        >
+          Cookie Statement
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row__item fd-link"
+          href="/"
+          id="fd-link-33"
+          title="Participant Team"
+        >
+          Participant Team
+        </a>
+        
+        
+      </div>
+      
+		
+      <div
+        class="fd-page-footer__text"
+      >
+        
+			
+        <span
+          class="fd-form-label"
+        >
+           1992-2021 @copyright all right reserved.
+        </span>
+        
+		
+      </div>
+      
+	
+    </div>
+    
+
+  </div>
+  
+
+
+
+  <br />
+  
+
+  <label
+    class="fd-form-label"
+  >
+    Page footer with 'sm' (Small) size
+  </label>
+  <br />
+  <br />
+  
+
+  <div
+    class="fd-page-footer fd-page-footer--sm"
+  >
+    
+	
+    <div
+      class="fd-page-footer__logo"
+    >
+      	
+		
+      <img
+        alt="page footer logo"
+        src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png"
+      />
+      
+	
+    </div>
+    
+	
+    <div
+      class="fd-page-footer__container"
+    >
+      
+        
+      <div
+        class="fd-page-footer__row"
+      >
+        
+			
+        <a
+          class="fd-page-footer__row__item fd-link"
+          href="/"
+          id="fd-link-34"
+          title="Supported Browser"
+        >
+          Supported Browser
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row__item fd-link"
+          href="/"
+          id="fd-link-35"
+          title="Security Disclosure"
+        >
+          Security Disclosure
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row__item fd-link"
+          href="/"
+          id="fd-link-36"
+          title="Privacy Statement"
+        >
+          Privacy Statement
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row__item fd-link"
+          href="/"
+          id="fd-link-37"
+          title="Cookie Statement"
+        >
+          Cookie Statement
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row__item fd-link"
+          href="/"
+          id="fd-link-38"
+          title="Participant Team"
+        >
+          Participant Team
+        </a>
+        
+        
+      </div>
+      
+		
+      <div
+        class="fd-page-footer__text"
+      >
+        
+			
+        <span
+          class="fd-form-label"
+        >
+           1992-2021 @copyright all right reserved.
+        </span>
+        
+		
+      </div>
+      
+	
+    </div>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Layouts/Page Footer Image And Icon Link 1`] = `
+
+
+`;
+
+exports[`Storyshots Layouts/Page Footer Multi Line Link 1`] = `
+
+
+`;
+
+exports[`Storyshots Layouts/Page Footer Single Line Link 1`] = `
+
+
+`;

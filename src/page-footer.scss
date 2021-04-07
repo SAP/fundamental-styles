@@ -1,0 +1,126 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-page-footer;
+
+$fd-page-footer-sizes: (
+  "xl": ("padding": 3rem),
+  "lg": ("padding": 2rem),
+  "md": ("padding": 1rem),
+  "sm": ("padding": 0.5rem)
+);
+
+.#{$block} {
+  @include fd-reset();
+
+  $fd-footer-padding-top: 0.75rem !default;
+  $fd-footer-margin-right: 1.5rem !default;
+  $fd-footer-link-padding-top: 0.25rem !default;
+
+  @mixin fd-truncate-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  background: var(--sapBaseColor);
+  position: relative;
+
+  &__logo {
+    @include fd-reset();
+
+    width: 3rem;
+    height: 1.5rem;
+    overflow: hidden;
+  }
+
+  &__row {
+    @include fd-reset();
+
+    word-break: break-all;
+    width: 70%;
+
+    &__item {
+      margin-right: $fd-footer-margin-right;
+
+      @include fd-rtl() {
+        margin-right: 0;
+        margin-left: $fd-footer-margin-right;
+      }
+
+      &--image {
+        display: inline-grid;
+      }
+    }
+
+    &:not(:first-child) {
+      padding-top: $fd-footer-link-padding-top;
+    }
+  }
+
+  &__text {
+    @include fd-reset();
+    @include fd-truncate-text();
+
+    align-self: flex-end;
+    position: absolute;
+    width: 30%;
+    text-align: right;
+
+    @include fd-rtl() {
+      text-align: left;
+    }
+  }
+
+  // sizes
+  @each $set-name, $size-set in $fd-page-footer-sizes {
+    &--#{$set-name} {
+      padding-right: map-get($size-set, 'padding');
+      padding-left: map-get($size-set, 'padding');
+      padding-top: 1.5rem;
+      padding-bottom: 2rem;
+      .#{$block}__container {
+        display: flex;
+
+        @include fd-flex(column);
+
+        padding-top: $fd-footer-padding-top;
+      }
+    }
+  }
+
+  @media (min-width: 361px) and (max-width: 768px) {
+
+    .#{$block}__row {
+      margin-right: 0;
+      width: 100%;
+    }
+
+    .#{$block}__text {
+      width: 90%;
+      text-align: left;
+    }
+
+    .#{$block}__container {
+      display: inline-block;
+      flex-direction: row;
+    }
+  }
+
+  @media (max-width: 360px) {
+
+    .#{$block}__row {
+      margin-right: 0;
+      width: 100%;
+    }
+
+    .#{$block}__text {
+      width: 90%;
+    }
+
+    .#{$block}__container {
+      display: inline-block;
+      flex-direction: row;
+    }
+  }
+}
