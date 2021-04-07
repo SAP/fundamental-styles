@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.40...v0.17.0-rc.41) (2021-04-07)
+
 ## [0.17.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.39...v0.17.0-rc.40) (2021-04-06)
 
 
