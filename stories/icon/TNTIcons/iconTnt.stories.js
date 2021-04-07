@@ -15,7 +15,7 @@ export default {
 Note: If an icon needs to be selected or have any interaction states, it is recommended to use the transparent button style. See **Button** for more details on how to implement it.
           `,
         tags: ['development'],
-        components: ['button', 'button-split', 'icon', 'menu', 'popover', 'segmented-button']
+        components: ['icon']
     }
 };
 
@@ -52,7 +52,7 @@ export const tntIcons = () => {
 tntIcons.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'For icons of <b>SAP-icons-TNT</b> font-family add the <code>sap-icon-TNT--{icon-name}</code> class identifying the icon style. For example, for an <i>exceptions</i> icon, add <code>sap-icon-TNT--exceptions</code> with the desired font size value.'
+        storyDescription: 'For icons of <b>SAP-icons-TNT</b> font-family add the <code>sap-icon-TNT--{icon-name}</code> prefix to the icon name. For example, for an <i>exceptions</i> icon, add <code>sap-icon-TNT--exceptions</code> with the desired font size value.'
     },
     skipRTLSnapshot: true
 };

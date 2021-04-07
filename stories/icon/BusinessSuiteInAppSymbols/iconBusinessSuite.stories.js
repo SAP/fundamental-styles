@@ -15,7 +15,7 @@ export default {
 Note: If an icon needs to be selected or have any interaction states, it is recommended to use the transparent button style. See **Button** for more details on how to implement it.
           `,
         tags: ['development'],
-        components: ['button', 'button-split', 'icon', 'menu', 'popover', 'segmented-button']
+        components: ['icon']
     }
 };
 
@@ -53,7 +53,7 @@ export const businessSuiteIcons = () => {
 businessSuiteIcons.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'For icons of <b>BusinessSuiteInAppSymbols</b> font-family add the <code>sap-icon-businessSuiteInAppSymbols--{icon-name}</code>class identifying the icon style. For example, for a <i>heart</i> icon, add <code>sap-icon-businessSuiteInAppSymbols--heart</code> with the desired font size value.'
+        storyDescription: 'For icons of <b>BusinessSuiteInAppSymbols</b> font-family add the <code>sap-icon-businessSuiteInAppSymbols--</code>prefix to the icon name. For example, for a <i>heart</i> icon, add <code>sap-icon-businessSuiteInAppSymbols--heart</code> with the desired font size value.'
     },
     skipRTLSnapshot: true
 };
