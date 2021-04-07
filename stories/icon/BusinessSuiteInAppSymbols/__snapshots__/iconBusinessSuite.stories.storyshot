@@ -8,7 +8,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart"
+      class="sap-icon-businessSuiteInAppSymbols--heart"
       style="font-size:3rem"
     />
     <div>
@@ -20,7 +20,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--quarter"
+      class="sap-icon-businessSuiteInAppSymbols--quarter"
       style="font-size:3rem"
     />
     <div>
@@ -32,7 +32,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--year"
+      class="sap-icon-businessSuiteInAppSymbols--year"
       style="font-size:3rem"
     />
     <div>
@@ -44,7 +44,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--equalizer"
+      class="sap-icon-businessSuiteInAppSymbols--equalizer"
       style="font-size:3rem"
     />
     <div>
@@ -56,7 +56,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--component"
+      class="sap-icon-businessSuiteInAppSymbols--component"
       style="font-size:3rem"
     />
     <div>
@@ -68,7 +68,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--component-private"
+      class="sap-icon-businessSuiteInAppSymbols--component-private"
       style="font-size:3rem"
     />
     <div>
@@ -80,7 +80,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--raw-material"
+      class="sap-icon-businessSuiteInAppSymbols--raw-material"
       style="font-size:3rem"
     />
     <div>
@@ -92,7 +92,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--sms"
+      class="sap-icon-businessSuiteInAppSymbols--sms"
       style="font-size:3rem"
     />
     <div>
@@ -104,7 +104,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--add-note"
+      class="sap-icon-businessSuiteInAppSymbols--add-note"
       style="font-size:3rem"
     />
     <div>
@@ -116,7 +116,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--change-time-horizon"
+      class="sap-icon-businessSuiteInAppSymbols--change-time-horizon"
       style="font-size:3rem"
     />
     <div>
@@ -128,7 +128,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--table-chart-customization"
+      class="sap-icon-businessSuiteInAppSymbols--table-chart-customization"
       style="font-size:3rem"
     />
     <div>
@@ -140,7 +140,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--delegated-important-task"
+      class="sap-icon-businessSuiteInAppSymbols--delegated-important-task"
       style="font-size:3rem"
     />
     <div>
@@ -152,7 +152,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--forklift"
+      class="sap-icon-businessSuiteInAppSymbols--forklift"
       style="font-size:3rem"
     />
     <div>
@@ -164,7 +164,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--coins"
+      class="sap-icon-businessSuiteInAppSymbols--coins"
       style="font-size:3rem"
     />
     <div>
@@ -176,7 +176,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--filter-menu"
+      class="sap-icon-businessSuiteInAppSymbols--filter-menu"
       style="font-size:3rem"
     />
     <div>
@@ -188,7 +188,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--target-to-date"
+      class="sap-icon-businessSuiteInAppSymbols--target-to-date"
       style="font-size:3rem"
     />
     <div>
@@ -200,7 +200,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--program"
+      class="sap-icon-businessSuiteInAppSymbols--program"
       style="font-size:3rem"
     />
     <div>
@@ -212,7 +212,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--phase"
+      class="sap-icon-businessSuiteInAppSymbols--phase"
       style="font-size:3rem"
     />
     <div>
@@ -224,7 +224,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--checklist"
+      class="sap-icon-businessSuiteInAppSymbols--checklist"
       style="font-size:3rem"
     />
     <div>
@@ -236,7 +236,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--mirrored-task"
+      class="sap-icon-businessSuiteInAppSymbols--mirrored-task"
       style="font-size:3rem"
     />
     <div>
@@ -248,7 +248,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--sub-project"
+      class="sap-icon-businessSuiteInAppSymbols--sub-project"
       style="font-size:3rem"
     />
     <div>
@@ -260,7 +260,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--checklist-item"
+      class="sap-icon-businessSuiteInAppSymbols--checklist-item"
       style="font-size:3rem"
     />
     <div>
@@ -272,7 +272,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--adhoc-analysis"
+      class="sap-icon-businessSuiteInAppSymbols--adhoc-analysis"
       style="font-size:3rem"
     />
     <div>
@@ -284,7 +284,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--change-analysis"
+      class="sap-icon-businessSuiteInAppSymbols--change-analysis"
       style="font-size:3rem"
     />
     <div>
@@ -296,7 +296,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--review-demands"
+      class="sap-icon-businessSuiteInAppSymbols--review-demands"
       style="font-size:3rem"
     />
     <div>
@@ -308,7 +308,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--project-definition"
+      class="sap-icon-businessSuiteInAppSymbols--project-definition"
       style="font-size:3rem"
     />
     <div>
@@ -320,7 +320,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--data-access"
+      class="sap-icon-businessSuiteInAppSymbols--data-access"
       style="font-size:3rem"
     />
     <div>
@@ -332,7 +332,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--define-shortage"
+      class="sap-icon-businessSuiteInAppSymbols--define-shortage"
       style="font-size:3rem"
     />
     <div>
@@ -344,7 +344,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--review-supplies"
+      class="sap-icon-businessSuiteInAppSymbols--review-supplies"
       style="font-size:3rem"
     />
     <div>
@@ -356,7 +356,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--change-log"
+      class="sap-icon-businessSuiteInAppSymbols--change-log"
       style="font-size:3rem"
     />
     <div>
@@ -368,7 +368,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--priority-1"
+      class="sap-icon-businessSuiteInAppSymbols--priority-1"
       style="font-size:3rem"
     />
     <div>
@@ -380,7 +380,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--priority-2"
+      class="sap-icon-businessSuiteInAppSymbols--priority-2"
       style="font-size:3rem"
     />
     <div>
@@ -392,7 +392,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--jam"
+      class="sap-icon-businessSuiteInAppSymbols--jam"
       style="font-size:3rem"
     />
     <div>
@@ -404,7 +404,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--milestone"
+      class="sap-icon-businessSuiteInAppSymbols--milestone"
       style="font-size:3rem"
     />
     <div>
@@ -416,7 +416,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--bulleting-with-numbers"
+      class="sap-icon-businessSuiteInAppSymbols--bulleting-with-numbers"
       style="font-size:3rem"
     />
     <div>
@@ -428,7 +428,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--decrease-indent"
+      class="sap-icon-businessSuiteInAppSymbols--decrease-indent"
       style="font-size:3rem"
     />
     <div>
@@ -440,7 +440,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--increase-indent"
+      class="sap-icon-businessSuiteInAppSymbols--increase-indent"
       style="font-size:3rem"
     />
     <div>
@@ -452,7 +452,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--bold"
+      class="sap-icon-businessSuiteInAppSymbols--bold"
       style="font-size:3rem"
     />
     <div>
@@ -464,7 +464,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--italic"
+      class="sap-icon-businessSuiteInAppSymbols--italic"
       style="font-size:3rem"
     />
     <div>
@@ -476,7 +476,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--strike-through"
+      class="sap-icon-businessSuiteInAppSymbols--strike-through"
       style="font-size:3rem"
     />
     <div>
@@ -488,7 +488,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--underline"
+      class="sap-icon-businessSuiteInAppSymbols--underline"
       style="font-size:3rem"
     />
     <div>
@@ -500,7 +500,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--save-as"
+      class="sap-icon-businessSuiteInAppSymbols--save-as"
       style="font-size:3rem"
     />
     <div>
@@ -512,7 +512,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--segmentation"
+      class="sap-icon-businessSuiteInAppSymbols--segmentation"
       style="font-size:3rem"
     />
     <div>
@@ -524,7 +524,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--context-menu"
+      class="sap-icon-businessSuiteInAppSymbols--context-menu"
       style="font-size:3rem"
     />
     <div>
@@ -536,7 +536,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--snapshot"
+      class="sap-icon-businessSuiteInAppSymbols--snapshot"
       style="font-size:3rem"
     />
     <div>
@@ -548,7 +548,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--subtraction-b-a"
+      class="sap-icon-businessSuiteInAppSymbols--subtraction-b-a"
       style="font-size:3rem"
     />
     <div>
@@ -560,7 +560,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--subtraction-a-b"
+      class="sap-icon-businessSuiteInAppSymbols--subtraction-a-b"
       style="font-size:3rem"
     />
     <div>
@@ -572,7 +572,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--intersection"
+      class="sap-icon-businessSuiteInAppSymbols--intersection"
       style="font-size:3rem"
     />
     <div>
@@ -584,7 +584,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--union"
+      class="sap-icon-businessSuiteInAppSymbols--union"
       style="font-size:3rem"
     />
     <div>
@@ -596,7 +596,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--top"
+      class="sap-icon-businessSuiteInAppSymbols--top"
       style="font-size:3rem"
     />
     <div>
@@ -608,7 +608,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--bottom"
+      class="sap-icon-businessSuiteInAppSymbols--bottom"
       style="font-size:3rem"
     />
     <div>
@@ -620,7 +620,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--page-up"
+      class="sap-icon-businessSuiteInAppSymbols--page-up"
       style="font-size:3rem"
     />
     <div>
@@ -632,7 +632,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--page-down"
+      class="sap-icon-businessSuiteInAppSymbols--page-down"
       style="font-size:3rem"
     />
     <div>
@@ -644,7 +644,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--create-dashboard"
+      class="sap-icon-businessSuiteInAppSymbols--create-dashboard"
       style="font-size:3rem"
     />
     <div>
@@ -656,7 +656,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--xcelsius-file"
+      class="sap-icon-businessSuiteInAppSymbols--xcelsius-file"
       style="font-size:3rem"
     />
     <div>
@@ -668,7 +668,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--open-folder"
+      class="sap-icon-businessSuiteInAppSymbols--open-folder"
       style="font-size:3rem"
     />
     <div>
@@ -680,7 +680,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--neutral"
+      class="sap-icon-businessSuiteInAppSymbols--neutral"
       style="font-size:3rem"
     />
     <div>
@@ -692,7 +692,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--split-segmentation"
+      class="sap-icon-businessSuiteInAppSymbols--split-segmentation"
       style="font-size:3rem"
     />
     <div>
@@ -704,7 +704,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--manage-budget"
+      class="sap-icon-businessSuiteInAppSymbols--manage-budget"
       style="font-size:3rem"
     />
     <div>
@@ -716,7 +716,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--blocked"
+      class="sap-icon-businessSuiteInAppSymbols--blocked"
       style="font-size:3rem"
     />
     <div>
@@ -728,7 +728,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--pipette"
+      class="sap-icon-businessSuiteInAppSymbols--pipette"
       style="font-size:3rem"
     />
     <div>
@@ -740,7 +740,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--top-recipe"
+      class="sap-icon-businessSuiteInAppSymbols--top-recipe"
       style="font-size:3rem"
     />
     <div>
@@ -752,7 +752,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--recipe"
+      class="sap-icon-businessSuiteInAppSymbols--recipe"
       style="font-size:3rem"
     />
     <div>
@@ -764,7 +764,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--ingredients"
+      class="sap-icon-businessSuiteInAppSymbols--ingredients"
       style="font-size:3rem"
     />
     <div>
@@ -776,7 +776,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--multiple-charts"
+      class="sap-icon-businessSuiteInAppSymbols--multiple-charts"
       style="font-size:3rem"
     />
     <div>
@@ -788,7 +788,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--descending-bars"
+      class="sap-icon-businessSuiteInAppSymbols--descending-bars"
       style="font-size:3rem"
     />
     <div>
@@ -800,7 +800,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--descending-stacked-bars"
+      class="sap-icon-businessSuiteInAppSymbols--descending-stacked-bars"
       style="font-size:3rem"
     />
     <div>
@@ -812,7 +812,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--scatter-plot"
+      class="sap-icon-businessSuiteInAppSymbols--scatter-plot"
       style="font-size:3rem"
     />
     <div>
@@ -824,7 +824,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--spill"
+      class="sap-icon-businessSuiteInAppSymbols--spill"
       style="font-size:3rem"
     />
     <div>
@@ -836,7 +836,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--fire"
+      class="sap-icon-businessSuiteInAppSymbols--fire"
       style="font-size:3rem"
     />
     <div>
@@ -848,7 +848,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--stratification"
+      class="sap-icon-businessSuiteInAppSymbols--stratification"
       style="font-size:3rem"
     />
     <div>
@@ -860,7 +860,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--relationship"
+      class="sap-icon-businessSuiteInAppSymbols--relationship"
       style="font-size:3rem"
     />
     <div>
@@ -872,7 +872,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--margin-decomposition"
+      class="sap-icon-businessSuiteInAppSymbols--margin-decomposition"
       style="font-size:3rem"
     />
     <div>
@@ -884,7 +884,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--control-group"
+      class="sap-icon-businessSuiteInAppSymbols--control-group"
       style="font-size:3rem"
     />
     <div>
@@ -896,7 +896,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--comparison-chart"
+      class="sap-icon-businessSuiteInAppSymbols--comparison-chart"
       style="font-size:3rem"
     />
     <div>
@@ -908,7 +908,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--responsible-area"
+      class="sap-icon-businessSuiteInAppSymbols--responsible-area"
       style="font-size:3rem"
     />
     <div>
@@ -920,7 +920,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--increase"
+      class="sap-icon-businessSuiteInAppSymbols--increase"
       style="font-size:3rem"
     />
     <div>
@@ -932,7 +932,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--decrease"
+      class="sap-icon-businessSuiteInAppSymbols--decrease"
       style="font-size:3rem"
     />
     <div>
@@ -944,7 +944,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--current-stock"
+      class="sap-icon-businessSuiteInAppSymbols--current-stock"
       style="font-size:3rem"
     />
     <div>
@@ -956,7 +956,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--expedite"
+      class="sap-icon-businessSuiteInAppSymbols--expedite"
       style="font-size:3rem"
     />
     <div>
@@ -968,7 +968,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--postpone"
+      class="sap-icon-businessSuiteInAppSymbols--postpone"
       style="font-size:3rem"
     />
     <div>
@@ -980,7 +980,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--approved"
+      class="sap-icon-businessSuiteInAppSymbols--approved"
       style="font-size:3rem"
     />
     <div>
@@ -992,7 +992,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--partially-delivered"
+      class="sap-icon-businessSuiteInAppSymbols--partially-delivered"
       style="font-size:3rem"
     />
     <div>
@@ -1004,7 +1004,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--line-bar-chart"
+      class="sap-icon-businessSuiteInAppSymbols--line-bar-chart"
       style="font-size:3rem"
     />
     <div>
@@ -1016,7 +1016,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--expand-all"
+      class="sap-icon-businessSuiteInAppSymbols--expand-all"
       style="font-size:3rem"
     />
     <div>
@@ -1028,7 +1028,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--submission"
+      class="sap-icon-businessSuiteInAppSymbols--submission"
       style="font-size:3rem"
     />
     <div>
@@ -1040,7 +1040,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--change-request"
+      class="sap-icon-businessSuiteInAppSymbols--change-request"
       style="font-size:3rem"
     />
     <div>
@@ -1052,7 +1052,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--column-unselected"
+      class="sap-icon-businessSuiteInAppSymbols--column-unselected"
       style="font-size:3rem"
     />
     <div>
@@ -1064,7 +1064,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--column-selected"
+      class="sap-icon-businessSuiteInAppSymbols--column-selected"
       style="font-size:3rem"
     />
     <div>
@@ -1076,7 +1076,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--row-unselected"
+      class="sap-icon-businessSuiteInAppSymbols--row-unselected"
       style="font-size:3rem"
     />
     <div>
@@ -1088,7 +1088,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--row-selected"
+      class="sap-icon-businessSuiteInAppSymbols--row-selected"
       style="font-size:3rem"
     />
     <div>
@@ -1100,7 +1100,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--stock-requirements"
+      class="sap-icon-businessSuiteInAppSymbols--stock-requirements"
       style="font-size:3rem"
     />
     <div>
@@ -1112,7 +1112,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--gender-male-and-female"
+      class="sap-icon-businessSuiteInAppSymbols--gender-male-and-female"
       style="font-size:3rem"
     />
     <div>
@@ -1124,7 +1124,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--marital-status"
+      class="sap-icon-businessSuiteInAppSymbols--marital-status"
       style="font-size:3rem"
     />
     <div>
@@ -1136,7 +1136,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--birthday"
+      class="sap-icon-businessSuiteInAppSymbols--birthday"
       style="font-size:3rem"
     />
     <div>
@@ -1148,7 +1148,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--classification"
+      class="sap-icon-businessSuiteInAppSymbols--classification"
       style="font-size:3rem"
     />
     <div>
@@ -1160,7 +1160,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--marked-for-deletion"
+      class="sap-icon-businessSuiteInAppSymbols--marked-for-deletion"
       style="font-size:3rem"
     />
     <div>
@@ -1172,7 +1172,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--bullet-chart"
+      class="sap-icon-businessSuiteInAppSymbols--bullet-chart"
       style="font-size:3rem"
     />
     <div>
@@ -1184,7 +1184,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--remove-filter"
+      class="sap-icon-businessSuiteInAppSymbols--remove-filter"
       style="font-size:3rem"
     />
     <div>
@@ -1196,7 +1196,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--bank-account"
+      class="sap-icon-businessSuiteInAppSymbols--bank-account"
       style="font-size:3rem"
     />
     <div>
@@ -1208,7 +1208,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--savings-account"
+      class="sap-icon-businessSuiteInAppSymbols--savings-account"
       style="font-size:3rem"
     />
     <div>
@@ -1220,7 +1220,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--debit-card"
+      class="sap-icon-businessSuiteInAppSymbols--debit-card"
       style="font-size:3rem"
     />
     <div>
@@ -1232,7 +1232,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--vip-customer"
+      class="sap-icon-businessSuiteInAppSymbols--vip-customer"
       style="font-size:3rem"
     />
     <div>
@@ -1244,7 +1244,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--undesirable-customer"
+      class="sap-icon-businessSuiteInAppSymbols--undesirable-customer"
       style="font-size:3rem"
     />
     <div>
@@ -1256,7 +1256,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--answered-change-request"
+      class="sap-icon-businessSuiteInAppSymbols--answered-change-request"
       style="font-size:3rem"
     />
     <div>
@@ -1268,7 +1268,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--collected-change-request"
+      class="sap-icon-businessSuiteInAppSymbols--collected-change-request"
       style="font-size:3rem"
     />
     <div>
@@ -1280,7 +1280,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--draw-freehand"
+      class="sap-icon-businessSuiteInAppSymbols--draw-freehand"
       style="font-size:3rem"
     />
     <div>
@@ -1292,7 +1292,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--draw-circle"
+      class="sap-icon-businessSuiteInAppSymbols--draw-circle"
       style="font-size:3rem"
     />
     <div>
@@ -1304,7 +1304,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--completed"
+      class="sap-icon-businessSuiteInAppSymbols--completed"
       style="font-size:3rem"
     />
     <div>
@@ -1316,7 +1316,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--answered"
+      class="sap-icon-businessSuiteInAppSymbols--answered"
       style="font-size:3rem"
     />
     <div>
@@ -1328,7 +1328,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--traffic-cone"
+      class="sap-icon-businessSuiteInAppSymbols--traffic-cone"
       style="font-size:3rem"
     />
     <div>
@@ -1340,7 +1340,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--traffic-lights"
+      class="sap-icon-businessSuiteInAppSymbols--traffic-lights"
       style="font-size:3rem"
     />
     <div>
@@ -1352,7 +1352,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--container"
+      class="sap-icon-businessSuiteInAppSymbols--container"
       style="font-size:3rem"
     />
     <div>
@@ -1364,7 +1364,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--container-loading"
+      class="sap-icon-businessSuiteInAppSymbols--container-loading"
       style="font-size:3rem"
     />
     <div>
@@ -1376,7 +1376,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--traffic-jam"
+      class="sap-icon-businessSuiteInAppSymbols--traffic-jam"
       style="font-size:3rem"
     />
     <div>
@@ -1388,7 +1388,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--products"
+      class="sap-icon-businessSuiteInAppSymbols--products"
       style="font-size:3rem"
     />
     <div>
@@ -1400,7 +1400,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--sidepanel"
+      class="sap-icon-businessSuiteInAppSymbols--sidepanel"
       style="font-size:3rem"
     />
     <div>
@@ -1412,7 +1412,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--split-screen"
+      class="sap-icon-businessSuiteInAppSymbols--split-screen"
       style="font-size:3rem"
     />
     <div>
@@ -1424,7 +1424,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--truck-driver"
+      class="sap-icon-businessSuiteInAppSymbols--truck-driver"
       style="font-size:3rem"
     />
     <div>
@@ -1436,7 +1436,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--keep-segment"
+      class="sap-icon-businessSuiteInAppSymbols--keep-segment"
       style="font-size:3rem"
     />
     <div>
@@ -1448,7 +1448,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--exclude-segment"
+      class="sap-icon-businessSuiteInAppSymbols--exclude-segment"
       style="font-size:3rem"
     />
     <div>
@@ -1460,7 +1460,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--separate-segments"
+      class="sap-icon-businessSuiteInAppSymbols--separate-segments"
       style="font-size:3rem"
     />
     <div>
@@ -1472,7 +1472,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--distribute-segments"
+      class="sap-icon-businessSuiteInAppSymbols--distribute-segments"
       style="font-size:3rem"
     />
     <div>
@@ -1484,7 +1484,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--next-open-item"
+      class="sap-icon-businessSuiteInAppSymbols--next-open-item"
       style="font-size:3rem"
     />
     <div>
@@ -1496,7 +1496,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--where-used"
+      class="sap-icon-businessSuiteInAppSymbols--where-used"
       style="font-size:3rem"
     />
     <div>
@@ -1508,7 +1508,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--outbound-delivery"
+      class="sap-icon-businessSuiteInAppSymbols--outbound-delivery"
       style="font-size:3rem"
     />
     <div>
@@ -1520,7 +1520,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--outbound-delivery-inactive"
+      class="sap-icon-businessSuiteInAppSymbols--outbound-delivery-inactive"
       style="font-size:3rem"
     />
     <div>
@@ -1532,7 +1532,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--outbound-delivery-active"
+      class="sap-icon-businessSuiteInAppSymbols--outbound-delivery-active"
       style="font-size:3rem"
     />
     <div>
@@ -1544,7 +1544,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--target"
+      class="sap-icon-businessSuiteInAppSymbols--target"
       style="font-size:3rem"
     />
     <div>
@@ -1556,7 +1556,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--source"
+      class="sap-icon-businessSuiteInAppSymbols--source"
       style="font-size:3rem"
     />
     <div>
@@ -1568,7 +1568,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--material"
+      class="sap-icon-businessSuiteInAppSymbols--material"
       style="font-size:3rem"
     />
     <div>
@@ -1580,7 +1580,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--due-date"
+      class="sap-icon-businessSuiteInAppSymbols--due-date"
       style="font-size:3rem"
     />
     <div>
@@ -1592,7 +1592,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--overdue"
+      class="sap-icon-businessSuiteInAppSymbols--overdue"
       style="font-size:3rem"
     />
     <div>
@@ -1604,7 +1604,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--set-as-default"
+      class="sap-icon-businessSuiteInAppSymbols--set-as-default"
       style="font-size:3rem"
     />
     <div>
@@ -1616,7 +1616,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--face-very-bad"
+      class="sap-icon-businessSuiteInAppSymbols--face-very-bad"
       style="font-size:3rem"
     />
     <div>
@@ -1628,7 +1628,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--face-bad"
+      class="sap-icon-businessSuiteInAppSymbols--face-bad"
       style="font-size:3rem"
     />
     <div>
@@ -1640,7 +1640,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--face-skeptical"
+      class="sap-icon-businessSuiteInAppSymbols--face-skeptical"
       style="font-size:3rem"
     />
     <div>
@@ -1652,7 +1652,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--face-neutral"
+      class="sap-icon-businessSuiteInAppSymbols--face-neutral"
       style="font-size:3rem"
     />
     <div>
@@ -1664,7 +1664,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--face-astonished"
+      class="sap-icon-businessSuiteInAppSymbols--face-astonished"
       style="font-size:3rem"
     />
     <div>
@@ -1676,7 +1676,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--face-happy"
+      class="sap-icon-businessSuiteInAppSymbols--face-happy"
       style="font-size:3rem"
     />
     <div>
@@ -1688,7 +1688,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--face-very-happy"
+      class="sap-icon-businessSuiteInAppSymbols--face-very-happy"
       style="font-size:3rem"
     />
     <div>
@@ -1700,7 +1700,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--face-awful"
+      class="sap-icon-businessSuiteInAppSymbols--face-awful"
       style="font-size:3rem"
     />
     <div>
@@ -1712,7 +1712,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--face-devastated"
+      class="sap-icon-businessSuiteInAppSymbols--face-devastated"
       style="font-size:3rem"
     />
     <div>
@@ -1724,7 +1724,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--face-okey-dokey"
+      class="sap-icon-businessSuiteInAppSymbols--face-okey-dokey"
       style="font-size:3rem"
     />
     <div>
@@ -1736,7 +1736,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--alarm"
+      class="sap-icon-businessSuiteInAppSymbols--alarm"
       style="font-size:3rem"
     />
     <div>
@@ -1748,7 +1748,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--activate"
+      class="sap-icon-businessSuiteInAppSymbols--activate"
       style="font-size:3rem"
     />
     <div>
@@ -1760,7 +1760,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--segment-preview-reference-objects"
+      class="sap-icon-businessSuiteInAppSymbols--segment-preview-reference-objects"
       style="font-size:3rem"
     />
     <div>
@@ -1772,7 +1772,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--radius"
+      class="sap-icon-businessSuiteInAppSymbols--radius"
       style="font-size:3rem"
     />
     <div>
@@ -1784,7 +1784,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--polygone-black"
+      class="sap-icon-businessSuiteInAppSymbols--polygone-black"
       style="font-size:3rem"
     />
     <div>
@@ -1796,7 +1796,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--polygone-white"
+      class="sap-icon-businessSuiteInAppSymbols--polygone-white"
       style="font-size:3rem"
     />
     <div>
@@ -1808,7 +1808,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--ploygone"
+      class="sap-icon-businessSuiteInAppSymbols--ploygone"
       style="font-size:3rem"
     />
     <div>
@@ -1820,7 +1820,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--no-filter"
+      class="sap-icon-businessSuiteInAppSymbols--no-filter"
       style="font-size:3rem"
     />
     <div>
@@ -1832,7 +1832,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--grip"
+      class="sap-icon-businessSuiteInAppSymbols--grip"
       style="font-size:3rem"
     />
     <div>
@@ -1844,7 +1844,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--water"
+      class="sap-icon-businessSuiteInAppSymbols--water"
       style="font-size:3rem"
     />
     <div>
@@ -1856,7 +1856,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--gas"
+      class="sap-icon-businessSuiteInAppSymbols--gas"
       style="font-size:3rem"
     />
     <div>
@@ -1868,7 +1868,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--liquid"
+      class="sap-icon-businessSuiteInAppSymbols--liquid"
       style="font-size:3rem"
     />
     <div>
@@ -1880,7 +1880,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--time-deposit"
+      class="sap-icon-businessSuiteInAppSymbols--time-deposit"
       style="font-size:3rem"
     />
     <div>
@@ -1892,7 +1892,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--early-widthdrawal-for-time-deposits"
+      class="sap-icon-businessSuiteInAppSymbols--early-widthdrawal-for-time-deposits"
       style="font-size:3rem"
     />
     <div>
@@ -1904,7 +1904,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--truck-load"
+      class="sap-icon-businessSuiteInAppSymbols--truck-load"
       style="font-size:3rem"
     />
     <div>
@@ -1916,7 +1916,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--truck-unload"
+      class="sap-icon-businessSuiteInAppSymbols--truck-unload"
       style="font-size:3rem"
     />
     <div>
@@ -1928,7 +1928,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--truck-load-unload"
+      class="sap-icon-businessSuiteInAppSymbols--truck-load-unload"
       style="font-size:3rem"
     />
     <div>
@@ -1940,7 +1940,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--pharmacy"
+      class="sap-icon-businessSuiteInAppSymbols--pharmacy"
       style="font-size:3rem"
     />
     <div>
@@ -1952,7 +1952,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--medicine-syrup"
+      class="sap-icon-businessSuiteInAppSymbols--medicine-syrup"
       style="font-size:3rem"
     />
     <div>
@@ -1964,7 +1964,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--reminder"
+      class="sap-icon-businessSuiteInAppSymbols--reminder"
       style="font-size:3rem"
     />
     <div>
@@ -1976,7 +1976,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--medicine-pill"
+      class="sap-icon-businessSuiteInAppSymbols--medicine-pill"
       style="font-size:3rem"
     />
     <div>
@@ -1988,7 +1988,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--medicine-ointment"
+      class="sap-icon-businessSuiteInAppSymbols--medicine-ointment"
       style="font-size:3rem"
     />
     <div>
@@ -2000,7 +2000,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--medicine-drops"
+      class="sap-icon-businessSuiteInAppSymbols--medicine-drops"
       style="font-size:3rem"
     />
     <div>
@@ -2012,7 +2012,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--blood-test"
+      class="sap-icon-businessSuiteInAppSymbols--blood-test"
       style="font-size:3rem"
     />
     <div>
@@ -2024,7 +2024,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--temperature"
+      class="sap-icon-businessSuiteInAppSymbols--temperature"
       style="font-size:3rem"
     />
     <div>
@@ -2036,7 +2036,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--medicine-inhaler"
+      class="sap-icon-businessSuiteInAppSymbols--medicine-inhaler"
       style="font-size:3rem"
     />
     <div>
@@ -2048,7 +2048,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--foot-steps"
+      class="sap-icon-businessSuiteInAppSymbols--foot-steps"
       style="font-size:3rem"
     />
     <div>
@@ -2060,7 +2060,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--weight"
+      class="sap-icon-businessSuiteInAppSymbols--weight"
       style="font-size:3rem"
     />
     <div>
@@ -2072,7 +2072,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--health-tracking"
+      class="sap-icon-businessSuiteInAppSymbols--health-tracking"
       style="font-size:3rem"
     />
     <div>
@@ -2084,7 +2084,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--blood-pressure"
+      class="sap-icon-businessSuiteInAppSymbols--blood-pressure"
       style="font-size:3rem"
     />
     <div>
@@ -2096,7 +2096,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--immunization"
+      class="sap-icon-businessSuiteInAppSymbols--immunization"
       style="font-size:3rem"
     />
     <div>
@@ -2108,7 +2108,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--allergies"
+      class="sap-icon-businessSuiteInAppSymbols--allergies"
       style="font-size:3rem"
     />
     <div>
@@ -2120,7 +2120,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--rescheduling2"
+      class="sap-icon-businessSuiteInAppSymbols--rescheduling2"
       style="font-size:3rem"
     />
     <div>
@@ -2132,7 +2132,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--resequencing2"
+      class="sap-icon-businessSuiteInAppSymbols--resequencing2"
       style="font-size:3rem"
     />
     <div>
@@ -2144,7 +2144,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--no-time-change"
+      class="sap-icon-businessSuiteInAppSymbols--no-time-change"
       style="font-size:3rem"
     />
     <div>
@@ -2156,7 +2156,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--time-change"
+      class="sap-icon-businessSuiteInAppSymbols--time-change"
       style="font-size:3rem"
     />
     <div>
@@ -2168,7 +2168,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--smart-matcher"
+      class="sap-icon-businessSuiteInAppSymbols--smart-matcher"
       style="font-size:3rem"
     />
     <div>
@@ -2180,7 +2180,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--legal-section"
+      class="sap-icon-businessSuiteInAppSymbols--legal-section"
       style="font-size:3rem"
     />
     <div>
@@ -2192,7 +2192,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--causes"
+      class="sap-icon-businessSuiteInAppSymbols--causes"
       style="font-size:3rem"
     />
     <div>
@@ -2204,7 +2204,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--effects"
+      class="sap-icon-businessSuiteInAppSymbols--effects"
       style="font-size:3rem"
     />
     <div>
@@ -2216,7 +2216,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--shared-by-me"
+      class="sap-icon-businessSuiteInAppSymbols--shared-by-me"
       style="font-size:3rem"
     />
     <div>
@@ -2228,7 +2228,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--shared-with-me"
+      class="sap-icon-businessSuiteInAppSymbols--shared-with-me"
       style="font-size:3rem"
     />
     <div>
@@ -2240,7 +2240,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--alert-groups"
+      class="sap-icon-businessSuiteInAppSymbols--alert-groups"
       style="font-size:3rem"
     />
     <div>
@@ -2252,7 +2252,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--function-alert"
+      class="sap-icon-businessSuiteInAppSymbols--function-alert"
       style="font-size:3rem"
     />
     <div>
@@ -2264,7 +2264,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--function-hierarchy"
+      class="sap-icon-businessSuiteInAppSymbols--function-hierarchy"
       style="font-size:3rem"
     />
     <div>
@@ -2276,7 +2276,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--rfid"
+      class="sap-icon-businessSuiteInAppSymbols--rfid"
       style="font-size:3rem"
     />
     <div>
@@ -2288,7 +2288,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--input"
+      class="sap-icon-businessSuiteInAppSymbols--input"
       style="font-size:3rem"
     />
     <div>
@@ -2300,7 +2300,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--software-item"
+      class="sap-icon-businessSuiteInAppSymbols--software-item"
       style="font-size:3rem"
     />
     <div>
@@ -2312,7 +2312,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--product-view"
+      class="sap-icon-businessSuiteInAppSymbols--product-view"
       style="font-size:3rem"
     />
     <div>
@@ -2324,7 +2324,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--software-item-variant"
+      class="sap-icon-businessSuiteInAppSymbols--software-item-variant"
       style="font-size:3rem"
     />
     <div>
@@ -2336,7 +2336,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--lighthouse"
+      class="sap-icon-businessSuiteInAppSymbols--lighthouse"
       style="font-size:3rem"
     />
     <div>
@@ -2348,7 +2348,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--demand-unit"
+      class="sap-icon-businessSuiteInAppSymbols--demand-unit"
       style="font-size:3rem"
     />
     <div>
@@ -2360,7 +2360,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--fma-management"
+      class="sap-icon-businessSuiteInAppSymbols--fma-management"
       style="font-size:3rem"
     />
     <div>
@@ -2372,7 +2372,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--fma-validation"
+      class="sap-icon-businessSuiteInAppSymbols--fma-validation"
       style="font-size:3rem"
     />
     <div>
@@ -2384,7 +2384,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--fma-analytics"
+      class="sap-icon-businessSuiteInAppSymbols--fma-analytics"
       style="font-size:3rem"
     />
     <div>
@@ -2396,7 +2396,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--class"
+      class="sap-icon-businessSuiteInAppSymbols--class"
       style="font-size:3rem"
     />
     <div>
@@ -2408,7 +2408,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--overview"
+      class="sap-icon-businessSuiteInAppSymbols--overview"
       style="font-size:3rem"
     />
     <div>
@@ -2420,7 +2420,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--production"
+      class="sap-icon-businessSuiteInAppSymbols--production"
       style="font-size:3rem"
     />
     <div>
@@ -2432,7 +2432,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--subclass"
+      class="sap-icon-businessSuiteInAppSymbols--subclass"
       style="font-size:3rem"
     />
     <div>
@@ -2444,7 +2444,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--variant-configuration"
+      class="sap-icon-businessSuiteInAppSymbols--variant-configuration"
       style="font-size:3rem"
     />
     <div>
@@ -2456,7 +2456,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--sum"
+      class="sap-icon-businessSuiteInAppSymbols--sum"
       style="font-size:3rem"
     />
     <div>
@@ -2468,7 +2468,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--empty-trailer"
+      class="sap-icon-businessSuiteInAppSymbols--empty-trailer"
       style="font-size:3rem"
     />
     <div>
@@ -2480,7 +2480,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--door"
+      class="sap-icon-businessSuiteInAppSymbols--door"
       style="font-size:3rem"
     />
     <div>
@@ -2492,7 +2492,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--loading-point"
+      class="sap-icon-businessSuiteInAppSymbols--loading-point"
       style="font-size:3rem"
     />
     <div>
@@ -2504,7 +2504,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--stock-warehouse"
+      class="sap-icon-businessSuiteInAppSymbols--stock-warehouse"
       style="font-size:3rem"
     />
     <div>
@@ -2516,7 +2516,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--gate"
+      class="sap-icon-businessSuiteInAppSymbols--gate"
       style="font-size:3rem"
     />
     <div>
@@ -2528,7 +2528,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--timeseries-waterfall-chart"
+      class="sap-icon-businessSuiteInAppSymbols--timeseries-waterfall-chart"
       style="font-size:3rem"
     />
     <div>
@@ -2540,7 +2540,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--stages-warning"
+      class="sap-icon-businessSuiteInAppSymbols--stages-warning"
       style="font-size:3rem"
     />
     <div>
@@ -2552,7 +2552,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Business Sui
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--empty-warning"
+      class="sap-icon-businessSuiteInAppSymbols--empty-warning"
       style="font-size:3rem"
     />
     <div>
@@ -2569,7 +2569,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Sizes 1`] = 
 
     
   <span
-    class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart"
+    class="sap-icon-businessSuiteInAppSymbols--heart"
   />
   
     
@@ -2577,7 +2577,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Sizes 1`] = 
   
     
   <span
-    class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart"
+    class="sap-icon-businessSuiteInAppSymbols--heart"
     style="font-size:2rem"
   />
   
@@ -2586,7 +2586,7 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Sizes 1`] = 
   
     
   <span
-    class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart"
+    class="sap-icon-businessSuiteInAppSymbols--heart"
     style="font-size:5rem"
   />
   

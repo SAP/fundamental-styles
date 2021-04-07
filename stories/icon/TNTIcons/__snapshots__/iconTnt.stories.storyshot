@@ -6,7 +6,7 @@ exports[`Storyshots Components/Icons/TNT Icons Sizes 1`] = `
 
     
   <span
-    class="sap-icon-TNT sap-icon-TNT--exceptions"
+    class="sap-icon-TNT--exceptions"
   />
   
     
@@ -14,7 +14,7 @@ exports[`Storyshots Components/Icons/TNT Icons Sizes 1`] = `
   
     
   <span
-    class="sap-icon-TNT sap-icon-TNT--exceptions"
+    class="sap-icon-TNT--exceptions"
     style="font-size:2rem"
   />
   
@@ -23,7 +23,7 @@ exports[`Storyshots Components/Icons/TNT Icons Sizes 1`] = `
   
     
   <span
-    class="sap-icon-TNT sap-icon-TNT--exceptions"
+    class="sap-icon-TNT--exceptions"
     style="font-size:5rem"
   />
   
@@ -39,7 +39,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--technicalsystem"
+      class="sap-icon-TNT--technicalsystem"
       style="font-size:3rem"
     />
     <div>
@@ -51,7 +51,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--systemjava"
+      class="sap-icon-TNT--systemjava"
       style="font-size:3rem"
     />
     <div>
@@ -63,7 +63,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--systemabap"
+      class="sap-icon-TNT--systemabap"
       style="font-size:3rem"
     />
     <div>
@@ -75,7 +75,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--systemrecommendations"
+      class="sap-icon-TNT--systemrecommendations"
       style="font-size:3rem"
     />
     <div>
@@ -87,7 +87,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--system"
+      class="sap-icon-TNT--system"
       style="font-size:3rem"
     />
     <div>
@@ -99,7 +99,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--systemtrex"
+      class="sap-icon-TNT--systemtrex"
       style="font-size:3rem"
     />
     <div>
@@ -111,7 +111,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--systemtracks"
+      class="sap-icon-TNT--systemtracks"
       style="font-size:3rem"
     />
     <div>
@@ -123,7 +123,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--technicalscenario"
+      class="sap-icon-TNT--technicalscenario"
       style="font-size:3rem"
     />
     <div>
@@ -135,7 +135,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--technicalinstance"
+      class="sap-icon-TNT--technicalinstance"
       style="font-size:3rem"
     />
     <div>
@@ -147,7 +147,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--throughput-backlog"
+      class="sap-icon-TNT--throughput-backlog"
       style="font-size:3rem"
     />
     <div>
@@ -159,7 +159,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--batch-processing"
+      class="sap-icon-TNT--batch-processing"
       style="font-size:3rem"
     />
     <div>
@@ -171,7 +171,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--database-consistency"
+      class="sap-icon-TNT--database-consistency"
       style="font-size:3rem"
     />
     <div>
@@ -183,7 +183,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--intermediate-message"
+      class="sap-icon-TNT--intermediate-message"
       style="font-size:3rem"
     />
     <div>
@@ -195,7 +195,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--exceptions"
+      class="sap-icon-TNT--exceptions"
       style="font-size:3rem"
     />
     <div>
@@ -207,7 +207,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--system-HANA"
+      class="sap-icon-TNT--system-HANA"
       style="font-size:3rem"
     />
     <div>
@@ -219,7 +219,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--python"
+      class="sap-icon-TNT--python"
       style="font-size:3rem"
     />
     <div>
@@ -231,7 +231,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--raise-fault"
+      class="sap-icon-TNT--raise-fault"
       style="font-size:3rem"
     />
     <div>
@@ -243,7 +243,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--code1"
+      class="sap-icon-TNT--code1"
       style="font-size:3rem"
     />
     <div>
@@ -255,7 +255,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--code2"
+      class="sap-icon-TNT--code2"
       style="font-size:3rem"
     />
     <div>
@@ -267,7 +267,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--spike-arrest"
+      class="sap-icon-TNT--spike-arrest"
       style="font-size:3rem"
     />
     <div>
@@ -279,7 +279,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--verify-API"
+      class="sap-icon-TNT--verify-API"
       style="font-size:3rem"
     />
     <div>
@@ -291,7 +291,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--user"
+      class="sap-icon-TNT--user"
       style="font-size:3rem"
     />
     <div>
@@ -303,7 +303,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--note"
+      class="sap-icon-TNT--note"
       style="font-size:3rem"
     />
     <div>
@@ -315,7 +315,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--throwing-message"
+      class="sap-icon-TNT--throwing-message"
       style="font-size:3rem"
     />
     <div>
@@ -327,7 +327,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--catching-message"
+      class="sap-icon-TNT--catching-message"
       style="font-size:3rem"
     />
     <div>
@@ -339,7 +339,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--start-event"
+      class="sap-icon-TNT--start-event"
       style="font-size:3rem"
     />
     <div>
@@ -351,7 +351,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--end-event"
+      class="sap-icon-TNT--end-event"
       style="font-size:3rem"
     />
     <div>
@@ -363,7 +363,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--gateway"
+      class="sap-icon-TNT--gateway"
       style="font-size:3rem"
     />
     <div>
@@ -375,7 +375,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--sub-process-marker"
+      class="sap-icon-TNT--sub-process-marker"
       style="font-size:3rem"
     />
     <div>
@@ -387,7 +387,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--ad-hoc-marker"
+      class="sap-icon-TNT--ad-hoc-marker"
       style="font-size:3rem"
     />
     <div>
@@ -399,7 +399,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--manual-task"
+      class="sap-icon-TNT--manual-task"
       style="font-size:3rem"
     />
     <div>
@@ -411,7 +411,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--send-task"
+      class="sap-icon-TNT--send-task"
       style="font-size:3rem"
     />
     <div>
@@ -423,7 +423,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--receive-task"
+      class="sap-icon-TNT--receive-task"
       style="font-size:3rem"
     />
     <div>
@@ -435,7 +435,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--script-task"
+      class="sap-icon-TNT--script-task"
       style="font-size:3rem"
     />
     <div>
@@ -447,7 +447,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--marquee"
+      class="sap-icon-TNT--marquee"
       style="font-size:3rem"
     />
     <div>
@@ -459,7 +459,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--data-input-arrow"
+      class="sap-icon-TNT--data-input-arrow"
       style="font-size:3rem"
     />
     <div>
@@ -471,7 +471,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--data-output-arrow"
+      class="sap-icon-TNT--data-output-arrow"
       style="font-size:3rem"
     />
     <div>
@@ -483,7 +483,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--more"
+      class="sap-icon-TNT--more"
       style="font-size:3rem"
     />
     <div>
@@ -495,7 +495,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--pattern"
+      class="sap-icon-TNT--pattern"
       style="font-size:3rem"
     />
     <div>
@@ -507,7 +507,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--task"
+      class="sap-icon-TNT--task"
       style="font-size:3rem"
     />
     <div>
@@ -519,7 +519,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--arrow"
+      class="sap-icon-TNT--arrow"
       style="font-size:3rem"
     />
     <div>
@@ -531,7 +531,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--data"
+      class="sap-icon-TNT--data"
       style="font-size:3rem"
     />
     <div>
@@ -543,7 +543,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--data-store"
+      class="sap-icon-TNT--data-store"
       style="font-size:3rem"
     />
     <div>
@@ -555,7 +555,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--pool"
+      class="sap-icon-TNT--pool"
       style="font-size:3rem"
     />
     <div>
@@ -567,7 +567,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--swimlane"
+      class="sap-icon-TNT--swimlane"
       style="font-size:3rem"
     />
     <div>
@@ -579,7 +579,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--select"
+      class="sap-icon-TNT--select"
       style="font-size:3rem"
     />
     <div>
@@ -591,7 +591,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--cursor"
+      class="sap-icon-TNT--cursor"
       style="font-size:3rem"
     />
     <div>
@@ -603,7 +603,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--api"
+      class="sap-icon-TNT--api"
       style="font-size:3rem"
     />
     <div>
@@ -615,7 +615,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--o-data"
+      class="sap-icon-TNT--o-data"
       style="font-size:3rem"
     />
     <div>
@@ -627,7 +627,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--javascript"
+      class="sap-icon-TNT--javascript"
       style="font-size:3rem"
     />
     <div>
@@ -639,7 +639,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--value-mapping"
+      class="sap-icon-TNT--value-mapping"
       style="font-size:3rem"
     />
     <div>
@@ -651,7 +651,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--terminate-end-event"
+      class="sap-icon-TNT--terminate-end-event"
       style="font-size:3rem"
     />
     <div>
@@ -663,7 +663,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--parallel-gateway"
+      class="sap-icon-TNT--parallel-gateway"
       style="font-size:3rem"
     />
     <div>
@@ -675,7 +675,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--exclusive-gateway"
+      class="sap-icon-TNT--exclusive-gateway"
       style="font-size:3rem"
     />
     <div>
@@ -687,7 +687,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--service-task"
+      class="sap-icon-TNT--service-task"
       style="font-size:3rem"
     />
     <div>
@@ -699,7 +699,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--workflow-editor"
+      class="sap-icon-TNT--workflow-editor"
       style="font-size:3rem"
     />
     <div>
@@ -711,7 +711,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--boundary-interrupting"
+      class="sap-icon-TNT--boundary-interrupting"
       style="font-size:3rem"
     />
     <div>
@@ -723,7 +723,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--boundary-non-interrupting"
+      class="sap-icon-TNT--boundary-non-interrupting"
       style="font-size:3rem"
     />
     <div>
@@ -735,7 +735,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--block"
+      class="sap-icon-TNT--block"
       style="font-size:3rem"
     />
     <div>
@@ -747,7 +747,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--constrain-block"
+      class="sap-icon-TNT--constrain-block"
       style="font-size:3rem"
     />
     <div>
@@ -759,7 +759,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--actor"
+      class="sap-icon-TNT--actor"
       style="font-size:3rem"
     />
     <div>
@@ -771,7 +771,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--instance-specification"
+      class="sap-icon-TNT--instance-specification"
       style="font-size:3rem"
     />
     <div>
@@ -783,7 +783,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--value-type"
+      class="sap-icon-TNT--value-type"
       style="font-size:3rem"
     />
     <div>
@@ -795,7 +795,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--interface-block"
+      class="sap-icon-TNT--interface-block"
       style="font-size:3rem"
     />
     <div>
@@ -807,7 +807,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--unit"
+      class="sap-icon-TNT--unit"
       style="font-size:3rem"
     />
     <div>
@@ -819,7 +819,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--signal"
+      class="sap-icon-TNT--signal"
       style="font-size:3rem"
     />
     <div>
@@ -831,7 +831,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--quantity-kind"
+      class="sap-icon-TNT--quantity-kind"
       style="font-size:3rem"
     />
     <div>
@@ -843,7 +843,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--item-flow"
+      class="sap-icon-TNT--item-flow"
       style="font-size:3rem"
     />
     <div>
@@ -855,7 +855,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--dependency"
+      class="sap-icon-TNT--dependency"
       style="font-size:3rem"
     />
     <div>
@@ -867,7 +867,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--generalization"
+      class="sap-icon-TNT--generalization"
       style="font-size:3rem"
     />
     <div>
@@ -879,7 +879,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--aggregation"
+      class="sap-icon-TNT--aggregation"
       style="font-size:3rem"
     />
     <div>
@@ -891,7 +891,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--composition"
+      class="sap-icon-TNT--composition"
       style="font-size:3rem"
     />
     <div>
@@ -903,7 +903,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--association"
+      class="sap-icon-TNT--association"
       style="font-size:3rem"
     />
     <div>
@@ -915,7 +915,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--port"
+      class="sap-icon-TNT--port"
       style="font-size:3rem"
     />
     <div>
@@ -927,7 +927,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--proxy-port"
+      class="sap-icon-TNT--proxy-port"
       style="font-size:3rem"
     />
     <div>
@@ -939,7 +939,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--full-port"
+      class="sap-icon-TNT--full-port"
       style="font-size:3rem"
     />
     <div>
@@ -951,7 +951,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--operations"
+      class="sap-icon-TNT--operations"
       style="font-size:3rem"
     />
     <div>
@@ -963,7 +963,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--constrains"
+      class="sap-icon-TNT--constrains"
       style="font-size:3rem"
     />
     <div>
@@ -975,7 +975,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--receptions"
+      class="sap-icon-TNT--receptions"
       style="font-size:3rem"
     />
     <div>
@@ -987,7 +987,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--references"
+      class="sap-icon-TNT--references"
       style="font-size:3rem"
     />
     <div>
@@ -999,7 +999,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--parts"
+      class="sap-icon-TNT--parts"
       style="font-size:3rem"
     />
     <div>
@@ -1011,7 +1011,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--flow"
+      class="sap-icon-TNT--flow"
       style="font-size:3rem"
     />
     <div>
@@ -1023,7 +1023,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--values"
+      class="sap-icon-TNT--values"
       style="font-size:3rem"
     />
     <div>
@@ -1035,7 +1035,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--bill-of-material"
+      class="sap-icon-TNT--bill-of-material"
       style="font-size:3rem"
     />
     <div>
@@ -1047,7 +1047,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--document-info-recording"
+      class="sap-icon-TNT--document-info-recording"
       style="font-size:3rem"
     />
     <div>
@@ -1059,7 +1059,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--use-case-diagram"
+      class="sap-icon-TNT--use-case-diagram"
       style="font-size:3rem"
     />
     <div>
@@ -1071,7 +1071,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--bdd-diagram"
+      class="sap-icon-TNT--bdd-diagram"
       style="font-size:3rem"
     />
     <div>
@@ -1083,7 +1083,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--requirement-diagram"
+      class="sap-icon-TNT--requirement-diagram"
       style="font-size:3rem"
     />
     <div>
@@ -1095,7 +1095,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--package-diagram"
+      class="sap-icon-TNT--package-diagram"
       style="font-size:3rem"
     />
     <div>
@@ -1107,7 +1107,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--internal-block-diagram"
+      class="sap-icon-TNT--internal-block-diagram"
       style="font-size:3rem"
     />
     <div>
@@ -1119,7 +1119,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--requirement-containment-relationship"
+      class="sap-icon-TNT--requirement-containment-relationship"
       style="font-size:3rem"
     />
     <div>
@@ -1131,7 +1131,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--use-case"
+      class="sap-icon-TNT--use-case"
       style="font-size:3rem"
     />
     <div>
@@ -1143,7 +1143,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--use-case-extension-point"
+      class="sap-icon-TNT--use-case-extension-point"
       style="font-size:3rem"
     />
     <div>
@@ -1155,7 +1155,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--communication-path"
+      class="sap-icon-TNT--communication-path"
       style="font-size:3rem"
     />
     <div>
@@ -1167,7 +1167,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--note-connection"
+      class="sap-icon-TNT--note-connection"
       style="font-size:3rem"
     />
     <div>
@@ -1179,7 +1179,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--subject"
+      class="sap-icon-TNT--subject"
       style="font-size:3rem"
     />
     <div>
@@ -1191,7 +1191,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--auto-layout"
+      class="sap-icon-TNT--auto-layout"
       style="font-size:3rem"
     />
     <div>
@@ -1203,7 +1203,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--required-interface"
+      class="sap-icon-TNT--required-interface"
       style="font-size:3rem"
     />
     <div>
@@ -1215,7 +1215,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--provided-interface"
+      class="sap-icon-TNT--provided-interface"
       style="font-size:3rem"
     />
     <div>
@@ -1227,7 +1227,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--sub-content"
+      class="sap-icon-TNT--sub-content"
       style="font-size:3rem"
     />
     <div>
@@ -1239,7 +1239,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--connector"
+      class="sap-icon-TNT--connector"
       style="font-size:3rem"
     />
     <div>
@@ -1251,7 +1251,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--local-process-call"
+      class="sap-icon-TNT--local-process-call"
       style="font-size:3rem"
     />
     <div>
@@ -1263,7 +1263,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--aggregator"
+      class="sap-icon-TNT--aggregator"
       style="font-size:3rem"
     />
     <div>
@@ -1275,7 +1275,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--splitter"
+      class="sap-icon-TNT--splitter"
       style="font-size:3rem"
     />
     <div>
@@ -1287,7 +1287,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--converter"
+      class="sap-icon-TNT--converter"
       style="font-size:3rem"
     />
     <div>
@@ -1299,7 +1299,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--content-modifier"
+      class="sap-icon-TNT--content-modifier"
       style="font-size:3rem"
     />
     <div>
@@ -1311,7 +1311,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--message-start-event"
+      class="sap-icon-TNT--message-start-event"
       style="font-size:3rem"
     />
     <div>
@@ -1323,7 +1323,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--message-end-event"
+      class="sap-icon-TNT--message-end-event"
       style="font-size:3rem"
     />
     <div>
@@ -1335,7 +1335,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--escalation-end-event"
+      class="sap-icon-TNT--escalation-end-event"
       style="font-size:3rem"
     />
     <div>
@@ -1347,7 +1347,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--start-timer-event"
+      class="sap-icon-TNT--start-timer-event"
       style="font-size:3rem"
     />
     <div>
@@ -1359,7 +1359,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--error-start-event"
+      class="sap-icon-TNT--error-start-event"
       style="font-size:3rem"
     />
     <div>
@@ -1371,7 +1371,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--error-end-event"
+      class="sap-icon-TNT--error-end-event"
       style="font-size:3rem"
     />
     <div>
@@ -1383,7 +1383,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--content-enricher"
+      class="sap-icon-TNT--content-enricher"
       style="font-size:3rem"
     />
     <div>
@@ -1395,7 +1395,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--realization"
+      class="sap-icon-TNT--realization"
       style="font-size:3rem"
     />
     <div>
@@ -1407,7 +1407,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--interface"
+      class="sap-icon-TNT--interface"
       style="font-size:3rem"
     />
     <div>
@@ -1419,7 +1419,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--usiness-capability"
+      class="sap-icon-TNT--usiness-capability"
       style="font-size:3rem"
     />
     <div>
@@ -1431,7 +1431,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--progress-group"
+      class="sap-icon-TNT--progress-group"
       style="font-size:3rem"
     />
     <div>
@@ -1443,7 +1443,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--value-stream"
+      class="sap-icon-TNT--value-stream"
       style="font-size:3rem"
     />
     <div>
@@ -1455,7 +1455,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--value-flow"
+      class="sap-icon-TNT--value-flow"
       style="font-size:3rem"
     />
     <div>
@@ -1467,7 +1467,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--application"
+      class="sap-icon-TNT--application"
       style="font-size:3rem"
     />
     <div>
@@ -1479,7 +1479,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--etl-job"
+      class="sap-icon-TNT--etl-job"
       style="font-size:3rem"
     />
     <div>
@@ -1491,7 +1491,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--business-service"
+      class="sap-icon-TNT--business-service"
       style="font-size:3rem"
     />
     <div>
@@ -1503,7 +1503,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--application-service"
+      class="sap-icon-TNT--application-service"
       style="font-size:3rem"
     />
     <div>
@@ -1515,7 +1515,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--network-node"
+      class="sap-icon-TNT--network-node"
       style="font-size:3rem"
     />
     <div>
@@ -1527,7 +1527,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--network"
+      class="sap-icon-TNT--network"
       style="font-size:3rem"
     />
     <div>
@@ -1539,7 +1539,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--deployment-instance"
+      class="sap-icon-TNT--deployment-instance"
       style="font-size:3rem"
     />
     <div>
@@ -1551,7 +1551,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--intranet"
+      class="sap-icon-TNT--intranet"
       style="font-size:3rem"
     />
     <div>
@@ -1563,7 +1563,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--mobile-network"
+      class="sap-icon-TNT--mobile-network"
       style="font-size:3rem"
     />
     <div>
@@ -1575,7 +1575,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--private-cloud"
+      class="sap-icon-TNT--private-cloud"
       style="font-size:3rem"
     />
     <div>
@@ -1587,7 +1587,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--antenna"
+      class="sap-icon-TNT--antenna"
       style="font-size:3rem"
     />
     <div>
@@ -1599,7 +1599,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--firewall"
+      class="sap-icon-TNT--firewall"
       style="font-size:3rem"
     />
     <div>
@@ -1611,7 +1611,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--hub"
+      class="sap-icon-TNT--hub"
       style="font-size:3rem"
     />
     <div>
@@ -1623,7 +1623,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--modem"
+      class="sap-icon-TNT--modem"
       style="font-size:3rem"
     />
     <div>
@@ -1635,7 +1635,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--repeater"
+      class="sap-icon-TNT--repeater"
       style="font-size:3rem"
     />
     <div>
@@ -1647,7 +1647,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--router"
+      class="sap-icon-TNT--router"
       style="font-size:3rem"
     />
     <div>
@@ -1659,7 +1659,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--switch"
+      class="sap-icon-TNT--switch"
       style="font-size:3rem"
     />
     <div>
@@ -1671,7 +1671,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--satellite"
+      class="sap-icon-TNT--satellite"
       style="font-size:3rem"
     />
     <div>
@@ -1683,7 +1683,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--system-2"
+      class="sap-icon-TNT--system-2"
       style="font-size:3rem"
     />
     <div>
@@ -1695,7 +1695,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--status-activating"
+      class="sap-icon-TNT--status-activating"
       style="font-size:3rem"
     />
     <div>
@@ -1707,7 +1707,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--status-suspended"
+      class="sap-icon-TNT--status-suspended"
       style="font-size:3rem"
     />
     <div>
@@ -1719,7 +1719,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--status-suspending"
+      class="sap-icon-TNT--status-suspending"
       style="font-size:3rem"
     />
     <div>
@@ -1731,7 +1731,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--status-terminated"
+      class="sap-icon-TNT--status-terminated"
       style="font-size:3rem"
     />
     <div>
@@ -1743,7 +1743,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--status-terminating"
+      class="sap-icon-TNT--status-terminating"
       style="font-size:3rem"
     />
     <div>
@@ -1755,7 +1755,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--solution-not-licensed"
+      class="sap-icon-TNT--solution-not-licensed"
       style="font-size:3rem"
     />
     <div>
@@ -1767,7 +1767,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--clear-all-mapping"
+      class="sap-icon-TNT--clear-all-mapping"
       style="font-size:3rem"
     />
     <div>
@@ -1779,7 +1779,7 @@ exports[`Storyshots Components/Icons/TNT Icons Tnt Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon-TNT sap-icon-TNT--map-all-fields"
+      class="sap-icon-TNT--map-all-fields"
       style="font-size:3rem"
     />
     <div>

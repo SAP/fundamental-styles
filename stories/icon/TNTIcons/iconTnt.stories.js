@@ -21,11 +21,11 @@ Note: If an icon needs to be selected or have any interaction states, it is reco
 
 export const sizes = () => `
 
-    <span class="sap-icon-TNT sap-icon-TNT--exceptions"></span>
+    <span class="sap-icon-TNT--exceptions"></span>
     <br />
-    <span class="sap-icon-TNT sap-icon-TNT--exceptions" style="font-size:2rem"></span>
+    <span class="sap-icon-TNT--exceptions" style="font-size:2rem"></span>
     <br />
-    <span class="sap-icon-TNT sap-icon-TNT--exceptions" style="font-size:5rem"></span>
+    <span class="sap-icon-TNT--exceptions" style="font-size:5rem"></span>
 `;
 
 sizes.parameters = {
@@ -41,7 +41,7 @@ export const tntIcons = () => {
     div.innerHTML = dataTNT.tntIcons.map((icon) => {
         return (
             '<div class="fddocs-container--icon">' +
-                `<span class="sap-icon-TNT sap-icon-TNT--${icon}" style="font-size:3rem"></span>` +
+                `<span class="sap-icon-TNT--${icon}" style="font-size:3rem"></span>` +
                 `<div>.sap-icon-TNT--${icon}</div>` +
             '</div><br />'
         );
@@ -52,7 +52,7 @@ export const tntIcons = () => {
 tntIcons.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'For icons of <b>SAP-icons-TNT</b> font-family add the <code>sap-icon-TNT--{icon-name}</code> modifier class identifying the icon style to the <code>sap-icon-TNT</code> class. For example, for an <i>exceptions</i> icon, add <code>sap-icon-TNT sap-icon-TNT--exceptions</code> with the desired font size value.'
+        storyDescription: 'For icons of <b>SAP-icons-TNT</b> font-family add the <code>sap-icon-TNT--{icon-name}</code> class identifying the icon style. For example, for an <i>exceptions</i> icon, add <code>sap-icon-TNT--exceptions</code> with the desired font size value.'
     },
     skipRTLSnapshot: true
 };

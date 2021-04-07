@@ -15,19 +15,11 @@ $blockTNT: sap-icon-TNT;
 }
 
 [class*='#{$blockBusiness}'] {
-  @include fd-reset();
   @include fd-business-suite-icon-base();
-
-  font-style: normal;
-  display: inline-block;
 }
 
 [class*='#{$blockTNT}'] {
-  @include fd-reset();
   @include fd-tnt-icon-base();
-
-  font-style: normal;
-  display: inline-block;
 }
 
 .#{$block} {

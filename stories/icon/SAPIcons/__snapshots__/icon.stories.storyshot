@@ -8,7 +8,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--accidental-leave"
+      class="sap-icon--accidental-leave"
       style="font-size:3rem"
     />
     <div>
@@ -20,7 +20,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--account"
+      class="sap-icon--account"
       style="font-size:3rem"
     />
     <div>
@@ -32,7 +32,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--wrench"
+      class="sap-icon--wrench"
       style="font-size:3rem"
     />
     <div>
@@ -44,7 +44,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--windows-doors"
+      class="sap-icon--windows-doors"
       style="font-size:3rem"
     />
     <div>
@@ -56,7 +56,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--washing-machine"
+      class="sap-icon--washing-machine"
       style="font-size:3rem"
     />
     <div>
@@ -68,7 +68,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--visits"
+      class="sap-icon--visits"
       style="font-size:3rem"
     />
     <div>
@@ -80,7 +80,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--video"
+      class="sap-icon--video"
       style="font-size:3rem"
     />
     <div>
@@ -92,7 +92,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--travel-expense"
+      class="sap-icon--travel-expense"
       style="font-size:3rem"
     />
     <div>
@@ -104,7 +104,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--temperature"
+      class="sap-icon--temperature"
       style="font-size:3rem"
     />
     <div>
@@ -116,7 +116,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--task"
+      class="sap-icon--task"
       style="font-size:3rem"
     />
     <div>
@@ -128,7 +128,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--synchronize"
+      class="sap-icon--synchronize"
       style="font-size:3rem"
     />
     <div>
@@ -140,7 +140,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--survey"
+      class="sap-icon--survey"
       style="font-size:3rem"
     />
     <div>
@@ -152,7 +152,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--settings"
+      class="sap-icon--settings"
       style="font-size:3rem"
     />
     <div>
@@ -164,7 +164,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--search"
+      class="sap-icon--search"
       style="font-size:3rem"
     />
     <div>
@@ -176,7 +176,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sales-document"
+      class="sap-icon--sales-document"
       style="font-size:3rem"
     />
     <div>
@@ -188,7 +188,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--retail-store"
+      class="sap-icon--retail-store"
       style="font-size:3rem"
     />
     <div>
@@ -200,7 +200,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--refresh"
+      class="sap-icon--refresh"
       style="font-size:3rem"
     />
     <div>
@@ -212,7 +212,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--product"
+      class="sap-icon--product"
       style="font-size:3rem"
     />
     <div>
@@ -224,7 +224,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--present"
+      class="sap-icon--present"
       style="font-size:3rem"
     />
     <div>
@@ -236,7 +236,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--ppt-attachment"
+      class="sap-icon--ppt-attachment"
       style="font-size:3rem"
     />
     <div>
@@ -248,7 +248,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--pool"
+      class="sap-icon--pool"
       style="font-size:3rem"
     />
     <div>
@@ -260,7 +260,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--pie-chart"
+      class="sap-icon--pie-chart"
       style="font-size:3rem"
     />
     <div>
@@ -272,7 +272,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--picture"
+      class="sap-icon--picture"
       style="font-size:3rem"
     />
     <div>
@@ -284,7 +284,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--photo-voltaic"
+      class="sap-icon--photo-voltaic"
       style="font-size:3rem"
     />
     <div>
@@ -296,7 +296,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--phone"
+      class="sap-icon--phone"
       style="font-size:3rem"
     />
     <div>
@@ -308,7 +308,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--pending"
+      class="sap-icon--pending"
       style="font-size:3rem"
     />
     <div>
@@ -320,7 +320,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--pdf-attachment"
+      class="sap-icon--pdf-attachment"
       style="font-size:3rem"
     />
     <div>
@@ -332,7 +332,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--past"
+      class="sap-icon--past"
       style="font-size:3rem"
     />
     <div>
@@ -344,7 +344,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--outgoing-call"
+      class="sap-icon--outgoing-call"
       style="font-size:3rem"
     />
     <div>
@@ -356,7 +356,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--opportunity"
+      class="sap-icon--opportunity"
       style="font-size:3rem"
     />
     <div>
@@ -368,7 +368,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--opportunities"
+      class="sap-icon--opportunities"
       style="font-size:3rem"
     />
     <div>
@@ -380,7 +380,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--notes"
+      class="sap-icon--notes"
       style="font-size:3rem"
     />
     <div>
@@ -392,7 +392,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--money-bills"
+      class="sap-icon--money-bills"
       style="font-size:3rem"
     />
     <div>
@@ -404,7 +404,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--map"
+      class="sap-icon--map"
       style="font-size:3rem"
     />
     <div>
@@ -416,7 +416,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--log"
+      class="sap-icon--log"
       style="font-size:3rem"
     />
     <div>
@@ -428,7 +428,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--line-charts"
+      class="sap-icon--line-charts"
       style="font-size:3rem"
     />
     <div>
@@ -440,7 +440,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--lightbulb"
+      class="sap-icon--lightbulb"
       style="font-size:3rem"
     />
     <div>
@@ -452,7 +452,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--leads"
+      class="sap-icon--leads"
       style="font-size:3rem"
     />
     <div>
@@ -464,7 +464,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--lead"
+      class="sap-icon--lead"
       style="font-size:3rem"
     />
     <div>
@@ -476,7 +476,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--laptop"
+      class="sap-icon--laptop"
       style="font-size:3rem"
     />
     <div>
@@ -488,7 +488,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--kpi-managing-my-area"
+      class="sap-icon--kpi-managing-my-area"
       style="font-size:3rem"
     />
     <div>
@@ -500,7 +500,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--kpi-corporate-performance"
+      class="sap-icon--kpi-corporate-performance"
       style="font-size:3rem"
     />
     <div>
@@ -512,7 +512,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--incoming-call"
+      class="sap-icon--incoming-call"
       style="font-size:3rem"
     />
     <div>
@@ -524,7 +524,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--inbox"
+      class="sap-icon--inbox"
       style="font-size:3rem"
     />
     <div>
@@ -536,7 +536,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--horizontal-bar-chart"
+      class="sap-icon--horizontal-bar-chart"
       style="font-size:3rem"
     />
     <div>
@@ -548,7 +548,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--history"
+      class="sap-icon--history"
       style="font-size:3rem"
     />
     <div>
@@ -560,7 +560,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--heating-cooling"
+      class="sap-icon--heating-cooling"
       style="font-size:3rem"
     />
     <div>
@@ -572,7 +572,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--gantt-bars"
+      class="sap-icon--gantt-bars"
       style="font-size:3rem"
     />
     <div>
@@ -584,7 +584,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--future"
+      class="sap-icon--future"
       style="font-size:3rem"
     />
     <div>
@@ -596,7 +596,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--fridge"
+      class="sap-icon--fridge"
       style="font-size:3rem"
     />
     <div>
@@ -608,7 +608,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--fallback"
+      class="sap-icon--fallback"
       style="font-size:3rem"
     />
     <div>
@@ -620,7 +620,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--expense-report"
+      class="sap-icon--expense-report"
       style="font-size:3rem"
     />
     <div>
@@ -632,7 +632,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--excel-attachment"
+      class="sap-icon--excel-attachment"
       style="font-size:3rem"
     />
     <div>
@@ -644,7 +644,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--energy-saving-lightbulb"
+      class="sap-icon--energy-saving-lightbulb"
       style="font-size:3rem"
     />
     <div>
@@ -656,7 +656,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--employee"
+      class="sap-icon--employee"
       style="font-size:3rem"
     />
     <div>
@@ -668,7 +668,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--email"
+      class="sap-icon--email"
       style="font-size:3rem"
     />
     <div>
@@ -680,7 +680,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--edit"
+      class="sap-icon--edit"
       style="font-size:3rem"
     />
     <div>
@@ -692,7 +692,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--duplicate"
+      class="sap-icon--duplicate"
       style="font-size:3rem"
     />
     <div>
@@ -704,7 +704,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--download"
+      class="sap-icon--download"
       style="font-size:3rem"
     />
     <div>
@@ -716,7 +716,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--doc-attachment"
+      class="sap-icon--doc-attachment"
       style="font-size:3rem"
     />
     <div>
@@ -728,7 +728,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--dishwasher"
+      class="sap-icon--dishwasher"
       style="font-size:3rem"
     />
     <div>
@@ -740,7 +740,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--delete"
+      class="sap-icon--delete"
       style="font-size:3rem"
     />
     <div>
@@ -752,7 +752,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--decline"
+      class="sap-icon--decline"
       style="font-size:3rem"
     />
     <div>
@@ -764,7 +764,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--complete"
+      class="sap-icon--complete"
       style="font-size:3rem"
     />
     <div>
@@ -776,7 +776,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--competitor"
+      class="sap-icon--competitor"
       style="font-size:3rem"
     />
     <div>
@@ -788,7 +788,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--collections-management"
+      class="sap-icon--collections-management"
       style="font-size:3rem"
     />
     <div>
@@ -800,7 +800,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--chalkboard"
+      class="sap-icon--chalkboard"
       style="font-size:3rem"
     />
     <div>
@@ -812,7 +812,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--cart"
+      class="sap-icon--cart"
       style="font-size:3rem"
     />
     <div>
@@ -824,7 +824,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--card"
+      class="sap-icon--card"
       style="font-size:3rem"
     />
     <div>
@@ -836,7 +836,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--camera"
+      class="sap-icon--camera"
       style="font-size:3rem"
     />
     <div>
@@ -848,7 +848,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--calendar"
+      class="sap-icon--calendar"
       style="font-size:3rem"
     />
     <div>
@@ -860,7 +860,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--begin"
+      class="sap-icon--begin"
       style="font-size:3rem"
     />
     <div>
@@ -872,7 +872,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--basket"
+      class="sap-icon--basket"
       style="font-size:3rem"
     />
     <div>
@@ -884,7 +884,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--bar-chart"
+      class="sap-icon--bar-chart"
       style="font-size:3rem"
     />
     <div>
@@ -896,7 +896,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--attachment"
+      class="sap-icon--attachment"
       style="font-size:3rem"
     />
     <div>
@@ -908,7 +908,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--arrow-top"
+      class="sap-icon--arrow-top"
       style="font-size:3rem"
     />
     <div>
@@ -920,7 +920,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--arrow-right"
+      class="sap-icon--arrow-right"
       style="font-size:3rem"
     />
     <div>
@@ -932,7 +932,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--arrow-left"
+      class="sap-icon--arrow-left"
       style="font-size:3rem"
     />
     <div>
@@ -944,7 +944,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--arrow-bottom"
+      class="sap-icon--arrow-bottom"
       style="font-size:3rem"
     />
     <div>
@@ -956,7 +956,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--approvals"
+      class="sap-icon--approvals"
       style="font-size:3rem"
     />
     <div>
@@ -968,7 +968,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--appointment"
+      class="sap-icon--appointment"
       style="font-size:3rem"
     />
     <div>
@@ -980,7 +980,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--alphabetical-order"
+      class="sap-icon--alphabetical-order"
       style="font-size:3rem"
     />
     <div>
@@ -992,7 +992,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--along-stacked-chart"
+      class="sap-icon--along-stacked-chart"
       style="font-size:3rem"
     />
     <div>
@@ -1004,7 +1004,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--alert"
+      class="sap-icon--alert"
       style="font-size:3rem"
     />
     <div>
@@ -1016,7 +1016,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--addresses"
+      class="sap-icon--addresses"
       style="font-size:3rem"
     />
     <div>
@@ -1028,7 +1028,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--address-book"
+      class="sap-icon--address-book"
       style="font-size:3rem"
     />
     <div>
@@ -1040,7 +1040,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--add-filter"
+      class="sap-icon--add-filter"
       style="font-size:3rem"
     />
     <div>
@@ -1052,7 +1052,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--add-favorite"
+      class="sap-icon--add-favorite"
       style="font-size:3rem"
     />
     <div>
@@ -1064,7 +1064,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--add"
+      class="sap-icon--add"
       style="font-size:3rem"
     />
     <div>
@@ -1076,7 +1076,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--activities"
+      class="sap-icon--activities"
       style="font-size:3rem"
     />
     <div>
@@ -1088,7 +1088,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--action"
+      class="sap-icon--action"
       style="font-size:3rem"
     />
     <div>
@@ -1100,7 +1100,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--accept"
+      class="sap-icon--accept"
       style="font-size:3rem"
     />
     <div>
@@ -1112,7 +1112,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--hint"
+      class="sap-icon--hint"
       style="font-size:3rem"
     />
     <div>
@@ -1124,7 +1124,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--group"
+      class="sap-icon--group"
       style="font-size:3rem"
     />
     <div>
@@ -1136,7 +1136,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--check-availability"
+      class="sap-icon--check-availability"
       style="font-size:3rem"
     />
     <div>
@@ -1148,7 +1148,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--weather-proofing"
+      class="sap-icon--weather-proofing"
       style="font-size:3rem"
     />
     <div>
@@ -1160,7 +1160,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--payment-approval"
+      class="sap-icon--payment-approval"
       style="font-size:3rem"
     />
     <div>
@@ -1172,7 +1172,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--batch-payments"
+      class="sap-icon--batch-payments"
       style="font-size:3rem"
     />
     <div>
@@ -1184,7 +1184,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--bed"
+      class="sap-icon--bed"
       style="font-size:3rem"
     />
     <div>
@@ -1196,7 +1196,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--arobase"
+      class="sap-icon--arobase"
       style="font-size:3rem"
     />
     <div>
@@ -1208,7 +1208,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--family-care"
+      class="sap-icon--family-care"
       style="font-size:3rem"
     />
     <div>
@@ -1220,7 +1220,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--favorite"
+      class="sap-icon--favorite"
       style="font-size:3rem"
     />
     <div>
@@ -1232,7 +1232,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--navigation-right-arrow"
+      class="sap-icon--navigation-right-arrow"
       style="font-size:3rem"
     />
     <div>
@@ -1244,7 +1244,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--navigation-left-arrow"
+      class="sap-icon--navigation-left-arrow"
       style="font-size:3rem"
     />
     <div>
@@ -1256,7 +1256,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--e-care"
+      class="sap-icon--e-care"
       style="font-size:3rem"
     />
     <div>
@@ -1268,7 +1268,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--less"
+      class="sap-icon--less"
       style="font-size:3rem"
     />
     <div>
@@ -1280,7 +1280,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--lateness"
+      class="sap-icon--lateness"
       style="font-size:3rem"
     />
     <div>
@@ -1292,7 +1292,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--lab"
+      class="sap-icon--lab"
       style="font-size:3rem"
     />
     <div>
@@ -1304,7 +1304,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--internet-browser"
+      class="sap-icon--internet-browser"
       style="font-size:3rem"
     />
     <div>
@@ -1316,7 +1316,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--instance"
+      class="sap-icon--instance"
       style="font-size:3rem"
     />
     <div>
@@ -1328,7 +1328,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--inspection"
+      class="sap-icon--inspection"
       style="font-size:3rem"
     />
     <div>
@@ -1340,7 +1340,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--image-viewer"
+      class="sap-icon--image-viewer"
       style="font-size:3rem"
     />
     <div>
@@ -1352,7 +1352,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--home"
+      class="sap-icon--home"
       style="font-size:3rem"
     />
     <div>
@@ -1364,7 +1364,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--grid"
+      class="sap-icon--grid"
       style="font-size:3rem"
     />
     <div>
@@ -1376,7 +1376,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--goalseek"
+      class="sap-icon--goalseek"
       style="font-size:3rem"
     />
     <div>
@@ -1388,7 +1388,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--general-leave-request"
+      class="sap-icon--general-leave-request"
       style="font-size:3rem"
     />
     <div>
@@ -1400,7 +1400,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--create-leave-request"
+      class="sap-icon--create-leave-request"
       style="font-size:3rem"
     />
     <div>
@@ -1412,7 +1412,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--flight"
+      class="sap-icon--flight"
       style="font-size:3rem"
     />
     <div>
@@ -1424,7 +1424,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--filter"
+      class="sap-icon--filter"
       style="font-size:3rem"
     />
     <div>
@@ -1436,7 +1436,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--favorite-list"
+      class="sap-icon--favorite-list"
       style="font-size:3rem"
     />
     <div>
@@ -1448,7 +1448,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--factory"
+      class="sap-icon--factory"
       style="font-size:3rem"
     />
     <div>
@@ -1460,7 +1460,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--endoscopy"
+      class="sap-icon--endoscopy"
       style="font-size:3rem"
     />
     <div>
@@ -1472,7 +1472,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--employee-pane"
+      class="sap-icon--employee-pane"
       style="font-size:3rem"
     />
     <div>
@@ -1484,7 +1484,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--employee-approvals"
+      class="sap-icon--employee-approvals"
       style="font-size:3rem"
     />
     <div>
@@ -1496,7 +1496,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--email-read"
+      class="sap-icon--email-read"
       style="font-size:3rem"
     />
     <div>
@@ -1508,7 +1508,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--electrocardiogram"
+      class="sap-icon--electrocardiogram"
       style="font-size:3rem"
     />
     <div>
@@ -1520,7 +1520,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--documents"
+      class="sap-icon--documents"
       style="font-size:3rem"
     />
     <div>
@@ -1532,7 +1532,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--decision"
+      class="sap-icon--decision"
       style="font-size:3rem"
     />
     <div>
@@ -1544,7 +1544,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--database"
+      class="sap-icon--database"
       style="font-size:3rem"
     />
     <div>
@@ -1556,7 +1556,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--customer-history"
+      class="sap-icon--customer-history"
       style="font-size:3rem"
     />
     <div>
@@ -1568,7 +1568,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--customer"
+      class="sap-icon--customer"
       style="font-size:3rem"
     />
     <div>
@@ -1580,7 +1580,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--credit-card"
+      class="sap-icon--credit-card"
       style="font-size:3rem"
     />
     <div>
@@ -1592,7 +1592,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--create-entry-time"
+      class="sap-icon--create-entry-time"
       style="font-size:3rem"
     />
     <div>
@@ -1604,7 +1604,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--contacts"
+      class="sap-icon--contacts"
       style="font-size:3rem"
     />
     <div>
@@ -1616,7 +1616,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--compare"
+      class="sap-icon--compare"
       style="font-size:3rem"
     />
     <div>
@@ -1628,7 +1628,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--clinical-order"
+      class="sap-icon--clinical-order"
       style="font-size:3rem"
     />
     <div>
@@ -1640,7 +1640,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--chain-link"
+      class="sap-icon--chain-link"
       style="font-size:3rem"
     />
     <div>
@@ -1652,7 +1652,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--pull-down"
+      class="sap-icon--pull-down"
       style="font-size:3rem"
     />
     <div>
@@ -1664,7 +1664,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--cargo-train"
+      class="sap-icon--cargo-train"
       style="font-size:3rem"
     />
     <div>
@@ -1676,7 +1676,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--car-rental"
+      class="sap-icon--car-rental"
       style="font-size:3rem"
     />
     <div>
@@ -1688,7 +1688,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--business-card"
+      class="sap-icon--business-card"
       style="font-size:3rem"
     />
     <div>
@@ -1700,7 +1700,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--bar-code"
+      class="sap-icon--bar-code"
       style="font-size:3rem"
     />
     <div>
@@ -1712,7 +1712,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--folder-blank"
+      class="sap-icon--folder-blank"
       style="font-size:3rem"
     />
     <div>
@@ -1724,7 +1724,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--passenger-train"
+      class="sap-icon--passenger-train"
       style="font-size:3rem"
     />
     <div>
@@ -1736,7 +1736,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--question-mark"
+      class="sap-icon--question-mark"
       style="font-size:3rem"
     />
     <div>
@@ -1748,7 +1748,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--world"
+      class="sap-icon--world"
       style="font-size:3rem"
     />
     <div>
@@ -1760,7 +1760,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--iphone"
+      class="sap-icon--iphone"
       style="font-size:3rem"
     />
     <div>
@@ -1772,7 +1772,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--ipad"
+      class="sap-icon--ipad"
       style="font-size:3rem"
     />
     <div>
@@ -1784,7 +1784,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--warning"
+      class="sap-icon--warning"
       style="font-size:3rem"
     />
     <div>
@@ -1796,7 +1796,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sort"
+      class="sap-icon--sort"
       style="font-size:3rem"
     />
     <div>
@@ -1808,7 +1808,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--course-book"
+      class="sap-icon--course-book"
       style="font-size:3rem"
     />
     <div>
@@ -1820,7 +1820,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--course-program"
+      class="sap-icon--course-program"
       style="font-size:3rem"
     />
     <div>
@@ -1832,7 +1832,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--add-coursebook"
+      class="sap-icon--add-coursebook"
       style="font-size:3rem"
     />
     <div>
@@ -1844,7 +1844,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--print"
+      class="sap-icon--print"
       style="font-size:3rem"
     />
     <div>
@@ -1856,7 +1856,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--save"
+      class="sap-icon--save"
       style="font-size:3rem"
     />
     <div>
@@ -1868,7 +1868,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--play"
+      class="sap-icon--play"
       style="font-size:3rem"
     />
     <div>
@@ -1880,7 +1880,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--pause"
+      class="sap-icon--pause"
       style="font-size:3rem"
     />
     <div>
@@ -1892,7 +1892,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--record"
+      class="sap-icon--record"
       style="font-size:3rem"
     />
     <div>
@@ -1904,7 +1904,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--response"
+      class="sap-icon--response"
       style="font-size:3rem"
     />
     <div>
@@ -1916,7 +1916,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--pushpin-on"
+      class="sap-icon--pushpin-on"
       style="font-size:3rem"
     />
     <div>
@@ -1928,7 +1928,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--pushpin-off"
+      class="sap-icon--pushpin-off"
       style="font-size:3rem"
     />
     <div>
@@ -1940,7 +1940,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--unfavorite"
+      class="sap-icon--unfavorite"
       style="font-size:3rem"
     />
     <div>
@@ -1952,7 +1952,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--learning-assistant"
+      class="sap-icon--learning-assistant"
       style="font-size:3rem"
     />
     <div>
@@ -1964,7 +1964,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--timesheet"
+      class="sap-icon--timesheet"
       style="font-size:3rem"
     />
     <div>
@@ -1976,7 +1976,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--time-entry-request"
+      class="sap-icon--time-entry-request"
       style="font-size:3rem"
     />
     <div>
@@ -1988,7 +1988,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--list"
+      class="sap-icon--list"
       style="font-size:3rem"
     />
     <div>
@@ -2000,7 +2000,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--action-settings"
+      class="sap-icon--action-settings"
       style="font-size:3rem"
     />
     <div>
@@ -2012,7 +2012,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--share"
+      class="sap-icon--share"
       style="font-size:3rem"
     />
     <div>
@@ -2024,7 +2024,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--feed"
+      class="sap-icon--feed"
       style="font-size:3rem"
     />
     <div>
@@ -2036,7 +2036,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--role"
+      class="sap-icon--role"
       style="font-size:3rem"
     />
     <div>
@@ -2048,7 +2048,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--flag"
+      class="sap-icon--flag"
       style="font-size:3rem"
     />
     <div>
@@ -2060,7 +2060,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--post"
+      class="sap-icon--post"
       style="font-size:3rem"
     />
     <div>
@@ -2072,7 +2072,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--inspect"
+      class="sap-icon--inspect"
       style="font-size:3rem"
     />
     <div>
@@ -2084,7 +2084,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--inspect-down"
+      class="sap-icon--inspect-down"
       style="font-size:3rem"
     />
     <div>
@@ -2096,7 +2096,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--appointment-2"
+      class="sap-icon--appointment-2"
       style="font-size:3rem"
     />
     <div>
@@ -2108,7 +2108,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--target-group"
+      class="sap-icon--target-group"
       style="font-size:3rem"
     />
     <div>
@@ -2120,7 +2120,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--marketing-campaign"
+      class="sap-icon--marketing-campaign"
       style="font-size:3rem"
     />
     <div>
@@ -2132,7 +2132,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--message-error"
+      class="sap-icon--message-error"
       style="font-size:3rem"
     />
     <div>
@@ -2144,7 +2144,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--notification"
+      class="sap-icon--notification"
       style="font-size:3rem"
     />
     <div>
@@ -2156,7 +2156,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--comment"
+      class="sap-icon--comment"
       style="font-size:3rem"
     />
     <div>
@@ -2168,7 +2168,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--shipping-status"
+      class="sap-icon--shipping-status"
       style="font-size:3rem"
     />
     <div>
@@ -2180,7 +2180,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--collaborate"
+      class="sap-icon--collaborate"
       style="font-size:3rem"
     />
     <div>
@@ -2192,7 +2192,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--shortcut"
+      class="sap-icon--shortcut"
       style="font-size:3rem"
     />
     <div>
@@ -2204,7 +2204,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--lead-outdated"
+      class="sap-icon--lead-outdated"
       style="font-size:3rem"
     />
     <div>
@@ -2216,7 +2216,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--tools-opportunity"
+      class="sap-icon--tools-opportunity"
       style="font-size:3rem"
     />
     <div>
@@ -2228,7 +2228,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--permission"
+      class="sap-icon--permission"
       style="font-size:3rem"
     />
     <div>
@@ -2240,7 +2240,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--supplier"
+      class="sap-icon--supplier"
       style="font-size:3rem"
     />
     <div>
@@ -2252,7 +2252,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--table-view"
+      class="sap-icon--table-view"
       style="font-size:3rem"
     />
     <div>
@@ -2264,7 +2264,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--table-chart"
+      class="sap-icon--table-chart"
       style="font-size:3rem"
     />
     <div>
@@ -2276,7 +2276,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--switch-views"
+      class="sap-icon--switch-views"
       style="font-size:3rem"
     />
     <div>
@@ -2288,7 +2288,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--e-learning"
+      class="sap-icon--e-learning"
       style="font-size:3rem"
     />
     <div>
@@ -2300,7 +2300,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--manager"
+      class="sap-icon--manager"
       style="font-size:3rem"
     />
     <div>
@@ -2312,7 +2312,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--switch-classes"
+      class="sap-icon--switch-classes"
       style="font-size:3rem"
     />
     <div>
@@ -2324,7 +2324,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--simple-payment"
+      class="sap-icon--simple-payment"
       style="font-size:3rem"
     />
     <div>
@@ -2336,7 +2336,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--signature"
+      class="sap-icon--signature"
       style="font-size:3rem"
     />
     <div>
@@ -2348,7 +2348,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sales-order-item"
+      class="sap-icon--sales-order-item"
       style="font-size:3rem"
     />
     <div>
@@ -2360,7 +2360,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sales-order"
+      class="sap-icon--sales-order"
       style="font-size:3rem"
     />
     <div>
@@ -2372,7 +2372,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--request"
+      class="sap-icon--request"
       style="font-size:3rem"
     />
     <div>
@@ -2384,7 +2384,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--receipt"
+      class="sap-icon--receipt"
       style="font-size:3rem"
     />
     <div>
@@ -2396,7 +2396,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--puzzle"
+      class="sap-icon--puzzle"
       style="font-size:3rem"
     />
     <div>
@@ -2408,7 +2408,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--process"
+      class="sap-icon--process"
       style="font-size:3rem"
     />
     <div>
@@ -2420,7 +2420,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--private"
+      class="sap-icon--private"
       style="font-size:3rem"
     />
     <div>
@@ -2432,7 +2432,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--popup-window"
+      class="sap-icon--popup-window"
       style="font-size:3rem"
     />
     <div>
@@ -2444,7 +2444,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--person-placeholder"
+      class="sap-icon--person-placeholder"
       style="font-size:3rem"
     />
     <div>
@@ -2456,7 +2456,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--per-diem"
+      class="sap-icon--per-diem"
       style="font-size:3rem"
     />
     <div>
@@ -2468,7 +2468,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--paper-plane"
+      class="sap-icon--paper-plane"
       style="font-size:3rem"
     />
     <div>
@@ -2480,7 +2480,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--paid-leave"
+      class="sap-icon--paid-leave"
       style="font-size:3rem"
     />
     <div>
@@ -2492,7 +2492,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--pdf-reader"
+      class="sap-icon--pdf-reader"
       style="font-size:3rem"
     />
     <div>
@@ -2504,7 +2504,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--overview-chart"
+      class="sap-icon--overview-chart"
       style="font-size:3rem"
     />
     <div>
@@ -2516,7 +2516,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--overlay"
+      class="sap-icon--overlay"
       style="font-size:3rem"
     />
     <div>
@@ -2528,7 +2528,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--org-chart"
+      class="sap-icon--org-chart"
       style="font-size:3rem"
     />
     <div>
@@ -2540,7 +2540,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--number-sign"
+      class="sap-icon--number-sign"
       style="font-size:3rem"
     />
     <div>
@@ -2552,7 +2552,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--notification-2"
+      class="sap-icon--notification-2"
       style="font-size:3rem"
     />
     <div>
@@ -2564,7 +2564,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--my-sales-order"
+      class="sap-icon--my-sales-order"
       style="font-size:3rem"
     />
     <div>
@@ -2576,7 +2576,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--meal"
+      class="sap-icon--meal"
       style="font-size:3rem"
     />
     <div>
@@ -2588,7 +2588,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--loan"
+      class="sap-icon--loan"
       style="font-size:3rem"
     />
     <div>
@@ -2600,7 +2600,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--order-status"
+      class="sap-icon--order-status"
       style="font-size:3rem"
     />
     <div>
@@ -2612,7 +2612,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--customer-order-entry"
+      class="sap-icon--customer-order-entry"
       style="font-size:3rem"
     />
     <div>
@@ -2624,7 +2624,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--performance"
+      class="sap-icon--performance"
       style="font-size:3rem"
     />
     <div>
@@ -2636,7 +2636,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--menu"
+      class="sap-icon--menu"
       style="font-size:3rem"
     />
     <div>
@@ -2648,7 +2648,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--employee-lookup"
+      class="sap-icon--employee-lookup"
       style="font-size:3rem"
     />
     <div>
@@ -2660,7 +2660,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--education"
+      class="sap-icon--education"
       style="font-size:3rem"
     />
     <div>
@@ -2672,7 +2672,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--customer-briefing"
+      class="sap-icon--customer-briefing"
       style="font-size:3rem"
     />
     <div>
@@ -2684,7 +2684,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--customer-and-contacts"
+      class="sap-icon--customer-and-contacts"
       style="font-size:3rem"
     />
     <div>
@@ -2696,7 +2696,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--my-view"
+      class="sap-icon--my-view"
       style="font-size:3rem"
     />
     <div>
@@ -2708,7 +2708,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--accelerated"
+      class="sap-icon--accelerated"
       style="font-size:3rem"
     />
     <div>
@@ -2720,7 +2720,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--to-be-reviewed"
+      class="sap-icon--to-be-reviewed"
       style="font-size:3rem"
     />
     <div>
@@ -2732,7 +2732,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--warning2"
+      class="sap-icon--warning2"
       style="font-size:3rem"
     />
     <div>
@@ -2744,7 +2744,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--feeder-arrow"
+      class="sap-icon--feeder-arrow"
       style="font-size:3rem"
     />
     <div>
@@ -2756,7 +2756,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--quality-issue"
+      class="sap-icon--quality-issue"
       style="font-size:3rem"
     />
     <div>
@@ -2768,7 +2768,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--workflow-tasks"
+      class="sap-icon--workflow-tasks"
       style="font-size:3rem"
     />
     <div>
@@ -2780,7 +2780,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--create"
+      class="sap-icon--create"
       style="font-size:3rem"
     />
     <div>
@@ -2792,7 +2792,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--home-share"
+      class="sap-icon--home-share"
       style="font-size:3rem"
     />
     <div>
@@ -2804,7 +2804,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--globe"
+      class="sap-icon--globe"
       style="font-size:3rem"
     />
     <div>
@@ -2816,7 +2816,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--tags"
+      class="sap-icon--tags"
       style="font-size:3rem"
     />
     <div>
@@ -2828,7 +2828,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--work-history"
+      class="sap-icon--work-history"
       style="font-size:3rem"
     />
     <div>
@@ -2840,7 +2840,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--x-ray"
+      class="sap-icon--x-ray"
       style="font-size:3rem"
     />
     <div>
@@ -2852,7 +2852,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--wounds-doc"
+      class="sap-icon--wounds-doc"
       style="font-size:3rem"
     />
     <div>
@@ -2864,7 +2864,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--web-cam"
+      class="sap-icon--web-cam"
       style="font-size:3rem"
     />
     <div>
@@ -2876,7 +2876,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--waiver"
+      class="sap-icon--waiver"
       style="font-size:3rem"
     />
     <div>
@@ -2888,7 +2888,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--vertical-bar-chart"
+      class="sap-icon--vertical-bar-chart"
       style="font-size:3rem"
     />
     <div>
@@ -2900,7 +2900,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--upstacked-chart"
+      class="sap-icon--upstacked-chart"
       style="font-size:3rem"
     />
     <div>
@@ -2912,7 +2912,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--trip-report"
+      class="sap-icon--trip-report"
       style="font-size:3rem"
     />
     <div>
@@ -2924,7 +2924,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--microphone"
+      class="sap-icon--microphone"
       style="font-size:3rem"
     />
     <div>
@@ -2936,7 +2936,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--unpaid-leave"
+      class="sap-icon--unpaid-leave"
       style="font-size:3rem"
     />
     <div>
@@ -2948,7 +2948,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--tree"
+      class="sap-icon--tree"
       style="font-size:3rem"
     />
     <div>
@@ -2960,7 +2960,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--toaster-up"
+      class="sap-icon--toaster-up"
       style="font-size:3rem"
     />
     <div>
@@ -2972,7 +2972,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--toaster-top"
+      class="sap-icon--toaster-top"
       style="font-size:3rem"
     />
     <div>
@@ -2984,7 +2984,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--toaster-down"
+      class="sap-icon--toaster-down"
       style="font-size:3rem"
     />
     <div>
@@ -2996,7 +2996,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--time-account"
+      class="sap-icon--time-account"
       style="font-size:3rem"
     />
     <div>
@@ -3008,7 +3008,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--theater"
+      class="sap-icon--theater"
       style="font-size:3rem"
     />
     <div>
@@ -3020,7 +3020,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--taxi"
+      class="sap-icon--taxi"
       style="font-size:3rem"
     />
     <div>
@@ -3032,7 +3032,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--subway-train"
+      class="sap-icon--subway-train"
       style="font-size:3rem"
     />
     <div>
@@ -3044,7 +3044,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--study-leave"
+      class="sap-icon--study-leave"
       style="font-size:3rem"
     />
     <div>
@@ -3056,7 +3056,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--stethoscope"
+      class="sap-icon--stethoscope"
       style="font-size:3rem"
     />
     <div>
@@ -3068,7 +3068,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--step"
+      class="sap-icon--step"
       style="font-size:3rem"
     />
     <div>
@@ -3080,7 +3080,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sonography"
+      class="sap-icon--sonography"
       style="font-size:3rem"
     />
     <div>
@@ -3092,7 +3092,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--soccor"
+      class="sap-icon--soccor"
       style="font-size:3rem"
     />
     <div>
@@ -3104,7 +3104,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--physical-activity"
+      class="sap-icon--physical-activity"
       style="font-size:3rem"
     />
     <div>
@@ -3116,7 +3116,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--pharmacy"
+      class="sap-icon--pharmacy"
       style="font-size:3rem"
     />
     <div>
@@ -3128,7 +3128,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--official-service"
+      class="sap-icon--official-service"
       style="font-size:3rem"
     />
     <div>
@@ -3140,7 +3140,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--offsite-work"
+      class="sap-icon--offsite-work"
       style="font-size:3rem"
     />
     <div>
@@ -3152,7 +3152,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--nutrition-activity"
+      class="sap-icon--nutrition-activity"
       style="font-size:3rem"
     />
     <div>
@@ -3164,7 +3164,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--newspaper"
+      class="sap-icon--newspaper"
       style="font-size:3rem"
     />
     <div>
@@ -3176,7 +3176,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--monitor-payments"
+      class="sap-icon--monitor-payments"
       style="font-size:3rem"
     />
     <div>
@@ -3188,7 +3188,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--map-2"
+      class="sap-icon--map-2"
       style="font-size:3rem"
     />
     <div>
@@ -3200,7 +3200,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--machine"
+      class="sap-icon--machine"
       style="font-size:3rem"
     />
     <div>
@@ -3212,7 +3212,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--mri-scan"
+      class="sap-icon--mri-scan"
       style="font-size:3rem"
     />
     <div>
@@ -3224,7 +3224,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--end-user-experience-monitoring"
+      class="sap-icon--end-user-experience-monitoring"
       style="font-size:3rem"
     />
     <div>
@@ -3236,7 +3236,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--unwired"
+      class="sap-icon--unwired"
       style="font-size:3rem"
     />
     <div>
@@ -3248,7 +3248,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--customer-financial-fact-sheet"
+      class="sap-icon--customer-financial-fact-sheet"
       style="font-size:3rem"
     />
     <div>
@@ -3260,7 +3260,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--retail-store-manager"
+      class="sap-icon--retail-store-manager"
       style="font-size:3rem"
     />
     <div>
@@ -3272,7 +3272,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--Netweaver-business-client"
+      class="sap-icon--Netweaver-business-client"
       style="font-size:3rem"
     />
     <div>
@@ -3284,7 +3284,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--electronic-medical-record"
+      class="sap-icon--electronic-medical-record"
       style="font-size:3rem"
     />
     <div>
@@ -3296,7 +3296,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--eam-work-order"
+      class="sap-icon--eam-work-order"
       style="font-size:3rem"
     />
     <div>
@@ -3308,7 +3308,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--customer-view"
+      class="sap-icon--customer-view"
       style="font-size:3rem"
     />
     <div>
@@ -3320,7 +3320,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--crm-service-manager"
+      class="sap-icon--crm-service-manager"
       style="font-size:3rem"
     />
     <div>
@@ -3332,7 +3332,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--crm-sales"
+      class="sap-icon--crm-sales"
       style="font-size:3rem"
     />
     <div>
@@ -3344,7 +3344,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--widgets"
+      class="sap-icon--widgets"
       style="font-size:3rem"
     />
     <div>
@@ -3356,7 +3356,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--commission-check"
+      class="sap-icon--commission-check"
       style="font-size:3rem"
     />
     <div>
@@ -3368,7 +3368,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--collections-insight"
+      class="sap-icon--collections-insight"
       style="font-size:3rem"
     />
     <div>
@@ -3380,7 +3380,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--clinical-tast-tracker"
+      class="sap-icon--clinical-tast-tracker"
       style="font-size:3rem"
     />
     <div>
@@ -3392,7 +3392,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--citizen-connect"
+      class="sap-icon--citizen-connect"
       style="font-size:3rem"
     />
     <div>
@@ -3404,7 +3404,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--cart-approval"
+      class="sap-icon--cart-approval"
       style="font-size:3rem"
     />
     <div>
@@ -3416,7 +3416,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--capital-projects"
+      class="sap-icon--capital-projects"
       style="font-size:3rem"
     />
     <div>
@@ -3428,7 +3428,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--bo-strategy-management"
+      class="sap-icon--bo-strategy-management"
       style="font-size:3rem"
     />
     <div>
@@ -3440,7 +3440,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--business-objects-mobile"
+      class="sap-icon--business-objects-mobile"
       style="font-size:3rem"
     />
     <div>
@@ -3452,7 +3452,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--business-objects-explorer"
+      class="sap-icon--business-objects-explorer"
       style="font-size:3rem"
     />
     <div>
@@ -3464,7 +3464,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--business-objects-experience"
+      class="sap-icon--business-objects-experience"
       style="font-size:3rem"
     />
     <div>
@@ -3476,7 +3476,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--bbyd-dashboard"
+      class="sap-icon--bbyd-dashboard"
       style="font-size:3rem"
     />
     <div>
@@ -3488,7 +3488,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--bbyd-active-sales"
+      class="sap-icon--bbyd-active-sales"
       style="font-size:3rem"
     />
     <div>
@@ -3500,7 +3500,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--business-by-design"
+      class="sap-icon--business-by-design"
       style="font-size:3rem"
     />
     <div>
@@ -3512,7 +3512,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--business-one"
+      class="sap-icon--business-one"
       style="font-size:3rem"
     />
     <div>
@@ -3524,7 +3524,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sap-box"
+      class="sap-icon--sap-box"
       style="font-size:3rem"
     />
     <div>
@@ -3536,7 +3536,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--manager-insight"
+      class="sap-icon--manager-insight"
       style="font-size:3rem"
     />
     <div>
@@ -3548,7 +3548,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--accounting-document-verification"
+      class="sap-icon--accounting-document-verification"
       style="font-size:3rem"
     />
     <div>
@@ -3560,7 +3560,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--hr-approval"
+      class="sap-icon--hr-approval"
       style="font-size:3rem"
     />
     <div>
@@ -3572,7 +3572,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--idea-wall"
+      class="sap-icon--idea-wall"
       style="font-size:3rem"
     />
     <div>
@@ -3584,7 +3584,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--Chart-Tree-Map"
+      class="sap-icon--Chart-Tree-Map"
       style="font-size:3rem"
     />
     <div>
@@ -3596,7 +3596,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--cart-5"
+      class="sap-icon--cart-5"
       style="font-size:3rem"
     />
     <div>
@@ -3608,7 +3608,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--cart-4"
+      class="sap-icon--cart-4"
       style="font-size:3rem"
     />
     <div>
@@ -3620,7 +3620,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--wallet"
+      class="sap-icon--wallet"
       style="font-size:3rem"
     />
     <div>
@@ -3632,7 +3632,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--vehicle-repair"
+      class="sap-icon--vehicle-repair"
       style="font-size:3rem"
     />
     <div>
@@ -3644,7 +3644,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--upload"
+      class="sap-icon--upload"
       style="font-size:3rem"
     />
     <div>
@@ -3656,7 +3656,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--unlocked"
+      class="sap-icon--unlocked"
       style="font-size:3rem"
     />
     <div>
@@ -3668,7 +3668,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--umbrella"
+      class="sap-icon--umbrella"
       style="font-size:3rem"
     />
     <div>
@@ -3680,7 +3680,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--travel-request"
+      class="sap-icon--travel-request"
       style="font-size:3rem"
     />
     <div>
@@ -3692,7 +3692,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--travel-expense-report"
+      class="sap-icon--travel-expense-report"
       style="font-size:3rem"
     />
     <div>
@@ -3704,7 +3704,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--travel-itinerary"
+      class="sap-icon--travel-itinerary"
       style="font-size:3rem"
     />
     <div>
@@ -3716,7 +3716,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--time-overtime"
+      class="sap-icon--time-overtime"
       style="font-size:3rem"
     />
     <div>
@@ -3728,7 +3728,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--thing-type"
+      class="sap-icon--thing-type"
       style="font-size:3rem"
     />
     <div>
@@ -3740,7 +3740,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--technical-object"
+      class="sap-icon--technical-object"
       style="font-size:3rem"
     />
     <div>
@@ -3752,7 +3752,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--tag"
+      class="sap-icon--tag"
       style="font-size:3rem"
     />
     <div>
@@ -3764,7 +3764,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--syringe"
+      class="sap-icon--syringe"
       style="font-size:3rem"
     />
     <div>
@@ -3776,7 +3776,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--syntax"
+      class="sap-icon--syntax"
       style="font-size:3rem"
     />
     <div>
@@ -3788,7 +3788,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--suitcase"
+      class="sap-icon--suitcase"
       style="font-size:3rem"
     />
     <div>
@@ -3800,7 +3800,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--simulate"
+      class="sap-icon--simulate"
       style="font-size:3rem"
     />
     <div>
@@ -3812,7 +3812,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--shield"
+      class="sap-icon--shield"
       style="font-size:3rem"
     />
     <div>
@@ -3824,7 +3824,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--share-2"
+      class="sap-icon--share-2"
       style="font-size:3rem"
     />
     <div>
@@ -3836,7 +3836,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sales-quote"
+      class="sap-icon--sales-quote"
       style="font-size:3rem"
     />
     <div>
@@ -3848,7 +3848,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--repost"
+      class="sap-icon--repost"
       style="font-size:3rem"
     />
     <div>
@@ -3860,7 +3860,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--provision"
+      class="sap-icon--provision"
       style="font-size:3rem"
     />
     <div>
@@ -3872,7 +3872,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--projector"
+      class="sap-icon--projector"
       style="font-size:3rem"
     />
     <div>
@@ -3884,7 +3884,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--add-product"
+      class="sap-icon--add-product"
       style="font-size:3rem"
     />
     <div>
@@ -3896,7 +3896,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--pipeline-analysis"
+      class="sap-icon--pipeline-analysis"
       style="font-size:3rem"
     />
     <div>
@@ -3908,7 +3908,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--add-photo"
+      class="sap-icon--add-photo"
       style="font-size:3rem"
     />
     <div>
@@ -3920,7 +3920,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--palette"
+      class="sap-icon--palette"
       style="font-size:3rem"
     />
     <div>
@@ -3932,7 +3932,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--nurse"
+      class="sap-icon--nurse"
       style="font-size:3rem"
     />
     <div>
@@ -3944,7 +3944,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sales-notification"
+      class="sap-icon--sales-notification"
       style="font-size:3rem"
     />
     <div>
@@ -3956,7 +3956,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--mileage"
+      class="sap-icon--mileage"
       style="font-size:3rem"
     />
     <div>
@@ -3968,7 +3968,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--meeting-room"
+      class="sap-icon--meeting-room"
       style="font-size:3rem"
     />
     <div>
@@ -3980,7 +3980,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--media-forward"
+      class="sap-icon--media-forward"
       style="font-size:3rem"
     />
     <div>
@@ -3992,7 +3992,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--media-play"
+      class="sap-icon--media-play"
       style="font-size:3rem"
     />
     <div>
@@ -4004,7 +4004,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--media-pause"
+      class="sap-icon--media-pause"
       style="font-size:3rem"
     />
     <div>
@@ -4016,7 +4016,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--media-reverse"
+      class="sap-icon--media-reverse"
       style="font-size:3rem"
     />
     <div>
@@ -4028,7 +4028,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--media-rewind"
+      class="sap-icon--media-rewind"
       style="font-size:3rem"
     />
     <div>
@@ -4040,7 +4040,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--measurement-document"
+      class="sap-icon--measurement-document"
       style="font-size:3rem"
     />
     <div>
@@ -4052,7 +4052,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--measuring-point"
+      class="sap-icon--measuring-point"
       style="font-size:3rem"
     />
     <div>
@@ -4064,7 +4064,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--measure"
+      class="sap-icon--measure"
       style="font-size:3rem"
     />
     <div>
@@ -4076,7 +4076,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--map-3"
+      class="sap-icon--map-3"
       style="font-size:3rem"
     />
     <div>
@@ -4088,7 +4088,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--locked"
+      class="sap-icon--locked"
       style="font-size:3rem"
     />
     <div>
@@ -4100,7 +4100,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--letter"
+      class="sap-icon--letter"
       style="font-size:3rem"
     />
     <div>
@@ -4112,7 +4112,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--journey-arrive"
+      class="sap-icon--journey-arrive"
       style="font-size:3rem"
     />
     <div>
@@ -4124,7 +4124,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--journey-change"
+      class="sap-icon--journey-change"
       style="font-size:3rem"
     />
     <div>
@@ -4136,7 +4136,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--journey-depart"
+      class="sap-icon--journey-depart"
       style="font-size:3rem"
     />
     <div>
@@ -4148,7 +4148,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--it-system"
+      class="sap-icon--it-system"
       style="font-size:3rem"
     />
     <div>
@@ -4160,7 +4160,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--it-instance"
+      class="sap-icon--it-instance"
       style="font-size:3rem"
     />
     <div>
@@ -4172,7 +4172,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--it-host"
+      class="sap-icon--it-host"
       style="font-size:3rem"
     />
     <div>
@@ -4184,7 +4184,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--iphone-2"
+      class="sap-icon--iphone-2"
       style="font-size:3rem"
     />
     <div>
@@ -4196,7 +4196,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--ipad-2"
+      class="sap-icon--ipad-2"
       style="font-size:3rem"
     />
     <div>
@@ -4208,7 +4208,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--inventory"
+      class="sap-icon--inventory"
       style="font-size:3rem"
     />
     <div>
@@ -4220,7 +4220,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--insurance-house"
+      class="sap-icon--insurance-house"
       style="font-size:3rem"
     />
     <div>
@@ -4232,7 +4232,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--insurance-life"
+      class="sap-icon--insurance-life"
       style="font-size:3rem"
     />
     <div>
@@ -4244,7 +4244,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--insurance-car"
+      class="sap-icon--insurance-car"
       style="font-size:3rem"
     />
     <div>
@@ -4256,7 +4256,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--initiative"
+      class="sap-icon--initiative"
       style="font-size:3rem"
     />
     <div>
@@ -4268,7 +4268,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--incident"
+      class="sap-icon--incident"
       style="font-size:3rem"
     />
     <div>
@@ -4280,7 +4280,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--group-2"
+      class="sap-icon--group-2"
       style="font-size:3rem"
     />
     <div>
@@ -4292,7 +4292,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--goal"
+      class="sap-icon--goal"
       style="font-size:3rem"
     />
     <div>
@@ -4304,7 +4304,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--functional-location"
+      class="sap-icon--functional-location"
       style="font-size:3rem"
     />
     <div>
@@ -4316,7 +4316,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--full-screen"
+      class="sap-icon--full-screen"
       style="font-size:3rem"
     />
     <div>
@@ -4328,7 +4328,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--form"
+      class="sap-icon--form"
       style="font-size:3rem"
     />
     <div>
@@ -4340,7 +4340,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--fob-watch"
+      class="sap-icon--fob-watch"
       style="font-size:3rem"
     />
     <div>
@@ -4352,7 +4352,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--blank-tag"
+      class="sap-icon--blank-tag"
       style="font-size:3rem"
     />
     <div>
@@ -4364,7 +4364,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--family-protection"
+      class="sap-icon--family-protection"
       style="font-size:3rem"
     />
     <div>
@@ -4376,7 +4376,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--folder"
+      class="sap-icon--folder"
       style="font-size:3rem"
     />
     <div>
@@ -4388,7 +4388,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--fax-machine"
+      class="sap-icon--fax-machine"
       style="font-size:3rem"
     />
     <div>
@@ -4400,7 +4400,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--example"
+      class="sap-icon--example"
       style="font-size:3rem"
     />
     <div>
@@ -4412,7 +4412,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--eraser"
+      class="sap-icon--eraser"
       style="font-size:3rem"
     />
     <div>
@@ -4424,7 +4424,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--employee-rejections"
+      class="sap-icon--employee-rejections"
       style="font-size:3rem"
     />
     <div>
@@ -4436,7 +4436,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--drop-down-list"
+      class="sap-icon--drop-down-list"
       style="font-size:3rem"
     />
     <div>
@@ -4448,7 +4448,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--draw-rectangle"
+      class="sap-icon--draw-rectangle"
       style="font-size:3rem"
     />
     <div>
@@ -4460,7 +4460,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--document"
+      class="sap-icon--document"
       style="font-size:3rem"
     />
     <div>
@@ -4472,7 +4472,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--doctor"
+      class="sap-icon--doctor"
       style="font-size:3rem"
     />
     <div>
@@ -4484,7 +4484,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--discussion-2"
+      class="sap-icon--discussion-2"
       style="font-size:3rem"
     />
     <div>
@@ -4496,7 +4496,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--discussion"
+      class="sap-icon--discussion"
       style="font-size:3rem"
     />
     <div>
@@ -4508,7 +4508,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--dimension"
+      class="sap-icon--dimension"
       style="font-size:3rem"
     />
     <div>
@@ -4520,7 +4520,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--customer-and-supplier"
+      class="sap-icon--customer-and-supplier"
       style="font-size:3rem"
     />
     <div>
@@ -4532,7 +4532,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--crop"
+      class="sap-icon--crop"
       style="font-size:3rem"
     />
     <div>
@@ -4544,7 +4544,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--add-contact"
+      class="sap-icon--add-contact"
       style="font-size:3rem"
     />
     <div>
@@ -4556,7 +4556,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--compare-2"
+      class="sap-icon--compare-2"
       style="font-size:3rem"
     />
     <div>
@@ -4568,7 +4568,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--color-fill"
+      class="sap-icon--color-fill"
       style="font-size:3rem"
     />
     <div>
@@ -4580,7 +4580,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--collision"
+      class="sap-icon--collision"
       style="font-size:3rem"
     />
     <div>
@@ -4592,7 +4592,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--curriculum"
+      class="sap-icon--curriculum"
       style="font-size:3rem"
     />
     <div>
@@ -4604,7 +4604,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--chart-axis"
+      class="sap-icon--chart-axis"
       style="font-size:3rem"
     />
     <div>
@@ -4616,7 +4616,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--full-stacked-chart"
+      class="sap-icon--full-stacked-chart"
       style="font-size:3rem"
     />
     <div>
@@ -4628,7 +4628,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--full-stacked-column-chart"
+      class="sap-icon--full-stacked-column-chart"
       style="font-size:3rem"
     />
     <div>
@@ -4640,7 +4640,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--vertical-bar-chart-2"
+      class="sap-icon--vertical-bar-chart-2"
       style="font-size:3rem"
     />
     <div>
@@ -4652,7 +4652,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--horizontal-bar-chart-2"
+      class="sap-icon--horizontal-bar-chart-2"
       style="font-size:3rem"
     />
     <div>
@@ -4664,7 +4664,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--horizontal-stacked-chart"
+      class="sap-icon--horizontal-stacked-chart"
       style="font-size:3rem"
     />
     <div>
@@ -4676,7 +4676,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--vertical-stacked-chart"
+      class="sap-icon--vertical-stacked-chart"
       style="font-size:3rem"
     />
     <div>
@@ -4688,7 +4688,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--choropleth-chart"
+      class="sap-icon--choropleth-chart"
       style="font-size:3rem"
     />
     <div>
@@ -4700,7 +4700,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--geographic-bubble-chart"
+      class="sap-icon--geographic-bubble-chart"
       style="font-size:3rem"
     />
     <div>
@@ -4712,7 +4712,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--multiple-radar-chart"
+      class="sap-icon--multiple-radar-chart"
       style="font-size:3rem"
     />
     <div>
@@ -4724,7 +4724,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--radar-chart"
+      class="sap-icon--radar-chart"
       style="font-size:3rem"
     />
     <div>
@@ -4736,7 +4736,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--crossed-line-chart"
+      class="sap-icon--crossed-line-chart"
       style="font-size:3rem"
     />
     <div>
@@ -4748,7 +4748,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--multiple-line-chart"
+      class="sap-icon--multiple-line-chart"
       style="font-size:3rem"
     />
     <div>
@@ -4760,7 +4760,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--multiple-bar-chart"
+      class="sap-icon--multiple-bar-chart"
       style="font-size:3rem"
     />
     <div>
@@ -4772,7 +4772,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--line-chart"
+      class="sap-icon--line-chart"
       style="font-size:3rem"
     />
     <div>
@@ -4784,7 +4784,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--line-chart-dual-axis"
+      class="sap-icon--line-chart-dual-axis"
       style="font-size:3rem"
     />
     <div>
@@ -4796,7 +4796,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--bubble-chart"
+      class="sap-icon--bubble-chart"
       style="font-size:3rem"
     />
     <div>
@@ -4808,7 +4808,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--scatter-chart"
+      class="sap-icon--scatter-chart"
       style="font-size:3rem"
     />
     <div>
@@ -4820,7 +4820,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--multiple-pie-chart"
+      class="sap-icon--multiple-pie-chart"
       style="font-size:3rem"
     />
     <div>
@@ -4832,7 +4832,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--column-chart-dual-axis"
+      class="sap-icon--column-chart-dual-axis"
       style="font-size:3rem"
     />
     <div>
@@ -4844,7 +4844,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--tag-cloud-chart"
+      class="sap-icon--tag-cloud-chart"
       style="font-size:3rem"
     />
     <div>
@@ -4856,7 +4856,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--area-chart"
+      class="sap-icon--area-chart"
       style="font-size:3rem"
     />
     <div>
@@ -4868,7 +4868,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--cause"
+      class="sap-icon--cause"
       style="font-size:3rem"
     />
     <div>
@@ -4880,7 +4880,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--cart-3"
+      class="sap-icon--cart-3"
       style="font-size:3rem"
     />
     <div>
@@ -4892,7 +4892,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--cart-2"
+      class="sap-icon--cart-2"
       style="font-size:3rem"
     />
     <div>
@@ -4904,7 +4904,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--bus-public-transport"
+      class="sap-icon--bus-public-transport"
       style="font-size:3rem"
     />
     <div>
@@ -4916,7 +4916,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--burglary"
+      class="sap-icon--burglary"
       style="font-size:3rem"
     />
     <div>
@@ -4928,7 +4928,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--building"
+      class="sap-icon--building"
       style="font-size:3rem"
     />
     <div>
@@ -4940,7 +4940,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--border"
+      class="sap-icon--border"
       style="font-size:3rem"
     />
     <div>
@@ -4952,7 +4952,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--bookmark"
+      class="sap-icon--bookmark"
       style="font-size:3rem"
     />
     <div>
@@ -4964,7 +4964,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--badge"
+      class="sap-icon--badge"
       style="font-size:3rem"
     />
     <div>
@@ -4976,7 +4976,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--attachment-audio"
+      class="sap-icon--attachment-audio"
       style="font-size:3rem"
     />
     <div>
@@ -4988,7 +4988,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--attachment-video"
+      class="sap-icon--attachment-video"
       style="font-size:3rem"
     />
     <div>
@@ -5000,7 +5000,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--attachment-html"
+      class="sap-icon--attachment-html"
       style="font-size:3rem"
     />
     <div>
@@ -5012,7 +5012,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--attachment-photo"
+      class="sap-icon--attachment-photo"
       style="font-size:3rem"
     />
     <div>
@@ -5024,7 +5024,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--attachment-e-pub"
+      class="sap-icon--attachment-e-pub"
       style="font-size:3rem"
     />
     <div>
@@ -5036,7 +5036,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--attachment-zip-file"
+      class="sap-icon--attachment-zip-file"
       style="font-size:3rem"
     />
     <div>
@@ -5048,7 +5048,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--attachment-text-file"
+      class="sap-icon--attachment-text-file"
       style="font-size:3rem"
     />
     <div>
@@ -5060,7 +5060,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--add-equipment"
+      class="sap-icon--add-equipment"
       style="font-size:3rem"
     />
     <div>
@@ -5072,7 +5072,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--add-activity"
+      class="sap-icon--add-activity"
       style="font-size:3rem"
     />
     <div>
@@ -5084,7 +5084,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--activity-individual"
+      class="sap-icon--activity-individual"
       style="font-size:3rem"
     />
     <div>
@@ -5096,7 +5096,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--activity-2"
+      class="sap-icon--activity-2"
       style="font-size:3rem"
     />
     <div>
@@ -5108,7 +5108,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--add-activity-2"
+      class="sap-icon--add-activity-2"
       style="font-size:3rem"
     />
     <div>
@@ -5120,7 +5120,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--activity-items"
+      class="sap-icon--activity-items"
       style="font-size:3rem"
     />
     <div>
@@ -5132,7 +5132,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--activity-assigned-to-goal"
+      class="sap-icon--activity-assigned-to-goal"
       style="font-size:3rem"
     />
     <div>
@@ -5144,7 +5144,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--status-positive"
+      class="sap-icon--status-positive"
       style="font-size:3rem"
     />
     <div>
@@ -5156,7 +5156,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--status-completed"
+      class="sap-icon--status-completed"
       style="font-size:3rem"
     />
     <div>
@@ -5168,7 +5168,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--status-negative"
+      class="sap-icon--status-negative"
       style="font-size:3rem"
     />
     <div>
@@ -5180,7 +5180,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--status-error"
+      class="sap-icon--status-error"
       style="font-size:3rem"
     />
     <div>
@@ -5192,7 +5192,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--status-inactive"
+      class="sap-icon--status-inactive"
       style="font-size:3rem"
     />
     <div>
@@ -5204,7 +5204,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--status-critical"
+      class="sap-icon--status-critical"
       style="font-size:3rem"
     />
     <div>
@@ -5216,7 +5216,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--status-in-progress"
+      class="sap-icon--status-in-progress"
       style="font-size:3rem"
     />
     <div>
@@ -5228,7 +5228,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--blank-tag-2"
+      class="sap-icon--blank-tag-2"
       style="font-size:3rem"
     />
     <div>
@@ -5240,7 +5240,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--cart-full"
+      class="sap-icon--cart-full"
       style="font-size:3rem"
     />
     <div>
@@ -5252,7 +5252,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--locate-me"
+      class="sap-icon--locate-me"
       style="font-size:3rem"
     />
     <div>
@@ -5264,7 +5264,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--paging"
+      class="sap-icon--paging"
       style="font-size:3rem"
     />
     <div>
@@ -5276,7 +5276,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--company-view"
+      class="sap-icon--company-view"
       style="font-size:3rem"
     />
     <div>
@@ -5288,7 +5288,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--document-text"
+      class="sap-icon--document-text"
       style="font-size:3rem"
     />
     <div>
@@ -5300,7 +5300,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--explorer"
+      class="sap-icon--explorer"
       style="font-size:3rem"
     />
     <div>
@@ -5312,7 +5312,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--personnel-view"
+      class="sap-icon--personnel-view"
       style="font-size:3rem"
     />
     <div>
@@ -5324,7 +5324,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sorting-ranking"
+      class="sap-icon--sorting-ranking"
       style="font-size:3rem"
     />
     <div>
@@ -5336,7 +5336,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--drill-down"
+      class="sap-icon--drill-down"
       style="font-size:3rem"
     />
     <div>
@@ -5348,7 +5348,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--drill-up"
+      class="sap-icon--drill-up"
       style="font-size:3rem"
     />
     <div>
@@ -5360,7 +5360,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--vds-file"
+      class="sap-icon--vds-file"
       style="font-size:3rem"
     />
     <div>
@@ -5372,7 +5372,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sap-logo-shape"
+      class="sap-icon--sap-logo-shape"
       style="font-size:3rem"
     />
     <div>
@@ -5384,7 +5384,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--folder-full"
+      class="sap-icon--folder-full"
       style="font-size:3rem"
     />
     <div>
@@ -5396,7 +5396,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--system-exit"
+      class="sap-icon--system-exit"
       style="font-size:3rem"
     />
     <div>
@@ -5408,7 +5408,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--system-exit-2"
+      class="sap-icon--system-exit-2"
       style="font-size:3rem"
     />
     <div>
@@ -5420,7 +5420,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--close-command-field"
+      class="sap-icon--close-command-field"
       style="font-size:3rem"
     />
     <div>
@@ -5432,7 +5432,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--open-command-field"
+      class="sap-icon--open-command-field"
       style="font-size:3rem"
     />
     <div>
@@ -5444,7 +5444,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sys-enter-2"
+      class="sap-icon--sys-enter-2"
       style="font-size:3rem"
     />
     <div>
@@ -5456,7 +5456,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sys-enter"
+      class="sap-icon--sys-enter"
       style="font-size:3rem"
     />
     <div>
@@ -5468,7 +5468,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sys-help-2"
+      class="sap-icon--sys-help-2"
       style="font-size:3rem"
     />
     <div>
@@ -5480,7 +5480,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sys-help"
+      class="sap-icon--sys-help"
       style="font-size:3rem"
     />
     <div>
@@ -5492,7 +5492,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sys-back"
+      class="sap-icon--sys-back"
       style="font-size:3rem"
     />
     <div>
@@ -5504,7 +5504,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sys-back-2"
+      class="sap-icon--sys-back-2"
       style="font-size:3rem"
     />
     <div>
@@ -5516,7 +5516,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sys-cancel"
+      class="sap-icon--sys-cancel"
       style="font-size:3rem"
     />
     <div>
@@ -5528,7 +5528,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sys-cancel-2"
+      class="sap-icon--sys-cancel-2"
       style="font-size:3rem"
     />
     <div>
@@ -5540,7 +5540,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--open-folder"
+      class="sap-icon--open-folder"
       style="font-size:3rem"
     />
     <div>
@@ -5552,7 +5552,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sys-find-next"
+      class="sap-icon--sys-find-next"
       style="font-size:3rem"
     />
     <div>
@@ -5564,7 +5564,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sys-find"
+      class="sap-icon--sys-find"
       style="font-size:3rem"
     />
     <div>
@@ -5576,7 +5576,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sys-monitor"
+      class="sap-icon--sys-monitor"
       style="font-size:3rem"
     />
     <div>
@@ -5588,7 +5588,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sys-prev-page"
+      class="sap-icon--sys-prev-page"
       style="font-size:3rem"
     />
     <div>
@@ -5600,7 +5600,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sys-first-page"
+      class="sap-icon--sys-first-page"
       style="font-size:3rem"
     />
     <div>
@@ -5612,7 +5612,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sys-next-page"
+      class="sap-icon--sys-next-page"
       style="font-size:3rem"
     />
     <div>
@@ -5624,7 +5624,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sys-last-page"
+      class="sap-icon--sys-last-page"
       style="font-size:3rem"
     />
     <div>
@@ -5636,7 +5636,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--generate-shortcut"
+      class="sap-icon--generate-shortcut"
       style="font-size:3rem"
     />
     <div>
@@ -5648,7 +5648,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--create-session"
+      class="sap-icon--create-session"
       style="font-size:3rem"
     />
     <div>
@@ -5660,7 +5660,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--display-more"
+      class="sap-icon--display-more"
       style="font-size:3rem"
     />
     <div>
@@ -5672,7 +5672,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--enter-more"
+      class="sap-icon--enter-more"
       style="font-size:3rem"
     />
     <div>
@@ -5684,7 +5684,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--zoom-in"
+      class="sap-icon--zoom-in"
       style="font-size:3rem"
     />
     <div>
@@ -5696,7 +5696,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--zoom-out"
+      class="sap-icon--zoom-out"
       style="font-size:3rem"
     />
     <div>
@@ -5708,7 +5708,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--header"
+      class="sap-icon--header"
       style="font-size:3rem"
     />
     <div>
@@ -5720,7 +5720,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--detail-view"
+      class="sap-icon--detail-view"
       style="font-size:3rem"
     />
     <div>
@@ -5732,7 +5732,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--show-edit"
+      class="sap-icon--show-edit"
       style="font-size:3rem"
     />
     <div>
@@ -5744,7 +5744,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--collapse"
+      class="sap-icon--collapse"
       style="font-size:3rem"
     />
     <div>
@@ -5756,7 +5756,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--expand"
+      class="sap-icon--expand"
       style="font-size:3rem"
     />
     <div>
@@ -5768,7 +5768,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--positive"
+      class="sap-icon--positive"
       style="font-size:3rem"
     />
     <div>
@@ -5780,7 +5780,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--negative"
+      class="sap-icon--negative"
       style="font-size:3rem"
     />
     <div>
@@ -5792,7 +5792,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--display"
+      class="sap-icon--display"
       style="font-size:3rem"
     />
     <div>
@@ -5804,7 +5804,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--menu2"
+      class="sap-icon--menu2"
       style="font-size:3rem"
     />
     <div>
@@ -5816,7 +5816,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--redo"
+      class="sap-icon--redo"
       style="font-size:3rem"
     />
     <div>
@@ -5828,7 +5828,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--undo"
+      class="sap-icon--undo"
       style="font-size:3rem"
     />
     <div>
@@ -5840,7 +5840,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--navigation-up-arrow"
+      class="sap-icon--navigation-up-arrow"
       style="font-size:3rem"
     />
     <div>
@@ -5852,7 +5852,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--navigation-down-arrow"
+      class="sap-icon--navigation-down-arrow"
       style="font-size:3rem"
     />
     <div>
@@ -5864,7 +5864,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--down"
+      class="sap-icon--down"
       style="font-size:3rem"
     />
     <div>
@@ -5876,7 +5876,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--up"
+      class="sap-icon--up"
       style="font-size:3rem"
     />
     <div>
@@ -5888,7 +5888,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--shelf"
+      class="sap-icon--shelf"
       style="font-size:3rem"
     />
     <div>
@@ -5900,7 +5900,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--background"
+      class="sap-icon--background"
       style="font-size:3rem"
     />
     <div>
@@ -5912,7 +5912,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--resize"
+      class="sap-icon--resize"
       style="font-size:3rem"
     />
     <div>
@@ -5924,7 +5924,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--move"
+      class="sap-icon--move"
       style="font-size:3rem"
     />
     <div>
@@ -5936,7 +5936,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--show"
+      class="sap-icon--show"
       style="font-size:3rem"
     />
     <div>
@@ -5948,7 +5948,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--hide"
+      class="sap-icon--hide"
       style="font-size:3rem"
     />
     <div>
@@ -5960,7 +5960,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--nav-back"
+      class="sap-icon--nav-back"
       style="font-size:3rem"
     />
     <div>
@@ -5972,7 +5972,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--error"
+      class="sap-icon--error"
       style="font-size:3rem"
     />
     <div>
@@ -5984,7 +5984,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--slim-arrow-right"
+      class="sap-icon--slim-arrow-right"
       style="font-size:3rem"
     />
     <div>
@@ -5996,7 +5996,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--slim-arrow-left"
+      class="sap-icon--slim-arrow-left"
       style="font-size:3rem"
     />
     <div>
@@ -6008,7 +6008,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--slim-arrow-down"
+      class="sap-icon--slim-arrow-down"
       style="font-size:3rem"
     />
     <div>
@@ -6020,7 +6020,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--slim-arrow-up"
+      class="sap-icon--slim-arrow-up"
       style="font-size:3rem"
     />
     <div>
@@ -6032,7 +6032,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--forward"
+      class="sap-icon--forward"
       style="font-size:3rem"
     />
     <div>
@@ -6044,7 +6044,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--overflow"
+      class="sap-icon--overflow"
       style="font-size:3rem"
     />
     <div>
@@ -6056,7 +6056,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--value-help"
+      class="sap-icon--value-help"
       style="font-size:3rem"
     />
     <div>
@@ -6068,7 +6068,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--multiselect"
+      class="sap-icon--multiselect"
       style="font-size:3rem"
     />
     <div>
@@ -6080,7 +6080,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--exitfullscreen"
+      class="sap-icon--exitfullscreen"
       style="font-size:3rem"
     />
     <div>
@@ -6092,7 +6092,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sys-add"
+      class="sap-icon--sys-add"
       style="font-size:3rem"
     />
     <div>
@@ -6104,7 +6104,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sys-minus"
+      class="sap-icon--sys-minus"
       style="font-size:3rem"
     />
     <div>
@@ -6116,7 +6116,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--dropdown"
+      class="sap-icon--dropdown"
       style="font-size:3rem"
     />
     <div>
@@ -6128,7 +6128,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--expand-group"
+      class="sap-icon--expand-group"
       style="font-size:3rem"
     />
     <div>
@@ -6140,7 +6140,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--vertical-grip"
+      class="sap-icon--vertical-grip"
       style="font-size:3rem"
     />
     <div>
@@ -6152,7 +6152,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--horizontal-grip"
+      class="sap-icon--horizontal-grip"
       style="font-size:3rem"
     />
     <div>
@@ -6164,7 +6164,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sort-descending"
+      class="sap-icon--sort-descending"
       style="font-size:3rem"
     />
     <div>
@@ -6176,7 +6176,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sort-ascending"
+      class="sap-icon--sort-ascending"
       style="font-size:3rem"
     />
     <div>
@@ -6188,7 +6188,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--arrow-down"
+      class="sap-icon--arrow-down"
       style="font-size:3rem"
     />
     <div>
@@ -6200,7 +6200,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--legend"
+      class="sap-icon--legend"
       style="font-size:3rem"
     />
     <div>
@@ -6212,7 +6212,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--collapse-group"
+      class="sap-icon--collapse-group"
       style="font-size:3rem"
     />
     <div>
@@ -6224,7 +6224,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--message-warning"
+      class="sap-icon--message-warning"
       style="font-size:3rem"
     />
     <div>
@@ -6236,7 +6236,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--message-information"
+      class="sap-icon--message-information"
       style="font-size:3rem"
     />
     <div>
@@ -6248,7 +6248,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--message-success"
+      class="sap-icon--message-success"
       style="font-size:3rem"
     />
     <div>
@@ -6260,7 +6260,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--restart"
+      class="sap-icon--restart"
       style="font-size:3rem"
     />
     <div>
@@ -6272,7 +6272,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--stop"
+      class="sap-icon--stop"
       style="font-size:3rem"
     />
     <div>
@@ -6284,7 +6284,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--add-process"
+      class="sap-icon--add-process"
       style="font-size:3rem"
     />
     <div>
@@ -6296,7 +6296,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--cancel-maintenance"
+      class="sap-icon--cancel-maintenance"
       style="font-size:3rem"
     />
     <div>
@@ -6308,7 +6308,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--activate"
+      class="sap-icon--activate"
       style="font-size:3rem"
     />
     <div>
@@ -6320,7 +6320,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--resize-horizontal"
+      class="sap-icon--resize-horizontal"
       style="font-size:3rem"
     />
     <div>
@@ -6332,7 +6332,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--resize-vertical"
+      class="sap-icon--resize-vertical"
       style="font-size:3rem"
     />
     <div>
@@ -6344,7 +6344,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--connected"
+      class="sap-icon--connected"
       style="font-size:3rem"
     />
     <div>
@@ -6356,7 +6356,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--disconnected"
+      class="sap-icon--disconnected"
       style="font-size:3rem"
     />
     <div>
@@ -6368,7 +6368,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--edit-outside"
+      class="sap-icon--edit-outside"
       style="font-size:3rem"
     />
     <div>
@@ -6380,7 +6380,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--key"
+      class="sap-icon--key"
       style="font-size:3rem"
     />
     <div>
@@ -6392,7 +6392,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--minimize"
+      class="sap-icon--minimize"
       style="font-size:3rem"
     />
     <div>
@@ -6404,7 +6404,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--back-to-top"
+      class="sap-icon--back-to-top"
       style="font-size:3rem"
     />
     <div>
@@ -6416,7 +6416,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--hello-world"
+      class="sap-icon--hello-world"
       style="font-size:3rem"
     />
     <div>
@@ -6428,7 +6428,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--outbox"
+      class="sap-icon--outbox"
       style="font-size:3rem"
     />
     <div>
@@ -6440,7 +6440,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--donut-chart"
+      class="sap-icon--donut-chart"
       style="font-size:3rem"
     />
     <div>
@@ -6452,7 +6452,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--heatmap-chart"
+      class="sap-icon--heatmap-chart"
       style="font-size:3rem"
     />
     <div>
@@ -6464,7 +6464,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--horizontal-bullet-chart"
+      class="sap-icon--horizontal-bullet-chart"
       style="font-size:3rem"
     />
     <div>
@@ -6476,7 +6476,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--vertical-bullet-chart"
+      class="sap-icon--vertical-bullet-chart"
       style="font-size:3rem"
     />
     <div>
@@ -6488,7 +6488,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--call"
+      class="sap-icon--call"
       style="font-size:3rem"
     />
     <div>
@@ -6500,7 +6500,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--download-from-cloud"
+      class="sap-icon--download-from-cloud"
       style="font-size:3rem"
     />
     <div>
@@ -6512,7 +6512,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--upload-to-cloud"
+      class="sap-icon--upload-to-cloud"
       style="font-size:3rem"
     />
     <div>
@@ -6524,7 +6524,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--jam"
+      class="sap-icon--jam"
       style="font-size:3rem"
     />
     <div>
@@ -6536,7 +6536,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sap-ui5"
+      class="sap-icon--sap-ui5"
       style="font-size:3rem"
     />
     <div>
@@ -6548,7 +6548,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--message-popup"
+      class="sap-icon--message-popup"
       style="font-size:3rem"
     />
     <div>
@@ -6560,7 +6560,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--cloud"
+      class="sap-icon--cloud"
       style="font-size:3rem"
     />
     <div>
@@ -6572,7 +6572,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--horizontal-waterfall-chart"
+      class="sap-icon--horizontal-waterfall-chart"
       style="font-size:3rem"
     />
     <div>
@@ -6584,7 +6584,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--vertical-waterfall-chart"
+      class="sap-icon--vertical-waterfall-chart"
       style="font-size:3rem"
     />
     <div>
@@ -6596,7 +6596,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--broken-link"
+      class="sap-icon--broken-link"
       style="font-size:3rem"
     />
     <div>
@@ -6608,7 +6608,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--headset"
+      class="sap-icon--headset"
       style="font-size:3rem"
     />
     <div>
@@ -6620,7 +6620,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--thumb-up"
+      class="sap-icon--thumb-up"
       style="font-size:3rem"
     />
     <div>
@@ -6632,7 +6632,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--thumb-down"
+      class="sap-icon--thumb-down"
       style="font-size:3rem"
     />
     <div>
@@ -6644,7 +6644,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--multiselect-all"
+      class="sap-icon--multiselect-all"
       style="font-size:3rem"
     />
     <div>
@@ -6656,7 +6656,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--multiselect-none"
+      class="sap-icon--multiselect-none"
       style="font-size:3rem"
     />
     <div>
@@ -6668,7 +6668,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--scissors"
+      class="sap-icon--scissors"
       style="font-size:3rem"
     />
     <div>
@@ -6680,7 +6680,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sound"
+      class="sap-icon--sound"
       style="font-size:3rem"
     />
     <div>
@@ -6692,7 +6692,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sound-loud"
+      class="sap-icon--sound-loud"
       style="font-size:3rem"
     />
     <div>
@@ -6704,7 +6704,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--sound-off"
+      class="sap-icon--sound-off"
       style="font-size:3rem"
     />
     <div>
@@ -6716,7 +6716,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--date-time"
+      class="sap-icon--date-time"
       style="font-size:3rem"
     />
     <div>
@@ -6728,7 +6728,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--user-settings"
+      class="sap-icon--user-settings"
       style="font-size:3rem"
     />
     <div>
@@ -6740,7 +6740,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--key-user-settings"
+      class="sap-icon--key-user-settings"
       style="font-size:3rem"
     />
     <div>
@@ -6752,7 +6752,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--developer-settings"
+      class="sap-icon--developer-settings"
       style="font-size:3rem"
     />
     <div>
@@ -6764,7 +6764,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--text-formatting"
+      class="sap-icon--text-formatting"
       style="font-size:3rem"
     />
     <div>
@@ -6776,7 +6776,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--bold-text"
+      class="sap-icon--bold-text"
       style="font-size:3rem"
     />
     <div>
@@ -6788,7 +6788,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--italic-text"
+      class="sap-icon--italic-text"
       style="font-size:3rem"
     />
     <div>
@@ -6800,7 +6800,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--underline-text"
+      class="sap-icon--underline-text"
       style="font-size:3rem"
     />
     <div>
@@ -6812,7 +6812,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--text-align-justified"
+      class="sap-icon--text-align-justified"
       style="font-size:3rem"
     />
     <div>
@@ -6824,7 +6824,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--text-align-left"
+      class="sap-icon--text-align-left"
       style="font-size:3rem"
     />
     <div>
@@ -6836,7 +6836,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--text-align-center"
+      class="sap-icon--text-align-center"
       style="font-size:3rem"
     />
     <div>
@@ -6848,7 +6848,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--text-align-right"
+      class="sap-icon--text-align-right"
       style="font-size:3rem"
     />
     <div>
@@ -6860,7 +6860,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--bullet-text"
+      class="sap-icon--bullet-text"
       style="font-size:3rem"
     />
     <div>
@@ -6872,7 +6872,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--numbered-text"
+      class="sap-icon--numbered-text"
       style="font-size:3rem"
     />
     <div>
@@ -6884,7 +6884,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--co"
+      class="sap-icon--co"
       style="font-size:3rem"
     />
     <div>
@@ -6896,7 +6896,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--ui-notifications"
+      class="sap-icon--ui-notifications"
       style="font-size:3rem"
     />
     <div>
@@ -6908,7 +6908,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--bell"
+      class="sap-icon--bell"
       style="font-size:3rem"
     />
     <div>
@@ -6920,7 +6920,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--cancel-share"
+      class="sap-icon--cancel-share"
       style="font-size:3rem"
     />
     <div>
@@ -6932,7 +6932,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--write-new-document"
+      class="sap-icon--write-new-document"
       style="font-size:3rem"
     />
     <div>
@@ -6944,7 +6944,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--write-new"
+      class="sap-icon--write-new"
       style="font-size:3rem"
     />
     <div>
@@ -6956,7 +6956,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--cancel"
+      class="sap-icon--cancel"
       style="font-size:3rem"
     />
     <div>
@@ -6968,7 +6968,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--screen-split-one"
+      class="sap-icon--screen-split-one"
       style="font-size:3rem"
     />
     <div>
@@ -6980,7 +6980,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--screen-split-two"
+      class="sap-icon--screen-split-two"
       style="font-size:3rem"
     />
     <div>
@@ -6992,7 +6992,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--screen-split-three"
+      class="sap-icon--screen-split-three"
       style="font-size:3rem"
     />
     <div>
@@ -7004,7 +7004,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--customize"
+      class="sap-icon--customize"
       style="font-size:3rem"
     />
     <div>
@@ -7016,7 +7016,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--user-edit"
+      class="sap-icon--user-edit"
       style="font-size:3rem"
     />
     <div>
@@ -7028,7 +7028,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--source-code"
+      class="sap-icon--source-code"
       style="font-size:3rem"
     />
     <div>
@@ -7040,7 +7040,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--copy"
+      class="sap-icon--copy"
       style="font-size:3rem"
     />
     <div>
@@ -7052,7 +7052,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--paste"
+      class="sap-icon--paste"
       style="font-size:3rem"
     />
     <div>
@@ -7064,7 +7064,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--line-chart-time-axis"
+      class="sap-icon--line-chart-time-axis"
       style="font-size:3rem"
     />
     <div>
@@ -7076,7 +7076,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--clear-filter"
+      class="sap-icon--clear-filter"
       style="font-size:3rem"
     />
     <div>
@@ -7088,7 +7088,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--reset"
+      class="sap-icon--reset"
       style="font-size:3rem"
     />
     <div>
@@ -7100,7 +7100,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--trend-up"
+      class="sap-icon--trend-up"
       style="font-size:3rem"
     />
     <div>
@@ -7112,7 +7112,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--trend-down"
+      class="sap-icon--trend-down"
       style="font-size:3rem"
     />
     <div>
@@ -7124,7 +7124,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--cursor"
+      class="sap-icon--cursor"
       style="font-size:3rem"
     />
     <div>
@@ -7136,7 +7136,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--add-document"
+      class="sap-icon--add-document"
       style="font-size:3rem"
     />
     <div>
@@ -7148,7 +7148,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--create-form"
+      class="sap-icon--create-form"
       style="font-size:3rem"
     />
     <div>
@@ -7160,7 +7160,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--resize-corner"
+      class="sap-icon--resize-corner"
       style="font-size:3rem"
     />
     <div>
@@ -7172,7 +7172,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--chevron-phase"
+      class="sap-icon--chevron-phase"
       style="font-size:3rem"
     />
     <div>
@@ -7184,7 +7184,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--chevron-phase-2"
+      class="sap-icon--chevron-phase-2"
       style="font-size:3rem"
     />
     <div>
@@ -7196,7 +7196,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--rhombus-milestone"
+      class="sap-icon--rhombus-milestone"
       style="font-size:3rem"
     />
     <div>
@@ -7208,7 +7208,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--rhombus-milestone-2"
+      class="sap-icon--rhombus-milestone-2"
       style="font-size:3rem"
     />
     <div>
@@ -7220,7 +7220,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--circle-task"
+      class="sap-icon--circle-task"
       style="font-size:3rem"
     />
     <div>
@@ -7232,7 +7232,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--circle-task-2"
+      class="sap-icon--circle-task-2"
       style="font-size:3rem"
     />
     <div>
@@ -7244,7 +7244,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--project-definition-triangle"
+      class="sap-icon--project-definition-triangle"
       style="font-size:3rem"
     />
     <div>
@@ -7256,7 +7256,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--project-definition-triangle-2"
+      class="sap-icon--project-definition-triangle-2"
       style="font-size:3rem"
     />
     <div>
@@ -7268,7 +7268,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--master-task-triangle"
+      class="sap-icon--master-task-triangle"
       style="font-size:3rem"
     />
     <div>
@@ -7280,7 +7280,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--master-task-triangle-2"
+      class="sap-icon--master-task-triangle-2"
       style="font-size:3rem"
     />
     <div>
@@ -7292,7 +7292,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--program-triangles"
+      class="sap-icon--program-triangles"
       style="font-size:3rem"
     />
     <div>
@@ -7304,7 +7304,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--program-triangles-2"
+      class="sap-icon--program-triangles-2"
       style="font-size:3rem"
     />
     <div>
@@ -7316,7 +7316,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--mirrored-task-circle"
+      class="sap-icon--mirrored-task-circle"
       style="font-size:3rem"
     />
     <div>
@@ -7328,7 +7328,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--mirrored-task-circle-2"
+      class="sap-icon--mirrored-task-circle-2"
       style="font-size:3rem"
     />
     <div>
@@ -7340,7 +7340,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--checklist-item"
+      class="sap-icon--checklist-item"
       style="font-size:3rem"
     />
     <div>
@@ -7352,7 +7352,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--checklist-item-2"
+      class="sap-icon--checklist-item-2"
       style="font-size:3rem"
     />
     <div>
@@ -7364,7 +7364,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--checklist"
+      class="sap-icon--checklist"
       style="font-size:3rem"
     />
     <div>
@@ -7376,7 +7376,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--checklist-2"
+      class="sap-icon--checklist-2"
       style="font-size:3rem"
     />
     <div>
@@ -7388,7 +7388,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--chart-table-view"
+      class="sap-icon--chart-table-view"
       style="font-size:3rem"
     />
     <div>
@@ -7400,7 +7400,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--filter-analytics"
+      class="sap-icon--filter-analytics"
       style="font-size:3rem"
     />
     <div>
@@ -7412,7 +7412,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--filter-facets"
+      class="sap-icon--filter-facets"
       style="font-size:3rem"
     />
     <div>
@@ -7424,7 +7424,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--filter-fields"
+      class="sap-icon--filter-fields"
       style="font-size:3rem"
     />
     <div>
@@ -7436,7 +7436,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--indent"
+      class="sap-icon--indent"
       style="font-size:3rem"
     />
     <div>
@@ -7448,7 +7448,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--outdent"
+      class="sap-icon--outdent"
       style="font-size:3rem"
     />
     <div>
@@ -7460,7 +7460,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--heading-1"
+      class="sap-icon--heading-1"
       style="font-size:3rem"
     />
     <div>
@@ -7472,7 +7472,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--heading-2"
+      class="sap-icon--heading-2"
       style="font-size:3rem"
     />
     <div>
@@ -7484,7 +7484,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--heading-3"
+      class="sap-icon--heading-3"
       style="font-size:3rem"
     />
     <div>
@@ -7496,7 +7496,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--decrease-line-height"
+      class="sap-icon--decrease-line-height"
       style="font-size:3rem"
     />
     <div>
@@ -7508,7 +7508,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--increase-line-height"
+      class="sap-icon--increase-line-height"
       style="font-size:3rem"
     />
     <div>
@@ -7520,7 +7520,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--fx"
+      class="sap-icon--fx"
       style="font-size:3rem"
     />
     <div>
@@ -7532,7 +7532,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--add-folder"
+      class="sap-icon--add-folder"
       style="font-size:3rem"
     />
     <div>
@@ -7544,7 +7544,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--away"
+      class="sap-icon--away"
       style="font-size:3rem"
     />
     <div>
@@ -7556,7 +7556,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--busy"
+      class="sap-icon--busy"
       style="font-size:3rem"
     />
     <div>
@@ -7568,7 +7568,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--appear-offline"
+      class="sap-icon--appear-offline"
       style="font-size:3rem"
     />
     <div>
@@ -7580,7 +7580,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--blur"
+      class="sap-icon--blur"
       style="font-size:3rem"
     />
     <div>
@@ -7592,7 +7592,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--pixelate"
+      class="sap-icon--pixelate"
       style="font-size:3rem"
     />
     <div>
@@ -7604,7 +7604,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--horizontal-combination-chart"
+      class="sap-icon--horizontal-combination-chart"
       style="font-size:3rem"
     />
     <div>
@@ -7616,7 +7616,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--add-employee"
+      class="sap-icon--add-employee"
       style="font-size:3rem"
     />
     <div>
@@ -7628,7 +7628,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--text-color"
+      class="sap-icon--text-color"
       style="font-size:3rem"
     />
     <div>
@@ -7640,7 +7640,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--browse-folder"
+      class="sap-icon--browse-folder"
       style="font-size:3rem"
     />
     <div>
@@ -7652,7 +7652,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--primary-key"
+      class="sap-icon--primary-key"
       style="font-size:3rem"
     />
     <div>
@@ -7664,7 +7664,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--two-keys"
+      class="sap-icon--two-keys"
       style="font-size:3rem"
     />
     <div>
@@ -7676,7 +7676,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--strikethrough"
+      class="sap-icon--strikethrough"
       style="font-size:3rem"
     />
     <div>
@@ -7688,7 +7688,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--text"
+      class="sap-icon--text"
       style="font-size:3rem"
     />
     <div>
@@ -7700,7 +7700,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--responsive"
+      class="sap-icon--responsive"
       style="font-size:3rem"
     />
     <div>
@@ -7712,7 +7712,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--desktop-mobile"
+      class="sap-icon--desktop-mobile"
       style="font-size:3rem"
     />
     <div>
@@ -7724,7 +7724,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--table-row"
+      class="sap-icon--table-row"
       style="font-size:3rem"
     />
     <div>
@@ -7736,7 +7736,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--table-column"
+      class="sap-icon--table-column"
       style="font-size:3rem"
     />
     <div>
@@ -7748,7 +7748,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--validate"
+      class="sap-icon--validate"
       style="font-size:3rem"
     />
     <div>
@@ -7760,7 +7760,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--keyboard-and-mouse"
+      class="sap-icon--keyboard-and-mouse"
       style="font-size:3rem"
     />
     <div>
@@ -7772,7 +7772,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--touch"
+      class="sap-icon--touch"
       style="font-size:3rem"
     />
     <div>
@@ -7784,7 +7784,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--expand-all"
+      class="sap-icon--expand-all"
       style="font-size:3rem"
     />
     <div>
@@ -7796,7 +7796,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--collapse-all"
+      class="sap-icon--collapse-all"
       style="font-size:3rem"
     />
     <div>
@@ -7808,7 +7808,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--combine"
+      class="sap-icon--combine"
       style="font-size:3rem"
     />
     <div>
@@ -7820,7 +7820,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--split"
+      class="sap-icon--split"
       style="font-size:3rem"
     />
     <div>
@@ -7832,7 +7832,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--megamenu"
+      class="sap-icon--megamenu"
       style="font-size:3rem"
     />
     <div>
@@ -7844,7 +7844,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--feedback"
+      class="sap-icon--feedback"
       style="font-size:3rem"
     />
     <div>
@@ -7856,7 +7856,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--information"
+      class="sap-icon--information"
       style="font-size:3rem"
     />
     <div>
@@ -7868,7 +7868,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--s4hana"
+      class="sap-icon--s4hana"
       style="font-size:3rem"
     />
     <div>
@@ -7880,7 +7880,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--translate"
+      class="sap-icon--translate"
       style="font-size:3rem"
     />
     <div>
@@ -7892,7 +7892,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--clear-all"
+      class="sap-icon--clear-all"
       style="font-size:3rem"
     />
     <div>
@@ -7904,7 +7904,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--command-line-interfaces"
+      class="sap-icon--command-line-interfaces"
       style="font-size:3rem"
     />
     <div>
@@ -7916,7 +7916,7 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     class="fddocs-container--icon"
   >
     <span
-      class="sap-icon sap-icon--icon-sum"
+      class="sap-icon--icon-sum"
       style="font-size:3rem"
     />
     <div>
@@ -7933,7 +7933,7 @@ exports[`Storyshots Components/Icons/SAP Icons Sizes 1`] = `
 
     
   <span
-    class="sap-icon sap-icon--cart"
+    class="sap-icon--cart"
   />
   
     
@@ -7941,7 +7941,7 @@ exports[`Storyshots Components/Icons/SAP Icons Sizes 1`] = `
   
     
   <span
-    class="sap-icon sap-icon--cart"
+    class="sap-icon--cart"
     style="font-size:5rem"
   />
   
@@ -7950,7 +7950,7 @@ exports[`Storyshots Components/Icons/SAP Icons Sizes 1`] = `
   
     
   <span
-    class="sap-icon sap-icon--cart"
+    class="sap-icon--cart"
     style="font-size:10rem"
   />
   

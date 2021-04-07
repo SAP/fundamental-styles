@@ -21,11 +21,11 @@ Note: If an icon needs to be selected or have any interaction states, it is reco
 
 export const sizes = () => `
 
-    <span class="sap-icon sap-icon--cart"></span>
+    <span class="sap-icon--cart"></span>
     <br />
-    <span class="sap-icon sap-icon--cart" style="font-size:5rem"></span>
+    <span class="sap-icon--cart" style="font-size:5rem"></span>
     <br />
-    <span class="sap-icon sap-icon--cart" style="font-size:10rem"></span>
+    <span class="sap-icon--cart" style="font-size:10rem"></span>
 `;
 
 sizes.parameters = {
@@ -41,7 +41,7 @@ export const availableIcons = () => {
     div.innerHTML = data.icons.map((icon) => {
         return (
             '<div class="fddocs-container--icon">' +
-                `<span class="sap-icon sap-icon--${icon}" style="font-size:3rem"></span>` +
+                `<span class="sap-icon--${icon}" style="font-size:3rem"></span>` +
                 `<div>.sap-icon--${icon}</div>` +
             '</div><br />'
         );
@@ -52,7 +52,7 @@ export const availableIcons = () => {
 availableIcons.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'There are several icons available. To display any one of these icons, add the <code>sap-icon--{icon-name}</code> modifier class identifying the icon style to the <code>sap-icon</code> class. For example, for a search icon, add <code>sap-icon sap-icon--search</code> with the desired font size value.'
+        storyDescription: 'There are several icons available. To display any one of these icons, apply the <code>sap-icon--{icon-name}</code> class identifying the icon style. For example, for a search icon, add <code> sap-icon--search</code> with the desired font size value.'
     },
     skipRTLSnapshot: true
 };

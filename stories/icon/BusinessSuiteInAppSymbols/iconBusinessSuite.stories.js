@@ -21,11 +21,11 @@ Note: If an icon needs to be selected or have any interaction states, it is reco
 
 export const sizes = () => `
 
-    <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart"></span>
+    <span class="sap-icon-businessSuiteInAppSymbols--heart"></span>
     <br />
-    <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart" style="font-size:2rem"></span>
+    <span class="sap-icon-businessSuiteInAppSymbols--heart" style="font-size:2rem"></span>
     <br />
-    <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart" style="font-size:5rem"></span>
+    <span class="sap-icon-businessSuiteInAppSymbols--heart" style="font-size:5rem"></span>
 `;
 
 sizes.parameters = {
@@ -42,7 +42,7 @@ export const businessSuiteIcons = () => {
     div.innerHTML = dataBusinessSuite.businessSuiteIcons.map((icon) => {
         return (
             '<div class="fddocs-container--icon">' +
-                `<span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--${icon}" style="font-size:3rem"></span>` +
+                `<span class="sap-icon-businessSuiteInAppSymbols--${icon}" style="font-size:3rem"></span>` +
                 `<div>.sap-icon-businessSuiteInAppSymbols--${icon}</div>` +
             '</div><br />'
         );
@@ -53,7 +53,7 @@ export const businessSuiteIcons = () => {
 businessSuiteIcons.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'For icons of <b>BusinessSuiteInAppSymbols</b> font-family add the <code>sap-icon-businessSuiteInAppSymbols--{icon-name}</code> modifier class identifying the icon style to the <code>sap-icon-businessSuiteInAppSymbols</code> class. For example, for a <i>heart</i> icon, add <code>sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart</code> with the desired font size value.'
+        storyDescription: 'For icons of <b>BusinessSuiteInAppSymbols</b> font-family add the <code>sap-icon-businessSuiteInAppSymbols--{icon-name}</code>class identifying the icon style. For example, for a <i>heart</i> icon, add <code>sap-icon-businessSuiteInAppSymbols--heart</code> with the desired font size value.'
     },
     skipRTLSnapshot: true
 };
