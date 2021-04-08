@@ -51,10 +51,6 @@
 @mixin fd-business-suite-icon-base($position: 'before') {
   &::#{$position} {
     font-family: 'BusinessSuiteInAppSymbols';
-    text-align: center;
-    text-decoration: inherit;
-    text-transform: none;
-    text-rendering: optimizeLegibility;
     @content;
   }
 }
@@ -85,10 +81,6 @@
 @mixin fd-tnt-icon-base($position: 'before') {
   &::#{$position} {
     font-family: 'SAP-icons-TNT';
-    text-align: center;
-    text-decoration: inherit;
-    text-transform: none;
-    text-rendering: optimizeLegibility;
     @content;
   }
 }
