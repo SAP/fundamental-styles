@@ -1,0 +1,93 @@
+@import "./listDefinitions.scss";
+
+.#{$block} {
+  list-style-type: none;
+
+  &--navigation-item {
+    background: var(--sapList_AlternatingBackground);
+    height: 2.75rem;
+    width: 15rem;
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+
+    &--condensed {
+      width: 3.25rem;
+
+      .#{$block}--navigation-item__text {
+        display: none;
+      }
+
+      .#{$block}--navigation-item__arrow {
+        &::before {
+          content: "";
+          min-width: 0;
+          min-height: 0;
+          margin-right: 0.75rem;
+          margin-bottom: 0.5625rem;
+          border-style: solid;
+          border-width: 0.25rem 0.25rem 0 0;
+          border-color: transparent var(--sapContent_NonInteractiveIconColor) transparent transparent;
+          right: 0;
+          bottom: 0;
+          position: absolute;
+        }
+      }
+
+      .#{$block}--navigation-item__icon {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+    }
+
+    &__icon {
+      font-size: 1rem;
+      font-family: "SAP-icons";
+      height: 2.75rem;
+      line-height: 2.75rem;
+      width: 2.25rem;
+      color: var(--sapContent_NonInteractiveIconColor);
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    &__text {
+      font-size: var(--sapFontLargeSize);
+      font-family: var(--sapFontFamily);
+      color: var(--sapList_TextColor);
+      padding-left: 0.5rem;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 2.75rem;
+    }
+
+    &__arrow {
+      width: 2.75rem;
+      height: 2.75rem;
+      line-height: 2.75rem;
+      float: right;
+      font-family: "SAP-icons";
+      font-size: 1rem;
+      color: var(--sapContent_NonInteractiveIconColor);
+    }
+  }
+
+  &--navigation-item,
+  &--navigation-item--condensed {
+    @include fd-hover() {
+      background: var(--sapList_Hover_Background);
+    }
+
+    @include fd-pressed() {
+      background: var(--sapList_Active_Background);
+      color: var(--sapContent_ContrastTextColor);
+
+      &__icon,
+      &__arrow,
+      &__navigation-indicator {
+        color: var(--sapContent_ContrastIconColor);
+      }
+    }
+  }
+}
