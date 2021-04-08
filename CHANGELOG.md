@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.41...v0.17.0-rc.42) (2021-04-08)
+
+
+### Bug Fixes
+
+* table fixed cells hover state ([#2233](https://github.com/SAP/fundamental-styles/issues/2233)) ([d05754d](https://github.com/SAP/fundamental-styles/commit/d05754d08857a6f6b5be8f9fa5f27f0c2c2c2fdb))
+
 ## [0.17.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.40...v0.17.0-rc.41) (2021-04-07)
 
 ## [0.17.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.39...v0.17.0-rc.40) (2021-04-06)
