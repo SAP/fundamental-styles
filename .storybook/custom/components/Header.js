@@ -10,7 +10,7 @@ const Header = ({onThemeChange, onDirectionalityChange}) => {
             <section className='fddocs-header--right'>
                 <label
                     className='fddocs-header--label'
-                    for="examplesDirectionality">Directionality</label>
+                    htmlFor="examplesDirectionality">Directionality</label>
                 <select
                     id="examplesDirectionality"
                     className='fddocs-select'
@@ -20,7 +20,7 @@ const Header = ({onThemeChange, onDirectionalityChange}) => {
                 </select>
                 <label
                     className='fddocs-header--label'
-                    for="examplesTheme">Theme</label>
+                    htmlFor="examplesTheme">Theme</label>
                 <select
                     id="examplesTheme"
                     className='fddocs-select'

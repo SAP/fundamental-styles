@@ -1,6 +1,10 @@
 @import "./mixins";
 
+/* stylelint-disable */
 $block: sap-icon;
+$blockBusiness: sap-icon-businessSuiteInAppSymbols;
+$blockTNT: sap-icon-TNT;
+/* stylelint-enable */
 
 [class*="#{$block}"] {
   @include fd-reset();
@@ -10,10 +14,42 @@ $block: sap-icon;
   display: inline-block;
 }
 
+[class*='#{$blockBusiness}'] {
+  @include fd-reset();
+  @include fd-business-suite-icon-base();
+
+  font-style: normal;
+  display: inline-block;
+}
+
+[class*='#{$blockTNT}'] {
+  @include fd-reset();
+  @include fd-tnt-icon-base();
+
+  font-style: normal;
+  display: inline-block;
+}
+
 .#{$block} {
   @each $key, $value in $fd-icons {
     &--#{$key} {
       @include fd-icon-glyph($key);
+    }
+  }
+}
+
+.#{$blockBusiness} {
+  @each $key, $value in $fd-business-suite-icons {
+    &--#{$key} {
+      @include fd-business-suite-icon-glyph($key);
+    }
+  }
+}
+
+.#{$blockTNT} {
+  @each $key, $value in $fd-tnt-icons {
+    &--#{$key} {
+      @include fd-tnt-icon-glyph($key);
     }
   }
 }

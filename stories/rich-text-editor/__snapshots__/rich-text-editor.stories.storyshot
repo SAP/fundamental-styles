@@ -1,0 +1,1386 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Patterns/Rich Text Editor Compact Mode 1`] = `
+<div
+  style="height:450px;overflow-y:hidden"
+>
+  
+
+  <div
+    class="fd-docs-rich-text-editor"
+  >
+    
+	  
+    <div
+      class="fd-toolbar fd-toolbar--title fd-toolbar-active "
+    >
+      
+		
+      <h4>
+        RTE Title
+      </h4>
+      
+	  
+    </div>
+    
+	  
+    <div
+      class="fd-toolbar"
+    >
+      
+		
+      <button
+        aria-label="bold text"
+        class="fd-button fd-button--transparent fd-button--compact"
+      >
+        
+		
+        <i
+          class="sap-icon--bold-text"
+        />
+        
+		
+      </button>
+      
+		
+      <button
+        aria-label="Italic text"
+        class="fd-button fd-button--compact fd-button--transparent"
+      >
+        
+		
+        <i
+          class="sap-icon--italic-text"
+        />
+        
+		
+      </button>
+      
+		
+      <button
+        aria-label="underline text"
+        class="fd-button fd-button--compact fd-button--transparent"
+      >
+        
+		
+        <i
+          class="sap-icon--underline-text"
+        />
+        
+		
+      </button>
+      
+		
+      <button
+        aria-label="text format"
+        class="fd-button fd-button--compact fd-button--transparent"
+      >
+        
+		
+        <i
+          class="sap-icon--text-formatting"
+        />
+        
+		
+      </button>
+      
+		
+      <div
+        class="fd-popover"
+      >
+        
+		  
+        <div
+          class="fd-popover__control"
+        >
+          
+			
+          <button
+            ['aria-expanded']);=""
+            ['aria-hidden']);=""
+            aria-controls="h0C6A328"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-label="select-label"
+            class="fd-button fd-button--compact fd-button--menu fd-button--transparent"
+            id="compactAllign"
+            tabindex="0"
+            toggleelattrs('compactallign',=""
+            toggleelattrs('h0c6a328',=""
+          >
+            
+			
+            <i
+              class="sap-icon--text-align-left"
+            />
+            
+			
+            <i
+              class="sap-icon--slim-arrow-down"
+            />
+             
+			
+          </button>
+          
+		  
+        </div>
+        
+		  
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+          id="h0C6A328"
+        >
+          
+			
+          <ul
+            aria-activedescendant="compactSelectRTE-currentlyFocusedItem"
+            aria-label="select-option"
+            class="fd-list fd-list--compact fd-list--dropdown"
+            role="listbox"
+          >
+            
+			  
+            <li
+              aria-selected="true"
+              class="fd-list__item is-selected"
+              id="compactSelectRTE-currentlyFocusedItem"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__thumbnail"
+              >
+                
+				
+                <i
+                  class="sap-icon--text-align-left"
+                />
+                
+				
+                <span
+                  class="fd-list__title"
+                >
+                   Left Align
+                </span>
+                
+			  
+              </span>
+            </li>
+            
+			  
+            <li
+              class="fd-list--compact fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__thumbnail"
+              >
+                
+				
+                <i
+                  class="sap-icon--text-align-center"
+                />
+                
+				
+                <span
+                  class="fd-list__title"
+                >
+                   Center Align
+                </span>
+                
+			  
+              </span>
+            </li>
+            
+			  
+            <li
+              class="fd-list--compact fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__thumbnail"
+              >
+                
+				
+                <i
+                  class="sap-icon--text-align-right"
+                />
+                
+				
+                <span
+                  class="fd-list__title"
+                >
+                   Right Align
+                </span>
+                
+			  
+              </span>
+            </li>
+            
+			
+          </ul>
+          
+		  
+        </div>
+        
+		
+      </div>
+      
+		
+      <div
+        class="fd-popover"
+      >
+        
+		  
+        <div
+          class="fd-popover__control"
+        >
+          
+			
+          <div
+            class="fd-select fd-select--compact "
+          >
+            
+			  
+            <button
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="select-label"
+              class="fd-select__control"
+              id="compactRTEParagraph"
+              onclick="
+				toggleElAttrs('h0C6A329', ['aria-hidden']);
+				toggleElAttrs('compactRTEParagraph', ['aria-expanded']);
+				"
+              tabindex="0"
+              value="List Item 1"
+            >
+              
+			  
+              <span
+                class="fd-select__text-content"
+              >
+                Paragraph
+              </span>
+              
+			  
+              <span
+                class="fd-button fd-button--compact fd-button--transparent fd-select__button"
+              >
+                
+			  
+                <i
+                  class="sap-icon--slim-arrow-down"
+                />
+                 
+			  
+              </span>
+              
+			  
+            </button>
+            
+			
+          </div>
+          
+		  
+        </div>
+        
+		  
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+          id="h0C6A329"
+        >
+          
+			
+          <ul
+            aria-activedescendant="compactRTEParagraph-currentlyFocusedItem"
+            aria-label="select-option"
+            class="fd-list fd-list--compact fd-list--dropdown"
+            role="listbox"
+          >
+            
+			  
+            <li
+              class="fd-list__item"
+              id="compactRTEParagraph-currentlyFocusedItem"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Select
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              aria-selected="true"
+              class="fd-list__item is-selected"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Heading 1
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Heading 2
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Heading 3
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Heading 4
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Heading 5
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Heading 6 
+              </span>
+              
+			  
+            </li>
+            
+			
+          </ul>
+          
+		  
+        </div>
+        
+		
+      </div>
+      
+		
+      <div
+        class="fd-popover"
+      >
+        
+		  
+        <div
+          class="fd-popover__control"
+        >
+          
+			
+          <div
+            class="fd-select fd-select--compact"
+          >
+            
+			  
+            <button
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="select-label"
+              class="fd-select__control"
+              id="compactRTEFont"
+              onclick="
+				toggleElAttrs('h0C6A3211', ['aria-hidden']);
+				toggleElAttrs('compactRTEFont', ['aria-expanded']);
+				"
+              tabindex="0"
+              value="Times New Roman"
+            >
+              
+			  
+              <span
+                class="fd-select__text-content"
+              >
+                Times New Roman
+              </span>
+              
+			  
+              <span
+                class="fd-button fd-button--compact fd-button--transparent fd-select__button"
+              >
+                
+			  
+                <i
+                  class="sap-icon--slim-arrow-down"
+                />
+                 
+			  
+              </span>
+              
+			  
+            </button>
+            
+			
+          </div>
+          
+		  
+        </div>
+        
+		  
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+          id="h0C6A3211"
+        >
+          
+			
+          <ul
+            aria-activedescendant="cozySelectCombobox-currentlyFocusedItem"
+            aria-label="select-option"
+            class="fd-list fd-list--compact fd-list--dropdown"
+            role="listbox"
+          >
+            
+			  
+            <li
+              class="fd-list__item"
+              id="cozySelectCombobox-currentlyFocusedItem"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Select
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              aria-selected="true"
+              class="fd-list__item is-selected"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Andale Mona
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Arial
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Arial Black
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Book Antiqua
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Comic Sans MS
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Courier New
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Georgia
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Helvetica
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Impact
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Symbol
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Tahoma
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Terminal
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Times New Roman
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Trebuchet MS
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Verdana
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Webdings
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                Wingdings
+              </span>
+              
+			  
+            </li>
+            
+			
+          </ul>
+          
+		  
+        </div>
+        
+		
+      </div>
+      
+		
+      <div
+        class="fd-popover"
+      >
+        
+		  
+        <div
+          class="fd-popover__control"
+        >
+          
+			
+          <div
+            class="fd-select fd-select--compact"
+          >
+            
+			  
+            <button
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="select-label"
+              class="fd-select__control"
+              id="compactRTEFontSize"
+              onclick="
+				toggleElAttrs('h0C6A3212', ['aria-hidden']);
+				toggleElAttrs('compactRTEFontSize', ['aria-expanded']);
+				"
+              tabindex="0"
+              value="List Item 1"
+            >
+              
+			  
+              <span
+                class="fd-select__text-content"
+              >
+                10 pt
+              </span>
+              
+			  
+              <span
+                class="fd-button fd-button--compact fd-button--transparent fd-select__button"
+              >
+                
+			  
+                <i
+                  class="sap-icon--slim-arrow-down"
+                />
+                 
+			  
+              </span>
+              
+			  
+            </button>
+            
+			
+          </div>
+          
+		  
+        </div>
+        
+		  
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+          id="h0C6A3212"
+        >
+          
+			
+          <ul
+            aria-activedescendant="compactRTEFontSize-currentlyFocusedItem"
+            aria-label="select-option"
+            class="fd-list fd-list--compact fd-list--dropdown"
+            role="listbox"
+          >
+            
+			  
+            <li
+              class="fd-list__item"
+              id="compactRTEFontSize-currentlyFocusedItem"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                8 pt
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              aria-selected="true"
+              class="fd-list__item is-selected"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                10 pt
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                12 pt
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                14 pt
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                16 pt
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                18 pt
+              </span>
+              
+			  
+            </li>
+            
+			  
+            <li
+              class="fd-list__item"
+              role="option"
+              tabindex="0"
+            >
+              
+				
+              <span
+                class="fd-list__title"
+              >
+                20 pt
+              </span>
+              
+			  
+            </li>
+            
+			
+          </ul>
+          
+		  
+        </div>
+        
+		
+      </div>
+      
+		
+      <div
+        aria-label="button-split"
+        class="fd-button-split fd-button-split--compact fd-button-split--transparent fd-has-margin-right-small"
+        role="group"
+      >
+        
+		  
+        <button
+          ['aria-expanded']);=""
+          ['aria-hidden']);=""
+          aria-controls="t4c0o2736"
+          aria-expanded="false"
+          aria-haspopup="true"
+          aria-label="button"
+          class="fd-button fd-button--compact fd-button--transparent"
+          id="compactRTEFontColor"
+          toggleelattrs('compactrtefontcolor',=""
+          toggleelattrs('t4c0o2736',=""
+        >
+          
+			
+          <svg
+            viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            
+			  
+            <path
+              d="M662.477,379.355h3.038l.806,2.7h1.163l-2.729-9h-1.518l-2.753,9h1.21Zm1.519-5.4,1.281,4.5h-2.586Z"
+              style="fill:var(--sapButton_IconColor)"
+              transform="translate(-656.047 -373.055)"
+            />
+            
+			  
+            <rect
+              class="outline"
+              height="3"
+              rx="0.2"
+              ry="0.2"
+              width="14"
+              x="1"
+              y="12"
+            />
+            
+			  
+            <rect
+              class="fill"
+              height="3"
+              rx="0.2"
+              ry="0.2"
+              width="14"
+              x="1"
+              y="12"
+            />
+            
+			
+          </svg>
+          
+		  
+        </button>
+        
+		  
+        <button
+          ['aria-expanded']);=""
+          ['aria-hidden']);=""
+          aria-controls="t4c0o2736"
+          aria-expanded="false"
+          aria-haspopup="true"
+          aria-label="More"
+          class="fd-button fd-button--compact fd-button--transparent"
+          id="compactRTEFontColorIcon"
+          toggleelattrs('compactrtefontcoloricon',=""
+          toggleelattrs('t4c0o2736',=""
+        >
+          
+		  
+          <i
+            class="sap-icon--slim-arrow-down"
+          />
+        </button>
+        
+		  
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"
+          id="t4c0o2736"
+        >
+          
+			
+          <nav
+            class="fd-menu fd-menu--compact"
+          >
+            
+			  
+            <ul
+              class="fd-menu__list fd-menu__list--no-shadow"
+            >
+              
+				
+              <li
+                class="fd-menu__item"
+              >
+                
+				  
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                  role="button"
+                >
+                  
+				  
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Red
+                  </span>
+                  
+				  
+                </a>
+                
+				
+              </li>
+              
+				
+              <li
+                class="fd-menu__item"
+              >
+                
+				  
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                  role="button"
+                >
+                  
+				  
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Blue
+                  </span>
+                  
+				  
+                </a>
+                
+				
+              </li>
+              
+			  
+            </ul>
+            
+			
+          </nav>
+          
+		  
+        </div>
+        
+		
+      </div>
+      
+		
+      <div
+        aria-label="button-split"
+        class="fd-button-split fd-button-split--compact fd-button-split--transparent fd-has-margin-right-small"
+        role="group"
+      >
+        
+		  
+        <button
+          ['aria-expanded']);=""
+          ['aria-hidden']);=""
+          aria-controls="t4c0o275"
+          aria-expanded="false"
+          aria-haspopup="true"
+          aria-label="button"
+          class="fd-button fd-button--compact fd-button--transparent"
+          id="compactRTEBackgroundColor"
+          toggleelattrs('compactrtebackgroundcolor',=""
+          toggleelattrs('t4c0o275',=""
+        >
+          
+		  
+          <i
+            class="sap-icon--color-fill"
+          />
+           
+		  
+        </button>
+        
+		  
+        <button
+          ['aria-expanded']);=""
+          ['aria-hidden']);=""
+          aria-controls="t4c0o275"
+          aria-expanded="false"
+          aria-haspopup="true"
+          aria-label="More"
+          class="fd-button fd-button--compact fd-button--transparent"
+          id="compactRTEBackgroundColorIcon"
+          toggleelattrs('compactrtebackgroundcoloricon',=""
+          toggleelattrs('t4c0o275',=""
+        >
+          <i
+            class="sap-icon--slim-arrow-down"
+          />
+        </button>
+        
+		  
+        <div
+          aria-hidden="true"
+          class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"
+          id="t4c0o275"
+        >
+          
+			
+          <nav
+            class="fd-menu fd-menu--compact"
+          >
+            
+			  
+            <ul
+              class="fd-menu__list fd-menu__list--no-shadow"
+            >
+              
+				
+              <li
+                class="fd-menu__item"
+              >
+                
+				  
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                  role="button"
+                >
+                  
+				  
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Red
+                  </span>
+                  
+				  
+                </a>
+                
+				
+              </li>
+              
+				
+              <li
+                class="fd-menu__item"
+              >
+                
+				  
+                <a
+                  class="fd-menu__link"
+                  href="#"
+                  role="button"
+                >
+                  
+				  
+                  <span
+                    class="fd-menu__title"
+                  >
+                    Blue
+                  </span>
+                  
+				  
+                </a>
+                
+				
+              </li>
+              
+			  
+            </ul>
+            
+			
+          </nav>
+          
+		  
+        </div>
+        
+		
+      </div>
+      
+		
+      <button
+        aria-label="bullet text"
+        class="fd-button fd-button--compact fd-button--transparent"
+      >
+        
+		
+        <i
+          class="sap-icon--bullet-text"
+        />
+        
+		
+      </button>
+      
+		
+      <button
+        aria-label="numbered text"
+        class="fd-button fd-button--compact fd-button--transparent"
+      >
+        
+		
+        <i
+          class="sap-icon--numbered-text"
+        />
+        
+		
+      </button>
+      
+	  
+    </div>
+    
+	  
+    <textarea
+      aria-label="enter text"
+      class="fd-textarea"
+      cols="30"
+      id="textarea-2"
+      rows="15"
+    >
+      Pellentesque metus lacus commodo eget justo ut rutrum varius nunc.
+    </textarea>
+    
+	
+  </div>
+  
+	
+</div>
+`;
+
+exports[`Storyshots Patterns/Rich Text Editor Cozy Mode 1`] = `
+
+
+`;
+
+exports[`Storyshots Patterns/Rich Text Editor Over Flow RTE 1`] = `
+
+	
+`;
+
+exports[`Storyshots Patterns/Rich Text Editor Over Flow RTE With Solid Tool Bar 1`] = `
+
+	
+`;

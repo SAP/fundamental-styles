@@ -167,6 +167,12 @@ $title-toolbar-height: 2.75rem;
           background-color: var(--sapToolbar_SeparatorColor);
         }
 
+        .#{$block}__overflow__form-label {
+          &.#{$fd-namespace}-form-label {
+            margin-top: 0.4375rem;
+          }
+        }
+
         .#{$block}__overflow__form-label,
         .#{$block}__overflow__label {
           overflow: hidden;

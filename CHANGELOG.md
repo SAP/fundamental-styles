@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.39...v0.17.0-rc.40) (2021-04-06)
+
+
+### Features
+
+* introduce 2 new types of icons ([#2229](https://github.com/SAP/fundamental-styles/issues/2229)) ([381958c](https://github.com/SAP/fundamental-styles/commit/381958c03092350ae220e0b50e06d284a8e1793c))
+
+## [0.17.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.38...v0.17.0-rc.39) (2021-04-06)
+
+
+### Features
+
+* introduce Rich Text Editor component ([#2215](https://github.com/SAP/fundamental-styles/issues/2215)) ([3cdb7cb](https://github.com/SAP/fundamental-styles/commit/3cdb7cbd27256ea7cb13fb587075346bd10c2758))
+
+## [0.17.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.37...v0.17.0-rc.38) (2021-04-05)
+
 ## [0.17.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.36...v0.17.0-rc.37) (2021-04-01)
 
 ## [0.17.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.35...v0.17.0-rc.36) (2021-03-30)
