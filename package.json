@@ -23,7 +23,7 @@
     "style:theme": " babel-node scripts/theme-css.js",
     "style:postCSS": "postcss --config config/postcss.config.js --replace dist/*.css",
     "style:remove": "rimraf dist",
-    "test": "npm run test:accessibility && server-test storybook:ci http-get://localhost:6006 'npm run storybook:visual:setup'",
+    "test": "BABEL_ENV=test npm run test:accessibility && server-test storybook:ci http-get://localhost:6006 'npm run storybook:visual:setup'",
     "test:accessibility": "babel-node scripts/build-accessibility-tests.js && jest ---testPathIgnorePatterns=storybook-testing/storyshots.test.js",
     "test:update": "server-test storybook:ci http-get://localhost:6006 'npm run storybook:visual:setup -- --updateSnapshot'",
     "storybook": "npm run storybook:prep && start-storybook -s .storybook/static/,node_modules/@sap-theming,dist/ -p 6006",
@@ -47,6 +47,7 @@
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/node": "^7.10.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.13.8",
     "@babel/plugin-transform-runtime": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "@sap-theming/theming-base-content": "~11.1.28",

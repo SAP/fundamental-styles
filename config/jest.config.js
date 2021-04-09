@@ -11,6 +11,5 @@ module.exports = {
         '^.+\\.stories\\.js?$': '@storybook/addon-storyshots/injectFileName',
         '^.+\\.js?$': 'babel-jest',
         '^.+\\.mdx$': '@storybook/addon-docs/jest-transform-mdx'
-    },
-    transformIgnorePatterns: ['<rootDir>/node_modules/@storybook/addon-docs']
+    }
 };

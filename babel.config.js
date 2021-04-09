@@ -3,7 +3,9 @@ module.exports = {
     env: {
         cjs: {},
         test: {
-            plugins: []
+            plugins: [
+                '@babel/plugin-transform-modules-commonjs' // needed for storybook >=6.2.7
+            ]
         }
     }
 };
