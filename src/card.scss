@@ -231,6 +231,11 @@ $fd-card-default-body-background-color: var(--sapTile_Background) !default;
     @include fd-reset();
 
     color: var(--sapTile_TitleTextColor);
+
+    @include fd-rtl() {
+      direction: ltr;
+      text-align: right;
+    }
   }
 
   &__second-subtitle {
@@ -352,6 +357,8 @@ $fd-card-default-body-background-color: var(--sapTile_Background) !default;
   }
 
   &--table {
+    border: hidden;
+
     &.#{$block}--compact {
       .#{$block}__content {
         padding-bottom: 0.5rem;
@@ -363,5 +370,12 @@ $fd-card-default-body-background-color: var(--sapTile_Background) !default;
     .#{$block}__content {
       padding: 1rem;
     }
+  }
+
+  &__loader {
+    @include fd-reset();
+    @include fd-flex-center();
+
+    min-height: 5rem;
   }
 }

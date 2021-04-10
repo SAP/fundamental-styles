@@ -56,6 +56,11 @@ $fd-numeric-content-elements-spacing-s: 0.5rem !default;
 
   .#{$block}__kpi {
     font-size: 1.5rem;
+
+    @include fd-rtl() {
+      direction: ltr;
+      text-align: right;
+    }
   }
 
   @content;
