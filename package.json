@@ -85,7 +85,6 @@
     "node-sass": "^5.0.0",
     "normalize.css": "^8.0.1",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.2.6",
     "postcss-banner": "^3.0.2",
     "postcss-clean": "^1.2.2",
     "postcss-cli": "^8.3.1",
@@ -110,6 +109,9 @@
     "stylelint-scss": "^3.19.0",
     "tocbot": "^4.12.2",
     "webpack-merge": "^5.7.3"
+  },
+  "peerDependencies": {
+    "postcss": "^8.2.6"
   },
   "directories": {
     "storybook-testing": "storybook-testing"
