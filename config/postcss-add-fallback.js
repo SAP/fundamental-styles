@@ -36,8 +36,10 @@ module.exports = () => {
         Once(root) {
             let params = new Map();
             let deltaParams = new Map();
+
             // remove file extension (.css)
             let fileName = root.source.input.file.replace(/\.[^/.]+$/, '');
+
             // turn file name into array
             fileName = fileName.split('-');
 
