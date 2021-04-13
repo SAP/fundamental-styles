@@ -1,5 +1,3 @@
-
-const postcss = require('postcss');
 const fs = require('fs');
 const arrayUniq = require('array-uniq');
 const supportedThemes = require('./constants');
@@ -32,29 +30,37 @@ const applyFallback = (root, parameterMap) => {
     });
 };
 
-module.exports = postcss.plugin('add fallback plugin', function() {
-    let params = new Map();
-    let deltaParams = new Map();
-    return function(root) {
-        // remove file extension (.css)
-        let fileName = root.source.input.file.replace(/\.[^/.]+$/, '');
-        // turn file name into array
-        fileName = fileName.split('-');
+module.exports = () => {
+    return {
+        postcssPlugin: 'add fallback plugin',
+        Once(root) {
+            let params = new Map();
+            let deltaParams = new Map();
 
-        // set default to sap_fiori_3
-        let sourceParams = fs.readFileSync('node_modules/@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/css_variables.css').toString();
-        let sourceDeltaParams = fs.readFileSync('dist/theming/sap_fiori_3.css').toString();
+            // remove file extension (.css)
+            let fileName = root.source.input.file.replace(/\.[^/.]+$/, '');
 
-        if (supportedThemes.indexOf(fileName[fileName.length - 1]) > -1) {
-            sourceParams = fs.readFileSync(`node_modules/@sap-theming/theming-base-content/content/Base/baseLib/${fileName[fileName.length - 1]}/css_variables.css`).toString();
-            sourceDeltaParams = fs.readFileSync(`dist/theming/${fileName[fileName.length - 1]}.css`).toString();
+            // turn file name into array
+            fileName = fileName.split('-');
+
+            // set default to sap_fiori_3
+            let sourceParams = fs.readFileSync('node_modules/@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/css_variables.css').toString();
+            let sourceDeltaParams = fs.readFileSync('dist/theming/sap_fiori_3.css').toString();
+
+            if (supportedThemes.indexOf(fileName[fileName.length - 1]) > -1) {
+                sourceParams = fs.readFileSync(`node_modules/@sap-theming/theming-base-content/content/Base/baseLib/${fileName[fileName.length - 1]}/css_variables.css`).toString();
+                sourceDeltaParams = fs.readFileSync(`dist/theming/${fileName[fileName.length - 1]}.css`).toString();
+            }
+
+            params = findCSSVars(sourceParams);
+            deltaParams = findCSSVars(sourceDeltaParams);
+
+            // these cannot be combined as part of the same map due to delta variables referencing sap-variables
+            applyFallback(root, deltaParams);
+            applyFallback(root, params);
         }
-
-        params = findCSSVars(sourceParams);
-        deltaParams = findCSSVars(sourceDeltaParams);
-
-        // these cannot be combined as part of the same map due to delta variables referencing sap-variables
-        applyFallback(root, deltaParams);
-        applyFallback(root, params);
     };
-});
+};
+
+
+module.exports.postcss = true;
