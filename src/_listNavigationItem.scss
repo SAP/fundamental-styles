@@ -3,21 +3,34 @@
 .#{$block} {
   list-style-type: none;
 
-  &--navigation-item {
+  &__navigation-item {
     background: var(--sapList_AlternatingBackground);
     height: 2.75rem;
-    width: 15rem;
+    width: 13.5rem;
     padding-left: 0.5rem;
     padding-right: 1rem;
 
+    &--second {
+      width: 13rem;
+      .#{$block}__navigation-item__text {
+        font-size: var(--sapFontSize);
+        color: var(--sapContent_LabelColor);
+        margin-left: 2rem;
+      }
+    }
+
     &--condensed {
+      position: relative;
       width: 3.25rem;
 
-      .#{$block}--navigation-item__text {
+      .#{$block}__navigation-item__text {
         display: none;
       }
 
-      .#{$block}--navigation-item__arrow {
+      .#{$block}__navigation-item__arrow {
+        width: 0;
+        height: 0;
+
         &::before {
           content: "";
           min-width: 0;
@@ -33,7 +46,7 @@
         }
       }
 
-      .#{$block}--navigation-item__icon {
+      .#{$block}__navigation-item__icon {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
       }
@@ -70,11 +83,12 @@
       font-family: "SAP-icons";
       font-size: 1rem;
       color: var(--sapContent_NonInteractiveIconColor);
+      text-align: end;
     }
   }
 
-  &--navigation-item,
-  &--navigation-item--condensed {
+  &__navigation-item,
+  &__navigation-item--condensed {
     @include fd-hover() {
       background: var(--sapList_Hover_Background);
     }

@@ -375,3 +375,29 @@ function toggleNestedListSubmenu(event) {
         icon.classList = 'sap-icon--navigation-down-arrow';
     }
 }
+
+function toggleVerticalNavSubmenu(event) {
+    let button = event.target;
+    if (button.tagName.toLowerCase() !== 'li') {
+        button = event.target.parentNode;
+    }
+    let arrowIcon = button.querySelector('.fd-list__navigation-item__arrow');
+
+    if(arrowIcon && arrowIcon.classList.contains('is-expanded')) {
+        arrowIcon.classList.add('sap-icon--navigation-right-arrow');
+        arrowIcon.classList.remove('sap-icon--navigation-down-arrow');
+        arrowIcon.classList.remove('is-expanded');
+        const seconds = arrowIcon.parentElement.getElementsByTagName('ul');
+        seconds.forEach(second => {
+            second.style.display = 'none';
+        });
+    } else if (arrowIcon) {
+        arrowIcon.classList.remove('sap-icon--navigation-right-arrow');
+        arrowIcon.classList.add('sap-icon--navigation-down-arrow');
+        arrowIcon.classList.add('is-expanded');
+        const seconds = arrowIcon.parentElement.getElementsByTagName('ul');
+        seconds.forEach(second => {
+            second.style.display = 'block';
+        });
+    }
+}

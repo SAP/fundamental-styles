@@ -15,6 +15,7 @@ $has-child-content-arrow-margin: 0.125rem;
   flex-direction: column;
   justify-content: space-between;
   text-shadow: var(--fdVerticalNav_Text_Shadow);
+  box-shadow: var(--sapContent_Shadow0);
   height: 100%;
 
   &__skip-link {
