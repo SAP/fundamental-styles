@@ -7,18 +7,18 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
   
     
   <div
-    class="fd-popover__control"
+    aria-expanded="false"
+    aria-haspopup="true"
+    aria-label="Has popup type dialog Conjoined avatars, 6 avatars displayed, 8 avatars hidden, activate for complete list"
+    class="fd-popover__control fd-avatar-group__popover-control"
+    onclick="onPopoverClick('popover_avatar-group_tztuj');"
+    role="button"
+    tabindex="0"
   >
     
         
     <div
-      aria-expanded="false"
-      aria-haspopup="true"
-      aria-label="Has popup type dialog Conjoined avatars, 6 avatars displayed, 8 avatars hidden, activate for complete list"
       class="fd-avatar-group fd-avatar-group--group-type fd-avatar-group--m"
-      onclick="onPopoverClick('popover_avatar-group_tztuj');"
-      role="button"
-      tabindex="0"
     >
       
             
@@ -200,13 +200,13 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
         
             
       </div>
-        
+      
         
             
       <div
         class="fd-avatar-group__overflow-body"
       >
-         
+        
                 
         <div
           class="fd-avatar-group__item"
@@ -222,7 +222,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                 
         </div>
-                            
+        
                 
         <div
           class="fd-avatar-group__item"
@@ -245,7 +245,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                 
         </div>
-            
+        
                 
         <div
           class="fd-avatar-group__item"
@@ -261,7 +261,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                 
         </div>
-            
+        
                 
         <div
           class="fd-avatar-group__item"
@@ -277,7 +277,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                 
         </div>
-            
+        
                 
         <div
           class="fd-avatar-group__item"
@@ -300,7 +300,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                 
         </div>
-            
+        
                 
         <div
           class="fd-avatar-group__item"
@@ -316,7 +316,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                 
         </div>
-            
+        
                 
         <div
           class="fd-avatar-group__item"
@@ -332,7 +332,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                 
         </div>
-            
+        
                 
         <div
           class="fd-avatar-group__item"
@@ -355,7 +355,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                 
         </div>
-            
+        
                 
         <div
           class="fd-avatar-group__item"
@@ -371,7 +371,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                 
         </div>
-            
+        
                 
         <div
           class="fd-avatar-group__item"
@@ -387,7 +387,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                 
         </div>
-            
+        
                 
         <div
           class="fd-avatar-group__item"
@@ -403,7 +403,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                 
         </div>
-            
+        
                 
         <div
           class="fd-avatar-group__item"
@@ -426,7 +426,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                 
         </div>
-            
+        
                 
         <div
           class="fd-avatar-group__item"
@@ -442,7 +442,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                 
         </div>
-            
+        
                 
         <div
           class="fd-avatar-group__item"
@@ -477,7 +477,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
         
             
       </div>
-       
+      
         
     </div>
     
