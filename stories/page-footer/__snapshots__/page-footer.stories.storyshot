@@ -47,7 +47,7 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
         
 			
         <a
-          class="fd-page-footer__row__item fd-link"
+          class="fd-page-footer__row--item fd-link"
           href="/"
           id="fd-link-19"
           title="Supported Browser"
@@ -57,7 +57,7 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
         
 			
         <a
-          class="fd-page-footer__row__item fd-link"
+          class="fd-page-footer__row--item fd-link"
           href="/"
           id="fd-link-20"
           title="Security Disclosure"
@@ -67,7 +67,7 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
         
 			
         <a
-          class="fd-page-footer__row__item fd-link"
+          class="fd-page-footer__row--item fd-link"
           href="/"
           id="fd-link-21"
           title="Privacy Statement"
@@ -77,7 +77,7 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
         
 			
         <a
-          class="fd-page-footer__row__item fd-link"
+          class="fd-page-footer__row--item fd-link"
           href="/"
           id="fd-link-22"
           title="Cookie Statement"
@@ -87,7 +87,7 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
         
 			
         <a
-          class="fd-page-footer__row__item fd-link"
+          class="fd-page-footer__row--item fd-link"
           href="/"
           id="fd-link-23"
           title="Participant Team"
@@ -164,7 +164,7 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
         
 			
         <a
-          class="fd-page-footer__row__item fd-link"
+          class="fd-page-footer__row--item fd-link"
           href="/"
           id="fd-link-24"
           title="Supported Browser"
@@ -174,7 +174,7 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
         
 			
         <a
-          class="fd-page-footer__row__item fd-link"
+          class="fd-page-footer__row--item fd-link"
           href="/"
           id="fd-link-25"
           title="Security Disclosure"
@@ -184,7 +184,7 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
         
 			
         <a
-          class="fd-page-footer__row__item fd-link"
+          class="fd-page-footer__row--item fd-link"
           href="/"
           id="fd-link-26"
           title="Privacy Statement"
@@ -194,7 +194,7 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
         
 			
         <a
-          class="fd-page-footer__row__item fd-link"
+          class="fd-page-footer__row--item fd-link"
           href="/"
           id="fd-link-27"
           title="Cookie Statement"
@@ -204,7 +204,7 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
         
 			
         <a
-          class="fd-page-footer__row__item fd-link"
+          class="fd-page-footer__row--item fd-link"
           href="/"
           id="fd-link-28"
           title="Participant Team"
@@ -282,7 +282,7 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
         
 			
         <a
-          class="fd-page-footer__row__item fd-link"
+          class="fd-page-footer__row--item fd-link"
           href="/"
           id="fd-link-29"
           title="Supported Browser"
@@ -292,7 +292,7 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
         
 			
         <a
-          class="fd-page-footer__row__item fd-link"
+          class="fd-page-footer__row--item fd-link"
           href="/"
           id="fd-link-30"
           title="Security Disclosure"
@@ -302,7 +302,7 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
         
 			
         <a
-          class="fd-page-footer__row__item fd-link"
+          class="fd-page-footer__row--item fd-link"
           href="/"
           id="fd-link-31"
           title="Privacy Statement"
@@ -312,7 +312,7 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
         
 			
         <a
-          class="fd-page-footer__row__item fd-link"
+          class="fd-page-footer__row--item fd-link"
           href="/"
           id="fd-link-32"
           title="Cookie Statement"
@@ -322,7 +322,7 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
         
 			
         <a
-          class="fd-page-footer__row__item fd-link"
+          class="fd-page-footer__row--item fd-link"
           href="/"
           id="fd-link-33"
           title="Participant Team"
@@ -399,7 +399,7 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
         
 			
         <a
-          class="fd-page-footer__row__item fd-link"
+          class="fd-page-footer__row--item fd-link"
           href="/"
           id="fd-link-34"
           title="Supported Browser"
@@ -409,7 +409,7 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
         
 			
         <a
-          class="fd-page-footer__row__item fd-link"
+          class="fd-page-footer__row--item fd-link"
           href="/"
           id="fd-link-35"
           title="Security Disclosure"
@@ -419,7 +419,7 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
         
 			
         <a
-          class="fd-page-footer__row__item fd-link"
+          class="fd-page-footer__row--item fd-link"
           href="/"
           id="fd-link-36"
           title="Privacy Statement"
@@ -429,7 +429,7 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
         
 			
         <a
-          class="fd-page-footer__row__item fd-link"
+          class="fd-page-footer__row--item fd-link"
           href="/"
           id="fd-link-37"
           title="Cookie Statement"
@@ -439,7 +439,7 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
         
 			
         <a
-          class="fd-page-footer__row__item fd-link"
+          class="fd-page-footer__row--item fd-link"
           href="/"
           id="fd-link-38"
           title="Participant Team"
