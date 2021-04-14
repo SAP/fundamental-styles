@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.16.1
+ * Fundamental Library Styles v0.17.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -101,6 +101,20 @@
   color: var(--sapShell_Active_TextColor,#000);
   background-color: #ec8b46;
   background-color: var(--sapShell_Active_Background,#ec8b46)
+}
+.fd-product-switch .fd-button.fd-product-switch__control.is-focus,
+.fd-product-switch .fd-button.fd-product-switch__control:focus {
+  z-index: 5;
+  outline: .125rem dotted #000;
+  outline: var(--sapContent_FocusWidth,.125rem) dotted var(--sapContent_FocusColor,#000);
+  outline-offset: -.1875rem;
+  outline-color: #000;
+  outline-color: var(--sapContent_ContrastFocusColor,#000)
+}
+.fd-product-switch .fd-button.fd-product-switch__control.is-focus.fd-product-switch--toggled,
+.fd-product-switch .fd-button.fd-product-switch__control:focus.fd-product-switch--toggled {
+  outline-color: #000;
+  outline-color: var(--sapContent_ContrastFocusColor,#000)
 }
 .fd-product-switch__list {
   font-size: .875rem;

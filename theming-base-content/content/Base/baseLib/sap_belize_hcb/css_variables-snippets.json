@@ -184,6 +184,26 @@
     "body": "var(--sapNeutralColor)",
     "description": "Neutral Color (The color for elements showing neutral state) Value: #ffffff #Base, #SemanticColor, #Color"
   },
+  "sapErrorBackground": {
+    "prefix": "sapErrorBackground",
+    "body": "var(--sapErrorBackground)",
+    "description": "Error Background Color (The color for backgrounds showing negative or error state.) Value: #000000 #Base, #SemanticColor, #Color"
+  },
+  "sapWarningBackground": {
+    "prefix": "sapWarningBackground",
+    "body": "var(--sapWarningBackground)",
+    "description": "Warning Background Color (The color for backgrounds showing critical or warning state.) Value: #000000 #Base, #SemanticColor, #Color"
+  },
+  "sapSuccessBackground": {
+    "prefix": "sapSuccessBackground",
+    "body": "var(--sapSuccessBackground)",
+    "description": "Success Background Color (The color for backgrounds showing positive or success state.) Value: #000000 #Base, #SemanticColor, #Color"
+  },
+  "sapInformationBackground": {
+    "prefix": "sapInformationBackground",
+    "body": "var(--sapInformationBackground)",
+    "description": "Information Background Color (The color for backgrounds showing informative or information state.) Value: #000000 #Base, #SemanticColor, #Color"
+  },
   "sapElement_BorderCornerRadius": {
     "prefix": "sapElement_BorderCornerRadius",
     "body": "var(--sapElement_BorderCornerRadius)",

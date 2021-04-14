@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.16.1
+ * Fundamental Library Styles v0.17.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -108,6 +108,11 @@
 }
 .fd-link [class*=sap-icon],
 .fd-link[class*=sap-icon] {
+  color: inherit;
+  background: inherit;
+  font-size: inherit;
+  border-radius: inherit;
+  line-height: 1;
   -webkit-text-decoration: none;
   -webkit-text-decoration: var(--fdLink_Text_Decoration,none);
   text-decoration: none;

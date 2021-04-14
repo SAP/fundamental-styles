@@ -1,0 +1,185 @@
+/*!
+ * Fundamental Library Styles v0.17.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+@charset "UTF-8";
+.fd-margin--tiny {
+  margin: .5rem!important
+}
+.fd-margin--sm {
+  margin: 1rem!important
+}
+.fd-margin--md {
+  margin: 2rem!important
+}
+.fd-margin--lg {
+  margin: 3rem!important
+}
+.fd-margin--none {
+  margin: 0!important
+}
+.fd-margin-top--tiny {
+  margin-top: .5rem!important
+}
+.fd-margin-top--sm {
+  margin-top: 1rem!important
+}
+.fd-margin-top--md {
+  margin-top: 2rem!important
+}
+.fd-margin-top--lg {
+  margin-top: 3rem!important
+}
+.fd-margin-top--none {
+  margin-top: 0!important
+}
+.fd-margin-end--tiny {
+  margin-right: .5rem!important
+}
+.fd-margin-end--tiny[dir=rtl],
+[dir=rtl] .fd-margin-end--tiny {
+  margin-left: .5rem!important;
+  margin-right: 0!important
+}
+.fd-margin-end--sm {
+  margin-right: 1rem!important
+}
+.fd-margin-end--sm[dir=rtl],
+[dir=rtl] .fd-margin-end--sm {
+  margin-left: 1rem!important;
+  margin-right: 0!important
+}
+.fd-margin-end--md {
+  margin-right: 2rem!important
+}
+.fd-margin-end--md[dir=rtl],
+[dir=rtl] .fd-margin-end--md {
+  margin-left: 2rem!important;
+  margin-right: 0!important
+}
+.fd-margin-end--lg {
+  margin-right: 3rem!important
+}
+.fd-margin-end--lg[dir=rtl],
+[dir=rtl] .fd-margin-end--lg {
+  margin-left: 3rem!important;
+  margin-right: 0!important
+}
+.fd-margin-end--none {
+  margin-right: 0
+}
+.fd-margin-end--none[dir=rtl],
+[dir=rtl] .fd-margin-end--none {
+  margin-left: 0!important
+}
+.fd-margin-bottom--tiny {
+  margin-bottom: .5rem!important
+}
+.fd-margin-bottom--sm {
+  margin-bottom: 1rem!important
+}
+.fd-margin-bottom--md {
+  margin-bottom: 2rem!important
+}
+.fd-margin-bottom--lg {
+  margin-bottom: 3rem!important
+}
+.fd-margin-bottom--none {
+  margin-bottom: 0!important
+}
+.fd-margin-begin--tiny {
+  margin-left: .5rem!important
+}
+.fd-margin-begin--tiny[dir=rtl],
+[dir=rtl] .fd-margin-begin--tiny {
+  margin-right: .5rem!important;
+  margin-left: 0!important
+}
+.fd-margin-begin--sm {
+  margin-left: 1rem!important
+}
+.fd-margin-begin--sm[dir=rtl],
+[dir=rtl] .fd-margin-begin--sm {
+  margin-right: 1rem!important;
+  margin-left: 0!important
+}
+.fd-margin-begin--md {
+  margin-left: 2rem!important
+}
+.fd-margin-begin--md[dir=rtl],
+[dir=rtl] .fd-margin-begin--md {
+  margin-right: 2rem!important;
+  margin-left: 0!important
+}
+.fd-margin-begin--lg {
+  margin-left: 3rem!important
+}
+.fd-margin-begin--lg[dir=rtl],
+[dir=rtl] .fd-margin-begin--lg {
+  margin-right: 3rem!important;
+  margin-left: 0!important
+}
+.fd-margin-begin--none {
+  margin-left: 0
+}
+.fd-margin-begin--none[dir=rtl],
+[dir=rtl] .fd-margin-begin--none {
+  margin-right: 0!important
+}
+.fd-margin-top-bottom--tiny {
+  margin-top: .5rem!important;
+  margin-bottom: .5rem!important
+}
+.fd-margin-top-bottom--sm {
+  margin-top: 1rem!important;
+  margin-bottom: 1rem!important
+}
+.fd-margin-top-bottom--md {
+  margin-top: 2rem!important;
+  margin-bottom: 2rem!important
+}
+.fd-margin-top-bottom--lg {
+  margin-top: 3rem!important;
+  margin-bottom: 3rem!important
+}
+.fd-margin-begin-end--tiny {
+  margin-left: .5rem!important;
+  margin-right: .5rem!important
+}
+.fd-margin-begin-end--sm {
+  margin-left: 1rem!important;
+  margin-right: 1rem!important
+}
+.fd-margin-begin-end--md {
+  margin-left: 2rem!important;
+  margin-right: 2rem!important
+}
+.fd-margin-begin-end--lg {
+  margin-left: 3rem!important;
+  margin-right: 3rem!important
+}
+.fd-margin-responsive--sm {
+  margin: 0 0 1rem 0!important
+}
+.fd-margin-responsive--md {
+  margin: 1rem!important
+}
+.fd-margin-responsive--lg {
+  margin: 1rem 2rem!important
+}
+.fd-margin-responsive--xl {
+  margin: 1rem 3rem!important
+}
+.fd-margin-negative-begin-end--tiny {
+  margin: 0 -.5rem!important
+}
+.fd-margin-negative-begin-end--sm {
+  margin: 0 -1rem!important
+}
+.fd-margin-negative-begin-end--md {
+  margin: 0 -2rem!important
+}
+.fd-margin-negative-begin-end--lg {
+  margin: 0 -3rem!important
+}

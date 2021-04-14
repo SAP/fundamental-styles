@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.16.1
+ * Fundamental Library Styles v0.17.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -114,8 +114,8 @@
 }
 .fd-pagination__more::before {
   content: "...";
-  color: #d3d7d9;
-  color: var(--sapContent_LabelColor,#d3d7d9);
+  color: #91c8f6;
+  color: var(--sapLinkColor,#91c8f6);
   font-weight: 700
 }
 .fd-pagination__link {

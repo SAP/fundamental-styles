@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.16.1
+ * Fundamental Library Styles v0.17.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -922,11 +922,6 @@
   height: auto;
   padding: .5rem 1rem
 }
-.fd-list--dropdown .fd-list__secondary {
-  width: auto;
-  max-width: 15rem;
-  display: contents
-}
 .fd-list--multi-input .fd-list__item {
   padding: 0;
   height: auto
@@ -1114,11 +1109,7 @@
 .fd-list--multi-input {
   display: block;
   min-width: 7rem;
-  max-width: 37.5rem
-}
-.fd-list--dropdown.fd-list--mobile,
-.fd-list--multi-input.fd-list--mobile {
-  max-width: 100%
+  max-width: 40rem
 }
 .fd-list--dropdown .fd-list__item,
 .fd-list--multi-input .fd-list__item {
@@ -1149,18 +1140,54 @@
 .fd-list--multi-input .fd-list__title--no-wrap {
   white-space: nowrap
 }
+.fd-list--dropdown .fd-list__secondary,
+.fd-list--multi-input .fd-list__secondary {
+  width: auto;
+  display: block
+}
 .fd-list--dropdown .fd-list__title,
 .fd-list--multi-input .fd-list__title {
-  width: auto;
-  max-width: 22.5rem
+  width: auto
+}
+.fd-list--dropdown .fd-list__title,
+.fd-list--multi-input .fd-list__title {
+  max-width: 24rem
 }
 .fd-list--dropdown .fd-list__title:first-child:last-child,
 .fd-list--multi-input .fd-list__title:first-child:last-child {
-  max-width: 37.5rem
+  max-width: 40rem
+}
+.fd-list--dropdown .fd-list__secondary,
+.fd-list--multi-input .fd-list__secondary {
+  max-width: 16rem
+}
+.fd-list--dropdown.fd-list--mobile,
+.fd-list--multi-input.fd-list--mobile {
+  max-width: 100%
 }
 .fd-list--dropdown .fd-list__icon,
 .fd-list--multi-input .fd-list__icon {
   line-height: 1rem
+}
+.fd-list--dropdown.fd-list--large-dropdown,
+.fd-list--multi-input.fd-list--large-dropdown {
+  max-width: 62rem
+}
+.fd-list--dropdown.fd-list--large-dropdown .fd-list__title,
+.fd-list--multi-input.fd-list--large-dropdown .fd-list__title {
+  max-width: 37.2rem
+}
+.fd-list--dropdown.fd-list--large-dropdown .fd-list__title:first-child:last-child,
+.fd-list--multi-input.fd-list--large-dropdown .fd-list__title:first-child:last-child {
+  max-width: 62rem
+}
+.fd-list--dropdown.fd-list--large-dropdown .fd-list__secondary,
+.fd-list--multi-input.fd-list--large-dropdown .fd-list__secondary {
+  max-width: 24.8rem
+}
+.fd-list--dropdown.fd-list--large-dropdown.fd-list--mobile,
+.fd-list--multi-input.fd-list--large-dropdown.fd-list--mobile {
+  max-width: 100%
 }
 .fd-list--byline .fd-list__item {
   width: 100%;
@@ -1852,6 +1879,11 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   height: 100%
+}
+.fd-object-list__item .fd-list__link.is-active,
+.fd-object-list__item .fd-list__link:active {
+  background: #91c8f6;
+  background: var(--sapList_Active_Background,#91c8f6)
 }
 .fd-object-list__item .fd-list__link.is-active .fd-avatar,
 .fd-object-list__item .fd-list__link.is-active .fd-object-identifier__title,

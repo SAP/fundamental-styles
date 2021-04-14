@@ -1,11 +1,11 @@
 /*!
- * Fundamental Library Styles v0.16.1
+ * Fundamental Library Styles v0.17.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 .sapThemeMetaData-Base-baseLib {
-  background-image: url('data:text/plain;utf-8,{"Path": "Base.baseLib.sap_fiori_3.css_variables", "PathPattern": "/%frameworkId%/%libId%/%themeId%/%fileId%.css", "Extends": ["sap_base_fiori","baseTheme"], "Tags": ["Fiori_3","LightColorScheme"], "FallbackThemeId": "sap_belize", "Version": { "Build":"11.1.26.20210119083812", "Source": "11.1.26", "Engine": "1.51.0"}}')
+  background-image: url('data:text/plain;utf-8,{"Path": "Base.baseLib.sap_fiori_3.css_variables", "PathPattern": "/%frameworkId%/%libId%/%themeId%/%fileId%.css", "Extends": ["sap_base_fiori","baseTheme"], "Tags": ["Fiori_3","LightColorScheme"], "FallbackThemeId": "sap_belize", "Version": { "Build":"11.1.28.20210316104033", "Source": "11.1.28", "Engine": "1.51.0"}}')
 }
 :root {
   --sapBrandColor: #0a6ed1;
@@ -526,6 +526,12 @@
   text-decoration: inherit;
   text-transform: none;
   text-rendering: optimizeLegibility
+}
+[class*=sap-icon-businessSuiteInAppSymbols]::before {
+  font-family: BusinessSuiteInAppSymbols
+}
+[class*=sap-icon-TNT]::before {
+  font-family: SAP-icons-TNT
 }
 .sap-icon--accidental-leave::before {
   content: ""
@@ -2497,6 +2503,1092 @@
 }
 .sap-icon--translate::before {
   content: ""
+}
+.sap-icon--clear-all::before {
+  content: ""
+}
+.sap-icon--command-line-interfaces::before {
+  content: ""
+}
+.sap-icon--icon-sum::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--heart::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--quarter::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--year::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--equalizer::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--component::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--component-private::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--raw-material::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--sms::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--add-note::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--change-time-horizon::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--table-chart-customization::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--delegated-important-task::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--forklift::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--coins::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--filter-menu::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--target-to-date::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--program::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--phase::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--checklist::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--mirrored-task::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--sub-project::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--checklist-item::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--adhoc-analysis::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--change-analysis::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--review-demands::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--project-definition::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--data-access::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--define-shortage::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--review-supplies::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--change-log::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--priority-1::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--priority-2::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--jam::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--milestone::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--bulleting-with-numbers::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--decrease-indent::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--increase-indent::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--bold::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--italic::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--strike-through::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--underline::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--save-as::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--segmentation::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--context-menu::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--snapshot::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--subtraction-b-a::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--subtraction-a-b::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--intersection::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--union::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--top::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--bottom::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--page-up::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--page-down::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--create-dashboard::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--xcelsius-file::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--open-folder::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--neutral::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--split-segmentation::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--manage-budget::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--blocked::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--pipette::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--top-recipe::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--recipe::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--ingredients::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--multiple-charts::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--descending-bars::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--descending-stacked-bars::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--scatter-plot::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--spill::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--fire::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--stratification::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--relationship::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--margin-decomposition::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--control-group::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--comparison-chart::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--responsible-area::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--increase::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--decrease::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--current-stock::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--expedite::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--postpone::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--approved::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--partially-delivered::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--line-bar-chart::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--expand-all::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--submission::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--change-request::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--column-unselected::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--column-selected::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--row-unselected::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--row-selected::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--stock-requirements::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--gender-male-and-female::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--marital-status::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--birthday::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--classification::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--marked-for-deletion::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--bullet-chart::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--remove-filter::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--bank-account::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--savings-account::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--debit-card::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--vip-customer::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--undesirable-customer::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--answered-change-request::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--collected-change-request::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--draw-freehand::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--draw-circle::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--completed::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--answered::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--traffic-cone::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--traffic-lights::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--container::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--container-loading::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--traffic-jam::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--products::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--sidepanel::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--split-screen::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--truck-driver::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--keep-segment::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--exclude-segment::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--separate-segments::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--distribute-segments::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--next-open-item::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--where-used::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--outbound-delivery::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--outbound-delivery-inactive::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--outbound-delivery-active::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--target::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--source::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--material::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--due-date::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--overdue::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--set-as-default::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--face-very-bad::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--face-bad::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--face-skeptical::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--face-neutral::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--face-astonished::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--face-happy::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--face-very-happy::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--face-awful::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--face-devastated::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--face-okey-dokey::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--alarm::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--activate::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--segment-preview-reference-objects::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--radius::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--polygone-black::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--polygone-white::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--ploygone::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--no-filter::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--grip::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--water::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--gas::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--liquid::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--time-deposit::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--early-widthdrawal-for-time-deposits::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--truck-load::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--truck-unload::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--truck-load-unload::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--pharmacy::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--medicine-syrup::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--reminder::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--medicine-pill::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--medicine-ointment::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--medicine-drops::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--blood-test::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--temperature::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--medicine-inhaler::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--foot-steps::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--weight::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--health-tracking::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--blood-pressure::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--immunization::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--allergies::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--rescheduling2::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--resequencing2::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--no-time-change::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--time-change::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--smart-matcher::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--legal-section::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--causes::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--effects::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--shared-by-me::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--shared-with-me::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--alert-groups::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--function-alert::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--function-hierarchy::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--rfid::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--input::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--software-item::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--product-view::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--software-item-variant::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--lighthouse::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--demand-unit::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--fma-management::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--fma-validation::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--fma-analytics::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--class::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--overview::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--production::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--subclass::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--variant-configuration::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--sum::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--empty-trailer::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--door::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--loading-point::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--stock-warehouse::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--gate::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--timeseries-waterfall-chart::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--stages-warning::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--empty-warning::before {
+  content: ""
+}
+.sap-icon-TNT--technicalsystem::before {
+  content: ""
+}
+.sap-icon-TNT--systemjava::before {
+  content: ""
+}
+.sap-icon-TNT--systemabap::before {
+  content: ""
+}
+.sap-icon-TNT--systemrecommendations::before {
+  content: ""
+}
+.sap-icon-TNT--system::before {
+  content: ""
+}
+.sap-icon-TNT--systemtrex::before {
+  content: ""
+}
+.sap-icon-TNT--systemtracks::before {
+  content: ""
+}
+.sap-icon-TNT--technicalscenario::before {
+  content: ""
+}
+.sap-icon-TNT--technicalinstance::before {
+  content: ""
+}
+.sap-icon-TNT--throughput-backlog::before {
+  content: ""
+}
+.sap-icon-TNT--batch-processing::before {
+  content: ""
+}
+.sap-icon-TNT--database-consistency::before {
+  content: ""
+}
+.sap-icon-TNT--intermediate-message::before {
+  content: ""
+}
+.sap-icon-TNT--exceptions::before {
+  content: ""
+}
+.sap-icon-TNT--system-HANA::before {
+  content: ""
+}
+.sap-icon-TNT--python::before {
+  content: ""
+}
+.sap-icon-TNT--raise-fault::before {
+  content: ""
+}
+.sap-icon-TNT--code1::before {
+  content: ""
+}
+.sap-icon-TNT--code2::before {
+  content: ""
+}
+.sap-icon-TNT--spike-arrest::before {
+  content: ""
+}
+.sap-icon-TNT--verify-API::before {
+  content: ""
+}
+.sap-icon-TNT--user::before {
+  content: ""
+}
+.sap-icon-TNT--note::before {
+  content: ""
+}
+.sap-icon-TNT--throwing-message::before {
+  content: ""
+}
+.sap-icon-TNT--catching-message::before {
+  content: ""
+}
+.sap-icon-TNT--start-event::before {
+  content: ""
+}
+.sap-icon-TNT--end-event::before {
+  content: ""
+}
+.sap-icon-TNT--gateway::before {
+  content: ""
+}
+.sap-icon-TNT--sub-process-marker::before {
+  content: ""
+}
+.sap-icon-TNT--ad-hoc-marker::before {
+  content: ""
+}
+.sap-icon-TNT--manual-task::before {
+  content: ""
+}
+.sap-icon-TNT--send-task::before {
+  content: ""
+}
+.sap-icon-TNT--receive-task::before {
+  content: ""
+}
+.sap-icon-TNT--script-task::before {
+  content: ""
+}
+.sap-icon-TNT--marquee::before {
+  content: ""
+}
+.sap-icon-TNT--data-input-arrow::before {
+  content: ""
+}
+.sap-icon-TNT--data-output-arrow::before {
+  content: ""
+}
+.sap-icon-TNT--more::before {
+  content: ""
+}
+.sap-icon-TNT--pattern::before {
+  content: ""
+}
+.sap-icon-TNT--task::before {
+  content: ""
+}
+.sap-icon-TNT--arrow::before {
+  content: ""
+}
+.sap-icon-TNT--data::before {
+  content: ""
+}
+.sap-icon-TNT--data-store::before {
+  content: ""
+}
+.sap-icon-TNT--pool::before {
+  content: ""
+}
+.sap-icon-TNT--swimlane::before {
+  content: ""
+}
+.sap-icon-TNT--select::before {
+  content: ""
+}
+.sap-icon-TNT--cursor::before {
+  content: ""
+}
+.sap-icon-TNT--api::before {
+  content: ""
+}
+.sap-icon-TNT--o-data::before {
+  content: ""
+}
+.sap-icon-TNT--javascript::before {
+  content: ""
+}
+.sap-icon-TNT--value-mapping::before {
+  content: ""
+}
+.sap-icon-TNT--terminate-end-event::before {
+  content: ""
+}
+.sap-icon-TNT--parallel-gateway::before {
+  content: ""
+}
+.sap-icon-TNT--exclusive-gateway::before {
+  content: ""
+}
+.sap-icon-TNT--service-task::before {
+  content: ""
+}
+.sap-icon-TNT--workflow-editor::before {
+  content: ""
+}
+.sap-icon-TNT--boundary-interrupting::before {
+  content: ""
+}
+.sap-icon-TNT--boundary-non-interrupting::before {
+  content: ""
+}
+.sap-icon-TNT--block::before {
+  content: ""
+}
+.sap-icon-TNT--constrain-block::before {
+  content: ""
+}
+.sap-icon-TNT--actor::before {
+  content: ""
+}
+.sap-icon-TNT--instance-specification::before {
+  content: ""
+}
+.sap-icon-TNT--value-type::before {
+  content: ""
+}
+.sap-icon-TNT--interface-block::before {
+  content: ""
+}
+.sap-icon-TNT--unit::before {
+  content: ""
+}
+.sap-icon-TNT--signal::before {
+  content: ""
+}
+.sap-icon-TNT--quantity-kind::before {
+  content: ""
+}
+.sap-icon-TNT--item-flow::before {
+  content: ""
+}
+.sap-icon-TNT--dependency::before {
+  content: ""
+}
+.sap-icon-TNT--generalization::before {
+  content: ""
+}
+.sap-icon-TNT--aggregation::before {
+  content: ""
+}
+.sap-icon-TNT--composition::before {
+  content: ""
+}
+.sap-icon-TNT--association::before {
+  content: ""
+}
+.sap-icon-TNT--port::before {
+  content: ""
+}
+.sap-icon-TNT--proxy-port::before {
+  content: ""
+}
+.sap-icon-TNT--full-port::before {
+  content: ""
+}
+.sap-icon-TNT--operations::before {
+  content: ""
+}
+.sap-icon-TNT--constrains::before {
+  content: ""
+}
+.sap-icon-TNT--receptions::before {
+  content: ""
+}
+.sap-icon-TNT--references::before {
+  content: ""
+}
+.sap-icon-TNT--parts::before {
+  content: ""
+}
+.sap-icon-TNT--flow::before {
+  content: ""
+}
+.sap-icon-TNT--values::before {
+  content: ""
+}
+.sap-icon-TNT--bill-of-material::before {
+  content: ""
+}
+.sap-icon-TNT--document-info-recording::before {
+  content: ""
+}
+.sap-icon-TNT--use-case-diagram::before {
+  content: ""
+}
+.sap-icon-TNT--bdd-diagram::before {
+  content: ""
+}
+.sap-icon-TNT--requirement-diagram::before {
+  content: ""
+}
+.sap-icon-TNT--package-diagram::before {
+  content: ""
+}
+.sap-icon-TNT--internal-block-diagram::before {
+  content: ""
+}
+.sap-icon-TNT--requirement-containment-relationship::before {
+  content: ""
+}
+.sap-icon-TNT--use-case::before {
+  content: ""
+}
+.sap-icon-TNT--use-case-extension-point::before {
+  content: ""
+}
+.sap-icon-TNT--communication-path::before {
+  content: ""
+}
+.sap-icon-TNT--note-connection::before {
+  content: ""
+}
+.sap-icon-TNT--subject::before {
+  content: ""
+}
+.sap-icon-TNT--auto-layout::before {
+  content: ""
+}
+.sap-icon-TNT--required-interface::before {
+  content: ""
+}
+.sap-icon-TNT--provided-interface::before {
+  content: ""
+}
+.sap-icon-TNT--sub-content::before {
+  content: ""
+}
+.sap-icon-TNT--connector::before {
+  content: ""
+}
+.sap-icon-TNT--local-process-call::before {
+  content: ""
+}
+.sap-icon-TNT--aggregator::before {
+  content: ""
+}
+.sap-icon-TNT--splitter::before {
+  content: ""
+}
+.sap-icon-TNT--converter::before {
+  content: ""
+}
+.sap-icon-TNT--content-modifier::before {
+  content: ""
+}
+.sap-icon-TNT--message-start-event::before {
+  content: ""
+}
+.sap-icon-TNT--message-end-event::before {
+  content: ""
+}
+.sap-icon-TNT--escalation-end-event::before {
+  content: ""
+}
+.sap-icon-TNT--start-timer-event::before {
+  content: ""
+}
+.sap-icon-TNT--error-start-event::before {
+  content: ""
+}
+.sap-icon-TNT--error-end-event::before {
+  content: ""
+}
+.sap-icon-TNT--content-enricher::before {
+  content: ""
+}
+.sap-icon-TNT--realization::before {
+  content: ""
+}
+.sap-icon-TNT--interface::before {
+  content: ""
+}
+.sap-icon-TNT--usiness-capability::before {
+  content: ""
+}
+.sap-icon-TNT--progress-group::before {
+  content: ""
+}
+.sap-icon-TNT--value-stream::before {
+  content: ""
+}
+.sap-icon-TNT--value-flow::before {
+  content: ""
+}
+.sap-icon-TNT--application::before {
+  content: ""
+}
+.sap-icon-TNT--etl-job::before {
+  content: ""
+}
+.sap-icon-TNT--business-service::before {
+  content: ""
+}
+.sap-icon-TNT--application-service::before {
+  content: ""
+}
+.sap-icon-TNT--network-node::before {
+  content: ""
+}
+.sap-icon-TNT--network::before {
+  content: ""
+}
+.sap-icon-TNT--deployment-instance::before {
+  content: ""
+}
+.sap-icon-TNT--intranet::before {
+  content: ""
+}
+.sap-icon-TNT--mobile-network::before {
+  content: ""
+}
+.sap-icon-TNT--private-cloud::before {
+  content: ""
+}
+.sap-icon-TNT--antenna::before {
+  content: ""
+}
+.sap-icon-TNT--firewall::before {
+  content: ""
+}
+.sap-icon-TNT--hub::before {
+  content: ""
+}
+.sap-icon-TNT--modem::before {
+  content: ""
+}
+.sap-icon-TNT--repeater::before {
+  content: ""
+}
+.sap-icon-TNT--router::before {
+  content: ""
+}
+.sap-icon-TNT--switch::before {
+  content: ""
+}
+.sap-icon-TNT--satellite::before {
+  content: ""
+}
+.sap-icon-TNT--system-2::before {
+  content: ""
+}
+.sap-icon-TNT--status-activating::before {
+  content: ""
+}
+.sap-icon-TNT--status-suspended::before {
+  content: ""
+}
+.sap-icon-TNT--status-suspending::before {
+  content: ""
+}
+.sap-icon-TNT--status-terminated::before {
+  content: ""
+}
+.sap-icon-TNT--status-terminating::before {
+  content: ""
+}
+.sap-icon-TNT--solution-not-licensed::before {
+  content: ""
+}
+.sap-icon-TNT--clear-all-mapping::before {
+  content: ""
+}
+.sap-icon-TNT--map-all-fields::before {
+  content: ""
 }
 /*!
 .fd-shell+(--fixed)
@@ -6823,6 +7915,11 @@
   box-sizing: inherit;
   font-size: inherit
 }
+.fd-card__analytics-content[dir=rtl],
+[dir=rtl] .fd-card__analytics-content {
+  direction: ltr;
+  text-align: right
+}
 .fd-card__second-subtitle {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -7087,11 +8184,46 @@
   text-overflow: ellipsis;
   max-height: 2.8rem
 }
+.fd-card--table {
+  border: hidden
+}
 .fd-card--table.fd-card--compact .fd-card__content {
   padding-bottom: .5rem
 }
 .fd-card--object .fd-card__content {
   padding: 1rem
+}
+.fd-card__loader {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 5rem
+}
+.fd-card__loader::after,
+.fd-card__loader::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
 }
 .fd-carousel {
   font-size: .875rem;
@@ -8463,20 +9595,6 @@
   border-bottom: var(--fdDynamicPage_Hover_Border_Bottom,none);
   cursor: pointer
 }
-.fd-dynamic-page__title-area--sm {
-  padding: .5rem .5rem
-}
-.fd-dynamic-page__title-area--lg,
-.fd-dynamic-page__title-area--md {
-  padding: .5rem 2rem
-}
-.fd-dynamic-page__title-area--xl {
-  padding: .5rem 3rem
-}
-.fd-dynamic-page__title-area--transparent-bg {
-  background: transparent;
-  background: var(--fdDynamicPage_Title_Header_Transparent_Background,transparent)
-}
 .fd-dynamic-page__title-area--collapsed {
   padding-bottom: 1rem
 }
@@ -8537,9 +9655,9 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
 }
 .fd-dynamic-page__title-container::after,
 .fd-dynamic-page__title-container::before {
@@ -8569,9 +9687,6 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
-}
-.fd-dynamic-page__breadcrumb--sm {
-  padding: 0
 }
 .fd-dynamic-page__breadcrumb-title-container {
   font-size: .875rem;
@@ -8649,7 +9764,6 @@
   color: var(--sapGroup_TitleTextColor,#32363a);
   font-size: 1.25rem;
   font-size: var(--sapFontHeader3Size,1.25rem);
-  padding: .3125rem 0 0 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis
@@ -8659,9 +9773,6 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
-}
-.fd-dynamic-page__title--md {
-  padding: .6875rem 0 0 0
 }
 .fd-dynamic-page__title .fd-link {
   white-space: nowrap;
@@ -8690,6 +9801,9 @@
   padding: 0;
   margin: 0;
   border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: #6a6d70;
   color: var(--sapContent_LabelColor,#6a6d70);
   font-size: .875rem;
@@ -8733,7 +9847,7 @@
 [dir=rtl] .fd-dynamic-page__title-content {
   padding: 0 1rem 0 0
 }
-.fd-dynamic-page__actions-container {
+.fd-dynamic-page__title-subtitle-container {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
   line-height: 1.4;
@@ -8755,27 +9869,15 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
 }
-.fd-dynamic-page__actions-container::after,
-.fd-dynamic-page__actions-container::before {
+.fd-dynamic-page__title-subtitle-container::after,
+.fd-dynamic-page__title-subtitle-container::before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
-}
-.fd-dynamic-page__actions-container--md {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row;
-  flex-flow: row
-}
-.fd-dynamic-page__actions-container--md .fd-dynamic-page__toolbar-container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap
 }
 .fd-dynamic-page__toolbar-container {
   font-size: .875rem;
@@ -8797,7 +9899,8 @@
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center
+  align-items: center;
+  margin-left: auto
 }
 .fd-dynamic-page__toolbar-container::after,
 .fd-dynamic-page__toolbar-container::before {
@@ -8805,142 +9908,30 @@
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-dynamic-page__toolbar {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
-  font-weight: 400;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+.fd-dynamic-page__toolbar-container[dir=rtl],
+[dir=rtl] .fd-dynamic-page__toolbar-container {
+  margin-right: auto;
+  margin-left: 0
+}
+.fd-dynamic-page .fd-dynamic-page__toolbar {
   padding: 0;
   margin: 0;
-  border: 0;
-  padding: 0 0 0 1rem;
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  order: 1;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end
+  padding-left: 1rem
 }
-.fd-dynamic-page__toolbar::after,
-.fd-dynamic-page__toolbar::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+.fd-dynamic-page .fd-dynamic-page__toolbar[dir=rtl],
+[dir=rtl] .fd-dynamic-page .fd-dynamic-page__toolbar {
+  padding-left: 0;
+  padding-right: 1rem
 }
-.fd-dynamic-page__toolbar[dir=rtl],
-[dir=rtl] .fd-dynamic-page__toolbar {
-  padding: 0 1rem 0 0;
-  margin-left: 0;
-  margin-right: auto
-}
-.fd-dynamic-page__toolbar--sm {
-  margin-left: auto;
-  padding: 0;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-item-align: center;
-  align-self: center
-}
-.fd-dynamic-page__toolbar--sm[dir=rtl],
-[dir=rtl] .fd-dynamic-page__toolbar--sm {
+.fd-dynamic-page .fd-dynamic-page__toolbar--actions,
+.fd-dynamic-page .fd-dynamic-page__toolbar--content {
   padding: 0
 }
-.fd-dynamic-page__toolbar--md {
-  -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
-  order: 2;
-  padding: 0;
-  -webkit-box-flex: 2;
-  -ms-flex: 2;
-  flex: 2
-}
-.fd-dynamic-page__toolbar--md[dir=rtl],
-[dir=rtl] .fd-dynamic-page__toolbar--md {
+.fd-dynamic-page .fd-dynamic-page__toolbar--actions[dir=rtl],
+.fd-dynamic-page .fd-dynamic-page__toolbar--content[dir=rtl],
+[dir=rtl] .fd-dynamic-page .fd-dynamic-page__toolbar--actions,
+[dir=rtl] .fd-dynamic-page .fd-dynamic-page__toolbar--content {
   padding: 0
-}
-.fd-dynamic-page__toolbar-actions {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
-  font-weight: 400;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  padding: 0;
-  -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
-  order: 2;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline
-}
-.fd-dynamic-page__toolbar-actions::after,
-.fd-dynamic-page__toolbar-actions::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
-}
-.fd-dynamic-page__toolbar-actions--sm {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center
-}
-.fd-dynamic-page__toolbar-actions--md {
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  order: 1
-}
-.fd-dynamic-page__title-content-toolbar {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
-  font-weight: 400;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -ms-flex-item-align: center;
-  align-self: center;
-  padding: 0
-}
-.fd-dynamic-page__title-content-toolbar::after,
-.fd-dynamic-page__title-content-toolbar::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
 }
 .fd-dynamic-page__summarized-title-area {
   font-size: .875rem;
@@ -8991,16 +9982,6 @@
   outline-color: var(--sapContent_FocusColor,#000);
   outline-style: dotted;
   outline-style: var(--sapContent_FocusStyle,dotted)
-}
-.fd-dynamic-page__summarized-title-area--sm {
-  padding: .5rem 1rem
-}
-.fd-dynamic-page__summarized-title-area--lg,
-.fd-dynamic-page__summarized-title-area--md {
-  padding: 2rem 1rem
-}
-.fd-dynamic-page__summarized-title-area--xl {
-  padding: 3rem 1rem
 }
 .fd-dynamic-page__summarized-title-area--no-shadow {
   -webkit-box-shadow: none;
@@ -9087,59 +10068,17 @@
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-dynamic-page__collapsible-header--transparent-bg {
-  background-color: transparent;
-  background-color: var(--fdDynamicPage_Title_Header_Transparent_Background,transparent)
-}
-.fd-dynamic-page__collapsible-header--sm {
-  padding: 1rem .5rem
-}
-.fd-dynamic-page__collapsible-header--lg,
-.fd-dynamic-page__collapsible-header--md {
-  padding: 1rem 2rem
-}
-.fd-dynamic-page__collapsible-header--xl {
-  padding: 1rem 3rem
-}
 .fd-dynamic-page__collapsible-header[aria-hidden=true] {
   display: none
 }
-.fd-dynamic-page__tabs {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
-  font-weight: 400;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+.fd-dynamic-page .fd-dynamic-page__tabs {
   padding: 0;
-  margin: 0;
-  border: 0
+  margin: 0
 }
-.fd-dynamic-page__tabs::after,
-.fd-dynamic-page__tabs::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
-}
-.fd-dynamic-page__tabs--overflow {
+.fd-dynamic-page .fd-dynamic-page__tabs--overflow {
   overflow: hidden
 }
-.fd-dynamic-page__tabs--sm {
-  padding: 0 .5rem
-}
-.fd-dynamic-page__tabs--lg,
-.fd-dynamic-page__tabs--md {
-  padding: 0 2rem
-}
-.fd-dynamic-page__tabs--xl {
-  padding: 0 3rem
-}
-.fd-dynamic-page__tabs--add-shadow {
+.fd-dynamic-page .fd-dynamic-page__tabs--add-shadow {
   -webkit-box-shadow: 0 0 0.25rem 0 rgba(0,0,0,0.15),inset 0 -0.0625rem 0 0 #d9d9d9;
   -webkit-box-shadow: var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9);
   box-shadow: 0 0 0.25rem 0 rgba(0,0,0,0.15),inset 0 -0.0625rem 0 0 #d9d9d9;
@@ -9277,6 +10216,11 @@
   margin-right: 0;
   margin-left: 0
 }
+.fd-dynamic-page__collapsible-header-visibility-container--button-group .fd-dynamic-page__collapse-button.fd-button[aria-hidden=true],
+.fd-dynamic-page__collapsible-header-visibility-container--button-group .fd-dynamic-page__expand-button.fd-button[aria-hidden=true],
+.fd-dynamic-page__collapsible-header-visibility-container--button-group .fd-dynamic-page__pin-button.fd-button[aria-hidden=true] {
+  display: none
+}
 .fd-dynamic-page__collapsible-header-visibility-container[aria-hidden=true] {
   display: none
 }
@@ -9299,7 +10243,6 @@
   padding: 0;
   margin: 0;
   border: 0;
-  padding: 1rem 0 0 0;
   background-color: #f7f7f7;
   background-color: var(--sapBackgroundColor,#f7f7f7);
   overflow-y: auto
@@ -9310,30 +10253,285 @@
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-dynamic-page__content--sm {
-  padding: 1rem .5rem
-}
-.fd-dynamic-page__content--lg,
-.fd-dynamic-page__content--md {
-  padding: 1rem 2rem
-}
-.fd-dynamic-page__content--xl {
-  padding: 1rem 3rem
-}
-.fd-dynamic-page__content--list-bg {
-  background-color: var(--sapGroup_ContentBackground,#fff);
-  background-color: var(--fdDynamicPage_Content_List_Background,var(--sapGroup_ContentBackground,#fff))
-}
-.fd-dynamic-page__content--transparent-bg {
-  background-color: transparent;
-  background-color: var(--fdDynamicPage_Content_Transparent_Background,transparent)
-}
 .fd-dynamic-page__footer {
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
   margin: 0 .5rem .5rem
+}
+.fd-dynamic-page--sm .fd-dynamic-page__title-area {
+  padding: .5rem .5rem
+}
+.fd-dynamic-page--sm .fd-dynamic-page__title-area--collapsed {
+  padding-bottom: 1rem
+}
+.fd-dynamic-page--sm .fd-dynamic-page__collapsible-header,
+.fd-dynamic-page--sm .fd-dynamic-page__content {
+  padding: 1rem .5rem
+}
+.fd-dynamic-page--sm .fd-dynamic-page__tabs {
+  padding: 0 .5rem
+}
+.fd-dynamic-page--sm .fd-dynamic-page__summarized-title-area {
+  padding: 1rem 1rem
+}
+.fd-dynamic-page--sm .fd-dynamic-page__breadcrumb {
+  padding: 0
+}
+.fd-dynamic-page--sm .fd-dynamic-page__title-container {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fd-dynamic-page--sm .fd-dynamic-page__toolbar {
+  padding-left: 1rem;
+  margin-left: auto
+}
+.fd-dynamic-page--sm .fd-dynamic-page__toolbar[dir=rtl],
+[dir=rtl] .fd-dynamic-page--sm .fd-dynamic-page__toolbar {
+  margin-left: 0;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 1rem
+}
+.fd-dynamic-page--sm .fd-dynamic-page__toolbar--content {
+  margin-left: 0
+}
+.fd-dynamic-page--sm .fd-dynamic-page__toolbar--content[dir=rtl],
+[dir=rtl] .fd-dynamic-page--sm .fd-dynamic-page__toolbar--content {
+  margin-right: 0
+}
+.fd-dynamic-page--lg .fd-dynamic-page__title-area,
+.fd-dynamic-page--md .fd-dynamic-page__title-area {
+  padding: .5rem 2rem
+}
+.fd-dynamic-page--lg .fd-dynamic-page__title-area--collapsed,
+.fd-dynamic-page--md .fd-dynamic-page__title-area--collapsed {
+  padding-bottom: 1rem
+}
+.fd-dynamic-page--lg .fd-dynamic-page__collapsible-header,
+.fd-dynamic-page--lg .fd-dynamic-page__content,
+.fd-dynamic-page--md .fd-dynamic-page__collapsible-header,
+.fd-dynamic-page--md .fd-dynamic-page__content {
+  padding: 1rem 2rem
+}
+.fd-dynamic-page--lg .fd-dynamic-page__tabs,
+.fd-dynamic-page--md .fd-dynamic-page__tabs {
+  padding: 0 2rem
+}
+.fd-dynamic-page--lg .fd-dynamic-page__summarized-title-area,
+.fd-dynamic-page--md .fd-dynamic-page__summarized-title-area {
+  padding: 1rem 1rem
+}
+.fd-dynamic-page--xl .fd-dynamic-page__title-area {
+  padding: .5rem 3rem
+}
+.fd-dynamic-page--xl .fd-dynamic-page__title-area--collapsed {
+  padding-bottom: 1rem
+}
+.fd-dynamic-page--xl .fd-dynamic-page__collapsible-header,
+.fd-dynamic-page--xl .fd-dynamic-page__content {
+  padding: 1rem 3rem
+}
+.fd-dynamic-page--xl .fd-dynamic-page__tabs {
+  padding: 0 3rem
+}
+.fd-dynamic-page--xl .fd-dynamic-page__summarized-title-area {
+  padding: 1rem 1rem
+}
+.fd-dynamic-page--md .fd-dynamic-page__breadcrumb-container {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end
+}
+.fd-dynamic-page--md .fd-dynamic-page__toolbar {
+  padding: 0
+}
+.fd-dynamic-page--list-bg .fd-dynamic-page__content {
+  background-color: var(--sapGroup_ContentBackground,#fff);
+  background-color: var(--fdDynamicPage_Content_List_Background,var(--sapGroup_ContentBackground,#fff))
+}
+.fd-dynamic-page--transparent-bg .fd-dynamic-page__content {
+  background-color: transparent;
+  background-color: var(--fdDynamicPage_Content_Transparent_Background,transparent)
+}
+.fd-dynamic-page--transparent-bg .fd-dynamic-page__title-area {
+  background: transparent;
+  background: var(--fdDynamicPage_Title_Header_Transparent_Background,transparent)
+}
+.fd-dynamic-page--transparent-bg .fd-dynamic-page__collapsible-header {
+  background-color: transparent;
+  background-color: var(--fdDynamicPage_Title_Header_Transparent_Background,transparent)
+}
+.fd-facet {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0
+}
+.fd-facet::after,
+.fd-facet::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-facet-group {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start
+}
+.fd-facet-group::after,
+.fd-facet-group::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-facet--image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row
+}
+.fd-facet--image-header-title {
+  -ms-flex-item-align: end;
+  align-self: flex-end
+}
+.fd-facet--form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+.fd-facet--key-value .fd-facet__object-status .fd-facet__object-status-text {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif)
+}
+.fd-facet--rating-indicator {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+.fd-facet--rating-indicator .fd-facet__container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+.fd-facet--rating-indicator .fd-facet__rating-container {
+  -ms-flex-item-align: start;
+  align-self: flex-start
+}
+.fd-facet--rating-indicator .fd-facet__rating-dynamic-text {
+  -ms-flex-item-align: end;
+  align-self: flex-end
+}
+.fd-facet__container {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row
+}
+.fd-facet__container::after,
+.fd-facet__container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-facet__form-value {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  font-weight: 400;
+  color: #32363a;
+  color: var(--sapGroup_TitleTextColor,#32363a)
+}
+.fd-facet__form-value::after,
+.fd-facet__form-value::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
 }
 /*!
 .fd-form-group
@@ -14318,6 +15516,11 @@
 }
 .fd-link [class*=sap-icon],
 .fd-link[class*=sap-icon] {
+  color: inherit;
+  background: inherit;
+  font-size: inherit;
+  border-radius: inherit;
+  line-height: 1;
   -webkit-text-decoration: none;
   -webkit-text-decoration: var(--fdLink_Text_Decoration,none);
   text-decoration: none;
@@ -15960,11 +17163,6 @@
   height: auto;
   padding: .5rem 1rem
 }
-.fd-list--dropdown .fd-list__secondary {
-  width: auto;
-  max-width: 15rem;
-  display: contents
-}
 .fd-list--multi-input .fd-list__item {
   padding: 0;
   height: auto
@@ -16152,11 +17350,7 @@
 .fd-list--multi-input {
   display: block;
   min-width: 7rem;
-  max-width: 37.5rem
-}
-.fd-list--dropdown.fd-list--mobile,
-.fd-list--multi-input.fd-list--mobile {
-  max-width: 100%
+  max-width: 40rem
 }
 .fd-list--dropdown .fd-list__item,
 .fd-list--multi-input .fd-list__item {
@@ -16187,18 +17381,54 @@
 .fd-list--multi-input .fd-list__title--no-wrap {
   white-space: nowrap
 }
+.fd-list--dropdown .fd-list__secondary,
+.fd-list--multi-input .fd-list__secondary {
+  width: auto;
+  display: block
+}
 .fd-list--dropdown .fd-list__title,
 .fd-list--multi-input .fd-list__title {
-  width: auto;
-  max-width: 22.5rem
+  width: auto
+}
+.fd-list--dropdown .fd-list__title,
+.fd-list--multi-input .fd-list__title {
+  max-width: 24rem
 }
 .fd-list--dropdown .fd-list__title:first-child:last-child,
 .fd-list--multi-input .fd-list__title:first-child:last-child {
-  max-width: 37.5rem
+  max-width: 40rem
+}
+.fd-list--dropdown .fd-list__secondary,
+.fd-list--multi-input .fd-list__secondary {
+  max-width: 16rem
+}
+.fd-list--dropdown.fd-list--mobile,
+.fd-list--multi-input.fd-list--mobile {
+  max-width: 100%
 }
 .fd-list--dropdown .fd-list__icon,
 .fd-list--multi-input .fd-list__icon {
   line-height: 1rem
+}
+.fd-list--dropdown.fd-list--large-dropdown,
+.fd-list--multi-input.fd-list--large-dropdown {
+  max-width: 62rem
+}
+.fd-list--dropdown.fd-list--large-dropdown .fd-list__title,
+.fd-list--multi-input.fd-list--large-dropdown .fd-list__title {
+  max-width: 37.2rem
+}
+.fd-list--dropdown.fd-list--large-dropdown .fd-list__title:first-child:last-child,
+.fd-list--multi-input.fd-list--large-dropdown .fd-list__title:first-child:last-child {
+  max-width: 62rem
+}
+.fd-list--dropdown.fd-list--large-dropdown .fd-list__secondary,
+.fd-list--multi-input.fd-list--large-dropdown .fd-list__secondary {
+  max-width: 24.8rem
+}
+.fd-list--dropdown.fd-list--large-dropdown.fd-list--mobile,
+.fd-list--multi-input.fd-list--large-dropdown.fd-list--mobile {
+  max-width: 100%
 }
 .fd-list--byline .fd-list__item {
   width: 100%;
@@ -16886,6 +18116,185 @@
   margin-left: 0;
   margin-right: 1rem
 }
+.fd-margin--tiny {
+  margin: .5rem!important
+}
+.fd-margin--sm {
+  margin: 1rem!important
+}
+.fd-margin--md {
+  margin: 2rem!important
+}
+.fd-margin--lg {
+  margin: 3rem!important
+}
+.fd-margin--none {
+  margin: 0!important
+}
+.fd-margin-top--tiny {
+  margin-top: .5rem!important
+}
+.fd-margin-top--sm {
+  margin-top: 1rem!important
+}
+.fd-margin-top--md {
+  margin-top: 2rem!important
+}
+.fd-margin-top--lg {
+  margin-top: 3rem!important
+}
+.fd-margin-top--none {
+  margin-top: 0!important
+}
+.fd-margin-end--tiny {
+  margin-right: .5rem!important
+}
+.fd-margin-end--tiny[dir=rtl],
+[dir=rtl] .fd-margin-end--tiny {
+  margin-left: .5rem!important;
+  margin-right: 0!important
+}
+.fd-margin-end--sm {
+  margin-right: 1rem!important
+}
+.fd-margin-end--sm[dir=rtl],
+[dir=rtl] .fd-margin-end--sm {
+  margin-left: 1rem!important;
+  margin-right: 0!important
+}
+.fd-margin-end--md {
+  margin-right: 2rem!important
+}
+.fd-margin-end--md[dir=rtl],
+[dir=rtl] .fd-margin-end--md {
+  margin-left: 2rem!important;
+  margin-right: 0!important
+}
+.fd-margin-end--lg {
+  margin-right: 3rem!important
+}
+.fd-margin-end--lg[dir=rtl],
+[dir=rtl] .fd-margin-end--lg {
+  margin-left: 3rem!important;
+  margin-right: 0!important
+}
+.fd-margin-end--none {
+  margin-right: 0
+}
+.fd-margin-end--none[dir=rtl],
+[dir=rtl] .fd-margin-end--none {
+  margin-left: 0!important
+}
+.fd-margin-bottom--tiny {
+  margin-bottom: .5rem!important
+}
+.fd-margin-bottom--sm {
+  margin-bottom: 1rem!important
+}
+.fd-margin-bottom--md {
+  margin-bottom: 2rem!important
+}
+.fd-margin-bottom--lg {
+  margin-bottom: 3rem!important
+}
+.fd-margin-bottom--none {
+  margin-bottom: 0!important
+}
+.fd-margin-begin--tiny {
+  margin-left: .5rem!important
+}
+.fd-margin-begin--tiny[dir=rtl],
+[dir=rtl] .fd-margin-begin--tiny {
+  margin-right: .5rem!important;
+  margin-left: 0!important
+}
+.fd-margin-begin--sm {
+  margin-left: 1rem!important
+}
+.fd-margin-begin--sm[dir=rtl],
+[dir=rtl] .fd-margin-begin--sm {
+  margin-right: 1rem!important;
+  margin-left: 0!important
+}
+.fd-margin-begin--md {
+  margin-left: 2rem!important
+}
+.fd-margin-begin--md[dir=rtl],
+[dir=rtl] .fd-margin-begin--md {
+  margin-right: 2rem!important;
+  margin-left: 0!important
+}
+.fd-margin-begin--lg {
+  margin-left: 3rem!important
+}
+.fd-margin-begin--lg[dir=rtl],
+[dir=rtl] .fd-margin-begin--lg {
+  margin-right: 3rem!important;
+  margin-left: 0!important
+}
+.fd-margin-begin--none {
+  margin-left: 0
+}
+.fd-margin-begin--none[dir=rtl],
+[dir=rtl] .fd-margin-begin--none {
+  margin-right: 0!important
+}
+.fd-margin-top-bottom--tiny {
+  margin-top: .5rem!important;
+  margin-bottom: .5rem!important
+}
+.fd-margin-top-bottom--sm {
+  margin-top: 1rem!important;
+  margin-bottom: 1rem!important
+}
+.fd-margin-top-bottom--md {
+  margin-top: 2rem!important;
+  margin-bottom: 2rem!important
+}
+.fd-margin-top-bottom--lg {
+  margin-top: 3rem!important;
+  margin-bottom: 3rem!important
+}
+.fd-margin-begin-end--tiny {
+  margin-left: .5rem!important;
+  margin-right: .5rem!important
+}
+.fd-margin-begin-end--sm {
+  margin-left: 1rem!important;
+  margin-right: 1rem!important
+}
+.fd-margin-begin-end--md {
+  margin-left: 2rem!important;
+  margin-right: 2rem!important
+}
+.fd-margin-begin-end--lg {
+  margin-left: 3rem!important;
+  margin-right: 3rem!important
+}
+.fd-margin-responsive--sm {
+  margin: 0 0 1rem 0!important
+}
+.fd-margin-responsive--md {
+  margin: 1rem!important
+}
+.fd-margin-responsive--lg {
+  margin: 1rem 2rem!important
+}
+.fd-margin-responsive--xl {
+  margin: 1rem 3rem!important
+}
+.fd-margin-negative-begin-end--tiny {
+  margin: 0 -.5rem!important
+}
+.fd-margin-negative-begin-end--sm {
+  margin: 0 -1rem!important
+}
+.fd-margin-negative-begin-end--md {
+  margin: 0 -2rem!important
+}
+.fd-margin-negative-begin-end--lg {
+  margin: 0 -3rem!important
+}
 .fd-menu {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -17153,6 +18562,14 @@
 .fd-menu__link:active .fd-menu__shortcut {
   color: #fff;
   color: var(--sapList_Active_TextColor,#fff)
+}
+.fd-menu__link.is-active.is-focus,
+.fd-menu__link.is-active:focus,
+.fd-menu__link:active.is-focus,
+.fd-menu__link:active:focus {
+  z-index: 5;
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
 .fd-menu__link.is-disabled,
 .fd-menu__link:disabled,
@@ -18275,7 +19692,8 @@
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
   color: #32363a;
-  color: var(--sapList_TextColor,#32363a)
+  color: var(--sapList_TextColor,#32363a);
+  text-align: center
 }
 .fd-message-toast::after,
 .fd-message-toast::before {
@@ -19216,6 +20634,11 @@
 .fd-numeric-content--small-tile .fd-numeric-content__kpi {
   font-size: 1.5rem
 }
+.fd-numeric-content--small-tile .fd-numeric-content__kpi[dir=rtl],
+[dir=rtl] .fd-numeric-content--small-tile .fd-numeric-content__kpi {
+  direction: ltr;
+  text-align: right
+}
 .fd-numeric-content--small-tile.fd-numeric-content--m {
   height: 2.375rem
 }
@@ -19246,6 +20669,11 @@
 }
 .fd-numeric-content--small-tile.fd-numeric-content--m .fd-numeric-content__kpi {
   font-size: 1.5rem
+}
+.fd-numeric-content--small-tile.fd-numeric-content--m .fd-numeric-content__kpi[dir=rtl],
+[dir=rtl] .fd-numeric-content--small-tile.fd-numeric-content--m .fd-numeric-content__kpi {
+  direction: ltr;
+  text-align: right
 }
 .fd-numeric-content--small-tile.fd-numeric-content--m .fd-numeric-content__launch-icon-container {
   -webkit-box-align: end;
@@ -19282,6 +20710,11 @@
 }
 .fd-numeric-content--small-tile.fd-numeric-content--s .fd-numeric-content__kpi {
   font-size: 1.5rem
+}
+.fd-numeric-content--small-tile.fd-numeric-content--s .fd-numeric-content__kpi[dir=rtl],
+[dir=rtl] .fd-numeric-content--small-tile.fd-numeric-content--s .fd-numeric-content__kpi {
+  direction: ltr;
+  text-align: right
 }
 .fd-numeric-content--small-tile.fd-numeric-content--s .fd-numeric-content__scale-container {
   padding-top: 0
@@ -19419,6 +20852,105 @@
 [dir=rtl] .fd-object-marker + .fd-object-marker {
   margin-right: .5rem;
   margin-left: 0
+}
+/*!
+.fd-object-number+(--success | --warning | --error)
+*/
+.fd-object-number {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: #6a6d70;
+  color: var(--sapNeutralTextColor,#6a6d70);
+  max-width: 100%;
+  display: inline-block;
+  text-shadow: 0 0 0.125rem #fff;
+  text-shadow: var(--sapContent_TextShadow,0 0 .125rem #fff)
+}
+.fd-object-number::after,
+.fd-object-number::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-object-number__text,
+.fd-object-number__unit {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1
+}
+.fd-object-number__text::after,
+.fd-object-number__text::before,
+.fd-object-number__unit::after,
+.fd-object-number__unit::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-object-number__text::after {
+  content: '\00a0 '
+}
+.fd-object-number__text--bold {
+  font-weight: 700
+}
+.fd-object-number__unit {
+  font-family: "72-Light","72-Lightfull","72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontLightFamily, "72-Light", "72-Lightfull", "72", "72full", Arial, Helvetica, sans-serif)
+}
+.fd-object-number--positive .fd-object-number__text,
+.fd-object-number--positive .fd-object-number__unit {
+  color: #107e3e;
+  color: var(--sapPositiveTextColor,#107e3e)
+}
+.fd-object-number--critical .fd-object-number__text,
+.fd-object-number--critical .fd-object-number__unit {
+  color: #e9730c;
+  color: var(--sapCriticalTextColor,#e9730c)
+}
+.fd-object-number--negative .fd-object-number__text,
+.fd-object-number--negative .fd-object-number__unit {
+  color: #bb0000;
+  color: var(--sapNegativeTextColor,#b00)
+}
+.fd-object-number--informative .fd-object-number__text,
+.fd-object-number--informative .fd-object-number__unit {
+  color: #0a6ed1;
+  color: var(--sapInformativeTextColor,#0a6ed1)
+}
+.fd-object-number--large .fd-object-number__text,
+.fd-object-number--large .fd-object-number__unit {
+  font-family: "72-Light","72-Lightfull","72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontLightFamily, "72-Light", "72-Lightfull", "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: 1.5rem
 }
 /*!
 .fd-object-status+(--success | --warning | --error)
@@ -19688,6 +21220,10 @@
 }
 .fd-object-status--large {
   font-size: 1.5rem
+}
+.fd-object-status--large .fd-object-status__text {
+  font-family: "72-Light","72-Lightfull","72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontLightFamily, "72-Light", "72-Lightfull", "72", "72full", Arial, Helvetica, sans-serif)
 }
 .fd-object-status--large .fd-object-status__icon [class*=sap-icon],
 .fd-object-status--large .fd-object-status__icon[class*=sap-icon] {
@@ -20718,6 +22254,38 @@
   color: #fff;
   color: var(--sapIndicationColor_8_TextColor,#fff)
 }
+.fd-padding {
+  padding: 1rem!important
+}
+.fd-padding-begin-end--tiny {
+  padding-left: .5rem!important;
+  padding-right: .5rem!important
+}
+.fd-padding-begin-end--sm {
+  padding-left: 1rem!important;
+  padding-right: 1rem!important
+}
+.fd-padding-begin-end--md {
+  padding-left: 2rem!important;
+  padding-right: 2rem!important
+}
+.fd-padding-begin-end--lg {
+  padding-left: 3rem!important;
+  padding-right: 3rem!important
+}
+.fd-padding--none {
+  padding: 0!important
+}
+.fd-padding-responsive--sm {
+  padding: 0 1rem!important
+}
+.fd-padding-responsive--lg,
+.fd-padding-responsive--md {
+  padding: 0 2rem!important
+}
+.fd-padding-responsive--xl {
+  padding: 0 3rem!important
+}
 .fd-page {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -20987,8 +22555,8 @@
 }
 .fd-pagination__more::before {
   content: "...";
-  color: #6a6d70;
-  color: var(--sapContent_LabelColor,#6a6d70);
+  color: #0a6ed1;
+  color: var(--sapLinkColor,#0a6ed1);
   font-weight: 700
 }
 .fd-pagination__link {
@@ -21657,7 +23225,7 @@
 }
 .fd-popover__body--dropdown-fill {
   display: block;
-  max-width: 37.5rem;
+  max-width: 40rem;
   width: calc(100% - .0625rem * 2);
   width: calc(100% - var(--sapGroup_BorderWidth,.0625rem) * 2)
 }
@@ -21937,6 +23505,20 @@
   color: var(--sapShell_Active_TextColor,#fff);
   background-color: #23303e;
   background-color: var(--sapShell_Active_Background,#23303e)
+}
+.fd-product-switch .fd-button.fd-product-switch__control.is-focus,
+.fd-product-switch .fd-button.fd-product-switch__control:focus {
+  z-index: 5;
+  outline: .0625rem dotted #000;
+  outline: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000);
+  outline-offset: -.1875rem;
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+}
+.fd-product-switch .fd-button.fd-product-switch__control.is-focus.fd-product-switch--toggled,
+.fd-product-switch .fd-button.fd-product-switch__control:focus.fd-product-switch--toggled {
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
 .fd-product-switch__list {
   font-size: .875rem;
@@ -23002,6 +24584,11 @@
   width: .625rem;
   top: 1.0625rem;
   left: 1.0625rem
+}
+.fd-radio__label.is-focus,
+.fd-radio__label:focus {
+  z-index: 5;
+  outline: 0
 }
 .fd-radio__label.is-hover::before,
 .fd-radio__label:hover::before {
@@ -24493,8 +26080,8 @@
   outline: .0625rem dotted #000;
   outline: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000);
   outline-offset: -.1875rem;
-  border-color: #fff;
-  border-color: var(--sapContent_ContrastFocusColor,#fff)
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
 .fd-shellbar .fd-button.fd-shellbar__button.is-focus.fd-shellbar--toggled,
 .fd-shellbar .fd-button.fd-shellbar__button:focus.fd-shellbar--toggled {
@@ -24599,6 +26186,9 @@
 .fd-shellbar--xl .fd-shellbar__subtitle,
 .fd-shellbar--xl .fd-shellbar__title {
   display: inline-block
+}
+.fd-shellbar__side-nav-control {
+  margin: 0 .25rem
 }
 .fd-nested-list {
   font-size: .875rem;
@@ -27311,12 +28901,12 @@
   transform: translate(.0625rem,-50%)
 }
 /*!
-.fd-table(--compact, --condensed, --no-horizontal-borders, --no-vertical-borders)
+.fd-table(--compact, --condensed, --no-horizontal-borders, --no-vertical-borders, --fixed)
     thead(.fd-table__header(--no-horizontal-borders, --no-vertical-borders))
     tbody(.fd-table__body(--no-horizontal-borders, --no-vertical-borders))
     tfoot(.fd-table__footer)
         tr(.fd-table__row)([aria-selected])
-          td(.fd-table__cell(--status-indicator, --checkbox, --fit-content)) + semantic
+          td(.fd-table__cell(--status-indicator, --checkbox, --fit-content, --fixed)) + semantic
 */
 .fd-table {
   width: 100%;
@@ -27411,6 +29001,16 @@
   color: #32363a;
   color: var(--sapList_HeaderTextColor,#32363a)
 }
+.fd-table__text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  white-space: normal
+}
+.fd-table__text--no-wrap {
+  white-space: nowrap
+}
 .fd-table__cell {
   text-align: left;
   text-shadow: 0 0 0.125rem #fff;
@@ -27436,6 +29036,9 @@
 .fd-table__cell--information {
   color: #0a6ed1;
   color: var(--sapInformationColor,#0a6ed1)
+}
+.fd-table__cell--no-data {
+  text-align: center
 }
 .fd-table__cell--checkbox {
   width: .5rem;
@@ -27475,8 +29078,7 @@
 .fd-table__cell--fixed {
   left: 0;
   position: absolute;
-  background-color: #fff;
-  background-color: var(--sapList_Background,#fff);
+  background-color: inherit;
   border-bottom: .0625rem solid #e4e4e4;
   border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
   display: -webkit-box;
@@ -27579,6 +29181,24 @@
   background-color: #d8e9f8;
   background-color: var(--sapList_Hover_SelectionBackground,#d8e9f8)
 }
+.fd-table__body .fd-table__row--activable.is-selected.is-active,
+.fd-table__body .fd-table__row--activable.is-selected:active,
+.fd-table__body .fd-table__row--activable[aria-selected=true].is-active,
+.fd-table__body .fd-table__row--activable[aria-selected=true]:active {
+  background-color: #0854a0;
+  background-color: var(--sapList_Active_Background,#0854a0)
+}
+.fd-table__cell--hoverable.is-selected .fd-table__cell.is-hover,
+.fd-table__cell--hoverable.is-selected .fd-table__cell:hover,
+.fd-table__cell--hoverable[aria-selected=true] .fd-table__cell.is-hover,
+.fd-table__cell--hoverable[aria-selected=true] .fd-table__cell:hover,
+.fd-table__row--hoverable.is-selected .fd-table__cell.is-hover,
+.fd-table__row--hoverable.is-selected .fd-table__cell:hover,
+.fd-table__row--hoverable[aria-selected=true] .fd-table__cell.is-hover,
+.fd-table__row--hoverable[aria-selected=true] .fd-table__cell:hover {
+  background-color: #d8e9f8;
+  background-color: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+}
 .fd-table__cell--hoverable .fd-table__cell.is-hover,
 .fd-table__cell--hoverable .fd-table__cell:hover,
 .fd-table__cell--hoverable.is-hover,
@@ -27595,6 +29215,13 @@
 .fd-table__cell--activable,
 .fd-table__row--activable {
   cursor: pointer
+}
+.fd-table__cell--activable.is-active *,
+.fd-table__cell--activable:active *,
+.fd-table__row--activable.is-active *,
+.fd-table__row--activable:active * {
+  color: #fff!important;
+  color: var(--sapList_Active_TextColor,#fff)!important
 }
 .fd-table__cell--activable.is-active,
 .fd-table__cell--activable:active,
@@ -27668,6 +29295,128 @@
   outline-color: #fff;
   outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
+.fd-table__cell--activable.is-selected,
+.fd-table__cell--activable[aria-selected=true],
+.fd-table__row--activable.is-selected,
+.fd-table__row--activable[aria-selected=true] {
+  cursor: pointer
+}
+.fd-table__cell--activable.is-selected.is-active,
+.fd-table__cell--activable.is-selected:active,
+.fd-table__cell--activable[aria-selected=true].is-active,
+.fd-table__cell--activable[aria-selected=true]:active,
+.fd-table__row--activable.is-selected.is-active,
+.fd-table__row--activable.is-selected:active,
+.fd-table__row--activable[aria-selected=true].is-active,
+.fd-table__row--activable[aria-selected=true]:active {
+  background-color: #0854a0;
+  background-color: var(--sapList_Active_Background,#0854a0);
+  color: #fff;
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
+}
+.fd-table__cell--activable.is-selected.is-active .fd-table__cell,
+.fd-table__cell--activable.is-selected:active .fd-table__cell,
+.fd-table__cell--activable[aria-selected=true].is-active .fd-table__cell,
+.fd-table__cell--activable[aria-selected=true]:active .fd-table__cell,
+.fd-table__row--activable.is-selected.is-active .fd-table__cell,
+.fd-table__row--activable.is-selected:active .fd-table__cell,
+.fd-table__row--activable[aria-selected=true].is-active .fd-table__cell,
+.fd-table__row--activable[aria-selected=true]:active .fd-table__cell {
+  border-bottom-color: #0854a0;
+  border-bottom-color: var(--sapList_SelectionBorderColor,#0854a0);
+  text-shadow: none
+}
+.fd-table__cell--activable.is-selected.is-active .fd-table__cell.is-hover,
+.fd-table__cell--activable.is-selected.is-active .fd-table__cell:hover,
+.fd-table__cell--activable.is-selected:active .fd-table__cell.is-hover,
+.fd-table__cell--activable.is-selected:active .fd-table__cell:hover,
+.fd-table__cell--activable[aria-selected=true].is-active .fd-table__cell.is-hover,
+.fd-table__cell--activable[aria-selected=true].is-active .fd-table__cell:hover,
+.fd-table__cell--activable[aria-selected=true]:active .fd-table__cell.is-hover,
+.fd-table__cell--activable[aria-selected=true]:active .fd-table__cell:hover,
+.fd-table__row--activable.is-selected.is-active .fd-table__cell.is-hover,
+.fd-table__row--activable.is-selected.is-active .fd-table__cell:hover,
+.fd-table__row--activable.is-selected:active .fd-table__cell.is-hover,
+.fd-table__row--activable.is-selected:active .fd-table__cell:hover,
+.fd-table__row--activable[aria-selected=true].is-active .fd-table__cell.is-hover,
+.fd-table__row--activable[aria-selected=true].is-active .fd-table__cell:hover,
+.fd-table__row--activable[aria-selected=true]:active .fd-table__cell.is-hover,
+.fd-table__row--activable[aria-selected=true]:active .fd-table__cell:hover {
+  background-color: #0854a0;
+  background-color: var(--sapList_Active_Background,#0854a0)
+}
+.fd-table__cell--activable.is-selected.is-active .fd-table__icon [class*=sap-icon],
+.fd-table__cell--activable.is-selected.is-active .fd-table__icon[class*=sap-icon],
+.fd-table__cell--activable.is-selected:active .fd-table__icon [class*=sap-icon],
+.fd-table__cell--activable.is-selected:active .fd-table__icon[class*=sap-icon],
+.fd-table__cell--activable[aria-selected=true].is-active .fd-table__icon [class*=sap-icon],
+.fd-table__cell--activable[aria-selected=true].is-active .fd-table__icon[class*=sap-icon],
+.fd-table__cell--activable[aria-selected=true]:active .fd-table__icon [class*=sap-icon],
+.fd-table__cell--activable[aria-selected=true]:active .fd-table__icon[class*=sap-icon],
+.fd-table__row--activable.is-selected.is-active .fd-table__icon [class*=sap-icon],
+.fd-table__row--activable.is-selected.is-active .fd-table__icon[class*=sap-icon],
+.fd-table__row--activable.is-selected:active .fd-table__icon [class*=sap-icon],
+.fd-table__row--activable.is-selected:active .fd-table__icon[class*=sap-icon],
+.fd-table__row--activable[aria-selected=true].is-active .fd-table__icon [class*=sap-icon],
+.fd-table__row--activable[aria-selected=true].is-active .fd-table__icon[class*=sap-icon],
+.fd-table__row--activable[aria-selected=true]:active .fd-table__icon [class*=sap-icon],
+.fd-table__row--activable[aria-selected=true]:active .fd-table__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapContent_ContrastIconColor,#fff)
+}
+.fd-table__cell--activable.is-selected.is-active .fd-form-label,
+.fd-table__cell--activable.is-selected.is-active .fd-link,
+.fd-table__cell--activable.is-selected.is-active .fd-object-status,
+.fd-table__cell--activable.is-selected:active .fd-form-label,
+.fd-table__cell--activable.is-selected:active .fd-link,
+.fd-table__cell--activable.is-selected:active .fd-object-status,
+.fd-table__cell--activable[aria-selected=true].is-active .fd-form-label,
+.fd-table__cell--activable[aria-selected=true].is-active .fd-link,
+.fd-table__cell--activable[aria-selected=true].is-active .fd-object-status,
+.fd-table__cell--activable[aria-selected=true]:active .fd-form-label,
+.fd-table__cell--activable[aria-selected=true]:active .fd-link,
+.fd-table__cell--activable[aria-selected=true]:active .fd-object-status,
+.fd-table__row--activable.is-selected.is-active .fd-form-label,
+.fd-table__row--activable.is-selected.is-active .fd-link,
+.fd-table__row--activable.is-selected.is-active .fd-object-status,
+.fd-table__row--activable.is-selected:active .fd-form-label,
+.fd-table__row--activable.is-selected:active .fd-link,
+.fd-table__row--activable.is-selected:active .fd-object-status,
+.fd-table__row--activable[aria-selected=true].is-active .fd-form-label,
+.fd-table__row--activable[aria-selected=true].is-active .fd-link,
+.fd-table__row--activable[aria-selected=true].is-active .fd-object-status,
+.fd-table__row--activable[aria-selected=true]:active .fd-form-label,
+.fd-table__row--activable[aria-selected=true]:active .fd-link,
+.fd-table__row--activable[aria-selected=true]:active .fd-object-status {
+  color: inherit
+}
+.fd-table__cell--activable.is-selected.is-active--focusable.is-focus,
+.fd-table__cell--activable.is-selected.is-active--focusable:focus,
+.fd-table__cell--activable.is-selected:active--focusable.is-focus,
+.fd-table__cell--activable.is-selected:active--focusable:focus,
+.fd-table__cell--activable[aria-selected=true].is-active--focusable.is-focus,
+.fd-table__cell--activable[aria-selected=true].is-active--focusable:focus,
+.fd-table__cell--activable[aria-selected=true]:active--focusable.is-focus,
+.fd-table__cell--activable[aria-selected=true]:active--focusable:focus,
+.fd-table__row--activable.is-selected.is-active--focusable.is-focus,
+.fd-table__row--activable.is-selected.is-active--focusable:focus,
+.fd-table__row--activable.is-selected:active--focusable.is-focus,
+.fd-table__row--activable.is-selected:active--focusable:focus,
+.fd-table__row--activable[aria-selected=true].is-active--focusable.is-focus,
+.fd-table__row--activable[aria-selected=true].is-active--focusable:focus,
+.fd-table__row--activable[aria-selected=true]:active--focusable.is-focus,
+.fd-table__row--activable[aria-selected=true]:active--focusable:focus {
+  outline-offset: -.1875rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted);
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+}
 .fd-table__cell--focusable.is-focus,
 .fd-table__cell--focusable:focus,
 .fd-table__row--focusable.is-focus,
@@ -27679,6 +29428,17 @@
   outline-color: var(--sapContent_FocusColor,#000);
   outline-style: dotted;
   outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-table__cell.is-selected .fd-table__cell--fixed.is-hover,
+.fd-table__cell.is-selected .fd-table__cell--fixed:hover,
+.fd-table__cell[aria-selected=true] .fd-table__cell--fixed.is-hover,
+.fd-table__cell[aria-selected=true] .fd-table__cell--fixed:hover,
+.fd-table__row.is-selected .fd-table__cell--fixed.is-hover,
+.fd-table__row.is-selected .fd-table__cell--fixed:hover,
+.fd-table__row[aria-selected=true] .fd-table__cell--fixed.is-hover,
+.fd-table__row[aria-selected=true] .fd-table__cell--fixed:hover {
+  background-color: #d8e9f8;
+  background-color: var(--sapList_Hover_SelectionBackground,#d8e9f8)
 }
 .fd-table__footer {
   background-color: #fafafa;
@@ -27797,40 +29557,40 @@
   background-color: #f5f5f5;
   background-color: var(--sapList_Hover_Background,#f5f5f5)
 }
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary,
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:active + .fd-table__row--secondary {
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary,
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary {
   background-color: #0854a0;
   background-color: var(--sapList_Active_Background,#0854a0);
   color: #fff;
   color: var(--sapList_Active_TextColor,#fff);
   text-shadow: none
 }
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary .fd-table__cell,
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:active + .fd-table__row--secondary .fd-table__cell {
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-table__cell,
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary .fd-table__cell {
   border-bottom-color: #0854a0;
   border-bottom-color: var(--sapList_SelectionBorderColor,#0854a0);
   text-shadow: none
 }
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary .fd-table__cell.is-hover,
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary .fd-table__cell:hover,
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:active + .fd-table__row--secondary .fd-table__cell.is-hover,
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:active + .fd-table__row--secondary .fd-table__cell:hover {
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-table__cell.is-hover,
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-table__cell:hover,
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary .fd-table__cell.is-hover,
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary .fd-table__cell:hover {
   background-color: #0854a0;
   background-color: var(--sapList_Active_Background,#0854a0)
 }
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary .fd-table__icon [class*=sap-icon],
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary .fd-table__icon[class*=sap-icon],
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:active + .fd-table__row--secondary .fd-table__icon [class*=sap-icon],
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:active + .fd-table__row--secondary .fd-table__icon[class*=sap-icon] {
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-table__icon [class*=sap-icon],
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-table__icon[class*=sap-icon],
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary .fd-table__icon [class*=sap-icon],
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary .fd-table__icon[class*=sap-icon] {
   color: #fff;
   color: var(--sapContent_ContrastIconColor,#fff)
 }
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary .fd-form-label,
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary .fd-link,
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary .fd-object-status,
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:active + .fd-table__row--secondary .fd-form-label,
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:active + .fd-table__row--secondary .fd-link,
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:active + .fd-table__row--secondary .fd-object-status {
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-form-label,
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-link,
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-object-status,
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary .fd-form-label,
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary .fd-link,
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary .fd-object-status {
   color: inherit
 }
 .fd-table--pop-in .fd-table__row--main.is-selected.is-hover + .fd-table__row--secondary,
@@ -27876,6 +29636,17 @@
 .fd-table__body--no-horizontal-borders .fd-table__row .fd-table__cell,
 .fd-table__header--no-horizontal-borders .fd-table__row .fd-table__cell {
   border-right: none
+}
+.fd-table--responsive .fd-table__body,
+.fd-table--responsive .fd-table__header {
+  border: none
+}
+.fd-table--responsive .fd-table__row:last-child {
+  margin-bottom: 0;
+  margin-right: 0
+}
+.fd-table--responsive .fd-table__row:last-child .fd-table__cell {
+  border-bottom: none
 }
 .fd-table--compact .fd-table__cell {
   height: 2rem
@@ -28057,142 +29828,6 @@
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-tabs__item--error .fd-tabs__icon {
-  color: #bb0000;
-  color: var(--sapErrorColor,#b00);
-  border-color: #bb0000;
-  border-color: var(--sapErrorColor,#b00)
-}
-.fd-tabs__item--error .fd-tabs__link .fd-tabs__tag {
-  color: #bb0000;
-  color: var(--sapErrorColor,#b00)
-}
-.fd-tabs__item--error .fd-tabs__link.is-selected .fd-tabs__icon,
-.fd-tabs__item--error .fd-tabs__link[aria-selected=true] .fd-tabs__icon {
-  color: #fff;
-  color: var(--sapContent_ContrastIconColor,#fff);
-  background-color: #bb0000;
-  background-color: var(--sapErrorColor,#b00)
-}
-.fd-tabs__item--error .fd-tabs__link.is-selected .fd-tabs__icon::after,
-.fd-tabs__item--error .fd-tabs__link.is-selected .fd-tabs__tag::after,
-.fd-tabs__item--error .fd-tabs__link.is-selected::after,
-.fd-tabs__item--error .fd-tabs__link[aria-selected=true] .fd-tabs__icon::after,
-.fd-tabs__item--error .fd-tabs__link[aria-selected=true] .fd-tabs__tag::after,
-.fd-tabs__item--error .fd-tabs__link[aria-selected=true]::after {
-  background-color: #bb0000;
-  background-color: var(--sapErrorColor,#b00)
-}
-.fd-tabs__item--warning .fd-tabs__icon {
-  color: #e9730c;
-  color: var(--sapWarningColor,#e9730c);
-  border-color: #e9730c;
-  border-color: var(--sapWarningColor,#e9730c)
-}
-.fd-tabs__item--warning .fd-tabs__link .fd-tabs__tag {
-  color: #e9730c;
-  color: var(--sapWarningColor,#e9730c)
-}
-.fd-tabs__item--warning .fd-tabs__link.is-selected .fd-tabs__icon,
-.fd-tabs__item--warning .fd-tabs__link[aria-selected=true] .fd-tabs__icon {
-  color: #fff;
-  color: var(--sapContent_ContrastIconColor,#fff);
-  background-color: #e9730c;
-  background-color: var(--sapWarningColor,#e9730c)
-}
-.fd-tabs__item--warning .fd-tabs__link.is-selected .fd-tabs__icon::after,
-.fd-tabs__item--warning .fd-tabs__link.is-selected .fd-tabs__tag::after,
-.fd-tabs__item--warning .fd-tabs__link.is-selected::after,
-.fd-tabs__item--warning .fd-tabs__link[aria-selected=true] .fd-tabs__icon::after,
-.fd-tabs__item--warning .fd-tabs__link[aria-selected=true] .fd-tabs__tag::after,
-.fd-tabs__item--warning .fd-tabs__link[aria-selected=true]::after {
-  background-color: #e9730c;
-  background-color: var(--sapWarningColor,#e9730c)
-}
-.fd-tabs__item--success .fd-tabs__icon {
-  color: #107e3e;
-  color: var(--sapSuccessColor,#107e3e);
-  border-color: #107e3e;
-  border-color: var(--sapSuccessColor,#107e3e)
-}
-.fd-tabs__item--success .fd-tabs__link .fd-tabs__tag {
-  color: #107e3e;
-  color: var(--sapSuccessColor,#107e3e)
-}
-.fd-tabs__item--success .fd-tabs__link.is-selected .fd-tabs__icon,
-.fd-tabs__item--success .fd-tabs__link[aria-selected=true] .fd-tabs__icon {
-  color: #fff;
-  color: var(--sapContent_ContrastIconColor,#fff);
-  background-color: #107e3e;
-  background-color: var(--sapSuccessColor,#107e3e)
-}
-.fd-tabs__item--success .fd-tabs__link.is-selected .fd-tabs__icon::after,
-.fd-tabs__item--success .fd-tabs__link.is-selected .fd-tabs__tag::after,
-.fd-tabs__item--success .fd-tabs__link.is-selected::after,
-.fd-tabs__item--success .fd-tabs__link[aria-selected=true] .fd-tabs__icon::after,
-.fd-tabs__item--success .fd-tabs__link[aria-selected=true] .fd-tabs__tag::after,
-.fd-tabs__item--success .fd-tabs__link[aria-selected=true]::after {
-  background-color: #107e3e;
-  background-color: var(--sapSuccessColor,#107e3e)
-}
-.fd-tabs__item--information .fd-tabs__icon {
-  color: #0a6ed1;
-  color: var(--sapInformationColor,#0a6ed1);
-  border-color: #0a6ed1;
-  border-color: var(--sapInformationColor,#0a6ed1)
-}
-.fd-tabs__item--information .fd-tabs__link .fd-tabs__tag {
-  color: #0a6ed1;
-  color: var(--sapInformationColor,#0a6ed1)
-}
-.fd-tabs__item--information .fd-tabs__link.is-selected .fd-tabs__icon,
-.fd-tabs__item--information .fd-tabs__link[aria-selected=true] .fd-tabs__icon {
-  color: #fff;
-  color: var(--sapContent_ContrastIconColor,#fff);
-  background-color: #0a6ed1;
-  background-color: var(--sapInformationColor,#0a6ed1)
-}
-.fd-tabs__item--information .fd-tabs__link.is-selected .fd-tabs__icon::after,
-.fd-tabs__item--information .fd-tabs__link.is-selected .fd-tabs__tag::after,
-.fd-tabs__item--information .fd-tabs__link.is-selected::after,
-.fd-tabs__item--information .fd-tabs__link[aria-selected=true] .fd-tabs__icon::after,
-.fd-tabs__item--information .fd-tabs__link[aria-selected=true] .fd-tabs__tag::after,
-.fd-tabs__item--information .fd-tabs__link[aria-selected=true]::after {
-  background-color: #0a6ed1;
-  background-color: var(--sapInformationColor,#0a6ed1)
-}
-.fd-tabs__item--neutral .fd-tabs__icon {
-  color: #6a6d70;
-  color: var(--sapNeutralColor,#6a6d70);
-  border-color: #6a6d70;
-  border-color: var(--sapNeutralColor,#6a6d70)
-}
-.fd-tabs__item--neutral .fd-tabs__link .fd-tabs__tag {
-  color: #6a6d70;
-  color: var(--sapNeutralColor,#6a6d70)
-}
-.fd-tabs__item--neutral .fd-tabs__link.is-selected .fd-tabs__icon,
-.fd-tabs__item--neutral .fd-tabs__link[aria-selected=true] .fd-tabs__icon {
-  color: #fff;
-  color: var(--sapContent_ContrastIconColor,#fff);
-  background-color: #6a6d70;
-  background-color: var(--sapNeutralColor,#6a6d70)
-}
-.fd-tabs__item--neutral .fd-tabs__link.is-selected .fd-tabs__icon::after,
-.fd-tabs__item--neutral .fd-tabs__link.is-selected .fd-tabs__tag::after,
-.fd-tabs__item--neutral .fd-tabs__link.is-selected::after,
-.fd-tabs__item--neutral .fd-tabs__link[aria-selected=true] .fd-tabs__icon::after,
-.fd-tabs__item--neutral .fd-tabs__link[aria-selected=true] .fd-tabs__tag::after,
-.fd-tabs__item--neutral .fd-tabs__link[aria-selected=true]::after {
-  background-color: #6a6d70;
-  background-color: var(--sapNeutralColor,#6a6d70)
-}
-.fd-tabs__item:first-child {
-  margin-left: 0
-}
-.fd-tabs__item:first-child .fd-tabs__link {
-  padding-left: 0
-}
 .fd-tabs__item.is-selected .fd-tabs__tag,
 .fd-tabs__item[aria-selected=true] .fd-tabs__tag {
   color: var(--sapSelectedColor,#0854a0);
@@ -28206,13 +29841,149 @@
   background-color: var(--fdTabs_Selected_Color,var(--sapSelectedColor,#0854a0))
 }
 .fd-tabs__item.is-selected .fd-tabs__icon::after,
+.fd-tabs__item.is-selected .fd-tabs__link::after,
 .fd-tabs__item.is-selected .fd-tabs__tag::after,
-.fd-tabs__item.is-selected::after,
 .fd-tabs__item[aria-selected=true] .fd-tabs__icon::after,
-.fd-tabs__item[aria-selected=true] .fd-tabs__tag::after,
-.fd-tabs__item[aria-selected=true]::after {
+.fd-tabs__item[aria-selected=true] .fd-tabs__link::after,
+.fd-tabs__item[aria-selected=true] .fd-tabs__tag::after {
   background-color: var(--sapSelectedColor,#0854a0);
   background-color: var(--fdTabs_Selected_Color,var(--sapSelectedColor,#0854a0))
+}
+.fd-tabs__item--error .fd-tabs__icon {
+  color: #bb0000;
+  color: var(--sapErrorColor,#b00);
+  border-color: #bb0000;
+  border-color: var(--sapErrorColor,#b00)
+}
+.fd-tabs__item--error .fd-tabs__link .fd-tabs__tag {
+  color: #bb0000;
+  color: var(--sapErrorColor,#b00)
+}
+.fd-tabs__item--error.is-selected .fd-tabs__icon,
+.fd-tabs__item--error[aria-selected=true] .fd-tabs__icon {
+  color: #fff;
+  color: var(--sapContent_ContrastIconColor,#fff);
+  background-color: #bb0000;
+  background-color: var(--sapErrorColor,#b00)
+}
+.fd-tabs__item--error.is-selected .fd-tabs__icon::after,
+.fd-tabs__item--error.is-selected .fd-tabs__link::after,
+.fd-tabs__item--error.is-selected .fd-tabs__tag::after,
+.fd-tabs__item--error[aria-selected=true] .fd-tabs__icon::after,
+.fd-tabs__item--error[aria-selected=true] .fd-tabs__link::after,
+.fd-tabs__item--error[aria-selected=true] .fd-tabs__tag::after {
+  background-color: #bb0000;
+  background-color: var(--sapErrorColor,#b00)
+}
+.fd-tabs__item--warning .fd-tabs__icon {
+  color: #e9730c;
+  color: var(--sapWarningColor,#e9730c);
+  border-color: #e9730c;
+  border-color: var(--sapWarningColor,#e9730c)
+}
+.fd-tabs__item--warning .fd-tabs__link .fd-tabs__tag {
+  color: #e9730c;
+  color: var(--sapWarningColor,#e9730c)
+}
+.fd-tabs__item--warning.is-selected .fd-tabs__icon,
+.fd-tabs__item--warning[aria-selected=true] .fd-tabs__icon {
+  color: #fff;
+  color: var(--sapContent_ContrastIconColor,#fff);
+  background-color: #e9730c;
+  background-color: var(--sapWarningColor,#e9730c)
+}
+.fd-tabs__item--warning.is-selected .fd-tabs__icon::after,
+.fd-tabs__item--warning.is-selected .fd-tabs__link::after,
+.fd-tabs__item--warning.is-selected .fd-tabs__tag::after,
+.fd-tabs__item--warning[aria-selected=true] .fd-tabs__icon::after,
+.fd-tabs__item--warning[aria-selected=true] .fd-tabs__link::after,
+.fd-tabs__item--warning[aria-selected=true] .fd-tabs__tag::after {
+  background-color: #e9730c;
+  background-color: var(--sapWarningColor,#e9730c)
+}
+.fd-tabs__item--success .fd-tabs__icon {
+  color: #107e3e;
+  color: var(--sapSuccessColor,#107e3e);
+  border-color: #107e3e;
+  border-color: var(--sapSuccessColor,#107e3e)
+}
+.fd-tabs__item--success .fd-tabs__link .fd-tabs__tag {
+  color: #107e3e;
+  color: var(--sapSuccessColor,#107e3e)
+}
+.fd-tabs__item--success.is-selected .fd-tabs__icon,
+.fd-tabs__item--success[aria-selected=true] .fd-tabs__icon {
+  color: #fff;
+  color: var(--sapContent_ContrastIconColor,#fff);
+  background-color: #107e3e;
+  background-color: var(--sapSuccessColor,#107e3e)
+}
+.fd-tabs__item--success.is-selected .fd-tabs__icon::after,
+.fd-tabs__item--success.is-selected .fd-tabs__link::after,
+.fd-tabs__item--success.is-selected .fd-tabs__tag::after,
+.fd-tabs__item--success[aria-selected=true] .fd-tabs__icon::after,
+.fd-tabs__item--success[aria-selected=true] .fd-tabs__link::after,
+.fd-tabs__item--success[aria-selected=true] .fd-tabs__tag::after {
+  background-color: #107e3e;
+  background-color: var(--sapSuccessColor,#107e3e)
+}
+.fd-tabs__item--information .fd-tabs__icon {
+  color: #0a6ed1;
+  color: var(--sapInformationColor,#0a6ed1);
+  border-color: #0a6ed1;
+  border-color: var(--sapInformationColor,#0a6ed1)
+}
+.fd-tabs__item--information .fd-tabs__link .fd-tabs__tag {
+  color: #0a6ed1;
+  color: var(--sapInformationColor,#0a6ed1)
+}
+.fd-tabs__item--information.is-selected .fd-tabs__icon,
+.fd-tabs__item--information[aria-selected=true] .fd-tabs__icon {
+  color: #fff;
+  color: var(--sapContent_ContrastIconColor,#fff);
+  background-color: #0a6ed1;
+  background-color: var(--sapInformationColor,#0a6ed1)
+}
+.fd-tabs__item--information.is-selected .fd-tabs__icon::after,
+.fd-tabs__item--information.is-selected .fd-tabs__link::after,
+.fd-tabs__item--information.is-selected .fd-tabs__tag::after,
+.fd-tabs__item--information[aria-selected=true] .fd-tabs__icon::after,
+.fd-tabs__item--information[aria-selected=true] .fd-tabs__link::after,
+.fd-tabs__item--information[aria-selected=true] .fd-tabs__tag::after {
+  background-color: #0a6ed1;
+  background-color: var(--sapInformationColor,#0a6ed1)
+}
+.fd-tabs__item--neutral .fd-tabs__icon {
+  color: #6a6d70;
+  color: var(--sapNeutralColor,#6a6d70);
+  border-color: #6a6d70;
+  border-color: var(--sapNeutralColor,#6a6d70)
+}
+.fd-tabs__item--neutral .fd-tabs__link .fd-tabs__tag {
+  color: #6a6d70;
+  color: var(--sapNeutralColor,#6a6d70)
+}
+.fd-tabs__item--neutral.is-selected .fd-tabs__icon,
+.fd-tabs__item--neutral[aria-selected=true] .fd-tabs__icon {
+  color: #fff;
+  color: var(--sapContent_ContrastIconColor,#fff);
+  background-color: #6a6d70;
+  background-color: var(--sapNeutralColor,#6a6d70)
+}
+.fd-tabs__item--neutral.is-selected .fd-tabs__icon::after,
+.fd-tabs__item--neutral.is-selected .fd-tabs__link::after,
+.fd-tabs__item--neutral.is-selected .fd-tabs__tag::after,
+.fd-tabs__item--neutral[aria-selected=true] .fd-tabs__icon::after,
+.fd-tabs__item--neutral[aria-selected=true] .fd-tabs__link::after,
+.fd-tabs__item--neutral[aria-selected=true] .fd-tabs__tag::after {
+  background-color: #6a6d70;
+  background-color: var(--sapNeutralColor,#6a6d70)
+}
+.fd-tabs__item:first-child {
+  margin-left: 0
+}
+.fd-tabs__item:first-child .fd-tabs__link {
+  padding-left: 0
 }
 .fd-tabs__item[dir=rtl]:first-child,
 [dir=rtl] .fd-tabs__item:first-child {
@@ -31510,7 +33281,8 @@
 .fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body > * {
   display: block;
   text-align: left;
-  width: auto
+  width: auto;
+  margin: .1875rem 0
 }
 .fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body > [dir=rtl],
 [dir=rtl] .fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body > * {
@@ -31518,16 +33290,13 @@
 }
 .fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body > .fd-toolbar__separator {
   height: .0625rem;
-  margin: .375rem .1875rem;
+  margin: .1875rem;
   width: auto;
   background-color: #d9d9d9;
   background-color: var(--sapToolbar_SeparatorColor,#d9d9d9)
 }
-.fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body .fd-toolbar__overflow__label.fd-label {
-  margin: .375rem 0
-}
 .fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body .fd-toolbar__overflow__form-label.fd-form-label {
-  margin: .625rem 0 .125rem 0
+  margin-top: .4375rem
 }
 .fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body .fd-toolbar__overflow__form-label,
 .fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body .fd-toolbar__overflow__label {
@@ -34797,6 +36566,12 @@
   text-transform: none;
   text-rendering: optimizeLegibility
 }
+[class*=sap-icon-businessSuiteInAppSymbols]::before {
+  font-family: BusinessSuiteInAppSymbols
+}
+[class*=sap-icon-TNT]::before {
+  font-family: SAP-icons-TNT
+}
 .sap-icon--accidental-leave::before {
   content: ""
 }
@@ -36767,6 +38542,1092 @@
 }
 .sap-icon--translate::before {
   content: ""
+}
+.sap-icon--clear-all::before {
+  content: ""
+}
+.sap-icon--command-line-interfaces::before {
+  content: ""
+}
+.sap-icon--icon-sum::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--heart::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--quarter::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--year::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--equalizer::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--component::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--component-private::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--raw-material::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--sms::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--add-note::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--change-time-horizon::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--table-chart-customization::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--delegated-important-task::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--forklift::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--coins::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--filter-menu::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--target-to-date::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--program::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--phase::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--checklist::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--mirrored-task::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--sub-project::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--checklist-item::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--adhoc-analysis::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--change-analysis::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--review-demands::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--project-definition::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--data-access::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--define-shortage::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--review-supplies::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--change-log::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--priority-1::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--priority-2::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--jam::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--milestone::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--bulleting-with-numbers::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--decrease-indent::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--increase-indent::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--bold::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--italic::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--strike-through::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--underline::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--save-as::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--segmentation::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--context-menu::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--snapshot::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--subtraction-b-a::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--subtraction-a-b::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--intersection::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--union::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--top::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--bottom::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--page-up::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--page-down::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--create-dashboard::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--xcelsius-file::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--open-folder::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--neutral::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--split-segmentation::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--manage-budget::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--blocked::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--pipette::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--top-recipe::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--recipe::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--ingredients::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--multiple-charts::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--descending-bars::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--descending-stacked-bars::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--scatter-plot::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--spill::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--fire::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--stratification::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--relationship::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--margin-decomposition::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--control-group::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--comparison-chart::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--responsible-area::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--increase::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--decrease::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--current-stock::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--expedite::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--postpone::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--approved::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--partially-delivered::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--line-bar-chart::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--expand-all::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--submission::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--change-request::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--column-unselected::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--column-selected::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--row-unselected::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--row-selected::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--stock-requirements::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--gender-male-and-female::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--marital-status::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--birthday::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--classification::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--marked-for-deletion::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--bullet-chart::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--remove-filter::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--bank-account::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--savings-account::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--debit-card::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--vip-customer::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--undesirable-customer::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--answered-change-request::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--collected-change-request::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--draw-freehand::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--draw-circle::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--completed::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--answered::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--traffic-cone::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--traffic-lights::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--container::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--container-loading::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--traffic-jam::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--products::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--sidepanel::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--split-screen::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--truck-driver::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--keep-segment::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--exclude-segment::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--separate-segments::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--distribute-segments::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--next-open-item::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--where-used::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--outbound-delivery::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--outbound-delivery-inactive::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--outbound-delivery-active::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--target::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--source::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--material::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--due-date::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--overdue::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--set-as-default::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--face-very-bad::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--face-bad::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--face-skeptical::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--face-neutral::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--face-astonished::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--face-happy::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--face-very-happy::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--face-awful::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--face-devastated::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--face-okey-dokey::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--alarm::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--activate::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--segment-preview-reference-objects::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--radius::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--polygone-black::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--polygone-white::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--ploygone::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--no-filter::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--grip::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--water::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--gas::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--liquid::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--time-deposit::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--early-widthdrawal-for-time-deposits::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--truck-load::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--truck-unload::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--truck-load-unload::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--pharmacy::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--medicine-syrup::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--reminder::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--medicine-pill::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--medicine-ointment::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--medicine-drops::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--blood-test::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--temperature::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--medicine-inhaler::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--foot-steps::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--weight::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--health-tracking::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--blood-pressure::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--immunization::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--allergies::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--rescheduling2::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--resequencing2::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--no-time-change::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--time-change::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--smart-matcher::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--legal-section::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--causes::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--effects::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--shared-by-me::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--shared-with-me::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--alert-groups::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--function-alert::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--function-hierarchy::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--rfid::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--input::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--software-item::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--product-view::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--software-item-variant::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--lighthouse::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--demand-unit::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--fma-management::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--fma-validation::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--fma-analytics::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--class::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--overview::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--production::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--subclass::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--variant-configuration::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--sum::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--empty-trailer::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--door::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--loading-point::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--stock-warehouse::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--gate::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--timeseries-waterfall-chart::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--stages-warning::before {
+  content: ""
+}
+.sap-icon-businessSuiteInAppSymbols--empty-warning::before {
+  content: ""
+}
+.sap-icon-TNT--technicalsystem::before {
+  content: ""
+}
+.sap-icon-TNT--systemjava::before {
+  content: ""
+}
+.sap-icon-TNT--systemabap::before {
+  content: ""
+}
+.sap-icon-TNT--systemrecommendations::before {
+  content: ""
+}
+.sap-icon-TNT--system::before {
+  content: ""
+}
+.sap-icon-TNT--systemtrex::before {
+  content: ""
+}
+.sap-icon-TNT--systemtracks::before {
+  content: ""
+}
+.sap-icon-TNT--technicalscenario::before {
+  content: ""
+}
+.sap-icon-TNT--technicalinstance::before {
+  content: ""
+}
+.sap-icon-TNT--throughput-backlog::before {
+  content: ""
+}
+.sap-icon-TNT--batch-processing::before {
+  content: ""
+}
+.sap-icon-TNT--database-consistency::before {
+  content: ""
+}
+.sap-icon-TNT--intermediate-message::before {
+  content: ""
+}
+.sap-icon-TNT--exceptions::before {
+  content: ""
+}
+.sap-icon-TNT--system-HANA::before {
+  content: ""
+}
+.sap-icon-TNT--python::before {
+  content: ""
+}
+.sap-icon-TNT--raise-fault::before {
+  content: ""
+}
+.sap-icon-TNT--code1::before {
+  content: ""
+}
+.sap-icon-TNT--code2::before {
+  content: ""
+}
+.sap-icon-TNT--spike-arrest::before {
+  content: ""
+}
+.sap-icon-TNT--verify-API::before {
+  content: ""
+}
+.sap-icon-TNT--user::before {
+  content: ""
+}
+.sap-icon-TNT--note::before {
+  content: ""
+}
+.sap-icon-TNT--throwing-message::before {
+  content: ""
+}
+.sap-icon-TNT--catching-message::before {
+  content: ""
+}
+.sap-icon-TNT--start-event::before {
+  content: ""
+}
+.sap-icon-TNT--end-event::before {
+  content: ""
+}
+.sap-icon-TNT--gateway::before {
+  content: ""
+}
+.sap-icon-TNT--sub-process-marker::before {
+  content: ""
+}
+.sap-icon-TNT--ad-hoc-marker::before {
+  content: ""
+}
+.sap-icon-TNT--manual-task::before {
+  content: ""
+}
+.sap-icon-TNT--send-task::before {
+  content: ""
+}
+.sap-icon-TNT--receive-task::before {
+  content: ""
+}
+.sap-icon-TNT--script-task::before {
+  content: ""
+}
+.sap-icon-TNT--marquee::before {
+  content: ""
+}
+.sap-icon-TNT--data-input-arrow::before {
+  content: ""
+}
+.sap-icon-TNT--data-output-arrow::before {
+  content: ""
+}
+.sap-icon-TNT--more::before {
+  content: ""
+}
+.sap-icon-TNT--pattern::before {
+  content: ""
+}
+.sap-icon-TNT--task::before {
+  content: ""
+}
+.sap-icon-TNT--arrow::before {
+  content: ""
+}
+.sap-icon-TNT--data::before {
+  content: ""
+}
+.sap-icon-TNT--data-store::before {
+  content: ""
+}
+.sap-icon-TNT--pool::before {
+  content: ""
+}
+.sap-icon-TNT--swimlane::before {
+  content: ""
+}
+.sap-icon-TNT--select::before {
+  content: ""
+}
+.sap-icon-TNT--cursor::before {
+  content: ""
+}
+.sap-icon-TNT--api::before {
+  content: ""
+}
+.sap-icon-TNT--o-data::before {
+  content: ""
+}
+.sap-icon-TNT--javascript::before {
+  content: ""
+}
+.sap-icon-TNT--value-mapping::before {
+  content: ""
+}
+.sap-icon-TNT--terminate-end-event::before {
+  content: ""
+}
+.sap-icon-TNT--parallel-gateway::before {
+  content: ""
+}
+.sap-icon-TNT--exclusive-gateway::before {
+  content: ""
+}
+.sap-icon-TNT--service-task::before {
+  content: ""
+}
+.sap-icon-TNT--workflow-editor::before {
+  content: ""
+}
+.sap-icon-TNT--boundary-interrupting::before {
+  content: ""
+}
+.sap-icon-TNT--boundary-non-interrupting::before {
+  content: ""
+}
+.sap-icon-TNT--block::before {
+  content: ""
+}
+.sap-icon-TNT--constrain-block::before {
+  content: ""
+}
+.sap-icon-TNT--actor::before {
+  content: ""
+}
+.sap-icon-TNT--instance-specification::before {
+  content: ""
+}
+.sap-icon-TNT--value-type::before {
+  content: ""
+}
+.sap-icon-TNT--interface-block::before {
+  content: ""
+}
+.sap-icon-TNT--unit::before {
+  content: ""
+}
+.sap-icon-TNT--signal::before {
+  content: ""
+}
+.sap-icon-TNT--quantity-kind::before {
+  content: ""
+}
+.sap-icon-TNT--item-flow::before {
+  content: ""
+}
+.sap-icon-TNT--dependency::before {
+  content: ""
+}
+.sap-icon-TNT--generalization::before {
+  content: ""
+}
+.sap-icon-TNT--aggregation::before {
+  content: ""
+}
+.sap-icon-TNT--composition::before {
+  content: ""
+}
+.sap-icon-TNT--association::before {
+  content: ""
+}
+.sap-icon-TNT--port::before {
+  content: ""
+}
+.sap-icon-TNT--proxy-port::before {
+  content: ""
+}
+.sap-icon-TNT--full-port::before {
+  content: ""
+}
+.sap-icon-TNT--operations::before {
+  content: ""
+}
+.sap-icon-TNT--constrains::before {
+  content: ""
+}
+.sap-icon-TNT--receptions::before {
+  content: ""
+}
+.sap-icon-TNT--references::before {
+  content: ""
+}
+.sap-icon-TNT--parts::before {
+  content: ""
+}
+.sap-icon-TNT--flow::before {
+  content: ""
+}
+.sap-icon-TNT--values::before {
+  content: ""
+}
+.sap-icon-TNT--bill-of-material::before {
+  content: ""
+}
+.sap-icon-TNT--document-info-recording::before {
+  content: ""
+}
+.sap-icon-TNT--use-case-diagram::before {
+  content: ""
+}
+.sap-icon-TNT--bdd-diagram::before {
+  content: ""
+}
+.sap-icon-TNT--requirement-diagram::before {
+  content: ""
+}
+.sap-icon-TNT--package-diagram::before {
+  content: ""
+}
+.sap-icon-TNT--internal-block-diagram::before {
+  content: ""
+}
+.sap-icon-TNT--requirement-containment-relationship::before {
+  content: ""
+}
+.sap-icon-TNT--use-case::before {
+  content: ""
+}
+.sap-icon-TNT--use-case-extension-point::before {
+  content: ""
+}
+.sap-icon-TNT--communication-path::before {
+  content: ""
+}
+.sap-icon-TNT--note-connection::before {
+  content: ""
+}
+.sap-icon-TNT--subject::before {
+  content: ""
+}
+.sap-icon-TNT--auto-layout::before {
+  content: ""
+}
+.sap-icon-TNT--required-interface::before {
+  content: ""
+}
+.sap-icon-TNT--provided-interface::before {
+  content: ""
+}
+.sap-icon-TNT--sub-content::before {
+  content: ""
+}
+.sap-icon-TNT--connector::before {
+  content: ""
+}
+.sap-icon-TNT--local-process-call::before {
+  content: ""
+}
+.sap-icon-TNT--aggregator::before {
+  content: ""
+}
+.sap-icon-TNT--splitter::before {
+  content: ""
+}
+.sap-icon-TNT--converter::before {
+  content: ""
+}
+.sap-icon-TNT--content-modifier::before {
+  content: ""
+}
+.sap-icon-TNT--message-start-event::before {
+  content: ""
+}
+.sap-icon-TNT--message-end-event::before {
+  content: ""
+}
+.sap-icon-TNT--escalation-end-event::before {
+  content: ""
+}
+.sap-icon-TNT--start-timer-event::before {
+  content: ""
+}
+.sap-icon-TNT--error-start-event::before {
+  content: ""
+}
+.sap-icon-TNT--error-end-event::before {
+  content: ""
+}
+.sap-icon-TNT--content-enricher::before {
+  content: ""
+}
+.sap-icon-TNT--realization::before {
+  content: ""
+}
+.sap-icon-TNT--interface::before {
+  content: ""
+}
+.sap-icon-TNT--usiness-capability::before {
+  content: ""
+}
+.sap-icon-TNT--progress-group::before {
+  content: ""
+}
+.sap-icon-TNT--value-stream::before {
+  content: ""
+}
+.sap-icon-TNT--value-flow::before {
+  content: ""
+}
+.sap-icon-TNT--application::before {
+  content: ""
+}
+.sap-icon-TNT--etl-job::before {
+  content: ""
+}
+.sap-icon-TNT--business-service::before {
+  content: ""
+}
+.sap-icon-TNT--application-service::before {
+  content: ""
+}
+.sap-icon-TNT--network-node::before {
+  content: ""
+}
+.sap-icon-TNT--network::before {
+  content: ""
+}
+.sap-icon-TNT--deployment-instance::before {
+  content: ""
+}
+.sap-icon-TNT--intranet::before {
+  content: ""
+}
+.sap-icon-TNT--mobile-network::before {
+  content: ""
+}
+.sap-icon-TNT--private-cloud::before {
+  content: ""
+}
+.sap-icon-TNT--antenna::before {
+  content: ""
+}
+.sap-icon-TNT--firewall::before {
+  content: ""
+}
+.sap-icon-TNT--hub::before {
+  content: ""
+}
+.sap-icon-TNT--modem::before {
+  content: ""
+}
+.sap-icon-TNT--repeater::before {
+  content: ""
+}
+.sap-icon-TNT--router::before {
+  content: ""
+}
+.sap-icon-TNT--switch::before {
+  content: ""
+}
+.sap-icon-TNT--satellite::before {
+  content: ""
+}
+.sap-icon-TNT--system-2::before {
+  content: ""
+}
+.sap-icon-TNT--status-activating::before {
+  content: ""
+}
+.sap-icon-TNT--status-suspended::before {
+  content: ""
+}
+.sap-icon-TNT--status-suspending::before {
+  content: ""
+}
+.sap-icon-TNT--status-terminated::before {
+  content: ""
+}
+.sap-icon-TNT--status-terminating::before {
+  content: ""
+}
+.sap-icon-TNT--solution-not-licensed::before {
+  content: ""
+}
+.sap-icon-TNT--clear-all-mapping::before {
+  content: ""
+}
+.sap-icon-TNT--map-all-fields::before {
+  content: ""
 }
 :root {
   --sapRating-indicator-icon-rated: none;

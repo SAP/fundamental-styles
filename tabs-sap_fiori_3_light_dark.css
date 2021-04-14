@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.16.1
+ * Fundamental Library Styles v0.17.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -158,142 +158,6 @@
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-tabs__item--error .fd-tabs__icon {
-  color: #f88;
-  color: var(--sapErrorColor,#f88);
-  border-color: #f88;
-  border-color: var(--sapErrorColor,#f88)
-}
-.fd-tabs__item--error .fd-tabs__link .fd-tabs__tag {
-  color: #f88;
-  color: var(--sapErrorColor,#f88)
-}
-.fd-tabs__item--error .fd-tabs__link.is-selected .fd-tabs__icon,
-.fd-tabs__item--error .fd-tabs__link[aria-selected=true] .fd-tabs__icon {
-  color: #29313a;
-  color: var(--sapContent_ContrastIconColor,#29313a);
-  background-color: #f88;
-  background-color: var(--sapErrorColor,#f88)
-}
-.fd-tabs__item--error .fd-tabs__link.is-selected .fd-tabs__icon::after,
-.fd-tabs__item--error .fd-tabs__link.is-selected .fd-tabs__tag::after,
-.fd-tabs__item--error .fd-tabs__link.is-selected::after,
-.fd-tabs__item--error .fd-tabs__link[aria-selected=true] .fd-tabs__icon::after,
-.fd-tabs__item--error .fd-tabs__link[aria-selected=true] .fd-tabs__tag::after,
-.fd-tabs__item--error .fd-tabs__link[aria-selected=true]::after {
-  background-color: #f88;
-  background-color: var(--sapErrorColor,#f88)
-}
-.fd-tabs__item--warning .fd-tabs__icon {
-  color: #fabd64;
-  color: var(--sapWarningColor,#fabd64);
-  border-color: #fabd64;
-  border-color: var(--sapWarningColor,#fabd64)
-}
-.fd-tabs__item--warning .fd-tabs__link .fd-tabs__tag {
-  color: #fabd64;
-  color: var(--sapWarningColor,#fabd64)
-}
-.fd-tabs__item--warning .fd-tabs__link.is-selected .fd-tabs__icon,
-.fd-tabs__item--warning .fd-tabs__link[aria-selected=true] .fd-tabs__icon {
-  color: #29313a;
-  color: var(--sapContent_ContrastIconColor,#29313a);
-  background-color: #fabd64;
-  background-color: var(--sapWarningColor,#fabd64)
-}
-.fd-tabs__item--warning .fd-tabs__link.is-selected .fd-tabs__icon::after,
-.fd-tabs__item--warning .fd-tabs__link.is-selected .fd-tabs__tag::after,
-.fd-tabs__item--warning .fd-tabs__link.is-selected::after,
-.fd-tabs__item--warning .fd-tabs__link[aria-selected=true] .fd-tabs__icon::after,
-.fd-tabs__item--warning .fd-tabs__link[aria-selected=true] .fd-tabs__tag::after,
-.fd-tabs__item--warning .fd-tabs__link[aria-selected=true]::after {
-  background-color: #fabd64;
-  background-color: var(--sapWarningColor,#fabd64)
-}
-.fd-tabs__item--success .fd-tabs__icon {
-  color: #abe2ab;
-  color: var(--sapSuccessColor,#abe2ab);
-  border-color: #abe2ab;
-  border-color: var(--sapSuccessColor,#abe2ab)
-}
-.fd-tabs__item--success .fd-tabs__link .fd-tabs__tag {
-  color: #abe2ab;
-  color: var(--sapSuccessColor,#abe2ab)
-}
-.fd-tabs__item--success .fd-tabs__link.is-selected .fd-tabs__icon,
-.fd-tabs__item--success .fd-tabs__link[aria-selected=true] .fd-tabs__icon {
-  color: #29313a;
-  color: var(--sapContent_ContrastIconColor,#29313a);
-  background-color: #abe2ab;
-  background-color: var(--sapSuccessColor,#abe2ab)
-}
-.fd-tabs__item--success .fd-tabs__link.is-selected .fd-tabs__icon::after,
-.fd-tabs__item--success .fd-tabs__link.is-selected .fd-tabs__tag::after,
-.fd-tabs__item--success .fd-tabs__link.is-selected::after,
-.fd-tabs__item--success .fd-tabs__link[aria-selected=true] .fd-tabs__icon::after,
-.fd-tabs__item--success .fd-tabs__link[aria-selected=true] .fd-tabs__tag::after,
-.fd-tabs__item--success .fd-tabs__link[aria-selected=true]::after {
-  background-color: #abe2ab;
-  background-color: var(--sapSuccessColor,#abe2ab)
-}
-.fd-tabs__item--information .fd-tabs__icon {
-  color: #91c8f6;
-  color: var(--sapInformationColor,#91c8f6);
-  border-color: #91c8f6;
-  border-color: var(--sapInformationColor,#91c8f6)
-}
-.fd-tabs__item--information .fd-tabs__link .fd-tabs__tag {
-  color: #91c8f6;
-  color: var(--sapInformationColor,#91c8f6)
-}
-.fd-tabs__item--information .fd-tabs__link.is-selected .fd-tabs__icon,
-.fd-tabs__item--information .fd-tabs__link[aria-selected=true] .fd-tabs__icon {
-  color: #29313a;
-  color: var(--sapContent_ContrastIconColor,#29313a);
-  background-color: #91c8f6;
-  background-color: var(--sapInformationColor,#91c8f6)
-}
-.fd-tabs__item--information .fd-tabs__link.is-selected .fd-tabs__icon::after,
-.fd-tabs__item--information .fd-tabs__link.is-selected .fd-tabs__tag::after,
-.fd-tabs__item--information .fd-tabs__link.is-selected::after,
-.fd-tabs__item--information .fd-tabs__link[aria-selected=true] .fd-tabs__icon::after,
-.fd-tabs__item--information .fd-tabs__link[aria-selected=true] .fd-tabs__tag::after,
-.fd-tabs__item--information .fd-tabs__link[aria-selected=true]::after {
-  background-color: #91c8f6;
-  background-color: var(--sapInformationColor,#91c8f6)
-}
-.fd-tabs__item--neutral .fd-tabs__icon {
-  color: #d3d7d9;
-  color: var(--sapNeutralColor,#d3d7d9);
-  border-color: #d3d7d9;
-  border-color: var(--sapNeutralColor,#d3d7d9)
-}
-.fd-tabs__item--neutral .fd-tabs__link .fd-tabs__tag {
-  color: #d3d7d9;
-  color: var(--sapNeutralColor,#d3d7d9)
-}
-.fd-tabs__item--neutral .fd-tabs__link.is-selected .fd-tabs__icon,
-.fd-tabs__item--neutral .fd-tabs__link[aria-selected=true] .fd-tabs__icon {
-  color: #29313a;
-  color: var(--sapContent_ContrastIconColor,#29313a);
-  background-color: #d3d7d9;
-  background-color: var(--sapNeutralColor,#d3d7d9)
-}
-.fd-tabs__item--neutral .fd-tabs__link.is-selected .fd-tabs__icon::after,
-.fd-tabs__item--neutral .fd-tabs__link.is-selected .fd-tabs__tag::after,
-.fd-tabs__item--neutral .fd-tabs__link.is-selected::after,
-.fd-tabs__item--neutral .fd-tabs__link[aria-selected=true] .fd-tabs__icon::after,
-.fd-tabs__item--neutral .fd-tabs__link[aria-selected=true] .fd-tabs__tag::after,
-.fd-tabs__item--neutral .fd-tabs__link[aria-selected=true]::after {
-  background-color: #d3d7d9;
-  background-color: var(--sapNeutralColor,#d3d7d9)
-}
-.fd-tabs__item:first-child {
-  margin-left: 0
-}
-.fd-tabs__item:first-child .fd-tabs__link {
-  padding-left: 0
-}
 .fd-tabs__item.is-selected .fd-tabs__tag,
 .fd-tabs__item[aria-selected=true] .fd-tabs__tag {
   color: #91c8f6;
@@ -307,13 +171,149 @@
   background-color: var(--fdTabs_Selected_Color,var(--sapSelectedColor,#91c8f6))
 }
 .fd-tabs__item.is-selected .fd-tabs__icon::after,
+.fd-tabs__item.is-selected .fd-tabs__link::after,
 .fd-tabs__item.is-selected .fd-tabs__tag::after,
-.fd-tabs__item.is-selected::after,
 .fd-tabs__item[aria-selected=true] .fd-tabs__icon::after,
-.fd-tabs__item[aria-selected=true] .fd-tabs__tag::after,
-.fd-tabs__item[aria-selected=true]::after {
+.fd-tabs__item[aria-selected=true] .fd-tabs__link::after,
+.fd-tabs__item[aria-selected=true] .fd-tabs__tag::after {
   background-color: #91c8f6;
   background-color: var(--fdTabs_Selected_Color,var(--sapSelectedColor,#91c8f6))
+}
+.fd-tabs__item--error .fd-tabs__icon {
+  color: #f88;
+  color: var(--sapErrorColor,#f88);
+  border-color: #f88;
+  border-color: var(--sapErrorColor,#f88)
+}
+.fd-tabs__item--error .fd-tabs__link .fd-tabs__tag {
+  color: #f88;
+  color: var(--sapErrorColor,#f88)
+}
+.fd-tabs__item--error.is-selected .fd-tabs__icon,
+.fd-tabs__item--error[aria-selected=true] .fd-tabs__icon {
+  color: #29313a;
+  color: var(--sapContent_ContrastIconColor,#29313a);
+  background-color: #f88;
+  background-color: var(--sapErrorColor,#f88)
+}
+.fd-tabs__item--error.is-selected .fd-tabs__icon::after,
+.fd-tabs__item--error.is-selected .fd-tabs__link::after,
+.fd-tabs__item--error.is-selected .fd-tabs__tag::after,
+.fd-tabs__item--error[aria-selected=true] .fd-tabs__icon::after,
+.fd-tabs__item--error[aria-selected=true] .fd-tabs__link::after,
+.fd-tabs__item--error[aria-selected=true] .fd-tabs__tag::after {
+  background-color: #f88;
+  background-color: var(--sapErrorColor,#f88)
+}
+.fd-tabs__item--warning .fd-tabs__icon {
+  color: #fabd64;
+  color: var(--sapWarningColor,#fabd64);
+  border-color: #fabd64;
+  border-color: var(--sapWarningColor,#fabd64)
+}
+.fd-tabs__item--warning .fd-tabs__link .fd-tabs__tag {
+  color: #fabd64;
+  color: var(--sapWarningColor,#fabd64)
+}
+.fd-tabs__item--warning.is-selected .fd-tabs__icon,
+.fd-tabs__item--warning[aria-selected=true] .fd-tabs__icon {
+  color: #29313a;
+  color: var(--sapContent_ContrastIconColor,#29313a);
+  background-color: #fabd64;
+  background-color: var(--sapWarningColor,#fabd64)
+}
+.fd-tabs__item--warning.is-selected .fd-tabs__icon::after,
+.fd-tabs__item--warning.is-selected .fd-tabs__link::after,
+.fd-tabs__item--warning.is-selected .fd-tabs__tag::after,
+.fd-tabs__item--warning[aria-selected=true] .fd-tabs__icon::after,
+.fd-tabs__item--warning[aria-selected=true] .fd-tabs__link::after,
+.fd-tabs__item--warning[aria-selected=true] .fd-tabs__tag::after {
+  background-color: #fabd64;
+  background-color: var(--sapWarningColor,#fabd64)
+}
+.fd-tabs__item--success .fd-tabs__icon {
+  color: #abe2ab;
+  color: var(--sapSuccessColor,#abe2ab);
+  border-color: #abe2ab;
+  border-color: var(--sapSuccessColor,#abe2ab)
+}
+.fd-tabs__item--success .fd-tabs__link .fd-tabs__tag {
+  color: #abe2ab;
+  color: var(--sapSuccessColor,#abe2ab)
+}
+.fd-tabs__item--success.is-selected .fd-tabs__icon,
+.fd-tabs__item--success[aria-selected=true] .fd-tabs__icon {
+  color: #29313a;
+  color: var(--sapContent_ContrastIconColor,#29313a);
+  background-color: #abe2ab;
+  background-color: var(--sapSuccessColor,#abe2ab)
+}
+.fd-tabs__item--success.is-selected .fd-tabs__icon::after,
+.fd-tabs__item--success.is-selected .fd-tabs__link::after,
+.fd-tabs__item--success.is-selected .fd-tabs__tag::after,
+.fd-tabs__item--success[aria-selected=true] .fd-tabs__icon::after,
+.fd-tabs__item--success[aria-selected=true] .fd-tabs__link::after,
+.fd-tabs__item--success[aria-selected=true] .fd-tabs__tag::after {
+  background-color: #abe2ab;
+  background-color: var(--sapSuccessColor,#abe2ab)
+}
+.fd-tabs__item--information .fd-tabs__icon {
+  color: #91c8f6;
+  color: var(--sapInformationColor,#91c8f6);
+  border-color: #91c8f6;
+  border-color: var(--sapInformationColor,#91c8f6)
+}
+.fd-tabs__item--information .fd-tabs__link .fd-tabs__tag {
+  color: #91c8f6;
+  color: var(--sapInformationColor,#91c8f6)
+}
+.fd-tabs__item--information.is-selected .fd-tabs__icon,
+.fd-tabs__item--information[aria-selected=true] .fd-tabs__icon {
+  color: #29313a;
+  color: var(--sapContent_ContrastIconColor,#29313a);
+  background-color: #91c8f6;
+  background-color: var(--sapInformationColor,#91c8f6)
+}
+.fd-tabs__item--information.is-selected .fd-tabs__icon::after,
+.fd-tabs__item--information.is-selected .fd-tabs__link::after,
+.fd-tabs__item--information.is-selected .fd-tabs__tag::after,
+.fd-tabs__item--information[aria-selected=true] .fd-tabs__icon::after,
+.fd-tabs__item--information[aria-selected=true] .fd-tabs__link::after,
+.fd-tabs__item--information[aria-selected=true] .fd-tabs__tag::after {
+  background-color: #91c8f6;
+  background-color: var(--sapInformationColor,#91c8f6)
+}
+.fd-tabs__item--neutral .fd-tabs__icon {
+  color: #d3d7d9;
+  color: var(--sapNeutralColor,#d3d7d9);
+  border-color: #d3d7d9;
+  border-color: var(--sapNeutralColor,#d3d7d9)
+}
+.fd-tabs__item--neutral .fd-tabs__link .fd-tabs__tag {
+  color: #d3d7d9;
+  color: var(--sapNeutralColor,#d3d7d9)
+}
+.fd-tabs__item--neutral.is-selected .fd-tabs__icon,
+.fd-tabs__item--neutral[aria-selected=true] .fd-tabs__icon {
+  color: #29313a;
+  color: var(--sapContent_ContrastIconColor,#29313a);
+  background-color: #d3d7d9;
+  background-color: var(--sapNeutralColor,#d3d7d9)
+}
+.fd-tabs__item--neutral.is-selected .fd-tabs__icon::after,
+.fd-tabs__item--neutral.is-selected .fd-tabs__link::after,
+.fd-tabs__item--neutral.is-selected .fd-tabs__tag::after,
+.fd-tabs__item--neutral[aria-selected=true] .fd-tabs__icon::after,
+.fd-tabs__item--neutral[aria-selected=true] .fd-tabs__link::after,
+.fd-tabs__item--neutral[aria-selected=true] .fd-tabs__tag::after {
+  background-color: #d3d7d9;
+  background-color: var(--sapNeutralColor,#d3d7d9)
+}
+.fd-tabs__item:first-child {
+  margin-left: 0
+}
+.fd-tabs__item:first-child .fd-tabs__link {
+  padding-left: 0
 }
 .fd-tabs__item[dir=rtl]:first-child,
 [dir=rtl] .fd-tabs__item:first-child {

@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.16.1
+ * Fundamental Library Styles v0.17.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -179,7 +179,8 @@
 .fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body > * {
   display: block;
   text-align: left;
-  width: auto
+  width: auto;
+  margin: .1875rem 0
 }
 .fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body > [dir=rtl],
 [dir=rtl] .fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body > * {
@@ -187,16 +188,13 @@
 }
 .fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body > .fd-toolbar__separator {
   height: .0625rem;
-  margin: .375rem .1875rem;
+  margin: .1875rem;
   width: auto;
   background-color: #d9d9d9;
   background-color: var(--sapToolbar_SeparatorColor,#d9d9d9)
 }
-.fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body .fd-toolbar__overflow__label.fd-label {
-  margin: .375rem 0
-}
 .fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body .fd-toolbar__overflow__form-label.fd-form-label {
-  margin: .625rem 0 .125rem 0
+  margin-top: .4375rem
 }
 .fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body .fd-toolbar__overflow__form-label,
 .fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body .fd-toolbar__overflow__label {

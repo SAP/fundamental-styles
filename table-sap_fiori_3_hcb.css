@@ -1,16 +1,16 @@
 /*!
- * Fundamental Library Styles v0.16.1
+ * Fundamental Library Styles v0.17.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 @charset "UTF-8";
 /*!
-.fd-table(--compact, --condensed, --no-horizontal-borders, --no-vertical-borders)
+.fd-table(--compact, --condensed, --no-horizontal-borders, --no-vertical-borders, --fixed)
     thead(.fd-table__header(--no-horizontal-borders, --no-vertical-borders))
     tbody(.fd-table__body(--no-horizontal-borders, --no-vertical-borders))
     tfoot(.fd-table__footer)
         tr(.fd-table__row)([aria-selected])
-          td(.fd-table__cell(--status-indicator, --checkbox, --fit-content)) + semantic
+          td(.fd-table__cell(--status-indicator, --checkbox, --fit-content, --fixed)) + semantic
 */
 .fd-table {
   width: 100%;
@@ -105,6 +105,16 @@
   color: #fff;
   color: var(--sapList_HeaderTextColor,#fff)
 }
+.fd-table__text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  white-space: normal
+}
+.fd-table__text--no-wrap {
+  white-space: nowrap
+}
 .fd-table__cell {
   text-align: left;
   text-shadow: -1px 0 #000,0 1px #000,1px 0 #000,0 -1px #000;
@@ -130,6 +140,9 @@
 .fd-table__cell--information {
   color: #fff;
   color: var(--sapInformationColor,#fff)
+}
+.fd-table__cell--no-data {
+  text-align: center
 }
 .fd-table__cell--checkbox {
   width: .5rem;
@@ -169,8 +182,7 @@
 .fd-table__cell--fixed {
   left: 0;
   position: absolute;
-  background-color: #000;
-  background-color: var(--sapList_Background,#000);
+  background-color: inherit;
   border-bottom: .0625rem solid #999;
   border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#999);
   display: -webkit-box;
@@ -273,6 +285,24 @@
   background-color: #7a5100;
   background-color: var(--sapList_Hover_SelectionBackground,#7a5100)
 }
+.fd-table__body .fd-table__row--activable.is-selected.is-active,
+.fd-table__body .fd-table__row--activable.is-selected:active,
+.fd-table__body .fd-table__row--activable[aria-selected=true].is-active,
+.fd-table__body .fd-table__row--activable[aria-selected=true]:active {
+  background-color: #7a5100;
+  background-color: var(--sapList_Active_Background,#7a5100)
+}
+.fd-table__cell--hoverable.is-selected .fd-table__cell.is-hover,
+.fd-table__cell--hoverable.is-selected .fd-table__cell:hover,
+.fd-table__cell--hoverable[aria-selected=true] .fd-table__cell.is-hover,
+.fd-table__cell--hoverable[aria-selected=true] .fd-table__cell:hover,
+.fd-table__row--hoverable.is-selected .fd-table__cell.is-hover,
+.fd-table__row--hoverable.is-selected .fd-table__cell:hover,
+.fd-table__row--hoverable[aria-selected=true] .fd-table__cell.is-hover,
+.fd-table__row--hoverable[aria-selected=true] .fd-table__cell:hover {
+  background-color: #7a5100;
+  background-color: var(--sapList_Hover_SelectionBackground,#7a5100)
+}
 .fd-table__cell--hoverable .fd-table__cell.is-hover,
 .fd-table__cell--hoverable .fd-table__cell:hover,
 .fd-table__cell--hoverable.is-hover,
@@ -289,6 +319,13 @@
 .fd-table__cell--activable,
 .fd-table__row--activable {
   cursor: pointer
+}
+.fd-table__cell--activable.is-active *,
+.fd-table__cell--activable:active *,
+.fd-table__row--activable.is-active *,
+.fd-table__row--activable:active * {
+  color: #fff!important;
+  color: var(--sapList_Active_TextColor,#fff)!important
 }
 .fd-table__cell--activable.is-active,
 .fd-table__cell--activable:active,
@@ -362,6 +399,128 @@
   outline-color: #fff;
   outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
+.fd-table__cell--activable.is-selected,
+.fd-table__cell--activable[aria-selected=true],
+.fd-table__row--activable.is-selected,
+.fd-table__row--activable[aria-selected=true] {
+  cursor: pointer
+}
+.fd-table__cell--activable.is-selected.is-active,
+.fd-table__cell--activable.is-selected:active,
+.fd-table__cell--activable[aria-selected=true].is-active,
+.fd-table__cell--activable[aria-selected=true]:active,
+.fd-table__row--activable.is-selected.is-active,
+.fd-table__row--activable.is-selected:active,
+.fd-table__row--activable[aria-selected=true].is-active,
+.fd-table__row--activable[aria-selected=true]:active {
+  background-color: #7a5100;
+  background-color: var(--sapList_Active_Background,#7a5100);
+  color: #fff;
+  color: var(--sapList_Active_TextColor,#fff);
+  text-shadow: none
+}
+.fd-table__cell--activable.is-selected.is-active .fd-table__cell,
+.fd-table__cell--activable.is-selected:active .fd-table__cell,
+.fd-table__cell--activable[aria-selected=true].is-active .fd-table__cell,
+.fd-table__cell--activable[aria-selected=true]:active .fd-table__cell,
+.fd-table__row--activable.is-selected.is-active .fd-table__cell,
+.fd-table__row--activable.is-selected:active .fd-table__cell,
+.fd-table__row--activable[aria-selected=true].is-active .fd-table__cell,
+.fd-table__row--activable[aria-selected=true]:active .fd-table__cell {
+  border-bottom-color: #fff;
+  border-bottom-color: var(--sapList_SelectionBorderColor,#fff);
+  text-shadow: none
+}
+.fd-table__cell--activable.is-selected.is-active .fd-table__cell.is-hover,
+.fd-table__cell--activable.is-selected.is-active .fd-table__cell:hover,
+.fd-table__cell--activable.is-selected:active .fd-table__cell.is-hover,
+.fd-table__cell--activable.is-selected:active .fd-table__cell:hover,
+.fd-table__cell--activable[aria-selected=true].is-active .fd-table__cell.is-hover,
+.fd-table__cell--activable[aria-selected=true].is-active .fd-table__cell:hover,
+.fd-table__cell--activable[aria-selected=true]:active .fd-table__cell.is-hover,
+.fd-table__cell--activable[aria-selected=true]:active .fd-table__cell:hover,
+.fd-table__row--activable.is-selected.is-active .fd-table__cell.is-hover,
+.fd-table__row--activable.is-selected.is-active .fd-table__cell:hover,
+.fd-table__row--activable.is-selected:active .fd-table__cell.is-hover,
+.fd-table__row--activable.is-selected:active .fd-table__cell:hover,
+.fd-table__row--activable[aria-selected=true].is-active .fd-table__cell.is-hover,
+.fd-table__row--activable[aria-selected=true].is-active .fd-table__cell:hover,
+.fd-table__row--activable[aria-selected=true]:active .fd-table__cell.is-hover,
+.fd-table__row--activable[aria-selected=true]:active .fd-table__cell:hover {
+  background-color: #7a5100;
+  background-color: var(--sapList_Active_Background,#7a5100)
+}
+.fd-table__cell--activable.is-selected.is-active .fd-table__icon [class*=sap-icon],
+.fd-table__cell--activable.is-selected.is-active .fd-table__icon[class*=sap-icon],
+.fd-table__cell--activable.is-selected:active .fd-table__icon [class*=sap-icon],
+.fd-table__cell--activable.is-selected:active .fd-table__icon[class*=sap-icon],
+.fd-table__cell--activable[aria-selected=true].is-active .fd-table__icon [class*=sap-icon],
+.fd-table__cell--activable[aria-selected=true].is-active .fd-table__icon[class*=sap-icon],
+.fd-table__cell--activable[aria-selected=true]:active .fd-table__icon [class*=sap-icon],
+.fd-table__cell--activable[aria-selected=true]:active .fd-table__icon[class*=sap-icon],
+.fd-table__row--activable.is-selected.is-active .fd-table__icon [class*=sap-icon],
+.fd-table__row--activable.is-selected.is-active .fd-table__icon[class*=sap-icon],
+.fd-table__row--activable.is-selected:active .fd-table__icon [class*=sap-icon],
+.fd-table__row--activable.is-selected:active .fd-table__icon[class*=sap-icon],
+.fd-table__row--activable[aria-selected=true].is-active .fd-table__icon [class*=sap-icon],
+.fd-table__row--activable[aria-selected=true].is-active .fd-table__icon[class*=sap-icon],
+.fd-table__row--activable[aria-selected=true]:active .fd-table__icon [class*=sap-icon],
+.fd-table__row--activable[aria-selected=true]:active .fd-table__icon[class*=sap-icon] {
+  color: #fff;
+  color: var(--sapContent_ContrastIconColor,#fff)
+}
+.fd-table__cell--activable.is-selected.is-active .fd-form-label,
+.fd-table__cell--activable.is-selected.is-active .fd-link,
+.fd-table__cell--activable.is-selected.is-active .fd-object-status,
+.fd-table__cell--activable.is-selected:active .fd-form-label,
+.fd-table__cell--activable.is-selected:active .fd-link,
+.fd-table__cell--activable.is-selected:active .fd-object-status,
+.fd-table__cell--activable[aria-selected=true].is-active .fd-form-label,
+.fd-table__cell--activable[aria-selected=true].is-active .fd-link,
+.fd-table__cell--activable[aria-selected=true].is-active .fd-object-status,
+.fd-table__cell--activable[aria-selected=true]:active .fd-form-label,
+.fd-table__cell--activable[aria-selected=true]:active .fd-link,
+.fd-table__cell--activable[aria-selected=true]:active .fd-object-status,
+.fd-table__row--activable.is-selected.is-active .fd-form-label,
+.fd-table__row--activable.is-selected.is-active .fd-link,
+.fd-table__row--activable.is-selected.is-active .fd-object-status,
+.fd-table__row--activable.is-selected:active .fd-form-label,
+.fd-table__row--activable.is-selected:active .fd-link,
+.fd-table__row--activable.is-selected:active .fd-object-status,
+.fd-table__row--activable[aria-selected=true].is-active .fd-form-label,
+.fd-table__row--activable[aria-selected=true].is-active .fd-link,
+.fd-table__row--activable[aria-selected=true].is-active .fd-object-status,
+.fd-table__row--activable[aria-selected=true]:active .fd-form-label,
+.fd-table__row--activable[aria-selected=true]:active .fd-link,
+.fd-table__row--activable[aria-selected=true]:active .fd-object-status {
+  color: inherit
+}
+.fd-table__cell--activable.is-selected.is-active--focusable.is-focus,
+.fd-table__cell--activable.is-selected.is-active--focusable:focus,
+.fd-table__cell--activable.is-selected:active--focusable.is-focus,
+.fd-table__cell--activable.is-selected:active--focusable:focus,
+.fd-table__cell--activable[aria-selected=true].is-active--focusable.is-focus,
+.fd-table__cell--activable[aria-selected=true].is-active--focusable:focus,
+.fd-table__cell--activable[aria-selected=true]:active--focusable.is-focus,
+.fd-table__cell--activable[aria-selected=true]:active--focusable:focus,
+.fd-table__row--activable.is-selected.is-active--focusable.is-focus,
+.fd-table__row--activable.is-selected.is-active--focusable:focus,
+.fd-table__row--activable.is-selected:active--focusable.is-focus,
+.fd-table__row--activable.is-selected:active--focusable:focus,
+.fd-table__row--activable[aria-selected=true].is-active--focusable.is-focus,
+.fd-table__row--activable[aria-selected=true].is-active--focusable:focus,
+.fd-table__row--activable[aria-selected=true]:active--focusable.is-focus,
+.fd-table__row--activable[aria-selected=true]:active--focusable:focus {
+  outline-offset: -.1875rem;
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #fff;
+  outline-color: var(--sapContent_FocusColor,#fff);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted);
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+}
 .fd-table__cell--focusable.is-focus,
 .fd-table__cell--focusable:focus,
 .fd-table__row--focusable.is-focus,
@@ -373,6 +532,17 @@
   outline-color: var(--sapContent_FocusColor,#fff);
   outline-style: dotted;
   outline-style: var(--sapContent_FocusStyle,dotted)
+}
+.fd-table__cell.is-selected .fd-table__cell--fixed.is-hover,
+.fd-table__cell.is-selected .fd-table__cell--fixed:hover,
+.fd-table__cell[aria-selected=true] .fd-table__cell--fixed.is-hover,
+.fd-table__cell[aria-selected=true] .fd-table__cell--fixed:hover,
+.fd-table__row.is-selected .fd-table__cell--fixed.is-hover,
+.fd-table__row.is-selected .fd-table__cell--fixed:hover,
+.fd-table__row[aria-selected=true] .fd-table__cell--fixed.is-hover,
+.fd-table__row[aria-selected=true] .fd-table__cell--fixed:hover {
+  background-color: #7a5100;
+  background-color: var(--sapList_Hover_SelectionBackground,#7a5100)
 }
 .fd-table__footer {
   background-color: #000;
@@ -491,40 +661,40 @@
   background-color: #7a5100;
   background-color: var(--sapList_Hover_Background,#7a5100)
 }
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary,
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:active + .fd-table__row--secondary {
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary,
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary {
   background-color: #7a5100;
   background-color: var(--sapList_Active_Background,#7a5100);
   color: #fff;
   color: var(--sapList_Active_TextColor,#fff);
   text-shadow: none
 }
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary .fd-table__cell,
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:active + .fd-table__row--secondary .fd-table__cell {
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-table__cell,
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary .fd-table__cell {
   border-bottom-color: #fff;
   border-bottom-color: var(--sapList_SelectionBorderColor,#fff);
   text-shadow: none
 }
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary .fd-table__cell.is-hover,
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary .fd-table__cell:hover,
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:active + .fd-table__row--secondary .fd-table__cell.is-hover,
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:active + .fd-table__row--secondary .fd-table__cell:hover {
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-table__cell.is-hover,
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-table__cell:hover,
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary .fd-table__cell.is-hover,
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary .fd-table__cell:hover {
   background-color: #7a5100;
   background-color: var(--sapList_Active_Background,#7a5100)
 }
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary .fd-table__icon [class*=sap-icon],
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary .fd-table__icon[class*=sap-icon],
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:active + .fd-table__row--secondary .fd-table__icon [class*=sap-icon],
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:active + .fd-table__row--secondary .fd-table__icon[class*=sap-icon] {
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-table__icon [class*=sap-icon],
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-table__icon[class*=sap-icon],
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary .fd-table__icon [class*=sap-icon],
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary .fd-table__icon[class*=sap-icon] {
   color: #fff;
   color: var(--sapContent_ContrastIconColor,#fff)
 }
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary .fd-form-label,
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary .fd-link,
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable.is-active + .fd-table__row--secondary .fd-object-status,
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:active + .fd-table__row--secondary .fd-form-label,
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:active + .fd-table__row--secondary .fd-link,
-.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:active + .fd-table__row--secondary .fd-object-status {
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-form-label,
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-link,
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-object-status,
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary .fd-form-label,
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary .fd-link,
+.fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary .fd-object-status {
   color: inherit
 }
 .fd-table--pop-in .fd-table__row--main.is-selected.is-hover + .fd-table__row--secondary,
@@ -570,6 +740,17 @@
 .fd-table__body--no-horizontal-borders .fd-table__row .fd-table__cell,
 .fd-table__header--no-horizontal-borders .fd-table__row .fd-table__cell {
   border-right: none
+}
+.fd-table--responsive .fd-table__body,
+.fd-table--responsive .fd-table__header {
+  border: none
+}
+.fd-table--responsive .fd-table__row:last-child {
+  margin-bottom: 0;
+  margin-right: 0
+}
+.fd-table--responsive .fd-table__row:last-child .fd-table__cell {
+  border-bottom: none
 }
 .fd-table--compact .fd-table__cell {
   height: 2rem

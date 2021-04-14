@@ -1,0 +1,38 @@
+/*!
+ * Fundamental Library Styles v0.17.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+@charset "UTF-8";
+.fd-padding {
+  padding: 1rem!important
+}
+.fd-padding-begin-end--tiny {
+  padding-left: .5rem!important;
+  padding-right: .5rem!important
+}
+.fd-padding-begin-end--sm {
+  padding-left: 1rem!important;
+  padding-right: 1rem!important
+}
+.fd-padding-begin-end--md {
+  padding-left: 2rem!important;
+  padding-right: 2rem!important
+}
+.fd-padding-begin-end--lg {
+  padding-left: 3rem!important;
+  padding-right: 3rem!important
+}
+.fd-padding--none {
+  padding: 0!important
+}
+.fd-padding-responsive--sm {
+  padding: 0 1rem!important
+}
+.fd-padding-responsive--lg,
+.fd-padding-responsive--md {
+  padding: 0 2rem!important
+}
+.fd-padding-responsive--xl {
+  padding: 0 3rem!important
+}

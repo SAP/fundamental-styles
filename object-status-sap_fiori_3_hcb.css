@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.16.1
+ * Fundamental Library Styles v0.17.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -272,6 +272,10 @@
 }
 .fd-object-status--large {
   font-size: 1.5rem
+}
+.fd-object-status--large .fd-object-status__text {
+  font-family: "72-Light", "72-Lightfull", "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontLightFamily, "72-Light", "72-Lightfull", "72", "72full", Arial, Helvetica, sans-serif)
 }
 .fd-object-status--large .fd-object-status__icon [class*=sap-icon],
 .fd-object-status--large .fd-object-status__icon[class*=sap-icon] {

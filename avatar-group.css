@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.16.1
+ * Fundamental Library Styles v0.17.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -353,7 +353,7 @@
   left: -.25rem
 }
 /*!
-.fd-avatar-group+((--individual|--group), (--xxs|--xs|--s|--m|--l|--xl|--xxl)
+.fd-avatar-group+((--individual|--group), (--xs|--s|--m|--l|--xl)
 */
 .fd-avatar-group {
   font-size: .875rem;
@@ -369,7 +369,10 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  border: 0
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
 }
 .fd-avatar-group::after,
 .fd-avatar-group::before {
@@ -456,6 +459,33 @@
 }
 .fd-avatar-group__more-button .fd-avatar-group__button-text bdi {
   font-size: inherit
+}
+.fd-avatar-group__overflow-body {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  padding: 1rem;
+  white-space: initial
+}
+.fd-avatar-group__overflow-body::after,
+.fd-avatar-group__overflow-body::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-avatar-group__overflow-body .fd-avatar-group__item {
+  margin: .25rem
 }
 .fd-avatar-group--xs .fd-avatar-group__more-button {
   height: 2rem;
@@ -650,60 +680,80 @@
 .fd-avatar-group .fd-avatar-group__more-button--accent-color-1 {
   background-color: #d08014;
   background-color: var(--sapAccentColor1,#d08014);
+  border-color: #d08014;
+  border-color: var(--sapAccentColor1,#d08014);
   color: #fff;
   color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar-group .fd-avatar-group__more-button--accent-color-2 {
   background-color: #d04343;
   background-color: var(--sapAccentColor2,#d04343);
+  border-color: #d04343;
+  border-color: var(--sapAccentColor2,#d04343);
   color: #fff;
   color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar-group .fd-avatar-group__more-button--accent-color-3 {
   background-color: #db1f77;
   background-color: var(--sapAccentColor3,#db1f77);
+  border-color: #db1f77;
+  border-color: var(--sapAccentColor3,#db1f77);
   color: #fff;
   color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar-group .fd-avatar-group__more-button--accent-color-4 {
   background-color: #c0399f;
   background-color: var(--sapAccentColor4,#c0399f);
+  border-color: #c0399f;
+  border-color: var(--sapAccentColor4,#c0399f);
   color: #fff;
   color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar-group .fd-avatar-group__more-button--accent-color-5 {
   background-color: #6367de;
   background-color: var(--sapAccentColor5,#6367de);
+  border-color: #6367de;
+  border-color: var(--sapAccentColor5,#6367de);
   color: #fff;
   color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar-group .fd-avatar-group__more-button--accent-color-6 {
   background-color: #286eb4;
   background-color: var(--sapAccentColor6,#286eb4);
+  border-color: #286eb4;
+  border-color: var(--sapAccentColor6,#286eb4);
   color: #fff;
   color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar-group .fd-avatar-group__more-button--accent-color-7 {
   background-color: #0f828f;
   background-color: var(--sapAccentColor7,#0f828f);
+  border-color: #0f828f;
+  border-color: var(--sapAccentColor7,#0f828f);
   color: #fff;
   color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar-group .fd-avatar-group__more-button--accent-color-8 {
   background-color: #7ca10c;
   background-color: var(--sapAccentColor8,#7ca10c);
+  border-color: #7ca10c;
+  border-color: var(--sapAccentColor8,#7ca10c);
   color: #fff;
   color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar-group .fd-avatar-group__more-button--accent-color-9 {
   background-color: #925ace;
   background-color: var(--sapAccentColor9,#925ace);
+  border-color: #925ace;
+  border-color: var(--sapAccentColor9,#925ace);
   color: #fff;
   color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar-group .fd-avatar-group__more-button--accent-color-10 {
   background-color: #647987;
   background-color: var(--sapAccentColor10,#647987);
+  border-color: #647987;
+  border-color: var(--sapAccentColor10,#647987);
   color: #fff;
   color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }

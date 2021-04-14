@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.16.1
+ * Fundamental Library Styles v0.17.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -340,6 +340,11 @@
   width: .625rem;
   top: 1.0625rem;
   left: 1.0625rem
+}
+.fd-radio__label.is-focus,
+.fd-radio__label:focus {
+  z-index: 5;
+  outline: 0
 }
 .fd-radio__label.is-hover::before,
 .fd-radio__label:hover::before {
