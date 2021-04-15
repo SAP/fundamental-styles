@@ -9,8 +9,6 @@ $has-child-content-arrow-margin: 0.125rem;
 
   background-color: var(--sapList_AlternatingBackground);
   width: 15rem;
-  border-right: var(--sapList_BorderWidth) solid;
-  border-right-color: var(--sapGroup_ContentBorderColor);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -58,10 +56,6 @@ $has-child-content-arrow-margin: 0.125rem;
     width: 3.25rem;
 
     @include fd-rtl() {
-      border-right: none;
-      border-left: var(--sapList_BorderWidth) solid;
-      border-left-color: var(--sapGroup_ContentBorderColor);
-
       &.#{$block}--condensed {
         width: 2.75rem;
       }

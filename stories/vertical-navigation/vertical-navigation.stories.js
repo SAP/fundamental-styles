@@ -13,11 +13,11 @@ The vertical navigation area can be used to display navigation structures with u
 export const cozy = () => `<div class="fd-vertical-nav">
     <nav class="fd-vertical-nav__main-navigation" aria-label="Main Menu">
         <ul class="fd-list" aria-label="Main Menu">
-            <li class="fd-list__navigation-item">
+            <!--li class="fd-list__navigation-item">
                 <i class="fd-list__navigation-item__icon sap-icon--home"></i>
                 <span class="fd-list__navigation-item__text">Overview</span>
-            </li>
-            <li class="fd-list__navigation-item" onclick="toggleVerticalNavSubmenu(event)">
+            </li-->
+            <li class="fd-list__navigation-item is-expanded" onclick="toggleVerticalNavSubmenu(event)">
                 <i class="fd-list__navigation-item__icon sap-icon--calendar"></i>
                 <span class="fd-list__navigation-item__text">Calendar</span>
                 <i class="fd-list__navigation-item__arrow sap-icon--navigation-down-arrow is-expanded"></i>
@@ -30,7 +30,7 @@ export const cozy = () => `<div class="fd-vertical-nav">
                     </li>
                 </ul>
             </li>
-            <li class="fd-list__navigation-item" onclick="toggleVerticalNavSubmenu(event)">
+            <li class="fd-list__navigation-item is-expanded" onclick="toggleVerticalNavSubmenu(event)">
                 <i class="fd-list__navigation-item__icon sap-icon--customer"></i>
                 <span class="fd-list__navigation-item__text">Customers</span>
                 <i class="fd-list__navigation-item__arrow sap-icon--navigation-down-arrow is-expanded"></i>
@@ -43,10 +43,10 @@ export const cozy = () => `<div class="fd-vertical-nav">
                     </li>
                 </ul>
             </li>
-            <li class="fd-list__navigation-item">
+            <!--li class="fd-list__navigation-item">
                 <i class="fd-list__navigation-item__icon sap-icon--shipping-status"></i>
                 <span class="fd-list__navigation-item__text">Deliveries</span>
-            </li>
+            </li-->
         </ul>
     </nav>
 </div>

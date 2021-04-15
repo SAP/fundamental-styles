@@ -384,6 +384,7 @@ function toggleVerticalNavSubmenu(event) {
     let arrowIcon = button.querySelector('.fd-list__navigation-item__arrow');
 
     if(arrowIcon && arrowIcon.classList.contains('is-expanded')) {
+        button.classList.remove('is-expanded');
         arrowIcon.classList.add('sap-icon--navigation-right-arrow');
         arrowIcon.classList.remove('sap-icon--navigation-down-arrow');
         arrowIcon.classList.remove('is-expanded');
@@ -392,6 +393,7 @@ function toggleVerticalNavSubmenu(event) {
             second.style.display = 'none';
         });
     } else if (arrowIcon) {
+        button.classList.add('is-expanded');
         arrowIcon.classList.remove('sap-icon--navigation-right-arrow');
         arrowIcon.classList.add('sap-icon--navigation-down-arrow');
         arrowIcon.classList.add('is-expanded');

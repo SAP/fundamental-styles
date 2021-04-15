@@ -5,17 +5,41 @@
 
   &__navigation-item {
     background: var(--sapList_AlternatingBackground);
-    height: 2.75rem;
+    min-height: 2.75rem;
     width: 13.5rem;
     padding-left: 0.5rem;
     padding-right: 1rem;
 
+    &.is-expanded {
+      border-radius: var(--sapElement_BorderCornerRadius);
+      box-shadow: inset 0 0 0 0.0625rem var(--sapTile_BorderColor);
+      width: 13.25rem;
+      margin: 0.25rem auto;
+
+      .#{$block}__navigation-item__text {
+        padding-left: 0.375rem;
+      }
+
+      .#{$block}__navigation-item__icon {
+        padding-right: 0.25rem;
+      }
+
+      .#{$block}__navigation-item__arrow {
+        padding-left: 2.125rem;
+      }
+    }
+
     &--second {
-      width: 13rem;
+      padding: 0;
+
       .#{$block}__navigation-item__text {
         font-size: var(--sapFontSize);
         color: var(--sapContent_LabelColor);
-        margin-left: 2rem;
+        margin-left: 2.5rem;
+      }
+
+      &:last-child {
+        border-bottom: 0.0625rem solid var(--sapTile_BorderColor);
       }
     }
 
