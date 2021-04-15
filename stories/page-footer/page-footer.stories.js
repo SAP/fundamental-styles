@@ -93,11 +93,11 @@ export const ImageAndIconLink = () => `
 		</div>
 		<div class="fd-page-footer__row">
 			<a href="#" id="fd-link-14" class="fd-page-footer__row-item fd-link" tabindex="0">
-			<img class="fd-page-footer__row-item--image" src="https://picsum.photos/id/1021/50/50" alt="page footer clickable image link"/>
+			<img class="fd-page-footer__row-image" src="https://picsum.photos/id/1021/50/50" alt="page footer clickable image link"/>
 			image link
 			</a>
 			<a href="#" id="fd-link-15" class="fd-page-footer__row-item fd-link" tabindex="0">
-			<img class="fd-page-footer__row-item--image" src="https://picsum.photos/id/1021/50/50" alt="page footer clickable image link" />
+			<img class="fd-page-footer__row-image" src="https://picsum.photos/id/1021/50/50" alt="page footer clickable image link" />
 			image link
 			</a>
 			<a class="fd-page-footer__row-item fd-link" id="fd-link-16" href="/" title="Privacy Statement">Privacy Statement</a>

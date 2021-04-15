@@ -42,10 +42,10 @@ $fd-page-footer-sizes: (
         margin-right: 0;
         margin-left: $fd-footer-margin-right;
       }
+    }
 
-      &--image {
-        display: block;
-      }
+    &-image {
+      display: block;
     }
 
     &:not(:first-child) {
@@ -60,6 +60,7 @@ $fd-page-footer-sizes: (
     align-self: flex-end;
     width: 30%;
     text-align: right;
+    position: absolute;
 
     @include fd-rtl() {
       text-align: left;
@@ -84,6 +85,14 @@ $fd-page-footer-sizes: (
     .#{$block}__row {
       margin-right: 0;
       width: 100%;
+
+      &:not(:first-child) {
+        padding-top: 0;
+      }
+
+      &-item {
+        padding-top: 0.25rem;
+      }
     }
 
     .#{$block}__text {
@@ -95,6 +104,7 @@ $fd-page-footer-sizes: (
     .#{$block}__container {
       display: inline-block;
       flex-direction: row;
+      width: 100%;
     }
   }
 }
