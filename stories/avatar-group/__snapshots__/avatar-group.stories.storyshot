@@ -28,8 +28,9 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
         
                 
         <span
-          aria-label="Wendy Wallace"
+          alt="Wendy Wallace"
           class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
+          role="img"
         >
           WW
         </span>
@@ -44,8 +45,9 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
         
                 
         <span
-          aria-label="Avatar"
+          alt="Simon Doe"
           class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
+          role="img"
         >
           
                     
@@ -67,7 +69,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
         
                 
         <span
-          aria-label="John Doe"
+          alt="John Doe"
           class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
           role="img"
           style="background-image: url('/assets/images/avatars/1.svg')"
@@ -83,8 +85,9 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
         
                 
         <span
-          aria-label="Endy Wallace"
+          alt="Endy Wallace"
           class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
+          role="img"
         >
           EW
         </span>
@@ -99,8 +102,9 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
         
                 
         <span
-          aria-label="Avatar"
+          alt="Whitney Copper"
           class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
+          role="img"
         >
           
                     
@@ -122,7 +126,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
         
                 
         <span
-          aria-label="John Doe"
+          alt="John Doe"
           class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
           role="img"
           style="background-image: url('/assets/images/avatars/2.svg')"
@@ -214,8 +218,9 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                     
           <span
-            aria-label="Wendy Wallace"
+            alt="Wendy Wallace"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
+            role="img"
           >
             WW
           </span>
@@ -230,8 +235,9 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                     
           <span
-            aria-label="Avatar"
+            alt="Sarah Smith"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
+            role="img"
           >
             
                         
@@ -253,7 +259,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                     
           <span
-            aria-label="John Doe"
+            alt="John Doe"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
             role="img"
             style="background-image: url('/assets/images/avatars/1.svg')"
@@ -269,8 +275,9 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                     
           <span
-            aria-label="Endy Wallace"
+            alt="Endy Wallace"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
+            role="img"
           >
             EW
           </span>
@@ -285,8 +292,9 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                     
           <span
-            aria-label="Avatar"
+            alt="Whitney Bow"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
+            role="img"
           >
             
                         
@@ -308,7 +316,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                     
           <span
-            aria-label="John Doe"
+            alt="John Doe"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
             role="img"
             style="background-image: url('/assets/images/avatars/2.svg')"
@@ -324,8 +332,9 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                     
           <span
-            aria-label="Andy Wallace"
+            alt="Andy Wallace"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
+            role="img"
           >
             AW
           </span>
@@ -340,8 +349,9 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                     
           <span
-            aria-label="Avatar"
+            alt="John Carter"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
+            role="img"
           >
             
                         
@@ -363,7 +373,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                     
           <span
-            aria-label="John Doe"
+            alt="John Doe"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
             role="img"
             style="background-image: url('/assets/images/avatars/3.svg')"
@@ -379,8 +389,9 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                     
           <span
-            aria-label="John Moe"
+            alt="John Moe"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
+            role="img"
           >
             JM
           </span>
@@ -395,8 +406,9 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                     
           <span
-            aria-label="Joe Bloggs"
+            alt="Joe Bloggs"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
+            role="img"
           >
             JB
           </span>
@@ -411,8 +423,9 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                     
           <span
-            aria-label="Avatar"
+            alt="Simon Swan"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
+            role="img"
           >
             
                         
@@ -434,7 +447,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                     
           <span
-            aria-label="John Doe"
+            alt="John Doe"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
             role="img"
             style="background-image: url('/assets/images/avatars/4.svg')"
@@ -450,8 +463,9 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                     
           <span
-            aria-label="Fred Bloggs"
+            alt="Fred Bloggs"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
+            role="img"
           >
             FB
           </span>
@@ -466,8 +480,9 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           
                     
           <span
-            aria-label="Jan Alleman"
+            alt="Jan Alleman"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border"
+            role="img"
           >
             JA
           </span>
@@ -514,8 +529,9 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
         
                 
         <span
-          aria-label="Wendy Wallace"
+          alt="Wendy Wallace"
           class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border"
+          role="img"
         >
           WW
         </span>
@@ -579,8 +595,9 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
               
                             
               <span
-                aria-label="Wendy Wallace"
+                alt="Jason Smith"
                 class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border"
+                role="img"
               >
                 WW
               </span>
@@ -594,7 +611,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
                 <h5
                   class="fd-title fd-title--h5"
                 >
-                  Wendy Wallace
+                  Jason Smith
                 </h5>
                 
                                 
@@ -741,8 +758,9 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
         
                
         <span
-          aria-label="Avatar"
+          alt="Wendy Wallace"
           class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border"
+          role="img"
         >
           
                     
@@ -813,8 +831,9 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
               
                             
               <span
-                aria-label="Wendy Wallace"
+                alt="Wendy Wallace"
                 class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border"
+                role="img"
               >
                 WW
               </span>
@@ -975,7 +994,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
         
                
         <span
-          aria-label="Christian Bow"
+          alt="Christian Bow"
           class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
           role="img"
           style="background-image: url('/assets/images/avatars/1.svg')"
@@ -1038,7 +1057,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
               
                             
               <span
-                aria-label="Christian Bow"
+                alt="Christian Bow"
                 class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
                 role="img"
                 style="background-image: url('/assets/images/avatars/1.svg')"
@@ -1200,8 +1219,9 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
         
                
         <span
-          aria-label="Endy Wallace"
+          alt="Endy Wallace"
           class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border"
+          role="img"
         >
           EW
         </span>
@@ -1265,8 +1285,9 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
               
                             
               <span
-                aria-label="Endy Wallace"
+                alt="Endy Wallace"
                 class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border"
+                role="img"
               >
                 EW
               </span>
@@ -1501,8 +1522,9 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
             
                         
             <span
-              aria-label="Avatar"
+              alt="Gordon Smith"
               class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border"
+              role="img"
             >
               
                             
@@ -1527,7 +1549,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
             
                         
             <span
-              aria-label="John Doe"
+              alt="John Doe"
               class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
               role="img"
               style="background-image: url('/assets/images/avatars/2.svg')"
@@ -1546,8 +1568,9 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
             
                         
             <span
-              aria-label="John Moe"
+              alt="John Moe"
               class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border"
+              role="img"
             >
               JM
             </span>
@@ -1565,8 +1588,9 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
             
                         
             <span
-              aria-label="Joe Bloggs"
+              alt="Joe Bloggs"
               class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border"
+              role="img"
             >
               JB
             </span>
