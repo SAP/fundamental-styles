@@ -26,11 +26,11 @@ export const singleLineLink = () => `
 	</div>
 	<div class="fd-page-footer__container">
         <div class="fd-page-footer__row">
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-1" href="/" title="Supported Browser">Supported Browser</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-2" href="/" title="Security Disclosure">Security Disclosure</a>
-			<a class="fd-link fd-page-footer__row__item" id="fd-link-3" href="/" title="Privacy Statement">Privacy Statement</a>
-			<a class="fd-link fd-page-footer__row__item" id="fd-link-4" href="/" title="Cookie Statement">Cookie Statement</a>
-			<a class="fd-link fd-page-footer__row__item" id="fd-link-5" href="/" title="Participant Team">Participant Team</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-1" href="/" title="Supported Browser">Supported Browser</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-2" href="/" title="Security Disclosure">Security Disclosure</a>
+			<a class="fd-link fd-page-footer__row-item" id="fd-link-3" href="/" title="Privacy Statement">Privacy Statement</a>
+			<a class="fd-link fd-page-footer__row-item" id="fd-link-4" href="/" title="Cookie Statement">Cookie Statement</a>
+			<a class="fd-link fd-page-footer__row-item" id="fd-link-5" href="/" title="Participant Team">Participant Team</a>
         </div>
 		<div class="fd-page-footer__text">
 			<span class="fd-form-label"> 1992-2021 @copyright all right reserved.</span>
@@ -54,15 +54,15 @@ export const MultiLineLink = () => `
 	</div>
 	<div class="fd-page-footer__container">
 		<div class="fd-page-footer__row">
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-6" href="/" title="Supported Browser">Supported Browser</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-7" href="/" title="Security Disclosure">Security Disclosure</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-6" href="/" title="Supported Browser">Supported Browser</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-7" href="/" title="Security Disclosure">Security Disclosure</a>
 		</div>
 		<div class="fd-page-footer__row">
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-8" href="/" title="Supported Browser">Supported Browser</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-9" href="/" title="Security Disclosure">Security Disclosure</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-10" href="/" title="Privacy Statement">Privacy Statement</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-11" href="/" title="Cookie Statement">Cookie Statement</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-12" href="/" title="Participant Team">Participant Team</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-8" href="/" title="Supported Browser">Supported Browser</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-9" href="/" title="Security Disclosure">Security Disclosure</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-10" href="/" title="Privacy Statement">Privacy Statement</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-11" href="/" title="Cookie Statement">Cookie Statement</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-12" href="/" title="Participant Team">Participant Team</a>
 		</div>
 		<div class="fd-page-footer__text">
 			<span class="fd-form-label"> 1992-2021 @copyright all right reserved.</span>
@@ -86,23 +86,23 @@ export const ImageAndIconLink = () => `
 	</div>
 	<div class="fd-page-footer__container">
 		<div class="fd-page-footer__row">
-			<a href="#" id="fd-link-13"  class="fd-page-footer__row__item fd-link" tabindex="0">
+			<a href="#" id="fd-link-13"  class="fd-page-footer__row-item fd-link" tabindex="0">
 			<span class="sap-icon--download sap-icon--s"></span>
 			 icon and link
 			</a>
 		</div>
 		<div class="fd-page-footer__row">
-			<a href="#" id="fd-link-14" class="fd-page-footer__row__item fd-page-footer__row__item--image fd-link" tabindex="0">
-			<img src="https://picsum.photos/id/1021/50/50" alt="page footer clickable image link"/>
+			<a href="#" id="fd-link-14" class="fd-page-footer__row-item fd-link" tabindex="0">
+			<img class="fd-page-footer__row-item--image" src="https://picsum.photos/id/1021/50/50" alt="page footer clickable image link"/>
 			image link
 			</a>
-			<a href="#" id="fd-link-15" class="fd-page-footer__row__item fd-page-footer__row__item--image fd-link" tabindex="0">
-			<img src="https://picsum.photos/id/1021/50/50" alt="page footer clickable image link" />
+			<a href="#" id="fd-link-15" class="fd-page-footer__row-item fd-link" tabindex="0">
+			<img class="fd-page-footer__row-item--image" src="https://picsum.photos/id/1021/50/50" alt="page footer clickable image link" />
 			image link
 			</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-16" href="/" title="Privacy Statement">Privacy Statement</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-17" href="/" title="Cookie Statement">Cookie Statement</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-18" href="/" title="Participant Team">Participant Team</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-16" href="/" title="Privacy Statement">Privacy Statement</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-17" href="/" title="Cookie Statement">Cookie Statement</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-18" href="/" title="Participant Team">Participant Team</a>
 		</div>
 		<div class="fd-page-footer__text">
 			<span class="fd-form-label"> 1992-2021 @copyright all right reserved.</span>
@@ -129,11 +129,11 @@ export const FooterWithDiffrentSize = () => `
 	</div>
 	<div class="fd-page-footer__container">
         <div class="fd-page-footer__row">
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-19" href="/" title="Supported Browser">Supported Browser</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-20" href="/" title="Security Disclosure">Security Disclosure</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-21" href="/" title="Privacy Statement">Privacy Statement</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-22" href="/" title="Cookie Statement">Cookie Statement</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-23" href="/" title="Participant Team">Participant Team</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-19" href="/" title="Supported Browser">Supported Browser</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-20" href="/" title="Security Disclosure">Security Disclosure</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-21" href="/" title="Privacy Statement">Privacy Statement</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-22" href="/" title="Cookie Statement">Cookie Statement</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-23" href="/" title="Participant Team">Participant Team</a>
         </div>
 		<div class="fd-page-footer__text">
 			<span class="fd-form-label"> 1992-2021 @copyright all right reserved.</span>
@@ -150,11 +150,11 @@ export const FooterWithDiffrentSize = () => `
 	</div>
 	<div class="fd-page-footer__container">
         <div class="fd-page-footer__row">
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-24" href="/" title="Supported Browser">Supported Browser</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-25" href="/" title="Security Disclosure">Security Disclosure</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-26" href="/" title="Privacy Statement">Privacy Statement</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-27" href="/" title="Cookie Statement">Cookie Statement</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-28" href="/" title="Participant Team">Participant Team</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-24" href="/" title="Supported Browser">Supported Browser</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-25" href="/" title="Security Disclosure">Security Disclosure</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-26" href="/" title="Privacy Statement">Privacy Statement</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-27" href="/" title="Cookie Statement">Cookie Statement</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-28" href="/" title="Participant Team">Participant Team</a>
         </div>
 		<div class="fd-page-footer__text">
 			<span class="fd-form-label"> 1992-2021 @copyright all right reserved.</span>
@@ -172,11 +172,11 @@ export const FooterWithDiffrentSize = () => `
 	</div>
 	<div class="fd-page-footer__container">
         <div class="fd-page-footer__row">
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-29" href="/" title="Supported Browser">Supported Browser</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-30" href="/" title="Security Disclosure">Security Disclosure</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-31" href="/" title="Privacy Statement">Privacy Statement</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-32" href="/" title="Cookie Statement">Cookie Statement</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-33" href="/" title="Participant Team">Participant Team</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-29" href="/" title="Supported Browser">Supported Browser</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-30" href="/" title="Security Disclosure">Security Disclosure</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-31" href="/" title="Privacy Statement">Privacy Statement</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-32" href="/" title="Cookie Statement">Cookie Statement</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-33" href="/" title="Participant Team">Participant Team</a>
         </div>
 		<div class="fd-page-footer__text">
 			<span class="fd-form-label"> 1992-2021 @copyright all right reserved.</span>
@@ -193,11 +193,11 @@ export const FooterWithDiffrentSize = () => `
 	</div>
 	<div class="fd-page-footer__container">
         <div class="fd-page-footer__row">
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-34" href="/" title="Supported Browser">Supported Browser</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-35" href="/" title="Security Disclosure">Security Disclosure</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-36" href="/" title="Privacy Statement">Privacy Statement</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-37" href="/" title="Cookie Statement">Cookie Statement</a>
-			<a class="fd-page-footer__row__item fd-link" id="fd-link-38" href="/" title="Participant Team">Participant Team</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-34" href="/" title="Supported Browser">Supported Browser</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-35" href="/" title="Security Disclosure">Security Disclosure</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-36" href="/" title="Privacy Statement">Privacy Statement</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-37" href="/" title="Cookie Statement">Cookie Statement</a>
+			<a class="fd-page-footer__row-item fd-link" id="fd-link-38" href="/" title="Participant Team">Participant Team</a>
         </div>
 		<div class="fd-page-footer__text">
 			<span class="fd-form-label"> 1992-2021 @copyright all right reserved.</span>

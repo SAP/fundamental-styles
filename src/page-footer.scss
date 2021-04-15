@@ -13,18 +13,13 @@ $fd-page-footer-sizes: (
 .#{$block} {
   @include fd-reset();
 
-  $fd-footer-padding-top: 0.75rem !default;
   $fd-footer-margin-right: 1.5rem !default;
-  $fd-footer-link-padding-top: 0.25rem !default;
-
-  @mixin fd-truncate-text {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+  $fd-footer-label-padding-top: 0.75rem !default;
 
   background: var(--sapBaseColor);
   position: relative;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
 
   &__logo {
     @include fd-reset();
@@ -40,7 +35,7 @@ $fd-page-footer-sizes: (
     word-break: break-all;
     width: 70%;
 
-    &__item {
+    &-item {
       margin-right: $fd-footer-margin-right;
 
       @include fd-rtl() {
@@ -49,21 +44,20 @@ $fd-page-footer-sizes: (
       }
 
       &--image {
-        display: inline-grid;
+        display: block;
       }
     }
 
     &:not(:first-child) {
-      padding-top: $fd-footer-link-padding-top;
+      padding-top: 0.25rem;
     }
   }
 
   &__text {
     @include fd-reset();
-    @include fd-truncate-text();
+    @include fd-ellipsis();
 
     align-self: flex-end;
-    position: absolute;
     width: 30%;
     text-align: right;
 
@@ -77,19 +71,15 @@ $fd-page-footer-sizes: (
     &--#{$set-name} {
       padding-right: map-get($size-set, 'padding');
       padding-left: map-get($size-set, 'padding');
-      padding-top: 1.5rem;
-      padding-bottom: 2rem;
       .#{$block}__container {
-        display: flex;
-
         @include fd-flex(column);
 
-        padding-top: $fd-footer-padding-top;
+        padding-top: $fd-footer-label-padding-top;
       }
     }
   }
 
-  @media (min-width: 361px) and (max-width: 768px) {
+  @media (max-width: 768px) {
 
     .#{$block}__row {
       margin-right: 0;
@@ -99,23 +89,7 @@ $fd-page-footer-sizes: (
     .#{$block}__text {
       width: 90%;
       text-align: left;
-    }
-
-    .#{$block}__container {
-      display: inline-block;
-      flex-direction: row;
-    }
-  }
-
-  @media (max-width: 360px) {
-
-    .#{$block}__row {
-      margin-right: 0;
-      width: 100%;
-    }
-
-    .#{$block}__text {
-      width: 90%;
+      padding-top: $fd-footer-label-padding-top;
     }
 
     .#{$block}__container {
