@@ -132,6 +132,7 @@ export const indication = () => `<div class="fd-vertical-nav">
                         <span class="fd-list__navigation-item__text">Second level item 2</span>
                     </li>
                 </ul>
+                <span class="fd-list__navigation-item__indicator"></span>
             </li>
         </ul>
     </nav>
@@ -143,7 +144,7 @@ export const indication = () => `<div class="fd-vertical-nav">
             <li class="fd-list__navigation-item--condensed fd-list__navigation-item--indicated">
                 <i class="fd-list__navigation-item__icon sap-icon--home"></i>
                 <span class="fd-list__navigation-item__text">Overview</span>
-                        <span class="fd-list__navigation-item__indicator"></span>
+                <span class="fd-list__navigation-item__indicator"></span>
             </li>
             <li class="fd-list__navigation-item--condensed">
                 <i class="fd-list__navigation-item__icon sap-icon--calendar"></i>

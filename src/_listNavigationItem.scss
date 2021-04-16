@@ -3,12 +3,29 @@
 .#{$block} {
   list-style-type: none;
 
+  .#{$block}__navigation-item__indicator {
+    &::after {
+      content: "";
+      width: 0.1875rem;
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 0.5625rem; // (height of nav item - height of indicator) / 2
+      height: 1.625rem;
+      background-color: var(--sapSelectedColor);
+      color: var(--sapSelectedColor);
+      border-radius: var(--sapField_BorderCornerRadius);
+      margin-right: 0.3125rem;
+    }
+  }
+
   &__navigation-item {
     background: var(--sapList_AlternatingBackground);
     min-height: 2.75rem;
     width: 13.5rem;
     padding-left: 0.5rem;
     padding-right: 1rem;
+    position: relative;
 
     &.is-expanded {
       border-radius: var(--sapElement_BorderCornerRadius);
@@ -26,6 +43,12 @@
 
       .#{$block}__navigation-item__arrow {
         padding-left: 2.125rem;
+      }
+    }
+
+    &.is-expanded > .#{$block}__navigation-item__indicator {
+      &::after {
+        display: none;
       }
     }
 
@@ -50,24 +73,7 @@
     }
 
     &--indicated {
-      position: relative;
       color: var(--sapSelectedColor);
-
-      .#{$block}__navigation-item__indicator {
-        &::after {
-          content: "";
-          width: 0.1875rem;
-          display: inline-block;
-          position: absolute;
-          right: 0;
-          top: 0.5625rem; // (height of nav item - height of indicator) / 2
-          height: 1.625rem;
-          background-color: var(--sapSelectedColor);
-          color: var(--sapSelectedColor);
-          border-radius: var(--sapField_BorderCornerRadius);
-          margin-right: 0.3125rem;
-        }
-      }
 
       .#{$block}__navigation-item__text,
       .#{$block}__navigation-item__icon,
@@ -76,11 +82,11 @@
       }
     }
 
-    .#{$block}__navigation-item--second .#{$block}__navigation-item--indicated .#{$block}__navigation-item__text {
+    .#{$block}__navigation-item--second.#{$block}__navigation-item--indicated .#{$block}__navigation-item__text {
       color: var(--sapSelectedColor);
     }
 
-    .#{$block}__navigation-item--second .#{$block}__navigation-item--indicated .#{$block}__navigation-item__indicator {
+    .#{$block}__navigation-item--second.#{$block}__navigation-item--indicated .#{$block}__navigation-item__indicator {
       &::after {
         margin-right: 0.125rem;
       }
