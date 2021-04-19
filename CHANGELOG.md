@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.17.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.17.1-rc.0...v0.17.1-rc.1) (2021-04-19)
+
+
+### Features
+
+* Introduce non fiori3 page footer component ([#2237](https://github.com/SAP/fundamental-styles/issues/2237)) ([8faa329](https://github.com/SAP/fundamental-styles/commit/8faa329377a6325c0ab6fdc8719d09a5fe2d19e8))
+
 ### [0.17.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.17.0...v0.17.1-rc.0) (2021-04-18)
 
 ## [0.17.0](https://github.com/SAP/fundamental-styles/compare/v0.17.0-rc.49...v0.17.0) (2021-04-14)
