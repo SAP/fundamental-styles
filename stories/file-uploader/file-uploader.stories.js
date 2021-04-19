@@ -131,3 +131,73 @@ compact.parameters = {
         storyDescription: 'For compact File Uploader apply the `--compact` modifier to the button and input elements.'
     }
 };
+
+
+
+export const status = () => `<div class="fd-form-item">
+  <label class="fd-form-label" id="browse_input3_label" >Upload Document (Error)</label>
+  <div class="fd-file-uploader">
+    <input
+      aria-labelledby="browse_input3_label"
+      class="fd-input fd-input--compact fd-file-uploader__input is-error" 
+      onclick="browseFile('input2');" 
+      id="browse_input3" 
+      type="text"
+      title="Choose a file for upload"  
+      placeholder="Choose a file for upload"
+      autocomplete="off"
+      readonly>
+    <button
+      class="fd-button fd-button--compact fd-file-uploader__button"  
+      onclick="browseFile('input2');"
+      id="file-uploader-button-3" 
+      aria-label="Select a file for uploading">Browse...
+    </button>
+  </div>
+  <div class="fd-file-uploader__hidden" aria-live="polite" aria-atomic="true"></div>
+  <input
+    aria-labelledby="browse_input3_label"
+    hidden
+    id="input2"
+    class="fd-file-uploader__hidden"
+    type="file"
+    onchange="selectFile(this,'browse_input3')">
+</div>
+<br/>
+<label class="fd-form-label" id="browse_input3_label" >Upload Document (Warning)</label>
+  <div class="fd-file-uploader">
+    <input
+      aria-labelledby="browse_input3_label"
+      class="fd-input fd-input--compact fd-file-uploader__input is-warning" 
+      onclick="browseFile('input2');" 
+      id="browse_input3" 
+      type="text"
+      title="Choose a file for upload"  
+      placeholder="Choose a file for upload"
+      autocomplete="off"
+      readonly>
+    <button
+      class="fd-button fd-button--compact fd-file-uploader__button"  
+      onclick="browseFile('input2');"
+      id="file-uploader-button-3" 
+      aria-label="Select a file for uploading">Browse...
+    </button>
+  </div>
+  <div class="fd-file-uploader__hidden" aria-live="polite" aria-atomic="true"></div>
+  <input
+    aria-labelledby="browse_input3_label"
+    hidden
+    id="input2"
+    class="fd-file-uploader__hidden"
+    type="file"
+    onchange="selectFile(this,'browse_input3')">
+</div>
+`;
+
+
+status.parameters = {
+    docs: {
+        iframeHeight: 250,
+        storyDescription: 'For Status File Uploader apply the `--compact` modifier to the button and input elements.'
+    }
+};
