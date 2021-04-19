@@ -135,13 +135,13 @@ compact.parameters = {
 
 
 export const status = () => `<div class="fd-form-item">
-  <label class="fd-form-label" id="browse_input3_label" >Upload Document (Error)</label>
+  <label class="fd-form-label" id="browse_input4_label" >Upload Document (Error)</label>
   <div class="fd-file-uploader">
     <input
-      aria-labelledby="browse_input3_label"
+      aria-labelledby="browse_input4_label"
       class="fd-input fd-input--compact fd-file-uploader__input is-error" 
       onclick="browseFile('input2');" 
-      id="browse_input3" 
+      id="browse_input4" 
       type="text"
       title="Choose a file for upload"  
       placeholder="Choose a file for upload"
@@ -150,25 +150,54 @@ export const status = () => `<div class="fd-form-item">
     <button
       class="fd-button fd-button--compact fd-file-uploader__button"  
       onclick="browseFile('input2');"
-      id="file-uploader-button-3" 
+      id="file-uploader-button-4" 
       aria-label="Select a file for uploading">Browse...
     </button>
   </div>
   <div class="fd-file-uploader__hidden" aria-live="polite" aria-atomic="true"></div>
   <input
-    aria-labelledby="browse_input3_label"
+    aria-labelledby="browse_input4_label"
     hidden
-    id="input2"
+    id="input3"
     class="fd-file-uploader__hidden"
     type="file"
-    onchange="selectFile(this,'browse_input3')">
+    onchange="selectFile(this,'browse_input4')">
 </div>
 <br/>
-<label class="fd-form-label" id="browse_input3_label" >Upload Document (Warning)</label>
+<label class="fd-form-label" id="browse_input5_label" >Upload Document (Warning)</label>
   <div class="fd-file-uploader">
     <input
-      aria-labelledby="browse_input3_label"
+      aria-labelledby="browse_input5_label"
       class="fd-input fd-input--compact fd-file-uploader__input is-warning" 
+      onclick="browseFile('input2');" 
+      id="browse_input5" 
+      type="text"
+      title="Choose a file for upload"  
+      placeholder="Choose a file for upload"
+      autocomplete="off"
+      readonly>
+    <button
+      class="fd-button fd-button--compact fd-file-uploader__button"  
+      onclick="browseFile('input2');"
+      id="file-uploader-button-5" 
+      aria-label="Select a file for uploading">Browse...
+    </button>
+  </div>
+  <div class="fd-file-uploader__hidden" aria-live="polite" aria-atomic="true"></div>
+  <input
+    aria-labelledby="browse_input5_label"
+    hidden
+    id="input4"
+    class="fd-file-uploader__hidden"
+    type="file"
+    onchange="selectFile(this,'browse_input5')">
+</div>
+<br/>
+<label class="fd-form-label" id="browse_input6_label" >Upload Document (Information)</label>
+  <div class="fd-file-uploader">
+    <input
+      aria-labelledby="browse_input6_label"
+      class="fd-input fd-input--compact fd-file-uploader__input is-information" 
       onclick="browseFile('input2');" 
       id="browse_input3" 
       type="text"
@@ -179,18 +208,18 @@ export const status = () => `<div class="fd-form-item">
     <button
       class="fd-button fd-button--compact fd-file-uploader__button"  
       onclick="browseFile('input2');"
-      id="file-uploader-button-3" 
+      id="file-uploader-button-6" 
       aria-label="Select a file for uploading">Browse...
     </button>
   </div>
   <div class="fd-file-uploader__hidden" aria-live="polite" aria-atomic="true"></div>
   <input
-    aria-labelledby="browse_input3_label"
+    aria-labelledby="browse_input6_label"
     hidden
-    id="input2"
+    id="input5"
     class="fd-file-uploader__hidden"
     type="file"
-    onchange="selectFile(this,'browse_input3')">
+    onchange="selectFile(this,'browse_input6')">
 </div>
 `;
 

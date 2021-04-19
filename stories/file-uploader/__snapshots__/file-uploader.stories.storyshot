@@ -200,3 +200,195 @@ exports[`Storyshots Components/File Uploader Default 1`] = `
 
 </div>
 `;
+
+exports[`Storyshots Components/File Uploader Status 1`] = `
+<section>
+  <div
+    class="fd-form-item"
+  >
+    
+  
+    <label
+      class="fd-form-label"
+      id="browse_input4_label"
+    >
+      Upload Document (Error)
+    </label>
+    
+  
+    <div
+      class="fd-file-uploader"
+    >
+      
+    
+      <input
+        aria-labelledby="browse_input4_label"
+        autocomplete="off"
+        class="fd-input fd-input--compact fd-file-uploader__input is-error"
+        id="browse_input4"
+        onclick="browseFile('input2');"
+        placeholder="Choose a file for upload"
+        readonly=""
+        title="Choose a file for upload"
+        type="text"
+      />
+      
+    
+      <button
+        aria-label="Select a file for uploading"
+        class="fd-button fd-button--compact fd-file-uploader__button"
+        id="file-uploader-button-4"
+        onclick="browseFile('input2');"
+      >
+        Browse...
+    
+      </button>
+      
+  
+    </div>
+    
+  
+    <div
+      aria-atomic="true"
+      aria-live="polite"
+      class="fd-file-uploader__hidden"
+    />
+    
+  
+    <input
+      aria-labelledby="browse_input4_label"
+      class="fd-file-uploader__hidden"
+      hidden=""
+      id="input3"
+      onchange="selectFile(this,'browse_input4')"
+      type="file"
+    />
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <label
+    class="fd-form-label"
+    id="browse_input5_label"
+  >
+    Upload Document (Warning)
+  </label>
+  
+  
+  <div
+    class="fd-file-uploader"
+  >
+    
+    
+    <input
+      aria-labelledby="browse_input5_label"
+      autocomplete="off"
+      class="fd-input fd-input--compact fd-file-uploader__input is-warning"
+      id="browse_input5"
+      onclick="browseFile('input2');"
+      placeholder="Choose a file for upload"
+      readonly=""
+      title="Choose a file for upload"
+      type="text"
+    />
+    
+    
+    <button
+      aria-label="Select a file for uploading"
+      class="fd-button fd-button--compact fd-file-uploader__button"
+      id="file-uploader-button-5"
+      onclick="browseFile('input2');"
+    >
+      Browse...
+    
+    </button>
+    
+  
+  </div>
+  
+  
+  <div
+    aria-atomic="true"
+    aria-live="polite"
+    class="fd-file-uploader__hidden"
+  />
+  
+  
+  <input
+    aria-labelledby="browse_input5_label"
+    class="fd-file-uploader__hidden"
+    hidden=""
+    id="input4"
+    onchange="selectFile(this,'browse_input5')"
+    type="file"
+  />
+  
+
+
+  <br />
+  
+
+  <label
+    class="fd-form-label"
+    id="browse_input6_label"
+  >
+    Upload Document (Information)
+  </label>
+  
+  
+  <div
+    class="fd-file-uploader"
+  >
+    
+    
+    <input
+      aria-labelledby="browse_input6_label"
+      autocomplete="off"
+      class="fd-input fd-input--compact fd-file-uploader__input is-information"
+      id="browse_input3"
+      onclick="browseFile('input2');"
+      placeholder="Choose a file for upload"
+      readonly=""
+      title="Choose a file for upload"
+      type="text"
+    />
+    
+    
+    <button
+      aria-label="Select a file for uploading"
+      class="fd-button fd-button--compact fd-file-uploader__button"
+      id="file-uploader-button-6"
+      onclick="browseFile('input2');"
+    >
+      Browse...
+    
+    </button>
+    
+  
+  </div>
+  
+  
+  <div
+    aria-atomic="true"
+    aria-live="polite"
+    class="fd-file-uploader__hidden"
+  />
+  
+  
+  <input
+    aria-labelledby="browse_input6_label"
+    class="fd-file-uploader__hidden"
+    hidden=""
+    id="input5"
+    onchange="selectFile(this,'browse_input6')"
+    type="file"
+  />
+  
+
+
+</section>
+`;
