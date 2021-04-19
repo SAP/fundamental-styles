@@ -25,6 +25,15 @@ $fd-file-uploader-padding: 0.25rem;
       margin-left: $fd-file-uploader-padding;
       margin-right: 0;
     }
+    &.is-error {
+      background-color: var(--sapField_InvalidBackground);
+      border-color: var(--sapField_InvalidColor);
+    }
+    &.is-warning,
+    &.is-alert {
+      background-color: var(--sapField_WarningBackground);
+      border-color: var(--sapField_WarningColor);
+    }
   }
 
   &__hidden {
