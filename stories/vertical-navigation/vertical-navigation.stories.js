@@ -141,15 +141,15 @@ export const indication = () => `<div class="fd-vertical-nav">
 <div class="fd-vertical-nav fd-vertical-nav--condensed">
     <nav class="fd-vertical-nav__main-navigation" aria-label="Main Menu">
         <ul class="fd-list" aria-label="Main Menu">
-            <li class="fd-list__navigation-item--condensed fd-list__navigation-item--indicated">
+            <li class="fd-list__navigation-item--condensed">
                 <i class="fd-list__navigation-item__icon sap-icon--home"></i>
                 <span class="fd-list__navigation-item__text">Overview</span>
-                <span class="fd-list__navigation-item__indicator"></span>
             </li>
-            <li class="fd-list__navigation-item--condensed">
+            <li class="fd-list__navigation-item--condensed" onclick="toggleCondensedVerticalNavSubmenu(event)">
                 <i class="fd-list__navigation-item__icon sap-icon--calendar"></i>
                 <span class="fd-list__navigation-item__text">Calendar</span>
-                <i class="fd-list__navigation-item__arrow sap-icon--navigation-down-arrow is-expanded"></i>    
+                <i class="fd-list__navigation-item__arrow sap-icon--navigation-down-arrow"></i>    
+                <span class="fd-list__navigation-item__indicator"></span>
             </li>
         </ul>
     </nav>
@@ -177,12 +177,12 @@ export const condensed = () => `<div class="fd-vertical-nav fd-vertical-nav--con
             <li class="fd-list__navigation-item--condensed">
                 <i class="fd-list__navigation-item__icon sap-icon--calendar"></i>
                 <span class="fd-list__navigation-item__text">Calendar</span>
-                <i class="fd-list__navigation-item__arrow sap-icon--navigation-down-arrow is-expanded"></i>    
+                <i class="fd-list__navigation-item__arrow sap-icon--navigation-down-arrow"></i>    
             </li>
             <li class="fd-list__navigation-item--condensed">
                 <i class="fd-list__navigation-item__icon sap-icon--customer"></i>
                 <span class="fd-list__navigation-item__text">Customers</span>
-                <i class="fd-list__navigation-item__arrow sap-icon--navigation-down-arrow is-expanded"></i>    
+                <i class="fd-list__navigation-item__arrow sap-icon--navigation-down-arrow"></i>    
             </li>
             <li class="fd-list__navigation-item--condensed">
                 <i class="fd-list__navigation-item__icon sap-icon--shipping-status"></i>

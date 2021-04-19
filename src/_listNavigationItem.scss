@@ -27,6 +27,10 @@
     padding-right: 1rem;
     position: relative;
 
+    .fd-list {
+      display: none;
+    }
+
     &.is-expanded {
       border-radius: var(--sapElement_BorderCornerRadius);
       box-shadow: inset 0 0 0 0.0625rem var(--sapTile_BorderColor);
@@ -43,6 +47,10 @@
 
       .#{$block}__navigation-item__arrow {
         padding-left: 2.125rem;
+      }
+
+      .fd-list {
+        display: block;
       }
     }
 
@@ -100,11 +108,18 @@
         display: none;
       }
 
+      &.is-expanded {
+        .#{$block}__navigation-item__arrow, .#{$block}__navigation-item__indicator {
+          display: none;
+        }
+      }
+
       .#{$block}__navigation-item__arrow {
         width: 0;
         height: 0;
 
         &::before {
+          display: inline-block;
           content: "";
           min-width: 0;
           min-height: 0;

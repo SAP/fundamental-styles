@@ -376,6 +376,19 @@ function toggleNestedListSubmenu(event) {
     }
 }
 
+function toggleCondensedVerticalNavSubmenu(event) {
+    let button = event.target;
+    if (button.tagName.toLowerCase() !== 'li') {
+        button = event.target.parentNode;
+    }
+
+    if(!button.classList.contains('is-expanded')) {
+        button.classList.add('is-expanded');
+    } else if(button.classList.contains('is-expanded')) {
+        button.classList.remove('is-expanded');
+    }
+}
+
 function toggleVerticalNavSubmenu(event) {
     let button = event.target;
     if (button.tagName.toLowerCase() !== 'li') {
@@ -385,21 +398,13 @@ function toggleVerticalNavSubmenu(event) {
 
     if(arrowIcon && arrowIcon.classList.contains('is-expanded')) {
         button.classList.remove('is-expanded');
+        arrowIcon.classList.remove('is-expanded');
         arrowIcon.classList.add('sap-icon--navigation-right-arrow');
         arrowIcon.classList.remove('sap-icon--navigation-down-arrow');
-        arrowIcon.classList.remove('is-expanded');
-        const seconds = arrowIcon.parentElement.getElementsByTagName('ul');
-        seconds.forEach(second => {
-            second.style.display = 'none';
-        });
     } else if (arrowIcon) {
         button.classList.add('is-expanded');
+        arrowIcon.classList.add('is-expanded');
         arrowIcon.classList.remove('sap-icon--navigation-right-arrow');
         arrowIcon.classList.add('sap-icon--navigation-down-arrow');
-        arrowIcon.classList.add('is-expanded');
-        const seconds = arrowIcon.parentElement.getElementsByTagName('ul');
-        seconds.forEach(second => {
-            second.style.display = 'block';
-        });
     }
 }
