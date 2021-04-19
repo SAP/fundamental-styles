@@ -1,0 +1,110 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-page-footer;
+
+$fd-page-footer-sizes: (
+  "xl": ("padding": 3rem),
+  "lg": ("padding": 2rem),
+  "md": ("padding": 1rem),
+  "sm": ("padding": 0.5rem)
+);
+
+.#{$block} {
+  @include fd-reset();
+
+  $fd-footer-margin-right: 1.5rem !default;
+  $fd-footer-label-padding-top: 0.75rem !default;
+
+  background: var(--sapBaseColor);
+  position: relative;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+
+  &__logo {
+    @include fd-reset();
+
+    width: 3rem;
+    height: 1.5rem;
+    overflow: hidden;
+  }
+
+  &__row {
+    @include fd-reset();
+
+    word-break: break-all;
+    width: 70%;
+
+    &-item {
+      margin-right: $fd-footer-margin-right;
+
+      @include fd-rtl() {
+        margin-right: 0;
+        margin-left: $fd-footer-margin-right;
+      }
+    }
+
+    &-image {
+      display: block;
+    }
+
+    &:not(:first-child) {
+      padding-top: 0.25rem;
+    }
+  }
+
+  &__text {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    align-self: flex-end;
+    width: 30%;
+    text-align: right;
+    position: absolute;
+
+    @include fd-rtl() {
+      text-align: left;
+    }
+  }
+
+  // sizes
+  @each $set-name, $size-set in $fd-page-footer-sizes {
+    &--#{$set-name} {
+      padding-right: map-get($size-set, 'padding');
+      padding-left: map-get($size-set, 'padding');
+      .#{$block}__container {
+        @include fd-flex(column);
+
+        padding-top: $fd-footer-label-padding-top;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    .#{$block}__row {
+      margin-right: 0;
+      width: 100%;
+
+      &:not(:first-child) {
+        padding-top: 0;
+      }
+
+      &-item {
+        padding-top: 0.25rem;
+      }
+    }
+
+    .#{$block}__text {
+      width: 90%;
+      text-align: left;
+      padding-top: $fd-footer-label-padding-top;
+    }
+
+    .#{$block}__container {
+      display: inline-block;
+      flex-direction: row;
+      width: 100%;
+    }
+  }
+}
