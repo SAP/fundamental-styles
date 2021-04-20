@@ -227,6 +227,6 @@ export const status = () => `<div class="fd-form-item">
 status.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: 'For Status File Uploader apply the `--compact` modifier to the button and input elements.'
+        storyDescription: 'For Status File Uploader apply the corresponding status class `is-success, is-error, is-warning, is-information ` modifier to the input element.'
     }
 };

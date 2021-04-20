@@ -9,7 +9,7 @@ $fd-file-uploader-padding: 0.25rem;
 .#{$block} {
   @include fd-reset();
   @include fd-flex-vertical-center();
-
+  
   &__input.#{$input} {
     width: auto;
     margin-right: $fd-file-uploader-padding;
@@ -26,13 +26,17 @@ $fd-file-uploader-padding: 0.25rem;
       margin-right: 0;
     }
 
+    &.is-success {
+      background-color: var(--sapField_SuccessBackground);
+      border-color: var(--sapField_SuccessColor);
+    }
+
     &.is-error {
       background-color: var(--sapField_InvalidBackground);
       border-color: var(--sapField_InvalidColor);
     }
 
-    &.is-warning,
-    &.is-alert {
+    &.is-warning {
       background-color: var(--sapField_WarningBackground);
       border-color: var(--sapField_WarningColor);
     }
