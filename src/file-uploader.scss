@@ -9,7 +9,7 @@ $fd-file-uploader-padding: 0.25rem;
 .#{$block} {
   @include fd-reset();
   @include fd-flex-vertical-center();
-  
+
   &__input.#{$input} {
     width: auto;
     margin-right: $fd-file-uploader-padding;
