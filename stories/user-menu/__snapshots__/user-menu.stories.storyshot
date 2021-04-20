@@ -1895,7 +1895,7 @@ exports[`Storyshots Components/User Menu Compact 1`] = `
             
                         
             <a
-              class="fd-list__link fd-list__link--navigation-indicator is-selected"
+              class="fd-list__link fd-list__link--navigation-indicator"
               tabindex="0"
             >
               
@@ -1927,7 +1927,7 @@ exports[`Storyshots Components/User Menu Compact 1`] = `
             
                         
             <a
-              class="fd-list__link fd-list__link--navigation-indicator"
+              class="fd-list__link fd-list__link--navigation-indicator is-selected"
               tabindex="0"
             >
               
@@ -2160,12 +2160,12 @@ exports[`Storyshots Components/User Menu Compact 1`] = `
       
             
       <span
-        aria-controls="popoverA8"
+        aria-controls="popoverA5"
         aria-expanded="true"
         aria-haspopup="true"
         aria-label="Avatar"
         class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail"
-        onclick="onPopoverClick('popoverA8');"
+        onclick="onPopoverClick('popoverA5');"
         role="button"
         style="background-image: url('assets/images/avatars/3.svg');"
         tabindex="0"
@@ -2179,7 +2179,7 @@ exports[`Storyshots Components/User Menu Compact 1`] = `
     <div
       aria-hidden="false"
       class="fd-popover__body fd-popover__body--right"
-      id="popoverA8"
+      id="popoverA5"
     >
       
             
@@ -2205,7 +2205,7 @@ exports[`Storyshots Components/User Menu Compact 1`] = `
                             
               <button
                 aria-label="go back"
-                class="fd-button fd-button--compact fd-button--transparent"
+                class="fd-button fd-button--transparent fd-button--compact"
               >
                 
                                 
@@ -2224,7 +2224,7 @@ exports[`Storyshots Components/User Menu Compact 1`] = `
             <div
               class="fd-bar__element"
             >
-              Proxy User
+              Proxy Roles
             </div>
             
                     
@@ -2325,12 +2325,10 @@ exports[`Storyshots Components/User Menu Compact 1`] = `
               >
                 
                                 
-                <span
-                  aria-label="Avatar"
-                  class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-1"
-                >
-                  JA
-                </span>
+                <i
+                  class="sap-icon--customer-history"
+                  role="presentation"
+                />
                 
                             
               </span>
@@ -2344,72 +2342,14 @@ exports[`Storyshots Components/User Menu Compact 1`] = `
                 <div
                   class="fd-list__title"
                 >
-                  Julia Armstrong
+                  Design Manager
                 </div>
                 
                                 
                 <div
                   class="fd-list__byline"
                 >
-                  User Experience Designer
-                </div>
-                
-                            
-              </div>
-              
-                        
-            </a>
-            
-                    
-          </li>
-          
-                    
-          <li
-            class="fd-list__item fd-list__item--link"
-            role="listitem"
-            tabindex="-1"
-          >
-            
-                        
-            <a
-              class="fd-list__link"
-              href="#"
-              tabindex="0"
-            >
-              
-                            
-              <span
-                class="fd-list__thumbnail"
-              >
-                
-                                
-                <span
-                  aria-label="Avatar"
-                  class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-1"
-                >
-                  MA
-                </span>
-                
-                            
-              </span>
-              
-                            
-              <div
-                class="fd-list__content"
-              >
-                
-                                
-                <div
-                  class="fd-list__title"
-                >
-                  Michael Adams
-                </div>
-                
-                                
-                <div
-                  class="fd-list__byline"
-                >
-                  User Experience Designer
+                  Proxy role
                 </div>
                 
                             
@@ -2441,12 +2381,10 @@ exports[`Storyshots Components/User Menu Compact 1`] = `
               >
                 
                                 
-                <span
-                  aria-label="Avatar"
-                  class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-3"
-                >
-                  ML
-                </span>
+                <i
+                  class="sap-icon--role"
+                  role="presentation"
+                />
                 
                             
               </span>
@@ -2460,14 +2398,14 @@ exports[`Storyshots Components/User Menu Compact 1`] = `
                 <div
                   class="fd-list__title"
                 >
-                  Moniqua Legrand
+                  Design Lead
                 </div>
                 
                                 
                 <div
                   class="fd-list__byline"
                 >
-                  User Experience Designer
+                  Current Proxy role
                 </div>
                 
                             
@@ -2499,12 +2437,10 @@ exports[`Storyshots Components/User Menu Compact 1`] = `
               >
                 
                                 
-                <span
-                  aria-label="Avatar"
-                  class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-6"
-                >
-                  RW
-                </span>
+                <i
+                  class="sap-icon--employee"
+                  role="presentation"
+                />
                 
                             
               </span>
@@ -2518,14 +2454,14 @@ exports[`Storyshots Components/User Menu Compact 1`] = `
                 <div
                   class="fd-list__title"
                 >
-                  Richard Wilson
+                  User Experience Designer
                 </div>
                 
                                 
                 <div
                   class="fd-list__byline"
                 >
-                  User Experience Designer
+                  Actual Role
                 </div>
                 
                             
@@ -2557,12 +2493,10 @@ exports[`Storyshots Components/User Menu Compact 1`] = `
               >
                 
                                 
-                <span
-                  aria-label="Avatar"
-                  class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-5"
-                >
-                  SM
-                </span>
+                <i
+                  class="sap-icon--customer-history"
+                  role="presentation"
+                />
                 
                             
               </span>
@@ -2576,14 +2510,70 @@ exports[`Storyshots Components/User Menu Compact 1`] = `
                 <div
                   class="fd-list__title"
                 >
-                  Sabine Mayer
+                  Design Intern
                 </div>
                 
                                 
                 <div
                   class="fd-list__byline"
                 >
-                  User Experience Designer
+                  Proxy role
+                </div>
+                
+                            
+              </div>
+              
+                        
+            </a>
+            
+                    
+          </li>
+          
+                    
+          <li
+            class="fd-list__item fd-list__item--link"
+            role="listitem"
+            tabindex="-1"
+          >
+            
+                        
+            <a
+              class="fd-list__link"
+              href="#"
+              tabindex="0"
+            >
+              
+                            
+              <span
+                class="fd-list__thumbnail"
+              >
+                
+                                
+                <i
+                  class="sap-icon--customer-history"
+                  role="presentation"
+                />
+                
+                            
+              </span>
+              
+                            
+              <div
+                class="fd-list__content"
+              >
+                
+                                
+                <div
+                  class="fd-list__title"
+                >
+                  Design Contractor
+                </div>
+                
+                                
+                <div
+                  class="fd-list__byline"
+                >
+                  Proxy role
                 </div>
                 
                             
@@ -2624,9 +2614,9 @@ exports[`Storyshots Components/User Menu Compact 1`] = `
               
                             
               <button
-                class="fd-button fd-button--compact fd-button--transparent"
+                class="fd-button fd-button--transparent fd-button--compact"
               >
-                Sign Out
+                Select
               </button>
               
                         
@@ -2865,7 +2855,7 @@ exports[`Storyshots Components/User Menu In-Place Navigation 1`] = `
             
                         
             <a
-              class="fd-list__link fd-list__link--navigation-indicator is-selected"
+              class="fd-list__link fd-list__link--navigation-indicator"
               tabindex="0"
             >
               
@@ -2897,7 +2887,7 @@ exports[`Storyshots Components/User Menu In-Place Navigation 1`] = `
             
                         
             <a
-              class="fd-list__link fd-list__link--navigation-indicator"
+              class="fd-list__link fd-list__link--navigation-indicator is-selected"
               tabindex="0"
             >
               

@@ -195,13 +195,13 @@ export const navigation = () => `<div class="fddocs-container" style="margin-bot
                         </a>
                     </li>
                     <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                        <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-selected">
+                        <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator">
                             <i role="presentation" class="fd-list__icon sap-icon--employee-lookup"></i>
                             <span class="fd-list__title">Proxy User</span>
                         </a>
                     </li>
                     <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                        <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator">
+                        <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-selected">
                             <i role="presentation" class="fd-list__icon sap-icon--role"></i>
                             <span class="fd-list__title">Proxy Role</span>
                         </a>
@@ -810,13 +810,13 @@ export const compact = () => `<div class="fddocs-container" style="margin-bottom
                         </a>
                     </li>
                     <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                        <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-selected">
+                        <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator">
                             <i role="presentation" class="fd-list__icon sap-icon--employee-lookup"></i>
                             <span class="fd-list__title">Proxy User</span>
                         </a>
                     </li>
                     <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                        <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator">
+                        <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-selected">
                             <i role="presentation" class="fd-list__icon sap-icon--role"></i>
                             <span class="fd-list__title">Proxy Role</span>
                         </a>
@@ -868,27 +868,27 @@ export const compact = () => `<div class="fddocs-container" style="margin-bottom
         <div class="fd-popover__control">
             <span
                 class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail"
-                aria-controls="popoverA8"
+                aria-controls="popoverA5"
                 aria-expanded="true"
                 aria-haspopup="true"
                 aria-label="Avatar"
                 style="background-image: url('assets/images/avatars/3.svg');"
-                onclick="onPopoverClick('popoverA8');"
+                onclick="onPopoverClick('popoverA5');"
                 role="button"
                 tabindex="0"></span>
         </div>
 
-        <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="popoverA8">
+        <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="popoverA5">
             <div class="fd-popover__body-header">
                 <div class="fd-bar fd-bar--cozy fd-bar--header-with-subheader">
                     <div class="fd-bar__left">
                         <div class="fd-bar__element">
-                            <button aria-label="go back" class="fd-button fd-button--compact fd-button--transparent">
+                            <button aria-label="go back" class="fd-button fd-button--transparent fd-button--compact">
                                 <i class="sap-icon--navigation-left-arrow"></i>
                             </button>
                         </div>
 
-                        <div class="fd-bar__element">Proxy User</div>
+                        <div class="fd-bar__element">Proxy Roles</div>
                     </div>
                 </div>
 
@@ -911,55 +911,55 @@ export const compact = () => `<div class="fddocs-container" style="margin-bottom
                     <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
                         <a tabindex="0" class="fd-list__link" href="#">
                             <span class="fd-list__thumbnail">
-                                <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-1" aria-label="Avatar">JA</span>
+                                <i role="presentation" class="sap-icon--customer-history"></i>
                             </span>
                             <div class="fd-list__content">
-                                <div class="fd-list__title">Julia Armstrong</div>
-                                <div class="fd-list__byline">User Experience Designer</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
-                        <a tabindex="0" class="fd-list__link" href="#">
-                            <span class="fd-list__thumbnail">
-                                <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-1" aria-label="Avatar">MA</span>
-                            </span>
-                            <div class="fd-list__content">
-                                <div class="fd-list__title">Michael Adams</div>
-                                <div class="fd-list__byline">User Experience Designer</div>
+                                <div class="fd-list__title">Design Manager</div>
+                                <div class="fd-list__byline">Proxy role</div>
                             </div>
                         </a>
                     </li>
                     <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link is-selected">
                         <a tabindex="0" class="fd-list__link" href="#">
                             <span class="fd-list__thumbnail">
-                                <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-3" aria-label="Avatar">ML</span>
+                                <i role="presentation" class="sap-icon--role"></i>
                             </span>
                             <div class="fd-list__content">
-                                <div class="fd-list__title">Moniqua Legrand</div>
-                                <div class="fd-list__byline">User Experience Designer</div>
+                                <div class="fd-list__title">Design Lead</div>
+                                <div class="fd-list__byline">Current Proxy role</div>
                             </div>
                         </a>
                     </li>
                     <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
                         <a tabindex="0" class="fd-list__link" href="#">
                             <span class="fd-list__thumbnail">
-                                <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-6" aria-label="Avatar">RW</span>
+                                <i role="presentation" class="sap-icon--employee"></i>
                             </span>
                             <div class="fd-list__content">
-                                <div class="fd-list__title">Richard Wilson</div>
-                                <div class="fd-list__byline">User Experience Designer</div>
+                                <div class="fd-list__title">User Experience Designer</div>
+                                <div class="fd-list__byline">Actual Role</div>
                             </div>
                         </a>
                     </li>
                     <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
                         <a tabindex="0" class="fd-list__link" href="#">
                             <span class="fd-list__thumbnail">
-                                <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-5" aria-label="Avatar">SM</span>
+                                <i role="presentation" class="sap-icon--customer-history"></i>
                             </span>
                             <div class="fd-list__content">
-                                <div class="fd-list__title">Sabine Mayer</div>
-                                <div class="fd-list__byline">User Experience Designer</div>
+                                <div class="fd-list__title">Design Intern</div>
+                                <div class="fd-list__byline">Proxy role</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
+                        <a tabindex="0" class="fd-list__link" href="#">
+                            <span class="fd-list__thumbnail">
+                                <i role="presentation" class="sap-icon--customer-history"></i>
+                            </span>
+                            <div class="fd-list__content">
+                                <div class="fd-list__title">Design Contractor</div>
+                                <div class="fd-list__byline">Proxy role</div>
                             </div>
                         </a>
                     </li>
@@ -970,7 +970,7 @@ export const compact = () => `<div class="fddocs-container" style="margin-bottom
                 <div class="fd-bar fd-bar--footer">
                     <div class="fd-bar__right">
                         <div class="fd-bar__element">
-                            <button class="fd-button fd-button--compact fd-button--transparent">Sign Out</button>
+                            <button class="fd-button fd-button--transparent fd-button--compact">Select</button>
                         </div>
                     </div>
                 </div>
