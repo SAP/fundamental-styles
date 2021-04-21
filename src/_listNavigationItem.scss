@@ -108,9 +108,37 @@
         display: none;
       }
 
+      .#{$block}__navigation-item--second {
+        display: none;
+      }
+
       &.is-expanded {
-        .#{$block}__navigation-item__arrow, .#{$block}__navigation-item__indicator {
+        width: 17.625rem;
+
+        .#{$block}__navigation-item__text {
+          display: inline;
+        }
+
+        .#{$block}__navigation-item--second {
+          width: 14.375rem;
+          left: 3.25rem;
+          display: block;
+
+          .#{$block}__navigation-item__indicator {
+            &::after {
+              display: inline-block;
+            }
+          }
+        }
+
+        .#{$block}__navigation-item__arrow {
           display: none;
+        }
+
+        .#{$block}__navigation-item__indicator {
+          &::after {
+            display: none;
+          }
         }
       }
 
