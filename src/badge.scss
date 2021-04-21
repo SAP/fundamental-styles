@@ -26,4 +26,8 @@ $block: #{$fd-namespace}-badge;
     right: auto;
     left: 0.5rem;
   }
+
+  &--static {
+    position: static;
+  }
 }
