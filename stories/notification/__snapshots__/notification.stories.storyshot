@@ -122,7 +122,7 @@ exports[`Storyshots Components/Notifications Error 1`] = `
             
       <button
         aria-label="Close"
-        class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss"
+        class="fd-button fd-button--transparent fd-button--compact "
       >
         
                 
@@ -258,7 +258,7 @@ exports[`Storyshots Components/Notifications Information 1`] = `
             
       <button
         aria-label="Close"
-        class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss"
+        class="fd-button fd-button--transparent fd-button--compact "
       >
         
                 
@@ -288,7 +288,6 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
 
 
     <div
-      "=""
       class="fd-notification fd-notification--mobile"
     >
       
@@ -406,7 +405,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                 
             <div
               aria-hidden="true"
-              class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover"
+              class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
               id="popoverA4"
             >
               
@@ -482,7 +481,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
             
           <button
             aria-label="Close"
-            class="fd-button fd-button--transparent fd-notification__actions--dismiss"
+            class="fd-button fd-button--transparent"
           >
             
                 
@@ -517,7 +516,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
       
         
       <ul
-        class="fd-tabs fd-tabs--l fd-notification--tabs"
+        class="fd-tabs fd-tabs--l"
         role="tablist"
       >
         
@@ -539,9 +538,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
             <span
               class="fd-tabs__tag"
             >
-              
-                        By Date
-                    
+              By Date
             </span>
             
                 
@@ -567,9 +564,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
             <span
               class="fd-tabs__tag"
             >
-              
-                        By Type
-                    
+              By Type
             </span>
             
                 
@@ -595,9 +590,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
             <span
               class="fd-tabs__tag"
             >
-              
-                        By Priority
-                    
+              By Priority
             </span>
             
                 
@@ -673,7 +666,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                     
             <button
               aria-label="Close"
-              class="fd-button fd-button--transparent fd-notification__actions--dismiss"
+              class="fd-button fd-button--transparent"
             >
               
                         
@@ -805,7 +798,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                         
               <div
                 aria-hidden="true"
-                class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover"
+                class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                 id="popoverA3"
               >
                 
@@ -881,7 +874,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                     
             <button
               aria-label="Close"
-              class="fd-button fd-button--transparent fd-notification__actions--dismiss"
+              class="fd-button fd-button--transparent"
             >
               
                         
@@ -1012,7 +1005,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                         
               <div
                 aria-hidden="true"
-                class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover"
+                class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                 id="popoverA2"
               >
                 
@@ -1065,7 +1058,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                     
             <button
               aria-label="Close"
-              class="fd-button fd-button--transparent fd-notification__actions--dismiss"
+              class="fd-button fd-button--transparent"
             >
               
                         
@@ -1149,7 +1142,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                     
             <button
               aria-label="Close"
-              class="fd-button fd-button--transparent fd-notification__actions--dismiss"
+              class="fd-button fd-button--transparent"
             >
               
                         
@@ -1281,7 +1274,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                         
               <div
                 aria-hidden="true"
-                class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover"
+                class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                 id="popoverA42"
               >
                 
@@ -1357,7 +1350,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                     
             <button
               aria-label="Close"
-              class="fd-button fd-button--transparent fd-notification__actions--dismiss"
+              class="fd-button fd-button--transparent"
             >
               
                         
@@ -1488,7 +1481,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                         
               <div
                 aria-hidden="true"
-                class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover"
+                class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                 id="popoverA245"
               >
                 
@@ -1541,7 +1534,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                     
             <button
               aria-label="Close"
-              class="fd-button fd-button--transparent fd-notification__actions--dismiss"
+              class="fd-button fd-button--transparent"
             >
               
                         
@@ -1625,7 +1618,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                     
             <button
               aria-label="Close"
-              class="fd-button fd-button--transparent fd-notification__actions--dismiss"
+              class="fd-button fd-button--transparent"
             >
               
                         
@@ -1757,7 +1750,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                         
               <div
                 aria-hidden="true"
-                class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover"
+                class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                 id="popoverA5"
               >
                 
@@ -1833,7 +1826,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                     
             <button
               aria-label="Close"
-              class="fd-button fd-button--transparent fd-notification__actions--dismiss"
+              class="fd-button fd-button--transparent"
             >
               
                         
@@ -1964,7 +1957,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                         
               <div
                 aria-hidden="true"
-                class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover"
+                class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                 id="popoverA43212"
               >
                 
@@ -2017,7 +2010,7 @@ exports[`Storyshots Components/Notifications Mobile 1`] = `
                     
             <button
               aria-label="Close"
-              class="fd-button fd-button--transparent fd-notification__actions--dismiss"
+              class="fd-button fd-button--transparent"
             >
               
                         
@@ -2134,7 +2127,7 @@ exports[`Storyshots Components/Notifications No Avatar 1`] = `
             
       <button
         aria-label="Close"
-        class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss"
+        class="fd-button fd-button--transparent fd-button--compact "
       >
         
                 
@@ -2162,7 +2155,7 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
   
     
   <ul
-    class="fd-tabs fd-tabs--l fd-notification--tabs"
+    class="fd-tabs fd-tabs--l"
     role="tablist"
   >
     
@@ -2325,7 +2318,7 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
                 
         <button
           aria-label="Close"
-          class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss"
+          class="fd-button fd-button--transparent fd-button--compact "
         >
           
                     
@@ -2445,7 +2438,7 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
                     
           <div
             aria-hidden="true"
-            class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover"
+            class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
             id="popoverA5"
           >
             
@@ -2545,7 +2538,7 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
                 
         <button
           aria-label="Close"
-          class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss"
+          class="fd-button fd-button--transparent fd-button--compact "
         >
           
                     
@@ -2653,7 +2646,7 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
                 
         <button
           aria-label="Close"
-          class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss"
+          class="fd-button fd-button--transparent fd-button--compact "
         >
           
                     
@@ -2760,7 +2753,7 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
                 
         <button
           aria-label="Close"
-          class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss"
+          class="fd-button fd-button--transparent fd-button--compact "
         >
           
                     
@@ -2873,7 +2866,7 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
                 
         <button
           aria-label="Close"
-          class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss"
+          class="fd-button fd-button--transparent fd-button--compact "
         >
           
                     
@@ -2981,7 +2974,7 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
                 
         <button
           aria-label="Close"
-          class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss"
+          class="fd-button fd-button--transparent fd-button--compact "
         >
           
                     
@@ -3072,7 +3065,7 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
                 
         <button
           aria-label="Close"
-          class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss"
+          class="fd-button fd-button--transparent fd-button--compact "
         >
           
                     
@@ -3180,7 +3173,7 @@ exports[`Storyshots Components/Notifications Notification Group 1`] = `
                 
         <button
           aria-label="Close"
-          class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss"
+          class="fd-button fd-button--transparent fd-button--compact "
         >
           
                     
@@ -3299,7 +3292,7 @@ exports[`Storyshots Components/Notifications Primary 1`] = `
             
       <button
         aria-label="Close"
-        class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss"
+        class="fd-button fd-button--transparent fd-button--compact "
       >
         
                 
@@ -3442,7 +3435,7 @@ exports[`Storyshots Components/Notifications Warning 1`] = `
             
       <button
         aria-label="Close"
-        class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss"
+        class="fd-button fd-button--transparent fd-button--compact "
       >
         
                 
