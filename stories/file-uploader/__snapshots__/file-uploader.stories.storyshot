@@ -25,7 +25,6 @@ exports[`Storyshots Components/File Uploader After Selecting 1`] = `
       class="fd-input fd-file-uploader__input"
       id="browse_input2"
       onclick="browseFile('input1');"
-      readonly=""
       title="document.pdf"
       type="text"
       value="document.pdf"
@@ -94,7 +93,6 @@ exports[`Storyshots Components/File Uploader Compact 1`] = `
       id="browse_input3"
       onclick="browseFile('input2');"
       placeholder="Choose a file for upload"
-      readonly=""
       title="Choose a file for upload"
       type="text"
     />
@@ -160,7 +158,6 @@ exports[`Storyshots Components/File Uploader Default 1`] = `
       id="browse_input1"
       onclick="browseFile('input1');"
       placeholder="Choose a file for upload"
-      readonly=""
       title="Choose a file for upload"
       type="text"
     />
@@ -228,7 +225,6 @@ exports[`Storyshots Components/File Uploader Status 1`] = `
         id="browse_input4"
         onclick="browseFile('input2');"
         placeholder="Choose a file for upload"
-        readonly=""
         title="Choose a file for upload"
         type="text"
       />
@@ -291,7 +287,6 @@ exports[`Storyshots Components/File Uploader Status 1`] = `
       id="browse_input5"
       onclick="browseFile('input2');"
       placeholder="Choose a file for upload"
-      readonly=""
       title="Choose a file for upload"
       type="text"
     />
@@ -352,7 +347,6 @@ exports[`Storyshots Components/File Uploader Status 1`] = `
       id="browse_input3"
       onclick="browseFile('input2');"
       placeholder="Choose a file for upload"
-      readonly=""
       title="Choose a file for upload"
       type="text"
     />

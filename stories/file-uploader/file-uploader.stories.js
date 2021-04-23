@@ -28,7 +28,7 @@ export const primary = () => `<div class="fd-form-item">
       id="browse_input1"
       autocomplete="off"
       placeholder="Choose a file for upload"
-      readonly>
+      >
     <button
       class="fd-button"
       onclick="browseFile('input1');"
@@ -67,7 +67,7 @@ export const selected = () => `<div class="fd-form-item">
       id="browse_input2" 
       autocomplete="off"
       value="document.pdf"
-      readonly>
+      >
     <button 
       class="fd-button"
       onclick="browseFile('input1');" 
@@ -107,7 +107,7 @@ export const compact = () => `<div class="fd-form-item">
       title="Choose a file for upload"  
       placeholder="Choose a file for upload"
       autocomplete="off"
-      readonly>
+      >
     <button
       class="fd-button fd-button--compact fd-file-uploader__button"  
       onclick="browseFile('input2');"
@@ -146,7 +146,7 @@ export const status = () => `<div class="fd-form-item">
       title="Choose a file for upload"  
       placeholder="Choose a file for upload"
       autocomplete="off"
-      readonly>
+      >
     <button
       class="fd-button fd-button--compact fd-file-uploader__button"  
       onclick="browseFile('input2');"
@@ -175,7 +175,7 @@ export const status = () => `<div class="fd-form-item">
       title="Choose a file for upload"  
       placeholder="Choose a file for upload"
       autocomplete="off"
-      readonly>
+      >
     <button
       class="fd-button fd-button--compact fd-file-uploader__button"  
       onclick="browseFile('input2');"
@@ -204,7 +204,7 @@ export const status = () => `<div class="fd-form-item">
       title="Choose a file for upload"  
       placeholder="Choose a file for upload"
       autocomplete="off"
-      readonly>
+      >
     <button
       class="fd-button fd-button--compact fd-file-uploader__button"  
       onclick="browseFile('input2');"

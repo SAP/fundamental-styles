@@ -16,9 +16,15 @@ $fd-file-uploader-padding: 0.25rem;
     background-color: var(--sapField_Background);
     user-select: none;
     cursor: pointer;
+    color: transparent;
+    text-shadow: 0 0 0 var(--sapTextColor);
 
     &::placeholder {
       color: var(--sapTextColor);
+    }
+
+    &:focus{
+      outline: none;
     }
 
     @include fd-rtl() {
@@ -26,25 +32,6 @@ $fd-file-uploader-padding: 0.25rem;
       margin-right: 0;
     }
 
-    &.is-success {
-      background-color: var(--sapField_SuccessBackground);
-      border-color: var(--sapField_SuccessColor);
-    }
-
-    &.is-error {
-      background-color: var(--sapField_InvalidBackground);
-      border-color: var(--sapField_InvalidColor);
-    }
-
-    &.is-warning {
-      background-color: var(--sapField_WarningBackground);
-      border-color: var(--sapField_WarningColor);
-    }
-
-    &.is-information {
-      background-color: var(--sapField_InformationBackground);
-      border-color: var(--sapField_InformationColor);
-    }
   }
 
   &__hidden {
