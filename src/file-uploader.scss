@@ -23,7 +23,7 @@ $fd-file-uploader-padding: 0.25rem;
       color: var(--sapTextColor);
     }
 
-    &:focus{
+    &:focus {
       outline: none;
     }
 
@@ -31,7 +31,6 @@ $fd-file-uploader-padding: 0.25rem;
       margin-left: $fd-file-uploader-padding;
       margin-right: 0;
     }
-
   }
 
   &__hidden {
