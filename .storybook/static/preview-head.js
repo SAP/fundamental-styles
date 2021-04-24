@@ -376,10 +376,23 @@ function toggleNestedListSubmenu(event) {
     }
 }
 
-function toggleCondensedVerticalNavSubmenu(event) {
-    let button = event.target;
-    if (button.tagName.toLowerCase() !== 'li') {
-        button = event.target.parentNode;
+function collectionHas(a, b) { //helper function (see below)
+    for(var i = 0, len = a.length; i < len; i ++) {
+        if(a[i] == b) return true;
+    }
+    return false;
+}
+
+function toggleCondensedVerticalNavSubmenu(event, source) {
+    let button;
+    if (source === 'child') {
+        button = event.target.parentElement.parentElement.parentElement.parentElement;
+    }
+    else if (source === 'parent') {
+        button = event.target;
+        if (button.tagName.toLowerCase() !== 'li') {
+            button = event.target.parentNode;
+        }
     }
 
     if(!button.classList.contains('is-expanded')) {
