@@ -204,65 +204,127 @@ exports[`Storyshots Components/File Uploader Status 1`] = `
     class="fd-form-item"
   >
     
-  
+
+
     <label
       class="fd-form-label"
-      id="browse_input4_label"
+      id="browse_input7_label"
     >
-      Upload Document (Error)
+      Upload Document (Success)
     </label>
     
-  
+
     <div
       class="fd-file-uploader"
     >
       
-    
+  
       <input
-        aria-labelledby="browse_input4_label"
+        aria-labelledby="browse_input7_label"
         autocomplete="off"
-        class="fd-input fd-input--compact fd-file-uploader__input is-error"
-        id="browse_input4"
+        class="fd-input fd-input--compact fd-file-uploader__input is-success"
+        id="browse_input7"
         onclick="browseFile('input2');"
         placeholder="Choose a file for upload"
         title="Choose a file for upload"
         type="text"
       />
       
-    
+  
       <button
         aria-label="Select a file for uploading"
         class="fd-button fd-button--compact fd-file-uploader__button"
-        id="file-uploader-button-4"
+        id="file-uploader-button-7"
         onclick="browseFile('input2');"
       >
         Browse...
-    
+  
       </button>
       
-  
+
     </div>
     
-  
+
     <div
       aria-atomic="true"
       aria-live="polite"
       class="fd-file-uploader__hidden"
     />
     
-  
+
     <input
-      aria-labelledby="browse_input4_label"
+      aria-labelledby="browse_input7_label"
       class="fd-file-uploader__hidden"
       hidden=""
-      id="input3"
-      onchange="selectFile(this,'browse_input4')"
+      id="input6"
+      onchange="selectFile(this,'browse_input7')"
       type="file"
     />
     
 
   </div>
   
+
+  <br />
+  
+
+  
+  <label
+    class="fd-form-label"
+    id="browse_input4_label"
+  >
+    Upload Document (Error)
+  </label>
+  
+  
+  <div
+    class="fd-file-uploader"
+  >
+    
+    
+    <input
+      aria-labelledby="browse_input4_label"
+      autocomplete="off"
+      class="fd-input fd-input--compact fd-file-uploader__input is-error"
+      id="browse_input4"
+      onclick="browseFile('input2');"
+      placeholder="Choose a file for upload"
+      title="Choose a file for upload"
+      type="text"
+    />
+    
+    
+    <button
+      aria-label="Select a file for uploading"
+      class="fd-button fd-button--compact fd-file-uploader__button"
+      id="file-uploader-button-4"
+      onclick="browseFile('input2');"
+    >
+      Browse...
+    
+    </button>
+    
+  
+  </div>
+  
+  
+  <div
+    aria-atomic="true"
+    aria-live="polite"
+    class="fd-file-uploader__hidden"
+  />
+  
+  
+  <input
+    aria-labelledby="browse_input4_label"
+    class="fd-file-uploader__hidden"
+    hidden=""
+    id="input3"
+    onchange="selectFile(this,'browse_input4')"
+    type="file"
+  />
+  
+
 
   <br />
   

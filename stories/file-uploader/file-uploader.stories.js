@@ -135,6 +135,37 @@ compact.parameters = {
 
 
 export const status = () => `<div class="fd-form-item">
+
+<label class="fd-form-label" id="browse_input7_label" >Upload Document (Success)</label>
+<div class="fd-file-uploader">
+  <input
+    aria-labelledby="browse_input7_label"
+    class="fd-input fd-input--compact fd-file-uploader__input is-success" 
+    onclick="browseFile('input2');" 
+    id="browse_input7" 
+    type="text"
+    title="Choose a file for upload"  
+    placeholder="Choose a file for upload"
+    autocomplete="off"
+    >
+  <button
+    class="fd-button fd-button--compact fd-file-uploader__button"  
+    onclick="browseFile('input2');"
+    id="file-uploader-button-7" 
+    aria-label="Select a file for uploading">Browse...
+  </button>
+</div>
+<div class="fd-file-uploader__hidden" aria-live="polite" aria-atomic="true"></div>
+<input
+  aria-labelledby="browse_input7_label"
+  hidden
+  id="input6"
+  class="fd-file-uploader__hidden"
+  type="file"
+  onchange="selectFile(this,'browse_input7')">
+</div>
+<br/>
+
   <label class="fd-form-label" id="browse_input4_label" >Upload Document (Error)</label>
   <div class="fd-file-uploader">
     <input
