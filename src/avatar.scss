@@ -91,6 +91,11 @@ $block: #{$fd-namespace}-avatar;
     color: var(--sapContent_IconColor);
   }
 
+  // background size
+  &--background-contain {
+    background-size: contain;
+  }
+
   // placeholder background
   &--placeholder {
     background-color: var(--sapContent_ImagePlaceholderBackground);
