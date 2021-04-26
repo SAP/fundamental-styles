@@ -54,7 +54,7 @@ export const icon = () => `
 icon.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `The icon avatar can be used to display non-interactive icons. If you want the icon to be interactive, use the **Button** component with an icon inside instead. 
+        storyDescription: `The icon avatar can be used to display non-interactive icons. If you want the icon to be interactive, use the **Button** component with an icon inside instead.
         <br><br>When using the icon avatar for illustrative purposes only, include <code>role="presentation"</code> in the element. For instance, include <code>role=</code> if the icon sits right next to a label.`
     }
 };
@@ -72,7 +72,7 @@ export const initials = () => `
 initials.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `The initials avatar can display up to three alphabetical characters representing the first and last name(s) of a person, for example: MvV for Marjolein van Veen. The order in which the first and last name(s) are displayed depends on the language-specific settings. 
+        storyDescription: `The initials avatar can display up to three alphabetical characters representing the first and last name(s) of a person, for example: MvV for Marjolein van Veen. The order in which the first and last name(s) are displayed depends on the language-specific settings.
         <br><br> When there is no equivalent text for the avatar, include <code>aria-label</code> in the element. This isn’t necessary if the avatar is used for illustrative purposes only. See **Icon** above.`
     }
 };
@@ -119,7 +119,7 @@ export const backgroundImage = () => `
 backgroundImage.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'A background image can be displayed by adding the <code>--thumbnail</code> modifier class.'
+        storyDescription: 'A background image can be displayed by adding the <code>--thumbnail</code> modifier class.<br />Changing the default <code>background-size: cover</code> to <code>background-size: contain</code> CSS property can be achieved by adding <code>--background-contain</code> modifier class'
     }
 };
 
