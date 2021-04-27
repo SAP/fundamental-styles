@@ -206,7 +206,7 @@ $block: #{$fd-namespace}-table;
       position: absolute;
       background-color: inherit;
       border-bottom: $fd-table-border;
-      margin-top: 0.0375rem;
+      margin-top: 0.05rem;
 
       @include fd-flex-vertical-center();
 
