@@ -121,7 +121,8 @@ $block: #{$fd-namespace}-checkbox;
 
   &:indeterminate + .#{$block}__label--compact::before {
     content: "\e17b";
-    font-size: 0.5625rem;
+    font-size: 0.5rem;
+    padding: 0;
   }
 
   // states
