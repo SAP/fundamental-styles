@@ -109,7 +109,7 @@ $block: #{$fd-namespace}-token;
     line-height: 1.125rem;
 
     .#{$block}__close {
-      padding: $fd-token-compact-padding-vertical $fd-token-compact-padding-horizontal;
+      padding: ($fd-token-compact-padding-vertical * 2) $fd-token-compact-padding-horizontal $fd-token-compact-padding-vertical;
       vertical-align: baseline;
       width: $fd-token-compact-close-width;
       min-width: $fd-token-compact-close-width;
