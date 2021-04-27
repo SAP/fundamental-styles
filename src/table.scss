@@ -71,7 +71,7 @@ $block: #{$fd-namespace}-table;
 
   $fd-table-basic-background: var(--sapList_Background);
   $fd-table-border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
-  $fd-table-fixed-cell-border: 0.125rem var(--sapList_TableFixedBorderColor) solid;
+  $fd-table-fixed-cell-border: var(--sapList_BorderWidth) solid var(--sapList_TableFixedBorderColor);
 
   // BLOCK BASE *******************************************
   // set all BLOCK reset and baseline styles
@@ -206,6 +206,7 @@ $block: #{$fd-namespace}-table;
       position: absolute;
       background-color: inherit;
       border-bottom: $fd-table-border;
+      margin-top: 0.0375rem;
 
       @include fd-flex-vertical-center();
 
@@ -294,6 +295,14 @@ $block: #{$fd-namespace}-table;
         @include fd-selected() {
           @include fd-active() {
             background-color: var(--sapList_Active_Background);
+          }
+        }
+      }
+
+      @include fd-first-child() {
+        .#{$block}__cell {
+          &--fixed {
+            margin-top: 0;
           }
         }
       }
