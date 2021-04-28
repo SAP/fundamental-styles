@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.17.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.17.1-rc.3...v0.17.1-rc.4) (2021-04-28)
+
+
+### Bug Fixes
+
+* remove readonly attribute from File Uploader input and add examples of  File Uploader input states ([#2267](https://github.com/SAP/fundamental-styles/issues/2267)) ([33bafd4](https://github.com/SAP/fundamental-styles/commit/33bafd4c5779af2f4ca4ca4ca8f41f73185f8ae7)), closes [#5025](https://github.com/SAP/fundamental-styles/issues/5025) [#5025](https://github.com/SAP/fundamental-styles/issues/5025) [#5025](https://github.com/SAP/fundamental-styles/issues/5025) [#5025](https://github.com/SAP/fundamental-styles/issues/5025) [#5025](https://github.com/SAP/fundamental-styles/issues/5025) [#5025](https://github.com/SAP/fundamental-styles/issues/5025)
+
 ### [0.17.1-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.17.1-rc.2...v0.17.1-rc.3) (2021-04-25)
 
 ### [0.17.1-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.17.1-rc.1...v0.17.1-rc.2) (2021-04-21)
