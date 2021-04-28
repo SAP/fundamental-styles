@@ -407,7 +407,7 @@ function toggleVerticalNavSubmenu(event) {
     if (button.tagName.toLowerCase() !== 'li') {
         button = event.target.parentNode;
     }
-    let arrowIcon = button.querySelector('.fd-list__navigation-item__arrow');
+    let arrowIcon = button.querySelector('.fd-list__navigation-item-arrow');
 
     if(arrowIcon && arrowIcon.classList.contains('is-expanded')) {
         button.classList.remove('is-expanded');

@@ -61,6 +61,9 @@
     }
 
     &--second {
+      border-bottom-right-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem;
+
       /**
        the next three lines are a hack to extend the edges of the second item to the edge of the is-expanded container,
        which I believe is the original intention of the specs but this is not 100% clear
@@ -105,7 +108,8 @@
       width: 3.25rem;
 
       .#{$block}__navigation-item-popover {
-        &--first, &--second {
+        &--first,
+        &--second {
           display: none;
           background: var(--sapList_AlternatingBackground);
         }
@@ -127,7 +131,8 @@
         }
 
         .#{$block}__navigation-item-popover {
-          &--first, &--second {
+          &--first,
+          &--second {
             overflow: hidden;
             display: block;
 
@@ -170,16 +175,9 @@
             top: 2.75rem;
             left: 3.25rem;
             width: 11.4rem;
-/**
-            &::before {
-              content: "";
-              position: absolute;
-              border-top-left-radius: $fd-popover-border-radius;
-              box-shadow: $fd-popover-box-shadow;
-            }
           }
         }
-*/
+
         .#{$block}__navigation-item-text {
           display: inline;
         }

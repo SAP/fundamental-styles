@@ -2,7 +2,27 @@ export default {
     title: 'Components/Vertical Navigation',
     parameters: {
         description: `
-The vertical navigation area can be used to display navigation structures with up to two levels and contains links that change the content area.
+The side navigation area can be used to display navigation structures with up to two levels. It contains links that change the content area. The side navigation area has three visual states: off-canvas, medium and large. Depending on the device context, two of these states are used per device.
+
+##Usage      
+**Use the vertical navigation if:**
+
+- You need to display global navigation structures of up to two levels.
+- Your scenarios are in the tooling or administration space.
+- If you want the entries to change as though they are dynamic content.
+
+**Do not use the vertical navigation if:**
+
+- Your scenarios are not in the tooling or administration space.
+
+##States
+Side navigation can be viewed in three different states:
+
+- **Expanded:** everything is shown; icons and/or text.
+- **Condensed:** only icons are shown; text-only condensed state is not supported.
+- **Off-canvas:** side navigation is completely off-screen, and can be triggered via the menu icon in the shellbar.
+
+**Note:** It is recommend to use only two states per device.
         `,
 
         tags: ['f3', 'a11y', 'theme'],
@@ -93,7 +113,7 @@ condensed.parameters = {
     docs: {
         iframeHeight: 400,
         storyDescription: `
-The condensed vertical navigation.
+In condensed mode, only icons are shown unless some navigation items have second levels and the second level is expanded.
         `
     }
 };
@@ -223,7 +243,7 @@ indication.parameters = {
     docs: {
         iframeHeight: 700,
         storyDescription: `
-The vertical navigation list can display navigation indication in several ways.
+All the possible combinations of navigation indication are visualized below. When a second level item has been navigated to and the second list has been collapsed, the indicator is shown on the right of the corresponding first level item, but the text and icon color do not change.
         `
     }
 };
