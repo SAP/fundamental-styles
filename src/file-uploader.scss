@@ -16,9 +16,15 @@ $fd-file-uploader-padding: 0.25rem;
     background-color: var(--sapField_Background);
     user-select: none;
     cursor: pointer;
+    color: transparent;
+    text-shadow: 0 0 0 var(--sapTextColor);
 
     &::placeholder {
       color: var(--sapTextColor);
+    }
+
+    &:focus {
+      outline: none;
     }
 
     @include fd-rtl() {
