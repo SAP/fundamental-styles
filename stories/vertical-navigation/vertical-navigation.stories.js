@@ -32,7 +32,7 @@ Side navigation can be viewed in three different states:
 
 export const cozy = () => `<div class="fd-vertical-nav">
     <nav class="fd-vertical-nav__main-navigation" aria-label="Main Menu">
-        <ul class="fd-list" aria-label="Main Menu">
+        <ul class="fd-list" aria-label="Main Menu List">
             <li class="fd-list__navigation-item">
                 <i class="fd-list__navigation-item-icon sap-icon--home"></i>
                 <span class="fd-list__navigation-item-text">Overview</span>
@@ -85,7 +85,7 @@ The default vertical navigation is comprised of several navigation list items.
 
 export const condensed = () => `<div class="fd-vertical-nav fd-vertical-nav--condensed">
     <nav class="fd-vertical-nav__main-navigation" aria-label="Main Menu">
-        <ul class="fd-list" aria-label="Main Menu">
+        <ul class="fd-list" aria-label="Main Menu List">
             <li class="fd-list__navigation-item--condensed">
                 <i class="fd-list__navigation-item-icon sap-icon--home"></i>
                 <span class="fd-list__navigation-item-text">Overview</span>
@@ -120,7 +120,7 @@ In condensed mode, only icons are shown unless some navigation items have second
 
 export const text = () => `<div class="fd-vertical-nav">
     <nav class="fd-vertical-nav__main-navigation" aria-label="Main Menu">
-        <ul class="fd-list" aria-label="Main Menu">
+        <ul class="fd-list" aria-label="Main Menu List">
             <li class="fd-list__navigation-item">
                 <span class="fd-list__navigation-item-text">Overview</span>
             </li>
@@ -169,7 +169,7 @@ A vertical navigation list does not need to have icons. However this is only ava
 
 export const indication = () => `<div class="fd-vertical-nav">
     <nav class="fd-vertical-nav__main-navigation" aria-label="Main Menu">
-        <ul class="fd-list" aria-label="Main Menu">
+        <ul class="fd-list" aria-label="Main Menu List">
             <li class="fd-list__navigation-item">
                 <i class="fd-list__navigation-item-icon sap-icon--home"></i>
                 <span class="fd-list__navigation-item-text">Overview</span>
@@ -195,7 +195,7 @@ export const indication = () => `<div class="fd-vertical-nav">
 <br/><br/>
 <div class="fd-vertical-nav fd-vertical-nav--condensed">
     <nav class="fd-vertical-nav__main-navigation" aria-label="Main Menu">
-        <ul class="fd-list" aria-label="Main Menu">
+        <ul class="fd-list" aria-label="Main Menu List">
             <li class="fd-list__navigation-item--condensed">
                 <i class="fd-list__navigation-item-icon sap-icon--home"></i>
                 <span class="fd-list__navigation-item-text">Overview</span>
