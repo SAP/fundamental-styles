@@ -266,8 +266,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
       margin-right: $fd-tree-expander-size-negative;
     }
 
-    &.is-expanded,
-    &[aria-expanded="true"] {
+    @include fd-expanded() {
       border-bottom: none;
     }
   }

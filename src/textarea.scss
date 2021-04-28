@@ -24,7 +24,7 @@ $block: #{$fd-namespace}-textarea;
     z-index: 0;
   }
 
-  &[aria-expanded="true"] {
+  @include fd-expanded() {
     z-index: 4;
   }
 
