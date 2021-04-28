@@ -103,13 +103,13 @@ $block: #{$fd-namespace}-token;
   @include fd-token-focus();
 
   &--compact {
-    padding: 0 0 $fd-token-compact-padding-vertical $fd-token-compact-padding-horizontal;
+    padding: $fd-token-compact-padding-vertical 0 $fd-token-compact-padding-vertical $fd-token-compact-padding-horizontal;
     height: $fd-token-compact-height;
     min-width: 3rem;
     line-height: 1.125rem;
 
     .#{$block}__close {
-      padding: ($fd-token-compact-padding-vertical * 2) $fd-token-compact-padding-horizontal $fd-token-compact-padding-vertical;
+      padding: $fd-token-compact-padding-vertical $fd-token-compact-padding-horizontal;
       vertical-align: baseline;
       width: $fd-token-compact-close-width;
       min-width: $fd-token-compact-close-width;
