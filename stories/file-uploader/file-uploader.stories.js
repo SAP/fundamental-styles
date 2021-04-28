@@ -29,6 +29,7 @@ export const primary = () => `<div class="fd-form-item">
       autocomplete="off"
       placeholder="Choose a file for upload"
       >
+    
     <button
       class="fd-button"
       onclick="browseFile('input1');"
