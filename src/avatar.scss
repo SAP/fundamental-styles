@@ -65,11 +65,9 @@ $block: #{$fd-namespace}-avatar;
 
   &__icon {
     @include fd-icon-element-base() {
-      // Added in order to trully center the icon inside it's container
-      display: flex;
-      align-content: center;
-      justify-content: center;
-      align-items: center;
+      @include fd-flex-center() {
+        align-content: center;
+      }
     }
   }
 
