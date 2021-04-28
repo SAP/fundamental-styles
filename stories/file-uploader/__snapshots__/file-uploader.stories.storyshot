@@ -163,6 +163,7 @@ exports[`Storyshots Components/File Uploader Default 1`] = `
     />
     
     
+    
     <button
       aria-label="Select a file for uploading"
       class="fd-button"
