@@ -39,14 +39,14 @@ export const cozy = () => `<div class="fd-vertical-nav">
             </li>
             <li class="fd-list__navigation-item is-expanded" onclick="toggleVerticalNavSubmenu(event)">
                 <i class="fd-list__navigation-item-icon sap-icon--calendar"></i>
-                <span class="fd-list__navigation-item-text">Calendar</span>
+                <span class="fd-list__navigation-item-text">Calendar Calendar Calendar Calendar Calendar Calendar </span>
                 <i class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded"></i>
                 <ul class="fd-list">
                     <li class="fd-list__navigation-item fd-list__navigation-item--second">
                         <span class="fd-list__navigation-item-text">Second level item 1</span>
                     </li>
                     <li class="fd-list__navigation-item fd-list__navigation-item--second">
-                        <span class="fd-list__navigation-item-text">Second level item 2</span>
+                        <span class="fd-list__navigation-item-text">Second level item 2 Second level item 2 Second level item 2 Second level item 2 Second level item 2 </span>
                     </li>
                 </ul>
             </li>
