@@ -102,6 +102,11 @@ $block: #{$fd-namespace}-popover;
       z-index: $fd-popover-z-index + 1;
     }
 
+    // Inner shadows can affect outer shadow. This will discard such behavior
+    > * {
+      overflow: hidden;
+    }
+
     > *:first-child {
       border-top-right-radius: $fd-popover-border-radius;
       border-top-left-radius: $fd-popover-border-radius;
