@@ -65,6 +65,7 @@ $block: #{$fd-namespace}-table;
   $fd-table-compact-cell-height: 2rem;
   $fd-table-navigation-icon-width: 2rem;
   $fd-table-condensed-cell-height: 1.5rem;
+  $fd-table-fixed-cell-shift: 0.05rem;
 
   // Thanks to table-cell specification, if the width is set to small value, the cell will have content width
   $fd-table-cell-fit-content-width: 0.5rem;
@@ -121,6 +122,19 @@ $block: #{$fd-namespace}-table;
       height: $fd-table-cozy-cell-height;
       background-color: var(--sapList_HeaderBackground);
       color: var(--sapList_HeaderTextColor);
+
+      &--fixed {
+        margin-top: -$fd-table-fixed-cell-shift;
+        border-top: $fd-table-border;
+        border-right: $fd-table-fixed-cell-border;
+        border-left: $fd-table-border;
+        height: $fd-table-cozy-cell-height + $fd-table-fixed-cell-shift;
+
+        @include fd-rtl() {
+          border-left: $fd-table-fixed-cell-border;
+          border-right: $fd-table-border;
+        }
+      }
     }
   }
 
@@ -206,7 +220,8 @@ $block: #{$fd-namespace}-table;
       position: absolute;
       background-color: inherit;
       border-bottom: $fd-table-border;
-      margin-top: 0.05rem;
+      border-left: $fd-table-border;
+      margin-top: $fd-table-fixed-cell-shift;
 
       @include fd-flex-vertical-center();
 
@@ -223,7 +238,7 @@ $block: #{$fd-namespace}-table;
         right: 0;
 
         &:last-of-type {
-          border-right: none;
+          border-right: $fd-table-border;
           border-left: $fd-table-fixed-cell-border;
         }
       }
@@ -570,6 +585,10 @@ $block: #{$fd-namespace}-table;
     .#{$block}__header {
       .#{$block}__cell {
         height: $fd-table-compact-cell-height;
+
+        &--fixed {
+          height: $fd-table-compact-cell-height + $fd-table-fixed-cell-shift;
+        }
       }
     }
   }
