@@ -6,6 +6,7 @@ Thumbs.db
 .idea
 .vscode
 .tmp
+yarn.lock
 *.log
 *.tgz
 __diff_output__
