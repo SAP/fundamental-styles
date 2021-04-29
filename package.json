@@ -93,7 +93,7 @@
     "postcss-import": "^14.0.1",
     "pre-commit": "^1.2.2",
     "pretty": "^2.0.0",
-    "puppeteer": "5.3.1",
+    "puppeteer": "9.0.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-is": "^17.0.1",
