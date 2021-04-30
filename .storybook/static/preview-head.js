@@ -383,16 +383,11 @@ function collectionHas(a, b) { //helper function (see below)
     return false;
 }
 
-function toggleCondensedVerticalNavSubmenu(event, source) {
-    let button;
-    if (source === 'child') {
-        button = event.target.parentElement.parentElement.parentElement.parentElement;
-    }
-    else if (source === 'parent') {
-        button = event.target;
-        if (button.tagName.toLowerCase() !== 'li') {
-            button = event.target.parentNode;
-        }
+function toggleCondensedVerticalNavSubmenu(event) {
+    let button = event.target;
+
+    while (button.id !== 'parentCalendarButton') {
+        button = button.parentNode;
     }
 
     if(!button.classList.contains('is-expanded')) {
