@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.18.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.4...v0.18.0-rc.5) (2021-04-30)
+
+
+### Bug Fixes
+
+* avatar zoom icon issues ([#2273](https://github.com/SAP/fundamental-styles/issues/2273)) ([c7386bb](https://github.com/SAP/fundamental-styles/commit/c7386bb96a4c721a761c81297b7524a96a1ea763))
+
 ## [0.18.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.3...v0.18.0-rc.4) (2021-04-30)
 
 ## [0.18.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.2...v0.18.0-rc.3) (2021-04-30)
