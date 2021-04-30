@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.18.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.17.1-rc.17...v0.18.0-rc.0) (2021-04-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* - added `.fd-avatar-group__popover-control` class to `.fd-popover__control`
+- `role` changed to `img`, added `alt` and `title` instead of `aria-label` for Avatars
+
+* fix: Avatar Group popover control focus & more button color [ci visual]
+
+* fix: change role and add alt text to avatars [ci visual]
+
+* fix: change role, add alt and title text to avatars [ci visual]
+
+* BREAKING CHANGE: Avatar Group popover control focus & more button color (#2261) ([7a9858d](https://github.com/SAP/fundamental-styles/commit/7a9858d8dc4f71fbe68b45f86d6df311513ab7d6)), closes [#2261](https://github.com/SAP/fundamental-styles/issues/2261)
+
 ### [0.17.1-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.17.1-rc.16...v0.17.1-rc.17) (2021-04-29)
 
 ### [0.17.1-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.17.1-rc.15...v0.17.1-rc.16) (2021-04-29)
