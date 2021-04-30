@@ -49,6 +49,11 @@ $block: #{$fd-namespace}-avatar-group;
 
   display: flex;
 
+  &__popover-control {
+    @include fd-fiori-focus($fd-focus-outline-offset);
+    @include action-cursor();
+  }
+
   &--individual-type {
     .#{$block}__item {
       @include fd-fiori-focus($fd-focus-outline-offset);
@@ -72,8 +77,6 @@ $block: #{$fd-namespace}-avatar-group;
   }
 
   &__more-button {
-    @include fd-reset();
-
     .#{$block}__button-text {
       font-size: inherit;
 
