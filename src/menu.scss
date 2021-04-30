@@ -168,10 +168,11 @@ $block: #{$fd-namespace}-menu;
       opacity: var(--sapContent_DisabledOpacity);
     }
 
-    &.has-child.is-expanded,
-    &.has-child[aria-expanded="true"] {
-      &:not(:active):not(.is-active) {
-        @include selected-menu-item();
+    &.has-child {
+      @include fd-expanded() {
+        &:not(:active):not(.is-active) {
+          @include selected-menu-item();
+        }
       }
     }
   }

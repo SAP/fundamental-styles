@@ -28,7 +28,7 @@ $block: #{$fd-namespace}-input;
     z-index: 0;
   }
 
-  &[aria-expanded="true"] {
+  @include fd-expanded() {
     z-index: 4;
   }
 

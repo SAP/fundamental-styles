@@ -90,8 +90,7 @@ $outline-offset: 0.1875rem;
       }
     }
 
-    &.is-expanded,
-    &[aria-expanded="true"] {
+    @include fd-expanded() {
       .#{$block}__button {
         background-color: $fd-select-button-active-background;
         color: $fd-select-button-active-text-color;

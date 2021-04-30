@@ -139,6 +139,14 @@
   }
 }
 
+// EXPANDED state
+@mixin fd-expanded {
+  &[aria-expanded="true"],
+  &.is-expanded {
+    @content;
+  }
+}
+
 @mixin fd-navigated {
   &.is-navigated {
     @content;

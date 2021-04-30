@@ -229,8 +229,7 @@ $block: #{$fd-namespace}-tabs;
       display: none;
     }
 
-    &.is-expanded,
-    &[aria-expanded="true"] {
+    @include fd-expanded() {
       display: block;
     }
   }
