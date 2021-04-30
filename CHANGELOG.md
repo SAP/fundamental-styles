@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.18.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.1...v0.18.0-rc.2) (2021-04-30)
+
+
+### Bug Fixes
+
+* Align borders properly for fixed columns ([#2275](https://github.com/SAP/fundamental-styles/issues/2275)) ([9306c83](https://github.com/SAP/fundamental-styles/commit/9306c837b455bdb34a229663da4819ae27aff181))
+
 ## [0.18.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.0...v0.18.0-rc.1) (2021-04-30)
 
 ## [0.18.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.17.1-rc.17...v0.18.0-rc.0) (2021-04-30)
