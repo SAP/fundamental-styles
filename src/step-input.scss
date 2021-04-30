@@ -85,12 +85,7 @@ $block: #{$fd-namespace}-step-input;
   }
 
   &__container {
-    display: flex;
-    align-items: center;
-
-    .fd-form-label {
-      align-self: auto;
-    }
+    @include fd-flex-vertical-center();
   }
 
   /** Width is different due to different border width  */
