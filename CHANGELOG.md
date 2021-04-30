@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.18.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.6...v0.18.0-rc.7) (2021-04-30)
+
+
+### Bug Fixes
+
+* vertically align close button for compact token ([#2276](https://github.com/SAP/fundamental-styles/issues/2276)) ([e124232](https://github.com/SAP/fundamental-styles/commit/e124232e3451381ad6565a5dab4d511c418ab53a))
+
 ## [0.18.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.5...v0.18.0-rc.6) (2021-04-30)
 
 ## [0.18.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.4...v0.18.0-rc.5) (2021-04-30)
