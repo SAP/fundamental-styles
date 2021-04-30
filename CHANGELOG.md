@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.18.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.8...v0.18.0-rc.9) (2021-04-30)
+
+
+### Bug Fixes
+
+* fix the alignment issue between input box and description/unit value for the step input component. ([#2280](https://github.com/SAP/fundamental-styles/issues/2280)) ([a2e9956](https://github.com/SAP/fundamental-styles/commit/a2e995643348a31f907b4bd4e2bad2cc8b650cee))
+
 ## [0.18.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.7...v0.18.0-rc.8) (2021-04-30)
 
 
