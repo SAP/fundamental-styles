@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.18.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.7...v0.18.0-rc.8) (2021-04-30)
+
+
+### Bug Fixes
+
+* checkbox make square smaller in order for browser to evenly move it from the center ([#2277](https://github.com/SAP/fundamental-styles/issues/2277)) ([9df326f](https://github.com/SAP/fundamental-styles/commit/9df326f7711dc2c153abf680a6e02167c10e3dea))
+
 ## [0.18.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.6...v0.18.0-rc.7) (2021-04-30)
 
 
