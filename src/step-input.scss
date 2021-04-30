@@ -84,6 +84,10 @@ $block: #{$fd-namespace}-step-input;
     }
   }
 
+  &__container {
+    @include fd-flex-vertical-center();
+  }
+
   /** Width is different due to different border width  */
   &.is-information,
   &.is-error,
