@@ -201,6 +201,22 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
   />
   
 
+  <span
+    aria-label="John Doe"
+    class="fd-avatar fd-avatar--xl fd-avatar--thumbnail"
+    role="img"
+    style="background-image: url('/assets/images/backgrounds/leaves.jpg')"
+  />
+  
+
+  <span
+    aria-label="John Doe"
+    class="fd-avatar fd-avatar--xl fd-avatar--thumbnail fd-avatar--background-contain"
+    role="img"
+    style="background-image: url('/assets/images/backgrounds/leaves.jpg')"
+  />
+  
+
 </section>
 `;
 
