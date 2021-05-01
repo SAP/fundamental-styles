@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.18.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.10...v0.18.0-rc.11) (2021-05-01)
+
+
+### Features
+
+* avatar - add option to set background size contain ([#2274](https://github.com/SAP/fundamental-styles/issues/2274)) ([c0b0c51](https://github.com/SAP/fundamental-styles/commit/c0b0c51d40a9412618b1196d8c54360d11380f68))
+
 ## [0.18.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.9...v0.18.0-rc.10) (2021-05-01)
 
 ## [0.18.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.8...v0.18.0-rc.9) (2021-04-30)
