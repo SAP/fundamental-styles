@@ -114,12 +114,21 @@ export const backgroundImage = () => `
 <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" aria-label="John Doe"></span>
 <span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/4.svg')" role="img" aria-label="John Doe"></span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/5.svg')" role="img" aria-label="John Doe"></span>
+<span class="fd-avatar fd-avatar--xl fd-avatar--thumbnail" style="background-image: url('/assets/images/backgrounds/leaves.jpg')" role="img" aria-label="John Doe"></span>
+<span class="fd-avatar fd-avatar--xl fd-avatar--thumbnail fd-avatar--background-contain" style="background-image: url('/assets/images/backgrounds/leaves.jpg')" role="img" aria-label="John Doe"></span>
 `;
 
 backgroundImage.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'A background image can be displayed by adding the <code>--thumbnail</code> modifier class.'
+        storyDescription: `
+A background image can be displayed by adding the <code>--thumbnail</code> modifier class.
+There are two options to set the backgroundd: Cover (default) and Contain. 
+
+- Cover: The size of the image is scaled up to completely cover the control area. As a result, parts of the image may be outside the shape.
+- Contain: The image is scaled down to fit into the control area. The entire image is displayed, but might not fully fill the shape. In this case, the control displays a default background color. The image itself is always centered inside the shape.
+
+Changing the default <code>background-size: cover</code> to <code>background-size: contain</code> CSS property can be achieved by adding <code>--background-contain</code> modifier class`
     }
 };
 
