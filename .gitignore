@@ -14,6 +14,7 @@ storybook-static
 stories/docs/
 dist
 node_modules
+yarn.lock
 stories/*/*.visual.js
 *.visual.js
 *.accessibility.test.js
