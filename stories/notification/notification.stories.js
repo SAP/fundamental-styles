@@ -17,7 +17,7 @@ Notifications are used to relay information to the user about a situation or tas
 
 export const primary = () => `<div class="fd-notification">
     <div class="fd-notification__body">
-        <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img"aria-label="John Doe"></span>
+        <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" aria-label="John Doe"></span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
                 <div class="fd-notification__indicator fd-notification__indicator--success"></div>
@@ -32,7 +32,7 @@ export const primary = () => `<div class="fd-notification">
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
-            <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
+            <button class="fd-button fd-button--transparent fd-button--compact " aria-label="Close">
                 <i class="sap-icon--decline"></i>
             </button>
         </div>
@@ -64,7 +64,7 @@ export const noAvatar = () => `<div class="fd-notification">
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
-            <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
+            <button class="fd-button fd-button--transparent fd-button--compact " aria-label="Close">
                 <i class="sap-icon--decline"></i>
             </button>
         </div>
@@ -90,7 +90,7 @@ export const information = () => `<div class="fd-notification">
       </button>
     </div>
     <div class="fd-notification__body fd-notification__body--message">
-        <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img"aria-label="John Doe"></span>
+        <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" aria-label="John Doe"></span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
                 <h2 class="fd-notification__title fd-notification__title--unread">You have new items</h2>
@@ -103,7 +103,7 @@ export const information = () => `<div class="fd-notification">
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
-            <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
+            <button class="fd-button fd-button--transparent fd-button--compact " aria-label="Close">
                 <i class="sap-icon--decline"></i>
             </button>
         </div>
@@ -129,7 +129,7 @@ export const warning = () => `<div class="fd-notification">
       </button>
     </div>
     <div class="fd-notification__body fd-notification__body--message">
-       <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img"aria-label="John Doe"></span>
+       <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" aria-label="John Doe"></span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
               <h2 class="fd-notification__title fd-notification__title--unread">You have new items</h2>
@@ -143,7 +143,7 @@ export const warning = () => `<div class="fd-notification">
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
-            <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
+            <button class="fd-button fd-button--transparent fd-button--compact " aria-label="Close">
                 <i class="sap-icon--decline"></i>
             </button>
         </div>
@@ -169,7 +169,7 @@ export const error = () => `<div class="fd-notification">
           </button>
     </div>
     <div class="fd-notification__body fd-notification__body--message">
-        <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img"aria-label="John Doe"></span>
+        <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" aria-label="John Doe"></span>
         <div class="fd-notification__content">
           <div class="fd-notification__header">
             <h2 class="fd-notification__title fd-notification__title--unread">You have new items</h2>
@@ -183,7 +183,7 @@ export const error = () => `<div class="fd-notification">
         </div>
         <div class="fd-notification__actions">
             <button class="fd-button fd-button--compact">Open</button>
-            <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
+            <button class="fd-button fd-button--transparent fd-button--compact " aria-label="Close">
                 <i class="sap-icon--decline"></i>
             </button>
         </div>
@@ -200,7 +200,7 @@ Notifications can display error alerts by adding the <code>fd-message-strip fd-m
 };
 
 export const notificationGroup = () => `<div class="fd-notification fd-notification--group">
-    <ul class="fd-tabs fd-tabs--l fd-notification--tabs" role="tablist">
+    <ul class="fd-tabs fd-tabs--l" role="tablist">
         <li role="tab" class="fd-tabs__item" aria-selected="true">
             <a 
                 class="fd-tabs__link"
@@ -245,13 +245,13 @@ export const notificationGroup = () => `<div class="fd-notification fd-notificat
             </div>
             <div class="fd-notification__actions">
                 <button class="fd-button fd-button--compact">Accept All</button>
-                <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
+                <button class="fd-button fd-button--transparent fd-button--compact " aria-label="Close">
                     <i class="sap-icon--decline"></i>
                 </button>
             </div>
         </div>
         <div class="fd-notification__body">
-            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" role="img"aria-label="John Doe">JD</span>
+            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" role="img" aria-label="John Doe">JD</span>
             <div class="fd-notification__content">
                 <div class="fd-notification__header">
                     <div class="fd-notification__indicator fd-notification__indicator--warning"></div>
@@ -269,7 +269,7 @@ export const notificationGroup = () => `<div class="fd-notification fd-notificat
                             <i class="sap-icon--overflow"></i>
                         </button>
                     </div>
-                    <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA5">
+                    <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="popoverA5">
                         <nav class="fd-menu" id="">
                             <ul class="fd-menu__list fd-menu__list--no-shadow">
                                 <li class="fd-menu__item">
@@ -292,13 +292,13 @@ export const notificationGroup = () => `<div class="fd-notification fd-notificat
                     </div>
                 </div>
 
-                <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
+                <button class="fd-button fd-button--transparent fd-button--compact " aria-label="Close">
                     <i class="sap-icon--decline"></i>
                 </button>
             </div>
         </div>
         <div class="fd-notification__body">
-            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img"aria-label="John Doe"></span>
+            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" aria-label="John Doe"></span>
             <div class="fd-notification__content">
                 <div class="fd-notification__header">
                 <div class="fd-notification__indicator fd-notification__indicator--success"></div>
@@ -314,13 +314,13 @@ export const notificationGroup = () => `<div class="fd-notification fd-notificat
             <div class="fd-notification__actions">
                 <button class="fd-button fd-button--compact">Open</button>
 
-                <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
+                <button class="fd-button fd-button--transparent fd-button--compact " aria-label="Close">
                     <i class="sap-icon--decline"></i>
                 </button>
             </div>
         </div>
         <div class="fd-notification__body">
-            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img"aria-label="John Doe"></span>
+            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" aria-label="John Doe"></span>
             <div class="fd-notification__content">
                 <div class="fd-notification__header">
                 <div class="fd-notification__indicator fd-notification__indicator--error"></div>
@@ -335,7 +335,7 @@ export const notificationGroup = () => `<div class="fd-notification fd-notificat
             </div>
             <div class="fd-notification__actions">
                 <button class="fd-button fd-button--compact">Open</button>
-                <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
+                <button class="fd-button fd-button--transparent fd-button--compact " aria-label="Close">
                     <i class="sap-icon--decline"></i>
                 </button>
             </div>
@@ -358,13 +358,13 @@ export const notificationGroup = () => `<div class="fd-notification fd-notificat
             </div>
             <div class="fd-notification__actions">
                 <button class="fd-button fd-button--compact">Accept All</button>
-                <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
+                <button class="fd-button fd-button--transparent fd-button--compact " aria-label="Close">
                     <i class="sap-icon--decline"></i>
                 </button>
             </div>
         </div>
         <div class="fd-notification__body">
-            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img"aria-label="John Doe"></span>
+            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" aria-label="John Doe"></span>
             <div class="fd-notification__content">
                 <div class="fd-notification__header">
                 <div class="fd-notification__indicator fd-notification__indicator--success"></div>
@@ -380,7 +380,7 @@ export const notificationGroup = () => `<div class="fd-notification fd-notificat
             <div class="fd-notification__actions">
                 <button class="fd-button fd-button--compact">Open</button>
 
-                <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
+                <button class="fd-button fd-button--transparent fd-button--compact " aria-label="Close">
                     <i class="sap-icon--decline"></i>
                 </button>
             </div>
@@ -399,13 +399,13 @@ export const notificationGroup = () => `<div class="fd-notification fd-notificat
             </div>
             <div class="fd-notification__actions">
                 <button class="fd-button fd-button--compact">Accept All</button>
-                <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
+                <button class="fd-button fd-button--transparent fd-button--compact " aria-label="Close">
                     <i class="sap-icon--decline"></i>
                 </button>
             </div>
         </div>
         <div class="fd-notification__body">
-            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img"aria-label="John Doe"></span>
+            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" aria-label="John Doe"></span>
             <div class="fd-notification__content">
                 <div class="fd-notification__header">
                 <div class="fd-notification__indicator fd-notification__indicator--success"></div>
@@ -421,7 +421,7 @@ export const notificationGroup = () => `<div class="fd-notification fd-notificat
             <div class="fd-notification__actions">
                 <button class="fd-button fd-button--compact">Open</button>
 
-                <button class="fd-button fd-button--transparent fd-button--compact fd-notification__actions--dismiss" aria-label="Close">
+                <button class="fd-button fd-button--transparent fd-button--compact " aria-label="Close">
                     <i class="sap-icon--decline"></i>
                 </button>
             </div>
@@ -439,9 +439,9 @@ notificationGroup.parameters = {
 
 export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
 
-<div class="fd-notification fd-notification--mobile"">
+<div class="fd-notification fd-notification--mobile">
     <div class="fd-notification__body">
-        <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img"aria-label="John Doe"></span>
+        <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" aria-label="John Doe"></span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
                 <div class="fd-notification__indicator fd-notification__indicator--success"></div>
@@ -461,7 +461,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                          <i class="sap-icon--overflow"></i>
                     </button>
                 </div>
-                <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA4">
+                <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="popoverA4">
                     <nav class="fd-menu" id="">
                         <ul class="fd-menu__list fd-menu__list--no-shadow">
                             <li class="fd-menu__item">
@@ -478,7 +478,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                     </nav>
                 </div>
             </div>
-            <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
+            <button class="fd-button fd-button--transparent" aria-label="Close">
                 <i class="sap-icon--decline"></i>
             </button>
         </div>
@@ -487,15 +487,13 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
 </div>
 <div style="heigt: 200px; max-width: 20rem">
     <div class="fd-notification fd-notification--mobile fd-notification--group">
-        <ul class="fd-tabs fd-tabs--l fd-notification--tabs" role="tablist">
+        <ul class="fd-tabs fd-tabs--l" role="tablist">
             <li role="tab" aria-selected="true" class="fd-tabs__item">
                 <a 
                     class="fd-tabs__link" 
                     aria-controls="notifP300" 
                     href="#notifP300">
-                    <span class="fd-tabs__tag">
-                        By Date
-                    </span>
+                    <span class="fd-tabs__tag">By Date</span>
                 </a>
             </li>
             <li role="tab" class="fd-tabs__item">
@@ -503,9 +501,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                     class="fd-tabs__link" 
                     aria-controls="notifP301" 
                     href="#notifP301">
-                    <span class="fd-tabs__tag">
-                        By Type
-                    </span>
+                    <span class="fd-tabs__tag">By Type</span>
                 </a>
             </li>
             <li role="tab" class="fd-tabs__item">
@@ -513,9 +509,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                     class="fd-tabs__link"
                     aria-controls="notifP302" 
                     href="#notifP302">
-                    <span class="fd-tabs__tag">
-                        By Priority
-                    </span>
+                    <span class="fd-tabs__tag">By Priority</span>
                 </a>
             </li>
         </ul>
@@ -531,13 +525,13 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                     </div>
                 </div>
                 <div class="fd-notification__actions">
-                    <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
+                    <button class="fd-button fd-button--transparent" aria-label="Close">
                         <i class="sap-icon--decline"></i>
                     </button>
                 </div>
             </div>
             <div class="fd-notification__body">
-                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" role="img"aria-label="John Doe">JD</span>
+                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" role="img" aria-label="John Doe">JD</span>
                 <div class="fd-notification__content">
                     <div class="fd-notification__header">
                         <div class="fd-notification__indicator fd-notification__indicator--warning"></div>
@@ -557,7 +551,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                                 <i class="sap-icon--overflow"></i>
                             </button>
                         </div>
-                        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA3">
+                        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="popoverA3">
                             <nav class="fd-menu" id="">
                                 <ul class="fd-menu__list fd-menu__list--no-shadow">
                                     <li class="fd-menu__item">
@@ -574,13 +568,13 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                             </nav>
                         </div>
                     </div>
-                    <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
+                    <button class="fd-button fd-button--transparent" aria-label="Close">
                         <i class="sap-icon--decline"></i>
                     </button>
                 </div>
             </div>
             <div class="fd-notification__body">
-                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img"aria-label="John Doe"></span>
+                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" aria-label="John Doe"></span>
                 <div class="fd-notification__content">
                     <div class="fd-notification__header">
                     <div class="fd-notification__indicator fd-notification__indicator--success"></div>
@@ -600,7 +594,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                                 <i class="sap-icon--overflow"></i>
                             </button>
                         </div>
-                        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA2">
+                        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="popoverA2">
                             <nav class="fd-menu" id="">
                                 <ul class="fd-menu__list fd-menu__list--no-shadow">
                                     <li class="fd-menu__item">
@@ -612,7 +606,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                             </nav>
                         </div>
                     </div>
-                    <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
+                    <button class="fd-button fd-button--transparent" aria-label="Close">
                         <i class="sap-icon--decline"></i>
                     </button>
                 </div>
@@ -630,13 +624,13 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                     </div>
                 </div>
                 <div class="fd-notification__actions">
-                    <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
+                    <button class="fd-button fd-button--transparent" aria-label="Close">
                         <i class="sap-icon--decline"></i>
                     </button>
                 </div>
             </div>
             <div class="fd-notification__body">
-                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" role="img"aria-label="John Doe">JD</span>
+                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" role="img" aria-label="John Doe">JD</span>
                 <div class="fd-notification__content">
                     <div class="fd-notification__header">
                         <div class="fd-notification__indicator fd-notification__indicator--warning"></div>
@@ -656,7 +650,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                                 <i class="sap-icon--overflow"></i>
                             </button>
                         </div>
-                        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA42">
+                        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="popoverA42">
                             <nav class="fd-menu" id="">
                                 <ul class="fd-menu__list fd-menu__list--no-shadow">
                                     <li class="fd-menu__item">
@@ -673,13 +667,13 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                             </nav>
                         </div>
                     </div>
-                    <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
+                    <button class="fd-button fd-button--transparent" aria-label="Close">
                         <i class="sap-icon--decline"></i>
                     </button>
                 </div>
             </div>
             <div class="fd-notification__body">
-                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img"aria-label="John Doe"></span>
+                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" aria-label="John Doe"></span>
                 <div class="fd-notification__content">
                     <div class="fd-notification__header">
                     <div class="fd-notification__indicator fd-notification__indicator--success"></div>
@@ -699,7 +693,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                                 <i class="sap-icon--overflow"></i>
                             </button>
                         </div>
-                        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA245">
+                        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="popoverA245">
                             <nav class="fd-menu" id="">
                                 <ul class="fd-menu__list fd-menu__list--no-shadow">
                                     <li class="fd-menu__item">
@@ -711,7 +705,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                             </nav>
                         </div>
                     </div>
-                    <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
+                    <button class="fd-button fd-button--transparent" aria-label="Close">
                         <i class="sap-icon--decline"></i>
                     </button>
                 </div>
@@ -729,13 +723,13 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                     </div>
                 </div>
                 <div class="fd-notification__actions">
-                    <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
+                    <button class="fd-button fd-button--transparent" aria-label="Close">
                         <i class="sap-icon--decline"></i>
                     </button>
                 </div>
             </div>
             <div class="fd-notification__body">
-                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" role="img"aria-label="John Doe">JD</span>
+                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" role="img" aria-label="John Doe">JD</span>
                 <div class="fd-notification__content">
                     <div class="fd-notification__header">
                         <div class="fd-notification__indicator fd-notification__indicator--warning"></div>
@@ -755,7 +749,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                                 <i class="sap-icon--overflow"></i>
                             </button>
                         </div>
-                        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA5">
+                        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="popoverA5">
                             <nav class="fd-menu" id="">
                                 <ul class="fd-menu__list fd-menu__list--no-shadow">
                                     <li class="fd-menu__item">
@@ -772,13 +766,13 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                             </nav>
                         </div>
                     </div>
-                    <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
+                    <button class="fd-button fd-button--transparent" aria-label="Close">
                         <i class="sap-icon--decline"></i>
                     </button>
                 </div>
             </div>
             <div class="fd-notification__body">
-                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img"aria-label="John Doe"></span>
+                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" aria-label="John Doe"></span>
                 <div class="fd-notification__content">
                     <div class="fd-notification__header">
                     <div class="fd-notification__indicator fd-notification__indicator--success"></div>
@@ -798,7 +792,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                                 <i class="sap-icon--overflow"></i>
                             </button>
                         </div>
-                        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow fd-notification__actions--popover" aria-hidden="true" id="popoverA43212">
+                        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="true" id="popoverA43212">
                             <nav class="fd-menu" id="">
                                 <ul class="fd-menu__list fd-menu__list--no-shadow">
                                     <li class="fd-menu__item">
@@ -810,7 +804,7 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
                             </nav>
                         </div>
                     </div>
-                    <button class="fd-button fd-button--transparent fd-notification__actions--dismiss" aria-label="Close">
+                    <button class="fd-button fd-button--transparent" aria-label="Close">
                         <i class="sap-icon--decline"></i>
                     </button>
                 </div>

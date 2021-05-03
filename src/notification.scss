@@ -30,6 +30,7 @@ $block: #{$fd-namespace}-notification;
   $fd-notification-padding-right: 1rem;
   $fd-notification-content-offset: 0.75rem;
   $fd-notification-padding-mobile: 0.75rem;
+  $fd-notification-actions-offset: 0.5rem;
   $fd-notification-reset-offset: 0;
 
   // mixins
@@ -165,15 +166,16 @@ $block: #{$fd-namespace}-notification;
       padding-right: $fd-notification-padding-right;
     }
 
-    .#{$fd-namespace}-button {
-      margin-right: 0.5rem;
+    & > * {
+      margin-left: $fd-notification-actions-offset;
 
-      &:last-child {
-        margin-right: 0;
+      &:first-child {
+        margin-left: $fd-notification-reset-offset;
       }
 
       @include fd-rtl() {
-        margin-right: $fd-notification-reset-offset;
+        margin-left: $fd-notification-reset-offset;
+        margin-right: $fd-notification-actions-offset;
       }
     }
   }
@@ -232,10 +234,6 @@ $block: #{$fd-namespace}-notification;
     }
   }
 
-  &--tabs {
-    box-shadow: $fd-notification-box-shadow;
-  }
-
   &--group {
     @include fd-reset();
 
@@ -244,10 +242,6 @@ $block: #{$fd-namespace}-notification;
     .#{$block}__body {
       padding: 1rem 0.5rem 1rem 1rem;
       border-bottom: $fd-notification-border;
-
-      &:last-child {
-        border-bottom: none;
-      }
 
       @include fd-rtl() {
         padding-left: $fd-notification-padding-left;
@@ -275,8 +269,6 @@ $block: #{$fd-namespace}-notification;
     }
   }
 
-  // MOBILE view
-
   &--mobile {
     padding: $fd-notification-reset-offset;
 
@@ -299,10 +291,6 @@ $block: #{$fd-namespace}-notification;
       @include fd-rtl() {
         padding-right: $fd-notification-padding-mobile;
         padding-left: $fd-notification-padding-left;
-      }
-
-      .#{$block}__actions--dismiss {
-        display: none;
       }
     }
 
