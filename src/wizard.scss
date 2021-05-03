@@ -69,20 +69,6 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     vertical-align: top;
 
     // --- STEP MODIFIERS ---
-    &--completed {
-      .#{$block}__step-indicator {
-        background: var(--sapObjectHeader_Background);
-        color: var(--fdWizard_Completed_Step_Color);
-        border: var(--fdWizard_Completed_Step_Border);
-
-        .#{$block}__icon {
-          @include fd-icon-selector() {
-            color: var(--fdWizard_Completed_Step_Icon_Color);
-          }
-        }
-      }
-    }
-
     &--current {
       .#{$block}__step-indicator {
         position: relative;
@@ -127,6 +113,20 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
       .#{$block}__step-container {
         cursor: default;
         pointer-events: none;
+      }
+    }
+
+    &--completed {
+      .#{$block}__step-indicator {
+        background: var(--sapObjectHeader_Background);
+        color: var(--fdWizard_Completed_Step_Color);
+        border: var(--fdWizard_Completed_Step_Border);
+
+        .#{$block}__icon {
+          @include fd-icon-selector() {
+            color: var(--fdWizard_Completed_Step_Icon_Color);
+          }
+        }
       }
     }
 
