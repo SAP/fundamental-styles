@@ -510,7 +510,7 @@ export const fixedCardLayout = () =>
         </div>
     </div>`;
 
-fixedCardLayout.storyName = 'Fixed card layout';
+fixedCardLayout.storyName = 'Fixed card layout with 3 columns';
 fixedCardLayout.parameters = {
     docs: {
         iframeHeight: 900,
