@@ -1,0 +1,79 @@
+@import './new-settings';
+@import './mixins';
+
+$block: #{$fd-namespace}-fixed-card-group;
+
+.#{$block} {
+  $fd-border-on-drag: 0.125rem dashed var(--sapContent_DragAndDropActiveColor);
+  $fd-card-margin: 1rem;
+  $fd-card-min-width: 20rem;
+
+  @include fd-reset();
+
+  &--card-layout {
+    @include fd-reset();
+    @include fd-flex();
+
+    justify-content: center;
+
+    * {
+      word-break: break-all;
+    }
+  }
+
+  &--card-layout-column {
+    @include fd-reset();
+
+    flex: 1;
+    margin-right: $fd-card-margin;
+    margin-left: 0;
+
+    @include fd-rtl() {
+      margin-left: $fd-card-margin;
+      margin-right: 0;
+    }
+  }
+
+  &--card-layout-column:last-child {
+    margin-right: 0;
+    margin-left: 0;
+
+    @include fd-rtl() {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &--card {
+    @include fd-reset();
+
+    margin-bottom: $fd-card-margin;
+    margin-right: 0;
+    min-width: $fd-card-min-width;
+
+    .fd-card__content {
+      overflow: hidden;
+    }
+  }
+
+  &--card:last-child {
+    margin-bottom: 0;
+  }
+
+  &--card-placeholder {
+    @include fd-reset();
+
+    opacity: 0.3;
+    border: $fd-border-on-drag;
+    cursor: grabbing;
+    margin-bottom: $fd-card-margin;
+  }
+
+  &--card-preview {
+    @include fd-reset();
+
+    box-sizing: border-box;
+    border-radius: var(--sapElement_BorderCornerRadius);
+    box-shadow: var(--sapContent_Shadow2);
+  }
+}
