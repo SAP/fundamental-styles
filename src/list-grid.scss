@@ -25,9 +25,26 @@ $block: #{$fd-namespace}-grid-list;
     'critical': ('backgroundColor': var(--sapWarningBorderColor)),
     'neutral': ('backgroundColor': var(--sapNeutralBorderColor))
   );
+  $fd-grid-list-drop-area-vertical: 0.55rem;
+
+  @mixin grabbing-cursor {
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+    cursor: -o-grabbing;
+    cursor: -ms-grabbing;
+    cursor: grabbing;
+  }
 
   @include fd-reset();
   @include fd-flex(column);
+
+  display: block;
+
+  .fd-dnd-item.fd-dnd-on-drag {
+    @include grabbing-cursor();
+
+    background-color: transparent;
+  }
 
   &__item {
     @include fd-reset();
@@ -138,6 +155,46 @@ $block: #{$fd-namespace}-grid-list;
       @include fd-flex-vertical-center();
 
       padding: 0 1rem;
+
+      .fd-toolbar {
+        &--actions {
+          margin-left: auto;
+
+          > * {
+            margin-left: 0.5rem;
+
+            @include fd-rtl() {
+              margin-left: 0;
+              margin-right: 0.5rem;
+            }
+          }
+
+          @include fd-rtl() {
+            margin-left: 0;
+            margin-right: auto;
+          }
+        }
+
+        .fd-grid-list__item-input,
+        &--actions,
+        &--extra-content {
+          display: flex;
+          align-items: center;
+          height: 100%;
+        }
+      }
+    }
+
+    .drop-area__line--vertical {
+      height: 100%;
+
+      &.before {
+        left: -$fd-grid-list-drop-area-vertical;
+      }
+
+      &.after {
+        right: -$fd-grid-list-drop-area-vertical;
+      }
     }
   }
 
@@ -263,12 +320,18 @@ $block: #{$fd-namespace}-grid-list;
 
   &__filter,
   &__filter-button {
-    color: #fff !important;
+    color: var(--sapHighlightTextColor);
   }
 
   &__filter-button {
     @include fd-hover() {
       color: var(--sapButton_TextColor) !important;
+    }
+
+    @include fd-active() {
+      @include fd-hover() {
+        color: var(--sapHighlightTextColor);
+      }
     }
   }
 
@@ -332,6 +395,7 @@ $block: #{$fd-namespace}-grid-list;
       width: 0.375rem;
       display: block;
       border-radius: $fd-grid-list-border-radius 0 0 $fd-grid-list-border-radius;
+      z-index: 1;
 
       @include fd-rtl() {
         right: 0;
@@ -340,6 +404,12 @@ $block: #{$fd-namespace}-grid-list;
       &--#{$set-name} {
         background-color: map_get($colors, 'backgroundColor');
       }
+    }
+  }
+
+  &__btn-navigation {
+    @include fd-rtl() {
+      transform: rotate(180deg);
     }
   }
 }
