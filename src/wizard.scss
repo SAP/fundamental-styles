@@ -9,6 +9,20 @@ $fd-wizard-step-no-label-max-size: 4rem !default;
 $fd-wizard-step-indicator-stacked-offset: -1 * ($fd-wizard-step-indicator-size - $fd-wizard-step-indicator-spacing + 0.25rem) !default;
 $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
 
+@mixin fd-wizard-completed-step($block) {
+  .#{$block}__step-indicator {
+    background: var(--sapObjectHeader_Background);
+    color: var(--fdWizard_Completed_Step_Color);
+    border: var(--fdWizard_Completed_Step_Border);
+
+    .#{$block}__icon {
+      @include fd-icon-selector() {
+        color: var(--fdWizard_Completed_Step_Icon_Color);
+      }
+    }
+  }
+}
+
 @mixin fd-wizard-responsive-paddings() {
   &--sm {
     padding-left: 1rem;
@@ -70,17 +84,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
 
     // --- STEP MODIFIERS ---
     &--completed {
-      .#{$block}__step-indicator {
-        background: var(--sapObjectHeader_Background);
-        color: var(--fdWizard_Completed_Step_Color);
-        border: var(--fdWizard_Completed_Step_Border);
-
-        .#{$block}__icon {
-          @include fd-icon-selector() {
-            color: var(--fdWizard_Completed_Step_Icon_Color);
-          }
-        }
-      }
+      @include fd-wizard-completed-step($block);
     }
 
     &--current {
@@ -127,6 +131,10 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
       .#{$block}__step-container {
         cursor: default;
         pointer-events: none;
+      }
+
+      &.#{$block}__step--completed {
+        @include fd-wizard-completed-step($block);
       }
     }
 
