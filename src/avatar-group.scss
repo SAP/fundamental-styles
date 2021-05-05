@@ -49,7 +49,8 @@ $block: #{$fd-namespace}-avatar-group;
 
   display: flex;
 
-  &__popover-control {
+  &__popover-control,
+  &__focusable-avatar {
     @include fd-fiori-focus($fd-focus-outline-offset);
     @include action-cursor();
   }
