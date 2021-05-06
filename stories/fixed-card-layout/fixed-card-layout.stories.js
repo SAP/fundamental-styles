@@ -19,9 +19,9 @@ export default {
 };
 
 export const fixedCardLayout = () =>
-    `<div #layout class="fd-fixed-card-group--card-layout" [attr.dir]="dir">
-        <div class="fd-fixed-card-group--card-layout-column">
-            <div class="fd-fixed-card-group--card">
+    `<div #layout class="fd-fixed-card-layout__card-layout" [attr.dir]="dir">
+        <div class="fd-fixed-card-layout__card-layout-column">
+            <div class="fd-fixed-card-layout__card">
                 <div class="fd-card" role="region" aria-label="List Card Example 1">
                     <a class="fd-card__header" tabindex="0">
                         <div class="fd-card__header-text">
@@ -54,7 +54,7 @@ export const fixedCardLayout = () =>
                 </div>
             </div>
 
-            <div class="fd-fixed-card-group--card">
+            <div class="fd-fixed-card-layout__card">
                 <div class="fd-card fd-card--object" role="region" aria-label="Object Card Example 1">
                     <a class="fd-card__header" tabindex="0">
                         <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
@@ -118,7 +118,7 @@ export const fixedCardLayout = () =>
                 </div>
             </div>
 
-            <div class="fd-fixed-card-group--card">
+            <div class="fd-fixed-card-layout__card">
                 <div class="fd-card" role="region" aria-label="List Card Example 2">
                     <a class="fd-card__header" tabindex="0">
                         <div class="fd-card__header-text">
@@ -152,8 +152,8 @@ export const fixedCardLayout = () =>
             </div>
         </div>
 
-        <div class="fd-fixed-card-group--card-layout-column">
-            <div class="fd-fixed-card-group--card">
+        <div class="fd-fixed-card-layout__card-layout-column">
+            <div class="fd-fixed-card-layout__card">
                 <div class="fd-card fd-card--table" role="region" aria-label="Table Card Example 1">
                     <a class="fd-card__header" tabindex="0">
                         <div class="fd-card__header-text">
@@ -232,7 +232,7 @@ export const fixedCardLayout = () =>
                 </div>
             </div>
 
-            <div class="fd-fixed-card-group--card">
+            <div class="fd-fixed-card-layout__card">
                 <div class="fd-card" role="region" aria-label="List Card Example 3">
                     <a class="fd-card__header" tabindex="0">
                         <div class="fd-card__header-text">
@@ -265,7 +265,7 @@ export const fixedCardLayout = () =>
                 </div>
             </div>
 
-            <div class="fd-fixed-card-group--card">
+            <div class="fd-fixed-card-layout__card">
                 <div class="fd-card" role="region" aria-label="List Card Example 4">
                     <a class="fd-card__header" tabindex="0">
                         <div class="fd-card__header-text">
@@ -331,8 +331,8 @@ export const fixedCardLayout = () =>
             </div>
         </div>
 
-        <div class="fd-fixed-card-group--card-layout-column">
-            <div class="fd-fixed-card-group--card">
+        <div class="fd-fixed-card-layout__card-layout-column">
+            <div class="fd-fixed-card-layout__card">
                 <div class="fd-card fd-card--object" role="region" aria-label="Object Card Example 2">
                     <a class="fd-card__header" tabindex="0">
                         <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
@@ -396,7 +396,7 @@ export const fixedCardLayout = () =>
                 </div>
             </div>
 
-            <div class="fd-fixed-card-group--card">
+            <div class="fd-fixed-card-layout__card">
                 <div class="fd-card" role="region" aria-label="List Card Example 5">
                     <a class="fd-card__header" tabindex="0">
                         <div class="fd-card__header-text">
@@ -429,7 +429,7 @@ export const fixedCardLayout = () =>
                 </div>
             </div>
 
-            <div class="fd-fixed-card-group--card">
+            <div class="fd-fixed-card-layout__card">
                 <div class="fd-card fd-card--table" role="region" aria-label="Table Card Example 2">
                     <a class="fd-card__header" tabindex="0">
                         <div class="fd-card__header-text">

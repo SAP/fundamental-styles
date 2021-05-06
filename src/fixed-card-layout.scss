@@ -1,7 +1,7 @@
 @import './new-settings';
 @import './mixins';
 
-$block: #{$fd-namespace}-fixed-card-group;
+$block: #{$fd-namespace}-fixed-card-layout;
 
 .#{$block} {
   $fd-border-on-drag: 0.125rem dashed var(--sapContent_DragAndDropActiveColor);
@@ -10,7 +10,7 @@ $block: #{$fd-namespace}-fixed-card-group;
 
   @include fd-reset();
 
-  &--card-layout {
+  &__card-layout {
     @include fd-reset();
     @include fd-flex();
 
@@ -21,12 +21,11 @@ $block: #{$fd-namespace}-fixed-card-group;
     }
   }
 
-  &--card-layout-column {
+  &__card-layout-column {
     @include fd-reset();
 
     flex: 1;
     margin-right: $fd-card-margin;
-    margin-left: 0;
 
     @include fd-rtl() {
       margin-left: $fd-card-margin;
@@ -34,33 +33,26 @@ $block: #{$fd-namespace}-fixed-card-group;
     }
   }
 
-  &--card-layout-column:last-child {
+  &__card-layout-column:last-child {
     margin-right: 0;
-    margin-left: 0;
 
     @include fd-rtl() {
       margin-left: 0;
-      margin-right: 0;
     }
   }
 
-  &--card {
+  &__card {
     @include fd-reset();
 
     margin-bottom: $fd-card-margin;
-    margin-right: 0;
     min-width: $fd-card-min-width;
-
-    .fd-card__content {
-      overflow: hidden;
-    }
   }
 
-  &--card:last-child {
+  &__card:last-child {
     margin-bottom: 0;
   }
 
-  &--card-placeholder {
+  &__card-placeholder {
     @include fd-reset();
 
     opacity: 0.3;
@@ -69,7 +61,7 @@ $block: #{$fd-namespace}-fixed-card-group;
     margin-bottom: $fd-card-margin;
   }
 
-  &--card-preview {
+  &__card-preview {
     @include fd-reset();
 
     box-sizing: border-box;

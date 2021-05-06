@@ -1,20 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Layouts/Fixed card layout Fixed card layout 1`] = `
+exports[`Storyshots Layouts/Fixed card layout Fixed card layout with 3 columns 1`] = `
 <div
   #layout=""
   [attr.dir]="dir"
-  class="fd-fixed-card-group--card-layout"
+  class="fd-fixed-card-layout__card-layout"
 >
   
         
   <div
-    class="fd-fixed-card-group--card-layout-column"
+    class="fd-fixed-card-layout__card-layout-column"
   >
     
             
     <div
-      class="fd-fixed-card-group--card"
+      class="fd-fixed-card-layout__card"
     >
       
                 
@@ -183,7 +183,7 @@ exports[`Storyshots Layouts/Fixed card layout Fixed card layout 1`] = `
 
             
     <div
-      class="fd-fixed-card-group--card"
+      class="fd-fixed-card-layout__card"
     >
       
                 
@@ -456,7 +456,7 @@ exports[`Storyshots Layouts/Fixed card layout Fixed card layout 1`] = `
 
             
     <div
-      class="fd-fixed-card-group--card"
+      class="fd-fixed-card-layout__card"
     >
       
                 
@@ -628,12 +628,12 @@ exports[`Storyshots Layouts/Fixed card layout Fixed card layout 1`] = `
 
         
   <div
-    class="fd-fixed-card-group--card-layout-column"
+    class="fd-fixed-card-layout__card-layout-column"
   >
     
             
     <div
-      class="fd-fixed-card-group--card"
+      class="fd-fixed-card-layout__card"
     >
       
                 
@@ -1009,7 +1009,7 @@ exports[`Storyshots Layouts/Fixed card layout Fixed card layout 1`] = `
 
             
     <div
-      class="fd-fixed-card-group--card"
+      class="fd-fixed-card-layout__card"
     >
       
                 
@@ -1178,7 +1178,7 @@ exports[`Storyshots Layouts/Fixed card layout Fixed card layout 1`] = `
 
             
     <div
-      class="fd-fixed-card-group--card"
+      class="fd-fixed-card-layout__card"
     >
       
                 
@@ -1534,12 +1534,12 @@ exports[`Storyshots Layouts/Fixed card layout Fixed card layout 1`] = `
 
         
   <div
-    class="fd-fixed-card-group--card-layout-column"
+    class="fd-fixed-card-layout__card-layout-column"
   >
     
             
     <div
-      class="fd-fixed-card-group--card"
+      class="fd-fixed-card-layout__card"
     >
       
                 
@@ -1812,7 +1812,7 @@ exports[`Storyshots Layouts/Fixed card layout Fixed card layout 1`] = `
 
             
     <div
-      class="fd-fixed-card-group--card"
+      class="fd-fixed-card-layout__card"
     >
       
                 
@@ -1981,7 +1981,7 @@ exports[`Storyshots Layouts/Fixed card layout Fixed card layout 1`] = `
 
             
     <div
-      class="fd-fixed-card-group--card"
+      class="fd-fixed-card-layout__card"
     >
       
                 
