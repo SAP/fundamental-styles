@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.18.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.20...v0.18.0-rc.21) (2021-05-06)
+
+
+### Bug Fixes
+
+* Carousel - add shadow for hover state for controls [ci visual] ([#2297](https://github.com/SAP/fundamental-styles/issues/2297)) ([812ac2a](https://github.com/SAP/fundamental-styles/commit/812ac2ab807425308a7f360bb7298185b12fd312))
+
 ## [0.18.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.19...v0.18.0-rc.20) (2021-05-06)
 
 ## [0.18.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.18...v0.18.0-rc.19) (2021-05-05)
