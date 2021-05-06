@@ -9,7 +9,7 @@ $fd-wizard-step-no-label-max-size: 4rem !default;
 $fd-wizard-step-indicator-stacked-offset: -1 * ($fd-wizard-step-indicator-size - $fd-wizard-step-indicator-spacing + 0.25rem) !default;
 $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
 
-@mixin fd-wizard-completed-step($block) {
+@mixin fd-wizard-completed-step() {
   .#{$block}__step-indicator {
     background: var(--sapObjectHeader_Background);
     color: var(--fdWizard_Completed_Step_Color);
@@ -84,7 +84,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
 
     // --- STEP MODIFIERS ---
     &--completed {
-      @include fd-wizard-completed-step($block);
+      @include fd-wizard-completed-step();
     }
 
     &--current {
@@ -134,7 +134,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
       }
 
       &.#{$block}__step--completed {
-        @include fd-wizard-completed-step($block);
+        @include fd-wizard-completed-step();
       }
     }
 
