@@ -19,7 +19,7 @@ export default {
 };
 
 export const fixedCardLayout = () =>
-    `<div #layout class="fd-fixed-card-layout__card-layout" [attr.dir]="dir">
+    `<div class="fd-fixed-card-layout__card-layout" [attr.dir]="dir">
         <div class="fd-fixed-card-layout__card-layout-column">
             <div class="fd-fixed-card-layout__card">
                 <div class="fd-card" role="region" aria-label="List Card Example 1">
