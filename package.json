@@ -8,7 +8,7 @@
     "build:default": "npm run style:compile && npm run style:theme && npm run style:postCSS && npm run style:assets",
     "build:prod": "cross-env NODE_ENV=production npm run build",
     "deploy": "gh-pages -d storybook-static/",
-    "lint:style": "stylelint '{src,.storybook}/**/*.(sa|sc|c)ss'",
+    "lint:style": "stylelint \"{src,.storybook}/**/*.(sa|sc|c)ss\"",
     "lint:js": "eslint . --ext .js",
     "lint": "npm run lint:style && npm run lint:js",
     "lint:fix": "npm run lint:style -- --fix && npm run lint:js -- --fix",

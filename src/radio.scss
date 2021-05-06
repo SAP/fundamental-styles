@@ -9,6 +9,8 @@ $block: #{$fd-namespace}-radio;
 %fd-radio-input-hidden {
   position: absolute;
   opacity: 0.0001;
+  width: 100%;
+  height: 100%;
 }
 
 .#{$block} {
@@ -46,6 +48,11 @@ $block: #{$fd-namespace}-radio;
   @include fd-form-base();
 
   @extend %fd-radio-input-hidden;
+
+  &__wrapper {
+    position: relative;
+    display: inline-block;
+  }
 
   &__label {
     @include fd-form-label();
