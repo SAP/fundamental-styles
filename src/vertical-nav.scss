@@ -54,11 +54,5 @@ $has-child-content-arrow-margin: 0.125rem;
 
   &--condensed {
     width: 3.25rem;
-
-    @include fd-rtl() {
-      &.#{$block}--condensed {
-        width: 2.75rem;
-      }
-    }
   }
 }
