@@ -1,9 +1,9 @@
 export default {
-    title: 'Layouts/Fixed card layout',
+    title: 'Layouts/Fixed Card Layout',
     parameters: {
         description: `The fixed card layout is a layout for the overview page. The cards have a fixed width, and the height is determined by the card type and the embedded control.
         `,
-        tags: ['f3', 'a11y', 'theme'],
+        tags: ['f3', 'a11y', 'theme', 'development'],
         components: [
             'fixed-card-layout',
             'avatar',
@@ -514,6 +514,6 @@ fixedCardLayout.storyName = 'Fixed card layout with 3 columns';
 fixedCardLayout.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: 'Cards arrangement in 3 column layout.'
+        storyDescription: 'Cards arrangement in a 3 column layout.'
     }
 };

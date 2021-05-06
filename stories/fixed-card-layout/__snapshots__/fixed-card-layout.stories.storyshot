@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Layouts/Fixed card layout Fixed card layout with 3 columns 1`] = `
+exports[`Storyshots Layouts/Fixed Card Layout Fixed card layout with 3 columns 1`] = `
 <div
-  #layout=""
   [attr.dir]="dir"
   class="fd-fixed-card-layout__card-layout"
 >

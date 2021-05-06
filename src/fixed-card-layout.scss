@@ -12,9 +12,7 @@ $block: #{$fd-namespace}-fixed-card-layout;
 
   &__card-layout {
     @include fd-reset();
-    @include fd-flex();
-
-    justify-content: center;
+    @include fd-flex-horizontal-center();
 
     * {
       word-break: break-all;
@@ -27,17 +25,17 @@ $block: #{$fd-namespace}-fixed-card-layout;
     flex: 1;
     margin-right: $fd-card-margin;
 
+    &:last-child {
+      margin-right: 0;
+
+      @include fd-rtl() {
+        margin-left: 0;
+      }
+    }
+
     @include fd-rtl() {
       margin-left: $fd-card-margin;
       margin-right: 0;
-    }
-  }
-
-  &__card-layout-column:last-child {
-    margin-right: 0;
-
-    @include fd-rtl() {
-      margin-left: 0;
     }
   }
 
@@ -46,10 +44,10 @@ $block: #{$fd-namespace}-fixed-card-layout;
 
     margin-bottom: $fd-card-margin;
     min-width: $fd-card-min-width;
-  }
 
-  &__card:last-child {
-    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__card-placeholder {
