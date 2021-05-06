@@ -151,7 +151,7 @@ exports[`Storyshots Components/Vertical Navigation Default 1`] = `
       
             
       <li
-        class="fd-list__navigation-item is-expanded"
+        class="fd-list__navigation-item fd-list__navigation-item--expandable is-expanded"
         onclick="toggleVerticalNavSubmenu(event)"
       >
         
@@ -179,7 +179,7 @@ exports[`Storyshots Components/Vertical Navigation Default 1`] = `
           
                     
           <li
-            class="fd-list__navigation-item fd-list__navigation-item--second"
+            class="fd-list__navigation-item"
             tabindex="0"
           >
             
@@ -195,7 +195,7 @@ exports[`Storyshots Components/Vertical Navigation Default 1`] = `
           
                     
           <li
-            class="fd-list__navigation-item fd-list__navigation-item--second"
+            class="fd-list__navigation-item"
             tabindex="0"
           >
             
@@ -217,7 +217,7 @@ exports[`Storyshots Components/Vertical Navigation Default 1`] = `
       
             
       <li
-        class="fd-list__navigation-item is-expanded"
+        class="fd-list__navigation-item fd-list__navigation-item--expandable is-expanded"
         onclick="toggleVerticalNavSubmenu(event)"
       >
         
@@ -245,7 +245,7 @@ exports[`Storyshots Components/Vertical Navigation Default 1`] = `
           
                     
           <li
-            class="fd-list__navigation-item fd-list__navigation-item--second"
+            class="fd-list__navigation-item"
             tabindex="0"
           >
             
@@ -261,7 +261,7 @@ exports[`Storyshots Components/Vertical Navigation Default 1`] = `
           
                     
           <li
-            class="fd-list__navigation-item fd-list__navigation-item--second"
+            class="fd-list__navigation-item"
             tabindex="0"
           >
             
@@ -353,7 +353,7 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
         
             
         <li
-          class="fd-list__navigation-item is-expanded"
+          class="fd-list__navigation-item fd-list__navigation-item--expandable is-expanded"
           onclick="toggleVerticalNavSubmenu(event)"
         >
           
@@ -381,7 +381,7 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
             
                     
             <li
-              class="fd-list__navigation-item fd-list__navigation-item--second fd-list__navigation-item--indicated"
+              class="fd-list__navigation-item fd-list__navigation-item--indicated"
             >
               
                         
@@ -401,7 +401,7 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
             
                     
             <li
-              class="fd-list__navigation-item fd-list__navigation-item--second"
+              class="fd-list__navigation-item"
               tabindex="0"
             >
               
@@ -502,7 +502,7 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
                 
           <div
             aria-hidden="false"
-            class="fd-popover__body fd-popover__body--left fd-popover__body--no-arrow fd-list__navigation-item-popover--first"
+            class="fd-popover__body fd-popover__body--left fd-popover__body--no-arrow fd-list__navigation-item-popover--first-level"
             id="popoverA1"
           >
             
@@ -540,7 +540,7 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
                 
           <div
             aria-hidden="false"
-            class="fd-popover__body fd-popover__body--left fd-popover__body--no-arrow fd-list__navigation-item-popover--second"
+            class="fd-popover__body fd-popover__body--left fd-popover__body--no-arrow fd-list__navigation-item-popover--second-level"
             id="popoverA1"
           >
             
@@ -551,7 +551,7 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
               
                         
               <li
-                class="fd-list__navigation-item fd-list__navigation-item--condensed fd-list__navigation-item--second fd-list__navigation-item--indicated"
+                class="fd-list__navigation-item fd-list__navigation-item--condensed fd-list__navigation-item--indicated"
                 tabindex="0"
               >
                 
@@ -572,7 +572,7 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
               
                         
               <li
-                class="fd-list__navigation-item fd-list__navigation-item--condensed fd-list__navigation-item--second"
+                class="fd-list__navigation-item fd-list__navigation-item--condensed"
                 tabindex="0"
               >
                 
@@ -685,7 +685,7 @@ exports[`Storyshots Components/Vertical Navigation Text Only 1`] = `
       
             
       <li
-        class="fd-list__navigation-item is-expanded"
+        class="fd-list__navigation-item fd-list__navigation-item--expandable is-expanded"
         onclick="toggleVerticalNavSubmenu(event)"
       >
         
@@ -708,7 +708,7 @@ exports[`Storyshots Components/Vertical Navigation Text Only 1`] = `
           
                     
           <li
-            class="fd-list__navigation-item fd-list__navigation-item--second"
+            class="fd-list__navigation-item"
             tabindex="0"
           >
             
@@ -724,7 +724,7 @@ exports[`Storyshots Components/Vertical Navigation Text Only 1`] = `
           
                     
           <li
-            class="fd-list__navigation-item fd-list__navigation-item--second"
+            class="fd-list__navigation-item"
             tabindex="0"
           >
             
@@ -746,7 +746,7 @@ exports[`Storyshots Components/Vertical Navigation Text Only 1`] = `
       
             
       <li
-        class="fd-list__navigation-item is-expanded"
+        class="fd-list__navigation-item fd-list__navigation-item--expandable is-expanded"
         onclick="toggleVerticalNavSubmenu(event)"
       >
         
@@ -769,7 +769,7 @@ exports[`Storyshots Components/Vertical Navigation Text Only 1`] = `
           
                     
           <li
-            class="fd-list__navigation-item fd-list__navigation-item--second"
+            class="fd-list__navigation-item"
             tabindex="0"
           >
             
@@ -785,7 +785,7 @@ exports[`Storyshots Components/Vertical Navigation Text Only 1`] = `
           
                     
           <li
-            class="fd-list__navigation-item fd-list__navigation-item--second"
+            class="fd-list__navigation-item"
             tabindex="0"
           >
             
