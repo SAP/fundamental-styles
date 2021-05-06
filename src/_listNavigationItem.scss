@@ -42,6 +42,11 @@ $fd-list-navigation-item-height: 2.75rem;
     padding-right: 1rem;
     position: relative;
 
+    @include fd-rtl() {
+      padding-right: 0.5rem;
+      padding-left: 1rem;
+    }
+
     .fd-list {
       display: none;
     }
@@ -75,6 +80,10 @@ $fd-list-navigation-item-height: 2.75rem;
         }
 
         .#{$block}__navigation-item-text {
+          @include fd-reset();
+
+          vertical-align: middle;
+          line-height: 2.75rem;
           color: var(--sapContent_LabelColor);
           font-size: var(--sapFontSize);
           margin-left: 2.5rem;
@@ -87,11 +96,10 @@ $fd-list-navigation-item-height: 2.75rem;
       }
 
       .#{$block}__navigation-item-text {
-        padding-left: 0.25rem;
+        padding-left: 0;
 
         @include fd-rtl() {
-          padding-left: 0;
-          padding-right: 0.25rem;
+          padding-right: 0;
         }
       }
 
@@ -109,6 +117,11 @@ $fd-list-navigation-item-height: 2.75rem;
         margin-left: -0.5rem;
         width: auto;
         display: block;
+
+        @include fd-rtl() {
+          margin-left: -1rem;
+          margin-right: -0.5rem;
+        }
       }
 
       .#{$block}__navigation-item-indicator {
@@ -337,7 +350,7 @@ $fd-list-navigation-item-height: 2.75rem;
       font-size: var(--sapFontLargeSize);
       font-family: var(--sapFontFamily);
       color: var(--sapList_TextColor);
-      padding-left: 0.5rem;
+      padding-left: 0.25rem;
       max-width: 8rem;
       white-space: nowrap;
       overflow: hidden;
@@ -347,7 +360,7 @@ $fd-list-navigation-item-height: 2.75rem;
 
       @include fd-rtl() {
         padding-left: 0;
-        padding-right: 0.5rem;
+        padding-right: 0.25rem;
       }
     }
 
