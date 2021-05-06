@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.18.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.21...v0.18.0-rc.22) (2021-05-06)
+
+
+### Bug Fixes
+
+* Avatar group - do not overlay outer shadow with inner component's shadow [ci visual] ([#2296](https://github.com/SAP/fundamental-styles/issues/2296)) ([7c93b2c](https://github.com/SAP/fundamental-styles/commit/7c93b2c83dcedbd68b5c189f35fdefe787edb32b))
+
 ## [0.18.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.20...v0.18.0-rc.21) (2021-05-06)
 
 
