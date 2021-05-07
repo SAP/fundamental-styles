@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.18.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.23...v0.18.0-rc.24) (2021-05-07)
+
+
+### Bug Fixes
+
+* Wizard - change styling priorities in order to apply correct styles for stacked steps ([#2324](https://github.com/SAP/fundamental-styles/issues/2324)) ([729059b](https://github.com/SAP/fundamental-styles/commit/729059b273603aa7e5731787a51ca90969e6e7bc))
+
 ## [0.18.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.22...v0.18.0-rc.23) (2021-05-07)
 
 ## [0.18.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.21...v0.18.0-rc.22) (2021-05-06)
