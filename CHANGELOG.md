@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.18.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.24...v0.18.0-rc.25) (2021-05-07)
+
+
+### Features
+
+* introduce Fixed Card Layout component ([#2326](https://github.com/SAP/fundamental-styles/issues/2326)) ([a77dae0](https://github.com/SAP/fundamental-styles/commit/a77dae08d393da086b3c796c5be469886006c856))
+
 ## [0.18.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.23...v0.18.0-rc.24) (2021-05-07)
 
 
