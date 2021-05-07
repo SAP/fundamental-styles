@@ -1,7 +1,7 @@
 export default {
     title: 'Components/Wizard',
     parameters: {
-        description: `The wizard guides a user through a long or unfamiliar task by dividing it into sections, revealing information in an easy and digestible way. 
+        description: `The wizard guides a user through a long or unfamiliar task by dividing it into sections, revealing information in an easy and digestible way.
 It consists of a walkthrough screen, where the user is prompted to input required information and upon completing a section, the next sections subsequently follow in a prescribed order; and the summary page, where the form is displayed in read-only mode for assessment and final submission.
 
 ## Usage
@@ -173,7 +173,7 @@ defaultExample.storyName = 'Default';
 defaultExample.parameters = {
     docs: {
         iframeHeight: 950,
-        storyDescription: `The default wizard displays a walkthrough screen with forms split into sections. Once the user fills all of the necessary input fields, a button is displayed to go to the next section. A *Cancel* button is displayed in the footer, so the user can exit the wizard at any point during the process. However, if a user exits the wizard after adding their input, they will receive a warning that their information will be lost. 
+        storyDescription: `The default wizard displays a walkthrough screen with forms split into sections. Once the user fills all of the necessary input fields, a button is displayed to go to the next section. A *Cancel* button is displayed in the footer, so the user can exit the wizard at any point during the process. However, if a user exits the wizard after adding their input, they will receive a warning that their information will be lost.
 `
     }
 };
@@ -499,13 +499,13 @@ export const responsive = () => `<section class="fd-wizard">
                 <div class="fd-wizard__step-wrapper">
                     <div class="fd-popover">
                         <div class="fd-popover__control">
-                            <a 
-                                class="fd-wizard__step-container" 
-                                tabindex="0" 
-                                aria-label="Payment" 
-                                aria-controls="actionSheetDesktop" 
-                                aria-expanded="false" 
-                                aria-haspopup="true" 
+                            <a
+                                class="fd-wizard__step-container"
+                                tabindex="0"
+                                aria-label="Payment"
+                                aria-controls="actionSheetDesktop"
+                                aria-expanded="false"
+                                aria-haspopup="true"
                                 onclick="onPopoverClick('actionSheetDesktop');">
                                     <span class="fd-wizard__step-indicator">
                                         <i class="fd-wizard__icon sap-icon--money-bills" role="presentation"></i>
@@ -516,9 +516,9 @@ export const responsive = () => `<section class="fd-wizard">
                             </a>
                         </div>
                         <div class="fd-popover__body" aria-hidden="true" id="actionSheetDesktop">
-                            <ul 
-                                class="fd-action-sheet fd-action-sheet--compact" 
-                                role="list" 
+                            <ul
+                                class="fd-action-sheet fd-action-sheet--compact"
+                                role="list"
                                 aria-label="List of completed stacked steps">
                                     <li class="fd-action-sheet__item" role="listitem">
                                         <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
@@ -622,10 +622,380 @@ export const responsive = () => `<section class="fd-wizard">
 responsive.parameters = {
     docs: {
         iframeHeight: 950,
-        storyDescription: `If there is sufficient horizontal space, all labels are shown. 
+        storyDescription: `If there is sufficient horizontal space, all labels are shown.
 However, when the width decreases, the step labels disappear. To hide the labels, add the <code class="docs-code">fd-wizard\\_\\_step--no-label</code> modifier class to the step.
-The unselected steps should stack on top of each other when there is limited screen space. To stack them, add the <code class="docs-code">fd-wizard\\_\\_step--stacked</code> modifier class. The last completed step should display on top, and requires a <code class="docs-code">fd-wizard\\_\\_step--stacked-top</code> modifier class. Although they are stacked, upcoming steps do not require the stacked-top modifier class. 
+The unselected steps should stack on top of each other when there is limited screen space. To stack them, add the <code class="docs-code">fd-wizard\\_\\_step--stacked</code> modifier class. The last completed step should display on top, and requires a <code class="docs-code">fd-wizard\\_\\_step--stacked-top</code> modifier class. Although they are stacked, upcoming steps do not require the stacked-top modifier class.
 `
+    }
+};
+
+export const revertedSteps = () => `<section class="fd-wizard">
+    <nav class="fd-wizard__navigation" aria-label="Wizard Navigation 3">
+        <ul class="fd-wizard__progress-bar fd-wizard__progress-bar--xl">
+            <li class="fd-wizard__step fd-wizard__step--completed">
+                <div class="fd-wizard__step-wrapper">
+                    <a class="fd-wizard__step-container" tabindex="0" aria-label="Customer">
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--person-placeholder" role="presentation"></i>
+                        </span>
+                        <div class="fd-wizard__label-container">
+                            <span class="fd-wizard__label">Customer</span>
+                        </div>
+                    </a>
+                    <span class="fd-wizard__connector fd-wizard__connector--active"></span>
+                </div>
+            </li>
+            <li class="fd-wizard__step fd-wizard__step--completed">
+                <div class="fd-wizard__step-wrapper">
+                    <a class="fd-wizard__step-container" tabindex="0" aria-label="Contact">
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--contacts" role="presentation"></i>
+                        </span>
+                        <div class="fd-wizard__label-container fd-wizard__label-container--optional">
+                            <span class="fd-wizard__label">Contact</span>
+                            <span class="fd-wizard__optional-text">(Optional)</span>
+                        </div>
+                    </a>
+                    <span class="fd-wizard__connector fd-wizard__connector--active"></span>
+                </div>
+            </li>
+            <li class="fd-wizard__step fd-wizard__step--current">
+                <div class="fd-wizard__step-wrapper">
+                    <a class="fd-wizard__step-container" tabindex="0" aria-label="Payment">
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--money-bills" role="presentation"></i>
+                        </span>
+                        <div class="fd-wizard__label-container">
+                            <span class="fd-wizard__label">Payment</span>
+                        </div>
+                    </a>
+                    <span class="fd-wizard__connector fd-wizard__connector--active"></span>
+                </div>
+            </li>
+            <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--upcoming">
+                <div class="fd-wizard__step-wrapper">
+                    <a class="fd-wizard__step-container" tabindex="0" aria-label="Bill To">
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--batch-payments" role="presentation"></i>
+                        </span>
+                        <div class="fd-wizard__label-container">
+                            <span class="fd-wizard__label">Bill To</span>
+                        </div>
+                    </a>
+                    <span class="fd-wizard__connector fd-wizard__connector"></span>
+                </div>
+            </li>
+            <li class="fd-wizard__step fd-wizard__step--upcoming">
+                <div class="fd-wizard__step-wrapper">
+                    <a class="fd-wizard__step-container" tabindex="0" aria-label="Ship To" aria-disabled="true">
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--shipping-status" role="presentation"></i>
+                        </span>
+                        <div class="fd-wizard__label-container">
+                            <span class="fd-wizard__label">Ship To</span>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <section class="fd-wizard__content fd-wizard__content--xl" id="wizard-section-3" style="min-height: 300px;">
+        <div>
+            Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
+        </div>
+        <div class="fd-wizard__next-step">
+            <button class="fd-button fd-button--compact fd-button--emphasized">Next Step</button>
+        </div>
+    </section>
+    <footer>
+        <div class="fd-bar fd-bar--page-m_l fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+
+<br><br>
+
+<section class="fd-wizard">
+    <nav class="fd-wizard__navigation" aria-label="Wizard Navigation 4">
+        <ul class="fd-wizard__progress-bar fd-wizard__progress-bar--xl">
+            <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--no-label">
+                <div class="fd-wizard__step-wrapper">
+                    <a class="fd-wizard__step-container" tabindex="0" aria-label="Customer">
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--person-placeholder" role="presentation"></i>
+                        </span>
+                        <div class="fd-wizard__label-container">
+                            <span class="fd-wizard__label">Customer</span>
+                        </div>
+                    </a>
+                    <span class="fd-wizard__connector fd-wizard__connector--active"></span>
+                </div>
+            </li>
+            <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--no-label">
+                <div class="fd-wizard__step-wrapper">
+                    <a class="fd-wizard__step-container" tabindex="0" aria-label="Contact">
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--contacts" role="presentation"></i>
+                        </span>
+                        <div class="fd-wizard__label-container fd-wizard__label-container--optional">
+                            <span class="fd-wizard__label">Contact</span>
+                            <span class="fd-wizard__optional-text">(Optional)</span>
+                        </div>
+                    </a>
+                    <span class="fd-wizard__connector fd-wizard__connector--active"></span>
+                </div>
+            </li>
+            <li class="fd-wizard__step fd-wizard__step--current fd-wizard__step--no-label">
+                <div class="fd-wizard__step-wrapper">
+                    <a class="fd-wizard__step-container" tabindex="0" aria-label="Payment">
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--money-bills" role="presentation"></i>
+                        </span>
+                        <div class="fd-wizard__label-container">
+                            <span class="fd-wizard__label">Payment</span>
+                        </div>
+                    </a>
+                    <span class="fd-wizard__connector fd-wizard__connector--active"></span>
+                </div>
+            </li>
+            <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--upcoming fd-wizard__step--no-label">
+                <div class="fd-wizard__step-wrapper">
+                    <a class="fd-wizard__step-container" tabindex="0" aria-label="Bill To">
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--batch-payments" role="presentation"></i>
+                        </span>
+                        <div class="fd-wizard__label-container">
+                            <span class="fd-wizard__label">Bill To</span>
+                        </div>
+                    </a>
+                    <span class="fd-wizard__connector fd-wizard__connector"></span>
+                </div>
+            </li>
+            <li class="fd-wizard__step fd-wizard__step--upcoming fd-wizard__step--no-label">
+                <div class="fd-wizard__step-wrapper">
+                    <a class="fd-wizard__step-container" tabindex="0" aria-label="Ship To" aria-disabled="true">
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--shipping-status" role="presentation"></i>
+                        </span>
+                        <div class="fd-wizard__label-container">
+                            <span class="fd-wizard__label">Ship To</span>
+                        </div>
+                    </a>
+                    <span class="fd-wizard__connector fd-wizard__connector"></span>
+                </div>
+            </li>
+            <li class="fd-wizard__step fd-wizard__step--upcoming fd-wizard__step--no-label">
+                <div class="fd-wizard__step-wrapper">
+                    <a class="fd-wizard__step-container" tabindex="0" aria-label="Products" aria-disabled="true">
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--product" role="presentation"></i>
+                        </span>
+                        <div class="fd-wizard__label-container fd-wizard__label-container--optional">
+                            <span class="fd-wizard__label">Products</span>
+                            <span class="fd-wizard__optional-text">(Optional)</span>
+                        </div>
+                    </a>
+                    <span class="fd-wizard__connector"></span>
+                </div>
+            </li>
+            <li class="fd-wizard__step fd-wizard__step--upcoming fd-wizard__step--no-label">
+                <div class="fd-wizard__step-wrapper">
+                    <a class="fd-wizard__step-container" tabindex="0" aria-label="Additional Information" aria-disabled="true">
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--course-program" role="presentation"></i>
+                        </span>
+                        <div class="fd-wizard__label-container">
+                            <span class="fd-wizard__label">Additional Information</span>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <section class="fd-wizard__content fd-wizard__content--xl" id="wizard-section-4" style="min-height: 300px;">
+        <div>
+            Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
+        </div>
+        <div class="fd-wizard__next-step">
+            <button class="fd-button fd-button--compact fd-button--emphasized">Next Step</button>
+        </div>
+    </section>
+    <footer>
+        <div class="fd-bar fd-bar--page-m_l fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+
+<br><br>
+
+<section class="fd-wizard">
+    <nav class="fd-wizard__navigation" aria-label="Wizard Navigation 5">
+        <ul class="fd-wizard__progress-bar fd-wizard__progress-bar--xl">
+            <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--stacked">
+                <div class="fd-wizard__step-wrapper">
+                    <a class="fd-wizard__step-container" tabindex="0" aria-label="Customer">
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--person-placeholder" role="presentation"></i>
+                        </span>
+                        <div class="fd-wizard__label-container">
+                            <span class="fd-wizard__label">Customer</span>
+                        </div>
+                    </a>
+                    <span class="fd-wizard__connector fd-wizard__connector--active"></span>
+                </div>
+            </li>
+            <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--stacked fd-wizard__step--stacked-top">
+                <div class="fd-wizard__step-wrapper">
+                    <a class="fd-wizard__step-container" tabindex="0" aria-label="Contact">
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--contacts" role="presentation"></i>
+                        </span>
+                        <div class="fd-wizard__label-container fd-wizard__label-container--optional">
+                            <span class="fd-wizard__label">Contact</span>
+                            <span class="fd-wizard__optional-text">(Optional)</span>
+                        </div>
+                    </a>
+                    <span class="fd-wizard__connector"></span>
+                </div>
+            </li>
+            <li class="fd-wizard__step fd-wizard__step--current">
+                <div class="fd-wizard__step-wrapper">
+                    <div class="fd-popover">
+                        <div class="fd-popover__control">
+                            <a
+                                class="fd-wizard__step-container"
+                                tabindex="0"
+                                aria-label="Payment"
+                                aria-controls="actionSheetDesktop"
+                                aria-expanded="false"
+                                aria-haspopup="true"
+                                onclick="onPopoverClick('actionSheetDesktop');">
+                                    <span class="fd-wizard__step-indicator">
+                                        <i class="fd-wizard__icon sap-icon--money-bills" role="presentation"></i>
+                                    </span>
+                                    <div class="fd-wizard__label-container">
+                                        <span class="fd-wizard__label">Payment</span>
+                                    </div>
+                            </a>
+                        </div>
+                        <div class="fd-popover__body" aria-hidden="true" id="actionSheetDesktop">
+                            <ul
+                                class="fd-action-sheet fd-action-sheet--compact"
+                                role="list"
+                                aria-label="List of completed stacked steps">
+                                    <li class="fd-action-sheet__item" role="listitem">
+                                        <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                            <i class=" sap-icon--money-bills" role="presentation"></i>
+                                            <span class="fd-button__text">Payment</span>
+                                        </button>
+                                    </li>
+                                    <li class="fd-action-sheet__item" role="listitem">
+                                        <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                            <i class="sap-icon--contacts" role="presentation"></i>
+                                            <span class="fd-button__text">Contact</span>
+                                        </button>
+                                    </li>
+                                    <li class="fd-action-sheet__item" role="listitem">
+                                        <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                            <i class="sap-icon--person-placeholder" role="presentation"></i>
+                                            <span class="fd-button__text">Customer</span>
+                                        </button>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="fd-wizard__connector fd-wizard__connector--active"></span>
+                </div>
+            </li>
+            <li class="fd-wizard__step fd-wizard__step--completed fd-wizard__step--upcoming fd-wizard__step--stacked">
+                <div class="fd-wizard__step-wrapper">
+                    <a class="fd-wizard__step-container" tabindex="0" aria-label="Bill To">
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--batch-payments" role="presentation"></i>
+                        </span>
+                        <div class="fd-wizard__label-container">
+                            <span class="fd-wizard__label">Bill To</span>
+                        </div>
+                    </a>
+                    <span class="fd-wizard__connector fd-wizard__connector"></span>
+                </div>
+            </li>
+            <li class="fd-wizard__step fd-wizard__step--upcoming fd-wizard__step--stacked">
+                <div class="fd-wizard__step-wrapper">
+                    <a class="fd-wizard__step-container" tabindex="0" aria-label="Ship To" aria-disabled="true">
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--shipping-status" role="presentation"></i>
+                        </span>
+                        <div class="fd-wizard__label-container">
+                            <span class="fd-wizard__label">Ship To</span>
+                        </div>
+                    </a>
+                    <span class="fd-wizard__connector fd-wizard__connector"></span>
+                </div>
+            </li>
+            <li class="fd-wizard__step fd-wizard__step--upcoming fd-wizard__step--stacked">
+                <div class="fd-wizard__step-wrapper">
+                    <a class="fd-wizard__step-container" tabindex="0" aria-label="Products" aria-disabled="true">
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--product" role="presentation"></i>
+                        </span>
+                        <div class="fd-wizard__label-container fd-wizard__label-container--optional">
+                            <span class="fd-wizard__label">Products</span>
+                            <span class="fd-wizard__optional-text">(Optional)</span>
+                        </div>
+                    </a>
+                    <span class="fd-wizard__connector"></span>
+                </div>
+            </li>
+            <li class="fd-wizard__step fd-wizard__step--upcoming fd-wizard__step--stacked">
+                <div class="fd-wizard__step-wrapper">
+                    <a class="fd-wizard__step-container" tabindex="0" aria-label="Additional Information" aria-disabled="true">
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--course-program" role="presentation"></i>
+                        </span>
+                        <div class="fd-wizard__label-container">
+                            <span class="fd-wizard__label">Additional Information</span>
+                        </div>
+                    </a>
+                    <span class="fd-wizard__connector"></span>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <section class="fd-wizard__content fd-wizard__content--xl" id="wizard-section-5" style="min-height: 300px;">
+        <div>
+            Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
+        </div>
+        <div class="fd-wizard__next-step">
+            <button class="fd-button fd-button--compact fd-button--emphasized">Next Step</button>
+        </div>
+    </section>
+    <footer>
+        <div class="fd-bar fd-bar--page-m_l fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+`;
+
+revertedSteps.parameters = {
+    docs: {
+        iframeHeight: 950,
+        storyDescription: 'To indicate reverted steps, use combination of <code class="docs-code>fd-wizard__step--completed</code> and <code class="docs-code>fd-wizard__step--upcoming</code> classes.'
     }
 };
 
@@ -666,13 +1036,13 @@ export const mobile = () => `<div style="display: flex; justify-content: space-a
                         <div class="fd-wizard__step-wrapper">
                             <div class="fd-popover">
                                 <div class="fd-popover__control">
-                                    <a 
-                                        class="fd-wizard__step-container" 
-                                        tabindex="0" 
-                                        aria-label="Payment" 
-                                        aria-controls="actionSheetMobile1" 
-                                        aria-expanded="false" 
-                                        aria-haspopup="true" 
+                                    <a
+                                        class="fd-wizard__step-container"
+                                        tabindex="0"
+                                        aria-label="Payment"
+                                        aria-controls="actionSheetMobile1"
+                                        aria-expanded="false"
+                                        aria-haspopup="true"
                                         onclick="onPopoverClick('actionSheetMobile1');">
                                             <span class="fd-wizard__step-indicator">
                                                 <i class="fd-wizard__icon sap-icon--money-bills" role="presentation"></i>
@@ -683,9 +1053,9 @@ export const mobile = () => `<div style="display: flex; justify-content: space-a
                                     </a>
                                 </div>
                                 <div class="fd-popover__body" aria-hidden="true" id="actionSheetMobile1">
-                                    <ul 
-                                        class="fd-action-sheet fd-action-sheet--compact" 
-                                        role="list" 
+                                    <ul
+                                        class="fd-action-sheet fd-action-sheet--compact"
+                                        role="list"
                                         aria-label="List of completed stacked steps">
                                             <li class="fd-action-sheet__item" role="listitem">
                                                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
@@ -822,13 +1192,13 @@ export const mobile = () => `<div style="display: flex; justify-content: space-a
                         <div class="fd-wizard__step-wrapper">
                             <div class="fd-popover">
                                 <div class="fd-popover__control">
-                                    <a 
-                                        class="fd-wizard__step-container" 
-                                        tabindex="0" 
-                                        aria-label="Payment" 
-                                        aria-controls="actionSheetMobile2" 
-                                        aria-expanded="false" 
-                                        aria-haspopup="true" 
+                                    <a
+                                        class="fd-wizard__step-container"
+                                        tabindex="0"
+                                        aria-label="Payment"
+                                        aria-controls="actionSheetMobile2"
+                                        aria-expanded="false"
+                                        aria-haspopup="true"
                                         onclick="onPopoverClick('actionSheetMobile2');">
                                             <span class="fd-wizard__step-indicator">
                                                 <i class="fd-wizard__icon sap-icon--money-bills" role="presentation"></i>
@@ -839,9 +1209,9 @@ export const mobile = () => `<div style="display: flex; justify-content: space-a
                                     </a>
                                 </div>
                                 <div class="fd-popover__body" aria-hidden="true" id="actionSheetMobile2">
-                                    <ul 
-                                        class="fd-action-sheet fd-action-sheet--compact" 
-                                        role="list" 
+                                    <ul
+                                        class="fd-action-sheet fd-action-sheet--compact"
+                                        role="list"
                                         aria-label="List of completed stacked steps">
                                             <li class="fd-action-sheet__item" role="listitem">
                                                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
