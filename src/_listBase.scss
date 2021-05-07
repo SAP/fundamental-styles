@@ -100,6 +100,19 @@
       }
     }
 
+    &--inactive {
+      pointer-events: none;
+
+      .#{$block}__title,
+      .#{$block}__secondary {
+        pointer-events: none;
+      }
+    }
+
+    &--no-seprator {
+      border-bottom: 0;
+    }
+
     @include fd-selected() {
       @include list-item-selected-state();
     }
@@ -113,6 +126,7 @@
 
     line-height: 1rem;
     color: var(--sapList_TextColor);
+    pointer-events: all;
   }
 
   &__title {
@@ -122,6 +136,14 @@
 
     &:last-child:first-child {
       flex-basis: auto;
+    }
+
+    &--growing {
+      @include fd-flex-center();
+    }
+
+    &--unread {
+      font-weight: bold;
     }
   }
 
@@ -301,5 +323,22 @@
 
   &--has-message {
     padding-top: 2rem;
+  }
+
+  &__counter {
+    font-size: 0.875rem;
+    color: var(--sapContent_MarkerTextColor);
+    padding-left: $fd-list-item-padding-x;
+    text-shadow: none;
+    flex: none;
+
+    :active {
+      color: var(--sapHighlightTextColor);
+    }
+  }
+
+  &__infinite-scroll {
+    overflow: scroll;
+    outline: none;
   }
 }
