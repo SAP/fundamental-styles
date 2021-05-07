@@ -130,36 +130,42 @@ $button: #{$fd-namespace}-button;
     text-align: center;
   }
 
-  &__button.#{$button} {
-    @include fd-flex-center();
-    @include set-width($fd-carousel-button-size);
-    @include set-height($fd-carousel-button-size);
+  &__button {
+    &.#{$button} {
+      @include fd-flex-center();
+      @include set-width($fd-carousel-button-size);
+      @include set-height($fd-carousel-button-size);
 
-    border-radius: 50%;
-    padding: 0;
-    box-shadow: none;
-    margin: 0.25rem;
+      border-radius: 50%;
+      padding: 0;
+      box-shadow: none;
+      margin: 0.25rem;
 
-    &::before {
-      left: -0.25rem;
-      right: -0.25rem;
-      height: $fd-carousel-touchable-button-size;
-      width: $fd-carousel-touchable-button-size;
-    }
-
-    @include fd-rtl() {
-      & > [class*=sap-icon] {
-        transform: rotate(180deg);
+      &::before {
+        left: -0.25rem;
+        right: -0.25rem;
+        height: $fd-carousel-touchable-button-size;
+        width: $fd-carousel-touchable-button-size;
       }
-    }
 
-    @include fd-focus() {
-      @include after-position-overwrite();
-    }
+      @include fd-rtl() {
+        & > [class*=sap-icon] {
+          transform: rotate(180deg);
+        }
+      }
 
-    @include fd-active() {
-      @include buttonFocus() {
+      @include fd-focus() {
         @include after-position-overwrite();
+      }
+
+      @include fd-hover() {
+        box-shadow: var(--sapContent_Shadow1);
+      }
+
+      @include fd-active() {
+        @include buttonFocus() {
+          @include after-position-overwrite();
+        }
       }
     }
   }

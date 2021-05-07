@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.18.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.24...v0.18.0-rc.25) (2021-05-07)
+
+
+### Features
+
+* introduce Fixed Card Layout component ([#2326](https://github.com/SAP/fundamental-styles/issues/2326)) ([a77dae0](https://github.com/SAP/fundamental-styles/commit/a77dae08d393da086b3c796c5be469886006c856))
+
+## [0.18.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.23...v0.18.0-rc.24) (2021-05-07)
+
+
+### Bug Fixes
+
+* Wizard - change styling priorities in order to apply correct styles for stacked steps ([#2324](https://github.com/SAP/fundamental-styles/issues/2324)) ([729059b](https://github.com/SAP/fundamental-styles/commit/729059b273603aa7e5731787a51ca90969e6e7bc))
+
+## [0.18.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.22...v0.18.0-rc.23) (2021-05-07)
+
+## [0.18.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.21...v0.18.0-rc.22) (2021-05-06)
+
+
+### Bug Fixes
+
+* Avatar group - do not overlay outer shadow with inner component's shadow [ci visual] ([#2296](https://github.com/SAP/fundamental-styles/issues/2296)) ([7c93b2c](https://github.com/SAP/fundamental-styles/commit/7c93b2c83dcedbd68b5c189f35fdefe787edb32b))
+
+## [0.18.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.20...v0.18.0-rc.21) (2021-05-06)
+
+
+### Bug Fixes
+
+* Carousel - add shadow for hover state for controls [ci visual] ([#2297](https://github.com/SAP/fundamental-styles/issues/2297)) ([812ac2a](https://github.com/SAP/fundamental-styles/commit/812ac2ab807425308a7f360bb7298185b12fd312))
+
+## [0.18.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.19...v0.18.0-rc.20) (2021-05-06)
+
 ## [0.18.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.18...v0.18.0-rc.19) (2021-05-05)
 
 ## [0.18.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.17...v0.18.0-rc.18) (2021-05-03)
