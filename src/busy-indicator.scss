@@ -79,6 +79,11 @@ $fd-dots-size-l: 2rem;
   height: $fd-dots-size-l;
 }
 
+.#{$block}--label {
+  display: block;
+  margin: auto !important;
+}
+
 @keyframes grow {
   0%,
   50%,
