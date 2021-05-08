@@ -52,7 +52,8 @@ export const Standard = () => `<div style="text-align: center">
 Standard.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'The standard busy indicator animates a sequence of cascading dots expanding and shrinking in a loop. The component comes in three sizes detailed above. To display the busy indicator, use the <code>fd-busy-indicator</code> class. If you want to display a certain size, add the modifier class of the desired size i.e. <code>--m</code> to the element.'
+        storyDescription:
+            'The standard busy indicator animates a sequence of cascading dots expanding and shrinking in a loop. The component comes in three sizes detailed above. To display the busy indicator, use the <code>fd-busy-indicator</code> class. If you want to display a certain size, add the modifier class of the desired size i.e. <code>--m</code> to the element.'
     }
 };
 
@@ -68,6 +69,37 @@ export const contrastMode = () => `<div style="display:flex;justify-content:cent
 contrastMode.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'The busy indicator also comes in contrast mode and displays white dots against a dark background. To apply contrast mode, add <code>contrast</code> into the element i.e. <code>fd-busy-indicator--m contrast</code>.'
+        storyDescription:
+            'The busy indicator also comes in contrast mode and displays white dots against a dark background. To apply contrast mode, add <code>contrast</code> into the element i.e. <code>fd-busy-indicator--m contrast</code>.'
+    }
+};
+export const LabelledIndicator = () => `<div>
+    <div class="fd-busy-indicator fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
+        <div class="fd-busy-indicator--circle-0"></div>
+        <div class="fd-busy-indicator--circle-1"></div>
+        <div class="fd-busy-indicator--circle-2"></div>
+		<span class="fd-busy-indicator__label">loading data...</span>
+    </div>`;
+
+LabelledIndicator.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription:
+            'The standard busy indicator animates a sequence of cascading dots expanding and shrinking in a loop. The component comes with a label/message to be displayed when the data is being loaded. <code>fd-busy-indicator__label</code> is used to display the message.'
+    }
+};
+export const ExtendedIndicator = () => `<div>
+    <div class="fd-busy-indicator fd-busy-indicator--l fd-busy-indicator__extended fd-padding" aria-hidden="false" aria-label="Loading">
+        <div class="fd-busy-indicator--circle-0"></div>
+        <div class="fd-busy-indicator--circle-1"></div>
+        <div class="fd-busy-indicator--circle-2"></div>
+		<span class="fd-busy-indicator__label">loading data...</span>
+    </div>`;
+
+ExtendedIndicator.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription:
+            'The standard busy indicator animates a sequence of cascading dots expanding and shrinking in a loop. The component has a label to be displayed when the data is being loaded. <code>fd-busy-indicator__extended</code> is used to wrap the busy indicator.'
     }
 };

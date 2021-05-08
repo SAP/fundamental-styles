@@ -1,6 +1,7 @@
 
 @import "./new-settings";
 @import "./mixins";
+@import "./paddings.scss";
 
 $block: #{$fd-namespace}-busy-indicator;
 $fd-dots-color: var(--sapContent_IconColor);
@@ -23,6 +24,7 @@ $fd-dots-size-l: 2rem;
   display: block;
   font-size: 0;
   color: $fd-dots-color;
+  text-align: center;
 }
 
 .#{$block}.contrast,
@@ -51,6 +53,14 @@ $fd-dots-size-l: 2rem;
   background-color: currentColor;
 }
 
+.#{$block}__extended {
+  box-shadow: var(--sapContent_Shadow2);
+  text-shadow: var(--sapContent_TextShadow);
+  background-color: var(--sapPageFooter_Background);
+  width: 23.125rem;
+  margin: auto;
+}
+
 .#{$block}--circle-0 {
   animation: grow 1.6s infinite cubic-bezier(0.32, 0.06, 0.85, 1.11);
 }
@@ -77,6 +87,14 @@ $fd-dots-size-l: 2rem;
 .#{$block}--l .#{$block}--circle-2 {
   width: $fd-dots-size-l;
   height: $fd-dots-size-l;
+}
+
+.#{$block}__label {
+  @include fd-reset();
+
+  display: block;
+  color: var(--sapPageFooter_TextColor);
+  padding-top: 1rem;
 }
 
 @keyframes grow {
