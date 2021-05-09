@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.17.0
+ * Fundamental Library Styles v0.18.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -302,15 +302,16 @@
   padding-left: 0;
   padding-right: 1rem
 }
-.fd-notification__actions .fd-button {
+.fd-notification__actions > * {
+  margin-left: .5rem
+}
+.fd-notification__actions > :first-child {
+  margin-left: 0
+}
+.fd-notification__actions > [dir=rtl],
+[dir=rtl] .fd-notification__actions > * {
+  margin-left: 0;
   margin-right: .5rem
-}
-.fd-notification__actions .fd-button:last-child {
-  margin-right: 0
-}
-.fd-notification__actions .fd-button[dir=rtl],
-[dir=rtl] .fd-notification__actions .fd-button {
-  margin-right: 0
 }
 .fd-notification__limit {
   font-size: .875rem;
@@ -467,12 +468,6 @@
 .fd-notification__indicator--information::before {
   content: ""
 }
-.fd-notification--tabs {
-  -webkit-box-shadow: 0 0 0 .0625rem #fff;
-  -webkit-box-shadow: var(--sapContent_Shadow0,0 0 0 .0625rem #fff);
-  box-shadow: 0 0 0 .0625rem #fff;
-  box-shadow: var(--sapContent_Shadow0,0 0 0 .0625rem #fff)
-}
 .fd-notification--group {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -500,9 +495,6 @@
   padding: 1rem .5rem 1rem 1rem;
   border-bottom: .0625rem solid #999;
   border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#999)
-}
-.fd-notification--group .fd-notification__body:last-child {
-  border-bottom: none
 }
 .fd-notification--group .fd-notification__body[dir=rtl],
 [dir=rtl] .fd-notification--group .fd-notification__body {
@@ -571,9 +563,6 @@
 [dir=rtl] .fd-notification--mobile .fd-notification__body {
   padding-right: .75rem;
   padding-left: .5rem
-}
-.fd-notification--mobile .fd-notification__body .fd-notification__actions--dismiss {
-  display: none
 }
 .fd-notification--mobile .fd-notification__content {
   margin-left: .75rem

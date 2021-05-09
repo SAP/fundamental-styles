@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.17.0
+ * Fundamental Library Styles v0.18.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -316,6 +316,13 @@
 .fd-carousel__button.fd-button:focus {
   z-index: 5;
   outline-offset: .0625rem
+}
+.fd-carousel__button.fd-button.is-hover,
+.fd-carousel__button.fd-button:hover {
+  -webkit-box-shadow: 0 0 0 .0625rem rgba(0,0,0,.42),0 .125rem .5rem 0 rgba(0,0,0,.3);
+  -webkit-box-shadow: var(--sapContent_Shadow1,0 0 0 .0625rem rgba(0,0,0,.42),0 .125rem .5rem 0 rgba(0,0,0,.3));
+  box-shadow: 0 0 0 .0625rem rgba(0,0,0,.42),0 .125rem .5rem 0 rgba(0,0,0,.3);
+  box-shadow: var(--sapContent_Shadow1,0 0 0 .0625rem rgba(0,0,0,.42),0 .125rem .5rem 0 rgba(0,0,0,.3))
 }
 .fd-carousel__button.fd-button.is-active,
 .fd-carousel__button.fd-button:active {

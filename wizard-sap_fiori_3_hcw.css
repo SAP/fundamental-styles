@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.17.0
+ * Fundamental Library Styles v0.18.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -209,6 +209,19 @@
 .fd-wizard__step--upcoming .fd-wizard__step-container {
   cursor: default;
   pointer-events: none
+}
+.fd-wizard__step--upcoming.fd-wizard__step--completed .fd-wizard__step-indicator {
+  background: #fff;
+  background: var(--sapObjectHeader_Background,#fff);
+  color: #000;
+  color: var(--fdWizard_Completed_Step_Color,var(--sapTextColor,#000));
+  border: .0625rem solid #000;
+  border: var(--fdWizard_Completed_Step_Border,.0625rem solid var(--sapObjectHeader_BorderColor,#000))
+}
+.fd-wizard__step--upcoming.fd-wizard__step--completed .fd-wizard__step-indicator .fd-wizard__icon [class*=sap-icon],
+.fd-wizard__step--upcoming.fd-wizard__step--completed .fd-wizard__step-indicator .fd-wizard__icon[class*=sap-icon] {
+  color: #000;
+  color: var(--fdWizard_Completed_Step_Icon_Color,var(--sapTextColor,#000))
 }
 .fd-wizard__step--no-label {
   min-width: 4rem

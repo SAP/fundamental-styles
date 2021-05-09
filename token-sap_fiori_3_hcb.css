@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.17.0
+ * Fundamental Library Styles v0.18.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -145,7 +145,7 @@
   outline-style: var(--sapContent_FocusStyle,dotted)
 }
 .fd-token--compact {
-  padding: 0 0 .1rem .25rem;
+  padding: .1rem 0 .1rem .25rem;
   height: 1.25rem;
   min-width: 3rem;
   line-height: 1.125rem

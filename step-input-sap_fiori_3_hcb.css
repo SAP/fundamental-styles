@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.17.0
+ * Fundamental Library Styles v0.18.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -287,6 +287,14 @@
 }
 .fd-step-input__input.fd-input--compact {
   height: 100%
+}
+.fd-step-input__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
 }
 .fd-step-input.is-error .fd-step-input__button.fd-button,
 .fd-step-input.is-information .fd-step-input__button.fd-button,

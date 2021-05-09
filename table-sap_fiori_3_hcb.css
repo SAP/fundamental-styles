@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.17.0
+ * Fundamental Library Styles v0.18.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -105,6 +105,23 @@
   color: #fff;
   color: var(--sapList_HeaderTextColor,#fff)
 }
+.fd-table__header .fd-table__cell--fixed {
+  margin-top: -.05rem;
+  border-top: .0625rem solid #999;
+  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#999);
+  border-right: .0625rem solid #fff;
+  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_TableFixedBorderColor,#fff);
+  border-left: .0625rem solid #999;
+  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#999);
+  height: 2.8rem
+}
+.fd-table__header .fd-table__cell--fixed[dir=rtl],
+[dir=rtl] .fd-table__header .fd-table__cell--fixed {
+  border-left: .0625rem solid #fff;
+  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_TableFixedBorderColor,#fff);
+  border-right: .0625rem solid #999;
+  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#999)
+}
 .fd-table__text {
   white-space: nowrap;
   overflow: hidden;
@@ -185,6 +202,9 @@
   background-color: inherit;
   border-bottom: .0625rem solid #999;
   border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#999);
+  border-left: .0625rem solid #999;
+  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#999);
+  margin-top: .05rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,8 +218,8 @@
   background-color: var(--sapList_Hover_Background,#7a5100)
 }
 .fd-table__cell--fixed:last-of-type {
-  border-right: .125rem #fff solid;
-  border-right: .125rem var(--sapList_TableFixedBorderColor,#fff) solid
+  border-right: .0625rem solid #fff;
+  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_TableFixedBorderColor,#fff)
 }
 .fd-table__cell--fixed[dir=rtl],
 [dir=rtl] .fd-table__cell--fixed {
@@ -208,9 +228,10 @@
 }
 .fd-table__cell--fixed[dir=rtl]:last-of-type,
 [dir=rtl] .fd-table__cell--fixed:last-of-type {
-  border-right: none;
-  border-left: .125rem #fff solid;
-  border-left: .125rem var(--sapList_TableFixedBorderColor,#fff) solid
+  border-right: .0625rem solid #999;
+  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#999);
+  border-left: .0625rem solid #fff;
+  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_TableFixedBorderColor,#fff)
 }
 .fd-table__cell:first-child {
   margin-left: 0;
@@ -291,6 +312,12 @@
 .fd-table__body .fd-table__row--activable[aria-selected=true]:active {
   background-color: #7a5100;
   background-color: var(--sapList_Active_Background,#7a5100)
+}
+.fd-table__body .fd-table__row:first-child {
+  margin-left: 0
+}
+.fd-table__body .fd-table__row:first-child .fd-table__cell--fixed {
+  margin-top: 0
 }
 .fd-table__cell--hoverable.is-selected .fd-table__cell.is-hover,
 .fd-table__cell--hoverable.is-selected .fd-table__cell:hover,
@@ -773,6 +800,9 @@
 }
 .fd-table--condensed .fd-table__header .fd-table__cell {
   height: 2rem
+}
+.fd-table--condensed .fd-table__header .fd-table__cell--fixed {
+  height: 2.05rem
 }
 .fd-table[dir=rtl] .fd-table__cell,
 [dir=rtl] .fd-table .fd-table__cell {

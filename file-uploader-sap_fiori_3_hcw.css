@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.17.0
+ * Fundamental Library Styles v0.18.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -41,7 +41,10 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: pointer
+  cursor: pointer;
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+  text-shadow: 0 0 0 var(--sapTextColor,#000)
 }
 .fd-file-uploader__input.fd-input::-webkit-input-placeholder {
   color: #000;
@@ -62,6 +65,9 @@
 .fd-file-uploader__input.fd-input::placeholder {
   color: #000;
   color: var(--sapTextColor,#000)
+}
+.fd-file-uploader__input.fd-input:focus {
+  outline: 0
 }
 .fd-file-uploader__input.fd-input[dir=rtl],
 [dir=rtl] .fd-file-uploader__input.fd-input {

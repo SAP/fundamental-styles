@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.17.0
+ * Fundamental Library Styles v0.18.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -77,7 +77,18 @@
   background: inherit;
   font-size: inherit;
   border-radius: inherit;
-  line-height: 1
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center
 }
 .fd-avatar--circle {
   border-radius: 50%
@@ -99,6 +110,9 @@
   background-color: var(--fdAvatar-Transparent_BackgroundColor,var(--sapBackgroundColor,#fff));
   color: #000;
   color: var(--sapContent_IconColor,#000)
+}
+.fd-avatar--background-contain {
+  background-size: contain
 }
 .fd-avatar--placeholder {
   background-color: #fff;
@@ -197,14 +211,17 @@
 .fd-avatar--xs .fd-avatar__zoom-icon[class*=sap-icon] {
   font-size: .75rem;
   width: 1.125rem;
-  height: 1.125rem;
+  height: 1.125rem
+}
+.fd-avatar--xs:not(.fd-avatar--circle) .fd-avatar__zoom-icon [class*=sap-icon],
+.fd-avatar--xs:not(.fd-avatar--circle) .fd-avatar__zoom-icon[class*=sap-icon] {
   bottom: -.125rem;
   right: -.125rem
 }
-.fd-avatar--xs .fd-avatar__zoom-icon [class*=sap-icon][dir=rtl],
-.fd-avatar--xs .fd-avatar__zoom-icon[class*=sap-icon][dir=rtl],
-[dir=rtl] .fd-avatar--xs .fd-avatar__zoom-icon [class*=sap-icon],
-[dir=rtl] .fd-avatar--xs .fd-avatar__zoom-icon[class*=sap-icon] {
+.fd-avatar--xs:not(.fd-avatar--circle) .fd-avatar__zoom-icon [class*=sap-icon][dir=rtl],
+.fd-avatar--xs:not(.fd-avatar--circle) .fd-avatar__zoom-icon[class*=sap-icon][dir=rtl],
+[dir=rtl] .fd-avatar--xs:not(.fd-avatar--circle) .fd-avatar__zoom-icon [class*=sap-icon],
+[dir=rtl] .fd-avatar--xs:not(.fd-avatar--circle) .fd-avatar__zoom-icon[class*=sap-icon] {
   right: auto;
   left: -.125rem
 }
@@ -233,14 +250,17 @@
 .fd-avatar--s .fd-avatar__zoom-icon[class*=sap-icon] {
   font-size: .75rem;
   width: 1.125rem;
-  height: 1.125rem;
+  height: 1.125rem
+}
+.fd-avatar--s:not(.fd-avatar--circle) .fd-avatar__zoom-icon [class*=sap-icon],
+.fd-avatar--s:not(.fd-avatar--circle) .fd-avatar__zoom-icon[class*=sap-icon] {
   bottom: -.125rem;
   right: -.125rem
 }
-.fd-avatar--s .fd-avatar__zoom-icon [class*=sap-icon][dir=rtl],
-.fd-avatar--s .fd-avatar__zoom-icon[class*=sap-icon][dir=rtl],
-[dir=rtl] .fd-avatar--s .fd-avatar__zoom-icon [class*=sap-icon],
-[dir=rtl] .fd-avatar--s .fd-avatar__zoom-icon[class*=sap-icon] {
+.fd-avatar--s:not(.fd-avatar--circle) .fd-avatar__zoom-icon [class*=sap-icon][dir=rtl],
+.fd-avatar--s:not(.fd-avatar--circle) .fd-avatar__zoom-icon[class*=sap-icon][dir=rtl],
+[dir=rtl] .fd-avatar--s:not(.fd-avatar--circle) .fd-avatar__zoom-icon [class*=sap-icon],
+[dir=rtl] .fd-avatar--s:not(.fd-avatar--circle) .fd-avatar__zoom-icon[class*=sap-icon] {
   right: auto;
   left: -.125rem
 }
@@ -269,14 +289,17 @@
 .fd-avatar--m .fd-avatar__zoom-icon[class*=sap-icon] {
   font-size: .75rem;
   width: 1.125rem;
-  height: 1.125rem;
+  height: 1.125rem
+}
+.fd-avatar--m:not(.fd-avatar--circle) .fd-avatar__zoom-icon [class*=sap-icon],
+.fd-avatar--m:not(.fd-avatar--circle) .fd-avatar__zoom-icon[class*=sap-icon] {
   bottom: -.125rem;
   right: -.125rem
 }
-.fd-avatar--m .fd-avatar__zoom-icon [class*=sap-icon][dir=rtl],
-.fd-avatar--m .fd-avatar__zoom-icon[class*=sap-icon][dir=rtl],
-[dir=rtl] .fd-avatar--m .fd-avatar__zoom-icon [class*=sap-icon],
-[dir=rtl] .fd-avatar--m .fd-avatar__zoom-icon[class*=sap-icon] {
+.fd-avatar--m:not(.fd-avatar--circle) .fd-avatar__zoom-icon [class*=sap-icon][dir=rtl],
+.fd-avatar--m:not(.fd-avatar--circle) .fd-avatar__zoom-icon[class*=sap-icon][dir=rtl],
+[dir=rtl] .fd-avatar--m:not(.fd-avatar--circle) .fd-avatar__zoom-icon [class*=sap-icon],
+[dir=rtl] .fd-avatar--m:not(.fd-avatar--circle) .fd-avatar__zoom-icon[class*=sap-icon] {
   right: auto;
   left: -.125rem
 }
@@ -305,14 +328,17 @@
 .fd-avatar--l .fd-avatar__zoom-icon[class*=sap-icon] {
   font-size: .875rem;
   width: 1.25rem;
-  height: 1.25rem;
+  height: 1.25rem
+}
+.fd-avatar--l:not(.fd-avatar--circle) .fd-avatar__zoom-icon [class*=sap-icon],
+.fd-avatar--l:not(.fd-avatar--circle) .fd-avatar__zoom-icon[class*=sap-icon] {
   bottom: -.1875rem;
   right: -.1875rem
 }
-.fd-avatar--l .fd-avatar__zoom-icon [class*=sap-icon][dir=rtl],
-.fd-avatar--l .fd-avatar__zoom-icon[class*=sap-icon][dir=rtl],
-[dir=rtl] .fd-avatar--l .fd-avatar__zoom-icon [class*=sap-icon],
-[dir=rtl] .fd-avatar--l .fd-avatar__zoom-icon[class*=sap-icon] {
+.fd-avatar--l:not(.fd-avatar--circle) .fd-avatar__zoom-icon [class*=sap-icon][dir=rtl],
+.fd-avatar--l:not(.fd-avatar--circle) .fd-avatar__zoom-icon[class*=sap-icon][dir=rtl],
+[dir=rtl] .fd-avatar--l:not(.fd-avatar--circle) .fd-avatar__zoom-icon [class*=sap-icon],
+[dir=rtl] .fd-avatar--l:not(.fd-avatar--circle) .fd-avatar__zoom-icon[class*=sap-icon] {
   right: auto;
   left: -.1875rem
 }
@@ -341,14 +367,17 @@
 .fd-avatar--xl .fd-avatar__zoom-icon[class*=sap-icon] {
   font-size: 1rem;
   width: 1.75rem;
-  height: 1.75rem;
+  height: 1.75rem
+}
+.fd-avatar--xl:not(.fd-avatar--circle) .fd-avatar__zoom-icon [class*=sap-icon],
+.fd-avatar--xl:not(.fd-avatar--circle) .fd-avatar__zoom-icon[class*=sap-icon] {
   bottom: -.25rem;
   right: -.25rem
 }
-.fd-avatar--xl .fd-avatar__zoom-icon [class*=sap-icon][dir=rtl],
-.fd-avatar--xl .fd-avatar__zoom-icon[class*=sap-icon][dir=rtl],
-[dir=rtl] .fd-avatar--xl .fd-avatar__zoom-icon [class*=sap-icon],
-[dir=rtl] .fd-avatar--xl .fd-avatar__zoom-icon[class*=sap-icon] {
+.fd-avatar--xl:not(.fd-avatar--circle) .fd-avatar__zoom-icon [class*=sap-icon][dir=rtl],
+.fd-avatar--xl:not(.fd-avatar--circle) .fd-avatar__zoom-icon[class*=sap-icon][dir=rtl],
+[dir=rtl] .fd-avatar--xl:not(.fd-avatar--circle) .fd-avatar__zoom-icon [class*=sap-icon],
+[dir=rtl] .fd-avatar--xl:not(.fd-avatar--circle) .fd-avatar__zoom-icon[class*=sap-icon] {
   right: auto;
   left: -.25rem
 }
@@ -379,6 +408,22 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
+}
+.fd-avatar-group__focusable-avatar,
+.fd-avatar-group__popover-control {
+  cursor: pointer
+}
+.fd-avatar-group__focusable-avatar.is-focus,
+.fd-avatar-group__focusable-avatar:focus,
+.fd-avatar-group__popover-control.is-focus,
+.fd-avatar-group__popover-control:focus {
+  outline-offset: .0625rem;
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
 }
 .fd-avatar-group--individual-type .fd-avatar-group__item {
   cursor: pointer
@@ -428,28 +473,6 @@
 }
 .fd-avatar-group__item::after,
 .fd-avatar-group__item::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
-}
-.fd-avatar-group__more-button {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #000;
-  color: var(--sapTextColor,#000);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
-  font-weight: 400;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: 0
-}
-.fd-avatar-group__more-button::after,
-.fd-avatar-group__more-button::before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit

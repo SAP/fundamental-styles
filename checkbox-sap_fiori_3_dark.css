@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.17.0
+ * Fundamental Library Styles v0.18.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -385,12 +385,11 @@
 }
 .fd-checkbox:indeterminate + .fd-checkbox__label::before {
   content: "\e17b";
-  font-size: .8125rem;
-  padding-top: .0625rem
+  font-size: .75rem
 }
 .fd-checkbox:indeterminate + .fd-checkbox__label--compact::before {
   content: "\e17b";
-  font-size: .5625rem
+  font-size: .6rem
 }
 .fd-checkbox.is-alert + .fd-checkbox__label::before,
 .fd-checkbox.is-warning + .fd-checkbox__label::before {

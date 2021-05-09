@@ -1,0 +1,181 @@
+/*!
+ * Fundamental Library Styles v0.18.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+@charset "UTF-8";
+.fd-fixed-card-layout {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0
+}
+.fd-fixed-card-layout::after,
+.fd-fixed-card-layout::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-fixed-card-layout__card-layout {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+.fd-fixed-card-layout__card-layout::after,
+.fd-fixed-card-layout__card-layout::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-fixed-card-layout__card-layout * {
+  word-break: break-all
+}
+.fd-fixed-card-layout__card-layout-column {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-right: 1rem
+}
+.fd-fixed-card-layout__card-layout-column::after,
+.fd-fixed-card-layout__card-layout-column::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-fixed-card-layout__card-layout-column:last-child {
+  margin-right: 0
+}
+.fd-fixed-card-layout__card-layout-column:last-child[dir=rtl],
+[dir=rtl] .fd-fixed-card-layout__card-layout-column:last-child {
+  margin-left: 0
+}
+.fd-fixed-card-layout__card-layout-column[dir=rtl],
+[dir=rtl] .fd-fixed-card-layout__card-layout-column {
+  margin-left: 1rem;
+  margin-right: 0
+}
+.fd-fixed-card-layout__card {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin-bottom: 1rem;
+  min-width: 20rem
+}
+.fd-fixed-card-layout__card::after,
+.fd-fixed-card-layout__card::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-fixed-card-layout__card:last-child {
+  margin-bottom: 0
+}
+.fd-fixed-card-layout__card-placeholder {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  opacity: .3;
+  border: .125rem dashed #03b803;
+  border: .125rem dashed var(--sapContent_DragAndDropActiveColor,#03b803);
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+  margin-bottom: 1rem
+}
+.fd-fixed-card-layout__card-placeholder::after,
+.fd-fixed-card-layout__card-placeholder::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-fixed-card-layout__card-preview {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fff;
+  color: var(--sapTextColor,#fff);
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  border-radius: .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  -webkit-box-shadow: 0 .25rem 2rem 0 rgba(255,255,255,.6),0 0 0 .125rem #fff;
+  -webkit-box-shadow: var(--sapContent_Shadow2,0 .25rem 2rem 0 rgba(255,255,255,.6),0 0 0 .125rem #fff);
+  box-shadow: 0 .25rem 2rem 0 rgba(255,255,255,.6),0 0 0 .125rem #fff;
+  box-shadow: var(--sapContent_Shadow2,0 .25rem 2rem 0 rgba(255,255,255,.6),0 0 0 .125rem #fff)
+}
+.fd-fixed-card-layout__card-preview::after,
+.fd-fixed-card-layout__card-preview::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
