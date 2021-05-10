@@ -332,7 +332,7 @@
     text-shadow: none;
     flex: none;
 
-    :active {
+    @include active() {
       color: var(--sapHighlightTextColor);
     }
   }
