@@ -175,17 +175,17 @@ $block: #{$fd-namespace}-grid-list;
           }
         }
 
-        .fd-grid-list__item-input,
+        .#{$item}-input,
         &--actions,
         &--extra-content {
-          display: flex;
-          align-items: center;
+          @include fd-flex-vertical-center();
+
           height: 100%;
         }
       }
     }
 
-    .drop-area__line--vertical {
+    .fd-drop-area__line--vertical {
       height: 100%;
 
       &.before {
@@ -320,7 +320,7 @@ $block: #{$fd-namespace}-grid-list;
 
   &__filter,
   &__filter-button {
-    color: var(--sapHighlightTextColor);
+    color: var(--sapHighlightTextColor) !important;
   }
 
   &__filter-button {
