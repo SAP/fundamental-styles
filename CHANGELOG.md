@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.18.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.0...v0.18.1-rc.1) (2021-05-11)
+
+### [0.18.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.18.0...v0.18.1-rc.0) (2021-05-11)
+
+## [0.18.0](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.32...v0.18.0) (2021-05-09)
+
+## [0.18.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.31...v0.18.0-rc.32) (2021-05-09)
+
+## [0.18.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.30...v0.18.0-rc.31) (2021-05-09)
+
+## [0.18.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.29...v0.18.0-rc.30) (2021-05-09)
+
+## [0.18.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.28...v0.18.0-rc.29) (2021-05-08)
+
+## [0.18.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.27...v0.18.0-rc.28) (2021-05-08)
+
+## [0.18.0-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.26...v0.18.0-rc.27) (2021-05-08)
+
+## [0.18.0-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.25...v0.18.0-rc.26) (2021-05-08)
+
 ## [0.18.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.18.0-rc.24...v0.18.0-rc.25) (2021-05-07)
 
 
