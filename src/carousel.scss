@@ -16,10 +16,15 @@ $button: #{$fd-namespace}-button;
 
   @mixin after-position-overwrite() {
     outline-offset: $fd-carousel-button-focus-outline-offset;
+    top: 50%;
   }
 
   @include fd-reset();
   @include fd-flex(column);
+
+  @include fd-focus() {
+    outline: 1px dotted;
+  }
 
   width: 100%;
   min-width: 15.5rem;
@@ -44,8 +49,12 @@ $button: #{$fd-namespace}-button;
       &.#{$block}__button--left {
         left: $fd-carousel-button-content-offset;
 
+        @include fd-focus() {
+          right: auto;
+        }
+
         @include fd-rtl() {
-          left: initial;
+          left: auto;
           right: $fd-carousel-button-content-offset;
         }
       }
@@ -53,11 +62,19 @@ $button: #{$fd-namespace}-button;
       &.#{$block}__button--right {
         right: $fd-carousel-button-content-offset;
 
+        @include fd-focus() {
+          right: auto;
+        }
+
         @include fd-rtl() {
-          right: initial;
+          right: auto;
           left: $fd-carousel-button-content-offset;
         }
       }
+    }
+
+    &--display {
+      overflow: hidden;
     }
   }
 
@@ -148,11 +165,11 @@ $button: #{$fd-namespace}-button;
         width: $fd-carousel-touchable-button-size;
       }
 
-      @include fd-rtl() {
-        & > [class*=sap-icon] {
-          transform: rotate(180deg);
-        }
-      }
+      // @include fd-rtl() {
+      //   & > [class*=sap-icon] {
+      //     transform: rotate(180deg);
+      //   }
+      // }
 
       @include fd-focus() {
         @include after-position-overwrite();
@@ -174,5 +191,12 @@ $button: #{$fd-namespace}-button;
     .#{$block}__button.#{$button} {
       display: none;
     }
+  }
+
+  &--horizontal {
+    @include fd-reset();
+    @include fd-flex-vertical-center();
+
+    width: 100%;
   }
 }
