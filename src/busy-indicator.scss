@@ -51,6 +51,21 @@ $fd-dots-size-l: 2rem;
   background-color: currentColor;
 }
 
+.#{$block}--enhanced-indicator {
+  box-shadow: var(--sapContent_Shadow2);
+  text-shadow: var(--sapContent_TextShadow);
+  background-color: var(--sapPageFooter_Background);
+  padding: 1rem;
+
+  &-text {
+    font-family: var(--sapFontFamily);
+    font-size: var(--sapFontFamily);
+    font-weight: normal;
+    color: var(--sapPageFooter_TextColor);
+    padding-top: 1rem !important;
+  }
+}
+
 .#{$block}--circle-0 {
   animation: grow 1.6s infinite cubic-bezier(0.32, 0.06, 0.85, 1.11);
 }
