@@ -1,4 +1,4 @@
-@import "states";
+@import 'states';
 
 // utils
 @mixin fd-reset {
@@ -38,7 +38,7 @@
 
 @mixin fd-clearfix {
   &::after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }
@@ -99,7 +99,7 @@
       border-width: 0 $width $height $width;
 
       @if $varcolor {
-        @include fd-var-color("border-bottom-color", $foreground-color, $varcolor);
+        @include fd-var-color('border-bottom-color', $foreground-color, $varcolor);
       } @else {
         border-bottom-color: $foreground-color;
       }
@@ -111,7 +111,7 @@
       border-bottom-color: $background-color;
 
       @if $varcolor {
-        @include fd-var-color("border-left-color", $foreground-color, $varcolor);
+        @include fd-var-color('border-left-color', $foreground-color, $varcolor);
       } @else {
         border-left-color: $foreground-color;
       }
@@ -121,7 +121,7 @@
       border-width: $height $width 0 $width;
 
       @if $varcolor {
-        @include fd-var-color("border-top-color", $foreground-color, $varcolor);
+        @include fd-var-color('border-top-color', $foreground-color, $varcolor);
       } @else {
         border-top-color: $foreground-color;
       }
@@ -133,7 +133,7 @@
       border-bottom-color: $background-color;
 
       @if $varcolor {
-        @include fd-var-color("border-right-color", $foreground-color, $varcolor);
+        @include fd-var-color('border-right-color', $foreground-color, $varcolor);
       } @else {
         border-right-color: $foreground-color;
       }
@@ -196,8 +196,8 @@
 
 @mixin fd-rtl {
   @at-root {
-    [dir="rtl"] &,
-    &[dir="rtl"] {
+    [dir='rtl'] &,
+    &[dir='rtl'] {
       @content;
     }
   }
@@ -272,13 +272,13 @@
 
   &::before {
     position: absolute;
-    content: "...";
+    content: '...';
     right: 0;
     bottom: 1px;
   }
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     right: 0;
     width: 1em;
@@ -373,20 +373,20 @@
 }
 
 @mixin fd-icon-overwrite {
-  &[class*=sap-icon] {
+  &[class*='sap-icon'] {
     @content;
   }
 }
 
 @mixin fd-icon-before-overwrite {
-  &[class*=sap-icon]::before,
+  &[class*='sap-icon']::before,
   &::before {
     @content;
   }
 }
 
 @mixin fd-icon-after-overwrite {
-  &[class*=sap-icon]::after,
+  &[class*='sap-icon']::after,
   &::after {
     @content;
   }
@@ -405,8 +405,8 @@
 }
 
 @mixin fd-icon-selector() {
-  [class*="sap-icon"],
-  &[class*="sap-icon"] {
+  [class*='sap-icon'],
+  &[class*='sap-icon'] {
     @content;
   }
 }
@@ -430,4 +430,60 @@
   overflow: hidden;
   white-space: normal;
   text-overflow: ellipsis;
+}
+
+@mixin set-margins-x($left: 0, $right: 0) {
+  margin-left: $left;
+  margin-right: $right;
+
+  @include fd-rtl() {
+    margin-right: $left;
+    margin-left: $right;
+  }
+}
+
+@mixin set-margin-left($left: 0) {
+  margin-left: $left;
+
+  @include fd-rtl() {
+    margin-right: $left;
+    margin-left: 0;
+  }
+}
+
+@mixin set-margin-right($right: 0) {
+  margin-right: $right;
+
+  @include fd-rtl() {
+    margin-right: 0;
+    margin-left: $right;
+  }
+}
+
+@mixin set-paddings-x($left: 0, $right: 0) {
+  padding-left: $left;
+  padding-right: $right;
+
+  @include fd-rtl() {
+    padding-right: $left;
+    padding-left: $right;
+  }
+}
+
+@mixin set-padding-left($left: 0) {
+  padding-left: $left;
+
+  @include fd-rtl() {
+    padding-right: $left;
+    padding-left: 0;
+  }
+}
+
+@mixin set-padding-right($right: 0) {
+  padding-right: $right;
+
+  @include fd-rtl() {
+    padding-right: 0;
+    padding-left: $right;
+  }
 }

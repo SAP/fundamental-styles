@@ -1,14 +1,18 @@
-@import "./listDefinitions.scss";
+@import './listDefinitions.scss';
 
-$fd-list-navigation-item-height: 2.75rem;
+$fd-list-navigation-item-height: 2.75rem !default;
+$fd-list-navigation-item-indicator-spacing: 0.3125rem !default;
+$fd-list-navigation-item-text-spacing: 2.5rem !default;
 
 .#{$block} {
   list-style-type: none;
   background: var(--sapList_AlternatingBackground);
 
   .#{$block}__navigation-item-indicator {
+    @include fd-reset();
+
     &::after {
-      content: "";
+      content: '';
       width: 0.1875rem;
       display: inline-block;
       position: absolute;
@@ -18,7 +22,7 @@ $fd-list-navigation-item-height: 2.75rem;
       background-color: var(--sapSelectedColor);
       color: var(--sapSelectedColor);
       border-radius: var(--sapField_BorderCornerRadius);
-      margin-right: 0.3125rem;
+      margin-right: $fd-list-navigation-item-indicator-spacing;
     }
 
     @include fd-rtl() {
@@ -26,7 +30,7 @@ $fd-list-navigation-item-height: 2.75rem;
         right: unset;
         margin-right: 0;
         left: 0;
-        margin-left: 0.3125rem;
+        margin-left: $fd-list-navigation-item-indicator-spacing;
       }
     }
   }
@@ -34,39 +38,30 @@ $fd-list-navigation-item-height: 2.75rem;
   &__navigation-item {
     @include fd-reset();
     @include fd-fiori-focus();
+    @include set-paddings-x(0.5rem, 1rem);
 
     background: transparent;
     height: $fd-list-navigation-item-height;
-    width: auto;
-    padding-left: 0.5rem;
-    padding-right: 1rem;
     position: relative;
-
-    @include fd-rtl() {
-      padding-right: 0.5rem;
-      padding-left: 1rem;
-    }
 
     .fd-list {
       display: none;
     }
 
     &--expandable {
-      margin-top: 0.25rem;
-      margin-bottom: 0.25rem;
+      margin: 0.25rem 0;
     }
 
     &.is-expanded {
-      margin-left: 0.25rem;
-      margin-right: 0.25rem;
+      @include set-margins-x(0.25rem, 0.25rem);
+
       border-radius: var(--sapElement_BorderCornerRadius);
       box-shadow: var(--sapContent_Shadow0);
-      height: auto;
+      height: 100%;
       overflow: hidden;
 
       .#{$block}__navigation-item {
-        width: auto;
-
+        width: 100%;
         .#{$block}__navigation-item-indicator {
           &::after {
             margin-right: 0;
@@ -83,54 +78,36 @@ $fd-list-navigation-item-height: 2.75rem;
           @include fd-reset();
 
           vertical-align: middle;
-          line-height: 2.75rem;
+          line-height: $fd-list-navigation-item-height;
           color: var(--sapContent_LabelColor);
           font-size: var(--sapFontSize);
-          margin-left: 2.5rem;
+          margin-left: $fd-list-navigation-item-text-spacing;
 
           @include fd-rtl() {
-            margin-right: 2.5rem;
+            margin-right: $fd-list-navigation-item-text-spacing;
             margin-left: 0;
           }
         }
       }
 
       .#{$block}__navigation-item-text {
-        padding-left: 0;
-
-        @include fd-rtl() {
-          padding-right: 0;
-        }
+        @include set-padding-left();
       }
 
       .#{$block}__navigation-item-icon {
-        padding-right: 0.5rem;
-
-        @include fd-rtl() {
-          padding-right: 0;
-          padding-left: 0.5rem;
-        }
+        @include set-padding-right(0.5rem);
       }
 
       .#{$block} {
-        margin-right: -1rem;
-        margin-left: -0.5rem;
+        @include set-margins-x(-0.5rem, -1rem);
+
         width: auto;
         display: block;
-
-        @include fd-rtl() {
-          margin-left: -1rem;
-          margin-right: -0.5rem;
-        }
       }
 
       .#{$block}__navigation-item-indicator {
         &::after {
-          margin-right: 0;
-
-          @include fd-rtl() {
-            margin-left: 0;
-          }
+          @include set-margin-right();
         }
       }
     }
@@ -156,16 +133,10 @@ $fd-list-navigation-item-height: 2.75rem;
     }
 
     &--condensed {
+      @include set-paddings-x();
+
       position: relative;
       width: 3.25rem;
-      padding-left: 0;
-      padding-right: 0;
-
-      @include fd-rtl() {
-        width: 3.25rem;
-        padding-left: 0;
-        padding-right: 0;
-      }
 
       .#{$block}__navigation-item-popover {
         &--first-level,
@@ -180,10 +151,10 @@ $fd-list-navigation-item-height: 2.75rem;
       }
 
       .#{$block}__navigation-item-icon {
+        @include set-margins-x(0.5rem, 0.5rem);
+
         height: $fd-list-navigation-item-height;
         line-height: $fd-list-navigation-item-height;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
       }
 
       &.is-expanded {
@@ -192,13 +163,7 @@ $fd-list-navigation-item-height: 2.75rem;
         visibility: hidden;
 
         .#{$block}__navigation-item {
-          width: auto;
-          margin-left: 0;
-
-          @include fd-rtl() {
-            margin-left: 0;
-            margin-right: 0;
-          }
+          @include set-margins-x();
         }
 
         .#{$block}__navigation-item--condensed {
@@ -227,15 +192,8 @@ $fd-list-navigation-item-height: 2.75rem;
             }
 
             .#{$block}__navigation-item-text {
-              padding-left: 0;
-              margin-left: 0;
-
-              @include fd-rtl() {
-                padding-left: 0;
-                padding-right: 0;
-                margin-left: 0;
-                margin-right: 0;
-              }
+              @include set-margin-left();
+              @include set-padding-left();
             }
           }
 
@@ -245,6 +203,7 @@ $fd-list-navigation-item-height: 2.75rem;
             width: 14.325rem;
             border-bottom-right-radius: 0;
             z-index: 3;
+            height: 100%;
 
             @include fd-rtl() {
               border-bottom-left-radius: 0;
@@ -266,27 +225,16 @@ $fd-list-navigation-item-height: 2.75rem;
               right: 3.25rem;
             }
 
-            .fd-list {
-              .#{$block}__navigation-item {
-                .#{$block}__navigation-item-text {
-                  margin-left: 1rem;
+            .#{$block}__navigation-item {
+              .#{$block}__navigation-item-text {
+                @include set-margin-left(1rem);
+              }
 
-                  @include fd-rtl() {
-                    margin-left: 0;
-                    margin-right: 1rem;
-                  }
-                }
+              .#{$block}__navigation-item-indicator {
+                &::after {
+                  @include set-margin-right();
 
-                .#{$block}__navigation-item-indicator {
-                  &::after {
-                    margin-right: 0;
-                    display: inline-block;
-
-                    @include fd-rtl() {
-                      margin-right: 0;
-                      margin-left: 0;
-                    }
-                  }
+                  display: inline-block;
                 }
               }
             }
@@ -313,7 +261,7 @@ $fd-list-navigation-item-height: 2.75rem;
 
         &::before {
           display: inline-block;
-          content: "";
+          content: '';
           min-width: 0;
           min-height: 0;
           margin-right: 0.75rem;
@@ -337,7 +285,7 @@ $fd-list-navigation-item-height: 2.75rem;
 
     &-icon {
       font-size: 1rem;
-      font-family: "SAP-icons";
+      font-family: 'SAP-icons';
       height: $fd-list-navigation-item-height;
       line-height: $fd-list-navigation-item-height;
       width: 2.25rem;
@@ -347,21 +295,17 @@ $fd-list-navigation-item-height: 2.75rem;
     }
 
     &-text {
+      @include set-padding-left(0.25rem);
+
       font-size: var(--sapFontLargeSize);
       font-family: var(--sapFontFamily);
       color: var(--sapList_TextColor);
-      padding-left: 0.25rem;
       max-width: 9rem;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
       display: inline-block;
       line-height: $fd-list-navigation-item-height;
-
-      @include fd-rtl() {
-        padding-left: 0;
-        padding-right: 0.25rem;
-      }
     }
 
     &-arrow {
@@ -374,7 +318,7 @@ $fd-list-navigation-item-height: 2.75rem;
       position: absolute;
       right: 0;
       line-height: $fd-list-navigation-item-height;
-      font-family: "SAP-icons";
+      font-family: 'SAP-icons';
       font-size: 1rem;
       color: var(--sapContent_NonInteractiveIconColor);
       background-color: transparent;
