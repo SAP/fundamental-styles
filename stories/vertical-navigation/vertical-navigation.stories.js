@@ -18,7 +18,7 @@ Side navigation can be viewed in three different states:
 **Note:** It is recommend to use only two states per device.
         `,
 
-        tags: ['f3', 'a11y', 'theme'],
+        tags: ['f3', 'a11y', 'theme', 'development'],
         components: ['vertical-nav', 'button', 'icon', 'list', 'popover']
     }
 };

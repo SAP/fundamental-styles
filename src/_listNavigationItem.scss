@@ -158,8 +158,9 @@ $fd-list-navigation-item-text-spacing: 2.5rem !default;
       }
 
       &.is-expanded {
+        @include set-margins-x();
+
         overflow: visible;
-        margin: 0;
         visibility: hidden;
 
         .#{$block}__navigation-item {
