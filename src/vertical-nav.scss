@@ -2,36 +2,24 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-vertical-nav;
-$has-child-content-arrow-margin: 0.125rem;
 
 .#{$block} {
   @include fd-reset();
 
+  @include fd-flex(column) {
+    justify-content: space-between;
+  }
+
   background-color: var(--sapList_AlternatingBackground);
   width: 15rem;
-  border-right: var(--sapList_BorderWidth) solid;
-  border-right-color: var(--sapGroup_ContentBorderColor);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   text-shadow: var(--fdVerticalNav_Text_Shadow);
+  box-shadow: var(--sapContent_Shadow0);
   height: 100%;
-
-  &__skip-link {
-    @include fd-reset();
-    @include fd-screen-reader-only();
-
-    &:focus {
-      @include fd-link();
-
-      position: static;
-      width: auto;
-      height: auto;
-    }
-  }
 
   &__group-header {
     @include fd-reset();
+    @include fd-ellipsis();
+    @include set-paddings-x(1rem);
 
     height: 2.75rem;
     background: var(--sapList_GroupHeaderBackground);
@@ -42,11 +30,6 @@ $has-child-content-arrow-margin: 0.125rem;
     font-size: var(--sapFontSize);
     font-weight: bold;
     line-height: 2rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 
   &__main-navigation {
@@ -55,15 +38,5 @@ $has-child-content-arrow-margin: 0.125rem;
 
   &--condensed {
     width: 3.25rem;
-
-    @include fd-rtl() {
-      border-right: none;
-      border-left: var(--sapList_BorderWidth) solid;
-      border-left-color: var(--sapGroup_ContentBorderColor);
-
-      &.#{$block}--condensed {
-        width: 2.75rem;
-      }
-    }
   }
 }
