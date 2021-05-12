@@ -169,6 +169,7 @@ exports[`Storyshots Components/Vertical Navigation Default 1`] = `
         
                 
         <button
+          aria-label="Expand submenu"
           class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded"
         />
         
@@ -235,6 +236,7 @@ exports[`Storyshots Components/Vertical Navigation Default 1`] = `
         
                 
         <button
+          aria-label="Expand submenu"
           class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded"
         />
         
@@ -371,6 +373,7 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
           
                 
           <button
+            aria-label="Expand submenu"
             class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded"
           />
           
@@ -491,6 +494,7 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
           
                 
           <button
+            aria-label="Expand submenu"
             class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow"
           />
               
@@ -698,6 +702,7 @@ exports[`Storyshots Components/Vertical Navigation Text Only 1`] = `
         
                 
         <button
+          aria-label="Expand submenu"
           class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded"
         />
         
@@ -759,6 +764,7 @@ exports[`Storyshots Components/Vertical Navigation Text Only 1`] = `
         
                 
         <button
+          aria-label="Expand submenu"
           class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded"
         />
         

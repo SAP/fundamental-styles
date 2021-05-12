@@ -40,7 +40,7 @@ export const cozy = () => `<div class="fd-vertical-nav">
             <li class="fd-list__navigation-item fd-list__navigation-item--expandable is-expanded" onclick="toggleVerticalNavSubmenu(event)">
                 <i class="fd-list__navigation-item-icon sap-icon--calendar"></i>
                 <span class="fd-list__navigation-item-text">Calendar Calendar Calendar Calendar Calendar Calendar </span>
-                <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded"></button>
+                <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded" aria-label="Expand submenu"></button>
                 <ul class="fd-list">
                     <li class="fd-list__navigation-item" tabindex="0">
                         <span class="fd-list__navigation-item-text">Second level item 1</span>
@@ -53,7 +53,7 @@ export const cozy = () => `<div class="fd-vertical-nav">
             <li class="fd-list__navigation-item fd-list__navigation-item--expandable is-expanded" onclick="toggleVerticalNavSubmenu(event)">
                 <i class="fd-list__navigation-item-icon sap-icon--customer"></i>
                 <span class="fd-list__navigation-item-text">Customers</span>
-                <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded"></button>
+                <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded" aria-label="Expand submenu"></button>
                 <ul class="fd-list">
                     <li class="fd-list__navigation-item" tabindex="0">
                         <span class="fd-list__navigation-item-text">Second level item 1</span>
@@ -126,7 +126,7 @@ export const text = () => `<div class="fd-vertical-nav">
             </li>
             <li class="fd-list__navigation-item fd-list__navigation-item--expandable is-expanded" onclick="toggleVerticalNavSubmenu(event)">
                 <span class="fd-list__navigation-item-text">Calendar</span>
-                <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded"></button>
+                <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded" aria-label="Expand submenu"></button>
                 <ul class="fd-list">
                     <li class="fd-list__navigation-item" tabindex="0">
                         <span class="fd-list__navigation-item-text">Second level item 1</span>
@@ -138,7 +138,7 @@ export const text = () => `<div class="fd-vertical-nav">
             </li>
             <li class="fd-list__navigation-item fd-list__navigation-item--expandable is-expanded" onclick="toggleVerticalNavSubmenu(event)">
                 <span class="fd-list__navigation-item-text">Customers</span>
-                <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded"></button>
+                <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded" aria-label="Expand submenu"></button>
                 <ul class="fd-list">
                     <li class="fd-list__navigation-item" tabindex="0">
                         <span class="fd-list__navigation-item-text">Second level item 1</span>
@@ -177,7 +177,7 @@ export const indication = () => `<div class="fd-vertical-nav">
             <li class="fd-list__navigation-item fd-list__navigation-item--expandable is-expanded" onclick="toggleVerticalNavSubmenu(event)">
                 <i class="fd-list__navigation-item-icon sap-icon--calendar"></i>
                 <span class="fd-list__navigation-item-text">Calendar</span>
-                <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded"></button>
+                <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded" aria-label="Expand submenu"></button>
                 <ul class="fd-list">
                     <li class="fd-list__navigation-item fd-list__navigation-item--indicated">
                         <span class="fd-list__navigation-item-text">Second level item 1</span>
@@ -202,7 +202,7 @@ export const indication = () => `<div class="fd-vertical-nav">
             </li>
             <li class="fd-list__navigation-item fd-list__navigation-item--condensed" id="parentCalendarButton" onclick="toggleCondensedVerticalNavSubmenu(event)">
                 <i class="fd-list__navigation-item-icon sap-icon--calendar"></i>
-                <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow"></button>    
+                <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow" aria-label="Expand submenu"></button>    
                 <span class="fd-list__navigation-item-indicator"></span>
                 <div class="fd-popover__body fd-popover__body--left fd-popover__body--no-arrow fd-list__navigation-item-popover--first-level" aria-hidden="false" id="popoverA1">
                     <ul class="fd-list">
