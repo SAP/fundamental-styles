@@ -7,13 +7,13 @@ exports[`Storyshots Components/Vertical Navigation Condensed 1`] = `
   
     
   <nav
-    aria-label="Main Menu"
+    aria-label="Main Menu 2"
     class="fd-vertical-nav__main-navigation"
   >
     
         
     <ul
-      aria-label="Main Menu List"
+      aria-label="Main Menu List 2"
       class="fd-list"
     >
       
@@ -26,6 +26,7 @@ exports[`Storyshots Components/Vertical Navigation Condensed 1`] = `
                 
         <i
           class="fd-list__navigation-item-icon sap-icon--home"
+          role="presentation"
         />
         
                 
@@ -47,6 +48,7 @@ exports[`Storyshots Components/Vertical Navigation Condensed 1`] = `
                 
         <i
           class="fd-list__navigation-item-icon sap-icon--calendar"
+          role="presentation"
         />
         
                 
@@ -68,6 +70,7 @@ exports[`Storyshots Components/Vertical Navigation Condensed 1`] = `
                 
         <i
           class="fd-list__navigation-item-icon sap-icon--customer"
+          role="presentation"
         />
         
                 
@@ -89,6 +92,7 @@ exports[`Storyshots Components/Vertical Navigation Condensed 1`] = `
                 
         <i
           class="fd-list__navigation-item-icon sap-icon--shipping-status"
+          role="presentation"
         />
         
                 
@@ -137,6 +141,7 @@ exports[`Storyshots Components/Vertical Navigation Default 1`] = `
                 
         <i
           class="fd-list__navigation-item-icon sap-icon--home"
+          role="presentation"
         />
         
                 
@@ -158,6 +163,7 @@ exports[`Storyshots Components/Vertical Navigation Default 1`] = `
                 
         <i
           class="fd-list__navigation-item-icon sap-icon--calendar"
+          role="presentation"
         />
         
                 
@@ -225,6 +231,7 @@ exports[`Storyshots Components/Vertical Navigation Default 1`] = `
                 
         <i
           class="fd-list__navigation-item-icon sap-icon--customer"
+          role="presentation"
         />
         
                 
@@ -236,7 +243,7 @@ exports[`Storyshots Components/Vertical Navigation Default 1`] = `
         
                 
         <button
-          aria-label="Expand submenu"
+          aria-label="Expand second submenu"
           class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded"
         />
         
@@ -292,6 +299,7 @@ exports[`Storyshots Components/Vertical Navigation Default 1`] = `
                 
         <i
           class="fd-list__navigation-item-icon sap-icon--shipping-status"
+          role="presentation"
         />
         
                 
@@ -322,13 +330,13 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
     
     
     <nav
-      aria-label="Main Menu"
+      aria-label="Main Menu 3"
       class="fd-vertical-nav__main-navigation"
     >
       
         
       <ul
-        aria-label="Main Menu List"
+        aria-label="Main Menu List 3"
         class="fd-list"
       >
         
@@ -341,6 +349,7 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
                 
           <i
             class="fd-list__navigation-item-icon sap-icon--home"
+            role="presentation"
           />
           
                 
@@ -362,6 +371,7 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
                 
           <i
             class="fd-list__navigation-item-icon sap-icon--calendar"
+            role="presentation"
           />
           
                 
@@ -373,7 +383,7 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
           
                 
           <button
-            aria-label="Expand submenu"
+            aria-label="Expand second submenu 3"
             class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded"
           />
           
@@ -449,13 +459,13 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
     
     
     <nav
-      aria-label="Main Menu"
+      aria-label="Main Menu 4"
       class="fd-vertical-nav__main-navigation"
     >
       
         
       <ul
-        aria-label="Main Menu List"
+        aria-label="Main Menu List 4"
         class="fd-list"
       >
         
@@ -468,6 +478,7 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
                 
           <i
             class="fd-list__navigation-item-icon sap-icon--home"
+            role="presentation"
           />
           
                 
@@ -490,11 +501,12 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
                 
           <i
             class="fd-list__navigation-item-icon sap-icon--calendar"
+            role="presentation"
           />
           
                 
           <button
-            aria-label="Expand submenu"
+            aria-label="Expand second submenu 4"
             class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow"
           />
               
@@ -523,6 +535,7 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
                             
                 <i
                   class="fd-list__navigation-item-icon sap-icon--calendar"
+                  role="presentation"
                 />
                 
                             
@@ -545,7 +558,7 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
           <div
             aria-hidden="false"
             class="fd-popover__body fd-popover__body--left fd-popover__body--no-arrow fd-list__navigation-item-popover--second-level"
-            id="popoverA1"
+            id="popoverA2"
           >
             
                     
@@ -608,6 +621,7 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
                 
           <i
             class="fd-list__navigation-item-icon sap-icon--customer"
+            role="presentation"
           />
           
                 
@@ -629,6 +643,7 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
                 
           <i
             class="fd-list__navigation-item-icon sap-icon--shipping-status"
+            role="presentation"
           />
           
                 
@@ -661,13 +676,13 @@ exports[`Storyshots Components/Vertical Navigation Text Only 1`] = `
   
     
   <nav
-    aria-label="Main Menu"
+    aria-label="Main Menu 3"
     class="fd-vertical-nav__main-navigation"
   >
     
         
     <ul
-      aria-label="Main Menu List"
+      aria-label="Main Menu List 3"
       class="fd-list"
     >
       
@@ -702,7 +717,7 @@ exports[`Storyshots Components/Vertical Navigation Text Only 1`] = `
         
                 
         <button
-          aria-label="Expand submenu"
+          aria-label="Expand second submenu 3"
           class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded"
         />
         
@@ -764,7 +779,7 @@ exports[`Storyshots Components/Vertical Navigation Text Only 1`] = `
         
                 
         <button
-          aria-label="Expand submenu"
+          aria-label="Expand third submenu 2"
           class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded"
         />
         
