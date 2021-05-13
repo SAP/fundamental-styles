@@ -16,7 +16,6 @@ $button: #{$fd-namespace}-button;
 
   @mixin after-position-overwrite() {
     outline-offset: $fd-carousel-button-focus-outline-offset;
-    top: 50%;
   }
 
   @include fd-reset();
@@ -165,12 +164,6 @@ $button: #{$fd-namespace}-button;
         width: $fd-carousel-touchable-button-size;
       }
 
-      // @include fd-rtl() {
-      //   & > [class*=sap-icon] {
-      //     transform: rotate(180deg);
-      //   }
-      // }
-
       @include fd-focus() {
         @include after-position-overwrite();
       }
@@ -194,9 +187,8 @@ $button: #{$fd-namespace}-button;
   }
 
   &--horizontal {
-    @include fd-reset();
-    @include fd-flex-vertical-center();
-
-    width: 100%;
+    @include fd-flex-vertical-center() {
+      width: 100%;
+    }
   }
 }
