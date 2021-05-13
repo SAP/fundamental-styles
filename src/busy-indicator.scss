@@ -1,6 +1,7 @@
 
 @import "./new-settings";
 @import "./mixins";
+@import "./paddings.scss";
 
 $block: #{$fd-namespace}-busy-indicator;
 $fd-dots-color: var(--sapContent_IconColor);
@@ -51,19 +52,12 @@ $fd-dots-size-l: 2rem;
   background-color: currentColor;
 }
 
-.#{$block}--enhanced-indicator {
+.#{$block}--extended-indicator {
   box-shadow: var(--sapContent_Shadow2);
   text-shadow: var(--sapContent_TextShadow);
   background-color: var(--sapPageFooter_Background);
-  padding: 1rem;
-
-  &-text {
-    font-family: var(--sapFontFamily);
-    font-size: var(--sapFontFamily);
-    font-weight: normal;
-    color: var(--sapPageFooter_TextColor);
-    padding-top: 1rem !important;
-  }
+  width: 23.125rem;
+  margin: auto;
 }
 
 .#{$block}--circle-0 {
@@ -96,7 +90,12 @@ $fd-dots-size-l: 2rem;
 
 .#{$block}--label {
   display: block;
-  margin: auto !important;
+  margin: auto;
+  font-size: var(--sapFontSize);
+  font-family: var(--sapFontFamily);
+  font-weight: normal;
+  color: var(--sapPageFooter_TextColor);
+  padding-top: 1rem;
 }
 
 @keyframes grow {
