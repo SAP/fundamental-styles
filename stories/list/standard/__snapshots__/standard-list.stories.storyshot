@@ -512,6 +512,112 @@ exports[`Storyshots Components/List/Standard Buttons 1`] = `
 </ul>
 `;
 
+exports[`Storyshots Components/List/Standard Counter 1`] = `
+<ul
+  class="fd-list"
+  role="list"
+>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 1
+    </span>
+    
+    
+    <span
+      class="fd-list__secondary fd-list__counter"
+    >
+      10
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 2
+    </span>
+    
+    
+    <span
+      class="fd-list__secondary fd-list__counter"
+    >
+      15
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 3
+    </span>
+    
+    
+    <span
+      class="fd-list__secondary fd-list__counter"
+    >
+      8
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 4
+    </span>
+    
+    
+    <span
+      class="fd-list__secondary fd-list__counter"
+    >
+      12
+    </span>
+    
+  
+  </li>
+  
+
+</ul>
+`;
+
 exports[`Storyshots Components/List/Standard Default 1`] = `
 <section>
   <h4>
@@ -917,6 +1023,128 @@ exports[`Storyshots Components/List/Standard Group 1`] = `
 </ul>
 `;
 
+exports[`Storyshots Components/List/Standard Growing 1`] = `
+<ul
+  class="fd-list"
+  role="list"
+>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--no-seprator"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 1
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--no-seprator"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 2
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--no-seprator"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 3
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--no-seprator"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 4
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--action"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <button
+      class="fd-list__title fd-list__title--growing"
+    >
+      
+      
+      <div
+        aria-hidden="false"
+        aria-label="Loading"
+        class="fd-busy-indicator--m"
+      >
+        
+        
+        <div
+          class="fd-busy-indicator--circle-0"
+        />
+        
+        
+        <div
+          class="fd-busy-indicator--circle-1"
+        />
+        
+        
+        <div
+          class="fd-busy-indicator--circle-2"
+        />
+        
+      
+      </div>
+      
+      Show More
+    
+    </button>
+    
+  
+  </li>
+  
+
+</ul>
+`;
+
 exports[`Storyshots Components/List/Standard Icon 1`] = `
 <ul
   class="fd-list"
@@ -1011,6 +1239,120 @@ exports[`Storyshots Components/List/Standard Icon 1`] = `
       class="fd-list__icon sap-icon--history"
       role="presentation"
     />
+    
+  
+  </li>
+  
+
+</ul>
+`;
+
+exports[`Storyshots Components/List/Standard Inactive 1`] = `
+<ul
+  class="fd-list"
+  role="list"
+>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--link fd-list__item--inactive"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <a
+      class="fd-list__link"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__title"
+      >
+        List item 1 - Inactive
+      </span>
+      
+    
+    </a>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--link"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <a
+      class="fd-list__link"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__title"
+      >
+        List item 2
+      </span>
+      
+    
+    </a>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--link"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <a
+      class="fd-list__link"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__title"
+      >
+        List item 3
+      </span>
+      
+    
+    </a>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--link"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <a
+      class="fd-list__link"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__title"
+      >
+        List item 4
+      </span>
+      
+    
+    </a>
     
   
   </li>
@@ -1490,6 +1832,84 @@ exports[`Storyshots Components/List/Standard Navigation indicators 1`] = `
 </ul>
 `;
 
+exports[`Storyshots Components/List/Standard No-Seprator 1`] = `
+<ul
+  class="fd-list"
+  role="list"
+>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--no-seprator"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 1
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--no-seprator"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 2
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--no-seprator"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 3
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--no-seprator"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 4
+    </span>
+    
+  
+  </li>
+  
+
+</ul>
+`;
+
 exports[`Storyshots Components/List/Standard Secondary data 1`] = `
 <ul
   class="fd-list"
@@ -1884,6 +2304,84 @@ exports[`Storyshots Components/List/Standard Selection 1`] = `
   
 
 </section>
+`;
+
+exports[`Storyshots Components/List/Standard Un-read title 1`] = `
+<ul
+  class="fd-list"
+  role="list"
+>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title fd-list__title--unread"
+    >
+      List item 1
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 2
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title fd-list__title--unread"
+    >
+      List item 3
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 4
+    </span>
+    
+  
+  </li>
+  
+
+</ul>
 `;
 
 exports[`Storyshots Components/List/Standard Unread 1`] = `

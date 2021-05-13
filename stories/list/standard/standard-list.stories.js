@@ -553,3 +553,155 @@ selection.parameters = {
 `
     }
 };
+
+export const inactive = () => `<ul class="fd-list" role="list">
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--link fd-list__item--inactive">
+    <a tabindex="0" class="fd-list__link">
+      <span class="fd-list__title">List item 1 - Inactive</span>
+    </a>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--link">
+    <a tabindex="0" class="fd-list__link">
+      <span class="fd-list__title">List item 2</span>
+    </a>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--link">
+    <a tabindex="0" class="fd-list__link">
+      <span class="fd-list__title">List item 3</span>
+    </a>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--link">
+    <a tabindex="0" class="fd-list__link">
+      <span class="fd-list__title">List item 4</span>
+    </a>
+  </li>
+</ul>
+`;
+
+inactive.storyName = 'Inactive';
+
+inactive.parameters = {
+    docs: {
+        iframeHeight: 370,
+        storyDescription: `Some list item can be made inactive, to make it non-clickable.
+`
+    }
+};
+
+export const noSeprator = () => `<ul class="fd-list" role="list">
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--no-seprator">
+    <span class="fd-list__title">List item 1</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--no-seprator">
+    <span class="fd-list__title">List item 2</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--no-seprator">
+    <span class="fd-list__title">List item 3</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--no-seprator">
+    <span class="fd-list__title">List item 4</span>
+  </li>
+</ul>
+`;
+
+noSeprator.storyName = 'No-Seprator';
+
+noSeprator.parameters = {
+    docs: {
+        iframeHeight: 370,
+        storyDescription: `Border of list items can be removed using no-seprator class. This can be passed at list item level.
+`
+    }
+};
+
+export const growing = () => `<ul class="fd-list" role="list">
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--no-seprator">
+    <span class="fd-list__title">List item 1</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--no-seprator">
+    <span class="fd-list__title">List item 2</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--no-seprator">
+    <span class="fd-list__title">List item 3</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--no-seprator">
+    <span class="fd-list__title">List item 4</span>
+  </li>
+  <li role="listitem" tabindex="0" class ="fd-list__item fd-list__item--action">
+    <button class="fd-list__title fd-list__title--growing">
+      <div class="fd-busy-indicator--m" aria-hidden="false" aria-label="Loading">
+        <div class="fd-busy-indicator--circle-0"></div>
+        <div class="fd-busy-indicator--circle-1"></div>
+        <div class="fd-busy-indicator--circle-2"></div>
+      </div>
+      Show More
+    </button>
+  </li>
+</ul>
+`;
+
+growing.storyName = 'Growing';
+
+growing.parameters = {
+    docs: {
+        iframeHeight: 370,
+        storyDescription: `Applies styles for button, which start loading more list items on click and shown busy indicator
+`
+    }
+};
+
+export const unReadTitle = () => `<ul class="fd-list" role="list">
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__title fd-list__title--unread">List item 1</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__title">List item 2</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__title fd-list__title--unread">List item 3</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__title">List item 4</span>
+  </li>
+</ul>
+`;
+
+unReadTitle.storyName = 'Un-read title';
+
+unReadTitle.parameters = {
+    docs: {
+        iframeHeight: 370,
+        storyDescription: `Un-read list item also can be created using fd-list-title__unread on list item title level
+`
+    }
+};
+
+export const counter = () => `<ul class="fd-list" role="list">
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__title">List item 1</span>
+    <span class="fd-list__secondary fd-list__counter">10</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__title">List item 2</span>
+    <span class="fd-list__secondary fd-list__counter">15</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__title">List item 3</span>
+    <span class="fd-list__secondary fd-list__counter">8</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__title">List item 4</span>
+    <span class="fd-list__secondary fd-list__counter">12</span>
+  </li>
+</ul>
+`;
+
+counter.storyName = 'Counter';
+
+counter.parameters = {
+    docs: {
+        iframeHeight: 370,
+        storyDescription: `List item can have counter value
+`
+    }
+};
