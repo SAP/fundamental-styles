@@ -312,7 +312,7 @@ $fd-list-navigation-item-text-spacing: 2.5rem !default;
     &-arrow {
       @include fd-reset();
       @include fd-button-reset();
-      @include fd-fiori-focus();
+      @include fake-arrow-focus();
 
       height: $fd-list-navigation-item-height;
       width: 2.75rem;

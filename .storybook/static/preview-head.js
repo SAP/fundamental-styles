@@ -377,9 +377,10 @@ function toggleNestedListSubmenu(event) {
 }
 
 function collectionHas(a, b) { //helper function (see below)
-    for(var i = 0, len = a.length; i < len; i ++) {
-        if(a[i] == b) return true;
+    for (let i = 0, len = a.length; i < len; i ++) {
+        return a[i] === b;
     }
+
     return false;
 }
 
@@ -390,10 +391,10 @@ function toggleCondensedVerticalNavSubmenu(event) {
         button = button.parentNode;
     }
 
-    if(!button.classList.contains('is-expanded')) {
-        button.classList.add('is-expanded');
-    } else if(button.classList.contains('is-expanded')) {
+    if (button.classList.contains('is-expanded')) {
         button.classList.remove('is-expanded');
+    } else {
+        button.classList.add('is-expanded');
     }
 }
 
@@ -404,7 +405,7 @@ function toggleVerticalNavSubmenu(event) {
     }
     let arrowIcon = button.querySelector('.fd-list__navigation-item-arrow');
 
-    if(arrowIcon && arrowIcon.classList.contains('is-expanded')) {
+    if (arrowIcon && arrowIcon.classList.contains('is-expanded')) {
         button.classList.remove('is-expanded');
         arrowIcon.classList.remove('is-expanded');
         arrowIcon.classList.add('sap-icon--navigation-right-arrow');
@@ -416,3 +417,4 @@ function toggleVerticalNavSubmenu(event) {
         arrowIcon.classList.add('sap-icon--navigation-down-arrow');
     }
 }
+
