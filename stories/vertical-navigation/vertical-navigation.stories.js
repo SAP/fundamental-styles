@@ -2,16 +2,26 @@ export default {
     title: 'Components/Vertical Navigation',
     parameters: {
         description: `
-The side navigation area can be used to display navigation structures with up to two levels. It contains links that change the content area. The side navigation area has three visual states: off-canvas, medium and large. Depending on the device context, two of these states are used per device.
+The Vertical Navigation can be used as an alternative to the Horizontal Navigation.<br>
+This navigation type is composed by two distinct item levels:<br>
+
+- First Level items - always visible, can be either navigable in and of themselves or be a container for Second Level items (it should not be both)
+- Second Level items → Are always contained by a First Level item, and can have their visibility toggled by this First Level item. They are always only navigable
+
 ##Usage      
 **Use the vertical navigation if:**
+
 - You need to display global navigation structures of up to two levels.
 - Your scenarios are in the tooling or administration space.
 - If you want the entries to change as though they are dynamic content.
+
 **Do not use the vertical navigation if:**
+
 - Your scenarios are not in the tooling or administration space.
+
 ##States
-Side navigation can be viewed in three different states:
+Vertical navigation can be viewed in three different states:
+
 - **Expanded:** everything is shown; icons and/or text.
 - **Condensed:** only icons are shown; text-only condensed state is not supported.
 - **Off-canvas:** side navigation is completely off-screen, and can be triggered via the menu icon in the shellbar.
