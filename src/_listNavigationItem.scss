@@ -1,8 +1,10 @@
 @import './listDefinitions.scss';
 
 $fd-list-navigation-item-height: 2.75rem !default;
+$fd-list-navigation-item-indicator-height: 1.625rem !default;
 $fd-list-navigation-item-indicator-spacing: 0.3125rem !default;
 $fd-list-navigation-item-text-spacing: 2.5rem !default;
+$fd-list-second-level-popover-position: 3.25rem !default;
 
 .#{$block} {
   list-style-type: none;
@@ -17,8 +19,8 @@ $fd-list-navigation-item-text-spacing: 2.5rem !default;
       display: inline-block;
       position: absolute;
       right: 0;
-      top: 0.5625rem; // (height of nav item - height of indicator) / 2
-      height: 1.625rem;
+      top: ($fd-list-navigation-item-height - $fd-list-navigation-item-indicator-height) / 2;
+      height: $fd-list-navigation-item-indicator-height;
       background-color: var(--sapSelectedColor);
       color: var(--sapSelectedColor);
       border-radius: var(--sapField_BorderCornerRadius);
@@ -218,12 +220,12 @@ $fd-list-navigation-item-text-spacing: 2.5rem !default;
             border-top-right-radius: 0;
             border-top-left-radius: 0;
             top: $fd-list-navigation-item-height;
-            left: 3.25rem;
+            left: $fd-list-second-level-popover-position;
             width: 11.4rem;
 
             @include fd-rtl() {
               left: unset;
-              right: 3.25rem;
+              right: $fd-list-second-level-popover-position;
             }
 
             .#{$block}__navigation-item {

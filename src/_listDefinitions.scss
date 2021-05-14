@@ -202,8 +202,7 @@ $semantic-color: (
 }
 
 @mixin fake-arrow-focus() {
-  &:focus,
-  &.is-focus {
+  @include fd-focus() {
     outline: none;
 
     &::after {

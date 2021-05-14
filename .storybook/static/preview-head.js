@@ -376,14 +376,6 @@ function toggleNestedListSubmenu(event) {
     }
 }
 
-function collectionHas(a, b) { //helper function (see below)
-    for (let i = 0, len = a.length; i < len; i ++) {
-        return a[i] === b;
-    }
-
-    return false;
-}
-
 function toggleCondensedVerticalNavSubmenu(event) {
     let button = event.target;
 
@@ -417,4 +409,3 @@ function toggleVerticalNavSubmenu(event) {
         arrowIcon.classList.add('sap-icon--navigation-down-arrow');
     }
 }
-
