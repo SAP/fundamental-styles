@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.18.1-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.2...v0.18.1-rc.3) (2021-05-14)
+
+
+### Bug Fixes
+
+* replace single quotes with double in npm testing commands, because single quoted commands fail to run on windows machine ([#2351](https://github.com/SAP/fundamental-styles/issues/2351)) ([07c6ec4](https://github.com/SAP/fundamental-styles/commit/07c6ec42c8132ec38738eda969d204f8af87a966))
+
 ### [0.18.1-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.1...v0.18.1-rc.2) (2021-05-11)
 
 ### [0.18.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.0...v0.18.1-rc.1) (2021-05-11)
