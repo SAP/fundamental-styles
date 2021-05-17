@@ -112,6 +112,10 @@ $semantic-color: (
   .#{$block}__link {
     background: inherit;
   }
+
+  @include fd-hover() {
+    background: var(--sapList_Hover_SelectionBackground);
+  }
 }
 
 @mixin list-item-states() {
