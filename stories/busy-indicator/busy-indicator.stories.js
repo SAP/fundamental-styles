@@ -26,7 +26,7 @@ The ongoing operation only covers part of a screen that has multiple controls, a
 - You need to block the screen because the user is not supposed to start another operation. In this case, use the **Busy Dialog** component.
         `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['busy-indicator', 'form-label']
+        components: ['busy-indicator']
     }
 };
 
@@ -78,7 +78,7 @@ export const LabelledIndicator = () => `<div style="text-align: center">
         <div class="fd-busy-indicator--circle-0"></div>
         <div class="fd-busy-indicator--circle-1"></div>
         <div class="fd-busy-indicator--circle-2"></div>
-		<span class="fd-busy-indicator--label">loading data...</span>
+		<span class="fd-busy-indicator__label">loading data...</span>
     </div>`;
 
 LabelledIndicator.parameters = {
@@ -89,17 +89,17 @@ LabelledIndicator.parameters = {
     }
 };
 export const ExtendedIndicator = () => `<div style="text-align: center">
-    <div class="fd-busy-indicator--l fd-busy-indicator--extended-indicator fd-padding" aria-hidden="false" aria-label="Loading">
+    <div class="fd-busy-indicator--l fd-busy-indicator__extended fd-padding" aria-hidden="false" aria-label="Loading">
         <div class="fd-busy-indicator--circle-0"></div>
         <div class="fd-busy-indicator--circle-1"></div>
         <div class="fd-busy-indicator--circle-2"></div>
-		<span class="fd-busy-indicator--label">loading data...</span>
+		<span class="fd-busy-indicator__label">loading data...</span>
     </div>`;
 
 ExtendedIndicator.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription:
-            'The standard busy indicator animates a sequence of cascading dots expanding and shrinking in a loop. The component comes with a dialog and a label to be displayed when the data is being loaded. <code>fd-busy-indicator--extended-indicator</code> is used to wrap the busyindiactor in a dialog.'
+            'The standard busy indicator animates a sequence of cascading dots expanding and shrinking in a loop. The component comes with a dialog and a label to be displayed when the data is being loaded. <code>fd-busy-indicator--extended-indicator</code> is used to wrap the busy indiactor in a dialog.'
     }
 };

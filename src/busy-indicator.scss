@@ -52,7 +52,7 @@ $fd-dots-size-l: 2rem;
   background-color: currentColor;
 }
 
-.#{$block}--extended-indicator {
+.#{$block}__extended {
   box-shadow: var(--sapContent_Shadow2);
   text-shadow: var(--sapContent_TextShadow);
   background-color: var(--sapPageFooter_Background);
@@ -88,12 +88,10 @@ $fd-dots-size-l: 2rem;
   height: $fd-dots-size-l;
 }
 
-.#{$block}--label {
+.#{$block}__label {
+  @include fd-reset();
+
   display: block;
-  margin: auto;
-  font-size: var(--sapFontSize);
-  font-family: var(--sapFontFamily);
-  font-weight: normal;
   color: var(--sapPageFooter_TextColor);
   padding-top: 1rem;
 }
