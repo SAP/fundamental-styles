@@ -7,9 +7,6 @@ $fd-list-navigation-item-text-spacing: 2.5rem !default;
 $fd-list-second-level-popover-position: 3.25rem !default;
 
 .#{$block} {
-  list-style-type: none;
-  background: var(--sapList_AlternatingBackground);
-
   .#{$block}__navigation-item-indicator {
     @include fd-reset();
 
