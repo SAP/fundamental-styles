@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.18.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.3...v0.18.1-rc.4) (2021-05-17)
+
+
+### Features
+
+* introduce Vertical Navigation component ([#2349](https://github.com/SAP/fundamental-styles/issues/2349)) ([2f9ba1e](https://github.com/SAP/fundamental-styles/commit/2f9ba1ea7cc5add862050e31d15823731aa38202))
+
 ### [0.18.1-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.2...v0.18.1-rc.3) (2021-05-14)
 
 
