@@ -432,11 +432,6 @@ $block: #{$fd-namespace}-dynamic-page;
   }
 
   &--md {
-
-    .#{$block}__breadcrumb-container {
-      align-items: flex-end;
-    }
-
     .#{$block}__toolbar {
       padding: 0;
     }
