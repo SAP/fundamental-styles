@@ -1,6 +1,7 @@
 
 @import "./new-settings";
 @import "./mixins";
+@import "./paddings.scss";
 
 $block: #{$fd-namespace}-busy-indicator;
 $message-toast: #{$fd-namespace}-message-toast;
@@ -24,6 +25,7 @@ $fd-dots-size-l: 2rem;
   display: block;
   font-size: 0;
   color: $fd-dots-color;
+  text-align: center;
 }
 
 .#{$block}.contrast,
@@ -101,6 +103,14 @@ $fd-dots-size-l: 2rem;
 .#{$block}--l .#{$block}--circle-2 {
   width: $fd-dots-size-l;
   height: $fd-dots-size-l;
+}
+
+.#{$block}__label {
+  @include fd-reset();
+
+  display: block;
+  color: var(--sapPageFooter_TextColor);
+  padding-top: 1rem;
 }
 
 @keyframes grow {

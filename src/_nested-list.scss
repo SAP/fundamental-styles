@@ -73,7 +73,7 @@ $button: #{$fd-namespace}-button;
     @include fd-reset();
 
     background: var(--sapList_Background);
-    text-shadow: var(--fdSideNav_Text_Shadow);
+    text-shadow: var(--fdVerticalNav_Text_Shadow);
 
     &:first-child {
       .#{$block}__link,
