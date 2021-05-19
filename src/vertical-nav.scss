@@ -19,7 +19,7 @@ $block: #{$fd-namespace}-vertical-nav;
   &__group-header {
     @include fd-reset();
     @include fd-ellipsis();
-    @include set-paddings-x(1rem);
+    @include fd-set-paddings-x(1rem);
 
     height: 2.75rem;
     background: var(--sapList_GroupHeaderBackground);

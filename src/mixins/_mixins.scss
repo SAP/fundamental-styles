@@ -432,7 +432,21 @@
   text-overflow: ellipsis;
 }
 
-@mixin set-margins-x($left: 0, $right: 0) {
+@mixin fd-reset-margins() {
+  margin: 0;
+}
+
+@mixin fd-reset-margins-x() {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@mixin fd-reset-margins-y() {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@mixin fd-set-margins-x($left: 0, $right: 0) {
   margin-left: $left;
   margin-right: $right;
 
@@ -442,7 +456,22 @@
   }
 }
 
-@mixin set-margin-left($left: 0) {
+@mixin fd-set-margins-x-equal($value: 0) {
+  margin-left: $value;
+  margin-right: $value;
+}
+
+@mixin fd-set-margins-y($top: 0, $bottom: 0) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+
+@mixin fd-set-margins-y-equal($value: 0) {
+  margin-top: $value;
+  margin-bottom: $value;
+}
+
+@mixin fd-set-margin-left($left: 0) {
   margin-left: $left;
 
   @include fd-rtl() {
@@ -451,7 +480,7 @@
   }
 }
 
-@mixin set-margin-right($right: 0) {
+@mixin fd-set-margin-right($right: 0) {
   margin-right: $right;
 
   @include fd-rtl() {
@@ -460,7 +489,21 @@
   }
 }
 
-@mixin set-paddings-x($left: 0, $right: 0) {
+@mixin fd-reset-paddings() {
+  padding: 0;
+}
+
+@mixin fd-reset-paddings-x() {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@mixin fd-reset-paddings-y() {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@mixin fd-set-paddings-x($left: 0, $right: 0) {
   padding-left: $left;
   padding-right: $right;
 
@@ -470,7 +513,22 @@
   }
 }
 
-@mixin set-padding-left($left: 0) {
+@mixin fd-set-paddings-x-equal($value: 0) {
+  padding-left: $value;
+  padding-right: $value;
+}
+
+@mixin fd-set-paddings-y($top: 0, $bottom: 0) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+@mixin fd-set-paddings-y-equal($value: 0) {
+  padding-top: $value;
+  padding-bottom: $value;
+}
+
+@mixin fd-set-padding-left($left: 0) {
   padding-left: $left;
 
   @include fd-rtl() {
@@ -479,7 +537,7 @@
   }
 }
 
-@mixin set-padding-right($right: 0) {
+@mixin fd-set-padding-right($right: 0) {
   padding-right: $right;
 
   @include fd-rtl() {
@@ -488,10 +546,25 @@
   }
 }
 
-/*
-   Fully expanded pseudo element
-   Requires parent to have specified position
-*/
+@mixin fd-set-position-right($right) {
+  right: $right;
+
+  @include fd-rtl() {
+    right: auto;
+    left: $right;
+  }
+}
+
+@mixin fd-set-position-left($left) {
+  left: $left;
+
+  @include fd-rtl() {
+    left: auto;
+    right: $left;
+  }
+}
+
+/* Fully expanded pseudo element. Requires parent to have specified position */
 @mixin fd-pseudo-expand($position: "before") {
   &::#{$position} {
     content: "";
