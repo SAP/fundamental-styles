@@ -53,7 +53,7 @@ $fd-dots-size-l: 2rem;
   background-color: currentColor;
 }
 
-.#{$block}__extended {
+.#{$block}--extended {
   box-shadow: var(--sapContent_Shadow2);
   text-shadow: var(--sapContent_TextShadow);
   background-color: var(--sapPageFooter_Background);

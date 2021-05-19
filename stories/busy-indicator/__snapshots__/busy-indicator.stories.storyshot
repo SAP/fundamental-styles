@@ -41,7 +41,7 @@ exports[`Storyshots Components/Busy Indicator Extended Indicator 1`] = `
   <div
     aria-hidden="false"
     aria-label="Loading"
-    class="fd-busy-indicator fd-busy-indicator--l fd-busy-indicator__extended fd-padding"
+    class="fd-busy-indicator fd-busy-indicator--l fd-busy-indicator--extended fd-padding"
   >
     
         

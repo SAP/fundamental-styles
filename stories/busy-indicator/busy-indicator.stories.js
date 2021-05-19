@@ -89,7 +89,7 @@ LabelledIndicator.parameters = {
     }
 };
 export const ExtendedIndicator = () => `<div>
-    <div class="fd-busy-indicator fd-busy-indicator--l fd-busy-indicator__extended fd-padding" aria-hidden="false" aria-label="Loading">
+    <div class="fd-busy-indicator fd-busy-indicator--l fd-busy-indicator--extended fd-padding" aria-hidden="false" aria-label="Loading">
         <div class="fd-busy-indicator--circle-0"></div>
         <div class="fd-busy-indicator--circle-1"></div>
         <div class="fd-busy-indicator--circle-2"></div>
@@ -100,6 +100,6 @@ ExtendedIndicator.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription:
-            'The standard busy indicator animates a sequence of cascading dots expanding and shrinking in a loop. The component has a label to be displayed when the data is being loaded. <code>fd-busy-indicator__extended</code> is used to wrap the busy indicator.'
+            'The standard busy indicator animates a sequence of cascading dots expanding and shrinking in a loop. The component has a label to be displayed when the data is being loaded. <code>fd-busy-indicator--extended</code> is used to wrap the busy indicator.'
     }
 };
