@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.18.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.4...v0.18.1-rc.5) (2021-05-19)
+
+
+### Bug Fixes
+
+* remove unnecessary alignment for breadcrumbs in Dynamic Page ([#2363](https://github.com/SAP/fundamental-styles/issues/2363)) ([725b77a](https://github.com/SAP/fundamental-styles/commit/725b77a80d96f8b57031567add6f209cefc509d0))
+
 ### [0.18.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.3...v0.18.1-rc.4) (2021-05-17)
 
 
