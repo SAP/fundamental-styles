@@ -74,7 +74,7 @@ contrastMode.parameters = {
     }
 };
 
-export const extendedIndicator = () => `
+export const extendedBusyIndicator = () => `
 <div class="fd-busy-indicator-extended">
     <div class="fd-busy-indicator fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
         <div class="fd-busy-indicator--circle-0"></div>
@@ -84,7 +84,7 @@ export const extendedIndicator = () => `
     <div class="fd-busy-indicator-extended__label">loading data...</div>
 </div>`;
 
-extendedIndicator.parameters = {
+extendedBusyIndicator.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription:
@@ -92,7 +92,7 @@ extendedIndicator.parameters = {
     }
 };
 
-export const extendedIndicatorInsideMessageToast = () => `
+export const extendedBusyIndicatorInsideMessageToast = () => `
 <div class="fd-message-toast fd-busy-indicator-extended">
     <div class="fd-busy-indicator fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
         <div class="fd-busy-indicator--circle-0"></div>
@@ -102,7 +102,7 @@ export const extendedIndicatorInsideMessageToast = () => `
     <div class="fd-busy-indicator-extended__label">loading data...</div>
 </div>`;
 
-extendedIndicatorInsideMessageToast.parameters = {
+extendedBusyIndicatorInsideMessageToast.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription:

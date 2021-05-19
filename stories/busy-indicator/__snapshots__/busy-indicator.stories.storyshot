@@ -34,12 +34,12 @@ exports[`Storyshots Components/Busy Indicator Contrast Mode 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Busy Indicator Extended Indicator 1`] = `
+exports[`Storyshots Components/Busy Indicator Extended Busy Indicator 1`] = `
 
 
 `;
 
-exports[`Storyshots Components/Busy Indicator Extended Indicator Inside Message Toast 1`] = `
+exports[`Storyshots Components/Busy Indicator Extended Busy Indicator Inside Message Toast 1`] = `
 
 
 `;
