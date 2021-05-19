@@ -1,0 +1,351 @@
+@import './listDefinitions.scss';
+
+$fd-list-navigation-item-height: 2.75rem !default;
+$fd-list-navigation-item-indicator-height: 1.625rem !default;
+$fd-list-navigation-item-indicator-spacing: 0.3125rem !default;
+$fd-list-navigation-item-text-spacing: 2.5rem !default;
+$fd-list-second-level-popover-position: 3.25rem !default;
+
+.#{$block} {
+  .#{$block}__navigation-item-indicator {
+    @include fd-reset();
+
+    &::after {
+      content: '';
+      width: 0.1875rem;
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: ($fd-list-navigation-item-height - $fd-list-navigation-item-indicator-height) / 2;
+      height: $fd-list-navigation-item-indicator-height;
+      background-color: var(--sapSelectedColor);
+      color: var(--sapSelectedColor);
+      border-radius: var(--sapField_BorderCornerRadius);
+      margin-right: $fd-list-navigation-item-indicator-spacing;
+    }
+
+    @include fd-rtl() {
+      &::after {
+        right: unset;
+        margin-right: 0;
+        left: 0;
+        margin-left: $fd-list-navigation-item-indicator-spacing;
+      }
+    }
+  }
+
+  &__navigation-item {
+    @include fd-reset();
+    @include fd-fiori-focus();
+    @include set-paddings-x(0.5rem, 1rem);
+
+    background: transparent;
+    height: $fd-list-navigation-item-height;
+    position: relative;
+
+    .fd-list {
+      display: none;
+    }
+
+    &--expandable {
+      margin: 0.25rem 0;
+    }
+
+    &.is-expanded {
+      @include set-margins-x(0.25rem, 0.25rem);
+
+      border-radius: var(--sapElement_BorderCornerRadius);
+      box-shadow: var(--sapContent_Shadow0);
+      height: 100%;
+      overflow: hidden;
+
+      .#{$block}__navigation-item {
+        width: 100%;
+        .#{$block}__navigation-item-indicator {
+          &::after {
+            margin-right: 0;
+          }
+
+          @include fd-rtl() {
+            &::after {
+              margin-left: 0;
+            }
+          }
+        }
+
+        .#{$block}__navigation-item-text {
+          @include fd-reset();
+
+          vertical-align: middle;
+          line-height: $fd-list-navigation-item-height;
+          color: var(--sapContent_LabelColor);
+          font-size: var(--sapFontSize);
+          margin-left: $fd-list-navigation-item-text-spacing;
+
+          @include fd-rtl() {
+            margin-right: $fd-list-navigation-item-text-spacing;
+            margin-left: 0;
+          }
+        }
+      }
+
+      .#{$block}__navigation-item-text {
+        @include set-padding-left();
+      }
+
+      .#{$block}__navigation-item-icon {
+        @include set-padding-right(0.5rem);
+      }
+
+      .#{$block} {
+        @include set-margins-x(-0.5rem, -1rem);
+
+        width: auto;
+        display: block;
+      }
+
+      .#{$block}__navigation-item-indicator {
+        &::after {
+          @include set-margin-right();
+        }
+      }
+    }
+
+    &.is-expanded > .#{$block}__navigation-item-indicator {
+      &::after {
+        display: none;
+      }
+    }
+
+    &--indicated {
+      color: var(--sapSelectedColor);
+
+      .#{$block}__navigation-item-text,
+      .#{$block}__navigation-item-icon,
+      .#{$block}__navigation-item-arrow {
+        color: var(--sapSelectedColor);
+      }
+    }
+
+    .#{$block}__navigation-item--indicated .#{$block}__navigation-item-text {
+      color: var(--sapSelectedColor);
+    }
+
+    &--condensed {
+      @include set-paddings-x();
+
+      position: relative;
+      width: 3.25rem;
+
+      .#{$block}__navigation-item-popover {
+        &--first-level,
+        &--second-level {
+          display: none;
+          background: var(--sapList_AlternatingBackground);
+        }
+      }
+
+      .#{$block}__navigation-item-text {
+        display: none;
+      }
+
+      .#{$block}__navigation-item-icon {
+        @include set-margins-x(0.5rem, 0.5rem);
+
+        height: $fd-list-navigation-item-height;
+        line-height: $fd-list-navigation-item-height;
+      }
+
+      &.is-expanded {
+        @include set-margins-x();
+
+        overflow: visible;
+        visibility: hidden;
+
+        .#{$block}__navigation-item {
+          @include set-margins-x();
+        }
+
+        .#{$block}__navigation-item--condensed {
+          .#{$block}__navigation-item-icon {
+            margin-left: 0;
+            padding-left: 0.875rem;
+
+            @include fd-rtl() {
+              margin-right: 0;
+              margin-left: 0.5rem;
+              padding-right: 0.875rem;
+            }
+          }
+        }
+
+        .#{$block}__navigation-item-popover {
+          &--first-level,
+          &--second-level {
+            overflow: hidden;
+            display: block;
+
+            .fd-list {
+              width: 100%;
+              display: inline-block;
+              margin: 0 auto;
+            }
+
+            .#{$block}__navigation-item-text {
+              @include set-margin-left();
+              @include set-padding-left();
+            }
+          }
+
+          &--first-level {
+            top: 0;
+            left: 0.325rem;
+            width: 14.325rem;
+            border-bottom-right-radius: 0;
+            z-index: 3;
+            height: 100%;
+
+            @include fd-rtl() {
+              border-bottom-left-radius: 0;
+              border-bottom-right-radius: var(--sapElement_BorderCornerRadius);
+              left: unset;
+              right: 0.325rem;
+            }
+          }
+
+          &--second-level {
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+            top: $fd-list-navigation-item-height;
+            left: $fd-list-second-level-popover-position;
+            width: 11.4rem;
+
+            @include fd-rtl() {
+              left: unset;
+              right: $fd-list-second-level-popover-position;
+            }
+
+            .#{$block}__navigation-item {
+              .#{$block}__navigation-item-text {
+                @include set-margin-left(1rem);
+              }
+
+              .#{$block}__navigation-item-indicator {
+                &::after {
+                  @include set-margin-right();
+
+                  display: inline-block;
+                }
+              }
+            }
+          }
+        }
+
+        .#{$block}__navigation-item-text {
+          display: inline;
+        }
+
+        .#{$block}__navigation-item-arrow {
+          display: none;
+        }
+
+        .#{$block}__navigation-item-indicator {
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      .#{$block}__navigation-item-arrow {
+        width: 100%;
+
+        &::before {
+          display: inline-block;
+          content: '';
+          min-width: 0;
+          min-height: 0;
+          margin-right: 0.75rem;
+          margin-bottom: 0.5625rem;
+          border-style: solid;
+          border-width: 0.25rem 0.25rem 0 0;
+          border-color: transparent var(--sapContent_NonInteractiveIconColor) transparent transparent;
+          right: 0;
+          bottom: 0;
+          position: absolute;
+
+          @include fd-rtl() {
+            right: unset;
+            margin-right: 0;
+            margin-left: 0.75rem;
+            left: 0;
+          }
+        }
+      }
+    }
+
+    &-icon {
+      font-size: 1rem;
+      font-family: 'SAP-icons';
+      height: $fd-list-navigation-item-height;
+      line-height: $fd-list-navigation-item-height;
+      width: 2.25rem;
+      color: var(--sapContent_NonInteractiveIconColor);
+      vertical-align: top;
+      text-align: center;
+    }
+
+    &-text {
+      @include set-padding-left(0.25rem);
+
+      font-size: var(--sapFontLargeSize);
+      font-family: var(--sapFontFamily);
+      color: var(--sapList_TextColor);
+      max-width: 9rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: inline-block;
+      line-height: $fd-list-navigation-item-height;
+    }
+
+    &-arrow {
+      @include fd-reset();
+      @include fd-button-reset();
+      @include fake-arrow-focus();
+
+      height: $fd-list-navigation-item-height;
+      width: 2.75rem;
+      position: absolute;
+      right: 0;
+      line-height: $fd-list-navigation-item-height;
+      font-family: 'SAP-icons';
+      font-size: 1rem;
+      color: var(--sapContent_NonInteractiveIconColor);
+      background-color: transparent;
+
+      @include fd-rtl() {
+        right: unset;
+        left: 0;
+        transform: scaleX(-1);
+      }
+    }
+  }
+
+  &__navigation-item,
+  &__navigation-item--condensed {
+    @include fd-hover() {
+      background: var(--sapList_Hover_Background);
+    }
+
+    @include fd-pressed() {
+      background: var(--sapList_Active_Background);
+      color: var(--sapContent_ContrastTextColor);
+
+      &-icon,
+      &-arrow,
+      &__navigation-indicator {
+        color: var(--sapContent_ContrastIconColor);
+      }
+    }
+  }
+}

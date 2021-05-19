@@ -2,7 +2,7 @@ export default {
     title: 'Components/Side Navigation',
     parameters: {
         description: `
-The side navigation area can be used to display navigation structures with up to two levels and contains links that change the content area. The side navigation consists of two container sections: the **main navigation section** (top-aligned) with links used to navigate within the user’s current work context, and the **utility section** (bottom-aligned) that contains links to additional information. Both of these sections use a nested list to display navigation items.
+**DEPRECATED**. This component will be deprecated in favor of the vertical navigation component. The side navigation area can be used to display navigation structures with up to two levels and contains links that change the content area. The side navigation consists of two container sections: the **main navigation section** (top-aligned) with links used to navigate within the user’s current work context, and the **utility section** (bottom-aligned) that contains links to additional information. Both of these sections use a nested list to display navigation items.
 
 ##Usage      
 **Use the side navigation if:**
