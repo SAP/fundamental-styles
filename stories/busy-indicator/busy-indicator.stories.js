@@ -26,7 +26,7 @@ The ongoing operation only covers part of a screen that has multiple controls, a
 - You need to block the screen because the user is not supposed to start another operation. In this case, use the **Busy Dialog** component.
         `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['busy-indicator']
+        components: ['busy-indicator', 'message-toast']
     }
 };
 
@@ -69,5 +69,41 @@ contrastMode.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: 'The busy indicator also comes in contrast mode and displays white dots against a dark background. To apply contrast mode, add <code>contrast</code> into the element i.e. <code>fd-busy-indicator--m contrast</code>.'
+    }
+};
+
+export const extendedBusyIndicator = () => `
+<div class="fd-busy-indicator-extended">
+    <div class="fd-busy-indicator fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
+        <div class="fd-busy-indicator--circle-0"></div>
+        <div class="fd-busy-indicator--circle-1"></div>
+        <div class="fd-busy-indicator--circle-2"></div>
+    </div>
+    <div class="fd-busy-indicator-extended__label">loading data...</div>
+</div>`;
+
+extendedBusyIndicator.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription:
+            'If more information needs to be displayed with the loading animation, it is replaced by the Extended Busy Indicator <code>fd-busy-indicator-extended</code>. The additional information is wrapped in an element with <code>fd-busy-indicator-extended\\_\\_label</code> class.'
+    }
+};
+
+export const extendedBusyIndicatorInsideMessageToast = () => `
+<div class="fd-message-toast fd-busy-indicator-extended">
+    <div class="fd-busy-indicator fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
+        <div class="fd-busy-indicator--circle-0"></div>
+        <div class="fd-busy-indicator--circle-1"></div>
+        <div class="fd-busy-indicator--circle-2"></div>
+    </div>
+    <div class="fd-busy-indicator-extended__label">loading data...</div>
+</div>`;
+
+extendedBusyIndicatorInsideMessageToast.parameters = {
+    docs: {
+        iframeHeight: 200,
+        storyDescription:
+            'At the Page level the Busy Indicator should always be placed in a container. The simplest form of container will be centred on the page and inherit the color values from Message Toast.'
     }
 };

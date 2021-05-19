@@ -3,6 +3,7 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-busy-indicator;
+$message-toast: #{$fd-namespace}-message-toast;
 $fd-dots-color: var(--sapContent_IconColor);
 $fd-dots-color-contrast: var(--sapContent_ContrastIconColor);
 // default sizes
@@ -23,6 +24,29 @@ $fd-dots-size-l: 2rem;
   display: block;
   font-size: 0;
   color: $fd-dots-color;
+}
+
+.#{$block}-extended {
+  @include fd-flex-center() {
+    flex-direction: column;
+  };
+
+  &.#{$message-toast} {
+    width: 23.125rem;
+    max-width: 23.125rem;
+    box-shadow: var(--sapContent_Shadow2);
+    text-shadow: var(--sapContent_TextShadow);
+    background-color: var(--sapPageFooter_Background);
+  }
+
+  &__label {
+    @include fd-reset();
+
+    display: block;
+    color: var(--sapPageFooter_TextColor);
+    margin-top: 1rem;
+    text-align: center;
+  }
 }
 
 .#{$block}.contrast,
