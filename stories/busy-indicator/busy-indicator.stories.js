@@ -26,7 +26,7 @@ The ongoing operation only covers part of a screen that has multiple controls, a
 - You need to block the screen because the user is not supposed to start another operation. In this case, use the **Busy Dialog** component.
         `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['busy-indicator']
+        components: ['busy-indicator', 'message-toast']
     }
 };
 
@@ -73,33 +73,39 @@ contrastMode.parameters = {
             'The busy indicator also comes in contrast mode and displays white dots against a dark background. To apply contrast mode, add <code>contrast</code> into the element i.e. <code>fd-busy-indicator--m contrast</code>.'
     }
 };
-export const LabelledIndicator = () => `<div style="text-align: center">
+
+export const extendedIndicator = () => `
+<div class="fd-busy-indicator-extended">
     <div class="fd-busy-indicator fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
         <div class="fd-busy-indicator--circle-0"></div>
         <div class="fd-busy-indicator--circle-1"></div>
         <div class="fd-busy-indicator--circle-2"></div>
-		<span class="fd-busy-indicator__label">loading data...</span>
-    </div>`;
+    </div>
+    <div class="fd-busy-indicator-extended__label">loading data...</div>
+</div>`;
 
-LabelledIndicator.parameters = {
+extendedIndicator.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription:
-            'The standard busy indicator animates a sequence of cascading dots expanding and shrinking in a loop. The component comes with a label/message to be displayed when the data is being loaded. <code>fd-busy-indicator--label</code> is used to display the message.'
+            'If more information needs to be displayed with the loading animation, it is replaced by the Extended Busy Indicator <code>fd-busy-indicator-extended</code>. The additional information is wrapped in an element with <code>fd-busy-indicator-extended\\_\\_label</code> class.'
     }
 };
-export const ExtendedIndicator = () => `<div style="text-align: center">
-    <div class="fd-busy-indicator--l fd-busy-indicator__extended fd-padding" aria-hidden="false" aria-label="Loading">
+
+export const extendedIndicatorInsideMessageToast = () => `
+<div class="fd-message-toast fd-busy-indicator-extended">
+    <div class="fd-busy-indicator fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
         <div class="fd-busy-indicator--circle-0"></div>
         <div class="fd-busy-indicator--circle-1"></div>
         <div class="fd-busy-indicator--circle-2"></div>
-		<span class="fd-busy-indicator__label">loading data...</span>
-    </div>`;
+    </div>
+    <div class="fd-busy-indicator-extended__label">loading data...</div>
+</div>`;
 
-ExtendedIndicator.parameters = {
+extendedIndicatorInsideMessageToast.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription:
-            'The standard busy indicator animates a sequence of cascading dots expanding and shrinking in a loop. The component comes with a dialog and a label to be displayed when the data is being loaded. <code>fd-busy-indicator--extended-indicator</code> is used to wrap the busy indiactor in a dialog.'
+            'At the Page level the Busy Indicator should always be placed in a container. The simplest form of container will be centred on the page and inherit the color values from Message Toast.'
     }
 };
