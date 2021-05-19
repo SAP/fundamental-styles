@@ -37,7 +37,7 @@
       border-radius: $fd-list-byline-thumbnail-border-radius;
       margin-right: $fd-list-byline-thumbnail-spacing;
       font-size: 2.5rem;
-      align-self: flex-start;
+      align-self: center;
       color: var(--sapContent_NonInteractiveIconColor);
 
       @include fd-rtl() {
@@ -102,7 +102,7 @@
       color: $fd-list-byline-section-text-color;
       padding-right: $fd-list-byline-elements-spacing;
       line-height: $fd-list-byline-text-line-height;
-      align-self: flex-start;
+      align-self: flex-end;
 
       @include fd-rtl() {
         padding-left: $fd-list-byline-elements-spacing;
@@ -158,7 +158,7 @@
       }
 
       .#{$block}__item:last-child {
-        padding-bottom: 0.5rem;
+        padding-bottom: $fd-list-byline-item-padding-y;
       }
     }
   }
