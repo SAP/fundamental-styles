@@ -74,8 +74,7 @@ contrastMode.parameters = {
     }
 };
 
-export const extendedBusyIndicator = () => `
-<div class="fd-busy-indicator-extended">
+export const extendedBusyIndicator = () => `<div class="fd-busy-indicator-extended">
     <div class="fd-busy-indicator fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
         <div class="fd-busy-indicator--circle-0"></div>
         <div class="fd-busy-indicator--circle-1"></div>
@@ -92,8 +91,7 @@ extendedBusyIndicator.parameters = {
     }
 };
 
-export const extendedBusyIndicatorInsideMessageToast = () => `
-<div class="fd-message-toast fd-busy-indicator-extended">
+export const extendedBusyIndicatorInsideMessageToast = () => `<div class="fd-message-toast fd-busy-indicator-extended fd-busy-indicator-extended--message-toast">
     <div class="fd-busy-indicator fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
         <div class="fd-busy-indicator--circle-0"></div>
         <div class="fd-busy-indicator--circle-1"></div>

@@ -3,7 +3,6 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-busy-indicator;
-$message-toast: #{$fd-namespace}-message-toast;
 $fd-dots-color: var(--sapContent_IconColor);
 $fd-dots-color-contrast: var(--sapContent_ContrastIconColor);
 // default sizes
@@ -58,7 +57,7 @@ $fd-dots-size-l: 2rem;
     flex-direction: column;
   };
 
-  &.#{$message-toast} {
+  &.#{$block}-extended--message-toast {
     width: 23.125rem;
     max-width: 23.125rem;
     box-shadow: var(--sapContent_Shadow2);

@@ -35,13 +35,85 @@ exports[`Storyshots Components/Busy Indicator Contrast Mode 1`] = `
 `;
 
 exports[`Storyshots Components/Busy Indicator Extended Busy Indicator 1`] = `
+<div
+  class="fd-busy-indicator-extended"
+>
+  
+    
+  <div
+    aria-hidden="false"
+    aria-label="Loading"
+    class="fd-busy-indicator fd-busy-indicator--l"
+  >
+    
+        
+    <div
+      class="fd-busy-indicator--circle-0"
+    />
+    
+        
+    <div
+      class="fd-busy-indicator--circle-1"
+    />
+    
+        
+    <div
+      class="fd-busy-indicator--circle-2"
+    />
+    
+    
+  </div>
+  
+    
+  <div
+    class="fd-busy-indicator-extended__label"
+  >
+    loading data...
+  </div>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Components/Busy Indicator Extended Busy Indicator Inside Message Toast 1`] = `
+<div
+  class="fd-message-toast fd-busy-indicator-extended fd-busy-indicator-extended--message-toast"
+>
+  
+    
+  <div
+    aria-hidden="false"
+    aria-label="Loading"
+    class="fd-busy-indicator fd-busy-indicator--l"
+  >
+    
+        
+    <div
+      class="fd-busy-indicator--circle-0"
+    />
+    
+        
+    <div
+      class="fd-busy-indicator--circle-1"
+    />
+    
+        
+    <div
+      class="fd-busy-indicator--circle-2"
+    />
+    
+    
+  </div>
+  
+    
+  <div
+    class="fd-busy-indicator-extended__label"
+  >
+    loading data...
+  </div>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Components/Busy Indicator Standard 1`] = `
