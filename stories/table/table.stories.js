@@ -271,7 +271,7 @@ noOuterBorder.storyName = 'No outer Border';
 noOuterBorder.parameters = {
     docs: {
         storyDescription: `
-Table can be displayed without outer borders, might be needed when used inside some other element. To display a table without outer border, add the \`fd-table--border-less\` modifier class to the main element.
+Table can be displayed without outer borders, might be needed when used inside some other element. To display a table without outer border, add the \`fd-table--no-outer-border\` modifier class to the main element.
     `
     }
 };
