@@ -7,6 +7,8 @@ script:
   - npm run build:prod
 jobs:
   include:
+  - stage: Lint commit message
+    script: commitlint-travis
   - stage: Lint, Test and Size
     script:
       - npm run test
