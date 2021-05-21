@@ -31,10 +31,8 @@ $cols: 11;
     }
 
     .#{$blockRow} {
-      align-items: center;
       margin-top: 0;
       margin-bottom: 0.625rem;
-
       .#{$blockCol} {
         padding: 0 0.25rem;
         overflow: hidden;
@@ -192,9 +190,19 @@ $cols: 11;
 @media (min-width: 1440px) {
   .#{$blockContainer}.#{$block}-container {
     .#{$blockRow} {
+      align-items: start;
+
       .#{$blockCol} {
         .fd-form-label {
           padding-bottom: 0;
+
+          &--horizontal {
+            line-height: 2.8rem;
+          }
+
+          &--compact {
+            line-height: 2rem;
+          }
         }
 
         @for $n from 0 through $cols {

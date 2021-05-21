@@ -192,7 +192,7 @@ exports[`Storyshots Components/Forms/Form Grid Compact form 1`] = `
       
           
       <label
-        class="fd-form-label"
+        class="fd-form-label fd-form-label--compact"
         for="input-13-compact"
       >
         Default Input:
@@ -232,7 +232,7 @@ exports[`Storyshots Components/Forms/Form Grid Compact form 1`] = `
       
           
       <label
-        class="fd-form-label fd-form-label--required"
+        class="fd-form-label fd-form-label--compact fd-form-label--required"
         for="input-13b-compact"
       >
         Required Input: 
@@ -274,7 +274,7 @@ exports[`Storyshots Components/Forms/Form Grid Compact form 1`] = `
       
           
       <label
-        class="fd-form-label"
+        class="fd-form-label fd-form-label--compact"
         id="groupLabel-compact"
       >
         2 Inputs: 
@@ -358,7 +358,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [L] 1`] = `
       
       
       <label
-        class="fd-form-label"
+        class="fd-form-label fd-form-label--horizontal"
         for="input-6-name"
       >
         Name:
@@ -400,7 +400,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [L] 1`] = `
       
       
       <label
-        class="fd-form-label fd-form-label--required"
+        class="fd-form-label fd-form-label--horizontal fd-form-label--required"
         for="input-6-street"
       >
         Street/No.: 
@@ -476,7 +476,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [L] 1`] = `
       
       
       <label
-        class="fd-form-label fd-form-label--required"
+        class="fd-form-label fd-form-label--horizontal fd-form-label--required"
         for="input-6-zip"
       >
         ZIP Code/City: 
@@ -552,7 +552,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [L] 1`] = `
       
       
       <label
-        class="fd-form-label"
+        class="fd-form-label fd-form-label--horizontal"
         for="input-6-country"
       >
         Country:
@@ -653,7 +653,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
       
       
       <label
-        class="fd-form-label"
+        class="fd-form-label fd-form-label--horizontal"
         for="input-2-name"
       >
         Name:
@@ -695,7 +695,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
       
       
       <label
-        class="fd-form-label fd-form-label--required"
+        class="fd-form-label fd-form-label--horizontal fd-form-label--required"
         for="input-2-street"
       >
         Street/No.: 
@@ -771,7 +771,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
       
       
       <label
-        class="fd-form-label fd-form-label--required"
+        class="fd-form-label  fd-form-label--horizontal fd-form-label--required"
         for="input-2-zip"
       >
         ZIP Code/City: 
@@ -847,7 +847,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
       
       
       <label
-        class="fd-form-label"
+        class="fd-form-label fd-form-label--horizontal"
         for="input-2-country"
       >
         Country:
@@ -947,7 +947,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [XL] 1`] = `
       
       
       <label
-        class="fd-form-label"
+        class="fd-form-label fd-form-label--horizontal"
         for="input-9-name"
       >
         Name:
@@ -989,7 +989,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [XL] 1`] = `
       
       
       <label
-        class="fd-form-label fd-form-label--required"
+        class="fd-form-label fd-form-label--horizontal fd-form-label--required"
         for="input-9-street"
       >
         Street/No.: 
@@ -1065,7 +1065,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [XL] 1`] = `
       
       
       <label
-        class="fd-form-label fd-form-label--required"
+        class="fd-form-label fd-form-label--horizontal fd-form-label--required"
         for="input-9-zip"
       >
         ZIP Code/City: 
@@ -1141,7 +1141,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [XL] 1`] = `
       
       
       <label
-        class="fd-form-label"
+        class="fd-form-label fd-form-label--horizontal"
         for="input-9-country"
       >
         Country:
@@ -1251,7 +1251,7 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
           
           
           <label
-            class="fd-form-label"
+            class="fd-form-label fd-form-label--horizontal"
             for="input-11-name"
           >
             Name:
@@ -1293,7 +1293,7 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
           
           
           <label
-            class="fd-form-label fd-form-label--required"
+            class="fd-form-label fd-form-label--horizontal fd-form-label--required"
             for="input-11-street"
           >
             Street/No.: 
@@ -1369,7 +1369,7 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
           
           
           <label
-            class="fd-form-label fd-form-label--required"
+            class="fd-form-label fd-form-label--horizontal fd-form-label--required"
             for="input-11-zip"
           >
             ZIP Code/City: 
@@ -1445,7 +1445,7 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
           
           
           <label
-            class="fd-form-label"
+            class="fd-form-label fd-form-label--horizontal"
             for="input-11-country"
           >
             Country:
@@ -1543,7 +1543,7 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
           
           
           <label
-            class="fd-form-label"
+            class="fd-form-label fd-form-label--horizontal"
             for="input-11a-name"
           >
             Name:
@@ -1585,7 +1585,7 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
           
           
           <label
-            class="fd-form-label fd-form-label--required"
+            class="fd-form-label fd-form-label--horizontal fd-form-label--required"
             for="input-11a-street"
           >
             Street/No.: 
@@ -1661,7 +1661,7 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
           
           
           <label
-            class="fd-form-label fd-form-label--required"
+            class="fd-form-label fd-form-label--horizontal fd-form-label--required"
             for="input-11a-zip"
           >
             ZIP Code/City: 
@@ -1737,7 +1737,7 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
           
           
           <label
-            class="fd-form-label"
+            class="fd-form-label fd-form-label--horizontal"
             for="input-11a-country"
           >
             Country:
@@ -1843,7 +1843,7 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
       
       
       <label
-        class="fd-form-label"
+        class="fd-form-label fd-form-label--horizontal"
         for="input-4-name"
       >
         Name:
@@ -1885,7 +1885,7 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
       
       
       <label
-        class="fd-form-label fd-form-label--required"
+        class="fd-form-label fd-form-label--horizontal fd-form-label--required"
         for="input-4-street"
       >
         Street/No.: 
@@ -1961,7 +1961,7 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
       
       
       <label
-        class="fd-form-label fd-form-label--required"
+        class="fd-form-label fd-form-label--horizontal fd-form-label--required"
         for="input-4-zip"
       >
         ZIP Code/City: 
@@ -2037,7 +2037,7 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
       
       
       <label
-        class="fd-form-label"
+        class="fd-form-label fd-form-label--horizontal"
         for="input-4-country"
       >
         Country:
@@ -2434,7 +2434,7 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
       
       
       <label
-        class="fd-form-label"
+        class="fd-form-label fd-form-label--horizontal"
         for="input-5-name"
       >
         Name:
@@ -2476,7 +2476,7 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
       
       
       <label
-        class="fd-form-label fd-form-label--required"
+        class="fd-form-label  fd-form-label--horizontal fd-form-label--required"
         for="input-5-street"
       >
         Street/No.: 
@@ -2552,7 +2552,7 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
       
       
       <label
-        class="fd-form-label fd-form-label--required"
+        class="fd-form-label fd-form-label--horizontal fd-form-label--required"
         for="input-5-zip"
       >
         ZIP Code/City: 
@@ -2628,7 +2628,7 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
       
       
       <label
-        class="fd-form-label"
+        class="fd-form-label fd-form-label--horizontal"
         for="input-5-country"
       >
         Country:
@@ -3327,46 +3327,6 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
       class="fd-col fd-col-xl--4 fd-col--wrap"
     >
       
-      
-      <div
-        class="fd-row"
-      >
-        
-        
-        <div
-          class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
-        >
-          
-          
-          <label
-            class="fd-form-label"
-            for="input-12-name"
-          >
-            Name:
-          </label>
-          
-        
-        </div>
-        
-        
-        <div
-          class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
-        >
-          
-          
-          <input
-            class="fd-input"
-            id="input-12-name"
-            placeholder="Enter First and Last Name"
-            type="text"
-            value="Amelia Perry"
-          />
-          
-        
-        </div>
-        
-      
-      </div>
       
 
       
@@ -4594,7 +4554,7 @@ exports[`Storyshots Components/Forms/Form Grid Single form [L] 1`] = `
       
       
       <label
-        class="fd-form-label"
+        class="fd-form-label fd-form-label--horizontal"
         for="input-7-name"
       >
         Name:
@@ -4631,12 +4591,12 @@ exports[`Storyshots Components/Forms/Form Grid Single form [L] 1`] = `
     
     
     <div
-      class="fd-col  fd-col-md--2 fd-col-lg--3"
+      class="fd-col fd-col-md--2 fd-col-lg--3"
     >
       
       
       <label
-        class="fd-form-label fd-form-label--required"
+        class="fd-form-label fd-form-label--horizontal fd-form-label--required"
         for="input-7-street"
       >
         Street/No.: 
@@ -4712,7 +4672,7 @@ exports[`Storyshots Components/Forms/Form Grid Single form [L] 1`] = `
       
       
       <label
-        class="fd-form-label fd-form-label--required"
+        class="fd-form-label fd-form-label--horizontal fd-form-label--required"
         for="input-7-zip"
       >
         ZIP Code/City: 
@@ -4788,7 +4748,7 @@ exports[`Storyshots Components/Forms/Form Grid Single form [L] 1`] = `
       
       
       <label
-        class="fd-form-label"
+        class="fd-form-label fd-form-label--horizontal"
         for="input-7-country"
       >
         Country:
@@ -4887,7 +4847,7 @@ exports[`Storyshots Components/Forms/Form Grid Single form [XL] 1`] = `
       
       
       <label
-        class="fd-form-label"
+        class="fd-form-label fd-form-label--horizontal"
         for="input-10-name"
       >
         Name:
@@ -4929,7 +4889,7 @@ exports[`Storyshots Components/Forms/Form Grid Single form [XL] 1`] = `
       
       
       <label
-        class="fd-form-label fd-form-label--required"
+        class="fd-form-label fd-form-label--horizontal fd-form-label--required"
         for="input-10-street"
       >
         Street/No.: 
@@ -5005,7 +4965,7 @@ exports[`Storyshots Components/Forms/Form Grid Single form [XL] 1`] = `
       
       
       <label
-        class="fd-form-label fd-form-label--required"
+        class="fd-form-label fd-form-label--horizontal fd-form-label--required"
         for="input-10-zip"
       >
         ZIP Code/City: 
@@ -5081,7 +5041,7 @@ exports[`Storyshots Components/Forms/Form Grid Single form [XL] 1`] = `
       
       
       <label
-        class="fd-form-label"
+        class="fd-form-label fd-form-label--horizontal"
         for="input-10-country"
       >
         Country:
@@ -5441,7 +5401,7 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
       
       
       <label
-        class="fd-form-label"
+        class="fd-form-label fd-form-label--horizontal"
         for="input-3-name"
       >
         Name:
@@ -5483,7 +5443,7 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
       
       
       <label
-        class="fd-form-label fd-form-label--required"
+        class="fd-form-label fd-form-label--horizontal fd-form-label--required"
         for="input-3-street"
       >
         Street/No.: 
@@ -5559,7 +5519,7 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
       
       
       <label
-        class="fd-form-label fd-form-label--required"
+        class="fd-form-label fd-form-label--horizontal fd-form-label--required"
         for="input-3-zip"
       >
         ZIP Code/City: 
@@ -5635,7 +5595,7 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
       
       
       <label
-        class="fd-form-label"
+        class="fd-form-label fd-form-label--horizontal"
         for="input-3-country"
       >
         Country:
