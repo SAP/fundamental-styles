@@ -34,10 +34,6 @@ $button: #{$fd-namespace}-button;
 
   @include fd-reset();
 
-  .fd-popover-custom {
-    display: block;
-  }
-
   list-style: none;
   width: 100%;
   border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
@@ -173,6 +169,10 @@ $button: #{$fd-namespace}-button;
         }
       }
     }
+
+    &.#{$block}__popover-header {
+      box-shadow: var(--sapContent_HeaderShadow);
+    }
   }
 
   &__button.#{$button} {
@@ -210,7 +210,7 @@ $button: #{$fd-namespace}-button;
     overflow: hidden;
     text-overflow: ellipsis;
     padding-right: 1rem;
-    display: inline-flex;
+    display: flex;
     align-items: center;
 
     &:first-child {
@@ -334,15 +334,5 @@ $button: #{$fd-namespace}-button;
         font-size: var(--sapFontLargeSize);
       }
     }
-  }
-
-  &__link {
-    @include fd-rtl() {
-      padding-left: 1rem;
-    }
-  }
-
-  &__popover-header {
-    box-shadow: var(--sapContent_HeaderShadow);
   }
 }
