@@ -431,3 +431,59 @@
   white-space: normal;
   text-overflow: ellipsis;
 }
+
+@mixin set-margins-x($left: 0, $right: 0) {
+  margin-left: $left;
+  margin-right: $right;
+
+  @include fd-rtl() {
+    margin-right: $left;
+    margin-left: $right;
+  }
+}
+
+@mixin set-margin-left($left: 0) {
+  margin-left: $left;
+
+  @include fd-rtl() {
+    margin-right: $left;
+    margin-left: 0;
+  }
+}
+
+@mixin set-margin-right($right: 0) {
+  margin-right: $right;
+
+  @include fd-rtl() {
+    margin-right: 0;
+    margin-left: $right;
+  }
+}
+
+@mixin set-paddings-x($left: 0, $right: 0) {
+  padding-left: $left;
+  padding-right: $right;
+
+  @include fd-rtl() {
+    padding-right: $left;
+    padding-left: $right;
+  }
+}
+
+@mixin set-padding-left($left: 0) {
+  padding-left: $left;
+
+  @include fd-rtl() {
+    padding-right: $left;
+    padding-left: 0;
+  }
+}
+
+@mixin set-padding-right($right: 0) {
+  padding-right: $right;
+
+  @include fd-rtl() {
+    padding-right: 0;
+    padding-left: $right;
+  }
+}

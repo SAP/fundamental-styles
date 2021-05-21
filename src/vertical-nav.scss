@@ -1,0 +1,42 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-vertical-nav;
+
+.#{$block} {
+  @include fd-reset();
+
+  @include fd-flex(column) {
+    justify-content: space-between;
+  }
+
+  background-color: var(--sapList_AlternatingBackground);
+  width: 15rem;
+  text-shadow: var(--fdVerticalNav_Text_Shadow);
+  box-shadow: var(--sapContent_Shadow0);
+  height: 100%;
+
+  &__group-header {
+    @include fd-reset();
+    @include fd-ellipsis();
+    @include set-paddings-x(1rem);
+
+    height: 2.75rem;
+    background: var(--sapList_GroupHeaderBackground);
+    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_GroupHeaderBorderColor);
+    color: var(--sapList_GroupHeaderTextColor);
+    display: flex;
+    align-items: flex-end;
+    font-size: var(--sapFontSize);
+    font-weight: bold;
+    line-height: 2rem;
+  }
+
+  &__main-navigation {
+    @include fd-reset();
+  }
+
+  &--condensed {
+    width: 3.25rem;
+  }
+}

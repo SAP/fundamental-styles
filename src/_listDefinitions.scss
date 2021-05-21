@@ -200,3 +200,26 @@ $semantic-color: (
     }
   }
 }
+
+@mixin fake-arrow-focus() {
+  @include fd-focus() {
+    outline: none;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+      top: 0.125rem;
+      left: 0.125rem;
+      right: 0.125rem;
+      bottom: 0.125rem;
+    }
+
+    @include fd-active() {
+      &::after {
+        border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_ContrastFocusColor);
+      }
+    }
+  }
+}

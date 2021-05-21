@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.18.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.4...v0.18.1-rc.5) (2021-05-19)
+
+
+### Bug Fixes
+
+* remove unnecessary alignment for breadcrumbs in Dynamic Page ([#2363](https://github.com/SAP/fundamental-styles/issues/2363)) ([725b77a](https://github.com/SAP/fundamental-styles/commit/725b77a80d96f8b57031567add6f209cefc509d0))
+
+### [0.18.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.3...v0.18.1-rc.4) (2021-05-17)
+
+
+### Features
+
+* introduce Vertical Navigation component ([#2349](https://github.com/SAP/fundamental-styles/issues/2349)) ([2f9ba1e](https://github.com/SAP/fundamental-styles/commit/2f9ba1ea7cc5add862050e31d15823731aa38202))
+
+### [0.18.1-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.2...v0.18.1-rc.3) (2021-05-14)
+
+
+### Bug Fixes
+
+* replace single quotes with double in npm testing commands, because single quoted commands fail to run on windows machine ([#2351](https://github.com/SAP/fundamental-styles/issues/2351)) ([07c6ec4](https://github.com/SAP/fundamental-styles/commit/07c6ec42c8132ec38738eda969d204f8af87a966))
+
 ### [0.18.1-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.1...v0.18.1-rc.2) (2021-05-11)
 
 ### [0.18.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.0...v0.18.1-rc.1) (2021-05-11)
