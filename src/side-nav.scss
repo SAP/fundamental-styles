@@ -72,6 +72,10 @@ $has-child-content-arrow-margin: 0.125rem;
   &--condensed {
     width: 2.75rem;
 
+    .#{$fd-namespace}-popover-custom {
+      display: block;
+    }
+
     .#{$fd-namespace}-nested-list {
       &__title,
       &__group-header,
