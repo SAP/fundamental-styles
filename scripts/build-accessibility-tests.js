@@ -7,6 +7,33 @@ const rimraf = require('rimraf');
 console.info('Accessibility unit tests 🔬');
 console.info('  Trying to clean/remove all accessibility tests. 🗑');
 
+const componentsToExclude = [
+    'avatar',
+    'object-list',
+    'object-status',
+    'tabs',
+    'facets',
+    'counter',
+    'busy-indicator',
+    'object-marker',
+    'multi-input',
+    'token',
+    'notification',
+    'card',
+    'list-grid',
+    'wizard',
+    'table',
+    'numeric-content',
+    'shellbar',
+    'user-menu',
+    'dialog',
+    'avatar-group',
+    'side-navigation',
+    'multi-combo-box',
+    'generic-tile',
+    'dynamic-page'
+];
+
 rimraf('**/*.accessibility.test.js', (rimRafError) => {
     if (rimRafError) {
         console.error('    Failed to clean all accessibility tests!! ❌ ', rimRafError);
@@ -38,6 +65,8 @@ rimraf('**/*.accessibility.test.js', (rimRafError) => {
                     // Grab the component name
                     const componentName = fileName.substr(0, fileName.indexOf('.'));
 
+                    const isExcluded = componentsToExclude.includes(fileName.replace('.stories.js', ''));
+
 
                     const fileContents =
 `import { axe } from '../../scripts/axe-unit-test';
@@ -48,7 +77,7 @@ expect.extend(toHaveNoViolations);
 jest.setTimeout(30000); //to give some time (30s) for dom rendering
 
 describe('${componentName} and all its variants', () => {
-    it('should not have any accessibility violations', async() => {
+    it${isExcluded ? '.skip' : ''}('should not have any accessibility violations', async() => {
         let storyNames = Object.keys(stories).filter(story => story !== 'default' && story !== 'dev');
         for ( const eachStoryName of storyNames ) {
             const eachStory = stories[eachStoryName];
