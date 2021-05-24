@@ -23,6 +23,7 @@ $fd-dots-size-l: 2rem;
   display: block;
   font-size: 0;
   color: $fd-dots-color;
+  text-align: center;
 }
 
 .#{$block}.contrast,
@@ -49,6 +50,29 @@ $fd-dots-size-l: 2rem;
   display: inline-block;
   border-radius: 50%;
   background-color: currentColor;
+}
+
+.#{$block}-extended {
+  @include fd-flex-center() {
+    flex-direction: column;
+  };
+
+  &.#{$block}-extended--message-toast {
+    width: 23.125rem;
+    max-width: 23.125rem;
+    box-shadow: var(--sapContent_Shadow2);
+    text-shadow: var(--sapContent_TextShadow);
+    background-color: var(--sapPageFooter_Background);
+  }
+
+  &__label {
+    @include fd-reset();
+
+    display: block;
+    color: var(--sapPageFooter_TextColor);
+    margin-top: 1rem;
+    text-align: center;
+  }
 }
 
 .#{$block}--circle-0 {
