@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.18.1-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.6...v0.18.1-rc.7) (2021-05-24)
+
+
+### Features
+
+* add Extended Busy Indicator ([#2339](https://github.com/SAP/fundamental-styles/issues/2339)) ([8f80745](https://github.com/SAP/fundamental-styles/commit/8f807456b4cdaca785ead6f1b86c614ad92582ab))
+
 ### [0.18.1-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.5...v0.18.1-rc.6) (2021-05-21)
 
 ### [0.18.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.4...v0.18.1-rc.5) (2021-05-19)
