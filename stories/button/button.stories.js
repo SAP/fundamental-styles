@@ -41,40 +41,38 @@ export const primary = () => `
  */
 
 export const types = () => `<div class="fddocs-container fddocs-button-container"> 
-        <button class="fd-button">Default Button</button>
-        <button class="fd-button fd-button--emphasized">Emphasized Button</button>
-        <button class="fd-button fd-button--ghost">Ghost Button</button>
+        <button class="fd-button fd-button--emphasized">Primary Button</button>
+        <button class="fd-button">Secondary Button</button>
+        <button class="fd-button fd-button--ghost">Secondary Button</button>
         <button class="fd-button fd-button--positive">Positive Button</button>
         <button class="fd-button fd-button--negative">Negative Button</button>
         <button class="fd-button fd-button--attention">Attention Button</button>
-        <button class="fd-button fd-button--transparent">Transparent Button</button>
+        <button class="fd-button fd-button--transparent">Tertiary Button</button>
 </div>`;
 
 types.storyName = 'Button styles';
 types.parameters = {
     docs: {
-        storyDescription: `    
-- **Default button** is used for neutral or informative (secondary) actions.
-- **Emphasized button** is used to indicate the primary action on the screen.
-- **Ghost button** is used to trigger secondary actions. If a page already has a primary action, but you also need to highlight the most important action in a content toolbar, use the ghost style.
+        storyDescription: `
+- **Primary button** is used to indicate the primary action on the screen.
+- **Secondary button** is used for neutral or informative (secondary) actions. If a page already has a primary action, but you also need to highlight the most important action in a content toolbar, use the ghost style.
 - **Positive button** is used to trigger positive semantic actions, such as _Accept_ and should always be accompanied by text.
 - **Negative button** is used to trigger negative semantic actions, such as _Reject_ and should always be accompanied by text.
 - **Attention button** is used to trigger a semantic action that needs attention and should always be accompanied by text.
-- **Transparent button** is used to trigger a negative path action within a header or footer bar, and secondary actions in toolbars.
-        
+- **Tertiary button** is used to trigger a negative path action within a header or footer bar, and secondary actions in toolbars.
 `
     }
 };
 
 export const toggle = () => `<h4>Inactive state of toggle button</h4>
-<div class="fddocs-container fddocs-button-container"> 
-    <button class="fd-button">Default Toggle</button>
-    <button class="fd-button fd-button--emphasized">Emphasized Toggle</button>
-    <button class="fd-button fd-button--ghost">Ghost Toggle</button>
+<div class="fddocs-container fddocs-button-container">
+    <button class="fd-button fd-button--emphasized">Primary Toggle</button>
+    <button class="fd-button">Secondary Toggle</button>
+    <button class="fd-button fd-button--ghost">Secondary Toggle</button>
     <button class="fd-button fd-button--positive">Positive Toggle</button>
     <button class="fd-button fd-button--negative">Negative Toggle</button>
     <button class="fd-button fd-button--attention">Attention Toggle</button>
-    <button class="fd-button fd-button--transparent">Transparent Toggle</button>
+    <button class="fd-button fd-button--transparent">Tertiary Toggle</button>
     <button class="fd-button fd-button--menu">
         <span class="fd-button__text">Action Button</span>
         <i class="sap-icon--slim-arrow-down"></i>
@@ -86,13 +84,13 @@ export const toggle = () => `<h4>Inactive state of toggle button</h4>
 </div>
 <h4>Active (toggled) state of toggle button</h4>
 <div class="fddocs-container fddocs-button-container"> 
-    <button class="fd-button fd-button--toggled">Default Toggle</button>
-    <button class="fd-button fd-button--emphasized fd-button--toggled">Emphasized Toggle</button>
-    <button class="fd-button fd-button--ghost fd-button--toggled">Ghost Toggle</button>
+    <button class="fd-button fd-button--emphasized fd-button--toggled">Primary Toggle</button>    
+    <button class="fd-button fd-button--toggled">Secondary Toggle</button>
+    <button class="fd-button fd-button--ghost fd-button--toggled">Secondary Toggle</button>
     <button class="fd-button fd-button--positive fd-button--toggled">Positive Toggle</button>
     <button class="fd-button fd-button--negative fd-button--toggled">Negative Toggle</button>
     <button class="fd-button fd-button--attention fd-button--toggled">Attention Toggle</button>
-    <button class="fd-button fd-button--transparent fd-button--toggled">Transparent Toggle</button>
+    <button class="fd-button fd-button--transparent fd-button--toggled">Tertiary Toggle</button>
     <button class="fd-button fd-button--menu fd-button--toggled">
         <span class="fd-button__text">Action Button</span>
         <i class="sap-icon--slim-arrow-down"></i>
@@ -104,13 +102,13 @@ export const toggle = () => `<h4>Inactive state of toggle button</h4>
 </div>
 <h4>Disabled Toggle button in active state</h4>
 <div class="fddocs-container fddocs-button-container"> 
-    <button class="fd-button fd-button--toggled" disabled>Default Toggle</button>
-    <button class="fd-button fd-button--emphasized fd-button--toggled" disabled>Emphasized Toggle</button>
-    <button class="fd-button fd-button--ghost fd-button--toggled" disabled>Ghost Toggle</button>
+    <button class="fd-button fd-button--emphasized fd-button--toggled" disabled>Primary Toggle</button>
+    <button class="fd-button fd-button--toggled" disabled>Secondary Toggle</button>
+    <button class="fd-button fd-button--ghost fd-button--toggled" disabled>Secondary Toggle</button>
     <button class="fd-button fd-button--positive fd-button--toggled" disabled>Positive Toggle</button>
     <button class="fd-button fd-button--negative fd-button--toggled" disabled>Negative Toggle</button>
     <button class="fd-button fd-button--attention fd-button--toggled" disabled>Attention Toggle</button>
-    <button class="fd-button fd-button--transparent fd-button--toggled" disabled>Transparent Toggle</button>
+    <button class="fd-button fd-button--transparent fd-button--toggled" disabled>Tertiary Toggle</button>
     <button class="fd-button fd-button--menu fd-button--toggled" aria-disabled="true" disabled>
         <span class="fd-button__text">Action Button</span>
         <i class="sap-icon--slim-arrow-down"></i>
