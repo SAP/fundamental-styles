@@ -54,7 +54,7 @@ types.storyName = 'Button styles';
 types.parameters = {
     docs: {
         storyDescription: `
-- **Primary button** is used to indicate the primary action on the screen.
+- **Primary button** is used to indicate the primary actions on the screen.
 - **Secondary button** is used for neutral or informative (secondary) actions. If a page already has a primary action, but you also need to highlight the most important action in a content toolbar, use the ghost style.
 - **Positive button** is used to trigger positive semantic actions, such as _Accept_ and should always be accompanied by text.
 - **Negative button** is used to trigger negative semantic actions, such as _Reject_ and should always be accompanied by text.
