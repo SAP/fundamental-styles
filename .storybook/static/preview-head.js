@@ -1,5 +1,12 @@
 (function() {
 
+    window.onload = function () {
+        const netlifyDrawerIframe = getNetlifyDrawerIframe();
+        if (netlifyDrawerIframe) {
+            netlifyDrawerIframe.style.display = 'none';
+        }
+    };
+
     function runOnPageChange() {
         //climb up DOM to get block element
         function getBlock(control) {
@@ -408,4 +415,17 @@ function toggleVerticalNavSubmenu(event) {
         arrowIcon.classList.remove('sap-icon--navigation-right-arrow');
         arrowIcon.classList.add('sap-icon--navigation-down-arrow');
     }
+}
+
+function getNetlifyDrawerIframe() {
+    const iframes = window.parent.document.getElementsByTagName('iframe');
+    let iframe;
+
+    iframes.forEach(function(item) {
+        if (item.src.startsWith('https://app.netlify.com')) {
+            iframe = item;
+        }
+    });
+
+    return iframe;
 }
