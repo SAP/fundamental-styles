@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.18.1-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.8...v0.18.1-rc.9) (2021-05-26)
+
+
+### Bug Fixes
+
+* class added for no outer border for table ([#2361](https://github.com/SAP/fundamental-styles/issues/2361)) ([a018562](https://github.com/SAP/fundamental-styles/commit/a018562a4d5c351f4bedefab39cb6a7f6314da7c))
+
 ### [0.18.1-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.7...v0.18.1-rc.8) (2021-05-24)
 
 ### [0.18.1-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.6...v0.18.1-rc.7) (2021-05-24)

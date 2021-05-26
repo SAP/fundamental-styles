@@ -230,6 +230,52 @@ Table can be displayed without borders that separate the columns and rows only, 
     }
 };
 
+export const noOuterBorder = () => `
+<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin: 0;">Table Without Outer Borders</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
+<table class="fd-table fd-table--no-outer-border">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+    </tbody>
+</table>
+`;
+
+noOuterBorder.storyName = 'No outer Border';
+noOuterBorder.parameters = {
+    docs: {
+        storyDescription: `
+Table can be displayed without outer borders, might be needed when used inside some other element. To display a table without outer border, add the \`fd-table--no-outer-border\` modifier class to the main element.
+    `
+    }
+};
+
 export const footer = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table With Footer Cozy Mode</h4>

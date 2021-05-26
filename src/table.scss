@@ -593,6 +593,10 @@ $block: #{$fd-namespace}-table;
     }
   }
 
+  &--no-outer-border {
+    border: hidden;
+  }
+
   @include fd-rtl() {
     .#{$block}__cell {
       text-align: right;
