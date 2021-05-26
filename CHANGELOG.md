@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.18.1-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.10...v0.18.1-rc.11) (2021-05-26)
+
+
+### Bug Fixes
+
+* removal of extra margin on the labelled status indicator ([#2367](https://github.com/SAP/fundamental-styles/issues/2367)) ([c89b039](https://github.com/SAP/fundamental-styles/commit/c89b039ecaf5495e1c2aa6ebc7519de30c1b2b00))
+* Slider - fix ticks for windows ([#2370](https://github.com/SAP/fundamental-styles/issues/2370)) ([84f47a4](https://github.com/SAP/fundamental-styles/commit/84f47a44e12b7fa2433d9a2bd7a03caaca75af17))
+
 ### [0.18.1-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.9...v0.18.1-rc.10) (2021-05-26)
 
 ### [0.18.1-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.8...v0.18.1-rc.9) (2021-05-26)
