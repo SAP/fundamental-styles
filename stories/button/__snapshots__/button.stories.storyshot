@@ -22,23 +22,23 @@ exports[`Storyshots Components/Button Button styles 1`] = `
    
         
   <button
-    class="fd-button"
+    class="fd-button fd-button--emphasized"
   >
-    Default Button
+    Primary Button
   </button>
   
         
   <button
-    class="fd-button fd-button--emphasized"
+    class="fd-button"
   >
-    Emphasized Button
+    Secondary Button
   </button>
   
         
   <button
     class="fd-button fd-button--ghost"
   >
-    Ghost Button
+    Secondary Button
   </button>
   
         
@@ -66,7 +66,7 @@ exports[`Storyshots Components/Button Button styles 1`] = `
   <button
     class="fd-button fd-button--transparent"
   >
-    Transparent Button
+    Tertiary Button
   </button>
   
 
@@ -139,26 +139,26 @@ exports[`Storyshots Components/Button Toggle button 1`] = `
   <div
     class="fddocs-container fddocs-button-container"
   >
-     
-    
-    <button
-      class="fd-button"
-    >
-      Default Toggle
-    </button>
     
     
     <button
       class="fd-button fd-button--emphasized"
     >
-      Emphasized Toggle
+      Primary Toggle
+    </button>
+    
+    
+    <button
+      class="fd-button"
+    >
+      Secondary Toggle
     </button>
     
     
     <button
       class="fd-button fd-button--ghost"
     >
-      Ghost Toggle
+      Secondary Toggle
     </button>
     
     
@@ -186,7 +186,7 @@ exports[`Storyshots Components/Button Toggle button 1`] = `
     <button
       class="fd-button fd-button--transparent"
     >
-      Transparent Toggle
+      Tertiary Toggle
     </button>
     
     
@@ -251,23 +251,23 @@ exports[`Storyshots Components/Button Toggle button 1`] = `
      
     
     <button
-      class="fd-button fd-button--toggled"
-    >
-      Default Toggle
-    </button>
-    
-    
-    <button
       class="fd-button fd-button--emphasized fd-button--toggled"
     >
-      Emphasized Toggle
+      Primary Toggle
+    </button>
+        
+    
+    <button
+      class="fd-button fd-button--toggled"
+    >
+      Secondary Toggle
     </button>
     
     
     <button
       class="fd-button fd-button--ghost fd-button--toggled"
     >
-      Ghost Toggle
+      Secondary Toggle
     </button>
     
     
@@ -295,7 +295,7 @@ exports[`Storyshots Components/Button Toggle button 1`] = `
     <button
       class="fd-button fd-button--transparent fd-button--toggled"
     >
-      Transparent Toggle
+      Tertiary Toggle
     </button>
     
     
@@ -360,18 +360,18 @@ exports[`Storyshots Components/Button Toggle button 1`] = `
      
     
     <button
-      class="fd-button fd-button--toggled"
+      class="fd-button fd-button--emphasized fd-button--toggled"
       disabled=""
     >
-      Default Toggle
+      Primary Toggle
     </button>
     
     
     <button
-      class="fd-button fd-button--emphasized fd-button--toggled"
+      class="fd-button fd-button--toggled"
       disabled=""
     >
-      Emphasized Toggle
+      Secondary Toggle
     </button>
     
     
@@ -379,7 +379,7 @@ exports[`Storyshots Components/Button Toggle button 1`] = `
       class="fd-button fd-button--ghost fd-button--toggled"
       disabled=""
     >
-      Ghost Toggle
+      Secondary Toggle
     </button>
     
     
@@ -411,7 +411,7 @@ exports[`Storyshots Components/Button Toggle button 1`] = `
       class="fd-button fd-button--transparent fd-button--toggled"
       disabled=""
     >
-      Transparent Toggle
+      Tertiary Toggle
     </button>
     
     
