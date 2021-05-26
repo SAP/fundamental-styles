@@ -10,7 +10,7 @@ exports[`Storyshots Components/Status Indicator Fill values 1`] = `
     
 
     <span
-      style="min-width: 150px;"
+      class="fd-form-label"
     >
       Negative Filling :
     </span>
@@ -153,7 +153,7 @@ exports[`Storyshots Components/Status Indicator Fill values 1`] = `
     
 
     <span
-      style="min-width: 150px;"
+      class="fd-form-label"
     >
       Critical Filling :
     </span>
@@ -296,7 +296,7 @@ exports[`Storyshots Components/Status Indicator Fill values 1`] = `
     
 
     <span
-      style="min-width: 150px;"
+      class="fd-form-label"
     >
       Positive Filling :
     </span>
@@ -446,7 +446,7 @@ exports[`Storyshots Components/Status Indicator Sizes 1`] = `
     
 
     <span
-      style="min-width: 150px;"
+      class="fd-form-label"
     >
       Small size :
     </span>
@@ -589,7 +589,7 @@ exports[`Storyshots Components/Status Indicator Sizes 1`] = `
     
 
     <span
-      style="min-width: 150px;"
+      class="fd-form-label"
     >
       Medium size(Default) :
     </span>
@@ -732,7 +732,7 @@ exports[`Storyshots Components/Status Indicator Sizes 1`] = `
     
 
     <span
-      style="min-width: 150px;"
+      class="fd-form-label"
     >
       Large Size :
     </span>
@@ -875,7 +875,7 @@ exports[`Storyshots Components/Status Indicator Sizes 1`] = `
     
 
     <span
-      style="min-width: 150px;"
+      class="fd-form-label"
     >
       Extra Large Size :
     </span>
@@ -1025,7 +1025,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Angular fi
     
 	
     <span
-      style="min-width: 150px;"
+      class="fd-form-label"
     >
       Angular filling 270 degree:
     </span>
@@ -1194,7 +1194,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Angular fi
     
 	
     <span
-      style="min-width: 150px;"
+      class="fd-form-label"
     >
       Angular filling 40 degree:
     </span>
@@ -1363,7 +1363,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Angular fi
     
 	
     <span
-      style="min-width: 150px;"
+      class="fd-form-label"
     >
       Angular filling 98 degree:
     </span>
@@ -1532,7 +1532,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Angular fi
     
 	
     <span
-      style="min-width: 150px;"
+      class="fd-form-label"
     >
       Angular filling 140 degree:
     </span>
@@ -1712,7 +1712,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
     
 
     <span
-      style="min-width: 150px;"
+      class="fd-form-label"
     >
       Top Label :
     </span>
@@ -1731,7 +1731,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
       
 	
       <span
-        class="fd-status-indicator__label fd-status-indicator__label--lg"
+        class="fd-status-indicator__label fd-status-indicator__label--lg fd-status-indicator__label--top"
       >
         100%
       </span>
@@ -1862,7 +1862,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
     
 	
     <span
-      style="min-width: 150px;"
+      class="fd-form-label"
     >
       Bottom Label :
     </span>
@@ -1994,7 +1994,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
       
 	
       <span
-        class="fd-status-indicator__label fd-status-indicator__label--lg"
+        class="fd-status-indicator__label fd-status-indicator__label--lg fd-status-indicator__label--bottom"
       >
         100%
       </span>
@@ -2012,7 +2012,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
     
 
     <span
-      style="min-width: 150px;"
+      class="fd-form-label"
     >
       Left Label :
     </span>
@@ -2031,7 +2031,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
       
 	
       <span
-        class="fd-status-indicator__label fd-status-indicator__label--lg"
+        class="fd-status-indicator__label fd-status-indicator__label--lg fd-status-indicator__label--left"
       >
         100%
       </span>
@@ -2162,7 +2162,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
     
 	
     <span
-      style="min-width: 150px;"
+      class="fd-form-label"
     >
       Right Label :
     </span>
@@ -2294,7 +2294,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
       
 	
       <span
-        class="fd-status-indicator__label fd-status-indicator__label--lg"
+        class="fd-status-indicator__label fd-status-indicator__label--lg fd-status-indicator__label--right"
       >
         100%
       </span>
@@ -2320,7 +2320,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Linear fil
     
 	
     <span
-      style="min-width: 150px;"
+      class="fd-form-label"
     >
       Left to Right fill :
     </span>
@@ -2488,7 +2488,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Linear fil
     
 	
     <span
-      style="min-width: 150px;"
+      class="fd-form-label"
     >
       Bottom to Top fill
     </span>
@@ -2663,7 +2663,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Radial fil
     
 	
     <span
-      style="min-width: 150px;"
+      class="fd-form-label"
     >
       Radial Clock filling:
     </span>
@@ -2829,7 +2829,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Radial fil
     
 	
     <span
-      style="min-width: 150px;"
+      class="fd-form-label"
     >
       Radial Counter Clock filling:
     </span>

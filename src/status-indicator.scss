@@ -44,7 +44,7 @@ $color-states: (
   &--horizontal-label {
     @include fd-reset();
 
-    flex-direction: unset;
+    flex-direction: row;
   }
 
   &--link {
@@ -53,13 +53,35 @@ $color-states: (
 
   &__label {
     font-size: $fd-status-indicator-default-font-size;
-    margin: $fd-status-indicator-default-margin;
 
     // sizes
     @each $set-name, $size-set in $fd-status-indicator-sizes {
       &--#{$set-name} {
         font-size: map-get($size-set, 'font-size');
-        margin: map-get($size-set, 'margin');
+        &.#{$block}__label--top {
+          margin-bottom: map-get($size-set, 'margin');
+        }
+        &.#{$block}__label--right {
+          margin-left: map-get($size-set, 'margin');
+
+          @include fd-rtl() {
+            margin-left: 0;
+            margin-right: map-get($size-set, 'margin');
+            transform: matrix(1, 0, 0, 1, 22, 1);
+          }
+        }
+        &.#{$block}__label--left {
+          margin-right: map-get($size-set, 'margin');
+
+          @include fd-rtl() {
+            margin-right: 0;
+            margin-left: map-get($size-set, 'margin');
+            transform: matrix(1, 0, 0, 1, -22, 1);
+          }
+        }
+        &.#{$block}__label--bottom {
+          margin-top: map-get($size-set, 'margin');
+        }
       }
     }
   }
