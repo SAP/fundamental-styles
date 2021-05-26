@@ -51,7 +51,7 @@ $handle-hit-area-mobile-dimensions: 2.75rem;
 
     position: absolute;
     width: 100%;
-    top: -0.4rem;
+    top: calc((-1rem + var(--fdSlider_Track_Height)) / 2);
   }
 
   &__ticks {
@@ -78,12 +78,11 @@ $handle-hit-area-mobile-dimensions: 2.75rem;
     @include fd-reset();
 
     position: relative;
-    width: 0.0625rem;
+    border-left: 0.0625rem solid var(--sapField_BorderColor);
     height: var(--fdSlider_Tick_Height);
-    background-color: var(--sapField_BorderColor);
 
     &--in-range {
-      background-color: var(--fdSlider_Track_Active_Border);
+      border-color: var(--fdSlider_Track_Active_Border);
     }
   }
 
