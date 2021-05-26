@@ -418,7 +418,7 @@ function toggleVerticalNavSubmenu(event) {
 }
 
 function getNetlifyDrawerIframe() {
-    const iframes = document.getElementsByTagName('iframe');
+    const iframes = window.parent.document.getElementsByTagName('iframe');
     let iframe;
 
     iframes.forEach(function(item) {
