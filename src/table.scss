@@ -131,11 +131,11 @@ $block: #{$fd-namespace}-table;
 
         &-last {
           border-right: $fd-table-fixed-cell-border;
-        }
 
-        @include fd-rtl() {
-          border-left: $fd-table-fixed-cell-border;
-          border-right: $fd-table-border;
+          @include fd-rtl() {
+            border-left: $fd-table-fixed-cell-border;
+            border-right: $fd-table-border;
+          }
         }
       }
     }
@@ -234,16 +234,16 @@ $block: #{$fd-namespace}-table;
 
       &-last {
         border-right: $fd-table-fixed-cell-border;
+
+        @include fd-rtl() {
+          border-right: $fd-table-border;
+          border-left: $fd-table-fixed-cell-border;
+        }
       }
 
       @include fd-rtl() {
         left: auto;
         right: 0;
-
-        &:last-of-type {
-          border-right: $fd-table-border;
-          border-left: $fd-table-fixed-cell-border;
-        }
       }
     }
 
@@ -417,6 +417,16 @@ $block: #{$fd-namespace}-table;
   // Modifiers
   &--fixed {
     overflow-x: scroll;
+
+    .#{$block}__header,
+    .#{$block}__body {
+      border-left: none;
+
+      @include fd-rtl() {
+        border-left: $fd-table-border;
+        border-right: none;
+      }
+    }
   }
 
   &--pop-in {
