@@ -1532,9 +1532,11 @@ fixColumnHeader.storyName = 'Fixed header';
 fixColumnHeader.parameters = {
     docs: {
         storyDescription: `
-Table can display columns with a fixed header. To display fixed headers, wrap the table with the \`fd-table--fixed\` modifier class. In addition, add the \`fd-table__cell--fixed\` modifier class to each cell element, it should be propagated to the entire row. 
-        
-        
+Table can display columns with a fixed header.
+To display fixed headers, wrap the table with the \`fd-table--fixed\` modifier class.
+In addition, add the \`fd-table__cell--fixed\` modifier class to each cell element, it should be propagated to the entire row. 
+Then apply \`.fd-table__cell--fixed-last\` to every last fixed cell in every column to have special border after the fixed columns.
+
 It’s important to hardcode the width of the columns, otherwise the cells will be squished.
     `
     }
