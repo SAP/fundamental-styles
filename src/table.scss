@@ -126,9 +126,12 @@ $block: #{$fd-namespace}-table;
       &--fixed {
         margin-top: -$fd-table-fixed-cell-shift;
         border-top: $fd-table-border;
-        border-right: $fd-table-fixed-cell-border;
         border-left: $fd-table-border;
         height: $fd-table-cozy-cell-height + $fd-table-fixed-cell-shift;
+
+        &-last {
+          border-right: $fd-table-fixed-cell-border;
+        }
 
         @include fd-rtl() {
           border-left: $fd-table-fixed-cell-border;
@@ -229,7 +232,7 @@ $block: #{$fd-namespace}-table;
         background-color: var(--sapList_Hover_Background);
       }
 
-      &:last-of-type {
+      &-last {
         border-right: $fd-table-fixed-cell-border;
       }
 
