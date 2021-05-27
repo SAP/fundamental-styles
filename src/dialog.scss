@@ -47,6 +47,7 @@ $button: #{$fd-namespace}-button;
   @extend %dialog;
 
   display: none;
+  z-index: 999;
 
   &--active {
     display: flex;
@@ -164,6 +165,7 @@ $button: #{$fd-namespace}-button;
     font-size: 1rem;
     cursor: se-resize;
     overflow: hidden;
+    z-index: 1001;
 
     @include fd-rtl() {
       right: unset;
