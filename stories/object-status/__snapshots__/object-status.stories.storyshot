@@ -390,6 +390,7 @@ exports[`Storyshots Components/Object Status Icon 1`] = `
     <i
       aria-label="Negative"
       class="fd-object-status__icon sap-icon--message-error"
+      role="img"
     />
     
     
@@ -404,6 +405,7 @@ exports[`Storyshots Components/Object Status Icon 1`] = `
     <i
       aria-label="Warning"
       class="fd-object-status__icon sap-icon--message-warning"
+      role="img"
     />
     
     
@@ -418,6 +420,7 @@ exports[`Storyshots Components/Object Status Icon 1`] = `
     <i
       aria-label="Correct"
       class="fd-object-status__icon sap-icon--message-success"
+      role="img"
     />
     
     
@@ -432,6 +435,7 @@ exports[`Storyshots Components/Object Status Icon 1`] = `
     <i
       aria-label="More information"
       class="fd-object-status__icon sap-icon--message-information"
+      role="img"
     />
     
     

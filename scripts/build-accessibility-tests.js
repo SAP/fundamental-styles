@@ -10,7 +10,7 @@ console.info('  Trying to clean/remove all accessibility tests. 🗑');
 const componentsToExclude = [
     'avatar',
     'object-list',
-    'object-status',
+    // 'object-status',
     'tabs',
     'facets',
     'counter',

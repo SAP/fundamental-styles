@@ -41,16 +41,16 @@ export const primary = () => `<div class="fddocs-container">
 
 export const icon = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--negative">
-        <i class="fd-object-status__icon sap-icon--message-error" aria-label="Negative"></i>
+        <i class="fd-object-status__icon sap-icon--message-error" aria-label="Negative" role="img"></i>
     </span>
     <span class="fd-object-status fd-object-status--critical">
-        <i class="fd-object-status__icon sap-icon--message-warning" aria-label="Warning"></i>
+        <i class="fd-object-status__icon sap-icon--message-warning" aria-label="Warning" role="img"></i>
     </span>
     <span class="fd-object-status fd-object-status--positive">
-        <i class="fd-object-status__icon sap-icon--message-success" aria-label="Correct"></i>
+        <i class="fd-object-status__icon sap-icon--message-success" aria-label="Correct" role="img"></i>
     </span>
     <span class="fd-object-status fd-object-status--informative">
-        <i class="fd-object-status__icon sap-icon--message-information" aria-label="More information"></i>
+        <i class="fd-object-status__icon sap-icon--message-information" aria-label="More information" role="img"></i>
     </span>
 </div>
 `;
