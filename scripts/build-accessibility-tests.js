@@ -8,7 +8,6 @@ console.info('Accessibility unit tests 🔬');
 console.info('  Trying to clean/remove all accessibility tests. 🗑');
 
 const componentsToExclude = [
-    'avatar',
     'object-list',
     'object-status',
     'tabs',

@@ -62,11 +62,11 @@ icon.parameters = {
 
 
 export const initials = () => `
-<span class="fd-avatar fd-avatar--xs" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--s" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--m" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--l" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--xl" aria-label="Wendy Wallace">WW</span>
+<span class="fd-avatar fd-avatar--xs" aria-label="Wendy Wallace" role="img">WW</span>
+<span class="fd-avatar fd-avatar--s" aria-label="Wendy Wallace" role="img">WW</span>
+<span class="fd-avatar fd-avatar--m" aria-label="Wendy Wallace" role="img">WW</span>
+<span class="fd-avatar fd-avatar--l" aria-label="Wendy Wallace" role="img">WW</span>
+<span class="fd-avatar fd-avatar--xl" aria-label="Wendy Wallace" role="img">WW</span>
 `;
 
 initials.parameters = {
@@ -79,26 +79,26 @@ initials.parameters = {
 
 
 export const circle = () => `
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--xs fd-avatar--circle" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--s fd-avatar--circle" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--m fd-avatar--circle" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--l fd-avatar--circle" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--xl fd-avatar--circle" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
+<span class="fd-avatar fd-avatar--xs fd-avatar--circle" aria-label="Wendy Wallace" role="img">WW</span>
+<span class="fd-avatar fd-avatar--s fd-avatar--circle" aria-label="Wendy Wallace" role="img">WW</span>
+<span class="fd-avatar fd-avatar--m fd-avatar--circle" aria-label="Wendy Wallace" role="img">WW</span>
+<span class="fd-avatar fd-avatar--l fd-avatar--circle" aria-label="Wendy Wallace" role="img">WW</span>
+<span class="fd-avatar fd-avatar--xl fd-avatar--circle" aria-label="Wendy Wallace" role="img">WW</span>
 `;
 
 circle.parameters = {
@@ -133,26 +133,26 @@ Changing the default <code>background-size: cover</code> to <code>background-siz
 };
 
 export const transparent = () => `
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--transparent" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--transparent" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--transparent" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--transparent" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace">WW</span>
+<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace" role="img">WW</span>
+<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace" role="img">WW</span>
+<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace" role="img">WW</span>
+<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace" role="img">WW</span>
+<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace" role="img">WW</span>
 `;
 
 transparent.parameters = {
@@ -164,19 +164,19 @@ transparent.parameters = {
 
 
 export const placeholderBackground = () => `
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--placeholder" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--placeholder" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--placeholder" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--placeholder" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--placeholder" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--placeholder" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--placeholder" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--placeholder" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
 `;
@@ -190,19 +190,19 @@ placeholderBackground.parameters = {
 
 
 export const tileIconBackground = () => `
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--tile" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--tile" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--tile" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--tile" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--tile" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--tile" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--tile" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--tile" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
 `;
@@ -217,34 +217,34 @@ tileIconBackground.parameters = {
 
 
 export const accentColors = () => `
-<span class="fd-avatar fd-avatar--accent-color-1 fd-avatar--m" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--accent-color-1 fd-avatar--m" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--accent-color-2 fd-avatar--m" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--accent-color-2 fd-avatar--m" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--accent-color-3 fd-avatar--m" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--accent-color-3 fd-avatar--m" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--accent-color-4 fd-avatar--m" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--accent-color-4 fd-avatar--m" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--accent-color-5 fd-avatar--m" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--accent-color-5 fd-avatar--m" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--m" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--m" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--accent-color-7 fd-avatar--m" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--accent-color-7 fd-avatar--m" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--accent-color-9 fd-avatar--m" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--accent-color-9 fd-avatar--m" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--m" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--m" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
 `;
@@ -258,40 +258,40 @@ accentColors.parameters = {
 
 
 export const zoomIcon = () => `
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
-    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit"></i>
+    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="button"></i>
 </span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-2" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-2" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
-    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit"></i>
+    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="button"></i>
 </span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--accent-color-3" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--accent-color-3" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
-    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit"></i>
+    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="button"></i>
 </span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--accent-color-4" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--accent-color-4" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
-    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit"></i>
+    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="button"></i>
 </span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
-    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit"></i>
+    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="button"></i>
 </span>
-<span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--xs" aria-label="Wendy Wallace">WW
-    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit"></i>
+<span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--xs" aria-label="Wendy Wallace" role="img">WW
+    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="button"></i>
 </span>
-<span class="fd-avatar fd-avatar--accent-color-7 fd-avatar--s" aria-label="Wendy Wallace">WW
-    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit"></i>
+<span class="fd-avatar fd-avatar--accent-color-7 fd-avatar--s" aria-label="Wendy Wallace" role="img">WW
+    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="button"></i>
 </span>
-<span class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m" aria-label="Wendy Wallace">WW
-    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit"></i>
+<span class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m" aria-label="Wendy Wallace" role="img">WW
+    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="button"></i>
 </span>
-<span class="fd-avatar fd-avatar--accent-color-9 fd-avatar--l" aria-label="Wendy Wallace">WW
-    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit"></i>
+<span class="fd-avatar fd-avatar--accent-color-9 fd-avatar--l" aria-label="Wendy Wallace" role="img">WW
+    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="button"></i>
 </span>
-<span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xl" aria-label="Wendy Wallace">WW
-    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit"></i>
+<span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xl" aria-label="Wendy Wallace" role="img">WW
+    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="button"></i>
 </span>
 `;
 
@@ -304,30 +304,30 @@ zoomIcon.parameters = {
 
 
 export const borders = () => `
-<span class="fd-avatar fd-avatar--xs fd-avatar--transparent fd-avatar--border" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--xs fd-avatar--transparent fd-avatar--border" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--s fd-avatar--transparent fd-avatar--border" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--s fd-avatar--transparent fd-avatar--border" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--m fd-avatar--transparent fd-avatar--border" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--m fd-avatar--transparent fd-avatar--border" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--l fd-avatar--transparent fd-avatar--border" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--l fd-avatar--transparent fd-avatar--border" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border" aria-label="Avatar">
+<span class="fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace">WW
+<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace" role="img">WW
 </span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace">WW
+<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace" role="img">WW
 </span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace">WW
+<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace" role="img">WW
 </span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace">WW
+<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace" role="img">WW
 </span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace">WW
+<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace" role="img">WW
 </span>
 `;
 

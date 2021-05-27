@@ -7,6 +7,7 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--accent-color-1 fd-avatar--m"
+    role="img"
   >
     
     
@@ -22,6 +23,7 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--accent-color-2 fd-avatar--m"
+    role="img"
   >
     
     
@@ -37,6 +39,7 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--accent-color-3 fd-avatar--m"
+    role="img"
   >
     
     
@@ -52,6 +55,7 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--accent-color-4 fd-avatar--m"
+    role="img"
   >
     
     
@@ -67,6 +71,7 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--accent-color-5 fd-avatar--m"
+    role="img"
   >
     
     
@@ -82,6 +87,7 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--accent-color-6 fd-avatar--m"
+    role="img"
   >
     
     
@@ -97,6 +103,7 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--accent-color-7 fd-avatar--m"
+    role="img"
   >
     
     
@@ -112,6 +119,7 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m"
+    role="img"
   >
     
     
@@ -127,6 +135,7 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--accent-color-9 fd-avatar--m"
+    role="img"
   >
     
     
@@ -142,6 +151,7 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--accent-color-10 fd-avatar--m"
+    role="img"
   >
     
     
@@ -227,6 +237,7 @@ exports[`Storyshots Components/Avatar Borders 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--xs fd-avatar--transparent fd-avatar--border"
+    role="img"
   >
     
     
@@ -242,6 +253,7 @@ exports[`Storyshots Components/Avatar Borders 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--s fd-avatar--transparent fd-avatar--border"
+    role="img"
   >
     
     
@@ -257,6 +269,7 @@ exports[`Storyshots Components/Avatar Borders 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--m fd-avatar--transparent fd-avatar--border"
+    role="img"
   >
     
     
@@ -272,6 +285,7 @@ exports[`Storyshots Components/Avatar Borders 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--l fd-avatar--transparent fd-avatar--border"
+    role="img"
   >
     
     
@@ -287,6 +301,7 @@ exports[`Storyshots Components/Avatar Borders 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border"
+    role="img"
   >
     
     
@@ -302,6 +317,7 @@ exports[`Storyshots Components/Avatar Borders 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent fd-avatar--border"
+    role="img"
   >
     WW
 
@@ -311,6 +327,7 @@ exports[`Storyshots Components/Avatar Borders 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--transparent fd-avatar--border"
+    role="img"
   >
     WW
 
@@ -320,6 +337,7 @@ exports[`Storyshots Components/Avatar Borders 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent fd-avatar--border"
+    role="img"
   >
     WW
 
@@ -329,6 +347,7 @@ exports[`Storyshots Components/Avatar Borders 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--transparent fd-avatar--border"
+    role="img"
   >
     WW
 
@@ -338,6 +357,7 @@ exports[`Storyshots Components/Avatar Borders 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border"
+    role="img"
   >
     WW
 
@@ -354,6 +374,7 @@ exports[`Storyshots Components/Avatar Circle 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--xs fd-avatar--circle"
+    role="img"
   >
     
     
@@ -369,6 +390,7 @@ exports[`Storyshots Components/Avatar Circle 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--s fd-avatar--circle"
+    role="img"
   >
     
     
@@ -384,6 +406,7 @@ exports[`Storyshots Components/Avatar Circle 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--m fd-avatar--circle"
+    role="img"
   >
     
     
@@ -399,6 +422,7 @@ exports[`Storyshots Components/Avatar Circle 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--l fd-avatar--circle"
+    role="img"
   >
     
     
@@ -414,6 +438,7 @@ exports[`Storyshots Components/Avatar Circle 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--xl fd-avatar--circle"
+    role="img"
   >
     
     
@@ -429,6 +454,7 @@ exports[`Storyshots Components/Avatar Circle 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--xs fd-avatar--circle"
+    role="img"
   >
     WW
   </span>
@@ -437,6 +463,7 @@ exports[`Storyshots Components/Avatar Circle 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--s fd-avatar--circle"
+    role="img"
   >
     WW
   </span>
@@ -445,6 +472,7 @@ exports[`Storyshots Components/Avatar Circle 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--m fd-avatar--circle"
+    role="img"
   >
     WW
   </span>
@@ -453,6 +481,7 @@ exports[`Storyshots Components/Avatar Circle 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--l fd-avatar--circle"
+    role="img"
   >
     WW
   </span>
@@ -461,6 +490,7 @@ exports[`Storyshots Components/Avatar Circle 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--xl fd-avatar--circle"
+    role="img"
   >
     WW
   </span>
@@ -558,6 +588,7 @@ exports[`Storyshots Components/Avatar Initials 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--xs"
+    role="img"
   >
     WW
   </span>
@@ -566,6 +597,7 @@ exports[`Storyshots Components/Avatar Initials 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--s"
+    role="img"
   >
     WW
   </span>
@@ -574,6 +606,7 @@ exports[`Storyshots Components/Avatar Initials 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--m"
+    role="img"
   >
     WW
   </span>
@@ -582,6 +615,7 @@ exports[`Storyshots Components/Avatar Initials 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--l"
+    role="img"
   >
     WW
   </span>
@@ -590,6 +624,7 @@ exports[`Storyshots Components/Avatar Initials 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--xl"
+    role="img"
   >
     WW
   </span>
@@ -605,6 +640,7 @@ exports[`Storyshots Components/Avatar Placeholder Background 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--placeholder"
+    role="img"
   >
     
     
@@ -620,6 +656,7 @@ exports[`Storyshots Components/Avatar Placeholder Background 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--placeholder"
+    role="img"
   >
     
     
@@ -635,6 +672,7 @@ exports[`Storyshots Components/Avatar Placeholder Background 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--placeholder"
+    role="img"
   >
     
     
@@ -650,6 +688,7 @@ exports[`Storyshots Components/Avatar Placeholder Background 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--placeholder"
+    role="img"
   >
     
     
@@ -665,6 +704,7 @@ exports[`Storyshots Components/Avatar Placeholder Background 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder"
+    role="img"
   >
     
     
@@ -687,6 +727,7 @@ exports[`Storyshots Components/Avatar Tile Icon Background 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--tile"
+    role="img"
   >
     
     
@@ -702,6 +743,7 @@ exports[`Storyshots Components/Avatar Tile Icon Background 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--tile"
+    role="img"
   >
     
     
@@ -717,6 +759,7 @@ exports[`Storyshots Components/Avatar Tile Icon Background 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--tile"
+    role="img"
   >
     
     
@@ -732,6 +775,7 @@ exports[`Storyshots Components/Avatar Tile Icon Background 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--tile"
+    role="img"
   >
     
     
@@ -747,6 +791,7 @@ exports[`Storyshots Components/Avatar Tile Icon Background 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile"
+    role="img"
   >
     
     
@@ -769,6 +814,7 @@ exports[`Storyshots Components/Avatar Transparent 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent"
+    role="img"
   >
     
     
@@ -784,6 +830,7 @@ exports[`Storyshots Components/Avatar Transparent 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--transparent"
+    role="img"
   >
     
     
@@ -799,6 +846,7 @@ exports[`Storyshots Components/Avatar Transparent 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent"
+    role="img"
   >
     
     
@@ -814,6 +862,7 @@ exports[`Storyshots Components/Avatar Transparent 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--transparent"
+    role="img"
   >
     
     
@@ -829,6 +878,7 @@ exports[`Storyshots Components/Avatar Transparent 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent"
+    role="img"
   >
     
     
@@ -844,6 +894,7 @@ exports[`Storyshots Components/Avatar Transparent 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent"
+    role="img"
   >
     WW
   </span>
@@ -852,6 +903,7 @@ exports[`Storyshots Components/Avatar Transparent 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--transparent"
+    role="img"
   >
     WW
   </span>
@@ -860,6 +912,7 @@ exports[`Storyshots Components/Avatar Transparent 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent"
+    role="img"
   >
     WW
   </span>
@@ -868,6 +921,7 @@ exports[`Storyshots Components/Avatar Transparent 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--transparent"
+    role="img"
   >
     WW
   </span>
@@ -876,6 +930,7 @@ exports[`Storyshots Components/Avatar Transparent 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent"
+    role="img"
   >
     WW
   </span>
@@ -891,6 +946,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1"
+    role="img"
   >
     
     
@@ -903,6 +959,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
     <i
       aria-label="Edit"
       class="fd-avatar__zoom-icon sap-icon--edit"
+      role="button"
     />
     
 
@@ -912,6 +969,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-2"
+    role="img"
   >
     
     
@@ -924,6 +982,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
     <i
       aria-label="Edit"
       class="fd-avatar__zoom-icon sap-icon--edit"
+      role="button"
     />
     
 
@@ -933,6 +992,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--accent-color-3"
+    role="img"
   >
     
     
@@ -945,6 +1005,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
     <i
       aria-label="Edit"
       class="fd-avatar__zoom-icon sap-icon--edit"
+      role="button"
     />
     
 
@@ -954,6 +1015,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--accent-color-4"
+    role="img"
   >
     
     
@@ -966,6 +1028,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
     <i
       aria-label="Edit"
       class="fd-avatar__zoom-icon sap-icon--edit"
+      role="button"
     />
     
 
@@ -975,6 +1038,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5"
+    role="img"
   >
     
     
@@ -987,6 +1051,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
     <i
       aria-label="Edit"
       class="fd-avatar__zoom-icon sap-icon--edit"
+      role="button"
     />
     
 
@@ -996,12 +1061,14 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--accent-color-6 fd-avatar--xs"
+    role="img"
   >
     WW
     
     <i
       aria-label="Edit"
       class="fd-avatar__zoom-icon sap-icon--edit"
+      role="button"
     />
     
 
@@ -1011,12 +1078,14 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--accent-color-7 fd-avatar--s"
+    role="img"
   >
     WW
     
     <i
       aria-label="Edit"
       class="fd-avatar__zoom-icon sap-icon--edit"
+      role="button"
     />
     
 
@@ -1026,12 +1095,14 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m"
+    role="img"
   >
     WW
     
     <i
       aria-label="Edit"
       class="fd-avatar__zoom-icon sap-icon--edit"
+      role="button"
     />
     
 
@@ -1041,12 +1112,14 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--accent-color-9 fd-avatar--l"
+    role="img"
   >
     WW
     
     <i
       aria-label="Edit"
       class="fd-avatar__zoom-icon sap-icon--edit"
+      role="button"
     />
     
 
@@ -1056,12 +1129,14 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xl"
+    role="img"
   >
     WW
     
     <i
       aria-label="Edit"
       class="fd-avatar__zoom-icon sap-icon--edit"
+      role="button"
     />
     
 
