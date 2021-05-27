@@ -604,7 +604,7 @@ export const longText = () => `
     <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
     <div class="fd-list__content">
       <div class="fd-list__title">List Item Title</div>
-      <div class="fd-list__byline fd-list__byline--wrap">Very Long Byline (description), Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... <a href="#" class="fd-link fd-list__link--more" tabindex="0">More</a></div>
+      <div class="fd-list__byline fd-list__byline--wrap">Very Long Byline (description), Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... <a href="#" class="fd-link fd-list__link--more" tabindex="0">Show more</a></div>
     </div>
     <span class="fd-list__item-counter">12345</span>
 </li>
@@ -620,7 +620,7 @@ style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_no
   <div class="fd-list__content">
       <div class="fd-list__title fd-list__title--wrap">List item with 2-column byline and also a very long title, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
       <div class="fd-list__byline fd-list__byline--2-col">
-          <div class="fd-list__byline-left fd-list__byline-left--wrap">First text item in byline (standard text), Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<a href="#" class="fd-link fd-list__link--more" tabindex="0">Less</a></div>
+          <div class="fd-list__byline-left fd-list__byline-left--wrap">First text item in byline (standard text), Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="#" class="fd-link fd-list__link--more" tabindex="0">Show less</a></div>
           <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
       </div>
   </div>
@@ -644,6 +644,6 @@ longText.parameters = {
 - \`fd-list__title--wrap\`
 - \`fd-list__byline--wrap\`
     
-When more than 100 characters for small screens or 300 characters for medium to large screens are used, a clickable "MORE" link should be displayed to reveal the entire contents of the text.`
+When more than 100 characters for small screens or 300 characters for medium to large screens are used, a clickable "Show more" link should be displayed to reveal the entire contents of the text.`
     }
 };
