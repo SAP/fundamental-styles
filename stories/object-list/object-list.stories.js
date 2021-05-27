@@ -100,11 +100,10 @@ export const object = () => `
           </div>
           <div class="fd-object-list__row-right">
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--flag"
-               aria-label="icon for flag"></i>
+              <i class="fd-object-marker__icon sap-icon--flag" aria-label="icon for flag" role="img"></i>
             </div>
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite"></i>
+              <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite" role="img"></i>
             </div>
           </div>
         </div>
@@ -318,7 +317,7 @@ export const navigation = () => `
 <div role="navigation" style="max-width: 450px">
 <ul class="fd-list fd-object-list fd-list--navigation-object fd-list--navigation" role="list" aria-labelledby="objectListItemNavigation">
   <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item fd-list__item--link">
-  <a tabindex="0" class="fd-list__link" href="#">
+  <a class="fd-list__link">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
        Optional inline text very very very long
@@ -351,11 +350,10 @@ export const navigation = () => `
           </div>
           <div class="fd-object-list__row-right">
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--flag"
-               aria-label="icon for flag"></i>
+              <i class="fd-object-marker__icon sap-icon--flag" aria-label="icon for flag" role="img"></i>
             </div>
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite"></i>
+              <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite" role="img"></i>
             </div>
           </div>
         </div>
@@ -383,7 +381,7 @@ export const navigation = () => `
     </a>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item fd-list__item--link">
-  <a tabindex="0" class="fd-list__link" href="#">
+  <a class="fd-list__link">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
        Optional inline text very very very long
@@ -492,11 +490,10 @@ export const selection = () => `
           </div>
           <div class="fd-object-list__row-right">
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--flag"
-               aria-label="icon for flag"></i>
+              <i class="fd-object-marker__icon sap-icon--flag" aria-label="icon for flag" role="img"></i>
             </div>
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite"></i>
+              <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite" role="img"></i>
             </div>
           </div>
         </div>
@@ -600,7 +597,7 @@ export const selectionWithNavigation = () => `
 <div role="navigation" style="max-width: 450px">
 <ul class="fd-list fd-object-list fd-list--navigation-object fd-list--navigation fd-list--selection" role="listbox" aria-labelledby="objectListItemRowSelectionAndNavigation">
   <li role="option" aria-selected="true" tabindex="0" class="fd-list__item fd-object-list__item fd-list__item--link is-selected">
-  <a tabindex="0" class="fd-list__link"> 
+  <a class="fd-list__link">
   <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
        Optional inline text</span>
@@ -633,11 +630,10 @@ export const selectionWithNavigation = () => `
           </div>
           <div class="fd-object-list__row-right">
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--flag"
-               aria-label="icon for flag"></i>
+              <i class="fd-object-marker__icon sap-icon--flag" aria-label="icon for flag" role="img"></i>
             </div>
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite"></i>
+              <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite" role="img"></i>
             </div>
           </div>
         </div>
@@ -665,7 +661,7 @@ export const selectionWithNavigation = () => `
     </a>
   </li>
   <li role="option" aria-selected="false" tabindex="0" class="fd-list__item fd-object-list__item fd-list__item--link">
-  <a tabindex="0" class="fd-list__link">
+  <a class="fd-list__link">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
       Optional inline text</span>
@@ -776,11 +772,10 @@ export const borderless = () => `
           </div>
           <div class="fd-object-list__row-right">
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--flag"
-               aria-label="icon for flag"></i>
+              <i class="fd-object-marker__icon sap-icon--flag" aria-label="icon for flag" role="img"></i>
             </div>
             <div class="fd-object-marker">
-              <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite"></i>
+              <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite" role="img"></i>
             </div>
           </div>
         </div>

@@ -157,6 +157,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
                   <i
                     aria-label="icon for flag"
                     class="fd-object-marker__icon sap-icon--flag"
+                    role="img"
                   />
                   
             
@@ -171,6 +172,7 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
                   <i
                     aria-label="icon for favourite"
                     class="fd-object-marker__icon sap-icon--favorite"
+                    role="img"
                   />
                   
             
@@ -765,8 +767,6 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
   
         <a
           class="fd-list__link"
-          href="#"
-          tabindex="0"
         >
           
     
@@ -897,6 +897,7 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
                     <i
                       aria-label="icon for flag"
                       class="fd-object-marker__icon sap-icon--flag"
+                      role="img"
                     />
                     
             
@@ -911,6 +912,7 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
                     <i
                       aria-label="icon for favourite"
                       class="fd-object-marker__icon sap-icon--favorite"
+                      role="img"
                     />
                     
             
@@ -1017,8 +1019,6 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
   
         <a
           class="fd-list__link"
-          href="#"
-          tabindex="0"
         >
           
     
@@ -1411,6 +1411,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
                   <i
                     aria-label="icon for flag"
                     class="fd-object-marker__icon sap-icon--flag"
+                    role="img"
                   />
                   
             
@@ -1425,6 +1426,7 @@ exports[`Storyshots Components/Object List Selection 1`] = `
                   <i
                     aria-label="icon for favourite"
                     class="fd-object-marker__icon sap-icon--favorite"
+                    role="img"
                   />
                   
             
@@ -1798,9 +1800,8 @@ exports[`Storyshots Components/Object List Selection With Navigation 1`] = `
   
         <a
           class="fd-list__link"
-          tabindex="0"
         >
-           
+          
   
           <div
             class="fd-object-list__container"
@@ -1929,6 +1930,7 @@ exports[`Storyshots Components/Object List Selection With Navigation 1`] = `
                     <i
                       aria-label="icon for flag"
                       class="fd-object-marker__icon sap-icon--flag"
+                      role="img"
                     />
                     
             
@@ -1943,6 +1945,7 @@ exports[`Storyshots Components/Object List Selection With Navigation 1`] = `
                     <i
                       aria-label="icon for favourite"
                       class="fd-object-marker__icon sap-icon--favorite"
+                      role="img"
                     />
                     
             
@@ -2050,7 +2053,6 @@ exports[`Storyshots Components/Object List Selection With Navigation 1`] = `
   
         <a
           class="fd-list__link"
-          tabindex="0"
         >
           
     
@@ -2446,6 +2448,7 @@ exports[`Storyshots Components/Object List Standard 1`] = `
                 <i
                   aria-label="icon for flag"
                   class="fd-object-marker__icon sap-icon--flag"
+                  role="img"
                 />
                 
             
@@ -2460,6 +2463,7 @@ exports[`Storyshots Components/Object List Standard 1`] = `
                 <i
                   aria-label="icon for favourite"
                   class="fd-object-marker__icon sap-icon--favorite"
+                  role="img"
                 />
                 
             
