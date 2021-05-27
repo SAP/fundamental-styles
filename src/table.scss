@@ -58,17 +58,6 @@ $block: #{$fd-namespace}-table;
     margin: 0;
   }
 
-  @mixin fd-table-fixed-last-cell-border() {
-    &.#{$block}__cell--fixed-last {
-      border-right: $fd-table-fixed-cell-border;
-
-      @include fd-rtl() {
-        border-right: $fd-table-border;
-        border-left: $fd-table-fixed-cell-border;
-      }
-    }
-  }
-
   // LOCAL VARS
   $fd-table-cell-padding: 0.5rem;
   $fd-table-first-cell-padding: 1rem;
@@ -120,6 +109,18 @@ $block: #{$fd-namespace}-table;
     }
   }
 
+  &__header,
+  &__body {
+    .#{$block}__cell--fixed-last {
+      border-right: $fd-table-fixed-cell-border;
+
+      @include fd-rtl() {
+        border-right: $fd-table-border;
+        border-left: $fd-table-fixed-cell-border;
+      }
+    }
+  }
+
   &__header {
     border-top: $fd-table-border;
     border-left: $fd-table-border;
@@ -139,8 +140,6 @@ $block: #{$fd-namespace}-table;
         border-top: $fd-table-border;
         border-left: $fd-table-border;
         height: $fd-table-cozy-cell-height + $fd-table-fixed-cell-shift;
-
-        @include fd-table-fixed-last-cell-border();
       }
     }
   }
@@ -240,8 +239,6 @@ $block: #{$fd-namespace}-table;
         left: auto;
         right: 0;
       }
-
-      @include fd-table-fixed-last-cell-border();
     }
 
     @include fd-first-child() {
