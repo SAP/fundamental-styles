@@ -58,6 +58,17 @@ $block: #{$fd-namespace}-table;
     margin: 0;
   }
 
+  @mixin fd-table-fixed-last-cell-border() {
+    &.#{$block}__cell--fixed-last {
+      border-right: $fd-table-fixed-cell-border;
+
+      @include fd-rtl() {
+        border-right: $fd-table-border;
+        border-left: $fd-table-fixed-cell-border;
+      }
+    }
+  }
+
   // LOCAL VARS
   $fd-table-cell-padding: 0.5rem;
   $fd-table-first-cell-padding: 1rem;
@@ -129,14 +140,7 @@ $block: #{$fd-namespace}-table;
         border-left: $fd-table-border;
         height: $fd-table-cozy-cell-height + $fd-table-fixed-cell-shift;
 
-        &-last {
-          border-right: $fd-table-fixed-cell-border;
-
-          @include fd-rtl() {
-            border-left: $fd-table-fixed-cell-border;
-            border-right: $fd-table-border;
-          }
-        }
+        @include fd-table-fixed-last-cell-border();
       }
     }
   }
@@ -232,19 +236,12 @@ $block: #{$fd-namespace}-table;
         background-color: var(--sapList_Hover_Background);
       }
 
-      &-last {
-        border-right: $fd-table-fixed-cell-border;
-
-        @include fd-rtl() {
-          border-right: $fd-table-border;
-          border-left: $fd-table-fixed-cell-border;
-        }
-      }
-
       @include fd-rtl() {
         left: auto;
         right: 0;
       }
+
+      @include fd-table-fixed-last-cell-border();
     }
 
     @include fd-first-child() {
