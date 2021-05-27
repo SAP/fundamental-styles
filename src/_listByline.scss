@@ -37,7 +37,7 @@
       border-radius: $fd-list-byline-thumbnail-border-radius;
       margin-right: $fd-list-byline-thumbnail-spacing;
       font-size: 2.5rem;
-      align-self: center;
+      align-self: flex-start;
       color: var(--sapContent_NonInteractiveIconColor);
 
       @include fd-rtl() {
