@@ -11,7 +11,6 @@ const componentsToExclude = [
     'avatar',
     'object-list',
     'object-status',
-    'tabs',
     'facets',
     'counter',
     'busy-indicator',
