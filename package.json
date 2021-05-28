@@ -33,7 +33,7 @@
     "storybook:chromatic": "rimraf storybook-chromatic && npm run storybook:prep && STORYBOOK_ENV=chromatic build-storybook -c .storybook -o storybook-chromatic -s .storybook/static/,node_modules/@sap-theming,dist/",
     "storybook:visual:setup": "jest --no-cache --config=./config/jest.config.js",
     "chromatic": "npx storybook:chromatic",
-    "prepare": "husky install"
+    "prepare": "node husky install"
   },
   "repository": {
     "type": "git",
