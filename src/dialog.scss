@@ -43,11 +43,11 @@ $button: #{$fd-namespace}-button;
   $fd-dialog-footer-button-min-width: 4rem;
 
   @include fd-reset();
+  @include map-get($fd-z-index-levels, "dialog");
 
   @extend %dialog;
 
   display: none;
-  z-index: 999;
 
   &--active {
     display: flex;
@@ -165,7 +165,8 @@ $button: #{$fd-namespace}-button;
     font-size: 1rem;
     cursor: se-resize;
     overflow: hidden;
-    z-index: 1001;
+
+    @include map-get($fd-z-index-levels, "top");
 
     @include fd-rtl() {
       right: unset;
