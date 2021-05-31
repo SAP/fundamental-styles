@@ -152,7 +152,6 @@ exports[`Storyshots Components/Counter Tabs 1`] = `
         
     <a
       class="fd-tabs__link"
-      href="#AvcVC566"
     >
       Link
         
@@ -177,7 +176,6 @@ exports[`Storyshots Components/Counter Tabs 1`] = `
         
     <a
       class="fd-tabs__link"
-      href="#5mxO9110"
     >
       
             
@@ -202,7 +200,6 @@ exports[`Storyshots Components/Counter Tabs 1`] = `
         
     <a
       class="fd-tabs__link"
-      href="#r0pk3445"
     >
       Link
     </a>

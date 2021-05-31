@@ -13,7 +13,6 @@ const componentsToExclude = [
     'object-status',
     'tabs',
     'facets',
-    'counter',
     'busy-indicator',
     'object-marker',
     'multi-input',
