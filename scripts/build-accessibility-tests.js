@@ -12,7 +12,6 @@ const componentsToExclude = [
     'object-list',
     'object-status',
     'tabs',
-    'facets',
     'counter',
     'busy-indicator',
     'object-marker',

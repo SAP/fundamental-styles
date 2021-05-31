@@ -15,6 +15,7 @@ exports[`Storyshots Dev/Facets Combination of facets 1`] = `
     <span
       aria-label="Avatar"
       class="fd-avatar fd-avatar--l"
+      role="img"
     >
       
                 
@@ -885,6 +886,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
             <span
               aria-label="Avatar"
               class="fd-avatar fd-avatar--l"
+              role="img"
             >
               
                                 
@@ -1417,7 +1419,6 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
           <a
             aria-controls="fuCwV557"
             class="fd-tabs__link"
-            href="#fuCwV557"
           >
             
                             
@@ -1446,7 +1447,6 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
           <a
             aria-controls="AiWfz155"
             class="fd-tabs__link"
-            href="#AiWfz155"
           >
             
                             
@@ -2090,6 +2090,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
               <span
                 aria-label="Avatar"
                 class="fd-avatar fd-avatar--l"
+                role="img"
               >
                 
                                     
@@ -2288,7 +2289,6 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                             
             <a
               class="fd-tabs__link"
-              href="#fuCwV559"
             >
               
                                 
@@ -2317,7 +2317,6 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
             <a
               aria-controls="AiWfz161"
               class="fd-tabs__link"
-              href="#AiWfz161"
             >
               
                                 
@@ -2700,6 +2699,7 @@ exports[`Storyshots Dev/Facets Image/Avatar Facet 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--l"
+    role="img"
   >
     
             

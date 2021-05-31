@@ -11,7 +11,7 @@ export default {
 export const combined = () =>
     `<div class="fd-facet-group" role="group">
         <div class="fd-facet fd-facet--image fd-margin-end--md">
-            <span class="fd-avatar fd-avatar--l" aria-label="Avatar">
+            <span class="fd-avatar fd-avatar--l" aria-label="Avatar" role="img">
                 <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
             </span>
         </div>
@@ -230,7 +230,7 @@ ratingIndicator.parameters = {
 
 export const imageFacet = () =>
     `<div class="fd-facet fd-facet--image fd-margin-end--md">
-        <span class="fd-avatar fd-avatar--l" aria-label="Avatar">
+        <span class="fd-avatar fd-avatar--l" aria-label="Avatar" role="img">
             <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
         </span>
     </div>
@@ -328,7 +328,7 @@ export const objectPage = () =>
                 <div class="fd-dynamic-page__collapsible-header" role="region" id="fddplhvx6" aria-hidden="false" aria-label="Dynamic Page Desktop Header" >
                     <div class="fd-facet-group">
                         <div class="fd-facet fd-facet--image fd-margin-end--md">
-                            <span class="fd-avatar fd-avatar--l" aria-label="Avatar">
+                            <span class="fd-avatar fd-avatar--l" aria-label="Avatar" role="img">
                                 <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
                             </span>
                         </div>
@@ -452,14 +452,14 @@ export const objectPage = () =>
             <div class="fd-dynamic-page__tabs--overflow">
                 <ul class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--add-shadow" role="tablist">
                     <li role="tab" class="fd-tabs__item">
-                        <a class="fd-tabs__link" aria-controls="fuCwV557" href="#fuCwV557">
+                        <a class="fd-tabs__link" aria-controls="fuCwV557">
                             <span class="fd-tabs__tag">
                                 Link
                             </span>
                         </a>
                     </li>
                     <li role="tab" class="fd-tabs__item" aria-selected="true">
-                        <a class="fd-tabs__link" aria-controls="AiWfz155" href="#AiWfz155">
+                        <a class="fd-tabs__link" aria-controls="AiWfz155">
                             <span class="fd-tabs__tag">
                                 Selected
                             </span>
@@ -657,7 +657,7 @@ export const objectPageMobile = () =>
                     <div class="fd-dynamic-page__collapsible-header" role="region" id="fddplhvc7" aria-hidden="false" aria-label="Dynamic Page Mobile Header">
                         <div class="fd-facet-group">
                             <div class="fd-facet fd-facet--image fd-margin-end--sm fd-margin-bottom--tiny">
-                                <span class="fd-avatar fd-avatar--l" aria-label="Avatar">
+                                <span class="fd-avatar fd-avatar--l" aria-label="Avatar" role="img">
                                     <i class="fd-avatar__icon sap-icon--camera" role="presentation"></i>
                                 </span>
                             </div>
@@ -722,14 +722,14 @@ export const objectPageMobile = () =>
                 <div class="fd-dynamic-page__tabs--overflow">
                     <ul class="fd-tabs fd-dynamic-page__tabs fd-dynamic-page__tabs--add-shadow" role="tablist">
                         <li class="fd-tabs__item" aria-controls="fuCwV559" role="tab">
-                            <a class="fd-tabs__link" href="#fuCwV559">
+                            <a class="fd-tabs__link">
                                 <span class="fd-tabs__tag">
                                     Link
                                 </span>
                             </a>
                         </li>
                         <li class="fd-tabs__item" aria-selected="true" role="tab">
-                            <a class="fd-tabs__link" aria-controls="AiWfz161" href="#AiWfz161">
+                            <a class="fd-tabs__link" aria-controls="AiWfz161">
                                 <span class="fd-tabs__tag">
                                     Selected
                                 </span>
