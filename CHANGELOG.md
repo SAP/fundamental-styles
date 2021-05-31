@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.18.1-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.12...v0.18.1-rc.13) (2021-05-28)
+
+
+### Bug Fixes
+
+* add focued state for buttons in input-groups ([#2383](https://github.com/SAP/fundamental-styles/issues/2383)) ([781dc07](https://github.com/SAP/fundamental-styles/commit/781dc072461f279f320628f218c5bfea7582ab8c))
+
 ### [0.18.1-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.11...v0.18.1-rc.12) (2021-05-27)
 
 

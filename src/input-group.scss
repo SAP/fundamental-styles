@@ -1,5 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
+@import "./mixins/button/button-helper";
 
 /*!
 .fd-input-group+(--inline, --control)
@@ -207,7 +208,9 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     position: static !important;
 
     @include fd-focus() {
-      outline: 0 !important;
+      @include buttonFocus() {
+        outline-color: var(--sapField_Hover_BorderColor);
+      }
     }
 
     &::before {
