@@ -10,6 +10,7 @@ exports[`Storyshots Components/Busy Indicator Contrast Mode 1`] = `
     aria-hidden="false"
     aria-label="Loading"
     class="fd-busy-indicator--l contrast"
+    role="img"
   >
     
     
@@ -44,6 +45,7 @@ exports[`Storyshots Components/Busy Indicator Extended Busy Indicator 1`] = `
     aria-hidden="false"
     aria-label="Loading"
     class="fd-busy-indicator fd-busy-indicator--l"
+    role="img"
   >
     
         
@@ -85,6 +87,7 @@ exports[`Storyshots Components/Busy Indicator Extended Busy Indicator Inside Mes
     aria-hidden="false"
     aria-label="Loading"
     class="fd-busy-indicator fd-busy-indicator--l"
+    role="img"
   >
     
         
@@ -126,6 +129,7 @@ exports[`Storyshots Components/Busy Indicator Standard 1`] = `
     aria-hidden="false"
     aria-label="Loading"
     class="fd-busy-indicator--l"
+    role="img"
   >
     
         
@@ -153,6 +157,7 @@ exports[`Storyshots Components/Busy Indicator Standard 1`] = `
     aria-hidden="false"
     aria-label="Loading"
     class="fd-busy-indicator--m"
+    role="img"
   >
     
         
@@ -180,6 +185,7 @@ exports[`Storyshots Components/Busy Indicator Standard 1`] = `
     aria-hidden="false"
     aria-label="Loading"
     class="fd-busy-indicator"
+    role="img"
   >
     
         
