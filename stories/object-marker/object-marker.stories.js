@@ -15,19 +15,19 @@ The technical status can be represented as an icon, with an icon and text, or as
 
 export const iconOnly = () => `
 <div class="fd-object-marker">
-    <i class="fd-object-marker__icon sap-icon--request" aria-label="icon for request"></i>
+    <i class="fd-object-marker__icon sap-icon--request" aria-label="icon for request" role="img"></i>
 </div>
 <div class="fd-object-marker">
-    <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite"></i>
+    <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite" role="img"></i>
 </div>
 <div class="fd-object-marker">
-    <i class="fd-object-marker__icon sap-icon--flag" aria-label="icon for flag"></i>
+    <i class="fd-object-marker__icon sap-icon--flag" aria-label="icon for flag" role="img"></i>
 </div>
 <div class="fd-object-marker">
-    <i class="fd-object-marker__icon sap-icon--user-edit" aria-label="icon for user edit"></i>
+    <i class="fd-object-marker__icon sap-icon--user-edit" aria-label="icon for user edit" role="img"></i>
 </div>
 <div class="fd-object-marker">
-    <i class="fd-object-marker__icon sap-icon--private" aria-label="icon for private"></i>
+    <i class="fd-object-marker__icon sap-icon--private" aria-label="icon for private" role="img"></i>
 </div>
 `;
 

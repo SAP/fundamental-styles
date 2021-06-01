@@ -15,7 +15,6 @@ const componentsToExclude = [
     'facets',
     'counter',
     'busy-indicator',
-    'object-marker',
     'multi-input',
     'token',
     'notification',
