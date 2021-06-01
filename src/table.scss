@@ -314,6 +314,10 @@ $block: #{$fd-namespace}-table;
         }
       }
 
+      &--unnavigatable {
+        pointer-events: none;
+      }
+
       @include fd-first-child() {
         .#{$block}__cell {
           &--fixed {
