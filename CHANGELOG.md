@@ -1,3 +1,12 @@
+## [0.18.1-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.15...v0.18.1-rc.16) (2021-06-01)
+
+
+### Features
+
+* Icons - add status enumeration ([#2289](https://github.com/SAP/fundamental-styles/issues/2289)) ([5d43703](https://github.com/SAP/fundamental-styles/commit/5d437034d2020eb828427b7e40e36de9349fd6bd))
+
+
+
 ## [0.18.1-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.14...v0.18.1-rc.15) (2021-06-01)
 
 
