@@ -8,7 +8,7 @@ export default {
 ##Usage
 **Use the icon if:**
 
-- You want to display an icon for illustrative purposes only, without interaction states, acting as a non-interactive icon/pictogram. 
+- You want to display an icon for illustrative purposes only, without interaction states, acting as a non-interactive icon/pictogram.
 - You intend to pair the icon with another method of communication i.e. with text or a tooltip.
 
 
@@ -34,6 +34,35 @@ sizes.parameters = {
         storyDescription: 'Icons don’t have predefined sizes because they align with the font size value. They are vector graphics, meaning they can be easily resized without compromising their appearance. And because icons are essentially a font, there are unlimited sizes.'
     }
 };
+
+/**
+ * There are different semantic statuses that can be applied to the icon by adding a modifier class.
+ *
+ * | **Status**      | **Modifier class**               |
+ * | --------------: | :------------------------------- |
+ * | Default         | ` sap-icon-TNT--color-default`        |
+ * | Contrast        | ` sap-icon-TNT--color-contrast`       |
+ * | Non-interactive | ` sap-icon-TNT--color-non-interactive`|
+ * | Tile            | ` sap-icon-TNT--color-tile`           |
+ * | Marker          | ` sap-icon-TNT--color-marker`         |
+ * | Critical        | ` sap-icon-TNT--color-critical`       |
+ * | Negative        | ` sap-icon-TNT--color-negative`       |
+ * | Neutral         | ` sap-icon-TNT--color-neutral`        |
+ * | Positive        | ` sap-icon-TNT--color-positive`       |
+ */
+
+export const colors = () => `
+ <span class="sap-icon-TNT sap-icon-TNT--exceptions" style="font-size:5rem"></span>
+ <span class="sap-icon-TNT sap-icon-TNT--exceptions sap-icon-TNT--color-default" style="font-size:5rem"></span>
+ <span class="sap-icon-TNT sap-icon-TNT--exceptions sap-icon-TNT--color-contrast sap-icon-TNT--background-contrast" style="font-size:5rem"></span>
+ <span class="sap-icon-TNT sap-icon-TNT--exceptions sap-icon-TNT--color-non-interactive" style="font-size:5rem"></span>
+ <span class="sap-icon-TNT sap-icon-TNT--exceptions sap-icon-TNT--color-tile" style="font-size:5rem"></span>
+ <span class="sap-icon-TNT sap-icon-TNT--exceptions sap-icon-TNT--color-marker" style="font-size:5rem"></span>
+ <span class="sap-icon-TNT sap-icon-TNT--exceptions sap-icon-TNT--color-critical" style="font-size:5rem"></span>
+ <span class="sap-icon-TNT sap-icon-TNT--exceptions sap-icon-TNT--color-negative" style="font-size:5rem"></span>
+ <span class="sap-icon-TNT sap-icon-TNT--exceptions sap-icon-TNT--color-neutral" style="font-size:5rem"></span>
+ <span class="sap-icon-TNT sap-icon-TNT--exceptions sap-icon-TNT--color-positive" style="font-size:5rem"></span>
+ `;
 
 export const tntIcons = () => {
     const div = document.createElement('div');

@@ -96,3 +96,20 @@
     @warn "Unknown `#{$glyph}` in $fd-tnt-icons map";
   }
 }
+
+// Icon Control Enumerations
+
+@mixin fd-icon-control-enumeration($block, $position: 'before') {
+  @each $enumeration-name, $enumeration-value in $fd-icon-control-enumerations {
+    &.#{$block} {
+      &--color-#{$enumeration-name} {
+        color: map_get($enumeration-value, "color");
+      }
+      &--background-#{$enumeration-name} {
+        &::#{$position} {
+          background-color: map_get($enumeration-value, "background-color");
+        }
+      }
+    }
+  }
+}
