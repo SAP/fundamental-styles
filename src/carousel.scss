@@ -22,7 +22,7 @@ $button: #{$fd-namespace}-button;
   @include fd-flex(column);
 
   @include fd-focus() {
-    outline: 1px dotted;
+    outline: 0.0625rem dotted;
   }
 
   width: 100%;
