@@ -8,7 +8,7 @@ export default {
 ##Usage
 **Use the icon if:**
 
-- You want to display an icon for illustrative purposes only, without interaction states, acting as a non-interactive icon/pictogram. 
+- You want to display an icon for illustrative purposes only, without interaction states, acting as a non-interactive icon/pictogram.
 - You intend to pair the icon with another method of communication i.e. with text or a tooltip.
 
 
@@ -35,6 +35,34 @@ sizes.parameters = {
     }
 };
 
+/**
+ * There are different semantic statuses that can be applied to the icon by adding a modifier class.
+ *
+ * | **Status**      | **Modifier class**               |
+ * | --------------: | :------------------------------- |
+ * | Default         | ` sap-icon-businessSuiteInAppSymbols--color-default`        |
+ * | Contrast        | ` sap-icon-businessSuiteInAppSymbols--color-contrast`       |
+ * | Non-interactive | ` sap-icon-businessSuiteInAppSymbols--color-non-interactive`|
+ * | Tile            | ` sap-icon-businessSuiteInAppSymbols--color-tile`           |
+ * | Marker          | ` sap-icon-businessSuiteInAppSymbols--color-marker`         |
+ * | Critical        | ` sap-icon-businessSuiteInAppSymbols--color-critical`       |
+ * | Negative        | ` sap-icon-businessSuiteInAppSymbols--color-negative`       |
+ * | Neutral         | ` sap-icon-businessSuiteInAppSymbols--color-neutral`        |
+ * | Positive        | ` sap-icon-businessSuiteInAppSymbols--color-positive`       |
+ */
+
+export const colors = () => `
+ <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart" style="font-size:5rem"></span>
+ <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart sap-icon-businessSuiteInAppSymbols--color-default" style="font-size:5rem"></span>
+ <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart sap-icon-businessSuiteInAppSymbols--color-contrast sap-icon-businessSuiteInAppSymbols--background-contrast" style="font-size:5rem"></span>
+ <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart sap-icon-businessSuiteInAppSymbols--color-non-interactive" style="font-size:5rem"></span>
+ <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart sap-icon-businessSuiteInAppSymbols--color-tile" style="font-size:5rem"></span>
+ <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart sap-icon-businessSuiteInAppSymbols--color-marker" style="font-size:5rem"></span>
+ <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart sap-icon-businessSuiteInAppSymbols--color-critical" style="font-size:5rem"></span>
+ <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart sap-icon-businessSuiteInAppSymbols--color-negative" style="font-size:5rem"></span>
+ <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart sap-icon-businessSuiteInAppSymbols--color-neutral" style="font-size:5rem"></span>
+ <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart sap-icon-businessSuiteInAppSymbols--color-positive" style="font-size:5rem"></span>
+ `;
 
 export const businessSuiteIcons = () => {
     const div = document.createElement('div');

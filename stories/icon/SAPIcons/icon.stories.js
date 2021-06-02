@@ -8,7 +8,7 @@ export default {
 ##Usage
 **Use the icon if:**
 
-- You want to display an icon for illustrative purposes only, without interaction states, acting as a non-interactive icon/pictogram. 
+- You want to display an icon for illustrative purposes only, without interaction states, acting as a non-interactive icon/pictogram.
 - You intend to pair the icon with another method of communication i.e. with text or a tooltip.
 
 
@@ -34,6 +34,35 @@ sizes.parameters = {
         storyDescription: 'Icons don’t have predefined sizes because they align with the font size value. They are vector graphics, meaning they can be easily resized without compromising their appearance. And because icons are essentially a font, there are unlimited sizes.'
     }
 };
+
+/**
+ * There are different semantic statuses that can be applied to the icon by adding a modifier class.
+ *
+ * | **Status**      | **Modifier class**               |
+ * | --------------: | :------------------------------- |
+ * | Default         | `sap-icon--color-default`        |
+ * | Contrast        | `sap-icon--color-contrast`       |
+ * | Non-interactive | `sap-icon--color-non-interactive`|
+ * | Tile            | `sap-icon--color-tile`           |
+ * | Marker          | `sap-icon--color-marker`         |
+ * | Critical        | `sap-icon--color-critical`       |
+ * | Negative        | `sap-icon--color-negative`       |
+ * | Neutral         | `sap-icon--color-neutral`        |
+ * | Positive        | `sap-icon--color-positive`       |
+ */
+
+export const colors = () => `
+<span class="sap-icon sap-icon--cart" style="font-size:5rem"></span>
+<span class="sap-icon sap-icon--cart sap-icon--color-default" style="font-size:5rem"></span>
+<span class="sap-icon sap-icon--cart sap-icon--color-contrast sap-icon--background-contrast" style="font-size:5rem"></span>
+<span class="sap-icon sap-icon--cart sap-icon--color-non-interactive" style="font-size:5rem"></span>
+<span class="sap-icon sap-icon--cart sap-icon--color-tile" style="font-size:5rem"></span>
+<span class="sap-icon sap-icon--cart sap-icon--color-marker" style="font-size:5rem"></span>
+<span class="sap-icon sap-icon--cart sap-icon--color-critical" style="font-size:5rem"></span>
+<span class="sap-icon sap-icon--cart sap-icon--color-negative" style="font-size:5rem"></span>
+<span class="sap-icon sap-icon--cart sap-icon--color-neutral" style="font-size:5rem"></span>
+<span class="sap-icon sap-icon--cart sap-icon--color-positive" style="font-size:5rem"></span>
+`;
 
 export const availableIcons = () => {
     const div = document.createElement('div');
