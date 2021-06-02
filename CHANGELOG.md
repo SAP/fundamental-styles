@@ -1,3 +1,12 @@
+## [0.18.1-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.16...v0.18.1-rc.17) (2021-06-02)
+
+
+### Bug Fixes
+
+* table fixed (freeze) column border fix ([#2384](https://github.com/SAP/fundamental-styles/issues/2384)) ([aaa1046](https://github.com/SAP/fundamental-styles/commit/aaa10465f795e5eca4caa77e0e1b03c2013f46ae))
+
+
+
 ## [0.18.1-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.15...v0.18.1-rc.16) (2021-06-01)
 
 
