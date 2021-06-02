@@ -1,6 +1,6 @@
 {
   "name": "fundamental-styles",
-  "version": "0.18.1-rc.15",
+  "version": "0.18.1-rc.18",
   "description": "Fundamental Library Styles is a Design System and HTML/CSS Component Library used to build modern Product User Experiences with Fiori 3 look and feel with any web technology. Learn more about this project at - http://sap.github.io/fundamental-styles/",
   "main": "dist/fundamental-styles.css",
   "scripts": {
@@ -33,9 +33,9 @@
     "storybook:visual:setup": "jest --no-cache --config=./config/jest.config.js",
     "chromatic": "npx storybook:chromatic",
     "prepare": "husky install",
-    "version": "run-s changelog git-add",
+    "version": "npm run changelog && npm run git-add",
     "version.rc": "npm version prerelease --preid=rc -m \"chore(release): version %s build ${TRAVIS_BUILD_NUMBER} [ci skip]\"",
-    "version.release": "npm version -m \"chore(release): version %s build ${TRAVIS_BUILD_NUMBER} [ci skip]\"",
+    "version.patch": "npm version patch -m \"chore(release): version %s build ${TRAVIS_BUILD_NUMBER} [ci skip]\"",
     "git-add": "git add -A",
     "changelog": "conventional-changelog -i ./CHANGELOG.md -s -p angular"
   },

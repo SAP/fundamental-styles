@@ -1448,6 +1448,7 @@ export const fixColumnHeader = () => `
         .fd-table--fixed {
            padding-left: 200px;
         }
+
         [dir=rtl] .fd-table--fixed,
         .fd-table--fixed[dir=rtl] {
            padding-left: 0;
@@ -1464,7 +1465,7 @@ export const fixColumnHeader = () => `
       <table class="fd-table">
          <thead class="fd-table__header">
             <tr class="fd-table__row">
-               <th class="fd-table__cell fd-table__cell--fixed"  aria-haspopup="true" scope="col">
+               <th class="fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last"  aria-haspopup="true" scope="col">
                 Header Column
                </th>
                <th class="fd-table__cell" scope="col">
@@ -1492,7 +1493,7 @@ export const fixColumnHeader = () => `
          </thead>
          <tbody class="fd-table__body">
             <tr class="fd-table__row">
-               <th class="fd-table__cell fd-table__cell--fixed" scope="row">Row header</th>
+               <th class="fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last" scope="row">Row header</th>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
@@ -1502,7 +1503,7 @@ export const fixColumnHeader = () => `
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
             </tr>
             <tr class="fd-table__row">
-               <th class="fd-table__cell fd-table__cell--fixed" scope="row">Row header</th>
+               <th class="fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last" scope="row">Row header</th>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
@@ -1512,7 +1513,7 @@ export const fixColumnHeader = () => `
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
             </tr>
             <tr class="fd-table__row">
-               <th class="fd-table__cell fd-table__cell--fixed" scope="row">Row header</th>
+               <th class="fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last" scope="row">Row header</th>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
@@ -1531,9 +1532,11 @@ fixColumnHeader.storyName = 'Fixed header';
 fixColumnHeader.parameters = {
     docs: {
         storyDescription: `
-Table can display columns with a fixed header. To display fixed headers, wrap the table with the \`fd-table--fixed\` modifier class. In addition, add the \`fd-table__cell--fixed\` modifier class to each cell element, it should be propagated to the entire row. 
-        
-        
+Table can display columns with a fixed header.
+To display fixed headers, wrap the table with the \`fd-table--fixed\` modifier class.
+In addition, add the \`fd-table__cell--fixed\` modifier class to each cell element, it should be propagated to the entire row. 
+Then apply \`.fd-table__cell--fixed-last\` to every last fixed cell in every column to have special border after the fixed columns.
+
 It’s important to hardcode the width of the columns, otherwise the cells will be squished.
     `
     }
