@@ -105,4 +105,12 @@ $block: #{$fd-namespace}-form-label;
     justify-content: space-between;
     align-items: center;
   }
+
+  &--horizontal {
+    line-height: 2.8rem;
+  }
+
+  &--compact {
+    line-height: 2rem;
+  }
 }

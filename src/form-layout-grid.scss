@@ -195,14 +195,6 @@ $cols: 11;
       .#{$blockCol} {
         .fd-form-label {
           padding-bottom: 0;
-
-          &--horizontal {
-            line-height: 2.8rem;
-          }
-
-          &--compact {
-            line-height: 2rem;
-          }
         }
 
         @for $n from 0 through $cols {
