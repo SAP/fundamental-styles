@@ -632,7 +632,7 @@ scroll.storyName = 'Infinite scroll';
 
 scroll.parameters = {
     docs: {
-        iframeHeight: 370,
+        iframeHeight: 380,
         storyDescription: `If height for list is fixed and there are more list otem to show, then we should be able to scroll to next list items.
 `
     }
