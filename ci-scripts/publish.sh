@@ -8,7 +8,7 @@ git config --global user.name "fundamental-bot"
 # delete temp branch
 git push "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" ":$TRAVIS_BRANCH" > /dev/null 2>&1;
 
-std_ver=$(npm run version.release)
+std_ver=$(npm run version.patch)
 release_tag=$(echo "$std_ver" | grep "tagging release" | awk '{print $4}')
 
 if  [[ $release_tag == v* ]]; then
