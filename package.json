@@ -87,7 +87,7 @@
     "github-assistant": "^0.3.3",
     "husky": "6.0.0",
     "jest": "^26.4.2",
-    "jest-axe": "^4.1.0",
+    "jest-axe": "^5.0.1",
     "line-reader": "^0.4.0",
     "markdown-to-jsx": "^7.1.2",
     "mkdirp": "^1.0.4",
