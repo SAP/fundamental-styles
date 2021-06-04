@@ -1,3 +1,28 @@
+## [0.18.1-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.22...v0.18.1-rc.23) (2021-06-04)
+
+
+### Features
+
+* added ability to hide scroll and padding from Avatar Group overflow body([#2406](https://github.com/SAP/fundamental-styles/issues/2406))  ([412ba11](https://github.com/SAP/fundamental-styles/commit/412ba11e888594756714b1435a88c3c78b67d656))
+
+
+
+## [0.18.1-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.21...v0.18.1-rc.22) (2021-06-04)
+
+
+
+## [0.18.1-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.20...v0.18.1-rc.21) (2021-06-04)
+
+
+
+## [0.18.1-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.19...v0.18.1-rc.20) (2021-06-03)
+
+
+
+## [0.18.1-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.18...v0.18.1-rc.19) (2021-06-03)
+
+
+
 ## [0.18.1-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.17...v0.18.1-rc.18) (2021-06-02)
 
 

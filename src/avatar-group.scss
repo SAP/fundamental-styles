@@ -93,6 +93,18 @@ $block: #{$fd-namespace}-avatar-group;
     padding: 1rem;
     white-space: initial;
 
+    &--no-padding {
+      padding: 0;
+    }
+
+    &--no-horizontal-scroll {
+      overflow-x: hidden;
+    }
+
+    &--no-vertical-scroll {
+      overflow-y: hidden;
+    }
+
     .#{$block}__item {
       margin: 0.25rem;
     }
