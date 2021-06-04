@@ -528,7 +528,7 @@ exports[`Storyshots Components/Carousel Hidden navigation buttons 1`] = `
     
   <div
     aria-live="polite"
-    id="carousel-1"
+    id="carousel-9"
     role="region"
     style="display: none;"
   >
@@ -653,7 +653,209 @@ exports[`Storyshots Components/Carousel Hidden navigation buttons 1`] = `
     
   <div
     aria-live="polite"
-    id="carousel-6"
+    id="carousel-10"
+    role="region"
+    style="display: none;"
+  >
+    
+        Displaying item 1 of 4
+    
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Components/Carousel Items in horizontal direction 1`] = `
+<div
+  style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;"
+>
+  
+    
+  <h4>
+    Items in horizontal direction
+  </h4>
+  
+    
+  <div
+    class="fd-carousel"
+    data-ride="carousel"
+    style="margin-bottom: 3rem; max-width: 60rem;"
+  >
+    
+        
+    <div
+      class="fd-carousel__content fd-carousel--horizontal"
+      style="text-align: center; padding: 1rem; min-height: 15.5rem;"
+    >
+      
+            
+      <div
+        class="fd-carousel__item fd-carousel__item--active"
+      >
+        
+                
+        <div
+          aria-label="Carousel Image 4"
+          role="img"
+          style="
+                        width:100%;
+                        background-image: url(assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg);
+                        height: 15.5rem;
+                        background-size:cover;"
+        >
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-carousel__item fd-carousel__item--active"
+      >
+        
+                
+        <div
+          aria-label="Carousel Image 4"
+          role="img"
+          style="
+                        width:100%;
+                        background-image: url(assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg);
+                        height: 15.5rem;
+                        background-size:cover;"
+        >
+          
+                
+        </div>
+        
+            
+      </div>
+      
+
+            
+      <div
+        class="fd-carousel__item fd-carousel__item--active"
+      >
+        
+                
+        <div
+          aria-label="Carousel Image 4"
+          role="img"
+          style="
+                        width:100%;
+                        background-image: url(assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg);
+                        height: 15.5rem;
+                        background-size:cover;"
+        >
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-carousel__page-indicator-container"
+    >
+      
+            
+      <button
+        aria-label="Go to previous item"
+        class="fd-button fd-carousel__button fd-carousel__button--left"
+        data-slide="prev"
+      >
+        
+                
+        <i
+          class="sap-icon--slim-arrow-left"
+        />
+        
+            
+      </button>
+      
+            
+      <ol
+        class="fd-carousel__page-indicators"
+      >
+        
+                
+        <li
+          class="fd-carousel__page-indicator"
+          data-slide-to="1"
+        />
+        
+                
+        <li
+          class="fd-carousel__page-indicator"
+          data-slide-to="2"
+        />
+        
+                
+        <li
+          class="fd-carousel__page-indicator"
+          data-slide-to="3"
+        />
+        
+                
+        <li
+          class="fd-carousel__page-indicator"
+          data-slide-to="4"
+        />
+        
+                
+        <li
+          aria-label="Displaying item 5 of 7"
+          class="fd-carousel__page-indicator fd-carousel__page-indicator--active"
+          data-slide-to="5"
+        />
+        
+                
+        <li
+          class="fd-carousel__page-indicator"
+          data-slide-to="6"
+        />
+        
+                
+        <li
+          class="fd-carousel__page-indicator"
+          data-slide-to="7"
+        />
+        
+            
+      </ol>
+      
+            
+      <button
+        aria-label="Go to next item"
+        class="fd-button fd-carousel__button fd-carousel__button--right"
+        data-slide="next"
+      >
+        
+                
+        <i
+          class="sap-icon--slim-arrow-right"
+        />
+        
+            
+      </button>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <div
+    aria-live="polite"
+    id="carousel-11"
     role="region"
     style="display: none;"
   >
