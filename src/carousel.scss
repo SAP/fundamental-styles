@@ -185,7 +185,7 @@ $button: #{$fd-namespace}-button;
 
   &--no-navigation {
     .#{$block}__button.#{$button} {
-      display: none;
+      display: none !important;
     }
   }
 
