@@ -21,8 +21,12 @@ $button: #{$fd-namespace}-button;
   @include fd-reset();
   @include fd-flex(column);
 
-  @include fd-focus() {
-    outline: 0.0625rem dotted;
+  @include fd-hover() {
+    .#{$block}__content {
+      .#{$block}__button.#{$button} {
+        display: block;
+      }
+    }
   }
 
   width: 100%;
@@ -44,16 +48,13 @@ $button: #{$fd-namespace}-button;
       margin: 0;
       top: calc(50%);
       transform: translateY(-50%);
+      display: none;
 
       &.#{$block}__button--left {
         left: $fd-carousel-button-content-offset;
 
-        @include fd-focus() {
-          right: auto;
-        }
-
         @include fd-rtl() {
-          left: auto;
+          left: initial;
           right: $fd-carousel-button-content-offset;
         }
       }
@@ -61,12 +62,8 @@ $button: #{$fd-namespace}-button;
       &.#{$block}__button--right {
         right: $fd-carousel-button-content-offset;
 
-        @include fd-focus() {
-          right: auto;
-        }
-
         @include fd-rtl() {
-          right: auto;
+          right: initial;
           left: $fd-carousel-button-content-offset;
         }
       }
@@ -162,6 +159,12 @@ $button: #{$fd-namespace}-button;
         right: -0.25rem;
         height: $fd-carousel-touchable-button-size;
         width: $fd-carousel-touchable-button-size;
+      }
+
+      @include fd-rtl() {
+        & > [class*=sap-icon] {
+          transform: rotate(180deg);
+        }
       }
 
       @include fd-focus() {
