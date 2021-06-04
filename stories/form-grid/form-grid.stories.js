@@ -109,7 +109,7 @@ Empty grid columns | 0 | There are no empty spaces on the right of the fields.
 export const mSizeDefault = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--4">
-      <label class="fd-form-label fd-form-label--horizontal" for="input-2-name">Name:</label>
+      <label class="fd-form-label" for="input-2-name">Name:</label>
     </div>
     <div class="fd-col fd-col-md--10 fd-col-lg--8">
       <input class="fd-input" type="text" id="input-2-name" placeholder="Enter First and Last Name" value="Amelia Perry">
@@ -118,7 +118,7 @@ export const mSizeDefault = () => `<div class="fd-container fd-form-layout-grid-
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--4">
-      <label class="fd-form-label fd-form-label--horizontal fd-form-label--required" for="input-2-street">Street/No.: </label>
+      <label class="fd-form-label fd-form-label--required" for="input-2-street">Street/No.: </label>
     </div>
     <div class="fd-col fd-col-md--10 fd-col-lg--8">
       <div class="fd-row">
@@ -134,7 +134,7 @@ export const mSizeDefault = () => `<div class="fd-container fd-form-layout-grid-
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--2  fd-col-lg--4">
-      <label class="fd-form-label  fd-form-label--horizontal fd-form-label--required" for="input-2-zip">ZIP Code/City: </label>
+      <label class="fd-form-label fd-form-label--required" for="input-2-zip">ZIP Code/City: </label>
     </div>
     <div class="fd-col fd-col-md--10  fd-col-lg--8">
       <div class="fd-row">
@@ -150,7 +150,7 @@ export const mSizeDefault = () => `<div class="fd-container fd-form-layout-grid-
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--2  fd-col-lg--4">
-      <label class="fd-form-label fd-form-label--horizontal" for="input-2-country">Country:</label>
+      <label class="fd-form-label" for="input-2-country">Country:</label>
     </div>
     <div class="fd-col fd-col-md--10  fd-col-lg--8">
       <div class="fd-popover" style="width:100%">
@@ -182,7 +182,7 @@ mSizeDefault.parameters = {
     docs: {
         iframeHeight: 370,
         storyDescription: `
-The default medium form grid uses a single-column layout. The labels are positioned in the same row as the corresponding input field or value by adding the --horizontal modifier on the fd-form-label class. and form groups are positioned below each other.
+The default medium form grid uses a single-column layout. The labels are positioned in the same row as the corresponding input field or value, and form groups are positioned below each other.
 
 ####Label-field ratio
 The default medium form grid is organized into a **2:10:0** label-field ratio. 
@@ -200,7 +200,7 @@ Empty grid columns | 0 | There are no empty spaces on the right of the fields.
 export const mSizeSplitScreen = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
   <div class="fd-row">
     <div class="fd-col fd-col-md--4  fd-col-lg--4">
-      <label class="fd-form-label fd-form-label--horizontal" for="input-3-name">Name:</label>
+      <label class="fd-form-label" for="input-3-name">Name:</label>
     </div>
     <div class="fd-col fd-col-md--7  fd-col-lg--8 fd-col-md--offset-after--1">
       <input class="fd-input" type="text" id="input-3-name" placeholder="Enter First and Last Name" value="Amelia Perry">
@@ -209,7 +209,7 @@ export const mSizeSplitScreen = () => `<div class="fd-container fd-form-layout-g
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--4  fd-col-lg--4">
-      <label class="fd-form-label fd-form-label--horizontal fd-form-label--required" for="input-3-street">Street/No.: </label>
+      <label class="fd-form-label fd-form-label--required" for="input-3-street">Street/No.: </label>
     </div>
     <div class="fd-col fd-col-md--7  fd-col-lg--8 fd-col-md--offset-after--1">
       <div class="fd-row">
@@ -225,7 +225,7 @@ export const mSizeSplitScreen = () => `<div class="fd-container fd-form-layout-g
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--4  fd-col-lg--4">
-      <label class="fd-form-label fd-form-label--horizontal fd-form-label--required" for="input-3-zip">ZIP Code/City: </label>
+      <label class="fd-form-label fd-form-label--required" for="input-3-zip">ZIP Code/City: </label>
     </div>
     <div class="fd-col fd-col-md--7  fd-col-lg--8 fd-col-md--offset-after--1">
       <div class="fd-row">
@@ -241,7 +241,7 @@ export const mSizeSplitScreen = () => `<div class="fd-container fd-form-layout-g
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--4  fd-col-lg--4">
-      <label class="fd-form-label fd-form-label--horizontal" for="input-3-country">Country:</label>
+      <label class="fd-form-label" for="input-3-country">Country:</label>
     </div>
     <div class="fd-col fd-col-md--7  fd-col-lg--8 fd-col-md--offset-after--1">
       <div class="fd-popover" style="width:100%">
@@ -273,8 +273,7 @@ mSizeSplitScreen.parameters = {
     docs: {
         iframeHeight: 370,
         storyDescription: `
-When the form is positioned in the details part of a split screen, the medium form grid should use a label-field ratio of 4:7:1.The labels are positioned in the same row as
-the corresponding input field or value by adding the --horizontal modifier on the fd-form-label class
+When the form is positioned in the details part of a split screen, the medium form grid should use a label-field ratio of 4:7:1.
 
 ####Label-field ratio
 The medium form grid is organized into a **4:7:1** label-field ratio for split-screen views. 
@@ -293,7 +292,7 @@ Empty grid columns | 1 | There is one empty space on the right of the field.
 export const mSizeFullScreenApp = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
   <div class="fd-row">
     <div class="fd-col fd-col-md--3  fd-col-lg--4">
-      <label class="fd-form-label fd-form-label--horizontal" for="input-4-name">Name:</label>
+      <label class="fd-form-label" for="input-4-name">Name:</label>
     </div>
     <div class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4">
       <input class="fd-input" type="text" id="input-4-name" placeholder="Enter First and Last Name" value="Amelia Perry">
@@ -302,7 +301,7 @@ export const mSizeFullScreenApp = () => `<div class="fd-container fd-form-layout
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--3  fd-col-lg--4">
-      <label class="fd-form-label fd-form-label--horizontal fd-form-label--required" for="input-4-street">Street/No.: </label>
+      <label class="fd-form-label fd-form-label--required" for="input-4-street">Street/No.: </label>
     </div>
     <div class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4">
       <div class="fd-row">
@@ -318,7 +317,7 @@ export const mSizeFullScreenApp = () => `<div class="fd-container fd-form-layout
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--3  fd-col-lg--4">
-      <label class="fd-form-label fd-form-label--horizontal fd-form-label--required" for="input-4-zip">ZIP Code/City: </label>
+      <label class="fd-form-label fd-form-label--required" for="input-4-zip">ZIP Code/City: </label>
     </div>
     <div class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4">
       <div class="fd-row">
@@ -334,7 +333,7 @@ export const mSizeFullScreenApp = () => `<div class="fd-container fd-form-layout
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--3  fd-col-lg--4">
-      <label class="fd-form-label fd-form-label--horizontal" for="input-4-country">Country:</label>
+      <label class="fd-form-label" for="input-4-country">Country:</label>
     </div>
     <div class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4">
       <div class="fd-popover" style="width:100%">
@@ -367,8 +366,6 @@ mSizeFullScreenApp.parameters = {
         iframeHeight: 450,
         storyDescription: `
 If the form is being viewed in a full-screen app, the medium form grid should use a single-column layout.
-The labels are positioned in the same row as the corresponding input field or value by adding the --horizontal modifier on the fd-form-label class.
-
 ####Label-field ratio
 The medium form grid is organized into a **3:5:4** label-field ratio for full-screen views. 
         
@@ -385,7 +382,7 @@ Empty grid columns | 4 | There are four empty spaces on the right of the field.
 export const mSizeFullScreenAppLongLabel = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
   <div class="fd-row">
     <div class="fd-col fd-col-md--4 fd-col-lg--3">
-      <label class="fd-form-label fd-form-label--horizontal" for="input-5-name">Name:</label>
+      <label class="fd-form-label" for="input-5-name">Name:</label>
     </div>
     <div class="fd-col fd-col-md--8 fd-col-lg--5 fd-col--offset-after--4">
       <input class="fd-input" type="text" id="input-5-name" placeholder="Enter First and Last Name" value="Amelia Perry">
@@ -394,7 +391,7 @@ export const mSizeFullScreenAppLongLabel = () => `<div class="fd-container fd-fo
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--4 fd-col-lg--3">
-      <label class="fd-form-label  fd-form-label--horizontal fd-form-label--required" for="input-5-street">Street/No.: </label>
+      <label class="fd-form-label fd-form-label--required" for="input-5-street">Street/No.: </label>
     </div>
     <div class="fd-col fd-col-md--8 fd-col-lg--5 fd-col--offset-after--4">
       <div class="fd-row">
@@ -410,7 +407,7 @@ export const mSizeFullScreenAppLongLabel = () => `<div class="fd-container fd-fo
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--4 fd-col-lg--3">
-      <label class="fd-form-label fd-form-label--horizontal fd-form-label--required" for="input-5-zip">ZIP Code/City: </label>
+      <label class="fd-form-label fd-form-label--required" for="input-5-zip">ZIP Code/City: </label>
     </div>
     <div class="fd-col fd-col-md--8 fd-col-lg--5 fd-col--offset-after--4">
       <div class="fd-row">
@@ -426,7 +423,7 @@ export const mSizeFullScreenAppLongLabel = () => `<div class="fd-container fd-fo
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--4 fd-col-lg--3">
-      <label class="fd-form-label fd-form-label--horizontal" for="input-5-country">Country:</label>
+      <label class="fd-form-label" for="input-5-country">Country:</label>
     </div>
     <div class="fd-col fd-col-md--8 fd-col-lg--5 fd-col--offset-after--4">
       <div class="fd-popover" style="width:100%">
@@ -459,9 +456,8 @@ mSizeFullScreenAppLongLabel.parameters = {
         iframeHeight: 450,
         storyDescription: `
 The medium form width can go down to 601 px, providing insufficient space for longer labels and fields. If long labels or input values are necessary, use the label-field ratio of 4:8:0.
-The labels are positioned in the same row as the corresponding input field or value by adding the --horizontal modifier on the fd-form-label class.
-
 ####Label-field ratio
+
 The medium form grid is organized into a **3:5:4** label-field ratio to accommodate long labels and fields. 
 
 Components | Grid columns | Description
@@ -477,7 +473,7 @@ Empty grid columns | 0 | There is no empty space on the right of the field.
 export const lSizeDefault = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--4">
-      <label class="fd-form-label fd-form-label--horizontal" for="input-6-name">Name:</label>
+      <label class="fd-form-label" for="input-6-name">Name:</label>
     </div>
     <div class="fd-col fd-col-md--10 fd-col-lg--8">
       <input class="fd-input" type="text" id="input-6-name" placeholder="Enter First and Last Name" value="Amelia Perry">
@@ -486,7 +482,7 @@ export const lSizeDefault = () => `<div class="fd-container fd-form-layout-grid-
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--4">
-      <label class="fd-form-label fd-form-label--horizontal fd-form-label--required" for="input-6-street">Street/No.: </label>
+      <label class="fd-form-label fd-form-label--required" for="input-6-street">Street/No.: </label>
     </div>
     <div class="fd-col fd-col-md--10 fd-col-lg--8">
       <div class="fd-row">
@@ -502,7 +498,7 @@ export const lSizeDefault = () => `<div class="fd-container fd-form-layout-grid-
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--4">
-      <label class="fd-form-label fd-form-label--horizontal fd-form-label--required" for="input-6-zip">ZIP Code/City: </label>
+      <label class="fd-form-label fd-form-label--required" for="input-6-zip">ZIP Code/City: </label>
     </div>
     <div class="fd-col fd-col-md--10 fd-col-lg--8">
       <div class="fd-row">
@@ -518,7 +514,7 @@ export const lSizeDefault = () => `<div class="fd-container fd-form-layout-grid-
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--4">
-      <label class="fd-form-label fd-form-label--horizontal" for="input-6-country">Country:</label>
+      <label class="fd-form-label" for="input-6-country">Country:</label>
     </div>
     <div class="fd-col fd-col-md--10 fd-col-lg--8">
       <div class="fd-popover" style="width:100%">
@@ -550,11 +546,9 @@ lSizeDefault.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
-The default large form grid uses a two-column layout. The form groups are placed side-by-side, displaying all information on one screen to avoid scrolling. 
-In these columns, the labels are positioned in the same row adding the --horizontal modifier on the fd-form-label class.
-Therefore, the form groups adopt the Z layout, directing users’ attention to each row instead of columns.
-
+The default large form grid uses a two-column layout. The form groups are placed side-by-side, displaying all information on one screen to avoid scrolling. In these columns, the labels are positioned in the same row as the corresponding input field or value. Therefore, the form groups adopt the Z layout, directing users’ attention to each row instead of columns.
 ####Label-field ratio
+
 The default large form grid is organized into a **4:8:0** label-field ratio. 
 
 Components | Grid columns | Description
@@ -570,7 +564,7 @@ Empty grid columns | 0 | There is no empty space on the right of the field.
 export const lSizeSingleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--3">
-      <label class="fd-form-label fd-form-label--horizontal" for="input-7-name">Name:</label>
+      <label class="fd-form-label" for="input-7-name">Name:</label>
     </div>
     <div class="fd-col fd-col-md--10 fd-col-lg--5 fd-col-lg--offset-after--4">
       <input class="fd-input" type="text" id="input-7-name" placeholder="Enter First and Last Name" value="Amelia Perry">
@@ -579,7 +573,7 @@ export const lSizeSingleFormGroup = () => `<div class="fd-container fd-form-layo
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--3">
-      <label class="fd-form-label fd-form-label--horizontal fd-form-label--required" for="input-7-street">Street/No.: </label>
+      <label class="fd-form-label fd-form-label--required" for="input-7-street">Street/No.: </label>
     </div>
     <div class="fd-col fd-col-md--10 fd-col-lg--5 fd-col-lg--offset-after--4">
       <div class="fd-row">
@@ -594,8 +588,8 @@ export const lSizeSingleFormGroup = () => `<div class="fd-container fd-form-layo
   </div>
 
   <div class="fd-row">
-    <div class="fd-col  fd-col-md--2 fd-col-lg--3">
-      <label class="fd-form-label fd-form-label--horizontal fd-form-label--required" for="input-7-zip">ZIP Code/City: </label>
+    <div class="fd-col fd-col-md--2 fd-col-lg--3">
+      <label class="fd-form-label fd-form-label--required" for="input-7-zip">ZIP Code/City: </label>
     </div>
     <div class="fd-col  fd-col-md--10 fd-col-lg--5 fd-col-lg--offset-after--4">
       <div class="fd-row">
@@ -611,7 +605,7 @@ export const lSizeSingleFormGroup = () => `<div class="fd-container fd-form-layo
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--3">
-      <label class="fd-form-label fd-form-label--horizontal" for="input-7-country">Country:</label>
+      <label class="fd-form-label" for="input-7-country">Country:</label>
     </div>
     <div class="fd-col fd-col-md--10 fd-col-lg--5 fd-col-lg--offset-after--4">
       <div class="fd-popover" style="width:100%">
@@ -643,8 +637,7 @@ lSizeSingleFormGroup.parameters = {
         iframeHeight: 530,
         storyDescription: `
 If the form contains a single form group, you can use a single-column layout.
-The labels are positioned in the same row as the corresponding input field or value by adding the --horizontal
-modifier on the fd-form-label class.
+
 
 ####Label-field ratio
 The large form grid is organized into a **3:5:4** label-field ratio for single form groups.
@@ -824,7 +817,7 @@ Empty grid columns | 0 | There are no empty spaces on the right of the fields.
 export const xlDefault = () => `<div class="fd-container fd-form-layout-grid-container">
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
-      <label class="fd-form-label fd-form-label--horizontal" for="input-9-name">Name:</label>
+      <label class="fd-form-label" for="input-9-name">Name:</label>
     </div>
     <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
       <input class="fd-input" type="text" id="input-9-name" placeholder="Enter First and Last Name" value="Amelia Perry">
@@ -833,7 +826,7 @@ export const xlDefault = () => `<div class="fd-container fd-form-layout-grid-con
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
-      <label class="fd-form-label fd-form-label--horizontal fd-form-label--required" for="input-9-street">Street/No.: </label>
+      <label class="fd-form-label fd-form-label--required" for="input-9-street">Street/No.: </label>
     </div>
     <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
       <div class="fd-row">
@@ -849,7 +842,7 @@ export const xlDefault = () => `<div class="fd-container fd-form-layout-grid-con
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
-      <label class="fd-form-label fd-form-label--horizontal fd-form-label--required" for="input-9-zip">ZIP Code/City: </label>
+      <label class="fd-form-label fd-form-label--required" for="input-9-zip">ZIP Code/City: </label>
     </div>
     <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
       <div class="fd-row">
@@ -865,7 +858,7 @@ export const xlDefault = () => `<div class="fd-container fd-form-layout-grid-con
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
-      <label class="fd-form-label fd-form-label--horizontal" for="input-9-country">Country:</label>
+      <label class="fd-form-label" for="input-9-country">Country:</label>
     </div>
     <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
       <div class="fd-popover" style="width:100%">
@@ -897,9 +890,9 @@ xlDefault.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
-The default extra-large form grid uses a two-column layout. The form groups are placed side-by-side, displaying all information on one screen to avoid scrolling. In these columns, the labels are positioned in the same row as the corresponding input field or value by adding the --horizontal modifier on the fd-form-label class. The form groups adopt the Z layout.
-
+The default extra-large form grid uses a two-column layout. The form groups are placed side-by-side, displaying all information on one screen to avoid scrolling. In these columns, the labels are positioned in the same row as the corresponding input field or value. The form groups adopt the Z layout.
 ####Label-field ratio
+
 The default extra-large form grid is organized into a **4:8:0** label-field ratio. Technically, the value is set to -1 and inherits the value of size large, see also the development hint below.
 
 Components | Grid columns | Description
@@ -916,7 +909,7 @@ Empty grid columns | 0 | There are no empty spaces on the right of the fields.
 export const xlSingleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container">
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--3">
-      <label class="fd-form-label fd-form-label--horizontal" for="input-10-name">Name:</label>
+      <label class="fd-form-label" for="input-10-name">Name:</label>
     </div>
     <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--5 fd-col-xl--offset-after--4">
       <input class="fd-input" type="text" id="input-10-name" placeholder="Enter First and Last Name" value="Amelia Perry">
@@ -925,7 +918,7 @@ export const xlSingleFormGroup = () => `<div class="fd-container fd-form-layout-
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--3">
-      <label class="fd-form-label fd-form-label--horizontal fd-form-label--required" for="input-10-street">Street/No.: </label>
+      <label class="fd-form-label fd-form-label--required" for="input-10-street">Street/No.: </label>
     </div>
     <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--5 fd-col-xl--offset-after--4">
       <div class="fd-row">
@@ -941,7 +934,7 @@ export const xlSingleFormGroup = () => `<div class="fd-container fd-form-layout-
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--3">
-      <label class="fd-form-label fd-form-label--horizontal fd-form-label--required" for="input-10-zip">ZIP Code/City: </label>
+      <label class="fd-form-label fd-form-label--required" for="input-10-zip">ZIP Code/City: </label>
     </div>
     <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--5 fd-col-xl--offset-after--4">
       <div class="fd-row">
@@ -957,7 +950,7 @@ export const xlSingleFormGroup = () => `<div class="fd-container fd-form-layout-
 
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--3">
-      <label class="fd-form-label fd-form-label--horizontal" for="input-10-country">Country:</label>
+      <label class="fd-form-label" for="input-10-country">Country:</label>
     </div>
     <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--5 fd-col-xl--offset-after-4">
       <div class="fd-popover" style="width:100%">
@@ -990,7 +983,6 @@ xlSingleFormGroup.parameters = {
         iframeHeight: 500,
         storyDescription: `
 If the form contains a single form group, you can use a single-column layout.
-The labels are positioned in the same row as the corresponding input field or value by adding the --horizontal modifier on the fd-form-label class.
 
 ####Label-field ratio
 The extra-large form grid is organized into a **3:5:4** label-field ratio for single form groups.
@@ -1012,7 +1004,7 @@ export const xlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
     <div class="fd-col fd-col-xl--6 fd-col--wrap">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
-          <label class="fd-form-label fd-form-label--horizontal" for="input-11-name">Name:</label>
+          <label class="fd-form-label" for="input-11-name">Name:</label>
         </div>
         <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
           <input class="fd-input" type="text" id="input-11-name" placeholder="Enter First and Last Name" value="Amelia Perry">
@@ -1021,7 +1013,7 @@ export const xlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
 
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
-          <label class="fd-form-label fd-form-label--horizontal fd-form-label--required" for="input-11-street">Street/No.: </label>
+          <label class="fd-form-label fd-form-label--required" for="input-11-street">Street/No.: </label>
         </div>
         <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
           <div class="fd-row">
@@ -1037,7 +1029,7 @@ export const xlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
 
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
-          <label class="fd-form-label fd-form-label--horizontal fd-form-label--required" for="input-11-zip">ZIP Code/City: </label>
+          <label class="fd-form-label fd-form-label--required" for="input-11-zip">ZIP Code/City: </label>
         </div>
         <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
           <div class="fd-row">
@@ -1053,7 +1045,7 @@ export const xlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
 
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
-          <label class="fd-form-label fd-form-label--horizontal" for="input-11-country">Country:</label>
+          <label class="fd-form-label" for="input-11-country">Country:</label>
         </div>
         <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
           <div class="fd-popover" style="width:100%">
@@ -1080,7 +1072,7 @@ export const xlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
     <div class="fd-col fd-col-xl--6 fd-col--wrap">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
-          <label class="fd-form-label fd-form-label--horizontal" for="input-11a-name">Name:</label>
+          <label class="fd-form-label" for="input-11a-name">Name:</label>
         </div>
         <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
           <input class="fd-input" type="text" id="input-11a-name" placeholder="Enter First and Last Name" value="Amelia Perry">
@@ -1089,7 +1081,7 @@ export const xlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
 
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
-          <label class="fd-form-label fd-form-label--horizontal fd-form-label--required" for="input-11a-street">Street/No.: </label>
+          <label class="fd-form-label fd-form-label--required" for="input-11a-street">Street/No.: </label>
         </div>
         <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
           <div class="fd-row">
@@ -1105,7 +1097,7 @@ export const xlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
 
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
-          <label class="fd-form-label fd-form-label--horizontal fd-form-label--required" for="input-11a-zip">ZIP Code/City: </label>
+          <label class="fd-form-label fd-form-label--required" for="input-11a-zip">ZIP Code/City: </label>
         </div>
         <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
           <div class="fd-row">
@@ -1121,7 +1113,7 @@ export const xlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
 
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
-          <label class="fd-form-label fd-form-label--horizontal" for="input-11a-country">Country:</label>
+          <label class="fd-form-label" for="input-11a-country">Country:</label>
         </div>
         <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
           <div class="fd-popover" style="width:100%">
@@ -1155,7 +1147,6 @@ xlDoubleFormGroup.parameters = {
         iframeHeight: 650,
         storyDescription: `
 If the form contains multiple form groups, you can use a two-column layout.
-The labels are positioned in the same row as the corresponding input field or value by adding the --horizontal modifier on the fd-form-label class.
 
 ####Label-field ratio
 The extra-large form grid is organized into a **4:8:0** label-field ratio for double form groups.
@@ -1171,7 +1162,7 @@ Empty grid columns | 0 | There are no empty spaces on the right of the fields.
 };
 
 export const xlMultipleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container">
-  <div class="fd-row">
+  <div class="fd-row fd-row--top">
     <div class="fd-col fd-col-xl--4 fd-col--wrap">
       
 
@@ -1382,7 +1373,7 @@ xlMultipleFormGroup.parameters = {
     docs: {
         iframeHeight: 850,
         storyDescription: `
-If the form contains multiple form groups, you can use a three-column layout.
+If the form contains multiple form groups, you can use a three-column layout.fd-row--top class will organize all the elements evenly on screen.
 
 ####Label-field ratio
 The extra-large form grid is organized into a **12:12:0** label-field ratio for multiple form groups.
@@ -1400,7 +1391,7 @@ Empty grid columns | 0 | There is no empty space on the right of the field.
 export const compactLayout = () => `<div class="fd-container fd-form-layout-grid-container">
     <div class="fd-row">
         <div class="fd-col fd-col--4">
-          <label class="fd-form-label fd-form-label--compact" for="input-13-compact">Default Input:</label>
+          <label class="fd-form-label" for="input-13-compact">Default Input:</label>
         </div>
         <div class="fd-col fd-col--7">
             <input class="fd-input fd-input--compact" type="text" id="input-13-compact" placeholder="Field placeholder text">
@@ -1408,7 +1399,7 @@ export const compactLayout = () => `<div class="fd-container fd-form-layout-grid
     </div>
     <div class="fd-row">
         <div class="fd-col fd-col--4">
-          <label class="fd-form-label fd-form-label--compact fd-form-label--required" for="input-13b-compact">Required Input: </label>
+          <label class="fd-form-label fd-form-label--required" for="input-13b-compact">Required Input: </label>
         </div>
         <div class="fd-col fd-col--7">
             <input class="fd-input fd-input--compact" type="text" id="input-13b-compact" placeholder="Field placeholder text">
@@ -1416,7 +1407,7 @@ export const compactLayout = () => `<div class="fd-container fd-form-layout-grid
     </div>
     <div class="fd-row" role="group" aria-labelledby="groupLabel-compact">
         <div class="fd-col fd-col--4">
-          <label class="fd-form-label fd-form-label--compact"  id="groupLabel-compact">2 Inputs: </label>
+          <label class="fd-form-label"  id="groupLabel-compact">2 Inputs: </label>
         </div>
         <div class="fd-col fd-col--7">
             <div class="fd-row">
@@ -1437,8 +1428,7 @@ compactLayout.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: `
-To display the form using a compact layout, add the \`--compact\` modifier on the \`fd-input\` class.
-The labels are positioned in the same row as the corresponding input field or value by adding the --compact modifier on the fd-form-label class.`
+To display the form using a compact layout, add the \`--compact\` modifier on the \`fd-input\` class.`
     }
 };
 
