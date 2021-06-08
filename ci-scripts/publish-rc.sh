@@ -7,7 +7,7 @@ git config --global user.name "fundamental-bot"
 
 git status
 
-npm run version.rc
+npm run std-version -- --prerelease rc --no-verify --debug
 
 git status
 
