@@ -185,7 +185,15 @@ $button: #{$fd-namespace}-button;
 
   &--no-navigation {
     .#{$block}__button.#{$button} {
-      display: none !important;
+      display: none;
+    }
+
+    @include fd-hover() {
+      .#{$block}__content {
+        .#{$block}__button.#{$button} {
+          display: none;
+        }
+      }
     }
   }
 
