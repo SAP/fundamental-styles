@@ -5,7 +5,7 @@
   &--byline {
     .#{$block}__item {
       @include fd-focus() {
-        pointer-events: none;
+        pointer-events: all;
       }
 
       width: 100%;
@@ -27,6 +27,7 @@
       @include fd-reset();
       @include ie11-active-state-fix();
       @include fd-icon-element-base();
+      @include fd-flex-center();
 
       width: $fd-list-byline-thumbnail-dimensions;
       height: $fd-list-byline-thumbnail-dimensions;
@@ -37,7 +38,6 @@
       border-radius: $fd-list-byline-thumbnail-border-radius;
       margin-right: $fd-list-byline-thumbnail-spacing;
       font-size: 2.5rem;
-      align-self: flex-start;
       color: var(--sapContent_NonInteractiveIconColor);
 
       @include fd-rtl() {
@@ -77,6 +77,7 @@
 
       &--2-col {
         display: flex;
+        pointer-events: all;
       }
     }
 

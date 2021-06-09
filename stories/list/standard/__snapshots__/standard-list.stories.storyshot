@@ -1019,6 +1019,334 @@ exports[`Storyshots Components/List/Standard Icon 1`] = `
 </ul>
 `;
 
+exports[`Storyshots Components/List/Standard Inactive 1`] = `
+<ul
+  class="fd-list"
+  role="list"
+>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--link fd-list__item--inactive"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <a
+      class="fd-list__link"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__title"
+      >
+        List item 1 - Inactive
+      </span>
+      
+    
+    </a>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--link"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <a
+      class="fd-list__link"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__title"
+      >
+        List item 2
+      </span>
+      
+    
+    </a>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--link"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <a
+      class="fd-list__link"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__title"
+      >
+        List item 3
+      </span>
+      
+    
+    </a>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item fd-list__item--link"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <a
+      class="fd-list__link"
+      tabindex="0"
+    >
+      
+      
+      <span
+        class="fd-list__title"
+      >
+        List item 4
+      </span>
+      
+    
+    </a>
+    
+  
+  </li>
+  
+
+</ul>
+`;
+
+exports[`Storyshots Components/List/Standard Infinite scroll 1`] = `
+<ul
+  class="fd-list fd-list__infinite-scroll fddocs-list-height"
+  role="list"
+>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 1
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 2
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 3
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 4
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 5
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 6
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 7
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 8
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 9
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 10
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 11
+    </span>
+    
+  
+  </li>
+  
+  
+  <li
+    class="fd-list__item"
+    role="listitem"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-list__title"
+    >
+      List item 12
+    </span>
+    
+  
+  </li>
+  
+
+</ul>
+`;
+
 exports[`Storyshots Components/List/Standard Interactive 1`] = `
 <section>
   <h4>

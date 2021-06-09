@@ -100,6 +100,15 @@
       }
     }
 
+    &--inactive {
+      pointer-events: none;
+
+      .#{$block}__title,
+      .#{$block}__secondary {
+        pointer-events: none;
+      }
+    }
+
     @include fd-selected() {
       @include list-item-selected-state();
     }
@@ -113,6 +122,7 @@
 
     line-height: 1rem;
     color: var(--sapList_TextColor);
+    pointer-events: all;
   }
 
   &__title {
@@ -301,5 +311,10 @@
 
   &--has-message {
     padding-top: 2rem;
+  }
+
+  &__infinite-scroll {
+    overflow: scroll;
+    outline: none;
   }
 }
