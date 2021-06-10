@@ -23,7 +23,7 @@ $button: #{$fd-namespace}-button;
 
   @include fd-hover() {
     .#{$block}__content {
-      .#{$block}__button.#{$button} {
+      .#{$block}__button {
         display: block;
       }
     }
@@ -183,6 +183,12 @@ $button: #{$fd-namespace}-button;
     }
   }
 
+  &__horizontal {
+    @include fd-flex-vertical-center() {
+      width: 100%;
+    }
+  }
+
   &--no-navigation {
     .#{$block}__button.#{$button} {
       display: none;
@@ -190,16 +196,10 @@ $button: #{$fd-namespace}-button;
 
     @include fd-hover() {
       .#{$block}__content {
-        .#{$block}__button.#{$button} {
+        .#{$block}__button {
           display: none;
         }
       }
-    }
-  }
-
-  &--horizontal {
-    @include fd-flex-vertical-center() {
-      width: 100%;
     }
   }
 }

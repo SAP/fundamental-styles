@@ -685,7 +685,7 @@ exports[`Storyshots Components/Carousel Items in horizontal direction 1`] = `
     
         
     <div
-      class="fd-carousel__content fd-carousel--horizontal"
+      class="fd-carousel__content fd-carousel__horizontal"
       style="text-align: center; padding: 1rem; min-height: 15.5rem;"
     >
       
@@ -696,7 +696,7 @@ exports[`Storyshots Components/Carousel Items in horizontal direction 1`] = `
         
                 
         <div
-          aria-label="Carousel Image 4"
+          aria-label="Carousel Image 5"
           role="img"
           style="
                         width:100%;
@@ -719,7 +719,7 @@ exports[`Storyshots Components/Carousel Items in horizontal direction 1`] = `
         
                 
         <div
-          aria-label="Carousel Image 4"
+          aria-label="Carousel Image 6"
           role="img"
           style="
                         width:100%;
@@ -742,7 +742,7 @@ exports[`Storyshots Components/Carousel Items in horizontal direction 1`] = `
         
                 
         <div
-          aria-label="Carousel Image 4"
+          aria-label="Carousel Image 7"
           role="img"
           style="
                         width:100%;
@@ -811,7 +811,7 @@ exports[`Storyshots Components/Carousel Items in horizontal direction 1`] = `
         
                 
         <li
-          aria-label="Displaying item 5 of 7"
+          aria-label="Displaying item 2 of 3"
           class="fd-carousel__page-indicator fd-carousel__page-indicator--active"
           data-slide-to="5"
         />
@@ -860,7 +860,7 @@ exports[`Storyshots Components/Carousel Items in horizontal direction 1`] = `
     style="display: none;"
   >
     
-        Displaying item 1 of 4
+        Displaying item 2 of 3
     
   </div>
   

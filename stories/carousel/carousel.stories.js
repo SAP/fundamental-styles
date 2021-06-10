@@ -483,7 +483,7 @@ export const horizontalCarousel = () => `<div style="display: flex; flex-directi
         class="fd-carousel"
         data-ride="carousel"
         style="margin-bottom: 3rem; max-width: 60rem;">
-        <div class="fd-carousel__content fd-carousel--horizontal" style="text-align: center; padding: 1rem; min-height: 15.5rem;">
+        <div class="fd-carousel__content fd-carousel__horizontal" style="text-align: center; padding: 1rem; min-height: 15.5rem;">
             <div class="fd-carousel__item fd-carousel__item--active">
                 <div
                     style="
@@ -492,7 +492,7 @@ export const horizontalCarousel = () => `<div style="display: flex; flex-directi
                         height: 15.5rem;
                         background-size:cover;"
                     role="img"
-                    aria-label="Carousel Image 4">
+                    aria-label="Carousel Image 5">
                 </div>
             </div>
 
@@ -504,7 +504,7 @@ export const horizontalCarousel = () => `<div style="display: flex; flex-directi
                         height: 15.5rem;
                         background-size:cover;"
                     role="img"
-                    aria-label="Carousel Image 4">
+                    aria-label="Carousel Image 6">
                 </div>
             </div>
 
@@ -516,7 +516,7 @@ export const horizontalCarousel = () => `<div style="display: flex; flex-directi
                         height: 15.5rem;
                         background-size:cover;"
                     role="img"
-                    aria-label="Carousel Image 4">
+                    aria-label="Carousel Image 7">
                 </div>
             </div>
         </div>
@@ -542,7 +542,7 @@ export const horizontalCarousel = () => `<div style="display: flex; flex-directi
                     class="fd-carousel__page-indicator"></li>
                 <li
                     data-slide-to="5"
-                    aria-label="Displaying item 5 of 7"
+                    aria-label="Displaying item 2 of 3"
                     class="fd-carousel__page-indicator fd-carousel__page-indicator--active"></li>
                 <li
                     data-slide-to="6"
@@ -560,7 +560,7 @@ export const horizontalCarousel = () => `<div style="display: flex; flex-directi
         </div>
     </div>
     <div style="display: none;" role="region" id="carousel-11" aria-live="polite">
-        Displaying item 1 of 4
+        Displaying item 2 of 3
     </div>
 </div>
 `;
