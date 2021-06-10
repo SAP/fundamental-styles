@@ -1,4 +1,20 @@
 
+## [0.19.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.25...v0.19.0-rc.0) (2021-06-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
+Before:
+<div class="fd-row">
+After:
+<div class="fd-row fd-row--top">
+
+### Bug Fixes
+
+* form grid aligns items vertically to the top ([#2371](https://github.com/SAP/fundamental-styles/issues/2371)) ([848f09e](https://github.com/SAP/fundamental-styles/commit/848f09e23b1eb0a001986b2d5b915a9210ccb47e))
+* List component cursor pointer corrections, move css to styles from Ngx ([#2343](https://github.com/SAP/fundamental-styles/issues/2343)) ([98e7aeb](https://github.com/SAP/fundamental-styles/commit/98e7aebd1e2540601252f6f70c7ea4d3fd38d098))
+
 ### [0.18.1-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.24...v0.18.1-rc.25) (2021-06-08)
 
 ## [0.18.1-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.23...v0.18.1-rc.24) (2021-06-04)
