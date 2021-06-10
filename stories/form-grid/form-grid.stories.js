@@ -366,7 +366,6 @@ mSizeFullScreenApp.parameters = {
         iframeHeight: 450,
         storyDescription: `
 If the form is being viewed in a full-screen app, the medium form grid should use a single-column layout.
-
 ####Label-field ratio
 The medium form grid is organized into a **3:5:4** label-field ratio for full-screen views. 
         
@@ -457,8 +456,8 @@ mSizeFullScreenAppLongLabel.parameters = {
         iframeHeight: 450,
         storyDescription: `
 The medium form width can go down to 601 px, providing insufficient space for longer labels and fields. If long labels or input values are necessary, use the label-field ratio of 4:8:0.
-
 ####Label-field ratio
+
 The medium form grid is organized into a **3:5:4** label-field ratio to accommodate long labels and fields. 
 
 Components | Grid columns | Description
@@ -548,8 +547,8 @@ lSizeDefault.parameters = {
         iframeHeight: 500,
         storyDescription: `
 The default large form grid uses a two-column layout. The form groups are placed side-by-side, displaying all information on one screen to avoid scrolling. In these columns, the labels are positioned in the same row as the corresponding input field or value. Therefore, the form groups adopt the Z layout, directing users’ attention to each row instead of columns.
-
 ####Label-field ratio
+
 The default large form grid is organized into a **4:8:0** label-field ratio. 
 
 Components | Grid columns | Description
@@ -573,7 +572,7 @@ export const lSizeSingleFormGroup = () => `<div class="fd-container fd-form-layo
   </div>
 
   <div class="fd-row">
-    <div class="fd-col  fd-col-md--2 fd-col-lg--3">
+    <div class="fd-col fd-col-md--2 fd-col-lg--3">
       <label class="fd-form-label fd-form-label--required" for="input-7-street">Street/No.: </label>
     </div>
     <div class="fd-col fd-col-md--10 fd-col-lg--5 fd-col-lg--offset-after--4">
@@ -589,7 +588,7 @@ export const lSizeSingleFormGroup = () => `<div class="fd-container fd-form-layo
   </div>
 
   <div class="fd-row">
-    <div class="fd-col  fd-col-md--2 fd-col-lg--3">
+    <div class="fd-col fd-col-md--2 fd-col-lg--3">
       <label class="fd-form-label fd-form-label--required" for="input-7-zip">ZIP Code/City: </label>
     </div>
     <div class="fd-col  fd-col-md--10 fd-col-lg--5 fd-col-lg--offset-after--4">
@@ -638,6 +637,7 @@ lSizeSingleFormGroup.parameters = {
         iframeHeight: 530,
         storyDescription: `
 If the form contains a single form group, you can use a single-column layout.
+
 
 ####Label-field ratio
 The large form grid is organized into a **3:5:4** label-field ratio for single form groups.
@@ -891,8 +891,8 @@ xlDefault.parameters = {
         iframeHeight: 500,
         storyDescription: `
 The default extra-large form grid uses a two-column layout. The form groups are placed side-by-side, displaying all information on one screen to avoid scrolling. In these columns, the labels are positioned in the same row as the corresponding input field or value. The form groups adopt the Z layout.
-
 ####Label-field ratio
+
 The default extra-large form grid is organized into a **4:8:0** label-field ratio. Technically, the value is set to -1 and inherits the value of size large, see also the development hint below.
 
 Components | Grid columns | Description
@@ -1162,16 +1162,9 @@ Empty grid columns | 0 | There are no empty spaces on the right of the fields.
 };
 
 export const xlMultipleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container">
-  <div class="fd-row">
+  <div class="fd-row fd-row--top">
     <div class="fd-col fd-col-xl--4 fd-col--wrap">
-      <div class="fd-row">
-        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
-          <label class="fd-form-label" for="input-12-name">Name:</label>
-        </div>
-        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
-          <input class="fd-input" type="text" id="input-12-name" placeholder="Enter First and Last Name" value="Amelia Perry">
-        </div>
-      </div>
+      
 
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
@@ -1380,7 +1373,7 @@ xlMultipleFormGroup.parameters = {
     docs: {
         iframeHeight: 850,
         storyDescription: `
-If the form contains multiple form groups, you can use a three-column layout.
+If the form contains multiple form groups, you can use a three-column layout.fd-row--top class will organize all the elements evenly on screen.
 
 ####Label-field ratio
 The extra-large form grid is organized into a **12:12:0** label-field ratio for multiple form groups.

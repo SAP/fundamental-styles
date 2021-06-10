@@ -35,6 +35,10 @@ $cols: 11;
       margin-top: 0;
       margin-bottom: 0.625rem;
 
+      &--top {
+        align-items: start;
+      }
+
       .#{$blockCol} {
         padding: 0 0.25rem;
         overflow: hidden;

@@ -3319,7 +3319,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
   
   
   <div
-    class="fd-row"
+    class="fd-row fd-row--top"
   >
     
     
@@ -3327,46 +3327,6 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
       class="fd-col fd-col-xl--4 fd-col--wrap"
     >
       
-      
-      <div
-        class="fd-row"
-      >
-        
-        
-        <div
-          class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
-        >
-          
-          
-          <label
-            class="fd-form-label"
-            for="input-12-name"
-          >
-            Name:
-          </label>
-          
-        
-        </div>
-        
-        
-        <div
-          class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
-        >
-          
-          
-          <input
-            class="fd-input"
-            id="input-12-name"
-            placeholder="Enter First and Last Name"
-            type="text"
-            value="Amelia Perry"
-          />
-          
-        
-        </div>
-        
-      
-      </div>
       
 
       
@@ -4631,7 +4591,7 @@ exports[`Storyshots Components/Forms/Form Grid Single form [L] 1`] = `
     
     
     <div
-      class="fd-col  fd-col-md--2 fd-col-lg--3"
+      class="fd-col fd-col-md--2 fd-col-lg--3"
     >
       
       
@@ -4707,7 +4667,7 @@ exports[`Storyshots Components/Forms/Form Grid Single form [L] 1`] = `
     
     
     <div
-      class="fd-col  fd-col-md--2 fd-col-lg--3"
+      class="fd-col fd-col-md--2 fd-col-lg--3"
     >
       
       
