@@ -483,7 +483,7 @@ export const horizontalCarousel = () => `<div style="display: flex; flex-directi
         class="fd-carousel"
         data-ride="carousel"
         style="margin-bottom: 3rem; max-width: 60rem;">
-        <div class="fd-carousel__content fd-carousel__horizontal" style="text-align: center; padding: 1rem; min-height: 15.5rem;">
+        <div class="fd-carousel__content fd-carousel__content--horizontal" style="text-align: center; padding: 1rem; min-height: 15.5rem;">
             <div class="fd-carousel__item fd-carousel__item--active">
                 <div
                     style="
@@ -533,22 +533,10 @@ export const horizontalCarousel = () => `<div style="display: flex; flex-directi
                     class="fd-carousel__page-indicator"></li>
                 <li
                     data-slide-to="2"
-                    class="fd-carousel__page-indicator"></li>
-                <li
-                    data-slide-to="3"
-                    class="fd-carousel__page-indicator"></li>
-                <li
-                    data-slide-to="4"
-                    class="fd-carousel__page-indicator"></li>
-                <li
-                    data-slide-to="5"
                     aria-label="Displaying item 2 of 3"
                     class="fd-carousel__page-indicator fd-carousel__page-indicator--active"></li>
                 <li
-                    data-slide-to="6"
-                    class="fd-carousel__page-indicator"></li>
-                <li
-                    data-slide-to="7"
+                    data-slide-to="3"
                     class="fd-carousel__page-indicator"></li>
             </ol>
             <button
@@ -570,6 +558,51 @@ horizontalCarousel.parameters = {
     docs: {
         iframeHeight: 900,
         storyDescription: `Carousel will have items which will spread horizontally and will be visible on navigation. For translation to work, all items should be in DOM.
+`
+    }
+};
+
+export const error = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
+    <h4>Error in loading items</h4>
+    <div
+        class="fd-carousel fd-carousel--no-navigation"
+        data-ride="carousel"
+        style="margin-bottom: 3rem; max-width: 60rem;">
+        <div class="fd-carousel__content fd-carousel__content--error-message" style="text-align: center; padding: 1rem; min-height: 15.5rem;">
+            <div class="docs-column-flex">
+                <div class="fddocs-horizontal-center">
+                    <i class="sap-icon--document"></i>
+                </div>
+                Items could not be loaded
+            </div>
+        </div>
+        <div class="fd-carousel__page-indicator-container">
+            <button 
+                class="fd-button fd-carousel__button fd-carousel__button--left"
+                data-slide="prev"
+                aria-label="Go to previous item">
+                <i class="sap-icon--slim-arrow-left"></i>
+            </button>
+            <ol class="fd-carousel__page-indicators"></ol>
+            <button 
+                class="fd-button fd-carousel__button fd-carousel__button--right"
+                data-slide="next"
+                aria-label="Go to next item">
+                <i class="sap-icon--slim-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+    <div style="display: none;" role="region" id="carousel-12" aria-live="polite">
+        Error in loading items
+    </div>
+</div>
+`;
+
+error.storyName = 'Items loading error';
+error.parameters = {
+    docs: {
+        iframeHeight: 900,
+        storyDescription: `Error message can be disaplyed when items could not be loaded.
 `
     }
 };

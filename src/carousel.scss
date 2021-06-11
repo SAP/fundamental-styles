@@ -72,6 +72,14 @@ $button: #{$fd-namespace}-button;
     &--display {
       overflow: hidden;
     }
+
+    &--horizontal {
+      @include fd-flex();
+    }
+
+    &--error-message {
+      @include fd-flex-center();
+    }
   }
 
   &__item {
@@ -180,12 +188,6 @@ $button: #{$fd-namespace}-button;
           @include after-position-overwrite();
         }
       }
-    }
-  }
-
-  &__horizontal {
-    @include fd-flex-vertical-center() {
-      width: 100%;
     }
   }
 

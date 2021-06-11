@@ -685,7 +685,7 @@ exports[`Storyshots Components/Carousel Items in horizontal direction 1`] = `
     
         
     <div
-      class="fd-carousel__content fd-carousel__horizontal"
+      class="fd-carousel__content fd-carousel__content--horizontal"
       style="text-align: center; padding: 1rem; min-height: 15.5rem;"
     >
       
@@ -793,7 +793,8 @@ exports[`Storyshots Components/Carousel Items in horizontal direction 1`] = `
         
                 
         <li
-          class="fd-carousel__page-indicator"
+          aria-label="Displaying item 2 of 3"
+          class="fd-carousel__page-indicator fd-carousel__page-indicator--active"
           data-slide-to="2"
         />
         
@@ -801,31 +802,6 @@ exports[`Storyshots Components/Carousel Items in horizontal direction 1`] = `
         <li
           class="fd-carousel__page-indicator"
           data-slide-to="3"
-        />
-        
-                
-        <li
-          class="fd-carousel__page-indicator"
-          data-slide-to="4"
-        />
-        
-                
-        <li
-          aria-label="Displaying item 2 of 3"
-          class="fd-carousel__page-indicator fd-carousel__page-indicator--active"
-          data-slide-to="5"
-        />
-        
-                
-        <li
-          class="fd-carousel__page-indicator"
-          data-slide-to="6"
-        />
-        
-                
-        <li
-          class="fd-carousel__page-indicator"
-          data-slide-to="7"
         />
         
             
@@ -861,6 +837,116 @@ exports[`Storyshots Components/Carousel Items in horizontal direction 1`] = `
   >
     
         Displaying item 2 of 3
+    
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Components/Carousel Items loading error 1`] = `
+<div
+  style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;"
+>
+  
+    
+  <h4>
+    Error in loading items
+  </h4>
+  
+    
+  <div
+    class="fd-carousel fd-carousel--no-navigation"
+    data-ride="carousel"
+    style="margin-bottom: 3rem; max-width: 60rem;"
+  >
+    
+        
+    <div
+      class="fd-carousel__content fd-carousel__content--error-message"
+      style="text-align: center; padding: 1rem; min-height: 15.5rem;"
+    >
+      
+            
+      <div
+        class="docs-column-flex"
+      >
+        
+                
+        <div
+          class="fddocs-horizontal-center"
+        >
+          
+                    
+          <i
+            class="sap-icon--document"
+          />
+          
+                
+        </div>
+        
+                Items could not be loaded
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-carousel__page-indicator-container"
+    >
+      
+            
+      <button
+        aria-label="Go to previous item"
+        class="fd-button fd-carousel__button fd-carousel__button--left"
+        data-slide="prev"
+      >
+        
+                
+        <i
+          class="sap-icon--slim-arrow-left"
+        />
+        
+            
+      </button>
+      
+            
+      <ol
+        class="fd-carousel__page-indicators"
+      />
+      
+            
+      <button
+        aria-label="Go to next item"
+        class="fd-button fd-carousel__button fd-carousel__button--right"
+        data-slide="next"
+      >
+        
+                
+        <i
+          class="sap-icon--slim-arrow-right"
+        />
+        
+            
+      </button>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <div
+    aria-live="polite"
+    id="carousel-12"
+    role="region"
+    style="display: none;"
+  >
+    
+        Error in loading items
     
   </div>
   
