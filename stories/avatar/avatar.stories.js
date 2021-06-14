@@ -34,7 +34,7 @@ Do not use avatar if:
 };
 
 export const icon = () => `
-<span class="fd-avatar fd-avatar--xs" role="presentation">
+<span class="fd-avatar fd-avatar--xs" role="presentation" tabindex="0">
     <i role="presentation" class="fd-avatar__icon sap-icon--washing-machine"></i>
 </span>
 <span class="fd-avatar fd-avatar--s" role="presentation">

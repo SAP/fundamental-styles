@@ -49,6 +49,12 @@ $block: #{$fd-namespace}-avatar;
   background-position: 50%;
   border-radius: var(--sapElement_BorderCornerRadius);
 
+  @include fd-focus() {
+    outline-width: var(--sapContent_FocusWidth);
+    outline-color: var(--sapContent_FocusColor);
+    outline-style: var(--sapContent_FocusStyle);
+  }
+
   // BLOCK ELEMENTS ************
   // zoom icon
   &__zoom-icon {

@@ -52,7 +52,7 @@ sizes.parameters = {
  */
 
 export const colors = () => `
-<span class="sap-icon sap-icon--cart" style="font-size:5rem"></span>
+<span class="sap-icon sap-icon--cart" style="font-size:5rem" tabindex="0"></span>
 <span class="sap-icon sap-icon--cart sap-icon--color-default" style="font-size:5rem"></span>
 <span class="sap-icon sap-icon--cart sap-icon--color-contrast sap-icon--background-contrast" style="font-size:5rem"></span>
 <span class="sap-icon sap-icon--cart sap-icon--color-non-interactive" style="font-size:5rem"></span>

@@ -7934,6 +7934,7 @@ exports[`Storyshots Components/Icons/SAP Icons Colors 1`] = `
   <span
     class="sap-icon sap-icon--cart"
     style="font-size:5rem"
+    tabindex="0"
   />
   
 
