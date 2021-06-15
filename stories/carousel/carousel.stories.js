@@ -479,72 +479,73 @@ carouselNoNavigation.parameters = {
 
 export const horizontalCarousel = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
     <h4>Items in horizontal direction</h4>
-    <div
-        class="fd-carousel"
-        data-ride="carousel"
-        style="margin-bottom: 3rem; max-width: 60rem;">
-        <div class="fd-carousel__content fd-carousel__content--horizontal" style="text-align: center; padding: 1rem; min-height: 15.5rem;">
-            <div class="fd-carousel__item fd-carousel__item--active">
-                <div
-                    style="
-                        width:100%;
-                        background-image: url(assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg);
-                        height: 15.5rem;
-                        background-size:cover;"
-                    role="img"
-                    aria-label="Carousel Image 5">
+    <div class="fddoc-horizontal-carousel-example">
+        <div
+            class="fd-carousel"
+            data-ride="carousel">
+            <div class="fd-carousel__content fd-carousel__content--horizontal">
+                <div class="fd-carousel__item fd-carousel__item--active">
+                    <div
+                        style="
+                            width:100%;
+                            background-image: url(assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg);
+                            height: 15.5rem;
+                            background-size:cover;"
+                        role="img"
+                        aria-label="Carousel Image 5">
+                    </div>
                 </div>
-            </div>
 
-            <div class="fd-carousel__item fd-carousel__item--active">
-                <div
-                    style="
-                        width:100%;
-                        background-image: url(assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg);
-                        height: 15.5rem;
-                        background-size:cover;"
-                    role="img"
-                    aria-label="Carousel Image 6">
+                <div class="fd-carousel__item fd-carousel__item--active">
+                    <div
+                        style="
+                            width:100%;
+                            background-image: url(assets/images/backgrounds/city.jpg);
+                            height: 15.5rem;
+                            background-size:cover;"
+                        role="img"
+                        aria-label="Carousel Image 6">
+                    </div>
                 </div>
-            </div>
 
-            <div class="fd-carousel__item fd-carousel__item--active">
-                <div
-                    style="
-                        width:100%;
-                        background-image: url(assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg);
-                        height: 15.5rem;
-                        background-size:cover;"
-                    role="img"
-                    aria-label="Carousel Image 7">
+                <div class="fd-carousel__item fd-carousel__item--active">
+                    <div
+                        style="
+                            width:100%;
+                            background-image: url(assets/images/backgrounds/leaves.jpg);
+                            height: 15.5rem;
+                            background-size:cover;"
+                        role="img"
+                        aria-label="Carousel Image 7">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="fd-carousel__page-indicator-container">
-            <button
-                class="fd-button fd-carousel__button fd-carousel__button--left"
-                data-slide="prev"
-                aria-label="Go to previous item">
-                <i class="sap-icon--slim-arrow-left"></i>
-            </button>
-            <ol class="fd-carousel__page-indicators">
-                <li
-                    data-slide-to="1"
-                    class="fd-carousel__page-indicator"></li>
-                <li
-                    data-slide-to="2"
-                    aria-label="Displaying item 2 of 3"
-                    class="fd-carousel__page-indicator fd-carousel__page-indicator--active"></li>
-                <li
-                    data-slide-to="3"
-                    class="fd-carousel__page-indicator"></li>
-            </ol>
-            <button
-                class="fd-button fd-carousel__button fd-carousel__button--right"
-                data-slide="next"
-                aria-label="Go to next item">
-                <i class="sap-icon--slim-arrow-right"></i>
-            </button>
+            <div class="fd-carousel__page-indicator-container">
+                <button
+                    class="fd-button fd-carousel__button fd-carousel__button--left"
+                    data-slide="prev"
+                    aria-label="Go to previous item">
+                    <i class="sap-icon--slim-arrow-left"></i>
+                </button>
+                <ol class="fd-carousel__page-indicators">
+                    <li
+                        data-slide-to="1"
+                        class="fd-carousel__page-indicator"></li>
+                    <li
+                        data-slide-to="2"
+                        aria-label="Displaying item 2 of 3"
+                        class="fd-carousel__page-indicator fd-carousel__page-indicator--active"></li>
+                    <li
+                        data-slide-to="3"
+                        class="fd-carousel__page-indicator"></li>
+                </ol>
+                <button
+                    class="fd-button fd-carousel__button fd-carousel__button--right"
+                    data-slide="next"
+                    aria-label="Go to next item">
+                    <i class="sap-icon--slim-arrow-right"></i>
+                </button>
+            </div>
         </div>
     </div>
     <div style="display: none;" role="region" id="carousel-11" aria-live="polite">
@@ -557,39 +558,40 @@ horizontalCarousel.storyName = 'Items in horizontal direction';
 horizontalCarousel.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `Carousel will have items which will spread horizontally and will be visible on navigation. For translation to work, all items should be in DOM.
+        storyDescription: `Carousel will have items which will spread horizontally and will be visible on navigation. For translate animation effect to work, all items should be in DOM.
 `
     }
 };
 
 export const error = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
     <h4>Error in loading items</h4>
-    <div
-        class="fd-carousel fd-carousel--no-navigation"
-        data-ride="carousel"
-        style="margin-bottom: 3rem; max-width: 60rem;">
-        <div class="fd-carousel__content fd-carousel__content--error-message" style="text-align: center; padding: 1rem; min-height: 15.5rem;">
-            <div class="docs-column-flex">
-                <div class="fddocs-horizontal-center">
-                    <i class="sap-icon--document"></i>
+    <div class="fddoc-carousel-example">
+        <div
+            class="fd-carousel fd-carousel--no-navigation"
+            data-ride="carousel">
+            <div class="fd-carousel__content fd-carousel__content--error-message">
+                <div class="docs-column-flex">
+                    <div class="fddocs-horizontal-center">
+                        <i class="sap-icon--document"></i>
+                    </div>
+                    Items could not be loaded
                 </div>
-                Items could not be loaded
             </div>
-        </div>
-        <div class="fd-carousel__page-indicator-container">
-            <button 
-                class="fd-button fd-carousel__button fd-carousel__button--left"
-                data-slide="prev"
-                aria-label="Go to previous item">
-                <i class="sap-icon--slim-arrow-left"></i>
-            </button>
-            <ol class="fd-carousel__page-indicators"></ol>
-            <button 
-                class="fd-button fd-carousel__button fd-carousel__button--right"
-                data-slide="next"
-                aria-label="Go to next item">
-                <i class="sap-icon--slim-arrow-right"></i>
-            </button>
+            <div class="fd-carousel__page-indicator-container">
+                <button 
+                    class="fd-button fd-carousel__button fd-carousel__button--left"
+                    data-slide="prev"
+                    aria-label="Go to previous item">
+                    <i class="sap-icon--slim-arrow-left"></i>
+                </button>
+                <ol class="fd-carousel__page-indicators"></ol>
+                <button 
+                    class="fd-button fd-carousel__button fd-carousel__button--right"
+                    data-slide="next"
+                    aria-label="Go to next item">
+                    <i class="sap-icon--slim-arrow-right"></i>
+                </button>
+            </div>
         </div>
     </div>
     <div style="display: none;" role="region" id="carousel-12" aria-live="polite">
