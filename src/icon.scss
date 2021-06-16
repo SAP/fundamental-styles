@@ -14,11 +14,7 @@ $blockTNT: sap-icon-TNT;
   font-style: normal;
   display: inline-block;
 
-  @include fd-focus() {
-    outline-width: var(--sapContent_FocusWidth);
-    outline-color: var(--sapContent_FocusColor);
-    outline-style: var(--sapContent_FocusStyle);
-  }
+  @include fd-fiori-focus(0);
 }
 
 [class*='#{$blockBusiness}'] {
