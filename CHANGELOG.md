@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.3...v0.19.0-rc.4) (2021-06-17)
+
+
+### Bug Fixes
+
+* bring charset at the beginning of the css files [ci visual] ([#2459](https://github.com/SAP/fundamental-styles/issues/2459)) ([b161f8b](https://github.com/SAP/fundamental-styles/commit/b161f8b2c740582e410daa871c7fafd3371dba3e))
+
 ## [0.19.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.2...v0.19.0-rc.3) (2021-06-17)
 
 ## [0.19.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.1...v0.19.0-rc.2) (2021-06-17)
