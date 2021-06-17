@@ -487,3 +487,20 @@
     padding-left: $right;
   }
 }
+
+/*
+   Fully expanded pseudo element
+   Requires parent to have specified position
+*/
+@mixin fd-pseudo-expand($position: "before") {
+  &::#{$position} {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @content;
+  }
+}
