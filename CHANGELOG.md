@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.1...v0.19.0-rc.2) (2021-06-17)
+
+
+### Bug Fixes
+
+* provide focus for avatar and icon components ([#2454](https://github.com/SAP/fundamental-styles/issues/2454)) ([dd8cad8](https://github.com/SAP/fundamental-styles/commit/dd8cad81caa2b2b38f86ac581b8339aaea3990e6))
+
 ## [0.19.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.0...v0.19.0-rc.1) (2021-06-13)
 
 ## [0.19.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.18.1-rc.25...v0.19.0-rc.0) (2021-06-10)
