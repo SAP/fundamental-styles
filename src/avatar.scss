@@ -49,6 +49,8 @@ $block: #{$fd-namespace}-avatar;
   background-position: 50%;
   border-radius: var(--sapElement_BorderCornerRadius);
 
+  @include fd-fiori-focus(0);
+
   // BLOCK ELEMENTS ************
   // zoom icon
   &__zoom-icon {

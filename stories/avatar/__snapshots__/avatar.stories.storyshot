@@ -476,6 +476,7 @@ exports[`Storyshots Components/Avatar Icon 1`] = `
   <span
     class="fd-avatar fd-avatar--xs"
     role="presentation"
+    tabindex="0"
   >
     
     

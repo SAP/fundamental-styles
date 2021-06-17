@@ -13,6 +13,8 @@ $blockTNT: sap-icon-TNT;
 
   font-style: normal;
   display: inline-block;
+
+  @include fd-fiori-focus(0);
 }
 
 [class*='#{$blockBusiness}'] {

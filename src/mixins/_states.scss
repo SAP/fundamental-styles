@@ -51,7 +51,10 @@
 @mixin fd-fiori-focus($offset: -0.1875rem) {
   &:focus,
   &.is-focus {
-    outline-offset: $offset;
+    @if $offset != 0 {
+      outline-offset: $offset;
+    }
+
     outline-width: var(--sapContent_FocusWidth);
     outline-color: var(--sapContent_FocusColor);
     outline-style: var(--sapContent_FocusStyle);
