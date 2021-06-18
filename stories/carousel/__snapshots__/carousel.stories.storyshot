@@ -884,7 +884,6 @@ exports[`Storyshots Components/Carousel Items loading error 1`] = `
             <i
               class="sap-icon--document fd-message-page__icon"
               role="presentation"
-              style="font-size:3rem"
             />
             
                 

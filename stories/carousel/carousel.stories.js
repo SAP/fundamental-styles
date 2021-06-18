@@ -572,7 +572,7 @@ export const error = () => `<div style="display: flex; flex-direction: column; a
             <div class="fd-message-page">
                 <div class="fd-message-page__container">
                 <div class="fd-message-page__icon-container">
-                    <i role="presentation" class="sap-icon--document fd-message-page__icon" style="font-size:3rem"></i>
+                    <i role="presentation" class="sap-icon--document fd-message-page__icon"></i>
                 </div>
                 <div role="status" aria-live="polite" class="fd-message-page__content">
                     <div class="fd-message-page__title">
@@ -608,7 +608,7 @@ error.storyName = 'Items loading error';
 error.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `Error message can be disaplyed when items could not be loaded.
+        storyDescription: `Error message can be disaplyed when items could not be loaded. Error message can be composed using Message page component.
 `
     }
 };
