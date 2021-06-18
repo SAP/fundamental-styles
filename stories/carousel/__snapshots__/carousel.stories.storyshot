@@ -862,7 +862,7 @@ exports[`Storyshots Components/Carousel Items loading error 1`] = `
     
         
     <div
-      class="fd-carousel__content fd-carousel__content--error-message"
+      class="fd-carousel__content"
     >
       
             

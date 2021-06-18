@@ -76,10 +76,6 @@ $button: #{$fd-namespace}-button;
     &--horizontal {
       @include fd-flex();
     }
-
-    &--error-message {
-      @include fd-flex-center();
-    }
   }
 
   &__item {

@@ -568,7 +568,7 @@ export const error = () => `<div style="display: flex; flex-direction: column; a
         class="fd-carousel fd-carousel--no-navigation"
         style="max-width: 30rem; max-height: 15.5rem;"
         data-ride="carousel">
-        <div class="fd-carousel__content fd-carousel__content--error-message">
+        <div class="fd-carousel__content">
             <div class="fd-message-page">
                 <div class="fd-message-page__container">
                 <div class="fd-message-page__icon-container">
