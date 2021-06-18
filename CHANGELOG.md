@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.5...v0.19.0-rc.6) (2021-06-18)
+
+
+### Features
+
+* introduce new Icon Tab Bar component ([#2455](https://github.com/SAP/fundamental-styles/issues/2455)) ([2f029e7](https://github.com/SAP/fundamental-styles/commit/2f029e716160a937d8c6cb0b7502c9c1b6e33889))
+
 ## [0.19.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.4...v0.19.0-rc.5) (2021-06-18)
 
 ## [0.19.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.3...v0.19.0-rc.4) (2021-06-17)
