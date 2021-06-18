@@ -668,7 +668,7 @@ exports[`Storyshots Components/Carousel Hidden navigation buttons 1`] = `
 
 exports[`Storyshots Components/Carousel Items in horizontal direction 1`] = `
 <div
-  style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;"
+  style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1; height: 25rem;"
 >
   
     
@@ -678,84 +678,31 @@ exports[`Storyshots Components/Carousel Items in horizontal direction 1`] = `
   
     
   <div
-    class="fddoc-horizontal-carousel-example"
+    class="fd-carousel"
+    data-ride="carousel"
+    style="max-width: 60rem; max-height: 15.5rem;"
   >
     
         
     <div
-      class="fd-carousel"
-      data-ride="carousel"
+      class="fd-carousel__content fd-carousel__content--horizontal"
     >
       
             
       <div
-        class="fd-carousel__content fd-carousel__content--horizontal"
+        class="fd-carousel__item fd-carousel__item--active"
       >
         
                 
         <div
-          class="fd-carousel__item fd-carousel__item--active"
+          aria-label="Carousel Image 5"
+          role="img"
+          style="
+                        width: 100%;
+                        background-image: url(assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg);
+                        height: 100%;
+                        background-size:cover;"
         >
-          
-                    
-          <div
-            aria-label="Carousel Image 5"
-            role="img"
-            style="
-                            width:100%;
-                            background-image: url(assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg);
-                            height: 15.5rem;
-                            background-size:cover;"
-          >
-            
-                    
-          </div>
-          
-                
-        </div>
-        
-
-                
-        <div
-          class="fd-carousel__item fd-carousel__item--active"
-        >
-          
-                    
-          <div
-            aria-label="Carousel Image 6"
-            role="img"
-            style="
-                            width:100%;
-                            background-image: url(assets/images/backgrounds/city.jpg);
-                            height: 15.5rem;
-                            background-size:cover;"
-          >
-            
-                    
-          </div>
-          
-                
-        </div>
-        
-
-                
-        <div
-          class="fd-carousel__item fd-carousel__item--active"
-        >
-          
-                    
-          <div
-            aria-label="Carousel Image 7"
-            role="img"
-            style="
-                            width:100%;
-                            background-image: url(assets/images/backgrounds/leaves.jpg);
-                            height: 15.5rem;
-                            background-size:cover;"
-          >
-            
-                    
-          </div>
           
                 
         </div>
@@ -763,70 +710,116 @@ exports[`Storyshots Components/Carousel Items in horizontal direction 1`] = `
             
       </div>
       
+
             
       <div
-        class="fd-carousel__page-indicator-container"
+        class="fd-carousel__item fd-carousel__item--active"
       >
         
                 
-        <button
-          aria-label="Go to previous item"
-          class="fd-button fd-carousel__button fd-carousel__button--left"
-          data-slide="prev"
+        <div
+          aria-label="Carousel Image 6"
+          role="img"
+          style="
+                        width: 100%;
+                        background-image: url(assets/images/backgrounds/city.jpg);
+                        height: 100%;
+                        background-size:cover;"
         >
           
-                    
-          <i
-            class="sap-icon--slim-arrow-left"
-          />
-          
                 
-        </button>
-        
-                
-        <ol
-          class="fd-carousel__page-indicators"
-        >
-          
-                    
-          <li
-            class="fd-carousel__page-indicator"
-            data-slide-to="1"
-          />
-          
-                    
-          <li
-            aria-label="Displaying item 2 of 3"
-            class="fd-carousel__page-indicator fd-carousel__page-indicator--active"
-            data-slide-to="2"
-          />
-          
-                    
-          <li
-            class="fd-carousel__page-indicator"
-            data-slide-to="3"
-          />
-          
-                
-        </ol>
-        
-                
-        <button
-          aria-label="Go to next item"
-          class="fd-button fd-carousel__button fd-carousel__button--right"
-          data-slide="next"
-        >
-          
-                    
-          <i
-            class="sap-icon--slim-arrow-right"
-          />
-          
-                
-        </button>
+        </div>
         
             
       </div>
+      
+
+            
+      <div
+        class="fd-carousel__item fd-carousel__item--active"
+      >
+        
+                
+        <div
+          aria-label="Carousel Image 7"
+          role="img"
+          style="
+                        width: 100%;
+                        background-image: url(assets/images/backgrounds/leaves.jpg);
+                        height: 100%;
+                        background-size:cover;"
+        >
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-carousel__page-indicator-container"
+    >
+      
+            
+      <button
+        aria-label="Go to previous item"
+        class="fd-button fd-carousel__button fd-carousel__button--left"
+        data-slide="prev"
+      >
+        
+                
+        <i
+          class="sap-icon--slim-arrow-left"
+        />
+        
+            
+      </button>
+      
+            
+      <ol
+        class="fd-carousel__page-indicators"
+      >
+        
+                
+        <li
+          class="fd-carousel__page-indicator"
+          data-slide-to="1"
+        />
+        
+                
+        <li
+          aria-label="Displaying item 2 of 3"
+          class="fd-carousel__page-indicator fd-carousel__page-indicator--active"
+          data-slide-to="2"
+        />
+        
+                
+        <li
+          class="fd-carousel__page-indicator"
+          data-slide-to="3"
+        />
+        
+            
+      </ol>
+      
+            
+      <button
+        aria-label="Go to next item"
+        class="fd-button fd-carousel__button fd-carousel__button--right"
+        data-slide="next"
+      >
+        
+                
+        <i
+          class="sap-icon--slim-arrow-right"
+        />
+        
+            
+      </button>
       
         
     </div>
@@ -852,7 +845,7 @@ exports[`Storyshots Components/Carousel Items in horizontal direction 1`] = `
 
 exports[`Storyshots Components/Carousel Items loading error 1`] = `
 <div
-  style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;"
+  style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1; height: 25rem;"
 >
   
     
@@ -862,87 +855,108 @@ exports[`Storyshots Components/Carousel Items loading error 1`] = `
   
     
   <div
-    class="fddoc-carousel-example"
+    class="fd-carousel fd-carousel--no-navigation"
+    data-ride="carousel"
+    style="max-width: 30rem; max-height: 15.5rem;"
   >
     
         
     <div
-      class="fd-carousel fd-carousel--no-navigation"
-      data-ride="carousel"
+      class="fd-carousel__content fd-carousel__content--error-message"
     >
       
             
       <div
-        class="fd-carousel__content fd-carousel__content--error-message"
+        class="fd-message-page"
       >
         
                 
         <div
-          class="docs-column-flex"
+          class="fd-message-page__container"
         >
           
-                    
+                
           <div
-            class="fddocs-horizontal-center"
+            class="fd-message-page__icon-container"
           >
             
-                        
+                    
             <i
-              class="sap-icon--document"
+              class="sap-icon--document fd-message-page__icon"
+              role="presentation"
+              style="font-size:3rem"
             />
             
-                    
+                
           </div>
           
-                    Items could not be loaded
                 
+          <div
+            aria-live="polite"
+            class="fd-message-page__content"
+            role="status"
+          >
+            
+                    
+            <div
+              class="fd-message-page__title"
+            >
+              
+                        Items could not be loaded
+                    
+            </div>
+            
+                
+          </div>
+          
+            
         </div>
         
-            
+        
       </div>
       
+        
+    </div>
+    
+        
+    <div
+      class="fd-carousel__page-indicator-container"
+    >
+      
             
-      <div
-        class="fd-carousel__page-indicator-container"
+      <button
+        aria-label="Go to previous item"
+        class="fd-button fd-carousel__button fd-carousel__button--left"
+        data-slide="prev"
       >
         
                 
-        <button
-          aria-label="Go to previous item"
-          class="fd-button fd-carousel__button fd-carousel__button--left"
-          data-slide="prev"
-        >
-          
-                    
-          <i
-            class="sap-icon--slim-arrow-left"
-          />
-          
-                
-        </button>
-        
-                
-        <ol
-          class="fd-carousel__page-indicators"
+        <i
+          class="sap-icon--slim-arrow-left"
         />
         
+            
+      </button>
+      
+            
+      <ol
+        class="fd-carousel__page-indicators"
+      />
+      
+            
+      <button
+        aria-label="Go to next item"
+        class="fd-button fd-carousel__button fd-carousel__button--right"
+        data-slide="next"
+      >
+        
                 
-        <button
-          aria-label="Go to next item"
-          class="fd-button fd-carousel__button fd-carousel__button--right"
-          data-slide="next"
-        >
-          
-                    
-          <i
-            class="sap-icon--slim-arrow-right"
-          />
-          
-                
-        </button>
+        <i
+          class="sap-icon--slim-arrow-right"
+        />
         
             
-      </div>
+      </button>
       
         
     </div>
