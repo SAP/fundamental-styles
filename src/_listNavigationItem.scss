@@ -37,7 +37,7 @@ $fd-list-second-level-popover-position: 3.25rem !default;
   &__navigation-item {
     @include fd-reset();
     @include fd-fiori-focus();
-    @include set-paddings-x(0.5rem, 1rem);
+    @include fd-set-paddings-x(0.5rem, 1rem);
 
     background: transparent;
     height: $fd-list-navigation-item-height;
@@ -52,7 +52,7 @@ $fd-list-second-level-popover-position: 3.25rem !default;
     }
 
     &.is-expanded {
-      @include set-margins-x(0.25rem, 0.25rem);
+      @include fd-set-margins-x(0.25rem, 0.25rem);
 
       border-radius: var(--sapElement_BorderCornerRadius);
       box-shadow: var(--sapContent_Shadow0);
@@ -90,15 +90,15 @@ $fd-list-second-level-popover-position: 3.25rem !default;
       }
 
       .#{$block}__navigation-item-text {
-        @include set-padding-left();
+        @include fd-set-padding-left();
       }
 
       .#{$block}__navigation-item-icon {
-        @include set-padding-right(0.5rem);
+        @include fd-set-padding-right(0.5rem);
       }
 
       .#{$block} {
-        @include set-margins-x(-0.5rem, -1rem);
+        @include fd-set-margins-x(-0.5rem, -1rem);
 
         width: auto;
         display: block;
@@ -106,7 +106,7 @@ $fd-list-second-level-popover-position: 3.25rem !default;
 
       .#{$block}__navigation-item-indicator {
         &::after {
-          @include set-margin-right();
+          @include fd-set-margin-right();
         }
       }
     }
@@ -132,7 +132,7 @@ $fd-list-second-level-popover-position: 3.25rem !default;
     }
 
     &--condensed {
-      @include set-paddings-x();
+      @include fd-set-paddings-x();
 
       position: relative;
       width: 3.25rem;
@@ -150,20 +150,20 @@ $fd-list-second-level-popover-position: 3.25rem !default;
       }
 
       .#{$block}__navigation-item-icon {
-        @include set-margins-x(0.5rem, 0.5rem);
+        @include fd-set-margins-x(0.5rem, 0.5rem);
 
         height: $fd-list-navigation-item-height;
         line-height: $fd-list-navigation-item-height;
       }
 
       &.is-expanded {
-        @include set-margins-x();
+        @include fd-set-margins-x();
 
         overflow: visible;
         visibility: hidden;
 
         .#{$block}__navigation-item {
-          @include set-margins-x();
+          @include fd-set-margins-x();
         }
 
         .#{$block}__navigation-item--condensed {
@@ -192,8 +192,8 @@ $fd-list-second-level-popover-position: 3.25rem !default;
             }
 
             .#{$block}__navigation-item-text {
-              @include set-margin-left();
-              @include set-padding-left();
+              @include fd-set-margin-left();
+              @include fd-set-padding-left();
             }
           }
 
@@ -227,12 +227,12 @@ $fd-list-second-level-popover-position: 3.25rem !default;
 
             .#{$block}__navigation-item {
               .#{$block}__navigation-item-text {
-                @include set-margin-left(1rem);
+                @include fd-set-margin-left(1rem);
               }
 
               .#{$block}__navigation-item-indicator {
                 &::after {
-                  @include set-margin-right();
+                  @include fd-set-margin-right();
 
                   display: inline-block;
                 }
@@ -295,7 +295,7 @@ $fd-list-second-level-popover-position: 3.25rem !default;
     }
 
     &-text {
-      @include set-padding-left(0.25rem);
+      @include fd-set-padding-left(0.25rem);
 
       font-size: var(--sapFontLargeSize);
       font-family: var(--sapFontFamily);
