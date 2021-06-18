@@ -114,6 +114,21 @@ $block: #{$fd-namespace}-tabs;
     line-height: 1rem;
     padding: $fd-tabs-link-padding-y $fd-tabs-item-padding-x;
 
+    &.is-selected {
+      .fd-tabs__tag::after {
+        background-color: var(--fdTabs_Selected_Color);
+      }
+
+      .fd-tabs__icon {
+        color: var(--fdTabs_Selected_Icon_Color, var(--sapContent_ContrastIconColor));
+        background-color: var(--fdTabs_Selected_Color);
+
+        &::after {
+          background-color: var(--fdTabs_Selected_Color);
+        }
+      }
+    }
+
     @include fd-focus() {
       box-shadow: none;
       outline: none;
