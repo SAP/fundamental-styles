@@ -51,23 +51,24 @@ See the [Icon Component](https://fundamental-styles.netlify.app/?path=/docs/comp
 ### Project Configuration
 This project does not contain fonts and icons - they must be added to your project separately. Download the @sap-theming library. After adding fonts and icons to your project, include the following in your css:
 
+
     @font-face {
         font-family: "72";
-        src: url("~@sap-theming/theming-base-content/content/Base/baseLib/sap_base_fiori/fonts/72-Regular-full.woff")
+        src: url("~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/72-Regular-full.woff")
             format("woff");
         font-weight: normal;
         font-style: normal;
     }
     @font-face {
         font-family: "72";
-        src: url("~@sap-theming/theming-base-content/content/Base/baseLib/sap_base_fiori/fonts/72-Bold-full.woff")
+        src: url("~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/72-Bold-full.woff")
             format("woff");
         font-weight: 700;
         font-style: normal;
     }
     @font-face {
         font-family: "72";
-        src: url("~@sap-theming/theming-base-content/content/Base/baseLib/sap_base_fiori/fonts/72-Light-full.woff")
+        src: url("~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/72-Light-full.woff")
             format("woff");
         font-weight: 300;
         font-style: normal;
@@ -75,7 +76,7 @@ This project does not contain fonts and icons - they must be added to your proje
 
     @font-face {
         font-family: "SAP-icons";
-        src: url("~@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/fonts/SAP-icons.woff")
+        src: url("~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/SAP-icons.woff")
             format("woff");
         font-weight: normal;
         font-style: normal;
@@ -83,14 +84,14 @@ This project does not contain fonts and icons - they must be added to your proje
 
     @font-face {
         font-family: 'BusinessSuiteInAppSymbols';
-        src: url('~@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/fonts/BusinessSuiteInAppSymbols.woff') format('woff');
+        src: url('~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/BusinessSuiteInAppSymbols.woff') format('woff');
         font-weight: normal;
         font-style: normal;
     }
 
     @font-face {
         font-family: 'SAP-icons-TNT';
-        src: url('~@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/fonts/SAP-icons-TNT.woff') format('woff');
+        src: url('~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/SAP-icons-TNT.woff') format('woff');
         font-weight: normal;
         font-style: normal;
     }
