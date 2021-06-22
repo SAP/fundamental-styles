@@ -36,7 +36,7 @@ npm publish
 npm run build:theming-preview
 
 echo publish "${PACKAGE_PREFIX}/${PACKAGE_THEMING_PREVIEW}"
-cd ${dist-theming}
+cd ${DIST_THEMING_PREVIEW}
 npm publish
 cd ..
 
