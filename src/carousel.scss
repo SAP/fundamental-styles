@@ -21,6 +21,14 @@ $button: #{$fd-namespace}-button;
   @include fd-reset();
   @include fd-flex(column);
 
+  @include fd-hover() {
+    .#{$block}__content {
+      .#{$block}__button {
+        display: block;
+      }
+    }
+  }
+
   width: 100%;
   min-width: 15.5rem;
   max-width: 100%;
@@ -40,6 +48,7 @@ $button: #{$fd-namespace}-button;
       margin: 0;
       top: calc(50%);
       transform: translateY(-50%);
+      display: none;
 
       &.#{$block}__button--left {
         left: $fd-carousel-button-content-offset;
@@ -58,6 +67,14 @@ $button: #{$fd-namespace}-button;
           left: $fd-carousel-button-content-offset;
         }
       }
+    }
+
+    &--display {
+      overflow: hidden;
+    }
+
+    &--horizontal {
+      @include fd-flex();
     }
   }
 
@@ -173,6 +190,14 @@ $button: #{$fd-namespace}-button;
   &--no-navigation {
     .#{$block}__button.#{$button} {
       display: none;
+    }
+
+    @include fd-hover() {
+      .#{$block}__content {
+        .#{$block}__button {
+          display: none;
+        }
+      }
     }
   }
 }
