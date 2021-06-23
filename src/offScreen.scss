@@ -2,10 +2,11 @@
 @import './mixins';
 
 /*!
-.fd-live-announcement
+.fd-off-screen
+places the element far left of the screen so it is not visible.
 */
 
-$block: #{$fd-namespace}-live-announce;
+$block: #{$fd-namespace}-off-screen;
 
 .#{$block} {
   @include fd-reset();
