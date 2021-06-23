@@ -1,0 +1,220 @@
+@import './new-settings';
+@import './mixins';
+
+// Selectors
+$block: #{$fd-namespace}-micro-process-flow;
+$content: #{$block}__content;
+$nav-control: #{$block}__nav;
+$nav-icon: #{$block}__nav-icon;
+$nav-counter: #{$block}__nav-counter;
+$step-wrapper: #{$block}__step-wrapper;
+$step: #{$block}__step;
+$step-content: #{$block}__step-content;
+$step-icon: #{$block}__step-icon;
+$step-connector: #{$block}__step-connector;
+$step-intermediary-icon: #{$block}__step-intermediary-icon;
+
+.#{$block} {
+  // Variables
+  $fd-micro-process-flow-icon-font-size: var(--sapFontSmallSize) !default;
+  $fd-micro-process-flow-icon-large-font-size: var(--sapFontLargeSize) !default;
+  $fd-micro-process-flow-icon-color: var(--sapContent_ContrastIconColor) !default;
+  $fd-micro-process-flow-step-size: 1.375rem !default;
+  $fd-micro-process-flow-step-area-size: 2rem !default; // touch area
+  $fd-micro-process-flow-step-area-padding: ($fd-micro-process-flow-step-area-size - $fd-micro-process-flow-step-size) / 2;
+  $fd-micro-process-flow-step-large-size: 1.875rem !default;
+  $fd-micro-process-flow-step-large-area-size: 2.75rem !default;
+  $fd-micro-process-flow-step-large-area-padding: ($fd-micro-process-flow-step-large-area-size - $fd-micro-process-flow-step-large-size) / 2;
+  $fd-micro-process-flow-step-border-color: var(--sapNeutralBorderColor) !default;
+  $fd-micro-process-flow-step-background: var(--sapNeutralBackground) !default;
+  $fd-micro-process-flow-step-connector-color: var(--sapContent_ForegroundBorderColor) !default;
+  $fd-micro-process-flow-step-connector-padding: 0.1875rem;
+  $fd-micro-process-flow-step-connector-width: 1rem;
+  $fd-micro-process-flow-step-large-connector-width: 1.5rem;
+  $fd-micro-process-flow-counter-font-size: 1rem !default;
+  $fd-micro-process-flow-large-counter-font-size: 1.25rem !default;
+
+  $semantic-states: (
+    'positive': (
+      'color': var(--sapPositiveElementColor)
+    ),
+    'critical': (
+      'color': var(--sapCriticalElementColor)
+    ),
+    'negative': (
+      'color': var(--sapNegativeElementColor)
+    ),
+    'information': (
+      'color': var(--sapInformativeElementColor)
+    )
+  );
+
+  // Mixins
+  @mixin fd-step-size($size) {
+    height: $size;
+    min-width: $size;
+  }
+
+  @mixin fd-step-area-padding($padding) {
+    padding: $padding;
+    margin-left: -$padding;
+    margin-right: -$padding;
+  }
+
+  // Styles
+  &,
+  .#{$step-wrapper},
+  .#{$content},
+  .#{$nav-control},
+  .#{$nav-icon},
+  .#{$nav-counter},
+  .#{$step},
+  .#{$step-content},
+  .#{$step-connector},
+  .#{$step-icon} {
+    @include fd-reset();
+  }
+
+  @include fd-flex(row) {
+    align-items: center;
+  }
+
+  .#{$content} {
+    @include fd-flex(row) {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+
+  .#{$nav-control} {
+    @include fd-flex-center();
+  }
+
+  .#{$nav-icon} {
+    @include fd-icon-element-base() {
+      @include fd-flex();
+    }
+  }
+
+  .#{$nav-counter} {
+    font-size: $fd-micro-process-flow-counter-font-size;
+  }
+
+  .#{$step-wrapper} {
+    @include fd-flex(row) {
+      align-items: center;
+    }
+  }
+
+  .#{$step} {
+    @include fd-flex(row) {
+      align-items: center;
+    }
+
+    @include fd-step-area-padding($fd-micro-process-flow-step-area-padding);
+  }
+
+  .#{$step-content} {
+    @include fd-flex-center();
+  }
+
+  .#{$step-connector} {
+    position: relative;
+
+    @include fd-flex-center();
+
+    min-height: 1px;
+    min-width: $fd-micro-process-flow-step-connector-width;
+
+    &::before {
+      position: absolute;
+      content: '';
+      height: 1px;
+      left: $fd-micro-process-flow-step-connector-padding;
+      right: $fd-micro-process-flow-step-connector-padding;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background: $fd-micro-process-flow-step-connector-color;
+    }
+  }
+
+  .#{$step-intermediary-icon} {
+    @include fd-flex();
+  }
+
+  .#{$step-icon} {
+    @include fd-icon-element-base() {
+      @include fd-flex();
+    }
+  }
+
+  &--icon {
+    .#{$step-content} {
+      @include fd-step-size($fd-micro-process-flow-step-size);
+
+      background: $fd-micro-process-flow-step-background;
+      border: 1px solid $fd-micro-process-flow-step-border-color;
+      border-radius: 50%;
+    }
+
+    .#{$step} {
+      @each $name, $options-set in $semantic-states {
+        &--state-#{$name} {
+          .#{$step-content} {
+            background-color: map_get($options-set, 'color');
+            border: none;
+          }
+
+          .#{$step-icon} {
+            @include fd-icon-overwrite() {
+              color: $fd-micro-process-flow-icon-color;
+            }
+          }
+        }
+      }
+    }
+
+    .#{$step-icon} {
+      font-size: $fd-micro-process-flow-icon-font-size;
+    }
+
+    &.#{$block}--cozy {
+      .#{$step-content} {
+        @include fd-step-size($fd-micro-process-flow-step-large-size);
+      }
+
+      .#{$step-icon} {
+        font-size: $fd-micro-process-flow-icon-large-font-size;
+      }
+    }
+  }
+
+  &--independent {
+    .#{$step-connector} {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &--overflow {
+    .#{$content} {
+      overflow: hidden;
+    }
+  }
+
+  &--cozy {
+    .#{$nav-counter} {
+      font-size: $fd-micro-process-flow-large-counter-font-size;
+    }
+
+    .#{$step} {
+      @include fd-step-area-padding($fd-micro-process-flow-step-large-area-padding);
+    }
+
+    .#{$step-connector} {
+      min-width: $fd-micro-process-flow-step-large-connector-width;
+    }
+  }
+}

@@ -60,7 +60,7 @@ module.exports = {
           files.forEach((file) => {
             comp.fileDependencies.add(path.resolve(file));
           });
-        });
+        });      
       },
     });
     config.plugins.push({
@@ -71,9 +71,9 @@ module.exports = {
           const wasLessChanged = Object.keys(filesChanged).some((file) => file.includes(".scss"));
 
           if (wasLessChanged) {
-            exec("npm run build:default", (err, stdout, stderr) => {
+            exec("npm run build", (error, stdout, stderr) => {
               if (stdout) process.stdout.write(stdout);
-              if (stderr) process.stderr.write(stderr);
+              if (stderr) process.stderr.write(stderr);              
             });
           }
         });
