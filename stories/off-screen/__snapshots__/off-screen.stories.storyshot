@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Off Screen Primary 1`] = `
+<div
+  aria-live="polite"
+  class="fd-off-screen"
+>
+  
+    This will be read whenever this element changes.
+
+</div>
+`;
