@@ -114,15 +114,14 @@ $block: #{$fd-namespace}-tabs;
     line-height: 1rem;
     padding: $fd-tabs-link-padding-y $fd-tabs-item-padding-x;
 
-    &.is-selected {
-      .fd-tabs__tag::after {
+    @include fd-selected() {
+      .#{$block}__icon {
+        color: var(--fdTabs_Selected_Icon_Color, var(--sapContent_ContrastIconColor));
         background-color: var(--fdTabs_Selected_Color);
       }
 
-      .fd-tabs__icon {
-        color: var(--fdTabs_Selected_Icon_Color, var(--sapContent_ContrastIconColor));
-        background-color: var(--fdTabs_Selected_Color);
-
+      .#{$block}__icon,
+      .#{$block}__tag {
         &::after {
           background-color: var(--fdTabs_Selected_Color);
         }
