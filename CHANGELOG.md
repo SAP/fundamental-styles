@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.13...v0.19.0-rc.14) (2021-06-23)
+
+
+### Bug Fixes
+
+* show navigation button on hover in carousel content area, carousel component css moved from ngx ([#2431](https://github.com/SAP/fundamental-styles/issues/2431)) ([d6ae1ee](https://github.com/SAP/fundamental-styles/commit/d6ae1eed1fd3c13f2f9537a3d4259b5e1ee6a53f))
+
 ## [0.19.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.12...v0.19.0-rc.13) (2021-06-22)
 
 ## [0.19.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.11...v0.19.0-rc.12) (2021-06-22)
