@@ -1,0 +1,287 @@
+export default {
+    title: 'Theming/Text',
+    parameters: {
+        components: ['icon', 'link', 'breadcrumb', 'text', 'title', 'object-status',
+            'object-marker', 'info-label', 'message-strip', 'button']
+    }
+};
+
+export const primary = () => `
+    <h3>Link</h3>
+    <a href="#" class="fd-link" tabindex="0">Default link</a>
+    <br><br>
+    <a href="#" class="fd-link fd-link--emphasized" tabindex="0">Emphasized link</a>
+    <br><br>
+    <a href="#" class="fd-link fd-link--subtle">Subtle link</a>
+    <br><br>
+    <a class="fd-link" aria-disabled="true">Disabled link</a>
+    <br><br>
+    <div style="background-color:#314a5e;padding:10px">
+        <a href="#" class="fd-link fd-link--inverted">Inverted link</a>
+    </div>
+    <br><br>
+    <a href="#" class="fd-link" tabindex="0">
+        Right icon link 
+        <span class="sap-icon--slim-arrow-right sap-icon--s"></span>
+    </a>
+    <br><br>
+    <a href="#" class="fd-link" tabindex="0">
+        <span class="sap-icon--slim-arrow-left sap-icon--s"></span> 
+        Left icon link
+    </a>
+    <br><br>
+
+    <h3>Breadcrumb</h3>
+    <nav aria-label="products breadcrumbs">
+        <ul class="fd-breadcrumb">
+            <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Products</a></li>
+            <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Suppliers</a></li>
+            <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Titanium</a></li>
+            <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Ultra Portable</a></li>
+            <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">12 inch</a></li>
+            <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Super portable deluxe</a></li>
+            <li aria-current="page" class="fd-breadcrumb__item">Laptop</li>
+        </ul>
+    </nav>
+    <br><br>
+
+    <h3>Text</h3>
+    <p class="fd-text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+    deserunt mollit anim id est laborum.</p>
+    <br><br>
+
+    <h3>Title</h3>
+    <h1 class="fd-title fd-title--h1">Title Level 1</h1>
+    <h2 class="fd-title fd-title--h2">Title Level 2</h2>
+    <h3 class="fd-title fd-title--h3">Title Level 3</h3>
+    <h4 class="fd-title fd-title--h4">Title Level 4</h4>
+    <h5 class="fd-title fd-title--h5">Title Level 5</h5>
+    <h6 class="fd-title fd-title--h6">Title Level 6</h6>
+    <br><br>
+
+    <h3>Object Status</h3>
+    <div class="fddocs-container">
+        <span class="fd-object-status fd-object-status--negative">
+            <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
+            <span class="fd-object-status__text">Negative</span>
+        </span>
+        <span class="fd-object-status fd-object-status--critical">
+            <i class="fd-object-status__icon sap-icon--message-warning" role="presentation"></i>
+            <span class="fd-object-status__text">Critical</span>
+        </span>
+        <span class="fd-object-status fd-object-status--positive">
+            <i class="fd-object-status__icon sap-icon--message-success" role="presentation"></i>
+            <span class="fd-object-status__text">Positive</span>
+        </span>
+        <span class="fd-object-status fd-object-status--informative">
+            <i class="fd-object-status__icon sap-icon--message-information" role="presentation"></i>
+            <span class="fd-object-status__text">Info</span>
+        </span>
+    </div>
+    <br>
+    <div class="fddocs-container">
+        <span class="fd-object-status fd-object-status--negative">
+            <i class="fd-object-status__icon sap-icon--message-error" aria-label="Negative"></i>
+        </span>
+        <span class="fd-object-status fd-object-status--critical">
+            <i class="fd-object-status__icon sap-icon--message-warning" aria-label="Warning"></i>
+        </span>
+        <span class="fd-object-status fd-object-status--positive">
+            <i class="fd-object-status__icon sap-icon--message-success" aria-label="Correct"></i>
+        </span>
+        <span class="fd-object-status fd-object-status--informative">
+            <i class="fd-object-status__icon sap-icon--message-information" aria-label="More information"></i>
+        </span>
+    </div>
+    <br>
+    <div class="fddocs-container">
+        <span class="fd-object-status fd-object-status--negative">
+            <span class="fd-object-status__text">Negative</span>
+        </span>
+        <span class="fd-object-status fd-object-status--critical">
+            <span class="fd-object-status__text">Critical</span>
+        </span>
+        <span class="fd-object-status fd-object-status--positive">
+            <span class="fd-object-status__text">Positive</span>
+        </span>
+        <span class="fd-object-status fd-object-status--informative">
+            <span class="fd-object-status__text">Info</span>
+        </span>
+        <span class="fd-object-status">
+            <span class="fd-object-status__text">Neutral</span>
+        </span>
+    </div>
+    <br>
+    <div class="fddocs-container">
+        <span class="fd-object-status fd-object-status--negative fd-object-status--inverted">
+            <span class="fd-object-status__text">Inverted Negative</span>
+        </span>
+        <span class="fd-object-status fd-object-status--critical fd-object-status--inverted">
+            <span class="fd-object-status__text">Inverted Warning</span>
+        </span>
+        <span class="fd-object-status fd-object-status--positive fd-object-status--inverted">
+            <span class="fd-object-status__text">Inverted Success</span>
+        </span>
+        <span class="fd-object-status fd-object-status--informative fd-object-status--inverted">
+            <span class="fd-object-status__text">Inverted informative</span>
+        </span>
+        <span class="fd-object-status fd-object-status--inverted">
+            <span class="fd-object-status__text">Inverted Neutral</span>
+        </span>
+        <span class="fd-object-status fd-object-status--inverted fd-object-status--negative">
+            <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
+        </span>
+        <span class="fd-object-status fd-object-status--inverted fd-object-status--negative">
+            <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
+            <span class="fd-object-status__text">Negative</span>
+        </span>
+        <span class="fd-object-status fd-object-status--inverted fd-object-status--critical">
+            <i class="fd-object-status__icon sap-icon--message-warning" role="presentation"></i>
+            <span class="fd-object-status__text">Critical</span>
+        </span>
+        <span class="fd-object-status fd-object-status--inverted fd-object-status--positive">
+            <i class="fd-object-status__icon sap-icon--message-success" role="presentation"></i>
+            <span class="fd-object-status__text">Positive</span>
+        </span>
+        <span class="fd-object-status fd-object-status--inverted fd-object-status--informative">
+            <i class="fd-object-status__icon sap-icon--message-information" role="presentation"></i>
+            <span class="fd-object-status__text">Informative</span>
+        </span>
+        <span class="fd-object-status fd-object-status--inverted">
+            <span class="fd-object-status__text">Neutral</span>
+        </span>
+    </div>
+    <br><br>
+
+    <h3>Object Marker</h3>
+    <div class="fd-object-marker">
+        <i class="fd-object-marker__icon sap-icon--request" aria-label="icon for request"></i>
+    </div>
+    <div class="fd-object-marker">
+        <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite"></i>
+    </div>
+    <div class="fd-object-marker">
+        <i class="fd-object-marker__icon sap-icon--flag" aria-label="icon for flag"></i>
+    </div>
+    <div class="fd-object-marker">
+        <i class="fd-object-marker__icon sap-icon--user-edit" aria-label="icon for user edit"></i>
+    </div>
+    <div class="fd-object-marker">
+        <i class="fd-object-marker__icon sap-icon--private" aria-label="icon for private"></i>
+    </div>
+    <br><br>
+    <div class="fd-object-marker">
+        <i class="fd-object-marker__icon sap-icon--request" role="presentation"></i>
+        <span class="fd-object-marker__text">Request</span>
+    </div>
+    <div class="fd-object-marker">
+        <i class="fd-object-marker__icon sap-icon--favorite" role="presentation"></i>
+        <span class="fd-object-marker__text">Favourite</span>
+    </div>
+    <div class="fd-object-marker">
+        <i class="fd-object-marker__icon sap-icon--flag" role="presentation"></i>
+        <span class="fd-object-marker__text">Flag</span>
+    </div>
+    <div class="fd-object-marker">
+        <i class="fd-object-marker__icon sap-icon--user-edit" role="presentation"></i>
+        <span class="fd-object-marker__text">Draft</span>
+    </div>
+    <div class="fd-object-marker">
+        <i class="fd-object-marker__icon sap-icon--private" role="presentation"></i>
+        <span class="fd-object-marker__text">Locked</span>
+    </div>
+    <br><br>
+
+    <h3>Info Label</h3>
+    <div class="fddocs-container">
+        <span class="fd-info-label fd-info-label--accent-color-1">
+            <span class="fd-info-label__text">Info Label</span>
+        </span>
+        <br><br>
+        <span class="fd-info-label fd-info-label--accent-color-2">
+            <span class="fd-info-label__text">Info Label</span>
+        </span>
+        <br><br>
+        <span class="fd-info-label fd-info-label--accent-color-3">
+            <span class="fd-info-label__text">Info Label</span>
+        </span>
+        <br><br>
+        <span class="fd-info-label fd-info-label--accent-color-4">
+            <span class="fd-info-label__text">Info Label</span>
+        </span>
+        <br><br>
+        <span class="fd-info-label fd-info-label--accent-color-5">
+            <span class="fd-info-label__text">Info Label</span>
+        </span>
+        <br><br>
+        <span class="fd-info-label fd-info-label--accent-color-6">
+            <span class="fd-info-label__text">Info Label</span>
+        </span>
+        <br><br>
+        <span class="fd-info-label fd-info-label--accent-color-7">
+            <span class="fd-info-label__text">Info Label</span>
+        </span>
+        <br><br>
+        <span class="fd-info-label fd-info-label--accent-color-8">
+            <span class="fd-info-label__text">Info Label</span>
+        </span>
+        <br><br>
+        <span class="fd-info-label fd-info-label--accent-color-9">
+            <span class="fd-info-label__text">Info Label</span>
+        </span>
+        <br><br>
+        <span class="fd-info-label fd-info-label--accent-color-10">
+            <span class="fd-info-label__text">Info Label</span>
+        </span>
+    </div>
+    <br><br>
+
+    <h3>Message Strip</h3>
+    <div class="fd-message-strip fd-message-strip--information fd-message-strip--dismissible" 
+        role="alert" id="SsoiW592">
+        <p class="fd-message-strip__text">
+            Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
+        </p>
+        <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW592" aria-label="Close">
+            <i class="sap-icon--decline"></i>
+        </button>
+    </div>
+    <br />
+
+    <div class="fd-message-strip fd-message-strip--success fd-message-strip--dismissible" 
+        role="alert" id="SsoiW593">
+        <p class="fd-message-strip__text">
+            Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
+        </p>
+        <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW593" aria-label="Close">
+            <i class="sap-icon--decline"></i>
+        </button>
+    </div>
+    <br />
+
+    <div class="fd-message-strip fd-message-strip--warning fd-message-strip--dismissible" 
+        role="alert" id="SsoiW594">
+        <p class="fd-message-strip__text">
+            Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
+        </p>
+        <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW594" aria-label="Close">
+            <i class="sap-icon--decline"></i>
+        </button>
+    </div>
+    <br />
+
+    <div class="fd-message-strip fd-message-strip--error fd-message-strip--dismissible" 
+        role="alert" id="SsoiW595">
+        <p class="fd-message-strip__text">
+            Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
+        </p>
+        <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW595" aria-label="Close">
+            <i class="sap-icon--decline"></i>
+        </button>
+    </div>
+    <br><br>
+`;
