@@ -3,7 +3,7 @@
 
 /*!
 .fd-off-screen
-places the element far left of the screen so it is not visible.
+places the element far left of the screen. so it is not visible.
 */
 
 $block: #{$fd-namespace}-off-screen;
@@ -13,8 +13,8 @@ $block: #{$fd-namespace}-off-screen;
 
   /*
   * Element with aria-live will be announced on change in value, but
-  * this elemen should not be visible on screen, but also can't be made hidden or display none because of
-  * for screen reader requirement
+  * this element should not be visible on screen, and also can't be made `visibility: hidden` or `display none`
+  * because of screen reader requirement
   * please see: https://webaim.org/techniques/css/invisiblecontent/
   */
   position: absolute;
