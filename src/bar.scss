@@ -28,6 +28,16 @@ $block: #{$fd-namespace}-bar;
     right: $margin-x;
   }
 
+  @mixin padding-left-right($left, $right) {
+    padding-left: $left;
+    padding-right: $right;
+
+    @include fd-rtl() {
+      padding-left: $right;
+      padding-right: $left;
+    }
+  }
+
   @include fd-reset();
   @include bar-design();
 
@@ -83,6 +93,12 @@ $block: #{$fd-namespace}-bar;
 
     & > *:first-child {
       flex-grow: 1;
+    }
+  }
+
+  &__left > &__element:first-child {
+    span:nth-child(1) {
+      @include padding-left-right(1rem, 0);
     }
   }
 

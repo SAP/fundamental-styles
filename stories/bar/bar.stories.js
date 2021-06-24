@@ -44,11 +44,6 @@ export const Default = () => `
 <div class="fd-bar">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
-                <i class="sap-icon--navigation-left-arrow"></i>
-            </button>
-        </div>
-        <div class="fd-bar__element">
             <span aria-label="text">TEXT</span>
         </div>
     </div>
