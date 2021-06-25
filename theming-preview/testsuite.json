@@ -4,64 +4,63 @@
         {
           "text": "Controls",
           "links": [
-  
             {
               "text": "Button",
-              "ref": "index.html#Button"
+              "ref": "button.html"
             },
             {
               "text": "Calendar",
-              "ref": "index.html#Calendar"
+              "ref": "calendar.html"
             },
             {
               "text": "Form",
-              "ref": "index.html#Form"
+              "ref": "form.html"
             },
             {
               "text": "Input",
-              "ref": "index.html#Input"
+              "ref": "input.html"
             },
             {
               "text": "Page Header and Footer",
-              "ref": "index.html#Page"
+              "ref": "header-footer.html"
             },
             {
               "text": "Object Header",
-              "ref": "index.html#ObjectPage"
+              "ref": "object-header.html"
             },
             {
               "text": "Group and Panel",
-              "ref": "index.html#Panel"
+              "ref": "panel.html"
             },
             {
               "text": "Indication Colors",
-              "ref": "index.html#IndicationColors"
+              "ref": "indication-colors.html"
             },
             {
               "text": "Semantic Colors",
-              "ref": "index.html#SemanticColors"
+              "ref": "semantic-colors.html"
             },
             {
               "text": "Shell, Tiles and Cards",
-              "ref": "flp.html",
+              "ref": "shell-tile-card.html",
               "defaultSelected": true,
               "defaultActive": true
             },
             {
               "text": "Toolbar",
-              "ref": "index.html#Toolbar"
+              "ref": "toolbar.html"
             },
             {
               "text": "Table",
-              "ref": "index.html#Table"
+              "ref": "table.html"
             },
             {
               "text": "Text",
-              "ref": "index.html#Text"
+              "ref": "text.html"
             },
             {
               "text": "Icon",
-              "ref": "index.html#Icon"
+              "ref": "icon.html"
             }
           ]
         }

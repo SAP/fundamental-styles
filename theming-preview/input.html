@@ -1,0 +1,715 @@
+<h3>Default Input</h3>
+<div class="fd-form-item">
+    <label class="fd-form-label" for="input-1">Default input:</label>
+    <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text">
+</div>
+<br><br>
+<div class="fd-form-item">
+    <label class="fd-form-label" for="input-1b">Compact Input:</label>
+    <input class="fd-input fd-input--compact" type="text" id="input-1b" placeholder="Field placeholder text">
+</div>
+<br />
+<br />
+<div class="fd-form-item">
+    <label class="fd-form-label fd-form-label--required" for="input-1c">Required Input:</label>
+    <input class="fd-input" type="text" id="input-1c" placeholder="Field placeholder text">
+</div>
+<br />
+<br />
+<div class="fd-form-item">
+    <label class="fd-form-label" aria-required="true" for="input-1d">Password:</label>
+    <input class="fd-input" type="password" id="input-1d">
+</div>
+<br />
+<br />
+<div class="fd-form-item">
+    <label class="fd-form-label" for="input-01">Error Input:</label>
+    <input class="fd-input is-error" type="text" id="input-01" placeholder="Field placeholder text">
+</div>
+<br />
+<br />
+<div class="fd-form-item">
+    <label class="fd-form-label" for="input-02">Success Input:</label>
+    <input class="fd-input is-success" type="text" id="input-02" placeholder="Field placeholder text">
+</div>
+<br />
+<br />
+<div class="fd-form-item">
+    <label class="fd-form-label" for="input-03">Warning (Alert) Input:</label>
+    <input class="fd-input is-warning" type="text" id="input-03" placeholder="Field placeholder text">
+</div>
+<br />
+<br />
+<div class="fd-form-item">
+    <label class="fd-form-label" for="input-04">Information Input:</label>
+    <input class="fd-input is-information" type="text" id="input-04">
+</div>
+<br />
+<br />
+<div class="fd-form-item">
+    <label class="fd-form-label" for="input-05">Disabled Input:</label>
+    <input class="fd-input" type="text" id="input-05" disabled placeholder="Field placeholder text">
+</div>
+<br />
+<br />
+<div class="fd-form-item">
+    <label class="fd-form-label" for="input-06">Read-Only Input:</label>
+    <input class="fd-input" type="text" id="input-06" readonly placeholder="Field placeholder text">
+</div>
+<br />
+<br />
+<div class="fd-form-item fd-form-item--horizontal">
+    <label class="fd-form-label" for="input-07">Default input:</label>
+        <input class="fd-input" type="text" id="input-07" placeholder="Field placeholder text" aria-label="Image label">
+</div>
+<br><br>
+<div class="fd-form-item fd-form-item--horizontal">
+    <label class="fd-form-label" for="input-08">Compact input:</label>
+        <input class="fd-input fd-input--compact" type="text" id="input-08" placeholder="Field placeholder text" aria-label="Image label">
+</div>
+<br /><br />
+<div class="fd-form-item fd-form-item--horizontal">
+    <label class="fd-form-label fd-form-label--required" for="input-09">Required Input:</label>
+    <input class="fd-input" type="text" id="input-09" placeholder="Field placeholder text">
+</div>
+<br />
+<br />
+<div class="fd-form-item fd-form-item--horizontal">
+    <label class="fd-form-label" aria-required="true" for="input-10">Password:</label>
+    <input class="fd-input" type="password" id="input-10">
+</div>
+<br />
+<br />
+<div class="fd-form-item fd-form-item--horizontal">
+    <label class="fd-form-label" aria-required="true" for="input-11">Input:</label>
+    <input class="fd-input" type="text" id="input-11">
+</div>
+<br />
+
+<h3>Input States</h3>
+<div class="fd-form-item">
+    <label class="fd-form-label" for="input-1aa">Normal input:</label>
+    <input class="fd-input" type="text" id="input-1aa" placeholder="Field placeholder text" aria-label="Image label">
+</div>
+<br /><br />
+<div class="fd-form-item">
+    <label class="fd-form-label" for="input-1bb">Success input:</label>
+    <div class="fd-popover fd-popover--input-message-group">
+        <div class="fd-popover__control" aria-controls="popoverB2" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverB2');">
+            <input class="fd-input is-success" type="text" id="input-1bb" placeholder="Field placeholder text" aria-label="Image label">
+        </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB2">
+            <div class="fd-form-message fd-form-message--success">Success message</div>
+        </div>
+    </div>
+</div>
+<br /><br />
+<div class="fd-form-item">
+    <label class="fd-form-label" for="input-1cc">Error input:</label>
+    <div class="fd-popover fd-popover--input-message-group">
+        <div class="fd-popover__control" aria-controls="popoverB3" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverB3');">
+            <input class="fd-input is-error" type="text" id="input-1cc" placeholder="Field placeholder text" aria-label="Image label">
+        </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB3">
+            <div class="fd-form-message fd-form-message--error" >Error message</div>
+        </div>
+    </div>
+</div>
+<br /><br />
+<div class="fd-form-item">
+    <label class="fd-form-label" for="input-1dd">Warning input:</label>
+    <div class="fd-popover fd-popover--input-message-group">
+        <div class="fd-popover__control" aria-controls="popoverB4" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverB4');">
+            <input class="fd-input is-warning" type="text" id="input-1dd" placeholder="Field placeholder text" aria-label="Image label">
+        </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB4">
+            <div class="fd-form-message fd-form-message--warning">Warning message</div>
+        </div>
+    </div>
+</div>
+<br /><br />
+<div class="fd-form-item">
+    <label class="fd-form-label" for="input-1ee">Information input:</label>
+    <div class="fd-popover fd-popover--input-message-group">
+        <div class="fd-popover__control" aria-controls="popoverB5" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverB5');">
+            <input class="fd-input fd-input--compact is-information" type="text" id="input-1ee" placeholder="Field placeholder text" aria-label="Image label">
+        </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="popoverB5">
+            <div class="fd-form-message fd-form-message--information">Information message</div>
+        </div>
+    </div>
+</div>
+<br /><br />
+<div class="fd-form-item">
+    <label class="fd-form-label" for="input-1ff">Disabled Input:</label>
+    <input class="fd-input" type="text" id="input-1ff" value="Non editable data" disabled>
+</div>
+<br /><br />
+<div class="fd-form-item">
+    <label class="fd-form-label" for="input-1gg">Read Only Input:</label>
+    <input class="fd-input" type="text" id="input-1gg" value="Read only data" readonly>
+</div>
+<br /><br />
+
+<h3>Checkbox</h3>
+${localStyles}
+<fieldset class="fd-fieldset">
+    <legend class="fd-fieldset__legend">Desktop (compact) checkboxes</legend>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez611c">
+            <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez611c">
+                <span class="fd-checkbox__text">Apple</span>
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez612c" checked>
+            <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez612c">
+                <span class="fd-checkbox__text">Banana</span>
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez622c" disabled>
+            <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez622c">
+                <span class="fd-checkbox__text">Kiwi</span>
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez632c"  checked disabled>
+            <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez632c">
+                <span class="fd-checkbox__text">Lemon</span>
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez613c">
+            <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez613c">
+                <span class="fd-checkbox__text">All Fruits (TriState)</span>
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez643c" disabled>
+            <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez643c">
+                <span class="fd-checkbox__text">All Fruits (TriState)</span>
+            </label>
+        </div>
+    </div>
+</fieldset>
+<br />
+
+<h3>Inline Checkbox</h3>
+<fieldset class="fd-fieldset">
+    <div class="fd-form-group fd-form-group--inline">
+        <div class="fd-form-group__item fd-form-item">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez617">
+            <label class="fd-checkbox__label" for="Ai4ez617">
+                <span class="fd-checkbox__text">Potatoes</span>
+            </label>
+        </div>
+        <div class="fd-form-group__item fd-form-item">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez618" checked>
+            <label class="fd-checkbox__label" for="Ai4ez618">
+                <span class="fd-checkbox__text">Tomatoes</span>
+            </label>
+        </div>
+        <div class="fd-form-group__item fd-form-item">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez619" disabled checked>
+            <label class="fd-checkbox__label" for="Ai4ez619">
+                <span class="fd-checkbox__text">Carrots</span>
+            </label>
+        </div>
+    </div>
+</fieldset>
+<br />
+
+<h3>Checkbox States</h3>
+<div class="checkbox-example-container">
+    <fieldset class="fd-fieldset" style="max-width: 100%;">
+        <legend class="fd-fieldset__legend">Error checkboxes</legend>
+        <div class="fd-form-group">
+            <div class="fd-form-item">
+                <input type="checkbox" class="fd-checkbox is-error" id="Ai4ez6119">
+                <label class="fd-checkbox__label" for="Ai4ez6119">
+                    <span class="fd-checkbox__text">Text Option</span>
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="checkbox" class="fd-checkbox is-error" id="Ai4ez6129" checked>
+                <label class="fd-checkbox__label" for="Ai4ez6129">
+                    <span class="fd-checkbox__text">Selected State</span>
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="checkbox" class="fd-checkbox is-error" id="Ai4ez613i1">
+                <label class="fd-checkbox__label" for="Ai4ez613i1">
+                    <span class="fd-checkbox__text">TriState Text</span>
+                </label>
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset class="fd-fieldset" style="max-width: 100%;">
+        <legend class="fd-fieldset__legend">Success checkboxes</legend>
+        <div class="fd-form-group">
+            <div class="fd-form-item">
+                <input type="checkbox" class="fd-checkbox is-success" id="Ai4ez61192">
+                <label class="fd-checkbox__label" for="Ai4ez61192">
+                    <span class="fd-checkbox__text">Text Option</span>
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="checkbox" class="fd-checkbox is-success" id="Ai4ez61292" checked>
+                <label class="fd-checkbox__label" for="Ai4ez61292">
+                    <span class="fd-checkbox__text">Selected State</span>
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="checkbox" class="fd-checkbox is-success" id="Ai4ez613i2">
+                <label class="fd-checkbox__label" for="Ai4ez613i2">
+                    <span class="fd-checkbox__text">TriState Text</span>
+                </label>
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset class="fd-fieldset" style="max-width: 100%;">
+        <legend class="fd-fieldset__legend">Warning checkboxes</legend>
+        <div class="fd-form-group">
+            <div class="fd-form-item">
+                <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez61193">
+                <label class="fd-checkbox__label" for="Ai4ez61193">
+                    <span class="fd-checkbox__text">Text Option</span>
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez61293" checked>
+                <label class="fd-checkbox__label" for="Ai4ez61293">
+                    <span class="fd-checkbox__text">Selected State</span>
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez613i3">
+                <label class="fd-checkbox__label" for="Ai4ez613i3">
+                    <span class="fd-checkbox__text">TriState Text</span>
+                </label>
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset class="fd-fieldset" style="max-width: 100%;">
+        <legend class="fd-fieldset__legend">Information checkboxes</legend>
+        <div class="fd-form-group">
+            <div class="fd-form-item">
+                <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez61194">
+                <label class="fd-checkbox__label" for="Ai4ez61194">
+                    <span class="fd-checkbox__text">Text Option</span>
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez61294" checked>
+                <label class="fd-checkbox__label" for="Ai4ez61294">
+                    <span class="fd-checkbox__text">Selected State</span>
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez613i4">
+                <label class="fd-checkbox__label" for="Ai4ez613i4">
+                    <span class="fd-checkbox__text">TriState Text</span>
+                </label>
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset class="fd-fieldset" style="max-width: 100%;">
+        <legend class="fd-fieldset__legend">Disabled checkboxes</legend>
+        <div class="fd-form-group">
+            <div class="fd-form-item">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez61196" disabled>
+                <label class="fd-checkbox__label" for="Ai4ez61196">
+                    <span class="fd-checkbox__text">Text Option</span>
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez61296" checked disabled>
+                <label class="fd-checkbox__label" for="Ai4ez61296">
+                    <span class="fd-checkbox__text">Selected State</span>
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez613i6" disabled>
+                <label class="fd-checkbox__label" for="Ai4ez613i6">
+                    <span class="fd-checkbox__text">TriState Text</span>
+                </label>
+            </div>
+        </div>
+    </fieldset>
+</div>
+<br /><br />
+
+<h3>Radio</h3>
+<fieldset class="fd-fieldset" id="radio1">
+    <legend class="fd-fieldset__legend">Radio Buttons Cozy Mode</legend>
+    <div class="fd-form__group">
+        <div class="fd-form-item">
+            <input type="radio" class="fd-radio" id="pDidh761" name="radio1" checked>
+            <label class="fd-radio__label" for="pDidh761">
+                Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="radio" class="fd-radio" id="pDidh7612" name="radio1">
+            <label class="fd-radio__label" for="pDidh7612">
+                Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="radio" class="fd-radio" id="pDidh764" name="radio3" disabled>
+            <label class="fd-radio__label" for="pDidh764">
+                Field label (disabled)
+            </label>
+        </div>
+    </div>
+</fieldset>
+<br>
+<fieldset class="fd-fieldset" id="radio2">
+    <legend class="fd-fieldset__legend">Radio Buttons Compact Mode</legend>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <input type="radio" class="fd-radio fd-radio--compact" id="pDidh76111" name="radio2" checked>
+            <label class="fd-radio__label" for="pDidh76111">
+                Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="radio" class="fd-radio fd-radio--compact" id="pDidh761211" name="radio2">
+            <label class="fd-radio__label" for="pDidh761211">
+                Field label
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="radio" class="fd-radio fd-radio--compact" id="pDidh76131133" name="radio2" disabled>
+            <label class="fd-radio__label" for="pDidh76131133">
+                Field label (disabled)
+            </label>
+        </div>
+    </div>
+</fieldset>
+<br>
+
+<fieldset class="fd-fieldset" id="radio4">
+    <legend class="fd-fieldset__legend">Inline Radio buttons</legend>
+        <div class="fd-form-group fd-form-group--inline">
+            <div class="fd-form-group__item fd-form-item">
+                <input type="radio" class="fd-radio" id="pDidh767" name="radio4" checked>
+                <label class="fd-radio__label" for="pDidh767">
+                    Field label
+                </label>
+            </div>
+            <div class="fd-form-group__item fd-form-item">
+                <input type="radio" class="fd-radio" id="pDidh7618" name="radio4" >
+                <label class="fd-radio__label" for="pDidh7618">
+                    Field label
+                </label>
+            </div>
+            <div class="fd-form-group__item fd-form-item">
+                <input type="radio" class="fd-radio" id="pDidh7619" name="radio4">
+                <label class="fd-radio__label" for="pDidh7619">
+                    Field label
+                </label>
+            </div>
+        </div>
+</fieldset>
+<br>
+
+<div style="display:flex;justify-content:space-between">
+    <fieldset class="fd-fieldset" id="radio5">
+        <legend class="fd-fieldset__legend">Interaction States</legend>
+        <div class="fd-form-group">
+            <div class="fd-form-item">
+                <input type="radio" class="fd-radio" id="iSpDidh761" name="radio5" checked>
+                <label class="fd-radio__label" for="iSpDidh761">
+                    Field label
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="radio" class="fd-radio is-success" id="iSpDidh7612" name="radio5">
+                <label class="fd-radio__label" for="iSpDidh7612">
+                    Field label
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="radio" class="fd-radio is-error" id="iSpDidh7613" name="radio5">
+                <label class="fd-radio__label" for="iSpDidh7613">
+                    Field label
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="radio" class="fd-radio is-warning" id="iSpDidh7614" name="radio5">
+                <label class="fd-radio__label" for="iSpDidh7614">
+                    Field label
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="radio" class="fd-radio is-information" id="iSpDidh7615" name="radio5">
+                <label class="fd-radio__label" for="iSpDidh7615">
+                    Field label
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="radio" class="fd-radio" id="iSpDidh7611" name="radio5" disabled>
+                <label class="fd-radio__label" for="iSpDidh7611">
+                    Field label (disabled)
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="radio" class="fd-radio is-success" id="iSpDidh76121" name="radio5" disabled>
+                <label class="fd-radio__label" for="iSpDidh76121">
+                    Field label (disabled)
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="radio" class="fd-radio is-error" id="iSpDidh76131" name="radio5" disabled>
+                <label class="fd-radio__label" for="iSpDidh76131">
+                    Field label (disabled)
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="radio" class="fd-radio is-warning" id="iSpDidh76141" name="radio5" disabled>
+                <label class="fd-radio__label" for="iSpDidh76141">
+                    Field label (disabled)
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="radio" class="fd-radio is-information" id="iSpDidh76151" name="radio5" disabled>
+                <label class="fd-radio__label" for="iSpDidh76151">
+                    Field label (disabled)
+                </label>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset class="fd-fieldset" id="radio6">
+        <legend class="fd-fieldset__legend">Interaction States Compact Mode</legend>
+        <div class="fd-form-group">
+            <div class="fd-form-item">
+                <input type="radio" class="fd-radio fd-radio--compact" id="iSpDidh7619" name="radio6" checked>
+                <label class="fd-radio__label" for="iSpDidh7619">
+                    Field label
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="radio" class="fd-radio fd-radio--compact is-success" id="iSpDidh76129" name="radio6">
+                <label class="fd-radio__label" for="iSpDidh76129">
+                    Field label
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="radio" class="fd-radio fd-radio--compact is-error" id="iSpDidh76139" name="radio6">
+                <label class="fd-radio__label" for="iSpDidh76139">
+                    Field label
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="radio" class="fd-radio fd-radio--compact is-warning" id="iSpDidh76149" name="radio6">
+                <label class="fd-radio__label" for="iSpDidh76149">
+                    Field label
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="radio" class="fd-radio fd-radio--compact is-information" id="iSpDidh76159" name="radio6">
+                <label class="fd-radio__label" for="iSpDidh76159">
+                    Field label
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="radio" class="fd-radio fd-radio--compact" id="iSpDidh76193" name="radio6" disabled>
+                <label class="fd-radio__label" for="iSpDidh76193">
+                    Field label (disabled)
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="radio" class="fd-radio fd-radio--compact is-success" id="iSpDidh761293" name="radio6" disabled>
+                <label class="fd-radio__label" for="iSpDidh761293">
+                    Field label (disabled)
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="radio" class="fd-radio fd-radio--compact is-error" id="iSpDidh761393" name="radio6" disabled>
+                <label class="fd-radio__label" for="iSpDidh761393">
+                    Field label (disabled)
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="radio" class="fd-radio fd-radio--compact is-warning" id="iSpDidh761493" name="radio6" disabled>
+                <label class="fd-radio__label" for="iSpDidh761493">
+                    Field label (disabled)
+                </label>
+            </div>
+            <div class="fd-form-item">
+                <input type="radio" class="fd-radio fd-radio--compact is-information" id="iSpDidh761593" name="radio6" disabled>
+                <label class="fd-radio__label" for="iSpDidh761593">
+                    Field label (disabled)
+                </label>
+            </div>
+        </div>
+    </fieldset>
+</div>
+<br><br>
+
+<h3>Textarea</h3>
+<div class="fd-form-item">
+    <label class="fd-form-label" for="textarea-1">Text area(cozy):</label>
+    <textarea class="fd-textarea" id="textarea-1" placeholder="Write something here"></textarea>
+</div>
+<br />
+<div class="fd-form-item">
+    <label class="fd-form-label fd-form-label--compact" for="textarea-123">Text area(compact):</label>
+    <textarea class="fd-textarea fd-textarea--compact" id="textarea-123" placeholder="Write something here"></textarea>
+</div>
+<br>
+<div class="fd-form-item">
+    <label class="fd-form-label" for="textarea-7">Text area:</label>
+    <textarea class="fd-textarea" id="textarea-7" disabled>Disabled textarea</textarea>
+</div>
+<div class="fd-form-item">
+    <label class="fd-form-label" for="textarea-8">Text area:</label>
+    <textarea class="fd-textarea" id="textarea-8" readonly>Read Only textarea</textarea>
+</div>
+<br>
+
+<div class="fd-form-item">
+    <label class="fd-form-label" for="textarea-3">Success text area:</label>
+    <div class="fd-popover fd-popover--input-message-group">
+        <div class="fd-popover__control" aria-controls="popoverT51" aria-expanded="false" aria-haspopup="true">
+            <textarea class="fd-textarea is-success" id="textarea-3" placeholder="Write something here"></textarea>
+        </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow"  aria-hidden="true" id="popoverT51">
+            <div class="fd-form-message fd-form-message--success">Success message</div>
+        </div>
+    </div>
+    <div class="fd-textarea-counter">150 characters left</div>
+</div>
+<br/>
+<div class="fd-form-item">
+    <label class="fd-form-label" for="textarea-4">Error text area:</label>
+    <div class="fd-popover fd-popover--input-message-group">
+        <div class="fd-popover__control" aria-controls="popoverT52" aria-expanded="false" aria-haspopup="true">
+            <textarea class="fd-textarea is-error" id="textarea-4" placeholder="Write something here"></textarea>
+        </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow"  aria-hidden="true" id="popoverT52">
+            <div class="fd-form-message fd-form-message--error">Error message</div>
+        </div>
+    </div>
+</div>
+<br/>
+<div class="fd-form-item">
+    <label class="fd-form-label" for="textarea-5">Warning text area:</label>
+    <div class="fd-popover fd-popover--input-message-group">
+        <div class="fd-popover__control" aria-controls="popoverT53" aria-expanded="false" aria-haspopup="true">
+            <textarea class="fd-textarea is-warning" id="textarea-5" placeholder="Write something here"></textarea>
+        </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow"  aria-hidden="true" id="popoverT53">
+            <div class="fd-form-message fd-form-message--warning">Warning message</div>
+        </div>
+    </div>
+</div>
+<br/>
+<div class="fd-form-item">
+    <label class="fd-form-label" for="textarea-6">Information text area:</label>
+    <div class="fd-popover fd-popover--input-message-group">
+        <div class="fd-popover__control" aria-controls="popoverT54" aria-expanded="false" aria-haspopup="true">
+            <textarea class="fd-textarea is-information" id="textarea-6" placeholder="Write something here"></textarea>
+        </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow"  aria-hidden="true" id="popoverT54">
+            <div class="fd-form-message fd-form-message--information">Information message</div>
+        </div>
+    </div>
+</div>
+<br><br>
+
+<h3>Slider</h3>
+<div class="slider-container">
+    <div class="fd-slider">
+        <div class="fd-slider__inner">
+            <div class="fd-slider__track">
+                <div class="fd-slider__track-range" style="width: 50%;"></div>
+                <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="left: 50%;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="slider-container slider-container--range">
+    <div class="fd-slider">
+        <div class="fd-slider__inner">
+            <div class="fd-slider__track">
+                <div class="fd-slider__track-range" style="width: 40%"></div>
+                <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="range slider left" aria-valuemin="1" aria-valuemax="80" aria-valuenow="40" style="left: 40%;"></div>
+                <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="range slider right" aria-valuemin="40" aria-valuemax="100" aria-valuenow="80" style="left: 80%;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="slider-container">
+    <div class="fd-slider">
+        <div class="fd-slider__inner">
+            <div class="fd-slider__track">
+                <div class="fd-slider__track-range" style="width: 50%;"></div>
+                <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="slider with ticks" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="left: 50%;"></div>
+            </div>
+            <div class="fd-slider__tick-wrapper">
+                <div class="fd-slider__ticks">
+                    <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                    <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                    <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                    <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                    <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                    <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                    <div class="fd-slider__tick"></div>
+                    <div class="fd-slider__tick"></div>
+                    <div class="fd-slider__tick"></div>
+                    <div class="fd-slider__tick"></div>
+                    <div class="fd-slider__tick"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="slider-container">
+    <div class="fd-slider">
+        <div class="fd-slider__inner">
+            <div class="fd-slider__track">
+                <div class="fd-slider__track-range" style="width: 50%;"></div>
+                <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="slider with ticks and labels" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="left: 50%;"></div>
+            </div>
+            <div class="fd-slider__tick-wrapper">
+                <div class="fd-slider__ticks">
+                    <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                    <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                    <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                    <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                    <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                    <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                    <div class="fd-slider__tick"></div>
+                    <div class="fd-slider__tick"></div>
+                    <div class="fd-slider__tick"></div>
+                    <div class="fd-slider__tick"></div>
+                    <div class="fd-slider__tick"></div>
+                </div>
+                <div class="fd-slider__labels">
+                    <div class="fd-slider__label">0</div>
+                    <div class="fd-slider__label">10</div>
+                    <div class="fd-slider__label">20</div>
+                    <div class="fd-slider__label">30</div>
+                    <div class="fd-slider__label">40</div>
+                    <div class="fd-slider__label">50</div>
+                    <div class="fd-slider__label">60</div>
+                    <div class="fd-slider__label">70</div>
+                    <div class="fd-slider__label">80</div>
+                    <div class="fd-slider__label">90</div>
+                    <div class="fd-slider__label">100</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
