@@ -1,66 +1,96 @@
-<div style="background-color: #00000012; padding: 1rem">
-    <h3>Solid</h3>
-    <div class="fd-toolbar fd-toolbar--solid">
-        <span>Products (23)</span>
-        <button class="fd-button fd-button--compact fd-button--transparent">Create</button>
-        <span class="fd-toolbar__spacer "> </span>
-        <button class="fd-button fd-button--compact fd-button--transparent">Edit</button>
-        <button class="fd-button fd-button--compact fd-button--transparent">Delete</button>
-        <span class="fd-toolbar__separator"></span>
-        <button class="fd-button fd-button--transparent" aria-label="Survey">
-            <i class="sap-icon--survey"></i>
-        </button>
-        <button class="fd-button fd-button--transparent" aria-label="Pool">
-            <i class="sap-icon--pool"></i>
-        </button>
-        <button class="fd-button fd-button--transparent" aria-label="Chart">
-            <i class="sap-icon--pie-chart"></i>
-        </button>
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Fundamental Library Theming Preview - Toolbar</title>
+  <meta name="description" content="Fundamental Library Theming Preview - Toolbar">
+  <meta name="author" content="fundamental-team">
+  <meta property="og:title" content="Fundamental Library Theming Preview - Toolbar">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Fundamental Library Theming Preview - Toolbar">
+  <style type="text/css">
+    .fd-theming .fd-theming__flex{
+        display: flex;
+    }
+    .fd-theming .fd-theming__flex-column{
+        flex-direction: column;
+    }
+    .fd-theming .fd-theming__margin-right-1{
+        margin-right: 1rem;
+    }
+    .fd-theming .fd-theming__margin-bottom-03{
+        margin-bottom: .3rem;
+    }
+    @font-face {
+        font-family: "72";
+        src: url("../node_modules/@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/72-Regular-full.woff2")
+        format("woff");
+        font-weight: normal;
+        font-style: normal;;
+    }
+    @font-face {
+        font-family: "SAP-icons";
+        src: url("../node_modules/@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/SAP-icons.woff2")
+            format("woff");
+        font-weight: normal;
+        font-style: normal;
+    }
+  </style>
+  <link rel="stylesheet" href="../dist/fundamental-styles.css">
+</head>
+<body>
+    <div class="fd-theming">
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Toolbar</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex">
+                <div style="background-color: #00000012; padding: 1rem; width: 50%;">
+                    <h4>Toolbar</h4>
+                    <div class="fd-toolbar fd-toolbar--solid">
+                        <span>Text</span>
+                        <div class="fd-input-group" style="width: 200px; height: 26px;">
+                            <input class="fd-input fd-input--compact fd-input-group__input" type="text" placeholder="Search">
+                            <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
+                                <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact" aria-label="Search"> 
+                                    <i class="sap-icon--search"></i>
+                                </button>
+                            </span>
+                        </div>
+                        <span class="fd-toolbar__spacer "> </span>
+                        <button class="fd-button fd-button--compact fd-button--emphasized">Edit</button>
+                        <button class="fd-button fd-button--compact fd-button--transparent">Save</button>
+                        <span class="fd-toolbar__separator"></span>
+                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Download"><i class="sap-icon--download"></i></button>
+                    </div>
+                    <br>
+                    <h4>Transparent Toolbar</h4>
+                    <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                        <span>Text</span>
+                        <div class="fd-input-group" style="width: 200px; height: 26px;">
+                            <input class="fd-input fd-input--compact fd-input-group__input" type="text" placeholder="Search">
+                            <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
+                                <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact" aria-label="Search"> 
+                                    <i class="sap-icon--search"></i>
+                                </button>
+                            </span>
+                        </div>
+                        <span class="fd-toolbar__spacer "> </span>
+                        <button class="fd-button fd-button--compact fd-button--emphasized">Edit</button>
+                        <button class="fd-button fd-button--compact fd-button--transparent">Save</button>
+                        <span class="fd-toolbar__separator"></span>
+                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Download"><i class="sap-icon--download"></i></button>
+                    </div>
+                    <br><br>
+                    <div class="fd-toolbar fd-toolbar--info">Info Bar</div>
+                    <br><br>
+                    <div class="fd-toolbar fd-toolbar--info fd-toolbar--active">Active Info Bar</div>
+                </div>
+            </div>
+        </div>
     </div>
-    <h3>Transparent</h3>
-    <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-        <button class="fd-button fd-button--compact fd-button--transparent">Create</button>
-        <button class="fd-button fd-button--compact fd-button--transparent">Save</button>
-        <span class="fd-toolbar__spacer "> </span>
-        <button class="fd-button fd-button--compact fd-button--transparent">Edit</button>
-        <button class="fd-button fd-button--compact fd-button--transparent">Delete</button>
-        <span class="fd-toolbar__separator"></span>
-        <button class="fd-button fd-button--transparent" aria-label="Survey">
-            <i class="sap-icon--survey"></i>
-        </button>
-        <button class="fd-button fd-button--transparent" aria-label="Pool">
-            <i class="sap-icon--pool"></i>
-        </button>
-        <button class="fd-button fd-button--transparent" aria-label="Chart">
-            <i class="sap-icon--pie-chart"></i>
-        </button>
-    </div>
-    <h3>Auto</h3>
-    <div class="fd-toolbar fd-toolbar--clear fd-toolbar--auto">
-        <button class="fd-button fd-button--compact fd-button--transparent">Create</button>
-        <span class="fd-toolbar__spacer "> </span>
-        <button class="fd-button fd-button--compact fd-button--transparent">Edit</button>
-        <button class="fd-button fd-button--compact fd-button--transparent">Delete</button>
-        <span class="fd-toolbar__separator"></span>
-        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Survey">
-            <i class="sap-icon--survey"></i>
-        </button>
-        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Pool">
-            <i class="sap-icon--pool"></i>
-        </button>
-        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Chart">
-            <i class="sap-icon--pie-chart"></i>
-        </button>
-    </div>
-    <h3>Info</h3>
-    <div class="fd-toolbar fd-toolbar--info">3 item selected</div>
-    <br>
-    <div class="fd-toolbar fd-toolbar--info fd-toolbar--active">3 item selected</div>
-    <h3>Title</h3>
-    <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-        <h4 >Producs (104)</h4>
-        <span class="fd-toolbar__spacer "></span>
-        <button class="fd-button fd-button--compact fd-button--transparent">Save</button>
-        <button class="fd-button fd-button--compact fd-button--transparent">Delete</button>
-    </div>
-</div>
+</body>
+
