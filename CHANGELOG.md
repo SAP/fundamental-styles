@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.18...v0.19.0-rc.19) (2021-06-28)
+
+
+### Bug Fixes
+
+* add bottom border to panel content [ci visual] ([#2483](https://github.com/SAP/fundamental-styles/issues/2483)) ([3f23580](https://github.com/SAP/fundamental-styles/commit/3f235802e5cc14be89c6b35b327e08203e2333d5))
+
 ## [0.19.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.17...v0.19.0-rc.18) (2021-06-28)
 
 
