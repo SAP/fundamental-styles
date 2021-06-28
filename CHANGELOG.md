@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.17...v0.19.0-rc.18) (2021-06-28)
+
+
+### Features
+
+* create component to place an element off screen ([#2478](https://github.com/SAP/fundamental-styles/issues/2478)) ([7600e86](https://github.com/SAP/fundamental-styles/commit/7600e8684a614da277215a2a6072ea496f3ae685))
+
 ## [0.19.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.16...v0.19.0-rc.17) (2021-06-27)
 
 ## [0.19.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.15...v0.19.0-rc.16) (2021-06-26)
