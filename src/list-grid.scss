@@ -327,10 +327,15 @@ $block: #{$fd-namespace}-grid-list;
 
       position: absolute;
       top: 0;
+      left: 0;
       bottom: 0;
       width: 0.375rem;
       display: block;
       border-radius: $fd-grid-list-border-radius 0 0 $fd-grid-list-border-radius;
+
+      @include fd-rtl() {
+        right: 0;
+      }
 
       &--#{$set-name} {
         background-color: map_get($colors, 'backgroundColor');
