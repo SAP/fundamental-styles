@@ -1,4 +1,54 @@
 
+## [0.19.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.18...v0.19.0-rc.19) (2021-06-28)
+
+
+### Bug Fixes
+
+* add bottom border to panel content [ci visual] ([#2483](https://github.com/SAP/fundamental-styles/issues/2483)) ([3f23580](https://github.com/SAP/fundamental-styles/commit/3f235802e5cc14be89c6b35b327e08203e2333d5))
+
+## [0.19.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.17...v0.19.0-rc.18) (2021-06-28)
+
+
+### Features
+
+* create component to place an element off screen ([#2478](https://github.com/SAP/fundamental-styles/issues/2478)) ([7600e86](https://github.com/SAP/fundamental-styles/commit/7600e8684a614da277215a2a6072ea496f3ae685))
+
+## [0.19.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.16...v0.19.0-rc.17) (2021-06-27)
+
+## [0.19.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.15...v0.19.0-rc.16) (2021-06-26)
+
+## [0.19.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.14...v0.19.0-rc.15) (2021-06-26)
+
+## [0.19.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.13...v0.19.0-rc.14) (2021-06-23)
+
+
+### Bug Fixes
+
+* show navigation button on hover in carousel content area, carousel component css moved from ngx ([#2431](https://github.com/SAP/fundamental-styles/issues/2431)) ([d6ae1ee](https://github.com/SAP/fundamental-styles/commit/d6ae1eed1fd3c13f2f9537a3d4259b5e1ee6a53f))
+
+## [0.19.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.12...v0.19.0-rc.13) (2021-06-22)
+
+## [0.19.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.11...v0.19.0-rc.12) (2021-06-22)
+
+## [0.19.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.10...v0.19.0-rc.11) (2021-06-22)
+
+## [0.19.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.9...v0.19.0-rc.10) (2021-06-21)
+
+## [0.19.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.8...v0.19.0-rc.9) (2021-06-19)
+
+## [0.19.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.7...v0.19.0-rc.8) (2021-06-19)
+
+## [0.19.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.6...v0.19.0-rc.7) (2021-06-18)
+
+## [0.19.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.5...v0.19.0-rc.6) (2021-06-18)
+
+
+### Features
+
+* introduce new Icon Tab Bar component ([#2455](https://github.com/SAP/fundamental-styles/issues/2455)) ([2f029e7](https://github.com/SAP/fundamental-styles/commit/2f029e716160a937d8c6cb0b7502c9c1b6e33889))
+
+## [0.19.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.4...v0.19.0-rc.5) (2021-06-18)
+
 ## [0.19.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.3...v0.19.0-rc.4) (2021-06-17)
 
 

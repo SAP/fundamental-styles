@@ -1,0 +1,26 @@
+@import './new-settings';
+@import './mixins';
+
+/*!
+.fd-off-screen
+places the element far left of the screen. so it is not visible.
+*/
+
+$block: #{$fd-namespace}-off-screen;
+
+.#{$block} {
+  @include fd-reset();
+
+  /*
+  * Element with aria-live will be announced on change in value, but
+  * this element should not be visible on screen, and also can't be made `visibility: hidden` or `display none`
+  * because of screen reader requirement
+  * please see: https://webaim.org/techniques/css/invisiblecontent/
+  */
+  position: absolute;
+  left: -625rem;
+  top: auto;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  overflow: hidden;
+}

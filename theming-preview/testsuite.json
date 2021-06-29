@@ -1,0 +1,93 @@
+{
+    "controls": {
+      "links": [
+        {
+          "text": "Controls",
+          "links": [
+  
+            {
+              "text": "Button",
+              "ref": "index.html#Button"
+            },
+            {
+              "text": "Calendar",
+              "ref": "index.html#Calendar"
+            },
+            {
+              "text": "Form",
+              "ref": "index.html#Form"
+            },
+            {
+              "text": "Input",
+              "ref": "index.html#Input"
+            },
+            {
+              "text": "Page Header and Footer",
+              "ref": "index.html#Page"
+            },
+            {
+              "text": "Object Header",
+              "ref": "index.html#ObjectPage"
+            },
+            {
+              "text": "Group and Panel",
+              "ref": "index.html#Panel"
+            },
+            {
+              "text": "Indication Colors",
+              "ref": "index.html#IndicationColors"
+            },
+            {
+              "text": "Semantic Colors",
+              "ref": "index.html#SemanticColors"
+            },
+            {
+              "text": "Shell, Tiles and Cards",
+              "ref": "flp.html",
+              "defaultSelected": true,
+              "defaultActive": true
+            },
+            {
+              "text": "Toolbar",
+              "ref": "index.html#Toolbar"
+            },
+            {
+              "text": "Table",
+              "ref": "index.html#Table"
+            },
+            {
+              "text": "Text",
+              "ref": "index.html#Text"
+            },
+            {
+              "text": "Icon",
+              "ref": "index.html#Icon"
+            }
+          ]
+        }
+      ]
+    },
+    "pages": {
+      "links": [
+        {
+          "text": "Applications",
+          "links": [
+            {
+              "text": "Quick Theming",
+              "ref": "index.html#QuickTheming"
+            }
+          ]
+        }
+      ]
+    },
+    "themeSupport": [
+      {
+        "theme": [
+          "sap_fiori_3",
+          "sap_fiori_3_dark",
+          "sap_fiori_3_hcb",
+          "sap_fiori_3_hcw"
+        ]
+      }
+    ]
+  }

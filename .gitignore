@@ -14,6 +14,7 @@ storybook-chromatic
 storybook-static
 stories/docs/
 dist
+dist-theming
 node_modules
 stories/*/*.visual.js
 *.visual.js
