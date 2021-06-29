@@ -171,7 +171,7 @@ The slider can display labels that indicate the values of each tick. Labels can 
 
 export const mobileMode = () => `
 <div class="slider-container">
-    <div class="fd-slider">
+    <div class="fd-slider fd-slider--lg-x-paddings">
         <div class="fd-slider__inner">
             <div class="fd-slider__track">
                 <div class="fd-slider__track-range" style="width: 50%;"></div>
