@@ -974,9 +974,31 @@
                         <span class="fd-checkbox__text">Error</span>
                     </label>
                 </div>
-                <!-- tristate -->
                 <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <input type="checkbox" class="fd-checkbox tristate" id="tristate1" checked>
+                    <label class="fd-checkbox__label" for="tristate1">
+                        <span class="fd-checkbox__text">Enabled</span>
+                    </label>
 
+                    <input type="checkbox" class="fd-checkbox is-information tristate" id="tristate2" checked>
+                    <label class="fd-checkbox__label" for="tristate2">
+                        <span class="fd-checkbox__text">Information</span>
+                    </label>
+
+                    <input type="checkbox" class="fd-checkbox is-success tristate" id="tristate3" checked>
+                    <label class="fd-checkbox__label" for="tristate3">
+                        <span class="fd-checkbox__text">Success</span>
+                    </label>
+
+                    <input type="checkbox" class="fd-checkbox is-warning tristate" id="tristate4" checked>
+                    <label class="fd-checkbox__label" for="tristate4">
+                        <span class="fd-checkbox__text">Warning</span>
+                    </label>
+
+                    <input type="checkbox" class="fd-checkbox is-error tristate" id="tristate5" checked>
+                    <label class="fd-checkbox__label" for="tristate5">
+                        <span class="fd-checkbox__text">Error</span>
+                    </label>
                 </div>
                 <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
                     <input type="checkbox" class="fd-checkbox" id="16" disabled>
@@ -1030,9 +1052,31 @@
                         <span class="fd-checkbox__text">Error</span>
                     </label>
                 </div>
-                <!-- tristate disabled -->
                 <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <input type="checkbox" class="fd-checkbox tristate" id="tristate6" checked disabled>
+                    <label class="fd-checkbox__label" for="tristate6">
+                        <span class="fd-checkbox__text">Disabled</span>
+                    </label>
 
+                    <input type="checkbox" class="fd-checkbox is-information tristate" id="tristate7" checked disabled>
+                    <label class="fd-checkbox__label" for="tristate7">
+                        <span class="fd-checkbox__text">Information</span>
+                    </label>
+
+                    <input type="checkbox" class="fd-checkbox is-success tristate" id="tristate8" checked disabled>
+                    <label class="fd-checkbox__label" for="tristate8">
+                        <span class="fd-checkbox__text">Success</span>
+                    </label>
+
+                    <input type="checkbox" class="fd-checkbox is-warning tristate" id="tristate9" checked disabled>
+                    <label class="fd-checkbox__label" for="tristate9">
+                        <span class="fd-checkbox__text">Warning</span>
+                    </label>
+
+                    <input type="checkbox" class="fd-checkbox is-error tristate" id="tristate10" checked disabled>
+                    <label class="fd-checkbox__label" for="tristate10">
+                        <span class="fd-checkbox__text">Error</span>
+                    </label>
                 </div>
                 <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
                     <input type="checkbox" class="fd-checkbox" id="31" readonly>
@@ -1085,10 +1129,6 @@
                     <label class="fd-checkbox__label" for="20">
                         <span class="fd-checkbox__text">Error</span>
                     </label>
-                </div>
-                <!-- tristate readonly -->
-                <div class="fd-theming__flex fd-theming__flex-column">
-                    
                 </div>
             </div>
         </div>
@@ -1228,15 +1268,12 @@
                 </div>
             </div>
         </div>
-        
-        <div class="fd-panel fd-panel--fixed">
-            <div class="fd-panel__header">
-                <h4 class="fd-panel__title">Slider</h4>
-            </div>
-            <div class="fd-panel__content fd-theming__flex">
-                
-            </div>
-        </div>
     </div>
-</body>
 
+    <script>
+        var tristateCheckboxes = document.querySelectorAll('.tristate');
+        tristateCheckboxes.forEach((box) => {
+            box.indeterminate = true;
+        })
+    </script>
+</body>
