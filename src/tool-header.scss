@@ -1,0 +1,167 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-tool-header;
+$fd-tool-header: 1rem;
+
+$fd-tool-header-responsive-paddings: (
+  'sm':  ('padding': 0 1rem),
+  'md':  ('padding': 0 2rem),
+  'lg':  ('padding': 0 2rem),
+  'xl':  ('padding': 0 3rem)
+);
+
+$fd-tool-header-semantic-values: (
+  'contrast':  (
+    'iconColor': var(--sapShell_TextColor),
+    'iconColorInverted': var(--sapShell_TextColor),
+    'bgColorInverted': transparent
+  ),
+  'positive':  (
+    'iconColor': var(--sapShell_PositiveColor),
+    'iconColorInverted': var(--sapTextColor),
+    'bgColorInverted': var(--sapShell_PositiveColor)
+  ),
+  'critical':  (
+    'iconColor': var(--sapShell_CriticalColor),
+    'iconColorInverted': var(--sapTextColor),
+    'bgColorInverted': var(--sapShell_CriticalColor)
+  ),
+  'negative':  (
+    'iconColor': var(--sapShell_NegativeColor),
+    'iconColorInverted': var(--sapTextColor),
+    'bgColorInverted': var(--sapShell_NegativeColor)
+  ),
+  'neutral':  (
+    'iconColor': var(--sapShell_NeutralColor),
+    'iconColorInverted': var(--sapTextColor),
+    'bgColorInverted': var(--sapShell_NeutralColor)
+  ),
+);
+
+$fd-tool-header-sap-logo-url: "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MTIuMzggMjA0Ij48ZGVmcz48c3R5bGU+LmNscy0xLC5jbHMtMntmaWxsLXJ1bGU6ZXZlbm9kZH0uY2xzLTF7ZmlsbDp1cmwoI2xpbmVhci1ncmFkaWVudCl9LmNscy0ye2ZpbGw6I2ZmZn08L3N0eWxlPjxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iMjA2LjE5IiB4Mj0iMjA2LjE5IiB5Mj0iMjA0IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDBiOGYxIi8+PHN0b3Agb2Zmc2V0PSIuMDIiIHN0b3AtY29sb3I9IiMwMWI2ZjAiLz48c3RvcCBvZmZzZXQ9Ii4zMSIgc3RvcC1jb2xvcj0iIzBkOTBkOSIvPjxzdG9wIG9mZnNldD0iLjU4IiBzdG9wLWNvbG9yPSIjMTc3NWM4Ii8+PHN0b3Agb2Zmc2V0PSIuODIiIHN0b3AtY29sb3I9IiMxYzY1YmYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxZTVmYmIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48dGl0bGU+U0FQX2dyYWRfUl9zY3JuX1plaWNoZW5mbMOkY2hlIDE8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTAgMjA0aDIwOC40MUw0MTIuMzggMEgwdjIwNCIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI0NC43MyAzOC4zNmgtNDAuNnY5Ni41MmwtMzUuNDYtOTYuNTVoLTM1LjE2bC0zMC4yNyA4MC43MkMxMDAgOTguNyA3OSA5MS42NyA2Mi40IDg2LjQgNTEuNDYgODIuODkgMzkuODUgNzcuNzIgNDAgNzJjLjA5LTQuNjggNi4yMy05IDE4LjM4LTguMzggOC4xNy40MyAxNS4zNyAxLjA5IDI5LjcxIDhsMTQuMS0yNC41NUM4OS4wNiA0MC40MiA3MSAzNi4yMSA1Ni4xNyAzNi4xOWgtLjA5Yy0xNy4yOCAwLTMxLjY4IDUuNi00MC42IDE0LjgzQTM0LjIzIDM0LjIzIDAgMCAwIDUuNzcgNzQuN0M1LjU0IDg3LjE1IDEwLjExIDk2IDE5LjcxIDEwM2M4LjEgNS45NCAxOC40NiA5Ljc5IDI3LjYgMTIuNjIgMTEuMjcgMy40OSAyMC40NyA2LjUzIDIwLjM2IDEzQTkuNTcgOS41NyAwIDAgMSA2NSAxMzVjLTIuODEgMi45LTcuMTMgNC0xMy4wOSA0LjEtMTEuNDkuMjQtMjAtMS41Ni0zMy42MS05LjU5TDUuNzcgMTU0LjQyYTkzLjc3IDkzLjc3IDAgMCAwIDQ2IDEyLjIyaDIuMTFjMTQuMjQtLjI1IDI1Ljc0LTQuMzEgMzQuOTItMTEuNzEuNTMtLjQxIDEtLjg0IDEuNDktMS4yOGwtNC4xMiAxMC44NUgxMjNsNi4xOS0xOC44MmE2Ny40NiA2Ny40NiAwIDAgMCAyMS42OCAzLjQzIDY4LjMzIDY4LjMzIDAgMCAwIDIxLjE2LTMuMjVsNiAxOC42NGg2MC4xNHYtMzloMTMuMTFjMzEuNzEgMCA1MC40Ni0xNi4xNSA1MC40Ni00My4yIDAtMzAuMTEtMTguMjItNDMuOTQtNTcuMDEtNDMuOTR6TTE1MC45MSAxMjFhMzYuOTMgMzYuOTMgMCAwIDEtMTMtMi4yOGwxMi44Ny00MC41OWguMjJsMTIuNjUgNDAuNzFhMzguNSAzOC41IDAgMCAxLTEyLjc0IDIuMTZ6bTk2LjItMjMuMzNoLTguOTRWNjQuOTFoOC45NGMxMS45MyAwIDIxLjQ0IDQgMjEuNDQgMTYuMTQgMCAxMi42LTkuNTEgMTYuNTctMjEuNDQgMTYuNTciLz48L3N2Zz4=" !default;
+
+.#{$block} {
+  @include fd-reset();
+
+  @include fd-flex-vertical-center() {
+    justify-content: space-between;
+  }
+
+  width: 100%;
+  height: 2.75rem;
+  padding: 0 0.5rem 0 1rem;
+  background: var(--sapShellColor);
+  box-shadow: inset 0 -0.0625rem 0 0 var(--sapShell_BorderColor);
+
+  // ELEMENTS
+
+  &__group {
+    @include fd-reset();
+    @include fd-flex-vertical-center();
+  }
+
+  &__element {
+    @include fd-reset();
+
+    &:not(:last-child) {
+      @include fd-set-margin-right(0.5rem);
+    }
+  }
+
+  &__logo {
+    @include fd-reset();
+
+    width: auto;
+    height: 1.625rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &--sap {
+      background-image: url(#{$fd-tool-header-sap-logo-url});
+    }
+  }
+
+  .#{$block}__text {
+    color: var(--sapShell_TextColor);
+  }
+
+  .#{$block}__label {
+    color: var(--sapShell_TextColor);
+  }
+
+  .#{$block}__title {
+    font-weight: bold;
+    padding: 0 0.625rem;
+    color: var(--sapShell_TextColor);
+  }
+
+  .#{$block}__button {
+    color: var(--sapShell_InteractiveTextColor);
+
+    &:hover {
+      background: var(--sapShell_Hover_Background);
+      border-color: transparent;
+    }
+
+    &:active,
+    &:focus {
+      background: var(--sapShell_Active_Background);
+      color: var(--sapShell_Active_TextColor);
+      outline-color: var(--sapContent_ContrastFocusColor);
+
+      &::after {
+        border-color: var(--sapContent_ContrastFocusColor);
+      }
+    }
+  }
+
+  &__icon {
+    color: var(--sapShell_TextColor);
+
+    &--inverted {
+      background: transparent;
+      color: --sapshell_textcolor;
+    }
+
+    @each $set-name, $set-params in $fd-tool-header-semantic-values {
+      &--#{$set-name} {
+        color: map_get($set-params, 'iconColor');
+
+        &.#{$block}__icon--inverted {
+          color: map_get($set-params, 'iconColorInverted');
+          background: map_get($set-params, 'bgColorInverted');
+        }
+      }
+    }
+  }
+
+  // MODIFIER CLASSES
+  &--menu {
+    padding: 0 0.5rem;
+  }
+
+  @each $set-name, $set-padding in $fd-tool-header-responsive-paddings {
+    &--#{$set-name} {
+      padding: map_get($set-padding, 'padding');
+    }
+  }
+
+  &--responsive-paddings {
+    @media (max-width: 599px) {
+      padding: 0 1rem;
+    }
+
+    @media (min-width: 600px) and (max-width: 1023px) {
+      padding: 0 2rem;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      padding: 0 2rem;
+    }
+
+    @media (min-width: 1440px) {
+      padding: 0 3rem;
+    }
+  }
+}
