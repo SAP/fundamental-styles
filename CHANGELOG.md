@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.21...v0.19.0-rc.22) (2021-06-30)
+
+
+### Bug Fixes
+
+* rtl support for the grid list highlighter for status ([#2505](https://github.com/SAP/fundamental-styles/issues/2505)) ([31d5633](https://github.com/SAP/fundamental-styles/commit/31d56330113858b10ed0bb25a34d37dbbac00948))
+
 ## [0.19.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.20...v0.19.0-rc.21) (2021-06-30)
 
 
