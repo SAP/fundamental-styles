@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.22...v0.19.0-rc.23) (2021-06-30)
+
+
+### Bug Fixes
+
+* change tabs styles for routerLink ([#2473](https://github.com/SAP/fundamental-styles/issues/2473)) ([38bdc1e](https://github.com/SAP/fundamental-styles/commit/38bdc1e75c2bcdbbed5575e75d59583082880151))
+
 ## [0.19.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.21...v0.19.0-rc.22) (2021-06-30)
 
 
