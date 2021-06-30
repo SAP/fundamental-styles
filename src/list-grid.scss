@@ -333,6 +333,10 @@ $block: #{$fd-namespace}-grid-list;
       display: block;
       border-radius: $fd-grid-list-border-radius 0 0 $fd-grid-list-border-radius;
 
+      @include fd-rtl() {
+        right: 0;
+      }
+
       &--#{$set-name} {
         background-color: map_get($colors, 'backgroundColor');
       }
