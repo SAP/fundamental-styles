@@ -1,4 +1,26 @@
 
+## [0.19.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.19...v0.19.0-rc.20) (2021-06-30)
+
+## [0.19.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.18...v0.19.0-rc.19) (2021-06-28)
+
+
+### Bug Fixes
+
+* add bottom border to panel content [ci visual] ([#2483](https://github.com/SAP/fundamental-styles/issues/2483)) ([3f23580](https://github.com/SAP/fundamental-styles/commit/3f235802e5cc14be89c6b35b327e08203e2333d5))
+
+## [0.19.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.17...v0.19.0-rc.18) (2021-06-28)
+
+
+### Features
+
+* create component to place an element off screen ([#2478](https://github.com/SAP/fundamental-styles/issues/2478)) ([7600e86](https://github.com/SAP/fundamental-styles/commit/7600e8684a614da277215a2a6072ea496f3ae685))
+
+## [0.19.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.16...v0.19.0-rc.17) (2021-06-27)
+
+## [0.19.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.15...v0.19.0-rc.16) (2021-06-26)
+
+## [0.19.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.14...v0.19.0-rc.15) (2021-06-26)
+
 ## [0.19.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.13...v0.19.0-rc.14) (2021-06-23)
 
 

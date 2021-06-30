@@ -37,6 +37,7 @@ $block: #{$fd-namespace}-panel;
   &__content {
     padding: 0.625rem 1rem 1.375rem 1rem;
     overflow: auto;
+    border-bottom: solid 0.0625rem var(--sapGroup_TitleBorderColor);
 
     &[aria-hidden="true"] {
       display: none;
