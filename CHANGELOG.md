@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.20...v0.19.0-rc.21) (2021-06-30)
+
+
+### Bug Fixes
+
+* update css selector for list item [ci visual] ([#2522](https://github.com/SAP/fundamental-styles/issues/2522)) ([8942df4](https://github.com/SAP/fundamental-styles/commit/8942df476bb382abd258a8ff9626d4d5becd8cbf))
+
 ## [0.19.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.19...v0.19.0-rc.20) (2021-06-30)
 
 ## [0.19.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.18...v0.19.0-rc.19) (2021-06-28)
