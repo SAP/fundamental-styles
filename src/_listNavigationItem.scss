@@ -341,10 +341,11 @@ $fd-list-second-level-popover-position: 3.25rem !default;
       background: var(--sapList_Active_Background);
       color: var(--sapContent_ContrastTextColor);
 
-      &-icon,
-      &-arrow,
-      &__navigation-indicator {
-        color: var(--sapContent_ContrastIconColor);
+      .#{$block}__navigation-item {
+        &-icon,
+        &-arrow {
+          color: var(--sapContent_ContrastIconColor);
+        }
       }
     }
   }
