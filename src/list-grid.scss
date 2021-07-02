@@ -305,7 +305,7 @@ $blockToolbar: #{$fd-namespace}-toolbar;
 
     @include fd-active() {
       @include fd-hover() {
-        color: var(--sapHighlightTextColor);
+        color: var(--sapHighlightTextColor) !important;
       }
     }
   }
