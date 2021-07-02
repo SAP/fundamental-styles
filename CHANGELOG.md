@@ -1,4 +1,15 @@
 
+## [0.19.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.23...v0.19.0-rc.24) (2021-07-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* Added modifier class fd-bar__element--title class to bar component when title is placed as first element to add 0.5rem padding to it as per visual core.
+
+### Bug Fixes
+
+* provide padding if title is first element in bar ([#2480](https://github.com/SAP/fundamental-styles/issues/2480)) ([543db32](https://github.com/SAP/fundamental-styles/commit/543db3260492d934365e254399bca986a3a20c34))
+
 ## [0.19.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.22...v0.19.0-rc.23) (2021-06-30)
 
 
