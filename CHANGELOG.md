@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.25...v0.19.0-rc.26) (2021-07-02)
+
+
+### Features
+
+* introduce qr-code icon [ci visual] ([#2527](https://github.com/SAP/fundamental-styles/issues/2527)) ([ae40d05](https://github.com/SAP/fundamental-styles/commit/ae40d059594ecf8f4f418de5d42a4e29d2280893))
+
 ## [0.19.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.24...v0.19.0-rc.25) (2021-07-02)
 
 ## [0.19.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.23...v0.19.0-rc.24) (2021-07-02)
