@@ -76,6 +76,10 @@ $block: #{$fd-namespace}-bar;
       margin-right: 0;
       margin-left: $fd-bar-element-spacing;
     }
+
+    &--title {
+      @include fd-set-paddings-x(0.5rem,0);
+    }
   }
 
   &__element--full-width {

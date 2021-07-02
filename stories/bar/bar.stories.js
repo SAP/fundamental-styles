@@ -44,12 +44,7 @@ export const Default = () => `
 <div class="fd-bar">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
-                <i class="sap-icon--navigation-left-arrow"></i>
-            </button>
-        </div>
-        <div class="fd-bar__element">
-            <span aria-label="text">TEXT</span>
+            <span class="fd-bar__element fd-bar__element--title" aria-label="text">TEXT</span>
         </div>
     </div>
     <div class="fd-bar__middle">
@@ -127,7 +122,7 @@ export const Default = () => `
 Default.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'The default bar contains a back button, page title, segmented button and product switch button. It can be displayed by using the <code class="docs-code">fd-bar</code> class, and is responsive to desktop screen sizes. The default bar is in compact mode. Fiori 3 doesn\'t forbid including cozy elements inside (e.g. cozy buttons)'
+        storyDescription: 'The default bar contains a back button, page title, segmented button and product switch button. It can be displayed by using the <code class="docs-code">fd-bar</code> class, and is responsive to desktop screen sizes. The default bar is in compact mode. Fiori 3 doesn\'t forbid including cozy elements inside (e.g. cozy buttons). Add <code class="docs-code">--title</code> modifier class to bar element, if title is first element in bar.'
     }
 };
 
