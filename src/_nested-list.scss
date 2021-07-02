@@ -169,10 +169,6 @@ $button: #{$fd-namespace}-button;
         }
       }
     }
-
-    &.#{$block}__popover-header {
-      box-shadow: var(--sapContent_HeaderShadow);
-    }
   }
 
   &__button.#{$button} {
