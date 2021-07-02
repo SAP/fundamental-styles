@@ -5,6 +5,7 @@
 .fd-grid-list
 */
 $block: #{$fd-namespace}-grid-list;
+$blockToolbar: #{$fd-namespace}-toolbar;
 
 .#{$block} {
   $item: #{$block}__item;
@@ -27,24 +28,10 @@ $block: #{$fd-namespace}-grid-list;
   );
   $fd-grid-list-drop-area-vertical: 0.55rem;
 
-  @mixin grabbing-cursor {
-    cursor: -webkit-grabbing;
-    cursor: -moz-grabbing;
-    cursor: -o-grabbing;
-    cursor: -ms-grabbing;
-    cursor: grabbing;
-  }
-
   @include fd-reset();
   @include fd-flex(column);
 
   display: block;
-
-  .fd-dnd-item.fd-dnd-on-drag {
-    @include grabbing-cursor();
-
-    background-color: transparent;
-  }
 
   &__item {
     @include fd-reset();
@@ -156,7 +143,7 @@ $block: #{$fd-namespace}-grid-list;
 
       padding: 0 1rem;
 
-      .fd-toolbar {
+      .#{$blockToolbar} {
         &--actions {
           margin-left: auto;
 
@@ -182,18 +169,6 @@ $block: #{$fd-namespace}-grid-list;
 
           height: 100%;
         }
-      }
-    }
-
-    .fd-drop-area__line--vertical {
-      height: 100%;
-
-      &.before {
-        left: -$fd-grid-list-drop-area-vertical;
-      }
-
-      &.after {
-        right: -$fd-grid-list-drop-area-vertical;
       }
     }
   }
