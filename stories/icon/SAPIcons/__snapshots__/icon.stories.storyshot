@@ -7924,6 +7924,18 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     </div>
   </div>
   <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon sap-icon--icon-qr-code"
+      style="font-size:3rem"
+    />
+    <div>
+      .sap-icon--icon-qr-code
+    </div>
+  </div>
+  <br />
 </div>
 `;
 
