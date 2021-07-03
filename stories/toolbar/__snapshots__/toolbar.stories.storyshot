@@ -687,7 +687,7 @@ exports[`Storyshots Components/Toolbar Separators 1`] = `
   
 
   <div
-    class="fd-toolbar fd-toolbar--info fd-toolbar--cozy"
+    class="fd-toolbar fd-toolbar--cozy"
   >
     
     
@@ -788,7 +788,7 @@ exports[`Storyshots Components/Toolbar Separators 1`] = `
 
 exports[`Storyshots Components/Toolbar Types 1`] = `
 <div
-  style="background-color: #00000012; padding: 1rem"
+  style="padding: 1rem"
 >
   
     
@@ -1074,7 +1074,7 @@ exports[`Storyshots Components/Toolbar Types 1`] = `
   
     
   <div
-    class="fd-toolbar fd-toolbar--info"
+    class="fd-toolbar fd-toolbar--info fd-toolbar--cozy"
   >
     3 item selected
   </div>

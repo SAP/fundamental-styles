@@ -3,6 +3,7 @@
 
 $block: #{$fd-namespace}-toolbar;
 $toolbar-height-compact: 2rem;
+$info-toolbar-height: 2rem;
 $toolbar-height-cozy: 2.75rem;
 
 $toolbar-separator-height-compact: 1.5rem;
@@ -20,7 +21,7 @@ $title-toolbar-height: 2.75rem;
 }
 
 @mixin toolbarAuto() {
-  background-color: inherit;
+  background-color: var(--fdToolbar_Auto_Background);
 }
 
 @mixin toolbarSolid() {
@@ -32,7 +33,8 @@ $title-toolbar-height: 2.75rem;
 }
 
 @mixin toolbarInfo() {
-  $active-color: var(--sapInfobar__TextColor);
+  height: $info-toolbar-height;
+  $active-color: var(--sapInfobar_TextColor);
 
   background-color: var(--sapInfobar_NonInteractive_Background);
   color: var(--sapList_TextColor);
@@ -185,6 +187,11 @@ $title-toolbar-height: 2.75rem;
 
   &--cozy {
     height: $toolbar-height-cozy;
+
+    &.#{$block}--info {
+      height: $info-toolbar-height;
+    }
+
     .#{$block}__separator {
       height: $toolbar-separator-height-cozy;
     }
