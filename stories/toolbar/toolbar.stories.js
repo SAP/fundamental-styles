@@ -141,7 +141,7 @@ To display an overflow in a button, pass the \`sap-icon--overflow\` in the \`fd-
     }
 };
 
-export const types = () => `<div style="background-color: #00000012; padding: 1rem">
+export const types = () => `<div style="padding: 1rem">
     <h3>Solid</h3>
     <div class="fd-toolbar fd-toolbar--solid">
         <span>Products (23)</span>
@@ -196,7 +196,7 @@ export const types = () => `<div style="background-color: #00000012; padding: 1r
         </button>
     </div>
     <h3>Info</h3>
-    <div class="fd-toolbar fd-toolbar--info">3 item selected</div>
+    <div class="fd-toolbar fd-toolbar--info fd-toolbar--cozy">3 item selected</div>
     <br>
     <div class="fd-toolbar fd-toolbar--info fd-toolbar--active">3 item selected</div>
     <h3>Title</h3>
@@ -210,7 +210,7 @@ export const types = () => `<div style="background-color: #00000012; padding: 1r
 `;
 
 export const separator = () => `
-<div class="fd-toolbar fd-toolbar--info fd-toolbar--cozy">
+<div class="fd-toolbar fd-toolbar--cozy">
     <button class="fd-button fd-button--positive">Accept</button>
     <span class="fd-toolbar__separator"></span>
     <button class="fd-button fd-button--reject">Reject</button>
