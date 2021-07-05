@@ -44,7 +44,7 @@ export const Default = () => `
 <div class="fd-bar">
     <div class="fd-bar__left">
         <div class="fd-bar__element">
-            <span class="fd-bar__element fd-bar__element--title" aria-label="text">TEXT</span>
+            <span class="fd-bar__element--title" aria-label="text">TEXT</span>
         </div>
     </div>
     <div class="fd-bar__middle">
