@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.27...v0.19.0-rc.28) (2021-07-05)
+
+
+### Bug Fixes
+
+* update toolbar styling [ci visual] ([#2529](https://github.com/SAP/fundamental-styles/issues/2529)) ([f7fbb51](https://github.com/SAP/fundamental-styles/commit/f7fbb51bd2ebbf3cbf88273b31e38e290483f218))
+
 ## [0.19.0-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.26...v0.19.0-rc.27) (2021-07-03)
 
 ## [0.19.0-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.25...v0.19.0-rc.26) (2021-07-02)
