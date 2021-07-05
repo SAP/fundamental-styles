@@ -19,7 +19,7 @@ $handle-hit-area-mobile-dimensions: 2.75rem;
   padding: 1rem 0.625rem;
   position: relative;
 
-  &--lg-x-paddings {
+  &--lg {
     @include fd-set-paddings-x-equal(0.8125rem);
   }
 
