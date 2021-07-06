@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.29...v0.19.0-rc.30) (2021-07-06)
+
+
+### Bug Fixes
+
+* slider cutting [ci visual] ([#2504](https://github.com/SAP/fundamental-styles/issues/2504)) ([c1f29a2](https://github.com/SAP/fundamental-styles/commit/c1f29a2b898b5f1f3dc1f86584094b2664b0ac6b))
+
 ## [0.19.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.28...v0.19.0-rc.29) (2021-07-05)
 
 ## [0.19.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.27...v0.19.0-rc.28) (2021-07-05)
