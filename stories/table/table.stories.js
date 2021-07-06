@@ -764,8 +764,8 @@ export const checkbox = () => `
     <thead class="fd-table__header">
         <tr class="fd-table__row">
             <th class="fd-table__cell fd-table__cell--checkbox" scope="col">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai4ez611">
-                <label class="fd-checkbox__label" for="Ai4ez611"></label>
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-table__checkbox" id="Ai4ez611">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4ez611"></label>
             </th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -776,8 +776,8 @@ export const checkbox = () => `
     <tbody class="fd-table__body">
         <tr class="fd-table__row" aria-selected="true">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox" id="Ai4ez615">
-                <label class="fd-checkbox__label" for="Ai4ez615"></label>
+                <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-table__checkbox" id="Ai4ez615">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4ez615"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -786,8 +786,8 @@ export const checkbox = () => `
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai4ez617">
-                <label class="fd-checkbox__label" for="Ai4ez617"></label>
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-table__checkbox" id="Ai4ez617">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4ez617"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -796,8 +796,8 @@ export const checkbox = () => `
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Gi4ez611">
-                <label class="fd-checkbox__label" for="Gi4ez611"></label>
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-table__checkbox" id="Gi4ez611">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Gi4ez611"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -812,7 +812,10 @@ checkbox.storyName = 'Checkbox';
 checkbox.parameters = {
     docs: {
         storyDescription: `
-Table can display checkboxes to allow the user to perform bulk actions. To display checkboxes in table, add the \`fd-table__cell--checkbox\` modifier class to the appropriate cell. It is recommended to add the parameter \`aria-selected="true"\` to the row that is selected.
+Table can display checkboxes to allow the user to perform bulk actions.
+To display checkboxes in table, add the \`fd-table__cell--checkbox\` modifier class to the appropriate cell.
+It is recommended to add the parameter \`aria-selected="true"\` to the row that is selected.
+Also recommended to add class \`fd-table__checkbox\` to the checkbox (input) and \`fd-table__checkbox-label\` class to the checkbox label to have appropriate styles.
     `
     }
 };
@@ -826,8 +829,8 @@ export const compactCheckbox = () => `
     <thead class="fd-table__header">
         <tr class="fd-table__row">
             <th class="fd-table__cell fd-table__cell--checkbox" scope="col">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4HF611">
-                <label class="fd-checkbox__label" for="Ai4HF611"></label>
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact fd-table__checkbox" id="Ai4HF611">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4HF611"></label>
             </th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -838,8 +841,8 @@ export const compactCheckbox = () => `
     <tbody class="fd-table__body">
         <tr class="fd-table__row" aria-selected="true">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact" id="Ai4HFHG1">
-                <label class="fd-checkbox__label" for="Ai4HFHG1"></label>
+                <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-table__checkbox" id="Ai4HFHG1">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4HFHG1"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -848,8 +851,8 @@ export const compactCheckbox = () => `
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4JKHG1">
-                <label class="fd-checkbox__label" for="Ai4JKHG1"></label>
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact fd-table__checkbox" id="Ai4JKHG1">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4JKHG1"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -858,8 +861,8 @@ export const compactCheckbox = () => `
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4JH23G1">
-                <label class="fd-checkbox__label" for="Ai4JH23G1"></label>
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact fd-table__checkbox" id="Ai4JH23G1">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4JH23G1"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -891,8 +894,8 @@ export const condensedCheckbox = () => `
     <thead class="fd-table__header">
         <tr class="fd-table__row">
             <th class="fd-table__cell fd-table__cell--checkbox" scope="col">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4JH2BF87">
-                <label class="fd-checkbox__label" for="Ai4JH2BF87"></label>
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact fd-table__checkbox" id="Ai4JH2BF87">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4JH2BF87"></label>
             </th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -903,8 +906,8 @@ export const condensedCheckbox = () => `
     <tbody class="fd-table__body">
         <tr class="fd-table__row" aria-selected="true">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact" id="Ai4JHf87">
-                <label class="fd-checkbox__label" for="Ai4JHf87"></label>
+                <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-table__checkbox" id="Ai4JHf87">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4JHf87"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -913,8 +916,8 @@ export const condensedCheckbox = () => `
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4Jj67">
-                <label class="fd-checkbox__label" for="Ai4Jj67"></label>
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact fd-table__checkbox" id="Ai4Jj67">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4Jj67"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -923,8 +926,8 @@ export const condensedCheckbox = () => `
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="AGjtJj67">
-                <label class="fd-checkbox__label" for="AGjtJj67"></label>
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact fd-table__checkbox" id="AGjtJj67">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="AGjtJj67"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -935,7 +938,7 @@ export const condensedCheckbox = () => `
 </table>
 `;
 
-condensedCheckbox.storyName = 'Checkbox (compact)';
+condensedCheckbox.storyName = 'Checkbox (condensed)';
 condensedCheckbox.parameters = {
     docs: {
         storyDescription: `

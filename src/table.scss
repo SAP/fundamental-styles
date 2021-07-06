@@ -63,9 +63,9 @@ $block: #{$fd-namespace}-table;
   $fd-table-first-cell-padding: 1rem;
   $fd-table-cozy-cell-height: 2.75rem;
   $fd-table-compact-cell-height: 2rem;
-  $fd-table-navigation-icon-width: 2rem;
   $fd-table-condensed-cell-height: 1.5rem;
-  $fd-table-fixed-cell-shift: 0.05rem;
+  $fd-table-navigation-icon-width: 2rem;
+  $fd-table-fixed-cell-shift: 0.0625rem; // 1px
 
   // Thanks to table-cell specification, if the width is set to small value, the cell will have content width
   $fd-table-cell-fit-content-width: 0.5rem;
@@ -111,7 +111,7 @@ $block: #{$fd-namespace}-table;
 
   &__header,
   &__body {
-    .#{$block}__cell--fixed-last {
+    .#{$block}__cell--fixed.#{$block}__cell--fixed-last {
       border-right: $fd-table-fixed-cell-border;
 
       @include fd-rtl() {
@@ -138,7 +138,6 @@ $block: #{$fd-namespace}-table;
       &--fixed {
         margin-top: -$fd-table-fixed-cell-shift;
         border-top: $fd-table-border;
-        border-left: $fd-table-border;
         height: $fd-table-cozy-cell-height + $fd-table-fixed-cell-shift;
       }
     }
@@ -227,7 +226,7 @@ $block: #{$fd-namespace}-table;
       background-color: inherit;
       border-bottom: $fd-table-border;
       border-left: $fd-table-border;
-      margin-top: $fd-table-fixed-cell-shift;
+      border-right: none;
 
       @include fd-flex-vertical-center();
 
@@ -236,6 +235,8 @@ $block: #{$fd-namespace}-table;
       }
 
       @include fd-rtl() {
+        border-right: $fd-table-border;
+        border-left: none;
         left: auto;
         right: 0;
       }
@@ -307,14 +308,6 @@ $block: #{$fd-namespace}-table;
         @include fd-selected() {
           @include fd-active() {
             background-color: var(--sapList_Active_Background);
-          }
-        }
-      }
-
-      @include fd-first-child() {
-        .#{$block}__cell {
-          &--fixed {
-            margin-top: 0;
           }
         }
       }
@@ -566,27 +559,21 @@ $block: #{$fd-namespace}-table;
     .#{$block}__cell {
       height: $fd-table-compact-cell-height;
     }
+
+    .#{$block}__header {
+      .#{$block}__cell {
+        height: $fd-table-compact-cell-height;
+
+        &--fixed {
+          height: $fd-table-compact-cell-height + $fd-table-fixed-cell-shift;
+        }
+      }
+    }
   }
 
   &--condensed {
     .#{$block}__cell {
       height: $fd-table-condensed-cell-height;
-
-      .fd-checkbox {
-        @include fd-focus() {
-          + .fd-checkbox__label:empty {
-            &::after {
-              top: 0.125rem;
-              bottom: 0.125rem;
-            }
-          }
-        }
-      }
-
-      .fd-checkbox + .fd-checkbox__label:empty {
-        padding-bottom: 0.25rem;
-        padding-top: 0.25rem;
-      }
     }
 
     .#{$block}__header {
@@ -595,6 +582,19 @@ $block: #{$fd-namespace}-table;
 
         &--fixed {
           height: $fd-table-compact-cell-height + $fd-table-fixed-cell-shift;
+        }
+      }
+    }
+
+    .#{$block}__body {
+      .#{$block}__cell {
+        &--checkbox {
+          position: relative;
+
+          .#{$block}__checkbox-label {
+            top: -0.25rem;
+            position: absolute;
+          }
         }
       }
     }
