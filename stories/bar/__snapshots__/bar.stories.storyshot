@@ -220,16 +220,16 @@ exports[`Storyshots Components/Bar Default 1`] = `
       
         
       <div
-        class="fd-bar__element"
+        class="fd-bar__element fd-bar__element--title"
       >
         
             
-        <span
+        <h4
           aria-label="text"
-          class="fd-bar__element--title"
+          class="fd-title"
         >
           TEXT
-        </span>
+        </h4>
         
         
       </div>
