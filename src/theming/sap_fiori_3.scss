@@ -108,7 +108,7 @@
 
   /* Input Group */
   --fdInputGroup_Text_Shadow: none;
-  --fdInputGroup_ControlButton_SideBorder: solid 0.0625rem transparent;
+  --fdInputGroup_ControlButton_SideBorder: solid var(--sapButton_BorderWidth) transparent;
 
   /* Input */
   --fdInput_Text_Shadow: none;
