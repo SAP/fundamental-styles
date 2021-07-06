@@ -16,8 +16,12 @@ $handle-hit-area-mobile-dimensions: 2.75rem;
 
   min-width: 4rem;
   max-width: 100%;
-  padding: 1rem 0;
+  padding: 1rem 0.625rem;
   position: relative;
+
+  &--lg {
+    @include fd-set-paddings-x-equal(0.8125rem);
+  }
 
   &__inner {
     @include fd-reset();
@@ -144,6 +148,12 @@ $handle-hit-area-mobile-dimensions: 2.75rem;
         width: $handle-hit-area-mobile-dimensions;
         height: $handle-hit-area-mobile-dimensions;
       }
+    }
+  }
+
+  @include fd-rtl() {
+    .#{$block}__handle::before {
+      transform: translate(25%, -25%);
     }
   }
 }

@@ -171,7 +171,7 @@ The slider can display labels that indicate the values of each tick. Labels can 
 
 export const mobileMode = () => `
 <div class="slider-container">
-    <div class="fd-slider">
+    <div class="fd-slider fd-slider--lg">
         <div class="fd-slider__inner">
             <div class="fd-slider__track">
                 <div class="fd-slider__track-range" style="width: 50%;"></div>
@@ -186,6 +186,7 @@ mobileMode.parameters = {
     docs: {
         storyDescription: `
 By default, the slider is not responsive. However, to make the slider more mobile-friendly, you may enlarge the slider handle and its hit area by adding \`fd-slider__handle--lg\` class to \`fd-slider__handle\` element.
+To add horizontal paddings of \`0.8125rem\` use the \`fd-slider--lg\` modifier class
         `
     }
 };
