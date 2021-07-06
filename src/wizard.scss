@@ -57,10 +57,9 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
 
     width: 100%;
     height: 4rem;
-    display: table;
+    display: flex;
     padding-top: 1rem;
     position: relative;
-    table-layout: fixed;
     list-style-type: none;
     background: var(--sapObjectHeader_Background);
     box-shadow: var(--sapContent_HeaderShadow);
@@ -77,9 +76,8 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     @include fd-reset();
 
     width: 100%;
-    min-width: 10.5rem;
+    min-width: 10rem;
     position: relative;
-    display: table-cell;
     vertical-align: top;
 
     // --- STEP MODIFIERS ---
