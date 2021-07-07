@@ -41,6 +41,7 @@ exports[`Storyshots Components/Tool Header Horizontal Paddings 1`] = `
         
             
         <button
+          aria-label="mega menu"
           class="fd-button fd-button--transparent fd-button--menu fd-tool-header__button"
         >
           
@@ -75,6 +76,7 @@ exports[`Storyshots Components/Tool Header Horizontal Paddings 1`] = `
           
                  
           <i
+            aria-label="more items"
             class="sap-icon--overflow"
           />
           
@@ -172,6 +174,7 @@ exports[`Storyshots Components/Tool Header Horizontal Paddings 1`] = `
         
             
         <button
+          aria-label="notification"
           class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button"
         >
           
@@ -209,6 +212,7 @@ exports[`Storyshots Components/Tool Header Horizontal Paddings 1`] = `
         
             
         <button
+          aria-label="user menu control"
           class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button"
         >
           
@@ -272,6 +276,7 @@ exports[`Storyshots Components/Tool Header Horizontal Paddings 1`] = `
         
             
         <button
+          aria-label="megamenu"
           class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button"
         >
           
@@ -308,6 +313,7 @@ exports[`Storyshots Components/Tool Header Horizontal Paddings 1`] = `
         
             
         <button
+          aria-label="notification"
           class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button"
         >
           
@@ -345,6 +351,7 @@ exports[`Storyshots Components/Tool Header Horizontal Paddings 1`] = `
         
             
         <button
+          aria-label="user menu control"
           class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button"
         >
           
@@ -407,6 +414,7 @@ exports[`Storyshots Components/Tool Header Horizontal Paddings 1`] = `
         
             
         <button
+          aria-label="mega menu"
           class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button"
         >
           
@@ -490,6 +498,7 @@ exports[`Storyshots Components/Tool Header Horizontal Paddings 1`] = `
         
             
         <button
+          aria-label="notification"
           class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button"
         >
           
@@ -527,6 +536,7 @@ exports[`Storyshots Components/Tool Header Horizontal Paddings 1`] = `
         
             
         <button
+          aria-label="user menu control"
           class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button"
         >
           
@@ -624,6 +634,7 @@ exports[`Storyshots Components/Tool Header Responsive Paddings 1`] = `
       
             
       <button
+        aria-label="search"
         class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button"
       >
         
@@ -645,6 +656,7 @@ exports[`Storyshots Components/Tool Header Responsive Paddings 1`] = `
       
             
       <button
+        aria-label="task"
         class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button"
       >
         
@@ -666,6 +678,7 @@ exports[`Storyshots Components/Tool Header Responsive Paddings 1`] = `
       
             
       <button
+        aria-label="notification"
         class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button"
       >
         
@@ -703,6 +716,7 @@ exports[`Storyshots Components/Tool Header Responsive Paddings 1`] = `
       
             
       <button
+        aria-label="user menu control"
         class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button"
       >
         
@@ -810,7 +824,7 @@ exports[`Storyshots Components/Tool Header Tool Header with Controls 1`] = `
       
             
       <span
-        class="fd-object-status fd-tool-header__object-status--negative"
+        class="fd-object-status fd-object-status--inverted  fd-tool-header__object-status--negative"
       >
         
                 
@@ -868,6 +882,7 @@ exports[`Storyshots Components/Tool Header Tool Header with Controls 1`] = `
       
             
       <button
+        aria-label="search"
         class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button"
       >
         
@@ -889,6 +904,7 @@ exports[`Storyshots Components/Tool Header Tool Header with Controls 1`] = `
       
             
       <button
+        aria-label="task"
         class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button"
       >
         
@@ -910,6 +926,7 @@ exports[`Storyshots Components/Tool Header Tool Header with Controls 1`] = `
       
             
       <button
+        aria-label="notification"
         class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button"
       >
         
@@ -947,6 +964,7 @@ exports[`Storyshots Components/Tool Header Tool Header with Controls 1`] = `
       
             
       <button
+        aria-label="user menu control"
         class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button"
       >
         
@@ -985,6 +1003,7 @@ exports[`Storyshots Components/Tool Header Tool Header with Menu Buttons 1`] = `
       
             
       <button
+        aria-label="menu"
         class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button"
       >
         
@@ -1006,6 +1025,7 @@ exports[`Storyshots Components/Tool Header Tool Header with Menu Buttons 1`] = `
       
             
       <button
+        aria-label="menu button file"
         class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button"
       >
         
@@ -1034,6 +1054,7 @@ exports[`Storyshots Components/Tool Header Tool Header with Menu Buttons 1`] = `
       
             
       <button
+        aria-label="menu button edit"
         class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button"
       >
         
@@ -1062,6 +1083,7 @@ exports[`Storyshots Components/Tool Header Tool Header with Menu Buttons 1`] = `
       
             
       <button
+        aria-label="menu button view"
         class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button"
       >
         
@@ -1090,6 +1112,7 @@ exports[`Storyshots Components/Tool Header Tool Header with Menu Buttons 1`] = `
       
             
       <button
+        aria-label="menu button delete"
         class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button"
       >
         
@@ -1195,6 +1218,7 @@ exports[`Storyshots Components/Tool Header Tool Header with Side Navigation Menu
       
             
       <button
+        aria-label="menu"
         class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button"
       >
         
@@ -1319,6 +1343,7 @@ exports[`Storyshots Components/Tool Header Tool Header with Side Navigation Menu
       
             
       <button
+        aria-label="task"
         class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button"
       >
         
@@ -1340,6 +1365,7 @@ exports[`Storyshots Components/Tool Header Tool Header with Side Navigation Menu
       
             
       <button
+        aria-label="notification"
         class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button"
       >
         
@@ -1377,6 +1403,7 @@ exports[`Storyshots Components/Tool Header Tool Header with Side Navigation Menu
       
             
       <button
+        aria-label="user menu control"
         class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button"
       >
         

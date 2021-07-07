@@ -3,7 +3,6 @@
 
 $block: #{$fd-namespace}-tool-header;
 $fd-tool-header-height: 2.75rem !default;
-$fd-tool-header-screen-size-sm: 599px !default;
 
 $fd-tool-header-responsive-paddings: (
   'sm':  ('padding': 0 1rem),
@@ -108,7 +107,6 @@ $fd-tool-header-object-status-semantic-values: (
 
     width: auto;
     height: 1.625rem;
-    object-fit: cover;
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -162,17 +160,17 @@ $fd-tool-header-object-status-semantic-values: (
     }
 
     &-text {
-      color: var(--sapShell_TextColor);
-
-      @media (max-width: $fd-tool-header-screen-size-sm) {
+      @include fd-media-sm() {
         display: none;
       }
+
+      color: var(--sapShell_TextColor);
     }
 
     .#{$block}__title {
       @include fd-reset-paddings-x();
 
-      @media (max-width: $fd-tool-header-screen-size-sm) {
+      @include fd-media-sm() {
         display: none;
       }
     }
@@ -276,20 +274,6 @@ $fd-tool-header-object-status-semantic-values: (
   }
 
   &--responsive-paddings {
-    @media (max-width: $fd-tool-header-screen-size-sm) {
-      @include fd-set-paddings-x-equal(1rem);
-    }
-
-    @media (min-width: 600px) and (max-width: 1023px) {
-      @include fd-set-paddings-x-equal(2rem);
-    }
-
-    @media (min-width: 1024px) and (max-width: 1439px) {
-      @include fd-set-paddings-x-equal(2rem);
-    }
-
-    @media (min-width: 1440px) {
-      @include fd-set-paddings-x-equal(3rem);
-    }
+    @include fd-apply-responsive-paddings();
   }
 }

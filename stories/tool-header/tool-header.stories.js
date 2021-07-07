@@ -20,7 +20,7 @@ The application uses a horizontal tab navigation as main navigation.
 
 
 ##Horizontal paddings
-You can add horizontal paddings by applying a modifier class to the container. For responsive horizontal paddings (based on the screen size) add the <code>fd-tool-header--responsive-paddings</code> modifier class. In this case the left and right spacing will change as the screen size changes.
+You can add horizontal paddings by applying a modifier class to the container. For responsive horizontal paddings (based on the screen size) add the <code>.fd-tool-header--responsive-paddings</code> modifier class. In this case the left and right spacing will change as the screen size changes.
 
 | **Size** | **Modifier class** |
 | :--------- | :---------- |
@@ -54,10 +54,10 @@ The tool header supports only single-line text and truncation for Texts, Titles,
 - <code style="color:red;">.fd-tool-header__label</code> : a modifier class applied together with label control<br>
 
 ###Buttons
-- <code style="color:red;">.fd-tool-header__button</code> : this modifier class can be applied together with button and menu button in their transparent type.
+- <code style="color:red;">.fd-tool-header__button</code> : this modifier class can be applied together with button and menu button on their transparent type.
 
 ###Icons
-The tool header supports only icon color enumeration. The support extends to both icons and backgrounds. Interaction state colors are not be supported.
+The tool header supports only icon color enumeration. The support extends to both icons and backgrounds. Interaction state colors are not supported.
 
 - <code style="color:red;">.fd-tool-header__icon</code> <br>
 
@@ -93,7 +93,7 @@ export const primary = () => `<div class="fd-tool-header">
             <span class="sap-icon sap-icon--cart fd-tool-header__icon fd-tool-header__icon--contrast"></span>
         </div>
         <div class="fd-tool-header__element">
-            <span class="fd-object-status fd-tool-header__object-status--negative">
+            <span class="fd-object-status fd-object-status--inverted  fd-tool-header__object-status--negative">
                 <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
                 <span class="fd-object-status__text">Negative</span>
             </span>
@@ -105,17 +105,17 @@ export const primary = () => `<div class="fd-tool-header">
             </span>
         </div>
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="search">
                  <i class="sap-icon--search"></i>
             </button>
         </div>
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="task">
                  <i class="sap-icon--circle-task"></i>
             </button>
         </div>
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="notification">
                  <i class="sap-icon--bell"></i>
             </button>
         </div>
@@ -123,7 +123,7 @@ export const primary = () => `<div class="fd-tool-header">
             <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" aria-label="John Doe"></span>
         </div>
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="user menu control">
                  <i class="sap-icon--grid"></i>
             </button>
         </div>
@@ -132,16 +132,11 @@ export const primary = () => `<div class="fd-tool-header">
 `;
 
 primary.storyName = 'Tool Header with Controls';
-primary.parameters = {
-    docs: {
-        storyDescription: ''
-    }
-};
 
 export const menu = () => `<div class="fd-tool-header fd-tool-header--menu">
     <div class="fd-tool-header__group">
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="menu">
                 <i class="sap-icon--menu2"></i>
             </button>
         </div>
@@ -167,12 +162,12 @@ export const menu = () => `<div class="fd-tool-header fd-tool-header--menu">
             </div>
         </div>
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="task">
                  <i class="sap-icon--circle-task"></i>
             </button>
         </div>
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="notification">
                  <i class="sap-icon--bell"></i>
             </button>
         </div>
@@ -180,7 +175,7 @@ export const menu = () => `<div class="fd-tool-header fd-tool-header--menu">
             <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" aria-label="John Doe"></span>
         </div>
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="user menu control">
                  <i class="sap-icon--grid"></i>
             </button>
         </div>
@@ -199,30 +194,30 @@ menu.parameters = {
 export const menuButtons = () => `<div class="fd-tool-header fd-tool-header--menu">
     <div class="fd-tool-header__group">
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="menu">
                 <i class="sap-icon--menu2"></i>
             </button>
         </div>
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button" aria-label="menu button file">
                 <span class="fd-button__text">File</span>
                 <i class="sap-icon--slim-arrow-down"></i>
             </button>
         </div>
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button" aria-label="menu button edit">
                 <span class="fd-button__text">Edit</span>
                 <i class="sap-icon--slim-arrow-down"></i>
             </button>
         </div>
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button" aria-label="menu button view">
                 <span class="fd-button__text">View</span>
                 <i class="sap-icon--slim-arrow-down"></i>
             </button>
         </div>
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button" aria-label="menu button delete">
                 <span class="fd-button__text">Delete</span>
                 <i class="sap-icon--slim-arrow-down"></i>
             </button>
@@ -245,11 +240,6 @@ export const menuButtons = () => `<div class="fd-tool-header fd-tool-header--men
 `;
 
 menuButtons.storyName = 'Tool Header with Menu Buttons';
-menuButtons.parameters = {
-    docs: {
-        storyDescription: 'Some description'
-    }
-};
 
 export const responsivePaddings = () => `<div class="fd-tool-header fd-tool-header--responsive-paddings">
     <div class="fd-tool-header__group">
@@ -266,17 +256,17 @@ export const responsivePaddings = () => `<div class="fd-tool-header fd-tool-head
     </div>
     <div class="fd-tool-header__group">
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="search">
                  <i class="sap-icon--search"></i>
             </button>
         </div>
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="task">
                  <i class="sap-icon--circle-task"></i>
             </button>
         </div>
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="notification">
                  <i class="sap-icon--bell"></i>
             </button>
         </div>
@@ -284,7 +274,7 @@ export const responsivePaddings = () => `<div class="fd-tool-header fd-tool-head
             <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" aria-label="John Doe"></span>
         </div>
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="user menu control">
                  <i class="sap-icon--grid"></i>
             </button>
         </div>
@@ -308,7 +298,7 @@ export const horizontalPaddings = () => `<h4>Size S (1rem)</h4>
 
         </div>
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--transparent fd-button--menu fd-tool-header__button">
+            <button class="fd-button fd-button--transparent fd-button--menu fd-tool-header__button" aria-label="mega menu">
                 <i class="sap-icon--megamenu"></i>
             </button>
         </div>
@@ -316,7 +306,7 @@ export const horizontalPaddings = () => `<h4>Size S (1rem)</h4>
     <div class="fd-tool-header__group">
         <div class="fd-tool-header__element">
             <button class="fd-button fd-button--transparent fd-tool-header__button">
-                 <i class="sap-icon--overflow"></i>
+                 <i class="sap-icon--overflow" aria-label="more items"></i>
             </button>
         </div>
         <div class="fd-tool-header__element"> 
@@ -338,7 +328,7 @@ export const horizontalPaddings = () => `<h4>Size S (1rem)</h4>
     </div>
     <div class="fd-tool-header__group">
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="notification">
                  <i class="sap-icon--bell"></i>
             </button>
         </div>
@@ -346,7 +336,7 @@ export const horizontalPaddings = () => `<h4>Size S (1rem)</h4>
             <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" aria-label="John Doe"></span>
         </div>
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="user menu control">
                  <i class="sap-icon--grid"></i>
             </button>
         </div>
@@ -361,7 +351,7 @@ export const horizontalPaddings = () => `<h4>Size S (1rem)</h4>
 
         </div>
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button" aria-label="megamenu">
                 <h4 class="fd-title fd-title--h5 fd-tool-header__title">Product Name</h4>
                 <i class="sap-icon--megamenu"></i>
             </button>
@@ -369,7 +359,7 @@ export const horizontalPaddings = () => `<h4>Size S (1rem)</h4>
     </div>
     <div class="fd-tool-header__group">
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="notification">
                  <i class="sap-icon--bell"></i>
             </button>
         </div>
@@ -377,7 +367,7 @@ export const horizontalPaddings = () => `<h4>Size S (1rem)</h4>
             <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" aria-label="John Doe"></span>
         </div>
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="user menu control">
                  <i class="sap-icon--grid"></i>
             </button>
         </div>
@@ -392,7 +382,7 @@ export const horizontalPaddings = () => `<h4>Size S (1rem)</h4>
 
         </div>
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button" aria-label="mega menu">
                 <span class="fd-button__text fd-tool-header__button-text">Product Name</span>
                 <i class="sap-icon--megamenu"></i>
             </button>
@@ -410,7 +400,7 @@ export const horizontalPaddings = () => `<h4>Size S (1rem)</h4>
             </div>
         </div>
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="notification">
                  <i class="sap-icon--bell"></i>
             </button>
         </div>
@@ -418,7 +408,7 @@ export const horizontalPaddings = () => `<h4>Size S (1rem)</h4>
             <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" aria-label="John Doe"></span>
         </div>
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button">
+            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="user menu control">
                  <i class="sap-icon--grid"></i>
             </button>
         </div>
@@ -429,6 +419,6 @@ export const horizontalPaddings = () => `<h4>Size S (1rem)</h4>
 horizontalPaddings.storyName = 'Horizontal Paddings';
 horizontalPaddings.parameters = {
     docs: {
-        storyDescription: 'You can add horizontal paddings by applying a modifier class to the container. For example <code>.fd-tool-header--sm</code> modifier class will add 1rem horizontal paddings on the tool bar container.'
+        storyDescription: 'You can add horizontal paddings by applying a modifier class to the container. For example, <code>.fd-tool-header--sm</code> modifier class will add 1rem horizontal paddings on the tool bar container.'
     }
 };
