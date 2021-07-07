@@ -111,12 +111,10 @@ $block: #{$fd-namespace}-alert;
       padding-right: $fd-alert-padding-status;
       padding-left: $fd-alert-padding-default;
 
-      &::before {
-        display: none;
-      }
-
+      &::before,
       &::after {
-        display: none;
+        left: auto;
+        right: 0;
       }
     }
 
