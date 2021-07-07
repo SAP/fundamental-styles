@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.30...v0.19.0-rc.31) (2021-07-07)
+
+
+### Bug Fixes
+
+* correct position for rtl icons for alert component ([#2544](https://github.com/SAP/fundamental-styles/issues/2544)) ([cb76fc0](https://github.com/SAP/fundamental-styles/commit/cb76fc034a76329916ec5ac05d0f552355244a1c))
+
 ## [0.19.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.29...v0.19.0-rc.30) (2021-07-06)
 
 
