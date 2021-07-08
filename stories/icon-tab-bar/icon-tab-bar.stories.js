@@ -1429,3 +1429,144 @@ paddings.parameters = {
         storyDescription: 'You can set horizontal paddings by adding a modifier class and specifying the size of the paddings. Please refer to the "Paddings" section at the top of the page for the available sizes.'
     }
 };
+
+export const navigation = () => `<div style="min-height: 600px;">
+<h4>With Overflow</h4>
+    <div class="fd-icon-tab-bar fd-icon-tab-bar--sm fd-icon-tab-bar--navigation" style="max-width: 400px;">
+        <ul role="tablist" class="fd-icon-tab-bar__header"> 
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab1">
+                    <span class="fd-icon-tab-bar__tag">Section 1</span>
+                </a>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#" aria-selected="true" id="tab2">
+                    <span class="fd-icon-tab-bar__tag">Section 2</span>
+                </a>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab3">
+                    <span class="fd-icon-tab-bar__tag">Section 3</span>
+                </a>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <button class="fd-icon-tab-bar__overflow">
+                    <span class="fd-icon-tab-bar__overflow-text">More</span>
+                    <i class="sap-icon--slim-arrow-down" role="presentation"></i>
+                </button>
+            </li> 
+        </ul>
+    </div>
+    <div style="height: 50px;"></div>
+    <h4>With Multi Click Area</h4>
+    <div class="fd-icon-tab-bar fd-icon-tab-bar--navigation fd-icon-tab-bar--md">
+        <ul role="tablist" class="fd-icon-tab-bar__header">  
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab4">
+                    <span class="fd-icon-tab-bar__tag">Section 1</span>
+                </a>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--multi-click">
+                <a role="tab" class="fd-icon-tab-bar__tab" aria-selected="true" id="tab5" tabindex="0">
+                    <span class="fd-icon-tab-bar__tag">Section 2</span>
+                </a>
+
+                <div class="fd-popover fd-icon-tab-bar__popover">
+                    <div class="fd-popover__control">
+                        <div class="fd-icon-tab-bar__button-container">
+                            <button class="fd-button fd-button--transparent fd-button--compact  fd-icon-tab-bar__button" aria-controls="popoverAO4" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverAO4');" aria-label="open menu button">
+                                <i class="sap-icon--slim-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="false" id="popoverAO4">
+                        <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
+                            <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
+                                <a tabindex="0" class="fd-list__link">
+                                    <span class="fd-list__title">Subsection 1</span>
+                                </a>
+                            </li>
+                            <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
+                                <a tabindex="0" class="fd-list__link">
+                                    <span class="fd-list__title">Subsection 2</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab6">
+                    <span class="fd-icon-tab-bar__tag">Section 3</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div style="height: 120px;"></div>
+    <h4>With Single Click Area</h4>
+    <div class="fd-icon-tab-bar fd-icon-tab-bar--navigation fd-icon-tab-bar--xl">
+    <ul role="tablist" class="fd-icon-tab-bar__header">
+      <li role="presentation" class="fd-icon-tab-bar__item">
+        <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab7">
+          <span class="fd-icon-tab-bar__tag">Section 1</span>
+        </a>
+      </li>
+      <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--single-click">
+        <div class="fd-popover">
+          <div class="fd-popover__control">
+            <a role="tab" class="fd-icon-tab-bar__tab" aria-selected="true" id="tab8" tabindex="0" aria-controls="popoverAO5" aria-expanded="true" aria-haspopup="true" onclick="onPopoverClick('popoverAO5');">
+              <div class="fd-icon-tab-bar__tab-container">
+                <span class="fd-icon-tab-bar__tag">Section 2</span>
+                <span class="fd-icon-tab-bar__arrow">
+                    <i class="sap-icon--slim-arrow-down" role="presentation"></i>
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="false" id="popoverAO5">
+            <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
+              <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
+                <a tabindex="0" class="fd-list__link">
+                  <span class="fd-list__title">Subsection 1</span>
+                </a>
+              </li>
+              <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
+                <a tabindex="0" class="fd-list__link">
+                  <span class="fd-list__title">Subsection 2</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li role="presentation" class="fd-icon-tab-bar__item">
+        <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab9">
+          <span class="fd-icon-tab-bar__tag">Section 3</span>
+        </a>
+      </li>
+      <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--single-click">
+        <div class="fd-popover">
+          <div class="fd-popover__control">
+            <a role="tab" class="fd-icon-tab-bar__tab" id="tab10" tabindex="0" aria-expanded="true" aria-haspopup="true">
+              <div class="fd-icon-tab-bar__tab-container">
+                <span class="fd-icon-tab-bar__tag">Section 4</span>
+                <span class="fd-icon-tab-bar__arrow">
+                    <i class="sap-icon--slim-arrow-down" role="presentation"></i>
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+navigation.storyName = 'Navigation Icon Tab Bar';
+navigation.parameters = {
+    docs: {
+        storyDescription: `The Navigation Tab Bar is the main/default navigation displayed on the SAP Fiori launchpad home page. It offers the user an easy access to multiple pages per space. The background color of the Shell Navigation is connected the Home/Shell Header to properly differentiate the global shell navigation versus any application specific navigation. The Navigation Bar snaps to top and remains visible while scrolling. It is not visible in App view. <br>
+        The implementation is based on UniversalIconTabBar with some different color parameters that are specific to Shell Bar and Tool Header. <br>
+        If there are more Tabs than the screen can accommodate, the remaining Tabs move into an Overflow.`
+    }
+};

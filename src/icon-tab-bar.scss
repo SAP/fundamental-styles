@@ -974,6 +974,131 @@ $fd-icon-tab-bar-semantic-values: (
     }
   }
 
+  &--navigation {
+    .#{$block}__header {
+      box-shadow: var(--sapShell_Shadow);
+      background: var(--sapShell_Navigation_Background);
+    }
+
+    .#{$block}__item {
+      color: var(--sapShell_Navigation_TextColor);
+    }
+
+    .#{$block}__tab {
+      .#{$block}__tag {
+        color: var(--sapShell_Navigation_TextColor);
+      }
+
+      .#{$block}__arrow {
+        [class*='sap-icon'] {
+          color: var(--sapShell_Navigation_TextColor);
+        }
+      }
+
+      @include fd-selected() {
+        .#{$block}__tag {
+          color: var(--sapShell_Navigation_Selected_TextColor);
+        }
+
+        .#{$block}__arrow {
+          [class*='sap-icon'] {
+            color: var(--sapShell_Navigation_Selected_TextColor);
+          }
+        }
+
+        &::after {
+          background: var(--sapShell_Navigation_SelectedColor);
+        }
+      }
+
+      @include fd-hover() {
+        .#{$block}__tag {
+          color: var(--sapShell_Navigation_Selected_TextColor);
+        }
+        .#{$block}__arrow {
+          [class*='sap-icon'] {
+            color: var(--sapShell_Navigation_Selected_TextColor);
+          }
+        }
+      }
+
+      @include fd-focus() {
+        .#{$block}__tag,
+        .#{$block}__icon,
+        .#{$block}__container,
+        .#{$block}__tab-container {
+          outline-color: var(--sapShell_Navigation_TextColor);
+        }
+      }
+    }
+
+    .#{$block}__button {
+      color: var(--sapShell_Navigation_SelectedColor);
+
+      @include fd-hover() {
+        color: var(--sapShell_Navigation_SelectedColor);
+        background: var(--sapShell_Navigation_Hover_Background);
+        border-color: var(--sapShell_Navigation_Hover_Background);
+      }
+
+      @include fd-active() {
+        color: var(--sapShell_Navigation_Active_TextColor);
+        background: var(--sapShell_Navigation_Active_Background);
+        border-color: var(--sapShell_Navigation_Active_Background);
+      }
+
+      @include fd-focus() {
+        outline-color: var(--sapShell_Navigation_TextColor);
+      }
+    }
+
+    &__item--single-click {
+      .#{$block}__tab {
+        @include fd-focus() {
+          .#{$block}__tab-container {
+            outline-color: var(--sapShell_Navigation_TextColor);
+          }
+        }
+      }
+    }
+
+    .#{$block}__overflow {
+      background: var(--sapShell_Navigation_Background);
+      border-color: var(--sapShell_Navigation_SelectedColor);
+
+      &-text,
+      [class*='sap-icon'] {
+        color: var(--sapShell_Navigation_SelectedColor);
+      }
+
+      @include fd-hover() {
+        border-color: var(--sapShell_Navigation_SelectedColor);
+        background: var(--sapShell_Navigation_Hover_Background);
+
+        .#{$block}__overflow-text,
+        [class*='sap-icon'] {
+          color: var(--sapShell_Navigation_SelectedColor);
+        }
+      }
+
+      @include fd-active() {
+        border-color: var(--sapShell_Navigation_SelectedColor);
+        background: var(--sapShell_Navigation_Active_Background);
+
+        .#{$block}__overflow-text,
+        [class*='sap-icon'] {
+          color: var(--sapShell_Navigation_Active_TextColor);
+        }
+      }
+
+      @include fd-focus() {
+        &::after {
+          border-color: var(--sapShell_Navigation_TextColor);
+        }
+      }
+    }
+  }
+
   @each $set-name, $set-padding in $fd-icon-tab-bar-responsive-paddings {
     &--#{$set-name} {
       .#{$block}__header {
