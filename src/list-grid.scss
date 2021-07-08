@@ -25,7 +25,6 @@ $block: #{$fd-namespace}-grid-list;
     'critical': ('backgroundColor': var(--sapWarningBorderColor)),
     'neutral': ('backgroundColor': var(--sapNeutralBorderColor))
   );
-  $fd-grid-list-drop-area-vertical: 0.55rem;
 
   @include fd-reset();
   @include fd-flex(column);
