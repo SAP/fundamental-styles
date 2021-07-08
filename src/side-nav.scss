@@ -72,7 +72,7 @@ $has-child-content-arrow-margin: 0.125rem;
   &--condensed {
     width: 2.75rem;
 
-    .#{$fd-namespace}-popover-custom {
+    &--popover-custom {
       display: block;
     }
 
