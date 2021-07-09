@@ -1,4 +1,12 @@
 
+## [0.19.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.32...v0.19.0-rc.33) (2021-07-09)
+
+
+### Bug Fixes
+
+* added additional panding for slider [ci visual] ([#2552](https://github.com/SAP/fundamental-styles/issues/2552)) ([f3d4c65](https://github.com/SAP/fundamental-styles/commit/f3d4c656e72c2dcc52ff394866c3351ecce4764f))
+* update border width for combobox button ([#2547](https://github.com/SAP/fundamental-styles/issues/2547)) ([16d7697](https://github.com/SAP/fundamental-styles/commit/16d7697e404247bb8fd7ce9990f7a4066caf47e3))
+
 ## [0.19.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.31...v0.19.0-rc.32) (2021-07-07)
 
 ## [0.19.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.30...v0.19.0-rc.31) (2021-07-07)
