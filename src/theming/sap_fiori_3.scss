@@ -229,4 +229,35 @@
 
   /* Toolbar */
   --fdToolbar_Auto_Background: inherit;
+
+  /* Tool Header */
+  --fdTool_Header_Icon_Color_Default: var(--sapShell_TextColor);
+  --fdTool_Header_Icon_Color_Contrast: var(--sapShell_TextColor);
+  --fdTool_Header_Icon_Color_Positive: var(--sapShell_PositiveColor);
+  --fdTool_Header_Icon_Color_Critical: var(--sapShell_CriticalColor);
+  --fdTool_Header_Icon_Color_Negative: var(--sapShell_NegativeColor);
+  --fdTool_Header_Icon_Color_Neutral: var(--sapShell_NeutralColor);
+  --fdTool_Header_Icon_Color_Inverted_Default: var(--sapShell_TextColor);
+  --fdTool_Header_Icon_Color_Inverted_Contrast: var(--sapShell_TextColor);
+  --fdTool_Header_Icon_Color_Inverted_Positive: var(--sapTextColor);
+  --fdTool_Header_Icon_Color_Inverted_Critical: var(--sapTextColor);
+  --fdTool_Header_Icon_Color_Inverted_Negative: var(--sapTextColor);
+  --fdTool_Header_Icon_Color_Inverted_Neutral: var(--sapTextColor);
+  --fdTool_Header_Icon_Background_Color_Inverted_Default: transparent;
+  --fdTool_Header_Icon_Background_Color_Inverted_Contrast: transparent;
+  --fdTool_Header_Icon_Background_Color_Inverted_Positive: var(--sapShell_PositiveColor);
+  --fdTool_Header_Icon_Background_Color_Inverted_Critical: var(--sapShell_CriticalColor);
+  --fdTool_Header_Icon_Background_Color_Inverted_Negative: var(--sapShell_NegativeColor);
+  --fdTool_Header_Icon_Background_Color_Inverted_Neutral: var(--sapShell_NeutralColor);
+  --fdTool_Header_Object_Status_Color_Positive: var(--sapShell_PositiveColor);
+  --fdTool_Header_Object_Status_Color_Critical: var(--sapShell_CriticalColor);
+  --fdTool_Header_Object_Status_Color_Negative: var(--sapShell_NegativeColor);
+  --fdTool_Header_Object_Status_Color_Neutral: var(--sapShell_NeutralColor);
+  --fdTool_Header_Object_Status_Color_Informative: var(--sapShell_InformativeColor);
+  --fdTool_Header_Object_Status_Text_Color_Inverted: var(--sapTextColor);
+  --fdTool_Header_Object_Status_Background_Color_Inverted_Positive: var(--sapShell_PositiveColor);
+  --fdTool_Header_Object_Status_Background_Color_Inverted_Critical: var(--sapShell_CriticalColor);
+  --fdTool_Header_Object_Status_Background_Color_Inverted_Negative: var(--sapShell_NegativeColor);
+  --fdTool_Header_Object_Status_Background_Color_Inverted_Neutral: var(--sapShell_NeutralColor);
+  --fdTool_Header_Object_Status_Background_Color_Inverted_Informative: var(--sapShell_InformativeColor);
 }

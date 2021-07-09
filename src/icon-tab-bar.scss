@@ -103,12 +103,6 @@ $fd-icon-tab-bar-semantic-values: (
   }
 }
 
-@mixin apply-responsive-paddings($padding) {
-  .#{$block}__header {
-    padding: 0 $padding;
-  }
-}
-
 %fd-icon-tab-bar-text {
   @include fd-reset();
 
@@ -983,20 +977,9 @@ $fd-icon-tab-bar-semantic-values: (
   }
 
   &--responsive-paddings {
-    @media (max-width: 599px) {
-      @include apply-responsive-paddings(1rem);
-    }
-
-    @media (min-width: 600px) and (max-width: 1023px) {
-      @include apply-responsive-paddings(2rem);
-    }
-
-    @media (min-width: 1024px) and (max-width: 1439px) {
-      @include apply-responsive-paddings(2rem);
-    }
-
-    @media (min-width: 1440px) {
-      @include apply-responsive-paddings(3rem);
+    .#{$block}__header {
+      @include fd-reset-paddings-y();
+      @include fd-apply-responsive-paddings();
     }
   }
 }
