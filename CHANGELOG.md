@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.37...v0.19.0-rc.38) (2021-07-09)
+
+
+### Features
+
+* introduce Tool Header component from BTP design ([#2550](https://github.com/SAP/fundamental-styles/issues/2550)) ([7c5ef3f](https://github.com/SAP/fundamental-styles/commit/7c5ef3fdbdea94dfa7c5cd196919426abc9a67fc))
+
 ## [0.19.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.36...v0.19.0-rc.37) (2021-07-09)
 
 
