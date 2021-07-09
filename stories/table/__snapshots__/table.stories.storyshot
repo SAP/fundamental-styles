@@ -1320,14 +1320,14 @@ exports[`Storyshots Components/Table Checkbox (compact) 1`] = `
                 
           <input
             aria-label="checkbox"
-            class="fd-checkbox fd-checkbox--compact"
+            class="fd-checkbox fd-checkbox--compact fd-table__checkbox"
             id="Ai4HF611"
             type="checkbox"
           />
           
                 
           <label
-            class="fd-checkbox__label"
+            class="fd-checkbox__label fd-table__checkbox-label"
             for="Ai4HF611"
           />
           
@@ -1392,14 +1392,14 @@ exports[`Storyshots Components/Table Checkbox (compact) 1`] = `
           <input
             aria-label="checkbox"
             checked=""
-            class="fd-checkbox fd-checkbox--compact"
+            class="fd-checkbox fd-checkbox--compact fd-table__checkbox"
             id="Ai4HFHG1"
             type="checkbox"
           />
           
                 
           <label
-            class="fd-checkbox__label"
+            class="fd-checkbox__label fd-table__checkbox-label"
             for="Ai4HFHG1"
           />
           
@@ -1454,14 +1454,14 @@ exports[`Storyshots Components/Table Checkbox (compact) 1`] = `
                 
           <input
             aria-label="checkbox"
-            class="fd-checkbox fd-checkbox--compact"
+            class="fd-checkbox fd-checkbox--compact fd-table__checkbox"
             id="Ai4JKHG1"
             type="checkbox"
           />
           
                 
           <label
-            class="fd-checkbox__label"
+            class="fd-checkbox__label fd-table__checkbox-label"
             for="Ai4JKHG1"
           />
           
@@ -1516,14 +1516,14 @@ exports[`Storyshots Components/Table Checkbox (compact) 1`] = `
                 
           <input
             aria-label="checkbox"
-            class="fd-checkbox fd-checkbox--compact"
+            class="fd-checkbox fd-checkbox--compact fd-table__checkbox"
             id="Ai4JH23G1"
             type="checkbox"
           />
           
                 
           <label
-            class="fd-checkbox__label"
+            class="fd-checkbox__label fd-table__checkbox-label"
             for="Ai4JH23G1"
           />
           
@@ -1622,14 +1622,14 @@ exports[`Storyshots Components/Table Checkbox (condensed) 1`] = `
                 
           <input
             aria-label="checkbox"
-            class="fd-checkbox fd-checkbox--compact"
+            class="fd-checkbox fd-checkbox--compact fd-table__checkbox"
             id="Ai4JH2BF87"
             type="checkbox"
           />
           
                 
           <label
-            class="fd-checkbox__label"
+            class="fd-checkbox__label fd-table__checkbox-label"
             for="Ai4JH2BF87"
           />
           
@@ -1694,14 +1694,14 @@ exports[`Storyshots Components/Table Checkbox (condensed) 1`] = `
           <input
             aria-label="checkbox"
             checked=""
-            class="fd-checkbox fd-checkbox--compact"
+            class="fd-checkbox fd-checkbox--compact fd-table__checkbox"
             id="Ai4JHf87"
             type="checkbox"
           />
           
                 
           <label
-            class="fd-checkbox__label"
+            class="fd-checkbox__label fd-table__checkbox-label"
             for="Ai4JHf87"
           />
           
@@ -1756,14 +1756,14 @@ exports[`Storyshots Components/Table Checkbox (condensed) 1`] = `
                 
           <input
             aria-label="checkbox"
-            class="fd-checkbox fd-checkbox--compact"
+            class="fd-checkbox fd-checkbox--compact fd-table__checkbox"
             id="Ai4Jj67"
             type="checkbox"
           />
           
                 
           <label
-            class="fd-checkbox__label"
+            class="fd-checkbox__label fd-table__checkbox-label"
             for="Ai4Jj67"
           />
           
@@ -1818,14 +1818,14 @@ exports[`Storyshots Components/Table Checkbox (condensed) 1`] = `
                 
           <input
             aria-label="checkbox"
-            class="fd-checkbox fd-checkbox--compact"
+            class="fd-checkbox fd-checkbox--compact fd-table__checkbox"
             id="AGjtJj67"
             type="checkbox"
           />
           
                 
           <label
-            class="fd-checkbox__label"
+            class="fd-checkbox__label fd-table__checkbox-label"
             for="AGjtJj67"
           />
           
@@ -1924,14 +1924,14 @@ exports[`Storyshots Components/Table Checkbox 1`] = `
                 
           <input
             aria-label="checkbox"
-            class="fd-checkbox"
+            class="fd-checkbox fd-table__checkbox"
             id="Ai4ez611"
             type="checkbox"
           />
           
                 
           <label
-            class="fd-checkbox__label"
+            class="fd-checkbox__label fd-table__checkbox-label"
             for="Ai4ez611"
           />
           
@@ -1996,14 +1996,14 @@ exports[`Storyshots Components/Table Checkbox 1`] = `
           <input
             aria-label="checkbox"
             checked=""
-            class="fd-checkbox"
+            class="fd-checkbox fd-table__checkbox"
             id="Ai4ez615"
             type="checkbox"
           />
           
                 
           <label
-            class="fd-checkbox__label"
+            class="fd-checkbox__label fd-table__checkbox-label"
             for="Ai4ez615"
           />
           
@@ -2058,14 +2058,14 @@ exports[`Storyshots Components/Table Checkbox 1`] = `
                 
           <input
             aria-label="checkbox"
-            class="fd-checkbox"
+            class="fd-checkbox fd-table__checkbox"
             id="Ai4ez617"
             type="checkbox"
           />
           
                 
           <label
-            class="fd-checkbox__label"
+            class="fd-checkbox__label fd-table__checkbox-label"
             for="Ai4ez617"
           />
           
@@ -2120,14 +2120,14 @@ exports[`Storyshots Components/Table Checkbox 1`] = `
                 
           <input
             aria-label="checkbox"
-            class="fd-checkbox"
+            class="fd-checkbox fd-table__checkbox"
             id="Gi4ez611"
             type="checkbox"
           />
           
                 
           <label
-            class="fd-checkbox__label"
+            class="fd-checkbox__label fd-table__checkbox-label"
             for="Gi4ez611"
           />
           
