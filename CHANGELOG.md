@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.34...v0.19.0-rc.35) (2021-07-09)
+
+
+### Bug Fixes
+
+* table fixed column borders fix, table improvements ([#2549](https://github.com/SAP/fundamental-styles/issues/2549)) ([9eab00d](https://github.com/SAP/fundamental-styles/commit/9eab00d13deaafb9691d9745616452069f57f49f))
+
 ## [0.19.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.33...v0.19.0-rc.34) (2021-07-09)
 
 
