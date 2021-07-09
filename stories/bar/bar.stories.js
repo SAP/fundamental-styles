@@ -35,7 +35,7 @@ export default {
 - Buttons are sorted by usage i.e. from frequently-used to seldomly-used.
         `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['button', 'icon', 'input', 'segmented-button', 'avatar', 'bar']
+        components: ['button', 'icon', 'input', 'segmented-button', 'avatar', 'bar', 'title']
     }
 };
 
@@ -43,8 +43,8 @@ export const Default = () => `
 <p><b>Compact bar with compact elements</b></p>
 <div class="fd-bar">
     <div class="fd-bar__left">
-        <div class="fd-bar__element">
-            <span class="fd-bar__element fd-bar__element--title" aria-label="text">TEXT</span>
+        <div class="fd-bar__element fd-bar__element--title">
+            <h6 class="fd-title fd-title--h6" aria-label="text">TEXT</h6>
         </div>
     </div>
     <div class="fd-bar__middle">
