@@ -81,6 +81,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     position: relative;
     display: table-cell;
     vertical-align: top;
+    box-sizing: content-box;
 
     // --- STEP MODIFIERS ---
     &--completed {
