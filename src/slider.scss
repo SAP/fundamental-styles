@@ -6,6 +6,10 @@ $handle-desktop-dimensions: 1.25rem;
 $handle-hit-area-desktop-dimensions: 2rem;
 $handle-mobile-dimensions: 1.625rem;
 $handle-hit-area-mobile-dimensions: 2.75rem;
+$handle-outline-offset: 0.0625rem;
+$handle-outline-width: 0.0625rem;
+$slider-x-paddings: $handle-desktop-dimensions / 2;
+$slider-x-paddings--lg: $handle-mobile-dimensions / 2;
 
 .#{$block} {
   @include fd-reset();
@@ -16,11 +20,11 @@ $handle-hit-area-mobile-dimensions: 2.75rem;
 
   min-width: 4rem;
   max-width: 100%;
-  padding: 1rem 0.625rem;
+  padding: 1rem calc(#{$slider-x-paddings} + #{$handle-outline-offset} + #{$handle-outline-width});
   position: relative;
 
   &--lg {
-    @include fd-set-paddings-x-equal(0.8125rem);
+    @include fd-set-paddings-x-equal(calc(#{$slider-x-paddings--lg} + #{$handle-outline-offset} + #{$handle-outline-width}));
   }
 
   &__inner {
@@ -126,8 +130,8 @@ $handle-hit-area-mobile-dimensions: 2.75rem;
     }
 
     &:focus {
-      outline: 1px dotted var(--sapButton_Hover_BorderColor);
-      outline-offset: 0.0625rem;
+      outline: $handle-outline-width dotted var(--sapButton_Hover_BorderColor);
+      outline-offset: $handle-outline-offset;
     }
 
     @include fd-hover() {
