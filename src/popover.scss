@@ -34,6 +34,10 @@ $block: #{$fd-namespace}-popover;
     position: relative;
     margin-left: 0;
 
+    &:focus-visible {
+      outline: var(--sapContent_FocusWidth) dotted var(--sapContent_FocusColor);
+    }
+
     &.#{$fd-namespace}-input:last-child {
       margin-bottom: 0;
     }
