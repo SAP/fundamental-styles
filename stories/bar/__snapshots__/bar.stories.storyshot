@@ -224,12 +224,12 @@ exports[`Storyshots Components/Bar Default 1`] = `
       >
         
             
-        <h4
+        <h6
           aria-label="text"
-          class="fd-title"
+          class="fd-title fd-title--h6"
         >
           TEXT
-        </h4>
+        </h6>
         
         
       </div>
