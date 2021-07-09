@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.35...v0.19.0-rc.36) (2021-07-09)
+
+
+### Bug Fixes
+
+* refactor bar documentation as suggested ([#2540](https://github.com/SAP/fundamental-styles/issues/2540)) ([85aa803](https://github.com/SAP/fundamental-styles/commit/85aa80319ba39da76edd5e23bbdb8e7e7e3af486))
+
 ## [0.19.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.34...v0.19.0-rc.35) (2021-07-09)
 
 
