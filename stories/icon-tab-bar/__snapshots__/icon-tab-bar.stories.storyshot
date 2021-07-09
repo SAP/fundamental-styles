@@ -3610,12 +3610,10 @@ exports[`Storyshots Components/Icon Tab Bar Navigation Icon Tab Bar 1`] = `
             
             
             <a
-              aria-controls="popoverAO6"
               aria-expanded="true"
               aria-haspopup="true"
               class="fd-icon-tab-bar__tab"
               id="tab10"
-              onclick="onPopoverClick('popoverAO6');"
               role="tab"
               tabindex="0"
             >
