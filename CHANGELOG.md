@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.33...v0.19.0-rc.34) (2021-07-09)
+
+
+### Bug Fixes
+
+* box-sizing of wizard step in progress bar [ci visual] ([#2551](https://github.com/SAP/fundamental-styles/issues/2551)) ([5d05a39](https://github.com/SAP/fundamental-styles/commit/5d05a39d488a7473f48564a4e7d82fcd3b71d5d5))
+
 ## [0.19.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.32...v0.19.0-rc.33) (2021-07-09)
 
 
