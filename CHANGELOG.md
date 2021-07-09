@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.36...v0.19.0-rc.37) (2021-07-09)
+
+
+### Bug Fixes
+
+* popover outline focus-visible ([#2555](https://github.com/SAP/fundamental-styles/issues/2555)) ([a3901fd](https://github.com/SAP/fundamental-styles/commit/a3901fdcbf5f4ddadee49078442bb50371f1fb47))
+
 ## [0.19.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.35...v0.19.0-rc.36) (2021-07-09)
 
 
