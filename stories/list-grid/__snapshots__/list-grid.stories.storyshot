@@ -135,7 +135,7 @@ exports[`Storyshots Components/Grid List "More" Button 1`] = `
                         
               <button
                 aria-label="Navigation"
-                class="fd-button fd-button--compact fd-button--transparent"
+                class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation"
               >
                 
                             
@@ -731,7 +731,7 @@ exports[`Storyshots Components/Grid List Delete mode 1`] = `
                         
               <button
                 aria-label="Navigation"
-                class="fd-button fd-button--compact fd-button--transparent"
+                class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation"
               >
                 
                             
@@ -1389,7 +1389,7 @@ exports[`Storyshots Components/Grid List Filter Infobar 1`] = `
                         
               <button
                 aria-label="Navigation"
-                class="fd-button fd-button--compact fd-button--transparent"
+                class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation"
               >
                 
                             
@@ -1929,7 +1929,7 @@ exports[`Storyshots Components/Grid List Footer 1`] = `
                         
               <button
                 aria-label="Navigation"
-                class="fd-button fd-button--compact fd-button--transparent"
+                class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation"
               >
                 
                             
@@ -2516,7 +2516,7 @@ exports[`Storyshots Components/Grid List Group 1`] = `
                         
               <button
                 aria-label="Navigation"
-                class="fd-button fd-button--compact fd-button--transparent"
+                class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation"
               >
                 
                             
@@ -3085,7 +3085,7 @@ exports[`Storyshots Components/Grid List Highlight 1`] = `
                         
               <button
                 aria-label="Navigation"
-                class="fd-button fd-button--compact fd-button--transparent"
+                class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation"
               >
                 
                             
@@ -3677,7 +3677,7 @@ exports[`Storyshots Components/Grid List Multi select mode 1`] = `
                         
               <button
                 aria-label="Navigation"
-                class="fd-button fd-button--compact fd-button--transparent"
+                class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation"
               >
                 
                             
@@ -4312,7 +4312,7 @@ exports[`Storyshots Components/Grid List None mode 1`] = `
                         
               <button
                 aria-label="Navigation"
-                class="fd-button fd-button--compact fd-button--transparent"
+                class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation"
               >
                 
                             
@@ -4829,7 +4829,7 @@ exports[`Storyshots Components/Grid List None mode 1`] = `
                         
               <button
                 aria-label="Navigation"
-                class="fd-button fd-button--compact fd-button--transparent"
+                class="fd-button fd-button--compact fd-grid-list__btn-navigation fd-button--transparent fd-grid-list__btn-navigation"
               >
                 
                             
@@ -5176,7 +5176,7 @@ exports[`Storyshots Components/Grid List Single select left mode 1`] = `
                         
               <button
                 aria-label="Navigation"
-                class="fd-button fd-button--compact fd-button--transparent"
+                class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation"
               >
                 
                             
@@ -5819,7 +5819,7 @@ exports[`Storyshots Components/Grid List Single select mode 1`] = `
                         
               <button
                 aria-label="Navigation"
-                class="fd-button fd-button--compact fd-button--transparent"
+                class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation"
               >
                 
                             
@@ -6448,7 +6448,7 @@ exports[`Storyshots Components/Grid List Single select right mode 1`] = `
                         
               <button
                 aria-label="Navigation"
-                class="fd-button fd-button--compact fd-button--transparent"
+                class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation"
               >
                 
                             
@@ -7096,7 +7096,7 @@ exports[`Storyshots Components/Grid List States 1`] = `
                         
               <button
                 aria-label="Navigation"
-                class="fd-button fd-button--compact fd-button--transparent"
+                class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation"
               >
                 
                             
