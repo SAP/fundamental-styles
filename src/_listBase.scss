@@ -120,7 +120,6 @@
     @include fd-ellipsis();
     @include ie11-active-state-fix();
 
-    line-height: 1rem;
     color: var(--sapList_TextColor);
     pointer-events: all;
   }
