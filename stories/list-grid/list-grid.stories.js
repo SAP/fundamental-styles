@@ -201,7 +201,7 @@ export const noneMode = () => `<div style="min-height: 500px;">
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-grid-list__btn-navigation fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
+                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
                         </button>
                     </div>

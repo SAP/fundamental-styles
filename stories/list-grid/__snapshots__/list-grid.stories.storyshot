@@ -4829,7 +4829,7 @@ exports[`Storyshots Components/Grid List None mode 1`] = `
                         
               <button
                 aria-label="Navigation"
-                class="fd-button fd-button--compact fd-grid-list__btn-navigation fd-button--transparent fd-grid-list__btn-navigation"
+                class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation"
               >
                 
                             
