@@ -57,7 +57,7 @@
     "@commitlint/travis-cli": "^12.1.4",
     "@sap-theming/theming-base-content": "11.1.30",
     "@storybook/addon-a11y": "6.1.21",
-    "@storybook/addon-actions": "6.1.21",
+    "@storybook/addon-actions": "6.3.4",
     "@storybook/addon-cssresources": "6.1.21",
     "@storybook/addon-docs": "6.1.21",
     "@storybook/addon-knobs": "6.1.21",
