@@ -27,6 +27,8 @@ $block: #{$fd-namespace}-feed-input;
 
   @include fd-disabled() {
     cursor: not-allowed;
+    pointer-events: initial;
+    opacity: initial;
   }
 
   .#{$block}__thumb {
@@ -49,6 +51,35 @@ $block: #{$fd-namespace}-feed-input;
 
     &::placeholder {
       font-style: var(--fdFeed_Input_Placeholder_Font_Style);
+      color: #32363a;
+      color: var(--sapTextColor, #32363a);
+
+      &::-webkit-input-placeholder {
+        color: #32363a;
+        color: var(--sapTextColor, #32363a);
+      }
+
+      &::-moz-placeholder {
+        color: #32363a;
+        color: var(--sapTextColor, #32363a);
+      }
+
+      &:-ms-input-placeholder {
+        color: #32363a;
+        color: var(--sapTextColor, #32363a);
+      }
+
+      &:-moz-placeholder {
+        color: #32363a;
+        color: var(--sapTextColor, #32363a);
+      }
+    }
+  }
+
+  .fd-button {
+    [dir="rtl"] &,
+    &[dir="rtl"] {
+      transform: rotate(180deg);
     }
   }
 
