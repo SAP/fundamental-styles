@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.40...v0.19.0-rc.41) (2021-07-14)
+
+
+### Bug Fixes
+
+* adding placeholder color and adding rtl to the button ([#2572](https://github.com/SAP/fundamental-styles/issues/2572)) ([cf26c33](https://github.com/SAP/fundamental-styles/commit/cf26c33c7a06b9300c26407e8c308371ab7ca93d))
+
 ## [0.19.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.39...v0.19.0-rc.40) (2021-07-14)
 
 
