@@ -29,6 +29,13 @@ $block: #{$fd-namespace}-feed-input;
     cursor: not-allowed;
     pointer-events: initial;
     opacity: initial;
+
+    textarea {
+      &::placeholder {
+        font-style: var(--fdFeed_Input_Placeholder_Font_Style);
+        color: var(--sapTextColor, #32363a);
+      }
+    }
   }
 
   .#{$block}__thumb {
@@ -48,37 +55,10 @@ $block: #{$fd-namespace}-feed-input;
     max-height: $fd-feed-input-max-height;
     margin: 0;
     padding: 0.3125rem 0.5rem;
-
-    &::placeholder {
-      font-style: var(--fdFeed_Input_Placeholder_Font_Style);
-      color: #32363a;
-      color: var(--sapTextColor, #32363a);
-
-      &::-webkit-input-placeholder {
-        color: #32363a;
-        color: var(--sapTextColor, #32363a);
-      }
-
-      &::-moz-placeholder {
-        color: #32363a;
-        color: var(--sapTextColor, #32363a);
-      }
-
-      &:-ms-input-placeholder {
-        color: #32363a;
-        color: var(--sapTextColor, #32363a);
-      }
-
-      &:-moz-placeholder {
-        color: #32363a;
-        color: var(--sapTextColor, #32363a);
-      }
-    }
   }
 
   .fd-button {
-    [dir="rtl"] &,
-    &[dir="rtl"] {
+    @include fd-rtl() {
       transform: rotate(180deg);
     }
   }
