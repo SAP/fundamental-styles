@@ -27,6 +27,15 @@ $block: #{$fd-namespace}-feed-input;
 
   @include fd-disabled() {
     cursor: not-allowed;
+    pointer-events: initial;
+    opacity: initial;
+
+    textarea {
+      &::placeholder {
+        font-style: var(--fdFeed_Input_Placeholder_Font_Style);
+        color: var(--sapTextColor, #32363a);
+      }
+    }
   }
 
   .#{$block}__thumb {
@@ -46,10 +55,6 @@ $block: #{$fd-namespace}-feed-input;
     max-height: $fd-feed-input-max-height;
     margin: 0;
     padding: 0.3125rem 0.5rem;
-
-    &::placeholder {
-      font-style: var(--fdFeed_Input_Placeholder_Font_Style);
-    }
   }
 
   // It's needed to have stronger selector to override fd-button styles
@@ -59,17 +64,10 @@ $block: #{$fd-namespace}-feed-input;
     margin-left: $fd-feed-input-btn-margin-start;
     margin-right: $fd-feed-input-btn-margin-end;
 
-    &[class*=sap-icon]::before {
-      display: inline-block;
-    }
-
     @include fd-rtl() {
       margin-left: $fd-feed-input-btn-margin-end;
       margin-right: $fd-feed-input-btn-margin-start;
-
-      &[class*=sap-icon]::before {
-        transform: rotate(180deg);
-      }
+      transform: rotate(180deg);
     }
   }
 
