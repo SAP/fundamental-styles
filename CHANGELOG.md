@@ -1,4 +1,16 @@
 
+## [0.19.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.39...v0.19.0-rc.40) (2021-07-14)
+
+
+### Features
+
+* introduce navigation for IconTabBar ([#2556](https://github.com/SAP/fundamental-styles/issues/2556)) ([e2cf1c7](https://github.com/SAP/fundamental-styles/commit/e2cf1c78514452edcea63022b035be25c38bbed1))
+
+
+### Bug Fixes
+
+* remove line height to avoid List item title from getting cut ([#2557](https://github.com/SAP/fundamental-styles/issues/2557)) ([37b6721](https://github.com/SAP/fundamental-styles/commit/37b67214e24e42ffd4852fd3916be33ccda2cdde))
+
 ## [0.19.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.38...v0.19.0-rc.39) (2021-07-13)
 
 ## [0.19.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.37...v0.19.0-rc.38) (2021-07-09)
