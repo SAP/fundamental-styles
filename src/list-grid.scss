@@ -259,23 +259,24 @@ $block: #{$fd-namespace}-grid-list;
     }
   }
 
-  &__filter {
-    @include fd-fiori-focus();
+  .#{$block}__filter {
+    &[class*="active"] {
+      @include fd-fiori-focus();
+
+      color: var(--sapHighlightTextColor);
+    }
   }
 
-  &__filter,
-  &__filter-button {
-    color: var(--sapHighlightTextColor) !important;
-  }
+  .#{$block}__filter-button {
+    color: var(--sapHighlightTextColor);
 
-  &__filter-button {
     @include fd-hover() {
-      color: var(--sapButton_TextColor) !important;
+      color: var(--sapButton_TextColor);
     }
 
     @include fd-active() {
       @include fd-hover() {
-        color: var(--sapHighlightTextColor) !important;
+        color: var(--sapHighlightTextColor);
       }
     }
   }
