@@ -1,4 +1,15 @@
 
+## [0.19.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.41...v0.19.0-rc.42) (2021-07-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* Added a modifier class fd-grid-list__btn-navigation to the navigation button to support RTL.
+
+### Bug Fixes
+
+* fix action button in Rtl mode for grid list component. Move grid list styles from Ngx. ([#2525](https://github.com/SAP/fundamental-styles/issues/2525)) ([0a25160](https://github.com/SAP/fundamental-styles/commit/0a25160dc30a64e31302a4689fef4e7f97c64119))
+
 ## [0.19.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.40...v0.19.0-rc.41) (2021-07-14)
 
 
