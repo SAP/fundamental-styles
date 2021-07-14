@@ -73,7 +73,7 @@ export const noneMode = () => `<div style="min-height: 500px;">
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Navigation">
+                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
                         </button>
                     </div>
@@ -201,7 +201,7 @@ export const noneMode = () => `<div style="min-height: 500px;">
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Navigation">
+                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
                         </button>
                     </div>
@@ -256,7 +256,8 @@ noneMode.storyName = 'None mode';
 
 noneMode.parameters = {
     docs: {
-        storyDescription: 'Items cannot be selected but can still use "navigation", which allows click handling on specific items.'
+        storyDescription:
+            'Items cannot be selected but can still use "navigation", which allows click handling on specific items.'
     }
 };
 
@@ -296,7 +297,7 @@ export const singleSelectMasterMode = () => `<div style="min-height: 300px;">
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Navigation">
+                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
                         </button>
                     </div>
@@ -462,7 +463,7 @@ export const singleSelectLeftMode = () => `<div style="min-height: 300px;">
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Navigation">
+                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
                         </button>
                     </div>
@@ -630,7 +631,7 @@ export const singleSelectRightMode = () => `<div style="min-height: 300px;">
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Navigation">
+                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
                         </button>
                     </div>
@@ -799,7 +800,7 @@ export const multiSelectMode = () => `<div style="min-height: 300px;">
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Navigation">
+                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
                         </button>
                     </div>
@@ -972,7 +973,7 @@ export const deleteMode = () => `<div style="min-height: 300px;">
                             <i class="sap-icon--decline"></i>
                         </button>
                         
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Navigation">
+                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
                         </button>
                     </div>
@@ -1145,7 +1146,7 @@ export const group = () => `<div style="min-height: 600px;">
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Navigation">
+                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
                         </button>
                     </div>
@@ -1304,7 +1305,7 @@ export const states = () => `<div style="min-height: 600px;">
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Navigation">
+                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
                         </button>
                     </div>
@@ -1493,7 +1494,7 @@ export const highlight = () => `<div style="min-height: 350px;">
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Navigation">
+                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
                         </button>
                     </div>
@@ -1663,7 +1664,7 @@ export const filterInfobar = () => `<div style="min-height: 350px;">
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Navigation">
+                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
                         </button>
                     </div>
@@ -1811,7 +1812,7 @@ export const more = () => `<div style="min-height: 400px;">
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Navigation">
+                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
                         </button>
                     </div>
@@ -1968,7 +1969,7 @@ export const footer = () => `<div style="min-height: 300px;">
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Navigation">
+                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
                         </button>
                     </div>
