@@ -1787,6 +1787,271 @@ exports[`Storyshots Components/Object List Selection With Navigation 1`] = `
       role="listbox"
     >
       
+
+      <li
+        aria-selected="true"
+        class="fd-list__item fd-object-list__item fd-list__item--link is-selected"
+        id="check"
+        role="option"
+        style="outline:#fff;"
+        tabindex="0"
+      >
+        
+
+        <a
+          class="fd-list__link"
+          style="background:#0854a0;outline-offset:-0.1875rem;outline:0.0625rem dotted #fff;"
+          tabindex="0"
+        >
+           
+
+          <div
+            class="fd-object-list__container"
+          >
+            
+      
+            <div
+              class="fd-object-list__intro"
+              style="color:#fff;text-shadow: none;"
+            >
+              
+       Optional inline text
+      
+            </div>
+            
+      
+            <div
+              class="fd-object-list__header"
+            >
+              
+        
+              <span
+                class="fd-avatar fd-avatar--s"
+                style="background-image: url('/assets/images/products/fitbit.png');color:#fff;text-shadow: none;"
+              >
+                
+        
+              </span>
+              
+        
+              <div
+                class="fd-object-list__header-left"
+              >
+                
+         
+                <div
+                  class="fd-object-identifier fd-object-list__object-identifier"
+                >
+                  
+          
+                  <p
+                    class="fd-object-identifier__title"
+                    style="color:#fff;text-shadow: none;"
+                  >
+                    
+           Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
+          
+                  </p>
+                  
+         
+                </div>
+                
+        
+              </div>
+              
+        
+              <div
+                class="fd-object-list__header-right"
+              >
+                
+          
+                <span
+                  class="fd-object-number fd-object-list__object-number"
+                >
+                  
+            
+                  <span
+                    class="fd-object-number__text"
+                    style="color:#fff;"
+                  >
+                    457.00
+                  </span>
+                  
+            
+                  <span
+                    class="fd-object-number__unit"
+                    style="color:#fff;"
+                  >
+                    Euro
+                  </span>
+                  
+          
+                </span>
+                
+        
+              </div>
+              
+      
+            </div>
+            
+      
+            <div
+              class="fd-object-list__content"
+            >
+              
+        
+              <div
+                class="fd-object-list__row"
+              >
+                
+          
+                <div
+                  class="fd-object-list__row-left"
+                >
+                  
+            
+                  <div
+                    class="fd-object-list__object-attribute"
+                    style="color:#fff;text-shadow: none;"
+                  >
+                    
+              
+              First Attribute
+            
+                  </div>
+                  
+          
+                </div>
+                
+          
+                <div
+                  class="fd-object-list__row-right"
+                >
+                  
+            
+                  <div
+                    class="fd-object-marker"
+                  >
+                    
+              
+                    <i
+                      aria-label="icon for flag"
+                      class="fd-object-marker__icon sap-icon--flag"
+                      style="color:#fff;"
+                    />
+                    
+            
+                  </div>
+                  
+            
+                  <div
+                    class="fd-object-marker"
+                  >
+                    
+              
+                    <i
+                      aria-label="icon for favourite"
+                      class="fd-object-marker__icon sap-icon--favorite"
+                      style="color:#fff;"
+                    />
+                    
+            
+                  </div>
+                  
+          
+                </div>
+                
+        
+              </div>
+              
+        
+              <div
+                class="fd-object-list__row"
+              >
+                
+          
+                <div
+                  class="fd-object-list__row-left"
+                >
+                  
+            
+                  <div
+                    class="fd-object-list__object-attribute"
+                    style="color:#fff;text-shadow: none;"
+                  >
+                    
+              Second Attribute
+            
+                  </div>
+                  
+          
+                </div>
+                
+          
+                <div
+                  class="fd-object-list__row-right"
+                >
+                  
+            
+                  <span
+                    class="fd-object-status fd-object-status--critical"
+                  >
+                    
+              
+                    <span
+                      class="fd-object-status__text"
+                      style="color:#fff;"
+                    >
+                      Avaliable
+                    </span>
+                    
+            
+                  </span>
+                  
+          
+                </div>
+                
+        
+              </div>
+              
+        
+              <div
+                class="fd-object-list__row"
+              >
+                
+          
+                <div
+                  class="fd-object-list__row-left"
+                >
+                  
+            
+                  <div
+                    class="fd-object-list__object-attribute"
+                    style="color:#fff;text-shadow: none;"
+                  >
+                    
+              Third Attribute
+            
+                  </div>
+                  
+        
+                </div>
+                
+      
+              </div>
+              
+    
+            </div>
+            
+    
+          </div>
+          
+    
+        </a>
+        
+  
+      </li>
+      
   
       <li
         aria-selected="true"
