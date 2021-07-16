@@ -1,4 +1,88 @@
 
+## [0.19.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.41...v0.19.0-rc.42) (2021-07-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* Added a modifier class fd-grid-list__btn-navigation to the navigation button to support RTL.
+
+### Bug Fixes
+
+* fix action button in Rtl mode for grid list component. Move grid list styles from Ngx. ([#2525](https://github.com/SAP/fundamental-styles/issues/2525)) ([0a25160](https://github.com/SAP/fundamental-styles/commit/0a25160dc30a64e31302a4689fef4e7f97c64119))
+
+## [0.19.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.40...v0.19.0-rc.41) (2021-07-14)
+
+
+### Bug Fixes
+
+* adding placeholder color and adding rtl to the button ([#2572](https://github.com/SAP/fundamental-styles/issues/2572)) ([cf26c33](https://github.com/SAP/fundamental-styles/commit/cf26c33c7a06b9300c26407e8c308371ab7ca93d))
+
+## [0.19.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.39...v0.19.0-rc.40) (2021-07-14)
+
+
+### Features
+
+* introduce navigation for IconTabBar ([#2556](https://github.com/SAP/fundamental-styles/issues/2556)) ([e2cf1c7](https://github.com/SAP/fundamental-styles/commit/e2cf1c78514452edcea63022b035be25c38bbed1))
+
+
+### Bug Fixes
+
+* remove line height to avoid List item title from getting cut ([#2557](https://github.com/SAP/fundamental-styles/issues/2557)) ([37b6721](https://github.com/SAP/fundamental-styles/commit/37b67214e24e42ffd4852fd3916be33ccda2cdde))
+
+## [0.19.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.38...v0.19.0-rc.39) (2021-07-13)
+
+## [0.19.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.37...v0.19.0-rc.38) (2021-07-09)
+
+
+### Features
+
+* introduce Tool Header component from BTP design ([#2550](https://github.com/SAP/fundamental-styles/issues/2550)) ([7c5ef3f](https://github.com/SAP/fundamental-styles/commit/7c5ef3fdbdea94dfa7c5cd196919426abc9a67fc))
+
+## [0.19.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.36...v0.19.0-rc.37) (2021-07-09)
+
+
+### Bug Fixes
+
+* popover outline focus-visible ([#2555](https://github.com/SAP/fundamental-styles/issues/2555)) ([a3901fd](https://github.com/SAP/fundamental-styles/commit/a3901fdcbf5f4ddadee49078442bb50371f1fb47))
+
+## [0.19.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.35...v0.19.0-rc.36) (2021-07-09)
+
+
+### Bug Fixes
+
+* refactor bar documentation as suggested ([#2540](https://github.com/SAP/fundamental-styles/issues/2540)) ([85aa803](https://github.com/SAP/fundamental-styles/commit/85aa80319ba39da76edd5e23bbdb8e7e7e3af486))
+
+## [0.19.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.34...v0.19.0-rc.35) (2021-07-09)
+
+
+### Bug Fixes
+
+* table fixed column borders fix, table improvements ([#2549](https://github.com/SAP/fundamental-styles/issues/2549)) ([9eab00d](https://github.com/SAP/fundamental-styles/commit/9eab00d13deaafb9691d9745616452069f57f49f))
+
+## [0.19.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.33...v0.19.0-rc.34) (2021-07-09)
+
+
+### Bug Fixes
+
+* box-sizing of wizard step in progress bar [ci visual] ([#2551](https://github.com/SAP/fundamental-styles/issues/2551)) ([5d05a39](https://github.com/SAP/fundamental-styles/commit/5d05a39d488a7473f48564a4e7d82fcd3b71d5d5))
+
+## [0.19.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.32...v0.19.0-rc.33) (2021-07-09)
+
+
+### Bug Fixes
+
+* added additional panding for slider [ci visual] ([#2552](https://github.com/SAP/fundamental-styles/issues/2552)) ([f3d4c65](https://github.com/SAP/fundamental-styles/commit/f3d4c656e72c2dcc52ff394866c3351ecce4764f))
+* update border width for combobox button ([#2547](https://github.com/SAP/fundamental-styles/issues/2547)) ([16d7697](https://github.com/SAP/fundamental-styles/commit/16d7697e404247bb8fd7ce9990f7a4066caf47e3))
+
+## [0.19.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.31...v0.19.0-rc.32) (2021-07-07)
+
+## [0.19.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.30...v0.19.0-rc.31) (2021-07-07)
+
+
+### Bug Fixes
+
+* correct position for rtl icons for alert component ([#2544](https://github.com/SAP/fundamental-styles/issues/2544)) ([cb76fc0](https://github.com/SAP/fundamental-styles/commit/cb76fc034a76329916ec5ac05d0f552355244a1c))
+
 ## [0.19.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.29...v0.19.0-rc.30) (2021-07-06)
 
 
