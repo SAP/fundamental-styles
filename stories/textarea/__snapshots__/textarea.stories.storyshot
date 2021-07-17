@@ -172,6 +172,8 @@ exports[`Storyshots Components/Forms/Textarea Responsiveness 1`] = `
         aria-expanded="false"
         aria-haspopup="true"
         class="fd-popover__control"
+        onfocusin="onPopoverClick('popoverT51')"
+        onfocusout="onPopoverClick('popoverT51')"
       >
         
             
@@ -241,6 +243,8 @@ exports[`Storyshots Components/Forms/Textarea Responsiveness 1`] = `
         aria-expanded="false"
         aria-haspopup="true"
         class="fd-popover__control"
+        onfocusin="onPopoverClick('popoverT52')"
+        onfocusout="onPopoverClick('popoverT52')"
       >
         
             
@@ -303,6 +307,8 @@ exports[`Storyshots Components/Forms/Textarea Responsiveness 1`] = `
         aria-expanded="false"
         aria-haspopup="true"
         class="fd-popover__control"
+        onfocusin="onPopoverClick('popoverT53')"
+        onfocusout="onPopoverClick('popoverT53')"
       >
         
             
@@ -365,6 +371,8 @@ exports[`Storyshots Components/Forms/Textarea Responsiveness 1`] = `
         aria-expanded="false"
         aria-haspopup="true"
         class="fd-popover__control"
+        onfocusin="onPopoverClick('popoverT54')"
+        onfocusout="onPopoverClick('popoverT54')"
       >
         
             
