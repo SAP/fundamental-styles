@@ -554,7 +554,7 @@ selection.parameters = {
     }
 };
 
-export const inactive = () => `<ul class="fd-list" role="list">
+export const inactive = () => `<ul class="fd-list fd-list--navigation" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--link fd-list__item--inactive">
     <a tabindex="0" class="fd-list__link">
       <span class="fd-list__title">List item 1 - Inactive</span>

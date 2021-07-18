@@ -1021,7 +1021,7 @@ exports[`Storyshots Components/List/Standard Icon 1`] = `
 
 exports[`Storyshots Components/List/Standard Inactive 1`] = `
 <ul
-  class="fd-list"
+  class="fd-list fd-list--navigation"
   role="list"
 >
   
