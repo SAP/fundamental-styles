@@ -2913,6 +2913,7 @@ exports[`Storyshots Components/Calendar Portrait (mobile) 1`] = `
     
   <section
     class="fd-dialog__content fd-dialog__content--s fd-dialog__content--mobile"
+    style="width: 375px; height: 600px;"
   >
     
         
