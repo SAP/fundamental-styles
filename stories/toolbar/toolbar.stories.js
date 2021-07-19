@@ -78,7 +78,7 @@ export const overflow = () => `<div style="height:250px">
             <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                 aria-hidden="false"
                 id="wgxzK85912">
-                <div class="fd-toolbar__overflow__body">
+                <div class="fd-toolbar__overflow--body">
                     <button class="fd-button fd-button--transparent">Edit</button>
                     <span class="fd-toolbar__separator"></span>
                     <button class="fd-button fd-button--transparent">Delete</button>
@@ -115,8 +115,8 @@ export const overflow = () => `<div style="height:250px">
             <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                 aria-hidden="false"
                 id="mw0daw8d7h">
-                <div class="fd-toolbar__overflow__body">
-                    <label class="fd-label fd-toolbar__overflow__label">Label</label>
+                <div class="fd-toolbar__overflow--body">
+                    <label class="fd-label fd-toolbar__overflow--label">Label</label>
                     <button class="fd-button fd-button--compact fd-button--transparent">Edit</button>
                     <span class="fd-toolbar__separator"></span>
                     <label class="fd-form-label fd-toolbar__overflow__form-label">Form label</label>
