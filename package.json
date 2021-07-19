@@ -108,7 +108,7 @@
     "regenerator-runtime": "^0.13.7",
     "rimraf": "^3.0.2",
     "sass-loader": "^10.0.2",
-    "standard-version": "9.3.0",
+    "standard-version": "9.3.1",
     "start-server-and-test": "^1.12.1",
     "story-description-loader": "^1.0.0",
     "style-loader": "^2.0.0",
