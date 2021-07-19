@@ -64,6 +64,8 @@
     .#{$block}__title {
       font-size: $fd-list-large-font-size;
       min-height: $fd-list-byline-text-line-height;
+
+      @include fd-flex-vertical-center();
     }
 
     .#{$block}__byline {
