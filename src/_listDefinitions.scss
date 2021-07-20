@@ -111,6 +111,10 @@ $semantic-color: (
 
   .#{$block}__link {
     background: inherit;
+
+    @include fd-active() {
+      background: var(--sapList_Active_Background);
+    }
   }
 
   @include fd-hover() {

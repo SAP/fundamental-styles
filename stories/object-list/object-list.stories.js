@@ -599,6 +599,71 @@ export const selectionWithNavigation = () => `
 <h4 id="objectListItemRowSelectionAndNavigation">Object List Item With Row Selection And Navigation</h4>
 <div role="navigation" style="max-width: 450px">
 <ul class="fd-list fd-object-list fd-list--navigation-object fd-list--navigation fd-list--selection" role="listbox" aria-labelledby="objectListItemRowSelectionAndNavigation">
+<li role="option" aria-selected="true" tabindex="0" class="fd-list__item fd-object-list__item fd-list__item--link is-selected">
+  <a tabindex="0" id="anchor" class="fd-list__link is-active"> 
+  <div class="fd-object-list__container">
+      <div class="fd-object-list__intro">
+       Optional inline text</span>
+      </div>
+      <div class="fd-object-list__header">
+        <span class="fd-avatar fd-avatar--s"
+         style="background-image: url('/assets/images/products/fitbit.png')">
+        </span>
+        <div class="fd-object-list__header-left">
+         <div class="fd-object-identifier fd-object-list__object-identifier">
+          <p class="fd-object-identifier__title">
+           Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
+          </p>
+         </div>
+        </div>
+        <div class="fd-object-list__header-right">
+          <span class="fd-object-number fd-object-list__object-number">
+            <span class="fd-object-number__text">457.00</span>
+            <span class="fd-object-number__unit">Euro</span>
+          </span>
+        </div>
+      </div>
+      <div class="fd-object-list__content">
+        <div class="fd-object-list__row">
+          <div class="fd-object-list__row-left">
+            <div class="fd-object-list__object-attribute">
+              
+              First Attribute
+            </div>
+          </div>
+          <div class="fd-object-list__row-right">
+            <div class="fd-object-marker">
+              <i class="fd-object-marker__icon sap-icon--flag"
+               aria-label="icon for flag"></i>
+            </div>
+            <div class="fd-object-marker">
+              <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite"></i>
+            </div>
+          </div>
+        </div>
+        <div class="fd-object-list__row">
+          <div class="fd-object-list__row-left">
+            <div class="fd-object-list__object-attribute">
+              Second Attribute
+            </div>
+          </div>
+          <div class="fd-object-list__row-right">
+            <span class="fd-object-status fd-object-status--critical">
+              <span class="fd-object-status__text">Avaliable</span>
+            </span>
+          </div>
+        </div>
+        <div class="fd-object-list__row">
+          <div class="fd-object-list__row-left">
+            <div class="fd-object-list__object-attribute">
+              Third Attribute
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </a>
+  </li>
   <li role="option" aria-selected="true" tabindex="0" class="fd-list__item fd-object-list__item fd-list__item--link is-selected">
   <a tabindex="0" class="fd-list__link"> 
   <div class="fd-object-list__container">
@@ -935,3 +1000,4 @@ borderless.parameters = {
         storyDescription: 'Object list items can be displayed without borders. To display a borderless list, add the `fd-list--no-border` modifier class to the list element.'
     }
 };
+
