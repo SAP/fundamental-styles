@@ -1001,7 +1001,7 @@ Note: For landscape mode, no dialog header element should be used. However, a di
 };
 
 export const PortraitMobile = () => `<div class="fd-dialog-docs-static fd-calendar-mobile-docs-static--portrait fd-dialog fd-dialog--active">
-    <section class="fd-dialog__content fd-dialog__content--s fd-dialog__content--mobile">
+    <section class="fd-dialog__content fd-dialog__content--s fd-dialog__content--mobile" style="width: 375px; height: 600px;">
         <header class="fd-dialog__header fd-bar fd-bar--header fd-bar--cozy">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
