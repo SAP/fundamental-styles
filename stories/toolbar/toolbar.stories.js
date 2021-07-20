@@ -136,8 +136,8 @@ overflow.parameters = {
     docs: {
         storyDescription: `The overflow toolbar can display additional elements when space is limited. This can be achieved with a **Button** and/or **Popover** component. 
 
-To display an overflow in a button, pass the \`sap-icon--overflow\` in the \`fd-button\` class. Additionally, you can add a popover by passing \`fd-popover\` in the \`fd-toolbar__overflow--body\` element.
- Add any element inside overflow body with \`fd-toolbar__button\` , \`fd-toolbar__button--menu\` \`fd-toolbar__overflow--label\` modifier ,        `
+To display an overflow in a button, pass the \`sap-icon--overflow\` in the \`fd-button\` class. Additionally, you can add a popover by passing \`fd-popover\` in the \`fd-toolbar__body--overflow\` element.
+ Add any element inside overflow body with \`fd-toolbar__button\` , \`fd-toolbar__button--menu\` \`fd-toolbar__body--overflow-label \` modifier ,        `
     }
 };
 
