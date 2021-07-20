@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.54](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.53...v0.19.0-rc.54) (2021-07-20)
+
+
+### Bug Fixes
+
+* add missing features for Vertical Navigation  ([#2596](https://github.com/SAP/fundamental-styles/issues/2596)) ([3c5646e](https://github.com/SAP/fundamental-styles/commit/3c5646e8d43663c9961114aa42306c37b5d44ff3))
+
 ## [0.19.0-rc.53](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.52...v0.19.0-rc.53) (2021-07-20)
 
 
