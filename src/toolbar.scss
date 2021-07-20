@@ -90,6 +90,7 @@ $title-toolbar-height: 2.75rem;
   @include fd-reset();
 
   height: $toolbar-height-compact;
+  min-height: $toolbar-height-compact;
   padding: $toolbar-padding;
   display: flex;
   align-items: center;
@@ -187,6 +188,7 @@ $title-toolbar-height: 2.75rem;
 
   &--cozy {
     height: $toolbar-height-cozy;
+    min-height: $toolbar-height-cozy;
 
     &.#{$block}--info {
       height: $info-toolbar-height;
