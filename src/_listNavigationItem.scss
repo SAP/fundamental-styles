@@ -7,6 +7,18 @@ $fd-list-navigation-item-text-spacing: 2.5rem !default;
 $fd-list-second-level-popover-position: 3.25rem !default;
 
 .#{$block} {
+  @mixin applySelectedColor {
+    &.#{$block}__navigation-item--indicated {
+      color: var(--sapSelectedColor);
+
+      .#{$block}__navigation-item-text,
+      .#{$block}__navigation-item-icon,
+      .#{$block}__navigation-item-arrow {
+        color: var(--sapSelectedColor);
+      }
+    }
+  }
+
   .#{$block}__navigation-item-indicator {
     @include fd-reset();
 
@@ -38,6 +50,7 @@ $fd-list-second-level-popover-position: 3.25rem !default;
     @include fd-reset();
     @include fd-fiori-focus();
     @include fd-set-paddings-x(0.5rem, 1rem);
+    @include applySelectedColor();
 
     background: transparent;
     height: $fd-list-navigation-item-height;
@@ -61,6 +74,8 @@ $fd-list-second-level-popover-position: 3.25rem !default;
       overflow: hidden;
 
       .#{$block}__navigation-item {
+        @include applySelectedColor();
+
         width: 100%;
         .#{$block}__navigation-item-indicator {
           &::after {
@@ -118,18 +133,8 @@ $fd-list-second-level-popover-position: 3.25rem !default;
       }
     }
 
-    &--indicated {
-      color: var(--sapSelectedColor);
-
-      .#{$block}__navigation-item-text,
-      .#{$block}__navigation-item-icon,
-      .#{$block}__navigation-item-arrow {
-        color: var(--sapSelectedColor) !important;
-      }
-    }
-
     .#{$block}__navigation-item--indicated .#{$block}__navigation-item-text {
-      color: var(--sapSelectedColor) !important;
+      color: var(--sapSelectedColor);
     }
 
     &--condensed {
