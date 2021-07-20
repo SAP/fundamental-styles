@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.46...v0.19.0-rc.47) (2021-07-20)
+
+
+### Bug Fixes
+
+* add fix for correct height of Grid List header [ci visual] ([#2590](https://github.com/SAP/fundamental-styles/issues/2590)) ([8448faa](https://github.com/SAP/fundamental-styles/commit/8448faaa1321d93dec5184e33c856e7b7e8b6828))
+
 ## [0.19.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.45...v0.19.0-rc.46) (2021-07-20)
 
 ## [0.19.0-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.44...v0.19.0-rc.45) (2021-07-20)
