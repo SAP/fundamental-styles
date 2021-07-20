@@ -16,8 +16,6 @@
             }
             return block;
         }
-        
-        document.getElementById('anchor').focus();
 
         //get all tablists
         var tablists = document.querySelectorAll('[role="tablist"]');
