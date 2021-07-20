@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.55](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.54...v0.19.0-rc.55) (2021-07-20)
+
+
+### Bug Fixes
+
+* add focus to focusable disabled button ([#2597](https://github.com/SAP/fundamental-styles/issues/2597)) ([4c25166](https://github.com/SAP/fundamental-styles/commit/4c25166c2bd0baecae1bc651140795917250a0e4))
+
 ## [0.19.0-rc.54](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.53...v0.19.0-rc.54) (2021-07-20)
 
 
