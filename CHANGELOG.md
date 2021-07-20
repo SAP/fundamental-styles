@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.52](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.51...v0.19.0-rc.52) (2021-07-20)
+
+
+### Bug Fixes
+
+* add active state background color for object list as per spec ([#2573](https://github.com/SAP/fundamental-styles/issues/2573)) ([9158d98](https://github.com/SAP/fundamental-styles/commit/9158d98eeead46029508ad327023936fab0f3a75))
+
 ## [0.19.0-rc.51](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.50...v0.19.0-rc.51) (2021-07-20)
 
 ## [0.19.0-rc.50](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.49...v0.19.0-rc.50) (2021-07-20)
