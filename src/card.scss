@@ -16,6 +16,7 @@ $fd-card-sections-horizontal-spacing: 2rem !default;
 $fd-card-sections-vertical-spacing: 1.75rem !default;
 $fd-card-content-avatar-text-spacing: 0.5rem !default;
 $fd-card-default-body-background-color: var(--sapTile_Background) !default;
+$fd-card-header-outline-offset: 0.0625rem !default;
 
 @mixin line-clamp($lines: 2) {
   display: -webkit-box;
@@ -24,6 +25,24 @@ $fd-card-default-body-background-color: var(--sapTile_Background) !default;
   overflow: hidden;
   white-space: normal;
   text-overflow: ellipsis;
+}
+
+@mixin fake-card-outline() {
+  @include fd-focus() {
+    outline: none;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+      top: $fd-card-header-outline-offset;
+      left: $fd-card-header-outline-offset;
+      right: $fd-card-header-outline-offset;
+      bottom: $fd-card-header-outline-offset * 2;
+      z-index: 3;
+    }
+  }
 }
 
 .#{$block} {
@@ -41,6 +60,7 @@ $fd-card-default-body-background-color: var(--sapTile_Background) !default;
   &__header {
     @include fd-reset();
     @include fd-flex();
+    @include fake-card-outline();
 
     padding: 1rem;
     background: $fd-card-default-body-background-color;
@@ -48,6 +68,7 @@ $fd-card-default-body-background-color: var(--sapTile_Background) !default;
     border-radius: $fd-card-header-border-radius $fd-card-header-border-radius 0 0;
     text-decoration: none;
     cursor: pointer;
+    position: relative;
 
     @include fd-hover() {
       background: var(--sapTile_Hover_Background);
@@ -55,13 +76,6 @@ $fd-card-default-body-background-color: var(--sapTile_Background) !default;
 
     @include fd-active() {
       background: var(--sapTile_Active_Background);
-    }
-
-    @include fd-focus() {
-      outline-style: dotted;
-      outline-width: var(--sapContent_FocusWidth);
-      outline-color: var(--sapContent_FocusColor);
-      outline-offset: -0.125rem;
     }
 
     .#{$block}__avatar {
@@ -89,6 +103,13 @@ $fd-card-default-body-background-color: var(--sapTile_Background) !default;
       border-bottom: none;
       border-top: $fd-card-header-border;
       border-radius: 0 0 $fd-card-header-border-radius $fd-card-header-border-radius;
+
+      @include fd-focus() {
+        &::before {
+          top: $fd-card-header-outline-offset * 2;
+          bottom: $fd-card-header-outline-offset;
+        }
+      }
     }
   }
 
