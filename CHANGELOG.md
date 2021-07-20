@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.53](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.52...v0.19.0-rc.53) (2021-07-20)
+
+
+### Bug Fixes
+
+* remove word-break from Fixed-card-layout ([#2595](https://github.com/SAP/fundamental-styles/issues/2595)) ([3266cf6](https://github.com/SAP/fundamental-styles/commit/3266cf6ffcd559741574027d705f44955b9f86ca))
+
 ## [0.19.0-rc.52](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.51...v0.19.0-rc.52) (2021-07-20)
 
 
