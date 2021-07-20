@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.57](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.56...v0.19.0-rc.57) (2021-07-20)
+
+
+### Bug Fixes
+
+* add fix for RTL Object List Item With Row Selection And Navigation [ci visual] ([#2599](https://github.com/SAP/fundamental-styles/issues/2599)) ([ac5ef89](https://github.com/SAP/fundamental-styles/commit/ac5ef8994b834631905224eb310e81437136355a))
+
 ## [0.19.0-rc.56](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.55...v0.19.0-rc.56) (2021-07-20)
 
 
