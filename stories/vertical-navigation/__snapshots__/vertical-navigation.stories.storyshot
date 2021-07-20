@@ -322,6 +322,308 @@ exports[`Storyshots Components/Vertical Navigation Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Vertical Navigation Grouping 1`] = `
+<div
+  class="fd-vertical-nav"
+>
+  
+    
+  <nav
+    aria-label="Main Menu 5"
+    class="fd-vertical-nav__main-navigation"
+  >
+    
+        
+    <ul
+      aria-label="Main Menu List 5"
+      class="fd-list"
+    >
+      
+            
+      <li
+        class="fd-list__navigation-item"
+        tabindex="0"
+      >
+        
+                
+        <i
+          class="fd-list__navigation-item-icon sap-icon--home"
+          role="presentation"
+        />
+        
+                
+        <span
+          class="fd-list__navigation-item-text"
+        >
+          Overview
+        </span>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-list__navigation-item fd-list__navigation-item--expandable"
+        onclick="toggleVerticalNavSubmenu(event)"
+      >
+        
+                
+        <i
+          class="fd-list__navigation-item-icon sap-icon--calendar"
+          role="presentation"
+        />
+        
+                
+        <span
+          class="fd-list__navigation-item-text"
+        >
+          Calendar
+        </span>
+        
+                
+        <button
+          aria-label="Expand second submenu 3"
+          class="fd-list__navigation-item-arrow sap-icon--navigation-right-arrow"
+        />
+        
+                
+        <ul
+          class="fd-list"
+        >
+          
+                    
+          <li
+            class="fd-list__navigation-item fd-list__navigation-item--indicated"
+          >
+            
+                        
+            <span
+              class="fd-list__navigation-item-text"
+            >
+              Second level item 1
+            </span>
+            
+                        
+            <span
+              class="fd-list__navigation-item-indicator"
+            />
+            
+                    
+          </li>
+          
+                    
+          <li
+            class="fd-list__navigation-item"
+            tabindex="0"
+          >
+            
+                        
+            <span
+              class="fd-list__navigation-item-text"
+            >
+              Second level item 2
+            </span>
+            
+                    
+          </li>
+          
+                
+        </ul>
+        
+                
+        <span
+          class="fd-list__navigation-item-indicator"
+        />
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-list__navigation-item"
+        tabindex="0"
+      >
+        
+                
+        <i
+          class="fd-list__navigation-item-icon sap-icon--course-book"
+          role="presentation"
+        />
+        
+                
+        <span
+          class="fd-list__navigation-item-text"
+        >
+          Deliveries
+        </span>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-list__navigation-item"
+        tabindex="0"
+      >
+        
+                
+        <i
+          class="fd-list__navigation-item-icon sap-icon--employee"
+          role="presentation"
+        />
+        
+                
+        <span
+          class="fd-list__navigation-item-text"
+        >
+          Customers
+        </span>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-list__navigation-item fd-list__navigation-item--indicated"
+        tabindex="0"
+      >
+        
+                
+        <i
+          class="fd-list__navigation-item-icon sap-icon--lead
+                "
+          role="presentation"
+        />
+        
+                
+        <span
+          class="fd-list__navigation-item-text"
+        >
+          Sales
+        </span>
+        
+                
+        <span
+          class="fd-list__navigation-item-indicator"
+        />
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-list__navigation-item"
+        tabindex="0"
+      >
+        
+                
+        <i
+          class="fd-list__navigation-item-icon sap-icon--filter-analytics"
+          role="presentation"
+        />
+        
+                
+        <span
+          class="fd-list__navigation-item-text"
+        >
+          Analytics
+        </span>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-list__group-header fd-vertical-nav__group-header"
+        role="listitem"
+      >
+        
+                
+        <span
+          class="fd-list__title"
+        >
+          Employee Services
+        </span>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-list__navigation-item"
+        tabindex="0"
+      >
+        
+                
+        <i
+          class="fd-list__navigation-item-icon sap-icon--headset"
+          role="presentation"
+        />
+        
+                
+        <span
+          class="fd-list__navigation-item-text"
+        >
+          Support
+        </span>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-list__navigation-item"
+        tabindex="0"
+      >
+        
+                
+        <i
+          class="fd-list__navigation-item-icon sap-icon--nutrition-activity"
+          role="presentation"
+        />
+        
+                
+        <span
+          class="fd-list__navigation-item-text"
+        >
+          Lunch
+        </span>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-list__navigation-item"
+        tabindex="0"
+      >
+        
+                
+        <i
+          class="fd-list__navigation-item-icon sap-icon--stethoscope"
+          role="presentation"
+        />
+        
+                
+        <span
+          class="fd-list__navigation-item-text"
+        >
+          Health
+        </span>
+        
+            
+      </li>
+      
+        
+    </ul>
+    
+    
+  </nav>
+  
+
+</div>
+`;
+
 exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
 <section>
   <div
