@@ -69,8 +69,9 @@ $cols: 11;
 
         .fd-form-label {
           display: inline-block;
-          margin-right: 0.5rem;
           padding-bottom: 0.125rem;
+          padding-top: 0.875rem;
+          padding-right: 1rem;
 
           @include fd-rtl() {
             padding-left: 0.5rem;
@@ -131,9 +132,7 @@ $cols: 11;
 
       .#{$blockCol} {
         .fd-form-label {
-          padding-bottom: 0.125rem;
-          padding-top: 0.875rem;
-          padding-right: 1rem;
+          padding-bottom: 0;
         }
 
         @for $n from 0 through $cols {
