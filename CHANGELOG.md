@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.47...v0.19.0-rc.48) (2021-07-20)
+
+
+### Bug Fixes
+
+* center tristate icon horizontally [ci visual] ([#2591](https://github.com/SAP/fundamental-styles/issues/2591)) ([ff53ed0](https://github.com/SAP/fundamental-styles/commit/ff53ed0c1cd713b5663744eb8555d9cec304a9c1))
+
 ## [0.19.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.46...v0.19.0-rc.47) (2021-07-20)
 
 
