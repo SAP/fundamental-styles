@@ -11,6 +11,17 @@ $block: #{$fd-namespace}-checkbox;
   opacity: 0.0001;
 }
 
+@mixin applyIndeterminatePadding() {
+  $offset: 0.0625rem;
+
+  padding-left: $offset;
+
+  @include fd-rtl() {
+    padding-left: 0;
+    padding-right: $offset;
+  }
+}
+
 .#{$block} {
   @mixin fd-checkbox-state($background-color, $text-color, $border-color, $border-size, $border-type) {
     + .#{$block}__label {
@@ -114,11 +125,15 @@ $block: #{$fd-namespace}-checkbox;
   }
 
   &:indeterminate + .#{$block}__label::before {
+    @include applyIndeterminatePadding();
+
     content: "\e17b";
     font-size: 0.75rem;
   }
 
   &:indeterminate + .#{$block}__label--compact::before {
+    @include applyIndeterminatePadding();
+
     content: "\e17b";
     font-size: 0.6rem;
   }
