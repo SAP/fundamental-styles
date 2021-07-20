@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.44...v0.19.0-rc.45) (2021-07-20)
+
+
+### Bug Fixes
+
+* add fix for Card header focus offset [ci visual] ([#2587](https://github.com/SAP/fundamental-styles/issues/2587)) ([622aeeb](https://github.com/SAP/fundamental-styles/commit/622aeebe868f350902fda4a202362329a717cc71))
+
 ## [0.19.0-rc.44](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.43...v0.19.0-rc.44) (2021-07-19)
 
 ## [0.19.0-rc.43](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.42...v0.19.0-rc.43) (2021-07-17)
