@@ -13,10 +13,6 @@ $block: #{$fd-namespace}-fixed-card-layout;
   &__card-layout {
     @include fd-reset();
     @include fd-flex-horizontal-center();
-
-    * {
-      word-break: break-all;
-    }
   }
 
   &__card-layout-column {
