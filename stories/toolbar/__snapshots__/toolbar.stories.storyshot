@@ -302,7 +302,7 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
       
         
       <span
-        class="fd-toolbar__spacer "
+        class="fd-toolbar__spacer"
       >
          
       </span>
@@ -328,7 +328,7 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
       
         
       <div
-        class="fd-popover fd-toolbar__overflow"
+        class="fd-popover fd-toolbar__overflow-button"
       >
         
             
@@ -367,7 +367,7 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
           
                 
           <div
-            class="fd-toolbar__body--overflow"
+            class="fd-toolbar__overflow"
           >
             
                     
@@ -478,7 +478,7 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
       
         
       <div
-        class="fd-popover fd-toolbar__overflow"
+        class="fd-popover fd-toolbar__overflow-button"
       >
         
             
@@ -517,12 +517,12 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
           
                 
           <div
-            class="fd-toolbar__body--overflow"
+            class="fd-toolbar__overflow"
           >
             
                     
             <label
-              class="fd-label fd-toolbar__body--overflow-label"
+              class="fd-label fd-toolbar__overflow--label"
             >
               Label
             </label>
@@ -541,7 +541,7 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
             
                     
             <label
-              class="fd-form-label fd-toolbar__body--overflow-label"
+              class="fd-form-label fd-toolbar__overflow--label"
             >
               Form label
             </label>
@@ -570,6 +570,26 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
               class="fd-button fd-button--compact fd-button--transparent fd-toolbar__button"
             >
               Exit
+            </button>
+            
+                    
+            <button
+              class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-toolbar__button fd-toolbar__button--menu"
+            >
+              
+                        
+              <span
+                class="fd-button__text"
+              >
+                Menu Button
+              </span>
+              
+                        
+              <i
+                class="sap-icon--slim-arrow-down"
+              />
+              
+                    
             </button>
             
                 

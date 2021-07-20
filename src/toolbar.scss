@@ -19,6 +19,12 @@ $title-toolbar-height: 2.75rem;
   }
 }
 
+@mixin padding($padding-x, $padding-y) {
+  padding: $padding-y $padding-x;
+}
+
+
+
 @mixin toolbarAuto() {
   background-color: inherit;
 }
@@ -155,18 +161,17 @@ $title-toolbar-height: 2.75rem;
     background-color: var(--sapToolbar_SeparatorColor);
   }
 
-  &__body {
-    &--overflow {
+  &__overflow {
       @include fd-reset();
       @include fd-flex(column);
+      @include padding(0.375rem, 0.1875rem);
 
       max-width: 20rem;
-      padding: 0.1875rem 0.375rem;
       max-height: 50vh;
       overflow: auto;
 
       & .#{$block}__button {
-        display: block;
+        justify-content: flex-start;
         text-align: left;
         width: auto;
         margin: 0.1875rem 0;
@@ -193,16 +198,16 @@ $title-toolbar-height: 2.75rem;
         background-color: var(--sapToolbar_SeparatorColor);
       }
 
-      .#{$block}__body--overflow-label {
+      .#{$block}__overflow--label {
         @include fd-reset();
         @include fd-ellipsis();
 
         margin-top: 0.4375rem;
       }
-    }
   }
+  
 
-  .#{$block}__body {
+  .#{$block}__overflow-button {
     margin-left: auto;
 
     @include fd-rtl() {
