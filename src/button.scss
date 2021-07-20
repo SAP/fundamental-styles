@@ -406,7 +406,13 @@ $block: #{$fd-namespace}-button;
     @include buttonContainerPressedFocus();
   }
 
-  @include fd-disabled() {
+  &[aria-disabled="true"],
+  &.is-disabled {
+    @include isDisabled();
+    @include buttonContainer();
+  }
+
+  &:disabled {
     @include buttonContainerDisabled();
   }
 }
