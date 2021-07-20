@@ -1,4 +1,11 @@
 
+## [0.19.0-rc.56](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.55...v0.19.0-rc.56) (2021-07-20)
+
+
+### Bug Fixes
+
+* remove code breaking documentation functionality and tristate for checkboxes [ci visual] ([#2598](https://github.com/SAP/fundamental-styles/issues/2598)) ([9dca6e8](https://github.com/SAP/fundamental-styles/commit/9dca6e8440d9ebf02195f766385f3ccc4b097323))
+
 ## [0.19.0-rc.55](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.54...v0.19.0-rc.55) (2021-07-20)
 
 
