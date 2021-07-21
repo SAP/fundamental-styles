@@ -18,17 +18,7 @@ $cols: 11;
     margin: 0 -0.25rem;
     padding: 1rem;
 
-    &--translucent {
-      background-color: transparent;
-    }
-
-    &--transparent {
-      background-color: transparent;
-    }
-
-    &--solid {
-      background-color: var(--sapGroup_ContentBackground);
-    }
+    @include fd-form-backgrounds();
 
     & > .fd-row {
       & > :first-child & :not(.fd-col--wrap) {

@@ -11,10 +11,10 @@ $fd-form-header-padding-x: 1rem !default;
 .#{$block} {
   @include fd-reset();
   @include fd-flex-vertical-center();
+  @include fd-form-backgrounds();
 
   width: 100%;
   height: 2.75rem;
-  background-color: var(--sapGroup_TitleBackground);
   padding-left: $fd-form-header-padding-x;
   padding-right: $fd-form-header-padding-x;
   box-shadow: 0 var(--fdFormHeader_Border_Width) var(--fdFormHeader_Border_Width) var(--sapGroup_TitleBorderColor);

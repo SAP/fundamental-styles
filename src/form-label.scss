@@ -43,7 +43,7 @@ $block: #{$fd-namespace}-form-label;
       color: var(--sapField_RequiredColor);
       position: absolute;
       right: 0;
-      top: 0.7rem;
+      top: 0;
     }
 
     @include fd-rtl() {
