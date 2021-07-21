@@ -522,7 +522,7 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
             
                     
             <label
-              class="fd-label fd-toolbar__overflow--label"
+              class="fd-label fd-toolbar__overflow__label"
             >
               Label
             </label>
@@ -541,7 +541,7 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
             
                     
             <label
-              class="fd-form-label fd-toolbar__overflow--label"
+              class="fd-form-label fd-toolbar__overflow__label"
             >
               Form label
             </label>

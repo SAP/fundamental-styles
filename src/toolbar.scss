@@ -196,7 +196,7 @@ $title-toolbar-height: 2.75rem;
       background-color: var(--sapToolbar_SeparatorColor);
     }
 
-    .#{$block}__overflow--label {
+    .#{$block}__overflow__label {
       @include fd-reset();
       @include fd-ellipsis();
 
