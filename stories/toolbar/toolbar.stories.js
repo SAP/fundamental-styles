@@ -63,7 +63,7 @@ export const overflow = () => `<div style="height:250px">
         <button class="fd-button fd-button--transparent">Save</button>
         <button class="fd-button fd-button--transparent">Copy</button>
         <span class="fd-toolbar__separator"></span>
-        <div class="fd-popover fd-toolbar__overflow-button">
+        <div class="fd-popover fd-toolbar__overflow-popover">
             <div class="fd-popover__control">
                 <button class="fd-button fd-button--transparent"
                 aria-controls="wgxzK85912"
@@ -99,7 +99,7 @@ export const overflow = () => `<div style="height:250px">
         <button class="fd-button fd-button--compact fd-button--transparent">Save</button>
         <button class="fd-button fd-button--compact fd-button--transparent">Copy</button>
         <span class="fd-toolbar__separator"></span>
-        <div class="fd-popover fd-toolbar__overflow-button">
+        <div class="fd-popover fd-toolbar__overflow-popover">
             <div class="fd-popover__control">
                 <button
                 class="fd-button fd-button--compact fd-button--transparent"
@@ -116,10 +116,10 @@ export const overflow = () => `<div style="height:250px">
                 aria-hidden="false"
                 id="mw0daw8d7h">
                 <div class="fd-toolbar__overflow">
-                    <label class="fd-label fd-toolbar__overflow__label">Label</label>
+                    <label class="fd-label fd-toolbar__overflow-label">Label</label>
                     <button class="fd-button fd-button--compact fd-button--transparent fd-toolbar__button">Edit</button>
                     <span class="fd-toolbar__separator"></span>
-                    <label class="fd-form-label fd-toolbar__overflow__label">Form label</label>
+                    <label class="fd-form-label fd-toolbar__overflow-label">Form label</label>
                     <button class="fd-button fd-button--compact fd-button--transparent fd-toolbar__button">Delete</button>
                     <span class="fd-toolbar__separator"></span>
                     <button class="fd-button fd-button--compact fd-button--transparent fd-toolbar__button">Assign</button>
@@ -141,7 +141,7 @@ overflow.parameters = {
         storyDescription: `The overflow toolbar can display additional elements when space is limited. This can be achieved with a **Button** and/or **Popover** component. 
 
 To display an overflow in a button, pass the \`sap-icon--overflow\` in the \`fd-button\` class. Additionally, you can add a popover by passing \`fd-popover\` in the \`fd-toolbar__overflow\` element.
- Add any element inside overflow body with \`fd-toolbar__button\` , \`fd-toolbar__button--menu\` \`fd-toolbar__overflow__label \` modifier ,        `
+ Add any element inside overflow body with \`fd-toolbar__button\` , \`fd-toolbar__button--menu\` \`fd-toolbar__overflow-label \` modifier ,        `
     }
 };
 
