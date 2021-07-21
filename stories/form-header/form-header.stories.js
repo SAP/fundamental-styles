@@ -22,3 +22,36 @@ Default form headers are displayed in text that does not wrap but truncates into
 `
     }
 };
+
+export const translucent = () => `<div class="fd-form-header fd-form-header--translucent">
+        <span class="fd-form-header__text">Form Header</span>
+    </div>`;
+
+translucent.storyName = 'Translucent';
+translucent.parameters = {
+    docs: {
+        storyDescription: 'Header with translucent background displayed with `transparent` background-color'
+    }
+};
+
+export const transparent = () => `<div class="fd-form-header fd-form-header--transparent">
+        <span class="fd-form-header__text">Form Header</span>
+    </div>`;
+
+transparent.storyName = 'Transparent';
+transparent.parameters = {
+    docs: {
+        storyDescription: 'Header with transparent background displayed with `transparent` background-color'
+    }
+};
+
+export const solid = () => `<div class="fd-form-header fd-form-header--solid">
+        <span class="fd-form-header__text">Form Header</span>
+    </div>`;
+
+solid.storyName = 'Solid';
+solid.parameters = {
+    docs: {
+        storyDescription: 'Header with solid background displayed with `--sapGroup_ContentBackground` background-color'
+    }
+};

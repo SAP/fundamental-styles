@@ -164,3 +164,17 @@
     margin-right: 0;
   }
 }
+
+@mixin fd-form-backgrounds {
+  &--translucent {
+    background-color: transparent;
+  }
+
+  &--transparent {
+    background-color: transparent;
+  }
+
+  &--solid {
+    background-color: var(--sapGroup_ContentBackground);
+  }
+}

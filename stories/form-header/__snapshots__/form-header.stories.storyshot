@@ -15,3 +15,51 @@ exports[`Storyshots Components/Forms/Form Header Default 1`] = `
     
 </div>
 `;
+
+exports[`Storyshots Components/Forms/Form Header Solid 1`] = `
+<div
+  class="fd-form-header fd-form-header--solid"
+>
+  
+        
+  <span
+    class="fd-form-header__text"
+  >
+    Form Header
+  </span>
+  
+    
+</div>
+`;
+
+exports[`Storyshots Components/Forms/Form Header Translucent 1`] = `
+<div
+  class="fd-form-header fd-form-header--translucent"
+>
+  
+        
+  <span
+    class="fd-form-header__text"
+  >
+    Form Header
+  </span>
+  
+    
+</div>
+`;
+
+exports[`Storyshots Components/Forms/Form Header Transparent 1`] = `
+<div
+  class="fd-form-header fd-form-header--transparent"
+>
+  
+        
+  <span
+    class="fd-form-header__text"
+  >
+    Form Header
+  </span>
+  
+    
+</div>
+`;
