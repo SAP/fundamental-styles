@@ -27,10 +27,10 @@ export const translucent = () => `<div class="fd-form-header fd-form-header--tra
         <span class="fd-form-header__text">Form Header</span>
     </div>`;
 
-translucent.storyName = 'Background: Translucent';
+translucent.storyName = 'Translucent';
 translucent.parameters = {
     docs: {
-        storyDescription: 'Header with translucent background displayed with transparent background-color'
+        storyDescription: 'Header with translucent background displayed with `transparent` background-color'
     }
 };
 
@@ -38,10 +38,10 @@ export const transparent = () => `<div class="fd-form-header fd-form-header--tra
         <span class="fd-form-header__text">Form Header</span>
     </div>`;
 
-transparent.storyName = 'Background: Transparent';
+transparent.storyName = 'Transparent';
 transparent.parameters = {
     docs: {
-        storyDescription: 'Header with transparent background displayed with transparent background-color'
+        storyDescription: 'Header with transparent background displayed with `transparent` background-color'
     }
 };
 
@@ -49,9 +49,9 @@ export const solid = () => `<div class="fd-form-header fd-form-header--solid">
         <span class="fd-form-header__text">Form Header</span>
     </div>`;
 
-solid.storyName = 'Background: Solid';
+solid.storyName = 'Solid';
 solid.parameters = {
     docs: {
-        storyDescription: 'Header with solid background displayed with --sapGroup_ContentBackground background-color'
+        storyDescription: 'Header with solid background displayed with `--sapGroup_ContentBackground` background-color'
     }
 };
