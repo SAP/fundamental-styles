@@ -193,7 +193,7 @@ $title-toolbar-height: 2.75rem;
       background-color: var(--sapToolbar_SeparatorColor);
     }
 
-    .#{$block}__overflow__label {
+    .#{$block}__overflow-label {
       @include fd-reset();
       @include fd-ellipsis();
 
@@ -201,7 +201,7 @@ $title-toolbar-height: 2.75rem;
     }
   }
 
-  .#{$block}__overflow-button {
+  .#{$block}__overflow-popover {
     margin-left: auto;
 
     @include fd-rtl() {
