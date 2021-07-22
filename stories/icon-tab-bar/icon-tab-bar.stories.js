@@ -923,7 +923,7 @@ export const singleClick = () => `<div style="min-height: 800px;">
                             </div>
                         </a>
                     </div>
-                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="false" id="popoverA1">
+                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" aria-hidden="false" id="popoverA1">
                         <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
                             <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
                                 <a tabindex="0" class="fd-list__link">
@@ -991,7 +991,7 @@ export const singleClick = () => `<div style="min-height: 800px;">
                             </div>
                         </a>
                     </div>
-                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="false" id="popoverA2">
+                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" aria-hidden="false" id="popoverA2">
                         <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
                             <li tabindex="-1" class="fd-icon-tab-bar__line-separator"></li>
                             <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
@@ -1078,7 +1078,7 @@ export const multiClick = () => `<div style="min-height: 400px;">
                             <span class="fd-icon-tab-bar__badge"></span>
                         </div>
                     </div>
-                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="false" id="popoverA3">
+                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" aria-hidden="false" id="popoverA3">
                         <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
                             <li tabindex="-1" class="fd-icon-tab-bar__icon-separator">
                                 <span class="sap-icon--process"></span>
@@ -1479,7 +1479,7 @@ export const navigation = () => `<div style="min-height: 600px;">
                             </button>
                         </div>
                     </div>
-                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="false" id="popoverAO4">
+                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" aria-hidden="false" id="popoverAO4">
                         <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
                             <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
                                 <a tabindex="0" class="fd-list__link">
@@ -1523,7 +1523,7 @@ export const navigation = () => `<div style="min-height: 600px;">
               </div>
             </a>
           </div>
-          <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="false" id="popoverAO5">
+          <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" aria-hidden="false" id="popoverAO5">
             <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
               <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
                 <a tabindex="0" class="fd-list__link">

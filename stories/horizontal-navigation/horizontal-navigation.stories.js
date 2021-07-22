@@ -16,13 +16,12 @@ Differently than the Side Navigation, the Horizontal Navigation does not embed a
 Another aspect differentiating the Horizontal Navigation layout is that it has only one display mode. It has no condensed or off-canvas mode, which remain specific states of the Side Navigation.  
 
         `,
-
         tags: ['btp', 'non-f3', 'theme', 'development'],
         components: ['tool-header', 'button', 'icon', 'list', 'popover', 'icon-tab-bar', 'avatar', 'form-label', 'input-group', 'text', 'title' ]
     }
 };
 
-export const textOnly = () => `<div style="height: 300px;">
+export const textOnly = () => `<div style="height: 200px;">
 <div class="fd-tool-header">
     <div class="fd-tool-header__group">
         <div class="fd-tool-header__element">
@@ -64,24 +63,24 @@ export const textOnly = () => `<div style="height: 300px;">
 <div class="fd-icon-tab-bar fd-icon-tab-bar--navigation fd-icon-tab-bar--sm">
     <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
-            <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab4">
+            <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab1">
             <span class="fd-icon-tab-bar__tag">Section 1</span>
             </a>
         </li>
         <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--multi-click">
-            <a role="tab" class="fd-icon-tab-bar__tab" aria-selected="true" id="tab5" tabindex="0">
+            <a role="tab" class="fd-icon-tab-bar__tab" aria-selected="true" id="tab2" tabindex="0">
             <span class="fd-icon-tab-bar__tag">Section 2</span>
             </a>
 
             <div class="fd-popover fd-icon-tab-bar__popover">
             <div class="fd-popover__control">
                 <div class="fd-icon-tab-bar__button-container">
-                <button class="fd-button fd-button--transparent fd-button--compact  fd-icon-tab-bar__button" aria-controls="popoverAO4" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverAO4');" aria-label="open menu button">
+                <button class="fd-button fd-button--transparent fd-button--compact  fd-icon-tab-bar__button" aria-controls="popoverA1" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA1');" aria-label="open menu button">
                     <i class="sap-icon--slim-arrow-down"></i>
                 </button>
                 </div>
             </div>
-            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="false" id="popoverAO4">
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" aria-hidden="false" id="popoverA1">
                 <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
                 <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
                     <a tabindex="0" class="fd-list__link">
@@ -98,7 +97,7 @@ export const textOnly = () => `<div style="height: 300px;">
             </div>
         </li>
         <li role="presentation" class="fd-icon-tab-bar__item">
-            <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab6">
+            <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab3">
             <span class="fd-icon-tab-bar__tag">Section 3</span>
             </a>
         </li>
@@ -109,21 +108,11 @@ export const textOnly = () => `<div style="height: 300px;">
 
 textOnly.storyName = 'Horizontal Navigation Text Only';
 
-textOnly.parameters = {
-    docs: {
-        iframeHeight: 900,
-        storyDescription: `
-The default vertical navigation is comprised of several navigation list items.
-        `
-    }
-};
-
-export const textOnlyPhone = () => `<div style="height: 300px;">
+export const textOnlyPhone = () => `<div style="height: 200px;">
 <div class="fd-tool-header fd-tool-header--sm" style="max-width: 500px;">
   <div class="fd-tool-header__group">
     <div class="fd-tool-header__element">
       <img class="fd-tool-header__logo" src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" alt="SAP">
-
     </div>
     <div class="fd-tool-header__element">
       <button class="fd-button fd-button--transparent fd-button--menu fd-tool-header__button" aria-label="mega menu">
@@ -143,45 +132,54 @@ export const textOnlyPhone = () => `<div style="height: 300px;">
   </div>
 </div>
 <div class="fd-icon-tab-bar fd-icon-tab-bar--sm fd-icon-tab-bar--navigation" style="max-width: 500px;">
-<ul role="tablist" class="fd-icon-tab-bar__header">
-  <li role="presentation" class="fd-icon-tab-bar__item">
-    <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab1">
-      <span class="fd-icon-tab-bar__tag">Section 1</span>
-    </a>
-  </li>
-  <li role="presentation" class="fd-icon-tab-bar__item">
-    <a role="tab" class="fd-icon-tab-bar__tab" href="#" aria-selected="true" id="tab2">
-      <span class="fd-icon-tab-bar__tag">Section 2</span>
-    </a>
-  </li>
-  <li role="presentation" class="fd-icon-tab-bar__item">
-    <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab3">
-      <span class="fd-icon-tab-bar__tag">Section 3</span>
-    </a>
-  </li>
-  <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow">
-    <button class="fd-icon-tab-bar__overflow">
-      <span class="fd-icon-tab-bar__overflow-text">More</span>
-      <i class="sap-icon--slim-arrow-down" role="presentation"></i>
-    </button>
-  </li>
-</ul>
+    <ul role="tablist" class="fd-icon-tab-bar__header">
+        <li role="presentation" class="fd-icon-tab-bar__item">
+            <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab4">
+                <span class="fd-icon-tab-bar__tag">Section 1</span>
+            </a>
+        </li>
+        <li role="presentation" class="fd-icon-tab-bar__item">
+            <a role="tab" class="fd-icon-tab-bar__tab" href="#" aria-selected="true" id="tab5">
+                <span class="fd-icon-tab-bar__tag">Section 2</span>
+            </a>
+        </li>
+        <li role="presentation" class="fd-icon-tab-bar__item">
+            <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab6">
+                <span class="fd-icon-tab-bar__tag">Section 3</span>
+            </a>
+        </li>
+        <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow">
+            <div class="fd-popover fd-icon-tab-bar__popover">
+                <div class="fd-popover__control">
+                    <button class="fd-icon-tab-bar__overflow" aria-controls="popoverA2" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA2');" aria-label="open menu button">
+                        <span class="fd-icon-tab-bar__overflow-text">More</span>
+                        <i class="sap-icon--slim-arrow-down" role="presentation"></i>
+                    </button>
+                </div>
+                <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" aria-hidden="false" id="popoverA2">
+                <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
+                    <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
+                    <a tabindex="0" class="fd-list__link">
+                        <span class="fd-list__title">Section 4</span>
+                    </a>
+                    </li>
+                    <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
+                    <a tabindex="0" class="fd-list__link">
+                        <span class="fd-list__title">Section 5</span>
+                    </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
 </div>
 </div>
 `;
 
 textOnlyPhone.storyName = 'Horizontal Navigation Text Only Phone View';
 
-textOnlyPhone.parameters = {
-    docs: {
-        iframeHeight: 900,
-        storyDescription: `
-The default vertical navigation is comprised of several navigation list items.
-        `
-    }
-};
-
-export const textAndIcon = () => `<div style="height: 300px;">
+export const textAndIcon = () => `<div style="height: 200px;">
 <div class="fd-tool-header">
     <div class="fd-tool-header__group">
         <div class="fd-tool-header__element">
@@ -223,7 +221,7 @@ export const textAndIcon = () => `<div style="height: 300px;">
 <div class="fd-icon-tab-bar fd-icon-tab-bar--navigation fd-icon-tab-bar--sm">
     <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
-            <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab4">
+            <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab7">
                 <div class="fd-icon-tab-bar__tab-container">
                     <i class="sap-icon--home"></i>
                     <span class="fd-icon-tab-bar__tag">Section 1</span>
@@ -233,7 +231,7 @@ export const textAndIcon = () => `<div style="height: 300px;">
         <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--single-click">
             <div class="fd-popover">
                 <div class="fd-popover__control">
-                    <a role="tab" class="fd-icon-tab-bar__tab" tabindex="0" aria-selected="true" id="tab2" aria-controls="popoverA1" aria-expanded="true" aria-haspopup="true" onclick="onPopoverClick('popoverA1');">
+                    <a role="tab" class="fd-icon-tab-bar__tab" tabindex="0" aria-selected="true" id="tab8" aria-controls="popoverA3" aria-expanded="true" aria-haspopup="true" onclick="onPopoverClick('popoverA3');">
                     <div class="fd-icon-tab-bar__tab-container">
                         <i class="sap-icon--internet-browser" role="presentation"></i>
                         <span class="fd-icon-tab-bar__tag">Section 2</span>
@@ -243,7 +241,7 @@ export const textAndIcon = () => `<div style="height: 300px;">
                     </div>
                     </a>
                 </div>
-                <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="false" id="popoverA1">
+                <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" aria-hidden="false" id="popoverA3">
                     <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
                         <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
                             <a tabindex="0" class="fd-list__link">
@@ -259,19 +257,75 @@ export const textAndIcon = () => `<div style="height: 300px;">
                 </div>
             </div>
         </li>
+        <li role="presentation" class="fd-icon-tab-bar__item">
+            <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab9">
+                <div class="fd-icon-tab-bar__tab-container">
+                    <i class="sap-icon--home-share"></i>
+                    <span class="fd-icon-tab-bar__tag">Section 3</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+</div>
+`;
+
+textAndIcon.storyName = 'Horizontal Navigation Text And Icon';
+textAndIcon.parameters = {
+    docs: {
+        storyDescription: 'Icon Tab Bars with Single Click Areas'
+    }
+};
+
+export const textAndIconPhone = () => `<div style="height: 200px;">
+
+<div style="height: 200px;">
+  <div class="fd-tool-header fd-tool-header--sm" style="max-width: 500px;">
+    <div class="fd-tool-header__group">
+      <div class="fd-tool-header__element">
+        <img class="fd-tool-header__logo" src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" alt="SAP">
+      </div>
+      <div class="fd-tool-header__element">
+        <h4 class="fd-title fd-title--h5 fd-tool-header__title">Product Name</h4>
+      </div>
+    </div>
+    <div class="fd-tool-header__group">
+      <div class="fd-tool-header__element">
+        <button class="fd-button fd-button--transparent fd-tool-header__button">
+          <i class="sap-icon--overflow" aria-label="more items"></i>
+        </button>
+      </div>
+      <div class="fd-tool-header__element">
+        <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" aria-label="John Doe"></span>
+      </div>
+    </div>
+</div>
+<div class="fd-icon-tab-bar fd-icon-tab-bar--navigation fd-icon-tab-bar--sm" style="max-width: 500px;">
+    <ul role="tablist" class="fd-icon-tab-bar__header">
+        <li role="presentation" class="fd-icon-tab-bar__item">
+            <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab10">
+                <div class="fd-icon-tab-bar__tab-container">
+                    <i class="sap-icon--home"></i>
+                    <span class="fd-icon-tab-bar__tag">Section 1</span>
+                </div>
+            </a>
+        </li>
         <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--multi-click">
-            <a role="tab" class="fd-icon-tab-bar__tab" aria-selected="true" id="tab5" tabindex="0">
-                <span class="fd-icon-tab-bar__tag">Section 2</span>
+            <a role="tab" class="fd-icon-tab-bar__tab" aria-selected="true" id="tab11" tabindex="0">
+                <div class="fd-icon-tab-bar__tab-container">
+                    <i class="sap-icon--family-care"></i>
+                    <span class="fd-icon-tab-bar__tag">Section 2</span>
+                </div>
             </a>
             <div class="fd-popover fd-icon-tab-bar__popover">
                 <div class="fd-popover__control">
                     <div class="fd-icon-tab-bar__button-container">
-                    <button class="fd-button fd-button--transparent fd-button--compact  fd-icon-tab-bar__button" aria-controls="popoverAO4" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverAO4');" aria-label="open menu button">
+                    <button class="fd-button fd-button--transparent fd-button--compact  fd-icon-tab-bar__button" aria-controls="popoverA4" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA4');" aria-label="open menu button">
                         <i class="sap-icon--slim-arrow-down"></i>
                     </button>
                     </div>
                 </div>
-                <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="false" id="popoverAO4">
+                <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" aria-hidden="false" id="popoverA4">
                     <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
                     <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
                         <a tabindex="0" class="fd-list__link">
@@ -288,25 +342,47 @@ export const textAndIcon = () => `<div style="height: 300px;">
             </div>
         </li>
         <li role="presentation" class="fd-icon-tab-bar__item">
-            <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab6">
+            <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab12">
                 <div class="fd-icon-tab-bar__tab-container">
-                    <i class="sap-icon--search"></i>
+                    <i class="sap-icon--monitor-payments"></i>
                     <span class="fd-icon-tab-bar__tag">Section 3</span>
                 </div>
             </a>
         </li>
+        <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow">
+        <div class="fd-popover fd-icon-tab-bar__popover">
+          <div class="fd-popover__control">
+            <button class="fd-icon-tab-bar__overflow" aria-controls="popoverA5" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA5');" aria-label="open menu button">
+              <span class="fd-icon-tab-bar__overflow-text">More</span>
+              <i class="sap-icon--slim-arrow-down" role="presentation"></i>
+            </button>
+          </div>
+          <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" aria-hidden="false" id="popoverA5">
+            <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
+              <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
+                <a tabindex="0" class="fd-list__link">
+                  <i class="sap-icon--batch-payments" role="presentation"></i>
+                  <span class="fd-list__title">Section 4</span>
+                </a>
+              </li>
+              <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
+                <a tabindex="0" class="fd-list__link">
+                  <i class="sap-icon--credit-card" role="presentation"></i>
+                  <span class="fd-list__title">Section 5</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
     </ul>
 </div>
 </div>
 `;
 
-textAndIcon.storyName = 'Horizontal Navigation Text And Icon';
-
-textAndIcon.parameters = {
+textAndIconPhone.storyName = 'Horizontal Navigation Text And Icon Phone View';
+textAndIconPhone.parameters = {
     docs: {
-        iframeHeight: 900,
-        storyDescription: `
-The default vertical navigation is comprised of several navigation list items.
-        `
+        storyDescription: 'Icon Tab Bars with Two Click Areas'
     }
 };
