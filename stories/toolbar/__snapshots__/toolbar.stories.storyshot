@@ -328,7 +328,7 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
       
         
       <div
-        class="fd-popover fd-toolbar__overflow-popover"
+        class="fd-popover"
       >
         
             
@@ -372,7 +372,7 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
             
                     
             <button
-              class="fd-button fd-button--transparent fd-toolbar__button"
+              class="fd-button fd-button--transparent fd-toolbar__overflow-button"
             >
               Edit
             </button>
@@ -384,7 +384,7 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
             
                     
             <button
-              class="fd-button fd-button--transparent fd-toolbar__button"
+              class="fd-button fd-button--transparent fd-toolbar__overflow-button"
             >
               Delete
             </button>
@@ -396,14 +396,14 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
             
                     
             <button
-              class="fd-button fd-button--transparent fd-toolbar__button"
+              class="fd-button fd-button--transparent fd-toolbar__overflow-button"
             >
               Assign
             </button>
             
                     
             <button
-              class="fd-button fd-button--transparent fd-toolbar__button"
+              class="fd-button fd-button--transparent fd-toolbar__overflow-button"
             >
               Exit
             </button>
@@ -478,7 +478,7 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
       
         
       <div
-        class="fd-popover fd-toolbar__overflow-popover"
+        class="fd-popover"
       >
         
             
@@ -529,7 +529,7 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
             
                     
             <button
-              class="fd-button fd-button--compact fd-button--transparent fd-toolbar__button"
+              class="fd-button fd-button--compact fd-button--transparent fd-toolbar__overflow-button"
             >
               Edit
             </button>
@@ -548,7 +548,7 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
             
                     
             <button
-              class="fd-button fd-button--compact fd-button--transparent fd-toolbar__button"
+              class="fd-button fd-button--compact fd-button--transparent fd-toolbar__overflow-button"
             >
               Delete
             </button>
@@ -560,21 +560,21 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
             
                     
             <button
-              class="fd-button fd-button--compact fd-button--transparent fd-toolbar__button"
+              class="fd-button fd-button--compact fd-button--transparent fd-toolbar__overflow-button"
             >
               Assign
             </button>
             
                     
             <button
-              class="fd-button fd-button--compact fd-button--transparent fd-toolbar__button"
+              class="fd-button fd-button--compact fd-button--transparent fd-toolbar__overflow-button"
             >
               Exit
             </button>
             
                     
             <button
-              class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-toolbar__button fd-toolbar__button--menu"
+              class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-toolbar__overflow-button fd-toolbar__overflow-button--menu"
             >
               
                         

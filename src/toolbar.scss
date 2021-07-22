@@ -165,7 +165,7 @@ $title-toolbar-height: 2.75rem;
     max-height: 50vh;
     overflow: auto;
 
-    & .#{$block}__button {
+    & .#{$block}__overflow-button {
       justify-content: flex-start;
       text-align: left;
       width: auto;
@@ -198,15 +198,6 @@ $title-toolbar-height: 2.75rem;
       @include fd-ellipsis();
 
       margin-top: 0.4375rem;
-    }
-  }
-
-  .#{$block}__overflow-popover {
-    margin-left: auto;
-
-    @include fd-rtl() {
-      margin-left: 0;
-      margin-right: auto;
     }
   }
 
