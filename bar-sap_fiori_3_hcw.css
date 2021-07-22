@@ -1,9 +1,8 @@
 /*!
- * Fundamental Library Styles v0.18.0
+ * Fundamental Library Styles v0.19.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
-@charset "UTF-8";
 .fd-bar {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -11,7 +10,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #000;
   color: var(--sapTextColor,#000);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -53,7 +52,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #000;
   color: var(--sapTextColor,#000);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -104,7 +103,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #000;
   color: var(--sapTextColor,#000);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -135,6 +134,15 @@
 [dir=rtl] .fd-bar__element {
   margin-right: 0;
   margin-left: .5rem
+}
+.fd-bar__element--title {
+  padding-left: .5rem;
+  padding-right: 0
+}
+.fd-bar__element--title[dir=rtl],
+[dir=rtl] .fd-bar__element--title {
+  padding-right: .5rem;
+  padding-left: 0
 }
 .fd-bar__element--full-width {
   width: 100%

@@ -1,9 +1,8 @@
 /*!
- * Fundamental Library Styles v0.18.0
+ * Fundamental Library Styles v0.19.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
-@charset "UTF-8";
 /*!
 .fd-button-split+()
     .fd-button
@@ -15,7 +14,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fafafa;
   color: var(--sapTextColor,#fafafa);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -103,13 +102,13 @@
   color: var(--sapButton_Selected_TextColor,#29313a)
 }
 .fd-button-split--emphasized > [class*="--emphasized"] > .fd-button-split__text {
-  color: #fff;
-  color: var(--sapButton_Emphasized_TextColor,#fff);
+  color: #fafafa;
+  color: var(--sapButton_Emphasized_TextColor,#fafafa);
   font-weight: 700
 }
 .fd-button-split--emphasized > [class*="--emphasized"]:hover > .fd-button-split__text {
-  color: #fff;
-  color: var(--sapButton_Emphasized_Hover_TextColor,#fff)
+  color: #fafafa;
+  color: var(--sapButton_Emphasized_Hover_TextColor,#fafafa)
 }
 .fd-button-split--emphasized > [class*="--emphasized"]:active > .fd-button-split__text {
   color: #29313a;
@@ -134,7 +133,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fafafa;
   color: var(--sapTextColor,#fafafa);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;

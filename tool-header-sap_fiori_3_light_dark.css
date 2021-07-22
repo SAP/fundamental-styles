@@ -1,0 +1,576 @@
+/*!
+ * Fundamental Library Styles v0.19.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fd-tool-header {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 .5rem 0 1rem;
+  height: 2.75rem;
+  background: #354a5f;
+  background: var(--sapShellColor,#354a5f);
+  -webkit-box-shadow: inset 0 -.0625rem 0 0 #354a5f;
+  -webkit-box-shadow: inset 0 -.0625rem 0 0 var(--sapShell_BorderColor,#354a5f);
+  box-shadow: inset 0 -.0625rem 0 0 #354a5f;
+  box-shadow: inset 0 -.0625rem 0 0 var(--sapShell_BorderColor,#354a5f)
+}
+.fd-tool-header::after,
+.fd-tool-header::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tool-header__group {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fd-tool-header__group::after,
+.fd-tool-header__group::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tool-header__element {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  max-width: 100%;
+  overflow: hidden;
+  height: 2.75rem
+}
+.fd-tool-header__element::after,
+.fd-tool-header__element::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tool-header__element:not(:last-child) {
+  margin-right: .5rem
+}
+.fd-tool-header__element:not(:last-child)[dir=rtl],
+[dir=rtl] .fd-tool-header__element:not(:last-child) {
+  margin-right: 0;
+  margin-left: .5rem
+}
+.fd-tool-header__logo {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: auto;
+  height: 1.625rem;
+  background-size: contain;
+  background-repeat: no-repeat
+}
+.fd-tool-header__logo::after,
+.fd-tool-header__logo::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-tool-header .fd-tool-header__text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fafafa;
+  color: var(--sapShell_TextColor,#fafafa)
+}
+.fd-tool-header .fd-tool-header__label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  -ms-flex-item-align: center;
+  align-self: center;
+  color: #fafafa;
+  color: var(--sapShell_TextColor,#fafafa)
+}
+.fd-tool-header .fd-tool-header__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: .625rem;
+  padding-right: .625rem;
+  font-weight: 700;
+  color: #fafafa;
+  color: var(--sapShell_TextColor,#fafafa)
+}
+.fd-tool-header .fd-tool-header__button {
+  color: #d1e8ff;
+  color: var(--sapShell_InteractiveTextColor,#d1e8ff)
+}
+.fd-tool-header .fd-tool-header__button:hover {
+  border-color: transparent;
+  background: #283848;
+  background: var(--sapShell_Hover_Background,#283848)
+}
+.fd-tool-header .fd-tool-header__button:focus {
+  outline-color: #000;
+  outline-color: var(--sapContent_ContrastFocusColor,#000)
+}
+.fd-tool-header .fd-tool-header__button:focus::after {
+  border-color: #000;
+  border-color: var(--sapContent_ContrastFocusColor,#000)
+}
+.fd-tool-header .fd-tool-header__button:active {
+  color: #fafafa;
+  color: var(--sapShell_Active_TextColor,#fafafa);
+  background: #23303e;
+  background: var(--sapShell_Active_Background,#23303e);
+  outline-color: #000;
+  outline-color: var(--sapContent_ContrastFocusColor,#000)
+}
+.fd-tool-header .fd-tool-header__button:active::after {
+  border-color: #000;
+  border-color: var(--sapContent_ContrastFocusColor,#000)
+}
+.fd-tool-header .fd-tool-header__button-text {
+  color: #fafafa;
+  color: var(--sapShell_TextColor,#fafafa)
+}
+@media (max-width:599px) {
+  .fd-tool-header .fd-tool-header__button-text {
+    display: none
+  }
+}
+.fd-tool-header .fd-tool-header__button .fd-tool-header__title {
+  padding-left: 0;
+  padding-right: 0
+}
+@media (max-width:599px) {
+  .fd-tool-header .fd-tool-header__button .fd-tool-header__title {
+    display: none
+  }
+}
+.fd-tool-header .fd-tool-header__icon {
+  color: #fafafa;
+  color: var(--fdTool_Header_Icon_Color_Default,var(--sapShell_TextColor,#fafafa));
+  font-size: 1rem;
+  line-height: 1
+}
+.fd-tool-header .fd-tool-header__icon--inverted {
+  color: #fafafa;
+  color: var(--fdTool_Header_Icon_Color_Inverted_Default,var(--sapShell_TextColor,#fafafa));
+  background: 0 0;
+  background: var(--fdTool_Header_Icon_Background_Color_Inverted_Default,transparent)
+}
+.fd-tool-header .fd-tool-header__icon--contrast {
+  color: #fafafa;
+  color: var(--fdTool_Header_Icon_Color_Contrast,var(--sapShell_TextColor,#fafafa))
+}
+.fd-tool-header .fd-tool-header__icon--contrast.fd-tool-header__icon--inverted {
+  color: #fafafa;
+  color: var(--fdTool_Header_Icon_Color_Inverted_Contrast,var(--sapShell_TextColor,#fafafa));
+  background: 0 0;
+  background: var(--fdTool_Header_Icon_Background_Color_Inverted_Contrast,transparent)
+}
+.fd-tool-header .fd-tool-header__icon--positive {
+  color: #abe2ab;
+  color: var(--fdTool_Header_Icon_Color_Positive,var(--sapShell_PositiveColor,#abe2ab))
+}
+.fd-tool-header .fd-tool-header__icon--positive.fd-tool-header__icon--inverted {
+  color: #29313a;
+  color: var(--fdTool_Header_Icon_Color_Inverted_Positive,var(--sapContent_ContrastTextColor,#29313a));
+  background: #abe2ab;
+  background: var(--fdTool_Header_Icon_Background_Color_Inverted_Positive,var(--sapShell_PositiveColor,#abe2ab))
+}
+.fd-tool-header .fd-tool-header__icon--critical {
+  color: #fabd64;
+  color: var(--fdTool_Header_Icon_Color_Critical,var(--sapShell_CriticalColor,#fabd64))
+}
+.fd-tool-header .fd-tool-header__icon--critical.fd-tool-header__icon--inverted {
+  color: #29313a;
+  color: var(--fdTool_Header_Icon_Color_Inverted_Critical,var(--sapContent_ContrastTextColor,#29313a));
+  background: #fabd64;
+  background: var(--fdTool_Header_Icon_Background_Color_Inverted_Critical,var(--sapShell_CriticalColor,#fabd64))
+}
+.fd-tool-header .fd-tool-header__icon--negative {
+  color: #f88;
+  color: var(--fdTool_Header_Icon_Color_Negative,var(--sapShell_NegativeColor,#f88))
+}
+.fd-tool-header .fd-tool-header__icon--negative.fd-tool-header__icon--inverted {
+  color: #29313a;
+  color: var(--fdTool_Header_Icon_Color_Inverted_Negative,var(--sapContent_ContrastTextColor,#29313a));
+  background: #f88;
+  background: var(--fdTool_Header_Icon_Background_Color_Inverted_Negative,var(--sapShell_NegativeColor,#f88))
+}
+.fd-tool-header .fd-tool-header__icon--neutral {
+  color: #d3d7d9;
+  color: var(--fdTool_Header_Icon_Color_Neutral,var(--sapShell_NeutralColor,#d3d7d9))
+}
+.fd-tool-header .fd-tool-header__icon--neutral.fd-tool-header__icon--inverted {
+  color: #29313a;
+  color: var(--fdTool_Header_Icon_Color_Inverted_Neutral,var(--sapContent_ContrastTextColor,#29313a));
+  background: #d3d7d9;
+  background: var(--fdTool_Header_Icon_Background_Color_Inverted_Neutral,var(--sapShell_NeutralColor,#d3d7d9))
+}
+.fd-tool-header .fd-tool-header__object-status--positive {
+  color: #abe2ab;
+  color: var(--fdTool_Header_Object_Status_Color_Positive,var(--sapShell_PositiveColor,#abe2ab));
+  text-shadow: none
+}
+.fd-tool-header .fd-tool-header__object-status--positive [class*=sap-icon] {
+  color: #abe2ab;
+  color: var(--fdTool_Header_Object_Status_Color_Positive,var(--sapShell_PositiveColor,#abe2ab))
+}
+.fd-tool-header .fd-tool-header__object-status--positive[class*=inverted] {
+  text-shadow: none;
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a));
+  background: #abe2ab;
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Positive,var(--sapShell_PositiveColor,#abe2ab))
+}
+.fd-tool-header .fd-tool-header__object-status--positive[class*=inverted] [class*=icon] {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-tool-header .fd-tool-header__object-status--positive[class*=inverted].is-hover,
+.fd-tool-header .fd-tool-header__object-status--positive[class*=inverted]:hover {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a));
+  background: #abe2ab;
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Positive,var(--sapShell_PositiveColor,#abe2ab))
+}
+.fd-tool-header .fd-tool-header__object-status--positive[class*=inverted].is-hover [class*=icon],
+.fd-tool-header .fd-tool-header__object-status--positive[class*=inverted]:hover [class*=icon] {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-tool-header .fd-tool-header__object-status--positive[class*=inverted][class*=link].is-hover,
+.fd-tool-header .fd-tool-header__object-status--positive[class*=inverted][class*=link]:hover {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a));
+  background: #abe2ab;
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Positive,var(--sapShell_PositiveColor,#abe2ab))
+}
+.fd-tool-header .fd-tool-header__object-status--positive[class*=inverted][class*=link].is-hover [class*=icon],
+.fd-tool-header .fd-tool-header__object-status--positive[class*=inverted][class*=link]:hover [class*=icon] {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-tool-header .fd-tool-header__object-status--critical {
+  color: #fabd64;
+  color: var(--fdTool_Header_Object_Status_Color_Critical,var(--sapShell_CriticalColor,#fabd64));
+  text-shadow: none
+}
+.fd-tool-header .fd-tool-header__object-status--critical [class*=sap-icon] {
+  color: #fabd64;
+  color: var(--fdTool_Header_Object_Status_Color_Critical,var(--sapShell_CriticalColor,#fabd64))
+}
+.fd-tool-header .fd-tool-header__object-status--critical[class*=inverted] {
+  text-shadow: none;
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a));
+  background: #fabd64;
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Critical,var(--sapShell_CriticalColor,#fabd64))
+}
+.fd-tool-header .fd-tool-header__object-status--critical[class*=inverted] [class*=icon] {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-tool-header .fd-tool-header__object-status--critical[class*=inverted].is-hover,
+.fd-tool-header .fd-tool-header__object-status--critical[class*=inverted]:hover {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a));
+  background: #fabd64;
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Critical,var(--sapShell_CriticalColor,#fabd64))
+}
+.fd-tool-header .fd-tool-header__object-status--critical[class*=inverted].is-hover [class*=icon],
+.fd-tool-header .fd-tool-header__object-status--critical[class*=inverted]:hover [class*=icon] {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-tool-header .fd-tool-header__object-status--critical[class*=inverted][class*=link].is-hover,
+.fd-tool-header .fd-tool-header__object-status--critical[class*=inverted][class*=link]:hover {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a));
+  background: #fabd64;
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Critical,var(--sapShell_CriticalColor,#fabd64))
+}
+.fd-tool-header .fd-tool-header__object-status--critical[class*=inverted][class*=link].is-hover [class*=icon],
+.fd-tool-header .fd-tool-header__object-status--critical[class*=inverted][class*=link]:hover [class*=icon] {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-tool-header .fd-tool-header__object-status--negative {
+  color: #f88;
+  color: var(--fdTool_Header_Object_Status_Color_Negative,var(--sapShell_NegativeColor,#f88));
+  text-shadow: none
+}
+.fd-tool-header .fd-tool-header__object-status--negative [class*=sap-icon] {
+  color: #f88;
+  color: var(--fdTool_Header_Object_Status_Color_Negative,var(--sapShell_NegativeColor,#f88))
+}
+.fd-tool-header .fd-tool-header__object-status--negative[class*=inverted] {
+  text-shadow: none;
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a));
+  background: #f88;
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Negative,var(--sapShell_NegativeColor,#f88))
+}
+.fd-tool-header .fd-tool-header__object-status--negative[class*=inverted] [class*=icon] {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-tool-header .fd-tool-header__object-status--negative[class*=inverted].is-hover,
+.fd-tool-header .fd-tool-header__object-status--negative[class*=inverted]:hover {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a));
+  background: #f88;
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Negative,var(--sapShell_NegativeColor,#f88))
+}
+.fd-tool-header .fd-tool-header__object-status--negative[class*=inverted].is-hover [class*=icon],
+.fd-tool-header .fd-tool-header__object-status--negative[class*=inverted]:hover [class*=icon] {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-tool-header .fd-tool-header__object-status--negative[class*=inverted][class*=link].is-hover,
+.fd-tool-header .fd-tool-header__object-status--negative[class*=inverted][class*=link]:hover {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a));
+  background: #f88;
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Negative,var(--sapShell_NegativeColor,#f88))
+}
+.fd-tool-header .fd-tool-header__object-status--negative[class*=inverted][class*=link].is-hover [class*=icon],
+.fd-tool-header .fd-tool-header__object-status--negative[class*=inverted][class*=link]:hover [class*=icon] {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-tool-header .fd-tool-header__object-status--neutral {
+  color: #d3d7d9;
+  color: var(--fdTool_Header_Object_Status_Color_Neutral,var(--sapShell_NeutralColor,#d3d7d9));
+  text-shadow: none
+}
+.fd-tool-header .fd-tool-header__object-status--neutral [class*=sap-icon] {
+  color: #d3d7d9;
+  color: var(--fdTool_Header_Object_Status_Color_Neutral,var(--sapShell_NeutralColor,#d3d7d9))
+}
+.fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted] {
+  text-shadow: none;
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a));
+  background: #d3d7d9;
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Neutral,var(--sapShell_NeutralColor,#d3d7d9))
+}
+.fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted] [class*=icon] {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted].is-hover,
+.fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted]:hover {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a));
+  background: #d3d7d9;
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Neutral,var(--sapShell_NeutralColor,#d3d7d9))
+}
+.fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted].is-hover [class*=icon],
+.fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted]:hover [class*=icon] {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted][class*=link].is-hover,
+.fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted][class*=link]:hover {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a));
+  background: #d3d7d9;
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Neutral,var(--sapShell_NeutralColor,#d3d7d9))
+}
+.fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted][class*=link].is-hover [class*=icon],
+.fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted][class*=link]:hover [class*=icon] {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-tool-header .fd-tool-header__object-status--informative {
+  color: #c0e0fa;
+  color: var(--fdTool_Header_Object_Status_Color_Informative,var(--sapShell_InformativeColor,#c0e0fa));
+  text-shadow: none
+}
+.fd-tool-header .fd-tool-header__object-status--informative [class*=sap-icon] {
+  color: #c0e0fa;
+  color: var(--fdTool_Header_Object_Status_Color_Informative,var(--sapShell_InformativeColor,#c0e0fa))
+}
+.fd-tool-header .fd-tool-header__object-status--informative[class*=inverted] {
+  text-shadow: none;
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a));
+  background: #c0e0fa;
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Informative,var(--sapShell_InformativeColor,#c0e0fa))
+}
+.fd-tool-header .fd-tool-header__object-status--informative[class*=inverted] [class*=icon] {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-tool-header .fd-tool-header__object-status--informative[class*=inverted].is-hover,
+.fd-tool-header .fd-tool-header__object-status--informative[class*=inverted]:hover {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a));
+  background: #c0e0fa;
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Informative,var(--sapShell_InformativeColor,#c0e0fa))
+}
+.fd-tool-header .fd-tool-header__object-status--informative[class*=inverted].is-hover [class*=icon],
+.fd-tool-header .fd-tool-header__object-status--informative[class*=inverted]:hover [class*=icon] {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-tool-header .fd-tool-header__object-status--informative[class*=inverted][class*=link].is-hover,
+.fd-tool-header .fd-tool-header__object-status--informative[class*=inverted][class*=link]:hover {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a));
+  background: #c0e0fa;
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Informative,var(--sapShell_InformativeColor,#c0e0fa))
+}
+.fd-tool-header .fd-tool-header__object-status--informative[class*=inverted][class*=link].is-hover [class*=icon],
+.fd-tool-header .fd-tool-header__object-status--informative[class*=inverted][class*=link]:hover [class*=icon] {
+  color: #29313a;
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted,var(--sapContent_ContrastTextColor,#29313a))
+}
+.fd-tool-header .fd-tool-header__input-group {
+  background: #354a5f;
+  background: var(--sapShellColor,#354a5f);
+  border: .0625rem solid #7996b4;
+  border: .0625rem solid var(--sapShell_InteractiveBorderColor,#7996b4)
+}
+.fd-tool-header .fd-tool-header__input-group input {
+  color: #fafafa;
+  color: var(--sapShell_TextColor,#fafafa)
+}
+.fd-tool-header .fd-tool-header__input-group input::-webkit-input-placeholder {
+  color: #d1e8ff;
+  color: var(--sapShell_InteractiveTextColor,#d1e8ff)
+}
+.fd-tool-header .fd-tool-header__input-group input::-moz-placeholder {
+  color: #d1e8ff;
+  color: var(--sapShell_InteractiveTextColor,#d1e8ff)
+}
+.fd-tool-header .fd-tool-header__input-group input:-ms-input-placeholder {
+  color: #d1e8ff;
+  color: var(--sapShell_InteractiveTextColor,#d1e8ff)
+}
+.fd-tool-header .fd-tool-header__input-group input::-ms-input-placeholder {
+  color: #d1e8ff;
+  color: var(--sapShell_InteractiveTextColor,#d1e8ff)
+}
+.fd-tool-header .fd-tool-header__input-group input::placeholder {
+  color: #d1e8ff;
+  color: var(--sapShell_InteractiveTextColor,#d1e8ff)
+}
+.fd-tool-header .fd-tool-header__input-group.is-hover,
+.fd-tool-header .fd-tool-header__input-group:hover {
+  background: #283848;
+  background: var(--sapShell_Hover_Background,#283848);
+  border-color: #7996b4;
+  border-color: var(--sapShell_InteractiveBorderColor,#7996b4)
+}
+.fd-tool-header--menu {
+  padding-left: .5rem;
+  padding-right: .5rem
+}
+.fd-tool-header--sm {
+  padding: 0 1rem
+}
+.fd-tool-header--md {
+  padding: 0 2rem
+}
+.fd-tool-header--lg {
+  padding: 0 2rem
+}
+.fd-tool-header--xl {
+  padding: 0 3rem
+}
+@media (max-width:599px) {
+  .fd-tool-header--responsive-paddings {
+    padding-left: 1rem;
+    padding-right: 1rem
+  }
+}
+@media (min-width:600px) and (max-width:1023px) {
+  .fd-tool-header--responsive-paddings {
+    padding-left: 2rem;
+    padding-right: 2rem
+  }
+}
+@media (min-width:1024px) and (max-width:1439px) {
+  .fd-tool-header--responsive-paddings {
+    padding-left: 2rem;
+    padding-right: 2rem
+  }
+}
+@media (min-width:1440px) {
+  .fd-tool-header--responsive-paddings {
+    padding-left: 3rem;
+    padding-right: 3rem
+  }
+}

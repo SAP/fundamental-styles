@@ -1,9 +1,9 @@
+@charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.18.0
+ * Fundamental Library Styles v0.19.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
-@charset "UTF-8";
 /*!
 .fd-alert+(--information, --success, --warning, --error, --no-icon)
     .fd-alert__close
@@ -15,7 +15,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -113,25 +113,24 @@
   padding-right: 2.5rem;
   padding-left: 1rem
 }
-.fd-alert--error[dir=rtl]::before,
-.fd-alert--information[dir=rtl]::before,
-.fd-alert--success[dir=rtl]::before,
-.fd-alert--warning[dir=rtl]::before,
-[dir=rtl] .fd-alert--error::before,
-[dir=rtl] .fd-alert--information::before,
-[dir=rtl] .fd-alert--success::before,
-[dir=rtl] .fd-alert--warning::before {
-  display: none
-}
 .fd-alert--error[dir=rtl]::after,
+.fd-alert--error[dir=rtl]::before,
 .fd-alert--information[dir=rtl]::after,
+.fd-alert--information[dir=rtl]::before,
 .fd-alert--success[dir=rtl]::after,
+.fd-alert--success[dir=rtl]::before,
 .fd-alert--warning[dir=rtl]::after,
+.fd-alert--warning[dir=rtl]::before,
 [dir=rtl] .fd-alert--error::after,
+[dir=rtl] .fd-alert--error::before,
 [dir=rtl] .fd-alert--information::after,
+[dir=rtl] .fd-alert--information::before,
 [dir=rtl] .fd-alert--success::after,
-[dir=rtl] .fd-alert--warning::after {
-  display: none
+[dir=rtl] .fd-alert--success::before,
+[dir=rtl] .fd-alert--warning::after,
+[dir=rtl] .fd-alert--warning::before {
+  left: auto;
+  right: 0
 }
 .fd-alert--error.fd-alert--dismissible,
 .fd-alert--information.fd-alert--dismissible,
@@ -318,7 +317,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;

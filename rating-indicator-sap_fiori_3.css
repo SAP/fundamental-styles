@@ -1,9 +1,9 @@
+@charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.18.0
+ * Fundamental Library Styles v0.19.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
-@charset "UTF-8";
 :root {
   --sapRating-indicator-icon-rated: none;
   --sapRating-indicator-icon-unrated: none
@@ -15,7 +15,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #32363a;
   color: var(--sapTextColor,#32363a);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -47,7 +47,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #32363a;
   color: var(--sapTextColor,#32363a);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -70,7 +70,6 @@
 }
 .fd-rating-indicator__input:checked.is-focus,
 .fd-rating-indicator__input:checked:focus {
-  outline-offset: 0;
   outline-width: .0625rem;
   outline-width: var(--sapContent_FocusWidth,.0625rem);
   outline-color: #000;
@@ -103,7 +102,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #32363a;
   color: var(--sapTextColor,#32363a);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -151,7 +150,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #32363a;
   color: var(--sapTextColor,#32363a);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;

@@ -1,9 +1,8 @@
 /*!
- * Fundamental Library Styles v0.18.0
+ * Fundamental Library Styles v0.19.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
-@charset "UTF-8";
 .fd-select {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -11,7 +10,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fafafa;
   color: var(--sapTextColor,#fafafa);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -37,7 +36,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fafafa;
   color: var(--sapTextColor,#fafafa);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -51,7 +50,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fafafa;
   color: var(--sapTextColor,#fafafa);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   box-sizing: border-box;
@@ -167,7 +166,7 @@
   border-color: var(--sapField_InvalidColor,#f88);
   font-style: normal;
   font-style: var(--fdInput_State_Text_Style,normal);
-  font-weight: normal;
+  font-weight: 400;
   font-weight: var(--fdInput_State_Font_Weight,normal)
 }
 .fd-select__control.is-error.is-hover,
@@ -185,7 +184,7 @@
   border-color: var(--sapField_WarningColor,#fabd64);
   font-style: normal;
   font-style: var(--fdInput_State_Text_Style,normal);
-  font-weight: normal;
+  font-weight: 400;
   font-weight: var(--fdInput_State_Font_Weight,normal)
 }
 .fd-select__control.is-alert.is-hover,
@@ -358,7 +357,7 @@
   border-color: var(--sapField_InvalidColor,#f88);
   font-style: normal;
   font-style: var(--fdInput_State_Text_Style,normal);
-  font-weight: normal;
+  font-weight: 400;
   font-weight: var(--fdInput_State_Font_Weight,normal)
 }
 .fd-select__control.is-error.is-hover,
@@ -376,7 +375,7 @@
   border-color: var(--sapField_WarningColor,#fabd64);
   font-style: normal;
   font-style: var(--fdInput_State_Text_Style,normal);
-  font-weight: normal;
+  font-weight: 400;
   font-weight: var(--fdInput_State_Font_Weight,normal)
 }
 .fd-select__control.is-alert.is-hover,
@@ -630,7 +629,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fafafa;
   color: var(--sapTextColor,#fafafa);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;

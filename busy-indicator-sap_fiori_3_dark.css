@@ -1,9 +1,8 @@
 /*!
- * Fundamental Library Styles v0.18.0
+ * Fundamental Library Styles v0.19.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
-@charset "UTF-8";
 .fd-busy-indicator,
 .fd-busy-indicator--l,
 .fd-busy-indicator--m {
@@ -13,7 +12,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fafafa;
   color: var(--sapTextColor,#fafafa);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -25,7 +24,8 @@
   display: block;
   font-size: 0;
   color: #91c8f6;
-  color: var(--sapContent_IconColor,#91c8f6)
+  color: var(--sapContent_IconColor,#91c8f6);
+  text-align: center
 }
 .fd-busy-indicator--l::after,
 .fd-busy-indicator--l::before,
@@ -64,7 +64,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fafafa;
   color: var(--sapTextColor,#fafafa);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -87,6 +87,60 @@
 .fd-busy-indicator--circle-1::before,
 .fd-busy-indicator--circle-2::after,
 .fd-busy-indicator--circle-2::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-busy-indicator-extended {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+.fd-busy-indicator-extended.fd-busy-indicator-extended--message-toast {
+  width: 23.125rem;
+  max-width: 23.125rem;
+  -webkit-box-shadow: 0 0 0 .0625rem rgba(255,255,255,.5),0 .625rem 1.875rem 0 rgba(0,0,0,.6);
+  -webkit-box-shadow: var(--sapContent_Shadow2,0 0 0 .0625rem rgba(255,255,255,.5),0 .625rem 1.875rem 0 rgba(0,0,0,.6));
+  box-shadow: 0 0 0 .0625rem rgba(255,255,255,.5),0 .625rem 1.875rem 0 rgba(0,0,0,.6);
+  box-shadow: var(--sapContent_Shadow2,0 0 0 .0625rem rgba(255,255,255,.5),0 .625rem 1.875rem 0 rgba(0,0,0,.6));
+  text-shadow: 0 0 .125rem #000;
+  text-shadow: var(--sapContent_TextShadow,0 0 .125rem #000);
+  background-color: #2c3d50;
+  background-color: var(--sapPageFooter_Background,#2c3d50)
+}
+.fd-busy-indicator-extended__label {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: block;
+  color: #fafafa;
+  color: var(--sapPageFooter_TextColor,#fafafa);
+  margin-top: 1rem;
+  text-align: center
+}
+.fd-busy-indicator-extended__label::after,
+.fd-busy-indicator-extended__label::before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit

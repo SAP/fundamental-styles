@@ -1,9 +1,8 @@
 /*!
- * Fundamental Library Styles v0.18.0
+ * Fundamental Library Styles v0.19.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
-@charset "UTF-8";
 /*!
 .fd-avatar+((--circle), (--thumbnail), (--xxs|--xs|--s|--m|--l|--xl|--xxl), (--accent-color-{1-10}))
   .fd-avatar__icon
@@ -16,7 +15,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #000;
   color: var(--sapTextColor,#000);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -45,6 +44,15 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
+}
+.fd-avatar.is-focus,
+.fd-avatar:focus {
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
 }
 .fd-avatar__zoom-icon [class*=sap-icon],
 .fd-avatar__zoom-icon[class*=sap-icon] {
@@ -391,7 +399,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #000;
   color: var(--sapTextColor,#000);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -461,7 +469,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #000;
   color: var(--sapTextColor,#000);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -490,7 +498,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #000;
   color: var(--sapTextColor,#000);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -506,6 +514,15 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
+}
+.fd-avatar-group__overflow-body--no-padding {
+  padding: 0
+}
+.fd-avatar-group__overflow-body--no-horizontal-scroll {
+  overflow-x: hidden
+}
+.fd-avatar-group__overflow-body--no-vertical-scroll {
+  overflow-y: hidden
 }
 .fd-avatar-group__overflow-body .fd-avatar-group__item {
   margin: .25rem

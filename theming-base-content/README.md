@@ -58,8 +58,8 @@ There are CSS parameters pointing to the locations.
 ```css
 :root {
     ...
-    --sapFontUrl_72_Regular_woff2: url('../../../Base/baseLib/sap_base_fiori/fonts/72-Regular.woff2');
-    --sapFontUrl_72_Regular_woff: url('../../../Base/baseLib/sap_base_fiori/fonts/72-Regular.woff');
+    --sapFontUrl_72_Regular_woff2: url('../../../Base/baseLib/baseTheme/fonts/72-Regular.woff2');
+    --sapFontUrl_72_Regular_woff: url('../../../Base/baseLib/baseTheme/fonts/72-Regular.woff');
     --sapFontUrl_72_...
 }
 ```
@@ -79,7 +79,7 @@ const baseContentResourcePath = require('@sap-theming/theming-base-content').res
 
 app.use(express.static(baseContentResourcePath));
 
-app.listen(3000, () => console.log('Try http://localhost:3000/Base/baseLib/sap_base_fiori/fonts/72-Regular.woff2'));
+app.listen(3000, () => console.log('Try http://localhost:3000/Base/baseLib/baseTheme/fonts/72-Regular.woff2'));
 ```
 
 ## Contributing

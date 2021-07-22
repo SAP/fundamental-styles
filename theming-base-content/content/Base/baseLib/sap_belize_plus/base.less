@@ -1,11 +1,11 @@
 /**
 * Copyright (c) 2012-2020 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
 * Theming Engine 1.51.0
-* data:{"sModified":"2021-03-16T10:40:32Z"}
+* data:{"sModified":"2021-06-02T05:48:25Z"}
 */
 
 
-/******************* FILE /Base/baseLib/sap_belize_plus/base.less (Version 11.1.28) *******************/
+/******************* FILE /Base/baseLib/sap_belize_plus/base.less (Version 11.1.30) *******************/
 
 @sapBackgroundColorDefault: @sapPrimary1;
 @sapHighlightColor: lighten(saturate(@sapBrandColor, 40), 30);
@@ -37,10 +37,12 @@
 @sapContent_UnratedColor: lighten(@sapContent_ForegroundColor, 25);
 @sapContent_FocusColor: #fff;
 @sapContent_ContrastFocusColor: #000;
-@sapContent_Shadow0: 0 0 0 1px fade(@sapContent_ShadowColor, 20);
+@sapContent_Shadow0: 0 0 0 1px fade(@sapContent_ContrastShadowColor, 20);
 @sapContent_Shadow1: 0 0.125rem 0.5rem 0 fade(@sapContent_ShadowColor, 20), @sapContent_Shadow0;
 @sapContent_Shadow2: 0 0.625rem 1.875rem 0 fade(@sapContent_ShadowColor, 20), @sapContent_Shadow0;
 @sapContent_Shadow3: 0 1.25rem 5rem 0 fade(@sapContent_ShadowColor, 20), @sapContent_Shadow0;
+@sapContent_TextShadow: 0 0 0.125rem @sapContent_ShadowColor;
+@sapContent_ContrastTextShadow: none;
 @sapContent_SearchHighlightColor: #058088;
 @sapContent_LabelColor: darken(@sapTextColor, 11.5);
 @sapContent_ContrastTextThreshold: 0.5;
@@ -67,10 +69,10 @@
 @sapButton_Emphasized_BorderColor: darken(@sapButton_Emphasized_Background, 5);
 @sapButton_Emphasized_TextColor: lighten(@sapTextColor, 2);
 @sapButton_Emphasized_Hover_TextColor: @sapButton_Emphasized_TextColor;
-@sapButton_Accept_Active_Background: darken(@sapPositiveElementColor, 5);
-@sapButton_Accept_Selected_Hover_Background: lighten(@sapButton_Accept_Selected_Background, 5);
 @sapButton_Reject_Active_Background: darken(@sapNegativeElementColor, 5);
 @sapButton_Reject_Selected_Hover_Background: lighten(@sapButton_Reject_Selected_Background, 5);
+@sapButton_Accept_Active_Background: darken(@sapPositiveElementColor, 5);
+@sapButton_Accept_Selected_Hover_Background: lighten(@sapButton_Accept_Selected_Background, 5);
 @sapButton_Selected_Hover_Background: darken(@sapButton_Selected_Background, 3);
 @sapButton_Attention_Active_Background: darken(@sapCriticalElementColor, 5);
 @sapButton_Attention_Selected_Hover_Background: lighten(@sapButton_Attention_Selected_Background, 5);
@@ -102,7 +104,6 @@
 @sapList_HeaderBackground: darken(@sapBaseColor, 1.5);
 @sapList_BorderColor: lighten(@sapList_Background, 7);
 @sapList_SelectionBackgroundColor: lighten(saturate(@sapList_Background, 10), 10);
-@sapList_SelectionBorderColor: @sapList_BorderColor;
 @sapList_Background: @sapBaseColor;
 @sapList_Hover_Background: contrast(@sapList_Background, lighten(@sapList_Background, 3), darken(@sapList_Background, 3));
 @sapList_AlternatingBackground: lighten(@sapList_Background, 2);

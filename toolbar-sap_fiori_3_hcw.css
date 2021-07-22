@@ -1,9 +1,8 @@
 /*!
- * Fundamental Library Styles v0.18.0
+ * Fundamental Library Styles v0.19.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
-@charset "UTF-8";
 .fd-toolbar > * ~ :not(.fd-toolbar__spacer) {
   margin-left: .5rem
 }
@@ -19,7 +18,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #000;
   color: var(--sapTextColor,#000);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -28,6 +27,7 @@
   margin: 0;
   border: 0;
   height: 2rem;
+  min-height: 2rem;
   padding: 0 .5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,7 +56,8 @@
   border-bottom: none
 }
 .fd-toolbar--auto {
-  background-color: inherit
+  background-color: #fff;
+  background-color: var(--fdToolbar_Auto_Background,var(--sapToolbar_Background,#fff))
 }
 .fd-toolbar--solid {
   background-color: #fff;
@@ -67,6 +68,7 @@
   background-color: var(--sapToolbar_Background,#fff)
 }
 .fd-toolbar--info {
+  height: 2rem;
   background-color: #b3b3b3;
   background-color: var(--sapInfobar_NonInteractive_Background,#b3b3b3);
   color: #000;
@@ -75,7 +77,8 @@
 .fd-toolbar--info.fd-toolbar--active {
   background-color: #fff;
   background-color: var(--sapInfobar_Background,#fff);
-  color: var(--sapInfobar__TextColor)
+  color: #000;
+  color: var(--sapInfobar_TextColor,#000)
 }
 .fd-toolbar--info.fd-toolbar--active.is-hover,
 .fd-toolbar--info.fd-toolbar--active:hover {
@@ -94,7 +97,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #000;
   color: var(--sapTextColor,#000);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -126,7 +129,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #000;
   color: var(--sapTextColor,#000);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -152,7 +155,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #000;
   color: var(--sapTextColor,#000);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -203,7 +206,11 @@
   text-overflow: ellipsis
 }
 .fd-toolbar--cozy {
-  height: 2.75rem
+  height: 2.75rem;
+  min-height: 2.75rem
+}
+.fd-toolbar--cozy.fd-toolbar--info {
+  height: 2rem
 }
 .fd-toolbar--cozy .fd-toolbar__separator {
   height: 2rem

@@ -1,9 +1,9 @@
+@charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.18.0
+ * Fundamental Library Styles v0.19.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
-@charset "UTF-8";
 [class*=sap-icon] {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -11,7 +11,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -35,11 +35,233 @@
   text-transform: none;
   text-rendering: optimizeLegibility
 }
+[class*=sap-icon].sap-icon--color-default {
+  color: #fff;
+  color: var(--sapContent_IconColor,#fff)
+}
+[class*=sap-icon].sap-icon--background-default::before {
+  background-color: var(transparent)
+}
+[class*=sap-icon].sap-icon--color-contrast {
+  color: #fff;
+  color: var(--sapContent_ContrastIconColor,#fff)
+}
+[class*=sap-icon].sap-icon--background-contrast::before {
+  background-color: #fff;
+  background-color: var(--sapContent_IconColor,#fff)
+}
+[class*=sap-icon].sap-icon--color-non-interactive {
+  color: #fff;
+  color: var(--sapContent_NonInteractiveIconColor,#fff)
+}
+[class*=sap-icon].sap-icon--background-non-interactive::before {
+  background-color: #fff;
+  background-color: var(--sapContent_NonInteractiveIconColor,#fff)
+}
+[class*=sap-icon].sap-icon--color-tile {
+  color: #fff;
+  color: var(--sapTile_IconColor,#fff)
+}
+[class*=sap-icon].sap-icon--background-tile::before {
+  background-color: #fff;
+  background-color: var(--sapTile_IconColor,#fff)
+}
+[class*=sap-icon].sap-icon--color-marker {
+  color: #fff;
+  color: var(--sapContent_MarkerIconColor,#fff)
+}
+[class*=sap-icon].sap-icon--background-marker::before {
+  background-color: #fff;
+  background-color: var(--sapContent_MarkerIconColor,#fff)
+}
+[class*=sap-icon].sap-icon--color-critical {
+  color: #ffab1d;
+  color: var(--sapCriticalElementColor,#ffab1d)
+}
+[class*=sap-icon].sap-icon--background-critical::before {
+  background-color: #ffab1d;
+  background-color: var(--sapCriticalElementColor,#ffab1d)
+}
+[class*=sap-icon].sap-icon--color-negative {
+  color: #ff5e5e;
+  color: var(--sapNegativeElementColor,#ff5e5e)
+}
+[class*=sap-icon].sap-icon--background-negative::before {
+  background-color: #ff5e5e;
+  background-color: var(--sapNegativeElementColor,#ff5e5e)
+}
+[class*=sap-icon].sap-icon--color-neutral {
+  color: #fff;
+  color: var(--sapNeutralElementColor,#fff)
+}
+[class*=sap-icon].sap-icon--background-neutral::before {
+  background-color: #fff;
+  background-color: var(--sapNeutralElementColor,#fff)
+}
+[class*=sap-icon].sap-icon--color-positive {
+  color: #9c9;
+  color: var(--sapPositiveElementColor,#9c9)
+}
+[class*=sap-icon].sap-icon--background-positive::before {
+  background-color: #9c9;
+  background-color: var(--sapPositiveElementColor,#9c9)
+}
+[class*=sap-icon].is-focus,
+[class*=sap-icon]:focus {
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #fff;
+  outline-color: var(--sapContent_FocusColor,#fff);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
+}
 [class*=sap-icon-businessSuiteInAppSymbols]::before {
   font-family: BusinessSuiteInAppSymbols
 }
+[class*=sap-icon-businessSuiteInAppSymbols].sap-icon-businessSuiteInAppSymbols--color-default {
+  color: #fff;
+  color: var(--sapContent_IconColor,#fff)
+}
+[class*=sap-icon-businessSuiteInAppSymbols].sap-icon-businessSuiteInAppSymbols--background-default::before {
+  background-color: var(transparent)
+}
+[class*=sap-icon-businessSuiteInAppSymbols].sap-icon-businessSuiteInAppSymbols--color-contrast {
+  color: #fff;
+  color: var(--sapContent_ContrastIconColor,#fff)
+}
+[class*=sap-icon-businessSuiteInAppSymbols].sap-icon-businessSuiteInAppSymbols--background-contrast::before {
+  background-color: #fff;
+  background-color: var(--sapContent_IconColor,#fff)
+}
+[class*=sap-icon-businessSuiteInAppSymbols].sap-icon-businessSuiteInAppSymbols--color-non-interactive {
+  color: #fff;
+  color: var(--sapContent_NonInteractiveIconColor,#fff)
+}
+[class*=sap-icon-businessSuiteInAppSymbols].sap-icon-businessSuiteInAppSymbols--background-non-interactive::before {
+  background-color: #fff;
+  background-color: var(--sapContent_NonInteractiveIconColor,#fff)
+}
+[class*=sap-icon-businessSuiteInAppSymbols].sap-icon-businessSuiteInAppSymbols--color-tile {
+  color: #fff;
+  color: var(--sapTile_IconColor,#fff)
+}
+[class*=sap-icon-businessSuiteInAppSymbols].sap-icon-businessSuiteInAppSymbols--background-tile::before {
+  background-color: #fff;
+  background-color: var(--sapTile_IconColor,#fff)
+}
+[class*=sap-icon-businessSuiteInAppSymbols].sap-icon-businessSuiteInAppSymbols--color-marker {
+  color: #fff;
+  color: var(--sapContent_MarkerIconColor,#fff)
+}
+[class*=sap-icon-businessSuiteInAppSymbols].sap-icon-businessSuiteInAppSymbols--background-marker::before {
+  background-color: #fff;
+  background-color: var(--sapContent_MarkerIconColor,#fff)
+}
+[class*=sap-icon-businessSuiteInAppSymbols].sap-icon-businessSuiteInAppSymbols--color-critical {
+  color: #ffab1d;
+  color: var(--sapCriticalElementColor,#ffab1d)
+}
+[class*=sap-icon-businessSuiteInAppSymbols].sap-icon-businessSuiteInAppSymbols--background-critical::before {
+  background-color: #ffab1d;
+  background-color: var(--sapCriticalElementColor,#ffab1d)
+}
+[class*=sap-icon-businessSuiteInAppSymbols].sap-icon-businessSuiteInAppSymbols--color-negative {
+  color: #ff5e5e;
+  color: var(--sapNegativeElementColor,#ff5e5e)
+}
+[class*=sap-icon-businessSuiteInAppSymbols].sap-icon-businessSuiteInAppSymbols--background-negative::before {
+  background-color: #ff5e5e;
+  background-color: var(--sapNegativeElementColor,#ff5e5e)
+}
+[class*=sap-icon-businessSuiteInAppSymbols].sap-icon-businessSuiteInAppSymbols--color-neutral {
+  color: #fff;
+  color: var(--sapNeutralElementColor,#fff)
+}
+[class*=sap-icon-businessSuiteInAppSymbols].sap-icon-businessSuiteInAppSymbols--background-neutral::before {
+  background-color: #fff;
+  background-color: var(--sapNeutralElementColor,#fff)
+}
+[class*=sap-icon-businessSuiteInAppSymbols].sap-icon-businessSuiteInAppSymbols--color-positive {
+  color: #9c9;
+  color: var(--sapPositiveElementColor,#9c9)
+}
+[class*=sap-icon-businessSuiteInAppSymbols].sap-icon-businessSuiteInAppSymbols--background-positive::before {
+  background-color: #9c9;
+  background-color: var(--sapPositiveElementColor,#9c9)
+}
 [class*=sap-icon-TNT]::before {
   font-family: SAP-icons-TNT
+}
+[class*=sap-icon-TNT].sap-icon-TNT--color-default {
+  color: #fff;
+  color: var(--sapContent_IconColor,#fff)
+}
+[class*=sap-icon-TNT].sap-icon-TNT--background-default::before {
+  background-color: var(transparent)
+}
+[class*=sap-icon-TNT].sap-icon-TNT--color-contrast {
+  color: #fff;
+  color: var(--sapContent_ContrastIconColor,#fff)
+}
+[class*=sap-icon-TNT].sap-icon-TNT--background-contrast::before {
+  background-color: #fff;
+  background-color: var(--sapContent_IconColor,#fff)
+}
+[class*=sap-icon-TNT].sap-icon-TNT--color-non-interactive {
+  color: #fff;
+  color: var(--sapContent_NonInteractiveIconColor,#fff)
+}
+[class*=sap-icon-TNT].sap-icon-TNT--background-non-interactive::before {
+  background-color: #fff;
+  background-color: var(--sapContent_NonInteractiveIconColor,#fff)
+}
+[class*=sap-icon-TNT].sap-icon-TNT--color-tile {
+  color: #fff;
+  color: var(--sapTile_IconColor,#fff)
+}
+[class*=sap-icon-TNT].sap-icon-TNT--background-tile::before {
+  background-color: #fff;
+  background-color: var(--sapTile_IconColor,#fff)
+}
+[class*=sap-icon-TNT].sap-icon-TNT--color-marker {
+  color: #fff;
+  color: var(--sapContent_MarkerIconColor,#fff)
+}
+[class*=sap-icon-TNT].sap-icon-TNT--background-marker::before {
+  background-color: #fff;
+  background-color: var(--sapContent_MarkerIconColor,#fff)
+}
+[class*=sap-icon-TNT].sap-icon-TNT--color-critical {
+  color: #ffab1d;
+  color: var(--sapCriticalElementColor,#ffab1d)
+}
+[class*=sap-icon-TNT].sap-icon-TNT--background-critical::before {
+  background-color: #ffab1d;
+  background-color: var(--sapCriticalElementColor,#ffab1d)
+}
+[class*=sap-icon-TNT].sap-icon-TNT--color-negative {
+  color: #ff5e5e;
+  color: var(--sapNegativeElementColor,#ff5e5e)
+}
+[class*=sap-icon-TNT].sap-icon-TNT--background-negative::before {
+  background-color: #ff5e5e;
+  background-color: var(--sapNegativeElementColor,#ff5e5e)
+}
+[class*=sap-icon-TNT].sap-icon-TNT--color-neutral {
+  color: #fff;
+  color: var(--sapNeutralElementColor,#fff)
+}
+[class*=sap-icon-TNT].sap-icon-TNT--background-neutral::before {
+  background-color: #fff;
+  background-color: var(--sapNeutralElementColor,#fff)
+}
+[class*=sap-icon-TNT].sap-icon-TNT--color-positive {
+  color: #9c9;
+  color: var(--sapPositiveElementColor,#9c9)
+}
+[class*=sap-icon-TNT].sap-icon-TNT--background-positive::before {
+  background-color: #9c9;
+  background-color: var(--sapPositiveElementColor,#9c9)
 }
 .sap-icon--accidental-leave::before {
   content: ""
@@ -2020,6 +2242,9 @@
 }
 .sap-icon--icon-sum::before {
   content: ""
+}
+.sap-icon--icon-qr-code::before {
+  content: ""
 }
 .sap-icon-businessSuiteInAppSymbols--heart::before {
   content: ""

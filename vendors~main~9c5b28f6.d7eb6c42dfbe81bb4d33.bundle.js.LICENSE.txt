@@ -1,0 +1,34 @@
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+/*!
+ * OverlayScrollbars
+ * https://github.com/KingSora/OverlayScrollbars
+ *
+ * Version: 1.13.0
+ *
+ * Copyright KingSora | Rene Haas.
+ * https://github.com/KingSora
+ *
+ * Released under the MIT license.
+ * Date: 02.08.2020
+ */
+
+/*!
+ * pretty <https://github.com/jonschlinkert/pretty>
+ *
+ * Copyright (c) 2013-2015, 2017, Jon Schlinkert.
+ * Released under the MIT License.
+ */
+
+/**
+ * Prism: Lightweight, robust, elegant syntax highlighting
+ *
+ * @license MIT <https://opensource.org/licenses/MIT>
+ * @author Lea Verou <https://lea.verou.me>
+ * @namespace
+ * @public
+ */

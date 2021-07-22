@@ -1,9 +1,8 @@
 /*!
- * Fundamental Library Styles v0.18.0
+ * Fundamental Library Styles v0.19.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
-@charset "UTF-8";
 .fd-popover {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -11,7 +10,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #000;
   color: var(--sapTextColor,#000);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -37,7 +36,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #000;
   color: var(--sapTextColor,#000);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -54,6 +53,10 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
+}
+.fd-popover__control:focus-visible {
+  outline: .125rem dotted #000;
+  outline: var(--sapContent_FocusWidth,.125rem) dotted var(--sapContent_FocusColor,#000)
 }
 .fd-popover__control.fd-input:last-child {
   margin-bottom: 0
@@ -78,7 +81,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #000;
   color: var(--sapTextColor,#000);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -313,7 +316,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #000;
   color: var(--sapTextColor,#000);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -365,7 +368,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #000;
   color: var(--sapTextColor,#000);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;

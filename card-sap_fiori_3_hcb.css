@@ -1,9 +1,8 @@
 /*!
- * Fundamental Library Styles v0.18.0
+ * Fundamental Library Styles v0.19.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
-@charset "UTF-8";
 .fd-card {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -11,7 +10,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -53,7 +52,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -76,13 +75,32 @@
   border-radius: .25rem .25rem 0 0;
   border-radius: var(--sapElement_BorderCornerRadius,.25rem) var(--sapElement_BorderCornerRadius,.25rem) 0 0;
   text-decoration: none;
-  cursor: pointer
+  cursor: pointer;
+  position: relative
 }
 .fd-card__header::after,
 .fd-card__header::before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
+}
+.fd-card__header.is-focus,
+.fd-card__header:focus {
+  z-index: 5;
+  outline: 0
+}
+.fd-card__header.is-focus::before,
+.fd-card__header:focus::before {
+  content: '';
+  position: absolute;
+  display: block;
+  border: .125rem dotted #fff;
+  border: var(--sapContent_FocusWidth,.125rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_FocusColor,#fff);
+  top: .0625rem;
+  left: .0625rem;
+  right: .0625rem;
+  bottom: .125rem;
+  z-index: 3
 }
 .fd-card__header.is-hover,
 .fd-card__header:hover {
@@ -93,16 +111,6 @@
 .fd-card__header:active {
   background: #7a5100;
   background: var(--sapTile_Active_Background,#7a5100)
-}
-.fd-card__header.is-focus,
-.fd-card__header:focus {
-  z-index: 5;
-  outline-style: dotted;
-  outline-width: .125rem;
-  outline-width: var(--sapContent_FocusWidth,.125rem);
-  outline-color: #fff;
-  outline-color: var(--sapContent_FocusColor,#fff);
-  outline-offset: -.125rem
 }
 .fd-card__header .fd-card__avatar {
   margin-right: .75rem
@@ -132,6 +140,15 @@
   border-radius: 0 0 .25rem .25rem;
   border-radius: 0 0 var(--sapElement_BorderCornerRadius,.25rem) var(--sapElement_BorderCornerRadius,.25rem)
 }
+.fd-card__header:last-child.is-focus,
+.fd-card__header:last-child:focus {
+  z-index: 5
+}
+.fd-card__header:last-child.is-focus::before,
+.fd-card__header:last-child:focus::before {
+  top: .125rem;
+  bottom: .0625rem
+}
 .fd-card__header-text {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -139,7 +156,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -172,7 +189,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -208,7 +225,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -222,7 +239,7 @@
   overflow: hidden;
   white-space: normal;
   text-overflow: ellipsis;
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontHeaderFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-size: 1rem;
   font-size: var(--sapFontHeader5Size,1rem);
@@ -245,7 +262,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -278,7 +295,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -324,7 +341,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -366,7 +383,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -397,7 +414,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -435,7 +452,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -481,7 +498,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -506,7 +523,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -535,7 +552,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -571,7 +588,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -596,7 +613,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -647,7 +664,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -683,7 +700,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -706,7 +723,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -739,7 +756,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -808,7 +825,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;

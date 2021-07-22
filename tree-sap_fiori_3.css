@@ -1,9 +1,8 @@
 /*!
- * Fundamental Library Styles v0.18.0
+ * Fundamental Library Styles v0.19.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
-@charset "UTF-8";
 .fd-tree {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -11,7 +10,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #32363a;
   color: var(--sapTextColor,#32363a);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -1570,7 +1569,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #32363a;
   color: var(--sapTextColor,#32363a);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -1611,7 +1610,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #32363a;
   color: var(--sapTextColor,#32363a);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -1628,8 +1627,8 @@
   width: 100%;
   min-height: 2.75rem;
   padding-right: 1rem;
-  background: #f7f7f7;
-  background: var(--sapList_AlternatingBackground,#f7f7f7);
+  background: #f2f2f2;
+  background: var(--sapList_AlternatingBackground,#f2f2f2);
   border-bottom: .0625rem solid transparent;
   border-bottom: var(--sapList_BorderWidth,.0625rem) solid transparent
 }
@@ -1816,7 +1815,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #32363a;
   color: var(--sapTextColor,#32363a);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -1887,7 +1886,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #32363a;
   color: var(--sapTextColor,#32363a);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -1974,7 +1973,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #32363a;
   color: var(--sapTextColor,#32363a);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -2238,30 +2237,30 @@
   box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset -.375rem 0 0 0 var(--sapErrorBorderColor,#b00)
 }
 .fd-tree .has-highlight-indicator--warning {
-  -webkit-box-shadow: inset .375rem 0 0 0 #e9730c;
-  -webkit-box-shadow: inset .375rem 0 0 0 var(--sapWarningBorderColor,#e9730c);
-  box-shadow: inset .375rem 0 0 0 #e9730c;
-  box-shadow: inset .375rem 0 0 0 var(--sapWarningBorderColor,#e9730c)
+  -webkit-box-shadow: inset .375rem 0 0 0 #df6e0c;
+  -webkit-box-shadow: inset .375rem 0 0 0 var(--sapWarningBorderColor,#df6e0c);
+  box-shadow: inset .375rem 0 0 0 #df6e0c;
+  box-shadow: inset .375rem 0 0 0 var(--sapWarningBorderColor,#df6e0c)
 }
 .fd-tree .has-highlight-indicator--warning[dir=rtl],
 [dir=rtl] .fd-tree .has-highlight-indicator--warning {
-  -webkit-box-shadow: inset -.375rem 0 0 0 #e9730c;
-  -webkit-box-shadow: inset -.375rem 0 0 0 var(--sapWarningBorderColor,#e9730c);
-  box-shadow: inset -.375rem 0 0 0 #e9730c;
-  box-shadow: inset -.375rem 0 0 0 var(--sapWarningBorderColor,#e9730c)
+  -webkit-box-shadow: inset -.375rem 0 0 0 #df6e0c;
+  -webkit-box-shadow: inset -.375rem 0 0 0 var(--sapWarningBorderColor,#df6e0c);
+  box-shadow: inset -.375rem 0 0 0 #df6e0c;
+  box-shadow: inset -.375rem 0 0 0 var(--sapWarningBorderColor,#df6e0c)
 }
 .fd-tree .has-highlight-indicator--warning.is-navigated {
-  -webkit-box-shadow: inset -.1875rem 0 0 0 #0854a0,inset .375rem 0 0 0 #e9730c;
-  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset .375rem 0 0 0 var(--sapWarningBorderColor,#e9730c);
-  box-shadow: inset -.1875rem 0 0 0 #0854a0,inset .375rem 0 0 0 #e9730c;
-  box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset .375rem 0 0 0 var(--sapWarningBorderColor,#e9730c)
+  -webkit-box-shadow: inset -.1875rem 0 0 0 #0854a0,inset .375rem 0 0 0 #df6e0c;
+  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset .375rem 0 0 0 var(--sapWarningBorderColor,#df6e0c);
+  box-shadow: inset -.1875rem 0 0 0 #0854a0,inset .375rem 0 0 0 #df6e0c;
+  box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset .375rem 0 0 0 var(--sapWarningBorderColor,#df6e0c)
 }
 .fd-tree .has-highlight-indicator--warning.is-navigated[dir=rtl],
 [dir=rtl] .fd-tree .has-highlight-indicator--warning.is-navigated {
-  -webkit-box-shadow: inset .1875rem 0 0 0 #0854a0,inset -.375rem 0 0 0 #e9730c;
-  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset -.375rem 0 0 0 var(--sapWarningBorderColor,#e9730c);
-  box-shadow: inset .1875rem 0 0 0 #0854a0,inset -.375rem 0 0 0 #e9730c;
-  box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset -.375rem 0 0 0 var(--sapWarningBorderColor,#e9730c)
+  -webkit-box-shadow: inset .1875rem 0 0 0 #0854a0,inset -.375rem 0 0 0 #df6e0c;
+  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset -.375rem 0 0 0 var(--sapWarningBorderColor,#df6e0c);
+  box-shadow: inset .1875rem 0 0 0 #0854a0,inset -.375rem 0 0 0 #df6e0c;
+  box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset -.375rem 0 0 0 var(--sapWarningBorderColor,#df6e0c)
 }
 .fd-tree .has-highlight-indicator--success {
   -webkit-box-shadow: inset .375rem 0 0 0 #107e3e;

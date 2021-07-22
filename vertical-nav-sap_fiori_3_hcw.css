@@ -1,0 +1,76 @@
+/*!
+ * Fundamental Library Styles v0.19.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fd-vertical-nav {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #e6e6e6;
+  background-color: var(--sapList_AlternatingBackground,#e6e6e6);
+  width: 15rem;
+  text-shadow: none;
+  text-shadow: var(--fdVerticalNav_Text_Shadow,none);
+  -webkit-box-shadow: 0 0 0 .0625rem #000;
+  -webkit-box-shadow: var(--sapContent_Shadow0,0 0 0 .0625rem #000);
+  box-shadow: 0 0 0 .0625rem #000;
+  box-shadow: var(--sapContent_Shadow0,0 0 0 .0625rem #000);
+  height: 100%
+}
+.fd-vertical-nav::after,
+.fd-vertical-nav::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-vertical-nav__main-navigation {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0
+}
+.fd-vertical-nav__main-navigation::after,
+.fd-vertical-nav__main-navigation::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-vertical-nav--condensed {
+  width: 3.25rem
+}
+.fd-vertical-nav .fd-vertical-nav__group-header {
+  background: #e6e6e6;
+  background: var(--sapList_AlternatingBackground,#e6e6e6)
+}

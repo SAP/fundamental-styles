@@ -1,9 +1,8 @@
 /*!
- * Fundamental Library Styles v0.18.0
+ * Fundamental Library Styles v0.19.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
-@charset "UTF-8";
 /*!
 .fd-table(--compact, --condensed, --no-horizontal-borders, --no-vertical-borders, --fixed)
     thead(.fd-table__header(--no-horizontal-borders, --no-vertical-borders))
@@ -30,7 +29,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #32363a;
   color: var(--sapTextColor,#32363a);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -86,6 +85,20 @@
   min-width: 2rem;
   height: 100%
 }
+.fd-table__body .fd-table__cell--fixed.fd-table__cell--fixed-last,
+.fd-table__header .fd-table__cell--fixed.fd-table__cell--fixed-last {
+  border-right: .0625rem solid #8b8b8b;
+  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_TableFixedBorderColor,#8b8b8b)
+}
+.fd-table__body .fd-table__cell--fixed.fd-table__cell--fixed-last[dir=rtl],
+.fd-table__header .fd-table__cell--fixed.fd-table__cell--fixed-last[dir=rtl],
+[dir=rtl] .fd-table__body .fd-table__cell--fixed.fd-table__cell--fixed-last,
+[dir=rtl] .fd-table__header .fd-table__cell--fixed.fd-table__cell--fixed-last {
+  border-right: .0625rem solid #e4e4e4;
+  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
+  border-left: .0625rem solid #8b8b8b;
+  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_TableFixedBorderColor,#8b8b8b)
+}
 .fd-table__header {
   border-top: .0625rem solid #e4e4e4;
   border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
@@ -106,21 +119,10 @@
   color: var(--sapList_HeaderTextColor,#32363a)
 }
 .fd-table__header .fd-table__cell--fixed {
-  margin-top: -.05rem;
+  margin-top: -.0625rem;
   border-top: .0625rem solid #e4e4e4;
   border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
-  border-right: .0625rem solid #8b8b8b;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_TableFixedBorderColor,#8b8b8b);
-  border-left: .0625rem solid #e4e4e4;
-  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
-  height: 2.8rem
-}
-.fd-table__header .fd-table__cell--fixed[dir=rtl],
-[dir=rtl] .fd-table__header .fd-table__cell--fixed {
-  border-left: .0625rem solid #8b8b8b;
-  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_TableFixedBorderColor,#8b8b8b);
-  border-right: .0625rem solid #e4e4e4;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  height: 2.8125rem
 }
 .fd-table__text {
   white-space: nowrap;
@@ -147,8 +149,8 @@
   color: var(--sapSuccessColor,#107e3e)
 }
 .fd-table__cell--warning {
-  color: #e9730c;
-  color: var(--sapWarningColor,#e9730c)
+  color: #df6e0c;
+  color: var(--sapWarningColor,#df6e0c)
 }
 .fd-table__cell--error {
   color: #b00;
@@ -185,8 +187,8 @@
   background-color: var(--sapSuccessBorderColor,#107e3e)
 }
 .fd-table__cell--status-indicator--warning {
-  background-color: #e9730c;
-  background-color: var(--sapWarningBorderColor,#e9730c)
+  background-color: #df6e0c;
+  background-color: var(--sapWarningBorderColor,#df6e0c)
 }
 .fd-table__cell--status-indicator--error {
   background-color: #b00;
@@ -204,7 +206,7 @@
   border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
   border-left: .0625rem solid #e4e4e4;
   border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
-  margin-top: .05rem;
+  border-right: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,21 +219,13 @@
   background-color: #f5f5f5;
   background-color: var(--sapList_Hover_Background,#f5f5f5)
 }
-.fd-table__cell--fixed:last-of-type {
-  border-right: .0625rem solid #8b8b8b;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_TableFixedBorderColor,#8b8b8b)
-}
 .fd-table__cell--fixed[dir=rtl],
 [dir=rtl] .fd-table__cell--fixed {
-  left: auto;
-  right: 0
-}
-.fd-table__cell--fixed[dir=rtl]:last-of-type,
-[dir=rtl] .fd-table__cell--fixed:last-of-type {
   border-right: .0625rem solid #e4e4e4;
   border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
-  border-left: .0625rem solid #8b8b8b;
-  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_TableFixedBorderColor,#8b8b8b)
+  border-left: none;
+  left: auto;
+  right: 0
 }
 .fd-table__cell:first-child {
   margin-left: 0;
@@ -312,12 +306,6 @@
 .fd-table__body .fd-table__row--activable[aria-selected=true]:active {
   background-color: #0854a0;
   background-color: var(--sapList_Active_Background,#0854a0)
-}
-.fd-table__body .fd-table__row:first-child {
-  margin-left: 0
-}
-.fd-table__body .fd-table__row:first-child .fd-table__cell--fixed {
-  margin-top: 0
 }
 .fd-table__cell--hoverable.is-selected .fd-table__cell.is-hover,
 .fd-table__cell--hoverable.is-selected .fd-table__cell:hover,
@@ -591,7 +579,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #32363a;
   color: var(--sapTextColor,#32363a);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -642,6 +630,18 @@
 }
 .fd-table--fixed {
   overflow-x: scroll
+}
+.fd-table--fixed .fd-table__body,
+.fd-table--fixed .fd-table__header {
+  border-left: none
+}
+.fd-table--fixed .fd-table__body[dir=rtl],
+.fd-table--fixed .fd-table__header[dir=rtl],
+[dir=rtl] .fd-table--fixed .fd-table__body,
+[dir=rtl] .fd-table--fixed .fd-table__header {
+  border-left: .0625rem solid #e4e4e4;
+  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
+  border-right: none
 }
 .fd-table--pop-in .fd-table__text {
   color: inherit;
@@ -782,27 +782,30 @@
 .fd-table--compact .fd-table__cell {
   height: 2rem
 }
+.fd-table--compact .fd-table__header .fd-table__cell {
+  height: 2rem
+}
+.fd-table--compact .fd-table__header .fd-table__cell--fixed {
+  height: 2.0625rem
+}
 .fd-table--condensed .fd-table__cell {
   height: 1.5rem
-}
-.fd-table--condensed .fd-table__cell .fd-checkbox.is-focus,
-.fd-table--condensed .fd-table__cell .fd-checkbox:focus {
-  z-index: 5
-}
-.fd-table--condensed .fd-table__cell .fd-checkbox.is-focus + .fd-checkbox__label:empty::after,
-.fd-table--condensed .fd-table__cell .fd-checkbox:focus + .fd-checkbox__label:empty::after {
-  top: .125rem;
-  bottom: .125rem
-}
-.fd-table--condensed .fd-table__cell .fd-checkbox + .fd-checkbox__label:empty {
-  padding-bottom: .25rem;
-  padding-top: .25rem
 }
 .fd-table--condensed .fd-table__header .fd-table__cell {
   height: 2rem
 }
 .fd-table--condensed .fd-table__header .fd-table__cell--fixed {
-  height: 2.05rem
+  height: 2.0625rem
+}
+.fd-table--condensed .fd-table__body .fd-table__cell--checkbox {
+  position: relative
+}
+.fd-table--condensed .fd-table__body .fd-table__cell--checkbox .fd-table__checkbox-label {
+  top: -.25rem;
+  position: absolute
+}
+.fd-table--no-outer-border {
+  border: hidden
 }
 .fd-table[dir=rtl] .fd-table__cell,
 [dir=rtl] .fd-table .fd-table__cell {

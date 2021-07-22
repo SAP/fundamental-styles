@@ -1,9 +1,8 @@
 /*!
- * Fundamental Library Styles v0.18.0
+ * Fundamental Library Styles v0.19.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
-@charset "UTF-8";
 .fd-feed-input {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -11,7 +10,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fafafa;
   color: var(--sapTextColor,#fafafa);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -44,7 +43,49 @@
 .fd-feed-input.is-disabled,
 .fd-feed-input:disabled,
 .fd-feed-input[aria-disabled=true] {
-  cursor: not-allowed
+  cursor: not-allowed;
+  pointer-events: initial;
+  opacity: initial
+}
+.fd-feed-input.is-disabled textarea::-webkit-input-placeholder,
+.fd-feed-input:disabled textarea::-webkit-input-placeholder,
+.fd-feed-input[aria-disabled=true] textarea::-webkit-input-placeholder {
+  font-style: italic;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a)
+}
+.fd-feed-input.is-disabled textarea::-moz-placeholder,
+.fd-feed-input:disabled textarea::-moz-placeholder,
+.fd-feed-input[aria-disabled=true] textarea::-moz-placeholder {
+  font-style: italic;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a)
+}
+.fd-feed-input.is-disabled textarea:-ms-input-placeholder,
+.fd-feed-input:disabled textarea:-ms-input-placeholder,
+.fd-feed-input[aria-disabled=true] textarea:-ms-input-placeholder {
+  font-style: italic;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a)
+}
+.fd-feed-input.is-disabled textarea::-ms-input-placeholder,
+.fd-feed-input:disabled textarea::-ms-input-placeholder,
+.fd-feed-input[aria-disabled=true] textarea::-ms-input-placeholder {
+  font-style: italic;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a)
+}
+.fd-feed-input.is-disabled textarea::placeholder,
+.fd-feed-input:disabled textarea::placeholder,
+.fd-feed-input[aria-disabled=true] textarea::placeholder {
+  font-style: italic;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a)
 }
 .fd-feed-input .fd-feed-input__thumb {
   display: none;
@@ -65,42 +106,16 @@
   margin: 0;
   padding: .3125rem .5rem
 }
-.fd-feed-input .fd-feed-input__textarea::-webkit-input-placeholder {
-  font-style: italic;
-  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic)
-}
-.fd-feed-input .fd-feed-input__textarea::-moz-placeholder {
-  font-style: italic;
-  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic)
-}
-.fd-feed-input .fd-feed-input__textarea:-ms-input-placeholder {
-  font-style: italic;
-  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic)
-}
-.fd-feed-input .fd-feed-input__textarea::-ms-input-placeholder {
-  font-style: italic;
-  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic)
-}
-.fd-feed-input .fd-feed-input__textarea::placeholder {
-  font-style: italic;
-  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic)
-}
 .fd-feed-input .fd-feed-input__submit-button {
   margin-top: auto;
   margin-bottom: .375rem;
   margin-left: .5rem;
   margin-right: 0
 }
-.fd-feed-input .fd-feed-input__submit-button[class*=sap-icon]::before {
-  display: inline-block
-}
 .fd-feed-input .fd-feed-input__submit-button[dir=rtl],
 [dir=rtl] .fd-feed-input .fd-feed-input__submit-button {
   margin-left: 0;
-  margin-right: .5rem
-}
-.fd-feed-input .fd-feed-input__submit-button[dir=rtl][class*=sap-icon]::before,
-[dir=rtl] .fd-feed-input .fd-feed-input__submit-button[class*=sap-icon]::before {
+  margin-right: .5rem;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg)
 }

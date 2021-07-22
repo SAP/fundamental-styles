@@ -1,9 +1,8 @@
 /*!
- * Fundamental Library Styles v0.18.0
+ * Fundamental Library Styles v0.19.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
-@charset "UTF-8";
 /*!
 .fd-input-group+(--inline, --control)
     .fd-input-group__addon+(--button)
@@ -15,7 +14,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fafafa;
   color: var(--sapTextColor,#fafafa);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -74,7 +73,7 @@
   border-color: var(--sapField_InvalidColor,#f88);
   font-style: normal;
   font-style: var(--fdInput_State_Text_Style,normal);
-  font-weight: normal;
+  font-weight: 400;
   font-weight: var(--fdInput_State_Font_Weight,normal)
 }
 .fd-input-group.is-error.is-hover,
@@ -92,7 +91,7 @@
   border-color: var(--sapField_WarningColor,#fabd64);
   font-style: normal;
   font-style: var(--fdInput_State_Text_Style,normal);
-  font-weight: normal;
+  font-weight: 400;
   font-weight: var(--fdInput_State_Font_Weight,normal)
 }
 .fd-input-group.is-alert.is-hover,
@@ -317,7 +316,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fafafa;
   color: var(--sapTextColor,#fafafa);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -418,7 +417,16 @@
 .fd-input-group__button.is-focus,
 .fd-input-group__button:focus {
   z-index: 5;
-  outline: 0!important
+  outline: .0625rem dotted #fff;
+  outline: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#fff);
+  outline-offset: -.1875rem;
+  outline-color: #91c8f6;
+  outline-color: var(--sapField_Hover_BorderColor,#91c8f6)
+}
+.fd-input-group__button.is-focus.fd-input-group--toggled,
+.fd-input-group__button:focus.fd-input-group--toggled {
+  outline-color: #000;
+  outline-color: var(--sapContent_ContrastFocusColor,#000)
 }
 .fd-input-group__button::before {
   display: none!important
@@ -446,29 +454,29 @@
 }
 .fd-input-group--control.is-hover .fd-input-group__button,
 .fd-input-group--control:hover .fd-input-group__button {
-  border-left: none;
-  border-left: var(--fdInputGroup_ControlButton_SideBorder,none)
+  border-left: solid .0625rem transparent;
+  border-left: var(--fdInputGroup_ControlButton_SideBorder,solid var(--sapButton_BorderWidth,.0625rem) transparent)
 }
 .fd-input-group--control.is-hover .fd-input-group__button[dir=rtl],
 .fd-input-group--control:hover .fd-input-group__button[dir=rtl],
 [dir=rtl] .fd-input-group--control.is-hover .fd-input-group__button,
 [dir=rtl] .fd-input-group--control:hover .fd-input-group__button {
   border-left: none;
-  border-right: none;
-  border-right: var(--fdInputGroup_ControlButton_SideBorder,none)
+  border-right: solid .0625rem transparent;
+  border-right: var(--fdInputGroup_ControlButton_SideBorder,solid var(--sapButton_BorderWidth,.0625rem) transparent)
 }
 .fd-input-group--control.is-active .fd-input-group__button,
 .fd-input-group--control:active .fd-input-group__button {
-  border-left: none;
-  border-left: var(--fdInputGroup_ControlButton_SideBorder,none)
+  border-left: solid .0625rem transparent;
+  border-left: var(--fdInputGroup_ControlButton_SideBorder,solid var(--sapButton_BorderWidth,.0625rem) transparent)
 }
 .fd-input-group--control.is-active .fd-input-group__button[dir=rtl],
 .fd-input-group--control:active .fd-input-group__button[dir=rtl],
 [dir=rtl] .fd-input-group--control.is-active .fd-input-group__button,
 [dir=rtl] .fd-input-group--control:active .fd-input-group__button {
   border-left: none;
-  border-right: none;
-  border-right: var(--fdInputGroup_ControlButton_SideBorder,none)
+  border-right: solid .0625rem transparent;
+  border-right: var(--fdInputGroup_ControlButton_SideBorder,solid var(--sapButton_BorderWidth,.0625rem) transparent)
 }
 .fd-input-group .fd-textarea {
   resize: vertical

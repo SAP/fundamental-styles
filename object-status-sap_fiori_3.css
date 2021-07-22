@@ -1,9 +1,8 @@
 /*!
- * Fundamental Library Styles v0.18.0
+ * Fundamental Library Styles v0.19.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
-@charset "UTF-8";
 /*!
 .fd-object-status+(--success | --warning | --error)
 */
@@ -14,7 +13,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #32363a;
   color: var(--sapTextColor,#32363a);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -22,7 +21,7 @@
   padding: 0;
   margin: 0;
   border: 0;
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -53,7 +52,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #32363a;
   color: var(--sapTextColor,#32363a);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -120,13 +119,13 @@
   color: var(--sapPositiveElementColor,#107e3e)
 }
 .fd-object-status--critical {
-  color: #e9730c;
-  color: var(--sapCriticalTextColor,#e9730c)
+  color: #df6e0c;
+  color: var(--sapCriticalTextColor,#df6e0c)
 }
 .fd-object-status--critical .fd-object-status__icon [class*=sap-icon],
 .fd-object-status--critical .fd-object-status__icon[class*=sap-icon] {
-  color: #e9730c;
-  color: var(--sapCriticalElementColor,#e9730c)
+  color: #df6e0c;
+  color: var(--sapCriticalElementColor,#df6e0c)
 }
 .fd-object-status--negative {
   color: #b00;
@@ -173,17 +172,17 @@
   color: var(--sapIndicationColor_2,#b00)
 }
 .fd-object-status--indication-3 {
-  color: #e9730c;
-  color: var(--sapIndicationColor_3,#e9730c)
+  color: #df6e0c;
+  color: var(--sapIndicationColor_3,#df6e0c)
 }
 .fd-object-status--indication-3:visited {
-  color: #e9730c;
-  color: var(--sapIndicationColor_3,#e9730c)
+  color: #df6e0c;
+  color: var(--sapIndicationColor_3,#df6e0c)
 }
 .fd-object-status--indication-3:visited .fd-object-status__icon [class*=sap-icon],
 .fd-object-status--indication-3:visited .fd-object-status__icon[class*=sap-icon] {
-  color: #e9730c;
-  color: var(--sapIndicationColor_3,#e9730c)
+  color: #df6e0c;
+  color: var(--sapIndicationColor_3,#df6e0c)
 }
 .fd-object-status--indication-4 {
   color: #107e3e;
@@ -274,7 +273,7 @@
   font-size: 1.5rem
 }
 .fd-object-status--large .fd-object-status__text {
-  font-family: "72-Light", "72-Lightfull", "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72-Light","72-Lightfull","72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontLightFamily, "72-Light", "72-Lightfull", "72", "72full", Arial, Helvetica, sans-serif)
 }
 .fd-object-status--large .fd-object-status__icon [class*=sap-icon],
@@ -370,8 +369,8 @@
 .fd-object-status--inverted.fd-object-status--critical {
   color: #fff;
   color: var(--sapButton_Critical_TextColor,#fff);
-  background-color: #e9730c;
-  background-color: var(--sapButton_Critical_Background,#e9730c)
+  background-color: #df6e0c;
+  background-color: var(--sapButton_Critical_Background,#df6e0c)
 }
 .fd-object-status--inverted.fd-object-status--critical .fd-object-status__icon [class*=sap-icon],
 .fd-object-status--inverted.fd-object-status--critical .fd-object-status__icon[class*=sap-icon] {
@@ -383,8 +382,8 @@
 .fd-object-status--inverted.fd-object-status--critical:visited {
   color: #fff;
   color: var(--sapButton_Critical_TextColor,#fff);
-  background-color: #e9730c;
-  background-color: var(--sapButton_Critical_Background,#e9730c)
+  background-color: #df6e0c;
+  background-color: var(--sapButton_Critical_Background,#df6e0c)
 }
 .fd-object-status--inverted.fd-object-status--critical:active .fd-object-status__icon [class*=sap-icon],
 .fd-object-status--inverted.fd-object-status--critical:active .fd-object-status__icon[class*=sap-icon],
@@ -510,8 +509,8 @@
 .fd-object-status--inverted.fd-object-status--indication-3 {
   color: #fff;
   color: var(--sapIndicationColor_3_TextColor,#fff);
-  background-color: #e9730c;
-  background-color: var(--sapIndicationColor_3,#e9730c)
+  background-color: #df6e0c;
+  background-color: var(--sapIndicationColor_3,#df6e0c)
 }
 .fd-object-status--inverted.fd-object-status--indication-3 .fd-object-status__icon [class*=sap-icon],
 .fd-object-status--inverted.fd-object-status--indication-3 .fd-object-status__icon[class*=sap-icon] {
@@ -523,8 +522,8 @@
 .fd-object-status--inverted.fd-object-status--indication-3:visited {
   color: #fff;
   color: var(--sapIndicationColor_3_TextColor,#fff);
-  background-color: #e9730c;
-  background-color: var(--sapIndicationColor_3,#e9730c)
+  background-color: #df6e0c;
+  background-color: var(--sapIndicationColor_3,#df6e0c)
 }
 .fd-object-status--inverted.fd-object-status--indication-3:active .fd-object-status__icon [class*=sap-icon],
 .fd-object-status--inverted.fd-object-status--indication-3:active .fd-object-status__icon[class*=sap-icon],
@@ -794,16 +793,16 @@
 .fd-object-status--inverted.fd-object-status--link.fd-object-status--critical {
   color: #fff;
   color: var(--sapButton_Critical_TextColor,#fff);
-  background-color: #e9730c;
-  background-color: var(--sapButton_Critical_Background,#e9730c);
-  border-color: #e9730c;
-  border-color: var(--sapButton_Critical_BorderColor,#e9730c)
+  background-color: #df6e0c;
+  background-color: var(--sapButton_Critical_Background,#df6e0c);
+  border-color: #df6e0c;
+  border-color: var(--sapButton_Critical_BorderColor,#df6e0c)
 }
 .fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:visited {
   color: #fff;
   color: var(--sapButton_Critical_TextColor,#fff);
-  background-color: #e9730c;
-  background-color: var(--sapButton_Critical_Background,#e9730c)
+  background-color: #df6e0c;
+  background-color: var(--sapButton_Critical_Background,#df6e0c)
 }
 .fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:visited .fd-object-status__icon [class*=sap-icon],
 .fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:visited .fd-object-status__icon[class*=sap-icon] {
@@ -813,8 +812,8 @@
 .fd-object-status--inverted.fd-object-status--link.fd-object-status--critical.is-hover,
 .fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:hover {
   color: var(sapButton_Critical_Hover_TextColor);
-  background-color: #c7620a;
-  background-color: var(--sapButton_Critical_Hover_Background,#c7620a)
+  background-color: #f3801c;
+  background-color: var(--sapButton_Critical_Hover_Background,#f3801c)
 }
 .fd-object-status--inverted.fd-object-status--link.fd-object-status--critical.is-hover .fd-object-status__icon [class*=sap-icon],
 .fd-object-status--inverted.fd-object-status--link.fd-object-status--critical.is-hover .fd-object-status__icon[class*=sap-icon],
@@ -826,8 +825,8 @@
 .fd-object-status--inverted.fd-object-status--link.fd-object-status--critical:active {
   color: #fff;
   color: var(--sapButton_Active_TextColor,#fff);
-  background-color: #b85b0a;
-  background-color: var(--sapButton_Critical_Active_Background,#b85b0a)
+  background-color: #f5933e;
+  background-color: var(--sapButton_Critical_Active_Background,#f5933e)
 }
 .fd-object-status--inverted.fd-object-status--link.fd-object-status--critical.is-active .fd-object-status__icon [class*=sap-icon],
 .fd-object-status--inverted.fd-object-status--link.fd-object-status--critical.is-active .fd-object-status__icon[class*=sap-icon],
@@ -1027,16 +1026,16 @@
 .fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3 {
   color: #fff;
   color: var(--sapIndicationColor_3_TextColor,#fff);
-  background-color: #e9730c;
-  background-color: var(--sapIndicationColor_3,#e9730c);
+  background-color: #df6e0c;
+  background-color: var(--sapIndicationColor_3,#df6e0c);
   border-color: #89919a;
   border-color: var(--sapContent_ForegroundBorderColor,#89919a)
 }
 .fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:visited {
   color: #fff;
   color: var(--sapIndicationColor_3_TextColor,#fff);
-  background-color: #e9730c;
-  background-color: var(--sapIndicationColor_3,#e9730c)
+  background-color: #df6e0c;
+  background-color: var(--sapIndicationColor_3,#df6e0c)
 }
 .fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:visited .fd-object-status__icon [class*=sap-icon],
 .fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:visited .fd-object-status__icon[class*=sap-icon] {
@@ -1047,8 +1046,8 @@
 .fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:hover {
   color: #fff;
   color: var(--sapIndicationColor_3_TextColor,#fff);
-  background-color: #da6c0b;
-  background-color: var(--sapIndicationColor_3_Hover_Background,#da6c0b)
+  background-color: #d0670b;
+  background-color: var(--sapIndicationColor_3_Hover_Background,#d0670b)
 }
 .fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3.is-hover .fd-object-status__icon [class*=sap-icon],
 .fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3.is-hover .fd-object-status__icon[class*=sap-icon],
@@ -1061,8 +1060,8 @@
 .fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3:active {
   color: #fff;
   color: var(--sapIndicationColor_3_TextColor,#fff);
-  background-color: #cc650b;
-  background-color: var(--sapIndicationColor_3_Active_Background,#cc650b)
+  background-color: #c2600a;
+  background-color: var(--sapIndicationColor_3_Active_Background,#c2600a)
 }
 .fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3.is-active .fd-object-status__icon [class*=sap-icon],
 .fd-object-status--inverted.fd-object-status--link.fd-object-status--indication-3.is-active .fd-object-status__icon[class*=sap-icon],

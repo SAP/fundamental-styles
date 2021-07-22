@@ -1,9 +1,8 @@
 /*!
- * Fundamental Library Styles v0.18.0
+ * Fundamental Library Styles v0.19.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
-@charset "UTF-8";
 .fd-slider {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -11,7 +10,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -21,7 +20,7 @@
   border: 0;
   min-width: 4rem;
   max-width: 100%;
-  padding: 1rem 0;
+  padding: 1rem calc(.625rem + .0625rem + .0625rem);
   position: relative
 }
 .fd-slider::after,
@@ -35,6 +34,10 @@
 .fd-slider[aria-disabled=true] {
   cursor: not-allowed
 }
+.fd-slider--lg {
+  padding-left: calc(.8125rem + .0625rem + .0625rem);
+  padding-right: calc(.8125rem + .0625rem + .0625rem)
+}
 .fd-slider__inner {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -42,7 +45,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -65,7 +68,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -96,7 +99,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -125,7 +128,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -135,7 +138,8 @@
   border: 0;
   position: absolute;
   width: 100%;
-  top: -.4rem
+  top: calc((-1rem + .375rem)/ 2);
+  top: calc((-1rem + var(--fdSlider_Track_Height,.375rem))/ 2)
 }
 .fd-slider__tick-wrapper::after,
 .fd-slider__tick-wrapper::before {
@@ -150,7 +154,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -182,7 +186,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -217,7 +221,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -226,11 +230,10 @@
   margin: 0;
   border: 0;
   position: relative;
-  width: .0625rem;
+  border-left: .0625rem solid #fff;
+  border-left: .0625rem solid var(--sapField_BorderColor,#fff);
   height: 1.125rem;
-  height: var(--fdSlider_Tick_Height,1.125rem);
-  background-color: #fff;
-  background-color: var(--sapField_BorderColor,#fff)
+  height: var(--fdSlider_Tick_Height,1.125rem)
 }
 .fd-slider__tick::after,
 .fd-slider__tick::before {
@@ -239,8 +242,8 @@
   font-size: inherit
 }
 .fd-slider__tick--in-range {
-  background-color: #fff;
-  background-color: var(--fdSlider_Track_Active_Border,var(--sapField_BorderColor,#fff))
+  border-color: #fff;
+  border-color: var(--fdSlider_Track_Active_Border,var(--sapField_BorderColor,#fff))
 }
 .fd-slider__label {
   font-size: .875rem;
@@ -249,7 +252,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -287,7 +290,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -324,8 +327,8 @@
   transform: translate(-25%,-25%)
 }
 .fd-slider__handle:focus {
-  outline: 1px dotted #fff;
-  outline: 1px dotted var(--sapButton_Hover_BorderColor,#fff);
+  outline: .0625rem dotted #fff;
+  outline: .0625rem dotted var(--sapButton_Hover_BorderColor,#fff);
   outline-offset: .0625rem
 }
 .fd-slider__handle.is-hover,
@@ -349,4 +352,9 @@
 .fd-slider__handle--lg::before {
   width: 2.75rem;
   height: 2.75rem
+}
+.fd-slider[dir=rtl] .fd-slider__handle::before,
+[dir=rtl] .fd-slider .fd-slider__handle::before {
+  -webkit-transform: translate(25%,-25%);
+  transform: translate(25%,-25%)
 }

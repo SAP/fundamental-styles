@@ -1,11 +1,10 @@
 /*!
- * Fundamental Library Styles v0.18.0
+ * Fundamental Library Styles v0.19.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
-@charset "UTF-8";
 .fd-status-indicator {
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   border-color: #fff;
   border-color: var(--sapContent_ForegroundBorderColor,#fff);
@@ -31,7 +30,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -61,7 +60,7 @@
   line-height: var(--sapContent_LineHeight,1.4);
   color: #fff;
   color: var(--sapTextColor,#fff);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -69,10 +68,10 @@
   padding: 0;
   margin: 0;
   border: 0;
-  -webkit-box-orient: unset;
-  -webkit-box-direction: unset;
-  -ms-flex-direction: unset;
-  flex-direction: unset
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row
 }
 .fd-status-indicator--horizontal-label::after,
 .fd-status-indicator--horizontal-label::before {
@@ -85,26 +84,125 @@
 }
 .fd-status-indicator__label {
   font-size: .75rem;
-  font-size: var(--sapFontSmallSize,.75rem);
-  margin: .375rem
+  font-size: var(--sapFontSmallSize,.75rem)
 }
 .fd-status-indicator__label--sm {
   font-size: .75rem;
-  font-size: var(--sapFontSmallSize,.75rem);
-  margin: .375rem
+  font-size: var(--sapFontSmallSize,.75rem)
+}
+.fd-status-indicator__label--sm.fd-status-indicator__label--top {
+  margin-bottom: .375rem
+}
+.fd-status-indicator__label--sm.fd-status-indicator__label--right {
+  margin-left: .375rem
+}
+.fd-status-indicator__label--sm.fd-status-indicator__label--right[dir=rtl],
+[dir=rtl] .fd-status-indicator__label--sm.fd-status-indicator__label--right {
+  margin-left: 0;
+  margin-right: .375rem;
+  -webkit-transform: matrix(1,0,0,1,22,1);
+  transform: matrix(1,0,0,1,22,1)
+}
+.fd-status-indicator__label--sm.fd-status-indicator__label--left {
+  margin-right: .375rem
+}
+.fd-status-indicator__label--sm.fd-status-indicator__label--left[dir=rtl],
+[dir=rtl] .fd-status-indicator__label--sm.fd-status-indicator__label--left {
+  margin-right: 0;
+  margin-left: .375rem;
+  -webkit-transform: matrix(1,0,0,1,-22,1);
+  transform: matrix(1,0,0,1,-22,1)
+}
+.fd-status-indicator__label--sm.fd-status-indicator__label--bottom {
+  margin-top: .375rem
 }
 .fd-status-indicator__label--md {
   font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  margin: .5rem
+  font-size: var(--sapFontSize,.875rem)
+}
+.fd-status-indicator__label--md.fd-status-indicator__label--top {
+  margin-bottom: .5rem
+}
+.fd-status-indicator__label--md.fd-status-indicator__label--right {
+  margin-left: .5rem
+}
+.fd-status-indicator__label--md.fd-status-indicator__label--right[dir=rtl],
+[dir=rtl] .fd-status-indicator__label--md.fd-status-indicator__label--right {
+  margin-left: 0;
+  margin-right: .5rem;
+  -webkit-transform: matrix(1,0,0,1,22,1);
+  transform: matrix(1,0,0,1,22,1)
+}
+.fd-status-indicator__label--md.fd-status-indicator__label--left {
+  margin-right: .5rem
+}
+.fd-status-indicator__label--md.fd-status-indicator__label--left[dir=rtl],
+[dir=rtl] .fd-status-indicator__label--md.fd-status-indicator__label--left {
+  margin-right: 0;
+  margin-left: .5rem;
+  -webkit-transform: matrix(1,0,0,1,-22,1);
+  transform: matrix(1,0,0,1,-22,1)
+}
+.fd-status-indicator__label--md.fd-status-indicator__label--bottom {
+  margin-top: .5rem
 }
 .fd-status-indicator__label--lg {
-  font-size: 1.125rem;
-  margin: .75rem
+  font-size: 1.125rem
+}
+.fd-status-indicator__label--lg.fd-status-indicator__label--top {
+  margin-bottom: .75rem
+}
+.fd-status-indicator__label--lg.fd-status-indicator__label--right {
+  margin-left: .75rem
+}
+.fd-status-indicator__label--lg.fd-status-indicator__label--right[dir=rtl],
+[dir=rtl] .fd-status-indicator__label--lg.fd-status-indicator__label--right {
+  margin-left: 0;
+  margin-right: .75rem;
+  -webkit-transform: matrix(1,0,0,1,22,1);
+  transform: matrix(1,0,0,1,22,1)
+}
+.fd-status-indicator__label--lg.fd-status-indicator__label--left {
+  margin-right: .75rem
+}
+.fd-status-indicator__label--lg.fd-status-indicator__label--left[dir=rtl],
+[dir=rtl] .fd-status-indicator__label--lg.fd-status-indicator__label--left {
+  margin-right: 0;
+  margin-left: .75rem;
+  -webkit-transform: matrix(1,0,0,1,-22,1);
+  transform: matrix(1,0,0,1,-22,1)
+}
+.fd-status-indicator__label--lg.fd-status-indicator__label--bottom {
+  margin-top: .75rem
 }
 .fd-status-indicator__label--xl {
-  font-size: 1.875rem;
-  margin: 1rem
+  font-size: 1.875rem
+}
+.fd-status-indicator__label--xl.fd-status-indicator__label--top {
+  margin-bottom: 1rem
+}
+.fd-status-indicator__label--xl.fd-status-indicator__label--right {
+  margin-left: 1rem
+}
+.fd-status-indicator__label--xl.fd-status-indicator__label--right[dir=rtl],
+[dir=rtl] .fd-status-indicator__label--xl.fd-status-indicator__label--right {
+  margin-left: 0;
+  margin-right: 1rem;
+  -webkit-transform: matrix(1,0,0,1,22,1);
+  transform: matrix(1,0,0,1,22,1)
+}
+.fd-status-indicator__label--xl.fd-status-indicator__label--left {
+  margin-right: 1rem
+}
+.fd-status-indicator__label--xl.fd-status-indicator__label--left[dir=rtl],
+[dir=rtl] .fd-status-indicator__label--xl.fd-status-indicator__label--left {
+  margin-right: 0;
+  margin-left: 1rem;
+  -webkit-transform: matrix(1,0,0,1,-22,1);
+  transform: matrix(1,0,0,1,-22,1)
+}
+.fd-status-indicator__label--xl.fd-status-indicator__label--bottom {
+  margin-top: 1rem
 }
 .fd-status-indicator--positive {
   fill: #9c9;

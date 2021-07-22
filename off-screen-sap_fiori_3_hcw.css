@@ -1,0 +1,37 @@
+/*!
+ * Fundamental Library Styles v0.19.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+/*!
+.fd-off-screen
+places the element far left of the screen. so it is not visible.
+*/
+.fd-off-screen {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  position: absolute;
+  left: -625rem;
+  top: auto;
+  width: .0625rem;
+  height: .0625rem;
+  overflow: hidden
+}
+.fd-off-screen::after,
+.fd-off-screen::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
