@@ -858,7 +858,7 @@ export const overflow = () => `<div class="fd-icon-tab-bar">
                 <span class="fd-icon-tab-bar__tag">Section 3</span>
             </a>
         </li>
-        <li role="presentation" class="fd-icon-tab-bar__item">
+        <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow">
             <button class="fd-icon-tab-bar__overflow">
                 <span class="fd-icon-tab-bar__overflow-text">+3</span>
                 <i class="sap-icon--slim-arrow-down" role="presentation"></i>
@@ -885,7 +885,7 @@ export const overflow = () => `<div class="fd-icon-tab-bar">
                 <span class="fd-icon-tab-bar__tag">Section 3</span>
             </a>
         </li>
-        <li role="presentation" class="fd-icon-tab-bar__item">
+        <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow">
             <button class="fd-icon-tab-bar__overflow">
                 <span class="fd-icon-tab-bar__overflow-text">More</span>
                 <i class="sap-icon--slim-arrow-down" role="presentation"></i>
@@ -1449,7 +1449,7 @@ export const navigation = () => `<div style="min-height: 600px;">
                     <span class="fd-icon-tab-bar__tag">Section 3</span>
                 </a>
             </li>
-            <li role="presentation" class="fd-icon-tab-bar__item">
+            <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow">
                 <button class="fd-icon-tab-bar__overflow">
                     <span class="fd-icon-tab-bar__overflow-text">More</span>
                     <i class="sap-icon--slim-arrow-down" role="presentation"></i>
