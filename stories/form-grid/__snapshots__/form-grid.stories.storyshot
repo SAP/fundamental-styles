@@ -2,9 +2,9 @@
 
 exports[`Storyshots Components/Forms/Form Grid Column Not Recommended 1`] = `
 <section>
-  <h1>
+  <h3>
     XL3-L2-M2-S1
-  </h1>
+  </h3>
   
 
   <div

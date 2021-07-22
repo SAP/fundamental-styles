@@ -1649,7 +1649,7 @@ S | 1
     }
 };
 
-export const columnNotRecommended = () => `<h1>XL3-L2-M2-S1</h1>
+export const columnNotRecommended = () => `<h3>XL3-L2-M2-S1</h3>
 <div class="fd-container fd-form-layout-grid-container">
   <div class="fd-row"> 
     <div class="fd-col fd-col-lg--6 fd-col-xl--4 fd-col--wrap">

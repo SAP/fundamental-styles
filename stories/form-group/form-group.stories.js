@@ -66,7 +66,7 @@ To indicate to the user that it’s required to fill out an input field, add the
 export const groupHeader = () =>
     `<div class="fd-form-group" role="group" aria-labelledby="basicGroupHeader">
         <div class="fd-form-group__header">
-            <h1 class="fd-form-group__header-text" id="basicGroupHeader">Group Header</h1>
+            <h3 class="fd-form-group__header-text" id="basicGroupHeader">Group Header</h3>
         </div>
         <div class="fd-form-item">
             <label class="fd-form-label fd-form-label--required" for="input-1d">Group Header Input:</label>
@@ -87,7 +87,7 @@ Form groups can be grouped together under a header with the \`fd-form-group__hea
 export const groupHeaderCompact = () =>
     `<div class="fd-form-group" role="group" aria-labelledby="compactGroupHeader">
         <div class="fd-form-group__header fd-form-group__header--compact">
-            <h1 class="fd-form-group__header-text" id="compactGroupHeader">Group Header</h1>
+            <h3 class="fd-form-group__header-text" id="compactGroupHeader">Group Header</h3>
         </div>
         <div class="fd-form-item">
             <label class="fd-form-label fd-form-label--required" for="input-1e">Compact Group Header Input:</label>
@@ -109,7 +109,7 @@ export const groupHeaderInFormGrid = () =>
         <div class="fd-row"> 
             <div class="fd-form-group fd-col__form-group fd-col fd-col-md--6  fd-col-lg--6 fd-col-xl--6 fd-col--wrap" role="group" aria-labelledby="grid1GroupHeader">
                 <div class="fd-form-group__header"  id="grid1GroupHeader">
-                    <h1 class="fd-form-group__header-text">Group Header 1</h1>
+                    <h3 class="fd-form-group__header-text">Group Header 1</h3>
                 </div>
                 <div class="fd-form-item fd-row__form-item fd-row">
                     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
@@ -138,7 +138,7 @@ export const groupHeaderInFormGrid = () =>
             </div>
             <div class="fd-form-group fd-col__form-group fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap" role="group" aria-labelledby="grid2GroupHeader">
                 <div class="fd-form-group__header">
-                    <h1 class="fd-form-group__header-text" id="grid2GroupHeader">Group Header 2</h1>
+                    <h3 class="fd-form-group__header-text" id="grid2GroupHeader">Group Header 2</h3>
                 </div>
                 <div class="fd-form-item fd-row__form-item fd-row">
                     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
@@ -167,7 +167,7 @@ export const groupHeaderInFormGrid = () =>
             </div>
             <div class="fd-form-group fd-col__form-group fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap" role="group" aria-labelledby="grid3GroupHeader">
                 <div class="fd-form-group__header">
-                    <h1 class="fd-form-group__header-text" id="grid3GroupHeader">Group Header 3</h1>
+                    <h3 class="fd-form-group__header-text" id="grid3GroupHeader">Group Header 3</h3>
                 </div>
                 <div class="fd-form-item fd-row__form-item fd-row">
                     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">

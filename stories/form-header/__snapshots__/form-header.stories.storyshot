@@ -1,65 +1,305 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Forms/Form Header Default 1`] = `
-<div
-  class="fd-form-header"
->
+<section>
   
-        
-  <span
-    class="fd-form-header__text"
+
+  <div
+    class="fd-form-header"
   >
-    Form Header
-  </span>
-  
     
-</div>
+    
+    <span
+      class="fd-form-header__text"
+    >
+      Form Header
+    </span>
+    
+
+  </div>
+  
+
+  <div
+    class="fd-form-group"
+  >
+    
+    
+    <div
+      class="fd-form-group__header"
+    >
+      
+        
+      <h3
+        class="fd-form-group__header-text"
+        id="basicGroupHeader"
+      >
+        Group Header
+      </h3>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-11b"
+      >
+        Compact Input:
+      </label>
+      
+        
+      <input
+        class="fd-input"
+        id="input-11b"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Forms/Form Header Solid 1`] = `
-<div
-  class="fd-form-header fd-form-header--solid"
->
+<section>
   
-        
-  <span
-    class="fd-form-header__text"
+
+  <div
+    class="fd-form-header fd-form-header--solid"
   >
-    Form Header
-  </span>
-  
     
-</div>
+    
+    <span
+      class="fd-form-header__text"
+    >
+      Form Header
+    </span>
+    
+
+  </div>
+  
+
+  <div
+    class="fd-form-group"
+  >
+    
+    
+    <div
+      class="fd-form-group__header"
+    >
+      
+        
+      <h3
+        class="fd-form-group__header-text"
+        id="basicGroupHeader"
+      >
+        Group Header
+      </h3>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-11b"
+      >
+        Input:
+      </label>
+      
+        
+      <input
+        class="fd-input"
+        id="input-11b"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-12b"
+      >
+        Input:
+      </label>
+      
+        
+      <input
+        class="fd-input"
+        id="input-12b"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Forms/Form Header Translucent 1`] = `
-<div
-  class="fd-form-header fd-form-header--translucent"
->
+<section>
   
-        
-  <span
-    class="fd-form-header__text"
+
+  <div
+    class="fd-form-header fd-form-header--translucent"
   >
-    Form Header
-  </span>
-  
     
-</div>
+    
+    <span
+      class="fd-form-header__text"
+    >
+      Form Header
+    </span>
+    
+
+  </div>
+  
+
+  <div
+    class="fd-form-group"
+  >
+    
+    
+    <div
+      class="fd-form-group__header"
+    >
+      
+        
+      <h3
+        class="fd-form-group__header-text"
+        id="basicGroupHeader"
+      >
+        Group Header
+      </h3>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-12b"
+      >
+        Compact Input:
+      </label>
+      
+        
+      <input
+        class="fd-input"
+        id="input-12b"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Forms/Form Header Transparent 1`] = `
-<div
-  class="fd-form-header fd-form-header--transparent"
->
+<section>
   
-        
-  <span
-    class="fd-form-header__text"
+
+  <div
+    class="fd-form-header fd-form-header--transparent"
   >
-    Form Header
-  </span>
-  
     
-</div>
+    
+    <span
+      class="fd-form-header__text"
+    >
+      Form Header
+    </span>
+    
+
+  </div>
+  
+
+  <div
+    class="fd-form-group"
+  >
+    
+    
+    <div
+      class="fd-form-group__header"
+    >
+      
+        
+      <h3
+        class="fd-form-group__header-text"
+        id="basicGroupHeader"
+      >
+        Group Header
+      </h3>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-form-item"
+    >
+      
+        
+      <label
+        class="fd-form-label"
+        for="input-11b"
+      >
+        Compact Input:
+      </label>
+      
+        
+      <input
+        class="fd-input"
+        id="input-11b"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
 `;
