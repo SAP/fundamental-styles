@@ -74,8 +74,8 @@ export const standard = () => `<h4>Default mode</h4>
       </div>
     </div>
     <div class="fd-upload-collection__button-group">
-      <button aria-label="Edit" class="fd-button">Ok</button>
-      <button aria-label="Delete" class="fd-button">Cancel</button>
+      <button aria-label="Edit" class="fd-button fd-button--transparent">Ok</button>
+      <button aria-label="Delete" class="fd-button fd-button--transparent">Cancel</button>
     </div>
   </li>
 </ul>
