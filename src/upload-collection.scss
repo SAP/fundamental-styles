@@ -1,0 +1,98 @@
+@import "./new-settings";
+@import "./mixins";
+@import "./listDefinitions.scss";
+
+$block: #{$fd-namespace}-upload-collection;
+
+$fd-upload-collection-button-spacing: 1rem !default;
+
+.#{$block} {
+  &__button-group {
+    @include fd-reset();
+
+    display: flex;
+
+    button {
+      margin-left: 0.125rem;
+
+      @include fd-rtl() {
+        margin-left: 0;
+        margin-right: 0.125rem;
+      }
+    }
+
+    &--small {
+      flex-basis: 100%;
+      margin-top: 0.75rem;
+
+      button:not(:first-child) {
+        margin-left: 0.5rem;
+
+        @include fd-rtl() {
+          margin-left: 0;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+
+  &__description,
+  &__status-group,
+  &__extension {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    font-size: $fd-list-normal-font-size;
+    line-height: $fd-list-byline-text-line-height;
+    color: $fd-list-byline-section-text-color;
+  }
+
+  &__description {
+    padding-top: 0.625rem;
+  }
+
+  &__status-group {
+    margin-top: 0.375rem;
+  }
+
+  &__extension {
+    display: inline-block;
+    margin-left: 0.375rem;
+
+    @include fd-rtl() {
+      margin-left: 0;
+      margin-right: 0.375rem;
+    }
+  }
+
+  &__item {
+    flex-wrap: nowrap;
+
+    &--small {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__text-separator::before {
+    color: var(--sapContent_LabelColor);
+    content: "\2022";
+  }
+
+  &__form-item {
+    display: inline-block;
+
+    input {
+      width: 60%;
+    }
+
+    &--small {
+      input {
+        width: 75%;
+      }
+    }
+  }
+
+  &__content {
+    flex: 1 !important;
+  }
+}
