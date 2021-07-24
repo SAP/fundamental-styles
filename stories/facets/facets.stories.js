@@ -564,7 +564,7 @@ export const objectPageMobile = () =>
                             <div class="fd-dynamic-page__title-container">
                                 <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
                                 <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
-                                    <div class="fd-popover fd-toolbar__overflow">
+                                    <div class="fd-popover">
                                         <div class="fd-popover__control">
                                             <button
                                                 id="maisodusakdnsmb"
@@ -583,7 +583,7 @@ export const objectPageMobile = () =>
                                         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                                             aria-hidden="false"
                                             id="wgxzK85901">
-                                            <div class="fd-toolbar__overflow__body">
+                                            <div class="fd-toolbar__overflow">
                                                 <button class="fd-button fd-button--transparent">Accept</button>
                                                 <button class="fd-button fd-button--transparent">Reject</button>
                                             </div>
@@ -623,7 +623,7 @@ export const objectPageMobile = () =>
                                     <div class="fd-dynamic-page__subtitle"> Collapsed header in mobile </div>
                                 </div>
                                 <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
-                                    <div class="fd-popover fd-toolbar__overflow">
+                                    <div class="fd-popover">
                                         <div class="fd-popover__control">
                                             <button
                                                 id="maisodusakdnsmag"
@@ -642,7 +642,7 @@ export const objectPageMobile = () =>
                                         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                                             aria-hidden="false"
                                             id="wgxzK85911">
-                                            <div class="fd-toolbar__overflow__body">
+                                            <div class="fd-toolbar__overflow">
                                                 <button class="fd-button fd-button--transparent">Accept</button>
                                                 <button class="fd-button fd-button--transparent">Reject</button>
                                             </div>
