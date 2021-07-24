@@ -369,7 +369,7 @@ export const mobile = () =>
                             <div class="fd-dynamic-page__title-container">
                                 <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
                                 <div role="toolbar" aria-label="Header Content" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--content fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
-                                    <div class="fd-popover fd-toolbar__overflow">
+                                    <div class="fd-popover">
                                         <div class="fd-popover__control">
                                             <button
                                                 id="asfmiasudashd"
@@ -388,14 +388,14 @@ export const mobile = () =>
                                         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                                             aria-hidden="false"
                                             id="wgxzK85915">
-                                            <div class="fd-toolbar__overflow__body">
+                                            <div class="fd-toolbar__overflow">
                                                 Overflowing title content
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
-                                    <div class="fd-popover fd-toolbar__overflow">
+                                    <div class="fd-popover">
                                         <div class="fd-popover__control">
                                             <button
                                                 id="maisodusakdnsma"
@@ -414,7 +414,7 @@ export const mobile = () =>
                                         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                                             aria-hidden="false"
                                             id="wgxzK85914">
-                                            <div class="fd-toolbar__overflow__body">
+                                            <div class="fd-toolbar__overflow">
                                                 <button class="fd-button fd-button--transparent">Accept</button>
                                                 <button class="fd-button fd-button--transparent">Reject</button>
                                             </div>
@@ -527,7 +527,7 @@ export const mobileCollapsed = () =>
                             <div class="fd-dynamic-page__title-container">
                                 <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
                                 <div role="toolbar" aria-label="Header Content" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--content fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
-                                    <div class="fd-popover fd-toolbar__overflow">
+                                    <div class="fd-popover">
                                         <div class="fd-popover__control">
                                             <button
                                                 id="ko9as8dajskdj"
@@ -546,14 +546,14 @@ export const mobileCollapsed = () =>
                                         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                                             aria-hidden="false"
                                             id="wgxzK85913">
-                                            <div class="fd-toolbar__overflow__body">
+                                            <div class="fd-toolbar__overflow">
                                                 Overflowing title content
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
-                                    <div class="fd-popover fd-toolbar__overflow">
+                                    <div class="fd-popover">
                                         <div class="fd-popover__control">
                                             <button
                                                 id="k9r0a8ioasjd"
@@ -572,7 +572,7 @@ export const mobileCollapsed = () =>
                                         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                                             aria-hidden="false"
                                             id="wgxzK85912">
-                                            <div class="fd-toolbar__overflow__body">
+                                            <div class="fd-toolbar__overflow">
                                                 <button class="fd-button fd-button--transparent">Accept</button>
                                                 <button class="fd-button fd-button--transparent">Reject</button>
                                             </div>
@@ -1319,7 +1319,7 @@ export const withFacetsMobile = () =>
                             <div class="fd-dynamic-page__title-container">
                                 <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
                                 <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
-                                    <div class="fd-popover fd-toolbar__overflow">
+                                    <div class="fd-popover">
                                         <div class="fd-popover__control">
                                             <button
                                                 id="maisodusakdnsmb"
@@ -1338,7 +1338,7 @@ export const withFacetsMobile = () =>
                                         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                                             aria-hidden="false"
                                             id="wgxzK85901">
-                                            <div class="fd-toolbar__overflow__body">
+                                            <div class="fd-toolbar__overflow">
                                                 <button class="fd-button fd-button--transparent">Accept</button>
                                                 <button class="fd-button fd-button--transparent">Reject</button>
                                             </div>
@@ -1378,7 +1378,7 @@ export const withFacetsMobile = () =>
                                     <div class="fd-dynamic-page__subtitle"> Collapsed header in mobile </div>
                                 </div>
                                 <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
-                                    <div class="fd-popover fd-toolbar__overflow">
+                                    <div class="fd-popover">
                                         <div class="fd-popover__control">
                                             <button
                                                 id="maisodusakdnsmag"
@@ -1397,7 +1397,7 @@ export const withFacetsMobile = () =>
                                         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                                             aria-hidden="false"
                                             id="wgxzK85911">
-                                            <div class="fd-toolbar__overflow__body">
+                                            <div class="fd-toolbar__overflow">
                                                 <button class="fd-button fd-button--transparent">Accept</button>
                                                 <button class="fd-button fd-button--transparent">Reject</button>
                                             </div>
