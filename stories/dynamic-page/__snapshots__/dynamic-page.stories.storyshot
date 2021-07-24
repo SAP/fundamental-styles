@@ -256,14 +256,14 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
                       
                                                 
                       <button
-                        class="fd-button fd-button--transparent"
+                        class="fd-button fd-button--transparent fd-toolbar__overflow-button "
                       >
                         Accept
                       </button>
                       
                                                 
                       <button
-                        class="fd-button fd-button--transparent"
+                        class="fd-button fd-button--transparent fd-toolbar__overflow-button "
                       >
                         Reject
                       </button>
@@ -1908,14 +1908,14 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                       
                                                 
                       <button
-                        class="fd-button fd-button--transparent"
+                        class="fd-button fd-button--transparent fd-toolbar__overflow-button"
                       >
                         Accept
                       </button>
                       
                                                 
                       <button
-                        class="fd-button fd-button--transparent"
+                        class="fd-button fd-button--transparent fd-toolbar__overflow-button"
                       >
                         Reject
                       </button>
@@ -3363,14 +3363,14 @@ exports[`Storyshots Layouts/Dynamic Page With header facets (mobile) 1`] = `
                       
                                                 
                       <button
-                        class="fd-button fd-button--transparent"
+                        class="fd-button fd-button--transparent fd-toolbar__overflow-button"
                       >
                         Accept
                       </button>
                       
                                                 
                       <button
-                        class="fd-button fd-button--transparent"
+                        class="fd-button fd-button--transparent fd-toolbar__overflow-button"
                       >
                         Reject
                       </button>
@@ -3619,14 +3619,14 @@ exports[`Storyshots Layouts/Dynamic Page With header facets (mobile) 1`] = `
                       
                                                 
                       <button
-                        class="fd-button fd-button--transparent"
+                        class="fd-button fd-button--transparent fd-toolbar__overflow-button"
                       >
                         Accept
                       </button>
                       
                                                 
                       <button
-                        class="fd-button fd-button--transparent"
+                        class="fd-button fd-button--transparent fd-toolbar__overflow-button"
                       >
                         Reject
                       </button>

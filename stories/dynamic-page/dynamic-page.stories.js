@@ -415,8 +415,8 @@ export const mobile = () =>
                                             aria-hidden="false"
                                             id="wgxzK85914">
                                             <div class="fd-toolbar__overflow">
-                                                <button class="fd-button fd-button--transparent">Accept</button>
-                                                <button class="fd-button fd-button--transparent">Reject</button>
+                                                <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Accept</button>
+                                                <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Reject</button>
                                             </div>
                                         </div>
                                     </div>
@@ -573,8 +573,8 @@ export const mobileCollapsed = () =>
                                             aria-hidden="false"
                                             id="wgxzK85912">
                                             <div class="fd-toolbar__overflow">
-                                                <button class="fd-button fd-button--transparent">Accept</button>
-                                                <button class="fd-button fd-button--transparent">Reject</button>
+                                                <button class="fd-button fd-button--transparent fd-toolbar__overflow-button ">Accept</button>
+                                                <button class="fd-button fd-button--transparent fd-toolbar__overflow-button ">Reject</button>
                                             </div>
                                         </div>
                                     </div>
@@ -1339,8 +1339,8 @@ export const withFacetsMobile = () =>
                                             aria-hidden="false"
                                             id="wgxzK85901">
                                             <div class="fd-toolbar__overflow">
-                                                <button class="fd-button fd-button--transparent">Accept</button>
-                                                <button class="fd-button fd-button--transparent">Reject</button>
+                                                <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Accept</button>
+                                                <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Reject</button>
                                             </div>
                                         </div>
                                     </div>
@@ -1398,8 +1398,8 @@ export const withFacetsMobile = () =>
                                             aria-hidden="false"
                                             id="wgxzK85911">
                                             <div class="fd-toolbar__overflow">
-                                                <button class="fd-button fd-button--transparent">Accept</button>
-                                                <button class="fd-button fd-button--transparent">Reject</button>
+                                                <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Accept</button>
+                                                <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Reject</button>
                                             </div>
                                         </div>
                                     </div>
