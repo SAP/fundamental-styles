@@ -158,8 +158,8 @@ $title-toolbar-height: 2.75rem;
   &__overflow {
     @include fd-reset();
     @include fd-flex(column);
-    @include fd-set-paddings-x-equal(0.5rem);
-    @include fd-set-paddings-y-equal(0.25rem);
+    @include fd-set-paddings-x-equal(0.375rem);
+    @include fd-set-paddings-y-equal(0.1875rem);
 
     max-width: 20rem;
     max-height: 50vh;
@@ -203,5 +203,11 @@ $title-toolbar-height: 2.75rem;
 
   &--cozy {
     height: $toolbar-height-cozy;
+
+    .#{$block}__overflow {
+      @include fd-reset();
+      @include fd-set-paddings-x-equal(0.5rem);
+      @include fd-set-paddings-y-equal(0.25rem);
+    }
   }
 }
