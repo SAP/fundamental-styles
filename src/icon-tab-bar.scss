@@ -132,10 +132,25 @@ $fd-icon-tab-bar-semantic-values: (
   }
 }
 
-%fd-tabs-focus {
+@mixin fd-tabs-focus($outlineColor: var(--sapContent_FocusColor), $offset: false) {
+  outline-color: $outlineColor;
   outline-style: var(--sapContent_FocusStyle);
   outline-width: var(--sapContent_FocusWidth);
-  outline-color: var(--sapContent_FocusColor);
+
+  @if $offset {
+    outline-offset: 0.0625rem;
+  }
+}
+
+@mixin fd-set-navigation-tab-colors($color: var(--sapShell_Navigation_Selected_TextColor)) {
+  [class*='sap-icon'] {
+    color: $color;
+    @content;
+  }
+
+  .#{$block}__tag {
+    color: $color;
+  }
 }
 
 @mixin fd-icon-tab-bar-semantic-item() {
@@ -256,7 +271,7 @@ $fd-icon-tab-bar-semantic-values: (
 
         @include fd-focus() {
           .#{$block}__tab-container {
-            @extend %fd-tabs-focus;
+            @include fd-tabs-focus();
           }
 
           .#{$block}__tag {
@@ -280,13 +295,6 @@ $fd-icon-tab-bar-semantic-values: (
         min-width: $fd-icon-tab-bar-multi-click-button-size;
       }
 
-      .#{$block}__popover {
-        @include fd-set-position-right(0);
-
-        top: 0;
-        position: absolute;
-      }
-
       .#{$block}__tab {
         @include fd-selected() {
           @include fd-set-paddings-x(0.188rem, 2.188rem);
@@ -294,6 +302,21 @@ $fd-icon-tab-bar-semantic-values: (
 
         .#{$block}__badge {
           @include fd-set-position-right(1.625rem);
+        }
+      }
+    }
+
+    &.#{$block}__item--overflow {
+      @include fd-reset-margins-x();
+
+      flex: 1;
+      justify-content: flex-end;
+
+      .#{$block}__popover {
+        position: relative;
+
+        &-body {
+          margin-top: 0.375rem;
         }
       }
     }
@@ -344,7 +367,7 @@ $fd-icon-tab-bar-semantic-values: (
       .#{$block}__tag,
       .#{$block}__icon,
       .#{$block}__container--filter {
-        @extend %fd-tabs-focus;
+        @include fd-tabs-focus();
       }
     }
 
@@ -555,6 +578,18 @@ $fd-icon-tab-bar-semantic-values: (
     }
   }
 
+  .#{$block}__popover {
+    @include fd-set-position-right(0);
+
+    top: 0;
+    position: absolute;
+
+    &-body {
+      margin-top: -0.25rem;
+      z-index: 10;
+    }
+  }
+
   &__badge {
     @include fd-reset();
     @include fd-flex-center();
@@ -709,6 +744,12 @@ $fd-icon-tab-bar-semantic-values: (
       .#{$block}__badge {
         position: static;
         margin-bottom: 0.625rem;
+      }
+
+      [class*='sap-icon'] {
+        @include fd-set-margin-right(0.5rem);
+
+        font-size: 1rem;
       }
     }
 
@@ -979,26 +1020,16 @@ $fd-icon-tab-bar-semantic-values: (
     }
 
     .#{$block}__tab {
-      .#{$block}__tag {
-        color: var(--sapShell_Navigation_TextColor);
-      }
+      @include fd-set-navigation-tab-colors(var(--sapShell_Navigation_TextColor)) {
+        @include fd-set-margin-right(0.5rem);
 
-      .#{$block}__arrow {
-        [class*='sap-icon'] {
-          color: var(--sapShell_Navigation_TextColor);
-        }
+        font-size: 1rem;
+        height: 1rem;
+        line-height: 1;
       }
 
       @include fd-selected() {
-        .#{$block}__tag {
-          color: var(--sapShell_Navigation_Selected_TextColor);
-        }
-
-        .#{$block}__arrow {
-          [class*='sap-icon'] {
-            color: var(--sapShell_Navigation_Selected_TextColor);
-          }
-        }
+        @include fd-set-navigation-tab-colors();
 
         &::after {
           background: var(--sapShell_Navigation_SelectedColor);
@@ -1006,28 +1037,27 @@ $fd-icon-tab-bar-semantic-values: (
       }
 
       @include fd-hover() {
-        .#{$block}__tag {
-          color: var(--sapShell_Navigation_Selected_TextColor);
-        }
-        .#{$block}__arrow {
-          [class*='sap-icon'] {
-            color: var(--sapShell_Navigation_Selected_TextColor);
-          }
-        }
+        @include fd-set-navigation-tab-colors();
       }
 
       @include fd-focus() {
-        .#{$block}__tag,
-        .#{$block}__icon,
-        .#{$block}__container,
         .#{$block}__tab-container {
-          outline-color: var(--sapShell_Navigation_TextColor);
+          @include fd-tabs-focus(var(--sapShell_Navigation_TextColor), true);
+
+          .#{$block}__tag {
+            outline: none;
+          }
+        }
+
+        .#{$block}__tag {
+          @include fd-tabs-focus(var(--sapShell_Navigation_TextColor), true);
         }
       }
     }
 
     .#{$block}__button {
       color: var(--sapShell_Navigation_SelectedColor);
+      background: var(--sapShell_Navigation_Background);
 
       @include fd-hover() {
         color: var(--sapShell_Navigation_SelectedColor);
@@ -1043,16 +1073,6 @@ $fd-icon-tab-bar-semantic-values: (
 
       @include fd-focus() {
         outline-color: var(--sapShell_Navigation_TextColor);
-      }
-    }
-
-    &__item--single-click {
-      .#{$block}__tab {
-        @include fd-focus() {
-          .#{$block}__tab-container {
-            outline-color: var(--sapShell_Navigation_TextColor);
-          }
-        }
       }
     }
 

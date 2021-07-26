@@ -138,6 +138,7 @@ $fd-tool-header-object-status-semantic-values: (
 
     &:hover {
       border-color: transparent;
+      color: var(--sapShell_InteractiveTextColor);
       background: var(--sapShell_Hover_Background);
     }
 

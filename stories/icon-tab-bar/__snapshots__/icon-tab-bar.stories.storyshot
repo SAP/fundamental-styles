@@ -3115,7 +3115,7 @@ exports[`Storyshots Components/Icon Tab Bar Navigation Icon Tab Bar 1`] = `
       
             
       <li
-        class="fd-icon-tab-bar__item"
+        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow"
         role="presentation"
       >
         
@@ -3265,7 +3265,7 @@ exports[`Storyshots Components/Icon Tab Bar Navigation Icon Tab Bar 1`] = `
                     
           <div
             aria-hidden="false"
-            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body"
             id="popoverAO4"
           >
             
@@ -3489,7 +3489,7 @@ exports[`Storyshots Components/Icon Tab Bar Navigation Icon Tab Bar 1`] = `
           
           <div
             aria-hidden="false"
-            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body"
             id="popoverAO5"
           >
             
@@ -3800,7 +3800,7 @@ exports[`Storyshots Components/Icon Tab Bar Overflow 1`] = `
       
         
       <li
-        class="fd-icon-tab-bar__item"
+        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow"
         role="presentation"
       >
         
@@ -3938,7 +3938,7 @@ exports[`Storyshots Components/Icon Tab Bar Overflow 1`] = `
       
         
       <li
-        class="fd-icon-tab-bar__item"
+        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow"
         role="presentation"
       >
         
@@ -5927,7 +5927,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Multi Click A
                     
           <div
             aria-hidden="false"
-            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body"
             id="popoverA3"
           >
             
@@ -6357,7 +6357,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Single Click 
                     
           <div
             aria-hidden="false"
-            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body"
             id="popoverA1"
           >
             
@@ -6701,7 +6701,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Single Click 
                     
           <div
             aria-hidden="false"
-            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body"
             id="popoverA2"
           >
             
