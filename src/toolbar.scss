@@ -3,6 +3,7 @@
 
 $block: #{$fd-namespace}-toolbar;
 $toolbar-height-compact: 2rem;
+$info-toolbar-height: 2rem;
 $toolbar-height-cozy: 2.75rem;
 
 $toolbar-separator-height-compact: 1.5rem;
@@ -161,7 +162,7 @@ $title-toolbar-height: 2.75rem;
     max-height: 50vh;
     overflow: auto;
 
-    & .#{$block}__overflow-button {
+     & .#{$block}__overflow-button {
       justify-content: flex-start;
       text-align: left;
       width: auto;
@@ -180,7 +181,7 @@ $title-toolbar-height: 2.75rem;
       }
     }
 
-    & .#{$block}__separator {
+    > .#{$block}__separator {
       @include fd-reset();
 
       height: 0.0625rem;
@@ -189,16 +190,26 @@ $title-toolbar-height: 2.75rem;
       background-color: var(--sapToolbar_SeparatorColor);
     }
 
+    .#{$block}__overflow-form-label {
+      &.#{$fd-namespace}-form-label {
+        margin-top: 0.4375rem;
+      }
+    }
+
+    .#{$block}__overflow-form-label,
     .#{$block}__overflow-label {
       @include fd-reset();
       @include fd-ellipsis();
-
-      margin-top: 0.4375rem;
     }
   }
 
   &--cozy {
     height: $toolbar-height-cozy;
+    min-height: $toolbar-height-cozy;
+
+    &.#{$block}--info {
+      height: $info-toolbar-height;
+    }
 
     .#{$block}__overflow {
       @include fd-reset();
