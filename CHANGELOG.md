@@ -1,4 +1,16 @@
 
+## [0.20.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.19.0...v0.20.0-rc.0) (2021-07-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* Added an additional modifier class fd-icon-tab-bar__item--overflow to fd-icon-tab-bar__item for the li element wrapping the overflow button
+Added an additional modifier class fd-icon-tab-bar__popover-body to fd-popover__body for the overflow
+
+### Features
+
+* introduce Horizontal Navigation pattern ([#2600](https://github.com/SAP/fundamental-styles/issues/2600)) ([d37adca](https://github.com/SAP/fundamental-styles/commit/d37adcafb305f31474fb180d4eb7c38422b46133))
+
 ## [0.19.0](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.57...v0.19.0) (2021-07-22)
 
 ## [0.19.0-rc.57](https://github.com/SAP/fundamental-styles/compare/v0.19.0-rc.56...v0.19.0-rc.57) (2021-07-20)
