@@ -5,6 +5,9 @@
 $block: #{$fd-namespace}-upload-collection;
 
 $fd-upload-collection-button-spacing: 1rem !default;
+$fd-upload-collection-side-margin: 0.375rem !default;
+$fd-upload-collection-button-group-margin: 0.125rem !default;
+$fd-upload-collection-button-group-small-margin: 0.5rem !default;
 
 .#{$block} {
   &__button-group {
@@ -13,11 +16,11 @@ $fd-upload-collection-button-spacing: 1rem !default;
     display: flex;
 
     button {
-      margin-left: 0.125rem;
+      margin-left: $fd-upload-collection-button-group-margin;
 
       @include fd-rtl() {
         margin-left: 0;
-        margin-right: 0.125rem;
+        margin-right: $fd-upload-collection-button-group-margin;
       }
     }
 
@@ -26,11 +29,11 @@ $fd-upload-collection-button-spacing: 1rem !default;
       margin-top: 0.75rem;
 
       button:not(:first-child) {
-        margin-left: 0.5rem;
+        margin-left: $fd-upload-collection-button-group-small-margin;
 
         @include fd-rtl() {
           margin-left: 0;
-          margin-right: 0.5rem;
+          margin-right: $fd-upload-collection-button-group-small-margin;
         }
       }
     }
@@ -52,16 +55,16 @@ $fd-upload-collection-button-spacing: 1rem !default;
   }
 
   &__status-group {
-    margin-top: 0.375rem;
+    margin-top: $fd-upload-collection-side-margin;
   }
 
   &__extension {
     display: inline-block;
-    margin-left: 0.375rem;
+    margin-left: $fd-upload-collection-side-margin;
 
     @include fd-rtl() {
       margin-left: 0;
-      margin-right: 0.375rem;
+      margin-right: $fd-upload-collection-side-margin;
     }
   }
 
