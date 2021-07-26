@@ -162,7 +162,7 @@ $title-toolbar-height: 2.75rem;
     max-height: 50vh;
     overflow: auto;
 
-     & .#{$block}__overflow-button {
+    & .#{$block}__overflow-button {
       justify-content: flex-start;
       text-align: left;
       width: auto;
