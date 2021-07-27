@@ -195,7 +195,7 @@ $title-toolbar-height: 2.75rem;
       @include fd-reset();
       @include fd-ellipsis();
 
-      &--spacerMargin {
+      &--text {
         margin-top: 0.4375rem;
       }
     }

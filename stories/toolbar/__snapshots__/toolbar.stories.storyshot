@@ -541,7 +541,7 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
             
                     
             <label
-              class="fd-form-label fd-toolbar__overflow-form-label fd-toolbar__overflow-form-label--spacerMargin"
+              class="fd-form-label fd-toolbar__overflow-form-label fd-toolbar__overflow-form-label--text"
             >
               Form label
             </label>
