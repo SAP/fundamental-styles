@@ -181,7 +181,7 @@ $title-toolbar-height: 2.75rem;
       }
     }
 
-    > .#{$block}__separator {
+    .#{$block}__separator {
       @include fd-reset();
 
       height: 0.0625rem;
@@ -190,16 +190,14 @@ $title-toolbar-height: 2.75rem;
       background-color: var(--sapToolbar_SeparatorColor);
     }
 
-    .#{$block}__overflow-form-label {
-      &.#{$fd-namespace}-form-label {
-        margin-top: 0.4375rem;
-      }
-    }
-
     .#{$block}__overflow-form-label,
     .#{$block}__overflow-label {
       @include fd-reset();
       @include fd-ellipsis();
+
+      &--spacerMargin {
+        margin-top: 0.4375rem;
+      }
     }
   }
 

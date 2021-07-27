@@ -119,7 +119,7 @@ export const overflow = () => `<div style="height:250px">
                     <label class="fd-label fd-toolbar__overflow-label">Label</label>
                     <button class="fd-button fd-button--compact fd-button--transparent fd-toolbar__overflow-button">Edit</button>
                     <span class="fd-toolbar__separator"></span>
-                    <label class="fd-form-label fd-toolbar__overflow-form-label">Form label</label>
+                    <label class="fd-form-label fd-toolbar__overflow-form-label fd-toolbar__overflow-form-label--spacerMargin">Form label</label>
                     <button class="fd-button fd-button--compact fd-button--transparent fd-toolbar__overflow-button">Delete</button>
                     <span class="fd-toolbar__separator"></span>
                     <button class="fd-button fd-button--compact fd-button--transparent fd-toolbar__overflow-button">Assign</button>
