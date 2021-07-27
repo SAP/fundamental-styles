@@ -202,7 +202,7 @@ $title-toolbar-height: 2.75rem;
       @include fd-ellipsis();
     }
   }
-  
+
   &--cozy {
     height: $toolbar-height-cozy;
     min-height: $toolbar-height-cozy;
