@@ -19,6 +19,7 @@ $fd-upload-collection-button-group-small-margin: 0.5rem !default;
 
     .#{$block}__button-group {
       @include fd-reset();
+      @include fd-set-margin-left($fd-upload-collection-button-spacing);
 
       display: flex;
 
