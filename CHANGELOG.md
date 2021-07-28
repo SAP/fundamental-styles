@@ -1,4 +1,18 @@
 
+## [0.20.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.0...v0.20.0-rc.1) (2021-07-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* - Modified class name as per BEM naming convention fd-toolbar__overflow
+- Added modifiers for overflow body elements fd-toolbar__button, fd-toolbar__button--menu
+- Changed fd-toolbar__overflow__label class name to fd-toolbar__overflow-label
+- Changed fd-toolbar__overflow__form__label class name to fd-toolbar__overflow-form-label with modifier class fd-toolbar__overflow-form-label--text
+
+### Bug Fixes
+
+* refactor toolbar styles as part of ngx style clean up task ([#2589](https://github.com/SAP/fundamental-styles/issues/2589)) ([0c77cbe](https://github.com/SAP/fundamental-styles/commit/0c77cbe3694cf35e6e0189e3eddd71d4da6c03d0))
+
 ## [0.20.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.19.0...v0.20.0-rc.0) (2021-07-26)
 
 
