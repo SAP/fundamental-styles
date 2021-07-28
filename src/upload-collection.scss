@@ -16,12 +16,7 @@ $fd-upload-collection-button-group-small-margin: 0.5rem !default;
     display: flex;
 
     button {
-      margin-left: $fd-upload-collection-button-group-margin;
-
-      @include fd-rtl() {
-        margin-left: 0;
-        margin-right: $fd-upload-collection-button-group-margin;
-      }
+      @include fd-set-margin-left($fd-upload-collection-button-group-margin);
     }
 
     &--small {
@@ -29,12 +24,7 @@ $fd-upload-collection-button-group-small-margin: 0.5rem !default;
       margin-top: 0.75rem;
 
       button:not(:first-child) {
-        margin-left: $fd-upload-collection-button-group-small-margin;
-
-        @include fd-rtl() {
-          margin-left: 0;
-          margin-right: $fd-upload-collection-button-group-small-margin;
-        }
+        @include fd-set-margin-left($fd-upload-collection-button-group-small-margin);
       }
     }
   }
@@ -60,12 +50,8 @@ $fd-upload-collection-button-group-small-margin: 0.5rem !default;
 
   &__extension {
     display: inline-block;
-    margin-left: $fd-upload-collection-side-margin;
 
-    @include fd-rtl() {
-      margin-left: 0;
-      margin-right: $fd-upload-collection-side-margin;
-    }
+    @include fd-set-margin-left($fd-upload-collection-side-margin);
   }
 
   &__item {
@@ -77,6 +63,8 @@ $fd-upload-collection-button-group-small-margin: 0.5rem !default;
   }
 
   &__text-separator::before {
+    @include fd-reset();
+
     color: var(--sapContent_LabelColor);
     content: "\2022";
   }
@@ -95,7 +83,7 @@ $fd-upload-collection-button-group-small-margin: 0.5rem !default;
     }
   }
 
-  &__content {
-    flex: 1 !important;
+  &__thumbnail {
+    align-items: flex-start;
   }
 }

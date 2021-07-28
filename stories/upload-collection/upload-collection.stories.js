@@ -34,14 +34,54 @@ Modifier/Class | Description
 \`fd-upload-collection__content\` | Content (description, status, or edit input) container.
 `,
         tags: ['f3', 'a11y', 'theme', 'development'],
-        components: ['upload-collection', 'list', 'icon', 'link', 'button', 'object-status', 'input', 'form-group']
+        components: ['upload-collection', 'list', 'icon', 'link', 'button', 'object-status', 'input', 'form-group', 'message-page']
     }
 };
 
 export const standard = () => `<h4>Default mode</h4>
 <ul class="fd-list fd-list--byline" role="list">
     <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item">
-        <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+        <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+        <div class="fd-list__content fd-upload-collection__content">
+            <a href="#" class="fd-list__title fd-link">File_Name.extension</a>
+            <div class="fd-upload-collection__description">
+                This is the file description
+                <span class="fd-upload-collection__text-separator"> </span>
+                This is an additional description
+            </div>
+            <div class="fd-upload-collection__status-group">
+                <span class="fd-object-status fd-object-status--negative">This is a negative status</span>
+                <span class="fd-upload-collection__text-separator"> </span>
+                <span class="fd-object-status fd-object-status--positive">This is a positive status</span>
+            </div>
+        </div>
+        <div class="fd-upload-collection__button-group">
+            <button aria-label="Edit" class="fd-button fd-button--transparent"><i class="sap-icon--edit"></i></button>
+            <button aria-label="Delete" class="fd-button fd-button--transparent"><i class="sap-icon--decline"></i></button>
+        </div>
+    </li>
+    <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item">
+        <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+        <div class="fd-list__content fd-upload-collection__content">
+            <a href="#" class="fd-list__title fd-link">File_Name.extension</a>
+            <div class="fd-upload-collection__description">
+                This is the file description
+                <span class="fd-upload-collection__text-separator"> </span>
+                This is an additional description
+            </div>
+            <div class="fd-upload-collection__status-group">
+                <span class="fd-object-status fd-object-status--negative">This is a negative status</span>
+                <span class="fd-upload-collection__text-separator"> </span>
+                <span class="fd-object-status fd-object-status--positive">This is a positive status</span>
+            </div>
+        </div>
+        <div class="fd-upload-collection__button-group">
+            <button aria-label="Edit" class="fd-button fd-button--transparent"><i class="sap-icon--edit"></i></button>
+            <button aria-label="Delete" class="fd-button fd-button--transparent"><i class="sap-icon--decline"></i></button>
+        </div>
+    </li>
+    <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item">
+        <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
         <div class="fd-list__content fd-upload-collection__content">
             <a href="#" class="fd-list__title fd-link">File_Name.extension</a>
             <div class="fd-upload-collection__description">
@@ -68,7 +108,47 @@ export const standard = () => `<h4>Default mode</h4>
 
 <ul class="fd-list fd-list--byline" role="list" style="width: 29.5rem;">
     <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item fd-upload-collection__item--small">
-        <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+        <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+        <div class="fd-list__content fd-upload-collection__content">
+            <a href="#" class="fd-list__title fd-link">File_Name.extension</a>
+            <div class="fd-upload-collection__description">
+                This is the file description
+                <span class="fd-upload-collection__text-separator"> </span>
+                This is an additional description
+            </div>
+            <div class="fd-upload-collection__status-group">
+                <span class="fd-object-status fd-object-status--negative">This is a negative status</span>
+                <span class="fd-upload-collection__text-separator"> </span>
+                <span class="fd-object-status fd-object-status--positive">This is a positive status</span>
+            </div>
+        </div>
+        <div class="fd-upload-collection__button-group fd-upload-collection__button-group--small">
+            <button aria-label="Edit" class="fd-button fd-button--transparent"><i class="sap-icon--edit"></i></button>
+            <button aria-label="Delete" class="fd-button fd-button--transparent"><i class="sap-icon--decline"></i></button>
+        </div>
+    </li>
+    <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item fd-upload-collection__item--small">
+        <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+        <div class="fd-list__content fd-upload-collection__content">
+            <a href="#" class="fd-list__title fd-link">File_Name.extension</a>
+            <div class="fd-upload-collection__description">
+                This is the file description
+                <span class="fd-upload-collection__text-separator"> </span>
+                This is an additional description
+            </div>
+            <div class="fd-upload-collection__status-group">
+                <span class="fd-object-status fd-object-status--negative">This is a negative status</span>
+                <span class="fd-upload-collection__text-separator"> </span>
+                <span class="fd-object-status fd-object-status--positive">This is a positive status</span>
+            </div>
+        </div>
+        <div class="fd-upload-collection__button-group fd-upload-collection__button-group--small">
+            <button aria-label="Edit" class="fd-button fd-button--transparent"><i class="sap-icon--edit"></i></button>
+            <button aria-label="Delete" class="fd-button fd-button--transparent"><i class="sap-icon--decline"></i></button>
+        </div>
+    </li>
+    <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item fd-upload-collection__item--small">
+        <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
         <div class="fd-list__content fd-upload-collection__content">
             <a href="#" class="fd-list__title fd-link">File_Name.extension</a>
             <div class="fd-upload-collection__description">
@@ -105,7 +185,43 @@ export const edit = () => `
 
 <ul class="fd-list fd-list--byline" role="list">
     <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item">
-        <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+        <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+        <div class="fd-list__content fd-upload-collection__content">
+            <div class="fd-upload-collection__form-item">
+                <input class="fd-input" type="text" placeholder="Filename">
+                <span class="fd-upload-collection__extension">.jpg</span>
+            </div>
+            <div class="fd-upload-collection__description">
+                This is the file description
+                <span class="fd-upload-collection__text-separator"> </span>
+                This is an additional description
+            </div>
+        </div>
+        <div class="fd-upload-collection__button-group">
+            <button aria-label="Edit" class="fd-button fd-button--transparent">Ok</button>
+            <button aria-label="Delete" class="fd-button fd-button--transparent">Cancel</button>
+        </div>
+    </li>
+    <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item">
+        <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+        <div class="fd-list__content fd-upload-collection__content">
+            <div class="fd-upload-collection__form-item">
+                <input class="fd-input" type="text" placeholder="Filename">
+                <span class="fd-upload-collection__extension">.jpg</span>
+            </div>
+            <div class="fd-upload-collection__description">
+                This is the file description
+                <span class="fd-upload-collection__text-separator"> </span>
+                This is an additional description
+            </div>
+        </div>
+        <div class="fd-upload-collection__button-group">
+            <button aria-label="Edit" class="fd-button fd-button--transparent">Ok</button>
+            <button aria-label="Delete" class="fd-button fd-button--transparent">Cancel</button>
+        </div>
+    </li>
+    <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item">
+        <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
         <div class="fd-list__content fd-upload-collection__content">
             <div class="fd-upload-collection__form-item">
                 <input class="fd-input" type="text" placeholder="Filename">
@@ -130,7 +246,43 @@ export const edit = () => `
 
 <ul class="fd-list fd-list--byline" role="list" style="width: 29.5rem;">
     <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item fd-upload-collection__item--small">
-        <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+        <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+        <div class="fd-list__content fd-upload-collection__content">
+            <div class="fd-upload-collection__form-item fd-upload-collection__form-item--small">
+                <input class="fd-input" type="text" placeholder="Filename">
+                <span class="fd-upload-collection__extension">.jpg</span>
+            </div>
+            <div class="fd-upload-collection__description">
+                This is the file description
+                <span class="fd-upload-collection__text-separator"> </span>
+                This is an additional description
+            </div>
+        </div>
+        <div class="fd-upload-collection__button-group fd-upload-collection__button-group--small">
+            <button aria-label="Edit" class="fd-button">Ok</button>
+            <button aria-label="Delete" class="fd-button">Cancel</button>
+        </div>
+    </li>
+    <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item fd-upload-collection__item--small">
+        <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+        <div class="fd-list__content fd-upload-collection__content">
+            <div class="fd-upload-collection__form-item fd-upload-collection__form-item--small">
+                <input class="fd-input" type="text" placeholder="Filename">
+                <span class="fd-upload-collection__extension">.jpg</span>
+            </div>
+            <div class="fd-upload-collection__description">
+                This is the file description
+                <span class="fd-upload-collection__text-separator"> </span>
+                This is an additional description
+            </div>
+        </div>
+        <div class="fd-upload-collection__button-group fd-upload-collection__button-group--small">
+            <button aria-label="Edit" class="fd-button">Ok</button>
+            <button aria-label="Delete" class="fd-button">Cancel</button>
+        </div>
+    </li>
+    <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item fd-upload-collection__item--small">
+        <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
         <div class="fd-list__content fd-upload-collection__content">
             <div class="fd-upload-collection__form-item fd-upload-collection__form-item--small">
                 <input class="fd-input" type="text" placeholder="Filename">
@@ -157,5 +309,34 @@ edit.parameters = {
     docs: {
         iframeHeight: 785,
         storyDescription: 'Users can activate edit mode where the file name can be changed.'
+    }
+};
+
+export const noData = () => `
+<div style="height: 600px; width: 100%;">
+  <div class="fd-message-page">
+    <div class="fd-message-page__container">
+      <div class="fd-message-page__icon-container">
+        <i role="presentation" class="sap-icon--attachment fd-message-page__icon"></i>
+      </div>
+      <div role="status" aria-live="polite" class="fd-message-page__content">
+        <div class="fd-message-page__title">
+          No files found.
+        </div>
+        <div class="fd-message-page__subtitle">
+          Drop files to upload, or use the "+" button.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+noData.storyName = 'No Data';
+
+noData.parameters = {
+    docs: {
+        iframeHeight: 785,
+        storyDescription: 'Use a message page component when the user has yet to upload any files.'
     }
 };
