@@ -10,80 +10,84 @@ $fd-upload-collection-button-group-margin: 0.125rem !default;
 $fd-upload-collection-button-group-small-margin: 0.5rem !default;
 
 .#{$block} {
-  &__button-group {
-    @include fd-reset();
-
-    display: flex;
-
-    button {
-      @include fd-set-margin-left($fd-upload-collection-button-group-margin);
-    }
-
-    &--small {
-      flex-basis: 100%;
-      margin-top: 0.75rem;
-
-      button:not(:first-child) {
-        @include fd-set-margin-left($fd-upload-collection-button-group-small-margin);
-      }
-    }
-  }
-
-  &__description,
-  &__status-group,
-  &__extension {
-    @include fd-reset();
-    @include fd-ellipsis();
-
-    font-size: $fd-list-normal-font-size;
-    line-height: $fd-list-byline-text-line-height;
-    color: $fd-list-byline-section-text-color;
-  }
-
-  &__description {
-    padding-top: 0.625rem;
-  }
-
-  &__status-group {
-    margin-top: $fd-upload-collection-side-margin;
-  }
-
-  &__extension {
-    display: inline-block;
-
-    @include fd-set-margin-left($fd-upload-collection-side-margin);
-  }
-
   &__item {
     flex-wrap: nowrap;
 
     &--small {
       flex-wrap: wrap;
     }
-  }
 
-  &__text-separator::before {
-    @include fd-reset();
+    .#{$block}__button-group {
+      @include fd-reset();
 
-    color: var(--sapContent_LabelColor);
-    content: "\2022";
-  }
+      display: flex;
 
-  &__form-item {
-    display: inline-block;
+      button {
+        @include fd-set-margin-left($fd-upload-collection-button-group-margin);
+      }
 
-    input {
-      width: 60%;
-    }
+      &--small {
+        flex-basis: 100%;
+        margin-top: 0.75rem;
 
-    &--small {
-      input {
-        width: 75%;
+        button:not(:first-child) {
+          @include fd-set-margin-left($fd-upload-collection-button-group-small-margin);
+        }
       }
     }
-  }
 
-  &__thumbnail {
-    align-items: flex-start;
+    .#{$block}__description,
+    .#{$block}__status-group,
+    .#{$block}__extension {
+      @include fd-reset();
+      @include fd-ellipsis();
+
+      font-size: $fd-list-normal-font-size;
+      line-height: $fd-list-byline-text-line-height;
+      color: $fd-list-byline-section-text-color;
+    }
+
+    .#{$block}__description {
+      padding-top: 0.625rem;
+    }
+
+    .#{$block}__status-group {
+      margin-top: $fd-upload-collection-side-margin;
+    }
+
+    .#{$block}__extension {
+      display: inline-block;
+
+      @include fd-set-margin-left($fd-upload-collection-side-margin);
+    }
+
+    .#{$block}__file-name-icon {
+      @include fd-set-margin-left($fd-upload-collection-button-group-small-margin);
+    }
+
+    .#{$block}__text-separator::before {
+      @include fd-reset();
+
+      color: var(--sapContent_LabelColor);
+      content: "\2022";
+    }
+
+    .#{$block}__form-item {
+      display: inline-block;
+
+      input {
+        width: 60%;
+      }
+
+      &--small {
+        input {
+          width: 75%;
+        }
+      }
+    }
+
+    .#{$block}__thumbnail {
+      align-items: flex-start;
+    }
   }
 }

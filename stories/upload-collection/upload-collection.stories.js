@@ -31,7 +31,6 @@ Modifier/Class | Description
 \`fd-upload-collection__text-separator\` | Bullet point text separator for statuses and descriptions.
 \`fd-upload-collection__form-item\` | Form item element.
 \`fd-upload-collection__form-item--small\` | Small form item element.
-\`fd-upload-collection__content\` | Content (description, status, or edit input) container.
 `,
         tags: ['f3', 'a11y', 'theme', 'development'],
         components: ['upload-collection', 'list', 'icon', 'link', 'button', 'object-status', 'input', 'form-group', 'message-page']
@@ -42,7 +41,7 @@ export const standard = () => `<h4>Default mode</h4>
 <ul class="fd-list fd-list--byline" role="list">
     <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item">
         <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
-        <div class="fd-list__content fd-upload-collection__content">
+        <div class="fd-list__content">
             <a href="#" class="fd-list__title fd-link">File_Name.extension</a>
             <div class="fd-upload-collection__description">
                 This is the file description
@@ -62,8 +61,12 @@ export const standard = () => `<h4>Default mode</h4>
     </li>
     <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item">
         <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
-        <div class="fd-list__content fd-upload-collection__content">
-            <a href="#" class="fd-list__title fd-link">File_Name.extension</a>
+        <div class="fd-list__content">
+            <div>
+                <a href="#" class="fd-list__title fd-link">File_Name.extension</a>
+                <a href="#" class="fd-list__title fd-link fd-upload-collection__file-name-icon"><i class="sap-icon--settings"></i></a>
+                <a href="#" class="fd-list__title fd-link fd-upload-collection__file-name-icon"><i class="sap-icon--search"></i></a>
+            </div>
             <div class="fd-upload-collection__description">
                 This is the file description
                 <span class="fd-upload-collection__text-separator"> </span>
@@ -82,7 +85,7 @@ export const standard = () => `<h4>Default mode</h4>
     </li>
     <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item">
         <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
-        <div class="fd-list__content fd-upload-collection__content">
+        <div class="fd-list__content">
             <a href="#" class="fd-list__title fd-link">File_Name.extension</a>
             <div class="fd-upload-collection__description">
                 This is the file description
@@ -109,7 +112,7 @@ export const standard = () => `<h4>Default mode</h4>
 <ul class="fd-list fd-list--byline" role="list" style="width: 29.5rem;">
     <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item fd-upload-collection__item--small">
         <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
-        <div class="fd-list__content fd-upload-collection__content">
+        <div class="fd-list__content">
             <a href="#" class="fd-list__title fd-link">File_Name.extension</a>
             <div class="fd-upload-collection__description">
                 This is the file description
@@ -129,7 +132,7 @@ export const standard = () => `<h4>Default mode</h4>
     </li>
     <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item fd-upload-collection__item--small">
         <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
-        <div class="fd-list__content fd-upload-collection__content">
+        <div class="fd-list__content">
             <a href="#" class="fd-list__title fd-link">File_Name.extension</a>
             <div class="fd-upload-collection__description">
                 This is the file description
@@ -149,7 +152,7 @@ export const standard = () => `<h4>Default mode</h4>
     </li>
     <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item fd-upload-collection__item--small">
         <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
-        <div class="fd-list__content fd-upload-collection__content">
+        <div class="fd-list__content">
             <a href="#" class="fd-list__title fd-link">File_Name.extension</a>
             <div class="fd-upload-collection__description">
                 This is the file description
@@ -186,7 +189,7 @@ export const edit = () => `
 <ul class="fd-list fd-list--byline" role="list">
     <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item">
         <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
-        <div class="fd-list__content fd-upload-collection__content">
+        <div class="fd-list__content">
             <div class="fd-upload-collection__form-item">
                 <input class="fd-input" type="text" placeholder="Filename">
                 <span class="fd-upload-collection__extension">.jpg</span>
@@ -204,7 +207,7 @@ export const edit = () => `
     </li>
     <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item">
         <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
-        <div class="fd-list__content fd-upload-collection__content">
+        <div class="fd-list__content">
             <div class="fd-upload-collection__form-item">
                 <input class="fd-input" type="text" placeholder="Filename">
                 <span class="fd-upload-collection__extension">.jpg</span>
@@ -222,7 +225,7 @@ export const edit = () => `
     </li>
     <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item">
         <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
-        <div class="fd-list__content fd-upload-collection__content">
+        <div class="fd-list__content">
             <div class="fd-upload-collection__form-item">
                 <input class="fd-input" type="text" placeholder="Filename">
                 <span class="fd-upload-collection__extension">.jpg</span>
@@ -247,7 +250,7 @@ export const edit = () => `
 <ul class="fd-list fd-list--byline" role="list" style="width: 29.5rem;">
     <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item fd-upload-collection__item--small">
         <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
-        <div class="fd-list__content fd-upload-collection__content">
+        <div class="fd-list__content">
             <div class="fd-upload-collection__form-item fd-upload-collection__form-item--small">
                 <input class="fd-input" type="text" placeholder="Filename">
                 <span class="fd-upload-collection__extension">.jpg</span>
@@ -265,7 +268,7 @@ export const edit = () => `
     </li>
     <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item fd-upload-collection__item--small">
         <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
-        <div class="fd-list__content fd-upload-collection__content">
+        <div class="fd-list__content">
             <div class="fd-upload-collection__form-item fd-upload-collection__form-item--small">
                 <input class="fd-input" type="text" placeholder="Filename">
                 <span class="fd-upload-collection__extension">.jpg</span>
@@ -283,7 +286,7 @@ export const edit = () => `
     </li>
     <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item fd-upload-collection__item--small">
         <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
-        <div class="fd-list__content fd-upload-collection__content">
+        <div class="fd-list__content">
             <div class="fd-upload-collection__form-item fd-upload-collection__form-item--small">
                 <input class="fd-input" type="text" placeholder="Filename">
                 <span class="fd-upload-collection__extension">.jpg</span>
