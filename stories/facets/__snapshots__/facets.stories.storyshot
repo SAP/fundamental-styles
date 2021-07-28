@@ -1723,7 +1723,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                 
                                     
                 <div
-                  class="fd-popover fd-toolbar__overflow"
+                  class="fd-popover"
                 >
                   
                                         
@@ -1765,7 +1765,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                     
                                             
                     <div
-                      class="fd-toolbar__overflow__body"
+                      class="fd-toolbar__overflow"
                     >
                       
                                                 
@@ -1979,7 +1979,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                 
                                     
                 <div
-                  class="fd-popover fd-toolbar__overflow"
+                  class="fd-popover"
                 >
                   
                                         
@@ -2021,7 +2021,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                     
                                             
                     <div
-                      class="fd-toolbar__overflow__body"
+                      class="fd-toolbar__overflow"
                     >
                       
                                                 
