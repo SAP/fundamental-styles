@@ -10,85 +10,94 @@ $fd-upload-collection-button-group-margin: 0.125rem !default;
 $fd-upload-collection-button-group-small-margin: 0.5rem !default;
 
 .#{$block} {
-  &__item {
+  .#{$block}__item {
     flex-wrap: nowrap;
+  }
 
-    &--small {
+  &__thumbnail {
+    align-self: flex-start;
+  }
+
+  &__button-group {
+    @include fd-reset();
+    @include fd-set-margin-left($fd-upload-collection-button-spacing);
+
+    button {
+      @include fd-set-margin-left($fd-upload-collection-button-group-margin);
+    }
+  }
+
+  &__title-container {
+    @include fd-reset();
+    @include fd-flex-vertical-center();
+
+    .#{$block}__title {
+      @include fd-set-margin-right($fd-upload-collection-button-group-small-margin);
+
+      flex: none;
+    }
+  }
+
+  &__description,
+  &__status-group,
+  &__extension {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    font-size: $fd-list-normal-font-size;
+    line-height: $fd-list-byline-text-line-height;
+    color: $fd-list-byline-section-text-color;
+  }
+
+  &__description {
+    padding-top: 0.625rem;
+  }
+
+  &__status-group {
+    margin-top: $fd-upload-collection-side-margin;
+  }
+
+  &__extension {
+    @include fd-set-margin-left($fd-upload-collection-side-margin);
+
+    display: inline-block;
+  }
+
+  &__text-separator::before {
+    @include fd-reset();
+
+    color: var(--sapContent_LabelColor);
+    content: "\2022";
+  }
+
+  &__form-item {
+    @include fd-reset();
+
+    input {
+      width: 60%;
+    }
+  }
+
+  &--sm {
+    .#{$block}__item {
       flex-wrap: wrap;
     }
 
     .#{$block}__button-group {
-      @include fd-reset();
-      @include fd-set-margin-left($fd-upload-collection-button-spacing);
+      @include fd-reset-margins-x();
 
-      display: flex;
+      flex-basis: 100%;
+      margin-top: 0.75rem;
 
-      button {
-        @include fd-set-margin-left($fd-upload-collection-button-group-margin);
+      button:not(:first-child) {
+        @include fd-set-margin-left($fd-upload-collection-button-group-small-margin);
       }
-
-      &--small {
-        flex-basis: 100%;
-        margin-top: 0.75rem;
-
-        button:not(:first-child) {
-          @include fd-set-margin-left($fd-upload-collection-button-group-small-margin);
-        }
-      }
-    }
-
-    .#{$block}__description,
-    .#{$block}__status-group,
-    .#{$block}__extension {
-      @include fd-reset();
-      @include fd-ellipsis();
-
-      font-size: $fd-list-normal-font-size;
-      line-height: $fd-list-byline-text-line-height;
-      color: $fd-list-byline-section-text-color;
-    }
-
-    .#{$block}__description {
-      padding-top: 0.625rem;
-    }
-
-    .#{$block}__status-group {
-      margin-top: $fd-upload-collection-side-margin;
-    }
-
-    .#{$block}__extension {
-      display: inline-block;
-
-      @include fd-set-margin-left($fd-upload-collection-side-margin);
-    }
-
-    .#{$block}__file-name-icon {
-      @include fd-set-margin-left($fd-upload-collection-button-group-small-margin);
-    }
-
-    .#{$block}__text-separator::before {
-      @include fd-reset();
-
-      color: var(--sapContent_LabelColor);
-      content: "\2022";
     }
 
     .#{$block}__form-item {
-      display: inline-block;
-
       input {
-        width: 60%;
+        width: 75%;
       }
-
-      &--small {
-        input {
-          width: 75%;
-        }
-      }
-    }
-
-    .#{$block}__thumbnail {
-      align-items: flex-start;
     }
   }
 }
