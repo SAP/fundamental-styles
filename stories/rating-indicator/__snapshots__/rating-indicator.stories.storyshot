@@ -1,14 +1,126 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Rating Indicator Custom icons 1`] = `
+<div
+  class="example-container"
+>
+  
+    
+  <div
+    class="fd-rating-indicator fd-rating-indicator--icon"
+    style="--sapRating-indicator-icon-rated: url('./assets/icons/rated.png'); --sapRating-indicator-icon-unrated: url('./assets/icons/unrated.png')"
+  >
+    
+        
+    <div
+      aria-label="Star Rating (out of 5)"
+      class="fd-rating-indicator__container"
+    >
+      
+            
+      <input
+        aria-label="1 star"
+        class="fd-rating-indicator__input"
+        id="rating-icon-1"
+        name="rating-icon"
+        type="radio"
+        value="1"
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-icon-1"
+      />
+      
+            
+            
+      <input
+        aria-label="2 star"
+        checked=""
+        class="fd-rating-indicator__input"
+        id="rating-icon-2"
+        name="rating-icon"
+        type="radio"
+        value="2\\""
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-icon-2"
+      />
+      
+            
+            
+      <input
+        aria-label="3 star"
+        class="fd-rating-indicator__input"
+        id="rating-icon-3"
+        name="rating-icon"
+        type="radio"
+        value="3"
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-icon-3"
+      />
+      
+            
+            
+      <input
+        aria-label="4 star"
+        class="fd-rating-indicator__input"
+        id="rating-icon-4"
+        name="rating-icon"
+        type="radio"
+        value="4"
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-icon-4"
+      />
+      
+            
+            
+      <input
+        aria-label="5 star"
+        class="fd-rating-indicator__input"
+        id="rating-icon-5"
+        name="rating-icon"
+        type="radio"
+        value="5"
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-icon-5"
+      />
+      
+        
+    </div>
+    
+        
+    <span
+      class="fd-rating-indicator__dynamic-text"
+    >
+      (2 of 5)
+    </span>
+    
+    
+  </div>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Components/Rating Indicator Different values 1`] = `
 <section>
-  
-    
   <div
     class="example-container"
   >
@@ -417,24 +529,580 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
 `;
 
 exports[`Storyshots Components/Rating Indicator Disabled 1`] = `
+<div
+  class="example-container"
+>
+  
+    
+  <div
+    aria-disabled="true"
+    class="fd-rating-indicator"
+  >
+    
+        
+    <div
+      aria-label="Star Rating (out of 5)"
+      class="fd-rating-indicator__container"
+    >
+      
+            
+      <input
+        aria-label="1 star"
+        class="fd-rating-indicator__input"
+        disabled=""
+        id="rating-disabled-1"
+        name="rating-disabled"
+        type="radio"
+        value="1"
+      />
+        
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-disabled-1"
+      />
+      
+            
+            
+      <input
+        aria-label="2 star"
+        checked=""
+        class="fd-rating-indicator__input"
+        disabled=""
+        id="rating-disabled-2"
+        name="rating-disabled"
+        type="radio"
+        value="2"
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-disabled-2"
+      />
+      
+            
+            
+      <input
+        aria-label="3 star"
+        class="fd-rating-indicator__input"
+        disabled=""
+        id="rating-disabled-3"
+        name="rating-disabled"
+        type="radio"
+        value="3"
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-disabled-3"
+      />
+      
+            
+            
+      <input
+        aria-label="4 star"
+        class="fd-rating-indicator__input"
+        disabled=""
+        id="rating-disabled-4"
+        name="rating-disabled"
+        type="radio"
+        value="4"
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-disabled-4"
+      />
+      
+            
+            
+      <input
+        aria-label="5 star"
+        class="fd-rating-indicator__input"
+        disabled=""
+        id="rating-disabled-5"
+        name="rating-disabled"
+        type="radio"
+        value="5"
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-disabled-5"
+      />
+      
+        
+    </div>
+    
+        
+    <span
+      class="fd-rating-indicator__dynamic-text"
+    >
+      (2 of 5)
+    </span>
+    
+    
+  </div>
+  
 
-
+</div>
 `;
 
 exports[`Storyshots Components/Rating Indicator Display mode 1`] = `
+<div
+  class="example-container"
+>
+  
+        
+  <div
+    class="fd-rating-indicator fd-rating-indicator--display-mode"
+  >
     
+            
+    <div
+      aria-label="Star Rating (out of 5)"
+      class="fd-rating-indicator__container"
+    >
+      
+                
+      <input
+        aria-label="1 star"
+        class="fd-rating-indicator__input"
+        disabled=""
+        id="rating-display-mode-1"
+        name="rating-display-mode"
+        type="radio"
+        value="1"
+      />
+        
+                
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-display-mode-1"
+      />
+      
+                
+                
+      <input
+        aria-label="2 star"
+        checked=""
+        class="fd-rating-indicator__input"
+        disabled=""
+        id="rating-display-mode-2"
+        name="rating-display-mode"
+        type="radio"
+        value="2"
+      />
+      
+                
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-display-mode-2"
+      />
+      
+                
+                
+      <input
+        aria-label="3 star"
+        class="fd-rating-indicator__input"
+        disabled=""
+        id="rating-display-mode-3"
+        name="rating-display-mode"
+        type="radio"
+        value="3"
+      />
+      
+                
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-display-mode-3"
+      />
+      
+                
+                
+      <input
+        aria-label="4 star"
+        class="fd-rating-indicator__input"
+        disabled=""
+        id="rating-display-mode-4"
+        name="rating-display-mode"
+        type="radio"
+        value="4"
+      />
+      
+                
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-display-mode-4"
+      />
+      
+                
+                
+      <input
+        aria-label="5 star"
+        class="fd-rating-indicator__input"
+        disabled=""
+        id="rating-display-mode-5"
+        name="rating-display-mode"
+        type="radio"
+        value="5"
+      />
+      
+                
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-display-mode-5"
+      />
+      
+            
+    </div>
     
+            
+    <span
+      class="fd-rating-indicator__dynamic-text"
+    >
+      (2 of 5)
+    </span>
+    
+        
+  </div>
+  
+    
+</div>
 `;
 
 exports[`Storyshots Components/Rating Indicator Half values 1`] = `
+<div
+  class="example-container"
+>
+  
+    
+  <div
+    class="fd-rating-indicator fd-rating-indicator--half-star"
+  >
+    
+        
+    <div
+      aria-label="Star Rating (out of 5)"
+      class="fd-rating-indicator__container"
+    >
+      
+            
+      <input
+        aria-label="half star"
+        class="fd-rating-indicator__input"
+        id="rating-half-sizes-05"
+        name="rating-half-sizes"
+        type="radio"
+        value="0.5"
+      />
+        
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-half-sizes-05"
+      />
+      
 
+            
+      <input
+        aria-label="1 star"
+        class="fd-rating-indicator__input"
+        id="rating-half-sizes-1"
+        name="rating-half-sizes"
+        type="radio"
+        value="1"
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-half-sizes-1"
+      />
+      
+            
+            
+      <input
+        aria-label="1 and half star"
+        class="fd-rating-indicator__input"
+        id="rating-half-sizes-15"
+        name="rating-half-sizes"
+        type="radio"
+        value="1.5"
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-half-sizes-15"
+      />
+      
+            
+            
+      <input
+        aria-label="2 star"
+        class="fd-rating-indicator__input"
+        id="rating-half-sizes-2"
+        name="rating-half-sizes"
+        type="radio"
+        value="2\\""
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-half-sizes-2"
+      />
+      
+            
+            
+      <input
+        aria-label="2 and half star"
+        checked=""
+        class="fd-rating-indicator__input"
+        id="rating-half-sizes-25"
+        name="rating-half-sizes"
+        type="radio"
+        value="2.5"
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-half-sizes-25"
+      />
+      
+            
+            
+      <input
+        aria-label="3 star"
+        class="fd-rating-indicator__input"
+        id="rating-half-sizes-3"
+        name="rating-half-sizes"
+        type="radio"
+        value="3"
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-half-sizes-3"
+      />
+      
+            
+            
+      <input
+        aria-label="3 and half star"
+        class="fd-rating-indicator__input"
+        id="rating-half-sizes-35"
+        name="rating-half-sizes"
+        type="radio"
+        value="3.5"
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-half-sizes-35"
+      />
+      
+            
+            
+      <input
+        aria-label="4 star"
+        class="fd-rating-indicator__input"
+        id="rating-half-sizes-4"
+        name="rating-half-sizes"
+        type="radio"
+        value="4"
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-half-sizes-4"
+      />
+      
+            
+            
+      <input
+        aria-label="4 and half star"
+        class="fd-rating-indicator__input"
+        id="rating-half-sizes-45"
+        name="rating-half-sizes"
+        type="radio"
+        value="4.5"
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-half-sizes-45"
+      />
+      
+            
+            
+      <input
+        aria-label="5 star"
+        class="fd-rating-indicator__input"
+        id="rating-half-sizes-5"
+        name="rating-half-sizes"
+        type="radio"
+        value="5"
+      />
+      
+            
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-half-sizes-5"
+      />
+      
+        
+    </div>
+    
+        
+    <span
+      class="fd-rating-indicator__dynamic-text"
+    >
+      (2.5 of 5)
+    </span>
+    
+    
+  </div>
+  
 
+</div>
+`;
+
+exports[`Storyshots Components/Rating Indicator Non-interactive 1`] = `
+<div
+  class="example-container"
+>
+  
+        
+  <div
+    class="fd-rating-indicator fd-rating-indicator--non-interactive"
+  >
+    
+            
+    <div
+      aria-label="Star Rating (out of 5)"
+      class="fd-rating-indicator__container"
+    >
+      
+                
+      <input
+        aria-label="1 star"
+        class="fd-rating-indicator__input"
+        disabled=""
+        id="rating-non-interactive-mode-1"
+        name="rating-non-interactive-mode"
+        type="radio"
+        value="1"
+      />
+        
+                
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-non-interactive-mode-1"
+      />
+      
+                
+                
+      <input
+        aria-label="2 star"
+        checked=""
+        class="fd-rating-indicator__input"
+        disabled=""
+        id="rating-non-interactive-mode-2"
+        name="rating-non-interactive-mode"
+        type="radio"
+        value="2"
+      />
+      
+                
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-non-interactive-mode-2"
+      />
+      
+                
+                
+      <input
+        aria-label="3 star"
+        class="fd-rating-indicator__input"
+        disabled=""
+        id="rating-non-interactive-mode-3"
+        name="rating-non-interactive-mode"
+        type="radio"
+        value="3"
+      />
+      
+                
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-non-interactive-mode-3"
+      />
+      
+                
+                
+      <input
+        aria-label="4 star"
+        class="fd-rating-indicator__input"
+        disabled=""
+        id="rating-non-interactive-mode-4"
+        name="rating-non-interactive-mode"
+        type="radio"
+        value="4"
+      />
+      
+                
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-non-interactive-mode-4"
+      />
+      
+                
+                
+      <input
+        aria-label="5 star"
+        class="fd-rating-indicator__input"
+        disabled=""
+        id="rating-non-interactive-mode-5"
+        name="rating-non-interactive-mode"
+        type="radio"
+        value="5"
+      />
+      
+                
+      <label
+        class="fd-rating-indicator__label"
+        for="rating-non-interactive-mode-5"
+      />
+      
+            
+    </div>
+    
+            
+    <span
+      class="fd-rating-indicator__dynamic-text"
+    >
+      (2 of 5)
+    </span>
+    
+        
+  </div>
+  
+    
+</div>
 `;
 
 exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
 <section>
-  
-    
   <div
     class="example-container"
   >

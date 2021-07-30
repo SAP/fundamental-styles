@@ -70,7 +70,14 @@ $block: #{$fd-namespace}-rating-indicator;
     }
   }
 
+  @mixin fd-rating-indicator-labels-after-checked() {
+    .#{$block}__input:checked ~ .#{$block}__input + .#{$block}__label {
+      @content;
+    }
+  }
+
   @include fd-reset();
+  @include fd-flex-center();
 
   position: relative;
 
@@ -93,23 +100,13 @@ $block: #{$fd-namespace}-rating-indicator;
           outline-style: var(--sapContent_FocusStyle);
         }
       }
-    ;
-
-      ~ input + .#{$block}__label {
-        @include fd-icon-glyph('unfavorite') {
-          color: var(--sapContent_UnratedColor);
-        }
-
-        &:hover::before {
-          opacity: 1;
-        }
-      }
     }
   }
 
   &__label {
     @include fd-reset();
     @include action-cursor();
+    @include fd-flex-vertical-center();
 
     @include fd-icon-glyph('favorite') {
       font-family: "SAP-icons";
@@ -117,9 +114,8 @@ $block: #{$fd-namespace}-rating-indicator;
       font-size: $fd-rating-indicator-default-font-size;
     }
 
-    display: flex;
-    align-items: center;
     float: left;
+    opacity: 1;
     height: $fd-rating-indicator-default-font-size;
     margin-right: $fd-rating-indicator-default-spacing-between-icons;
 
@@ -130,6 +126,12 @@ $block: #{$fd-namespace}-rating-indicator;
     &:hover::before {
       opacity: var(--fdRating_Indicator_Selected_Hover_Opacity);
       transition: opacity $fd-animation-speed ease-in;
+    }
+  }
+
+  @include fd-rating-indicator-labels-after-checked() {
+    @include fd-icon-glyph('unfavorite') {
+      color: var(--sapContent_UnratedColor);
     }
   }
 
@@ -176,37 +178,38 @@ $block: #{$fd-namespace}-rating-indicator;
       @include fd-icon-glyph('favorite') {
         color: var(--fdRating_Indicator_Disabled_Selected_Color);
       }
+    }
 
-      &:checked ~ input + .#{$block}__label {
-        @include fd-icon-glyph('favorite') {
-          color: var(--fdRating_Indicator_Disabled_Unselected_Color);
-        }
+    @include fd-rating-indicator-labels-after-checked() {
+      @include fd-icon-glyph('favorite') {
+        color: var(--fdRating_Indicator_Disabled_Unselected_Color);
       }
     }
   }
 
-  @include fd-flex-center();
-
-  &.is-display-mode {
-    pointer-events: none;
-
+  &.#{$block}--display-mode {
     .#{$block}__label {
+      margin-right: 0.125rem;
+
       @include fd-icon-glyph('favorite') {
+        font-size: 1rem;
         color: var(--fdRating_Indicator_Display_Only_Selected_Color);
       }
 
-      &::before {
-        font-size: 1rem;
+      @include fd-rtl() {
+        margin-right: 0;
+        margin-left: 0.125rem;
       }
-
-      margin-right: 0.125rem;
     }
+  }
 
-    .#{$block}__input {
-      &:checked ~ input + .#{$block}__label {
-        @include fd-icon-glyph('favorite') {
-          color: var(--sapContent_UnratedColor);
-        }
+  &.#{$block}--non-interactive,
+  &.#{$block}--display-mode {
+    pointer-events: none;
+
+    @include fd-rating-indicator-labels-after-checked() {
+      @include fd-icon-glyph('favorite') {
+        color: var(--sapContent_UnratedColor);
       }
     }
   }
@@ -230,21 +233,21 @@ $block: #{$fd-namespace}-rating-indicator;
       background-repeat: no-repeat;
     }
 
-    .#{$block}__input {
-      &:checked ~ input + .#{$block}__label {
-        background-image: var(--sapRating-indicator-icon-unrated);
-      }
+    @include fd-rating-indicator-labels-after-checked() {
+      background-image: var(--sapRating-indicator-icon-unrated);
     }
   }
 
-  // BLOCK MODIFIERS ************
-  // sizes
+  // ************ BLOCK MODIFIERS ************
+  // Sizes
 
   @each $set-name, $size-set in $fd-rating-indicator-sizes {
     $fd-rating-indicator-sizes-font-size: map_get($size-set, "fontSize");
     $fd-rating-indicator-sizes-spacing-between-icons: map_get($size-set, "spacingBetweenIcons");
+
     &--#{$set-name} {
       @include fd-reset-spacing();
+
       $controlMargin: map_get($size-set, "controlMargin");
 
       @if $controlMargin {
