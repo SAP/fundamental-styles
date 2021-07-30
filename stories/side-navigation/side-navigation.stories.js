@@ -29,7 +29,7 @@ Side navigation can be viewed in three different states:
         `,
 
         tags: ['f3', 'a11y', 'theme'],
-        components: ['side-nav', 'button', 'icon', 'nested-list']
+        components: ['side-nav', 'button', 'icon', 'nested-list', 'popover']
     }
 };
 
@@ -1252,5 +1252,54 @@ export const nestedListWithoutLinks = () => `<ul class="fd-nested-list fd-nested
 nestedListWithoutLinks.parameters = {
     docs: {
         disable: true
+    }
+};
+
+export const nestedListPopover = () => `<div class="fd-popover fd-popover--right" style="margin-bottom: 200px">
+    <div class="fd-popover__control">
+        <ul class="fd-nested-list fd-nested-list--compact">
+            <li class="fd-nested-list__item">
+                <a class="fd-nested-list__link"href="#/">
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--home"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="fd-popover__popper" aria-hidden="false" id="popoverA11">
+        <ul class="fd-nested-list fd-nested-list__popover fd-nested-list--compact">
+            <li class="fd-nested-list__group-header fd-nested-list__group-header--popover">
+                Group Header 1
+            </li>
+            <li class="fd-nested-list__item fd-nested-list__item--popover">
+                <a class="fd-nested-list__link"href="#/">
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--home"></i>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item fd-nested-list__item--popover">
+                <a class="fd-nested-list__link is-selected"href="#/">
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--calendar"></i>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+            <li class="fd-nested-list__item fd-nested-list__item--popover">
+                <a class="fd-nested-list__link"href="#/">
+                    <i role="presentation" class="fd-nested-list__icon sap-icon--activities"></i>
+                    <span class="fd-nested-list__title">Level 1 Item</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+`;
+
+nestedListPopover.storyName = 'Nested List PopOver';
+
+nestedListPopover.parameters = {
+    docs: {
+        iframeHeight: 900,
+        storyDescription: `
+Nested list can be displayed inside popover. Set of extra classes like \`fd-nested-list__popover, fd-nested-list__item--popover, fd-nested-list__group-header--popover\` are needed for correct style representation.
+        `
     }
 };

@@ -69,6 +69,10 @@ $button: #{$fd-namespace}-button;
     display: none;
   }
 
+  &__popover {
+    border-bottom: none;
+  }
+
   &__item {
     @include fd-reset();
 
@@ -79,6 +83,13 @@ $button: #{$fd-namespace}-button;
       .#{$block}__link,
       .#{$block}__content {
         border-top: none;
+      }
+    }
+
+    &--popover {
+      &:last-child {
+        border-bottom-left-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
       }
     }
   }
@@ -93,6 +104,10 @@ $button: #{$fd-namespace}-button;
     width: 100%;
     align-items: center;
     border-top: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+
+    &:first-child {
+      border-top: none;
+    }
 
     @include fd-hover() {
       background: var(--sapList_Hover_Background);
@@ -242,6 +257,11 @@ $button: #{$fd-namespace}-button;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    &--popover {
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+    }
   }
 
   &--no-border {
