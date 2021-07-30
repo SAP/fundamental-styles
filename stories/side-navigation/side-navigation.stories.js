@@ -1293,7 +1293,7 @@ export const nestedListPopover = () => `<div class="fd-popover fd-popover--right
 </div>
 `;
 
-nestedListPopover.storyName = 'Nested List PopOver';
+nestedListPopover.storyName = 'Nested List Popover';
 
 nestedListPopover.parameters = {
     docs: {
