@@ -1,4 +1,15 @@
 
+## [0.20.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.2...v0.20.0-rc.3) (2021-08-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* replace class `is-display-mode` with class `fd-rating-indicator--display-mode`
+
+### Features
+
+* rating indicator non-interactive mode [ci visual] ([#2614](https://github.com/SAP/fundamental-styles/issues/2614)) ([829050f](https://github.com/SAP/fundamental-styles/commit/829050f60d4abf954d1f02b119aa5e9854db7f78))
+
 ## [0.20.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.1...v0.20.0-rc.2) (2021-07-30)
 
 ## [0.20.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.0...v0.20.0-rc.1) (2021-07-28)
