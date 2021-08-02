@@ -835,8 +835,8 @@ filter.parameters = {
 
 
 export const overflow = () => `<div class="fd-icon-tab-bar">
-    <ul role="tablist" class="fd-icon-tab-bar__header"> 
-        <li role="presentation" class="fd-icon-tab-bar__item">
+    <ul role="tablist" class="fd-icon-tab-bar__header fd-icon-tab-bar__header--left-offset"> 
+        <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow fd-icon-tab-bar__item--overflow--left">
             <button class="fd-icon-tab-bar__overflow">
                 <span class="fd-icon-tab-bar__overflow-text">+2</span>
                 <i class="sap-icon--slim-arrow-down" role="presentation"></i>
@@ -858,7 +858,7 @@ export const overflow = () => `<div class="fd-icon-tab-bar">
                 <span class="fd-icon-tab-bar__tag">Section 3</span>
             </a>
         </li>
-        <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow">
+        <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow" style="left: 20rem;">
             <button class="fd-icon-tab-bar__overflow">
                 <span class="fd-icon-tab-bar__overflow-text">+3</span>
                 <i class="sap-icon--slim-arrow-down" role="presentation"></i>
@@ -885,7 +885,7 @@ export const overflow = () => `<div class="fd-icon-tab-bar">
                 <span class="fd-icon-tab-bar__tag">Section 3</span>
             </a>
         </li>
-        <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow">
+        <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow" style="left: 17rem;">
             <button class="fd-icon-tab-bar__overflow">
                 <span class="fd-icon-tab-bar__overflow-text">More</span>
                 <i class="sap-icon--slim-arrow-down" role="presentation"></i>
@@ -1011,7 +1011,7 @@ export const singleClick = () => `<div style="min-height: 800px;">
         </div>
       </a>
     </li>
-    <li role='presentation' class='fd-icon-tab-bar__item'>
+    <li role='presentation' class='fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow' style="left: 23rem;">
         <div class="fd-popover">
             <div class="fd-popover__control">
                 <button class='fd-icon-tab-bar__overflow'>
@@ -1468,7 +1468,7 @@ export const navigation = () => `<div style="min-height: 600px;">
                     <span class="fd-icon-tab-bar__tag">Section 3</span>
                 </a>
             </li>
-            <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow">
+            <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow" style="left: 20rem;">
                 <button class="fd-icon-tab-bar__overflow">
                     <span class="fd-icon-tab-bar__overflow-text">More</span>
                     <i class="sap-icon--slim-arrow-down" role="presentation"></i>

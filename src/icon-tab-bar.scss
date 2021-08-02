@@ -264,7 +264,7 @@ $fd-icon-tab-bar-semantic-values: (
     position: relative;
 
     &--left-offset {
-      padding-left: 3.5rem;
+      @include fd-set-padding-left(3.5rem);
     }
   }
 
@@ -321,10 +321,19 @@ $fd-icon-tab-bar-semantic-values: (
     }
 
     &.#{$block}__item--overflow {
-      @include fd-reset-margins-x();
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
 
-      flex: 1;
-      justify-content: flex-end;
+      &--left {
+        left: 0;
+
+        @include fd-rtl() {
+          left: auto;
+          right: 0;
+        }
+      }
 
       .#{$block}__popover {
         position: relative;
@@ -337,17 +346,6 @@ $fd-icon-tab-bar-semantic-values: (
 
     &--hidden {
       display: none;
-    }
-
-    &--extra-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      margin: 0;
-
-      &--left {
-        left: 0;
-      }
     }
   }
 
@@ -755,6 +753,7 @@ $fd-icon-tab-bar-semantic-values: (
   &__list {
     max-height: 20rem;
     overflow: auto;
+    width: 100%;
 
     .#{$block}__list-item {
       @for $i from 1 through 10 {
@@ -770,9 +769,6 @@ $fd-icon-tab-bar-semantic-values: (
           }
         }
       }
-
-      min-width: 7rem;
-      width: 100%;
 
       .fd-list__link.is-selected,
       .fd-list__link[aria-selected=true] {
