@@ -1255,7 +1255,7 @@ nestedListWithoutLinks.parameters = {
     }
 };
 
-export const nestedListPopover = () => `<div class="fd-popover fd-popover--right" style="margin-bottom: 200px; margin-right: 200px;">
+export const nestedListPopover = () => `<div class="fd-popover fd-popover--right" style="margin-bottom: 200px; margin-right: 200px; margin-left: 200px;">
     <div class="fd-popover__control">
         <ul class="fd-nested-list fd-nested-list--compact">
             <li class="fd-nested-list__item">

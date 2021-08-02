@@ -2147,7 +2147,7 @@ exports[`Storyshots Components/Side Navigation Nested List Popover 1`] = `
 <section>
   <div
     class="fd-popover fd-popover--right"
-    style="margin-bottom: 200px; margin-right: 200px;"
+    style="margin-bottom: 200px; margin-right: 200px; margin-left: 200px;"
   >
     
     

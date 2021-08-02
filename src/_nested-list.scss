@@ -110,10 +110,6 @@ $button: #{$fd-namespace}-button;
     align-items: center;
     border-top: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
 
-    &:first-child {
-      border-top: none;
-    }
-
     @include fd-hover() {
       background: var(--sapList_Hover_Background);
 
