@@ -3117,6 +3117,7 @@ exports[`Storyshots Components/Icon Tab Bar Navigation Icon Tab Bar 1`] = `
       <li
         class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow"
         role="presentation"
+        style="left: 20rem;"
       >
         
                 
@@ -3677,13 +3678,13 @@ exports[`Storyshots Components/Icon Tab Bar Overflow 1`] = `
     
     
     <ul
-      class="fd-icon-tab-bar__header"
+      class="fd-icon-tab-bar__header fd-icon-tab-bar__header--left-offset"
       role="tablist"
     >
        
         
       <li
-        class="fd-icon-tab-bar__item"
+        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow fd-icon-tab-bar__item--overflow--left"
         role="presentation"
       >
         
@@ -3802,6 +3803,7 @@ exports[`Storyshots Components/Icon Tab Bar Overflow 1`] = `
       <li
         class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow"
         role="presentation"
+        style="left: 20rem;"
       >
         
             
@@ -3940,6 +3942,7 @@ exports[`Storyshots Components/Icon Tab Bar Overflow 1`] = `
       <li
         class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow"
         role="presentation"
+        style="left: 17rem;"
       >
         
             
@@ -6239,6 +6242,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Multi Click A
 
 exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Single Click Area 1`] = `
 <div
+  class="fddocs-icon-tab-container"
   style="min-height: 800px;"
 >
   
@@ -6591,377 +6595,439 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Single Click 
   />
   
 
-    
+     
   <div
-    class="fd-icon-tab-bar fd-icon-tab-bar--xl"
+    class="fd-icon-tab-bar fd-icon-tab-bar--icon"
   >
     
-        
+  
     <ul
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
-            
+      
+    
       <li
         class="fd-icon-tab-bar__item"
         role="presentation"
       >
         
-                
+      
         <a
+          aria-selected="true"
           class="fd-icon-tab-bar__tab"
           href="#"
-          id="tab4"
+          id="1"
           role="tab"
         >
           
-                    
-          <span
-            class="fd-icon-tab-bar__tag"
+        
+          <div
+            class="fd-icon-tab-bar__container"
           >
-            Section 1
-          </span>
+            
           
+            <span
+              class="fd-icon-tab-bar__icon"
+            >
+              
+                        
+              <i
+                class="sap-icon--filter"
+                role="presentation"
+              />
+              
                     
-          <span
-            class="fd-icon-tab-bar__badge"
-          />
+            </span>
+            
+        
+          </div>
           
-                
+        
+          <div
+            class="fd-icon-tab-bar__details"
+          >
+            
+          
+            <span
+              class="fd-icon-tab-bar__label"
+            >
+              Description
+            </span>
+            
+        
+          </div>
+          
+      
         </a>
         
-            
+    
       </li>
       
-            
+    
       <li
-        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--single-click"
+        class="fd-icon-tab-bar__item"
         role="presentation"
       >
         
-                
+      
+        <a
+          class="fd-icon-tab-bar__tab"
+          href="#"
+          id="tab2"
+          role="tab"
+        >
+          
+        
+          <div
+            class="fd-icon-tab-bar__container"
+          >
+            
+          
+            <span
+              class="fd-icon-tab-bar__icon"
+            >
+              
+                        
+              <i
+                class="sap-icon--customer"
+                role="presentation"
+              />
+              
+                    
+            </span>
+            
+        
+          </div>
+          
+        
+          <div
+            class="fd-icon-tab-bar__details"
+          >
+            
+          
+            <span
+              class="fd-icon-tab-bar__counter"
+            >
+              99
+            </span>
+            
+          
+            <span
+              class="fd-icon-tab-bar__label"
+            >
+              Description
+            </span>
+            
+        
+          </div>
+          
+      
+        </a>
+        
+    
+      </li>
+      
+    
+      <li
+        class="fd-icon-tab-bar__item"
+        role="presentation"
+      >
+        
+      
+        <a
+          class="fd-icon-tab-bar__tab"
+          href="#"
+          id="tab3"
+          role="tab"
+        >
+          
+        
+          <div
+            class="fd-icon-tab-bar__container"
+          >
+            
+          
+            <span
+              class="fd-icon-tab-bar__icon"
+            >
+              
+                        
+              <i
+                class="sap-icon--chain-link"
+                role="presentation"
+              />
+              
+                    
+            </span>
+            
+        
+          </div>
+          
+        
+          <div
+            class="fd-icon-tab-bar__details"
+          >
+            
+          
+            <span
+              class="fd-icon-tab-bar__counter"
+            >
+              56 of 123
+            </span>
+            
+          
+            <span
+              class="fd-icon-tab-bar__label"
+            >
+              Description
+            </span>
+            
+        
+          </div>
+          
+      
+        </a>
+        
+    
+      </li>
+      
+    
+      <li
+        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow"
+        role="presentation"
+        style="left: 23rem;"
+      >
+        
+        
         <div
           class="fd-popover"
         >
           
-                    
+            
           <div
             class="fd-popover__control"
           >
             
-                        
-            <a
-              aria-controls="popoverA2"
-              aria-expanded="true"
-              aria-haspopup="true"
-              aria-selected="true"
-              class="fd-icon-tab-bar__tab"
-              id="tab5"
-              onclick="onPopoverClick('popoverA2');"
-              role="tab"
-              tabindex="0"
+                
+            <button
+              class="fd-icon-tab-bar__overflow"
             >
               
-                            
-              <div
-                class="fd-icon-tab-bar__tab-container"
-              >
-                
-                                
-                <span
-                  class="fd-icon-tab-bar__tag"
-                >
-                  Section 2
-                </span>
-                
-                                
-                <span
-                  class="fd-icon-tab-bar__arrow"
-                >
-                  
-                                    
-                  <i
-                    class="sap-icon--slim-arrow-down"
-                    role="presentation"
-                  />
-                  
-                                
-                </span>
-                
-                            
-              </div>
-              
-                        
-            </a>
-            
                     
+              <span
+                class="fd-icon-tab-bar__overflow-text"
+              >
+                More
+              </span>
+              
+                    
+              <i
+                class="sap-icon--slim-arrow-down"
+                role="presentation"
+              />
+                 
+                
+            </button>
+            
+            
           </div>
           
                     
           <div
             aria-hidden="false"
             class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body"
-            id="popoverA2"
+            id="popoverA1"
           >
             
-                        
+             
             <ul
               class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list"
               role="list"
             >
               
-                            
+                
               <li
-                class="fd-icon-tab-bar__line-separator"
-                tabindex="-1"
-              />
-              
-                            
-              <li
-                aria-level="1"
-                class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item"
+                class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item fd-icon-tab-bar__list-item--informative"
                 role="listitem"
                 tabindex="-1"
               >
                 
-                                
+                
                 <a
                   class="fd-list__link"
                   tabindex="0"
                 >
                   
-                                    
+                    
                   <span
-                    class="fd-list__title"
+                    class="fd-icon-tab-bar__list-item-icon-container"
                   >
-                    Subsection 1
-                  </span>
-                  
-                                    
-                  <span
-                    class="fd-icon-tab-bar__badge"
-                  />
-                  
-                                
-                </a>
-                
-                            
-              </li>
-              
-                            
-              <li
-                class="fd-icon-tab-bar__line-separator"
-                tabindex="-1"
-              />
-              
-                            
-              <li
-                aria-level="2"
-                class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item"
-                role="listitem"
-                tabindex="-1"
-              >
-                
-                                
-                <a
-                  class="fd-list__link"
-                  tabindex="0"
-                >
-                  
-                                    
-                  <span
-                    class="fd-list__title"
-                  >
-                    Subsection 1.1
-                  </span>
-                  
-                                
-                </a>
-                
-                            
-              </li>
-              
-                            
-              <li
-                class="fd-icon-tab-bar__line-separator"
-                tabindex="-1"
-              />
-              
-                            
-              <li
-                aria-level="3"
-                class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item"
-                role="listitem"
-                tabindex="-1"
-              >
-                
-                                
-                <a
-                  class="fd-list__link"
-                  tabindex="0"
-                >
-                  
-                                    
-                  <span
-                    class="fd-list__title"
-                  >
-                    Subsection 1.1.1
-                  </span>
-                  
-                                    
-                  <span
-                    class="fd-icon-tab-bar__badge"
-                  />
-                  
-                                
-                </a>
-                
-                            
-              </li>
-              
-                            
-              <li
-                class="fd-icon-tab-bar__line-separator"
-                tabindex="-1"
-              />
-              
-                            
-              <li
-                aria-level="4"
-                class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item"
-                role="listitem"
-                tabindex="-1"
-              >
-                
-                                
-                <a
-                  class="fd-list__link"
-                  tabindex="0"
-                >
-                  
-                                    
-                  <span
-                    class="fd-list__title"
-                  >
-                    Subsection 1.1.1.1
-                  </span>
-                  
-                                
-                </a>
-                
-                            
-              </li>
-              
-                            
-              <li
-                class="fd-icon-tab-bar__line-separator"
-                tabindex="-1"
-              />
-              
-                            
-              <li
-                aria-level="5"
-                class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item"
-                role="listitem"
-                tabindex="-1"
-              >
-                
-                                
-                <a
-                  class="fd-list__link"
-                  tabindex="0"
-                >
-                  
-                                    
-                  <span
-                    class="fd-list__title"
-                  >
-                    Subsection 1.1.1.1.1
-                  </span>
-                  
-                                
-                </a>
-                
-                            
-              </li>
-              
-                            
-              <li
-                class="fd-icon-tab-bar__line-separator"
-                tabindex="-1"
-              />
-              
-                            
-              <li
-                aria-level="1"
-                class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item"
-                role="listitem"
-                tabindex="-1"
-              >
-                
-                                
-                <a
-                  class="fd-list__link"
-                  tabindex="0"
-                >
-                  
-                                    
-                  <span
-                    class="fd-list__title"
-                  >
-                    Subsection 2
-                  </span>
-                  
-                                
-                </a>
-                
-                            
-              </li>
-              
+                    
                         
+                    <span
+                      class="fd-list__icon fd-icon-tab-bar__list-item-icon"
+                    >
+                      
+                            
+                      <i
+                        class="sap-icon--letter"
+                        role="presentation"
+                      />
+                      
+                        
+                    </span>
+                    
+                    
+                  </span>
+                  
+                    
+                  <span
+                    class="fd-list__title fd-icon-tab-bar__list-item-title"
+                  >
+                    Description
+                  </span>
+                  
+                    
+                  <span
+                    class="fd-list__counter fd-icon-tab-bar__list-item-counter"
+                  >
+                    (12)
+                  </span>
+                  
+                
+                </a>
+                
+                
+              </li>
+              
+                                
+              <li
+                class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item"
+                role="listitem"
+                tabindex="-1"
+              >
+                
+                
+                <a
+                  class="fd-list__link"
+                  tabindex="0"
+                >
+                  
+                    
+                  <span
+                    class="fd-icon-tab-bar__list-item-icon-container"
+                  >
+                    
+                        
+                    <span
+                      class="fd-list__icon fd-icon-tab-bar__list-item-icon"
+                    >
+                      
+                        
+                      <i
+                        class="sap-icon--activate"
+                        role="presentation"
+                      />
+                      
+                        
+                    </span>
+                    
+                    
+                  </span>
+                  
+                    
+                  <span
+                    class="fd-list__title fd-icon-tab-bar__list-item-title"
+                  >
+                    Description
+                  </span>
+                  
+                    
+                  <span
+                    class="fd-list__counter fd-icon-tab-bar__list-item-counter"
+                  >
+                    (227)
+                  </span>
+                  
+                
+                </a>
+                
+                
+              </li>
+              
+                                
+              <li
+                class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item fd-icon-tab-bar__list-item--positive"
+                role="listitem"
+                tabindex="-1"
+              >
+                
+                
+                <a
+                  class="fd-list__link"
+                  tabindex="0"
+                >
+                  
+                    
+                  <span
+                    class="fd-icon-tab-bar__list-item-icon-container"
+                  >
+                    
+                        
+                    <span
+                      class="fd-list__icon fd-icon-tab-bar__list-item-icon"
+                    >
+                      
+                        
+                      <i
+                        class="sap-icon--jam"
+                        role="presentation"
+                      />
+                      
+                        
+                    </span>
+                    
+                    
+                  </span>
+                  
+                    
+                  <span
+                    class="fd-list__title fd-icon-tab-bar__list-item-title"
+                  >
+                    Description
+                  </span>
+                  
+                    
+                  <span
+                    class="fd-list__counter fd-icon-tab-bar__list-item-counter"
+                  >
+                    (0)
+                  </span>
+                  
+                
+                </a>
+                
+                
+              </li>
+              
+             
             </ul>
             
-                    
+        
           </div>
           
-                
+
+        
         </div>
         
-            
+    
       </li>
       
-            
-      <li
-        class="fd-icon-tab-bar__item"
-        role="presentation"
-      >
-        
-                
-        <a
-          class="fd-icon-tab-bar__tab"
-          href="#"
-          id="tab6"
-          role="tab"
-        >
-          
-                    
-          <span
-            class="fd-icon-tab-bar__tag"
-          >
-            Section 3
-          </span>
-          
-                
-        </a>
-        
-            
-      </li>
-      
-        
+  
     </ul>
     
-    
+
   </div>
   
 

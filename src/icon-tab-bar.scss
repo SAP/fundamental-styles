@@ -242,6 +242,15 @@ $fd-icon-tab-bar-semantic-values: (
   }
 }
 
+@mixin fd-icon-tab-bar-list-item-color($color) {
+  .#{$block}__list-item-icon [class*=sap-icon],
+  .#{$block}__list-item-icon[class*=sap-icon],
+  .#{$block}__list-item-title,
+  .#{$block}__list-item-counter {
+    color: $color;
+  }
+}
+
 .#{$block} {
   @include fd-reset();
 
@@ -252,6 +261,12 @@ $fd-icon-tab-bar-semantic-values: (
     list-style: none;
     box-shadow: var(--sapContent_HeaderShadow);
     background: var(--sapObjectHeader_Background);
+    position: relative;
+    overflow-x: hidden;
+
+    &--left-offset {
+      @include fd-set-padding-left(3.5rem);
+    }
   }
 
   &__panel {
@@ -307,10 +322,19 @@ $fd-icon-tab-bar-semantic-values: (
     }
 
     &.#{$block}__item--overflow {
-      @include fd-reset-margins-x();
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
 
-      flex: 1;
-      justify-content: flex-end;
+      &--left {
+        left: 0;
+
+        @include fd-rtl() {
+          left: auto;
+          right: 0;
+        }
+      }
 
       .#{$block}__popover {
         position: relative;
@@ -319,6 +343,10 @@ $fd-icon-tab-bar-semantic-values: (
           margin-top: 0.375rem;
         }
       }
+    }
+
+    &--hidden {
+      display: none;
     }
   }
 
@@ -453,6 +481,8 @@ $fd-icon-tab-bar-semantic-values: (
         transform: rotate(180deg);
       }
     }
+
+    width: 2rem;
   }
 
   &__container {
@@ -722,6 +752,10 @@ $fd-icon-tab-bar-semantic-values: (
   }
 
   &__list {
+    max-height: 20rem;
+    overflow: auto;
+    width: 100%;
+
     .#{$block}__list-item {
       @for $i from 1 through 10 {
         $offset: (($i - 1) * 0.5rem) + $fd-icon-tab-bar-list-padding-right;
@@ -735,6 +769,11 @@ $fd-icon-tab-bar-semantic-values: (
             @include fd-set-paddings-x($offset, $fd-icon-tab-bar-list-padding-right);
           }
         }
+      }
+
+      .fd-list__link.is-selected,
+      .fd-list__link[aria-selected=true] {
+        border-bottom: none;
       }
 
       span {
@@ -751,6 +790,29 @@ $fd-icon-tab-bar-semantic-values: (
 
         font-size: 1rem;
       }
+
+      &--positive {
+        @include fd-icon-tab-bar-list-item-color(var(--sapPositiveElementColor));
+      }
+
+      &--negative {
+        @include fd-icon-tab-bar-list-item-color(var(--sapNegativeElementColor));
+      }
+
+      &--critical {
+        @include fd-icon-tab-bar-list-item-color(var(--sapCriticalElementColor));
+      }
+
+      &--informative {
+        @include fd-icon-tab-bar-list-item-color(var(--sapInformativeElementColor));
+      }
+    }
+
+    .#{$block}__list-item-icon-container {
+      display: flex;
+      align-items: center;
+      width: 1.25rem;
+      margin-right: 0.5rem;
     }
 
     .#{$block}__line-separator:first-child {
@@ -765,6 +827,17 @@ $fd-icon-tab-bar-semantic-values: (
       @include fd-set-paddings-x-equal($fd-icon-tab-bar-list-padding-right);
 
       height: 2rem;
+    }
+
+    @include fd-rtl() {
+      .#{$block}__list-item-icon-container {
+        margin-left: 1rem;
+        margin-right: 0;
+      }
+
+      .#{$block}__list-item-icon {
+        justify-content: center;
+      }
     }
   }
 
@@ -1125,6 +1198,50 @@ $fd-icon-tab-bar-semantic-values: (
     .#{$block}__header {
       @include fd-reset-paddings-y();
       @include fd-apply-responsive-paddings();
+    }
+  }
+
+  &-dnd-preview {
+    background: var(--sapObjectHeader_Background, #fff);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: var(--sapFontSize, 0.875rem);
+    line-height: var(--sapContent_LineHeight, 1.4);
+    opacity: 0.8;
+    z-index: 9999 !important;
+
+    * {
+      background: var(--sapObjectHeader_Background, #fff);
+    }
+  }
+
+  &-dnd-hovered {
+    background: var(--sapButton_Hover_Background, #ebf5fe);
+  }
+
+  &-dnd-separator {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -0.5rem;
+      width: 0.125rem;
+      height: 100%;
+      background: var(--sapButton_Hover_BorderColor, #0854a0);
+    }
+
+    &--vertical {
+      &::before {
+        top: auto;
+        bottom: 0.25rem;
+        left: 0;
+        width: 100%;
+        height: 0.125rem;
+      }
     }
   }
 }
