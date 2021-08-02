@@ -2,6 +2,7 @@
 @import '../icons/settings';
 @import '../icons/settingsBusiness';
 @import '../icons/settingsTNT';
+@import '../icons/settingsFusion';
 
 // icon mixin
 @mixin fd-icon($key, $position: 'before') {
@@ -97,8 +98,37 @@
   }
 }
 
-// Icon Control Enumerations
+// SAP-icons-fusion icon mixin
+@mixin fd-fusion-icon($key, $position: 'before') {
+  @include fd-fusion-icon-base($position);
+  @include fd-fusion-icon-glyph($key, $position);
 
+  &::#{$position} {
+    @content;
+  }
+}
+
+// SAP-icons-fusion icon base mixin
+@mixin fd-fusion-icon-base($position: 'before') {
+  &::#{$position} {
+    font-family: 'Fusion Icons';
+    @content;
+  }
+}
+
+// SAP-icons-fusion icon glyph mixin
+@mixin fd-fusion-icon-glyph($glyph, $position: 'before') {
+  @if map-has-key($fd-fusion-icons, $glyph) {
+    &::#{$position} {
+      content: map-get($fd-fusion-icons, $glyph);
+      @content;
+    }
+  } @else {
+    @warn "Unknown `#{$glyph}` in $fd-fusion-icons map";
+  }
+}
+
+// Icon Control Enumerations
 @mixin fd-icon-control-enumeration($block, $position: 'before') {
   @each $enumeration-name, $enumeration-value in $fd-icon-control-enumerations {
     &.#{$block} {

@@ -4,6 +4,7 @@
 $block: sap-icon;
 $blockBusiness: sap-icon-businessSuiteInAppSymbols;
 $blockTNT: sap-icon-TNT;
+$blockFusion: sap-icon-fusion;
 /* stylelint-enable */
 
 [class*="#{$block}"] {
@@ -27,6 +28,11 @@ $blockTNT: sap-icon-TNT;
   @include fd-icon-control-enumeration($blockTNT);
 }
 
+[class*='#{$blockFusion}'] {
+  @include fd-fusion-icon-base();
+  @include fd-icon-control-enumeration($blockFusion);
+}
+
 .#{$block} {
   @each $key, $value in $fd-icons {
     &--#{$key} {
@@ -47,6 +53,14 @@ $blockTNT: sap-icon-TNT;
   @each $key, $value in $fd-tnt-icons {
     &--#{$key} {
       @include fd-tnt-icon-glyph($key);
+    }
+  }
+}
+
+.#{$blockFusion} {
+  @each $key, $value in $fd-fusion-icons {
+    &--#{$key} {
+      @include fd-fusion-icon-glyph($key);
     }
   }
 }

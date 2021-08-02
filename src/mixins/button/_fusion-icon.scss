@@ -1,0 +1,20 @@
+@mixin fusionIcon($color, $border, $background) {
+  @include applyColors($color, $border, $background);
+
+  border-radius: 1.125rem;
+}
+
+@mixin fusionIconHover($color, $border, $background) {
+  @include applyColors($color, $border, $background);
+
+  transition: background-color 0.3s;
+}
+
+@mixin fusionIconDisabled($color, $border, $background) {
+  @include applyColors($color, $border, $background);
+
+  opacity: 1;
+  cursor: not-allowed;
+  outline: none;
+  box-shadow: none;
+}

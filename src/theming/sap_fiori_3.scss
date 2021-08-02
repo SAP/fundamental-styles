@@ -106,6 +106,16 @@
   --fdButton_Text_Shadow: none;
   --fdButton_Emphasized_Border_Width: var(--sapButton_BorderWidth);
 
+  /* Fusion Button Theming */
+  --fdButton_Fusion_Primary_Text_Color: white;
+  --fdButton_Fusion_Primary_Color: #0294c7;
+  --fdButton_Fusion_Primary_Text_Color_Disabled: #9b9b9b;
+  --fdButton_Fusion_Primary_Color_Disabled: #f1f1f1;
+  --fdButton_Fusion_Primary_Color_Hover: #35a9d2;
+  --fdButton_Fusion_Secondary_Color: #f67280;
+  --fdButton_Fusion_Secondary_Text_Color_Disabled: #9b9b9b;
+  --fdButton_Fusion_Secondary_Color_Hover: #f88e99;
+
   /* Input Group */
   --fdInputGroup_Text_Shadow: none;
   --fdInputGroup_ControlButton_SideBorder: solid var(--sapButton_BorderWidth) transparent;

@@ -19,7 +19,7 @@ export default {
 
 - You want to link to a different page or object. Instead, use the **Link** component.
 `,
-        components: ['popover', 'segmented-button', 'menu', 'icon', 'button', 'button-split']
+        components: ['popover', 'segmented-button', 'menu', 'icon', 'button', 'button-split', 'title']
     }
 };
 
@@ -27,6 +27,24 @@ export const primary = () => `
     <button class="fd-button">Create</button>
     <button class="fd-button" aria-label="Add to cart"><i class="sap-icon--cart"></i></button>
     <button class="fd-button fd-button--emphasized ">Save</button>
+    <h3 class="fd-title fd-title--h3">Filled | Primary</h3>
+    <button class="fd-button fd-button--fusion-pill">Primary</button>
+    <button class="fd-button fd-button--fusion-pill" disabled>Primary</button>
+    <h3 class="fd-title fd-title--h3">Filled | Secondary</h3>
+    <button class="fd-button fd-button--fusion-secondary-pill">Secondary</button>
+    <button class="fd-button fd-button--fusion-secondary-pill" disabled>Secondary</button>
+    <h3 class="fd-title fd-title--h3">Outline | Primary</h3>
+    <button class="fd-button fd-button--fusion-border">Primary</button>
+    <button class="fd-button fd-button--fusion-border" disabled>Primary</button>
+    <h3 class="fd-title fd-title--h3">Outline | Secondary</h3>
+    <button class="fd-button fd-button--fusion-secondary-border">Secondary</button>
+    <button class="fd-button fd-button--fusion-secondary-border" disabled>Secondary</button>
+    <h3 class="fd-title fd-title--h3">Filled | Icon Button | Primary</h3>
+    <button class="fd-button fd-button--fusion-icon" aria-label="Add to cart"><i class="sap-icon-fusion sap-icon-fusion--structure-process-line-outline"></i></button>
+    <button class="fd-button fd-button--fusion-icon" aria-label="Add to cart" disabled><i class="sap-icon-fusion sap-icon-fusion--structure-process-line-outline"></i></button>
+    <h3 class="fd-title fd-title--h3">Outline | Icon Button | Primary</h3>
+    <button class="fd-button fd-button--fusion-icon-border" aria-label="Add to cart"><i class="sap-icon-fusion sap-icon-fusion--structure-process-line-outline"></i></button>
+    <button class="fd-button fd-button--fusion-icon-border" aria-label="Add to cart" disabled><i class="sap-icon-fusion sap-icon-fusion--structure-process-line-outline"></i></button>
 `;
 
 /**

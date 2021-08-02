@@ -9,6 +9,9 @@
 @import './mixins/button/positive';
 @import './mixins/button/emphasized';
 @import './mixins/button/button-transparent';
+@import './mixins/button/fusion-pill';
+@import './mixins/button/fusion-border';
+@import './mixins/button/fusion-icon';
 
 $fd-button-border-width: var(--sapButton_BorderWidth);
 $fd-button-icon-font-size: 1rem;
@@ -191,11 +194,95 @@ $block: #{$fd-namespace}-button;
       @include transparentToggled();
     }
   }
+
+  &.#{$block}--fusion-pill {
+    @include fusionPill(
+      var(--fdButton_Fusion_Primary_Text_Color),
+      var(--fdButton_Fusion_Primary_Color),
+      var(--fdButton_Fusion_Primary_Color));
+  }
+
+  &.#{$block}--fusion-secondary-pill {
+    @include fusionPill(
+      var(--fdButton_Fusion_Primary_Text_Color),
+      var(--fdButton_Fusion_Secondary_Color),
+      var(--fdButton_Fusion_Secondary_Color));
+  }
+
+  &.#{$block}--fusion-border {
+    @include fusionBorder(
+      var(--fdButton_Fusion_Primary_Color),
+      var(--fdButton_Fusion_Primary_Color),
+      transparent);
+  }
+
+  &.#{$block}--fusion-secondary-border {
+    @include fusionBorder(
+      var(--fdButton_Fusion_Secondary_Color),
+      var(--fdButton_Fusion_Secondary_Color),
+      transparent);
+  }
+
+  &.#{$block}--fusion-icon {
+    @include fusionIcon(
+      var(--fdButton_Fusion_Primary_Text_Color),
+      var(--fdButton_Fusion_Primary_Color),
+      var(--fdButton_Fusion_Primary_Color));
+  }
+
+  &.#{$block}--fusion-icon-border {
+    @include fusionIcon(
+      var(--fdButton_Fusion_Primary_Color),
+      var(--fdButton_Fusion_Primary_Color),
+      transparent);
+  }
 }
 
 @mixin buttonContainerDisabled() {
   @include standardDisabled();
   @include buttonContainer();
+
+  &.#{$block}--fusion-pill {
+    @include fusionPillDisabled(
+      var(--fdButton_Fusion_Primary_Text_Color_Disabled),
+      var(--fdButton_Fusion_Primary_Color_Disabled),
+      var(--fdButton_Fusion_Primary_Color_Disabled));
+  }
+
+  &.#{$block}--fusion-secondary-pill {
+    @include fusionPillDisabled(
+      var(--fdButton_Fusion_Primary_Text_Color_Disabled),
+      var(--fdButton_Fusion_Primary_Color_Disabled),
+      var(--fdButton_Fusion_Primary_Color_Disabled));
+  }
+
+  &.#{$block}--fusion-border {
+    @include fusionBorderDisabled(
+      var(fdButton_Fusion_Secondary_Text_Color_Disabled),
+      var(fdButton_Fusion_Secondary_Text_Color_Disabled),
+      transparent);
+  }
+
+  &.#{$block}--fusion-secondary-border {
+    @include fusionBorderDisabled(
+      var(fdButton_Fusion_Secondary_Text_Color_Disabled),
+      var(fdButton_Fusion_Secondary_Text_Color_Disabled),
+      transparent);
+  }
+
+  &.#{$block}--fusion-icon {
+    @include fusionIconDisabled(
+      var(--fdButton_Fusion_Primary_Text_Color_Disabled),
+      var(--fdButton_Fusion_Primary_Color_Disabled),
+      var(--fdButton_Fusion_Primary_Color_Disabled));
+  }
+
+  &.#{$block}--fusion-icon-border {
+    @include fusionIconDisabled(
+      var(fdButton_Fusion_Secondary_Text_Color_Disabled),
+      var(fdButton_Fusion_Secondary_Text_Color_Disabled),
+      transparent);
+  }
 }
 
 @mixin buttonContainerFocus() {
@@ -304,6 +391,48 @@ $block: #{$fd-namespace}-button;
     &.#{$block}--toggled {
       @include emphasizedToggledHover();
     }
+  }
+
+  &.#{$block}--fusion-pill {
+    @include fusionPillHover(
+      var(--fdButton_Fusion_Primary_Text_Color),
+      var(--fdButton_Fusion_Primary_Color_Hover),
+      var(--fdButton_Fusion_Primary_Color_Hover));
+  }
+
+  &.#{$block}--fusion-secondary-pill {
+    @include fusionPillHover(
+      var(--fdButton_Fusion_Primary_Text_Color),
+      var(--fdButton_Fusion_Secondary_Color_Hover),
+      var(--fdButton_Fusion_Secondary_Color_Hover));
+  }
+
+  &.#{$block}--fusion-border {
+    @include fusionBorderHover(
+      var(--fdButton_Fusion_Primary_Color),
+      var(--fdButton_Fusion_Primary_Color),
+      rgba(2,148,199,0.1));
+  }
+
+  &.#{$block}--fusion-secondary-border {
+    @include fusionBorderHover(
+      var(--fdButton_Fusion_Secondary_Color),
+      var(--fdButton_Fusion_Secondary_Color),
+      rgba(246,114,128,0.1));
+  }
+
+  &.#{$block}--fusion-icon {
+    @include fusionIconHover(
+      var(--fdButton_Fusion_Primary_Text_Color),
+      var(--fdButton_Fusion_Primary_Color_Hover),
+      var(--fdButton_Fusion_Primary_Color_Hover));
+  }
+
+  &.#{$block}--fusion-icon-border {
+    @include fusionIconHover(
+      var(--fdButton_Fusion_Primary_Color),
+      var(--fdButton_Fusion_Primary_Color),
+      rgba(2,148,199,0.1));
   }
 }
 
