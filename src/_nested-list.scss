@@ -32,6 +32,8 @@ $button: #{$fd-namespace}-button;
     }
   }
 
+  $border-radius: 0.25rem;
+
   @include fd-reset();
 
   list-style: none;
@@ -88,13 +90,25 @@ $button: #{$fd-namespace}-button;
 
     &--popover {
       &:first-child {
-        border-top-left-radius: 0.25rem;
-        border-top-right-radius: 0.25rem;
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+
+        .#{$block}__link,
+        .#{$block}__content {
+          border-top-left-radius: $border-radius;
+          border-top-right-radius: $border-radius;
+        }
       }
 
       &:last-child {
-        border-bottom-left-radius: 0.25rem;
-        border-bottom-right-radius: 0.25rem;
+        border-bottom-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+
+        .#{$block}__link,
+        .#{$block}__content {
+          border-bottom-left-radius: $border-radius;
+          border-bottom-right-radius: $border-radius;
+        }
       }
     }
   }
@@ -260,8 +274,9 @@ $button: #{$fd-namespace}-button;
     text-overflow: ellipsis;
 
     &--popover {
-      border-top-left-radius: 0.25rem;
-      border-top-right-radius: 0.25rem;
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+      border-bottom: none;
     }
   }
 
