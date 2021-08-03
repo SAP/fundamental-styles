@@ -2198,7 +2198,7 @@ exports[`Storyshots Components/Side Navigation Nested List Popover 1`] = `
       
         
       <ul
-        class="fd-nested-list fd-nested-list__popover fd-nested-list--compact"
+        class="fd-nested-list fd-nested-list--popover fd-nested-list--compact"
       >
         
             
@@ -2363,7 +2363,7 @@ exports[`Storyshots Components/Side Navigation Nested List Popover 1`] = `
       
         
       <ul
-        class="fd-nested-list fd-nested-list__popover fd-nested-list--compact"
+        class="fd-nested-list fd-nested-list--popover fd-nested-list--compact"
       >
         
             

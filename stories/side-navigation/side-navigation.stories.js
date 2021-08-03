@@ -1266,7 +1266,7 @@ export const nestedListPopover = () => `<div class="fd-popover fd-popover--right
         </ul>
     </div>
     <div class="fd-popover__popper" aria-hidden="false" id="popoverA11">
-        <ul class="fd-nested-list fd-nested-list__popover fd-nested-list--compact">
+        <ul class="fd-nested-list fd-nested-list--popover fd-nested-list--compact">
             <li class="fd-nested-list__group-header fd-nested-list__group-header--popover">
                 Group Header 1
             </li>
@@ -1302,7 +1302,7 @@ export const nestedListPopover = () => `<div class="fd-popover fd-popover--right
         </ul>
     </div>
     <div class="fd-popover__popper" aria-hidden="false" id="popoverA12">
-        <ul class="fd-nested-list fd-nested-list__popover fd-nested-list--compact">
+        <ul class="fd-nested-list fd-nested-list--popover fd-nested-list--compact">
             <li class="fd-nested-list__item fd-nested-list__item--popover">
                 <a class="fd-nested-list__link"href="#/">
                     <i role="presentation" class="fd-nested-list__icon sap-icon--home"></i>
@@ -1332,7 +1332,7 @@ nestedListPopover.parameters = {
     docs: {
         iframeHeight: 900,
         storyDescription: `
-Nested list can be displayed inside popover. Set of extra classes like \`fd-nested-list__popover, fd-nested-list__item--popover, fd-nested-list__group-header--popover\` are needed for correct style representation.
+Nested list can be displayed inside popover. Set of extra classes like \`fd-nested-list--popover, fd-nested-list__item--popover, fd-nested-list__group-header--popover\` are needed for correct style representation.
         `
     }
 };
