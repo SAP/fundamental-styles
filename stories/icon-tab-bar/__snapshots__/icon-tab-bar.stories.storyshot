@@ -5806,6 +5806,7 @@ exports[`Storyshots Components/Icon Tab Bar Text Only (Inline mode) Semantic Col
 
 exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Multi Click Area 1`] = `
 <div
+  class="fddocs-icon-tab-container"
   style="min-height: 400px;"
 >
   
@@ -5830,7 +5831,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Multi Click A
         <a
           class="fd-icon-tab-bar__tab"
           href="#"
-          id="tab1"
+          id="multiClick1"
           role="tab"
         >
           
@@ -6267,7 +6268,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Single Click 
         <a
           class="fd-icon-tab-bar__tab"
           href="#"
-          id="tab1"
+          id="tab111"
           role="tab"
         >
           
@@ -6312,7 +6313,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Single Click 
               aria-haspopup="true"
               aria-selected="true"
               class="fd-icon-tab-bar__tab"
-              id="tab2"
+              id="tab222"
               onclick="onPopoverClick('popoverA1');"
               role="tab"
               tabindex="0"
@@ -6565,7 +6566,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Single Click 
         <a
           class="fd-icon-tab-bar__tab"
           href="#"
-          id="tab3"
+          id="tab333"
           role="tab"
         >
           
@@ -6617,7 +6618,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Single Click 
           aria-selected="true"
           class="fd-icon-tab-bar__tab"
           href="#"
-          id="1"
+          id="tab1"
           role="tab"
         >
           
@@ -6835,9 +6836,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Single Click 
           
                     
           <div
-            aria-hidden="false"
             class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body"
-            id="popoverA1"
           >
             
              
