@@ -905,7 +905,7 @@ export const singleClick = () => `<div class='fddocs-icon-tab-container' style="
     <div class="fd-icon-tab-bar fd-icon-tab-bar--xl">
         <ul role="tablist" class="fd-icon-tab-bar__header">  
             <li role="presentation" class="fd-icon-tab-bar__item">
-                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab1">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab111">
                     <span class="fd-icon-tab-bar__tag">Section 1</span>
                     <span class="fd-icon-tab-bar__badge"></span>
                 </a>
@@ -913,7 +913,7 @@ export const singleClick = () => `<div class='fddocs-icon-tab-container' style="
             <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--single-click">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <a role="tab" class="fd-icon-tab-bar__tab" tabindex="0" aria-selected="true" id="tab2" aria-controls="popoverA1" aria-expanded="true" aria-haspopup="true" onclick="onPopoverClick('popoverA1');">
+                        <a role="tab" class="fd-icon-tab-bar__tab" tabindex="0" aria-selected="true" id="tab222" aria-controls="popoverA1" aria-expanded="true" aria-haspopup="true" onclick="onPopoverClick('popoverA1');">
                             <div class="fd-icon-tab-bar__tab-container">
                                 <span class="fd-icon-tab-bar__tag">Section 2</span>
                                 <span class="fd-icon-tab-bar__arrow">
@@ -962,7 +962,7 @@ export const singleClick = () => `<div class='fddocs-icon-tab-container' style="
                 </div>
             </li>
             <li role="presentation" class="fd-icon-tab-bar__item">
-                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab3">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab333">
                     <span class="fd-icon-tab-bar__tag">Section 3</span>
                 </a>
             </li>
@@ -974,7 +974,7 @@ export const singleClick = () => `<div class='fddocs-icon-tab-container' style="
      <div class='fd-icon-tab-bar fd-icon-tab-bar--icon'>
   <ul role='tablist' class='fd-icon-tab-bar__header'>
     <li role='presentation' class='fd-icon-tab-bar__item'>
-      <a role='tab' class='fd-icon-tab-bar__tab' href='#' aria-selected='true' id='1'>
+      <a role='tab' class='fd-icon-tab-bar__tab' href='#' aria-selected='true' id='tab1'>
         <div class='fd-icon-tab-bar__container'>
           <span class='fd-icon-tab-bar__icon'>
                         <i class='sap-icon--filter' role='presentation'></i>
@@ -1019,7 +1019,7 @@ export const singleClick = () => `<div class='fddocs-icon-tab-container' style="
                     <i class='sap-icon--slim-arrow-down' role='presentation'></i>   
                 </button>
             </div>
-                    <div class='fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body' aria-hidden='false' id='popoverA1'>
+                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body">
              <ul role="list" class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list">
                 <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item fd-icon-tab-bar__list-item--informative">
                 <a tabindex="0" class="fd-list__link">
@@ -1073,11 +1073,11 @@ singleClick.parameters = {
 };
 
 
-export const multiClick = () => `<div style="min-height: 400px;">
+export const multiClick = () => `<div class="fddocs-icon-tab-container" style="min-height: 400px;">
     <div class="fd-icon-tab-bar fd-icon-tab-bar--md">
         <ul role="tablist" class="fd-icon-tab-bar__header">  
             <li role="presentation" class="fd-icon-tab-bar__item">
-                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab1">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="multiClick1">
                     <span class="fd-icon-tab-bar__tag">Section 1</span>
                     <span class="fd-icon-tab-bar__badge"></span>
                 </a>
