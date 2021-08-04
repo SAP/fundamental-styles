@@ -1,0 +1,103 @@
+@import "./new-settings";
+@import "./mixins";
+@import "./listDefinitions.scss";
+
+$block: #{$fd-namespace}-upload-collection;
+
+$fd-upload-collection-button-spacing: 1rem !default;
+$fd-upload-collection-side-margin: 0.375rem !default;
+$fd-upload-collection-button-group-margin: 0.125rem !default;
+$fd-upload-collection-button-group-small-margin: 0.5rem !default;
+
+.#{$block} {
+  .#{$block}__item {
+    flex-wrap: nowrap;
+  }
+
+  &__thumbnail {
+    align-self: flex-start;
+  }
+
+  &__button-group {
+    @include fd-reset();
+    @include fd-set-margin-left($fd-upload-collection-button-spacing);
+
+    button {
+      @include fd-set-margin-left($fd-upload-collection-button-group-margin);
+    }
+  }
+
+  &__title-container {
+    @include fd-reset();
+    @include fd-flex-vertical-center();
+
+    .#{$block}__title {
+      @include fd-set-margin-right($fd-upload-collection-button-group-small-margin);
+
+      flex: none;
+    }
+  }
+
+  &__description,
+  &__status-group,
+  &__extension {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    font-size: $fd-list-normal-font-size;
+    line-height: $fd-list-byline-text-line-height;
+    color: $fd-list-byline-section-text-color;
+  }
+
+  &__description {
+    padding-top: 0.625rem;
+  }
+
+  &__status-group {
+    margin-top: $fd-upload-collection-side-margin;
+  }
+
+  &__extension {
+    @include fd-set-margin-left($fd-upload-collection-side-margin);
+
+    display: inline-block;
+  }
+
+  &__text-separator::before {
+    @include fd-reset();
+
+    color: var(--sapContent_LabelColor);
+    content: "\2022";
+  }
+
+  &__form-item {
+    @include fd-reset();
+
+    input {
+      width: 60%;
+    }
+  }
+
+  &--sm {
+    .#{$block}__item {
+      flex-wrap: wrap;
+    }
+
+    .#{$block}__button-group {
+      @include fd-reset-margins-x();
+
+      flex-basis: 100%;
+      margin-top: 0.75rem;
+
+      button:not(:first-child) {
+        @include fd-set-margin-left($fd-upload-collection-button-group-small-margin);
+      }
+    }
+
+    .#{$block}__form-item {
+      input {
+        width: 75%;
+      }
+    }
+  }
+}
