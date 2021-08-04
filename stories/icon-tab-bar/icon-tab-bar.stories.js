@@ -1019,7 +1019,7 @@ export const singleClick = () => `<div class='fddocs-icon-tab-container' style="
                     <i class='sap-icon--slim-arrow-down' role='presentation'></i>   
                 </button>
             </div>
-                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body">
+                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" style='top: 2.3rem'>
              <ul role="list" class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list">
                 <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item fd-icon-tab-bar__list-item--informative">
                 <a tabindex="0" class="fd-list__link">
@@ -1449,7 +1449,7 @@ paddings.parameters = {
     }
 };
 
-export const navigation = () => `<div style="min-height: 600px;">
+export const navigation = () => `<div class="fddocs-icon-tab-container" style="min-height: 600px;">
 <h4>With Overflow</h4>
     <div class="fd-icon-tab-bar fd-icon-tab-bar--sm fd-icon-tab-bar--navigation" style="max-width: 400px;">
         <ul role="tablist" class="fd-icon-tab-bar__header"> 

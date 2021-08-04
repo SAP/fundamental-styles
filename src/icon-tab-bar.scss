@@ -327,7 +327,7 @@ $fd-icon-tab-bar-semantic-values: (
       transform: translateY(-50%);
       margin: 0;
 
-      &--left {
+      &-left {
         left: 0;
 
         @include fd-rtl() {
@@ -343,10 +343,6 @@ $fd-icon-tab-bar-semantic-values: (
           margin-top: 0.375rem;
         }
       }
-    }
-
-    &--hidden {
-      display: none;
     }
   }
 
@@ -481,8 +477,6 @@ $fd-icon-tab-bar-semantic-values: (
         transform: rotate(180deg);
       }
     }
-
-    width: 2rem;
   }
 
   &__container {
@@ -752,8 +746,6 @@ $fd-icon-tab-bar-semantic-values: (
   }
 
   &__list {
-    max-height: 20rem;
-    overflow: auto;
     width: 100%;
 
     .#{$block}__list-item {
@@ -771,8 +763,7 @@ $fd-icon-tab-bar-semantic-values: (
         }
       }
 
-      .fd-list__link.is-selected,
-      .fd-list__link[aria-selected=true] {
+      @include fd-selected() {
         border-bottom: none;
       }
 
@@ -791,28 +782,26 @@ $fd-icon-tab-bar-semantic-values: (
         font-size: 1rem;
       }
 
-      &--positive {
-        @include fd-icon-tab-bar-list-item-color(var(--sapPositiveElementColor));
-      }
+      @each $set-name, $set-params in $fd-icon-tab-bar-semantic-values {
 
-      &--negative {
-        @include fd-icon-tab-bar-list-item-color(var(--sapNegativeElementColor));
-      }
-
-      &--critical {
-        @include fd-icon-tab-bar-list-item-color(var(--sapCriticalElementColor));
-      }
-
-      &--informative {
-        @include fd-icon-tab-bar-list-item-color(var(--sapInformativeElementColor));
+        &--#{$set-name} {
+          @include fd-icon-tab-bar-list-item-color(map_get($set-params, 'color'));
+        }
       }
     }
 
     .#{$block}__list-item-icon-container {
-      display: flex;
-      align-items: center;
+      @include fd-flex-vertical-center();
+      @include fd-set-margin-right(0.5rem);
+
       width: 1.25rem;
-      margin-right: 0.5rem;
+    }
+
+    // Need to rewrite styles for fd-list__icon
+    .#{$block}__list-item-icon [class*=sap-icon],
+    .#{$block}__list-item-icon [class*=sap-icon]:last-child {
+      margin: 0 !important;
+      width: auto !important;
     }
 
     .#{$block}__line-separator:first-child {
@@ -830,10 +819,6 @@ $fd-icon-tab-bar-semantic-values: (
     }
 
     @include fd-rtl() {
-      .#{$block}__list-item-icon-container {
-        margin-left: 1rem;
-        margin-right: 0;
-      }
 
       .#{$block}__list-item-icon {
         justify-content: center;
@@ -1202,23 +1187,22 @@ $fd-icon-tab-bar-semantic-values: (
   }
 
   &-dnd-preview {
-    background: var(--sapObjectHeader_Background, #fff);
-    display: flex;
+    @include fd-flex-center();
+
+    background: var(--sapObjectHeader_Background);
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    font-size: var(--sapFontSize, 0.875rem);
-    line-height: var(--sapContent_LineHeight, 1.4);
+    font-size: var(--sapFontSize);
+    line-height: var(--sapContent_LineHeight);
     opacity: 0.8;
     z-index: 9999 !important;
 
     * {
-      background: var(--sapObjectHeader_Background, #fff);
+      background: var(--sapObjectHeader_Background);
     }
   }
 
   &-dnd-hovered {
-    background: var(--sapButton_Hover_Background, #ebf5fe);
+    background: var(--sapButton_Hover_Background);
   }
 
   &-dnd-separator {
@@ -1231,7 +1215,7 @@ $fd-icon-tab-bar-semantic-values: (
       left: -0.5rem;
       width: 0.125rem;
       height: 100%;
-      background: var(--sapButton_Hover_BorderColor, #0854a0);
+      background: var(--sapButton_Hover_BorderColor);
     }
 
     &--vertical {
