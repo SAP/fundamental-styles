@@ -1,4 +1,11 @@
 
+## [0.20.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.4...v0.20.0-rc.5) (2021-08-04)
+
+
+### Features
+
+* implement upload collection ([#2611](https://github.com/SAP/fundamental-styles/issues/2611)) ([e21eef0](https://github.com/SAP/fundamental-styles/commit/e21eef06aa00851e69606e3cb7ee22cce372ce63)), closes [#2615](https://github.com/SAP/fundamental-styles/issues/2615)
+
 ## [0.20.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.3...v0.20.0-rc.4) (2021-08-03)
 
 ## [0.20.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.2...v0.20.0-rc.3) (2021-08-02)
