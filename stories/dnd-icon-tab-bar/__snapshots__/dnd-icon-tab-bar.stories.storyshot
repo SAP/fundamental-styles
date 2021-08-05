@@ -19,7 +19,7 @@ exports[`Storyshots Dev/Drag and Drop Icon Tab Bar Hovered tab state 1`] = `
         
         
       <li
-        class="fd-icon-tab-bar__item fd-icon-tab-bar-dnd-hovered"
+        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--dnd-hovered"
         role="presentation"
       >
         
@@ -74,7 +74,7 @@ exports[`Storyshots Dev/Drag and Drop Icon Tab Bar Hovered tab state 1`] = `
       
         
       <li
-        class="fd-icon-tab-bar__item fd-icon-tab-bar-dnd-preview"
+        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--dnd-preview"
         role="presentation"
         style="position: absolute; left: 20px; top: 10px;"
       >
@@ -154,7 +154,7 @@ exports[`Storyshots Dev/Drag and Drop Icon Tab Bar Separator hovered tab state 1
       
         
       <li
-        class="fd-icon-tab-bar__item fd-icon-tab-bar-dnd-separator"
+        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--dnd-separator"
         role="presentation"
       >
         
@@ -182,7 +182,7 @@ exports[`Storyshots Dev/Drag and Drop Icon Tab Bar Separator hovered tab state 1
       
         
       <li
-        class="fd-icon-tab-bar__item fd-icon-tab-bar-dnd-preview"
+        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--dnd-preview"
         role="presentation"
         style="position: absolute; left: 128px; top: 10px"
       >

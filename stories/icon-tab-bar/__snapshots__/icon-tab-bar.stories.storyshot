@@ -3011,6 +3011,7 @@ exports[`Storyshots Components/Icon Tab Bar Icon Only in Compact Mode 1`] = `
 
 exports[`Storyshots Components/Icon Tab Bar Navigation Icon Tab Bar 1`] = `
 <div
+  class="fddocs-icon-tab-container"
   style="min-height: 600px;"
 >
   
@@ -3286,7 +3287,7 @@ exports[`Storyshots Components/Icon Tab Bar Navigation Icon Tab Bar 1`] = `
                 
                                 
                 <a
-                  class="fd-list__link"
+                  class="fd-list__link fd-icon-tab-bar__list-link"
                   tabindex="0"
                 >
                   
@@ -3313,7 +3314,7 @@ exports[`Storyshots Components/Icon Tab Bar Navigation Icon Tab Bar 1`] = `
                 
                                 
                 <a
-                  class="fd-list__link"
+                  class="fd-list__link fd-icon-tab-bar__list-link"
                   tabindex="0"
                 >
                   
@@ -3510,7 +3511,7 @@ exports[`Storyshots Components/Icon Tab Bar Navigation Icon Tab Bar 1`] = `
                 
                 
                 <a
-                  class="fd-list__link"
+                  class="fd-list__link fd-icon-tab-bar__list-link"
                   tabindex="0"
                 >
                   
@@ -3537,7 +3538,7 @@ exports[`Storyshots Components/Icon Tab Bar Navigation Icon Tab Bar 1`] = `
                 
                 
                 <a
-                  class="fd-list__link"
+                  class="fd-list__link fd-icon-tab-bar__list-link"
                   tabindex="0"
                 >
                   
@@ -3684,7 +3685,7 @@ exports[`Storyshots Components/Icon Tab Bar Overflow 1`] = `
        
         
       <li
-        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow fd-icon-tab-bar__item--overflow--left"
+        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow fd-icon-tab-bar__item--overflow-left"
         role="presentation"
       >
         
@@ -5965,7 +5966,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Multi Click A
                 
                                 
                 <a
-                  class="fd-list__link"
+                  class="fd-list__link fd-icon-tab-bar__list-link"
                   tabindex="0"
                 >
                   
@@ -6011,7 +6012,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Multi Click A
                 
                                 
                 <a
-                  class="fd-list__link"
+                  class="fd-list__link fd-icon-tab-bar__list-link"
                   tabindex="0"
                 >
                   
@@ -6052,7 +6053,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Multi Click A
                 
                                 
                 <a
-                  class="fd-list__link"
+                  class="fd-list__link fd-icon-tab-bar__list-link"
                   tabindex="0"
                 >
                   
@@ -6093,7 +6094,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Multi Click A
                 
                                 
                 <a
-                  class="fd-list__link"
+                  class="fd-list__link fd-icon-tab-bar__list-link"
                   tabindex="0"
                 >
                   
@@ -6134,7 +6135,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Multi Click A
                 
                                 
                 <a
-                  class="fd-list__link"
+                  class="fd-list__link fd-icon-tab-bar__list-link"
                   tabindex="0"
                 >
                   
@@ -6175,7 +6176,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Multi Click A
                 
                                 
                 <a
-                  class="fd-list__link"
+                  class="fd-list__link fd-icon-tab-bar__list-link"
                   tabindex="0"
                 >
                   
@@ -6382,7 +6383,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Single Click 
                 
                                 
                 <a
-                  class="fd-list__link"
+                  class="fd-list__link fd-icon-tab-bar__list-link"
                   tabindex="0"
                 >
                   
@@ -6414,7 +6415,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Single Click 
                 
                                 
                 <a
-                  class="fd-list__link"
+                  class="fd-list__link fd-icon-tab-bar__list-link"
                   tabindex="0"
                 >
                   
@@ -6441,7 +6442,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Single Click 
                 
                                 
                 <a
-                  class="fd-list__link"
+                  class="fd-list__link fd-icon-tab-bar__list-link"
                   tabindex="0"
                 >
                   
@@ -6473,7 +6474,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Single Click 
                 
                                 
                 <a
-                  class="fd-list__link"
+                  class="fd-list__link fd-icon-tab-bar__list-link"
                   tabindex="0"
                 >
                   
@@ -6500,7 +6501,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Single Click 
                 
                                 
                 <a
-                  class="fd-list__link"
+                  class="fd-list__link fd-icon-tab-bar__list-link"
                   tabindex="0"
                 >
                   
@@ -6527,7 +6528,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Single Click 
                 
                                 
                 <a
-                  class="fd-list__link"
+                  class="fd-list__link fd-icon-tab-bar__list-link"
                   tabindex="0"
                 >
                   
@@ -6837,6 +6838,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Single Click 
                     
           <div
             class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body"
+            style="top: 2.3rem"
           >
             
              
@@ -6854,7 +6856,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Single Click 
                 
                 
                 <a
-                  class="fd-list__link"
+                  class="fd-list__link fd-icon-tab-bar__list-link"
                   tabindex="0"
                 >
                   
@@ -6909,7 +6911,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Single Click 
                 
                 
                 <a
-                  class="fd-list__link"
+                  class="fd-list__link fd-icon-tab-bar__list-link"
                   tabindex="0"
                 >
                   
@@ -6964,7 +6966,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Single Click 
                 
                 
                 <a
-                  class="fd-list__link"
+                  class="fd-list__link fd-icon-tab-bar__list-link"
                   tabindex="0"
                 >
                   
