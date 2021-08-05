@@ -7,7 +7,7 @@
     "build": "npm run style:remove && npm run build:default && npm run build:theming-preview",
     "build:default": "npm run style:compile && npm run style:theme && npm run style:postCSS && npm run style:assets",
     "build:prod": "cross-env NODE_ENV=production npm run build",
-    "build:theming-preview": "cp -R theming-preview dist-theming && npm run sync-versions",
+    "build:theming-preview": "cp -R theming-preview dist-theming && cp dist/fundamental-styles.css dist-theming/fundamental-styles.css && npm run sync-versions",
     "deploy": "gh-pages -d storybook-static/",
     "lint:style": "stylelint \"{src,.storybook}/**/*.(sa|sc|c)ss\"",
     "lint:js": "eslint . --ext .js",
