@@ -1,4 +1,11 @@
 
+## [0.20.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.6...v0.20.0-rc.7) (2021-08-05)
+
+
+### Bug Fixes
+
+* update theming-preview package styling imports ([#2637](https://github.com/SAP/fundamental-styles/issues/2637)) ([f270e59](https://github.com/SAP/fundamental-styles/commit/f270e59f1d4b413acd34ea05ad3601f4c603c9cb))
+
 ## [0.20.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.5...v0.20.0-rc.6) (2021-08-05)
 
 
