@@ -1,4 +1,11 @@
 
+## [0.20.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.5...v0.20.0-rc.6) (2021-08-05)
+
+
+### Bug Fixes
+
+* add style to theming preview files [ci visual] ([#2636](https://github.com/SAP/fundamental-styles/issues/2636)) ([bb0f587](https://github.com/SAP/fundamental-styles/commit/bb0f58770be86d0a8030b6ab3d1935d2cda7ad88))
+
 ## [0.20.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.4...v0.20.0-rc.5) (2021-08-04)
 
 
