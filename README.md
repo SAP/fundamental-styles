@@ -28,7 +28,7 @@ The library is modular so you can use as little or as much as you need.
 The fully compiled, minified library is available via CDN for inclusion in your application.
 
 ```
-<link href="//unpkg.com/fundamental-styles@latest/dist/fundamental-styles.css" rel="stylesheet">
+<link href="fundamental-styles.css" rel="stylesheet">
 ```
 
 ### NPM Package
