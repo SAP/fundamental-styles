@@ -65,6 +65,20 @@
   }
 }
 
+@mixin fd-after() {
+  &::after {
+    @content;
+  }
+}
+
+@mixin fd-after-rtl() {
+  @include fd-rtl() {
+    &::after {
+      @content;
+    }
+  }
+}
+
 @mixin fd-screen($size, $dimension: width) {
   @if map-has-key($fd-breakpoints, $size) {
     @media (min-#{$dimension}: map-get($fd-breakpoints, $size)) {
