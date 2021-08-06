@@ -195,7 +195,6 @@ $block: #{$fd-namespace}-button;
 
 @mixin buttonContainerDisabled() {
   @include standardDisabled();
-  @include buttonContainer();
 }
 
 @mixin buttonContainerFocus() {
@@ -409,7 +408,6 @@ $block: #{$fd-namespace}-button;
   &[aria-disabled="true"],
   &.is-disabled {
     @include isDisabled();
-    @include buttonContainer();
   }
 
   &:disabled {
