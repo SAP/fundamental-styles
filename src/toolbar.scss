@@ -33,7 +33,7 @@ $title-toolbar-height: 2.75rem;
 }
 
 @mixin toolbarInfo() {
-  $active-color: var(--sapInfobar__TextColor);
+  $active-color: var(--sapInfobar_TextColor);
 
   background-color: var(--sapInfobar_NonInteractive_Background);
   color: var(--sapList_TextColor);
