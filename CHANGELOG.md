@@ -1,4 +1,11 @@
 
+## [0.20.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.8...v0.20.0-rc.9) (2021-08-06)
+
+
+### Bug Fixes
+
+* **core:** fixed typo for toolbar active state [ci visual] ([#2653](https://github.com/SAP/fundamental-styles/issues/2653)) ([185dff0](https://github.com/SAP/fundamental-styles/commit/185dff022f93378a9ba3079a876fc72afaa685a0))
+
 ## [0.20.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.7...v0.20.0-rc.8) (2021-08-06)
 
 
