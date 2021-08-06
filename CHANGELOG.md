@@ -1,4 +1,15 @@
 
+## [0.20.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.7...v0.20.0-rc.8) (2021-08-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* Added new modifier classes and added new html structure for list of icon type items
+
+### Features
+
+* added missing styles for icon-tab-bar ([#2634](https://github.com/SAP/fundamental-styles/issues/2634)) ([a114e74](https://github.com/SAP/fundamental-styles/commit/a114e743052bc6af398a0e63bf4981a849820e70))
+
 ## [0.20.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.6...v0.20.0-rc.7) (2021-08-05)
 
 
