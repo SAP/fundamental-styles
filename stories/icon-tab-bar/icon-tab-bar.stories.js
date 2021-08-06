@@ -835,8 +835,8 @@ filter.parameters = {
 
 
 export const overflow = () => `<div class="fd-icon-tab-bar">
-    <ul role="tablist" class="fd-icon-tab-bar__header"> 
-        <li role="presentation" class="fd-icon-tab-bar__item">
+    <ul role="tablist" class="fd-icon-tab-bar__header fd-icon-tab-bar__header--left-offset"> 
+        <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow fd-icon-tab-bar__item--overflow-left">
             <button class="fd-icon-tab-bar__overflow">
                 <span class="fd-icon-tab-bar__overflow-text">+2</span>
                 <i class="sap-icon--slim-arrow-down" role="presentation"></i>
@@ -858,7 +858,7 @@ export const overflow = () => `<div class="fd-icon-tab-bar">
                 <span class="fd-icon-tab-bar__tag">Section 3</span>
             </a>
         </li>
-        <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow">
+        <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow" style="left: 20rem;">
             <button class="fd-icon-tab-bar__overflow">
                 <span class="fd-icon-tab-bar__overflow-text">+3</span>
                 <i class="sap-icon--slim-arrow-down" role="presentation"></i>
@@ -885,7 +885,7 @@ export const overflow = () => `<div class="fd-icon-tab-bar">
                 <span class="fd-icon-tab-bar__tag">Section 3</span>
             </a>
         </li>
-        <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow">
+        <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow" style="left: 17rem;">
             <button class="fd-icon-tab-bar__overflow">
                 <span class="fd-icon-tab-bar__overflow-text">More</span>
                 <i class="sap-icon--slim-arrow-down" role="presentation"></i>
@@ -901,11 +901,11 @@ overflow.parameters = {
     }
 };
 
-export const singleClick = () => `<div style="min-height: 800px;">
+export const singleClick = () => `<div class='fddocs-icon-tab-container' style="min-height: 800px;">
     <div class="fd-icon-tab-bar fd-icon-tab-bar--xl">
         <ul role="tablist" class="fd-icon-tab-bar__header">  
             <li role="presentation" class="fd-icon-tab-bar__item">
-                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab1">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab111">
                     <span class="fd-icon-tab-bar__tag">Section 1</span>
                     <span class="fd-icon-tab-bar__badge"></span>
                 </a>
@@ -913,7 +913,7 @@ export const singleClick = () => `<div style="min-height: 800px;">
             <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--single-click">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <a role="tab" class="fd-icon-tab-bar__tab" tabindex="0" aria-selected="true" id="tab2" aria-controls="popoverA1" aria-expanded="true" aria-haspopup="true" onclick="onPopoverClick('popoverA1');">
+                        <a role="tab" class="fd-icon-tab-bar__tab" tabindex="0" aria-selected="true" id="tab222" aria-controls="popoverA1" aria-expanded="true" aria-haspopup="true" onclick="onPopoverClick('popoverA1');">
                             <div class="fd-icon-tab-bar__tab-container">
                                 <span class="fd-icon-tab-bar__tag">Section 2</span>
                                 <span class="fd-icon-tab-bar__arrow">
@@ -926,34 +926,34 @@ export const singleClick = () => `<div style="min-height: 800px;">
                     <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" aria-hidden="false" id="popoverA1">
                         <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
                             <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                                <a tabindex="0" class="fd-list__link">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
                                     <span class="fd-list__title">Subsection 1</span>
                                     <span class="fd-icon-tab-bar__badge"></span>
                                 </a>
                             </li>
                             <li tabindex="-1" role="listitem" aria-level="2" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                                <a tabindex="0" class="fd-list__link">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
                                     <span class="fd-list__title">Subsection 1.1</span>
                                 </a>
                             </li>
                             <li tabindex="-1" role="listitem" aria-level="3" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                                <a tabindex="0" class="fd-list__link">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
                                     <span class="fd-list__title">Subsection 1.1.1</span>
                                     <span class="fd-icon-tab-bar__badge"></span>
                                 </a>
                             </li>
                             <li tabindex="-1" role="listitem" aria-level="4" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                                <a tabindex="0" class="fd-list__link">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
                                     <span class="fd-list__title">Subsection 1.1.1.1</span>
                                 </a>
                             </li>
                             <li tabindex="-1" role="listitem" aria-level="5" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                                <a tabindex="0" class="fd-list__link">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
                                     <span class="fd-list__title">Subsection 1.1.1.1.1</span>
                                 </a>
                             </li>
                             <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                                <a tabindex="0" class="fd-list__link">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
                                     <span class="fd-list__title">Subsection 2</span>
                                 </a>
                             </li>
@@ -962,7 +962,7 @@ export const singleClick = () => `<div style="min-height: 800px;">
                 </div>
             </li>
             <li role="presentation" class="fd-icon-tab-bar__item">
-                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab3">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab333">
                     <span class="fd-icon-tab-bar__tag">Section 3</span>
                 </a>
             </li>
@@ -971,77 +971,96 @@ export const singleClick = () => `<div style="min-height: 800px;">
 
     <div style="height: 20rem;"></div>
 
-    <div class="fd-icon-tab-bar fd-icon-tab-bar--xl">
-        <ul role="tablist" class="fd-icon-tab-bar__header">  
-            <li role="presentation" class="fd-icon-tab-bar__item">
-                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab4">
-                    <span class="fd-icon-tab-bar__tag">Section 1</span>
-                    <span class="fd-icon-tab-bar__badge"></span>
+     <div class='fd-icon-tab-bar fd-icon-tab-bar--icon'>
+  <ul role='tablist' class='fd-icon-tab-bar__header'>
+    <li role='presentation' class='fd-icon-tab-bar__item'>
+      <a role='tab' class='fd-icon-tab-bar__tab' href='#' aria-selected='true' id='tab1'>
+        <div class='fd-icon-tab-bar__container'>
+          <span class='fd-icon-tab-bar__icon'>
+                        <i class='sap-icon--filter' role='presentation'></i>
+                    </span>
+        </div>
+        <div class='fd-icon-tab-bar__details'>
+          <span class='fd-icon-tab-bar__label'>Description</span>
+        </div>
+      </a>
+    </li>
+    <li role='presentation' class='fd-icon-tab-bar__item'>
+      <a role='tab' class='fd-icon-tab-bar__tab' href='#' id='tab2'>
+        <div class='fd-icon-tab-bar__container'>
+          <span class='fd-icon-tab-bar__icon'>
+                        <i class='sap-icon--customer' role='presentation'></i>
+                    </span>
+        </div>
+        <div class='fd-icon-tab-bar__details'>
+          <span class='fd-icon-tab-bar__counter'>99</span>
+          <span class='fd-icon-tab-bar__label'>Description</span>
+        </div>
+      </a>
+    </li>
+    <li role='presentation' class='fd-icon-tab-bar__item'>
+      <a role='tab' class='fd-icon-tab-bar__tab' href='#' id='tab3'>
+        <div class='fd-icon-tab-bar__container'>
+          <span class='fd-icon-tab-bar__icon'>
+                        <i class='sap-icon--chain-link' role='presentation'></i>
+                    </span>
+        </div>
+        <div class='fd-icon-tab-bar__details'>
+          <span class='fd-icon-tab-bar__counter'>56 of 123</span>
+          <span class='fd-icon-tab-bar__label'>Description</span>
+        </div>
+      </a>
+    </li>
+    <li role='presentation' class='fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow' style="left: 23rem;">
+        <div class="fd-popover">
+            <div class="fd-popover__control">
+                <button class='fd-icon-tab-bar__overflow'>
+                    <span class='fd-icon-tab-bar__overflow-text'>More</span>
+                    <i class='sap-icon--slim-arrow-down' role='presentation'></i>   
+                </button>
+            </div>
+                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" style='top: 2.3rem'>
+             <ul role="list" class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list">
+                <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item fd-icon-tab-bar__list-item--informative">
+                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
+                    <span class="fd-icon-tab-bar__list-item-icon-container">
+                        <span class="fd-list__icon fd-icon-tab-bar__list-item-icon">
+                            <i class="sap-icon--letter" role="presentation"></i>
+                        </span>
+                    </span>
+                    <span class="fd-list__title fd-icon-tab-bar__list-item-title">Description</span>
+                    <span class="fd-list__counter fd-icon-tab-bar__list-item-counter">(12)</span>
                 </a>
-            </li>
-            <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--single-click">
-                <div class="fd-popover">
-                    <div class="fd-popover__control">
-                        <a role="tab" class="fd-icon-tab-bar__tab" aria-selected="true" id="tab5" tabindex="0" aria-controls="popoverA2" aria-expanded="true" aria-haspopup="true" onclick="onPopoverClick('popoverA2');">
-                            <div class="fd-icon-tab-bar__tab-container">
-                                <span class="fd-icon-tab-bar__tag">Section 2</span>
-                                <span class="fd-icon-tab-bar__arrow">
-                                    <i class="sap-icon--slim-arrow-down" role="presentation"></i>
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" aria-hidden="false" id="popoverA2">
-                        <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
-                            <li tabindex="-1" class="fd-icon-tab-bar__line-separator"></li>
-                            <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                                <a tabindex="0" class="fd-list__link">
-                                    <span class="fd-list__title">Subsection 1</span>
-                                    <span class="fd-icon-tab-bar__badge"></span>
-                                </a>
-                            </li>
-                            <li tabindex="-1" class="fd-icon-tab-bar__line-separator"></li>
-                            <li tabindex="-1" role="listitem" aria-level="2" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                                <a tabindex="0" class="fd-list__link">
-                                    <span class="fd-list__title">Subsection 1.1</span>
-                                </a>
-                            </li>
-                            <li tabindex="-1" class="fd-icon-tab-bar__line-separator"></li>
-                            <li tabindex="-1" role="listitem" aria-level="3" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                                <a tabindex="0" class="fd-list__link">
-                                    <span class="fd-list__title">Subsection 1.1.1</span>
-                                    <span class="fd-icon-tab-bar__badge"></span>
-                                </a>
-                            </li>
-                            <li tabindex="-1" class="fd-icon-tab-bar__line-separator"></li>
-                            <li tabindex="-1" role="listitem" aria-level="4" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                                <a tabindex="0" class="fd-list__link">
-                                    <span class="fd-list__title">Subsection 1.1.1.1</span>
-                                </a>
-                            </li>
-                            <li tabindex="-1" class="fd-icon-tab-bar__line-separator"></li>
-                            <li tabindex="-1" role="listitem" aria-level="5" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                                <a tabindex="0" class="fd-list__link">
-                                    <span class="fd-list__title">Subsection 1.1.1.1.1</span>
-                                </a>
-                            </li>
-                            <li tabindex="-1" class="fd-icon-tab-bar__line-separator"></li>
-                            <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                                <a tabindex="0" class="fd-list__link">
-                                    <span class="fd-list__title">Subsection 2</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li role="presentation" class="fd-icon-tab-bar__item">
-                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab6">
-                    <span class="fd-icon-tab-bar__tag">Section 3</span>
+                </li>
+                                <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
+                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
+                    <span class="fd-icon-tab-bar__list-item-icon-container">
+                        <span class="fd-list__icon fd-icon-tab-bar__list-item-icon">
+                        <i class="sap-icon--activate" role="presentation"></i>
+                        </span>
+                    </span>
+                    <span class="fd-list__title fd-icon-tab-bar__list-item-title">Description</span>
+                    <span class="fd-list__counter fd-icon-tab-bar__list-item-counter">(227)</span>
                 </a>
-            </li>
-        </ul>
-    </div>
+                </li>
+                                <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item fd-icon-tab-bar__list-item--positive">
+                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
+                    <span class="fd-icon-tab-bar__list-item-icon-container">
+                        <span class="fd-list__icon fd-icon-tab-bar__list-item-icon">
+                        <i class="sap-icon--jam" role="presentation"></i>
+                        </span>
+                    </span>
+                    <span class="fd-list__title fd-icon-tab-bar__list-item-title">Description</span>
+                    <span class="fd-list__counter fd-icon-tab-bar__list-item-counter">(0)</span>
+                </a>
+                </li>
+             </ul>
+        </div>
+
+        </div>
+    </li>
+  </ul>
+</div>
 </div>
 `;
 singleClick.storyName = 'Universal Icon Tab Bar Single Click Area';
@@ -1054,11 +1073,11 @@ singleClick.parameters = {
 };
 
 
-export const multiClick = () => `<div style="min-height: 400px;">
+export const multiClick = () => `<div class="fddocs-icon-tab-container" style="min-height: 400px;">
     <div class="fd-icon-tab-bar fd-icon-tab-bar--md">
         <ul role="tablist" class="fd-icon-tab-bar__header">  
             <li role="presentation" class="fd-icon-tab-bar__item">
-                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab1">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="multiClick1">
                     <span class="fd-icon-tab-bar__tag">Section 1</span>
                     <span class="fd-icon-tab-bar__badge"></span>
                 </a>
@@ -1084,7 +1103,7 @@ export const multiClick = () => `<div style="min-height: 400px;">
                                 <span class="sap-icon--process"></span>
                             </li>
                             <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                                <a tabindex="0" class="fd-list__link">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
                                     <span class="fd-list__title">Subsection 1</span>
                                     <span class="fd-icon-tab-bar__badge"></span>
                                 </a>
@@ -1093,7 +1112,7 @@ export const multiClick = () => `<div style="min-height: 400px;">
                                 <span class="sap-icon--process"></span>
                             </li>
                             <li tabindex="-1" role="listitem" aria-level="2" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                                <a tabindex="0" class="fd-list__link">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
                                     <span class="fd-list__title">Subsection 1.1</span>
                                 </a>
                             </li>
@@ -1101,7 +1120,7 @@ export const multiClick = () => `<div style="min-height: 400px;">
                                 <span class="sap-icon--process"></span>
                             </li>
                             <li tabindex="-1" role="listitem" aria-level="3" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                                <a tabindex="0" class="fd-list__link">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
                                     <span class="fd-list__title">Subsection 1.1.1</span>
                                 </a>
                             </li>
@@ -1109,7 +1128,7 @@ export const multiClick = () => `<div style="min-height: 400px;">
                                 <span class="sap-icon--process"></span>
                             </li>
                             <li tabindex="-1" role="listitem" aria-level="4" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                                <a tabindex="0" class="fd-list__link">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
                                     <span class="fd-list__title">Subsection 1.1.1.1</span>
                                 </a>
                             </li>
@@ -1117,7 +1136,7 @@ export const multiClick = () => `<div style="min-height: 400px;">
                                 <span class="sap-icon--process"></span>
                             </li>
                             <li tabindex="-1" role="listitem" aria-level="5" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                                <a tabindex="0" class="fd-list__link">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
                                     <span class="fd-list__title">Subsection 1.1.1.1.1</span>
                                 </a>
                             </li>
@@ -1125,7 +1144,7 @@ export const multiClick = () => `<div style="min-height: 400px;">
                                 <span class="sap-icon--process"></span>
                             </li>
                             <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                                <a tabindex="0" class="fd-list__link">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
                                     <span class="fd-list__title">Subsection 2</span>
                                 </a>
                             </li>
@@ -1430,7 +1449,7 @@ paddings.parameters = {
     }
 };
 
-export const navigation = () => `<div style="min-height: 600px;">
+export const navigation = () => `<div class="fddocs-icon-tab-container" style="min-height: 600px;">
 <h4>With Overflow</h4>
     <div class="fd-icon-tab-bar fd-icon-tab-bar--sm fd-icon-tab-bar--navigation" style="max-width: 400px;">
         <ul role="tablist" class="fd-icon-tab-bar__header"> 
@@ -1449,7 +1468,7 @@ export const navigation = () => `<div style="min-height: 600px;">
                     <span class="fd-icon-tab-bar__tag">Section 3</span>
                 </a>
             </li>
-            <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow">
+            <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow" style="left: 20rem;">
                 <button class="fd-icon-tab-bar__overflow">
                     <span class="fd-icon-tab-bar__overflow-text">More</span>
                     <i class="sap-icon--slim-arrow-down" role="presentation"></i>
@@ -1482,12 +1501,12 @@ export const navigation = () => `<div style="min-height: 600px;">
                     <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" aria-hidden="false" id="popoverAO4">
                         <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
                             <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                                <a tabindex="0" class="fd-list__link">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
                                     <span class="fd-list__title">Subsection 1</span>
                                 </a>
                             </li>
                             <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                                <a tabindex="0" class="fd-list__link">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
                                     <span class="fd-list__title">Subsection 2</span>
                                 </a>
                             </li>
@@ -1526,12 +1545,12 @@ export const navigation = () => `<div style="min-height: 600px;">
           <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" aria-hidden="false" id="popoverAO5">
             <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
               <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                <a tabindex="0" class="fd-list__link">
+                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
                   <span class="fd-list__title">Subsection 1</span>
                 </a>
               </li>
               <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                <a tabindex="0" class="fd-list__link">
+                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
                   <span class="fd-list__title">Subsection 2</span>
                 </a>
               </li>
