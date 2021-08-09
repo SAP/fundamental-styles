@@ -1,4 +1,15 @@
 
+## [0.20.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.9...v0.20.0-rc.10) (2021-08-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* Add a new modifier class .fd-nested-list--popover to display nested list inside a popover.
+
+### Bug Fixes
+
+* introduce modifier class to fix nested-list-popover ([#2621](https://github.com/SAP/fundamental-styles/issues/2621)) ([bd4ad27](https://github.com/SAP/fundamental-styles/commit/bd4ad2719e34b295fc878639c8380f0f60281e4e))
+
 ## [0.20.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.8...v0.20.0-rc.9) (2021-08-06)
 
 
