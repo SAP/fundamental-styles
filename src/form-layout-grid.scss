@@ -13,6 +13,10 @@ $cols: 11;
   }
 }
 
+.#{$blockContainer}.#{$block}-container.#{$blockCol}--compact {
+  padding: 0;
+}
+
 @media (min-width: 0) {
   .#{$blockContainer}.#{$block}-container {
     margin: 0 -0.25rem;
@@ -43,6 +47,10 @@ $cols: 11;
         padding: 0 0.25rem;
         overflow: hidden;
         text-overflow: ellipsis;
+
+        &--compact {
+          padding: 0 1rem;
+        }
 
         @include placement('left');
 
