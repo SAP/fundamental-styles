@@ -1,4 +1,11 @@
 
+## [0.20.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.10...v0.20.0-rc.11) (2021-08-10)
+
+
+### Bug Fixes
+
+* add compact class to form-layout-grid ([#2655](https://github.com/SAP/fundamental-styles/issues/2655)) ([3be12df](https://github.com/SAP/fundamental-styles/commit/3be12df36c0c17643932ed46d0d530bde2ce770b))
+
 ## [0.20.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.9...v0.20.0-rc.10) (2021-08-09)
 
 
