@@ -2278,7 +2278,7 @@ export const noDataTable = () => `<table class="fd-table">
         </thead>
         <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td colspan="100%" class="fd-table__cell fd-table__cell--no-data">No Items Found!</td>
+            <td colspan="100%" class="fd-table__cell fd-table__cell--no-data">No Items available.</td>
         </tr>
         </tbody>
     </table>
@@ -2289,6 +2289,187 @@ noDataTable.parameters = {
     docs: {
         storyDescription: `
 Table can indicate that there is no data to display.
+    `
+    }
+};
+
+export const groupRowsInTable = () => `<table class="fd-table fd-table--group">
+        <thead class="fd-table__header">
+            <tr class="fd-table__row">
+                <th class="fd-table__cell" scope="col">
+                    Type
+                </th>
+                <th class="fd-table__cell" scope="col">
+                    First Name
+                </th>
+                <th class="fd-table__cell" scope="col">
+                    Last Name
+                </th>
+                <th class="fd-table__cell" scope="col">
+                    Date
+                </th>
+            </tr>
+        </thead>
+        <tbody class="fd-table__body">
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell--group fd-table__cell--expand" colspan="4" data-nesting-level="1">
+                    <span class="fd-table__expand fd-table__expand"></span>Group row (collapsed), level 1
+                </td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell--group fd-table__cell--expand" colspan="4" data-nesting-level="1">
+                    <span class="fd-table__expand fd-table__expand--open"></span>Group row (expanded), level 1
+                </td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell" data-nesting-level="2">Regular row, level 2</td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell--group fd-table__cell--expand" colspan="4" data-nesting-level="2">
+                    <span class="fd-table__expand fd-table__expand--open"></span>Group row (expanded), level 2
+                </td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell" data-nesting-level="3">Regular row, level 3</td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+        </tbody>
+    </table>
+`;
+
+groupRowsInTable.storyName = 'Table with group rows';
+groupRowsInTable.parameters = {
+    docs: {
+        storyDescription: `
+Table can have group rows, to get this do the following:
+
+- Add \`fd-table--group\` class to the table
+- Add \`colspan\` with the appropriate value to the group cell
+- Add \`fd-table__cell--group\` to the group cell
+- Add \`data-nesting-level\` attribute with the appropriate value (counting starts from 1) to the first cell of every row
+
+Group cell intended to have glyph which indicates expand/collapsed state, to get it to do the following:
+
+- Add \`fd-table__cell--expand\` class to the group cell
+- Add an element with class \`fd-table__expand\` inside the group cell
+- Use \`fd-table__expand--open\` class on the element to indicate expanded state
+
+Intended to have up to 20 levels deep, not more.
+
+Please consider that you need to implement expanding/collapsing functionality by yourself.
+    `
+    }
+};
+
+export const treeRowsTable = () => `<table class="fd-table fd-table--tree fd-table--condensed">
+        <thead class="fd-table__header">
+            <tr class="fd-table__row">
+                <th class="fd-table__cell" scope="col">
+                    Type
+                </th>
+                <th class="fd-table__cell" scope="col">
+                    First Name
+                </th>
+                <th class="fd-table__cell" scope="col">
+                    Last Name
+                </th>
+                <th class="fd-table__cell" scope="col">
+                    Date
+                </th>
+            </tr>
+        </thead>
+        <tbody class="fd-table__body">
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell" data-nesting-level="1">
+                    Regular row, level 1, collapsed
+                </td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell fd-table__cell--expand" data-nesting-level="1">
+                    <span class="fd-table__expand fd-table__expand"></span>Tree row, level 1, collapsed
+                </td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell fd-table__cell--expand" data-nesting-level="1">
+                    <span class="fd-table__expand fd-table__expand--open"></span>Tree row, level 1, expanded
+                </td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell" data-nesting-level="2">
+                    Regular row, level 2
+                </td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell fd-table__cell--expand" data-nesting-level="2">
+                    <span class="fd-table__expand fd-table__expand"></span>Tree row, level 2, collapsed
+                </td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell fd-table__cell--expand" data-nesting-level="2">
+                    <span class="fd-table__expand fd-table__expand--open"></span>Tree row, level 2, expanded
+                </td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell" data-nesting-level="3">
+                    Regular row, level 3
+                </td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell fd-table__cell--expand" data-nesting-level="3">
+                    <span class="fd-table__expand fd-table__expand"></span>Tree row, level 3, collapsed
+                </td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+        </tbody>
+    </table>
+`;
+
+treeRowsTable.storyName = 'Tree Table';
+treeRowsTable.parameters = {
+    docs: {
+        storyDescription: `
+Table can show tree-like rows, to get this do the following:
+
+- Add \`fd-table--tree\` class to the table
+- Add \`data-nesting-level\` attribute with the appropriate value (counting starts from 1) to the first cell of every row
+
+Tree table cells intended to have a glyph which indicates expanded/collapsed state, to get it to do the following:
+
+- Add \`fd-table__cell--tree-expand\` class to the first cell if the row has children
+- Add an element with class \`fd-table__expand\` inside the tree cell if the row has children
+- Use \`fd-table__expand--open\` class on the element to indicate expanded state
+
+Intended to have up to 20 levels deep, not more.
+
+Please consider that you need to implement expanding/collapsing functionality by yourself.
     `
     }
 };

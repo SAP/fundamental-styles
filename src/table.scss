@@ -2,12 +2,12 @@
 @import "./mixins";
 
 /*!
-.fd-table(--compact, --condensed, --no-horizontal-borders, --no-vertical-borders, --fixed)
+.fd-table(--compact, --condensed, --no-horizontal-borders, --no-vertical-borders, --fixed, --hidden, --tree, --group)
     thead(.fd-table__header(--no-horizontal-borders, --no-vertical-borders))
     tbody(.fd-table__body(--no-horizontal-borders, --no-vertical-borders))
     tfoot(.fd-table__footer)
         tr(.fd-table__row)([aria-selected])
-          td(.fd-table__cell(--status-indicator, --checkbox, --fit-content, --fixed)) + semantic
+          td(.fd-table__cell(--status-indicator, --checkbox, --fit-content, --fixed, --expand, --group)) + semantic
 */
 $block: #{$fd-namespace}-table;
 
@@ -36,6 +36,47 @@ $block: #{$fd-namespace}-table;
     .#{$fd-namespace}-form-label,
     .#{$fd-namespace}-object-status {
       color: inherit;
+    }
+  }
+
+  @mixin fd-table-nested-cell-padding($levels: 20, $content-density-cozy: false, $include-expand: false) {
+    $level-padding: 0.5rem;
+    $second-level-padding: 1.5rem;
+    $third-level-padding: if($content-density-cozy, 0.5rem, 0.75rem);
+    $expand-padding: if($include-expand, if($content-density-cozy, 2.75rem, 2rem), 0);
+
+    @for $i from 1 through $levels {
+      &[data-nesting-level='#{$i}'] {
+        @if $i == 1 {
+          padding-left: $expand-padding;
+
+          @include fd-rtl() {
+            padding-left: 0.5rem;
+            padding-right: $expand-padding;
+          }
+        } @else if $i == 2 {
+          padding-left: $second-level-padding + $expand-padding;
+
+          @include fd-rtl() {
+            padding-left: 0.5rem;
+            padding-right: $second-level-padding + $expand-padding;
+          }
+        } @else if $i == 3 {
+          padding-left: $second-level-padding + $third-level-padding + $expand-padding;
+
+          @include fd-rtl() {
+            padding-left: 0.5rem;
+            padding-right: $second-level-padding + $third-level-padding + $expand-padding;
+          }
+        } @else {
+          padding-left: $second-level-padding + $third-level-padding + (($i - 2) * $level-padding) + $expand-padding;
+
+          @include fd-rtl() {
+            padding-left: 0.5rem;
+            padding-right: $second-level-padding + $third-level-padding + (($i - 2) * $level-padding) + $expand-padding;
+          }
+        }
+      }
     }
   }
 
@@ -90,7 +131,8 @@ $block: #{$fd-namespace}-table;
   max-width: 100%;
   border-collapse: collapse;
 
-  // Elements
+  /****** Elements ******/
+
   &__icon {
     @include fd-icon-element-base() {
       @include fd-flex-center();
@@ -182,8 +224,13 @@ $block: #{$fd-namespace}-table;
       text-align: center;
     }
 
+    &--mock {
+      padding: 0;
+      width: auto;
+    }
+
     &--checkbox {
-      width: $fd-table-cell-fit-content-width;
+      width: $fd-table-cozy-cell-height;
       vertical-align: baseline;
 
       @include fd-table-reset-spacing();
@@ -387,6 +434,12 @@ $block: #{$fd-namespace}-table;
     @include fd-screen-reader-only();
   }
 
+  &__item {
+    &--clickable {
+      cursor: pointer;
+    }
+  }
+
   &__popover.#{$fd-namespace}-popover {
     height: 100%;
     display: block;
@@ -401,7 +454,8 @@ $block: #{$fd-namespace}-table;
     }
   }
 
-  // Modifiers
+  /****** Modifiers ******/
+
   &--fixed {
     overflow-x: scroll;
 
@@ -556,38 +610,26 @@ $block: #{$fd-namespace}-table;
   }
 
   &--compact {
-    .#{$block}__cell {
-      height: $fd-table-compact-cell-height;
-    }
-
-    .#{$block}__header {
-      .#{$block}__cell {
-        height: $fd-table-compact-cell-height;
-
-        &--fixed {
-          height: $fd-table-compact-cell-height + $fd-table-fixed-cell-shift;
+    &.#{$block}--tree,
+    &.#{$block}--group {
+      .#{$block}__body .#{$block}__cell {
+        &,
+        .#{$block}__expand {
+          height: $fd-table-compact-cell-height;
         }
       }
     }
   }
 
   &--condensed {
-    .#{$block}__cell {
-      height: $fd-table-condensed-cell-height;
-    }
-
-    .#{$block}__header {
-      .#{$block}__cell {
-        height: $fd-table-compact-cell-height;
-
-        &--fixed {
-          height: $fd-table-compact-cell-height + $fd-table-fixed-cell-shift;
+    &.#{$block}--tree,
+    &.#{$block}--group {
+      .#{$block}__body .#{$block}__cell {
+        &,
+        .#{$block}__expand {
+          height: $fd-table-condensed-cell-height;
         }
-      }
-    }
 
-    .#{$block}__body {
-      .#{$block}__cell {
         &--checkbox {
           position: relative;
 
@@ -600,8 +642,90 @@ $block: #{$fd-namespace}-table;
     }
   }
 
+  &--compact,
+  &--condensed {
+    &.#{$block}--tree,
+    &.#{$block}--group {
+      .#{$block}__body .#{$block}__cell {
+        @include fd-table-nested-cell-padding(20, false, true);
+
+        &--expand {
+          @include fd-table-nested-cell-padding(20, false);
+        }
+
+        .#{$block}__expand {
+          width: $fd-table-compact-cell-height;
+        }
+      }
+    }
+
+    .#{$block}__header {
+      .#{$block}__cell {
+        height: $fd-table-compact-cell-height;
+
+        &--fixed {
+          height: $fd-table-compact-cell-height + $fd-table-fixed-cell-shift;
+        }
+      }
+    }
+
+    .#{$block}__cell {
+      &--checkbox {
+        width: $fd-table-compact-cell-height;
+      }
+    }
+  }
+
+  &--group {
+    .#{$block}__body .#{$block}__cell {
+      &--group {
+        background-color: var(--sapList_HeaderBackground);
+      }
+    }
+  }
+
+  &--tree,
+  &--group {
+    .#{$block}__body .#{$block}__cell {
+      @include fd-table-nested-cell-padding(20, true, true);
+
+      &--expand {
+        cursor: pointer;
+        white-space: nowrap;
+
+        @include fd-table-nested-cell-padding(20, true);
+      }
+
+      .#{$block}__expand {
+        width: $fd-table-cozy-cell-height;
+        height: $fd-table-cozy-cell-height;
+        color: var(--sapContent_IconColor);
+        font-size: var(--sapFontSmallSize);
+
+        @include fd-inline-flex-center();
+        @include fd-icon("navigation-right-arrow");
+
+        @include fd-rtl() {
+          @include fd-icon("navigation-left-arrow");
+
+          &.#{$block}__expand--open {
+            @include fd-icon("navigation-down-arrow");
+          }
+        }
+
+        &--open {
+          @include fd-icon("navigation-down-arrow");
+        }
+      }
+    }
+  }
+
   &--no-outer-border {
     border: hidden;
+  }
+
+  &--hidden {
+    display: none;
   }
 
   @include fd-rtl() {

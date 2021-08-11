@@ -10007,6 +10007,222 @@ exports[`Storyshots Components/Table Semantic 1`] = `
 </section>
 `;
 
+exports[`Storyshots Components/Table Table with group rows 1`] = `
+<table
+  class="fd-table fd-table--group"
+>
+  
+        
+  <thead
+    class="fd-table__header"
+  >
+    
+            
+    <tr
+      class="fd-table__row"
+    >
+      
+                
+      <th
+        class="fd-table__cell"
+        scope="col"
+      >
+        
+                    Type
+                
+      </th>
+      
+                
+      <th
+        class="fd-table__cell"
+        scope="col"
+      >
+        
+                    First Name
+                
+      </th>
+      
+                
+      <th
+        class="fd-table__cell"
+        scope="col"
+      >
+        
+                    Last Name
+                
+      </th>
+      
+                
+      <th
+        class="fd-table__cell"
+        scope="col"
+      >
+        
+                    Date
+                
+      </th>
+      
+            
+    </tr>
+    
+        
+  </thead>
+  
+        
+  <tbody
+    class="fd-table__body"
+  >
+    
+            
+    <tr
+      class="fd-table__row"
+    >
+      
+                
+      <td
+        class="fd-table__cell fd-table__cell--group fd-table__cell--expand"
+        colspan="4"
+        data-nesting-level="1"
+      >
+        
+                    
+        <span
+          class="fd-table__expand fd-table__expand"
+        />
+        Group row (collapsed), level 1
+                
+      </td>
+      
+            
+    </tr>
+    
+            
+    <tr
+      class="fd-table__row"
+    >
+      
+                
+      <td
+        class="fd-table__cell fd-table__cell--group fd-table__cell--expand"
+        colspan="4"
+        data-nesting-level="1"
+      >
+        
+                    
+        <span
+          class="fd-table__expand fd-table__expand--open"
+        />
+        Group row (expanded), level 1
+                
+      </td>
+      
+            
+    </tr>
+    
+            
+    <tr
+      class="fd-table__row"
+    >
+      
+                
+      <td
+        class="fd-table__cell"
+        data-nesting-level="2"
+      >
+        Regular row, level 2
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        First Name
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        Last Name
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        01/26/17
+      </td>
+      
+            
+    </tr>
+    
+            
+    <tr
+      class="fd-table__row"
+    >
+      
+                
+      <td
+        class="fd-table__cell fd-table__cell--group fd-table__cell--expand"
+        colspan="4"
+        data-nesting-level="2"
+      >
+        
+                    
+        <span
+          class="fd-table__expand fd-table__expand--open"
+        />
+        Group row (expanded), level 2
+                
+      </td>
+      
+            
+    </tr>
+    
+            
+    <tr
+      class="fd-table__row"
+    >
+      
+                
+      <td
+        class="fd-table__cell"
+        data-nesting-level="3"
+      >
+        Regular row, level 3
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        First Name
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        Last Name
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        01/26/17
+      </td>
+      
+            
+    </tr>
+    
+        
+  </tbody>
+  
+    
+</table>
+`;
+
 exports[`Storyshots Components/Table Table without data 1`] = `
 <table
   class="fd-table"
@@ -10103,10 +10319,415 @@ exports[`Storyshots Components/Table Table without data 1`] = `
         class="fd-table__cell fd-table__cell--no-data"
         colspan="100%"
       >
-        No Items Found!
+        No Items available.
       </td>
       
         
+    </tr>
+    
+        
+  </tbody>
+  
+    
+</table>
+`;
+
+exports[`Storyshots Components/Table Tree Table 1`] = `
+<table
+  class="fd-table fd-table--tree fd-table--condensed"
+>
+  
+        
+  <thead
+    class="fd-table__header"
+  >
+    
+            
+    <tr
+      class="fd-table__row"
+    >
+      
+                
+      <th
+        class="fd-table__cell"
+        scope="col"
+      >
+        
+                    Type
+                
+      </th>
+      
+                
+      <th
+        class="fd-table__cell"
+        scope="col"
+      >
+        
+                    First Name
+                
+      </th>
+      
+                
+      <th
+        class="fd-table__cell"
+        scope="col"
+      >
+        
+                    Last Name
+                
+      </th>
+      
+                
+      <th
+        class="fd-table__cell"
+        scope="col"
+      >
+        
+                    Date
+                
+      </th>
+      
+            
+    </tr>
+    
+        
+  </thead>
+  
+        
+  <tbody
+    class="fd-table__body"
+  >
+    
+            
+    <tr
+      class="fd-table__row"
+    >
+      
+                
+      <td
+        class="fd-table__cell fd-table__cell"
+        data-nesting-level="1"
+      >
+        
+                    Regular row, level 1, collapsed
+                
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        First Name
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        Last Name
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        01/26/17
+      </td>
+      
+            
+    </tr>
+    
+            
+    <tr
+      class="fd-table__row"
+    >
+      
+                
+      <td
+        class="fd-table__cell fd-table__cell fd-table__cell--expand"
+        data-nesting-level="1"
+      >
+        
+                    
+        <span
+          class="fd-table__expand fd-table__expand"
+        />
+        Tree row, level 1, collapsed
+                
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        First Name
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        Last Name
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        01/26/17
+      </td>
+      
+            
+    </tr>
+    
+            
+    <tr
+      class="fd-table__row"
+    >
+      
+                
+      <td
+        class="fd-table__cell fd-table__cell fd-table__cell--expand"
+        data-nesting-level="1"
+      >
+        
+                    
+        <span
+          class="fd-table__expand fd-table__expand--open"
+        />
+        Tree row, level 1, expanded
+                
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        First Name
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        Last Name
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        01/26/17
+      </td>
+      
+            
+    </tr>
+    
+            
+    <tr
+      class="fd-table__row"
+    >
+      
+                
+      <td
+        class="fd-table__cell fd-table__cell"
+        data-nesting-level="2"
+      >
+        
+                    Regular row, level 2
+                
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        First Name
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        Last Name
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        01/26/17
+      </td>
+      
+            
+    </tr>
+    
+            
+    <tr
+      class="fd-table__row"
+    >
+      
+                
+      <td
+        class="fd-table__cell fd-table__cell fd-table__cell--expand"
+        data-nesting-level="2"
+      >
+        
+                    
+        <span
+          class="fd-table__expand fd-table__expand"
+        />
+        Tree row, level 2, collapsed
+                
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        First Name
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        Last Name
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        01/26/17
+      </td>
+      
+            
+    </tr>
+    
+            
+    <tr
+      class="fd-table__row"
+    >
+      
+                
+      <td
+        class="fd-table__cell fd-table__cell fd-table__cell--expand"
+        data-nesting-level="2"
+      >
+        
+                    
+        <span
+          class="fd-table__expand fd-table__expand--open"
+        />
+        Tree row, level 2, expanded
+                
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        First Name
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        Last Name
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        01/26/17
+      </td>
+      
+            
+    </tr>
+    
+            
+    <tr
+      class="fd-table__row"
+    >
+      
+                
+      <td
+        class="fd-table__cell fd-table__cell"
+        data-nesting-level="3"
+      >
+        
+                    Regular row, level 3
+                
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        First Name
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        Last Name
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        01/26/17
+      </td>
+      
+            
+    </tr>
+    
+            
+    <tr
+      class="fd-table__row"
+    >
+      
+                
+      <td
+        class="fd-table__cell fd-table__cell fd-table__cell--expand"
+        data-nesting-level="3"
+      >
+        
+                    
+        <span
+          class="fd-table__expand fd-table__expand"
+        />
+        Tree row, level 3, collapsed
+                
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        First Name
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        Last Name
+      </td>
+      
+                
+      <td
+        class="fd-table__cell"
+      >
+        01/26/17
+      </td>
+      
+            
     </tr>
     
         
