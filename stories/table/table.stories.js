@@ -2313,12 +2313,12 @@ export const groupRowsInTable = () => `<table class="fd-table fd-table--group">
         <tbody class="fd-table__body">
             <tr class="fd-table__row">
                 <td class="fd-table__cell fd-table__cell--group fd-table__cell--expand" colspan="4" data-nesting-level="1">
-                    <span class="fd-table__expand fd-table__expand"></span>Group row (collapsed), level 1
+                    <span class="fd-table__expand fd-table__expand"></span><span class="fd-table__text--no-wrap">Group row (collapsed), level 1</span>
                 </td>
             </tr>
             <tr class="fd-table__row">
                 <td class="fd-table__cell fd-table__cell--group fd-table__cell--expand" colspan="4" data-nesting-level="1">
-                    <span class="fd-table__expand fd-table__expand--open"></span>Group row (expanded), level 1
+                    <span class="fd-table__expand fd-table__expand--open"></span><span class="fd-table__text--no-wrap">Group row (expanded), level 1</span>
                 </td>
             </tr>
             <tr class="fd-table__row">
@@ -2329,7 +2329,7 @@ export const groupRowsInTable = () => `<table class="fd-table fd-table--group">
             </tr>
             <tr class="fd-table__row">
                 <td class="fd-table__cell fd-table__cell--group fd-table__cell--expand" colspan="4" data-nesting-level="2">
-                    <span class="fd-table__expand fd-table__expand--open"></span>Group row (expanded), level 2
+                    <span class="fd-table__expand fd-table__expand--open"></span><span class="fd-table__text--no-wrap">Group row (expanded), level 2</span>
                 </td>
             </tr>
             <tr class="fd-table__row">
@@ -2366,7 +2366,7 @@ Please consider that you need to implement expanding/collapsing functionality by
     }
 };
 
-export const treeRowsTable = () => `<table class="fd-table fd-table--tree fd-table--condensed">
+export const treeRowsTable = () => `<table class="fd-table fd-table--tree">
         <thead class="fd-table__header">
             <tr class="fd-table__row">
                 <th class="fd-table__cell" scope="col">
@@ -2386,7 +2386,7 @@ export const treeRowsTable = () => `<table class="fd-table fd-table--tree fd-tab
         <tbody class="fd-table__body">
             <tr class="fd-table__row">
                 <td class="fd-table__cell fd-table__cell" data-nesting-level="1">
-                    Regular row, level 1, collapsed
+                    Regular row, level 1
                 </td>
                 <td class="fd-table__cell">First Name</td>
                 <td class="fd-table__cell">Last Name</td>
@@ -2394,7 +2394,7 @@ export const treeRowsTable = () => `<table class="fd-table fd-table--tree fd-tab
             </tr>
             <tr class="fd-table__row">
                 <td class="fd-table__cell fd-table__cell fd-table__cell--expand" data-nesting-level="1">
-                    <span class="fd-table__expand fd-table__expand"></span>Tree row, level 1, collapsed
+                    <span class="fd-table__expand fd-table__expand"></span><span class="fd-table__text--no-wrap">Tree row, level 1, collapsed</span>
                 </td>
                 <td class="fd-table__cell">First Name</td>
                 <td class="fd-table__cell">Last Name</td>
@@ -2402,7 +2402,7 @@ export const treeRowsTable = () => `<table class="fd-table fd-table--tree fd-tab
             </tr>
             <tr class="fd-table__row">
                 <td class="fd-table__cell fd-table__cell fd-table__cell--expand" data-nesting-level="1">
-                    <span class="fd-table__expand fd-table__expand--open"></span>Tree row, level 1, expanded
+                    <span class="fd-table__expand fd-table__expand--open"></span><span class="fd-table__text--no-wrap">Tree row, level 1, expanded</span>
                 </td>
                 <td class="fd-table__cell">First Name</td>
                 <td class="fd-table__cell">Last Name</td>
@@ -2418,7 +2418,7 @@ export const treeRowsTable = () => `<table class="fd-table fd-table--tree fd-tab
             </tr>
             <tr class="fd-table__row">
                 <td class="fd-table__cell fd-table__cell fd-table__cell--expand" data-nesting-level="2">
-                    <span class="fd-table__expand fd-table__expand"></span>Tree row, level 2, collapsed
+                    <span class="fd-table__expand fd-table__expand"></span><span class="fd-table__text--no-wrap">Tree row, level 2, collapsed</span>
                 </td>
                 <td class="fd-table__cell">First Name</td>
                 <td class="fd-table__cell">Last Name</td>
@@ -2426,7 +2426,7 @@ export const treeRowsTable = () => `<table class="fd-table fd-table--tree fd-tab
             </tr>
             <tr class="fd-table__row">
                 <td class="fd-table__cell fd-table__cell fd-table__cell--expand" data-nesting-level="2">
-                    <span class="fd-table__expand fd-table__expand--open"></span>Tree row, level 2, expanded
+                    <span class="fd-table__expand fd-table__expand--open"></span><span class="fd-table__text--no-wrap">Tree row, level 2, expanded</span>
                 </td>
                 <td class="fd-table__cell">First Name</td>
                 <td class="fd-table__cell">Last Name</td>
@@ -2442,7 +2442,7 @@ export const treeRowsTable = () => `<table class="fd-table fd-table--tree fd-tab
             </tr>
             <tr class="fd-table__row">
                 <td class="fd-table__cell fd-table__cell fd-table__cell--expand" data-nesting-level="3">
-                    <span class="fd-table__expand fd-table__expand"></span>Tree row, level 3, collapsed
+                    <span class="fd-table__expand fd-table__expand"></span><span class="fd-table__text--no-wrap">Tree row, level 3, collapsed</span>
                 </td>
                 <td class="fd-table__cell">First Name</td>
                 <td class="fd-table__cell">Last Name</td>

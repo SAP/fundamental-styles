@@ -10089,7 +10089,12 @@ exports[`Storyshots Components/Table Table with group rows 1`] = `
         <span
           class="fd-table__expand fd-table__expand"
         />
-        Group row (collapsed), level 1
+        <span
+          class="fd-table__text--no-wrap"
+        >
+          Group row (collapsed), level 1
+        </span>
+        
                 
       </td>
       
@@ -10112,7 +10117,12 @@ exports[`Storyshots Components/Table Table with group rows 1`] = `
         <span
           class="fd-table__expand fd-table__expand--open"
         />
-        Group row (expanded), level 1
+        <span
+          class="fd-table__text--no-wrap"
+        >
+          Group row (expanded), level 1
+        </span>
+        
                 
       </td>
       
@@ -10172,7 +10182,12 @@ exports[`Storyshots Components/Table Table with group rows 1`] = `
         <span
           class="fd-table__expand fd-table__expand--open"
         />
-        Group row (expanded), level 2
+        <span
+          class="fd-table__text--no-wrap"
+        >
+          Group row (expanded), level 2
+        </span>
+        
                 
       </td>
       
@@ -10334,7 +10349,7 @@ exports[`Storyshots Components/Table Table without data 1`] = `
 
 exports[`Storyshots Components/Table Tree Table 1`] = `
 <table
-  class="fd-table fd-table--tree fd-table--condensed"
+  class="fd-table fd-table--tree"
 >
   
         
@@ -10409,7 +10424,7 @@ exports[`Storyshots Components/Table Tree Table 1`] = `
         data-nesting-level="1"
       >
         
-                    Regular row, level 1, collapsed
+                    Regular row, level 1
                 
       </td>
       
@@ -10452,7 +10467,12 @@ exports[`Storyshots Components/Table Tree Table 1`] = `
         <span
           class="fd-table__expand fd-table__expand"
         />
-        Tree row, level 1, collapsed
+        <span
+          class="fd-table__text--no-wrap"
+        >
+          Tree row, level 1, collapsed
+        </span>
+        
                 
       </td>
       
@@ -10495,7 +10515,12 @@ exports[`Storyshots Components/Table Tree Table 1`] = `
         <span
           class="fd-table__expand fd-table__expand--open"
         />
-        Tree row, level 1, expanded
+        <span
+          class="fd-table__text--no-wrap"
+        >
+          Tree row, level 1, expanded
+        </span>
+        
                 
       </td>
       
@@ -10577,7 +10602,12 @@ exports[`Storyshots Components/Table Tree Table 1`] = `
         <span
           class="fd-table__expand fd-table__expand"
         />
-        Tree row, level 2, collapsed
+        <span
+          class="fd-table__text--no-wrap"
+        >
+          Tree row, level 2, collapsed
+        </span>
+        
                 
       </td>
       
@@ -10620,7 +10650,12 @@ exports[`Storyshots Components/Table Tree Table 1`] = `
         <span
           class="fd-table__expand fd-table__expand--open"
         />
-        Tree row, level 2, expanded
+        <span
+          class="fd-table__text--no-wrap"
+        >
+          Tree row, level 2, expanded
+        </span>
+        
                 
       </td>
       
@@ -10702,7 +10737,12 @@ exports[`Storyshots Components/Table Tree Table 1`] = `
         <span
           class="fd-table__expand fd-table__expand"
         />
-        Tree row, level 3, collapsed
+        <span
+          class="fd-table__text--no-wrap"
+        >
+          Tree row, level 3, collapsed
+        </span>
+        
                 
       </td>
       

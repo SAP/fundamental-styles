@@ -610,10 +610,16 @@ $block: #{$fd-namespace}-table;
   }
 
   &--compact {
+    .#{$block}__body,
+    .#{$block}__footer {
+      .#{$block}__cell {
+        height: $fd-table-compact-cell-height;
+      }
+    }
+
     &.#{$block}--tree,
     &.#{$block}--group {
       .#{$block}__body .#{$block}__cell {
-        &,
         .#{$block}__expand {
           height: $fd-table-compact-cell-height;
         }
@@ -622,13 +628,10 @@ $block: #{$fd-namespace}-table;
   }
 
   &--condensed {
-    &.#{$block}--tree,
-    &.#{$block}--group {
-      .#{$block}__body .#{$block}__cell {
-        &,
-        .#{$block}__expand {
-          height: $fd-table-condensed-cell-height;
-        }
+    .#{$block}__body,
+    .#{$block}__footer {
+      .#{$block}__cell {
+        height: $fd-table-condensed-cell-height;
 
         &--checkbox {
           position: relative;
@@ -637,6 +640,15 @@ $block: #{$fd-namespace}-table;
             top: -0.25rem;
             position: absolute;
           }
+        }
+      }
+    }
+
+    &.#{$block}--tree,
+    &.#{$block}--group {
+      .#{$block}__body .#{$block}__cell {
+        .#{$block}__expand {
+          height: $fd-table-condensed-cell-height;
         }
       }
     }
