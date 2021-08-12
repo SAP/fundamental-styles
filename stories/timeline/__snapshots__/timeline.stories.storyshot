@@ -1,0 +1,916 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Timeline Group Container 1`] = `
+<section>
+  <h4>
+    Vertical Layout Group Header Container
+  </h4>
+  
+
+  <div
+    class="fd-timeline"
+    style="width: 600px;"
+  >
+    
+    
+    <ul
+      class="fd-timeline__group fd-timeline__group--collapsed"
+      role="tree"
+    >
+      
+        
+      <li
+        aria-level="1"
+        class="fd-timeline__group-header-container"
+        role="treeitem"
+      >
+        
+            
+        <div
+          class="fd-timeline__group-header fd-timeline__group-header--collapsed"
+          tabindex="0"
+        >
+          
+                
+          <span
+            class="fd-timeline__group-header-icon"
+          >
+            
+                    
+            <i
+              class="sap-icon--navigation-right-arrow"
+            />
+            
+                
+          </span>
+          
+                
+          <span
+            class="fd-timeline__group-header-text"
+          >
+            2021
+          </span>
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-timeline__group-header-bar"
+        />
+        
+        
+      </li>
+      
+    
+    </ul>
+    
+    
+    <ul
+      class="fd-timeline__group fd-timeline__group--collapsed"
+      role="tree"
+    >
+      
+        
+      <li
+        aria-level="1"
+        class="fd-timeline__group-header-container"
+        role="treeitem"
+      >
+        
+            
+        <div
+          class="fd-timeline__group-header fd-timeline__group-header--collapsed"
+          tabindex="0"
+        >
+          
+                
+          <span
+            class="fd-timeline__group-header-icon"
+          >
+            
+                    
+            <i
+              class="sap-icon--navigation-right-arrow"
+            />
+            
+                
+          </span>
+          
+                
+          <span
+            class="fd-timeline__group-header-text"
+          >
+            2021
+          </span>
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-timeline__group-header-bar"
+        />
+        
+        
+      </li>
+      
+    
+    </ul>
+    
+    
+    <ul
+      class="fd-timeline__group"
+      role="tree"
+    >
+      
+        
+      <li
+        aria-level="1"
+        class="fd-timeline__group-header-container"
+        role="treeitem"
+      >
+        
+            
+        <div
+          class="fd-timeline__group-header"
+          tabindex="0"
+        >
+          
+                
+          <span
+            class="fd-timeline__group-header-icon"
+          >
+            
+                    
+            <i
+              class="sap-icon--navigation-down-arrow"
+            />
+            
+                
+          </span>
+          
+                
+          <span
+            class="fd-timeline__group-header-text"
+          >
+            2021
+          </span>
+          
+            
+        </div>
+        
+        
+      </li>
+      
+    
+    </ul>
+    
+
+  </div>
+  
+
+
+  <br />
+  <br />
+  
+
+  <h4>
+    Horizontal Layout Group Header Container
+  </h4>
+  
+
+  <div
+    class="fd-timeline"
+    style="width: 600px;"
+  >
+    
+    
+    <ul
+      class="fd-timeline__group fd-timeline__group--collapsed"
+      role="tree"
+      style="height: 150px;"
+    >
+      
+        
+      <li
+        aria-level="1"
+        class="fd-timeline__group-header-container fd-timeline__group-header-container--horizontal"
+        role="treeitem"
+      >
+        
+            
+        <div
+          class="fd-timeline__group-header fd-timeline__group-header--horizontal fd-timeline__group-header--collapsed"
+          tabindex="0"
+        >
+          
+                
+          <span
+            class="fd-timeline__group-header-icon"
+          >
+            
+                    
+            <i
+              class="sap-icon--navigation-right-arrow"
+            />
+            
+                
+          </span>
+          
+                
+          <span
+            class="fd-timeline__group-header-text"
+          >
+            2021
+          </span>
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-timeline__group-header-bar"
+        />
+        
+        
+      </li>
+      
+    
+    </ul>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Timeline Grouping Anatomy 1`] = `
+<section>
+  <h4>
+    Expanded (Default) Group Header
+  </h4>
+  
+
+  <div
+    class="fd-timeline__group-header"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-timeline__group-header-icon"
+    >
+      
+        
+      <i
+        class="sap-icon--navigation-down-arrow"
+      />
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-timeline__group-header-text"
+    >
+      2021
+    </span>
+    
+
+  </div>
+  
+
+  <br />
+  <br />
+  
+
+  <h4>
+    Collapsed Group Header
+  </h4>
+         
+
+  <div
+    class="fd-timeline__group-header fd-timeline__group-header--collapsed"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-timeline__group-header-icon"
+    >
+      
+        
+      <i
+        class="sap-icon--navigation-right-arrow"
+      />
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-timeline__group-header-text"
+    >
+      2021
+    </span>
+    
+
+  </div>
+  
+
+  <br />
+  <br />
+  
+
+  <h4>
+    Collapsed Horizontal Group Header
+  </h4>
+         
+
+  <div
+    class="fd-timeline__group-header fd-timeline__group-header--collapsed fd-timeline__group-header--horizontal"
+    tabindex="0"
+  >
+    
+    
+    <span
+      class="fd-timeline__group-header-icon"
+    >
+      
+        
+      <i
+        class="sap-icon--navigation-right-arrow"
+      />
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-timeline__group-header-text"
+    >
+      2021
+    </span>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Timeline Nodes Anatomy 1`] = `
+<div
+  class="fd-timeline"
+  style="width: 300px;"
+>
+  
+    
+  <h4>
+    Default Node (without icon)
+  </h4>
+  
+    
+  <div
+    class="fd-timeline__node-container"
+    style="height:100px;"
+  >
+    
+        
+    <div
+      class="fd-timeline__connecting-line"
+    />
+    
+        
+    <div
+      class="fd-timeline__node"
+    />
+    
+        
+    <div
+      class="fd-timeline__connecting-line"
+    />
+    
+    
+  </div>
+  
+   
+    
+  <br />
+  <br />
+  
+    
+  <h4>
+    Node with icon
+  </h4>
+  
+    
+  <div
+    class="fd-timeline__node-container"
+    style="height:100px;"
+  >
+    
+        
+    <div
+      class="fd-timeline__connecting-line"
+    />
+    
+        
+    <div
+      class="fd-timeline__node fd-timeline__node--icon"
+    >
+      
+            
+      <span
+        class="sap-icon sap-icon--post"
+      />
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-timeline__connecting-line"
+    />
+    
+    
+  </div>
+  
+
+    
+  <br />
+  <br />
+  
+    
+  <h4>
+    Node for grouping
+  </h4>
+  
+    
+  <div
+    class="fd-timeline__node-container"
+    style="height:100px;"
+  >
+    
+        
+    <div
+      class="fd-timeline__connecting-line"
+    />
+    
+        
+    <div
+      class="fd-timeline__node fd-timeline__node--grouping"
+    />
+    
+        
+    <div
+      class="fd-timeline__connecting-line"
+    />
+    
+    
+  </div>
+  
+    
+    
+  <h4>
+    Horizontal default node (without icon)
+  </h4>
+  
+    
+  <div
+    class="fd-timeline__node-container fd-timeline__node-container--horizontal"
+    style="width:150px;"
+  >
+    
+        
+    <div
+      class="fd-timeline__connecting-line"
+    />
+    
+        
+    <div
+      class="fd-timeline__node"
+    />
+    
+        
+    <div
+      class="fd-timeline__connecting-line"
+    />
+    
+    
+  </div>
+  
+   
+    
+  <br />
+  <br />
+  
+    
+  <h4>
+    Horizontal node with icon
+  </h4>
+  
+    
+  <div
+    class="fd-timeline__node-container fd-timeline__node-container--horizontal"
+    style="width:150px;"
+  >
+    
+        
+    <div
+      class="fd-timeline__connecting-line"
+    />
+    
+        
+    <div
+      class="fd-timeline__node fd-timeline__node--icon"
+    >
+      
+            
+      <span
+        class="sap-icon sap-icon--outgoing-call"
+      />
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-timeline__connecting-line"
+    />
+    
+    
+  </div>
+  
+
+    
+  <br />
+  <br />
+  
+    
+  <h4>
+    Horizontal node for grouping
+  </h4>
+  
+    
+  <div
+    class="fd-timeline__node-container fd-timeline__node-container--horizontal"
+    style="width:150px;"
+  >
+    
+        
+    <div
+      class="fd-timeline__connecting-line"
+    />
+    
+        
+    <div
+      class="fd-timeline__node fd-timeline__node--grouping"
+    />
+    
+        
+    <div
+      class="fd-timeline__connecting-line"
+    />
+    
+    
+  </div>
+  
+    
+
+</div>
+`;
+
+exports[`Storyshots Components/Timeline Posts Anatomy 1`] = `
+<div
+  class="fd-timeline"
+  style="width: 500px;"
+>
+  
+    
+  <h4>
+    Right Arrow
+  </h4>
+  
+    
+  <div>
+    The example post consists of content text only
+  </div>
+  <br />
+  
+    
+  <div
+    class="fd-timeline__post fd-timeline__post--right"
+  >
+    
+        
+    <div
+      class="fd-timeline__post-content"
+    >
+      
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <br />
+  <br />
+  
+
+    
+  <h4>
+    Left Arrow
+  </h4>
+    
+    
+  <div>
+    The example post consists of post header (link title, header text and subheader), content text and actions
+  </div>
+  <br />
+     
+    
+  <div
+    class="fd-timeline__post fd-timeline__post--left"
+  >
+    
+        
+    <div
+      class="fd-timeline__post-header-container"
+    >
+      
+            
+      <div
+        class="fd-timeline__post-header"
+      >
+        
+                
+        <a
+          class="fd-link fd-link--emphasized"
+          href="#"
+          tabindex="0"
+        >
+          Elena Petrova
+        </a>
+        
+                
+        <span
+          class="fd-timeline__post-header-text"
+        >
+          added an invoice
+        </span>
+        
+                
+        <div
+          class="fd-timeline__post-subheader"
+        >
+          02/22/2021 at 5:00 PM
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-timeline__post-content"
+    >
+      
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        
+    </div>
+    
+        
+    <div
+      class="fd-timeline__post-actions"
+    >
+      
+            
+      <button
+        class="fd-button fd-button--compact fd-button--transparent"
+      >
+        Edit
+      </button>
+      
+            
+      <button
+        class="fd-button fd-button--compact fd-button--transparent"
+      >
+        Delete
+      </button>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+    
+  <br />
+  <br />
+  
+    
+  <h4>
+    Top Arrow
+  </h4>
+    
+    
+  <div>
+    The example post consists of post header (avatar, link title, header text and subheader), content text and actions
+  </div>
+  <br />
+   
+    
+  <div
+    class="fd-timeline__post fd-timeline__post--top"
+  >
+    
+        
+    <div
+      class="fd-timeline__post-header-container"
+    >
+      
+            
+      <span
+        aria-label="John Doe"
+        class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+        role="img"
+        style="background-image: url('/assets/images/avatars/1.svg')"
+      />
+      
+            
+      <div
+        class="fd-timeline__post-header"
+      >
+        
+                
+        <a
+          class="fd-link fd-link--emphasized"
+          href="#"
+          tabindex="0"
+        >
+          Elena Petrova
+        </a>
+        
+                
+        <span
+          class="fd-timeline__post-header-text"
+        >
+          added an invoice
+        </span>
+        
+                
+        <div
+          class="fd-timeline__post-subheader"
+        >
+          02/22/2021 at 5:00 PM
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-timeline__post-content"
+    >
+      
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        
+    </div>
+    
+        
+    <div
+      class="fd-timeline__post-actions"
+    >
+      
+            
+      <button
+        class="fd-button fd-button--compact fd-button--transparent"
+      >
+        Open in App
+      </button>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+    
+  <br />
+  <br />
+  
+    
+  <h4>
+    Bottom Arrow
+  </h4>
+  
+    
+  <div>
+    The example post consists of post header (avatar, normal title and header text), content text usisng Text component with "MORE"/"LESS" links and actions
+  </div>
+  <br />
+  
+    
+  <div
+    class="fd-timeline__post fd-timeline__post--bottom"
+  >
+    
+        
+    <div
+      class="fd-timeline__post-header-container"
+    >
+      
+            
+      <span
+        aria-label="John Doe"
+        class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+        role="img"
+        style="background-image: url('/assets/images/avatars/1.svg')"
+      />
+      
+            
+      <div
+        class="fd-timeline__post-header"
+      >
+        
+                
+        <span
+          class="fd-timeline__post-header-title"
+        >
+          Elena Petrova
+        </span>
+        
+                
+        <span
+          class="fd-timeline__post-header-text"
+        >
+          added an invoice
+        </span>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-timeline__post-content"
+    >
+      
+            
+      <p
+        class="fd-text"
+      >
+        
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Malesuada bibendum arcu vitae elementum. Ut etiam sit amet nisl. Laoreet suspendisse interdum
+                consectetur libero id faucibus nisl. Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum.
+                Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan. Mauris vitae ultricies...
+            
+      </p>
+      
+            
+      <a
+        class="fd-link fd-text__link--more"
+        tabindex="0"
+      >
+        More
+      </a>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fd-timeline__post-actions"
+    >
+      
+            
+      <button
+        class="fd-button fd-button--compact fd-button--transparent"
+      >
+        Open in App
+      </button>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+</div>
+`;
