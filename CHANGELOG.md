@@ -1,4 +1,11 @@
 
+## [0.20.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.13...v0.20.0-rc.14) (2021-08-13)
+
+
+### Features
+
+* table group rows, tree rows ([#2665](https://github.com/SAP/fundamental-styles/issues/2665)) ([d646d7a](https://github.com/SAP/fundamental-styles/commit/d646d7a7284aa796a667ebab585c3d12da7f07ab))
+
 ## [0.20.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.12...v0.20.0-rc.13) (2021-08-11)
 
 ## [0.20.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.11...v0.20.0-rc.12) (2021-08-11)
