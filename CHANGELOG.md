@@ -1,4 +1,11 @@
 
+## [0.20.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.14...v0.20.0-rc.15) (2021-08-14)
+
+
+### Bug Fixes
+
+* add fonts dynamically for theming preview ([#2670](https://github.com/SAP/fundamental-styles/issues/2670)) ([362b152](https://github.com/SAP/fundamental-styles/commit/362b1526589e91f13a0537b38f12d09d9044a89d))
+
 ## [0.20.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.13...v0.20.0-rc.14) (2021-08-13)
 
 
