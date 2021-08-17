@@ -33,30 +33,30 @@ Below are examples of how to add semantic statuses to the components:
 
 | **Status** | <span style="margin-left: 2rem;">**Object Number**</span> | <span style="margin-left: 2rem;">**Object Status**</span> |
 | :---- | :-------------- | :-------------- |
-| Positive|<code class="docs-code" style="margin-left: 2rem;">fd-object-number--positive</code> |<code class="docs-code" style="margin-left: 2rem;">fd-object-status--positive</code> |
-| Negative|<code class="docs-code" style="margin-left: 2rem;">fd-object-number--negative</code> |<code class="docs-code" style="margin-left: 2rem;">fd-object-status--negative</code> |
-| Critical|<code class="docs-code" style="margin-left: 2rem;">fd-object-number--critical</code> |<code class="docs-code" style="margin-left: 2rem;">fd-object-status--critical</code> |
-| Informative|<code class="docs-code" style="margin-left: 2rem;">fd-object-number--informative</code> |<code class="docs-code" style="margin-left: 2rem;">fd-object-status--informative</code> |
+| Positive| <code style="margin-left: 2rem;">d-object-number--positive</code> | <code style="margin-left: 2rem;">d-object-status--positive</code> |
+| Negative| <code style="margin-left: 2rem;">d-object-number--negative</code> | <code style="margin-left: 2rem;">d-object-status--negative</code> |
+| Critical| <code style="margin-left: 2rem;">d-object-number--critical</code> | <code style="margin-left: 2rem;">d-object-status--critical</code> |
+| Informative| <code style="margin-left: 2rem;">d-object-number--informative</code> | <code style="margin-left: 2rem;">d-object-status--informative</code> |
 
 
 ## Structure
 **Object list consists of the following elements:**
 
-  - <code class="docs-code">fd-object-list</code> ul element
-   - <code class="docs-code">fd-object-list\\_\\_item</code> li element
-     - <code class="docs-code">fd-object-list\\_\\_container</code> container to hold child elements
-       - <code class="docs-code">fd-object-list\\_\\_intro</code> introduction text div
-       - <code class="docs-code">fd-object-list\\_\\_header</code> container to hold header elements
-         - <code class="docs-code">fd-object-list\\_\\_header-left</code> container to hold header left elements
-           - <code class="docs-code">fd-object-list\\_\\_object-identifier</code> object identifier element
-         - <code class="docs-code">fd-object-list\\_\\_header-right</code> container to hold header right elements
-           - <code class="docs-code">fd-object-list\\_\\_object-number</code> object number element
-       - <code class="docs-code">fd-object-list\\_\\_content</code> container to hold rows of attributes and status elements
-        - <code class="docs-code">fd-object-list\\_\\_row</code> container to hold attributes and status elements
-         - <code class="docs-code">fd-object-list\\_\\_row-right</code> container to hold right elements of row
-           - <code class="docs-code">fd-object-status</code>, <code class="docs-code">fd-object-marker</code> object status and object status elements
-         - <code class="docs-code">fd-object-list\\_\\_row-left</code> container to hold left elements of row
-           - <code class="docs-code">fd-object-list\\_\\_object-attribute</code> object attribute element
+  - \`fd-object-list\` ul element
+   - \`fd-object-list__item\` li element
+     - \`fd-object-list__container\` container to hold child elements
+       - \`fd-object-list__intro\` introduction text div
+       - \`fd-object-list__header\` container to hold header elements
+         - \`fd-object-list__header-left\` container to hold header left elements
+           - \`fd-object-list__object-identifier\` object identifier element
+         - \`fd-object-list__header-right\` container to hold header right elements
+           - \`fd-object-list__object-number\` object number element
+       - \`fd-object-list__content\` container to hold rows of attributes and status elements
+        - \`fd-object-list__row\` container to hold attributes and status elements
+         - \`fd-object-list__row-right\` container to hold right elements of row
+           - \`fd-object-status\`, \`fd-object-marker\` object status and object status elements
+         - \`fd-object-list__row-left\` container to hold left elements of row
+           - \`fd-object-list__object-attribute\` object attribute element
         
 `,
         tags: ['f3', 'a11y', 'theme', 'development'],

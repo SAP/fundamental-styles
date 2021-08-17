@@ -1,7 +1,7 @@
 import fundamentals from './custom/fundamentals';
 import { withCssResources } from "@storybook/addon-cssresources";
 import { withThemeProvider } from './custom/themeProvider';
-import { DocsContainer } from '@storybook/addon-docs/blocks';
+import { DocsContainer } from '@storybook/addon-docs';
 import DocsPage from './custom/components/DocsPage';
 import { makeDecorator } from '@storybook/addons';
 import prettify from 'pretty';

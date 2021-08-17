@@ -15,16 +15,16 @@ export default {
 
 
 ## Accessibility
-To ensure that both the standard and range sliders are accessible, a div element with class <code class="docs-code">fd-slider\\_\\_handle</code> must have the following aria attributes: 
+To ensure that both the standard and range sliders are accessible, a div element with class \`fd-slider__handle\` must have the following aria attributes: 
 
-- <code class="docs-code">tabindex="0"</code>
-- <code class="docs-code">role="slider"</code>
-- <code class="docs-code">aria-label</code>: a string that labels the element
-- <code class="docs-code">aria-labelledby</code>: an ID reference to a visible element that labels the slider, used if <code class="docs-code">aria-label</code> isn't provided 
-- <code class="docs-code">aria-valuemin</code>: the decimal value representing the minimum allowed value of the slider
-- <code class="docs-code">aria-valuemax</code>: the decimal value representing the maximum allowed value of the slider
-- <code class="docs-code">aria-valuenow</code>: the decimal value representing the current value of the slider
-- <code class="docs-code">aria-valuetext</code>: a string representation of the current value if needed (e.g., 20$, 33°C)
+- \`tabindex="0"\`
+- \`role="slider"\`
+- \`aria-label\`: a string that labels the element
+- \`aria-labelledby\`: an ID reference to a visible element that labels the slider, used if \`aria-label\` isn't provided 
+- \`aria-valuemin\`: the decimal value representing the minimum allowed value of the slider
+- \`aria-valuemax\`: the decimal value representing the maximum allowed value of the slider
+- \`aria-valuenow\`: the decimal value representing the current value of the slider
+- \`aria-valuetext\`: a string representation of the current value if needed (e.g., 20$, 33°C)
 
 **Note:** It should be possible to change slider's value by pressing the arrow keys.
 

@@ -26,10 +26,10 @@ These modifier classes are used to display horizontal padding for tabs in variou
 
 | rem&nbsp;&nbsp; | Min-width&nbsp;&nbsp; | Max-width&nbsp;&nbsp; | Modifier class |
 | ---- | ---------- | ---------- | ----------- |
-| 1rem&nbsp;&nbsp; | _n/a_ | 599 px | <code>fd-tabs--s</code> |
-| 2rem&nbsp;&nbsp; | 600 px | 1023 px | <code>fd-tabs--m</code> |
-| 2rem&nbsp;&nbsp; | 1024 px | 1439 px| <code>fd-tabs--l</code> |
-| 3rem&nbsp;&nbsp; | 1440 px | _n/a_ | <code>fd-tabs--xl</code> |
+| 1rem&nbsp;&nbsp; | _n/a_ | 599 px | \`fd-tabs--s\` |
+| 2rem&nbsp;&nbsp; | 600 px | 1023 px | \`fd-tabs--m\` |
+| 2rem&nbsp;&nbsp; | 1024 px | 1439 px| \`fd-tabs--l\` |
+| 3rem&nbsp;&nbsp; | 1440 px | _n/a_ | \`fd-tabs--xl\` |
 
 <br>
         `,

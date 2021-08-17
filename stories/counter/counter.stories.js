@@ -82,6 +82,6 @@ export const notifier = () => `
 notifier.storyName = 'Notification';
 notifier.parameters = {
     docs: {
-        storyDescription: 'Counter with <code>--notification</code> modifier'
+        storyDescription: 'Counter with `--notification` modifier'
     }
 };

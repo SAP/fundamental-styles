@@ -17,34 +17,34 @@ The Icon Tab Bar can be used for navigation within an object, or as a filter. Ea
 - You plan to use only a single tab.
 
 ##Semantic colors
-Only use semantic colors if it is important for users to know that they need to take action (for example, to indicate errors or critical situations requiring action). Otherwise, use the neutral default colors. To add semantic color to a tab use a modifier class from the table below on <code>fd-icon-tab-bar\\_\\_item</code> level.
+Only use semantic colors if it is important for users to know that they need to take action (for example, to indicate errors or critical situations requiring action). Otherwise, use the neutral default colors. To add semantic color to a tab use a modifier class from the table below on \`fd-icon-tab-bar__item\` level.
 
 | **Color** | **Modifier class** |
 | :--------- | :---------- |
-| positive &nbsp;&nbsp; | <code>fd-icon-tab-bar\\_\\_item--positive</code> |
-| negative &nbsp;&nbsp; | <code>fd-icon-tab-bar\\_\\_item--negative</code> |
-| critical &nbsp;&nbsp; | <code>fd-icon-tab-bar\\_\\_item--critical</code> |
-| informative &nbsp;&nbsp; | <code>fd-icon-tab-bar\\_\\_item--informative</code> |
+| positive &nbsp;&nbsp; | \`fd-icon-tab-bar__item--positive\` |
+| negative &nbsp;&nbsp; | \`fd-icon-tab-bar__item--negative\` |
+| critical &nbsp;&nbsp; | \`fd-icon-tab-bar__item--critical\` |
+| informative &nbsp;&nbsp; | \`fd-icon-tab-bar__item--informative\` |
 
 ##Horizontal paddings
-You can add horizontal paddings by applying a modifier class to the container. For responsive horizontal paddings (based on the screen size) add the <code>fd-icon-tab-bar--responsive-paddings</code> modifier class. In this case the left and right spacing will change as the screen size changes.
+You can add horizontal paddings by applying a modifier class to the container. For responsive horizontal paddings (based on the screen size) add the \`fd-icon-tab-bar--responsive-paddings\` modifier class. In this case the left and right spacing will change as the screen size changes.
 
 | **Size** | **Modifier class** |
 | :--------- | :---------- |
-| sm (1rem) &nbsp;&nbsp; | <code>fd-icon-tab-bar--sm</code> |
-| md (2rem) &nbsp;&nbsp; | <code>fd-icon-tab-bar--md</code> |
-| lg (2rem) &nbsp;&nbsp; | <code>fd-icon-tab-bar--lg</code> |
-| xl (3rem) &nbsp;&nbsp; | <code>fd-icon-tab-bar--xl</code> |
-| xxl (3rem) &nbsp;&nbsp; | <code>fd-icon-tab-bar--xxl</code> |
+| sm (1rem) &nbsp;&nbsp; | \`fd-icon-tab-bar--sm\` |
+| md (2rem) &nbsp;&nbsp; | \`fd-icon-tab-bar--md\` |
+| lg (2rem) &nbsp;&nbsp; | \`fd-icon-tab-bar--lg\` |
+| xl (3rem) &nbsp;&nbsp; | \`fd-icon-tab-bar--xl\` |
+| xxl (3rem) &nbsp;&nbsp; | \`fd-icon-tab-bar--xxl\` |
 
 ##Background
-By default, the background for the Icon Tab Bar header and content is set to "solid". This will apply <code>--sapObjectHeader_Background</code> background color and <code>--sapContent_HeaderShadow</code> box-shadow to the header and <code>--sapBackgroundColor</code> to the container (panel). It can be changed to "translucent" or "transparent" using modifier classes. In translucent mode the header gets <code>--sapObjectHeader_Background</code> background color and the panel <code>--sapGroup_ContentBackground</code> background color. 
+By default, the background for the Icon Tab Bar header and content is set to "solid". This will apply \`--sapObjectHeader_Background\` background color and \`--sapContent_HeaderShadow\` box-shadow to the header and \`--sapBackgroundColor\` to the container (panel). It can be changed to "translucent" or "transparent" using modifier classes. In translucent mode the header gets \`--sapObjectHeader_Background\` background color and the panel \`--sapGroup_ContentBackground\` background color. 
 
 | **Background** | **Modifier class** |
 | :--------- | :---------- |
 | solid &nbsp;&nbsp; | default |
-| translucent &nbsp;&nbsp; | <code>fd-icon-tab-bar--translucent</code> |
-| transparent &nbsp;&nbsp; | <code>fd-icon-tab-bar--transparent</code> |
+| translucent &nbsp;&nbsp; | \`fd-icon-tab-bar--translucent\` |
+| transparent &nbsp;&nbsp; | \`fd-icon-tab-bar--transparent\` |
 
 <br><br><br>
       `,
@@ -156,7 +156,7 @@ export const counter = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--count
 counter.storyName = 'Counters and Text';
 counter.parameters = {
     docs: {
-        storyDescription: 'Counters can be shown on top of labels. In this case you need to apply the <code>fd-icon-tab-bar--counters</code> modifier class. <br> The control has the same look and feel in Cozy and Compact mode.'
+        storyDescription: 'Counters can be shown on top of labels. In this case you need to apply the `fd-icon-tab-bar--counters` modifier class. <br> The control has the same look and feel in Cozy and Compact mode.'
     }
 };
 
@@ -207,7 +207,7 @@ export const iconOnly = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--icon
 iconOnly.storyName = 'Icon Only';
 iconOnly.parameters = {
     docs: {
-        storyDescription: 'The Icon tabs are rounded tabs that can be populated with any icon. The labels in this case are omitted and counters are optional. You need to apply the <code>fd-icon-tab-bar--icon-only</code> modifier class for this type of tabs.'
+        storyDescription: 'The Icon tabs are rounded tabs that can be populated with any icon. The labels in this case are omitted and counters are optional. You need to apply the `fd-icon-tab-bar--icon-only` modifier class for this type of tabs.'
     }
 };
 
@@ -258,7 +258,7 @@ export const iconOnlyCompact = () => `<div class="fd-icon-tab-bar fd-icon-tab-ba
 iconOnlyCompact.storyName = 'Icon Only in Compact Mode';
 iconOnlyCompact.parameters = {
     docs: {
-        storyDescription: 'In compact mode you need to apply an additional modifier class <code>fd-icon-tab-bar--compact</code>.'
+        storyDescription: 'In compact mode you need to apply an additional modifier class `fd-icon-tab-bar--compact`.'
     }
 };
 
@@ -489,7 +489,7 @@ export const icon = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--icon">
 icon.storyName = 'Icon';
 icon.parameters = {
     docs: {
-        storyDescription: 'To display Icon Tabs with labels and counters you need to apply the <code>fd-icon-tab-bar--icon</code> modifier class. The counters are optional and can be ommited. The label is always positioned at the bottom. If you decide to use labels, use them for all tabs. The badge is rendered at the top right hand corner of the icon container. Consider using shorter labels or text tabs (without icons), since text tabs cannot get truncated.'
+        storyDescription: 'To display Icon Tabs with labels and counters you need to apply the `fd-icon-tab-bar--icon` modifier class. The counters are optional and can be ommited. The label is always positioned at the bottom. If you decide to use labels, use them for all tabs. The badge is rendered at the top right hand corner of the icon container. Consider using shorter labels or text tabs (without icons), since text tabs cannot get truncated.'
     }
 };
 
@@ -676,7 +676,7 @@ export const process = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--icon 
 process.storyName = 'Process';
 process.parameters = {
     docs: {
-        storyDescription: 'You can also use the tab bar to depict a process. In this case, each tab stands for one step. You need to add the <code>fd-icon-tab-bar--process</code> modifier class and a sibling html element with <code>fd-icon-tab-bar\\_\\_separator</code> class to the tab.'
+        storyDescription: 'You can also use the tab bar to depict a process. In this case, each tab stands for one step. You need to add the `fd-icon-tab-bar--process` modifier class and a sibling html element with `fd-icon-tab-bar__separator` class to the tab.'
     }
 };
 
@@ -829,7 +829,7 @@ filter.parameters = {
         - An “all” tab on the left - shows the total number of items, and describes the type of item (for example, 189 Products). <br>
         -  Tabs for specific filters - the tab text indicates the filter attribute. It is recommended to show a counter on every tab.
         <br>
-        You need to add the <code>fd-icon-tab-bar--filter</code> modifier class for this type of tabs.`
+        You need to add the \`fd-icon-tab-bar--filter\` modifier class for this type of tabs.`
     }
 };
 
@@ -1068,7 +1068,7 @@ singleClick.parameters = {
     docs: {
         storyDescription: `When there is only one click area per tab (also including tabs with sub-items), regular tabs get selected immediately after the click is released. Tabs with sub-items trigger the expansion of a menu (Popover) showing its sub-items. The parent tab title remains displayed when its child is select.
         <br>
-        You need to apply the <code>fd-icon-tab-bar\\_\\_item--single-click</code> modifier class to <code>fd-icon-tab-bar\\_\\_item</code> element. The List component inside the Popover has an additional modifier class <code>fd-icon-tab-bar\\_\\_list</code> to achieve the nesting (indentation) of the elements. The list menu can be borderless, with line separators (<code>fd-icon-tab-bar\\_\\_line-separator</code>) or icon separators (<code>fd-icon-tab-bar\\_\\_icon-separator</code>) `
+        You need to apply the \`fd-icon-tab-bar__item--single-click\` modifier class to \`fd-icon-tab-bar__item\` element. The List component inside the Popover has an additional modifier class \`fd-icon-tab-bar__list\` to achieve the nesting (indentation) of the elements. The list menu can be borderless, with line separators (\`fd-icon-tab-bar__line-separator\`) or icon separators (\`fd-icon-tab-bar__icon-separator\`) `
     }
 };
 
@@ -1305,7 +1305,7 @@ badge.storyName = 'Badges';
 badge.parameters = {
     docs: {
         storyDescription: `The Tab attention badge is applied as a visual eye-catcher to indicate a change within a Tab. <br>
-        The badge is a span element with <code>fd-icon-tab-bar\\_\\_badge</code> class. It can be animated by adding an additional <code> fd-icon-tab-bar\\_\\_badge--animated</code> modifier class. In this case the badge appears for a few milliseconds and then disappears.`
+        The badge is a span element with \`fd-icon-tab-bar__badge\` class. It can be animated by adding an additional \` fd-icon-tab-bar__badge--animated\` modifier class. In this case the badge appears for a few milliseconds and then disappears.`
     }
 };
 
@@ -1333,7 +1333,7 @@ export const respPaddings = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--
 respPaddings.storyName = 'Responsive Paddings';
 respPaddings.parameters = {
     docs: {
-        storyDescription: 'For an Icon Tab Bar with responsive paddings that adjust based on the screen size add the <code>fd-icon-tab-bar--responsive-paddings</code> modifier class.'
+        storyDescription: 'For an Icon Tab Bar with responsive paddings that adjust based on the screen size add the `fd-icon-tab-bar--responsive-paddings` modifier class.'
     }
 };
 

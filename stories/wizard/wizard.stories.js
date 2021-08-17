@@ -41,27 +41,27 @@ The wizard can be used both in a full-screen layout and in the flexible column l
 
 ## Responsive paddings
 
-These modifier classes will add horizontal paddings to the content and can be applied on the <code class="docs-code-grey">fd-wizard\\_\\_progress-bar</code> level and/or on the <code class="docs-code-grey">fd-wizard\\_\\_content</code> level.
+These modifier classes will add horizontal paddings to the content and can be applied on the \`fd-wizard__progress-bar\` level and/or on the \`fd-wizard__content\` level.
 
 
 |  **rem** |  <div style="margin-left: 2rem;"> **Min-width** </div> |  <div style="margin-left: 2rem;">**Max-width** </div> |  <div style="margin-left: 2rem;"> **Modifier class** </div> |
 | :---- | :---------- | :---------- | :---------------------------------- |
-| 1rem | <span style="margin-left: 2rem;">_n/a_</span> | <span style="margin-left: 2rem;">599px</span> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_progress-bar--sm</code> / <code class="docs-code">fd-wizard\\_\\_content--sm</code> |
-| 2rem | <span style="margin-left: 2rem;">600px</span> | <span style="margin-left: 2rem;">1023px</span> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_progress-bar--md</code> / <code class="docs-code">fd-wizard\\_\\_content--md</code> |
-| 2rem | <span style="margin-left: 2rem;">1024px</span> | <span style="margin-left: 2rem;">1439px</span> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_progress-bar--lg</code> / <code class="docs-code">fd-wizard\\_\\_content--lg</code> |
-| 3rem | <span style="margin-left: 2rem;">1440px</span> | <span style="margin-left: 2rem;">_n/a_</span> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_progress-bar--xl</code> / <code class="docs-code">fd-wizard\\_\\_content--xl</code> |
+| 1rem | <span style="margin-left: 2rem;">_n/a_</span> | <span style="margin-left: 2rem;">599px</span> | <code style="margin-left: 2rem;">fd-wizard__progress-bar--sm</code> / <code>fd-wizard__content--sm</code> |
+| 2rem | <span style="margin-left: 2rem;">600px</span> | <span style="margin-left: 2rem;">1023px</span> | <code style="margin-left: 2rem;">fd-wizard__progress-bar--md</code> / <code>fd-wizard__content--md</code> |
+| 2rem | <span style="margin-left: 2rem;">1024px</span> | <span style="margin-left: 2rem;">1439px</span> | <code style="margin-left: 2rem;">fd-wizard__progress-bar--lg</code> / <code>fd-wizard__content--lg</code> |
+| 3rem | <span style="margin-left: 2rem;">1440px</span> | <span style="margin-left: 2rem;">_n/a_</span> | <code style="margin-left: 2rem;">fd-wizard__progress-bar--xl</code> / <code>fd-wizard__content--xl</code> |
 
 ## Modifiers
 
 | **Steps** | <div style="margin-left: 2rem;"> **Modifier class** </div> |
 | :---- | :-------------- |
-| Completed | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_step--completed</code>     |
-| Current | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_step--current</code>       |
-| Upcoming | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_step--upcoming</code>      |
-| No-label | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_step--no-label</code>      |
-| Stacked | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_step--stacked</code>       |
-| Stacked on top | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_step--stacked-top</code>   |
-| Active | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_step--active</code>        |
+| Completed | <code style="margin-left: 2rem;">fd-wizard__step--completed</code>    |
+| Current | <code style="margin-left: 2rem;">fd-wizard__step--current</code>      |
+| Upcoming | <code style="margin-left: 2rem;">fd-wizard__step--upcoming</code>     |
+| No-label | <code style="margin-left: 2rem;">fd-wizard__step--no-label</code>     |
+| Stacked | <code style="margin-left: 2rem;">fd-wizard__step--stacked</code>      |
+| Stacked on top | <code style="margin-left: 2rem;">fd-wizard__step--stacked-top</code>  |
+| Active | <code style="margin-left: 2rem;">fd-wizard__step--active</code>       |
 
 ## Connector types
 
@@ -69,25 +69,25 @@ There are multiple connector types that can be displayed depending on the steps 
 
 | **Connector type** |<div style="margin-left: 2rem;"> **Connection** </div> | <div style="margin-left: 2rem;"> **Class/Modifier** </div> |
 | :---- | :-------------- | :-------------- |
-| Default | <span style="margin-left: 2rem;"> Inactive step (or Active step) to Inactive step </span> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_connector</code> |
-| Active | <span style="margin-left: 2rem;"> Active step to Active step </span> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_connector--active</code> |
-| Branching | <span style="margin-left: 2rem;"> Branching step to Inactive step or no step </span> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_connector--branching</code> |
+| Default | <span style="margin-left: 2rem;"> Inactive step (or Active step) to Inactive step </span> | <code style="margin-left: 2rem;">fd-wizard__connector</code>|
+| Active | <span style="margin-left: 2rem;"> Active step to Active step </span> | <code style="margin-left: 2rem;">fd-wizard__connector--active</code>|
+| Branching | <span style="margin-left: 2rem;"> Branching step to Inactive step or no step </span> | <code style="margin-left: 2rem;">fd-wizard__connector--branching</code>|
 
 ## Truncation rules
 
 | **Type** |  <div style="min-width: 6rem; margin-left: 2rem;">**Max lines**</div>  | <div style="margin-left: 2rem;"> **Modifier class** </div> |
 | :---- | :---------------- | :-------------------------- |
 | Label | <span style="margin-left: 2rem;">2</span> |  <span style="margin-left: 2rem;"> Text truncates when it exceeds the maximum space available. When a step has optional text, the label can only accommodate 1 line. </span> |
-| Label with optional text | <span style="margin-left: 2rem;">1</span> | <span style="margin-left: 2rem;">Text truncates when it exceeds the maximum space available. The <code class="docs-code">fd-wizard\\_\\_label-container--optional</code> modifier class is applied together with <code class="docs-code">fd-wizard\\_\\_label-container</code>.</span> |
+| Label with optional text | <span style="margin-left: 2rem;">1</span> | <span style="margin-left: 2rem;">Text truncates when it exceeds the maximum space available. The \`fd-wizard__label-container--optional\` modifier class is applied together with \`fd-wizard__label-container\`.</span> |
 | Optional text | <span style="margin-left: 2rem;">2</span> | <span style="margin-left: 2rem;">Text truncates when it exceeds the maximum space available.</span> |
 
 ## Content background
 
 | **Type** | <span style="margin-left: 2rem;">**Modifier class**</span> |
-| :---- | :-------------- |
-| Solid |  <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_content--smolid</code> |
-| List | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_content--list</code> |
-| Transparent | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_content--transparent</code> |
+| :--- | :-------------- |
+| Solid |  <code style="margin-left: 2rem;"> fd-wizard__content--smolid</code> |
+| List | <code style="margin-left: 2rem;"> fd-wizard__content--list</code> |
+| Transparent | <code style="margin-left: 2rem;"> fd-wizard__content--transparent</code> |
 
 `,
         docs: { iframeHeight: 400 },
@@ -247,11 +247,11 @@ customized.parameters = {
 
 | **Element** | <div style="margin-left: 2rem;"> **Modifier class** </div> | <div style="margin-left: 2rem;"> **Modification** </div> |
 | :---- | :---- | :-------------- |
-| <code class="docs-code">fd-wizard\\_\\_progress-bar</code> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_progress-bar--md</code> | <span style="margin-left: 2rem;"> Added responsive padding </span> |
-| <code class="docs-code">fd-wizard\\_\\_content</code> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_content--md</code> | <span style="margin-left: 2rem;"> Added responsive padding </span> |
-| <code class="docs-code">fd-bar--page</code> | <code class="docs-code" style="margin-left: 2rem;">fd-bar--page-m_l</code> | <span style="margin-left: 2rem;"> Added responsive padding </span> |
-| <code class="docs-code">fd-wizard\\_\\_content</code> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_content--list</code> | <span style="margin-left: 2rem;"> The background of the wizard content is set to list </span> |
-| <code class="docs-code">fd-wizard\\_\\_connector</code> | <code class="docs-code" style="margin-left: 2rem;">fd-wizard\\_\\_connector--branching</code> | <span style="margin-left: 2rem;"> Adds a branching step connector </span> |
+| \`fd-wizard__progress-bar\` | \`fd-wizard__progress-bar--md\` | <span style="margin-left: 2rem;"> Added responsive padding </span> |
+| \`fd-wizard__content\` | \`fd-wizard__content--md\` | <span style="margin-left: 2rem;"> Added responsive padding </span> |
+| \`fd-bar--page\` | \`fd-bar--page-m_l\` | <span style="margin-left: 2rem;"> Added responsive padding </span> |
+| \`fd-wizard__content\` | \`fd-wizard__content--list\` | <span style="margin-left: 2rem;"> The background of the wizard content is set to list </span> |
+| \`fd-wizard__connector\` | \`fd-wizard__connector--branching\` | <span style="margin-left: 2rem;"> Adds a branching step connector </span> |
 `
     }
 };
@@ -623,8 +623,8 @@ responsive.parameters = {
     docs: {
         iframeHeight: 950,
         storyDescription: `If there is sufficient horizontal space, all labels are shown.
-However, when the width decreases, the step labels disappear. To hide the labels, add the <code class="docs-code">fd-wizard\\_\\_step--no-label</code> modifier class to the step.
-The unselected steps should stack on top of each other when there is limited screen space. To stack them, add the <code class="docs-code">fd-wizard\\_\\_step--stacked</code> modifier class. The last completed step should display on top, and requires a <code class="docs-code">fd-wizard\\_\\_step--stacked-top</code> modifier class. Although they are stacked, upcoming steps do not require the stacked-top modifier class.
+However, when the width decreases, the step labels disappear. To hide the labels, add the \`fd-wizard__step--no-label\` modifier class to the step.
+The unselected steps should stack on top of each other when there is limited screen space. To stack them, add the \`fd-wizard__step--stacked\` modifier class. The last completed step should display on top, and requires a \`fd-wizard__step--stacked-top\` modifier class. Although they are stacked, upcoming steps do not require the stacked-top modifier class.
 `
     }
 };
@@ -995,7 +995,7 @@ export const revertedSteps = () => `<section class="fd-wizard">
 revertedSteps.parameters = {
     docs: {
         iframeHeight: 950,
-        storyDescription: 'To indicate reverted steps, use combination of <code class="docs-code>fd-wizard__step--completed</code> and <code class="docs-code>fd-wizard__step--upcoming</code> classes.'
+        storyDescription: 'To indicate reverted steps, use combination of `fd-wizard__step--completed` and `fd-wizard__step--upcoming` classes.'
     }
 };
 
@@ -1322,7 +1322,7 @@ export const mobile = () => `<div style="display: flex; justify-content: space-a
 mobile.parameters = {
     docs: {
         iframeHeight: 950,
-        storyDescription: `For mobile devices, add the <code class="docs-code">fd-bar--floating-footer</code> modifier class to achieve a floating footer. modifier class to display a floating footer. The *Next Step* button is placed after the content whenever possible. However, it can be placed above the floating footer by adding the <code class="docs-code">fd-wizard\\_\\_next-step--floating</code> modifier class.
+        storyDescription: `For mobile devices, add the \`fd-bar--floating-footer\` modifier class to achieve a floating footer. modifier class to display a floating footer. The *Next Step* button is placed after the content whenever possible. However, it can be placed above the floating footer by adding the \`fd-wizard__next-step--floating\` modifier class.
 `
     }
 };

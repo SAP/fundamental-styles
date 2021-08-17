@@ -1,6 +1,6 @@
 import '../custom.scss';
 import Community from './Community';
-import { DocsContext } from '@storybook/addon-docs/blocks';
+import { DocsContext } from '@storybook/addon-docs';
 import Description from './Description';
 import Footer from './Footer';
 import Header from './Header';
@@ -12,7 +12,7 @@ import {
     Title,
     Subtitle,
     DocsStory,
-} from '@storybook/addon-docs/blocks';
+} from '@storybook/addon-docs';
 import InfoLabel from './InfoLabel';
 import { changeDocumentTheme } from '../themeProvider';
 

@@ -17,12 +17,12 @@ The size of the content area automatically adjusts depending on the available sc
 
 ## Empty State
 
-When no pages are loaded, carousel displays a **Message Page** with a <code class="docs-code">sap-icon--document</code> icon.
+When no pages are loaded, carousel displays a **Message Page** with a \`sap-icon--document\` icon.
 
 
 ## Accessibility
 
-To ensure that the carousel is accessible, a div element with class <code class="docs-code">fd-carousel</code> has a visually hidden sibling div element with <code class="docs-code">role="region"</code> and an <code class="docs-code">aria-live="polite"</code> attribute. This way, the text will be dynamically updated using Javascript so that carousel's content changes are announced to the user by screen readers.
+To ensure that the carousel is accessible, a div element with class \`fd-carousel\` has a visually hidden sibling div element with \`role="region"\` and an \`aria-live="polite"\` attribute. This way, the text will be dynamically updated using Javascript so that carousel's content changes are announced to the user by screen readers.
 
 `,
         tags: ['f3', 'a11y', 'theme', 'development'],
@@ -472,7 +472,7 @@ carouselNoNavigation.storyName = 'Hidden navigation buttons';
 carouselNoNavigation.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `Carousel can also be displayed without navigation buttons. To hide them, add the <code class="docs-code">fd-carousel--no-navigation</code> modifier class to the <code class="docs-code">fd-carousel</code> class. On touchable devices, the user can navigate with a swipe gesture.
+        storyDescription: `Carousel can also be displayed without navigation buttons. To hide them, add the \`fd-carousel--no-navigation\` modifier class to the \`fd-carousel\` class. On touchable devices, the user can navigate with a swipe gesture.
 `
     }
 };

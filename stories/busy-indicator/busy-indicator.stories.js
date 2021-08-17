@@ -8,8 +8,8 @@ export default {
 | **Size** | &nbsp;&nbsp; **rem** &nbsp;&nbsp; | **Modifier class** |
 | :------- | :-------------------------------- | -----------------: |
 | Default  | &nbsp;&nbsp; 0 rem                | none               |
-| M        | &nbsp;&nbsp; 1 rem                | <code>--m</code>   |
-| L        | &nbsp;&nbsp; 2 rem                | <code>--l</code>   |
+| M        | &nbsp;&nbsp; 1 rem                | \`--m\`   |
+| L        | &nbsp;&nbsp; 2 rem                | \`--l\`   |
 
 ##Usage
 **Use the busy indicator if:**
@@ -53,7 +53,7 @@ Standard.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription:
-            'The standard busy indicator animates a sequence of cascading dots expanding and shrinking in a loop. The component comes in three sizes detailed above. To display the busy indicator, use the <code>fd-busy-indicator</code> class. If you want to display a certain size, add the modifier class of the desired size i.e. <code>--m</code> to the element.'
+            'The standard busy indicator animates a sequence of cascading dots expanding and shrinking in a loop. The component comes in three sizes detailed above. To display the busy indicator, use the `fd-busy-indicator` class. If you want to display a certain size, add the modifier class of the desired size i.e. `--m` to the element.'
     }
 };
 
@@ -70,7 +70,7 @@ contrastMode.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription:
-            'The busy indicator also comes in contrast mode and displays white dots against a dark background. To apply contrast mode, add <code>contrast</code> into the element i.e. <code>fd-busy-indicator--m contrast</code>.'
+            'The busy indicator also comes in contrast mode and displays white dots against a dark background. To apply contrast mode, add `contrast` into the element i.e. `fd-busy-indicator--m contrast`.'
     }
 };
 
@@ -87,7 +87,7 @@ extendedBusyIndicator.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription:
-            'If more information needs to be displayed with the loading animation, it is replaced by the Extended Busy Indicator <code>fd-busy-indicator-extended</code>. The additional information is wrapped in an element with <code>fd-busy-indicator-extended\\_\\_label</code> class.'
+            'If more information needs to be displayed with the loading animation, it is replaced by the Extended Busy Indicator `fd-busy-indicator-extended`. The additional information is wrapped in an element with `fd-busy-indicator-extended__label` class.'
     }
 };
 

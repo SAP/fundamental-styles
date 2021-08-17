@@ -50,7 +50,7 @@ whitespace.parameters = {
         iframeHeight: 300,
         storyDescription: `The text component has a property that allows browsers to render specified indents and
         whitespace. To display indents and/or whitespace, add a
-        <code class="docs-code">fd-text--pre-wrap</code> modifier class to the main element.`
+        \`fd-text--pre-wrap\` modifier class to the main element.`
     }
 };
 
@@ -115,12 +115,12 @@ maxLines.parameters = {
         iframeHeight: 300,
         storyDescription: `The text component can be displayed with a maximum number of lines.
 When the maximum is reached, the text truncates and displays an ellipsis. To display text with a maximum line count,
-add the <code class="docs-code">fd-text--max-lines</code> modifier class and an inline style rule with the number of
-lines to the main element. For example, add <code class="docs-code">style="-webkit-line-clamp: 3;"</code> to display
+add the \`fd-text--max-lines\` modifier class and an inline style rule with the number of
+lines to the main element. For example, add \`style="-webkit-line-clamp: 3;"\` to display
 three lines of text.
 
-**Note**: The property <code class="docs-code">-webkit-line-clamp</code> doesn't work in IE11 and should be changed
-to <code class="docs-code">height</code>. For example, <code class="docs-code">style="height: 200px;"</code>.
+**Note**: The property \`-webkit-line-clamp\` doesn't work in IE11 and should be changed
+to \`height\`. For example, \`style="height: 200px;"\`.
 `
     }
 };
@@ -182,7 +182,7 @@ hyphenation.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: `The text component can display words that are broken at appropriate hyphenation
-points in a text block. To display hyphens, add the <code class="docs-code">fd-text--hyphenation</code> to the main element.
+points in a text block. To display hyphens, add the \`fd-text--hyphenation\` to the main element.
         
 **It is also possible to suggest line break opportunities with two Unicode characters that manually specify
 potential line breakpoints:**
@@ -193,6 +193,6 @@ Even if the line is not actually broken at that point, the hyphen is still displ
 - Shy: An invisible, "soft" hyphen. Although this character is not visible, it marks a place
 where the browser should break the word if hyphenation is necessary.
 
-In HTML, add the <code class="docs-code">&shy;</code> Unicode to insert a soft hyphen.`
+In HTML, add the \`&shy;\` Unicode to insert a soft hyphen.`
     }
 };
