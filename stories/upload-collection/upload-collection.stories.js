@@ -67,10 +67,10 @@ export const standard = () => `<h4>Default mode</h4>
             <div class="fd-upload-collection__title-container">
                 <a href="#" class="fd-list__title fd-link fd-upload-collection__title">File_Name.extension</a>
                 <div class="fd-object-marker">
-                    <i class="fd-object-marker__icon sap-icon--request" aria-label="icon for request"></i>
+                    <i class="fd-object-marker__icon sap-icon--request" aria-label="icon for request" role="img"></i>
                 </div>
                 <div class="fd-object-marker">
-                    <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite"></i>
+                    <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite" role="img"></i>
                 </div>
             </div>
             <div class="fd-upload-collection__description">

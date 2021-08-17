@@ -305,8 +305,8 @@ export const horizontalPaddings = () => `<h4>Size S (1rem)</h4>
     </div>
     <div class="fd-tool-header__group">
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--transparent fd-tool-header__button">
-                 <i class="sap-icon--overflow" aria-label="more items"></i>
+            <button class="fd-button fd-button--transparent fd-tool-header__button" aria-label="more items">
+                 <i class="sap-icon--overflow"></i>
             </button>
         </div>
         <div class="fd-tool-header__element"> 

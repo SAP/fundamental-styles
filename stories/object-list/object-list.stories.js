@@ -33,10 +33,10 @@ Below are examples of how to add semantic statuses to the components:
 
 | **Status** | <span style="margin-left: 2rem;">**Object Number**</span> | <span style="margin-left: 2rem;">**Object Status**</span> |
 | :---- | :-------------- | :-------------- |
-| Positive| <code style="margin-left: 2rem;">d-object-number--positive</code> | <code style="margin-left: 2rem;">d-object-status--positive</code> |
-| Negative| <code style="margin-left: 2rem;">d-object-number--negative</code> | <code style="margin-left: 2rem;">d-object-status--negative</code> |
-| Critical| <code style="margin-left: 2rem;">d-object-number--critical</code> | <code style="margin-left: 2rem;">d-object-status--critical</code> |
-| Informative| <code style="margin-left: 2rem;">d-object-number--informative</code> | <code style="margin-left: 2rem;">d-object-status--informative</code> |
+| Positive| <code style="margin-left: 2rem;">fd-object-number--positive</code> | <code style="margin-left: 2rem;">fd-object-status--positive</code> |
+| Negative| <code style="margin-left: 2rem;">fd-object-number--negative</code> | <code style="margin-left: 2rem;">fd-object-status--negative</code> |
+| Critical| <code style="margin-left: 2rem;">fd-object-number--critical</code> | <code style="margin-left: 2rem;">fd-object-status--critical</code> |
+| Informative| <code style="margin-left: 2rem;">fd-object-number--informative</code> | <code style="margin-left: 2rem;">fd-object-status--informative</code> |
 
 
 ## Structure
