@@ -832,6 +832,10 @@ $fd-icon-tab-bar-semantic-values: (
       width: 1.25rem;
     }
 
+    .#{$block}__list-item-counter {
+      @include fd-set-padding-left(0.25rem);
+    }
+
     .#{$block}__list-link {
       @include fd-selected() {
         border-bottom: none;
