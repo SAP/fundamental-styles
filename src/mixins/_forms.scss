@@ -15,8 +15,12 @@
 
   &.is-success {
     background-color: var(--sapField_SuccessBackground);
-    border-color: var(--sapField_SuccessColor);
-    border-width: $fd-form-border-thin-width;
+
+    @include applyBorder(
+      var(--sapField_SuccessColor),
+      var(--sapField_SuccessBorderWidth),
+      var(--sapField_SuccessBorderStyle)
+    );
 
     @include fd-hover() {
       background-color: var(--sapField_SuccessBackground);
@@ -26,9 +30,14 @@
 
   &.is-error {
     background-color: var(--sapField_InvalidBackground);
-    border-color: var(--sapField_InvalidColor);
     font-style: var(--fdInput_State_Text_Style);
     font-weight: var(--fdInput_State_Font_Weight);
+
+    @include applyBorder(
+      var(--sapField_InvalidColor),
+      var(--sapField_InvalidBorderWidth),
+      var(--sapField_InvalidBorderStyle)
+    );
 
     @include fd-hover() {
       background-color: var(--sapField_InvalidBackground);
@@ -39,9 +48,14 @@
   &.is-warning,
   &.is-alert {
     background-color: var(--sapField_WarningBackground);
-    border-color: var(--sapField_WarningColor);
     font-style: var(--fdInput_State_Text_Style);
     font-weight: var(--fdInput_State_Font_Weight);
+
+    @include applyBorder(
+      var(--sapField_WarningColor),
+      var(--sapField_WarningBorderWidth),
+      var(--sapField_WarningBorderStyle)
+    );
 
     @include fd-hover() {
       background-color: var(--sapField_WarningBackground);
@@ -51,7 +65,12 @@
 
   &.is-information {
     background-color: var(--sapField_InformationBackground);
-    border-color: var(--sapField_InformationColor);
+
+    @include applyBorder(
+      var(--sapField_InformationColor),
+      var(--sapField_InformationBorderWidth),
+      var(--sapField_InformationBorderStyle)
+    );
 
     @include fd-hover() {
       background-color: var(--sapField_InformationBackground);
@@ -163,4 +182,10 @@
     margin-left: $fd-label-spacing;
     margin-right: 0;
   }
+}
+
+@mixin applyBorder($borderColor, $borderWidth, $borderStyle) {
+  border-color: $borderColor;
+  border-width: $borderWidth;
+  border-style: $borderStyle;
 }
