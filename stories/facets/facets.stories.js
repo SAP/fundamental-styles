@@ -521,20 +521,20 @@ objectPage.parameters = {
 
 The final structure of a collapsed header with image next to the title is shown below with changes marked in bold:
 
-- <code class="docs-code">fd-dynamic-page\\_\\_title-area</code> The area holding title, KPI content, subtitle, and actions
-  - <code class="docs-code">fd-dynamic-page\\_\\_main-container</code> Main container that holds Breadcrumb, image, title, title content and actions
-    - <code class="docs-code">fd-dynamic-page\\_\\_breadcrumb-title-container</code> Container that holds breadcrumb, title, and title content
-        - <code class="docs-code">fd-dynamic-page\\_\\_breadcrumb-container</code> Breadcrumbs Container, can contain toolbar container
-            - <code class="docs-code">fd-dynamic-page\\_\\_breadcrumb</code> Breadcrumbs
-        - **<code class="docs-code-grey">fd-dynamic-page\\_\\_title-container</code> The container for image, title, subtitle and toolbar**
-            - **<code class="docs-code-grey">fd-facet fd-facet--image fd-facet--image-header-title</code> The image facet**
-            - **<code class="docs-code-grey">fd-facet\\_\\_title-subtitle-container</code> The container for title and subtitle**
-                - <code class="docs-code">fd-dynamic-page\\_\\_title</code> Dynamic page title
-                - **<code class="docs-code-grey">fd-dynamic-page\\_\\_subtitle</code> Dynamic page subtitle**
-            - <code class="docs-code">fd-dynamic-page\\_\\_title-content</code> The KPI content
-            - <code class="docs-code">fd-dynamic-page\\_\\_toolbar-container</code> Container that holds toolbar-related actions
-                - <code class="docs-code">fd-dynamic-page\\_\\_toolbar</code> Toolbar container for actions
-                - <code class="docs-code">fd-dynamic-page\\_\\_toolbar--actions</code> Navigation actions
+- \`fd-dynamic-page__title-area\` The area holding title, KPI content, subtitle, and actions
+  - \`fd-dynamic-page__main-container\` Main container that holds Breadcrumb, image, title, title content and actions
+    - \`fd-dynamic-page__breadcrumb-title-container\` Container that holds breadcrumb, title, and title content
+        - \`fd-dynamic-page__breadcrumb-container\` Breadcrumbs Container, can contain toolbar container
+            - \`fd-dynamic-page__breadcrumb\` Breadcrumbs
+        - **\`fd-dynamic-page__title-container\` The container for image, title, subtitle and toolbar**
+            - **\`fd-facet fd-facet--image fd-facet--image-header-title\` The image facet**
+            - **\`fd-facet__title-subtitle-container\` The container for title and subtitle**
+                - \`fd-dynamic-page__title\` Dynamic page title
+                - **\`fd-dynamic-page__subtitle\` Dynamic page subtitle**
+            - \`fd-dynamic-page__title-content\` The KPI content
+            - \`fd-dynamic-page__toolbar-container\` Container that holds toolbar-related actions
+                - \`fd-dynamic-page__toolbar\` Toolbar container for actions
+                - \`fd-dynamic-page__toolbar--actions\` Navigation actions
 `
     }
 };

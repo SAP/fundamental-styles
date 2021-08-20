@@ -18,7 +18,7 @@ export const AllRoundPadding = () => `<div class="docs-column-flex docs-column-f
 AllRoundPadding.storyName = 'All-Round Padding';
 AllRoundPadding.parameters = {
     docs: {
-        storyDescription: `All-round padding appears on all sides of the container they are applied to. Use <code>fd-padding</code>
+        storyDescription: `All-round padding appears on all sides of the container they are applied to. Use \`fd-padding\`
         class to apply a padding of 1rem.`
     }
 };
@@ -44,7 +44,7 @@ export const DoubleSidedPadding = () => `<div class="docs-column-flex docs-colum
 DoubleSidedPadding.storyName = 'Double-Sided Padding';
 DoubleSidedPadding.parameters = {
     docs: {
-        storyDescription: `Double sided paddings appear on two opposite sides of the element. Use <code>fd-padding-begin-end</code>
+        storyDescription: `Double sided paddings appear on two opposite sides of the element. Use \`fd-padding-begin-end\`
         class with any of the following modifiers:
 
 | Element | Modifier class |
@@ -66,7 +66,7 @@ export const NoPadding = () => `<div class="docs-column-flex docs-column-flex--a
 `;
 NoPadding.parameters = {
     docs: {
-        storyDescription: `No padding classes remove existing container paddings. Use <code>fd-padding--none</code>
+        storyDescription: `No padding classes remove existing container paddings. Use \`fd-padding--none\`
         modifier to remove existing padding. Place the no padding classes last to make sure they will be applied.`
     }
 };
@@ -91,7 +91,7 @@ export const ResponsivePadding = () => `<div class="docs-column-flex docs-column
 `;
 ResponsivePadding.parameters = {
     docs: {
-        storyDescription: `The responsive padding class adds a double sided padding inside a container based on its width. Use <code>fd-padding-responsive</code>
+        storyDescription: `The responsive padding class adds a double sided padding inside a container based on its width. Use \`fd-padding-responsive\`
         class with any of the following modifiers:
 
 | Element | Modifier class |

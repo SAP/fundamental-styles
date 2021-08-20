@@ -43,7 +43,7 @@ primary.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: `
-Primary notifications display a container with an avatar, content area with text, as well as an open and close button. To display primary notifications, use the <code>fd-notification</code> class.
+Primary notifications display a container with an avatar, content area with text, as well as an open and close button. To display primary notifications, use the \`fd-notification\` class.
 `
     }
 };
@@ -75,7 +75,7 @@ noAvatar.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: `
-Notifications can be displayed without an avatar by adding the <code>fd-notification\\__content--no-avatar</code> modifier class together with the <code>fd-notification\\__content</code> class.
+Notifications can be displayed without an avatar by adding the \`fd-notification\\__content--no-avatar\` modifier class together with the \`fd-notification\\__content\` class.
 `
     }
 };
@@ -114,7 +114,7 @@ information.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: `
-Notifications can also include alerts, and in this case it is informative. You can display information alerts by adding the <code>fd-message-strip fd-message-strip--information fd-message-strip--dismissible</code> class together with <code>role="alert"</code>. To add text to the message, add the <code>fd-message-strip\\__text</code> class before the text in paragraph tags.
+Notifications can also include alerts, and in this case it is informative. You can display information alerts by adding the \`fd-message-strip fd-message-strip--information fd-message-strip--dismissible\` class together with \`role="alert"\`. To add text to the message, add the \`fd-message-strip\\__text\` class before the text in paragraph tags.
 `
     }
 };
@@ -154,7 +154,7 @@ warning.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: `
-Notifications can display warning alerts by adding the <code>fd-message-strip fd-message-strip--warning fd-message-strip--dismissible</code> class together with <code>role="alert"</code>.
+Notifications can display warning alerts by adding the \`fd-message-strip fd-message-strip--warning fd-message-strip--dismissible\` class together with \`role="alert"\`.
 `
     }
 };
@@ -194,7 +194,7 @@ error.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: `
-Notifications can display error alerts by adding the <code>fd-message-strip fd-message-strip--error fd-message-strip--dismissible</code> class together with <code>role="alert"</code>.
+Notifications can display error alerts by adding the \`fd-message-strip fd-message-strip--error fd-message-strip--dismissible\` class together with \`role="alert"\`.
 `
     }
 };
@@ -432,7 +432,7 @@ export const notificationGroup = () => `<div class="fd-notification fd-notificat
 notificationGroup.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `You can display a group of notifications in a list format, and the user can sort them from the header. To display a notification group, add the <code>fd-notification fd-notification\\__group</code> class.
+        storyDescription: `You can display a group of notifications in a list format, and the user can sort them from the header. To display a notification group, add the \`fd-notification fd-notification\\__group\` class.
     `
     }
 };

@@ -7,11 +7,11 @@ export default {
 
 | **Size** | **rem** | &nbsp;&nbsp; **Use for images in…** | **Modifier class** |
 | :--------- | ----------: | :----------------------- | ---------------: |
-| XS | 2 rem | &nbsp;&nbsp; Table list items, Card list items | <code>--xs</code> |
-| S | 3 rem | &nbsp;&nbsp; Card headers, Card list items | <code>--s</code> |
-| M | 4 rem | &nbsp;&nbsp; App headers for small screen sizes | <code>--m</code> |
-| L | 5 rem | &nbsp;&nbsp; App headers for normal screen sizes | <code>--l</code> |
-| XL | 7 rem | &nbsp;&nbsp; App headers for large screen sizes | <code>--xl</code> |
+| XS | 2 rem | &nbsp;&nbsp; Table list items, Card list items | \`--xs\` |
+| S | 3 rem | &nbsp;&nbsp; Card headers, Card list items | \`--s\` |
+| M | 4 rem | &nbsp;&nbsp; App headers for small screen sizes | \`--m\` |
+| L | 5 rem | &nbsp;&nbsp; App headers for normal screen sizes | \`--l\` |
+| XL | 7 rem | &nbsp;&nbsp; App headers for large screen sizes | \`--xl\` |
 
 ## Usage
 Use avatar to display:
@@ -54,8 +54,7 @@ export const icon = () => `
 icon.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `The icon avatar can be used to display non-interactive icons. If you want the icon to be interactive, use the **Button** component with an icon inside instead. 
-        <br><br>When using the icon avatar for illustrative purposes only, include <code>role="presentation"</code> in the element. For instance, include <code>role=</code> if the icon sits right next to a label.`
+        storyDescription: 'The icon avatar can be used to display non-interactive icons. If you want the icon to be interactive, use the **Button** component with an icon inside instead. <br><br>When using the icon avatar for illustrative purposes only, include `role="presentation"` in the element. For instance, include role=` if the icon sits right next to a label.'
     }
 };
 
@@ -72,8 +71,7 @@ export const initials = () => `
 initials.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `The initials avatar can display up to three alphabetical characters representing the first and last name(s) of a person, for example: MvV for Marjolein van Veen. The order in which the first and last name(s) are displayed depends on the language-specific settings. 
-        <br><br> When there is no equivalent text for the avatar, include <code>aria-label</code> in the element. This isn’t necessary if the avatar is used for illustrative purposes only. See **Icon** above.`
+        storyDescription: 'The initials avatar can display up to three alphabetical characters representing the first and last name(s) of a person, for example: MvV for Marjolein van Veen. The order in which the first and last name(s) are displayed depends on the language-specific settings.<br><br> When there is no equivalent text for the avatar, include `aria-label` in the element. This isn’t necessary if the avatar is used for illustrative purposes only. See **Icon** above.'
     }
 };
 
@@ -104,7 +102,7 @@ export const circle = () => `
 circle.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'A circle style can be displayed by adding the <code>--circle</code> modifier class.'
+        storyDescription: 'A circle style can be displayed by adding the `--circle` modifier class.'
     }
 };
 
@@ -122,13 +120,13 @@ backgroundImage.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: `
-A background image can be displayed by adding the <code>--thumbnail</code> modifier class.
+A background image can be displayed by adding the \`--thumbnail\` modifier class.
 There are two options to set the backgroundd: Cover (default) and Contain. 
 
 - Cover: The size of the image is scaled up to completely cover the control area. As a result, parts of the image may be outside the shape.
 - Contain: The image is scaled down to fit into the control area. The entire image is displayed, but might not fully fill the shape. In this case, the control displays a default background color. The image itself is always centered inside the shape.
 
-Changing the default <code>background-size: cover</code> to <code>background-size: contain</code> CSS property can be achieved by adding <code>--background-contain</code> modifier class`
+Changing the default \`background-size: cover\` to \`background-size: contain\` CSS property can be achieved by adding \`--background-contain\` modifier class`
     }
 };
 
@@ -158,7 +156,7 @@ export const transparent = () => `
 transparent.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'A transparent style can be displayed by adding the <code>--transparent</code> modifier class.'
+        storyDescription: 'A transparent style can be displayed by adding the `--transparent` modifier class.'
     }
 };
 
@@ -184,7 +182,7 @@ export const placeholderBackground = () => `
 placeholderBackground.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'An avatar with a placeholder background can be displayed by adding the <code>--placeholder</code> modifier class.'
+        storyDescription: 'An avatar with a placeholder background can be displayed by adding the `--placeholder` modifier class.'
     }
 };
 
@@ -211,7 +209,7 @@ export const tileIconBackground = () => `
 tileIconBackground.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'An avatar with a tile icon background can be displayed by adding the <code>--tile</code> modifier class.'
+        storyDescription: 'An avatar with a tile icon background can be displayed by adding the `--tile` modifier class.'
     }
 };
 
@@ -252,7 +250,7 @@ export const accentColors = () => `
 accentColors.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'To change the background color, add the <code>fd-avatar--accent-color-*</code> class with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: <code>fd-avatar--accent-color-10</code>.'
+        storyDescription: 'To change the background color, add the `fd-avatar--accent-color-*` class with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: `fd-avatar--accent-color-10`.'
     }
 };
 
@@ -298,7 +296,7 @@ export const zoomIcon = () => `
 zoomIcon.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'Any avatar can display a zoom icon by creating an element with <code>fd-avatar\\_\\_zoom-icon</code> class.'
+        storyDescription: 'Any avatar can display a zoom icon by creating an element with `fd-avatar__zoom-icon` class.'
     }
 };
 
@@ -334,6 +332,6 @@ export const borders = () => `
 borders.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'Borders can be displayed by adding the <code>--border</code> modifier class.'
+        storyDescription: 'Borders can be displayed by adding the `--border` modifier class.'
     }
 };

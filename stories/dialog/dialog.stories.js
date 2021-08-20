@@ -2,7 +2,7 @@ export default {
     title: 'Components/Dialog',
     parameters: {
         description: `
-The dialog component is a container that appears in response to an action made by the user. It interrupts the app’s current process to prompt the user for either information or a confirmation, which requires them to make a decision before the process can continue. Dialog displays in a fixed position and is activated by adding the <code>fd-dialog--active</code> class.
+The dialog component is a container that appears in response to an action made by the user. It interrupts the app’s current process to prompt the user for either information or a confirmation, which requires them to make a decision before the process can continue. Dialog displays in a fixed position and is activated by adding the \`fd-dialog--active\` class.
 
 ##Usage
 **Use the dialog if:**
@@ -23,16 +23,16 @@ The dialog component is a container that appears in response to an action made b
 
 **Dialog consists of the following elements:**
 
-- <code class="docs-code">fd-dialog</code> Main element
-  - <code class="docs-code">fd-dialog\\_\\_content</code> Dialog window
-    - <code class="docs-code">fd-dialog\\_\\_header</code> Dialog header
-      - <code class="docs-code">fd-dialog\\_\\_title</code> Dialog title
-    - <code class="docs-code">fd-dialog\\_\\_subheader</code> Dialog subheader
-    - <code class="docs-code">fd-dialog\\_\\_body</code> Dialog content
-    - <code class="docs-code">fd-dialog\\_\\_loader</code> Dialog loader
-    - <code class="docs-code">fd-dialog\\_\\_footer</code> Dialog footer
-      - <code class="docs-code">fd-dialog\\_\\_decisive-button</code> Dialog footer's _Begin/End_ button
-    - <code class="docs-code">fd-dialog\\_\\_resize-handle</code> Handle for resizing modal
+- \`fd-dialog\` Main element
+  - \`fd-dialog__content\` Dialog window
+    - \`fd-dialog__header\` Dialog header
+      - \`fd-dialog__title\` Dialog title
+    - \`fd-dialog__subheader\` Dialog subheader
+    - \`fd-dialog__body\` Dialog content
+    - \`fd-dialog__loader\` Dialog loader
+    - \`fd-dialog__footer\` Dialog footer
+      - \`fd-dialog__decisive-button\` Dialog footer's _Begin/End_ button
+    - \`fd-dialog__resize-handle\` Handle for resizing modal
 
 Note: Dialog's header, subheader and footer are elements from the **Bar** component. This means that dialog headers and footers can be customized using bar component features. To style the elements according to dialog’s needs, CSS classes are used to slightly override bar’s original behaviour.
 `,
@@ -222,10 +222,10 @@ These modifier classes are used to display horizontal padding for dialog's heade
 
 | rem | min-width | max width | modifier class |
 | ---- | ---------- | ---------- | ----------- |
-| 1rem | _n/a_ | 599px | <code>fd-dialog\\_\\_content--s</code> |
-| 2rem | 600px | 1023px | <code>fd-dialog\\_\\_content--m</code> |
-| 2rem | 1024px | 1439px | <code>fd-dialog\\_\\_content--l</code> |
-| 3rem | 1440px | _n/a_ | <code>fd-dialog\\_\\_content--xl</code> |
+| 1rem | _n/a_ | 599px | \`fd-dialog__content--s\` |
+| 2rem | 600px | 1023px | \`fd-dialog__content--m\` |
+| 2rem | 1024px | 1439px | \`fd-dialog__content--l\` |
+| 3rem | 1440px | _n/a_ | \`fd-dialog__content--xl\` |
 
 ####Vertical padding
 
@@ -233,17 +233,17 @@ The default dialog’s body has vertical padding, however, it can be removed if 
 
 | Modifier class | Modification |
 | ----------------: | :------------ |
-| <code>fd-dialog\\_\\_body--no-vertical-padding</code> | padding-top: 0, padding-bottom: 0 |
+| \`fd-dialog__body--no-vertical-padding\` | padding-top: 0, padding-bottom: 0 |
 
 ####Mobile
 It is recommended that the default dialog takes the full width and height of the mobile screen. If necessary, this behaviour can be changed using the second modifier class below.
 
 | Modifier class | Modification |
 | ----------------: | :------------ |
-|<code>fd-dialog\\_\\_content--mobile</code> | full width and height of mobile screen |
-| <code>fd-dialog\\_\\_content--no-mobile-stretch</code> | adds additional spacing around the container (margin 6% & 10%) |
+|\`fd-dialog__content--mobile\` | full width and height of mobile screen |
+| \`fd-dialog__content--no-mobile-stretch\` | adds additional spacing around the container (margin 6% & 10%) |
 
-Note: On mobile devices, the bar component should be used with the <code>fd-bar--cozy</code> class.
+Note: On mobile devices, the bar component should be used with the \`fd-bar--cozy\` class.
 `
     }
 };
@@ -425,7 +425,7 @@ export const Selectable = () => `
 Selectable.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `The selectable dialog displays list items in the content area that can be selected. Users can search items from the list, select one or more items, and finalize their choice by selecting the _Select_ button. To display the selectable dialog, include the <code>fd-list fd-list--compact</code> class to the body's container element.
+        storyDescription: `The selectable dialog displays list items in the content area that can be selected. Users can search items from the list, select one or more items, and finalize their choice by selecting the _Select_ button. To display the selectable dialog, include the \`fd-list fd-list--compact\` class to the body's container element.
         `
     }
 };
@@ -464,7 +464,7 @@ export const Loading = () => `
 Loading.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'Dialog can display a busy indicator that signals to the user that data is loading. To display a busy indicator in the content area, add the <code>fd-busy-indicator--l</code> to the <code>fd-dialog\\_\\_loader</code> container element. Although the busy indicator is large in this example, you can choose a smaller size. See **Busy Indicator** for more sizes.'
+        storyDescription: 'Dialog can display a busy indicator that signals to the user that data is loading. To display a busy indicator in the content area, add the `fd-busy-indicator--l` to the `fd-dialog__loader` container element. Although the busy indicator is large in this example, you can choose a smaller size. See **Busy Indicator** for more sizes.'
     }
 };
 

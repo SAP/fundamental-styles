@@ -20,14 +20,14 @@ The application uses a horizontal tab navigation as main navigation.
 
 
 ##Horizontal paddings
-You can add horizontal paddings by applying a modifier class to the container. For responsive horizontal paddings (based on the screen size) add the <code>.fd-tool-header--responsive-paddings</code> modifier class. In this case the left and right spacing will change as the screen size changes.
+You can add horizontal paddings by applying a modifier class to the container. For responsive horizontal paddings (based on the screen size) add the \`.fd-tool-header--responsive-paddings\` modifier class. In this case the left and right spacing will change as the screen size changes.
 
 | **Size** | **Modifier class** |
 | :--------- | :---------- |
-| sm (1rem) &nbsp;&nbsp; | <code>fd-tool-header--sm</code> |
-| md (2rem) &nbsp;&nbsp; | <code>fd-tool-header--md</code> |
-| lg (2rem) &nbsp;&nbsp; | <code>fd-tool-header--lg</code> |
-| xl (3rem) &nbsp;&nbsp; | <code>fd-tool-header--xl</code> |
+| sm (1rem) &nbsp;&nbsp; | \`fd-tool-header--sm\` |
+| md (2rem) &nbsp;&nbsp; | \`fd-tool-header--md\` |
+| lg (2rem) &nbsp;&nbsp; | \`fd-tool-header--lg\` |
+| xl (3rem) &nbsp;&nbsp; | \`fd-tool-header--xl\` |
 
 
 ##Responsiveness
@@ -39,32 +39,32 @@ Like all SAP Fiori controls, the tool header can be shown in compact mode or in 
 ##Layout and Structure
 The tool header is a horizontal container at the top of the tool or application. It takes up the full width of the screen, floats above the content, and does not scroll. It acts as a container for global elements, such as a global application menu, horizontal navigation, name and branding of the app, and utility functions. 
 
-- <code style="color:red;">.fd-tool-header</code> : container class <br>
-- <code style="color:red;">.fd-tool-header__group</code> : groups tool header elements. The first group is positioned on the left hand side and the second group is positioned on the right hand side<br>
-- <code style="color:red;">.fd-tool-header__element</code> : a wrapper for each tool header element. Provides spacing between elements<br>
-- <code style="color:red;">.fd-tool-header__logo</code> : class for the tool header logo<br>
+- <code style="color:red;">.fd-tool-header</code>: container class <br>
+- <code style="color:red;">.fd-tool-header__group</code>: groups tool header elements. The first group is positioned on the left hand side and the second group is positioned on the right hand side<br>
+- <code style="color:red;">.fd-tool-header__element</code>: a wrapper for each tool header element. Provides spacing between elements<br>
+- <code style="color:red;">.fd-tool-header__logo</code>: class for the tool header logo<br>
 
 The tool header supports a larger set of over-styled controls. This is achieved with modifier classes which overwrite some of the rules of the base controls. <br>
 
 ###Text, Titles and Labels
 The tool header supports only single-line text and truncation for Texts, Titles, and Labels. Consider using small and normal size texts or title headings of H4, H5, H6. Avoid using text wrapping. <br>
 
-- <code style="color:red;">.fd-tool-header__title</code> : use this modifier class togther with base class <code>.fd-title</code><br>
-- <code style="color:red;">.fd-tool-header__text</code> : a modifier class applied together with <code>.fd-text</code><br>
-- <code style="color:red;">.fd-tool-header__label</code> : a modifier class applied together with label control<br>
+- <code style="color:red;">.fd-tool-header__title</code>: use this modifier class togther with base class \`.fd-title\`<br>
+- <code style="color:red;">.fd-tool-header__text</code>: a modifier class applied together with \`.fd-text\`<br>
+- <code style="color:red;">.fd-tool-header__label</code>: a modifier class applied together with label control<br>
 
 ###Buttons
-- <code style="color:red;">.fd-tool-header__button</code> : this modifier class can be applied together with button and menu button on their transparent type.
+- <code style="color:red;">.fd-tool-header__button</code>: this modifier class can be applied together with button and menu button on their transparent type.
 
 ###Icons
 The tool header supports only icon color enumeration. The support extends to both icons and backgrounds. Interaction state colors are not supported.
 
-- <code style="color:red;">.fd-tool-header__icon</code> <br>
+- <code style="color:red;">.fd-tool-header__icon</code><br>
 
 ###Object Status
 The tool header supports object status in its semantic form. No industry specific color support.
 
-- <code style="color:red;">.fd-tool-header__object-status</code> <br>
+- <code style="color:red;">.fd-tool-header__object-status</code><br>
 
 ###Input Group
 - <code style="color:red;">.fd-tool-header__input-group</code>
@@ -285,7 +285,7 @@ export const responsivePaddings = () => `<div class="fd-tool-header fd-tool-head
 responsivePaddings.storyName = 'Responsive Paddings';
 responsivePaddings.parameters = {
     docs: {
-        storyDescription: 'Horizontal responsive paddings (based on the screen size) can be applied to the tool header by adding the <code>fd-tool-header--responsive-paddings</code> modifier class to the container class. In this case the left and right spacing will change as the screen size changes.'
+        storyDescription: 'Horizontal responsive paddings (based on the screen size) can be applied to the tool header by adding the `fd-tool-header--responsive-paddings` modifier class to the container class. In this case the left and right spacing will change as the screen size changes.'
     }
 };
 
@@ -305,8 +305,8 @@ export const horizontalPaddings = () => `<h4>Size S (1rem)</h4>
     </div>
     <div class="fd-tool-header__group">
         <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--transparent fd-tool-header__button">
-                 <i class="sap-icon--overflow" aria-label="more items"></i>
+            <button class="fd-button fd-button--transparent fd-tool-header__button" aria-label="more items">
+                 <i class="sap-icon--overflow"></i>
             </button>
         </div>
         <div class="fd-tool-header__element"> 
@@ -419,6 +419,6 @@ export const horizontalPaddings = () => `<h4>Size S (1rem)</h4>
 horizontalPaddings.storyName = 'Horizontal Paddings';
 horizontalPaddings.parameters = {
     docs: {
-        storyDescription: 'You can add horizontal paddings by applying a modifier class to the container. For example, <code>.fd-tool-header--sm</code> modifier class will add 1rem horizontal paddings on the tool bar container.'
+        storyDescription: 'You can add horizontal paddings by applying a modifier class to the container. For example, `.fd-tool-header--sm` modifier class will add 1rem horizontal paddings on the tool bar container.'
     }
 };

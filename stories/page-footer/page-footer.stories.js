@@ -13,7 +13,7 @@ export default {
 
 -	You want to display collection of links for menu listing actions at the bottom of the screen.
 
-Note: You may want to display components from right to left on the screen for international purposes. To display them as such, add the <code>rtl</code> directive to the main element.`,
+Note: You may want to display components from right to left on the screen for international purposes. To display them as such, add the \`rtl\` directive to the main element.`,
         tags: ['non-f3', 'a11y', 'theme'],
         components: ['bar', 'icon', 'form-label', 'link', 'page-footer']
     }
@@ -75,7 +75,7 @@ MultiLineLink.parameters = {
     docs: {
         iframeHeight: 100,
         storyDescription:
-            'The Page Footer contains Image/logo, And list of links in the footer. To apply multiline link, add the <code class="docs-code">fd-page-footer__row</code> modifier class to the container element.'
+            'The Page Footer contains Image/logo, And list of links in the footer. To apply multiline link, add the `fd-page-footer__row` modifier class to the container element.'
     }
 };
 
@@ -115,7 +115,7 @@ ImageAndIconLink.parameters = {
     docs: {
         iframeHeight: 100,
         storyDescription:
-            'Example of The Page Footer representing multiline link,and adding images in the code to represent the clickable images and multiline is achived by adding the <code class="docs-code">fd-page-footer__row</code> modifier class to the container element.'
+            'Example of The Page Footer representing multiline link,and adding images in the code to represent the clickable images and multiline is achived by adding the `fd-page-footer__row` modifier class to the container element.'
     }
 };
 
@@ -210,6 +210,6 @@ FooterWithDiffrentSize.parameters = {
     docs: {
         iframeHeight: 100,
         storyDescription:
-            'Example of The Page Footer representing multiline lin, add the <code class="docs-code">--xl</code> <code class="docs-code">--lg</code> <code class="docs-code">--md</code> <code class="docs-code">--sm</code> size modifier class to the container element.'
+            'Example of The Page Footer representing multiline lin, add the `--xl` `--lg` `--md` `--sm` size modifier class to the container element.'
     }
 };

@@ -13,7 +13,7 @@ export default {
 - Error
 
 ##Guidelines
-- The icon is mandatory and can vary depending on the message. The default icon is <code>.sap-icon--documents</code>.
+- The icon is mandatory and can vary depending on the message. The default icon is \`.sap-icon--documents\`.
 - The title is also mandatory. Add a description with further details if needed.
 - The message should be as concise as possible.
         `,
@@ -46,7 +46,7 @@ export const filter = () => `<div style="height: 600px; width: 100%;">
 filter.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `The filter message page is displayed when the user has set a filter and there are no results. This message then prompts the user to remove or re-evaluate the filter they set for the page. It is mandatory to use the <code>.sap-icon--filter</code>  icon.
+        storyDescription: `The filter message page is displayed when the user has set a filter and there are no results. This message then prompts the user to remove or re-evaluate the filter they set for the page. It is mandatory to use the \`.sap-icon--filter\`  icon.
     `
     }
 };
@@ -70,7 +70,7 @@ export const search = () => `<div style="height: 600px; width: 100%;">
 search.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `The search message page is displayed when a user has searched for something, but there are no results for that inquiry. It is mandatory to use the <code>.sap-icon--search</code> icon.
+        storyDescription: `The search message page is displayed when a user has searched for something, but there are no results for that inquiry. It is mandatory to use the \`.sap-icon--search\` icon.
     `
     }
 };
@@ -95,7 +95,7 @@ noItems.storyName = 'No items';
 noItems.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `Message page displays a message indicating that there are no items when the user attempts to view a page that is supposed to contain items, but they are either not available or do not exist. It is mandatory to use either the <code>.sap-icon--product</code> icon, or another icon that matches your use case.
+        storyDescription: `Message page displays a message indicating that there are no items when the user attempts to view a page that is supposed to contain items, but they are either not available or do not exist. It is mandatory to use either the \`.sap-icon--product\` icon, or another icon that matches your use case.
         `
     }
 };
@@ -122,7 +122,7 @@ export const error = () => `<div style="height: 600px; width: 100%;">
 error.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `The error message page is displayed when the user attempts to view a page but an error has occurred, resulting in no available content. If you can, provide a link to the app start screen in the error message. It is mandatory to use the <code>.sap-icon--document</code> icon.
+        storyDescription: `The error message page is displayed when the user attempts to view a page but an error has occurred, resulting in no available content. If you can, provide a link to the app start screen in the error message. It is mandatory to use the \`.sap-icon--document\` icon.
     `
     }
 };

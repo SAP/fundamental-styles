@@ -15,7 +15,7 @@ For the page title, a Title component is utilized that is an H1 but visually sty
 
 -	You want to display finalizing actions at the bottom of the screen. Instead, use the **Bar** component and choose a footer.
 
-Note: You may want to display components from right to left on the screen for international purposes. To display them as such, add the <code>rtl</code> directive to the main element.`,
+Note: You may want to display components from right to left on the screen for international purposes. To display them as such, add the \`rtl\` directive to the main element.`,
         tags: ['non-f3', 'a11y', 'theme'],
         components: ['button', 'icon', 'title', 'action-bar', 'menu', 'popover']
     }
@@ -43,8 +43,9 @@ export const backBtn = () => `<div class="fd-action-bar">
 backBtn.storyName = 'Default';
 backBtn.parameters = {
     docs: {
-        iframeHeight: 400,
-        storyDescription: 'The default action bar displays a page title, description, back button and action buttons. To display a back button, add the <code>fd-action-bar\\_\\_description--back</code> modifier class to the description element.'
+        description: {
+            story: 'The default action bar displays a page title, description, back button and action buttons. To display a back button, add the `fd-action-bar__description--back` modifier class to the description element.'
+        }
     }
 };
 
@@ -179,7 +180,7 @@ actions.storyName = 'Contextual';
 actions.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'The contextual action bar displays a page title and contextual menu with several main actions. To display a contextual menu, add the <code>fd-popover</code> class to the<code>fd-action-bar\\_\\_actions</code> element.'
+        storyDescription: 'The contextual action bar displays a page title and contextual menu with several main actions. To display a contextual menu, add the `fd-popover` class to the`fd-action-bar__actions` element.'
     }
 };
 
@@ -206,7 +207,7 @@ responsiveL.storyName = 'Responsive (M-L)';
 responsiveL.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'This action bar is responsive and fits the M and L sizes required for tablet and small desktop screens. To display this size, add the <code>fd-action-bar--m\\_l</code> modifier class to the main element.'
+        storyDescription: 'This action bar is responsive and fits the M and L sizes required for tablet and small desktop screens. To display this size, add the `fd-action-bar--m\\_l` modifier class to the main element.'
     }
 };
 
@@ -233,7 +234,7 @@ responsiveXL.storyName = 'Responsive (XL)';
 responsiveXL.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'This action bar is responsive and fits the XL size required for larger screens of 1440px or more. To display this size, add the <code>fd-action-bar--xl</code> modifier class to the main element.'
+        storyDescription: 'This action bar is responsive and fits the XL size required for larger screens of 1440px or more. To display this size, add the `fd-action-bar--xl` modifier class to the main element.'
     }
 };
 
@@ -294,6 +295,6 @@ mobile.storyName = 'Mobile';
 mobile.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'This action bar is mobile responsive. To display the mobile action bar, add the <code>fd-action-bar--s</code> modifier class to the main element.'
+        storyDescription: 'This action bar is mobile responsive. To display the mobile action bar, add the `fd-action-bar--s` modifier class to the main element.'
     }
 };

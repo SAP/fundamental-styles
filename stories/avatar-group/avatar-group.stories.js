@@ -11,11 +11,11 @@ The control allows you to display the avatars in different sizes, depending on y
 
 | **Size** | &nbsp;&nbsp; **Group type** | &nbsp;&nbsp; **Individual type** | **Modifier class** |
 | :--------- | ----------: | :----------------------- | ---------------: |
-| XS | &nbsp;&nbsp; -0.75rem | &nbsp;&nbsp; 0.0625rem | <code>--xs</code> |
-| S | &nbsp;&nbsp; -1.25rem | &nbsp;&nbsp; 0.125rem | <code>--s</code> |
-| M | &nbsp;&nbsp; -1.625rem | &nbsp;&nbsp; 0.125rem | <code>--m</code> |
-| L | &nbsp;&nbsp; -2rem | &nbsp;&nbsp; 0.125rem | <code>--l</code> |
-| XL | &nbsp;&nbsp; -2.75rem | &nbsp;&nbsp; 0.25rem | <code>--xl</code> |
+| XS | &nbsp;&nbsp; -0.75rem | &nbsp;&nbsp; 0.0625rem | \`--xs\` |
+| S | &nbsp;&nbsp; -1.25rem | &nbsp;&nbsp; 0.125rem | \`--s\` |
+| M | &nbsp;&nbsp; -1.625rem | &nbsp;&nbsp; 0.125rem | \`--m\` |
+| L | &nbsp;&nbsp; -2rem | &nbsp;&nbsp; 0.125rem | \`--l\` |
+| XL | &nbsp;&nbsp; -2.75rem | &nbsp;&nbsp; 0.25rem | \`--xl\` |
 
 ##Types
 
@@ -39,7 +39,7 @@ Do not use the **AvatarGroup** if:
 
 ##Overflow Button
 
-To change the background color of the button, add the <code>fd-avatar-group\\_\\_more-button--accent-color-*</code> class with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: <code>fd-avatar-group\\_\\_more-button--accent-color-1</code>
+To change the background color of the button, add the \`fd-avatar-group__more-button--accent-color-*\` class with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: \`fd-avatar-group__more-button--accent-color-1\`
 
 `,
         docs: { iframeHeight: 250 },
@@ -276,7 +276,7 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
 individualType.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: 'To use Individual type of Avatar Group use the <code>--individual-type</code> modifier class <i>(<code>fd-avatar-group--individual-type</code> class)<i>.'
+        storyDescription: 'To use Individual type of Avatar Group use the `--individual-type` modifier class <i>(`fd-avatar-group--individual-type` class)<i>.'
     }
 };
 
@@ -393,7 +393,7 @@ export const groupType = () => `<div class="fd-popover">
 groupType.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: 'To use Group type of Avatar Group use the <code>--group-type</code> modifier class <i>(<code>fd-avatar-group--group-type</code> class)<i>.'
+        storyDescription: 'To use Group type of Avatar Group use the `--group-type` modifier class <i>(`fd-avatar-group--group-type` class)<i>.'
     }
 };
 

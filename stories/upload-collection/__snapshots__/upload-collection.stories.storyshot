@@ -166,6 +166,7 @@ exports[`Storyshots Components/Upload Collection Default 1`] = `
             <i
               aria-label="icon for request"
               class="fd-object-marker__icon sap-icon--request"
+              role="img"
             />
             
                 
@@ -180,6 +181,7 @@ exports[`Storyshots Components/Upload Collection Default 1`] = `
             <i
               aria-label="icon for favourite"
               class="fd-object-marker__icon sap-icon--favorite"
+              role="img"
             />
             
                 

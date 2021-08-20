@@ -284,7 +284,7 @@ analyticalCard.storyName = 'Analytical card';
 analyticalCard.parameters = {
     docs: {
         iframeHeight: 450,
-        storyDescription: `The analytical card is used for data visualization. It can display a KPI header and various chart types in the content. The only difference between a KPI header and a standard header is that the former requires a subtitle, a KPI area and can display an optional second subtitle. To display an analytical card, add the <code>fd-card--analytical</code> modifier class to the main element.
+        storyDescription: `The analytical card is used for data visualization. It can display a KPI header and various chart types in the content. The only difference between a KPI header and a standard header is that the former requires a subtitle, a KPI area and can display an optional second subtitle. To display an analytical card, add the \`fd-card--analytical\` modifier class to the main element.
 
 ####Chart types
 **The content area of an analytical card can display 8 different chart types:**
@@ -559,7 +559,7 @@ tableCard.storyName = 'Table card';
 tableCard.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'Cards can display tables within the content area. To display a table card, add the <code>fd-card--table</code> modifier class to the main element.'
+        storyDescription: 'Cards can display tables within the content area. To display a table card, add the `fd-card--table` modifier class to the main element.'
     }
 };
 
@@ -710,18 +710,18 @@ objectCard.storyName = 'Object card';
 objectCard.parameters = {
     docs: {
         iframeHeight: 600,
-        storyDescription: `The object card can display a single object or a group of objects. Contrary to other cards, object card has 1rem padding on all sides of the content area. To display an object card, add the <code>fd-card--object</code> modifier class to the main element.
+        storyDescription: `The object card can display a single object or a group of objects. Contrary to other cards, object card has 1rem padding on all sides of the content area. To display an object card, add the \`fd-card--object\` modifier class to the main element.
           
 **Within the content area, there are several components:**
 
 Component (class) |	Description
 :---------------- | :-----------
-<code>fd-card\\_\\_content-container</code> | a wrapper for the content sections. By default, the content is displayed in one column. To display the content in two columns, add the <code>fd-card\\_\\_content-container--horizontal</code> modifier class.
-<code>fd-card\\_\\_content-section</code> | a content section. A section contains a group title and one or multiple groups. The min-width of the section is 12rem and it can reach a maximum of 24rem.
-<code>fd-card\\_\\_content-title-container</code> | a container for the title.
-<code>fd-card\\_\\_content-group</code> | a container for the content group. It can also contain an avatar with size XS, a group label and a group value.
-<code>fd-card\\_\\_content-label-container</code> | a container for the label of the group.
-<code>fd-card\\_\\_content-group-container</code> | a container for the value of the group.
+\`fd-card__content-container\` | a wrapper for the content sections. By default, the content is displayed in one column. To display the content in two columns, add the \`fd-card__content-container--horizontal\` modifier class.
+\`fd-card__content-section\` | a content section. A section contains a group title and one or multiple groups. The min-width of the section is 12rem and it can reach a maximum of 24rem.
+\`fd-card__content-title-container\` | a container for the title.
+\`fd-card__content-group\` | a container for the content group. It can also contain an avatar with size XS, a group label and a group value.
+\`fd-card__content-label-container\` | a container for the label of the group.
+\`fd-card__content-group-container\` | a container for the value of the group.
 `
     }
 };
