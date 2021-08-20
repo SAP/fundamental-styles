@@ -16,7 +16,7 @@
 
 @mixin positivePressed {
   @include applyColors(
-    var(--sapButton_Selected_TextColor),
+    var(--sapButton_Accept_Active_TextColor),
     var(--sapButton_Accept_Active_BorderColor),
     var(--sapButton_Accept_Active_Background)
   );
